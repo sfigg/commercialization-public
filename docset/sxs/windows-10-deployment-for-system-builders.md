@@ -127,7 +127,7 @@ Section 1. Create WinPE bootable USB
 
 **Important: OEM must use the matching version of ADK for the images being customized. If building an image using RTM image use Windows 10 RTM ADK. If using Windows 10 1511 image use Windows 10 1511 ADK.**
 
-**REFERENCE**: Please see [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512(v=vs.85).aspx) for details and more information
+**REFERENCE**: Please see [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx) for details and more information
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
@@ -137,7 +137,7 @@ Section 1. Create WinPE bootable USB
 
 2.  Windows 10 ADK allows you to create **Windows PreInstallation Environment**. Copy base WinPE to new folder.
 
-    > **x64/x86 distinction:** *IF you will be using x64 Windows 10 image, copy x64 WinPE folder structure:*
+    **x64/x86 distinction:** *IF you will be using x64 Windows 10 image, copy x64 WinPE folder structure:*
 
     Copype amd64 C:\\winpe\_amd64
 
@@ -176,11 +176,11 @@ Section 2. Install Windows with Basic Customizations
 
 1.  Copy *sources\\**Install.wim*** file from the directory in Windows 10 media which you will be deploying, to your local Desktop (~3gb)
 
-    > <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/CopyWIM.png" width="505" height="263" />
+    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/CopyWIM.png" width="505" height="263" />
 
 1.  Run **Windows System Image Manager** to start creating an answer file from scratch. This tool allows you to create or manage your answer files in an easy and organized manner.
 
-    > <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/RunSIM.png" width="602" height="483" />
+    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/RunSIM.png" width="602" height="483" />
 
 1.  Navigate to *File &gt; Select Windows Image*. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
 
@@ -204,7 +204,7 @@ Section 2. Install Windows with Basic Customizations
 
     -   USB-B\\ConfigSet\\AutoUnattend.xml
 
-    > You may use the sample answer file and modify relevant parts or start from scratch by specifying some basic customizations.
+    You may use the sample answer file and modify relevant parts or start from scratch by specifying some basic customizations.
 
     **OBTAIN**: Please see and use Windows 10 default product key from [OEM Partner Center](https://www.microsoft.com/OEM/en/products/windows/Pages/windows-10-build.aspx#fbid=nV7H02bHHiv) listed under “Default product keys” tab
 
@@ -254,7 +254,7 @@ Section 2. Install Windows with Basic Customizations
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
 
-    > <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/diskpart.png" width="505" height="263" />
+    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/diskpart.png" width="505" height="263" />
 
 1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations
 
@@ -276,7 +276,7 @@ Section 2. Install Windows with Basic Customizations
 
 3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations)
 
-    > <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/Sysprep.png" width="336" height="251" />
+    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/Sysprep.png" width="336" height="251" />
 
 1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox
 
@@ -448,7 +448,7 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 2.  Copy the OEM logo to C:\\mount\\windows\\Windows\\system32\\OEM\\**FabrikamLogo.bmp** directory which will be mapped in unattend file in **OEM Information | Logo** property.
 
-    > See the below image to add OEM logo in an answer file.
+    See the below image to add OEM logo in an answer file.
 
     -   %windir%\\system32\\OEM\\FabrikamLogo.bmp
 
@@ -540,41 +540,41 @@ The System Builder may want to make additional customizations through an unatten
 
     **Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:**
 
-attrib -h -a -s C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim
+    attrib -h -a -s C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim
 
-dism /export-image /sourceimagefile:c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim /sourceindex:1 /DestinationImageFile:e:\\images\\winre\_bak.wim
+    Dism /export-image /sourceimagefile:c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim /sourceindex:1 /DestinationImageFile:e:\\images\\winre\_bak.wim
 
-Del c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
+    Del c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
 
-Copy e:\\images\\winre\_bak.wim c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
+    Copy e:\\images\\winre\_bak.wim c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
 
-When prompted, specify **F** for file
+    When prompted, specify **F** for file
 
 1.  Check the new size of the Windows RE image.
 
-Dir "C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim"
+    Dir "C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim"
 
-Follow the below partition layout size chart to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
+    Follow the below partition layout size chart to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
-Please reference [Disk Partition rules](https://technet.microsoft.com/library/hh824839.aspx#DiskPartitionRules) for more information.
+    Please reference [Disk Partition rules](https://technet.microsoft.com/library/hh824839.aspx#DiskPartitionRules) for more information.
 
-If the partition is less than 500 MB, it must have at least 50 MB of free space.
+    If the partition is less than 500 MB, it must have at least 50 MB of free space.
 
-If the partition is 500 MB or larger, it must have at least 320 MB of free space.
+    If the partition is 500 MB or larger, it must have at least 320 MB of free space.
 
-If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
+    If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
 
-rem == 3. Windows RE tools partition =============== create partition primary size=500
+    rem == 3. Windows RE tools partition =============== create partition primary size=500
 
-Optional: This section assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to pull winre.wim from the image and apply it separately.
+    Optional: This section assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to pull winre.wim from the image and apply it separately.
 
 1.  Commit the changes and unmount the Windows image:
 
-Dism /Unmount-Image /MountDir:"C:\\mount\\windows" /Commit
+    Dism /Unmount-Image /MountDir:"C:\\mount\\windows" /Commit
+ 
+    where C is the drive letter of the drive that contains the image.
 
-where C is the drive letter of the drive that contains the image.
-
-This process may take several minutes.
+    This process may take several minutes.
 
 Section 5. Deploy Image to New Computers (Windows Installation)
 ---------------------------------------------------------------
@@ -589,15 +589,15 @@ Section 5. Deploy Image to New Computers (Windows Installation)
 
 4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
 
-E:\\Deployment\\Walkthrough-Deploy.bat E:\\Images\\ModelSpecificImage.wim
+    E:\\Deployment\\Walkthrough-Deploy.bat E:\\Images\\ModelSpecificImage.wim
 
-**Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
+    **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
 
 1.  **Note: Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommend on rotational devices. Please reference** [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129(v=vs.85).aspx) **for more information.**
 
-Please remove USB-A and USB-B then type
+    Please remove USB-A and USB-B then type
 
-Exit
+    Exit
 
 Section 6. Update images manually by using AUDIT MODE (online servicing)
 ------------------------------------------------------------------------
@@ -618,59 +618,59 @@ Section 6. Update images manually by using AUDIT MODE (online servicing)
 
 3.  Navigate to the installation directory. Installation directory is the folder which contains the files shown in below figure.
 
-Cd C:\\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;
+    <code>Cd C:\\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;</code>
 
-<img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/installationdirectory.png" width="592" height="147" />
+    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/installationdirectory.png" width="592" height="147" />
 
-**IMPORTANT:** The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. You can preload the 32-bit version of Office 2013 on computers that run either 32-bit or 64-bit operating systems. You can preload the 64-bit version of Office 2013 only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload ***only the 32-bit version*** of the OPK on both 32-bit and 64-bit computers.
+    **IMPORTANT:** The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. You can preload the 32-bit version of Office 2013 on computers that run either 32-bit or 64-bit operating systems. You can preload the 64-bit version of Office 2013 only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload ***only the 32-bit version*** of the OPK on both 32-bit and 64-bit computers.
 
 1.  Run oemsetup.en-us script
 
-oemsetup.en-us.cmd
+    oemsetup.en-us.cmd
 
 1.  After installation is complete, Microsoft Office Single Image v15.4 OOBE application tile will be placed on Apps view
 
 2.  To pin the to the start screen please see *Section 4.2.4 Pinning Desktop Apps to Start Screen and Taskbar* and type in **%allusersprofile%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office.lnk** to &lt;AppIdOrPath&gt; property. Please see that this customization already takes place in USB-B\\AnswerFiles\\UnattendSysprep.xml answer file
 
-    1.  ### Preload Office 2016
+### 6.2 Preload Office 2016
 
-Office 2016 is coming soon! Please reference the [OEM Partner Center](https://www.microsoft.com/oem/en/installation/office/Pages/index.aspx#fbid=Pm9Tzt0sXR4) for the latest information on when Office 2016 installation file will be available for download as well as the Office 2016 installation guide. This white paper will be updated shortly after Office 2016 releases.
+Please reference the [OEM Partner Center](https://www.microsoft.com/oem/en/installation/office/Pages/index.aspx#fbid=Pm9Tzt0sXR4) for the latest information on when Office 2016 installation file will be available for download as well as the Office 2016 installation guide. This white paper will be updated shortly after Office 2016 releases.
 
-### 6.2. Prepare system for recovery with Push Button Reset
+### 6.3 Prepare system for recovery with Push Button Reset
 
 Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/hardware/dn938307(v=vs.85).aspx) and [Windows Recovery Environment (Windows RE)](https://msdn.microsoft.com/library/windows/hardware/dn938364(v=vs.85).aspx) and [Hard Drives and Partitions](https://msdn.microsoft.com/library/windows/hardware/dn898577(v=vs.85).aspx) for more information.
 
 1.  Prepare Scanstate tool
 
-***x64/x86 Distinction***
+    ***x64/x86 Distinction***
 
-*OEMs using an ***x64* Windows 10 image**, make x64 Scanstate directory*
+    *OEMs using an ***x64* Windows 10 image**, make x64 Scanstate directory*
 
-md E:\\ScanState\_amd64
+    md E:\\ScanState\_amd64
 
-copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\amd64" E:\\ScanState\_amd64
+    copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\amd64" E:\\ScanState\_amd64
 
-copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\amd64\\Sources" E:\\ScanState\_amd64
+    copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\amd64\\Sources" E:\\ScanState\_amd64
 
-*OEMs using an ***x86* Windows 10 image**, make x86 Scanstate directory*
+    *OEMs using an ***x86* Windows 10 image**, make x86 Scanstate directory*
 
-md E:\\ScanState\_x86
+    md E:\\ScanState\_x86
 
-copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\x86" E:\\ScanState\_x86
+    copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\x86" E:\\ScanState\_x86
 
-copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\x86\\Sources" E:\\ScanState\_x86
+    copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\x86\\Sources" E:\\ScanState\_x86
 
-***Where E: is USB-B drive letter***
+    ***Where E: is USB-B drive letter***
 
 1.  Create configuration file
 
-OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
+    OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
 
-**Important: this section includes a work around for a known issue in Windows 10. OEM must apply this work around to avoid issues with the PBR process. **
+    **Important: this section includes a work around for a known issue in Windows 10. OEM must apply this work around to avoid issues with the PBR process. **
 
-In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
+    In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
 
-**Note: OEM may use the sample configuration file on** USB-B**\\Recovery\\recoveryimage\\pbr\_config.xml which covers the steps below.**
+    **Note: OEM may use the sample configuration file on** USB-B**\\Recovery\\recoveryimage\\pbr\_config.xml which covers the steps below.**
 
 1.  Create Recovery package
 
@@ -680,37 +680,37 @@ In some instances, Windows Defender settings and detection history might be capt
 
 2.  Create the recovery OEM folder and copy contents of USB-B\\Recovery\\RecoveryImage
 
-Copy E:\\Recovery\\recoveryimage c:\\recovery\\OEM
+    Copy E:\\Recovery\\recoveryimage c:\\recovery\\OEM
 
-Copy E:\\StartLayout\\\*.\* c:\\recovery\\OEM
+    Copy E:\\StartLayout\\\*.\* c:\\recovery\\OEM
 
 1.  Run scanstate utility to gather app and customizations
 
-***x64/x86 Distinction***
+    ***x64/x86 Distinction***
 
-*OEMs using an ***x64* Windows 10 image***
+    *OEMs using an ***x64* Windows 10 image***
 
-Mkdir c:\\recovery\\customizations
+    Mkdir c:\\recovery\\customizations
 
-E:\\ScanState\_amd64\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /config:c:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
+    E:\\ScanState\_amd64\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /config:c:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
 
-*Where E: is the drive letter of USB-B*
+    *Where E: is the drive letter of USB-B*
 
-*OEMs using an ***x86* Windows 10 image***
+    *OEMs using an ***x86* Windows 10 image***
 
-E:\\ScanState\_x86\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /i:c:\\recovery\\oem\\regrecover.xml /config:C:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
+    E:\\ScanState\_x86\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /i:c:\\recovery\\oem\\regrecover.xml /config:C:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
 
-*Where E: is the drive letter of USB-B*
+    *Where E: is the drive letter of USB-B*
 
 1.  Create extensibility script to restore additional settings and customizations
 
-You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
+    You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
 
-The sample script EnableCustomizations.cmd will be called during PBR and will do 2 things
+    The sample script EnableCustomizations.cmd will be called during PBR and will do 2 things
 
-1.  Copy the unattend.xml file used for initial deployment to the \\windows\\panther folder
+    a.  Copy the unattend.xml file used for initial deployment to the \\windows\\panther folder.
 
-2.  Copy the layoutmodification.xml to the system
+    b.  Copy the layoutmodification.xml to the system.
 
 ### 6.3. Finalize and Capture Manufacturing Image
 
@@ -720,19 +720,19 @@ The sample script EnableCustomizations.cmd will be called during PBR and will do
 
 3.  Copy winre backup to windows
 
-Copy e:\\images\\winre\_bak.wim c:\\windows\\system32\\recovery\\winre.wim
+    Copy e:\\images\\winre\_bak.wim c:\\windows\\system32\\recovery\\winre.wim
 
 1.  Copy unattend.xml to recovery folder to enable recovery of unattend settings during Push Button Reset
 
-Copy USB-B\\answerfiles\\unattendsysprep.xml c:\\Recovery\\OEM\\unattend.xml
+    Copy USB-B\\answerfiles\\unattendsysprep.xml c:\\Recovery\\OEM\\unattend.xml
 
 1.  Connect USB-B to reference computer
 
 2.  Generalize the image by using the answer file which reflects the changes made in Section 6.
 
-> Please notice; these changes include Microsoft Office tile component pinned to start screen
+    Please notice; these changes include Microsoft Office tile component pinned to start screen
 
-Cmd /c C:\\Windows\\System32\\Sysprep\\sysprep /unattend:c:\\Recovery\\OEM\\Unattend.xml /generalize /oobe /shutdown
+    Cmd /c C:\\Windows\\System32\\Sysprep\\sysprep /unattend:c:\\Recovery\\OEM\\Unattend.xml /generalize /oobe /shutdown
 
 1.  Boot reference computer and connect USB-A
 
@@ -742,29 +742,29 @@ Cmd /c C:\\Windows\\System32\\Sysprep\\sysprep /unattend:c:\\Recovery\\OEM\\Unat
 
 4.  Start cleanup of the image
 
-**Important: By default, non-major updates (e.g. ZDPs, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. **
+    **Important: By default, non-major updates (e.g. ZDPs, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. **
 
-MD e:\\scratchdir
+    MD e:\\scratchdir
 
-Dism /Cleanup-Image /Image:e:\\ /StartComponentCleanup /resetbase /scratchdir:e:\\scratchdir
+    Dism /Cleanup-Image /Image:e:\\ /StartComponentCleanup /resetbase /scratchdir:e:\\scratchdir
 
 1.  Capture the image of the windows partition. This process takes several minutes.
 
-dism /Capture-Image /CaptureDir:E:\\ /ImageFile:F:\\Images\\ModelSpecificImage.wim /Name:"myWinImageWithMSIUpdated" /scratchdir:e:\\scratchdir
+    dism /Capture-Image /CaptureDir:E:\\ /ImageFile:F:\\Images\\ModelSpecificImage.wim /Name:"myWinImageWithMSIUpdated" /scratchdir:e:\\scratchdir
 
-> (E is the volume label of Windows)
->
-> (F is the volume label of USB-B)
+    (E is the volume label of Windows)
+    
+    (F is the volume label of USB-B)
 
 1.  Copy the image to USB-B. This process takes several minutes.
 
-copy E:\\ModelSpecificImage.wim H:\\Images\\
+    copy E:\\ModelSpecificImage.wim H:\\Images\\
 
-> (H is the volume label of USB-B )
+    (H is the volume label of USB-B )
 
-(This will overwrite our image created in Sect 5)
+    (This will overwrite our image created in Sect 5)
 
-Section 7. Deploy Image 
+Section 7 Deploy Image 
 ------------------------
 
 Using deployment script to layout the partitions on the device and apply the image. Using walkthrough-deploy.bat in USB-B\\deployment folder will partition the device based device mode.
@@ -777,30 +777,30 @@ E:\\Deployment\\walkthrough-deploy.bat E:\\Images\\BasicImage.wim
 
 **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
 
-**Note: Only use compact OS on high end storage devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32GB. Please reference** [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129(v=vs.85).aspx) **for more information.**
+**Note: Only use compact OS on high end storage devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32GB. Please reference** [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx) **for more information.**
 
 Remove USB-A and USB-B and type “exit” to reboot your pc with Windows 10
 
-Section 8. Finalize Deployment
+Section 8 Finalize Deployment
 ------------------------------
 
 1.  Upon deploying your model specific image to destination computers, boot the computer with master image for the first time in AUDIT mode
 
-**IMPORTANT**: In order to minimize the first boot time, (Boot -&gt; Specialize -&gt; OOBE -&gt; Start Screen) specialize pass must be completed in the factory. Specialize pass will configure hardware specific information which Windows will run on.
+    **IMPORTANT**: In order to minimize the first boot time, (Boot -&gt; Specialize -&gt; OOBE -&gt; Start Screen) specialize pass must be completed in the factory. Specialize pass will configure hardware specific information which Windows will run on.
 
-**REFERENCE**: Please refer to [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008) to learn more about the first boot time requirements.
+    **REFERENCE**: Please refer to [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008) to learn more about the first boot time requirements.
 
-1.  Please note that at the end of the Section 6, the system was sealed with OOBE mode. Please proceed with AUDIT. IF system boots in OOBE, CTRL-SHIFT F3 in order to pass OOBE and boot in audit mode
+1.  Please note that at the end of the Section 6, the system was sealed with OOBE mode. Please proceed with AUDIT. IF system boots in OOBE, CTRL+SHIFT+F3 in order to pass OOBE and boot in audit mode.
 
-2.  If you are to apply additional steps for example executing OEM diagnostics tests etc, please apply them here
+2.  If you are to apply additional steps for example executing OEM diagnostics tests etc, please apply them here.
 
 3.  Finally run Sysprep tool (C:\\Windows\\System32\\Sysprep\\sysprep.exe) and seal the system back to **OOBE** and **shutdown** but ***without* generalize**.
 
-4.  OEM ships the system
+4.  OEM ships the system.
 
-IMPORTANT: If you are manufacturing small amount of devices without using image managing tool like disk duplicators or Windows Deployment Service you can choose to use the following practice:
+    IMPORTANT: If you are manufacturing small amount of devices without using image managing tool like disk duplicators or Windows Deployment Service you can choose to use the following practice:
 
-You can manufacture those devices by first booting in WinPE - inserting USB-A. Than insert USB-B where final manufacturing image is contained. Run Walktrough-Deploy script to apply the image. After you’ve applied the image follow Section 8. Now the device is ready to be shipped with your final manufacturing image and PBR feature implemented. Finally replicate the same procedure with the other devices.
+    You can manufacture those devices by first booting in WinPE - inserting USB-A. Than insert USB-B where final manufacturing image is contained. Run Walktrough-Deploy script to apply the image. After you’ve applied the image follow Section 8. Now the device is ready to be shipped with your final manufacturing image and PBR feature implemented. Finally replicate the same procedure with the other devices.
 
 <span id="_Option_2._Deployment" class="anchor"></span>
 
@@ -824,14 +824,14 @@ Format your desired USB Drive and name it as follows:
 
 1.  Here you will find USB-B content embedded in the whitepaper which is: **USB-B.zip**. Extract USB-B.zip content to your technician computer. To extract USB-B.zip follow the steps below:
 
--   Right-click USB-B.zip and select “Packager Shell Object”
+    a. Right-click USB-B.zip and select **Packager Shell Object**.
 
--   Select “Activate Contents”
+    b. Select **Activate Contents**.
 
--   Click “Open” when the pop-up windows appear
+    c. Click **Open** when the pop-up windows appear.
 
--   Unzip and copy all the content to your USB which you’ve formatted in step 1
-
+    d. Unzip and copy all the content to your USB which you formatted in step 1.
+    
 1.  USB-B has been extracted and your own USB-B is ready to use now.
 
 <span id="_Windows_AST.ps1" class="anchor"><span id="_Ref372646326" class="anchor"><span id="_Toc441042832" class="anchor"></span></span></span>Differences Between 64-bit and 32-bit Deployment
