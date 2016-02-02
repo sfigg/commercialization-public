@@ -1,4 +1,5 @@
-<img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/MicrosoftLogo.png" width="139" height="51" />
+![Microsoft Logo](./images/MicrosoftLogo.png)
+
 
 Windows 10 Deployment Whitepaper for System Builders
 
@@ -26,28 +27,25 @@ Microsoft, Windows, Windows 10, Windows 8.1, Windows 8, Windows 7 and Windows Vi
 
 The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
 
-Contents
-========
+# Contents
+
 
 Use this guide to deploy Windows® 10 to a line of computers by following these steps:
 
-Summary
-=======
+# Summary
+
 
 The purpose of this whitepaper is to document a prescriptive method for Windows 10 deployment which includes online and offline customizations, targeting system builders for both 64bit and 32bit configurations.
 
 This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the OEMs to include/exclude optional steps due to their specific deployment environment.
 
-<span id="_Toc245323300" class="anchor"><span id="_Toc165431082" class="anchor"><span id="_Toc441042804" class="anchor"></span></span></span>Intended Audience
-==============================================================================================================================================================
+# Intended Audience
 
 This procedure is specially targeted for system builders and applies to all Windows 10 client operating system versions. This document addresses level 200 technicians on Windows deployment. In order to complete level 100 please refer to “Getting Started with the Windows ADK” document (ADK\_GetStarted.chm) under Windows 10 ADK installation directory. You may prefer to refer to external resources like [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/) as well
 
-<span id="_Ref341272065" class="anchor"><span id="_Ref341273339" class="anchor"><span id="_Toc441042805" class="anchor"></span></span></span>Introduction
-=========================================================================================================================================================
+# Introduction
 
-<span id="_Ref341278572" class="anchor"><span id="_Ref341278613" class="anchor"><span id="_Toc441042806" class="anchor"></span></span></span>Prepare Your Lab Environment
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Prepare Your Lab Environment
 
 In this step you will set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. Technician computer must be installed Windows 10 x64 if you are going to do x64 image deployment or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Please see ***Differences Between 64-bit and 32-bit Deployment*** section to obtain further information about 64-bit vs 32-bit deployment
 
@@ -75,8 +73,7 @@ USB-B will be used to store deployment, recovery scripts and sample answer files
 
 **Procedures throughout the document are highly dependent on the sample files contained in** USB-B **therefore it is recommended to complete Creating My** USB-B **section before starting **
 
-Customizations Throughout the document
---------------------------------------
+## Customizations Throughout the document
 
 | **Pass**        | **Setting**                              | **Action**                                                            |
 |-----------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -93,8 +90,7 @@ Customizations Throughout the document
 |                 | Themes                                   | Custom Theme with the OEM logo as the desktop background has been set |
 |                 | Visual Effects                           | SystemDefaultBackground set                                           |
 
-Additional Customizations
--------------------------
+## Additional Customizations
 
 ### Product Deployment
 
@@ -112,8 +108,7 @@ Image size optimization implemented
 
 Pinning desktop apps to start sceen implemented
 
-Section 1. Create WinPE bootable USB
-------------------------------------
+## Section 1. Create WinPE bootable USB
 
 **Windows 10 version distinction RTM/1511**
 
@@ -131,7 +126,7 @@ Section 1. Create WinPE bootable USB
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/ADK_SelectFeatures.png" width="466" height="343" />
+    ![Select ADK Features](./images/ADK_SelectFeatures.png)
 
 1.  Run **Deployment and Imaging Tools Environment** with elevated permissions from Start Menu
 
@@ -149,7 +144,7 @@ Section 1. Create WinPE bootable USB
 
 2.  Connect USB Drive size at least 4GB. ***USB-A, FAT32, ~4GB***
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/ConnectUSB.png" width="174" height="322" />
+    ![Connect USB](./images/ConnectUSB.png)
 
 3.  Make the inserted USB a new WinPE bootable USB
 
@@ -167,8 +162,7 @@ Section 1. Create WinPE bootable USB
 
     *(F: is the drive letter of USB)*
 
-Section 2. Install Windows with Basic Customizations
-----------------------------------------------------
+## Section 2. Install Windows with Basic Customizations
 
 **OBTAIN**: Please obtain Windows 10 x86/x64 DVD media which you will be obtaining from Microsoft Authorized Distributor
 
@@ -176,11 +170,11 @@ Section 2. Install Windows with Basic Customizations
 
 1.  Copy *sources\\**Install.wim*** file from the directory in Windows 10 media which you will be deploying, to your local Desktop (~3gb)
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/CopyWIM.png" width="505" height="263" />
+    ![Copy WIM](./images/CopyWIM.png)
 
 1.  Run **Windows System Image Manager** to start creating an answer file from scratch. This tool allows you to create or manage your answer files in an easy and organized manner.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/RunSIM.png" width="602" height="483" />
+    ![Run SIM](./images/RunSIM.png)
 
 1.  Navigate to *File &gt; Select Windows Image*. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
 
@@ -254,7 +248,7 @@ Section 2. Install Windows with Basic Customizations
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/diskpart.png" width="505" height="263" />
+    ![Diskpart](./images/diskpart.png)
 
 1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations
 
@@ -276,7 +270,7 @@ Section 2. Install Windows with Basic Customizations
 
 3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations)
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/Sysprep.png" width="336" height="251" />
+    ![Sysprep](./images/Sysprep.png)
 
 1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox
 
@@ -284,8 +278,7 @@ Section 2. Install Windows with Basic Customizations
 
 3.  In the shutdown options box select **Shutdown**
 
-Section 3. Capture an Image
----------------------------
+## Section 3. Capture an Image
 
 1.  Boot reference computer and connect USB-A
 
@@ -303,8 +296,7 @@ Section 3. Capture an Image
 
     (C:\\ is the volume label of currently installed Windows. E:\\ is the volume label of USB-B)
 
-Section 4. Update Images for Each Model: Offline Servicing
-----------------------------------------------------------
+## Section 4. Update Images for Each Model: Offline Servicing
 
 1.  Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim
 
@@ -328,9 +320,9 @@ Section 4. Update Images for Each Model: Offline Servicing
 
     **TROUBLESHOOT**: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/mount.png" width="509" height="109" />
+    ![Mount](./images/mount.png)
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/windowsfolder.png" width="506" height="198" />
+    ![Windows folder](./images/windowsfolder.png)
 
 ### 4.2. Modifying Images
 
@@ -368,7 +360,7 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 **OBTAIN**: Download Windows 10 Language Interface Packs from [OEM Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under “LIPs” tab
 
-**Reference:** [Add Language Interface Packs to Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn898477(v=vs.85).aspx)
+**Reference:** [Add Language Interface Packs to Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn898477.aspx)
 
 **Important: LIP Versions must matching other Windows components versions for Image and ADK**
 
@@ -376,7 +368,7 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 1.  Copy LIP folder to USB-B\\LanguagePack\\x64 or USB-B\\LanguagePack\\x86 folder:
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/copylip.png" width="472" height="236" />
+    ![Copy LIP](./images/copylip.png)
 
 1.  Apply LIP to mounted image
 
@@ -400,23 +392,23 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 1.  Run Internet Explorer and navigate to [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx) webpage. Please see the essential updates from *What You Must Obtain & From Where* section which you should obtain from Microsoft Update Catalog.
 
-2.  Type every single update package one by one into the search box and click “Search”
+2.  Type every single update package one by one into the search box and click **Search**.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/updatecatalog.png" width="371" height="294" />
+    ![Update catalog](./images/updatecatalog.png)
 
-1.  After seeing search is competing, click “Add” next to the version and architecture of the package you wish to download.
+1.  After seeing search is competing, click **Add** next to the version and architecture of the package you wish to download.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/addupdatecatalog.png" width="408" height="174" />
+    ![Add Update Catalog](./images/addupdatecatalog.png)
 
-1.  After you’ve added all of the below listed updates, click “view basket” and then “download”
+1.  After you’ve added all of the below listed updates, click **view basket** and then **Download**.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/downloadupdatecatalog.png" width="415" height="166" />
+    ![Download Update Catalog](./images/downloadupdatecatalog.png)
     
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/downloadupdatecatalogcomplete.png" width="414" height="204" />
+    ![Download complete](./images/downloadupdatecatalogcomplete.png)
 
     **TROUBLESHOOT:** IF you encounter an error as “The website has encountered a problem” after clicking “Download”, try turning off the pop-up blocker in IE or disabling Protected Mode in IE temporarily
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/enableprotectedmode.png" width="414" height="204" />
+    ![Enable Protected Mode](./images/enableprotectedmode.png)
 
 1.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command
 
@@ -454,11 +446,11 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
     **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/oemlogodetails.png" width="505" height="131" />
+    ![OEM Logo details](./images/oemlogodetails.png)
 
 1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\\system32\\OEM\\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/adddesktopbackground.png" width="758" height="105" />
+    ![Add desktop background](./images/adddesktopbackground.png)
 
 #### 4.2.5. Modify Start Layout
 
@@ -576,12 +568,11 @@ The System Builder may want to make additional customizations through an unatten
 
     This process may take several minutes.
 
-Section 5. Deploy Image to New Computers (Windows Installation)
----------------------------------------------------------------
+## Section 5. Deploy Image to New Computers (Windows Installation)
 
 1.  On technician computer locate the following files in USB-B/Deployment destination. Please see “**Creating My USB-B**” section to create and place the files in correct paths. If you’ve already done this step please skip
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/locateusbfiles.png" width="255" height="206" />
+    ![Locate USB files](./images/locateusbfiles.png)
 
 2.  Boot reference computer and connect USB-A
 
@@ -593,14 +584,13 @@ Section 5. Deploy Image to New Computers (Windows Installation)
 
     **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
 
-1.  **Note: Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommend on rotational devices. Please reference** [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129(v=vs.85).aspx) **for more information.**
+1.  **Note: Only use compact OS on Flash drive based devices as compact OS performance is heavily dependent on the storage device capabilities. Compact OS is NOT recommend on rotational devices. Please reference** [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx) **for more information.**
 
     Please remove USB-A and USB-B then type
 
     Exit
 
-Section 6. Update images manually by using AUDIT MODE (online servicing)
-------------------------------------------------------------------------
+## Section 6. Update images manually by using AUDIT MODE (online servicing)
 
 **IMPORTANT**: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
 
@@ -620,7 +610,7 @@ Section 6. Update images manually by using AUDIT MODE (online servicing)
 
     <code>Cd C:\\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;</code>
 
-    <img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/installationdirectory.png" width="592" height="147" />
+    ![Installation directory](./images/installationdirectory.png)
 
     **IMPORTANT:** The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. You can preload the 32-bit version of Office 2013 on computers that run either 32-bit or 64-bit operating systems. You can preload the 64-bit version of Office 2013 only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload ***only the 32-bit version*** of the OPK on both 32-bit and 64-bit computers.
 
@@ -638,7 +628,7 @@ Please reference the [OEM Partner Center](https://www.microsoft.com/oem/en/insta
 
 ### 6.3 Prepare system for recovery with Push Button Reset
 
-Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/hardware/dn938307(v=vs.85).aspx) and [Windows Recovery Environment (Windows RE)](https://msdn.microsoft.com/library/windows/hardware/dn938364(v=vs.85).aspx) and [Hard Drives and Partitions](https://msdn.microsoft.com/library/windows/hardware/dn898577(v=vs.85).aspx) for more information.
+Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/hardware/dn938307.aspx) and [Windows Recovery Environment (Windows RE)](https://msdn.microsoft.com/library/windows/hardware/dn938364(v=vs.85).aspx) and [Hard Drives and Partitions](https://msdn.microsoft.com/library/windows/hardware/dn898577.aspx) for more information.
 
 1.  Prepare Scanstate tool
 
@@ -764,8 +754,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     (This will overwrite our image created in Sect 5)
 
-Section 7 Deploy Image 
-------------------------
+## Section 7 Deploy Image 
 
 Using deployment script to layout the partitions on the device and apply the image. Using walkthrough-deploy.bat in USB-B\\deployment folder will partition the device based device mode.
 
@@ -804,10 +793,9 @@ Section 8 Finalize Deployment
 
 <span id="_Option_2._Deployment" class="anchor"></span>
 
-Appendix
-========
+# Appendix
 
-<span id="_Ref340670697" class="anchor"><span id="_Toc441042830" class="anchor"></span></span>Creating My USB-B
+## Creating My USB-B
 ---------------------------------------------------------------------------------------------------------------
 
 -   The deployment steps in this whitepaper are highly dependant on the sample configuration files included in USB-B. Therefore, it is recommended to create your own USB-B before starting the deployment procedure. To do so please complete Creating My USB-B section.
@@ -820,7 +808,7 @@ Appendix
 
 Format your desired USB Drive and name it as follows:
 
-<img src="c:/repos/wdg-cpub-hardware-manufacturing/docset/sxs/images/extractusb.png" width="162" height="300" />
+![Extract USB](./images/extractusb.png)
 
 1.  Here you will find USB-B content embedded in the whitepaper which is: **USB-B.zip**. Extract USB-B.zip content to your technician computer. To extract USB-B.zip follow the steps below:
 
@@ -834,8 +822,7 @@ Format your desired USB Drive and name it as follows:
     
 1.  USB-B has been extracted and your own USB-B is ready to use now.
 
-<span id="_Windows_AST.ps1" class="anchor"><span id="_Ref372646326" class="anchor"><span id="_Toc441042832" class="anchor"></span></span></span>Differences Between 64-bit and 32-bit Deployment
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Differences Between 64-bit and 32-bit Deployment
 
 It is recommended to consider 64bit deployment vs 32bit deployment disk footprint according to the storage of the device you are manufacturing.
 
@@ -849,8 +836,7 @@ The overall deployment flow mentioned in this whitepaper doesn’t differ betwee
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing 64bit Windows image please use x64 update packages, or vice-versa                                                                                                                                   | Section 4.2.2 Adding Update Packages |
 | Language Interface Packs                | IF you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs                                                                                                                                                                    | Section 6.2                          |
 
-<span id="_Ref372648853" class="anchor"><span id="_Toc441042833" class="anchor"></span></span>What You Must Obtain & From Where
--------------------------------------------------------------------------------------------------------------------------------
+## What You Must Obtain & From Where
 
 Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
@@ -867,8 +853,7 @@ Before starting the deployment procedure OEM requires to download certain kits w
  KB3118754                                            | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the releated section | Section 4.2.2        |
 | **Microsoft Office v15.4**                          | Obtain Microsoft Office v15.4 by downloading from [OEM Partner Center](http://www.microsoft.com/OEM/en/installation/downloads/Pages/office-single-image-v15-opk.aspx)                                                 | Section 6.1          |
 
-References
-==========
+# References
 
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
