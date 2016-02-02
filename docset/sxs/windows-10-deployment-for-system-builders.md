@@ -144,7 +144,7 @@ Pinning desktop apps to start sceen implemented
 
 2.  Connect USB Drive size at least 4GB. ***USB-A, FAT32, ~4GB***
 
-    ![Connect USB](./images/ConnectUSB.png)
+    ![Connect USB](images/ConnectUSB.png)
 
 3.  Make the inserted USB a new WinPE bootable USB
 
@@ -170,11 +170,11 @@ Pinning desktop apps to start sceen implemented
 
 1.  Copy *sources\\**Install.wim*** file from the directory in Windows 10 media which you will be deploying, to your local Desktop (~3gb)
 
-    ![Copy WIM](./images/CopyWIM.png)
+    ![Copy WIM](images/CopyWIM.png)
 
 1.  Run **Windows System Image Manager** to start creating an answer file from scratch. This tool allows you to create or manage your answer files in an easy and organized manner.
 
-    ![Run SIM](./images/RunSIM.png)
+    ![Run SIM](images/RunSIM.png)
 
 1.  Navigate to *File &gt; Select Windows Image*. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
 
@@ -248,7 +248,7 @@ Pinning desktop apps to start sceen implemented
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
 
-    ![Diskpart](./images/diskpart.png)
+    ![Diskpart](images/diskpart.png)
 
 1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations
 
@@ -270,7 +270,7 @@ Pinning desktop apps to start sceen implemented
 
 3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations)
 
-    ![Sysprep](./images/Sysprep.png)
+    ![Sysprep](images/Sysprep.png)
 
 1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox
 
@@ -320,9 +320,9 @@ Pinning desktop apps to start sceen implemented
 
     **TROUBLESHOOT**: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
-    ![Mount](./images/mount.png)
+    ![Mount](images/mount.png)
 
-    ![Windows folder](./images/windowsfolder.png)
+    ![Windows folder](images/windowsfolder.png)
 
 ### 4.2. Modifying Images
 
@@ -368,7 +368,7 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 1.  Copy LIP folder to USB-B\\LanguagePack\\x64 or USB-B\\LanguagePack\\x86 folder:
 
-    ![Copy LIP](./images/copylip.png)
+    ![Copy LIP](images/copylip.png)
 
 1.  Apply LIP to mounted image
 
@@ -394,21 +394,21 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 2.  Type every single update package one by one into the search box and click **Search**.
 
-    ![Update catalog](./images/updatecatalog.png)
+    ![Update catalog](images/updatecatalog.png)
 
 1.  After seeing search is competing, click **Add** next to the version and architecture of the package you wish to download.
 
-    ![Add Update Catalog](./images/addupdatecatalog.png)
+    ![Add Update Catalog](images/addupdatecatalog.png)
 
 1.  After you’ve added all of the below listed updates, click **view basket** and then **Download**.
 
-    ![Download Update Catalog](./images/downloadupdatecatalog.png)
+    ![Download Update Catalog](images/downloadupdatecatalog.png)
     
-    ![Download complete](./images/downloadupdatecatalogcomplete.png)
+    ![Download complete](images/downloadupdatecatalogcomplete.png)
 
     **TROUBLESHOOT:** IF you encounter an error as “The website has encountered a problem” after clicking “Download”, try turning off the pop-up blocker in IE or disabling Protected Mode in IE temporarily
 
-    ![Enable Protected Mode](./images/enableprotectedmode.png)
+    ![Enable Protected Mode](images/enableprotectedmode.png)
 
 1.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command
 
@@ -446,11 +446,11 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
     **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
 
-    ![OEM Logo details](./images/oemlogodetails.png)
+    ![OEM Logo details](images/oemlogodetails.png)
 
 1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\\system32\\OEM\\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 
-    ![Add desktop background](./images/adddesktopbackground.png)
+    ![Add desktop background](images/adddesktopbackground.png)
 
 #### 4.2.5. Modify Start Layout
 
@@ -490,9 +490,9 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
     Copy e:\\StartLayout\\Bing.url “C:\\mount\\windows\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\”
 
-    Copy e:\\StartLayout\\Paint.lnk "c:\\mount\\windows\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs"
+    Copy e:\\StartLayout\\Paint.lnk "C:\\mount\\windows\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs"
 
-    Copy E:\\StartLayout\\Bing.url “c:\\mount\\windows\\users\\All Users\\Microsoft\\Windows\\Start Menu\\Programs”
+    Copy E:\\StartLayout\\Bing.url “C:\\mount\\windows\\users\\All Users\\Microsoft\\Windows\\Start Menu\\Programs”
 
     Copy E:\\StartLayout\\Paint.lnk “C:\\Mount\\Windows\\Users\\All Users\\Microsoft\\Windows\\Start Menu\\Programs”
 
@@ -572,7 +572,7 @@ The System Builder may want to make additional customizations through an unatten
 
 1.  On technician computer locate the following files in USB-B/Deployment destination. Please see “**Creating My USB-B**” section to create and place the files in correct paths. If you’ve already done this step please skip
 
-    ![Locate USB files](./images/locateusbfiles.png)
+    ![Locate USB files](images/locateusbfiles.png)
 
 2.  Boot reference computer and connect USB-A
 
@@ -610,7 +610,7 @@ The System Builder may want to make additional customizations through an unatten
 
     <code>Cd C:\\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;</code>
 
-    ![Installation directory](./images/installationdirectory.png)
+    ![Installation directory](images/installationdirectory.png)
 
     **IMPORTANT:** The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. You can preload the 32-bit version of Office 2013 on computers that run either 32-bit or 64-bit operating systems. You can preload the 64-bit version of Office 2013 only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload ***only the 32-bit version*** of the OPK on both 32-bit and 64-bit computers.
 
@@ -808,7 +808,7 @@ Section 8 Finalize Deployment
 
 Format your desired USB Drive and name it as follows:
 
-![Extract USB](./images/extractusb.png)
+![Extract USB](images/extractusb.png)
 
 1.  Here you will find USB-B content embedded in the whitepaper which is: **USB-B.zip**. Extract USB-B.zip content to your technician computer. To extract USB-B.zip follow the steps below:
 
