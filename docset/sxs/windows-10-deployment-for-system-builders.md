@@ -1,4 +1,4 @@
-![Microsoft Logo](./images/MicrosoftLogo.png)
+![Microsoft Logo](images/MicrosoftLogo.png)
 
 
 Windows 10 Deployment Whitepaper for System Builders
@@ -126,7 +126,7 @@ Pinning desktop apps to start sceen implemented
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-    ![Select ADK Features](./images/ADK_SelectFeatures.png)
+    ![Select ADK Features](images/ADK_SelectFeatures.png)
 
 1.  Run **Deployment and Imaging Tools Environment** with elevated permissions from Start Menu
 
