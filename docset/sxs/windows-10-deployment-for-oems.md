@@ -18,7 +18,7 @@ This guide is organized around these three hardware configurations:
 | Form factor                  | Small tablet | 2-in-1       | Notebook     |
 | RAM                          | 1 GB         | 2 GB         | 4 GB         |
 | Disk capacity and type       | 16 GB eMMC   | 32 GB eMMC   | 500 GB HDD   |
-| Display size                 | 8”           | 10”          | 14”          |
+| Display size                 | 8"           | 10"          | 14"          |
 | Windows SKU                  | Core         | Pro          | Core         |
 | Language(s)                  | EN-US        | EN-US, DE-DE | EN-US, DE-DE |
 | Cortana                      | Yes          | Yes          | Yes          |
@@ -255,11 +255,11 @@ Use Dism command with the /Add-Driver option. For example:
 
 *OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
 
-    dism /image:C:\winpe_amd64\mount /Add-Driver /driver:”C:\Out-of-Box Drivers\mydriver.inf”
+    dism /image:C:\winpe_amd64\mount /Add-Driver /driver:"C:\Out-of-Box Drivers\mydriver.inf"
 
 *OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
 
-    dism /image:C:\winpe_x86\mount /Add-Driver /driver:”C:\Out-of-Box Drivers\mydriver.inf”
+    dism /image:C:\winpe_x86\mount /Add-Driver /driver:"C:\Out-of-Box Drivers\mydriver.inf"
 
 **Note: To install all of the drivers in a folder and all its subfolders use the /recurse option. For example:**
 
@@ -358,7 +358,7 @@ Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
 
 3. Run the commands in the following table to copy the WinPE folder structure.
 
-Note: If you have labeled your USB-A stick the script below will overwrite the lable to “WinPE”. 
+Note: If you have labeled your USB-A stick the script below will overwrite the label to “WinPE". 
 
 <table>
 <tr>
@@ -414,7 +414,7 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     
     **Reference:** Please refer to the [WSIM overview](https://technet.microsoft.com/en-us/library/hh825214.aspx) on Technet for more information on Windows System Image Manager (SIM) user interface
 
-1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\**Install.wim**. A Catalog file will be created (.clg file) for that specific wim.
+1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\\*Install.wim*. A Catalog file will be created (.clg file) for that specific wim.
 
     **TROUBLESHOOT**: Catalog creation may fail due to several reasons. You may receive the following:
 
@@ -466,7 +466,7 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     </tr>
     </table>
    
-    Reference: See [Technet reference Sample Unattend](https://technet.microsoft.com/en-in/library/cc732280(v=ws.10).aspx) for addition samples.
+    Reference: See [Technet reference Sample Unattend](https://technet.microsoft.com/library/cc732280.aspx) for addition samples.
 
 1.  Specify the product key in the answer file. This customization is included in the sample answer file in **USB-B**. There are two different ways to specify the product key in the answer file:
 
@@ -490,7 +490,7 @@ Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content
 
 3.  At the **\DISKPART&gt;** prompt type ***list volume***
 
-    **Note: Check what letter USB-B has been assigned under the “Ltr” column (Example: E). This is the drive letter that will be used throughout the installation.**
+    **Note: Check what letter USB-B has been assigned under the “Ltr" column (Example: E). This is the drive letter that will be used throughout the installation.**
 
 1.  Type ***exit*** to quit Diskpart
 
@@ -588,7 +588,7 @@ Connecting the computer to the internet is not recommended during manufacturing 
 
 ## Capture Basic Image
 
-1.  Connect “**USB-A**”and boot the Reference computer.
+1.  Connect "**USB-A**" and boot the Reference computer.
 
 2.  After WinPE has been booted connect **USB-B**
 
@@ -1048,7 +1048,7 @@ For packages with dependencies, make sure you install the packages in order. For
 </td>
 </tr>
 <tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:”E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
+<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 </code>
 </td>
 </tr>
@@ -1072,7 +1072,7 @@ As part of the language pack re-factoring for Windows 10, some languages with Fo
 </td>
 </tr>
 <tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:”E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
+<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
 </code>
 </td>
 </tr>
@@ -1084,7 +1084,7 @@ As part of the language pack re-factoring for Windows 10, some languages with Fo
 </td>
 </tr>
 <tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab” <b>/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:”E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab”
+<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
 </code>
 </td>
 </tr>
@@ -1251,11 +1251,12 @@ OEMs will need to remove all en-US language packages from the system. Below is a
 </tr>
 </table>
 
-Troubleshoot: If a error occurs running a package, such as:
+
+Troubleshoot: If an error occurs running a package, such as:
 
 Error: 0x800f0825
 
-Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again.The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. Run the dism remove package again on only the failing package.
+Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again.The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. Run dism.exe remove package again on only the failing package.
 
 ### [Optional] Remove additional languages from WinRE
 
@@ -1323,13 +1324,13 @@ Use Dism to apply latest GDR and any pre-requisite KB. Please verify on [SOC (So
 
 Note: The following example shows how to extract KB from the OPK download from SOC.
 
-1.  Copy both architecture folders for KB3081452 to **USB-B**\Updates
+1.  Copy both architecture folders for KB3081452 to **USB-B**\Updates.
 
     Navigate to X20-53652 Windows Desktop OPK Supp Updates Sep15\Software - DVD\X20-53672 SW DVD5 Windows Supp Sep15 Disk 1 OEM\x20-53672.img and double-click. Find the 3081452 folder, as shown in following image.
     
     ![Update 3081452](images\update-3081452.png)
     
-1.  Copy both architecture folders for KB3097617 to **USB-B**\Updates
+1.  Copy both architecture folders for KB3097617 to **USB-B**\Updates.
 
     Navigate to X20-86795 Windows Desktop OPK Supp Updates Oct15\Software - DVD\X20-86816 SW DVD5 Windows Supp Oct15 OEM\x20-86816.img and double-click. Find the 3097617 folder, as shown in following image.
 
@@ -1481,9 +1482,9 @@ Install the apps
 
 Please  refer to [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx) for more details.
 
-Note: Microsoft Office Single image installation is covered in the section "Preload Microsoft Office Single Image v15.4" for devices with screen size above 10.1”.
+Note: Microsoft Office Single image installation is covered in the section "Preload Microsoft Office Single Image v15.4" for devices with screen size above 10.1".
 
-Pre-install Office single image (either with or with out perpetual or subscription license) or Office Mobile.  Office Mobile must be used on devices with screen size of 10.1” and below, and Office single image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. OEMs must have only one Office image on the Customer System at a time.
+Pre-install Office single image (either with or with out perpetual or subscription license) or Office Mobile.  Office Mobile must be used on devices with screen size of 10.1" and below, and Office single image must be used on devices with screen sizes above 10.1". For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. OEMs must have only one Office image on the Customer System at a time.
 
 1.  Extract all folders to E:\Universal_Office
 
@@ -1505,7 +1506,7 @@ To take advantage of all these new features and have the most robust and complet
 
     Note: It is recommended to start with the sample on USB-B\StartLayout\layoutModification.xml as it conforms to the samples in this document (example only).
 
-    The Sample LayoutModification.xml shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that will be applied if the device country/region matches what’s specified in Region (in this case, the regions are Germany and United States). Each group contains three tiles and the various elements you need to use depending on the tile that you want to pin to Start.
+    The Sample LayoutModification.xml shows two groups called “Fabrikam Group 1" and “Fabrikam Group 2”, which contain tiles that will be applied if the device country/region matches what’s specified in Region (in this case, the regions are Germany and United States). Each group contains three tiles and the various elements you need to use depending on the tile that you want to pin to Start.
 
     Keep the following in mind when creating your LayoutModification.xml file:
 
@@ -1533,13 +1534,13 @@ To take advantage of all these new features and have the most robust and complet
 
     2.  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\
 
-            Copy e:\StartLayout\Bing.url “C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\”
+            Copy e:\StartLayout\Bing.url “C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
 
             copy e:\StartLayout\Paint.lnk "c:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
 
-            Copy E:\StartLayout\Bing.url “c:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs”
+            Copy E:\StartLayout\Bing.url “c:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
 
-            Copy E:\StartLayout\Paint.lnk “C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs”
+            Copy E:\StartLayout\Paint.lnk “C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
 
 **Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.**
 
@@ -1646,7 +1647,7 @@ Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partne
 
 1.  Increase scratchspace size.
 
-        Dism /image:”c:\mount\winre” /set-scratchspace:512
+        Dism /image:"c:\mount\winre" /set-scratchspace:512
 
 1.  Cleanup unused files and reduce size of winre.wim.
 
@@ -1747,7 +1748,7 @@ After the computer boots to the OOBE screen, press this key combination to boot 
 
 The current preload method of Office 2013 is different from other desktop apps. OEMs preinstall desktop apps so the apps are installed. This means that when the user launches the app, the app is already installed and automatically opens with no additional installation tasks other than EULA acceptance and/or user registration. With Office, compressed setup files are copied to the disk in addition to an out-of-box experience (OOBE) application which captures Office file associations and gives users an entry point to Try, Buy or Activate Office. Users do not have access to Word or Excel on the Start screen or in the All Apps view until they launch Office OOBE which is typically made available as a tile on the Start screen. When the user launches Office OOBE, setup of Office begins. Once Office setup is complete, the compressed setup files that are no longer necessary are removed from the disk.
 
--   Pre-install Office single image (either with or without perpetual or subscription license) or Office Mobile.  Office Mobile must be used on devices with screen size of 10.1” and below, and Office single image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. OEMs must have only one Office image on the customer system at a time.
+-   Pre-install Office single image (either with or without perpetual or subscription license) or Office Mobile.  Office Mobile must be used on devices with screen size of 10.1" and below, and Office single image must be used on devices with screen sizes above 10.1". For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. OEMs must have only one Office image on the customer system at a time.
 
 -   Pin Office tiles to the Start Menu in such slots that are visible without scrolling, regardless of OEM Systems’ Start Menu layout, unless the Office Tiles or Office tile, as applicable, are pinned as part of the Microsoft Group of Start Menu tiles.
 
@@ -1801,7 +1802,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
         <tr>
             <td width="110" valign="top">
                 <p>
-                    Office “universal” apps
+                    Office "universal" apps
                 </p>
             </td>
             <td width="167" valign="top">
