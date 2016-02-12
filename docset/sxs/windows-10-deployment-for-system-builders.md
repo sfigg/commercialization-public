@@ -1,47 +1,20 @@
 ![Microsoft Logo](images/MicrosoftLogo.png)
 
-
-Windows 10 Deployment Whitepaper for System Builders
-
-v1.00
-
-Microsoft Corporation
-
-Jan 2016
-
-The information contained in this document represents the current view of Microsoft Corporation and its Affiliates ("Microsoft") on the issues discussed as of the date of publication. Because Microsoft must respond to changing market conditions, it should not be interpreted to be a commitment on the part of Microsoft, and Microsoft cannot guarantee the accuracy of any information presented after the date of publication.
-
-MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, AS TO THE INFORMATION IN THIS DOCUMENT.
-
-Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
-
-Microsoft may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. Except as expressly provided in any written license agreement from Microsoft, the furnishing of this document does not give you any license to these patents, trademarks, copyrights, or other intellectual property.
-
-Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred.
-
-Microsoft does not make any representation or warranty regarding specifications in this document or any product or item developed based on these specifications. Microsoft disclaims all express and implied warranties, including but not limited to the implied warranties or merchantability, fitness for a particular purpose and freedom from infringement. Without limiting the generality of the foregoing, Microsoft does not make any warranty of any kind that any item developed based on these specifications, or any portion of a specification, will not infringe any copyright, patent, trade secret or other intellectual property right of any person or entity in any country. It is your responsibility to seek licenses for such intellectual property rights where appropriate. Microsoft shall not be liable for any damages arising out of or in connection with the use of these specifications, including liability for lost profit, business interruption, or any other damages whatsoever. Some states do not allow the exclusion or limitation of liability or consequential or incidental damages; the above limitation may not apply to you.
-
-© 2016 Microsoft Corporation. All rights reserved.
-
-Microsoft, Windows, Windows 10, Windows 8.1, Windows 8, Windows 7 and Windows Vista are either registered trademarks or trademarks of Microsoft Corporation in the United States or other countries or regions.
-
-The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
-
 # Contents
 
 
-Use this guide to deploy Windows® 10 to a line of computers by following these steps:
+Use this guide to deploy Windows® 10 to a line of computers by following the steps in this guide.
 
 # Summary
 
 
-The purpose of this whitepaper is to document a prescriptive method for Windows 10 deployment which includes online and offline customizations, targeting system builders for both 64bit and 32bit configurations.
+The purpose of this whitepaper is to document a prescriptive method for Windows 10 deployment that includes online and offline customizations, targeting system builders for both 64-bit and 32-bit configurations.
 
-This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the OEMs to include/exclude optional steps due to their specific deployment environment.
+This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the system builders to include/exclude optional steps due to their specific deployment environment.
 
 # Intended Audience
 
-This procedure is specially targeted for system builders and applies to all Windows 10 client operating system versions. This document addresses level 200 technicians on Windows deployment. In order to complete level 100 please refer to “Getting Started with the Windows ADK” document (ADK\_GetStarted.chm) under Windows 10 ADK installation directory. You may prefer to refer to external resources like [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/) as well
+This procedure is specially targeted for system builders and applies to all Windows 10 client operating system versions. This document addresses level 200 technicians about Windows deployment. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory. You may prefer to refer to external resources like [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/) as well
 
 # Introduction
 
@@ -49,7 +22,7 @@ This procedure is specially targeted for system builders and applies to all Wind
 
 In this step you will set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. Technician computer must be installed Windows 10 x64 if you are going to do x64 image deployment or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Please see ***Differences Between 64-bit and 32-bit Deployment*** section to obtain further information about 64-bit vs 32-bit deployment
 
-Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper from [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) -&gt; “Downloads and Installation” -&gt; “Understanding ADKs and OPKs”. In order to see the list of resources/kits that will be used and where to obtain them, please see ***What You Must Obtain & From Where*** section
+Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper from [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) &gt; “Downloads and Installation” &gt; “Understanding ADKs and OPKs”. In order to see the list of resources/kits that will be used and where to obtain them, please see ***What You Must Obtain & From Where*** section
 
 You will use a USB hard drive called USB-B to move files between computers, run scripts and store&apply created images and another USB hard drive called USB-A to boot the system in WinPE.
 
@@ -134,11 +107,11 @@ Pinning desktop apps to start sceen implemented
 
     **x64/x86 distinction:** *IF you will be using x64 Windows 10 image, copy x64 WinPE folder structure:*
 
-    Copype amd64 C:\\winpe\_amd64
+    Copype amd64 C:\winpe_amd64
 
     *IF you will be using x86 Windows 10 image, copy x86 WinPE folder structure:*
 
-    Copype x86 C:\\winpe\_x86
+    Copype x86 C:\winpe_x86
 
 1.  You may add packages and/or drivers to WinPE here
 
@@ -152,13 +125,13 @@ Pinning desktop apps to start sceen implemented
 
     *x64 Windows 10 image, make x64 WinPE USB:*
 
-    MakeWinPEMedia /UFD C:\\winpe\_amd64 F:
+    MakeWinPEMedia /UFD C:\winpe_amd64 F:
 
     *(Where F: is the drive letter of USB)*
 
     *x86 Windows 10 image, make x86 WinPE USB:*
 
-    MakeWinPEMedia /UFD C:\\winpe\_x86 F:
+    MakeWinPEMedia /UFD C:\winpe_x86 F:
 
     *(F: is the drive letter of USB)*
 
@@ -168,7 +141,7 @@ Pinning desktop apps to start sceen implemented
 
 **REFERENCE**: Please see [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129) and [Windows Policy for System Builders](https://oem.microsoft.com/downloads/worldwide/windows_10/Windows_10_Policy_SB.pdf) documents to tailor your customizations defined in unattend.xml file.
 
-1.  Copy *sources\\**Install.wim*** file from the directory in Windows 10 media which you will be deploying, to your local Desktop (~3gb)
+1.  Copy *sources\**Install.wim*** file from the directory in Windows 10 media which you will be deploying, to your local Desktop (~3gb)
 
     ![Copy WIM](images/CopyWIM.png)
 
@@ -184,7 +157,7 @@ Pinning desktop apps to start sceen implemented
 
     -   This is the sample answer file included in the USB-B:
 
-        USB-B\\ConfigSet\\AutoUnattend.xml
+        USB-B\ConfigSet\AutoUnattend.xml
 
 1.  Associate the answer file with the Windows Image by clicking **OK** at the prompted message box to add a driver to Windows PE, click **Insert** select **Driver Path** and select pass **1 windowsPE** and then browse to the driver. Note: This step is optional and only required if a third-party driver is needed for use in the Windows Preinstallation Enviornment. This step is optional
 
@@ -196,7 +169,7 @@ Pinning desktop apps to start sceen implemented
 
 1.  Please see an example of an answer file for basic customizations:
 
-    -   USB-B\\ConfigSet\\AutoUnattend.xml
+    -   USB-B\ConfigSet\AutoUnattend.xml
 
     You may use the sample answer file and modify relevant parts or start from scratch by specifying some basic customizations.
 
@@ -204,37 +177,37 @@ Pinning desktop apps to start sceen implemented
 
 1.  Add a product key that matches the Windows edition. This key isn't used to activate Windows, so you can reuse the same key for multiple installations:
 
-    -   In the **Answer File** pane, select **Components\\1 windowsPE\\amd64\_Microsoft-Windows-Setup\_neutral\\UserData\\ProductKey**. In the **ProductKey Properties** pane, under **Settings**, enter the value next to Key.
+    -   In the **Answer File** pane, select **Components\1 windowsPE\amd64_Microsoft-Windows-Setup_neutral\UserData\ProductKey**. In the **ProductKey Properties** pane, under **Settings**, enter the value next to Key.
 
     **IMPORTANT:** These product keys *cannot* be used for activation. You will need to type a software product key during the installation process for activation. These keys will be removed when sysprep generalize is run. The end user will be required to type the unique product key from the Certificate of Authenticity (COA) label when first booting Windows 10
 
 1.  Add your support information:
 
-    In the **Answer File** pane, select **Components\\4 specialize\\amd64\_Microsoft-Windows-Shell-Setup\_neutral\\OEMInformation**.
+    In the **Answer File** pane, select **Components\4 specialize\amd64_Microsoft-Windows-Shell-Setup_neutral\OEMInformation**.
 
     In the **OEMInformation Properties** pane, in the **Settings** section, update the following values: company name (Manufacturer), hours (SupportHours), phone number (SupportPhone), and website (SupportURL).
 
 1.  Prepare your computer to boot to audit mode after the Windows installation is complete:
 
-    In the **Windows Image** pane, expand **Components**, right-click **amd64\_ Microsoft-Windows-Deployment**, and then select **Add Setting to Pass 7 oobeSystem**.
+    In the **Windows Image** pane, expand **Components**, right-click **amd64_ Microsoft-Windows-Deployment**, and then select **Add Setting to Pass 7 oobeSystem**.
 
-    In the **Answer File** pane, select **Components\\7 oobeSystem\\amd64\_ Microsoft-Windows- Deployment \_neutral\\Reseal**.
+    In the **Answer File** pane, select **Components\7 oobeSystem\amd64_ Microsoft-Windows- Deployment _neutral\Reseal**.
 
     In the **Reseal Properties** pane, in the **Settings** section, add the following value: Mode =Audit.
 
 1.  Set the Internet Explorer home page:
 
-    In the **Windows Image** pane, right-click **amd64\_Microsoft-Windows-IE-InternetExplorer**, and then select **Add Setting to Pass 4 specialize**.
+    In the **Windows Image** pane, right-click **amd64_Microsoft-Windows-IE-InternetExplorer**, and then select **Add Setting to Pass 4 specialize**.
 
-    In the **Answer File** pane, select **Components\\4 specialize\\amd64\_Microsoft-Windows- Microsoft-Windows-IE-InternetExplorer\_neutral**.
+    In the **Answer File** pane, select **Components\4 specialize\amd64_Microsoft-Windows- Microsoft-Windows-IE-InternetExplorer_neutral**.
 
-    In the **IE-InternetExplorer Properties** pane, in the **Settings** section, select Home\_page, and add the URL of your website.
+    In the **IE-InternetExplorer Properties** pane, in the **Settings** section, select Home_page, and add the URL of your website.
 
-1.  OEMs can specify Disk Configuration which is used to create/modify disk partitions and set image installation partition. This step is optional and configuration is included in the sample answer file USB-B\\ConfigSet\\AutoUnattend.xml
+1.  OEMs can specify Disk Configuration which is used to create/modify disk partitions and set image installation partition. This step is optional and configuration is included in the sample answer file USB-B\ConfigSet\AutoUnattend.xml
 
     Save the answer file to USB-B
 
-    \\ConfigSet\\AutoUnattend.xml and close Windows SIM
+    \ConfigSet\AutoUnattend.xml and close Windows SIM
 
 ### 2.2. Install Windows
 
@@ -246,15 +219,15 @@ Pinning desktop apps to start sceen implemented
 
     **TROUBLESHOOT**: IF booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so, enter BIOS menu and adjust boot sequence as choosing the first option as USB boot.
 
-1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
+1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart
 
     ![Diskpart](images/diskpart.png)
 
 1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations
 
-    Xcopy /herky e:\\configset\\$oem$ e:\\MyWindows\\Sources\\$OEM$
+    Xcopy /herky e:\configset\$oem$ e:\MyWindows\Sources\$OEM$
 
-    E:\\myWindows\\setup.exe /unattend:E:\\ConfigSet\\AutoUnattend.xml
+    E:\myWindows\setup.exe /unattend:E:\ConfigSet\AutoUnattend.xml
 
 1.  After installation files have been copied, disconnect USB-A.
 
@@ -286,39 +259,39 @@ Pinning desktop apps to start sceen implemented
 
     **TROUBLESHOOT**: IF booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so step in BIOS menu and adjust boot sequence as choosing the first option as USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image none of the Windows passes must be completed. To generalize the image again, hit CTRL+SHIFT F3 to skip OOBE and boot in Audit mode. In Audit mode Sysprep the system by OOBE Reboot and Generalize switches. After the system reboots please make sure to boot from USB-A to WinPE.
 
-1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows installation volume labelled “Windows” (For example: C:\\). Finally type *exit* to quit Diskpart
+1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows installation volume labelled “Windows” (For example: C:\). Finally type *exit* to quit Diskpart
 
 2.  Capture the image of the windows partition to USB-B. This process takes several minutes.
 
-    MD E:\\scratchdir
+    MD E:\scratchdir
 
-    Dism /Capture-Image /CaptureDir:C:\\ /ImageFile:E:\\Images\\ThinImage.wim /Name:"myWinImage" /scratchdir:e:\\scratchdir
+    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\ThinImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
 
-    (C:\\ is the volume label of currently installed Windows. E:\\ is the volume label of USB-B)
+    (C:\ is the volume label of currently installed Windows. E:\ is the volume label of USB-B)
 
 ## Section 4. Update Images for Each Model: Offline Servicing
 
 1.  Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim
 
-    Copy E:\\Images\\ThinImage.wim E:\\Images\\ModelSpecificImage.wim
+    Copy E:\Images\ThinImage.wim E:\Images\ModelSpecificImage.wim
 
 ### 4.1. Mounting Images
 
 1.  Mount Windows image (ModelSpecificImage.wim) This process extracts the contents of the image file to a location where you can view and modify the mounted image.
 
-    Md C:\\mount\\windows
+    Md C:\mount\windows
 
-    Dism /Mount-Wim /WimFile:E:\\Images\\ModelSpecificImage.wim /index:1 /MountDir:C:\\mount\\windows
+    Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
 
-    *(where E:\\ is the drive letter of USB-B)*
+    *(where E:\ is the drive letter of USB-B)*
 
 1.  Mount Windows RE Image file.
 
-    Md c:\\mount\\winre
+    Md c:\mount\winre
 
-    Dism /Mount-Image /ImageFile:C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim /index:1 /MountDir:C:\\mount\\winre
+    Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
 
-    **TROUBLESHOOT**: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
+    **TROUBLESHOOT**: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
     ![Mount](images/mount.png)
 
@@ -330,31 +303,31 @@ Pinning desktop apps to start sceen implemented
 
 **x64/x86 distinction:** *IF you will be using x64 Windows 10 image, add x64 drivers or if you will be using x86 Windows 10 image add x86 drivers.*
 
-1.  Adding driver packages one by one. (.inf files) SampleDriver\\driver.inf is a **sample** driver package that is specific to the computer model. (Type your own specific driver path) **If you have multiple driver packages please skip to the next step**
+1.  Adding driver packages one by one. (.inf files) SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type your own specific driver path) **If you have multiple driver packages please skip to the next step**
 
-    Dism /Add-Driver /Image:C:\\mount\\windows /Driver:"C:\\SampleDriver\\driver.inf"
+    Dism /Add-Driver /Image:C:\mount\windows /Driver:"C:\SampleDriver\driver.inf"
 
-    Dism /Add-Driver /Image:C:\\mount\\winre /Driver:"C:\\SampleDriver\\driver.inf"
+    Dism /Add-Driver /Image:C:\mount\winre /Driver:"C:\SampleDriver\driver.inf"
 
 1.  Multiple drivers can be added on one command line if you specify a folder instead of an .inf file. To install all of the drivers in a folder and all its subfolders use the **/recurse** option.
 
-    Dism /Image:C:\\mount\\windows /Add-Driver /Driver:c:\\drivers /Recurse
+    Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\drivers /Recurse
 
-1.  Review the contents of the %WINDIR%\\Inf\\ (C:\\mount\\windows\\Windows\\Inf\\) directory in the mounted Windows image to ensure that the .inf files were installed. Drivers added to the Windows image are named Oem\*.inf. This is to ensure unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
+1.  Review the contents of the %WINDIR%\Inf\ (C:\mount\windows\Windows\Inf\) directory in the mounted Windows image to ensure that the .inf files were installed. Drivers added to the Windows image are named Oem\*.inf. This is to ensure unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
 2.  Verify your driver has been installed for both images
 
-    Dism /Image:C:\\mount\\windows /Get-Drivers
+    Dism /Image:C:\mount\windows /Get-Drivers
 
-    Dism /Image:C:\\mount\\winre /Get-Drivers
+    Dism /Image:C:\mount\winre /Get-Drivers
 
 **IMPORTANT**: IF the driver contains only the installer package and doesn’t have an .inf file, you may choose to install the driver in AUDIT mode in **Section 6** by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool that they will be removed after sysprep generalize even if they have been injected offline.
 
-In this two cases, you would require to add an extra parameter to USB-B\\AnswerFiles\\UnattendSysprep.xml in order to persist the drivers in the image when the image will be generalized.
+In this two cases, you would require to add an extra parameter to USB-B\AnswerFiles\UnattendSysprep.xml in order to persist the drivers in the image when the image will be generalized.
 
 &lt;PersistAllDeviceInstalls&gt;true&lt;/PersistAllDeviceInstalls&gt;
 
-property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during generalize pass in order to persist the drivers in the image. Please refer to [TechNet link](http://technet.microsoft.com/library/ff716298.aspx) about the details of this property and how to add it to an answer file
+property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generalize pass in order to persist the drivers in the image. Please refer to [TechNet link](http://technet.microsoft.com/library/ff716298.aspx) about the details of this property and how to add it to an answer file
 
 #### 4.2.2. Add Language Interface packs
 
@@ -366,7 +339,7 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
 **x64/x86 distinction:** *If you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs*
 
-1.  Copy LIP folder to USB-B\\LanguagePack\\x64 or USB-B\\LanguagePack\\x86 folder:
+1.  Copy LIP folder to USB-B\LanguagePack\x64 or USB-B\LanguagePack\x86 folder:
 
     ![Copy LIP](images/copylip.png)
 
@@ -376,13 +349,13 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
     ***Amd64 architecture***
 
-    Dism /image:C:\\mount\\windows /add-package /packagepath:e:\\LanguagePacks\\amd64\\ga-ie\\lp.cab
+    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\amd64\ga-ie\lp.cab
 
     ***X86 architecture***
 
-    Dism /image:C:\\mount\\windows /add-package /packagepath:e:\\LanguagePacks\\x86\\ga-ie\\lp.cab
+    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\ga-ie\lp.cab
 
-**Important: Do not install a language pack after an update. If an update (hotfix, general distribution release \[GDR\], or service pack \[SP\]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.**
+**Important: Do not install a language pack after an update. If an update (hotfix, general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.**
 
 #### 4.2.3. Adding Update Packages
 
@@ -416,11 +389,11 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
     ***Amd64 architecture***
 
-    Dism /Add-Package /Image:C:\\mount\\windows /PackagePath:"C:\\SampleUpdatePackages\\Windows10-KB3118754-x64.msu”
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
 
     ***X86 architecture***
 
-    Dism /Add-Package /Image:C:\\mount\\windows /PackagePath:"C:\\SampleUpdatePackages\\Windows10-KB3118754-x86.msu”
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
 
 1.  Add updates to winre.wim where apply, not all updates apply to winre.wim
 
@@ -428,27 +401,27 @@ property must be added to USB-B\\AnswerFiles\\UnattendSysprep.xml during general
 
     ***Amd64 architecture***
 
-    Dism /Add-Package /Image:C:\\mount\\winre /PackagePath:"C:\\SampleUpdatePackages\\Windows10-KB3118754-x64.msu”
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
 
     ***X86 architecture***
 
-    Dism /Add-Package /Image:C:\\mount\\winre /PackagePath:"C:\\SampleUpdatePackages\\Windows10-KB3118754-x86.msu”
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
 
 #### 4.2.4. Adding OEM Specific Visual Customizations
 
-1.  Create OEM folder under C:\\mount\\windows\\Windows\\system32\\ directory.
+1.  Create OEM folder under C:\mount\windows\Windows\system32\ directory.
 
-2.  Copy the OEM logo to C:\\mount\\windows\\Windows\\system32\\OEM\\**FabrikamLogo.bmp** directory which will be mapped in unattend file in **OEM Information | Logo** property.
+2.  Copy the OEM logo to C:\mount\windows\Windows\system32\OEM\**FabrikamLogo.bmp** directory which will be mapped in unattend file in **OEM Information | Logo** property.
 
     See the below image to add OEM logo in an answer file.
 
-    -   %windir%\\system32\\OEM\\FabrikamLogo.bmp
+    -   %windir%\system32\OEM\FabrikamLogo.bmp
 
     **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
 
     ![OEM Logo details](images/oemlogodetails.png)
 
-1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\\system32\\OEM\\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
+1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\system32\OEM\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 
     ![Add desktop background](images/adddesktopbackground.png)
 
@@ -458,7 +431,7 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
 1.  Create Layoutmodification.xml.
 
-    **Note: It is recommended to start with the sample on** USB-B**\\StartLayout\\layoutModification.xml as it conforms to the samples in this document (Example Only).**
+    **Note: It is recommended to start with the sample on** USB-B**\StartLayout\layoutModification.xml as it conforms to the samples in this document (Example Only).**
 
     The Sample LayoutModification.xml shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that will be applied if the device country/region matches what’s specified in Region (in this case, the regions are Germany and United States). Each group contains three tiles and the various elements you need to use depending on the tile that you want to pin to Start.
 
@@ -470,31 +443,31 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
     For the above scenarios, you can use the following directories to put the .url or .lnk files:
 
-    - %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\
+    - %APPDATA%\Microsoft\Windows\Start Menu\Programs\
 
-    - %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\
+    - %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\
 
 1.  Save the LayoutModification.xml file.
 
 2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
-    Copy E:\\StartLayout\\layoutmodification.xml c:\\mount\\windows\\users\\default\\AppData\\Local\\Microsoft\\Windows\\Shell\\
+    Copy E:\StartLayout\layoutmodification.xml c:\mount\windows\users\default\AppData\Local\Microsoft\Windows\Shell\
 
     Where E: is the drive letter of USB-B
 
 1.  If you pinned tiles that require .url or .lnk files, add the files to the following legacy Start Menu directories :
 
-    1.  %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\
+    1.  %APPDATA%\Microsoft\Windows\Start Menu\Programs\
 
-    2.  %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\
+    2.  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\
 
-    Copy e:\\StartLayout\\Bing.url “C:\\mount\\windows\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\”
+    Copy e:\StartLayout\Bing.url “C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\”
 
-    Copy e:\\StartLayout\\Paint.lnk "C:\\mount\\windows\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs"
+    Copy e:\StartLayout\Paint.lnk "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
 
-    Copy E:\\StartLayout\\Bing.url “C:\\mount\\windows\\users\\All Users\\Microsoft\\Windows\\Start Menu\\Programs”
+    Copy E:\StartLayout\Bing.url “C:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs”
 
-    Copy E:\\StartLayout\\Paint.lnk “C:\\Mount\\Windows\\Users\\All Users\\Microsoft\\Windows\\Start Menu\\Programs”
+    Copy E:\StartLayout\Paint.lnk “C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs”
 
     **Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.**
 
@@ -502,19 +475,19 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
 The System Builder may want to make additional customizations through an unattend file. The sample unattend file on USB-B contains additional commone customizations.
 
-    Copy /y E:\\AnswerFiles\\Unattend.xml C:\\Mount\\Windows\\Windows\\Panther
+    Copy /y E:\AnswerFiles\Unattend.xml C:\Mount\Windows\Windows\Panther
 
-    (where E:\\ is USB-B**)**
+    (where E:\ is USB-B**)**
 
 ### 4.3. Optimize WinRE
 
 1.  Increase scratchspace size.
 
-    Dism /image:c:\\mount\\winre /set-scratchspace:512
+    Dism /image:c:\mount\winre /set-scratchspace:512
 
 1.  Cleanup unused files and reduce size of winre.wim
 
-    Dism /image:"c:\\mount\\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
+    Dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
 
 ### 4.4. Unmounting Images
 
@@ -522,7 +495,7 @@ The System Builder may want to make additional customizations through an unatten
 
 2.  Comit the changes and unmount the Windows RE image:
 
-    Dism /Unmount-Image /MountDir:"C:\\mount\\winre" /Commit
+    Dism /Unmount-Image /MountDir:"C:\mount\winre" /Commit
 
     where C is the drive letter of the drive that contains the image.
 
@@ -532,19 +505,19 @@ The System Builder may want to make additional customizations through an unatten
 
     **Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:**
 
-    attrib -h -a -s C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim
+    attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 
-    Dism /export-image /sourceimagefile:c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim /sourceindex:1 /DestinationImageFile:e:\\images\\winre\_bak.wim
+    Dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:e:\images\winre_bak.wim
 
-    Del c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
+    Del c:\mount\windows\windows\system32\recovery\winre.wim
 
-    Copy e:\\images\\winre\_bak.wim c:\\mount\\windows\\windows\\system32\\recovery\\winre.wim
+    Copy e:\images\winre_bak.wim c:\mount\windows\windows\system32\recovery\winre.wim
 
     When prompted, specify **F** for file
 
 1.  Check the new size of the Windows RE image.
 
-    Dir "C:\\mount\\windows\\Windows\\System32\\Recovery\\winre.wim"
+    Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
 
     Follow the below partition layout size chart to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
@@ -555,6 +528,9 @@ The System Builder may want to make additional customizations through an unatten
     If the partition is 500 MB or larger, it must have at least 320 MB of free space.
 
     If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
+    
+        rem == Windows RE tools partition =============== 
+            create partition primary size=500
 
     rem == 3. Windows RE tools partition =============== create partition primary size=500
 
@@ -562,7 +538,7 @@ The System Builder may want to make additional customizations through an unatten
 
 1.  Commit the changes and unmount the Windows image:
 
-    Dism /Unmount-Image /MountDir:"C:\\mount\\windows" /Commit
+    Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
  
     where C is the drive letter of the drive that contains the image.
 
@@ -578,9 +554,9 @@ The System Builder may want to make additional customizations through an unatten
 
 3.  After WinPE has been booted connect USB-B
 
-4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\\). Finally type *exit* to quit Diskpart
+4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart
 
-    E:\\Deployment\\Walkthrough-Deploy.bat E:\\Images\\ModelSpecificImage.wim
+    E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
 
     **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
 
@@ -608,7 +584,7 @@ The System Builder may want to make additional customizations through an unatten
 
 3.  Navigate to the installation directory. Installation directory is the folder which contains the files shown in below figure.
 
-    <code>Cd C:\\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;</code>
+    <code>Cd C:\&lt;OfficeSingleImagev15.4InstallationDirectory&gt;</code>
 
     ![Installation directory](images/installationdirectory.png)
 
@@ -620,7 +596,7 @@ The System Builder may want to make additional customizations through an unatten
 
 1.  After installation is complete, Microsoft Office Single Image v15.4 OOBE application tile will be placed on Apps view
 
-2.  To pin the to the start screen please see *Section 4.2.4 Pinning Desktop Apps to Start Screen and Taskbar* and type in **%allusersprofile%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office.lnk** to &lt;AppIdOrPath&gt; property. Please see that this customization already takes place in USB-B\\AnswerFiles\\UnattendSysprep.xml answer file
+2.  To pin the to the start screen please see *Section 4.2.4 Pinning Desktop Apps to Start Screen and Taskbar* and type in **%allusersprofile%\Microsoft\Windows\Start Menu\Programs\Microsoft Office.lnk** to &lt;AppIdOrPath&gt; property. Please see that this customization already takes place in USB-B\AnswerFiles\UnattendSysprep.xml answer file
 
 ### 6.2 Preload Office 2016
 
@@ -636,19 +612,19 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     *OEMs using an ***x64* Windows 10 image**, make x64 Scanstate directory*
 
-    md E:\\ScanState\_amd64
+    md E:\ScanState_amd64
 
-    copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\amd64" E:\\ScanState\_amd64
+    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" E:\ScanState_amd64
 
-    copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\amd64\\Sources" E:\\ScanState\_amd64
+    copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" E:\ScanState_amd64
 
     *OEMs using an ***x86* Windows 10 image**, make x86 Scanstate directory*
 
-    md E:\\ScanState\_x86
+    md E:\ScanState_x86
 
-    copy "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\User State Migration Tool\\x86" E:\\ScanState\_x86
+    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\x86" E:\ScanState_x86
 
-    copy /Y "C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Setup\\x86\\Sources" E:\\ScanState\_x86
+    copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\x86\Sources" E:\ScanState_x86
 
     ***Where E: is USB-B drive letter***
 
@@ -660,19 +636,19 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
 
-    **Note: OEM may use the sample configuration file on** USB-B**\\Recovery\\recoveryimage\\pbr\_config.xml which covers the steps below.**
+    **Note: OEM may use the sample configuration file on** USB-B**\Recovery\recoveryimage\pbr_config.xml which covers the steps below.**
 
 1.  Create Recovery package
 
-    Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\\Recovery\\customizations. This document uses the samples from USB-B\\Recovery\\RecoveryImage to create scanstate package.
+    Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from USB-B\Recovery\RecoveryImage to create scanstate package.
 
-    **Important: The scanstate package used by PBR must be a .ppkg file stored in C:\\Recovery\\Customizations folder or PBR will not be able to restore the package.**
+    **Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.**
 
-2.  Create the recovery OEM folder and copy contents of USB-B\\Recovery\\RecoveryImage
+2.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
 
-    Copy E:\\Recovery\\recoveryimage c:\\recovery\\OEM
+    Copy E:\Recovery\recoveryimage c:\recovery\OEM
 
-    Copy E:\\StartLayout\\\*.\* c:\\recovery\\OEM
+    Copy E:\StartLayout\\*.\* c:\recovery\OEM
 
 1.  Run scanstate utility to gather app and customizations
 
@@ -680,15 +656,15 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     *OEMs using an ***x64* Windows 10 image***
 
-    Mkdir c:\\recovery\\customizations
+    Mkdir c:\recovery\customizations
 
-    E:\\ScanState\_amd64\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /config:c:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
+    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /config:c:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
     *Where E: is the drive letter of USB-B*
 
     *OEMs using an ***x86* Windows 10 image***
 
-    E:\\ScanState\_x86\\scanstate.exe /apps /ppkg C:\\Recovery\\Customizations\\apps.ppkg /i:c:\\recovery\\oem\\regrecover.xml /config:C:\\Recovery\\OEM\\pbr\_config.xml /o /c /v:13 /l:C:\\ScanState.log
+    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
     *Where E: is the drive letter of USB-B*
 
@@ -698,23 +674,23 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     The sample script EnableCustomizations.cmd will be called during PBR and will do 2 things
 
-    a.  Copy the unattend.xml file used for initial deployment to the \\windows\\panther folder.
+    a.  Copy the unattend.xml file used for initial deployment to the \windows\panther folder.
 
     b.  Copy the layoutmodification.xml to the system.
 
 ### 6.3. Finalize and Capture Manufacturing Image
 
-1.  Delete installation folders and files you have created of the preloaded applications which are for example *C:\\Office-SingleImagev15.4-Setup, C:\\LIPsToBeInstalled* folder. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
+1.  Delete installation folders and files you have created of the preloaded applications which are for example *C:\Office-SingleImagev15.4-Setup, C:\LIPsToBeInstalled* folder. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
 
 2.  If SysPrep Tool is open, close it and open Command Prompt in Administrator mode
 
 3.  Copy winre backup to windows
 
-    Copy e:\\images\\winre\_bak.wim c:\\windows\\system32\\recovery\\winre.wim
+    Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
 1.  Copy unattend.xml to recovery folder to enable recovery of unattend settings during Push Button Reset
 
-    Copy USB-B\\answerfiles\\unattendsysprep.xml c:\\Recovery\\OEM\\unattend.xml
+    Copy USB-B\answerfiles\unattendsysprep.xml c:\Recovery\OEM\unattend.xml
 
 1.  Connect USB-B to reference computer
 
@@ -722,25 +698,25 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     Please notice; these changes include Microsoft Office tile component pinned to start screen
 
-    Cmd /c C:\\Windows\\System32\\Sysprep\\sysprep /unattend:c:\\Recovery\\OEM\\Unattend.xml /generalize /oobe /shutdown
+    Cmd /c C:\Windows\System32\Sysprep\sysprep /unattend:c:\Recovery\OEM\Unattend.xml /generalize /oobe /shutdown
 
 1.  Boot reference computer and connect USB-A
 
 2.  After WinPE has been booted connect USB-B
 
-3.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows Installation volume labelled “Windows” (For example: E:\\). Finally type *exit* to quit Diskpart
+3.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows Installation volume labelled “Windows” (For example: E:\). Finally type *exit* to quit Diskpart
 
 4.  Start cleanup of the image
 
     **Important: By default, non-major updates (e.g. ZDPs, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. **
 
-    MD e:\\scratchdir
+    MD e:\scratchdir
 
-    Dism /Cleanup-Image /Image:e:\\ /StartComponentCleanup /resetbase /scratchdir:e:\\scratchdir
+    Dism /Cleanup-Image /Image:e:\ /StartComponentCleanup /resetbase /scratchdir:e:\scratchdir
 
 1.  Capture the image of the windows partition. This process takes several minutes.
 
-    dism /Capture-Image /CaptureDir:E:\\ /ImageFile:F:\\Images\\ModelSpecificImage.wim /Name:"myWinImageWithMSIUpdated" /scratchdir:e:\\scratchdir
+    dism /Capture-Image /CaptureDir:E:\ /ImageFile:F:\Images\ModelSpecificImage.wim /Name:"myWinImageWithMSIUpdated" /scratchdir:e:\scratchdir
 
     (E is the volume label of Windows)
     
@@ -748,7 +724,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
 1.  Copy the image to USB-B. This process takes several minutes.
 
-    copy E:\\ModelSpecificImage.wim H:\\Images\\
+    copy E:\ModelSpecificImage.wim H:\Images\
 
     (H is the volume label of USB-B )
 
@@ -756,13 +732,13 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
 ## Section 7 Deploy Image 
 
-Using deployment script to layout the partitions on the device and apply the image. Using walkthrough-deploy.bat in USB-B\\deployment folder will partition the device based device mode.
+Using deployment script to layout the partitions on the device and apply the image. Using walkthrough-deploy.bat in USB-B\deployment folder will partition the device based device mode.
 
 **Important: The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.**
 
 In Windows 10 Version 1511, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encouraging you to follow the new recommendation.
 
-E:\\Deployment\\walkthrough-deploy.bat E:\\Images\\BasicImage.wim
+E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
 
 **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
 
@@ -783,7 +759,7 @@ Section 8 Finalize Deployment
 
 2.  If you are to apply additional steps for example executing OEM diagnostics tests etc, please apply them here.
 
-3.  Finally run Sysprep tool (C:\\Windows\\System32\\Sysprep\\sysprep.exe) and seal the system back to **OOBE** and **shutdown** but ***without* generalize**.
+3.  Finally run Sysprep tool (C:\Windows\System32\Sysprep\sysprep.exe) and seal the system back to **OOBE** and **shutdown** but ***without* generalize**.
 
 4.  OEM ships the system.
 
