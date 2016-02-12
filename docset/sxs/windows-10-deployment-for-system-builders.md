@@ -189,9 +189,9 @@ Pinning desktop apps to start sceen implemented
 
 1.  Prepare your computer to boot to audit mode after the Windows installation is complete:
 
-    In the **Windows Image** pane, expand **Components**, right-click **amd64_ Microsoft-Windows-Deployment**, and then select **Add Setting to Pass 7 oobeSystem**.
+    In the **Windows Image** pane, expand **Components**, right-click **amd64_Microsoft-Windows-Deployment**, and then select **Add Setting to Pass 7 oobeSystem**.
 
-    In the **Answer File** pane, select **Components\7 oobeSystem\amd64_ Microsoft-Windows- Deployment _neutral\Reseal**.
+    In the **Answer File** pane, select **Components\7 oobeSystem\amd64_Microsoft-Windows-Deployment _neutral\Reseal**.
 
     In the **Reseal Properties** pane, in the **Settings** section, add the following value: Mode =Audit.
 
@@ -199,7 +199,7 @@ Pinning desktop apps to start sceen implemented
 
     In the **Windows Image** pane, right-click **amd64_Microsoft-Windows-IE-InternetExplorer**, and then select **Add Setting to Pass 4 specialize**.
 
-    In the **Answer File** pane, select **Components\4 specialize\amd64_Microsoft-Windows- Microsoft-Windows-IE-InternetExplorer_neutral**.
+    In the **Answer File** pane, select **Components\4 specialize\amd64_Microsoft-Windows-Microsoft-Windows-IE-InternetExplorer_neutral**.
 
     In the **IE-InternetExplorer Properties** pane, in the **Settings** section, select Home_page, and add the URL of your website.
 
@@ -213,17 +213,17 @@ Pinning desktop apps to start sceen implemented
 
 1.  Please complete ***Creating My** USB-B* section before skipping this step to make sure Windows installation files have been copied to **myWindows** directory in USB-B
 
-2.  Boot reference computer and insert USB-A
+2.  Boot the reference computer and insert USB-A.
 
-3.  After WinPE has been booted, insert USB-B
+3.  After WinPE has been booted, insert USB-B.
 
     **TROUBLESHOOT**: IF booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so, enter BIOS menu and adjust boot sequence as choosing the first option as USB boot.
 
-1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart
+1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart.
 
     ![Diskpart](images/diskpart.png)
 
-1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations
+1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations.
 
     Xcopy /herky e:\configset\$oem$ e:\MyWindows\Sources\$OEM$
 
@@ -231,7 +231,7 @@ Pinning desktop apps to start sceen implemented
 
 1.  After installation files have been copied, disconnect USB-A.
 
-2.  Disconnect USB-B right after computer reboots
+2.  Disconnect USB-B right after computer reboots.
 
 ### 2.3. Verify Customizations in Audit Mode
 
@@ -239,23 +239,23 @@ Pinning desktop apps to start sceen implemented
 
 1.  After setup has been finished computer logs into Windows in Audit mode automatically as an Administrator.
 
-2.  Click the *Desktop tile* to show the desktop and you should see the Sysprep window
+2.  Click the *Desktop tile* to show the desktop and you should see the Sysprep window.
 
-3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations)
+3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations).
 
     ![Sysprep](images/Sysprep.png)
 
-1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox
+1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox.
 
-2.  In the System Cleanup Action box select **Enter System Out-of-Box Experience**
+2.  In the System Cleanup Action box select **Enter System Out-of-Box Experience**.
 
-3.  In the shutdown options box select **Shutdown**
+3.  In the shutdown options box select **Shutdown**.
 
 ## Section 3. Capture an Image
 
-1.  Boot reference computer and connect USB-A
+1.  Boot reference computer and connect USB-A.
 
-2.  After WinPE has been booted connect USB-B
+2.  After WinPE has been booted connect USB-B.
 
     **TROUBLESHOOT**: IF booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so step in BIOS menu and adjust boot sequence as choosing the first option as USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image none of the Windows passes must be completed. To generalize the image again, hit CTRL+SHIFT F3 to skip OOBE and boot in Audit mode. In Audit mode Sysprep the system by OOBE Reboot and Generalize switches. After the system reboots please make sure to boot from USB-A to WinPE.
 
@@ -263,33 +263,33 @@ Pinning desktop apps to start sceen implemented
 
 2.  Capture the image of the windows partition to USB-B. This process takes several minutes.
 
-    MD E:\scratchdir
+        MD E:\scratchdir
 
-    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\ThinImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
+        Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\ThinImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
 
     (C:\ is the volume label of currently installed Windows. E:\ is the volume label of USB-B)
 
 ## Section 4. Update Images for Each Model: Offline Servicing
 
-1.  Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim
+1.  Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim.
 
-    Copy E:\Images\ThinImage.wim E:\Images\ModelSpecificImage.wim
+        Copy E:\Images\ThinImage.wim E:\Images\ModelSpecificImage.wim
 
 ### 4.1. Mounting Images
 
 1.  Mount Windows image (ModelSpecificImage.wim) This process extracts the contents of the image file to a location where you can view and modify the mounted image.
 
-    Md C:\mount\windows
+        Md C:\mount\windows
 
-    Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
+        Dism /Mount-Wim /WimFile:E:\Images\ModelSpecificImage.wim /index:1 /MountDir:C:\mount\windows
 
     *(where E:\ is the drive letter of USB-B)*
 
 1.  Mount Windows RE Image file.
 
-    Md c:\mount\winre
+        Md c:\mount\winre
 
-    Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
+        Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
 
     **TROUBLESHOOT**: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
@@ -305,21 +305,21 @@ Pinning desktop apps to start sceen implemented
 
 1.  Adding driver packages one by one. (.inf files) SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type your own specific driver path) **If you have multiple driver packages please skip to the next step**
 
-    Dism /Add-Driver /Image:C:\mount\windows /Driver:"C:\SampleDriver\driver.inf"
+        Dism /Add-Driver /Image:C:\mount\windows /Driver:"C:\SampleDriver\driver.inf"
 
-    Dism /Add-Driver /Image:C:\mount\winre /Driver:"C:\SampleDriver\driver.inf"
+        Dism /Add-Driver /Image:C:\mount\winre /Driver:"C:\SampleDriver\driver.inf"
 
 1.  Multiple drivers can be added on one command line if you specify a folder instead of an .inf file. To install all of the drivers in a folder and all its subfolders use the **/recurse** option.
 
-    Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\drivers /Recurse
+        Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\drivers /Recurse
 
 1.  Review the contents of the %WINDIR%\Inf\ (C:\mount\windows\Windows\Inf\) directory in the mounted Windows image to ensure that the .inf files were installed. Drivers added to the Windows image are named Oem\*.inf. This is to ensure unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
 2.  Verify your driver has been installed for both images
 
-    Dism /Image:C:\mount\windows /Get-Drivers
+        Dism /Image:C:\mount\windows /Get-Drivers
 
-    Dism /Image:C:\mount\winre /Get-Drivers
+        Dism /Image:C:\mount\winre /Get-Drivers
 
 **IMPORTANT**: IF the driver contains only the installer package and doesn’t have an .inf file, you may choose to install the driver in AUDIT mode in **Section 6** by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool that they will be removed after sysprep generalize even if they have been injected offline.
 
@@ -349,11 +349,11 @@ property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generaliz
 
     ***Amd64 architecture***
 
-    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\amd64\ga-ie\lp.cab
+        Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\amd64\ga-ie\lp.cab
 
     ***X86 architecture***
 
-    Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\ga-ie\lp.cab
+        Dism /image:C:\mount\windows /add-package /packagepath:e:\LanguagePacks\x86\ga-ie\lp.cab
 
 **Important: Do not install a language pack after an update. If an update (hotfix, general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.**
 
@@ -389,11 +389,11 @@ property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generaliz
 
     ***Amd64 architecture***
 
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
+        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
 
     ***X86 architecture***
 
-    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
+        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
 
 1.  Add updates to winre.wim where apply, not all updates apply to winre.wim
 
@@ -401,11 +401,11 @@ property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generaliz
 
     ***Amd64 architecture***
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
+        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
 
     ***X86 architecture***
 
-    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
+        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
 
 #### 4.2.4. Adding OEM Specific Visual Customizations
 
