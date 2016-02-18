@@ -3,11 +3,11 @@
 
 #  Summary
 
-The purpose of this whitepaper is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment have not changed. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
+The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment have not changed. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
 
 # Intended Audience
 
-This procedure is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/en-us/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
+This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/en-us/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
 
 # About this guide
 
@@ -80,17 +80,17 @@ To complete the steps outlined in this whitepaper, OEMs will require:
 **Note: This guide provides sample Powershell script to automate offline servicing section. In order to use this script OEM will need a Technician computer running Windows 10.**
 
 -   **A Reference Computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
-    > For this PC, choose from something which resembles the Hardware Configuration Table.
+    For this PC, choose from something that resembles the Hardware Configuration Table.
 
-![What is the ADK?](images\what-is-adk.png)
+    ![What is the ADK?](images\what-is-adk.png)
 
-**Note: We recommend using the 32-bit version of Windows on the technician computer because the 32-bit version supports both 32-bit and 64-bit deployments. **
+    Note: We recommend using the 32-bit version of Windows on the technician computer because the 32-bit version supports both 32-bit and 64-bit deployments.
 
-Follow the on-screen instructions to install **Windows 10 ADK**, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
+    Follow the on-screen instructions to install **Windows 10 ADK**, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-![Select ADK Features](images/ADK_SelectFeatures.png)
+    ![Select ADK Features](images/ADK_SelectFeatures.png)
 
-Finish the installation after the installer shows successful.
+    Finish the installation after the installer shows successful.
 
 ## Downloads
 
@@ -100,7 +100,7 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 
 **Important: The version of Windows components, Windows ADK, LP, FOD, and LIP must match with the Windows 10 image version.**
 
-**Windows 10 RTM images and updates**
+### Windows 10 RTM images and updates
 
 |           |                                  |
 |-----------|----------------------------------|
@@ -108,9 +108,9 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 | X20-09716 | Win Home SL 10 32 64 English OPK |
 | X20-09737 | Win Pro 10 32 64 English OPK     |
 
-**Optional: Windows 10 Language Packs, FoD’s, Appx bundles**
+### Optional: Windows 10 Language Packs, FoD’s, Appx bundles
 
-**Note: When installing new or additional language packs, the FoD’s and Appx pacages are required downloads.**
+Note: When installing new or additional language packs, the FoD’s and Appx pacages are required downloads.
 
 |           |                                            |
 |-----------|--------------------------------------------|
@@ -119,7 +119,7 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 | X20-52949 | Office Mobile MultiLang OPK -2             |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK |
 
-**Windows 10 Version 1511 images and Updates**
+### Windows 10 Version 1511 images and Updates
 
 |  |       |
 |-----------|----------------------------------------|
@@ -128,9 +128,9 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 | X20-74669 | Win Home SL 10 1511 32/64 Eng Intl OPK |
 | X20-74672 | Win Pro 10 1511 32/64 English OPK      |
 
-**Optional: Windows 10 Version 1511 Language Packs, FoD’s, Appx bundles**
+### Optional: Windows 10 Version 1511 Language Packs, FoD’s, Appx bundles
 
-**Note: When installing new or additional language packs, the FoD’s and Appx packages are required downloads.**
+Note: When installing new or additional language packs, the FoD’s and Appx packages are required downloads.
 
 |   |   |
 |-----------|-------------------------------------------------|
@@ -144,7 +144,7 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 
 This section walks you through scripts and steps to creating a Windows 10 image.
 
-This guide use samples of configuration files and scripts as well as storing copy of the Windows Istallation files on a USB key. Before starting this guide, go to ***Creating My USB-B*** In the Appendix.
+This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, go to ***Creating My USB-B*** In the Appendix.
 
 Deployment Steps basic flow
 
@@ -152,7 +152,7 @@ Deployment Steps basic flow
 
 # Create WinPE bootable USB
 
-1.  Press the Windows key < ![Windows logo](images\windows-logo.png) > to display the **Start** menu. Click the search magnifying glass tile and type: **Deployment and Imaging Tools Environment.**
+1.  Press the Windows key to display the **Start** menu. Click the search magnifying glass tile and type: **Deployment and Imaging Tools Environment.**
 
     **Note: Run this with elevated permissions by right clicking and locating “Run as administrator” (See image below). **
 
@@ -693,6 +693,8 @@ Insert **USB-B** into your technician computer.
 2.  Verify your driver has been installed for both images
 
         Dism /Image:C:\mount\windows /Get-Drivers
+        
+    
 
     **Important: If the driver contains only the installer package and doesn’t have an .inf file, the driver in AUDIT mode may be installed by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool that they will be removed after sysprep generalize even if they have been injected offline. **
 
@@ -1667,7 +1669,7 @@ Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partne
 
 1.  Make a backup copy of the updated Windows RE image:
 
-    **Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to make the file visible:**
+    Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to make the file visible:
 
         attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 

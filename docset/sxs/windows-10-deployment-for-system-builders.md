@@ -2,29 +2,28 @@
 
 # Contents
 
-
 Use this guide to deploy Windows® 10 to a line of computers by following the steps in this guide.
 
 # Summary
 
 
-The purpose of this whitepaper is to document a prescriptive method for Windows 10 deployment that includes online and offline customizations, targeting system builders for both 64-bit and 32-bit configurations.
+The purpose of this guide is to document a prescriptive method for Windows 10 deployment that includes online and offline customizations, targeting system builders for both 64-bit and 32-bit configurations.
 
 This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the system builders to include/exclude optional steps due to their specific deployment environment.
 
 # Intended Audience
 
-This procedure is specially targeted for system builders and applies to all Windows 10 client operating system versions. This document addresses level 200 technicians about Windows deployment. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory. You may prefer to refer to external resources like [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/) as well
+This guide about Windows deployment is especially targeted for system builders (level 200 technicians) and applies to all Windows 10 client operating system versions. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory. You may also prefer external resources such as [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/).
 
 # Introduction
 
 # Prepare Your Lab Environment
 
-In this step you will set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. Technician computer must be installed Windows 10 x64 if you are going to do x64 image deployment or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Please see ***Differences Between 64-bit and 32-bit Deployment*** section to obtain further information about 64-bit vs 32-bit deployment
+In this step, you will set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. The technician computer must run Windows 10 x64 if you are going to deploy x64 images or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
 
-Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper from [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) &gt; “Downloads and Installation” &gt; “Understanding ADKs and OPKs”. In order to see the list of resources/kits that will be used and where to obtain them, please see ***What You Must Obtain & From Where*** section
+Before starting the deployment procedure, you need to download certain kits which will be used throughout the guide. from [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) &gt; “Downloads and Installation” &gt; “Understanding ADKs and OPKs”. In order to see the list of resources/kits that will be used and where to obtain them, please see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
 
-You will use a USB hard drive called USB-B to move files between computers, run scripts and store&apply created images and another USB hard drive called USB-A to boot the system in WinPE.
+You will use a USB hard drive called USB-B to move files between computers, run scripts, and store and apply created images and another USB hard drive called USB-A to boot the system in WinPE.
 
 <table>
 <th>USB Hard Drive Name</th>
@@ -42,11 +41,11 @@ You will use a USB hard drive called USB-B to move files between computers, run 
 </tr>
 </table>
 
-USB-B will be used to store deployment, recovery scripts and sample answer files. Please see *Creating My USB-B* section to create your own USB-B
+USB-B will be used to store deployment, recovery scripts, and sample answer files. Please see *Creating My USB-B* section to create your own USB-B.
 
-**Procedures throughout the document are highly dependent on the sample files contained in** USB-B **therefore it is recommended to complete Creating My** USB-B **section before starting **
+Procedures throughout the document are highly dependent on the sample files contained in USB-B, therefore it is recommended to complete Creating My USB-B section before starting.
 
-## Customizations Throughout the document
+## Customizations throughout the document
 
 | **Pass**        | **Setting**                              | **Action**                                                            |
 |-----------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -71,17 +70,17 @@ USB-B will be used to store deployment, recovery scripts and sample answer files
 
 ### Image Customization
 
-Adding language interface packs to Windows implemented
+- Adding language interface packs to Windows
 
-Adding Drivers and Update Packages implemented
+- Adding Drivers and Update Packages
 
-Adding OEM Specific Logo and background files to Windows implemented
+- Adding OEM Specific Logo and background files to Windows
 
-Image size optimization implemented
+- Image size optimization
 
-Pinning desktop apps to start sceen implemented
+- Pinning desktop apps to start sceen
 
-## Section 1. Create WinPE bootable USB
+# Create WinPE bootable USB
 
 **Windows 10 version distinction RTM/1511**
 
@@ -503,11 +502,11 @@ The System Builder may want to make additional customizations through an unatten
 
 1.  Make a backup copy of the updated Windows RE image:
 
-    **Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:**
+    Troubleshoot: If you cannot see winre.wim under the specified directory, use the following command to set the file visible:
 
-    attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
+        attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 
-    Dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:e:\images\winre_bak.wim
+        Dism /export-image /sourceimagefile:c:\mount\windows\windows\system32\recovery\winre.wim /sourceindex:1 /DestinationImageFile:e:\images\winre_bak.wim
 
     Del c:\mount\windows\windows\system32\recovery\winre.wim
 
@@ -517,19 +516,19 @@ The System Builder may want to make additional customizations through an unatten
 
 1.  Check the new size of the Windows RE image.
 
-    Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
+            Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
 
     Follow the below partition layout size chart to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
     Please reference [Disk Partition rules](https://technet.microsoft.com/library/hh824839.aspx#DiskPartitionRules) for more information.
 
-    If the partition is less than 500 MB, it must have at least 50 MB of free space.
+    - If the partition is less than 500 MB, it must have at least 50 MB of free space.
 
-    If the partition is 500 MB or larger, it must have at least 320 MB of free space.
+    - If the partition is 500 MB or larger, it must have at least 320 MB of free space.
 
-    If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
-    
-        rem == Windows RE tools partition =============== 
+    - If the partition is larger than 1 GB, we recommend that it should have at least 1 GB free.
+
+            rem == Windows RE tools partition =============== 
             create partition primary size=500
 
     rem == 3. Windows RE tools partition =============== create partition primary size=500
@@ -812,7 +811,7 @@ The overall deployment flow mentioned in this whitepaper doesn’t differ betwee
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing 64bit Windows image please use x64 update packages, or vice-versa                                                                                                                                   | Section 4.2.2 Adding Update Packages |
 | Language Interface Packs                | IF you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs                                                                                                                                                                    | Section 6.2                          |
 
-## What You Must Obtain & From Where
+## What you will need and where to get it
 
 Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
@@ -834,23 +833,5 @@ Before starting the deployment procedure OEM requires to download certain kits w
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
 [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008)
-
-<span id="_Toc362368126" class="anchor"><span id="_Toc441042835" class="anchor"></span></span>Revisions
-=======================================================================================================
-
-| **Date**  | **Description**                                                         | **Changed By** |
-|-----------|-------------------------------------------------------------------------|----------------|
-| 1/13/2016 | Moved LIP installation to offline servicing                             | Shawn Saffer   |
-| 1/13/2016 | Added start layout section replacing start tile section for Windows 8.1 | Shawn Saffer   |
-| 1/13/2016 | Added Optimize WinRE section                                            | Shawn Saffer   |
-| 1/13/2016 | Updated answer files in USB-B                                           | Shawn Saffer   |
-| 1/13/2016 | Updated USB-B with layoutmodification.xml sample                        | Shawn Saffer   |
-| 1/13/2016 | Updated USB-B with windows 10 deployment scripts                        | Shawn Saffer   |
-| 1/13/2016 | Added section for preparing scanstate tool                              | Shawn Saffer   |
-| 1/13/2016 | Added section for creating configuration file to use with scanstate     | Shawn Saffer   |
-| 1/13/2016 | Added section for running scanstate tool                                | Shawn Saffer   |
-| 1/13/2016 | Added section for creating extensibility scripts                        | Shawn Saffer   |
-| 1/13/2016 | Added /scratchdir to command line for capturing thinimage               | Shawn Saffer   |
-|           |                                                                         |                |
 
 
