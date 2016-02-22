@@ -7,7 +7,7 @@ The purpose of this guide is to document a prescriptive method for Windows 10 de
 
 # Intended Audience
 
-This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/en-us/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
+This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and Troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/en-us/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
 
 # About this guide
 
@@ -77,7 +77,7 @@ To complete the steps outlined in this whitepaper, OEMs will require:
 
 -   **A Technician Computer**: A PC that is running Windows 10 or Windows 8.1, on which the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
 
-**Note: This guide provides sample Powershell script to automate offline servicing section. In order to use this script OEM will need a Technician computer running Windows 10.**
+**Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script OEM will need a Technician computer running Windows 10.**
 
 -   **A Reference Computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
     For this PC, choose from something that resembles the Hardware Configuration Table.
@@ -137,14 +137,14 @@ Note: When installing new or additional language packs, the FoD’s and Appx pac
 | X20-74675 | Win 10 1511 32/64 MultiLang OPK LangPackAll/LIP |
 | X20-74677 | Win 10 1511 32/64 MultiLang OPK Feat on Demand  |
 | X20-87906 | Win 10 1511 32-BIT/X64 MultiLang OPK App Update |
-| X20-52949 | Office Mobile MultiLang OPK -2                  |S
+| X20-52949 | Office Mobile MultiLang OPK -2                  |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK      |
 
 # Windows 10 Deployment Procedure
 
 This section walks you through scripts and steps to creating a Windows 10 image.
 
-This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, go to ***Creating My USB-B*** In the Appendix.
+This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, go to [Creating My USB-B](#creating-my-usb-b) in the Appendix.
 
 Deployment Steps basic flow
 
@@ -152,9 +152,11 @@ Deployment Steps basic flow
 
 # Create WinPE bootable USB
 
-1.  Press the Windows key to display the **Start** menu. Click the search magnifying glass tile and type: **Deployment and Imaging Tools Environment.**
+1.  Press the Windows key to display the **Start** menu. Type:
+    
+        Deployment and Imaging Tools Environment
 
-    **Note: Run this with elevated permissions by right clicking and locating “Run as administrator” (See image below). **
+    Right-click the name of the tool and then click **Run as administrator**.
 
     **Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:**
 
@@ -164,138 +166,85 @@ Deployment Steps basic flow
 
 1.  From the “Deployment Tools Environment command prompt” Copy base WinPE to a new folder on the Technician Computer.
     
-    <table>
-    <tr>
-    <td>*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
-    </td>
-    </tr>
-    <tr>
-    <td><code>Copype amd64 C:\winpe_amd64</code>
-    </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr>
-    <td>*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
-    </td>
-    </tr>
-    <tr>
-    <td><code>Copype x86 C:\winpe_x86</code>
-    </td>
-    </tr>
-    </table>
+    If you use an **x64** Windows 10 image, copy the x64 WinPE folder structure:
+
+        Copype amd64 C:\winpe_amd64
+
+    If you use an **x86** Windows 10 image, copy the x86 WinPE folder structure:
+
+        Copype x86 C:\winpe_x86
 
 1.  **Optional**: Mount WinPE image to add Additional packages and languages.
    
-    <table>
-    <tr>
-    <td> *OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
-    </td>
-    </tr>
-    <tr>
-    <td><code>Dism /mount-image /imagefile:c:\WinPE_amd64\media\sources\boot.wim /index:1 /mountdir:c:\winpe_amd64\mount</code>
-    </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr>
-    <td>*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
-    </td>
-    </tr>
-    <tr>
-    <td><code>Dism /mount-image /imagefile:c:\WinPE_x86\media\sources\boot.wim /index:1 /mountdir:c:\winpe_x86\mount
-    </code>
-    </td>
-    </tr>
-    </table>
-    
+    If you use an **x64** Windows 10 image, mount the x64 WinPE image:
+
+        Dism /mount-image /imagefile:c:\WinPE_amd64\media\sources\boot.wim /index:1 /mountdir:c:\winpe_amd64\mount
+
+    If you use an **x86** Windows 10 image, mount the x86 WinPE image:
+
+        Dism /mount-image /imagefile:c:\WinPE_x86\media\sources\boot.wim /index:1 /mountdir:c:\winpe_x86\mount
+
 ### Add packages, dependencies, and language packs
 
 Use **Dism** command with the **/Add-Package** option. For example, in order to use Powershell in WinPE, NetFx dependency and the language packs must be installed.
 
-<table>
-<tr>
-<td>*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
-</td>
-</tr>
-<tr>
-<td><code><br>dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFx.cab"</br>
-<br>dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"</br>
-<br>dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-PowerShell.cab"</br>
-<br>dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Powershell_en-us.cab"</br>
-</code>
-</td>
-</tr>
-</table>
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
-</td>
-</tr>
-<tr>
-<td><code><br>dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-NetFx.cab"</br>
-<br>dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"</br>
-<br>dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-PowerShell.cab"</br>
-<br>dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-Powershell_en-us.cab"</br>
-</code>
-</td>
-</tr>
-</table>
+    dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFx.cab"
+    dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"
+    dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-PowerShell.cab"
+    dism /image:C:\winpe_amd64\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Powershell_en-us.cab"
+
+If you use an **x86** Windows 10 image:
+
+    dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-NetFx.cab"
+    dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab"
+    dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-PowerShell.cab"
+    dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-Powershell_en-us.cab"
 
 ### Add drivers 
 
-Use Dism command with the /Add-Driver option. For example:
+Use the Dism command with the /Add-Driver option. 
 
-**Note: This method requires drivers to be INF based. It is recommended to get INF based drivers from IHV Vendor.**
+Note: This method requires drivers to be INF based. It is recommended to get INF based drivers from the IHV Vendor.
 
-***x64/x86 Distinction***
-
-*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
+If you use an **x64** Windows 10 image:
 
     dism /image:C:\winpe_amd64\mount /Add-Driver /driver:"C:\Out-of-Box Drivers\mydriver.inf"
 
-*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
+If you use an **x86** Windows 10 image:
 
     dism /image:C:\winpe_x86\mount /Add-Driver /driver:"C:\Out-of-Box Drivers\mydriver.inf"
 
-**Note: To install all of the drivers in a folder and all its subfolders use the /recurse option. For example:**
+Note: To install all of the drivers in a folder and all its subfolders use the /recurse option. 
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
+    dism /Image:C:\Winpe_amd64 /Add-Driver /Driver:c:\drivers /Recurse
 
-    Dism /Image:C:\Winpe_amd64 /Add-Driver /Driver:c:\drivers /Recurse
+If you use an **x86** Windows 10 image:
 
-*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
-
-    Dism /Image:C:\Winpe_x86 /Add-Driver /Driver:c:\drivers /Recurse
+    dism /Image:C:\Winpe_x86 /Add-Driver /Driver:c:\drivers /Recurse
 
 ### Cleanup boot.wim
 
 Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices.
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
+    dism /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase
 
-    DISM /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase
+If you use an **x86** Windows 10 image:
 
-*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
-
-    DISM /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase
+    dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase
 
 ### Optimize Winpe on boot
 
 Optimize online winpe by setting the power scheme to High performance:
 
-**Note: Setting up high performance can impact thermal of the device.**
+Note: Setting up high performance can impact thermal performnce of the device.
 
-***x64/x86 Distinction***
-
-*OEMs using **x64 Windows 10 image**, copy x64 WinPE folder structure:*
+If you use an **x64** Windows 10 image:
 
     Notepad.exe c:\winpe_amd64\mount\windows\system32\startnet.cmd
 
@@ -305,7 +254,7 @@ Enter into notepad:
 
 Close and save notepad.
 
-*OEMs using **x86 Windows 10 image**, copy x86 WinPE folder structure:*
+If you use an **x86** Windows 10 image:
 
     Notepad.exe c:\winpe_x86\mount\windows\system32\startnet.cmd
 
@@ -321,34 +270,19 @@ Close and save notepad.
 
 Run the commands in the following table to commit the changes to WinPE and mark files for deletion.
 
-<table>
-<tr>
-<th>OEMS using this architecture
-</th>
-<th>Run these commands
-</th>
-</tr>
-<tr>
-<td> x64 
-</td>
-<td><code>dism /unmount-image /mountdir:c:\winpe_amd64\mount /commit
-<br>dism /export-image /sourceimagefile:c:\winpe_amd64\media\sources\boot.wim /sourceindex:1 /DestinationImageFile:c:\winpe_amd64\mount\boot2.wim</br>
-<br>Del c:\winpe_amd64\media\sources\boot.wim</br>
-Copy c:\winpe_amd64\mount\boot2.wim c:\winpe_amd64\media\sources\boot.wim
-</code>
-</td>
-</tr>
-<tr>
-<td> x86 
-</td>
-<td><code>dism /unmount-image /mountdir:c:\winpe_x86\mount /commit
-<br>dism /export-image /sourceimagefile:c:\winpe_x86\media\sources\boot.wim /sourceindex:1 /DestinationImageFile:c:\winpe_x86\mount\boot2.wim</br>
-<br>Del c:\winpe_x86\media\sources\boot.wim</br>
-Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
-</code>
-</td>
-</tr>
-</table>
+If you use an **x64** Windows 10 image:
+
+    dism /unmount-image /mountdir:c:\winpe_amd64\mount /commit
+    dism /export-image /sourceimagefile:c:\winpe_amd64\media\sources\boot.wim /sourceindex:1 /DestinationImageFile:c:\winpe_amd64\mount\boot2.wim
+    Del c:\winpe_amd64\media\sources\boot.wim
+    Copy c:\winpe_amd64\mount\boot2.wim c:\winpe_amd64\media\sources\boot.wim
+   
+If you use an **x86** Windows 10 image:
+
+    dism /unmount-image /mountdir:c:\winpe_x86\mount /commit
+    dism /export-image /sourceimagefile:c:\winpe_x86\media\sources\boot.wim /sourceindex:1 /DestinationImageFile:c:\winpe_x86\mount\boot2.wim
+    Del c:\winpe_x86\media\sources\boot.wim
+    Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
 
 ### Create Bootable USB key
 
@@ -360,39 +294,23 @@ Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
 
 Note: If you have labeled your USB-A stick the script below will overwrite the label to “WinPE". 
 
-<table>
-<tr>
-<th>OEMS using this architecture
-</th>
-<th>Run these commands
-</th>
-</tr>
-<tr>
-<td>x64 
-</td>
-<td><code>MakeWinPEMedia /UFD /f C:\winpe_amd64 E:
-</code>
-<p>(E: is the drive letter of **USB-A**)</p>
-</td>
-</tr>
-<tr>
-<td> x86 
-</td>
-</td>
-<td><code>MakeWinPEMedia /UFD /f C:\winpe_x86 E:
-</code>
-<p>(E: is the drive letter of **USB-A**)</p>
-</td>
-</tr>
-</table>
+If you use an **x64** Windows 10 image:
+
+    MakeWinPEMedia /UFD /f C:\winpe_amd64 E:
+
+If you use an **x86** Windows 10 image:
+
+    MakeWinPEMedia /UFD /f C:\winpe_x86 E:    
+    
+(where E: is the drive letter of **USB-A**)
 
 # Install Windows with basic customizations
 
-**REFERENCE**: The [Windows 10 Update OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx) document to tailor your customizations defined in unattend.xml file.
+For a document to help you tailor the customizations defined in your unattend.xml file, see the [Windows 10 Update OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
-**Obtain: Download Win Pro 10 from** [***Digital Operations Center***](http://www.microsoftoem.com/) **Software Order Center , use Microsoft Media Tool from** [***SOC Resources***](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) **to generate the ISO files. OEMs can download the windows kit which is applicable to them in terms of language and edition.**
+Download Windows 10 Professional from [Digital Operations Center](http://www.microsoftoem.com/) Software Order Center, use Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to generate the ISO files. OEMs can download the windows kit which is applicable to them in terms of language and edition.
 
-### Create Answer File
+### Create an answer file
 
 An "answer file" is an XML-based file that contains setting definitions and values to use during Windows Setup. In an answer file, you specify various setup options, including how to partition disks, the location of the Windows image to install, and the product key to apply. Values that apply to the Windows installation, such as the names of user accounts, display settings, and Internet Explorer Favorites can also be specified. The answer file for Setup is typically called **Unattend.xml**.
 
@@ -404,7 +322,7 @@ Throughout the document we use 3 different answer files:
 
 Note: You need to point Windows System Image Manager (SIM) to an install.wim before you can create and customize the answer file.
 
-1.  On the Technician Computer, mount the ISO image of Windows (see below) by double clicking it. Highlight all files on the mounted ISO to E:\MyWindows as shown below
+1.  On the Technician Computer, mount the ISO image of Windows (see below) by double clicking it. Highlight all files on the mounted ISO to E:\MyWindows as shown in the following diagram.
 
     ![Mounted files](images\mounted-files.png)
 
@@ -412,17 +330,17 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     
     ![Create an answer file](images\create-answer-file.png)  
     
-    **Reference:** Please refer to the [WSIM overview](https://technet.microsoft.com/en-us/library/hh825214.aspx) on Technet for more information on Windows System Image Manager (SIM) user interface
+    Reference: Please refer to the [WSIM overview](https://technet.microsoft.com/en-us/library/hh825214.aspx) on Technet for more information on Windows System Image Manager (SIM) user interface.
 
 1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\\*Install.wim*. A Catalog file will be created (.clg file) for that specific wim.
 
-    **TROUBLESHOOT**: Catalog creation may fail due to several reasons. You may receive the following:
+    Troubleshoot: Catalog creation may fail due to several reasons. You may receive the following:
 
     ![Catalog creation error](images\catalog-creation-fail.png)
 
 1.  Click **Yes**.
 
-    **Note: Please make sure install.wim has read/write permissions and the individual who is creating this is the administrator of the local machine. Install.wim image and Windows 10 ADK versions must be the same. If the below error is displayed, make sure the correct architecture (x86 or x64) of Windows 10 is installed on the Technician computer. **
+    Note: Please make sure install.wim has read/write permissions and the individual who is creating this is the administrator of the local machine. Install.wim image and Windows 10 ADK versions must be the same. If the below error is displayed, make sure the correct architecture (x86 or x64) of Windows 10 is installed on the Technician computer. 
     
     ![Architecture mismatch](images\catalog-fail-arch-mismatch.png)
 
@@ -430,24 +348,24 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     
     <table>
     <tr>
-    <td>**For OA 3.0 systems: **
+    <td>For OA 3.0 systems: 
     </td>
-    <td>**USB-B**\ConfigSet\**OA3.0**\AutoUnattend.xml
+    <td>**USB-B**\ConfigSet\\**OA3.0**\AutoUnattend.xml
     </td>
     </tr>
     <tr>
-    <td>**For non-OA 3.0 systems: **
+    <td>For non-OA 3.0 systems: 
     </td>
-    <td>**USB-B**\ConfigSet\**Non_OA3.0**\AutoUnattend.xml
+    <td>**USB-B**\ConfigSet\\**Non_OA3.0**\AutoUnattend.xml
     </td>
     </tr>
     </table>
    
 1.  To associate the answer file with the Windows Image, click **OK** when prompted.
 
-### Customize Answer File
+### Customize the answer file
 
-**Note: Blank character in specialize | Microsoft-Windows-Shell-Setup | Computer Name section of the answer file will result in Windows installation failure.**
+Note: A blank character in specialize | Microsoft-Windows-Shell-Setup | Computer Name section of the answer file will result in Windows installation failure.
 
 1.  For basic customizations, please review the provided sample answer files in **USB-B**. Note that the sample answer files in the **USB-B** have placeholder values that must be changed before its use. We recommend OEMs to build their own answer files and use the following files as a starting point or reference:
 
@@ -455,13 +373,13 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     <tr>
     <td>**For OA 3.0 systems: **
     </td>
-    <td>**USB-B**\ConfigSet\**OA3.0\**AutoUnattend.xml
+    <td>**USB-B**\ConfigSet\\**OA3.0**\AutoUnattend.xml
     </td>
     </tr>
     <tr>
     <td>**For non-OA 3.0 systems: **
     </td>
-    <td>**USB-B**\ConfigSet\**Non_OA3.0**\AutoUnattend.xml
+    <td>**USB-B**\ConfigSet\\**Non_OA3.0**\\AutoUnattend.xml
     </td>
     </tr>
     </table>
@@ -470,29 +388,29 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
 
 1.  Specify the product key in the answer file. This customization is included in the sample answer file in **USB-B**. There are two different ways to specify the product key in the answer file:
 
-    -   Use this [*ProductKey*](http://technet.microsoft.com/library/cc721925.aspx) setting in the Microsoft-Windows-Setup component during the **windowsPE pass** to specify the Windows image to install during Windows Setup. The product key specified by this setting is stored on the computer after installation. When windows is activated, this product key will be used.
+    -   Use this [ProductKey](http://technet.microsoft.com/library/cc721925.aspx) setting in the Microsoft-Windows-Setup component during the **windowsPE pass** to specify the Windows image to install during Windows Setup. The product key specified by this setting is stored on the computer after installation. When windows is activated, this product key will be used.
 
-    -   Use this [*ProductKey*](http://technet.microsoft.com/library/cc749389.aspx) setting in the Microsoft-Windows-Shell-Setup component during the **specialize pass** to specify a different product key to activate Windows. For example, one product key may be specified to install Windows with the ProductKey in Microsoft-Windows-Setup component, and then specify a different product key to activate Windows.
+    -   Use this [ProductKey](http://technet.microsoft.com/library/cc749389.aspx) setting in the Microsoft-Windows-Shell-Setup component during the **specialize pass** to specify a different product key to activate Windows. For example, one product key may be specified to install Windows with the ProductKey in Microsoft-Windows-Setup component, and then specify a different product key to activate Windows.
 
-Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for **OA3.0** and **Non-OA3.0** keys.
+Please refer to the Kit Guide Windows 10 Default Manufacturing Key OEM PDF to find default product keys for **OA3.0** and **Non-OA3.0** keys.
 
-Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf
+Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf.
 
 ### Install Windows
 
-1.  Connect the **USB-A** drive and boot the Reference computer
+1.  Connect the **USB-A** drive and boot the Reference computer.
 
-    **Note: If booting with USB drive fails, please make sure USB boot has been prioritized instead of HDD boot. To do so, it may be necessary to go to the Reference Computer’s/Device’s BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.**
+    Note: If booting with USB drive fails, please make sure USB boot has been prioritized instead of HDD boot. To do so, it may be necessary to go to the Reference Computer’s/Device’s BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
-1.  After WinPE has been booted, insert **USB-B**
+1.  After WinPE has been booted, insert **USB-B**.
 
-2.  At the **X:\windows\system32&gt;** prompt, type ***diskpart*** and press the **&lt;Enter&gt;** key to start Diskpart
+2.  At the **X:\windows\system32>** prompt, type ***diskpart*** and press the **&lt;Enter&gt;** key to start Diskpart.
 
-3.  At the **\DISKPART&gt;** prompt type ***list volume***
+3.  At the **\DISKPART&gt;** prompt type ***list volume***.
 
-    **Note: Check what letter USB-B has been assigned under the “Ltr" column (Example: E). This is the drive letter that will be used throughout the installation.**
+    Note: Check what letter USB-B has been assigned under the “Ltr" column (Example: E). This is the drive letter that will be used throughout the installation.
 
-1.  Type ***exit*** to quit Diskpart
+1.  Type ***exit*** to quit Diskpart.
 
     ![Diskpart](images\diskpart.png)
     
@@ -530,7 +448,7 @@ Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content
   
 1.  After installation files have been copied, disconnect **USB-A**.
 
-2.  Disconnect **USB-B** immediately after computer reboots
+2.  Disconnect **USB-B** immediately after computer reboots.
 
 Note: if you use the AutoUnattend the system will automatically boot into Audit mode and the System Preparation Tool (sysprep) appears. If the device boots to the Languages or the Hi there screen instead, press Ctrl+Shift+F3 to enter Audit mode. The device reboots to the Desktop and the System Preparation Tool (sysprep) appears. Ignore Sysprep for now.
 
@@ -542,11 +460,11 @@ Through Windows 10 and the Windows Store, you have tremendous opportunities for
 
 Windows Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
 
-For more information please refer to  [Windows Store Program 2016 Guide - 2016 Final Clean](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx)
+For more information please refer to [Windows Store Program 2016 Guide - 2016 Final Clean](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx)
 
-**Important: The key below must be set in Audit mode, if you have completed section 4.2.3 you should be in Audit mode.**
+Important: The key below must be set in Audit mode. If you have completed the [Install Windows](#install-windows) section, you should be in Audit mode.
 
-Change registry setting and add the OEM ID. OEM Windows Store Program participants, contact <PartnerOps@microsoft.com> to get your OEM ID.
+Change the registry setting and add the OEM ID. OEM Windows Store Program participants, contact <PartnerOps@microsoft.com> to get your OEM ID.
 
 | **Item**  | **Location in Registry**                                                                   |
 |-----------|--------------------------------------------------------------------------------------------|
@@ -554,45 +472,47 @@ Change registry setting and add the OEM ID. OEM Windows Store Program participan
 
 ***Regedit.exe***
 
-1.  Run regedit.exe from command prompt
+1.  Run regedit.exe from a command prompt.
 
-2.  Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store
+2.  Navigate to HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store.
 
-3.  Right click under (Defalut) -&gt; click new
+3.  Right-click under (Default) &gt; click **New**.
 
-4.  Click String Value
+4.  Click **String Value**.
 
-5.  Type OEMID
+5.  Type: 
 
-6.  Double click OEMID and enter OEM name in Value data: text field
+        OEMID
 
-    **Important: The OEMID registry key is not restored automatically during PBR in Windows 10. Please refer the the scanstate section of this guide on how to restore the OEMID registry key during PBR operation.**
+6.  Double-click **OEMID** and enter the OEM name in the **Value data:** text field.
 
-### Verify Customizations in Audit Mode
+    Important: The OEMID registry key is not restored automatically during PBR in Windows 10. For more information about how to restore the OEMID registry key during PBR operation, see [Prepare system for recovery Push Buton Reset scenarios](#prepare-system-for-recovery-push-button-reset-scenarios).
 
-Connecting the computer to the internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
+### Verify customizations in Audit mode
+
+Connecting the computer to the internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error when you run generalize + syspreping on the machine from audit mode.
 
 1.  After setup has finished, the computer logs into Windows in Audit mode automatically as an Administrator.
 
-2.  Verify the changes which were stated in the answer file (see manufacturer name, support phone number and other customizations)
+2.  Verify the changes which were stated in the answer file (see manufacturer name, support phone number and other customizations).
 
-3.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox
+3.  The image must be generalized before being used as a manufacturing image; select the **Generalize** checkbox.
 
-4.  In the System Cleanup Action box select **Enter System Out-of-Box Experience**
+4.  In the System Cleanup Action box, select **Enter System Out-of-Box Experience**.
 
-5.  In the shutdown options box select **Shutdown**
+5.  In the shutdown options box select **Shutdown**.
 
     ![Sysprep generalize](images\sysprep.png)
 
-**Important: The system must be set to generalize and OOBE in order to further service the image. In the following sections the guide will use an unattend file to return to Audit mode on the OOBE sealed system. There are known issues resealing to Audit mode in this phase and not recommended.**
+Important: The system must be set to generalize and OOBE in order to further service the image. In the following sections, an unattend file will be used to return to Audit mode on the OOBE-sealed system. There are known issues when resealing to Audit mode in this phase and it is not recommended.
 
-## Capture Basic Image
+## Capture basic image
 
 1.  Connect "**USB-A**" and boot the Reference computer.
 
-2.  After WinPE has been booted connect **USB-B**
+2.  After WinPE has booted, connect to **USB-B**.
 
-    **TROUBLESHOOT**: **At the end of the previous section 4.2.5, the reference system was shutdown. While turning on** if the system continues to boot from Internal HDD, Windows will enter specialize pass and then OOBE pass. **In order to capture a generalized and stable image none of the Windows passes must be completed**.to fix this we need To generalize the image again, at the OOBE Screen press **&lt;Ctrl&gt;**+**&lt;Shift&gt;**+**&lt;F3&gt;**, system restarts and boot in Audit mode. In Audit mode Sysprep the system by OOBE Shutdown and Generalize switches. *See image above*. After the system reboots please make sure to boot from **USB-A** to WinPE.
+    **Troubleshoot**: At the end of the previous section [Verify customizations in Audit mode](#verify-customizations-in-audit-mode), the reference system was shutdown. While turning on** if the system continues to boot from Internal HDD, Windows will enter specialize pass and then OOBE pass. **In order to capture a generalized and stable image none of the Windows passes must be completed**.to fix this we need To generalize the image again, at the OOBE Screen press **&lt;Ctrl&gt;**+**&lt;Shift&gt;**+**&lt;F3&gt;**, system restarts and boot in Audit mode. In Audit mode Sysprep the system by OOBE Shutdown and Generalize switches. *See image above*. After the system reboots please make sure to boot from **USB-A** to WinPE.
 
     If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
@@ -1098,7 +1018,7 @@ Note: For automated solution to this section, please refer to the Imaging Servic
 
 When you add languages to Windows, add them to Windows RE to ensure a consistent language experience in recovery scenarios.
 
-**TROUBLESHOOT**: If winre.wim cannot be seen under the specified directory, use the following command to make the file visible:
+**Troubleshoot**: If winre.wim cannot be seen under the specified directory, use the following command to make the file visible:
 
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 
@@ -1861,7 +1781,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
 After the process is completed, the Microsoft Office application tile will be placed on the Start screen. However, the user can install only one language version of Office Single Image v15.4  By default, the language version of the OOBE application matches the Windows language settings and the Office Single Image v15.1 language that is preloaded on the computer. If this match doesn’t take place, the language dialog box will contain languages that are based on the Office 2013 preloaded languages.
 
-## Prepare system for recovery Push Buton Reset scenarios
+## Prepare system for recovery Push Button Reset scenarios
 
 Push-button reset, first introduced in Windows 8, is a built-in recovery tool that allows users to recover the OS while preserving their data and important customizations, without having to back-up their data in advance. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence.
 
@@ -2128,7 +2048,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
 2.  After WinPE has been booted connect **USB-B**
 
-    **TROUBLESHOOT: The reference system was shutdown. While turning on, if the system continues to boot from Internal HDD, Windows will enter the specialize pass and then the OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To fix this, we need to generalize the image again, and at the OOBE screen, press &lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts and boots in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as explained previously. After the system reboots, make sure to boot from USB-A to WinPE. **
+    **Troubleshoot: The reference system was shutdown. While turning on, if the system continues to boot from Internal HDD, Windows will enter the specialize pass and then the OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To fix this, we need to generalize the image again, and at the OOBE screen, press &lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts and boots in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as explained previously. After the system reboots, make sure to boot from USB-A to WinPE. **
 
     **If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.**
 
