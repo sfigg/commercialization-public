@@ -77,7 +77,7 @@ To complete the steps outlined in this whitepaper, OEMs will require:
 
 -   **A Technician Computer**: A PC that is running Windows 10 or Windows 8.1, on which the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
 
-**Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script OEM will need a Technician computer running Windows 10.**
+Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script, you will need a Technician computer running Windows 10.
 
 -   **A Reference Computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
     For this PC, choose from something that resembles the Hardware Configuration Table.
@@ -158,13 +158,13 @@ Deployment Steps basic flow
 
     Right-click the name of the tool and then click **Run as administrator**.
 
-    **Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:**
+    Optional: speed up the optimization and image capture processes by setting the power scheme to High performance:
 
     -   Click **Start**, type **powercfg.cpl**. The **Power Options** control panel appears.
 
     -   Select the **High Performance** power scheme. (If it's not shown, select **Show additional plans**.)
 
-1.  From the “Deployment Tools Environment command prompt” Copy base WinPE to a new folder on the Technician Computer.
+1.  From the "Deployment Tools Environment command prompt" Copy base WinPE to a new folder on the Technician Computer.
     
     If you use an **x64** Windows 10 image, copy the x64 WinPE folder structure:
 
@@ -284,25 +284,23 @@ If you use an **x86** Windows 10 image:
     Del c:\winpe_x86\media\sources\boot.wim
     Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
 
-### Create Bootable USB key
+### Create a bootable USB key
 
 1.  Connect **USB-A** Drive. Make sure the drive capacity is at least 4 GB.
 
-2.  Making the inserted USB a WinPE bootable USB drive
+2.  Make the inserted USB a WinPE bootable USB drive.
 
-3. Run the commands in the following table to copy the WinPE folder structure.
+    Note: If you have labeled your USB-A stick, the script below will overwrite the label to “WinPE". 
 
-Note: If you have labeled your USB-A stick the script below will overwrite the label to “WinPE". 
+    If you use an **x64** Windows 10 image:
 
-If you use an **x64** Windows 10 image:
+        MakeWinPEMedia /UFD /f C:\winpe_amd64 E:
 
-    MakeWinPEMedia /UFD /f C:\winpe_amd64 E:
+    If you use an **x86** Windows 10 image:
 
-If you use an **x86** Windows 10 image:
-
-    MakeWinPEMedia /UFD /f C:\winpe_x86 E:    
+        MakeWinPEMedia /UFD /f C:\winpe_x86 E:    
     
-(where E: is the drive letter of **USB-A**)
+    (where E: is the drive letter of **USB-A**)
 
 # Install Windows with basic customizations
 
@@ -316,7 +314,7 @@ An "answer file" is an XML-based file that contains setting definitions and valu
 
 Answer files created in Windows System Image Manager (Windows SIM) are associated with a particular Windows image. This enables validating the settings in the answer file to the settings available in the Windows image. However, because any answer file can be used to install any Windows image, if there are settings in the answer file for components that do not exist in the Windows image, those settings are ignored.
 
-Throughout the document we use 3 different answer files:
+This guide uses three different answer files:
 
 ![Three answer files](images\three-answer-files.png)
 
@@ -330,7 +328,7 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     
     ![Create an answer file](images\create-answer-file.png)  
     
-    Reference: Please refer to the [WSIM overview](https://technet.microsoft.com/en-us/library/hh825214.aspx) on Technet for more information on Windows System Image Manager (SIM) user interface.
+    Reference: Please refer to the [WSIM overview](https://technet.microsoft.com/library/hh825214.aspx) for more information on Windows System Image Manager (SIM) user interface.
 
 1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\\*Install.wim*. A Catalog file will be created (.clg file) for that specific wim.
 
@@ -371,36 +369,36 @@ Note: A blank character in specialize | Microsoft-Windows-Shell-Setup | Computer
 
     <table>
     <tr>
-    <td>**For OA 3.0 systems: **
+    <td>For OA 3.0 systems: 
     </td>
     <td>**USB-B**\ConfigSet\\**OA3.0**\AutoUnattend.xml
     </td>
     </tr>
     <tr>
-    <td>**For non-OA 3.0 systems: **
+    <td>For non-OA 3.0 systems: 
     </td>
     <td>**USB-B**\ConfigSet\\**Non_OA3.0**\\AutoUnattend.xml
     </td>
     </tr>
     </table>
    
-    Reference: See [Technet reference Sample Unattend](https://technet.microsoft.com/library/cc732280.aspx) for addition samples.
+    See [Technet reference Sample Unattend](https://technet.microsoft.com/library/cc732280.aspx) for addition samples.
 
 1.  Specify the product key in the answer file. This customization is included in the sample answer file in **USB-B**. There are two different ways to specify the product key in the answer file:
 
-    -   Use this [ProductKey](http://technet.microsoft.com/library/cc721925.aspx) setting in the Microsoft-Windows-Setup component during the **windowsPE pass** to specify the Windows image to install during Windows Setup. The product key specified by this setting is stored on the computer after installation. When windows is activated, this product key will be used.
+    -   Use this [ProductKey](http://technet.microsoft.com/library/cc721925.aspx) setting in the Microsoft-Windows-Setup component during the **windowsPE pass** to specify the Windows image to install during Windows Setup. The product key specified by this setting is stored on the computer after installation. When Windows is activated, this product key will be used.
 
     -   Use this [ProductKey](http://technet.microsoft.com/library/cc749389.aspx) setting in the Microsoft-Windows-Shell-Setup component during the **specialize pass** to specify a different product key to activate Windows. For example, one product key may be specified to install Windows with the ProductKey in Microsoft-Windows-Setup component, and then specify a different product key to activate Windows.
 
 Please refer to the Kit Guide Windows 10 Default Manufacturing Key OEM PDF to find default product keys for **OA3.0** and **Non-OA3.0** keys.
 
-Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf.
+Example: Navigate to OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf.
 
 ### Install Windows
 
 1.  Connect the **USB-A** drive and boot the Reference computer.
 
-    Note: If booting with USB drive fails, please make sure USB boot has been prioritized instead of HDD boot. To do so, it may be necessary to go to the Reference Computer’s/Device’s BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
+    Note: If booting with USB drive fails, make sure USB boot has been prioritized instead of HDD boot. To do so, it may be necessary to go to the Reference Computer’s/Device’s BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
 1.  After WinPE has been booted, insert **USB-B**.
 
@@ -418,7 +416,7 @@ Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content
 
     <table>
     <tr>
-    <td>**For OA 3.0 systems: **
+    <td>For OA 3.0 systems: 
     </td>
     </tr>
     <tr>
@@ -433,7 +431,7 @@ Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content
     
     <table>
     <tr>
-    <td>**For non-OA 3.0 systems: **
+    <td>For non-OA 3.0 systems: 
     </td>
     </tr>
     <tr>
@@ -448,9 +446,9 @@ Example: Navigate OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content
   
 1.  After installation files have been copied, disconnect **USB-A**.
 
-2.  Disconnect **USB-B** immediately after computer reboots.
+2.  Disconnect **USB-B** immediately after the computer reboots.
 
-Note: if you use the AutoUnattend the system will automatically boot into Audit mode and the System Preparation Tool (sysprep) appears. If the device boots to the Languages or the Hi there screen instead, press Ctrl+Shift+F3 to enter Audit mode. The device reboots to the Desktop and the System Preparation Tool (sysprep) appears. Ignore Sysprep for now.
+If you use the AutoUnattend, the system will automatically boot into Audit mode and the System Preparation Tool (sysprep) appears. If the device boots to the Languages or the Hi there screen instead, press Ctrl+Shift+F3 to enter Audit mode. The device reboots to the Desktop and the System Preparation Tool (sysprep) appears. Ignore Sysprep for now.
 
 Note: Many Windows features, including the Start menu and the Settings menu, do not work in this environment.
 
@@ -459,8 +457,6 @@ Note: Many Windows features, including the Start menu and the Settings menu, do 
 Through Windows 10 and the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access.
 
 Windows Store apps are at the center of the Windows 10 experience. They are Windows universal apps, so you can build apps for desktops, tablets, or phones that run Windows 10. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing a great set of value-added software and services along with the high-quality hardware that you build.
-
-For more information please refer to [Windows Store Program 2016 Guide - 2016 Final Clean](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx)
 
 Important: The key below must be set in Audit mode. If you have completed the [Install Windows](#install-windows) section, you should be in Audit mode.
 
@@ -512,67 +508,67 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
 2.  After WinPE has booted, connect to **USB-B**.
 
-    **Troubleshoot**: At the end of the previous section [Verify customizations in Audit mode](#verify-customizations-in-audit-mode), the reference system was shutdown. While turning on** if the system continues to boot from Internal HDD, Windows will enter specialize pass and then OOBE pass. **In order to capture a generalized and stable image none of the Windows passes must be completed**.to fix this we need To generalize the image again, at the OOBE Screen press **&lt;Ctrl&gt;**+**&lt;Shift&gt;**+**&lt;F3&gt;**, system restarts and boot in Audit mode. In Audit mode Sysprep the system by OOBE Shutdown and Generalize switches. *See image above*. After the system reboots please make sure to boot from **USB-A** to WinPE.
+    Troubleshoot: At the end of the previous section [Verify customizations in Audit mode](#verify-customizations-in-audit-mode), the reference system was shutdown. While turning on if the system continues to boot from Internal HDD, Windows will enter specialize pass and then OOBE pass. **In order to capture a generalized and stable image none of the Windows passes must be completed. To fix this, we need to generalize the image again. At the OOBE screen, press **&lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as shown in the previous diagram. After the system reboots, please make sure to boot from **USB-A** to WinPE.
 
     If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
 1.  Identify Windows Parition Drive letter.
 
-    -   At the **X:\windows\system32&gt;** prompt, type ***diskpart*** and press the **&lt;Enter&gt;** key to start Diskpart.
+    -   At the **X:\windows\system32&gt;** prompt, type ***diskpart*** and press **&lt;Enter&gt;** to start Diskpart.
 
-    -   At the **\DISKPART&gt;** prompt type ***list volume***
+    -   At the **\DISKPART&gt;** prompt type ***list volume***.
 
-    -   Under the “Label” column, locate the volume that is labeled “Windows”
+    -   Under the "Label" column, locate the volume that is labeled "Windows".
 
-    -   Note what letter it is has been assigned under the “Ltr” column (Example: C). This is the drive letter that needs to be used
+    -   Note what letter it is has been assigned under the “Ltr” column (Example: C). This is the drive letter that needs to be used.
 
-    -   Type ***exit*** to quit Diskpart
+    -   Type ***exit*** to quit Diskpart.
 
     ![Diskpart](images\diskpart-v10.png)
 
 1.  Capture the image of the windows partition to **USB-B**. This process takes several minutes.
 
-**Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratch directory on the USB-B key for temporary files. However, you may choose any hard drive that has a large amount of available space to create a scratch directory. **
+    Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratch directory on the USB-B key for temporary files. However, you may choose any hard drive that has a large amount of available space to create a scratch directory. 
 
-    MD e:\scratchdir
+        MD e:\scratchdir
 
-    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\BasicImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
+        Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\BasicImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
 
-### Offline Servicing
+### Offline servicing
 
 Modify your images by adding and removing languages, drivers, and packages.
 
 ![Create a model specific image](images\create-model-specific-image.png)
 
-#### [Optional] offline servicing using automated script Windows10_IST.ps1
+#### [Optional] Offline servicing using automated script Windows10_IST.ps1
 
-The Imaging Servicing Tool is a utility developed using Powershell and helps an OEM to add, remove and update languages, preloaded applications faster, and apply existing updates in an easier and automated environment. Application Servicing Tool uses only DISM and PowerShell commands so every Windows 10 system is compatible.
+The Imaging Servicing Tool (IST) is a utility developed using Windows PowerShell and helps an OEM to add, remove, and update languages; preloaded applications faster; and apply existing updates in an easier and automated environment. Application Servicing Tool uses only DISM and Windows PowerShell commands so every Windows 10 system is compatible.
 
-Please reference **USB-B**\Resources\Windows10_IST_readme.PDF step-by-step guide for using the Windows10_IST powershell script.
+For more information about using the Windows10_IST Windows PowerShell script, see the USB-B\Resources\Windows10_IST_readme.PDF step-by-step guide.
 
-**Important: The IST tool only covers preloading of both the app packages and app bundles but not the pinning. OEMs must arrange their answer and layoutmodification files manually for the apps they install. Not pinning the apps will result in removal of the apps during OOBE.**
+Important: The IST covers preloading of both the app packages and app bundles, but not the pinning. OEMs must arrange their answer and layoutmodification files manually for the apps they install. Not pinning the apps will result in removal of the apps during OOBE.
 
--   **This is a “Use it at your own risk” and “As-is” tool.  **
+-   This is a “Use it at your own risk” and “As-is” tool.  
 
--   **OEM partners can use this for evaluation.**
+-   OEM partners can use this for evaluation.
 
--   **It is not production code andcan be used for demo purposes only.**
+-   It is not production code and can be used for demo purposes only.
 
--   **To suggest any improvements please contact** [**OTSQR@microsoft.com**](mailto:OTSQR@microsoft.com)
+-   To suggest any improvements, please contact [OTSQR@microsoft.com](mailto:OTSQR@microsoft.com).
 
-Please refer to the Windows10_IST.ps1 PowerShell script found at **USB-B**\Windows10_IST\Windows10_IST.ps1
+Please refer to the Windows10_IST.ps1 Windows PowerShell script found at USB-B\Windows10_IST\Windows10_IST.ps1.
 
-Before running the tool allow PowerShell scripts execution policy by running PowerShell in elevated permission and typing in:
+Before running the tool, set the execution policy to allow Windows PowerShell scripts to run. Open an elevated Windows PowerShell session and type:
 
 Set-ExecutionPolicy UNRESTRICTED
 
-1.  Run the script file (Windows10_IST tool) by right clicking and selecting “Run with PowerShell”. After the tool launches proceed with the in-tool instructions.
+1.  Run the script file (Windows10_IST tool) by right-clicking and selecting **Run with PowerShell**. After the tool launches, proceed with the in-tool instructions.
 
-![Windows 10 Image Servicing Tool](images\image-servicing-tool.png)
+    ![Windows 10 Image Servicing Tool](images\image-servicing-tool.png)
 
-### Mount Image
+### Mount image
 
-**Note: For an automated solution to this section, please refer to the Imaging Servicing Script found in USB-B**\Windows10_IST\Windows10_IST.ps1
+Note: For an automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1
 
 Insert **USB-B** into your technician computer.
 
@@ -590,19 +586,19 @@ Insert **USB-B** into your technician computer.
 
         Dism /Mount-Image /ImageFile:C:\mount\windows\Windows\System32\Recovery\winre.wim /index:1 /MountDir:C:\mount\winre
 
-    **Troubleshoot**: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
+    Troubleshoot: If winre.wim cannot be seen under the specified directory, use the following command to set the file visible:
 
         attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 
-**Troubleshoot**: If mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
+Troubleshoot: If the mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK. Make sure that version is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling antivirus protection.
 
-### Adding Drivers
+### Adding drivers
 
-**Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B**\Windows10_IST\Windows10_IST.ps1.
+Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
-1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**
+1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**.
 
-2.  Multiple drivers can be added on one command line if a folder is specified instead of an .inf file. To install all of the drivers in a folder and all its subfolders use the **/recurse** option.
+2.  Multiple drivers can be added on one command line if a folder is specified instead of an .inf file. To install all of the drivers in a folder and all its subfolders, use the **/recurse** option.
 
         Dism /Image:C:\mount\windows /Add-Driver /Driver:c:\SampleDrivers /Recurse
 
@@ -610,30 +606,29 @@ Insert **USB-B** into your technician computer.
 
 1.  Review the contents of the %WINDIR%\Inf\ (C:\mount\windows\Windows\Inf\) directory in the mounted Windows image to ensure that the .inf files were installed. Drivers added to the Windows image are named OEM\*.inf. This is to ensure unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf.
 
-2.  Verify your driver has been installed for both images
+2.  Verify your driver has been installed for both images.
 
         Dism /Image:C:\mount\windows /Get-Drivers
         
-    
 
-    **Important: If the driver contains only the installer package and doesn’t have an .inf file, the driver in AUDIT mode may be installed by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool that they will be removed after sysprep generalize even if they have been injected offline. **
+Important: If the driver contains only the installer package and doesn’t have an .inf file, the driver in AUDIT mode may be installed by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool; they will be removed after sysprep generalize even if they have been injected offline. 
 
-    ***In these two cases, you would require to add PersistAllDeviceInstalls and DoNotCleanupNonPresentDevices (sections below) extra parameter to:***
+In these two cases, you would require to add PersistAllDeviceInstalls and DoNotCleanupNonPresentDevices (sections below) extra parameter to:
 
-    <table>
-    <tr>
-    <td>**For OA 3.0 systems: **
-    </td>
-    <td>**USB-B**\AnswerFiles\OA3.0\UnattendSysprep.xml
-    </td>
-    </tr>
-    <tr>
-    <td>**For non-OA 3.0 systems: **
-    </td>
-    <td>**USB-B**\AnswerFiles\Non_OA3.0\UnattendSysprep.xml
-    </td>
-    </tr>
-    </table>
+<table>
+<tr>
+<td>For OA 3.0 systems: 
+</td>
+<td>**USB-B**\AnswerFiles\\**OA3.0**\UnattendSysprep.xml
+</td>
+</tr>
+<tr>
+<td>For non-OA 3.0 systems: 
+</td>
+<td>**USB-B**\AnswerFiles\\**Non_OA3.0**\UnattendSysprep.xml
+</td>
+</tr>
+</table>
 
 #### PersistAllDeviceInstalls
 
@@ -665,19 +660,17 @@ OEMs using **x86 Windows 10 image**, add the following setting to **USB-B**\Answ
 
 #### DoNotCleanupNonPresentDevices
 
-The **DoNotCleanUpNonPresentDevices** setting specifies whether plug and play information for devices that are not detected on the destination computer during the next specialize should remain on the computer.
+The **DoNotCleanUpNonPresentDevices** setting specifies whether plug-and-play information for devices that are not detected on the destination computer during the next specialize should remain on the computer.
 
 However, when both **PersistAllDeviceInstalls** and **DoNotCleanUpNonPresentDevices** are set to **true**, the device information remains on the computer. For more information, see [DoNotCleanUpNonPresentDevices](https://msdn.microsoft.com/library/windows/hardware/dn915711.aspx).
 
-The following diagram describes the process Windows Setup uses to determine whether plug and play information remains on the computer, or is removed, or is removed and then re-initialized.
+The following diagram describes the process Windows Setup uses to determine whether plug-and-play information remains on the computer, or is removed, or is removed and then re-initialized.
 
 ![DoNotCleanupNonPresentDevices](images\do-not-cleanup-nonpresent-devices.png)
 
 The following XML output specifies that device drivers will not be uninstalled during the generalize pass.
 
-***x64/x86 Distinction***
-
-OEMs using x64 Windows 10 image, add the following setting to **USB-B**\AnswerFiles\OA3.0\UnattendSysprep.xml:
+OEMs using **x64** Windows 10 image, add the following setting to **USB-B**\AnswerFiles\OA3.0\UnattendSysprep.xml:
 
     <settings pass="generalize">
         <component name="Microsoft-Windows-PnpSysprep" processorArchitecture="amd64"
@@ -688,7 +681,7 @@ OEMs using x64 Windows 10 image, add the following setting to **USB-B**\AnswerFi
         </component>
     </settings>
 
-OEMs using **x86 Windows 10 image**, add the following setting to **USB-B**\AnswerFiles\OA3.0\UnattendSysprep.xml:
+OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\AnswerFiles\OA3.0\UnattendSysprep.xml:
 
     <settings pass="generalize">
         <component name="Microsoft-Windows-PnpSysprep" processorArchitecture="x86" 
@@ -924,7 +917,7 @@ Required for some regions to render text that appears in documents. Example, th-
 
 Always use language packs and Features-On-Demand (FOD) packages that match the language and platform of the Windows image.
 
-Features on demand (FODs) are Windows feature packages that can be added at any time. When a user needs a new feature, they can request the feature package from Windows Update. OEMs can preinstall these features to enable them on their devices out of the box.
+Features on demand (FODs) are Windows feature packages that can be added at any time. When a user needs a new feature, they can request the feature package from Windows Update. OEMs can preinstall these features to enable them on their devices out-of-the-box.
 
 Common features include language resources like handwriting recognition. Some of these features are required to enable full Cortana functionality.
 
@@ -932,85 +925,51 @@ Obtain the Win 10 32 64 MultiLang OPK LangPackAll and the Win 10 32-BIT x64 Mult
 
 Note: you must use the Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to merge the DDP folder structure into a mountable image for the Win 10 32-BIT x64 MultiLang OPK Feat on Demand From DOC Center.
 
-1.  copy LP.cab to E:\Languagepacks\x86\de-de
+1.  copy LP.cab to E:\Languagepacks\x86\de-de.
 
     ![Copy LP.cab](images\copy-lp-cab.png)
 
 1.  Repeat x64 de-de language pack copying to E:\Languagepacks\x64\de-de for x64-bit devices.
 
-2.  Copy partial language packs to **USB-B**
+2.  Copy partial language packs to **USB-B**.
 
-3.  Highlight all de-de language packs and copy to E:\LanguageFeaturePacks\x86
+3.  Highlight all de-de language packs and copy to E:\LanguageFeaturePacks\x86.
 
     ![Highlight Language Packs](images\highlight-language-packs.png)
 
     Where E: is drive letter of **USB-B**
 
-**Important: Do not install a language pack after an update. If an update (hotfix, general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.**
+Important: Do not install a language pack after an update. If an update (hotfix, general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.
 
 Add languages, and Features On Demand to the Windows image.
 
 For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: lp.cab, then –**Basic**, then –**TextToSpeech**, then –**Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command, as shown in the examples in the following tables (where E: is the drive where language pack exists).
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"e:\LanguageFeaturePacks\x64\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
-</code>
-</td>
-</tr>
-</table>
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
-</code>
-</td>
-</tr>
-</table>
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"e:\LanguageFeaturePacks\x64\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 
-Verify the package has been installed to windows image
+if you use an **x86** Windows 10 image:
+
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
+
+Verify the package has been installed to the Windows image:
 
     Dism /Get-Packages /Image:C:\mount\windows
 
-#### [Optional] Adding language with additional Fonts
+#### [Optional] Add a language with additional fonts
 
 Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 As part of the language pack re-factoring for Windows 10, some languages with Fonts were factored out into their own Language Cabs. In this section, ja-JP language is added to the image with the language Font cab in addition to other feature language packs.
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
-</code>
-</td>
-</tr>
-</table>
+<code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab</code>
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
-</code>
-</td>
-</tr>
-</table>
+If you use an **x86** Windows 10 image:
+
+<code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"</code>
 
 ### Add languages to Windows RE
 
@@ -1018,17 +977,13 @@ Note: For automated solution to this section, please refer to the Imaging Servic
 
 When you add languages to Windows, add them to Windows RE to ensure a consistent language experience in recovery scenarios.
 
-**Troubleshoot**: If winre.wim cannot be seen under the specified directory, use the following command to make the file visible:
+Troubleshoot: If winre.wim cannot be seen under the specified directory, use the following command to make the file visible:
 
     attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"</br>
+If you use an **x64** Windows 10 image:
+
+<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Scripting_de-de.cab"</br>
@@ -1039,22 +994,10 @@ When you add languages to Windows, add them to Windows RE to ensure a consistent
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"</br>
 </code>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-</table>
 
+If you use an **x86** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates.
-</td>
-</tr>
-<tr>
-<td><code>
+<code>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\lp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"</br>
@@ -1064,13 +1007,8 @@ When you add languages to Windows, add them to Windows RE to ensure a consistent
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WDS-Tools_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WMI_de-de.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"
-</br>
+<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"</br>
 </code>
-</td>
-</tr>
-</table>
-
 
 1.  Verify that the language packages are part of the image:
 
@@ -1078,25 +1016,19 @@ When you add languages to Windows, add them to Windows RE to ensure a consistent
 
     where C is the drive letter of the drive that contains the image.
 
-Review the resulting list of packages and verify that the list contains the package. For example:
+    Review the resulting list of packages and verify that the list contains the package. For example:
 
-    Package Identity : Microsoft-Windows-WinPE-Rejuv_de-de ... de-de~10.0.9926.0 State : Installed
+        Package Identity : Microsoft-Windows-WinPE-Rejuv_de-de ... de-de~10.0.9926.0 State : Installed
 
 #### [Optional] Add ja-jp language packs
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
-Complete this section only if you added ja-jp language packs from the optional section "Adding language with additional Fonts."
+Complete this section only if you added ja-jp language packs from the optional section [Add a language with additional fonts](#add-a-language-with-additional-fonts).
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>*OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates*
-</td>
-</tr>
-<tr>
-<td><code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\lp.cab"</br>
+<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\lp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"</br>
@@ -1107,20 +1039,10 @@ Complete this section only if you added ja-jp language packs from the optional s
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"</br>
 </code>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-</table>
 
-<table>
-<tr>
-<td>*OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates*</td>
-</tr>
-<tr>
-<td><code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\lp.cab"</br>
+If you use an **x86** Windows 10 image:
+
+<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\lp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"</br>
@@ -1131,86 +1053,43 @@ Complete this section only if you added ja-jp language packs from the optional s
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"</br>
 <br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"</br>
 </code>
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-</table>
 
-### [Optional] Remove English language to make single language image
+### [Optional] Remove English language to make a single language image
 
-Note: For automated solution to this section please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 In Windows 10, Microsoft will only make en-US versions available. To make the image a single image after installing de-DE in the previous section, you can remove en-US from the image, making it only de-DE.
 
-OEMs will need to remove all en-US language packages from the system. Below is a sample of Windows 10 pre-installed languages to be removed.
+OEMs will need to remove all en-US language packages from the system. The following sample removes pre-installed languages from Windows 10 Professional.
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates
-</td>
-</tr>
-<tr>
-<td><code>Dism /image:"c:\mount\windows" /remove-package /packagename:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename: Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-Prerelease-Client-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384
-</code>
-</td>
-</tr>
-</table>
+    Dism /image:"c:\mount\windows" /remove-package /packagename:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename: Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384 /packagename:Microsoft-Windows-Prerelease-Client-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package~31bf3856ad364e35~amd64~~10.0.10240.16384
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates
-</td>
-</tr>
-<tr>
-<td><code>Dism /image:"c:\mount\windows" /remove-package /packagename:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-Prerelease-Client-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384
-</code>
-</td>
-</tr>
-</table>
+If you use an **x86** Windows 10 image:
 
+    Dism /image:"c:\mount\windows" /remove-package /packagename:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-Prerelease-Client-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384
 
 Troubleshoot: If an error occurs running a package, such as:
 
-Error: 0x800f0825
-
-Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again.The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. Run dism.exe remove package again on only the failing package.
+    Error: 0x800f0825
+    Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again.The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. 
+    
+Run dism.exe remove package again on only the failing package.
 
 ### [Optional] Remove additional languages from WinRE
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 If you removed any languages, they must also be removed from WinRE.
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, use 64 bit IMG/ISO for Language Packs and Language Pack updates
-</td>
-</tr>
-<tr>
-<td><code>Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-EnhancedStorage-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-Scripting-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-SecureStartup-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-SRT-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-WDS-Tools-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-WMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384
-</code>
-</td>
-</tr>
-</table>
+    Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-EnhancedStorage-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-Scripting-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-SecureStartup-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-SRT-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-WDS-Tools-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384 /packagename:WinPE-WMI-Package~31bf3856ad364e35~amd64~en-US~10.0.10240.16384
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, use 32 bit IMG/ISO for Language Packs and Language Pack updates
-</td>
-</tr>
-<tr>
-<td><code>Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-EnhancedStorage-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-HTA-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Rejuv-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Scripting-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SecureStartup-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SRT-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-StorageWMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WDS-Tools-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384
-</code>
-</td>
-</tr>
-</table>
+If you use an **x86** Windows 10 image:
+
+    Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-EnhancedStorage-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-HTA-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Rejuv-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Scripting-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SecureStartup-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SRT-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-StorageWMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WDS-Tools-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384
 
 ### Verify language components are part of the image
 
@@ -1218,33 +1097,33 @@ Use Dism to verify language components are part of the image.
 
     Dism /Get-Capabilities /Image:"C:\mount\windows"
 
-### Setting Language Regional Settings
+### Setting language regional settings
 
-Note: For automated solution to this section please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
-1.  Use Dism to set the default language of the image.
+1.  Use Dism to set the default language of the image:
 
         Dism /Image:C:\mount\windows /Set-AllIntl:de-DE
 
         Dism /Image:C:\mount\winre /Set-AllIntl:de-DE
 
-1.  Verify your changes
+1.  Verify your changes:
 
         Dism /Image:C:\mount\windows /Get-Intl
 
-1.  Set the timezone for the region of the default language applied
+1.  Set the timezone for the region of the default language applied:
 
         Dism /Image:C:\mount\windows /set-timezone:"W. Europe Standard Time"
 
-### Add update packages (KB packages) to the image:
+### Add update packages (KB packages) to the image
 
-Note: For automated solution to this section please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
-Use Dism to apply latest GDR and any pre-requisite KB. Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package. For example, this guide will use the latest GDR 2015.11 D. KB3118754. 
+Use Dism to apply the latest GDR and any prerequisite KBs. Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package. For example, this guide will use the latest GDR 2015.11 D. KB3118754. 
 
 **Important: Do not install a language pack after an update. If an update (such as a hotfix, or general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied, and the update will need to be reinstalled. Always install language packs before installing updates.**
 
-Note: The following example shows how to extract KB from the OPK download from SOC.
+The following example shows how to extract KBs from the OPK download from SOC.
 
 1.  Copy both architecture folders for KB3081452 to **USB-B**\Updates.
 
@@ -1260,69 +1139,37 @@ Note: The following example shows how to extract KB from the OPK download from S
 
 #### Apply GDR 2015.11 D. KB3118754
 
-***x64/x86 Distinction***
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, add x64 version of the update packages
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x64\NEU\Windows10.0-KB3118754-x64.msu"
-</code>
-</td>
-</tr>
-</table>
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x64\NEU\Windows10.0-KB3118754-x64.msu"      
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, add x86 version of the update packages
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
-</code>
-</td>
-</tr>
-</table>
+If you use an **x86** Windows 10 image:
 
-Note: Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of Windows for a device can be found in the following registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
+
+Note: Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of Windows for a device can be found in the following registry key: 
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
 
 ### Add Update packages to WinRE
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
-Important: KB3118754 must also be applied to WinRE.wim to fix a known issue: Recovery fails during Reset/Refresh when a Scanstate package (USMT.ppkg) contains an application which has a path with a leading space. Example: c :\Program Files\ Contoso\RunMe.exe**
+Important: KB3118754 must also be applied to WinRE.wim to fix a known issue: Recovery fails during Reset/Refresh when a Scanstate package (USMT.ppkg) contains an application which has a path with a leading space. Example: c :\Program Files\ Contoso\RunMe.exe.
 
 Apply GDR 2015.11 D. KB3118754
 
-<table>
-<tr>
-<td>OEMs using **x64 Windows 10 image**, add x64 version of the update packages
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\KB3118754\x64\NEU\Windows10.0-KB3118754-x64.msu"
-</code>
-</td>
-</tr>
-</table>
+If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using **x86 Windows 10 image**, add x86 version of the update packages (Example Only)
-</td>
-</tr>
-<tr>
-<td><code>Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
-</code>
-</td>
-</tr>
-</table>
+    Dism /Add-Package /Image:C:\mount\winre /PackagePath:"E:\updates\KB3118754\x64\NEU\Windows10.0-KB3118754-x64.msu"
+
+If you use an **x86** Windows 10 image:
+
+    Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
 
 ### Reinstall inbox apps
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 When you add language packs, you should reinstall the inbox apps by removing each app and then installing it again by using DISM. The following procedure shows you how to reinstall the Get Started inbox app, but the steps will work for all apps by substituting the appropriate package.
 
@@ -1394,17 +1241,17 @@ Install the apps
 
 [XboxApp_9.9.30030.0]
 
-**Important: The appx bundles must install the matching dependency packages or app will fail to work after OOBE. The correct dependency packages are defined in the \*.provxml files in the app folders. The following example has the correct dependency packages for each app.**
+Important: The appx bundles must install the matching dependency packages or apps will fail to work after OOBE. The correct dependency packages are defined in the \*.provxml files in the app folders. The following example has the correct dependency packages for each app:
 
     dism /image:"c:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d.appxbundle" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Framework.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Runtime.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_ARM__8wekyb3d8bbwe.appx" /licensepath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d_License1.xml"
 
 ### Adding Windows Universal Office Mobile
 
-**Obtain: X20-88613 Office Mobile MultiLang v1.2 OPK (This is the latest update when this guide is published. Please verify on** [**www.microsoftoem.com**](http://www.microsoftoem.com) > SOC (Software Order Center) if a newer version of update packages exits.
+Obtain X20-88613 Office Mobile MultiLang v1.2 OPK (This is the latest update when this guide is published. Please verify on [www.microsoftoem.com](http://www.microsoftoem.com) > SOC (Software Order Center) if a newer version of update packages exits.
 
-Please  refer to [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx) for more details.
+Please refer to [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx) for more details.
 
-Note: Microsoft Office Single image installation is covered in the section "Preload Microsoft Office Single Image v15.4" for devices with screen size above 10.1".
+Note: Microsoft Office Single image installation is covered in the section [Preload Microsoft Office Single Image v15.4](#preload-microsoft-office-single-image-v15.4) for devices with screen size above 10.1".
 
 Pre-install Office single image (either with or with out perpetual or subscription license) or Office Mobile.  Office Mobile must be used on devices with screen size of 10.1" and below, and Office single image must be used on devices with screen sizes above 10.1". For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. OEMs must have only one Office image on the Customer System at a time.
 
@@ -1418,7 +1265,7 @@ Pre-install Office single image (either with or with out perpetual or subscripti
 
         dism /image:"c:\mount\windows" /add-provisionedappxpackage /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592_License1.xml"
 
-### Modify the Start Layout
+### Modify the Start layout
 
 The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, classic Windows applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists to the user, including important or frequently accessed system locations and recently installed apps.
 
@@ -1448,7 +1295,7 @@ To take advantage of all these new features and have the most robust and complet
 
         Copy E:\StartLayout\layoutmodification.xml c:\mount\windows\users\default\AppData\Local\Microsoft\Windows\Shell\
 
-        Where E: is the drive letter of **USB-B**.
+    Where E: is the drive letter of **USB-B**.
 
 1.  If you pinned tiles that require .url or .lnk files, add the files to the following legacy Start Menu directories :
 
@@ -1456,30 +1303,31 @@ To take advantage of all these new features and have the most robust and complet
 
     2.  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\
 
-            Copy e:\StartLayout\Bing.url “C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
+            Copy e:\StartLayout\Bing.url "C:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs\"
 
             copy e:\StartLayout\Paint.lnk "c:\mount\windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
 
-            Copy E:\StartLayout\Bing.url “c:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
+            Copy E:\StartLayout\Bing.url "c:\mount\windows\users\All Users\Microsoft\Windows\Start Menu\Programs"
 
-            Copy E:\StartLayout\Paint.lnk “C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
+            Copy E:\StartLayout\Paint.lnk "C:\Mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
 
-**Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.**
+Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-### Adding OEM Specific License
+### Add an OEM-specific license
 
-1.  The OEM may add their OEM license terms to the License Terms screen in the first experience. 
+1.  An OEM may add its OEM license terms to the License Terms screen in the first experience. 
 
-    **NOTE:** If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .**rtf** file, saved as .**rtf** format**.**
+    Note: If the license terms are included, the OEM must include a version of the license terms in each language that is preinstalled onto the PC. A license term text must be an .**rtf** file, saved as .**rtf** format.
 
 1.  Create folders under the following directory: 
-    C:\mount\windows\Windows\System32\oobe\info\default\.
+
+    C:\mount\windows\Windows\System32\oobe\info\default\
 
 2.  Name each folder under C:\mount\windows\Windows\System32\oobe\info\default\ directory as the **Language Decimal Identifier** corresponding the language. Do this step for each language pack added to the Windows image.
 
     For the complete list of language decimal identifiers of corresponding languages, see [Available Language Packs for Windows](https://msdn.microsoft.com/library/windows/hardware/dn898488.aspx).
 
-    For example: If en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) under C:\mount\windows\Windows\System32\oobe\info\default\ directory. Then add a folder named “1031” (representing de-de language) under the same C:\mount\windows\Windows\System32\oobe\info\default\ directory.
+    For example, if en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) under C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (representing de-de language) under the same directory.
 
         MD c:\mount\windows\windows\system32\oobe\info\default\1033
 
@@ -1487,21 +1335,27 @@ To take advantage of all these new features and have the most robust and complet
 
 1.  Create license term document for each language specified. Move each license term document to the corresponding language folder.
 
-    For example: Move the agreement.rtf file **in English** to C:\mount\windows\Windows\System32\oobe\info\default\**1033**\ directory and move the agreement.rtf file **in German** to C:\mount\windows\Windows\System32\oobe\info\default\**1031**\ directory.
+    For example, move the agreement.rtf file **in English** to:
+    
+    C:\mount\windows\Windows\System32\oobe\info\default\\**1033**\  
+    
+    And move the agreement.rtf file **in German** to: 
+    
+    C:\mount\windows\Windows\System32\oobe\info\default\\**1031**\ 
 
         Copy E:\resources\agreement.rtf c:\mount\windows\windows\system32\oobe\info\default\1033
 
-1.  Create **oobe.xml** file to specify the agreement.rtf file path. In the following image, you can see a sample oobe.xml which is located in **USB-B**\ConfigSet\oobe.xml destination.
+1.  Create an **oobe.xml** file to specify the agreement.rtf file path. In the following image, you can see a sample oobe.xml which is located in **USB-B**\ConfigSet\oobe.xml destination.
 
     ![Sample OOBE](images\sample-oobe.png)
 
 2.  Copy **oobe.xml file** to each language folder.
 
-    For example: Copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\**1033**\ directory where the agreement.rtf in English is valid and to C:\mount\windows\Windows\System32\oobe\info\default\**1031**\ directory where the agreement.rtf in German is valid.
+    For example, copy oobe.xml to C:\mount\windows\Windows\System32\oobe\info\default\\**1033**\ where the agreement.rtf in English is valid and to C:\mount\windows\Windows\System32\oobe\info\default\\**1031**\ directory where the agreement.rtf in German is valid.
 
         Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
 
-1.  Finally each language folder must contain an **oobe.xml** file and an agreement.rtf file in that corresponding language.
+1.  Finally, each language folder must contain an **oobe.xml** file and an agreement.rtf file in that corresponding language.
 
     ![Agreement and OOBE files](images\agreement-and-oobe-files.png)
     
@@ -1517,19 +1371,19 @@ This section provides technical deployment instructions as an aid to meeting Con
 
 If another Internet browser is installed, or IE/Microsoft Edge is otherwise not set as the default Internet browser, use the Default Image Servicing and Management (DISM) tool to reset IE/Microsoft Edge as the default. For more information about using DISM, see [DISM Default Application Association Servicing Command-Line Options](http://technet.microsoft.com/library/hh824855.aspx).
 
-    -   Ensure no toolbars have been added to IE.
+-   Ensure no toolbars have been added to IE.
 
-    -   Ensure no toolbars or add-ons have been added in Microsoft Edge.
+-   Ensure no toolbars or add-ons have been added in Microsoft Edge.
 
-    -   Ensure that any Browser Helper Objects (BHOs), with the exception of ActiveX controls and Browser Extensions that have been added to IE, are disabled and may only be enabled by end users. To achieve this, you must ensure that the InstalledBHOList and InstalledToolbarList unattend settings do not contain any AddOnGuid items.
+-   Ensure that any Browser Helper Objects (BHOs), with the exception of ActiveX controls and Browser Extensions that have been added to IE, are disabled and may only be enabled by end users. To achieve this, you must ensure that the InstalledBHOList and InstalledToolbarList unattend settings do not contain any AddOnGuid items.
 
 #### Configure default search and default home page
 
 Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partner code NMTS.
 
-**Note: The only value that needs to be set in the Edge browser is the PartnerSearchCode, which is a string that will be concatenated to the Bing search URL (which is fixed in Edge). The PartnerSearchCode is the only thing that is configurable in Edge.**
+Note: The only value that needs to be set in the Edge browser is the PartnerSearchCode, which is a string that will be concatenated to the Bing search URL (which is fixed in Edge). The PartnerSearchCode is the only thing that is configurable in Edge.
 
-**The registry key is located here: HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Configuration and all that needs to be done is create a key called “PartnerSearchCode” and place the OEM Edge partner code there.**
+The registry key is located here: HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Configuration and all that needs to be done is create a key called “PartnerSearchCode” and place the OEM Edge partner code there.
 
     <settings pass="generalize">
         <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1552,15 +1406,15 @@ Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partne
 
     <table>
     <tr>
-    <td>**For OA 3.0 systems: **
+    <td>For OA 3.0 systems: 
     </td>
-    <td><code>Copy /y E:\AnswerFiles\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+    <td><code>Copy /y E:\AnswerFiles\\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
     </td>
     </tr>
     <tr>
-    <td>**For non-OA 3.0 systems: **
+    <td>For non-OA 3.0 systems: 
     </td>
-    <td><code>Copy /y E:\AnswerFiles\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+    <td><code>Copy /y E:\AnswerFiles\\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
     </td>
     </tr>
     </table>
@@ -1605,7 +1459,7 @@ Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partne
 
         Dir "C:\mount\windows\Windows\System32\Recovery\winre.wim"
 
-    Follow the below partition layout size chart to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
+    Use the following partition layout size guidance to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
     Please reference [Disk Partition rules](https://msdn.microsoft.com/library/windows/hardware/dn898510.aspx#DiskPartitionRules) for more information.
 
@@ -1658,9 +1512,9 @@ In Windows 10 Version 1511, we are changing our recommendation to have the WinRE
 
 E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
 
-**Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.**
+There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-**Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx)**.
+Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
 
 After the computer boots to the OOBE screen, press this key combination to boot into Audit mode:
 
@@ -1674,7 +1528,7 @@ The current preload method of Office 2013 is different from other desktop apps. 
 
 -   Pin Office tiles to the Start Menu in such slots that are visible without scrolling, regardless of OEM Systems’ Start Menu layout, unless the Office Tiles or Office tile, as applicable, are pinned as part of the Microsoft Group of Start Menu tiles.
 
-**Obtain: Office Single  Image  OPK for language of your region. For this document, we will use en-us OPK for sample OPK X19-96440 Office 2013 Single Image v15.4 english OPK.  This is the latest  Office OPK  when this guide is published. Please verify on SOC (**[**https://www.microsoftoem.com**](https://www.microsoftoem.com) **  &gt; Software  Order Center )  if a newer version of  Office Single Image OPK  exists.**
+Obtain: Office Single Image  OPK for language of your region. For this document, we will use en-us OPK for sample OPK X19-96440 Office 2013 Single Image v15.4 english OPK.  This is the latest Office OPK when this guide is published. Please verify on SOC ([https://www.microsoftoem.com](https://www.microsoftoem.com) &gt; Software  Order Center) if a newer version of Office Single Image OPK exists.
 
 Note: If Office Tiles are automatically pinned as part of the Microsoft Group of Start Menu tiles, skip the entire following section about tile replacement.
 
@@ -1755,7 +1609,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
     -   Office 2013 32 64-bit Single Image v15.4   **French** OPK
 
-    **Note: When different languages of Office get installed consecutively, each additional Office having the different language will occupy ~300MB of disk space instead of ~1GB. For example, when Office15 English and Office15 French get installed, total disk space required will be ~1.3GB instead of ~2GB.**
+    Note: When different languages of Office get installed consecutively, each additional Office having the different language will occupy ~300MB of disk space instead of ~1GB. For example, when Office15 English and Office15 French get installed, total disk space required will be ~1.3GB instead of ~2GB.
 
 1.  Open an elevated command prompt (with administrative permissions).
 
@@ -1767,7 +1621,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
     
     For example: Cd C:\&lt;OfficeSingleImagev15.4 InstallationDirectory&gt;
 
-    **Note: The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. The 32-bit version of Office 2013 may be preloaded on computers that run either 32-bit or 64-bit operating systems. The 64-bit version of Office 2013 can be preloaded only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload *only the 32-bit version* of Office Single Image on both 32-bit and 64-bit computers.**
+    Note: The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. The 32-bit version of Office 2013 may be preloaded on computers that run either 32-bit or 64-bit operating systems. The 64-bit version of Office 2013 can be preloaded only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload *only the 32-bit version* of Office Single Image on both 32-bit and 64-bit computers.
 
 1.  Start installation by running office installation script.
 
@@ -2016,13 +1870,13 @@ Copy unattend.xml files for restoring settings
 <tr>
 <td>**For OA 3.0 systems: **
 </td>
-<td><code>Copy /y E:\AnswerFiles\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+<td><code>Copy /y E:\AnswerFiles\\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
 </td>
 </tr>
 <tr>
 <td>**For non-OA 3.0 systems: **
 </td>
-<td><code>Copy /y E:\AnswerFiles\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+<td><code>Copy /y E:\AnswerFiles\\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
 </td>
 </tr>
 </table>
@@ -2272,7 +2126,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
         md C:\my_distribution                                                    
                                                                                 
-        xcopy /s E:\myWindows\\*.\* C:\my_distribution\                        
+        xcopy /s E:\myWindows\*.\* C:\my_distribution\                        
                                                                                 
         md C:\mount\boot                                                          
                                                                                 
@@ -2336,7 +2190,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 2.  Run **oscdimg** tool with following parameters. For example:
 
-        oscdimg -m -o -u2 -udfver102 -bootdata:2#p0,e,bc:\my_distribution\boot\etfsboot.com#pEF,e,bc:\ my_distribution\efi\microsoft\boot\efisys.bin c:\my_distribution c:\myISOname.iso
+        oscdimg -m -o -u2 -udfver102 -bootdata:2#p0,e,bc:\my_distribution\boot\etfsboot.com#pEF,e,bc:\my_distribution\efi\microsoft\boot\efisys.bin c:\my_distribution c:\myISOname.iso
 
        ![Oscdimg.exe](images\oscdimg.png)
 
@@ -2350,11 +2204,9 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 -   The deployment steps in this whitepaper are highly dependant on the sample configuration files included in **USB-B**. Therefore it is recommended to create your own **USB-B** before starting the deployment procedure. To do so please complete the steps in this section.
 
--   Contents of the configuration files included in **USB-B** are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this whitepaper.
+-   Contents of the configuration files included in **USB-B** are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
 
--   To obtain this sample **USB-B** content please proceed to next steps
-
-### Extract USB-B.zip Content 
+-   To obtain this sample **USB-B** content, see the Microsoft Download Center. 
 
 Format your desired USB Drive and name it as follows:
 

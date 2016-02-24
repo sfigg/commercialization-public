@@ -8,3 +8,4 @@ DownloadFile($entryPointSource) ($entryPointDestination) ($true)
 
 $mdprojName = ".openpublishing.build"
 & "$workingDirectory\mdproj.builder.ps1"
+exit $LASTEXITCODE

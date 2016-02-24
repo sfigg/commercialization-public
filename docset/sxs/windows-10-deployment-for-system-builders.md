@@ -249,7 +249,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
 2.  After WinPE has been booted connect USB-B.
 
-    **Troubleshoot**: IF booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so step in BIOS menu and adjust boot sequence as choosing the first option as USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image none of the Windows passes must be completed. To generalize the image again, hit CTRL+SHIFT F3 to skip OOBE and boot in Audit mode. In Audit mode Sysprep the system by OOBE Reboot and Generalize switches. After the system reboots please make sure to boot from USB-A to WinPE.
+    Troubleshoot: If booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so, open the BIOS menu and adjust the boot sequence so that the first option is USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To generalize the image again, press CTRL+SHIFT+F3 to skip OOBE and boot in Audit mode. In Audit mode, Sysprep the system by using OOBE Reboot and Generalize switches. After the system reboots, make sure to boot from USB-A to WinPE.
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows installation volume labelled “Windows” (For example: C:\). Finally type *exit* to quit Diskpart
 
@@ -550,11 +550,11 @@ The System Builder may want to make additional customizations through an unatten
 
     E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
 
-    **Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is Compact OS deployment.**
+    Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a CompactOS deployment.
 
 1.  Note: Only use CompactOS on Flash drive based devices because CompactOS performance depends on the storage device capabilities. CompactOS is NOT recommend on rotational devices. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
 
-    Please remove USB-A and USB-B then type:
+    Remove USB-A and USB-B, and then type:
 
         Exit
 
@@ -744,7 +744,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
     For more information about the first boot time requirements, see [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008).
 
-1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press CTRL+SHIFT+F3 in order to pass OOBE and boot in audit mode.
+1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing-), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press CTRL+SHIFT+F3 in order to pass OOBE and boot in audit mode.
 
 2.  If you want to apply additional steps, such as executing OEM diagnostics tests and so on, apply them here.
 
@@ -766,7 +766,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 ## Creating my USB-B
 ---------------------------------------------------------------------------------------------------------------
 
--   The deployment steps in this guide depend on the sample configuration files included in USB-B. Therefore, it is recommended to create your own USB-B before starting the deployment process. To do so, please complete the [Create My USB-B](#create-my-usb-b).
+-   The deployment steps in this guide depend on the sample configuration files included in USB-B. Therefore, it is recommended to create your own USB-B before starting the deployment process. 
 
 -   Contents of the configuration files included in USB-B are a sample that you may change according to your branding and manufacturing choices. However, the file names and hierarchy of the folders and files must be the same as demonstrated in this guide in order to align your deployment procedure with this guide.
 
