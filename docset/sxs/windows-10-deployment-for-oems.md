@@ -1475,7 +1475,122 @@ After the computer boots to the OOBE screen, press this key combination to boot 
 
     Ctrl+Shift+F3
 
-## Preload Microsoft Office Single Image v15.4
+## Preload Microsoft Office
+
+This section provides guidance for pre-loading Office 2016 and Office v15.4.
+
+### Preload Microsoft Office 2016
+
+This guide provides information for licensed original equipment manufacturers (OEMs) about how to use the Office Deployment Tool to preinstall Office 2016 on to devices that are running the Windows operating system.
+
+Note: This guide doesn’t cover the PIPC scenarios for OEMs in Japan. 
+
+#### Prepare Office files on Technician PC
+
+Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment tool for OEM OPK.
+
+1.  Mount X20-92403 Office 2016 v16 Deployment Tool for OEM OPK\Software - DVD\X20-92404 SW DVD5 Office 2016 v16 Deployment Tool for OEM\x20-92404.img.
+2.	Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.
+3.	Double click e:\Officev16\officedeploymenttool.exe.
+4.	Provide folder path to extract files E:\Officev16.
+
+    Setup.exe and configuration.xml are extracted to E:\Officev16.
+
+    ![Setup and configuration.xml](images\setup-and-configuation.png)
+    
+    Obtain Office v16 in the desired language; this sample uses Engish X20-39283 Office 2016 v16 32-BIT X64 English OPK.
+    
+5. Copy the folder Office from mounted drive X20-39283 Office 2016 v16 32-BIT X64 English OPK\Software - DVD\X20-37728 SW DVD5 Office Pro 2016 32 64 English C2ROPK Pro HS HB OEM\X20-37728.img to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.
+
+    ![Office folder](images\office-folder.png)
+    
+    [Optional] If you applied a language interface pack, you may want to add the language interface pack for Office 2016 as well. The below samples will show with the Language interface pack applied.    
+
+6. Notepad E:\Officev16\ConfigureO365Home.xml
+
+7. Add language ID and verify SourcePath as in the following screenshot.
+
+    ![Language ID](images\language-id.png)
+    
+8. Close and save ConfigureO365Home.xml.
+
+9. Open an elevated command prompt as administrator.
+
+10. From E:\Officev16, type and run setup.exe /download ConfigureO365Home.xml:
+
+    CD E:\Officev16
+    Setup.exe /download ConfigureO365Home.xml
+    
+    This will download the language packs for German and Japanese.
+    
+11. Type and run echo %errorlevel% and verify return code is 0.
+
+12. Unplug USB-B from the technician computer. 
+
+#### Install Office 2016 on Reference PC
+
+1. Plug USB-B into the reference computer, which is in Audit mode.
+2.	Find the drive letter for USB-B; for this example USB-B is E:\.
+3.	Notepad ConfigureO365Home.xml.
+4.	Configure the SourcePath to point to USB-B E:\Officev16.
+
+    ![](images\configure-source-path.png)
+    
+    Note: the only Product ID that needs to be specified in the configuration.xml file is O365HomePremRetail. If the user enters a key for another product, such as for Office Home & Student 2016, then Office will automatically be configured as the product associated with that key.
+    
+5.	Close and Save ConfigureO365Home.xml.
+6.	Open a command prompt and navigate to d:\Officev16.
+7.  Type:
+
+    Setup.exe /configure ConfigureO365Home.xml
+
+#### Pin Office tiles to the Start menu
+
+You must pin the Office tiles to the Start menu, otherwise Windows will remove the Office files during OOBE boot phase.
+
+Note: You must be using at least version 10.0.10586.0 of Windows 10. The following steps don’t work with earlier versions of Windows 10.
+
+1. notepad C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml.
+2. Add <AppendOfficeSuiteChoice Choice=”Desktop2016” /> to layoutmodification as you see highlighted in the following example:
+
+    ![Layout Modification](images\layoutmodification.png)
+
+    Note: The Choice attribute is new. This allows different versions of Office to be pinned to the Start screen at the same time. For now, Desktop2016 is the only valid value. Other values will be available in the future.
+
+3. Close and save layoutmodification.xml.
+
+    Note: for recovery purposes the layoutmodification.xml will need to be copied during recovery. 
+    
+4. copy C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml c:\recovery\OEM   
+
+    Once the machine is booted to desktop after going through OOBE the start menu will have these 3 tiles appended as shown in the following diagram: 
+    
+    ![Office tiles pinned to the Start menu](images\office-tiles-pinned-to-start-menu.png)
+    
+####  Configure the Setup experience for the user   
+
+After you install Office on the device, you also need to configure the Setup experience for the user. This is the experience the user sees when they open an Office app for the first time on the device. This also is intended to ensure that Office is properly licensed and activated.
+
+|   Setup mode  | Description   |
+|---------------|---------------|
+|   OEM         | In this mode, a customer can choose to try, buy, or activate Office with an existing account, PIN, or product key. This mode doesn’t support Activation for Office (AFO) or AFO late binding. Therefore, if you choose this mode, you need to provide the customer with an Activation Card (formerly called a product key card or a Microsoft Product Identifier (MPI) card). |
+|   OEMTA       |   This mode supports the try, buy, or activate experience of the OEM mode as well as supporting AFO and AFO late binding. This mode supports Office activation through the device’s Windows product key, which means the customer wouldn’t need to enter a 5x5 product key code. |
+
+
+OEM Mode – Provide user with activation card
+1.	In command prompt go to drive letter for USB-B\Officev16
+2.	Type and run: 
+
+    oemsetup.cmd Mode=OEM
+
+OEMTA Mode – Activation is done through the device’s Windows product key.
+
+1. Type and run:
+ 
+    oemsetup.cmd Mode=OEMTA Referral=####
+
+
+### Preload Microsoft Office Single Image v15.4
 
 The current preload method of Office 2013 is different from other desktop apps. OEMs preinstall desktop apps so the apps are installed. This means that when the user launches the app, the app is already installed and automatically opens with no additional installation tasks other than EULA acceptance and/or user registration. With Office, compressed setup files are copied to the disk in addition to an out-of-box experience (OOBE) application which captures Office file associations and gives users an entry point to Try, Buy or Activate Office. Users do not have access to Word or Excel on the Start screen or in the All Apps view until they launch Office OOBE which is typically made available as a tile on the Start screen. When the user launches Office OOBE, setup of Office begins. Once Office setup is complete, the compressed setup files that are no longer necessary are removed from the disk.
 
