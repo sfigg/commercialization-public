@@ -7,7 +7,7 @@ The purpose of this guide is to document a prescriptive method for Windows 10 de
 
 # Intended Audience
 
-This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and Troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/en-us/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
+This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and Troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
 
 # About this guide
 
@@ -26,7 +26,7 @@ This guide is organized around these three hardware configurations:
 | Pen                          | No           | Yes          | No           |
 | Office (Universal)           | Yes          | Yes          | Yes          |
 | Classic Windows applications | No           | Yes          | Yes          |
-| Office 2013                  | No           | Yes          | Yes          |
+| Office 2016                  | No           | Yes          | Yes          |
 | Compact OS                   | Yes          | Yes          | No           |
 
 Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). Pay attention to sections where the image is deployed as Compact OS and using ScanState tool with Compact OS images.
@@ -306,7 +306,7 @@ If you use an **x86** Windows 10 image:
 
 For a document to help you tailor the customizations defined in your unattend.xml file, see the [Windows 10 Update OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
-Download Windows 10 Professional from [Digital Operations Center](http://www.microsoftoem.com/) Software Order Center, use Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to generate the ISO files. OEMs can download the windows kit which is applicable to them in terms of language and edition.
+Download Windows 10 Professional from [Digital Operations Center](http://www.microsoftoem.com/) Software Order Center, and use Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to generate the ISO files. OEMs can download the windows kit which is applicable to them in terms of language and edition.
 
 ### Create an answer file
 
@@ -560,7 +560,7 @@ Please refer to the Windows10_IST.ps1 Windows PowerShell script found at USB-B\W
 
 Before running the tool, set the execution policy to allow Windows PowerShell scripts to run. Open an elevated Windows PowerShell session and type:
 
-Set-ExecutionPolicy UNRESTRICTED
+    Set-ExecutionPolicy UNRESTRICTED
 
 1.  Run the script file (Windows10_IST tool) by right-clicking and selecting **Run with PowerShell**. After the tool launches, proceed with the in-tool instructions.
 
@@ -594,7 +594,7 @@ Troubleshoot: If the mounting operation fails, make sure the Windows 10 version
 
 ### Adding drivers
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
+Note: For an automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**.
 
@@ -613,7 +613,7 @@ Note: For automated solution to this section, please refer to the Imaging Servic
 
 Important: If the driver contains only the installer package and doesn’t have an .inf file, the driver in AUDIT mode may be installed by double-clicking the corresponding installer package. Some drivers may be incompatible with Sysprep tool; they will be removed after sysprep generalize even if they have been injected offline. 
 
-In these two cases, you would require to add PersistAllDeviceInstalls and DoNotCleanupNonPresentDevices (sections below) extra parameter to:
+In these cases, you need to add PersistAllDeviceInstalls and DoNotCleanupNonPresentDevices (sections below) extra parameter to UnattendSysprep.xml.
 
 <table>
 <tr>
@@ -758,7 +758,7 @@ The following table lists language pack components and any dependencies. For mor
             </td>
             <td>
                 <p>
-Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see                    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn898488(v=vs.85).aspx">Available Language Packs for Windows</a>.
+Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see                    <a href="https://msdn.microsoft.com/library/windows/hardware/dn898488.aspx">Available Language Packs for Windows</a>.
                 </p>
             </td>
             <td>
@@ -819,7 +819,7 @@ Requires a specific fully-localized or partially-localized language pack. Exampl
                     Fonts.
                 </p>
                 <p>
-Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see                    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt171094(v=vs.85).aspx">Features On Demand V2 (Capabilities)</a>.
+Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see                    <a href="https://msdn.microsoft.com/library/windows/hardware/mt171094.aspx">Features On Demand V2 (Capabilities)</a>.
                 </p>
             </td>
         </tr>
@@ -965,11 +965,11 @@ As part of the language pack re-factoring for Windows 10, some languages with Fo
 
 If you use an **x64** Windows 10 image:
 
-<code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab</code>
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
 
 If you use an **x86** Windows 10 image:
 
-<code>Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" <b>/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"</b> /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"</code>
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
 
 ### Add languages to Windows RE
 
@@ -983,32 +983,29 @@ Troubleshoot: If winre.wim cannot be seen under the specified directory, use the
 
 If you use an **x64** Windows 10 image:
 
-<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Scripting_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-SecureStartup_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-SRT_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-WDS-Tools_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-WMI_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"</br>
-</code>
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\lp.cab"    
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-Scripting_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-SecureStartup_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-SRT_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-WDS-Tools_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-WMI_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"
 
 If you use an **x86** Windows 10 image:
 
-<code>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\lp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-Scripting_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-SecureStartup_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-SRT_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WDS-Tools_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WMI_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"</br>
-</code>
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\lp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-Rejuv_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-EnhancedStorage_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-Scripting_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-SecureStartup_de-de.cab"   
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-SRT_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WDS-Tools_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-WMI_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-StorageWMI_de-de.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\de-de\WinPE-HTA_de-de.cab"
 
 1.  Verify that the language packages are part of the image:
 
@@ -1028,31 +1025,29 @@ Complete this section only if you added ja-jp language packs from the optional s
 
 If you use an **x64** Windows 10 image:
 
-<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\lp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-SecureStartup_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-SRT_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-WDS-Tools_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-WMI_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"</br>
-</code>
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\lp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-SecureStartup_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-SRT_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-WDS-Tools_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-WMI_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"
 
 If you use an **x86** Windows 10 image:
 
-<code><br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\lp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-SecureStartup_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-SRT_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-WDS-Tools_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-WMI_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"</br>
-<br>Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"</br>
-</code>
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\lp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Rejuv_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-Scripting_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-SecureStartup_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-SRT_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-WDS-Tools_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-WMI_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"
+    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"
 
 ### [Optional] Remove English language to make a single language image
 
@@ -1359,46 +1354,6 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
     ![Agreement and OOBE files](images\agreement-and-oobe-files.png)
     
-### Jumpstart 2016 / Device Configuration Requirements in Local OEM Incentive Program Members
-
-Note: This section is applicable to OEMs who have configured settings for Jumpstart Program and “Configuration requirements 2016”  for Specific Configuration discounted Windows SKUs.
-
-This section provides technical deployment instructions as an aid to meeting Configuration Requirements in Jumpstart Program 2016, Device Configuration Requirements in Local OEM Incentive Program, and Device Configuration Discount requirements.  Please refer to the respective program documents for the full list of requirements.
-
-[Configuration Deployment guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-OST2016ConfDeplyGdeRC2-Named.aspx): ​This document provides technical deployment instructions as an aid to meeting Jumpstart (JS) Program 2016 eligibility requirements.
-
-[Jumpstart check utility 2016](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/jumpstart/Pages/DP-JmpStrtImgChk2016Util_Named.aspx):  The Jumpstart 2016 Image Check utility (OEMIPIC.PS1) checks the settings of an installed and booted operating system image to help Jumpstart OEMs assess whether their system images meet Jumpstart configuration requirements.
-
-If another Internet browser is installed, or IE/Microsoft Edge is otherwise not set as the default Internet browser, use the Default Image Servicing and Management (DISM) tool to reset IE/Microsoft Edge as the default. For more information about using DISM, see [DISM Default Application Association Servicing Command-Line Options](http://technet.microsoft.com/library/hh824855.aspx).
-
--   Ensure no toolbars have been added to IE.
-
--   Ensure no toolbars or add-ons have been added in Microsoft Edge.
-
--   Ensure that any Browser Helper Objects (BHOs), with the exception of ActiveX controls and Browser Extensions that have been added to IE, are disabled and may only be enabled by end users. To achieve this, you must ensure that the InstalledBHOList and InstalledToolbarList unattend settings do not contain any AddOnGuid items.
-
-#### Configure default search and default home page
-
-Replace the &lt;PartnerSearchCode&gt; in unattend.xml with the named Edge partner code NMTS.
-
-Note: The only value that needs to be set in the Edge browser is the PartnerSearchCode, which is a string that will be concatenated to the Bing search URL (which is fixed in Edge). The PartnerSearchCode is the only thing that is configurable in Edge.
-
-The registry key is located here: HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Configuration and all that needs to be done is create a key called “PartnerSearchCode” and place the OEM Edge partner code there.
-
-    <settings pass="generalize">
-        <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <SearchScopes>
-        <Scope wcm:action="add">
-    <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
-         <FaviconURL>http://www.bing.com/favicon.ico</FaviconURL>
-         <ScopeKey>Bing</ScopeKey>
-         <ScopeDefault>true</ScopeDefault>
-         <ScopeDisplayName>Bing</ScopeDisplayName>
-         
-    <ScopeURL>http://www.bing.com/search?q={searchTerms}&amp;form=&PRNAM1&amp;src=PRNAM1&amp;pc=NMTE</ScopeURL>
-        </Scope>
-       </SearchScopes>
-       <Home_Page>http://oem15.msn.com/?pc=NMTE</Home_Page>      
     
 ### Modifying Answer File
 
@@ -1488,7 +1443,7 @@ In this section, the device is prepared for deployment by booting into WinPE, cr
 
 ### Boot to WinPE
 
-1.  On the technician computer, locate the following files in **USB-B**/Deployment destination. Please see “***Creating My USB-B***” section to create and place the files in the correct paths. Skip this step if it was done previously.
+1.  On the technician computer, locate the following files in **USB-B**/Deployment destination. Please see [Creating My USB-B](#creating-my-usb-b)) to create and place the files in the correct paths. Skip this step if it was done previously.
 
 2.  Connect the **USB-A** drive and boot the reference computer.
 
@@ -1990,30 +1945,6 @@ Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will b
 
 ![App promotions](images\app-promotions.png)
 
-### Jumpstart 2016 / Device Configuration Requirements in Local OEM Incentive Program Members
-
-**Note: This section is applicable to OEMs who have configured settings for Jumpstart Program and “Configuration requirements 2016”  for Specific  Configuration discounted  Windows SKUs**
-
-This section provides technical verification instructions as an aid to meeting Configuration Requirements in Jumpstart Program 2016, Device Configuration Requirements in Local OEM Incentive Program, and Device Configuration Discount requirements.  Please refer to the respective program documents for the full list of requirements.
-
-[Configuration Deployment guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-OST2016ConfDeplyGdeRC2-Named.aspx): ​This document provides technical deployment instructions as an aid to meeting Jumpstart (JS) Program 2016 eligibility requirements
-
-[Jumpstart check utility 2016](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/jumpstart/Pages/DP-JmpStrtImgChk2016Util_Named.aspx) :  The Jumpstart 2016 Image Check utility (OEMIPIC.PS1) checks the settings of an installed and booted operating system image to help Jumpstart OEMs assess whether their system images meet Jumpstart configuration requirements
-
-1.  Download files from [Jumpstart check utility 2016](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/jumpstart/Pages/DP-JmpStrtImgChk2016Util_Named.aspx) into USB-B\Jumpstart2016
-
-2.  Press Windows Key + R and type Powershell.
-
-3.  Set the execution policy to unrestricted. Type:
-
-        Set-ExecutionPolicy UNRESTRICTED
-
-1.  Type:
-
-        e:\jumpstart2016\oemipic.PS1
-
-2.  You will be asked to open results.txt in notepad. Check for any fails.
-
 ### Verify Recovery
 
 1.  Verify that your customizations are restored after recovery, and that they continue to function by running the **Refresh your PC** and **Reset your PC** features from the following entry points:
@@ -2202,7 +2133,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 ### Creating My USB-B
 
--   The deployment steps in this whitepaper are highly dependant on the sample configuration files included in **USB-B**. Therefore it is recommended to create your own **USB-B** before starting the deployment procedure. To do so please complete the steps in this section.
+-   The deployment steps in this guide depend on the sample configuration files included in **USB-B**. Therefore it is recommended to create your own **USB-B** before starting the deployment procedure. To do so please complete the steps in this section.
 
 -   Contents of the configuration files included in **USB-B** are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
 
