@@ -1534,7 +1534,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 3.	Notepad ConfigureO365Home.xml.
 4.	Configure the SourcePath to point to USB-B E:\Officev16.
 
-    ![](images\configure-source-path.png)
+    ![Configure the source path](images\configure-source-path.png)
     
     Note: the only Product ID that needs to be specified in the configuration.xml file is O365HomePremRetail. If the user enters a key for another product, such as for Office Home & Student 2016, then Office will automatically be configured as the product associated with that key.
     
@@ -1748,37 +1748,19 @@ Prepare scanstate tool to capture Classic Windows applications after they have b
 
 1.  On Technician PC, Insert USB-B.
 
-***x64/x86 Distinction***
+    If you use an **x64** Windows 10 image:
 
-<table>
-<tr>
-<td>OEMs using an **x64* Windows 10 image**, make x64 Scanstate directory
-</td>
-</tr>
-<tr>
-<td><code><br>md E:\ScanState_amd64</br>
-<br>copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" E:\ScanState_amd64</br>
-<br>copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" E:\ScanState_amd64</br>
-</code>
-</td>
-</tr>
-</table>
+        md E:\ScanState_amd64
+        copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" E:\ScanState_amd64
+        copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" E:\ScanState_amd64
+        
+    If you use an **x86** Windows 10 image:
+    
+        md E:\ScanState_x86
+        copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\x86" E:\ScanState_x86
+        copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\x86\Sources" E:\ScanState_x86
 
-<table>
-<tr>
-<td>OEMs using an **x86* Windows 10 image**, make x86 Scanstate directory
-</td>
-</tr>
-<tr>
-<td><code><br>md E:\ScanState_x86</br>
-<br>copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\x86" E:\ScanState_x86</br>
-<br>copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\x86\Sources" E:\ScanState_x86</br>
-</code>
-</td>
-</tr>
-</table>
-
-**Where E: is USB-B drive letter**
+    Where E: is the USB-B drive letter.
 
 ### Create scanstate configuration file
 
@@ -1788,37 +1770,21 @@ OEM can use a configuration file to restore and exclude registry keys and files 
 
 In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
 
-**Note: OEM may use the sample configuration file on USB-B\Recovery\recoveryimage\pbr_config.xml which covers the steps below.**
+Note: You may use the sample configuration file on USB-B\Recovery\recoveryimage\pbr_config.xml, which covers the steps below.
 
 1.  Use the ScanState tool on the **reference PC running in Audit mode**.
 
-    ***x64/x86 Distinction***
+    If you use an **x64** Windows 10 image:
     
-    <table>
-    <tr>
-    <td>OEMs using **x64 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code><br>MD c:\Recovery\OEM</br>
-    <br>E:\ScanState_amd64\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml</br>
-    </code>
-    </td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-    <td>OEMs using **x86 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code><br>MD c:\Recovery\OEM</br>
-    <br>E:\ScanState_x86\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml</br>
-    </code>
-    </td>
-    </tr>
-    </table>
+        MD c:\Recovery\OEM
+        E:\ScanState_amd64\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml
+    
+    If you use an **x86** Windows 10 image:
+     
+        MD c:\Recovery\OEM
+        E:\ScanState_x86\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml
+    
+    
 
 1.  Open the configuration file in notepad
 
@@ -1890,34 +1856,17 @@ Use ScanState tool to capture the installed customizations into a provisioning p
 
 1.  Run scanstate to gather app and customizations.
 
-    ***x64/x86 Distinction***
+
+    If you use an **x64** Windows 10 image:
     
-    <table>
-    <tr>
-    <td>OEMs using **x64 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code><br>Mkdir c:\recovery\customizations</br>
-    <br>E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log</br>
-    </code>
-    </td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-    <td>OEMs using **x86 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code><br>Mkdir c:\recovery\customizations</br>
-    <br>E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log</br>
-    </code>
-    </td>
-    </tr>
-    </table>
-
+        Mkdir c:\recovery\customizations
+        E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    
+    If you use an **x86** Windows 10 image:
+    
+        Mkdir c:\recovery\customizations
+        E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    
     *Where E: is the drive letter of **USB-B***
 
 ### Create Extesibility scripts to restore additional settings
@@ -1938,13 +1887,13 @@ Copy unattend.xml files for restoring settings
 
 <table>
 <tr>
-<td>**For OA 3.0 systems: **
+<td>For OA 3.0 systems: 
 </td>
 <td><code>Copy /y E:\AnswerFiles\\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
 </td>
 </tr>
 <tr>
-<td>**For non-OA 3.0 systems: **
+<td>For non-OA 3.0 systems: 
 </td>
 <td><code>Copy /y E:\AnswerFiles\\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
 </td>
@@ -1968,13 +1917,13 @@ During the deployment the winre.wim file is moved. Before capturing the final im
         C:\Windows\System32\Sysprep\sysprep /unattend:c:\recovery\oem\Unattend.xml /generalize /oobe /shutdown
 
 
-1.  Connect “**USB-A**”and boot the Reference computer.
+1.  Connect "**USB-A**" and boot the Reference computer.
 
-2.  After WinPE has been booted connect **USB-B**
+2.  After WinPE has been booted, connect **USB-B**.
 
-    **Troubleshoot: The reference system was shutdown. While turning on, if the system continues to boot from Internal HDD, Windows will enter the specialize pass and then the OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To fix this, we need to generalize the image again, and at the OOBE screen, press &lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts and boots in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as explained previously. After the system reboots, make sure to boot from USB-A to WinPE. **
+    Troubleshoot: The reference system was shutdown. While turning on, if the system continues to boot from Internal HDD, Windows will enter the specialize pass and then the OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To fix this, we need to generalize the image again, and at the OOBE screen, press &lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts and boots in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as explained previously. After the system reboots, make sure to boot from USB-A to WinPE. 
 
-    **If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.**
+    If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
 1.  Identify Windows Partition Drive letter.
 
@@ -2014,11 +1963,11 @@ After the manufacturing image is ready, choose to reduce the size of the image b
 
 Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratchdir on the USB-B key for temporary files. However, you may choose any hard drive has a large amount of available space to create a scratch directory.
 
-MD c:\scratchdir
+    MD c:\scratchdir
 
-Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\FinalImage.wim /Name:"FinalImage" /scratchdir:c:\scratchdir
+    Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\FinalImage.wim /Name:"FinalImage" /scratchdir:c:\scratchdir
 
-RD c:\scratchdir
+    RD c:\scratchdir
 
 ### Deploy the final image for verification
 
@@ -2114,29 +2063,13 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
         
 1.  Create the Windows PE folder structure. Run Deployment and Imaging Tool Environment in elevated permissions and type in:
 
-    ***x64/x86 Distinction***
+    If you use an **x64** Windows 10 image:
     
-    <table>
-    <tr>
-    <td>OEMs using **x64 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code>copype amd64 C:\resetmedia</code>
-    </td>
-    </tr>
-    </table>
-
-    <table>
-    <tr>
-    <td>OEMs using **x86 Windows 10 image**
-    </td>
-    </tr>
-    <tr>
-    <td><code>copype x86 C:\resetmedia</code>
-    </td>
-    </tr>
-    </table>
+        copype amd64 C:\resetmedia
+    
+    If you use an **x86** Windows 10 image:
+    
+        copype x86 C:\resetmedia
     
 1.  Replace the default Windows PE boot image (Boot.wim) with the Windows RE image of the mounted manufacturing image.
 
@@ -2162,7 +2095,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
     ![Recovery screen](images\recovery-screen.png)
 
-**REFERENCE**: Please see the [MSDN document](https://msdn.microsoft.com/library/windows/hardware/dn946570.aspx) about creating recovery image
+For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](https://msdn.microsoft.com/library/windows/hardware/dn946570.aspx).
 
 ### Option 2: Create Recovery Media from Base Windows 10 OPK
 
