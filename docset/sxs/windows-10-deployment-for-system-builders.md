@@ -143,7 +143,7 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
     ![Run SIM](images/RunSIM.png)
 
-1.  Navigate to *File &gt; Select Windows Image*. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
+1.  Navigate to **File** &gt; **Select Windows Image**. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
 
     Troubleshoot: Catalog creation may fail due to several reasons. Please make sure install.wim has read/write permissions. If you continue getting error, make sure correct architecture (x86 or x64) Windows 10 is installed on technician computer. If you are creating catalog for x64 Windows 10 image, you are required to use x64 Windows 10 installed on x64 Windows 10 computer. Install.wim image and Windows 10 ADK versions must be the same.
 
@@ -786,148 +786,17 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 
 ## What you will need and where to get it
 
-Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the whitepaper such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
+Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
-<table border="0" cellspacing="0" cellpadding="0">
-    <tbody>
-        <tr>
-            <td width="245" valign="top">
-                <p align="center">
-                    <strong>RESOURCE/KIT</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p align="center">
-                    <strong>AVAILABLE AT</strong>
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p align="center">
-                    <strong>RELEATED SECTION</strong>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Windows 10 ADK download URL</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-                    <a href="http://www.microsoft.com/en-US/download/details.aspx?id=39982">http://www.microsoft.com/en-US/download/details.aspx?id=39982</a>
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Create WinPE bootable USB
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Windows 10 x64/x86 DVD Media (desired language)</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-                    Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Install Windows with basic customizations
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Windows 10 Default Product Keys</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-Default Product Keys are located at:                    <a href="https://www.microsoft.com/OEM/en/products/windows/Pages/windows-10-build.aspx#fbid=nV7H02bHHiv">OEM Partner Center</a> listed
-                    under “Default product keys” tab
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Customize the answer file
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Language interface packs</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-                    LIPs are located at:
-                    <a href="https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv">
-                        OEM Partner Center
-                    </a>
-                    listed under “LIPs” tab
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Prepare the system for recovery with Push Button Reset
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Update Packages </strong>
-                </p>
-                <p>
-                    <strong> </strong>
-                </p>
-                <p>
-                    <strong><u>List of Essential Updates by November 2015</u></strong>
-                </p>
-                <p>
-                    KB3118754
-                </p>
-                <p>
-                    <strong> </strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-Obtain update packages by downloading from <a href="http://catalog.update.microsoft.com/v7/site/Home.aspx">Microsoft Update Catalog</a>. The detailed procedure downloading update packages is mentioned in the releated section.
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Add language interface packs 
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="245" valign="top">
-                <p>
-                    <strong>Microsoft Office v15.4</strong>
-                </p>
-            </td>
-            <td width="324" valign="top">
-                <p>
-Obtain Microsoft Office v15.4 by downloading from                    <a href="http://www.microsoft.com/OEM/en/installation/downloads/Pages/office-single-image-v15-opk.aspx">OEM Partner Center</a>
-                </p>
-            </td>
-            <td width="80" valign="top">
-                <p>
-                    Preload Microsoft Office single image v15.4 OPK
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
+| Resource/Kit  |   Available at    | Related section   |
+|---------------|-------------------|-------------------|
+| Windows 10 ADK|   [http://www.microsoft.com/en-US/download/details.aspx?id=39982](http://www.microsoft.com/en-US/download/details.aspx?id=39982) | [Create WinPE bootable USB](#create-winpe-bootable-usb) |
+| Windows 10 x64/x86 DVD Media (desired language) | Obtain Windows 10 media which you will be customizing from Microsoft Authorized Distributor | [Install Windows with basic customizations](#install-windows-with-basic-customizations) |
+| Windows 10 Default Product Keys | Default Product Keys are located at [OEM Partner Center](https://www.microsoft.com/OEM/en/products/windows/Pages/windows-10-build.aspx#fbid=nV7H02bHHiv) listed under **Default product keys** tab | [Customize the answer file](customize-the-answer-file) |
+| Language interface packs | LIPs are located at [OEM Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) listed under **LIPs** tab | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-recovery-with-push-button-reset) |
+| Update Packages, List of Essential Updates by November 2015, KB 3118754 | Obtain update packages by downloading from [Microsoft Update Catalog](http://catalog.update.microsoft.com/v7/site/Home.aspx). The detailed procedure downloading update packages is mentioned in the releated section. | [Add language interface packs](#add-language-interface-packs) |
+| Microsoft Office v15.4 | Obtain Microsoft Office v15.4 by downloading from [OEM Partner Center](http://www.microsoft.com/OEM/en/installation/downloads/Pages/office-single-image-v15-opk.aspx) | [Preload Microsoft Office single image v15.4 OPK](#preload-microsoft-office-single-image-v15-4-opk) |
+
 
 # References
 

@@ -146,7 +146,7 @@ This section walks you through scripts and steps to creating a Windows 10 image.
 
 This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, go to [Creating My USB-B](#creating-my-usb-b) in the Appendix.
 
-Deployment Steps basic flow
+Deployment steps basic flow
 
 ![Deployment process](images/deployment-process.png)
 
