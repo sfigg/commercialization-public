@@ -709,9 +709,9 @@ In Windows 10 Version 1511, we are changing our recommendation to have the WinRE
 
 E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
 
-Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a CompactOS deployment.
+Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use CompactOS on high end storage devices because CompactOS performance depends on the storage device capabilities. CompactOS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
