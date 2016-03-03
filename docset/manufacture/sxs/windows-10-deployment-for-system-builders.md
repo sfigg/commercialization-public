@@ -547,7 +547,7 @@ The System Builder may want to make additional customizations through an unatten
 
 ## Update images manually by using AUDIT MODE (online servicing)
 
-**Important**: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
+Important: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
 
 1.  Windows boots in AUDIT mode and by default, user profile settings are removed during the generalization process.
 
@@ -609,11 +609,11 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
 
-    **Important: this section includes a work around for a known issue in Windows 10. OEM must apply this work around to avoid issues with the PBR process. **
+    Important: This section includes a workaround for a known issue in Windows 10. You must apply this work around to avoid issues with the PBR process. 
 
-    In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the “Installing Windows” phase repeatedly.
+    In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the **Installing Windows** phase repeatedly.
 
-    **Note: OEM may use the sample configuration file on** USB-B**\Recovery\recoveryimage\pbr_config.xml which covers the steps below.**
+    Note: You can use the sample configuration file on **USB-B**\Recovery\recoveryimage\pbr_config.xml.
 
 1.  Create Recovery package
 
