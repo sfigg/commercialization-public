@@ -525,21 +525,21 @@ The System Builder may want to make additional customizations through an unatten
 
 ## Deploy the image to new computers (Windows installation)
 
-1.  On technician computer locate the following files in USB-B/Deployment destination. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in correct paths. If you’ve already done this step please skip
+1.  On the technician computer, locate the following files in USB-B/Deployment. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in correct paths. 
 
     ![Locate USB files](images/locateusbfiles.png)
 
-2.  Boot reference computer and connect USB-A
+2.  Boot the reference computer and connect USB-A.
 
-3.  After WinPE has been booted connect USB-B
+3.  After WinPE starts, connect USB-B.
 
-4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart
+4.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). 
 
-    E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
+        E:\Deployment\Walkthrough-Deploy.bat E:\Images\ModelSpecificImage.wim
 
-    Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a CompactOS deployment.
+    Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-1.  Note: Only use CompactOS on Flash drive based devices because CompactOS performance depends on the storage device capabilities. CompactOS is NOT recommend on rotational devices. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
+1.  Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx).
 
     Remove USB-A and USB-B, and then type:
 
@@ -605,47 +605,45 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     Where E: is USB-B drive letter.
 
-1.  Create configuration file
+1.  Create a configuration file.
 
-    OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
+    You can use a configuration file to restore and exclude registry keys and files during the PBR process.
 
     Important: This section includes a workaround for a known issue in Windows 10. You must apply this work around to avoid issues with the PBR process. 
 
     In some instances, Windows Defender settings and detection history might be captured into the customizations package by the ScanState tool. This can lead to failures during recovery due to file conflicts, and causes the PC to reboot and enter the **Installing Windows** phase repeatedly.
 
-    Note: You can use the sample configuration file on **USB-B**\Recovery\recoveryimage\pbr_config.xml.
+    Note: Use the pbr_config.xml configuration file that was generated previously.
 
-1.  Create Recovery package
+1.  Create the recovery package.
 
     Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from USB-B\Recovery\RecoveryImage to create scanstate package.
 
     Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.
 
-2.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
+2.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage.
 
         Copy E:\Recovery\recoveryimage c:\recovery\OEM
 
         Copy E:\StartLayout\\*.\* c:\recovery\OEM
 
-1.  Run scanstate utility to gather app and customizations
+1.  Run scanstate utility to gather app and customizations.
 
     If you use an **x64** Windows 10 image:
-
-        Mkdir c:\recovery\customizations
 
         E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /config:c:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
     If you use an **x86** Windows 10 image:
 
-        E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+        E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
     Where E: is the drive letter of USB-B.
 
-1.  Create extensibility script to restore additional settings and customizations
+1.  Create extensibility script to restore additional settings and customizations.
 
     You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
 
-    The sample script EnableCustomizations.cmd will be called during PBR and will do 2 things
+    The sample script EnableCustomizations.cmd will be called during PBR and will do two things:
 
     a.  Copy the unattend.xml file used for initial deployment to the \windows\panther folder.
 
