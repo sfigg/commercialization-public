@@ -1,19 +1,8 @@
-![Microsoft Logo](images/MicrosoftLogo.png)
-
-# Contents
-
-Use this guide to deploy Windows® 10 to a line of computers.
-
-# Summary
-
-
-The purpose of this guide is to document a prescriptive method for Windows 10 deployment that includes online and offline customizations, targeting system builders for both 64-bit and 32-bit configurations.
-
-This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the system builders to include/exclude optional steps due to their specific deployment environment.
+You can use this guide to deploy Windows 10 to a line of computers. This prescriptive guidance for Windows 10 deployment includes online and offline customizations, and targets system builders for both 64-bit and 32-bit configurations. This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the system builders to include/exclude optional steps for their specific deployment environment.
 
 # Intended audience
 
-This guide about Windows deployment is especially targeted for system builders (level 200 technicians) and applies to all Windows 10 client operating system versions. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory. You may also prefer external resources such as [TechNet](http://technet.microsoft.com/) and [MSDN](http://www.msdn.com/).
+This guide about Windows deployment is especially targeted for system builders (level 200 technicians) and applies to all Windows 10 client operating system versions. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory.
 
 # Introduction
 
@@ -524,13 +513,11 @@ The System Builder may want to make additional customizations through an unatten
             rem == Windows RE tools partition =============== 
             create partition primary size=500
 
-    rem == 3. Windows RE tools partition =============== create partition primary size=500
-
     Optional: This section assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to pull winre.wim from the image and apply it separately.
 
 1.  Commit the changes and unmount the Windows image:
 
-    Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
+        Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
  
     where C is the drive letter of the drive that contains the image.
 
@@ -600,25 +587,23 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
 1.  Prepare Scanstate tool
 
-    ***x64/x86 Distinction***
+    If you use an **x64** Windows 10 image:
 
-    *OEMs using an ***x64* Windows 10 image**, make x64 Scanstate directory*
+        md E:\ScanState_amd64
 
-    md E:\ScanState_amd64
+        copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" E:\ScanState_amd64
 
-    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" E:\ScanState_amd64
+        copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" E:\ScanState_amd64
 
-    copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources" E:\ScanState_amd64
+    If you use an **x86** Windows 10 image:
 
-    *OEMs using an ***x86* Windows 10 image**, make x86 Scanstate directory*
+        md E:\ScanState_x86
 
-    md E:\ScanState_x86
+        copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\x86" E:\ScanState_x86
 
-    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\x86" E:\ScanState_x86
+        copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\x86\Sources" E:\ScanState_x86
 
-    copy /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\x86\Sources" E:\ScanState_x86
-
-    ***Where E: is USB-B drive letter***
+    Where E: is USB-B drive letter.
 
 1.  Create configuration file
 
@@ -634,31 +619,27 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from USB-B\Recovery\RecoveryImage to create scanstate package.
 
-    **Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.**
+    Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.
 
 2.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage
 
-    Copy E:\Recovery\recoveryimage c:\recovery\OEM
+        Copy E:\Recovery\recoveryimage c:\recovery\OEM
 
-    Copy E:\StartLayout\\*.\* c:\recovery\OEM
+        Copy E:\StartLayout\\*.\* c:\recovery\OEM
 
 1.  Run scanstate utility to gather app and customizations
 
-    ***x64/x86 Distinction***
+    If you use an **x64** Windows 10 image:
 
-    *OEMs using an ***x64* Windows 10 image***
+        Mkdir c:\recovery\customizations
 
-    Mkdir c:\recovery\customizations
+        E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /config:c:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
-    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /config:c:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    If you use an **x86** Windows 10 image:
 
-    *Where E: is the drive letter of USB-B*
+        E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
 
-    *OEMs using an ***x86* Windows 10 image***
-
-    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
-
-    *Where E: is the drive letter of USB-B*
+    Where E: is the drive letter of USB-B.
 
 1.  Create extensibility script to restore additional settings and customizations
 
@@ -700,7 +681,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
 4.  Start cleanup of the image.
 
-    **Important: By default, non-major updates (such as ZDPs, or LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. **
+    Important: By default, non-major updates (such as ZDPs, or LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. 
 
         MD e:\scratchdir
 
@@ -740,7 +721,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
 1.  Upon deploying your model specific image to destination computers, boot the computer with master image for the first time in AUDIT mode
 
-    **Important**: In order to minimize the first boot time, (Boot > Specialize > OOBE > Start screen) specialize pass must be completed in the factory. Specialize pass will configure hardware specific information which Windows will run on.
+    Important: In order to minimize the first boot time, (Boot > Specialize > OOBE > Start screen) specialize pass must be completed in the factory. Specialize pass will configure hardware specific information which Windows will run on.
 
     For more information about the first boot time requirements, see [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008).
 

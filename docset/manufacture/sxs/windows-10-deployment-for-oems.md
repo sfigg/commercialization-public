@@ -1,13 +1,9 @@
-![Microsoft Logo](images/MicrosoftLogo.png)
 
-
-#  Summary
-
-The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment have not changed. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
+The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
 
 # Intended Audience
 
-This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and Troubleshooting. Additionally, please refer to [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx) for additional information on what's new for Windows 10 deployment.
+This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
 # About this guide
 
@@ -1065,10 +1061,10 @@ If you use an **x86** Windows 10 image:
 
     Dism /image:"c:\mount\windows" /remove-package /packagename:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384 /packagename:Microsoft-Windows-Prerelease-Client-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:Microsoft-Windows-RetailDemo-OfflineContent-Content-en-us-Package~31bf3856ad364e35~x86~~10.0.10240.16384
 
-Troubleshoot: If an error occurs running a package, such as:
+Troubleshoot: If an error occurs while removing a package, such as:
 
     Error: 0x800f0825
-    Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again.The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. 
+    Package Microsoft-Windows-LanguageFeatures-Basic-en-us-Package may have failed due to pending updates to servicing components in the image. Try the command again. The command completed with errors. For more information, refer to the log file. The DISM log file can be found at C:\windows\Logs\DISM\dism.log. 
     
 Run dism.exe remove package again on only the failing package.
 
