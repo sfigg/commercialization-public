@@ -1,14 +1,8 @@
-You can use this guide to deploy Windows 10 to a line of computers. This prescriptive guidance for Windows 10 deployment includes online and offline customizations, and targets system builders for both 64-bit and 32-bit configurations. This is a step-by-step guide intended to provide information about Windows 10 deployment requirements as well as enabling the system builders to include/exclude optional steps for their specific deployment environment.
-
-# Intended audience
-
-This guide about Windows deployment is especially targeted for system builders (level 200 technicians) and applies to all Windows 10 client operating system versions. For an introduction to Windows 10 deployment (level 100), see “Getting Started with the Windows ADK” document (ADK_GetStarted.chm) under Windows 10 ADK installation directory.
-
-# Introduction
+You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to all Windows 10 client operating system versions. 
 
 # Prepare your lab environment
 
-In this step, you will set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. The technician computer must run Windows 10 x64 if you are going to deploy x64 images or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
+The first step is to set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. The technician computer must run Windows 10 x64 if you are going to deploy x64 images or Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
 
 Before starting the deployment procedure, you need to download certain kits which will be used throughout the guide. from [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) &gt; “Downloads and Installation” &gt; “Understanding ADKs and OPKs”. In order to see the list of resources/kits that will be used and where to obtain them, please see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
 
@@ -142,9 +136,9 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
         USB-B\ConfigSet\AutoUnattend.xml
 
-1.  Associate the answer file with the Windows Image by clicking **OK** at the prompted message box to add a driver to Windows PE, click **Insert** select **Driver Path** and select pass **1 windowsPE** and then browse to the driver. Note: This step is optional and only required if a third-party driver is needed for use in the Windows Preinstallation Enviornment. This step is optional
+1.  Associate the answer file with the Windows Image by clicking **OK** at the prompted message box to add a driver to Windows PE, click **Insert** select **Driver Path** and select pass **1 windowsPE** and then browse to the driver. Note: This step is optional and only required if a third-party driver is needed for use in the Windows Preinstallation Enviornment. This step is optional.
 
-2.  To add a package, click **Insert** select **Package** and then browse to the package you want to add. This step is optional
+2.  To add a package, click **Insert*, select **Package** and then browse to the package you want to add. This step is optional
 
 ### Customize the answer file
 
