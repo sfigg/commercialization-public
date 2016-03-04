@@ -2,11 +2,11 @@
 
 The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
 
-This guide is intended for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
+This guide is intended for Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
 # About this guide
 
-This guide is organized around three hardware configurations.
+This guide is organized around three hardware and software configurations.
 
 | Hardware Config              | 1            | 1b           | 2            |
 |------------------------------|--------------|--------------|--------------|
@@ -24,9 +24,9 @@ This guide is organized around three hardware configurations.
 | Office 2016                  | No           | Yes          | Yes          |
 | Compact OS                   | Yes          | Yes          | No           |
 
-Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). Pay attention to sections where the image is deployed as Compact OS and using ScanState tool with Compact OS images.
+Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). 
 
-## OEM Activation 3.0
+## OA3.0
 
 For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** specific considerations.
 
@@ -42,9 +42,9 @@ You must use the matching version of the Windows ADK for the images that you pla
 | Windows 10 RTM    | [**Windows 10 ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
 | Windows 10 Version 1511 | [**Windows 10 ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
 
-Inside the ADK:
+Tools inside the ADK that you will use with this guide:
 
--   Full release of Windows 10 PE
+-   Windows 10 PE
 
 -   Deployment Image Servicing and Management (DISM) tool
 
@@ -52,9 +52,7 @@ Inside the ADK:
 
 -   OSCDIMG, BCDBoot, and other tools and interfaces
 
--   Updated tool – User State Migration Tool (USMT) ScanState.exe
-
--   USMT
+-   User State Migration Tool (USMT)
 
 -   Windows Overlay Filter (WOF) Driver
 
@@ -534,7 +532,7 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
 1.  Capture the image of the windows partition to **USB-B**. This process takes several minutes.
 
-    Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratch directory on the USB-B key for temporary files. However, you may choose any hard drive that has a large amount of available space to create a scratch directory. 
+    Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratch directory on the USB-B key for temporary files, which is assigned drive letter "E:" in the examples. 
 
         MD e:\scratchdir
 
@@ -546,35 +544,7 @@ Modify your images by adding and removing languages, drivers, and packages.
 
 ![Create a model specific image](images\create-model-specific-image.png)
 
-#### [Optional] Offline servicing using automated script Windows10_IST.ps1
-
-The Imaging Servicing Tool (IST) is a utility developed using Windows PowerShell and helps an OEM to add, remove, and update languages; preloaded applications faster; and apply existing updates in an easier and automated environment. Application Servicing Tool uses only DISM and Windows PowerShell commands so every Windows 10 system is compatible.
-
-For more information about using the Windows10_IST Windows PowerShell script, see the USB-B\Resources\Windows10_IST_readme.PDF step-by-step guide.
-
-Important: The IST covers preloading of both the app packages and app bundles, but not the pinning. OEMs must arrange their answer and layoutmodification files manually for the apps they install. Not pinning the apps will result in removal of the apps during OOBE.
-
--   This is a “Use it at your own risk” and “As-is” tool.  
-
--   OEM partners can use this for evaluation.
-
--   It is not production code and can be used for demo purposes only.
-
--   To suggest any improvements, please contact [OTSQR@microsoft.com](mailto:OTSQR@microsoft.com).
-
-Please refer to the Windows10_IST.ps1 Windows PowerShell script found at USB-B\Windows10_IST\Windows10_IST.ps1.
-
-Before running the tool, set the execution policy to allow Windows PowerShell scripts to run. Open an elevated Windows PowerShell session and type:
-
-    Set-ExecutionPolicy UNRESTRICTED
-
-1.  Run the script file (Windows10_IST tool) by right-clicking and selecting **Run with PowerShell**. After the tool launches, proceed with the in-tool instructions.
-
-    ![Windows 10 Image Servicing Tool](images\image-servicing-tool.png)
-
 ### Mount image
-
-Note: For an automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1
 
 Insert **USB-B** into your technician computer.
 
@@ -599,8 +569,6 @@ Insert **USB-B** into your technician computer.
 Troubleshoot: If the mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK. Make sure that version is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling antivirus protection.
 
 ### Adding drivers
-
-Note: For an automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**.
 
@@ -699,8 +667,6 @@ OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\Answ
     </settings>
 
 ### Adding LPs / LIPs / FoDs / GDRs
-
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 The following table lists language pack components and any dependencies. For more information, see [Language packs](https://msdn.microsoft.com/library/windows/hardware/dn898584.aspx) and [Feature on Demand (FoD)](https://msdn.microsoft.com/library/windows/hardware/mt171094.aspx).
 
@@ -965,8 +931,6 @@ Verify the package has been installed to the Windows image:
 
 #### [Optional] Add a language with additional fonts
 
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 As part of the language pack re-factoring for Windows 10, some languages with Fonts were factored out into their own Language Cabs. In this section, ja-JP language is added to the image with the language Font cab in addition to other feature language packs.
 
 If you use an **x64** Windows 10 image:
@@ -978,8 +942,6 @@ If you use an **x86** Windows 10 image:
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
 
 ### Add languages to Windows RE
-
-Note: For automated solution to this section, please refer to the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 When you add languages to Windows, add them to Windows RE to ensure a consistent language experience in recovery scenarios.
 
@@ -1025,8 +987,6 @@ If you use an **x86** Windows 10 image:
 
 #### [Optional] Add ja-jp language packs
 
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 Complete this section only if you added ja-jp language packs from the optional section [Add a language with additional fonts](#add-a-language-with-additional-fonts).
 
 If you use an **x64** Windows 10 image:
@@ -1057,8 +1017,6 @@ If you use an **x86** Windows 10 image:
 
 ### [Optional] Remove English language to make a single language image
 
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 In Windows 10, Microsoft will only make en-US versions available. To make the image a single image after installing de-DE in the previous section, you can remove en-US from the image, making it only de-DE.
 
 OEMs will need to remove all en-US language packages from the system. The following sample removes pre-installed languages from Windows 10 Professional.
@@ -1080,8 +1038,6 @@ Run dism.exe remove package again on only the failing package.
 
 ### [Optional] Remove additional languages from WinRE
 
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 If you removed any languages, they must also be removed from WinRE.
 
 If you use an **x64** Windows 10 image:
@@ -1100,8 +1056,6 @@ Use Dism to verify language components are part of the image.
 
 ### Setting language regional settings
 
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 1.  Use Dism to set the default language of the image:
 
         Dism /Image:C:\mount\windows /Set-AllIntl:de-DE
@@ -1117,8 +1071,6 @@ Note: For an automated solution to this section, see the Imaging Servicing Scrip
         Dism /Image:C:\mount\windows /set-timezone:"W. Europe Standard Time"
 
 ### Add update packages (KB packages) to the image
-
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 Use Dism to apply the latest GDR and any prerequisite KBs. Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package. For example, this guide will use the latest GDR 2015.11 D. KB3118754. 
 
@@ -1154,8 +1106,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
 
 ### Add Update packages to WinRE
 
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
-
 Important: KB3118754 must also be applied to WinRE.wim to fix a known issue: Recovery fails during Reset/Refresh when a Scanstate package (USMT.ppkg) contains an application which has a path with a leading space. Example: c :\Program Files\ Contoso\RunMe.exe.
 
 Apply GDR 2015.11 D. KB3118754
@@ -1169,8 +1119,6 @@ If you use an **x86** Windows 10 image:
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
 
 ### Reinstall inbox apps
-
-Note: For an automated solution to this section, see the Imaging Servicing Script found in USB-B\Windows10_IST\Windows10_IST.ps1.
 
 When you add language packs, you should reinstall the inbox apps by removing each app and then installing it again by using DISM. The following procedure shows you how to reinstall the Get Started inbox app, but the steps will work for all apps by substituting the appropriate package.
 
@@ -1952,7 +1900,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
         
 ### [Compact OS limited storage devices only] Convert installed customizations
 
-**Important: Only do this step if you are deploying to limited storage device. Single Instance will impact the launch performance of some desktop applications.**
+**Important: Only do this step if you are deploying to limited storage device. Single instance will impact the launch performance of some desktop applications.**
 
 Please reference [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx) for more information.
 
