@@ -1,13 +1,11 @@
 
 The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
 
-# Intended Audience
-
-This guide is specially targeted for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. This document addresses IT professionals with prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
+This guide is intended for Named Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
 # About this guide
 
-This guide is organized around these three hardware configurations:
+This guide is organized around three hardware configurations.
 
 | Hardware Config              | 1            | 1b           | 2            |
 |------------------------------|--------------|--------------|--------------|
@@ -27,11 +25,11 @@ This guide is organized around these three hardware configurations:
 
 Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). Pay attention to sections where the image is deployed as Compact OS and using ScanState tool with Compact OS images.
 
-## OEM Activation 3.0
+## OA3.0
 
 For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** specific considerations.
 
-## Deployment and Imaging Tools Environment
+## Deployment and imaging tools environment
 
 The Windows Assessment and Deployment Kit (ADK) is a collection of tools and documentation that OEMs, ODMs, and IT Professionals use to customize, assess, and deploy Windows operating systems to new computers. Deployment tools enable you to customize, manage, and deploy Windows images. Deployment tools can be used to automate Windows deployments, removing the need for user interaction during Windows setup.
 
@@ -67,7 +65,7 @@ Inside the ADK:
 
     -   Installed via Deployment Tools category to supported downlevel host (lowest to Windows 7)
 
-## Pre-Requisites
+## Prerequisites
 
 To complete the steps outlined in this whitepaper, OEMs will require:
 
@@ -76,6 +74,7 @@ To complete the steps outlined in this whitepaper, OEMs will require:
 Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script, you will need a Technician computer running Windows 10.
 
 -   **A Reference Computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
+    
     For this PC, choose from something that resembles the Hardware Configuration Table.
 
     ![What is the ADK?](images\what-is-adk.png)
@@ -88,7 +87,17 @@ Note: This guide provides sample Windows PowerShell script to automate offline s
 
     Finish the installation after the installer shows successful.
 
-## Downloads
+### Creating my USB-B
+
+-   The deployment steps in this guide depend on the sample configuration files included in **USB-B**. You can download [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) from the Microsoft Download Center. 
+
+-   The contents of the configuration files included in **USB-B** are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
+
+Format your desired USB Drive and name it as follows:
+
+![Extract USB](images\extractusb.png) 
+
+## Software downloads
 
 To complete this guide many OPK downloads are required from <https://www.microsoftoem.com>. The table below shows the required and optional downloads before getting started on the imaging process.
 
@@ -136,17 +145,17 @@ Note: When installing new or additional language packs, the FoD’s and Appx pac
 | X20-52949 | Office Mobile MultiLang OPK -2                  |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK      |
 
-# Windows 10 Deployment Procedure
+# Windows 10 deployment procedure
 
 This section walks you through scripts and steps to creating a Windows 10 image.
 
-This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, go to [Creating My USB-B](#creating-my-usb-b) in the Appendix.
+This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, complete the steps in [Creating My USB-B](#creating-my-usb-b).
 
-Deployment steps basic flow
+This flowchart shows the deployment steps:
 
 ![Deployment process](images/deployment-process.png)
 
-# Create WinPE bootable USB
+# Create a WinPE bootable USB
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -182,7 +191,7 @@ Deployment steps basic flow
 
 ### Add packages, dependencies, and language packs
 
-Use **Dism** command with the **/Add-Package** option. For example, in order to use Powershell in WinPE, NetFx dependency and the language packs must be installed.
+Use **Dism** command with the **/Add-Package** option. For example, in order to use Windows PowerShell in WinPE, NetFx dependency and the language packs must be installed.
 
 If you use an **x64** Windows 10 image:
 
@@ -1546,8 +1555,11 @@ You must pin the Office tiles to the Start menu, otherwise Windows will remove t
 
 Note: You must be using at least version 10.0.10586.0 of Windows 10. The following steps don’t work with earlier versions of Windows 10.
 
-1. notepad C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml.
-2. Add <AppendOfficeSuiteChoice Choice=”Desktop2016” /> to layoutmodification as you see highlighted in the following example:
+1. Open a command prompt and type:
+
+        notepad C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml.
+        
+2. Add &lt;AppendOfficeSuiteChoice Choice="Desktop2016" /&gt; to layoutmodification as you see highlighted in the following example:
 
     ![Layout Modification](images\layoutmodification.png)
 
@@ -1557,9 +1569,11 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
 
     Note: for recovery purposes the layoutmodification.xml will need to be copied during recovery. 
     
-4. copy C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml c:\recovery\OEM   
+4.  Open a command prompt and type:
 
-    Once the machine is booted to desktop after going through OOBE the start menu will have these 3 tiles appended as shown in the following diagram: 
+        copy C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\layoutmodification.xml c:\recovery\OEM   
+
+    Once the machine is booted to desktop after going through OOBE, the Start menu will have these three tiles appended as shown in the following diagram: 
     
     ![Office tiles pinned to the Start menu](images\office-tiles-pinned-to-start-menu.png)
     
@@ -1902,11 +1916,11 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
     Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
-## Finalize and Capture Manufacturing Image
+## Finalize and capture the manufacturing image
 
-1.  Delete installation folders and files that have been created of the preloaded applications which are for example*, C:\Office-SingleImagev15.4-Setup*. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
+1.  Delete installation folders and files that have been created of the preloaded applications which are for example, *C:\Office-SingleImagev15.4-Setup*. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
 
-2.  If SysPrep Tool is open, close it and open Command Prompt in Administrator mode
+2.  If the SysPrep Tool is open, close it and open a command prompt as an Administrator.
 
 3.  Generalize the image by using answerfile with additional settings.
 
@@ -1935,7 +1949,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
         ![Diskpart](images\diskpart-v10.png)
         
-### [CompactOS Limited Storage Devices Only] Convert installed customizations
+### [Compact OS limited storage devices only] Convert installed customizations
 
 **Important: Only do this step if you are deploying to limited storage device. Single Instance will impact the launch performance of some desktop applications.**
 
@@ -1943,7 +1957,7 @@ Please reference [Compact OS](https://msdn.microsoft.com/library/windows/hardwar
 
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\apps.ppkg /ImagePath:C:\ /SingleInstance
 
-### Reduce size of Manufacturing image
+### Reduce size of the manufacturing image
 
 After the manufacturing image is ready, choose to reduce the size of the image by clearing up the SXS store using DISM to offline service the image. Switch to the Technician Computer and mount the image.
 
@@ -1955,7 +1969,7 @@ After the manufacturing image is ready, choose to reduce the size of the image b
 
     RD c:\scratchdir
 
-### Capture final Manufacturing image
+### Capture the final manufacturing image
 
 Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratchdir on the USB-B key for temporary files. However, you may choose any hard drive has a large amount of available space to create a scratch directory.
 
@@ -1971,7 +1985,7 @@ Run the sample walkthrough-deploy.cmd script to deploy the finalimage.wim.
 
     E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
 
-## Verify Image customizations and recovery
+## Verify image customizations and recovery
 
 -   Computer restarts and starts. This may take a few minutes.
 
@@ -2005,7 +2019,7 @@ Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will b
 
 ![App promotions](images\app-promotions.png)
 
-### Verify Recovery
+### Verify recovery
 
 1.  Verify that your customizations are restored after recovery, and that they continue to function by running the **Refresh your PC** and **Reset your PC** features from the following entry points:
 
@@ -2045,11 +2059,11 @@ The specialize configuration pass adds hardware-specific information to the PC a
 
 Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
-## Create Recovery Media
+## Create recovery media
 
 **OPTION DECISION:** Choose **Option 1** to create the recovery media the same as the manufacturing image. This is the default and recommended recovery media configuration option but keep in mind that your manufacturing image may be larger than 4.6GB size. If it is and you are using DVD as a recovery media, your recovery file size will exceed the DVD capacity.
 
-### Option 1: Create Recovery Media from Custom Manufacturing Image
+### Option 1: Create recovery media from custom manufacturing image
 
 1.  On the Technician Computer, mount the manufacturing image which is to be used as the recovery media. Mount the final image.
 
@@ -2093,7 +2107,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](https://msdn.microsoft.com/library/windows/hardware/dn946570.aspx).
 
-### Option 2: Create Recovery Media from Base Windows 10 OPK
+### Option 2: Create recovery media from the base Windows 10 OPK
 
 **OPTION DECISION:** Choose **Option 2** to create the recovery media from scratch by using the base Windows 10 OPK.
 
@@ -2172,18 +2186,4 @@ For more information about creating a recovery image, see [Bare metal reset/reco
 1.  Burn the .iso file to a new DVD. This DVD will be your recovery media.
 
 2.  This recovery media will boot to Windows setup to install Windows 10 in a regular fashion by deleting your files.
-
-## Appendix
-
-### Creating My USB-B
-
--   The deployment steps in this guide depend on the sample configuration files included in **USB-B**. Therefore it is recommended to create your own **USB-B** before starting the deployment procedure. To do so please complete the steps in this section.
-
--   Contents of the configuration files included in **USB-B** are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
-
--   To obtain this sample **USB-B** content, see the Microsoft Download Center. 
-
-Format your desired USB Drive and name it as follows:
-
-![Extract USB](images\extractusb.png) 
 
