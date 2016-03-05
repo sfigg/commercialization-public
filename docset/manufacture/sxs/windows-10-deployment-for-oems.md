@@ -26,7 +26,7 @@ This guide is organized around three hardware and software configurations.
 
 Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). 
 
-## OA3.0
+## OEM Activation 3.0
 
 For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** specific considerations.
 
