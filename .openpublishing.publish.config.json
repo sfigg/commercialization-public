@@ -3,8 +3,48 @@
     "git_repository_url_open_to_public_contributors": "",
     "docsets_to_publish": [
         {
-            "docset_name": "docset",
-            "build_output_subfolder": "docset",
+            "docset_name": "manufacture",
+            "build_output_subfolder": "docset/manufacture",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "design",
+            "build_output_subfolder": "docset/design",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "customize",
+            "build_output_subfolder": "docset/customize",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "test",
+            "build_output_subfolder": "docset/test",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "service",
+            "build_output_subfolder": "docset/service",
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false",
@@ -14,5 +54,5 @@
         }
     ],
     "notification_subscribers": ["justinha@microsoft.com"],
-    "branches_to_filter": ["live"]
+    "branches_to_filter": [""]
 }
