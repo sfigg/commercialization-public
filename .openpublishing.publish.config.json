@@ -54,5 +54,5 @@
         }
     ],
     "notification_subscribers": ["justinha@microsoft.com"],
-    "branches_to_filter": [""]
+    "branches_to_filter": ["live"]
 }
