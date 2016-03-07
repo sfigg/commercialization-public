@@ -1,6 +1,6 @@
 # Windows 10 Desktop Deployment for OEMs
 
-The purpose of this guide is to document a prescriptive method for Windows 10 deployment using the classic Windows 10 deployment procedures. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
+This guide documents a prescriptive method for Windows 10 deployment using the classic deployment tools. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
 
 This guide is intended for Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
