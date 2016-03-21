@@ -1,14 +1,14 @@
-# Windows 10 desktop deployment for system builders
+# System builder deployment of Windows 10 for desktop editions 
 
-You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to all Windows 10 client operating system versions. 
+You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). 
 
 # Prepare your lab environment
 
-The first step is to set up your lab environment, which includes installing the latest Windows 10 ADK tools onto your designated technician computer. The technician computer must run Windows 10 x64 if you are going to deploy x64 images, or run Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows 10 ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
+The first step is to set up your lab environment, which includes installing the latest Windows Assessment and Deployment Kit (Windows ADK) tools onto your designated Technician computer. The Technician computer must run Windows 10 x64 if you are going to deploy x64 images, or run Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
 
-Before starting the deployment procedure, you need to download certain kits which will be used throughout the guide. Go to the [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) > **Downloads and Installation** > **Understanding ADKs and OPKs**. For a list of resources and kits that will be used and where to obtain them, see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
+Before starting the deployment procedure, you need to download the kits that will be used throughout the guide. Go to the [OEM Partner Center](http://www.microsoft.com/oem/en/pages/index.aspx#fbid=7JcJYKYGEfo) > **Downloads and Installation** > **Understanding ADKs and OPKs**. For a list of resources and kits that will be used and where to obtain them, see [What you will need and where to get it](#what-you-will-need-and-where-to-get-it).
 
-You will need two USB drives. USB-A will be used to boot the system in WinPE. USB-B will be used to move files between computers, store deployment and recovery scripts, and store and apply created images.
+You will need two USB drives. USB-A will be used to boot the system in Windows Preinstallation Environment (WinPE). USB-B will be used to move files between computers, store deployment and recovery scripts, and store and apply created images.
 
 <table>
 <th>USB Hard Drive Name</th>
@@ -40,14 +40,14 @@ You will need two USB drives. USB-A will be used to boot the system in WinPE. US
 
 | **Pass**        | **Setting**                              | **Action**                                                            |
 |-----------------|------------------------------------------|-----------------------------------------------------------------------|
-| **Windows PE**  | Setup UI Language                        | EN-US                                                                 |
+| **WinPE**       | Setup UI Language                        | EN-US                                                                 |
 |                 | User Data                                | Preinstallation Product Key for ODR - Defined                         |
-| **Specialize**  | IE Home Page                             | in the answer file                                                    |
+| **Specialize**  | Internet Explorere Home Page             | in the answer file                                                    |
 |                 | OEM Name                                 | Defined in the answer file                                            |
 |                 | OEM Logo                                 | Defined in the answer file                                            |
 |                 | Model                                    | Defined in the answer file                                            |
 |                 | Support Info                             | Defined in the answer file                                            |
-| **Oobe System** | Reseal                                   | Audit/OOBE                                                            |
+| **OOBE System** | Reseal                                   | Audit/OOBE                                                            |
 |                 | StartTiles                               | Square Tiles / SquareOrDesktopTiles set to pin only desktop apps      |
 |                 | TaskbarLinks (up to 6 pinned .lnk files) | Paint and Control Panel shortcuts have been set                       |
 |                 | Themes                                   | Custom Theme with the OEM logo as the desktop background has been set |
@@ -63,23 +63,23 @@ You will need two USB drives. USB-A will be used to boot the system in WinPE. US
 
 - Adding language interface packs to Windows
 
-- Adding Drivers and Update Packages
+- Adding drivers and update packages
 
-- Adding OEM Specific Logo and background files to Windows
+- Adding OEM-specific logo and background files to Windows
 
 - Image size optimization
 
-- Pinning desktop apps to start sceen
+- Pinning desktop applications to start sceen
 
 # Create a USB drive that can boot to WinPE
 
-You must use the matching version of ADK for the images being customized. If building an image using RTM image use Windows 10 RTM ADK. If using Windows 10 1511 image use Windows 10 1511 ADK.
-For more details about the ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
+You must use the matching version of Windows ADK for the images being customized. If building an image using the RTM image, use Windows ADK for Windows 10. If using a Windows 10, version 1511 image, use the Windows ADK for Windows 10, version 1511.
+For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
 
 |  Windows version  | Link to run ADKSetup.exe      |
 |-------------------|-------------------------------|
-| Windows 10 RTM    | [**Windows 10 ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
-| Windows 10 Version 1511 | [**Windows 10 ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
+| Windows 10 RTM    | [**Windows ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
+| Windows 10, version 1511 | [**Windows ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
 
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
@@ -90,9 +90,9 @@ For more details about the ADK, see the [Windows 10 ADK Documentation Homepage](
     
         Deployment and Imaging Tools Environment
 
-    Right-click the name of the tool and then click **Run as administrator**.
+    Right-click the name of the tool, and then click **Run as administrator**.
 
-2.  Windows 10 ADK allows you to create **Windows PreInstallation Environment**. Copy base WinPE to new folder.
+2.  Windows ADK allows you to create **Windows PreInstallation Environment**. Copy base WinPE to new folder.
 
     If you use an **x64** Windows 10 image, copy the x64 WinPE folder structure:
 
