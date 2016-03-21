@@ -1,14 +1,14 @@
-# Windows 10 Desktop Deployment for OEMs
+# OEM deployment of Windows 10 for desktop editions
 
-This guide documents a prescriptive method for Windows 10 deployment using the classic deployment tools. Many of the tools and methods used from Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 allows image-less recovery.
+This guide documents a prescriptive method for Windows 10 deployment using the classic deployment tools. Many of the tools and methods used in a Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 enables image-less recovery.
 
-This guide is intended for Original Equipment Manufacturers (OEMs), and applies to all Windows 10 client operating system versions. IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new for Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
+This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new in Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
 # About this guide
 
 This guide is organized around three hardware and software configurations.
 
-| Hardware Config              | 1            | 1b           | 2            |
+| Hardware configuration       | 1            | 2            | 3            |
 |------------------------------|--------------|--------------|--------------|
 | Form factor                  | Small tablet | 2-in-1       | Notebook     |
 | RAM                          | 1 GB         | 2 GB         | 4 GB         |
@@ -24,25 +24,25 @@ This guide is organized around three hardware and software configurations.
 | Office 2016                  | No           | Yes          | Yes          |
 | Compact OS                   | Yes          | Yes          | No           |
 
-Many of the tools and techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WimBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). 
+Many of the tools and deployment techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WIMBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). 
 
 ## OEM Activation 3.0
 
-For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** specific considerations.
+For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** considerations.
 
 ## Deployment and imaging tools environment
 
-The Windows Assessment and Deployment Kit (ADK) is a collection of tools and documentation that OEMs, ODMs, and IT Professionals use to customize, assess, and deploy Windows operating systems to new computers. Deployment tools enable you to customize, manage, and deploy Windows images. Deployment tools can be used to automate Windows deployments, removing the need for user interaction during Windows setup.
+The Windows Assessment and Deployment Kit (Windows ADK) is a collection of tools and documentation that OEMs, ODMs, and IT Professionals use to customize, assess, and deploy Windows operating systems to new computers. Deployment tools enable you to customize, manage, and deploy Windows images. They can also be used to automate Windows deployments, removing the need for user interaction during Windows setup.
 
-You must use the matching version of the Windows ADK for the images that you plan to customize. For example, if you are customizing an image based on Windows 10 Version 1511, you must use the Windows ADK from Windows 10 Version 1511.  
+You must use the matching version of the Windows ADK for the images that you plan to customize. For example, if you are customizing an image based on Windows 10, version 1511, you must use the Windows ADK from Windows 10, version 1511.  
 
 
 |  Windows version  | Link to run ADKSetup.exe      |
 |-------------------|-------------------------------|
-| Windows 10 RTM    | [**Windows 10 ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
-| Windows 10 Version 1511 | [**Windows 10 ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
+| Windows 10 RTM    | [**Windows ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
+| Windows 10, version 1511 | [**Windows ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
 
-Tools inside the ADK that you will use with this guide:
+Tools inside Windows ADK that you will use with this guide:
 
 -   Windows 10 PE
 
@@ -54,7 +54,7 @@ Tools inside the ADK that you will use with this guide:
 
 -   User State Migration Tool (USMT)
 
--   Windows Overlay Filter (WOF) Driver
+-   Windows Overlay Filter (WOF) Driver:
 
     -   Windows 10 version of WOF driver supports Compact OS
 
@@ -62,17 +62,17 @@ Tools inside the ADK that you will use with this guide:
 
     -   Inbox in Windows 10 and Windows 10 PE
 
-    -   Installed via Deployment Tools category to supported downlevel host (lowest to Windows 7)
+    -   Installed using Deployment Tools category to supported downlevel host (to Windows 7)
 
 ## Prerequisites
 
-To complete the steps outlined in this whitepaper, OEMs will require:
+To complete the steps outlined in this guide, OEMs will require:
 
--   **A Technician Computer**: A PC that is running Windows 10 or Windows 8.1, on which the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
+-   **A Technician computer**: A PC running Windows 10 or Windows 8.1 on which [Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
 
 Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script, you will need a Technician computer running Windows 10.
 
--   **A Reference Computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
+-   **A Reference computer**: A PC that represents all of the PCs in a single model line; for example, the Fabrikam Notebook PC Series.
     
     For this PC, choose from something that resembles the Hardware Configuration Table.
 
@@ -84,7 +84,7 @@ Note: This guide provides sample Windows PowerShell script to automate offline s
 
     ![Select ADK Features](images/ADK_SelectFeatures.png)
 
-    Finish the installation after the installer shows successful.
+    If the installation will be successful, click **Install**.
 
 ### Creating my USB-B
 
@@ -98,57 +98,57 @@ Format your desired USB Drive and name it as follows:
 
 ## Software downloads
 
-To complete this guide many OPK downloads are required from <https://www.microsoftoem.com>. The table below shows the required and optional downloads before getting started on the imaging process.
+To complete this guide, many OPK downloads are required from <https://www.microsoftoem.com>. The table below shows the required and optional downloads before getting started on the imaging process.
 
 This guide uses Windows 10 RTM images as examples for creating images. You should check for the latest OPK on <https://www.microsoftoem.com> before completing the sections in this guide.
 
-**Important: The version of Windows components, Windows ADK, LP, FOD, and LIP must match with the Windows 10 image version.**
+**Important: The version of Windows components, Windows ADK, language packs, FOD, and Language Interface Pack must match the Windows 10 image version.**
 
 ### Windows 10 RTM images and updates
 
 |           |                                  |
 |-----------|----------------------------------|
-| X20-09658 | Win Home 10 32 64 English OPK    |
-| X20-09716 | Win Home SL 10 32 64 English OPK |
-| X20-09737 | Win Pro 10 32 64 English OPK     |
+| X20-09658 | Windows 10 Home 32 64 English OPK    |
+| X20-09716 | Windows 10 Home SL 32 64 English OPK |
+| X20-09737 | Windows 10 Pro 32 64 English OPK     |
 
-### Optional: Windows 10 Language Packs, FoD’s, Appx bundles
+### Optional: Windows 10 language packs, FODs, and Appx bundles
 
-Note: When installing new or additional language packs, the FoD’s and Appx pacages are required downloads.
+Note: When installing new or additional language packs, the FODs, and Appx packages are required downloads.
 
 |           |                                            |
 |-----------|--------------------------------------------|
-| X20-20209 | Win 10 32 64 MultiLang OPK LangPackAll     |
-| X20-53652 | Windows Desktop OPK Supp Updates Sep15     |
+| X20-20209 | Windows 10 32 64 MultiLang OPK LangPackAll     |
+| X20-53652 | Windows 10 for desktop editions OPK Supp Updates Sep15     |
 | X20-52949 | Office Mobile MultiLang OPK -2             |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK |
 
-### Windows 10 Version 1511 images and Updates
+### Windows 10, version 1511 images and updates
 
 |  |       |
 |-----------|----------------------------------------|
-| X20-74664 | Win Home 10 1511 32/64 English OPK     |
-| X20-74668 | Win Home SL 10 1511 32/64 English OPK  |
-| X20-74669 | Win Home SL 10 1511 32/64 Eng Intl OPK |
-| X20-74672 | Win Pro 10 1511 32/64 English OPK      |
+| X20-74664 | Windows 10 Home, version 1511 32/64 English OPK     |
+| X20-74668 | Windows 10 Home SL, version 1511 32/64 English OPK  |
+| X20-74669 | Windows 10 Home SL, version 1511 32/64 Eng Intl OPK |
+| X20-74672 | Windows 10 Pro, version 1511 32/64 English OPK      |
 
-### Optional: Windows 10 Version 1511 Language Packs, FoD’s, Appx bundles
+### Optional: Windows 10, version 1511 language packs, FODs, and Appx bundles
 
-Note: When installing new or additional language packs, the FoD’s and Appx packages are required downloads.
+Note: When installing new or additional language packs, the FODs, and Appx packages are required downloads.
 
 |   |   |
 |-----------|-------------------------------------------------|
-| X20-74675 | Win 10 1511 32/64 MultiLang OPK LangPackAll/LIP |
-| X20-74677 | Win 10 1511 32/64 MultiLang OPK Feat on Demand  |
-| X20-87906 | Win 10 1511 32-BIT/X64 MultiLang OPK App Update |
+| X20-74675 | Windows 10, version 1511 32/64 MultiLang OPK LangPackAll/LIP |
+| X20-74677 | Windows 10, version 1511 32/64 MultiLang OPK Feat on Demand  |
+| X20-87906 | Windows 10, version 1511 32-BIT/X64 MultiLang OPK App Update |
 | X20-52949 | Office Mobile MultiLang OPK -2                  |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK      |
 
 # Windows 10 deployment procedure
 
-This section walks you through scripts and steps to creating a Windows 10 image.
+This section walks you through scripts and steps for creating a Windows 10 image.
 
-This guide use samples of configuration files and scripts as well as storing copy of the Windows installation files on a USB key. Before starting this guide, complete the steps in [Creating My USB-B](#creating-my-usb-b).
+This guide uses samples of configuration files and scripts, as well as storing a copy of the Windows installation files on a USB key. Before starting this guide, complete the steps in [Creating My USB-B](#creating-my-usb-b).
 
 This flowchart shows the deployment steps:
 
