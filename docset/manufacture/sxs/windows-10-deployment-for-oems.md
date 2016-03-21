@@ -8,7 +8,7 @@ This guide is intended for OEMs, and applies to Windows 10 for desktop editions 
 
 This guide is organized around three hardware and software configurations.
 
-| Hardware configuration       | 1            | 2            | 3            |
+| Hardware configuration       | 1            | 1b           | 2            |
 |------------------------------|--------------|--------------|--------------|
 | Form factor                  | Small tablet | 2-in-1       | Notebook     |
 | RAM                          | 1 GB         | 2 GB         | 4 GB         |

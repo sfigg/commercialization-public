@@ -1,4 +1,4 @@
-# System builder deployment of Windows 10 for desktop editions 
+# System builders deployment of Windows 10 for desktop editions 
 
 You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). 
 
@@ -42,7 +42,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 |-----------------|------------------------------------------|-----------------------------------------------------------------------|
 | **WinPE**       | Setup UI Language                        | EN-US                                                                 |
 |                 | User Data                                | Preinstallation Product Key for ODR - Defined                         |
-| **Specialize**  | Internet Explorere Home Page             | in the answer file                                                    |
+| **Specialize**  | Internet Explorer Home Page             | in the answer file                                                    |
 |                 | OEM Name                                 | Defined in the answer file                                            |
 |                 | OEM Logo                                 | Defined in the answer file                                            |
 |                 | Model                                    | Defined in the answer file                                            |
