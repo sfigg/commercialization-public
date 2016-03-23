@@ -154,7 +154,7 @@ This flowchart shows the deployment steps:
 
 ![Deployment process](images/deployment-process.png)
 
-## Create a WinPE bootable USB
+### Create a WinPE bootable USB
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -306,7 +306,7 @@ If you use an **x86** Windows 10 image:
     
     (where E: is the drive letter of **USB-A**)
 
-## Install Windows with basic customizations
+### Install Windows with basic customizations
 
 For a document to help you tailor the customizations defined in your unattend.xml file, see the [Windows 10 Update OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
@@ -538,7 +538,7 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
         Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\BasicImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
 
-#### Offline servicing
+### Offline servicing
 
 Modify your images by adding and removing languages, drivers, and packages.
 
@@ -568,7 +568,7 @@ Insert **USB-B** into your technician computer.
 
 Troubleshoot: If the mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK. Make sure that version is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling antivirus protection.
 
-#### Adding drivers
+#### Add drivers
 
 1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**.
 
@@ -1262,7 +1262,7 @@ To take advantage of all these new features and have the most robust and complet
 
 Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-#### Add an OEM-specific license
+##### Add an OEM-specific license
 
 1.  An OEM may add its OEM license terms to the License Terms screen in the first experience. 
 
@@ -1309,7 +1309,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
     ![Agreement and OOBE files](images\agreement-and-oobe-files.png)
     
     
-#### Modifying Answer File
+#### Modify the answer file
 
 1.  The OEM may wish to create a new answer file. The following sample answer file covers most the required settings for [Windows OEM Policy Document (OPD)](http://click.email.microsoftemail.com/?qs=4e5762cd9d90bfec0d11dfa9bca1a9efd4924672c363af092f176011a77178f6f1caa72260b9766a). Therefore it is recommended to use this answer file:
 
@@ -1338,7 +1338,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
         dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
 
-#### Unmounting Images
+#### Unmount the Image
 
 1.  Close all applications that might access files from the image.
 
@@ -1411,7 +1411,7 @@ In this section, the device is prepared for deployment by booting into WinPE, cr
 
 7.  Type ***exit*** to quit Diskpart.
 
-#### Deploy image
+#### Deploy the image
 
 Using the deployment script walkthrough-deploy.bat in USB-B\deployment folder, lay out the partitions on the device and apply the image. 
 
@@ -1548,7 +1548,6 @@ OEMTA Mode – Activation is done through the device’s Windows product key.
  
     oemsetup.cmd Mode=OEMTA Referral=####
 
-
 #### Preload Microsoft Office Single Image v15.4
 
 The current preload method of Office 2013 is different from other desktop apps. OEMs preinstall desktop apps so the apps are installed. This means that when the user launches the app, the app is already installed and automatically opens with no additional installation tasks other than EULA acceptance and/or user registration. With Office, compressed setup files are copied to the disk in addition to an out-of-box experience (OOBE) application which captures Office file associations and gives users an entry point to Try, Buy or Activate Office. Users do not have access to Word or Excel on the Start screen or in the All Apps view until they launch Office OOBE which is typically made available as a tile on the Start screen. When the user launches Office OOBE, setup of Office begins. Once Office setup is complete, the compressed setup files that are no longer necessary are removed from the disk.
@@ -1636,7 +1635,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
     -   Office 2013 32 64-bit Single Image v15.4 **English** OPK
 
-    -   Office 2013 32 64-bit Single Image v15.4   **French** OPK
+    -   Office 2013 32 64-bit Single Image v15.4 **French** OPK
 
     Note: When different languages of Office get installed consecutively, each additional Office having the different language will occupy ~300MB of disk space instead of ~1GB. For example, when Office15 English and Office15 French get installed, total disk space required will be ~1.3GB instead of ~2GB.
 
@@ -1652,7 +1651,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
     Note: The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. The 32-bit version of Office 2013 may be preloaded on computers that run either 32-bit or 64-bit operating systems. The 64-bit version of Office 2013 can be preloaded only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload *only the 32-bit version* of Office Single Image on both 32-bit and 64-bit computers.
 
-1.  Start installation by running office installation script.
+1.  Start the installation by running the office installation script.
 
     Office Single image install:
 
@@ -1670,11 +1669,11 @@ Push-button reset, first introduced in Windows 8, is a built-in recovery tool th
 
 In Windows 10, the Push-button reset features have been updated to include the following improvements:
 
--   **Image-less recovery **
+-   **Image-less recovery**
 
     Push-button reset features no longer require or support a separate recovery image on a local partition or on media. This significantly reduces the disk space needed to support the features, and makes recovery possible even on devices with limited storage capacity.
 
--   **Recovers to an updated state **
+-   **Recovers to an updated state**
 
 Push-button reset features now recover the Operating System (OS) and drivers (including device applets that are installed as part of INF-based driver packages) to an updated state. This reduces the amount of time users have to spend reinstalling the OS updates and drivers after performing a recovery.
 
@@ -1682,15 +1681,15 @@ The Push-button reset user experience continues to offer customization opportuni
 
 The following Push-button reset features are available to users with Windows 10 PCs:
 
--   **Refresh your PC **
+-   **Refresh your PC**
 
     Fixes software problems by reinstalling the OS while preserving the user data, user accounts, and important settings. All other preinstalled customizations are restored to their factory state. In Windows 10, this feature no longer preserves user-acquired Universal Windows apps1.
 
--   **Reset your PC **
+-   **Reset your PC**
 
     Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state.
 
--   **Bare metal recovery **
+-   **Bare metal recovery**
 
     Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
 
@@ -1701,9 +1700,9 @@ For more information, see:
 
 #### Prepare ScanState tool 
 
-Prepare scanstate tool to capture Classic Windows applications after they have been installed and additional settings like registry.
+Prepare ScanState tool to capture Classic Windows applications after they have been installed and additional settings like registry.
 
-**Note: You will do this on the technician system**
+Note: You will do this on the technician system.
 
 1.  On Technician PC, Insert USB-B.
 
@@ -1743,7 +1742,6 @@ Note: You may use the sample configuration file on USB-B\Recovery\recoveryimage\
         MD c:\Recovery\OEM
         E:\ScanState_x86\ScanState.exe /apps /genconfig:C:\Recovery\OEM\pbr_config.xml
     
-    
 
 1.  Open the configuration file in notepad
 
@@ -1771,7 +1769,7 @@ OEM may use a configuration file to restore registry keys and files.
 
 Create a migration XML file used to restore registry values manually entered during manufacturing process. The sample below restores the OEMID registry value set earlier in this document.
 
-**Note: USB-B\recovery\recoveryimage\regrecover.xml sample already contains the registry values.**
+Note: USB-B\recovery\recoveryimage\regrecover.xml sample already contains the registry values.
 
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
@@ -1801,11 +1799,11 @@ Create a migration XML file used to restore registry values manually entered dur
     
     </migration>
 
-#### Create recovery package using Scanstate
+#### Create recovery package using ScanState
 
-Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from **USB-B**\Recovery\RecoveryImage to create the scanstate package.
+Use the ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from **USB-B**\Recovery\RecoveryImage to create the scanstate package.
 
-**Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.**
+Important: The ScanState package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.
 
 1.  Create the recovery OEM folder and copy the contents of **USB-B**\Recovery\RecoveryImage.
 
@@ -1813,7 +1811,7 @@ Use ScanState tool to capture the installed customizations into a provisioning p
 
         Copy E:\StartLayout\layoutmodification.xml c:\recovery\OEM
 
-1.  Run scanstate to gather app and customizations.
+1.  Run ScanState to gather app and customizations.
 
 
     If you use an **x64** Windows 10 image:
@@ -1900,7 +1898,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
         
 #### [Compact OS limited storage devices only] Convert installed customizations
 
-**Important: Only do this step if you are deploying to limited storage device. Single instance will impact the launch performance of some desktop applications.**
+Only do this step if you are deploying to limited storage device. Single instance will impact the launch performance of some desktop applications.
 
 Please reference [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx) for more information.
 
@@ -1982,21 +1980,21 @@ Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will b
 
     -   Windows RE
 
-        1. From the **Choose an option** screen in Windows RE, click **Troubleshoot **
+        1. From the **Choose an option** screen in Windows RE, click **Troubleshoot**.
 
-        2. Click **Reset this PC** and then follow the on-screen instructions
+        2. Click **Reset this PC** and then follow the on-screen instructions.
 
 1.  Verify that recovery media can be created, and verify its functionality by running the bare metal recovery feature:
 
-    1.  Launch **Create a recovery drive** from Control Panel
+    1.  Launch **Create a recovery drive** from Control Panel.
 
-    2.  Follow the on-screen instructions to create the USB recovery drive
+    2.  Follow the on-screen instructions to create the USB recovery drive.
 
-    3. Boot the PC from the USB recovery drive
+    3. Boot the PC from the USB recovery drive.
 
-    4. From the **Choose an option** screen, click **Troubleshoot **
+    4. From the **Choose an option** screen, click **Troubleshoot**.
 
-    5. Click **Recover from a drive** and then follow the on-screen instructions
+    5. Click **Recover from a drive** and then follow the on-screen instructions.
 
 Note: The Push-button reset UI has been redesigned in Windows 10. The **Keep my files** option in the UI now corresponds to the **Refresh your PC** feature, whereas the **Remove everything** option corresponds to the **Reset your PC** feature. Verify recovery media can be created.
 
@@ -2010,7 +2008,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 ### Create recovery media
 
-**OPTION DECISION:** Choose **Option 1** to create the recovery media the same as the manufacturing image. This is the default and recommended recovery media configuration option but keep in mind that your manufacturing image may be larger than 4.6GB size. If it is and you are using DVD as a recovery media, your recovery file size will exceed the DVD capacity.
+Choose **Option 1** to create the recovery media the same as the manufacturing image. This is the default and recommended recovery media configuration option but keep in mind that your manufacturing image may be larger than 4.6GB size. If it is and you are using DVD as a recovery media, your recovery file size will exceed the DVD capacity.
 
 #### Option 1: Create recovery media from custom manufacturing image
 
@@ -2034,7 +2032,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
         xcopy C:\mount\windows\Windows\System32\Recovery\winre.wim C:\resetmedia \media\sources\boot.wim /H
 
-1.  Unmount the Windows image
+1.  Unmount the Windows image.
 
         dism /Unmount-Image /MountDir:C:\mount\windows /Discard 
 
@@ -2058,7 +2056,7 @@ For more information about creating a recovery image, see [Bare metal reset/reco
 
 #### Option 2: Create recovery media from the base Windows 10 OPK
 
-**OPTION DECISION:** Choose **Option 2** to create the recovery media from scratch by using the base Windows 10 OPK.
+Choose **Option 2** to create the recovery media from scratch by using the base Windows 10 OPK.
 
 1.  Copy the base Windows 10 image (**USB-B**\myWindows) to a folder named “my_distribution” located under C:\.
 
@@ -2122,7 +2120,7 @@ For more information about creating a recovery image, see [Bare metal reset/reco
 
         Dism /unmount-image /mountdir:C:\mount\boot1 /commit 
 
-#### Create a Bootable DVD with oscdimg tool
+##### Create a Bootable DVD with oscdimg tool
 
 1.  Start **Deployment and Imaging Tools** with administrator elevation.
 
