@@ -4,7 +4,7 @@ This guide documents a prescriptive method for Windows 10 deployment using the c
 
 This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new in Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
 
-# About this guide
+## About this guide
 
 This guide is organized around three hardware and software configurations.
 
@@ -26,11 +26,11 @@ This guide is organized around three hardware and software configurations.
 
 Many of the tools and deployment techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WIMBoot and replaced it with [Compact OS](https://msdn.microsoft.com/library/windows/hardware/dn940129.aspx). 
 
-## OEM Activation 3.0
+### OEM Activation 3.0
 
 For OEMs deploying systems with **OEM Activation 3.0 (OA 3.0)** enabled, please pay special attention to important additional steps and guidance regarding **OA 3.0** considerations.
 
-## Deployment and imaging tools environment
+### Deployment and imaging tools environment
 
 The Windows Assessment and Deployment Kit (Windows ADK) is a collection of tools and documentation that OEMs, ODMs, and IT Professionals use to customize, assess, and deploy Windows operating systems to new computers. Deployment tools enable you to customize, manage, and deploy Windows images. They can also be used to automate Windows deployments, removing the need for user interaction during Windows setup.
 
@@ -64,7 +64,7 @@ Tools inside Windows ADK that you will use with this guide:
 
     -   Installed using Deployment Tools category to supported downlevel host (to Windows 7)
 
-## Prerequisites
+### Prerequisites
 
 To complete the steps outlined in this guide, OEMs will require:
 
@@ -86,7 +86,7 @@ Note: This guide provides sample Windows PowerShell script to automate offline s
 
     If the installation will be successful, click **Install**.
 
-### Creating my USB-B
+#### Creating my USB-B
 
 -   The deployment steps in this guide depend on the sample configuration files included in **USB-B**. You can download [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) from the Microsoft Download Center. 
 
@@ -96,7 +96,7 @@ Format your desired USB Drive and name it as follows:
 
 ![Extract USB](images\extractusb.png) 
 
-## Software downloads
+### Software downloads
 
 To complete this guide, many OPK downloads are required from <https://www.microsoftoem.com>. The table below shows the required and optional downloads before getting started on the imaging process.
 
@@ -104,7 +104,7 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 
 **Important: The version of Windows components, Windows ADK, language packs, FOD, and Language Interface Pack must match the Windows 10 image version.**
 
-### Windows 10 RTM images and updates
+#### Windows 10 RTM images and updates
 
 |           |                                  |
 |-----------|----------------------------------|
@@ -112,7 +112,7 @@ This guide uses Windows 10 RTM images as examples for creating images. You shoul
 | X20-09716 | Windows 10 Home SL 32 64 English OPK |
 | X20-09737 | Windows 10 Pro 32 64 English OPK     |
 
-### Optional: Windows 10 language packs, FODs, and Appx bundles
+#### Optional: Windows 10 language packs, FODs, and Appx bundles
 
 Note: When installing new or additional language packs, the FODs, and Appx packages are required downloads.
 
@@ -123,7 +123,7 @@ Note: When installing new or additional language packs, the FODs, and Appx packa
 | X20-52949 | Office Mobile MultiLang OPK -2             |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK |
 
-### Windows 10, version 1511 images and updates
+#### Windows 10, version 1511 images and updates
 
 |  |       |
 |-----------|----------------------------------------|
@@ -132,7 +132,7 @@ Note: When installing new or additional language packs, the FODs, and Appx packa
 | X20-74669 | Windows 10 Home SL, version 1511 32/64 Eng Intl OPK |
 | X20-74672 | Windows 10 Pro, version 1511 32/64 English OPK      |
 
-### Optional: Windows 10, version 1511 language packs, FODs, and Appx bundles
+#### Optional: Windows 10, version 1511 language packs, FODs, and Appx bundles
 
 Note: When installing new or additional language packs, the FODs, and Appx packages are required downloads.
 
@@ -144,7 +144,7 @@ Note: When installing new or additional language packs, the FODs, and Appx packa
 | X20-52949 | Office Mobile MultiLang OPK -2                  |
 | X19-96440 | Office 2013 Single Image v15.4 English OPK      |
 
-# Windows 10 deployment procedure
+## Windows 10 deployment procedure
 
 This section walks you through scripts and steps for creating a Windows 10 image.
 
@@ -154,7 +154,7 @@ This flowchart shows the deployment steps:
 
 ![Deployment process](images/deployment-process.png)
 
-# Create a WinPE bootable USB
+## Create a WinPE bootable USB
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -188,7 +188,7 @@ This flowchart shows the deployment steps:
 
         Dism /mount-image /imagefile:c:\WinPE_x86\media\sources\boot.wim /index:1 /mountdir:c:\winpe_x86\mount
 
-### Add packages, dependencies, and language packs
+#### Add packages, dependencies, and language packs
 
 Use **Dism** command with the **/Add-Package** option. For example, in order to use Windows PowerShell in WinPE, NetFx dependency and the language packs must be installed.
 
@@ -206,7 +206,7 @@ If you use an **x86** Windows 10 image:
     dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\WinPE-PowerShell.cab"
     dism /image:C:\winpe_x86\mount /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\en-us\WinPE-Powershell_en-us.cab"
 
-### Add drivers 
+#### Add drivers 
 
 Use the Dism command with the /Add-Driver option. 
 
@@ -230,7 +230,7 @@ If you use an **x86** Windows 10 image:
 
     dism /Image:C:\Winpe_x86 /Add-Driver /Driver:c:\drivers /Recurse
 
-### Cleanup boot.wim
+#### Cleanup boot.wim
 
 Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices.
 
@@ -242,7 +242,7 @@ If you use an **x86** Windows 10 image:
 
     dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase
 
-### Optimize Winpe on boot
+#### Optimize Winpe on boot
 
 Optimize online winpe by setting the power scheme to High performance:
 
@@ -270,7 +270,7 @@ Close and save notepad.
 
 ![Startnet](images/startnet.png)
 
-### Commit changes to WinPE 
+#### Commit changes to WinPE 
 
 Run the commands in the following table to commit the changes to WinPE and mark files for deletion.
 
@@ -288,7 +288,7 @@ If you use an **x86** Windows 10 image:
     Del c:\winpe_x86\media\sources\boot.wim
     Copy c:\winpe_x86\mount\boot2.wim c:\winpe_x86\media\sources\boot.wim
 
-### Create a bootable USB key
+#### Create a bootable USB key
 
 1.  Connect **USB-A** Drive. Make sure the drive capacity is at least 4 GB.
 
@@ -306,13 +306,13 @@ If you use an **x86** Windows 10 image:
     
     (where E: is the drive letter of **USB-A**)
 
-# Install Windows with basic customizations
+## Install Windows with basic customizations
 
 For a document to help you tailor the customizations defined in your unattend.xml file, see the [Windows 10 Update OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
 Download Windows 10 Professional from [Digital Operations Center](http://www.microsoftoem.com/) Software Order Center, and use Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to generate the ISO files. OEMs can download the windows kit which is applicable to them in terms of language and edition.
 
-### Create an answer file
+#### Create an answer file
 
 An "answer file" is an XML-based file that contains setting definitions and values to use during Windows Setup. In an answer file, you specify various setup options, including how to partition disks, the location of the Windows image to install, and the product key to apply. Values that apply to the Windows installation, such as the names of user accounts, display settings, and Internet Explorer Favorites can also be specified. The answer file for Setup is typically called **Unattend.xml**.
 
@@ -365,7 +365,7 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
    
 1.  To associate the answer file with the Windows Image, click **OK** when prompted.
 
-### Customize the answer file
+#### Customize the answer file
 
 Note: A blank character in specialize | Microsoft-Windows-Shell-Setup | Computer Name section of the answer file will result in Windows installation failure.
 
@@ -398,7 +398,7 @@ Please refer to the Kit Guide Windows 10 Default Manufacturing Key OEM PDF to fi
 
 Example: Navigate to OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf.
 
-### Install Windows
+#### Install Windows
 
 1.  Connect the **USB-A** drive and boot the Reference computer.
 
@@ -456,7 +456,7 @@ If you use the AutoUnattend, the system will automatically boot into Audit mode 
 
 Note: Many Windows features, including the Start menu and the Settings menu, do not work in this environment.
 
-### Apps and Store opportunities
+#### Apps and Store opportunities
 
 Through Windows 10 and the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access.
 
@@ -488,7 +488,7 @@ Change the registry setting and add the OEM ID. OEM Windows Store Program partic
 
     Important: The OEMID registry key is not restored automatically during PBR in Windows 10. For more information about how to restore the OEMID registry key during PBR operation, see [Prepare system for recovery Push Buton Reset scenarios](#prepare-system-for-recovery-push-button-reset-scenarios).
 
-### Verify customizations in Audit mode
+#### Verify customizations in Audit mode
 
 Connecting the computer to the internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error when you run generalize + syspreping on the machine from audit mode.
 
@@ -506,7 +506,7 @@ Connecting the computer to the internet is not recommended during manufacturing 
 
 Important: The system must be set to generalize and OOBE in order to further service the image. In the following sections, an unattend file will be used to return to Audit mode on the OOBE-sealed system. There are known issues when resealing to Audit mode in this phase and it is not recommended.
 
-## Capture basic image
+### Capture basic image
 
 1.  Connect "**USB-A**" and boot the Reference computer.
 
@@ -538,13 +538,13 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
         Dism /Capture-Image /CaptureDir:C:\ /ImageFile:E:\Images\BasicImage.wim /Name:"myWinImage" /scratchdir:e:\scratchdir
 
-### Offline servicing
+#### Offline servicing
 
 Modify your images by adding and removing languages, drivers, and packages.
 
 ![Create a model specific image](images\create-model-specific-image.png)
 
-### Mount image
+#### Mount image
 
 Insert **USB-B** into your technician computer.
 
@@ -568,7 +568,7 @@ Insert **USB-B** into your technician computer.
 
 Troubleshoot: If the mounting operation fails, make sure the Windows 10 version of DISM is the one installed with the Windows ADK. Make sure that version is being used and not an older version from the Technician Computer. Do not mount images to protected folders, such as the User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling antivirus protection.
 
-### Adding drivers
+#### Adding drivers
 
 1.  Adding driver packages (.inf files) one by one. SampleDriver\driver.inf is a **sample** driver package that is specific to the computer model. (Type a specific driver path). **If there are multiple driver packages please skip to the next step**.
 
@@ -604,7 +604,7 @@ In these cases, you need to add PersistAllDeviceInstalls and DoNotCleanupNonPres
 </tr>
 </table>
 
-#### PersistAllDeviceInstalls
+##### PersistAllDeviceInstalls
 
 To save time during installation and to speed up the out-of-box experience for end users, instruct Windows Setup that the hardware on the reference computer and the destination computers are identical. By doing this, Windows Setup maintains driver configurations during image capture and deployment.
 
@@ -632,7 +632,7 @@ OEMs using **x86 Windows 10 image**, add the following setting to **USB-B**\Answ
         </component>
     </settings>
 
-#### DoNotCleanupNonPresentDevices
+##### DoNotCleanupNonPresentDevices
 
 The **DoNotCleanUpNonPresentDevices** setting specifies whether plug-and-play information for devices that are not detected on the destination computer during the next specialize should remain on the computer.
 
@@ -666,7 +666,7 @@ OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\Answ
         </component>
     </settings>
 
-### Adding LPs / LIPs / FoDs / GDRs
+#### Adding LPs / LIPs / FoDs / GDRs
 
 The following table lists language pack components and any dependencies. For more information, see [Language packs](https://msdn.microsoft.com/library/windows/hardware/dn898584.aspx) and [Feature on Demand (FoD)](https://msdn.microsoft.com/library/windows/hardware/mt171094.aspx).
 
@@ -921,7 +921,7 @@ If you use an **x64** Windows 10 image:
 
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"e:\LanguageFeaturePacks\x64\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 
-if you use an **x86** Windows 10 image:
+If you use an **x86** Windows 10 image:
 
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 
@@ -929,7 +929,7 @@ Verify the package has been installed to the Windows image:
 
     Dism /Get-Packages /Image:C:\mount\windows
 
-#### [Optional] Add a language with additional fonts
+##### [Optional] Add a language with additional fonts
 
 As part of the language pack re-factoring for Windows 10, some languages with Fonts were factored out into their own Language Cabs. In this section, ja-JP language is added to the image with the language Font cab in addition to other feature language packs.
 
@@ -941,7 +941,7 @@ If you use an **x86** Windows 10 image:
 
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
 
-### Add languages to Windows RE
+#### Add languages to Windows RE
 
 When you add languages to Windows, add them to Windows RE to ensure a consistent language experience in recovery scenarios.
 
@@ -985,7 +985,7 @@ If you use an **x86** Windows 10 image:
 
         Package Identity : Microsoft-Windows-WinPE-Rejuv_de-de ... de-de~10.0.9926.0 State : Installed
 
-#### [Optional] Add ja-jp language packs
+##### [Optional] Add ja-jp language packs
 
 Complete this section only if you added ja-jp language packs from the optional section [Add a language with additional fonts](#add-a-language-with-additional-fonts).
 
@@ -1015,7 +1015,7 @@ If you use an **x86** Windows 10 image:
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-StorageWMI_ja-jp.cab"
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\x86\WinPE_OCs\ja-jp\WinPE-HTA_ja-jp.cab"
 
-### [Optional] Remove English language to make a single language image
+#### [Optional] Remove English language to make a single language image
 
 In Windows 10, Microsoft will only make en-US versions available. To make the image a single image after installing de-DE in the previous section, you can remove en-US from the image, making it only de-DE.
 
@@ -1036,7 +1036,7 @@ Troubleshoot: If an error occurs while removing a package, such as:
     
 Run dism.exe remove package again on only the failing package.
 
-### [Optional] Remove additional languages from WinRE
+#### [Optional] Remove additional languages from WinRE
 
 If you removed any languages, they must also be removed from WinRE.
 
@@ -1048,13 +1048,13 @@ If you use an **x86** Windows 10 image:
 
     Dism /image:"c:\mount\winre" /remove-package /packagename:Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-EnhancedStorage-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-HTA-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Rejuv-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-Scripting-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SecureStartup-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-SRT-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-StorageWMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WDS-Tools-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384 /packagename:WinPE-WMI-Package~31bf3856ad364e35~x86~en-US~10.0.10240.16384
 
-### Verify language components are part of the image
+#### Verify language components are part of the image
 
 Use Dism to verify language components are part of the image.
 
     Dism /Get-Capabilities /Image:"C:\mount\windows"
 
-### Setting language regional settings
+#### Setting language regional settings
 
 1.  Use Dism to set the default language of the image:
 
@@ -1070,7 +1070,7 @@ Use Dism to verify language components are part of the image.
 
         Dism /Image:C:\mount\windows /set-timezone:"W. Europe Standard Time"
 
-### Add update packages (KB packages) to the image
+#### Add update packages (KB packages) to the image
 
 Use Dism to apply the latest GDR and any prerequisite KBs. Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package. For example, this guide will use the latest GDR 2015.11 D. KB3118754. 
 
@@ -1090,7 +1090,7 @@ The following example shows how to extract KBs from the OPK download from SOC.
 
     ![Update 3097617](images\update-3097617.png)
 
-#### Apply GDR 2015.11 D. KB3118754
+##### Apply GDR 2015.11 D. KB3118754
 
 If you use an **x64** Windows 10 image:
 
@@ -1104,7 +1104,7 @@ Note: Each package will usually be a new KB, and will increase the build revisio
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR
 
-### Add Update packages to WinRE
+#### Add Update packages to WinRE
 
 Important: KB3118754 must also be applied to WinRE.wim to fix a known issue: Recovery fails during Reset/Refresh when a Scanstate package (USMT.ppkg) contains an application which has a path with a leading space. Example: c :\Program Files\ Contoso\RunMe.exe.
 
@@ -1118,7 +1118,7 @@ If you use an **x86** Windows 10 image:
 
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
 
-### Reinstall inbox apps
+#### Reinstall inbox apps
 
 When you add language packs, you should reinstall the inbox apps by removing each app and then installing it again by using DISM. The following procedure shows you how to reinstall the Get Started inbox app, but the steps will work for all apps by substituting the appropriate package.
 
@@ -1194,7 +1194,7 @@ Important: The appx bundles must install the matching dependency packages or app
 
     dism /image:"c:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d.appxbundle" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Framework.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Runtime.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_ARM__8wekyb3d8bbwe.appx" /licensepath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d_License1.xml"
 
-### Adding Windows Universal Office Mobile
+#### Adding Windows Universal Office Mobile
 
 Obtain X20-88613 Office Mobile MultiLang v1.2 OPK (This is the latest update when this guide is published. Please verify on [www.microsoftoem.com](http://www.microsoftoem.com) > SOC (Software Order Center) if a newer version of update packages exits.
 
@@ -1214,7 +1214,7 @@ Pre-install Office single image (either with or with out perpetual or subscripti
 
         dism /image:"c:\mount\windows" /add-provisionedappxpackage /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592_License1.xml"
 
-### Modify the Start layout
+#### Modify the Start layout
 
 The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, classic Windows applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists to the user, including important or frequently accessed system locations and recently installed apps.
 
@@ -1262,7 +1262,7 @@ To take advantage of all these new features and have the most robust and complet
 
 Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-### Add an OEM-specific license
+#### Add an OEM-specific license
 
 1.  An OEM may add its OEM license terms to the License Terms screen in the first experience. 
 
@@ -1309,7 +1309,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
     ![Agreement and OOBE files](images\agreement-and-oobe-files.png)
     
     
-### Modifying Answer File
+#### Modifying Answer File
 
 1.  The OEM may wish to create a new answer file. The following sample answer file covers most the required settings for [Windows OEM Policy Document (OPD)](http://click.email.microsoftemail.com/?qs=4e5762cd9d90bfec0d11dfa9bca1a9efd4924672c363af092f176011a77178f6f1caa72260b9766a). Therefore it is recommended to use this answer file:
 
@@ -1328,7 +1328,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
     </tr>
     </table>
 
-### Optimize WinRE
+#### Optimize WinRE
 
 1.  Increase scratchspace size.
 
@@ -1338,7 +1338,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
         dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
 
-### Unmounting Images
+#### Unmounting Images
 
 1.  Close all applications that might access files from the image.
 
@@ -1391,11 +1391,11 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 This process may take several minutes.
 
-## Deploy the image to new computers
+### Deploy the image to new computers
 
 In this section, the device is prepared for deployment by booting into WinPE, creating a partition layout, and deploying the image.
 
-### Boot to WinPE
+#### Boot to WinPE
 
 1.  On the technician computer, locate the following files in **USB-B**/Deployment destination. Please see [Creating My USB-B](#creating-my-usb-b)) to create and place the files in the correct paths. Skip this step if it was done previously.
 
@@ -1411,7 +1411,7 @@ In this section, the device is prepared for deployment by booting into WinPE, cr
 
 7.  Type ***exit*** to quit Diskpart.
 
-### Deploy image
+#### Deploy image
 
 Using the deployment script walkthrough-deploy.bat in USB-B\deployment folder, lay out the partitions on the device and apply the image. 
 
@@ -1429,17 +1429,17 @@ After the computer boots to the OOBE screen, press this key combination to boot 
 
     Ctrl+Shift+F3
 
-## Preload Microsoft Office
+### Preload Microsoft Office
 
 This section provides guidance for pre-loading Office 2016 and Office v15.4.
 
-### Preload Microsoft Office 2016
+#### Preload Microsoft Office 2016
 
 This guide provides information for licensed original equipment manufacturers (OEMs) about how to use the Office Deployment Tool to preinstall Office 2016 on to devices that are running the Windows operating system.
 
 Note: This guide doesn’t cover the PIPC scenarios for OEMs in Japan. 
 
-#### Prepare Office files on Technician PC
+##### Prepare Office files on Technician PC
 
 Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment tool for OEM OPK.
 
@@ -1481,7 +1481,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
 12. Unplug USB-B from the technician computer. 
 
-#### Install Office 2016 on Reference PC
+##### Install Office 2016 on Reference PC
 
 1. Plug USB-B into the reference computer, which is in Audit mode.
 2.	Find the drive letter for USB-B; for this example USB-B is E:\.
@@ -1498,7 +1498,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
     Setup.exe /configure ConfigureO365Home.xml
 
-#### Pin Office tiles to the Start menu
+##### Pin Office tiles to the Start menu
 
 You must pin the Office tiles to the Start menu, otherwise Windows will remove the Office files during OOBE boot phase.
 
@@ -1526,7 +1526,7 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
     
     ![Office tiles pinned to the Start menu](images\office-tiles-pinned-to-start-menu.png)
     
-####  Configure the Setup experience for the user   
+#####  Configure the Setup experience for the user   
 
 After you install Office on the device, you also need to configure the Setup experience for the user. This is the experience the user sees when they open an Office app for the first time on the device. This also is intended to ensure that Office is properly licensed and activated.
 
@@ -1549,7 +1549,7 @@ OEMTA Mode – Activation is done through the device’s Windows product key.
     oemsetup.cmd Mode=OEMTA Referral=####
 
 
-### Preload Microsoft Office Single Image v15.4
+#### Preload Microsoft Office Single Image v15.4
 
 The current preload method of Office 2013 is different from other desktop apps. OEMs preinstall desktop apps so the apps are installed. This means that when the user launches the app, the app is already installed and automatically opens with no additional installation tasks other than EULA acceptance and/or user registration. With Office, compressed setup files are copied to the disk in addition to an out-of-box experience (OOBE) application which captures Office file associations and gives users an entry point to Try, Buy or Activate Office. Users do not have access to Word or Excel on the Start screen or in the All Apps view until they launch Office OOBE which is typically made available as a tile on the Start screen. When the user launches Office OOBE, setup of Office begins. Once Office setup is complete, the compressed setup files that are no longer necessary are removed from the disk.
 
@@ -1664,7 +1664,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
 After the process is completed, the Microsoft Office application tile will be placed on the Start screen. However, the user can install only one language version of Office Single Image v15.4  By default, the language version of the OOBE application matches the Windows language settings and the Office Single Image v15.1 language that is preloaded on the computer. If this match doesn’t take place, the language dialog box will contain languages that are based on the Office 2013 preloaded languages.
 
-## Prepare system for recovery Push Button Reset scenarios
+### Prepare system for recovery push-button reset scenarios
 
 Push-button reset, first introduced in Windows 8, is a built-in recovery tool that allows users to recover the OS while preserving their data and important customizations, without having to back-up their data in advance. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence.
 
@@ -1699,7 +1699,7 @@ For more information, see:
 - [Windows Recovery Environment (Windows RE)](https://msdn.microsoft.com/library/windows/hardware/dn938364.aspx)
 - [Hard Drives and Partitions](https://msdn.microsoft.com/library/windows/hardware/dn898577.aspx)
 
-### Prepare ScanState tool 
+#### Prepare ScanState tool 
 
 Prepare scanstate tool to capture Classic Windows applications after they have been installed and additional settings like registry.
 
@@ -1721,7 +1721,7 @@ Prepare scanstate tool to capture Classic Windows applications after they have b
 
     Where E: is the USB-B drive letter.
 
-### Create scanstate configuration file
+#### Create ScanState configuration file
 
 OEM can use a configuration file to restore and exclude registry keys and files during the PBR process.
 
@@ -1757,7 +1757,7 @@ Note: You may use the sample configuration file on USB-B\Recovery\recoveryimage\
 
     &lt;component displayname="Security-Malware-Windows-Defender" migrate="yes"…
 
-1.  Modify the “migrate” value from “yes” to “no” for each line. For example:
+1.  Modify the "migrate" value from "yes" to "no" for each line. For example:
 
     &lt;component displayname="Windows-Defender-AM-Sigs" migrate="**no**"…
 
@@ -1765,7 +1765,7 @@ Note: You may use the sample configuration file on USB-B\Recovery\recoveryimage\
 
     &lt;component displayname="Security-Malware-Windows-Defender" migrate="**no**"…
 
-### Create Scanstate migration file
+#### Create ScanState migration file
 
 OEM may use a configuration file to restore registry keys and files.
 
@@ -1801,7 +1801,7 @@ Create a migration XML file used to restore registry values manually entered dur
     
     </migration>
 
-### Create recovery package using Scanstate
+#### Create recovery package using Scanstate
 
 Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from **USB-B**\Recovery\RecoveryImage to create the scanstate package.
 
@@ -1828,7 +1828,7 @@ Use ScanState tool to capture the installed customizations into a provisioning p
     
     *Where E: is the drive letter of **USB-B***
 
-### Create Extesibility scripts to restore additional settings
+#### Create extensibility scripts to restore additional settings
 
 You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
 
@@ -1859,13 +1859,13 @@ Copy unattend.xml files for restoring settings
 </tr>
 </table>
 
-### Copy winre.wim backup
+#### Copy winre.wim backup
 
 During the deployment the winre.wim file is moved. Before capturing the final image the backup winre.wim created in section 4.5.17 must be copied back otherwise the recovery environment will not work on the final image deployment.
 
     Copy e:\images\winre_bak.wim c:\windows\system32\recovery\winre.wim
 
-## Finalize and capture the manufacturing image
+### Finalize and capture the manufacturing image
 
 1.  Delete installation folders and files that have been created of the preloaded applications which are for example, *C:\Office-SingleImagev15.4-Setup*. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
 
@@ -1898,7 +1898,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
         ![Diskpart](images\diskpart-v10.png)
         
-### [Compact OS limited storage devices only] Convert installed customizations
+#### [Compact OS limited storage devices only] Convert installed customizations
 
 **Important: Only do this step if you are deploying to limited storage device. Single instance will impact the launch performance of some desktop applications.**
 
@@ -1906,7 +1906,7 @@ Please reference [Compact OS](https://msdn.microsoft.com/library/windows/hardwar
 
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\apps.ppkg /ImagePath:C:\ /SingleInstance
 
-### Reduce size of the manufacturing image
+#### Reduce size of the manufacturing image
 
 After the manufacturing image is ready, choose to reduce the size of the image by clearing up the SXS store using DISM to offline service the image. Switch to the Technician Computer and mount the image.
 
@@ -1918,7 +1918,7 @@ After the manufacturing image is ready, choose to reduce the size of the image b
 
     RD c:\scratchdir
 
-### Capture the final manufacturing image
+#### Capture the final manufacturing image
 
 Note: It is recommended to run dism operations using a cache directory. For this sample, we create a scratchdir on the USB-B key for temporary files. However, you may choose any hard drive has a large amount of available space to create a scratch directory.
 
@@ -1928,13 +1928,13 @@ Note: It is recommended to run dism operations using a cache directory. For this
 
     RD c:\scratchdir
 
-### Deploy the final image for verification
+#### Deploy the final image for verification
 
 Run the sample walkthrough-deploy.cmd script to deploy the finalimage.wim.
 
     E:\Deployment\walkthrough-deploy.cmd E:\Images\FinalImage.wim
 
-## Verify image customizations and recovery
+### Verify image customizations and recovery
 
 -   Computer restarts and starts. This may take a few minutes.
 
@@ -1968,7 +1968,7 @@ Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will b
 
 ![App promotions](images\app-promotions.png)
 
-### Verify recovery
+#### Verify recovery
 
 1.  Verify that your customizations are restored after recovery, and that they continue to function by running the **Refresh your PC** and **Reset your PC** features from the following entry points:
 
@@ -2000,7 +2000,7 @@ Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will b
 
 Note: The Push-button reset UI has been redesigned in Windows 10. The **Keep my files** option in the UI now corresponds to the **Refresh your PC** feature, whereas the **Remove everything** option corresponds to the **Reset your PC** feature. Verify recovery media can be created.
 
-## Final shipment
+### Final shipment
 
 OEMs must power on the PC at least once, and allow the specialize configuration pass of Windows Setup to complete, before shipping the PC to customers.
 
@@ -2008,11 +2008,11 @@ The specialize configuration pass adds hardware-specific information to the PC a
 
 Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
 
-## Create recovery media
+### Create recovery media
 
 **OPTION DECISION:** Choose **Option 1** to create the recovery media the same as the manufacturing image. This is the default and recommended recovery media configuration option but keep in mind that your manufacturing image may be larger than 4.6GB size. If it is and you are using DVD as a recovery media, your recovery file size will exceed the DVD capacity.
 
-### Option 1: Create recovery media from custom manufacturing image
+#### Option 1: Create recovery media from custom manufacturing image
 
 1.  On the Technician Computer, mount the manufacturing image which is to be used as the recovery media. Mount the final image.
 
@@ -2056,7 +2056,7 @@ Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoe
 
 For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](https://msdn.microsoft.com/library/windows/hardware/dn946570.aspx).
 
-### Option 2: Create recovery media from the base Windows 10 OPK
+#### Option 2: Create recovery media from the base Windows 10 OPK
 
 **OPTION DECISION:** Choose **Option 2** to create the recovery media from scratch by using the base Windows 10 OPK.
 
@@ -2074,7 +2074,7 @@ For more information about creating a recovery image, see [Bare metal reset/reco
     
     (where E:\ is the volume label of **USB-B**)                             
 
-#### Add Language Packs to Windows Setup
+##### Add Language Packs to Windows Setup
 
 1.  In order to add language packs to Windows setup, language pack files must be added to both install.wim and winre.wim images of the targeted Windows distributon.
 
@@ -2122,7 +2122,7 @@ For more information about creating a recovery image, see [Bare metal reset/reco
 
         Dism /unmount-image /mountdir:C:\mount\boot1 /commit 
 
-### Create a Bootable DVD with oscdimg tool
+#### Create a Bootable DVD with oscdimg tool
 
 1.  Start **Deployment and Imaging Tools** with administrator elevation.
 

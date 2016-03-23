@@ -2,7 +2,7 @@
 
 You can use this guide to deploy Windows 10 to a line of computers. It provides prescriptive guidance for Windows 10 deployment, including online and offline customizations, and optional steps for specific scenarios. It is intended to help system builders (level 200 technicians) with both 64-bit and 32-bit configurations, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). 
 
-# Prepare your lab environment
+## Prepare your lab environment
 
 The first step is to set up your lab environment, which includes installing the latest Windows Assessment and Deployment Kit (Windows ADK) tools onto your designated Technician computer. The Technician computer must run Windows 10 x64 if you are going to deploy x64 images, or run Windows 10 x86 for x86 image deployment. Incorrect configurations may result in supported architecture mismatch while using deployment tools in the Windows ADK. Where noted, follow the appropriate guidelines for either a 64-bit vs 32-bit deployment.
 
@@ -26,7 +26,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 </tr>
 </table>
 
-## Creating my USB-B
+### Creating my USB-B
 
 -   Format your USB drive and name it as follows:
 
@@ -36,7 +36,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 -   The contents of the configuration files included in USB-B are examples that you may change according to your branding and manufacturing choices. However, file names and hierarchy of the folders and files must be the same as demonstrated below in order to align your deployment procedure with this guide.
 
-## Customizations throughout the document
+### Customizations throughout the document
 
 | **Pass**        | **Setting**                              | **Action**                                                            |
 |-----------------|------------------------------------------|-----------------------------------------------------------------------|
@@ -53,13 +53,13 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 |                 | Themes                                   | Custom Theme with the OEM logo as the desktop background has been set |
 |                 | Visual Effects                           | SystemDefaultBackground set                                           |
 
-## Additional customizations
+### Additional customizations
 
-## Product deployment
+### Product deployment
 
 -   Office Single Image v15.4 OPK preloaded
 
-## Image customization
+### Image customization
 
 - Adding language interface packs to Windows
 
@@ -71,7 +71,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 - Pinning desktop applications to start sceen
 
-# Create a USB drive that can boot to WinPE
+## Create a USB drive that can boot to WinPE
 
 You must use the matching version of Windows ADK for the images being customized. If building an image using the RTM image, use Windows ADK for Windows 10. If using a Windows 10, version 1511 image, use the Windows ADK for Windows 10, version 1511.
 For more details about the Windows ADK, see the [Windows 10 ADK Documentation Homepage](https://technet.microsoft.com/library/mt297512.aspx).
@@ -120,7 +120,7 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
     (Where F: is the drive letter of USB)
 
-## Install Windows with basic customizations
+### Install Windows with basic customizations
 
 Please obtain Windows 10 x86/x64 DVD media from a Microsoft Authorized Distributor.
 
@@ -150,7 +150,7 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
 2.  To add a package, click **Insert**, select **Package**, and then browse to the package you want to add. This step is optional.
 
-## Customize the answer file
+### Customize the answer file
 
 Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup | Computer Name** will result in Windows installation failure.
 
@@ -194,7 +194,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
     Save the answer file to USB-B\ConfigSet\AutoUnattend.xml and close Windows SIM.
 
-## Install Windows
+### Install Windows
 
 1.  Please complete [Creating My USB-B](#creating-my-usb-b) section before skipping this step to make sure the Windows installation files have been copied to the **myWindows** directory in USB-B.
 
@@ -218,7 +218,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
 2.  Disconnect USB-B right after the computer reboots.
 
-## Verify customizations in Audit mode
+### Verify customizations in Audit mode
 
 Important: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
 
@@ -236,7 +236,7 @@ Important: Connecting the computer to internet is not recommended during manufac
 
 3.  In the shutdown options box select **Shutdown**.
 
-## Capture an image
+### Capture an image
 
 1.  Boot reference computer and connect USB-A.
 
@@ -254,13 +254,13 @@ Important: Connecting the computer to internet is not recommended during manufac
 
     C:\ is the volume label of currently installed Windows. E:\ is the volume label of USB-B.
 
-## Update images for each model: offline servicing
+### Update images for each model: offline servicing
 
 1.  Before mounting and editing the image please take a backup copy in the same directory and rename the image which will be modified as ModelSpecificImage.wim.
 
         Copy E:\Images\ThinImage.wim E:\Images\ModelSpecificImage.wim
 
-## Mount images
+### Mount images
 
 1.  Mount Windows image (ModelSpecificImage.wim) This process extracts the contents of the image file to a location where you can view and modify the mounted image.
 
@@ -282,9 +282,9 @@ Important: Connecting the computer to internet is not recommended during manufac
 
     ![Windows folder](images/windowsfolder.png)
 
-## Modify images
+### Modify images
 
-### Add drivers
+#### Add drivers
 
 If you use an x64 Windows 10 image, add x64 drivers; if you use an x86 Windows 10 image, add x86 drivers.
 
@@ -314,7 +314,7 @@ In this case, you need to add an extra parameter to USB-B\AnswerFiles\UnattendSy
 
 This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during generalize pass in order to persist the drivers in the image. For more information about the details of this property and how to add it to an answer file, see [PersistAllDeviceInstalls](http://technet.microsoft.com/library/ff716298.aspx).
 
-### Add language interface packs
+#### Add language interface packs
 
 Obtain the Windows 10 Language Interface Packs from [OEM Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
 
@@ -340,7 +340,7 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
 
 **Important: Do not install a language pack after an update. If an update (hotfix, general distribution release [GDR], or service pack [SP]) is installed that contains language-dependent resources before a language pack is installed, the language-specific changes that are contained in the update are not applied the update will need to be reinstalled. Always install language packs before installing updates.**
 
-### Add update packages
+#### Add update packages
 
 If you use an x64 Windows 10 image, add x64 update packages; if you use an x86 Windows 10 image, add x86 update packages.
 
@@ -386,7 +386,7 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
         Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
 
-### Add OEM specific visual customizations
+#### Add OEM specific visual customizations
 
 1.  Create OEM folder under C:\mount\windows\Windows\system32\ directory.
 
@@ -404,7 +404,7 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     ![Add desktop background](images/adddesktopbackground.png)
 
-### Modify Start layout
+#### Modify Start layout
 
 The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, classic Windows applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
 
@@ -450,7 +450,7 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
     Note: If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start. The first six tiles are placed in the first OEM group, and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-### Modify the answer file
+#### Modify the answer file
 
 A system builder may want to make additional customizations through an unattend file. The sample unattend file on USB-B contains additional common customizations.
 
@@ -458,7 +458,7 @@ A system builder may want to make additional customizations through an unattend 
 
 Where E:\ is USB-B.
 
-## Optimize WinRE
+### Optimize WinRE
 
 1.  Increase scratchspace size.
 
@@ -468,7 +468,7 @@ Where E:\ is USB-B.
 
         Dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
 
-## Unmount images
+### Unmount images
 
 1.  Close all applications that might access files from the image
 
@@ -521,7 +521,7 @@ Where E:\ is USB-B.
 
     This process may take several minutes.
 
-## Deploy the image to new computers (Windows installation)
+### Deploy the image to new computers (Windows installation)
 
 1.  On the technician computer, locate the following files in USB-B/Deployment. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in correct paths. 
 
@@ -543,7 +543,7 @@ Where E:\ is USB-B.
 
         Exit
 
-## Update images manually by using AUDIT MODE (online servicing)
+### Update images manually by using AUDIT MODE (online servicing)
 
 Important: Connecting the computer to internet is not recommended during manufacturing stages. It is not recommended to get the updates from Windows Update in audit mode. This will likely generate an error while generalize + syspreping the machine from audit mode.
 
@@ -551,7 +551,7 @@ Important: Connecting the computer to internet is not recommended during manufac
 
 2.  If installing Office, refer to [Preload Microsoft Office single image v15.4 OPK](#preload-microsoft-office-single-image-v15.4-opk) for Microsoft Office Single image v15.4 or [Preload Microsoft Office 2016](#preload-microsoft-office-2016) for Office 2016.
 
-## Preload Microsoft Office single image v15.4 OPK
+### Preload Microsoft Office single image v15.4 OPK
 
 Download Microsoft Office Single Image v15.4 from the [OEM Partner Center](http://www.microsoft.com/OEM/en/installation/downloads/Pages/office-single-image-v15-opk.aspx).
 
@@ -575,15 +575,15 @@ Download Microsoft Office Single Image v15.4 from the [OEM Partner Center](http:
 
 2.  To pin the to the start screen please see *Section 4.2.4 Pinning Desktop Apps to Start Screen and Taskbar* and type in **%allusersprofile%\Microsoft\Windows\Start Menu\Programs\Microsoft Office.lnk** to &lt;AppIdOrPath&gt; property. Please see that this customization already takes place in USB-B\AnswerFiles\UnattendSysprep.xml answer file.
 
-## Preload Microsoft Office 2016
+### Preload Microsoft Office 2016
 
 Please reference the [OEM Partner Center](https://www.microsoft.com/oem/en/installation/office/Pages/index.aspx#fbid=Pm9Tzt0sXR4) for the latest information on when the Office 2016 installation file will be available for download, as well as the Office 2016 installation guide. This guide will be updated shortly after Office 2016 releases.
 
-## Prepare the system for recovery with Push Button Reset
+### Prepare the system for recovery with push button reset
 
 Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/hardware/dn938307.aspx) and [Windows Recovery Environment (Windows RE)](https://msdn.microsoft.com/library/windows/hardware/dn938364(v=vs.85).aspx) and [Hard Drives and Partitions](https://msdn.microsoft.com/library/windows/hardware/dn898577.aspx) for more information.
 
-1.  Prepare Scanstate tool.
+1.  Prepare the ScanState tool.
 
     If you use an **x64** Windows 10 image:
 
@@ -615,9 +615,9 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
 1.  Create the recovery package.
 
-    Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from USB-B\Recovery\RecoveryImage to create scanstate package.
+    Use ScanState tool to capture the installed customizations into a provisioning package, and save it in the folder c:\Recovery\customizations. This document uses the samples from USB-B\Recovery\RecoveryImage to create ScanState package.
 
-    Important: The scanstate package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.
+    Important: The ScanState package used by PBR must be a .ppkg file stored in C:\Recovery\Customizations folder or PBR will not be able to restore the package.
 
 2.  Create the recovery OEM folder and copy contents of USB-B\Recovery\RecoveryImage.
 
@@ -625,7 +625,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
         Copy E:\StartLayout\\*.\* c:\recovery\OEM
 
-1.  Run scanstate utility to gather app and customizations.
+1.  Run ScanState utility to gather app and customizations.
 
     If you use an **x64** Windows 10 image:
 
@@ -637,7 +637,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     Where E: is the drive letter of USB-B.
 
-1.  Create extensibility script to restore additional settings and customizations.
+1.  Create an extensibility script to restore additional settings and customizations.
 
     You can customize the Push-button reset experience by configuring extensibility points. This enables you to run custom scripts, install additional applications, or preserve additional user, application, or registry data.
 
@@ -647,7 +647,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     b.  Copy the layoutmodification.xml to the system.
 
-## Finalize and capture manufacturing image
+### Finalize and capture manufacturing image
 
 1.  Delete the installation folders and files you have created for the preloaded applications. For example, *C:\Office-SingleImagev15.4-Setup*, and the *C:\LIPsToBeInstalled* folder. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
 
@@ -697,7 +697,7 @@ Please reference [Push-button reset](https://msdn.microsoft.com/library/windows/
 
     This will overwrite the image created in the section [Deploy the image to new computers](#deploy-the-image-to-new-computers).
 
-## Deploy the image 
+### Deploy the image 
 
 Use the deployment script to layout the partitions on the device and apply the image. The walkthrough-deploy.bat in USB-B\deployment folder will partition the device based on device mode.
 
@@ -713,7 +713,7 @@ Note: Only use Compact OS on high end storage devices because Compact OS perform
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
-## Finalize deployment
+### Finalize deployment
 
 1.  Upon deploying your model specific image to destination computers, boot the computer with master image for the first time in AUDIT mode
 
@@ -738,9 +738,9 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
     5. Now the device is ready to be shipped with your final manufacturing image and PBR feature implemented. 
     6. Finally, replicate the same procedure with the other devices.
 
-# Appendix
+## Appendix
 
-## Differences between 64-bit and 32-bit deployment
+### Differences between 64-bit and 32-bit deployment
 
 It is recommended to consider 64-bit deployment versus 32-bit deployment disk footprint according to the storage of the device you are manufacturing.
 
@@ -752,9 +752,9 @@ The overall deployment flow mentioned in this guide doesn’t differ between 64-
 | Creating WinPE folder structure         | WinPE differs between x64 and x86 architecture, so you have to use different commands to create a different WinPE folder for each architecture.                                                                                                                                                    | [Create WinPE bootable USB](#create-winpe-bootable-usb) |
 | Drivers                                 | Driver versions differ between different architectures. If you are manufacturing a 64-bit Windows image, please use x64 drivers, and vice-versa for 32-bit Windows.                                                                                                                                                   | [Add drivers](#add-drivers)         |
 | Update Packages for Windows Image       | Update package versions differ between different architectures. If you are manufacturing a 64-bit Windows image please use x64 update packages, and vice-versa for 32-bit Windows.                                                                                                                                   | [Add update packages](#add-update-packages) |
-| Language Interface Packs                | IF you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs.                                                                                                                                                                    | [Prepare the system for recovery with Push Button Reset](#prepare-the-system-for-recovery-with-push-button-reset)                          |
+| Language Interface Packs                | IF you will be using x64 Windows 10 image, install x64 LIPs or if you will be using x86 Windows 10 image install x86 LIPs.                                                                                                                                                                    | [Prepare the system for recovery with Push-button reset](#prepare-the-system-for-recovery-with-push-button-reset)                          |
 
-## What you will need and where to get it
+### What you will need and where to get it
 
 Before starting the deployment procedure OEM requires to download certain kits which will be used throughout the guide, such as Microsoft Office Single Image v15.4, update packages, language interface packs etc… Below is the complete list of resources/kits an OEM requires to download and where they download them.
 
@@ -768,7 +768,7 @@ Before starting the deployment procedure OEM requires to download certain kits w
 | Microsoft Office v15.4 | Obtain Microsoft Office v15.4 by downloading from [OEM Partner Center](http://www.microsoft.com/OEM/en/installation/downloads/Pages/office-single-image-v15-opk.aspx) | [Preload Microsoft Office single image v15.4 OPK](#preload-microsoft-office-single-image-v15-4-opk) |
 
 
-# References
+## References
 
 [Windows Guidelines for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_129)
 
