@@ -2,7 +2,7 @@
 
 title: System builder deployment of Windows 10 for desktop editions
 
-author: Justin Hall
+author: Justinha
 
 description: Get step-by-step guidance for system builders to deploy Windows 10 to desktop computers, laptops, and 2-in-1s.   
 
