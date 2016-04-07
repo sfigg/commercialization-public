@@ -19,6 +19,6 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "docset/design"
+    "dest": "docset"
   }
 }

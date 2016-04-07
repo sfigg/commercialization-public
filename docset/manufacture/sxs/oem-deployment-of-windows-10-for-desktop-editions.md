@@ -1,4 +1,4 @@
----
+﻿---
 
 title: OEM deployment of Windows 10 for desktop editions
 
@@ -512,7 +512,7 @@ Connecting the computer to the internet is not recommended during manufacturing 
 
 5.  In the shutdown options box select **Shutdown**.
 
-    ![Sysprep generalize](images\sysprep.png)
+    ![Sysprep generalize](images\Sysprep.png)
 
 Important: The system must be set to generalize and OOBE in order to further service the image. In the following sections, an unattend file will be used to return to Audit mode on the OOBE-sealed system. There are known issues when resealing to Audit mode in this phase and it is not recommended.
 
