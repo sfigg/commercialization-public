@@ -74,7 +74,7 @@ There may be instances when Windows Setup encounters more than one error and ru
     Setup /m:C:\Temp
     ```
 
-    To learn more, see [Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8).
+    To learn more, see [Windows Setup Command-Line Options](windows_setup_command_line_options.md).
 
 ## <span id="related_topics"></span>Related topics
 
