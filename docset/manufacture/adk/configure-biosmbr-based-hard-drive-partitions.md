@@ -158,7 +158,7 @@ The following steps describe how to partition your hard drives and prepare to ap
 ## <span id="NextSteps"></span><span id="nextsteps"></span><span id="NEXTSTEPS"></span>Next steps
 
 
-Use a deployment script to apply the Windows images on the newly created partitions. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](p_adk_online.capture_and_apply_windows_system_and_recovery_partitions_win8).
+Use a deployment script to apply the Windows images on the newly created partitions. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](capture_and_apply_windows_system_and_recovery_partitions.md).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -167,7 +167,7 @@ Use a deployment script to apply the Windows images on the newly created partiti
 
 [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md)
 
-[BitLocker Drive Encryption](p_adk_online.bitlocker_drive_encryption_win8)
+[BitLocker Drive Encryption](bitlocker_drive_encryption.md)
 
 [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)
 

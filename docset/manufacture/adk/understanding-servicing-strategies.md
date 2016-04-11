@@ -23,7 +23,7 @@ The following illustration shows the servicing opportunities available during th
 ## <span id="OfflineServicingStrategy"></span><span id="offlineservicingstrategy"></span><span id="OFFLINESERVICINGSTRATEGY"></span>Offline Servicing
 
 
-Offline servicing was introduced with Windows Vista. Offline servicing occurs when you modify or service a Windows image entirely offline without booting it first. For Windows Vista, the Package Manager command-line tool was provided for updating Windows images. In Windows 7 and Windows 8, Deployment Image Servicing and Management (DISM) replaces Package Manager. For Windows 8, most operating system servicing operations can be performed on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows 8, and also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see [DISM - Deployment Image Servicing and M\\anagement Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
+Offline servicing was introduced with Windows Vista. Offline servicing occurs when you modify or service a Windows image entirely offline without booting it first. For Windows Vista, the Package Manager command-line tool was provided for updating Windows images. In Windows 7 and Windows 8, Deployment Image Servicing and Management (DISM) replaces Package Manager. For Windows 8, most operating system servicing operations can be performed on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows 8, and also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see [DISM - Deployment Image Servicing and M\\anagement Technical Reference for Windows](dism___deployment_image_servicing_and_management_technical_reference_for_windows.md).
 
 DISM can be used on an offline image to:
 
@@ -51,7 +51,7 @@ DISM can be used on an offline image to:
 
 -   Update a Windows Preinstallation Environment (Windows PE) image.
 
-For more information about how to service a mounted image, see [Service a Mounted Windows Image](p_adk_online.service_a_mounted_windows_image_win8).
+For more information about how to service a mounted image, see [Service a Mounted Windows Image](service_a_mounted_windows_image.md).
 
 For more information about how to service an applied image, see [Service an Applied Windows Image](service-an-applied-windows-image.md).
 
@@ -75,11 +75,11 @@ An unattended answer file can be used during setup to:
 ## <span id="OnlineServicingStrategy"></span><span id="onlineservicingstrategy"></span><span id="ONLINESERVICINGSTRATEGY"></span>Servicing a Running Operating System
 
 
-There are several tools that can be used to service a running operating system (also known as servicing an online image). You should boot to audit mode to add updates to your Windows image. Audit mode does not require settings in Windows Welcome to be applied, allowing quicker access to the desktop. After you have booted to audit mode, you can add Plug and Play device drivers, install applications and system components, and test the validity of the installation. For more information about how to use audit mode, see [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8).
+There are several tools that can be used to service a running operating system (also known as servicing an online image). You should boot to audit mode to add updates to your Windows image. Audit mode does not require settings in Windows Welcome to be applied, allowing quicker access to the desktop. After you have booted to audit mode, you can add Plug and Play device drivers, install applications and system components, and test the validity of the installation. For more information about how to use audit mode, see [Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md).
 
 The following tools are typically used to update a running Windows operating system:
 
--   Use DISM to enumerate drivers, international settings, packages, and features, and to apply unattended answer file settings. For more information, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
+-   Use DISM to enumerate drivers, international settings, packages, and features, and to apply unattended answer file settings. For more information, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism___deployment_image_servicing_and_management_technical_reference_for_windows.md).
 
 -   Use DPInst to add drivers for detected hardware. For information about DPInst and other tools available in the Windows Driver Kit (WDK), see [Download kits and tools for Windows](http://go.microsoft.com/fwlink/?LinkId=89603).
 
@@ -92,9 +92,9 @@ The following tools are typically used to update a running Windows operating sys
 ## <span id="related_topics"></span>Related topics
 
 
-[Deployment Image Servicing and Management (DISM) Best Practices](p_adk_online.deployment_image_servicing_and_management__dism__best_practices_win8)
+[Deployment Image Servicing and Management (DISM) Best Practices](deployment_image_servicing_and_management__dism__best_practices.md)
 
-[DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8)
+[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism___deployment_image_servicing_and_management_technical_reference_for_windows.md)
 
  
 

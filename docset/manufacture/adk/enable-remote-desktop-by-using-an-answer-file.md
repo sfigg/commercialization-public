@@ -109,7 +109,7 @@ For more information about Windows® components and settings that you can add to
 
 [Automate Windows Setup](automate-windows-setup.md)
 
-[Configure Network Settings in an Unattended Installation](p_adk_online.configure_network_settings_in_an_unattended_installation_win8)
+[Configure Network Settings in an Unattended Installation](configure_network_settings_in_an_unattended_installation.md)
 
 [Windows Deployment Options](windows-deployment-options.md)
 

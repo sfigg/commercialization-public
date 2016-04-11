@@ -853,9 +853,9 @@ The following table lists keyboard identifiers that are available for Windows. Y
 ## <span id="related_topics"></span>Related topics
 
 
-[Available Language Packs for Windows](p_adk_online.available_language_packs_for_windows_blue)
+[Available Language Packs for Windows](available_language_packs_for_windows_blue.md)
 
-[Default Input Profiles (Input Locales) in Windows](p_adk_online.default_input_locales_for_windows_language_packs_blue)
+[Default Input Profiles (Input Locales) in Windows](default_input_locales_for_windows_language_packs_blue.md)
 
  
 

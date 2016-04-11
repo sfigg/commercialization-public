@@ -27,7 +27,7 @@ Dism /image:C:\test\offline /Set-InputLocale:id-ID
 Dism /image:C:\test\offline /Set-AllIntl:fr-FR
 ```
 
-For a list of language/culture names, see [Available Language Packs for Windows](p_adk_online.available_language_packs_for_windows_blue).
+For a list of language/culture names, see [Available Language Packs for Windows](available_language_packs_for_windows_blue.md).
 
 <table>
 <colgroup>
@@ -1228,9 +1228,9 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 
 [Default Time Zones](default-time-zones.md)
 
-[Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue)
+[Add Language Packs to Windows](add_language_packs_to_windows_blue.md)
 
-[Available Language Packs for Windows](p_adk_online.available_language_packs_for_windows_blue)
+[Available Language Packs for Windows](available_language_packs_for_windows_blue.md)
 
 [Keyboard identifiers for Windows](windows-language-pack-default-values.md)
 

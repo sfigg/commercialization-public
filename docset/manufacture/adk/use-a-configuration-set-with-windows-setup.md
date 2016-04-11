@@ -76,13 +76,13 @@ To use a configuration set, you need the following:
 
 [Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8)
 
-[Boot from a DVD](p_adk_online.boot_from_a_dvd_win8)
+[Boot from a DVD](boot_from_a_dvd.md)
 
-[Deploy a Custom Image](p_adk_online.deploy_a_custom_image_win8)
+[Deploy a Custom Image](deploy_a_custom_image.md)
 
-[Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8)
+[Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md)
 
-[Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8)
+[Add Device Drivers to Windows During Windows Setup](add_device_drivers_to_windows_during_windows_setup.md)
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 

@@ -12,7 +12,7 @@ The System Preparation (**Sysprep**) tool is used to change Windows® images fro
 
 **Sysprep.exe** is located in the **%WINDIR%\\system32\\sysprep** directory on all Windows installations.
 
-If you transfer a Windows image to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can reuse that image on a different computer. For more information, see [Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8).
+If you transfer a Windows image to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can reuse that image on a different computer. For more information, see [Sysprep (Generalize) a Windows installation](sysprep__generalize__a_windows_installation.md).
 
 In this topic:
 
@@ -38,7 +38,7 @@ In this topic:
 **Sysprep.exe** is the main program that calls other executable files that prepare the Windows installation. **Sysprep.exe** is located in the **%WINDIR%\\system32\\sysprep** directory on all Windows installations. If you use the command line instead of the **System Preparation Tool** GUI, you must first close the GUI and then run **Sysprep** from the **%WINDIR%\\system32\\sysprep** directory. You must also run **Sysprep** on the same version of Windows that you used to install **Sysprep**.
 
 **Important**  
-In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8).
+In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](sysprep_command_line_options.md).
 
  
 
@@ -60,14 +60,14 @@ When Sysprep runs, it goes through the following process:
 ## <span id="bkmk_new"></span><span id="BKMK_NEW"></span>Persisting the Hardware Configuration
 
 
-If you create an image of this installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the identical hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can reuse that image on different computers. The next time that you boot the Windows image, the [specialize](p_adk_online.specialize_win8) configuration pass runs.
+If you create an image of this installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the identical hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can reuse that image on different computers. The next time that you boot the Windows image, the [specialize](specialize.md) configuration pass runs.
 
-If you want to install a Windows image to computers that have the same hardware configuration, you can preserve the device-drivers installation in a Windows image. To do this, in your answer file, specify the **PersistAllDeviceInstalls** setting in the **Microsoft-Windows-PnPSysprep** component. The default value is **false**. If you set the setting to **true**, the Plug and Play devices remain on the computer during the [generalize](p_adk_online.generalize__win8) configuration pass. You do not have to reinstall these devices during the [specialize](p_adk_online.specialize_win8) configuration pass. For more information, see [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md) and Unattended Windows Setup Reference Guide.
+If you want to install a Windows image to computers that have the same hardware configuration, you can preserve the device-drivers installation in a Windows image. To do this, in your answer file, specify the **PersistAllDeviceInstalls** setting in the **Microsoft-Windows-PnPSysprep** component. The default value is **false**. If you set the setting to **true**, the Plug and Play devices remain on the computer during the [generalize](generalize_.md) configuration pass. You do not have to reinstall these devices during the [specialize](specialize.md) configuration pass. For more information, see [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md) and Unattended Windows Setup Reference Guide.
 
 ## <span id="device"></span><span id="DEVICE"></span>Adding Device Drivers
 
 
-Plug and Play devices include modems, sound cards, network adapters, and video cards. The Plug and Play devices on the reference and destination computers do not have to come from the same manufacturer. However, you must include the drivers for these devices in the installation. For more information, see [Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8) and [Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8).
+Plug and Play devices include modems, sound cards, network adapters, and video cards. The Plug and Play devices on the reference and destination computers do not have to come from the same manufacturer. However, you must include the drivers for these devices in the installation. For more information, see [Add and Remove Drivers to an Offline Windows Image](add_and_remove_drivers_to_an_offline_windows_image.md) and [Add Device Drivers to Windows During Windows Setup](add_device_drivers_to_windows_during_windows_setup.md).
 
 ## <span id="BootingToAuditModeOrWindowsWelcome"></span><span id="bootingtoauditmodeorwindowswelcome"></span><span id="BOOTINGTOAUDITMODEORWINDOWSWELCOME"></span>Booting to Audit Mode or OOBE
 
@@ -76,29 +76,29 @@ When Windows boots, the computer can start in one of two modes:
 
 -   OOBE
 
-    OOBE, also named the out-of-box experience (OOBE), is the first user experience. The OOBE enables end users to customize their Windows installation. End users can create user accounts, read and accept the Microsoft® Software License Terms, and select their language and time zones. By default, all Windows installations boot to OOBE first. The [oobeSystem](p_adk_online.oobesystem_win8) configuration pass runs immediately before OOBE starts.
+    OOBE, also named the out-of-box experience (OOBE), is the first user experience. The OOBE enables end users to customize their Windows installation. End users can create user accounts, read and accept the Microsoft® Software License Terms, and select their language and time zones. By default, all Windows installations boot to OOBE first. The [oobeSystem](oobesystem.md) configuration pass runs immediately before OOBE starts.
 
-    If you do not automatically activate Windows by using a product key, OOBE prompts the user for a product key. If the user skips this step during OOBE, Windows reminds the user to enter a valid product key later. To automatically activate Windows by using a product key, specify a valid product key in the **Microsoft-Windows-Shell-Setup\\ProductKey** unattend setting during the [specialize](p_adk_online.specialize_win8) configuration pass. For more information, see [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md).
+    If you do not automatically activate Windows by using a product key, OOBE prompts the user for a product key. If the user skips this step during OOBE, Windows reminds the user to enter a valid product key later. To automatically activate Windows by using a product key, specify a valid product key in the **Microsoft-Windows-Shell-Setup\\ProductKey** unattend setting during the [specialize](specialize.md) configuration pass. For more information, see [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md).
 
 -   Audit Mode
 
     If you are running a computer in audit mode to configure the installation to boot to OOBE, either use the **Sysprep** GUI or run the **Sysprep /oobe** command. To prepare a computer for an end user, you must configure the computer to boot to OOBE when an end user starts the computer for the first time. In a default Windows installation, OOBE starts after installation is completed, but you can skip OOBE and boot directly to audit mode to customize images.
 
-    You can configure Windows to boot directly to audit mode by using the **Microsoft-Windows-Deployment | Reseal | Mode** setting in an answer file. In audit mode, the computer processes settings in an unattended answer file in the [auditSystem](p_adk_online.auditsystem_win8) and [auditUser](p_adk_online.audituser_win8) configuration passes.
+    You can configure Windows to boot directly to audit mode by using the **Microsoft-Windows-Deployment | Reseal | Mode** setting in an answer file. In audit mode, the computer processes settings in an unattended answer file in the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes.
 
     Audit mode enables you to add customizations to Windows images. Audit mode does not require that you apply settings in OOBE. By bypassing OOBE, you can access the desktop more quickly and perform your customizations. You can add more device drivers, install applications, and test the validity of the installation.
 
 For more information, see:
 
--   [Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+-   [Audit Mode Overview](audit_mode_overview.md)
 
--   [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8)
+-   [Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md)
 
--   [How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
+-   [How Configuration Passes Work](how_configuration_passes_work.md)
 
--   [Enable and Disable the Built-in Administrator Account](p_adk_online.enable_and_disable_the_built_in_administrator_account_win8)
+-   [Enable and Disable the Built-in Administrator Account](enable_and_disable_the_built_in_administrator_account.md)
 
--   [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8)
+-   [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md)
 
 ## <span id="DetectingTheStateOfAWindowsImage"></span><span id="detectingthestateofawindowsimage"></span><span id="DETECTINGTHESTATEOFAWINDOWSIMAGE"></span>Detecting the State of a Windows Image
 
@@ -108,7 +108,7 @@ You can use Sysprep to identify the state of a Windows image. That is, you can d
 ## <span id="SysprepLogFiles"></span><span id="syspreplogfiles"></span><span id="SYSPREPLOGFILES"></span>Sysprep Log Files
 
 
-The **Sysprep** tool logs Windows Setup actions in different directories, depending on the configuration pass. Because the [generalize](p_adk_online.generalize__win8) configuration pass deletes certain Windows Setup log files, the **Sysprep** tool logs generalize actions outside the standard Windows Setup log files. The following table shows the different log file locations that **Sysprep** uses.
+The **Sysprep** tool logs Windows Setup actions in different directories, depending on the configuration pass. Because the [generalize](generalize_.md) configuration pass deletes certain Windows Setup log files, the **Sysprep** tool logs generalize actions outside the standard Windows Setup log files. The following table shows the different log file locations that **Sysprep** uses.
 
 <table>
 <colgroup>
@@ -139,7 +139,7 @@ The **Sysprep** tool logs Windows Setup actions in different directories, depen
 
  
 
-For more information, see [Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8).
+For more information, see [Deployment Troubleshooting and Log Files](deployment_troubleshooting_and_log_files.md).
 
 ## <span id="CreatingAndUsingSysprepProviders"></span><span id="creatingandusingsysprepproviders"></span><span id="CREATINGANDUSINGSYSPREPPROVIDERS"></span>Creating and Using Sysprep Providers
 
@@ -163,9 +163,9 @@ For more information about **Sysprep** providers, see the [System Preparation (S
 
 [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md)
 
-[Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8)
+[Sysprep Command-Line Options](sysprep_command_line_options.md)
 
-[Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8)
+[Sysprep (Generalize) a Windows installation](sysprep__generalize__a_windows_installation.md)
 
 [Sysprep Support for Server Roles](sysprep-support-for-server-roles.md)
 

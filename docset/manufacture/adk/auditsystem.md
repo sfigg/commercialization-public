@@ -16,7 +16,7 @@ The following diagram shows when the **auditSystem** configuration pass is proce
 
 ![auditmode configuration pass](images/dep-win8-l-auditmode.jpg)
 
-The **auditSystem** configuration pass runs only when you configure Windows Setup to boot into audit mode. You can boot to audit mode by using the **sysprep** command with the **audit** option, or the **sysprep** command with the **generalize** and **audit** options, or you can specify the **Reseal** setting in the Microsoft-Windows-Deployment component. For more information, see [Audit Mode Overview](p_adk_online.audit_mode_overview_win8) and [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
+The **auditSystem** configuration pass runs only when you configure Windows Setup to boot into audit mode. You can boot to audit mode by using the **sysprep** command with the **audit** option, or the **sysprep** command with the **generalize** and **audit** options, or you can specify the **Reseal** setting in the Microsoft-Windows-Deployment component. For more information, see [Audit Mode Overview](audit_mode_overview.md) and [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 ## <span id="related_topics"></span>Related topics
 

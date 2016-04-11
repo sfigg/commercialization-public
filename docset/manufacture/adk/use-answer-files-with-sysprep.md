@@ -25,41 +25,41 @@ In this topic:
 ## <span id="bkmk_skipRearm"></span><span id="bkmk_skiprearm"></span><span id="BKMK_SKIPREARM"></span>Running Sysprep an Unlimited Number of Times
 
 
-If you specify a Windows 8 product key, Windows is automatically activated, and you can run the **Sysprep** command an unlimited number of times. To automatically activate Windows by supplying a product key, specify a valid product key in the Microsoft-Windows-Shell-Setup\\`ProductKey` unattend setting during the [specialize](p_adk_online.specialize_win8) configuration pass. If you don't automatically activate Windows by providing a product key, Windows prompts the end user for a product key. If the end user skips this step during OOBE, Windows reminds the end user to enter a valid product key later.
+If you specify a Windows 8 product key, Windows is automatically activated, and you can run the **Sysprep** command an unlimited number of times. To automatically activate Windows by supplying a product key, specify a valid product key in the Microsoft-Windows-Shell-Setup\\`ProductKey` unattend setting during the [specialize](specialize.md) configuration pass. If you don't automatically activate Windows by providing a product key, Windows prompts the end user for a product key. If the end user skips this step during OOBE, Windows reminds the end user to enter a valid product key later.
 
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Applying Settings in the generalize, auditSystem, and auditUser Configuration Passes
 
 
-Not all configuration passes run during Windows Setup. The [generalize](p_adk_online.generalize__win8), [auditSystem](p_adk_online.auditsystem_win8), and [auditUser](p_adk_online.audituser_win8) configuration passes are available only when you run **Sysprep**.
+Not all configuration passes run during Windows Setup. The [generalize](generalize_.md), [auditSystem](auditsystem.md), and [auditUser](audituser.md) configuration passes are available only when you run **Sysprep**.
 
 If you add settings to your answer file in these configuration passes, you must run **Sysprep** to apply these settings as follows:
 
--   To apply the settings in the [auditSystem](p_adk_online.auditsystem_win8) and [auditUser](p_adk_online.audituser_win8) configuration passes, you must boot in audit mode by using the **Sysprep/audit** command.
+-   To apply the settings in the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes, you must boot in audit mode by using the **Sysprep/audit** command.
 
--   To apply the settings in the [generalize](p_adk_online.generalize__win8) configuration pass, you must use the **Sysprep/generalize** command. The generalize configuration pass removes the system-specific settings so that you can deploy the same image on multiple computers.
+-   To apply the settings in the [generalize](generalize_.md) configuration pass, you must use the **Sysprep/generalize** command. The generalize configuration pass removes the system-specific settings so that you can deploy the same image on multiple computers.
 
-For more information, see [How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8).
+For more information, see [How Configuration Passes Work](how_configuration_passes_work.md).
 
 ## <span id="bkmk_2"></span><span id="BKMK_2"></span>Caching Answer Files to the Computer
 
 
-If you install Windows by using an answer file, that answer file is cached to the system. When later configuration passes run, the computer applies settings in that answer file to the system. Because this answer file is cached, when you run the **Sysprep** command, the system applies settings in the cached answer file. If you use the settings in a different answer file, you can specify a separate Unattend.xml file by using the **Sysprep /unattend:***&lt;file\_name&gt;* option. For more information, see [Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8). For more information about how to use an implicit answer-file search, see[Windows Setup Automation Overview](windows-setup-automation-overview.md).
+If you install Windows by using an answer file, that answer file is cached to the system. When later configuration passes run, the computer applies settings in that answer file to the system. Because this answer file is cached, when you run the **Sysprep** command, the system applies settings in the cached answer file. If you use the settings in a different answer file, you can specify a separate Unattend.xml file by using the **Sysprep /unattend:***&lt;file\_name&gt;* option. For more information, see [Sysprep Command-Line Options](sysprep_command_line_options.md). For more information about how to use an implicit answer-file search, see[Windows Setup Automation Overview](windows-setup-automation-overview.md).
 
 ## <span id="bkmk_3"></span><span id="BKMK_3"></span>Persisting Plug and Play Device Drivers During the generalize Configuration Pass
 
 
-You can persist device drivers when you run the **Sysprep** command together with the **/generalize** option. To do this, specify the `PersistAllDeviceInstalls` setting in the Microsoft-Windows-PnPSysprep component. During the [specialize](p_adk_online.specialize_win8) configuration pass, Plug and Play scans the computer for devices, and then installs device drivers for the detected devices. By default, the computer removes these device drivers from the system when you generalize the system. If you set the Microsoft-Windows-PnPSysprep\\`PersistAllDeviceInstalls` setting to **true** in an answer file, Sysprep doesn't remove the detected device drivers.
+You can persist device drivers when you run the **Sysprep** command together with the **/generalize** option. To do this, specify the `PersistAllDeviceInstalls` setting in the Microsoft-Windows-PnPSysprep component. During the [specialize](specialize.md) configuration pass, Plug and Play scans the computer for devices, and then installs device drivers for the detected devices. By default, the computer removes these device drivers from the system when you generalize the system. If you set the Microsoft-Windows-PnPSysprep\\`PersistAllDeviceInstalls` setting to **true** in an answer file, Sysprep doesn't remove the detected device drivers.
 
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Displaying RunSynchronous Actions in an Answer File
 
 
-In audit mode, you can view the status for Microsoft-Windows-Deployment\\`RunSynchronous` commands that run during the [auditUser](p_adk_online.audituser_win8) configuration pass. The **AuditUI** window displays the status for commands and provides these:
+In audit mode, you can view the status for Microsoft-Windows-Deployment\\`RunSynchronous` commands that run during the [auditUser](audituser.md) configuration pass. The **AuditUI** window displays the status for commands and provides these:
 
 -   Visual progress to indicate that an installation is continuing and not suspended.
 
 -   Visual indication of when and where failures occur. This provides a quick diagnosis if the command doesn't create log files.
 
-If the answer file contains Microsoft-Windows-Deployment\\`RunSynchronous` commands in the [auditUser](p_adk_online.audituser_win8) configuration pass, a list of the commands appears in the **AuditUI** window. The commands appear in the order that the Microsoft-Windows-Deployment\\`RunSynchronous`\\`RunSynchronousCommand`\\`Order` setting specifies. Each list item in the user interface is the string from one of these:
+If the answer file contains Microsoft-Windows-Deployment\\`RunSynchronous` commands in the [auditUser](audituser.md) configuration pass, a list of the commands appears in the **AuditUI** window. The commands appear in the order that the Microsoft-Windows-Deployment\\`RunSynchronous`\\`RunSynchronousCommand`\\`Order` setting specifies. Each list item in the user interface is the string from one of these:
 
 -   Microsoft-Windows-Deployment\\`RunSynchronous`\\`RunSynchronousCommand`\\`Description` (if present)
 
@@ -96,13 +96,13 @@ If the `WillReboot` command is set to **OnRequest**:
 
 [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md)
 
-[Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8)
+[Sysprep Command-Line Options](sysprep_command_line_options.md)
 
-[Sysprep Support for Server Roles](p_adk_online.sysprep_support_for_server_roles_win8)
+[Sysprep Support for Server Roles](sysprep_support_for_server_roles.md)
 
-[Sysprep Process Overview](p_adk_online.sysprep_process_overview_win8)
+[Sysprep Process Overview](sysprep_process_overview.md)
 
-[Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8)
+[Deployment Troubleshooting and Log Files](deployment_troubleshooting_and_log_files.md)
 
  
 

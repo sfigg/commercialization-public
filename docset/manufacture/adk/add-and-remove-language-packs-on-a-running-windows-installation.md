@@ -8,7 +8,7 @@ title: Add and Remove Language Packs on a Running Windows Installation
 # Add and Remove Language Packs on a Running Windows Installation
 
 
-You can add support for additional languages on a running operating system, or to an offline image. For information about how to install languages to an offline image, see [Add and Remove Language Packs Offline Using DISM](p_adk_online.add_and_remove_language_packs_offline_using_dism_win8).
+You can add support for additional languages on a running operating system, or to an offline image. For information about how to install languages to an offline image, see [Add and Remove Language Packs Offline Using DISM](add_and_remove_language_packs_offline_using_dism.md).
 
 For information about installing Language Interface Packs (LIPs), see [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 

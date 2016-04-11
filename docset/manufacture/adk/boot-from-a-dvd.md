@@ -78,7 +78,7 @@ The next time that you boot the Windows image, the [specialize](specialize.md) c
 
 [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)
 
-[Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8)
+[Add Device Drivers to Windows During Windows Setup](add_device_drivers_to_windows_during_windows_setup.md)
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 

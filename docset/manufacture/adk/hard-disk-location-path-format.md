@@ -10,7 +10,7 @@ title: Hard Disk Location Path Format
 
 This topic describes the hard disk location-path format. This format is used to identify each disk in the DiskPart tool by using the location path. The location-path format is based on the physical connection to the computer.
 
-For instructions that describe how to configure Windows® to identify a drive based on the location-path format, see [Configure Multiple Hard Drives](p_adk_online.configure_multiple_hard_drives_win8).
+For instructions that describe how to configure Windows® to identify a drive based on the location-path format, see [Configure Multiple Hard Drives](configure_multiple_hard_drives.md).
 
 ## <span id="LocationPathFormat"></span><span id="locationpathformat"></span><span id="LOCATIONPATHFORMAT"></span>Location-Path Format
 
@@ -114,7 +114,7 @@ The following table gives an example of a location path for each bus or disk typ
 ## <span id="related_topics"></span>Related topics
 
 
-[Configure Multiple Hard Drives](p_adk_online.configure_multiple_hard_drives_win8)
+[Configure Multiple Hard Drives](configure_multiple_hard_drives.md)
 
 [DiskPart Command-Line Syntax](http://go.microsoft.com/fwlink/?LinkId=128458)
 

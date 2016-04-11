@@ -58,7 +58,7 @@ The Windows Setup program starts and restarts the computer, gathers information
 <li><p>Configure the disk.</p></li>
 <li><p>Copy the Windows image to the disk.</p></li>
 <li><p>Prepare boot information.</p></li>
-<li><p>Process answer file settings in the [offlineServicing](p_adk_online.offlineservicing_win8) configuration pass. The settings are applied to the Windows image before that Windows image boots. When the computer first boots, any optional components, drivers, updates, or language packs are processed.</p></li>
+<li><p>Process answer file settings in the [offlineServicing](offlineservicing.md) configuration pass. The settings are applied to the Windows image before that Windows image boots. When the computer first boots, any optional components, drivers, updates, or language packs are processed.</p></li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ The Windows Setup program starts and restarts the computer, gathers information
 <tr class="odd">
 <td align="left"><p><strong>Windows Welcome</strong></p></td>
 <td align="left"><ol>
-<li><p>Apply answer file settings in the [oobeSystem](p_adk_online.oobesystem_win8) configuration pass.</p></li>
+<li><p>Apply answer file settings in the [oobeSystem](oobesystem.md) configuration pass.</p></li>
 <li><p>Apply content file settings from the Oobe.xml file.</p></li>
 <li><p>Start Windows Welcome.</p></li>
 </ol></td>
@@ -85,15 +85,15 @@ The Windows Setup program starts and restarts the computer, gathers information
 
 [Automate Windows Setup](automate-windows-setup.md)
 
-[Settings for Automating OOBE](p_adk_online.settings_for_automating_oobe_win8)
+[Settings for Automating OOBE](settings_for_automating_oobe.md)
 
 [Windows Setup Scenarios and Best Practices](windows-setup-scenarios-and-best-practices.md)
 
-[Windows Setup Automation Overview](p_adk_online.windows_setup_automation_overview_win8)
+[Windows Setup Automation Overview](windows_setup_automation_overview.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit_mode_overview.md)
 
-[Windows Setup Configuration Passes](p_adk_online.windows_setup_configuration_passes_win8)
+[Windows Setup Configuration Passes](windows_setup_configuration_passes.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

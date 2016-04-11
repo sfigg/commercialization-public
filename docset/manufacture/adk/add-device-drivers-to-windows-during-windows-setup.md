@@ -10,7 +10,7 @@ title: Add Device Drivers to Windows During Windows Setup
 
 To install Windows® on some hardware designs, you may need to add device drivers to Windows Setup. You can add drivers to Windows Setup by using an answer file that specifies the path to the driver files. To do this in new installations, you add the Microsoft-Windows-PnpCustomizationWinPE component during the [windowsPE](windowspe.md) configuration pass, add the driver paths, and then specify the answer file.
 
-You can also modify existing images and add and remove drivers. You can service offline images in several ways. For example, you can add the Microsoft-Windows-PnpCustomizationsNonWinPE component during the [offlineServicing](offlineservicing.md) configuration pass, add or remove the driver paths, and then specify the name of the answer file. For more information about how to modify drivers on an offline Windows image by using an answer file, and also other methods of adding drivers to and removing drivers from an existing image, see [Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8).
+You can also modify existing images and add and remove drivers. You can service offline images in several ways. For example, you can add the Microsoft-Windows-PnpCustomizationsNonWinPE component during the [offlineServicing](offlineservicing.md) configuration pass, add or remove the driver paths, and then specify the name of the answer file. For more information about how to modify drivers on an offline Windows image by using an answer file, and also other methods of adding drivers to and removing drivers from an existing image, see [Add and Remove Drivers to an Offline Windows Image](add_and_remove_drivers_to_an_offline_windows_image.md).
 
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span> Add Drivers to New Installations (windowsPE)
 
@@ -69,7 +69,7 @@ This method initializes Windows Preinstallation Environment (Windows PE) and pr
 
     Windows Setup adds the device drivers in the \\\\server\\share\\drivers path to the system during the setup process.
 
-For more information about drivers, see [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md) and [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8). For more information about Windows components, see [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+For more information about drivers, see [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md) and [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md). For more information about Windows components, see [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
 ## <span id="related_topics"></span>Related topics
 

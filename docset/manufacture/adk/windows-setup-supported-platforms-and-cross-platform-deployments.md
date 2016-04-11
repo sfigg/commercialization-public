@@ -260,7 +260,7 @@ If a .wim file contains both 32-bit and 64-bit Windows editions, you must select
 
 To choose an image, specify metadata that corresponds to the image index, name, description, or architecture type. For the metadata for architecture type, use 0 for 32-bit editions and 9 for 64-bit editions. For more info, see the `MetaData` [Key](http://go.microsoft.com/fwlink/?LinkId=320263) setting.
 
-The answer file must include processor-specific components. The answer-file settings in the [windowsPE](windowspe.md) configuration pass must match the architecture type of the preinstallation environment. The settings that apply to the Windows image must match the architecture type of the image. For example, if you create an answer file that deploys 64-bit images from a 32-bit preinstallation environment, all components in the answer file for the windowsPE configuration pass must include the processor attribute type of **x86**. Settings to be applied in the [specialize](p_adk_online.specialize_win8), [oobeSystem](p_adk_online.oobesystem_win8), or other configuration passes must include the processor attribute type of **amd64**.
+The answer file must include processor-specific components. The answer-file settings in the [windowsPE](windowspe.md) configuration pass must match the architecture type of the preinstallation environment. The settings that apply to the Windows image must match the architecture type of the image. For example, if you create an answer file that deploys 64-bit images from a 32-bit preinstallation environment, all components in the answer file for the windowsPE configuration pass must include the processor attribute type of **x86**. Settings to be applied in the [specialize](specialize.md), [oobeSystem](oobesystem.md), or other configuration passes must include the processor attribute type of **amd64**.
 
 ### <span id="bkmk_5"></span><span id="BKMK_5"></span>Installing 64-bit drivers
 
@@ -286,15 +286,15 @@ For more information, see [Encrypted Hard Drive Device Guide](http://go.microsof
 
 [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)
 
-[Windows Setup Scenarios and Best Practices](p_adk_online.windows_setup_scenarios_and_best_practices_win8)
+[Windows Setup Scenarios and Best Practices](windows_setup_scenarios_and_best_practices.md)
 
-[Windows Setup Installation Process](p_adk_online.windows_setup_installation_process_win8)
+[Windows Setup Installation Process](windows_setup_installation_process.md)
 
-[Windows Setup Automation Overview](p_adk_online.windows_setup_automation_overview_win8)
+[Windows Setup Automation Overview](windows_setup_automation_overview.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit_mode_overview.md)
 
-[Windows Setup Configuration Passes](p_adk_online.windows_setup_configuration_passes_win8)
+[Windows Setup Configuration Passes](windows_setup_configuration_passes.md)
 
  
 

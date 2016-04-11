@@ -152,19 +152,19 @@ To transfer an image to a different computer, you must first remove the computer
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit_mode_overview.md)
 
-[Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8)
+[Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md)
 
 [Enable and Disable the Built-in Administrator Account](enable-and-disable-the-built-in-administrator-account.md)
 
-[Boot from a DVD](p_adk_online.boot_from_a_dvd_win8)
+[Boot from a DVD](boot_from_a_dvd.md)
 
 [Use a Configuration Set with Windows Setup](use-a-configuration-set-with-windows-setup.md)
 
 [Deploy a Custom Image](deploy-a-custom-image.md)
 
-[Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8)
+[Add Device Drivers to Windows During Windows Setup](add_device_drivers_to_windows_during_windows_setup.md)
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 

@@ -14,7 +14,7 @@ This walkthrough describes how to add language packs and other update packages t
 
 The process described in this walkthrough is primarily intended for OEMs who want to reduce the number of Windows images that they maintain. By adding language packs to an offline image, you can decrease Windows installation time and reduce the number of images that you maintain. However, because multiple language packs are added to a single image, the size of the Windows image is increased.
 
-IT Professionals who want to reduce the size of their overall image should instead use the process described in [Add Multilingual Support to a Windows Distribution](p_adk_online.add_multilingual_support_to_a_windows_distribution_blue). This process describes how to copy the lp.cab file to the Windows distribution, reducing the overall image size.
+IT Professionals who want to reduce the size of their overall image should instead use the process described in [Add Multilingual Support to a Windows Distribution](add_multilingual_support_to_a_windows_distribution_blue.md). This process describes how to copy the lp.cab file to the Windows distribution, reducing the overall image size.
 
 In this guide:
 

@@ -27,9 +27,9 @@ Any method of moving or copying a Windows image to a new computer must be prepar
 
 [How Configuration Passes Work](how-configuration-passes-work.md)
 
-[auditSystem](p_adk_online.auditsystem_win8)
+[auditSystem](auditsystem.md)
 
-[auditUser](p_adk_online.audituser_win8)
+[auditUser](audituser.md)
 
 [offlineServicing](offlineservicing.md)
 

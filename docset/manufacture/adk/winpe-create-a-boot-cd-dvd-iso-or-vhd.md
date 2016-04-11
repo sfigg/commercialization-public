@@ -93,7 +93,7 @@ When running Windows PE in Hyper-V, consider using an ISO file format instead of
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
-[WinPE: Boot in UEFI or legacy BIOS mode](p_adk_online.winpe_boot_in_uefi_or_legacy_bios_mode_blue)
+[WinPE: Boot in UEFI or legacy BIOS mode](winpe_boot_in_uefi_or_legacy_bios_mode_blue.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

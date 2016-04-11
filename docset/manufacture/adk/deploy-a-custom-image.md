@@ -78,7 +78,7 @@ where D: is the DVD-ROM drive on your local computer.
 
 1.  Create a master installation by using one of the following methods:
 
-    -   [Boot from a DVD](p_adk_online.boot_from_a_dvd_win8)
+    -   [Boot from a DVD](boot_from_a_dvd.md)
 
     -   [Use a Configuration Set with Windows Setup](use-a-configuration-set-with-windows-setup.md)
 
@@ -266,13 +266,13 @@ The DVD media that you create is for internal deployment use only. You cannot re
 
 [Windows Setup Technical Reference](windows-setup-technical-reference.md)
 
-[Boot from a DVD](p_adk_online.boot_from_a_dvd_win8)
+[Boot from a DVD](boot_from_a_dvd.md)
 
 [Use a Configuration Set with Windows Setup](use-a-configuration-set-with-windows-setup.md)
 
-[Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8)
+[Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md)
 
-[Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8)
+[Add Device Drivers to Windows During Windows Setup](add_device_drivers_to_windows_during_windows_setup.md)
 
 [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md)
 

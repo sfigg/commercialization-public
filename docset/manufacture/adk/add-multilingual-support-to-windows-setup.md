@@ -141,7 +141,7 @@ If you added font support for Japanese (ja-JP), Korean (ko-KR), or Chinese (zh-H
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Step 4: Add Language Packs to the Windows Image
 
 
-You must add the same language support to your Windows image file, Install.wim, as you did for the Boot.wim file. The setup process requires that both images contain the same set of language packs. For more information, see [Add and Remove Language Packs Offline Using DISM](p_adk_online.add_and_remove_language_packs_offline_using_dism_win8).
+You must add the same language support to your Windows image file, Install.wim, as you did for the Boot.wim file. The setup process requires that both images contain the same set of language packs. For more information, see [Add and Remove Language Packs Offline Using DISM](add_and_remove_language_packs_offline_using_dism.md).
 
 -   Mount the Windows image by using DISM
 

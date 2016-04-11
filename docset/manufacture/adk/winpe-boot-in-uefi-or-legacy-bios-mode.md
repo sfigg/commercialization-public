@@ -55,11 +55,11 @@ For many operations, such as applying Windows images using Diskpart and DISM, th
 
 [WinPE for Windows 10](winpe-intro.md)
 
-[Windows Setup: Installing using the MBR or GPT partition style](p_adk_online.windows_setup_installing_using_the_mbr_or_gpt_partition_style_blue)
+[Windows Setup: Installing using the MBR or GPT partition style](windows_setup_installing_using_the_mbr_or_gpt_partition_style_blue.md)
 
 [Wpeutil Command-Line Options](wpeutil-command-line-options.md)
 
-[UEFI Firmware](p_adk_online.uefi_firmware_blue)
+[UEFI Firmware](uefi_firmware_blue.md)
 
  
 

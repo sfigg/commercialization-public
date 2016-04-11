@@ -21,7 +21,7 @@ This topic is about manufacturing PCs. For help with the admin account on your o
 
  
 
-This account is used when you log into the system by using audit mode, or when you add scripts to the [auditUser](p_adk_online.audituser_win8) configuration pass.
+This account is used when you log into the system by using audit mode, or when you add scripts to the [auditUser](audituser.md) configuration pass.
 
 ## <span id="Enabling_the_Built-in_Administrator_Account"></span><span id="enabling_the_built-in_administrator_account"></span><span id="ENABLING_THE_BUILT-IN_ADMINISTRATOR_ACCOUNT"></span>Enabling the Built-in Administrator Account
 
@@ -86,7 +86,7 @@ For Windows Server® 2012, the built-in Administrator password must be changed 
 
 ### <span id="LogOnUsingAuditMode"></span><span id="logonusingauditmode"></span><span id="LOGONUSINGAUDITMODE"></span>Log on by using audit mode
 
-If the computer has not yet gone through Out-Of-Box Experience (OOBE), you can enter the built-in Administrator account by re-entering audit mode. For more information, see [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8).
+If the computer has not yet gone through Out-Of-Box Experience (OOBE), you can enter the built-in Administrator account by re-entering audit mode. For more information, see [Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md).
 
 ### <span id="UseMMCConsole"></span><span id="usemmcconsole"></span><span id="USEMMCCONSOLE"></span>Use the Local Users and Groups MMC (server versions only)
 
@@ -146,7 +146,7 @@ Original equipment manufacturers (OEMs) and system builders are required to disa
 
 [Windows Deployment Options](windows-deployment-options.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit_mode_overview.md)
 
  
 

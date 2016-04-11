@@ -8,7 +8,7 @@ title: 'Makewinpemedia Command-Line Options'
 # Makewinpemedia Command-Line Options
 
 
-The **Makewinpemedia** tool is new for Windows 8. You can use **Makewinpemedia** to create bootable Windows Preinstallation Environment (Windows PE) media. Running the **Copype** tool is a prerequisite for creating bootable media. **Copype** creates a directory structure for Windows PE files and copies the necessary Windows PE media files. For more information, see [Copype Command-Line Options](p_adk_online.copype_command_line_options_blue) and [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
+The **Makewinpemedia** tool is new for Windows 8. You can use **Makewinpemedia** to create bootable Windows Preinstallation Environment (Windows PE) media. Running the **Copype** tool is a prerequisite for creating bootable media. **Copype** creates a directory structure for Windows PE files and copies the necessary Windows PE media files. For more information, see [Copype Command-Line Options](copype_command_line_options_blue.md) and [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
 
 ## <span id="Makewinpemedia_Command-Line_Options"></span><span id="makewinpemedia_command-line_options"></span><span id="MAKEWINPEMEDIA_COMMAND-LINE_OPTIONS"></span>Makewinpemedia Command-Line Options
 

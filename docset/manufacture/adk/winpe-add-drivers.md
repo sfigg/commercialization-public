@@ -12,7 +12,7 @@ Add drivers to Windows PE, such as graphics drivers or network drivers.
 
 Device drivers typically include a folder that contains multiple files. These folders include a file that has the `.inf` file name extension. This file manages the other files in the device driver package. Many boot-critical drivers can be used in both the Windows image and in Windows PE.
 
-You can also update device drivers while you're running Windows PE. For more information, see [Drvload Command-Line Options](p_adk_online.drvload_command_line_options_blue).
+You can also update device drivers while you're running Windows PE. For more information, see [Drvload Command-Line Options](drvload_command_line_options_blue.md).
 
 **Get the Windows Assessment and Deployment Kit with Windows PE tools**
 

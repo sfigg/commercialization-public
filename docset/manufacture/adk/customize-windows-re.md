@@ -160,7 +160,7 @@ Make sure that you add any third-party drivers that your reference device requir
 ## <span id="BKMK_AddCustomTools"></span><span id="bkmk_addcustomtools"></span><span id="BKMK_ADDCUSTOMTOOLS"></span>Step 4: Adding a custom tool
 
 
-You can add a custom troubleshooting or diagnostic tool to your Windows RE image. To learn more, see [Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8).
+You can add a custom troubleshooting or diagnostic tool to your Windows RE image. To learn more, see [Add a Custom Tool to the Windows RE Boot Options Menu](add_a_custom_tool_to_the_windows_re_boot_options_menu.md).
 
 ## <span id="BKMK_AddUpdates"></span><span id="bkmk_addupdates"></span><span id="BKMK_ADDUPDATES"></span>Step 5: Adding Windows updates
 
@@ -235,7 +235,7 @@ If you’re deploying your reference image by using **Windows PE**, **Diskpart**
 ## <span id="related_topics"></span>Related topics
 
 
-[Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8)
+[Add a Custom Tool to the Windows RE Boot Options Menu](add_a_custom_tool_to_the_windows_re_boot_options_menu.md)
 
 [Deploy Windows RE](deploy-windows-re.md)
 

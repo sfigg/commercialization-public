@@ -119,7 +119,7 @@ The Windows PE commands can be used to change international settings only in Wi
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[Deployment Image Servicing and Management (DISM) Command-Line Options](p_adk_online.deployment_image_servicing_and_management__dism__command_line_options_win8)
+[Deployment Image Servicing and Management (DISM) Command-Line Options](deployment_image_servicing_and_management__dism__command_line_options.md)
 
  
 
