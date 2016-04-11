@@ -1,0 +1,42 @@
+---
+Description: FFU Catalog Signing
+MS-HAID: 'p\_phUpdate.ffu\_catalog\_signing'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: FFU Catalog Signing
+---
+
+# FFU Catalog Signing
+
+
+The tools that have been created to simplify the engineering and manufacturing processes provision a Microsoft certificate to the PK (Platform Key) store in UEFI. This enables Microsoft to sign the image. OEM partners provision their own certificates to the PK cert store to enable the OEM to sign the FFU.
+
+An OEM can also sign FFUs if the OEM writes their own UEFI tool to provision the signing root/intermediate to the PK store. However, this is not recommended because it introduces complexity and security risk for both you and Microsoft in part because building and maintaining UEFI tools and the maintenance of code signing certificates and infrastructure is complex. This is especially true for small or new OEMs, as a leaked private key would allow arbitrary entities to sign FFUs that can be loaded onto the QRD OEM's device and you would still have to communicate with Microsoft for all other signing.
+
+Therefore, to reduce the complexity and simplify the FFU catalog signing process, the ingestion client has been updated with new functionality to support retail signing of FFU catalogs.
+
+## <span id="OEM_Verification"></span><span id="oem_verification"></span><span id="OEM_VERIFICATION"></span>OEM Verification
+
+
+An FFU catalog signed for OEM. A would be a valid FFU catalog for OEM B’s devices because the intermediate certificate Microsoft provisions to the PK store is a single intermediate certificate. This is referred to as a cross-pollination risk. Therefore, to prevent images created by one OEM from being flash-able onto another OEM's devices intentionally or by accident, the mechanism used to sign FFU catalogs in the latest release of the ingestion client will be handled differently than the mechanism used to sign other packages. OEM validation will occur during signing by inspecting the metadata associated with the FFU catalog in the submission. The OEM ID contained in the catalog will be verified against OEM ID of the submission. If the values do not match, the FFU catalog signing request will be rejected. Furthermore, the Ingestion Client will verify the integrity of the catalog by checking hash values passed in with the FFU catalog metadata. The diagram below depicts the FFU catalog and the associated metadata that will be used for this verification:
+
+![ffu catalog signing](images/ffucatalogsigning.jpg)
+
+For example, after you have completed initial testing on a new image, the image must be tested on a retail device. You create an FFU image for flashing, and the FFU catalog must be retail signed by Microsoft before the image can be flashed to a retail device. Use the ingestion client's `Initialize-FirmwareSubmission` cmdlet with `-TypeOfSubmission FfuCatalog`, specifying the location of the FFU image. The ingestion client will extract the FFU catalog and associated metadata from the FFU image and pass that to Microsoft to be retail signed. Code signing validates the integrity of the FFU catalog and checks the OEM ID of the catalog against the OEM ID of the account that you submitted the signing request through. As long as the OEM ID of the FFU catalog matches the OEM ID of the account of the signing request Microsoft will process and sign the FFU catalog. Once complete, you can use the `Get-SignedFirmwareSubmission` cmdlet to obtain the retail signed FFU catalog before re-integrating the signed catalog back into the FFU image so it can be flashed to a device for testing.
+
+## <span id="FFU_Catalog_Signing_Example"></span><span id="ffu_catalog_signing_example"></span><span id="FFU_CATALOG_SIGNING_EXAMPLE"></span>FFU Catalog Signing Example
+
+
+To prepare an FFU catalog to be signed:
+
+``` syntax
+PS> Initialize-FirmwareSubmission -TypeOfProduct WindowsPhoneBlue -TypeOfSubmission FfuCatalog -UpdateHistoryPath c:\input\UpdateHistory.xml -OemInputPath c:\input -OutputFilePath c:\output -FfuPath c:\input\flash.ffu
+```
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phUpdate\p_phUpdate%5D:%20FFU%20Catalog%20Signing%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

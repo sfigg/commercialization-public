@@ -1,0 +1,77 @@
+---
+Description: Estimate update space
+MS-HAID: 'p\_phUpdate.estimate\_update\_space'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Estimate update space
+---
+
+# Estimate update space
+
+
+The amount of memory that is needed on the device to download and apply an update can vary considerably. The principle considerations for estimating the requirements are the type of update and the processing workspace required to download, prepare, and install it.
+
+**Important**  
+Because of factors such as compression, the targeted packages, and the specific binary contents of the updates, the estimation process is imprecise. OEMs must individually test an update to determine the exact size required.
+
+ 
+
+## <span id="Factors_that_affect_update_space_requirements"></span><span id="factors_that_affect_update_space_requirements"></span><span id="FACTORS_THAT_AFFECT_UPDATE_SPACE_REQUIREMENTS"></span>Factors that affect update space requirements
+
+
+There are three stages in the update process, each of which has its own space considerations: downloading, processing, and completion.
+
+### <span id="Compression_for_downloading"></span><span id="compression_for_downloading"></span><span id="COMPRESSION_FOR_DOWNLOADING"></span>Compression for downloading
+
+Updates are compressed for delivery to the device. As part of the update staging process, the updates are decompressed. Binary executables, text files, and map data can be compressed to variable degrees. Because of this, the amount of compression can vary.
+
+### <span id="Update_processing"></span><span id="update_processing"></span><span id="UPDATE_PROCESSING"></span>Update processing
+
+When updates are staged for installation, they are decompressed during validation. Additional space is required for staging and validation. In the last phase of the update, when the device boots into the update OS, the updates are applied and the temporary workspace is returned to the OS, when the update completes.
+
+All updates require a set amount of space for processing. The workspace is located on the Main OS partition. The SD card and user data store are not used during the update process. The size of the workspace is approximately 50 MB.
+
+### <span id="Updated_state"></span><span id="updated_state"></span><span id="UPDATED_STATE"></span>Updated state
+
+Depending on the content of the update, the final size that it consumes on the image can vary. If the update overwrites existing packages, there may be either a decrease or an increase in the amount of free space available on the device. For example, if the update adds new files to the OS, the final size would reflect the size of the new files.
+
+## <span id="Estimating_size_requirements"></span><span id="estimating_size_requirements"></span><span id="ESTIMATING_SIZE_REQUIREMENTS"></span>Estimating size requirements
+
+
+Differential updates contain just the differences that are required to update a package. Nondifferential updates are inclusive and self-contained. To apply a differential update to a package, an intermediate package is created that the differences are then applied to. This means that a fairly small differential update can take significant additional space to stage and apply if the targeted package is large. Most Microsoft OS updates are differential and are incrementally targeted to specific OS versions.
+
+### <span id="Differential_updates"></span><span id="differential_updates"></span><span id="DIFFERENTIAL_UPDATES"></span>Differential updates
+
+To estimate the space required for a differential update, the size of the package that the update targets must be determined.
+
+*(The targeted packages measured in MB \* 1.5) + working space = Estimated update space required in MB.*
+
+For example, if the target package was 4 MB in size, the calculation would be as follows:
+
+*(4 \* 1.5) + 50 MB = 62 MB.*
+
+Note that the size of the package that contains the differential update is not used in the estimation.
+
+### <span id="Nondifferential_updates"></span><span id="nondifferential_updates"></span><span id="NONDIFFERENTIAL_UPDATES"></span>Nondifferential updates
+
+To estimate the space required for a typical nondifferential OEM update, use this formula:
+
+*(The update measured in MB \* 1.5) + Working space in MB = Estimated update space required in MB.*
+
+### <span id="SV_partition_updates"></span><span id="sv_partition_updates"></span><span id="SV_PARTITION_UPDATES"></span>SV partition updates
+
+Contact the silicon vendor for information on size estimation of SV partition updates.
+
+## <span id="related_topics"></span>Related topics
+
+
+[Update](update.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phUpdate\p_phUpdate%5D:%20Estimate%20update%20space%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
