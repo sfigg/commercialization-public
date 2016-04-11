@@ -1,0 +1,107 @@
+---
+Description: Understanding Servicing Strategies
+MS-HAID: 'p\_adk\_online.understanding\_servicing\_strategies'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Understanding Servicing Strategies
+---
+
+# Understanding Servicing Strategies
+
+
+A Windows® image can be serviced at various phases of deployment in the following ways: offline, during an automated installation, or online. The phase of deployment that you select depends on your deployment strategy.
+
+[Offline Servicing](#offlineservicingstrategy): Involves adding and removing updates, drivers, and language packs, and configuring other settings, without booting Windows. Offline servicing is an efficient way to manage existing images that are stored on a server because it eliminates the need for re-creating updated images. You can perform offline servicing on an image that is mounted or applied to a drive or directory.
+
+[Servicing an Image by Using Windows Setup](#servicingdeploymentstrategy): Involves providing an answer file (Unattend.xml) that Windows Setup implements. The answer file contains specific servicing operations such as adding drivers, updates, language packs, and other packages. Servicing an image during an automated installation can be easily implemented and is ideal for Setup-based deployment.
+
+[Servicing a Running Operating System](#onlineservicingstrategy): Also known as online servicing, this method involves booting to audit mode to add drivers, applications, and other packages. Online servicing is ideal for drivers when the driver packages have co-installers or application dependencies. It is also efficient when most of your servicing packages have installers, or the updates are in .msi or KB.exe file formats, or the applications rely on Windows installed services and technologies (such as the .NET Framework or full Plug and Play support).
+
+The following illustration shows the servicing opportunities available during the various phases of deployment.
+
+![windows servicing strategies](images/dep-win8-l-servicingstrategy.jpg)
+
+## <span id="OfflineServicingStrategy"></span><span id="offlineservicingstrategy"></span><span id="OFFLINESERVICINGSTRATEGY"></span>Offline Servicing
+
+
+Offline servicing was introduced with Windows Vista. Offline servicing occurs when you modify or service a Windows image entirely offline without booting it first. For Windows Vista, the Package Manager command-line tool was provided for updating Windows images. In Windows 7 and Windows 8, Deployment Image Servicing and Management (DISM) replaces Package Manager. For Windows 8, most operating system servicing operations can be performed on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows 8, and also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see [DISM - Deployment Image Servicing and M\\anagement Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
+
+DISM can be used on an offline image to:
+
+-   Mount, remount, and unmount an image in a .wim file for servicing.
+
+-   Query information about a Windows image.
+
+-   Add, remove, and enumerate drivers provided as .inf files.
+
+-   Add, remove, and enumerate packages, including language packs, provided as .cab files.
+
+-   Add .msu files.
+
+-   Configure international settings.
+
+-   Enable, disable, and enumerate Windows operating system features.
+
+-   Upgrade to a higher edition of Windows.
+
+-   Check the applicability of a Windows Installer application patch (.msp file).
+
+-   Enumerate applications and application patches installed in a Windows image.
+
+-   Apply the offline servicing section of an unattended answer file.
+
+-   Update a Windows Preinstallation Environment (Windows PE) image.
+
+For more information about how to service a mounted image, see [Service a Mounted Windows Image](p_adk_online.service_a_mounted_windows_image_win8).
+
+For more information about how to service an applied image, see [Service an Applied Windows Image](service-an-applied-windows-image.md).
+
+## <span id="ServicingDeploymentStrategy"></span><span id="servicingdeploymentstrategy"></span><span id="SERVICINGDEPLOYMENTSTRATEGY"></span>Servicing an Image by Using Windows Setup
+
+
+Use an unattended answer file with Windows Setup to service an image during the various configuration passes of Windows Setup. The answer file contains all the settings that are used to configure and update the Windows image. Setup calls the answer file multiple times during the deployment process. After the operating system is installed, you can boot to audit mode or Windows Welcome. For more information about Windows Setup, see [Windows Setup Technical Reference](windows-setup-technical-reference.md). For more information about configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
+
+An unattended answer file can be used during setup to:
+
+-   Add or remove a language pack.
+
+-   Configure international settings.
+
+-   Add and remove drivers.
+
+-   Add and remove packages.
+
+-   Enable and disable Windows operating system features.
+
+## <span id="OnlineServicingStrategy"></span><span id="onlineservicingstrategy"></span><span id="ONLINESERVICINGSTRATEGY"></span>Servicing a Running Operating System
+
+
+There are several tools that can be used to service a running operating system (also known as servicing an online image). You should boot to audit mode to add updates to your Windows image. Audit mode does not require settings in Windows Welcome to be applied, allowing quicker access to the desktop. After you have booted to audit mode, you can add Plug and Play device drivers, install applications and system components, and test the validity of the installation. For more information about how to use audit mode, see [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8).
+
+The following tools are typically used to update a running Windows operating system:
+
+-   Use DISM to enumerate drivers, international settings, packages, and features, and to apply unattended answer file settings. For more information, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
+
+-   Use DPInst to add drivers for detected hardware. For information about DPInst and other tools available in the Windows Driver Kit (WDK), see [Download kits and tools for Windows](http://go.microsoft.com/fwlink/?LinkId=89603).
+
+-   Use PNPUtil to add, remove, and enumerate drivers. For more information, see [Use PnPUtil at a command line to install a Plug and Play device](http://go.microsoft.com/fwlink/?LinkId=139151).
+
+-   Use Windows Update Stand-Alone Installer to add service packs or other .msu files. For more information, see [Description of the Windows Update Stand-alone Installer (Wusa.exe) and of .msu Files in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=90850)
+
+-   Use LPKSetup to add or remove language packs.
+
+## <span id="related_topics"></span>Related topics
+
+
+[Deployment Image Servicing and Management (DISM) Best Practices](p_adk_online.deployment_image_servicing_and_management__dism__best_practices_win8)
+
+[DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Understanding%20Servicing%20Strategies%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

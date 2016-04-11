@@ -1,0 +1,182 @@
+---
+Description: Sysprep Process Overview
+MS-HAID: 'p\_adk\_online.sysprep\_process\_overview'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Sysprep Process Overview
+---
+
+# Sysprep Process Overview
+
+
+The System Preparation (**Sysprep**) tool is used to change Windows® images from a generalized state to a specialized state, and then back to a generalized state. A generalized image can be deployed on any computer. A specialized image is targeted to a specific computer. You must reseal, or generalize, a Windows image before you capture and deploy the image. For example, when you use the **Sysprep** tool to generalize an image, **Sysprep** removes all system-specific information and resets the computer. The next time that the computer restarts, your customers can add user-specific information through Out-Of-Box Experience (OOBE) and accept the Microsoft Software License Terms.
+
+**Sysprep.exe** is located in the **%WINDIR%\\system32\\sysprep** directory on all Windows installations.
+
+If you transfer a Windows image to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can reuse that image on a different computer. For more information, see [Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8).
+
+In this topic:
+
+-   [Sysprep Executable](#sysprepexecutable)
+
+-   [Sysprep Process Overview](#sysprepprocess)
+
+-   [Persisting the Hardware Configuration](#bkmk-new)
+
+-   [Adding Device Drivers](#device)
+
+-   [Booting to Audit Mode or OOBE](#bootingtoauditmodeorwindowswelcome)
+
+-   [Detecting the State of a Windows Image](#detectingthestateofawindowsimage)
+
+-   [Sysprep Log Files](#syspreplogfiles)
+
+-   [Creating and Using Sysprep Providers](#creatingandusingsysprepproviders)
+
+## <span id="SysprepExecutable"></span><span id="sysprepexecutable"></span><span id="SYSPREPEXECUTABLE"></span>Sysprep Executable
+
+
+**Sysprep.exe** is the main program that calls other executable files that prepare the Windows installation. **Sysprep.exe** is located in the **%WINDIR%\\system32\\sysprep** directory on all Windows installations. If you use the command line instead of the **System Preparation Tool** GUI, you must first close the GUI and then run **Sysprep** from the **%WINDIR%\\system32\\sysprep** directory. You must also run **Sysprep** on the same version of Windows that you used to install **Sysprep**.
+
+**Important**  
+In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8).
+
+ 
+
+## <span id="SysprepProcess"></span><span id="sysprepprocess"></span><span id="SYSPREPPROCESS"></span>Sysprep Process Overview
+
+
+When Sysprep runs, it goes through the following process:
+
+1.  **Sysprep verification**. Verifies that Sysprep can run. Only an administrator can run Sysprep. Only one instance of Sysprep can run at a time. Also, Sysprep must run on the version of Windows that you used to install Sysprep.
+
+2.  **Logging initialization**. Initializes logging. For more information, see [Sysprep Log Files](#syspreplogfiles).
+
+3.  **Parsing command-line arguments**. Parses command-line arguments. If a user does not provide command-line arguments, a System Preparation Tool window appears and enables users to specify Sysprep actions.
+
+4.  **Processing Sysprep actions**. Processes Sysprep actions, calls appropriate .dll files and executable files, and adds actions to the log file.
+
+5.  **Verifying Sysprep processing actions**. Verifies that all .dll files have processed all their tasks, and then either shuts down or restarts the system.
+
+## <span id="bkmk_new"></span><span id="BKMK_NEW"></span>Persisting the Hardware Configuration
+
+
+If you create an image of this installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the identical hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can reuse that image on different computers. The next time that you boot the Windows image, the [specialize](p_adk_online.specialize_win8) configuration pass runs.
+
+If you want to install a Windows image to computers that have the same hardware configuration, you can preserve the device-drivers installation in a Windows image. To do this, in your answer file, specify the **PersistAllDeviceInstalls** setting in the **Microsoft-Windows-PnPSysprep** component. The default value is **false**. If you set the setting to **true**, the Plug and Play devices remain on the computer during the [generalize](p_adk_online.generalize__win8) configuration pass. You do not have to reinstall these devices during the [specialize](p_adk_online.specialize_win8) configuration pass. For more information, see [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md) and Unattended Windows Setup Reference Guide.
+
+## <span id="device"></span><span id="DEVICE"></span>Adding Device Drivers
+
+
+Plug and Play devices include modems, sound cards, network adapters, and video cards. The Plug and Play devices on the reference and destination computers do not have to come from the same manufacturer. However, you must include the drivers for these devices in the installation. For more information, see [Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8) and [Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8).
+
+## <span id="BootingToAuditModeOrWindowsWelcome"></span><span id="bootingtoauditmodeorwindowswelcome"></span><span id="BOOTINGTOAUDITMODEORWINDOWSWELCOME"></span>Booting to Audit Mode or OOBE
+
+
+When Windows boots, the computer can start in one of two modes:
+
+-   OOBE
+
+    OOBE, also named the out-of-box experience (OOBE), is the first user experience. The OOBE enables end users to customize their Windows installation. End users can create user accounts, read and accept the Microsoft® Software License Terms, and select their language and time zones. By default, all Windows installations boot to OOBE first. The [oobeSystem](p_adk_online.oobesystem_win8) configuration pass runs immediately before OOBE starts.
+
+    If you do not automatically activate Windows by using a product key, OOBE prompts the user for a product key. If the user skips this step during OOBE, Windows reminds the user to enter a valid product key later. To automatically activate Windows by using a product key, specify a valid product key in the **Microsoft-Windows-Shell-Setup\\ProductKey** unattend setting during the [specialize](p_adk_online.specialize_win8) configuration pass. For more information, see [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md).
+
+-   Audit Mode
+
+    If you are running a computer in audit mode to configure the installation to boot to OOBE, either use the **Sysprep** GUI or run the **Sysprep /oobe** command. To prepare a computer for an end user, you must configure the computer to boot to OOBE when an end user starts the computer for the first time. In a default Windows installation, OOBE starts after installation is completed, but you can skip OOBE and boot directly to audit mode to customize images.
+
+    You can configure Windows to boot directly to audit mode by using the **Microsoft-Windows-Deployment | Reseal | Mode** setting in an answer file. In audit mode, the computer processes settings in an unattended answer file in the [auditSystem](p_adk_online.auditsystem_win8) and [auditUser](p_adk_online.audituser_win8) configuration passes.
+
+    Audit mode enables you to add customizations to Windows images. Audit mode does not require that you apply settings in OOBE. By bypassing OOBE, you can access the desktop more quickly and perform your customizations. You can add more device drivers, install applications, and test the validity of the installation.
+
+For more information, see:
+
+-   [Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+
+-   [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8)
+
+-   [How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
+
+-   [Enable and Disable the Built-in Administrator Account](p_adk_online.enable_and_disable_the_built_in_administrator_account_win8)
+
+-   [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8)
+
+## <span id="DetectingTheStateOfAWindowsImage"></span><span id="detectingthestateofawindowsimage"></span><span id="DETECTINGTHESTATEOFAWINDOWSIMAGE"></span>Detecting the State of a Windows Image
+
+
+You can use Sysprep to identify the state of a Windows image. That is, you can determine whether the image will boot to audit mode or OOBE, or if the image is still in the process of installation. For more information, see [Windows Setup Installation Process](windows-setup-installation-process.md).
+
+## <span id="SysprepLogFiles"></span><span id="syspreplogfiles"></span><span id="SYSPREPLOGFILES"></span>Sysprep Log Files
+
+
+The **Sysprep** tool logs Windows Setup actions in different directories, depending on the configuration pass. Because the [generalize](p_adk_online.generalize__win8) configuration pass deletes certain Windows Setup log files, the **Sysprep** tool logs generalize actions outside the standard Windows Setup log files. The following table shows the different log file locations that **Sysprep** uses.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Item</th>
+<th align="left">Log Path</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Generalize</strong></p></td>
+<td align="left"><p><strong>%WINDIR%\System32\Sysprep\Panther</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Specialize</strong></p></td>
+<td align="left"><p><strong>%WINDIR%\Panther\</strong></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Unattended Windows Setup actions</p></td>
+<td align="left"><p><strong>%WINDIR%\Panther\Unattendgc</strong></p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+For more information, see [Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8).
+
+## <span id="CreatingAndUsingSysprepProviders"></span><span id="creatingandusingsysprepproviders"></span><span id="CREATINGANDUSINGSYSPREPPROVIDERS"></span>Creating and Using Sysprep Providers
+
+
+Independent software vendors (ISVs) and independent hardware vendors (IHVs) can create **Sysprep** providers that enable their applications to support imaging and deployment scenarios. If an application does not currently support generalize operations by using the **Sysprep** tool, you can create a provider that removes all software-specific and hardware-specific information from the application.
+
+To create a **Sysprep** provider, you must do the following:
+
+1.  Determine which configuration pass (**cleanup**, **generalize**, or **specialize**) your Sysprep provider addresses.
+
+2.  Create the appropriate entry point for your **Sysprep** provider, based on your choice of configuration pass.
+
+3.  Register the **Sysprep** provider for use by the **Sysprep** tool.
+
+4.  Test your **Sysprep** provider to validate that the provider functions correctly. Make sure that you review the log files for warnings and errors.
+
+For more information about **Sysprep** providers, see the [System Preparation (Sysprep) Tool Provider Developer’s Guide](http://go.microsoft.com/fwlink/?LinkId=205568).
+
+## <span id="related_topics"></span>Related topics
+
+
+[Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md)
+
+[Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8)
+
+[Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8)
+
+[Sysprep Support for Server Roles](sysprep-support-for-server-roles.md)
+
+[Use Answer Files with Sysprep](use-answer-files-with-sysprep.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Sysprep%20Process%20Overview%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
