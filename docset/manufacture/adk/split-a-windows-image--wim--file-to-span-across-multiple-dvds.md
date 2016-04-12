@@ -11,7 +11,7 @@ title: 'Split a Windows image file (.wim) to span across multiple DVDs'
 Split .wim files into .swm files for DVDs or FAT32 file systems. Use this procedure when the split .swm files do not fit in into a single medium, such as these cases:
 
 -   Deploying Windows using DVDs. (A standard single-sided DVD stores 4.7GB).
--   Deploying your Windows image from a Windows PE USB key. (The standard Windows PE installation uses the FAT32 file system, which has a maximum file size of 4GB.) For more information, see [WinPE: Store or split images to deploy Windows using a single USB key](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim-.md).
+-   Deploying your Windows image from a Windows PE USB key. (The standard Windows PE installation uses the FAT32 file system, which has a maximum file size of 4GB.) For more information, see [WinPE: Store or split images to deploy Windows using a single USB key](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md).
 
 After the files are split, you can copy them onto separate DVDs, or onto USB key(s).
 
@@ -87,7 +87,7 @@ By default, this option creates new split .wim files with a .swm extension. The 
 
 [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)
 
-[WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim-.md)
+[WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 

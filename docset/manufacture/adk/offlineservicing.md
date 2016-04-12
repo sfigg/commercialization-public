@@ -23,7 +23,7 @@ Additionally, you can use the Deployment Image Servicing and Management tool wit
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](generalize-.md)
+[generalize](generalize.md)
 
 [oobeSystem](oobesystem.md)
 

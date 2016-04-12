@@ -53,7 +53,7 @@ Deployment Image Servicing and Management (DISM) is a command-line tool that is 
 
 [What is DISM?](what-is-dism.md)
 
-[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management-.md)
+[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)
 
  
 

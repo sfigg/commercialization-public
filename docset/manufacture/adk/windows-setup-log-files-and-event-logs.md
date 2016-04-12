@@ -99,7 +99,7 @@ Tracerpt /l C:\windows\panther\setup.etl
 
 [Windows Setup States](windows-setup-states.md)
 
-[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt-.md)
+[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt.md)
 
  
 

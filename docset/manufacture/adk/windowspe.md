@@ -37,7 +37,7 @@ The **windowsPE** configuration pass also enables you to specify Windows Setup-
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](generalize-.md)
+[generalize](generalize.md)
 
 [offlineServicing](offlineservicing.md)
 

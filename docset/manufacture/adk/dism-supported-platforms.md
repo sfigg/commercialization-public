@@ -16,7 +16,7 @@ To use the Windows 10 version of DISM onto a previous version of Windows, insta
 
 To use the Windows 10 version of DISM with a previous version of Windows PE, see [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md).
 
-Note, newer DISM features don’t always work when servicing images of previous versions of Windows. To learn more, see the [DISM Reference](dism-reference--deployment-image-servicing-and-management-.md).
+Note, newer DISM features don’t always work when servicing images of previous versions of Windows. To learn more, see the [DISM Reference](dism-reference--deployment-image-servicing-and-management.md).
 
 ## <span id="DTSP_DISM"></span><span id="dtsp_dism"></span>Supported Platforms
 
@@ -172,7 +172,7 @@ Resilient File System (REFS) is not supported.
 
 [Install the Windows 10 Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526803)
 
-[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management-.md)
+[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)
 
 [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md)
 

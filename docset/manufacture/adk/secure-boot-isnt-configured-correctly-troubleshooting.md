@@ -63,7 +63,7 @@ Be careful when changing BIOS settings. The BIOS menu is designed for advanced u
 
 6.  If the above steps don’t work, and you still want to use the Secure Boot feature, contact your manufacturer for help.
 
-    For additional troubleshooting steps for PC manufacturers: see [Secure Boot isn't configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)](secure-boot-isnt-configured-correctly-determine-if-the-pc-is-in-a-manufacturing-mode--info-for-manufacturers-.md).
+    For additional troubleshooting steps for PC manufacturers: see [Secure Boot isn't configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)](secure-boot-isnt-configured-correctly-determine-if-the-pc-is-in-a-manufacturing-mode--info-for-manufacturers.md).
 
 ## <span id="related_topics"></span>Related topics
 

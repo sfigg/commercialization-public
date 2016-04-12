@@ -63,7 +63,7 @@ To enable kernel-mode debugging, enable TESTSIGNING, or to disable NX, you must 
 ## <span id="How_it_works"></span><span id="how_it_works"></span><span id="HOW_IT_WORKS"></span>How it works
 
 
-The OEM uses instructions from the firmware manufacturer to create Secure Boot keys and to store them in the PC firmware. For info, see [Windows 8.1 Secure Boot Key Creation and Management Guidance](windows-secure-boot-key-creation-and-management-guidance.md), [Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example-.md), or contact your hardware manufacturer.
+The OEM uses instructions from the firmware manufacturer to create Secure Boot keys and to store them in the PC firmware. For info, see [Windows 8.1 Secure Boot Key Creation and Management Guidance](windows-secure-boot-key-creation-and-management-guidance.md), [Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example.md), or contact your hardware manufacturer.
 
 When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see [UEFI Validation Option ROM Validation Guidance](uefi-validation-option-rom-validation-guidance.md).
 
@@ -102,7 +102,7 @@ For more information, see the whitepaper: [Secured Boot and Measured Boot: Harde
 
 [Secure Boot isn't configured correctly: troubleshooting](secure-boot-isnt-configured-correctly-troubleshooting.md)
 
-[Secure Boot isn't configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)](secure-boot-isnt-configured-correctly-determine-if-the-pc-is-in-a-manufacturing-mode--info-for-manufacturers-.md)
+[Secure Boot isn't configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)](secure-boot-isnt-configured-correctly-determine-if-the-pc-is-in-a-manufacturing-mode--info-for-manufacturers.md)
 
 [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](http://go.microsoft.com/fwlink/?LinkId=278911)
 

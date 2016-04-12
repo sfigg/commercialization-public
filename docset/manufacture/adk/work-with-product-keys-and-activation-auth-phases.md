@@ -35,7 +35,7 @@ If you have multiple Windows images with the same Windows edition that are store
 
  
 
-For information about managing Windows product keys when changing the Windows image to a higher edition, see [Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism-.md).
+For information about managing Windows product keys when changing the Windows image to a higher edition, see [Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md).
 
 ## <span id="ActivateWindowsByUsingAProductKey"></span><span id="activatewindowsbyusingaproductkey"></span><span id="ACTIVATEWINDOWSBYUSINGAPRODUCTKEY"></span>Activate Windows
 
@@ -64,7 +64,7 @@ In most Windows 8 deployment scenarios, you no longer have to use the `SkipRear
 
 [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md)
 
-[Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism-.md)
+[Change the Windows Image to a Higher Edition Using DISM](change-the-windows-image-to-a-higher-edition-using-dism.md)
 
  
 

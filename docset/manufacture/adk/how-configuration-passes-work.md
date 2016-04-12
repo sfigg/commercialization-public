@@ -279,7 +279,7 @@ In some instances, you might be required to restart your computer. For example, 
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](generalize-.md)
+[generalize](generalize.md)
 
 [offlineServicing](offlineservicing.md)
 

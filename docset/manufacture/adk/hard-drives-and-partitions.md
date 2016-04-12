@@ -14,7 +14,7 @@ In this section, you will learn methods to deploy Windows to different drives, 
 
 
 -   Use Compact OS and single-sourcing to save more space on the hard drive: [Compact OS, single-sourcing, and image optimization](compact-os.md).
--   Use the FFU image format to apply images faster to your devices: [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md)
+-   Use the FFU image format to apply images faster to your devices: [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)
 -   In Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), we've changed the partition layout. While we still use a separate recovery tools image, Windows no longer needs a separate full-system recovery image to use push-button reset features. This can save several GB of drive space.
 
     We now recommend that you place the Windows recovery tools partition immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
@@ -161,7 +161,7 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md) | [Factory Encrypted Drives](factory-encrypted-drives.md) | [BitLocker Drive Encryption](bitlocker-drive-encryption.md)</p></td>
+<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md) | [Factory Encrypted Drives](factory-encrypted-drives.md) | [BitLocker Drive Encryption](bitlocker-drive-encryption.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>

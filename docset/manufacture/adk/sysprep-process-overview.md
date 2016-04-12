@@ -62,7 +62,7 @@ When Sysprep runs, it goes through the following process:
 
 If you create an image of this installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the identical hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can reuse that image on different computers. The next time that you boot the Windows image, the [specialize](specialize.md) configuration pass runs.
 
-If you want to install a Windows image to computers that have the same hardware configuration, you can preserve the device-drivers installation in a Windows image. To do this, in your answer file, specify the **PersistAllDeviceInstalls** setting in the **Microsoft-Windows-PnPSysprep** component. The default value is **false**. If you set the setting to **true**, the Plug and Play devices remain on the computer during the [generalize](generalize-.md) configuration pass. You do not have to reinstall these devices during the [specialize](specialize.md) configuration pass. For more information, see [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md) and Unattended Windows Setup Reference Guide.
+If you want to install a Windows image to computers that have the same hardware configuration, you can preserve the device-drivers installation in a Windows image. To do this, in your answer file, specify the **PersistAllDeviceInstalls** setting in the **Microsoft-Windows-PnPSysprep** component. The default value is **false**. If you set the setting to **true**, the Plug and Play devices remain on the computer during the [generalize](generalize.md) configuration pass. You do not have to reinstall these devices during the [specialize](specialize.md) configuration pass. For more information, see [Use Answer Files with Sysprep](use-answer-files-with-sysprep.md) and Unattended Windows Setup Reference Guide.
 
 ## <span id="device"></span><span id="DEVICE"></span>Adding Device Drivers
 
@@ -108,7 +108,7 @@ You can use Sysprep to identify the state of a Windows image. That is, you can d
 ## <span id="SysprepLogFiles"></span><span id="syspreplogfiles"></span><span id="SYSPREPLOGFILES"></span>Sysprep Log Files
 
 
-The **Sysprep** tool logs Windows Setup actions in different directories, depending on the configuration pass. Because the [generalize](generalize-.md) configuration pass deletes certain Windows Setup log files, the **Sysprep** tool logs generalize actions outside the standard Windows Setup log files. The following table shows the different log file locations that **Sysprep** uses.
+The **Sysprep** tool logs Windows Setup actions in different directories, depending on the configuration pass. Because the [generalize](generalize.md) configuration pass deletes certain Windows Setup log files, the **Sysprep** tool logs generalize actions outside the standard Windows Setup log files. The following table shows the different log file locations that **Sysprep** uses.
 
 <table>
 <colgroup>

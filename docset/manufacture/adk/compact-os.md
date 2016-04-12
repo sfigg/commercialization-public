@@ -57,7 +57,7 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
     From Windows ICD, click **Create** &gt; **Production Media** &gt; **FFU** &gt; **Enable OS File Compression: Yes** &gt; name the file, for example, D:\\flash.ffu &gt; **Build**.
 
-2.  You can deploy the FFU image directly to a drive from Windows ICD or from Windows Preinstallation Environment (WinPE). To learn more, see [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md).
+2.  You can deploy the FFU image directly to a drive from Windows ICD or from Windows Preinstallation Environment (WinPE). To learn more, see [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md).
 
 **To deploy Compact OS from Windows Setup**
 

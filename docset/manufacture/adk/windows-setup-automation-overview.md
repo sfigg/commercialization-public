@@ -217,11 +217,11 @@ The following examples help describe the behavior of implicit answer file search
 
 2.  Copy an Unattend.xml file to the %WINDIR%\\System32\\Sysprep directory.
 
-    This answer file has settings in the [generalize](generalize-.md) configuration pass.
+    This answer file has settings in the [generalize](generalize.md) configuration pass.
 
 3.  Run the **sysprep** command with the **/generalize** option to create a reference image.
 
-    Because the %WINDIR%\\System32\\Sysprep directory is in the implicit search paths, the answer file copied to this directory is found. However, an answer file that was used to install Windows is still cached on the computer and contains settings for the [generalize](generalize-.md) configuration pass. This cached answer file has a higher precedence than the one copied to the Sysprep directory. The cached answer file is used.
+    Because the %WINDIR%\\System32\\Sysprep directory is in the implicit search paths, the answer file copied to this directory is found. However, an answer file that was used to install Windows is still cached on the computer and contains settings for the [generalize](generalize.md) configuration pass. This cached answer file has a higher precedence than the one copied to the Sysprep directory. The cached answer file is used.
 
     **Note**  
     The Sysprep tool can be run as a command-line tool or as a GUI tool. If you run the Sysprep tool as a GUI tool, you can select the **Generalize** check box.
@@ -242,7 +242,7 @@ The following examples help describe the behavior of implicit answer file search
 
 2.  On an installed Windows operating system, run the **sysprep /generalize /oobe** command.
 
-    Even though the answer file is available in one of the implicit search paths, the Unattend.xml file is ignored because it does not contain a valid pass for the [generalize](generalize-.md) configuration pass.
+    Even though the answer file is available in one of the implicit search paths, the Unattend.xml file is ignored because it does not contain a valid pass for the [generalize](generalize.md) configuration pass.
 
 ## <span id="bkmk_d"></span><span id="BKMK_D"></span>Additional Resources
 

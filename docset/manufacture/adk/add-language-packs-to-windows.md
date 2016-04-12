@@ -10,7 +10,7 @@ title: Add Language Packs to Windows
 
 OEMs can add language packs to localize PCs and devices for customers in different regions.
 
-For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), language packs have been split into language components (lp.cab) and [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities-.md). This reduction in image size can be helpful when creating images for lower-cost devices with small storage. It can also reduce the time required to create and deploy images.
+For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), language packs have been split into language components (lp.cab) and [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md). This reduction in image size can be helpful when creating images for lower-cost devices with small storage. It can also reduce the time required to create and deploy images.
 
 ## <span id="LangPackTypes"></span><span id="langpacktypes"></span><span id="LANGPACKTYPES"></span>Language Pack Types
 
@@ -80,7 +80,7 @@ Some capabilities have additional dependencies, as shown here:
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities-.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -208,7 +208,7 @@ To save space, you can remove English language components when deploying to non-
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
-2.  Add any other capabilities, such as fonts, required for that region. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities-.md).
+2.  Add any other capabilities, such as fonts, required for that region. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).
 
     ``` syntax
     rem Thai example (add th-TH first).
@@ -416,7 +416,7 @@ The language-pack removal task does not remove LIPs.
 
 [Available Language Packs for Windows](available-language-packs-for-windows.md)
 
-[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities-.md)
+[Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md)
 
 [Windows Language Pack Default Values](windows-language-pack-default-values.md)
 

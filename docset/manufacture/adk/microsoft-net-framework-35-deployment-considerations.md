@@ -13,9 +13,9 @@ title: 'Microsoft .NET Framework 3.5 Deployment Considerations'
 **In this section:**
 
 -   [Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting](deploy-net-framework-35-by-using-group-policy-feature-on-demand-setting.md)
--   [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism-.md)
+-   [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism.md)
 -   [Enable .NET Framework 3.5 by using Windows PowerShell](enable-net-framework-35-by-using-windows-powershell.md)
--   [Enable .NET Framework 3.5 by using Control Panel and Windows Update (Windows 8 only)](enable-net-framework-35-by-using-control-panel-and-windows-update--windows-8-only-.md)
+-   [Enable .NET Framework 3.5 by using Control Panel and Windows Update (Windows 8 only)](enable-net-framework-35-by-using-control-panel-and-windows-update--windows-8-only.md)
 -   [Enable .NET Framework 3.5 by using the Add Roles and Features Wizard](enable-net-framework-35-by-using-the-add-roles-and-features-wizard.md)
 -   [.NET Framework 3.5 deployment errors and resolution steps](net-framework-35-deployment-errors-and-resolution-steps.md)
 

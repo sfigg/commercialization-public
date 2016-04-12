@@ -34,7 +34,7 @@ The following topics describe the configuration passes used with Windows Setup.
 <td align="left"><p>The <strong>auditUser</strong> configuration pass is one of the configuration passes used in audit mode.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[generalize](generalize-.md)</p></td>
+<td align="left"><p>[generalize](generalize.md)</p></td>
 <td align="left"><p>The <strong>generalize</strong> configuration pass prepares a Windows image to be deployed across many computers.</p></td>
 </tr>
 <tr class="odd">

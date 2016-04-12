@@ -95,7 +95,7 @@ To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Optio
 [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)
 
 **FFU**
-[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md)
+[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 

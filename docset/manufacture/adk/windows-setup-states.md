@@ -104,7 +104,7 @@ The following examples show how to access state information.
 
 [Windows Setup Command-Line Options](windows-setup-command-line-options.md)
 
-[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt-.md)
+[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt.md)
 
 [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md)
 

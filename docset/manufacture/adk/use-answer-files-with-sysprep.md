@@ -30,13 +30,13 @@ If you specify a Windows 8 product key, Windows is automatically activated, and
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Applying Settings in the generalize, auditSystem, and auditUser Configuration Passes
 
 
-Not all configuration passes run during Windows Setup. The [generalize](generalize-.md), [auditSystem](auditsystem.md), and [auditUser](audituser.md) configuration passes are available only when you run **Sysprep**.
+Not all configuration passes run during Windows Setup. The [generalize](generalize.md), [auditSystem](auditsystem.md), and [auditUser](audituser.md) configuration passes are available only when you run **Sysprep**.
 
 If you add settings to your answer file in these configuration passes, you must run **Sysprep** to apply these settings as follows:
 
 -   To apply the settings in the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes, you must boot in audit mode by using the **Sysprep/audit** command.
 
--   To apply the settings in the [generalize](generalize-.md) configuration pass, you must use the **Sysprep/generalize** command. The generalize configuration pass removes the system-specific settings so that you can deploy the same image on multiple computers.
+-   To apply the settings in the [generalize](generalize.md) configuration pass, you must use the **Sysprep/generalize** command. The generalize configuration pass removes the system-specific settings so that you can deploy the same image on multiple computers.
 
 For more information, see [How Configuration Passes Work](how-configuration-passes-work.md).
 

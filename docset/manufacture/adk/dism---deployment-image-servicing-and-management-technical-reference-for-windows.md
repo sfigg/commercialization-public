@@ -30,11 +30,11 @@ DISM is installed with Windows, and it is also distributed in the Windows Assess
 <td align="left"><p>Describes the DISM system requirements, benefits, common servicing and management scenarios, and limitations.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management-.md)</p></td>
+<td align="left"><p>[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)</p></td>
 <td align="left"><p>Provides how-to instructions on using DISM.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management-.md)</p></td>
+<td align="left"><p>[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)</p></td>
 <td align="left"><p>Provides reference information for DISM, including command-line options, best practices, and supported platforms.</p></td>
 </tr>
 </tbody>

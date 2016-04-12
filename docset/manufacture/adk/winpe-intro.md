@@ -61,7 +61,7 @@ To prevent its use as a production operating system, Windows PE automatically s
 
 When Windows PE reboots, all changes are lost, including changes to drivers, drive letters, and the Windows PE registry. To make lasting changes, see [WinPE: Mount and Customize](winpe-mount-and-customize.md).
 
-The default Windows PE installation uses the FAT32 file format, which poses its own limitations, including a maximum 4GB file size and maximum 32GB drive size. To learn more, see [WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim-.md).
+The default Windows PE installation uses the FAT32 file format, which poses its own limitations, including a maximum 4GB file size and maximum 32GB drive size. To learn more, see [WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md).
 
 Windows PE does not support any of the following:
 
@@ -105,7 +105,7 @@ Windows PE does not support any of the following:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) | [Demo: Installing Windows PE on a USB Drive](http://go.microsoft.com/fwlink/?LinkId=279081) | [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md) | [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md) | [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md) | [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md) | [WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim-.md)</p></td>
+<td align="left"><p>[WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) | [Demo: Installing Windows PE on a USB Drive](http://go.microsoft.com/fwlink/?LinkId=279081) | [WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md) | [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md) | [WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md) | [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md) | [WinPE: Use a single USB key for WinPE and a WIM file (.wim)](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>

@@ -57,7 +57,7 @@ This section provides information about servicing an existing Windows image usin
 
 [What is DISM?](what-is-dism.md)
 
-[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management-.md)
+[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)
 
  
 

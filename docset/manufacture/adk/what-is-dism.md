@@ -194,7 +194,7 @@ DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Dr
 ## <span id="related_topics"></span>Related topics
 
 
-[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management-.md)
+[DISM Reference (Deployment Image Servicing and Management)](dism-reference--deployment-image-servicing-and-management.md)
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 

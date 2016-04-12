@@ -130,7 +130,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 
 [FFU image format](p_phManuRetail.ffu_image_format)
 
-[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md)
+[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)
 
 [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)
 

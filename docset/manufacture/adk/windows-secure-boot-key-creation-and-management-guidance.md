@@ -499,7 +499,7 @@ The following metrics can help you select a HSM PC based on the requirements of 
 
     **2.2.2.2 HSM vendors**
 
-    Some HSM vendors may be able to provide custom consulting. For more info, see [Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example-.md).
+    Some HSM vendors may be able to provide custom consulting. For more info, see [Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example.md).
 
 -   **2.2.3 Trusted Platform Module (TPM)**
 
@@ -920,7 +920,7 @@ For more info, see Section 1.3.5 and section 1.3.6.
 ## <span id="related_topics"></span>Related topics
 
 
-[Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example-.md)
+[Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example.md)
 
 [UEFI Validation Option ROM Validation Guidance](uefi-validation-option-rom-validation-guidance.md)
 

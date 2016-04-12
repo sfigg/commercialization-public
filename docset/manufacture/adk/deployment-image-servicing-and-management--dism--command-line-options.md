@@ -85,7 +85,7 @@ DISM replaces tools including PEImg, Intlcfg, Package Manager, and ImageX.
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management-.md)
+[DISM How-to Topics (Deployment Image Servicing and Management)](dism-how-to-topics--deployment-image-servicing-and-management.md)
 
 [What is DISM?](what-is-dism.md)
 

@@ -459,7 +459,7 @@ The following commands can be used to mount, unmount, capture, append, and delet
 
 [DISM Global Options for Command-Line Syntax](dism-global-options-for-command-line-syntax.md)
 
-[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md)
+[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)
 
 [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)
 
