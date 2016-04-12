@@ -11,7 +11,7 @@ title: Manufacture
 ## <span id="purpose"></span>Purpose
 
 
-Use the manufacturing tools to deploy your Windows [customizations](customize-portal.md) to new Windows 10 devices. Learn how to:
+Use the manufacturing tools to deploy your Windows [customizations](../customize/index.md) to new Windows 10 devices. Learn how to:
 
 -   Combine your customizations, plus languages, drivers, apps and more, into new Windows images.
 -   Modify these images either from a manufacturing mode for a familiar Windows experience, or from a command line for quicker changes that can be automated and scripted.
@@ -31,21 +31,21 @@ Use the manufacturing tools to deploy your Windows [customizations](customize-po
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[OEM Windows Desktop Deployment and Imaging Lab](p_sxs_dmfg.oem_windows_deployment_and_imaging_walkthrough_blue)</td>
+<td align="left">[OEM Windows Desktop Deployment and Imaging Lab](sxs/oem-windows-deployment-and-imaging-walkthrough.md)</td>
 <td align="left"><p>Building your first devices with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)?</p>
 <p>Want to learn strategies to save time on the factory floor?</p>
 <p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[Desktop manufacturing](p_adk_online.windows_deployment_tools_technical_reference)</td>
+<td align="left">[Desktop manufacturing](adk/windows-deployment-tools-technical-reference.md)</td>
 <td align="left">Technical reference for Windows 10 for desktop editions</td>
 </tr>
 <tr class="odd">
-<td align="left">[Customize and Deploy Windows Server Essentials in Windows 10](p_wse_adk.customize_and_deploy_windows_server_essentials_in_windows_10_wse_adk)</td>
+<td align="left">[Customize and Deploy Windows Server Essentials in Windows 10](security-essentials/customize-and-deploy-windows-server-essentials-in-windows-10-wse-adk.md)</td>
 <td align="left">Technical reference for Windows Server 2016 Technical Preview</td>
 </tr>
 <tr class="even">
-<td align="left">[Mobile manufacturing](p_phManuRetail.manufacturing)</td>
+<td align="left">[Mobile manufacturing](mobile/manufacturing.md)</td>
 <td align="left">Technical reference for Windows 10 Mobile</td>
 </tr>
 </tbody>
