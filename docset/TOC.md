@@ -360,7 +360,6 @@
 ### [Command-line options to manufacture IoT Core images](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [Windows ADK IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
-#### [Download not available](manufacture/iot/download-not-available.md)
 
 
 
