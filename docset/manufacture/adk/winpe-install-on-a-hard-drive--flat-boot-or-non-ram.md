@@ -131,11 +131,11 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
 [WinPE for Windows 10](winpe-intro.md)
 
-[WinPE: Create USB Bootable drive](p_adk_online.winpe_create_usb_bootable_drive_blue)
+[WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
-[WinPE: Boot in UEFI or legacy BIOS mode](p_adk_online.winpe_boot_in_uefi_or_legacy_bios_mode_blue)
+[WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

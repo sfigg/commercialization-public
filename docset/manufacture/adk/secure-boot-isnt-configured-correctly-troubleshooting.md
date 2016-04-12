@@ -22,7 +22,7 @@ Secure Boot helps to make sure that your PC boots using only firmware that is tr
 
 Your PC may be OK, but it's not as protected as it could be, because Secure Boot isn't running.
 
-You may need to disable Secure Boot to run some hardware, graphics cards, or operating systems such as Linux or previous versions of Windows. For more info, see [Disabling Secure Boot](p_adk_online.disabling_secure_boot_blue).
+You may need to disable Secure Boot to run some hardware, graphics cards, or operating systems such as Linux or previous versions of Windows. For more info, see [Disabling Secure Boot](disabling-secure-boot.md).
 
 ## <span id="Can_I_just_dismiss_this_alert_or_remove_the_watermark_"></span><span id="can_i_just_dismiss_this_alert_or_remove_the_watermark_"></span><span id="CAN_I_JUST_DISMISS_THIS_ALERT_OR_REMOVE_THE_WATERMARK_"></span>Can I just dismiss this alert or remove the watermark?
 
@@ -74,7 +74,7 @@ Be careful when changing BIOS settings. The BIOS menu is designed for advanced u
 
 [Microsoft Support KB article 2902864](http://support.microsoft.com/kb/2902864)
 
-[Disabling Secure Boot](p_adk_online.disabling_secure_boot_blue)
+[Disabling Secure Boot](disabling-secure-boot.md)
 
  
 

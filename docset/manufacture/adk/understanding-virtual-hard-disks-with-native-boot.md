@@ -152,7 +152,7 @@ Windows Deployment Services is a network-based installation server that enables 
 
 [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)
 
-[Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](p_adk_online.boot_to_vhd__native_boot__add_a_virtual_hard_disk_to_the_boot_menu_win8)
+[Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 
 [Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive](download-and-install-windows-pe--winpe--so-you-can-boot-from-a-usb-flash-drive-or-an-external-usb-hard-drive.md)
 

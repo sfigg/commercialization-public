@@ -122,7 +122,7 @@ It is possible that some users will acquire devices that fall in-between, featur
 ## <span id="related_topics"></span>Related topics
 
 
-[High DPI Support for IT Professionals](p_adk_online.high_dpi_support_for_it_professionalswin81)
+[High DPI Support for IT Professionals](high-dpi-support-for-it-professionalswin81.md)
 
  
 

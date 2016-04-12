@@ -326,7 +326,7 @@ setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1
 <td align="left"><p>Specifies whether it's OK to resize the existing Windows Recovery Environment (Windows RE) partition or create a new one during installation.</p>
 <p><strong>Enable</strong>: During installation, Windows can resize the existing Windows RE tools partition or create a new one if needed.</p>
 <p><strong>Disable</strong>: Windows does not resize the existing Windows RE tools partition or create a new one during installation.</p>
-<p>To learn more about Windows RE partitions, see [UEFI/GPT-based hard drive partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8) and [BIOS/MBR-based hard drive partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8).</p>
+<p>To learn more about Windows RE partitions, see [UEFI/GPT-based hard drive partitions](configure-uefigpt-based-hard-drive-partitions.md) and [BIOS/MBR-based hard drive partitions](configure-biosmbr-based-hard-drive-partitions.md).</p>
 <pre class="syntax" space="preserve"><code>Setup /resizerecoverypartition disable</code></pre></td>
 </tr>
 <tr class="odd">

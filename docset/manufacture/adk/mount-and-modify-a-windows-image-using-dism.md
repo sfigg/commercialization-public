@@ -15,7 +15,7 @@ DISM cannot mount a Windows image from a VHD on Windows Vista with Service Pack
 
  
 
-You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](p_adk_online.deployment_image_servicing_and_management__dism__best_practices_win8).
+You can mount and modify multiple images on a single computer. For more information, see [Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md).
 
 ## <span id="Mounting_an_Image"></span><span id="mounting_an_image"></span><span id="MOUNTING_AN_IMAGE"></span>Mounting an Image
 

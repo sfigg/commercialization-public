@@ -16,8 +16,8 @@ Windows Recovery Environment (WinRE) is a recovery environment that can repair c
 
 
 -   By default, if you install Windows using media created from Windows Imaging and Configuration Designer (ICD), you'll get a dedicated WinRE tools partition on both UEFI and BIOS-based devices, located immediately after the Windows partition. This allows Windows to replace and resize the partition as needed. (If you install Windows by using Windows Setup, you'll get the same partition layout that you did in Windows 8.1.)
--   If you [add a custom tool to the WinRE boot options menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8), it can only use optional components that are already in the default WinRE tools. For example, if you have a app from Windows 8 that depended on the .NET optional components, you'll need to rewrite the app for Windows 10.
--   If you [add a custom tool to the WinRE boot options menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8), it must be placed in the \\Sources\\Recovery\\Tools folder so that it can continue to work after future WinRE upgrades.
+-   If you [add a custom tool to the WinRE boot options menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md), it can only use optional components that are already in the default WinRE tools. For example, if you have a app from Windows 8 that depended on the .NET optional components, you'll need to rewrite the app for Windows 10.
+-   If you [add a custom tool to the WinRE boot options menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md), it must be placed in the \\Sources\\Recovery\\Tools folder so that it can continue to work after future WinRE upgrades.
 -   When adding languages to the push-button reset tools, you'll now need to add the WinPE-HTA optional component.
 
 ## <span id="Tools"></span><span id="tools"></span><span id="TOOLS"></span>Tools
@@ -25,8 +25,8 @@ Windows Recovery Environment (WinRE) is a recovery environment that can repair c
 
 WinRE includes these tools:
 
--   **Automatic repair and other troubleshooting tools**. For more info, see [Windows RE Troubleshooting Features](p_adk_online.windows_re_troubleshooting_features_win8).
--   **Push-button reset** (Windows 10 for desktop editions , Windows 8.1 and Windows 8 only). This tool enables your users to repair their own PCs quickly while preserving their data and important customizations, without having to back up data in advance. For more info, see [Push-Button Reset Overview](p_adk_online.push_button_reset_overview_win8).
+-   **Automatic repair and other troubleshooting tools**. For more info, see [Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md).
+-   **Push-button reset** (Windows 10 for desktop editions , Windows 8.1 and Windows 8 only). This tool enables your users to repair their own PCs quickly while preserving their data and important customizations, without having to back up data in advance. For more info, see [Push-Button Reset Overview](push-button-reset-overview.md).
 -   **System image recovery** (Windows Server 2016 Technical Preview, Windows Server 2012 R2 and Windows Server 2012 only). This tool restores the entire hard drive. For more info, see [Recover the Operating System or Full Server](http://go.microsoft.com/fwlink/p/?LinkID=225039).
 
 In addition, you can create your own custom recovery solution by using the [Windows Imaging API](http://go.microsoft.com/fwlink/p/?LinkId=245837), or by using the [Deployment Image Servicing and Management (DISM) API](http://go.microsoft.com/fwlink/p/?LinkID=245836).
@@ -38,7 +38,7 @@ Your users can access WinRE features through the **Boot Options** menu, which ca
 
 -   In Windows 10, select **Start** &gt; **Settings** &gt; **Update & recovery** &gt; **Recovery** &gt; under **Advanced Startup**, click **Restart now**.
 -   Boot to recovery media.
--   You can configure a hardware recovery button (or button combination) to run a secondary boot path that includes WinRE. For more information, see [Add a Hardware Recovery Button to Start Windows RE](p_adk_online.add_a_hardware_recovery_button_to_start_windows_re_win8).
+-   You can configure a hardware recovery button (or button combination) to run a secondary boot path that includes WinRE. For more information, see [Add a Hardware Recovery Button to Start Windows RE](add-a-hardware-recovery-button-to-start-windows-re.md).
 
 After any of these actions is performed, all user sessions are signed off and the **Boot Options** menu is displayed. If your users select a WinRE feature from this menu, the PC restarts into WinRE and the selected feature is launched.
 
@@ -59,7 +59,7 @@ This menu enables your users to perform these actions:
 -   Choose which operating system to boot, if multiple operating systems are installed on the PC.
 
 **Note**  
-You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8).
+You can add one custom tool to the **Boot options** menu. Otherwise, these menus can't be further customized. For more info, see [Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md).
 
  
 
@@ -111,7 +111,7 @@ Add the baseline WinRE tools image (winre.wim) to a separate partition from the 
 
 We recommend that you store the recovery tools in a dedicated partition, directly after the Windows partition.
 
-For more info about configuring hard drive partitions, see [Configure UEFI/GPT-Based Hard Drive Partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8) or [Configure BIOS/MBR-Based Hard Drive Partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8).
+For more info about configuring hard drive partitions, see [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) or [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md).
 
 ## <span id="Memory_requirements"></span><span id="memory_requirements"></span><span id="MEMORY_REQUIREMENTS"></span>Memory requirements
 
@@ -135,19 +135,19 @@ In order to boot Windows RE directly from memory (also known as RAM disk boot), 
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[Customize Windows RE](p_adk_online.customize_windows_re_win8) | [Deploy Windows RE](p_adk_online.deploy_windows_re_win8)</p></td>
+<td align="left"><p>[Customize Windows RE](customize-windows-re.md) | [Deploy Windows RE](deploy-windows-re.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[REAgentC Command-Line Options](p_adk_online.reagentc_command_line_options_win8)</p></td>
+<td align="left"><p>[REAgentC Command-Line Options](reagentc-command-line-options.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>
-<td align="left"><p>[Windows RE Troubleshooting Features](p_adk_online.windows_re_troubleshooting_features_win8)</p></td>
+<td align="left"><p>[Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Add-on tools</strong></p></td>
-<td align="left"><p>[Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8) | [Add a Hardware Recovery Button to Start Windows RE](p_adk_online.add_a_hardware_recovery_button_to_start_windows_re_win8) | [Push-Button Reset Overview](p_adk_online.push_button_reset_overview_win8)</p></td>
+<td align="left"><p>[Add a Custom Tool to the Windows RE Boot Options Menu](add-a-custom-tool-to-the-windows-re-boot-options-menu.md) | [Add a Hardware Recovery Button to Start Windows RE](add-a-hardware-recovery-button-to-start-windows-re.md) | [Push-Button Reset Overview](push-button-reset-overview.md)</p></td>
 </tr>
 </tbody>
 </table>

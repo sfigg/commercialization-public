@@ -10,7 +10,7 @@ title: Take Inventory of an Image or Component Using DISM
 
 You can take an inventory of what drivers, packages, and other files and settings are included in a Windows image. To do so, use Deployment Image Servicing and Management (DISM) servicing commands.
 
-You must mount an offline image from a WIM or VHD file before you can take inventory of or service a specific Windows image. For more information, see [Mount and Modify a Windows Image Using DISM](p_adk_online.mount_and_modify_a_windows_image_using_dism_win8).
+You must mount an offline image from a WIM or VHD file before you can take inventory of or service a specific Windows image. For more information, see [Mount and Modify a Windows Image Using DISM](mount-and-modify-a-windows-image-using-dism.md).
 
 In this section:
 
@@ -39,7 +39,7 @@ You can gather information about all of the images in a WIM or VHD file by using
 
 You can identify the images that are currently mounted on your computer, and you can list information about the mounted image such as read/write permissions, mount location, mounted file path, and mounted image index by using the **/Get-MountedImageInfo** servicing command.
 
-For more information about image commands available in DISM, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
+For more information about image commands available in DISM, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
 
 **To list images that are contained in a WIM or VHD file**
 
@@ -156,7 +156,7 @@ The report generated includes the following information:
 ## <span id="GetWindowsPEInformation"></span><span id="getwindowspeinformation"></span><span id="GETWINDOWSPEINFORMATION"></span>Get Windows PE Information
 
 
-You can mount a Windows Preinstallation Environment (Windows PE) image for servicing in the same way you would any Windows image. There are also Windows PE servicing commands that are specific to a Windows PE image. These commands can be used to list Windows PE settings such as scratchspace, targetpath, and profiling information. For more information about Windows PE servicing commands available in DISM, see [DISM Windows PE Servicing Command-Line Options](p_adk_online.dism_windows_pe_servicing_command_line_options_win8).
+You can mount a Windows Preinstallation Environment (Windows PE) image for servicing in the same way you would any Windows image. There are also Windows PE servicing commands that are specific to a Windows PE image. These commands can be used to list Windows PE settings such as scratchspace, targetpath, and profiling information. For more information about Windows PE servicing commands available in DISM, see [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md).
 
 **To list all settings in the mounted Windows PE image.**
 
@@ -424,7 +424,7 @@ You can use the **/PackagePath** option to specify a .cab file or a folder where
 
 You can display detailed information about a feature. You must use the **/FeatureName** option with the **/Get** command. Use the **/Get-Features** option to find the name of the feature in the image. Feature names are case sensitive if you are servicing a Windows image other than Windows 8.
 
-For more information about operating system package-servicing commands available in DISM, see [DISM Operating System Package Servicing Command-Line Options](p_adk_online.dism_operating_system_package_servicing_command_line_options_win8).
+For more information about operating system package-servicing commands available in DISM, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
 
 **To list all packages in the image**
 
@@ -864,7 +864,7 @@ The report generated includes the following information:
 ## <span id="GetInternationalSettingsLang"></span><span id="getinternationalsettingslang"></span><span id="GETINTERNATIONALSETTINGSLANG"></span>Get International Settings and Languages
 
 
-The international servicing commands can be used to query existing international settings in Windows and Windows PE images. For more information about operating system package-servicing commands available in DISM, see [DISM Languages and International Servicing Command-Line Options](p_adk_online.dism_languages_and_international_servicing_command_line_options_win8).
+The international servicing commands can be used to query existing international settings in Windows and Windows PE images. For more information about operating system package-servicing commands available in DISM, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
 **Important**  
 International servicing commands cannot be used on a Windows Vista or Windows Server 2008 image.
@@ -1031,7 +1031,7 @@ You can display detailed information about installed MSP patches filtered by pat
 
 If the **/PatchCode** and **/ProductCode** options are both specified, information is displayed only if that specific patch is applied to the specified Windows Installer application. If the **/PatchCode** and **/ProductCode** options are not specified, all installed Windows Installer packages and MSP patches are displayed.
 
-For more information about application servicing commands available in DISM, see [DISM Application Servicing Command-Line Options](p_adk_online.dism_application_servicing_command_line_options_win8).
+For more information about application servicing commands available in DISM, see [DISM Application Servicing Command-Line Options](dism-application-servicing-command-line-options.md).
 
 **To list information about installed MSP patches**
 
@@ -1300,9 +1300,9 @@ The report generated includes the following information:
 
 [Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)
 
-[Service a Windows PE Image with DISM](p_adk_online.service_a_windows_pe_image_with_dism_win8)
+[Service a Windows PE Image with DISM](service-a-windows-pe-image-with-dism.md)
 
-[Deployment Image Servicing and Management (DISM) Best Practices](p_adk_online.deployment_image_servicing_and_management__dism__best_practices_win8)
+[Deployment Image Servicing and Management (DISM) Best Practices](deployment-image-servicing-and-management--dism--best-practices.md)
 
  
 

@@ -65,7 +65,7 @@ The following table provides a description of how an unattended servicing option
 
 -   Only a single unattend.xml answer file can be specified on any command line.
 
--   When you add packages to an image using an unattended answer file, the applicability of the package will not be checked. The answer file will be applied, and the operation will complete even if there are packages specified in the answer file which do not apply to the image. If you have to check the applicability of a package when you add it to an image, use the **DISM** command together with the **/Add-Package** option without the **/ignorecheck** option. For more information, see [DISM Operating System Package Servicing Command-Line Options](p_adk_online.dism_operating_system_package_servicing_command_line_options_win8).
+-   When you add packages to an image using an unattended answer file, the applicability of the package will not be checked. The answer file will be applied, and the operation will complete even if there are packages specified in the answer file which do not apply to the image. If you have to check the applicability of a package when you add it to an image, use the **DISM** command together with the **/Add-Package** option without the **/ignorecheck** option. For more information, see [DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md).
 
 -   If you are updating device drivers using an unattended answer file, you must apply the answer file to an offline image.
 
@@ -82,9 +82,9 @@ The following table provides a description of how an unattended servicing option
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[DISM Languages and International Servicing Command-Line Options](p_adk_online.dism_languages_and_international_servicing_command_line_options_win8)
+[DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
 
-[DISM Operating System Package Servicing Command-Line Options](p_adk_online.dism_operating_system_package_servicing_command_line_options_win8)
+[DISM Operating System Package Servicing Command-Line Options](dism-operating-system-package-servicing-command-line-options.md)
 
 [DISM Windows Edition-Servicing Command-Line Options](dism-windows-edition-servicing-command-line-options.md)
 

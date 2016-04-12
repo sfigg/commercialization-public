@@ -139,14 +139,14 @@ Not all configuration passes run in a particular installation of Windows. Some c
 
  
 
-For more information about Windows components and settings that can be added to an answer file, see the Unattended Windows Setup Reference Guide. For more information about logging, see [Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8) and [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md).
+For more information about Windows components and settings that can be added to an answer file, see the Unattended Windows Setup Reference Guide. For more information about logging, see [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md) and [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md).
 
 ## <span id="configDevice"></span><span id="configdevice"></span><span id="CONFIGDEVICE"></span>Configuring Device Drivers
 
 
 To add out-of-box, boot-critical drivers during an unattended installation, you must make sure that the boot-critical driver is available on preinstallation media. Boot-critical drivers should be added during the **windowsPE** configuration pass. All drivers are staged in the driver store, but only boot-critical drivers are reflected or installed in the offline Windows image in addition to the Windows PE image. Non-boot-critical drivers can be added to the **offlineServicing** configuration pass. This makes sure that boot-critical drivers are available and when the computer boots, the driver will load.
 
-For more information, see [Device Drivers and Deployment Overview](p_adk_online.device_drivers_and_deployment_overview_win8).
+For more information, see [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md).
 
 ## <span id="configIntSettings"></span><span id="configintsettings"></span><span id="CONFIGINTSETTINGS"></span>Configuring International Settings
 
@@ -155,7 +155,7 @@ International settings are available in multiple configuration passes, to enable
 
 For example, if you build a computer in the United States (which would be an en-US international setting), you might perform all your tests in English. However, if you intend to deliver the computer to France and need Windows to boot in French, you can add the fr-FR language pack, if the language pack is not already installed, and then configure the Microsoft-Windows-International-Core component to apply fr-FR settings during the **specialize** configuration pass. When the computer boots, the installation will display English text. However, after the specialize configuration pass finishes, French text will be displayed.
 
-You can use DISM to configure the language settings of a Windows image (either online or offline). For more information, see [DISM Languages and International Servicing Command-Line Options](p_adk_online.dism_languages_and_international_servicing_command_line_options_win8).
+You can use DISM to configure the language settings of a Windows image (either online or offline). For more information, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
 By default, Windows Welcome displays a Regional Settings user interface (UI) page for the end user to select default language, locale, and input settings. You can preconfigure the settings on this UI page by specifying language and locale settings in the **oobeSystem** configuration pass in the Microsoft-Windows-International-Core component. If settings are set in **oobeSystem** configuration pass, the Regional Settings page is skipped. If language settings are configured during specialize, the Regional Settings page will be displayed.
 
@@ -275,11 +275,11 @@ In some instances, you might be required to restart your computer. For example, 
 ## <span id="related_topics"></span>Related topics
 
 
-[auditSystem](p_adk_online.auditsystem_win8)
+[auditSystem](auditsystem.md)
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](p_adk_online.generalize__win8)
+[generalize](generalize-.md)
 
 [offlineServicing](offlineservicing.md)
 

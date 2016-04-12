@@ -45,11 +45,11 @@ The following Push-button reset features are available to users with Windows 10
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Hard drive setup</strong></p></td>
-<td align="left"><p>[Hard Drives and Partitions](p_adk_online.hard_drives_and_partitions_win8) | [UEFI/GPT-based hard drive partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8) | [BIOS/MBR-based hard drive partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8)</p></td>
+<td align="left"><p>[Hard Drives and Partitions](hard-drives-and-partitions.md) | [UEFI/GPT-based hard drive partitions](configure-uefigpt-based-hard-drive-partitions.md) | [BIOS/MBR-based hard drive partitions](configure-biosmbr-based-hard-drive-partitions.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Deploy push-button reset features using ScanState](p_adk_online.deploy_push_button_reset_features_win8) | [Bare metal reset/recovery: enable your users to create recovery media](p_adk_online.bare_metal_resetrecovery_enable_your_users_to_create_media_and_to_recover_hard_drive_space_blue) | [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md) | [Add a script to push-button reset features](p_adk_online.add_a_script_to_push_button_reset_features_win8)</p></td>
+<td align="left"><p>[Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md) | [Bare metal reset/recovery: enable your users to create recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md) | [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md) | [Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Configuration files</strong></p></td>
@@ -57,7 +57,7 @@ The following Push-button reset features are available to users with Windows 10
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Technologies used by push-button reset</strong></p></td>
-<td align="left"><p>[Windows Recovery Environment](windows-recovery-environment--windows-re--technical-reference.md) | [Windows PE (WinPE)](winpe-intro.md) | [ScanState](p_adk_online.deploy_push_button_reset_features_win8)</p></td>
+<td align="left"><p>[Windows Recovery Environment](windows-recovery-environment--windows-re--technical-reference.md) | [Windows PE (WinPE)](winpe-intro.md) | [ScanState](deploy-push-button-reset-features.md)</p></td>
 </tr>
 </tbody>
 </table>

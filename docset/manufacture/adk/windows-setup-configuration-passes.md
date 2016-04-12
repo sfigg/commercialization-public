@@ -22,31 +22,31 @@ The following topics describe the configuration passes used with Windows Setup.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)</p></td>
+<td align="left"><p>[How Configuration Passes Work](how-configuration-passes-work.md)</p></td>
 <td align="left"><p>A description of the different phases of Windows Setup, and the different configuration passes used to install and configure a Windows installation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[auditSystem](p_adk_online.auditsystem_win8)</p></td>
+<td align="left"><p>[auditSystem](auditsystem.md)</p></td>
 <td align="left"><p>The <strong>auditSystem</strong> configuration pass is one of the configuration passes used in audit mode.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[auditUser](p_adk_online.audituser_win8)</p></td>
+<td align="left"><p>[auditUser](audituser.md)</p></td>
 <td align="left"><p>The <strong>auditUser</strong> configuration pass is one of the configuration passes used in audit mode.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[generalize](p_adk_online.generalize__win8)</p></td>
+<td align="left"><p>[generalize](generalize-.md)</p></td>
 <td align="left"><p>The <strong>generalize</strong> configuration pass prepares a Windows image to be deployed across many computers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[offlineServicing](p_adk_online.offlineservicing_win8)</p></td>
+<td align="left"><p>[offlineServicing](offlineservicing.md)</p></td>
 <td align="left"><p>The <strong>offlineServicing</strong> configuration pass is used to install packages, drivers, and other updates to an offline Windows image.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[oobeSystem](p_adk_online.oobesystem_win8)</p></td>
+<td align="left"><p>[oobeSystem](oobesystem.md)</p></td>
 <td align="left"><p>The <strong>oobeSystem</strong> configuration pass, also known as Windows Welcome, can be used to preconfigure user interface pages for an end user.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[specialize](p_adk_online.specialize_win8)</p></td>
+<td align="left"><p>[specialize](specialize.md)</p></td>
 <td align="left"><p>The <strong>specialize</strong> configuration pass customizes a specific Windows installation to a specific computer.</p></td>
 </tr>
 <tr class="even">
@@ -65,9 +65,9 @@ The following topics describe the configuration passes used with Windows Setup.
 
 [Windows Setup Installation Process](windows-setup-installation-process.md)
 
-[Windows Setup Automation Overview](p_adk_online.windows_setup_automation_overview_win8)
+[Windows Setup Automation Overview](windows-setup-automation-overview.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit-mode-overview.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

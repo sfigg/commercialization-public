@@ -58,7 +58,7 @@ Use the `[LaunchApps]` section to run apps with command-line options.
 
 [WinPE for Windows 10](winpe-intro.md)
 
-[WinPE: Debug Apps](p_adk_online.winpe_debug_apps_blue)
+[WinPE: Debug Apps](winpe-debug-apps.md)
 
  
 

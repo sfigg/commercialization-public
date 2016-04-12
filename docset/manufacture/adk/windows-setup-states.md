@@ -102,11 +102,11 @@ The following examples show how to access state information.
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8)
+[Windows Setup Command-Line Options](windows-setup-command-line-options.md)
 
-[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](p_adk_online.windows_setup_edition_configuration_and_product_id_files__eicfg_and_pidtxt__win8)
+[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt-.md)
 
-[Windows Setup Log Files and Event Logs](p_adk_online.windows_setup_log_files_and_event_logs_win8)
+[Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md)
 
  
 

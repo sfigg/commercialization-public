@@ -125,13 +125,13 @@ The default installation runs from memory (RAM disk), so you can remove the driv
 
 [WinPE for Windows 10](winpe-intro.md)
 
-[WinPE: Create a Boot CD, DVD, ISO, or VHD](p_adk_online.winpe_create_a_boot_cd_dvd_iso_or_vhd_blue)
+[WinPE: Create a Boot CD, DVD, ISO, or VHD](winpe-create-a-boot-cd-dvd-iso-or-vhd.md)
 
 [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
-[WinPE: Boot in UEFI or legacy BIOS mode](p_adk_online.winpe_boot_in_uefi_or_legacy_bios_mode_blue)
+[WinPE: Boot in UEFI or legacy BIOS mode](winpe-boot-in-uefi-or-legacy-bios-mode.md)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

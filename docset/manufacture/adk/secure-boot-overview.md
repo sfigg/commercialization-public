@@ -41,7 +41,7 @@ When the PC starts, the firmware checks the signature of each piece of boot soft
 
     -   You can contact your manufacturer to request new hardware or software to be added to the Secure Boot database.
 
-    -   For most PCs, you can disable Secure Boot through the PC’s BIOS. For more info, see [Disabling Secure Boot](p_adk_online.disabling_secure_boot_blue).
+    -   For most PCs, you can disable Secure Boot through the PC’s BIOS. For more info, see [Disabling Secure Boot](disabling-secure-boot.md).
 
         For logo-certified PCs, Secure Boot is required to be configured so that it cannot be disabled.
 
@@ -63,7 +63,7 @@ To enable kernel-mode debugging, enable TESTSIGNING, or to disable NX, you must 
 ## <span id="How_it_works"></span><span id="how_it_works"></span><span id="HOW_IT_WORKS"></span>How it works
 
 
-The OEM uses instructions from the firmware manufacturer to create Secure Boot keys and to store them in the PC firmware. For info, see [Windows 8.1 Secure Boot Key Creation and Management Guidance](windows-secure-boot-key-creation-and-management-guidance.md), [Secure Boot Key Generation and Signing Using HSM (Example)](p_adk_online.secure_boot_key_generation_and_signing_using_hsm__example__blue), or contact your hardware manufacturer.
+The OEM uses instructions from the firmware manufacturer to create Secure Boot keys and to store them in the PC firmware. For info, see [Windows 8.1 Secure Boot Key Creation and Management Guidance](windows-secure-boot-key-creation-and-management-guidance.md), [Secure Boot Key Generation and Signing Using HSM (Example)](secure-boot-key-generation-and-signing-using-hsm--example-.md), or contact your hardware manufacturer.
 
 When you add UEFI drivers (also known as Option ROMs), you'll also need to make sure these are signed and included in the Secure Boot database. For info, see [UEFI Validation Option ROM Validation Guidance](uefi-validation-option-rom-validation-guidance.md).
 

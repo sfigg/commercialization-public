@@ -76,7 +76,7 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 Windows Setup searches for answer files at the beginning of each configuration pass, including the initial installation and after applying and booting an image. If an answer file is found, and it contains settings for the given configuration pass, it processes those settings.
 
-Windows Setup identifies and logs all available answer files, depending on the search order. The answer file that has the highest precedence is used. The answer file is validated and then cached to the computer. Valid answer files are cached to the $Windows.~BT\\Sources\\Panther directory during the [windowsPE](windowspe.md) and [offlineServicing](p_adk_online.offlineservicing_win8) configuration passes. After the Windows installation is extracted to the hard disk, the answer file is cached to %WINDIR%\\panther.
+Windows Setup identifies and logs all available answer files, depending on the search order. The answer file that has the highest precedence is used. The answer file is validated and then cached to the computer. Valid answer files are cached to the $Windows.~BT\\Sources\\Panther directory during the [windowsPE](windowspe.md) and [offlineServicing](offlineservicing.md) configuration passes. After the Windows installation is extracted to the hard disk, the answer file is cached to %WINDIR%\\panther.
 
 The following table shows the implicit answer file search order.
 
@@ -138,7 +138,7 @@ The following table shows the implicit answer file search order.
 </tr>
 <tr class="even">
 <td align="left"><p>6</p></td>
-<td align="left"><p>[windowsPE](windowspe.md) and [offlineServicing](p_adk_online.offlineservicing_win8) configuration passes:</p>
+<td align="left"><p>[windowsPE](windowspe.md) and [offlineServicing](offlineservicing.md) configuration passes:</p>
 <ul>
 <li><p>\Sources directory in a Windows distribution</p></li>
 </ul>
@@ -146,7 +146,7 @@ The following table shows the implicit answer file search order.
 <ul>
 <li><p>%WINDIR%\System32\Sysprep</p></li>
 </ul></td>
-<td align="left"><p>In the [windowsPE](windowspe.md) and [offlineServicing](p_adk_online.offlineservicing_win8) configuration passes, the name of the answer file must be Autounattend.xml.</p>
+<td align="left"><p>In the [windowsPE](windowspe.md) and [offlineServicing](offlineservicing.md) configuration passes, the name of the answer file must be Autounattend.xml.</p>
 <p>For all other configuration passes, the file name must be Unattend.xml.</p></td>
 </tr>
 <tr class="odd">
@@ -170,14 +170,14 @@ The following table shows the implicit answer file search order.
 Setup removes sensitive data in the cached answer file at the end of each configuration pass.
 
 **Important**  
-Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](p_adk_online.oobesystem_win8) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
+Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
 
  
 
-However, if an answer file is embedded in a higher precedence location than the cached answer file, then the cached answer may be overwritten at the beginning of each subsequent configuration pass, if the embedded answer file matches the implicit search criteria. For example, if an answer file is embedded at %WINDIR%\\Panther\\Unattend\\Unattend.xml, the embedded answer file will replace the cached answer file at the beginning of each configuration pass. For example, if the embedded answer file specifies both the [specialize](p_adk_online.specialize_win8) and [oobeSystem](p_adk_online.oobesystem_win8) configuration passes, then the embedded answer file is discovered for the **specialize** configuration pass, cached, processed, and sensitive data is cleared. The embedded answer file is discovered again during the oobeSystem configuration pass and cached again. As a result, the sensitive data for the specialize configuration pass is no longer cleared. Sensitive data for previously processed configuration passes will not be cleared again. Unless the cached answer file must be overridden, we recommend that answer files be embedded at a location that has a lower precedence.
+However, if an answer file is embedded in a higher precedence location than the cached answer file, then the cached answer may be overwritten at the beginning of each subsequent configuration pass, if the embedded answer file matches the implicit search criteria. For example, if an answer file is embedded at %WINDIR%\\Panther\\Unattend\\Unattend.xml, the embedded answer file will replace the cached answer file at the beginning of each configuration pass. For example, if the embedded answer file specifies both the [specialize](specialize.md) and [oobeSystem](oobesystem.md) configuration passes, then the embedded answer file is discovered for the **specialize** configuration pass, cached, processed, and sensitive data is cleared. The embedded answer file is discovered again during the oobeSystem configuration pass and cached again. As a result, the sensitive data for the specialize configuration pass is no longer cleared. Sensitive data for previously processed configuration passes will not be cleared again. Unless the cached answer file must be overridden, we recommend that answer files be embedded at a location that has a lower precedence.
 
 **Important**  
-Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](p_adk_online.oobesystem_win8) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
+Because answer files are cached to the computer during Windows Setup, your answer files will persist on the computer between reboots. Before you deliver the computer to a customer, you must delete the cached answer file in the %WINDIR%\\panther directory. There might be potential security issues if you include domain passwords, product keys, or other sensitive data in your answer file. However, if you have unprocessed settings in the [oobeSystem](oobesystem.md) configuration pass that you intend to run when an end user starts the computer, consider deleting the sections of the answer file that have already been processed. One option when you run the **sysprep /oobe** command might be to use a separate answer file that only contains settings in the oobeSystem configuration pass.
 
  
 
@@ -188,7 +188,7 @@ You can add a command to the Setupcomplete.cmd command script that deletes any c
 
 After a configuration pass is processed, Windows Setup annotates the cached answer file to indicate that the pass has been processed. If the configuration pass is run again and the cached answer file has not been replaced or updated in the interim, the answer file settings are not processed again. Instead, Windows Setup will search for implicit Unattend.xml files that are at a lower precedence location than the cached Unattend.xml file.
 
-For example, you can install Windows with an answer file that contains Microsoft-Windows-Deployment/**RunSynchronous** commands in the [specialize](p_adk_online.specialize_win8) configuration pass. During installation, the specialize configuration pass runs and the **RunSynchronous** commands execute. After installation, run the **sysprep** command with the **/generalize** option. If there is no answer file in a higher precedence than the cached answer file or an answer file was not explicitly passed to the Sysprep tool, Setup runs the specialize configuration pass the next time that the computer boots. Because the cached answer file contains an annotation that the settings for that configuration pass were already applied, the **RunSynchronous** commands do not execute.
+For example, you can install Windows with an answer file that contains Microsoft-Windows-Deployment/**RunSynchronous** commands in the [specialize](specialize.md) configuration pass. During installation, the specialize configuration pass runs and the **RunSynchronous** commands execute. After installation, run the **sysprep** command with the **/generalize** option. If there is no answer file in a higher precedence than the cached answer file or an answer file was not explicitly passed to the Sysprep tool, Setup runs the specialize configuration pass the next time that the computer boots. Because the cached answer file contains an annotation that the settings for that configuration pass were already applied, the **RunSynchronous** commands do not execute.
 
 ## <span id="bkmk_b"></span><span id="BKMK_B"></span>Implicit Answer File Search Examples
 
@@ -217,11 +217,11 @@ The following examples help describe the behavior of implicit answer file search
 
 2.  Copy an Unattend.xml file to the %WINDIR%\\System32\\Sysprep directory.
 
-    This answer file has settings in the [generalize](p_adk_online.generalize__win8) configuration pass.
+    This answer file has settings in the [generalize](generalize-.md) configuration pass.
 
 3.  Run the **sysprep** command with the **/generalize** option to create a reference image.
 
-    Because the %WINDIR%\\System32\\Sysprep directory is in the implicit search paths, the answer file copied to this directory is found. However, an answer file that was used to install Windows is still cached on the computer and contains settings for the [generalize](p_adk_online.generalize__win8) configuration pass. This cached answer file has a higher precedence than the one copied to the Sysprep directory. The cached answer file is used.
+    Because the %WINDIR%\\System32\\Sysprep directory is in the implicit search paths, the answer file copied to this directory is found. However, an answer file that was used to install Windows is still cached on the computer and contains settings for the [generalize](generalize-.md) configuration pass. This cached answer file has a higher precedence than the one copied to the Sysprep directory. The cached answer file is used.
 
     **Note**  
     The Sysprep tool can be run as a command-line tool or as a GUI tool. If you run the Sysprep tool as a GUI tool, you can select the **Generalize** check box.
@@ -238,11 +238,11 @@ The following examples help describe the behavior of implicit answer file search
 
 1.  Copy an Unattend.xml file to a removable media device.
 
-    The Unattend.xml file has settings only for the [auditSystem](p_adk_online.auditsystem_win8) and [auditUser](p_adk_online.audituser_win8) configuration passes.
+    The Unattend.xml file has settings only for the [auditSystem](auditsystem.md) and [auditUser](p_adk_online.audituser_win8) configuration passes.
 
 2.  On an installed Windows operating system, run the **sysprep /generalize /oobe** command.
 
-    Even though the answer file is available in one of the implicit search paths, the Unattend.xml file is ignored because it does not contain a valid pass for the [generalize](p_adk_online.generalize__win8) configuration pass.
+    Even though the answer file is available in one of the implicit search paths, the Unattend.xml file is ignored because it does not contain a valid pass for the [generalize](generalize-.md) configuration pass.
 
 ## <span id="bkmk_d"></span><span id="BKMK_D"></span>Additional Resources
 
@@ -259,7 +259,7 @@ See the following topics for more information about answer files and configurati
 
 -   [Hide Sensitive Data in an Answer File](p_wsim.hide_sensitive_data_in_an_answer_file_win8)
 
--   [How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
+-   [How Configuration Passes Work](how-configuration-passes-work.md)
 
 ## <span id="related_topics"></span>Related topics
 
@@ -270,7 +270,7 @@ See the following topics for more information about answer files and configurati
 
 [Automate Windows Setup](automate-windows-setup.md)
 
-[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
+[Audit Mode Overview](audit-mode-overview.md)
 
 [Windows Setup Configuration Passes](windows-setup-configuration-passes.md)
 

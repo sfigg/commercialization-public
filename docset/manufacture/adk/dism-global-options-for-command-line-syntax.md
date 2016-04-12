@@ -21,7 +21,7 @@ The base syntax for DISM servicing commands is:
 
 **DISM.exe** {**/Image:**&lt;*path\_to\_image*&gt; | **/Online**} \[**dism\_global\_options**\] {**servicing\_option**} \[&lt;*servicing\_argument*&gt;\]
 
-For more information about servicing commands, see [Deployment Image Servicing and Management (DISM) Command-Line Options](p_adk_online.deployment_image_servicing_and_management__dism__command_line_options_win8).
+For more information about servicing commands, see [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md).
 
 ## <span id="Basic_Syntax_for_Imaging_Commands"></span><span id="basic_syntax_for_imaging_commands"></span><span id="BASIC_SYNTAX_FOR_IMAGING_COMMANDS"></span>Basic Syntax for Imaging Commands
 
@@ -182,9 +182,9 @@ The following table provides a description of how each DISM global option can be
 ## <span id="related_topics"></span>Related topics
 
 
-[Deployment Image Servicing and Management (DISM) Command-Line Options](p_adk_online.deployment_image_servicing_and_management__dism__command_line_options_win8)
+[Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
-[DISM Application Servicing Command-Line Options](p_adk_online.dism_application_servicing_command_line_options_win8)
+[DISM Application Servicing Command-Line Options](dism-application-servicing-command-line-options.md)
 
 [DISM Windows Edition-Servicing Command-Line Options](dism-windows-edition-servicing-command-line-options.md)
 

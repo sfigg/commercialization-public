@@ -109,7 +109,7 @@ When you determine the applicability of an MSP patch, only the Windows Installe
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[Deployment Image Servicing and Management (DISM) Command-Line Options](p_adk_online.deployment_image_servicing_and_management__dism__command_line_options_win8)
+[Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
 [DISM App Package (.appx or .appxbundle) Servicing Command-Line Options](dism-app-package--appx-or-appxbundle--servicing-command-line-options.md)
 

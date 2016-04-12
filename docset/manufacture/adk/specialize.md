@@ -10,7 +10,7 @@ title: specialize
 
 During the **specialize** configuration pass of Windows® Setup, computer-specific information for the image is applied. For example, you can configure network settings, international settings, and domain information.
 
-The **specialize** configuration pass is used together with the [generalize](p_adk_online.generalize__win8) configuration pass. The generalize pass is used to create a Windows reference image that can be used throughout an organization. From this basic Windows reference image, you can add additional customizations that apply to different divisions in an organization or to different installations of Windows. Any method of moving or copying a Windows image to a new computer must be prepared with the **sysprep /generalize** command. For more information, see [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md) and [Sysprep Command-Line Options](sysprep-command-line-options.md).
+The **specialize** configuration pass is used together with the [generalize](generalize-.md) configuration pass. The generalize pass is used to create a Windows reference image that can be used throughout an organization. From this basic Windows reference image, you can add additional customizations that apply to different divisions in an organization or to different installations of Windows. Any method of moving or copying a Windows image to a new computer must be prepared with the **sysprep /generalize** command. For more information, see [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md) and [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
 The following diagram illustrates how the **specialize** configuration pass is used to apply these specific customizations.
 
@@ -21,15 +21,15 @@ For example, during the **specialize** configuration pass, you can specify diffe
 ## <span id="related_topics"></span>Related topics
 
 
-[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
+[How Configuration Passes Work](how-configuration-passes-work.md)
 
-[auditSystem](p_adk_online.auditsystem_win8)
+[auditSystem](auditsystem.md)
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](p_adk_online.generalize__win8)
+[generalize](generalize-.md)
 
-[offlineServicing](p_adk_online.offlineservicing_win8)
+[offlineServicing](offlineservicing.md)
 
 [oobeSystem](p_adk_online.oobesystem_win8)
 

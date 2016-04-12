@@ -174,14 +174,14 @@ The following steps describe how to partition your hard drives and prepare to ap
 ## <span id="NextSteps"></span><span id="nextsteps"></span><span id="NEXTSTEPS"></span>Next steps
 
 
-Use a deployment script to apply the Windows images on the newly created partitions. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](p_adk_online.capture_and_apply_windows_system_and_recovery_partitions_win8).
+Use a deployment script to apply the Windows images on the newly created partitions. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Configure BIOS/MBR-Based Hard Drive Partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8)
+[Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md)
 
-[BitLocker Drive Encryption](p_adk_online.bitlocker_drive_encryption_win8)
+[BitLocker Drive Encryption](bitlocker-drive-encryption.md)
 
 [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md)
 

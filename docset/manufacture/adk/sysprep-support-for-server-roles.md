@@ -182,11 +182,11 @@ The following table lists server roles and specifies whether the roles support S
 
 [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md)
 
-[Sysprep Process Overview](p_adk_online.sysprep_process_overview_win8)
+[Sysprep Process Overview](sysprep-process-overview.md)
 
-[Sysprep Command-Line Options](p_adk_online.sysprep_command_line_options_win8)
+[Sysprep Command-Line Options](sysprep-command-line-options.md)
 
-[Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8)
+[Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md)
 
  
 

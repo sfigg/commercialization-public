@@ -54,13 +54,13 @@ You can't use DISM to remove inbox drivers (drivers that are installed on Window
 
 You can also use DISM commands to apply an unattended answer file to a mounted or applied Windows image.
 
-For more information, see [Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8).
+For more information, see [Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md).
 
 If you're using DISM, you can add only .inf drivers to an offline Windows image. Drivers that display the Designed for Windows logo are provided as .cab files. You must expand the .cab file before you install the .inf file if you're using DISM for the installation. You must install a driver that's packaged as a .exe file or another file type on a running Windows operating system. To run a .exe or Windows Installer (.msi) driver package, you can add a custom command to an answer file to install the driver package. For more information, see [Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8).
 
 ### <span id="automated"></span><span id="AUTOMATED"></span>Add drivers during an automated deployment by using Windows Setup and an answer file
 
-You can use an unattended answer file to add drivers to an image when you use Windows Setup for deployment. In this answer file, you can specify the path of a device driver on a network share (or a local path). You accomplish this by adding the Microsoft-Windows-PnpCustomizationWinPE or Microsoft-Windows-PnpCustomizationNonWinPE components and specifying the configuration passes where you want to install them. When you run Windows Setup and specify the name of the answer file, out-of-box drivers are staged (added to the driver store on the image), and boot-critical drivers are reflected (added to the image so that they'll be used when the computer boots). Setup uses the answer file. By adding device drivers during the **windowsPE** or **offlineServicing** configuration passes, you can add out-of-box device drivers to the Windows image before the computer starts. You can also use this method to add boot-critical device drivers to a Windows image. For more information, see [Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8). For more information about how Windows Setup works, see the [Windows Setup Technical Reference](windows-setup-technical-reference.md).
+You can use an unattended answer file to add drivers to an image when you use Windows Setup for deployment. In this answer file, you can specify the path of a device driver on a network share (or a local path). You accomplish this by adding the Microsoft-Windows-PnpCustomizationWinPE or Microsoft-Windows-PnpCustomizationNonWinPE components and specifying the configuration passes where you want to install them. When you run Windows Setup and specify the name of the answer file, out-of-box drivers are staged (added to the driver store on the image), and boot-critical drivers are reflected (added to the image so that they'll be used when the computer boots). Setup uses the answer file. By adding device drivers during the **windowsPE** or **offlineServicing** configuration passes, you can add out-of-box device drivers to the Windows image before the computer starts. You can also use this method to add boot-critical device drivers to a Windows image. For more information, see [Add Device Drivers to Windows During Windows Setup](add-device-drivers-to-windows-during-windows-setup.md). For more information about how Windows Setup works, see the [Windows Setup Technical Reference](windows-setup-technical-reference.md).
 
 If you want to add boot-critical drivers to Windows PE, use the **windowsPE** configuration pass to reflect the drivers before the Windows PE image is booted. The difference between adding boot-critical drivers during the **windowsPE** configuration pass and adding them during the **offlineServicing** configuration pass is that during the **windowsPE** configuration pass, boot-critical drivers are reflected for Windows PE to use. During the **offlineServicing** configuration pass, the drivers are staged to the driver store on the Windows image.
 
@@ -78,13 +78,13 @@ When you're using Windows Deployment Services for deployment in Windows Server, 
 
 ### <span id="online"></span><span id="ONLINE"></span>Add drivers after deployment on a running operating system by using PnPUtil or an answer file
 
-You can use the PnPUtil tool to add or remove drivers on a running operating system. Alternatively, you can use an answer file to automate the installation of the drivers when the computer is booted in audit mode. These methods can be helpful if you want to maintain a simple Windows image, and then add only the drivers that are required for a specific hardware configuration. For more information about how to use audit mode, see [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8).
+You can use the PnPUtil tool to add or remove drivers on a running operating system. Alternatively, you can use an answer file to automate the installation of the drivers when the computer is booted in audit mode. These methods can be helpful if you want to maintain a simple Windows image, and then add only the drivers that are required for a specific hardware configuration. For more information about how to use audit mode, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 
 Methods for adding device drivers online to a running operating system include these:
 
 -   Using PnPUtil to add or remove PnP drivers. For more information, see [Use PnPUtil at a command line to install a Plug and Play device](http://go.microsoft.com/fwlink/?LinkId=139151).
 
--   Using an answer file to automate the installation of PnP drivers when the computer is booted in audit mode. For more information, see [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8).
+-   Using an answer file to automate the installation of PnP drivers when the computer is booted in audit mode. For more information, see [Add a Driver Online in Audit Mode](add-a-driver-online-in-audit-mode.md).
 
 ## <span id="DriverMgmt"></span><span id="drivermgmt"></span><span id="DRIVERMGMT"></span>Managing Driver Folders
 
@@ -189,19 +189,19 @@ These websites provide more information about device-driver requirements:
 
 [Add a Device Driver Path to an Answer File](p_wsim.add_a_device_driver_path_to_an_answer_file_win8)
 
-[Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8)
+[Add a Driver Online in Audit Mode](add-a-driver-online-in-audit-mode.md)
 
 [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md)
 
-[Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8)
+[Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md)
 
-[Add Device Drivers to Windows During Windows Setup](p_adk_online.add_device_drivers_to_windows_during_windows_setup_win8)
+[Add Device Drivers to Windows During Windows Setup](add-device-drivers-to-windows-during-windows-setup.md)
 
 [Maintain Driver Configurations when Capturing a Windows Image](maintain-driver-configurations-when-capturing-a-windows-image.md)
 
 [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
 
-[Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8)
+[Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md)
 
  
 

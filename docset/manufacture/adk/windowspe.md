@@ -31,15 +31,15 @@ The **windowsPE** configuration pass also enables you to specify Windows Setup-
 ## <span id="related_topics"></span>Related topics
 
 
-[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
+[How Configuration Passes Work](how-configuration-passes-work.md)
 
-[auditSystem](p_adk_online.auditsystem_win8)
+[auditSystem](auditsystem.md)
 
 [auditUser](p_adk_online.audituser_win8)
 
-[generalize](p_adk_online.generalize__win8)
+[generalize](generalize-.md)
 
-[offlineServicing](p_adk_online.offlineservicing_win8)
+[offlineServicing](offlineservicing.md)
 
 [oobeSystem](p_adk_online.oobesystem_win8)
 

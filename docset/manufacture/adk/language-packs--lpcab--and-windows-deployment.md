@@ -33,7 +33,7 @@ To preload Cortana features, add the following features on demand: UI text (lp.c
 
 Not all components and features on demand are available for every language.
 
-To learn more, see [Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue).
+To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
 ## <span id="Language_packs_for_Windows"></span><span id="language_packs_for_windows"></span><span id="LANGUAGE_PACKS_FOR_WINDOWS"></span>Language packs for Windows
 
@@ -50,7 +50,7 @@ For some regions, language interface packs (LIPs) can provide additional transla
 
 Related information:
 
--   [Available Language Packs for Windows](p_adk_online.available_language_packs_for_windows_blue). Lists all of the supported language packs and LIPs for multiple versions of Windows, and their identifier codes.
+-   [Available Language Packs for Windows](available-language-packs-for-windows.md). Lists all of the supported language packs and LIPs for multiple versions of Windows, and their identifier codes.
 
 ### <span id="Add_languages_to_Windows"></span><span id="add_languages_to_windows"></span><span id="ADD_LANGUAGES_TO_WINDOWS"></span>Add languages to Windows
 
@@ -59,7 +59,7 @@ When you include more than one language or a LIP to Windows, your customers will
 There's a few different ways to install language packs:
 
 -   You can add a language pack to Windows by using the **Dism /Add-Package** tool. See [Add and Remove Language Packs on a Running Windows Installation](add-and-remove-language-packs-on-a-running-windows-installation.md) or [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
--   To deploy a multilingual version of Windows by using Windows Setup (for example, a corporate image Windows DVD or a set of images available on a corporate network), you can add language resources to the installation program. See [Add Multilingual Support to a Windows Distribution](p_adk_online.add_multilingual_support_to_a_windows_distribution_blue).
+-   To deploy a multilingual version of Windows by using Windows Setup (for example, a corporate image Windows DVD or a set of images available on a corporate network), you can add language resources to the installation program. See [Add Multilingual Support to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md).
 
     For corporate or network-based deployments, you may also need to update the Windows Preinstallation Environment (Windows PE) that users see when they choose how and where to install Windows to their PC. For more information, see [WinPE: Mount and Customize](winpe-mount-and-customize.md).
 
@@ -75,8 +75,8 @@ When things go wrong, the Windows Recovery Environment (Windows RE) can help rec
 
 You can specify the default keyboard layout, language, or locale, either during deployment or after Windows is installed.
 
--   [Configure International Settings in Windows](p_adk_online.configure_international_settings_in_windows_blue)
--   [Default Input Profiles (Input Locales) in Windows](p_adk_online.default_input_locales_for_windows_language_packs_blue): Lists the default input profiles (language and keyboard pairs) used for each region.
+-   [Configure International Settings in Windows](configure-international-settings-in-windows.md)
+-   [Default Input Profiles (Input Locales) in Windows](default-input-locales-for-windows-language-packs.md): Lists the default input profiles (language and keyboard pairs) used for each region.
 -   [Default Time Zones](default-time-zones.md): Lists the default time zone used for each region.
 -   [Keyboard identifiers for Windows](windows-language-pack-default-values.md): Lists the keyboard hexadecimal values used when configuring input profiles.
 
@@ -92,7 +92,7 @@ For more information, see [Multilingual User Interface (Windows)](http://go.micr
 ## <span id="related_topics"></span>Related topics
 
 
-[Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue)
+[Add Language Packs to Windows](add-language-packs-to-windows.md)
 
 [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities-.md)
 

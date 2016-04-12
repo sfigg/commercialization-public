@@ -44,7 +44,7 @@ The following additional guidelines apply for boot media:
 ## <span id="related_topics"></span>Related topics
 
 
-[UEFI Firmware](p_adk_online.uefi_firmware_blue)
+[UEFI Firmware](uefi-firmware.md)
 
 [BCDBoot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
 
