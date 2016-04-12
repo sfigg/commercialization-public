@@ -47,7 +47,7 @@ The following table lists Sysprep command-line options:
 <td align="left"><p><strong>/audit</strong></p></td>
 <td align="left"><p>Restarts the computer into audit mode. Audit mode enables you to add additional drivers or applications to Windows. You can also test an installation of Windows before you send the installation to an end user. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /audit</code></pre>
-<p>If you specify an answer file, the audit mode of Windows Setup runs the [auditSystem](auditsystem.md) and [auditUser](p_adk_online.audituser_win8) configuration passes.</p></td>
+<p>If you specify an answer file, the audit mode of Windows Setup runs the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/generalize</strong></p></td>

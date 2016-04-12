@@ -238,7 +238,7 @@ The following examples help describe the behavior of implicit answer file search
 
 1.  Copy an Unattend.xml file to a removable media device.
 
-    The Unattend.xml file has settings only for the [auditSystem](auditsystem.md) and [auditUser](p_adk_online.audituser_win8) configuration passes.
+    The Unattend.xml file has settings only for the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes.
 
 2.  On an installed Windows operating system, run the **sysprep /generalize /oobe** command.
 

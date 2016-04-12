@@ -277,7 +277,7 @@ In some instances, you might be required to restart your computer. For example, 
 
 [auditSystem](auditsystem.md)
 
-[auditUser](p_adk_online.audituser_win8)
+[auditUser](audituser.md)
 
 [generalize](generalize.md)
 

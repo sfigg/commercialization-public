@@ -21,7 +21,7 @@ Additionally, you can use the Deployment Image Servicing and Management tool wit
 
 [auditSystem](auditsystem.md)
 
-[auditUser](p_adk_online.audituser_win8)
+[auditUser](audituser.md)
 
 [generalize](generalize.md)
 

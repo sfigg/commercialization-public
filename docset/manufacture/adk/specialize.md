@@ -25,13 +25,13 @@ For example, during the **specialize** configuration pass, you can specify diffe
 
 [auditSystem](auditsystem.md)
 
-[auditUser](p_adk_online.audituser_win8)
+[auditUser](audituser.md)
 
 [generalize](generalize.md)
 
 [offlineServicing](offlineservicing.md)
 
-[oobeSystem](p_adk_online.oobesystem_win8)
+[oobeSystem](oobesystem.md)
 
 [windowsPE](windowspe.md)
 
