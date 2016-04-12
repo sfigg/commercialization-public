@@ -35,7 +35,7 @@ The [IoT Core manufacturing guide](iot-core-adk-addons.md) walks you through bui
 -   **newupdate**: Creates a new update directory based on the template file.
 -   **setenv**: Sets environment variables for your architecture (x86 or arm).
 -   **setversion**: Sets the version number of the packages you’re creating
-<> -   **updateimage**: Updates an existing package with new updates
+<!--- -   **updateimage**: Updates an existing package with new updates -->
 
 This folder also contains scripts used to generate packages/images.
 
