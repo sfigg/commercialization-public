@@ -236,7 +236,7 @@ Important: Connecting the computer to internet is not recommended during manufac
 
 2.  Click the *Desktop tile* to show the desktop and you should see the Sysprep window.
 
-3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number” and other customizations).
+3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number and other customizations).
 
     ![Sysprep](images/Sysprep.png)
 
@@ -380,21 +380,21 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     *Amd64 architecture*
 
-        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
+        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu"
 
     *X86 architecture*
 
-        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
+        Dism /Add-Package /Image:C:\mount\windows /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu"
 
 1.  Add updates to winre.wim (where they apply; not all updates apply to winre.wim)
 
     *Amd64 architecture*
 
-        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu”
+        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x64.msu"
 
     *X86 architecture*
 
-        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu”
+        Dism /Add-Package /Image:C:\mount\winre /PackagePath:"C:\SampleUpdatePackages\Windows10-KB3118754-x86.msu"
 
 #### Add OEM specific visual customizations
 
