@@ -290,7 +290,7 @@ Run the test you mentioned above to verify that the vulnerability does not exist
 
 -   [Tianocore UEFI Development Kit](http://go.microsoft.com/fwlink/?LinkId=398277)
 
--   [UEFI Firmware](uefi_firmware_blue.md)
+-   [UEFI Firmware](p_adk_online.uefi_firmware_blue)
 
 -   [Intel Press: Beyond BIOS 2nd Edition](http://go.microsoft.com/fwlink/?LinkId=398278)
 
@@ -496,7 +496,7 @@ Prior to this step the PC should be in setup mode.
 
 [Windows Secure Boot Key Creation and Management Guidance](windows-secure-boot-key-creation-and-management-guidance.md)
 
-[Secure Boot Overview](secure_boot_overview_blue.md)
+[Secure Boot Overview](p_adk_online.secure_boot_overview_blue)
 
 [Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)
 

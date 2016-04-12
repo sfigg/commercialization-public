@@ -17,13 +17,13 @@ Additionally, you can use the Deployment Image Servicing and Management tool wit
 ## <span id="related_topics"></span>Related topics
 
 
-[How Configuration Passes Work](how_configuration_passes_work.md)
+[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
 
-[auditSystem](auditsystem.md)
+[auditSystem](p_adk_online.auditsystem_win8)
 
-[auditUser](audituser.md)
+[auditUser](p_adk_online.audituser_win8)
 
-[generalize](generalize_.md)
+[generalize](p_adk_online.generalize__win8)
 
 [oobeSystem](oobesystem.md)
 

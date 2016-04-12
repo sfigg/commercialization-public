@@ -40,7 +40,7 @@ Before you capture an image, generalize the computer by using an answer file tha
 ## <span id="bkmk_2"></span><span id="BKMK_2"></span>Overview
 
 
-The Windows in-box driver packages include device drivers that support a wide variety of popular hardware. If your specific hardware requires additional device drivers to boot, you can preinstall additional device drivers on your Windows image. Independent Hardware Vendors (IHVs) often supply these additional device drivers together with their device hardware. For more information about how to add device drivers, see [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md).
+The Windows in-box driver packages include device drivers that support a wide variety of popular hardware. If your specific hardware requires additional device drivers to boot, you can preinstall additional device drivers on your Windows image. Independent Hardware Vendors (IHVs) often supply these additional device drivers together with their device hardware. For more information about how to add device drivers, see [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8).
 
 To prepare a Windows image for deployment to multiple computers, you must use the System Preparation (Sysprep) tool to generalize the Windows image. Generalizing a Windows image removes the computer-specific information and prepares the device drivers for first boot. This preparation includes these steps:
 
@@ -70,9 +70,9 @@ Normally, when Windows Setup boots a computer and multiple versions of a driver 
 
 If you must add a device driver to an image that uses the **PersistAllDeviceInstalls** setting, you can update your device drivers by using one of the following methods:
 
--   Use offline servicing tools, like the Deployment Image Servicing and Management (DISM) tool or an unattended answer file. For more information, see [Add and Remove Drivers to an Offline Windows Image](add_and_remove_drivers_to_an_offline_windows_image.md).
+-   Use offline servicing tools, like the Deployment Image Servicing and Management (DISM) tool or an unattended answer file. For more information, see [Add and Remove Drivers to an Offline Windows Image](p_adk_online.add_and_remove_drivers_to_an_offline_windows_image_win8).
 
--   Use online servicing methods or tools, like an unattended answer file. For more information, see [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md).
+-   Use online servicing methods or tools, like an unattended answer file. For more information, see [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8).
 
 ## <span id="bkmk_4"></span><span id="BKMK_4"></span>Troubleshooting Hardware Configuration Differences
 
@@ -340,7 +340,7 @@ The IHV can help resolve the conflict by using one of these options:
 ## <span id="related_topics"></span>Related topics
 
 
-[Device Drivers and Deployment Overview](device_drivers_and_deployment_overview.md)
+[Device Drivers and Deployment Overview](p_adk_online.device_drivers_and_deployment_overview_win8)
 
  
 

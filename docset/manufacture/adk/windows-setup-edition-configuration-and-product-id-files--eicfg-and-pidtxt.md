@@ -42,7 +42,7 @@ The EI.cfg file has the following format:
 {Volume License}
 ```
 
-*{Edition ID}* must be a valid Windows edition ID, for example, "Enterprise". To obtain the current EditionID, use the **Dism /Get-ImageInfo** command or the **Dism /Get-CurrentEdition** command. For more information, see [Take Inventory of an Image or Component Using DISM](take_inventory_of_an_image_or_component_using_dism.md) and [DISM Windows Edition-Servicing Command-Line Options](dism-windows-edition-servicing-command-line-options.md).
+*{Edition ID}* must be a valid Windows edition ID, for example, "Enterprise". To obtain the current EditionID, use the **Dism /Get-ImageInfo** command or the **Dism /Get-CurrentEdition** command. For more information, see [Take Inventory of an Image or Component Using DISM](p_adk_online.take_inventory_of_an_image_or_component_using_dism_win8) and [DISM Windows Edition-Servicing Command-Line Options](dism-windows-edition-servicing-command-line-options.md).
 
 *{Channel Type}* must be either "OEM" or "Retail"
 
@@ -81,7 +81,7 @@ where *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX* is the product key.
 
 [Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md)
 
-[Windows Setup Command-Line Options](windows_setup_command_line_options.md)
+[Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8)
 
 [Windows Setup States](windows-setup-states.md)
 

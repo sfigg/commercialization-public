@@ -124,7 +124,7 @@ Use the following steps to customize your Windows RE boot image if additional dr
 
     Once the Winre.wim file is extracted from the Install.wim file, you can customize the Windows RE boot image.
 
-8.  Add language packs, boot-critical device drivers, and input device drivers to the Windows RE boot image. To learn more, see [Customize Windows RE](customize_windows_re.md).
+8.  Add language packs, boot-critical device drivers, and input device drivers to the Windows RE boot image. To learn more, see [Customize Windows RE](p_adk_online.customize_windows_re_win8).
 9.  Commit your customizations and unmount the image.
 
     ``` syntax

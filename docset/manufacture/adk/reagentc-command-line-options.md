@@ -97,7 +97,7 @@ The following table describes these command-line options:
 <td align="left"><p>Both</p></td>
 <td align="left"><p>Registers the link to a custom tool that appears in the Windows boot options menu. For example:</p>
 <pre class="syntax" space="preserve"><code>Reagentc /setbootshelllink /configfile F:\BootMenu\AddDiagnosticsToolToBootMenu.xml</code></pre>
-<p>The BootShellXML file is an.xml file that contains the <em>&lt;BootShell&gt;</em> element and the <em>&lt;Name&gt;</em> and <em>&lt;Description&gt;</em> attributes that you want to appear in the link. For more information, see [Customize Windows RE](customize_windows_re.md).</p>
+<p>The BootShellXML file is an.xml file that contains the <em>&lt;BootShell&gt;</em> element and the <em>&lt;Name&gt;</em> and <em>&lt;Description&gt;</em> attributes that you want to appear in the link. For more information, see [Customize Windows RE](p_adk_online.customize_windows_re_win8).</p>
 <p>Use the <strong>/target</strong> option to specify the location of the offline Windows image. If this argument is not used, the running operating system is used. For example:</p>
 <pre class="syntax" space="preserve"><code>Reagentc /setbootshelllink /target W:\Windows</code></pre></td>
 </tr>

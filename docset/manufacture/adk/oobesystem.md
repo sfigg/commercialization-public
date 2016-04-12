@@ -21,15 +21,15 @@ You can configure Windows to boot to OOBE by running the **sysprep** command by 
 ## <span id="related_topics"></span>Related topics
 
 
-[How Configuration Passes Work](how_configuration_passes_work.md)
+[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
 
-[auditSystem](auditsystem.md)
+[auditSystem](p_adk_online.auditsystem_win8)
 
-[auditUser](audituser.md)
+[auditUser](p_adk_online.audituser_win8)
 
-[generalize](generalize_.md)
+[generalize](p_adk_online.generalize__win8)
 
-[offlineServicing](offlineservicing.md)
+[offlineServicing](p_adk_online.offlineservicing_win8)
 
 [specialize](specialize.md)
 

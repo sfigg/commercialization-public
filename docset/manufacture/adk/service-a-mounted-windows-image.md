@@ -64,7 +64,7 @@ In this step, you add packages to the mounted Windows image.
     Dism /Image:C:\test\offline /Set-SKUIntlDefaults:fr-FR
     ```
 
-    Optionally, you can configure different values for different settings, including UI language, system locale, user locale, input locale, and others. For more information about how to specify individual values for each of these settings, see [DISM Languages and International Servicing Command-Line Options](dism_languages_and_international_servicing_command_line_options.md).
+    Optionally, you can configure different values for different settings, including UI language, system locale, user locale, input locale, and others. For more information about how to specify individual values for each of these settings, see [DISM Languages and International Servicing Command-Line Options](p_adk_online.dism_languages_and_international_servicing_command_line_options_win8).
 
 3.  At the command prompt, commit the changes. The image remains mounted until the **/Unmount-Image** option is used. For example:
 
@@ -146,7 +146,7 @@ For more information about additional offline servicing operations that can be p
 
 [Service a Windows Image Using DISM](service-a-windows-image-using-dism.md)
 
-[DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism___deployment_image_servicing_and_management_technical_reference_for_windows.md)
+[DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8)
 
  
 

@@ -30,7 +30,7 @@ In audit mode, you can do the following:
 
 -   **Bypass OOBE.** You can access the desktop as quickly as possible. You do not have to configure default settings such as a user account, location, and time zone.
 
--   **Install applications, add device drivers, and run scripts.** You can connect to a network and access additional installation files and scripts. You can also install additional language packs and device drivers. For more information, see [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md).
+-   **Install applications, add device drivers, and run scripts.** You can connect to a network and access additional installation files and scripts. You can also install additional language packs and device drivers. For more information, see [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8).
 
 -   **Test the validity of a Windows installation.** Before you deploy the system to end users, you can perform tests on the system without creating a user account. Then you can prepare the system to start in OOBE on the next boot.
 

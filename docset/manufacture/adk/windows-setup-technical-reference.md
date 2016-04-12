@@ -25,7 +25,7 @@ Windows Setup is a bootable program that installs the Windows operating system.
 
 -   Windows Setup cannot be used to perform automated upgrades to most editions of Windows 8.1.
 
-    For volume-licensed editions of Windows, we've added a new command-line option, `setup /auto`, to help enable upgrades. Note, we only plan to use this option for upgrades to Windows 8.1, and we may remove the option in future versions of Windows. For more info, see [Windows Setup Command-Line Options](windows_setup_command_line_options.md).
+    For volume-licensed editions of Windows, we've added a new command-line option, `setup /auto`, to help enable upgrades. Note, we only plan to use this option for upgrades to Windows 8.1, and we may remove the option in future versions of Windows. For more info, see [Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8).
 
 -   [Settings for Automating OOBE](settings-for-automating-oobe.md): The [NetworkLocation](p_unattend.networklocation_win7_microsoft_windows_shell_setupoobenetworklocation) setting is no longer needed to automate OOBE. The functionality of the [ProtectYourPC](p_unattend.protectyourpc_win7_microsoft_windows_shell_setupoobeprotectyourpc) setting has changed.
 
@@ -52,19 +52,19 @@ The following table contains links to resources related to this scenario.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[Windows Setup Installation Process](windows-setup-installation-process.md) | [Windows 8.1 Upgrade Scenarios for OEMs](windows-81-upgrade-scenarios-for-oems.md) | [Boot from a DVD](boot-from-a-dvd.md) | [Install Windows from a USB Flash Drive](install_windows_from_a_usb_flash_drive_blue.md) | [Deploy a Custom Image](deploy-a-custom-image.md) | [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)</p></td>
+<td align="left"><p>[Windows Setup Installation Process](windows-setup-installation-process.md) | [Windows 8.1 Upgrade Scenarios for OEMs](windows-81-upgrade-scenarios-for-oems.md) | [Boot from a DVD](boot-from-a-dvd.md) | [Install Windows from a USB Flash Drive](p_adk_online.install_windows_from_a_usb_flash_drive_blue) | [Deploy a Custom Image](deploy-a-custom-image.md) | [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Automate Windows Setup](automate_windows_setup_blue.md) | [Use a Configuration Set with Windows Setup](use-a-configuration-set-with-windows-setup.md)| [Add Device Drivers to Windows During Windows Setup](add-device-drivers-to-windows-during-windows-setup.md) | [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md) | [Multilingual Windows Image Creation](multilingual_windows_image_creation_blue.md) | [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)</p></td>
+<td align="left"><p>[Automate Windows Setup](p_adk_online.automate_windows_setup_blue) | [Use a Configuration Set with Windows Setup](use-a-configuration-set-with-windows-setup.md)| [Add Device Drivers to Windows During Windows Setup](add-device-drivers-to-windows-during-windows-setup.md) | [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md) | [Multilingual Windows Image Creation](p_adk_online.multilingual_windows_image_creation_blue) | [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[Windows Setup Command-Line Options](windows_setup_command_line_options.md) | [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md) | [Windows Setup States](windows-setup-states.md) | [Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt.md) | [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md) | [Windows Setup Configuration Passes](windows-setup-configuration-passes.md)</p></td>
+<td align="left"><p>[Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8) | [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md) | [Windows Setup States](windows-setup-states.md) | [Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt.md) | [Windows Setup Log Files and Event Logs](windows-setup-log-files-and-event-logs.md) | [Windows Setup Configuration Passes](windows-setup-configuration-passes.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Related technologies</strong></p></td>
-<td align="left"><p>[Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8) | [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281) | [Sysprep (System Preparation) Overview](sysprep__system_preparation__overview_blue.md) | [WinPE for Windows 10](winpe-intro.md)</p></td>
+<td align="left"><p>[Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8) | [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281) | [Sysprep (System Preparation) Overview](p_adk_online.sysprep__system_preparation__overview_blue) | [WinPE for Windows 10](winpe-intro.md)</p></td>
 </tr>
 </tbody>
 </table>

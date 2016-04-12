@@ -19,10 +19,10 @@ In this section, you will learn methods to deploy Windows to different drives, 
 
     We now recommend that you place the Windows recovery tools partition immediately after the Windows partition. This allows Windows to modify and recreate the partition later if future updates require a larger recovery image.
 
-    If you use scripts to deploy Windows, check out the new sample scripts we've created for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). To learn more, see [UEFI/GPT-based hard drive partitions](configure_uefigpt_based_hard_drive_partitions.md) and [BIOS/MBR-based hard drive partitions](configure_biosmbr_based_hard_drive_partitions.md).
+    If you use scripts to deploy Windows, check out the new sample scripts we've created for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). To learn more, see [UEFI/GPT-based hard drive partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8) and [BIOS/MBR-based hard drive partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8).
 
 -   It's no longer necessary to run the Windows System Assessment Tests (WinSAT) on SSD drives. Windows detects SSD drives and tunes itself accordingly.
--   On [UEFI/GPT-based drives](configure_uefigpt_based_hard_drive_partitions.md), we've reduced the recommended size of the MSR partition from 128MB to 16MB.
+-   On [UEFI/GPT-based drives](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8), we've reduced the recommended size of the MSR partition from 128MB to 16MB.
 
 ## <span id="HardDisks"></span><span id="harddisks"></span><span id="HARDDISKS"></span>Drive types
 
@@ -46,13 +46,13 @@ Advanced Format 512 emulation (512e) drives are supported on either BIOS-based o
 Advanced Format 4K Native (4Kn) drives are supported on UEFI-based computers only.
 
 **Warning**  
-For Advanced Format 4K Native drives (4-KB-per-sector) drives, the minimum partition size is 260 MB, due to a limitation of the FAT32 file format. The minimum partition size of FAT32 drives is calculated as sector size (4KB) x 65527 = 256 MB. For more information, see [Configure UEFI/GPT-Based Hard Drive Partitions](configure_uefigpt_based_hard_drive_partitions.md).
+For Advanced Format 4K Native drives (4-KB-per-sector) drives, the minimum partition size is 260 MB, due to a limitation of the FAT32 file format. The minimum partition size of FAT32 drives is calculated as sector size (4KB) x 65527 = 256 MB. For more information, see [Configure UEFI/GPT-Based Hard Drive Partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8).
 
  
 
 ### <span id="EncryptedDisksAndPartitions"></span><span id="encrypteddisksandpartitions"></span><span id="ENCRYPTEDDISKSANDPARTITIONS"></span>Factory-encrypted hard drives
 
-To help protect your deployment environment, you can use a factory pre-encrypted hard drive to prevent unauthorized access before you install Windows or any other software. For more information, see [Factory Encrypted Drives](factory_encrypted_drives.md).
+To help protect your deployment environment, you can use a factory pre-encrypted hard drive to prevent unauthorized access before you install Windows or any other software. For more information, see [Factory Encrypted Drives](p_adk_online.factory_encrypted_drives_win8).
 
 ### <span id="MultipleHardDisks"></span><span id="multipleharddisks"></span><span id="MULTIPLEHARDDISKS"></span>Multiple hard drives
 
@@ -65,7 +65,7 @@ To do this, use the `diskpart SELECT DISK=<disk location path>` command to selec
 **Note**  
 The system drive might not appear as disk 0 in the DiskPart tool. The system might assign different numbers to drives when you reboot. Different computers that have the same drive configuration can have different disk numbers.
 
-To learn more, see [Configure Multiple Hard Drives](configure_multiple_hard_drives.md) and [Hard Disk Location Path Format](hard_disk_location_path_format.md).
+To learn more, see [Configure Multiple Hard Drives](p_adk_online.configure_multiple_hard_drives_win8) and [Hard Disk Location Path Format](p_adk_online.hard_disk_location_path_format_win8).
 
  
 
@@ -74,7 +74,7 @@ To learn more, see [Configure Multiple Hard Drives](configure_multiple_hard_driv
 
 You can divide your hard drive into multiple partitions. You can create separate system, recovery, Windows, or data partitions.
 
-To enhance the security of the Windows partition or a data partition, you can use BitLocker to encrypt the partition. For more information, see [BitLocker Drive Encryption](bitlocker_drive_encryption.md).
+To enhance the security of the Windows partition or a data partition, you can use BitLocker to encrypt the partition. For more information, see [BitLocker Drive Encryption](p_adk_online.bitlocker_drive_encryption_win8).
 
 The partition types must match the firmware of the computer. You can install Windows on hard drives that are based on any of the following types of firmware:
 
@@ -102,13 +102,13 @@ By default, during Windows Setup, Windows stores these hardware-specific files i
 
 We recommend adding system utility partitions before the Windows partition, because in the event that a full-system recovery is needed, this partition order helps to prevent the recovery tools from overwriting the system and utility partitions.
 
-For information about how to configure system partitions while you apply images, see [Capture and Apply Windows, System, and Recovery Partitions](capture_and_apply_windows_system_and_recovery_partitions.md).
+For information about how to configure system partitions while you apply images, see [Capture and Apply Windows, System, and Recovery Partitions](p_adk_online.capture_and_apply_windows_system_and_recovery_partitions_win8).
 
 ### <span id="MicrosoftRecoveryPartitions"></span><span id="microsoftrecoverypartitions"></span><span id="MICROSOFTRECOVERYPARTITIONS"></span>Microsoft reserved partition (MSR)
 
 The MSR is used on UEFI/GPT systems, to support software components that formerly used hidden sectors.
 
-For more information about configuring MSR partitions, see [Configure UEFI/GPT-Based Hard Drive Partitions](configure_uefigpt_based_hard_drive_partitions.md).
+For more information about configuring MSR partitions, see [Configure UEFI/GPT-Based Hard Drive Partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8).
 
 For more information about MSR partitions, see [Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=267523)
 
@@ -149,11 +149,11 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Deployment</strong></p></td>
-<td align="left"><p>[Configure UEFI/GPT-Based Hard Drive Partitions](configure_uefigpt_based_hard_drive_partitions.md) | [Configure BIOS/MBR-Based Hard Drive Partitions](configure_biosmbr_based_hard_drive_partitions.md) | [Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk](configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md)</p></td>
+<td align="left"><p>[Configure UEFI/GPT-Based Hard Drive Partitions](p_adk_online.configure_uefigpt_based_hard_drive_partitions_win8) | [Configure BIOS/MBR-Based Hard Drive Partitions](p_adk_online.configure_biosmbr_based_hard_drive_partitions_win8) | [Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk](configure-more-than-four-partitions-on-a-biosmbr-based-hard-disk.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Multiple drives</strong></p></td>
-<td align="left"><p>[Configure Multiple Hard Drives](configure_multiple_hard_drives.md) | [Hard Disk Location Path Format](hard_disk_location_path_format.md) | [Internal and External SATA Port Configuration](http://go.microsoft.com/fwlink/p/?LinkId=321830) | [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)</p></td>
+<td align="left"><p>[Configure Multiple Hard Drives](p_adk_online.configure_multiple_hard_drives_win8) | [Hard Disk Location Path Format](p_adk_online.hard_disk_location_path_format_win8) | [Internal and External SATA Port Configuration](http://go.microsoft.com/fwlink/p/?LinkId=321830) | [Configuring Disk Mirroring](http://go.microsoft.com/fwlink/?LinkId=733824)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Using smaller drives</strong></p></td>
@@ -161,7 +161,7 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture_and_apply_windows_system_and_recovery_partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md) | [Factory Encrypted Drives](factory_encrypted_drives.md) | [BitLocker Drive Encryption](bitlocker_drive_encryption.md)</p></td>
+<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](p_adk_online.capture_and_apply_windows_system_and_recovery_partitions_win8) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu-.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md) | [Factory Encrypted Drives](p_adk_online.factory_encrypted_drives_win8) | [BitLocker Drive Encryption](p_adk_online.bitlocker_drive_encryption_win8)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>

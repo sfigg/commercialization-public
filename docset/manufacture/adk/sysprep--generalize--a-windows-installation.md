@@ -36,7 +36,7 @@ In this topic:
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Generalizing an Image
 
 
-When you generalize a Windows image, Windows Setup processes settings in the [generalize](generalize_.md) configuration pass. You must run the **Sysprep** command together with the **/generalize** option, even if the technician computer and the reference computer have the same hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can safely reuse that image on a different computer. But, you can persist drivers during the generalize configuration pass.
+When you generalize a Windows image, Windows Setup processes settings in the [generalize](p_adk_online.generalize__win8) configuration pass. You must run the **Sysprep** command together with the **/generalize** option, even if the technician computer and the reference computer have the same hardware configuration. The **Sysprep /generalize** command removes unique information from a Windows installation so that you can safely reuse that image on a different computer. But, you can persist drivers during the generalize configuration pass.
 
 **Important**  
 When you set up your reference computer, Windows Setup installs drivers for any detected devices. By default, Windows Setup removes these drivers when you generalize the system. If you're deploying the image to computers that have the same hardware and devices, you'll want Windows Setup to reinstall these same drivers. To keep these drivers on the computer during system generalization, set the Microsoft-Windows-PnPSysprep | `PersistAllDeviceInstalls` setting to **true**. For more information about **Sysprep**-related Windows components that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
@@ -53,7 +53,7 @@ Windows replaces only the computer security identifier (SID) on the operating sy
 
         - or -
 
-    -   Add the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](oobesystem.md) configuration pass. Set `Mode` to **Audit**. After the computer boots in audit mode and displays the **System Preparation Tool** window, use one of these methods:
+    -   Add the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](p_adk_online.oobesystem_win8) configuration pass. Set `Mode` to **Audit**. After the computer boots in audit mode and displays the **System Preparation Tool** window, use one of these methods:
 
         -   In the **System Preparation Tool** window, click **Generalize**, click **Shutdown**, and then click **OK**. The computer generalizes the image and shuts down.
 
@@ -71,7 +71,7 @@ Windows replaces only the computer security identifier (SID) on the operating sy
 
 3.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
 
-For more information, see [Settings for Automating OOBE](settings_for_automating_oobe.md) and[Configure Oobe.xml](configure-oobexml.md).
+For more information, see [Settings for Automating OOBE](p_adk_online.settings_for_automating_oobe_win8) and[Configure Oobe.xml](configure-oobexml.md).
 
 If you have additional customizations, you can enter audit mode manually and make those customizations before you generalize and deploy your image.
 
@@ -80,7 +80,7 @@ If you have additional customizations, you can enter audit mode manually and mak
 1.  At the OOBE screen, press Ctrl+Shift+F3. Windows reboots the computer in audit mode, and the **System Preparation Tool** window appears.
 
     **Caution**  
-    The Ctrl+Shift+F3 keyboard shortcut doesn't bypass all parts of the OOBE process, such as running scripts and applying answer-file settings in the [oobeSystem](oobesystem.md) configuration pass.
+    The Ctrl+Shift+F3 keyboard shortcut doesn't bypass all parts of the OOBE process, such as running scripts and applying answer-file settings in the [oobeSystem](p_adk_online.oobesystem_win8) configuration pass.
 
      
 
@@ -104,13 +104,13 @@ If you have additional customizations, you can enter audit mode manually and mak
 
 For more information about audit mode, see:
 
--   [Audit Mode Overview](audit_mode_overview.md)
+-   [Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
 
--   [Boot Windows to Audit Mode or OOBE](boot_windows_to_audit_mode_or_oobe.md)
+-   [Boot Windows to Audit Mode or OOBE](p_adk_online.boot_windows_to_audit_mode_or_oobe_win8)
 
--   [Add a Driver Online in Audit Mode](add_a_driver_online_in_audit_mode.md)
+-   [Add a Driver Online in Audit Mode](p_adk_online.add_a_driver_online_in_audit_mode_win8)
 
--   [Enable and Disable the Built-in Administrator Account](enable_and_disable_the_built_in_administrator_account.md)
+-   [Enable and Disable the Built-in Administrator Account](p_adk_online.enable_and_disable_the_built_in_administrator_account_win8)
 
 ## <span id="bkmk_2"></span><span id="BKMK_2"></span>Generalizing a Virtual Hard Disk
 

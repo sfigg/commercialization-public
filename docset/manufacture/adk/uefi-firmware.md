@@ -26,7 +26,7 @@ Firmware that meets the UEFI 2.3.1 specifications provides the following benefit
 
 -   Faster boot and resume times.
 
--   Ability to use security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. For more information, see [Secure Boot Overview](secure_boot_overview_blue.md) and [Factory Encrypted Drives](factory-encrypted-drives.md).
+-   Ability to use security features such as Secure Boot and factory encrypted drives that help prevent untrusted code from running before the operating system is loaded. For more information, see [Secure Boot Overview](p_adk_online.secure_boot_overview_blue) and [Factory Encrypted Drives](factory-encrypted-drives.md).
 
 -   Ability to more easily support large hard drives (more than 2 terabytes) and drives with more than four partitions.
 
@@ -105,7 +105,7 @@ Before you install Windows on a UEFI-based PC, note the following:
 </tr>
 <tr class="even">
 <td align="left"><p>UEFI Features</p></td>
-<td align="left"><p>[Microsoft Hardware Developer Central: Firmware and Boot Environment](http://go.microsoft.com/fwlink/?LinkId=244007) | [Secure Boot Overview](secure_boot_overview_blue.md) | [Factory Encrypted Drives](factory-encrypted-drives.md)</p></td>
+<td align="left"><p>[Microsoft Hardware Developer Central: Firmware and Boot Environment](http://go.microsoft.com/fwlink/?LinkId=244007) | [Secure Boot Overview](p_adk_online.secure_boot_overview_blue) | [Factory Encrypted Drives](factory-encrypted-drives.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Booting a PC into UEFI or legacy BIOS mode</p></td>
@@ -113,7 +113,7 @@ Before you install Windows on a UEFI-based PC, note the following:
 </tr>
 <tr class="even">
 <td align="left"><p>Managing UEFI hard drives and boot configuration data</p></td>
-<td align="left"><p>[Hard Drives and Partitions](hard-drives-and-partitions.md) | [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) | [BCD System Store Settings for UEFI](bcd_system_store_settings_for_uefi_blue.md) | [UEFI Validation Option ROM Guidance](uefi-validation-option-rom-validation-guidance.md) | [Windows UEFI Firmware Update Platform](http://go.microsoft.com/fwlink/p/?linkid=523808) | [Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)</p></td>
+<td align="left"><p>[Hard Drives and Partitions](hard-drives-and-partitions.md) | [Configure UEFI/GPT-Based Hard Drive Partitions](configure-uefigpt-based-hard-drive-partitions.md) | [BCD System Store Settings for UEFI](p_adk_online.bcd_system_store_settings_for_uefi_blue) | [UEFI Validation Option ROM Guidance](uefi-validation-option-rom-validation-guidance.md) | [Windows UEFI Firmware Update Platform](http://go.microsoft.com/fwlink/p/?linkid=523808) | [Validating Windows UEFI Firmware Update Platform Functionality](validating-windows-uefi-firmware-update-platform-functionality.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Forums</p></td>

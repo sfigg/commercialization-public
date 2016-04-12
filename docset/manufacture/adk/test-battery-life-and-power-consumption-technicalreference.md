@@ -20,7 +20,7 @@ For more information, see [Windows Assessment Toolkit](http://go.microsoft.com/f
 ## <span id="related_topics"></span>Related topics
 
 
-[Set the Default Power Plan](set_the_default_power_plan__8_technicalreference.md)
+[Set the Default Power Plan](p_adk_online.set_the_default_power_plan__8_technicalreference)
 
 [Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)
 

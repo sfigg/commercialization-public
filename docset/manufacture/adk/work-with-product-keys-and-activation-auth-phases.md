@@ -35,7 +35,7 @@ If you have multiple Windows images with the same Windows edition that are store
 
  
 
-For information about managing Windows product keys when changing the Windows image to a higher edition, see [Change the Windows Image to a Higher Edition Using DISM](change_the_windows_image_to_a_higher_edition_using_dism_.md).
+For information about managing Windows product keys when changing the Windows image to a higher edition, see [Change the Windows Image to a Higher Edition Using DISM](p_adk_online.change_the_windows_image_to_a_higher_edition_using_dism__win8).
 
 ## <span id="ActivateWindowsByUsingAProductKey"></span><span id="activatewindowsbyusingaproductkey"></span><span id="ACTIVATEWINDOWSBYUSINGAPRODUCTKEY"></span>Activate Windows
 
@@ -58,13 +58,13 @@ In most Windows 8 deployment scenarios, you no longer have to use the `SkipRear
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Deployment Options](windows_deployment_options.md)
+[Windows Deployment Options](p_adk_online.windows_deployment_options_win8)
 
-[How Configuration Passes Work](how_configuration_passes_work.md)
+[How Configuration Passes Work](p_adk_online.how_configuration_passes_work_win8)
 
-[Sysprep (Generalize) a Windows installation](sysprep__generalize__a_windows_installation.md)
+[Sysprep (Generalize) a Windows installation](p_adk_online.sysprep__generalize__a_windows_installation_win8)
 
-[Change the Windows Image to a Higher Edition Using DISM](change_the_windows_image_to_a_higher_edition_using_dism_.md)
+[Change the Windows Image to a Higher Edition Using DISM](p_adk_online.change_the_windows_image_to_a_higher_edition_using_dism__win8)
 
  
 

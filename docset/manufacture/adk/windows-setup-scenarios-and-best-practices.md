@@ -62,7 +62,7 @@ The automated installation, also called an unattended installation, scenario inc
 
 1.  Use Windows SIM or the CPI APIs to create an unattended installation answer file, typically called Unattend.xml. This answer file contains all of the settings that you configure in the Windows image. For more information, see [Windows System Image Manager How-to Topics](p_wsim.windows_system_image_manager_how_to_topics_win8).
 
-2.  From Windows PE, a previous version of Windows, or another preinstallation environment, run Setup.exe with the explicit path to the answer file. If you do not include the path to the answer file, Setup.exe searches for a valid answer file in several specific locations. For more information, see [Windows Setup Command-Line Options](windows_setup_command_line_options.md).
+2.  From Windows PE, a previous version of Windows, or another preinstallation environment, run Setup.exe with the explicit path to the answer file. If you do not include the path to the answer file, Setup.exe searches for a valid answer file in several specific locations. For more information, see [Windows Setup Command-Line Options](p_adk_online.windows_setup_command_line_options_win8).
 
 3.  Windows Setup then installs the operating system and configures all settings listed in the answer file. Additional applications, device drivers, and updates can also be installed during Windows Setup. After the operating system is installed, Setup launches Windows Welcome.
 
@@ -75,7 +75,7 @@ The following section describes some of the best practices to use with Windows 
 
 -   **Previous Windows installations are moved to a Windows.old folder.** As a best practice, you should back up your data before you upgrade. If you install Windows over a previous Windows installation, all previous Windows files and directories are moved to a Windows.old folder, including the contents of the Users, Program Files, and Windows directories. You can access your data in the Windows.old folder after Windows Setup completes. If you have additional folders not in the Users, Program Files, or Windows directories, those folders are not moved. For example, if you have a folder that is named C:\\Drivers, that folder will not be moved to the Windows.old folder.
 
--   **Review the Windows Setup log files.** If you experience problems during Windows Setup, review the log files in %WINDIR%\\panther. You will be able to identify and troubleshoot many issues by reviewing the installation log files. For more information, see [Deployment Troubleshooting and Log Files](deployment_troubleshooting_and_log_files.md) and [Windows Setup Log Files and Event Logs](windows_setup_log_files_and_event_logs.md).
+-   **Review the Windows Setup log files.** If you experience problems during Windows Setup, review the log files in %WINDIR%\\panther. You will be able to identify and troubleshoot many issues by reviewing the installation log files. For more information, see [Deployment Troubleshooting and Log Files](p_adk_online.deployment_troubleshooting_and_log_files_win8) and [Windows Setup Log Files and Event Logs](p_adk_online.windows_setup_log_files_and_event_logs_win8).
 
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span> Windows Setup Limitations
 
@@ -92,7 +92,7 @@ The following sections describe some of the limitations of Windows Setup. Revie
 
     -   The partition types (primary, extended, or logical) must match. The active partition on the reference computer must match that of the destination computer.
 
--   **Installing Custom .wim files requires a description value in the .wim file.** When you create a custom .wim file, Windows Setup requires that you always include a description value. If a .wim file does not include a description value, the image may not install correctly. You can provide a description value when you use the **dism** command with the **/capture-image** option. If you install a .wim file that does not have a description value, recapture the image and provide a valid description value. For more information, see the [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism___deployment_image_servicing_and_management_technical_reference_for_windows.md).
+-   **Installing Custom .wim files requires a description value in the .wim file.** When you create a custom .wim file, Windows Setup requires that you always include a description value. If a .wim file does not include a description value, the image may not install correctly. You can provide a description value when you use the **dism** command with the **/capture-image** option. If you install a .wim file that does not have a description value, recapture the image and provide a valid description value. For more information, see the [DISM - Deployment Image Servicing and Management Technical Reference for Windows](p_adk_online.dism___deployment_image_servicing_and_management_technical_reference_for_windows_win8).
 
 **Note**  
 For Windows® Preinstallation Environment (Windows PE), the version of boot files must match the computer architecture. An x64 UEFI computer can only boot by using Windows PE x64 boot files. An x86 computer can only boot by using Windows PE x86 boot files. This is different from legacy BIOS. In legacy BIOS, an x64 computer can boot by using x86 boot files.
@@ -102,13 +102,13 @@ For Windows® Preinstallation Environment (Windows PE), the version of boot fil
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Setup Installation Process](windows_setup_installation_process.md)
+[Windows Setup Installation Process](p_adk_online.windows_setup_installation_process_win8)
 
-[Windows Setup Automation Overview](windows_setup_automation_overview.md)
+[Windows Setup Automation Overview](p_adk_online.windows_setup_automation_overview_win8)
 
-[Audit Mode Overview](audit_mode_overview.md)
+[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)
 
-[Windows Setup Configuration Passes](windows_setup_configuration_passes.md)
+[Windows Setup Configuration Passes](p_adk_online.windows_setup_configuration_passes_win8)
 
 [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md)
 

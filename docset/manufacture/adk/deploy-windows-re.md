@@ -15,9 +15,9 @@ Use these steps to deploy Windows® Recovery Environment (Windows RE) to a new 
 
 To complete this walkthrough, you need the following:
 
--   A destination computer that has been configured with a Windows RE tools partition, and optionally, a recovery image partition. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](capture_and_apply_windows_system_and_recovery_partitions.md).
--   Optional: Customize your recovery media. For more information, see [Customize Windows RE](customize_windows_re.md).
--   Optional: Customize your recovery media to include custom tools. For more information, see [Add a Custom Tool to the Windows RE Boot Options Menu](add_a_custom_tool_to_the_windows_re_boot_options_menu.md).
+-   A destination computer that has been configured with a Windows RE tools partition, and optionally, a recovery image partition. For more information, see [Capture and Apply Windows, System, and Recovery Partitions](p_adk_online.capture_and_apply_windows_system_and_recovery_partitions_win8).
+-   Optional: Customize your recovery media. For more information, see [Customize Windows RE](p_adk_online.customize_windows_re_win8).
+-   Optional: Customize your recovery media to include custom tools. For more information, see [Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8).
 
 ## <span id="DeployWindowsRE"></span><span id="deploywindowsre"></span><span id="DEPLOYWINDOWSRE"></span>Step 1: Deploy Windows RE
 
@@ -68,14 +68,14 @@ To complete this walkthrough, you need the following:
     Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
     ```
 
-    For more information about adding a custom tool, see [Add a Custom Tool to the Windows RE Boot Options Menu](add_a_custom_tool_to_the_windows_re_boot_options_menu.md).
+    For more information about adding a custom tool, see [Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8).
 
-4.  Optional: Configure a hardware recovery button (or button combination) to run a secondary boot path that contains Windows RE. For more information, see [Add a Hardware Recovery Button to Start Windows RE](add_a_hardware_recovery_button_to_start_windows_re.md).
+4.  Optional: Configure a hardware recovery button (or button combination) to run a secondary boot path that contains Windows RE. For more information, see [Add a Hardware Recovery Button to Start Windows RE](p_adk_online.add_a_hardware_recovery_button_to_start_windows_re_win8).
 
 ## <span id="PrepareScripts"></span><span id="preparescripts"></span><span id="PREPARESCRIPTS"></span>Step 2: Identify the Recovery Partitions and Hide the Drive Letters
 
 
-**Note**   If you want to configure push-button reset features for Windows 8 editions, skip this section, and go to the topic: [Deploy Push-Button Reset Features](deploy_push_button_reset_features.md).
+**Note**   If you want to configure push-button reset features for Windows 8 editions, skip this section, and go to the topic: [Deploy Push-Button Reset Features](p_adk_online.deploy_push_button_reset_features_win8).
 
  
 
@@ -158,9 +158,9 @@ Configure your partitions as recovery partitions, and then conceal the drive let
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[Customize Windows RE](customize_windows_re.md)
+[Customize Windows RE](p_adk_online.customize_windows_re_win8)
 
-[Add a Custom Tool to the Windows RE Boot Options Menu](add_a_custom_tool_to_the_windows_re_boot_options_menu.md)
+[Add a Custom Tool to the Windows RE Boot Options Menu](p_adk_online.add_a_custom_tool_to_the_windows_re_boot_options_menu_win8)
 
  
 

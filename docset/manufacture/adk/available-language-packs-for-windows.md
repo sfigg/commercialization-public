@@ -20,7 +20,7 @@ OEMs and system builders with Microsoft Software License Terms can get the LIPs 
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](http://go.microsoft.com/fwlink/?LinkId=63026).
 
-To learn more, see [Add Language Packs to Windows](add_language_packs_to_windows_blue.md).
+To learn more, see [Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue).
 
 ## <span id="Supported_Language_Packs_and_Language_Interface_Packs"></span><span id="supported_language_packs_and_language_interface_packs"></span><span id="SUPPORTED_LANGUAGE_PACKS_AND_LANGUAGE_INTERFACE_PACKS"></span>Supported Language Packs and Language Interface Packs
 
@@ -1073,7 +1073,7 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 ## <span id="related_topics"></span>Related topics
 
 
-[Add Language Packs to Windows](add_language_packs_to_windows_blue.md)
+[Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue)
 
 [Windows Language Pack Default Values](windows-language-pack-default-values.md)
 

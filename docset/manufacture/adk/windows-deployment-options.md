@@ -24,7 +24,7 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes considerations for deploying to computers that are based on the Unified Extensible Firmware Interface (UEFI).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Hard Drives and Partitions](hard_drives_and_partitions.md)</p></td>
+<td align="left"><p>[Hard Drives and Partitions](p_adk_online.hard_drives_and_partitions_win8)</p></td>
 <td align="left"><p>Describes methods to deploy different drive configurations, including hard drives, solid-state drives (SSDs), and virtual hard drives (VHDs).</p></td>
 </tr>
 <tr class="odd">
@@ -32,11 +32,11 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes how to create and deploy Windows using virtual hard disks (VHDs).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure Network Settings in an Unattended Installation](configure_network_settings_in_an_unattended_installation.md)</p></td>
+<td align="left"><p>[Configure Network Settings in an Unattended Installation](p_adk_online.configure_network_settings_in_an_unattended_installation_win8)</p></td>
 <td align="left"><p>Describes common networking scenarios and how to implement them in unattended installations.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Device Drivers and Deployment Overview](device_drivers_and_deployment_overview.md)</p></td>
+<td align="left"><p>[Device Drivers and Deployment Overview](p_adk_online.device_drivers_and_deployment_overview_win8)</p></td>
 <td align="left"><p>Describes methods of adding and configuring device drivers.</p></td>
 </tr>
 <tr class="even">
@@ -52,19 +52,19 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes how to enter a product key and how to activate Windows.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Battery Life](battery_life.md)</p></td>
+<td align="left"><p>[Battery Life](p_adk_online.battery_life_win8)</p></td>
 <td align="left"><p>Describes methods of managing battery life on different hardware and software platforms.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Understanding Servicing Strategies](understanding_servicing_strategies.md)</p></td>
+<td align="left"><p>[Understanding Servicing Strategies](p_adk_online.understanding_servicing_strategies_win8)</p></td>
 <td align="left"><p>Describes servicing strategies, including customization during installation, offline servicing, and online servicing (audit mode).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Audit Mode Overview](audit_mode_overview.md)</p></td>
+<td align="left"><p>[Audit Mode Overview](p_adk_online.audit_mode_overview_win8)</p></td>
 <td align="left"><p>Describes audit mode, which enables you to customize a Windows installation without configuring the user interface pages of OOBE.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Enable and Disable the Built-in Administrator Account](enable_and_disable_the_built_in_administrator_account.md)</p></td>
+<td align="left"><p>[Enable and Disable the Built-in Administrator Account](p_adk_online.enable_and_disable_the_built_in_administrator_account_win8)</p></td>
 <td align="left"><p>Describes how to enable and disable the built-in Administrator account, which helps you run programs and apps as an administrator.</p></td>
 </tr>
 <tr class="odd">
@@ -72,11 +72,11 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes considerations when deploying Windows Server editions.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Configure a Trusted Image Identifier for Windows Defender](configure_a_trusted_image_identifier_for_windows_defender.md)</p></td>
+<td align="left"><p>[Configure a Trusted Image Identifier for Windows Defender](p_adk_online.configure_a_trusted_image_identifier_for_windows_defender_win8)</p></td>
 <td align="left"><p>You can speed up the initial performance of your computer for the end user by adding a trusted image identifier to Windows Defender. Windows Defender is a Microsoft application that can help to prevent, remove, and quarantine malware and spyware.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[High DPI Support for IT Professionals](high_dpi_support_for_it_professionalswin81.md)</p></td>
+<td align="left"><p>[High DPI Support for IT Professionals](p_adk_online.high_dpi_support_for_it_professionalswin81)</p></td>
 <td align="left"><p>Windows includes features that improve the user experience with premium high density display panels such as 1920x1080 displays that have about 200 DPI and 150% scaling, and 2560x1440 and 3200x1800 displays that have 225-275DPI and 200% scaling.</p></td>
 </tr>
 <tr class="even">

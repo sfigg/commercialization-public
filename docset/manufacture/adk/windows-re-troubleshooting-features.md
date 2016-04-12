@@ -73,7 +73,7 @@ Computer manufacturers can provide custom support and recovery tools. These tool
 
 [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
 
-[REAgentC Command-Line Options](reagentc_command_line_options.md)
+[REAgentC Command-Line Options](p_adk_online.reagentc_command_line_options_win8)
 
  
 

@@ -131,7 +131,7 @@ You can configure international settings in an answer file in the following ways
 
 **To configure international settings during the Windows PE configuration pass**
 
-1.  Verify that the necessary language packs are available in the image or in a Windows distribution share. For more information about multilingual distribution shares, see [Add Multilingual Support to a Windows Distribution](add_multilingual_support_to_a_windows_distribution_blue.md).
+1.  Verify that the necessary language packs are available in the image or in a Windows distribution share. For more information about multilingual distribution shares, see [Add Multilingual Support to a Windows Distribution](p_adk_online.add_multilingual_support_to_a_windows_distribution_blue).
 
 2.  Open Windows System Image Manager (Windows SIM) and create an answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
 
@@ -182,7 +182,7 @@ You can configure international settings in an answer file in the following ways
 
 [Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8)
 
-[Add Language Packs to Windows](add_language_packs_to_windows_blue.md)
+[Add Language Packs to Windows](p_adk_online.add_language_packs_to_windows_blue)
 
 [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md)
 
