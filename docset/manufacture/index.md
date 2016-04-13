@@ -3,7 +3,7 @@ Description: 'Provides guidelines for manufacturing Windows devices.'
 MS-HAID: 'wdknodes.manufacture\_portal'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacture
-author: Justin Hall
+author: justinha
 ---
 
 # Manufacture
