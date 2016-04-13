@@ -2,7 +2,7 @@
 Description: 'This section shows you how to add a fictitious driver and an MCSF customization setting as part of the package.'
 MS-HAID: 'p\_mobile\_deployment.creating\_mobile\_packages'
 MSHAttr: 'PreferredLib:/library'
-author: Ken Pacquer
+author: kpacquer
 title: Create mobile packages
 ---
 
