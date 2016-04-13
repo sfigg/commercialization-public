@@ -99,7 +99,7 @@ You can change the default SAN policy of a Windows image by using Windows System
 
 1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**.
 
-2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8) and [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8).
+2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085) and [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
 
 3.  On the **Insert** menu, click **RunSynchronous**.
 

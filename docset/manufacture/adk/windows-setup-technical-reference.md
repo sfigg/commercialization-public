@@ -14,7 +14,7 @@ Windows Setup is a bootable program that installs the Windows operating system.
 
 
 -   You can install or upgrade the Windows operating system on a PC from a USB key, a mounted .ISO file, DVD, or network device.
--   You can automate the Windows installation process, including the configuration of drivers, packages, files, and Windows system settings by using answer files created from [Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8).
+-   You can automate the Windows installation process, including the configuration of drivers, packages, files, and Windows system settings by using answer files created from [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
 -   You can use Windows Setup as an installer for your own customized Windows images.
 -   You can use the menus in Windows Setup to prepare the hard drives before installation.
 
@@ -27,7 +27,7 @@ Windows Setup is a bootable program that installs the Windows operating system.
 
     For volume-licensed editions of Windows, we've added a new command-line option, `setup /auto`, to help enable upgrades. Note, we only plan to use this option for upgrades to Windows 8.1, and we may remove the option in future versions of Windows. For more info, see [Windows Setup Command-Line Options](windows-setup-command-line-options.md).
 
--   [Settings for Automating OOBE](settings-for-automating-oobe.md): The [NetworkLocation](p_unattend.networklocation_win7_microsoft_windows_shell_setupoobenetworklocation) setting is no longer needed to automate OOBE. The functionality of the [ProtectYourPC](p_unattend.protectyourpc_win7_microsoft_windows_shell_setupoobeprotectyourpc) setting has changed.
+-   [Settings for Automating OOBE](settings-for-automating-oobe.md): The [NetworkLocation](https://msdn.microsoft.com/library/windows/hardware/dn923171) setting is no longer needed to automate OOBE. The functionality of the [ProtectYourPC](https://msdn.microsoft.com/library/windows/hardware/dn915741) setting has changed.
 
 ## <span id="BKMK_LINKS"></span><span id="bkmk_links"></span>See also
 
@@ -64,7 +64,7 @@ The following table contains links to resources related to this scenario.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Related technologies</strong></p></td>
-<td align="left"><p>[Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8) | [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281) | [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md) | [WinPE for Windows 10](winpe-intro.md)</p></td>
+<td align="left"><p>[Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445) | [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281) | [Sysprep (System Preparation) Overview](sysprep--system-preparation--overview.md) | [WinPE for Windows 10](winpe-intro.md)</p></td>
 </tr>
 </tbody>
 </table>

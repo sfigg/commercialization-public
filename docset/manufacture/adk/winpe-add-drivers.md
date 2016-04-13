@@ -72,7 +72,7 @@ You can also update device drivers while you're running Windows PE. For more in
 
 -   For most graphics drivers, WinPE picks the maximum native resolution automatically.
 
-    To manually adjust the size, use an answer file and include settings for Microsoft-Windows-Setup/[Display](p_unattend.display_win7_microsoft_windows_setupdisplay). To learn more, see [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md).
+    To manually adjust the size, use an answer file and include settings for Microsoft-Windows-Setup/[Display](https://msdn.microsoft.com/library/windows/hardware/dn915285). To learn more, see [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md).
 
 **Unmount the Windows PE image and create media**
 

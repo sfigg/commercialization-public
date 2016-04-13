@@ -17,7 +17,7 @@ You must run PowerShell and Server Manager commands from an account with adminis
 
  
 
-For more information about adding the `FirstLogonCommands` setting, see [Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8).
+For more information about adding the `FirstLogonCommands` setting, see [Add a Custom Command to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915058).
 
 The following example shows the PowerShell.exe syntax for installing the ServerManager module and the DHCP, FAX, DNS, and File-Services roles.
 

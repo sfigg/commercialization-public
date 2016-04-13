@@ -60,7 +60,7 @@ Automated installations enable you to customize a Windows installation and remov
 
 The automated installation, also called an unattended installation, scenario includes the following stages:
 
-1.  Use Windows SIM or the CPI APIs to create an unattended installation answer file, typically called Unattend.xml. This answer file contains all of the settings that you configure in the Windows image. For more information, see [Windows System Image Manager How-to Topics](p_wsim.windows_system_image_manager_how_to_topics_win8).
+1.  Use Windows SIM or the CPI APIs to create an unattended installation answer file, typically called Unattend.xml. This answer file contains all of the settings that you configure in the Windows image. For more information, see [Windows System Image Manager How-to Topics](https://msdn.microsoft.com/library/windows/hardware/dn915116).
 
 2.  From Windows PE, a previous version of Windows, or another preinstallation environment, run Setup.exe with the explicit path to the answer file. If you do not include the path to the answer file, Setup.exe searches for a valid answer file in several specific locations. For more information, see [Windows Setup Command-Line Options](windows-setup-command-line-options.md).
 

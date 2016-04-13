@@ -71,7 +71,7 @@ To modify a power plans on your own PC, see [Power Plans: Frequently asked quest
 ## <span id="related_topics"></span>Related topics
 
 
-[Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8)
+[Add a Custom Command to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915058)
 
 [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)
 

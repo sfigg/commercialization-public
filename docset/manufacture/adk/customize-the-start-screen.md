@@ -105,7 +105,7 @@ You can customize the Start screen for your business in many ways. You can add t
 
 You can use an unattended answer file to preserve the layout of the **Start** screen that you designed. In the answer file, add the CopyProfile setting to the specialize pass.
 
-1.  Create or open an answer file in Windows System Image Manager (Windows SIM). For more information, see [Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8).
+1.  Create or open an answer file in Windows System Image Manager (Windows SIM). For more information, see [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
 2.  In the **Windows Image** pane, right-click **amd64\_Microsoft-Windows-Shell-Setup** or **x86\_Microsoft-Windows-Shell-Setup**, and then select **Add Setting to Pass 4 specialize**.
 3.  In the **Answer File** pane of Windows SIM, select **Components\\4 specialize\\Microsoft-Windows-Shell-Setup\_neutral**.
 4.  In the **Properties of Microsoft-Windows-Shell-Setup** pane, in the **Settings** section, set **CopyProfile** to **true**.
@@ -215,7 +215,7 @@ You can use settings in an unattended answer file to specify how the app tiles d
 
 2.  Open an answer file.
 
-    Create or open an answer file in Windows System Image Manager (Windows SIM). For more information, see [Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8).
+    Create or open an answer file in Windows System Image Manager (Windows SIM). For more information, see [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
 
 3.  Add StartTiles settings to your answer file.
 

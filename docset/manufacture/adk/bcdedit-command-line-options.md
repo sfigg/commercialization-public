@@ -182,7 +182,7 @@ For examples of BCDEdit, see [Boot Configuration Data in Windows Vista](http://g
 
 [BCD System Store Settings for UEFI](bcd-system-store-settings-for-uefi.md)
 
-[BCDEdit Commands for Boot Environment](hw_design.bcdedit_commands_for_boot_environment)
+[BCDEdit Commands for Boot Environment](https://msdn.microsoft.com/library/windows/hardware/dn653986)
 
 [4-Gigabyte Tuning: BCDEdit and Boot.ini](base.4_gigabyte_tuning)
 

@@ -10,7 +10,7 @@ title: Boot from a DVD
 
 The simplest way to install Windows on new hardware is to start directly from the Windows product DVD by using an answer file that is named Autounattend.xml. This method provides flexibility when network access is not available or when you are building only a few computers. You can use this same method to build an initial image in an image-based deployment scenario, typically known as a *master installation*.
 
-By using the answer file, you can automate all or parts of Windows Setup. You can create an answer file by using Windows System Image Manager (Windows SIM). For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
+By using the answer file, you can automate all or parts of Windows Setup. You can create an answer file by using Windows System Image Manager (Windows SIM). For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 

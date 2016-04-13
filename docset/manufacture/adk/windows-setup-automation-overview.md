@@ -249,15 +249,15 @@ The following examples help describe the behavior of implicit answer file search
 
 See the following topics for more information about answer files and configuration passes:
 
--   [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8)
+-   [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073)
 
--   [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8)
+-   [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085)
 
--   [Configure Components and Settings in an Answer File](p_wsim.configure_components_and_settings_in_an_answer_file_win8)
+-   [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078)
 
--   [Validate an Answer File](p_wsim.validate_an_answer_file_win8)
+-   [Validate an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915106)
 
--   [Hide Sensitive Data in an Answer File](p_wsim.hide_sensitive_data_in_an_answer_file_win8)
+-   [Hide Sensitive Data in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915098)
 
 -   [How Configuration Passes Work](how-configuration-passes-work.md)
 

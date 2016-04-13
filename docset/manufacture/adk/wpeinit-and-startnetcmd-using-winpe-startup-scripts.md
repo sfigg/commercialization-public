@@ -39,21 +39,21 @@ Wpeinit –unattend:"C:\Unattend-PE.xml"
 
 You can create an answer file and include any of the following settings for use with Windows PE:
 
--   Microsoft-Windows-Setup/[Display](p_unattend.display_win7_microsoft_windows_setupdisplay)
+-   Microsoft-Windows-Setup/[Display](https://msdn.microsoft.com/library/windows/hardware/dn915285)
 
--   Microsoft-Windows-Setup/[EnableFirewall](p_unattend.enablefirewall_win7_microsoft_windows_setupenablefirewall)
+-   Microsoft-Windows-Setup/[EnableFirewall](https://msdn.microsoft.com/library/windows/hardware/dn915375)
 
--   Microsoft-Windows-Setup/[EnableNetwork](p_unattend.enablenetwork_win7_microsoft_windows_setupenablenetwork)
+-   Microsoft-Windows-Setup/[EnableNetwork](https://msdn.microsoft.com/library/windows/hardware/dn915383)
 
--   Microsoft-Windows-Setup/[LogPath](p_unattend.logpath_win7_microsoft_windows_setuplogpath)
+-   Microsoft-Windows-Setup/[LogPath](https://msdn.microsoft.com/library/windows/hardware/dn915490)
 
--   Microsoft-Windows-Setup/[PageFile](p_unattend.pagefile_win7_microsoft_windows_setuppagefile)
+-   Microsoft-Windows-Setup/[PageFile](https://msdn.microsoft.com/library/windows/hardware/dn915671)
 
--   Microsoft-Windows-Setup/[Restart](p_unattend.restart_win7_microsoft_windows_setuprestart)
+-   Microsoft-Windows-Setup/[Restart](https://msdn.microsoft.com/library/windows/hardware/dn915783)
 
--   Microsoft-Windows-Setup/[RunAsynchronous](p_unattend.runasynchronous_win7_microsoft_windows_setuprunasynchronous)
+-   Microsoft-Windows-Setup/[RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915800)
 
--   Microsoft-Windows-Setup/[RunSynchronous](p_unattend.runsynchronous_win7_microsoft_windows_setuprunsynchronous)
+-   Microsoft-Windows-Setup/[RunSynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915804)
 
 ## <span id="related_topics"></span>Related topics
 

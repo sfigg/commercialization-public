@@ -71,7 +71,7 @@ The following table provides a description of how an unattended servicing option
 
 -   When you use DISM.exe to apply an answer file to a running operating system, the answer file should only contain elements in the **offlineServicing** configuration pass. This is because some settings in the Specialize configuration pass might be applied to the operating system. We recommend that the answer file that you use with DISM only contain settings in the **offlineServicing** configuration pass.
 
--   The recommended way to author answer files is to create them in Windows System Image Manager (Windows SIM). However, if you use a manually authored answer file, you must validate the answer file in Windows SIM to verify that it works. For more information, see [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8).
+-   The recommended way to author answer files is to create them in Windows System Image Manager (Windows SIM). However, if you use a manually authored answer file, you must validate the answer file in Windows SIM to verify that it works. For more information, see [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
 
 -   When you apply an answer file by using DISM, the answer file is not cached on the target computer.
 

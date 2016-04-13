@@ -88,7 +88,7 @@ Do not install a language pack after an update. If you install an update (hotfix
 
 1.  Note the location of the language packs you want to add to the Windows image. Language packs are stored in .cab files and are called Lp.cab.
 
-2.  Use Windows SIM to create an answer file that contains only the language packs that you want to add. For more information about how to create an answer file, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
+2.  Use Windows SIM to create an answer file that contains only the language packs that you want to add. For more information about how to create an answer file, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
 3.  In the **Package** node, under **Language Packs**, right-click the language pack that you want to add, and then select **Add to Answer File**.
 
@@ -173,7 +173,7 @@ You cannot remove a language pack from an offline Windows image if there are pen
 
 **To remove a language pack using DISM and an unattended answer file**
 
-1.  Use Windows® System Image Manager (Windows SIM) to create an answer file that contains only the language packs that you want to remove. Open the Windows image by using Windows SIM and create a new answer file. For more information about how to use Windows SIM, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
+1.  Use Windows® System Image Manager (Windows SIM) to create an answer file that contains only the language packs that you want to remove. Open the Windows image by using Windows SIM and create a new answer file. For more information about how to use Windows SIM, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
 2.  In the **Package** node, under **Language Packs**, right-click the language pack that you want to remove and select **Add to Answer File**.
 
@@ -265,7 +265,7 @@ The Windows image is ready to be deployed.
 
 [DISM Unattended Servicing Command-Line Options](dism-unattended-servicing-command-line-options.md)
 
-[Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8)
+[Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445)
 
  
 

@@ -24,7 +24,7 @@ To install Windows onto a factory-encrypted drive, use the following:
 ## <span id="Using_other_encryption_standards"></span><span id="using_other_encryption_standards"></span><span id="USING_OTHER_ENCRYPTION_STANDARDS"></span>Using other encryption standards
 
 
-To use another encryption standard on your drive, you must first disable the automatic drive provisioning that Windows provides. To do this on a new installation, set the Microsoft-Windows-EnhancedStorage-Adm/TCGSecurityActivationDisabled Unattend setting to **true**. For more information, see the [Unattended Windows Setup Reference](p_unattend.unattended_windows_setup_reference_b_unattend).
+To use another encryption standard on your drive, you must first disable the automatic drive provisioning that Windows provides. To do this on a new installation, set the Microsoft-Windows-EnhancedStorage-Adm/TCGSecurityActivationDisabled Unattend setting to **true**. For more information, see the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
 
 ## <span id="related_topics"></span>Related topics
 
