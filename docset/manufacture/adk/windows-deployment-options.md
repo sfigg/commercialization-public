@@ -76,7 +76,7 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>You can speed up the initial performance of your computer for the end user by adding a trusted image identifier to Windows Defender. Windows Defender is a Microsoft application that can help to prevent, remove, and quarantine malware and spyware.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[High DPI Support for IT Professionals](high-dpi-support-for-it-professionalswin81.md)</p></td>
+<td align="left"><p>[High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)</p></td>
 <td align="left"><p>Windows includes features that improve the user experience with premium high density display panels such as 1920x1080 displays that have about 200 DPI and 150% scaling, and 2560x1440 and 3200x1800 displays that have 225-275DPI and 200% scaling.</p></td>
 </tr>
 <tr class="even">

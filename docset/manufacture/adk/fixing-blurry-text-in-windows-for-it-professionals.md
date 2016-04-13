@@ -166,7 +166,7 @@ For information about how to identify 125% systems or how to revert to Windows 
 ## <span id="related_topics"></span>Related topics
 
 
-[High DPI Support for IT Professionals](high-dpi-support-for-it-professionalswin81.md)
+[High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
  
 

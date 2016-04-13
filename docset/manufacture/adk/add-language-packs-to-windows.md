@@ -20,7 +20,7 @@ You can install multiple languages onto the same Windows 10 image. For each lang
 -   Add the language pack (**lp.cab**), and the **Basic** components.
 -   To preload Cortana features, also add the **Text-to-speech**, and **Speech recognition**.
 
-    **Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](p_sxs_dmfg.install_windows_automatically_from_a_usb_drive_blue_sxs).
+    **Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](../sxs/install-windows-automatically-from-a-usb-drive-sxs.md).
 
      
 
@@ -144,7 +144,7 @@ To see what's available, see [Available Language Packs for Windows](available-la
 
 You can add a language pack to an image in the following ways:
 
--   **With Windows Imaging and Configuration Designer (ICD)**. To learn more, see [Lab 1: Customize and install your first Windows image](p_sxs_dmfg.install_windows_automatically_from_a_usb_drive_blue_sxs).
+-   **With Windows Imaging and Configuration Designer (ICD)**. To learn more, see [Lab 1: Customize and install your first Windows image](../sxs/install-windows-automatically-from-a-usb-drive-sxs.md).
 -   [**Offline installation**](#add-offline). If you need to add a language pack or configure international settings on a custom Windows image, you can use DISM.
 -   [**Using Windows Setup.**](#add-setup)
 -   **On a running operating system.** If you need to boot the operating system to install an application or to test and validate the installation, you can add a language pack to the running operating system by using DISM or the language pack setup tool (Lpksetup.exe). You can use this method only for language packs that are stored outside of the Windows image. For more information, see [Add and Remove Language Packs on a Running Windows Installation](add-and-remove-language-packs-on-a-running-windows-installation.md) and [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
@@ -305,7 +305,7 @@ To save space, you can remove English language components when deploying to non-
     Dism /Get-Packages /Image:"C:\mount\winre"
     ```
 
-3.  **Known issue**: If you've removed the English language pack, in Windows 10 Build 10240, you'll need to boot the image into audit mode, and use the command: `sfc.exe /scannow /verify` to repair issues with Windows 32-bit apps. For an example of how to do this with a script, see [Lab 2a: Answer files: Update settings and run scripts](p_sxs_dmfg.update_windows_settings_and_scripts_create_your_own_answer_file_blue_sxs).
+3.  **Known issue**: If you've removed the English language pack, in Windows 10 Build 10240, you'll need to boot the image into audit mode, and use the command: `sfc.exe /scannow /verify` to repair issues with Windows 32-bit apps. For an example of how to do this with a script, see [Lab 2a: Answer files: Update settings and run scripts](../sxs/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
 
 **Reinstall apps (required whenever adding languages)**
 
