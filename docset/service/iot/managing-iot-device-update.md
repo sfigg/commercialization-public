@@ -24,7 +24,7 @@ Updates for IoT Core Pro can be turned off by setting the AllowAutoUpdate policy
 -   If the AllowAutoUpdate policy is not configured, devices will get IoT Core updates as usual at 3am.
 -   If the AllowAutoUpdate policy set to **5**, automatic updates for IoT Core are turned off.
 
-![allowautoupdate5](../common/policy1.png)
+![allowautoupdate5](images/policy1.png)
 
 ## <span id="AllowAutoUpdate_to_control_updates"></span><span id="allowautoupdate_to_control_updates"></span><span id="ALLOWAUTOUPDATE_TO_CONTROL_UPDATES"></span>AllowAutoUpdate to control updates
 
@@ -34,7 +34,7 @@ The AllowAutoUpdate policy can also control the timing of updates for IoT Core:
 If the AllowAutoUpdate policy is set to **4**, IoT Core updates will automatically install and the device will restart at a specified time. An IT administrator specifies the install day/time (i.e., every Sunday at 3am). If no day/time is specified, the install time defaults to 3 AM daily. All end-user updated related notifications are suppressed as well.
 View the set time in ` <LocURI>./Vendor/MSFT/PolicyManager/Device/Update/ScheduledInstallDay</LocURI>` or ` <LocURI>./Vendor/MSFT/PolicyManager/Device/Update/ScheduledInstallTime</LocURI>` in **syncml**.
 
-![allowautoupdate4](../common/policy2.png)
+![allowautoupdate4](images/policy2.png)
 
 ## <span id="Deferring_updates"></span><span id="deferring_updates"></span><span id="DEFERRING_UPDATES"></span>Deferring updates
 
@@ -52,7 +52,7 @@ To configure WSUS on an IoT Core image:
 2.  Under **Available Customizations**, expand to **Runtime settings**, then **Policies**, and then **Update**.
 3.  In the **Policies/Update** info pane, change the **UpdateServiceURL** to the address of the WSUS server that will be used.
 
-![updateserviceurl](../common/updateurl.png)
+![updateserviceurl](images/updateurl.png)
 
 To select IoT Core updates in the WSUS catalog site:
 
@@ -73,7 +73,7 @@ To configure a device to receive only OS updates, you must edit the OEM Feature 
 -   **Qualcomm DragonBoard:** ` C:\Program Files (x86)\Windows Kits\10\FMFiles\arm\QCDB410CFM.xml`
 
 In the **&lt;DeviceLayoutPackages&gt;** and **&lt;Features&gt;**sections, remove the device identifier and replace with **Generic**. For example **Intel.MBM.DeviceInfo.cab** becomes **Intel.Generic.DeviceInfo.cab**.
-![generic pop on mbm](../common/genericpop.png)
+![generic pop on mbm](images/genericpop.png)
 
  
 
