@@ -28,59 +28,59 @@ These APIs are used by phone manufacturers to test phone call functionality whil
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>MfgPhoneDial</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715524)</p></td>
+<td align="left"><p>[<strong>MfgPhoneDial</strong>](mfgphonedial.md)</p></td>
 <td align="left"><p>Causes the phone to dial a call.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MfgPhoneEndCall</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715525)</p></td>
+<td align="left"><p>[<strong>MfgPhoneEndCall</strong>](mfgphoneendcall.md)</p></td>
 <td align="left"><p>Ends a phone call.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MfgPhoneGetSimLineCount</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715526)</p></td>
+<td align="left"><p>[<strong>MfgPhoneGetSimLineCount</strong>](mfgphonegetsimlinecount.md)</p></td>
 <td align="left"><p>Gets the number of currently detected SIM slots.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MfgPhoneGetSimLineDetail</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715527)</p></td>
+<td align="left"><p>[<strong>MfgPhoneGetSimLineDetail</strong>](mfgphonegetsimlinedetail.md)</p></td>
 <td align="left"><p>Retrieves a struct that contains the current details for a given SIM-based phone line.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MfgPhoneGetSpeaker</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715528)</p></td>
+<td align="left"><p>[<strong>MfgPhoneGetSpeaker</strong>](mfgphonegetspeaker.md)</p></td>
 <td align="left"><p>Returns a boolean indicating whether the phone speaker is being used, as opposed to the handset earphone.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MfgPhoneInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715529)</p></td>
+<td align="left"><p>[<strong>MfgPhoneInitialize</strong>](mfgphoneinitialize.md)</p></td>
 <td align="left"><p>Initializes the phone system and the internal state of the API implemented by DLL.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MfgPhoneSetSimLineEventNotifyCallback</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715530)</p></td>
+<td align="left"><p>[<strong>MfgPhoneSetSimLineEventNotifyCallback</strong>](mfgphonesetsimlineeventnotifycallback.md)</p></td>
 <td align="left"><p>Callback-based notification mechanism for receiving events on SIM-based phone lines.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MfgPhoneSetSpeaker</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715531)</p></td>
+<td align="left"><p>[<strong>MfgPhoneSetSpeaker</strong>](mfgphonesetspeaker.md)</p></td>
 <td align="left"><p>Sets a value indicating whether the phone speaker should be used, as opposed to the handset earphone.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MfgPhoneUninitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715532)</p></td>
+<td align="left"><p>[<strong>MfgPhoneUninitialize</strong>](mfgphoneuninitialize.md)</p></td>
 <td align="left"><p>Uninitializes the phone system and the internal state of the API implemented by DLL.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MFGPHONE_CALLSTATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715533)</p></td>
+<td align="left"><p>[<strong>MFGPHONE_CALLSTATUS</strong>](mfgphone-callstatus.md)</p></td>
 <td align="left"><p>Provides information about the status of the call.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MFGPHONE_LINESYSTEMTYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715534)</p></td>
+<td align="left"><p>[<strong>MFGPHONE_LINESYSTEMTYPE</strong>](mfgphone-linesystemtype.md)</p></td>
 <td align="left"><p>Provides information about the type of line system.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MFGPHONE_REGISTRATIONSTATE</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715535)</p></td>
+<td align="left"><p>[<strong>MFGPHONE_REGISTRATIONSTATE</strong>](mfgphone-registrationstate.md)</p></td>
 <td align="left"><p>Provides information about the state of the phone line? call?</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>MFGPHONE_SIMLINEDETAIL</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715536)</p></td>
+<td align="left"><p>[<strong>MFGPHONE_SIMLINEDETAIL</strong>](mfgphone-simlinedetail.md)</p></td>
 <td align="left"><p>Provides information about a particular SIM-based phone line.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>MFGPHONE_SIMSTATE</strong>](https://msdn.microsoft.com/library/windows/hardware/mt715537)</p></td>
+<td align="left"><p>[<strong>MFGPHONE_SIMSTATE</strong>](mfgphone-simstate.md)</p></td>
 <td align="left"><p>Provides information about the state of the SIM.</p></td>
 </tr>
 </tbody>

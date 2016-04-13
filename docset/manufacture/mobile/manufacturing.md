@@ -131,7 +131,7 @@ Manufacturing mode is a mode of the full operating system that can be used for m
 
 -   [Manufacturing Mode](manufacturing-mode.md)
 
--   [Boot mode management UEFI protocol](https://msdn.microsoft.com/library/windows/hardware/dn925274)
+-   [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md)
 
 ## <span id="Microsoft_Manufacturing_OS__MMOS_"></span><span id="microsoft_manufacturing_os__mmos_"></span><span id="MICROSOFT_MANUFACTURING_OS__MMOS_"></span>Microsoft Manufacturing OS (MMOS)
 

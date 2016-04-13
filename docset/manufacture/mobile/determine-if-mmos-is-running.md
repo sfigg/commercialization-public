@@ -8,7 +8,7 @@ title: Determine if MMOS is running
 # Determine if MMOS is running
 
 
-You can check to see if MMOS is running the same way that you check when running in Manufacturing Mode. For more info, see [Detect Manufacturing Mode](https://msdn.microsoft.com/library/windows/hardware/dn917721).
+You can check to see if MMOS is running the same way that you check when running in Manufacturing Mode. For more info, see [Detect Manufacturing Mode](how-to-detect-manufacturing-mode.md).
 
 **Note**  You should not query the ManufacturingOS registry setting as this key is obsolete.
 

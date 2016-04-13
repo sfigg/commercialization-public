@@ -31,7 +31,7 @@ Parameters
 Specifies the SIM-based phone line.
 
 *SimLineDetail* \[out\]  
-Pointer to a [**MFGPHONE\_SIMLINEDETAIL**](https://msdn.microsoft.com/library/windows/hardware/mt715536) struct that contains the current details for the SIM-based phone line specified by *SimSlot*.
+Pointer to a [**MFGPHONE\_SIMLINEDETAIL**](mfgphone-simlinedetail.md) struct that contains the current details for the SIM-based phone line specified by *SimSlot*.
 
 *SimLineDetailSize* \[in\]  
 Specifies the size of the **SimLineDetail** parameter.

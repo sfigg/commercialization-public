@@ -42,7 +42,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     The launch tool sets the default architecture, and sets a version number for the design, which is used for future updates. The first version number defaults to 10.0.0.0.
 
-    (Why a four-part version number? Learn about versioning schemes in [Update requirements](https://msdn.microsoft.com/library/dn757525).)
+    (Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile-update/update-requirements.md).)
 
 3.  Install OEM test certificates. You'll use these to sign your test binaries.
 

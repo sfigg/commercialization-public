@@ -141,7 +141,7 @@ Open a TFS update request:
 ## <span id="Cancelling_RFUs"></span><span id="cancelling_rfus"></span><span id="CANCELLING_RFUS"></span>Cancelling RFUs
 
 
-RFUs in preview do not need to be manually canceled when replacing with same baseline. Auto-ingestion will cancel the ‘replaced’ RFU on a best-effort basis when the new firmware update goes live into preview. For canceling RFUs that are live in preview, use the [Request-UpdateCancellation cmdlet](https://msdn.microsoft.com/library/dn946525). For canceling RFUs that are already live in production:
+RFUs in preview do not need to be manually canceled when replacing with same baseline. Auto-ingestion will cancel the ‘replaced’ RFU on a best-effort basis when the new firmware update goes live into preview. For canceling RFUs that are live in preview, use the [Request-UpdateCancellation cmdlet](request-updatecancellation.md). For canceling RFUs that are already live in production:
 
 Open a TFS update request:
 

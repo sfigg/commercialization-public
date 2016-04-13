@@ -10,7 +10,7 @@ title: Enable or Disable Manufacturing Mode
 
 If you want to test Manufacturing Mode, you can enable it by using ffutool.exe or by using a BCD setting.
 
-**Note**  The recommended way to support manufacturing mode on shipping devices is to have the firmware support the Boot mode management UEFI protocol. For more info on this protocol, see [Boot mode management UEFI protocol](https://msdn.microsoft.com/library/windows/hardware/dn925274).
+**Note**  The recommended way to support manufacturing mode on shipping devices is to have the firmware support the Boot mode management UEFI protocol. For more info on this protocol, see [Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md).
 
  
 
@@ -23,7 +23,7 @@ If the device supports the boot mode UEFI protocol, you can enable or disable Ma
 ffutool.exe -setBootMode <boot mode> <profile name>
 ```
 
--   *boot mode* -- an integer that corresponds to the boot mode documented in [EFI\_BOOT\_MODE\_INFO enumeration](https://msdn.microsoft.com/library/windows/hardware/dn925276).
+-   *boot mode* -- an integer that corresponds to the boot mode documented in [EFI\_BOOT\_MODE\_INFO enumeration](efi-boot-mode-info-enumeration.md).
 -   *profile name* -- the name of the manufacturing profile to enable. This is required when the boot mode is set to 1 and is ignored when the boot mode is set to 0.
 
 The following example enables Manufacturing Mode and uses a manufacturing profile named CustomProfile:
