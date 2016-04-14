@@ -124,6 +124,13 @@ The goal for Windows 10 Mobile is that partners are successful in establishing 
 
 Final retail images must be configured to meet a set of security requirements. To help OEMs ensure that their retail images meet these requirements, Windows 10 Mobile automatically checks for some of these requirements during first boot. Other requirements must be verified by OEMs.
 
+## <span id="Mobile_deployment_and_imaging"></span><span id="mobile_deployment_and_imaging"></span><span id="MOBILE_DEPLOYMENT_AND_IMAGING"></span>Mobile deployment and imaging
+
+
+Getting ready to build and test Windows 10 for mobile editions? Here's a lab that walks through building new mobile devices and customizing them to meet your customers' needs.
+
+-   [Mobile deployment and imaging](mobile-deployment-and-imaging.md)
+
 ## <span id="Manufacturing_mode_of_the_full_operating_system"></span><span id="manufacturing_mode_of_the_full_operating_system"></span><span id="MANUFACTURING_MODE_OF_THE_FULL_OPERATING_SYSTEM"></span>Manufacturing mode of the full operating system
 
 
