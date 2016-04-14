@@ -336,7 +336,7 @@
 #### [Lab 1b: Add an app to your image](manufacture/iot/deploy-your-app-with-a-standard-board.md)
 #### [Lab 1c: Add a file and a registry setting to an image](manufacture/iot/add-a-registry-setting-to-an-image.md)
 #### [Lab 1d: Add a provisioning package to an image](manufacture/iot/add-a-provisioning-package-to-an-image.md)
-#### [Lab 1e: Build a retail image](build-retail-image.md): Convert your test image to a retail image.
+#### [Lab 1e: Build a retail image](manufacture/iot/build-retail-image.md)
 ### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
 ### [Command-line options to manufacture IoT Core images](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
@@ -347,7 +347,7 @@
 
 # [Service](service/index.md)
 
-## [Mobile update](service/mobile/update.md)
+## [Mobile servicing and updates](service/mobile/index.md)
 ### [Update requirements](service/mobile/update-requirements.md)
 ### [Test an update](service/mobile/test-an-update.md)
 ### [Submit an update](service/mobile/submit-an-update.md)
@@ -372,7 +372,7 @@
 #### [Get-RequestForUpdate cmdlet](service/mobile/get-requestforupdate-cmdlet.md)
 #### [Request-UpdateCancellation cmdlet](service/mobile/request-updatecancellation.md)
 
-## [Mobile device refurbishment](service/mobile/indexrefurbish-a-mobile-device-portal.md)
+## [Mobile device refurbishment](service/mobile/refurbish-a-mobile-device-portal.md)
 ### [Resetting a mobile device](service/mobile/resetting-the-phone.md)
 ## [Upgrade Windows Embedded devices to Windows 10](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 

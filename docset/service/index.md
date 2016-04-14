@@ -11,7 +11,7 @@ title: Service
 ## <span id="purpose"></span>Purpose
 
 
-Send updates, refresh, or refurbish your after-market devices.
+Update, refresh, or refurbish your after-market devices.
 
 <table>
 <colgroup>

@@ -62,7 +62,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
          <Feature>IOT_APP_TOOLKIT</Feature> 
         </Microsoft>
        </Features>
-
+    ```
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 
@@ -89,7 +89,7 @@ With retail builds, you won't be able to log into the device using the SSH clien
 
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
-** Congratulations! **
+**Congratulations!**
 That's it for the first lab. 
 
 <!--From here, you can continue on to:
