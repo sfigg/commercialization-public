@@ -27,7 +27,7 @@ You can now choose to add only core language pack UI resources to your image, si
 
 To preload Cortana features, add the following features on demand: UI text (lp.cab), the Basic, Text-to-Speech, and Speech language components.
 
-**Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](../sxs/install-windows-automatically-from-a-usb-drive-sxs.md).
+**Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](install-windows-automatically-from-a-usb-drive-sxs.md).
 
  
 
