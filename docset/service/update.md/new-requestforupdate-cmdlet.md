@@ -393,7 +393,7 @@ PS C:\Windows\system32>
 
 [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223)
 
-[Request-UpdateCancellation](request-updatecancellation.md)
+[Request-UpdateCancellation](https://msdn.microsoft.com/library/dn946525)
 
  
 

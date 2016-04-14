@@ -2,10 +2,10 @@
 Description: 'We''re now going to take an app (like the sample Hello, World! app), and package it up so that it can be serviced after it reaches your customers.'
 MS-HAID: 'p\_iot\_core.deploy\_your\_app\_with\_a\_standard\_board'
 MSHAttr: 'PreferredLib:/library'
-title: 'Step 2: Add an app to your image'
+title: 'Lab 1b: Add an app to your image'
 ---
 
-# Step 2: Add an app to your image
+# Lab 1b: Add an app to your image
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
@@ -31,7 +31,7 @@ Finally, we'll rebuild the project and make sure it works.
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-We'll use the ProjectA image we created from [Step 1: Create a basic image](create-a-basic-image.md).
+We'll use the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
 
 ## <span id="Create_and_test_an_Windows_app"></span><span id="create_and_test_an_windows_app"></span><span id="CREATE_AND_TEST_AN_WINDOWS_APP"></span>Create and test an Windows app
 
@@ -268,7 +268,7 @@ Great, your app works! Now let's package it up so you can maintain your app even
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-[Step 3: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
+[Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
 
  
 

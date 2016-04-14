@@ -29,7 +29,7 @@ Use the topics in this section to learn more about servicing a device running Wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[IoT Core Update](iot-core-update.md)</p></td>
+<td align="left"><p>[IoT Core OS and OEM Updates](iot-core-update.md)</p></td>
 <td align="left"><p>IoT Core devices will automatically receive OS updates via Windows Update when connected to the internet.</p></td>
 </tr>
 <tr class="even">

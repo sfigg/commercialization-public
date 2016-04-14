@@ -23,7 +23,7 @@ The topics in this section review concepts and considerations that you may need 
 ## <span id="related_topics"></span>Related topics
 
 
-[Update](update.md)
+[Update](index.md)
 
  
 

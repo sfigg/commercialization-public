@@ -8,7 +8,7 @@ title: Updates and resetting the device
 # Updates and resetting the device
 
 
-OEMs must consider how updates are affected when the user resets the device. To understand the fundamentals of how resetting the device alters the operating system, carefully review [Resetting the device](../../manufacture/mobile/resetting-a-phone-during-manufacturing.md).
+OEMs must consider how updates are affected when the user resets the device. To understand the fundamentals of how resetting the device alters the operating system, carefully review [Resetting the device](https://msdn.microsoft.com/library/windows/hardware/dn772062).
 
 ## <span id="OS_and_BSP_updates"></span><span id="os_and_bsp_updates"></span><span id="OS_AND_BSP_UPDATES"></span>OS and BSP updates
 
@@ -35,7 +35,7 @@ Any user-installed Store apps and associated data are removed when the device is
 ## <span id="related_topics"></span>Related topics
 
 
-[Update](update.md)
+[Update](index.md)
 
  
 

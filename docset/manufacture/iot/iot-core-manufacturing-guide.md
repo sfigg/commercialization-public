@@ -23,10 +23,11 @@ This guide is written toward OEMs, but ODMs and developers can use the same proc
 
 Want to jump right in? Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md), and then try out our scenarios.
 
--   [Step 1: Create a basic image](create-a-basic-image.md): Make sure the tools you installed work, and load the basic IoT Core image onto a test device. While you're here, learn about the tools built into the basic image.
--   [Step 2: Add an app to your image](deploy-your-app-with-a-standard-board.md): Take one of our sample apps, package it up, make a fresh image, and load it onto the device.
--   [Step 3: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
--   [Step 4: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings such as presetting Wi-Fi.
+-   [Lab 1a: Create a basic image](create-a-basic-image.md): Make sure the tools you installed work, and load the basic IoT Core image onto a test device. While you're here, learn about the tools built into the basic image.
+-   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md): Take one of our sample apps, package it up, make a fresh image, and load it onto the device.
+-   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
+-   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings, for example, set up Wi-Fi.
+-   [Lab 1e: Build a retail image](build-retail-image.md): Convert your test image to a retail image.
 
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
