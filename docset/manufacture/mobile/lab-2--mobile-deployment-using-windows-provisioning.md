@@ -3,6 +3,7 @@ Description: 'In this section, we''ll go through the process of customizing and 
 MS-HAID: 'p\_mobile\_deployment.lab\_2\_\_mobile\_deployment\_using\_windows\_provisioning'
 MSHAttr: 'PreferredLib:/library'
 title: 'Part 2: Mobile deployment using Windows Provisioning'
+author: CelesteDG
 ---
 
 # Part 2: Mobile deployment using Windows Provisioning
