@@ -28,9 +28,8 @@ C:\Windows\System32\cmd.exe /k "C:\IoT-ADK-AddonKit\Tools\LaunchTool.cmd"
 1.  In Windows Explorer, right-click the shortcut, and select **Properties**.
 2.  In the Shortcut tab, click **Advanced**, and check **Run as administrator** &gt; **OK** &gt; **Apply**.
 
-Once the IoTCoreShell is launched, run **setenv.cmd arm** or **setenv.cmd x86** to set the command line environment variables for a specific architecture.
+After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
 
-## <span id="SETENV.CMD"></span>setenv.cmd
 
 
 Usage: `setenv <arch>`
@@ -39,7 +38,7 @@ Parameters:
 
 -   `<arch>`: Architecture to be set. (`arm` or `x86`).
 
-Description: This command sets the following environment variables. Common variables used:
+Description: This command resets the following environment variables. Common variables used:
 
 -   **IOTADK\_ROOT**= The path where Windows IoT Core Addons are installed, for example, C:\\IoT-ADK-AddonKit
 -   **COMMON\_DIR**=%ADKADDONS\_ROOT%\\Common

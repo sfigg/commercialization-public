@@ -8,11 +8,11 @@ title: UEFI Validation Option ROM Guidance
 # UEFI Validation Option ROM Guidance
 
 
-**Vishal Manan, Architect, OEM Consulting**, <vmanan@microsoft.com>
+Vishal Manan, Architect, OEM Consulting, <vmanan@microsoft.com>
 
-**Jeremiah Cox, Sr. SDET, Windows Security & Identity Team**, [jerecox@microsoft.com](mailto:%20jerecox@microsoft.com)
+Jeremiah Cox, Sr. SDET, Windows Security & Identity Team, [jerecox@microsoft.com](mailto:%20jerecox@microsoft.com)
 
-**Tony Lin, Engineering Service Engineer, TW-WIN Plan Ecosystem**, [tolin@microsoft.com](mailto:%20tolin@microsoft.com)
+Tony Lin, Engineering Service Engineer, TW-WIN Plan Ecosystem, [tolin@microsoft.com](mailto:%20tolin@microsoft.com)
 
 Version 1.3
 

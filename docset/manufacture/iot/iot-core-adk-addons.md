@@ -10,16 +10,19 @@ title: 'Windows ADK IoT Core Add-ons'
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
 
-The [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.
+The [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include OEM-specific tools to help you create new images for your devices with Windows apps, board support packages (BSPs), drivers, and features that you choose.
+
+The [IoT Core manufacturing guide](iot-core-adk-addons.md) walks you through building images with these tools.
 
 ## <span id="Folder_structure_"></span><span id="folder_structure_"></span><span id="FOLDER_STRUCTURE_"></span>Folder structure:
 
 
--   Tools (\\Tools)
--   Common files (\\Common), includes packages common to all architectures
--   Source files (\\Source-x86, \\Source-arm), includes packages specific to x86 or arm devices.
--   Templates (\\Templates), a directory with product template files.
--   Build folder (\\Build). You can use this folder to store your built binaries. It starts out empty.
+-   **IoTCoreShell**: Shortcut to launch the IoT Core Shell.
+-   **Tools** (\\Tools)
+-   **Common files** (\\Common), includes packages common to all architectures
+-   **Source files** (\\Source-x86, \\Source-arm), includes packages specific to x86 or arm devices.
+-   **Templates** (\\Templates), a directory with product template files.
+-   **Build folder** (\\Build). You can use this folder to store your built binaries. It starts out empty.
 
 ## <span id="Tools"></span><span id="tools"></span><span id="TOOLS"></span>Tools
 
@@ -28,12 +31,11 @@ The [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink
 -   **createpkg**: Creates packages
 -   **createprovpkg**: Creates provisioning packages
 -   **createupdatepkgs**: Creates update packages
--   **IoTCoreShell**: Shortcut to launch the IoT Core Shell.
 -   **newproduct**: Creates a new product directory based on the template file.
 -   **newupdate**: Creates a new update directory based on the template file.
 -   **setenv**: Sets environment variables for your architecture (x86 or arm).
 -   **setversion**: Sets the version number of the packages you’re creating
--   **updateimage**: Updates an existing package with new updates
+<!--- -   **updateimage**: Updates an existing package with new updates -->
 
 This folder also contains scripts used to generate packages/images.
 

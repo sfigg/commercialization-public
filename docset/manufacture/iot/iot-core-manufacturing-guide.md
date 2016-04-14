@@ -2,17 +2,19 @@
 Description: 'This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after they have been delivered to your customers.'
 MS-HAID: 'p\_iot\_core.iot\_core\_manufacturing\_guide'
 MSHAttr: 'PreferredLib:/library'
-title: IoT Core manufacturing guides
+title: IoT Core manufacturing guide
 ---
 
-# IoT Core manufacturing guides
+# IoT Core manufacturing guide
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
 
-This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after they have been delivered to your customers.
+This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after you've sent them to your customers.
 
-To do this, we'll show you how to wrap your apps, files, settings, and drivers into packages. Packages help OEMs, ODMs, developers, and Microsoft all work together to deliver security and feature updates to your devices without stomping on each other's work.
+To do this, we'll start with a basic Windows 10 IoT Core image structure, provided by the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+
+We'll then show you how to wrap your apps, files, settings, and drivers into packages that can go into the image. Packages help OEMs, ODMs, developers, and Microsoft all work together to deliver security and feature updates to your devices without stomping on each other's work.
 
 This guide is written toward OEMs, but ODMs and developers can use the same processes to test IoT Core apps, drivers, board support packages (BSPs).
 
@@ -29,7 +31,7 @@ Want to jump right in? Start here: [Get the tools needed to customize Windows Io
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
 
-We'll use the samples in these guides to build the following structure for your images. You can use the same structure to build your retail images. In general terms:
+Here's the general steps we'll use. You can use the same structure to build your retail images. In general terms:
 
 1.  Add each of your customizations (drivers, apps, settings) into signed package files.
 2.  Create a summary list of these packages, called a feature manifest (FM), which lists your packages by feature name.
@@ -46,7 +48,6 @@ We'll use the samples in these guides to build the following structure for your 
 Packages are the logical building blocks of IoT Core. They contain all the files, libraries, registry settings, executables, and data on the device. From device drivers to system files, every component must be contained in a package. This modular architecture allows for precise control of updates: a package is the smallest serviceable unit on the device.
 
 Each package contains:
-
 -   The contents of the package, such as a signed driver binary or a signed appx binary.
 -   A package definition (.pkg.xml) file specifies the contents of the package and where they should be placed in the final image. See %SRC\_DIR%\\Packages\\ directory for various samples of package files.
 -   A signature. This can be a test or retail certificate.
