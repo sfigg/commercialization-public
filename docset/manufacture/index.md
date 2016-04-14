@@ -56,7 +56,7 @@ Use the manufacturing tools to deploy your Windows [customizations](../customize
 </tr>
 <tr class="even">
 <td align="left">[IoT Core manufacturing](iot/index.md)</td>
-<td align="left">Technical reference for Windows 10 Mobile</td>
+<td align="left">Technical reference for Windows 10 IoT Core</td>
 </tr>
 </tbody>
 </table>
