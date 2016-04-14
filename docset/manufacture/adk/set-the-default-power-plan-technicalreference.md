@@ -75,7 +75,7 @@ To modify a power plans on your own PC, see [Power Plans: Frequently asked quest
 
 [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md)
 
-[Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)
+[Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)
 
 [Power Policy Configuration and Deployment in Windows](http://go.microsoft.com/fwlink/p/?linkid=129584)
 

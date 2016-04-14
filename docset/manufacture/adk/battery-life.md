@@ -28,7 +28,7 @@ In this section, you will learn about managing battery life when you deploy Wind
 <td align="left"><p>Describes how to import a power plan and how to set a power plan to the active power plan.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)</p></td>
+<td align="left"><p>[Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)</p></td>
 <td align="left"><p>Describes how to create a power plan by using Control Panel, how to export the power plan, and how to import the power plan on a destination computer.</p></td>
 </tr>
 <tr class="even">

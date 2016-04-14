@@ -17,7 +17,7 @@ When you boot to audit mode, you log into the system using the built-in administ
 **Important**  
 -   If you are in audit mode and a password-protected screen saver starts, you cannot log back on to the system. The built-in administrator account that was used to log on to audit mode is immediately disabled after logon.
 
-    To disable the screen saver, either change the power plan through Control Panel or configure and deploy a custom plan. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md).
+    To disable the screen saver, either change the power plan through Control Panel or configure and deploy a custom plan. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md).
 
 -   Settings in an unattended answer file from the [oobeSystem](oobesystem.md) configuration pass do not appear in audit mode.
 

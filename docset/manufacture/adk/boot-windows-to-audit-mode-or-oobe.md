@@ -10,7 +10,7 @@ title: Boot Windows to Audit Mode or OOBE
 
 You can use audit mode to customize your computer, add applications and device drivers, and test your computer in a Windows environment. Booting to audit mode starts the computer in the built-in administrator account. Windows® removes this account automatically during the [generalize](generalize.md) configuration pass. After you configure a computer to boot to audit mode, the computer will continue to boot to audit mode by default until you configure the computer to boot to Out-Of-Box Experience (OOBE) when the computer ships to the user.
 
-If a password-protected screen saver starts when you are in audit mode, you cannot log back on to the system. The built-in administrator account that is used to log on to audit mode is immediately disabled after logon. To disable the screen saver, either change the power plan through Windows Control Panel or configure and deploy a custom plan. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md).
+If a password-protected screen saver starts when you are in audit mode, you cannot log back on to the system. The built-in administrator account that is used to log on to audit mode is immediately disabled after logon. To disable the screen saver, either change the power plan through Windows Control Panel or configure and deploy a custom plan. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md).
 
 In this topic:
 
