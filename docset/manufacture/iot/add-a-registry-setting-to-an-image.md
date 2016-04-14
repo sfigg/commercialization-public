@@ -12,7 +12,7 @@ title: 'Step 3: Add a file and a registry setting to an image'
 
 We'll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.
 
-We'll add these to a common feature manifest (OEMCommonFM.xml), which is common between the x86 and ARM folders, and give it a new feature ID, OEM\_FileAndRegKey.
+We'll add these to a common feature manifest (OEMCommonFM.xml), which is used in both your x86 and ARM builds. Give it a new feature ID, OEM\_FileAndRegKey.
 
 To add the features to the image, we'll go to our Product A, add our Feature Manifest and Feature ID. We're also going to add a helper app, which is listed in feature manifest: OEMCommonFM.xml, with the ID: OEM\_CustomCmd.
 
@@ -48,7 +48,7 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
 
 3.  In File Explorer, move this folder from the **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\** folder to the **C:\\IoT-ADK-AddonKit\\Common\\Packages\\** folder.
 
-    This step is recommended when you're building both ARM and x86 devices, and you're creating packages that aren't architecture-specific. This lets you reference the new package from any product that you build.
+    We recommend doing this whenever you're adding files or settings that are not architecture-specific. This lets you use your new package for both your ARM and x86 projects.
 
 **Add sample files to the package**
 
@@ -58,7 +58,11 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
 
     Update the values of RegKey to include a new KeyName, Name, and Value.
 
-    Update the File Source and DestinationDir.
+    Update the File Source using the $(COMDIR) variable to refer to the Common folder.
+    
+    Optional: update the DestinationDir using the $(runtime.root) to refer to your device's main (C:\) drive.  If you don't include a DestinationDir (like in the first example), the file lands in the default folder, C:\\Windows\\system32\\.
+    
+    These variables are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -82,8 +86,8 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
               </RegKeys>   
              <Files>
              <!-- Specify your files for inclusion here -->
-                 <File Source="$(COMMON_DIR)\Packages\File.TestFileAndRegKey\TestFile1.txt" /> <!-- destination for this is default windows/system32-->
-                 <File Source="$(COMMON_DIR)\Packages\File.TestFileAndRegKey\TestFile2.txt"
+                 <File Source="$(COMDIR)\Packages\File.TestFileAndRegKey\TestFile1.txt" /> <!-- destination for this is default windows/system32-->
+                 <File Source="$(COMDIR)\Packages\File.TestFileAndRegKey\TestFile2.txt"
                     DestinationDir="$(runtime.root)\OEMInstall" Name="filename2.txt"/>            
             </Files>
            </OSComponent>
@@ -91,19 +95,16 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
      </Package>
     ```
 
-    If you include a DestinationDir, it must include the pre-defined macro locations, DestinationDir="$(runtime.root)\\....", which is defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
-
-    If you don't include a DestinationDir (like in the first example), the file lands in the default folder, C:\\Windows\\system32\\.
 
 2.  From the IoT Core Shell, build the package. (The BuildAllPackages tool builds everything in the source folders.)
 
     ``` syntax
-    buildallpackages
+    createpkg c:\IoT-ADK-AddonKit\Common\Packages\File.TestFileAndRegKey\TestFileAndRegKey.pkg.xml
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.File.TestFileAndRegKey.cab**.
 
-    Yes, this is still showing up in the architecture-specific folder. It's the default behavior for the BuildAllPackages script to build everything into this folder for your architecture-specific images.
+    All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for the other architecture, use **setenv &lt;arch&gt;**, then **BuildAllPackages** to rebuild everything for your other architecture.
 
 ## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
 
@@ -192,20 +193,20 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
 1.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
 
     ``` syntax
-    \\192.168.0.100\c$
+    \\10.100.0.100\c$
     ```
 
     When prompted, type in the username. The default username is: minwinpc\\administrator and the default password is p@ssw0rd.
 
 2.  Check to see if the files exist. Look for:
 
-    &lt;drive&gt;:\\Windows\\system32\\TestFile1.txt
+    \\\\10.100.0.100\c$\\Windows\\system32\\TestFile1.txt
 
-    &lt;drive&gt;:\\OEMRoot\\TestFile2.txt
+    \\\\10.100.0.100\c$\\OEMInstall\\TestFile2.txt
 
 **Check to see if your reg key exists**
 
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](http://ms-iot.github.io/content/en-US/win10/samples/SSH.md).)
+1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](http://ms-iot.github.io/content/en-US/win10/samples/SSH.md).)
 2.  From the command line in the SSH client, query the system for the reg key.
 
     ``` syntax

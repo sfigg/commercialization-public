@@ -31,7 +31,7 @@ Finally, we'll rebuild the project and make sure it works.
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-We'll start with the ProjectA image we created from [Step 1: Create a basic image](create-a-basic-image.md).
+We'll use the ProjectA image we created from [Step 1: Create a basic image](create-a-basic-image.md).
 
 ## <span id="Create_and_test_an_Windows_app"></span><span id="create_and_test_an_windows_app"></span><span id="CREATE_AND_TEST_AN_WINDOWS_APP"></span>Create and test an Windows app
 
@@ -45,14 +45,14 @@ First, create an app. This can be any app designed for IoT Core, such as the [He
 3.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
 
     ``` syntax
-    http://192.168.0.100:8080
+    http://100.100.0.100:8080
     ```
 
     This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 4.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
 
-**Upload the app**
+**Test the app by installing it**
 
 1.  Click on **Apps**.
 2.  Under **Install app**, under **App package**, click **Browse**, and select your .appx file.
@@ -70,9 +70,19 @@ Great, your app works! Now let's package it up so you can maintain your app even
 ## <span id="Package_the_app"></span><span id="package_the_app"></span><span id="PACKAGE_THE_APP"></span>Package the app
 
 
+
+
 **Create an package for an app**
 
 1.  Open **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+2.  Build all of the existing packages in your app (one-time only): 
+
+    ``` syntax
+    buildallpackages
+    ```
+
+    This command builds all of the packages in our source folders, including a few packages that we've created to help install your app.
+
 2.  Create a working folder for the app, for example:
 
     ``` syntax
@@ -115,7 +125,7 @@ Great, your app works! Now let's package it up so you can maintain your app even
 6.  From the IoT Core Shell, build the package.
 
     ``` syntax
-    createpkg C:\IoT-ADK-AddonKit\Source-<arch>\Packages\File.TestFileAndRegKey\File.TestFileAndRegKey.pkg.xml
+    createpkg C:\IoT-ADK-AddonKit\Source-<arch>\Packages\Appx.HelloWorld\Appx.HelloWorld.pkg.xml
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Appx.HelloWorld.cab**.

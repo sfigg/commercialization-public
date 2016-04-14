@@ -32,9 +32,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 **Start the IoT Core shell, choose your architecture, and install test certificates**
 
-1.  In Windows Explorer, navigate to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit\\Tools**. Right-click **IoTCoreShell**, and select **Run as administrator**.
-
-    (To set this program to always run as an administrator, right-click the tool, click **Properties &gt; Advanced &gt; Run as administrator**.)
+1.  In Windows Explorer, navigate to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**. Right-click **IoTCoreShell**, and select **Run as administrator**.
 
     The new value for OEM\_NAME should appear when you start the tool.
 
