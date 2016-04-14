@@ -32,7 +32,7 @@ Use the manufacturing tools to deploy your Windows [customizations](../customize
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-Windows-10-for-desktop-editions.md)</td>
+<td align="left">[OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-windows-10-for-desktop-editions.md)</td>
 <td align="left">This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting.
 </td>
 </tr>
@@ -49,10 +49,6 @@ Use the manufacturing tools to deploy your Windows [customizations](../customize
 <tr class="even">
 <td align="left">[Desktop manufacturing](desktop/windows-deployment-tools-technical-reference.md)</td>
 <td align="left">Technical reference for Windows 10 for desktop editions</td>
-</tr>
-<tr class="odd">
-<td align="left">[Customize and Deploy Windows Server Essentials in Windows 10](desktop/customize-and-deploy-windows-server-essentials-in-windows-10-wse-adk.md)</td>
-<td align="left">Technical reference for Windows Server 2016 Technical Preview</td>
 </tr>
 <tr class="even">
 <td align="left">[Mobile manufacturing](mobile/manufacturing.md)</td>
