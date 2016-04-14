@@ -178,7 +178,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>lp.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](../adk/available-language-packs-for-windows.md).</td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
 <tr class="odd">
@@ -193,7 +193,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](../adk/features-on-demand-v2--capabilities.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -236,7 +236,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
     The language components should appear in the **Selected customizations** pane.
 
 6.  Repeat the steps to add the **Text-to-Speech** and **Speech** components. The language components should appear in the **Selected customizations** pane.
-7.  For languages that require fonts, such as Chinese (Simplified), add the font pack. To learn which languages require fonts, see [Features On Demand V2 (Capabilities)](../adk/features-on-demand-v2--capabilities.md).
+7.  For languages that require fonts, such as Chinese (Simplified), add the font pack. To learn which languages require fonts, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).
 
     In the middle pane, next to **Cab File**, click **Browse**. Browse to the FOD file, for example: **C:\\Samples\\Languages\\zh-cn x64-client**, click **Microsoft-Windows-LanguageFeatures-Fonts-Hans-Package.cab**, and then click **Open**.
 
@@ -254,7 +254,7 @@ In addition, to enable Cortana or for pen support, features need to be added in 
 ## <span id="buildUSBKey"></span><span id="buildusbkey"></span><span id="BUILDUSBKEY"></span>Step 8: Save the image
 
 
-Windows ICD can store the entire image into a single .FFU file. The FFU format was developed for [faster, safer deployment](../adk/wim-vs-ffu-image-file-formats.md) by using sector-based imaging and security headers.
+Windows ICD can store the entire image into a single .FFU file. The FFU format was developed for [faster, safer deployment](wim-vs-ffu-image-file-formats.md) by using sector-based imaging and security headers.
 
 1.  Click **Create** &gt; **Production media**.
 2.  Select **FFU** &gt; **Next**.

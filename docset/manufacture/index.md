@@ -32,26 +32,26 @@ Use the manufacturing tools to deploy your Windows [customizations](../customize
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[OEM deployment of Windows 10 for desktop editions](sxs/oem-deployment-of-Windows-10-for-desktop-editions.md)</td>
+<td align="left">[OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-Windows-10-for-desktop-editions.md)</td>
 <td align="left">This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting.
 </td>
 </tr>
 <tr class="even">
-<td align="left">[System builder deployment of Windows 10 for desktop editions](sxs/system-builder-deployment-of-windows-10-for-desktop-editions.md)</td>
+<td align="left">[System builder deployment of Windows 10 for desktop editions](desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)</td>
 <td align="left">Learn how to deploy Windows 10 desktop, including online and offline customizations, and optional steps for specific scenarios. This guide is intended to help system builders with both 64-bit and 32-bit configurations.</td>
 </tr>
 <tr class="odd">
-<td align="left">[OEM Windows Desktop Deployment and Imaging Lab](sxs/oem-windows-deployment-and-imaging-walkthrough.md)</td>
+<td align="left">[OEM Windows Desktop Deployment and Imaging Lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md)</td>
 <td align="left"><p>Building your first devices with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)?</p>
 <p>Want to learn strategies to save time on the factory floor?</p>
 <p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[Desktop manufacturing](adk/windows-deployment-tools-technical-reference.md)</td>
+<td align="left">[Desktop manufacturing](desktop/windows-deployment-tools-technical-reference.md)</td>
 <td align="left">Technical reference for Windows 10 for desktop editions</td>
 </tr>
 <tr class="odd">
-<td align="left">[Customize and Deploy Windows Server Essentials in Windows 10](security-essentials/customize-and-deploy-windows-server-essentials-in-windows-10-wse-adk.md)</td>
+<td align="left">[Customize and Deploy Windows Server Essentials in Windows 10](desktop/customize-and-deploy-windows-server-essentials-in-windows-10-wse-adk.md)</td>
 <td align="left">Technical reference for Windows Server 2016 Technical Preview</td>
 </tr>
 <tr class="even">

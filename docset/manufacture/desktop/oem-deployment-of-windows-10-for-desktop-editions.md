@@ -34,7 +34,7 @@ This guide is organized around three hardware and software configurations.
 | Office 2016                  | No           | Yes          | Yes          |
 | Compact OS                   | Yes          | Yes          | No           |
 
-Many of the tools and deployment techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WIMBoot and replaced it with [Compact OS](../adk/compact-os.md). 
+Many of the tools and deployment techniques are the same as those used for Windows 8.1. Windows 10 has deprecated WIMBoot and replaced it with [Compact OS](compact-os.md). 
 
 ### OEM Activation 3.0
 
@@ -678,7 +678,7 @@ OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\Answ
 
 #### Adding LPs / LIPs / FoDs / GDRs
 
-The following table lists language pack components and any dependencies. For more information, see [Language packs](../adk/language-packs--lpcab--and-windows-deployment.md) and [Feature on Demand (FoD)](../adk/features-on-demand-v2--capabilities.md).
+The following table lists language pack components and any dependencies. For more information, see [Language packs](language-packs--lpcab--and-windows-deployment.md) and [Feature on Demand (FoD)](features-on-demand-v2--capabilities.md).
 
 
 <table border="1" cellpadding="0">
@@ -740,7 +740,7 @@ The following table lists language pack components and any dependencies. For mor
             </td>
             <td>
                 <p>
-Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see                    <a href="../adk/available-language-packs-for-windows.md">Available Language Packs for Windows</a>.
+Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see                    <a href="available-language-packs-for-windows.md">Available Language Packs for Windows</a>.
                 </p>
             </td>
             <td>
@@ -801,7 +801,7 @@ Requires a specific fully-localized or partially-localized language pack. Exampl
                     Fonts.
                 </p>
                 <p>
-Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see                    <a href="../adk/features-on-demand-v2--capabilities.md">Features On Demand V2 (Capabilities)</a>.
+Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see                    <a href="features-on-demand-v2--capabilities.md">Features On Demand V2 (Capabilities)</a>.
                 </p>
             </td>
         </tr>
@@ -1284,7 +1284,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 2.  Name each folder under C:\mount\windows\Windows\System32\oobe\info\default\ directory as the **Language Decimal Identifier** corresponding the language. Do this step for each language pack added to the Windows image.
 
-    For the complete list of language decimal identifiers of corresponding languages, see [Available Language Packs for Windows](../adk/available-language-packs-for-windows.md).
+    For the complete list of language decimal identifiers of corresponding languages, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
 
     For example, if en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) under C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (representing de-de language) under the same directory.
 
@@ -1380,7 +1380,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
     Use the following partition layout size guidance to determine the size of your recovery partition in createartitions-&lt;firmware&gt;.txt files. The amount of free space left is after you copy winre.wim to the hidden partition.
 
-    Please reference [Disk Partition rules](../adk/configure-uefigpt-based-hard-drive-partitions.md#DiskPartitionRules) for more information.
+    Please reference [Disk Partition rules](configure-uefigpt-based-hard-drive-partitions.md#DiskPartitionRules) for more information.
 
     -   If the partition is less than 500 MB, it must have at least 50 MB of free space.
 
@@ -1433,7 +1433,7 @@ E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
 
 There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](../adk/compact-os.md).
+Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
 
 After the computer boots to the OOBE screen, press this key combination to boot into Audit mode:
 
@@ -1704,9 +1704,9 @@ The following Push-button reset features are available to users with Windows 10 
     Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
 
 For more information, see:
-- [Push-button reset](../adk/push-button-reset-overview.md)
-- [Windows Recovery Environment (Windows RE)](../adk/windows-recovery-environment--windows-re--technical-reference.md)
-- [Hard Drives and Partitions](../adk/hard-drives-and-partitions.md)
+- [Push-button reset](push-button-reset-overview.md)
+- [Windows Recovery Environment (Windows RE)](windows-recovery-environment--windows-re--technical-reference.md)
+- [Hard Drives and Partitions](hard-drives-and-partitions.md)
 
 #### Prepare ScanState tool 
 
@@ -1910,7 +1910,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
 Only do this step if you are deploying to limited storage device. Single instance will impact the launch performance of some desktop applications.
 
-Please reference [Compact OS](../adk/compact-os.md) for more information.
+Please reference [Compact OS](compact-os.md) for more information.
 
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\apps.ppkg /ImagePath:C:\ /SingleInstance
 
@@ -2062,7 +2062,7 @@ Choose **Option 1** to create the recovery media the same as the manufacturing i
 
     ![Recovery screen](images\recovery-screen.png)
 
-For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](../adk/create-media-to-run-push-button-reset-features-s14.md).
+For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md).
 
 #### Option 2: Create recovery media from the base Windows 10 OPK
 

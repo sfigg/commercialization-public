@@ -328,7 +328,7 @@ This property must be added to USB-B\AnswerFiles\UnattendSysprep.xml during gene
 
 Obtain the Windows 10 Language Interface Packs from [OEM Partner Center](https://www.microsoft.com/OEM/en/installation/downloads/Pages/Windows-10-v1511-Language-Interface-Packs.aspx#fbid=nV7H02bHHiv) under the **LIPs** tab.
 
-For more information about LIPs, see [Add Language Interface Packs to Windows 10](../adk/add-language-interface-packs-to-windows.md).
+For more information about LIPs, see [Add Language Interface Packs to Windows 10](add-language-interface-packs-to-windows.md).
 
 **Important: LIP Versions must match other Windows component versions, for both the image and the ADK.**
 
@@ -547,7 +547,7 @@ Where E:\ is USB-B.
 
     Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-1.  Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](../adk/compact-os.md).
+1.  Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
 
     Remove USB-A and USB-B, and then type:
 
@@ -702,7 +702,7 @@ Download Microsoft Office Single Image v15.4 from the [OEM Partner Center](http:
 
 ### Prepare the system for recovery with push button reset
 
-Please reference [Push-button reset](../adk/push-button-reset-overview.md) and [Windows Recovery Environment (Windows RE)](../adk/windows-recovery-environment--windows-re--technical-reference.md) and [Hard Drives and Partitions](../adk/hard-drives-and-partitions.md) for more information.
+Please reference [Push-button reset](push-button-reset-overview.md) and [Windows Recovery Environment (Windows RE)](windows-recovery-environment--windows-re--technical-reference.md) and [Hard Drives and Partitions](hard-drives-and-partitions.md) for more information.
 
 1.  Prepare the ScanState tool.
 
@@ -830,7 +830,7 @@ E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
 
 Note: There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](../adk/compact-os.md).
+Note: Only use Compact OS on high end storage devices because Compact OS performance depends on the storage device capabilities. Compact OS is NOT recommend on rotational devices or storage greater than 32 GB. For more information, see [Compact OS](compact-os.md).
 
 Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 

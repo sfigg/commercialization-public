@@ -25,13 +25,13 @@ You canspecify which configuration pass to add new settings:
 -   **4 specialize**: Most settings should be added here. These settings are triggered both at the beginning of audit mode and at the beginning of OOBE. If you need to make multiple updates or test settings, generalize the device again and add another batch of settings in the Specialize Configuration pass.
 -   **6 auditUser**: Runs as soon as you start audit mode.
 
-    This is a great time to run a system test script - we'll add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) as our example. To learn more, see [Add a Custom Script to Windows Setup](../adk/add-a-custom-script-to-windows-setup.md).
+    This is a great time to run a system test script - we'll add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) as our example. To learn more, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
 
 -   **7 oobeSystem**: Use sparingly. Most of these settings run after the user completes OOBE. The exception is the Microsoft-Windows-Deployment\\Reseal\\[Mode](https://msdn.microsoft.com/library/windows/hardware/dn923110) = Audit setting, which we’ll use to bypass OOBE and boot the PC into audit mode.
 
     If your script relies on knowing which language the user selects during OOBE, you’d add it to the oobeSystem pass.
 
--   For info on the other configuration passes, see [Windows Setup Configuration Passes](../adk/windows-setup-configuration-passes.md).
+-   For info on the other configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
 **Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts](windows-deployment-sample-scripts-sxs.md): Keeping Windows settings through a recovery.
 
