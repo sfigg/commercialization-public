@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Approve an update
 MS-HAID: 'p\_phUpdate.approve\_an\_update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

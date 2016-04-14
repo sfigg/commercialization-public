@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Use the topics in this section to learn more about refurbishing a mobile device running Windows 10 Mobile.'
 MS-HAID: 'p\_phRefurb.refurbish\_a\_mobile\_device\_portal'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

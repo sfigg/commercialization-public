@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Get-RequestForUpdate cmdlet'
 MS-HAID: 'p\_phUpdate.get\_requestforupdate\_cmdlet'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

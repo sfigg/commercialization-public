@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Submit an update
 MS-HAID: 'p\_phUpdate.submit\_an\_update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

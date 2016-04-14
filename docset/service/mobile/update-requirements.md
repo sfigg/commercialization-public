@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Update requirements
 MS-HAID: 'p\_phUpdate.update\_requirements'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

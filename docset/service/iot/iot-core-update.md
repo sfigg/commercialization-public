@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Windows 10 IoT Core (IoT Core) devices will automatically receive OS updates via Windows Update when connected to the internet.'
 MS-HAID: 'p\_iotservice.iot\_core\_update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Ingestion Client for Windows Phone
 MS-HAID: 'p\_phUpdate.ingestion\_client\_for\_windows\_phone'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

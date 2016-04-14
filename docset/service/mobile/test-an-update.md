@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Test an update
 MS-HAID: 'p\_phUpdate.test\_an\_update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

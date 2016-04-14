@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'OEM and enterprise customers using Windows 10 IoT Core Pro (IoT Core Pro) can take advantage of device management configuration service providers (CSPs) that allow some control over the device update process.'
 MS-HAID: 'p\_iotservice.managing\_iot\_device\_update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
