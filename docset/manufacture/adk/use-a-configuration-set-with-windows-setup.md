@@ -12,7 +12,7 @@ Use a configuration set to add applications, drivers, packages, scripts, files a
 
 To use a configuration set, you need the following:
 
--   A configuration set. For more information, see [Create a Configuration Set](p_wsim.create_a_configuration_set_win8).
+-   A configuration set. For more information, see [Create a Configuration Set](https://msdn.microsoft.com/library/windows/hardware/dn915081).
 
 -   A Windows product DVD.
 
@@ -74,7 +74,7 @@ To use a configuration set, you need the following:
 
 [Windows Setup Technical Reference](windows-setup-technical-reference.md)
 
-[Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8)
+[Add a Custom Command to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915058)
 
 [Boot from a DVD](boot-from-a-dvd.md)
 

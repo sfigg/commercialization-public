@@ -58,7 +58,7 @@ Returns one of the following status codes:
 ## <span id="related_topics"></span>Related topics
 
 
-[Boot mode management UEFI protocol](https://msdn.microsoft.com/library/windows/hardware/dn925274)
+[Boot mode management UEFI protocol](boot-mode-management-uefi-protocol.md)
 
  
 

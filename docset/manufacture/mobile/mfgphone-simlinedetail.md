@@ -8,7 +8,7 @@ title: 'MFGPHONE\_SIMLINEDETAIL structure'
 # MFGPHONE\_SIMLINEDETAIL structure
 
 
-Provides information about a particular SIM-based phone line. This **struct** is retrieved via the [**MfgPhoneGetSimLineDetail**](https://msdn.microsoft.com/library/windows/hardware/mt715527) function.
+Provides information about a particular SIM-based phone line. This **struct** is retrieved via the [**MfgPhoneGetSimLineDetail**](mfgphonegetsimlinedetail.md) function.
 
 **MFGPHONE\_SIMLINEDETAIL** iis for phone manufacturers and can only be called in Manufacturing Mode.
 

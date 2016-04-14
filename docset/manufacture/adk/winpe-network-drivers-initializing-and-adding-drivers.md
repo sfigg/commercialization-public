@@ -42,7 +42,7 @@ Connecting to an IPv4 network from Windows PE on an IPv6 network is not supporte
 
 **To connect to a wired network using 802.1x authentication protocols**
 
-1.  Create a custom Windows PE image that includes the **WinPE-Dot3Svc** optional component. For info on creating a custom image, see [Customize Windows PE: Add drivers, packages, and more](db2d36f7-4d9a-4836-aeb1-b2189731a09b).
+1.  Create a custom Windows PE image that includes the **WinPE-Dot3Svc** optional component.
 
 2.  Boot a PC to Windows PE.
 

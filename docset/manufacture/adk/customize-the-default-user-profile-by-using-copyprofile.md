@@ -27,14 +27,14 @@ Use the following procedure to create an answer file to instruct **Sysprep** to 
 
 **To create a separate answer file for copying user profile settings**
 
-1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**. For more information about Windows SIM, see [Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8).
+1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**. For more information about Windows SIM, see [Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445).
 
 2.  Create a new answer file to use with **Sysprep**:
 
     1.  Click **File**, and then click **New Answer File**. An empty answer file appears in the **Answer File** pane.
 
         **Note**  
-        If the Windows 8 catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](p_wsim.open_a_windows_image_or_catalog_file_win8).
+        If the Windows 8 catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
 
          
 
@@ -46,7 +46,7 @@ Use the following procedure to create an answer file to instruct **Sysprep** to 
 
     5.  Save this new answer file to the root directory of the removable media or network location, and name it **CopyProfile**.
 
-For more information, see [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8) and [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?LinkId=206281).
+For more information, see [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) and [Unattended Windows Setup Reference Guide](http://go.microsoft.com/fwlink/?LinkId=206281).
 
 ## <span id="bkmk_configure"></span><span id="BKMK_CONFIGURE"></span>Configuring Default User Profile Settings
 

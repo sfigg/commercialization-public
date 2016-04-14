@@ -44,10 +44,10 @@ typedef struct _EFI_BOOT_MODE_MGMT_PROTOCOL {
 The revision to which the **EFI\_BOOT\_MODE\_MGMT\_PROTOCOL** adheres. All future revisions must be backward compatible. If a future version is not backward compatible, a different GUID must be used.
 
 <span id="GetBootModeInfo"></span><span id="getbootmodeinfo"></span><span id="GETBOOTMODEINFO"></span>**GetBootModeInfo**  
-Determines the boot mode which the operating system should use when it starts. See [EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.GetBootModeInfo](https://msdn.microsoft.com/library/windows/hardware/dn925278)
+Determines the boot mode which the operating system should use when it starts. See [EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.GetBootModeInfo](efi-boot-mode-mgmt-protocol-getbootmodeinfo.md)
 
 <span id="SetBootModeInfo"></span><span id="setbootmodeinfo"></span><span id="SETBOOTMODEINFO"></span>**SetBootModeInfo**  
-Specifies the boot mode the operating system should use when it starts, including an optional profile name. See [EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.SetBootModeInfo](https://msdn.microsoft.com/library/windows/hardware/dn925280)
+Specifies the boot mode the operating system should use when it starts, including an optional profile name. See [EFI\_BOOT\_MODE\_MGMT\_PROTOCOL.SetBootModeInfo](efi-boot-mode-mgmt-protocol-setbootmodeinfo.md)
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -57,7 +57,7 @@ Specifies the boot mode the operating system should use when it starts, includin
 ## <span id="related_topics"></span>Related topics
 
 
-[Manufacturing Mode](https://msdn.microsoft.com/library/windows/hardware/dn917723)
+[Manufacturing Mode](manufacturing-mode.md)
 
  
 

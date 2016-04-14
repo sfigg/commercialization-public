@@ -87,7 +87,7 @@ You can manually modify the power settings for each built-in power configuration
 
 [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)
 
-[Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)
+[Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)
 
 [Windows Performance Toolkit](http://go.microsoft.com/fwlink/p/?linkid=210214)
 

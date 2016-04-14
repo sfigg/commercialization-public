@@ -56,7 +56,7 @@ You can also use DISM commands to apply an unattended answer file to a mounted o
 
 For more information, see [Add and Remove Drivers to an Offline Windows Image](add-and-remove-drivers-to-an-offline-windows-image.md).
 
-If you're using DISM, you can add only .inf drivers to an offline Windows image. Drivers that display the Designed for Windows logo are provided as .cab files. You must expand the .cab file before you install the .inf file if you're using DISM for the installation. You must install a driver that's packaged as a .exe file or another file type on a running Windows operating system. To run a .exe or Windows Installer (.msi) driver package, you can add a custom command to an answer file to install the driver package. For more information, see [Add a Custom Command to an Answer File](p_wsim.add_a_custom_command_to_an_answer_file_win8).
+If you're using DISM, you can add only .inf drivers to an offline Windows image. Drivers that display the Designed for Windows logo are provided as .cab files. You must expand the .cab file before you install the .inf file if you're using DISM for the installation. You must install a driver that's packaged as a .exe file or another file type on a running Windows operating system. To run a .exe or Windows Installer (.msi) driver package, you can add a custom command to an answer file to install the driver package. For more information, see [Add a Custom Command to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915058).
 
 ### <span id="automated"></span><span id="AUTOMATED"></span>Add drivers during an automated deployment by using Windows Setup and an answer file
 
@@ -187,7 +187,7 @@ These websites provide more information about device-driver requirements:
 ## <span id="related_topics"></span>Related topics
 
 
-[Add a Device Driver Path to an Answer File](p_wsim.add_a_device_driver_path_to_an_answer_file_win8)
+[Add a Device Driver Path to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915062)
 
 [Add a Driver Online in Audit Mode](add-a-driver-online-in-audit-mode.md)
 

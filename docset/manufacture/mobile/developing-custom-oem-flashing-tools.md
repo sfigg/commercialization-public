@@ -19,7 +19,7 @@ This diagram summarizes the communication flow from the PC flashing tool to the 
 
 ![oem\-manu\-simpleio](images/oem-manu-simpleio.png)
 
-For more info on available USB APIs see, [UEFI flashing protocols](https://msdn.microsoft.com/library/dn772118).
+For more info on available USB APIs see, [UEFI flashing protocols](uefi-flashing-protocols.md).
 
 ## <span id="PC_flashing_application"></span><span id="pc_flashing_application"></span><span id="PC_FLASHING_APPLICATION"></span>PC flashing application
 

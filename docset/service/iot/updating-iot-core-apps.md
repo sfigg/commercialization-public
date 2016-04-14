@@ -22,7 +22,7 @@ Edit the following variables in **AppInstall.bat** to set your app and certifica
 
      
 
-    ![appinstall.bat screenshot](common/appinstall.png)
+    ![appinstall.bat screenshot](images/appinstall.png)
 
 Next, edit the following variables in DeployApp.bat to set your app, app ID, and dependencies:
 
@@ -34,7 +34,7 @@ Next, edit the following variables in DeployApp.bat to set your app, app ID, and
 
      
 
-    ![deployappx.bat screenshot](common/deployapp.png)
+    ![deployappx.bat screenshot](images/deployapp.png)
 -   **Optional step:** In **DeployApp.bat** set **tempappx** and **tempappxid** with a temporary app to run in the foreground during your app installation. This will replace the default Microsoft-branded temporary app.
 
 Once you have set variables for **AppInstall.bat** and **DeployApp.bat**, you must place the **AppInstall.bat** and **DeployApp.bat** files, the updated app, the temporary app (optional), and all certificates in ` C:\Windows\AppInstall\`. Then move **OEMCustomization.cmd** from ` <PATH?>` to ` C:\Windows\System32\`. Restarting the device will initiate the app update process.

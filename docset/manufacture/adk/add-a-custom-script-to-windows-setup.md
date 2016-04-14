@@ -17,19 +17,19 @@ title: Add a Custom Script to Windows Setup
 
 To run services or commands that can start at the same time, use RunAsynchronousCommands. To run commands that need to finish before other commands can start, use RunSynchronousCommands.
 
-**Note**  As of Windows 10, [Microsoft-Window-Shell-Setup\\LogonCommands\\AsynchronousCommand](p_unattend.logoncommands_win7_microsoft_windows_shell_setuplogoncommands) now works like LogonCommands\\AsynchronousCommand: all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish.
+**Note**  As of Windows 10, [Microsoft-Window-Shell-Setup\\LogonCommands\\AsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915476) now works like LogonCommands\\AsynchronousCommand: all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish.
 
  
 
 Some of these settings run in the user context, others run in the system context depending on the configuration pass.
 
--   Add [Microsoft-Windows-Setup\\RunAsynchronousCommand](p_unattend.runasynchronouscommand_win7_microsoft_windows_setuprunasynchronousrunasynchronouscommand) or [RunSynchronousCommand](p_unattend.runsynchronouscommand_win7_microsoft_windows_setuprunsynchronousrunsynchronouscommand) to run a script as Windows Setup starts. This can be helpful for setting hard disk partitions.
--   Add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](p_unattend.runasynchronouscommand_win7_microsoft_windows_deploymentrunasynchronousrunasynchronouscommand) or [RunSynchronousCommand](p_unattend.runsynchronouscommand_win7_microsoft_windows_deploymentrunsynchronousrunsynchronouscommand) to the **auditUser** configuration pass to run a script that runs when the PC enters audit mode. This can be helpful for tasks like automated app installation or testing.
--   Add [Microsoft-Windows-Shell-Setup\\LogonCommands\\AsynchronousCommand](p_unattend.logoncommands_win7_microsoft_windows_shell_setuplogoncommands) or [FirstLogonCommands\\SynchronousCommand](p_unattend.firstlogoncommands_win7_microsoft_windows_shell_setupfirstlogoncommands) to run after the Out of Box Experience (OOBE) but before the user sees the desktop. This can be especially useful to set up language-specific apps or content after the user has already selected their language.
+-   Add [Microsoft-Windows-Setup\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915798) or [RunSynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915802) to run a script as Windows Setup starts. This can be helpful for setting hard disk partitions.
+-   Add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) or [RunSynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915801) to the **auditUser** configuration pass to run a script that runs when the PC enters audit mode. This can be helpful for tasks like automated app installation or testing.
+-   Add [Microsoft-Windows-Shell-Setup\\LogonCommands\\AsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915476) or [FirstLogonCommands\\SynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn922797) to run after the Out of Box Experience (OOBE) but before the user sees the desktop. This can be especially useful to set up language-specific apps or content after the user has already selected their language.
 
     Use these scripts sparingly because long scripts can prevent the user from reaching the Start screen quickly. For retail versions of Windows, additional restrictions apply to these scripts. For info, see the Licensing and Policy guidance on the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 
-    **Note**   When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. To boot to audit mode without triggering these scripts, add the setting: Microsoft-Windows-Deployment\\Reseal\\[Mode](p_unattend.mode_win7_microsoft_windows_deploymentresealmode) = Audit.
+    **Note**   When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. To boot to audit mode without triggering these scripts, add the setting: Microsoft-Windows-Deployment\\Reseal\\[Mode](https://msdn.microsoft.com/library/windows/hardware/dn923110) = Audit.
 
      
 

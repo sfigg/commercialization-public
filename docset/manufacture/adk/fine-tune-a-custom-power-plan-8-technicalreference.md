@@ -10,7 +10,7 @@ title: 'Fine-Tune a Custom Power Plan'
 
 A power plan is a collection of hardware and system settings that manages how computers use and conserve power. You can create custom power plans that are optimized for specific computers.
 
-You can manage most common power plan settings through Control Panel. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md). To fine-tune hardware-specific configurations that are not configurable through Control Panel, use the PowerCfg tool.
+You can manage most common power plan settings through Control Panel. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md). To fine-tune hardware-specific configurations that are not configurable through Control Panel, use the PowerCfg tool.
 
 ## <span id="ModifyPowerPlan"></span><span id="modifypowerplan"></span><span id="MODIFYPOWERPLAN"></span>Manually Modifying a Power Plan
 
@@ -124,7 +124,7 @@ You can customize all configurable Windows power options by using the `powercfg`
 ## <span id="related_topics"></span>Related topics
 
 
-[Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)
+[Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)
 
 [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)
 

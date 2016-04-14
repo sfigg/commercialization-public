@@ -25,7 +25,7 @@ Take care of your devices after they've left your hands by sending them updates 
 <li>Desktop OS: [Windows 10: Upgrade Editions](http://www.microsoft.com/en-us/windows/windows-10-specifications?OCID=win10_null_vanity_win10specs#upgrade)</li>
 <li>Embedded OS: [Upgrade Windows Embedded devices to Windows 10](refurbish/upgrade-windows-embedded-devices-to-windows-10.md)</li>
 <li>Mobile OS and packages: [Mobile update](mobile-update/update.md)</li>
-<li>Drivers: [Manage Driver Distribution in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt181352(v=vs.85).aspx)</li>
+<li>Drivers: [Manage Driver Distribution in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt181352.aspx)</li>
 </ul></td>
 </tr>
 <tr class="even">

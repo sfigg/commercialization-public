@@ -61,7 +61,7 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 **To deploy Compact OS from Windows Setup**
 
--   Use an unattend.xml file with the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\[Compact](p_unattend.compact).
+-   Use an unattend.xml file with the setting: Microsoft-Windows-Setup\\ImageInstall\\OSImage\\[Compact](https://msdn.microsoft.com/library/windows/hardware/dn949267).
 
 **Command-line support** In the next release of Windows 10 and WinPE, you can query whether the operating system is running Compact OS, and change it at any time, using the [Compact.exe]( http://go.microsoft.com/fwlink/?LinkId=623487) command.
 
@@ -160,7 +160,7 @@ On computers that support removable media such as an SD card or USB flash drive,
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Imaging and Configuration Designer](p_icd.icd_portal)
+[Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
 [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)
 

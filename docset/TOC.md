@@ -71,7 +71,7 @@
 #### [Battery Life](manufacture/adk/battery-life.md)
 ##### [Managing Battery Life and Power Consumption Overview](manufacture/adk/managing-battery-life-and-power-consumption-overview-8-technicalreference.md)
 ##### [Set the Default Power Plan](manufacture/adk/set-the-default-power-plan-technicalreference.md)
-##### [Create a Custom Power Plan](manufacture/adk/create-a-custom-power-plan-8-technicalreference.md)
+##### [Create a Custom Power Plan](manufacture/adk/create-a-custom-power-plan-technicalreference.md)
 ##### [Fine-Tune a Custom Power Plan](manufacture/adk/fine-tune-a-custom-power-plan-8-technicalreference.md)
 ##### [Test Battery Life and Power Consumption](manufacture/adk/test-battery-life-and-power-consumption-technicalreference.md)
 #### [Understanding Servicing Strategies](manufacture/adk/understanding-servicing-strategies.md)

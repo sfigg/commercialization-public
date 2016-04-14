@@ -133,7 +133,7 @@ You can configure international settings in an answer file in the following ways
 
 1.  Verify that the necessary language packs are available in the image or in a Windows distribution share. For more information about multilingual distribution shares, see [Add Multilingual Support to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md).
 
-2.  Open Windows System Image Manager (Windows SIM) and create an answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
+2.  Open Windows System Image Manager (Windows SIM) and create an answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
 3.  Add the Microsoft-Windows-International-Core-WinPE component to the answer file to apply settings during the **windowsPE** configuration pass.
 
@@ -147,9 +147,9 @@ You can configure international settings in an answer file in the following ways
 
 **To configure international settings during the specialize configuration pass**
 
-1.  Verify that the necessary language packs are available in the image. For more information about how to add a language pack offline, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md). For more information about how to add a language pack using an answer file, see [Add a Package to an Answer File](p_wsim.add_a_package_to_an_answer_file_win8).
+1.  Verify that the necessary language packs are available in the image. For more information about how to add a language pack offline, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md). For more information about how to add a language pack using an answer file, see [Add a Package to an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915066).
 
-2.  Open Windows SIM and create a new answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8).
+2.  Open Windows SIM and create a new answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
 3.  Add the Microsoft-Windows-International-Core component to apply settings during the **specialize** and **oobeSystem** configuration passes.
 
@@ -180,7 +180,7 @@ You can configure international settings in an answer file in the following ways
 
 [Windows Setup Technical Reference](windows-setup-technical-reference.md)
 
-[Windows System Image Manager Technical Reference](p_wsim.windows_system_image_manager_technical_reference__win8)
+[Windows System Image Manager Technical Reference](https://msdn.microsoft.com/library/windows/hardware/dn922445)
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 

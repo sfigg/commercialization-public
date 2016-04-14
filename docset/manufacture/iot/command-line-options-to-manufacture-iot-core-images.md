@@ -68,7 +68,7 @@ Parameters:
 
 Description: This command sets the version numbers used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
 
-(Why a four-part version number? Learn about versioning schemes in [Update requirements](https://msdn.microsoft.com/library/dn757525).)
+(Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile-update/update-requirements.md).)
 
 This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Note that whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
 

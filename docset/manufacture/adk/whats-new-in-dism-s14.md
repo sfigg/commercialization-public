@@ -10,7 +10,7 @@ title: 'What''s New in DISM'
 
 DISM in Windows 10 supports new features:
 
--   [Windows Imaging and Configuration Designer](p_icd.icd_portal) and related tools.
+-   [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113) and related tools.
 
 -   **Full Flash Update (.FFU)**: DISM supports the Full Flash Update (.FFU) format, which captures an applies an entire drive, including partition information. This can make deployment faster and easier.
 

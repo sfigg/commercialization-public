@@ -10,7 +10,7 @@ title: Create a full operating system manufacturing profile
 
 When you boot into Manufacturing Mode, can you skip OOBE and preinstall apps to run your manufacturing tests. Skipping OOBE can speed up manufacturing time.
 
-To set this up, you add the apps that should be installed with the manufacturing profile. For more info about manufacturing profiles, see [Manufacturing Mode](https://msdn.microsoft.com/library/windows/hardware/dn917723).
+To set this up, you add the apps that should be installed with the manufacturing profile. For more info about manufacturing profiles, see [Manufacturing Mode](manufacturing-mode.md).
 
 ## <span id="Add_apps_to_a_custom_manufacturing_profile"></span><span id="add_apps_to_a_custom_manufacturing_profile"></span><span id="ADD_APPS_TO_A_CUSTOM_MANUFACTURING_PROFILE"></span>Add apps to a custom manufacturing profile
 

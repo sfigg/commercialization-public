@@ -28,7 +28,7 @@ Before you capture an image, generalize the computer by using an answer file tha
 **To maintain driver configurations by using an answer file**
 
 1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**.
-2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8) and [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8).
+2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085) and [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
 3.  Add the Microsoft-Windows-PnpSysprep/**PersistAllDeviceInstalls** setting. For more information, see the [Overview](#bkmk-2) section in this topic.
 4.  If the computer has undetectable hardware, include the Microsoft-Windows-PnpSysprep/**DoNotCleanUpNonPresentDevices** setting. For more information, see the [Undetectable hardware](#undetectablehardware) section in this topic.
 5.  Generalize the computer by using the answer file. For example:
