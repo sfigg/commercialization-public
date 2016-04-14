@@ -337,10 +337,10 @@
 #### [Lab 1c: Add a file and a registry setting to an image](manufacture/iot/add-a-registry-setting-to-an-image.md)
 #### [Lab 1d: Add a provisioning package to an image](manufacture/iot/add-a-provisioning-package-to-an-image.md)
 #### [Lab 1e: Build a retail image](manufacture/iot/build-retail-image.md)
-### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
-### [Command-line options to manufacture IoT Core images](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
+#### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
-### [Windows ADK IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
+### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
+### [IoT Core Add-ons command-line options](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
 
 
 

@@ -1,5 +1,5 @@
 ---
-Description: 'The Windows 10 IoT Core (IoT Core) ADK Add-Ons include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.'
+Description: 'The Windows 10 IoT Core ADK Add-Ons include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.'
 MS-HAID: 'p\_iot\_core.iot\_core\_adk\_addons'
 MSHAttr: 'PreferredLib:/library'
 title: 'Windows ADK IoT Core Add-ons'
@@ -10,7 +10,7 @@ title: 'Windows ADK IoT Core Add-ons'
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
 
-The [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include OEM-specific tools to help you create new images for your devices with Windows apps, board support packages (BSPs), drivers, and features that you choose.
+The [Windows 10 IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include OEM-specific tools to create images for your IoT Core devices with your apps, board support packages (BSPs), settings, drivers, and features.
 
 The [IoT Core manufacturing guide](iot-core-adk-addons.md) walks you through building images with these tools.
 
@@ -39,7 +39,7 @@ The [IoT Core manufacturing guide](iot-core-adk-addons.md) walks you through bui
 
 This folder also contains scripts used to generate packages/images.
 
-For details, see [Command-line options to manufacture IoT Core images](command-line-options-to-manufacture-iot-core-images.md).
+For details, see [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md).
 
 ## <span id="Common_files__packages_common_to_all_architectures_"></span><span id="common_files__packages_common_to_all_architectures_"></span><span id="COMMON_FILES__PACKAGES_COMMON_TO_ALL_ARCHITECTURES_"></span>Common files (packages common to all architectures)
 
@@ -80,12 +80,15 @@ For details, see [Command-line options to manufacture IoT Core images](command-l
 -   **UpdateInput.xml**: Input file for updating the FFU, lists the packages that need to be updated in the existing FFU
 -   Packages with updated contents (For example, Appx.Main with version 1.0.2.0).
 
+## OK, let's build an image!
+[Start with the IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
+
+
 ## <span id="related_topics"></span>Related topics
 
 
 [IoT Core feature list](iot-core-feature-list.md)
 
-[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
 
  
 
