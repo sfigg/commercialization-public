@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 MS-HAID: 'p\_iot\_core.set\_up\_your\_pc\_to\_customize\_iot\_core'
 MSHAttr: 'PreferredLib:/library'
 title: Get the tools needed to customize Windows IoT Core

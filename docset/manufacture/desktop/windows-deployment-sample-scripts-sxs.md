@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'The following scripts are used in the lab. It may be helpful to create these all at once, or to download the samples from the web.'
 MS-HAID: 'p\_sxs\_dmfg.windows\_deployment\_sample\_scripts\_sxs'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

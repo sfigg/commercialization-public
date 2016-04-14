@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Push-button reset frequently-asked questions (FAQ)'
 MS-HAID: 'p\_adk\_online.pbr\_faq'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Lab 2, Classic-style deployment, uses command line tools in the Windows ADK to customize and deploy a Windows image.'
 MS-HAID: 'p\_sxs\_dmfg.part\_2\_\_classic-style\_deployment'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Capture Images of Hard Disk Partitions Using DISM
 MS-HAID: 'p\_adk\_online.capture\_images\_of\_hard\_disk\_partitions\_using\_dism'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

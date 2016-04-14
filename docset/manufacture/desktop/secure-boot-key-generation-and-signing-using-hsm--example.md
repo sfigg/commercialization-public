@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Secure Boot Key Generation and Signing Using HSM (Example)'
 MS-HAID: 'p\_adk\_online.secure\_boot\_key\_generation\_and\_signing\_using\_hsm\_\_example'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

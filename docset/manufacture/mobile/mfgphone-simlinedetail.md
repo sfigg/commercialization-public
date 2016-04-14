@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Provides information about a particular SIM-based phone line.'
 MS-HAID: 'p\_phManuRetail.mfgphone\_simlinedetail'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

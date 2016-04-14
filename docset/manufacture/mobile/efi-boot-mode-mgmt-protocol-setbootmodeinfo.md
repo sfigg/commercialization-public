@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'This function supplies a boot mode and optional profile name to the firmware to use on subsequent boots.'
 MS-HAID: 'p\_phManuRetail.efi\_boot\_mode\_mgmt\_protocol\_setbootmodeinfo'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

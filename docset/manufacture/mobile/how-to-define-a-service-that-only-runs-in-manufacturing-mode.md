@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'There may be cases where you want a service to be normally disabled but automatically run when the device is in Manufacturing Mode.'
 MS-HAID: 'p\_phManuRetail.how\_to\_define\_a\_service\_that\_only\_runs\_in\_manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

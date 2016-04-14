@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Windows 8.1 Upgrade Scenarios for OEMs'
 MS-HAID: 'p\_adk\_online.windows\_81\_upgrade\_scenarios\_for\_oems'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

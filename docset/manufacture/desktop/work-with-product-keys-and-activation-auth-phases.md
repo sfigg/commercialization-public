@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Work with Product Keys and Activation
 MS-HAID: 'p\_adk\_online.work\_with\_product\_keys\_and\_activation\_auth\_phases'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

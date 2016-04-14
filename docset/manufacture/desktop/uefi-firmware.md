@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: UEFI Firmware
 MS-HAID: 'p\_adk\_online.uefi\_firmware'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

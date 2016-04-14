@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'After you have a completed the steps covered in the other guides to prepare the device, the focus shifts to preparing the device for the final retail configuration.'
 MS-HAID: 'p\_phManuRetail.manufacturing'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

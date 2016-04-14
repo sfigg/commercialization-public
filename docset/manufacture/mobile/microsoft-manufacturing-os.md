@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Microsoft Manufacturing OS
 MS-HAID: 'p\_phManuRetail.microsoft\_manufacturing\_os'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

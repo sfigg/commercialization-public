@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Split a Windows image file (.wim) to span across multiple DVDs'
 MS-HAID: 'p\_adk\_online.split\_a\_windows\_image\_\_wim\_\_file\_to\_span\_across\_multiple\_dvds'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Creating a secure MMOS WIM image
 MS-HAID: 'p\_phManuRetail.creating\_a\_secure\_mmos\_wim\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

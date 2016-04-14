@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'These tools are part of the Windows 10 IoT Core (IoT Core) ADK Add-Ons, in the \\Tools folder. To learn more about these tools, see What''s in the Windows ADK IoT Core Add-ons.'
 MS-HAID: 'p\_iot\_core.command-line\_options\_to\_manufacture\_iot\_core\_images'
 MSHAttr: 'PreferredLib:/library'

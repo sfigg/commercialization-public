@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: ResetConfig XML reference
 MS-HAID: 'p\_adk\_online.resetconfig\_xml\_reference\_s14'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

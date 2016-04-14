@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Capture and Apply Windows, System, and Recovery Partitions'
 MS-HAID: 'p\_adk\_online.capture\_and\_apply\_windows\_system\_and\_recovery\_partitions'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

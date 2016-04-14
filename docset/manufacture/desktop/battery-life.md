@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Battery Life
 MS-HAID: 'p\_adk\_online.battery\_life'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

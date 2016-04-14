@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Settings for Automating OOBE
 MS-HAID: 'p\_adk\_online.settings\_for\_automating\_oobe'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: UEFI Validation Option ROM Guidance
 MS-HAID: 'p\_adk\_online.uefi\_validation\_option\_rom\_validation\_guidance'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

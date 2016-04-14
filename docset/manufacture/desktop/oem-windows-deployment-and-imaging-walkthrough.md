@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: OEM Windows Desktop Deployment and Imaging Lab
 MS-HAID: 'p\_sxs\_dmfg.oem\_windows\_deployment\_and\_imaging\_walkthrough'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

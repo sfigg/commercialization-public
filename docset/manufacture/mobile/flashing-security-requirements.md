@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Flashing security requirements
 MS-HAID: 'p\_phManuRetail.flashing\_security\_requirements'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

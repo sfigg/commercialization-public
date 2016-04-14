@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Callback-based notification mechanism for receiving events on SIM-based phone lines.'
 MS-HAID: 'p\_phManuRetail.mfgphonesetsimlineeventnotifycallback'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

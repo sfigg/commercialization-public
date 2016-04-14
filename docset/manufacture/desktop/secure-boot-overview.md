@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Secure Boot
 MS-HAID: 'p\_adk\_online.secure\_boot\_overview'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

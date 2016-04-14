@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'We''ll create a provisioning package that contains some sample Wi-Fi settings.'
 MS-HAID: 'p\_iot\_core.add\_a\_provisioning\_package\_to\_an\_image'
 MSHAttr: 'PreferredLib:/library'

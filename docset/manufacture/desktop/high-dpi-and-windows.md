@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'High DPI and Windows 8.1'
 MS-HAID: 'p\_adk\_online.high\_dpi\_and\_windows'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

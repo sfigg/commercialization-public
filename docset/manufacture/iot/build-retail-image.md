@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'We''ll take our test image and convert it to a retail build.'
 MS-HAID: 'p\_iot\_core.build\_retail\_image'
 MSHAttr: 'PreferredLib:/library'

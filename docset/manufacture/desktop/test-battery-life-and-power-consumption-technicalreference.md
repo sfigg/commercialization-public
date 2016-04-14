@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Test Battery Life and Power Consumption
 MS-HAID: 'p\_adk\_online.test\_battery\_life\_and\_power\_consumption\_technicalreference'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

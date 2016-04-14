@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'DPI-related APIs and registry settings'
 MS-HAID: 'p\_adk\_online.dpi\_related\_apis\_and\_registry\_settings'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

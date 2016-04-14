@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)'
 MS-HAID: 'p\_sxs\_dmfg.install\_windows\_automatically\_from\_a\_usb\_drive\_sxs'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

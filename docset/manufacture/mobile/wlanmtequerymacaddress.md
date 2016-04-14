@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEQueryMacAddress
 MS-HAID: 'p\_phManuRetail.wlanmtequerymacaddress'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

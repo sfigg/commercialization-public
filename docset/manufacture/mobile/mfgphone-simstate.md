@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Provides information about the state of the SIM.'
 MS-HAID: 'p\_phManuRetail.mfgphone\_simstate'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

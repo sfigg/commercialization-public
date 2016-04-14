@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Take Inventory of an Image or Component Using DISM
 MS-HAID: 'p\_adk\_online.take\_inventory\_of\_an\_image\_or\_component\_using\_dism'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

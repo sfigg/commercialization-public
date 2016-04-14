@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after they have been delivered to your customers.'
 MS-HAID: 'p\_iot\_core.iot\_core\_manufacturing\_guide'
 MSHAttr: 'PreferredLib:/library'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Introduced in Windows 10 Mobile, manufacturing mode is a mode of the full operating system that can be used for manufacturing-related tasks, such as component and support testing.'
 MS-HAID: 'p\_phManuRetail.manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

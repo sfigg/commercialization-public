@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEEnumAdapters
 MS-HAID: 'p\_phManuRetail.wlanmteenumadapters'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

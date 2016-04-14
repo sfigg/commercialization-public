@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Use keyboard identifiers and Input Method Editors (IMEs) identify the keyboard type.'
 MS-HAID: 'p\_adk\_online.windows\_language\_pack\_default\_values'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

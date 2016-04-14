@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEStartSelfTest
 MS-HAID: 'p\_phManuRetail.wlanmtestartselftest'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

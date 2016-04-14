@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) image format.'
 MS-HAID: 'p\_adk\_online.deploy\_windows\_using\_full\_flash\_update\_\_ffu\_'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

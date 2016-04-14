@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: High DPI Support for IT Professionals
 MS-HAID: 'p\_adk\_online.high\_dpi\_support\_for\_it\_professionals'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

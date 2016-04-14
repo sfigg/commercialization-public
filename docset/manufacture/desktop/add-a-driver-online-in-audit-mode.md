@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Add a Driver Online in Audit Mode
 MS-HAID: 'p\_adk\_online.add\_a\_driver\_online\_in\_audit\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Supporting existing OID commands in manufacturing mode
 MS-HAID: 'p\_phManuRetail.supporting\_existing\_oid\_commands\_in\_manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

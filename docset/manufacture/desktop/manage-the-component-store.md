@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Manage the Component Store
 MS-HAID: 'p\_adk\_online.manage\_the\_component\_store'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

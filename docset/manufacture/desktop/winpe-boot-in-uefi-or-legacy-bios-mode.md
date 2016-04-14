@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'WinPE: Boot in UEFI or legacy BIOS mode'
 MS-HAID: 'p\_adk\_online.winpe\_boot\_in\_uefi\_or\_legacy\_bios\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

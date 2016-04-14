@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'You can determine whether the device is in Manufacturing Mode or not by using either a kernel mode or user mode API.'
 MS-HAID: 'p\_phManuRetail.how\_to\_detect\_manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

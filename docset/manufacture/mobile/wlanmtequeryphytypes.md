@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEQueryPhyTypes
 MS-HAID: 'p\_phManuRetail.wlanmtequeryphytypes'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

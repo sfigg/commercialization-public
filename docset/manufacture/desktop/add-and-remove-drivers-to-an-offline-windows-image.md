@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Add and Remove Drivers to an Offline Windows Image
 MS-HAID: 'p\_adk\_online.add\_and\_remove\_drivers\_to\_an\_offline\_windows\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

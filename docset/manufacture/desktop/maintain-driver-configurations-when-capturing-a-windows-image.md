@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Maintain Driver Configurations when Capturing a Windows Image
 MS-HAID: 'p\_adk\_online.maintain\_driver\_configurations\_when\_capturing\_a\_windows\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

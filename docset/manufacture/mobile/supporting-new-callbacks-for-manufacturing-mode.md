@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Supporting new callbacks for manufacturing mode
 MS-HAID: 'p\_phManuRetail.supporting\_new\_callbacks\_for\_manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

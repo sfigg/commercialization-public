@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Flash MMOS to the device
 MS-HAID: 'p\_phManuRetail.flash\_mmos\_to\_the\_phone'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

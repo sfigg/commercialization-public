@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Causes the phone to dial a call.'
 MS-HAID: 'p\_phManuRetail.mfgphonedial'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

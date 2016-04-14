@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Flashing tools
 MS-HAID: 'p\_phManuRetail.flashing\_tools'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

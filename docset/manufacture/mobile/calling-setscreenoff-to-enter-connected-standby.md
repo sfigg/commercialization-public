@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Calling SetScreenOff to enter connected standby
 MS-HAID: 'p\_phManuRetail.calling\_setscreenoff\_to\_enter\_connected\_standby'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

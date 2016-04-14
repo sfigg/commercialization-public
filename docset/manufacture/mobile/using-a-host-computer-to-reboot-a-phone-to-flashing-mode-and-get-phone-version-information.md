@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Using a host PC to reboot a device to flashing mode and get version information
 MS-HAID: 'p\_phManuRetail.using\_a\_host\_computer\_to\_reboot\_a\_phone\_to\_flashing\_mode\_and\_get\_phone\_version\_information'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

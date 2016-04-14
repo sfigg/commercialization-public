@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Push-button reset features by default restore only drivers (installed through INF packages) and preinstalled Windows apps.'
 MS-HAID: 'p\_adk\_online.recovery\_strategy\_for\_common\_customizations'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

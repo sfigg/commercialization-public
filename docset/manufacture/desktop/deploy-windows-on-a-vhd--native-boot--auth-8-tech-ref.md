@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Deploy Windows on a VHD (Native Boot)'
 MS-HAID: 'p\_adk\_online.deploy\_windows\_on\_a\_vhd\_\_native\_boot\_\_auth\_8\_tech\_ref'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
