@@ -20,9 +20,9 @@ For more information, see [Windows Assessment Toolkit](http://go.microsoft.com/f
 ## <span id="related_topics"></span>Related topics
 
 
-[Set the Default Power Plan](set-the-default-power-plan--8-technicalreference.md)
+[Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)
 
-[Create a Custom Power Plan](create-a-custom-power-plan-8-technicalreference.md)
+[Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md)
 
  
 
