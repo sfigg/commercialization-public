@@ -64,7 +64,7 @@ Contact the silicon vendor for information on size estimation of SV partition up
 ## <span id="related_topics"></span>Related topics
 
 
-[Update](update.md)
+[Update](index.md)
 
  
 

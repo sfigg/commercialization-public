@@ -473,7 +473,7 @@ Use the following process to confirm that the updated driver is active.
 ## <span id="related_topics"></span>Related topics
 
 
-[Update](update.md)
+[Update](index.md)
 
  
 

@@ -2,10 +2,10 @@
 Description: 'We''ll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.'
 MS-HAID: 'p\_iot\_core.add\_a\_registry\_setting\_to\_an\_image'
 MSHAttr: 'PreferredLib:/library'
-title: 'Step 3: Add a file and a registry setting to an image'
+title: 'Lab 1c: Add a file and a registry setting to an image'
 ---
 
-# Step 3: Add a file and a registry setting to an image
+# Lab 1c: Add a file and a registry setting to an image
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
@@ -27,7 +27,7 @@ Finally, we'll rebuild the project and make sure it works.
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-We'll start with the ProjectA image we created from [Step 1: Create a basic image](create-a-basic-image.md), and updated in [Step 2: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
@@ -218,7 +218,7 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-[Step 4: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
+[Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 
  
 

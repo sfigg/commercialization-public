@@ -58,7 +58,7 @@ Other helpful software:
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-[Step 1: Create a basic image](create-a-basic-image.md)
+[Lab 1a: Create a basic image](create-a-basic-image.md)
 
  
 

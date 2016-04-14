@@ -343,7 +343,7 @@ PS C:\Windows\system32>
 
 [Submit an update](submit-an-update.md)
 
-[Request-UpdateCancellation](request-updatecancellation.md)
+[Request-UpdateCancellation](https://msdn.microsoft.com/library/dn946525)
 
  
 

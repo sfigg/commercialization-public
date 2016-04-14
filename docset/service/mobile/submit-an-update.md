@@ -47,7 +47,7 @@ OEMs can continue to submit OS-only updates for Trial and PartnerSelfHost previe
 
 6.  You and your mobile operator partner [approve the update](approve-an-update.md).
 
-7.  We’ll publish the update on the Microsoft Update production server, where the device can [scan, download, and install the update](scan--download--and-install-updates.md).
+7.  We’ll publish the update on the Microsoft Update production server, where the device can [scan, download, and install the update](https://msdn.microsoft.com/library/dn946526).
 
 The following diagram shows this procedure:
 
@@ -73,7 +73,7 @@ The following diagram shows this procedure:
        -MOId 000-22
     ```
 
-2.  The update is published to Microsoft’s production update server, where the device can [scan, download, and install the update](scan--download--and-install-updates.md).
+2.  The update is published to Microsoft’s production update server, where the device can [scan, download, and install the update](https://msdn.microsoft.com/library/dn946526).
 
  
 

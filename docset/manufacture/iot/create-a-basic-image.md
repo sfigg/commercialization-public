@@ -2,10 +2,10 @@
 Description: 'To get started, we''ll create a basic Windows 10 IoT Core (IoT Core) image, flash it to a micro SD card, and put it into a device to make sure that everything''s working properly.'
 MS-HAID: 'p\_iot\_core.create\_a\_basic\_image'
 MSHAttr: 'PreferredLib:/library'
-title: 'Step 1: Create a basic image'
+title: 'Lab 1a: Create a basic image'
 ---
 
-# Step 1: Create a basic image
+# Lab 1a: Create a basic image
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
@@ -40,7 +40,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     The launch tool sets the default architecture, and sets a version number for the design, which is used for future updates. The first version number defaults to 10.0.0.0.
 
-    (Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile-update/update-requirements.md).)
+    (Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile/update-requirements.md).)
 
 3.  Install OEM test certificates. You'll use these to sign your test binaries.
 
@@ -101,7 +101,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-Leave the device on for now, and continue to [Step 2: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+Leave the device on for now, and continue to [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
  
 

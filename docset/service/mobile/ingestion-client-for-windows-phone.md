@@ -22,9 +22,9 @@ The ingestion client is a set of [Windows PowerShell](http://go.microsoft.com/fw
 
 -   [Get-RequestForUpdate cmdlet](get-requestforupdate-cmdlet.md)
 
--   [Get-RequestForUpdatePayload cmdlet](get-requestforupdatepayload-cmdlet.md)
+-   [Get-RequestForUpdatePayload cmdlet](https://msdn.microsoft.com/library/windows/hardware/dn756749)
 
--   [Request-UpdateCancellation cmdlet](request-updatecancellation.md)
+-   [Request-UpdateCancellation cmdlet](https://msdn.microsoft.com/library/dn946525)
 
 To use the ingestion client, the following tasks that are elaborated further in this topic must be completed.
 

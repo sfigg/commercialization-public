@@ -2,10 +2,10 @@
 Description: 'These tools are part of the Windows 10 IoT Core (IoT Core) ADK Add-Ons, in the \\Tools folder. To learn more about these tools, see What''s in the Windows ADK IoT Core Add-ons.'
 MS-HAID: 'p\_iot\_core.command-line\_options\_to\_manufacture\_iot\_core\_images'
 MSHAttr: 'PreferredLib:/library'
-title: 'Command-line options to manufacture IoT Core images'
+title: 'IoT Core Add-ons command-line options'
 ---
 
-# <span id="p_iot_core.command-line_options_to_manufacture_iot_core_images"></span>Command-line options to manufacture IoT Core images
+# <span id="p_iot_core.command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
@@ -68,7 +68,7 @@ Parameters:
 
 Description: This command sets the version numbers used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
 
-(Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile-update/update-requirements.md).)
+(Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile/update-requirements.md).)
 
 This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Note that whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
 

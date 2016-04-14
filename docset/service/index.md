@@ -11,7 +11,7 @@ title: Service
 ## <span id="purpose"></span>Purpose
 
 
-Take care of your devices after they've left your hands by sending them updates and helping your customers refresh or refurbish their devices.
+Update, refresh, or refurbish your after-market devices.
 
 <table>
 <colgroup>
@@ -22,18 +22,19 @@ Take care of your devices after they've left your hands by sending them updates 
 <tr class="odd">
 <td align="left">Updating the operating system, drivers and packages</td>
 <td align="left"><ul>
-<li>Desktop OS: [Windows 10: Upgrade Editions](http://www.microsoft.com/en-us/windows/windows-10-specifications?OCID=win10_null_vanity_win10specs#upgrade)</li>
-<li>Embedded OS: [Upgrade Windows Embedded devices to Windows 10](refurbish/upgrade-windows-embedded-devices-to-windows-10.md)</li>
-<li>Mobile OS and packages: [Mobile update](mobile-update/update.md)</li>
-<li>Drivers: [Manage Driver Distribution in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt181352.aspx)</li>
+<li>[Desktop: Upgrade Editions](http://www.microsoft.com/en-us/windows/windows-10-specifications?OCID=win10_null_vanity_win10specs#upgrade)</li>
+<li>[Embedded OS: Upgrade Windows Embedded devices to Windows 10](mobile/upgrade-windows-embedded-devices-to-windows-10.md)</li>
+<li>[Mobile: Update](mobile/index.md)</li>
+<li>[Drivers: Manage Driver Distribution in Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/mt181352.aspx)</li>
+<li>[IoT core device updates](iot/index.md)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Refurbishing devices</td>
 <td align="left"><ul>
-<li>Desktop: [Bare metal reset/recovery: create recovery media while deploying new devices](../manufacture/adk/create-media-to-run-push-button-reset-features-s14.md)</li>
-<li>Desktop: [Bare metal reset/recovery: enable your users to create recovery media](../manufacture/adk/bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)</li>
-<li>Mobile: [Mobile device refurbishment](refurbish/refurbish-a-mobile-device-portal.md)</li>
+<li>[Desktop: Bare metal reset/recovery: create recovery media while deploying new devices](../manufacture/desktop/create-media-to-run-push-button-reset-features-s14.md)</li>
+<li>[Desktop: Bare metal reset/recovery: enable your users to create recovery media](../manufacture/desktop/bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)</li>
+<li>[Mobile: Device refurbishment](mobile/index.md)</li>
 </ul></td>
 </tr>
 </tbody>

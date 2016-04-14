@@ -12,7 +12,7 @@ title: IoT Core manufacturing guide
 
 This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after you've sent them to your customers.
 
-To do this, we'll start with a basic Windows 10 IoT Core image structure, provided by the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+To do this, we'll start with a basic IoT Core image structure, provided by the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
 We'll then show you how to wrap your apps, files, settings, and drivers into packages that can go into the image. Packages help OEMs, ODMs, developers, and Microsoft all work together to deliver security and feature updates to your devices without stomping on each other's work.
 
@@ -23,11 +23,12 @@ This guide is written toward OEMs, but ODMs and developers can use the same proc
 
 Want to jump right in? Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md), and then try out our scenarios.
 
--   [Step 1: Create a basic image](create-a-basic-image.md): Make sure the tools you installed work, and load the basic IoT Core image onto a test device. While you're here, learn about the tools built into the basic image.
--   [Step 2: Add an app to your image](deploy-your-app-with-a-standard-board.md): Take one of our sample apps, package it up, make a fresh image, and load it onto the device.
--   [Step 3: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
--   [Step 4: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings such as presetting Wi-Fi.
-
+-   [Lab 1a: Create a basic image](create-a-basic-image.md): Make sure the tools you installed work, and load the basic IoT Core image onto a test device. While you're here, learn about the tools built into the basic image.
+-   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md): Take one of our sample apps, package it up, make a fresh image, and load it onto the device.
+-   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
+-   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings, for example, set up Wi-Fi.
+-   [Lab 1e: Build a retail image](build-retail-image.md): Convert your test image to a retail image.
+-   [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
 
@@ -161,7 +162,7 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 [IoT Core feature list](iot-core-feature-list.md)
 
-[Command-line options to manufacture IoT Core images](command-line-options-to-manufacture-iot-core-images.md)
+[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)
 
  
 

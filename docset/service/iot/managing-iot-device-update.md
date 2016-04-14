@@ -73,7 +73,6 @@ To configure a device to receive only OS updates, you must edit the OEM Feature 
 -   **Qualcomm DragonBoard:** ` C:\Program Files (x86)\Windows Kits\10\FMFiles\arm\QCDB410CFM.xml`
 
 In the **&lt;DeviceLayoutPackages&gt;** and **&lt;Features&gt;**sections, remove the device identifier and replace with **Generic**. For example **Intel.MBM.DeviceInfo.cab** becomes **Intel.Generic.DeviceInfo.cab**.
-
 ![generic pop on mbm](images/genericpop.png)
 
  

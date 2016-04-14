@@ -2,10 +2,10 @@
 Description: 'We''ll create a provisioning package that contains some sample Wi-Fi settings.'
 MS-HAID: 'p\_iot\_core.add\_a\_provisioning\_package\_to\_an\_image'
 MSHAttr: 'PreferredLib:/library'
-title: 'Step 4: Add a provisioning package to an image'
+title: 'Lab 1d: Add a provisioning package to an image'
 ---
 
-# Step 4: Add a provisioning package to an image
+# Lab 1d: Add a provisioning package to an image
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
@@ -15,7 +15,7 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-We'll start with the ProjectA image we created from [Step 1: Create a basic image](create-a-basic-image.md), and updated in [Step 2: Add an app to your image](deploy-your-app-with-a-standard-board.md) and [Step 3: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
+We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) and [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
 
@@ -138,7 +138,7 @@ i
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-[Step 5: Build a retail image](build-retail-image.md)
+[Lab 1e: Build a retail image](build-retail-image.md)
 
  
 

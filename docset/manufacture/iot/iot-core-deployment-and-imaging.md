@@ -420,7 +420,7 @@ To create an enterprise provisioning package that you can deploy to a IoT Core d
 3.  In the **Enter Project Details** window, enter a **Name**, **Project folder**, and optionally a **Description** of the provisioning package, then click **Next**.
 4.  In the **Select Windows Edition** window, select IoT Core, then click **Next**.
 5.  In the optional **Import a provisioning package** window, click **Finish.**
-6.  In the **Customizations** page, add the [upgradeeditionwithlicense](p-icd-settings.editionupgrade-upgradeeditionwithlicense) customization. this customization provides a license for an edition upgrade of iot core devices. ![](images/upgadeeditionwithlicense.png)
+6.  In the **Customizations** page, add the [upgradeeditionwithlicense](https://msdn.microsoft.com/library/windows/hardware/mt573160.aspx) customization. this customization provides a license for an edition upgrade of iot core devices. ![](images/upgadeeditionwithlicense.png)
 7.  Export the provisioning package by clicking the **Export** dropdown in the main menu, then selecting **Provisioning Package**, adding the required package information and specify options for the package. Click **Next** and then specify where the package will be saved.
 8.  Click **Build** to start building the image. The project information is displayed in the build page and the progress bar indicates the build status. If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations** Page.
 
