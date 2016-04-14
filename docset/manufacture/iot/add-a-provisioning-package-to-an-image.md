@@ -20,19 +20,20 @@ We'll start with the ProjectA image we created from [Step 1: Create a basic imag
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
 
 
-1.  Start Windows ICD.
+1.  Start **Windows Imaging and Configuration Designer**.
 2.  Click **File &gt; New project**.
-3.  Enter the project details (example: "WiFi Settings") and click **Next**.
-4.  Select **Provisioning package &gt; Windows 10 IoT Core (IoT Core)**.
+3.  For this example, use the name "**ProductAProv**" for the product name, and accept the defaultsand click **Next**.
+4.  Select **Provisioning package &gt; Windows 10 IoT Core**.
 5.  At the **Import a provisioning package (optional)** page, click **Finish**.
 6.  Add a sample setting:
     1.  Expand **Runtime settings &gt; Connectivity Profiles &gt; WLAN &gt; WLANSetting &gt; SSID**.
     2.  Type in the name of a Wi-Fi network name, for example, ContosoWiFi, and click **Add**.
-    3.  Expand the SSID, and select settings for **WLANXmlSettings: Autoconnect** and choose a**SecurityType**.
+    3.  Expand the **SSID > WLANXmlSettings > SecurityType** and choose a setting such as **Open**.
+    3.  Expand the **SSID > WLANXmlSettings > AutoConnect** and choose a setting such as **TRUE**.
     4.  Optional: to add more than one WLAN network, go back to WLANSetting, and repeat the process.
 
 7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916109).
-8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; Next** . Click **Browse** and create a new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.WiFi**. Call the package **WiFi.pkg**. Click **Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
+8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; Next &gt; Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
 9.  At the **All done!** page, click the link to the **Output location**.
 
 **Create a folder for the provisioning package in your test product**
@@ -77,34 +78,7 @@ i
 
 2.  Make sure that the package definition file is referenced in the feature manifest. For example, check C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml:
     ```
-    <?xml version="1.0" encoding="utf-8"?>
-    <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
-      <BasePackages>
-        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.Version.cab"/>
-        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.TestSettings.cab"/>
-      </BasePackages>
-      <Features>
-        <OEM>
-          <!-- Feature definitions below -->
-     
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Manual.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_ProvManual</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
-          
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.CrashSettings.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_CrashSettings</FeatureID>
-            </FeatureIDs>
-          </PackageFile>    
-
-          <!-- Packages with Product specific contents included -->
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Custom.Cmd.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_CustomCmd</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
+    ....
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Auto.cab">
             <FeatureIDs>
               <FeatureID>OEM_ProvAuto</FeatureID>
@@ -112,19 +86,21 @@ i
           </PackageFile>    
           
         </OEM>
-        <OEMFeatureGroups>
-        <!-- Feature Constraints below -->
-        <!-- This ensures that only one of the Provisioning package is included -->
-          <FeatureGroup Constraint="ZeroOrOne">
+ ....
             <FeatureIDs>
               <FeatureID>OEM_ProvAuto</FeatureID>
               <FeatureID>OEM_ProvManual</FeatureID>        
             </FeatureIDs>
-          </FeatureGroup>
-        </OEMFeatureGroups>
-      </Features>
-    </FeatureManifest>
+
     ```
+
+3.  Add the FeatureID to your test configuration file C:\\IoT-ADK-AddonKit\\Source-<arch>\\Products\\ProductA\\TestOEMInput.xml:
+    ```
+    <Feature>OEM_ProvAuto</Feature>
+
+    ```
+
+
 
 ### <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
@@ -136,7 +112,7 @@ i
     createimage ProductA Test
     ```
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
+    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\Flash.FFU.
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 3.  Put the card into the IoT device and start it up.
@@ -146,20 +122,23 @@ i
 **Check to see if your provisioning settings were applied**
 
 1.  Connect a network cable.
-2.  Note the IP address that shows up on the device.
 3.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
 
     ``` syntax
-    http://192.168.0.100:8080
+    http://100.100.0.100:8080
     ```
 
     This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 4.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
 5.  Click **Networking.**
-6.  Check the **Profiles** drop-down, you should see the Wi-Fi profile you created.
+6.  Check the **Profiles** drop-down, you should see the Wi-Fi profile you created. If you're testing on a real WiFi network, and if AutoConnect is selected, then in Available Networks you should see a check mark next to your network.
 
  
+## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
+
+
+[Step 5: Build a retail image](build-retail-image.md)
 
  
 
