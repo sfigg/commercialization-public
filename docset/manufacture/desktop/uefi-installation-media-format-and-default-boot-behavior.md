@@ -47,7 +47,7 @@ The following additional guidelines apply for boot media:
 
 [UEFI Firmware](uefi-firmware.md)
 
-[BCDBoot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDBoot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Boot to UEFI Mode or Legacy BIOS mode](boot-to-uefi-mode-or-legacy-bios-mode.md)
 

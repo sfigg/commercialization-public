@@ -29,7 +29,7 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes methods to deploy different drive configurations, including hard drives, solid-state drives (SSDs), and virtual hard drives (VHDs).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)</p></td>
+<td align="left"><p>[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)</p></td>
 <td align="left"><p>Describes how to create and deploy Windows using virtual hard disks (VHDs).</p></td>
 </tr>
 <tr class="even">

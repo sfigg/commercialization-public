@@ -16,7 +16,7 @@ Oobe.xml is a content file used to collect text and images for customizing Windo
 
 [Oobe.xml Settings](oobexml-settings.md)
 
-[How Oobe.xml Works](how-oobexml-works-auth-8-tech-ref.md)
+[How Oobe.xml Works](how-oobexml-works.md)
 
 ## <span id="related_topics"></span>Related topics
 

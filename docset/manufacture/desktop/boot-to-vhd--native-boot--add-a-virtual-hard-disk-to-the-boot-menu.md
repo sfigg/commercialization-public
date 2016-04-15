@@ -211,7 +211,7 @@ You can deploy the VHD to a device that already has a copy of Windows installed 
 
 [Understanding Virtual Hard Disks with Native Boot](understanding-virtual-hard-disks-with-native-boot.md)
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

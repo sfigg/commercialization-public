@@ -40,7 +40,7 @@ You can manually add create partitions using BCDEdit, or you can use a third-par
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

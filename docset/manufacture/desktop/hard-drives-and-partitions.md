@@ -162,7 +162,7 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md) | [Factory Encrypted Drives](factory-encrypted-drives.md) | [BitLocker Drive Encryption](bitlocker-drive-encryption.md)</p></td>
+<td align="left"><p>[Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md) | [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md) | [Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md) | [Factory Encrypted Drives](factory-encrypted-drives.md) | [BitLocker Drive Encryption](bitlocker-drive-encryption.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>
@@ -170,7 +170,7 @@ For typical single-drive configurations, we do not recommend that you use a sepa
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [The Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=88211) | [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md) | [DiskPart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458) | [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)</p></td>
+<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [The Windows and GPT FAQ](http://go.microsoft.com/fwlink/?LinkId=88211) | [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md) | [DiskPart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458) | [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)</p></td>
 </tr>
 </tbody>
 </table>

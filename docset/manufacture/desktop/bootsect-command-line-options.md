@@ -80,7 +80,7 @@ For example, to apply the master boot code that is compatible with NTLDR to the 
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

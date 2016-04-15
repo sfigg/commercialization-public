@@ -89,7 +89,7 @@ Before you install Windows on a UEFI-based PC, note the following:
 
     For instructions, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md) or [WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)](winpe-install-on-a-hard-drive--flat-boot-or-non-ram.md).
 
--   Note to firmware manufacturers: Do not use tools or applications to alter Windows-specific boot files, including files in the C:\\boot and C:\\EFI folders. Altering these files could interfere with the PC’s ability to boot up, to resume from hibernation, or to run system recovery tools. Instead, use tools such as BCDboot to set the boot order. For more info, see [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md).
+-   Note to firmware manufacturers: Do not use tools or applications to alter Windows-specific boot files, including files in the C:\\boot and C:\\EFI folders. Altering these files could interfere with the PC’s ability to boot up, to resume from hibernation, or to run system recovery tools. Instead, use tools such as BCDboot to set the boot order. For more info, see [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md).
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>See Also
 

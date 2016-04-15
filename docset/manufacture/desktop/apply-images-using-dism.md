@@ -79,7 +79,7 @@ If you apply an image to a volume with an existing Windows installation, files f
     C:\Windows\System32\bcdboot C:\Windows /l en-US
     ```
 
-    For more information about the BCDboot tool, see [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md).
+    For more information about the BCDboot tool, see [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md).
 
     **Note**  
     You can also set up the system partition by applying an image. Use the **DISM** **/apply-image** command. For example:

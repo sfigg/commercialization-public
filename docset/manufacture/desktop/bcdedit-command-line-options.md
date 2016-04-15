@@ -23,7 +23,7 @@ BCDEdit is included in the %WINDIR%\\System32 folder.
 
 BCDEdit is limited to the standard data types and is designed primarily to perform single common changes to BCD. Related resources:
 
--   Some common BCD operations, such as recovering a partition or setting up a new PC's system partition, may be more easily accomplished by using [BCDboot](bcdboot-command-line-options-8-techref-di.md).
+-   Some common BCD operations, such as recovering a partition or setting up a new PC's system partition, may be more easily accomplished by using [BCDboot](bcdboot-command-line-options-techref-di.md).
 -   For complex operations or nonstandard data types, consider using the BCD Windows Management Instrumentation (WMI) application programming interface (API) to create more powerful and flexible custom tools.
 
 ## <span id="BCDEdit_Command-Line_Options"></span><span id="bcdedit_command-line_options"></span><span id="BCDEDIT_COMMAND-LINE_OPTIONS"></span>BCDEdit Command-Line Options
@@ -179,7 +179,7 @@ For examples of BCDEdit, see [Boot Configuration Data in Windows Vista](http://g
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot](bcdboot-command-line-options-techref-di.md)
 
 [BCD System Store Settings for UEFI](bcd-system-store-settings-for-uefi.md)
 

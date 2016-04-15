@@ -170,7 +170,7 @@ After the image is captured and stored, you can:
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)
 

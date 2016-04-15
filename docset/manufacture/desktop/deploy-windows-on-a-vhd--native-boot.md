@@ -56,7 +56,7 @@ The Windows Deployment Server role supports deployment of VHD image files in ad
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

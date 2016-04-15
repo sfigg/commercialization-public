@@ -215,7 +215,7 @@ For information about repairing the boot files on a PC with Windows XP and a mor
 
 [BCDedit](http://go.microsoft.com/fwlink/?LinkId=128459)
 
-[Bootsect Command-Line Options](bootsect-command-line-options-auth-8-tech-ref.md)
+[Bootsect Command-Line Options](bootsect-command-line-options.md)
 
 [Diskpart Command line syntax](http://go.microsoft.com/fwlink/?LinkId=128458)
 

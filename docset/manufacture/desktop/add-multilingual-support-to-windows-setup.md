@@ -243,7 +243,7 @@ In this step, you create a boot order file. Due to the size of the image, you mu
 ## <span id="Next_Steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next Steps
 
 
-You can now use the multilingual image to create media for distribution. To create bootable media such as a USB flash drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md). You can also create a bootable CD or DVD. However, due to the size of a multilingual image, you must first create a boot order file before you create a bootable image (.iso) file on CD or DVD. For more information, see [Oscdimg Command-Line Options](oscdimg-command-line-options-auth-8-tech-ref.md).
+You can now use the multilingual image to create media for distribution. To create bootable media such as a USB flash drive, see [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md). You can also create a bootable CD or DVD. However, due to the size of a multilingual image, you must first create a boot order file before you create a bootable image (.iso) file on CD or DVD. For more information, see [Oscdimg Command-Line Options](oscdimg-command-line-options.md).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -254,7 +254,7 @@ You can now use the multilingual image to create media for distribution. To crea
 
 [DISM Windows PE Servicing Command-Line Options](dism-windows-pe-servicing-command-line-options.md)
 
-[Oscdimg Command-Line Options](oscdimg-command-line-options-auth-8-tech-ref.md)
+[Oscdimg Command-Line Options](oscdimg-command-line-options.md)
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 

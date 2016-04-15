@@ -93,7 +93,7 @@ To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Optio
 **VHD/VHDX**
 [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 
-[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)
+[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)
 
 **FFU**
 [Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)

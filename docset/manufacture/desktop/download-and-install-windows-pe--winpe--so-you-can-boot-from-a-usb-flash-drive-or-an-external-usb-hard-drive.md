@@ -125,7 +125,7 @@ For more information about how to use the BCDedit tool, see [this Microsoft Web 
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 

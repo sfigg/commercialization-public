@@ -173,7 +173,7 @@ Here's a few ways to apply the image:
 
 [Configure BIOS/MBR-Based Hard Drive Partitions](configure-biosmbr-based-hard-drive-partitions.md)
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
 
