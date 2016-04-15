@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'In this section, we''ll focus on adding the Start layout modification file, preloading an app, and configuring some customization settings using MCSF.For more detailed information about the various customizations you can do, see Customize using the mobile MCSF framework.'
 MS-HAID: 'p\_mobile\_deployment.configure\_customization\_settings'
 MSHAttr: 'PreferredLib:/library'

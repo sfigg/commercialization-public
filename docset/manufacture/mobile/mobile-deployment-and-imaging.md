@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'Windows 10 Mobile brings the features available in Windows 10 to mobile devices.'
 MS-HAID: 'p\_mobile\_deployment.mobile\_deployment\_and\_imaging'
 MSHAttr: 'PreferredLib:/library'
