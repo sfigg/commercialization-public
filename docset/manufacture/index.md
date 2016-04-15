@@ -47,7 +47,7 @@ Use the manufacturing tools to deploy your Windows [customizations](../customize
 <p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[Desktop manufacturing](desktop/windows-deployment-tools-technical-reference.md)</td>
+<td align="left">[Desktop manufacturing](desktop/index.md)</td>
 <td align="left">Technical reference for Windows 10 for desktop editions</td>
 </tr>
 <tr class="odd">

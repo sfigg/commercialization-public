@@ -96,7 +96,7 @@ These topics describe additional Windows deployment options and customization sc
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Deployment Tools Technical Reference](windows-deployment-tools-technical-reference.md)
+[Windows Deployment Tools Technical Reference](index.md)
 
  
 
