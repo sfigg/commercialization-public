@@ -70,7 +70,7 @@ Describes the **EFI\_CHECKSIG\_PROTOCOL**.
 
 [Flashing tools](flashing-tools.md)
 
-[Manufacturing](manufacturing.md)
+[Manufacturing](index.md)
 
  
 

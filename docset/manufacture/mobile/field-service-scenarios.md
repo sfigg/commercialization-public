@@ -60,7 +60,7 @@ Scenarios can help to identify security vulnerabilities in field service process
 ## <span id="related_topics"></span>Related topics
 
 
-[Manufacturing](manufacturing.md)
+[Manufacturing](index.md)
 
  
 
