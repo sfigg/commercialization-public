@@ -371,10 +371,8 @@
 #### [New-RequestForMicrosoftUpdate cmdlet](service/mobile/new-requestformicrosoftupdate-cmdlet.md)
 #### [Get-RequestForUpdate cmdlet](service/mobile/get-requestforupdate-cmdlet.md)
 #### [Request-UpdateCancellation cmdlet](service/mobile/request-updatecancellation.md)
-
-## [Mobile device refurbishment](service/mobile/refurbish-a-mobile-device-portal.md)
 ### [Resetting a mobile device](service/mobile/resetting-the-phone.md)
-## [Upgrade Windows Embedded devices to Windows 10](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
+## [Windows Embedded device upgrades](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 
 ## [IoT Core updates](service/iot/index.md)
 ### [IoT Core OS Update](service/iot/iot-core-update.md)
