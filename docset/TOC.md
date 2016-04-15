@@ -347,7 +347,7 @@
 
 # [Service](service/index.md)
 
-## [Mobile servicing and updates](service/mobile/index.md)
+## [Mobile servicing](service/mobile/index.md)
 ### [Update requirements](service/mobile/update-requirements.md)
 ### [Test an update](service/mobile/test-an-update.md)
 ### [Submit an update](service/mobile/submit-an-update.md)
@@ -371,10 +371,10 @@
 #### [New-RequestForMicrosoftUpdate cmdlet](service/mobile/new-requestformicrosoftupdate-cmdlet.md)
 #### [Get-RequestForUpdate cmdlet](service/mobile/get-requestforupdate-cmdlet.md)
 #### [Request-UpdateCancellation cmdlet](service/mobile/request-updatecancellation.md)
+### [Refurbish a mobile device](service/mobile/refurbish-a-mobile-device-portal.md)
+### [Reset a mobile device](service/mobile/resetting-the-phone.md)
 
-## [Mobile device refurbishment](service/mobile/refurbish-a-mobile-device-portal.md)
-### [Resetting a mobile device](service/mobile/resetting-the-phone.md)
-## [Upgrade Windows Embedded devices to Windows 10](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
+## [Windows Embedded upgrades](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 
 ## [IoT Core updates](service/iot/index.md)
 ### [IoT Core OS Update](service/iot/iot-core-update.md)
