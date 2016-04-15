@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'Here''s what you''ll need to start customizing, testing, and deploying Windows on mobile devices.'
 MS-HAID: 'p\_mobile\_deployment.preparing\_for\_windows\_mobile\_development'
 MSHAttr: 'PreferredLib:/library'

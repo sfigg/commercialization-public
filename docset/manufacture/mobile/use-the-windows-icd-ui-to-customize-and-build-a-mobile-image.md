@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'You can use the Windows Imaging and Configuration Designer (ICD) UI to create a new Windows 10 Mobile image and customize it by adding settings and some assets.'
 MS-HAID: 'p\_mobile\_deployment.use\_the\_windows\_icd\_ui\_to\_customize\_and\_build\_a\_mobile\_image'
 MSHAttr: 'PreferredLib:/library'

@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'In this section, we''ll go through the process of customizing and building a mobile image using the classic, or Windows Phone 8.1, tools.'
 MS-HAID: 'p\_mobile\_deployment.lab\_1\_\_classic\_mobile\_deployment'
 MSHAttr: 'PreferredLib:/library'

@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: 'You need to sign a mobile image before you can deploy it to a device.'
 MS-HAID: 'p\_mobile\_deployment.sign\_a\_mobile\_image'
 MSHAttr: 'PreferredLib:/library'
