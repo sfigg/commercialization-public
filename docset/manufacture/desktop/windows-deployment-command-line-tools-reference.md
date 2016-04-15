@@ -49,7 +49,7 @@ These command-line tools are often used when manufacturing Windows devices.
 
 [Server Manager command-line tools](http://go.microsoft.com/fwlink/?LinkId=132134)
 
-[Windows Deployment Tools Technical Reference](windows-deployment-tools-technical-reference.md)
+[Windows Deployment Tools Technical Reference](index.md)
 
  
 

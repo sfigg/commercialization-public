@@ -1,6 +1,6 @@
 #[Manufacture](manufacture/index.md)
 
-## [Desktop manufacturing](manufacture/desktop/windows-deployment-tools-technical-reference.md)
+## [Desktop manufacturing](manufacture/desktop/index.md)
 
 ### [OEM deployment of Windows 10 for desktop editions](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
 ### [System builder deployment of Windows 10 for desktop editions](manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)
