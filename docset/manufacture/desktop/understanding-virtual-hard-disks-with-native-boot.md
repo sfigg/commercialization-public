@@ -11,25 +11,6 @@ title: Understanding Virtual Hard Disks with Native Boot
 
 Native boot enables virtual hard disks (VHDs) to run on a computer without a virtual machine or *hypervisor*. A hypervisor is a layer of software under the operating system that runs virtual machines.
 
-## <span id="In_This_Topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In This Topic
-
-
--   [What Is VHD with Native Boot?](#bkmk-whatisvhd)
-
--   [Common Scenarios](#bkmk-commonscenarios)
-
--   [Requirements](#bkmk-requirements)
-
--   [Benefits](#bkmk-benefits)
-
--   [Limitations](#bkmk-limitations)
-
--   [Recommendations](#bkmk-recommendations)
-
--   [Types of Virtual Hard Disks](#bkmk-typesofvhds)
-
--   [Technologies Related to VHDs with Native Boot](#bkmk-technologies)
-
 ## <span id="BKMK_whatIsVHD"></span><span id="bkmk_whatisvhd"></span><span id="BKMK_WHATISVHD"></span>What Is VHD with Native Boot?
 
 
