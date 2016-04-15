@@ -340,7 +340,7 @@
 #### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
-### [IoT Core Add-ons command-line options](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
+### [IoT Core Add-ons command-line options](manufacture/iot/iot-core-adk-addons-command-line-options.md)
 
 
 
