@@ -1,4 +1,4 @@
-#[Manufacture](manufacture/index.md)
+# [Manufacture](manufacture/index.md)
 
 ## [Desktop manufacturing](manufacture/desktop/index.md)
 
