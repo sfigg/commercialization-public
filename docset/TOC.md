@@ -235,7 +235,7 @@
 #### [Bootsect Command-Line Options](manufacture/desktop/bootsect-command-line-options-auth-8-tech-ref.md)
 #### [Oscdimg Command-Line Options](manufacture/desktop/oscdimg-command-line-options-auth-8-tech-ref.md)
 
-## [Mobile manufacturing](manufacture/mobile/manufacturing.md)
+## [Mobile manufacturing](manufacture/mobile/index.md)
 
 ### [Mobile deployment and imaging](manufacture/mobile/mobile-deployment-and-imaging.md)
 #### [Prepare for Windows mobile development](manufacture/mobile/preparing-for-windows-mobile-development.md)
