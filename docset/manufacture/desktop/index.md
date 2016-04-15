@@ -28,7 +28,7 @@ After you've learned how to design, develop, and customize Windows images, you c
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Getting started</strong></p></td>
-<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](http://go.microsoft.com/fwlink/p/?LinkId=526101)</p></td>
+<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment options</strong></p></td>
