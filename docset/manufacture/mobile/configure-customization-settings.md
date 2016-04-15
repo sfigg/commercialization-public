@@ -4,6 +4,7 @@ Description: 'In this section, we''ll focus on adding the Start layout modificat
 MS-HAID: 'p\_mobile\_deployment.configure\_customization\_settings'
 MSHAttr: 'PreferredLib:/library'
 title: Configure customization settings
+author: CelesteDG
 ---
 
 # Configure customization settings

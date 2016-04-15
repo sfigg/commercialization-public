@@ -4,6 +4,7 @@ Description: 'You need to sign a mobile image before you can deploy it to a devi
 MS-HAID: 'p\_mobile\_deployment.sign\_a\_mobile\_image'
 MSHAttr: 'PreferredLib:/library'
 title: Sign a mobile image
+author: CelesteDG
 ---
 
 # Sign a mobile image

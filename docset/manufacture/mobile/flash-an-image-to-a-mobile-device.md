@@ -4,6 +4,7 @@ Description: 'Flashing is the process of getting a mobile image into a mobile de
 MS-HAID: 'p\_mobile\_deployment.flash\_an\_image\_to\_a\_mobile\_device'
 MSHAttr: 'PreferredLib:/library'
 title: Flash an image to a mobile device
+author: CelesteDG
 ---
 
 # Flash an image to a mobile device

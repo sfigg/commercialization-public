@@ -4,6 +4,7 @@ Description: 'You can use the Windows Imaging and Configuration Designer (ICD) U
 MS-HAID: 'p\_mobile\_deployment.use\_the\_windows\_icd\_ui\_to\_customize\_and\_build\_a\_mobile\_image'
 MSHAttr: 'PreferredLib:/library'
 title: Use the Windows ICD UI to customize and build a mobile image
+author: CelesteDG
 ---
 
 # Use the Windows ICD UI to customize and build a mobile image

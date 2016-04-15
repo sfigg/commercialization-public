@@ -4,6 +4,7 @@ Description: 'An OEMInput file specifies the device platform, the feature manife
 MS-HAID: 'p\_mobile\_deployment.configure\_the\_oeminput\_file'
 MSHAttr: 'PreferredLib:/library'
 title: Configure the OEMInput file
+author: CelesteDG
 ---
 
 # Configure the OEMInput file

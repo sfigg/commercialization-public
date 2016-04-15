@@ -4,6 +4,7 @@ Description: 'Here''s what you''ll need to start customizing, testing, and deplo
 MS-HAID: 'p\_mobile\_deployment.preparing\_for\_windows\_mobile\_development'
 MSHAttr: 'PreferredLib:/library'
 title: Prepare for Windows mobile development
+author: CelesteDG
 ---
 
 # Prepare for Windows mobile development
@@ -16,7 +17,7 @@ Here's what you'll need to start customizing, testing, and deploying Windows on 
 
 Before you can get started on your Windows mobile development, make sure you meet these requirements:
 
--   You have access to the Signiant Media Exchange where mobile partners can download the latest mobile OS kits and packages.
+-   You have access to the Microsoft Connect site where mobile partners can download the latest mobile OS kits and packages.
 
     If you don't have access or need more information, contact your Microsoft representative.
 

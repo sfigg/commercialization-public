@@ -4,6 +4,7 @@ Description: 'You can now easily configure the default Start layout to include W
 MS-HAID: 'p\_mobile\_deployment.configure\_the\_start\_layout'
 MSHAttr: 'PreferredLib:/library'
 title: Configure the Start layout
+author: CelesteDG
 ---
 
 # Configure the Start layout

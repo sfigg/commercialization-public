@@ -4,6 +4,7 @@ Description: 'You can use the Windows Imaging and Configuration Designer (ICD) c
 MS-HAID: 'p\_mobile\_deployment.use\_the\_windows\_icd\_cli\_to\_customize\_and\_build\_a\_mobile\_image'
 MSHAttr: 'PreferredLib:/library'
 title: Use the Windows ICD CLI to customize and build a mobile image
+author: CelesteDG
 ---
 
 # Use the Windows ICD CLI to customize and build a mobile image
@@ -11,7 +12,9 @@ title: Use the Windows ICD CLI to customize and build a mobile image
 
 You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.
 
-This imaging method requires a pre-installed OS kit so you must have all the necessary Microsoft OS packages and feature manifest files in your default install path. A configuration data file (BSP.config.xml), which contains information about the hardware component packages for your board support package (BSP), is also required. For the BSP.config.xml file, you can:
+This imaging method requires a pre-installed OS kit so you must have all the necessary Microsoft OS packages and feature manifest files in your default install path. You also need either a BSP.config.xml file, which contains information about the hardware component packages for your board support package (BSP) or you can use an OEMInput.xml file.
+
+If you're using a BSP.config.xml file, you can:
 
 -   Use the BSP.config.xml file you downloaded as part of the BSP kit, or,
 
@@ -267,7 +270,7 @@ This walkthrough shows how to use the Windows ICD CLI to build a mobile image. F
 
 3.  Using the updated customizations.xml (with multivariant settings) and the MCSF CAF created in [Configure customization settings](configure-customization-settings.md), use the Windows ICD CLI to build a mobile image.
 
-    To do this with the example files, see the following command:
+    To do this with the example files and using a bsp.config.xml, see the following command:
 
     **icd.exe /Build-ImageFromPackages /ImagePath:"***C:\\Contoso\\Customizations\\TestFlash2.ffu***" /BSPConfigFile:"***C:\\ContosoXDevice.bsp.config.xml***" /ImageType:***Test* **/CustomizationXML:"***C:\\Contoso\\Customizations\\customizations.xml***" /OEMCustomizationVer:***1.0.0.0* **/MCSFCustomizationXML:"***C:\\Contoso\\Customizations\\MobileCustomizations.xml***"**
 
@@ -278,6 +281,10 @@ This walkthrough shows how to use the Windows ICD CLI to build a mobile image. F
     -   Use /CustomizationXML to point to the customizations.xml
     -   Windows ICD requires /OEMCustomizationVer if ProvisioningPackage is defined
     -   Make sure the format for the /OEMCustomizationVer version number is in *&lt;Major&gt;.&lt;Minor&gt;.&lt;SubVersion&gt;.&lt;SubMinorVersion&gt;*, such as 1.0.0.0
+
+    To do this with the example files and using an OEMInput.xml file, see the following command:
+
+    **icd.exe /Build-ImageFromPackages /ImagePath:"***C:\\Contoso\\Customizations\\TestFlash2.ffu***" /OEMInputXML:"***C:\\ContosoTestOEMInput.xml***" /CustomizationXML:"***C:\\Contoso\\Customizations\\customizations.xml***" /OEMCustomizationVer:***1.0.0.0* **/MCSFCustomizationXML:"***C:\\Contoso\\Customizations\\MobileCustomizations.xml***"**
 
 Once the image (FFU) is built, you can flash it to your mobile device by using ffutool.exe or the **Deploy** option in the Windows ICD UI. See the following section for more information.
 

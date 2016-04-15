@@ -4,6 +4,7 @@ Description: 'In this section, we''ll go through the process of customizing and 
 MS-HAID: 'p\_mobile\_deployment.lab\_1\_\_classic\_mobile\_deployment'
 MSHAttr: 'PreferredLib:/library'
 title: 'Part 1: Classic mobile deployment'
+author: CelesteDG
 ---
 
 # Part 1: Classic mobile deployment
