@@ -1,5 +1,4 @@
 ---
-author: kpacquer
 Description: Creating a secure MMOS WIM image
 MS-HAID: 'p\_phManuRetail.creating\_a\_secure\_mmos\_wim\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -32,8 +31,6 @@ To create a secure wim image, complete the following steps.
     **Note**  
     The image generation executables are located in %WPDKCONTENTROOT%\\Tools\\bin\\i386. You can use the `set` command to add that path to your environment.
 
-     
-
 2.  The platform ID must be used to create the WIM for a specific platform. The platform ID is set in using a device platform XML file.
 
     You can display the platform ID using the ffutool command with the **–list** option.
@@ -61,14 +58,10 @@ To create a secure wim image, complete the following steps.
     **Important**  
     Information about signing with the final retail certificates will be provided in a later release of the documentation.
 
-     
-
     To sign the catalog using the test image certificate, use this command.
 
-    ``` syntax
-    C:\> sign /pk MMOSwim.cat
-    ```
-
+        C:\> sign /pk MMOSwim.cat
+    
     This command will generate output that is similar to the following.
 
     ``` syntax

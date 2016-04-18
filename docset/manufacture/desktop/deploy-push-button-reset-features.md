@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: 'Push-button reset features are included with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), though you''ll need to perform additional steps to deploy PCs with the following customizations.'
 MS-HAID: 'p\_adk\_online.deploy\_push\_button\_reset\_features'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -312,9 +311,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 1.  Create a diskpart script for bare-metal recovery.
 
-    **Important**  The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
-
-     
+    **Important** The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
 
     **UEFI example**:
 
@@ -346,7 +343,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
     assign letter="T"
     exit
     ```
-
+    
     **BIOS example**:
 
     ``` syntax

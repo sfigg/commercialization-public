@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: 'WinPE: Storage Area Network (SAN) Policy'
 MS-HAID: 'p\_adk\_online.winpe\_storage\_area\_network\_\_san\_\_policy'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -75,13 +74,9 @@ For Windows PE images that are available in the Windows Assessment and Deployme
     </tbody>
     </table>
 
-     
-
     This example shows how to configure the SAN policy on a Windows PE image to mount all disks except those disks on a shared bus:
 
-    ``` syntax
-    Setsanpolicy C:\winpe_x86\mount <2>
-    ```
+        Setsanpolicy C:\winpe_x86\mount <2>
 
     where *&lt;2&gt;* is the SAN policy number that mounts all storage device except those on a shared bus.
 
@@ -100,7 +95,7 @@ You can change the default SAN policy of a Windows image by using Windows System
 
 1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**.
 
-2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085) and [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
+2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8) and [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8).
 
 3.  On the **Insert** menu, click **RunSynchronous**.
 
@@ -108,8 +103,6 @@ You can change the default SAN policy of a Windows image by using Windows System
 
     **Note**  
     Don't use the **RunSynchronousNetsh advfirewall** command during the [specialize](specialize.md) configuration pass.
-
-     
 
     The **Create Synchronous Command** dialog box appears.
 

@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: Customize Windows RE
 MS-HAID: 'p\_adk\_online.customize\_windows\_re'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -26,11 +25,6 @@ To complete this walkthrough, you need the following:
 -   The Windows image (install.wim). This can be from the Windows installation media or from a reference image.
 
 ## <span id="BKMK_ExtractImage"></span><span id="bkmk_extractimage"></span><span id="BKMK_EXTRACTIMAGE"></span>Step 1: Mount the Windows and Windows RE image
-
-
-**Note**  
-
- 
 
 **Mount the images**
 
