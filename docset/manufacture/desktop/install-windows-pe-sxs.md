@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: Install Windows PE
 MS-HAID: 'p\_sxs\_dmfg.install\_windows\_pe\_sxs'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -42,8 +41,6 @@ For this lab, you'll need two storage locations:
 2.  For some devices, add drivers:
 
     **Note**  Most devices don't need this step. But if you boot WinPE later and find you can't see the screen or connect to the network, you may need to add a video or network driver.
-
-     
 
     ``` syntax
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"

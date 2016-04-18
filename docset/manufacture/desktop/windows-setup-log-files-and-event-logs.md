@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: Windows Setup Log Files and Event Logs
 MS-HAID: 'p\_adk\_online.windows\_setup\_log\_files\_and\_event\_logs'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -87,7 +86,7 @@ From the command line, use the **Wevtutil** or **Tracerpt** commands to save the
 Wevtutil qe /lf C:\windows\panther\setup.etl 
 ```
 
-- or -
+-or-
 
 ``` syntax
 Tracerpt /l C:\windows\panther\setup.etl

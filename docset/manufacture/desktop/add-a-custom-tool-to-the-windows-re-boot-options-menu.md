@@ -1,5 +1,4 @@
 ---
-author: Justinha
 Description: Add a custom tool to the Windows RE boot options menu
 MS-HAID: 'p\_adk\_online.add\_a\_custom\_tool\_to\_the\_windows\_re\_boot\_options\_menu'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -7,7 +6,6 @@ title: Add a custom tool to the Windows RE boot options menu
 ---
 
 # Add a custom tool to the Windows RE boot options menu
-
 
 You can add a custom troubleshooting or diagnostic tool to the Windows Recovery Environment (WinRE) image. This tool is displayed in the Boot Options menu.
 
@@ -48,11 +46,9 @@ New for Windows 10: You won't be able to add WinRE optional components that are
     **Note**  
     You can only add one custom tool to the WinRE boot options menus.
 
-     
-
     Save the file using UTF-8 coding. Do not use ANSI:
 
-    Click **File**, and then click **Save As**. In the **Encoding** box, select **UTF-8**, and save this file as `C:\mount\WinREConfig.xml`
+    Click **File**, and then click **Save As**. In the **Encoding** box, select **UTF-8**, and save this file as `C:\mount\WinREConfig.xml`.
 
 3.  Create a \\Sources\\Recovery\\Tools folder in the WinRE mount folder, and then copy the custom tool and its configuration file into the new folder:
 
@@ -106,11 +102,9 @@ New for Windows 10: You won't be able to add WinRE optional components that are
     **Warning**  
     Limit the `<Name>` and `<Description>` values to approximately 30 characters or less to make sure that they appear correctly in the boot options menu.
 
-     
-
     Save the file using UTF-8 coding:
 
-    Click **File**, and then click **Save As**. In the **Encoding** box, select **UTF-8**, and save this file as `E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml`
+    Click **File**, and then click **Save As**. In the **Encoding** box, select **UTF-8**, and save this file as `E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml`.
 
     Where *E:\\* is the drive letter of a removable drive or network location.
 
@@ -125,16 +119,12 @@ New for Windows 10: You won't be able to add WinRE optional components that are
     **Note**  
     For more information about deploying Windows, see the [Deploy Windows RE](deploy-windows-re.md) topic.
 
-     
-
 **To verify the custom tool appears in the Boot Options menu when launched from Windows**
 
 1.  Restart the destination computer, and complete OOBE as your user.
 
     **Note**  
-    If you are prompted for a product key, click **Skip**.
-
-     
+    If you are prompted for a product key, click **Skip**.   
 
 2.  Click **Start** &gt; **PC settings**, and then select **General**.
 
@@ -159,7 +149,6 @@ New for Windows 10: You won't be able to add WinRE optional components that are
         Reagentc /setbootshelllink /configfile E:\Recovery\BootMenu\AddDiagnosticsToolToBootMenu.xml
         Reagentc /enable
         ```
-
 **To verify the custom tool appears in the WinRE recovery menu**
 
 1.  In the recovery menu, select **Troubleshoot**, and then click the **Fabrikam Utility** link.
