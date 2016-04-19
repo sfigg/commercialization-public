@@ -7,8 +7,6 @@ title: Get the tools needed to customize Windows IoT Core
 # Get the tools needed to customize Windows IoT Core
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
-
 Here's the software you'll need to create images using the Windows 10 IoT Core (IoT Core) ADK Add-Ons:
 
 ## <span id="PCs_and_devices"></span><span id="pcs_and_devices"></span><span id="PCS_AND_DEVICES"></span>PCs and devices

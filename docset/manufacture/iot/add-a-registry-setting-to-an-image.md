@@ -8,7 +8,7 @@ title: 'Lab 1c: Add a file and a registry setting to an image'
 # Lab 1c: Add a file and a registry setting to an image
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
 We'll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.
 
@@ -52,7 +52,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Add sample files to the package**
 
-1.  Update the app's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\File.TestFileAndRegKey\\File.TestFileAndRegKey.pkg.xml**.
+1.  Update the app's package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\File.TestFileAndRegKey\\File.TestFileAndRegKey.pkg.xml**.
 
     The default package definition file includes sample XML that you can modify to add your own registry keys and files.
 

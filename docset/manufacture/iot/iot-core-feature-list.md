@@ -8,8 +8,6 @@ title: IoT Core feature list
 # IoT Core feature list
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
-
 Here's the features you can add to Windows 10 IoT Core (IoT Core) images.
 
 Add features using the OEMInput XML file. To learn more, see the [IoT Core manufacturing guide](iot-core-manufacturing-guide.md).

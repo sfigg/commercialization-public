@@ -8,8 +8,6 @@ title: 'IoT Core Add-ons command-line options'
 # <span id="p_iot_core.command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
-
 These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \\Tools folder. To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
 ## <span id="iotcoreshell.lnk"></span><span id="IOTCORESHELL.LNK"></span>IoTCoreShell.lnk
@@ -31,25 +29,18 @@ C:\Windows\System32\cmd.exe /k "C:\IoT-ADK-AddonKit\Tools\LaunchTool.cmd"
 After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
 
 
-
+## <span id="SETENV.CMD"></span>setenv.cmd
 Usage: `setenv <arch>`
 
 Parameters:
 
 -   `<arch>`: Architecture to be set. (`arm` or `x86`).
 
-Description: This command resets the following environment variables. Common variables used:
+Description: This command resets your environment variables. 
 
--   **IOTADK\_ROOT**= The path where Windows IoT Core Addons are installed, for example, C:\\IoT-ADK-AddonKit
--   **COMMON\_DIR**=%ADKADDONS\_ROOT%\\Common
--   **SRC\_DIR**=%ADKADDONS\_ROOT%\\Source-%1
--   **PKGUPD**=%SRC\_DIR%\\Updates
--   **PKGSRC\_DIR**=%SRC\_DIR%\\Packages
--   **BLD\_DIR**=%ADKADDONS\_ROOT%\\Build\\%BSP\_ARCH%
--   **PKGBLD\_DIR**=%BLD\_DIR%\\pkgs
--   **TOOLS\_DIR**=%ADDADONS\_ROOT%\\Tools
+Common variables used include **IOTADK\_ROOT**, **COMMON\_DIR**, **SRC\_DIR**, **BLD\_DIR**, **PKGBLD\_DIR**, **TOOLS\_DIR**, and more. 
 
-You can open setenv.cmd in a text editor to see the full list of variables set.
+Open setenv.cmd in a text editor to see the full list of variables set.
 
 Example:
 
@@ -153,7 +144,7 @@ createimage.cmd ProductA Retail
 
 Output is available at %BLD\_DIR%\\ProductA\\Retail
 
-## <span id="_UPDATEIMAGE.CMD"></span> updateimage.cmd
+<!--- ## <span id="_UPDATEIMAGE.CMD"></span> updateimage.cmd
 
 
 Usage: `updateimage <productname> <buildtype> <updatename>`
@@ -173,6 +164,33 @@ updateimage ProductA Retail Update1
 ```
 
 Output is available at %BLD\_DIR%\\ProductA\\Update1\\Retail
+
+--->
+
+
+## <span id="_NEWPKG.CMD"></span> newpkg.cmd
+
+
+Usage: `newpkg <package type> <component name> <sub-component name>`
+
+Parameters:
+
+-   `<package type>`:       The type of package created. Must be: **pkgAppx**, **pkgDrv**, or **pkgFile**. 
+-   `<component name>`:     Component name for the package. Examples include "App", "Driver", "File", "Registry", though you can use any naming scheme you like.
+-   `<sub-component name>`: Sub-component name for the package. Examples include "Blinky"
+
+
+Description: Creates a new working package directory under Packages, and creates a package definition file using a template file. Some of these package definition files include sample entries to help you add more items. For example, the pkgFile type includes a sample entry for a Registry Key.
+
+Example:
+
+``` syntax
+newpkg pkgAppx Appx HelloWorld
+newpkg pkgDrv Driver Blinky
+newpkg pkgFile File MyFile
+newpkg pkgFile Registry MyRegKey
+```
+
 
 ## <span id="_NEWPRODUCT.CMD"></span> newproduct.cmd
 

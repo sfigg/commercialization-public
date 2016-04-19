@@ -8,7 +8,7 @@ title: 'Lab 1e: Build a retail image'
 # Lab 1e: Build a retail image
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
 We''ll take our test image and convert it to a retail build. 
 
@@ -39,7 +39,6 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PLACEHOLDER_FEATURE</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
     <Feature>OEM_FileAndRegKey</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
@@ -50,10 +49,12 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     OEM_CustomCmd is required to trigger the app installation.
     
     OEM_ProvAuto is required to pull in the provisioning package.
+	
+	OEM_FileAndRegKey and OEM_AppxHelloWorld were added in previous labs.
 
 4.  To support your apps, add the FeatureIDs for IOT_UAP_OOBE and IOT_APP_TOOLKIT from the main list of Microsoft features:
 
-    :::syntax hl_lines="3 4"
+    ```
       <Features>
         <Microsoft> 
          <Feature>IOT_EFIESP</Feature> 
@@ -62,7 +63,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
          <Feature>IOT_APP_TOOLKIT</Feature> 
         </Microsoft>
        </Features>
-    :::
+    ```
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 

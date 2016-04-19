@@ -8,7 +8,7 @@ title: 'Lab 1b: Add an app to your image'
 # Lab 1b: Add an app to your image
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
 We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), and package it up so that it can be serviced after it reaches your customers.
 
@@ -231,20 +231,23 @@ Great, your app works! Now let's package it up so you can maintain your app even
 
 1.  Open **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\OEMCustomization.cmd**,
 2.  Recommended: Change the device's default username and password.
-3.  Remove "REM" before "call C:\\Appinstall\\AppInstall.cmd". This command automatically installs your app and sets it as the default app.
-4.  Recommended: remove "REM" before the cleanup actions to allow the device to remove the installation files.
+3.  Replace the rest of the code in the code block with the new section starting with ""if exists C:\Appinstall (" - this new section automatically installs your app whenever the installer app is present:
+
     ```
     REM OEM Customization Script file
+    
+	REM Enable Administrator User
+	net user MyAdmin MyP@ssw0rd /active:yes
+	
+	if exists C:\Appinstall (
+	REM Enable Application Installation
+	call C:\Appinstall\AppInstall.cmd
+	
+	REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
+	cd \
+	rmdir /S /Q C:\AppInstall
+	)
 
-    REM Enable Administrator User
-    net user MyAdmin MyP@ssw0rd /active:yes
-
-    REM Enable Application Installation
-    call C:\Appinstall\AppInstall.cmd
-
-    REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
-    cd \
-    rmdir /S /Q C:\AppInstall
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
