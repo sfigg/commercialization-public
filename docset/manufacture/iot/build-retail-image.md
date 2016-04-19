@@ -53,7 +53,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 4.  To support your apps, add the FeatureIDs for IOT_UAP_OOBE and IOT_APP_TOOLKIT from the main list of Microsoft features:
 
-    ``` syntax
+    :::syntax hl_lines="3 4"
       <Features>
         <Microsoft> 
          <Feature>IOT_EFIESP</Feature> 
@@ -62,7 +62,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
          <Feature>IOT_APP_TOOLKIT</Feature> 
         </Microsoft>
        </Features>
-    ```
+    :::
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 
