@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Ends a phone call.'
 MS-HAID: 'p\_phManuRetail.mfgphoneendcall'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'BIOS/MBR-based hard drive partitions'
 MS-HAID: 'p\_adk\_online.configure\_biosmbr\_based\_hard\_drive\_partitions'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -12,14 +13,6 @@ Create custom partition layouts for your hard disk drives (HDDs), solid-state dr
 
 **Note**  If you use a custom partition layout on Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), update the push-button recovery script so the recovery tools can recreate the custom partition layout when needed.
 
- 
-
-In this topic:
-
--   [Drive partition rules](#diskpartitionrules)
--   [Partition layout](#recommendedpartitionconfigurations)
--   [System and utility partitions](#usingsystemandutilitypartitions)
--   [Sample Diskpart script](#relatedsamplefiles)
 
 ## <span id="DiskPartitionRules"></span><span id="diskpartitionrules"></span><span id="DISKPARTITIONRULES"></span>Drive partition rules
 

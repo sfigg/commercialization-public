@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Adding Wi-Fi manufacturing test support to the OID interface'
 MS-HAID: 'p\_phManuRetail.adding\_wi\_fi\_manufacturing\_test\_support\_to\_the\_oid\_interface'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

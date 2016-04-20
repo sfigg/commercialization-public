@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Create a Custom Power Plan
 MS-HAID: 'p\_adk\_online.create\_a\_custom\_power\_plan\_8\_technicalreference'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -12,7 +13,7 @@ A *power plan* is a collection of hardware and system settings that manages how 
 
 By default, Windows 8 and Windows Server® 2012 include three power plans: **Balanced**, **Power Saver**, and **High Performance**. You can customize these existing plans for your systems, create new plans that are based on the existing plans, or create a new power plan from scratch.
 
-Optimizing Windows power plans can help improve battery life. However, a single poorly performing application, device, or system feature can significantly reduce battery life. For information about factors that influence battery life, see [Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-8-technicalreference.md).
+Optimizing Windows power plans can help improve battery life. However, a single poorly performing application, device, or system feature can significantly reduce battery life. For information about factors that influence battery life, see [Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-technicalreference.md).
 
 ## <span id="In_this_topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In this topic
 
@@ -39,7 +40,7 @@ Optimizing Windows power plans can help improve battery life. However, a single 
 5.  Follow the on-screen instructions to create and customize a power plan file that is based on an existing plan. Name your power plan "OutdoorPlan".
 
     **Note**  
-    You can manage most common power plan settings through Control Panel. To fine-tune settings that do not appear in Control Panel, see [Fine-Tune a Custom Power Plan](fine-tune-a-custom-power-plan-8-technicalreference.md).
+    You can manage most common power plan settings through Control Panel. To fine-tune settings that do not appear in Control Panel, see [Fine-Tune a Custom Power Plan](fine-tune-a-custom-power-plan-technicalreference.md).
 
      
 
@@ -93,7 +94,7 @@ Optimizing Windows power plans can help improve battery life. However, a single 
 ## <span id="related_topics"></span>Related topics
 
 
-[Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-8-technicalreference.md)
+[Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-technicalreference.md)
 
 [Test Battery Life and Power Consumption](test-battery-life-and-power-consumption-technicalreference.md)
 

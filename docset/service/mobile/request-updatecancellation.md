@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Request-UpdateCancellation cmdlet'
 MS-HAID: 'p\_phUpdate.request-updatecancellation'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

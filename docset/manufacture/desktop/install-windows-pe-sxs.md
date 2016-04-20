@@ -42,8 +42,6 @@ For this lab, you'll need two storage locations:
 
     **Note**  Most devices don't need this step. But if you boot WinPE later and find you can't see the screen or connect to the network, you may need to add a video or network driver.
 
-     
-
     ``` syntax
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
     ```

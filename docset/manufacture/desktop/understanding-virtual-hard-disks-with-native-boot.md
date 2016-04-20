@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Understanding Virtual Hard Disks with Native Boot
 MS-HAID: 'p\_adk\_online.understanding\_virtual\_hard\_disks\_with\_native\_boot'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -9,25 +10,6 @@ title: Understanding Virtual Hard Disks with Native Boot
 
 
 Native boot enables virtual hard disks (VHDs) to run on a computer without a virtual machine or *hypervisor*. A hypervisor is a layer of software under the operating system that runs virtual machines.
-
-## <span id="In_This_Topic"></span><span id="in_this_topic"></span><span id="IN_THIS_TOPIC"></span>In This Topic
-
-
--   [What Is VHD with Native Boot?](#bkmk-whatisvhd)
-
--   [Common Scenarios](#bkmk-commonscenarios)
-
--   [Requirements](#bkmk-requirements)
-
--   [Benefits](#bkmk-benefits)
-
--   [Limitations](#bkmk-limitations)
-
--   [Recommendations](#bkmk-recommendations)
-
--   [Types of Virtual Hard Disks](#bkmk-typesofvhds)
-
--   [Technologies Related to VHDs with Native Boot](#bkmk-technologies)
 
 ## <span id="BKMK_whatIsVHD"></span><span id="bkmk_whatisvhd"></span><span id="BKMK_WHATISVHD"></span>What Is VHD with Native Boot?
 
@@ -133,7 +115,7 @@ VHDs with native boot generally use the following technologies:
 
 ### <span id="BCDboot"></span><span id="bcdboot"></span><span id="BCDBOOT"></span>BCDboot
 
-The BCDboot tool is used for initializing the BCD store and copying boot-environment files to the system partition during image deployment. BCD files describe boot applications and boot application settings. The objects and elements in the store effectively replace the Boot.ini file. When installing a native-boot VHD on designated hardware, you may have to update to a Windows 8 BCD store. For more information about the BCDboot tool, see [BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md).
+The BCDboot tool is used for initializing the BCD store and copying boot-environment files to the system partition during image deployment. BCD files describe boot applications and boot application settings. The objects and elements in the store effectively replace the Boot.ini file. When installing a native-boot VHD on designated hardware, you may have to update to a Windows 8 BCD store. For more information about the BCDboot tool, see [BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md).
 
 ### <span id="BCDedit"></span><span id="bcdedit"></span><span id="BCDEDIT"></span>BCDedit
 
@@ -150,7 +132,7 @@ Windows Deployment Services is a network-based installation server that enables 
 ## <span id="related_topics"></span>Related topics
 
 
-[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)
+[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)
 
 [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Access the touch interface in MMOS
 MS-HAID: 'p\_phManuRetail.access\_the\_touch\_interface\_in\_mmos'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

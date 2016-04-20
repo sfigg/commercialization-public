@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTESetData
 MS-HAID: 'p\_phManuRetail.wlanmtesetdata'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

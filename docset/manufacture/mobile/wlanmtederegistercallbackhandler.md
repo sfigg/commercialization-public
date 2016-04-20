@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEDeRegisterCallbackHandler
 MS-HAID: 'p\_phManuRetail.wlanmtederegistercallbackhandler'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

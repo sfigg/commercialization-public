@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Windows Deployment Command-Line Tools Reference'
 MS-HAID: 'p\_adk\_online.windows\_deployment\_command\_line\_tools\_reference'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -20,7 +21,7 @@ These command-line tools are often used when manufacturing Windows devices.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[BCDBoot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)</p></td>
+<td align="left"><p>[BCDBoot Command-Line Options](bcdboot-command-line-options-techref-di.md)</p></td>
 <td align="left"><p>Initializes the boot configuration data (BCD) store and copies boot environment files to the system partition during image deployment.</p></td>
 </tr>
 <tr class="even">
@@ -28,7 +29,7 @@ These command-line tools are often used when manufacturing Windows devices.
 <td align="left"><p>Manages Boot Configuration Data (BCD).</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Bootsect Command-Line Options](bootsect-command-line-options-auth-8-tech-ref.md)</p></td>
+<td align="left"><p>[Bootsect Command-Line Options](bootsect-command-line-options.md)</p></td>
 <td align="left"><p>Updates the master boot code for hard disk partitions to switch between Windows Boot Manager (<strong>Bootmgr.exe</strong>) and Windows NT Loader (NTLDR).</p></td>
 </tr>
 <tr class="even">
@@ -36,7 +37,7 @@ These command-line tools are often used when manufacturing Windows devices.
 <td align="left"><p>Manages disk partitions.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Oscdimg Command-Line Options](oscdimg-command-line-options-auth-8-tech-ref.md)</p></td>
+<td align="left"><p>[Oscdimg Command-Line Options](oscdimg-command-line-options.md)</p></td>
 <td align="left"><p>Creates an image (.iso) file of a customized 32-bit or 64-bit version of Windows PE.</p></td>
 </tr>
 </tbody>

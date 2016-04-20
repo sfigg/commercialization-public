@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: generalize
 MS-HAID: 'p\_adk\_online.generalize'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

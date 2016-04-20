@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'New-FirmwareSubmission cmdlet'
 MS-HAID: 'p\_phUpdate.new\_firmwaresubmission\_cmdlet'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

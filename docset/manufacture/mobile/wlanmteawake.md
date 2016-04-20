@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEAwake
 MS-HAID: 'p\_phManuRetail.wlanmteawake'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

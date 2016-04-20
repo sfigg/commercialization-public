@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Determine if MMOS is running
 MS-HAID: 'p\_phManuRetail.determine\_if\_mmos\_is\_running'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

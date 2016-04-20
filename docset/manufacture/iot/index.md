@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized for smaller devices with or without a display. IoT Core uses the rich, extensible Universal Windows Platform (UWP) API for building great solutions.'
 MS-HAID: 'p\_iot\_core.iot\_core\_portal'
 MSHAttr: 'PreferredLib:/library'

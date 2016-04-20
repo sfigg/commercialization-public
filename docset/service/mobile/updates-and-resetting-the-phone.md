@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Updates and resetting the device
 MS-HAID: 'p\_phUpdate.updates\_and\_resetting\_the\_phone'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Wi-Fi manufacturing API'
 MS-HAID: 'p\_phManuRetail.wi\_fi\_manufacturing\_api'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

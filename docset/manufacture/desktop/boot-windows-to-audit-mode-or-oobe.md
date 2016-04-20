@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Boot Windows to Audit Mode or OOBE
 MS-HAID: 'p\_adk\_online.boot\_windows\_to\_audit\_mode\_or\_oobe'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

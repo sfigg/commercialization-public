@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Disabling Secure Boot
 MS-HAID: 'p\_adk\_online.disabling\_secure\_boot'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

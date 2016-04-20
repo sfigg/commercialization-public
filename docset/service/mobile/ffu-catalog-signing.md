@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: FFU Catalog Signing
 MS-HAID: 'p\_phUpdate.ffu\_catalog\_signing'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

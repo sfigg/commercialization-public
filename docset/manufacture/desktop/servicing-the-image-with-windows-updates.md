@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'As new Windows updates become available, add them to your image.'
 MS-HAID: 'p\_sxs\_dmfg.servicing\_the\_image\_with\_windows\_updates'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

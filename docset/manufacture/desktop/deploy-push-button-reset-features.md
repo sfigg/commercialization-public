@@ -311,9 +311,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
 1.  Create a diskpart script for bare-metal recovery.
 
-    **Important**  The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
-
-     
+    **Important** The diskpart script used for bare metal recovery should not include a `select disk` or `clean` command. The system disk will be selected automatically before the diskpart script is processed.
 
     **UEFI example**:
 
@@ -345,7 +343,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
     assign letter="T"
     exit
     ```
-
+    
     **BIOS example**:
 
     ``` syntax

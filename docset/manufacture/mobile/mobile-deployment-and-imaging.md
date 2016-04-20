@@ -3,6 +3,7 @@ Description: 'Windows 10 Mobile brings the features available in Windows 10 to
 MS-HAID: 'p\_mobile\_deployment.mobile\_deployment\_and\_imaging'
 MSHAttr: 'PreferredLib:/library'
 title: Mobile deployment and imaging
+author: CelesteDG
 ---
 
 # Mobile deployment and imaging

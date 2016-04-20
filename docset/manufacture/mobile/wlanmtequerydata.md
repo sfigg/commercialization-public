@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEQueryData
 MS-HAID: 'p\_phManuRetail.wlanmtequerydata'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

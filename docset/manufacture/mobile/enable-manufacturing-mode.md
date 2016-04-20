@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'If you want to test Manufacturing Mode, you can enable it by using ffutool.exe or by using a BCD setting.'
 MS-HAID: 'p\_phManuRetail.enable\_manufacturing\_mode'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: oobeSystem
 MS-HAID: 'p\_adk\_online.oobesystem'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

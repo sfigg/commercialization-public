@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: auditUser
 MS-HAID: 'p\_adk\_online.audituser'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

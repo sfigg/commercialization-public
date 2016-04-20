@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'To update your devices, you''ll submit an update to Microsoft.'
 MS-HAID: 'p\_phUpdate.update'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

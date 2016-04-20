@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Deploy and test a user-mode test application in MMOS'
 MS-HAID: 'p\_phManuRetail.deploy\_and\_test\_a\_user\_mode\_test\_application\_in\_mmos'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

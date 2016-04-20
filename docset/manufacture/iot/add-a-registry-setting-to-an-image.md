@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'We''ll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.'
 MS-HAID: 'p\_iot\_core.add\_a\_registry\_setting\_to\_an\_image'
 MSHAttr: 'PreferredLib:/library'

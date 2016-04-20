@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Reset Protection helps you secure a device in case it is stolen. It must be enabled on the device during manufacturing time.'
 MS-HAID: 'p\_phManuRetail.reset\_protection'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

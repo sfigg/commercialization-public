@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'PAE/NX/SSE2 Support Requirement Guide for Windows 8'
 MS-HAID: 'p\_adk\_online.paenxsse2\_support\_requirement\_guide\_for\_windows\_8'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

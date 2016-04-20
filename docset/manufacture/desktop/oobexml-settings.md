@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Oobe.xml Settings'
 MS-HAID: 'p\_adk\_online.oobexml\_settings'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

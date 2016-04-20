@@ -3,6 +3,7 @@ Description: 'You can use a feature manifest (FM) file to define specific types 
 MS-HAID: 'p\_mobile\_deployment.add\_a\_package\_to\_an\_oem\_manifest\_file'
 MSHAttr: 'PreferredLib:/library'
 title: Add a package to an OEM manifest file
+author: CelesteDG
 ---
 
 # Add a package to an OEM manifest file

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: '.'
 MS-HAID: 'p\_iotservice.iot\_core\_servicing\_portal'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

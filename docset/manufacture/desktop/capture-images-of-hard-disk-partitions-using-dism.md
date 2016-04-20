@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Capture Images of Hard Disk Partitions Using DISM
 MS-HAID: 'p\_adk\_online.capture\_images\_of\_hard\_disk\_partitions\_using\_dism'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -169,7 +170,7 @@ After the image is captured and stored, you can:
 
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)
 

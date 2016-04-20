@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Push-button reset'
 MS-HAID: 'p\_adk\_online.push\_button\_reset\_overview'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

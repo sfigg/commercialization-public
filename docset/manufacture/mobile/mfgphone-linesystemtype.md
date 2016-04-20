@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Provides information about the type of line system.'
 MS-HAID: 'p\_phManuRetail.mfgphone\_linesystemtype'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

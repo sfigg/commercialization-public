@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Using provisioning files to update registry settings that may change
 MS-HAID: 'p\_phUpdate.using\_provisioning\_files\_to\_update\_registry\_settings\_that\_may\_change'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

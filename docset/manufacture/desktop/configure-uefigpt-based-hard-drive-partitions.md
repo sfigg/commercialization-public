@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'UEFI/GPT-based hard drive partitions'
 MS-HAID: 'p\_adk\_online.configure\_uefigpt\_based\_hard\_drive\_partitions'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

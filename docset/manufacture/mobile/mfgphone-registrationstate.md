@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Provides information about the state of the phone line? call?.'
 MS-HAID: 'p\_phManuRetail.mfgphone\_registrationstate'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

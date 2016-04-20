@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'WinPE: Store or split images to deploy Windows using a single USB key'
 MS-HAID: 'p\_adk\_online.winpe\_\_use\_a\_single\_usb\_key\_for\_winpe\_and\_a\_wim\_file\_\_\_wim\_'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

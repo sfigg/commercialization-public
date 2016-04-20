@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Get-SignedFirmwareSubmission cmdlet'
 MS-HAID: 'p\_phUpdate.get\_signedfirmwaresubmission\_cmdlet'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

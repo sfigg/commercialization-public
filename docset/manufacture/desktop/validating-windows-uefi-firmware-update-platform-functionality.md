@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'This document lists the basic validation scenarios that are required to pass before signing-off on the Windows UEFI Firmware Update Platform functionality. Specification can be downloaded from here.'
 MS-HAID: 'p\_adk\_online.validating\_windows\_uefi\_firmware\_update\_platform\_functionality'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

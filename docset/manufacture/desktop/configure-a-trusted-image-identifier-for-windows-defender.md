@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Configure a Trusted Image Identifier for Windows Defender
 MS-HAID: 'p\_adk\_online.configure\_a\_trusted\_image\_identifier\_for\_windows\_defender'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

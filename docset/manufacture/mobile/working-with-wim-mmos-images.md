@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Working with WIM MMOS images
 MS-HAID: 'p\_phManuRetail.working\_with\_wim\_mmos\_images'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

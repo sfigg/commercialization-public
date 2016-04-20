@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Update scenarios
 MS-HAID: 'p\_phUpdate.update\_scenarios'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

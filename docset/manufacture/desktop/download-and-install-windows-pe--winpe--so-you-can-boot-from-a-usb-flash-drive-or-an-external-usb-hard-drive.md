@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive'
 MS-HAID: 'p\_adk\_online.download\_and\_install\_windows\_pe\_\_winpe\_\_so\_you\_can\_boot\_from\_a\_usb\_flash\_drive\_or\_an\_external\_usb\_hard\_drive'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -124,7 +125,7 @@ For more information about how to use the BCDedit tool, see [this Microsoft Web 
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 

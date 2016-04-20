@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: specialize
 MS-HAID: 'p\_adk\_online.specialize'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

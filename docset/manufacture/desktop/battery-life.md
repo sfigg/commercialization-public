@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Battery Life
 MS-HAID: 'p\_adk\_online.battery\_life'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -20,7 +21,7 @@ In this section, you will learn about managing battery life when you deploy Wind
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-8-technicalreference.md)</p></td>
+<td align="left"><p>[Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-technicalreference.md)</p></td>
 <td align="left"><p>Describes considerations that can help you to meet battery life goals, and lists common Windows® power policy settings that can affect battery life.</p></td>
 </tr>
 <tr class="even">
@@ -32,7 +33,7 @@ In this section, you will learn about managing battery life when you deploy Wind
 <td align="left"><p>Describes how to create a power plan by using Control Panel, how to export the power plan, and how to import the power plan on a destination computer.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Fine-Tune a Custom Power Plan](fine-tune-a-custom-power-plan-8-technicalreference.md)</p></td>
+<td align="left"><p>[Fine-Tune a Custom Power Plan](fine-tune-a-custom-power-plan-technicalreference.md)</p></td>
 <td align="left"><p>Describes how to configure a customized Windows power plan by using powercfg command-line options.</p></td>
 </tr>
 <tr class="odd">

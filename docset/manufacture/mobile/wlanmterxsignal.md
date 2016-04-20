@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTERxSignal
 MS-HAID: 'p\_phManuRetail.wlanmterxsignal'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

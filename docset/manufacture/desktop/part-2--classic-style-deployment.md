@@ -204,7 +204,7 @@ The following table shows the types of language packages and components availabl
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>lp.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](https://msdn.microsoft.com/library/windows/hardware/dn898488).</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
 <tr class="odd">
@@ -219,7 +219,7 @@ The following table shows the types of language packages and components availabl
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](https://msdn.microsoft.com/library/windows/hardware/mt171094).</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -362,10 +362,9 @@ The following table shows the types of language packages and components availabl
     ``` syntax
     Dism /Image:"c:\mount\windows" /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2015.522.28.1146_neutral_~_8wekyb3d8bbwe
     ```
-
+    
     **Note**  To remove all of the apps at once, open a command prompt as an Administrator, navigate to the image folder, and run the sample script: “Remove\_apps\_in\_offline\_image.cmd” from the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 
-     
 
 2.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
@@ -399,11 +398,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  Windows RE now requires the WinPE-HTA package, this is new for Windows 10.
 
-     
-
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
-
-     
 
     ``` syntax
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
@@ -513,7 +508,6 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     When prompted, specify **F** for file.
 
     **Note**  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
-
      
 
 4.  Check the new size of the Windows RE image.
@@ -534,7 +528,6 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     ``` syntax
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
-
     where *C* is the drive letter of the drive that contains the image.
 
     This process may take several minutes.
@@ -552,11 +545,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  If the Windows PE key doesn't have enough space, copy both the image and scripts to another USB key.
 
-     
-
     **Note**  If your image is greater than 4GB, you may need to preformat the USB key using the NTFS file format.
-
-     
 
 **Step 14: Apply Windows images using a script**
 
@@ -564,11 +553,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  In Windows 10, we've changed the partition layout. While we still use a separate recovery tools image, Windows no longer needs a separate full-system recovery image to use push-button reset features. This can save several GB of drive space. We're also using a smaller MSR partition (down from 128MB to 16MB).
 
-     
-
     **Note**  You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
-
-     
 
     ![](images/dep-win8-sxs-createdeploymentscript.jpg)
 
@@ -614,7 +599,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     While you’re waiting for the preparation phase to complete, go back to your technician PC and continue with the lab.
 
-    **Warning**  **Troubleshooting**: If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key).
+    **Troubleshooting**: If the device does not boot, turn on the device, and press the key that opens the boot-device selection menu (for example, the **Esc** key).
 
      
 

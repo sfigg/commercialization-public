@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Device Drivers
 MS-HAID: 'p\_adk\_online.device\_drivers\_and\_deployment\_overview'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -199,7 +200,7 @@ These websites provide more information about device-driver requirements:
 
 [Maintain Driver Configurations when Capturing a Windows Image](maintain-driver-configurations-when-capturing-a-windows-image.md)
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
 [Deployment Troubleshooting and Log Files](deployment-troubleshooting-and-log-files.md)
 

@@ -1,4 +1,4 @@
-#[Manufacture](manufacture/index.md)
+# [Manufacture](manufacture/index.md)
 
 ## [Desktop manufacturing](manufacture/desktop/index.md)
 
@@ -39,7 +39,7 @@
 ##### [BitLocker Drive Encryption](manufacture/desktop/bitlocker-drive-encryption.md)
 ##### [Hard Disk Location Path Format](manufacture/desktop/hard-disk-location-path-format.md)
 ##### [Repair the boot menu on a dual-boot PC](manufacture/desktop/repair-the-boot-menu-on-a-dual-boot-pc.md)
-#### [Deploy Windows on a VHD (Native Boot)](manufacture/desktop/deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)
+#### [Deploy Windows on a VHD (Native Boot)](manufacture/desktop/deploy-windows-on-a-vhd--native-boot.md)
 ##### [Understanding Virtual Hard Disks with Native Boot](manufacture/desktop/understanding-virtual-hard-disks-with-native-boot.md)
 ##### [Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu](manufacture/desktop/boot-to-vhd--native-boot--add-a-virtual-hard-disk-to-the-boot-menu.md)
 ##### [Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive](manufacture/desktop/download-and-install-windows-pe--winpe--so-you-can-boot-from-a-usb-flash-drive-or-an-external-usb-hard-drive.md)
@@ -67,13 +67,13 @@
 #### [Features On Demand V2 (Capabilities)](manufacture/desktop/features-on-demand-v2--capabilities.md)
 #### [Configure Oobe.xml](manufacture/desktop/configure-oobexml.md)
 ##### [Oobe.xml Settings](manufacture/desktop/oobexml-settings.md)
-##### [How Oobe.xml Works](manufacture/desktop/how-oobexml-works-auth-8-tech-ref.md)
+##### [How Oobe.xml Works](manufacture/desktop/how-oobexml-works.md)
 #### [Work with Product Keys and Activation](manufacture/desktop/work-with-product-keys-and-activation-auth-phases.md)
 #### [Battery Life](manufacture/desktop/battery-life.md)
-##### [Managing Battery Life and Power Consumption Overview](manufacture/desktop/managing-battery-life-and-power-consumption-overview-8-technicalreference.md)
+##### [Managing Battery Life and Power Consumption Overview](manufacture/desktop/managing-battery-life-and-power-consumption-overview-technicalreference.md)
 ##### [Set the Default Power Plan](manufacture/desktop/set-the-default-power-plan-technicalreference.md)
 ##### [Create a Custom Power Plan](manufacture/desktop/create-a-custom-power-plan-technicalreference.md)
-##### [Fine-Tune a Custom Power Plan](manufacture/desktop/fine-tune-a-custom-power-plan-8-technicalreference.md)
+##### [Fine-Tune a Custom Power Plan](manufacture/desktop/fine-tune-a-custom-power-plan-technicalreference.md)
 ##### [Test Battery Life and Power Consumption](manufacture/desktop/test-battery-life-and-power-consumption-technicalreference.md)
 #### [Understanding Servicing Strategies](manufacture/desktop/understanding-servicing-strategies.md)
 #### [Audit Mode Overview](manufacture/desktop/audit-mode-overview.md)
@@ -230,10 +230,10 @@
 #### [Settings for Automating OOBE](manufacture/desktop/settings-for-automating-oobe.md)
 #### [Deployment Troubleshooting and Log Files](manufacture/desktop/deployment-troubleshooting-and-log-files.md)
 ### [Windows Deployment Command-Line Tools Reference](manufacture/desktop/windows-deployment-command-line-tools-reference.md)
-#### [BCDBoot Command-Line Options](manufacture/desktop/bcdboot-command-line-options-8-techref-di.md)
+#### [BCDBoot Command-Line Options](manufacture/desktop/bcdboot-command-line-options-techref-di.md)
 #### [BCDEdit Command-Line Options](manufacture/desktop/bcdedit-command-line-options.md)
-#### [Bootsect Command-Line Options](manufacture/desktop/bootsect-command-line-options-auth-8-tech-ref.md)
-#### [Oscdimg Command-Line Options](manufacture/desktop/oscdimg-command-line-options-auth-8-tech-ref.md)
+#### [Bootsect Command-Line Options](manufacture/desktop/bootsect-command-line-options.md)
+#### [Oscdimg Command-Line Options](manufacture/desktop/oscdimg-command-line-options.md)
 
 ## [Mobile manufacturing](manufacture/mobile/index.md)
 
@@ -340,14 +340,14 @@
 #### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
-### [IoT Core Add-ons command-line options](manufacture/iot/command-line-options-to-manufacture-iot-core-images.md)
+### [IoT Core Add-ons command-line options](manufacture/iot/iot-core-adk-addons-command-line-options.md)
 
 
 
 
 # [Service](service/index.md)
 
-## [Mobile servicing and updates](service/mobile/index.md)
+## [Mobile servicing](service/mobile/index.md)
 ### [Update requirements](service/mobile/update-requirements.md)
 ### [Test an update](service/mobile/test-an-update.md)
 ### [Submit an update](service/mobile/submit-an-update.md)

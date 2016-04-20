@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Secure Boot isn''t configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)'
 MS-HAID: 'p\_adk\_online.secure\_boot\_isnt\_configured\_correctly\_determine\_if\_the\_pc\_is\_in\_a\_manufacturing\_mode\_\_info\_for\_manufacturers\_'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

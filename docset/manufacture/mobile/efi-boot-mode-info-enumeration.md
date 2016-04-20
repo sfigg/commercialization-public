@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Defines the possible boot modes that the operating system can use when it starts.'
 MS-HAID: 'p\_phManuRetail.efi\_boot\_mode\_info\_enumeration'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

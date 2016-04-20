@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Export or Import Default Application Associations
 MS-HAID: 'p\_adk\_online.export\_or\_import\_default\_application\_associations'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

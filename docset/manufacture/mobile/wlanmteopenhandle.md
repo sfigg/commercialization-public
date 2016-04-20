@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEOpenHandle
 MS-HAID: 'p\_phManuRetail.wlanmteopenhandle'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

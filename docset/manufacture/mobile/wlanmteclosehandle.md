@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTECloseHandle
 MS-HAID: 'p\_phManuRetail.wlanmteclosehandle'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

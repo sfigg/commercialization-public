@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Managing Battery Life and Power Consumption Overview
 MS-HAID: 'p\_adk\_online.managing\_battery\_life\_and\_power\_consumption\_overview\_8\_technicalreference'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

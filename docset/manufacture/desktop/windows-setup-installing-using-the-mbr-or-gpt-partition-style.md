@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Windows Setup: Installing using the MBR or GPT partition style'
 MS-HAID: 'p\_adk\_online.windows\_setup\_installing\_using\_the\_mbr\_or\_gpt\_partition\_style'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

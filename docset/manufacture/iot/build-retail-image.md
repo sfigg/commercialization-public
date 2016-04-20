@@ -100,8 +100,3 @@ That's it for the first lab.
  -->
 
  
-
- 
-
-
-

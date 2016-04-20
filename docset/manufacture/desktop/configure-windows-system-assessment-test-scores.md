@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Configure Windows System Assessment Test Scores
 MS-HAID: 'p\_adk\_online.configure\_windows\_system\_assessment\_test\_scores'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

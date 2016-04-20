@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Winpeshl.ini Reference: Launching an app when WinPE starts'
 MS-HAID: 'p\_adk\_online.winpeshlini\_reference\_launching\_an\_app\_when\_winpe\_starts'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

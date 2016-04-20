@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'This function is used to retrieve the boot mode and optional profile name from the UEFI firmware.'
 MS-HAID: 'p\_phManuRetail.efi\_boot\_mode\_mgmt\_protocol\_getbootmodeinfo'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

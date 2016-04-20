@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'After you''ve learned how to design, develop, and customize Windows images, you can use the tools in the Windows ADK to manufacture and deploy Windows images to new PCs and devices.'
 MS-HAID: 'p\_adk\_online.windows\_deployment\_tools\_technical\_reference'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -27,11 +28,11 @@ After you've learned how to design, develop, and customize Windows images, you c
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Getting started</strong></p></td>
-<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough)</p></td>
+<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment options</strong></p></td>
-<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [Hard Drives and Partitions](hard-drives-and-partitions.md) | [VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot--auth-8-tech-ref.md)| [Secure Boot](secure-boot-overview.md) | [Device Drivers](device-drivers-and-deployment-overview.md) | [Language Packs (lp.cab)](language-packs--lpcab--and-windows-deployment.md) | [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md) | [More deployment options](windows-deployment-options.md)</p></td>
+<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [Hard Drives and Partitions](hard-drives-and-partitions.md) | [VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)| [Secure Boot](secure-boot-overview.md) | [Device Drivers](device-drivers-and-deployment-overview.md) | [Language Packs (lp.cab)](language-packs--lpcab--and-windows-deployment.md) | [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md) | [More deployment options](windows-deployment-options.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Tools</strong></p></td>

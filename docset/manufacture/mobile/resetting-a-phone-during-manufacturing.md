@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Resetting a device during manufacturing
 MS-HAID: 'p\_phManuRetail.resetting\_a\_phone\_during\_manufacturing'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

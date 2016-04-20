@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Bootsect Command-Line Options'
 MS-HAID: 'p\_adk\_online.bootsect\_command\_line\_options\_auth\_8\_tech\_ref'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -79,7 +80,7 @@ For example, to apply the master boot code that is compatible with NTLDR to the 
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

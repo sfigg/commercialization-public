@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'The Windows 10 IoT Core ADK Add-Ons include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.'
 MS-HAID: 'p\_iot\_core.iot\_core\_adk\_addons'
 MSHAttr: 'PreferredLib:/library'

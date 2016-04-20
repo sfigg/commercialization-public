@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Understanding Servicing Strategies
 MS-HAID: 'p\_adk\_online.understanding\_servicing\_strategies'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

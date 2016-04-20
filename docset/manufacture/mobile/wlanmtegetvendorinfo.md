@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEGetVendorInfo
 MS-HAID: 'p\_phManuRetail.wlanmtegetvendorinfo'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

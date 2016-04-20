@@ -3,6 +3,7 @@ Description: 'You can use two different tools to build a customized mobile image
 MS-HAID: 'p\_mobile\_deployment.build\_a\_customized\_mobile\_image\_using\_imggen'
 MSHAttr: 'PreferredLib:/library'
 title: Build a mobile image using ImgGen
+author: CelesteDG
 ---
 
 # Build a mobile image using ImgGen
@@ -30,7 +31,7 @@ In this walkthrough, we'll show how to use ImgGen.cmd to build the custom mobile
 
 3.  Run ImgGen.cmd by using the following command.
 
-    **ImgGen** *TestFlash.ffuContosoTestOEMInput.xml* **"%WPDKCONTENTROOT%\\MSPackages"** *MobileCustomizations.xml10.0.0.1*
+    **ImgGen** *TestFlash.ffuContosoTestOEMInput.xml* **"%WPDKCONTENTROOT%\\MSPackages"** *MobileCustomizations.xml 10.0.0.1*
 
     This command will build an image that will be called TestFlash.ffu.
 

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Implementing image integrity validation in custom flashing tools
 MS-HAID: 'p\_phManuRetail.implementing\_image\_integrity\_validation\_in\_custom\_flashing\_tools'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

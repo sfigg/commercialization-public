@@ -71,7 +71,7 @@ Windows replaces only the computer security identifier (SID) on the operating sy
 
 3.  Deploy this image to a reference computer. When the reference computer boots, it displays the Out-Of-Box Experience (OOBE) screen.
 
-For more information, see [Settings for Automating OOBE](settings-for-automating-oobe.md) and[Configure Oobe.xml](configure-oobexml.md).
+For more information, see [Settings for Automating OOBE](settings-for-automating-oobe.md) and DISM App Package [Configure Oobe.xml](configure-oobexml.md).
 
 If you have additional customizations, you can enter audit mode manually and make those customizations before you generalize and deploy your image.
 

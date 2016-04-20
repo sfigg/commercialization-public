@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Repair the boot menu on a dual-boot PC'
 MS-HAID: 'p\_adk\_online.repair\_the\_boot\_menu\_on\_a\_dual\_boot\_pc'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -39,7 +40,7 @@ You can manually add create partitions using BCDEdit, or you can use a third-par
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 

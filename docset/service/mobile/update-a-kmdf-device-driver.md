@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Update a KMDF device driver
 MS-HAID: 'p\_phUpdate.update\_a\_kmdf\_device\_driver'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

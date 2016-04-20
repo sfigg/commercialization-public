@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Returns a boolean indicating whether the phone speaker is being used, as opposed to the handset earphone.'
 MS-HAID: 'p\_phManuRetail.mfgphonegetspeaker'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

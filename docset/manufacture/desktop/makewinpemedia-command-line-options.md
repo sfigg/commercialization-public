@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Makewinpemedia Command-Line Options'
 MS-HAID: 'p\_adk\_online.makewinpemedia\_command\_line\_options'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -69,7 +70,7 @@ The **Makewinpemedia** tool uses the following command-line options.
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
-[Oscdimg Command-Line Options](oscdimg-command-line-options-auth-8-tech-ref.md)
+[Oscdimg Command-Line Options](oscdimg-command-line-options.md)
 
  
 

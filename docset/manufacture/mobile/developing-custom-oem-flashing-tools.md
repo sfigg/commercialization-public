@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Developing custom OEM flashing tools
 MS-HAID: 'p\_phManuRetail.developing\_custom\_oem\_flashing\_tools'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

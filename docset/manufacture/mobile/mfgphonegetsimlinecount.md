@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'Gets the number of currently detected SIM slots.'
 MS-HAID: 'p\_phManuRetail.mfgphonegetsimlinecount'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

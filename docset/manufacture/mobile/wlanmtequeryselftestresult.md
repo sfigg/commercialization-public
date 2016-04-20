@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEQuerySelfTestResult
 MS-HAID: 'p\_phManuRetail.wlanmtequeryselftestresult'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

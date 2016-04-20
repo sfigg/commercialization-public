@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: MMOS image definition
 MS-HAID: 'p\_phManuRetail.mmos\_image\_definition'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

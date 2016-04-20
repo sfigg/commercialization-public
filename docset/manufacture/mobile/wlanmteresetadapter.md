@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTEResetAdapter
 MS-HAID: 'p\_phManuRetail.wlanmteresetadapter'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

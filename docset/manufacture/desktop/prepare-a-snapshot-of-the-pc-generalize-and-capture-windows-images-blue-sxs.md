@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Lab 2b: Windows desktop apps and data: capturing changes'
 MS-HAID: 'p\_sxs\_dmfg.prepare\_a\_snapshot\_of\_the\_pc\_generalize\_and\_capture\_windows\_images\_blue\_sxs'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

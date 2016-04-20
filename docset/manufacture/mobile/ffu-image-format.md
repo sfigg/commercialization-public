@@ -1,4 +1,5 @@
 ---
+author: justinha
 Description: FFU image format
 MS-HAID: 'p\_phManuRetail.ffu\_image\_format'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

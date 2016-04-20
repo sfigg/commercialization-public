@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Reporting operating mode capabilities
 MS-HAID: 'p\_phManuRetail.reporting\_operating\_mode\_capabilities'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

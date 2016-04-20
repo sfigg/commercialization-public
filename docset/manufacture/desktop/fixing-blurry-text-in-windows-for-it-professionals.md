@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Fixing blurry text in Windows 8.1 for IT Professionals'
 MS-HAID: 'p\_adk\_online.fixing\_blurry\_text\_in\_windows\_for\_it\_professionals'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

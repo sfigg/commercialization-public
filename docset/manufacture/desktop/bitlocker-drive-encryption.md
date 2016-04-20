@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: BitLocker Drive Encryption
 MS-HAID: 'p\_adk\_online.bitlocker\_drive\_encryption'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

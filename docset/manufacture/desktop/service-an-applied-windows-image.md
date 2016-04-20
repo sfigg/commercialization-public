@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Service an Applied Windows Image
 MS-HAID: 'p\_adk\_online.service\_an\_applied\_windows\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

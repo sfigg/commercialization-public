@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk'
 MS-HAID: 'p\_adk\_online.configure\_more\_than\_four\_partitions\_on\_a\_biosmbr\_based\_hard\_disk'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

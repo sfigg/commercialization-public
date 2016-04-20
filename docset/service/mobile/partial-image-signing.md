@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Partial Image Signing
 MS-HAID: 'p\_phUpdate.partial\_image\_signing'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

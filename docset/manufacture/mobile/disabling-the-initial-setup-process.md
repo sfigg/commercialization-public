@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Disabling the initial setup process
 MS-HAID: 'p\_phManuRetail.disabling\_the\_initial\_setup\_process'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

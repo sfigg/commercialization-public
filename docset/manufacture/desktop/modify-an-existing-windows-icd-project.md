@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'You can typically go back into Windows Imaging and Configuration Designer (ICD) projects, edit and redeploy them over and over again.'
 MS-HAID: 'p\_sxs\_dmfg.modify\_an\_existing\_windows\_icd\_project'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

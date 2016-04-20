@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'When you boot into Manufacturing Mode, can you skip OOBE and preinstall apps to run your manufacturing tests.'
 MS-HAID: 'p\_phManuRetail.skip\_oobe\_and\_preinstall\_apps'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

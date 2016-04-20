@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Secure Boot isn''t configured correctly: troubleshooting'
 MS-HAID: 'p\_adk\_online.secure\_boot\_isnt\_configured\_correctly\_troubleshooting'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

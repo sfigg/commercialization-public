@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: offlineServicing
 MS-HAID: 'p\_adk\_online.offlineservicing'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

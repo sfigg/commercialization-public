@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Prepare a Network Policy Server (NPS) for Imaging'
 MS-HAID: 'p\_adk\_online.prepare\_a\_network\_policy\_server\_\_nps\_\_for\_imaging'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

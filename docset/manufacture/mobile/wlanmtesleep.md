@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: WlanMTESleep
 MS-HAID: 'p\_phManuRetail.wlanmtesleep'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Repair a Windows Image
 MS-HAID: 'p\_adk\_online.repair\_a\_windows\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

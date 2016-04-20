@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: '.NET Framework 3.5 deployment errors and resolution steps'
 MS-HAID: 'p\_adk\_online.net\_framework\_35\_deployment\_errors\_and\_resolution\_steps'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

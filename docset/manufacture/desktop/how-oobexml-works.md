@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'How Oobe.xml Works'
 MS-HAID: 'p\_adk\_online.how\_oobexml\_works\_auth\_8\_tech\_ref'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: Develop MMOS test applications
 MS-HAID: 'p\_phManuRetail.develop\_mmos\_test\_applications'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

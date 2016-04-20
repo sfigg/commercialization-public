@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Deploy Windows on a VHD (Native Boot)'
 MS-HAID: 'p\_adk\_online.deploy\_windows\_on\_a\_vhd\_\_native\_boot\_\_auth\_8\_tech\_ref'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -55,7 +56,7 @@ The Windows Deployment Server role supports deployment of VHD image files in ad
 ## <span id="related_topics"></span>Related topics
 
 
-[BCDboot Command-Line Options](bcdboot-command-line-options-8-techref-di.md)
+[BCDboot Command-Line Options](bcdboot-command-line-options-techref-di.md)
 
  
 
