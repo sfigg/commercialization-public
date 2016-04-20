@@ -52,13 +52,13 @@ Windows replaces only the computer security identifier (SID) on the operating sy
 
     -   Use the Microsoft-Windows-Deployment | `Generalize` setting. Set `Mode` to **OOBE** or **Audit**, and set `ForceShutdownNow` to **true**. The computer automatically generalizes the image and shuts down.
 
-        - or -
+        -or-
 
     -   Add the Microsoft-Windows-Deployment | `Reseal` setting to the [oobeSystem](oobesystem.md) configuration pass. Set `Mode` to **Audit**. After the computer boots in audit mode and displays the **System Preparation Tool** window, use one of these methods:
 
         -   In the **System Preparation Tool** window, click **Generalize**, click **Shutdown**, and then click **OK**. The computer generalizes the image and shuts down.
 
-            - or -
+            -or-
 
         -   Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
 
@@ -89,7 +89,7 @@ If you have additional customizations, you can enter audit mode manually and mak
 
 3.  In the **System Preparation Tool** window, click **Generalize**, click **Shutdown**, and then click **OK**. The computer generalizes the image and shuts down.
 
-    - or -
+     -or-
 
     Close the **System Preparation Tool** window, open a Command Prompt window as an administrator, and then move to the **%WINDIR%\\system32\\sysprep** directory. Use the **Sysprep** command together with the **/generalize**, **/shutdown**, and **/oobe** options. For example:
 

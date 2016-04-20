@@ -97,9 +97,7 @@ To enable remote desktop connections during an unattended installation, you must
     </tbody>
     </table>
 
-     
-
-    You're now ready to install your Windows image.
+You're now ready to install your Windows image.
 
 For more information about Windows® components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
 
