@@ -229,11 +229,6 @@ The following table describes the Microsoft-defined test features that can be us
  
 </div></td>
 </tr>
-<tr class="odd">
-<td align="left"><strong>IOT_POWER_SETTINGS</strong></td>
-<td align="left">Prevents the device from going to sleep due to inactivity.
-<p>Required for x86/amd64 platforms.</p></td>
-</tr>
 <tr class="even">
 <td align="left"><strong>IOT_WDTF</strong></td>
 <td align="left">Includes components for Windows Driver Test Framework, required for HLK validation</td>
