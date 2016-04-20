@@ -95,7 +95,6 @@ That's it for the first lab.
 
 From here, you can continue on to:
 -  [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md) 
--  ...or learn about updating your packages with Manage IoT Core device updates](..\..\service\iot\managing-iot-device-update.md) 
 
 
 
