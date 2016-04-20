@@ -112,6 +112,7 @@ To create a secure wim image, complete the following steps.
     ID:     00000011-f151-a509-0000-FF0000000000
     Booting WIM: MMOSwim.secwim
     WIM transfer completed in 26.550073 seconds.
+   
     ```
 
 ## <span id="Working_with_serial_numbers"></span><span id="working_with_serial_numbers"></span><span id="WORKING_WITH_SERIAL_NUMBERS"></span>Working with serial numbers

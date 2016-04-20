@@ -27,11 +27,6 @@ To complete this walkthrough, you need the following:
 
 ## <span id="BKMK_ExtractImage"></span><span id="bkmk_extractimage"></span><span id="BKMK_EXTRACTIMAGE"></span>Step 1: Mount the Windows and Windows RE image
 
-
-**Note**  
-
- 
-
 **Mount the images**
 
 1.  Open the **Deployment and Imaging Tools Environment** command prompt as an administrator:

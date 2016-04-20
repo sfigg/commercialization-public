@@ -396,15 +396,13 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
 **Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
 
+**Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
+
 1.  Add languages. These languages are included with the Windows ADK. You must use a matching version of the Windows ADK to service the Windows RE image.
 
     **Note**  Windows RE now requires the WinPE-HTA package, this is new for Windows 10.
 
-     
-
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
-
-     
 
     ``` syntax
     Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
@@ -553,12 +551,9 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     **Note**  If the Windows PE key doesn't have enough space, copy both the image and scripts to another USB key.
 
-     
-
     **Note**  If your image is greater than 4GB, you may need to preformat the USB key using the NTFS file format.
 
      
-
 **Step 14: Apply Windows images using a script**
 
 -   Use deployment scripts to apply a newly-captured image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.

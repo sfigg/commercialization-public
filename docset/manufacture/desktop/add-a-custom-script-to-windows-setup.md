@@ -64,14 +64,15 @@ Depending on the phase of Windows Setup, the computer will return to the enviro
 
 There may be instances when Windows Setup encounters more than one error and runs the ErrorHandler.cmd script more than once. When developing the code for **ErrorHandler.cmd**, make sure that you can run this script multiple times.
 
+
 **To use ErrorHandler.cmd**, you can do either of the following:
 
 -   Mount the image, and add it to the image, in **%WINDIR%\\Setup\\Scripts\\ErrorHandler.cmd**. Unmount the image.
 
-    - or -
+    -or-
 
 -   Add **ErrorHandler.cmd** to a temporary file location (for example, C:\\Temp\\ErrorHandler.cmd), and then run Windows Setup using the **/m** option.
--   ``` syntax
+    ``` syntax
     Setup /m:C:\Temp
     ```
 

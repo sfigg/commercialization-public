@@ -65,24 +65,13 @@ To prepare to receive an update from the Microsoft test update server, complete 
 ## <span id="Test_cases_for_features_after_an_update"></span><span id="test_cases_for_features_after_an_update"></span><span id="TEST_CASES_FOR_FEATURES_AFTER_AN_UPDATE"></span>Test cases for features after an update
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Test case</th>
-<th align="left">Prerequisites</th>
-<th align="left">Test steps</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Wi-Fi</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+### Wi-Fi
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Network &amp; wireless</strong> &gt; <strong>Wi-Fi</strong>.</p></li>
 <li><p>Select a secured wireless network. Sign in with the appropriate credentials.</p></li>
 <li><p>Verify that the status to the network is shown as “Connected.”</p></li>
@@ -114,12 +103,15 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Tap and hold <strong>Open network</strong>.</p></li>
 <li><p>Tap <strong>delete</strong>.</p></li>
 <li><p>Verify that the device connects to the secured network automatically from Step 2.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Maps</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Maps
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Maps</strong>.</p></li>
 <li><p>Verify that the location prompt appears when Maps is launched for the first time.</p></li>
 <li><p>Tap <strong>Allow</strong> to enable location awareness. The app will load the current location.</p></li>
@@ -163,12 +155,15 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Enter the search term, “Restaurants in Seattle.” Tap the enter key on the virtual keyboard to execute the search.</p></li>
 <li><p>Verify that up to 10 search results are displayed as pins on the map, and the first pin is expanded so that you can see its name. (The name may be cut off at the right edge).</p></li>
 </ol></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lock Screen testing</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Lock Screen testing
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap &gt; <strong>Settings</strong> &gt;<strong>Personalization</strong> &gt; <strong>Lock screen</strong>.</p></li>
 <li><p>Set the “Screen times out after” field to “30 seconds.”</p></li>
 <li><p>Leave the device idle for 30 seconds. After the screen goes to sleep, press and swipe the screen to verify that nothing happens and that the device is locked.</p></li>
@@ -180,12 +175,15 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Press the Power button to unlock the device. Swipe up to unlock the screen. Verify that the prompt to enter password appears.</p></li>
 <li><p>Enter an incorrect password. Verify that the device does not unlock and the correct password must be entered.</p></li>
 <li><p>Enter the correct password. Verify that the device unlocks successfully.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Capturing photos with the camera</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Capturing photos with the camera
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Lock the device and leave it idle to put it into Sleep Mode.</p></li>
 <li><p>Press and hold the Camera hardware key to launch the camera. Then, verify that the camera launches either the default camera app or the camera app. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
@@ -213,12 +211,15 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Blurry images</p></li>
 <li><p>An excessively bright or dull image. This suggests that something is wrong with the camera sensor.</p></li>
 </ol></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Recording videos with the camera</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Recording videos with the camera
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Lock the device and leave it idle to put it into Sleep Mode.</p></li>
 <li><p>Press and hold the Camera hardware key to launch the camera or launch the app directly from the Apps list. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
@@ -242,12 +243,15 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>If the device has a camera hardware button, press it again to stop recording video after 15 seconds.</p></li>
 <li><p>Swipe left on the camera screen and press <strong>Play</strong> on the captured video.</p></li>
 <li><p>Verify that the video is captured properly and plays for 15 seconds.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Front facing camera</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Front facing camera
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Lock the device and leave it idle to put the phone into Sleep Mode.</p></li>
 <li><p>Press and hold the camera hardware key to launch the camera. Tap <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
@@ -277,15 +281,20 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Blurry images.</p></li>
 <li><p>An excessively bright or dull image. This suggests that something is wrong with the camera sensor.</p></li>
 </ol></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Calling with a Bluetooth device</p></td>
-<td align="left"><ul>
+</ol>
+
+### Calling with a Bluetooth device
+
+Prerequisites: 
+
+<ul>
 <li><p>Bluetooth device to connect to the test device</p></li>
 <li><p>Second phone to test call functionality.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Devices</strong> &gt;<strong>Bluetooth</strong>, Turn Bluetooth on.</p></li>
 <li><p>Connect/pair a Bluetooth device with the test device</p></li>
 <li><p>Call the test device</p></li>
@@ -295,41 +304,54 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Verify that the audio from the second device can be heard on the test device through the Bluetooth device.</p></li>
 <li><p>Verify that the audio from the test device through the Bluetooth device can be heard on the second device.</p></li>
 <li><p>End the call using the Bluetooth device.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bluetooth and NFC (Tap+Send)</p></td>
-<td align="left"><ul>
+</ol>
+
+### Bluetooth and NFC (Tap+Send)
+
+Prerequisites: 
+
+<ul>
 <li><p>Bluetooth must be turned on.</p></li>
 <li><p>Second phone to verify tap+send functionality.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Go to <strong>Photos</strong> &gt; <strong>Albums</strong> and select a photo.</p></li>
 <li><p>Select the options for the Photo.</p></li>
 <li><p>Share the photo through NFC/Tap+send.</p></li>
 <li><p>A pop-up screen for transfer will appear on the second device. Tap <strong>Accept</strong> and wait for the transfer to finish.</p></li>
 <li><p>Go to <strong>Photos</strong> &gt; <strong>Albums</strong> &gt; <strong>Saved Pictures</strong>.</p></li>
 <li><p>Verify that the transferred photo appears in the album.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Proximity Sensor</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Proximity Sensor
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>On the Start screen, tap <strong>Phone</strong>.</p></li>
 <li><p>Make a call to the second device</p></li>
 <li><p>Put your finger over the earpiece area. Verify that the display turns off.</p></li>
 <li><p>Disconnect the call.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Video streaming</p></td>
-<td align="left"><ul>
+</ol>
+
+### Video streaming
+
+Prerequisites: 
+
+<ul>
 <li><p>The device must be connected to Wi-Fi or have an internet connection to use the web browser.</p></li>
 <li><p>A second device to call with.</p></li>
 <li><p>A Bluetooth device.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>On the Start screen, tap <strong>Internet Explorer</strong>.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -360,16 +382,21 @@ To prepare to receive an update from the Microsoft test update server, complete 
 </div></li>
 <li><p>Tap the <strong>Play</strong> button on the video screen.</p></li>
 <li><p>Verify that the video starts playing without any problems and that the audio is routed through Bluetooth.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Audio streaming</p></td>
-<td align="left"><ul>
+</ol>
+
+### Audio streaming
+
+Prerequisites: 
+
+<ul>
 <li><p>Second device for call support.</p></li>
 <li><p>An A2DP Bluetooth device.</p></li>
 <li><p>Desi Music app downloaded.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Sign in using your Microsoft Account.</p></li>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Devices</strong> &gt; <strong>Bluetooth</strong>. Turn Bluetooth on.</p></li>
 <li><p>Put an A2DP Bluetooth device in paring mode. When it is listed on the search results on the device, tap on it. Verify that the status of the Bluetooth device shows as “Connected Voice Music.”</p></li>
@@ -396,15 +423,20 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Verify that the track pauses.</p></li>
 <li><p>Press the Bluetooth <strong>Pause</strong> button again.</p></li>
 <li><p>Verify that the track resumes playing.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SMS/MMS Messaging</p></td>
-<td align="left"><ul>
+</ol>
+
+### SMS/MMS Messaging
+
+Prerequisites: 
+
+<ul>
 <li><p>Two extra device to test the messaging services.</p></li>
 <li><p>Have a photograph and a video on the devices</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>On the Start screen, tap <strong>Messaging</strong>, and then tap <strong>New</strong>.</p></li>
 <li><p>Create a new text message.</p></li>
 <li><p>Verify that the chat card is opened with an empty address bar and reply box.</p></li>
@@ -431,15 +463,20 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Send an SMS reply message from either the second or the third device to the test device.</p></li>
 <li><p>Verify on the test device that the audio notification is heard for the incoming SMS message.</p></li>
 <li><p>Verify that the reply shows up in a chat card as the latest message.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FM Radio</p></td>
-<td align="left"><ul>
+</ol>
+
+### FM Radio
+
+Prerequisites: 
+
+<ul>
 <li><p>A set of headphones to serve as an antenna for the FM radio.</p></li>
 <li><p>A second device for call support.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Plug in a pair of headphones.</p></li>
 <li><p>In the App list, tap <strong>FM Radio</strong>.</p>
 <div class="alert">
@@ -467,27 +504,35 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Verify that an alert for the incoming call is heard and the audio stops playing.</p></li>
 <li><p>Receive the incoming call and verify that the call connects.</p></li>
 <li><p>Disconnect the call and verify that the radio resumes automatically.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Rebooting the device</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Rebooting the device
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Press and hold the Power button on the device</p></li>
 <li><p>Verify that the &quot;Slide Down to power off&quot; screen is shown and swipe the screen down.</p></li>
 <li><p>Verify that the device is powered off.</p></li>
 <li><p>Press and hold the Power button again.</p></li>
 <li><p>Verify that the device boots to the main OS screen successfully without crashing.</p></li>
 <li><p>Repeat Steps 1-5.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Messaging/Family room</p></td>
-<td align="left"><ul>
+</ol>
+
+### Messaging/Family room
+
+Prerequisites: 
+
+<ul>
 <li><p>Two other Microsoft accounts.</p></li>
-<li><p>Two other device</p></li>
-</ul></td>
-<td align="left"><ol>
+<li><p>Two other devices.</p></li>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Add the numbers for the second and third device to the test device’s contact list.</p></li>
 <li><p>In the app list, tap <strong>People</strong> and swipe left to the <strong>together</strong> pivot.</p></li>
 <li><p>Tap the <strong>Add (+)</strong> button and from the &quot;Add New&quot; screen, tap <strong>Room</strong>.</p></li>
@@ -505,15 +550,20 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <li><p>Verify that the uploaded photo and video is shown in the <strong>Photo</strong> pivot of the test phone as well as the other devices.</p></li>
 <li><p>Swipe left to the <strong>Notes</strong> pivot and tap on the <strong>Add</strong> button in the app bar to add a note.</p></li>
 <li><p>Verify that the created note is saved on the <strong>Note</strong> pivot of the test device as well as on the other devices.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Search</p></td>
-<td align="left"><ul>
+</ol>
+
+### Search
+
+Prerequisites: 
+
+<ul>
 <li><p>Connected to Wi-Fi.</p></li>
 <li><p>Signed in with a Microsoft account.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Tap the Search button on the phone to launch search.</p></li>
 <li><p>Tap inside the search edit box and enter the search term &quot;dogs.”</p></li>
 <li><p>Press enter to search.</p></li>
@@ -524,13 +574,12 @@ To prepare to receive an update from the Microsoft test update server, complete 
 <p>For non-US images, the search results may vary. All pivots might not be present.</p>
 </div>
 <div>
- 
 </div></li>
 </ol>
 
 ### Alarm
 
-Preqreuisites: None
+Prerequisites: None
 
 Test steps:
 
@@ -540,22 +589,28 @@ Test steps:
 <li><p>Save the new alarm.</p></li>
 <li><p>Verify that the alarm is created with the correct information.</p></li>
 <li><p>Verify that the alarm rings at the specified time with the correct Alarm Tone and Name.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Themes</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Themes
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Theme</strong>.</p></li>
 <li><p>Change the values for <strong>Background</strong> and <strong>Accent color</strong>.</p></li>
 <li><p>Press <strong>Start</strong> to return to the Start screen.</p></li>
 <li><p>Verify that the device's theme was modified.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Contacts</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Contacts
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>On the Start screen, tap the <strong>People</strong> tile.</p></li>
 <li><p>From the <strong>Contacts</strong> pivot, tap the <strong>Add (+)</strong> button on the app bar.</p></li>
 <li><p>Enter a phone number and save it.</p></li>
@@ -568,12 +623,17 @@ Test steps:
 <li><p>Tap <strong>Options</strong>.</p></li>
 <li><p>Tap <strong>Delete</strong>.</p></li>
 <li><p>Verify that the contact has been removed from the Contacts list.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Email</p></td>
-<td align="left"><p>Several valid email accounts from compatible providers.</p></td>
-<td align="left"><ol>
+</ol>
+
+### Email
+
+Prerequisites: 
+
+Several valid email accounts from compatible providers.
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Accounts</strong> &gt; <strong>Email &amp; accounts</strong>.</p></li>
 <li><p>Tap <strong>add an account</strong> &gt; <strong>Microsoft account</strong> to add account.</p></li>
 <li><p>On the Outlook screen, enter a valid email address and password.</p></li>
@@ -586,12 +646,15 @@ Test steps:
 <li><p>Verify that the test device receives an indication of the new email and that the tile updates to show the new message.</p></li>
 <li><p>Verify that the message can be opened and read.</p></li>
 <li><p>Repeat the steps using all the different types of email accounts.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Office</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Microsoft Office
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Office</strong>.</p></li>
 <li><p>Swipe left to the <strong>Recent</strong> pivot.</p></li>
 <li><p>Verify that there are at least three sample documents present:</p>
@@ -614,12 +677,15 @@ Test steps:
 <li><p>Select &quot;Phone&quot; as the location to save the data. Tap the <strong>Save</strong> button to save the created Word document.</p></li>
 <li><p>Verify that the Word document that you created is shown in the <strong>Recent</strong> pivot of the Office app.</p></li>
 <li><p>Repeat steps 10-13 for an Excel document.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Calendar</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Calendar
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Calendar</strong>.</p></li>
 <li><p>Verify that the Calendar app is launched.</p></li>
 <li><p>Tap on the <strong>Calendar View</strong> button and select a month.</p></li>
@@ -635,15 +701,20 @@ Test steps:
 <li><p>Verify that the appointment is displayed correctly in the Calendar tile.</p></li>
 <li><p>Press the device’s Power button to lock the device. Press the button again to view the lock screen.</p></li>
 <li><p>Verify that the calendar appointment is shown on the lock screen.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Internet Explorer</p></td>
-<td align="left"><ul>
+</ol>
+
+### Internet Explorer
+
+Prerequisites: 
+
+<ul>
 <li><p>Bluetooth must be turned on.</p></li>
 <li><p>Second device for Tap+Send testing.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Tap Internet Explorer from the Start screen.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -674,12 +745,15 @@ Test steps:
  
 </div></li>
 <li><p>Verify that the shared website opens on the browser of the second device</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Charging</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ul>
+</ol>
+
+### Charging
+
+Prerequisites: None
+
+Test steps:
+
+<ul>
 <li><p>Connect a wall charger to the device and check that the <strong>charging</strong> icon is displayed. You should hear an audible indication after you plug in the cable. Unplug the charger.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -688,42 +762,54 @@ Test steps:
 <div>
  
 </div></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PC Companion</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ul>
+
+### PC Companion
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Connect the device to a computer with a USB cable.</p></li>
 <li><p>Check that the device starts to charge.</p></li>
 <li><p>Verify that the PC Companion tool starts automatically on the PC after a few seconds.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Ambient Light Sensor</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Ambient Light Sensor
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>System</strong> &gt; <strong>Display</strong>.</p></li>
 <li><p>Verify that the <strong>Automatically adjust display brightness</strong> option is turned on.</p></li>
 <li><p>Press <strong>Start</strong> to return to the Start screen.</p></li>
 <li><p>Shine a flashlight/torch at the top of the device</p></li>
 <li><p>Verify that the contrast of display changes in response to the light.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Display and Accelerometer</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Display and Accelerometer
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In portrait mode, run your finger over the whole keyboard.</p></li>
 <li><p>Verify that a message is created as expected.</p></li>
 <li><p>Rotate the device to the left and right sides.</p></li>
 <li><p>Verify that the screen orientation changes smoothly.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Download Keyboard</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Download Keyboard
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list tap <strong>Settings</strong> &gt; <strong>Devices</strong> &gt; <strong>Keyboard</strong>.</p></li>
 <li><p>Tap <strong>add keyboards</strong>.</p></li>
 <li><p>Select a keyboard.</p></li>
@@ -737,29 +823,39 @@ Test steps:
 <li><p>Verify that the keyboard changes to the new language keyboard.</p></li>
 <li><p>Create and send a new SMS message.</p></li>
 <li><p>Verify that the SMS message is sent successfully and received in the same language on the second device</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Download app from Store</p></td>
-<td align="left"><p>Wi-Fi must be connected.</p></td>
-<td align="left"><ol>
+</ol>
+
+### Download app from Store
+
+Prerequisites: 
+
+Wi-Fi must be connected.
+
+Test steps:
+
+<ol>
 <li><p>From the Start screen, tap <strong>Store</strong>.</p></li>
 <li><p>Verify that the Store launches</p></li>
 <li><p>Select an app or game from the Store front page and install it.</p></li>
 <li><p>Verify that you can watch the download progress of app/game.</p></li>
 <li><p>Verify that the game download completes in less than 5 minutes and the progress bar is gone.</p></li>
 <li><p>Verify that the app/game can be launched after it is downloaded.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Skype (Video calling)</p></td>
-<td align="left"><ul>
+</ol>
+
+### Skype (Video calling)
+
+Prerequisites: 
+
+<ul>
 <li><p>You must be connected to Wi-Fi.</p></li>
 <li><p>Bluetooth device.</p></li>
 <li><p>Second phone</p></li>
 <li><p>Two Microsoft account (one for each device) to use Skype.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>From the Start screen, tap <strong>Store</strong>.</p></li>
 <li><p>Search for and download the Skype app.</p></li>
 <li><p>In the app list, tap <strong>Settings</strong> &gt; <strong>Devices</strong> &gt; <strong>Bluetooth</strong>. Turn Bluetooth on.</p></li>
@@ -796,12 +892,17 @@ Test steps:
 <li><p>Verify that the mute and unmute functionality works on both devices.</p></li>
 <li><p>Disconnect the call from the test device.</p></li>
 <li><p>Verify that no audio is heard after the call is disconnected.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Play a game</p></td>
-<td align="left"><p>Angry Birds game downloaded from the app store.</p></td>
-<td align="left"><ol>
+</ol>
+
+### Play a game
+
+Prerequisites: 
+
+Angry Birds game downloaded from the app store.
+
+Test steps:
+
+<ol>
 <li><p>In the App list, launch the Angry Birds game..</p></li>
 <li><p>Verify that the game loads in 15-20 seconds.</p></li>
 <li><p>Verify that background music plays on the Main Menu.</p></li>
@@ -812,16 +913,21 @@ Test steps:
 <li><p>Verify that the game visuals and audio are smooth.</p></li>
 <li><p>Verify that the game does not crash.</p></li>
 <li><p>Verify that you can pause and unpause the game.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Backup and restore content</p></td>
-<td align="left"><ul>
+</ol>
+
+### Backup and restore content
+
+Prerequisites: 
+
+<ul>
 <li><p>Connected to Wi-Fi.</p></li>
 <li><p>Apps downloaded to the device</p></li>
 <li><p>Microsoft account.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>theme</strong>.</p></li>
 <li><p>Change the Background and Accent aolor.</p></li>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>Accounts</strong> &gt; <strong>Email &amp; accounts</strong>.</p></li>
@@ -851,12 +957,17 @@ Test steps:
 <li><p>In the App list, verify that your downloaded apps are still listed.</p></li>
 <li><p>In the app list, tap <strong>Settings</strong> &gt; <strong>Accounts</strong> &gt; <strong>Email &amp; accounts</strong>. Tap on the signed-in account and enter the password.</p></li>
 <li><p>Verify that your email account is synced.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Kid’s corner</p></td>
-<td align="left"><p>Games installed to the device from the store.</p></td>
-<td align="left"><ol>
+</ol>
+
+### Kid’s corner
+
+Prerequisites: 
+
+Games installed to the device from the store.
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>kid's corner</strong>.</p></li>
 <li><p>Verify that the welcome page for Kid's Corner is launched.</p></li>
 <li><p>Add a game to the Kid’s Corner.</p></li>
@@ -871,15 +982,20 @@ Test steps:
 <li><p>Lock and unlock the device.</p></li>
 <li><p>Verify that the password dialog pops up. Enter the password and unlock the device.</p></li>
 <li><p>Verify that the Start screen is displayed.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>NFC Tag Reading</p></td>
-<td align="left"><ul>
+</ol>
+
+### NFC Tag Reading
+
+Prerequisites: 
+
+<ul>
 <li><p>An item with a QR/NFC/URL tag to scan.</p></li>
 <li><p>Connected to Wi-Fi to follow the tag path.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Leave the device idle so that it goes to sleep. Press the device’s Power button to bring up the lock screen.</p></li>
 <li><p>Hold the <strong>camera</strong> button (while on lock screen) to bring up the camera.</p>
 <div class="alert">
@@ -901,16 +1017,21 @@ Test steps:
 <li><p>Press the <strong>Lens</strong> button.</p></li>
 <li><p>Select <strong>Bing Vision</strong>.</p></li>
 <li><p>Verify that the user must enter a password before accessing Bing Vision.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Lens picker</p></td>
-<td align="left"><ul>
+</ol>
+
+### Lens picker
+
+Prerequisites: 
+
+<ul>
 <li><p>You must be signed in with a Microsoft account to install lenses.</p></li>
 <li><p>Bluetooth must be turned on to use NFC sharing.</p></li>
 <li><p>Second device for NFC functionality.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Press and hold the camera hardware key to launch the camera app (or launch the app directly if the device does not have a camera button), and tap on <strong>Cancel</strong> in the &quot;Allow the camera to use your location&quot; screen.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -930,12 +1051,15 @@ Test steps:
 <li><p>Verify that the picture is shown and that you can scroll between recent pictures and the camera.</p></li>
 <li><p>Select a recent picture.</p></li>
 <li><p>Verify that you can share the photo using NFC/Tap+Share.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Local scout load time</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Local scout load time
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>Launch <strong>Local Scout</strong>.</p></li>
 <li><p>If you are launching Local Scout for the first time, allow access to your current location.</p></li>
 <li><p>Verify that you are able to see various tabs for different types of local establishments.</p></li>
@@ -944,12 +1068,17 @@ Test steps:
 <li><p>Select the directions.</p></li>
 <li><p>Verify that the map loads with directions to the restaurant.</p></li>
 <li><p>Verify that Local Scout loads locations/results in an acceptable amount of time.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Download maps</p></td>
-<td align="left"><p>Connected to Wi-Fi to download maps.</p></td>
-<td align="left"><ol>
+</ol>
+
+### Download maps
+
+Prerequisites: 
+
+Connected to Wi-Fi to download maps.
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Maps</strong> &gt; <strong>More (…)</strong> &gt; <strong>Settings</strong>.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -969,12 +1098,17 @@ Test steps:
 <li><p>Verify that Butte, Montana cannot be found in the downloaded maps.</p></li>
 <li><p>Search for “Indianapolis, Indiana”.</p></li>
 <li><p>Verify that the map loads the downloaded map of Indianapolis, Indiana.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Visual Voicemail</p></td>
-<td align="left"><p>You will need a second device</p></td>
-<td align="left"><ol>
+</ol>
+
+### Visual Voicemail
+
+Prerequisites: 
+
+You will need a second device.
+
+Test steps:
+
+<ol>
 <li><p>Power off the test device</p></li>
 <li><p>Call the test device using the second device.</p></li>
 <li><p>Verify that the call goes to voice mail. Leave a voice mail.</p></li>
@@ -990,15 +1124,20 @@ Test steps:
 <li><p>Verify that an icon shows two voice mails listed.</p></li>
 <li><p>Play the voice mails.</p></li>
 <li><p>Delete the voice mails.</p></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Internet sharing</p></td>
-<td align="left"><ul>
+</ol>
+
+### Internet sharing
+
+Prerequisites: 
+
+<ul>
 <li><p>Data Plan that permits sharing.</p></li>
 <li><p>Any Wi-Fi powered device.</p></li>
-</ul></td>
-<td align="left"><ol>
+</ul>
+
+Test steps:
+
+<ol>
 <li><p>Turn on Internet Sharing.</p></li>
 <li><p>Connect to the shared Wi-Fi with a second device, using the name and password on the device.</p>
 <div class="alert">
@@ -1010,12 +1149,15 @@ Test steps:
 </div></li>
 <li><p>Verify that the second device can browse the internet.</p></li>
 <li><p>Verify that the device displays the number of Guests (second device) connected to shared Wi-Fi.</p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Storage manager</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Storage manager
+
+Prerequisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Settings</strong> &gt; <strong>System</strong> &gt; <strong>Storage Sense</strong>.</p></li>
 <li><p>Tap the device.</p></li>
 <li><p>Verify that the data usage bars appear for the following:</p>
@@ -1034,15 +1176,8 @@ Test steps:
 <li><p>Tap the entry.</p></li>
 <li><p>Verify that you can scroll through the app’s detail page.</p></li>
 <li><p>Verify that the amount of memory space per app is shown.</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+</ol> 
  
-
- 
-
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phUpdate\p_phUpdate%5D:%20Test%20an%20update%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

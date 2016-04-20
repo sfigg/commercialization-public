@@ -87,7 +87,7 @@ From the command line, use the **Wevtutil** or **Tracerpt** commands to save the
 Wevtutil qe /lf C:\windows\panther\setup.etl 
 ```
 
-- or -
+-or-
 
 ``` syntax
 Tracerpt /l C:\windows\panther\setup.etl
