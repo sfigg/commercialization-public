@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Deploy a Custom Image
 MS-HAID: 'p\_adk\_online.deploy\_a\_custom\_image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -148,8 +149,12 @@ In this step, you will create an answer file that points to your custom image. T
     </tbody>
     </table>
 
+     
+
     **Note**  
     Expand the component list until you see the lowest setting listed in the previous table, and then add that setting to your answer file. This shortcut will add the setting and all parent settings to your answer file in one step.
+
+     
 
 5.  All of the settings that you added must appear in the **Answer File** pane. Select and configure each setting as specified in the following table.
 
@@ -218,6 +223,8 @@ In this step, you will create an answer file that points to your custom image. T
     </tr>
     </tbody>
     </table>
+
+     
 
 6.  In a command prompt window copy the answer file to a network location. For example:
 

@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: 'Sysprep Command-Line Options'
 MS-HAID: 'p\_adk\_online.sysprep\_command\_line\_options'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -68,7 +69,7 @@ The following table lists Sysprep command-line options:
 <p>The only additional switches that apply to VM mode are <strong>/reboot</strong>, <strong>/shutdown</strong>, and <strong>/quit</strong>.You must deploy the VHD on a Virtual Machine (VM) or hypervisor with the same hardware profile. For example, if you created VHD in Microsoft Hyper-V, you can only deploy your VHD to Microsoft Hyper-V VMs with a matching hardware profile. Deploying the VHD to a different VM with a different hardware profile might cause unexpected issues.</p>
 <div class="alert">
 <strong>Important</strong>  
-<p>You can only run VM mode from inside a VM.</p>
+<p>You can only run VM mode from inside a VM..</p>
 </div>
 <div>
  

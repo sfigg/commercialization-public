@@ -1,4 +1,5 @@
 ---
+author: Justinha
 Description: Enable Remote Desktop by Using an Answer File
 MS-HAID: 'p\_adk\_online.enable\_remote\_desktop\_by\_using\_an\_answer\_file'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -14,7 +15,7 @@ To enable remote desktop connections during an unattended installation, you must
 
 1.  On your technician computer, open Windows System Image Manager (Windows SIM). Click **Start**, type **Windows System Image Manager**, and then select **Windows System Image Manager**.
 
-2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](p_wsim.create_or_open_an_answer_file_win8) and [Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8).
+2.  Create a new answer file, or update an existing answer file. For more information, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085) and [Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073).
 
     Add these settings to your answer file in the listed configuration pass:
 
@@ -97,9 +98,10 @@ To enable remote desktop connections during an unattended installation, you must
     </table>
 
      
-You're now ready to install your Windows image.
 
-For more information about Windows® components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](p_unattend.unattended_windows_setup_reference_b_unattend).
+    You're now ready to install your Windows image.
+
+For more information about Windows® components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
 
 ## <span id="related_topics"></span>Related topics
 
