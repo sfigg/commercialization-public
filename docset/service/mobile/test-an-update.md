@@ -575,12 +575,15 @@ Test steps:
 <div>
  
 </div></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Alarm</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><ol>
+</ol>
+
+### Alarm
+
+Preqreuisites: None
+
+Test steps:
+
+<ol>
 <li><p>In the App list, tap <strong>Alarms &amp; Clock</strong>.</p></li>
 <li><p>Create a new alarm.</p></li>
 <li><p>Save the new alarm.</p></li>
