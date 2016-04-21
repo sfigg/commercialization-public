@@ -11,8 +11,6 @@ title: Available Language Packs for Windows
 
 The following tables show the supported language packs and language interface packs (LIPs) in different versions of Windows.
 
-We haven't yet announced the available languages for Windows 10, check back later.
-
 Corporations and users can download LIPs from the Microsoft.com web site and add them to any genuine copy of Windows that has the supported parent language installed. For more information or to download a LIP, see [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=125894).
 
 LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
