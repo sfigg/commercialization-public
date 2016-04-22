@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows 10 includes tools to help you use less drive space.'
-MS-HAID: 'p\_adk\_online.compact\_os'
+ms.assetid: f58ee9cf-0dd1-4c46-9b1f-d16891247f2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Compact OS, single-instancing, and image optimization'
 ---

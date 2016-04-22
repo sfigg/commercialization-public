@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add and Remove Drivers to an Offline Windows Image
-MS-HAID: 'p\_adk\_online.add\_and\_remove\_drivers\_to\_an\_offline\_windows\_image'
+ms.assetid: 71651630-2e26-4174-8161-8f83b8ae4bc3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Drivers to an Offline Windows Image
 ---

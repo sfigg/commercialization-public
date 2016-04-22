@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Partial Image Signing
-MS-HAID: 'p\_phUpdate.partial\_image\_signing'
+ms.assetid: dac19053-5243-45f2-9041-b9de9ea0bd80
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Partial Image Signing
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Where is WinPE.wim?'
-MS-HAID: 'p\_adk\_online.where\_is\_winpewim'
+ms.assetid: 21a05e67-84d6-417e-a789-5e1aef5914c9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Where is WinPE.wim?'
 ---

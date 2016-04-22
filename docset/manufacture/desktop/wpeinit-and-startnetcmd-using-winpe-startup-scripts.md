@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Wpeinit and Startnet.cmd: Using WinPE Startup Scripts'
-MS-HAID: 'p\_adk\_online.wpeinit\_and\_startnetcmd\_using\_winpe\_startup\_scripts'
+ms.assetid: d43621bb-b9ab-4e19-8fb4-8d05d5ee3d07
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Wpeinit and Startnet.cmd: Using WinPE Startup Scripts'
 ---

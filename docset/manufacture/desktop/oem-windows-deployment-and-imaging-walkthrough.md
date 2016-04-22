@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: OEM Windows Desktop Deployment and Imaging Lab
-MS-HAID: 'p\_sxs\_dmfg.oem\_windows\_deployment\_and\_imaging\_walkthrough'
+ms.assetid: 04dace4d-9df9-4ead-b23d-f168832c9c04
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: OEM Windows Desktop Deployment and Imaging Lab
 ---

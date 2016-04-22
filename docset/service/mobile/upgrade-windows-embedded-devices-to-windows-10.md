@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'This topic describes the supported installation paths for upgrading Windows Embedded devices. Customers must have a license for Windows 10 Enterprise.'
-MS-HAID: 'p\_phRefurb.upgrade\_windows\_embedded\_devices\_to\_windows\_10'
+ms.assetid: f008eb17-a950-446d-8b90-9043adfdf3c6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Upgrade Windows Embedded devices to Windows 10
 ---

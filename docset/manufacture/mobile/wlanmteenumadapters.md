@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEEnumAdapters
-MS-HAID: 'p\_phManuRetail.wlanmteenumadapters'
+ms.assetid: f89ddb61-0c2d-446b-9f81-3e2c88311d61
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEEnumAdapters
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Updates and resetting the device
-MS-HAID: 'p\_phUpdate.updates\_and\_resetting\_the\_phone'
+ms.assetid: ad197224-ed30-4483-816e-a48ec385197d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Updates and resetting the device
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive'
-MS-HAID: 'p\_adk\_online.download\_and\_install\_windows\_pe\_\_winpe\_\_so\_you\_can\_boot\_from\_a\_usb\_flash\_drive\_or\_an\_external\_usb\_hard\_drive'
+ms.assetid: 1799a91f-493a-4509-9937-ad6901358240
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Download and install Windows PE (WinPE) so you can boot from a USB flash drive or an external USB hard drive'
 ---

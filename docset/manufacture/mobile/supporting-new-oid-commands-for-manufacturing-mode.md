@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Supporting new OID commands for manufacturing mode
-MS-HAID: 'p\_phManuRetail.supporting\_new\_oid\_commands\_for\_manufacturing\_mode'
+ms.assetid: 0ebb9581-043e-47f8-84c9-6fa97c0900cc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting new OID commands for manufacturing mode
 ---

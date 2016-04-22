@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'UEFI Requirements: Boot time, Runtime, Hibernation State (S4)'
-MS-HAID: 'p\_adk\_online.uefi\_requirements\_boot\_time\_runtime\_hibernation\_state\_\_s4'
+ms.assetid: 8fad2f32-6ff5-49db-9d34-041485a34a4c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'UEFI Requirements: Boot time, Runtime, Hibernation State (S4)'
 ---

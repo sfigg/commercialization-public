@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add Language Packs to Windows
-MS-HAID: 'p\_adk\_online.add\_language\_packs\_to\_windows'
+ms.assetid: 0734452f-aa09-4ec9-bbbf-fbc995dd803f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Packs to Windows
 ---

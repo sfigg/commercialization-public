@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add Multilingual Support to a Windows Distribution
-MS-HAID: 'p\_adk\_online.add\_multilingual\_support\_to\_a\_windows\_distribution'
+ms.assetid: 2da53fc7-4c4d-4cea-9a98-0db4eacd33d2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Multilingual Support to a Windows Distribution
 ---

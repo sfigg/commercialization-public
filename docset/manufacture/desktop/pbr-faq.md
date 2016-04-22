@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Push-button reset frequently-asked questions (FAQ)'
-MS-HAID: 'p\_adk\_online.pbr\_faq'
+ms.assetid: 80a313e3-6c2e-4768-9fec-78dd2876f024
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Push-button reset frequently-asked questions (FAQ)'
 ---

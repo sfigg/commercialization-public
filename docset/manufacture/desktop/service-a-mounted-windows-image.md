@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Service a Mounted Windows Image
-MS-HAID: 'p\_adk\_online.service\_a\_mounted\_windows\_image'
+ms.assetid: fbfd9166-f522-4c73-a866-7d97cab32ed8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Mounted Windows Image
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Oscdimg Command-Line Options'
-MS-HAID: 'p\_adk\_online.oscdimg\_command\_line\_options\_auth\_8\_tech\_ref'
+ms.assetid: 4c64a7fe-3bab-4ab9-97ed-1b14e820b0c8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Oscdimg Command-Line Options'
 ---

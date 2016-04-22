@@ -1,6 +1,6 @@
 ---
 Description: 'In this section, we''ll go through the process of customizing and building a mobile image using the classic, or Windows Phone 8.1, tools.'
-MS-HAID: 'p\_mobile\_deployment.lab\_1\_\_classic\_mobile\_deployment'
+ms.assetid: 036e2492-60da-4611-955f-67dfdfd32c16
 MSHAttr: 'PreferredLib:/library'
 title: 'Part 1: Classic mobile deployment'
 author: CelesteDG

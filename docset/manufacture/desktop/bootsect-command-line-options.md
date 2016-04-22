@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Bootsect Command-Line Options'
-MS-HAID: 'p\_adk\_online.bootsect\_command\_line\_options\_auth\_8\_tech\_ref'
+ms.assetid: 2021a0b5-955a-4193-a6e2-9864c047d82d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bootsect Command-Line Options'
 ---

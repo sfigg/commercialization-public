@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: BCD System Store Settings for UEFI
-MS-HAID: 'p\_adk\_online.bcd\_system\_store\_settings\_for\_uefi'
+ms.assetid: bfafe378-7ac3-453e-99ca-e5fde83dee2f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: BCD System Store Settings for UEFI
 ---

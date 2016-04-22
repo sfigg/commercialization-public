@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Multilingual Windows Image Creation
-MS-HAID: 'p\_adk\_online.multilingual\_windows\_image\_creation'
+ms.assetid: 5bec65d1-44b0-484c-a5b6-959f221a4290
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Multilingual Windows Image Creation
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: '.'
-MS-HAID: 'p\_iotservice.iot\_core\_servicing\_portal'
+ms.assetid: ed790033-3ac2-44a1-8b9f-f0fd72cd7c75
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service IoT Core
 ---

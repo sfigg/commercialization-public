@@ -1,6 +1,6 @@
 ---
 Description: 'Provides guidelines for updating and servicing Windows devices.'
-MS-HAID: 'wdknodes.service\_portal'
+ms.assetid: 02f0c0e5-0964-4fdc-ba42-e22ff2ef6191
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service
 ---

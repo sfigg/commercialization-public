@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Deploy a Custom Image
-MS-HAID: 'p\_adk\_online.deploy\_a\_custom\_image'
+ms.assetid: 7eb6bc78-d1ce-42f2-bf1a-b34c4b14ed66
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Deploy a Custom Image
 ---

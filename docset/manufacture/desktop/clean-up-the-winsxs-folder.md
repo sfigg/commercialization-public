@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Clean Up the WinSxS Folder
-MS-HAID: 'p\_adk\_online.clean\_up\_the\_winsxs\_folder'
+ms.assetid: 67fe462d-cda1-4f2e-9652-62c374a6be97
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Clean Up the WinSxS Folder
 ---

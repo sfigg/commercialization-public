@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting'
-MS-HAID: 'p\_adk\_online.deploy\_net\_framework\_35\_by\_using\_group\_policy\_feature\_on\_demand\_setting'
+ms.assetid: 764f765d-cdc1-4638-9035-64f3d6a43b8d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy .NET Framework 3.5 by using Group Policy Feature on Demand setting'
 ---

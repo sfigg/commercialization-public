@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup Technical Reference
-MS-HAID: 'p\_adk\_online.windows\_setup\_technical\_reference'
+ms.assetid: f0fa0e04-e8ca-43b8-a789-0ef854e09333
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Technical Reference
 ---

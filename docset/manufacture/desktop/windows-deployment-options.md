@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Deployment Options
-MS-HAID: 'p\_adk\_online.windows\_deployment\_options'
+ms.assetid: e0bec895-af23-487c-993c-cc433827e0a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Deployment Options
 ---

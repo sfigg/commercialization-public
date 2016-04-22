@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DPI-related APIs and registry settings'
-MS-HAID: 'p\_adk\_online.dpi\_related\_apis\_and\_registry\_settings'
+ms.assetid: 23b0e272-a09e-4081-a129-d330b6878d8e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DPI-related APIs and registry settings'
 ---

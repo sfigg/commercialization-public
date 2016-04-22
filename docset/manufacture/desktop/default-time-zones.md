@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Default time zones by region in Windows 10. When the first user logs into Windows and identifies their region, Windows sets the time zone. The user can change the time zone at any time.'
-MS-HAID: 'p\_adk\_online.default\_time\_zones'
+ms.assetid: 499b2fe3-ae37-4ae1-85aa-1bc30716f043
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Default Time Zones
 ---

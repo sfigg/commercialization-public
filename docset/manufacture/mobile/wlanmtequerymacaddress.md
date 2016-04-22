@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEQueryMacAddress
-MS-HAID: 'p\_phManuRetail.wlanmtequerymacaddress'
+ms.assetid: 62953a75-4956-494f-983f-ca6475db2b43
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryMacAddress
 ---

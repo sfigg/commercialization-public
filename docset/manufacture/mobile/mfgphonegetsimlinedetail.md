@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Retrieves a struct that contains the current details for a given SIM-based phone line.'
-MS-HAID: 'p\_phManuRetail.mfgphonegetsimlinedetail'
+ms.assetid: 6ff31b2e-4a76-48cc-aefd-f015eb8cdf4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneGetSimLineDetail function
 ---

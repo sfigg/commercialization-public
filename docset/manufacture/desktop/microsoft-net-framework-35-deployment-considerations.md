@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Microsoft .NET Framework 3.5 Deployment Considerations'
-MS-HAID: 'p\_adk\_online.microsoft\_net\_framework\_35\_deployment\_considerations'
+ms.assetid: c231ba55-4181-47c0-bd16-f63e428f555f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Microsoft .NET Framework 3.5 Deployment Considerations'
 ---

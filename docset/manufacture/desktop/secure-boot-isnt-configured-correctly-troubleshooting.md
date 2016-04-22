@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Secure Boot isn''t configured correctly: troubleshooting'
-MS-HAID: 'p\_adk\_online.secure\_boot\_isnt\_configured\_correctly\_troubleshooting'
+ms.assetid: a2b9b89f-9d42-4537-a3f8-0403cd67df16
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Secure Boot isn''t configured correctly: troubleshooting'
 ---

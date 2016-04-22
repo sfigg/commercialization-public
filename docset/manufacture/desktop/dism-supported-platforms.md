@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: DISM Supported Platforms
-MS-HAID: 'p\_adk\_online.dism\_supported\_platforms'
+ms.assetid: c52337e1-19a0-46d9-aa17-c5b704ea1949
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: DISM Supported Platforms
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Configuration List and WimScript.ini Files'
-MS-HAID: 'p\_adk\_online.dism\_configuration\_list\_and\_wimscriptini\_files\_winnext'
+ms.assetid: 8e765558-4138-4215-bf53-09e46666a718
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Configuration List and WimScript.ini Files'
 ---

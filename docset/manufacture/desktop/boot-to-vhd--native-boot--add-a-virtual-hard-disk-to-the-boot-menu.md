@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu'
-MS-HAID: 'p\_adk\_online.boot\_to\_vhd\_\_native\_boot\_\_add\_a\_virtual\_hard\_disk\_to\_the\_boot\_menu'
+ms.assetid: e00d7f8f-502c-40e5-904c-8cc653c1899e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Boot to VHD (Native Boot): Add a Virtual Hard Disk to the Boot Menu'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Configure Oobe.xml'
-MS-HAID: 'p\_adk\_online.configure\_oobexml'
+ms.assetid: 4b6cef0c-30fa-4576-b580-4ec8c374da5b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Configure Oobe.xml'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Work with Product Keys and Activation
-MS-HAID: 'p\_adk\_online.work\_with\_product\_keys\_and\_activation\_auth\_phases'
+ms.assetid: 923c0cd1-527c-4610-b979-e068fcc0ef99
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Work with Product Keys and Activation
 ---

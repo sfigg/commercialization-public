@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Enable zero-rating (no-charge) downloads for device updates'
-MS-HAID: 'p\_phUpdate.enable\_zero\_rating\_\_no\_charge\_\_downloads\_for\_device\_updates'
+ms.assetid: defe3e29-03b2-448e-acf7-9009b45283d3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable zero-rating (no-charge) downloads for device updates'
 ---

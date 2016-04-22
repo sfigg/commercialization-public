@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Microsoft Manufacturing OS
-MS-HAID: 'p\_phManuRetail.microsoft\_manufacturing\_os'
+ms.assetid: 8a46f749-6405-40e8-b3a5-32955e1c0070
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Microsoft Manufacturing OS
 ---

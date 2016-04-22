@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Disabling the initial setup process
-MS-HAID: 'p\_phManuRetail.disabling\_the\_initial\_setup\_process'
+ms.assetid: e0aa36a7-5524-42de-855d-1a9b7e03e250
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Disabling the initial setup process
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Determine the Actual Size of the WinSxS Folder
-MS-HAID: 'p\_adk\_online.determine\_the\_actual\_size\_of\_the\_winsxs\_folder'
+ms.assetid: 059afbeb-3911-4e50-9ba5-ffd4fe6f38a4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Determine the Actual Size of the WinSxS Folder
 ---

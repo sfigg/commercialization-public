@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Ingestion Client for Windows Phone
-MS-HAID: 'p\_phUpdate.ingestion\_client\_for\_windows\_phone'
+ms.assetid: 2d62208f-8ba3-4034-a853-a16434c2b26d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Ingestion Client for Windows Phone
 ---

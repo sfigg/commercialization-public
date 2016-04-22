@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Here''s the features you can add to Windows 10 IoT Core (IoT Core) images.'
-MS-HAID: 'p\_iot\_core.iot\_core\_feature\_list'
+ms.assetid: cbae6949-ccfe-4015-a9b0-a269f6f30d5a
 MSHAttr: 'PreferredLib:/library'
 title: IoT Core feature list
 ---

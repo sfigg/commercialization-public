@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Customize the Default User Profile by Using CopyProfile
-MS-HAID: 'p\_adk\_online.customize\_the\_default\_user\_profile\_by\_using\_copyprofile'
+ms.assetid: 4aa887d1-1ecb-4fad-9119-ac851c273ab3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Customize the Default User Profile by Using CopyProfile
 ---

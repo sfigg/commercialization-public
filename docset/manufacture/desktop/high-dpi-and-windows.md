@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'High DPI and Windows 8.1'
-MS-HAID: 'p\_adk\_online.high\_dpi\_and\_windows'
+ms.assetid: e330d659-35f0-4178-b504-1e5a3bd169ca
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'High DPI and Windows 8.1'
 ---

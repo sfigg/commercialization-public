@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
-MS-HAID: 'p\_adk\_online.winpe\_install\_on\_a\_hard\_drive\_\_flat\_boot\_or\_non\_ram'
+ms.assetid: f4495adf-63db-4fdc-ae56-70166eed930c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Install on a Hard Drive (Flat Boot or Non-RAM)'
 ---

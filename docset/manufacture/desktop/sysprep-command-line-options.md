@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Sysprep Command-Line Options'
-MS-HAID: 'p\_adk\_online.sysprep\_command\_line\_options'
+ms.assetid: b20ee6ea-b1c4-4cd2-91ea-52f667a704bb
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Sysprep Command-Line Options'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Capture Images of Hard Disk Partitions Using DISM
-MS-HAID: 'p\_adk\_online.capture\_images\_of\_hard\_disk\_partitions\_using\_dism'
+ms.assetid: 164b9185-402f-4afb-bcf5-ef2f37077ed6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Capture Images of Hard Disk Partitions Using DISM
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Factory Encrypted Drives
-MS-HAID: 'p\_adk\_online.factory\_encrypted\_drives'
+ms.assetid: 3469481b-f380-4585-87c8-ca8a267fe607
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Factory Encrypted Drives
 ---

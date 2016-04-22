@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: System settings apps and updates
-MS-HAID: 'p\_phUpdate.system\_settings\_apps\_and\_updates'
+ms.assetid: 28da264d-0ab9-4a16-8382-53304ee86421
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: System settings apps and updates
 ---

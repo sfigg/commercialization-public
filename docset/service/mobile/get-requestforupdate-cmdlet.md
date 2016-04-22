@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Get-RequestForUpdate cmdlet'
-MS-HAID: 'p\_phUpdate.get\_requestforupdate\_cmdlet'
+ms.assetid: f2b86f24-b5ff-4c9d-ac46-66898ad79e8c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Get-RequestForUpdate cmdlet'
 ---

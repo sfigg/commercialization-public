@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Install Windows 10 using a previous version of Windows PE
-MS-HAID: 'p\_adk\_online.copy\_dism\_to\_another\_computer'
+ms.assetid: 8abda3c5-0689-4a61-ae3e-7fa51c7e2028
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows 10 using a previous version of Windows PE
 ---

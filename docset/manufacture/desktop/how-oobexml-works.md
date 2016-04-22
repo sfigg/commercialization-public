@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'How Oobe.xml Works'
-MS-HAID: 'p\_adk\_online.how\_oobexml\_works\_auth\_8\_tech\_ref'
+ms.assetid: 6df5c611-96f3-4268-9208-8455aa293954
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How Oobe.xml Works'
 ---

@@ -1,6 +1,6 @@
 ---
 Description: 'You can use the Windows Imaging and Configuration Designer (ICD) command-line interface (CLI) to generate a new Windows 10 Mobile image.'
-MS-HAID: 'p\_mobile\_deployment.use\_the\_windows\_icd\_cli\_to\_customize\_and\_build\_a\_mobile\_image'
+ms.assetid: 941023d3-14d5-415f-817b-a48ac2a4ec87
 MSHAttr: 'PreferredLib:/library'
 title: Use the Windows ICD CLI to customize and build a mobile image
 author: CelesteDG

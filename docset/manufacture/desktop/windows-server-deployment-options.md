@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Server Deployment Options
-MS-HAID: 'p\_adk\_online.windows\_server\_deployment\_options'
+ms.assetid: fafca057-bbe5-423b-a53e-b97c21239cf2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Server Deployment Options
 ---

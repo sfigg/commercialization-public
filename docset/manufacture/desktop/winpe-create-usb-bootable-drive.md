@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Create USB Bootable drive'
-MS-HAID: 'p\_adk\_online.winpe\_create\_usb\_bootable\_drive'
+ms.assetid: 9e7216ed-5a12-4f26-a0cb-da303589c806
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create USB Bootable drive'
 ---

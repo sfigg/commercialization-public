@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Create a Data Image Using DISM
-MS-HAID: 'p\_adk\_online.create\_a\_data\_image\_using\_dism'
+ms.assetid: e182335f-fe0e-4e85-8c2b-807d22af6d4b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a Data Image Using DISM
 ---

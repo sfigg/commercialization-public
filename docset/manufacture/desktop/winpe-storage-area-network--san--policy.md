@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Storage Area Network (SAN) Policy'
-MS-HAID: 'p\_adk\_online.winpe\_storage\_area\_network\_\_san\_\_policy'
+ms.assetid: fb9b42b2-432e-4c88-9973-4d9d832645df
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Storage Area Network (SAN) Policy'
 ---

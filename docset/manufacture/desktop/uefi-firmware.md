@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: UEFI Firmware
-MS-HAID: 'p\_adk\_online.uefi\_firmware'
+ms.assetid: 63cab521-9f35-4428-85b6-5561889243fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: UEFI Firmware
 ---

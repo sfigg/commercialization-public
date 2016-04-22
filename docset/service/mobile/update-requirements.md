@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Update requirements
-MS-HAID: 'p\_phUpdate.update\_requirements'
+ms.assetid: 3f2c96f5-cc52-44a2-b61d-279b649995fc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update requirements
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Enable .NET Framework 3.5 by using Windows PowerShell'
-MS-HAID: 'p\_adk\_online.enable\_net\_framework\_35\_by\_using\_windows\_powershell'
+ms.assetid: af189974-cffa-46d9-950a-40f5e28d378f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable .NET Framework 3.5 by using Windows PowerShell'
 ---

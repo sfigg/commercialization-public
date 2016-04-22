@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Wpeutil Command-Line Options'
-MS-HAID: 'p\_adk\_online.wpeutil\_command\_line\_options'
+ms.assetid: 6537713a-510e-40cd-8518-d1150422bfe8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Wpeutil Command-Line Options'
 ---

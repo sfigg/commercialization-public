@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Change the Windows Image to a Higher Edition Using DISM
-MS-HAID: 'p\_adk\_online.change\_the\_windows\_image\_to\_a\_higher\_edition\_using\_dism'
+ms.assetid: 754e7ef2-85fe-4b45-94d7-d7bd1db6eaa1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Change the Windows Image to a Higher Edition Using DISM
 ---

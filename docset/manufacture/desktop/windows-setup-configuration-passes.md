@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup Configuration Passes
-MS-HAID: 'p\_adk\_online.windows\_setup\_configuration\_passes'
+ms.assetid: 42931b4a-7c3e-48f6-b03e-4e8d7d76643a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Configuration Passes
 ---

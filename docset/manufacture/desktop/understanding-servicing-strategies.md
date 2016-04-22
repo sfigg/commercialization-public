@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Understanding Servicing Strategies
-MS-HAID: 'p\_adk\_online.understanding\_servicing\_strategies'
+ms.assetid: 2e24e9e3-8216-4d8a-bd63-c61adddc6ac8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Understanding Servicing Strategies
 ---

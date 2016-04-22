@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Mount and Modify a Windows Image Using DISM
-MS-HAID: 'p\_adk\_online.mount\_and\_modify\_a\_windows\_image\_using\_dism'
+ms.assetid: f48b4681-bc59-4eb1-89c9-0163594467f7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mount and Modify a Windows Image Using DISM
 ---

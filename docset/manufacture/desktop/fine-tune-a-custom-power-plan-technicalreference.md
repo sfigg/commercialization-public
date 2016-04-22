@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Fine-Tune a Custom Power Plan'
-MS-HAID: 'p\_adk\_online.fine\_tune\_a\_custom\_power\_plan\_8\_technicalreference'
+ms.assetid: 3f3b0d9d-d84a-4b87-a271-159d80ebbcc7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Fine-Tune a Custom Power Plan'
 ---

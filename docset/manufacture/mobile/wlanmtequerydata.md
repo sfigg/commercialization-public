@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEQueryData
-MS-HAID: 'p\_phManuRetail.wlanmtequerydata'
+ms.assetid: 3def2451-5c4e-490b-ad6c-dbd703d7574a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryData
 ---

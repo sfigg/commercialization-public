@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: FFU Catalog Signing
-MS-HAID: 'p\_phUpdate.ffu\_catalog\_signing'
+ms.assetid: 31956395-2253-430e-a578-fc0218952a90
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: FFU Catalog Signing
 ---

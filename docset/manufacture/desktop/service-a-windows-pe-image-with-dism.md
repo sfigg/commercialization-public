@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Service a Windows PE Image with DISM
-MS-HAID: 'p\_adk\_online.service\_a\_windows\_pe\_image\_with\_dism'
+ms.assetid: 6434495a-bcec-47a5-a82c-756ab505cf4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Windows PE Image with DISM
 ---

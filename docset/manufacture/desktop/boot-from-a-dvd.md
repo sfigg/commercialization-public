@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Boot from a DVD
-MS-HAID: 'p\_adk\_online.boot\_from\_a\_dvd'
+ms.assetid: f64eb16b-15b3-4a6d-af68-526a8097edb7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot from a DVD
 ---

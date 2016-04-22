@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Where is DISM?'
-MS-HAID: 'p\_adk\_online.where\_to\_find\_dism\_s14'
+ms.assetid: c7be3027-8aef-4a28-9a68-76d1e14db32b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Where is DISM?'
 ---

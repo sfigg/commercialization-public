@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Defines the possible boot modes that the operating system can use when it starts.'
-MS-HAID: 'p\_phManuRetail.efi\_boot\_mode\_info\_enumeration'
+ms.assetid: cb78662f-8ce0-4adb-97ad-e8520c8513fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'EFI\_BOOT\_MODE\_INFO enumeration'
 ---

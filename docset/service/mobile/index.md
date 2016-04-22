@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'To update your devices, you''ll submit an update to Microsoft.'
-MS-HAID: 'p\_phUpdate.update'
+ms.assetid: 529f841c-abd2-4b33-93c6-509e3dfcbff7
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mobile update
 ---

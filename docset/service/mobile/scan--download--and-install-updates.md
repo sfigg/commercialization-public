@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Devices can automatically scan for updates, download them, and prompt the user to install them at a time that’s right for them. They can also identify updates that are too important to pass by.'
-MS-HAID: 'p\_phUpdate.scan\_\_download\_\_and\_install\_updates'
+ms.assetid: 5ed8aad7-7aa9-4c81-844c-2e529d75f0b5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Scan, download, and install updates'
 ---

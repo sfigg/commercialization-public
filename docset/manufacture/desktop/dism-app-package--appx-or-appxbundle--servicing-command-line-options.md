@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM App Package (.appx or .appxbundle) Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_app\_package\_\_appx\_or\_appxbundle\_\_servicing\_command\_line\_options'
+ms.assetid: 3a2de7c0-d132-41ec-9603-a54e958fee2c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM App Package (.appx or .appxbundle) Servicing Command-Line Options'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Secure Boot Key Creation and Management Guidance
-MS-HAID: 'p\_adk\_online.windows\_secure\_boot\_key\_creation\_and\_management\_guidance'
+ms.assetid: 603ae3a4-d9b6-4d2a-bf46-b2fdffcd6baf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Secure Boot Key Creation and Management Guidance
 ---

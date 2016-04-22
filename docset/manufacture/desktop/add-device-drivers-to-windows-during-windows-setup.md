@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add Device Drivers to Windows During Windows Setup
-MS-HAID: 'p\_adk\_online.add\_device\_drivers\_to\_windows\_during\_windows\_setup'
+ms.assetid: adb22778-06a2-493a-81de-3a1306a0b208
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Device Drivers to Windows During Windows Setup
 ---

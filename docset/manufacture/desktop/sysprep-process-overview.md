@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Sysprep Process Overview
-MS-HAID: 'p\_adk\_online.sysprep\_process\_overview'
+ms.assetid: e764e19f-8a8a-4fae-aa1f-22e70caf1599
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sysprep Process Overview
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEQueryPhyTypes
-MS-HAID: 'p\_phManuRetail.wlanmtequeryphytypes'
+ms.assetid: ea480a18-0f0c-489a-9f94-b032d0f0a9be
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryPhyTypes
 ---

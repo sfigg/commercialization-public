@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Developing custom OEM flashing tools
-MS-HAID: 'p\_phManuRetail.developing\_custom\_oem\_flashing\_tools'
+ms.assetid: 121f6c72-5d87-4391-9b40-dbd89e57a826
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Developing custom OEM flashing tools
 ---

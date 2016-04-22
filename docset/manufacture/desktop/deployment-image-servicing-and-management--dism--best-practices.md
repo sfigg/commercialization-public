@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Deployment Image Servicing and Management (DISM) Best Practices'
-MS-HAID: 'p\_adk\_online.deployment\_image\_servicing\_and\_management\_\_dism\_\_best\_practices'
+ms.assetid: b9629ef4-9b4f-47c4-8eca-d2469cfcbd9b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deployment Image Servicing and Management (DISM) Best Practices'
 ---

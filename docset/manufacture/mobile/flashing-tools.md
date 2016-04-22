@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Flashing tools
-MS-HAID: 'p\_phManuRetail.flashing\_tools'
+ms.assetid: ac04af30-84ef-4d09-9c6f-5b9c01f9a2a0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Flashing tools
 ---

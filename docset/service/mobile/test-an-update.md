@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Test an update
-MS-HAID: 'p\_phUpdate.test\_an\_update'
+ms.assetid: cdeecf1c-a239-4d7a-87b8-a366e8e26f06
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Test an update
 ---

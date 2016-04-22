@@ -1,6 +1,6 @@
 ---
 Description: 'Provides guidelines for manufacturing Windows devices.'
-MS-HAID: 'wdknodes.manufacture\_portal'
+ms.assetid: f6b042ec-71f2-4c55-a9a0-7e4e7c0d0d19
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacture
 author: justinha

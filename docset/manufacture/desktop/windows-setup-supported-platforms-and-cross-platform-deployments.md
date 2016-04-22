@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows Setup Supported Platforms and Cross-Platform Deployments'
-MS-HAID: 'p\_adk\_online.windows\_setup\_supported\_platforms\_and\_cross\_platform\_deployments'
+ms.assetid: 044cbb4f-7330-473d-8654-3371b2d6aff1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Setup Supported Platforms and Cross-Platform Deployments'
 ---

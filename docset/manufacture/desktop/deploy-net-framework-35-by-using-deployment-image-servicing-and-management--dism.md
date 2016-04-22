@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)'
-MS-HAID: 'p\_adk\_online.deploy\_net\_framework\_35\_by\_using\_deployment\_image\_servicing\_and\_management\_\_dism\_'
+ms.assetid: c21b1e0f-d480-4f51-99d1-d5f7acba3a4a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)'
 ---

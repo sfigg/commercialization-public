@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Now that you''ve seen how to configure Windows images using Windows Imaging and Configuration Designer (ICD), we''ll show you how to add Classic Windows applications and other data by using audit mode.'
-MS-HAID: 'p\_sxs\_dmfg.combine\_provisioning\_packages\_into\_a\_new\_image'
+ms.assetid: 61e94d42-5d12-4c54-9efc-1e38ea94f750
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1b: Create a provisioning package with Windows desktop applications'
 ---

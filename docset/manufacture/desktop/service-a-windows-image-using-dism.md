@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Service a Windows Image Using DISM
-MS-HAID: 'p\_adk\_online.service\_a\_windows\_image\_using\_dism'
+ms.assetid: 7578765f-15ca-4cdd-9327-cfe42a36add2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service a Windows Image Using DISM
 ---

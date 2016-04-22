@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Battery Life
-MS-HAID: 'p\_adk\_online.battery\_life'
+ms.assetid: 8da66522-0ada-4e48-abd3-b70efc1f5f06
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Battery Life
 ---

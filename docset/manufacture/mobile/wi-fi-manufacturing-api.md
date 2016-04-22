@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Wi-Fi manufacturing API'
-MS-HAID: 'p\_phManuRetail.wi\_fi\_manufacturing\_api'
+ms.assetid: 014c7111-cb2f-43a9-a0d0-4b097261493e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Wi-Fi manufacturing API'
 ---

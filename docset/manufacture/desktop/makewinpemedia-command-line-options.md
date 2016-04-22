@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Makewinpemedia Command-Line Options'
-MS-HAID: 'p\_adk\_online.makewinpemedia\_command\_line\_options'
+ms.assetid: b3fc26e8-96a0-4fca-9678-ac895835b7e0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Makewinpemedia Command-Line Options'
 ---

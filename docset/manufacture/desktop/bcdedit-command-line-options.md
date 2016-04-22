@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'BCDEdit is a command-line tool for managing Boot Configuration Data (BCD).'
-MS-HAID: 'p\_adk\_online.bcdedit\_command-line\_options'
+ms.assetid: cf7d52f0-13fb-416d-9ec5-9e4eff4fd774
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'BCDEdit Command-Line Options'
 ---

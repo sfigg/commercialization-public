@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: BitLocker Drive Encryption
-MS-HAID: 'p\_adk\_online.bitlocker\_drive\_encryption'
+ms.assetid: 47d6aadf-0496-4a8a-b0a5-dfb6fa9f5748
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: BitLocker Drive Encryption
 ---

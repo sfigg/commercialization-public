@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'The following scripts are used in the lab. It may be helpful to create these all at once, or to download the samples from the web.'
-MS-HAID: 'p\_sxs\_dmfg.windows\_deployment\_sample\_scripts\_sxs'
+ms.assetid: 621503da-e74f-4eef-8315-72c8be67747a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sample scripts
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Using provisioning files to update registry settings that may change
-MS-HAID: 'p\_phUpdate.using\_provisioning\_files\_to\_update\_registry\_settings\_that\_may\_change'
+ms.assetid: 77262c4c-69e2-456e-909b-27bd4e0d21f1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Using provisioning files to update registry settings that may change
 ---

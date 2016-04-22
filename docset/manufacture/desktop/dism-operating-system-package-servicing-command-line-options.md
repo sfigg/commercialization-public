@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Operating System Package (.cab or .msu) Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_operating\_system\_package\_servicing\_command\_line\_options'
+ms.assetid: ddb5f223-1c65-4380-95eb-316918e880fc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Operating System Package (.cab or .msu) Servicing Command-Line Options'
 ---

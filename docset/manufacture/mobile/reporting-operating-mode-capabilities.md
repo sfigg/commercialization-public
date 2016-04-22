@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Reporting operating mode capabilities
-MS-HAID: 'p\_phManuRetail.reporting\_operating\_mode\_capabilities'
+ms.assetid: 1beda5a7-63d7-4519-955c-cc240733fc49
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Reporting operating mode capabilities
 ---

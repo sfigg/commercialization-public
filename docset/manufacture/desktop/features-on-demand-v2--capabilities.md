@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows feature packages that can be added at any time. Common features include language resources like handwriting recognition or the .NET Framework (.NetFx3).'
-MS-HAID: 'p\_adk\_online.features\_on\_demand\_v2\_\_capabilities\_'
+ms.assetid: 6390f427-a201-487e-928f-964e7b84327c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Features On Demand V2 (Capabilities)'
 ---

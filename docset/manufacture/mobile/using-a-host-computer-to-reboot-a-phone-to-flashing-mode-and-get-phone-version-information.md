@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Using a host PC to reboot a device to flashing mode and get version information
-MS-HAID: 'p\_phManuRetail.using\_a\_host\_computer\_to\_reboot\_a\_phone\_to\_flashing\_mode\_and\_get\_phone\_version\_information'
+ms.assetid: 19499cb0-b45d-4971-9934-778f17a87e52
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Using a host PC to reboot a device to flashing mode and get version information
 ---

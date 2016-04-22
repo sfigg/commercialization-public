@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'The following features can be used with devices running in Manufacturing Mode.'
-MS-HAID: 'p\_phManuRetail.optional\_features\_for\_manufacturing\_mode\_'
+ms.assetid: 6f675ace-3f76-4421-8109-16fdf9e469fd
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Optional features for Manufacturing Mode
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows Recovery Environment (Windows RE)'
-MS-HAID: 'p\_adk\_online.windows\_recovery\_environment\_\_windows\_re\_\_technical\_reference'
+ms.assetid: af78b72b-9f45-4ac3-882b-411a2bafbeed
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Recovery Environment (Windows RE)'
 ---

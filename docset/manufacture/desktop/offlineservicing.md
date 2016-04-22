@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: offlineServicing
-MS-HAID: 'p\_adk\_online.offlineservicing'
+ms.assetid: 8c921c85-c986-419c-9f93-bdacd9441abb
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: offlineServicing
 ---

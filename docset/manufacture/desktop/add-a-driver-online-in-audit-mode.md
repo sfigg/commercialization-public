@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add a Driver Online in Audit Mode
-MS-HAID: 'p\_adk\_online.add\_a\_driver\_online\_in\_audit\_mode'
+ms.assetid: 3b7e2d24-4bd4-4ca3-8e6f-2bd771ebab3b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add a Driver Online in Audit Mode
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Debug Apps'
-MS-HAID: 'p\_adk\_online.winpe\_debug\_apps'
+ms.assetid: 30fe59bc-f169-4534-b5a5-dbe58a10cb83
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Debug Apps'
 ---

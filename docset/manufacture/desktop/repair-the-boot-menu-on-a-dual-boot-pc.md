@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Repair the boot menu on a dual-boot PC'
-MS-HAID: 'p\_adk\_online.repair\_the\_boot\_menu\_on\_a\_dual\_boot\_pc'
+ms.assetid: 166c9499-b9b2-48bb-9ff6-d91dc0e497a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Repair the boot menu on a dual-boot PC'
 ---
