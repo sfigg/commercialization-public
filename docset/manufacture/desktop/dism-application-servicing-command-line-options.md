@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Application Servicing (.msp) Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_application\_servicing\_command\_line\_options'
+ms.assetid: 78ed3303-1e79-4257-ad04-d5f68d34b758
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Application Servicing (.msp) Command-Line Options'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add and Remove Language Packs Offline Using DISM
-MS-HAID: 'p\_adk\_online.add\_and\_remove\_language\_packs\_offline\_using\_dism'
+ms.assetid: 128cffa3-8c53-41c8-add2-fa10197f36a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Language Packs Offline Using DISM
 ---

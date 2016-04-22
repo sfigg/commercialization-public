@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: UEFI Installation Media Format and default boot behavior
-MS-HAID: 'p\_adk\_online.uefi\_installation\_media\_format\_and\_default\_boot\_behavior'
+ms.assetid: 983e25d4-ce72-463e-ad59-02467f19f4a4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: UEFI Installation Media Format and default boot behavior
 ---

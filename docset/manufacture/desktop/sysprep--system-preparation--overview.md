@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Sysprep (System Preparation) Overview'
-MS-HAID: 'p\_adk\_online.sysprep\_\_system\_preparation\_\_overview'
+ms.assetid: f16f9f4e-c897-4a08-8c0f-e9d64043738c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Sysprep (System Preparation) Overview'
 ---

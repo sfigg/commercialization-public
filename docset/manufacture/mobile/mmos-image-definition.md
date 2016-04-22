@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: MMOS image definition
-MS-HAID: 'p\_phManuRetail.mmos\_image\_definition'
+ms.assetid: 3b548778-0551-4ca0-9768-725d0f33dfca
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MMOS image definition
 ---

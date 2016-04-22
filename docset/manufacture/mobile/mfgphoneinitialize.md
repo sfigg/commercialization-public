@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Initializes the phone system and the internal state of the API implemented by DLL.'
-MS-HAID: 'p\_phManuRetail.mfgphoneinitialize'
+ms.assetid: b9a9f95e-32ca-49fe-8f8c-9bf00d899edf
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneInitialize function
 ---

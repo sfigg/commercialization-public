@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Enable or Disable Windows Features Using DISM
-MS-HAID: 'p\_adk\_online.enable\_or\_disable\_windows\_features\_using\_dism'
+ms.assetid: a5280bba-7808-4752-92ca-7605a9ea29f0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Enable or Disable Windows Features Using DISM
 ---

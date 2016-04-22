@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows Setup Command-Line Options'
-MS-HAID: 'p\_adk\_online.windows\_setup\_command\_line\_options'
+ms.assetid: 16001d04-db9f-4953-abc7-37903ef47fd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Setup Command-Line Options'
 ---

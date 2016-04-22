@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk'
-MS-HAID: 'p\_adk\_online.configure\_more\_than\_four\_partitions\_on\_a\_biosmbr\_based\_hard\_disk'
+ms.assetid: a1df0974-870f-498a-9994-5f614d8a308b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Configure More than Four Partitions on a BIOS/MBR-Based Hard Disk'
 ---

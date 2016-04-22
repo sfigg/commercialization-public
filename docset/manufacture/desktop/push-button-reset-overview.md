@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Push-button reset'
-MS-HAID: 'p\_adk\_online.push\_button\_reset\_overview'
+ms.assetid: f3d01e46-2288-42b3-a662-1f9346aeb50f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Push-button reset'
 ---

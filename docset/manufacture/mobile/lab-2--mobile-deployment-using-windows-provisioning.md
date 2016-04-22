@@ -1,6 +1,6 @@
 ---
 Description: 'In this section, we''ll go through the process of customizing and building a mobile image using the Windows Imaging and Configuration Designer (ICD).'
-MS-HAID: 'p\_mobile\_deployment.lab\_2\_\_mobile\_deployment\_using\_windows\_provisioning'
+ms.assetid: 6e018255-b629-4d69-8b85-7a5c3ec53944
 MSHAttr: 'PreferredLib:/library'
 title: 'Part 2: Mobile deployment using Windows Provisioning'
 author: CelesteDG

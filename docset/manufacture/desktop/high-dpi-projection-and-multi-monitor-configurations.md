@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'High DPI projection and multi-monitor configurations'
-MS-HAID: 'p\_adk\_online.high\_dpi\_projection\_and\_multi\_monitor\_configurations'
+ms.assetid: 81a96303-5ab5-4002-acac-ab356e2ec829
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'High DPI projection and multi-monitor configurations'
 ---

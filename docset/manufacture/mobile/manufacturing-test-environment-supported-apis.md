@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Manufacturing test environment supported APIs
-MS-HAID: 'p\_phManuRetail.manufacturing\_test\_environment\_supported\_apis'
+ms.assetid: a51f7722-ccca-4571-9f07-3ff512a0ddaa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacturing test environment supported APIs
 ---

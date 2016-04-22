@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Image Management Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_image\_management\_command\_line\_options\_s14'
+ms.assetid: a6382d83-5748-4b08-9d9a-46ff576bac54
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Image Management Command-Line Options'
 ---

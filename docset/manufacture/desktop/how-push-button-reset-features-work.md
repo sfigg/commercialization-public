@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'How push-button reset features work'
-MS-HAID: 'p\_adk\_online.how\_push-button\_reset\_features\_work'
+ms.assetid: 86c93069-916c-4c94-8ba8-2fbf0d792a36
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How push-button reset features work'
 ---

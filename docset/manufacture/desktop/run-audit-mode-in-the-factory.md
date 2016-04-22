@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Run Audit Mode in the Factory
-MS-HAID: 'p\_adk\_online.run\_audit\_mode\_in\_the\_factory'
+ms.assetid: e8262c69-3fae-455e-9cbd-88c486f92094
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Run Audit Mode in the Factory
 ---

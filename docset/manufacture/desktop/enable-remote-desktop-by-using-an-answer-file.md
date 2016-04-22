@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Enable Remote Desktop by Using an Answer File
-MS-HAID: 'p\_adk\_online.enable\_remote\_desktop\_by\_using\_an\_answer\_file'
+ms.assetid: bee7ad87-7fb4-4313-baab-109a6f067ccc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Enable Remote Desktop by Using an Answer File
 ---

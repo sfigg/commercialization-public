@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Reference (Deployment Image Servicing and Management)'
-MS-HAID: 'p\_adk\_online.dism\_reference\_\_deployment\_image\_servicing\_and\_management\_'
+ms.assetid: 0f231dad-76ec-42eb-907f-7b3bf0ba0877
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Reference (Deployment Image Servicing and Management)'
 ---

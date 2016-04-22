@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup States
-MS-HAID: 'p\_adk\_online.windows\_setup\_states'
+ms.assetid: f67b1396-b2a5-4ac1-8104-7188e5cff54c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup States
 ---

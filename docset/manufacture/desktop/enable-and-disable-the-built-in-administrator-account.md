@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Enable and Disable the Built-in Administrator Account'
-MS-HAID: 'p\_adk\_online.enable\_and\_disable\_the\_built\_in\_administrator\_account'
+ms.assetid: d6011433-badb-4707-a5b9-9325f33b6a95
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable and Disable the Built-in Administrator Account'
 ---

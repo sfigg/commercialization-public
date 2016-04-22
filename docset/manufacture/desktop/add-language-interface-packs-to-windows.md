@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add Language Interface Packs to Windows
-MS-HAID: 'p\_adk\_online.add\_language\_interface\_packs\_to\_windows'
+ms.assetid: 6acfeb8f-ce94-46e0-b679-1f58958fdd3e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add Language Interface Packs to Windows
 ---

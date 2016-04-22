@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only.'
-MS-HAID: 'p\_adk\_online.dism\_capabilities\_package\_servicing\_command-line\_options'
+ms.assetid: b5f9740e-070c-48c0-9f79-42b25dfeb219
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Capabilities Package Servicing Command-Line Options'
 ---

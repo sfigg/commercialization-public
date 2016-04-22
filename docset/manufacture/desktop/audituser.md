@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: auditUser
-MS-HAID: 'p\_adk\_online.audituser'
+ms.assetid: 34da792a-51fa-4a4d-a67e-6390cb5be2a1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: auditUser
 ---

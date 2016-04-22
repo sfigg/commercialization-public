@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows 10 DISM Command-Line Options'
-MS-HAID: 'p\_adk\_online.deployment\_image\_servicing\_and\_management\_\_dism\_\_command\_line\_options'
+ms.assetid: 56e2f629-ee86-4ee3-9ba6-f8864cdf4ca3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows 10 DISM Command-Line Options'
 ---

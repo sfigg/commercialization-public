@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Update scenarios
-MS-HAID: 'p\_phUpdate.update\_scenarios'
+ms.assetid: f881a58e-7539-42d8-b4f7-9ac7d52e4fee
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update scenarios
 ---

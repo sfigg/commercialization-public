@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Adding Windows PowerShell support to Windows PE'
-MS-HAID: 'p\_adk\_online.winpe\_adding\_powershell\_support\_to\_windows\_pe'
+ms.assetid: 8b653cf6-3584-4c80-be84-ca32d60aeba2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Adding Windows PowerShell support to Windows PE'
 ---

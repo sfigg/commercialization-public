@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Provides information about the state of the phone line? call?.'
-MS-HAID: 'p\_phManuRetail.mfgphone\_registrationstate'
+ms.assetid: 0157eda2-5066-4f2e-95f8-1ae990db2540
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_REGISTRATIONSTATE enumeration'
 ---

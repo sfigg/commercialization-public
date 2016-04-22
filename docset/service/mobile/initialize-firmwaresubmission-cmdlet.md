@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Initialize-FirmwareSubmission cmdlet'
-MS-HAID: 'p\_phUpdate.initialize\_firmwaresubmission\_cmdlet'
+ms.assetid: f941c3e5-dea6-444b-aebe-41ca07b24377
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Initialize-FirmwareSubmission cmdlet'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows Deployment Command-Line Tools Reference'
-MS-HAID: 'p\_adk\_online.windows\_deployment\_command\_line\_tools\_reference'
+ms.assetid: 503d5760-44d8-45d8-bc05-c8fc157e6269
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Deployment Command-Line Tools Reference'
 ---

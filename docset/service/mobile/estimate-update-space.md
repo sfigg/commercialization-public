@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Estimate update space
-MS-HAID: 'p\_phUpdate.estimate\_update\_space'
+ms.assetid: dfd2eed9-3202-4a08-87d1-d1f4f132b7c5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Estimate update space
 ---

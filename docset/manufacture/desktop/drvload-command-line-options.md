@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Drvload Command-Line Options'
-MS-HAID: 'p\_adk\_online.drvload\_command\_line\_options'
+ms.assetid: d4e6f566-2763-4774-876e-24357f223a52
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Drvload Command-Line Options'
 ---

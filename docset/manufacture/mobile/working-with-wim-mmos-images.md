@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Working with WIM MMOS images
-MS-HAID: 'p\_phManuRetail.working\_with\_wim\_mmos\_images'
+ms.assetid: c995e207-1b89-4d49-ad46-1ccc750737ec
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Working with WIM MMOS images
 ---

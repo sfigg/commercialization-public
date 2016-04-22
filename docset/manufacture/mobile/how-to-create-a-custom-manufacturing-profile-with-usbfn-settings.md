@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'You can also specify custom USBFN settings in a manufacturing profile that are only used when the device is in manufacturing mode.'
-MS-HAID: 'p\_phManuRetail.how\_to\_create\_a\_custom\_manufacturing\_profile\_with\_usbfn\_settings'
+ms.assetid: 0b95ffc6-f3c4-4b22-a48f-513466c36eac
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a custom manufacturing profile package with USBFN settings
 ---

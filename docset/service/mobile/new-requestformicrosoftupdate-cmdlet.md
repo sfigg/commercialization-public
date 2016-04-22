@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'New-RequestForMicrosoftUpdate cmdlet'
-MS-HAID: 'p\_phUpdate.new\_requestformicrosoftupdate\_cmdlet'
+ms.assetid: be21b20d-a3bf-4b83-9633-211dcbeecdb3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'New-RequestForMicrosoftUpdate cmdlet'
 ---

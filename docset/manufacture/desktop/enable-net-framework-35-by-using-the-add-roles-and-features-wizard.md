@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Enable .NET Framework 3.5 by using the Add Roles and Features Wizard'
-MS-HAID: 'p\_adk\_online.enable\_net\_framework\_35\_by\_using\_the\_add\_roles\_and\_features\_wizard'
+ms.assetid: 08b011c7-7f15-4fd5-9a19-c99249e4f642
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Enable .NET Framework 3.5 by using the Add Roles and Features Wizard'
 ---

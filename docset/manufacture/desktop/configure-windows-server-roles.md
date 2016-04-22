@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Configure Windows Server Roles
-MS-HAID: 'p\_adk\_online.configure\_windows\_server\_roles'
+ms.assetid: c7ad0ffa-30a5-4fb3-9e69-b70fed86b694
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Windows Server Roles
 ---

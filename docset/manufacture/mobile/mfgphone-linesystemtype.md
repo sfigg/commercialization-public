@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Provides information about the type of line system.'
-MS-HAID: 'p\_phManuRetail.mfgphone\_linesystemtype'
+ms.assetid: 03dd827c-00f4-4288-b79d-7cfb3d4feab0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_LINESYSTEMTYPE enumeration'
 ---

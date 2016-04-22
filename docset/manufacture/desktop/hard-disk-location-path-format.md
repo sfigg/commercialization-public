@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Hard Disk Location Path Format
-MS-HAID: 'p\_adk\_online.hard\_disk\_location\_path\_format'
+ms.assetid: 9f9d96ae-4fec-487d-95d2-ffd09b7d9fd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Hard Disk Location Path Format
 ---

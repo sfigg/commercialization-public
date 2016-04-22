@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup Scenarios and Best Practices
-MS-HAID: 'p\_adk\_online.windows\_setup\_scenarios\_and\_best\_practices'
+ms.assetid: 651cb9c3-121d-40d3-9e17-47f1a78a000f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Scenarios and Best Practices
 ---

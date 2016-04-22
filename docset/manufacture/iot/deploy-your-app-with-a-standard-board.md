@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'We''re now going to take an app (like the sample Hello, World! app), and package it up so that it can be serviced after it reaches your customers.'
-MS-HAID: 'p\_iot\_core.deploy\_your\_app\_with\_a\_standard\_board'
+ms.assetid: a801d768-0397-4f85-b68f-bd85ddcc3f1f
 MSHAttr: 'PreferredLib:/library'
 title: 'Lab 1b: Add an app to your image'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'As new Windows updates become available, add them to your image.'
-MS-HAID: 'p\_sxs\_dmfg.servicing\_the\_image\_with\_windows\_updates'
+ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 2c: Servicing the image with Windows Updates'
 ---

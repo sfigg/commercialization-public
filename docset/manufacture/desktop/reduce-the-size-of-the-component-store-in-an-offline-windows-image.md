@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Reduce the Size of the Component Store in an Offline Windows Image
-MS-HAID: 'p\_adk\_online.reduce\_the\_size\_of\_the\_component\_store\_in\_an\_offline\_windows\_image'
+ms.assetid: 2cdff215-30b9-4360-9e2c-cc2c3d695608
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Reduce the Size of the Component Store in an Offline Windows Image
 ---

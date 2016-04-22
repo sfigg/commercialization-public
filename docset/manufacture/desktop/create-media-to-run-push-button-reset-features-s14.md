@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Bare metal reset/recovery: create recovery media while deploying new devices'
-MS-HAID: 'p\_adk\_online.create\_media\_to\_run\_push\_button\_reset\_features\_s14'
+ms.assetid: 2244bddf-8f49-41db-949a-2fbe9e224003
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bare metal reset/recovery: create recovery media while deploying new devices'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add and Remove Language Packs on a Running Windows Installation
-MS-HAID: 'p\_adk\_online.add\_and\_remove\_language\_packs\_on\_a\_running\_windows\_installation'
+ms.assetid: 0e3f0b85-417e-4e17-869e-05ae37e98c8f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add and Remove Language Packs on a Running Windows Installation
 ---

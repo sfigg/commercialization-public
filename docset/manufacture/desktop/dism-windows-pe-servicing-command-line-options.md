@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Windows PE Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_windows\_pe\_servicing\_command\_line\_options'
+ms.assetid: d759221d-47ee-4f50-957e-3b978be22dea
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Windows PE Servicing Command-Line Options'
 ---

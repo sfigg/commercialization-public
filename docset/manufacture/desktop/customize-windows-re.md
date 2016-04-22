@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Customize Windows RE
-MS-HAID: 'p\_adk\_online.customize\_windows\_re'
+ms.assetid: ce94e3c4-03f6-46d1-b2a8-cc5d75c7a66d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Customize Windows RE
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Adding Wi-Fi manufacturing test support to the OID interface'
-MS-HAID: 'p\_phManuRetail.adding\_wi\_fi\_manufacturing\_test\_support\_to\_the\_oid\_interface'
+ms.assetid: f041b6a9-8c05-487d-9dd1-e538865a9104
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Adding Wi-Fi manufacturing test support to the OID interface'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add a custom tool to the Windows RE boot options menu
-MS-HAID: 'p\_adk\_online.add\_a\_custom\_tool\_to\_the\_windows\_re\_boot\_options\_menu'
+ms.assetid: 474958cf-91bc-4c5c-8afd-22865e9bf4a5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add a custom tool to the Windows RE boot options menu
 ---

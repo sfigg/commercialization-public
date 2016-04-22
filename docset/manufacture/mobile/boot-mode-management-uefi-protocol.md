@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'The boot mode management protocol is used to determine which boot mode the operating system should use when it starts.'
-MS-HAID: 'p\_phManuRetail.boot\_mode\_management\_uefi\_protocol'
+ms.assetid: 9782c51d-8915-43ef-8a64-9c8be9dc228d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot mode management UEFI protocol
 ---

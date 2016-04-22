@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Use DISM in Windows PowerShell
-MS-HAID: 'p\_adk\_online.use\_dism\_in\_windows\_powershell\_s14'
+ms.assetid: c258fead-059f-4a03-b6af-24cdc7451ca3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Use DISM in Windows PowerShell
 ---

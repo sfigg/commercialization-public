@@ -1,6 +1,6 @@
 ---
 Description: 'Here''s what you''ll need to start customizing, testing, and deploying Windows on mobile devices.'
-MS-HAID: 'p\_mobile\_deployment.preparing\_for\_windows\_mobile\_development'
+ms.assetid: 57bc2066-0b27-4fcb-b938-1c73a361b212
 MSHAttr: 'PreferredLib:/library'
 title: Prepare for Windows mobile development
 author: CelesteDG

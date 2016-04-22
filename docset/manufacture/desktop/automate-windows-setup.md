@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Automate Windows Setup
-MS-HAID: 'p\_adk\_online.automate\_windows\_setup'
+ms.assetid: 882a3774-d0c3-405f-af31-2b9a5d1458d5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Automate Windows Setup
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTESetData
-MS-HAID: 'p\_phManuRetail.wlanmtesetdata'
+ms.assetid: cf0cf3b4-a4e0-4818-bc78-8b5547903f4b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTESetData
 ---

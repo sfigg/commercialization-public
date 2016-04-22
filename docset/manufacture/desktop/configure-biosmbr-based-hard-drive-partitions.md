@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'BIOS/MBR-based hard drive partitions'
-MS-HAID: 'p\_adk\_online.configure\_biosmbr\_based\_hard\_drive\_partitions'
+ms.assetid: 653e0c30-c90d-4d6b-ac77-6489501bad36
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'BIOS/MBR-based hard drive partitions'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Repair a Windows Image
-MS-HAID: 'p\_adk\_online.repair\_a\_windows\_image'
+ms.assetid: 4ca60b08-6801-4af4-a504-3e88ec0c8fb8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Repair a Windows Image
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Driver Servicing (.inf) Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_driver\_servicing\_command\_line\_options\_s14'
+ms.assetid: 39beacf3-7982-477c-93f6-4c6883efd69e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Driver Servicing (.inf) Command-Line Options'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Language Packs (lp.cab)'
-MS-HAID: 'p\_adk\_online.language\_packs\_\_lpcab\_\_and\_windows\_deployment'
+ms.assetid: 051a9952-c160-4f51-8575-bde6e4868b03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Language Packs (lp.cab)'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Sideload Apps with DISM
-MS-HAID: 'p\_adk\_online.sideload\_apps\_with\_dism\_s14'
+ms.assetid: ce95f34a-b9a4-4130-89ed-b7a7126fe21b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Sideload Apps with DISM
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'What''s New in DISM'
-MS-HAID: 'p\_adk\_online.whats\_new\_in\_dism\_s14'
+ms.assetid: f1b463c0-96b5-4ad2-afac-53f9baf475a3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What''s New in DISM'
 ---

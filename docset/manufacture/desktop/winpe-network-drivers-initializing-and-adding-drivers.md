@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE Network Drivers: Initializing and adding drivers'
-MS-HAID: 'p\_adk\_online.winpe\_network\_drivers\_initializing\_and\_adding\_drivers'
+ms.assetid: 36eba03c-ba15-4b34-b1cb-fd83cad08d63
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE Network Drivers: Initializing and adding drivers'
 ---

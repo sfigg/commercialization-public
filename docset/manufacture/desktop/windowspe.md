@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: windowsPE
-MS-HAID: 'p\_adk\_online.windowspe'
+ms.assetid: 5c0a1302-494a-445b-86f7-b07f2288e95d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: windowsPE
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Create a WIM for Multiple Architecture Types Using DISM
-MS-HAID: 'p\_adk\_online.create\_a\_wim\_for\_multiple\_architecture\_types\_using\_dism'
+ms.assetid: fcb1b461-72c1-40c5-8405-38a5db05dd34
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a WIM for Multiple Architecture Types Using DISM
 ---

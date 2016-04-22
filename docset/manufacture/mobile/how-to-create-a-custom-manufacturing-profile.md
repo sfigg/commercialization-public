@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'You can add manufacturing profiles to your device by using a package.'
-MS-HAID: 'p\_phManuRetail.how\_to\_create\_a\_custom\_manufacturing\_profile'
+ms.assetid: 9925eedf-a49e-4545-b071-72d10925f080
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a custom manufacturing profile package
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Settings for Automating OOBE
-MS-HAID: 'p\_adk\_online.settings\_for\_automating\_oobe'
+ms.assetid: b7d71c0e-6e91-4409-a184-d76d744b386b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Settings for Automating OOBE
 ---

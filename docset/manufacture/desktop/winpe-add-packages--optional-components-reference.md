@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Add packages (Optional Components Reference)'
-MS-HAID: 'p\_adk\_online.winpe\_add\_packages\_\_optional\_components\_reference'
+ms.assetid: 67aa9c25-9fab-4970-8aa5-65f904969e8e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Add packages (Optional Components Reference)'
 ---

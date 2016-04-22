@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Resetting the device addresses a number of key scenarios: A user may want to reset a device to transfer it to another owner.'
-MS-HAID: 'p\_phRefurb.resetting\_the\_phone'
+ms.assetid: 2db677f1-edf6-421d-8482-770ee5f16140
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Resetting a mobile device
 ---

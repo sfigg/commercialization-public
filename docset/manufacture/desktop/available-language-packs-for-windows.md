@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Available Language Packs for Windows
-MS-HAID: 'p\_adk\_online.available\_language\_packs\_for\_windows'
+ms.assetid: ad33ff13-9777-4a97-a6b8-f4de0fda5a0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Available Language Packs for Windows
 ---

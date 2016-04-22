@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Supporting updated OID behavior in manufacturing mode
-MS-HAID: 'p\_phManuRetail.supporting\_updated\_oid\_behavior\_in\_manufacturing\_mode'
+ms.assetid: 1ae614a7-fbf9-4c3b-834e-d62d7f7ab352
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting updated OID behavior in manufacturing mode
 ---

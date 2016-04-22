@@ -1,6 +1,6 @@
 ---
 Description: 'You can use two different tools to build a customized mobile image (FFU image) in Windows 10:'
-MS-HAID: 'p\_mobile\_deployment.build\_a\_customized\_mobile\_image\_using\_imggen'
+ms.assetid: c29e417c-90a5-4928-b416-aa940efe68ab
 MSHAttr: 'PreferredLib:/library'
 title: Build a mobile image using ImgGen
 author: CelesteDG

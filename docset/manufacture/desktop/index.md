@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'After you''ve learned how to design, develop, and customize Windows images, you can use the tools in the Windows ADK to manufacture and deploy Windows images to new PCs and devices.'
-MS-HAID: 'p\_adk\_online.windows\_deployment\_tools\_technical\_reference'
+ms.assetid: 7e830510-851d-48b7-a916-d98e6cb2cf8a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Desktop manufacturing
 ---

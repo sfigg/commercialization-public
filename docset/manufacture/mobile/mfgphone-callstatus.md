@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Provides information about the status of the call.'
-MS-HAID: 'p\_phManuRetail.mfgphone\_callstatus'
+ms.assetid: dcd0fe41-15bf-4615-a9ed-aaf15dde5078
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'MFGPHONE\_CALLSTATUS enumeration'
 ---

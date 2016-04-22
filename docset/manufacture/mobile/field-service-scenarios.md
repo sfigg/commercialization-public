@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Field service scenarios
-MS-HAID: 'p\_phManuRetail.field\_service\_scenarios'
+ms.assetid: 064509f8-902d-4ac8-85d9-7a405512d762
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Field service scenarios
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Ends a phone call.'
-MS-HAID: 'p\_phManuRetail.mfgphoneendcall'
+ms.assetid: 2f6ce0fe-177b-4af5-8673-a9a4316309e4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneEndCall function
 ---

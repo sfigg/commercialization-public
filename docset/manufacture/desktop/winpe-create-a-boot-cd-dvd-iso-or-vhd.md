@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Create a Boot CD, DVD, ISO, or VHD'
-MS-HAID: 'p\_adk\_online.winpe\_create\_a\_boot\_cd\_dvd\_iso\_or\_vhd'
+ms.assetid: d60de9b6-6775-41e7-bc52-dfafede554df
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create a Boot CD, DVD, ISO, or VHD'
 ---

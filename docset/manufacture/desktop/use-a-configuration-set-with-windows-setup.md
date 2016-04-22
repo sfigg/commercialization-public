@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Use a Configuration Set with Windows Setup
-MS-HAID: 'p\_adk\_online.use\_a\_configuration\_set\_with\_windows\_setup'
+ms.assetid: 6dc2e7b3-f1fb-4d46-b248-1e96c912db38
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Use a Configuration Set with Windows Setup
 ---

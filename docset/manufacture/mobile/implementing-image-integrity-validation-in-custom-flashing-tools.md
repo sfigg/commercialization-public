@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Implementing image integrity validation in custom flashing tools
-MS-HAID: 'p\_phManuRetail.implementing\_image\_integrity\_validation\_in\_custom\_flashing\_tools'
+ms.assetid: 0885d221-e9c6-4fe1-987b-34781546ba07
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Implementing image integrity validation in custom flashing tools
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEGetVendorInfo
-MS-HAID: 'p\_phManuRetail.wlanmtegetvendorinfo'
+ms.assetid: a36c1d73-252b-453e-a231-b26087d2e740
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEGetVendorInfo
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Manage the Component Store
-MS-HAID: 'p\_adk\_online.manage\_the\_component\_store'
+ms.assetid: 97e222b5-67cf-4d05-a010-de3e5518cb60
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manage the Component Store
 ---

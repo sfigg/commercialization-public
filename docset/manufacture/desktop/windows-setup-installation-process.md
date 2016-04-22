@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup Installation Process
-MS-HAID: 'p\_adk\_online.windows\_setup\_installation\_process'
+ms.assetid: e88c0c88-cc6d-436c-a1c0-b109c923ab7e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Installation Process
 ---

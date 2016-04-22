@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'Causes the phone to dial a call.'
-MS-HAID: 'p\_phManuRetail.mfgphonedial'
+ms.assetid: f01afc0d-70cf-4d13-8d99-fb27bb329376
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MfgPhoneDial function
 ---

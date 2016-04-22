@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Device Drivers
-MS-HAID: 'p\_adk\_online.device\_drivers\_and\_deployment\_overview'
+ms.assetid: daa94074-a23d-4788-8e32-0e27c0a62d88
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Device Drivers
 ---

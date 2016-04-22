@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Use Answer Files with Sysprep
-MS-HAID: 'p\_adk\_online.use\_answer\_files\_with\_sysprep'
+ms.assetid: baa66548-b1f8-42f4-8027-3d515441ac0c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Use Answer Files with Sysprep
 ---

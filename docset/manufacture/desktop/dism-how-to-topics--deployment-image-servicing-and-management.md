@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM How-to Topics (Deployment Image Servicing and Management)'
-MS-HAID: 'p\_adk\_online.dism\_how\_to\_topics\_\_deployment\_image\_servicing\_and\_management\_'
+ms.assetid: 49c00b5d-d7bd-466f-8c66-9022bfad02db
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM How-to Topics (Deployment Image Servicing and Management)'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Audit Mode Overview
-MS-HAID: 'p\_adk\_online.audit\_mode\_overview'
+ms.assetid: c4d7921f-0709-40bd-bbc5-38fd793d6b88
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audit Mode Overview
 ---

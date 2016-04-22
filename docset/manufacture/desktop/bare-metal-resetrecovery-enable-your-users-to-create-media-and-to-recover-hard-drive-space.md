@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Bare metal reset/recovery: enable your users to create recovery media'
-MS-HAID: 'p\_adk\_online.bare\_metal\_resetrecovery\_enable\_your\_users\_to\_create\_media\_and\_to\_recover\_hard\_drive\_space'
+ms.assetid: 2f12f7aa-2259-453a-a433-4fa56b03b375
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Bare metal reset/recovery: enable your users to create recovery media'
 ---

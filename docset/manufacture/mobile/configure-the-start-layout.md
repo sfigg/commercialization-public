@@ -1,6 +1,6 @@
 ---
 Description: 'You can now easily configure the default Start layout to include Web links, secondary tiles, folders, and apps. The converged Windows 10 Start layout requires that you create a LayoutModification.xml file, which we''ll create in this walkthrough.'
-MS-HAID: 'p\_mobile\_deployment.configure\_the\_start\_layout'
+ms.assetid: 99238b56-5c9c-4b5e-a750-e64a10e417af
 MSHAttr: 'PreferredLib:/library'
 title: Configure the Start layout
 author: CelesteDG

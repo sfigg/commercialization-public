@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTECloseHandle
-MS-HAID: 'p\_phManuRetail.wlanmteclosehandle'
+ms.assetid: f0a6a70b-bef8-43f0-adb0-f7fa2f503619
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTECloseHandle
 ---

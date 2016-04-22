@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Windows Edition-Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_windows\_edition\_servicing\_command\_line\_options'
+ms.assetid: e7faf4eb-7de8-49f7-9d42-caededf1b289
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Windows Edition-Servicing Command-Line Options'
 ---

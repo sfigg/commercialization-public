@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Apply Images Using DISM
-MS-HAID: 'p\_adk\_online.apply\_images\_using\_dism'
+ms.assetid: f9e0727d-a210-4efa-85af-5b222c53624e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Apply Images Using DISM
 ---

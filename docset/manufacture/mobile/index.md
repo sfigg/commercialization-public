@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'After you have a completed the steps covered in the other guides to prepare the device, the focus shifts to preparing the device for the final retail configuration.'
-MS-HAID: 'p\_phManuRetail.manufacturing'
+ms.assetid: f781b171-d37c-4b03-8e8b-da6d2e5d35b4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Mobile manufacturing
 ---

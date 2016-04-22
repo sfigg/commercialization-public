@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Download WinPE (Windows PE)'
-MS-HAID: 'p\_adk\_online.download\_winpe\_\_windows\_pe'
+ms.assetid: e1b5bcac-761f-4efb-9288-a20da1086446
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Download WinPE (Windows PE)'
 ---

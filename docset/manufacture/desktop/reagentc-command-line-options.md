@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'REAgentC command-line options'
-MS-HAID: 'p\_adk\_online.reagentc\_command\_line\_options'
+ms.assetid: da498872-1c26-4cb8-a5da-80a0d45200f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'REAgentC command-line options'
 ---

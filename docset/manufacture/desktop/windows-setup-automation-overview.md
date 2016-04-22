@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows Setup Automation Overview
-MS-HAID: 'p\_adk\_online.windows\_setup\_automation\_overview'
+ms.assetid: 240b02ae-1f06-4b92-9b46-b4dbd1089c65
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Setup Automation Overview
 ---

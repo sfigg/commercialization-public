@@ -1,6 +1,6 @@
 ---
 Description: 'You need to sign a mobile image before you can deploy it to a device.'
-MS-HAID: 'p\_mobile\_deployment.sign\_a\_mobile\_image'
+ms.assetid: b5f9d31b-7293-4308-a761-c5cc87801e3c
 MSHAttr: 'PreferredLib:/library'
 title: Sign a mobile image
 author: CelesteDG

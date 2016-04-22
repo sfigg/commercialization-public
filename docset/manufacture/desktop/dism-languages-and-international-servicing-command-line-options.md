@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Languages and International Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_languages\_and\_international\_servicing\_command\_line\_options'
+ms.assetid: 6434373a-a7f9-43ff-be28-e4d48fa0b70f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Languages and International Servicing Command-Line Options'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Unattended Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_unattended\_servicing\_command\_line\_options'
+ms.assetid: 698c8ad3-e292-45b2-9f74-d0e8885a7971
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Unattended Servicing Command-Line Options'
 ---

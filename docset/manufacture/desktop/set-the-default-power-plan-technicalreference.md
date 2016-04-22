@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Set the Default Power Plan
-MS-HAID: 'p\_adk\_online.set\_the\_default\_power\_plan\_technicalreference'
+ms.assetid: e6c722ae-29f4-4249-adbe-9121fdadcf4c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Set the Default Power Plan
 ---

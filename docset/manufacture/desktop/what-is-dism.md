@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'What is DISM?'
-MS-HAID: 'p\_adk\_online.what\_is\_dism'
+ms.assetid: ad08e68c-616f-404a-bfc6-c7bf1a4666f0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What is DISM?'
 ---

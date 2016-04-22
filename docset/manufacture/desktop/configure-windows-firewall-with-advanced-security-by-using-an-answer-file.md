@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Configure Windows Firewall with Advanced Security by Using an Answer File
-MS-HAID: 'p\_adk\_online.configure\_windows\_firewall\_with\_advanced\_security\_by\_using\_an\_answer\_file'
+ms.assetid: 6243caf7-3b74-431e-b6f9-76b98106bf42
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Windows Firewall with Advanced Security by Using an Answer File
 ---

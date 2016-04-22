@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'These APIs are used by phone manufacturers to test phone call functionality while the device is booted into Manufacturing Mode.'
-MS-HAID: 'p\_phManuRetail.manufacturing\_mode\_phone\_call\_testing\_apis'
+ms.assetid: 3a1bdf3e-e95d-4277-bad7-1063a138f473
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Manufacturing Mode Phone Call Testing APIs
 ---

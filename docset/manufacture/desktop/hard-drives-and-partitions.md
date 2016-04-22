@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Hard Drives and Partitions
-MS-HAID: 'p\_adk\_online.hard\_drives\_and\_partitions'
+ms.assetid: bb453d9d-e819-4301-834d-09486d3e64e9
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Hard Drives and Partitions
 ---

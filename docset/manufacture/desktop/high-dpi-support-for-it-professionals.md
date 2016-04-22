@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: High DPI Support for IT Professionals
-MS-HAID: 'p\_adk\_online.high\_dpi\_support\_for\_it\_professionals'
+ms.assetid: 23b7a9c9-6313-4d8a-bb27-f497290d70db
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: High DPI Support for IT Professionals
 ---

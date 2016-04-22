@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'WinPE: Create Apps'
-MS-HAID: 'p\_adk\_online.winpe\_create\_apps'
+ms.assetid: 93848579-fd6d-4d51-bb51-f5f412833ad8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create Apps'
 ---

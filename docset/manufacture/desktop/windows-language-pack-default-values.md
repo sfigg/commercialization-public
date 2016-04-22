@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Use keyboard identifiers and Input Method Editors (IMEs) identify the keyboard type.'
-MS-HAID: 'p\_adk\_online.windows\_language\_pack\_default\_values'
+ms.assetid: 8a5739fa-36a6-4b21-8cdb-5d18843633a2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Keyboard Identifiers and Input Method Editors for Windows
 ---

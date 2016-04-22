@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Create a Custom Power Plan
-MS-HAID: 'p\_adk\_online.create\_a\_custom\_power\_plan\_8\_technicalreference'
+ms.assetid: d1d0e1b0-f15f-482c-9e9b-1b75a05dfeb3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Create a Custom Power Plan
 ---

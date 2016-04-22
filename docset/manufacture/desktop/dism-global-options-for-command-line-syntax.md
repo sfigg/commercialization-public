@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Global Options for Command-Line Syntax'
-MS-HAID: 'p\_adk\_online.dism\_global\_options\_for\_command\_line\_syntax'
+ms.assetid: b902ff42-6718-48ca-878b-f3824d3229d4
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Global Options for Command-Line Syntax'
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add or Remove Packages Offline Using DISM
-MS-HAID: 'p\_adk\_online.add\_or\_remove\_packages\_offline\_using\_dism'
+ms.assetid: 32785116-e5ed-40ae-8802-9c2a67cd9938
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add or Remove Packages Offline Using DISM
 ---

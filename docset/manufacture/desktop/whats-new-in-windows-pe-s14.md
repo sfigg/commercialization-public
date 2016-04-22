@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'What''s New in Windows PE'
-MS-HAID: 'p\_adk\_online.whats\_new\_in\_windows\_pe\_s14'
+ms.assetid: db434eb7-ef16-4edc-af6a-f0057c86a56e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'What''s New in Windows PE'
 ---

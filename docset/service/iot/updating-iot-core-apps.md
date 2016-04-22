@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: 'OEM and enterprise customers can utilize a set of scripts and tools to deliver app updates for Windows 10 IoT Core (IoT Core) devices.'
-MS-HAID: 'p\_iotservice.updating\_iot\_core\_apps'
+ms.assetid: 010c4836-a8ad-4ab9-b5a8-45babcc8a3f3
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update IoT Core Apps
 ---

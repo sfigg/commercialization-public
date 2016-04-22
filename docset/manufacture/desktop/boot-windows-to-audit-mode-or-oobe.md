@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Boot Windows to Audit Mode or OOBE
-MS-HAID: 'p\_adk\_online.boot\_windows\_to\_audit\_mode\_or\_oobe'
+ms.assetid: a928dea9-52b1-42b9-bee1-cbe9c8c0b07b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot Windows to Audit Mode or OOBE
 ---

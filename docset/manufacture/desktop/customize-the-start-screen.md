@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Customize the Start Screen
-MS-HAID: 'p\_adk\_online.customize\_the\_start\_screen'
+ms.assetid: b28584ec-487e-4b59-a7f6-deb797d464a8
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Customize the Start Screen
 ---

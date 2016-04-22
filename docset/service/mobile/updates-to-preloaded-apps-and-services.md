@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Updates to preloaded apps and services
-MS-HAID: 'p\_phUpdate.updates\_to\_preloaded\_apps\_and\_services'
+ms.assetid: d3e08bae-f997-4593-9c6d-552fdd7a3d11
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Updates to preloaded apps and services
 ---

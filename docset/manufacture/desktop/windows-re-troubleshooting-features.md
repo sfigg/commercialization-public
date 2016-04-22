@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Windows RE troubleshooting features
-MS-HAID: 'p\_adk\_online.windows\_re\_troubleshooting\_features'
+ms.assetid: 5812bba2-a4ed-4659-87b0-774de7a84bf5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows RE troubleshooting features
 ---

@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Submit an update
-MS-HAID: 'p\_phUpdate.submit\_an\_update'
+ms.assetid: c7052c5d-53f8-4f94-a919-ac6939e310a6
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Submit an update
 ---

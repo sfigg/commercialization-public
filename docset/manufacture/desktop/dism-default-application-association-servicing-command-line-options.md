@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'DISM Default Application Association Servicing Command-Line Options'
-MS-HAID: 'p\_adk\_online.dism\_default\_application\_association\_servicing\_command\_line\_options'
+ms.assetid: 78cad8f9-2048-48f7-8eb6-44011adbca24
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Default Application Association Servicing Command-Line Options'
 ---

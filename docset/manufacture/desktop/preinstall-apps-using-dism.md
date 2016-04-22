@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Preinstall Apps Using DISM
-MS-HAID: 'p\_adk\_online.preinstall\_apps\_using\_dism'
+ms.assetid: 707607d6-eb3a-4a5b-b52d-4d465d82f69d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Preinstall Apps Using DISM
 ---

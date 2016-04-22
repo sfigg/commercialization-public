@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Planning: Customizing reference images for different audiences'
-MS-HAID: 'p\_sxs\_dmfg.planning\_create\_different\_product\_designs\_for\_different\_market\_segments\_sxs'
+ms.assetid: b98343dd-bb5e-4904-9b40-f44cea88fbf0
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Planning: Customizing reference images for different audiences'
 ---

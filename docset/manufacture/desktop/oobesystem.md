@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: oobeSystem
-MS-HAID: 'p\_adk\_online.oobesystem'
+ms.assetid: afe6d754-0ca6-4252-87c7-bfc234a2cc6a
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: oobeSystem
 ---

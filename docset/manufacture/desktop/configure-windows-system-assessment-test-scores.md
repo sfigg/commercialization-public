@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Configure Windows System Assessment Test Scores
-MS-HAID: 'p\_adk\_online.configure\_windows\_system\_assessment\_test\_scores'
+ms.assetid: b2906f26-8887-44fe-8894-f73caee41824
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Windows System Assessment Test Scores
 ---

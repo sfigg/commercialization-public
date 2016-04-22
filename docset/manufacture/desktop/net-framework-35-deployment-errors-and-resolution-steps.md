@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: '.NET Framework 3.5 deployment errors and resolution steps'
-MS-HAID: 'p\_adk\_online.net\_framework\_35\_deployment\_errors\_and\_resolution\_steps'
+ms.assetid: 1320d926-3ff7-4deb-b7b8-17190028dd97
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: '.NET Framework 3.5 deployment errors and resolution steps'
 ---

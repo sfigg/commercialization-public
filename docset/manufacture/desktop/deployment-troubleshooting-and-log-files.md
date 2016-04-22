@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Deployment Troubleshooting and Log Files
-MS-HAID: 'p\_adk\_online.deployment\_troubleshooting\_and\_log\_files'
+ms.assetid: 6dcada17-852e-4a2a-bc22-ebf3504b9ccc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Deployment Troubleshooting and Log Files
 ---

@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Get the tools needed to customize Windows
-MS-HAID: 'p\_sxs\_dmfg.get\_the\_tools\_needed\_to\_customize\_windows\_sxs'
+ms.assetid: a52b4efe-ead0-4319-ae19-799d4e9d9e7b
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Get the tools needed to customize Windows
 ---

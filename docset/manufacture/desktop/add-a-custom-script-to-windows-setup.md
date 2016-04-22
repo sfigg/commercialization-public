@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Add a Custom Script to Windows Setup
-MS-HAID: 'p\_adk\_online.add\_a\_custom\_script\_to\_windows\_setup'
+ms.assetid: a22c2f2f-c297-4027-9712-d747b08f7476
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Add a Custom Script to Windows Setup
 ---

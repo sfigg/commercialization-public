@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: 'Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)'
-MS-HAID: 'p\_adk\_online.windows\_setup\_edition\_configuration\_and\_product\_id\_files\_\_eicfg\_and\_pidtxt'
+ms.assetid: 1c0f17a9-6a74-40af-8d0b-fc6d807a6616
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)'
 ---

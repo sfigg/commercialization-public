@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Boot to UEFI Mode or Legacy BIOS mode
-MS-HAID: 'p\_adk\_online.boot\_to\_uefi\_mode\_or\_legacy\_bios\_mode'
+ms.assetid: 04ad6b97-b41d-40fd-88a7-d63d4722c336
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Boot to UEFI Mode or Legacy BIOS mode
 ---

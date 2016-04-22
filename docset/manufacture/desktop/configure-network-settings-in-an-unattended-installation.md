@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Configure Network Settings in an Unattended Installation
-MS-HAID: 'p\_adk\_online.configure\_network\_settings\_in\_an\_unattended\_installation'
+ms.assetid: 447c1168-ff05-4ba6-9008-9fb458a4f478
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Network Settings in an Unattended Installation
 ---

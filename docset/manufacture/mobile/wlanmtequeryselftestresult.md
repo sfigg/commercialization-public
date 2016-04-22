@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEQuerySelfTestResult
-MS-HAID: 'p\_phManuRetail.wlanmtequeryselftestresult'
+ms.assetid: 7c728c46-7adb-4b1c-8b0e-85eb58ddd026
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQuerySelfTestResult
 ---

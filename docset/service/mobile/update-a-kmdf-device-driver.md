@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Update a KMDF device driver
-MS-HAID: 'p\_phUpdate.update\_a\_kmdf\_device\_driver'
+ms.assetid: e391e00a-b764-4d47-8e14-30b4446ddfb2
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Update a KMDF device driver
 ---

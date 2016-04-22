@@ -1,6 +1,6 @@
 ---
 Description: 'An OEMInput file specifies the device platform, the feature manifest files, the release type, device model, build type, languages you want to support, boot UI language, device resolutions, and other attributes like optional features that you want to include as part of your image.'
-MS-HAID: 'p\_mobile\_deployment.configure\_the\_oeminput\_file'
+ms.assetid: 67dc279e-a7f6-4686-bebf-6d0098d0f782
 MSHAttr: 'PreferredLib:/library'
 title: Configure the OEMInput file
 author: CelesteDG

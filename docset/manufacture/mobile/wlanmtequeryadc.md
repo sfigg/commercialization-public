@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: WlanMTEQueryADC
-MS-HAID: 'p\_phManuRetail.wlanmtequeryadc'
+ms.assetid: 59b02678-f928-4b9e-837b-9c148aaedcfc
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WlanMTEQueryADC
 ---

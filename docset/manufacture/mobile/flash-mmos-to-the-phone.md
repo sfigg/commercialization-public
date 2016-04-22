@@ -1,7 +1,7 @@
 ---
 author: kpacquer
 Description: Flash MMOS to the device
-MS-HAID: 'p\_phManuRetail.flash\_mmos\_to\_the\_phone'
+ms.assetid: 23b741e6-ba15-4a81-a78e-9545ff62c3af
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Flash MMOS to the device
 ---

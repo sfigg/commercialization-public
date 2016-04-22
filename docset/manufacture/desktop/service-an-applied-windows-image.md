@@ -1,7 +1,7 @@
 ---
 author: Justinha
 Description: Service an Applied Windows Image
-MS-HAID: 'p\_adk\_online.service\_an\_applied\_windows\_image'
+ms.assetid: cdf543f7-7810-4ec5-9992-af0f3b6a789f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Service an Applied Windows Image
 ---
