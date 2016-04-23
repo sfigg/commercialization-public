@@ -9,7 +9,7 @@ title: Manufacturing Mode Phone Call Testing APIs
 # Manufacturing Mode Phone Call Testing APIs
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. An app that calls an API introduced in Windows 10 Anniversary SDK Preview Build 14295 cannot be ingested into the Windows Store during the Preview period.\]
+\[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 These APIs are used by phone manufacturers to test phone call functionality while the device is booted into Manufacturing Mode.
 
