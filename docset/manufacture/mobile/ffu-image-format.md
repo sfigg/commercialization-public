@@ -182,7 +182,7 @@ Size of the device path that follows, in characters, without including the termi
 <span id="DevicePath__V2_only_"></span><span id="devicepath__v2_only_"></span><span id="DEVICEPATH__V2_ONLY_"></span>DevicePath (V2 only)  
 Actual device path that the store is targeted for. This should be the same as device path retrieved from UEFI protocol: DEVICE\_PATH\_TO\_TEXT\_PROTOCOL. ConvertDevicePathToText()
 
-``` syntax
+<pre><code>
 typedef struct _STORE_HEADER
 {
     UINT32 dwUpdateType; // indicates partial or full flash
@@ -200,13 +200,13 @@ typedef struct _STORE_HEADER
     UINT32 dwFlashOnlyTableCount; // count of blocks in the flash-only GPT
     UINT32 dwFinalTableIndex; // index in the table of the real GPT
     UINT32 dwFinalTableCount; // number of blocks in the real GPT
-    UINT16 NumOfStores; // Total number of stores (V2 only)
-    UINT16 StoreIndex; // Current store index, 1-based (V2 only)
-    UINT64 StorePayloadSize; // Payload data only, excludes padding (V2 only)
-    UINT16 DevicePathLength; // Length of the device path (V2 only)
-    CHAR16 DevicePath[1]; // Device path has no NUL at then end (V2 only)
+    <b>UINT16 NumOfStores; // Total number of stores (V2 only)</b>
+    <b>UINT16 StoreIndex; // Current store index, 1-based (V2 only)</b>
+    <b>UINT64 StorePayloadSize; // Payload data only, excludes padding (V2 only)</b>
+    <b>UINT16 DevicePathLength; // Length of the device path (V2 only)</b>
+    <b>CHAR16 DevicePath[1]; // Device path has no NUL at then end (V2 only)</b>
 } STORE_HEADER;
-```
+</code></pre>
 
 ### <span id="Validation_Entries"></span><span id="validation_entries"></span><span id="VALIDATION_ENTRIES"></span>Validation Entries
 

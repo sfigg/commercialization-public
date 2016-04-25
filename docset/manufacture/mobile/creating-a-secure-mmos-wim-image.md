@@ -61,8 +61,6 @@ To create a secure wim image, complete the following steps.
     **Important**  
     Information about signing with the final retail certificates will be provided in a later release of the documentation.
 
-     
-
     To sign the catalog using the test image certificate, use this command.
 
     ``` syntax

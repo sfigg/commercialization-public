@@ -111,9 +111,7 @@ In this lab, you modify your images by adding and removing languages, drivers, a
     where "C:\\Drivers\\PnP.Media.V1\\media1.inf" is the base .inf file in your driver package.
 
     **Note**  For this section we’re adding /LogPath in case things go wrong –if there’s a problem with adding your driver, open this file to quickly check for errors.
-
-     
-
+    
     To install all of the drivers from a folder and all its subfolders, point to the folder and use the /Recurse option.
 
     ``` syntax
@@ -121,8 +119,6 @@ In this lab, you modify your images by adding and removing languages, drivers, a
     ```
 
     **Warning**  While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
-
-     
 
 2.  Verify that the driver is part of the image:
 
@@ -296,7 +292,7 @@ The following table shows the types of language packages and components availabl
     State : Installed
     ```
 
-4.  **Change the default language** to match the preferred language for your customers.
+4.  Change the default language to match the preferred language for your customers.
 
     ``` syntax
     Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
@@ -393,8 +389,6 @@ The following table shows the types of language packages and components availabl
 If the PC runs into trouble, your users may not be able to read/understand the recovery screens unless you add the appropriate language resources into the Windows Recovery Environment (Windows RE).
 
 Whenever possible, try to add and remove languages in Windows RE at the same time that you add and remove them in your Windows image to ensure a consistent recovery experience. (This isn’t always possible, as not all languages have Windows RE equivalents.)
-
-**Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
 
 **Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
 
@@ -559,12 +553,8 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 -   Use deployment scripts to apply a newly-captured image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.
 
     **Note**  In Windows 10, we've changed the partition layout. While we still use a separate recovery tools image, Windows no longer needs a separate full-system recovery image to use push-button reset features. This can save several GB of drive space. We're also using a smaller MSR partition (down from 128MB to 16MB).
-
-     
-
+    
     **Note**  You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
-
-     
 
     ![](images/dep-win8-sxs-createdeploymentscript.jpg)
 

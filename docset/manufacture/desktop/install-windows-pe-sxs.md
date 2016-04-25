@@ -90,8 +90,6 @@ For this lab, you'll need two storage locations:
     **Note**   On some devices, you might need to go into the boot menus to choose the USB drive. If you're given a choice between booting in UEFI mode or BIOS mode, choose UEFI mode. To learn more, see [Boot to UEFI Mode or Legacy BIOS mode](http://go.microsoft.com/fwlink/?LinkId=526943).
     If the device does not boot from the USB drive, see the troubleshooting tips in [WinPE: Create USB Bootable drive](http://go.microsoft.com/fwlink/?LinkId=526944).
 
-     
-
     WinPE starts at a command line, and runs **wpeinit** to set up the system. This can take a few minutes.
 
  
