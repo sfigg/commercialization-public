@@ -13,22 +13,10 @@ You can use the Deployment Image Servicing and Management (DISM) tool to install
 
 When you use DISM to install a device driver to an offline image, the device driver is added to the driver store in the offline image. When the image is booted, Plug and Play (PnP) runs and associates the drivers in the store to the corresponding devices on the computer.
 
-In this topic:
-
--   [Add Drivers to an Offline Image by Using DISM](#adddriverdism)
-
--   [Remove Drivers from an Offline Image by Using DISM](#removedriversdism)
-
--   [Add Drivers to an Offline Windows Image by Using an Unattended Answer File](#adddriversunattend)
-
 **Note**   To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016 Technical Preview, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 
- 
 
-## <span id="AddDriverDISM"></span><span id="adddriverdism"></span><span id="ADDDRIVERDISM"></span>
-
-
-**To add drivers to an offline image by using DISM**
+## To add drivers to an offline image by using DISM
 
 1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify. For example, type:
 
@@ -58,8 +46,6 @@ In this topic:
 
     **Warning**  While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
 
-     
-
     To install an unsigned driver, use **/ForceUnsigned** to override the requirement that drivers installed on X64-based computers must have a digital signature.
 
     ``` syntax
@@ -78,10 +64,7 @@ In this topic:
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## <span id="RemoveDriversDISM"></span><span id="removedriversdism"></span><span id="REMOVEDRIVERSDISM"></span>
-
-
-**To remove drivers from an offline image by using DISM**
+## To remove drivers from an offline image by using DISM
 
 1.  At an elevated command prompt, retrieve the name or index number for the image that you want to modify.
 
@@ -105,7 +88,6 @@ In this topic:
 
     **Warning**  
     Removing a boot-critical driver package can make the offline Windows image unbootable. For more information, see [DISM Driver Servicing Command-Line Options](dism-driver-servicing-command-line-options-s14.md).
-
      
 
 4.  Commit the changes and unmount the image.
@@ -114,17 +96,12 @@ In this topic:
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## <span id="AddDriversUnattend"></span><span id="adddriversunattend"></span><span id="ADDDRIVERSUNATTEND"></span>
-
-
-**To add drivers to an offline Windows image by using an unattended answer file**
+## To add drivers to an offline Windows image by using an unattended answer file
 
 1.  Locate the device driver .inf files that you intend to install on the Windows image.
 
     **Note**  
     All drivers in the directory and subdirectories that are referenced in the answer file are added to the image. You should manage the answer file and these directories carefully to address concerns about increasing the size of the image with unnecessary driver packages.
-
-     
 
 2.  Use Windows System Image Manager (Windows SIM) to create an answer file that contains the paths to the device drivers that you intend to install.
 
@@ -140,8 +117,6 @@ In this topic:
 
     **Note**  
     You can include multiple device driver paths by adding multiple **PathAndCredentials** list items. If you add multiple list items, you must increment the value of **Key** for each path. For example, you can add two separate driver paths where the value of **Key** for the first path is equal to **1** and the value of **Key** for the second path is equal to **2**.
-
-     
 
 7.  Save the answer file and exit Windows SIM. The answer file must resemble the following sample.
 
