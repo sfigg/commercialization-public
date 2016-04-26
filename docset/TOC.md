@@ -347,7 +347,7 @@
 
 
 # [Service](service/index.md)
-
+## [Desktop servicing](service/mobile/resetting-the-pc.md)
 ## [Mobile servicing](service/mobile/index.md)
 ### [Update requirements](service/mobile/update-requirements.md)
 ### [Test an update](service/mobile/test-an-update.md)
