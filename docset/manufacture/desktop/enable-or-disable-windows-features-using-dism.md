@@ -11,24 +11,6 @@ title: Enable or Disable Windows Features Using DISM
 
 The Deployment Image Servicing and Management (DISM) tool is a command-line tool that is used to modify Windows® images. You can use DISM to enable or disable Windows features directly from the command prompt, or by applying an answer file to the image. You can enable or disable Windows features offline on a WIM or VHD file, or online on a running operating system.
 
-In this topic:
-
-[To mount an offline image for servicing](#bkmk-mount)
-
-[To find available Windows features in an image](#bkmk-find)
-
-[To enable Windows features](#bkmk-enable)
-
-[To restore removed Windows features](#bkmk-restore)
-
-[To disable Windows features](#bkmk-disable)
-
-[To remove Windows features for on-demand installation](#bkmk-remove)
-
-[To enable or disable Windows features by using DISM and an answer file](#bkmk-answer)
-
-[To commit changes on an offline image](#bkmk-commit)
-
 ## To mount an offline image for servicing
 
 1.  Open a command prompt with administrator privileges.

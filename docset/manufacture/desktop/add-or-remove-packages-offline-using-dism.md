@@ -15,14 +15,6 @@ If you are installing multiple packages to a Windows image, and there are depend
 
 You must install the latest version of the Windows Assessment and Deployment Kit (Windows ADK), which contains all of the tools that are required, including DISM.
 
-In this topic:
-
-[To add packages to an offline image by using DISM](#bkmk-add)
-
-[To remove packages from an offline image by using DISM](#bkmk-remove)
-
-[To add or remove packages offline by using DISM and an answer file](#bkmk-answer)
-
 ## To add packages to an offline image by using DISM
 
 1.  At an elevated command prompt, locate the Windows ADK servicing folder, and type the following command to retrieve the name or index number for the image that you want to modify.

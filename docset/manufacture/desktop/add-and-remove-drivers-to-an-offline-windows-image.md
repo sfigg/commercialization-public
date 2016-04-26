@@ -13,17 +13,8 @@ You can use the Deployment Image Servicing and Management (DISM) tool to install
 
 When you use DISM to install a device driver to an offline image, the device driver is added to the driver store in the offline image. When the image is booted, Plug and Play (PnP) runs and associates the drivers in the store to the corresponding devices on the computer.
 
-In this topic:
-
--   [Add Drivers to an Offline Image by Using DISM](#adddriverdism)
-
--   [Remove Drivers from an Offline Image by Using DISM](#removedriversdism)
-
--   [Add Drivers to an Offline Windows Image by Using an Unattended Answer File](#adddriversunattend)
-
 **Note**   To add drivers to a Windows 10 image offline, you must use a technician computer running Windows 10, Windows Server 2016 Technical Preview, or Windows Preinstallation Environment (WinPE) for Windows 10. Driver signature verification may fail when you add a driver to a Windows 10 image offline from a technician computer running any other operating system.
 
- 
 
 ## To add drivers to an offline image by using DISM
 
