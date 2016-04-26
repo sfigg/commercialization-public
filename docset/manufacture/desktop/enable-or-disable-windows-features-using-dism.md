@@ -29,10 +29,7 @@ In this topic:
 
 [To commit changes on an offline image](#bkmk-commit)
 
-## <span id="BKMK_mount"></span><span id="bkmk_mount"></span><span id="BKMK_MOUNT"></span>
-
-
-**To mount an offline image for servicing**
+## To mount an offline image for servicing
 
 1.  Open a command prompt with administrator privileges.
 
@@ -66,10 +63,7 @@ In this topic:
     Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Base Windows Image" /MountDir:C:\test\offline
     ```
 
-## <span id="BKMK_find"></span><span id="bkmk_find"></span><span id="BKMK_FIND"></span>
-
-
-**To find available Windows features in an image**
+## To find available Windows features in an image
 
 1.  List all of the features available in the operating system. For example, type:
 
@@ -93,10 +87,7 @@ In this topic:
     Dism /online /Get-FeatureInfo /FeatureName:TFTP
     ```
 
-## <span id="BKMK_enable"></span><span id="bkmk_enable"></span><span id="BKMK_ENABLE"></span>
-
-
-**To enable Windows features**
+## To enable Windows features
 
 1.  Enable a specific feature in the image. You can use the `/All` argument to enable all of the parent features in the same command. For example, type:
 
@@ -118,10 +109,7 @@ In this topic:
 
     If the status is **Enble Pending**, you must boot the image in order to enable the feature entirely.
 
-## <span id="BKMK_restore"></span><span id="bkmk_restore"></span><span id="BKMK_RESTORE"></span>
-
-
-**To restore removed Windows features**
+## To restore removed Windows features
 
 1.  Enable a specific feature in the image. If you do not specify a source, DISM will look in the default location specified by group policy for the required files needed to enable the feature For more information, see [Configure a Windows Repair Source](configure-a-windows-repair-source.md).
 
@@ -149,10 +137,7 @@ In this topic:
 
     If the status is **EnablePending**, you must boot the image in order to enable the feature entirely.
 
-## <span id="BKMK_disable"></span><span id="bkmk_disable"></span><span id="BKMK_DISABLE"></span>
-
-
-**To disable Windows features**
+## To disable Windows features
 
 1.  Disable a specific feature in the image. For example, type:
 
@@ -174,10 +159,7 @@ In this topic:
 
     If the status is **DisablePending**, you must boot the image in order to disable the feature entirely.
 
-## <span id="BKMK_remove"></span><span id="bkmk_remove"></span><span id="BKMK_REMOVE"></span>
-
-
-**To remove Windows features for on-demand installation**
+## To remove Windows features for on-demand installation
 
 1.  Remove a specific feature in the image without removing the feature's manifest from the image. This option can only be used when servicing Windows 10, Windows 8.1, Windows 8, Windows Server 2016 Technical Preview, Windows Server 2012 R2, or Windows Server 2012. For more information, see [Configure a Windows Repair Source](configure-a-windows-repair-source.md).
 
@@ -201,10 +183,7 @@ In this topic:
 
     The status is **Disabled**. Beginning with Windows 10, the payload is not removed from Windows client SKUs in order to support push-button reset. The payload is removed from Windows Server SKUs.
 
-## <span id="BKMK_answer"></span><span id="bkmk_answer"></span><span id="BKMK_ANSWER"></span>
-
-
-**To enable or disable Windows features by using DISM and an answer file**
+## To enable or disable Windows features by using DISM and an answer file
 
 1.  In Windows SIM, open an existing catalog by clicking **Select a Windows Image** on the **File** menu and specifying the catalog file type (.clg) in the drop-down list, or create a new catalog by clicking **Create Catalog** on the **Tools** menu.
 
@@ -220,8 +199,6 @@ In this topic:
 
     **Note**  
     You can't restore or remove a Windows feature for features on demand with an unattended answer file.
-
-     
 
 6.  Click **Tools** on the main menu, and then click **Validate Answer File**.
 
@@ -239,10 +216,7 @@ In this topic:
     Dism /Image:C:\test\offline /Apply-Unattend:C:\test\answerfiles\myunattend.xml
     ```
 
-## <span id="BKMK_commit"></span><span id="bkmk_commit"></span><span id="BKMK_COMMIT"></span>
-
-
-**To commit changes on an offline image**
+## To commit changes on an offline image
 
 -   Commit the changes and unmount the image. For example, type:
 

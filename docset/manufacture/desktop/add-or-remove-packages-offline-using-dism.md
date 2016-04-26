@@ -23,10 +23,7 @@ In this topic:
 
 [To add or remove packages offline by using DISM and an answer file](#bkmk-answer)
 
-## <span id="BKMK_add"></span><span id="bkmk_add"></span><span id="BKMK_ADD"></span>
-
-
-**To add packages to an offline image by using DISM**
+## To add packages to an offline image by using DISM
 
 1.  At an elevated command prompt, locate the Windows ADK servicing folder, and type the following command to retrieve the name or index number for the image that you want to modify.
 
@@ -54,10 +51,7 @@ In this topic:
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## <span id="BKMK_remove"></span><span id="bkmk_remove"></span><span id="BKMK_REMOVE"></span>
-
-
-**To remove packages from an offline image by using DISM**
+## To remove packages from an offline image by using DISM
 
 1.  At an elevated command prompt, locate the Windows ADK servicing folder, and type the following command to retrieve the name or index number for the image that you want to modify.
 
@@ -97,10 +91,7 @@ In this topic:
     Dism /Unmount-Image /MountDir:C:\test\offline /Commit
     ```
 
-## <span id="BKMK_answer"></span><span id="bkmk_answer"></span><span id="BKMK_ANSWER"></span>
-
-
-**To add or remove packages offline by using DISM and an answer file**
+## To add or remove packages offline by using DISM and an answer file
 
 1.  Open Windows SIM.
 
@@ -110,8 +101,6 @@ In this topic:
 
     **Note**  
     The packages must be added to the **offlineServicing** configuration pass.
-
-     
 
 4.  Validate and save the answer file.
 
