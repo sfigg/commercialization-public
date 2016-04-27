@@ -1,5 +1,5 @@
 ---
-Description: 'We''ll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.'
+Description: 'We''ll show you one of two ways to add a driver to the image.'
 title: 'Lab 2a: Add a driver to an image'
 ---
 
@@ -8,11 +8,11 @@ title: 'Lab 2a: Add a driver to an image'
 
 
 
-We'll show you how to add drivers to a Windows 10 IoT Core image. 
+Now we'll add drivers to a Windows 10 IoT Core image. 
 
 When you're using a pre-built Board Support Package (BSP), you'll want to know whether there's already similar drivers on the board. If not, you can usually just add the new driver. 
 
-If there is, then you'll need to replace the driver from the BSP, which we'll cover in Lab 2b.  
+If there is, but that driver doesn't meet your needs, then you'll need to replace the driver from the BSP, which we'll cover in Lab 2b.  
 
 
 
@@ -56,7 +56,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
     Update the value of Reference to point to your .SYS file.
 	
-	Update the value of File Source to point to your ACPITABL.dat file.
+	Update the value of File Source to point to your .INF file, .SYS file, and the ACPITABL.dat file.
     
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -72,6 +72,8 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 		    InfSource="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf">
 			<Reference Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
 			<Files>
+			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf" />
+			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
 			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\ACPITABL.dat" />
             </Files>
           </Driver>
@@ -98,7 +100,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
     ``` syntax      
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.File.TestFileAndRegKey.cab">
+          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
             <FeatureIDs>
               <FeatureID>OEM_DriverHelloBlinky</FeatureID>
             </FeatureIDs>
@@ -125,7 +127,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
       </AdditionalFMs>
     ```
 
-3.  Add the FeatureID for your file and reg key:
+3.  Add the FeatureID for your driver:
 
     ``` syntax
     <OEM> 
