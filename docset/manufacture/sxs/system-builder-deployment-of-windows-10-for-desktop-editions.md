@@ -6,7 +6,7 @@ author: Justinha
 
 description: Get step-by-step guidance for system builders to deploy Windows 10 to desktop computers, laptops, and 2-in-1s.   
 
-redirect_url: https://msdnstage.redmond.corp.microsoft.com/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions
+redirect_url: https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions
 
 ---
 
