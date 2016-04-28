@@ -13,6 +13,8 @@ title: 'Lab 1d: Add a provisioning package to an image'
 
 We'll create a provisioning package that contains some sample Wi-Fi settings. You can use provisioning package in Windows Imaging and Configuration Designer (ICD) to add apps, drivers, features, or to modify many common settings, such as IT device management and policy settings.
 
+Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in. 
+
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
@@ -45,8 +47,6 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
 3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
-
-i
 
 **Check the auto-provisioning scripts to make sure they'll include your new provisioning package (optional)**
 
