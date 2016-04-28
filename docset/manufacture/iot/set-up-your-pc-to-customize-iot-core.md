@@ -8,7 +8,7 @@ title: Get the tools needed to customize Windows IoT Core
 # Get the tools needed to customize Windows IoT Core
 
 
-Here's the software you'll need to create images using the Windows 10 IoT Core (IoT Core) ADK Add-Ons:
+Here's the software you'll need to create OEM images using the Windows 10 IoT Core (IoT Core) ADK Add-Ons:
 
 ## <span id="PCs_and_devices"></span><span id="pcs_and_devices"></span><span id="PCS_AND_DEVICES"></span>PCs and devices
 
