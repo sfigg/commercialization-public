@@ -1,0 +1,299 @@
+---
+author: joshbax-msft
+title: Registry Callback Tests
+description: Registry Callback Tests
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 613f5d4f-ca0d-4238-b000-9e9e4f563c12
+---
+
+# Registry Callback Tests
+
+
+This automated test exercises basic test cases for a registry filter driver.
+
+## Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Associated requirements</strong></p></td>
+<td><p>Filter.Driver.AntiVirus.MiniFilter Filter.Driver.AntiVirus.RegistryAndProcess Filter.Driver.FileSystem.MiniFilter Filter.Driver.FileSystem.RegistryAndProcess</p>
+<p>[See the filter hardware requirements.](http://go.microsoft.com/fwlink/p/?linkid=254485)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Platforms</strong></p></td>
+<td><p>Windows 8 (x64) Windows 8 (x86) Windows Server 2012 (x64) Windows 8.1 x64 Windows 8.1 x86 Windows Server 2012 R2</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Expected run time</strong></p></td>
+<td><p>~30 minutes</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Categories</strong></p></td>
+<td><p>Certification</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Type</strong></p></td>
+<td><p>Automated</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [File System Testing Prerequisites](file-system-testing-prerequisites.md).
+
+## Troubleshooting
+
+
+For troubleshooting information, see [Troubleshooting File System Testing](troubleshooting-file-system-testing.md).
+
+All test cases return Pass or Fail. To review test details, review the test log from Windows Hardware Certification Kit (Windows HCK) Studio. For test failures, search for the term “+sev” in the log.
+
+## <a href="" id="bkmk-moreinformation"></a>More information
+
+
+This test includes the following test cases:
+
+-   Altitude Conflict
+
+-   CreateKey Block
+
+-   CreateKey Bypass
+
+-   CreateKey Override Access Denied
+
+-   CreateKey Override Block
+
+-   SetKeySecurity Bypass
+
+-   Transacted CreateKey Bypass
+
+-   Transacted CreateKey Bypass (No Commit)
+
+-   Unregister Close Race
+
+-   Save Restore Replace
+
+To manually run each test case, use the following procedures.
+
+**To manually run the Altitude Conflict test case**
+
+1.  Register a callback at altitude 1000.
+
+2.  Register another callback at the same altitude, and then verify that it fails.
+
+3.  CreateKey the Monitor test.
+
+4.  Register three of the same callbacks at altitudes 1000, 2000, and 3000. Set all three callbacks to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+5.  Create a key, and then verify that it succeeds.
+
+6.  Unregister the callbacks.
+
+7.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the CreateKey Block test case**
+
+1.  Register three of the same callbacks at altitudes 1000, 2000, and 3000.
+
+2.  Set callbacks 1000 and 3000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+3.  Set callback 2000 to “block” mode. This means that the callback will return an error status.
+
+4.  Create a key, and then verify that it fails.
+
+5.  Unregister the callbacks.
+
+6.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the CreateKey Bypass test case**
+
+1.  Register three of the same callbacks at altitudes 1000, 2000, and 3000.
+
+2.  Set callbacks 1000 and 3000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+3.  Set callback 2000 to “bypass” mode. This means that the callback will return an STATUS\_CALLBACK\_BYPASS and perform the operation on behalf of the registry.
+
+4.  Create a key, and then verify that it succeeds.
+
+5.  Unregister the callbacks.
+
+6.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the CreateKey Override Access Denied test case**
+
+1.  Create a key K1, and then set its discretionary access control list (DACL) to give read-only access.
+
+2.  Create a key under K1. This should fail because of the read-only DACL.
+
+3.  Register three of the same callbacks at altitudes 1000, 2000, and 3000. STATUS\_CALLBACK\_BYPASS.
+
+4.  Set callbacks 1000 and 3000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+5.  Set callback 2000 to “access denied bypass” mode. This means that the callback will perform the operation from user mode, not be blocked by the read-only DACL, and return.
+
+6.  Create a key under K1, and then verify that it succeeds.
+
+7.  Unregister the callbacks.
+
+8.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the CreateKey Override Block test case**
+
+1.  Register four of the same callbacks at altitudes 1000, 2000, 3000, and 4000.
+
+2.  Set callbacks 1000 and 4000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+3.  Set callback 2000 to “block” mode. This means that the callback will return STATUS\_UNSUCCESSFUL.
+
+4.  Set callback 3000 to “override failure” mode. This means that if the callback identifies STATUS\_UNSUCCESSFUL in the post-operation callback, it will still perform the operation and return success.
+
+5.  Create a key, and then verify that it succeeds.
+
+6.  Unregister the callbacks.
+
+7.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the SetKeySecurity Bypass test case**
+
+1.  Register three of the same callbacks at altitudes 1000, 2000, and 3000.
+
+2.  Set callbacks 1000 and 3000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+3.  Set callback 2000 to “bypass” mode. This means that the callback will return STATUS\_CALLBACK\_BYPASS and perform the operation on behalf of the registry.
+
+4.  Call **RegSetKeySecurity** to set the security descriptor of a key, and then verify that it succeeds.
+
+5.  Unregister the callbacks.
+
+6.  Verify that each callback was invoked appropriately based on its altitude.
+
+**To manually run the Transacted CreateKey Bypass test case**
+
+1.  Create a transaction T1.
+
+2.  Create a key in the context of transaction T1.
+
+3.  Verify that the key succeeds, and then delete it.
+
+4.  Register three of the same callbacks at altitudes 1000, 2000, and 3000.
+
+5.  Set callbacks 1000 and 3000 to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+6.  Set callback 2000 to “bypass” mode. This means that the callback will return STATUS\_CALLBACK\_BYPASS and perform the operation on behalf of the registry.
+
+7.  Create a key in the context of transaction T1, and then verify that it succeeds.
+
+8.  Commit the transaction.
+
+9.  Unregister the callbacks.
+
+**To manually run the Transacted CreateKey Bypass (No Commit) test case**
+
+-   Complete the same steps as in the Transacted CreateKey Bypass test case, but do not commit the transaction at the end.
+
+**To manually run the Unregister Close Race test case**
+
+1.  Start a thread that opens a test key, and then close the handle in a loop.
+
+2.  In the original thread, register and unregister a callback 100 times.
+
+3.  Signal the other thread to exit.
+
+**To manually run the Save Restore Replace test case**
+
+1.  Create a key under the software hive.
+
+2.  Register a callback at altitude 1000 and set it to “monitor” mode. This means that the callback will do nothing but return STATUS\_SUCCESS.
+
+3.  Call **RegSaveKey** on the created key, and then verify that it succeeds.
+
+4.  Call **RegRestoreKey** on the created key by using the hive file that **RegSaveKey** created, and then verify that it succeeds.
+
+5.  Make a copy of the hive file.
+
+6.  Load the original hive file under HKEY\_LOCAL\_MACHINE, and then verify that it succeeds.
+
+7.  Call **RegReplaceKey** by using the copy of the hive file. This should fail with a sharing violation, but it will still trigger the callbacks for this operation.
+
+8.  Unregister the callback, and then verify that it was invoked appropriately.
+
+### Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>RegCbTestctrl.exe -regr</strong></p></td>
+<td><p>Runs the test.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**Note**  
+For command-line help for this test binary, type **/h**.
+
+ 
+
+### File list
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>RegCbTestCtrl.exe</p></td>
+<td><p>[WTT\TestBinRoot]\NTTEST\BASETEST\kernel\cm</p></td>
+</tr>
+<tr class="even">
+<td><p>RegCbTest.sys</p></td>
+<td><p>[WTT\TestBinRoot]\NTTEST\BASETEST\kernel\cm</p></td>
+</tr>
+<tr class="odd">
+<td><p>Ntlog.dll</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_hck\p_hck%5D:%20Registry%20Callback%20Tests%20%20RELEASE:%20%284/27/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
