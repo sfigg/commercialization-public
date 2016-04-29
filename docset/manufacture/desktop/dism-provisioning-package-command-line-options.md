@@ -13,10 +13,11 @@ Use DISM to work with Provisioning Packages (.ppkg) files. For example, you can 
 
 ## <span id="_Add-ProvisioningPackage"></span><span id="_add-provisioningpackage"></span><span id="_ADD-PROVISIONINGPACKAGE"></span>**/Add-ProvisioningPackage**
 
-
-Syntax: DISM.exe **/Add-ProvisioningPackage/PackagePath:**&lt;*package\_path*&gt; \[**/CatalogPath:**&lt;*path*&gt;\]
-
 Adds applicable payload of provisioning package to the specified image.
+
+``` syntax
+DISM.exe /Add-ProvisioningPackage /PackagePath:<package_path> [/CatalogPath:<path>]
+```
 
 Example:
 
@@ -26,10 +27,11 @@ DISM.exe /Image=C:\ /Add-ProvisioningPackage /PackagePath:C:\oem.ppkg
 
 ## <span id="_Get-ProvisioningPackageInfo"></span><span id="_get-provisioningpackageinfo"></span><span id="_GET-PROVISIONINGPACKAGEINFO"></span>**/Get-ProvisioningPackageInfo**
 
-
-Syntax: DISM.exe **/Get-ProvisioningPackageInfo/PackagePath:**&lt;*package\_path*&gt;
-
 Get the information of provisioning package.
+
+``` syntax
+DISM.exe /Get-ProvisioningPackageInfo /PackagePath:<package_path>
+```
 
 Example:
 
@@ -39,18 +41,21 @@ DISM.exe /Image=C:\ /Get-ProvisioningPackageInfo /PackagePath:C:\oem.ppkg
 
 ## <span id="_Apply-CustomDataImage"></span><span id="_apply-customdataimage"></span><span id="_APPLY-CUSTOMDATAIMAGE"></span>**/Apply-CustomDataImage**
 
-
-Syntax: **/Apply-CustomDataImage/CustomDataImage:**&lt;*path\_to\_image\_file*&gt; **/ImagePath:**&lt;*target\_drive*&gt; **/SingleInstance**
-
 Dehydrates files contained in the custom data image to save space. For client editions, this package is used by the push-button recovery tools.
 
-**/CustomDataImage** specifies where the provisioning package is stored.
+``` syntax
+/Apply-CustomDataImage /CustomDataImage:<path_to_image_file> /ImagePath:<target_drive> /SingleInstance
+```
 
-**/ImagePath** specifies the drive that contains the Windows image. DISM scans this drive for any non-system files on this drive and incorporates them into the provisioning package.
 
-**/SingleInstance**: After DISM captures the non-system files to a compressed provisioning package, DISM adds pointers on the drive to the new compressed provisioning package, and removes the original files. As a result, the files are still visible to the system, but take up less space on the drive.
+|   Parameter     |   Description     |
+|-----------------|-------------------|
+|   /CustomDataImage | specifies where the provisioning package is stored. |
+| /ImagePath | specifies the drive that contains the Windows image. DISM scans this drive for any non-system files on this drive and incorporates them into the provisioning package. |
+| /SingleInstance | After DISM captures the non-system files to a compressed provisioning package, DISM adds pointers on the drive to the new compressed provisioning package, and removes the original files. As a result, the files are still visible to the system, but take up less space on the drive.|
 
-Examples:
+
+Example:
 
 ``` syntax
 DISM.exe /Apply-CustomDataImage /CustomDataImage:C:\oem.ppkg /ImagePath:C:\ /SingleInstance
