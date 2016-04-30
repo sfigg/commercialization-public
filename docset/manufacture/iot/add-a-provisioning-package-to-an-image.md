@@ -25,7 +25,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 1.  Start **Windows Imaging and Configuration Designer**.
 2.  Click **File &gt; New project**.
-3.  For this example, use the name "**ProductAProv**" for the product name, and accept the defaultsand click **Next**.
+3.  For this example, use the name "**ProductAprov**" for the product name, accept the defaults, and click **Next**.
 4.  Select **Provisioning package &gt; Windows 10 IoT Core**.
 5.  At the **Import a provisioning package (optional)** page, click **Finish**.
 6.  Add a sample setting:
@@ -46,6 +46,8 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     This folder is structure is used by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
 
 2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
+    If necessary, rename the files to (your project name)prov.cat and (your project name)prov.ppkg, for example, ProductAprov.cat and ProductAprov.ppkg.
+	
 3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
 
 **Check the auto-provisioning scripts to make sure they'll include your new provisioning package (optional)**
@@ -123,7 +125,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 **Check to see if your provisioning settings were applied**
 
 1.  Connect a network cable.
-3.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
+2.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
 
     ``` syntax
     http://100.100.0.100:8080
@@ -131,9 +133,13 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
 
-4.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
-5.  Click **Networking.**
-6.  Check the **Profiles** drop-down, you should see the Wi-Fi profile you created. If you're testing on a real WiFi network, and if AutoConnect is selected, then in Available Networks you should see a check mark next to your network.
+3.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
+4.  Click **Networking.**
+5.  Check the **Profiles** drop-down, you should see the Wi-Fi profile you created. 
+    
+	If the device is able to automatically connect to the WiFi network, then under **Available Networks**, you should see a checkmark next to the network you configured.
+
+    If your network requires steps such as accepting license terms, the device may not auto-connect.
 
  
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
