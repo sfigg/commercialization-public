@@ -21,7 +21,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--  Complete Lab 1. [Lab 1a: Create a basic image](create-a-basic-image.md).
+-  Complete [Lab 1a: Create a basic image](create-a-basic-image.md).
 
 
 
@@ -37,7 +37,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 
 1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
-2.  Create a working folder for the app, for example:
+2.  Create a working folder for the driver, for example:
 
     ``` syntax
     newpkg pkgDrv Drivers HelloBlinky
@@ -48,7 +48,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 **Add sample files to the package**
 
-1.  Update the app's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.pkg.xml**.
+1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.pkg.xml**.
 
     The default package definition file includes sample XML that you can modify to add your own driver files.
 
@@ -108,8 +108,6 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
     You'll now be able to add your driver to your product by adding a reference to this feature manifest.
 
-## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
-
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
@@ -133,7 +131,6 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
     <Feature>PRODUCTION</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
     <Feature>OEM_FileAndRegKey</Feature> 
     <Feature>OEM_DriverHelloBlinky</Feature> 
@@ -166,15 +163,4 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-That's it for now, check back later for info on replacing a driver.
-
-<!-- 
-[Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
--->
-
- 
-
- 
-
-
-
+[Lab 2b: Add a driver to an existing board support package](add-a-driver-to-an-existing-bsp.md)
