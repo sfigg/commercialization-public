@@ -396,7 +396,7 @@ Set-ExecutionPolicy Bypass -Force
 
 ### Install an HCK clients on each node of the SOFS
 
-Install an HCK client on each node of the scale-out file server. Follow the instructions in [Install Client on the test computer(s)](step-2-install-client-on-the-test-computer-s.md) in the Windows Hardware Certification Kit User's Guide.
+Install an HCK client on each node of the scale-out file server. Follow the instructions in Install Client on the test computer(s) in the Windows Hardware Certification Kit User's Guide.
 
 ## Run a PCS test in Windows HCK
 

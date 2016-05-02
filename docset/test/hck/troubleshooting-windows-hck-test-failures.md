@@ -134,7 +134,7 @@ Watch a video demonstration.
 ## <a href="" id="cat"></a>5. Identify the failure category
 
 
-The **Results** tab in Windows HCK Studio lists test tasks in the order in which they were run. Failed tests include error options that you can use to help troubleshoot test failures. For more information about the **Results** tab, see [Manage Test Results using Result Tab](0752b03a-ba0f-4b12-b653-d9db07442d8b).
+The **Results** tab in Windows HCK Studio lists test tasks in the order in which they were run. Failed tests include error options that you can use to help troubleshoot test failures.
 
 The following table describes test categories and their indicators; the failure category column links to troubleshooting assistance in this article. To access test errors, execution logs, tasks logs, and additional associated files, right-click the failed test on the Windows HCK Studio **Results** tab.
 
