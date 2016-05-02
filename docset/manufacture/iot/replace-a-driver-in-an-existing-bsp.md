@@ -9,6 +9,8 @@ title: 'Lab 2b: Add a driver to an existing board support package (BSP)'
 
 If the driver in your pre-built Board Support Package (BSP) doesn't support what you need it to do, you can replace it.
 
+Note, when you modify the BSP, you become the owner for this new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
+
 In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm). We'll also remove the existing GPIO driver from the device.
  
 
@@ -16,12 +18,10 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 -  Complete [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
 
-
-
 ## <span id="Create_a_new_product"></span><span id="create_a_new_product"></span><span id="CREATE_A_NEW_PRODUCT"></span>Create a new product
 
 
-1.  Create a new product folder. This creates a fresh copy of our base files, including a new copy of the BSP, which we can edit.
+1.  Create a new product folder. This creates a fresh copy of our base files, including a new copy of the BSP.
 
     ``` syntax
     newproduct ProductB
@@ -32,9 +32,16 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 ## <span id="Remove_the_driver_from_the_BSP"></span><span id="remove_the_driver_from_the_bsp"></span><span id="REMOVE_THE_DRIVER_FROM_THE_BSP"></span>Remove_the_driver_from_the_BSP
 
-1.  Open the BSP feature manifest file. For example for the Raspberry Pi 2, open: : **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\OEM_RPi2FM.xml**.
+2.  Rename the BSP. (Optional, this prevents us from confusing the original manufacturer's BSP from our own.)
+Example:
 
-2.  Comment out the old driver:
+     ``` syntax
+    rename C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\OEM_RPi2FM.xml Fabrikam_RPi2FM.xml.
+    ```
+
+3.  Comment out the old GPIO driver in the BSP feature manifest file.
+
+ For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Fabrikam_RPi2FM.xml**.
 
     ``` syntax
     <!---
@@ -42,10 +49,11 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
         <FeatureIDs>
           <FeatureID>RPI2_DRIVERS</FeatureID>
         </FeatureIDs>
+    </PackageFile>
         -->
     ```  
 
-2.  Comment out the Device Info file. This prevent your device from receiving new updates from the BSP manufacturer that could wipe out your changes:
+4.  Comment out the Device Info file. This prevents your device from receiving updates from the BSP manufacturer that could wipe out your changes:
     ``` syntax
     <!---
      <DeviceSpecificPackages>
@@ -54,25 +62,16 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
      -->
     ```
  
-
-
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-Add the new driver. While we're here, we're going to add the apps and other test packages that you created in Lab 1 and in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
+Add the new driver. While you're here, add the apps and other test packages that you created in Lab 1 and in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
-2.  Make sure your feature manifest, OEMFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
+2.  Update the location of your BSP:
 
     ``` syntax
-      <AdditionalFMs>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-      </AdditionalFMs>
-    ```
+    <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Fabrikam_OEM_RPi2FM.xml</AdditionalFM>
 
 3.  Add the FeatureID for your driver (and any other apps, reg keys, and features).
     
@@ -113,7 +112,7 @@ Add the new driver. While we're here, we're going to add the apps and other test
 
 **Check to see if your driver works**
 
-1.  Use the procedures in the [Hello, Blinky! lab](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab3.htm) to test your driver.
+1.  Use the [testing procedures in the Hello, Blinky! lab](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab3.htm) to test your driver.
 
 
 

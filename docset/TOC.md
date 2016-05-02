@@ -338,6 +338,7 @@
 #### [Lab 1d: Add a provisioning package to an image](manufacture/iot/add-a-provisioning-package-to-an-image.md)
 #### [Lab 1e: Build a retail image](manufacture/iot/build-retail-image.md)
 #### [Lab 2a: Add a driver to an image](manufacture/iot/add-a-driver-to-an-image.md)
+#### [Lab 2b: Add a driver to an existing board support package]((replace-a-driver-in-an-existing-bsp.md)
 #### [IoT Core deployment and imaging](manufacture/iot/iot-core-deployment-and-imaging.md)
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
