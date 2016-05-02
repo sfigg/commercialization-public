@@ -59,11 +59,6 @@ This test presents two scenarios: the only distinction between the two scenarios
 
 In each case, the test validates that a contact that is held at the minimum required distance from the screen does not register any touch contacts.
 
-## Troubleshooting
-
-
-For troubleshooting information, see [Troubleshooting Device.Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c) and [How to run the Windows HCK Tests for Touch and Pen Devices](how-to-run-the-windows-hck-tests-for-touch-and-pen-devices.md#hiderrors).
-
 ## More information
 
 

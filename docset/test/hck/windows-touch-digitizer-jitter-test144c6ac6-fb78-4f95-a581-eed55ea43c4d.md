@@ -62,7 +62,7 @@ In addition to validating that the jitter specification is respected, this test 
 ## Troubleshooting
 
 
-For troubleshooting information, see [Troubleshooting Device.Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c) and [How to run the Windows HCK Tests for Touch and Pen Devices](how-to-run-the-windows-hck-tests-for-touch-and-pen-devices.md#hiderrors).
+For troubleshooting information, see [How to run the Windows HCK Tests for Touch and Pen Devices](how-to-run-the-windows-hck-tests-for-touch-and-pen-devices.md#hiderrors).
 
 ## More information
 

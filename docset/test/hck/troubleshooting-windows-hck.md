@@ -83,10 +83,6 @@ The following topics provide troubleshooting guidance for specific Windows HCK t
 <td><p>[Troubleshooting Device.Connectivity Testing](troubleshooting-deviceconnectivity-testing.md)</p></td>
 <td><p>This article shows you how to troubleshoot problems that can occur during Windows HCK device connectivity tests; these include Nearfield Proximity device, PCIHCT, Pnpx logo, USB, vertical pairing logo, WCN device, Web Services for Devices (WSD), and WHCKProximity device tests.</p></td>
 </tr>
-<tr class="odd">
-<td><p>[Troubleshooting Device.Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c)</p></td>
-<td><p>This article shows you how to troubleshoot problems that can occur during Windows HCK touch device tests; these include Windows® Pen and Windows Touch device tests.</p></td>
-</tr>
 <tr class="even">
 <td><p>[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck.md)</p></td>
 <td><p>This article shows you how to troubleshoot problems that can occur during Windows HCK device fundamentals tests.</p></td>

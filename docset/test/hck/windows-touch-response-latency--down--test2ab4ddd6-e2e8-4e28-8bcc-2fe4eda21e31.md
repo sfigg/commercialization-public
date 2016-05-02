@@ -59,11 +59,6 @@ This test uses specialized hardware to measure the latency in touch packet deliv
 
 To learn about the hardware and about associated procedures, see [How to Measure Touch Panning Latency](http://go.microsoft.com/fwlink/p/?linkid=287027) and [How to Measure Touch Down Latency](http://go.microsoft.com/fwlink/p/?linkid=287028).
 
-## Troubleshooting
-
-
-For troubleshooting information, see [Troubleshooting Device.Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c).
-
 ## More information
 
 

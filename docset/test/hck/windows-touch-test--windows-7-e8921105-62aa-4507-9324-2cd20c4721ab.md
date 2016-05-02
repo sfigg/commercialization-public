@@ -53,11 +53,6 @@ This test validates certification requirements for Windows® Touch digitizers.
 
 Before you run the test, complete the test setup as described in the test requirements: [Digitizer Testing Prerequisites](digitizer-testing-prerequisites.md).
 
-## Troubleshooting
-
-
-For troubleshooting information, see [Troubleshooting Device.Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c).
-
 ## More information
 
 

@@ -56,7 +56,7 @@ Before you run the test, complete the test setup as described in the test requir
 ## Troubleshooting
 
 
-For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md) and [Troubleshooting Device Digitizer Testing](75e20c05-46cc-4ea1-b868-c574c399e43c).
+For troubleshooting information, see [Troubleshooting System Client Testing](troubleshooting-system-client-testing.md).
 
  
 
