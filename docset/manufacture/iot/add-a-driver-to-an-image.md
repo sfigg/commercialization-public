@@ -37,6 +37,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 
 1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+
 2.  Create a working folder for the driver, for example:
 
     ``` syntax
@@ -81,7 +82,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
     ```
 
 
-2.  From the IoT Core Shell, build the package. (The BuildAllPackages tool builds everything in the source folders.)
+2.  From the IoT Core Shell, build the package.
 
     ``` syntax
     createpkg c:\IoT-ADK-AddonKit\Source-<arch>\Packages\Drivers.HelloBlinky\Drivers.HelloBlinky.pkg.xml
@@ -163,4 +164,4 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-[Lab 2b: Add a driver to an existing board support package](add-a-driver-to-an-existing-bsp.md)
+[Lab 2b: Add a driver to an existing board support package](replace-a-driver-in-an-existing-bsp.md)
