@@ -149,7 +149,13 @@ The image configuration file lists:
     </tbody>
     </table>
 
-     
+
+### <span id="Board_Support_Packages"></span><span id="board_support_packages"></span><span id="BOARD_SUPPORT_PACKAGES"></span>Board Support Packages (BSPs)
+Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. 
+
+In [Lab 2b: Add a driver to an existing board support package](add-a-driver-to-an-existing-bsp.md), you modify a BSP by adding our own drivers. When you do this, you become the new owner for the new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
+
+
 
 ## <span id="OK__let_s_try_it_"></span><span id="ok__let_s_try_it_"></span><span id="OK__LET_S_TRY_IT_"></span>OK, let's try it!
 
