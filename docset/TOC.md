@@ -350,7 +350,7 @@
 
 
 # [Test](test/index.md)
-## [Windows Hardware Certification Kit User's Guide](test/hck/windows-hardware-certification-kit-users-guide.md)
+## [Windows Hardware Certification Kit User's Guide](test/hck/index.md)
 ### [What's New](test/hck/whats-new-in-windows-hardware-certification-kit-for-windows-81.md)
 ### [Certification Kit Support Matrix](test/hck/certification-kit-support-matrix.md)
 ### [Windows Hardware Certification Program](test/hck/windows-hardware-certification-program-overview.md)
