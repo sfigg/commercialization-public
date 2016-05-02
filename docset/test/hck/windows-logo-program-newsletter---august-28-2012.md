@@ -162,7 +162,7 @@ We've updated the [Certification Program FAQ](http://msdn.microsoft.com/library/
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 

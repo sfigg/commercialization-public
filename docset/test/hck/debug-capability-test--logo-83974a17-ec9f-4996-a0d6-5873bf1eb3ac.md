@@ -51,7 +51,7 @@ This test measures the ability of a test computer to support debug operations us
 ## Running the test
 
 
-To complete this debug test, you must configure two computers. The computer that you are trying to certify is the *System under Test (SUT)*. The second computer is the *Host* on which the Windows debugger will run. These computers must meet the Windows HCK prerequisites and must be included in the same computer pool. For more information, see [Windows HCK Prerequisites](http://msdn.microsoft.com/library/windows/hardware/jj124068.aspx). If the device being tested is an XHCI controller, an XHCI controller must be included in both computers. If the XHCI controller in the SUT has any user-accessible ports, the controller must have debug capability.
+To complete this debug test, you must configure two computers. The computer that you are trying to certify is the *System under Test (SUT)*. The second computer is the *Host* on which the Windows debugger will run. These computers must meet the Windows HCK prerequisites and must be included in the same computer pool. For more information, see [Windows HCK Prerequisites](windows-hck-prerequisites.md). If the device being tested is an XHCI controller, an XHCI controller must be included in both computers. If the XHCI controller in the SUT has any user-accessible ports, the controller must have debug capability.
 
 **Important**  
 You must have a cable that is appropriate for the debug transport that is being verified.

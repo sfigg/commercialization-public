@@ -57,7 +57,7 @@ The test completes the following:
 
 -   Queries NDIS for all implemented OIDs that the driver returned during miniport initialization.
 
--   Compares the resulting list against all required OIDS listed here: <http://msdn.microsoft.com/library/windows/hardware/ff571095(v=vs.85).aspx>.
+-   Compares the resulting list against all required OIDS listed here: <http://msdn.microsoft.com/library/windows/hardware/ff571095.aspx>.
 
 The test will fail if any of the required OIDs listed on MSDN are not reported by the driver during miniport initialization.
 

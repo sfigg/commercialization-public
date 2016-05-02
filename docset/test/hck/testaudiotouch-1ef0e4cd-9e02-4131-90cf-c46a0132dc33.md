@@ -53,7 +53,7 @@ This test verifies that device meets the touch down latency requirements (averag
 
 Before you run the test, complete the test setup as described in the test requirements: [Mouse or other Pointing Device Testing Prerequisites](mouse-or-other-pointing-device-testing-prerequisites.md).
 
-To finish this test, see [How to Measure Touch Down Latency by using an Acoustic Measurement Tool](http://msdn.microsoft.com/library/windows/hardware/dn195876).
+To finish this test, see [How to Measure Touch Down Latency by using an Acoustic Measurement Tool](how-to-measure-touch-down-latency-by-using-an-acoustic-measurement-tool.md).
 
 Use pttouch.exe instead of the touch file.
 

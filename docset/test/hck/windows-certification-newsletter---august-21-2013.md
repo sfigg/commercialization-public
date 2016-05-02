@@ -23,11 +23,11 @@ This newsletter provides up-to-date news about the Windows Certification (former
 ## <a href="" id="hck820"></a>HCK QFE 08 now available
 
 
-For information about QFE updates, see [Windows Hardware Certification Kit QFE Updates](http://msdn.microsoft.com/library/windows/hardware/dn284526.aspx).
+For information about QFE updates, see [Windows Hardware Certification Kit QFE Updates](windows-hardware-certification-kit-qfe-updates.md).
 
 To get the latest QFEs for the Windows HCK, run [HCKSetup.exe](http://msdn.microsoft.com/windows/hardware/bg127147). The Windows HCK download includes all previous QFE updates.
 
-[Learn what’s in the QFE](http://msdn.microsoft.com/library/windows/hardware/dn284526.aspx)
+[Learn what’s in the QFE](windows-hardware-certification-kit-qfe-updates.md)
 
 [Download and install HCK to get the QFE](http://msdn.microsoft.com/windows/hardware/bg127147)
 
@@ -56,7 +56,7 @@ If you’re certifying a device on Windows 8 by using the Windows 8.1 HCK, you m
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 

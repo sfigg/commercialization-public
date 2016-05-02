@@ -344,7 +344,7 @@ PS C:\Windows\system32>
 
 [Submit an update](submit-an-update.md)
 
-[Request-UpdateCancellation](https://msdn.microsoft.com/library/dn946525)
+[Request-UpdateCancellation](../mobile-update/request-updatecancellation.md)
 
  
 

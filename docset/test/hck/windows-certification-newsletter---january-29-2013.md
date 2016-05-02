@@ -37,7 +37,7 @@ Remember when submitting to the UEFI signing portal to follow the package requir
 
 -   Products must have production names, like "XYZ123 GOP Driver".
 
--   Modules must be ship-quality and should have already been tested using the [Secure Boot Windows HCK manual tests](http://msdn.microsoft.com/library/windows/hardware/jj124137.aspx).
+-   Modules must be ship-quality and should have already been tested using the [Secure Boot Windows HCK manual tests](secure-boot-manual-logo-test9741a26f-8249-48bd-8135-152eb3f87590.md).
 
 -   Modules must not allow untrusted code to execute.
 
@@ -116,7 +116,7 @@ We monitor the forum, so if you have any suggestions or feedback for us on the k
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 

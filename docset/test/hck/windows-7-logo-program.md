@@ -43,7 +43,7 @@ The Windows Logo Program was replaced by the new [Windows Hardware Certification
 
 -   [System Fundamentals Testing Presentation \[1.3 MB\]](http://download.microsoft.com/download/4/0/8/408272e3-9310-4df3-9c19-f2b5e4c3d3ca/ihv_sysfund.pptx)
 
--   [Windows Certification Newsletter Archive (Windows Logo Program Newsletter)](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+-   [Windows Certification Newsletter Archive (Windows Logo Program Newsletter)](windows-certification-newsletter-archive.md)
 
 -   [Windows Hardware Dashboard Submission Readme Form](http://download.microsoft.com/download/4/C/3/4C34C72F-FD65-41C9-B89A-A0858A2C3562/windows-hardware-dashboard-submission-readme.docx)
 

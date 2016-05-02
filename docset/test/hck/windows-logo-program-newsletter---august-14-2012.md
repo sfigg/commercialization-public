@@ -98,7 +98,7 @@ We're updating the billing policy document to make this more clear.
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 

@@ -58,7 +58,7 @@ Just a reminder that the discounted $100 early bird fee for Windows 8.1 and Wind
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 

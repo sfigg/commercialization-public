@@ -239,7 +239,7 @@ You can deploy HCK Controller on a physical computer or a virtual machine that m
 | Memory                  | 12 GB RAM                                                                                                                                                                                      |
 | Available disk space    | 100 GB                                                                                                                                                                                         |
 | Operating system        | Windows Server 2012 or Windows Server 2008 R2                                                                                                                                                  |
-| Installed software      | HCK Controller, HCK Manager, and HCK Studio ([Installation instructions for the HCK Controller, Manager, and Studio](https://msdn.microsoft.com/library/windows/hardware/jj125146.aspx)) |
+| Installed software      | HCK Controller, HCK Manager, and HCK Studio ([Installation instructions for the HCK Controller, Manager, and Studio](step-1-install-controller-and-studio-on-the-test-server.md)) |
 | Active Directory domain | Join it to the same domain as the cluster ("cloud solution") that you will test.                                                                                                               |
 
  
@@ -252,7 +252,7 @@ Copy the supplemental test content, stored in the **PCSfiles.vhd** file, to the 
 
  
 
-1.  Download the [Windows Hardware Certification Kit (HCK) Supplemental Test Content](https://msdn.microsoft.com/dn383615). The content is stored in the PCSfiles.vhd file.
+1.  Download the [Windows Hardware Certification Kit (HCK) Supplemental Test Content](windows-hardware-certification-kit--hck--supplemental-test-content.md). The content is stored in the PCSfiles.vhd file.
 2.  Copy the VHD file to the \\AMD64 test folder on the HCK Controller. The following path is the default path for an HCK installation, where C: is the boot drive:
 
     -   C:\\Program Files (x86)\\Windows Kits\\8.1\\Hardware Certification Kit\\Tests\\amd64
@@ -360,7 +360,7 @@ Set-ExecutionPolicy Bypass -Force
 
 ### Install an HCK client on each compute cluster node
 
-Install an HCK client on each node of the compute cluster. Follow the instructions in [Install Client on the test computer(s)](https://msdn.microsoft.com/library/hh998740.aspx) in the Windows Hardware Certification Kit User's Guide.
+Install an HCK client on each node of the compute cluster. Follow the instructions in [Install Client on the test computer(s)](step-2-install-client-on-the-test-computer-s.md) in the Windows Hardware Certification Kit User's Guide.
 
 ### Update Hyper-V settings for faster live migrations
 
@@ -396,7 +396,7 @@ Set-ExecutionPolicy Bypass -Force
 
 ### Install an HCK clients on each node of the SOFS
 
-Install an HCK client on each node of the scale-out file server. Follow the instructions in [Install Client on the test computer(s)](https://msdn.microsoft.com/library/hh998740.aspx) in the Windows Hardware Certification Kit User's Guide.
+Install an HCK client on each node of the scale-out file server. Follow the instructions in [Install Client on the test computer(s)](step-2-install-client-on-the-test-computer-s.md) in the Windows Hardware Certification Kit User's Guide.
 
 ## Run a PCS test in Windows HCK
 

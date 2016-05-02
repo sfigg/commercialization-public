@@ -55,7 +55,7 @@ Before you run the test, complete the test setup as described in the test requir
 
 This test does the following:
 
--   Check for the following OIDs. These OIDs are documented on MSDN under Auto PSM and NLO (<http://msdn.microsoft.com/library/windows/hardware/ff560689(v=vs.85).aspx>).
+-   Check for the following OIDs. These OIDs are documented on MSDN under Auto PSM and NLO (<http://msdn.microsoft.com/library/windows/hardware/ff560689.aspx>).
 
     -   OID\_DOT11\_POWER\_MGMT\_MODE\_AUTO\_ENABLED
 

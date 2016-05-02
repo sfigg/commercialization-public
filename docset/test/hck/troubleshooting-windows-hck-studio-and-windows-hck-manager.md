@@ -157,7 +157,7 @@ To prevent this, all instances of Windows HCK Studio and Windows HCK Manager mus
 ## <a href="" id="iddomain"></a>Unable to determine the identify of domain error
 
 
-When signing some (large) packages using Windows PowerShell, you might see an exception such as "Unable to determine the identity of domain". When this exception occurs, please use the managed API (see [http://msdn.microsoft.com/library/windows/hardware/jj123504.aspx\#BKMK\_CS\_SignPackage](http://msdn.microsoft.com/library/windows/hardware/jj123504.aspx)) as a work-around."
+When signing some (large) packages using Windows PowerShell, you might see an exception such as "Unable to determine the identity of domain". When this exception occurs, please use the managed API (see [creating-a-package.md\#BKMK\_CS\_SignPackage](creating-a-package.md)) as a work-around."
 
 ## Related topics
 

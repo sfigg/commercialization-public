@@ -110,15 +110,15 @@ For information about using the Touch Certification Tools, see these documents:
 
 -   [How to Use the Precision Touch Testing Tool (video)](http://msdn.microsoft.com/library/windows/hardware/jj161013)How to Use the Precision Touch Testing Tool (video) - Provides video instruction on how to use the Precision Touch Test Tool (PT3) in accordance with the HCK for Windows 8.
 
--   [Overview of Measuring Touch Down Hardware Latency](http://msdn.microsoft.com/library/windows/hardware/dn293768.aspx) - Provides information for hardware vendors about methodology and recommended testing devices for measuring touch down hardware latency in accordance with the HCK for Windows 8.
+-   [Overview of Measuring Touch Down Hardware Latency](overview-of-measuring-touch-down-hardware-latency.md) - Provides information for hardware vendors about methodology and recommended testing devices for measuring touch down hardware latency in accordance with the HCK for Windows 8.
 
--   [Overview of Measuring Touch Panning Hardware Latency](http://msdn.microsoft.com/library/windows/hardware/dn266003.aspx) - Provides information for hardware vendors about methodology and recommended testing devices for measuring touch panning latency in accordance with the HCK for Windows 8.
+-   [Overview of Measuring Touch Panning Hardware Latency](how-to-measure-touch-panning-latency-win81.md) - Provides information for hardware vendors about methodology and recommended testing devices for measuring touch panning latency in accordance with the HCK for Windows 8.
 
 -   [How to Measure Touch Panning Latency](http://msdn.microsoft.com/library/windows/hardware/hh967413) - Provides detailed setup instructions and procedures to measure touch panning latency in accordance with the HCK for Windows 8.
 
--   [How to Measure Touch Down Latency](http://msdn.microsoft.com/library/windows/hardware/dn195876) - Describes detailed setup instructions and procedures to measure touch down latency in touch hardware environments using an acoustic measurement tool in accordance with the HCK for Windows 8.
+-   [How to Measure Touch Down Latency](how-to-measure-touch-down-latency-by-using-an-acoustic-measurement-tool.md) - Describes detailed setup instructions and procedures to measure touch down latency in touch hardware environments using an acoustic measurement tool in accordance with the HCK for Windows 8.
 
--   [How to Use the Precision Touch Testing Tool](http://msdn.microsoft.com/library/windows/hardware/dn281959.aspx) - Provides information about how to use the Precision Touch Testing Tool (PT3) to run the HCK tests for Windows 8.
+-   [How to Use the Precision Touch Testing Tool](how-to-use-the-precision-touch-testing-tool.md) - Provides information about how to use the Precision Touch Testing Tool (PT3) to run the HCK tests for Windows 8.
 
 ## <a href="" id="cat"></a>How to create a Common CAT file
 
@@ -188,7 +188,7 @@ You don't need to attach drivers to intermediate packages. You can add or remove
 
 [Windows Hardware Certification](http://msdn.microsoft.com/en-US/windows/hardware/gg463010)
 
-[Newsletter archive](http://msdn.microsoft.com/library/windows/hardware/dn339175.aspx)
+[Newsletter archive](windows-certification-newsletter-archive.md)
 
 [Your dashboard](https://sysdev.microsoft.com/hardware/member/)
 
