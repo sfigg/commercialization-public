@@ -11,7 +11,7 @@ ms.assetid: 59007ebf-a505-44ac-a63b-172e106627c8
 # Windows Touch, Pen and Precision Touchpad Device Certification Process
 
 
-This article describes the Windows Touch, Precision Touchpad (PTP) and pen device certification process for vendors and manufacturers of digitizers. It contains guidelines about how to use Microsoft testing tools to certify the quality of a device to meet the [Windows Hardware Compatibility Program](p_compat_program.windows_hardware_compatibility_program) (formerly known as the Windows Hardware Certification Program) requirements.
+This article describes the Windows Touch, Precision Touchpad (PTP) and pen device certification process for vendors and manufacturers of digitizers. It contains guidelines about how to use Microsoft testing tools to certify the quality of a device to meet the [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx) (formerly known as the Windows Hardware Certification Program) requirements.
 
 This information applies for computers that run on Windows 8, Windows 8.1 and Windows 10.
 

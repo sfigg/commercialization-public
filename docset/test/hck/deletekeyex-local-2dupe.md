@@ -11,9 +11,6 @@ ms.assetid: dcad7c8a-6508-4aaa-8b17-5d8c8b1fca15
 # DeleteKeyEx Local 2
 
 
-For information about this test, see [DeleteKeyEx Local Test](e3c9a13a-9b1e-4ccb-a3f1-6e26ccc11cf2).
-
- 
 
  
 

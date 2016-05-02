@@ -71,7 +71,7 @@ Right now, you have your choice of 2 USB 3 hubs:
 
     -   [On Plugable.com](http://plugable.com/products/USB3-HUB81X4)
 
-    -   [On Via-Labs.com](On Via-Labs.com)
+    -   On Via-Labs.com
 
 For hubs to qualify, we require two simple things:
 

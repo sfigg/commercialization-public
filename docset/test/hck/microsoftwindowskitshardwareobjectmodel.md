@@ -100,8 +100,6 @@ ms.assetid: b1531276-2f6e-49c4-b4dd-7daab03bd808
 
 -   [Project Class](project-class.md)
 
--   [ProjectChangedEventArgs Class](8f7f3330-df97-40ad-993f-fe0c841aad22)
-
 -   [ProjectException Class](projectexception-class.md)
 
 -   [ProjectFilterResultsDictionary Class](projectfilterresultsdictionary-class.md)
@@ -111,8 +109,6 @@ ms.assetid: b1531276-2f6e-49c4-b4dd-7daab03bd808
 -   [ProjectManager Class](projectmanager-class.md)
 
 -   [ProjectManagerException Class](projectmanagerexception-class.md)
-
--   [ProjectNewObjectEventArgs Class](9b3d3eff-2661-489c-b071-907027ba976b)
 
 -   [ProjectStatus Enumeration](projectstatus-enumeration.md)
 

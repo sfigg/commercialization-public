@@ -73,8 +73,6 @@ An Audio DMR is a renderer that plays audio but not video. The DLNA certificatio
 ## Running the test
 
 
-Before you run the test, complete the test setup as described in the test requirements: [Digital Media Server Testing Prerequisites](375e56f2-ec96-4660-9030-b164e84f1500).
-
 In addition, you must have obtained a DLNA certificate ID for the device.
 
 ## Troubleshooting

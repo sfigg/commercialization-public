@@ -15,11 +15,9 @@ To troubleshoot issues that you encounter in Device.media device tests, perform 
 
 1.  Review [Troubleshooting Windows HCK Test Failures](troubleshooting-windows-hck-test-failures.md).
 
-2.  Review one of the following topics, depending on the type of input device that you are testing:
+2.  Review the following topic:
 
     -   [Digital Media Renderer Testing Prerequisites](digital-media-renderer-testing-prerequisites.md)
-
-    -   [Digital Media Server Testing Prerequisites](375e56f2-ec96-4660-9030-b164e84f1500)
 
 3.  Review the [Windows HCK release notes](http://go.microsoft.com/fwlink/p/?linkid=236110) for current test issues.
 

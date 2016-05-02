@@ -360,7 +360,7 @@ Set-ExecutionPolicy Bypass -Force
 
 ### Install an HCK client on each compute cluster node
 
-Install an HCK client on each node of the compute cluster. Follow the instructions in [Install Client on the test computer(s)](step-2-install-client-on-the-test-computer-s.md) in the Windows Hardware Certification Kit User's Guide.
+Install an HCK client on each node of the compute cluster. Follow the instructions in **Install Client on the test computer(s)** in the Windows Hardware Certification Kit User's Guide.
 
 ### Update Hyper-V settings for faster live migrations
 

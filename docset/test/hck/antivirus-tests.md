@@ -25,8 +25,6 @@ AV tests are gathered into the following categories:
 
 -   [Registry Tests](registry-tests.md)
 
--   [Remote File Systems Tests](d5314e25-92d1-491d-b2b2-f1e6e7cf441a)
-
 ## Related topics
 
 

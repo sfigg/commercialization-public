@@ -137,8 +137,6 @@ Tests that are included in the display adapter or chipset category include the f
 
 -   [Desktop Duplication with Normal Mode](desktop-duplication-with-normal-mode53fb84a6-506f-49ed-a6e1-f712f1e654ae.md)
 
--   [DirectDraw Test](86e48a99-1481-4132-ac1c-97f1c9ce4674)
-
 -   [Discardable Depth Stencil](discardable-depth-stencil421907f9-f25c-4411-b49c-72f7c3038d2f.md)
 
 -   [Displacement Mapping](displacement-mapping8840b740-1408-40a6-9112-7861408a3c09.md)

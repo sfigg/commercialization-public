@@ -58,11 +58,6 @@ The pause operation must be available while the DMR is in the PLAYING state (for
 
  
 
-## Running the test
-
-
-Before you run the test, complete the test setup as described in the test requirements: [Digital Media Server Testing Prerequisites](375e56f2-ec96-4660-9030-b164e84f1500).
-
 ## Troubleshooting
 
 

@@ -55,7 +55,7 @@ Before you run the test, complete the test setup as described in the test requir
 
 To provide smooth touch interactions with excellent gesture recognition, Windows 8 provides a precise time stamp that directly contributes to a fast and fluid system.
 
-This test verifies that the device supports the microsecond-level time stamp and does not drift more than the amount that is specified in the [Windows 8 Hardware Certification Requirements](0af0bafc-2e0d-4e65-91a0-7108a97cc77d). During this test, you must hold a contact for the specified time while the tool inspects the HID reports.
+This test verifies that the device supports the microsecond-level time stamp and does not drift more than the amount that is specified in the Windows 8 Hardware Certification Requirements. During this test, you must hold a contact for the specified time while the tool inspects the HID reports.
 
 ## Troubleshooting
 

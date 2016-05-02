@@ -11,9 +11,6 @@ ms.assetid: b9d0d25b-dedc-4555-a623-5b370c117d10
 # TermRace Test
 
 
-For information about this test, see [TermRace Test](e87d0e58-375b-4f79-8556-0b546be29f2e).
-
- 
 
  
 

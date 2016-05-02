@@ -15,8 +15,6 @@ This article provides information to help you use the Windows touch quality cert
 
 The touch quality tests enforce the touch quality requirements that are detailed in the following resources:
 
--   [Windows 8 Hardware Certification Requirements](0af0bafc-2e0d-4e65-91a0-7108a97cc77d)
-
 -   [Windows 8 Hardware Certification Requirements (PDF)](http://msdn.microsoft.com/library/windows/hardware/hh748188)
 
 All tests also enforce the Human Interface Device (HID) protocol that is described in [Windows Pointer Device Data Delivery Protocol](http://go.microsoft.com/fwlink/p/?linkid=226808) and defined in the [HID I2C v1.0 Protocol Specification](http://go.microsoft.com/fwlink/p/?linkid=286770).

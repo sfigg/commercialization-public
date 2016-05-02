@@ -11,9 +11,6 @@ ms.assetid: de743e12-5dda-4020-bb5c-8f1ba1662724
 # Get Set Key Security Test 2
 
 
-For information about this test, see [Get Set Key Security Test](4e9e37ed-7b3c-40d5-8518-df30cdae2dd3).
-
- 
 
  
 
