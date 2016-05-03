@@ -73,7 +73,7 @@ This behavior is different from store apps that are not preloaded on the device.
 ## <span id="Reset_scenarios"></span><span id="reset_scenarios"></span><span id="RESET_SCENARIOS"></span>Reset scenarios
 
 
-When the device is reset, a preloaded app returns to the version that is stored in an app package on the device; this may be the version that shipped on the device. Any OS updates that the phone has received are also active on the device after the reset. This means that the original preloaded app may need to operate with newer versions of the operating system and newer versions of the BSP. These dependencies and interactions should be considered as updates to preloaded apps are being prepared. For more information about the OS reset behavior, see [Resetting the device](https://msdn.microsoft.com/library/windows/hardware/dn772062).
+When the device is reset, a preloaded app returns to the version that is stored in an app package on the device; this may be the version that shipped on the device. Any OS updates that the phone has received are also active on the device after the reset. This means that the original preloaded app may need to operate with newer versions of the operating system and newer versions of the BSP. These dependencies and interactions should be considered as updates to preloaded apps are being prepared. For more information about the OS reset behavior, see [Resetting the device](../../manufacture/mobile/resetting-a-phone-during-manufacturing.md).
 
 ## <span id="Updates_to_native_services_and_service_agents"></span><span id="updates_to_native_services_and_service_agents"></span><span id="UPDATES_TO_NATIVE_SERVICES_AND_SERVICE_AGENTS"></span>Updates to native services and service agents
 
@@ -90,7 +90,6 @@ Multiple service agents are contained in a single preloaded app. As with all pre
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Update](index.md)
 
 [System settings apps and updates](system-settings-apps-and-updates.md)
@@ -98,9 +97,5 @@ Multiple service agents are contained in a single preloaded app. As with all pre
  
 
  
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phUpdate\p_phUpdate%5D:%20Updates%20to%20preloaded%20apps%20and%20services%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

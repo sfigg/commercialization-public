@@ -1,4 +1,5 @@
 ---
+author: kpacquer
 Description: 'We''ll show you one of two ways to add a driver to the image.'
 title: 'Lab 2a: Add a driver to an image'
 ---
