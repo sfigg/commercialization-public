@@ -22,21 +22,21 @@ This guide is written toward OEMs, but ODMs and developers can use the same proc
 ## <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
 
 
-Want to jump right in? Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md), and then try out our scenarios.
-
--   [Lab 1a: Create a basic image](create-a-basic-image.md): Make sure the tools you installed work, and load the basic IoT Core image onto a test device. While you're here, learn about the tools built into the basic image.
--   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md): Take one of our sample apps, package it up, make a fresh image, and load it onto the device.
--   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
--   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings, for example, set up Wi-Fi.
--   [Lab 1e: Build a retail image](build-retail-image.md): Convert your test image to a retail image.
+Want to jump right in? Try our walkthrough of common scenarios:
+-   [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md)
+-   [Lab 1a: Create a basic image](create-a-basic-image.md)
+-   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
+-   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
+-   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
+-   [Lab 1e: Build a retail image](build-retail-image.md)
 -   [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 2b: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
--   [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
+
+[(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
 
-Here's the general steps we'll use. You can use the same structure to build your retail images. In general terms:
-
+You can use the walkthrough as a guide to build both your test and retail images. In general terms:
 1.  Add each of your customizations (drivers, apps, settings) into signed package files.
 2.  Create a summary list of these packages, called a feature manifest (FM), which lists your packages by feature name.
 3.  Get IoT Core's packages and FMs from us.

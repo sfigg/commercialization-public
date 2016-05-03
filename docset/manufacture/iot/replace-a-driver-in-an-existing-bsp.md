@@ -72,23 +72,23 @@ Example:
     <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Fabrikam_OEM_RPi2FM.xml</AdditionalFM>
 
 3.  Add FeatureIDs:
-      -  Add the FeatureID for your driver. For this lab, we’re using the same driver that we created in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md), so we don’t need to recreate the package or add it to the feature manifest again.
+      -  Add the FeatureID for your driver: OEM_DriverHelloBlinky. For this lab, we’re using the same driver that we created in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md), so we don’t need to recreate the package or add it to the feature manifest again.
 	  
 	  -  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
 	  
-	  -  Optional: add the FeatureID for the other apps and test packages (OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey) that you created in Lab 1.
+	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
     ``` syntax
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
     <Feature>PRODUCTION</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
     <Feature>OEM_DriverHelloBlinky</Feature> 
     <Feature>IOT_DISABLE_UMCI</Feature> 
     <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
+    <Feature>OEM_CustomCmd</Feature> 
+    <Feature>OEM_AppxHelloWorld</Feature> 
+    <Feature>OEM_FileAndRegKey</Feature> 
     </OEM>
     ```
 
