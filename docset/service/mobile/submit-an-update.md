@@ -48,7 +48,7 @@ OEMs can continue to submit OS-only updates for Trial and PartnerSelfHost previe
 
 6.  You and your mobile operator partner [approve the update](approve-an-update.md).
 
-7.  We’ll publish the update on the Microsoft Update production server, where the device can [scan, download, and install the update](../mobile-update/scan--download--and-install-updates.md).
+7.  We’ll publish the update on the Microsoft Update production server, where the device can [scan, download, and install the update](scan--download--and-install-updates.md).
 
 The following diagram shows this procedure:
 

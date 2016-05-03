@@ -29,6 +29,8 @@ Want to jump right in? Start here: [Get the tools needed to customize Windows Io
 -   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md): Same drill, this time with sample files and registry keys.
 -   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Update Windows settings, for example, set up Wi-Fi.
 -   [Lab 1e: Build a retail image](build-retail-image.md): Convert your test image to a retail image.
+-   [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md)
+-   [Lab 2b: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
 -   [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
@@ -153,7 +155,7 @@ The image configuration file lists:
 ### <span id="Board_Support_Packages"></span><span id="board_support_packages"></span><span id="BOARD_SUPPORT_PACKAGES"></span>Board Support Packages (BSPs)
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. 
 
-In [Lab 2b: Add a driver to an existing board support package](replace-a-driver-in-an-existing-bsp.md), you modify a BSP by adding our own drivers. When you do this, you become the new owner for the new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
+In [Lab 2b: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md), you modify a BSP by adding our own drivers. When you do this, you become the new owner for the new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
 
 
 
