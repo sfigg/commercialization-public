@@ -78,6 +78,7 @@ Example:
 	  
 	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
+
     ``` syntax
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
@@ -129,3 +130,4 @@ Congratulations, you've completed Lab 2.
 
 
 
+`
