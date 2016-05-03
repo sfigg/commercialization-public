@@ -1,9 +1,9 @@
 ---
 Description: 'Replacing a driver in an existing BSP in a Windows 10 IOT Core image.'
-title: 'Lab 2b: Add a driver to an existing board support package (BSP)'
+title: 'Lab 2b: Replace a driver in an existing board support package (BSP)'
 ---
 
-# Lab 2b: Add a driver to an existing board support package (BSP)
+# Lab 2b: Replace a driver in an existing board support package (BSP)
 
 
 

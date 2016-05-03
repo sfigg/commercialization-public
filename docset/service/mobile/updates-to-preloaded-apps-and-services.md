@@ -91,7 +91,7 @@ Multiple service agents are contained in a single preloaded app. As with all pre
 ## <span id="related_topics"></span>Related topics
 
 
-[Update](update.md)
+[Update](index.md)
 
 [System settings apps and updates](system-settings-apps-and-updates.md)
 

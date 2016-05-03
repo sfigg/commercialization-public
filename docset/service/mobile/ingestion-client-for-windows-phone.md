@@ -25,7 +25,7 @@ The ingestion client is a set of [Windows PowerShell](http://go.microsoft.com/fw
 
 -   [Get-RequestForUpdatePayload cmdlet](https://msdn.microsoft.com/library/windows/hardware/dn756749)
 
--   [Request-UpdateCancellation cmdlet](https://msdn.microsoft.com/library/dn946525)
+-   [Request-UpdateCancellation cmdlet](request-updatecancellation.md)
 
 To use the ingestion client, the following tasks that are elaborated further in this topic must be completed.
 
@@ -89,7 +89,7 @@ The recommended steps to provision a machine for the client are as follows:
 
 6.  Install Windows Identity Foundation (WIF). In Windows 8, WIF is available as an OS feature. It can be installed by using “Turn Windows features on or off” in Control Panel, Programs and Features. For Windows Server 2008 R2, download and install WIF from <http://go.microsoft.com/fwlink/p/?LinkId=389793>.
 
-7.  Install Windows PowerShell 3.0 (Windows Management Framework 3.0). In Windows 8, PowerShell is available as an OS feature. It can be installed by using “Turn Windows features on or off” in Control Panel, Programs and Features. For Windows Server 2008 R2, download and install Windows PowerShell from [http://go.microsoft.com/fwlink/p/?linkid=240290](http://go.microsoft.com/fwlink/p/?LinkID=240290).
+7.  Install Windows PowerShell 3.0 (Windows Management Framework 3.0). In Windows 8, PowerShell is available as an OS feature. It can be installed by using **Turn Windows features on or off** in Control Panel, Programs and Features. For Windows Server 2008 R2, download and install Windows PowerShell from [http://go.microsoft.com/fwlink/p/?linkid=240290](http://go.microsoft.com/fwlink/p/?LinkID=240290).
 
 8.  Use Windows Update to apply all patches.
 

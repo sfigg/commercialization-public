@@ -165,4 +165,4 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-[Lab 2b: Add a driver to an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+[Lab 2b: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
