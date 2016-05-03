@@ -160,7 +160,7 @@ The Connected Standby energy efficiency assessment performs advanced issue analy
 
 ### % time in lowest C-State is 0 for ARM-based devices
 
-When running the Connected Standby energy efficiency assessment on an ARM-based device, the % time in lowest C-State metric is reported as 0. Data related to observed C-State values during the assessment run is available through the Idle States graph in [Windows Performance Analyzer](p_wpt.windows_performance_analyzer).
+When running the Connected Standby energy efficiency assessment on an ARM-based device, the % time in lowest C-State metric is reported as 0. Data related to observed C-State values during the assessment run is available through the Idle States graph in [Windows Performance Analyzer](../wpt/windows-performance-analyzer.md).
 
 ### The assessment reports an exit code of 0x80050006
 

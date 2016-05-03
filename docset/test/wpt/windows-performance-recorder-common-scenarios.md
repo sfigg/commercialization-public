@@ -44,7 +44,7 @@ This section includes topics that describe how to perform specific tasks by usin
 ## Related topics
 
 
-[Windows Assessment Services Technical Reference](p_assessments.windows_assessment_services_technical_reference)
+[Windows Assessment Services Technical Reference](../assessments/windows-assessment-services-technical-reference.md)
 
  
 

@@ -125,7 +125,7 @@ The following table describes the assessment settings, recommended values, and a
 </tr>
 <tr class="odd">
 <td><p>Enable detailed CPU metrics</p></td>
-<td><p>You can use this setting to get detailed information about the CPU usage breakdown of an app. You need to configure symbols to use this setting. For more information, see [Symbol Support](p_wpt.symbol_support).</p></td>
+<td><p>You can use this setting to get detailed information about the CPU usage breakdown of an app. You need to configure symbols to use this setting. For more information, see [Symbol Support](../wpt/symbol-support.md).</p></td>
 </tr>
 </tbody>
 </table>

@@ -69,7 +69,7 @@ If this action is not specified on the command line, symbol decoding is disabled
 
 [Loading Symbols](loading-symbols.md)
 
-[Common In-Depth Analysis Issues](p_assessments.common_in_depth_analysis_issues)
+[Common In-Depth Analysis Issues](../assessments/common-in-depth-analysis-issues.md)
 
  
 

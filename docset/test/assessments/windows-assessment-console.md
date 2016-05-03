@@ -17,7 +17,7 @@ The Windows Assessment Console is a GUI that you can use to assess a local comp
 
 You can use the Windows Assessment Console to package a job, load the job on another computer, and run the job there without needing to first install the Windows Assessment Console on that computer. You can also use the Windows Assessment Console to import job results to the default results library after you run a packaged job on another computer.
 
-The Windows Assessment Console and assessments are installed as part of the Windows Assessment Toolkit, which is available in the Windows Assessment and Deployment Kit (Windows ADK). The Windows Performance Toolkit is also available in the Windows ADK. When the Windows Performance Toolkit is installed, you can analyze trace files to find the source of issues that you found by using the Windows Assessment Console. For more information, see [Windows Performance Toolkit](p_wpt.windows_performance_toolkit).
+The Windows Assessment Console and assessments are installed as part of the Windows Assessment Toolkit, which is available in the Windows Assessment and Deployment Kit (Windows ADK). The Windows Performance Toolkit is also available in the Windows ADK. When the Windows Performance Toolkit is installed, you can analyze trace files to find the source of issues that you found by using the Windows Assessment Console. For more information, see [Windows Performance Toolkit](../wpt/windows-performance-toolkit.md).
 
 ## In This Section
 

@@ -92,7 +92,7 @@ To enable symbol decoding and to help enable correct image load and unload paths
 
 [Using CLR 4.0 NGEN PDB Support](using-clr-40-ngen-pdb-support.md)
 
-[Common In-Depth Analysis Issues](p_assessments.common_in_depth_analysis_issues)
+[Common In-Depth Analysis Issues](../assessments/common-in-depth-analysis-issues.md)
 
  
 

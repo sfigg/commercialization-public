@@ -37,7 +37,7 @@ The USB host controllers can power down only after all of the devices connected 
 
 When the USB bus controller is active for minutes at a time in Modern Standby, it usually means that one USB device attached to the bus is not entering selective suspend, possibly because it doesn’t support selective suspend. The next logical step is to determine which USB device is staying in D0 by looking at an ETL trace.
 
-For more information on selective suspend, see the [USB Selective Suspend](buses.usb_selective_suspend) topic on MSDN.
+For more information on selective suspend, see the [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144) topic on MSDN.
 
 ## Part 2: Use an ETL trace to identify problems
 

@@ -40,9 +40,9 @@ By default, these profiles reboot the computer three times.
 
 [Windows On/Off Transitions Solutions Guide](http://go.microsoft.com/fwlink/p/?linkid=247577)
 
-[Results for the On/Off Assessments](p_assessments.results_for_the_onoff_assessments)
+[Results for the On/Off Assessments](../assessments/results-for-the-onoff-assessments.md)
 
-[On/Off Transition Performance](p_assessments.onoff_transition_performance)
+[On/Off Transition Performance](../assessments/onoff-transition-performance.md)
 
  
 

@@ -43,7 +43,7 @@ You can run an assessment to collect traces on one PC, and analyze the data on a
 ## Run analysis on another device
 
 
-You can load symbols on the PC where you want to analyze trace files. For more information, see [Symbol Support](p_wpt.symbol_support).
+You can load symbols on the PC where you want to analyze trace files. For more information, see [Symbol Support](../wpt/symbol-support.md).
 
 **To run analysis on trace files using WAC**
 

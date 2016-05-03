@@ -47,7 +47,7 @@ On Windows 10 Mobile, Tracelog must place its logs within the C:\\data director
 
  
 
-For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://msdn.microsoft.com/library/windows/hardware/ff553012.aspx). For additional examples, see [Tracelog Examples](devtest.tracelog_examples).
+For detailed Tracelog command line syntax, see [Tracelog Command Syntax](http://msdn.microsoft.com/library/windows/hardware/ff553012.aspx). For additional examples, see [Tracelog Examples](https://msdn.microsoft.com/library/windows/hardware/ff553026).
 
 Use the following commands to create a session called "MyPowerTrace" and enable the Microsoft-Windows-Kernel-Power provider.
 
