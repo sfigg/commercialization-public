@@ -64,8 +64,6 @@ Example:
  
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-Add the new driver. While you're here, add the apps and other test packages that you created in Lab 1 and in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
-
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
 2.  Update the location of your BSP:
@@ -73,9 +71,12 @@ Add the new driver. While you're here, add the apps and other test packages that
     ``` syntax
     <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Fabrikam_OEM_RPi2FM.xml</AdditionalFM>
 
-3.  Add the FeatureID for your driver (and any other apps, reg keys, and features).
-    
-    In addition, add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work. 
+3.  Add FeatureIDs:
+      -  Add the FeatureID for your driver. For this lab, we’re using the same driver that we created in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md), so we don’t need to recreate the package or add it to the feature manifest again.
+	  
+	  -  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
+	  
+	  -  Optional: add the FeatureID for the other apps and test packages (OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey) that you created in Lab 1.
 
     ``` syntax
     <OEM> 
