@@ -100,7 +100,7 @@ To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Optio
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[FFU image format](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/mobile/ffu-image-format)
+[FFU image format](../mobile/ffu-image-format.md)
 
  
 
