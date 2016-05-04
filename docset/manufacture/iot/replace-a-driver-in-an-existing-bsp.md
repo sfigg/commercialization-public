@@ -29,18 +29,21 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
     This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB.
 
-2.  Rename the BSP. (Optional. This prevents us from confusing the original manufacturer's BSP from our own.)
+2.  Rename the BSP.
+
+    (This step is optional. This prevents us from confusing the original manufacturer's BSP from our own.)
+    
     Example:
 
      ``` syntax
     rename C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\OEM_RPi2FM.xml Blinky_RPi2FM.xml.
     ```
 
-## <span id="Replace_the_driver_in_the_BSP"></span><span id="replace_the_driver_in_the_bsp"></span><span id="REPLACE_THE_DRIVER_IN_THE_BSP"></span>Replace_the_driver_in_the_BSP
+## <span id="Replace_the_driver_in_the_BSP"></span><span id="replace_the_driver_in_the_bsp"></span><span id="REPLACE_THE_DRIVER_IN_THE_BSP"></span>Replace the driver in the BSP
 
 1.  Comment out the old GPIO driver in the BSP feature manifest file.
 
-    For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Blinky_RPi2FM.xml**.
+   For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Blinky_RPi2FM.xml**.
 
     ``` syntax
     <!---
@@ -64,7 +67,8 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
           </PackageFile>
     ```  
 
-3.  Comment out the Device Info file. This prevents your device from receiving updates from the BSP manufacturer that could wipe out your changes:
+3.  Comment out the Device Info file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
+
     ``` syntax
     <!---
      <DeviceSpecificPackages>
@@ -72,7 +76,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
      </DeviceSpecificPackages>
      -->
     ```
- 
+
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
@@ -87,7 +91,6 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 	  
 	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
-
     ``` syntax
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
@@ -101,9 +104,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
     </OEM>
     ```
 
-
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
-
 
 **Build the image**
 
@@ -115,7 +116,10 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. 
+
+    Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
 3.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
@@ -127,7 +131,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
-Congratulations, you've completed Lab 2.
+Congratulations, you've completed Lab 2. 
 <!--
 [Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 -->
