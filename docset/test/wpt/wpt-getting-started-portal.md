@@ -31,8 +31,8 @@ You can use the steps in this guide to start and stop a recording in Windows Per
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Getting Started: Windows Performance Recorder (WPR)](BUGBUG!)</p></td>
-<td><p>BUGBUG!: unable to locate topic.</p></td>
+<td><p>[Getting Started: Windows Performance Recorder (WPR)](wpr-quick-start.md)</p></td>
+<td><p>Summarizes the features that are available in the Windows Performance Recorder (WPR) user interface (UI).</p></td>
 </tr>
 <tr class="even">
 <td><p>[Getting Started: Windows Performance Analyzer (WPA)](getting-started--windows-performance-analyzer--wpa-.md)</p></td>
@@ -51,7 +51,7 @@ WPT Getting Started is designed for developers who want to learn how to use perf
 ## Related topics
 
 
-[WPR Quick Start](p_wpt.wpr_quick_start)
+[WPR Quick Start](wpr_quick_start.md)
 
  
 
