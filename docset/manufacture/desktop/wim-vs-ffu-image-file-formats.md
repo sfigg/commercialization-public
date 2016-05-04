@@ -100,7 +100,7 @@ To learn more, see **/Apply-Image** in [DISM Image Management Command-Line Optio
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
 
-[FFU image format](ffu-image-format.md)
+[FFU image format](../mobile/ffu-image-format.md)
 
  
 
