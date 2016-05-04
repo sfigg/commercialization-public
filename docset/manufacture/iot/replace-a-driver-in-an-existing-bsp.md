@@ -18,7 +18,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 -  Complete [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
 
-## <span id="Create_a_new_product"></span><span id="create_a_new_product"></span><span id="CREATE_A_NEW_PRODUCT"></span>Create a new product
+## <span id="Create_a_new_product_and_BSP_file"></span><span id="create_a_new_product_and_bsp_file"></span><span id="CREATE_A_NEW_PRODUCT_AND_BSP_FILE"></span>Create a new product and BSP file
 
 
 1.  Create a new product folder. This creates a fresh copy of our base files, including a new copy of the BSP.
@@ -29,19 +29,18 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
     This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB.
 
-
-## <span id="Remove_the_driver_from_the_BSP"></span><span id="remove_the_driver_from_the_bsp"></span><span id="REMOVE_THE_DRIVER_FROM_THE_BSP"></span>Remove_the_driver_from_the_BSP
-
-2.  Rename the BSP. (Optional, this prevents us from confusing the original manufacturer's BSP from our own.)
-Example:
+2.  Rename the BSP. (Optional. This prevents us from confusing the original manufacturer's BSP from our own.)
+    Example:
 
      ``` syntax
-    rename C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\OEM_RPi2FM.xml Fabrikam_RPi2FM.xml.
+    rename C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\OEM_RPi2FM.xml Blinky_RPi2FM.xml.
     ```
 
-3.  Comment out the old GPIO driver in the BSP feature manifest file.
+## <span id="Replace_the_driver_in_the_BSP"></span><span id="replace_the_driver_in_the_bsp"></span><span id="REPLACE_THE_DRIVER_IN_THE_BSP"></span>Replace_the_driver_in_the_BSP
 
- For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Fabrikam_RPi2FM.xml**.
+1.  Comment out the old GPIO driver in the BSP feature manifest file.
+
+    For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Blinky_RPi2FM.xml**.
 
     ``` syntax
     <!---
@@ -53,7 +52,19 @@ Example:
         -->
     ```  
 
-4.  Comment out the Device Info file. This prevents your device from receiving updates from the BSP manufacturer that could wipe out your changes:
+2.  Add the new GPIO driver. 
+
+    Optional: Use the same FeatureID as the rest of the files in the BSP (example, RPI2_DRIVERS) gets more easily picked up whenever you use this new BSP.  
+    
+    ``` syntax
+          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
+            <FeatureIDs>
+              <FeatureID>RPI2_DRIVERS</FeatureID>
+            </FeatureIDs>
+          </PackageFile>
+    ```  
+
+3.  Comment out the Device Info file. This prevents your device from receiving updates from the BSP manufacturer that could wipe out your changes:
     ``` syntax
     <!---
      <DeviceSpecificPackages>
@@ -66,29 +77,27 @@ Example:
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
-2.  Update the location of your BSP:
+2.  Update the reference to your BSP:
 
     ``` syntax
-    <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Fabrikam_OEM_RPi2FM.xml</AdditionalFM>
+    <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Blinky_RPi2FM.xml</AdditionalFM>
 
 3.  Add FeatureIDs:
-      -  Add the FeatureID for your driver. For this lab, we’re using the same driver that we created in [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md), so we don’t need to recreate the package or add it to the feature manifest again.
-	  
 	  -  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
 	  
-	  -  Optional: add the FeatureID for the other apps and test packages (OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey) that you created in Lab 1.
+	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
+
 
     ``` syntax
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
     <Feature>PRODUCTION</Feature> 
+    <Feature>IOT_DISABLE_UMCI</Feature> 
+    <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
     <Feature>OEM_FileAndRegKey</Feature> 
-    <Feature>OEM_DriverHelloBlinky</Feature> 
-    <Feature>IOT_DISABLE_UMCI</Feature> 
-    <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
     </OEM>
     ```
 
@@ -129,3 +138,4 @@ Congratulations, you've completed Lab 2.
 
 
 
+`

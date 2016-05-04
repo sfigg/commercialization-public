@@ -74,7 +74,6 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 		    InfSource="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf">
 			<Reference Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
 			<Files>
-			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf" />
 			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
 			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\ACPITABL.dat" />
             </Files>
