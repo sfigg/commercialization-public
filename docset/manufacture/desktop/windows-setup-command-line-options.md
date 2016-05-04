@@ -8,6 +8,7 @@ title: 'Windows Setup Command-Line Options'
 
 # Windows Setup Command-Line Options
 
+Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The following command-line options are available for Windows Setup:
 
@@ -58,6 +59,8 @@ The following command-line options are available for Windows Setup:
 \[**/ShowOOBE** {**full** | **none**}\]
 
 \[**/Telemetry** {**Enable** | **Disable**}\]
+
+\[**/TempDrive:***&lt;drive_letter&gt;*\]
 
 \[**/unattend:***&lt;answer\_file&gt;*\]
 
@@ -344,30 +347,36 @@ setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1
 <pre class="syntax" space="preserve"><code>Setup /telemetry disable</code></pre></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><strong>/TempDrive</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>
+<td align="left"><p>Instructs Windows Setup to put temporary installation files on the specified partition. For an upgrade, the <strong>/tempdrive:</strong> option affects only the placement of temporary files. The operating system is upgraded in the partition from which you run the Setup.exe file.</p><p>The /tempdrive parameter is available in Windows 10, version 1607, but it is not available in earlier versions of Windows 10.</p>
+<p><em>&lt;drive_letter&gt;</em> specifies the partition to copy installation files to during Windows Setup. For example:</p>
+<pre class="syntax" space="preserve"><code>Setup /tempdrive:H</code></pre></td>
+</tr>
+<tr class="even">
 <td align="left"><p><strong>/Unattend:</strong><em>&lt;answer_file</em>&gt;</p></td>
 <td align="left"><p>Enables you to use an answer file with Windows Setup. This is known as an unattended installation. You must specify a value for <em>&lt;answer_file&gt;</em>. Windows Setup applies the values in the answer file during installation.</p>
 <p><em>&lt;answer_file&gt;</em> specifies the file path and file name of the unattended Windows Setup answer file.</p>
 <pre class="syntax" space="preserve"><code>Setup /unattend:\\server\share\unattend.xml</code></pre></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/Uninstall</strong> {<strong>enable</strong> | <strong>disable</strong>}</p></td>
 <td align="left"><p>Determines whether Windows will include controls that allow the user to go back to the previous operating system.</p>
 <p>This setting is new for Windows 10.</p>
 <pre class="syntax" space="preserve"><code>Setup /uninstall disable</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/USBDebug:</strong><em>&lt;hostname&gt;</em></p></td>
 <td align="left"><p>Sets up debugging on a USB port. Debug data is effective on the next reboot.</p>
 <p><em>&lt;hostname&gt;</em> specifies the name of the computer to debug. For example:</p>
 <pre class="syntax" space="preserve"><code>Setup /usbdebug:testmachine01</code></pre></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/WDSDiscover</strong></p></td>
 <td align="left"><p>Specifies that the Windows Deployment Services (WDS) client should be in discover mode.</p>
 <p>If you do not specify <strong>/wdsserver</strong> with this option, WDS searches for a server. For example, to start the WDS client in this dynamic discover mode, run the following command:</p>
 <pre class="syntax" space="preserve"><code>Setup /wds /wdsdiscover</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/WDSServer:</strong><em>&lt;servername&gt;</em></p></td>
 <td align="left"><p>Specifies the name of the Windows Deployment Services server that the client should connect to.</p>
 <p>To use this setting, you must also use the <code>/wdsdiscover</code> option.</p>
