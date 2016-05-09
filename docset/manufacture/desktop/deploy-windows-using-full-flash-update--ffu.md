@@ -44,7 +44,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     net use N: \\server\share
     ```
 
-3.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0. You can use diskpart, or [download Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=40855) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks.
+3.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks.
 
     ``` syntax
     diskpart 
@@ -73,13 +73,11 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ``` syntax
     diskpart
     list volume
-    exit
     ```
 
-5.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
+5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
-    ``` syntax
-    diskpart 
+    ``` syntax 
     list disk
     exit
     ```
@@ -106,13 +104,13 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ``` syntax
     diskpart
     list volume
-    exit
     ```
 
-5.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
+5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
     ``` syntax
-    wmic diskdrive list brief
+    list disk
+    exit
     ```
 
 6.  Install the Windows 10 version of DISM.
@@ -129,7 +127,6 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ```
 
 ## <span id="related_topics"></span>Related topics
-
 
 [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
