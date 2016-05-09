@@ -44,10 +44,12 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     net use N: \\server\share
     ```
 
-3.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
+3.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0. You can use diskpart, or [download Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=40855) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks.
 
     ``` syntax
-    wmic diskdrive list brief
+    diskpart 
+    list disk
+    exit
     ```
 
 4.  Apply the image to a drive.
@@ -77,7 +79,9 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 5.  Identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
     ``` syntax
-    wmic diskdrive list brief
+    diskpart 
+    list disk
+    exit
     ```
 
 6.  Apply the image to a drive.
