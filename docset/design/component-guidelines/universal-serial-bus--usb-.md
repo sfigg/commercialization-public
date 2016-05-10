@@ -23,7 +23,7 @@ USB is optional for all devices and computers that run Windows 10. Windows 10 su
 
 -   [Dual-role OTG controllers](https://msdn.microsoft.com/library/windows/hardware/dn957036.aspx)
 
-For the complete set of hardware requirements for Windows 10, see [Minimum hardware requirements](../fixme/minimum-hardware-requirements-overview.md).
+For the complete set of hardware requirements for Windows 10, see [Minimum hardware requirements](minimum-hardware-requirements-overview.md).
 
 ## Windows Hardware Compatibility Program requirements for USB
 

@@ -18,7 +18,7 @@ The IOCTL\_THERMAL\_READ\_TEMPERATURE input/output (I/O) control request is sent
 ## <a href="" id="input-parameters-"></a>Input Parameters
 
 
-To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014). The input buffer contains a [THERMAL\_WAIT\_READ](../fixme/thermal-wait-read.md) structure. The Timeout member indicates when to return to the thermal zone's temperature after which the request will expire. If the received **Timeout** value is -1, the request never expires.
+To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014). The input buffer contains a [THERMAL\_WAIT\_READ](thermal-wait-read.md) structure. The Timeout member indicates when to return to the thermal zone's temperature after which the request will expire. If the received **Timeout** value is -1, the request never expires.
 
 ## Output Parameters
 
@@ -33,9 +33,9 @@ Complete the request by calling [**WdfRequestCompleteWithInformation**](https://
 ## Related topics
 
 
-[IOCTL\_THERMAL\_READ\_POLICY](../fixme/ioctl-thermal-read-policy.md)
+[IOCTL\_THERMAL\_READ\_POLICY](ioctl-thermal-read-policy.md)
 
-[Thermal management in Windows](../fixme/thermal-management-in-windows.md)
+[Thermal management in Windows](thermal-management-in-windows.md)
 
  
 

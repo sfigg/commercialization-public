@@ -28,7 +28,7 @@ Full PC Experience (Core performance with optimal storage)
 Operating System
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 Windows 10 for desktop editions
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/components.md)
 
 CPU
 Mid-range x86

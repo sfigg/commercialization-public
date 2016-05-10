@@ -67,12 +67,12 @@ This section describes the supported power management configurations for devices
 <td><p>This article explains how to implement power management for sensor devices. In addition, power management of the optional sensor microcontroller (also called the sensor fusion hub or the sensor MCU) and aggregated sensor devices is discussed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Touch and pen power management for modern standby platforms](../fixme/touch-power-management-for-connected-standby-capable-platforms.md)</p></td>
+<td><p>[Touch and pen power management for modern standby platforms](touch-and-pen-power-management-for-modern-standby-platforms.md)</p></td>
 <td><p>A touch controller translates capacitive touch inputs on a display to software commands to deliver to the operating system and applications. A pen digitizer translates pen input from a stylus to software commands to deliver to the operating system and applications. In a PC that supports the modern standby power model, these devices have similar power management requirements.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Wi-Fi power management for modern standby platforms](wi-fi-power-management-for-modern-standby-platforms.md)</p></td>
-<td><p>In a Windows hardware platform that implements the [modern standby power model](../fixme/modern-standby.md), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.</p></td>
+<td><p>In a Windows hardware platform that implements the [modern standby power model](modern-standby.md), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.</p></td>
 </tr>
 </tbody>
 </table>

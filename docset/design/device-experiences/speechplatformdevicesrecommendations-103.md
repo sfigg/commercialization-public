@@ -222,7 +222,7 @@ Passing [Skype/Lync audio certification](http://technet.microsoft.com/office/dn7
 ## Section 2: Device.SpeechRecognition Recommendations
 
 
-Recommendations in this section are made regarding the target speech recognition accuracy for devices in various environments. All recommendations represent the minimum bar for acceptable user experience in each scenario. Test conditions and steps are specified in the [Test Setup](../fixme/speechplatformdevicestestsetup-003.md).
+Recommendations in this section are made regarding the target speech recognition accuracy for devices in various environments. All recommendations represent the minimum bar for acceptable user experience in each scenario. Test conditions and steps are specified in the [Test Setup](speechplatformdevicestestsetup-003.md).
 
 It is important that a device meets the recommendations in this section in order to:
 
@@ -391,7 +391,7 @@ Accurate timestamps ensure that capture and render signals can be synchronized f
 
 All capture channels must be synchronized (t0 sample aligned). This includes all ADCs initialized at the exact same point in time, as well as any buffers being aligned and free of data. This is critical for beamforming and sound source localizer performance, which relies on sub-sample alignment to estimate the location of a sound source(s).
 
-Drift is defined in [Appendix A: Calculations](../fixme/speechplatformdevicestestsetup-003.md#appendix-a--calculations) as the absolute clock drift with reference to the ground truth clock. However, the drift as seen by the echo canceller is actually the relative drift between the capture and render paths.
+Drift is defined in [Appendix A: Calculations](speechplatformdevicestestsetup-003.md#appendix-a--calculations) as the absolute clock drift with reference to the ground truth clock. However, the drift as seen by the echo canceller is actually the relative drift between the capture and render paths.
 
 ![an equation](images/speechplatformequation2.png)
 

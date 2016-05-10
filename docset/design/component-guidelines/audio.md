@@ -17,7 +17,7 @@ The minimum hardware requirements and Windows Hardware Compatibility Program req
 ## Minimum hardware requirements for Audio
 
 
-The following table summarizes the minimum hardware requirements for Audio. For more detail, see section 6.2.2 in [Minimum hardware requirements](../fixme/minimum-hardware-requirements-overview.md).
+The following table summarizes the minimum hardware requirements for Audio. For more detail, see section 6.2.2 in [Minimum hardware requirements](minimum-hardware-requirements-overview.md).
 
 <table>
 <colgroup>
@@ -115,7 +115,7 @@ Once the audio solution meets both minimum hardware requirements and Windows Com
 ## Speech recognition in Windows 10
 
 
-Device manufacturers are encouraged to integrate and tune speech enhancement processing into their device in order to optimize performance relative to the [Speech Recognition test criteria](../fixme/speechplatformdevicestestsetup-003.md).
+Device manufacturers are encouraged to integrate and tune speech enhancement processing into their device in order to optimize performance relative to the [Speech Recognition test criteria](../device-experiences/speechplatformdevicestestsetup-003.md).
 
 For devices without integrated speech enhancement processing, Microsoft provides default processing in Windows 10. The speech enhancement processing from Microsoft does not need device-specific tuning by the IHV.
 
@@ -150,7 +150,7 @@ The following sections cover recommendations for speech. To ensure a high qualit
 
 ### Device.SpeechRecognition
 
-The following table summarizes Microsoft recommendations for target speech recognition accuracy for devices in various environments. For test steps, see [Cortana Device Test Setup](../fixme/speechplatformdevicestestsetup-003.md). All targets are in speech accuracy. All three tests must reach Standard to be classified as Standard.
+The following table summarizes Microsoft recommendations for target speech recognition accuracy for devices in various environments. For test steps, see [Cortana Device Test Setup](../device-experiences/speechplatformdevicestestsetup-003.md). All targets are in speech accuracy. All three tests must reach Standard to be classified as Standard.
 
 |                                       |                                                                                                                     |                                      |                            |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------|----------------------------|
@@ -169,7 +169,7 @@ For examples, this registry key sets the microphone gain as 42.00%, which is 0x1
 
 "DefaultDefaultMicGain"=dword:00001068
 
-For more information and examples, see [Cortana Device Recommendations](../fixme/speechplatformdevicesrecommendations-103.md).
+For more information and examples, see [Cortana Device Recommendations](../device-experiences/speechplatformdevicesrecommendations-103.md).
 
 ### Device.Audio
 
@@ -192,7 +192,7 @@ Recommendations in this section are made regarding the acoustic and related prop
 
 The recommendations and tests are relative to the signal before the speech enhancement processing but after microphone equalization and fixed microphone gain.
 
-For more details about all of these recommendations, including recommended mic array geometries, see [Device.AudioAcoustics Recommendations](../fixme/speechplatformdevicesrecommendations-103.md#section-4--device-audioacoustics-recommendations).
+For more details about all of these recommendations, including recommended mic array geometries, see [Device.AudioAcoustics Recommendations](../device-experiences/speechplatformdevicesrecommendations-103.md#section-4--device-audioacoustics-recommendations).
 
 |                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -220,7 +220,7 @@ The following requirements are key to enable a third-party enhancement pipeline.
 
 -   [Device.SpeechRecognition.DefaultMicGain](speechplatformdevicesrecommendations-103.md) – explains how to set microphone gain to an optimal level to pass Device.SpeechRecognition tests.
 
--   [Device.Audio.Acoustics.MicArray](../fixme/speechplatformdevicesrecommendations-103.md#section-4--device-audioacoustics-recommendations) – covers mic array geometries that are recommended and known to work well with Windows.
+-   [Device.Audio.Acoustics.MicArray](../device-experiences/speechplatformdevicesrecommendations-103.md#section-4--device-audioacoustics-recommendations) – covers mic array geometries that are recommended and known to work well with Windows.
 
 -   Microphone location reporting –explains how to implement a reporting structure for a mic array.
 

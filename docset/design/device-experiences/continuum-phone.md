@@ -81,7 +81,7 @@ This section defines the hardware requirements needed to support Continuum for P
 
 ### <a href="" id="--continuum-for-phone-and-tablet-requirements"></a> Continuum for phone and tablet requirements
 
-A Continuum supported phone must meet all requirements stated in the [Windows 10 Minimum Hardware Requirements](../fixme/minimum-hardware-requirements-overview.md). Additional requirements to support Continuum are shown in Table 1.
+A Continuum supported phone must meet all requirements stated in the [Windows 10 Minimum Hardware Requirements](../component-guidelines/minimum-hardware-requirements-overview.md). Additional requirements to support Continuum are shown in Table 1.
 
 **Table 1: Continuum for Phones requirements**
 

@@ -162,7 +162,7 @@ Table 2 lists the device types that run Windows and the operating system edition
 
  
 
-For example form factor configurations, see [Form factors](form-factors.md).
+For example form factor configurations, see [Form factors](../form-factors/form-factors.md).
 
 ### 1.1.4 Organization of this specification
 
@@ -1330,7 +1330,7 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 
  
 
-⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](../fixme/windows-pointer-device-design-guide.md).
+⁹For the reporting requirements, see the set of topics at [Windows Pointer Device Design Guide](windows-pointer-device-design-guide.md).
 
 ¹⁰For HID over I2C requirements, see[http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx]( http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx). For HID over Bluetooth requirements, see <http://developer.bluetooth.org/TechnologyOverview/Documents/HID_SPEC.pdf>.
 

@@ -23,28 +23,28 @@ Premium All-in-one
 Key Features
 Portable (&lt;5lbs, thin)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Battery Life (6+ hours)](battery.md)
+[Battery Life (6+ hours)](../component-guidelines/battery.md)
 
 Multi User Multi Touch Apps (Sensors, hinge design for “lay-flat,” 10-point touch)
 
 High-DPI (4K) & Multi-Monitor Support
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Inking/Pen Support](pen-devices.md)
+[Inking/Pen Support](../component-guidelines/pen-devices.md)
 
 Multi User Multi Touch Apps
 
 Operating System
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 Windows 10 for desktop editions
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/components.md)
 
 CPU
 Mid-tier x86 w/CS
