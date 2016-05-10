@@ -28,7 +28,7 @@ RA tool. See [Hardware Requirements and Vendor Information](touchscreen-hardware
 
 Low response *latency* plays a large role in ensuring fast and fluid motion. This is similar to the [Reporting Rate](reporting-rate.md) test, where a high packet rate helps ensure smooth, fluid motion. Conversely, a high degree of response latency breaks the illusion that the user is manipulating a physical object.
 
-This test uses specialized hardware to measure the latency in touch packet delivery for touch-down. For more detailed instructions, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](https://msdn.microsoft.com/library/windows/hardware/dn195876).
+This test uses specialized hardware to measure the latency in touch packet delivery for touch-down. For more detailed instructions, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](../../test/hck/how-to-measure-touch-down-latency-by-using-an-acoustic-measurement-tool.md).
 
 Only 50 taps are required during the collection phase.
 

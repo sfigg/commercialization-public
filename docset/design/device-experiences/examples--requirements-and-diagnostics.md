@@ -98,7 +98,7 @@ All modern standby PCs must meet certain thermal requirements regardless of proc
 -   All modern standby PCs with fans must keep the fan off while in modern standby, the system "sleep" state.
 -   The HCK test here runs a realistic modern standby workload that should not cause the fan to turn on. During the transition to modern standby, the fan is allowed to stay on for up to 30 seconds from the time the display turns off.
 
-For more information about the HCK tests, see [Check Thermal Zones](http://msdn.microsoft.com/library/windows/hardware/jj123515.aspx).
+For more information about the HCK tests, see [Check Thermal Zones](../../test/hck/check-thermal-zonesb35c18fd-27e8-4f32-9cfd-46aa16c8b469.md).
 
 To run the HCK tests, do the following:
 

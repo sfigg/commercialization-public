@@ -29,7 +29,7 @@ This section includes the following topics:
 
 [Additional Resources](additional-resources.md)
 
-For information about HID minidrivers for pen devices, see [Requirements on Tablet PC HID Minidrivers](hid.minidriver_requirements_for_tablet_pcs_running_on_earlier_versions_of_windows).
+For information about HID minidrivers for pen devices, see [Requirements on Tablet PC HID Minidrivers](https://msdn.microsoft.com/library/windows/hardware/jj131709).
 
  
 

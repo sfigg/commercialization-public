@@ -194,11 +194,11 @@ The table below describes the location for the antenna by form factor.
 
 [Proximity Devices Design Guide](http://go.microsoft.com/fwlink/?LinkId=237135)
 
-[Windows Hardware Compatibility Program](p_compat_program.windows_hardware_compatibility_program)
+[Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588)
 
 [Minimum hardware requirements](minimum-hardware-requirements-overview.md)
 
-[NFC Devices](nfpdrivers.proximity_devices__new_)
+[NFC Devices](https://msdn.microsoft.com/library/windows/hardware/dn905575)
 
  
 

@@ -23,7 +23,7 @@ To prepare for WiFi-connected testing, the following two prerequisites must be m
 -   The Wi-Fi device is compatible with the NDIS 6.3 feature to support wake on LAN (WoL) patterns, protocol offloads, and D0 packet coalescing. These capabilities are required so that the SoC can enter low-power states while the Wi-Fi device maintains connectivity.
 
 The list of Wi-Fi-connected scenarios includes connectivity to communications apps (such as Live, Lync, and Skype) and downloads from the Internet. These scenarios should be tested serially to focus on issues that might fix similar issues in other scenarios.
-The [Windows Hardware Certification Kit (HCK)](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#test) includes tests that help validate basic NDIS 6.3 functionality for modern standby. There are individual tests for each type of network adapter, including Wi-Fi, CDMA MBB, GSM MBB, and wired LAN. Please see the test details information for each test at [Device.Network Testing](https://msdn.microsoft.com/library/windows/hardware/jj124983.aspx).
+The [Windows Hardware Certification Kit (HCK)](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#test) includes tests that help validate basic NDIS 6.3 functionality for modern standby. There are individual tests for each type of network adapter, including Wi-Fi, CDMA MBB, GSM MBB, and wired LAN. Please see the test details information for each test at [Device.Network Testing](../../test/hck/devicenetwork-testing.md).
 
 We recommend that each network adapter in the system pass the following tests before you proceed to system-level connectivity testing for modern standby:
 
@@ -121,7 +121,7 @@ The instant messaging and video chat scenarios are enumerated in the following t
 <tr class="odd">
 <td><p>System can receive IM notifications during modern standby.</p></td>
 <td><p>Ensure that all IMs received during modern standby are accompanied by sound notifications, while the display remains powered off. When the system wakes from modern standby, check that all IM messages have been received and that the badge on the lock screen is updated appropriately.</p></td>
-<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and View a WPA Trace for Modern Standby Diagnostics](p_WEG_Hardware.capture_and_view_a_wpa_trace_for_modern_standby_diagnostics) for information on how to capture a trace and analyze the information.</p></td>
+<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and View a WPA Trace for Modern Standby Diagnostics](../fixme/capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for information on how to capture a trace and analyze the information.</p></td>
 </tr>
 <tr class="even">
 <td><p>System can receive video call and audio conference call notifications during modern standby.</p></td>

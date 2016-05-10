@@ -32,7 +32,7 @@ This is to test the reporting capabilities of the Windows Precision Touchpad dev
 
 **Validation steps**
 
-For detailed setup and test instructions, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](https://msdn.microsoft.com/library/windows/hardware/dn195876).
+For detailed setup and test instructions, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](../../test/hck/how-to-measure-touch-down-latency-by-using-an-acoustic-measurement-tool.md).
 a. Note: use ptaudiotouch.exe, rather than the touch executable.
 
 b. Only 50 taps during the collection phase are required for this class of device.

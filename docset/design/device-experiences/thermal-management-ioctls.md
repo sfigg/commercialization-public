@@ -33,12 +33,12 @@ Driver implementers need to implement responses to the following input/output (I
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[IOCTL_THERMAL_READ_POLICY](p_WEG_hardware.ioctl_thermal_read_policy)</p></td>
-<td><p>The [IOCTL_THERMAL_READ_POLICY](p_WEG_hardware.ioctl_thermal_read_policy) I/O control request is sent by the kernel to a thermal zone’s policy driver to read the drivers' preferred policy.</p></td>
+<td><p>[IOCTL_THERMAL_READ_POLICY](../fixme/ioctl-thermal-read-policy.md)</p></td>
+<td><p>The [IOCTL_THERMAL_READ_POLICY](../fixme/ioctl-thermal-read-policy.md) I/O control request is sent by the kernel to a thermal zone’s policy driver to read the drivers' preferred policy.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IOCTL_THERMAL_READ_TEMPERATURE](p_WEG_hardware.ioctl_thermal_read_temperature)</p></td>
-<td><p>The [IOCTL_THERMAL_READ_TEMPERATURE](p_WEG_hardware.ioctl_thermal_read_temperature) I/O control request is sent by the ACPI driver to a temperature sensor driver. Upon receiving this request, the driver might be required to provide the temperature of the thermal zone.</p></td>
+<td><p>[IOCTL_THERMAL_READ_TEMPERATURE](../fixme/ioctl-thermal-read-temperature.md)</p></td>
+<td><p>The [IOCTL_THERMAL_READ_TEMPERATURE](../fixme/ioctl-thermal-read-temperature.md) I/O control request is sent by the ACPI driver to a temperature sensor driver. Upon receiving this request, the driver might be required to provide the temperature of the thermal zone.</p></td>
 </tr>
 </tbody>
 </table>

@@ -175,7 +175,7 @@ To verify the False Positive rate, between 1,200 and 2,000 unique users are used
 
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
-[Windows Hello OEM and IHV app scenarios](p_phpartappdev.windows_hello_oem_and_ihv_app_scenarios)
+[Windows Hello OEM and IHV app scenarios](https://msdn.microsoft.com/library/mt608302)
 
  
 

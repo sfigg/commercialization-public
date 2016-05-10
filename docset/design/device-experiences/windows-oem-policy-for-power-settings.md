@@ -17,7 +17,7 @@ In previous versions of connected standby, the number and type of power policies
 
 However, Windows 10 introduces new and enhanced imaging and deployment tools that allow packaging, servicing, and imaging convergence through tooling convergence. A new Windows image customization framework that supports image customizations across all Windows 10 editions is now available to provide a unified image customization and configuration experience. For more information about this unified customization framework, see [Customize using the Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375.aspx).
 
-To learn about how to configure the power settings using Windows provisioning, see [Configure power settings](p_customize_converged.configure_power_settings). Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting.
+To learn about how to configure the power settings using Windows provisioning, see [Configure power settings](https://msdn.microsoft.com/library/windows/hardware/mt608264). Each power setting topic includes the identification GUID, allowed values, meaning, and common usage scenarios for the setting.
 
  
 

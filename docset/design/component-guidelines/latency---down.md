@@ -30,7 +30,7 @@ This is a test to check the time lag (latency) between a Windows pen contact wit
 
 **Validation steps**
 
-1. For detailed instructions for this test, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](https://msdn.microsoft.com/library/windows/hardware/dn195876).
+1. For detailed instructions for this test, see [How to measure Touch Down Latency by using an Acoustic Measurement Tool](../../test/hck/how-to-measure-touch-down-latency-by-using-an-acoustic-measurement-tool.md).
 a. Note: when directed to contact screen with finger, use pen instead.
 
 b. For each tap, ensure that the pen starts within hover range (approximately 5mm above the screen), and then contacts the screen with enough force to exceed the pen's activation force. And also make sure that the contact point is more than 8mm from any edge of the screen.

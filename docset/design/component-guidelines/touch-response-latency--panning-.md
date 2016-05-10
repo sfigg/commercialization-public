@@ -28,7 +28,7 @@ RA tool. See [Hardware Requirements and Vendor Information](touchscreen-hardware
 
 Low response *latency* plays a large role in ensuring fast and fluid motion. This is similar to the [Reporting Rate](reporting-rate.md) test, where a high packet rate helps ensure smooth, fluid motion. Conversely, a high degree of response latency breaks the illusion that the user is manipulating a physical object.
 
-This test uses specialized hardware to measure the latency in touch packet delivery for panning. For more detailed information, see [How to measure Touch Panning Latency](https://msdn.microsoft.com/library/windows/hardware/dn266003.aspx).
+This test uses specialized hardware to measure the latency in touch packet delivery for panning. For more detailed information, see [How to measure Touch Panning Latency](../../test/hck/how-to-measure-touch-panning-latency-win81.md).
 
 **Note**  For Windows 10 testing, please use the 7mm contacts instead of the 9mm contacts.
 

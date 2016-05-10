@@ -45,7 +45,7 @@ Microsoft Windows Hello, part of Windows 10, gives users a personal, secured ex
 
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
-[Windows Hello OEM and IHV app scenarios](p_phpartappdev.windows_hello_oem_and_ihv_app_scenarios)
+[Windows Hello OEM and IHV app scenarios](https://msdn.microsoft.com/library/mt608302)
 
 [Manage identity verification using Microsoft Passport](http://go.microsoft.com/fwlink/?LinkId=624460)
 

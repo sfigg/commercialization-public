@@ -22,15 +22,15 @@ The camera controller driver should forward power management state transitions t
 
 The camera subsystem should be exposed to Windows through a single AVStream minidriver called a *camera controller driver*. We recommend that the camera controller driver not access hardware directly and not directly power-manage hardware components. Instead, the camera controller driver should forward power management and hardware requests to other the drivers that comprise the camera subsystem.
 
-The on-SoC image processing hardware should be power-managed by the SoC power engine plug-in (PEP). The image processing hardware should be managed by a [Windows Driver Frameworks (WDF)](wdf.portal) driver and this driver should enable cooperation with the PEP by setting the **IdleTimeout** member in the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](kmdf.wdf_device_power_policy_idle_settings) structure to **SystemManagedIdleTimeout**. This setting enables the PEP to control any clock and power-rail sharing topology that is unique to the SoC hardware. The driver that controls the image processing unit on the SoC should represent the entire image processing unit as a single power-managed component so that the default WDF capabilities for power management can be used.
+The on-SoC image processing hardware should be power-managed by the SoC power engine plug-in (PEP). The image processing hardware should be managed by a [Windows Driver Frameworks (WDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565) driver and this driver should enable cooperation with the PEP by setting the **IdleTimeout** member in the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](kmdf.wdf_device_power_policy_idle_settings) structure to **SystemManagedIdleTimeout**. This setting enables the PEP to control any clock and power-rail sharing topology that is unique to the SoC hardware. The driver that controls the image processing unit on the SoC should represent the entire image processing unit as a single power-managed component so that the default WDF capabilities for power management can be used.
 
-The off-SoC camera subsystem components should be managed by one or more [Kernel-Mode Driver Framework (KMDF)](wdf.portal) drivers. The drivers for the off-SoC components must transition to the power-removed (D3) state when their components are no longer required for camera capture. Additionally, the drivers for the off-SoC components must enable D3cold, which allows the underlying ACPI subsystem to change the state of GPIO lines to apply and remove power. For more information, see [Supporting D3cold in a Driver](kernel.supporting_d3cold_in_a_driver).
+The off-SoC camera subsystem components should be managed by one or more [Kernel-Mode Driver Framework (KMDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565) drivers. The drivers for the off-SoC components must transition to the power-removed (D3) state when their components are no longer required for camera capture. Additionally, the drivers for the off-SoC components must enable D3cold, which allows the underlying ACPI subsystem to change the state of GPIO lines to apply and remove power. For more information, see [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717).
 
 The following block diagram shows the recommended driver architecture.
 
 ![the recommended driver architecture for the camera subsystem](images/campower3.png)
 
-All of the drivers that comprise the camera subsystem—including the camera controller driver, the image processing unit driver, and the drivers for the off-SoC camera components—must be enumerated in the same driver installation (.inf) file. All camera subsystem drivers must be members of the [imaging PnP device setup class](image.guid_devinterface_image_device_interface_class). The ClassGuid for imaging devices is {6bdd1fc6-810f-11d0-bec7-08002be2092f}.
+All of the drivers that comprise the camera subsystem—including the camera controller driver, the image processing unit driver, and the drivers for the off-SoC camera components—must be enumerated in the same driver installation (.inf) file. All camera subsystem drivers must be members of the [imaging PnP device setup class](https://msdn.microsoft.com/library/windows/hardware/ff542682). The ClassGuid for imaging devices is {6bdd1fc6-810f-11d0-bec7-08002be2092f}.
 
 Each driver that represents a single camera component should be enumerated as a single device in the ACPI namespace.
 
@@ -41,7 +41,7 @@ The camera controller driver must transition the camera devices to the power-rem
 
 If an application initiates streaming from a camera whose devices are in the power-removed state, the camera controller driver must transition the camera devices back to the active state within 100 milliseconds.
 
-To change the power states of the various camera subsystem components, camera controller drivers use proprietary interfaces to communicate with the other drivers that comprise the camera subsystem. To query for the appropriate interface, a camera subsystem driver should use the standard method, which is to send an [**IRP\_MN\_QUERY\_INTERFACE**](kernel.irp_mn_query_interface) I/O request that retrieves a set of function pointers.
+To change the power states of the various camera subsystem components, camera controller drivers use proprietary interfaces to communicate with the other drivers that comprise the camera subsystem. To query for the appropriate interface, a camera subsystem driver should use the standard method, which is to send an [**IRP\_MN\_QUERY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) I/O request that retrieves a set of function pointers.
 
 The camera controller driver must place the camera device in the power-removed state when all of the streaming pins have entered the [**KSSTATE\_STOP**](stream.ksstate) state. Windows automatically suspends foreground applications when the user presses the power button and the system enters connected standby. When a capture application is suspended, the camera capture APIs provided by the Windows Runtime are notified and will change the state of the camera capture pins, causing them to enter the **KSSTATE\_STOP** state.
 
@@ -78,7 +78,7 @@ To implement these functions, camera device driver developers should use the met
 <td>Sensor configuration</td>
 <td>Enumerate the capabilities of the camera sensor hardware or configure its current mode of operation.</td>
 <td>Communication over I2C bus. I2C resources are described in the _CRS method under the camera device in the ACPI namespace.</td>
-<td><p>[Simple peripheral bus (SPB) input/output (I/O) request interface](buses.using_the_spb_i_o_request_interface) is used to communicate with I2C host controller and camera sensor device.</p></td>
+<td><p>[Simple peripheral bus (SPB) input/output (I/O) request interface](https://msdn.microsoft.com/library/windows/hardware/hh698227) is used to communicate with I2C host controller and camera sensor device.</p></td>
 </tr>
 <tr class="even">
 <td>Sensor event detection</td>

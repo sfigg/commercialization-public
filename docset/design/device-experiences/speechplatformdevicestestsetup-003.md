@@ -71,7 +71,7 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): [https://www.i
 </tr>
 <tr class="odd">
 <td><p>DI</p></td>
-<td><p>Directivity Index (For more information, see [Appendix A: Calculations](https://msdn.microsoft.com/library/windows/hardware/dn957009.aspx#appendix-a--calculations)).</p></td>
+<td><p>Directivity Index (For more information, see [Appendix A: Calculations](../fixme/speechplatformdevicestestsetup-003.md#appendix-a--calculations)).</p></td>
 </tr>
 <tr class="even">
 <td><p>DRC</p></td>
@@ -107,11 +107,11 @@ For a comprehensive list of relevant terms, reference (ITU-p.10): [https://www.i
 </tr>
 <tr class="even">
 <td><p>NG</p></td>
-<td><p>Ambient Noise Gain (For more information, see [Appendix A: Calculations](https://msdn.microsoft.com/library/windows/hardware/dn957009.aspx#appendix-a--calculations)).</p></td>
+<td><p>Ambient Noise Gain (For more information, see [Appendix A: Calculations](../fixme/speechplatformdevicestestsetup-003.md#appendix-a--calculations)).</p></td>
 </tr>
 <tr class="odd">
 <td><p>NGA</p></td>
-<td><p>A-Weighted Ambient Noise Gain (For more information, see [Appendix A: Calculations](https://msdn.microsoft.com/library/windows/hardware/dn957009.aspx#appendix-a--calculations)).</p></td>
+<td><p>A-Weighted Ambient Noise Gain (For more information, see [Appendix A: Calculations](../fixme/speechplatformdevicestestsetup-003.md#appendix-a--calculations)).</p></td>
 </tr>
 <tr class="even">
 <td><p>Normal-band</p></td>

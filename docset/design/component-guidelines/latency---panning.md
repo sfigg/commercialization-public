@@ -65,7 +65,7 @@ b. If it is too far from the sensor, Count will seem to increment by 2, instead 
 
 Note that, unless there’s an error, do not exit by pressing Esc. If you press Esc to exit when there is no error, the test may not finish.
 
-For more detailed setup and test instructions, see [How to measure Touch Panning Latency](https://msdn.microsoft.com/library/windows/hardware/dn266003.aspx).
+For more detailed setup and test instructions, see [How to measure Touch Panning Latency](../../test/hck/how-to-measure-touch-panning-latency-win81.md).
 
 **Common errors**
 

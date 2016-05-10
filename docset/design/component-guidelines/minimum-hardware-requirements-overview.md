@@ -1330,7 +1330,7 @@ If a touch solution, a precision touch pad solution, or an active pen solution i
 
  
 
-⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](https://msdn.microsoft.com/library/windows/hardware/jj151569.aspx).
+⁹For the reporting requirements, see the set of topics at [https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx](../fixme/windows-pointer-device-design-guide.md).
 
 ¹⁰For HID over I2C requirements, see[http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx]( http://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx). For HID over Bluetooth requirements, see <http://developer.bluetooth.org/TechnologyOverview/Documents/HID_SPEC.pdf>.
 

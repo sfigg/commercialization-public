@@ -46,15 +46,15 @@ When battery saver is on, several Windows features behave differently:
 
 -   Windows task scheduler tasks trigger only if the task is:
 
-    -   Not set to **Start the task only if the computer is idle...** (task doesn't use [**IdleSettings**](taskschd.itasksettings_idlesettings))
+    -   Not set to **Start the task only if the computer is idle...** (task doesn't use [**IdleSettings**](https://msdn.microsoft.com/library/windows/desktop/aa381852))
 
-    -   Not set to run during automatic maintenance (task doesn't use [**MaintenanceSettings**](taskschd.itasksettings3_maintenancesettings))
+    -   Not set to run during automatic maintenance (task doesn't use [**MaintenanceSettings**](https://msdn.microsoft.com/library/windows/desktop/hh974642))
 
-    -   Is set to **Run only when user is logged on** (task [**LogonType**](taskschd.iprincipal_logontype) is **TASK\_LOGON\_INTERACTIVE\_TOKEN** or **TASK\_LOGON\_GROUP**)
+    -   Is set to **Run only when user is logged on** (task [**LogonType**](https://msdn.microsoft.com/library/windows/desktop/aa380746) is **TASK\_LOGON\_INTERACTIVE\_TOKEN** or **TASK\_LOGON\_GROUP**)
 
     All other triggers are delayed until the system exits battery saver mode.
 
-For more information about accessing battery saver status in your application, see [SYSTEM\_POWER\_STATUS](base.system_power_status_str)
+For more information about accessing battery saver status in your application, see [SYSTEM\_POWER\_STATUS](https://msdn.microsoft.com/library/windows/desktop/aa373232)
 
  
 

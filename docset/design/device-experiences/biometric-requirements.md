@@ -175,7 +175,7 @@ Meaning about 2,237 unique biometric samples will be needed to verify the confid
 
 [Windows Hello](windows-hello.md)
 
-[Windows Hello OEM and IHV app scenarios](p_phpartappdev.windows_hello_oem_and_ihv_app_scenarios)
+[Windows Hello OEM and IHV app scenarios](https://msdn.microsoft.com/library/mt608302)
 
  
 

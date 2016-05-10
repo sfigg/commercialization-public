@@ -30,7 +30,7 @@ This example shows how external events, such as WLAN environment, can keep the W
 
 In some cases, the SleepStudy report shows high battery drain but does not identify an obvious offender that is highlighted in red.
 
-For this example, a you can view a trace to identify the component that is causing the system to frequently exit the low-power state (DRIPS). For more information, see [Capture and View a WPA Trace for Modern Standby Issues](p_WEG_hardware.capture_and_view_a_wpa_trace_for_modern_standby_diagnostics).
+For this example, a you can view a trace to identify the component that is causing the system to frequently exit the low-power state (DRIPS). For more information, see [Capture and View a WPA Trace for Modern Standby Issues](../fixme/capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).
 
 ## No software DRIPS or hardware DRIPS due to a missing driver
 
