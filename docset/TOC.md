@@ -1,6 +1,6 @@
 # [Design](design/index.md)
 
-## [Form factors](design/form-factors/form-factors.md)
+## [Form factors](design/form-factors/index.md)
 ### [2-in-1](design/form-factors/2-in-1.md)
 ### [All-in-one](design/form-factors/all-in-one.md)
 ### [Desktop PC](design/form-factors/desktop-pc.md)
@@ -11,7 +11,7 @@
 ### [Embedded devices](design/form-factors/embedded-devices.md)
 
 
-## [Device experiences](design/device-experiences/device-experiences--scenarios-.md)
+## [Device experiences](design/device-experiences/index.md)
 ### [Continuum](design/device-experiences/continuum.md)
 ### [Continuum for Phone](design/device-experiences/continuum-phone.md)
 ### [Cortana](design/device-experiences/cortana.md)
@@ -114,7 +114,7 @@
 #### [Windows Hello face authentication](design/device-experiences/windows-hello-face-authentication.md)
 
 
-## [Hardware component guidelines](design/component-guidelines/components.md)
+## [Hardware component guidelines](design/component-guidelines/index.md)
 ### [Minimum hardware requirements](design/component-guidelines/minimum-hardware-requirements-overview.md)
 ### [Audio](design/component-guidelines/audio.md)
 ### [Battery](design/component-guidelines/battery.md)

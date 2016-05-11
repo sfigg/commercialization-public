@@ -43,7 +43,7 @@ Operating System
 Windows 10 Mobile
 Windows 10 Mobile
 Windows 10 Mobile
-[Recommended Components](../component-guidelines/components.md)
+[Recommended Components](../component-guidelines/index.md)
 
 CPU
 Supported entry SoC

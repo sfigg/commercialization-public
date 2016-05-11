@@ -85,7 +85,7 @@ Windows 10 for desktop editions
 Windows 10 for desktop editions
 Windows 10 for desktop editions
 Windows 10 for desktop editions
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/index.md)
 
 CPU
 Mid-tier x86

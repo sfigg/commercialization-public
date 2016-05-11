@@ -152,7 +152,7 @@ In some Wi-Fi device designs, the Wi-Fi device shares analog and RF circuitry wi
 
 Power management of the Wi-Fi device is primarily based on the NDIS commands that the Wi-Fi miniport driver receives from the Windows networking subsystem. The Wi-Fi miniport driver is responsible for translating these NDIS commands (called OID requests) to device-specific messages to send to the Wi-Fi device over the I/O bus.
 
-Developing an NDIS driver is a complex task whose scope is beyond Wi-Fi device power management. For help in understanding this section, review the [Native 802.11 Wireless LAN](https://msdn.microsoft.com/library/windows/hardware/ff560689) topic. If you are a Wi-Fi developer, you should become familiar with the set of networking device tests in the [Windows Hardware Certification Kit](../../test/hck/windows-hardware-certification-kit-users-guide.md) and use these tests as the de facto reference for ensuring that a Wi-Fi device and its Wi-Fi miniport driver are operating correctly.
+Developing an NDIS driver is a complex task whose scope is beyond Wi-Fi device power management. For help in understanding this section, review the [Native 802.11 Wireless LAN](https://msdn.microsoft.com/library/windows/hardware/ff560689) topic. If you are a Wi-Fi developer, you should become familiar with the set of networking device tests in the [Windows Hardware Certification Kit](../../test/hck/index.md) and use these tests as the de facto reference for ensuring that a Wi-Fi device and its Wi-Fi miniport driver are operating correctly.
 
 The Wi-Fi device is expected to always be powered on and connected to a network, except when a modern standby platform is in the S5 (shutdown) system power state. Therefore, correct power management of the Wi-Fi device is critical to system battery life both during modern standby and when the display is turned on. The power-management mode of the Wi-Fi device might change frequently as the device responds to software requests to scan for new networks, or the device itself detects that the access point has been disconnected. The software power-management mechanisms and resulting power consumption described in the following discussion assume that the Wi-Fi device is connected to a single access point that has reasonable signal strength.
 
@@ -499,7 +499,7 @@ The direct measurement of device power consumption is a critical part of testing
 
 System integrators and SoC vendors should use the checklist below to verify that their Wi-Fi device and Wi-Fi miniport power-management design are compatible with Windows 8 and Windows 8.1.
 
-**Note**  The [Windows Hardware Certification Kit](../../test/hck/windows-hardware-certification-kit-users-guide.md) includes an extensive set of Wi-Fi driver tests to help ensure the Wi-Fi device is compatible with Windows 8 and Windows 8.1. Wi-Fi device vendors and Wi-Fi miniport driver developers are encouraged to review the Windows Hardware Certification Kit tests and use them to validate their driver implementation as early as possible in the design cycle.
+**Note**  The [Windows Hardware Certification Kit](../../test/hck/index.md) includes an extensive set of Wi-Fi driver tests to help ensure the Wi-Fi device is compatible with Windows 8 and Windows 8.1. Wi-Fi device vendors and Wi-Fi miniport driver developers are encouraged to review the Windows Hardware Certification Kit tests and use them to validate their driver implementation as early as possible in the design cycle.
 
  
 

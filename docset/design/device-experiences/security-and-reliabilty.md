@@ -55,7 +55,7 @@ Measured boot requires the following firmware requirements:
     -   Access to isolated non-volatile, sealed storage for storing long term secrets.
     -   Loading and storing key data within sealed storage.
 
-For TPM requirements, see [Minimum hardware requirements](minimum-hardware-requirements-overview.md). For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet.
+For TPM requirements, see [Minimum hardware requirements](../component-guidelines/minimum-hardware-requirements-overview.md). For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet.
 
 ## Data protection (BitLocker)
 

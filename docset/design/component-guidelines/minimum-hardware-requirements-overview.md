@@ -162,7 +162,7 @@ Table 2 lists the device types that run Windows and the operating system edition
 
  
 
-For example form factor configurations, see [Form factors](../form-factors/form-factors.md).
+For example form factor configurations, see [Form factors](../form-factors/index.md).
 
 ### 1.1.4 Organization of this specification
 
