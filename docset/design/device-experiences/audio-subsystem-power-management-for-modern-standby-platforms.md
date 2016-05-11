@@ -95,7 +95,7 @@ The following table describes these two power modes.
 <tbody>
 <tr class="odd">
 <td>Active (streaming)</td>
-<td>The audio processing units are actively streaming audio and the codec is providing analog or digital audio to an [audio endpoint](coreaudio.audio_endpoint_devices) such as headphones, built-in speakers, or a remote HDMI output device.</td>
+<td>The audio processing units are actively streaming audio and the codec is providing analog or digital audio to an [audio endpoint](https://msdn.microsoft.com/library/windows/desktop/dd370793) such as headphones, built-in speakers, or a remote HDMI output device.</td>
 <td>D0</td>
 <td><p>&lt;= 100 milliwatts</p>
 <p>(audio processing + codec)</p></td>

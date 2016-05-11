@@ -37,7 +37,7 @@ A *Usage* is the name of a value, button, or collection in a HID report. The hos
 
  
 
-**Note**  Pointer devices are free to support additional usages (including vendor-specific usages). Additional usages are not delivered to applications in WM\_POINTER messages. The value of these usages can be retrieved by using the [**GetRawPointerDeviceData**](unifiedinputstack.getrawpointerdevicedata) function. In order to make the usages accessible from the **GetRawPointerDeviceData** function, the usages must be located in the same report as the X and Y usages.
+**Note**  Pointer devices are free to support additional usages (including vendor-specific usages). Additional usages are not delivered to applications in WM\_POINTER messages. The value of these usages can be retrieved by using the [**GetRawPointerDeviceData**](https://msdn.microsoft.com/library/windows/desktop/hh802887) function. In order to make the usages accessible from the **GetRawPointerDeviceData** function, the usages must be located in the same report as the X and Y usages.
 
  
 

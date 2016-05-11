@@ -113,7 +113,7 @@ For more information about the HID SET\_POWER command, see [HID over I2C Protoco
 ## <a href="" id="supportedhw"></a>Supported hardware power configurations
 
 
-To reach the [hardware power floor](https://msdn.microsoft.com/library/windows/hardware/mt614846) while the platform is in modern standby, the touch controller (or pen digitizer) must transition to a low-power mode—either standby mode or power-removed mode. Windows supports two hardware configurations for achieving the transition to this low-power mode. One configuration uses the HID SET\_POWER command to place the touch controller in standby mode during modern standby, and the other uses a switchable power rail to place the touch controller in power-removed mode during modern standby.
+To reach the [hardware power floor](optimizing-modern-standby.md) while the platform is in modern standby, the touch controller (or pen digitizer) must transition to a low-power mode—either standby mode or power-removed mode. Windows supports two hardware configurations for achieving the transition to this low-power mode. One configuration uses the HID SET\_POWER command to place the touch controller in standby mode during modern standby, and the other uses a switchable power rail to place the touch controller in power-removed mode during modern standby.
 
 We recommend that all platforms and touch controllers support the HID SET\_POWER command.
 

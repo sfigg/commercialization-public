@@ -218,7 +218,7 @@ For more details about all of these recommendations, including recommended mic a
 
 The following requirements are key to enable a third-party enhancement pipeline. These and other recommendations are covered in more detail in the following sections:
 
--   [Device.SpeechRecognition.DefaultMicGain](speechplatformdevicesrecommendations-103.md) – explains how to set microphone gain to an optimal level to pass Device.SpeechRecognition tests.
+-   [Device.SpeechRecognition.DefaultMicGain](../device-experiences/speechplatformdevicesrecommendations-103.md) – explains how to set microphone gain to an optimal level to pass Device.SpeechRecognition tests.
 
 -   [Device.Audio.Acoustics.MicArray](../device-experiences/speechplatformdevicesrecommendations-103.md#section-4--device-audioacoustics-recommendations) – covers mic array geometries that are recommended and known to work well with Windows.
 

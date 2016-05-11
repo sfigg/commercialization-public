@@ -25,11 +25,11 @@ On the other hand, if the device has been power cycled more frequently than once
 
 A miniport driver can opt-in to this behavior:
 
--   Register a [**STOR\_POFX\_DEVICE\_V3**](storage.stor_pofx_device_v3) with [**StorPortInitializePoFxPower**](storage.storportinitializepofxpower) in the ScsiUnitPoFxPowerInfo unit control callback.
+-   Register a [**STOR\_POFX\_DEVICE\_V3**](https://msdn.microsoft.com/library/windows/hardware/dn931828) with [**StorPortInitializePoFxPower**](https://msdn.microsoft.com/library/windows/hardware/hh920421) in the ScsiUnitPoFxPowerInfo unit control callback.
 
--   Set the STOR\_POFX\_DEVICE\_FLAG\_ADAPTIVE\_D3\_IDLE\_TIMEOUT flag in the **Flags** member of the [**STOR\_POFX\_DEVICE\_V3**](storage.stor_pofx_device_v3) structure.
+-   Set the STOR\_POFX\_DEVICE\_FLAG\_ADAPTIVE\_D3\_IDLE\_TIMEOUT flag in the **Flags** member of the [**STOR\_POFX\_DEVICE\_V3**](https://msdn.microsoft.com/library/windows/hardware/dn931828) structure.
 
--   Set the **MinimumPowerCyclePeriodInMS** member in the [**STOR\_POFX\_DEVICE\_V3**](storage.stor_pofx_device_v3) structure to the value that indicates, in the worst case, how often the device can be power cycled. Units are in milliseconds. We recommend this be at least 5 minutes (i.e. the device should not be power cycled more than once every 5 minutes).
+-   Set the **MinimumPowerCyclePeriodInMS** member in the [**STOR\_POFX\_DEVICE\_V3**](https://msdn.microsoft.com/library/windows/hardware/dn931828) structure to the value that indicates, in the worst case, how often the device can be power cycled. Units are in milliseconds. We recommend this be at least 5 minutes (i.e. the device should not be power cycled more than once every 5 minutes).
 
  
 
