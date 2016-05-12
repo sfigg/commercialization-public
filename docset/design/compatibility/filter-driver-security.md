@@ -1,12 +1,9 @@
-<span id="_Toc351729008" class="anchor"><span id="_Toc399248872" class="anchor"><span id="_Toc444291050" class="anchor"></span></span></span>Filter Requirements
-================================================================================================================================================================
+Filter.Driver.Security
+======================
 
-<span id="_Toc399248896" class="anchor"><span id="_Toc444291076" class="anchor"></span></span>Filter.Driver.Security
---------------------------------------------------------------------------------------------------------------------
+*Additional requirements related to security for TDI filter drivers and LSPs.*
 
-*Additional TDI filter driver and LSP requirements related to security*
-
-### <span id="_Toc399248897" class="anchor"><span id="_Toc444291077" class="anchor"></span></span>Filter.Driver.Security.NoTDIFilterAndLSP
+### Filter.Driver.Security.NoTDIFilterAndLSP
 
 *No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. *
 

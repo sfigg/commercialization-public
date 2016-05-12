@@ -1,10 +1,7 @@
-<span id="_Toc351729008" class="anchor"><span id="_Toc399248872" class="anchor"><span id="_Toc444291050" class="anchor"></span></span></span>Filter Requirements
-================================================================================================================================================================
+Filter.Driver.vSwitchExtension
+==============================
 
-<span id="_Toc399248898" class="anchor"><span id="_Toc444291078" class="anchor"></span></span>Filter.Driver.vSwitchExtension
-----------------------------------------------------------------------------------------------------------------------------
-
-### <span id="_Toc399248899" class="anchor"><span id="_Toc444291079" class="anchor"></span></span>Filter.Driver.vSwitchExtension.ExtensionRequirements
+### Filter.Driver.vSwitchExtension.ExtensionRequirements
 
 *Filter drivers that implement VM Switch Extensibility must support required functionalities, modes, and protocols.*
 

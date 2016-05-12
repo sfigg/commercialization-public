@@ -1,12 +1,9 @@
-<span id="_Toc351729008" class="anchor"><span id="_Toc399248872" class="anchor"><span id="_Toc444291050" class="anchor"></span></span></span>Filter Requirements
-================================================================================================================================================================
+Filter.Driver.AntiVirus
+=======================
 
-<span id="_Toc399248873" class="anchor"><span id="_Toc444291051" class="anchor"></span></span>Filter.Driver.AntiVirus
----------------------------------------------------------------------------------------------------------------------
+*Antivirus requirements for filter drivers.*
 
-*Antivirus requirements for filter drivers*
-
-### <span id="_Toc399248874" class="anchor"><span id="_Toc444291052" class="anchor"></span></span>Filter.Driver.AntiVirus.Functionality
+### Filter.Driver.AntiVirus.Functionality
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
@@ -50,7 +47,7 @@ Information about file system behavior: <http://download.microsoft.com/download/
 
 Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol document at: <http://msdn.microsoft.com/en-us/library/cc246482(PROT.13).aspx>
 
-### <span id="_Toc399248875" class="anchor"><span id="_Toc444291053" class="anchor"></span></span>Filter.Driver.AntiVirus.IcarDetection
+### Filter.Driver.AntiVirus.IcarDetection
 
 *Anti-virus filter drivers must be architected to exercise basic anti-virus functionality, as well as interact accurately with the core components of the operating system.*
 
@@ -75,7 +72,7 @@ Anti-virus filter drivers must be architected to exercise basic anti-virus fun
 
 -   Anti-virus functionality
 
-### <span id="_Toc399248876" class="anchor"><span id="_Toc444291054" class="anchor"></span></span>Filter.Driver.AntiVirus.MiniFilter
+### Filter.Driver.AntiVirus.MiniFilter
 
 *A file system filter driver must be a minifilter driver that uses the file systems filter manager.*
 
@@ -100,7 +97,7 @@ Information about filter manger and minifilter drivers available here:
 <http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
 <http://msdn.microsoft.com/en-us/windows/hardware/gg462968.aspx>
 
-### <span id="_Toc399248877" class="anchor"><span id="_Toc444291055" class="anchor"></span></span>Filter.Driver.AntiVirus.NamedPipeAndMailSlots
+### Filter.Driver.AntiVirus.NamedPipeAndMailSlots
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Named Pipe and Mail Slots, as well as interact accurately with the core components of the operating system.*
 
@@ -158,7 +155,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 Information about Named Pipe and Mail Slots can be found at:
 <http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
 
-### <span id="_Toc399248878" class="anchor"><span id="_Toc444291056" class="anchor"></span></span>Filter.Driver.AntiVirus.RegistryAndProcess
+### Filter.Driver.AntiVirus.RegistryAndProcess
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of the Windows registry and processes, as well as interact accurately with the core components of the operating system.*
 
@@ -199,7 +196,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 
 -   Thread and process handle operations
 
-### <span id="_Toc399248879" class="anchor"><span id="_Toc444291057" class="anchor"></span></span>Filter.Driver.AntiVirus.Winsock
+### Filter.Driver.AntiVirus.Winsock
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows Sockets, as well as interact accurately with the core components of the operating system.*
 

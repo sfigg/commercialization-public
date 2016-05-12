@@ -1,12 +1,9 @@
-<span id="_Toc351729008" class="anchor"><span id="_Toc399248872" class="anchor"><span id="_Toc444291050" class="anchor"></span></span></span>Filter Requirements
-================================================================================================================================================================
+Filter.Driver.Fundamentals
+==========================
 
-<span id="_Toc399248891" class="anchor"><span id="_Toc444291071" class="anchor"></span></span>Filter.Driver.Fundamentals
-------------------------------------------------------------------------------------------------------------------------
+*Corresponds to device driver fundamentals, but for filter drivers.*
 
-*Corresponds to device driver fundamentals, but for filter drivers*
-
-### <span id="_Toc399248892" class="anchor"><span id="_Toc444291072" class="anchor"></span></span>Filter.Driver.Fundamentals.DriverQuality
+### Filter.Driver.Fundamentals.DriverQuality
 
 *A filter driver must be of high quality.*
 

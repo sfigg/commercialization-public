@@ -1,10 +1,7 @@
-<span id="_Toc351729008" class="anchor"><span id="_Toc399248872" class="anchor"><span id="_Toc444291050" class="anchor"></span></span></span>Filter Requirements
-================================================================================================================================================================
+Filter.Driver.FileSystem
+========================
 
-<span id="_Toc399248886" class="anchor"><span id="_Toc444291066" class="anchor"></span></span>Filter.Driver.FileSystem
-----------------------------------------------------------------------------------------------------------------------
-
-### <span id="_Toc399248887" class="anchor"><span id="_Toc444291067" class="anchor"></span></span>Filter.Driver.FileSystem.Functionality
+### Filter.Driver.FileSystem.Functionality
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
@@ -47,7 +44,7 @@ Information about file system behavior: <http://download.microsoft.com/download/
 
 Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol document at: <http://msdn.microsoft.com/en-us/library/cc246482(PROT.13).aspx>
 
-### <span id="_Toc399248888" class="anchor"><span id="_Toc444291068" class="anchor"></span></span>Filter.Driver.FileSystem.MiniFilter
+### Filter.Driver.FileSystem.MiniFilter
 
 *A file system filter driver must be a minifilter driver using the file systems Filter Manager.*
 
@@ -71,7 +68,7 @@ This requirement will be tested implicitly. The gatherer will be written such th
 Information about Filter Manger and minifilter drivers available here:
 <http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
 
-### <span id="_Toc399248889" class="anchor"><span id="_Toc444291069" class="anchor"></span></span>Filter.Driver.FileSystem.NamedPipeAndMailSlots
+### Filter.Driver.FileSystem.NamedPipeAndMailSlots
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Named Pipe and Mail Slots, as well as interact accurately with the core components of the operating system.*
 
@@ -129,7 +126,7 @@ Kernel Mode filter drivers must be architected to maximize the reliability and
 Information about Named Pipe and Mail Slots can be found at:
 <http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
 
-### <span id="_Toc399248890" class="anchor"><span id="_Toc444291070" class="anchor"></span></span>Filter.Driver.FileSystem.RegistryAndProcess
+### Filter.Driver.FileSystem.RegistryAndProcess
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows registry and processes, as well as interact accurately with the core components of the operating system.*
 
