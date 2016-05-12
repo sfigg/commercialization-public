@@ -52,7 +52,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     exit
     ```
 
-4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. 
+4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx).
 
     ``` syntax
     DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0
@@ -139,6 +139,8 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 [Capture and Apply Windows, System, and Recovery Partitions](capture-and-apply-windows-system-and-recovery-partitions.md)
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
+
+[CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx)
 
  
 
