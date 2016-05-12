@@ -1,4 +1,4 @@
-Hardware Compatibility Specification for Filter for Windows 10
+Hardware Compatibility Specification for Filter for Windows 10 
 ==============================================================
 
 This section of the documentation provides specifications for hardware compatibility
