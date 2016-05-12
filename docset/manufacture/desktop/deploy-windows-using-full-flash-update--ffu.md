@@ -44,7 +44,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     net use N: \\server\share
     ```
 
-3.  Identify the drive to which you'll be applying the image. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. 
+3.  Identify the drive to which you'll be applying the image. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks. 
 
     ``` syntax
     diskpart 
@@ -52,7 +52,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     exit
     ```
 
-4.  Apply the image to a drive.
+4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. 
 
     ``` syntax
     DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0
