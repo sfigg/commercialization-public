@@ -190,7 +190,6 @@ Great, your app works! Now let's package it up so you can maintain your app even
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PLACEHOLDER_FEATURE</Feature> 
     <Feature>PRODUCTION</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
