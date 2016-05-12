@@ -11,7 +11,7 @@ title: Customize the Default User Profile by Using CopyProfile
 
 You can use the `CopyProfile` setting to customize a user profile and then copy that profile to the default user profile. Windows® uses the default user profile as a template to assign a profile to each new user. By customizing the default user profile, you can configure settings for all user accounts that are created on the computer. By using `CopyProfile`, you can customize installed applications, drivers, desktop backgrounds, internet explorer settings, and other configurations. Note that some settings are not preserved by using `CopyProfile`.
 
-In Windows 8, Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the Windows 8 **Start** screen.
+Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the **Start** screen.
 
 In this topic:
 
@@ -35,7 +35,7 @@ Use the following procedure to create an answer file to instruct **Sysprep** to 
     1.  Click **File**, and then click **New Answer File**. An empty answer file appears in the **Answer File** pane.
 
         **Note**  
-        If the Windows 8 catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
+        If the catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
 
          
 
