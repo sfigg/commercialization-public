@@ -13,7 +13,7 @@ Deploy Windows faster on the factory floor by using the Full Flash Update (FFU) 
 
 With FFU images, you can apply a Windows image directly to a drive or an SD card, laying down the entire drive at once, including the partition information.
 
-To create and apply images, you can use Windows Imaging and Configuration Designer (ICD). You can also use the Windows 10 version of DISM to apply FFU images, which is included in the Windows 10 version of Windows Preinstallation Environment (WinPE).
+To create and apply images, you can use [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx). You can also use the Windows 10 version of DISM to apply FFU images, which is included in the Windows 10 version of Windows Preinstallation Environment (WinPE).
 
 Once you've created an FFU image, it can't be modified or edited offline.
 
@@ -44,16 +44,18 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     net use N: \\server\share
     ```
 
-3.  Identify the drive to which you'll be applying the image, for example, \\\\.PhysicalDrive0.
+3.  Identify the drive to which you'll be applying the image. You can use diskpart, or [add Windows PowerShell support to WinPE](winpe-adding-powershell-support-to-windows-pe.md) and use [Get-Disk](https://technet.microsoft.com/library/hh848657.aspx) for scriptability and more complex setups such as a server with multiple disks. 
 
     ``` syntax
-    wmic diskdrive list brief
+    diskpart 
+    list disk
+    exit
     ```
 
-4.  Apply the image to a drive.
+4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. 
 
     ``` syntax
-    DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.PhysicalDrive0
+    DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0
     ```
 
 **To use a single drive for both WinPE and an FFU image**
@@ -71,13 +73,13 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ``` syntax
     diskpart
     list volume
-    exit
     ```
 
-5.  Identify the drive to which you'll be applying the image, for example, \\\\.PhysicalDrive0.
+5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
-    ``` syntax
-    wmic diskdrive list brief
+    ``` syntax 
+    list disk
+    exit
     ```
 
 6.  Apply the image to a drive.
@@ -102,13 +104,13 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ``` syntax
     diskpart
     list volume
-    exit
     ```
 
-5.  Identify the drive to which you'll be applying the image, for example, \\\\.PhysicalDrive0.
+5.  While in the diskpart menu, identify the drive to which you'll be applying the image, for example, \\\\.\\PhysicalDrive0.
 
     ``` syntax
-    wmic diskdrive list brief
+    list disk
+    exit
     ```
 
 6.  Install the Windows 10 version of DISM.
@@ -126,12 +128,9 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)
 
 [FFU image format](../mobile/ffu-image-format.md)
-
-[Deploy Windows using Full Flash Update (FFU)](deploy-windows-using-full-flash-update--ffu.md)
 
 [WIM vs. VHD vs. FFU: comparing image file formats](wim-vs-ffu-image-file-formats.md)
 

@@ -8,6 +8,7 @@ title: 'Sysprep (System Preparation) Overview'
 
 # Sysprep (System Preparation) Overview
 
+Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 **Sysprep** (System Preparation) prepares a Windows installation (Windows client and Windows Server) for imaging, allowing you to capture a customized installation. **Sysprep** removes PC-specific information from a Windows installation, "generalizing" the installation so it can be installed on different PCs. With **Sysprep** you can configure the PC to boot to audit mode, where you can make additional changes or updates to your image. Or, you can configure Windows to boot to the Out-of-Box Experience (OOBE).
 
@@ -41,8 +42,9 @@ Sysprep helps you solve business goals such as:
 
 ## <span id="BKMK_NEW"></span><span id="bkmk_new"></span>New and changed functionality
 
+Beginning with Windows 10, Version 1607, Sysprep can be used to prepare an image that has been upgraded. For example, you can create a base Windows 10 image, upgrade the image to Windows 10, Version 1607, and then run Sysprep generalize on the upgraded image, and deploy the image to new devices.  This process allows enterprises to efficiently and continuosly roll out up-to-date Windows 10 deployment images. 
 
-In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your deployment workflow to use Sysprep from the command line. For more information, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
+Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your deployment workflow to use Sysprep from the command line. For more information, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
 ## <span id="Dependencies"></span><span id="dependencies"></span><span id="DEPENDENCIES"></span>Dependencies
 
@@ -89,7 +91,7 @@ The following scenarios are not supported:
 
 -   Using a different version of the Sysprep tool to configure an image is not supported. You must use only the version of the Sysprep tool that is installed with the Windows image that you intend to configure. Sysprep is installed with every version of Windows. You must always run Sysprep from the %WINDIR%\\system32\\sysprep directory.
 
--   Using the Sysprep tool on upgrade installation types, or to reconfigure an existing installation of Windows that has already been deployed is not supported. Sysprep must be used only to configure new installations of Windows. You can run Sysprep an unlimited number of times to build and configure your installation of Windows.
+-   If you are using a version of Windows earlier than Windows 10, Version 1607, using the Sysprep tool on upgrade installation types, or to reconfigure an existing installation of Windows that has already been deployed is not supported. In this case, Sysprep must be used only to configure new installations of Windows. You can run Sysprep an unlimited number of times to build and configure your installation of Windows.
 
 -   Automating Sysprep by using a Microsoft-Windows-Deployment\\[RunSynchronous](http://go.microsoft.com/fwlink/?LinkId=286336) command is not supported. However, you can use the Microsoft-Windows-Deployment\\[Generalize](http://go.microsoft.com/fwlink/?LinkId=286337) setting to prepare the PC for imaging after installation.
 

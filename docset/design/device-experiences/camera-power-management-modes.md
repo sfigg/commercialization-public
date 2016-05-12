@@ -1,0 +1,75 @@
+---
+title: Camera power management modes
+description: Describes the power management modes that must be supported in the off-System on a Chip (SoC) and on-System on a Chip (SoC) components of the camera subsystem.
+MS-HAID:
+- 'cstandby.camera\_power\_management\_modes'
+- 'p\_weg\_hardware.camera\_power\_management\_modes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: D49565DE-4648-4AC4-BBAC-25F23A07AF6A
+---
+
+# Camera power management modes
+
+
+The off-System on a Chip (SoC) components of the camera subsystem must support two power management modes. The camera components must support an active mode in which the camera device is actively streaming content to an application. In addition, the camera components must support a power-removed mode in which the camera device is turned off, power is removed, and the camera device consumes zero watts. The following table describes the active and power-removed power management modes for the camera device.
+
+<table style="width:100%;">
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mode</th>
+<th>Description</th>
+<th>Device power state (Dx)</th>
+<th>Average power consumption</th>
+<th>Exit latency to active</th>
+<th>Transition mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Active (streaming)</p></td>
+<td><p>The camera device is actively streaming content to an application. The content might be full-motion, preview, or still photo capture.</p></td>
+<td><p>Yes</p></td>
+<td><p>Sensor, AF, and flash-specific.</p></td>
+<td><p>N/A</p></td>
+<td><p>Software-initiated D0 transition.</p>
+<p>(An application has initiated streaming by setting the state of a capture pin to KSSTATE_ACQUIRE.)</p></td>
+</tr>
+<tr class="even">
+<td><p>Power - removed</p></td>
+<td><p>The camera device is not streaming content to any applications. No context is preserved on the camera sensor, the flash device, or the auto-focus engine.</p></td>
+<td><p>Yes</p></td>
+<td><p>0 watts</p></td>
+<td><p>&lt; 200 milliseconds to first frame (See note following table.)</p></td>
+<td><p>Software-initiated D3 transition.</p>
+<p>(The state of all streaming pins has been set to any value other than KSSTATE_RUN.)</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**Note**  Windows expects the transition time from the active mode to the power-removed mode (the off latency) to be less than 100 milliseconds. Most power management effort is focused on reducing the transition time from power-removed mode to active mode (the on latency).
+
+ 
+
+The same two power management modes, active and power-removed, must be supported by the on-SoC image processing units. The SoC vendor defines the individual components that comprise the image processing units and their power management states. We recommend that a single driver control the on-SoC image processing units, and that all the image processing units for camera capture be presented to the power engine plug-in (PEP) as a single power-managed component.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_WEG_Hardware\p_weg_hardware%5D:%20Camera%20power%20management%20modes%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
