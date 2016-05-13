@@ -51,7 +51,7 @@ WPT Getting Started is designed for developers who want to learn how to use perf
 ## Related topics
 
 
-[WPR Quick Start](wpr-quick-start.md)
+[WPR Quick Start](wpr_quick_start.md)
 
  
 
