@@ -58,7 +58,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
     Update the value of Reference to point to your .SYS file.
 	
-	Update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)
+	Update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
     
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -74,8 +74,8 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 		    InfSource="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf">
 			<Reference Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
 			<Files>
-			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
-			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\ACPITABL.dat" />
+			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" DestinationDir="$(runtime.drivers)" />
+			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\ACPITABL.dat" DestinationDir="$(runtime.drivers)" />
             </Files>
           </Driver>
         </Components>
