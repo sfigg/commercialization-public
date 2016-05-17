@@ -145,7 +145,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 
-[Lab 1e: Build a retail image](build-retail-image.md)
+[Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md) 
 
  
 
