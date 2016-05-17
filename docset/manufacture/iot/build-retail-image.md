@@ -3,10 +3,10 @@ author: kpacquer
 Description: 'We''ll take our test image and convert it to a retail build.'
 MS-HAID: 'p\_iot\_core.build\_retail\_image'
 MSHAttr: 'PreferredLib:/library'
-title: 'Lab 1e: Build a retail image'
+title: 'Lab 1f: Build a retail image'
 ---
 
-# Lab 1e: Build a retail image
+# Lab 1f: Build a retail image
 
 
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
@@ -16,7 +16,8 @@ We''ll take our test image and convert it to a retail build.
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
-We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md), [Lab 1c:  Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md), and [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
+We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
+You can include any of the updates from [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md), [Lab 1c:  Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md), [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md), and [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
 
 ## <span id="Add_your_app_to_the_retail_configuration_file"></span><span id="add_your_app_to_the_retail_configuration_file"></span><span id="ADD_YOUR_APP_TO_THE_RETAIL_CONFIGURATION_FILE"></span>Add your app to the retail configuration file
 
@@ -34,7 +35,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
       </AdditionalFMs>
     ```
 
-3.  Add the FeatureIDs for your app package and the OEM\_CustomCmd package.
+3.  Add the FeatureIDs for the your app package, the  and the OEM\_CustomCmd package.
 
     ``` syntax
     <OEM> 
@@ -44,6 +45,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     <Feature>OEM_FileAndRegKey</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_ProvAuto</Feature>
+	<Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
     ```
     
@@ -51,7 +53,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     
     OEM_ProvAuto is required to pull in the provisioning package.
 	
-	OEM_FileAndRegKey and OEM_AppxHelloWorld were added in previous labs.
+	OEM_FileAndRegKey, OEM_AppxHelloWorld, and OEM_DriverHelloBlinky were sample packages added in previous labs.
 
 4.  To support your apps, add the FeatureIDs for IOT_UAP_OOBE and IOT_APP_TOOLKIT from the main list of Microsoft features:
 
@@ -95,7 +97,7 @@ With retail builds, you won't be able to log into the device using the SSH clien
 That's it for the first lab. 
 
 From here, you can continue on to:
--  [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md) 
+-  [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
 
 
 

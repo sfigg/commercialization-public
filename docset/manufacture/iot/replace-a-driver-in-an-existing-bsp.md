@@ -1,9 +1,9 @@
 ---
 Description: 'Replacing a driver in an existing BSP in a Windows 10 IOT Core image.'
-title: 'Lab 2b: Replace a driver in an existing board support package (BSP)'
+title: 'Lab 2a: Replace a driver in an existing board support package (BSP)'
 ---
 
-# Lab 2b: Replace a driver in an existing board support package (BSP)
+# Lab 2a: Replace a driver in an existing board support package (BSP)
 
 
 
@@ -16,7 +16,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--  Complete [Lab 2a: Add a driver to an image](add-a-driver-to-an-image.md).
+-  Complete [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
 
 ## <span id="Create_a_new_product_and_BSP_file"></span><span id="create_a_new_product_and_bsp_file"></span><span id="CREATE_A_NEW_PRODUCT_AND_BSP_FILE"></span>Create a new product and BSP file
 
