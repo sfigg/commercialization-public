@@ -8,6 +8,7 @@ title: 'Push-button reset'
 
 # Push-button reset
 
+This topic is intended for original equipment manufacturers (OEMs) who are planning to add push button reset features to their Windows 10 desktop computer manufacturing processes. If you are a user who wants to reset a computer that runs Windows 10, see [Recovery options in Windows 10](http://windows.microsoft.com/en-us/windows-10/windows-10-recovery-options).
 
 Push-button reset is a recovery tool that repairs the OS while preserving data and important customizations. It reduces the need for custom recovery applications by providing users with more recovery options and the ability to fix their own PCs with confidence.
 
