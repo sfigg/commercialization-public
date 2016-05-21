@@ -280,8 +280,9 @@ The following table describes the Microsoft-defined test features that can be us
 <p>Not supported for RPi2.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>IOT_POWER_SETTINGS</strong></td>
-<td align="left">Prevents the device from going to sleep due to inactivity.</td>
+<td align="left"><strong>IOT_POWER_SETTINGS (Windows 10 Anniversary SDK Preview Build 14295) or IOT_POWER_SETIINGS (Windows 10 IoT Core Build 10586).</strong></td>
+<td align="left">Prevents the device from going to sleep due to inactivity.
+<p>Note, the name of this package changed in Windows 10 Anniversary SDK Preview Build 14295.</p></td>
 <td align="left">Required for MBM and other x86/amd64 platforms.</td>
 </tr>
 </tbody>
