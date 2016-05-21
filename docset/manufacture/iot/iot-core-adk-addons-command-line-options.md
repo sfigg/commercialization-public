@@ -70,14 +70,53 @@ Example:
 setversion 10.0.0.1
 ```
 
+## <span id="BUILDPKG.CMD"></span>buildpkg.cmd
+
+Usage: `buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]`
+
+Parameters:
+
+-   `<CompName.SubCompName>`: Use this to refer to the package by its ComponentName.SubComponent Name.
+
+-   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
+
+-   `<All>`: Use this to build all packages in the \Sources-&lt;arch&gt;\Packages folder. This is the same as the buildallpackages command.
+
+-   `<Clean>`: Use this to erase everything in the \Build\&lt;arch&gt;\pkgs folder. Recommended before building all packages.
+
+-   `<version>`: Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. 
+
+
+Description: Builds a package from \Sources-&lt;arch&gt;\Packages.
+
+Buildpkg saves the package in the \Build\&lt;arch&gt;\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
+
+For troubleshooting, Buildpkg saves logs at \Build\&lt;arch&gt;\pkgs\logs. 
+
+Example:
+
+``` syntax
+buildpkg Appx.Main
+buildpkg Appx.Main 10.0.1.0
+buildpkg sample.pkg.xml
+buildpkg sample.pkg.xml 10.0.1.0
+buildpkg All
+buildpkg All 10.0.2.0
+buildpkg Clean
+```
+
 ## <span id="CREATEPKG.CMD"></span>createpkg.cmd
 
-
 Usage: `createpkg <packagefile.pkg.xml> [version]`
+Parameters:
 
-Description: Creates a packaging definition file (.pkg.xml) using the pkggen tool and parameters set in the environment defined by **IoTCoreShell.lnk** and **setversion.cmd**. The output files are available in the folder defined by **%PKG\_OUTPUT%**.
+-   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
 
-You can optionally add a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. The output files are available in the folder defined by %PKG\_OUTPUT%
+-   `<version>`: Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. 
+
+Description: Creates a packaging definition file (.pkg.xml) using the pkggen tool and parameters set in the environment defined by **IoTCoreShell.lnk** and **setversion.cmd**. 
+
+Createpkg saves the package in the \Build\&lt;arch&gt;\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
 
 Examples:
 
@@ -143,7 +182,7 @@ Example:
 createimage.cmd ProductA Retail
 ```
 
-Output is available at %BLD\_DIR%\\ProductA\\Retail
+createupdatepkgs saves the FFU at %BLD\_DIR%\\<productname>\\(Test or Retail)\\
 
 <!--- ## <span id="_UPDATEIMAGE.CMD"></span> updateimage.cmd
 
@@ -168,30 +207,92 @@ Output is available at %BLD\_DIR%\\ProductA\\Update1\\Retail
 
 --->
 
+## <span id="INF2CAB.CMD"></span>inf2cab.cmd
 
-## <span id="_NEWPKG.CMD"></span> newpkg.cmd
-
-
-Usage: `newpkg <package type> <component name> <sub-component name>`
+Usage: `inf2cab filename.inf [CompName.SubCompName]`
 
 Parameters:
 
--   `<package type>`:       The type of package created. Must be: **pkgAppx**, **pkgDrv**, or **pkgFile**. 
--   `<component name>`:     Component name for the package. Examples include "App", "Driver", "File", "Registry", though you can use any naming scheme you like.
--   `<sub-component name>`: Sub-component name for the package. Examples include "Blinky"
+-   `filename.inf`: Required, input file for the driver.
 
+-   `<CompName.SubCompName>`: Optional, refers to the driver package by its ComponentName.SubComponent Name.
 
-Description: Creates a new working package directory under Packages, and creates a package definition file using a template file. Some of these package definition files include sample entries to help you add more items. For example, the pkgFile type includes a sample entry for a Registry Key.
+Description: Converts a .inf driver package to a .cab file.
+
+Inf2cab saves the package in the \Build\&lt;arch&gt;\pkgs folder  (example: Drivers.GPIO.cab).
 
 Example:
 
 ``` syntax
-newpkg pkgAppx Appx HelloWorld
-newpkg pkgDrv Driver Blinky
-newpkg pkgFile File MyFile
-newpkg pkgFile Registry MyRegKey
+inf2cab C:\test\gpiodriver.inf
+inf2cab C:\test\gpiodriver.inf Drivers.GPIO
 ```
 
+## <span id="NEWAPPXPKG.CMD"></span>newappxpkg.cmd
+
+Usage: `newappxpkg filename.appx [CompName.SubCompName]`
+
+Parameters:
+
+-   `filename.appx`: Required, input file for the Appx package.
+
+-   `<CompName.SubCompName>`: Optional, creates the working folder using the name: ComponentName.SubComponent.
+
+Description: Creates a new working folder to help you convert Appx packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
+
+Note: This tool expects a subfolder named "dependencies" with any of the .appx dependency packages.
+
+This command creates the working folder in the \Source-&lt;arch&gt;\Packages\ folder.
+
+If you run this command without any variables, you'll also see the other working folders in the \Source-&lt;arch&gt;\Packages\ folder.
+
+Example:
+
+``` syntax
+newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx AppX.Main
+```
+
+## <span id="NEWDRVPKG.CMD"></span>newdrvpkg.cmd
+
+Usage: `newdrvpkg filename.inf [CompName.SubCompName]`
+
+Parameters:
+
+-   `filename.inf`: Required, input .inf file for the driver package.
+
+-   `<CompName.SubCompName>`: Optional, creates the working folder using the name: ComponentName.SubComponent. The default is Drivers.&lt;filename&gt;.
+
+Description: Creates a new working folder to help you convert driver packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
+
+This command creates the working folder in the \Source-&lt;arch&gt;\Packages\ folder.
+
+If you run this command without any variables, you'll also see the other working folders in the \Source-&lt;arch&gt;\Packages\ folder.
+
+Example:
+
+``` syntax
+newdrvpkg C:\test\GPIO.inf Drivers.GPIO
+```
+
+## <span id="NEWCOMMONPKG.CMD"></span>newcommonpkg.cmd
+
+Usage: `newcommonpkg CompName.SubCompName`
+
+Parameters:
+
+-   `<CompName.SubCompName>`: Required, creates the working folder using the name ComponentName.SubComponent.
+
+Description: Creates a new working folder to help you save files, folders, registry keys, and provisioning packages as .cab files. After using this command, use the buildpkg command to create your final .cab file.
+
+This command creates the working folder in the \Common\Packages\ folder.
+
+If you run this command without any variables, you'll also see the other working folders in the \Common\Packages\ folder.
+
+Example:
+
+``` syntax
+newcommonpkg Registry.ConfigSettings
+```
 
 ## <span id="_NEWPRODUCT.CMD"></span> newproduct.cmd
 
@@ -227,6 +328,52 @@ Example:
 ``` syntax
 newupdate Update2 10.0.2.0
 ```
+
+
+## <span id="older_tools"></span>Older tools
+
+### <span id="BUILDALLPACKAGES.CMD"></span>buildallpackages.cmd
+
+This tool has been replaced with the tool: buildpkg All.
+
+Usage: `buildallpackages`
+
+Description: Builds all of the packages in \Sources-&lt;arch&gt;\Packages, including a few sample packages that help do things like install apps.
+
+Buildallpackages saves the packages in the \Build\&lt;arch&gt;\pkgs folder as .cab files (example: Contoso.Provisioning.Auto.cab).
+
+For troubleshooting, BuildAllPackages saves logs at \Build\&lt;arch&gt;\pkgs\logs. 
+
+Example:
+
+``` syntax
+buildallpackages
+```
+  
+### <span id="_NEWPKG.CMD"></span> newpkg.cmd
+
+Usage: `newpkg <package type> <component name> <sub-component name>`
+
+This tool has been replaced with the tools: newappxpkg, newdrvpkg, and newcommonpkg.
+
+Parameters:
+
+-   `<package type>`:       The type of package created. Must be: **pkgAppx**, **pkgDrv**, or **pkgFile**. 
+-   `<component name>`:     Component name for the package. Examples include "App", "Driver", "File", "Registry", though you can use any naming scheme you like.
+-   `<sub-component name>`: Sub-component name for the package. Examples include "Blinky"
+
+
+Description: Creates a new working package directory under Packages, and creates a package definition file using a template file. Some of these package definition files include sample entries to help you add more items. For example, the pkgFile type includes a sample entry for a Registry Key.
+
+Example:
+
+``` syntax
+newpkg pkgAppx Appx HelloWorld
+newpkg pkgDrv Driver Blinky
+newpkg pkgFile File MyFile
+newpkg pkgFile Registry MyRegKey
+```
+
 
 ## <span id="related_topics"></span>Related topics
 
