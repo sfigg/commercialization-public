@@ -278,7 +278,7 @@ Enter into notepad:
 
 Close and save notepad.
 
-![Startnet](images/startnet.png)
+![Startnet](manufacture/desktop/images/startnet.png)
 
 #### Commit changes to WinPE 
 
@@ -330,17 +330,17 @@ Answer files created in Windows System Image Manager (Windows SIM) are associat
 
 This guide uses three different answer files:
 
-![Three answer files](images\three-answer-files.png)
+![Three answer files](manufacture/desktop/images/three-answer-files.png)
 
 Note: You need to point Windows System Image Manager (SIM) to an install.wim before you can create and customize the answer file.
 
 1.  On the Technician Computer, mount the ISO image of Windows (see below) by double clicking it. Highlight all files on the mounted ISO to E:\MyWindows as shown in the following diagram.
 
-    ![Mounted files](images\mounted-files.png)
+    ![Mounted files](manufacture/desktop/images/mounted-files.png)
 
 1.  Run **Windows System Image Manager** to start creating an answer file from scratch. This tool allows the creation or management of the answer files in an easy and organized manner.
     
-    ![Create an answer file](images\create-answer-file.png)  
+    ![Create an answer file](manufacture/desktop/images/create-answer-file.png)  
     
     Reference: Please refer to the [WSIM overview](https://technet.microsoft.com/library/hh825214.aspx) for more information on Windows System Image Manager (SIM) user interface.
 
@@ -348,13 +348,13 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
 
     Troubleshoot: Catalog creation may fail due to several reasons. You may receive the following:
 
-    ![Catalog creation error](images\catalog-creation-fail.png)
+    ![Catalog creation error](manufacture/desktop/images/catalog-creation-fail.png)
 
 1.  Click **Yes**.
 
     Note: Please make sure install.wim has read/write permissions and the individual who is creating this is the administrator of the local machine. Install.wim image and Windows 10 ADK versions must be the same. If the below error is displayed, make sure the correct architecture (x86 or x64) of Windows 10 is installed on the Technician computer. 
     
-    ![Architecture mismatch](images\catalog-fail-arch-mismatch.png)
+    ![Architecture mismatch](manufacture/desktop/images/catalog-fail-arch-mismatch.png)
 
 1.  Open a sample answer file or create a new one. We recommend using the sample answer files provided in **USB-B**.
     
@@ -424,7 +424,7 @@ Example: Navigate to OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Cont
 
 1.  Type ***exit*** to quit Diskpart.
 
-    ![Diskpart](images\diskpart.png)
+    ![Diskpart](manufacture/desktop/images/diskpart.png)
     
 1.  Execute ***setup.exe*** with an answer file and install Windows 10 Update with additional OEM customizations. Copy the commands in the following table.
 
@@ -512,7 +512,7 @@ Connecting the computer to the internet is not recommended during manufacturing 
 
 5.  In the shutdown options box select **Shutdown**.
 
-    ![Sysprep generalize](images\Sysprep.png)
+    ![Sysprep generalize](manufacture/desktop/images/sysprep.png)
 
 Important: The system must be set to generalize and OOBE in order to further service the image. In the following sections, an unattend file will be used to return to Audit mode on the OOBE-sealed system. There are known issues when resealing to Audit mode in this phase and it is not recommended.
 
@@ -538,7 +538,7 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
     -   Type ***exit*** to quit Diskpart.
 
-    ![Diskpart](images\diskpart-v10.png)
+    ![Diskpart](manufacture/desktop/images/diskpart-v10.png)
 
 1.  Capture the image of the windows partition to **USB-B**. This process takes several minutes.
 
@@ -552,7 +552,7 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
 Modify your images by adding and removing languages, drivers, and packages.
 
-![Create a model specific image](images\create-model-specific-image.png)
+![Create a model specific image](manufacture/desktop/images/create-model-specific-image.png)
 
 #### Mount image
 
@@ -650,7 +650,7 @@ However, when both **PersistAllDeviceInstalls** and **DoNotCleanUpNonPresentDevi
 
 The following diagram describes the process Windows Setup uses to determine whether plug-and-play information remains on the computer, or is removed, or is removed and then re-initialized.
 
-![DoNotCleanupNonPresentDevices](images\do-not-cleanup-nonpresent-devices.png)
+![DoNotCleanupNonPresentDevices](manufacture/desktop/images/do-not-cleanup-nonpresent-devices.png)
 
 The following XML output specifies that device drivers will not be uninstalled during the generalize pass.
 
@@ -909,7 +909,7 @@ Note: you must use the Microsoft Media Tool from [SOC Resources](https://moo.mic
 
 1.  copy LP.cab to E:\Languagepacks\x86\de-de.
 
-    ![Copy LP.cab](images\copy-lp-cab.png)
+    ![Copy LP.cab](manufacture/desktop/images/copy-lp-cab.png)
 
 1.  Repeat x64 de-de language pack copying to E:\Languagepacks\x64\de-de for x64-bit devices.
 
@@ -917,7 +917,7 @@ Note: you must use the Microsoft Media Tool from [SOC Resources](https://moo.mic
 
 3.  Highlight all de-de language packs and copy to E:\LanguageFeaturePacks\x86.
 
-    ![Highlight Language Packs](images\highlight-language-packs.png)
+    ![Highlight Language Packs](manufacture/desktop/images/highlight-language-packs.png)
 
     Where E: is drive letter of **USB-B**
 
@@ -1092,13 +1092,13 @@ The following example shows how to extract KBs from the OPK download from SOC.
 
     Navigate to X20-53652 Windows Desktop OPK Supp Updates Sep15\Software - DVD\X20-53672 SW DVD5 Windows Supp Sep15 Disk 1 OEM\x20-53672.img and double-click. Find the 3081452 folder, as shown in following image.
     
-    ![Update 3081452](images\update-3081452.png)
+    ![Update 3081452](manufacture/desktop/images/update-3081452.png)
     
 1.  Copy both architecture folders for KB3097617 to **USB-B**\Updates.
 
     Navigate to X20-86795 Windows Desktop OPK Supp Updates Oct15\Software - DVD\X20-86816 SW DVD5 Windows Supp Oct15 OEM\x20-86816.img and double-click. Find the 3097617 folder, as shown in following image.
 
-    ![Update 3097617](images\update-3097617.png)
+    ![Update 3097617](manufacture/desktop/images/update-3097617.png)
 
 ##### Apply GDR 2015.11 D. KB3118754
 
@@ -1136,7 +1136,7 @@ Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) t
 
 1.  Right-click each folder and extract all to e:\apps.
 
-    ![Extract application files](images\extract-app-files.png)
+    ![Extract application files](manufacture/desktop/images/extract-app-files.png)
 
 Remove the Get Started inbox app (Example)
 
@@ -1216,7 +1216,7 @@ Pre-install Office single image (either with or with out perpetual or subscripti
 
 1.  Extract all folders to E:\Universal_Office
 
-    ![Extract Office](images\extract-office.png)
+    ![Extract Office](manufacture/desktop/images/extract-office.png)
 
         dism /image:"c:\mount\windows" /add-provisionedappxpackage /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c_License1.xml"
 
@@ -1306,7 +1306,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 1.  Create an **oobe.xml** file to specify the agreement.rtf file path. In the following image, you can see a sample oobe.xml which is located in **USB-B**\ConfigSet\oobe.xml destination.
 
-    ![Sample OOBE](images\sample-oobe.png)
+    ![Sample OOBE](manufacture/desktop/images/sample-oobe.png)
 
 2.  Copy **oobe.xml file** to each language folder.
 
@@ -1316,7 +1316,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 1.  Finally, each language folder must contain an **oobe.xml** file and an agreement.rtf file in that corresponding language.
 
-    ![Agreement and OOBE files](images\agreement-and-oobe-files.png)
+    ![Agreement and OOBE files](manufacture/desktop/images/agreement-and-oobe-files.png)
     
     
 #### Modify the answer file
@@ -1460,13 +1460,13 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
     Setup.exe and configuration.xml are extracted to E:\Officev16.
 
-    ![Setup and configuration.xml](images\setup-and-configuation.png)
+    ![Setup and configuration.xml](manufacture/desktop/images/setup-and-configuation.png)
     
     Obtain Office v16 in the desired language; this sample uses Engish X20-39283 Office 2016 v16 32-BIT X64 English OPK.
     
 5. Copy the folder Office from mounted drive X20-39283 Office 2016 v16 32-BIT X64 English OPK\Software - DVD\X20-37728 SW DVD5 Office Pro 2016 32 64 English C2ROPK Pro HS HB OEM\X20-37728.img to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.
 
-    ![Office folder](images\office-folder.png)
+    ![Office folder](manufacture/desktop/images/office-folder.png)
     
     [Optional] If you applied a language interface pack, you may want to add the language interface pack for Office 2016 as well. The below samples will show with the Language interface pack applied.    
 
@@ -1474,7 +1474,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
 7. Add language ID and verify SourcePath as in the following screenshot.
 
-    ![Language ID](images\language-id.png)
+    ![Language ID](manufacture/desktop/images/language-id.png)
     
 8. Close and save ConfigureO365Home.xml.
 
@@ -1498,7 +1498,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 3.	Notepad ConfigureO365Home.xml.
 4.	Configure the SourcePath to point to USB-B E:\Officev16.
 
-    ![Configure the source path](images\configure-source-path.png)
+    ![Configure the source path](manufacture/desktop/images/configure-source-path.png)
     
     Note: the only Product ID that needs to be specified in the configuration.xml file is O365HomePremRetail. If the user enters a key for another product, such as for Office Home & Student 2016, then Office will automatically be configured as the product associated with that key.
     
@@ -1520,7 +1520,7 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
         
 2. Add &lt;AppendOfficeSuiteChoice Choice="Desktop2016" /&gt; to layoutmodification as you see highlighted in the following example:
 
-    ![Layout Modification](images\layoutmodification.png)
+    ![Layout Modification](manufacture/desktop/images/layoutmodification.png)
 
     Note: The Choice attribute is new. This allows different versions of Office to be pinned to the Start screen at the same time. For now, Desktop2016 is the only valid value. Other values will be available in the future.
 
@@ -1534,7 +1534,7 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
 
     Once the machine is booted to desktop after going through OOBE, the Start menu will have these three tiles appended as shown in the following diagram: 
     
-    ![Office tiles pinned to the Start menu](images\office-tiles-pinned-to-start-menu.png)
+    ![Office tiles pinned to the Start menu](manufacture/desktop/images/office-tiles-pinned-to-start-menu.png)
     
 #####  Configure the Setup experience for the user   
 
@@ -1635,11 +1635,11 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
 3 tiles pinning examples                   
 
-![4 tiles](images\four-tiles-pinning.png) ![3 tiles](images\three-tiles-pinning.png) 
+![4 tiles](manufacture/desktop/images/four-tiles-pinning.png) ![3 tiles](manufacture/desktop/images/three-tiles-pinning.png) 
 
 1 tile pinning example
 
-![1 tile](images\one-tile-pinning.png)
+![1 tile](manufacture/desktop/images/one-tile-pinning.png)
 
 1.  Multiple language versions of Office Single Image v15.4 OPK may be preloaded. Download all the Microsoft Office Single Image v15.4 OPK languages which are relevant to the languages added to Windows image. For example, if English and French language packs are added to Windows image please download:
 
@@ -1655,7 +1655,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
 3.  Navigate to the installation directory. The installation directory is the folder that contains the files shown in the following figure:
 
-    ![](images\installation-directory.png)
+    ![](manufacture/desktop/images/installation-directory.png)
     
     For example: Cd C:\&lt;OfficeSingleImagev15.4 InstallationDirectory&gt;
 
@@ -1904,7 +1904,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
     -   Type ***exit*** to quit Diskpart.
 
-        ![Diskpart](images\diskpart-v10.png)
+        ![Diskpart](manufacture/desktop/images/diskpart-v10.png)
         
 #### [Compact OS limited storage devices only] Convert installed customizations
 
@@ -1974,7 +1974,7 @@ Note: First boot to desktop may show duplicate tiles with no title. This is rela
 
 Promoted Apps are installed right after OOBE on Windows 10 PCs. Two tiles will be downloaded apps and three tiles will be deep links to the Store. This mix can change over time. If the PC is not connected to the internet during OOBE, placeholder tiles will be used until the PC is connected.
 
-![App promotions](images\app-promotions.png)
+![App promotions](manufacture/desktop/images/app-promotions.png)
 
 #### Verify recovery
 
@@ -2060,7 +2060,7 @@ Choose **Option 1** to create the recovery media the same as the manufacturing i
 
 2.  This recovery media will boot to Windows 10 Recovery Screen:
 
-    ![Recovery screen](images\recovery-screen.png)
+    ![Recovery screen](manufacture/desktop/images/recovery-screen.png)
 
 For more information about creating a recovery image, see [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md).
 
@@ -2138,7 +2138,7 @@ Choose **Option 2** to create the recovery media from scratch by using the base 
 
         oscdimg -m -o -u2 -udfver102 -bootdata:2#p0,e,bc:\my_distribution\boot\etfsboot.com#pEF,e,bc:\my_distribution\efi\microsoft\boot\efisys.bin c:\my_distribution c:\myISOname.iso
 
-       ![Oscdimg.exe](images\oscdimg.png)
+       ![Oscdimg.exe](manufacture/desktop/images/oscdimg.png)
 
 1.  Burn the .iso file to a new DVD. This DVD will be your recovery media.
 
