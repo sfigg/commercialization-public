@@ -86,13 +86,13 @@ Note: This guide provides sample Windows PowerShell script to automate offline s
     
     For this PC, choose from something that resembles the Hardware Configuration Table.
 
-    ![What is the ADK?](images\what-is-adk.png)
+    ![What is the ADK?](manufacture/desktop/images/what-is-adk.png)
 
     Note: We recommend using the 32-bit version of Windows on the technician computer because the 32-bit version supports both 32-bit and 64-bit deployments.
 
     Follow the on-screen instructions to install **Windows 10 ADK**, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-    ![Select ADK Features](images/ADK_SelectFeatures.png)
+    ![Select ADK Features](manufacture/desktop/images/adk-select-features.png)
 
     If the installation will be successful, click **Install**.
 
@@ -104,7 +104,7 @@ Note: This guide provides sample Windows PowerShell script to automate offline s
 
 Format your desired USB Drive and name it as follows:
 
-![Extract USB](images\extractusb.png) 
+![Extract USB](manufacture/desktop/images/extractusb.png) 
 
 ### Software downloads
 
@@ -162,7 +162,7 @@ This guide uses samples of configuration files and scripts, as well as storing a
 
 This flowchart shows the deployment steps:
 
-![Deployment process](images/deployment-process.png)
+![Deployment process](manufacture/desktop/images/deployment-process.png)
 
 ### Create a WinPE bootable USB
 
