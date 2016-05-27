@@ -232,7 +232,8 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 <tr class="odd">
 <td align="left"><p>Windows PowerShell/WinPE-PlatformID</p></td>
 <td align="left"><p>WinPE-PlatformID contains the Windows PowerShell cmdlets to retrieve the Platform Identifier of the physical machine. </p>
-<p><strong>Dependencies</strong>: Install <strong>WinPE-WMI</strong> and <strong>WinPE-SecureStartup</strong> before you install <strong>WinPE-PlatformID</strong>.</p></td>
+<p><strong>Dependencies</strong>: Install <strong>WinPE-WMI</strong> and <strong>WinPE-SecureStartup</strong> before you install <strong>WinPE-PlatformID</strong>.</p>
+<p>To use the PowerShell Cmdlet to retrieve the Platform Identifier, you will need install <strong>WinPE-PowerShell</strong> package.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows PowerShell/WinPE-PowerShell</p></td>
