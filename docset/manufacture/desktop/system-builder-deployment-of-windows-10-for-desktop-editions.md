@@ -40,7 +40,7 @@ You will need two USB drives. USB-A will be used to boot the system in Windows P
 
 -   Format your USB drive and name it as follows:
 
-    ![Extract USB](manufacture\desktop\images\extractusb.png) 
+    ![Extract USB](images/extract-usb.png) 
 
 -   Then download [USB-B.zip](http://download.microsoft.com/download/5/8/4/5844EE21-4EF5-45B7-8D36-31619017B76A/USB-B.zip) from the Microsoft Download Center. Save the .zip file to USB-B and extract the contents there. 
 
@@ -94,7 +94,7 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
 1.  Follow the on-screen instructions to install the Windows ADK, including the **Deployment Tools**, **Windows Preinstallation Environment**, and **Windows Assessment Toolkit** features.
 
-    ![Select ADK Features](manufacture\desktop\images\adk-select-features.png)
+    ![Select ADK Features](Images/adk-select-features.png)
 
 1.  Press the Windows key to display the **Start** menu. Type:
     
@@ -116,7 +116,7 @@ For more details about the Windows ADK, see the [Windows 10 ADK Documentation Ho
 
 2.  Connect a USB drive that is at least 4 GB. Format it as shown in this diagram:
 
-    ![Connect USB](manufacture\desktop\images\connect-usb.png)
+    ![Connect USB](Images/connect-usb.png)
 
 3.  Make the inserted USB a new WinPE bootable USB.
 
@@ -138,11 +138,11 @@ For a document to help you tailor the customizations defined in your unattend.xm
 
 1.  Copy the sources\\Install.wim file from the directory in the Windows 10 media that you will be deploying to your local Desktop (~3gb).
 
-    ![Copy WIM](manufacture\desktop\images\copy-wim.png)
+    ![Copy WIM](Images/copy-wim.png)
 
 1.  Run **Windows System Image Manager** to start creating an answer file from scratch. This tool allows you to create or manage your answer files in an easy and organized manner.
 
-    ![Run SIM](manufacture\desktop\images\run-sim.png)
+    ![Run SIM](Images/run-sim.png)
 
 1.  Navigate to **File** &gt; **Select Windows Image**. Browse to your local desktop and select **Install.wim**. Catalog file will be created (.clg file) for that specified wim.
 
@@ -216,7 +216,7 @@ Troubleshoot: A blank character in **specialize | Microsoft-Windows-Shell-Setup 
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of USB-B (For example: E:\). Finally type *exit* to quit Diskpart.
 
-    ![Diskpart](manufacture\desktop\images\diskpart.png)
+    ![Diskpart](Images/diskpart.png)
 
 1.  Use the following command to start installation. This command triggers *setup.exe* with an answer file to install Windows 10 with additional customizations.
 
@@ -238,7 +238,7 @@ Important: Connecting the computer to internet is not recommended during manufac
 
 3.  Verify your changes which you’ve stated in the answer file (see manufacturer name, support phone number and other customizations).
 
-    ![Sysprep](manufacture\desktop\images\sysprep.png)
+    ![Sysprep](Images/sysprep.png)
 
 1.  The image must be generalized before being used as a manufacturing image; Select **Generalize** checkbox.
 
@@ -288,9 +288,9 @@ Important: Connecting the computer to internet is not recommended during manufac
 
     Troubleshoot: If mounting operation fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK and not an older version from your technician computer. Don’t mount images to protected folders, such as your User\Documents folder. If DISM processes are interrupted, consider temporarily disconnecting from the network and disabling virus protection.
 
-    ![Mount](manufacture\desktop\images\mount.png)
+    ![Mount](Images/mount.png)
 
-    ![Windows folder](manufacture\desktop\images\windowsfolder.png)
+    ![Windows folder](Images/windows-folder.png)
 
 ### Modify images
 
@@ -336,7 +336,7 @@ If you use an x64 Windows 10 image, install x64 LIPs; if you use an x86 Windows 
 
 1.  Copy the LIP folder to the USB-B\LanguagePack\x64 or USB-B\LanguagePack\x86 folder:
 
-    ![Copy LIP](manufacture\desktop\images\copylip.png)
+    ![Copy LIP](Images/copy-lip.png)
 
 1.  Apply the LIP to mounted image.
 
@@ -360,21 +360,21 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
 2.  Type every single update package one by one into the search box and click **Search**.
 
-    ![Update catalog](manufacture\desktop\images\updatecatalog.png)
+    ![Update catalog](Images/update-catalog.png)
 
 1.  After search completes, click **Add** next to the version and architecture of the package you wish to download.
 
-    ![Add Update Catalog](manufacture\desktop\images\addupdatecatalog.png)
+    ![Add Update Catalog](Images/add-update-catalog.png)
 
 1.  After you add all of the following updates, click **view basket** and then **Download**.
 
-    ![Download Update Catalog](manufacture\desktop\images\downloadupdatecatalog.png)
+    ![Download Update Catalog](Images/download-update-catalog.png)
     
-    ![Download complete](manufacture\desktop\images\downloadupdatecatalogcomplete.png)
+    ![Download complete](Images/download-update-catalog-complete.png)
 
     **Troubleshoot:** IF you encounter an error as “The website has encountered a problem” after clicking “Download”, try turning off the pop-up blocker in IE or disabling Protected Mode in IE temporarily
 
-    ![Enable Protected Mode](manufacture\desktop\images\enableprotectedmode.png)
+    ![Enable Protected Mode](Images/enable-protected-mode.png)
 
 1.  After downloading all the listed essential updates, add **update packages** (KB packages) to the image one by one by using the following command:
 
@@ -408,11 +408,11 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
 
-    ![OEM Logo details](manufacture\desktop\images\oemlogodetails.png)
+    ![OEM Logo details](Images/oemlogodetails.png)
 
 1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\system32\OEM\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 
-    ![Add desktop background](manufacture\desktop\images\adddesktopbackground.png)
+    ![Add desktop background](Images/add-desktop-background.png)
 
 #### Modify Start layout
 
@@ -535,7 +535,7 @@ Where E:\ is USB-B.
 
 1.  On the technician computer, locate the following files in USB-B/Deployment. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in correct paths. 
 
-    ![Locate USB files](manufacture\desktop\images\locateusbfiles.png)
+    ![Locate USB files](Images/locate-usb-files.png)
 
 2.  Boot the reference computer and connect USB-A.
 
@@ -578,13 +578,13 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
     Setup.exe and configuration.xml are extracted to E:\Officev16.
 
-    ![Setup and configuration.xml](images\setup-and-configuation.png)
+    ![Setup and configuration.xml](Images/setup-and-configuation.png)
     
     Obtain Office v16 in the desired language; this sample uses Engish X20-39283 Office 2016 v16 32-BIT X64 English OPK.
     
 5. Copy the folder Office from mounted drive X20-39283 Office 2016 v16 32-BIT X64 English OPK\Software - DVD\X20-37728 SW DVD5 Office Pro 2016 32 64 English C2ROPK Pro HS HB OEM\X20-37728.img to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.
 
-    ![Office folder](images\office-folder.png)
+    ![Office folder](Images/office-folder.png)
     
     [Optional] If you applied a language interface pack, you may want to add the language interface pack for Office 2016 as well. The below samples will show with the Language interface pack applied.    
 
@@ -592,7 +592,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
 7. Add language ID and verify SourcePath as in the following screenshot.
 
-    ![Language ID](images\language-id.png)
+    ![Language ID](Images/language-id.png)
     
 8. Close and save ConfigureO365Home.xml.
 
@@ -616,7 +616,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 3.	Notepad ConfigureO365Home.xml.
 4.	Configure the SourcePath to point to USB-B E:\Officev16.
 
-    ![Configure the source path](images\configure-source-path.png)
+    ![Configure the source path](Images/configure-source-path.png)
     
     Note: the only Product ID that needs to be specified in the configuration.xml file is O365HomePremRetail. If the user enters a key for another product, such as for Office Home & Student 2016, then Office will automatically be configured as the product associated with that key.
     
@@ -638,7 +638,7 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
         
 2. Add &lt;AppendOfficeSuiteChoice Choice="Desktop2016" /&gt; to layoutmodification as you see highlighted in the following example:
 
-    ![Layout Modification](images\layoutmodification.png)
+    ![Layout Modification](Images/layoutmodification.png)
 
     Note: The Choice attribute is new. This allows different versions of Office to be pinned to the Start screen at the same time. For now, Desktop2016 is the only valid value. Other values will be available in the future.
 
@@ -652,7 +652,7 @@ Note: You must be using at least version 10.0.10586.0 of Windows 10. The followi
 
     Once the machine is booted to desktop after going through OOBE, the Start menu will have these three tiles appended as shown in the following diagram: 
     
-    ![Office tiles pinned to the Start menu](images\office-tiles-pinned-to-start-menu.png)
+    ![Office tiles pinned to the Start menu](Images/office-tiles-pinned-to-start-menu.png)
     
 ####  Configure the Setup experience for the user   
 
@@ -688,7 +688,7 @@ Download Microsoft Office Single Image v15.4 from the [OEM Partner Center](http:
 
         Cd C:\<OfficeSingleImagev15.4InstallationDirectory>
 
-    ![Installation directory](manufacture\desktop\images\installationdirectory.png)
+    ![Installation directory](Images/installation-directory.png)
 
     Important: The installation process for the OPK is the same for computers that run 32-bit operating systems or 64-bit operating systems. You can preload the 32-bit version of Office 2013 on computers that run either 32-bit or 64-bit operating systems. You can preload the 64-bit version of Office 2013 only on computers that run 64-bit operating systems. To prevent possible compatibility issues with add-ins or third-party applications, preload *only the 32-bit version* of the OPK on both 32-bit and 64-bit computers.
 
