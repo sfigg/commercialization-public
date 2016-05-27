@@ -5,21 +5,17 @@ title: 'Lab 2a: Replace a driver in an existing board support package (BSP)'
 
 # Lab 2a: Replace a driver in an existing board support package (BSP)
 
-
-
 If the driver in your pre-built Board Support Package (BSP) doesn't support what you need it to do, you can replace it.
 
 Note, when you modify the BSP, you become the owner for this new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
 
 In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm). We'll also remove the existing GPIO driver from the device.
- 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 -  Complete [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
 
 ## <span id="Create_a_new_product_and_BSP_file"></span><span id="create_a_new_product_and_bsp_file"></span><span id="CREATE_A_NEW_PRODUCT_AND_BSP_FILE"></span>Create a new product and BSP file
-
 
 1.  Create a new product folder. This creates a fresh copy of our base files, including a new copy of the BSP.
 
@@ -135,11 +131,3 @@ Congratulations, you've completed Lab 2.
 <!--
 [Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 -->
-
- 
-
- 
-
-
-
-`
