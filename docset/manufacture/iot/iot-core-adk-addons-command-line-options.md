@@ -107,10 +107,12 @@ buildpkg Clean
 
 ## <span id="CREATEPKG.CMD"></span>createpkg.cmd
 
-Usage: `createpkg <packagefile.pkg.xml> [version]`
+Usage: `createpkg <packagefile.pkg.xml>/<CompName.SubCompName> [version]`
 Parameters:
 
--   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
+-   `<packagefile.pkg.xml>`: Use this to identify the package by its package definition XML file.
+
+-   `<CompName.SubCompName>`: Use this to identify the package by its ComponentName.SubComponent Name.   
 
 -   `<version>`: Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. 
 
@@ -122,7 +124,8 @@ Examples:
 
 ``` syntax
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml
-createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml 10.0.1.0 
+createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml 10.0.1.0
+createpkg Registry.ConfigSettings 
 ```
 
 ## <span id="CREATEPROVPKG.CMD"></span>createprovpkg.cmd

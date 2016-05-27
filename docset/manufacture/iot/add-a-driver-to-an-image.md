@@ -6,87 +6,71 @@ title: 'Lab 1e: Add a driver to an image'
 
 # Lab 1e: Add a driver to an image
 
-
-
-
 Now we'll add drivers to a Windows 10 IoT Core image. 
 
 When you're using a pre-built Board Support Package (BSP), you'll want to know whether there's already similar drivers on the board. If not, you can usually just add the new driver. 
 
 If there is, but that driver doesn't meet your needs, then you'll need to replace the driver from the BSP, which we'll cover in [Lab 2a](replace-a-driver-in-an-existing-bsp.md).
 
-
-
 In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm), package it up, and deploy it to the device.
-
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 -  Complete [Lab 1a: Create a basic image](create-a-basic-image.md).
 
-
-
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
-
 
 -  Complete the exercises in [Installing The Sample Driver](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
    (You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
+-  Copy each of the files: gpiokmdfdemo.sys, gpiokmdfdemo.inf, and ACPITABL.dat into a test folder, for example, C:\gpiokmdfdemo\.
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
-
 1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
 
-2.  Create a working folder for the driver, for example:
+2.  Create the driver package using the .inf file as the base:
 
     ``` syntax
-    newpkg pkgDrv Drivers HelloBlinky
+    newdrvpkg C:\gpiokmdfdemo\gpiokmdfdemo.inf Drivers.HelloBlinky
     ```
 
     The new folder at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
 
 
-**Add sample files to the package**
+**Verify that the sample files are in the package**
 
 1.  Update the driver's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\Drivers.HelloBlinky.pkg.xml**.
 
     The default package definition file includes sample XML that you can modify to add your own driver files.
 
-    Update the values of Driver InfSource to point to your .INF file.
-
-    Update the value of Reference to point to your .SYS file.
-	
-	Update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
+    If necessary, update the value of File Source to point to your .SYS file, and the ACPITABL.dat file. (You don't need to add the .INF file.)  Add the DestinationDir of "$(runtime.drivers)".
     
     ``` syntax
-    <?xml version="1.0" encoding="utf-8"?>
-      <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
-        Owner="$(OEMNAME)"
-        OwnerType="OEM"    
-        ReleaseType="Production"
-		Platform="arm"
-		Component="Drivers"
-		SubComponent="HelloBlinky">
-        <Components>
-		  <Driver
-		    InfSource="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.inf">
-			<Reference Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" />
-			<Files>
-			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\gpiokmdfdemo.sys" DestinationDir="$(runtime.drivers)" />
-			  <File Source="$(PRJDIR)\Packages\Drivers.HelloBlinky\ACPITABL.dat" DestinationDir="$(runtime.drivers)" />
-            </Files>
-          </Driver>
-        </Components>
-      </Package> 
+    <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00" 
+         Owner="$(OEMNAME)" OwnerType="OEM" ReleaseType="Production" 
+         Platform="arm" Component="Drivers" SubComponent="HelloBlinky"> 
+      <Components> 
+        <Driver InfSource="gpiokmdfdemo.inf"> 
+          <Reference Source="gpiokmdfdemo.sys" /> 
+          <Files> 
+            <File Source="gpiokmdfdemo.sys"  
+                  DestinationDir="$(runtime.drivers)"  
+                  Name="gpiokmdfdemo.sys" /> 
+            <File Source="ACPITABL.dat"  
+                  DestinationDir="$(runtime.drivers)"  
+                  Name="ACPITABL.dat" /> 
+          </Files> 
+        </Driver> 
+      </Components> 
+    </Package> 
     ```
-
 
 2.  From the IoT Core Shell, build the package.
 
     ``` syntax
-    createpkg c:\IoT-ADK-AddonKit\Source-<arch>\Packages\Drivers.HelloBlinky\Drivers.HelloBlinky.pkg.xml
+    createpkg Drivers.HelloBlinky
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Drivers.HelloBlinky.cab**.

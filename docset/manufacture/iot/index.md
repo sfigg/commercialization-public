@@ -30,6 +30,12 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 </tr>
 </thead>
 <tbody>
+
+<tr class="odd">
+<td align="left"><p>[What's new in IoT Manufacturing](whats-new-in-manufacturing.md)</p></td>
+<td align="left"><p>Find out what we've been working on.</p></td>
+</tr>
+
 <tr class="odd">
 <td align="left"><p>[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)</p></td>
 <td align="left"><p>This guide walks you through creating IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.</p></td>
