@@ -1327,13 +1327,13 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
     <tr>
     <td>For OA 3.0 systems: 
     </td>
-    <td><code>Copy /y E:\AnswerFiles\\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+    <td><code>Copy /y E:\AnswerFiles\OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
     </td>
     </tr>
     <tr>
     <td>For non-OA 3.0 systems: 
     </td>
-    <td><code>Copy /y E:\AnswerFiles\\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
+    <td><code>Copy /y E:\AnswerFiles\Non_OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
     </td>
     </tr>
     </table>
@@ -1423,13 +1423,15 @@ In this section, the device is prepared for deployment by booting into WinPE, cr
 
 #### Deploy the image
 
-Using the deployment script walkthrough-deploy.bat in USB-B\deployment folder, lay out the partitions on the device and apply the image. 
+Using the deployment script walkthrough-deploy.bat in **USB-B**/Deployment folder, lay out the partitions on the device and apply the image. 
 
 **Important: The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.**
 
 In Windows 10 Version 1511, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encouraging you to follow the new recommendation.
 
-E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
+    '''syntax
+    E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
+    '''
 
 There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
@@ -1451,7 +1453,7 @@ Note: This guide doesn’t cover the PIPC scenarios for OEMs in Japan.
 
 ##### Prepare Office files on Technician PC
 
-Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment tool for OEM OPK.
+Obtain Office Deployment Tool from X20-92403 Office 2016 v16 Deployment tool for OEM OPK.
 
 1.  Mount X20-92403 Office 2016 v16 Deployment Tool for OEM OPK\Software - DVD\X20-92404 SW DVD5 Office 2016 v16 Deployment Tool for OEM\x20-92404.img.
 2.	Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.
@@ -1462,7 +1464,7 @@ Obtain Office Deployment Tool from from X20-92403 Office 2016 v16 Deployment too
 
     ![Setup and configuration.xml](images/setup-and-configuation.png)
     
-    Obtain Office v16 in the desired language; this sample uses Engish X20-39283 Office 2016 v16 32-BIT X64 English OPK.
+    Obtain Office v16 in the desired language; this sample uses English X20-39283 Office 2016 v16 32-BIT X64 English OPK.
     
 5. Copy the folder Office from mounted drive X20-39283 Office 2016 v16 32-BIT X64 English OPK\Software - DVD\X20-37728 SW DVD5 Office Pro 2016 32 64 English C2ROPK Pro HS HB OEM\X20-37728.img to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.
 
@@ -1671,7 +1673,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
         Oemsetup.en-us.oa30.cmd
 
-After the process is completed, the Microsoft Office application tile will be placed on the Start screen. However, the user can install only one language version of Office Single Image v15.4  By default, the language version of the OOBE application matches the Windows language settings and the Office Single Image v15.1 language that is preloaded on the computer. If this match doesn’t take place, the language dialog box will contain languages that are based on the Office 2013 preloaded languages.
+After the process is completed, the Microsoft Office application tile will be placed on the Start screen. However, the user can install only one language version of Office Single Image v15.4. By default, the language version of the OOBE application matches the Windows language settings and the Office Single Image v15.1 language that is preloaded on the computer. If this match doesn’t take place, the language dialog box will contain languages that are based on the Office 2013 preloaded languages.
 
 ### Prepare system for recovery push-button reset scenarios
 
@@ -1823,18 +1825,21 @@ Important: The ScanState package used by PBR must be a .ppkg file stored in C:\R
 
 1.  Run ScanState to gather app and customizations.
 
-
-    If you use an **x64** Windows 10 image:
+   If you use an **x64** Windows 10 image:
     
-        Mkdir c:\recovery\customizations
-        E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    '''syntax
+    Mkdir c:\recovery\customizations
+    E:\ScanState_amd64\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    '''
     
-    If you use an **x86** Windows 10 image:
+   If you use an **x86** Windows 10 image:
     
-        Mkdir c:\recovery\customizations
-        E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    '''syntax
+    Mkdir c:\recovery\customizations
+    E:\ScanState_x86\scanstate.exe /apps /ppkg C:\Recovery\Customizations\apps.ppkg /i:c:\recovery\oem\regrecover.xml /config:C:\Recovery\OEM\pbr_config.xml /o /c /v:13 /l:C:\ScanState.log
+    '''
     
-    *Where E: is the drive letter of **USB-B***
+   Where E: is the drive letter of **USB-B***
 
 #### Create extensibility scripts to restore additional settings
 
@@ -1850,22 +1855,21 @@ This will restore the additional layout settings from these two answer files dur
 
 **Important: Recovery scripts and unattend.xml must be copied to c:\Recovery\OEM folder for PBR to pickup and restore correctly.**
 
-Copy unattend.xml files for restoring settings
+Copy unattend.xml files for restoring settings.
 
-<table>
-<tr>
-<td>For OA 3.0 systems: 
-</td>
-<td><code>Copy /y E:\AnswerFiles\\**OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
-</td>
-</tr>
-<tr>
-<td>For non-OA 3.0 systems: 
-</td>
-<td><code>Copy /y E:\AnswerFiles\\**Non_OA3.0**\Unattend.xml C:\Mount\Windows\Windows\Panther</code><p>(where E:\ is **USB-B**)</p>
-</td>
-</tr>
-</table>
+For OA 3.0 systems: 
+
+    '''syntax
+    Copy /y E:\AnswerFiles\OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
+    '''
+    
+For non-OA 3.0 systems:
+
+    '''syntax
+    Copy /y E:\AnswerFiles\Non_OA3.0\Unattend.xml C:\Mount\Windows\Windows\Panther
+    '''
+    
+where E:\ is **USB-B**
 
 #### Copy winre.wim backup
 
@@ -1875,14 +1879,15 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
 ### Finalize and capture the manufacturing image
 
-1.  Delete installation folders and files that have been created of the preloaded applications which are for example, *C:\Office-SingleImagev15.4-Setup*. Existance of these folders may increase the size of .wim file when the image of Windows drive gets captured.
+1.  Delete installation folders and files that have been created of the preloaded applications which are for example, *C:\Office-SingleImagev15.4-Setup*. Existence of these folders may increase the size of .wim file when the image of Windows drive gets captured.
 
 2.  If the SysPrep Tool is open, close it and open a command prompt as an Administrator.
 
 3.  Generalize the image by using answerfile with additional settings.
 
-        C:\Windows\System32\Sysprep\sysprep /unattend:c:\recovery\oem\Unattend.xml /generalize /oobe /shutdown
-
+    '''syntax
+    C:\Windows\System32\Sysprep\sysprep /unattend:c:\recovery\oem\Unattend.xml /generalize /oobe /shutdown
+    '''
 
 1.  Connect "**USB-A**" and boot the Reference computer.
 
@@ -1890,7 +1895,7 @@ During the deployment the winre.wim file is moved. Before capturing the final im
 
     Troubleshoot: The reference system was shutdown. While turning on, if the system continues to boot from Internal HDD, Windows will enter the specialize pass and then the OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To fix this, we need to generalize the image again, and at the OOBE screen, press &lt;Ctrl&gt;+&lt;Shift&gt;+&lt;F3&gt;. The system restarts and boots in Audit mode. In Audit mode, Sysprep the system by using the OOBE Shutdown and Generalize switches, as explained previously. After the system reboots, make sure to boot from USB-A to WinPE. 
 
-    If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
+    If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be necessary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
 1.  Identify Windows Partition Drive letter.
 
@@ -1918,7 +1923,7 @@ Please reference [Compact OS](compact-os.md) for more information.
 
 After the manufacturing image is ready, choose to reduce the size of the image by clearing up the SXS store using DISM to offline service the image. Switch to the Technician Computer and mount the image.
 
-**Important: By default, non-major updates (e.g. ZDPs, KB’s, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. Running this is a must to retain updates applied during manufacturing in order for PBR to restore them in first 28 days. **
+Important: By default, non-major updates (e.g. ZDPs, KB’s, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. Running this is a must to retain updates applied during manufacturing in order for PBR to restore them in first 28 days.
 
     MD c:\scratchdir
 
