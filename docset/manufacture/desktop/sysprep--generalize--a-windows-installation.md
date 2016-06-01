@@ -11,16 +11,16 @@ title: 'Sysprep (Generalize) a Windows installation'
 
 Use **Sysprep** to generalize a Windows installation. To deploy a Windows image to different PCs, you must first prepare the image. You can either use the System Preparation (Sysprep) tool or you can specify a setting in an answer file to prepare the image as part of an unattended installation. To prepare the image, you must remove the computer-specific information from the image. This process is called *generalizing* the image.
 
-In most Windows 8 deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. In Windows 8, the `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times on a Windows 8 image, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
+In most deployment scenarios, you no longer have to use the `SkipRearm` answer file setting to reset the Windows Product Activation clock when you run the **Sysprep** command multiple times on a computer. The `SkipRearm` setting is used to specify the Windows licensing state. If you specify a retail product key or volume license product key, Windows is automatically activated. You can run the **Sysprep** command up to 8 additional times on a single Windows image. After running Sysprep 8 times, you must recreate your Windows image. For more information about Windows components and settings that you can add to an answer file, see the [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/?LinkId=206281).
 
 **Caution**  
-Don't use the Windows Store to update your Windows Store apps before running **sysprep /generalize**. **Sysprep** fails to generalize the image in this scenario. This issue also applies to the Windows Store apps that are included with Windows 8 (for example, Mail, Maps, Bing Finance, Bing News, and others). This can occur when you are customizing your installation in audit mode as the built in administrator, or when using a specific user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
+Don't use the Windows Store to update your Windows Store apps before running **sysprep /generalize**. **Sysprep** fails to generalize the image in this scenario. This issue also applies to the Windows Store apps (for example, Mail, Maps, Bing Finance, Bing News, and others). This can occur when you are customizing your installation in audit mode as the built in administrator, or when using a specific user account. The following error appears in the sysprep log files (%WINDIR%\\System32\\Sysprep\\Panther):
 
 `<package name> was installed for a user, but not provisioned for all users. This package will not function properly in the sysprep image.`
 
 **Sysprep /generalize** requires that all apps are provisioned for all users. However, when you update an app from the Windows Store, that app becomes non-provisioned and is tied that user account.
 
-Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. In managed environments, if Windows Store access is disabled by an IT administrator, you will not be able to update the Windows 8 Store apps.
+Instead of using the Windows Store to update your apps, you should sideload updates to your line-of-business apps, or have end-users update their apps by using the Windows Store on their destination PCs. In managed environments, if Windows Store access is disabled by an IT administrator, you will not be able to update the Windows Store apps.
 
 For more information about sideloading line-of-business Windows Store apps, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md) and [Customize the Start Screen](customize-the-start-screen.md).
 
@@ -116,7 +116,7 @@ For more information about audit mode, see:
 ## <span id="bkmk_2"></span><span id="BKMK_2"></span>Generalizing a Virtual Hard Disk
 
 
-In Windows versions that are earlier than Windows 8, you can use **Sysprep** to generalize a virtual hard disk (VHD). But, Windows 8 includes the **Sysprep** VM mode. VM mode generalizes a VHD that you deploy as a VHD on the same virtual machine or hypervisor. This mode supports rapid deployment of virtual machines. VM mode is supported only when you run it from inside a virtual machine. Additionally, VM mode is available only through the command line. You can't use VM mode to prepare a VHD for deployment to any computer.
+You can use **Sysprep** VM mode to generalize a VHD that you want to deploy as a VHD on the same virtual machine or hypervisor. VM mode supports rapid deployment of virtual machines. VM mode is supported only when you run it from inside a virtual machine. Additionally, VM mode is available only through the command line. You can't use VM mode to prepare a VHD for deployment to any computer.
 
 **To generalize a VHD**
 
@@ -149,7 +149,7 @@ The only additional options that apply to VM mode are **/reboot**, **/shutdown**
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Sysprep%20%28Generalize%29%20a%20Windows%20installation%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

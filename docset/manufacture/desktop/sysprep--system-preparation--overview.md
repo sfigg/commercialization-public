@@ -8,6 +8,7 @@ title: 'Sysprep (System Preparation) Overview'
 
 # Sysprep (System Preparation) Overview
 
+Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 **Sysprep** (System Preparation) prepares a Windows installation (Windows client and Windows Server) for imaging, allowing you to capture a customized installation. **Sysprep** removes PC-specific information from a Windows installation, "generalizing" the installation so it can be installed on different PCs. With **Sysprep** you can configure the PC to boot to audit mode, where you can make additional changes or updates to your image. Or, you can configure Windows to boot to the Out-of-Box Experience (OOBE).
 
@@ -20,7 +21,7 @@ Sysprep provides the following features:
 
 -   Removes PC-specific information from the Windows image, including the PC’s security identifier (SID). This allows you to capture the image and apply it to other PCs. This is known as generalizing the PC.
 
--   Uninstalls PC-specific drivers from
+-   Uninstalls PC-specific drivers from the Windows image.
 
 -   Prepares the PC for delivery to a customer by setting the PC to boot to OOBE.
 
@@ -41,8 +42,9 @@ Sysprep helps you solve business goals such as:
 
 ## <span id="BKMK_NEW"></span><span id="bkmk_new"></span>New and changed functionality
 
+Beginning with Windows 10, Version 1607, Sysprep can be used to prepare an image that has been upgraded. For example, you can create a base Windows 10 image, upgrade the image to Windows 10, Version 1607, then run Sysprep generalize on the upgraded image, re-capture the updated image, and deploy the image to new devices.  This process allows enterprises to efficiently and continuously roll out up-to-date Windows 10 deployment images. 
 
-In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your deployment workflow to use Sysprep from the command line. For more information, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
+Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your deployment workflow to use Sysprep from the command line. For more information, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
 ## <span id="Dependencies"></span><span id="dependencies"></span><span id="DEPENDENCIES"></span>Dependencies
 
@@ -89,7 +91,7 @@ The following scenarios are not supported:
 
 -   Using a different version of the Sysprep tool to configure an image is not supported. You must use only the version of the Sysprep tool that is installed with the Windows image that you intend to configure. Sysprep is installed with every version of Windows. You must always run Sysprep from the %WINDIR%\\system32\\sysprep directory.
 
--   Using the Sysprep tool on upgrade installation types, or to reconfigure an existing installation of Windows that has already been deployed is not supported. Sysprep must be used only to configure new installations of Windows. You can run Sysprep an unlimited number of times to build and configure your installation of Windows.
+-   If you are using a version of Windows earlier than Windows 10, Version 1607, using the Sysprep tool on upgrade installation types, or to reconfigure an existing installation of Windows that has already been deployed is not supported. In this case, Sysprep must be used only to configure new installations of Windows. You can run Sysprep an unlimited number of times to build and configure your installation of Windows.
 
 -   Automating Sysprep by using a Microsoft-Windows-Deployment\\[RunSynchronous](http://go.microsoft.com/fwlink/?LinkId=286336) command is not supported. However, you can use the Microsoft-Windows-Deployment\\[Generalize](http://go.microsoft.com/fwlink/?LinkId=286337) setting to prepare the PC for imaging after installation.
 
@@ -139,7 +141,7 @@ The following table contains links to resources related to this scenario.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Sysprep%20%28System%20Preparation%29%20Overview%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -9,7 +9,7 @@ title: 'Sysprep Command-Line Options'
 # Sysprep Command-Line Options
 
 
-Run **Sysprep** to prepare a Windows installation to be captured. This topic describes the command-line syntax for the Windows 8 version of the System Preparation (Sysprep) tool.
+Run **Sysprep** to prepare a Windows installation to be captured. This topic describes the command-line syntax for the System Preparation (Sysprep) tool.
 
 If you intend to create an image of an installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can safely reuse that image on a different computer. The next time that you boot the Windows image, the [specialize](specialize.md) configuration pass runs.
 
@@ -64,7 +64,7 @@ The following table lists Sysprep command-line options:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mode:vm</strong></p></td>
-<td align="left"><p>New for Windows 8. Generalizes a Virtual Hard Disk (VHD) so that you can deploy the VHD as a VHD on the same Virtual Machine (VM) or hypervisor. After the VM restarts, the VM can boot to OOBE. For example:</p>
+<td align="left"><p>Generalizes a Virtual Hard Disk (VHD) so that you can deploy the VHD as a VHD on the same Virtual Machine (VM) or hypervisor. After the VM restarts, the VM can boot to OOBE. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /generalize /oobe /mode:vm</code></pre>
 <p>The only additional switches that apply to VM mode are <strong>/reboot</strong>, <strong>/shutdown</strong>, and <strong>/quit</strong>.You must deploy the VHD on a Virtual Machine (VM) or hypervisor with the same hardware profile. For example, if you created VHD in Microsoft Hyper-V, you can only deploy your VHD to Microsoft Hyper-V VMs with a matching hardware profile. Deploying the VHD to a different VM with a different hardware profile might cause unexpected issues.</p>
 <div class="alert">
@@ -124,7 +124,7 @@ You must use the **Sysprep /generalize** command to generalize a complete Window
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Sysprep%20Command-Line%20Options%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

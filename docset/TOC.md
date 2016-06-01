@@ -4,6 +4,14 @@
 
 ## [Windows Performance Toolkit](test/wpt/index.md)
 ### [What's New in the Windows Performance Toolkit](test/wpt/whats-new-in-the-windows-performance-toolkit.md)
+
+### [WPT Getting Started](test/wpt/wpt-getting-started-portal.md)
+#### [Getting Started: Windows Performance Recorder (WPR)](test/wpt/getting-started--windows-performance-recorder--wpr-.md)
+##### [Step 1: Starting and Stopping a Recording using WPR](test/wpt/step-1--starting-and-stopping-a-recording-using-wpr.md)
+#### [Getting Started: Windows Performance Analyzer (WPA)](test/wpt/getting-started--windows-performance-analyzer--wpa-.md)
+##### [Step 1: Opening and Analyzing ETL Files in WPA](test/wpt/opening-and-analyzing-etl-files-in-wpa.md)
+##### [Step 2: Packaging and Sharing WPA Packages](test/wpt/packaging-and-sharing-wpa-packages.md)
+
 ### [Event Tracing for Windows](test/wpt/event-tracing-for-windows.md)
 ### [Symbol Support](test/wpt/symbol-support.md)
 #### [Using CLR 4.0 NGEN PDB Support](test/wpt/using-clr-40-ngen-pdb-support.md)
@@ -3887,6 +3895,7 @@
 
 
 ## [IoT Core manufacturing](manufacture/iot/index.md)
+### [What's new in IoT Manufacturing](whats-new-in-manufacturing.md)
 ### [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)

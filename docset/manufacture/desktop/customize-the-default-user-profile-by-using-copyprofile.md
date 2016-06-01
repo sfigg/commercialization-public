@@ -11,7 +11,7 @@ title: Customize the Default User Profile by Using CopyProfile
 
 You can use the `CopyProfile` setting to customize a user profile and then copy that profile to the default user profile. Windows® uses the default user profile as a template to assign a profile to each new user. By customizing the default user profile, you can configure settings for all user accounts that are created on the computer. By using `CopyProfile`, you can customize installed applications, drivers, desktop backgrounds, internet explorer settings, and other configurations. Note that some settings are not preserved by using `CopyProfile`.
 
-In Windows 8, Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the Windows 8 **Start** screen.
+Enterprise and IT Professionals can use `CopyProfile` to preserve the customized tile layout of groups on the **Start** screen.
 
 In this topic:
 
@@ -35,7 +35,7 @@ Use the following procedure to create an answer file to instruct **Sysprep** to 
     1.  Click **File**, and then click **New Answer File**. An empty answer file appears in the **Answer File** pane.
 
         **Note**  
-        If the Windows 8 catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
+        If the catalog file doesn't appear in the **Windows Image** pane, follow the instructions in [Open a Windows Image or Catalog File](https://msdn.microsoft.com/library/windows/hardware/dn915104).
 
          
 
@@ -165,7 +165,7 @@ If the user profile settings aren't successfully copied:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_adk_online\p_adk_online%5D:%20Customize%20the%20Default%20User%20Profile%20by%20Using%20CopyProfile%20%20RELEASE:%20%284/11/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
