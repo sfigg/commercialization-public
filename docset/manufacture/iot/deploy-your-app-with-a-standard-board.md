@@ -63,9 +63,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
     This command builds all of the packages in our source folders, including a few packages that we've created to help install your app.
 
-3.  In File Explorer, move the dependency files from the C:\HelloWorld\Dependencies\&lt;arch&gt; folder into the C:\HelloWorld\Dependencies\ folder. 
-     
-4.  Create a working folder for the app, for example:
+3.  Create a working folder for the app, for example:
 
     ``` syntax
     newAppxPkg "C:\Users\&lt;UserName&gt;\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
@@ -73,7 +71,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
     This creates a new working folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld that includes files that you'll use to help build the package.
 
-6.  From the IoT Core Shell, build the package.
+4.  From the IoT Core Shell, build the package.
 
     ``` syntax
     buildpkg Appx.HelloWorld
@@ -89,6 +87,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 **Add your app package to the feature manifest**
 
 1.  Open your feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\OEMFM.xml**
+
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "Appx\_HelloWorld".
 
     ``` syntax
@@ -122,6 +121,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 **Replace your product's default app with your own**
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\TestOEMInput.xml**.
+
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
     ``` syntax
@@ -179,11 +179,13 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
 **Set the app to automatically install and set itself as the default app**
 
-1.  Open **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\OEMCustomization.cmd**,
+1.  Open **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\OEMCustomization.cmd**
+
 2.  Recommended: Change the device's default username and password.
+
 3.  Replace the rest of the code in the code block with the new section starting with ""if exists C:\Appinstall (" - this new section automatically installs your app whenever the installer app is present:
 
-    ```
+    ``` syntax
     REM OEM Customization Script file
     
 	REM Enable Administrator User
@@ -197,7 +199,6 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 	cd \
 	rmdir /S /Q C:\AppInstall
 	)
-
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
