@@ -242,15 +242,15 @@ If you use an **x86** Windows 10 image:
 
 #### Cleanup boot.wim
 
-Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices.
+Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices. You can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. 
 
 If you use an **x64** Windows 10 image:
 
-    dism /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase
+    dism /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase /Defer
 
 If you use an **x86** Windows 10 image:
 
-    dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase
+    dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase /Defer
 
 #### Optimize Winpe on boot
 
@@ -1346,7 +1346,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 1.  Cleanup unused files and reduce size of winre.wim.
 
-        dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase
+        dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase /Defer
 
 #### Unmount the Image
 
@@ -1923,7 +1923,7 @@ Please reference [Compact OS](compact-os.md) for more information.
 
 After the manufacturing image is ready, choose to reduce the size of the image by clearing up the SXS store using DISM to offline service the image. Switch to the Technician Computer and mount the image.
 
-Important: By default, non-major updates (e.g. ZDPs, KB’s, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery. Running this is a must to retain updates applied during manufacturing in order for PBR to restore them in first 28 days.
+Important: By default, non-major updates (e.g. ZDPs, KB’s, LCUs) are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and [/ResetBase [/Defer]] options. Updates marked as permanent are always restored during recovery. Running this is a must to retain updates applied during manufacturing in order for PBR to restore them in first 28 days.
 
     MD c:\scratchdir
 
