@@ -22,7 +22,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 -  Complete the exercises in [Installing The Sample Driver](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
-   (You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
+   You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
 -  Copy each of the files: gpiokmdfdemo.sys, gpiokmdfdemo.inf, and ACPITABL.dat into a test folder, for example, C:\gpiokmdfdemo\.
 

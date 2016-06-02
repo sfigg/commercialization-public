@@ -17,7 +17,10 @@ Several updates of [command-line tools](iot-core-adk-addons-command-line-options
 *  Updated: BuildPkg, BuildAllPkgs: When building packages, you'll get a cleaner display just showing the packages that have been processed, and any errors. To troubleshoot, you can now see the full log files at \Build\<arch>\pkgs\logs.
 
 *  Updated: CreatePkg now supports adding just the Component.Subcomponent names. Example:
-    
+
+    ``` syntax
+    createpkg Registry.SystemSettings
+    ```
 
 *  Manufacturing labs: Updated labs to use new NewAppPkg, NewDriverPkg, NewCommonPkg tools.
  
