@@ -6,10 +6,18 @@ xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 @echo  *********************************************************************
 @echo  == Register the location of the recovery tools ==
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
-
 @echo  *********************************************************************
 @echo  == If Compact OS, single-instance the recovery provisioning package ==
-if %COMPACTOS%.==True. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
+@echo     Options: N: No
+@echo              Y: Yes
+@echo              D: Yes, but defer cleanup steps to first boot.
+@echo                 Use this if the cleanup steps take more than 30 minutes.
+@echo                 defer the cleanup steps to the first boot.
+@SET /P COMPACTOS=Deploy as Compact OS? (Y, N, or D):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+@if %COMPACTOS%.==d. set COMPACTOS=D
+if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
+if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
 @rem *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
