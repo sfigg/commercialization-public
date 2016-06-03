@@ -1,10 +1,10 @@
-@echo Walkthrough-Deploy.bat
+@echo ApplyImage.bat
 @echo     Run from the reference device in the WinPE environment
 @echo     This script erases the primary hard drive and applies a new image
 @if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
 @if not exist X:\Windows\System32 goto END
 @if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
-@if %1.==. echo Example: Walkthrough-Deploy D:\WindowsWithFrench.wim
+@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
 @if %1.==. goto END
 @echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
@@ -20,13 +20,12 @@ for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Co
 @if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo *********************************************************************
 @echo Formatting the primary disk...
-@if %Firmware%==0x1 echo ...using BIOS (MBR) format and partitions.
-@if %Firmware%==0x2 echo ...using UEFI (GPT) format and partitions. 
+@if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
+@if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
 @echo CAUTION: All the data on the disk will be DELETED.
-@SET /P M=Erase all data and continue? (Y or N):
-@if %M%.==Y. set READYSET=GO
-@if %M%.==y. set READYSET=GO
-@if not %READYSET%.==GO. goto END
+@SET /P READY=Erase all data and continue? (Y or N):
+@if %READY%.==y. set READY=Y
+@if not %READY%.==Y. goto END
 if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
 if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
 @echo *********************************************************************
@@ -34,22 +33,26 @@ if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
 call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @echo *********************************************************************
 @echo  == Apply the image to the Windows partition ==
-@SET /P M=Deploy as Compact OS? (Y or N):
-@if %M%.==Y. set COMPACTOS=Yes
-@if %M%.==y. set COMPACTOS=Yes
-@if %COMPACTOS%.==Yes. echo Deploying as Compact OS.
-if %COMPACTOS%.==Yes. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Yes. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+@echo Does this image include Extended Attributes?
+@echo    (If you're not sure, type N).
+@SET /P EA=(Y or N):
+@if %EA%.==y. set EA=Y
+if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
+if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
+if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
 @echo *********************************************************************
 @echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo *********************************************************************
-@echo    Next steps:
-@echo    * Add Windows Classic apps (optional):
-@echo        DISM /Apply-SiloedPackage /ImagePath:W:\ 
-@echo             /PackagePath:D:\App1.spp /PackagePath:D:\App2.spp  ...
-@echo    * Add the recovery image:
-@echo        ApplyRecovery.bat
-@echo    * Reboot:
-@echo        exit
+@echo   Next steps:
+@echo   * Add Windows Classic apps (optional):
+@echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
+@echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
+@echo   * Add the recovery image:
+@echo       ApplyRecovery.bat
+@echo   * Reboot:
+@echo       exit
 :END
