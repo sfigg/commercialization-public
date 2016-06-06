@@ -242,15 +242,15 @@ If you use an **x86** Windows 10 image:
 
 #### Cleanup boot.wim
 
-Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices. You can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. 
+Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices. If the DISM /Resetbase is a long running operation, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase is taking longer than 30 minutes to complete.
 
 If you use an **x64** Windows 10 image:
 
-    dism /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase /Defer
+    dism /image:c:\winpe_amd64\mount /Cleanup-image /StartComponentCleanup /ResetBase
 
 If you use an **x86** Windows 10 image:
 
-    dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase /Defer
+    dism /image:c:\winpe_x86\mount /Cleanup-image /StartComponentCleanup /ResetBase 
 
 #### Optimize Winpe on boot
 
@@ -1346,7 +1346,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
 
 1.  Cleanup unused files and reduce size of winre.wim.
 
-        dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase /Defer
+        dism /image:"c:\mount\winre" /Cleanup-Image /StartComponentCleanup /Resetbase 
 
 #### Unmount the Image
 
