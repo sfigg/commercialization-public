@@ -344,7 +344,7 @@ Note: You need to point Windows System Image Manager (SIM) to an install.wim bef
     
     Reference: Please refer to the [WSIM overview](https://technet.microsoft.com/library/hh825214.aspx) for more information on Windows System Image Manager (SIM) user interface.
 
-1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\\*Install.wim*. A Catalog file will be created (.clg file) for that specific wim.
+1.  Click **File** > **Select Windows Image**. Browse to E:\MyWindows\Sources\*Install.wim*. A Catalog file will be created (.clg file) for that specific wim.
 
     Troubleshoot: Catalog creation may fail due to several reasons. You may receive the following:
 
@@ -526,7 +526,7 @@ Important: The system must be set to generalize and OOBE in order to further ser
 
     If the system still boots with internal HDD, please make sure USB boot is prioritized instead of HDD boot. To do so, it may be neceesary to enter the Reference Computer BIOS menu and adjust the boot priority order so that the USB Key is at the top of the list.
 
-1.  Identify Windows Parition Drive letter.
+1.  Identify Windows partition drive letter.
 
     -   At the **X:\windows\system32&gt;** prompt, type ***diskpart*** and press **&lt;Enter&gt;** to start Diskpart.
 
@@ -1429,9 +1429,8 @@ Using the deployment script walkthrough-deploy.bat in **USB-B**/Deployment folde
 
 In Windows 10 Version 1511, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encouraging you to follow the new recommendation.
 
-    '''syntax
     E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
-    '''
+    
 
 There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
