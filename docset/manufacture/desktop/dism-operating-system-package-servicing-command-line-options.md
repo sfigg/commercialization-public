@@ -62,7 +62,7 @@ Displays basic information about all packages in the image. Use the /Format:Tabl
 Syntax:
 
 ``` syntax
-Dism /Get-Packages \[/Format:{Table | List}\]
+Dism /Get-Packages [/Format:{Table | List}]
 ```
 
 Examples:
@@ -123,7 +123,7 @@ If /PackagePath points to a folder that contains a .cab or .msu files at its roo
 Syntax:
 
 ``` syntax
-Dism /Add-Package /PackagePath:<path_to_cabfile> [/IgnoreCheck] [ /PreventPending]
+Dism /Add-Package /PackagePath:<path_to_cabfile> [/IgnoreCheck] [/PreventPending]
 ```
 
 Examples:
@@ -287,9 +287,9 @@ Examples:
 Dism /Image:C:\test\offline /Disable-Feature /FeatureName:Calc /PackageName:Microsoft.Windows.Calc.Demo~6595b6144ccf1df~x86~en~1.0.0.0
 ```
 
-### <span id="_Cleanup-Image___RevertPendingActions____SPSuperseded___HideSP_____StartComponentCleanup___ResetBase_____AnalyzeComponentStore____CheckHealth____ScanHealth____RestoreHealth___Source___filepath_____LimitAccess__"></span><span id="_cleanup-image___revertpendingactions____spsuperseded___hidesp_____startcomponentcleanup___resetbase_____analyzecomponentstore____checkhealth____scanhealth____restorehealth___source___filepath_____limitaccess__"></span><span id="_CLEANUP-IMAGE___REVERTPENDINGACTIONS____SPSUPERSEDED___HIDESP_____STARTCOMPONENTCLEANUP___RESETBASE_____ANALYZECOMPONENTSTORE____CHECKHEALTH____SCANHEALTH____RESTOREHEALTH___SOURCE___FILEPATH_____LIMITACCESS__"></span>/Cleanup-Image {/RevertPendingActions | /SPSuperseded \[/HideSP\] | /StartComponentCleanup \[/ResetBase\] | /AnalyzeComponentStore | /CheckHealth | /ScanHealth | /RestoreHealth \[/Source: &lt;filepath&gt;\] \[/LimitAccess\]}
+### <span id="_Cleanup-Image___RevertPendingActions____SPSuperseded___HideSP_____StartComponentCleanup___ResetBase_____AnalyzeComponentStore____CheckHealth____ScanHealth____RestoreHealth___Source___filepath_____LimitAccess__"></span><span id="_cleanup-image___revertpendingactions____spsuperseded___hidesp_____startcomponentcleanup___resetbase_____analyzecomponentstore____checkhealth____scanhealth____restorehealth___source___filepath_____limitaccess__"></span><span id="_CLEANUP-IMAGE___REVERTPENDINGACTIONS____SPSUPERSEDED___HIDESP_____STARTCOMPONENTCLEANUP___RESETBASE_____ANALYZECOMPONENTSTORE____CHECKHEALTH____SCANHEALTH____RESTOREHEALTH___SOURCE___FILEPATH_____LIMITACCESS__"></span>/Cleanup-Image
 
-Performs cleanup or recovery operations on the image. /AnalyzeComponentStore and /ResetBase can be used with Windows 10, Windows 8.1, and Windows PE images above 5.0. /StartComponentCleanup can be used with Windows 10, Windows 8.x, and Windows PE images above 4.0. /CheckHealth, /ScanHealth, /RestoreHealth, /Source, and /LimitAccess can be used with Windows 10, Windows 8.x, and Windows PE images above 4.0. /HideSP and /SPSuperseded can’t be used when servicing a version of Windows that is earlier than Windows 7 Service Pack 1 (SP1) image.
+Performs cleanup or recovery operations on the image. /AnalyzeComponentStore and /ResetBase can be used with Windows 10, Windows 8.1, and Windows PE images above 5.0. Beginning with Windows 10, Version 1607, you can specify /Defer with /ResetBase. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete. /StartComponentCleanup can be used with Windows 10, Windows 8.x, and Windows PE images above 4.0. /CheckHealth, /ScanHealth, /RestoreHealth, /Source, and /LimitAccess can be used with Windows 10, Windows 8.x, and Windows PE images above 4.0. /HideSP and /SPSuperseded can’t be used when servicing a version of Windows that is earlier than Windows 7 Service Pack 1 (SP1) image.
 
 **Tip**  
 To determine when the /ResetBase option was last run, check the LastResetBase_UTC registry entry under this registry path:
@@ -299,14 +299,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Ser
 Syntax:
 
 ``` syntax
-/Cleanup-Image {/RevertPendingActions | /SPSuperseded [/HideSP] | /StartComponentCleanup [/ResetBase] | /AnalyzeComponentStore | /CheckHealth | /ScanHealth | /RestoreHealth [/Source: <filepath>] [/LimitAccess]}
+/Cleanup-Image {/RevertPendingActions | /SPSuperseded [/HideSP] | /StartComponentCleanup [/ResetBase [/Defer]] | /AnalyzeComponentStore | /CheckHealth | /ScanHealth | /RestoreHealth [/Source: <filepath>] [/LimitAccess]}
 ```
 
 |   Parameter     |   Description     |
 |-----------------|-------------------|
 | /RevertPendingActions | If you experience a boot failure, you can use the /RevertPendingActions option to try to recover the system. The operation reverts all pending actions from the previous servicing operations because these actions might be the cause of the boot failure. The /RevertPendingActions option is not supported on a running operating system or a Windows PE or Windows Recovery Environment (Windows RE) image. Important: You should use the /RevertPendingActions option only in a system-recovery scenario on a Windows image that did not boot.|
 | SPSuperseded | Removes any backup files created during the installation of a service pack. Use /HideSP to prevent the service pack from being listed in the Installed Updates Control Panel. The service pack cannot be uninstalled after the /SPSuperseded operation is completed. |
-| /StartComponentCleanup | Cleans up the superseded components and reduces the size of the component store. Use /ResetBase to reset the base of superseded components, which can further reduce the component store size. Installed Windows updates can’t be uninstalled after running /StartComponentCleanup with the /ResetBase option. |
+| /StartComponentCleanup | Cleans up the superseded components and reduces the size of the component store. Use /ResetBase to reset the base of superseded components, which can further reduce the component store size. Installed Windows updates can’t be uninstalled after running /StartComponentCleanup with the /ResetBase option. Use /Defer with /ResetBase to defer long-running cleanup operations to the next automatic maintenance.|
 | /AnalyzeComponentStore | Creates a report of the component store. For more information about the report and how to use the information provided in the report, see [Determine the Actual Size of the WinSxS Folder](determine-the-actual-size-of-the-winsxs-folder.md). |
 | /CheckHealth | Checks whether the image has been flagged as corrupted by a failed process and whether the corruption can be repaired. |
 | /ScanHealth | Scans the image for component store corruption. This operation will take several minutes.  |

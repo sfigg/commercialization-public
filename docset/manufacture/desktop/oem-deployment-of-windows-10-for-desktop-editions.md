@@ -242,7 +242,7 @@ If you use an **x86** Windows 10 image:
 
 #### Cleanup boot.wim
 
-Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices. If the DISM /Resetbase is a long running operation, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase is taking longer than 30 minutes to complete.
+Run cleanup to reduce the disk and memory footprint of WinPE, which is suited for lower-spec devices (such as devices with 1 GB Ram or 16 GB Storage). This increases compatibility with a wider range of devices. If DISM /Resetbase is a long running operation, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
 
 If you use an **x64** Windows 10 image:
 
