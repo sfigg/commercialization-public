@@ -14,7 +14,13 @@ title: What's new in IoT Core manufacturing
 Several updates of [command-line tools](iot-core-adk-addons-command-line-options.md):
 *  Added new tools: NewAppPkg, NewDrvPkg, NewCommonPkg, Inf2Cab, BuildPkg
 
-*  Updated: BuildPkg, BuildAllPkgs: When building packages, you'll get a cleaner display just showing the packages that have been processed, and any errors. To troubleshoot, you can now see the full log files at \Build\<arch>\pkgs\logs.
+*  Deprecated tools: 
+
+   -  BuildAllPackages. Use BuildPkg instead.
+   
+   -  NewPkg. Use newappxpkg, newdrvpkg, and newcommonpkg instead.
+
+*  Troubleshooting and logging: When building packages, you'll get a cleaner display just showing the packages that have been processed, and any errors. To troubleshoot, you can now see the full log files at \Build\<arch>\pkgs\logs.
 
 *  Updated: CreatePkg now supports adding just the Component.Subcomponent names. Example:
 
@@ -23,4 +29,4 @@ Several updates of [command-line tools](iot-core-adk-addons-command-line-options
     ```
 
 *  Manufacturing labs: Updated labs to use new NewAppPkg, NewDriverPkg, NewCommonPkg tools.
- 
+
