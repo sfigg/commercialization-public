@@ -39,7 +39,7 @@ In this topic:
 **Sysprep.exe** is the main program that calls other executable files that prepare the Windows installation. **Sysprep.exe** is located in the **%WINDIR%\\system32\\sysprep** directory on all Windows installations. If you use the command line instead of the **System Preparation Tool** GUI, you must first close the GUI and then run **Sysprep** from the **%WINDIR%\\system32\\sysprep** directory. You must also run **Sysprep** on the same version of Windows that you used to install **Sysprep**.
 
 **Important**  
-In Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
+Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your Windows deployment workflow to use the Sysprep command line. For more information about the Sysprep Command line tool, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
  
 

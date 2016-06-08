@@ -9,7 +9,7 @@ title: 'Sysprep Command-Line Options'
 # Sysprep Command-Line Options
 
 
-Run **Sysprep** to prepare a Windows installation to be captured. This topic describes the command-line syntax for the Windows 8 version of the System Preparation (Sysprep) tool.
+Run **Sysprep** to prepare a Windows installation to be captured. This topic describes the command-line syntax for the System Preparation (Sysprep) tool.
 
 If you intend to create an image of an installation for deployment to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can safely reuse that image on a different computer. The next time that you boot the Windows image, the [specialize](specialize.md) configuration pass runs.
 
@@ -64,7 +64,7 @@ The following table lists Sysprep command-line options:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/mode:vm</strong></p></td>
-<td align="left"><p>New for Windows 8. Generalizes a Virtual Hard Disk (VHD) so that you can deploy the VHD as a VHD on the same Virtual Machine (VM) or hypervisor. After the VM restarts, the VM can boot to OOBE. For example:</p>
+<td align="left"><p>Generalizes a Virtual Hard Disk (VHD) so that you can deploy the VHD as a VHD on the same Virtual Machine (VM) or hypervisor. After the VM restarts, the VM can boot to OOBE. For example:</p>
 <pre class="syntax" space="preserve"><code>Sysprep /generalize /oobe /mode:vm</code></pre>
 <p>The only additional switches that apply to VM mode are <strong>/reboot</strong>, <strong>/shutdown</strong>, and <strong>/quit</strong>.You must deploy the VHD on a Virtual Machine (VM) or hypervisor with the same hardware profile. For example, if you created VHD in Microsoft Hyper-V, you can only deploy your VHD to Microsoft Hyper-V VMs with a matching hardware profile. Deploying the VHD to a different VM with a different hardware profile might cause unexpected issues.</p>
 <div class="alert">

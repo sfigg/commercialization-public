@@ -439,7 +439,7 @@ Sample **LayoutModification.xml**:
 ## <span id="microphone_settings__speechsetting.cmd_"></span><span id="MICROPHONE_SETTINGS__SPEECHSETTING.CMD_"></span>Microphone settings (SpeechSetting.cmd)
 
 
-Use this script to tune your device’s microphone to help maximize speech accuracy for features like Cortana. To learn how to test for the appropriate values for your device, see [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009) in the Hardware WEG.
+Use this script to tune your device’s microphone to help maximize speech accuracy for features like Cortana. To learn how to test for the appropriate values for your device, see [Cortana Device Test Setup](../../design/device-experiences/speechplatformdevicestestsetup-003.md) in the Hardware WEG.
 
 **SpeechSetting.cmd**:
 

@@ -40,7 +40,7 @@ Before you can get started on your Windows mobile development, make sure you mee
 
 -   Reference mobile hardware
 
-    This mobile device should represent all the mobile devices in a single model line; for example, the Contoso Windows Phone. For more information about detailed hardware requirements for any device that runs Windows 10 Mobile, see *Section 2.0 - Minimum hardware requirements for Windows 10 Mobile* in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086).
+    This mobile device should represent all the mobile devices in a single model line; for example, the Contoso Windows Phone. For more information about detailed hardware requirements for any device that runs Windows 10 Mobile, see *Section 2.0 - Minimum hardware requirements for Windows 10 Mobile* in [Minimum hardware requirements](../../design/component-guidelines/minimum-hardware-requirements-overview.md).
 
 -   Board support package (BSP) prerequisites
 
