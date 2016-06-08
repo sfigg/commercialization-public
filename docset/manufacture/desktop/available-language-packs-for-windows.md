@@ -9,7 +9,7 @@ title: Available Language Packs for Windows
 # Available Language Packs for Windows
 
 
-The following tables show the supported language packs and language interface packs (LIPs) in different versions of Windows.
+The following tables show the supported language packs and language interface packs (LIPs) for Windows 10, Windows Server 2016 Technical Preview, and Windows Server 2012 R2.
 
 Corporations and users can download LIPs from the Microsoft.com web site and add them to any genuine copy of Windows that has the supported parent language installed. For more information or to download a LIP, see [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=125894).
 
@@ -24,13 +24,13 @@ To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows
 ## <span id="Supported_Language_Packs_and_Language_Interface_Packs"></span><span id="supported_language_packs_and_language_interface_packs"></span><span id="SUPPORTED_LANGUAGE_PACKS_AND_LANGUAGE_INTERFACE_PACKS"></span>Supported Language Packs and Language Interface Packs
 
 
-The following table includes the following settings:
+The following table includes these settings:
 
-**Language/region**. The name of the language that will be displayed in the UI.
-**Language/region tag**. The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
-**Language/region ID**. The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
-**Language/region decimal identifier**.The decimal representation of the language identifier. This setting is used in Oobe.xml.
-**Supported operating systems**. The operating systems that support a specific language.
+- **Language/region**. The name of the language that will be displayed in the UI. All 38 language packs are available for Windows Server, but the user interface (UI) for Windows Server is localized for only the 18 languages listed in bold.
+- **Language/region tag**. The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
+- **Language/region ID**. The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
+- **Language/region decimal identifier**.The decimal representation of the language identifier. This setting is used in Oobe.xml.
+
 ### <span id="Language_Packs"></span><span id="language_packs"></span><span id="LANGUAGE_PACKS"></span>Language Packs
 
 <table>
@@ -47,7 +47,6 @@ The following table includes the following settings:
 <th align="left">Language/region tag</th>
 <th align="left">Language/region ID</th>
 <th align="left">Language/region decimal ID</th>
-<th align="left">Supported operating systems</th>
 </tr>
 </thead>
 <tbody>
@@ -56,210 +55,185 @@ The following table includes the following settings:
 <td align="left"><p>ar-SA</p></td>
 <td align="left"><p>0x0401</p></td>
 <td align="left"><p>1025</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Bulgarian (Bulgaria)</p></td>
 <td align="left"><p>bg-BG</p></td>
 <td align="left"><p>0x0402</p></td>
 <td align="left"><p>1026</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Chinese (Hong Kong SAR)</p></td>
-<td align="left"><p>zh-HK</p></td>
+<td align="left"><p>zh-HK</p>
+<div class="alert">
+<strong>Note</strong>  No longer used. See zh-TW.
+</div>
+<div>
+</div></td>
 <td align="left"><p>0x0c04</p></td>
 <td align="left"><p>3076</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Chinese (PRC)</p></td>
+<td align="left"><p>**Chinese (PRC)**</p></td>
 <td align="left"><p>zh-CN</p></td>
 <td align="left"><p>0x0804</p></td>
 <td align="left"><p>2052</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Chinese (Taiwan)</p></td>
+<td align="left"><p>**Chinese (Taiwan)**</p></td>
 <td align="left"><p>zh-TW</p></td>
 <td align="left"><p>0x0404</p></td>
 <td align="left"><p>1028</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Croatian (Croatia)</p></td>
 <td align="left"><p>hr-HR</p></td>
 <td align="left"><p>0x041a</p></td>
 <td align="left"><p>1050</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Czech (Czech Republic)</p></td>
+<td align="left"><p>**Czech (Czech Republic)**</p></td>
 <td align="left"><p>cs-CZ</p></td>
 <td align="left"><p>0x0405</p></td>
 <td align="left"><p>1029</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Danish (Denmark)</p></td>
 <td align="left"><p>da-DK</p></td>
 <td align="left"><p>0x0406</p></td>
 <td align="left"><p>1030</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Dutch (Netherlands)</p></td>
+<td align="left"><p>**Dutch (Netherlands)**</p></td>
 <td align="left"><p>nl-NL</p></td>
 <td align="left"><p>0x0413</p></td>
 <td align="left"><p>1043</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>English (United States)</p></td>
+<td align="left"><p>**English (United States)**</p></td>
 <td align="left"><p>en-US</p></td>
 <td align="left"><p>0x0409</p></td>
 <td align="left"><p>1033</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>English (United Kingdom)</p></td>
+<td align="left"><p>**English (United Kingdom)**</p></td>
 <td align="left"><p>en-GB</p></td>
 <td align="left"><p>0x0809</p></td>
 <td align="left"><p>2057</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Estonian (Estonia)</p></td>
 <td align="left"><p>et-EE</p></td>
 <td align="left"><p>0x0425</p></td>
 <td align="left"><p>1061</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Finnish (Finland)</p></td>
 <td align="left"><p>fi-FI</p></td>
 <td align="left"><p>0x040b</p></td>
 <td align="left"><p>1035</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>French (Canada)</p></td>
 <td align="left"><p>fr-CA</p></td>
 <td align="left"><p>0x0c0c</p></td>
 <td align="left"><p>3084</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>French (France)</p></td>
+<td align="left"><p>**French (France)**</p></td>
 <td align="left"><p>fr-FR</p></td>
 <td align="left"><p>0x040c</p></td>
 <td align="left"><p>1036</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>German (Germany)</p></td>
+<td align="left"><p>**German (Germany)**</p></td>
 <td align="left"><p>de-DE</p></td>
 <td align="left"><p>0x0407</p></td>
 <td align="left"><p>1031</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Greek (Greece)</p></td>
 <td align="left"><p>el-GR</p></td>
 <td align="left"><p>0x0408</p></td>
 <td align="left"><p>1032</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Hebrew (Israel)</p></td>
 <td align="left"><p>he-IL</p></td>
 <td align="left"><p>0x040d</p></td>
 <td align="left"><p>1037</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Hungarian (Hungary)</p></td>
+<td align="left"><p>**Hungarian (Hungary)**</p></td>
 <td align="left"><p>hu-HU</p></td>
 <td align="left"><p>0x040e</p></td>
 <td align="left"><p>1038</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Italian (Italy)</p></td>
+<td align="left"><p>**Italian (Italy)**</p></td>
 <td align="left"><p>it-IT</p></td>
 <td align="left"><p>0x0410</p></td>
 <td align="left"><p>1040</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Japanese (Japan)</p></td>
+<td align="left"><p>**Japanese (Japan)**</p></td>
 <td align="left"><p>ja-JP</p></td>
 <td align="left"><p>0x0411</p></td>
 <td align="left"><p>1041</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Korean (Korea)</p></td>
+<td align="left"><p>**Korean (Korea)**</p></td>
 <td align="left"><p>ko-KR</p></td>
 <td align="left"><p>0x0412</p></td>
 <td align="left"><p>1042</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Latvian (Latvia)</p></td>
 <td align="left"><p>lv-LV</p></td>
 <td align="left"><p>0x0426</p></td>
 <td align="left"><p>1062</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Lithuanian (Lithuania)</p></td>
 <td align="left"><p>lt-LT</p></td>
 <td align="left"><p>0x0427</p></td>
 <td align="left"><p>1063</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Norwegian, Bokmål (Norway)</p></td>
 <td align="left"><p>nb-NO</p></td>
 <td align="left"><p>0x0414</p></td>
 <td align="left"><p>1044</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Polish (Poland)</p></td>
+<td align="left"><p>**Polish (Poland)**</p></td>
 <td align="left"><p>pl-PL</p></td>
 <td align="left"><p>0x0415</p></td>
 <td align="left"><p>1045</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Portuguese (Brazil)</p></td>
+<td align="left"><p>**Portuguese (Brazil)**</p></td>
 <td align="left"><p>pt-BR</p></td>
 <td align="left"><p>0x0416</p></td>
 <td align="left"><p>1046</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Portuguese (Portugal)</p></td>
+<td align="left"><p>**Portuguese (Portugal)**</p></td>
 <td align="left"><p>pt-PT</p></td>
 <td align="left"><p>0x0816</p></td>
 <td align="left"><p>2070</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Romanian (Romania)</p></td>
 <td align="left"><p>ro-RO</p></td>
 <td align="left"><p>0x0418</p></td>
 <td align="left"><p>1048</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Russian (Russia)</p></td>
+<td align="left"><p>**Russian (Russia)**</p></td>
 <td align="left"><p>ru-RU</p></td>
 <td align="left"><p>0x0419</p></td>
 <td align="left"><p>1049</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Serbian (Latin, Serbia)</p></td>
@@ -267,85 +241,72 @@ The following table includes the following settings:
 <div class="alert">
 <strong>Note</strong>  No longer used. See sr-Latn-RS.
 </div>
-<div>
- 
+<div> 
 </div></td>
 <td align="left"><p>0x081a</p></td>
 <td align="left"><p>2074</p></td>
-<td align="left"><p>Windows 8, Windows 7, and Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Serbian (Latin, Serbia)</p></td>
 <td align="left"><p>sr-Latn-RS</p></td>
 <td align="left"><p>0x241A</p></td>
 <td align="left"><p>9242</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Slovak (Slovakia)</p></td>
 <td align="left"><p>sk-SK</p></td>
 <td align="left"><p>0x041b</p></td>
 <td align="left"><p>1051</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slovenian (Slovenia)</p></td>
 <td align="left"><p>sl-SI</p></td>
 <td align="left"><p>0x0424</p></td>
 <td align="left"><p>1060</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Spanish (Mexico)</p></td>
 <td align="left"><p>es-MX</p></td>
 <td align="left"><p>0x080a</p></td>
 <td align="left"><p>2058</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Spanish (Spain)</p></td>
+<td align="left"><p>**Spanish (Spain)**</p></td>
 <td align="left"><p>es-ES</p></td>
 <td align="left"><p>0x0c0a</p></td>
 <td align="left"><p>3082</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Swedish (Sweden)</p></td>
+<td align="left"><p>**Swedish (Sweden)**</p></td>
 <td align="left"><p>sv-SE</p></td>
 <td align="left"><p>0x041d</p></td>
 <td align="left"><p>1053</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Thai (Thailand)</p></td>
 <td align="left"><p>th-TH</p></td>
 <td align="left"><p>0x041e</p></td>
 <td align="left"><p>1054</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Turkish (Turkey)</p></td>
+<td align="left"><p>**Turkish (Turkey)**</p></td>
 <td align="left"><p>tr-TR</p></td>
 <td align="left"><p>0x041f</p></td>
 <td align="left"><p>1055</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Vista, Windows Server 2008</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ukrainian (Ukraine)</p></td>
 <td align="left"><p>uk-UA</p></td>
 <td align="left"><p>0x0422</p></td>
 <td align="left"><p>1058</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 ### <span id="Language_Interface_Packs__LIPs_"></span><span id="language_interface_packs__lips_"></span><span id="LANGUAGE_INTERFACE_PACKS__LIPS_"></span>Language Interface Packs (LIPs)
 
-**Caution**  
-Not all LIPs are currently available for Windows 10. To learn more, see [Language Packs](http://go.microsoft.com/fwlink/?LinkId=125894).
+Except where noted, the following LIPs are available for Windows 10, Windows Server 2016 Technical Preview, and Windows Server 2012 R2. To learn more, see [Language Packs](http://go.microsoft.com/fwlink/?LinkId=125894).
 
  
 
@@ -365,7 +326,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <th align="left">Base language/region</th>
 <th align="left">Language/region ID</th>
 <th align="left">Language/region decimal ID</th>
-<th align="left">Supported operating systems</th>
 </tr>
 </thead>
 <tbody>
@@ -376,7 +336,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0436</p></td>
 <td align="left"><p>1078</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Albanian (Albania)</p></td>
@@ -385,7 +344,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x041c</p></td>
 <td align="left"><p>1052</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Amharic (Ethiopia)</p></td>
@@ -394,7 +352,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x045e</p></td>
 <td align="left"><p>1118</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Armenian (Armenia)</p></td>
@@ -403,7 +360,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x042b</p></td>
 <td align="left"><p>1067</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Assamese (India)</p></td>
@@ -412,7 +368,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x044d</p></td>
 <td align="left"><p>1101</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Azerbaijan</p></td>
@@ -421,7 +376,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x042c</p></td>
 <td align="left"><p>1068</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Bangla (Bangladesh)</p></td>
@@ -430,7 +384,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0845</p></td>
 <td align="left"><p>2117</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Basque (Basque)</p></td>
@@ -439,7 +392,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US, fr-FR</p></td>
 <td align="left"><p>0x042d</p></td>
 <td align="left"><p>1069</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Belarusian</p></td>
@@ -448,7 +400,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0423</p></td>
 <td align="left"><p>1059</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Bangla (India)</p></td>
@@ -457,7 +408,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0445</p></td>
 <td align="left"><p>1093</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Bosnian (Latin)</p></td>
@@ -467,7 +417,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p></p></td>
 <td align="left"><p>0x141a</p></td>
 <td align="left"><p>5146</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Catalan</p></td>
@@ -477,7 +426,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p></p></td>
 <td align="left"><p>0x0403</p></td>
 <td align="left"><p>1027</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Central Kurdish</p></td>
@@ -486,7 +434,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: ar-SA, en-GB</p></td>
 <td align="left"><p>0x0492</p></td>
 <td align="left"><p>1170</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Cherokee</p></td>
@@ -495,7 +442,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x045c</p></td>
 <td align="left"><p>1116</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Dari</p></td>
@@ -504,7 +450,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x048c</p></td>
 <td align="left"><p>1164</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Filipino</p></td>
@@ -513,7 +458,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0464</p></td>
 <td align="left"><p>1124</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Galician</p></td>
@@ -522,7 +466,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0456</p></td>
 <td align="left"><p>1110</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Georgian (Georgia)</p></td>
@@ -531,7 +474,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x0437</p></td>
 <td align="left"><p>1079</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Gujarati (India)</p></td>
@@ -540,7 +482,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0447</p></td>
 <td align="left"><p>1095</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Hausa (Latin, Nigeria)</p></td>
@@ -549,7 +490,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, fr-FR</p></td>
 <td align="left"><p>0x0468</p></td>
 <td align="left"><p>1128</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Hindi (India)</p></td>
@@ -558,7 +498,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0439</p></td>
 <td align="left"><p>1081</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Icelandic (Iceland)</p></td>
@@ -567,7 +506,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x040f</p></td>
 <td align="left"><p>1039</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Igbo (Nigeria)</p></td>
@@ -576,7 +514,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0470</p></td>
 <td align="left"><p>1136</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Indonesian (Indonesia)</p></td>
@@ -585,7 +522,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0421</p></td>
 <td align="left"><p>1057</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Inuktitut (Latin, Canada)</p></td>
@@ -595,7 +531,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x085d</p></td>
 <td align="left"><p>2141</p></td>
-<td align="left"><p>Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Irish (Ireland)</p></td>
@@ -604,7 +539,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x083c</p></td>
 <td align="left"><p>2108</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>isiXhosa (South Africa)</p></td>
@@ -613,7 +547,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0434</p></td>
 <td align="left"><p>1076</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>isiZulu (South Africa)</p></td>
@@ -622,7 +555,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0435</p></td>
 <td align="left"><p>1077</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Kannada (India)</p></td>
@@ -631,7 +563,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x044b</p></td>
 <td align="left"><p>1099</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Kazakh (Kazakhstan)</p></td>
@@ -640,7 +571,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x043f</p></td>
 <td align="left"><p>1087</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Khmer (Cambodia)</p></td>
@@ -649,7 +579,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0453</p></td>
 <td align="left"><p>1107</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>K'iche' (Guatemala)</p></td>
@@ -658,7 +587,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: es-ES, en-US, en-GB</p></td>
 <td align="left"><p>0x0486</p></td>
 <td align="left"><p>1158</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>K'iche' (Guatemala)</p></td>
@@ -668,7 +596,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: es-ES, en-US, en-GB</p></td>
 <td align="left"><p>0x0486</p></td>
 <td align="left"><p>1158</p></td>
-<td align="left"><p>Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Kinyarwanda</p></td>
@@ -677,7 +604,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0487</p></td>
 <td align="left"><p>1159</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Kiswahili (Kenya)</p></td>
@@ -686,7 +612,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0441</p></td>
 <td align="left"><p>1089</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Konkani (India)</p></td>
@@ -695,7 +620,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0457</p></td>
 <td align="left"><p>1111</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Kyrgyz (Kyrgyzstan)</p></td>
@@ -704,7 +628,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0440</p></td>
 <td align="left"><p>1088</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Lao (Laos)</p></td>
@@ -713,7 +636,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0454</p></td>
 <td align="left"><p>1108</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Luxembourgish (Luxembourg)</p></td>
@@ -722,7 +644,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: de-DE, en-GB, en-US</p></td>
 <td align="left"><p>0x046e</p></td>
 <td align="left"><p>1134</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Macedonian (FYROM)</p></td>
@@ -731,7 +652,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x042f</p></td>
 <td align="left"><p>1071</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Malay (Brunei Darussalam)</p></td>
@@ -740,7 +660,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x083e</p></td>
 <td align="left"><p>2110</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Malay (Malaysia)</p></td>
@@ -749,7 +668,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x043e</p></td>
 <td align="left"><p>1086</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Malayalam (India)</p></td>
@@ -758,7 +676,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x044c</p></td>
 <td align="left"><p>1100</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Maltese (Malta)</p></td>
@@ -767,7 +684,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x043a</p></td>
 <td align="left"><p>1082</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Maori (New Zealand)</p></td>
@@ -776,7 +692,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0481</p></td>
 <td align="left"><p>1153</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Marathi (India)</p></td>
@@ -785,7 +700,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x044e</p></td>
 <td align="left"><p>1102</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mongolian (Cyrillic)</p></td>
@@ -794,7 +708,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x0450</p></td>
 <td align="left"><p>1104</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Nepali (Federal Democratic Republic of Nepal)</p></td>
@@ -803,7 +716,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0461</p></td>
 <td align="left"><p>1121</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Norwegian, Nynorsk (Norway)</p></td>
@@ -813,7 +725,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p></p></td>
 <td align="left"><p>0x0814</p></td>
 <td align="left"><p>2068</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Odia (India)</p></td>
@@ -822,7 +733,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0448</p></td>
 <td align="left"><p>1096</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Persian</p></td>
@@ -831,7 +741,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0429</p></td>
 <td align="left"><p>1065</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Punjabi (India)</p></td>
@@ -840,7 +749,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0446</p></td>
 <td align="left"><p>1094</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Punjabi (Arabic)</p></td>
@@ -849,7 +757,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0846</p></td>
 <td align="left"><p>2118</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Quechua (Peru)</p></td>
@@ -858,7 +765,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: es-ES, en-GB, en-US</p></td>
 <td align="left"><p>0x0c6b</p></td>
 <td align="left"><p>3179</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Scottish Gaelic</p></td>
@@ -867,7 +773,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0491</p></td>
 <td align="left"><p>1169</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Serbian (Cyrillic, Bosnia and Herzegovina)</p></td>
@@ -876,7 +781,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, sr-Latn-RS</p></td>
 <td align="left"><p>0x1C1A</p></td>
 <td align="left"><p>7194</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Serbian (Cyrillic, Serbia)</p></td>
@@ -891,7 +795,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0c1a</p></td>
 <td align="left"><p>3098</p></td>
-<td align="left"><p>Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Serbian (Cyrillic, Serbia)</p></td>
@@ -900,7 +803,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x281A</p></td>
 <td align="left"><p>10266</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sesotho sa Leboa (South Africa)</p></td>
@@ -909,7 +811,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x046c</p></td>
 <td align="left"><p>1132</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Setswana (South Africa)</p></td>
@@ -918,7 +819,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0432</p></td>
 <td align="left"><p>1074</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sindhi (Arabic)</p></td>
@@ -927,7 +827,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0859</p></td>
 <td align="left"><p>2137</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sinhala (Sri Lanka)</p></td>
@@ -936,7 +835,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x045b</p></td>
 <td align="left"><p>1115</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Tajik (Cyrillic)</p></td>
@@ -945,7 +843,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0428</p></td>
 <td align="left"><p>1064</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Tamil (India)</p></td>
@@ -954,7 +851,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0449</p></td>
 <td align="left"><p>1097</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Tatar (Russia)</p></td>
@@ -963,7 +859,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0444</p></td>
 <td align="left"><p>1092</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Telugu (India)</p></td>
@@ -972,7 +867,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x044a</p></td>
 <td align="left"><p>1098</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Tigrinya</p></td>
@@ -981,7 +875,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0473</p></td>
 <td align="left"><p>1139</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Turkmen</p></td>
@@ -990,7 +883,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0442</p></td>
 <td align="left"><p>1090</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Urdu</p></td>
@@ -999,7 +891,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0420</p></td>
 <td align="left"><p>1056</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Uyghur</p></td>
@@ -1008,7 +899,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0480</p></td>
 <td align="left"><p>1152</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Uzbek (Latin)</p></td>
@@ -1017,7 +907,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, ru-RU</p></td>
 <td align="left"><p>0x0443</p></td>
 <td align="left"><p>1091</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Valencian</p></td>
@@ -1026,7 +915,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0803</p></td>
 <td align="left"><p>2051</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Vietnamese</p></td>
@@ -1035,7 +923,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x042a</p></td>
 <td align="left"><p>1066</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Welsh (Great Britain)</p></td>
@@ -1044,7 +931,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x0452</p></td>
 <td align="left"><p>1106</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Wolof</p></td>
@@ -1053,7 +939,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB, en-US</p></td>
 <td align="left"><p>0x0488</p></td>
 <td align="left"><p>1160</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Yoruba (Nigeria)</p></td>
@@ -1062,7 +947,6 @@ Not all LIPs are currently available for Windows 10. To learn more, see [Langua
 <p>Secondary: en-GB</p></td>
 <td align="left"><p>0x046a</p></td>
 <td align="left"><p>1130</p></td>
-<td align="left"><p>Windows 10, Windows Server 2016 Technical Preview, Windows 8.1, Windows 8, Windows 7, Windows Vista</p></td>
 </tr>
 </tbody>
 </table>

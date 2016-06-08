@@ -8,14 +8,13 @@ title: 'Lab 1b: Add an app to your image'
 
 # Lab 1b: Add an app to your image
 
-
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
-We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), and package it up so that it can be serviced after it reaches your customers.
+We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), and package it up.
 
-We'll start by testing the app and sending it to the device. You can skip these steps if you've already tested your app.
+We'll test the app and send it to the device. You can skip these steps if you've already tested your app.
 
-We'll then create a servicable package for it. You'll need packages for each of the apps, device drivers, system files, and registry settings that you add to Windows 10 IoT Core (IoT Core) OEM images. These packages are .cab files, and must be signed before they can be loaded onto the device. For test builds, you can use test certificates - we'll use them in this guide.
+We'll then create a servicable package for it. You'll need packages for each of the apps, device drivers, system files, and registry settings that you add to Windows 10 IoT Core (IoT Core) OEM images. These packages are .cab files, and must be signed before you can load them onto the device. For test builds, you can use test certificates - we'll use them in this guide.
 
 As we create packages, we'll add them to our list of features, the OEM feature manifest (OEMFM.xml). We'll assign each package a Feature ID, which we can refer to later.
 
@@ -27,106 +26,55 @@ Finally, we'll rebuild the project and make sure it works.
 
 **Note**  As we go through this manufacturing guide, ProjectA will start to resemble the SampleA image that's in C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\SampleA.
 
- 
-
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
-
 
 We'll use the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
 
 ## <span id="Create_and_test_an_Windows_app"></span><span id="create_and_test_an_windows_app"></span><span id="CREATE_AND_TEST_AN_WINDOWS_APP"></span>Create and test an Windows app
 
 
-First, create an app. This can be any app designed for IoT Core, such as the [Hello, World](http://ms-iot.github.io/content/en-US/win10/samples/HelloWorld.md) app.
+1.  First, create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/en-us/windows/iot/win10/samples/HelloWorld.htm) app.
 
-**Connect to the device from another PC**
+2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **Next**. 
 
-1.  Connect a network cable.
-2.  Note the IP address that shows up on the device.
-3.  On your technician PC, open Internet Explorer, and type in the address with an http:// prefix and :8080 suffix:
+3.  Select: 
+    - **Output location: C:\HelloWorld** (or any other path that doesn't include spaces.)
+    
+    - **Generate app bundle: Never**
+    
+    Then click **Create**.
 
-    ``` syntax
-    http://100.100.0.100:8080
-    ```
+    Visual Studio creates the Appx file into C:\HelloWorld\HelloWorld_1.0.0.0_Debug_Test 
 
-    This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
+4.  Optional: (Test the app)[test-the-app.md]. Note, you may have already tested the app as part of building the project. 
 
-4.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
-
-**Test the app by installing it**
-
-1.  Click on **Apps**.
-2.  Under **Install app**, under **App package**, click **Browse**, and select your .appx file.
-    **Note**  If you built your app as a bundle, you may need to use a tool such as 7-Zip to extract these files from the bundle.
-
-     
-
-3.  Add your app's **Certificate** the same way.
-4.  Click **Add Dependency** and add each of your app's dependency files.
-5.  Under **Deploy**, click **Go**. The app installs.
-6.  Under **Installed apps**, click the drop-down box and select your app. Your app should start on the device.
-
-Great, your app works! Now let's package it up so you can maintain your app even after it's been delivered to your customers.
 
 ## <span id="Package_the_app"></span><span id="package_the_app"></span><span id="PACKAGE_THE_APP"></span>Package the app
 
-
-
-
-**Create an package for an app**
+**Create a package for an app**
 
 1.  Open **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+
 2.  Build all of the existing packages in your app (one-time only): 
 
     ``` syntax
-    buildallpackages
+    buildpkg all
     ```
 
     This command builds all of the packages in our source folders, including a few packages that we've created to help install your app.
 
-2.  Create a working folder for the app, for example:
+3.  Create a working folder for the app, for example:
 
     ``` syntax
-    newpkg pkgAppx Appx HelloWorld
+    newAppxPkg "C:\Users\&lt;UserName&gt;\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
     ```
 
-    The new folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld includes files that you'll use to help build the package.
+    This creates a new working folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld that includes files that you'll use to help build the package.
 
-3.  Copy your app's files into this \\AppInstall folder, including the .appx package, the certificate (.cer) file, and any dependency files (such as Microsoft.Net files).
-4.  Update the app's package definition file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld\\Appx.HelloWorld.pkg.xml**, to include the .appx package, certificate, and dependencies. Make sure the version numbers match the actual files.
-
-    ``` syntax
-    <!-- Copy appx files and its dependencies -->
-                 <File Source="$(PRJDIR)\Packages\AppX.HelloWorld\AppInstall\HelloWorld_10.0.0.50_ARM_Debug.appx"
-                    DestinationDir="$(runtime.root)\AppInstall" Name="HelloWorld_10.0.0.50_arm.appx"/>
-                 <File Source="$(PRJDIR)\Packages\AppX.HelloWorld\AppInstall\HelloWorld_10.0.0.50_ARM_Debug.cer"
-                    DestinationDir="$(runtime.root)\AppInstall" Name="HelloWorld_10.0.0.50_arm.cer"/>
-                 <File Source="$(PRJDIR)\Packages\AppX.HelloWorld\AppInstall\Microsoft.NET.Native.Runtime.1.0.appx"
-                    DestinationDir="$(runtime.root)\AppInstall" Name="Microsoft.NET.Native.Runtime.1.0.appx"/>
-                 <File Source="$(PRJDIR)\Packages\AppX.HelloWorld\AppInstall\Microsoft.VCLibs.arm.14.00.appx"
-                    DestinationDir="$(runtime.root)\AppInstall" Name="Microsoft.VCLibs.arm.14.00.appx"/>
-    ```
-
-    The paths for DestinationDir must include the pre-defined macro locations, DestinationDir="$(runtime.root)\\....", which is defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
-
-5.  Update the application configuration file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld\\AppxConfig.cmd**, with the Appx and certificate locations.
-
-    -   Set **defaultappx** = Your app's file name. Do not include the .appx extension.
-    -   Set **certslist** = Your app’s certificate. Do not include the .cer extension.
-    -   Set **defaultappxid** = Your app's ID. Don't know the ID? Use a tool like 7-Zip to uncompress the Appx file, and open the AppxManifest.xml file, and find the **Identity Name**. This may look like a plaintext name, or it may look like a GUID.
-    -   Set **dependencylist** = Apps or features like .NET that must be installed before your app is installed. You can add multiple dependency names, separate by a space. Do not include the .appx extension.
+4.  From the IoT Core Shell, build the package.
 
     ``` syntax
-    set defaultappx=HelloWorld_10.0.0.50_arm
-    set certslist=HelloWorld_10.0.0.50_arm
-    set defaultappxid=HelloWorld
-    set dependencylist=Microsoft.VCLibs.ARM.14.00 Microsoft.NET.Native.Runtime.1.1 Microsoft.NET.Native.Framework.1.2 Microsoft.VCLibs.ARM.12.00.Universal
-    ```
-
-6.  From the IoT Core Shell, build the package.
-
-    ``` syntax
-    createpkg C:\IoT-ADK-AddonKit\Source-<arch>\Packages\Appx.HelloWorld\Appx.HelloWorld.pkg.xml
+    buildpkg Appx.HelloWorld
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Appx.HelloWorld.cab**.
@@ -139,6 +87,7 @@ Great, your app works! Now let's package it up so you can maintain your app even
 **Add your app package to the feature manifest**
 
 1.  Open your feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\OEMFM.xml**
+
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "Appx\_HelloWorld".
 
     ``` syntax
@@ -172,6 +121,7 @@ Great, your app works! Now let's package it up so you can maintain your app even
 **Replace your product's default app with your own**
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\TestOEMInput.xml**.
+
 2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
 
     ``` syntax
@@ -190,7 +140,6 @@ Great, your app works! Now let's package it up so you can maintain your app even
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PLACEHOLDER_FEATURE</Feature> 
     <Feature>PRODUCTION</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
@@ -230,11 +179,13 @@ Great, your app works! Now let's package it up so you can maintain your app even
 
 **Set the app to automatically install and set itself as the default app**
 
-1.  Open **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\OEMCustomization.cmd**,
+1.  Open **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\OEMCustomization.cmd**
+
 2.  Recommended: Change the device's default username and password.
+
 3.  Replace the rest of the code in the code block with the new section starting with ""if exists C:\Appinstall (" - this new section automatically installs your app whenever the installer app is present:
 
-    ```
+    ``` syntax
     REM OEM Customization Script file
     
 	REM Enable Administrator User
@@ -248,7 +199,6 @@ Great, your app works! Now let's package it up so you can maintain your app even
 	cd \
 	rmdir /S /Q C:\AppInstall
 	)
-
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image

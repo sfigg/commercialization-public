@@ -140,7 +140,7 @@ xcopy /E /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Ki
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
 
-    where *C* is the drive letter of the Windows partition.
+    where *C* is the drive letter of the Windows partition. If DISM /Resetbase is a long-running operation, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
 
 ## <span id="Step_5__Capture_the_image"></span><span id="step_5__capture_the_image"></span><span id="STEP_5__CAPTURE_THE_IMAGE"></span>Step 5: Capture the image
 
