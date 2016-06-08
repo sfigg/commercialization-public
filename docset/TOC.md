@@ -3895,7 +3895,7 @@
 
 
 ## [IoT Core manufacturing](manufacture/iot/index.md)
-### [What's new in IoT Manufacturing](whats-new-in-manufacturing.md)
+### [What's new in IoT Manufacturing](manufacture/iot/whats-new-in-manufacturing.md)
 ### [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)
