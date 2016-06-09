@@ -5,11 +5,11 @@
  - [Device.Network.MobileBroadband.GSM](#Device.Network.MobileBroadband.GSM)
 
 <a name="Device.Network.MobileBroadband.CDMA"></a>
-# Device.Network.MobileBroadband.CDMA
+## Device.Network.MobileBroadband.CDMA
 
 *Mobile broadband*
 
-## Device.Network.MobileBroadband.CDMA.ComplyWithBaseReq
+### Device.Network.MobileBroadband.CDMA.ComplyWithBaseReq
 
 *Mobile broadband devices must comply with the following base requirements.*
 
@@ -41,7 +41,7 @@ Mobile Broadband devices must comply with the following base requirements:
 
 Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microsoft.com/en-us/library/ff560543.aspx> Network Device Class Power Management Reference Specification <http://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/netpmspc.rtf>
 
-## Device.Network.MobileBroadband.CDMA.FWComplyWithMBSpec
+### Device.Network.MobileBroadband.CDMA.FWComplyWithMBSpec
 
 *USB interface based CDMA class of Mobile Broadband device firmware must comply with USB-IF's Mobile Broadband Interface Model Specification.*
 
@@ -73,7 +73,7 @@ Mobile Broadband Interface Model Specification: <http://www.usb.org/developers/d
 
 Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/windows/hardware/ff560543.aspx>
 
-## Device.Network.MobileBroadband.CDMA.IdentityMorphing
+### Device.Network.MobileBroadband.CDMA.IdentityMorphing
 
 *Mobile Broadband Devices must support Identity Morphing.*
 
@@ -93,7 +93,7 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 
 Mobile Broadband devices based on USB protocol must support Identity Morphing. Implementing this requirement in the device firmware enables the device manufacturers to take advantage of Microsoft's inbox MB Class Driver in Windows 8 and the flexibility of using their own driver for previous generations of Windows operating systems version 7 and below. Links to the relevant specifications are provided in the Additional Information section below. Additional Information: Identity Morphing Specification: See MSDN.
 
-## Device.Network.MobileBroadband.CDMA.Loopback
+### Device.Network.MobileBroadband.CDMA.Loopback
 
 *Mobile Broadband Devices based on USB protocol must implement loopback functionality for performance and payload conformance testing.*
 
@@ -121,7 +121,7 @@ Loopback implementation guide for device firmware: <http://msdn.microsoft.com/en
 
 MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/library/windows/hardware/ff557193.aspx>
 
-## Device.Network.MobileBroadband.CDMA.MultiCarrierFunctionality
+### Device.Network.MobileBroadband.CDMA.MultiCarrierFunctionality
 
 *Mobile broadband devices that support multi-carrier feature must support the multi-carrier functionality.*
 
@@ -149,7 +149,7 @@ Mobile Broadband devices that support multi-carrier feature must support the mul
 
 -   Mobile broadband devices supporting multi-carrier feature must meet the multi-carrier performance requirements specified in the mobile broadband driver model specification. Mobile broadband devices that support multi-carrier feature must not do a bus / device re-enumeration or power reset the device resulting in PnP re-enumeration to the Windows when changing the home providers. If the device is capable of supporting GSM and CDMA cellular class technologies, then the device must execute both GSM as well as CDMA logo tests. For this to be covered correctly, the location of logo test execution must be in the coverage area of at least one GSM and one CDMA cellular class technologies.
 
-## Device.Network.MobileBroadband.CDMA.ReliableCSConnectivity
+### Device.Network.MobileBroadband.CDMA.ReliableCSConnectivity
 
 *Wireless WAN device on systems that support Connected Standby must deliver reliable connectivity in Connected Standby.*
 
@@ -169,7 +169,7 @@ Mobile Broadband devices that support multi-carrier feature must support the mul
 
 The device seamlessly transitions between D0 and D3 warm states while in Connected Standby (CS). The device maintains both L2 & L3 connectivity while in CS. The device wakes up on matching wake patterns only. There are no spurious wakes while in CS. The wake packets are delivered without delay or buffering. RealTimeCommunication apps stay connected in CS over IPv4 and IPv6.
 
-## Device.Network.MobileBroadband.CDMA.SupportUSBSelectiveSuspend
+### Device.Network.MobileBroadband.CDMA.SupportUSBSelectiveSuspend
 
 *USB based mobile broadband devices must support Windows implementation of USB selective suspend.*
 
@@ -189,7 +189,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 
 USB based mobile broadband devices must support Windows implementation of USB selective suspend (SS). No alternate USB SS implementation is allowed.
 
-## Device.Network.MobileBroadband.CDMA.SupportWakeOnMB
+### Device.Network.MobileBroadband.CDMA.SupportWakeOnMB
 
 *Mobile broadband class of devices must support the following wake on mobile broadband capabilities.*
 
@@ -230,11 +230,11 @@ Mobile class of devices must support wake on mobile broadband. A device should w
 2. NDIS\_STATUS\_WWAN\_SMS\_RECEIVE
 
 <a name="Device.Network.MobileBroadband.FirmwareUpdater"></a>
-# Device.Network.MobileBroadband.FirmwareUpdater
+## Device.Network.MobileBroadband.FirmwareUpdater
 
 *Mobile broadband*
 
-## Device.Network.MobileBroadband.FirmwareUpdater.FirmwareUpgrade
+### Device.Network.MobileBroadband.FirmwareUpdater.FirmwareUpgrade
 
 *USB interface based GSM and CDMA class of mobile broadband devices that comply with Microsoft's firmware update platform must implement Firmware ID Device Service and an UMDF based firmware update driver for the firmware payload update to the device.*
 
@@ -257,11 +257,11 @@ USB interface based GSM and CDMA class of mobile broadband devices that comply w
 Additional Information
 
 <a name="Device.Network.MobileBroadband.GSM"></a>
-# Device.Network.MobileBroadband.GSM
+## Device.Network.MobileBroadband.GSM
 
 *Mobile broadband*
 
-## Device.Network.MobileBroadband.GSM.ComplyWithBaseReq
+### Device.Network.MobileBroadband.GSM.ComplyWithBaseReq
 
 *Mobile broadband devices must comply with the following base requirements.*
 
@@ -293,7 +293,7 @@ Mobile Broadband devices must comply with the following base requirements:
 
 Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microsoft.com/en-us/library/ff560543.aspx> Network Device Class Power Management Reference Specification <http://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/netpmspc.rtf>
 
-## Device.Network.MobileBroadband.GSM.EAPSIM
+### Device.Network.MobileBroadband.GSM.EAPSIM
 
 *GSM class of Mobile Broadband devices that support the extensible authentication protocol method for GSM Subscriber Identity Module (EAP-SIM) must support EAP-SIM defined in RFC 4186.*
 
@@ -313,7 +313,7 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 
 GSM devices that support EAP-SIM must support EAP-SIM as defined in RFC 4186.
 
-## Device.Network.MobileBroadband.GSM.FWComplyWithMBSpec
+### Device.Network.MobileBroadband.GSM.FWComplyWithMBSpec
 
 *USB interface based GSM class of Mobile Broadband device firmware must comply with USB-IF's Mobile Broadband Interface Model Specification.*
 
@@ -345,7 +345,7 @@ Mobile Broadband Interface Model Specification: <http://www.usb.org/developers/d
 
 Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/windows/hardware/ff560543.aspx>
 
-## Device.Network.MobileBroadband.GSM.IdentityMorphing
+### Device.Network.MobileBroadband.GSM.IdentityMorphing
 
 *Mobile broadband devices MUST support Identity Morphing.*
 
@@ -367,7 +367,7 @@ Mobile broadband devices based on USB protocol must support Identity Morphing. I
 
 Additional Information: Identity Morphing Specification: See MSDN.
 
-## Device.Network.MobileBroadband.GSM.Loopback
+### Device.Network.MobileBroadband.GSM.Loopback
 
 *Mobile broadband devices based on USB protocol MUST implement loopback functionality for performance and payload conformance testing.*
 
@@ -395,7 +395,7 @@ Loopback implementation guide for device firmware: <http://msdn.microsoft.com/en
 
 MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/library/windows/hardware/ff557193.aspx>
 
-## Device.Network.MobileBroadband.GSM.MultiCarrierFunctionality
+### Device.Network.MobileBroadband.GSM.MultiCarrierFunctionality
 
 *Mobile broadband devices that support multi-carrier feature must support the multi-carrier functionality.*
 
@@ -425,7 +425,7 @@ Mobile broadband devices supporting multi-carrier feature must meet the multi-ca
 
  
 
-## Device.Network.MobileBroadband.GSM.MultiplePDPContext
+### Device.Network.MobileBroadband.GSM.MultiplePDPContext
 
 *Multiple PDP context support*
 
@@ -457,7 +457,7 @@ Device firmware should be able to leverage host OS request for a PDP context tha
 
 Device firmware should continue to abstract SMS PDP contexts and route them through the SMS CIDs regardless of the bearer used underneath.
 
-## Device.Network.MobileBroadband.GSM.ReliableCSConnectivity
+### Device.Network.MobileBroadband.GSM.ReliableCSConnectivity
 
 *Wireless WAN device on systems that support Connected Standby must deliver reliable connectivity in Connected Standby.*
 
@@ -477,7 +477,7 @@ Device firmware should continue to abstract SMS PDP contexts and route them thro
 
 The device seamlessly transitions between D0 and D3 warm states while in Connected Standby (CS). The device maintains both L2 & L3 connectivity while in CS. The device wakes up on matching wake patterns only. There are no spurious wakes while in CS. The wake packets are delivered without delay or buffering. RealTimeCommunication apps stay connected in CS over IPv4 and IPv6.
 
-## Device.Network.MobileBroadband.GSM.SupportFastDormancy
+### Device.Network.MobileBroadband.GSM.SupportFastDormancy
 
 *The GSM class of Mobile Broadband devices must support Fast Dormancy mechanism as defined by 3GPP in release 8. *
 
@@ -497,7 +497,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 
 Mobile broadband devices must implement the fast dormancy mechanism as defined by 3GPP in revision 8.  Fast Dormancy is a battery life savings mechanism for UE (User Equipment) devices that allows the devices to request the network to put them in a low power channel. UE sends a SIGNALLING CONNECTION RELEASE INDICATION (SCRI) message (sent by the UE to the network) with the IE "Signaling Connection Release Indication Cause" present and set to "UE Requested PS Data session end".
 
-## Device.Network.MobileBroadband.GSM.SupportUSBSelectiveSuspend
+### Device.Network.MobileBroadband.GSM.SupportUSBSelectiveSuspend
 
 *USB based Mobile Broadband devices must support Windows implementation of USB selective suspend.*
 
@@ -517,7 +517,7 @@ Mobile broadband devices must implement the fast dormancy mechanism as defined b
 
 USB based Mobile Broadband devices must support Windows implementation of USB selective suspend (SS). No alternate USB SS implementation is allowed.
 
-## Device.Network.MobileBroadband.GSM.SupportWakeOnMB
+### Device.Network.MobileBroadband.GSM.SupportWakeOnMB
 
 *Mobile broadband class of devices must support the following wake on mobile broadband capabilities.* 
 
@@ -557,7 +557,7 @@ Mobile broadband class of devices must support wake on mobile broadband. A devic
 
 2.  NDIS\_STATUS\_WWAN\_SMS\_RECEIVE
 
-## Device.Network.MobileBroadband.GSM.USSD
+### Device.Network.MobileBroadband.GSM.USSD
 
 *The GSM class of mobile broadband devices that implement Unstructured Supplementary Service Data (USSD) must support USSD based on the Mobile Broadband Driver Model.*
 

@@ -5,9 +5,9 @@
 -->
 
 <a name="Device.Display.Monitor"></a>
-# Device.Display.Monitor
+## Device.Display.Monitor
 
-## Device.Display.Monitor.Base
+### Device.Display.Monitor.Base
 
 *Base requirements for displays must ensure a good end user experience.*
 
@@ -33,7 +33,7 @@ All digital displays are required to have a single HPD signal transition from lo
 
 Multiple transition lead source to notify the OS of multiple device arrival and removal event; causing undesirable mode set flashing.
 
-## Device.Display.Monitor.DigitalLinkProtection
+### Device.Display.Monitor.DigitalLinkProtection
 
 *Display monitors that support digital inputs must support digital link protection on all digital inputs.*
 
@@ -53,7 +53,7 @@ Multiple transition lead source to notify the OS of multiple device arrival and
 
 Displays with digital inputs, such as Digital Visual Interface (DVI), High-Definition Multimedia Interface, (HDMI), DisplayPort, etc.. must support a digital monitor link protection mechanism such as High-bandwidth Digital Content Protection (HDCP).
 
-## Device.Display.Monitor.EDID
+### Device.Display.Monitor.EDID
 
 *A display device must implement the EDID data structure.*
 
@@ -111,7 +111,7 @@ Display devices that implement features that have more than 8 bits per primary c
 
 The ACPI specification defines the method to acquire the EDID from the BIOS to achieve equivalent functionality as specified in ACPI 2.0b, Appendix B, or later.
 
-## Device.Display.Monitor.Modes
+### Device.Display.Monitor.Modes
 
 *Requirement for resolution support for display devices*
 
@@ -153,7 +153,7 @@ These modes can be supported as full screen or centered.
 **For all other connectors like S-Video, Component, and Composite:**
 The connector must support the maximum allowable mode as defined in the specification of the standard.
 
-## Device.Display.Monitor.Stereoscopic3DModes
+### Device.Display.Monitor.Stereoscopic3DModes
 
 *A stereo 3D external display or internal mobile panel must support a stereo mode equivalent to its native or preferred resolution.*
 

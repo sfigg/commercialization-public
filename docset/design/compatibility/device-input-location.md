@@ -5,7 +5,7 @@
 -->
 
 <a name="Device.Input.Location"></a>
-# Device.Input.Location
+## Device.Input.Location
 
 *Windows 10 location drivers can implement either of the following driver models.*
 
@@ -15,7 +15,7 @@
 
 -   GNSS driver integrating with the GNSS DDI introduced in Windows 10
 
-## Device.Input.Location.ActiveTracking (If Implemented)
+### Device.Input.Location.ActiveTracking (If Implemented)
 
 *Active tracking breadcrumbing*
 
@@ -34,7 +34,7 @@
 
 This requirement allows a GNSS chip to actively track a user’s location based on breadcrumbing technology. The OS will offload breadcrumbing to the hardware and receive user location when needed. This features enables the OS to gather a user’s location history in a more granular manner.
 
-## Device.Input.Location.AssistedGNSS (If Implemented)
+### Device.Input.Location.AssistedGNSS (If Implemented)
 
 *Only relevant if the hardware uses the location stack for Assisted GNSS of the given type.*
 
@@ -53,7 +53,7 @@ This requirement allows a GNSS chip to actively track a user’s location based 
 
 Assistance to the GNSS receiver is used to enable the receiver to acquire a position faster, to enable acquisition even in cases of very weak signal, and do so at lower power. The Location platform supports providing the GNSS device with a coarse position, approximate time, and it can also serve as a proxy of the proprietary ephemeris formats supported by the GNSS device.
 
-## Device.Input.Location.Base
+### Device.Input.Location.Base
 
 *Location devices must support the following basic functionality.*
 
@@ -226,7 +226,7 @@ The GNSS device must support the following basic requirements:
 </html>
 
 
-## Device.Input.Location.Geofencing (If Implemented)
+### Device.Input.Location.Geofencing (If Implemented)
 
 *This requirement is only supported if the hardware supports Geofencing and the GNSS driver is integrating with the GNSS DDI introduced in Windows 10.*
 
@@ -260,7 +260,7 @@ If implemented, the device must be able to support the following requirements.
 | **Geofence negative ** | Add a Geofence with bad (Zero radius) parameters.                                                                                                                                               |
 | **Geofence boundary ** | Add a Geofence with very small radius (5m).                                                                                                                                                     |
 
-## Device.Input.Location.SUPL (If Implemented)
+### Device.Input.Location.SUPL (If Implemented)
 
 *This requirement is applicable only to a GNSS driver integrating with the GNSS DDI introduced in Windows 10.*
 
@@ -281,7 +281,7 @@ The Secure User Plane Location (SUPL) client must be implemented by the IHV to 
 
 The tests in this section ensures that the SUPL client is able to receive SUPL configuration commands from the Location Platform. There are no tests in the HLK to validate the integration between the GNSS driver and the Location Platform for the support of user notifications upon reception of NI (Network Initiated) location requests. Such validations will need to be done using dedicated systems and test suites that validate SUPL OMA conformance.
 
-## Device.Input.Location.V2PUL (If Implemented)
+### Device.Input.Location.V2PUL (If Implemented)
 
 *This requirement is applicable only to a GNSS driver integrating with the GNSS DDI introduced in Windows 10.*
 

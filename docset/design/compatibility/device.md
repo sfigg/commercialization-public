@@ -1,5 +1,4 @@
-Hardware Compatibility Specification for Components and Peripherals for Windows 10
-==================================================================================
+# Hardware Compatibility Specification for Components and Peripherals for Windows 10
 
 This section of the documentation provides specifications for hardware compatibility
 of components and peripherals with computers running Windows 10 as of June 2016.

@@ -5,9 +5,9 @@
  - [Device.Input.Digitizer.PrecisionTouchpad](#Device.Input.Digitizer.PrecisionTouchpad)
 
 <a name="Device.Input.Digitizer.Base"></a>
-# Device.Input.Digitizer.Base
+## Device.Input.Digitizer.Base
 
-## Device.Input.Digitizer.Base.ContactReports
+### Device.Input.Digitizer.Base.ContactReports
 
 *Digitizer reliability*
 
@@ -29,7 +29,7 @@ This requirement was formerly known as **Device.Digitizer.Touch.NoiseSupression*
 
 A digitizer shall only report data corresponding to user input. No other data, often referred to as "Phantom” or “Ghost contacts" shall be reported. This applies both when the system is actively receiving user input and when it is not receiving user input and under both AC and DC power conditions (where applicable).
 
-## Device.Input.Digitizer.Base.HIDCompliant
+### Device.Input.Digitizer.Base.HIDCompliant
 
 *HID compliant device firmware and/or HID mini-port driver*
 
@@ -67,7 +67,7 @@ For HID over Bluetooth requirements, see [*http://developer.bluetooth.org/Techno
 
 The Human Interface Device (HID) protocol is the industry recognized standard that Microsoft requires for input devices. This requirement guarantees Windows compatibility and serviceability with any compliant digitizer solution.
 
-## Device.Input.Digitizer.Base.ThirdPartyDrivers
+### Device.Input.Digitizer.Base.ThirdPartyDrivers
 
 *Servicing and 3<sup>rd</sup> party driver availability*
 
@@ -102,9 +102,9 @@ If a Windows Precision Touchpad, integrated touch or integrated pen digitizer ut
 This requirement ensures that digitizers are always available for user input regardless of servicing scenarios and or clean installations. There are instances where the digitizer may be the only source of input for a given device
 
 <a name="Device.Input.Digitizer.Pen"></a>
-# Device.Input.Digitizer.Pen
+## Device.Input.Digitizer.Pen
 
-## Device.Input.Digitizer.Pen.Accuracy
+### Device.Input.Digitizer.Pen.Accuracy
 
 *Pen contact accuracy*
 
@@ -132,7 +132,7 @@ This requirement ensures compatibility with DirectInk and inbox pen experiences;
 
 -   When the pen is hovering over the screen, ensuring that cursor position is perceived to be accurate by the user
 
-## Device.Input.Digitizer.Pen.Buffering
+### Device.Input.Digitizer.Pen.Buffering
 
 *Buffering for buses with High Resume latency*
 
@@ -160,7 +160,7 @@ While this is a requirement for devices that use a bus with high resume latency,
 
 Due to host controller or bus resume times from low power states, devices may need to implement buffering to ensure no user interaction data is lost during power transitions.
 
-## Device.Input.Digitizer.Pen.ContactReports
+### Device.Input.Digitizer.Pen.ContactReports
 
 *Digitizer Reliability*
 
@@ -182,7 +182,7 @@ This requirement was formerly known as **Device.Digitizer.Touch.NoiseSupression*
 
 A digitizer shall only report data corresponding to user input. No other data, often referred to as "Phantom” or “Ghost contacts" shall be reported. This applies both when the system is actively receiving user input and when it is not receiving user input and under both AC and DC power conditions (where applicable).
 
-## Device.Input.Digitizer.Pen.CustomGestures
+### Device.Input.Digitizer.Pen.CustomGestures
 
 *Custom Run-Time System Gestures*
 
@@ -210,7 +210,7 @@ This requirement ensures compatibility with DirectInk.
 
 -   Ensures compatibility with the inbox gesture engine.
 
-## Device.Input.Digitizer.Pen.Eraser
+### Device.Input.Digitizer.Pen.Eraser
 
 *Eraser Affordance*
 
@@ -240,7 +240,7 @@ This requirement ensures that interactions with the pen are intuitive and effici
 
 Note:  Active pens that enable eraser functionality provide the most natural means to erase digital ink.  Active pens that enable eraser functionality also free the application developer from having to develop UI to switch pen context from ink mode to erase mode.  Therefore it is strongly recommended that all pens support erase functionality by default.
 
-## Device.Input.Digitizer.Pen.HIDCompliant
+### Device.Input.Digitizer.Pen.HIDCompliant
 
 *HID Compliant Device Firmware and/or HID Mini-port Driver*
 
@@ -260,7 +260,7 @@ Note:  Active pens that enable eraser functionality provide the most natural me
 
 See Device.Input.Digitizer.Base.HIDCompliant.
 
-## Device.Input.Digitizer.Pen.HoverRange
+### Device.Input.Digitizer.Pen.HoverRange
 
 *Hover Range*
 
@@ -290,7 +290,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 
 -   Ensures compatibility with Windows palm rejection functionality.
 
-## Device.Input.Digitizer.Pen.Jitter
+### Device.Input.Digitizer.Pen.Jitter
 
 *Jitter and Linearity*
 
@@ -332,7 +332,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 
 -   When the pen is held stationary (either when in contact with the screen or hovering), jitter is not perceivable to the user.
 
-## Device.Input.Digitizer.Pen.Latency
+### Device.Input.Digitizer.Pen.Latency
 
 *Response Latencies*
 
@@ -382,7 +382,7 @@ This requirement ensures:
 
 -   When pen is in contact with the screen and moving, end-to-end latency of inking and other interactions are not perceivable to most users.
 
-## Device.Input.Digitizer.Pen.Pressure
+### Device.Input.Digitizer.Pen.Pressure
 
 *Pressure Reporting*
 
@@ -417,7 +417,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 
 -   Ensures sufficient granularity and representation for variation in applied pressure as perceived by the user while inking.
 
-## Device.Input.Digitizer.Pen.ReportRate
+### Device.Input.Digitizer.Pen.ReportRate
 
 *Report Rate*
 
@@ -445,7 +445,7 @@ This requirement ensures compatibility with DirectInk and more specifically:
 
 -   Ensures sufficient points are sampled to represent handwriting accurately at typical handwriting velocities.
 
-## Device.Input.Digitizer.Pen.Resolution
+### Device.Input.Digitizer.Pen.Resolution
 
 *Input resolution*
 
@@ -471,7 +471,7 @@ A pen digitizer’s input resolution shall be &gt;= the native display resolutio
 
 This requirement ensures that every pixel can be inked on screen and provides a smooth pen experience.
 
-## Device.Input.Digitizer.Pen.ThirdPartyDrivers
+### Device.Input.Digitizer.Pen.ThirdPartyDrivers
 
 *Servicing and 3<sup>rd</sup> Party Driver Availability*
 
@@ -490,9 +490,9 @@ This requirement ensures that every pixel can be inked on screen and provides a 
 See Device.Input.Digitizer.Base.ThirdPartyDrivers.
 
 <a name="Device.Input.Digitizer.PrecisionTouchpad"></a>
-# Device.Input.Digitizer.PrecisionTouchpad
+## Device.Input.Digitizer.PrecisionTouchpad
 
-## Device.Input.Digitizer.PrecisionTouchpad.Accuracy
+### Device.Input.Digitizer.PrecisionTouchpad.Accuracy
 
 *Accuracy*
 
@@ -513,7 +513,7 @@ Windows precision touchpads shall report the absolute digitizer position &lt;= 2
 
 Requirement ensures an accurate moussing and gesturing surface.
 
-## Device.Input.Digitizer.PrecisionTouchpad.Buffering
+### Device.Input.Digitizer.PrecisionTouchpad.Buffering
 
 *Buffering for buses with high resume latency.*
 
@@ -538,7 +538,7 @@ While this requirement applied to USB and Bluetooth devices, it is recommended t
 
 Due to host controller or bus resume times from low power states, devices may need to implement buffering to ensure that no user interaction data is lost during power transitions.
 
-## Device.Input.Digitizer.PrecisionTouchpad.Buttons
+### Device.Input.Digitizer.PrecisionTouchpad.Buttons
 
 *Physical buttons and button reporting*
 
@@ -570,7 +570,7 @@ Clickable regions should be comfortably usable.
 
 If external buttons are implemented, there must be at least two hardware buttons to represent both left and right click to ensure that the device has full mouse capabilities.
 
-## Device.Input.Digitizer.PrecisionTouchpad.ContactReports
+### Device.Input.Digitizer.PrecisionTouchpad.ContactReports
 
 *Digitizer Reliability*
 
@@ -589,7 +589,7 @@ This requirement was formerly known as **Device.Digitizer.Touch.NoiseSupression*
 
 A digitizer shall only report data corresponding to user input. No other data, often referred to as "Phantom” or “Ghost contacts" shall be reported. This applies both when the system is actively receiving user input and when it is not receiving user input and under both AC and DC power conditions (where applicable).
 
-## Device.Input.Digitizer.PrecisionTouchpad.ContactTipSwitchHeight
+### Device.Input.Digitizer.PrecisionTouchpad.ContactTipSwitchHeight
 
 *Contact Tip Switch Height*
 
@@ -599,7 +599,7 @@ Windows precision touchpads shall not report contacts &gt; 0.5 mm above the digi
 
 Prevents unintended contact activations from occurring and helps to avoid palm invoked activations during typing.
 
-## Device.Input.Digitizer.PrecisionTouchpad.DeviceTypeReporting
+### Device.Input.Digitizer.PrecisionTouchpad.DeviceTypeReporting
 
 *Device type*
 
@@ -622,7 +622,7 @@ For more information on implementation, see [http://msdn.microsoft.com/en-us/lib
 
 Fundamental to ensure the correct button handling is performed by the operating system.
 
-## Device.Input.Digitizer.PrecisionTouchpad.Dimensions
+### Device.Input.Digitizer.PrecisionTouchpad.Dimensions
 
 *Dimensions*
 
@@ -645,7 +645,7 @@ Windows precision touchpads shall be &gt;= 64 mm in length (horizontal measureme
 
 Precision touchpads must maintain a minimum size to allow users to interact properly with moussing across long distances and performing multi-finger gestures.
 
-## Device.Input.Digitizer.PrecisionTouchpad.FingerSeparation
+### Device.Input.Digitizer.PrecisionTouchpad.FingerSeparation
 
 *Finger Separation *
 
@@ -668,7 +668,7 @@ Windows precision touchpads shall not alias two contacts aligned at a minimum se
 
 This requirement ensures finger count and position remain accurate during multi-finger interactions.
 
-## Device.Input.Digitizer.PrecisionTouchpad.HIDCompliant
+### Device.Input.Digitizer.PrecisionTouchpad.HIDCompliant
 
 *HID Compliant Device Firmware and/or HID Mini-port Driver*
 
@@ -685,7 +685,7 @@ This requirement ensures finger count and position remain accurate during multi-
 
 See Device.Input.Digitizer.Base.HIDCompliant.
 
-## Device.Input.Digitizer.PrecisionTouchpad.InputResolution
+### Device.Input.Digitizer.PrecisionTouchpad.InputResolution
 
 <table>
 <tr>
@@ -704,7 +704,7 @@ Windows precision touchpads shall report a logical maximum for x linearly propor
 
 This requirement ensures that users can perform precise manipulations and cursor positioning.
 
-## Device.Input.Digitizer.PrecisionTouchpad.Jitter
+### Device.Input.Digitizer.PrecisionTouchpad.Jitter
 
 *Jitter and linearity*
 
@@ -741,7 +741,7 @@ Any Number of Contacts
 
 Ensures that precision moussing and gestures work correctly and that pausing during gesturing does not result in jittering visuals.
 
-## Device.Input.Digitizer.PrecisionTouchpad.Latency
+### Device.Input.Digitizer.PrecisionTouchpad.Latency
 
 *Response latencies*
 
@@ -792,7 +792,7 @@ The touchpad device should be readily available for user input once the system h
 
 Additional UX study on the impact of panning latency for indirect input devices justifies increased panning latency compared to direct input devices.
 
-## Device.Input.Digitizer.PrecisionTouchpad.MinMaxContacts
+### Device.Input.Digitizer.PrecisionTouchpad.MinMaxContacts
 
 *Contact count*
 
@@ -813,7 +813,7 @@ Windows precision touchpads shall not report being capable of supporting more th
 
 Precision touchpads require at least three fingers to have access to all Windows interactions. Four or more fingers are supported for a wider range of available interactions. Multihand interactions are not suited for touchpad use, so more than 5 contacts support is unneeded.
 
-## Device.Input.Digitizer.PrecisionTouchpad.ReportRate
+### Device.Input.Digitizer.PrecisionTouchpad.ReportRate
 
 *Report Rates*
 
@@ -836,7 +836,7 @@ Windows precision touchpads shall report at &gt;= 125Hz (and no greater than 250
 
 Maintain mouse experience requirements and competitive performance at &gt;= 125 Hz. Gesture performance in-line with touch requirements that are backed by the experience needs of Direct Manipulation to avoid stuttering.
 
-## Device.Input.Digitizer.PrecisionTouchpad.SelectiveReporting
+### Device.Input.Digitizer.PrecisionTouchpad.SelectiveReporting
 
 *Selective reporting*
 
@@ -857,7 +857,7 @@ Windows precision touchpads shall support the hosts request via a HID feature re
 
 This requirement ensures that precision touchpad digitizers properly respond to user configuration requests to enable/disable the device.
 
-## Device.Input.Digitizer.PrecisionTouchpad.ThirdPartyDrivers
+### Device.Input.Digitizer.PrecisionTouchpad.ThirdPartyDrivers
 
 *Servicing and 3<sup>rd</sup> Party Driver Availability*
 
@@ -876,7 +876,7 @@ See Device.Input.Digitizer.Base.ThirdPartyDrivers.
 
  # Device.Input.Digitizer.Touch
 
-## Device.Input.Digitizer.Touch.Accuracy
+### Device.Input.Digitizer.Touch.Accuracy
 
 *Accuracy*
 
@@ -905,7 +905,7 @@ A touch digitizer shall report the position of all contacts within the following
 
 This requirement ensures accurate and reliable touch interactions.
 
-## Device.Input.Digitizer.Touch.Buffering
+### Device.Input.Digitizer.Touch.Buffering
 
 *Buffering for Buses with High Resume Latency*
 
@@ -930,7 +930,7 @@ While this is a requirement for devices that use a bus with high resume latency,
 
 Due to host controller or bus resume times from low power states, devices may need to implement buffering to ensure no user interaction data is lost during power transitions.
 
-## Device.Input.Digitizer.Touch.ContactReports
+### Device.Input.Digitizer.Touch.ContactReports
 
 *Digitizer Reliability*
 
@@ -952,7 +952,7 @@ This requirement was formerly known as **Device.Digitizer.Touch.NoiseSupression*
 
 A digitizer shall only report data corresponding to user input. No other data, often referred to as "Phantom” or “Ghost contacts" shall be reported. This applies both when the system is actively receiving user input and when it is not receiving user input and under both AC and DC power conditions (where applicable).
 
-## Device.Input.Digitizer.Touch.CustomGestures
+### Device.Input.Digitizer.Touch.CustomGestures
 
 *Custom run-time system gestures*
 
@@ -973,7 +973,7 @@ Only gestures designed to wake the system are allowed. Custom gestures designed 
 
 This requirement ensures that the platform maintains a consistent and reliable gesture experience across all Windows devices.
 
-## Device.Input.Digitizer.Touch.FingerSeparation
+### Device.Input.Digitizer.Touch.FingerSeparation
 
 *Finger separation*
 
@@ -996,7 +996,7 @@ All contacts shall be uniquely tracked and reported when &lt;= 8mm apart measure
 
 This requirement ensures compatibility with inbox gestures such as pinch/zoom, multi-finger taps, and parallel finger manipulations can be performed reliably.
 
-## Device.Input.Digitizer.Touch.HIDCompliant
+### Device.Input.Digitizer.Touch.HIDCompliant
 
 *HID Compliant Device Firmware and/or HID Mini-port Driver*
 
@@ -1016,7 +1016,7 @@ This requirement ensures compatibility with inbox gestures such as pinch/zoom, m
 
 See Device.Input.Digitizer.Base.HIDCompliant.
 
-## Device.Input.Digitizer.Touch.Jitter
+### Device.Input.Digitizer.Touch.Jitter
 
 *Jitter and linearity*
 
@@ -1051,7 +1051,7 @@ This requirement ensures compatibility with inbox gestures, manipulations and in
 
 -   Finger painting/inking looks acceptable
 
-## Device.Input.Digitizer.Touch.Latency
+### Device.Input.Digitizer.Touch.Latency
 
 *Response latency*
 
@@ -1123,7 +1123,7 @@ A touch digitizer shall have response latencies as follows:
     </ul>
 </html>
 
-## Device.Input.Digitizer.Touch.MinContactCount
+### Device.Input.Digitizer.Touch.MinContactCount
 
 *Minimum simultaneous reportable contacts*
 
@@ -1146,7 +1146,7 @@ A touch digitizer shall support a minimum of five simultaneous touch contacts.
 
 This requirement ensures compatibility with inbox gestures, accessibility tools, and 3rd party applications.
 
-## Device.Input.Digitizer.Touch.ReportRate
+### Device.Input.Digitizer.Touch.ReportRate
 
 *Report rate*
 
@@ -1176,7 +1176,7 @@ For example:
 
 This requirement ensures a compatible, smooth and stutter-free gesturing experience when performing pan and pinch/zoom interactions utilizing the Windows Direct Manipulation framework.
 
-## Device.Input.Digitizer.Touch.Resolution
+### Device.Input.Digitizer.Touch.Resolution
 
 *Input resolution*
 
@@ -1198,7 +1198,7 @@ For additional details on verification and testing of this requirement please se
 
 This requirement ensures that every pixel is available for touch interaction and ensures a reliable and smooth touch experience.
 
-## Device.Input.Digitizer.Touch.ThirdPartyDrivers
+### Device.Input.Digitizer.Touch.ThirdPartyDrivers
 
 *Servicing and 3<sup>rd</sup> Party Driver Availability*
 

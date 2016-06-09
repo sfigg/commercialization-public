@@ -4,11 +4,11 @@
  - [Device.Input.SmartCardReader](#Device.Input.SmartCardReader)
 
 <a name="Device.Input.SmartCardMiniDriver"></a>
-# Device.Input.SmartCardMiniDriver
+## Device.Input.SmartCardMiniDriver
 
 *MiniDriver program for smart cards*
 
-## Device.Input.SmartCardMiniDriver.DoNotStopWhenResourcesAreUnavailable
+### Device.Input.SmartCardMiniDriver.DoNotStopWhenResourcesAreUnavailable
 
 *Smart card driver must not stop the system if required resources are not available.*
 
@@ -28,7 +28,7 @@
 
 A smart card driver must not interrupt system operation if resources that are required by the reader are not available.
 
-## Device.Input.SmartCardMiniDriver.SpecsAndCertifications
+### Device.Input.SmartCardMiniDriver.SpecsAndCertifications
 
 *Windows Smart Card Minidrivers must meet Windows Smart Card Minidriver Version 5 Specifications and Certification Criteria.*
 
@@ -107,7 +107,7 @@ The following table describes the minimum and maximum specification version that
 
  
 
-## Device.Input.SmartCardMiniDriver.SupportMultipleInstancesOnASystem
+### Device.Input.SmartCardMiniDriver.SupportMultipleInstancesOnASystem
 
 *Smart card driver can support multiple instances of the same device on a system.*
 
@@ -128,9 +128,9 @@ The following table describes the minimum and maximum specification version that
 The smart card driver must be able to function properly if more than one instance of the devices is installed on a system. The functionality of each device instance must be consistent. When a separate instance is loaded, functionality cannot be reduced.
 
 <a name="Device.Input.SmartCardReader"></a>
-# Device.Input.SmartCardReader
+## Device.Input.SmartCardReader
 
-## Device.Input.SmartCardReader.PinDataEntryKeyboardCompliesWithIso
+### Device.Input.SmartCardReader.PinDataEntryKeyboardCompliesWithIso
 
 *An input device that implements a PIN data-entry keyboard must comply with ISO.*
 
@@ -151,7 +151,7 @@ The smart card driver must be able to function properly if more than one instanc
 An input device that uses a keyboard for PIN entry must comply with ISO 13491-1:1998 Banking--Secure Cryptographic Devices (retail) Part 1: Concepts, Requirements, and Evaluation Methods.
  
 
-## Device.Input.SmartCardReader.SmartCardService
+### Device.Input.SmartCardReader.SmartCardService
 
 *The Smart Card Service must start after a Smart Card is inserted into a reader.*
 
@@ -175,7 +175,7 @@ The Smart Card Service must be started after a Smart Card is inserted into the S
 
 This requirement is necessary for reliability of the smart card function.
 
-## Device.Input.SmartCardReader.Supports258And259BytePackets
+### Device.Input.SmartCardReader.Supports258And259BytePackets
 
 *A reader must support 258-byte packets in T=0 and 259-byte packets in T=1.*
 
@@ -199,7 +199,7 @@ A smart card reader must support the exchange of the following in a single trans
 
 -   259-byte packets in T=1; that is, 254 information bytes plus node address, packet control bytes, length, and two error detection code bytes.
 
-## Device.Input.SmartCardReader.SupportsDirectAndInverseConvention
+### Device.Input.SmartCardReader.SupportsDirectAndInverseConvention
 
 *A smart card reader must support direct and inverse-convention smart cards.*
 
@@ -220,7 +220,7 @@ A smart card reader must support the exchange of the following in a single trans
 A smart card reader must support both direct and inverse-convention smart cards either in hardware or in the operating system driver.
  
 
-## Device.Input.SmartCardReader.SupportsInsertionAndRemovalMonitor
+### Device.Input.SmartCardReader.SupportsInsertionAndRemovalMonitor
 
 *A reader must support smart card insertion and removal monitor.*
 
@@ -241,7 +241,7 @@ A smart card reader must support both direct and inverse-convention smart cards 
 A smart card reader must be able to detect and report smart card insertions and removals with no user intervention other than removing or inserting the smart card itself. The reader must use an interrupt mechanism to report the smart card insertion or removal to the system. A driver polling method to detect smart card insertion and removals is not an acceptable way to meet this requirement.
  
 
-## Device.Input.SmartCardReader.SupportsMinClockFrequency
+### Device.Input.SmartCardReader.SupportsMinClockFrequency
 
 *A smart card reader must support a 3.5795-MHz minimum clock frequency.*
 
@@ -262,7 +262,7 @@ A smart card reader must be able to detect and report smart card insertions and 
 A smart card reader must support a minimum clock frequency of 3.5795 MHz.
  
 
-## Device.Input.SmartCardReader.SupportsMinDataRateOf9600bps
+### Device.Input.SmartCardReader.SupportsMinDataRateOf9600bps
 
 *A smar card reader must support a minimum data rate of 9600 bps.*
 
@@ -282,7 +282,7 @@ A smart card reader must support a minimum clock frequency of 3.5795 MHz.
 
 A smart card reader must be able to transfer data at a rate of 9600 bps or higher.
 
-## Device.Input.SmartCardReader.SupportsNegotiableAndSpecificModes
+### Device.Input.SmartCardReader.SupportsNegotiableAndSpecificModes
 
 *A reader must support negotiable and specific modes according to the ISO/IEC specification.*
 
@@ -305,7 +305,7 @@ The **Power Down** command for ISO 7816-3 is optional, but the **Reset** command
 PTS is not required.
  
 
-## Device.Input.SmartCardReader.SupportsResetCommand
+### Device.Input.SmartCardReader.SupportsResetCommand
 
 *A smart card reader must support the Reset command.*
 
@@ -336,7 +336,7 @@ The following protocol rules apply for the T=1 protocol:
 
  
 
-## Device.Input.SmartCardReader.UsbCcidCompliesWithUsbDeviceClassSpec
+### Device.Input.SmartCardReader.UsbCcidCompliesWithUsbDeviceClassSpec
 
 *A USB smart card CCID reader must comply with USB Device Class Specification for USB Chip/Smart Card Interface Devices.*
 
@@ -356,7 +356,7 @@ The following protocol rules apply for the T=1 protocol:
 
 If the reader supports USB connectivity, CCID is required. To ensure that USB smart card readers function properly with the USB host, smart card CCID readers must comply with USB Device Class: Smart Card Specification for Integrated Circuit(s) Cards Interface Devices, Revision 1.00 or later.
 
-## Device.Input.SmartCardReader.UsbCcidIssuesNak
+### Device.Input.SmartCardReader.UsbCcidIssuesNak
 
 *A USB CCID reader must issue an NAK on an interrupt pipe if a device has no interrupt data to transmit.*
 

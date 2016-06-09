@@ -5,9 +5,9 @@
 -->
 
 <a name="Device.Network.Switch.Manageability"></a>
-# Device.Network.Switch.Manageability
+## Device.Network.Switch.Manageability
 
-## Device.Network.Switch.Manageability.NetworkSwitchProfile (If Implemented)
+### Device.Network.Switch.Manageability.NetworkSwitchProfile (If Implemented)
 
 *Device.Network.Switch.Manageability.NetworkSwitchProfile*
 
@@ -57,7 +57,7 @@ The proposed DTMF Network Switch Profile defines the CIM model and associated be
 
 -   Get, Set Banner for login
 
-## Device.Network.Switch.Manageability.NetworkSwitchProfileView
+### Device.Network.Switch.Manageability.NetworkSwitchProfileView
 
 *This is a mandatory requirement for certification that the Layer-3 capable network switch must have the capability to be configured by the Windows PowerShell Desired State Configuration (DSC) mechanism.*
 

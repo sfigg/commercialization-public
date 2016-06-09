@@ -5,11 +5,11 @@
 -->
 
 <a name="Device.Connectivity.Network.VerticalPairing"></a>
-# Device.Connectivity.Network.VerticalPairing
+## Device.Connectivity.Network.VerticalPairing
 
 *Root for former Rally technologies*
 
-## Device.Connectivity.Network.VerticalPairing.WCN
+### Device.Connectivity.Network.VerticalPairing.WCN
 
 *An 802.11 network-enabled device that operates as a station (STA) must implement WCN-NET and meet basic 802.11 requirements.*
 

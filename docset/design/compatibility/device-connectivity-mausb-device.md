@@ -5,7 +5,7 @@
 -->
 
 <a name="Device.Connectivity.MAUSB.Device "></a>
-# Device.Connectivity.MAUSB.Device 
+## Device.Connectivity.MAUSB.Device 
 
 The following requirements apply to MA-USB Devices.
 
@@ -31,7 +31,7 @@ This refers to the USB hub logic block in a MA-USB Hub that performs USB device 
 
 Note that Integrated USB Devices behind a USB 2.0 or USB 3.1 hub behind a MA-USB Hub are required to meet Wired USB Device Requirements listed under Device.Connectivity.UsbDevices category.
 
-## Device.Connectivity.MAUSB.Device.BulkOutBufferSize
+### Device.Connectivity.MAUSB.Device.BulkOutBufferSize
 
 *MA-USB device must support at least 64KB of Buffer Space per non SuperSpeed Bulk Out endpoints and at least 512KB of Buffer Space per SuperSpeed Bulk Out endpoints*
 
@@ -58,7 +58,7 @@ MA-USB device must support these minimum buffer sizes to be able to work reliabl
 
  - non-SuperSpeed Bulk Out - 64KB
 
-## Device.Connectivity.MAUSB.Device.FunctionSuspendSelectiveSuspend
+### Device.Connectivity.MAUSB.Device.FunctionSuspendSelectiveSuspend
 
 *MA-USB devices that have integrated 3.1 devices behind them must correctly implement Function Suspend.*
 
@@ -80,7 +80,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 Any function of the integrated 3.1 device that is in a suspend state before a MA-USB device is suspended remains in the function suspend state when the MA-USB device is resumed from the suspended state. Any function of the integrated 3.1 device that is in a suspend state before the integrated device is suspended remains in the function suspend state when the integrated device is resumed from the suspended state. Integrated USB devices that are resumed from the suspended state retain a minimum set of device state information as specified in section 9.2.5.2 of the USB 3.0 Specification. Integrated USB device that is in a suspended stare before a MA-USB device is suspended remains in the suspended state when the MA-USB device is resumed from the suspended state.
 
-## Device.Connectivity.MAUSB.Device.IPMode
+### Device.Connectivity.MAUSB.Device.IPMode
 
 *MA-USB devices must implement support for IP Mode*
 
@@ -102,7 +102,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB devices must implement support for IP Mode as specified in the MA-USB specification v1.0a, Section 4.5.3.2 “Requirements for IP Mode”.
 
-## Device.Connectivity.MAUSB.Device.IsochronousDeviceAndDriver
+### Device.Connectivity.MAUSB.Device.IsochronousDeviceAndDriver
 
 *Isochronous USB device and driver requirement*
 
@@ -145,7 +145,7 @@ See section 9.6.5 in the Universal Serial Bus Specification, Revision 2.0.
 If two or more devices are connected that use more than 50 percent of the bus bandwidth and do not provide alternate settings, only one of the devices works at a time.
 See USB Specification, Revision 2.0 or later, Sections 5.6 and 5.7.
 
-## Device.Connectivity.MAUSB.Device.MAUSBSpecCompliance
+### Device.Connectivity.MAUSB.Device.MAUSBSpecCompliance
 
 *MA-USB Devices must be USB-IF Specification Compliant*
 
@@ -167,7 +167,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB Devices must be compliant with MA-USB specification v1.0a or later.
 
-## Device.Connectivity.MAUSB.Device.MsOsContainerId
+### Device.Connectivity.MAUSB.Device.MsOsContainerId
 
 *USB devices that implement the Microsoft OS Container ID descriptor must implement it correctly.*
 
@@ -191,7 +191,7 @@ If an Integrated multifunction USB device implements the Microsoft® operating s
 
 The Microsoft operating system **ContainerID** descriptor allows Windows® to correctly detect Integrated multifunction devices. The descriptor provides a way for all the device nodes to appear as one physical object in the **Devices and Printers** user interface (UI).
 
-## Device.Connectivity.MAUSB.Device.MustBeFunctionalAfterResume
+### Device.Connectivity.MAUSB.Device.MustBeFunctionalAfterResume
 
 *MA-USB devices must be functional after resuming from system power states.*
 
@@ -215,7 +215,7 @@ After MA-USB Resume, MA-USB Device PAL must be in a functional state without req
 
 Devices not entering a timely ready state will be marked code 10 or other by the system. Certain classes of devices do not properly respond to system events, such as resume, and require upper driver or expect precise boot timings in order to function properly.
 
-## Device.Connectivity.MAUSB.Device.MustNotDisconnectDuringSuspend
+### Device.Connectivity.MAUSB.Device.MustNotDisconnectDuringSuspend
 
 *MA-USB devices or Integrated USB Devices must not disconnect while going to or resuming from suspend.*
 
@@ -239,7 +239,7 @@ MA-USB Device must not disconnect from the host during MA-USB Suspend or Resume.
 
 Integrated USB devices must not disconnect during USB Suspend/Resume or MA-USB Suspend/Resume process.
 
-## Device.Connectivity.MAUSB.Device.RespondAllStringRequests
+### Device.Connectivity.MAUSB.Device.RespondAllStringRequests
 
 *A Integrated USB device must respond to all string requests that the host sends to indexes.*
 
@@ -261,7 +261,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 Integrated USB devices must respond accordingly to string requests that the host sends. Integrated devices must stall if no string is stored at the index being queried or if a request error exists. Integrated devices must not reset themselves or stop functioning. This is described in USB Specification, Revision 2.0 or later, Section 9.6.
 
-## Device.Connectivity.MAUSB.Device.ResponsesLimitedByWlengthField
+### Device.Connectivity.MAUSB.Device.ResponsesLimitedByWlengthField
 
 *Integrated USB device responss to host requests are limited in size by the wLength field.*
 
@@ -284,7 +284,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 All USB device requests contain a wLength field. Responses by the Integrated USB device to host requests must be of size &lt;= wLength field of the device request as defined in the USB Specification, Revision1.1 or later, Section 9.3.5.
  
 
-## Device.Connectivity.MAUSB.Device.SerialNumbers
+### Device.Connectivity.MAUSB.Device.SerialNumbers
 
 *USB serial numbers are implemented by the Integrated USB Device for specific device classes and are unique across specific device models.*
 
@@ -326,7 +326,7 @@ For more information on USB device class details, see "Defined 1.0 Class Codes" 
 For more information on implementation of serial numbers, see USB Specification, Revision 2.0 or later, Section 9.6.
  
 
-## Device.Connectivity.MAUSB.Device.SerialNumbersUseValidCharacters
+### Device.Connectivity.MAUSB.Device.SerialNumbersUseValidCharacters
 
 *An Integrated USB device that implements manufacturer-defined serial numbers must contain valid characters.*
 
@@ -348,7 +348,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 A USB serial number must be a string that contains a manufacturer-determined ID composed of valid characters. Valid characters are defined in the Windows Driver Kit, "USB\_DEVICE\_DESCRIPTOR."
 
-## Device.Connectivity.MAUSB.Device.SpeedCapabilityMatch
+### Device.Connectivity.MAUSB.Device.SpeedCapabilityMatch
 
 *Integrated USB Device must enumerate at the USB speed advertised in the Speed Capability Descriptor of the MA-USB Device.*
 
@@ -370,7 +370,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 *Integrated USB Device must enumerate at the USB speed advertised in the Speed Capability Descriptor of the MA-USB Device. Speed Capability Descriptor is part of the Capability Response returned by the MA-USB Device as specified in Section 6.3.3.1 of MA-USB Specification v1.0a.*
 
-## Device.Connectivity.MAUSB.Device.SupportsWiFiDirectAndWSB
+### Device.Connectivity.MAUSB.Device.SupportsWiFiDirectAndWSB
 
 *MA-USB Devices support WiFi Direct Connection and WiFi Serial Bus*
 
@@ -398,7 +398,7 @@ Network interface implementation MA-USB Device must meet the following requireme
 
 -   MA-USB Hub/Device must implement WSB v0.18&lt;latest&gt; as an advertiser
 
-## Device.Connectivity.MAUSB.Device.TCPImplementation
+### Device.Connectivity.MAUSB.Device.TCPImplementation
 
 *MA-USB TCP Implementation for Reliability*
 
@@ -426,7 +426,7 @@ TCP implementation of MA-USB Device must meet the following requirements to work
 
 -   TCP must provide at least 64KB of Receive Buffer space.
 
-## Device.Connectivity.MAUSB.Device.UseUsbClassOnlyForControllerOrHub
+### Device.Connectivity.MAUSB.Device.UseUsbClassOnlyForControllerOrHub
 
 *Third-party INF files include the class "USB" only if the device is a USB host controller, a root, or an external hub.*
 

@@ -19,11 +19,11 @@
  - [Device.DevFund.StaticTools](#Device.DevFund.StaticTools)
 
 <a name="Device.DevFund.CDA"></a>
-# Device.DevFund.CDA
+## Device.DevFund.CDA
 
 *Custom Driver Access for privileged application usage.*
 
-## Device.DevFund.CDA.Application
+### Device.DevFund.CDA.Application
 
 *Custom Driver Access*
 
@@ -55,11 +55,11 @@ By declaring a restricted interface, the following requirements must be met:
 A device driver declares an interface is restricted by setting the DEVPKEY\_DeviceInterface\_Restricted property to true on that interface.  
 
 <a name="Device.DevFund.DeviceGuard"></a>
-# Device.DevFund.DeviceGuard
+## Device.DevFund.DeviceGuard
 
 *All kernel drivers must be built to be compatible with <http://aka.ms/DeviceGuard>*
 
-## Device.DevFund.DeviceGuard.DriverCompatibility
+### Device.DevFund.DeviceGuard.DriverCompatibility
 
 <table>
 <tr>
@@ -89,11 +89,11 @@ The following attributes must be set on the sys file
 You can find more details on the [VERSIONINFO resource on MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa381058.aspx).
 
 <a name="Device.DevFund.DriverFramework.KMDF"></a>
-# Device.DevFund.DriverFramework.KMDF
+## Device.DevFund.DriverFramework.KMDF
 
 *Driver framework requirements for KMDF*
 
-## Device.DevFund.DriverFramework.KMDF.Reliability
+### Device.DevFund.DriverFramework.KMDF.Reliability
 
 *Kernel Mode Driver Framework (KMDF) drivers must be architected to maximize reliability and stability and do not "leak" resources such as memory and KMDF objects.*
 
@@ -144,7 +144,7 @@ This command will run the KMDF driver under Driver Verifier with all flags set e
 http://msdn.microsoft.com/en-us/library/ff545448.aspx
 In the Windows Logo Kit, the WDF Test can be run to validate this requirement.
 
-## Device.DevFund.DriverFramework.KMDF.WDFProperINF
+### Device.DevFund.DriverFramework.KMDF.WDFProperINF
 
 *Windows Driver Framework (WDF) driver INF files must be properly structured.*
 
@@ -232,11 +232,11 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 
 
 <a name="Device.DevFund.DriverFramework.UMDF"></a>
-# Device.DevFund.DriverFramework.UMDF
+## Device.DevFund.DriverFramework.UMDF
 
 *Driver framework requirements for UMDF*
 
-## Device.DevFund.DriverFramework.UMDF.Reliability
+### Device.DevFund.DriverFramework.UMDF.Reliability
 
 *User Mode Driver Framework (UMDF) drivers must be secure, stable, reliable, and not have application compatibility issues.*
 
@@ -297,7 +297,7 @@ appverif -enable handles locks heaps memory COM exceptions TLS -for WUDFHost.exe
 
 For more information about UMDF, visit the following website: <http://www.microsoft.com/whdc/driver/wdf/UMDF.mspx>.
 
-## Device.DevFund.DriverFramework.UMDF.WDFProperINF
+### Device.DevFund.DriverFramework.UMDF.WDFProperINF
 
 *Windows Driver Framework (WDF) driver INF files must be properly structured.*
 
@@ -382,11 +382,11 @@ http://msdn.microsoft.com/en-us/library/ff560526.aspx</p>
 
 
 <a name="Device.DevFund.Firmware"></a>
-# Device.DevFund.Firmware
+## Device.DevFund.Firmware
 
 *Driver package requirements for firmware update package*
 
-## Device.DevFund.Firmware.UpdateDriverPackage
+### Device.DevFund.Firmware.UpdateDriverPackage
 
 *These requirements apply to any firmware update driver package that is submitted to Microsoft for approval and signing.*
 
@@ -417,9 +417,9 @@ In addition to standard driver requirements, the following requirements apply to
 -   A successful firmware upgrade must not reduce or eliminate the functionality of any devices in the system.
 
 <a name="Device.DevFund.HALExtension"></a>
-# Device.DevFund.HALExtension
+## Device.DevFund.HALExtension
 
-## Device.DevFund.HALExtension.HAL
+### Device.DevFund.HALExtension.HAL
 
 *These requirements apply to HAL Extensions that is submitted to MS for approval and signing.*
 
@@ -440,11 +440,11 @@ In addition to standard driver requirements, the following requirements apply to
 -   HAL Extension should be signed correctly.
 
 <a name="Device.DevFund.INF"></a>
-# Device.DevFund.INF
+## Device.DevFund.INF
 
 *INF restictions*
 
-## Device.DevFund.INF.AddReg
+### Device.DevFund.INF.AddReg
 
 *When using an AddReg directive, each AddReg entry must specify HKR as the registry root.*
 
@@ -518,7 +518,7 @@ More details on MFTs can be found in the MSDN at: <http://msdn.microsoft.com/en-
 </table>
 
 
-## Device.DevFund.INF.AddService
+### Device.DevFund.INF.AddService
 
 *INF files can only install driver-related services.*
 
@@ -559,7 +559,7 @@ An INF AddService directive service-install-section may only specify a ServiceTy
 </table>
 
 
-## Device.DevFund.INF.ClassInstall32
+### Device.DevFund.INF.ClassInstall32
 
 *INF files must not define a custom class installer within a ClassInstall32 section.*
 
@@ -613,7 +613,7 @@ AddReg=SetupClassAddReg    ; Reference to the ClassInstall32 AddReg section.
 
 
 
-## Device.DevFund.INF.ComplexDeviceMatching
+### Device.DevFund.INF.ComplexDeviceMatching
 
 *INF directives related to complex device matching logic are not supported.*
 
@@ -650,7 +650,7 @@ The following INF directive may not be referenced in an INF file:
 </table>
 
 
-## Device.DevFund.INF.DDInstall.CoInstallers
+### Device.DevFund.INF.DDInstall.CoInstallers
 
 *INF files must not reference any co-installers within a DDInstall.CoInstallers section.*
 
@@ -726,7 +726,7 @@ Device-class co-installer example:
 
 
 
-## Device.DevFund.INF.DeviceConfigOnly
+### Device.DevFund.INF.DeviceConfigOnly
 
 *INF files cannot reference INF directives that are not directly related to the configuration of a device.*
 
@@ -771,7 +771,7 @@ Note that while the RegisterDlls directive can no longer be declared in an INF f
 
  
 
-## Device.DevFund.INF.DeviceResourceConfig
+### Device.DevFund.INF.DeviceResourceConfig
 
 *INF based device resource configuration and non-PnP related configuration cannot be performed within an INF file.*
 
@@ -812,7 +812,7 @@ The following INF sections and directives cannot be referenced in an INF file:
 
 
 
-## Device.DevFund.INF.FileCopyRestriction
+### Device.DevFund.INF.FileCopyRestriction
 
 *INF based file copy restrictions*
 
@@ -853,7 +853,7 @@ Only these destination directories expressed as the appropriate DIRID will be a 
 
 
 
-## Device.DevFund.INF.FileOrRegistryModification
+### Device.DevFund.INF.FileOrRegistryModification
 
 *Deleting or modifying existing files, registry entries, and/or services is not allowed from within an INF file.*
 
@@ -890,7 +890,7 @@ The following INF directives may not be referenced in an INF file:
 <td><p>This is a requirement for Windows v10.0 Mobile (ARM, ARM64, x86), but recommended for Windows v10.0 Client (x64, x86) and Windows v10.0 Server x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
-## Device.DevFund.INF.InstallManagement
+### Device.DevFund.INF.InstallManagement
 
 *Management of files installed using an INF file is restricted to the system.*
 
@@ -926,7 +926,7 @@ PnpLockDown=1
 <td><p>This is a requirement for Windows v10.0 Mobile (ARM, ARM64, x86), but recommended for Windows v10.0 Client (x64, x86) and Windows v10.0 Server x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
-## Device.DevFund.INF.LegacySyntax
+### Device.DevFund.INF.LegacySyntax
 
 *Legacy service configuration cannot be performed within an INF file.*
 
@@ -958,7 +958,7 @@ The following INF service install section directive may not be referenced in an 
 <td><p>This is a requirement for Windows v10.0 Mobile (ARM, ARM64, x86), but recommended for Windows v10.0 Client (x64, x86) and Windows v10.0 Server x64. It will be required in the future for those architectures.</p></td>
 </tr></table>
 
-## Device.DevFund.INF.TargetOSVersion
+### Device.DevFund.INF.TargetOSVersion
 
 *The TargetOSVersion decoration in an INF file cannot contain a ProductType flag or SuiteMask flag.*
 
@@ -996,11 +996,11 @@ Beginning in Windows 8, the ProductType field and SuiteMask field are no longer 
 </tr></table>
 
 <a name="Device.DevFund.Memory"></a>
-# Device.DevFund.Memory
+## Device.DevFund.Memory
 
 *Requirements related to memory profile*
 
-## Device.DevFund.Memory.DriverFootprint
+### Device.DevFund.Memory.DriverFootprint
 
 *Drivers must occupy a limited memory footprint.*
 
@@ -1053,7 +1053,7 @@ The corresponding test will check the size of the drivers non-paged code pages i
 </tr>
 </table>
 
-## Device.DevFund.Memory.NXPool
+### Device.DevFund.Memory.NXPool
 
 *All driver pool allocations must be in NX pool.*
 
@@ -1088,11 +1088,11 @@ A new type of non-paged pool that is a non-executable (NX) pool has been introdu
 
 
 <a name="Device.DevFund.Reliability"></a>
-# Device.DevFund.Reliability
+## Device.DevFund.Reliability
 
 *Reliability tests containing the content of the former DEVFUND tests.*
 
-## Device.DevFund.Reliability.BasicReliabilityAndPerformance
+### Device.DevFund.Reliability.BasicReliabilityAndPerformance
 
 *Drivers are architected to maximize reliability and stability and do not "leak" resources such as memory.*
 
@@ -1175,7 +1175,7 @@ In addition, Driver Verifier will be enabled on all applicable kit tests.
 </table>
 
 
-## Device.DevFund.Reliability.BasicSecurity
+### Device.DevFund.Reliability.BasicSecurity
 
 *Device driver must properly handle various user-mode as well as kernel to kernel I/O requests (DEVFUND-0004).*
 
@@ -1206,7 +1206,7 @@ Potential security vulnerabilities include the failure to check for a buffer ove
 
 For additional information, see the "Creating Reliable and Secure Drivers" and "Creating Reliable Kernel-Mode Drivers" topics in the Windows Driver Kit.
 
-## Device.DevFund.Reliability.BootDriverEmbeddedSignature
+### Device.DevFund.Reliability.BootDriverEmbeddedSignature
 
 *Boot drivers must be self-signed with an embedded signature.*
 
@@ -1273,7 +1273,7 @@ In the Windows Logo Kit, this requirement will be tested by using the Embedded S
 </table>
 
 
-## Device.DevFund.Reliability.DriverInstallUninstallReinstall
+### Device.DevFund.Reliability.DriverInstallUninstallReinstall
 
 *Device and driver installation/un-installation/re-installation must be completed without any error. This includes function drivers for a multi-function device.*
 
@@ -1316,7 +1316,7 @@ This requirement will be tested by using the "Reinstall with IO" test.
 </table>
 
 
-## Device.DevFund.Reliability.DriverUninstallInstallOtherDeviceStability
+### Device.DevFund.Reliability.DriverUninstallInstallOtherDeviceStability
 
 *Installing or uninstalling the driver must not reduce or eliminate functionality of other devices or other functional parts of the same device installed on the system.*
 
@@ -1343,7 +1343,7 @@ This requirement also applies to functional units of a multi-function device, wh
 The steps for testing this requirement are outlined in the Device install check for other device stability test: <http://msdn.microsoft.com/en-us/library/ff561407.aspx>.
  
 
-## Device.DevFund.Reliability.NoReplacingSysComponents
+### Device.DevFund.Reliability.NoReplacingSysComponents
 
 *Vendor-supplied drivers or software must not replace system components.*
 
@@ -1367,7 +1367,7 @@ If a manufacturer’s information file (INF) copies any files that the operating
 
 Drivers that are not provided by the operating system are not allowed to be named after an operating system supplied driver.
 
-## Device.DevFund.Reliability.NormalOpWithDEP
+### Device.DevFund.Reliability.NormalOpWithDEP
 
 *All drivers must operate normally and execute without errors with Data Execution Prevention (DEP) enabled.*
 
@@ -1408,7 +1408,7 @@ The test for DEP is currently part of the systems test category in the Windows H
 </table>
 
 
-## Device.DevFund.Reliability.PnPIDs
+### Device.DevFund.Reliability.PnPIDs
 
 *Plug and Play IDs embedded in hardware devices, including each functional unit of a multi-function device, must have device IDs to support Plug and Play.*
 
@@ -1468,7 +1468,7 @@ See Windows Hardware Instrumentation Implementation Guidelines (WHIIG), Version1
 </table>
 
 
-## Device.DevFund.Reliability.PnPIRPs
+### Device.DevFund.Reliability.PnPIRPs
 
 *Drivers must support all PnP IRPs*
 
@@ -1516,7 +1516,7 @@ The following IRPs are often the cause of driver issues. Special attention shoul
 
  
 
-## Device.DevFund.Reliability.ProperINF
+### Device.DevFund.Reliability.ProperINF
 
 *Device driver must have a properly formatted INF for its device class (DEVFUND-0001).*
 
@@ -1554,7 +1554,7 @@ Note: If the device does not provide an INF file (that is, the device uses the i
 
 
 
-## Device.DevFund.Reliability.RemoteDesktopServices
+### Device.DevFund.Reliability.RemoteDesktopServices
 
 *Client and server devices must function properly before, during, and after fast user switching or a Microsoft Remote Desktop Services session (DEVFUND-0009).*
 
@@ -1585,7 +1585,7 @@ Devices must support Fast User Switching (FUS) and Remote Desktop Services witho
 </table>
 
 
-## Device.DevFund.Reliability.PCSupportsLowPowerStates
+### Device.DevFund.Reliability.PCSupportsLowPowerStates
 
 *All devices and drivers must support S4 and S5* *and either S0 low power idle or S3 sleep states of the system they are integrated on or connected to.*
 
@@ -1628,7 +1628,7 @@ The system that is used for testing must support S0, S3, S4, and S5.
 
 Note that systems that support Connected Standby will not support S3, and may or may not support S4. Devices in such systems must support Connected Standby, and S4 requests of that system (if applicable).
 
-## Device.DevFund.Reliability.Signable
+### Device.DevFund.Reliability.Signable
 
 *Device drivers must be able to be signed by Microsoft.*
 
@@ -1668,7 +1668,7 @@ The INF2CAT signability verification tool installs automatically the first time 
 </table>
 
 
-## Device.DevFund.Reliability.SWDeviceInstallsUsePnPAPIs
+### Device.DevFund.Reliability.SWDeviceInstallsUsePnPAPIs
 
 *Software-initiated device-installs must use Plug and Play APIs to install device drivers.*
 
@@ -1693,11 +1693,11 @@ Device installers that directly manipulate Plug and Play resources contribute to
 In Windows Vista® and later operating systems, standard Plug and Play calls such as the **SetupCopyOEMInf** call pre-stage all required files for device installation on the system automatically. Pre-staging of driver packages will facilitate driver package migration during a system upgrade to Windows Vista or later Windows operating systems. We strongly encourage the use of the Driver Install Framework tools to meet this logo requirement. The use of DIFxAPI, DIFxAPP, or DPInst DIFx tools fulfills this requirement.
 
 <a name="Device.DevFund.Reliability.3rdParty"></a>
-# Device.DevFund.Reliability.3rdParty
+## Device.DevFund.Reliability.3rdParty
 
 *Reliability tests containing content of the former DEVFUND tests.*
 
-## Device.DevFund.Reliability.3rdParty.FormerTests
+### Device.DevFund.Reliability.3rdParty.FormerTests
 
 *Former Tests Mapping Requirement*
 
@@ -1723,11 +1723,11 @@ The feature Device.DevFund.Reliability.3rdParty and this requirement are a plac
 |------------|------------------------------------------------------------------------------------------------|
 
 <a name="Device.DevFund.Reliability.Interrupts"></a>
-# Device.DevFund.Reliability.Interrupts
+## Device.DevFund.Reliability.Interrupts
 
 *Reliability with respect to device interrupts*
 
-## Device.DevFund.Reliability.Interrupts.BasicReliabilityAndPerformance
+### Device.DevFund.Reliability.Interrupts.BasicReliabilityAndPerformance
 
 *Drivers must not exceed the maximum number of interrupts, and must support resource arbitration down to a minimum level as defined by the operating system*
 
@@ -1756,11 +1756,11 @@ Interrupt arbitration may require multiple iterations. Drivers must be prepared
 
 
 <a name="Device.DevFund.ReliabilityDisk"></a>
-# Device.DevFund.ReliabilityDisk
+## Device.DevFund.ReliabilityDisk
 
 *Reliability tests targeting disk devices*
 
-## Device.DevFund.ReliabilityDisk.IOCompletionCancellation
+### Device.DevFund.ReliabilityDisk.IOCompletionCancellation
 
 *A device driver must follow the design details in the I/O Completion/Cancellation Guidelines (DEVFUND-0013).*
 
@@ -1811,11 +1811,11 @@ Using the System's Cancel Spin Lock
 
 
 <a name="Device.DevFund.Rollback"></a>
-# Device.DevFund.Rollback
+## Device.DevFund.Rollback
 
 *Driver Rollback*
 
-## Device.DevFund.Rollback.Driver
+### Device.DevFund.Rollback.Driver
 
 <table>
 <tr>
@@ -1832,11 +1832,11 @@ Using the System's Cancel Spin Lock
 In order for end users to be able to roll back a driver (i.e., reinstall the previously installed driver), device drivers must be able to be uninstalled and reinstalled with no failures.
 
 <a name="Device.DevFund.Security"></a>
-# Device.DevFund.Security
+## Device.DevFund.Security
 
 *Additional TDI filter driver and LSP requirements related to security.*
 
-## Device.DevFund.Security.NoTDIFilterAndLSP
+### Device.DevFund.Security.NoTDIFilterAndLSP
 
 *No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage.*
 
@@ -1868,9 +1868,9 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 
 
 <a name="Device.DevFund.Server"></a>
-# Device.DevFund.Server
+## Device.DevFund.Server
 
-## Device.DevFund.Server.CommandLineConfigurable
+### Device.DevFund.Server.CommandLineConfigurable
 
 *Windows Server device drivers which have configurable settings provide command line utility or function for device and driver management*
 
@@ -1928,7 +1928,7 @@ Any device driver that does not meet this requirement will not be usable on Nano
 
 Enforcement Date: Feb 2016
 
-## Device.DevFund.Server.MultipleProcessorGroups
+### Device.DevFund.Server.MultipleProcessorGroups
 
 *Drivers must operate correctly on servers that have processors configured into multiple processor groups*
 
@@ -1973,7 +1973,7 @@ The command lines to remove the group settings and reboot the computer are the f
 >
 > shutdown.exe -r -t 0 -f
 
-## Device.DevFund.Server.OperateInServerCore
+### Device.DevFund.Server.OperateInServerCore
 
 *Device drivers must install, configure, be serviced, and operate in Windows Nano Server and Server Core.*
 
@@ -1996,7 +1996,7 @@ Any device driver that does not meet this requirement will not be usable on Nano
 
 Enforcement Date: Feb 2016
 
-## Device.DevFund.Server.ServerPowerManagement
+### Device.DevFund.Server.ServerPowerManagement
 
 *Windows Server device drivers must support Query Power and Set Power Management requests*
 
@@ -2020,11 +2020,11 @@ A device driver must not bind itself to a uniquely identifiable instance of syst
 For more information, see the "Driver Compatibility for Dynamic Hardware Partitioning" white paper at the following website: http://www.microsoft.com/whdc/system/platform/server/dhp.mspx
 
 <a name="Device.DevFund.Server.PCI"></a>
-# Device.DevFund.Server.PCI
+## Device.DevFund.Server.PCI
 
 *PCI*
 
-## Device.DevFund.Server.PCI.PCIAER
+### Device.DevFund.Server.PCI.PCIAER
 
 *Windows Server PCI Express devices are required to support Advanced Error Reporting \[AER\] as defined in PCI
 Express Base Specification version 2.1.*
@@ -2057,9 +2057,9 @@ The following table lists which errors in section 6.2 are required to be reporte
 | ERR\_NONFATAL                       | Yes       | None                                                           |
 
 <a name="Device.DevFund.StaticTools"></a>
-# Device.DevFund.StaticTools
+## Device.DevFund.StaticTools
 
-## Device.DevFund.StaticTools.CAandSDV
+### Device.DevFund.StaticTools.CAandSDV
 
 *Driver development includes static analysis to improve reliability using Code Analysis (CA) and Static Driver Verifier (SDV).*
 

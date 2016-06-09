@@ -11,7 +11,9 @@ title: 'Lab 1c: Add a file and a registry setting to an image'
 
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
-We'll create some test files and registry keys to the image, again packaging them up so that they can be serviced after they reach your customers.
+Many files and registry keys, and other customizations that you add to your image won't be specific to an architecture. For these, we recommend creating a common package that you can use for all of your builds.
+ 
+We'll create some test files and registry keys to the image, and again package them up so that they can be serviced after they reach your customers.
 
 We'll add these to a common feature manifest (OEMCommonFM.xml), which is used in both your x86 and ARM builds. Give it a new feature ID, OEM\_FileAndRegKey.
 
@@ -39,81 +41,63 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 
 1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
-2.  Create a working folder for the app, for example:
+
+2.  Create a working folder for the registry key and test files, for example:
 
     ``` syntax
-    newpkg pkgFile File TestFileAndRegKey
+    newcommonpkg Registry.ConfigSettings
     ```
 
-    The new folder at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\File.TestFileAndRegKey\\**.
-
-3.  In File Explorer, move this folder from the **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\** folder to the **C:\\IoT-ADK-AddonKit\\Common\\Packages\\** folder.
-
-    We recommend doing this whenever you're adding files or settings that are not architecture-specific. This lets you use your new package for both your ARM and x86 projects.
+    The new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
 
 **Add sample files to the package**
 
-1.  Update the app's package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\File.TestFileAndRegKey\\File.TestFileAndRegKey.pkg.xml**.
+1.  Copy your sample files (TestFile1.txt and TestFile2.txt), into the new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
 
-    The default package definition file includes sample XML that you can modify to add your own registry keys and files.
+2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\Registry.ConfigSettings.pkg.xml**:
 
-    Update the values of RegKey to include a new KeyName, Name, and Value.
+    -  The default package definition file includes sample XML that has been commented out. Remove the comment marks and instructions, then modify the sample to add your own registry keys and files.
 
-    Update the File Source using the $(COMDIR) variable to refer to the Common folder.
+    -  Update the values of RegKey to include a new KeyName, Name, and Value.
+
+    -  Optional: update the DestinationDir and Name. If you don't include the DestinationDir option, the files will land in C:\\Windows\\system32\\.
     
-    Optional: update the DestinationDir using the $(runtime.root) to refer to your device's main (C:\) drive.  If you don't include a DestinationDir (like in the first example), the file lands in the default folder, C:\\Windows\\system32\\.
-    
-    These variables are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
+    Variables like (runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
     ``` syntax
-    <?xml version="1.0" encoding="utf-8"?>
-     <Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
-        Owner="$(OEMNAME)"
-        OwnerType="OEM"
-        ReleaseType="Production"
-        Platform="arm"
-        Component="File"
-        SubComponent="TestFileAndRegKey">
-        <Components>
-           <OSComponent>
-              <RegKeys>
-              <!-- Specify your registry settings here -->
-                 <RegKey KeyName="$(hklm.software)\Contoso\Test2">
-                    <RegValue Name="StringValue" Value="Test 2" Type="REG_SZ"/>
-                    <RegValue Name="DWordValue" Value="5678ABCD" Type="REG_DWORD"/>
-                    <RegValue Name="BinaryValue" Value="56,78,AB,CD" Type="REG_BINARY"/>
-                 </RegKey>
-                 <RegKey KeyName="$(hklm.software)\$(OEMNAME)\EmptyKey"/>
-              </RegKeys>   
-             <Files>
-             <!-- Specify your files for inclusion here -->
-                 <File Source="$(COMDIR)\Packages\File.TestFileAndRegKey\TestFile1.txt" /> <!-- destination for this is default windows/system32-->
-                 <File Source="$(COMDIR)\Packages\File.TestFileAndRegKey\TestFile2.txt"
-                    DestinationDir="$(runtime.root)\OEMInstall" Name="filename2.txt"/>            
-            </Files>
-           </OSComponent>
-        </Components>
-     </Package>
+      <OSComponent> 
+         <RegKeys> 
+             <RegKey KeyName="$(hklm.software)\$(OEMNAME)\Test">
+                <RegValue Name="StringValue" Value="Test string" Type="REG_SZ"/>
+                <RegValue Name="DWordValue" Value="12AB34CD" Type="REG_DWORD"/>
+                <RegValue Name="BinaryValue" Value="12,AB,CD,EF" Type="REG_BINARY"/>
+             </RegKey>
+             <RegKey KeyName="$(hklm.software)\$(OEMNAME)\EmptyKey"/> 
+         </RegKeys> 
+         <Files> 
+            <File Source="TestFile1.txt" /> 
+   			<File Source="TestFile2.txt"
+			    DestinationDir="$(runtime.root)\OEMInstall" Name="TestFile2.txt"/>	
+         </Files> 
+      </OSComponent> 
     ```
-
 
 2.  From the IoT Core Shell, build the package. (The BuildAllPackages tool builds everything in the source folders.)
 
     ``` syntax
-    createpkg c:\IoT-ADK-AddonKit\Common\Packages\File.TestFileAndRegKey\TestFileAndRegKey.pkg.xml
+    createpkg Registry.ConfigSettings
     ```
 
-    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.File.TestFileAndRegKey.cab**.
+    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Registry.ConfigSettings.cab**.
 
-    All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for the other architecture, use **setenv &lt;arch&gt;**, then **BuildAllPackages** to rebuild everything for your other architecture.
+    All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for another architecture, use **setenv &lt;arch&gt;**, then **BuildAllPackages** to rebuild everything for your other architecture.
 
 ## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
-
 
 **Add your file package to the feature manifest**
 
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_FileAndRegKey".
+2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_ConfigSettings".
 
     ``` syntax
          <!-- Feature definitions below -->
@@ -130,9 +114,9 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
             </FeatureIDs>
           </PackageFile>    
           
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.File.TestFileAndRegKey.cab">
+          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.ConfigSettings.cab">
             <FeatureIDs>
-              <FeatureID>OEM_FileAndRegKey</FeatureID>
+              <FeatureID>OEM_ConfigSettings</FeatureID>
             </FeatureIDs>
           </PackageFile>
     ```
@@ -163,11 +147,10 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     <OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
     <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PLACEHOLDER_FEATURE</Feature> 
     <Feature>PRODUCTION</Feature> 
     <Feature>OEM_CustomCmd</Feature> 
     <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
+    <Feature>OEM_ConfigSettings</Feature> 
     </OEM>
     ```
 
@@ -218,12 +201,4 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-
 [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
-
- 
-
- 
-
-
-

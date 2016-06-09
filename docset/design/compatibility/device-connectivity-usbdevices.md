@@ -5,11 +5,11 @@
 -->
 
 <a name="Device.Connectivity.UsbDevices"></a>
-# Device.Connectivity.UsbDevices
+## Device.Connectivity.UsbDevices
 
 *Applies to all devices connected via USB including USB hubs. Does not apply to USB controllers.*
 
-## Device.Connectivity.UsbDevices.DebugCompliesWithDebugSpec
+### Device.Connectivity.UsbDevices.DebugCompliesWithDebugSpec
 
 *USB debug device must comply with the USB2 debug device specification.*
 
@@ -29,7 +29,7 @@
 
 USB devices designed for debug purposes over USB 2.0 must comply with USB2 Debug Device Functional Specification, which includes details on the device framework, commands, and additional operational requirements.
 
-## Device.Connectivity.UsbDevices.DebugCompliesWithDebugSpecUSB3
+### Device.Connectivity.UsbDevices.DebugCompliesWithDebugSpecUSB3
 
 *USB 3.0 debug cables must comply with the USB 3.0 specification.*
 
@@ -49,7 +49,7 @@ USB devices designed for debug purposes over USB 2.0 must comply with USB2 Debug
 
 USB cables designed for USB 3.0 host debugging must comply with the Universal Serial Bus 3.0 Specification, section 5.5.2.
 
-## Device.Connectivity.UsbDevices.DeviceAttachLessThan100ms
+### Device.Connectivity.UsbDevices.DeviceAttachLessThan100ms
 
 *USB device that signals device-attach must respond after at least 100 ms.*
 
@@ -69,7 +69,7 @@ USB cables designed for USB 3.0 host debugging must comply with the Universal Se
 
 When the USB device has signaled device-attach, the operating system provides a debounce interval of 100ms. The device must respond at the end of that interval. This is described in USB Specification, Revision2.0, Section 7.1.7.3. This requirement ensures that the electrical and mechanical connections are stable before the attached device is reset.
 
-## Device.Connectivity.UsbDevices.FunctionSuspendSelectiveSuspend
+### Device.Connectivity.UsbDevices.FunctionSuspendSelectiveSuspend
 
 *USB 3.0 devices must correctly implement Function Suspend and Selective Suspend.*
 
@@ -96,7 +96,7 @@ When all functions of a SuperSpeed device are in the function suspend state and 
 Devices that are resumed from the selective suspend state retain a minimum set of device state information as specified in section 9.2.5.2 of the USB 3.0 Specification.
  
 
-## Device.Connectivity.UsbDevices.InternalDevicesMustSupportSuspend
+### Device.Connectivity.UsbDevices.InternalDevicesMustSupportSuspend
 
 *All internally connected USB devices must go to Selective Suspend after periods of inactivity.*
 
@@ -124,7 +124,7 @@ Devices belonging to these device classes can opt out of supporting USB Selectiv
 
 -   Fax
 
-## Device.Connectivity.UsbDevices.IsochronousDeviceAndDriver
+### Device.Connectivity.UsbDevices.IsochronousDeviceAndDriver
 
 *Isochronous USB device and driver requirement*
 
@@ -166,7 +166,7 @@ If two or more devices are connected that use more than 50 percent of the bus ba
 See USB Specification, Revision 2.0 or later, Sections 5.6 and 5.7.
  
 
-## Device.Connectivity.UsbDevices.MsOsContainerId
+### Device.Connectivity.UsbDevices.MsOsContainerId
 
 *USB devices that implement the Microsoft OS Container ID descriptor must implement it correctly.*
 
@@ -188,7 +188,7 @@ If a multifunction USB device implements the Microsoft® operating system **Cont
 
 The Microsoft operating system **ContainerID** descriptor allows Windows® to correctly detect multifunction devices. The descriptor provides a way for all the device nodes to appear as one physical object in the **Devices and Printers** user interface (UI).
 
-## Device.Connectivity.UsbDevices.MustBeFunctionalAfterResume
+### Device.Connectivity.UsbDevices.MustBeFunctionalAfterResume
 
 *Attached USB devices must be functional after resuming from system power states.*
 
@@ -213,7 +213,7 @@ A device must be in the attached state (USB Specification 2.0, section 9.1) to b
 
 Devices must be functional after resuming from system power states whether a port reset is issued or not.
 
-## Device.Connectivity.UsbDevices.MustNotDisconnectDuringSuspend
+### Device.Connectivity.UsbDevices.MustNotDisconnectDuringSuspend
 
 *USB devices must not disconnect from the upstream port while going to or resuming from selective suspend.*
 
@@ -236,7 +236,7 @@ USB devices must not disconnect from the upstream port during the selective sus
 To test this requirement, we will cause the device to go into the selective suspend state and then resume the device. During this process, we will observe the port status bits of the upstream port and verify that the device does not disconnect during this time. We will repeat this process serveral times.
  
 
-## Device.Connectivity.UsbDevices.MustResumeWithoutForcedReset
+### Device.Connectivity.UsbDevices.MustResumeWithoutForcedReset
 
 *All USB devices work properly upon resume from sleep, hibernation, or restart without a forced reset of the USB host controller.*
 
@@ -262,7 +262,7 @@ Registry key ForceHCResetOnResume documented at the KB below is not needed for 
 Note that a known set of currently existing devices do require a forced reset upon resume, these devices should be covered in a list kept by the OS which will reset these devices upon resume. The goal of this requirement is to ensure that this list of devices that must be reset to appear after resume does not grow and that devices can properly handle sleep state transitions without being reset.
 A reset of the entire USB Host Controller results in significantly increased time that it takes for all USB devices to become available after system resume since there could be only one device at address 0 at a time, this enumeration has to be serialized for all USB devices on the bus. We have also seen that resetting the host controller can lead to an illegal SE1 signal state on some host controllers, which in turn can cause some USB devices to hang or drop off the bus. Moreover, devices cannot maintain any private state across sleep resume as that state will be lost on reset.
 
-## Device.Connectivity.UsbDevices.MustSignalAttachWithin500ms
+### Device.Connectivity.UsbDevices.MustSignalAttachWithin500ms
 
 *Devices must signal attach within 500 ms after the system resumes.*
 
@@ -282,7 +282,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 
 After the system resumes from sleep, the hub driver will fetch the status of the port to which the device is connected. If the device does not show as connected, the hub driver will wait 500 milliseconds (ms) before the hub driver queries the port status again. If the device appears as connected within that time, the hub will not need to re-enumerate the device for Plug and Play, which will result in a better user experience. This requirement already exists for bus-powered devices in the USB specification. The requirement will now also apply to self-powered devices.
 
-## Device.Connectivity.UsbDevices.MustSupportSuspend
+### Device.Connectivity.UsbDevices.MustSupportSuspend
 
 *All bus powered USB devices must support USB Suspend after periods of inactivity.*
 
@@ -306,7 +306,7 @@ Clarification about USB Selective Suspend in embedded USB devices can be found i
 
 Clarification about USB Selective Suspend in Windows RT systems can be found in the following requirements: Device.Connectivity.UsbDevices.MustSupportSuspendOnRT.
 
-## Device.Connectivity.UsbDevices.RespondAllStringRequests
+### Device.Connectivity.UsbDevices.RespondAllStringRequests
 
 *A USB device must respond to all string requests that the host sends to indexes.*
 
@@ -326,7 +326,7 @@ Clarification about USB Selective Suspend in Windows RT systems can be found in 
 
 USB devices must respond accordingly to string requests that the host sends. Devices must stall if no string is stored at the index being queried or if a request error exists. Devices must not reset themselves or stop functioning. This is described in USB Specification, Revision 2.0 or later, Section 9.6.
 
-## Device.Connectivity.UsbDevices.ResponsesLimitedByWlengthField
+### Device.Connectivity.UsbDevices.ResponsesLimitedByWlengthField
 
 *USB device responses to host requests are limited in size by the wLength field.*
 
@@ -347,7 +347,7 @@ USB devices must respond accordingly to string requests that the host sends. Dev
 All USB device requests contain a wLength field. Responses by the USB device to host requests must be of size &lt;= wLength field of the device request as defined in the USB Specification, Revision1.1 or later, Section 9.3.5.
  
 
-## Device.Connectivity.UsbDevices.SerialNumbers
+### Device.Connectivity.UsbDevices.SerialNumbers
 
 *USB serial numbers are implemented for specific device classes and are unique across specific device models.*
 
@@ -387,7 +387,7 @@ For more information on USB device class details, see "Defined 1.0 Class Codes" 
 For more information on implementation of serial numbers, see USB Specification, Revision 2.0 or later, Section 9.6.
  
 
-## Device.Connectivity.UsbDevices.SerialNumbersUseValidCharacters
+### Device.Connectivity.UsbDevices.SerialNumbersUseValidCharacters
 
 *A USB device that implements manufacturer-defined serial numbers must contain valid characters.*
 
@@ -407,7 +407,7 @@ For more information on implementation of serial numbers, see USB Specification,
 
 A USB serial number must be a string that contains a manufacturer-determined ID composed of valid characters. Valid characters are defined in the Windows Driver Kit, "USB\_DEVICE\_DESCRIPTOR."
 
-## Device.Connectivity.UsbDevices.SuperSpeedOnConnectViaUsb3Port
+### Device.Connectivity.UsbDevices.SuperSpeedOnConnectViaUsb3Port
 
 *If upstream SuperSpeed termination is on, devices must always connect on the USB 3.0 port and never connect on the USB 2.0 port.*
 
@@ -431,7 +431,7 @@ To test this requirement, the software will verify that the USB 3.0 port status 
 
 For a definition of "connect", see section 2 of the USB 3.0 Specification under "connected".
 
-## Device.Connectivity.UsbDevices.TestedUsingMicrosoftUsbStack
+### Device.Connectivity.UsbDevices.TestedUsingMicrosoftUsbStack
 
 *USB devices must be tested with Microsoft's xHCI Stack installed.*
 
@@ -453,7 +453,7 @@ All USB Devices (Low, Full, High, and Super Speed devices) must be tested with M
 
 **Note:** During USB-IF self-testing a specific USB Test Stack is installed for testing purposes, this is expected and acceptable.
 
-## Device.Connectivity.UsbDevices.UsbifCertification
+### Device.Connectivity.UsbDevices.UsbifCertification
 
 *USB devices must either pass USB IF tests or be USB IF certified.*
 
@@ -479,7 +479,7 @@ For more information, see the white paper on Windows Logo Kit USB-IF Testing:
 
 -   <http://www.microsoft.com/whdc/connect/usb/wlk-usb-if-testing.mspx>
 
-## Device.Connectivity.UsbDevices.USBTypeCAltModeCertification
+### Device.Connectivity.UsbDevices.USBTypeCAltModeCertification
 
 *USB Type-C Alternate Mode devices are certified with their respective organizations.*
 
@@ -502,7 +502,7 @@ For example, if a USB Type-C device’s PD silicon supports DisplayPort Alternat
 
 Certification for vendor-specific Alternate Modes is not required.
 
-## Device.Connectivity.UsbDevices.USBTypeCCertifiedCables
+### Device.Connectivity.UsbDevices.USBTypeCCertifiedCables
 
 *USB Type-C Devices that ship with cables ship with certified cables*
 
@@ -523,7 +523,7 @@ If a device is USB Type-C and ships with a cable or an adapter, the cable and/or
 
 In addition, if the USB Type-C cable or adapter is used for an Alternate Mode Standard and the industry group that owns that Standard has a corresponding certification, the cable or adapter must get that certification.
 
-## Device.Connectivity.UsbDevices.USBTypeCAltModeDeviceCompat
+### Device.Connectivity.UsbDevices.USBTypeCAltModeDeviceCompat
 
 *USB Type-C Alternate Mode Device Compatibility*
 
@@ -546,7 +546,7 @@ For example, a Thunderbolt Alternate Mode USB-C storage device must also be able
 
 Note: Alternate Mode adapters are not required to provide USB functionality equivalent to its Alternate Mode. For example, a DisplayPort or MHL Alternate Mode USB-C adapter is not required to also support a video protocol that works over USB 2.0 or USB 3.0.
 
-## Device.Connectivity.UsbDevices.UseUsbClassOnlyForControllerOrHub
+### Device.Connectivity.UsbDevices.UseUsbClassOnlyForControllerOrHub
 
 *Third-party INF files include the class "USB" only if the device is a USB host controller, a root, or an external hub.*
 
@@ -573,7 +573,7 @@ Microsoft provides system-defined setup classes for most device types. System-de
 If you choose the wrong class, the device appears in an incorrect location in Device Manager and in the Windows Vista UI. Using this class incorrectly may cause the device driver to fail hardware compatibility testing.
 For a list of Windows class GUIDs, see the Windows Driver Kit, "System-Supplied Device Setup Classes" at: <http://msdn.microsoft.com/en-us/library/ff553419.aspx>.
 
-## Device.Connectivity.UsbDevices.WirelessUsbObtainsWusbLogoFromUsbif
+### Device.Connectivity.UsbDevices.WirelessUsbObtainsWusbLogoFromUsbif
 
 *Wireless USB device or host must obtain a Certified Wireless USB logo from the USB-IF.*
 
@@ -593,7 +593,7 @@ For a list of Windows class GUIDs, see the Windows Driver Kit, "System-Supplied 
 
 All Wireless USB devices must get a Certified Wireless USB Logo from the USB-IF.
 
-## Device.Connectivity.UsbDevices.WirelessUsbWiMediaAlliace
+### Device.Connectivity.UsbDevices.WirelessUsbWiMediaAlliace
 
 *Certified Wireless USB device or host must pass all required WiMedia Alliance compliance tests.*
 

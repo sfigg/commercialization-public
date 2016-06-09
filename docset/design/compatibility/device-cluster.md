@@ -5,9 +5,9 @@
 -->
 
 <a name="Device.Cluster"></a>
-# Device.Cluster
+## Device.Cluster
 
-## Device.Cluster.Core.ClusterInABox
+### Device.Cluster.Core.ClusterInABox
 
 *Cluster in a Box*
 

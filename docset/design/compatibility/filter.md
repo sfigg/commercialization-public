@@ -1,5 +1,4 @@
-Hardware Compatibility Specification for Filter for Windows 10 
-==============================================================
+# Hardware Compatibility Specification for Filter for Windows 10
 
 This section of the documentation provides specifications for hardware compatibility
 for filter drivers on Windows 10 as of June 2016.
@@ -17,12 +16,11 @@ These specifications are divided into the following categories and topics:
 - [Filter.Driver.WindowsFilteringPlatform](#FilterDriverWindowsFilteringPlatform)
 
 <a name="FilterDriverAntiVirus"></a>
-Filter.Driver.AntiVirus 
-=======================
+## Filter.Driver.AntiVirus 
 
 *Antivirus requirements for filter drivers.*
 
-## Filter.Driver.AntiVirus.Functionality
+### Filter.Driver.AntiVirus.Functionality
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
@@ -58,7 +56,7 @@ Information about file system behavior: <http://download.microsoft.com/download/
 
 Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol document at: <http://msdn.microsoft.com/en-us/library/cc246482(PROT.13).aspx>
 
-## Filter.Driver.AntiVirus.IcarDetection
+### Filter.Driver.AntiVirus.IcarDetection
 
 *Anti-virus filter drivers must be architected to exercise basic anti-virus functionality, as well as interact accurately with the core components of the operating system.*
 
@@ -83,7 +81,7 @@ Anti-virus filter drivers must be architected to exercise basic anti-virus fun
 -   File systems
 -   Anti-virus functionality
 
-## Filter.Driver.AntiVirus.MiniFilter
+### Filter.Driver.AntiVirus.MiniFilter
 
 *A file system filter driver must be a minifilter driver that uses the file systems filter manager.*
 
@@ -108,7 +106,7 @@ Information about filter manger and minifilter drivers available here:
 <http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
 <http://msdn.microsoft.com/en-us/windows/hardware/gg462968.aspx>
 
-## Filter.Driver.AntiVirus.NamedPipeAndMailSlots
+### Filter.Driver.AntiVirus.NamedPipeAndMailSlots
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Named Pipe and Mail Slots, as well as interact accurately with the core components of the operating system.*
 
@@ -166,7 +164,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 Information about Named Pipe and Mail Slots can be found at:
 <http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
 
-## Filter.Driver.AntiVirus.RegistryAndProcess
+### Filter.Driver.AntiVirus.RegistryAndProcess
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of the Windows registry and processes, as well as interact accurately with the core components of the operating system.*
 
@@ -207,7 +205,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 
 -   Thread and process handle operations
 
-## Filter.Driver.AntiVirus.Winsock
+### Filter.Driver.AntiVirus.Winsock
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows Sockets, as well as interact accurately with the core components of the operating system.*
 
@@ -236,12 +234,11 @@ Information about Winsock APIs can be found at:
 <http://msdn.microsoft.com/en-us/library/ms740673(VS.85).aspx>
 
 <a name="FilterDriverDeviceGuard"></a>
-Filter.Driver.DeviceGuard 
-=========================
+## Filter.Driver.DeviceGuard 
 
 *All kernel drivers must be built to be compatible with [Device Guard](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/05/22/driver-compatibility-with-device-guard-in-windows-10.aspx).*
 
-## Filter.Driver.DeviceGuard.DriverCompatibility
+### Filter.Driver.DeviceGuard.DriverCompatibility
 
 <table>
 <tr>
@@ -277,12 +274,11 @@ You can find more details on the following MSDN page:
 All kernel drivers on Windows MUST be signed by Microsoft (WHQL certificate) through the SysDev dashboard.
 
 <a name="FilterDriverEarlyLaunchAntiMalware"></a>
-Filter.Driver.EarlyLaunchAntiMalware 
-====================================
+## Filter.Driver.EarlyLaunchAntiMalware 
 
 *This section describes requirements for early launch driver.*
 
-## Filter.Driver.EarlyLaunchAntiMalware.BackupDriver
+### Filter.Driver.EarlyLaunchAntiMalware.BackupDriver
 
 *Early launch anti-malware drivers must include a backup copy in case of corruption.*
 
@@ -309,7 +305,7 @@ HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\EarlyLaunch ! BackupPa
 *Design Notes:*
 The early launch anti-malware (AM) drivers are started soon after the NTOS kernel starts.  For each subsequent boot driver, the AM driver receives a callback from the PnP manager to determine whether the boot driver should be initialized.  The AM driver evaluates the boot driver and must return good, bad, or unknown.  Based on the returned classification and defined policy, the PnP manager decides whether to initialize the boot driver.
 
-## Filter.Driver.EarlyLaunchAntiMalware.ELAMSignatureAttributes
+### Filter.Driver.EarlyLaunchAntiMalware.ELAMSignatureAttributes
 
 *Requirement for the SignatureAttribute section in the ELAM INF files.*
 
@@ -338,7 +334,7 @@ ELAMFILE.dll = SignatureAttributes.Elam
 Elam=true
 ```
 
-## Filter.Driver.EarlyLaunchAntiMalware.MVIMembership
+### Filter.Driver.EarlyLaunchAntiMalware.MVIMembership
 
 *Early launch anti-malware drivers may only be created by MVI members.*
 
@@ -362,7 +358,7 @@ Any early launch anti-malware (AM) driver may only be created by Microsoft Virus
  *Design Notes:*
 The early launch AM drivers are started soon after the NTOS kernel starts.  For each subsequent boot driver, the AM driver receives a callback from the PnP manager to determine whether the boot driver should be initialized.  The AM driver evaluates the boot driver and must return good, bad, or unknown.  Based on the returned classification and defined policy, the PnP manager decides whether to initialize the boot driver.
 
-## Filter.Driver.EarlyLaunchAntiMalware.Performance
+### Filter.Driver.EarlyLaunchAntiMalware.Performance
 
 *Early launch anti-malware drivers must be performant.*
 
@@ -393,7 +389,7 @@ Each AM driver will receive a synchronous callback after the last boot driver ha
 *Design Notes:*
 The early launch AM drivers are started soon after the NTOS kernel starts.  For each subsequent boot driver, the AM driver receives a callback from the PnP manager to determine whether the boot driver should be initialized.  The AM driver evaluates the boot driver and must return good, bad, or unknown.  Based on the returned classification and defined policy, the PnP manager decides whether to initialize the boot driver. 
 
-## Filter.Driver.EarlyLaunchAntiMalware.SignatureData
+### Filter.Driver.EarlyLaunchAntiMalware.SignatureData
 
 *Early launch anti-malware drivers must only use signature data stored in the Microsoft-specific location.*
 
@@ -418,10 +414,9 @@ The AM driver must get its malware signature data from a single, well-known loca
 The early launch anti-malware (AM) drivers are started soon after the NTOS kernel starts.  For each subsequent boot driver, the AM driver receives a callback from the PnP manager to determine whether the boot driver should be initialized.  The AM driver evaluates the boot driver and must return good, bad, or unknown.  Based on the returned classification and defined policy, the PnP manager decides whether to initialize the boot driver.
 
 <a name="FilterDriverFileSystem"></a>
-Filter.Driver.FileSystem 
-========================
+## Filter.Driver.FileSystem 
 
-## Filter.Driver.FileSystem.Functionality
+### Filter.Driver.FileSystem.Functionality
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows file systems, as well as interact accurately with the core components of the operating system.*
 
@@ -464,7 +459,7 @@ Information about file system behavior: <http://download.microsoft.com/download/
 
 Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol document at: <http://msdn.microsoft.com/en-us/library/cc246482(PROT.13).aspx>
 
-## Filter.Driver.FileSystem.MiniFilter
+### Filter.Driver.FileSystem.MiniFilter
 
 *A file system filter driver must be a minifilter driver using the file systems Filter Manager.*
 
@@ -488,7 +483,7 @@ This requirement will be tested implicitly. The gatherer will be written such th
 Information about Filter Manger and minifilter drivers available here:
 <http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
 
-## Filter.Driver.FileSystem.NamedPipeAndMailSlots
+### Filter.Driver.FileSystem.NamedPipeAndMailSlots
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Named Pipe and Mail Slots, as well as interact accurately with the core components of the operating system.*
 
@@ -546,7 +541,7 @@ Kernel Mode filter drivers must be architected to maximize the reliability and
 Information about Named Pipe and Mail Slots can be found at:
 <http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
 
-## Filter.Driver.FileSystem.RegistryAndProcess
+### Filter.Driver.FileSystem.RegistryAndProcess
 
 *Kernel mode filter drivers must be architected to maximize the reliability and functionality of Windows registry and processes, as well as interact accurately with the core components of the operating system.*
 
@@ -588,12 +583,11 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 -   Thread and process handle operations
 
 
-Filter.Driver.Fundamentals 
-==========================
+## Filter.Driver.Fundamentals 
 
 *Corresponds to device driver fundamentals, but for filter drivers.*
 
-## Filter.Driver.Fundamentals.DriverQuality
+### Filter.Driver.Fundamentals.DriverQuality
 
 *A filter driver must be of high quality.*
 
@@ -633,12 +627,11 @@ Sleep & PNP with IO Before And After Test - Test cycles the system through all s
 This test will be run with Driver Verifier enabled with standard settings.
 
 <a name="FilterDriverNetworkLWF"></a>
-Filter.Driver.Network.LWF 
-=========================
+## Filter.Driver.Network.LWF 
 
 *LAN requirements.*
 
-## Filter.Driver.Network.LWF.Base
+### Filter.Driver.Network.LWF.Base
 
 *All light weight filters must be NDIS 6.30 or greater.*
 
@@ -659,7 +652,7 @@ Filter.Driver.Network.LWF
 
 All light weight filters must be NDIS 6.30 or greater and be compliant to the NDIS specification on MSDN.
 
-## Filter.Driver.Network.LWF.MTUSize
+### Filter.Driver.Network.LWF.MTUSize
 
 *All light weight filters must be able to accept arbitrary packet sizes which might be greater than the miniport's MTU.*
 
@@ -681,12 +674,11 @@ All light weight filters must be NDIS 6.30 or greater and be compliant to the ND
 All light weight filters must be NDIS 6.30 or greater. All light weight filters must be able to accept arbitrary packet sizes which might be greater than the miniport's MTU.
 
 
-Filter.Driver.Security 
-======================
+## Filter.Driver.Security 
 
 *Additional requirements related to security for TDI filter drivers and LSPs.*
 
-## Filter.Driver.Security.NoTDIFilterAndLSP
+### Filter.Driver.Security.NoTDIFilterAndLSP
 
 *No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. *
 
@@ -708,10 +700,9 @@ Filter.Driver.Security
 There can be no use of TDI filters or LSPs by either kernel mode software or drivers, or user mode software or drivers.
 
 <a name="FilterDrivervSwitchExtension"></a>
-Filter.Driver.vSwitchExtension 
-==============================
+## Filter.Driver.vSwitchExtension 
 
-## Filter.Driver.vSwitchExtension.ExtensionRequirements
+### Filter.Driver.vSwitchExtension.ExtensionRequirements
 
 *Filter drivers that implement VM Switch Extensibility must support required functionalities, modes, and protocols.*
 
@@ -812,10 +803,9 @@ Requirements
 See the VM Switch Extensibility Specification.
 
 <a name="FilterDriverWindowsFilteringPlatform"></a>
-Filter.Driver.WindowsFilteringPlatform 
-======================================
+## Filter.Driver.WindowsFilteringPlatform 
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.AppContainers.SupportModernApplications
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.AppContainers.SupportModernApplications
 
 *WFP-based products must not block App Container apps that are operating within their declared network intentions by default, and should only block App Container apps when following specific user/admin intention or protecting the system against a specific threat.*
 
@@ -836,7 +826,7 @@ Filter.Driver.WindowsFilteringPlatform
 
 WFP-based products must not block App Container apps that are operating within their declared network intentions by default, and should only *block App Container apps* when following specific user/admin intention or protecting the system against a specific threat.
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.CleanUninstall
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.CleanUninstall
 
 *WFP-based products must stop cleanly and clean up all running state upon uninstall.*
 
@@ -866,7 +856,7 @@ The installation requirements for applications (in the Software Logo Program) ar
 <http://www.microsoft.com/downloads/details.aspx?FamilyID=27028822-B172-4CEC-91A3-26B610A4DA79&displaylang=en>
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.ConnectionProxying.NoDeadlocks
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.ConnectionProxying.NoDeadlocks
 
 *WFP-based products that redirect or proxy at redirect layers (connect redirect), must use the new proxying API so that other WFP-based products can determine that the connection has been proxied.*
 
@@ -888,7 +878,7 @@ The installation requirements for applications (in the Software Logo Program) ar
 WFP-based products which redirect or proxy at redirect layers (connect redirect), must use the new proxy'ing API so that other WFP-based products can determine that the connection has been proxy'ed.
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmFilters.MaintainOneTerminating
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmFilters.MaintainOneTerminating
 
 *WFP-based products must create and maintain at least one terminating FWPM\_FILTER object.*
 
@@ -912,7 +902,7 @@ A terminating filter is one that returns a permit / block decision. It may exist
 *Design Notes:*
 The definition for the FWPM\_FILTER object can be found in the following URL: <http://go.microsoft.com/fwlink/?LinkID=116902&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmProviders.AssociateWithObjects
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmProviders.AssociateWithObjects
 
 *WFP-based products must associate all of their provider contexts, filters, sublayers, and callouts with their corresponding identifying provider object.*
 
@@ -966,7 +956,7 @@ myFilter.providerKey = &(myProvider.providerKey);
 ```
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmProviders.MaintainIdentifying
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmProviders.MaintainIdentifying
 
 *WFP-based products must create and maintain at least one identifying FWPM\_PROVIDER provider object.*
 
@@ -1009,7 +999,7 @@ The definition of the FWPM\_PROVIDER object can be found in the following URL:
 <http://go.microsoft.com/fwlink/?LinkID=116844&clcid=0x409>
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmSublayers.UseOwnOrBuiltIn
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.FwpmSublayers.UseOwnOrBuiltIn
 
 *WFP-based products must use only their own sublayer or one of the built-in sublayers.*
 
@@ -1035,7 +1025,7 @@ The definition for the FWPM\_SUBLAYERobject can be found in the following URL:
 <http://go.microsoft.com/fwlink/?LinkID=116845&clcid=0x409>
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NetworkDiagnosticsFramework.HelperClass
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NetworkDiagnosticsFramework.HelperClass
 
 *WFP-based products must include a Network Diagnostics Framework (NDF) helper class that extends the Filtering Platform helper class (FPHC).*
 
@@ -1068,7 +1058,7 @@ More information regarding NDF and FPHC can be found in the following links:
 NDF       : <http://go.microsoft.com/fwlink/?LinkID=125463&clcid=0x409><br/>
 FPHC     : <http://go.microsoft.com/fwlink/?LinkID=125464&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NoAccessViolations
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NoAccessViolations
 
 *WFP-based products must not be the resulting cause of any access violation under high load or during driver load/unload.*
 
@@ -1090,7 +1080,7 @@ FPHC     : <http://go.microsoft.com/fwlink/?LinkID=125464&clcid=0x409>
 WFP-based products must not be the resulting cause of any access violation under high load or during driver load/unload (while under network load or not).
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NoTamperingWith3rdPartyObjects
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.NoTamperingWith3rdPartyObjects
 
 *WFP-based products must not attempt to remove or alter another WFP-based product's WFP objects and built-in objects.*
 
@@ -1112,7 +1102,7 @@ WFP-based products must not be the resulting cause of any access violation under
 This ensures interoperability between multiple host firewalls' WFP objects within the operating system.
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.PacketInjection.NoDeadlocks
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.PacketInjection.NoDeadlocks
 
 *WFP-based products must not continually modify network packets that have already been modified and re-injected, so as to create potential deadlocks.*
 
@@ -1136,7 +1126,7 @@ Firewalls may use callouts to modify and re-inject network packets, when filteri
 Host firewalls must not modify and reinject the same network packet more than 2 times per layer. If such a situation occurs, host firewalls may choose to let the packet go through, or drop the network packet.
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.StreamInjection.NoStreamStarvation
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.StreamInjection.NoStreamStarvation
 
 *WFP-based product callouts at FWPM\_LAYER\_STREAM must not starve the data throughput.*
 
@@ -1158,7 +1148,7 @@ Host firewalls must not modify and reinject the same network packet more than 2 
 To *not starve* means that Stream layer callout indications should not be pended to queue up more than 8 MB of data.
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.SupportPowerManagedStates
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.SupportPowerManagedStates
 
 *WFP-based products must ensure network connectivity upon recovering from power managed states.*
 
@@ -1182,7 +1172,7 @@ Tests must be run on a machine that supports all the power states (standby, hibe
 Firewalls should never pend packets such that a power state change refuses to work due to the pended packets.
  
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.WFPObjectACLs
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.WFPObjectACLs
 
 *WFP-based products must ACL all of their objects in a way that any other WFP-based product can at least enumerate those objects using the corresponding WFP enumeration APIs.*
 
@@ -1209,7 +1199,7 @@ As an example, Filter objects must be able to be enumerated by the FwpmFilterEnu
 <http://go.microsoft.com/fwlink/?LinkID=116839&clcid=0x409>
 Similarly, enumeration functions for other objects (provider, sublayer, etc.) can be found in the following URL: <http://go.microsoft.com/fwlink/?LinkID=116840&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.Winsock
+### Filter.Driver.WindowsFilteringPlatform.ArchitecturalDesign.Winsock
 
 *Kernel mode filter drivers are architected to maximize the reliability and functionality of Windows Sockets, as well as interact accurately with the core components of the operating system.*
 
@@ -1237,7 +1227,7 @@ Kernel mode filter drivers are architected to maximize the reliability and funct
 Information about Winsock APIs can be found at:
 <http://msdn.microsoft.com/en-us/library/ms740673(VS.85).aspx>
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.DisableWindowsFirewallProperly
+### Filter.Driver.WindowsFilteringPlatform.Firewall.DisableWindowsFirewallProperly
 
 *Host firewalls must disable the Windows firewall using only the supported method.*
 
@@ -1267,7 +1257,7 @@ The Connection Security filters need to remain enabled to keep Windows scenarios
 
 This requirement ensures that firewall vendors disable Windows Firewall per documented guidelines.
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.NotOnlyPermitAllFilters
+### Filter.Driver.WindowsFilteringPlatform.Firewall.NotOnlyPermitAllFilters
 
 *Host firewalls must not have only "permit\_all" filters.*
 
@@ -1289,7 +1279,7 @@ This requirement ensures that firewall vendors disable Windows Firewall per docu
 Host firewalls must not circumvent the intent of the Windows Filtering Platform API tests, by simply maintaining all 'permit\_all' filters for all kinds of network traffic, which essentially is not meaningful filtering of network traffic. This applies to both, static as well as callout filters. Similarly, Host firewalls must not maintain only 'block\_all' filters. However, that will be addressed when testing for consumer scenarios.
  
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.Support5TupleExceptions
+### Filter.Driver.WindowsFilteringPlatform.Firewall.Support5TupleExceptions
 
 *All host-based firewalls must be able to block/allow by 5-tuple parts (including port (ICMP type and code, UDP and TCP) IP address, and protocol (for example, UDP/TCP/ICMP).*
 
@@ -1310,7 +1300,7 @@ Host firewalls must not circumvent the intent of the Windows Filtering Platform 
 
 All host-based firewalls must be able to block/allow by 5-tuple parts (including port (ICMP type and code, UDP and TCP) IP address, protocol (for example, UDP/TCP/ICMP)).
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.SupportApplicationExceptions
+### Filter.Driver.WindowsFilteringPlatform.Firewall.SupportApplicationExceptions
 
 *WFP-based products must support exceptions from corresponding applications.*
 
@@ -1333,7 +1323,7 @@ In addition to supporting scenarios based on applications within Windows® it is
 The word *support* refers to the *host firewall's capability* to ensure exceptions from applications work with the host firewall, if the application/user/network needs it. The host firewall must also have properly configured objects, such as filters, to support the required functionality, even though the functionality may not be enabled by default in the UI.
  
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.SupportMACAddressExceptions
+### Filter.Driver.WindowsFilteringPlatform.Firewall.SupportMACAddressExceptions
 
 *All host-based firewalls that have filters in L2 (Native/Mac) layers must be able to Block or Allow by MAC address.*
 
@@ -1354,7 +1344,7 @@ The word *support* refers to the *host firewall's capability* to ensure exceptio
 
 All host-based firewalls that have filters in L2 (Native/Mac) layers must be able to Block or Allow by MAC address.
 
-## Filter.Driver.WindowsFilteringPlatform.Firewall.UseWindowsFilteringPlatform
+### Filter.Driver.WindowsFilteringPlatform.Firewall.UseWindowsFilteringPlatform
 
 *Firewalls must comply with Windows Filtering Platform based APIs for filtering network traffic on home user solutions.*
 
@@ -1380,7 +1370,7 @@ For more information on Windows Filtering Platform, please see the following lin
 
  
 
-## Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportAddressResolution
+### Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportAddressResolution
 
 *WFP-based products must support allowing for successful ARP and ICMP Neighbor Discovery exchanges.*
 
@@ -1409,7 +1399,7 @@ Host firewalls should allow the PC to send out ARP requests on behalf of another
 As part of Internet Connection Sharing's (ICS) DHCP functionality, ICS DHCP can send out ARP requests on behalf of another node in the subnet.
  
 
-## Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportDynamicAddressing
+### Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportDynamicAddressing
 
 *WFP-based products support allowing for successful DHCP exchanges over both IPv4 and IPv6.*
 
@@ -1443,7 +1433,7 @@ Internet Connection Sharing (ICS) acts as a DHCP server and expects to receive
 DHCP DISCOVER, DHCP REQUEST & DHCP INFORM packets can be received over Inbound UDP source port 68 to destination port 67.
 DHCP OFFER & DHCP ACK & DHCP NACK packets can be transmitted over outbound UDP source port 67 to destination port 68.
 
-## Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportIPv4
+### Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportIPv4
 
 *WFP-based products must support IPv4 traffic.*
 
@@ -1468,7 +1458,7 @@ The word *support* refers to the *host firewall's capability* to make IPv4 work,
 *Design Notes:*
 More information about IPv4, RFCs can be found in the following link: <http://go.microsoft.com/fwlink/?LinkID=116835&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportIPv6
+### Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportIPv6
 
 *WFP-based products must support IPv6 traffic.*
 
@@ -1494,7 +1484,7 @@ The word *support* refers to the *host firewall's capability* to make IPv6 work,
 *Design Notes:*
 More information about IPv6 can be found in the following link: <http://go.microsoft.com/fwlink/?LinkID=116832&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportNameResolution
+### Filter.Driver.WindowsFilteringPlatform.NetworkingFundamental.SupportNameResolution
 
 *WFP-based products must support allowing for successful DNS client queries.*
 
@@ -1521,7 +1511,7 @@ More information about DNS, RFCs can be found in the following link: <http://go.
 Host firewalls should allow this type of DNS traffic (Host as a server) over the wireless interface when a service like ICS is running on the host.
 This requirement applies to Internet Connection Sharing that acts as a DNS server (proxy) and expects receiving incoming DNS requests from clients on destination UDP port 53, and respond to the DNS client with DNS response with destination UDP port 53.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.Support6to4
+### Filter.Driver.WindowsFilteringPlatform.Scenario.Support6to4
 
 *WFP-based products must support 6to4.*
 
@@ -1551,7 +1541,7 @@ Please refer to the following article below for further information on 6to4:
 <http://go.microsoft.com/fwlink/?LinkID=116837&clcid=0x409>
  
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportAutomaticUpdates
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportAutomaticUpdates
 
 *WFP-based products must support Automatic Updates in Windows.*
 
@@ -1580,7 +1570,7 @@ The word *support* refers to the *host firewall's capability* to make Automatic 
 *Design Notes:*
 For more information on Windows Updates/ Automatic Updates, please see the following link: <http://go.microsoft.com/fwlink/?LinkID=116898&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportBasicWebsiteBrowsing
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportBasicWebsiteBrowsing
 
 *WFP-based products must support basic internet browsing experiences.*
 
@@ -1603,7 +1593,7 @@ This is to ensure that basic internet browsing experiences are supported upon in
 Host firewalls must allow TCP packets over Ports 80 and 443 to support this scenario. This scenario must work with native IPv4, native IPv6, 6to4, and Teredo packets.
 The word *support* refers to the *host firewall's capability* to ensure a successful internet browsing experience, if the application/user/network needs it. The host firewall must also have properly configured objects, such as filters, to support the required functionality, even though the functionality may not be enabled by default in the UI.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportFileAndPrinterSharing
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportFileAndPrinterSharing
 
 *WFP-based products must support file and printer sharing.*
 
@@ -1639,7 +1629,7 @@ Please refer to the following documents for more information:
 
 -   PNRP: <http://technet.microsoft.com/en-us/appcompat/default.aspx>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportICMPErrorMessages
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportICMPErrorMessages
 
 *WFP-based products must support ICMP error messages and discovery functions.*
 
@@ -1664,7 +1654,7 @@ The word *support* refers to the *host firewall's capability* to make ICMP work,
 *Design Notes:*
 For more information, please see <http://go.microsoft.com/fwlink/?LinkID=116835&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportInternetStreaming
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportInternetStreaming
 
 *WFP-based products must support Internet streaming and Media sharing for media player network sharing services.*
 
@@ -1693,7 +1683,7 @@ For more information on Windows Updates/ Automatic Updates, please see the follo
 
  
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportMediaExtenderStreaming
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportMediaExtenderStreaming
 
 *WFP-based products must support media streaming scenarios based on extender technologies.*
 
@@ -1756,7 +1746,7 @@ For example: With the new Extenders for Windows Media Center, you can stream the
  
 The word *support* refers to the *host firewall's capability* to make internet streaming & media sharing for media player network sharing services, work, if the application/user/network needs it. The host firewall must also have properly configured objects, such as filters, to support the required functionality, even though the functionality may not be enabled by default in the UI.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportMobileBroadBand
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportMobileBroadBand
 
 *WFP-based products must allow mobile broadband devices that are compliant with Windows mobile broadband driver model to function correctly.*
 
@@ -1779,7 +1769,7 @@ WFP-based products must allow mobile broadband devices that are compliant with t
 This is to ensure that host firewall functionality does not block the mobile broadband connectivity and the firewall functionality works with MB devices.
 Windows provides native support for mobile broadband (MB) data cards & embedded modules to work with Windows. The MB devices need to implement their driver as per Windows mobile broadband driver model. The MB driver model defines how the devices should be exposed to Windows and network packet format in which MB devices should exchange data between network and system.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportPeerNameResolution
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportPeerNameResolution
 
 *WFP-based products must support Peer Name Resolution Protocol and the Peer-to-Peer Grouping Protocol.*
 
@@ -1819,7 +1809,7 @@ Please refer to the following documents for more information, these documents:
 
 -   PNRP: <http://technet.microsoft.com/en-us/appcompat/default.aspx>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportRemoteAssistance
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportRemoteAssistance
 
 *WFP-based products must support Remote Assistance scenarios.*
 
@@ -1847,7 +1837,7 @@ For information on how Remote Assistance works in general, please see the articl
 <http://go.microsoft.com/fwlink/?LinkID=116842&clcid=0x409>
  
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportRemoteDesktop
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportRemoteDesktop
 
 *WFP-based products must support remote desktop.*
 
@@ -1876,7 +1866,7 @@ The word *support* refers to the *host firewall's capability* to make remote des
 For more information on remote desktop, please see the article below:
 <http://go.microsoft.com/fwlink/?LinkID=116841&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportTeredo
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportTeredo
 
 *WFP-based products must support Teredo.*
 
@@ -1914,7 +1904,7 @@ The word *support* refers to the *host firewall's capability* to make Teredo wor
 Please refer to the following article below for further information on Teredo:
 <http://go.microsoft.com/fwlink/?LinkID=116836&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.SupportVirtualPrivateNetworking
+### Filter.Driver.WindowsFilteringPlatform.Scenario.SupportVirtualPrivateNetworking
 
 *WFP-based products must support VPN scenarios in Windows.*
 
@@ -1950,7 +1940,7 @@ The word *support* refers to the *host firewall's capability* to make the VPN sc
 *Design Notes:*
 Please refer to the following article for further information: <http://go.microsoft.com/fwlink/?LinkID=116843&clcid=0x409>
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.InteropWithOtherExtensions
+### Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.InteropWithOtherExtensions
 
 *WFP must not block traffic from another vSwitch extension (WFP or LWF) by default, and should only do so when following specific user/admin intention or protecting the system against a specific threat.*
 
@@ -1971,7 +1961,7 @@ Please refer to the following article for further information: <http://go.micros
 
 WFP must not block traffic from another vSwitch extension (WFP or LWF) by default, and should only do so when following specific user/admin intention or protecting the system against a specific threat.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.NoEgressModification
+### Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.NoEgressModification
 
 *WFP-based products that operate in the vSwitch must not modify packets on the Egress path of the vSwitch.*
 
@@ -1992,7 +1982,7 @@ WFP must not block traffic from another vSwitch extension (WFP or LWF) by defaul
 
 WFP-based products that operate in the vSwitch must not modify packets on the Egress path of the vSwitch.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportLiveMigration
+### Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportLiveMigration
 
 *WFP-based products that operate in the vSwitch must present a minimal MOF for Live Migration.*
 
@@ -2013,7 +2003,7 @@ WFP-based products that operate in the vSwitch must not modify packets on the Eg
 
 WFP-based products that operate in the vSwitch must present a minimal MOF for Live Migration. In the MOF, it must declare itself Logo compliant for Live Migration and allow itself to be migrated or not block migration by default. The total time for migrations for Live Migration cannot be longer than 2 seconds.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportRemoval
+### Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportRemoval
 
 *WFP-based products that operate in the vSwitch must be allowed to be removed when the admin disabled WFP for the vSwitch instance.*
 
@@ -2034,7 +2024,7 @@ WFP-based products that operate in the vSwitch must present a minimal MOF for Li
 
 WFP-based products that operate in the vSwitch must be allowed to be removed when the admin disabled WFP for the vSwitch instance.
 
-## Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportReordering
+### Filter.Driver.WindowsFilteringPlatform.Scenario.vSwitch.SupportReordering
 
 *WFP-based products that operate in the vSwitch must respond to WFP vmSwitch reorder events.*
 

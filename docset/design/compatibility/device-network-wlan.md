@@ -13,7 +13,7 @@
  - [Device.Network.WLAN.SupportHostedNetwork](#Device.Network.WLAN.SupportHostedNetwork)
 
 <a name="Device.Network.WLAN"></a>
-# Device.Network.WLAN
+## Device.Network.WLAN
 
 *Windows 10 WLAN drivers can implement either of the following driver models:*
 
@@ -24,9 +24,9 @@
  - Native Wi-Fi Driver Model (does not support new Windows 10 features)
 
 <a name="Device.Network.WLAN.SupportConnectionToAP"></a>
-# Device.Network.WLAN.SupportConnectionToAP
+## Device.Network.WLAN.SupportConnectionToAP
 
-## Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP (Mandatory)
+### Device.Network.WLAN.SupportConnectionToAP.ConnectionToAP (Mandatory)
 
 <table>
 <tr>
@@ -504,9 +504,9 @@ Device: The Lower Edge driver will be able to gather dumps with 25 ms and 250 Kb
 System: The system must complete the reset within 10 seconds.
 
 <a name="Device.Network.WLAN.SupportWakeFromLowPower"></a>
-# Device.Network.WLAN.SupportWakeFromLowPower
+## Device.Network.WLAN.SupportWakeFromLowPower
 
-## Device.Network.WLAN.SupportWakeFromLowPower.WakeFromLowPower (If-Implemented)
+### Device.Network.WLAN.SupportWakeFromLowPower.WakeFromLowPower (If-Implemented)
 
 <table>
 <tr>
@@ -552,9 +552,9 @@ Network List Offload
 WLAN devices should support 10 offloaded BSSID profiles. Wi-Fi profiles that are marked auto-connect will be offloaded by the OS to the device/driver.  The device should use the network list offload as a hint to optimize scanning behavior and return "NDIS\_STATUS\_WDI\_INDICATION\_NLO\_DISCOVERY " indication when a matching profile is found.
 
 <a name="Device.Network.WLAN.SupportMACAddressRandomization"></a>
-# Device.Network.WLAN.SupportMACAddressRandomization
+## Device.Network.WLAN.SupportMACAddressRandomization
 
-## Device.Network.WLAN.SupportMACAddressRandomization.MACAddressRandomization (If-Implemented) **(WDI drivers only)**
+### Device.Network.WLAN.SupportMACAddressRandomization.MACAddressRandomization (If-Implemented) **(WDI drivers only)**
 
 <table>
 <tr>
@@ -572,9 +572,9 @@ WLAN devices should support 10 offloaded BSSID profiles. Wi-Fi profiles that ar
 The Wi-Fi MAC address is currently used to track users as they move through public spaces, from hot-spot to hot-spot, and even within a department store or a mall. By randomizing the MAC address, Windows Phones users cannot be tracked without their consent. To support this feature, the device must report to the operating system that it supports MAC Address Randomization via WDI\_GET\_ADAPTER\_CAPABILITIES. Please refer to the WDI spec for feature implementation details.
 
 <a name="Device.Network.WLAN.SupportHotspot2Dot0"></a>
-# Device.Network.WLAN.SupportHotspot2Dot0
+## Device.Network.WLAN.SupportHotspot2Dot0
 
-## Device.Network.WLAN.SupportHotspot2Dot0.Hotspot2Dot0 (If Implemented) **(WDI drivers only)**
+### Device.Network.WLAN.SupportHotspot2Dot0.Hotspot2Dot0 (If Implemented) **(WDI drivers only)**
 
 <table>
 <tr>
@@ -592,9 +592,9 @@ The Wi-Fi MAC address is currently used to track users as they move through publ
 Device must report that it supports ActionFrameSupport in WDI\_TLV\_INTERFACE\_CAPABILITIES and optinally report that it supports ConnectToSSIDsBelongingToHESSID in WDI\_STATION\_ATTRIBUTES. Please refer to the WDI Spec for implementation details.
 
 <a name="Device.Network.WLAN.SupportDot11W "></a>
-# Device.Network.WLAN.SupportDot11W 
+## Device.Network.WLAN.SupportDot11W 
 
-## Device.Network.WLAN.SupportDot11W.Dot11W (If-Implemented)
+### Device.Network.WLAN.SupportDot11W.Dot11W (If-Implemented)
 
 <table>
 <tr>
@@ -612,9 +612,9 @@ Device must report that it supports ActionFrameSupport in WDI\_TLV\_INTERFACE\_C
 Device must report support for 802.11w Protected Management Frames in WDI\_STATION\_ATTRIBUTES. IEEE 802.11w is an addition to IEEE 802.11 suite of standards to enhance the security of management frames. Please refer to the WDI Spec for implementation details.
 
 <a name="Device.Network.WLAN.SupportFIPS"></a>
-# Device.Network.WLAN.SupportFIPS
+## Device.Network.WLAN.SupportFIPS
 
-## Device.Network.WLAN.SupportFIPS.FIPS (If-Implemented)
+### Device.Network.WLAN.SupportFIPS.FIPS (If-Implemented)
 
 <table>
 <tr>
@@ -638,9 +638,9 @@ Your WLAN device must support one of the two following solutions for FIPS suppor
 2.  Software based solution: Windows implements a software based solution that conforms to the FIPS standard. You can do so by declaring DOT11\_EXTSTA\_ATTRIBUTES\_SAFEMODE\_OID\_SUPPORTED, and implementing OID\_DOT11\_SAFE\_MODE\_ENABLED or OID\_DOT11\_SAFE\_MODE\_HT\_ENABLED in your driver.
 
 <a name="Device.Network.WLAN.SupportWiFiDirect"></a>
-# Device.Network.WLAN.SupportWiFiDirect
+## Device.Network.WLAN.SupportWiFiDirect
 
-## Device.Network.WLAN.SupportWiFiDirect.WiFiDirect (If-Implemented)
+### Device.Network.WLAN.SupportWiFiDirect.WiFiDirect (If-Implemented)
 
 <table>
 <tr>
@@ -653,7 +653,7 @@ Your WLAN device must support one of the two following solutions for FIPS suppor
 <p>Windows v10.0 Mobile x86</p>
 </td></tr></table>
 
-### Support Wi-Fi Direct Base Functionality
+#### Support Wi-Fi Direct Base Functionality
 
 **Description**
 
@@ -688,7 +688,7 @@ If this requirements is supported, then the device must be capable of performing
 
 -   Support for indication of Operating Channel whether in GO or Client Role via the WIFI\_INDICATION\_LINK\_STATE\_CHANGE
 
-### Support Background Discovery
+#### Support Background Discovery
 
 **Description**
 
@@ -703,7 +703,7 @@ Device must report the relevant capabilities in the WIFI\_GET\_ADAPTER\_CAPABILI
 
 If the device supports this requirement, it must be able to scan for Wi-Fi Direct Devices & GO on all supports periodically in D0 state.
 
-### Support eCSA
+#### Support eCSA
 
 **Description**
 
@@ -721,7 +721,7 @@ If this requirements is supported then all Wi-Fi Direct Ports must support eCSA.
 
 OS will not control the eCSA behavior of the Device, this is device specific implementation.
 
-### Support Concurrency
+#### Support Concurrency
 
 **Description**
 
@@ -845,7 +845,7 @@ Sample of Expected Supported Matrix for 2 Channel & 2 Port Concurrency
 
  
 
-### Support Internet Sharing
+#### Support Internet Sharing
 
 **Description**
 
@@ -895,9 +895,9 @@ When WMM prioritization is used with AC\_VI or AC\_VO (Voice/Video), WLAN device
 | **&nbsp;**                                             | AC\_VI/AC\_VO | AC\_VI/AC\_VO               | 50ms                                                      | 0.5%, not more than 3 consecutive packets |
 
 <a name="Device.Network.WLAN.SupportWiFiDirectServices "></a>
-# Device.Network.WLAN.SupportWiFiDirectServices 
+## Device.Network.WLAN.SupportWiFiDirectServices 
 
-## Device.Network.WLAN.SupportWiFiDirect.WiFiDirectServices (If-Implemented)**(WDI drivers only)**
+### Device.Network.WLAN.SupportWiFiDirect.WiFiDirectServices (If-Implemented)**(WDI drivers only)**
 
 <table>
 <tr>
@@ -943,9 +943,9 @@ If this requirement is supported, then the device must be capable of performing 
 -   Support for Indication of received Action Frames
 
 <a name="Device.Network.WLAN.SupportWirelessDocking"></a>
-# Device.Network.WLAN.SupportWirelessDocking
+## Device.Network.WLAN.SupportWirelessDocking
 
-## Device.Network.WLAN.SupportWirelessDocking (If-Implemented) **(WDI drivers only)**
+### Device.Network.WLAN.SupportWirelessDocking (If-Implemented) **(WDI drivers only)**
 
 <table>
 <tr>
@@ -968,9 +968,9 @@ If 802.11ad is being used, the following new PHY type must be reported:
 Device must report 802.11ad PHY type 9 (WDI\_PHY\_TYPE\_DMG) in the WDI\_PHY\_INFO structures returned by OID\_WDI\_GET\_ADAPTER\_CAPABILITIES.
 
 <a name="Device.Network.WLAN.SupportHostedNetwork"></a>
-# Device.Network.WLAN.SupportHostedNetwork
+## Device.Network.WLAN.SupportHostedNetwork
 
-## Device.Network.WLAN.SupportHostedNetwork.HostedNetwork (If-Implemented) **(Native Wi-Fi drivers only)**
+### Device.Network.WLAN.SupportHostedNetwork.HostedNetwork (If-Implemented) **(Native Wi-Fi drivers only)**
 
 <table>
 <tr>

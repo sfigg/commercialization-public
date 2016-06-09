@@ -5,11 +5,11 @@
 -->
 
 <a name="Device.Connectivity.UsbHub"></a>
-# Device.Connectivity.UsbHub
+## Device.Connectivity.UsbHub
 
 *Requirements that apply only to USB Hubs*
 
-## Device.Connectivity.UsbHub.IdentifyNumOfUserAccessiblePorts
+### Device.Connectivity.UsbHub.IdentifyNumOfUserAccessiblePorts
 
 *A USB hub must correctly identify and report the number of ports that the user can access.*
 
@@ -29,7 +29,7 @@
 
 The USB hub must include details in its hub descriptor that provide the operating system with an accurate count of the number of downstream-facing ports that the hub supports and that are exposed to the user. See USB Specification, Revision 2.0, Section11.23, and USB 3.0 Specification, Section 10.14. Root hubs are exempt from this requirement.
 
-## Device.Connectivity.UsbHub.SupportSuspend
+### Device.Connectivity.UsbHub.SupportSuspend
 
 *USB hubs must support the selective suspend state, and downstream devices must not drop off the bus when the hub resumes from selective suspend.*
 
@@ -49,7 +49,7 @@ The USB hub must include details in its hub descriptor that provide the operatin
 
 USB hubs must support the selective suspend state, as stated in both the USB Specification and other logo program requirements. After a hub is resumed from the selective suspend state, all devices that were attached downstream of the hub, and that were not removed while the hub was suspended, must be present.
 
-## Device.Connectivity.UsbHub.Usb3HubCompliesWithUsb3Spec
+### Device.Connectivity.UsbHub.Usb3HubCompliesWithUsb3Spec
 
 *USB 3.0 hubs are compliant with the USB 3.0 specification.*
 
@@ -77,7 +77,7 @@ USB 3.0 hubs must:
 
 -   Pass the USB 3.0 CV test
 
-## Device.Connectivity.UsbHub.Usb3ReportPortStatusBitsCorrectly
+### Device.Connectivity.UsbHub.Usb3ReportPortStatusBitsCorrectly
 
 *USB 3.0 hubs must always report the port status bits correctly as per the USB 3.0 specification.*
 
@@ -106,7 +106,7 @@ In the current stack, a number of invalid port status bit combinations that the 
 
 A hub should not report spurious change interrupts. A hub should complete the port status interrupt transfer without reporting changes.
 
-## Device.Connectivity.UsbHub.USBTypeCHubCompat
+### Device.Connectivity.UsbHub.USBTypeCHubCompat
 
 *USB Type-C Hub Compatibility*
 

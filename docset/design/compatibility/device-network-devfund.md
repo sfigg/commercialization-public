@@ -5,11 +5,11 @@
 -->
 
 <a name="Device.Network.DevFund"></a>
-# Device.Network.DevFund
+## Device.Network.DevFund
 
 *Network requirements *
 
-## Device.Network.DevFund.NdisVersion
+### Device.Network.DevFund.NdisVersion
 
 *NDIS devices must conform to the NDIS 6.x requirements in the Windows Driver Kit.*
 
@@ -32,7 +32,7 @@ All NDIS device must conform to NDIS 6.x specified in the Windows Driver Kit.
 
 See the Windows Driver Kit, "NDIS."
 
-## Device.Network.DevFund.NPOS
+### Device.Network.DevFund.NPOS
 
 *Network Devices must support No Pause On Suspend (NPOS).*
 
@@ -55,7 +55,7 @@ NDIS miniport drivers must support No Pause On Suspend (NPOS) on client SKUs (fe
 
 See the No Pause On Suspend Specification.
 
-## Device.Network.DevFund.SelectiveSuspend
+### Device.Network.DevFund.SelectiveSuspend
 
 *NDIS devices must meet Selective Suspend requirements.*
 
