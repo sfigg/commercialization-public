@@ -221,12 +221,8 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-
 [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
 
- 
+ ## <span id="Related_topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related topics
 
- 
-
-
-
+[Update apps on your IoT Core devices](updating-iot-core-apps.md)
