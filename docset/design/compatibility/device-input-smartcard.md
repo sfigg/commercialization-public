@@ -3,7 +3,7 @@ title: Device.Input.SmartCard
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Input.SmartCard

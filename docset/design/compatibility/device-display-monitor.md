@@ -3,7 +3,7 @@ title: Device.Display.Monitor
 Description: 'Requirements for displays, intended to ensure a good end-user experience.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

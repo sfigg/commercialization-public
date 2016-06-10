@@ -3,7 +3,7 @@ title: Device.Graphics
 Description: 'Requirements for the base feature set required of all graphic devices.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Graphics

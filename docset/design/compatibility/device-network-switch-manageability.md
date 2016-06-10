@@ -3,7 +3,7 @@ title: Device.Network.Switch.Manageability
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

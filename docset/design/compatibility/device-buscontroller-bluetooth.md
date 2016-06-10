@@ -3,7 +3,7 @@ title: Device.BusController.Bluetooth
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.BusController.Bluetooth

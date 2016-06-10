@@ -3,7 +3,7 @@ title: Device.Network.LAN
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Network.LAN

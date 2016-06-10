@@ -3,7 +3,7 @@ title: Device.DevFund
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.DevFund

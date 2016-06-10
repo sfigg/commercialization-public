@@ -3,7 +3,7 @@ title: Device.Storage
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Storage

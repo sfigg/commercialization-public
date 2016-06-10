@@ -3,7 +3,7 @@ title: Device.Connectivity.PciConnected
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

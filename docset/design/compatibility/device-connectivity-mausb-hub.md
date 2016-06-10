@@ -3,7 +3,7 @@ title: Device.Connectivity.MAUSB.Hub
 Description: 'Requirements apply to MA-USB Hubs. However, MA-USB requirements are currently optional and will not be enforced until 2017.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

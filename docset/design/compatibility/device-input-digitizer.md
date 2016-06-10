@@ -3,7 +3,7 @@ title: Device.Input.Digitizer
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Input.Digitizer

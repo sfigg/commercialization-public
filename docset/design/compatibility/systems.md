@@ -3,7 +3,7 @@ title: Hardware Compatibility Specification for Filter for Windows 10 1606
 Description: 'This section of the documentation provides specifications for hardware compatibility for systems running Windows 10 1606.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Hardware Compatibility Specification for Systems for Windows 10 1606

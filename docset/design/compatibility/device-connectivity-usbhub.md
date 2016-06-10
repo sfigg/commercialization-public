@@ -3,7 +3,7 @@ title: Device.Connectivity.UsbHub
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

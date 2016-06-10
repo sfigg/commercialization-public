@@ -3,7 +3,7 @@ title: Device.Input.Keyboard
 Description: 'Logo requirements detailing the implementation details of a keyboard important to Microsoft operating systems.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

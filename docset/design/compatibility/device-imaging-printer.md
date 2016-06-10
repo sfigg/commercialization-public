@@ -3,7 +3,7 @@ title: Device.Imaging.Printer
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Imaging.Printer

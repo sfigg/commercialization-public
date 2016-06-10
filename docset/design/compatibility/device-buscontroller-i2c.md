@@ -3,7 +3,7 @@ title: Device.BusController.I2C
 Description: 'Requirements only for I2C controller silicon vendors. System manufacturers may optionally run these tests, but may need hardware customization.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

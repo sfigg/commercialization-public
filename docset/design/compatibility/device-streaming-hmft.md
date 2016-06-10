@@ -3,7 +3,7 @@ title: Device.Streaming.HMFT
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

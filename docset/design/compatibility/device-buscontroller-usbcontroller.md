@@ -3,7 +3,7 @@ title: Device.BusController.UsbController
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

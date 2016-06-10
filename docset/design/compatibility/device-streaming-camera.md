@@ -3,7 +3,7 @@ title: Device.Streaming.Camera
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Streaming.Camera

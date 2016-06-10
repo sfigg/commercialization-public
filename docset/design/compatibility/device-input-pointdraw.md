@@ -3,7 +3,7 @@ title: Device.Input.PointDraw
 Description: 'Specifications that apply to mice, touch pads, and other input devices used to move the pointer.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

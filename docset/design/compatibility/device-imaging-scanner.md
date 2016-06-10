@@ -3,7 +3,7 @@ title: Device.Imaging.Scanner
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.Imaging.Scanner

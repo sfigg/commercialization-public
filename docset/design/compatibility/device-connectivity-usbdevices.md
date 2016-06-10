@@ -3,7 +3,7 @@ title: Device.Connectivity.UsbDevices
 Description: 'Requirements for all devices that connect via USB, including USB hubs, but not USB controllers.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 <!--

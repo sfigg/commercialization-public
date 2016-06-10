@@ -3,7 +3,7 @@ title: Device.BusController.NFC
 Description: 'Requirements.'
 ms.assetid: 
 MSHAttr: 
-author: v-gmoor
+author: beneluxboy
 ---
 
 # Device.BusController.NFC
