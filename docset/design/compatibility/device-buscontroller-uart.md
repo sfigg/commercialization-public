@@ -1,3 +1,11 @@
+---
+title: Device.BusController.UART
+Description: 'Requirements only for silicon vendors. UART controller drivers are recommended to use SerCXV2.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.BusController.UART
 

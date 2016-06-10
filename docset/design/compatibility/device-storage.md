@@ -1,3 +1,11 @@
+---
+title: Device.Storage
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Storage
 
  - [Device.Storage.Controller](#Device.Storage.Controller)

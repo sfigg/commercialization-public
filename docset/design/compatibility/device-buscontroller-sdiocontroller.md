@@ -1,3 +1,11 @@
+---
+title: Device.BusController.SdioController
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.BusController.SdioController
 

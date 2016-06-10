@@ -1,3 +1,11 @@
+---
+title: Device.Graphics
+Description: 'Requirements for the base feature set required of all graphic devices.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Graphics
 
  - [Device.Graphics.AdapterBase](#Device.Graphics.AdapterBase)

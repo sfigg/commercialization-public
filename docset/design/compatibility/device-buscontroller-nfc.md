@@ -1,3 +1,11 @@
+---
+title: Device.BusController.NFC
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.BusController.NFC
 
  - [Device.BusController.NFC](#Device.BusController.NFC)

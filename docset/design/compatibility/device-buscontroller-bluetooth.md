@@ -1,3 +1,11 @@
+---
+title: Device.BusController.Bluetooth
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.BusController.Bluetooth
 
  - [Device.BusController.Bluetooth.Base](#Device.BusController.Bluetooth.Base)

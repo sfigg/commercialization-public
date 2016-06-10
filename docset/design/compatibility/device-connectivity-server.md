@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.Server
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.Server
 

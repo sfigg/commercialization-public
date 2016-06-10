@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.Network.VerticalPairing
+Description: 'Requirements. Root for former Rally technologies.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.Network.VerticalPairing
 

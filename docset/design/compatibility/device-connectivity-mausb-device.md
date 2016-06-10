@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.MAUSB.Device
+Description: 'Requirements apply to MA-USB Devices. However, MA-USB requirements are currently optional and will not be enforced until 2017.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.MAUSB.Device
 

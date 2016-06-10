@@ -1,3 +1,11 @@
+---
+title: Device.Network.LAN
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Network.LAN
 
  - [Device.Network.LAN.Base](#Device.Network.LAN.Base)

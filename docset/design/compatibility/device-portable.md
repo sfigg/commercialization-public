@@ -1,3 +1,11 @@
+---
+title: Device.Portable
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Portable
 
  - [Device.Portable.Core](#Device.Portable.Core)

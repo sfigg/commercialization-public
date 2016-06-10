@@ -1,3 +1,11 @@
+---
+title: Device.Input.Digitizer
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Input.Digitizer
  
  - [Device.Input.Digitizer.Base](#Device.Input.Digitizer.Base)

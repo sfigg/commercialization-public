@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.WSD
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.WSD
 

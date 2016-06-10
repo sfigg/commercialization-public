@@ -1,3 +1,11 @@
+---
+title: Device.Imaging.Scanner
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Imaging.Scanner
 
  - [Device.Imaging.Scanner.Base](#Device.Imaging.Scanner.Base)

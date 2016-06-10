@@ -1,3 +1,11 @@
+---
+title: Device.Network.MobileBroadband
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Network.MobileBroadband
 
  - [Device.Network.MobileBroadband.CDMA](#Device.Network.MobileBroadband.CDMA)

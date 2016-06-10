@@ -1,3 +1,11 @@
+---
+title: Device.Input.Location
+Description: 'Windows 10 location drivers can implement either GNSS drivers that are integrated with the legacy sensor class extension driver or GNSS drivers that integrate with the GNSS DDI introduced in Windows 10.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Input.Location
 

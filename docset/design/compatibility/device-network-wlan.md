@@ -1,3 +1,11 @@
+---
+title: Device.Network.WLAN
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Network.WLAN
 
  - [Device.Network.WLAN](#Device.Network.WLAN)

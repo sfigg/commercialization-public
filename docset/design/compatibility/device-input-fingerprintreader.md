@@ -1,3 +1,11 @@
+---
+title: Device.Input.FingerPrintReader
+Description: 'General requirements for biometric fingerprint readers.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Input.FingerPrintReader
 

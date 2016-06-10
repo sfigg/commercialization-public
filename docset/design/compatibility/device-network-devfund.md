@@ -1,3 +1,11 @@
+---
+title: Device.Network.DevFund
+Description: 'Network requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Network.DevFund
 

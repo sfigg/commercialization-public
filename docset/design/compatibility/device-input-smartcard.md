@@ -1,3 +1,11 @@
+---
+title: Device.Input.SmartCard
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Input.SmartCard
 
  - [Device.Input.SmartCardMiniDriver](#Device.Input.SmartCardMiniDriver)

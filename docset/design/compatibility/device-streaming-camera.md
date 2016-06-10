@@ -1,4 +1,12 @@
-# Device.Steaming.Camera
+---
+title: Device.Streaming.Camera
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
+# Device.Streaming.Camera
 
  - [Device.Streaming.Camera.Base](#Device.Streaming.Camera.Base)
  - [Device.Streaming.Camera.Base.Sharing](#Device.Streaming.Camera.Base.Sharing)

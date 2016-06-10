@@ -1,3 +1,11 @@
+---
+title: Device.Input.HID
+Description: 'All HID devices connected over I2C must comply with Microsoft HID I2C Protocol specification.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Input.HID
 

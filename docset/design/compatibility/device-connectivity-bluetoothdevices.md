@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.BluetoothDevices
+Description: 'Requirements for devices that connect to the computer via Bluetooth.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.BluetoothDevices
 

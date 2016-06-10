@@ -1,3 +1,11 @@
+---
+title: Device.Imaging.Printer
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Imaging.Printer
 
  - [Device.Imaging.Printer.Base](#Device.Imaging.Printer.Base)

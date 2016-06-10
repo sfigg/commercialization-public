@@ -1,3 +1,11 @@
+---
+title: Device.Audio
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 # Device.Audio
 
  - [Device.Audio.APO](#Device.Audio.APO)

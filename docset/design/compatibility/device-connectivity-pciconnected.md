@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.PciConnected
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: v-gmoor
+---
+
 <!--
 # Device.Connectivity.PciConnected
 
@@ -8,7 +16,6 @@
 ## Device.Connectivity.PciConnected
 
 ### Device.Connectivity.PciConnected.64BitPrefetchableBar
-
 
 *PCI-X and PCI Express devices that use prefetchable memory BARs, implement 64-bit prefetchable memory base address registers (BARs)*
 
