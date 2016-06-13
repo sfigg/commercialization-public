@@ -11,8 +11,13 @@ title: Windows Setup Automation Overview
 
 You can use a Windows Setup unattended answer file to modify system and control panel settings while installing Windows, or while updating an existing Windows image.
 
-## <span id="Use_an_answer_file_while_installing_Windows"></span><span id="use_an_answer_file_while_installing_windows"></span><span id="USE_AN_ANSWER_FILE_WHILE_INSTALLING_WINDOWS"></span>Use an answer file while installing Windows
+* [Use an Answer File] (#use-an-answer-file-while-installing-windows)
+* [Modify an existing installation] (#modify-an-existing-installation)
+* [Implicit Answer File Search Order] (#implicit-answer-file-search-order)
+* [Sensitive Data in Answer Files] (#sensitive-data-in-answer-files)
+* [Implicit Answer File Search Examples] (#implicit-answer-file-search-examples)
 
+##Use an answer file while installing Windows
 
 You can automate Windows installation by using an answer file:
 
@@ -30,8 +35,7 @@ You can automate Windows installation by using an answer file:
 
 For sample answer files and a list of settings used to automate installation, see [Automate Windows Setup](automate-windows-setup.md).
 
-## <span id="Modify_an_existing_image"></span><span id="modify_an_existing_image"></span><span id="MODIFY_AN_EXISTING_IMAGE"></span>Modify an existing image
-
+## Modify an existing installation
 
 Because reboots are required during Setup, a copy of the answer file is cached to the %WINDIR%\\Panther directory of the Windows installation. You can modify this file to do any of the following:
 
@@ -72,7 +76,7 @@ Because reboots are required during Setup, a copy of the answer file is cached t
 
 6.  Test the image by deploying it to a new PC, without specifying an answer file. When Windows Setup runs, it finds and uses this answer file.
 
-## <span id="bkmk_3"></span><span id="BKMK_3"></span>Implicit Answer File Search Order
+## Implicit Answer File Search Order
 
 
 Windows Setup searches for answer files at the beginning of each configuration pass, including the initial installation and after applying and booting an image. If an answer file is found, and it contains settings for the given configuration pass, it processes those settings.
@@ -165,7 +169,7 @@ The following table shows the implicit answer file search order.
 
  
 
-## <span id="bkmk_4"></span><span id="BKMK_4"></span>Sensitive Data in Answer Files
+## Sensitive Data in Answer Files
 
 
 Setup removes sensitive data in the cached answer file at the end of each configuration pass.
@@ -184,14 +188,14 @@ Because answer files are cached to the computer during Windows Setup, your answ
 
 You can add a command to the Setupcomplete.cmd command script that deletes any cached or embedded answer files on the computer. For more information, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
 
-## <span id="bkmk_a"></span><span id="BKMK_A"></span>Windows Setup Annotates Configuration Passes in an Answer File
+##Windows Setup Annotates Configuration Passes in an Answer File
 
 
 After a configuration pass is processed, Windows Setup annotates the cached answer file to indicate that the pass has been processed. If the configuration pass is run again and the cached answer file has not been replaced or updated in the interim, the answer file settings are not processed again. Instead, Windows Setup will search for implicit Unattend.xml files that are at a lower precedence location than the cached Unattend.xml file.
 
 For example, you can install Windows with an answer file that contains Microsoft-Windows-Deployment/**RunSynchronous** commands in the [specialize](specialize.md) configuration pass. During installation, the specialize configuration pass runs and the **RunSynchronous** commands execute. After installation, run the **sysprep** command with the **/generalize** option. If there is no answer file in a higher precedence than the cached answer file or an answer file was not explicitly passed to the Sysprep tool, Setup runs the specialize configuration pass the next time that the computer boots. Because the cached answer file contains an annotation that the settings for that configuration pass were already applied, the **RunSynchronous** commands do not execute.
 
-## <span id="bkmk_b"></span><span id="BKMK_B"></span>Implicit Answer File Search Examples
+## Implicit Answer File Search Examples
 
 
 The following examples help describe the behavior of implicit answer file searches.
@@ -235,7 +239,7 @@ The following examples help describe the behavior of implicit answer file search
     sysprep /generalize /unattend:C:\MyAnswerFile.xml
     ```
 
-### <span id="bkmk_c"></span><span id="BKMK_C"></span>Answer Files Must Include a Valid Configuration Pass
+### Answer Files Must Include a Valid Configuration Pass
 
 1.  Copy an Unattend.xml file to a removable media device.
 
