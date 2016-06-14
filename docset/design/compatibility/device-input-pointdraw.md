@@ -1,3 +1,11 @@
+---
+title: Device.Input.PointDraw
+Description: 'Specifications that apply to mice, touch pads, and other input devices used to move the pointer.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Input.PointDraw
 
@@ -5,11 +13,11 @@
 -->
 
 <a name="Device.Input.PointDraw"></a>
-# Device.Input.PointDraw
+## Device.Input.PointDraw
 
 *Applies to mice, touch pads, and other input devices used to move the pointer*
 
-## Device.Input.PointDraw.KernelModeDriversUseWdfKmdf
+### Device.Input.PointDraw.KernelModeDriversUseWdfKmdf
 
 *Mouse kernel-mode drivers must use the WDF-KMDF.*
 

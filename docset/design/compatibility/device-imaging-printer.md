@@ -1,3 +1,11 @@
+---
+title: Device.Imaging.Printer
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Imaging.Printer
 
  - [Device.Imaging.Printer.Base](#Device.Imaging.Printer.Base)
@@ -9,9 +17,9 @@
  - [Device.Imaging.Printer.XPS](#Device.Imaging.Printer.XPS)
 
 <a name="Device.Imaging.Printer.Base"></a>
-# Device.Imaging.Printer.Base
+## Device.Imaging.Printer.Base
 
-## Device.Imaging.Printer.Base.applicationVerifier
+### Device.Imaging.Printer.Base.applicationVerifier
 
 *Printer driver components must comply with Application Verifier test criteria.*
 
@@ -54,7 +62,7 @@ The following Application Verifier tests must be turned on for these processes d
 
 For information about Application Verifier, see <http://go.microsoft.com/fwlink/?LinkId=58371>*.*
 
-## Device.Imaging.Printer.Base.configurationFiles
+### Device.Imaging.Printer.Base.configurationFiles
 
 *Version 4 print drivers must provide valid configuration files.*
 
@@ -98,7 +106,7 @@ Version 4 print drivers must provide valid configuration files.
 
 	-   They should be designed securely and validate any untrusted data that will be parsed; this includes PrintCapabilities, PrintTicket, XPS Documents, and Property Bags.
 
-## Device.Imaging.Printer.Base.connectionRecovery
+### Device.Imaging.Printer.Base.connectionRecovery
 
 *A printer must continue to operate normally if a computer becomes unavailable during a print job.*
 
@@ -120,7 +128,7 @@ If a computer becomes unavailable during a print job (for example, if the comput
 Specifically, the printer must not fail into a state in which the end user must manually power cycle the printer or clear a paper jam.
 The printer does not have to complete or continue the failed print job when the computer becomes available again. However, when computer-to-printer communication is restored, new print jobs must be able to spool and complete normally.
 
-## Device.Imaging.Printer.Base.deviceCapabilities
+### Device.Imaging.Printer.Base.deviceCapabilities
 
 *A printer must correctly support the DeviceCapabilities and GetDeviceCaps application programming interfaces (APIs) based on the guidelines in the Windows Driver Kit.*
 
@@ -139,7 +147,7 @@ This requirement clarifies the use of existing WLK tests. The Print Driver Devic
 For more information, see <http://msdn.microsoft.com/en-us/library/dd183552.aspx>
 and <http://msdn.microsoft.com/en-us/library/ff566075.aspx>*.*
 
-## Device.Imaging.Printer.Base.driverCategory
+### Device.Imaging.Printer.Base.driverCategory
 
 *Version 4 printer drivers must declare a valid printer category.*
 
@@ -166,7 +174,7 @@ The DriverCategory must be one of the following values:
 -   PrintFax.Printer.Service
 
 
-## Device.Imaging.Printer.Base.DriverPDC (If Implemented)
+### Device.Imaging.Printer.Base.DriverPDC (If Implemented)
 
 INF files must have correct syntax when PWG Raster rendering filter is included
 
@@ -183,7 +191,7 @@ INF files must have correct syntax when PWG Raster rendering filter is included
 
 All v4 print drivers which make use of the PrintDeviceCapabilities DataFile type must implement their PrintDeviceCapabilities file properly. Drivers which make use of the PWG Raster standard rendering filter must provide a PrintDeviceCapabilities DataFile which conforms to this requirement.
 
-## Device.Imaging.Printer.Base.GDLFile
+### Device.Imaging.Printer.Base.GDLFile
 
 *GDL files must use the correct syntax according to the guidelines in the Windows Driver Kit.*
 
@@ -201,7 +209,7 @@ All v4 print drivers which make use of the PrintDeviceCapabilities DataFile type
 This requirement clarifies the use of existing WLK tests. The Generic Description Language (GDL) Correctness Test determines whether GDL files use the correct syntax according to the WDK.
 For more information, see <http://msdn.microsoft.com/en-us/library/ff549787.aspx> *and* <http://msdn.microsoft.com/en-us/library/ff563355.aspx>*.*
 
-## Device.Imaging.Printer.Base.infFile
+### Device.Imaging.Printer.Base.infFile
 
 *INF files must use the correct syntax according to the guidelines in the Windows Driver Kit.*
 
@@ -248,7 +256,7 @@ For more information on v3 INF files, see <http://msdn.microsoft.com/en-us/libra
 
 
 
-## Device.Imaging.Printer.Base.printProcessor
+### Device.Imaging.Printer.Base.printProcessor
 
 *Print processors must be implemented based on the guidelines in the Windows Driver Kit.*
 
@@ -275,7 +283,7 @@ All print processors must support the following endpoints:
 
 For more information, see <http://msdn.microsoft.com/en-us/library/ff566084.aspx>*.*
 
-## Device.Imaging.Printer.Base.printRegions
+### Device.Imaging.Printer.Base.printRegions
 
 *A printer must support printable regions accurately.*
 
@@ -300,7 +308,7 @@ This test applies to all paper sizes that the printer physically supports. If th
 
 If the printer does not support printing on a physical medium that is at least 4" x 4" in size, the printer is exempt from this requirement.
 
-## Device.Imaging.Printer.Base.printTicket
+### Device.Imaging.Printer.Base.printTicket
 
 *A printer driver must support PrintTicket/PrintCapabilities.*
 
@@ -334,7 +342,7 @@ Printer drivers must support the following basic Print Schema element types:
 -   PageICMRenderingIntent
 -   One of the following: JobInputBin, DocumentInputBin, or PageInputBin
 
-## Device.Imaging.Printer.Base.rendering
+### Device.Imaging.Printer.Base.rendering
 
 *A printer must correctly render print jobs.*
 
@@ -368,7 +376,7 @@ For more information about Pgremlin2, see <http://msdn.microsoft.com/en-us/libra
 For more information about the WinFX Markup Content Rendering Test, see <http://msdn.microsoft.com/en-us/library/ff569275.aspx>*.*
 For more information about the Photo Print Test, see <http://msdn.microsoft.com/en-us/library/ff565234.aspx>*.*
 
-## Device.Imaging.Printer.Base.TCPMon
+### Device.Imaging.Printer.Base.TCPMon
 
 *Network-connected printers that support Port 9100 printing with the Microsoft Standard Port Monitor (TCPMon) must provide rich status for the device.*
 
@@ -386,9 +394,9 @@ For more information about the Photo Print Test, see <http://msdn.microsoft.com/
 If the printer uses a network interface port connection and supports Port 9100 printing (raw printing) with the Microsoft Standard Port Monitor (TCPmon), it must also support Simple Network Management Protocol (SNMP), Host Resource Management Information Base (MIB), and Common Printer MIB, and Printer Port Monitor MIB 1.0 (IEEE-ISTO5107.1-2005) so that the operating system can provide rich status for the device.
 
 <a name="Device.Imaging.Printer.Mobile"></a>
-# Device.Imaging.Printer.Mobile
+## Device.Imaging.Printer.Mobile
 
-## Device.Imaging.Printer.Mobile.Mobile (If Implemented)
+### Device.Imaging.Printer.Mobile.Mobile (If Implemented)
 
 Printer must implement the following items in the description to ensure proper functionality
 
@@ -440,7 +448,7 @@ Printer must implement the following items in the description to ensure proper f
 </html>
 
 
-## Device.Imaging.Printer.Mobile.PDL (If Implemented) 
+### Device.Imaging.Printer.Mobile.PDL (If Implemented) 
 
 Printers with mobile print capability must support one of the following PDLs and conform to the relevant requirements for it.
 
@@ -554,9 +562,9 @@ Printers supporting PWG Raster must conform to the PWG Raster industry standard 
 </html>
 
 <a name="Device.Imaging.Printer.Mobile.WSD20"></a>
-# Device.Imaging.Printer.Mobile.WSD20
+## Device.Imaging.Printer.Mobile.WSD20
 
-## Device.Imaging.Printer.Mobile.WSD20.PDC (If Implemented)
+### Device.Imaging.Printer.Mobile.WSD20.PDC (If Implemented)
 
 Printer supporting PrintDeviceCapabilities (PDC) must support the following items in the description
 
@@ -587,7 +595,7 @@ Printer supporting PrintDeviceCapabilities (PDC) must support the following item
 
 7.  Printers which indicate the deviceProcessing attribute in a PrintDeviceCapabilities file must support those features without interaction of the host. If the printer indicates that an Option or Parameter is processed in hardware using the deviceProcessing="true" attribute, then it MUST handle that Option or Parameter without the participation of the host.
 
-## Device.Imaging.Printer.Mobile.WSD20.WSD20support (If Implemented)
+### Device.Imaging.Printer.Mobile.WSD20.WSD20support (If Implemented)
 
 Printer supporting WS-Print 2.0 must implement the following requirements
 
@@ -666,9 +674,9 @@ Printer supporting WS-Print 2.0 must implement the following requirements
 </html>
 
 <a name="Device.Imaging.Printer.OXPS"></a>
-# Device.Imaging.Printer.OXPS
+## Device.Imaging.Printer.OXPS
 
-## Device.Imaging.Printer.OXPS.OXPS
+### Device.Imaging.Printer.OXPS.OXPS
 
 *V4 drivers that support OpenXPS must be implemented according to the rules specified in the WDK.*
 
@@ -709,9 +717,9 @@ V4 print drivers that support OpenXPS, either exclusively or in dual-format sup
 -   OpenXPS supporting drivers must adhere to all other v4 rules.  Dual-format drivers must adhere to both OpenXPS and MSXPS requirements and successfully handle either format.
 
 <a name="Device.Imaging.Printer.USB"></a>
-# Device.Imaging.Printer.USB
+## Device.Imaging.Printer.USB
 
-## Device.Imaging.Printer.USB.CompatID
+### Device.Imaging.Printer.USB.CompatID
 
 *Printers must implement a Compatible ID in their IEEE1284 string according to the rules specified in the WDK.*
 
@@ -748,7 +756,7 @@ Recommended:
 Devices that receive the Windows 7 logo before June 1, 2012 are exempt from this requirement.
 Link to Compatible ID Whitepaper: <http://msdn.microsoft.com/en-us/windows/hardware/gg463313.aspx>
 
-## Device.Imaging.Printer.USB.JSBidiExtender
+### Device.Imaging.Printer.USB.JSBidiExtender
 
 *USB JavaScript Bidi Extenders are implemented according to the guidance in the WDK.*
 
@@ -776,9 +784,9 @@ USB JavaScript Bidi Extenders are implemented according to the guidance in the W
 They must use syntactically valid JavaScript, implemented according to the WDK.
 
 <a name="Device.Imaging.Printer.WSD"></a>
-# Device.Imaging.Printer.WSD
+## Device.Imaging.Printer.WSD
 
-## Device.Imaging.Printer.WSD.CompatID
+### Device.Imaging.Printer.WSD.CompatID
 
 *Printers must implement a Compatible ID in their IEEE1284 string according to the rules specified in the WDK.*
 
@@ -811,9 +819,9 @@ Recommended:
 See [How to implement compatible IDs in printing devices](http://msdn.microsoft.com/en-us/windows/hardware/gg463313.aspx), a white paper.
 
 <a name="Device.Imaging.Printer.XPS"></a>
-# Device.Imaging.Printer.XPS
+## Device.Imaging.Printer.XPS
 
-## Device.Imaging.Printer.XPS.XPS
+### Device.Imaging.Printer.XPS.XPS
 
 *A printer must have a driver that correctly implements the XPSDrv printer driver architecture.*
 

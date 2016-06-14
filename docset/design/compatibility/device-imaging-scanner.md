@@ -1,12 +1,20 @@
+---
+title: Device.Imaging.Scanner
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Imaging.Scanner
 
  - [Device.Imaging.Scanner.Base](#Device.Imaging.Scanner.Base)
  - [Device.Imaging.Scanner.WSD](#Device.Imaging.Scanner.WSD)
 
 <a name="Device.Imaging.Scanner.Base"></a>
-# Device.Imaging.Scanner.Base
+## Device.Imaging.Scanner.Base
 
-## Device.Imaging.Scanner.Base.dataTransfer
+### Device.Imaging.Scanner.Base.dataTransfer
 
 *WIA drivers must support specific data transfer implementations.*
 
@@ -83,7 +91,7 @@ WIA drivers must not do the following:
 
  
 
-## Device.Imaging.Scanner.Base.wia20
+### Device.Imaging.Scanner.Base.wia20
 
 *Scanners and multi-function printers that have scanning ability must implement the WIA 2.0 driver architecture according to the Windows Driver Kit guidelines.*
 
@@ -106,7 +114,7 @@ Scanners need to correctly implement the Windows WIA Scanner Item Architecture f
 
 WIA 2.0 enables new stream-based transfer models and certain extensions that include an image-processing filter, a segmentation filter, and error handling. For more information about WIA 2.0, see "Introduction to WIA 2.0" at <http://www.microsoft.com/whdc/device/stillimage/WIA20-intro.mspx> *and "*What's new in WIA 2.0" at <http://msdn.microsoft.com/en-us/library/ms630379.aspx>*.*
 
-## Device.Imaging.Scanner.Base.WIAProperties
+### Device.Imaging.Scanner.Base.WIAProperties
 
 *Scanners must implement support for all required WIA properties and property values.*
 
@@ -124,9 +132,9 @@ WIA 2.0 enables new stream-based transfer models and certain extensions that inc
 The Windows Driver Kit (WDK) reference documents and tools outline the properties and property values for WIA. Scanners must implement WIA as described in the WDK.
 
 <a name="Device.Imaging.Scanner.WSD"></a>
-# Device.Imaging.Scanner.WSD
+## Device.Imaging.Scanner.WSD
 
-## Device.Imaging.Scanner.WSD.WSScan
+### Device.Imaging.Scanner.WSD.WSScan
 
 *Scanners that have a network connection must implement the WS-Scan protocol.*
 

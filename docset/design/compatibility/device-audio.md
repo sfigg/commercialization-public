@@ -1,3 +1,11 @@
+---
+title: Device.Audio
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Audio
 
  - [Device.Audio.APO](#Device.Audio.APO)
@@ -7,11 +15,11 @@
  - [Device.Audio.USB](#Device.Audio.USB)
 
 <a name="Device.Audio.APO"></a>
-# Device.Audio.APO
+## Device.Audio.APO
 
 *This APO must match all APO tests.*
 
-## Device.Audio.APO.BestPractices
+### Device.Audio.APO.BestPractices
 
 *APOs should follow best practices for Windows APOs*
 
@@ -33,7 +41,7 @@ All APOs (Audio Processing Objects) should follow the best practices outlined in
 
 This white paper can be found on MSDN: <http://go.microsoft.com/fwlink/?LinkId=716913>
 
-## Device.Audio.APO.MicArrayRawData
+### Device.Audio.APO.MicArrayRawData
 
 *System effect in the capture path provides RAW data from microphone array when requested by the client.*
 
@@ -56,11 +64,11 @@ If a microphone array processing algorithm is provided in a Windows system effec
 It is highly recommended for onboard fixed-position microphone array (multiple combined elements) on a system to follow “Speech Platform Device Recommendations Specification” for an optimized experience.
 
 <a name="Device.Audio.Base"></a>
-# Device.Audio.Base
+## Device.Audio.Base
 
 *This device must match all base tests.*
 
-## Device.Audio.Base.AudioProcessing
+### Device.Audio.Base.AudioProcessing
 
 *Audio devices must support proper audio processing discovery and control.*
 
@@ -122,7 +130,7 @@ Loopback
 
 The loopback stream should represent the stream coming out of the speaker. Drivers with hardware processing must provide the system an accurate loopback stream.
 
-## Device.Audio.Base.Endpoints
+### Device.Audio.Base.Endpoints
 
 *Audio subsystem properly reflects current system configuration*
 
@@ -212,7 +220,7 @@ For connectors that are on a detachable docking station, mechanism (b) is recomm
 
 http://go.microsoft.com/fwlink/?LinkId=716908
 
-## Device.Audio.Base.FunctionsPostUpgrade
+### Device.Audio.Base.FunctionsPostUpgrade
 
 *Audio devices function properly after the OS has been upgraded*
 
@@ -234,7 +242,7 @@ In order to support frequently upgrading the Windows OS, all audio drivers shoul
 
 In order to meet this requirement, no function should depend on anything (files, registry settings, etc.) installed outside of a driver package with the exception of OS components or other drivers on the system. For example, driver customizations (e.g., presets, mic-array geometry info, OEM customization) should be included in the audio driver package rather than installed directly on the system on the factory floor. Ideally, the driver installation would be installed deterministically using only INF directives.
 
-## Device.Audio.Base.HardwareArchitecture
+### Device.Audio.Base.HardwareArchitecture
 
 *Audio subsystems must use a technology compatible with Windows.*
 
@@ -292,7 +300,7 @@ A device provides *basic functionality* when it meets all the Windows Hardware C
 
 [Audio Device Technologies](http://msdn.microsoft.com/en-us/library/windows/hardware/gg454527.aspx): http://go.microsoft.com/fwlink/?LinkId=716909
 
-## Device.Audio.Base.PowerManagement
+### Device.Audio.Base.PowerManagement
 
 *Audio device must comply with related power management specifications.*
 
@@ -328,7 +336,7 @@ Bluetooth Specifications: <https://www.bluetooth.org/en-us/specification/adopted
 
 MSDN: http://go.microsoft.com/fwlink/?LinkId=716910
 
-## Device.Audio.Base.SamplePositionAccuracy
+### Device.Audio.Base.SamplePositionAccuracy
 
 *Audio driver reports render sample position with defined accuracy for stream synchronization.*
 
@@ -356,7 +364,7 @@ For all audio endpoints, IAudioClock::GetPosition shall report timestamps with:
 
 This requirement applies to both render and capture for all formats, modes, and pins (host, offload, loopback).
 
-## Device.Audio.Base.StreamingFormats
+### Device.Audio.Base.StreamingFormats
 
 *Audio subsystems must use formats supported by Windows.*
 
@@ -424,7 +432,7 @@ MSDN: <http://go.microsoft.com/fwlink/?LinkId=716911>
 
 MSDN: <https://msdn.microsoft.com/en-us/library/windows/hardware/ff537083.aspx>
 
-## Device.Audio.Base.SupportWindowsAPIs
+### Device.Audio.Base.SupportWindowsAPIs
 
 *Drivers should function properly with all Windows Audio APIs*
 
@@ -454,7 +462,7 @@ Drivers should stream properly when using any of the Windows Audio APIs. This in
 
 -   MediaCapture APIs
 
-## Device.Audio.Base.VolumeControl
+### Device.Audio.Base.VolumeControl
 
 *Audio driver volume controls are linear and have adequate resolution.*
 
@@ -479,11 +487,11 @@ Topology volume nodes must have a resolution equal to or better than 1.5 dB and 
 See the Windows Driver Kit, "KSPROPERTY\_AUDIO\_VOLUMELEVEL” for more details.
 
 <a name="Device.Audio.HardwareAudioProcessing"></a>
-# Device.Audio.HardwareAudioProcessing
+## Device.Audio.HardwareAudioProcessing
 
 *HardwareAudioProcessing*
 
-## Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading
+### Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading
 
 *Hardware that supports offloaded audio render processing must meet this requirement.*
 
@@ -580,11 +588,11 @@ If a hardware solution supports offloaded audio render processing, the driver mu
 IMiniportAudioEngineNode contains a list of methods related to the offload KS properties targeting the audio engine node via KS filter handle. A miniport driver's WaveRT miniport class needs to inherit not only from IMiniportWaveRT interface, it also needs to inherit IMiniportAudioEngineNode interface and implement all the defined methods.
 
 <a name="Device.Audio.HDAudio"></a>
-# Device.Audio.HDAudio
+## Device.Audio.HDAudio
 
 *This audio device uses the HD audio driver.*
 
-## Device.Audio.HDAudio.HDAudioSpecCompliance
+### Device.Audio.HDAudio.HDAudioSpecCompliance
 
 *HD Audio codec for audio must comply with the Intel High Definition Audio specification.*
 
@@ -640,11 +648,11 @@ Speaker compensation is the only valid scenario for audio signal processing of a
 4.  HD Audio hardware that complies with HD Audio specification version 1.0 must set the correct version number in the appropriate registers. The VMAJ and VMIN registers must specify a major version number of 01h and a minor version number of 00h.
 
 <a name="Device.Audio.USB"></a>
-# Device.Audio.USB
+## Device.Audio.USB
 
 *This audio device uses the USB audio driver.*
 
-## Device.Audio.USB.HIDControls
+### Device.Audio.USB.HIDControls
 
 *USB audio device uses USB HID audio controls to keep the operating system informed of user interactions with the device.*
 
@@ -670,7 +678,7 @@ Devices may not use Reserved usages from any Standard Usage Page.
 
 See "HID Audio Controls and Windows" at <http://go.microsoft.com/fwlink/?LinkId=40491> and the Windows Driver Kit, "HID and Windows" for more design information.
 
-## Device.Audio.USB.USB
+### Device.Audio.USB.USB
 
 *USB audio device must follow UAA USB audio design guidelines.*
 

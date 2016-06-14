@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.MAUSB.Hub
+Description: 'Requirements apply to MA-USB Hubs. However, MA-USB requirements are currently optional and will not be enforced until 2017.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Connectivity.MAUSB.Hub
 
@@ -5,13 +13,13 @@
 -->
 
 <a name="Device.Connectivity.MAUSB.Hub "></a>
-# Device.Connectivity.MAUSB.Hub 
+## Device.Connectivity.MAUSB.Hub 
 
 The following requirements apply to MA-USB Hubs
 
 MA-USB requirements are currently optional and will not be enforced until 2017.
 
-## Device.Connectivity.MAUSB.Hub.BulkOutBufferSize
+### Device.Connectivity.MAUSB.Hub.BulkOutBufferSize
 
 *MA-USB hubs must support at least 64KB of Buffer Space per non SuperSpeed Bulk Out endpoints and at least 512KB of Buffer Space per SuperSpeed Bulk Out endpoints*
 
@@ -37,7 +45,7 @@ MA-USB Hubs must support these minimum buffer sizes to be able to work reliably 
 
 -   non SuperSpeed Bulk Out - 64KB
 
-## Device.Connectivity.MAUSB.Hub.IdentifyNumOfUserAccessiblePorts
+### Device.Connectivity.MAUSB.Hub.IdentifyNumOfUserAccessiblePorts
 
 *A MA-USB hub must correctly identify and report the number of ports that the user can access.*
 
@@ -59,7 +67,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 The Integrated USB 2.0/3.1 hub must include details in its hub descriptor that provide the operating system with an accurate count of the number of downstream-facing ports that the hub supports and that are exposed to the user. See USB Specification, Revision 2.0, Section11.23, and USB 3.0 Specification, Section 10.14.
 
-## Device.Connectivity.MAUSB.Hub.IPMode
+### Device.Connectivity.MAUSB.Hub.IPMode
 
 *MA-USB hubs must implement support for IP Mode*
 
@@ -81,7 +89,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB hubs must implement support for IP Mode as specificed in the MA-USB specification v1.0a, Section 4.5.3.2 “Requirements for IP Mode”
 
-## Device.Connectivity.MAUSB.Hub.MAUSBSpecCompliance
+### Device.Connectivity.MAUSB.Hub.MAUSBSpecCompliance
 
 *MA-USB Hubs must be USB-IF Specification Compliant *
 
@@ -103,7 +111,7 @@ MA-USB requirements are currently optional and will not be enforced until 2017.
 
 MA-USB Hubs must be compliant with MA-USB specification v1.0a or later.
 
-## Device.Connectivity.MAUSB.Hub.SupportSuspend
+### Device.Connectivity.MAUSB.Hub.SupportSuspend
 
 *MA-USB hubs must support suspend, and downstream devices must not drop off the bus when the hub resumes from suspend.*
 
@@ -127,7 +135,7 @@ MA-USBhubs must support MA-USB suspend. After a MA-USB Hub is resumed from suspe
 
 Integrated USB 2.0/3.1 Hubs must support USB suspend. After a Integrated USB 2.0/3.1 Hub is resumed from USB Suspend, all devices that were attached downstream of the Integrated USB 2.0/3.1 hub and that were not removed while Integrated USB 2.0/3.1 Hub was suspended, must be present.
 
-## Device.Connectivity.MAUSB.Hub.SupportsWiFiDirectAndWSB
+### Device.Connectivity.MAUSB.Hub.SupportsWiFiDirectAndWSB
 
 *MA-USB Hubs support WiFi Direct Connection and WiFi Serial Bus*
 
@@ -155,7 +163,7 @@ Network interface implementation MA-USB Hub must meet the following requirements
 
 -   MA-USB Hub/Device must implement WSB v0.18&lt;latest&gt; as an advertiser
 
-## Device.Connectivity.MAUSB.Hub.TCPImplementation
+### Device.Connectivity.MAUSB.Hub.TCPImplementation
 
 *MA-USB TCP Implementation for Reliability*
 
@@ -183,7 +191,7 @@ TCP implementation of MA-USB Hub must meet the following requirements to work re
 
 -   TCP must provide at least 64KB of Receive Buffer space.
 
-## Device.Connectivity.MAUSB.Hub.Usb3HubCompliesWithUsb3Spec
+### Device.Connectivity.MAUSB.Hub.Usb3HubCompliesWithUsb3Spec
 
 *Integrated USB 3.1 hubs are compliant with the USB 3.1 specification.*
 
@@ -213,7 +221,7 @@ Integrated USB 3.1 hubs must:
 
 -   Pass the USB 3.1 CV test
 
-## Device.Connectivity.MAUSB.Hub.Usb3ReportPortStatusBitsCorrectly
+### Device.Connectivity.MAUSB.Hub.Usb3ReportPortStatusBitsCorrectly
 
 *Integrated USB 3.1 hubs must always report the port status bits correctly as per the USB 3.1 specification.*
 

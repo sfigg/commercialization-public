@@ -1,3 +1,11 @@
+---
+title: Device.Input.FingerPrintReader
+Description: 'General requirements for biometric fingerprint readers.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Input.FingerPrintReader
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.Input.FingerPrintReader "></a>
-# Device.Input.FingerPrintReader 
+## Device.Input.FingerPrintReader 
 
-## Device.Input.FingerPrintReader.Base
+### Device.Input.FingerPrintReader.Base
 
 *Biometric fingerprint reader general requirements*
 
@@ -88,7 +96,7 @@ The following general criteria must be met:
     <p>For more complete information about WBF and its components, see &quot;Introduction to the Windows Biometric Framework (WBF),&quot; a white paper, at <em><a href="http://msdn.microsoft.com/library/windows/hardware/gg463089.aspx" class="uri">http://msdn.microsoft.com/library/windows/hardware/gg463089.aspx</a>.</em></p>
 </html>
 
-## Device.Input.FingerPrintReader.Extensions
+### Device.Input.FingerPrintReader.Extensions
 
 *Vendor-supplied drivers or other extension components must not wrap other extension components.*
 
@@ -108,7 +116,7 @@ The following general criteria must be met:
 
 Drivers and adapter plug-ins that extend the Windows Biometric Framework must not wrap other drivers or adapter plug-ins unless the practice is explicitly permitted by the component documentation supplied by Microsoft.
 
-## Device.Input.FingerPrintReader.ManagementApps
+### Device.Input.FingerPrintReader.ManagementApps
 
 *Biometric fingerprint reader management applications*
 
@@ -150,7 +158,7 @@ Drivers and adapter plug-ins that extend the Windows Biometric Framework must no
     <p>Devices targeted for consumer use MUST not have any 3rd party FMA installed. 3rd party FMAs may be installed and enabled on Windows devices targeted towards business (enterprise and small/medium businesses). In such instances, the user should be clearly notified if core inbox experiences will be negatively impacted by the use of the 3rd party FMA during enrollment.</p>
 <html>
 
-## Device.Input.FingerPrintReader.SensorEngineDB
+### Device.Input.FingerPrintReader.SensorEngineDB
 
 *Fingerprint reader sensor, engine and storage plug-in requirement*
 
@@ -186,7 +194,7 @@ A driver package can support multiple devices, but must pass the certification c
 | Storage adapter      | Relying on inbox storage adapter is recommended unless there is a specific need to include a custom storage adapter such as for advanced sensors. |
 | Sensor adapter       | Relying on inbox sensor adapter is recommended unless there is a specific need to include a custom sensor adapter.                                |
 
-## Device.Input.FingerPrintReader.WBDI
+### Device.Input.FingerPrintReader.WBDI
 
 *Biometric fingerprint reader WBDI driver requirement*
 

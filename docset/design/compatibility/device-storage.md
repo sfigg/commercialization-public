@@ -1,3 +1,11 @@
+---
+title: Device.Storage
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Storage
 
  - [Device.Storage.Controller](#Device.Storage.Controller)
@@ -59,11 +67,11 @@
  - [Device.Storage.Optical.Sata](#Device.Storage.Optical.Sata)
 
 <a name="Device.Storage.Controller"></a>
-# Device.Storage.Controller
+## Device.Storage.Controller
 
 *General feature that applies to all storage controllers*
 
-## Device.Storage.Controller.BasicFunction
+### Device.Storage.Controller.BasicFunction
 
 *Storage controller basic functionality*
 
@@ -103,7 +111,7 @@ The following Storage Controller Driver Logo requirement is for the storage cont
 
 -   For storage controllers, the controller itself must correctly translate the commands and respond in accordance with the applicable SCSI specifications, even if the controller implements other command protocols on a different interface type such as SATA, NVMe, or PQI. Any commands that are not recognized must result in a SCSI check condition with valid sense data.
 
-## Device.Storage.Controller.ClassCode
+### Device.Storage.Controller.ClassCode
 
 *Bus-attached controllers must implement the correct class/subclass code as defined in the PCI Code and ID Assignment Specification (Rev. 1.6).*
 
@@ -129,7 +137,7 @@ Bus-attached controllers must implement the correct class/subclass code as speci
 Non-PCI attached storage host controller does not need to report PCI class code. However, it must report the equivalent ACPI Compatibility ID.
  
 
-## Device.Storage.Controller.InfFile
+### Device.Storage.Controller.InfFile
 
 *All host adapters must be installed by using Plug and Play mechanisms and require the use of an INF file.*
 
@@ -161,7 +169,7 @@ All host adapters must be installed by using Plug and Play mechanisms and requir
 -   Implementation of the BusType registry DWORD to correctly set the interface type in accordance with the enumeration in NTDDSTOR.H (see the WDK). This value must be set in the miniport's INF under the service's Parameters key. There is no programmatic way to set it and you may not rely on coinstallers as they do not run under all scenarios.
      
 
-## Device.Storage.Controller.MiniportDriverModel
+### Device.Storage.Controller.MiniportDriverModel
 
 *Storage Miniport Driver Model *
 
@@ -190,11 +198,11 @@ Multipathing drivers may not be tied to specific HBAs except for PCI RAID contro
 Transient or pseudo-devices may not be exposed to the system. Drivers that specify NODRV may be used to "claim" management devices that report as processor, controller, or MSC device types. Such drivers that do not refer to a service entry are not eligible for the certification, but they can be signed.
 
 <a name="Device.Storage.Controller.Ata"></a>
-# Device.Storage.Controller.Ata
+## Device.Storage.Controller.Ata
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Ata.Interface
+### Device.Storage.Controller.Ata.Interface
 
 *PATA Controller Interface*
 
@@ -223,11 +231,11 @@ The following requirements are also applied to ATA/ATAPI controllers.
 -   Identify Device data fields (61:60) and (103:100) must not be used to determine 28-bit or 48-bit LBA addressing support. Instead, bit 10 of word 83 and bit 10 of word 86 must be checked for 48-bit LBA addressing support as defined in ATA/ATAPI-7, Volume 1, Section 4.2.1.
 
 <a name="Device.Storage.Controller.Boot"></a>
-# Device.Storage.Controller.Boot
+## Device.Storage.Controller.Boot
 
 *Defines requirements that must be met if the storage controller supports boot*
 
-## Device.Storage.Controller.Boot.BasicFunction
+### Device.Storage.Controller.Boot.BasicFunction
 
 *If the controller implements boot support, it must support Int13h functions.*
 
@@ -253,7 +261,7 @@ It is recommended that controllers also support booting using the Extensible Fir
 
 SD/eMMC/NAND flash controllers do not have Option ROM, so the first part of this requirement does not apply. EFI support is required.
 
-## Device.Storage.Controller.Boot.BitLocker
+### Device.Storage.Controller.Boot.BitLocker
 
 *BitLocker must not cause failure in SAN Boot through storage controllers.*
 
@@ -278,11 +286,11 @@ BitLocker must be properly enabled to protect an operating system in a SAN Boot 
 (1) When a server is placed in an environment without adequate physical security, BitLocker protects data on the server against unauthorized access if a server is stolen; (2) When hosting service providers repurpose or decommission storage arrays, BitLocker Disk Encryption prevents data breach.
 
 <a name="Device.Storage.Controller.Fc"></a>
-# Device.Storage.Controller.Fc
+## Device.Storage.Controller.Fc
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Fc.Interface
+### Device.Storage.Controller.Fc.Interface
 
 *Fibre Channel HBA interface*
 
@@ -305,11 +313,11 @@ Fibre Channel host bus adapter drivers must support the WMI classes and methods 
  
 
 <a name="Device.Storage.Controller.Fc.NPIV"></a>
-# Device.Storage.Controller.Fc.NPIV
+## Device.Storage.Controller.Fc.NPIV
 
 *NPIV is used to deliver Virtual Fibre Channel functionality in Hyper-V.*
 
-## Device.Storage.Controller.Fc.NPIV.BasicFunction
+### Device.Storage.Controller.Fc.NPIV.BasicFunction
 
 *Hyper-V Virtual Fibre Channel N\_Port IO virtualization support*
 
@@ -329,11 +337,11 @@ The following classes are required: MSFC\_VirtualFibrePortAttributes, MSFC\_Fibr
 These tests cover typical valid and invalid API calls, but do not cover in-depth scenarios covering VM workloads, storage target functionality and data integrity, performance, or other considerations.
 
 <a name="Device.Storage.Controller.Fcoe"></a>
-# Device.Storage.Controller.Fcoe
+## Device.Storage.Controller.Fcoe
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Fcoe.Interface
+### Device.Storage.Controller.Fcoe.Interface
 
 *Fibre Channel over Ethernet host bus adapter*
 
@@ -369,7 +377,7 @@ Fibre Channel over Ethernet host bus adapter  
 
 -   FCoE adapters that expose PCI storage device(s)/function(s) for FCoE frame processing (either egress or ingress), must report 0x0c0400 (Fibre Channel) as its Class Code (Base Class, Sub-Class and Interface code).
 
-## Device.Storage.Controller.Fcoe.Interoperability
+### Device.Storage.Controller.Fcoe.Interoperability
 
 *Fibre Channel over Ethernet host bus adapter – Interoperability*
 
@@ -404,11 +412,11 @@ Initiator Coexistence
 -   FCoE adapter must coexist with other FCoE adapters without interference on the same system.
 
 <a name="Device.Storage.Controller.Flush"></a>
-# Device.Storage.Controller.Flush
+## Device.Storage.Controller.Flush
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Flush.BasicFunction
+### Device.Storage.Controller.Flush.BasicFunction
 
 *Flush to connected device*
 
@@ -437,7 +445,7 @@ Windows design spec requirements - controller:
 -   For controllers and device drivers of all bus types (ATA, SCSI and USB), flush cache command shall be sent to connected device without any omission.
 
 <a name="Device.Storage.Controller.Iscsi"></a>
-# Device.Storage.Controller.Iscsi
+## Device.Storage.Controller.Iscsi
 
 *Defines the industry and Microsoft standards that must be met*
 
@@ -452,7 +460,7 @@ Windows design spec requirements - controller:
 <p>Windows v10.0 Server vNext x64</p>
 </td></tr></table>
 
-## Device.Storage.Controller.Iscsi.Interface
+### Device.Storage.Controller.Iscsi.Interface
 
 *iSCSI interface*
 
@@ -523,11 +531,11 @@ iSCSI host bus adapters must be compatible with iSCSI RFC3720 and must implement
 -   An iSCSI HBA must support changers, disk, tape, and external RAID devices.
 
 <a name="Device.Storage.Controller.Iscsi.iSCSIBootComponent"></a>
-# Device.Storage.Controller.Iscsi.iSCSIBootComponent
+## Device.Storage.Controller.Iscsi.iSCSIBootComponent
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable
+### Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable
 
 *iSCSI Boot functionality*
 
@@ -592,11 +600,11 @@ In addition:
 -   Implementation of multiple option responses in the iSCSI preboot component must comply with RFC 3396.
 
 <a name="Device.Storage.Controller.Optical"></a>
-# Device.Storage.Controller.Optical
+## Device.Storage.Controller.Optical
 
 *General feature that applies to all storage controllers to ensure optical burning requirements are met.*
 
-## Device.Storage.Controller.Optical.BasicFunction
+### Device.Storage.Controller.Optical.BasicFunction
 
 *Storage HBA drivers must support optical drives.*
 
@@ -620,11 +628,11 @@ The storage HBA drivers must support the optical device. The CDBs sent to the op
  
 
 <a name="Device.Storage.Controller.PassThroughSupport"></a>
-# Device.Storage.Controller.PassThroughSupport
+## Device.Storage.Controller.PassThroughSupport
 
 *Pass-through storage controller basic functionality*
 
-## Device.Storage.Controller.PassThroughSupport.BasicFunction
+### Device.Storage.Controller.PassThroughSupport.BasicFunction
 
 *Pass-through storage controller basic functionality*
 
@@ -647,11 +655,11 @@ The bus adapter must report the actual bus type used to connected drives (e.g., 
 NOTE: This applies only to SAS and SATA controllers.
 
 <a name="Device.Storage.Controller.Raid"></a>
-# Device.Storage.Controller.Raid
+## Device.Storage.Controller.Raid
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Raid.BasicFunction
+### Device.Storage.Controller.Raid.BasicFunction
 
 *RAID controller*
 
@@ -686,11 +694,11 @@ RAID Controller
 SCSI Requirements can be found in the Device.Storage.SCSI section.
 
 <a name="Device.Storage.Controller.Raid.ContinuousAvailability"></a>
-# Device.Storage.Controller.Raid.ContinuousAvailability
+## Device.Storage.Controller.Raid.ContinuousAvailability
 
 *Validates that Continuous Availability (CA) storage controller and drivers meet all applicable requirements*
 
-## Device.Storage.Controller.Raid.ContinuousAvailability.ActiveMode
+### Device.Storage.Controller.Raid.ContinuousAvailability.ActiveMode
 
 *A device and its driver must support active LUN access on each node in a Windows Failover Cluster system configuration.*
 
@@ -711,7 +719,7 @@ Design Notes:
 
 -   Specifically, it is desirable but not required to support simultaneous, shared access to a LUN from multiple nodes in the cluster.
 
-## Device.Storage.Controller.Raid.ContinuousAvailability.FailoverClustering
+### Device.Storage.Controller.Raid.ContinuousAvailability.FailoverClustering
 
 *A device and its driver must meet a minimum set of requirements to operate in a Windows failover cluster.*
 
@@ -762,7 +770,7 @@ Design Notes:
 
 If the system disks are attached to a bus type that is not a valid type for shared storage (something other than FC, iSCSI, or SAS), then the system disks and shared.
 
-## Device.Storage.Controller.Raid.ContinuousAvailability.LunAccess
+### Device.Storage.Controller.Raid.ContinuousAvailability.LunAccess
 
 *A device and its driver must meet requirements for accessing LUNs in a Windows failover clustering configuration.*
 
@@ -785,7 +793,7 @@ During normal operation (i.e., not during failover) in a Windows failover cluste
 
 -   All I/O requests to any LUN supported by the RAID controller must complete within 25 seconds. This time limit must be supported for up to 100 LUNs or the maximum number of LUNs supported by the controller, whichever is smaller.
 
-## Device.Storage.Controller.Raid.ContinuousAvailability.RAID
+### Device.Storage.Controller.Raid.ContinuousAvailability.RAID
 
 *A device and its driver must meet a minimum set of requirements for RAID functionality.*
 
@@ -810,7 +818,7 @@ If there is a system or controller failure during active writes, the erasure cod
 
 -   Examples of typical solutions for the RAID write hole problem are to provide mechanisms to detect and recover from an interrupted update-in-place operation or to avoid update-in-place semantics.
 
-## Device.Storage.Controller.Raid.ContinuousAvailability.RecoveryProcessing
+### Device.Storage.Controller.Raid.ContinuousAvailability.RecoveryProcessing
 
 *A device and its driver must automatically complete all recovery processing resulting from failing over a LUN from a node in a Windows failover cluster.*
 
@@ -826,11 +834,11 @@ If there is a system or controller failure during active writes, the erasure cod
 When the device and driver are configured in a Windows failover cluster and LUN access is restored after a failover (see requirement CAHWStorage-0004), all processing required by the device and driver to recover from the failover operation and restore normal operation must complete automatically, i.e., without any manual intervention.
 
 <a name="Device.Storage.Controller.Sas"></a>
-# Device.Storage.Controller.Sas
+## Device.Storage.Controller.Sas
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Sas.Interface
+### Device.Storage.Controller.Sas.Interface
 
 *SAS controller interface*
 
@@ -854,7 +862,7 @@ SAS host bus adapter miniport drivers must use the Microsoft hbaapi DLL to suppo
 
 **Note:** The SAS HBA API is currently in the draft stage at the T11.5 working group. This support will not be a requirement until the draft document is complete. WHQL will issue an announcement when this support becomes a requirement.
 
-## Device.Storage.Controller.Sas.TranslationLayer
+### Device.Storage.Controller.Sas.TranslationLayer
 
 *Defines specific translations from SAS to SATA that must be implemented *
 
@@ -882,11 +890,11 @@ SAS HBAs and/or their drivers should implement the following SCSI / ATA Translat
 Note: Compliance with this requirement should be tested by connecting a SATA drive, compliant with the Windows 10 firmware update requirements, to the SAS HBA and running the HLK Firmware Update Test.
 
 <a name="Device.Storage.Controller.Sata"></a>
-# Device.Storage.Controller.Sata
+## Device.Storage.Controller.Sata
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.Sata.Interface
+### Device.Storage.Controller.Sata.Interface
 
 *SATA controller interface*
 
@@ -928,11 +936,11 @@ SATA Interface
 -   Recommendation: SATA controllers should implement Native Command Queuing (NCQ) support.
 
 <a name="Device.Storage.Controller.SD"></a>
-# Device.Storage.Controller.SD
+## Device.Storage.Controller.SD
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Controller.SD.BasicFunction
+### Device.Storage.Controller.SD.BasicFunction
 
 *SD controller basic functionality*
 
@@ -985,11 +993,11 @@ SATA Interface
 -   Support standard error recovery procedure.
 
 <a name="Device.Storage.ControllerDrive.NVMe"></a>
-# Device.Storage.ControllerDrive.NVMe
+## Device.Storage.ControllerDrive.NVMe
 
 *Storage NVMe feature*
 
-## Device.Storage.ControllerDrive.NVMe.BasicFunction
+### Device.Storage.ControllerDrive.NVMe.BasicFunction
 
 *NVMe device requirements*
 
@@ -1163,11 +1171,11 @@ The following requirements that the device must fulfill are specific to revision
 -   6.9 Write
 
 <a name="Device.Storage.Enclosure"></a>
-# Device.Storage.Enclosure
+## Device.Storage.Enclosure
 
 *Drive enclosures must meet these requirements.*
 
-## Device.Storage.Enclosure.DirectAccess
+### Device.Storage.Enclosure.DirectAccess
 
 *Drive enclosures must provide direct access to the drives they house.*
 
@@ -1182,7 +1190,7 @@ The following requirements that the device must fulfill are specific to revision
 
 Enclosures must not abstract the drives they house (e.g., formed into a logical RAID disk).  Integrated switches, if present, must provide discovery of and access to all the drives in the enclosure without requiring additional physical host connections.
 
-## Device.Storage.Enclosure.DriveIdentification
+### Device.Storage.Enclosure.DriveIdentification
 
 *Drive enclosures must provide a drive identification service.*
 
@@ -1278,9 +1286,9 @@ Storage enclosure must meet the following requirements to support storage space 
 Notes:  Windows correlates enclosure services to drives via the protocol-specific information and the drives’ Device Identification VPD page (83h) with ASSOCIATION field set to 1.
 
 <a name="Device.Storage.Hd"></a>
-# Device.Storage.Hd
+## Device.Storage.Hd
 
-## Device.Storage.Hd.BasicFunction
+### Device.Storage.Hd.BasicFunction
 
 *HD basic functionality*
 
@@ -1307,7 +1315,7 @@ The device must be able to perform the following scenarios:
 -   Random write
 -   Random verify
 
-## Device.Storage.Hd.PhysicalSectorSizeReportsAccurately
+### Device.Storage.Hd.PhysicalSectorSizeReportsAccurately
 
 *The reported physical sector size must be the unit of an atomic write.*
 
@@ -1337,7 +1345,7 @@ If implemented, support for storage devices with logical sector sizes larger th
 
 Some hard disk drives report the physical sector size of the disk incorrectly. For example, the drive is released a "4K" drive without reporting that it is indeed a 4K drive. Applications use the reported physical sector size as a notion of atomicity and perform I/O based on this. The most basic example is a database-style application will only store one commit record within the unit of atomic write for fear of loss if power is lost or if a physical sector becomes physically bad. When the reported physical sector size is not the unit of atomicity, serious reliability concerns can arise in scenarios where power is lost such as: Applications can fail to recover, and users will need to restore from backup. Applications can fail to recover, but the application will need to perform a lengthy consistency check. Corruption of metadata, log file data, user data, or even data from other applications.
 
-## Device.Storage.Hd.RotationalRate
+### Device.Storage.Hd.RotationalRate
 
 *Hd rotational rate logo requirements*
 
@@ -1386,9 +1394,9 @@ SCSI hard disk device must report nominal media rotation rate as described in th
 | FFFFh       | Reserved                                                                                                 |
 
 <a name="Device.Storage.Hd.1394"></a>
-# Device.Storage.Hd.1394
+## Device.Storage.Hd.1394
 
-## Device.Storage.Hd.1394.Compliance
+### Device.Storage.Hd.1394.Compliance
 
 *IEEE 1394 hard disk drive specification compliance*
 
@@ -1415,9 +1423,9 @@ SBP-2, SPC-2, Min:RBC
  
 
 <a name="Device.Storage.Hd.Alua"></a>
-# Device.Storage.Hd.Alua
+## Device.Storage.Hd.Alua
 
-## Device.Storage.Hd.Alua.Compliance
+### Device.Storage.Hd.Alua.Compliance
 
 *Asymmetric Logical Unit Acces (ALUA)*
 
@@ -1436,9 +1444,9 @@ The Report Target Port Group command must be supported, if logical units report 
  
 
 <a name="Device.Storage.Hd.Ata"></a>
-# Device.Storage.Hd.Ata
+## Device.Storage.Hd.Ata
 
-## Device.Storage.Hd.Ata.BasicFunction
+### Device.Storage.Hd.Ata.BasicFunction
 
 *ATA/ATAPI interface*
 
@@ -1465,7 +1473,7 @@ Microsoft recommends the use of SATA for new devices. However, in a spirit of co
 Shared bus capabilities are required for PATA devices; devices shall be configurable as device 0 or device 1.
  
 
-## Device.Storage.Hd.Ata.Dma
+### Device.Storage.Hd.Ata.Dma
 
 *ATA/ATAPI DMA mode.*
 
@@ -1492,9 +1500,9 @@ Justification:
 In addition to improved transfer rates, Ultra-DMA also provides error checking for improved robustness over previous PATA implementations.
 
 <a name="Device.Storage.Hd.AtaProtocol"></a>
-# Device.Storage.Hd.AtaProtocol
+## Device.Storage.Hd.AtaProtocol
 
-## Device.Storage.Hd.AtaProtocol.Performance
+### Device.Storage.Hd.AtaProtocol.Performance
 
 *ATA device performance*
 
@@ -1529,7 +1537,7 @@ The Windows 7 Windows System Assessment Tool (WinSAT) disk formal test for the b
 
 -   Average Read Time with Random Writes &lt;40 ms
 
-## Device.Storage.Hd.AtaProtocol.Protocol
+### Device.Storage.Hd.AtaProtocol.Protocol
 
 *ATA/ATAPI protocol*
 
@@ -1572,11 +1580,11 @@ When the Nominal Media Rotation Rate reported by the device is anything but 0001
  
 
 <a name="Device.Storage.Hd.DataVerification"></a>
-# Device.Storage.Hd.DataVerification
+## Device.Storage.Hd.DataVerification
 
 *Disk Verification Tests to ensure there is no data loss or corruption*
 
-## Device.Storage.Hd.DataVerification.BasicFunction
+### Device.Storage.Hd.DataVerification.BasicFunction
 
 *All storage devices must work correctly on Windows.*
 
@@ -1597,9 +1605,9 @@ When the Nominal Media Rotation Rate reported by the device is anything but 0001
 Storage devices must reliably read and write data without data loss or data corruption.
 
 <a name="Device.Storage.Hd.Ehdd"></a>
-# Device.Storage.Hd.Ehdd
+## Device.Storage.Hd.Ehdd
 
-## Device.Storage.Hd.Ehdd.Compliance
+### Device.Storage.Hd.Ehdd.Compliance
 
 *Encrypted hard drive complies with Microsoft and industry specifications.*
 
@@ -1747,11 +1755,11 @@ eDrives must comply with these Windows Design Spec requirements:
 | Unlock Band           | 1.5 sec             |
 
 <a name="Device.Storage.Hd.EMMC"></a>
-# Device.Storage.Hd.EMMC
+## Device.Storage.Hd.EMMC
 
 *Defines the industry and Microsoft standards that must be met*
 
-## Device.Storage.Hd.EMMC.BasicFunction
+### Device.Storage.Hd.EMMC.BasicFunction
 
 *Emmc basic functionality*
 
@@ -1792,9 +1800,9 @@ eMMC 4.5.1 Requirements
 -   Support OS initiated cache flushing if device supports volatile cache.
 
 <a name="Device.Storage.Hd.EnhancedStorage"></a>
-# Device.Storage.Hd.EnhancedStorage
+## Device.Storage.Hd.EnhancedStorage
 
-## Device.Storage.Hd.EnhancedStorage.1667Compliance
+### Device.Storage.Hd.EnhancedStorage.1667Compliance
 
 *Enhanced Storage devices must comply with the IEEE 1667 defined standards.*
 
@@ -1844,9 +1852,9 @@ Enhanced Storage devices must comply with the IEEE 1667 defined standards.
 Obtain IEEE 1667 specification from IEEE at the following location:<http://go.microsoft.com/fwlink/?LinkID=110100>
 
 <a name="Device.Storage.Hd.FibreChannel"></a>
-# Device.Storage.Hd.FibreChannel
+## Device.Storage.Hd.FibreChannel
 
-## Device.Storage.Hd.FibreChannel.Compliance
+### Device.Storage.Hd.FibreChannel.Compliance
 
 *Fibre Channel devices*
 
@@ -1868,9 +1876,9 @@ Fibre Channel devices must comply with Fibre Channel Protocol for SCSI, Second V
  
 
 <a name="Device.Storage.Hd.Flush"></a>
-# Device.Storage.Hd.Flush
+## Device.Storage.Hd.Flush
 
-## Device.Storage.Hd.Flush.BasicFunction
+### Device.Storage.Hd.Flush.BasicFunction
 
 *Flush command completion*
 
@@ -1902,9 +1910,9 @@ Windows Design Spec requirements - HDD:
 Note: The requirement is not applicable to Laptop.
 
 <a name="Device.Storage.Hd.Iscsi"></a>
-# Device.Storage.Hd.Iscsi
+## Device.Storage.Hd.Iscsi
 
-## Device.Storage.Hd.Iscsi.BasicFunction
+### Device.Storage.Hd.Iscsi.BasicFunction
 
 *iSCSI devices*
 
@@ -1978,9 +1986,9 @@ The following iSCSI protocol features must pass testing if they are implemented:
 	-   At least one iSCSI VERSION DESCRIPTOR is required (value = 0960h).
 
 <a name="Device.Storage.Hd.Mpio"></a>
-# Device.Storage.Hd.Mpio
+## Device.Storage.Hd.Mpio
 
-## Device.Storage.Hd.Mpio.BasicFunction
+### Device.Storage.Hd.Mpio.BasicFunction
 
 *RAID implementations that provide a multipathing solution must comply with Microsoft multipath I/O (MPIO).*
 
@@ -2004,11 +2012,11 @@ Following WMI classes must be implemented by 3rd party DSM.
  
 
 <a name="Device.Storage.Hd.MultipleAccess"></a>
-# Device.Storage.Hd.MultipleAccess
+## Device.Storage.Hd.MultipleAccess
 
 *Drives that support Multiple Access must meet these requirements.*
 
-## Device.Storage.Hd.MultipleAccess.MultiplePorts
+### Device.Storage.Hd.MultipleAccess.MultiplePorts
 
 *Multi-port drives must provide symmetric access.*
 
@@ -2032,11 +2040,11 @@ The performance degradation between any two ports should be within a 10% range.
 Notes:  Multi-port drives may be connected to one or more computer hosts via one or more paths per host.  Connecting a drive to multiple hosts enables Windows to use the drive as part of a failover cluster of hosts.  Connecting a drive to a single host via multiple paths enables Windows to continue to provide access to the drive in the event of a cable failure.  Windows supports using these connection topologies independently and jointly.
 
 <a name="Device.Storage.Hd.MultipleAccess.PersistentReservation"></a>
-# Device.Storage.Hd.MultipleAccess.PersistentReservation
+## Device.Storage.Hd.MultipleAccess.PersistentReservation
 
 *Drives that support Persistent Reservations must meet these requirements.*
 
-## Device.Storage.Hd.MultipleAccess.PersistentReservation.BasicFunction
+### Device.Storage.Hd.MultipleAccess.PersistentReservation.BasicFunction
 
 *Drives must provide persistent reservations.*
 
@@ -2071,11 +2079,11 @@ Drives must implement persistent reservations as per the SCSI-3 Primary Commands
 Notes:  Windows can use physical disks to form a storage pool.  From the storage pool, Windows can define virtual disks called storage spaces.  A failover cluster can make the pool of physical disks, the storage spaces they define, and the data they contain highly available.  In addition to the standard HCT qualification, physical disks should also pass the "Microsoft Cluster Configuration Validation Wizard" (ClusPrep) tool.
 
 <a name="Device.Storage.Hd.OffloadedDataTransfer"></a>
-# Device.Storage.Hd.OffloadedDataTransfer
+## Device.Storage.Hd.OffloadedDataTransfer
 
 *Windows Offloaded Data Transfer*
 
-## Device.Storage.Hd.OffloadedDataTransfer.CopyOffload
+### Device.Storage.Hd.OffloadedDataTransfer.CopyOffload
 
 *If Copy Offload is supported, these requirements must be implemented.*
 
@@ -2139,9 +2147,9 @@ Notes:  Windows can use physical disks to form a storage pool.  From the stora
 -   Drag and drop copy experience - must be able support drag and drop copy with copy offload capable storage target device.
 
 <a name="Device.Storage.Hd.PersistentReservation"></a>
-# Device.Storage.Hd.PersistentReservation
+## Device.Storage.Hd.PersistentReservation
 
-## Device.Storage.Hd.PersistentReservation.ClusterFailover
+### Device.Storage.Hd.PersistentReservation.ClusterFailover
 
 *Cluster failover for RAID array systems*
 
@@ -2177,11 +2185,11 @@ Note: Legacy parallel-SCSI server clusters were restricted to a maximum size of 
 -   If the system disks are attached to a bus type that is not a valid type for shared storage (something other then FC, iSCSI, or SAS), then the system disks and shared storage must be on separate physical controllers/host bus adaptors.
 
 <a name="Device.Storage.Hd.PortAssociation"></a>
-# Device.Storage.Hd.PortAssociation
+## Device.Storage.Hd.PortAssociation
 
 *Drives must provide port association.*
 
-## Device.Storage.Hd.PortAssociation.BasicFunction
+### Device.Storage.Hd.PortAssociation.BasicFunction
 
 *Drives must provide port association.*
 
@@ -2199,9 +2207,9 @@ A drive must report its port address for device identification VPD page 83h inqu
 Notes:  Windows depends on drive enclosures to provide SCSI Enclosure Services (SES) capabilities such as drive slot identification and visual drive indications (commonly implemented as drive LEDs).  Windows matches a drive in an enclosure with SES identification capabilities via the drive's port address.  Computer hosts may be separate from drive enclosures or may be integrated into drive enclosures.
 
 <a name="Device.Storage.Hd.RaidArray"></a>
-# Device.Storage.Hd.RaidArray
+## Device.Storage.Hd.RaidArray
 
-## Device.Storage.Hd.RaidArray.BasicFunction
+### Device.Storage.Hd.RaidArray.BasicFunction
 
 *RAID array systems*
 
@@ -2227,7 +2235,7 @@ RAID controllers and RAID systems must support, at a minimum, one of: RAID1, RAI
 
 External RAID arrays must allow a failed drive that is redundant to be replaced manually without shutting down or halting the system. This requirement includes, but is not limited to, drives in a mirror set, a physical drive being replaced by a "hot spare," and the first failed drive in a RAID level-5 array. The RAID subsystem must also allow lost data to be rebuilt without interfering with system operations. It is expected that RAID array throughput will be impacted during the rebuild.
 
-## Device.Storage.Hd.RaidArray.BitLocker
+### Device.Storage.Hd.RaidArray.BitLocker
 
 *BitLocker must not cause data corruption on storage arrays.*
 
@@ -2246,7 +2254,7 @@ BitLocker must be properly enabled to protect data volumes on storage arrays.
 
 (1) When a server is placed in an environment without adequate physical security, BitLocker protects data on the server against unauthorized access if a server is stolen. (2) When hosting service providers repurpose or decommission storage arrays, BitLocker Disk Encryption prevents data breach.
 
-## Device.Storage.Hd.RaidArray.Manageability
+### Device.Storage.Hd.RaidArray.Manageability
 
 *A connected storage device must be manageable.*
 
@@ -2271,7 +2279,7 @@ This is a mandatory device requirement. This requirement becomes in effect at th
 
 Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server vNext in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
-## Device.Storage.Hd.RaidArray.Manageability.Smapi
+### Device.Storage.Hd.RaidArray.Manageability.Smapi
 
 *A connected storage device must be manageable by Windows through its Storage Management API (SMAPI) and an associated Storage Management Provider (SMP).*
 
@@ -2296,7 +2304,7 @@ This is a mandatory device requirement. This requirement becomes in effect at th
 
 Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server vNext in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
-## Device.Storage.Hd.RaidArray.Manageability.Smi
+### Device.Storage.Hd.RaidArray.Manageability.Smi
 
 *An industry-standard connected storage device is manageable through its native SNIA SMI-S v1.6.1 Provider interface.*
 
@@ -2325,7 +2333,7 @@ However, this and all related sub-requirements are mandatory for a connected sto
 
 Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server vNext in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
-## Device.Storage.Hd.RaidArray.Manageability.Smi.Ctp
+### Device.Storage.Hd.RaidArray.Manageability.Smi.Ctp
 
 *An industry-standard connected storage device that is manageable through its native SMI-S v1.6.1 Provider interface demonstrates such conformance through a successful CTP test pass.*
 
@@ -2350,7 +2358,7 @@ This is a mandatory device requirement for a connected storage device claiming t
 
 Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server vNext in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
-## Device.Storage.Hd.RaidArray.Manageability.Smi.Scvmm
+### Device.Storage.Hd.RaidArray.Manageability.Smi.Scvmm
 
 *An industry-standard connected storage device that is manageable through its native SMI-S v1.6.1 Provider interface demonstrates its interoperability with the Microsoft SCVMM vNext.*
 
@@ -2378,9 +2386,9 @@ This is a mandatory device requirement for a connected storage device claiming t
 Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server vNext in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
 <a name="Device.Storage.Hd.ReadZeroOnTrimUnmap"></a>
-# Device.Storage.Hd.ReadZeroOnTrimUnmap
+## Device.Storage.Hd.ReadZeroOnTrimUnmap
 
-## Device.Storage.Hd.ReadZeroOnTrimUnmap.BasicFunction
+### Device.Storage.Hd.ReadZeroOnTrimUnmap.BasicFunction
 
 *The requirement applies to hard disk drives.*
 
@@ -2401,11 +2409,11 @@ Manageable connected storage devices allow efficient deployment and operation of
 If the logical block provisioning read zeros (LBPRZ) bit is set to one, then the device server shall set all bits to zero in the Data-In Buffer for a read operation on an unmapped (deallocated or anchored) LBA.
 
 <a name="Device.Storage.Hd.RemovableMedia"></a>
-# Device.Storage.Hd.RemovableMedia
+## Device.Storage.Hd.RemovableMedia
 
 *Defines requirements that must be met if the storage device is removable, i.e., it has RMB bit set to 1.*
 
-## Device.Storage.Hd.RemovableMedia.BasicFunction
+### Device.Storage.Hd.RemovableMedia.BasicFunction
 
 *Devices with true removable storage media*
 
@@ -2426,9 +2434,9 @@ If the logical block provisioning read zeros (LBPRZ) bit is set to one, then the
 Device with true removable storage media should report as True Removable Media (RMB=1) according to SPC-4 Revision 29, Section 6.4.2.
 
 <a name="Device.Storage.Hd.Sas"></a>
-# Device.Storage.Hd.Sas
+## Device.Storage.Hd.Sas
 
-## Device.Storage.Hd.Sas.ComplyWithIndustrySpec
+### Device.Storage.Hd.Sas.ComplyWithIndustrySpec
 
 *Serial attached SCSI devices must comply with industry specifications.*
 
@@ -2533,9 +2541,9 @@ SAS devices implementing the ability to download and activate firmware, i.e., co
 -   The activation process must occur without requiring the host to power cycle or bus reset, i.e., activation must be completed via an internal reset of the SAS drive.
 
 <a name="Device.Storage.Hd.Sata"></a>
-# Device.Storage.Hd.Sata
+## Device.Storage.Hd.Sata
 
-## Device.Storage.Hd.Sata.BasicFunction
+### Device.Storage.Hd.Sata.BasicFunction
 
 *ATA device performance*
 
@@ -2594,11 +2602,11 @@ SATA drives implementing the ability to download and activate firmware, i.e., co
 Note: A DMA implementation of these commands is preferred but not required
 
 <a name="Device.Storage.Hd.Sata.HybridInformation"></a>
-# Device.Storage.Hd.Sata.HybridInformation
+## Device.Storage.Hd.Sata.HybridInformation
 
 *This feature is for all devices that support the Hybrid Information feature.*
 
-## Device.Storage.Hd.Sata.HybridInformation.BasicFunction
+### Device.Storage.Hd.Sata.HybridInformation.BasicFunction
 
 *SATAIO hybrid drive requirements*
 
@@ -2744,9 +2752,9 @@ The LBA range specified by the Evict command shall be targeted to the primary me
 Hybrid Change By LBA Range must be supported by the device, including the Cache Behavior bit of the command.
 
 <a name="Device.Storage.Hd.Scsi"></a>
-# Device.Storage.Hd.Scsi
+## Device.Storage.Hd.Scsi
 
-## Device.Storage.Hd.Scsi.Connectors
+### Device.Storage.Hd.Scsi.Connectors
 
 *SCSI connectors*
 
@@ -2767,7 +2775,7 @@ Hybrid Change By LBA Range must be supported by the device, including the Cache 
 SCSI connectors
 If an external connector is implemented, it must meet the requirements in SCSI or a later specification. The SCSI connector must not use the same connector type as any other non-SCSI connector on the system. All external parallel SCSI connectors must be labeled with an ANSI-approved icon for the bus. For internal and external configurations, the SCSI bus cable must be plugged into shrouded and keyed connectors on the host adapter and devices. This ensures that the cable is properly positioned so the user cannot plug in cables incorrectly. For internal configurations, pin-1 orientation must be designated on one edge of the ribbon cable and also on the keyed connector for the SCSI peripheral device.
 
-## Device.Storage.Hd.Scsi.ParallelInterface
+### Device.Storage.Hd.Scsi.ParallelInterface
 
 *Parallel SCSI interface*
 
@@ -2801,11 +2809,11 @@ Parallel SCSI interface
 -   Differential devices must support DIFFSENS as defined in SPI-4 standard or later.
 
 <a name="Device.Storage.Hd.Scsi.ReliabilityCounters"></a>
-# Device.Storage.Hd.Scsi.ReliabilityCounters
+## Device.Storage.Hd.Scsi.ReliabilityCounters
 
 *Basic reliability counter functionality for disks that implement the SCSI command sets.*
 
-## Device.Storage.Hd.Scsi.ReliabilityCounters.BasicFunction
+### Device.Storage.Hd.Scsi.ReliabilityCounters.BasicFunction
 
 *Basic reliability counter functionality for disks that implement the SCSI command sets.*
 
@@ -2896,9 +2904,9 @@ Solid-state drives must provide valid data for the below log sense page (LOG SEN
 	-   Percentage Used Endurance Indicator (0001h)
 
 <a name="Device.Storage.Hd.ScsiProtocol"></a>
-# Device.Storage.Hd.ScsiProtocol
+## Device.Storage.Hd.ScsiProtocol
 
-## Device.Storage.Hd.ScsiProtocol.ReferenceSpec
+### Device.Storage.Hd.ScsiProtocol.ReferenceSpec
 
 *Reference to specifications*
 
@@ -2921,7 +2929,7 @@ Where noted as Min, the baseline specification is mandatory. Rec indicates the p
 SPI-4, SAM-3, Min:SPC-2, Rec: SPC-3, Min: SBC, Rec: SBC-2
  
 
-## Device.Storage.Hd.ScsiProtocol.SamCompliance
+### Device.Storage.Hd.ScsiProtocol.SamCompliance
 
 *SCSI Architecture Model SAM-3*
 
@@ -2957,7 +2965,7 @@ SCSI Devices must comply with SCSI Architecture Model SAM-3 or later (except as 
 
 -   Any unrecognized SCSI command or incorrectly formed command descriptor block (CDB) must result in an immediate CHECK CONDITION reported back to the initiator.
 
-## Device.Storage.Hd.ScsiProtocol.SpcCompliance
+### Device.Storage.Hd.ScsiProtocol.SpcCompliance
 
 *SCSI Primary Commands (SPC-3, SPC-4 and SBC-3) *
 
@@ -3098,11 +3106,11 @@ Erasable SCSI disk devices must also support the following commands or features:
     WRITE without pre-erase, for erasable optical only.
 
 <a name="Device.Storage.Hd.SMR"></a>
-# Device.Storage.Hd.SMR
+## Device.Storage.Hd.SMR
 
 *Defines the industry and Microsoft standards that shall be met for drives which self-identify as SMR and are either Host-Aware or Host-Managed (also known as Restricted). Drive-Managed SMR (also known as Autonomous) do not have additional Microsoft requirements.*
 
-## Device.Storage.Hd.SMR.BasicFunction
+### Device.Storage.Hd.SMR.BasicFunction
 
 <table>
 <tr>
@@ -3129,7 +3137,7 @@ Erasable SCSI disk devices must also support the following commands or features:
 
 -   SMR Host-Managed device shall provide support for at least 128 open sequential write required zones.
 
-## Device.Storage.Hd.SMR.ATA
+### Device.Storage.Hd.SMR.ATA
 
 <table>
 <tr>
@@ -3157,7 +3165,7 @@ Erasable SCSI disk devices must also support the following commands or features:
 
  
 
-## Device.Storage.Hd.SMR.SCSI
+### Device.Storage.Hd.SMR.SCSI
 
 <table>
 <tr>
@@ -3182,9 +3190,9 @@ Erasable SCSI disk devices must also support the following commands or features:
 -   SMR Host-Managed device shall report the maximum number of open sequential write preferred zones, as defined in ZBC r4 6.4.2 Zoned Block Device Characteristics VPD page.
 
 <a name="Device.Storage.Hd.ThinProvisioning"></a>
-# Device.Storage.Hd.ThinProvisioning
+## Device.Storage.Hd.ThinProvisioning
 
-## Device.Storage.Hd.ThinProvisioning.BasicFunction
+### Device.Storage.Hd.ThinProvisioning.BasicFunction
 
 *Thin Provisioning*
 
@@ -3277,9 +3285,9 @@ Erasable SCSI disk devices must also support the following commands or features:
 -   Must support Log Sense command to retrieve the LBP log page for reporting available LBA mapping resource and used LBA mapping resource information to the thin provisioning LUN, if Log Page (Page Code OCh) is implemented.
 
 <a name="Device.Storage.Hd.Trim"></a>
-# Device.Storage.Hd.Trim
+## Device.Storage.Hd.Trim
 
-## Device.Storage.Hd.Trim.BasicFunction
+### Device.Storage.Hd.Trim.BasicFunction
 
 *ATA Trim and SCSI Unmap functionality*
 
@@ -3318,9 +3326,9 @@ If the device implements ATA non-NCQ Trim or SCSI Unmap support:
 If the RZAT bit is set on a SATA device or the LBPRZ bit is set on a SCSI device, then the device shall return all '0's to a Read command before the trimmed block(s) is(are) re-written.
 
 <a name="Device.Storage.Hd.Uas"></a>
-# Device.Storage.Hd.Uas
+## Device.Storage.Hd.Uas
 
-## Device.Storage.Hd.Uas.Compliance
+### Device.Storage.Hd.Uas.Compliance
 
 *USB UAS storage devices*
 
@@ -3367,9 +3375,9 @@ USB UASP Storage devices must support the following:
 Additional Requirement: If the device supports UASP on XHCI, then it must support UASP on EHCI.
 
 <a name="Device.Storage.Hd.UasOnEHCI"></a>
-# Device.Storage.Hd.UasOnEHCI
+## Device.Storage.Hd.UasOnEHCI
 
-## Device.Storage.Hd.UasOnEHCI.BasicFunction
+### Device.Storage.Hd.UasOnEHCI.BasicFunction
 
 *USB UAS storage devices*
 
@@ -3390,9 +3398,9 @@ Additional Requirement: If the device supports UASP on XHCI, then it must suppor
 If the device supports UASP on XHCI and then it must support UASP on EHCI.
 
 <a name="Device.Storage.Hd.Usb"></a>
-# Device.Storage.Hd.Usb
+## Device.Storage.Hd.Usb
 
-## Device.Storage.Hd.Usb.Compatibility
+### Device.Storage.Hd.Usb.Compatibility
 
 *USB compatibility*
 
@@ -3474,9 +3482,9 @@ Please refer to USB3.0 spec section 3.1.4 USB 3.0 Architecture summary
 -   Low-speed - 1.5 Mb/s
 
 <a name="Device.Storage.Hd.Usb3"></a>
-# Device.Storage.Hd.Usb3
+## Device.Storage.Hd.Usb3
 
-## Device.Storage.Hd.Usb3.Compliance
+### Device.Storage.Hd.Usb3.Compliance
 
 *USB 3.0 storage devices*
 
@@ -3512,11 +3520,11 @@ Data Devices must perform as indicated:
 -   Minimum sequential read speed: 90MB/s
 
 <a name="Device.Storage.Hd.WindowsToGoCapableUSBDrive"></a>
-# Device.Storage.Hd.WindowsToGoCapableUSBDrive
+## Device.Storage.Hd.WindowsToGoCapableUSBDrive
 
 *Windows To Go capable USB drive feature*
 
-## Device.Storage.Hd.WindowsToGoCapableUSBDrive.WindowsToGoCapableUSBDrive
+### Device.Storage.Hd.WindowsToGoCapableUSBDrive.WindowsToGoCapableUSBDrive
 
 *Windows To Go capable USB drive*
 
@@ -3600,9 +3608,9 @@ USB boot devices must:
     -   Maximum of 16 seconds sum-total of user-perceivable I/O latencies over any 1 hour period of a user-representative workload, where a user-perceivable I/O is defined as having a latency of at least 100 millisecond
 
 <a name="Device.Storage.Optical"></a>
-# Device.Storage.Optical
+## Device.Storage.Optical
 
-## Device.Storage.Optical.CdRawRecording
+### Device.Storage.Optical.CdRawRecording
 
 *Optical drives must support CD RAW recording.*
 
@@ -3619,7 +3627,7 @@ USB boot devices must:
 
 Optical drives must support CD RAW recording mode for CD-R and CD-RW profiles.
 
-## Device.Storage.Optical.CommandPerformance
+### Device.Storage.Optical.CommandPerformance
 
 *Optical drives must complete Performance Command within allowed time frames.*
 
@@ -3711,7 +3719,7 @@ All the command execution time performance measurement should be performed on me
 
 <sup>6</sup>: The list of disc structure codes is limited to; physical format information (Format = 0x00, Address = 0), DVD-RAM medium status (Format = 0x09, Address = 0), DVD+RW write inhibit DCB (Format = 0x30 Address = 0x57444300), write protection status (Format = 0xC0 Address = 0)<sup>7</sup>:Dual Layer Write profile *will be required on 1 June 2010* for Blu-Ray drives of 9.5 mm height and smaller as well as DVD drives 7 mm height and smaller. This ends the previous exception for these form factors.
 
-## Device.Storage.Optical.DriveDefinition
+### Device.Storage.Optical.DriveDefinition
 
 *How optical drives are defined for certification.*
 
@@ -3728,7 +3736,7 @@ All the command execution time performance measurement should be performed on me
 
 To be an Optical Drive, the device must be defined as CD (Compact Disc) device, DVD (Digital Versatile Disc or Digital Video Disc) device, BD (Blu-Ray Disc) device or any device which identifies itself as Peripheral Device Type 5 per INCITS's T10's command set SCSI Primary Commands, SPC (any revision).
 
-## Device.Storage.Optical.Features
+### Device.Storage.Optical.Features
 
 *Required optical drive features*
 
@@ -3755,7 +3763,7 @@ Optical drives must support the required features listed below:
 -   Drive Serial Number Feature
 -   DVD CSS Feature (0106h)
 
-## Device.Storage.Optical.MmcVersion
+### Device.Storage.Optical.MmcVersion
 
 *Optical drives must comply with MMC.*
 
@@ -3772,7 +3780,7 @@ Optical drives must support the required features listed below:
 
 Optical drives must conform to INCITS's T10's command set and MultiMedia Command Set - 6 (MMC-6) when published. Because the publication of MMC-6 has been delayed, Optical Drives must in the interim conform to the combination of INCITS's T10's command set MultiMedia Command Set - 5 (MMC-5) and SFF's Mt. Fuji Commands for Multimedia Devices Version 7 (INF-8090i v7) until the publication of MMC-6. If and when MMC-5 and INF-8090i v7 contradict each other, and the following requirements do not specify explicitly the required behavior, compliance to MMC-5 is required (with the exception of features newly defined in INF-8090i v7).
 
-## Device.Storage.Optical.Profiles
+### Device.Storage.Optical.Profiles
 
 *Required optical drive profiles*
 
@@ -3801,7 +3809,7 @@ Optical drives must support the required profiles as listed below:
 -   DVD+R
 -   DVD+R DL
 
-## Device.Storage.Optical.RealTimeStreaming
+### Device.Storage.Optical.RealTimeStreaming
 
 *Optical drives must support Real Time Streaming.*
 
@@ -3819,9 +3827,9 @@ Optical drives must support the required profiles as listed below:
 Optical Drives must support Real Time Streaming as required according to Profile requirements. For all recordable and rewritable profiles, the following fields shall be set accordingly: Stream Writing (SW)=1b and Write Speed Performance Descriptor (WSPD)=1b.
 
 <a name="Device.Storage.Optical.BluRayReader"></a>
-# Device.Storage.Optical.BluRayReader
+## Device.Storage.Optical.BluRayReader
 
-## Device.Storage.Optical.BluRayReader.Profiles
+### Device.Storage.Optical.BluRayReader.Profiles
 
 *Required profiles for Blu-Ray readers*
 
@@ -3840,9 +3848,9 @@ Optical Drives must support Real Time Streaming as required according to Profile
 Blu-Ray reader drives must support BD-ROM profile.
 
 <a name="Device.Storage.Optical.BluRayWriter"></a>
-# Device.Storage.Optical.BluRayWriter
+## Device.Storage.Optical.BluRayWriter
 
-## Device.Storage.Optical.BluRayWriter.Profiles
+### Device.Storage.Optical.BluRayWriter.Profiles
 
 *Required profiles for Blu-Ray writers*
 
@@ -3861,9 +3869,9 @@ Blu-Ray reader drives must support BD-ROM profile.
 Blu-Ray drives that can write must support BD-ROM, BD-R Sequential Recording and BD-RE profiles.
 
 <a name="Device.Storage.Optical.Sata"></a>
-# Device.Storage.Optical.Sata
+## Device.Storage.Optical.Sata
 
-## Device.Storage.Optical.Sata.AsynchronousNotification
+### Device.Storage.Optical.Sata.AsynchronousNotification
 
 *Asynchronous Notification is required for all SATA connected drives.*
 

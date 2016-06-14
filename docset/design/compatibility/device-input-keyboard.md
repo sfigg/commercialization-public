@@ -1,3 +1,11 @@
+---
+title: Device.Input.Keyboard
+Description: 'Logo requirements detailing the implementation details of a keyboard important to Microsoft operating systems.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Input.Keyboard
 
@@ -5,11 +13,11 @@
 -->
 
 <a name="Device.Input.Keyboard"></a>
-# Device.Input.Keyboard
+## Device.Input.Keyboard
 
 *Logo requirements detailing the implementation details of a keyboard important to Microsoft operating systems.*
 
-## Device.Input.Keyboard.BrowserMultimediaKeysUseMSApis
+### Device.Input.Keyboard.BrowserMultimediaKeysUseMSApis
 
 *Keys for Internet browser and multimedia must use Microsoft APIs.*
 
@@ -33,7 +41,7 @@ If a keyboard or peripheral implements multimedia or Internet browser keys, it m
 
 See the Microsoft Platform SDK, "WM\_APPCOMMAND."
 
-## Device.Input.Keyboard.CharmsKey
+### Device.Input.Keyboard.CharmsKey
 
 *If any of the Windows Charms keys are implemented on keyboards, then it must implement the correct scan codes and proper glypths.*
 
@@ -55,7 +63,7 @@ Keyboards that implement buttons to launch any of the Windows Charms must use th
 
 The charm button must send the correct scan code corresponding to the charm. No other glyph can be used on the button when using a scan code that relates to invoking one of the Windows 8 charms.
 
-## Device.Input.Keyboard.DynamicKeyboards
+### Device.Input.Keyboard.DynamicKeyboards
 
 *Dynamic keyboards must meet the requirements listed here.*
 
@@ -87,7 +95,7 @@ The charm button must send the correct scan code corresponding to the charm. No 
 
 -   A self-powered keyboard capable of altering the keycaps to reflect different glyphs or legends dynamically, must allow for the keyboard to be reset via a switch or keystroke sequence, independently of a software reset or power cycling of the device.
 
-## Device.Input.Keyboard.HotKeyFunctionAPI
+### Device.Input.Keyboard.HotKeyFunctionAPI
 
 *Devices that implement Hot-Key functionality must implement the corresponding API notifications.*
 
@@ -123,7 +131,7 @@ API for WM\_APPCOMMAND notifications can be found at <http://msdn.microsoft.com/
 HID Usage Page and ID information for these functions can be found at <http://www.microsoft.com/whdc/archive/scancode.mspx> and <http://www.usb.org/developers/hidpage>.
  
 
-## Device.Input.Keyboard.KernelModeDriversUseWdfKmdf
+### Device.Input.Keyboard.KernelModeDriversUseWdfKmdf
 
 *Keyboard kernel-mode drivers must use the WDF-KMDF.*
 
@@ -143,7 +151,7 @@ HID Usage Page and ID information for these functions can be found at <http://ww
 
 Third-party keyboard kernel-mode drivers must be ported to the WDF KMDF model.
 
-## Device.Input.Keyboard.LogoFlagKey
+### Device.Input.Keyboard.LogoFlagKey
 
 *Windows symbol key is implemented on all keyboards supporting more than 50 keys. The Windows symbol design is required after December 31<sup>st</sup>, 2013.*
 
@@ -163,7 +171,7 @@ Third-party keyboard kernel-mode drivers must be ported to the WDF KMDF model.
 
 All keyboards that support more than 50 keys must implement the Windows Symbol key. The printed Windows flag logo version of the key design may be logo qualified on mobile systems and standalone keyboards until the transition date. The Windows flag trademark must be clearly distinguished on the key top according to *The Microsoft Windows Logo Key Logo License Agreement* and the "Key Support, Keyboard Scan Codes, and Windows" document at <http://go.microsoft.com/fwlink/?LinkId=116451>.
 
-## Device.Input.Keyboard.MultipleKeyboard
+### Device.Input.Keyboard.MultipleKeyboard
 
 *No interference occurs between multiple keyboards.*
 
@@ -183,7 +191,7 @@ All keyboards that support more than 50 keys must implement the Windows Symbol k
 
 If the system includes more than one keyboard, there must be no conflicts. For example, a docked mobile computer can have more than one keyboard attached to the system. The keyboard ports on a mobile computer and a docking station must be able to resolve conflicts between the two ports when the mobile computer is docked.
 
-## Device.Input.Keyboard.ScanCode
+### Device.Input.Keyboard.ScanCode
 
 *Scan codes must comply with industry standards.*
 

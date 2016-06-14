@@ -1,3 +1,11 @@
+---
+title: Device.BusController.SdioController
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.BusController.SdioController
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.BusController.SdioController"></a>
-# Device.BusController.SdioController
+## Device.BusController.SdioController
 
-## Device.BusController.SdioController.ComplyWithIndustrySpec
+### Device.BusController.SdioController.ComplyWithIndustrySpec
 
 *SDIO controller must comply with the industry standard.*
 
@@ -27,7 +35,7 @@
 
 Secure Digital I/O (SDIO) host controllers must comply with PCI 2.3 or later requirements for that interface. For PCI configuration registers and interface information, see the SD Host Controller Specification, Version 1.0, Appendix A.
 
-## Device.BusController.SdioController.WdfKmdfDriver
+### Device.BusController.SdioController.WdfKmdfDriver
 
 *SDIO controller driver must be a WDF KMDF implementation.*
 

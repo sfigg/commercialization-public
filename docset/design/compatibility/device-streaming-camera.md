@@ -1,13 +1,21 @@
-# Device.Steaming.Camera
+---
+title: Device.Streaming.Camera
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
+# Device.Streaming.Camera
 
  - [Device.Streaming.Camera.Base](#Device.Streaming.Camera.Base)
  - [Device.Streaming.Camera.Base.Sharing](#Device.Streaming.Camera.Base.Sharing)
  - [Device.Streaming.Camera.UVC](#Device.Streaming.Camera.UVC)
 
 <a name="Device.Streaming.Camera.Base"></a>
-# Device.Streaming.Camera.Base
+## Device.Streaming.Camera.Base
 
-## Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM 
+### Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM 
 
 *Camera implementation must be based on AVStream class and WDM, and must meet interface requirements*
 
@@ -41,7 +49,7 @@ USB based cameras must be USB Video Class (UVC) compliant as defined in **Device
 
 Error Conditions include (but are not limited to) forced invalid pin connections, invalid property sets, buffers with invalid data, null pointers, and error conditions from drivers above or below on the stack
 
-## Device.Streaming.Camera.Base.DirectShow
+### Device.Streaming.Camera.Base.DirectShow
 
 *RGB camera implementation must support DirectShow.*
 
@@ -57,7 +65,7 @@ Error Conditions include (but are not limited to) forced invalid pin connections
 
 RGB cameras must work with Microsoft DirectShow in order to support legacy applications.
 
-## Device.Streaming.Camera.Base.KSCategoryVideoCameraRegistration
+### Device.Streaming.Camera.Base.KSCategoryVideoCameraRegistration
 
 *RGB cameras must register under KSCategory\_Video\_Camera*
 
@@ -75,7 +83,7 @@ RGB cameras must work with Microsoft DirectShow in order to support legacy appli
 
 RGB cameras must register under KSCategory\_Video\_Camera for Windows to detect the camera
 
-## Device.Streaming.Camera.Base.MediaFoundation
+### Device.Streaming.Camera.Base.MediaFoundation
 
 *Camera implementation must support Media Foundation architecture.*
 
@@ -93,7 +101,7 @@ RGB cameras must register under KSCategory\_Video\_Camera for Windows to detect 
 
 Cameras must work with Microsoft Media Foundation in order to support legacy (Win32) and Windows Store applications.
 
-## Device.Streaming.Camera.Base.MultipleClientAppSupport
+### Device.Streaming.Camera.Base.MultipleClientAppSupport
 
 *Camera implementation must support multiple KS filter instances and independent streaming*
 
@@ -113,7 +121,7 @@ Cameras must work with Microsoft Media Foundation in order to support legacy (Wi
 
 Each camera must allow multiple filter instances to be created. Devices may only allow one filter instance to actively stream.
 
-## Device.Streaming.Camera.Base.NonRGBCameras
+### Device.Streaming.Camera.Base.NonRGBCameras
 
 *Non-RGB Cameras must register under KSCategory\_Sensor\_Camera*
 
@@ -131,7 +139,7 @@ Each camera must allow multiple filter instances to be created. Devices may only
 
 To differentiate the functionality between RGB cameras and other types of sensors, Cameras that are not RGB video streaming cameras must register under category KSCategory\_Sensor\_Camera
 
-## Device.Streaming.Camera.Base.PnPandPowerPolicies 
+### Device.Streaming.Camera.Base.PnPandPowerPolicies 
 
 *Camera implementation must comply with Microsoft PNP and power policies.*
 
@@ -153,7 +161,7 @@ More info can be found at the following link:
 
 -   <http://go.microsoft.com/fwlink/?LinkID=733968>
 
-## Device.Streaming.Camera.Base.SurpriseRemoval
+### Device.Streaming.Camera.Base.SurpriseRemoval
 
 *Hot-pluggable cameras must support surprise removal.*
 
@@ -171,7 +179,7 @@ More info can be found at the following link:
 
 All hot-pluggable cameras must support their surprise removal from the host bus.
 
-## Device.Streaming.Camera.Base.UsageIndicator
+### Device.Streaming.Camera.Base.UsageIndicator
 
 *Cameras must have a visual indicator to indicate usage*
 
@@ -213,9 +221,9 @@ A hardware usage indicator (physical LED) is strongly recommended. In lieu of a 
 When this is set, the operating system will be able to show UI indicating when the camera is streaming.
 
 <a name="Device.Streaming.Camera.Base.Sharing"></a>
-# Device.Streaming.Camera.Base.Sharing
+## Device.Streaming.Camera.Base.Sharing
 
-## Device.Streaming.Camera.Base.Sharing.CustomMediaSource
+### Device.Streaming.Camera.Base.Sharing.CustomMediaSource
 
 *Custom media sources must support the Media Foundation architecture and interfaces*
 
@@ -233,7 +241,7 @@ When this is set, the operating system will be able to show UI indicating when t
 
 Cameras and by extension custom media sources that act as cameras must work with Microsoft Media Foundation in order to support Windows applications. In addition to the normal MediaSource interfaces and attributes, the custom media source must be installable as part of a driver package.
 
-## Device.Streaming.Camera.Base.Sharing.DeviceMFT
+### Device.Streaming.Camera.Base.Sharing.DeviceMFT
 
 *Sharing Camera’s DeviceMFT and MFT0 must run out of process as the user mode application*
 
@@ -251,7 +259,7 @@ Cameras and by extension custom media sources that act as cameras must work with
 
 To support the sharing experience, the device driver and user mode components associated with the driver (DeviceMFT or MFT0) will be run out of a different process than the user mode application using the capture APIs. This means that the user mode components can take no dependencies on running in process as the user mode application. Some examples of this are a private interface to the DeviceMFT from the application or taking a reference to the CaptureEngine object.
 
-## Device.Streaming.Camera.Base.Sharing.FaceAuthMode
+### Device.Streaming.Camera.Base.Sharing.FaceAuthMode
 
 *To support Face Authentication DDI as supported, Windows Hello additional requirements must also be met*
 
@@ -269,7 +277,7 @@ To support the sharing experience, the device driver and user mode components as
 
 To advertise that Face Authentication is supported by a device, additional Windows Hello requirements must be met. These include minimum resolutions and frame rates. Please see the Windows Hardware Guidance for Delightful Face Authentication Scenario (V2.0 or above) document for further details.
 
-## Device.Streaming.Camera.Base.Sharing.MemoryAllocation
+### Device.Streaming.Camera.Base.Sharing.MemoryAllocation
 
 *Memory allocation by drivers must be aligned to 4k (4096 bytes) page boundaries.*
 
@@ -287,7 +295,7 @@ To advertise that Face Authentication is supported by a device, additional Windo
 
 Memory allocation by drivers must be aligned to 4k page boundaries.  It is recommended that the driver’s user mode component use the MF (Media Foundation) allocator.
 
-## Device.Streaming.Camera.Base.Sharing.NonConsumableData
+### Device.Streaming.Camera.Base.Sharing.NonConsumableData
 
 *Streams not meant for user consumption must be hidden*
 
@@ -306,7 +314,7 @@ Memory allocation by drivers must be aligned to 4k page boundaries.  It is reco
 Any stream exposed by the driver should be usable in some way by an application. The data type for the stream being well understood is not required, but the stream should be functional in all other aspects of streaming. If the data from a stream cannot be consumed by another component or application, this must be marked on the pin so that it will be hidden from applications.
 
 <a name="Device.Streaming.Camera.UVC"></a>
-# Device.Streaming.Camera.UVC
+## Device.Streaming.Camera.UVC
 
 ,## Device.Streaming.Camera.UVC.USBClassDriver 
 
@@ -324,7 +332,7 @@ Any stream exposed by the driver should be usable in some way by an application.
 
 All USB streaming video Cameras must be compatible with Microsoft USB Video class driver (USBVideo.sys).
 
-## Device.Streaming.Camera.UVC.UVCDriver
+### Device.Streaming.Camera.UVC.UVCDriver
 
 *USB streaming video cameras must comply with USB Video Class specifications*
 

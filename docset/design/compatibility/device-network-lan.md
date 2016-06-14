@@ -1,3 +1,11 @@
+---
+title: Device.Network.LAN
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Network.LAN
 
  - [Device.Network.LAN.Base](#Device.Network.LAN.Base)
@@ -19,11 +27,11 @@
  - [Device.Network.LAN](#Device.Network.LAN)
 
 <a name="Device.Network.LAN.Base"></a>
-# Device.Network.LAN.Base
+## Device.Network.LAN.Base
 
 *LAN requirements *
 
-## Device.Network.LAN.Base.100MbOrGreater
+### Device.Network.LAN.Base.100MbOrGreater
 
 *Ethernet devices must support 100-Mb or greater link speeds.*
 
@@ -43,7 +51,7 @@
 
 Ethernet devices must be able to link at 100 Mb or higher speeds.
 
-## Device.Network.LAN.Base.32MulticastAddresses
+### Device.Network.LAN.Base.32MulticastAddresses
 
 *Ethernet devices must support filtering for at least 32 multicast addresses.*
 
@@ -65,7 +73,7 @@ An Ethernet device must support filtering of 32 or more multicast addresses.
 
 Design Notes: See the Windows Driver Kit, "multicast." See the Windows Driver Kit, "NdisReadNetworkAddress" and "MAC Address."
 
-## Device.Network.LAN.Base.AdvProperties
+### Device.Network.LAN.Base.AdvProperties
 
 *Ethernet devices must safeguard advanced properties and provide complete configurability through advanced properties.*
 
@@ -85,7 +93,7 @@ Design Notes: See the Windows Driver Kit, "multicast." See the Windows Driver Ki
 
 Ethernet devices must adhere to the standardized registry keywords for controlling advanced features as documented on MSDN.  Devices must also safeguard both Microsoft standardized and private keywords from malicious values.
 
-## Device.Network.LAN.Base.AnyBoundary
+### Device.Network.LAN.Base.AnyBoundary
 
 *Ethernet devices must be able to transmit packets from buffers aligned on any boundary.*
 
@@ -105,7 +113,7 @@ Ethernet devices must adhere to the standardized registry keywords for controlli
 
 Buffer alignment refers to whether a buffer begins on an odd-byte, word, double-word, or other boundary. Devices must be able to transmit packets with any of the packets fragments beginning on an odd-byte boundary. For performance reasons, packets must be received into contiguous buffers on a double-word boundary.
 
-## Device.Network.LAN.Base.IPv4AndIPv6OffloadParity
+### Device.Network.LAN.Base.IPv4AndIPv6OffloadParity
 
 *Ethernet devices that implement offloads must do so consistently for both IPv4 and IPv6.*
 
@@ -125,7 +133,7 @@ Buffer alignment refers to whether a buffer begins on an odd-byte, word, double-
 
 Network offloads implemented by Ethernet devices need to operate consistently, irrespective of the IP protocol used. Having offload parity allows Windows customers to have a consistent and predictable experience across both IPv4 and IPv6.
 
-## Device.Network.LAN.Base.NDISCalls
+### Device.Network.LAN.Base.NDISCalls
 
 *Ethernet devices must make only NDIS library or WDF system calls.*
 
@@ -147,7 +155,7 @@ A driver for an Ethernet device must make only NDIS or WDF calls. Any calls to o
 
 Design Notes: See the Windows Driver Kit, "NDIS" and "WDF."
 
-## Device.Network.LAN.Base.NDISRequirements
+### Device.Network.LAN.Base.NDISRequirements
 
 *Ethernet devices must conform to the NDIS requirements in the Windows Driver Kit.*
 
@@ -169,7 +177,7 @@ All Ethernet device drivers must conform to NDIS specified in the Windows Driver
 
 Design Notes: See the Windows Driver Kit, "NDIS."
 
-## Device.Network.LAN.Base.PacketFiltering
+### Device.Network.LAN.Base.PacketFiltering
 
 *Ethernet devices must support packet filtering.*
 
@@ -189,7 +197,7 @@ Design Notes: See the Windows Driver Kit, "NDIS."
 
 The miniport driver must support all filter types in the Windows Driver Kit. Note: Filtering should be performed in Hardware/Firmware.
 
-## Device.Network.LAN.Base.PreserveOSServices
+### Device.Network.LAN.Base.PreserveOSServices
 
 *Ethernet devices Miniport Driver/Driver Software must not disable OS services.*
 
@@ -209,7 +217,7 @@ The miniport driver must support all filter types in the Windows Driver Kit. Not
 
 Ethernet devices Miniport Driver/Driver Software must not disable OS services. Some devices tend to shutoff services such as the Base Filtering Engine (BFE). This leaves the system vulnerable to attack due to lack of security capabilities.
 
-## Device.Network.LAN.Base.PriorityVLAN
+### Device.Network.LAN.Base.PriorityVLAN
 
 *Ethernet devices that implement link speeds of gigabit or greater must implement Priority & VLAN tagging according to the IEEE 802.1q specification.*
 
@@ -229,7 +237,7 @@ Ethernet devices Miniport Driver/Driver Software must not disable OS services. 
 
 This requirement only applies to Ethernet devices that implement link speeds of gigabit or greater. If the Ethernet device does not implement link speeds of gigabit or greater, then this requirement does not apply. The Ethernet device and driver must support the inserting and removing of priority and VLAN tags.
 
-## Device.Network.LAN.Base.ShortPacketPadding
+### Device.Network.LAN.Base.ShortPacketPadding
 
 *Ethernet devices must pad short packets with constant data.*
 
@@ -251,7 +259,7 @@ Padding that is added to short Ethernet packets to bring that packet size to the
 
 Design Notes: New solutions are recommended to implement a padding of zeros. However, some devices that implement the padding in hardware use 0xffs, which addresses the security concern.
 
-## Device.Network.LAN.Base.SupportIEEEE8023
+### Device.Network.LAN.Base.SupportIEEEE8023
 
 *Ethernet devices must comply with IEEE 802.3.*
 
@@ -272,11 +280,11 @@ Design Notes: New solutions are recommended to implement a padding of zeros. How
 All 802.3 Ethernet devices must implement and comply with the IEEE 802.3 specification.
 
 <a name="Device.Network.LAN.ChecksumOffload"></a>
-# Device.Network.LAN.ChecksumOffload
+## Device.Network.LAN.ChecksumOffload
 
 *Network requirements *
 
-## Device.Network.LAN.ChecksumOffload.ChecksumOffload
+### Device.Network.LAN.ChecksumOffload.ChecksumOffload
 
 *Ethernet devices must implement Checksum Offloads.*
 
@@ -309,11 +317,11 @@ Ethernet devices implement Checksum Offloads must expose the NDIS Enumeration K
  
 
 <a name="Device.Network.LAN.CS"></a>
-# Device.Network.LAN.CS
+## Device.Network.LAN.CS
 
 *A connected standby capable computer (also known as a platform) supports a low power active state, and advertises support of that state to the OS using the appropriate ACPI flag (LOW\_POWER\_S0\_IDLE\_CAPABLE) in FADT. It is also expected to meet all the Windows certification requirements for a connected standby platform. This section specifies the connected standby requirements for Wired LAN (Ethernet).*
 
-## Device.Network.LAN.CS.NetworkWake
+### Device.Network.LAN.CS.NetworkWake
 
 *Wired LAN (Ethernet) devices integrated into Connected Standby systems or docks shipped with the system must support network wake patterns.*
 
@@ -349,7 +357,7 @@ Design Notes:
 
 See the Power Management specification on MSDN.
 
-## Device.Network.LAN.CS.PresenceOffload
+### Device.Network.LAN.CS.PresenceOffload
 
 *Wired LAN (Ethernet) devices integrated into Connected Standby systems or docks shipped with the system must support network presence offload.*
 
@@ -379,7 +387,7 @@ Wired LAN devices must implement IPv6 NS offload as it is defined in Power Manag
 
 The miniport must implement the said protocol in accordance to RFCs describing Neighbor Discovery and Neighbor Solicitation Protocol for IPv6.
 
-## Device.Network.LAN.CS.ReliableCSConnectivity
+### Device.Network.LAN.CS.ReliableCSConnectivity
 
 *LAN device on systems that support Connected Standby must deliver reliable connectivity in Connected Standby.*
 
@@ -405,7 +413,7 @@ Additional Information
 
 Exceptions - Does not apply to non-AOAC capable devices
 
-## Device.Network.LAN.CS.WakeEvents
+### Device.Network.LAN.CS.WakeEvents
 
 *Wired LAN (Ethernet) devices integrated into Connected Standby systems or docks shipped with the system must support various wake triggers.*
 
@@ -427,7 +435,7 @@ The specific requirements are listed below: Wake on Media Connect:Wired Ethernet
 
 Design Notes: See the Power Management specification on MSDN.
 
-## Device.Network.LAN.CS.WakeReasonDetection
+### Device.Network.LAN.CS.WakeReasonDetection
 
 *Wired LAN (Ethernet) devices integrated into Connected Standby systems or docks shipped with the system must support wake reason detection.*
 
@@ -450,11 +458,11 @@ The specific requirements are listed below: Wake Reason support: Wired Ethernet 
 Design Notes: See the Power Management specification on MSDN.
 
 <a name="Device.Network.LAN.DCB"></a>
-# Device.Network.LAN.DCB
+## Device.Network.LAN.DCB
 
 *LAN requirements *
 
-##  Device.Network.LAN.DCB.DCB
+###  Device.Network.LAN.DCB.DCB
 
 *Ethernet devices that implement Data Center Bridging (DCB) must comply with the DCB Specification*.
 
@@ -490,11 +498,11 @@ Design Notes
 See the Data Center Bridging Specification at <http://msdn.microsoft.com/en-us/library/windows/hardware/hh451635.aspx>.
 
 <a name="Device.Network.LAN.GRE"></a>
-# Device.Network.LAN.GRE
+## Device.Network.LAN.GRE
 
 *LAN requirements *
 
-## Device.Network.LAN.GRE.GREPacketTaskOffloads
+### Device.Network.LAN.GRE.GREPacketTaskOffloads
 
 *Ethernet devices that implement GRE Encapsulated Packet Task Offloads must comply with the specification.*
 
@@ -520,11 +528,11 @@ This requirement only applies to Ethernet devices that implement GRE encapsulate
  - VMQ
 
 <a name="Device.Network.LAN.IPsec"></a>
-# Device.Network.LAN.IPsec
+## Device.Network.LAN.IPsec
 
 *LAN requirements *
 
-## Device.Network.LAN.IPsec.IPsec
+### Device.Network.LAN.IPsec.IPsec
 
 *Ethernet devices that implement IPsec task offload must support required modes and protocols.*
 
@@ -559,11 +567,11 @@ Ethernet devices that support IPsec task offload for Windows 8 must use NDIS 6.3
 - CheckSum offload.Must implement them in a coexisting manner, such that the use of IPsec task offload does not preclude the use of the other offload technologies implemented for each IPsec mode.
 
 <a name="Device.Network.LAN.KRDMA"></a>
-# Device.Network.LAN.KRDMA
+## Device.Network.LAN.KRDMA
 
 *LAN requirements*
 
-## Device.Network.LAN.KRDMA.KRDMA
+### Device.Network.LAN.KRDMA.KRDMA
 
 *Devices that implement the NetworkDirect Kernel Mode Interface (NDKPI) (a.k.a., Kernel-mode RDMA, kRDMA) must comply with the Network Direct Kernel Mode Interface (NDKPI) Specification.*
 
@@ -588,11 +596,11 @@ This requirement only applies to Ethernet devices that implement the Network Dir
 See the Network Direct Kernel Mode Interface (NDKPI) Specification.
 
 <a name="Device.Network.LAN.LargeSendOffload"></a>
-# Device.Network.LAN.LargeSendOffload
+## Device.Network.LAN.LargeSendOffload
 
 *Network requirements *
 
-## Device.Network.LAN.LargeSendOffload.LargeSendOffload
+### Device.Network.LAN.LargeSendOffload.LargeSendOffload
 
 *Ethernet devices must implement large send offloads.*
 
@@ -618,7 +626,7 @@ Large Send Offload version 2 for IPv4 and IPv6.
 
 See the Windows Driver Kit, "NDIS."
 
-## Device.Network.LAN.MTUSize
+### Device.Network.LAN.MTUSize
 
 <table>
 <tr>
@@ -636,11 +644,11 @@ Ethernet devices must support Jumbo Frames. MTU values in the User Interface mus
 | \*EncapOverhead | Encapsulation Overhead | int  | 0             | 0, 256, 32     |
 
 <a name="Device.Network.LAN.PM"></a>
-# Device.Network.LAN.PM
+## Device.Network.LAN.PM
 
 *LAN requirements*
 
-## Device.Network.LAN.PM.PowMgmtNDIS
+### Device.Network.LAN.PM.PowMgmtNDIS
 
 *Ethernet devices that implement network presence offloads must conform to the Power Management specification on the NDIS program.*
 
@@ -672,7 +680,7 @@ Exceptions - Exceptions to this requirement include: PC Card, CardBus devices an
 
  
 
-## Device.Network.LAN.PM.WakeOnLANPatterns
+### Device.Network.LAN.PM.WakeOnLANPatterns
 
 *Ethernet devices must implement Wake on LAN patterns according to the specification.*
 
@@ -700,7 +708,7 @@ Exception - Exceptions to this requirement include: PC Card, CardBus devices and
 
  
 
-## Device.Network.LAN.PM.WakePacket
+### Device.Network.LAN.PM.WakePacket
 
 *Ethernet devices that implement Wake Packet Detection must comply with Network Device Class Power Management Reference Specification.*
 
@@ -725,11 +733,11 @@ Ethernet devices that implement Wake Packet Detection must comply with Network D
 See the WDK, Network Device Class Power Management Reference Specification.
 
 <a name="Device.Network.LAN.RSC"></a>
-# Device.Network.LAN.RSC
+## Device.Network.LAN.RSC
 
 *LAN requirements *
 
-## Device.Network.LAN.RSC.RSC
+### Device.Network.LAN.RSC.RSC
 
 *Ethernet devices that implement Receive Segment Coalescing (RSC) must comply with the RSC Specification.*
 
@@ -754,11 +762,11 @@ Ethernet devices that implement Receive Segment Coalescing (RSC) must comply wit
 NDIS version: 6.30
 
 <a name="Device.Network.LAN.RSS"></a>
-# Device.Network.LAN.RSS
+## Device.Network.LAN.RSS
 
 *LAN requirements*
 
-## Device.Network.LAN.RSS.RSS
+### Device.Network.LAN.RSS.RSS
 
 *Ethernet devices that implement RSS*
 
@@ -807,7 +815,7 @@ See RSS Standardized Keywords Specification <http://msdn.microsoft.com/library/w
 
 In addition, the device must allocate as many MSI-X table entries as there are CPUs in the system. See the NDIS documentation section on MSI-X for more details <http://msdn.microsoft.com/library/windows/hardware/ff566491.aspx>.
 
-## Device.Network.LAN.RSS.SetHashFunctionTypeAndValue
+### Device.Network.LAN.RSS.SetHashFunctionTypeAndValue
 
 *Ethernet devices that implement RSS must set the hash function, hash type, and hash value on each indicated packet.*
 
@@ -831,7 +839,7 @@ This requirement only applies to Ethernet devices that implement RSS. If the Eth
 
 See the MSDN page for more information: <http://msdn.microsoft.com/en-us/library/windows/hardware/ff570726.aspx>. See the Windows Driver Kit, "Indicating RSS Receive Data."
 
-## Device.Network.LAN.RSS.SupportIndirectionTablesSizes
+### Device.Network.LAN.RSS.SupportIndirectionTablesSizes
 
 *Ethernet devices that implement RSS must support specific Indirection Table sizes.*
 
@@ -855,7 +863,7 @@ This requirement only applies to Ethernet devices that implement RSS. If the Eth
 
 See the Windows Driver Kit, "OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS."
 
-## Device.Network.LAN.RSS.SupportToeplitzHashFunction
+### Device.Network.LAN.RSS.SupportToeplitzHashFunction
 
 *Ethernet devices that implement RSS must support the Toeplitz hash function.*
 
@@ -879,7 +887,7 @@ This requirement only applies to Ethernet devices that implement RSS. If the Eth
 
 See Windows Driver Kit, "RSS Hashing Functions." Also, refer to MSDN for more information <http://msdn.microsoft.com/en-us/library/windows/hardware/ff570725.aspx>
 
-## Device.Network.LAN.RSS.SupportUpdatesToRSSInfo
+### Device.Network.LAN.RSS.SupportUpdatesToRSSInfo
 
 *Ethernet devices that implement RSS must support updates to RSS information at any time.*
 
@@ -904,11 +912,11 @@ This requirement only applies to Ethernet devices that implement RSS. If the Eth
 See the Windows Driver Kit, "OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS."
 
 <a name="Device.Network.LAN.SRIOV"></a>
-# Device.Network.LAN.SRIOV
+## Device.Network.LAN.SRIOV
 
 *Network requirements *
 
-## Device.Network.LAN.SRIOV.SRIOV
+### Device.Network.LAN.SRIOV.SRIOV
 
 *Ethernet devices that implement Single Root I/O Virtualization (SR-IOV) must support required functionalities.*
 
@@ -957,11 +965,11 @@ A VF miniport must specify an UpperRange of "ndisvf" and a LowerRange of "iovvf"
 See the Single Root I/O Virtualization Specification.
 
 <a name="Device.Network.LAN.SRIOV.VF"></a>
-# Device.Network.LAN.SRIOV.VF
+## Device.Network.LAN.SRIOV.VF
 
 *Network requirements *
 
-## Device.Network.LAN.SRIOV.VF.VF
+### Device.Network.LAN.SRIOV.VF.VF
 
 *Ethernet devices that implement Single Root I/O Virtualization (SR-IOV) must support required functionalities.*
 
@@ -998,11 +1006,11 @@ On report of media connected, the VF miniport must be ready to accept traffic.
 See the Single Root I/O Virtualization Specification.
 
 <a name="Device.Network.LAN.TCPChimney"></a>
-# Device.Network.LAN.TCPChimney
+## Device.Network.LAN.TCPChimney
 
 *TCP Chimney requirements *
 
-## Device.Network.LAN.TCPChimney.ComplyWithNDIS
+### Device.Network.LAN.TCPChimney.ComplyWithNDIS
 
 *Ethernet devices that implement TCP Chimney must comply with the latest NDIS miniport driver model.*
 
@@ -1026,7 +1034,7 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 
 See Windows Driver Kit, "Network Devices and Protocols."
 
-## Device.Network.LAN.TCPChimney.ComplyWithTCPIPProtocol
+### Device.Network.LAN.TCPChimney.ComplyWithTCPIPProtocol
 
 *Ethernet devices that implement TCP Chimney must comply with the IETF standard RFCs for the TCP/IP protocol family and behave as the Microsoft Windows (host) TCP/IP protocol implementation.*
 
@@ -1156,7 +1164,7 @@ Send(){..If (BytesToSend &gt; MSS ||BytesToSend &gt; MaxSndWnd /2 ||BytesToSend 
 
 Design Notes: See the full text of the RFCs at <http://go.microsoft.com/fwlink/?LinkId=36702>.
 
-## Device.Network.LAN.TCPChimney.HandlesOutOfOrderData
+### Device.Network.LAN.TCPChimney.HandlesOutOfOrderData
 
 *Ethernet devices that implement TCP Chimney must properly handle the Out Of Order data scenarios.*
 
@@ -1180,7 +1188,7 @@ Ethernet devices that implement TCP Chimney must properly handle Out Of Order da
 
 2. If a TCP Chimney NIC stores an OOO FIN in the reassembly queue, then it MUST not store OOO data or OOO FIN beyond another OOO FIN in the reassembly queue. If it receives OOO data or OOO FIN segment that would lead to such a conflict, then the TCP Chimney NIC MUST drop that segment and flush the reassembly queue by discarding all of its contents.
 
-## Device.Network.LAN.TCPChimney.ImplementSufficientlyGranularTimers
+### Device.Network.LAN.TCPChimney.ImplementSufficientlyGranularTimers
 
 *Ethernet devices that implement TCP Chimney must implement sufficiently granular timers.*
 
@@ -1200,7 +1208,7 @@ Ethernet devices that implement TCP Chimney must properly handle Out Of Order da
 
 This requirement only applies to Ethernet devices that implement TCP Chimney. If the Ethernet device does not implement TCP Chimney, then this requirement does not apply. The TCP chimney NIC must have access to timers (implemented on the NIC's hardware) with precise enough granularity and skew such that it can drive the TCP/IP state machine correctly. The timer granularity must be 10 milliseconds or better (lower than 10 ms) and the timer skew must be as good as what general purpose CPU timer provides.
 
-## Device.Network.LAN.TCPChimney.NeighborStateObjTimestampsComplyWithWDK
+### Device.Network.LAN.TCPChimney.NeighborStateObjTimestampsComplyWithWDK
 
 *Neighbor state object timestamps are implemented according to details in the Windows Driver Kit.*
 
@@ -1224,7 +1232,7 @@ A network device that implements TCP Chimney must ensure that TCP Chimney mainta
 
 See the Windows Driver Kit, "OID\_TCP\_OFFLOAD.
 
-## Device.Network.LAN.TCPChimney.Support1024Connections
+### Device.Network.LAN.TCPChimney.Support1024Connections
 
 *Ethernet devices that implement TCP Chimney must support at least 1024 connections and not advertise more offload capacity than what the hardware can support.*
 
@@ -1244,7 +1252,7 @@ See the Windows Driver Kit, "OID\_TCP\_OFFLOAD.
 
 This requirement only applies to Ethernet devices that implement TCP Chimney. If the Ethernet device does not implement TCP Chimney, then this requirement does not apply. Ethernet devices that implement TCP Chimney must support at least 1024 connections and not advertise more offload capacity than what the hardware can support.
 
-## Device.Network.LAN.TCPChimney.Support64bitAddresses
+### Device.Network.LAN.TCPChimney.Support64bitAddresses
 
 *Ethernet devices that implement TCP Chimney must support 64-bit addresses.*
 
@@ -1265,11 +1273,11 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 This requirement only applies to Ethernet devices that implement TCP Chimney. If the Ethernet device does not implement TCP Chimney, then this requirement does not apply. If the device uses PCI, it must support 64-bit addresses; 64-bit data support is not required.
 
 <a name="Device.Network.LAN.VMQ"></a>
-# Device.Network.LAN.VMQ
+## Device.Network.LAN.VMQ
 
 *LAN requirements*
 
-## Device.Network.LAN.VMQ.VirtualMachineQueues
+### Device.Network.LAN.VMQ.VirtualMachineQueues
 
 *Ethernet devices that implement Virtual Machine Queues must comply with the Programmable Machine Queues Reference specification.*
 
@@ -1322,9 +1330,9 @@ Design Notes
 Implementation details are in the ProgrammableMachine Queues specification, on the NDIS Program, Connect site <http://msdn.microsoft.com/en-us/library/windows/hardware/ff571034.aspx>
 
 <a name="Device.Network.LAN.VXLAN"></a>
-# Device.Network.LAN.VXLAN
+## Device.Network.LAN.VXLAN
 
-## Device.Network.LAN.VXLAN.VXLANPacketTaskOffloads
+### Device.Network.LAN.VXLAN.VXLANPacketTaskOffloads
 
 <table>
 <tr>
@@ -1343,9 +1351,9 @@ This requirement only applies to Ethernet devices that implement VXLAN encapsula
  - VMQ
 
 <a name="Device.Network.LAN"></a>
-# Device.Network.LAN
+## Device.Network.LAN
 
-## Device.Network.LAN.CloudStress
+### Device.Network.LAN.CloudStress
 
 *Ethernet Devices that implement GRE Encapsulated Packet Task Offloads must comply with the specification.*
 

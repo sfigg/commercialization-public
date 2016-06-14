@@ -1,3 +1,11 @@
+---
+title: Device.Input.HID
+Description: 'All HID devices connected over I2C must comply with Microsoft HID I2C Protocol specification.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Input.HID
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.Input.HID"></a>
-# Device.Input.HID
+## Device.Input.HID
 
-## Device.Input.HID.I2CProtocolSpecCompliant
+### Device.Input.HID.I2CProtocolSpecCompliant
 
 *All HID devices connected over I2C must comply with Microsoft HID I2C Protocol specification.*
 
@@ -34,7 +42,7 @@ See Microsoft published HID I2C protocol specification (link not provided yet)
 Exceptions:
 This requirement is only enforced for HID I2C devices and not generalized for SPB.
 
-## Device.Input.HID.UsbSpecificationCompliant
+### Device.Input.HID.UsbSpecificationCompliant
 
 *All HID devices that are connected over USB must comply with the USB HID Specification (V1.1 or later).*
 

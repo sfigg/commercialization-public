@@ -1,8 +1,14 @@
-Hardware Compatibility Specification for Components and Peripherals for Windows 10
-==================================================================================
+---
+title: Hardware Compatibility Specification for Components and Peripherals for Windows 10 1606
+Description: 'This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10 1606.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
 
-This section of the documentation provides specifications for hardware compatibility
-of components and peripherals with computers running Windows 10 as of June 2016.
+# Hardware Compatibility Specification for Components and Peripherals for Windows 10 1606
+
+This section of the documentation provides specifications for hardware compatibility of components and peripherals with computers running Windows 10 1606.
 
 These specifications are divided into the following categories and topics:
 
