@@ -3949,3 +3949,5 @@
 ### [IoT Core OS Update](service/iot/iot-core-update.md)
 ### [Manage IoT Core device updates](service/iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](service/iot/updating-iot-core-apps.md)
+
+## [Dashboard Services](https://msdn.microsoft.com/en-us/library/windows/hardware/br230803(v=vs.85).aspx)
