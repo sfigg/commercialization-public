@@ -9,7 +9,7 @@ title: 'DISM Operating System Package (.cab or .msu) Servicing Command-Line Opti
 # DISM Operating System Package (.cab or .msu) Servicing Command-Line Options
 
 
-Use DISM with Windows cabinet (.cab) or Windows Update Stand-alone Installer (.msu) files to install or remove updates, service packs, language packs, and to enable or disable Windows features. You can do this on either offline or on a running Windows installation. Features are optional components for the core operating system.
+Use DISM with Windows cabinet (.cab) or Windows Update Stand-alone Installer (.msu) files to install or remove updates, service packs, language packs, and to enable or disable Windows features. Features are optional components for the core operating system. 
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -103,13 +103,15 @@ Dism /Image:C:\test\offline /Get-PackageInfo /PackageName:Microsoft.Windows.Calc
 
 ### <span id="_Add-Package__PackagePath___path_to_cabfile____IgnoreCheck_____PreventPending_"></span><span id="_add-package__packagepath___path_to_cabfile____ignorecheck_____preventpending_"></span><span id="_ADD-PACKAGE__PACKAGEPATH___PATH_TO_CABFILE____IGNORECHECK_____PREVENTPENDING_"></span>/Add-Package 
 
-Installs a specified .cab or .msu package in the image. Multiple packages can be added on one command line. The applicability of each package will be checked. If the package is cannot be applied to the specified image, you will receive an error message. Use the /IgnoreCheck argument if you want the command to process without checking the applicability of each package.
+Installs a specified .cab or .msu package in the image. An .msu package is supported only when the target image is offline, either mounted or applied. 
+
+Multiple packages can be added on one command line. The applicability of each package will be checked. If the package cannot be applied to the specified image, you will receive an error message. Use the /IgnoreCheck argument if you want the command to process without checking the applicability of each package.
 
 Use the /PreventPending option to skip the installation of the package if the package or Windows image has pending online actions. (Introduced in Windows 8/Windows PE 4.0).
 
 /PackagePath can point to:
 
--   A single .cab or .msu file.
+-   A single .cab or .msu file.  
 
 -   A folder that contains a single expanded .cab file.
 
