@@ -1,3 +1,11 @@
+---
+title: Device.BusController.UsbController
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.BusController.UsbController
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.BusController.UsbController"></a>
-# Device.BusController.UsbController
+## Device.BusController.UsbController
 
-## Device.BusController.UsbController.ImplementAtLeastOneXhciSpcStructForUSB2
+### Device.BusController.UsbController.ImplementAtLeastOneXhciSpcStructForUSB2
 
 *xHCI controllers must implement at least one xHCI Supported Protocol Capability structure for USB 2.0.*
 
@@ -29,7 +37,7 @@ Extensible Host Controller Interface (xHCI) controllers must implement at least 
 
 This affects backward compatibility with USB 2.0.
 
-## Device.BusController.UsbController.MaintainDeviceStateOnResumeS1andS3
+### Device.BusController.UsbController.MaintainDeviceStateOnResumeS1andS3
 
 *USB host controller must maintain device state on resume from S1 or S3.*
 
@@ -75,7 +83,7 @@ See the Enhanced Host Controller Interface Specification for Universal Serial Bu
 This requirement does not apply to systems that support Connected Standby.
  
 
-## Device.BusController.UsbController.MustResumeWithoutForcedReset
+### Device.BusController.UsbController.MustResumeWithoutForcedReset
 
 *All USB host controllers must work properly upon resume from sleep, hibernation, or restart without a forced reset.*
 
@@ -99,7 +107,7 @@ All USB host controllers work properly upon resume from sleep, hibernation, or r
 
 A reset of the entire USB host controller results in significantly increased time that it takes for all USB devices to become available after system resume since there could be only one device at address 0 at a time, this enumeration has to be serialized for all USB devices on the bus. We have also seen that resetting the host controller can lead to an illegal SE1 signal state on some host controllers, which in turn can cause some USB devices to hang or drop off the bus. Moreover, devices cannot maintain any private state across sleep resume as that state will be lost on reset.
 
-## Device.BusController.UsbController.PreserveDeviceStateAfterDisableEnable
+### Device.BusController.UsbController.PreserveDeviceStateAfterDisableEnable
 
 *USB controller must preserve device states after a disable and re-enable.*
 
@@ -119,7 +127,7 @@ A reset of the entire USB host controller results in significantly increased tim
 
 If a USB controller is disabled and then re-enabled, all devices that were attached to the controller before the USB controller was disabled are required to be present after the USB controller is re-enabled.
 
-## Device.BusController.UsbController.UsbifCertification
+### Device.BusController.UsbController.UsbifCertification
 
 *USB host controller is USB IF certified.*
 
@@ -145,7 +153,7 @@ USB Type-C PD silicon (e.g., PD controller) must implement version 1.1 of the US
 
 Note: Since USB-IF is currently not certifying controllers for Windows on ARM systems, the Windows on ARM controllers are exempt from needing to get full USB-IF certification. Instead, the WoA controllers are expected to pass all Windows Hardware Certification tests which include eventing, loop back, and registers tests that get run as part of USB-IF certification.
 
-## Device.BusController.UsbController.UsbTypeCAltModeCertification
+### Device.BusController.UsbController.UsbTypeCAltModeCertification
 
 *USB Type-C Alternate Mode sub-systems are certified with their respective organizations.*
 
@@ -169,7 +177,7 @@ For example, if USB Type-C PD silicon supports DisplayPort Alternate Mode in add
 
 Certification for vendor-specific Alternate Modes is not required.
 
-## Device.BusController.UsbController.UsbTypeCUCM
+### Device.BusController.UsbController.UsbTypeCUCM
 
 *USB Type-C Sub-systems support UCM*
 
@@ -219,7 +227,7 @@ If the system or controller exposes dual role ports, the following additional re
 
  - UcmConnectorDataDirectionChanged
 
-## Device.BusController.UsbController.UsbTypeCUCSI
+### Device.BusController.UsbController.UsbTypeCUCSI
 
 *USB Type-C Sub-systems that support UCSI implement it correctly*
 
@@ -269,7 +277,7 @@ USB Type-C PD silicon (e.g., PD controller) that runs on Windows 10 and implemen
 
     -   Provider Capabilities Limited Reason
 
-## Device.BusController.UsbController.TestedUsingMicrosoftUsbStack
+### Device.BusController.UsbController.TestedUsingMicrosoftUsbStack
 
 *xHCI controllers must be tested with Microsoft's xHCI Stack installed.*
 
@@ -289,7 +297,7 @@ USB Type-C PD silicon (e.g., PD controller) that runs on Windows 10 and implemen
 
 Extensible Host Controller Interface (xHCI) controllers must be tested with Microsoft's xHCI stack installed and enabled on a Windows system. Support for all USB transfer types (ISoch, Interrupt, and Bulk) will be checked to ensure basic compatibility.
 
-## Device.BusController.UsbController.XhciAc64Bit
+### Device.BusController.UsbController.XhciAc64Bit
 
 *xHCI controllers must set the AC64-bit in the HCCPARAMS register to 1.*
 
@@ -321,7 +329,7 @@ The test will try writing one or more registers using a 64-bit register access a
 
 If AC64 is not set, there is nothing to test.
 
-## Device.BusController.UsbController.XhciAddInCardsMapPortsConsistently
+### Device.BusController.UsbController.XhciAddInCardsMapPortsConsistently
 
 *xHCI add-in cards must map USB 3.0 and USB 2.0 ports consistently.*
 
@@ -383,7 +391,7 @@ External Port numbers are assigned to meet the following properties (not defined
 
 Note that if there is no ACPI information, a root hub cannot have both an embedded USB2 device and an integrated USB2 hub; instead, the embedded device must be attached to the integrated hub.
 
-## Device.BusController.UsbController.XhciAddInCardsReportInternalDevices
+### Device.BusController.UsbController.XhciAddInCardsReportInternalDevices
 
 *xHCI controller add-in cards must correctly report internally attached devices.*
 
@@ -412,7 +420,7 @@ Extensible Host Controller Interface (xHCI) controllers must indicate internally
 
 Note: This requirement only applies to add-in cards because port mapping for integrated xHCI controllers should be performed via Advanced Configuration and Power Interface (ACPI).
 
-## Device.BusController.UsbController.XhciSupportDebuggingOnAllExposedPorts
+### Device.BusController.UsbController.XhciSupportDebuggingOnAllExposedPorts
 
 *xHCI controllers must support USB debugging on all exposed ports.*
 
@@ -437,7 +445,7 @@ Extensible Host Controller Interface (xHCI) host controllers are debug-capable o
 
 -   This requirement does not apply to add-in card host controllers. 
 
-## Device.BusController.UsbController.XhciSupportMsiMsixInterrupts
+### Device.BusController.UsbController.XhciSupportMsiMsixInterrupts
 
 *xHCI controllers must support MSI and/or MSI-X interrupts.*
 
@@ -457,7 +465,7 @@ Extensible Host Controller Interface (xHCI) host controllers are debug-capable o
 
 Extensible Host Controller Interface (xHCI) controllers support Message Signaled Interrupts (MSI) and MSI-X interrupts as defined in section 6.8 of the PCI Local Bus Specification, revision 3.0 and section 5.2.6 of the xHCI Specification.
 
-## Device.BusController.UsbController.XhciSupportsMinimum31Streams
+### Device.BusController.UsbController.XhciSupportsMinimum31Streams
 
 *xHCI controllers must support at least 31 primary streams per endpoint.*
 
@@ -481,7 +489,7 @@ This requirement is for the MaxPSASize in the HCCPARAMS to be set to 4 at the mi
 
 Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize streams to achieve faster data transfer rates.  To enable the best experience with these devices, every xHCI controller will need to support at least 31 primary streams.
 
-## Device.BusController.UsbController.XhciSupportsRuntimePowerManagement
+### Device.BusController.UsbController.XhciSupportsRuntimePowerManagement
 
 *USB xHCI host controllers must support runtime power management including, if implemented, runtime wake.*
 
@@ -513,7 +521,7 @@ To report whether the controller supports runtime wake signaling:
 - For add-in controllers, the controller's PCI configuration space must accurately report whether the controller is capable of waking up via PME.  Note: reporting that the controller supports waking up via PME implies that the controller can both successfully perform PCI wake at runtime, and successfully wake the system from a system low power state, in accordance with the appropriate PCI specification.
 - For integrated controllers, the ACPI \_S0W object must report whether the controller is capable of runtime wake signaling.
 
-## Device.BusController.UsbController.XhciVersionCompliant
+### Device.BusController.UsbController.XhciVersionCompliant
 
 *USB 3.0 controllers are XHCI version compliant.*
 

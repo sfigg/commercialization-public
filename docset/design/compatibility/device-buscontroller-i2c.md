@@ -1,3 +1,11 @@
+---
+title: Device.BusController.I2C
+Description: 'Requirements only for I2C controller silicon vendors. System manufacturers may optionally run these tests, but may need hardware customization.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.BusController.I2C
 
@@ -5,11 +13,11 @@
 -->
 
 <a name="Device.BusController.I2C"></a>
-# Device.BusController.I2C
+## Device.BusController.I2C
 
 *These requirements apply only to I2C controller silicon vendors. System manufacturers may optionally run these tests, but may need hardware customization.*
 
-## Device.BusController.I2C.CancellationOfIO
+### Device.BusController.I2C.CancellationOfIO
 
 *I2C controller and controller drivers must support the cancellation of I/O requests.*
 
@@ -30,7 +38,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Driver implements SPB request cancelation logic for read/write/sequence I/O.
 
-## Device.BusController.I2C.ClockStretching
+### Device.BusController.I2C.ClockStretching
 
 *I2C controller and controller drivers must support peripheral clock stretching.*
 
@@ -51,7 +59,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Controller can sustain peripheral holding clock for at least 2 seconds during read, write, and sequence I/O.
 
-## Device.BusController.I2C.HCKTestability
+### Device.BusController.I2C.HCKTestability
 
 *Systems with I2C controllers must expose correct ACPI table information and I2C pin-outs to enable HCK testability.*
 
@@ -78,7 +86,7 @@ Details:
 
 -   Other peripheral devices on the same I2C controller under test must be disabled when running HCK tests.
 
-## Device.BusController.I2C.IdlePowerManagement
+### Device.BusController.I2C.IdlePowerManagement
 
 *I2C controller and controller drivers must support Idle Power Management.*
 
@@ -103,7 +111,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Controller takes less than 75 ms (50+ 25 to account for the timer granularity of 15ms) to resume from the D3 state to the D0 state.
 
-## Device.BusController.I2C.LockUnlockIOCTL
+### Device.BusController.I2C.LockUnlockIOCTL
 
 *I2C controller and controller drivers must support the Lock/Unlock IOCTL.*
 
@@ -126,7 +134,7 @@ If the Stop condition is supported, the I2C controller and associated controller
 
 -   Generate the Start condition for the first I/O in the lock/unlock sequence, the Restart condition for subsequent I/O, and the Stop condition when Unlock is called.
 
-## Device.BusController.I2C.NACK
+### Device.BusController.I2C.NACK
 
 *I2C controller and controller drivers must support peripheral NACK.*
 
@@ -151,7 +159,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Controller can detect device NACK during a write operation of a sequence IOCTL, complete the request with STATUS\_SUCCESS, and information bytes is set to number of bytes that is less than what was intended to be written.
 
-## Device.BusController.I2C.SPBRead
+### Device.BusController.I2C.SPBRead
 
 *I2C controller and controller drivers must support SPB Read operations correctly.*
 
@@ -180,7 +188,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Fail any unsupported data size read request with STATUS\_INVALID\_PARAMETER and not cause any bus activities.
 
-## Device.BusController.I2C.SPBSequenceIOCTL
+### Device.BusController.I2C.SPBSequenceIOCTL
 
 *I2C controller and controller drivers must support SPB Sequence IOCTL correctly.*
 
@@ -207,7 +215,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Support any valid parameters (e.g., DelayInUs) and memory format (SIMPLE, MDL, Buffer list etc.) as defined by SPB.
 
-## Device.BusController.I2C.SPBWrite
+### Device.BusController.I2C.SPBWrite
 
 *I2C controller and controller drivers must support SPB Write operations correctly.*
 
@@ -236,7 +244,7 @@ The I2C controller and associated controller driver must conform to the SPB fram
 
 -   Fail any unsupported data size write request with STATUS\_INVALID\_PARAMETER and not cause any bus activities.
 
-## Device.BusController.I2C.Stress
+### Device.BusController.I2C.Stress
 
 *I2C controller and controller driver must operate correctly and recovers from bus hangs or faults under prolonged stress conditions.*
 

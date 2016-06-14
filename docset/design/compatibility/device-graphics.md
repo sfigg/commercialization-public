@@ -1,3 +1,11 @@
+---
+title: Device.Graphics
+Description: 'Requirements for the base feature set required of all graphic devices.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Graphics
 
  - [Device.Graphics.AdapterBase](#Device.Graphics.AdapterBase)
@@ -68,11 +76,11 @@
  - [Device.Graphics.WDDM21](#Device.Graphics.WDDM21)
 
 <a name="Device.Graphics.AdapterBase"></a>
-# Device.Graphics.AdapterBase
+## Device.Graphics.AdapterBase
 
 *The base feature set required by all graphic devices.*
 
-## Device.Graphics.AdapterBase.ApplicationVerifier
+### Device.Graphics.AdapterBase.ApplicationVerifier
 
 *Graphics driver components must comply with the Application Verifier test criteria.*
 
@@ -109,7 +117,7 @@ These Application Verifier tests must be turned on for the processes during test
 -   tls
 -   hangs
 
-## Device.Graphics.AdapterBase.DriverVersion
+### Device.Graphics.AdapterBase.DriverVersion
 
 *The driver files for a graphics adapter or chipset have properly formatted file versions.*
 
@@ -233,7 +241,7 @@ NOTE: There is no requirement to pad numbers with leading zeros, i.e., 123 does 
 
 A mandatory test in the HLK certification playlist for Windows 10 builds higher than 10586 will enforce the rules above. The test will be optional for older OS versions. For Windows 10 builds after 10586 the WDDM version has been updated to 2.1. Another way to view this is that the mandatory requirement only applies to drivers that are built for WDDM 2.1 or higher.
 
-## Device.Graphics.AdapterBase.PowerManagementCompliance
+### Device.Graphics.AdapterBase.PowerManagementCompliance
 
 *A graphics adapter must comply with VESA and ACPI power management specifications to enable system sleep.*
 
@@ -259,7 +267,7 @@ To ensure correct implementation of operating system-controlled power management
 
 -   \*VESA BIOS Power Management Functions, which defines extensions to VGA ROM BIOS services for power management. (\*This line does not apply to UEFI GOP based platforms.)
 
-## Device.Graphics.AdapterBase.RegistryEntries
+### Device.Graphics.AdapterBase.RegistryEntries
 
 *An application that installs the device driver for a graphics device must create the required registry entries.*
 
@@ -316,7 +324,7 @@ The following INF directives must be included in the INF:
 
 The Driver DLL must have a properly formatted file version as defined in the requirement Device.Graphics.AdapterBase.DriverVersion.
 
-## Device.Graphics.AdapterBase.RunFromDriverStore
+### Device.Graphics.AdapterBase.RunFromDriverStore
 
 *The driver files for a graphics adapter or chipset are loaded from the Driver Store.*
 
@@ -346,7 +354,7 @@ An additional benefit is that it reduces the disk footprint because drivers must
 
 The settings in the driver information file (.inf) will be verified by an HLK test for Windows 10 builds higher than 10586.
 
-## Device.Graphics.AdapterBase.SubsystemResettable
+### Device.Graphics.AdapterBase.SubsystemResettable
 
 *A graphics subsystem must be resettable to a normal operational state.*
 
@@ -372,7 +380,7 @@ Hybrid system should be able to handle TDR just like non-hybrid system and have 
 
 The ability to reset the GPU is independent of the current working state of the system.
 
-## Device.Graphics.AdapterBase.Symbols
+### Device.Graphics.AdapterBase.Symbols
 
 *Symbols must be submitted along with the driver for certification*
 
@@ -403,7 +411,7 @@ Device.Graphics.AdapterRender
 
 *The Render feature of a graphics device.*
 
-## Device.Graphics.AdapterRender.MinimumDirectXLevel
+### Device.Graphics.AdapterRender.MinimumDirectXLevel
 
 *A graphics adapter must implement the minimum hardware acceleration capabilities.*
 
@@ -432,7 +440,7 @@ The display subsystem is required to implement the DirectX 9 hardware specificat
 
 NOTE: For Windows Server, graphics drivers are optional. Display Only graphics drivers do not render so they do not have a minimum DirectX requirement. If a Full Graphics driver is loaded on a server, then it must conform to the minimum DirectX feature level.
 
-## Device.Graphics.AdapterRender.RGBFrameBuffer
+### Device.Graphics.AdapterRender.RGBFrameBuffer
 
 *A display chipset must implement the specified component order and endian representation for an 8-bpp or greater integer RGB frame buffer formats.*
 
@@ -451,7 +459,7 @@ NOTE: For Windows Server, graphics drivers are optional. Display Only graphics d
 
 For an N-bit-per-component RGB frame buffer format, the lowest N bits must contain the blue component, the next N bits must contain the green component, the next N bits must contain the red component, and the remaining 32-(3 x N) bits may contain alpha. The resulting 32-bit value must be stored in memory in little-endian format.
 
-## Device.Graphics.AdapterRender.YUVSupport
+### Device.Graphics.AdapterRender.YUVSupport
 
 *A display driver that supports YUV textures must process textures and functions correctly.*
 
@@ -471,11 +479,11 @@ For an N-bit-per-component RGB frame buffer format, the lowest N bits must conta
 If the hardware supports YUV texture surfaces and the capability is reported, then the driver must be able to process these surfaces without any intermediate transforms and function correctly.
 
 <a name="Device.Graphics.AdapterRender.D3D101Core"></a>
-# Device.Graphics.AdapterRender.D3D101Core
+## Device.Graphics.AdapterRender.D3D101Core
 
 *D3D 10.1 core feature *
 
-## Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary
+### Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary
 
 *If the graphics device supports Direct3D 10.1, it must comply with the Direct3D 10.1 and DXGI Specifications.*
 
@@ -500,11 +508,11 @@ Since Direct3D 10.1 is a superset of Direct3D 10, the implementation of Direct3D
 All features required by this specification must be exposed by the device driver including those features defined for the DXGI DDI header. 
 
 <a name="Device.Graphics.AdapterRender.D3D101WDDM11"></a>
-# Device.Graphics.AdapterRender.D3D101WDDM11
+## Device.Graphics.AdapterRender.D3D101WDDM11
 
 *D3D 10.1 core feature with WDDM 1.1 additions*
 
-## Device.Graphics.AdapterRender.D3D101WDDM11.D3D101v11Primary
+### Device.Graphics.AdapterRender.D3D101WDDM11.D3D101v11Primary
 
 *If a WDDM 1.1 graphics device supports Direct3D 10.1, it must comply with the Direct3D 10.1 and DXGI Specifications and support BGRA.*
 
@@ -531,11 +539,11 @@ Since Direct3D 10.1 is a superset of Direct3D 10, implementation of Direct3D 10.
 All features required by this specification must be exposed by the device driver including those features defined for the DXGI DDI header. 
 
 <a name="Device.Graphics.AdapterRender.D3D101WDDM12"></a>
-# Device.Graphics.AdapterRender.D3D101WDDM12
+## Device.Graphics.AdapterRender.D3D101WDDM12
 
 *D3D 10.1 core feature with WDDM 1.2 additions*
 
-## Device.Graphics.AdapterRender.D3D101WDDM12.D3D101v12Primary
+### Device.Graphics.AdapterRender.D3D101WDDM12.D3D101v12Primary
 
 *If a WDDM 1.2 graphics device supports Direct3D 10.1, it must comply with the Direct3D 10.1, DXGI and D3D10 portion of the Direct3D 11.1 Feature Specifications.*
 
@@ -568,11 +576,11 @@ All features required by this specification must be exposed by the device driver
  
 
 <a name="Device.Graphics.AdapterRender.D3D10ComputeShader"></a>
-# Device.Graphics.AdapterRender.D3D10ComputeShader
+## Device.Graphics.AdapterRender.D3D10ComputeShader
 
 *Direct3D 10 Shader Model 4\_\* Compute Shader Functionality*
 
-## Device.Graphics.AdapterRender.D3D10ComputeShader.D3D10CoreC
+### Device.Graphics.AdapterRender.D3D10ComputeShader.D3D10CoreC
 
 *If the graphics hardware implements Direct3D 10 Shader Model 4\_\* Compute Shader Functionality, it must conform to the D3D11 hardware specifications.*
 
@@ -593,11 +601,11 @@ All features required by this specification must be exposed by the device driver
 The D3D11 Specification allows for optionally implementing Shader Model 4\_\* Compute Shader functionality on Direct3D 10 hardware.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D10Core"></a>
-# Device.Graphics.AdapterRender.D3D10Core
+## Device.Graphics.AdapterRender.D3D10Core
 
 *D3D 10 core feature *
 
-## Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary
+### Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary
 
 *If a graphics device supports Direct3D 10, it must comply with the Direct3D 10 and DXGI specifications.*
 
@@ -628,11 +636,11 @@ All features required by this specification must be exposed by the device driver
 -   Render to volume
 
 <a name="Device.Graphics.AdapterRender.D3D10D3D11LogicOps"></a>
-# Device.Graphics.AdapterRender.D3D10D3D11LogicOps
+## Device.Graphics.AdapterRender.D3D10D3D11LogicOps
 
 *D3D10-D3D11 Logic Ops*
 
-## Device.Graphics.AdapterRender.D3D10D3D11LogicOps.D3D10CoreD
+### Device.Graphics.AdapterRender.D3D10D3D11LogicOps.D3D10CoreD
 
 *If the graphics hardware implements Logic Ops functionality, it must conform to the D3D11 hardware specifications.*
 
@@ -653,11 +661,11 @@ All features required by this specification must be exposed by the device driver
 The D3D11.1 Specification allows for optionally implementing Logic Ops functionality on D3D10, D3D10.1 and D3D11 hardware.   If the hardware supports and exposes support for this functionality, it must conform to the specifications for this feature as defined in the *D3D11.1 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D10Multisampling4X"></a>
-# Device.Graphics.AdapterRender.D3D10Multisampling4X
+## Device.Graphics.AdapterRender.D3D10Multisampling4X
 
 *D3D10 Multisampling (4X)*
 
-## Device.Graphics.AdapterRender.D3D10Multisampling4X.D3D10CoreA
+### Device.Graphics.AdapterRender.D3D10Multisampling4X.D3D10CoreA
 
 *If the graphics hardware implements D3D10 4x Multisampling, it must conform to the D3D10 hardware specifications.*
 
@@ -678,11 +686,11 @@ The D3D11.1 Specification allows for optionally implementing Logic Ops functiona
 The D3D10 Specification allows for optionally implementing 4X Multisampling.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D10 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D10Multisampling8X"></a>
-# Device.Graphics.AdapterRender.D3D10Multisampling8X
+## Device.Graphics.AdapterRender.D3D10Multisampling8X
 
 *Direct3D 10 Multisampling (8X)
 
-## Device.Graphics.AdapterRender.D3D10Multisampling8X.D3D10CoreB
+### Device.Graphics.AdapterRender.D3D10Multisampling8X.D3D10CoreB
 
 *If the graphics hardware implements Direct3D 10 8X Multisampling, then it must conform to the Direct3D 10 hardware specifications.*
 
@@ -703,11 +711,11 @@ The D3D10 Specification allows for optionally implementing 4X Multisampling.  
 The D3D10 Specification allows for optionally implementing 8X Multisampling.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D10 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D10WDDM11"></a>
-# Device.Graphics.AdapterRender.D3D10WDDM11
+## Device.Graphics.AdapterRender.D3D10WDDM11
 
 *D3D 10 core feature with WDDM 1.1 additions*
 
-## Device.Graphics.AdapterRender.D3D10WDDM11.D3D10v11Primary
+### Device.Graphics.AdapterRender.D3D10WDDM11.D3D10v11Primary
 
 *If the graphics hardware implements Direct3D 10 and the driver is WDDM1.1, it must comply with the Direct3D 10 and DXGI Specifications and support BGRA.*
 
@@ -740,11 +748,11 @@ All features required by this specification must be exposed by the device driver
 -   Render to volume
 
 <a name="Device.Graphics.AdapterRender.D3D10WDDM12"></a>
-# Device.Graphics.AdapterRender.D3D10WDDM12
+## Device.Graphics.AdapterRender.D3D10WDDM12
 
 *D3D 10 core feature with WDDM 1.2 additions*
 
-## Device.Graphics.AdapterRender.D3D10WDDM12.D3D10v12Primary
+### Device.Graphics.AdapterRender.D3D10WDDM12.D3D10v12Primary
 
 *If the graphics hardware implements Direct3D 10 and the Driver is WDDM1.2, it must comply with the Direct3D 10, DXGI, and the D3D10 additions in the Direct3D 11.1 Feature Specifications.*
 
@@ -781,7 +789,7 @@ All features required by this specification must be exposed by the device driver
 -   Render to cube map
 -   Render to volume
 
-## Device.Graphics.AdapterRender.D3D10WDDM12.Stereoscopic3DArraySupport
+### Device.Graphics.AdapterRender.D3D10WDDM12.Stereoscopic3DArraySupport
 
 *WDDM1.2 drivers must support Stereoscopic 3D in D3D by adding expanded array support.*
 
@@ -819,11 +827,11 @@ Note that drivers must support extended array for Stereo 3D APIs, but for fullsc
  
 
 <a name="Device.Graphics.AdapterRender.D3D111Core"></a>
-# Device.Graphics.AdapterRender.D3D111Core
+## Device.Graphics.AdapterRender.D3D111Core
 
 *D3D 11.1 core feature *
 
-## Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary
+### Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary
 
 *If a graphics device supports Direct3D 11.1, it must comply with the Direct3D 11.1 and DXGI Specifications.*
 
@@ -849,9 +857,9 @@ Direct3D 11.1 is a superset of Direct3D 11 (which is a strict superset of Direct
 All features required by this specification must be exposed by the device driver, including those features defined for the DXGI DDI header. 
 
 <a name="Device.Graphics.AdapterRender.D3D11ASTC"></a>
-# Device.Graphics.AdapterRender.D3D11ASTC
+## Device.Graphics.AdapterRender.D3D11ASTC
 
-## Device.Graphics.AdapterRender.D3D11ASTC.CoreRequirement
+### Device.Graphics.AdapterRender.D3D11ASTC.CoreRequirement
 
 <table>
 <tr>
@@ -885,9 +893,9 @@ D3D11 drivers that implement ASTC LDR support must support sampling from all 2D 
 -   DXGI\_FORMAT\_12X12
 
 <a name="Device.Graphics.AdapterRender.D3D11ConservativeRasterization"></a>
-# Device.Graphics.AdapterRender.D3D11ConservativeRasterization
+## Device.Graphics.AdapterRender.D3D11ConservativeRasterization
 
-## Device.Graphics.AdapterRender.D3D11ConservativeRasterization.CoreRequirement
+### Device.Graphics.AdapterRender.D3D11ConservativeRasterization.CoreRequirement
 
 <table>
 <tr>
@@ -922,11 +930,11 @@ Display drivers for Direct3D 11 should implement DDIs related to Conservative Ra
 For additional details, refer to the Conservative Rasterization spec.
 
 <a name="Device.Graphics.AdapterRender.D3D11Core"></a>
-# Device.Graphics.AdapterRender.D3D11Core
+## Device.Graphics.AdapterRender.D3D11Core
 
 *D3D 11 core feature *
 
-## Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary
+### Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary
 
 *If a graphics device implements Direct3D 11, it must comply with the Direct3D 11 and DXGI Specifications.*
 
@@ -951,11 +959,11 @@ Since Direct3D 11 is a superset of Direct3D 10, implementation of Direct 3D 11 a
 All features required by this specification must be exposed by the device driver including those features defined for the DXGI DDI header.
 
 <a name="Device.Graphics.AdapterRender.D3D11DoublePrecisionShader"></a>
-# Device.Graphics.AdapterRender.D3D11DoublePrecisionShader
+## Device.Graphics.AdapterRender.D3D11DoublePrecisionShader
 
 *Direct3D 11 Double Precision Shader Functionality*
 
-## Device.Graphics.AdapterRender.D3D11DoublePrecisionShader.D3D11CoreC
+### Device.Graphics.AdapterRender.D3D11DoublePrecisionShader.D3D11CoreC
 
 *If the graphics hardware implements Direct3D 11 Double Precision, it must conform to the feature specification as outlined in the D3D11 hardware specification.*
 
@@ -976,11 +984,11 @@ All features required by this specification must be exposed by the device driver
 The D3D11 Specification allows for optionally implementing Double Precision Shader functionality on Direct3D 11 hardware.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D11DriverCommandLists"></a>
-# Device.Graphics.AdapterRender.D3D11DriverCommandLists
+## Device.Graphics.AdapterRender.D3D11DriverCommandLists
 
 *Direct3D 11 Driver Command Lists*
 
-## Device.Graphics.AdapterRender.D3D11DriverCommandLists.D3D11CoreB
+### Device.Graphics.AdapterRender.D3D11DriverCommandLists.D3D11CoreB
 
 *If the graphics hardware implements the Direct3D 11 driver command list, it must conform to the feature specification as defined in the D3D11 hardware specification.*
 
@@ -1001,11 +1009,11 @@ The D3D11 Specification allows for optionally implementing Double Precision Shad
 The D3D11 Specification allows for optionally implementing DriverCommandListfunctionality on Direct3D 11 hardware. If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the D3D11 Hardware Specification.
 
 <a name="Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation"></a>
-# Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation
+## Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation
 
 *Direct3D 11 Driver Concurrent Object Creation*
 
-## Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation.D3D11CoreA
+### Device.Graphics.AdapterRender.D3D11DriverConcurrentObjectCreation.D3D11CoreA
 
 *If the graphics hardware implements the Direct3D 11 Driver Concurrent Object Creation, it must conform to the feature specification as defined in the D3D11 hardware specification.*
 
@@ -1026,11 +1034,11 @@ The D3D11 Specification allows for optionally implementing DriverCommandListfunc
 The D3D11 Specification allows for optionally implementing Driver Concurrent Object creation functionality on Direct3D 11 hardware.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11 Hardware Specification*. 
 
 <a name="Device.Graphics.AdapterRender.D3D11Level9WDDM12"></a>
-# Device.Graphics.AdapterRender.D3D11Level9WDDM12
+## Device.Graphics.AdapterRender.D3D11Level9WDDM12
 
 *WDDM 1.2 updates to the D3D9 UM DDI*
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM12.D3D9UMDDIUpdate
+### Device.Graphics.AdapterRender.D3D11Level9WDDM12.D3D9UMDDIUpdate
 
 *If the graphics hardware driver implements the WDDM1.2 specification, it must include the D3D9 User Mode DDI additions as defined by the D3D11.1 API/DDI Specification.*
 
@@ -1052,11 +1060,11 @@ A WDDM 1.2 graphics driver is required to implement the D3D9 Adapter DDI and D3D
  
 
 <a name="Device.Graphics.AdapterRender.D3D11Level9WDDM13"></a>
-# Device.Graphics.AdapterRender.D3D11Level9WDDM13
+## Device.Graphics.AdapterRender.D3D11Level9WDDM13
 
 WDDM1.3 updates to the D3D9 UM DDI
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM13.LargeCaptureTextures
+### Device.Graphics.AdapterRender.D3D11Level9WDDM13.LargeCaptureTextures
 
 *Direct3D Large Capture Textures*
 
@@ -1080,7 +1088,7 @@ Graphics drivers must now gracefully fail (by returning a E\_INVALIDARG) CAPTURE
 
 Any CAPTURE textures that are approved for creation must behave identical to CAPTURE textures as they are defined.
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM13.Level9Instancing
+### Device.Graphics.AdapterRender.D3D11Level9WDDM13.Level9Instancing
 
 *Level 9 Instancing*
 
@@ -1100,7 +1108,7 @@ Any CAPTURE textures that are approved for creation must behave identical to CAP
 
 In Windows, the OS will be making increased use of D3D Instancing to reduce CPU/GPU usage. All WDDM1.3 drivers must support Instancing as described in the Feature Level 9\_3.
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM13.NativeStagingBuffers
+### Device.Graphics.AdapterRender.D3D11Level9WDDM13.NativeStagingBuffers
 
 *Level9 Native Staging Buffer Performance Validation*
 
@@ -1120,7 +1128,7 @@ In Windows, the OS will be making increased use of D3D Instancing to reduce CPU/
 
 Directx9 level graphics hardware that implement WDDM1.3 must support the D3D9 Native Staging buffers DDI.
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM13.NativeUpdateSubresource
+### Device.Graphics.AdapterRender.D3D11Level9WDDM13.NativeUpdateSubresource
 
 *Direct3D Level9 Native UpdateSubresource*
 
@@ -1140,7 +1148,7 @@ Directx9 level graphics hardware that implement WDDM1.3 must support the D3D9 Na
 
 For Windows, the Direct3D9 DDI spec will include native support for the UpdateSubresource DDI. When D3D9-level parts implement this DDI, the UpdateSubresource API calls for a given amount of memory must be executed no slower than a CPU copy operation.
 
-## Device.Graphics.AdapterRender.D3D11Level9WDDM13.TimestampCounterSupport
+### Device.Graphics.AdapterRender.D3D11Level9WDDM13.TimestampCounterSupport
 
 *Direct3D Level9 Timestamps and Counters*
 
@@ -1167,11 +1175,11 @@ Timestamp Query support will be made mandatory for all 9-level WDDM 1.3 drivers,
 Additionally, the CheckDounter and CheckCounterInfo Direct3D11 Counter DDIs must be supported.
 
 <a name="Device.Graphics.AdapterRender.D3D11PartialPrecision"></a>
-# Device.Graphics.AdapterRender.D3D11PartialPrecision
+## Device.Graphics.AdapterRender.D3D11PartialPrecision
 
 *D3D11 Partial Precision shader support*
 
-## Device.Graphics.AdapterRender.D3D11PartialPrecision.D3D11CoreE
+### Device.Graphics.AdapterRender.D3D11PartialPrecision.D3D11CoreE
 
 *If the graphic hardware implements the D3D11.1 Partial Precision Shader Functionality, it must conform to the feature specification as defined in the D3D11.1 hardware specification.*
 
@@ -1191,7 +1199,7 @@ Additionally, the CheckDounter and CheckCounterInfo Direct3D11 Counter DDIs must
 
 The D3D11.1 Specification allows for optionally implementing Partial Precision Shader functionality on D3D9, D3D10\*, and Direct3D 11 hardware with a WDDM 1.2 driver.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11.1 Hardware Specification*.  
 
-## Device.Graphics.AdapterRender.D3D11RasterizerOrderedViews.CoreRequirement 
+### Device.Graphics.AdapterRender.D3D11RasterizerOrderedViews.CoreRequirement 
 
 <table>
 <tr>
@@ -1208,9 +1216,9 @@ The D3D11.1 Specification allows for optionally implementing Partial Precision 
 **Description**:
 
 <a name="Device.Graphics.AdapterRender.D3D11StencilReference"></a>
-# Device.Graphics.AdapterRender.D3D11StencilReference
+## Device.Graphics.AdapterRender.D3D11StencilReference
 
-## Device.Graphics.AdapterRender.D3D11StencilReference.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D11StencilReference.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1233,9 +1241,9 @@ Display drivers for Direct3D11 should implement DDIs related to Pixel Shader Ste
 For additional information, refer to the [PS-Specified Stencil Ref spec](http://windowsteams/devx/GRFX/d3d/D3D%20Next%20Design/MQ%20Planning%20Documents/PS-Specified%20Stencil%20Reference%20Value%20-%20Unified%20Spec.docx?web=1).
 
 <a name="Device.Graphics.AdapterRender.D3D11TypedUAVLoads"></a>
-# Device.Graphics.AdapterRender.D3D11TypedUAVLoads
+## Device.Graphics.AdapterRender.D3D11TypedUAVLoads
 
-## Device.Graphics.AdapterRender.D3D11TypedUAVLoad.CoreRequirement
+### Device.Graphics.AdapterRender.D3D11TypedUAVLoad.CoreRequirement
 
 <table>
 <tr>
@@ -1260,11 +1268,11 @@ Display drivers for Direct3D11 should implement DDIs related to Typed UAV Loads:
 For more information, refer to the [Typed UAV Loads spec](http://windowsteams/devx/GRFX/d3d/D3D%20Next%20Design/MQ%20Planning%20Documents/UAV%20Typed%20Load%20Draft%20Specification.docx?web=1)
 
 <a name="Device.Graphics.AdapterRender.D3D11WDDM12"></a>
-# Device.Graphics.AdapterRender.D3D11WDDM12
+## Device.Graphics.AdapterRender.D3D11WDDM12
 
 *D3D 11 core feature with WDDM 1.2 additions*
 
-## Device.Graphics.AdapterRender.D3D11WDDM12.D3D11v12Primary
+### Device.Graphics.AdapterRender.D3D11WDDM12.D3D11v12Primary
 
 *If a WDDM 1.2 graphics device implements Direct3D 11, it must comply with the Direct3D 11, DXGI, and the D3D10 portion of the Direct3D 11.1 Features Specification.*
 
@@ -1296,11 +1304,11 @@ Please see the *Direct3D 11.1 Features Spec* for complete details of all new fea
 All features required by this specification must be exposed by the device driver, including those features defined for the DXGI DDI header.
 
 <a name="Device.Graphics.AdapterRender.D3D11WDDM12DoublePrecisionShader"></a>
-# Device.Graphics.AdapterRender.D3D11WDDM12DoublePrecisionShader
+## Device.Graphics.AdapterRender.D3D11WDDM12DoublePrecisionShader
 
 *Direct3D 11 Double Precision Shader Functionality with additional ops codes introduced with WDDM 1.2*
 
-## Device.Graphics.AdapterRender.D3D11WDDM12DoublePrecisionShader.D3D11v12C
+### Device.Graphics.AdapterRender.D3D11WDDM12DoublePrecisionShader.D3D11v12C
 
 *If the graphics hardware implements the Direct3D 11 Double Precision Shader Functionality with WDDM 1.2 driver additions, it must conform to the feature specifications as defined in the D3D11 hardware specification.*
 
@@ -1321,11 +1329,11 @@ All features required by this specification must be exposed by the device driver
 The D3D11 Specification allows for optionally implementing Double Precision Shader functionality on Direct3D 11 hardware.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11 Hardware Specification*.   For Windows, if a WDDM 1.2 Graphics device driver supports Double Precision Shader functionality, it is required to support the extended double precision math as described in the *Shader Model Improvements Specification*.
 
 <a name="Device.Graphics.AdapterRender.D3D11WDDM13"></a>
-# Device.Graphics.AdapterRender.D3D11WDDM13
+## Device.Graphics.AdapterRender.D3D11WDDM13
 
 *D3D11.1 Tiled Resource support*
 
-## Device.Graphics.AdapterRender.D3D11WDDM13.MapDefault
+### Device.Graphics.AdapterRender.D3D11WDDM13.MapDefault
 
 *Map Default*
 
@@ -1346,11 +1354,11 @@ The D3D11 Specification allows for optionally implementing Double Precision Shad
 For Direct3D Feature Level 11\_0 and higher parts, the WDDM1.3 drivers must allow mappable DEFAULT buffers to be created. Apps will be able to request these mappable resources by setting the CPU\_Read/CPU\_Write access flags as described in the WDDM1.3 spec. The mappable DEFAULT buffers should behave identically to existing DEFAULT buffers today from an API perspective (other than being able to be mapped). The mapping/CPU-access performance of mappable DEFAULT buffers should be comparable to STAGING buffers.
 
 <a name="Device.Graphics.AdapterRender.D3D11WDDM20"></a>
-# Device.Graphics.AdapterRender.D3D11WDDM20
+## Device.Graphics.AdapterRender.D3D11WDDM20
 
 
 
-## Device.Graphics.AdapterRender.D3D11WDDM20.CoreRequirement
+### Device.Graphics.AdapterRender.D3D11WDDM20.CoreRequirement
 
 <table>
 <tr>
@@ -1395,11 +1403,11 @@ For Direct3D Feature Level 11\_0 and higher parts, the WDDM1.3 drivers must allo
 
 
 <a name="Device.Graphics.AdapterRender.D3D11WDDM21"></a>
-# Device.Graphics.AdapterRender.D3D11WDDM21
+## Device.Graphics.AdapterRender.D3D11WDDM21
 
 WDDM 2.1 is an optional version level introduced for Windows 10 builds greater than 10586. If a driver implements WDDM 2.1 then it must implement all of the WDDM 2.1 Requirements. WDDM 2.0 drivers will continue to run on the newer Windows 10 builds.
 
-## Device.Graphics.AdapterRender.D3D11WDDM21.CoreRequirement (if implemented)
+### Device.Graphics.AdapterRender.D3D11WDDM21.CoreRequirement (if implemented)
 
 <table>
 <tr>
@@ -1430,9 +1438,9 @@ WDDM 2.1 is an optional version level introduced for Windows 10 builds greater t
 </ol>
 
 <a name="Device.Graphics.AdapterRender.D3D12ASTC"></a>
-# Device.Graphics.AdapterRender.D3D12ASTC
+## Device.Graphics.AdapterRender.D3D12ASTC
 
-## Device.Graphics.AdapterRender.D3D12ASTC.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12ASTC.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1472,9 +1480,9 @@ D3D12 drivers that implement ASTC LDR support must support sampling from all 2D 
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
 <a name="Device.Graphics.AdapterRender.D3D12ConservativeRasterization"></a>
-# Device.Graphics.AdapterRender.D3D12ConservativeRasterization
+## Device.Graphics.AdapterRender.D3D12ConservativeRasterization
 
-## Device.Graphics.AdapterRender.D3D12ConservativeRasterization.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12ConservativeRasterization.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1513,11 +1521,11 @@ For additional details, refer to the [Conservative Rasterization spec](http://wi
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
 <a name="Device.Graphics.AdapterRender.D3D12Core"></a>
-# Device.Graphics.AdapterRender.D3D12Core
+## Device.Graphics.AdapterRender.D3D12Core
 
 *D3D 12 core feature *
 
-## Device.Graphics.AdapterRender.D3D12Core.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12Core.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1673,9 +1681,9 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 
 <a name="Device.Graphics.AdapterRender.D3D12Multiadapter"></a>
-# Device.Graphics.AdapterRender.D3D12Multiadapter
+## Device.Graphics.AdapterRender.D3D12Multiadapter
 
-## 
+### 
 
 <table>
 <tr>
@@ -1705,7 +1713,7 @@ Note: This feature is Mandatory for a driver claiming to be D3D12 compliant driv
 
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
-## Device.Graphics.AdapterRender.D3D12RasterizerOrderedViews.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12RasterizerOrderedViews.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1732,9 +1740,9 @@ For additional details, refer to the [ROV spec](http://windowsteams/devx/GRFX/d3
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
 <a name="Device.Graphics.AdapterRender.D3D12StencilReference"></a>
-# Device.Graphics.AdapterRender.D3D12StencilReference
+## Device.Graphics.AdapterRender.D3D12StencilReference
 
-## Device.Graphics.AdapterRender.D3D12StencilReference.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12StencilReference.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1761,9 +1769,9 @@ For additional information, refer to the [PS-Specified Stencil Ref spec](http://
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
 <a name="Device.Graphics.AdapterRender.D3D12TypedUAVLoads"></a>
-# Device.Graphics.AdapterRender.D3D12TypedUAVLoads
+## Device.Graphics.AdapterRender.D3D12TypedUAVLoads
 
-## Device.Graphics.AdapterRender.D3D12TypedUAVLoad.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12TypedUAVLoad.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1793,9 +1801,9 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 
 
 <a name="Device.Graphics.AdapterRender.D312VolumeTiledResources"></a>
-# Device.Graphics.AdapterRender.D312VolumeTiledResources
+## Device.Graphics.AdapterRender.D312VolumeTiledResources
 
-## Device.Graphics.AdapterRender.D3D12VolumeTiledResources.CoreRequirement (If Implemented)
+### Device.Graphics.AdapterRender.D3D12VolumeTiledResources.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -1818,11 +1826,11 @@ Drivers reporting support for Volume Tiled Resources (via exposing Tiled Resourc
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
 
 <a name="Device.Graphics.IndirectDisplay.Wired"></a>
-# Device.Graphics.IndirectDisplay.Wired
+## Device.Graphics.IndirectDisplay.Wired
 
 *Display feature requirements for wired indirect displays.*
 
-## Device.Graphics.IndirectDisplay.Wired.Base
+### Device.Graphics.IndirectDisplay.Wired.Base
 
 *Requirements for a wired indirect display.*
 
@@ -1881,11 +1889,11 @@ Indirect displays must implement all required DDI’s listed for indirect displa
 HDCP support is optional but the device must implement OPM and have an appropriate OPM certificate.
 
 <a name="Device.Graphics.WDDM"></a>
-# Device.Graphics.WDDM
+## Device.Graphics.WDDM
 
 *The base feature set implemented by drivers supporting all versions of the WDDM.*
 
-## Device.Graphics.WDDM.Base
+### Device.Graphics.WDDM.Base
 
 *Graphics drivers must be implemented per the WDDM 1.0 spec.*
 
@@ -1921,7 +1929,7 @@ WDDM 1.0 introduces the following key requirements:
 
 **MSDN documentation is updated based on the WDDM 1.0 Specification. Please verify MSDN documentation for WDDM 1.0 requirements.**
 
-## Device.Graphics.WDDM.Checklist
+### Device.Graphics.WDDM.Checklist
 
 *All graphics devices must comply with base requirements checklist for graphics cards, chipsets, and drivers.*
 
@@ -1991,7 +1999,7 @@ All graphics cards must adhere to the following checklist:
 
 For more information on any of the items in the Details section, refer to the Windows Driver Kit and search for the relevant keywords.
 
-## Device.Graphics.WDDM.GPUFenceCommands
+### Device.Graphics.WDDM.GPUFenceCommands
 
 *A GPU that is capable of processing fence commands in the command queue must trigger an interrupt to the CPU when it consumes a fence command.*
 
@@ -2016,11 +2024,11 @@ When the hardware consumes a fence command, it must notify the operating system 
 See the Windows Driver Kit
 
 <a name="Device.Graphics.WDDM.Display"></a>
-# Device.Graphics.WDDM.Display
+## Device.Graphics.WDDM.Display
 
 *The base feature set implemented by drivers supporting all versions of the WDDM Display DDIs.*
 
-## Device.Graphics.WDDM.Display.Base
+### Device.Graphics.WDDM.Display.Base
 
 *Graphics drivers must be implemented per the WDDM 1.0 specification.*
 
@@ -2041,7 +2049,7 @@ See the Windows Driver Kit
 See requirement **Device.Graphics.WDDM.Base**
  
 
-## Device.Graphics.WDDM.Display.GammaCorrection
+### Device.Graphics.WDDM.Display.GammaCorrection
 
 *A graphics adapter must support gamma correction in hardware without using any additional graphics memory bandwidth.*
 
@@ -2068,7 +2076,7 @@ The LUT must implement at least 256 entries per component input for 8-bit color 
 This ability must be supported without requiring the use of graphics memory bandwidth. This ability must be supported for RGBA8888 and RGBA1010102 pixel formats.
  
 
-## Device.Graphics.WDDM.Display.HotPlugDetection
+### Device.Graphics.WDDM.Display.HotPlugDetection
 
 *A graphics adapter must reliably detect the connect and disconnect event of display devices.*
 
@@ -2105,7 +2113,7 @@ See the Windows Driver Kit: <http://msdn.microsoft.com/en-us/library/ff559522.as
 
 The following HPD methods are VESA standards: DVI HPD is covered in the VESA Plug and Play (PnP) Standard for the Display/Graphics Subsystem, Release A. DisplayPort HPD is covered in all versions of the DisplayPort standard.
 
-## Device.Graphics.WDDM.Display.I2CSupport
+### Device.Graphics.WDDM.Display.I2CSupport
 
 *A graphics device driver must have I2C support in WDDM.*
 
@@ -2131,7 +2139,7 @@ The following is the set of interfaces that every WDDM driver is required to imp
 These interfaces are documented in the WDK and can be found here: <http://msdn.microsoft.com/en-us/library/ff567386.aspx>.
 
 
-## Device.Graphics.WDDM.Display.Multimon
+### Device.Graphics.WDDM.Display.Multimon
 
 *If a graphics adapter supports more than 1 source and 1 target, it must support all multiple-monitor configurations in Windows.*
 
@@ -2174,11 +2182,11 @@ Multiple-monitor support is built into Windows; therefore, graphics drivers must
 It must be possible for a user to set all the configurations supported using the Windows Display Control Panel and by pressing the Win+P key combination.
 
 <a name="Device.Graphics.WDDM.DisplayRender"></a>
-# Device.Graphics.WDDM.DisplayRender
+## Device.Graphics.WDDM.DisplayRender
 
 *The base feature set implemented by drivers supporting all versions of the WDDM for both Display and Render DDIs.*
 
-## Device.Graphics.WDDM.DisplayRender.Base
+### Device.Graphics.WDDM.DisplayRender.Base
 
 *Graphics drivers must be implemented per the WDDM 1.0 specification.*
 
@@ -2198,7 +2206,7 @@ It must be possible for a user to set all the configurations supported using the
 
 See requirement **Device.Graphics.WDDM.Base**
 
-## Device.Graphics.WDDM.DisplayRender.DriverSetupCompatible
+### Device.Graphics.WDDM.DisplayRender.DriverSetupCompatible
 
 *Graphics drivers must be implemented per the WDDM 1.0 specification.*
 
@@ -2218,7 +2226,7 @@ See requirement **Device.Graphics.WDDM.Base**
 
 All WDDM graphics drivers being submitted for posting to Windows Update targeting Windows Client SKUs must install correctly on injection into the Windows OS image driver store during OS setup.
 
-## Device.Graphics.WDDM.DisplayRender.OutputProtection
+### Device.Graphics.WDDM.DisplayRender.OutputProtection
 
 *A display adapter must support output connectors with content protection features and provides control via Protected Media Path-Output Protection Manager (PVP-OPM) and Certified Output Protection Protocol (COPP).*
 
@@ -2272,7 +2280,7 @@ Cable Ready systems with CableCARD support with digital video outputs (for examp
 
 -   \* COPP, ACP, CGMS-A, analog TV-out, and SDTV support are required on x86 and x64 architectures and operating systems only.
 
-## Device.Graphics.WDDM.DisplayRender.Stability
+### Device.Graphics.WDDM.DisplayRender.Stability
 
 *All WDDM graphics drivers must not generate any hangs or faults under prolonged stress conditions.*
 
@@ -2295,11 +2303,11 @@ Graphics drivers must function properly, and not generate any hangs or faults th
 To "stress" a graphics driver, Comparative Reliability Analyzer for Software and Hardware (CRASH) launches and terminates other test applications to simulate real-world scenarios.
 
 <a name="Device.Graphics.WDDM.Render"></a>
-# Device.Graphics.WDDM.Render
+## Device.Graphics.WDDM.Render
 
 *The base feature set implemented by drivers supporting all versions of the WDDM Render DDIs.*
 
-## Device.Graphics.WDDM.Render.Base
+### Device.Graphics.WDDM.Render.Base
 
 *Graphics drivers must be implemented per the WDDM 1.0 specification.*
 
@@ -2319,7 +2327,7 @@ To "stress" a graphics driver, Comparative Reliability Analyzer for Software and
 
 See requirement **Device.Graphics.WDDM.Base**
 
-## Device.Graphics.WDDM.Render.VideoDecoding
+### Device.Graphics.WDDM.Render.VideoDecoding
 
 *Display drivers must support the DirectX VA 2.0 Video Decoder DDI.*
 
@@ -2383,7 +2391,7 @@ Finally, WDDM drivers must support Standardized AES 128 H.264\*\*\* and MPEG2, i
 
 \*\*\* Standardized AES 128 support is required on x86 and x64 architectures and operating systems only.
 
-## Device.Graphics.WDDM.Render.VideoProcessing (If Implemented)
+### Device.Graphics.WDDM.Render.VideoProcessing (If Implemented)
 
 *A display WDDM driver must support the DirectX VA 2.0 Video Processor DDI.*
 
@@ -2480,11 +2488,11 @@ Tolerance threshold: 50dB of quality difference between reference and DXVAHD mod
 Support for updated DX9 and DX10+ user mode DDIs as documented on Connect at: <https://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=47236>.
 
 <a name="Device.Graphics.WDDM11"></a>
-# Device.Graphics.WDDM11
+## Device.Graphics.WDDM11
 
 *The base feature set implemented by drivers supporting WDDM 1.1.*
 
-## Device.Graphics.WDDM11.Base
+### Device.Graphics.WDDM11.Base
 
 *A graphic driver that is written for a discrete graphic adapter or an integrated graphics adapter device must meet all requirements defined in the WDDM 1.1 specifications.*
 
@@ -2519,11 +2527,11 @@ WDDM 1.1 introduces the following key requirements over WDDM 1.0:
 **MSDN documentation is updated based on the WDDM 1.1 Specification. Please consult MSDN documentation for WDDM 1.1 requirements.**
 
 <a name="Device.Graphics.WDDM11.Display"></a>
-# Device.Graphics.WDDM11.Display
+## Device.Graphics.WDDM11.Display
 
 *The base feature set implemented by drivers supporting all versions of the WDDM Display DDIs.*
 
-## Device.Graphics.WDDM11.Display.Base
+### Device.Graphics.WDDM11.Display.Base
 
 *A graphic drivers that is written for a discrete graphic adapter or an integrated graphics adapter device must meet all requirements defined in the WDDM 1.1 specifications.*
 
@@ -2544,11 +2552,11 @@ WDDM 1.1 introduces the following key requirements over WDDM 1.0:
 See requirement **Device.Graphics.WDDM11.Base**
 
 <a name="Device.Graphics.WDDM11.DisplayRender"></a>
-# Device.Graphics.WDDM11.DisplayRender
+## Device.Graphics.WDDM11.DisplayRender
 
 *The base feature set implemented by drivers supporting all versions of the WDDM for both Display and Render DDIs.*
 
-## Device.Graphics.WDDM11.DisplayRender.Base
+### Device.Graphics.WDDM11.DisplayRender.Base
 
 *A graphic driver that is written for a discrete graphic adapter or an integrated graphics adapter device must meet all requirements defined in the WDDM 1.1 specifications.*
 
@@ -2569,11 +2577,11 @@ See requirement **Device.Graphics.WDDM11.Base**
 See requirement **Device.Graphics.WDDM11.Base**
 
 <a name="Device.Graphics.WDDM11.DisplayRender.D3D9Overlay"></a>
-# Device.Graphics.WDDM11.DisplayRender.D3D9Overlay
+## Device.Graphics.WDDM11.DisplayRender.D3D9Overlay
 
 *The optional feature implemented by WDDM 1.1 drivers and greater allowing for surfaces to be presented in a hardware overlay.*
 
-## Device.Graphics.WDDM11.DisplayRender.D3D9Overlay.D3D9Overlay
+### Device.Graphics.WDDM11.DisplayRender.D3D9Overlay.D3D9Overlay
 
 *A WDDM1.1 driver must support Direct3D 9 overlays.*
 
@@ -2600,11 +2608,11 @@ If the WDDM1.1 driver supports Direct3D 9 overlays, the video overlay presentati
 -   A WDDM v1.1 driver must support overlays in at least one valid configuration (Displaymode, OverlayFormat, Width, and Height) when called to DDICHECKOVERLAYSUPPORTDATA for supported overlay and the Max width and height of supported overlay must be greater than zero.
 
 <a name="Device.Graphics.WDDM11.Render"></a>
-# Device.Graphics.WDDM11.Render
+## Device.Graphics.WDDM11.Render
 
 *The base feature set implemented by drivers supporting all versions of the WDDM Render DDIs.*
 
-## Device.Graphics.WDDM11.Render.Base
+### Device.Graphics.WDDM11.Render.Base
 
 *A graphic driver that is written for a discrete graphic adapter or an integrated graphics adapter device must meet all requirements defined in the WDDM 1.1 specifications.*
 
@@ -2625,11 +2633,11 @@ If the WDDM1.1 driver supports Direct3D 9 overlays, the video overlay presentati
 See requirement **Device.Graphics.WDDM11.Base**
 
 <a name="Device.Graphics.WDDM11.Render.DXVAHD"></a>
-# Device.Graphics.WDDM11.Render.DXVAHD
+## Device.Graphics.WDDM11.Render.DXVAHD
 
 *The optional feature that is implemented by WDDM 1.1 drivers supporting the new state-based video processing DDIs.*
 
-## Device.Graphics.WDDM11.Render.DXVAHD.DXVAHD
+### Device.Graphics.WDDM11.Render.DXVAHD.DXVAHD
 
 *WDDM1.1 driver supports DXVA-HD*
 
@@ -2663,11 +2671,11 @@ Also the driver must support the following output formats ( D3DDDICAPS\_DXVAHD\_
 
 
 <a name="Device.Graphics.WDDM12"></a>
-# Device.Graphics.WDDM12
+## Device.Graphics.WDDM12
 
 *The base feature set implemented by drivers supporting WDDM 1.2.*
 
-## Device.Graphics.WDDM12.Base
+### Device.Graphics.WDDM12.Base
 
 *Graphics drivers must be implemented per the WDDM 1.2 specification.*
 
@@ -2907,11 +2915,11 @@ Also the driver must support the following output formats ( D3DDDICAPS\_DXVAHD\_
 </html>
 
 <a name="Device.Graphics.WDDM12.Display"></a>
-# Device.Graphics.WDDM12.Display
+## Device.Graphics.WDDM12.Display
 
 *Display feature requirements for all WDDM12 drivers that support the display specific DDIs*
 
-## Device.Graphics.WDDM12.Display.Base
+### Device.Graphics.WDDM12.Display.Base
 
 *Requirements for a WDDM graphics adapter to support display functionality*
 
@@ -2997,7 +3005,7 @@ The following DDI functions are required to be implemented by a Display Only dri
 
 \*\*\* **DxgkDdiRecommendFunctionalVidPn** is a required DDI. If the driver does not support any ACPI event, it should still supply this DDI.
 
-## Device.Graphics.WDDM12.Display.ContainerIDSupport
+### Device.Graphics.WDDM12.Display.ContainerIDSupport
 
 *A graphics adapter must support the DDI for Container ID.*
 
@@ -3019,7 +3027,7 @@ A graphics adapter must implement the **DxgkDdiGetDeviceContainer** DDI. Windows
 
 In case the Display device does not provide a Container ID, then Windows will automatically manufacture a Container ID for the display. The uniqueness of the Container ID is achieved by using the Manufacture ID, Product ID, and Serial number of the display obtained from the EDID. Using this information, a driver for another device can generate the same container ID as the display device by using the RtlGenerateClass5Guid function included in wdm.h.
 
-## Device.Graphics.WDDM12.Display.DisplayOutputControl
+### Device.Graphics.WDDM12.Display.DisplayOutputControl
 
 *Support for WDDM taking control of display output while the WDDM driver is running*
 
@@ -3080,7 +3088,7 @@ The following are the requirements for WDDM driver while implementing these DDIs
 
 -   It is recommended to use the CPU to write the image from source to the frame buffer since the bugcheck might be caused by repeated TDR and the GPU might be in an unknown condition.
 
-## Device.Graphics.WDDM12.Display.ModeEnumeration
+### Device.Graphics.WDDM12.Display.ModeEnumeration
 
 *Mode enumeration requirements*
 
@@ -3141,7 +3149,7 @@ The following are the requirements for WDDM driver while implementing these DDIs
 
 -   For more than 2 displays configured in extended mode, the graphics adapter may choose an appropriate set of modes to support based on available bandwidth.
 
-## Device.Graphics.WDDM12.Display.PnpStopStartSupport
+### Device.Graphics.WDDM12.Display.PnpStopStartSupport
 
 *Support for PnP Stop in WDDM*
 
@@ -3197,7 +3205,7 @@ The following are the requirements for the driver when implementing this DDI.
 
 -   The driver must ensure that visibility is set to "enabled" on the specified target.
 
-## Device.Graphics.WDDM12.Display.ProvideLinearFrameBuffer
+### Device.Graphics.WDDM12.Display.ProvideLinearFrameBuffer
 
 *A graphics device can provide a linear frame buffer usable by Windows.*
 
@@ -3226,11 +3234,11 @@ There are numerous scenarios where components in the Windows OS need to be able 
 4.  On BIOS systems using VBE 3.0 standards.
 
 <a name="Device.Graphics.WDDM12.DisplayOnly"></a>
-# Device.Graphics.WDDM12.DisplayOnly
+## Device.Graphics.WDDM12.DisplayOnly
 
 *The optional feature set implemented by WDDM 1.2 drivers that support only the display specific DDIs.*
 
-## Device.Graphics.WDDM12.DisplayOnly.Base
+### Device.Graphics.WDDM12.DisplayOnly.Base
 
 *Requirements for a WDDM graphics adapter to support display functionality*
 
@@ -3316,11 +3324,11 @@ Following DDI functions are required to be implemented by a Display Only driver.
 The only color format supported for display only drivers is D3DDDIFMT\_A8R8G8B8; therefore, these drivers should only enumerate source modes of this format.
 
 <a name="Device.Graphics.WDDM12.DisplayRender"></a>
-# Device.Graphics.WDDM12.DisplayRender
+## Device.Graphics.WDDM12.DisplayRender
 
 *The optional feature set implemented by WDDM 1.2 drivers supporting both display and render DDIs.*
 
-## Device.Graphics.WDDM12.DisplayRender.Base
+### Device.Graphics.WDDM12.DisplayRender.Base
 
 *Requirements for a WDDM graphics adapter implementing both Render and Display DDIs*
 
@@ -3442,11 +3450,11 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
  
 
 <a name="Device.Graphics.WDDM12.DisplayRender.ProcessingStereoscopicVideoContent"></a>
-# Device.Graphics.WDDM12.DisplayRender.ProcessingStereoscopicVideoContent
+## Device.Graphics.WDDM12.DisplayRender.ProcessingStereoscopicVideoContent
 
 *The optional feature set implemented by WDDM 1.2 drivers that support stereoscopic video processing.*
 
-## Device.Graphics.WDDM12.DisplayRender.ProcessingStereoscopicVideoContent.ProcessingStereoscopicVideoContent
+### Device.Graphics.WDDM12.DisplayRender.ProcessingStereoscopicVideoContent.ProcessingStereoscopicVideoContent
 
 *If a display adapter supports presentation and processing of stereoscopic video content, it must conform to the DXGI specification for Stereo 3D.*
 
@@ -3480,11 +3488,11 @@ Finally, the driver may optionally support new stereo processing features:
 For all optional content layouts and processing features, the driver must publish the appropriate cap to indicate if it supports the feature.
 
 <a name="Device.Graphics.WDDM12.DisplayRender.RuntimePowerMgmt"></a>
-# Device.Graphics.WDDM12.DisplayRender.RuntimePowerMgmt
+## Device.Graphics.WDDM12.DisplayRender.RuntimePowerMgmt
 
 *The optional feature set implemented by WDDM 1.2 drivers that support the runtime power management DDIs.*
 
-## Device.Graphics.WDDM12.DisplayRender.RuntimePowerMgmt.RuntimePowerMgmt
+### Device.Graphics.WDDM12.DisplayRender.RuntimePowerMgmt.RuntimePowerMgmt
 
 *If implemented - WDDM 1.2 drivers must use the new WDDM 1.2 GPU Power Management DDI for F-state and p-state power management.*
 
@@ -3506,11 +3514,11 @@ WDDM 1.2 drivers can optionally support F-state and p-state Power Management.
 For more details on the use of the SoC GPU Power Management WDDM v1.2 DDI, please refer to the Windows WDK documentation.
 
 <a name="Device.Graphics.WDDM12.Render"></a>
-# Device.Graphics.WDDM12.Render
+## Device.Graphics.WDDM12.Render
 
 *The base feature set implemented by WDDM 1.2 drivers that support the render specific DDIs.*
 
-## Device.Graphics.WDDM12.Render.Base
+### Device.Graphics.WDDM12.Render.Base
 
 *Requirements for a WDDM graphics adapter to support render functionality*
 
@@ -3590,7 +3598,7 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
  - DxgkDdiReleaseSwizzlingRange
  
 
-## Device.Graphics.WDDM12.Render.D3D11VideoDecoding
+### Device.Graphics.WDDM12.Render.D3D11VideoDecoding
 
 *A display driver must support the DirectX 11 Video Decoder DDI.*
 
@@ -3649,7 +3657,7 @@ Design Notes
 
 \*\*\* Standardized AES 128 support is required on x86 and x64 architectures and operating systems only.
 
-## Device.Graphics.WDDM12.Render.D3D11VideoProcessing
+### Device.Graphics.WDDM12.Render.D3D11VideoProcessing
 
 *A display driver must support the appropriate DDIs for DirectX 11 video processing.*
 
@@ -3774,7 +3782,7 @@ Depending on the feature level made available by the driver for Direct3D (e.g., 
 
 MPEG-2 support is required on x86 and x64 architectures and operating systems only.
 
-## Device.Graphics.WDDM12.Render.DirectFlip
+### Device.Graphics.WDDM12.Render.DirectFlip
 
 *A driver must support the DirectFlip DDI.*
 
@@ -3819,7 +3827,7 @@ When the SharedPrimaryTransition bit is set in the DXGK\_SETVIDVIDPNSOURCEADDRES
 
 -   Perform a seamless switch to the new primary indicated by the DDI.
 
-## Device.Graphics.WDDM12.Render.FlipOnVSyncMmIo
+### Device.Graphics.WDDM12.Render.FlipOnVSyncMmIo
 
 *WDDM1.2 drivers must support a memory mapped I/O (MMIO)-based flip that takes effect on the next vertical sync.*
 
@@ -3841,7 +3849,7 @@ All WDDM1.2 drivers must publish the FlipOnVSyncMmIo field as TRUE in the DXGK\_
 <http://msdn.microsoft.com/en-us/library/ff561069.aspx>.
  
 
-## Device.Graphics.WDDM12.Render.OfferReclaim
+### Device.Graphics.WDDM12.Render.OfferReclaim
 
 *WDDM 1.2 drivers must use the Offer and Reclaim DDI to reduce the memory footprint.*
 
@@ -3875,7 +3883,7 @@ Below are detailed sub-requirements:
 
 For more details on the use of the Offer and Reclaim WDDM v1.2 DDI, please refer to the Windows WDK documentation.
 
-## Device.Graphics.WDDM12.Render.PreemptionGranularity
+### Device.Graphics.WDDM12.Render.PreemptionGranularity
 
 *WDDM 1.2 drivers must report the granularity level of GPU Preemption.*
 
@@ -3906,7 +3914,7 @@ However, if the GPU does support Mid-DMA Buffer or Packet Preemption, then the W
 
 For more details on the use of the GPU Preemption WDDM v1.2 DDI, please refer to the Windows WDK documentation.
 
-## Device.Graphics.WDDM12.Render.PremiumContentPlayback
+### Device.Graphics.WDDM12.Render.PremiumContentPlayback
 
 *Protected Environment Signature requirement for WDDM1.2 drivers *
 
@@ -3941,7 +3949,7 @@ NameOfFile.dll = SignatureAttributes.PETrust
 PETrust=true
 ```
 
-## Device.Graphics.WDDM12.Render.TDRResiliency
+### Device.Graphics.WDDM12.Render.TDRResiliency
 
 *WDDM 1.2 drivers for GPUs that support Per-Engine Reset must implement the Windows DDI for TDR Resiliency.*
 
@@ -3980,7 +3988,7 @@ The WDDM 1.2 driver must do the following:
 
 For more details on the use of the GPU Preemption and TDR Improvements WDDM v1.2 DDI, please refer to the Windows WDK documentation.
 
-## Device.Graphics.WDDM12.Render.UMDLogging
+### Device.Graphics.WDDM12.Render.UMDLogging
 
 *WDDM 1.2 drivers must implement WDDM User-Mode Driver or UMD Logging to aid diagnosability.*
 
@@ -4024,7 +4032,7 @@ In addition to logging MapAllocation and UnmapAllocation events as they happen, 
 
 For more details on the use of the UMD Logging WDDM v1.2 DDI, please refer to the Windows WDK documentation.
 
-## Device.Graphics.WDDM12.Render.XPSRasterizationConformance
+### Device.Graphics.WDDM12.Render.XPSRasterizationConformance
 
 *WDDM 1.2 drivers must support XPS Rasterization.*
 
@@ -4045,11 +4053,11 @@ For more details on the use of the UMD Logging WDDM v1.2 DDI, please refer to th
 To ensure a quality printing experience on Windows, the WDDM1.2 graphic drivers must support XPS Rasterization.
 
 <a name="Device.Graphics.WDDM12.RenderOnly"></a>
-# Device.Graphics.WDDM12.RenderOnly
+## Device.Graphics.WDDM12.RenderOnly
 
 *The optional feature set implemented by WDDM 1.2 drivers which support only the render specific DDIs.*
 
-## Device.Graphics.WDDM12.RenderOnly.Base
+### Device.Graphics.WDDM12.RenderOnly.Base
 
 *Requirements for a WDDM graphics adapter to support render functionality*
 
@@ -4133,11 +4141,11 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
  
 
 <a name="Device.Graphics.WDDM12.StandbyHibernateFlags"></a>
-# Device.Graphics.WDDM12.StandbyHibernateFlags
+## Device.Graphics.WDDM12.StandbyHibernateFlags
 
 *The optional feature implemented by WDDM 1.2 drivers supporting the new stand by hibernation flags.*
 
-## Device.Graphics.WDDM12.StandbyHibernateFlags.StandbyHibernateFlags
+### Device.Graphics.WDDM12.StandbyHibernateFlags.StandbyHibernateFlags
 
 *WDDM v1.2 graphics drivers can optionally specify if they support the Windows optimized standby or hibernate flags.*
 
@@ -4158,11 +4166,11 @@ If the rendering hardware supports swizzling ranger, the driver should also supp
 To improve the performance on sleep & resume for standby and hibernate, a WDDM 1.2 driver can utilize the new StandbyHibernateFlags (PreservedDuringStandby, PreservedDuringHibernate, and PartiallyPreservedDuringHibernate). To utilize this feature, drivers must set one or more of the StandbyHibernateFlags when enumerating segment capabilities. Doing so indicates that eviction should be skipped during power state transition for the corresponding segments. Verification of memory retention during power transition will be verified for all WDDM 1.2 driver setting a StandbyHibernateFlag.
 
 <a name="Device.Graphics.WDDM13"></a>
-# Device.Graphics.WDDM13
+## Device.Graphics.WDDM13
 
 *The base feature set implemented by drivers supporting WDDM1.3.*
 
-## Device.Graphics.WDDM13.Base
+### Device.Graphics.WDDM13.Base
 
 *Graphic drivers must implement WDDM1.3.*
 
@@ -4429,11 +4437,11 @@ WDDM 1.3 is required for all new systems that are shipped with Windows 10.
 </html>
 
 <a name="Device.Graphics.WDDM13.DisplayRender"></a>
-# Device.Graphics.WDDM13.DisplayRender
+## Device.Graphics.WDDM13.DisplayRender
 
 *The parent feature node of requirements that have an impact for the display and render GPU.*
 
-## Device.Graphics.WDDM13.DisplayRender.48HzVideoPlayback
+### Device.Graphics.WDDM13.DisplayRender.48HzVideoPlayback
 
 *WDDM1.3 drivers must support 48 Hz Video Playback.*
 
@@ -4459,7 +4467,7 @@ Graphic Drivers implementing WDDM1.3 must implement DDIs that:
 
 The HCK test will validate that the refresh rate with within a 0.5% tolerance of the requested value, again assuming the graphics driver reports support for the particular refresh rate. This will be validated for devices *that report support for 48 Hz or 50 Hz through the capabilities DDI* through an HCK test, which is described in detail in the 48 Hz IHV spec.
 
-## Device.Graphics.WDDM13.DisplayRender.IndependentFlip
+### Device.Graphics.WDDM13.DisplayRender.IndependentFlip
 
 *IndependentFlip support*
 
@@ -4480,11 +4488,11 @@ The HCK test will validate that the refresh rate with within a 0.5% tolerance of
 All WDDM 1.3 drivers MUST support independentFlip. As such, all WDDM 1.3 drives MUST set the UINT FlipIndependent member to 1 in the updated DXGK\_FLIPCAPS structure. See the IndependentFlip DDI Document for more details about the updated DXGK\_FLIPCAPS structure.
 
 <a name="Device.Graphics.WDDM13.DisplayRender.CoolingInterface"></a>
-# Device.Graphics.WDDM13.DisplayRender.CoolingInterface
+## Device.Graphics.WDDM13.DisplayRender.CoolingInterface
 
 *Feature for Thermal Hints*
 
-## Device.Graphics.WDDM13.DisplayRender.CoolingInterface.ThermalHints
+### Device.Graphics.WDDM13.DisplayRender.CoolingInterface.ThermalHints
 
 *Optional Thermal Hints support for WDDM1.3 drivers *
 
@@ -4511,11 +4519,11 @@ If ACPI firmware adds the current graphics device into ACPI ThermalZone, then th
 ACPI.sys will only query the thermal cooling interface if the current device is in a thermal zone. Dxgkrnl.sys can validate that the IHV miniport driver supports the GUID\_THERMAL\_COOLING\_INTERFACE when ACPI queries this interface. In this case, WHCK can receive the error log that the miniport driver fails the DxgkDdiQueryInterface call on GUID\_THERMAL\_COOLING\_INTERFACE and fail the WHCK test.
 
 <a name="Device.Graphics.WDDM13.DisplayRender.WirelessDisplay"></a>
-# Device.Graphics.WDDM13.DisplayRender.WirelessDisplay
+## Device.Graphics.WDDM13.DisplayRender.WirelessDisplay
 
 *The optional feature set implemented by WDDM 1.3 drivers that support the Miracast functionality.*
 
-## Device.Graphics.WDDM13.DisplayRender.WirelessDisplay.BasicWirelessDisplay
+### Device.Graphics.WDDM13.DisplayRender.WirelessDisplay.BasicWirelessDisplay
 
 *Optional Wireless Display support for WDDM1.3 drivers *
 
@@ -4578,11 +4586,11 @@ NOTE: In Windows 10 the Wireless Display framework was changed significantly so 
 -   In case the driver TDR's, the driver should appropriately terminate the session.
 
 <a name="Device.Graphics.WDDM13.EnhancedPowerManagement"></a>
-# Device.Graphics.WDDM13.EnhancedPowerManagement
+## Device.Graphics.WDDM13.EnhancedPowerManagement
 
 *Graphics Kernel Power Management Enhancements*
 
-## Device.Graphics.WDDM13.EnhancedPowerManagement.FState
+### Device.Graphics.WDDM13.EnhancedPowerManagement.FState
 
 *F-State Hysteresis*
 
@@ -4606,7 +4614,7 @@ LATENCY TIME VALIDATION
 
 For a transition from a lower power F-State to a higher one, it is expected that the time it takes to complete the transition will not be more than 10% over the transition latency time reported by the driver.
 
-## Device.Graphics.WDDM13.EnhancedPowerManagement.VSYNC
+### Device.Graphics.WDDM13.EnhancedPowerManagement.VSYNC
 
 *Aggressive VSYNC*
 
@@ -4631,11 +4639,11 @@ IN PHASE VSYNC
 While the Vsync is enabled, 98% of the Vsyncs must be within 500 us of the expected value with no Vsyncs exceeding a variance of more than 1.5 ms.
 
 <a name="Device.Graphics.WDDM13.Render"></a>
-# Device.Graphics.WDDM13.Render
+## Device.Graphics.WDDM13.Render
 
 *The base feature set implemented by WDDM 1.3 drivers that support the render specific DDIs.*
 
-## Device.Graphics.WDDM13.Render.CheckDDIBoundaries
+### Device.Graphics.WDDM13.Render.CheckDDIBoundaries
 
 *Hybrid Graphics*
 
@@ -4661,7 +4669,7 @@ While the Vsync is enabled, 98% of the Vsyncs must be within 500 us of the expec
 
 -   No driver layering is allowed - Only one user mode/kernel mode driver is allowed to be loaded and communicate with the runtime and kernel binaries.
 
-## Device.Graphics.WDDM13.Render.DirtyRect
+### Device.Graphics.WDDM13.Render.DirtyRect
 
 *Optional DirtyRect support for WDDM1.3 drivers *
 
@@ -4681,7 +4689,7 @@ While the Vsync is enabled, 98% of the Vsyncs must be within 500 us of the expec
 
 WDDM1.3 introduces the ability to support DirtyRect. If DirtyRect is implemented, then it must follow the specification.
 
-## Device.Graphics.WDDM13.Render.GPUNode
+### Device.Graphics.WDDM13.Render.GPUNode
 
 *Graphics Kernel Performance*
 
@@ -4707,7 +4715,7 @@ If WDDM1.3 is implemented, then the driver must:
 
 -   For each engine, the given enum value must meet the requirements as stated in the engine definitions table in the DDI.
 
-## Device.Graphics.WDDM13.Render.HighPerformanceTimingData
+### Device.Graphics.WDDM13.Render.HighPerformanceTimingData
 
 *High Performance Graphics Timing Data*
 
@@ -4763,7 +4771,7 @@ A WDDM1.3 driver must ensure that the graphics device/driver provides the follow
 
 -   The resulting data on Tile based deferred rendering hardware appears as if it was generated on an immediate mode rendering device.
 
-## Device.Graphics.WDDM13.Render.PresentOverheadOptimization
+### Device.Graphics.WDDM13.Render.PresentOverheadOptimization
 
 *Present Overhead Optimization *
 
@@ -4789,7 +4797,7 @@ To ensure the desired performance characteristics when Present1 is used, the fol
 
 -   The driver must only call the Present callback once per DDI call (and not once per resource).
 
-## Device.Graphics.WDDM13.Render.SharedSurfaceSupport
+### Device.Graphics.WDDM13.Render.SharedSurfaceSupport
 
 *Shared Surface Support*
 
@@ -4829,7 +4837,7 @@ WDDM1.3 drivers must support these new formats and capabilities for shared surfa
 
     -   Resources can be accessed.
 
-## Device.Graphics.WDDM13.DisplayRender.MultiplaneOverlaySupport
+### Device.Graphics.WDDM13.DisplayRender.MultiplaneOverlaySupport
 
 *Multi-plane Overlay support*
 
@@ -4936,7 +4944,7 @@ It is OK if hardware blends bottom to top as long as the output result is the sa
 -   Black color must be displayed at the area where not covered by any of destination rectangles from any layers. Hardware can assume there is a conceptual virtual black bottom most layer that is the size of the screen.
 
 
-## Device.Graphics.WDDM13.Render.TrimSupport
+### Device.Graphics.WDDM13.Render.TrimSupport
 
 *Direct3D Trim*
 
@@ -4963,9 +4971,9 @@ The Trim API is new in the WDDM1.3 updates to the D3D9 UM DDI. Graphics devices 
 -   Calling Trim must not change the state of the Direct3D device – all rendering operations should continue to be evaluated normally.
 
 <a name="Device.Graphics.WDDM20"></a>
-# Device.Graphics.WDDM20
+## Device.Graphics.WDDM20
 
-## Device.Graphics.WDDM20.CoreRequirement (If Implemented)  
+### Device.Graphics.WDDM20.CoreRequirement (If Implemented)  
 
 <table>
 <tr>
@@ -5169,11 +5177,11 @@ WDDM 2.0 introduces new set of features and DDI changes designed to work optimal
 
 
 <a name="Device.Graphics.WDDM20.Core"></a>
-# Device.Graphics.WDDM20.Core
+## Device.Graphics.WDDM20.Core
 
 *The base feature set implemented by drivers supporting WDDM2.0.*
 
-## Device.Graphics.WDDM20.Core.Base (If Implemented)
+### Device.Graphics.WDDM20.Core.Base (If Implemented)
 
 WDDM2.0
 
@@ -5330,11 +5338,11 @@ Windows 10 introduces a new set of features and DDI changes that will be referre
 </table>
 
 <a name="Device.Graphics.WDDM20.DisplayRender"></a>
-# Device.Graphics.WDDM20.DisplayRender
+## Device.Graphics.WDDM20.DisplayRender
 
 *The parent feature node of requirements that have an impact for the display and render GPU.*
 
-## Device.Graphics.WDDM20.DisplayRender.HardwareContentProtection
+### Device.Graphics.WDDM20.DisplayRender.HardwareContentProtection
 
 *A GPU must support hardware-based content protection.*
 
@@ -5359,9 +5367,9 @@ The GPU driver and hardware must pass the Microsoft Hardware Content Protection 
 Requires a network connection and access to PlayReady Content Protection test servers.
 
 <a name="Device.Graphics.WDDM20.Display.VirtualModeSupport"></a>
-# Device.Graphics.WDDM20.Display.VirtualModeSupport
+## Device.Graphics.WDDM20.Display.VirtualModeSupport
 
-## Device.Graphics.WDDM20.Display.VirtualModeSupport.CoreRequirement (If Implemented)
+### Device.Graphics.WDDM20.Display.VirtualModeSupport.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -5380,11 +5388,11 @@ Requires a network connection and access to PlayReady Content Protection test se
 WDDM2.0 drivers must report support for virtual resolution changes and DWMClone, via the new VirtualModeSupport member in DXGK\_DISPLAY\_DRIVERCAPS\_EXTENSION, by setting VirtualModeSupport to 1 when the OS calls DxgkDdiQueryAdapterInfo on DXGKQAITYPE\_DISPLAY\_DRIVERCAPS\_EXTENSION. 
 
 <a name="Device.Graphics.WDDM21"></a>
-# Device.Graphics.WDDM21
+## Device.Graphics.WDDM21
 
 WDDM 2.1 is an optional version level introduced for Windows 10 builds greater than 10586. If a driver implements WDDM 2.1 then it must implement all of the WDDM 2.1 Requirements. WDDM 2.0 drivers will continue to run on the newer Windows 10 builds.
 
-## Device.Graphics.WDDM21.CoreRequirement (If Implemented)
+### Device.Graphics.WDDM21.CoreRequirement (If Implemented)
 
 <table>
 <tr>
@@ -5418,7 +5426,7 @@ A WDDM 2.1 driver must meet all requirements defined in the WDDM 2.1 Specificati
 
 	A new callback in WDDM 2.1 (UpdateAllocationProperties) allows for scenarios involving Pre/Post Present optimizations. This is optional.
 
-## Device.Graphics.WDDM21.FlipQueueLatency (If Implemented)
+### Device.Graphics.WDDM21.FlipQueueLatency (If Implemented)
 
 <table>
 <tr>

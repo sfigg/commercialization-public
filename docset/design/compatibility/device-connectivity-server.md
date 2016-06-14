@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.Server
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Connectivity.Server
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.Connectivity.Server"></a>
-# Device.Connectivity.Server
+## Device.Connectivity.Server
 
-## Device.Connectivity.Server.ServerOutOfBandManageability
+### Device.Connectivity.Server.ServerOutOfBandManageability
 
 *Server Baseboard Management Controller (BMC) devices must support out-of-band management capabilities.*
 

@@ -1,3 +1,11 @@
+---
+title: Device.Portable
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.Portable
 
  - [Device.Portable.Core](#Device.Portable.Core)
@@ -7,11 +15,11 @@
  - [Device.Portable.MobilePhone](#Device.Portable.MobilePhone)
 
 <a name="Device.Portable.Core"></a>
-# Device.Portable.Core
+## Device.Portable.Core
 
 *Core*
 
-## Device.Portable.Core.AudioCodec
+### Device.Portable.Core.AudioCodec
 
 *If a portable device can capture audio content, it must do so using a format supported natively in Windows.*
 
@@ -142,7 +150,7 @@ The following tables represent the list of in-box formats that Windows will rend
 </html>
  
 
-## Device.Portable.Core.CustomDeviceServices
+### Device.Portable.Core.CustomDeviceServices
 
 *A portable device that implements custom MTP Services must meet the requirements defined in the MTP Devices Services Extension Specification.*
 
@@ -188,7 +196,7 @@ To expose a custom device service in Device Stage, a custom task must be authore
 
 -   Refer to the Microsoft Device Experience Development Kit available at *http://msdn.microsoft.com/en-us/windows/hardware/gg463154.aspx*.
 
-## Device.Portable.Core.DeviceServices
+### Device.Portable.Core.DeviceServices
 
 *Portable devices that support defined MTP Services must implement these services according to the requirements defined in the MTP Device Services for Windows Specification.*
 
@@ -255,7 +263,7 @@ For services to be accessible by a service aware initiator, the following servic
 
 -   See also Metadata Schema and Package Format Specification available at <http://msdn.microsoft.com/en-us/windows/hardware/gg463153>*.*
 
-## Device.Portable.Core.MediaSync
+### Device.Portable.Core.MediaSync
 
 *Portable Devices that support media content must meet basic interoperability requirements to successfully transfer content with an MTP aware media player application on Windows.*
 
@@ -299,7 +307,7 @@ To receive playlists from Windows Media Player, a device must support object ref
 
 The device must also support the AbstractAudioVideoPlaylist (0xBA05) format. A playlist is sent as a 0-byte object with a list of references to object handles for all objects contained in the playlist.
 
-## Device.Portable.Core.ModelID
+### Device.Portable.Core.ModelID
 
 *Portable devices may support the optional ModelID property to uniquely identify logical device functions on a multi-function device.*
 
@@ -324,7 +332,7 @@ The ModelID spans logical device functions on a multi-function device through an
 
 -   Refer to the MTP Device Services Extension Specification that is included with the Windows Portable Device Enabling Kit, available at <http://msdn.microsoft.com/en-us/windows/hardware/gg463545>.
 
-## Device.Portable.Core.MTP
+### Device.Portable.Core.MTP
 
 *Portable devices must support a core set of MTP operations and devices properties as defined in the Media Transport Protocol revision 1.0 or later, along with the device properties and object formats for the specific device type.*
 
@@ -512,7 +520,7 @@ If a Portable Device supports album art, then the device must support the follow
      
 -   Additional implementation details can be found in the Windows 7 Portable Device Enabling Kit for MTP, which is available at <http://go.microsoft.com/fwlink/?LinkId=243146>.
 
-## Device.Portable.Core.MTPFunctionality
+### Device.Portable.Core.MTPFunctionality
 
 *A device that supports MTP must meet mandatory general functionality requirements to ensure expected behavior in Windows.*
 
@@ -538,7 +546,7 @@ Portable devices must behave according to the requirements defined below. The d
 
 **Support unexpected device disconnects -** An unexpected disconnect must not cause the device to stop responding (hang or crash) or to restart.
 
-## Device.Portable.Core.MTPMultiSession
+### Device.Portable.Core.MTPMultiSession
 
 *Portable devices that enable MTP multisession functionality must support required object session operations.*
 
@@ -568,7 +576,7 @@ These operations are required in addition to the operations for basic session op
 
 For implementation details see the Media Transfer Protocol Specification Revision 2.0, available at *http://go.microsoft.com/fwlink/?LinkId=243142.*
 
-## Device.Portable.Core.MTPObjectProperties
+### Device.Portable.Core.MTPObjectProperties
 
 *A MTP device must support object properties for each consumable media format.*
 
@@ -653,7 +661,7 @@ Additionally, if the device supports an If Implemented (Optional) object propert
 
 For implementation details, refer to Media Transfer Protocol Specification Revision 1.0, Appendix B - Object Properties available at *http://go.microsoft.com/fwlink/?LinkId=243143*.
 
-## Device.Portable.Core.MTPStreams
+### Device.Portable.Core.MTPStreams
 
 *Portable devices that implement MTP Streams must support required object stream operations.*
 
@@ -689,7 +697,7 @@ N/A = Not applicable
 
 -   For implementation details refer to Media Transfer Protocol Specification Revision 2.0, available at <http://go.microsoft.com/fwlink/?LinkId=243144>.
 
-## Device.Portable.Core.TransportBluetooth
+### Device.Portable.Core.TransportBluetooth
 
 *If a portable device leverages the Bluetooth transport, then the device shall support the latest required specification(s) for that transport and related tests: Bluetooth (Specification Version 2.1 or greater).*
 
@@ -721,7 +729,7 @@ A portable device that uses Bluetooth must use the following specifications:
 
 -   A Bluetooth-capable portable device must leverage L2CAP Transport MTP Responder Service Definition Record required parameter "**GetFormatCapabilities**" to mitigate format enumeration performance issues.
 
-## Device.Portable.Core.TransportIP
+### Device.Portable.Core.TransportIP
 
 *If a portable device leverages the IP transport, then the device shall support the latest required specification(s) for that transport and related tests: IP (Along with the MTP Network Association Extension specification and related UPnP specifications).*
 
@@ -786,7 +794,7 @@ In order to mitigate format enumeration performance issues, MTP/IP devices shoul
 
 -   MTP Network Association, MTP Windows Connect Now, and MTP Wi-Fi Provisioning Extension documents are available at <http://msdn.microsoft.com/en-us/windows/hardware/gg463543>.
 
-## Device.Portable.Core.TransportIPDLNA
+### Device.Portable.Core.TransportIPDLNA
 
 *A Portable Device that functions as a DMR or DMS conforms to requirements defined for Networked Media Devices.*
 
@@ -814,7 +822,7 @@ The device must meet the requirements defined for each device class called out i
 
 -   Refer to the Networked Media Device section for requirement details. Information on DLNA Certification can be found at [http://www.dlna.org](http://www.dlna.org/).
 
-## Device.Portable.Core.TransportUSB
+### Device.Portable.Core.TransportUSB
 
 *If a Portable Device leverages the USB transport, then the device shall support the latest required specification(s) for that transport and related tests: USB (Specification Version 2.0 or greater).*
 
@@ -845,7 +853,7 @@ A portable device that uses USB must use the following:
 
 -   There are no specific Windows Hardware Certification requirements for the type of USB connector used on a portable device.
 
-## Device.Portable.Core.VideoCodec
+### Device.Portable.Core.VideoCodec
 
 *If a portable device has the ability to capture video content, it must do so using a format supported natively in Windows.*
 
@@ -1258,11 +1266,11 @@ The following tables represent the list of in-box formats that Windows will rend
 
 
 <a name="Device.Portable.DigitalCamera"></a>
-# Device.Portable.DigitalCamera
+## Device.Portable.DigitalCamera
 
 *DigitalCamera*
 
-## Device.Portable.DigitalCamera.MTP
+### Device.Portable.DigitalCamera.MTP
 
 *Digital Cameras must support MTP operations and properties as defined in the Media Transport Protocol revision 1.0 or later, along with specific object formats per device type.*
 
@@ -1395,11 +1403,11 @@ See **Object Formats** in the MTP Specification, Revision 1.0 or later for compl
 -   Additional implementation details can be found in the Windows 7 Portable Device Enabling Kit for MTP, which is available at <http://go.microsoft.com/fwlink/?LinkId=243146>.
 
 <a name="Device.Portable.DigitalVideoCamera"></a>
-# Device.Portable.DigitalVideoCamera
+## Device.Portable.DigitalVideoCamera
 
 *DigitalVideoCamera*
 
-## Device.Portable.DigitalVideoCamera.MTP
+### Device.Portable.DigitalVideoCamera.MTP
 
 *Digital video cameras must support MTP operations and properties as defined in the Media Transport Protocol revision 1.0 or later, along with specific object formats per device type.*
 
@@ -1530,11 +1538,11 @@ See **Object Formats** in the MTP Specification, Revision 1.0 or later for compl
 -   Additional implementation details can be found in the Windows 7 Portable Device Enabling Kit for MTP, which is available at <http://go.microsoft.com/fwlink/?LinkId=243146>.
 
 <a name="Device.Portable.MediaPlayer"></a>
-# Device.Portable.MediaPlayer
+## Device.Portable.MediaPlayer
 
 *MediaPlayer*
 
-## Device.Portable.MediaPlayer.MTP
+### Device.Portable.MediaPlayer.MTP
 
 *Media players must support MTP operations and properties as defined in the Media Transport Protocol revision 1.0 or later, along with specific object formats per device type.*
 
@@ -1682,11 +1690,11 @@ If a Portable Device supports album art, then the device must support the follow
 -   Additional implementation details can be found in the Windows 7 Portable Device Enabling Kit for MTP, which is available at <http://go.microsoft.com/fwlink/?LinkId=243146>.
 
 <a name="Device.Portable.MobilePhone"></a>
-# Device.Portable.MobilePhone
+## Device.Portable.MobilePhone
 
 *MobilePhone*
 
-## Device.Portable.MobilePhone.MTP
+### Device.Portable.MobilePhone.MTP
 
 *Mobile phones must support MTP operations and properties as defined in the Media Transport Protocol revision 1.0 or later, along with specific object formats per device type.*
 

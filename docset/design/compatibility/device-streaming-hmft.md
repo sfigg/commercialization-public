@@ -1,3 +1,11 @@
+---
+title: Device.Streaming.HMFT
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Streaming.HMFT
 
@@ -5,9 +13,9 @@
  -->
  
 <a name="Device.Streaming.HMFT"></a>
-# Device.Streaming.HMFT
+## Device.Streaming.HMFT
 
-## Device.Streaming.HMFT.Decoding
+### Device.Streaming.HMFT.Decoding
 
 *Hardware Media Foundation Transform (HMFT) must support video decoding.*
 
@@ -108,7 +116,7 @@ The HMFT video decoder must be installed and uninstalled through a device drive
 
 Each HMFT component must be a separate binary, individually certified and signed.
 
-## Device.Streaming.HMFT.Encoding
+### Device.Streaming.HMFT.Encoding
 
 *Hardware Media Foundation Transform (HMFT) must support video encoding.*
 

@@ -1,3 +1,11 @@
+---
+title: Device.BusController.Bluetooth
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 # Device.BusController.Bluetooth
 
  - [Device.BusController.Bluetooth.Base](#Device.BusController.Bluetooth.Base)
@@ -5,9 +13,9 @@
  - [Device.BusController.Bluetooth.USB](#Device.BusController.Bluetooth.USB)
 
 <a name="Device.BusController.Bluetooth.Base"></a>
-# Device.BusController.Bluetooth.Base
+## Device.BusController.Bluetooth.Base
 
-## Device.BusController.Bluetooth.Base.4LeSpecification
+### Device.BusController.Bluetooth.Base.4LeSpecification
 
 *Bluetooth controllers must support the Bluetooth 4.0 specification requirements.*
 
@@ -30,7 +38,7 @@ These requirements are "If Implemented" for Client systems and apply only if a C
 
 *“The Bluetooth radio HW shall be qualified as a “Controller Subsystem” and may additionally be qualified as a “Component” through the Bluetooth Special Interest Group.” *
 
-## Device.BusController.Bluetooth.Base.LeStateCombinations
+### Device.BusController.Bluetooth.Base.LeStateCombinations
 
 *Bluetooth controllers must support a minimum set of LE state combinations.*
 
@@ -55,7 +63,7 @@ The Bluetooth controller must allow the spec LE state combinations (as allowed i
 
 -   0x0000000008000000 Active Scanning state and Slave Role combination supported.
 
-## Device.BusController.Bluetooth.Base.LeWhiteList
+### Device.BusController.Bluetooth.Base.LeWhiteList
 
 *Bluetooth controllers must support a minimum LE white list size of 25 entries.*
 
@@ -74,7 +82,7 @@ The Bluetooth controller must allow the spec LE state combinations (as allowed i
 
 The Bluetooth controller must support a minimum of 25 entries in its white list for remote Low Energy (LE) devices.
 
-## Device.BusController.Bluetooth.Base.MicrosoftBluetoothStack
+### Device.BusController.Bluetooth.Base.MicrosoftBluetoothStack
 
 *Bluetooth controllers must be tested using Microsoft's Bluetooth stack.*
 
@@ -93,7 +101,7 @@ The Bluetooth controller must support a minimum of 25 entries in its white list 
 
 The Bluetooth controllers must be tested with Microsoft's Bluetooth stack when submitting for hardware certification.
 
-## Device.BusController.Bluetooth.Base.HCIExtensions (If Implemented)
+### Device.BusController.Bluetooth.Base.HCIExtensions (If Implemented)
 
 *Microsoft defined HCI extensions support for hardware offload of advertisement and RSSI monitoring.*
 
@@ -114,7 +122,7 @@ Radios that support the Microsoft defined Bluetooth HCI extensions must comply w
 
 [https://msdn.microsoft.com/en-us/library/windows/hardware/dn917903.aspx.](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917903.aspx)
 
-## Device.BusController.Bluetooth.Base.NoBluetoothLEFilterDriver
+### Device.BusController.Bluetooth.Base.NoBluetoothLEFilterDriver
 
 *Bluetooth LE filter drivers are not allowed to load on BTHLEENUM.SYS.*
 
@@ -133,7 +141,7 @@ Radios that support the Microsoft defined Bluetooth HCI extensions must comply w
 
 To ensure a uniform experience across Windows Store Apps using the Bluetooth LE (GATT) WinRT API, filter drivers shall not be loaded on BTHLEENUM.SYS.
 
-## Device.BusController.Bluetooth.Base.OnOffStateControllableViaSoftware
+### Device.BusController.Bluetooth.Base.OnOffStateControllableViaSoftware
 
 *Bluetooth controllers’ On/Off state must be controllable via software.*
 
@@ -156,7 +164,7 @@ On turning the radio back on, the Windows Bluetooth stack shall resume the devic
 
 Bluetooth Radio Management in Windows 8.1 shall only be enabled for internal Bluetooth 4.0 controllers.
 
-## Device.BusController.Bluetooth.Base.Scatternet
+### Device.BusController.Bluetooth.Base.Scatternet
 
 *Bluetooth host controller must support Bluetooth scatternet.*
 
@@ -177,7 +185,7 @@ The Bluetooth host controller must support at least two concurrent piconets (als
 
 Design Notes: The scatternet support should follow the enhanced scatternet support errata that are defined by the Bluetooth Special Interest Group (SIG).
 
-## Device.BusController.Bluetooth.Base.SimultaneousBrEdrAndLeTraffic
+### Device.BusController.Bluetooth.Base.SimultaneousBrEdrAndLeTraffic
 
 *Bluetooth controllers must support simultaneous BR/EDR and LE traffic.*
 
@@ -196,7 +204,7 @@ Design Notes: The scatternet support should follow the enhanced scatternet suppo
 
 Bluetooth controllers must allow the simultaneous use of both Basic Rate (BR)/Enhanced Data Rate (EDR) and Low Energy (LE) radios.
 
-## Device.BusController.Bluetooth.Base.SpecificInformationParameters
+### Device.BusController.Bluetooth.Base.SpecificInformationParameters
 
 *Bluetooth host controller must implement specific Informational parameters to provide accurate information about the host controller's capabilities.*
 
@@ -215,7 +223,7 @@ Bluetooth controllers must allow the simultaneous use of both Basic Rate (BR)/En
 
 The manufacturer fixes the informational parameters, which provide valuable information about the Bluetooth device and the capabilities of the host controller. Bluetooth host controllers must implement the HCl\_Read\_Local\_Version\_Information command and HCI\_Read\_Local\_Supported\_Features command as described in the Specification of the Bluetooth System, Version 2.1 + Enhanced Data Rate (EDR), Part E, Section 7.4. Required support includes the mechanism for reporting the supported version and features.
 
-## Device.BusController.Bluetooth.Base.SupportsBluetooth21AndEdr
+### Device.BusController.Bluetooth.Base.SupportsBluetooth21AndEdr
 
 *Bluetooth controllers must support the Bluetooth 2.1+EDR specification requirements.*
 
@@ -234,7 +242,7 @@ The manufacturer fixes the informational parameters, which provide valuable info
 
 The Bluetooth host controller must comply with the requirements that are outlined in the Specification of the Bluetooth System Version 2.1 + Enhanced Data Rate (EDR).
 
-## Device.BusController.Bluetooth.WidebandSpeech (If Implemented)
+### Device.BusController.Bluetooth.WidebandSpeech (If Implemented)
 
 <table>
 <tr>
@@ -256,11 +264,11 @@ What this means is that Bluetooth radios must support wideband speech in the har
 We want users to experience the best possible quality audio when using Bluetooth peripherals on Windows. Wideband speech is becoming a standard for peripherals that support the HFP profile. Our competition already supports it
 
 <a name="Device.BusController.Bluetooth.NonUSB"></a>
-# Device.BusController.Bluetooth.NonUSB
+## Device.BusController.Bluetooth.NonUSB
 
 *Bluetooth Controller - NonUSB connected radios *
 
-## Device.BusController.Bluetooth.NonUSB.Performance
+### Device.BusController.Bluetooth.NonUSB.Performance
 
 *Non-USB Bluetooth controllers must achieve at least a throughput of 700 kbps.*
 
@@ -279,7 +287,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 
 Non-USB Bluetooth controllers must achieve at least a throughput of 700 kbps at the RFCOMM layer.
 
-## Device.BusController.Bluetooth.NonUSB.ScoSupport
+### Device.BusController.Bluetooth.NonUSB.ScoSupport
 
 *Non-USB connected Bluetooth controllers must use the sideband channel for SCO.*
 
@@ -299,11 +307,11 @@ Non-USB Bluetooth controllers must achieve at least a throughput of 700 kbps at 
 In order to ensure a high quality audio experience, all non-USB connected Bluetooth controllers must use a sideband channel for SCO (e.g., SCO over an I2S/PCM interface).
 
 <a name="Device.BusController.Bluetooth.USB"></a>
-# Device.BusController.Bluetooth.USB
+## Device.BusController.Bluetooth.USB
 
 *Bluetooth Controller - USB connected radios*
 
-## Device.BusController.Bluetooth.USB.ScoDataTransportLayer
+### Device.BusController.Bluetooth.USB.ScoDataTransportLayer
 
 *Bluetooth host controllers must support the SCO data transport layer as specified in the Bluetooth 2.1+EDR specifications.*
 

@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.WSD
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Connectivity.WSD
 
@@ -5,9 +13,9 @@
 -->
 
 <a name="Device.Connectivity.WSD"></a>
-# Device.Connectivity.WSD
+## Device.Connectivity.WSD
 
-## Device.Connectivity.WSD.DPWS
+### Device.Connectivity.WSD.DPWS
 
 *Devices which use or interact with the Web Services on Devices API (WSDAPI) comply with Device Profiles for Web Services (DPWS) specification*
 
@@ -32,7 +40,7 @@ DPWS Specification available at
 
 <http://go.microsoft.com/fwlink/?LinkId=109231>
 
-## Device.Connectivity.WSD.DPWSExtensibility
+### Device.Connectivity.WSD.DPWSExtensibility
 
 *Devices Profile for Web Services Devices must accept messages that contain extensibility sections, and process the messages as appropriate.*
 
@@ -57,7 +65,7 @@ DPWS Specification available at
 
 <http://go.microsoft.com/fwlink/?LinkId=109231>
 
-## Device.Connectivity.WSD.MetadataExchange
+### Device.Connectivity.WSD.MetadataExchange
 
 *Devices Profile for Web Services (DPWS) Devices support metadata exchange*
 
@@ -80,7 +88,7 @@ DPWS Devices which interact with the Web Services on Devices API (WSDAPI) must s
 
 Metadata Exchange specification can be obtained at <http://go.microsoft.com/fwlink/?LinkId=109248>
 
-## Device.Connectivity.WSD.MetadataValid
+### Device.Connectivity.WSD.MetadataValid
 
 *Devices which interact with the Web Services on Devices (WSDAPI) produce metadata that conforms to the Devices Profile for Web Services*
 
@@ -103,7 +111,7 @@ Devices which interact with WSDAPI must populate the Metadata as defined in the 
 
 The Device Profile for Web Services Specification of February 2006 is available at <http://go.microsoft.com/fwlink/?LinkId=109231>
 
-## Device.Connectivity.WSD.Schema
+### Device.Connectivity.WSD.Schema
 
 *A network-enabled device that implements Devices Profile for Web Services (DPWS) must adhere to the protocol and schema.*
 
@@ -136,7 +144,7 @@ See the Devices Profile for Web Service specification at <http://specs.xmlsoap.o
 
 Additional information can be found in the Windows Rally Development Kit at <http://go.microsoft.com/fwlink/?LinkId=109368.>
 
-## Device.Connectivity.WSD.WSDiscovery
+### Device.Connectivity.WSD.WSDiscovery
 
 *Devices Profile for Web Services (DPWS) Devices interacting with the Web Services on Devices API (WSDAPI) implement WS-Discovery*
 

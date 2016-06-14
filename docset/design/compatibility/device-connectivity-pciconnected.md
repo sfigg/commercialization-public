@@ -1,3 +1,11 @@
+---
+title: Device.Connectivity.PciConnected
+Description: 'Requirements.'
+ms.assetid: 
+MSHAttr: 
+author: beneluxboy
+---
+
 <!--
 # Device.Connectivity.PciConnected
 
@@ -5,10 +13,9 @@
 -->
 
 <a name="Device.Connectivity.PciConnected"></a>
-# Device.Connectivity.PciConnected
+## Device.Connectivity.PciConnected
 
-## Device.Connectivity.PciConnected.64BitPrefetchableBar
-
+### Device.Connectivity.PciConnected.64BitPrefetchableBar
 
 *PCI-X and PCI Express devices that use prefetchable memory BARs, implement 64-bit prefetchable memory base address registers (BARs)*
 
@@ -29,7 +36,7 @@ See [Firmware Allocation of PCI Device Resources in Windows](http://www.microsof
 
 If the device supports 64-bit prefetchable memory BARs, Windows attempts to assign a region above 4 GB. In a PCI bridge, Windows ignores boot configuration for an entire device path emanating from the bridge in whose scope this method is defined. For the bridge and devices below it to be assigned a region above 4 GB, all devices in the path must support 64-bit prefetchable BARs. If this is not true, the rebalance code runs and moves all resource assignments below 4 GB, because the goal is to start as many devices as possible
 
-## Device.Connectivity.PciConnected.ConfigurationSpaceCorrectlyPopulated
+### Device.Connectivity.PciConnected.ConfigurationSpaceCorrectlyPopulated
 
 *Configuration space for PCI device is correctly populated*
 
@@ -46,7 +53,7 @@ PCI2.3 describes the configuration space that the system uses to identify and co
 All other registers that the device uses during normal operation must be located in normal I/O or memory space. Unimplemented registers or reads to reserved registers must finish normally and return zero. Writes to reserved registers must finish normally, and the data must be discarded.
 All registers that the device requires at interrupt time must be in I/O or memory space.
 
-## Device.Connectivity.PciConnected.ExpressCardImplementsSerialNumber
+### Device.Connectivity.PciConnected.ExpressCardImplementsSerialNumber
 
 *A single ExpressCard module that supports both USB and PCI Express interfaces implements a common serial number*
 
@@ -63,7 +70,7 @@ An ExpressCard module that supports both USB and PCI Express interfaces on a sin
 This is the only method that Windows will use to determine the relationship of USB and PCI Express on one module.
  
 
-## Device.Connectivity.PciConnected.InterruptDisableBit
+### Device.Connectivity.PciConnected.InterruptDisableBit
 
 *PCI and PCI-X devices, that are PCI 2.3 compliant, support the interrupt-disable bit*
 
@@ -82,7 +89,7 @@ All PCI and PCI-X devices that claim support for PCI Local Bus Specification Rev
 
 See PCI Local Bus Specification, Revision 2.3, Section 6.2.2.
 
-## Device.Connectivity.PciConnected.MsiOrMsixSupport
+### Device.Connectivity.PciConnected.MsiOrMsixSupport
 
 *PCI device that reports PCI-X capability in the PCI configuration space and that generates interrupts may support MSI or MSI-X but is not required to do so*
 
@@ -104,7 +111,7 @@ However, because PCI-X is being replaced by PCI Express and many existing implem
 
 Message Signaled Interrupt for PCI-X device is required by industry standard specification. However, see above.
 
-## Device.Connectivity.PciConnected.PciAndPcixDevicesArePciCompliant
+### Device.Connectivity.PciConnected.PciAndPcixDevicesArePciCompliant
 
 *PCI and PCI-X devices, at a minimum, are PCI 2.1 compliant*
 
@@ -123,7 +130,7 @@ All PCI and PCI-X devices must comply with the PCI Local Bus Specification, Revi
 
 See PCI Local Bus Specification, Revision 2.1 or later.
 
-## Device.Connectivity.PciConnected.PCIExpress
+### Device.Connectivity.PciConnected.PCIExpress
 
 *PCI Express requirement*
 
@@ -164,7 +171,7 @@ The root complex must support the enhanced configuration space access mechanism 
 
 If an interrupt is implemented, PCI Express devices must support the interrupt disable functionality described in PCI Local Bus Specification, Revision2.3. This bit disables the device or function from asserting INTx. A value of 0 enables the assertion of its INTx signal. A value of 1 disables the assertion of its INTx signal. This bit's state upon reset is 0
 
-## Device.Connectivity.PciConnected.SubsystemIdsRequired
+### Device.Connectivity.PciConnected.SubsystemIdsRequired
 
 *Device IDs include PCI subsystem IDs*
 
