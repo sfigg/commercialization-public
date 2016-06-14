@@ -278,14 +278,14 @@ Setup /auto upgrade /migratedrivers none /installdrivers N:\NewDrivers</code></p
 <td align="left"><p><strong>/NetDebug:</strong>hostip=&lt;<em>w.x.y.z</em>&gt;,port=&lt;<em>n</em>&gt;,key=&lt;<em>q.r.s.t</em>&gt;[,nodhcp][,busparams=<em>n.o.p</em>]</p></td>
 <td align="left"><p>Enables kernel debugging over the network.</p>
 <p>Use hostip to identify the IP address of the host computer.</p>
-<p>Use port to identify the port.</p>
+<p>Use port to identify the port. The default start port is 49152, and the default end port is 65535. </p>
 <p>Use key to provide a password to set up a secure connection.</p>
 <p>Use nodhcp to avoid using a DHCP connection. (optional)</p>
 <p>Use busparams to select the bus number, device number, and function number of an adapter for a specific PCI bus device. (optional)</p>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>setup /netdebug:hostip=10.125.4.86,port=1,key=0.0.0.0 
-setup /netdebug:hostip=10.125.4.86,port=1,key=abcdefg.123.hijklmnop.456,nodhcp 
-setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1.5.0</code></pre>
+<pre class="syntax" space="preserve"><code>setup /netdebug:hostip=10.125.4.86,port=50000,key=0.0.0.0 
+setup /netdebug:hostip=10.125.4.86,port=50000,key=abcdefg.123.hijklmnop.456,nodhcp 
+setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,busparams=1.5.0</code></pre>
 <p>For details, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](http://go.microsoft.com/fwlink/p/?linkid=317384).</p></td>
 </tr>
 <tr class="odd">
