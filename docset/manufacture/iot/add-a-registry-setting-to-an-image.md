@@ -9,7 +9,7 @@ title: 'Lab 1c: Add a file and a registry setting to an image'
 # Lab 1c: Add a file and a registry setting to an image
 
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
 
 Many files and registry keys, and other customizations that you add to your image won't be specific to an architecture. For these, we recommend creating a common package that you can use for all of your builds.
  
