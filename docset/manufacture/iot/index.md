@@ -59,14 +59,9 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 
 ## <span id="related_topics"></span>Related topics
 
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/IoTCore.htm)
 
-[Learn about Windows 10 IoT Core](http://ms-iot.github.io/content/en-US/IoTCore.md)
-
-[Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md)
-
+[IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
  
 
  
-
-
-
