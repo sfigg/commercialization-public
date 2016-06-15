@@ -66,7 +66,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 3.  Create a working folder for the app, for example:
 
     ``` syntax
-    newAppxPkg "C:\Users\&lt;UserName&gt;\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
+    newAppxPkg "C:\Users\<UserName>\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
     ```
 
     This creates a new working folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld that includes files that you'll use to help build the package.
