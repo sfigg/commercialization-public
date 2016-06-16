@@ -1,0 +1,199 @@
+---
+author: joshbax-msft
+title: WGF11 Input Assembler
+description: WGF11 Input Assembler
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2bf586fd-000e-4458-989b-3c4cc6659a72
+---
+
+# WGF11 Input Assembler
+
+
+This automated test examines the Input Assembler stage of the graphics pipeline.
+
+This topic applies to the following test jobs:
+
+-   WGF11 Input Assembler
+
+-   WGF11 Input Assembler (WoW64)
+
+## Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Associated requirements</strong></p></td>
+<td><p>Device.Graphics.AdapterRender.D3D101Core.D3D101CorePrimary Device.Graphics.AdapterRender.D3D10Core.D3D10CorePrimary Device.Graphics.AdapterRender.D3D111Core.D3D111CorePrimary Device.Graphics.AdapterRender.D3D11Core.D3D11CorePrimary</p>
+<p>[See the device hardware requirements.](http://go.microsoft.com/fwlink/p/?linkid=254483)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Platforms</strong></p></td>
+<td><p>Windows 7 (x64) Windows 7 (x86) Windows RT (ARM-based) Windows 8 (x64) Windows 8 (x86) Windows Server 2012 (x64) Windows Server 2008 R2 (x64) Windows RT 8.1 Windows 8.1 x64 Windows 8.1 x86 Windows Server 2012 R2</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Expected run time</strong></p></td>
+<td><p>~2 minutes</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Categories</strong></p></td>
+<td><p>Certification Functional</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Type</strong></p></td>
+<td><p>Automated</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [Graphic Adapter or Chipset Testing Prerequisites](graphic-adapter-or-chipset-testing-prerequisites.md).
+
+## Troubleshooting
+
+
+For troubleshooting information, see [Troubleshooting Device.Graphics Testing](troubleshooting-devicegraphics-testing.md).
+
+## More information
+
+
+This test verifies the following:
+
+-   Whether the Input Assembler stage of the graphics pipeline operates correctly given the different permutations of input layouts and their slot assignments.
+
+-   Whether the combinations of different buffers as inputs work correctly.
+
+The first test group, "InputLayouts," defined through ID3D11InputLayoutsTest, generates its test cases by permuting on the following factors:
+
+-   Input Slot Classes - different sequences of per-instance and per-vertex data
+
+-   Input Slot assignments - out-of-order slot usage, skipping slots, not using slot 0
+
+-   Instance Data Step Rate
+
+-   Alignments
+
+-   Number of Elements per Input Layout - smaller / bigger than number of elements in shader, maximum allowable number of elements as per the spec
+
+The second test group, "Buffers", defined through CBuffersTest, does the following:
+
+-   Makes sure that indices are respected for IB.
+
+-   Makes sure that buffer bound as a view works.
+
+-   Makes sure that VB works.
+
+-   Cycled through all valid buffer usages and some sizes.
+
+-   Tries huge buffers.
+
+-   Bind max number of buffers, with each buffer of a different usage/pool/CPU access.
+
+-   Draws maximum vertices, index, and instance count.
+
+### Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>Wgf11inputassembler</strong></p></td>
+<td><p>Runs the test jobs. Without any options, the test enumerates devices.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>-FeatureLevel:XX.X</strong></p></td>
+<td><p>Sets the feature level, where XX.X is the Feature Level the test will run at: 10.0, 10.1, or 11.0.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+**Note**  
+For command line help for this test binary, type **/?**.
+
+ 
+
+### File list
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Configdisplay.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\tools\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3d11_1sdklayers.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3d11ref.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>D3d11sdklayers.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3dcompiler_test.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support</p></td>
+</tr>
+<tr class="even">
+<td><p>D3dx10_test.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="odd">
+<td><p>d3dx11_test.dll</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\support\</p></td>
+</tr>
+<tr class="even">
+<td><p>TDRWatch.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\</p></td>
+</tr>
+<tr class="odd">
+<td><p>Wgf11inputassembler.exe</p></td>
+<td><p><em>&lt;[testbinroot]&gt;</em>\nttest\windowstest\graphics\d3d\conf</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
