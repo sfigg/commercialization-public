@@ -517,8 +517,6 @@ You should not remove a language pack from an offline Windows image if there are
     **Note**  
     You can specify the package identity using the **/PackageName** option, or you can point to the original source of the package using the **/PackagePath** option. For example:
 
-     
-
     ``` syntax
     Dism /Image:C:\mount\windows /Remove-Package /PackagePath:C:\LanguagePack\fr-fr\LP.cab 
     Dism /Image:C:\mount\winre /Remove-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"

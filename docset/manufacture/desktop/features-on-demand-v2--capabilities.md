@@ -23,9 +23,6 @@ Use DISM to add or remove capabilities:
 -   Use the /Online option to add the capability to your PC.
 
 -   Use the /Image:&lt;mount path&gt; option to add the capability to an Windows image file (.wim).
-
-**Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](install-windows-automatically-from-a-usb-drive-sxs.md).
-
  
 
 <table>

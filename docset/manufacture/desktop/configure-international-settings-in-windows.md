@@ -9,39 +9,22 @@ title: Configure International Settings in Windows
 # Configure International Settings in Windows
 
 
-You can specify the default language, locale, and keyboard values during deployment or after Windows is installed. You can configure Windows international settings by using the Windows International PowerShell cmdlets, by using an answer file with Windows Setup, or by using Deployment Imaging Servicing and Management (DISM).
-
-In this section
-
--   [Configure international settings by using PowerShell cmdlets](#powershell)
-
--   [Configure international settings by using the Control Panel](#controlpanel)
-
--   [Configure international settings by using DISM](#dism)
-
--   [Configure international settings by using an answer file](#answerfile)
+You can specify the default language, locale, and keyboard values during deployment or after Windows is installed. You can configure international settings by using the International module for Windows PowerShell, by using an answer file with Windows Setup, or by using Deployment Imaging Servicing and Management (DISM).
 
 For information about using DISM to configure international settings in an offline Windows image, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
 **Important**  
-In Windows 10 the intl.cpl command line tools do not support the new settings available in the Region and Language sections of the Control panel. For Windows 10, we recommend using the International PowerShell cmdlet settings to automate customizing international settings.
+In Windows 10, the intl.cpl command line tools do not support the new settings available in the Region and Language section of Control Panel. For Windows 10, we recommend using the International Windows PowerShell cmdlet settings to automate customizing international settings.
 
 In addition, Deployment Imaging Servicing and Management (DISM) should also only be used against an offline Windows image. In Windows 10, language settings are dynamically configured based on the user’s language list. Individual settings, such as the display language, default input method, and user locale may be reset dynamically based on user preferences on a running Windows installation. Use the International PowerShell cmdlet settings to change the international settings of a running Windows installation.
 
- 
 
-## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using PowerShell cmdlets
+## <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Configure international settings by using Winbows PowerShell
 
 
-In Windows 10 you can use the International Settings PowerShell cmdlets to change the language on a running Windows installation. The benefit of using PowerShell cmdlets is that you can incorporate them into a script to facilitate deployment and configuration of Windows.
+In Windows 10, you can use the International Settings Windows PowerShell cmdlets to change the language on a running Windows installation. 
 
 1.  Open a Windows PowerShell prompt.
-
-2.  Import the international settings module by running the following command:
-
-    ``` syntax
-    ipmo international
-    ```
 
 3.  Display the locale information on the computer by running the following command:
 
@@ -57,16 +40,11 @@ In Windows 10 you can use the International Settings PowerShell cmdlets to chan
 
     For a full description of these cmdlets, see [Get-WinSystemLocale](http://go.microsoft.com/fwlink/p/?linkid=242247) and [Set-WinSystemLocale](http://go.microsoft.com/fwlink/p/?linkid=242254). For more information about using International PowerShell cmdlets, see [International Settings Cmdlets](http://go.microsoft.com/fwlink/p/?linkid=238265).
 
-## <span id="ControlPanel"></span><span id="controlpanel"></span><span id="CONTROLPANEL"></span>Configure international settings by using the Control Panel
+## <span id="ControlPanel"></span><span id="controlpanel"></span><span id="CONTROLPANEL"></span>Configure international settings by using Control Panel
 
+On a running Windows installation, you can use Control Panel to select language packs and configure additional international settings.
 
-On a running Windows installation, you can use the control panel to select language packs and configure additional international settings.
-
-1.  On the Start page, type **language**, and make sure that the search scope is set to **Settings**.
-
-2.  In the **Results **panel, select **Language**.
-
-3.  In the **Change your language preferences** pane, select **Add a language**.
+1.  On the Start page, type **language**, and select **Add a language**.
 
 4.  Browse or search for the language that you want to install. For example, select **Catalan**, and then select **Add**.
 
