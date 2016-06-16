@@ -42,7 +42,7 @@ Sysprep helps you solve business goals such as:
 
 ## <span id="BKMK_NEW"></span><span id="bkmk_new"></span>New and changed functionality
 
-Beginning with Windows 10, Version 1607, Sysprep can be used to prepare an image that has been upgraded. For example:
+Beginning with Windows 10, version 1607, Sysprep can be used to prepare an image that has been upgraded. For example:
 
 - You can start with a computer that runs Windows 8.1 or Windows 7.
 - Upgrade the computer to run Windows 10, version 1607.
