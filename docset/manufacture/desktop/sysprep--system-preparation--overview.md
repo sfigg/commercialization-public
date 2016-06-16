@@ -42,7 +42,13 @@ Sysprep helps you solve business goals such as:
 
 ## <span id="BKMK_NEW"></span><span id="bkmk_new"></span>New and changed functionality
 
-Beginning with Windows 10, Version 1607, Sysprep can be used to prepare an image that has been upgraded. For example, you can create a base Windows 10 image, upgrade the image to Windows 10, Version 1607, then run Sysprep generalize on the upgraded image, re-capture the updated image, and deploy the image to new devices.  This process allows enterprises to efficiently and continuously roll out up-to-date Windows 10 deployment images. 
+Beginning with Windows 10, version 1607, Sysprep can be used to prepare an image that has been upgraded. For example:
+
+- You can start with a computer that runs Windows 8.1 or Windows 7.
+- Upgrade the computer to run Windows 10, version 1607.
+- Run Sysprep generalize on the upgraded image, re-capture the updated image, and deploy the image to new devices.
+
+This process allows enterprises to efficiently and continuously roll out up-to-date Windows 10 deployment images. 
 
 Beginning with Windows 8.1, the Sysprep user interface is deprecated. The Sysprep UI will continue to be supported in this release however it may be removed in a future release. We recommend that you update your deployment workflow to use Sysprep from the command line. For more information, see [Sysprep Command-Line Options](sysprep-command-line-options.md).
 
