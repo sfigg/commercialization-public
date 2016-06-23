@@ -109,7 +109,7 @@ Not all capabilities are available for every language.
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see Features On Demand V2 (Capabilities).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. </p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
