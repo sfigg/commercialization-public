@@ -30,9 +30,11 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 **Start the IoT Core shell, choose your architecture, and install test certificates**
 
-1.  In Windows Explorer, navigate to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**. Right-click **IoTCoreShell**, and select **Run as administrator**.
+1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open IoTCoreShell.cmd. It should prompt you to run as an administrator.
 
     The new value for OEM\_NAME should appear when you start the tool.
+	
+	Troubleshooting: Error: "The system cannot find the path specified". If you get this, right-click the icon and modify the path in "Target" to the location you've chosen to install the tools.
 
 2.  At the **Set Environment for Architecture** prompt, select 1 for ARM or 2 for x86, based on the architecture for the boards that you'll be developing. For example, press **1** to create an image that's compatible with the Raspberry Pi 2 or Raspberry Pi 3, or press **2** to create an image that's compatible with the Minnowboard Max.
 
@@ -40,14 +42,23 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     (Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile/update-requirements.md).)
 
-3.  Install OEM test certificates. You'll use these to sign your test binaries.
+**One-time tasks**
+
+These tasks only need to be done the first time you install the IoT ADK AddonKit.
+
+1.  Install OEM test certificates. You'll use these to sign your test binaries.
 
     ``` syntax
     InstallOEMCerts
     ```
+    The certificates are added to the root. To learn more, see [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804)
+	
+2.  Build all of the packages in the working folders.
 
-    **Note**  This step is only required once. The certificates are added to the root. To learn more, see [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn756804).
-
+    ``` syntax
+    BuildPkg All
+    ```
+    	
 **Create a new test image**
 
 1.  Create a new product folder. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
@@ -58,7 +69,9 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA.
 
-2.  Create a flashable image using the default files. We'll start by making test images. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
+2.  Eject any removable storage drives, including the Micro SD card and any USB flash drives.
+
+3.  Create a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
     ``` syntax
     createimage ProductA Test
@@ -66,9 +79,10 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
     This creates a FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
 
-    If you receive the error code: 0x80070005 or 0x800705b4, reopen the IoT Core Shell as an administrator, unplug all external drives (including micro SD cards and USB thumb drives), and try again.
-
-    If this doesn't work, go back to [Set up your PC and download the samples](set-up-your-pc-to-customize-iot-core.md) and make sure everything's installed.
+    Troubleshooting:
+	
+	-  ERROR CODES: 0x80070005 or 0x800705b4: Reopen the IoT Core Shell as an administrator, unplug all external drives (including micro SD cards and USB thumb drives), and try again.  
+	If this doesn't work, go back to [Set up your PC and download the samples](set-up-your-pc-to-customize-iot-core.md) and make sure everything's installed.
 
 **Flash the image to a memory card**
 
