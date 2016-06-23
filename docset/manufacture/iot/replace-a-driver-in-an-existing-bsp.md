@@ -15,29 +15,13 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 -  Complete [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
 
-## <span id="Create_a_new_product_and_BSP_file"></span><span id="create_a_new_product_and_bsp_file"></span><span id="CREATE_A_NEW_PRODUCT_AND_BSP_FILE"></span>Create a new product and BSP file
+## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
-1.  Create a new product folder. This creates a fresh copy of our base files, including a new copy of the BSP.
+1.  Create a duplicate copy of the BSP working folder that you'd like to modify.
 
-    ``` syntax
-    newproduct ProductB
-    ```
+	For example, copy C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\Rpi2 to C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\CustomRpi2.
 
-    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB.
-
-2.  Rename the BSP.
-
-    (This step is optional. This prevents us from confusing the original manufacturer's BSP from our own.)
-    
-    Example:
-
-     ``` syntax
-    rename C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\OEM_RPi2FM.xml Blinky_RPi2FM.xml.
-    ```
-
-## <span id="Replace_the_driver_in_the_BSP"></span><span id="replace_the_driver_in_the_bsp"></span><span id="REPLACE_THE_DRIVER_IN_THE_BSP"></span>Replace the driver in the BSP
-
-1.  Comment out the old GPIO driver in the BSP feature manifest file.
+2.  Remove/comment out any driver in the BSP feature manifest file that no longer apply.
 
    For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Blinky_RPi2FM.xml**.
 
@@ -51,7 +35,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
         -->
     ```  
 
-2.  Add the new GPIO driver. 
+3.  Add new drivers. 
 
     Optional: Use the same FeatureID as the rest of the files in the BSP (example, RPI2_DRIVERS) gets more easily picked up whenever you use this new BSP.  
     
@@ -63,7 +47,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
           </PackageFile>
     ```  
 
-3.  Comment out the Device Info file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
+4.  Comment out the Device Info file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
 
     ``` syntax
     <!---
@@ -72,17 +56,22 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
      </DeviceSpecificPackages>
      -->
     ```
+	
+## <span id="Create_a_new_product_folder"></span><span id="create_a_new_product_and_folder"></span><span id="CREATE_A_NEW_PRODUCT_FOLDER"></span>Create a new product folder
+
+1.  Create a new working product folder, adding your BSP name to the end.
+
+    ``` syntax
+    newproduct ProductB CustomRpi2
+    ```
+
+    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new custom BSP.
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
-2.  Update the reference to your BSP:
-
-    ``` syntax
-    <AdditionalFM>C:\IoT-ADK-AddonKit\Source-arm\Products\ProductB\bsp\Blinky_RPi2FM.xml</AdditionalFM>
-
-3.  Add FeatureIDs:
+2.  Add FeatureIDs:
 	  -  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
 	  
 	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
@@ -124,10 +113,9 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 1.  Use the [testing procedures in the Hello, Blinky! lab](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab3.htm) to test your driver.
 
-
-
+<!--
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
-<!--
+
 [Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 -->

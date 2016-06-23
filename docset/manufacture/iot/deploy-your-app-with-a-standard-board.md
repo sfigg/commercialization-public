@@ -10,19 +10,7 @@ title: 'Lab 1b: Add an app to your image'
 
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
 
-We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), and package it up.
-
-We'll test the app and send it to the device. You can skip these steps if you've already tested your app.
-
-We'll then create a servicable package for it. You'll need packages for each of the apps, device drivers, system files, and registry settings that you add to Windows 10 IoT Core (IoT Core) OEM images. These packages are .cab files, and must be signed before you can load them onto the device. For test builds, you can use test certificates - we'll use them in this guide.
-
-As we create packages, we'll add them to our list of features, the OEM feature manifest (OEMFM.xml). We'll assign each package a Feature ID, which we can refer to later.
-
-We'll add these feature manifests and feature IDs to our testing image configuration file, TestOEMInput.xml.
-
-We're also adding a configuration file that customizes the system to use your app on first boot. This is listed in the feature manifest: OEMCommonFM.xml, with the Feature ID: OEM\_CustomCmd.
-
-Finally, we'll rebuild the project and make sure it works.
+We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), package it up, and create a new image you can load onto new devices. 
 
 **Note**  As we go through this manufacturing guide, ProjectA will start to resemble the SampleA image that's in C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\SampleA.
 
@@ -31,9 +19,9 @@ Finally, we'll rebuild the project and make sure it works.
 We'll use the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
 
 ## <span id="Create_and_test_an_Windows_app"></span><span id="create_and_test_an_windows_app"></span><span id="CREATE_AND_TEST_AN_WINDOWS_APP"></span>Create and test an Windows app
+You can skip these steps if you've already created and tested your app.
 
-
-1.  First, create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/en-us/windows/iot/win10/samples/HelloWorld.htm) app.
+1.  Create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/en-us/windows/iot/win10/samples/HelloWorld.htm) app.
 
 2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **Next**. 
 
@@ -55,15 +43,8 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
 1.  Open **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
 
-2.  Build all of the existing packages in your app (one-time only): 
 
-    ``` syntax
-    buildpkg all
-    ```
-
-    This command builds all of the packages in our source folders, including a few packages that we've created to help install your app.
-
-3.  Create a working folder for the app, for example:
+2.  Create a working folder for the app, for example:
 
     ``` syntax
     newAppxPkg "C:\Users\<UserName>\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
@@ -71,7 +52,9 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
     This creates a new working folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld that includes files that you'll use to help build the package.
 
-4.  From the IoT Core Shell, build the package.
+	Troubleshooting: If you get the message: "The system cannot find the file specified", it may be because the package has no defined dependencies.
+	
+3.  From the IoT Core Shell, build the package.
 
     ``` syntax
     buildpkg Appx.HelloWorld
@@ -122,59 +105,68 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\TestOEMInput.xml**.
 
-2.  Add your feature manifest, OEMFM.xml, into the list of AdditionalFMs. At the same time, add the feature manifest: OEMCommonFM.xml, which contains the OEM\_CustomCmd package that configures your app on the first boot:
+2.  Make sure both your feature manifest, OEMFM.xml, and the feature manifest: OEMCommonFM.xml, are both listed in the AdditionalFMs section.
 
     ``` syntax
     <AdditionalFMs>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-      </AdditionalFMs>
+       <!-- Including BSP feature manifest -->
+       <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
+       <!-- Including OEM feature manifest -->
+       <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
+       <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
+       <!-- Including the test features -->
+       <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    </AdditionalFMs>
     ```
 
-3.  Add the FeatureIDs for your app package and the OEM\_CustomCmd package:
+3.  Add the FeatureIDs for both your app package, as well as the **OEM\_CustomCmd** package, which is used to launch your app. Remove the FeatureID for the OEM_AppxMain.
 
     ``` syntax
-    <OEM> 
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PRODUCTION</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    </OEM>
+   <OEM>
+      <!-- Include BSP Features -->
+          <Feature>RPI2_DRIVERS</Feature>
+      <!-- Include OEM features -->
+      <Feature>OEM_AppxHelloWorld</Feature>
+      <Feature>OEM_CustomCmd</Feature>
+      <Feature>OEM_ProvAuto</Feature>
+   </OEM>
     ```
 
-4.  Remove the FeatureID for the IoT Core default app (IOT\_BERTHA), either by using &lt;!-- ... --&gt; to comment it out, or delete it from the list:
+4.  Remove the FeatureID for the IoT Core default app (IOT\_BERTHA) and the IOT_ALLJOYN_APP either by using &lt;!-- ... --&gt; to comment it out, or delete it from the list:
 
     ``` syntax
-      <Features>
-        <Microsoft> 
-        <Feature>IOT_KDSERIAL_SETTINGS</Feature> 
-        <Feature>IOT_EFIESP</Feature> 
-        <Feature>IOT_DMAP_DRIVER</Feature> 
-        <Feature>PRODUCTION_CORE</Feature> 
-        <Feature>PRODUCTION</Feature> 
-        <Feature>IOT_UAP_OOBE</Feature> 
-        <Feature>IOT_TOOLKIT</Feature> 
-        <Feature>IOT_WDTF</Feature> 
-        <Feature>IOT_SSH</Feature> 
-        <Feature>IOT_SIREP</Feature>
-        <Feature>IOT_WEBB_EXTN</Feature> 
-        <Feature>IOT_UMDFDBG_SETTINGS</Feature> 
-        <Feature>IOT_NETCMD</Feature> 
-        <Feature>IOT_POWERSHELL</Feature> 
-        <Feature>IOT_DIRECTX_TOOLS</Feature> 
-        <Feature>IOT_ALLJOYN_APP</Feature> 
-        <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
-        <Feature>IOT_DISABLE_UMCI</Feature> 
-        <Feature>IOT_CRT140</Feature> 
-    <!--    <Feature>IOT_BERTHA</Feature>    -->
-        <Feature>IOT_APP_TOOLKIT</Feature> 
-        <Feature>IOT_CP210x_MAKERDRIVER</Feature>
-        <Feature>IOT_FTSER2K_MAKERDRIVER</Feature>
-    </Microsoft> 
+     <Microsoft>
+       <Feature>IOT_EFIESP</Feature>
+       <Feature>IOT_DMAP_DRIVER</Feature>
+       <Feature>IOT_CP210x_MAKERDRIVER</Feature>
+       <Feature>IOT_FTSER2K_MAKERDRIVER</Feature>
+       <!-- Following two required for Appx Installation -->
+       <Feature>IOT_UAP_OOBE</Feature>
+       <Feature>IOT_APP_TOOLKIT</Feature>
+       <!-- for Connectivity -->
+       <Feature>IOT_WEBB_EXTN</Feature>
+       <Feature>IOT_POWERSHELL</Feature>
+       <Feature>IOT_NETCMD</Feature>
+       <Feature>IOT_SSH</Feature>
+       <Feature>IOT_SIREP</Feature>
+       <!-- Enabling Test images -->
+       <Feature>IOT_DISABLE_UMCI</Feature>
+       <Feature>IOT_ENABLE_TESTSIGNING</Feature>
+       <Feature>IOT_TOOLKIT</Feature>
+       <!-- Debug Features -->
+       <Feature>IOT_KDSERIAL_SETTINGS</Feature>
+       <Feature>IOT_UMDFDBG_SETTINGS</Feature>
+       <Feature>IOT_WDTF</Feature>
+       <Feature>IOT_CRT140</Feature>
+       <Feature>IOT_DIRECTX_TOOLS</Feature>
+       <Feature>PRODUCTION_CORE</Feature>
+       <!-- 
+		  Sample Apps, remove this when you introduce OEM Apps
+          <Feature>IOT_BERTHA</Feature>
+		  <Feature>IOT_ALLJOYN_APP</Feature>
+	   -->
+       </Microsoft>
+
     ```
 
 **Set the app to automatically install and set itself as the default app**
@@ -183,22 +175,25 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 
 2.  Recommended: Change the device's default username and password.
 
-3.  Replace the rest of the code in the code block with the new section starting with ""if exists C:\Appinstall (" - this new section automatically installs your app whenever the installer app is present:
+3.  Remove the first set of REM statements from the code block starting with "REM if exist..", this allows the AppInstall.cmd command to automatically install your app.
 
     ``` syntax
+    @echo off
     REM OEM Customization Script file
-    
-	REM Enable Administrator User
-	net user MyAdmin MyP@ssw0rd /active:yes
-	
-	if exists C:\Appinstall (
-	REM Enable Application Installation
-	call C:\Appinstall\AppInstall.cmd
-	
-	REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
-	cd \
-	rmdir /S /Q C:\AppInstall
-	)
+    REM This script if included in the image, is called everytime the system boots.
+
+    REM Enable Administrator User
+    net user Administrator p@ssw0rd /active:yes
+
+    if exist C:\AppInstall\AppInstall.cmd (
+    REM Enable Application Installation for onetime only, after this the files are deleted.
+    call C:\AppInstall\AppInstall.cmd > %temp%\AppInstallLog.txt
+    if %errorlevel%== 0 (
+    REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
+    cd \
+    rmdir /S /Q C:\AppInstall
+    )
+    )
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
@@ -209,12 +204,19 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 1.  From the IoT Core Shell, create the image:
 
     ``` syntax
-    createimage ProductA Test
+    buildimage ProductA Test
     ```
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+	Troubleshooting: Check the logfiles at C:\\iot-adk-addonkit\\Build\\&lt;arch&gt;\\HelloWorld_Test.log, and search for "fatal error".
+	
+2.  Install the image onto the Micro SD card.
+    -  Start **Windows IoT Core Dashboard**
+    -  **Setup a new device** &gt; **Custom**, click Browse, and select your image. 
+	-  Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
+	This replaces the previous image with your new image.
+
 3.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.

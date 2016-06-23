@@ -9,9 +9,16 @@ title: What's new in IoT Core manufacturing
 
 ## <span id="IoT_Core_AddOns"></span>IoT Core Add-Ons
 
+**June 20, 2016**
+*  New BSP tools added:
+   -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-<arch>\BSP. Multiple projects can now more easily share the same BSP folder.
+   -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
+   -  Updated lab: [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+
+
 **June 9, 2016:** 
 Several updates of [command-line tools](iot-core-adk-addons-command-line-options.md):
-*  New tool: BuildImage.cmd. Similar to CreateImage.cmd, this builds images from the working folders. Includes options useful for automated testing, including options to build images from all of the working project folders, or to build both test and retail images.  
+*  New tool: BuildImage.cmd. Similar to CreateImage.cmd, this tool can build multiple images at a time, which can be useful for automated testing.  
 
    To troubleshoot, see log files at \Build\<arch>\pkgs\logs.   
 
