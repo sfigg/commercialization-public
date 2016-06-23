@@ -78,7 +78,7 @@ Tools inside Windows ADK that you will use with this guide:
 
 To complete the steps outlined in this guide, OEMs will require:
 
--   **A Technician computer**: A PC running Windows 10 or Windows 8.1 on which [Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
+-   **A Technician computer**: A PC running Windows 10 or Windows 8.1 on which [Windows ADK](http://go.microsoft.com/fwlink/?LinkId=293840) will be installed. 32-bit PCs require a 32-bit version of Windows to use some tools.
 
 Note: This guide provides sample Windows PowerShell script to automate offline servicing section. In order to use this script, you will need a Technician computer running Windows 10.
 
@@ -678,7 +678,7 @@ OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\Answ
 
 #### Adding LPs / LIPs / FoDs / GDRs
 
-The following table lists language pack components and any dependencies. For more information, see [Language packs](language-packs--lpcab--and-windows-deployment.md) and [Feature on Demand (FoD)](features-on-demand-v2--capabilities.md).
+The following table lists language pack components and any dependencies. For more information, see [Language packs](language-packs--lpcab--and-windows-deployment.md) and [Features on Demand (FoD)](features-on-demand-v2--capabilities.md).
 
 
 <table border="1" cellpadding="0">
@@ -740,7 +740,7 @@ The following table lists language pack components and any dependencies. For mor
             </td>
             <td>
                 <p>
-Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see                    <a href="available-language-packs-for-windows.md">Available Language Packs for Windows</a>.
+Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.
                 </p>
             </td>
             <td>
@@ -801,7 +801,7 @@ Requires a specific fully-localized or partially-localized language pack. Exampl
                     Fonts.
                 </p>
                 <p>
-Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see                    <a href="features-on-demand-v2--capabilities.md">Features On Demand V2 (Capabilities)</a>.
+Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. 
                 </p>
             </td>
         </tr>
@@ -1407,7 +1407,7 @@ In this section, the device is prepared for deployment by booting into WinPE, cr
 
 #### Boot to WinPE
 
-1.  On the technician computer, locate the following files in **USB-B**/Deployment destination. Please see [Creating My USB-B](#creating-my-usb-b)) to create and place the files in the correct paths. Skip this step if it was done previously.
+1.  On the technician computer, locate the following files in **USB-B**/Deployment destination. Please see [Creating My USB-B](#creating-my-usb-b) to create and place the files in the correct paths. Skip this step if it was done previously.
 
 2.  Connect the **USB-A** drive and boot the reference computer.
 
@@ -1427,14 +1427,14 @@ Using the deployment script walkthrough-deploy.bat in **USB-B**/Deployment folde
 
 **Important: The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.**
 
-In Windows 10 Version 1511, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encouraging you to follow the new recommendation.
+In Windows 10 Version 1511, we are changing our recommendation to have the WinRE partition placed after the OS partition. This allows future growth of the WinRE partition during updates. Today with the WinRE partition at the front of the disk, the size of it can never be changed, making it difficult to update WinRE when needed. We will continue to support having the WinRE partition located in different parts of the disk, but we encourage you to follow the new recommendation.
 
     E:\Deployment\walkthrough-deploy.bat E:\Images\BasicImage.wim
     
 
 There are several pauses in the script. You will be prompted Y/N for the Apply operation if this is a Compact OS deployment.
 
-Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommend on rotational devices. For more information, see [Compact OS](compact-os.md).
+Note: Only use Compact OS on Flash drive based devices because Compact OS performance depends heavily on the storage device capabilities. Compact OS is NOT recommended on rotational devices. For more information, see [Compact OS](compact-os.md).
 
 After the computer boots to the OOBE screen, press this key combination to boot into Audit mode:
 
