@@ -9,7 +9,7 @@ title: IoT Core manufacturing guide
 # IoT Core manufacturing guide
 
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
 
 This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after you've sent them to your customers.
 
@@ -166,6 +166,9 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 ## <span id="related_topics"></span>Related topics
 
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/IoTCore.htm)
+
+[IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
 
