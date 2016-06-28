@@ -9,9 +9,7 @@ title: Available Language Packs for Windows
 # Available Language Packs for Windows
 
 
-The following tables show the supported language packs and language interface packs (LIPs) for Windows 10, Windows Server 2016 Technical Preview, and Windows Server 2012 R2.
-
-Corporations and users can download LIPs from the Microsoft.com web site and add them to any genuine copy of Windows that has the supported parent language installed. For more information or to download a LIP, see [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=125894).
+The following tables show the supported language packs and language interface packs (LIPs) for Windows 10, Windows Server 2016 Technical Preview, and Windows Server 2012 R2. For more information, or to download a LIP, see [Language packs](https://support.microsoft.com/en-us/help/14236/language-packs#lptabs=win10).
 
 LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
 
