@@ -11,7 +11,7 @@ title: What's new in IoT Core manufacturing
 
 **June 20, 2016**
 *  New BSP tools added:
-   -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-<arch>\BSP. Multiple projects can now more easily share the same BSP folder.
+   -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-&lt;arch&gt;\BSP. Multiple projects can now more easily share the same BSP folder.
    -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
    -  Updated lab: [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
 
@@ -19,7 +19,7 @@ title: What's new in IoT Core manufacturing
 Several updates of [command-line tools](iot-core-adk-addons-command-line-options.md):
 *  New tool: BuildImage.cmd. Similar to CreateImage.cmd, this tool can build multiple images at a time, which can be useful for automated testing.  
 
-   To troubleshoot, see log files at \Build\<arch>\pkgs\logs.   
+   To troubleshoot, see log files at \\Build\\&lt;arch&gt;\\pkgs\\logs.   
 
 *  Updated: [Update apps on your IoT Core devices](..\service\updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
 
@@ -42,7 +42,7 @@ Several updates of [command-line tools](iot-core-adk-addons-command-line-options
    
    -  NewPkg. Use newappxpkg, newdrvpkg, and newcommonpkg instead.
 
-*  Troubleshooting and logging: When building packages, you'll get a cleaner display just showing the packages that have been processed, and any errors. To troubleshoot, you can now see the full log files at \Build\<arch>\pkgs\logs.
+*  Troubleshooting and logging: When building packages, you'll get a cleaner display just showing the packages that have been processed, and any errors. To troubleshoot, you can now see the full log files at \\Build\\&lt;arch&gt;\\pkgs\\logs.
 
 *  Updated: CreatePkg now supports adding just the Component.Subcomponent names. Example:
 

@@ -23,7 +23,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
 2.  Remove/comment out any driver in the BSP feature manifest file that no longer apply.
 
-   For example, update: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\Blinky_RPi2FM.xml**.
+   For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\CustomRpi2\\CustomR_RPi2FM.xml**.
 
     ``` syntax
     <!---
