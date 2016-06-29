@@ -8,13 +8,12 @@ title: Sample scripts
 
 # Sample scripts
 
-
-The following scripts are used in the lab. It may be helpful to create these all at once, or to [download the samples](http://go.microsoft.com/fwlink/?LinkId=528668) from the web.
+The following scripts are used in the lab. It may be helpful to create these all at once, or to [download the samples](http://go.microsoft.com/fwlink/p/?LinkId=800657) from the web.
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
 
 
-The following scripts set up Windows devices by using an image file, and to configure push-button reset features.
+The following scripts set up Windows devices by using an image file, and configure push-button reset features.
 
 ### <span id="CreatePartitions-_firmware_.txt"></span><span id="createpartitions-_firmware_.txt"></span><span id="CREATEPARTITIONS-_FIRMWARE_.TXT"></span>CreatePartitions-(firmware).txt
 
@@ -106,7 +105,7 @@ format quick fs=ntfs label="Windows"
 assign letter="W"
 rem == 3. Recovery partition ====================
 create partition primary
-format quick fs=ntfs label="Recovery"
+format quick fs=ntfs label="Recovery image"
 assign letter="R"
 set id=27
 list volume
@@ -140,98 +139,205 @@ remove
 list volume
 ```
 
+### ApplyImage.bat
+
+Use this script to launch the other scripts that deploy Windows to a new device.
+
+``` syntax
+@echo ApplyImage.bat
+@echo     Run from the reference device in the WinPE environment
+@echo     This script erases the primary hard drive and applies a new image
+@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
+@if not exist X:\Windows\System32 goto END
+@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
+@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
+@if %1.==. goto END
+@echo *********************************************************************
+@echo Checking to see if the PC is booted in BIOS or UEFI mode.
+wpeutil UpdateBootInfo
+for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+@echo            Note: delims is a TAB followed by a space.
+@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
+@if x%Firmware%==x echo        Common fix: In the command above:
+@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
+@if x%Firmware%==x goto END
+@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
+@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
+@echo *********************************************************************
+@echo Formatting the primary disk...
+@if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
+@if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
+@echo CAUTION: All the data on the disk will be DELETED.
+@SET /P READY=Erase all data and continue? (Y or N):
+@if %READY%.==y. set READY=Y
+@if not %READY%.==Y. goto END
+if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
+if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
+@echo *********************************************************************
+@echo  == Set high-performance power scheme to speed deployment ==
+call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+@echo *********************************************************************
+@echo  == Apply the image to the Windows partition ==
+@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+@echo Does this image include Extended Attributes?
+@echo    (If you're not sure, type N).
+@SET /P EA=(Y or N):
+@if %EA%.==y. set EA=Y
+if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
+if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
+if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+@echo *********************************************************************
+@echo == Copy boot files to the System partition ==
+W:\Windows\System32\bcdboot W:\Windows /s S:
+@echo *********************************************************************
+@echo   Next steps:
+@echo   * Add Windows Classic apps (optional):
+@echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
+@echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
+@echo   * Add the recovery image:
+@echo       ApplyRecovery.bat
+@echo   * Reboot:
+@echo       exit
+:END
+```
+
+### ApplyRecovery.bat
+
+Use this script to prepare the Windows recovery partition.
+
+``` syntax
+@echo == ApplyRecovery.bat ==
+@echo  *********************************************************************
+@echo  == Copy the Windows RE image to the Windows RE Tools partition ==
+md R:\Recovery\WindowsRE
+xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
+@echo  *********************************************************************
+@echo  == Register the location of the recovery tools ==
+W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
+@echo  *********************************************************************
+@echo  == If Compact OS, single-instance the recovery provisioning package ==
+@echo     Options: N: No
+@echo              Y: Yes
+@echo              D: Yes, but defer cleanup steps to first boot.
+@echo                 Use this if the cleanup steps take more than 30 minutes.
+@echo                 defer the cleanup steps to the first boot.
+@SET /P COMPACTOS=Deploy as Compact OS? (Y, N, or D):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+@if %COMPACTOS%.==d. set COMPACTOS=D
+if %COMPACTOS%.==Y. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance
+if %COMPACTOS%.==D. dism /Apply-CustomDataImage /CustomDataImage:W:\Recovery\Customizations\USMT.ppkg /ImagePath:W:\ /SingleInstance /Defer
+@rem *********************************************************************
+@echo Checking to see if the PC is booted in BIOS or UEFI mode.
+wpeutil UpdateBootInfo
+for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+@echo            Note: delims is a TAB followed by a space.
+@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
+@if x%Firmware%==x echo        Common fix: In the command above:
+@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
+@if x%Firmware%==x goto END
+@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
+@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
+@echo  *********************************************************************
+@echo == Hiding the recovery tools partition
+if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
+if %Firmware%==0x2 diskpart /s %~dp0HideRecoveryPartitions-UEFI.txt
+@echo *********************************************************************
+@echo == Verify the configuration status of the images. ==
+W:\Windows\System32\Reagentc /Info /Target W:\Windows
+@echo    (Note: Windows RE status may appear as Disabled, this is OK.)
+@echo *********************************************************************
+@echo      All done!
+@echo      Disconnect the USB drive from the reference device.
+@echo      Type exit to reboot.
+@echo.
+:END
+```
+
 ### <span id="Walkthrough-Deploy.bat"></span><span id="walkthrough-deploy.bat"></span><span id="WALKTHROUGH-DEPLOY.BAT"></span>Walkthrough-Deploy.bat
 
 Use this script to launch the other scripts, deploying Windows to a new device.
 
 ``` syntax
-@cls
 @echo Walkthrough-Deploy.bat
-@rem  Note: Run from the reference device in the WinPE environment
+@echo     Run from the reference device in the WinPE environment
+@echo     This script erases the primary hard drive and applies a new image
 @echo.
-@if %1.==. echo Re-run this program with a path to a WIM file, example:
-@if %1.==. echo Walkthrough-Deploy.bat D:\WindowsWithFrenchPlusApps.wim
+@echo UPDATE (JUNE 2016):
+@echo   To apply siloed provisioning packages (SPPs), use these scripts instead:
+@echo     ApplyImage.bat install.wim
+@echo       (apply your SPPs)
+@echo     ApplyRecovery.bat
+@echo.
+@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
+@if not exist X:\Windows\System32 goto END
+@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
+@if %1.==. echo Example: Walkthrough-Deploy D:\WindowsWithFrench.wim
 @if %1.==. goto END
-@echo Image selected: %1.
-@echo Check image index. 
-@echo    For example, in current builds:
-@echo    Image index 1=Pro, Image index 2=Core.
-@echo Example: Walkthrough-Deploy.bat D:\WindowsWithFrenchPlusApps.wim 2
-@if %2.==. set IMAGEINDEX=1
-@if not %2.==. set IMAGEINDEX=%2
-@echo Image index selected: %1.
-@pause
-@rem Use this menu to choose standard or Compact OS deployment
-@rem NOTE: Deploying CompactOS requires that you manually create a pagefile equal to 256 MB in WinPE.
-@SET /P M=Deploy as Compact OS? (Y or N):
-if %M%.==Y. set COMPACTOS=True
-if %M%.==y. set COMPACTOS=True
-@echo.
-@echo     Checking to see if the PC is booted in BIOS or UEFI mode.
+@echo *********************************************************************
+SET /P M=Deploy as Compact OS? (Y or N):
+@if %M%.==Y. set COMPACTOS=True
+@if %M%.==y. set COMPACTOS=True
+@if %COMPACTOS%==True echo Deploying as Compact OS.
+@rem *********************************************************************
+@echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
-for /f "tokens=2* delims=    " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
 @echo            Note: delims is a TAB followed by a space.
-@echo.
-if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@echo If this isn't the correct mode, reboot the device into the right mode.
-@echo When you're ready to go, press a key to continue. 
-@echo CAUTION: All the data on the primary disk will be DELETED.
-@pause
-@echo.
-@echo     Partitioning and formatting the disk.
-@echo.
+@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
+@if x%Firmware%==x echo        Common fix: In the command above:
+@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
+@if x%Firmware%==x goto END
+@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
+@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
+@rem *********************************************************************
+@echo Formatting the primary disk...
+@if %Firmware%==0x1 echo ...using BIOS (MBR) format and partitions.
+@if %Firmware%==0x2 echo ...using UEFI (GPT) format and partitions. 
+@echo CAUTION: All the data on the disk will be DELETED.
+@SET /P READY=Erase all data and continue? (Y or N):
+@if %READY%.==y. set READY=Y
+@if not %READY%.==Y. goto END
 if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
 if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
-pause
-@rem *********************************************************************
-@echo.
-@echo.
-@echo      Applying image. 
-@echo.
-rem == These commands deploy a specified Windows
-rem    image file to the Windows partition, and configure
-rem    the system partition.
-rem == Set high-performance power scheme to speed deployment ==
+@echo *********************************************************************
+@echo  == Set high-performance power scheme to speed deployment ==
 call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-@echo.
-rem == Apply the image to the Windows partition ==
-if not %COMPACTOS%.==True. dism /Apply-Image /ImageFile:%1 /Index: %IMAGEINDEX% /ApplyDir:W:\
-if %COMPACTOS%.==True. dism /Apply-Image /ImageFile:%1 /Index:%IMAGEINDEX% /ApplyDir:W:\ /Compact
-@echo.
-rem == Single-instance the recovery provisioning package ==
-if %COMPACTOS%.==True. dism /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
-@echo.
-rem == Copy boot files to the System partition ==
+@echo *********************************************************************
+@echo  == Apply the image to the Windows partition ==
+@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+if %COMPACTOS%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
+if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+@echo  *********************************************************************
+@echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:
-@echo.
-:rem == Copy the Windows RE image to the
-:rem    Windows RE Tools partition ==
+@echo  *********************************************************************
+@echo  == Copy the Windows RE image to the Windows RE Tools partition ==
 md R:\Recovery\WindowsRE
 xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
-@echo.
-:rem == Register the location of the recovery tools ==
+@echo  *********************************************************************
+@echo  == Register the location of the recovery tools ==
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
-@echo.
-:rem == Verify the configuration status of the images. ==
+@echo  *********************************************************************
+@echo == Verify the configuration status of the images. ==
+@echo    Note: Windows RE may appear as Disabled, this is OK.
 W:\Windows\System32\Reagentc /Info /Target W:\Windows
 pause
-@rem *********************************************************************
-@echo.
-@echo      Hiding the recovery tools partition
-@echo.
-@echo.
+@echo  *********************************************************************
+@echo == Hiding the recovery tools partition
 if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
 if %Firmware%==0x2 diskpart /s %~dp0HideRecoveryPartitions-UEFI.txt
-@echo.
-@echo.
-@rem *********************************************************************
+@echo *********************************************************************
 @echo      All done!
 @echo      Disconnect the USB drive from the reference device.
-@echo      type exit to reboot.
+@echo      Type   exit   to reboot.
 @echo.
-@pause
-:END 
+:END
 ```
 
 ## <span id="start_layout__layoutmodification.xml_"></span><span id="START_LAYOUT__LAYOUTMODIFICATION.XML_"></span>Start layout (LayoutModification.xml)

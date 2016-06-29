@@ -19,14 +19,12 @@ For a list of the LIPs and their parent languages, see [Available Language Packs
 
 The version of the LIP must match the version of Windows. For example, you can't add a Windows 10 LIP to a Windows 8 image, or a Windows 8 LIP to a Windows 10 image.
 
-For Windows 10, language packs and LIPs are also available to download from Windows Update. You can add additional languages by using the Control panel. This process requires internet access and access to Windows Update. IT Professionals and end-users can use Windows Update to add additional languages to their Windows installations.
-
-Not all LIPs are currently available for Windows 10.
+For Windows 10, language packs and LIPs are also available to download from Windows Update. You can add additional languages by using **Control Panel**. This process requires internet access and access to Windows Update. IT Professionals and end-users can use Windows Update to add additional languages to their Windows installations.
 
 -   OEMs can view and download LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359).
 -   System Builders can view and download LIPs from the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358)
 -   IT Professionals can view and download LIPs from the [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=262343).
--   Users can get language or LIPs from Windows Update. Click **Windows Control Panel** &gt; **Clock, Language, and Region** &gt; **Language** &gt; **Add Language**. Chose the language that you want to add and follow the instructions in the Control Panel to configure the language as the default.
+-   Users can get languages or LIPs from Windows Update. Go to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. Select the language you want to use from the list, then choose which region's version you want to use. Your download will begin immediately.
 
 ## <span id="Install_LIPs"></span><span id="install_lips"></span><span id="INSTALL_LIPS"></span>Install LIPs
 
@@ -40,7 +38,13 @@ Not all LIPs are currently available for Windows 10.
 5.  Install the LIP: Navigate to the .cab file and double-click it. Follow the instructions to complete the installation.
 6.  Exit audit mode and prepare the PC for image capture or deployment, for example:
 
-    From a command line, run **sysprep /oobe /generalize**. To learn more, see [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md).
+    Open a command prompt and run: 
+    
+    ``` syntax
+    sysprep /oobe /generalize
+    ``` 
+    
+    To learn more, see [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md).
 
 **To install a LIP to an offline Windows image**
 
@@ -51,8 +55,7 @@ Not all LIPs are currently available for Windows 10.
     ``` syntax
     md "C:\mount\windows"
 
-    Dism /Mount-Image /ImageFile:C:\images\Win10\sources\install.wim
-      /Index:1 /MountDir:"C:\mount\windows"
+    Dism /Mount-Image /ImageFile:C:\images\Win10\sources\install.wim /Index:1 /MountDir:"C:\mount\windows"
     ```
 
 4.  If the base LP isn't in the image already, add it.

@@ -408,7 +408,7 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
     **REFERENCE:** OEM Logo file must be in .bmp format and in 120px x 120px size. Please see Windows Guidelines for System Builders for OEM Logo details.
 
-    ![OEM Logo details](Images/oemlogodetails.png)
+    ![OEM Logo details](Images/oem-logo-details.png)
 
 1.  To display an OEM specific desktop background picture, the image file must be placed in %windir%\system32\OEM\**Fabrikam.bmp** directory. Verify that the path is same in answer file corresponding to oobeSystem &gt; Microsoft-Windows-Shell-Setup &gt; Themes &gt; DesktopBackground property. See the below image to add desktop background in an answer file.
 

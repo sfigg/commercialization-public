@@ -13,7 +13,7 @@ You can add support for additional languages on a running operating system, or t
 
 For information about installing Language Interface Packs (LIPs), see [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 
-In Windows 10, end users can use the **Language** page in the **Control Panel** to download and install additional language packs and Language Interface Packs (LIPs) from Windows Update.
+In Windows 10, users can install more languages and features by going to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. 
 
 ## <span id="online"></span><span id="ONLINE"></span>Add a Language Pack Online
 

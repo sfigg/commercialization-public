@@ -54,6 +54,8 @@ The following command-line options are available for Windows Setup:
 
 \[**/Quiet** \]
 
+\[**/ReflectDrivers***&lt;location&gt;*\]
+
 \[**/ResizeRecoveryPartition** {**Enable** | **Disable**}\]
 
 \[**/ShowOOBE** {**full** | **none**}\]
@@ -278,14 +280,14 @@ Setup /auto upgrade /migratedrivers none /installdrivers N:\NewDrivers</code></p
 <td align="left"><p><strong>/NetDebug:</strong>hostip=&lt;<em>w.x.y.z</em>&gt;,port=&lt;<em>n</em>&gt;,key=&lt;<em>q.r.s.t</em>&gt;[,nodhcp][,busparams=<em>n.o.p</em>]</p></td>
 <td align="left"><p>Enables kernel debugging over the network.</p>
 <p>Use hostip to identify the IP address of the host computer.</p>
-<p>Use port to identify the port.</p>
+<p>Use port to identify the port. The default start port is 49152, and the default end port is 65535. </p>
 <p>Use key to provide a password to set up a secure connection.</p>
 <p>Use nodhcp to avoid using a DHCP connection. (optional)</p>
 <p>Use busparams to select the bus number, device number, and function number of an adapter for a specific PCI bus device. (optional)</p>
 <p>Examples:</p>
-<pre class="syntax" space="preserve"><code>setup /netdebug:hostip=10.125.4.86,port=1,key=0.0.0.0 
-setup /netdebug:hostip=10.125.4.86,port=1,key=abcdefg.123.hijklmnop.456,nodhcp 
-setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1.5.0</code></pre>
+<pre class="syntax" space="preserve"><code>setup /netdebug:hostip=10.125.4.86,port=50000,key=0.0.0.0 
+setup /netdebug:hostip=10.125.4.86,port=50000,key=abcdefg.123.hijklmnop.456,nodhcp 
+setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,busparams=1.5.0</code></pre>
 <p>For details, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](http://go.microsoft.com/fwlink/p/?linkid=317384).</p></td>
 </tr>
 <tr class="odd">
@@ -324,6 +326,12 @@ setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1
 <p>This setting is new for Windows 10.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p><strong>/ReflectDrivers</strong><em>&lt;location&gt;</em></p></td>
+<td align="left"><p>Specifies the path to a folder that contains encryption drivers for a computer that has third-party encryption enabled.</p>
+<pre class="syntax" space="preserve"><code>Setup /ReflectDrivers &lt;folder_path&gt; </code></pre>
+<p>This setting is new for Windows 10, version 1607.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p><strong>/ResizeRecoveryPartition</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>
 <td align="left"><p>Specifies whether it's OK to resize the existing Windows Recovery Environment (Windows RE) partition or create a new one during installation.</p>
 <p><strong>Enable</strong>: During installation, Windows can resize the existing Windows RE tools partition or create a new one if needed.</p>
@@ -331,7 +339,7 @@ setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1
 <p>To learn more about Windows RE partitions, see [UEFI/GPT-based hard drive partitions](configure-uefigpt-based-hard-drive-partitions.md) and [BIOS/MBR-based hard drive partitions](configure-biosmbr-based-hard-drive-partitions.md).</p>
 <pre class="syntax" space="preserve"><code>Setup /resizerecoverypartition disable</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/ShowOOBE</strong> {<strong>full</strong> | <strong>none</strong>}</p></td>
 <td align="left"><p><strong>full</strong>: Requires the user to interactively complete the out of box experience (OOBE).</p>
 <p><strong>none</strong>: Skips OOBE and selects the default settings.</p>
@@ -339,44 +347,44 @@ setup /netdebug:hostip=10.125.4.86,port=1,key=dont.use.previous.keys,busparams=1
 <pre class="syntax" space="preserve"><code>setup.exe /auto upgrade /showoobe full</code></pre>
 <p>This setting is new for Windows 10.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/Telemetry</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>
 <td align="left"><p>Specifies whether Windows Setup should capture and report installation data.</p>
 <p><strong>Enable</strong>: Setup captures and reports installation data.</p>
 <p><strong>Disable</strong>: Setup does not capture and report installation data.</p>
 <pre class="syntax" space="preserve"><code>Setup /telemetry disable</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/TempDrive</strong> {<strong>Enable</strong> | <strong>Disable</strong>}</p></td>
 <td align="left"><p>Instructs Windows Setup to put temporary installation files on the specified partition. For an upgrade, the <strong>/tempdrive:</strong> option affects only the placement of temporary files. The operating system is upgraded in the partition from which you run the Setup.exe file.</p><p>The /tempdrive parameter is available in Windows 10, version 1607, but it is not available in earlier versions of Windows 10.</p>
 <p><em>&lt;drive_letter&gt;</em> specifies the partition to copy installation files to during Windows Setup. For example:</p>
 <pre class="syntax" space="preserve"><code>Setup /tempdrive:H</code></pre></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/Unattend:</strong><em>&lt;answer_file</em>&gt;</p></td>
 <td align="left"><p>Enables you to use an answer file with Windows Setup. This is known as an unattended installation. You must specify a value for <em>&lt;answer_file&gt;</em>. Windows Setup applies the values in the answer file during installation.</p>
 <p><em>&lt;answer_file&gt;</em> specifies the file path and file name of the unattended Windows Setup answer file.</p>
 <pre class="syntax" space="preserve"><code>Setup /unattend:\\server\share\unattend.xml</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/Uninstall</strong> {<strong>enable</strong> | <strong>disable</strong>}</p></td>
 <td align="left"><p>Determines whether Windows will include controls that allow the user to go back to the previous operating system.</p>
 <p>This setting is new for Windows 10.</p>
 <pre class="syntax" space="preserve"><code>Setup /uninstall disable</code></pre></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/USBDebug:</strong><em>&lt;hostname&gt;</em></p></td>
 <td align="left"><p>Sets up debugging on a USB port. Debug data is effective on the next reboot.</p>
 <p><em>&lt;hostname&gt;</em> specifies the name of the computer to debug. For example:</p>
 <pre class="syntax" space="preserve"><code>Setup /usbdebug:testmachine01</code></pre></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>/WDSDiscover</strong></p></td>
 <td align="left"><p>Specifies that the Windows Deployment Services (WDS) client should be in discover mode.</p>
 <p>If you do not specify <strong>/wdsserver</strong> with this option, WDS searches for a server. For example, to start the WDS client in this dynamic discover mode, run the following command:</p>
 <pre class="syntax" space="preserve"><code>Setup /wds /wdsdiscover</code></pre></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>/WDSServer:</strong><em>&lt;servername&gt;</em></p></td>
 <td align="left"><p>Specifies the name of the Windows Deployment Services server that the client should connect to.</p>
 <p>To use this setting, you must also use the <code>/wdsdiscover</code> option.</p>
