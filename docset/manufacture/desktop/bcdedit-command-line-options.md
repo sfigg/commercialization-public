@@ -91,17 +91,15 @@ The following command-line options are available for BCDEdit.exe.
 For example, beginning with Windows 10, you can enable flightsigning on devices that are not connected to the internet. To enable flightsigning, run the following commands and then reboot:
 
 ``` syntax
-Bcdedit /set <id> flightsigning on
+Bcdedit /set {bootmgr} flightsigning on
 Bcdedit /set flightsigning on
 ```
 To turn off flightsigning:
 
 ``` syntax
-Bcdedit /set <id> flightsigning off
+Bcdedit /set {bootmgr} flightsigning off
 Bcdedit /set flightsigning off
 ``` 
-
-where &lt;id&gt; is the GUID of the Loader object that is used to load the operating system. "Default" can be used if the operating system is the default option of the Boot Manager menu.
 
 ### <span id="Controlling_output"></span><span id="controlling_output"></span><span id="CONTROLLING_OUTPUT"></span>Controlling output
 
