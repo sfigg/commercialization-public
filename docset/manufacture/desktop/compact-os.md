@@ -123,7 +123,7 @@ Dism /Unmount-Image /MountDir:C:\mount\Windows /Commit
 Dism /Export-Image /SourceImageFile:C:\Images\install.wim /SourceIndex:1 /DestinationImageFile:C:\Images\install_cleaned.wim
 ```
 
-where *C:\\Images\\install.wim* is a Windows image file that you want to update. You can optionally specify the /Defer parameter with /ResetBase to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete. 
+where *C:\\Images\\install.wim* is a Windows image file that you want to update. Beginning with Windows 10, version 1607, you can optionally specify the /Defer parameter with /ResetBase to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete. 
 
 ## <span id="Size_requirements_and_considerations"></span><span id="size_requirements_and_considerations"></span><span id="SIZE_REQUIREMENTS_AND_CONSIDERATIONS"></span>Size requirements and considerations
 
