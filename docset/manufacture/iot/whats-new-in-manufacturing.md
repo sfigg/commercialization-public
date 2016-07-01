@@ -5,9 +5,10 @@ MSHAttr: 'PreferredLib:/library'
 title: What's new in IoT Core manufacturing
 ---
 
-# What's new in IoT Core manufacturing
+# What's new in IoT Core manufacturing and servicing
 
 ## <span id="IoT_Core_AddOns"></span>IoT Core Add-Ons
+
 
 **June 20, 2016**
 *  New BSP tools added:

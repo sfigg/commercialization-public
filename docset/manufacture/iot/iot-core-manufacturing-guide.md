@@ -8,16 +8,19 @@ title: IoT Core manufacturing guide
 
 # IoT Core manufacturing guide
 
+Thinking about mass-producing devices running Windows 10 IoT Core? Use the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md) to create images that you can quickly flash onto new devices. 
+
+You can create **test images**, which include tools for quickly accessing and modifying devices. Test images are great for:
+-  Developers, hardware vendors, and manufacturers (OEMs) who are trying out new device designs.
+-  Hobbyists and organizations that are creating devices designed to run in non-networked or controlled network environments.
+
+You can create **retail images**, which can be made more secure for public or corporate networks while still receiving updates.
+
+You can add customizations, including apps, settings, hardware configurations, and board support packages (BSPs).
+
+For OEM-style images, you’ll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
-This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after you've sent them to your customers.
-
-To do this, we'll use the tools in the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
-
-We'll show you how to wrap your apps, files, settings, and drivers into packages that can go into the image. Packages help OEMs, ODMs, developers, and Microsoft work together to deliver security and feature updates to your devices without stomping over each other's work.
-
-This guide is written toward OEMs, but ODMs and developers can use the same processes to test IoT Core apps, drivers, board support packages (BSPs).
 
 ## <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
 -   [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md)
