@@ -88,13 +88,13 @@ The following command-line options are available for BCDEdit.exe.
 | /deletevalue | Deletes a specified element from a boot entry. |
 | /set         | Sets an entry option value.                    |
 
-For example, beginning with Windows 10, you can enable flightsigning on devices that are not connected to the internet. To enable flightsigning, run the following commands and then reboot:
+For example, this command will enable the system to trust Windows Insider Preview builds that are signed with certificates that are not trusted by default:
 
 ``` syntax
 Bcdedit /set {bootmgr} flightsigning on
 Bcdedit /set flightsigning on
 ```
-To turn off flightsigning:
+Reboot after running the command. To turn off flightsigning:
 
 ``` syntax
 Bcdedit /set {bootmgr} flightsigning off
