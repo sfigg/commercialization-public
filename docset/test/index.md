@@ -1,6 +1,6 @@
 ---
-title: Performance
-description: Provides guidelines for testing the performance of Windows hardware and software.
+title: Test
+description: Provides guidelines for testing Windows hardware and software.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -9,7 +9,7 @@ ms.assetid: 7dc2a5d2-81e3-4e44-9477-b0d0ca4ce59b
 
 # Performance
 
-See the following sections for guidelines for testing the performance of Windows 10 hardware and software.
+See the following sections for guidelines for testing Windows 10 hardware and software.
 
 | Topic                                               | Description                                                                                                                                                                             |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
