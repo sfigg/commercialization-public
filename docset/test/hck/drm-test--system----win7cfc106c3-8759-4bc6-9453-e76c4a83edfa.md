@@ -1,0 +1,132 @@
+---
+author: joshbax-msft
+title: DRM Test (System) - Win7
+description: DRM Test (System) - Win7
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: f604e3d3-542d-414d-8520-af4bc1791ede
+---
+
+# DRM Test (System) - Win7
+
+
+This test verifies that a device and driver properly protect the copyrighted digital audio stream.
+
+## Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Associated requirements</strong></p></td>
+<td><p>System.Fundamentals.SystemAudio.Audio</p>
+<p>[See the system hardware requirements.](http://go.microsoft.com/fwlink/p/?linkid=254482)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Platforms</strong></p></td>
+<td><p>Windows 7 (x64) Windows 7 (x86) Windows Server 2008 R2 (x64)</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Expected run time</strong></p></td>
+<td><p>~8 minutes</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Categories</strong></p></td>
+<td><p>Certification</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Type</strong></p></td>
+<td><p>Automated</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements:[Audio Device Testing Prerequisites](audio-device-testing-prerequisites.md).
+
+## Troubleshooting
+
+
+For troubleshooting information, see [Troubleshooting System Fundamentals Testing](troubleshooting-system-fundamentals-testing.md).
+
+This test returns Pass or Fail. To review test details, review the test log from Windows Hardware Certification Kit (Windows HCK) Studio.
+
+## More information
+
+
+### Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>DRMTest.exe</p></td>
+<td><p>Without any options, the test enumerates devices.</p></td>
+</tr>
+<tr class="even">
+<td><p>-c [string]</p></td>
+<td><p>Starts the application and runs the test cases that are specified in the profile file (.pro).</p></td>
+</tr>
+<tr class="odd">
+<td><p>-h [string]</p></td>
+<td><p>Specifies the Plug and Play (PnP) identifier (ID) of the device to that you are testing.</p></td>
+</tr>
+<tr class="even">
+<td><p>wdk_drmtest.pro</p></td>
+<td><p>The profile file (.pro) of the test cases to run.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### File list
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>DRMTest.exe</p></td>
+<td><p>[testbinroot]\nttest\multimediatest\AVCore\Audio\WDK\</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
