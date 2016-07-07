@@ -22,12 +22,10 @@ The version of the LIP must match the version of Windows. For example, you can't
 For Windows 10, language packs and LIPs are also available to download from Windows Update. You can add additional languages by using **Control Panel**. This process requires internet access and access to Windows Update. IT Professionals and end-users can use Windows Update to add additional languages to their Windows installations.
 
 -   OEMs can view and download LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359).
--   System Builders can view and download LIPs from the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358)
--   IT Professionals can view and download LIPs from the [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=262343).
+-   System Builders can view and download LIPs from the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   Users can get languages or LIPs from Windows Update. Go to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. Select the language you want to use from the list, then choose which region's version you want to use. Your download will begin immediately.
 
 ## <span id="Install_LIPs"></span><span id="install_lips"></span><span id="INSTALL_LIPS"></span>Install LIPs
-
 
 **To install a LIP using audit mode (used for manufacturing PCs)**
 
