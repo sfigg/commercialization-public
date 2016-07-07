@@ -59,13 +59,13 @@ For Windows 10, language packs and LIPs are also available to download from Win
 4.  If the base LP isn't in the image already, add it.
 
     ``` syntax
-    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\es-ES\lp.cab
+    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_es-es.cab
     ```
 
 5.  Add the LIP.
 
     ``` syntax
-    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\ca-ES\lp.cab
+    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\x64\langpacks\Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es.cab
     ```
 
 6.  If you're creating Windows Setup media or using a distribution share, recreate the lang.ini file.
