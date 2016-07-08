@@ -777,6 +777,7 @@
 #### [Get-RequestForUpdate cmdlet](service/mobile/get-requestforupdate-cmdlet.md)
 #### [Request-UpdateCancellation cmdlet](service/mobile/request-updatecancellation.md)
 ### [Resetting a mobile device](service/mobile/resetting-the-phone.md)
+### [Launch the MDM enrollment app in Windows](service/mobile/launch-the-mdm-enrollment-app-in-windows.md)
 ## [Windows Embedded device upgrades](service/mobile/upgrade-windows-embedded-devices-to-windows-10.md)
 
 ## [IoT Core updates](service/iot/index.md)
