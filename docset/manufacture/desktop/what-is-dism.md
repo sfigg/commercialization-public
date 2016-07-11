@@ -201,7 +201,7 @@ DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Dr
 
 [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md)
 
-[Language Packs (lp.cab) and Windows Deployment](language-packs--lpcab--and-windows-deployment.md)
+[Language Packs](language-packs-and-windows-deployment.md)
 
 [Understanding Servicing Strategies](understanding-servicing-strategies.md)
 

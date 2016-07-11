@@ -678,7 +678,7 @@ OEMs using **x86** Windows 10 image, add the following setting to **USB-B**\Answ
 
 #### Adding LPs / LIPs / FoDs / GDRs
 
-The following table lists language pack components and any dependencies. For more information, see [Language packs](language-packs--lpcab--and-windows-deployment.md) and [Features on Demand (FoD)](features-on-demand-v2--capabilities.md).
+The following table lists language pack components and any dependencies. For more information, see [Language packs](language-packs-and-windows-deployment.md) and [Features on Demand (FoD)](features-on-demand-v2--capabilities.md).
 
 
 <table border="1" cellpadding="0">
@@ -713,7 +713,7 @@ The following table lists language pack components and any dependencies. For mor
             </td>
             <td>
                 <p>
-                    <code>lp.cab</code>
+                    <code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code>
                 </p>
             </td>
             <td>
@@ -735,7 +735,7 @@ The following table lists language pack components and any dependencies. For mor
             </td>
             <td>
                 <p>
-                    <code>lp.cab</code>
+                    <code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es.cab</code>
                 </p>
             </td>
             <td>

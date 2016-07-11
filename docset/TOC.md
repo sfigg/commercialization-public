@@ -452,7 +452,7 @@
 #### [Device Drivers](manufacture/desktop/device-drivers-and-deployment-overview.md)
 ##### [Maintain Driver Configurations when Capturing a Windows Image](manufacture/desktop/maintain-driver-configurations-when-capturing-a-windows-image.md)
 ##### [Add a Driver Online in Audit Mode](manufacture/desktop/add-a-driver-online-in-audit-mode.md)
-#### [Language Packs (lp.cab)](manufacture/desktop/language-packs--lpcab--and-windows-deployment.md)
+#### [Language Packs](manufacture/desktop/language-packs-and-windows-deployment.md)
 ##### [Add Language Packs to Windows](manufacture/desktop/add-language-packs-to-windows.md)
 ##### [Multilingual Windows Image Creation](manufacture/desktop/multilingual-windows-image-creation.md)
 ##### [Add and Remove Language Packs on a Running Windows Installation](manufacture/desktop/add-and-remove-language-packs-on-a-running-windows-installation.md)
