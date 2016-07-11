@@ -26,7 +26,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 1.  Copy the Windows distribution to a local directory. For example, copy the contents of the Windows product DVD to a directory named **C:\\my\_distribution**.
 
-2.  Locate the lp.cab files for the languages that you want to add to the Windows distribution and copy them to a local directory. 
+2.  Locate the language pack .cab files for the languages that you want to add to the Windows distribution and copy them to a local directory. 
 
 3.  Create the **\\Langpacks** directory in the distribution share. For example:
 
@@ -38,7 +38,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
     ``` syntax
     mkdir C:\my_distribution\langpacks
-    xcopy C:\LPs\fr-fr\lp.cab C:\my_distribution\langpacks\lp.cab
+    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
     ```
 
 5.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
@@ -82,7 +82,6 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
     The default language in the distribution is:
     en-US
-
 
     The other available languages in the distribution are:
     es-es, fr-fr
