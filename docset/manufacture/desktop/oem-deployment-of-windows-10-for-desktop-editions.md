@@ -907,15 +907,11 @@ Obtain the Win 10 32 64 MultiLang OPK LangPackAll and the Win 10 32-BIT x64 Mult
 
 Note: you must use the Microsoft Media Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to merge the DDP folder structure into a mountable image for the Win 10 32-BIT x64 MultiLang OPK Feat on Demand From DOC Center.
 
-1.  copy LP.cab to E:\Languagepacks\x86\de-de.
+1.  Copy the x86 and x64 language pack .cab files to E:\Languagepacks\.
 
-    ![Copy LP.cab](images/copy-lp-cab.png)
+1.  Copy partial language packs to **USB-B**.
 
-1.  Repeat x64 de-de language pack copying to E:\Languagepacks\x64\de-de for x64-bit devices.
-
-2.  Copy partial language packs to **USB-B**.
-
-3.  Highlight all de-de language packs and copy to E:\LanguageFeaturePacks\x86.
+3.  Highlight all de-de Features on Demand files and copy to E:\LanguageFeaturePacks\.
 
     ![Highlight Language Packs](images/highlight-language-packs.png)
 
@@ -925,15 +921,15 @@ Important: Do not install a language pack after an update. If an update (hotfix,
 
 Add languages, and Features On Demand to the Windows image.
 
-For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: lp.cab, then –**Basic**, then –**TextToSpeech**, then –**Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command, as shown in the examples in the following tables (where E: is the drive where language pack exists).
+For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: the language pack .cab file, then –**Basic**, then –**TextToSpeech**, then –**Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command, as shown in the examples in the following tables (where E: is the drive where language pack exists). Beginning with Windows 10 version 1607, language pack file names include the Windows edition, platform architecture, and locale. The Features On Demand (FOD) packages should be from media that matches the platform architecture of the device. For example, use FOD packages from x64 media for an x64-based computer.  
 
 If you use an **x64** Windows 10 image:
 
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"e:\LanguageFeaturePacks\x64\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"e:\LanguageFeaturePacks\x64\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 
 If you use an **x86** Windows 10 image:
 
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\de-de\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x86_de-de.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-de-de-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-de-de-Package.cab" /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-de-de-Package.cab"
 
 Verify the package has been installed to the Windows image:
 
@@ -945,11 +941,11 @@ As part of the language pack re-factoring for Windows 10, some languages with Fo
 
 If you use an **x64** Windows 10 image:
 
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x64\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x64_ja-jp.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab
 
 If you use an **x86** Windows 10 image:
 
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\x86\ja-jp\lp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath:"E:\LanguagePacks\Microsoft-Windows-Client-Language-Pack_x86_ja-jp.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" **/PackagePath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"** /packagepath:"E:\LanguageFeaturePacks\x86\Microsoft-Windows-RetailDemo-OfflineContent-Content-ja-jp-Package.cab"
 
 #### Add languages to Windows RE
 

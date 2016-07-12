@@ -463,6 +463,7 @@
 ##### [Default Input Profiles (Input Locales) in Windows](manufacture/desktop/default-input-locales-for-windows-language-packs.md)
 ##### [Default Time Zones](manufacture/desktop/default-time-zones.md)
 ##### [Keyboard Identifiers and Input Method Editors for Windows](manufacture/desktop/windows-language-pack-default-values.md)
+##### [Where is lp.cab?](manufacture/desktop/where-is-lpcab.md)
 #### [Features On Demand V2 (Capabilities)](manufacture/desktop/features-on-demand-v2--capabilities.md)
 #### [Configure Oobe.xml](manufacture/desktop/configure-oobexml.md)
 ##### [Oobe.xml Settings](manufacture/desktop/oobexml-settings.md)
