@@ -13,7 +13,7 @@ You can add support for additional languages on a running operating system, or t
 
 For information about installing Language Interface Packs (LIPs), see [Add Language Interface Packs to Windows](add-language-interface-packs-to-windows.md).
 
-In Windows 10, end users can use the **Language** page in the **Control Panel** to download and install additional language packs and Language Interface Packs (LIPs) from Windows Update.
+In Windows 10, users can install more languages and features by going to **Settings** &gt; **Time & language** &gt; **Region & language** &gt; **Add a language**. 
 
 ## <span id="online"></span><span id="ONLINE"></span>Add a Language Pack Online
 
@@ -29,10 +29,10 @@ You can also add language packs to Windows Preinstallation and Windows Recovery 
 
 1.  On the running operating system, open an elevated command-line prompt.
 
-2.  Type the following command to add a language pack to the operating system.
+2.  Type the following command to add a language pack (Spanish, in this example) to the operating system. 
 
     ``` syntax
-    Dism /online /Add-Package /PackagePath:C:\test\LangPacks\lp.cab
+    Dism /online /Add-Package /PackagePath:C:\test\LangPacks\Microsoft-Windows-Client-Language-Pack_x64_es-es.cab
     ```
 
 For more information about DISM international servicing commands, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)

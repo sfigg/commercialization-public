@@ -9,41 +9,37 @@ title: IoT Core manufacturing guide
 # IoT Core manufacturing guide
 
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10 Anniversary SDK Preview Build 14295.\]
+\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
 
 This guide walks you through creating Windows 10 IoT Core (IoT Core) images that can be flashed to retail devices and maintained after you've sent them to your customers.
 
-To do this, we'll start with a basic IoT Core image structure, provided by the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+To do this, we'll use the tools in the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
-We'll then show you how to wrap your apps, files, settings, and drivers into packages that can go into the image. Packages help OEMs, ODMs, developers, and Microsoft all work together to deliver security and feature updates to your devices without stomping on each other's work.
+We'll show you how to wrap your apps, files, settings, and drivers into packages that can go into the image. Packages help OEMs, ODMs, developers, and Microsoft work together to deliver security and feature updates to your devices without stomping over each other's work.
 
 This guide is written toward OEMs, but ODMs and developers can use the same processes to test IoT Core apps, drivers, board support packages (BSPs).
 
 ## <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
-
-
-Want to jump right in? Try our walkthrough of common scenarios:
 -   [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md)
 -   [Lab 1a: Create a basic image](create-a-basic-image.md)
 -   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
 -   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
 -   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
--   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
+-   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
 
 [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
 
-
 You can use the walkthrough as a guide to build both your test and retail images. In general terms:
-1.  Add each of your customizations (drivers, apps, settings) into signed package files.
-2.  Create a summary list of these packages, called a feature manifest (FM), which lists your packages by feature name.
-3.  Get IoT Core's packages and FMs from us.
-4.  Get the packages and FMs from your hardware manufacturer, such as a board support package (BSP) and the BSPFM.
-5.  List the FMs and features you want to install in an OEMInput file.
-6.  Create a flashable image file (FFU) using ImgGen and the OEMInput file.
-7.  Flash the image to your devices.
+
+1.  Test your customizations, including apps, settings, drivers, and BSPs, to make sure they work.
+2.  Install test certificates on your PC, and package your customizations into .cab files.
+2.  Create a test image that includes your customizations, along with the IoT Core package, and any updates from your hardware manufacturer.
+3.  Flash the image to a device and test it. Use the test tools built into the test images to troubleshoot any new issues.
+4.  If it works, sign your customizations, and repackage them into new .cab files.
+5.  Create a retail image with your signed files, and use it to manufacture new devices.
 
 ![iot core image creation process](images/oemworkflow.png)
 
@@ -139,33 +135,30 @@ The image configuration file lists:
     <tr class="odd">
     <td align="left">Test-signed packages</td>
     <td align="left">Not supported</td>
-    <td align="left">Supported.
+    <td align="left">Supported
     <p>IOT_ENABLE_TESTSIGNING feature must be included.</p></td>
     </tr>
     <tr class="even">
     <td align="left">Code integrity check</td>
     <td align="left">Supported. By default, this is enabled.</td>
-    <td align="left">Not supported.
-    <p>IOT_DISABLE_UMCI feature must be included.</p></td>
+    <td align="left">Not supported
+    <p>IOT_DISABLE_UMCI feature must be included</p></td>
     </tr>
     </tbody>
     </table>
 
-
 ### <span id="Board_Support_Packages"></span><span id="board_support_packages"></span><span id="BOARD_SUPPORT_PACKAGES"></span>Board Support Packages (BSPs)
 Board Support Packages contain a set of software, drivers, and boot configurations for a particular board, typically supplied by a board manufacturer. The board manufacturer may periodically provide updates for the board, which your devices can receive and apply. 
 
-In [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md), you modify a BSP by adding our own drivers. When you do this, you become the new owner for the new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
-
-
-
 ## <span id="OK__let_s_try_it_"></span><span id="ok__let_s_try_it_"></span><span id="OK__LET_S_TRY_IT_"></span>OK, let's try it!
-
 
 Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md).
 
 ## <span id="related_topics"></span>Related topics
 
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/IoTCore.htm)
+
+[IoT Core Developer Resources](https://developer.microsoft.com/en-us/windows/iot)
 
 [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
 

@@ -40,7 +40,7 @@ Before you begin, make sure you have the following items:
 
 -   Windows installation media (DVD or Windows installation files) for multiple languages. This guide uses EN-US, De-DE and FR-FR media.
 
--   One or more language packs (**lp.cab** files).
+-   One or more language packs.
 
 -   A technician computer that has the Windows Assessment and Deployment Kit (Windows ADK) installed.
 
@@ -64,7 +64,7 @@ Always install language packs before you install updates. If you install an upda
 
 **To add language packs to a Windows image**
 
-1.  Open an elevated Deployment Tools command prompt.
+1.  Open an elevated Deployment and Imaging Tools Environment command prompt.
 
 2.  Type the following commands to create the following folders:
 
@@ -72,8 +72,7 @@ Always install language packs before you install updates. If you install an upda
     Mkdir C:\mount\windows
     Mkdir C:\mount\winre 
     Mkdir C:\mount\boot
-    Mkdir C:\LanguagePack\fr-fr
-    Mkdir C:\LanguagePack\de-de
+    Mkdir C:\LanguagePack
     Mkdir C:\my_Distribution 
     ```
 
@@ -83,11 +82,11 @@ Always install language packs before you install updates. If you install an upda
     xcopy e:\windows C:\my_distribution /s /e
     ```
 
-4.  Copy each language pack (**Lp.cab**) to the technician computer. For example:
+4.  Copy each language pack to the technician computer. For example:
 
     ``` syntax
-    xcopy H:\LPs\Fr-FR\lp.cab C:\LanguagePack\fr-fr 
-    xcopy H:\LPs\De-DE\lp.cab C:\LanguagePack\de-de
+    xcopy H:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\LanguagePack
+    xcopy H:\LPs\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab C:\LanguagePack
     ```
 
 5.  Type the following command to retrieve the name or index number for the image that you want to modify:
@@ -113,7 +112,7 @@ Always install language packs before you install updates. If you install an upda
 8.  Add language packs to the mounted offline Windows image. You can add multiple packages on one command line.
 
     ``` syntax
-    Dism /Add-Package /image:C:/mount/windows /PackagePath:C:\LanguagePack\de-DE\LP.cab /PackagePath:C:\Languagepack\fr-FR\LP.cab 
+    Dism /Add-Package /image:C:/mount/windows /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_de-de.cab /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
     ```
 
 9.  Add language packs to the mounted offline Windows recovery image. The language packs that are used for the Windows recovery image are the same lp.cab files used with Windows PE. Use the language packs for Windows PE that are installed with the Windows ADK. For example:
@@ -517,10 +516,8 @@ You should not remove a language pack from an offline Windows image if there are
     **Note**  
     You can specify the package identity using the **/PackageName** option, or you can point to the original source of the package using the **/PackagePath** option. For example:
 
-     
-
     ``` syntax
-    Dism /Image:C:\mount\windows /Remove-Package /PackagePath:C:\LanguagePack\fr-fr\LP.cab 
+    Dism /Image:C:\mount\windows /Remove-Package /PackagePath:C:\LanguagePack\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab 
     Dism /Image:C:\mount\winre /Remove-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
     ```
 

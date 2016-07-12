@@ -26,7 +26,7 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
 
 1.  Copy the Windows distribution to a local directory. For example, copy the contents of the Windows product DVD to a directory named **C:\\my\_distribution**.
 
-2.  Locate the lp.cab files for the languages that you want to add to the Windows distribution and copy them to a local directory. For example, copy the lp.cab files to **C:\\LPs\\fr-fr** and **C:\\LPs\\de-de**.
+2.  Locate the language pack .cab files for the languages that you want to add to the Windows distribution and copy them to a local directory. 
 
 3.  Create the **\\Langpacks** directory in the distribution share. For example:
 
@@ -34,13 +34,11 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     mkdir C:\my_distribution\langpacks 
     ```
 
-4.  Copy the language pack (Lp.cab) and the parent folder (fr-fr, de-de, and so on) to the **\\Langpacks** directory of the distribution share. For example:
+4.  Copy the language packs to the **\\Langpacks** directory of the distribution share. For example:
 
     ``` syntax
-    mkdir C:\my_distribution\langpacks\fr-fr
-    mkdir C:\my_distribution\langpacks\de-de
-    xcopy C:\LPs\fr-fr\lp.cab C:\my_distribution\langpacks\fr-fr\lp.cab
-    xcopy C:\LPs\de-de\lp.cab C:\my_distribution\langpacks\de-de\lp.cab
+    mkdir C:\my_distribution\langpacks
+    xcopy C:\LPs\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab C:\my_distribution\langpacks\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab
     ```
 
 5.  (Optional) To make additional languages available in Windows Setup, copy the localized Windows Setup sources to the distribution share. For example:
@@ -78,13 +76,12 @@ Adding language packs to the **\\Langpacks** directory can extend the Windows S
     Keyboard layered driver : PC/AT Enhanced Keyboard (101/102-Key)
 
     Installed language(s): en-US
-      Type : Fully localized language.
+    Type : Fully localized language.
 
     Reporting distribution languages.
 
     The default language in the distribution is:
     en-US
-
 
     The other available languages in the distribution are:
     es-es, fr-fr

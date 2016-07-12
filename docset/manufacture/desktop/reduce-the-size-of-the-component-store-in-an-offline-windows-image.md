@@ -62,7 +62,7 @@ To complete the walkthrough, you need the following:
     Dism /Image:C:\test\offline /Cleanup-Image /StartComponentCleanup /ResetBase
     ```
     
-    If DISM /Resetbase is a long-running operation, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
+   Beginning with Windows 10, version 1607, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
     
 9.  Commit the changes and unmounts the image in order to save the changes that you’ve made. For example:
 

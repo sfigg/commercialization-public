@@ -1,12 +1,12 @@
 ---
 author: Justinha
-Description: 'Language Packs (lp.cab)'
+Description: 'Language Packs'
 ms.assetid: 051a9952-c160-4f51-8575-bde6e4868b03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Language Packs (lp.cab)'
+title: 'Language Packs'
 ---
 
-# Language Packs (lp.cab)
+# Language Packs 
 
 
 To design PCs that work better for customers in different regions, you can set up Windows with the right set of local languages, settings, and keyboards or other input devices.
@@ -16,7 +16,7 @@ To design PCs that work better for customers in different regions, you can set u
 
 To help you reduce the size of your image, language packs have now been split into the following language components and [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md):
 
--   UI Text (lp.cab)
+-   UI Text (the language pack .cab file)
 -   Basic (spell check, typing)
 -   Fonts
 -   Handwriting
@@ -26,11 +26,7 @@ To help you reduce the size of your image, language packs have now been split in
 
 You can now choose to add only core language pack UI resources to your image, significantly reducing image size.
 
-To preload Cortana features, add the following features on demand: UI text (lp.cab), the Basic, Text-to-Speech, and Speech language components.
-
-**Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](install-windows-automatically-from-a-usb-drive-sxs.md).
-
- 
+To preload Cortana features, add the following features on demand: UI text, the Basic, Text-to-Speech, and Speech language components. 
 
 Not all components and features on demand are available for every language.
 

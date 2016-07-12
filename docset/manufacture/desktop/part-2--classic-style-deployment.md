@@ -571,26 +571,29 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
 
     For example, the drives can be lettered like this: C = Windows; D = USB flash drive.
 
-3.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). The script: **Walkthrough-Deploy.bat** relies on other scripts. Place them all in the same folder to make them work:
+3.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). The script **ApplyImage.bat** relies on these other scripts to be placed in the same folder:
 
     -   **CreatePartitions-UEFI.txt**
     -   **CreatePartitions-BIOS.txt**
     -   **HideRecoveryPartitions-UEFI.txt**
     -   **HideRecoveryPartitions-BIOS.txt:**
 
+    You can download the scripts from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=800657). 
+
     ``` syntax
     D:
-    D:Walkthrough-Deploy.bat D:\WindowswithOffice.wim
+    D:ApplyImage.bat D:\WindowswithOffice.wim
     ```
 
     where *D* is the drive letter of the USB flash drive.
 
-    The scripts detect whether the PC is based on UEFI or BIOS, and then prompt you to press a key.
-
-    When prompted by the script, press Y to select Compact OS, or N to select a non-compacted OS:
-
-    -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space. Use this for hardware configuration 1 and 2.
-    -   **N**: Applies the image as a fully-uncompressed image. This is best for high-performance devices or devices that use traditional hard drives with rotational media. Use this for hardware configuration 3.
+    When prompted by the script: 
+    
+    -  Press Y to format the drive 
+    -  Press Y to select Compact OS, or N to select a non-compacted OS:
+        -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space. Use this for hardware configuration 1 and 2.
+        -   **N**: Applies the image as a fully-uncompressed image. This is best for high-performance devices or devices that use traditional hard drives with rotational media. Use this for hardware configuration 3.
+    -  Press N to indicate the image does not include extended attributes (EA).
 
     The scripts apply the image to the drive, and then finish.
 

@@ -23,9 +23,6 @@ Use DISM to add or remove capabilities:
 -   Use the /Online option to add the capability to your PC.
 
 -   Use the /Image:&lt;mount path&gt; option to add the capability to an Windows image file (.wim).
-
-**Note**  If you use Windows Imaging and Configuration Designer (ICD) to enable Cortana or for pen support, you must add feature packages in a specific order. For more information, see [Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)](install-windows-automatically-from-a-usb-drive-sxs.md).
-
  
 
 <table>
@@ -112,7 +109,7 @@ Not all capabilities are available for every language.
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see Features On Demand V2 (Capabilities).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. </p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
