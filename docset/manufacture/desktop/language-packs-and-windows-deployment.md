@@ -4,7 +4,6 @@ Description: 'Language Packs'
 ms.assetid: 051a9952-c160-4f51-8575-bde6e4868b03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Language Packs'
-redirect_url: https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/language-packs--lpcab--and-windows-deployment
 ---
 
 # Language Packs 
@@ -44,7 +43,7 @@ For some regions, language interface packs (LIPs) can provide additional transla
 
 -   OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 -   IT Professionals can download language packs from the [Microsoft Volume Licensing Site](http://go.microsoft.com/fwlink/?LinkId=125893).
--   After Windows is installed, end users can download and install additional language packs and LIPs from the **Language** Control Panel. For more information, see the [Local Language Program](http://go.microsoft.com/fwlink/?LinkId=262343).
+-   After Windows is installed, end users can download and install additional language packs in **Settings** > **Time & language** > **Region and language** > **Add a language**. 
 
 Related information:
 
