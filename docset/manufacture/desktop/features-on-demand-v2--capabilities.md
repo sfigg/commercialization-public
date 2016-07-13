@@ -13,7 +13,7 @@ Features on Demand v2 (Capabilities), introduced in Windows 10, are Windows fea
 
 When the PC needs a new feature, it can request the feature package from Windows Update.
 
-Unlike previous feature packs, Features on Demand V2 can be applicable to multiple Windows builds, and can be added using DISM without knowing the build number.
+Unlike previous feature packs, Features on Demand V2 can be applicable to multiple Windows builds, and can be added using DISM without knowing the build number. Always use Features on Demand that match the architecture of the operating system. Adding Features on Demand of the wrong architecture might not return an error immediately, but will likely cause functionality issues in the operating system. 
 
 ## <span id="Adding_or_removing_features_capabilities"></span><span id="adding_or_removing_features_capabilities"></span><span id="ADDING_OR_REMOVING_FEATURES_CAPABILITIES"></span>Adding or removing features/capabilities
 
@@ -22,7 +22,7 @@ Use DISM to add or remove capabilities:
 
 -   Use the /Online option to add the capability to your PC.
 
--   Use the /Image:&lt;mount path&gt; option to add the capability to an Windows image file (.wim).
+-   Use the /Image:&lt;mount path&gt; option to add the capability to a Windows image file (.wim).
  
 
 <table>
@@ -132,7 +132,7 @@ Not all capabilities are available for every language.
 <tr class="even">
 <td align="left">Speech recognition</td>
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package</code></td>
-<td align="left">Basic, Text-To-Speech recognition</td>
+<td align="left">Basic, Text-To-Speech</td>
 <td align="left">Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
 </tr>
 </tbody>
