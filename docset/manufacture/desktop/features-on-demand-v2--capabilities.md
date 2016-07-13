@@ -22,7 +22,7 @@ Use DISM to add or remove capabilities:
 
 -   Use the /Online option to add the capability to your PC.
 
--   Use the /Image:&lt;mount path&gt; option to add the capability to an Windows image file (.wim).
+-   Use the /Image:&lt;mount path&gt; option to add the capability to a Windows image file (.wim).
  
 
 <table>
@@ -132,7 +132,7 @@ Not all capabilities are available for every language.
 <tr class="even">
 <td align="left">Speech recognition</td>
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package</code></td>
-<td align="left">Basic, Text-To-Speech recognition</td>
+<td align="left">Basic, Text-To-Speech</td>
 <td align="left">Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
 </tr>
 </tbody>
