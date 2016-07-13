@@ -292,7 +292,8 @@ Use this option to display detailed information about providers. Providers refer
 ## <a href="" id="disablepagingexec"></a>Disablepagingexecutive
 
 
-Use this option to turn **Disable Paging Executive** settings *On* or *Off*.
+Use this option to specify whether drivers and kernel-mode system code can be paged to disk. Setting this option to *on* prevents paging.
+This option sets the value of [DisablePagingExecutive](https://technet.microsoft.com/en-us/library/cc959492.aspx) in the registry.
 
 **Syntax:**
 
