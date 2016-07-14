@@ -318,13 +318,13 @@ The following example forms a region when the starting event contains a payload 
 
 ### Filtering a region based on a condition
 
-WPA can include or exclude a region based on a condition, or *trigger*, which can be an event or another region. The trigger is specified in a **Filter** node, and the region that contains **Filter** is called the *target*.
+WPA can include or exclude a region based on a condition, or *trigger*, which can be an event or another region. The trigger is specified in a **Filter** element, and the region that contains **Filter** is the *target*.
 
-Each **Filter** node contains one **Event** node with the attributes described earlier in [Region types](#region-types) (*Provider*, *Id*, and *Version*), plus the following additional attributes: *OpCode* and *Type*.
+If the trigger is a *region*, then **Filter** must contain the region ID.
 
-*OpCode* is...
+If the trigger is an *event*, then **Filter** must contain an **Event** element with the *ProviderId* of the ETW provider and one or more of the following attributes: *Id*, *Version*, *OpCode*, and *Type*.
 
-*Type* specifies the mode of filtering the targeted region, including or excluding it based on the conditions described in the following table.
+*Id* and *Version* are described earlier in [Region types](#region-types). *OpCode* is whatever value you choose. *Type* specifies the mode of filtering the targeted region, including or excluding it based on the conditions described in the following table.
 
 | Type of filter | Description                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------|
@@ -335,7 +335,6 @@ Each **Filter** node contains one **Event** node with the attributes described e
 | InPost         | Include the target region only when it occurred after the most recent triggering event or region.    |
 | InPrev         | Include the target region only when it occurred prior to the first triggering event or region.       |
 
- 
 
 ### Parent-child relationships
 
