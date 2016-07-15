@@ -56,6 +56,8 @@ For FFU, this command applies a full flash update (.ffu) image to a specified dr
 
 This option doesn’t support applying an image from a virtual hard disk (VHD), though you can use this command to apply images to a .vhdx file that's been attached, partitioned, and formatted.
 
+If Dism /Apply-Image fails with error code 5 and you are using Windows 10 version 1607 with Windows Subsystem for Linux (WSL) feature, see [KB article 319598](https://support.microsoft.com/kb/3179598).
+
 Arguments for WIM:
 
 ``` syntax
