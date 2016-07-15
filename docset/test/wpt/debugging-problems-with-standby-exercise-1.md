@@ -20,7 +20,7 @@ The analysis process related to spurious wakes is fairly straightforward.
 
 3.  Click on **Session 2**. The system consumes 1.818 Watts of energy during 19 hours and the **DRIPS %** is 92%.
 
-    ![](images/standbylab1.png)
+    ![Screenshot shows a sample of Connected Standby Session 2](images/standbylab1.png)
 
 4.  Look at the **Top Offenders** table. The networking wireless device is listed as active 7% of the time during the session.
 
