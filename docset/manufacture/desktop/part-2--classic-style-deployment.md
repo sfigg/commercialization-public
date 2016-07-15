@@ -556,7 +556,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     
     **Note**  You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
 
-    ![](images/dep-win8-sxs-createdeploymentscript.jpg)
+    ![Image shows that to create a reference computer with customizations, you need a new Computer, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
 
 **Step 15: Format and set up the hard drive partitions on the reference device**
 
