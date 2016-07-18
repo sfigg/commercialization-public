@@ -49,17 +49,17 @@ You can specify from 4 to 100 intervals for a stacked-bar graph.
 
 To switch to flame graph, make sure the table is configured with columns to the left of the gold bar and a single numeric column to the right of the blue bar with SUM aggregation, and then select **Flame** from the graph menu at the top of the graph. Alternatively, use the built-in **Flame by Process, Stack** preset in **CPU Usage (Sampled)** graph.
 
-<html><br/><img src="..\images\wpa-select-chart-type-menu.png" alt="Chart menu in WPA." height="170"></html>
+<html><br/><img src="images\wpa-select-chart-type-menu.png" alt="Chart menu in WPA." height="170"></html>
 
 The following illustration is an example of CPU Sampled and the stacks filtered down to Notepad.exe. In the graph, **comctl32.dll!TV_DrawTree** is the largest frame in the current filtered view. From here, you can walk the stack to find where the most amount of work is performed.
 
-![Example of CPU Sampled and the stacks filtered to a smaller set.](../images/wpa-graph-flame-example-CPU-sampled.png)
+![Example of CPU Sampled and the stacks filtered to a smaller set.](images/wpa-graph-flame-example-CPU-sampled.png)
 
 The names of the flame groups are displayed when the text has a minimum height to be readable. To display a tooltip with the data, hover the mouse pointer over an item in the flame graph. To select the correspond data in the table, click a flame group to expand it in the table, or to filter it in-table, right-click and then click **Filter To Flame** in the data view. 
 
 Flame graphs can be configured with any order of grouping columns to the left of the Gold Bar. The following illustration shows grouping of disk usage and disk service time. The tooltip for **Normal**, shows the name and values of the flame group under the mouse pointer.
 
-![Flame graph example of disk usage and disk service time with a tooltip that displays the name and value of the flame group under the mouse pointer.](../images/wpa-graph-flame-example-disk-usage.png)
+![Flame graph example of disk usage and disk service time with a tooltip that displays the name and value of the flame group under the mouse pointer.](images/wpa-graph-flame-example-disk-usage.png)
 
 <a name="lifetime_graphs"></a>
 ## Lifetime Graphs
