@@ -24,11 +24,11 @@ The analysis process related to spurious wakes is fairly straightforward.
 
 4.  Look at the **Top Offenders** table. The networking wireless device is listed as active 7% of the time during the session.
 
-    ![](images/standbylab2.png)
+    ![Screenshot shows a sample of top offenders of battery consumption.](images/standbylab2.png)
 
 5.  Click on the networking device row to obtain details about this offender.
 
-    ![](images/standbylab3.png)
+    ![Screenshot shows a details about the networking device.](images/standbylab3.png)
 
 Spurious wakes are clearly identified by the report. There are 80 of them in this example. A follow-up discussion should happen with the IHV to determine why the wireless adapter is waking up the SoC unexpectedly. The underlying problem could be a bad device firmware implementation.
 
