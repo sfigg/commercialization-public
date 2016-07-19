@@ -163,13 +163,13 @@ Follow this procedure:
 
 3.  Expand the **Memory** set in the **Graph Explorer**.
 
-    ![](images/memoryfootprintlab7.png)
+    ![Screenshot of WPA graph explorer view.](images/memoryfootprintlab7.png)
 
 4.  Drag and drop the **Resident Set** graph into the Analysis tab.
 
 Your view should look something like this:
 
-![](images/memoryfootprintlab8.png)
+![Screenshot of WPA showing analysis tab view.](images/memoryfootprintlab8.png)
 
 Review how the data is presented. Here are some definitions of the most helpful columns to perform top level analysis:
 
@@ -246,7 +246,7 @@ Resident Set data can be displayed in many different ways based on the column ar
 
 1.  Select the **Process Private Working Set** preset.
 
-    ![](images/memoryfootprintlab9.png)
+    ![Screenshot of WPA Process Private Working Set drop down list.](images/memoryfootprintlab9.png)
 
 2.  Expand the **Active MMList** group.
 
@@ -272,7 +272,7 @@ Resident Set data can be displayed in many different ways based on the column ar
 
     3.  In the example below, **SearchIndexer.exe** uses 21.7 MB of active memory through **Heap** allocations, and 12.4 MB through **VirtualAlloc** API calls.
 
-    ![](images/memoryfootprintlab10.png)
+    ![Example table showing process usage.](images/memoryfootprintlab10.png)
 
 Focus on 3rd-party processes and determine if they need to be launched on boot as part of the preloaded software. As a developer, you should analyze the dynamic allocations your process is making to understand where optimizations can be made.
 
