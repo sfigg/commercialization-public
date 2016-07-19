@@ -21,11 +21,11 @@ The USB host controllers can power down only after all of the devices connected 
 
     -   Notice that the system is able to consume as little as 120 mW during Standby (e.g. see Standby Session 6).
 
-    ![](images/standbylab9.png)
+    ![Screenshot shows example data of the systems energy consumption.](images/standbylab9.png)
 
 3.  Click on **Session 10**. The system consumes 2.83 Watts of energy during 11 minutes and the **DRIPS %** is 0.
 
-    ![](images/standbylab10.png)
+    ![Screenshot shows example data of the systems energy consumption.](images/standbylab10.png)
 
 4.  Look at the **Top Offenders** table.
 
@@ -33,7 +33,7 @@ The USB host controllers can power down only after all of the devices connected 
 
     2.  XHC is the USB 3.0 host controller.
 
-![](images/standbylab11.png)
+![Screenshot shows example table of top offenders.](images/standbylab11.png)
 
 When the USB bus controller is active for minutes at a time in Modern Standby, it usually means that one USB device attached to the bus is not entering selective suspend, possibly because it doesn’t support selective suspend. The next logical step is to determine which USB device is staying in D0 by looking at an ETL trace.
 
@@ -56,7 +56,7 @@ To investigate USB issues, you’ll use the **DState** graph and table.
 
     -   You can see that the device is active for 98% of the trace (as shown in the **% Reason time** column).
 
-        ![](images/standbylab12.png)
+        ![Screenshot of sample data using WPA.](images/standbylab12.png)
 
 5.  Zoom in the region where the USB xHCI Host controller is active.
 
@@ -66,11 +66,11 @@ To investigate USB issues, you’ll use the **DState** graph and table.
 
     3.  The **% Reason time** should now be 100%.
 
-    ![](images/standbylab13.png)
+    ![Screenshot of sample data using WPA.](images/standbylab13.png)
 
 6.  Find the **Device Dstate** graph under the **Power** category of the **Graph Explorer**.
 
-    ![](images/standbylab14.png)
+    ![Screenshot of sample data using WPA.](images/standbylab14.png)
 
 7.  Drag and drop the **Device Dstate** graph in the **analysis** tab.
 
@@ -82,7 +82,7 @@ To investigate USB issues, you’ll use the **DState** graph and table.
 
 8.  Move the **DState** column right next to the **Type** column. Your viewport should look like this:
 
-    ![](images/standbylab15.png)
+    ![Screenshot shows example DState data.](images/standbylab15.png)
 
 9.  Expand the **Non-PoFX** category.
 
@@ -90,7 +90,7 @@ To investigate USB issues, you’ll use the **DState** graph and table.
 
 11. Sort by the **Name** column and find the USB devices.
 
-    ![](images/standbylab16.png)
+    ![Screenshot shows example DState data based on USB devices.](images/standbylab16.png)
 
 The data in the D-state table shows that, while the system was in standby, a USB composite device was still in state D0 for 100% of the time. The hardware id of the composite device is USB\\VID\_0BB4&PID\_0BA1\\00000015B42EE80F0000000000000000. This is the device that was preventing the XHCI controller from powering down.
 
