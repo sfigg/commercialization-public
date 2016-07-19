@@ -47,14 +47,18 @@ Use the manufacturing tools to deploy your Windows [customizations](https://msdn
 <p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
 </tr>
 <tr class="even">
+<td align="left">[What's new in Windows manufacturing](desktop/whats-new-in-windows-manufacturing.md)</td>
+<td align="left">Learn what new features are available. </td>
+</tr>
+<tr class="odd">
 <td align="left">[Desktop manufacturing](desktop/index.md)</td>
 <td align="left">Technical reference for Windows 10 for desktop editions</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">[Mobile manufacturing](mobile/index.md)</td>
 <td align="left">Technical reference for Windows 10 Mobile</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">[IoT Core manufacturing](iot/index.md)</td>
 <td align="left">Technical reference for Windows 10 IoT Core</td>
 </tr>
