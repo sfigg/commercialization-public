@@ -53,14 +53,14 @@ Some capabilities have additional dependencies, as shown in the following table.
 <tbody>
 <tr class="odd">
 <td align="left">Language pack</td>
-<td align="left"><code>lp.cab</code></td>
+<td align="left"><code>Microsoft-Windows-Client-Language-Pack_x64_es-es.cab</code></td>
 <td align="left">None</td>
 <td align="left">UI text, including basic Cortana capabilities.</td>
 </tr>
 <tr class="even">
 <td align="left">Language interface pack</td>
-<td align="left"><code>lp.cab</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
+<td align="left"><code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab</code></td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-es-valencia requires es-es. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p>
 <p>Not all of the language resources for the UI are included in a LIP. LIPs require at least one language pack (or parent language). A parent language pack provides support for a LIP. The parts of the UI that are not translated into the LIP language are displayed in the parent language. In countries or regions where two languages are commonly used, you can provide a better user experience by applying a LIP over a language pack.</p></td>
 </tr>
@@ -181,7 +181,7 @@ To save space, you can remove English language components when deploying to non-
 
 1.  Add the language to Windows. You can use either the /Add-Package or /Add-Capabilities commands to add the capabilities.
 
-    For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: **lp.cab**, then **Basic**, then **TextToSpeech**, then **Speech**, in this order.
+    For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: the language pack **.cab**, then **Basic**, then **TextToSpeech**, then **Speech**, in this order.
 
     If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all at once using the same DISM /Add-Package command.
 
@@ -190,12 +190,12 @@ To save space, you can remove English language components when deploying to non-
     ``` syntax
     rem Remove the paragraph marks to make this into one really big, long command. 
     Dism /Add-Package /Image:"C:\mount\windows"
-         /PackagePath="C:\Languages\fr-fr x64\lp.cab"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_fr-fr.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab"
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
@@ -208,7 +208,7 @@ To save space, you can remove English language components when deploying to non-
     Dism /Get-Capabilities /Image:"C:\mount\windows"
     ```
 
-3.  When you add languages to Windows, when possible, add them to WinRE to ensure a consistent language experience in recovery scenarios. This requires a matching version of Windows and the Windows ADK. Note, Windows RE now requires the WinPE-HTA package, this is new for Windows 10.
+3.  When you add languages to Windows, when possible, add them to WinRE to ensure a consistent language experience in recovery scenarios. This requires a matching version of Windows and the Windows ADK. Windows RE now requires the WinPE-HTA package, this is new for Windows 10.
 
     After adding the packages, verify that they're in the image.
 
@@ -235,7 +235,7 @@ To save space, you can remove English language components when deploying to non-
     After adding the packages, verify that they're in the image.
 
     ``` syntax
-    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\bn-in x64\lp.cab
+    Dism /Image:C:\mount\windows /Add-Package /PackagePath:C:\Languages\Microsoft-Windows-Client-Language-Pack_x64_bn-in.cab
          /PackagePath="C:\Languages\bn-in x64\Microsoft-Windows-LanguageFeatures-Basic-bn-in-Package.cab"
     ```
 
@@ -243,7 +243,7 @@ To save space, you can remove English language components when deploying to non-
 
     ``` syntax
     Dism /Add-Package /Image:"C:\mount\windows"
-         /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Fonts-Beng-Package"
+         /PackagePath="C:\Languages\Microsoft-Windows-LanguageFeatures-Fonts-Beng-Package"
     ```
 
 3.  Verify that they're in the image.
@@ -280,7 +280,7 @@ To save space, you can remove English language components when deploying to non-
 
     It's also OK to just remove the language pack without removing the language capabilities. One week after the user completes OOBE, if the user hasn't added the language to their input language list, Windows automatically cleans out the unused language capabilities.
 
-2.  Remove the Windows RE optional components. After removing, verify that they're no longer in the image.
+2.  Remove the Windows RE optional components. After removing, verify that they're no longer in the image. Replace build number 10.0.10120.0 with the build you are using. 
 
     ``` syntax
     Dism /Remove-Package /Image:"C:\mount\winre" /PackageName:WinPE-Rejuv-Package~31bf3856ad364e35~amd64~en-US~10.0.10120.0 
@@ -403,7 +403,7 @@ The language-pack removal task does not remove LIPs.
 ## <span id="related_topics"></span>Related topics
 
 
-[Language Packs (lp.cab)](language-packs--lpcab--and-windows-deployment.md)
+[Language Packs](language-packs-and-windows-deployment.md)
 
 [Available Language Packs for Windows](available-language-packs-for-windows.md)
 

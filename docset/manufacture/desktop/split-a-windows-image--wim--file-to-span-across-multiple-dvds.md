@@ -14,6 +14,8 @@ Split .wim files into .swm files for DVDs or FAT32 file systems. Use this proced
 -   Deploying Windows using DVDs. (A standard single-sided DVD stores 4.7GB).
 -   Deploying your Windows image from a Windows PE USB key. (The standard Windows PE installation uses the FAT32 file system, which has a maximum file size of 4GB.) For more information, see [WinPE: Store or split images to deploy Windows using a single USB key](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md).
 
+Note: Split WIMs are supported by DISM /Apply-Image, but are not supported in the Windows 10 version of Windows Setup.
+
 After the files are split, you can copy them onto separate DVDs, or onto USB key(s).
 
 Note, before you can apply the image, you must first put all of the split files into the same folder, for example, by copying them to a temporary folder on the destination computer. Then use DISM to apply the image, while specifying the split .swm files location and file pattern. DISM does not support applying the files from separate folders or DVDs.
