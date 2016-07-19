@@ -29,7 +29,7 @@ author: beneluxboy
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -60,7 +60,7 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -91,7 +91,7 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -110,7 +110,7 @@ Mobile Broadband devices based on USB protocol must support Identity Morphing. I
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -137,7 +137,7 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -164,7 +164,7 @@ Mobile Broadband devices that support multi-carrier feature must support the mul
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -183,7 +183,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -202,7 +202,7 @@ USB based mobile broadband devices must support Windows implementation of USB se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -246,7 +246,7 @@ Mobile class of devices must support wake on mobile broadband. A device should w
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -272,7 +272,7 @@ Additional Information
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -303,7 +303,7 @@ Helpful links: Mobile Broadband Driver Model Specifications <http://msdn.microso
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -322,7 +322,7 @@ GSM devices that support EAP-SIM must support EAP-SIM as defined in RFC 4186.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -353,7 +353,7 @@ Mobile Broadband Driver Model Specification: <http://msdn.microsoft.com/library/
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -374,7 +374,7 @@ Additional Information: Identity Morphing Specification: See MSDN.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -401,7 +401,7 @@ MB Miniport Driver Performance Requirements: <http://msdn.microsoft.com/en-us/li
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -430,7 +430,7 @@ Mobile broadband devices supporting multi-carrier feature must meet the multi-ca
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -461,7 +461,7 @@ Device firmware should continue to abstract SMS PDP contexts and route them thro
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -480,7 +480,7 @@ The device seamlessly transitions between D0 and D3 warm states while in Connect
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -499,7 +499,7 @@ Mobile broadband devices must implement the fast dormancy mechanism as defined b
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -518,7 +518,7 @@ USB based Mobile Broadband devices must support Windows implementation of USB se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -557,7 +557,7 @@ Mobile broadband class of devices must support wake on mobile broadband. A devic
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**

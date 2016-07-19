@@ -6,7 +6,7 @@ MSHAttr:
 author: beneluxboy
 ---
 
-# hardware compatibility specification for systems for windows 10, version 1607
+# Hardware Compatibility Specification for Systems for Windows 10, version 1607
 
 This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.
 
@@ -379,7 +379,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -422,7 +422,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -464,7 +464,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -725,7 +725,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -814,7 +814,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1540,7 +1540,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1772,7 +1772,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1805,7 +1805,7 @@ Note that above exceptions are applicable only if:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1824,7 +1824,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1920,7 +1920,7 @@ Systems must also comply with Mobile Broadband requirements:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1962,7 +1962,7 @@ The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be exec
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -1994,7 +1994,7 @@ When there is a hardware button for wireless radios there must not be more than 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2013,7 +2013,7 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2704,7 +2704,7 @@ Miracast requires both WiFiDirect support in the WLAN Adapter and support in the
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2760,7 +2760,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2788,6 +2788,17 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 </td></tr></table>
 
 ### System.Fundamentals.EnergyEstimation.Discretional
+
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
+<p>Windows 10 Mobile ARM</p>
+<p>Windows 10 Mobile x86</p>
+<p>Windows Server 2016 x64</p>
+</td></tr></table>
 
 There are currently three energy micro-benchmark tests in the HLK including primary storage, network, and primary display. These benchmarks are targeted to execute on any battery powered device. While in execution, the benchmarks emulate a set of steady state workloads of a particular component. At the same time, they also observe the battery drain.
 
@@ -2843,7 +2854,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2941,7 +2952,7 @@ Any system that supports Connected Standby that sets the "CMOS RTC Not Present
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -2956,7 +2967,7 @@ The system firmware must support booting the system DVD if the system includes a
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </tr></td></table>
 
 **Description**
@@ -3052,7 +3063,7 @@ Note that this requirement precludes the use of attached storage as boot media i
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3112,7 +3123,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3140,7 +3151,7 @@ OEMs may ship with CSM mode activated and the enterprise or government customer'
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3161,7 +3172,7 @@ This requirement is "If Implemented" for Server systems.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3189,7 +3200,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3309,7 +3320,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3355,7 +3366,7 @@ OS after an update is applied.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3375,7 +3386,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3583,7 +3594,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3619,7 +3630,7 @@ This requirement is “If Implemented” for Server systems and applies only if 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3639,7 +3650,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3658,7 +3669,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3683,7 +3694,7 @@ For example the graphics driver package includes the graphics driver and all ass
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3707,7 +3718,7 @@ The system must run under prolonged stress without generating hangs or faults.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3848,7 +3859,7 @@ Following are the power management requirements for the discrete GPU participati
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3877,7 +3888,7 @@ This requirement applies to systems that use UEFI or BIOS. 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3917,7 +3928,7 @@ On a system with multiple graphics adapters, the system firmware (BIOS, UEFI, et
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -3980,7 +3991,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4032,7 +4043,7 @@ If the platform includes a system (shared) DMA controller, the CSRT must include
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4118,7 +4129,7 @@ See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/wh
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4169,7 +4180,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4211,7 +4222,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4229,7 +4240,7 @@ Support of this feature is required. All physical network devices included in a 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4256,7 +4267,7 @@ of NX.In addition, the system firmware must have NX on and data execution preven
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4298,7 +4309,7 @@ The driver and hardware subsystems for the boot storage device must support mult
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4333,7 +4344,7 @@ Power Management is an important aspect of good user experience. The system shou
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4359,7 +4370,7 @@ For more information see page 119 of the ACPI specification version 5.0.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4388,7 +4399,7 @@ If a PEP device is enumerated in ACPI namespace and the system does not have a P
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4425,7 +4436,7 @@ Version 1.01, and Appendix C.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4450,7 +4461,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 <th>Applies to</th>
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 Description:
@@ -4494,7 +4505,7 @@ Systems that support connected standby must meet the security requirements to su
 <th>Applies to</th>
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description:**
@@ -4613,7 +4624,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4637,7 +4648,7 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4679,7 +4690,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4707,7 +4718,7 @@ All devices and drivers need to be fully installed, and does not contain any pro
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4775,7 +4786,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4948,7 +4959,7 @@ Maximum of **20 seconds** sum-total of user-perceivable I/O latencies over any *
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -4985,7 +4996,7 @@ The following requirements apply if Encrypted Drive (**System.Fundamentals.Stora
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5015,7 +5026,7 @@ When used in systems that support connected standby, the SATA device must meet t
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description:**
@@ -5032,7 +5043,7 @@ When used in systems that support connected standby, the SATA device must meet t
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 
@@ -5052,7 +5063,7 @@ Note: NVDIMM-N devices are identified through the Firmware’s NFIT table as def
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description:**
@@ -5069,7 +5080,7 @@ Note: It is highly recommended that persistence is achieved by implementing ADR 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description:**
@@ -5095,7 +5106,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5114,7 +5125,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5143,7 +5154,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5163,7 +5174,7 @@ See the Pin Configuration Guidelines for High Definition Audio Devices white pap
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5217,7 +5228,7 @@ All 64-bit adapters must be DAC capable. This DAC requirement does not apply to 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5259,7 +5270,7 @@ For improved power efficiency and performance, USB Host Controllers on systems 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5280,7 +5291,7 @@ xHCI Controllers are backwards compatible with SuperSpeed, high, full, and low s
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5325,7 +5336,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5344,7 +5355,7 @@ Systems with Extensible Host Controller Interface (xHCI) Controllers must be tes
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5509,7 +5520,7 @@ If a USB Type-C system has local USB-C ports (e.g. directly on the system compar
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5528,7 +5539,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5905,7 +5916,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5931,7 +5942,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -5979,7 +5990,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6072,24 +6083,20 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <tr class="odd">
 <td>Commands</td>
 <td><p><strong>Mandatory:</strong> The TPM2_HMAC command must be supported.</p>
-<p><strong>Mandatory:</strong> TPM2_EncryptDecrypt must be supported.</p>
+<p><strong>Optional:</strong> Support for TPM2_EncryptDecrypt.</p>
 <p><strong>Mandatory:</strong> TPM2_PolicyTicket must be supported.</p>
 <p><strong>Mandatory:</strong> TPM2_PolicySigned must be supported.</p></td>
 <td><strong>Mandatory</strong></td>
 </tr>
 <tr class="even">
 <td>Algorithms</td>
-<td><p><strong>Mandatory:</strong> Support for the following algorithms: TPM_ALG_RSA, TPM_ALG_SHA1, TPM_ALG_AES, TPM_ALG_HMAC, TPM_ALG_SHA256, TPM_ALG_RSAES, TPM_ALG_RSAPSS, TPM_ALG_OAEP.</p>
-<p><strong>Mandatory</strong>: On Windows Mobile SKUs, 3DES support is required.</p></td>
+<td><p><strong>Mandatory:</strong> Support for the following algorithms: TPM_ALG_RSA, TPM_ALG_SHA1, TPM_ALG_AES, TPM_ALG_HMAC, TPM_ALG_SHA256, TPM_ALG_RSAES, TPM_ALG_RSAPSS, TPM_ALG_OAEP.</p></td>
 <td><strong>Mandatory</strong></td>
 </tr>
 <tr class="odd">
 <td>ECC</td>
 <td><p><strong>Mandatory</strong>:</p>
-<ul>
-<li><p>Support for TPM_ALG_ECC, TPM_ALG_ECDSA, TPM_ALG_ECDH, TPM_ALG_ECSCHNORR as defined in the “TCG TPM Library Specification” Parts 1-4.</p></li>
-<li><p>Support for the TPM_ECC_NIST_P256 curve as specified in Table 8 of “TPM library specification Part 2” for the above algorithms.</p></li>
-</ul>
+<ul><li>Support for the TPM_ECC_NIST_P256 curve as specified in Table 8 of “TPM library specification Part 2” for the above algorithms.</li></ul>
 <p><strong>Mandatory:</strong> The following commands are required. Details for these commands can be found in “TCG TPM Library Specification Part 3”</p>
 <ul>
 <li><p>TPM2_ECDH_KeyGen</p></li>
@@ -6141,48 +6148,46 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </tr>
 <tr class="even">
 <td>RSA</td>
-<td><p><strong>Mandatory:</strong> The distribution of RSA 2048 bit key generation times must have a mean of 10s or less.</p>
-<p><strong>Mandatory</strong>: RSA 2048 bit keys must complete Unprotected Import within 100ms.</p>
-<p><strong>Mandatory</strong>: Keys undergoing Protected import where they were protected by an RSA 2048 bit key shall complete Protected Import within 600ms.</p></td>
+<td><p><strong>Mandatory:</strong> The distribution of RSA 2048 bit key generation times must have a mean of 25s or less.</p>
+<p><strong>Mandatory</strong>: RSA 2048 bit keys must complete Unprotected Import within 1000ms.</p>
+<p><strong>Mandatory</strong>: Keys undergoing Protected import where they were protected by an RSA 2048 bit key shall complete Protected Import within 1600ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>RSA: Signing</td>
-<td><p><strong>Mandatory:</strong> The TPM shall complete sign (TPM2_SIGN) operations with 2048 bit RSA keys within 600ms.</p>
-<p><strong>Mandatory:</strong> On Mobile SKU systems where the TPM runs on the Main CPU core sign operations with 2048 bit RSA keys must complete within 100ms.</p></td>
+<td><p><strong>Mandatory:</strong> The TPM shall complete sign (TPM2_SIGN) operations with 2048 bit RSA keys within 600ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>RSA: Encryption</td>
-<td><p><strong>Mandatory:</strong> The TPM shall complete PKCS15 encryption operations within 50ms.</p>
-<p><strong>Mandatory:</strong> The TPM shall complete PKCS15 decryption operations within 600ms.</p>
-<p><strong>Mandatory:</strong> On Mobile SKU systems where the TPM runs on the Main CPU core PKCS15 decryption operations shall complete within 100ms.</p></td>
+<td><p><strong>Mandatory:</strong> The TPM shall complete PKCS15 encryption operations within 120ms.</p>
+<p><strong>Mandatory:</strong> The TPM shall complete PKCS15 decryption operations within 600ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>ECC</td>
-<td><p><strong>Mandatory</strong>: The TPM shall complete sign operations with the P256 ECC curve (TPM_ECC_NIST_256) within 200ms.</p>
-<p><strong>Mandatory:</strong> TPM_ECC_NIST_256 keys must be generated with a mean time of 150ms or less.</p>
-<p><strong>Mandatory</strong>: ECDH_ZGen must complete within a mean time of 100ms or less.</p>
-<p><strong>Mandatory</strong>: Keys undergoing Protected Import where the key was protected by an ECDH ECC P256 bit key shall complete protected import within 100ms.</p></td>
+<td><p><strong>Mandatory</strong>: The TPM shall complete sign operations with the P256 ECC curve (TPM_ECC_NIST_256) within 250ms.</p>
+<p><strong>Mandatory:</strong> TPM_ECC_NIST_256 keys must be generated with a mean time of 400ms or less.</p>
+<p><strong>Mandatory</strong>: ECDH_ZGen must complete within a mean time of 250ms or less.</p>
+<p><strong>Mandatory</strong>: Keys undergoing Protected Import where the key was protected by an ECDH ECC P256 bit key shall complete protected import within 450ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>HMAC</td>
-<td><p><strong>Mandatory</strong>: HMAC Create operations shall complete within 20ms.</p>
-<p><strong>Mandatory</strong>: HMAC Operations shall complete within 100ms.</p></td>
+<td><p><strong>Mandatory</strong>: HMAC Create operations shall complete within 320ms.</p>
+<p><strong>Mandatory</strong>: HMAC Operations shall complete within 125ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>Symmetric Encrypt/Decrypt: AES</td>
-<td><p><strong>Mandatory</strong>: AES Create operations shall complete within 50ms.</p>
-<p><strong>Mandatory</strong>: AES Unprotected Import operations shall complete within 50ms.</p>
-<p><strong>Mandatory</strong>: AES Encrypt/Decrypt operations shall complete with 1k of data within 100ms.</p></td>
+<td><p><strong>Mandatory</strong>: AES Create operations shall complete within 320ms.</p>
+<p><strong>Mandatory</strong>: AES Unprotected Import operations shall complete within 250ms.</p>
+<p><strong>Mandatory</strong>: AES Encrypt/Decrypt operations shall complete with 1k of data within 250ms.</p></td>
 <td>X</td>
 <td></td>
 </tr>
@@ -6489,7 +6494,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6521,7 +6526,7 @@ OEMs are encouraged to test the boot functionality by creating a bootable USB fl
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6548,7 +6553,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6586,7 +6591,7 @@ For more information about how to implement selective suspend in a driver, pleas
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6647,7 +6652,7 @@ OEMs and Solution Integrators that build Microsoft Azure Stack solutions must in
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -6713,7 +6718,7 @@ If the tool or utility runs locally on Nano Server, it must be made available as
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -7136,7 +7141,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -7551,7 +7556,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -7650,7 +7655,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -7665,7 +7670,7 @@ Third party extensible switches for Hyper-V that support capturing, filtering, o
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8005,7 +8010,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8252,7 +8257,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8521,7 +8526,7 @@ System.Server.AzureStack.Security.Base
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8620,7 +8625,7 @@ System.Server.AzureStack.BMC.Base
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8701,7 +8706,7 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8717,7 +8722,7 @@ Devices in a server system must also have 64-bit drivers available for 64-bit op
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8776,7 +8781,7 @@ A KCS non-communication interrupt is defined as an OBF-generated interrupt that 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8791,7 +8796,7 @@ A system that has a baseboard management controller (BMC) present must expose it
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8806,7 +8811,7 @@ All buses, devices, and other components in a system must meet their respective 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8824,7 +8829,7 @@ board. This requirement does not apply to integrated devices that are part of th
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8839,7 +8844,7 @@ Server systems must support error correction code, memory mirroring, or another 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8906,7 +8911,7 @@ This will be accomplished using the correct build options for creating the UEFI 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8921,7 +8926,7 @@ A server system must meet requirements defined in the PCI Hot-Plug ECN No. 31 if
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8941,7 +8946,7 @@ Parallel Advanced Technology Attachment (also known as Parallel ATA, PATA, IDE, 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8960,7 +8965,7 @@ The server system must provide a method for installing the operating system for 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -8997,7 +9002,7 @@ policy.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9046,7 +9051,7 @@ See service processor console redirection details at [http://go.microsoft.com/fw
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9064,7 +9069,7 @@ resource rebalance operation.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9300,7 +9305,7 @@ The following devices or functionality are not required for Server Systems:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9322,7 +9327,7 @@ precedence.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9352,7 +9357,7 @@ Out-of-band remote manageability through IPMI 2.0 allow different makes and mode
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9367,7 +9372,7 @@ Servers that support hardware partitioning must provide partition manager softwa
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9383,7 +9388,7 @@ Servers that support hardware partitioning must supply partition management so
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9398,7 +9403,7 @@ The hardware partition configuration on a server that supports hardware partitio
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9437,7 +9442,7 @@ Systems must meet the requirements listed below and pass the Dynamic Hardware Pa
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9452,7 +9457,7 @@ Hardware (which includes firmware) or software errors that occur within the boun
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9469,7 +9474,7 @@ For access to these specifications, send e-mail to <DPFB@Microsoft.com>.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9484,7 +9489,7 @@ Processors, memory, and I/O components within any unit that is hot added to an e
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9500,7 +9505,7 @@ Servers that support hardware partitioning must support hot addition and hot rep
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9516,7 +9521,7 @@ Servers that support one or more hot-add component features must provide a visua
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9531,7 +9536,7 @@ A processor or memory PU used as a replacement on a server that supports dynamic
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9546,7 +9551,7 @@ Components associated with a hot-add action on a server that supports dynamic pa
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9561,7 +9566,7 @@ Servers that support hardware partitioning must supply partition management soft
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9581,7 +9586,7 @@ To enable success of the hot replace feature, I/O subsystems must be implemented
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9610,7 +9615,7 @@ FT systems may disable or not include devices which could cause asynchronous int
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9677,7 +9682,7 @@ During this time when the firmware is in control, the following are the requirem
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9749,7 +9754,7 @@ The display is controlled by the video device firmware before the WDDM graphics
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9780,7 +9785,7 @@ Table below explains the scenario usage for the Graphic driver types.
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9796,7 +9801,7 @@ Server provides support for reading system level power consumption and reading a
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9811,7 +9816,7 @@ If the processors on the server support performance states, the server provides 
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9834,7 +9839,7 @@ More detail on the SMASH profile can be found on the Distributed Management task
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9860,7 +9865,7 @@ Servers must meet the following requirements:
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9900,7 +9905,7 @@ The system firmware (BIOS or UEFI) probes and extracts this information from the
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9920,7 +9925,7 @@ Server platforms participating in the Server Virtualization Validation Program m
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9941,7 +9946,7 @@ This will be tested using stress tools that emulate loads which may be placed up
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -9965,7 +9970,7 @@ For access to the Windows Server 2008 Virtualization Requirements document, send
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**

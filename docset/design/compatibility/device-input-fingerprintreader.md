@@ -26,7 +26,7 @@ author: beneluxboy
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -106,7 +106,7 @@ The following general criteria must be met:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -125,7 +125,7 @@ Drivers and adapter plug-ins that extend the Windows Biometric Framework must no
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -166,7 +166,7 @@ Drivers and adapter plug-ins that extend the Windows Biometric Framework must no
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -201,7 +201,7 @@ A driver package can support multiple devices, but must pass the certification c
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**

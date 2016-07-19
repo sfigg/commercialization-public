@@ -29,7 +29,7 @@ author: beneluxboy
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -48,7 +48,7 @@ The USB hub must include details in its hub descriptor that provide the operatin
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -67,7 +67,7 @@ USB hubs must support the selective suspend state, as stated in both the USB Spe
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -94,7 +94,7 @@ USB 3.0 hubs must:
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**

@@ -26,7 +26,7 @@ author: beneluxboy
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
@@ -45,7 +45,7 @@ Secure Digital I/O (SDIO) host controllers must comply with PCI 2.3 or later req
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**

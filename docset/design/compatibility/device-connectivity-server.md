@@ -23,7 +23,7 @@ author: beneluxboy
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 Technical Preview x64</p>
+<p>Windows Server 2016 x64</p>
 </td></tr></table>
 
 **Description**
