@@ -48,7 +48,7 @@ The **Windows Assessment Toolkit** contains a test to measure the memory footpri
 
     -   **Quick Run** allows the test to complete in a shorter amount of time at the expense of data accuracy.
 
-    ![](images/memoryfootprintlab1.png)
+    ![Screenshot of Windows Assessment Console.](images/memoryfootprintlab1.png)
 
 6.  With **Quick Run** selected, you have two options:
 
@@ -83,7 +83,7 @@ Once the assessment is done, you can open the results XML file that contains a s
 
     The report should look something like this.
 
-    ![](images/memoryfootprintlab2.png)
+    ![Example report from Windows Assessment Console showing memory usage.](images/memoryfootprintlab2.png)
 
 5.  Take the time to familiarize yourself with the report by looking at the **Driver** and **Process Private Pages** categories.
 
@@ -109,7 +109,7 @@ This metric is similar to the paged allocations except that these allocations us
 
 3.  Identify the driver with the biggest memory usage.
 
-    ![](images/memoryfootprintlab3.png)
+    ![Example report from Windows Assessment Console showing driver non-paged allocation usage.](images/memoryfootprintlab3.png)
 
 You can influence this metric by swapping out hardware or software drivers that have lower memory requirements.
 
@@ -125,7 +125,7 @@ The largest users of the overall memory footprint are apps that may always be ru
 
     Your view should look something like this:
 
-    ![](images/memoryfootprintlab4.png)
+    ![Example report from Windows Assessment Console showing process memory usage.](images/memoryfootprintlab4.png)
 
 3.  Identify the process that uses the most memory.
 
@@ -146,7 +146,7 @@ Follow these steps to gather a trace with Resident Set data.
 
 3.  Click **Start** and wait a few seconds.
 
-    ![](images/memoryfootprintlab5.png)
+    ![Screenshot of Windows Assessment Console.](images/memoryfootprintlab5.png)
 
 4.  Click **Save** and save the **ETL** trace to disk.
 
