@@ -399,6 +399,8 @@
 
 # [Manufacture](manufacture/index.md)
 
+## [What's new in Windows Manufacturing](manufacture/iot/whats-new-in-windows-manufacturing.md)
+
 ## [Desktop manufacturing](manufacture/desktop/index.md)
 
 ### [OEM deployment of Windows 10 for desktop editions](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
@@ -730,7 +732,6 @@
 
 
 ## [IoT Core manufacturing](manufacture/iot/index.md)
-### [What's new in IoT Manufacturing](manufacture/iot/whats-new-in-manufacturing.md)
 ### [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)
