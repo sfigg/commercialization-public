@@ -27,7 +27,7 @@ The following Push-button reset features are available to users with Windows 10
 -   **Reset your PC** Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state.
 -   **Bare metal recovery** Restores the default or preconfigured partition layout on the system disk, and reinstalls the OS and preinstalled customizations from external media.
 
-![](images/dep-winre-pbr.png)
+![Screenshot shows options: Keep my files, or Remove Everything](images/dep-winre-pbr.png)
 
 <table>
 <colgroup>

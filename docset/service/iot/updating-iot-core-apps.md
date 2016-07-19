@@ -59,7 +59,7 @@ Log into the device and run ApplyUpdate.exe to trigger the update process.
 
 ### <span id="Apply_update_from_the_Windows_Store"></span><span id="apply_update_from_the_windows_store"></span><span id="APPLY_UPDATE_FROM_THE_WINDOWS_STORE"></span>Apply update from the Windows Store
 
-Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
+**New for Windows 10, version 1607**: Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
 
 
 

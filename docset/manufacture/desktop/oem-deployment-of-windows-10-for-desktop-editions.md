@@ -1652,7 +1652,7 @@ Note: If Office Tiles are automatically pinned as part of the Microsoft Group of
 
 3.  Navigate to the installation directory. The installation directory is the folder that contains the files shown in the following figure:
 
-    ![](images/installation-directory.png)
+    ![Image shows the folders: docs, office15, oobe; and the files: copytoserver.cmd and oemsetup.en-us.cmd.](images/installation-directory.png)
     
     For example: Cd C:\&lt;OfficeSingleImagev15.4 InstallationDirectory&gt;
 

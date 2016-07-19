@@ -32,7 +32,7 @@ For additional disk partition rules for BIOS-based systems, see [Configure BIOS/
 
 **Sample partition layout:**
 
-![](images/dep-win10-partitions-bios-morethanfour.png)
+![Sample partition layout: System partition, Utility partition, Utility partition, then an extended partition that contains a Windows partition and a Recovery partition](images/dep-win10-partitions-bios-morethanfour.png)
 
 ## <span id="ConfiguringPartitionsUsingDiskPart"></span><span id="configuringpartitionsusingdiskpart"></span><span id="CONFIGURINGPARTITIONSUSINGDISKPART"></span>Configuring disk partitions by using a DiskPart script in Windows PE
 

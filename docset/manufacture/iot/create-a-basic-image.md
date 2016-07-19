@@ -36,7 +36,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 	
 	Troubleshooting: Error: "The system cannot find the path specified". If you get this, right-click the icon and modify the path in "Target" to the location you've chosen to install the tools.
 
-2.  At the **Set Environment for Architecture** prompt, select 1 for ARM or 2 for x86, based on the architecture for the boards that you'll be developing. For example, press **1** to create an image that's compatible with the Raspberry Pi 2 or Raspberry Pi 3, or press **2** to create an image that's compatible with the Minnowboard Max.
+2.  At the **Set Environment for Architecture** prompt, select 1 for ARM, 2 for x86, or 3 for x64, based on the architecture for the boards that you'll be developing. For example, press **1** to create an image that's compatible with the Raspberry Pi 2 or Raspberry Pi 3, or press **2** to create an image that's compatible with the Minnowboard Max.
 
     The launch tool sets the default architecture, and sets a version number for the design, which you can use for future updates. The first version number defaults to 10.0.0.0.
 

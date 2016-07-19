@@ -11,7 +11,7 @@ title: FFU image format
 
 The following diagram shows both V1 and V2 FFU format. A major changed introduced in V2 FFU format is the support for multiple data stores – each store contains sector-based data targeting a unique physical partition.
 
-![](images/oem-ffuv2-image-format.png)
+![Comparison of FFU formats. Sections for both include: Security header, Image Header, Store Header, and Padding. For FFU V2, there can be multiple Store headers and Payload data sections.](images/oem-ffuv2-image-format.png)
 
 ## <span id="Security_header_region"></span><span id="security_header_region"></span><span id="SECURITY_HEADER_REGION"></span>Security header region
 
