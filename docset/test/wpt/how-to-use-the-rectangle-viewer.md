@@ -29,7 +29,7 @@ The rectangle viewer also provides the following benefits:
 
 1.  Click **&gt;** in the lower left corner of the graph (near the origin, 0,0, of the graph) to move forward in time, or hold it down to move through time.
 
-    ![](images/rectangle-viewer.png)
+    ![Screenshot of rectangle viewer.](images/rectangle-viewer.png)
 
 2.  Zoom in or out by left-clicking and holding from left to right until you capture the frame you want to view then left-click the selected rectangle area (highlighted in blue) and click **Zoom**.
 
@@ -42,7 +42,7 @@ In the following example, you can see the rectangle dimensions to the right of t
 
 If you filter out specific rows, WPA will not graph them. So, if you want to only see unfiltered frames ("dirty frames"), you can filter down to the unfiltered frames. This feature works with other graphs in your tab, allowing you to see your selection propagated throughout the graphs, but also see the time selection move as you scrub through time.
 
-![](images/rectangle-viewer-gold-indicator.png)
+![Screenshot of rectangle viewer with gold bar indicator highlighted.](images/rectangle-viewer-gold-indicator.png)
 
 ## Related topics
 
