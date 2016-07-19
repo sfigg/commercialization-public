@@ -13,7 +13,7 @@ This topic covers new improvements for manufacturing
 
 **July 18, 2016**
 
-The following changes are new for Windows 10, version 1607.
+The following changes are new for Windows 10, version 1607:
 
 - Sysprep supports preparing an image that has been upgraded from a previous version of Windows 10. For more information, see [Sysprep Overview](/manufacture/desktop/sysprep--system-preparation--overview.md).
 - Siloed provisioning packages are a new type of provisioning package that can capture classic Windows applications individually, drivers plus applications, and more. ScanState.exe and Dism.exe are both improved to capture and apply siloed provisioning packages, respectively. 
