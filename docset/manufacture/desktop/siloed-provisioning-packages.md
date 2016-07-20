@@ -2,17 +2,17 @@
 author: Justinha
 Description: 'Siloed Provisioning Packages'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Split a Windows image file (.wim) to span across multiple DVDs'
+title: 'Siloed provisioning packages'
 ---
 
-# Siloed Provisioning Packages
+# Siloed provisioning packages
 
-Siloed provisioning packages are a new type of provisioning package that is available for Windows 10 version 1607. Where traditional provisioning packages can capture all classic Windows applications and settings that are installed with a Windows image, a siloed provisioning package can capture classic Windows applications individually, drivers plus applications, settings, or capture add-ons for provisioning packages that were captured previously. This provides more flexibility for the manufacturing process and helps reduce the time required to build Windows-based computers in the factory.
+Siloed provisioning packages are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all classic Windows applications and settings that are installed with a Windows image, a siloed provisioning package can capture classic Windows applications individually, drivers plus applications, settings, or capture add-ons for provisioning packages that were captured previously. This provides more flexibility for the manufacturing process and helps reduce the time required to build Windows-based computers in the factory.
 
-## Performance Comparison
+## Performance comparison
 
 The following table shows a comparison between using the Office installer vs using siloed provisioning packages in a typical factory floor process.  When using the siloed provisioning packages to install Office, the base Office en-us package, along with the add-on Office fr-fr and Office de-de packages are captured using the User State Migration Tool (USMT) ScanState.exe utility as a one-time process in the imaging lab.
-The data in the following table was derived from a sample run on a VM with Windows 10 version 1607 desktop image.  The actual time savings at the factory floor will vary based on the number and size of applications being installed and the hardware spec of physical devices.  The time savings can be calculated by:
+The data in the following table was derived from a sample run on a VM with Windows 10, version 1607 desktop image.  The actual time savings at the factory floor will vary based on the number and size of applications being installed and the hardware spec of physical devices.  The time savings can be calculated by:
 
 (time to Sysprep & boot to Audit mode + time to install applications + time to capture applications in a PPKG + _<optional_> time to single-instance the PPKG) – (time to apply SPPs + time to Sysprep & boot to Audit mode)
 
@@ -163,7 +163,7 @@ Another example for using the Config_AppsAndSettingsOnly.xml file is where you w
 
 ## Applying a siloed provisioning package
 
-DISM is also improved to support applying siloed provisioning packages to a Windows image that has been applied on a device.  A new DISM provider, which is only available in Windows ADK, supports siloed provisioning packages.  For Windows 10 version 1607, the only supported functionality is to apply siloed provisioning packages. 
+DISM is also improved to support applying siloed provisioning packages to a Windows image that has been applied on a device.  A new DISM provider, which is only available in Windows ADK, supports siloed provisioning packages.  For Windows 10, version 1607, the only supported functionality is to apply siloed provisioning packages. 
 
 The functionality for applying siloed provisioning packages using DISM is limited to support the following scenarios:
 
@@ -251,7 +251,7 @@ Alternatively, the siloed provisioning packages can be captured using a VM inste
 7.	Run ScanState.exe to capture Adobe Acrobat Reader siloed provisioning package.
 8.	Repeat step 5-7 to capture AVG Protection siloed provisioning package.
 
-![Factory floor for applying independent applications](factory-floor-for-applying-independent-applications.png)
+![Factory floor for applying independent applications](images/factory-floor-for-applying-independent-applications.png)
 
 1.	On the target device, boot to Windows PE, and apply the Window 10, version 1607 desktop image.
 2.	While in Windows PE, run DISM /Apply-SiloedPackage command with Office 2016 and AVG Protection packages to apply the application files in the packages onto the applied desktop image.
@@ -268,11 +268,11 @@ A Microsoft partner can use the diff capture support to generate supplemental (o
 - You could capture AVG Protection base siloed provisioning package, and then diff capture AVG Protection patch (MSP) siloed provisioning packages using the base package as the parent.  At the factory floor, the AVG Protection base package and a selection of patch packages, specified in the desired order, can then be installed on a specific model device.
 - Or, you could capture Office 2016 en-us as the base siloed provisioning package, and then diff capture other languages of Office 2016 siloed provisioning packages using the base package.  At factory floor, the Office 2016 base package, and a selective of language packages specified in any order, can then be installed on a specific model device.
 
-![Capturing a siloed provisioning package for the base application](capturing-base-app-spp.png)
+![Capturing a siloed provisioning package for the base application](images/capturing-base-app-spp.png)
 
-![Option one for capturing a siloed provisioning package for an add-on app](capturing-add-on-app-spp-option-one.png)
+![Option one for capturing a siloed provisioning package for an add-on app](images/capturing-add-on-app-spp-option-one.png)
 
-![Option two for capturing a siloed provisioning package for an add-on app](capturing-add-on-app-spp-option-two.png)
+![Option two for capturing a siloed provisioning package for an add-on app](images/capturing-add-on-app-spp-option-two.png)
 
 1.	Clean install Window 10, version 1607 on a reference device.
 2.	At the desktop, install Office 2016 en-us.
@@ -298,12 +298,12 @@ Alternatively, the siloed provisioning packages can be captured using VM instead
 5.	Install Office 2016 fr-fr.
 6.	Run ScanState.exe to diff capture Office 2016 fr-fr siloed provisioning package, using the Office 2016 base package as a reference.
 7.	Either continue using diff switch with the already captured base and language packages to capture another Office 2016 language siloed provisioning package:
-    a.	Install Office 2016 de-de.
-    b.	Run ScanState.exe to diff capture Office 2016 de-de siloed provisioning package, using the Office 2016 base package and fr-fr package.
+    1. Install Office 2016 de-de.
+    2. Run ScanState.exe to diff capture Office 2016 de-de siloed provisioning package, using the Office 2016 base package and fr-fr package.
 8.	Or restart the VM to diff capture another Office 2016 language siloed provisioning package:
-    a.	Revert the VM to the checkpoint generated in step 3.
-    b.	At the desktop, install Office 2016 de-de.
-    c.	Run ScanState.exe to diff capture Office 2016 de-de siloed provisioning package using the Office 2016 base package captured in step 4.
+    1. Revert the VM to the checkpoint generated in step 3.
+    2. At the desktop, install Office 2016 de-de.
+    3. Run ScanState.exe to diff capture Office 2016 de-de siloed provisioning package using the Office 2016 base package captured in step 4.
 9.	Repeat either step 7 or 8 to capture the rest of the Office 2016 language siloed provisioning packages.
 
 Siloed provisioning packages can also capture applications with dependencies. For example, to capture multiple apps that depend on .NET Framework:
@@ -330,7 +330,7 @@ The important point is DotNet.spp must be applied first.
 
 In the BTO model, the last minute customizations at the factory floor could include installing classic Windows applications on top of what were already installed in the base model image.  If there are any classic Windows applications that were not captured in a siloed provisioning packages in the imaging lab, the factory floor process will then include the tasks shown in the following diagram.
 
-![Capturing and applying applications for bto model](capturing-and-applying-applications-for-bto-model.png)
+![Capturing and applying applications for bto model](images/capturing-and-applying-applications-for-bto-model.png)
 
 1.	On the target device, boot to Windows PE, and apply Window 10, version 1607 desktop image.
 2.	While in Windows PE, run DISM /Apply-SiloedPackage command specifying all the siloed provisioning packages to apply the application files in the packages onto the applied desktop image.
@@ -343,7 +343,7 @@ In the BTO model, the last minute customizations at the factory floor could incl
 9.	(Optional) Boot the device to Windows PE, and run the DISM command to single-instance the application files in the siloed provisioning package captured in step 7.
 10.	Complete the rest of the factory floor tasks and shutdown/seal the product.
 
-**Preferred process guidelines for BTO model**: As described in the preceding steps, the diff capture support provides flexibility to allow installing classic Windows applications at the factory floor as last minute customizations.  However, the diff capture operation may take some time to complete, depending on the number and the size of the siloed provisioning packages it needs to diff against.  There is also overhead cost for the other steps in the process.  Therefore, the preferred guideline for installing classic Windows application in the BTO model is to incur the onetime cost of capturing the siloed provisioning packages for these applications in the imaging lab. Then they can be applied at the factory floor as needed for the last minute customizations.   
+**Preferred process guidelines for BTO model**: As described in the preceding steps, the diff capture support provides flexibility to allow installing a classic Windows applications at the factory floor as last minute customizations.  However, the diff capture operation may take some time to complete, depending on the number and the size of the siloed provisioning packages it needs to diff against.  There is also overhead cost for the other steps in the process.  Therefore, the preferred guideline for installing a classic Windows application in the BTO model is to incur the onetime cost of capturing the siloed provisioning packages for these applications in the imaging lab. Then they can be applied at the factory floor as needed for the last minute customizations.   
 
 
 
