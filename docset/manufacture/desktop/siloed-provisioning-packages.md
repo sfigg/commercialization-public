@@ -173,7 +173,7 @@ The functionality for applying siloed provisioning packages using DISM is limite
 - If additional siloed provisioning packages need to be applied to a Windows desktop image that has already gone through the entire deployment process with using DISM to apply a set of siloed provisioning packages, the image can be Sysprep generalized and captured as a new model image.  DISM can then be run again to apply more siloed provisioning packages when this new model image is deployed onto other devices.
 - Siloed provisioning packages must be applied to the same architecture that they were captured on. It is not supported to capture an x86 app in an .spp and apply it to an x64 platform. 
 - Siloed provisioning packages can be applied to other editions of Windows. For example, an application captured on Windows 10 Enterprise can be applied to Windows 10 Pro.
-- Siloed provisioning packages should be applied after all Audit mode customizations are done and the operating system is set to start with OOBE. Applying siloed provisioning packages is not supported on a generalized image that is set to boot into Audit mode. If booting into Audit mode is required, use Unattend.xml to reseal to Audit mode.
+- Applying siloed provisioning packages is not supported on a generalized image that is set to boot into Audit mode. If booting into Audit mode is required, use Unattend.xml to reseal to Audit mode.
 
 The following example runs DISM in Windows PE to apply siloed provisioning packages for Office en-us, fr-fr, and de-de to the applied Windows image on a device:
 
