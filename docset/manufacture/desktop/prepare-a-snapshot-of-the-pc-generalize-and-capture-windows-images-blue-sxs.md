@@ -122,7 +122,8 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     D:\ApplyImage.bat D:\Images\WindowsWithFinalChanges.wim.wim
 4.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     ```syntax
-    DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
+    D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
+    D:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
 5. 	Apply the recovery image after applying the SPP:
 	```syntax
