@@ -7,26 +7,21 @@ title: What's new in IoT Core manufacturing
 
 # What's new in Windows manufacturing
 
-This topic covers new improvements for manufacturing 
+This topic covers new improvements for manufacturing. 
 
 ## What's new in desktop manufacturing 
 
-**July 18, 2016**
+**July 21, 2016**
 
 The following changes are new for Windows 10, version 1607:
 
 - Sysprep supports preparing an image that has been upgraded from a previous version of Windows 10. For more information, see [Sysprep Overview](/manufacture/desktop/sysprep--system-preparation--overview.md).
-- Siloed provisioning packages are a new type of provisioning package that can capture classic Windows applications individually, drivers plus applications, and more. ScanState.exe and Dism.exe are both improved to capture and apply siloed provisioning packages, respectively. 
+- Siloed provisioning packages are a new type of provisioning package that can capture classic Windows applications individually, drivers plus applications, and more. They provide more flexibility for the manufacturing process and help reduce factory time to build computers that run Windows. ScanState.exe and Dism.exe are both improved to capture and apply siloed provisioning packages, respectively. 
 - File names for language packs and language interface packs have been renamed. For examples of the new file names, see [Language packs](/manufacture/desktop/language-packs-and-windows-deployment.md).
 - The Chinese (Honk Kong SAR) language pack (zh-HK) is no longer used. The Chinese (Taiwan) language pack (zh-TW) can be used instead. For more information, see [Available Language Packs for Windows](/manufacture/desktop/available-language-packs-for-windows.md).
-- A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image) to defer any long-running cleanup operations to the next automatic maintenance.
-- A new /EA aparameter has been added to Dism /Apply-Iamge and /Capture-Image commands to capture and apply extended attributes. For more information, see [DISM Image Management Command-Line Options](/manufacture/desktop/dism-image-management-command-line-options-s14.md). 
-
-## What's new in mobile manufacturing
-
-The following changes are new for Windows 10, version 1607:
-
-- The V2 FFU image format includes support for multiple data stores – each store contains sector-based data targeting a unique physical partition. For more information, see [FFU image format](/manufacture/mobile/ffu-image-format.md). 
+- Language packs for WinPE and WinRE have been moved to the language packs DVD. OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+- A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
+- A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep –Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](/manufacture/desktop/dism-image-management-command-line-options-s14.md). 
 
 ## What's new in IoT Core manufacturing
 
