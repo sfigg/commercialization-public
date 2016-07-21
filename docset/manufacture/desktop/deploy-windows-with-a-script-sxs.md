@@ -1,5 +1,5 @@
 ---
-author: KenPacq
+author: kpacquer
 Description: 'Deploy Windows using a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1b: Deploy Windows using a script'
