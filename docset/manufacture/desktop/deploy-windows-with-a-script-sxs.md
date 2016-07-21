@@ -1,5 +1,5 @@
 ---
-author: KenPacq
+author: kpacquer
 Description: 'Deploy Windows using a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1b: Deploy Windows using a script'
@@ -66,7 +66,8 @@ For final deployments, you'll need to add the recovery image before deploying th
 
 1.  Skip this step until you've completed [Lab 1f: Add Windows classic apps with siloed provisioning packages (SPP)](add-classic-apps-wth-spps-sxs.md). This step adds classic Windows applications to your images. This must be done before adding the recovery image.
     ```syntax
-    DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
+    D:\DISM\amd64\WimMountAdkSetupAmd64.exe /Install /q
+    D:\DISM\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 	```
 
 2. 	Apply the recovery image. The script **ApplyRecovery.bat** relies on the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt, which must be placed in the same folder.
@@ -75,10 +76,12 @@ For final deployments, you'll need to add the recovery image before deploying th
 	D:\ApplyRecovery.bat
 	```
 
-3. Exit. (`exit`)
+3. Disconnect the drives, then reboot (`exit`).
 	
 **Step 6: Verify apps**
+
 1.  After the PC boots, either create a new user account, or else press Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
+
 2.  See if your apps and add-ons are installed.
 	
 **Step 3: Restart the device**
@@ -92,6 +95,7 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 To learn more about SPPs, see [Siloed provisioning packages (SPPs)](siloed-provisioning-packages.md).
 
 **What's next**
+
 The next labs show you how to customize the images. You can do them in any order.
 *  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
 *  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
