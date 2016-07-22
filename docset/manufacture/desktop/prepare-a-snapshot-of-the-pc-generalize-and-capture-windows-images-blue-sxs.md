@@ -118,8 +118,7 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the Windows image:
-    D:\ApplyImage.bat D:\Images\WindowsWithFinalChanges.wim.wim
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\WindowsWithFinalChanges.wim`.
 4.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     ```syntax
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
