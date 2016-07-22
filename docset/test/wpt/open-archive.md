@@ -15,7 +15,7 @@ You can open **Load From Zip/Cab** by using **File&nbsp;>&nbsp;Open** to browse 
 
 If you are using the rich menu, **File&nbsp;>&nbsp;Open** allows you to go directly to **Load From Zip/Cab** by clicking **Open** under **Open Archive** when **Browse** is selected.
 
-![Open Archive command in the rich menu in WPA.](images/WPA-rich-menu-Open-Archive.png)
+![Open Archive command in the rich menu in WPA.](images/wpa-rich-menu-open-archive.png)
 
 
 ### <a href="" id="options"></a>Elements and options in Load From Zip/Cab
