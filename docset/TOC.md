@@ -246,6 +246,7 @@
 ##### [Graphs](test/wpt/graphs.md)
 ##### [List of WPA Graphs](test/wpt/list-of-wpa-graphs.md)
 ##### [Loading Symbols](test/wpt/loading-symbols.md)
+##### [Open an archive in WPA](test/wpt/open-archive.md)
 ##### [Opening WPA from an Assessment](test/wpt/opening-wpa-from-an-assessment.md)
 ##### [Regions of Interest](test/wpt/regions-of-interest.md)
 ###### [Creating a Regions of Interest File](test/wpt/creating-a-regions-of-interest-file.md)
