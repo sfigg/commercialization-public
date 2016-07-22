@@ -1,0 +1,21 @@
+
+## My Presets
+
+
+WPA offers a view called **My Presets**, which stores the presets that you have modified or explictly saved, so that you can reuse them easily. This view consists of a toolbar at the top of the window and a tree display below. The content of the view is shared across uses of WPA and across concurrently open instances (with the exception of unsaved presets, which are not shared across open instances).
+
+![WPA window with My Presets displayed on the right side.](images/my-presets.png)
+
+The tree display has an entry for your saved or newly modified presets. Under this entry, presets are grouped by the graph they come from. An asterisk next to a preset's name indicates that it has been modified but not saved, and a gray, unavailable name indicates that the current trace has no data for the corresponding graph. After applying a profile, that profile is displayed in a separate entry, along with the graphs and presets it contains.
+
+You can access the options for presets through the toolbar or by right-clicking a preset, and then selecting an option described in the following table.
+
+| Option | Description |
+|---|---|
+| Apply | Applies the preset in the most recently used **Analysis View** or **Comparative Analysis View**. You can also apply a preset by double-clicking its name. |
+| Save | Saves the current state of the preset. If the preset is a built-in preset that has been modified, then WPA displays a **Save As** dialog, because built-in presets cannot be overwritten. Note that if multiple instances of the same preset are open, the most recently modified instance is saved. |
+| Delete | Deletes the preset from this view, and reverts any instances of this presets that are open in a graph. |
+| Export | Exports the selected presets to a file so that you can share the presets. The file has the extension \*.WpaPresets. |
+| Import | Imports presets from a \*.WpaPresets file or the open presets from a \*.WpaProfile file. |
+
+The presets in this view stay synchronized with the non-default presets for each graph (accessed by the drop-down menu next to the trace name on an open graph). Saving, modifying, or deleting a preset in one location affects the other.
