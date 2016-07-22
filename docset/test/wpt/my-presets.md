@@ -1,14 +1,24 @@
+---
+title: My presets
+description: Describes the My Presets window in WPA.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 
+ms.prod: W10
+ms.mktglfcycl: operate
+ms.sitesec: msdn
+---
 
-## My Presets
+# My Presets
 
-
-WPA offers a view called **My Presets**, which stores the presets that you have modified or explictly saved, so that you can reuse them easily. This view consists of a toolbar at the top of the window and a tree display below. The content of the view is shared across uses of WPA and across concurrently open instances (with the exception of unsaved presets, which are not shared across open instances).
+WPA stores the presets that you have modified or explicitly saved and displays them in the **My Presets** window so that you can reuse them easily. **My Presets** consists of a toolbar and a tree display. The content of the window is shared across uses of WPA and across concurrently open instances (with the exception of unsaved presets, which are not shared across open instances).
 
 ![WPA window with My Presets displayed on the right side.](images/my-presets.png)
 
-The tree display has an entry for your saved or newly modified presets. Under this entry, presets are grouped by the graph they come from. An asterisk next to a preset's name indicates that it has been modified but not saved, and a gray, unavailable name indicates that the current trace has no data for the corresponding graph. After applying a profile, that profile is displayed in a separate entry, along with the graphs and presets it contains.
+The tree display has an entry for your saved or newly modified presets. Under this entry, presets are grouped by the graph they come from. An asterisk next to a preset's name indicates that it has been modified but not saved. A gray, unavailable name indicates that the current trace has no data for the corresponding graph. After applying a profile, that profile is displayed in a separate entry, along with the graphs and presets it contains.
 
-You can access the options for presets through the toolbar or by right-clicking a preset, and then selecting an option described in the following table.
+You can access the commands for presets on the toolbar or by right-clicking a preset, and then selecting an option described in the following table.
 
 | Option | Description |
 |---|---|
