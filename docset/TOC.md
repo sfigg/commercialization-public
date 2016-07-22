@@ -266,6 +266,7 @@
 ###### [Graph Explorer](test/wpt/graph-explorer.md)
 ###### [Issues Window](test/wpt/issues-window.md)
 ###### [Keyboard Shortcuts](test/wpt/wpa-keyboard-shortcuts.md)
+###### [My Presets](test/wpt/my-presets.md)
 ### [Windows Performance Toolkit Technical Reference](test/wpt/windows-performance-toolkit-technical-reference.md)
 #### [Xperf Command-Line Reference](test/wpt/xperf-command-line-reference.md)
 ##### [Time and Timestamp Formats](test/wpt/time-and-timestamp-formats.md)
