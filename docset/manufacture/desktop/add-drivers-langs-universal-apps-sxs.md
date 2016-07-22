@@ -25,7 +25,7 @@ The recovery (Windows RE) image file is included in the Windows image. To modify
 2.  Create a copy of the image that you want to modify. For the purposes of this lab, use the base Windows 10 image file for either x64 or x86:
 
     ``` syntax
-    copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\WindowsWithOffice.wim
+    copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-updated.wim
     ```
 
     This can take several minutes.
@@ -36,7 +36,7 @@ The recovery (Windows RE) image file is included in the Windows image. To modify
 
     ``` syntax
     md C:\mount\windows
-    Dism /Mount-Image /ImageFile:"C:\Images\WindowsWithOffice.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
+    Dism /Mount-Image /ImageFile:"C:\Images\install-updated.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
     ```
 
     Where *C* is the drive letter of the drive that contains the image and *1* is the index of the image that you want to use.
@@ -508,10 +508,7 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the Windows image:
-    ``` syntax
-	D:\ApplyImage.bat D:\Images\install-updated.wim
-	```
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
 	
 4.  Apply the recovery image:
     ``` syntax

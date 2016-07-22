@@ -133,11 +133,8 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image:
-    ``` syntax
-	D:\ApplyImage.bat D:\Images\install-updated.wim
-	```
-5.  Disconnect the drives, then reboot (`exit`).
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
+4.  Disconnect the drives, then reboot (`exit`).
 
 **Step 8: Verify drivers**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).

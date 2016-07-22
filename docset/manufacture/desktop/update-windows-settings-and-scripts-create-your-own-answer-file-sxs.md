@@ -142,13 +142,12 @@ You can specify which configuration pass to add new settings:
 
     This process may take several minutes.
 
-**Verify your customizations**
+**Try it out**
 Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image:
-    D:\ApplyImage.bat D:\Images\install-updated.wim
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
     Note, because this image is set to boot to audit mode, you won't be able to apply any siloed provisioning packages. 
 4.  Disconnect the drives, then reboot (`exit`).
 

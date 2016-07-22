@@ -66,8 +66,8 @@ For final deployments, you'll need to add the recovery image before deploying th
 
 1.  Skip this step until you've completed [Lab 1f: Add Windows classic apps with siloed provisioning packages (SPP)](add-classic-apps-wth-spps-sxs.md). This step adds classic Windows applications to your images. This must be done before adding the recovery image.
     ```syntax
-    D:\DISM\amd64\WimMountAdkSetupAmd64.exe /Install /q
-    D:\DISM\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
+    D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
+    D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
 	```
 
 2. 	Apply the recovery image. The script **ApplyRecovery.bat** relies on the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt, which must be placed in the same folder.
