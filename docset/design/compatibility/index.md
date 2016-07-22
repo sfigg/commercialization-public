@@ -28,7 +28,7 @@ This section of the documentation provides specifications for hardware compatibi
 
 <tr class="odd">
 <td align="left"><p>[Devices](device.md)</p></td>
-<td align="left"><p>Specifications for hardware compatibility of components and peripherals with computers running Windows 10 as of June 2016.</p></td>
+<td align="left"><p>Specifications for hardware compatibility of components and peripherals with computers running Windows 10, version 1607.</p></td>
 </tr>
 
 <tr class="even">
