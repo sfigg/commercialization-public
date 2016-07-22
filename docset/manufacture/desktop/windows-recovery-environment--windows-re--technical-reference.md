@@ -11,7 +11,7 @@ title: 'Windows Recovery Environment (Windows RE)'
 
 Windows Recovery Environment (WinRE) is a recovery environment that can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (Windows PE), and can be customized with additional drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. By default, WinRE is preloaded into the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 Technical Preview installations.
 
-![](images/dep-winre-menu.png)
+![Screenshot shows options: Continue, Use a device, Troubleshoot, or Turn off your PC](images/dep-winre-menu.png)
 
 ## <span id="What_s_new_with_WinRE_for_Windows_10_"></span><span id="what_s_new_with_winre_for_windows_10_"></span><span id="WHAT_S_NEW_WITH_WINRE_FOR_WINDOWS_10_"></span>What's new with WinRE for Windows 10?
 

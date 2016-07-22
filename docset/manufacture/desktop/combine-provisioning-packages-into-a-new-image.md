@@ -1,15 +1,15 @@
 ---
 author: Justinha
-Description: 'Now that you''ve seen how to configure Windows images using Windows Imaging and Configuration Designer (ICD), we''ll show you how to add Classic Windows applications and other data by using audit mode.'
+Description: 'How to add Classic Windows applications and other data by using audit mode.'
 ms.assetid: 61e94d42-5d12-4c54-9efc-1e38ea94f750
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1b: Create a provisioning package with Windows desktop applications'
+title: 'Create a provisioning package with Windows desktop applications'
 ---
 
-# Lab 1b: Create a provisioning package with Windows desktop applications
+# Create a provisioning package with Windows desktop applications
 
 
-Now that you've seen how to configure Windows images using Windows Imaging and Configuration Designer (ICD), we'll show you how to add Classic Windows applications and other data by using audit mode. You'll recapture these Classic Windows applications and data into a provisioning package by using the ScanState tool. As new builds of Windows are released, and as you prepare for different markets, you can mix and match the Windows images and provisioning packages, rather than rebuilding and customizing the images each time.
+Here's how to add Classic Windows applications and other data by using audit mode. You'll recapture these Classic Windows applications and data into a provisioning package by using the ScanState tool. As new builds of Windows are released, and as you prepare for different markets, you can mix and match the Windows images and provisioning packages, rather than rebuilding and customizing the images each time.
 
 Once you’ve captured the provisioning package, you can add it to your image by using Windows ICD.
 
@@ -46,13 +46,12 @@ First, plug the USB key with ScanState into the reference device.
     Capture the changes into the provisioning package, and save it on the USB key.
 
     ``` syntax
-    D:\ScanState_x64\scanstate.exe /apps /ppkg D:\Provisioning\ClassicApp.ppkg /o /c /v:13 /l:D:\ScanState.log
+    D:\ScanState_x64\scanstate.exe /apps /ppkg D:\Provisioning\ClassicApps.ppkg /o /c /v:13 /l:D:\ScanState.log
     ```
 
     where *D* is the letter of the drive with ScanState.
 
-    You can now go back to [Lab 1](install-windows-automatically-from-a-usb-drive-sxs.md) and mix and match this provisioning package with other Windows images and customizations. Please refer to Lab 1, Step 1.6 for instructions on how to load a provisioning package in a WICD project, then continue Lab 1 flow.
-
+   
 -   **For build-to-order devices**, you can wrap up these changes and prepare the device for immediate delivery. Capture the changes to provisioning package, and save it as C:\\Recovery\\Customizations\\usmt.ppkg:
 
     ``` syntax

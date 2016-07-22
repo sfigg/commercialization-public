@@ -2,13 +2,16 @@
 @echo     Run from the reference device in the WinPE environment
 @echo     This script erases the primary hard drive and applies a new image
 @echo.
-@echo UPDATE (JUNE 2016):
+@echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
 @echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
 @echo   so that you can include them in your recovery tools.
 @echo.
 @echo   After the script is complete, use apply-recovery.bat to finish
 @echo   setting up the recovery tools.
+@echo.
+@echo * This script creates a now includes support for the /EA variables for quicker
+@echo   image capture and recovery.
 @echo.
 @echo * This script now includes support for the /EA variables for quicker
 @echo   image capture and recovery.
@@ -49,14 +52,8 @@ call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @echo  == Apply the image to the Windows partition ==
 @SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
 @if %COMPACTOS%.==y. set COMPACTOS=Y
-@echo Does this image include Extended Attributes?
-@echo    (If you're not sure, type N).
-@SET /P EA=(Y or N):
-@if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+if %COMPACTOS%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
 @echo *********************************************************************
 @echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:

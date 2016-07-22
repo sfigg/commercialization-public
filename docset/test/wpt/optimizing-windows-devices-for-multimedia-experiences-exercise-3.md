@@ -48,7 +48,7 @@ Offloading audio processing on chipsets that support audio offload results in lo
 
 4.  If your audio render events are fired throughout the trace, audio was playing when the trace was collected.
 
-![](images/optimizingwindowsdeviceslab1.png)
+![Screenshot of Media eXperience Analyzer (MXA) showing audio trace event data.](images/optimizingwindowsdeviceslab1.png)
 
 As we can see in the screenshot above, audio render events in the **Microsoft-Windows-MediaFoundation-Performance** provider (**Task Audio\_Render – 482**) are logged throughout the entire trace. This verifies that audio was playing back.
 
@@ -75,13 +75,13 @@ As we can see in the screenshot above, audio render events in the **Microsoft-Wi
 
 Notice that the **audiodg.exe** is waking up every 10ms to process audio samples throughout the entire trace.
 
-![](images/optimizingwindowsdeviceslab2.png)
+![Screenshot of Media eXperience Analyzer (MXA) showing trace taken on a system where audio is NOT being offloaded.](images/optimizingwindowsdeviceslab2.png)
 
 ### <a href="" id="mxa-screenshot--2--trace-taken-on-a-system-where-audio-is-being-offloaded"></a>MXA Screenshot \#2: Trace taken on a system where audio is being offloaded
 
 Notice the very low thread activity in the **audiodg.exe** process exists at start-up and shutdown phases of playback. Notice also that there is no thread activity during steady state.
 
-![](images/optimizingwindowsdeviceslab3.png)
+![Screenshot of Media eXperience Analyzer (MXA) showing trace taken on a system where audio is being offloaded.](images/optimizingwindowsdeviceslab3.png)
 
  
 

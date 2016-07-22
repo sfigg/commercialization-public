@@ -8,11 +8,9 @@ title: 'Lab 2: Classic-style imaging and deployment'
 
 # <span id="p_sxs_dmfg.part_2__classic-style_deployment"></span>Lab 2: Classic-style imaging and deployment
 
-
 Lab 2, Classic-style deployment, uses command line tools in the Windows ADK to customize and deploy a Windows image.
 
 ## <span id="Design_your_images"></span><span id="design_your_images"></span><span id="DESIGN_YOUR_IMAGES"></span>Design your images
-
 
 Here’s a sample set of hardware configurations that you might design.
 
@@ -556,7 +554,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     
     **Note**  You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
 
-    ![](images/dep-win8-sxs-createdeploymentscript.jpg)
+    ![Image shows that to create a reference computer with customizations, you need a new Computer, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
 
 **Step 15: Format and set up the hard drive partitions on the reference device**
 

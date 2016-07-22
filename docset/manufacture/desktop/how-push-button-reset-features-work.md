@@ -303,7 +303,7 @@ Compact OS is a collection of technologies which allow Windows 10 to be deploye
 
 The following diagram illustrates the high-level content layout of PCs with Compact OS enabled:
 
-![](images/dep-winre-compactos.png)
+![Diagram shows the partition structure. The OS partition includes the Runtime OS and provisioning packages, which are in C:\Recovery\Customizations. The Runtime OS is compressed. Desktop apps are in provisioning packages, in the C:\Recovery\Customizations folder, and these provisioning packages are compressed. To run the desktop apps, the runtime OS uses file pointers that go to the provisioning package.](images/dep-winre-compactos.png)
 
 Both technologies are optional and can be configured during deployment.
 

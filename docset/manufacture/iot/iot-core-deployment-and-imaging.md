@@ -417,11 +417,11 @@ To configure an image to receive only OS updates, you must configure generic POP
 To create an enterprise provisioning package that you can deploy to a IoT Core device, follow these steps.
 
 1.  Download the IoT Core license file to the development device. More information about this step can be found at [IoT Core Commercialization](https://www.windowsforiotdevices.com/).
-2.  Create a new provisioning package containing a license file by selecting "New provisioning package" in Windows ICD, as in the following image, and then click **Next.**![](images/icdappmanager.png)
+2.  Create a new provisioning package containing a license file by selecting "New provisioning package" in Windows ICD, as in the following image, and then click **Next.**![Screenshot shows ICD, with "New provisioning package" highlighted.](images/icdappmanager.png)
 3.  In the **Enter Project Details** window, enter a **Name**, **Project folder**, and optionally a **Description** of the provisioning package, then click **Next**.
 4.  In the **Select Windows Edition** window, select IoT Core, then click **Next**.
 5.  In the optional **Import a provisioning package** window, click **Finish.**
-6.  In the **Customizations** page, add the [upgradeeditionwithlicense](https://msdn.microsoft.com/library/windows/hardware/mt573160.aspx) customization. this customization provides a license for an edition upgrade of iot core devices. ![](images/upgadeeditionwithlicense.png)
+6.  In the **Customizations** page, add the [upgradeeditionwithlicense](https://msdn.microsoft.com/library/windows/hardware/mt573160.aspx) customization. this customization provides a license for an edition upgrade of iot core devices. ![Screenshot shows ICD Available customizations, including the Runtime settings: EditionUpgrade: UpgradeEditionWithLicense, with the filename iotuapcommercial.xml entered.](images/upgadeeditionwithlicense.png)
 7.  Export the provisioning package by clicking the **Export** dropdown in the main menu, then selecting **Provisioning Package**, adding the required package information and specify options for the package. Click **Next** and then specify where the package will be saved.
 8.  Click **Build** to start building the image. The project information is displayed in the build page and the progress bar indicates the build status. If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations** Page.
 

@@ -23,7 +23,7 @@ You can skip these steps if you've already created and tested your app.
 
 1.  Create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/en-us/windows/iot/win10/samples/HelloWorld.htm) app.
 
-2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **Next**. 
+2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **No** > **Next**. 
 
 3.  Select: 
     - **Output location: C:\HelloWorld** (or any other path that doesn't include spaces.)
@@ -34,7 +34,7 @@ You can skip these steps if you've already created and tested your app.
 
     Visual Studio creates the Appx file into C:\HelloWorld\HelloWorld_1.0.0.0_Debug_Test 
 
-4.  Optional: (Test the app)[test-the-app.md]. Note, you may have already tested the app as part of building the project. 
+4.  Optional: [Test the app](test-the-app.md). Note, you may have already tested the app as part of building the project. 
 
 
 ## <span id="Package_the_app"></span><span id="package_the_app"></span><span id="PACKAGE_THE_APP"></span>Package the app
@@ -47,7 +47,7 @@ You can skip these steps if you've already created and tested your app.
 2.  Create a working folder for the app, for example:
 
     ``` syntax
-    newAppxPkg "C:\Users\<UserName>\Documents\Visual Studio 2015\Projects\HelloWorld\AppPackages\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
+    newAppxPkg "C:\HelloWorld\HelloWorld_1.0.0.0_ARM_Debug_Test\HelloWorld_1.0.0.0_ARM_Debug.appx" Appx.HelloWorld
     ```
 
     This creates a new working folder at C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Appx.HelloWorld that includes files that you'll use to help build the package.
@@ -213,7 +213,9 @@ You can skip these steps if you've already created and tested your app.
 	
 2.  Install the image onto the Micro SD card.
     -  Start **Windows IoT Core Dashboard**
-    -  **Setup a new device** &gt; **Custom**, click Browse, and select your image. 
+    -  Click the **Setup a new device** tab.
+	-  In Device Type, select **Custom**. This gives you new options to Browse for and to select your image. 
+	-  Add a device name and password.+.
 	-  Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
 	This replaces the previous image with your new image.
 

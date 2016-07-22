@@ -20,15 +20,15 @@ The analysis process related to spurious wakes is fairly straightforward.
 
 3.  Click on **Session 2**. The system consumes 1.818 Watts of energy during 19 hours and the **DRIPS %** is 92%.
 
-    ![](images/standbylab1.png)
+    ![Screenshot shows a sample of Connected Standby Session 2](images/standbylab1.png)
 
 4.  Look at the **Top Offenders** table. The networking wireless device is listed as active 7% of the time during the session.
 
-    ![](images/standbylab2.png)
+    ![Screenshot shows a sample of top offenders of battery consumption.](images/standbylab2.png)
 
 5.  Click on the networking device row to obtain details about this offender.
 
-    ![](images/standbylab3.png)
+    ![Screenshot shows detailed information about the networking device that is consuming the most power.](images/standbylab3.png)
 
 Spurious wakes are clearly identified by the report. There are 80 of them in this example. A follow-up discussion should happen with the IHV to determine why the wireless adapter is waking up the SoC unexpectedly. The underlying problem could be a bad device firmware implementation.
 

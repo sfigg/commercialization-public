@@ -7,21 +7,12 @@ title: Where is lp.cab?
 
 # Where is lp.cab?
 
-Windows 10 language packs have been renamed from lp.cab to the following file name format:
+Language packs and language interface packs have been renamed in Windows 10 version 1607. 
 
-Microsoft-Windows-SKU-Language-Pack_arch_locale.cab
-
-For example:
-
-Microsoft-Windows-Client-Language-Pack_x64_es-es.cab
-
-The language interface packs have also been renamed as follows:
-
-Microsoft-Windows-SKU-Language-Interface-Pack_arch_locale.cab
-
-For example:
-
-Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab
+| Package | Name format | Example |
+|---------|-------------|---------|
+| Language pack | Microsoft-Windows-_SKU_-Language-Pack_\_arch_\__locale_.cab | Microsoft-Windows-Client-Language-Pack_x64_es-es.cab |
+| Language interface pack | Microsoft-Windows-_SKU_-Language-Interface-Pack_\_arch_\__locale_.cab | Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es-valencia.cab |
 
 ## <span id="related_topics"></span>Related topics
 

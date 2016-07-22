@@ -419,7 +419,7 @@ In this step, you install your Windows image on a test computer and boot it to a
 
 1.  Do one of the following to boot a test computer to audit mode:
 
-    -   For an attended installation, at the OOBE screen, press **CTRL+SHIFT+F3**.
+    -   For an attended installation, at the OOBE screen, press **Ctrl+Shift+F3**.
 
     -   In an unattended installation, use an answer file with the Microsoft-Windows-Deployment\\Reseal\\Mode configured to **Audit**. This setting should appear in the **oobeSystem** configuration pass.
 

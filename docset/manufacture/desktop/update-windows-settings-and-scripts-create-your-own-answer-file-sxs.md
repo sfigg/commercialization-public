@@ -1,26 +1,28 @@
 ---
 author: Justinha
-Description: 'Lab 2a: Answer files: Update settings and run scripts'
+Description: 'Lab 1e: Change settings and run scripts with an answer file'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 2a: Answer files: Update settings and run scripts'
+title: 'Lab 1e: Change settings and run scripts with an answer file'
 ---
 
-# Lab 2a: Answer files: Update settings and run scripts
+# Lab 1e: Change settings and run scripts with an answer file
 
+Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
-Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create scripts that you can inject into your offline images, so that you can efficiently make changes to multiple images without ever booting them.
+As an example, we'll add a setting that shows you how to automatically boot to a maintenance mode called audit mode. This mode allows you to perform additional tests, and capture changes. We'll use audit mode in the next few labs.
+
+Note: If your image is set to boot into audit mode, you won't be able to send it to customers or apply SPPs to it.
 
 ![diagram of creating a new answer file](images/dep-win8-sxs-createanswerfile.jpg)
 
 ## <span id="overview"></span><span id="OVERVIEW"></span>Windows settings overview
 
-
 While you can set many Windows settings in audit mode, some settings can only be set by using an answer file or Windows Imaging and Configuration Designer (ICD), such as adding manufacturer’s support information. A full list of answer file settings (also known as Unattend settings) is in the [Unattended Windows Setup Reference](https://msdn.microsoft.com/library/windows/hardware/dn923277).
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
-You canspecify which configuration pass to add new settings:
+You can specify which configuration pass to add new settings:
 
 -   **1 windowsPE**: These settings are used by the Windows Setup installation program. If you’re modifying existing images, you can usually ignore these settings.
 -   **4 specialize**: Most settings should be added here. These settings are triggered both at the beginning of audit mode and at the beginning of OOBE. If you need to make multiple updates or test settings, generalize the device again and add another batch of settings in the Specialize Configuration pass.
@@ -36,10 +38,7 @@ You canspecify which configuration pass to add new settings:
 
 **Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts](windows-deployment-sample-scripts-sxs.md): Keeping Windows settings through a recovery.
 
- 
-
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
-
 
 **Create a catalog file**
 
@@ -66,8 +65,6 @@ You canspecify which configuration pass to add new settings:
     The new answer file appears in the **Answer File** pane.
 
     **Note**   If you open an existing answer file, you might be prompted to associate the answer file with the image. Click **Yes**.
-
-     
 
 **Add new answer file settings**
 
@@ -98,9 +95,7 @@ You canspecify which configuration pass to add new settings:
 -   Save the answer file, for example: **C:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
-
      
-
 **Create a script**
 
 -   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
@@ -116,7 +111,6 @@ You canspecify which configuration pass to add new settings:
     ```
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
-
 
 1.  Mount the Windows image. The mounting process maps the contents of an image file to a location where you can view and modify the mounted image.
 
@@ -148,19 +142,21 @@ You canspecify which configuration pass to add new settings:
 
     This process may take several minutes.
 
-**Verify your customizations**
+**Try it out**
+Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
 
-1.  Apply the Windows image to a new device as described in [Lab 2: Classic-style deployment](part-2--classic-style-deployment.md), Step 15: Apply Windows images using a script.
-2.  When audit mode starts, the script should start automatically.
-3.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
+1.  Boot the reference PC to Windows PE.
+2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
+    Note, because this image is set to boot to audit mode, you won't be able to apply any siloed provisioning packages. 
+4.  Disconnect the drives, then reboot (`exit`).
 
-While in Audit mode, you can start [Lab 2b: Windows desktop apps and data: capturing changes](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
+**Step 16: Verify settings and scripts**
+If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
 
- 
+1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
 
- 
-
-
-
-
+Leave the PC booted into audit mode to continue to either of the following labs:
+-  [Lab 1f: Add classic Windows applications with siloed provisioning packages](add-classic-apps-wth-spps-sxs.md).
+-  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
