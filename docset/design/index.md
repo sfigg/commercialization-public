@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 084fc682-8542-4e36-9543-bb7c84f02ddd
-author: joshbax
+author: joshbax-msft
 ---
 
 # Design
