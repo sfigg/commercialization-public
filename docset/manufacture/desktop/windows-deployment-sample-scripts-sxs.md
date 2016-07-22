@@ -9,8 +9,9 @@ title: Sample scripts
 # Sample scripts
 
 [Download the sample scripts used in this lab](http://go.microsoft.com/fwlink/p/?LinkId=800657) 
-Copy these scripts to the root of your storage USB drive.
-Refer to this page to understand what's in the scripts.
+
+Copy these scripts to the root of your storage USB drive.  Refer to this page to understand what's in the scripts.
+
 Next step: [Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts

@@ -9,34 +9,28 @@ title: 'Lab 1f: Add classic Windows applications with siloed provisioning packag
 
 Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all classic Windows applications and settings that are installed with a Windows image, a siloed provisioning package can capture classic Windows applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.
 
-We recommend that each time you capture a new app, you start with a clean, freshly-installed Windows image, in audit mode.
-**Tip**: Virtual machines (VMs) can be a huge time-saver here. Rather than reinstalling Windows each time, with VMs, you can capture checkpoints of the PC at the freshly-installed state, allowing you to quickly revert back to the checkpoint to install more classic Windows applications. 
+We recommend that each time you capture a new classic Windows application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
+1.  Create a VM with a new Windows image, and boot it into audit mode.
+2.  Create the 1st checkpoint.
+3.  Install a classic Windows application, then capture it as an SPP.
+    a. If the classic Windows application has add-ons, like Microsoft Office language packs, create a 2nd checkpoint.
+	b. Install the add-on, and capture it as a differential SPPs.
+	c. Restore to the 2nd checkpoint and repeat to capture any more add-ons.
+4.  Restore to the 1st checkpoint and repeat to capture more classic Windows applications.
 
-## <span id="Prepare_a_copy_of_ScanState"></span><span id="prepare_a_copy_of_scanstate"></span><span id="PREPARE_A_COPY_OF_SCANSTATE"></span>Step 1: Prepare a copy of ScanState
+## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
 
-1.  On your technician PC, plug in the storage USB key or drive.
-2.  In File Explorer, create a new folder on the USB key, for example: **D:\\ScanState\\amd64**.
-3.  Copy the files from the Windows ADK. When copying, there will be duplicate files, it's OK to skip copying these files. You don't need to copy the subfolders.
-
-    ``` syntax
-    md D:\ScanState\amd64
-    xcopy /E "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64" D:\ScanState\amd64
-    xcopy /E /Y "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources"  D:\ScanState\amd64
-    ```
-
-## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="step_1__prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 2: Prepare a copy of the Deployment and Imaging Tools
-
-You'll need the Windows 10, version 1607 version of the Deployment and Imaging Tools from the ADK. As of Windows 10, version 1607, the full set of tools don't get installed with Windows PE, so you'll need to add them to the storage drive and run it from there.
+You'll need the Windows 10, version 1607 version of the Deployment and Imaging Tools from the ADK. This includes the ScanState tool and the latest version of DISM.
 
 **Important**   Don't overwrite the existing DISM files on the WinPE image.
 
 1.  Copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
 
     ``` syntax
-    CopyDandI.cmd amd64 E:\ADKTools\
+    CopyDandI.cmd amd64 E:\ADKTools\amd64
 	```
 
-## <span id="Prepare_a_device_for_image_capture"></span><span id="prepare_a_device_for_image_capture"></span><span id="PREPARE_A_DEVICE_FOR_IMAGE_CAPTURE"></span>Step 3: Prepare a device for image capture
+## <span id="Prepare_a_device_for_image_capture"></span><span id="prepare_a_device_for_image_capture"></span><span id="PREPARE_A_DEVICE_FOR_IMAGE_CAPTURE"></span>Step 2: Prepare a device for image capture
 
 **Get into audit mode**
 
@@ -44,7 +38,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 2.  If the device boots to the **Languages** or the **Get going fast** screen, press **Ctrl+Shift+F3** to enter Audit mode.
 3.  In audit mode, the device reboots to the Desktop, and the System Preparation Tool (Sysprep) appears. Ignore Sysprep for now.
 
-## <span id="Install_and capture_a_Classic_Windows_application"></span><span id="install_a_classic_windows_application"></span><span id="INSTALL_A_CLASSIC_WINDOWS_APPLICATION"></span>Step 4: Install and capture a Classic Windows application
+## <span id="Install_and capture_a_Classic_Windows_application"></span><span id="install_a_classic_windows_application"></span><span id="INSTALL_A_CLASSIC_WINDOWS_APPLICATION"></span>Step 3: Install and capture a Classic Windows application
 
 1.  Optional: if you're using a VM, capture a checkpoint.
 
@@ -55,7 +49,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 4.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
     ``` syntax
-    E:\ScanState\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ScanState\amd64\Config_AppsOnly.xml /ppkg e:\SPPs\office16_base.spp
+    E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /ppkg e:\SPPs\office16_base.spp
     ```
 
     where *E* is the drive letter of the USB drive with ScanState.
@@ -71,7 +65,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 	
 	3.  Capture the combined files as an add-on pack.
         ``` syntax
-        E:\ScanState\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ScanState\amd64\Config_AppsOnly.xml /diff:e:\SPPs\office16_base.spp /ppkg E:\SPPs\office16_fr-fr.spp
+        E:\ADKTools\amd64\ScanState.exe /apps:-sysdrive /o /v:13 /config:E:\ADKTools\amd64\Config_AppsOnly.xml /diff:e:\SPPs\office16_base.spp /ppkg E:\SPPs\office16_fr-fr.spp
         ```
 
         The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically.
@@ -86,7 +80,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 	   or
 	-  For VMs, revert back to the 1st checkpoint, then capture the next app.
 
-## <span id="Try_it_out"></span><span id="try_it_out"></span><span id="TRY_IT_OUT"></span>Step 5: Try it out
+## <span id="Try_it_out"></span><span id="try_it_out"></span><span id="TRY_IT_OUT"></span>Step 4: Try it out
 	
 **Apply the image**
 
@@ -94,8 +88,7 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image:
-    D:\ApplyImage.bat D:\Images\install-updated.wim
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
 
 **Apply the SPP**
 1.  Install the Deployment and Imaging Tools  by using either **WimMountAdkSetupAmd64.exe /Install** or **WimMountAdkSetupX86.exe /Install**.
