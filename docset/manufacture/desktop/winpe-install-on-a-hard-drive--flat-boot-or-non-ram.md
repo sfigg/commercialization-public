@@ -17,8 +17,7 @@ These instructions show how to set up a basic Windows PE installation that runs
 When Windows PE is running from the drive, you must turn off the PC before disconnecting the drive to avoid losing your work.
 
  
-
-**Install the Windows ADK**
+## <span id="Install_the_Windows_ADK"></span> Install the Windows ADK
 
 -   Get the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature.
 
@@ -40,7 +39,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     copype x86 C:\WinPE_x86
     ```
 
-**Create a Working Directory for Windows PE Files**
+## <span id="Create_a_Working_Directory"></span> Create a Working Directory for Windows PE Files
 
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
@@ -50,7 +49,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     copype amd64 C:\WinPE_amd64
     ```
 
-**Install Windows PE to the Media**
+## <span id="Install_Windows_PE"> Install Windows PE to the Media
 
 1.  Use DiskPart to prepare the partitions.
 
@@ -71,13 +70,13 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     format quick fs=fat32 label="Windows PE"
     assign letter=P
     active
-    rem === Create a data partition. ===
+    rem === Create a partition for images ===
     create partition primary
-    format fs=ntfs quick label="Other files"
-    assign letter=O
+    format fs=ntfs quick label="Images"
+    assign letter=I
     list vol
     exit
-    ```
+	```
 
     where *&lt;disk number&gt;* is the listed number of the external USB hard drive.
 
@@ -98,7 +97,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
      
 
-**Boot to Windows PE**
+## <span id="Boot_to_Windows_PE"> Boot to Windows PE
 
 1.  Connect the device (internal or external USB hard drive) into the PC you want to work on.
 
@@ -107,11 +106,24 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     **Note**  
     For UEFI-based PCs, you might need to find an option to manually select the UEFI boot files, for example, USBDrive01\\EFI\\BOOT\\BOOTX64.EFI.
 
-     
-
     Windows PE starts automatically. After the command window appears, the wpeinit command runs automatically. This might take a few minutes.
 
-**Troubleshooting**
+## <span id="Scripting"> Scripting
+Here's a sample script you can use that looks through each of the drives for a folder titled Images. It does not look on the X: drive, as this drive is assigned to Windows PE.
+
+    ``` syntax
+	@echo Find a drive that has a folder titled Images.
+	@for %%finddrive in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do (
+        if exist %%finddrive:\Images\ (
+	    @echo Device Found : %%finddrive
+        set DRIVELETTER=%%finddrive
+	    )
+	  )
+    dir %DriveLetter%:\images /w
+
+
+	
+## <span id="Troubleshooting"> Troubleshooting
 
 1.  If the PC does not boot, try the following steps in sequence, and try to boot the PC after each step:
 
@@ -127,7 +139,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
 -   See [Windows Setup Supported Platforms and Cross-Platform Deployments](windows-setup-supported-platforms-and-cross-platform-deployments.md) for tips on installing Windows on UEFI PCs that support both UEFI and legacy BIOS firmware modes, and for using the 32-bit (x86) version of Windows PE to install a 64-bit version of Windows.
 
-## <span id="related_topics"></span>Related topics
+## <span id="Related_topics"></span>Related topics
 
 
 [WinPE for Windows 10](winpe-intro.md)
