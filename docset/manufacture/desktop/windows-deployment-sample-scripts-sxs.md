@@ -95,7 +95,7 @@ if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:
 W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo *********************************************************************
 @echo   Next steps:
-@echo   * Add Windows Classic apps (optional):
+@echo   * Add Windows desktop applications (optional):
 @echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
 @echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
 @echo   * Add the recovery image:
@@ -282,7 +282,7 @@ list volume
 ## <span id="start_layout__layoutmodification.xml_"></span><span id="START_LAYOUT__LAYOUTMODIFICATION.XML_"></span>Start layout (LayoutModification.xml)
 
 
-The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Classic Windows applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
+The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
 
 To take advantage of all these new features and have the most robust and complete Start customization experience for Windows 10, consider creating a LayoutModification.xml file. This file specifies how the OEM tiles should be laid out in Start. For more information about how to customize the new Start layout, see the topic [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651) in the Windows 10 Partner Documentation.
 
@@ -388,7 +388,7 @@ Sample **LayoutModification.xml**:
               Size="2x2"
               Row="0"
               Column="0"/>
-            <!-- Add a Classic Windows application with a known AppUserModelID  -->
+            <!-- Add a Windows desktop application with a known AppUserModelID  -->
             <start:DesktopApplicationTile
               DesktopApplicationID="Microsoft.Windows.Explorer"
               Size="2x2"
@@ -419,7 +419,7 @@ Sample **LayoutModification.xml**:
               Size="2x2"
               Row="0"
               Column="2"/>
-            <!-- Add a Classic Windows application link in a legacy Start Menu folder. You must add the .lnk file 
+            <!-- Add a Windows desktop application link in a legacy Start Menu folder. You must add the .lnk file 
                  in the specified location when the device first boots. -->
             <start:DesktopApplicationTile
               DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
@@ -455,7 +455,7 @@ Sample **LayoutModification.xml**:
 
     Keep the following in mind when creating your LayoutModification.xml file:
 
-    -   If you are pinning a Classic Windows applications using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
+    -   If you are pinning a Windows desktop applications using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
     -   If you use the **start:DesktopApplicationTile** tag to pin a legacy .url shortcut to Start, you must create a .url file and add this file to a legacy Start Menu directory before first boot.
 
     For the above scenarios, you can use the following directories to put the .url or .lnk files:

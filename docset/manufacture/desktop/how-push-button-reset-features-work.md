@@ -37,7 +37,7 @@ Drivers are restored in a similar fashion as the OS. Instead of restoring them f
 -   If the customer performs recovery after booting up a new PC preinstalled with Windows 10, drivers that are present during OOBE will be restored, even if newer drivers have been installed since.
 -   If the customer performs recovery after upgrading from Windows 10 to Windows 10, version 1511, the drivers that are present during the upgrade will be restored, even if newer drivers have been installed since.
 
-Device applets which are installed outside of the driver INF package are not restored as part of this process. They are restored to factory version and state in the same way as other customizations such as Classic Windows applications. (See Restoring other customizations for more information.) If the device applet must always stay in sync (version wise) with the driver, it is recommended that both the driver and the device applet be installed via the same INF package.
+Device applets which are installed outside of the driver INF package are not restored as part of this process. They are restored to factory version and state in the same way as other customizations such as Windows desktop applications. (See Restoring other customizations for more information.) If the device applet must always stay in sync (version wise) with the driver, it is recommended that both the driver and the device applet be installed via the same INF package.
 
 ### <span id="Restoring_previously_installed_Windows_apps"></span><span id="restoring_previously_installed_windows_apps"></span><span id="RESTORING_PREVIOUSLY_INSTALLED_WINDOWS_APPS"></span>Restoring previously installed Windows apps
 
@@ -45,9 +45,9 @@ Preinstalled Windows apps are always restored to their factory version and state
 
 ### <span id="Restoring_other_customizations"></span><span id="restoring_other_customizations"></span><span id="RESTORING_OTHER_CUSTOMIZATIONS"></span>Restoring other customizations
 
-By default, Push-button reset features restore only OS files, drivers, and preinstalled Universal Windows apps. Different mechanisms are used to restore other customizations, such as settings and Classic Windows applications.
+By default, Push-button reset features restore only OS files, drivers, and preinstalled Universal Windows apps. Different mechanisms are used to restore other customizations, such as settings and Windows desktop applications.
 
--   **Classic Windows applications** can be captured using the User State Migration Tool’s (USMT) ScanState utility into a reference device data image within a provisioning package. Push-button reset features look for and automatically restore this provisioning package from a well-known location.
+-   **Windows desktop applications** can be captured using the User State Migration Tool’s (USMT) ScanState utility into a reference device data image within a provisioning package. Push-button reset features look for and automatically restore this provisioning package from a well-known location.
 -   **Settings common to all editions of Windows 10** (including Windows 10 Mobile) can be set using the Windows Imaging and Configuration Designer (ICD) tool and stored in provisioning packages. Push-button reset features look for and automatically restore these provisioning packages from a well-known location. Alternatively, these settings can be restored using a combination of an unattend file and extensibility scripts for Push-button reset.
 -   **Settings specific to editions of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)** can be restored using a combination of an unattend file and extensibility scripts for Push-button reset. Examples of these settings include manufacturer support information, manufacturer logos and Start Menu layout.
 
@@ -124,10 +124,10 @@ The Refresh your PC feature handles application types differently in order to en
 
 -   User-acquired Windows apps from the Windows Store are not preserved. Users will need to reinstall them from the Windows Store. This is a change from Windows 8/8.1.
 -   Preinstalled Windows apps are restored to their factory version and state. Updates to these apps will be downloaded and reapplied automatically when internet connectivity is available.
--   User-acquired Classic Windows applications are not preserved. Users will need to reinstall them manually.
--   Preinstalled Classic Windows applications captured in the customizations provisioning package will be restored to their factory condition, even if users have previously uninstalled them.
+-   User-acquired Windows desktop applications are not preserved. Users will need to reinstall them manually.
+-   Preinstalled Windows desktop applications captured in the customizations provisioning package will be restored to their factory condition, even if users have previously uninstalled them.
 
-The **Refresh your PC** feature does not preserve user-installed Classic Windows applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
+The **Refresh your PC** feature does not preserve user-installed Windows desktop applications by default, and locations that are commonly used for storing application settings (\\AppData and \\ProgramData) are deleted. Manufacturers can leverage the push-button reset extensibility points to save and later restore specific application settings and data, if necessary.
 
 ## <span id="Reset_your_PC"></span><span id="reset_your_pc"></span><span id="RESET_YOUR_PC"></span>Reset your PC
 
@@ -135,7 +135,7 @@ The **Refresh your PC** feature does not preserve user-installed Classic Windows
 **The Reset your PC feature can be summarized in the following steps:**
 
 1.  PC boots into the Windows Recovery Environment (Windows RE).
-2.  User accounts, data and installed Windows apps and Classic Windows applications are removed from the OS volume.
+2.  User accounts, data and installed Windows apps and Windows desktop applications are removed from the OS volume.
 3.  Data volumes are formatted (if requested by the user).
 4.  Data erasure is performed on OS and data volumes (if requested by the user).
 5.  **EXTENSIBILITY POINT C**: OEMs can optionally add a script here. (See [Extensibility points](#extensibility-points) later in this topic).
@@ -299,7 +299,7 @@ The extensibility points for **Reset your PC** are summarized in the following t
 Compact OS is a collection of technologies which allow Windows 10 to be deployed on PCs with storage capacity as low as 16 gigabytes (GB). The following two technologies in particular work in conjunction with the Push-button reset changes to reduce Windows’ disk footprint:
 
 -   Per-file compression When applying a reference image file (WIM) to a PC, the files written to the disk can be compressed individually using the XPRESS Huffman codec. This is the same codec used by the WIMBoot technology in Windows 8.1. When Push-button reset features rebuilds the OS, the runtime system files remain compressed.
--   Single-instancing of installed customizations After the installed customizations (e.g. Classic Windows applications) have been captured (using ScanState) into a reference device data image stored inside a provisioning package, the two copies of the customizations can be singled-instanced to reduce disk footprint impact. This is accomplished by converting the installed customizations (e.g. C:\\Program Files\\Foo\\Foo.exe) into file pointers linked to the contents of the reference device data image.
+-   Single-instancing of installed customizations After the installed customizations (e.g. Windows desktop applications) have been captured (using ScanState) into a reference device data image stored inside a provisioning package, the two copies of the customizations can be singled-instanced to reduce disk footprint impact. This is accomplished by converting the installed customizations (e.g. C:\\Program Files\\Foo\\Foo.exe) into file pointers linked to the contents of the reference device data image.
 
 The following diagram illustrates the high-level content layout of PCs with Compact OS enabled:
 

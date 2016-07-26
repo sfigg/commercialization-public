@@ -8,7 +8,7 @@ title: 'Lab 1g: Make changes from Windows (audit mode)'
 
 # Lab 1g: Make changes from Windows (audit mode)
 
-You can use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows classic applications, change system settings, add data, and run scripts.  
+You can use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts.  
 
 We'll also show you how to generalize the image, which prepares the Windows files to be captured and applied to other devices.
 
@@ -18,9 +18,9 @@ We'll also show you how to generalize the image, which prepares the Windows file
 2.  If the device boots to the **Languages** or the **Get going fast** screen, press **Ctrl+Shift+F3** to enter Audit mode.
 3.  In audit mode, the device reboots to the Desktop, and the System Preparation Tool (Sysprep) appears. Ignore Sysprep for now.
 
-## <span id="Install_a_Classic_Windows_application"></span><span id="install_a_classic_windows_application"></span><span id="INSTALL_A_CLASSIC_WINDOWS_APPLICATION"></span>Step 2: Customize the PC in audit mode.
+## <span id="Install_a_Classic_Windows_application"></span><span id="install_a_windows_desktop_application"></span><span id="INSTALL_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 2: Customize the PC in audit mode.
 
--   Install a Classic Windows application. Change system settings. Add data. Run scripts.
+-   Install a Windows desktop application. Change system settings. Add data. Run scripts.
 
 ## <span id="Capture_your_changes"></span>Step 3: Capture your changes
 
@@ -61,7 +61,7 @@ We'll also show you how to generalize the image, which prepares the Windows file
 
 **Optimize the image to take up less drive space (optional)**
 
-1.  Convert the Classic Windows application and files outside of the provisioning package into pointer files which reference the contents inside the provisioning package. This is known as single-instancing the image:
+1.  Convert the Windows desktop application and files outside of the provisioning package into pointer files which reference the contents inside the provisioning package. This is known as single-instancing the image:
 
     ``` syntax
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance
@@ -89,7 +89,7 @@ We'll also show you how to generalize the image, which prepares the Windows file
     dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithFinalChanges.wim" /Name:"Final changes"
     ```
 
-    where *C* is the drive letter of the Windows partition and *French and Classic Applications* is the image name.
+    where *C* is the drive letter of the Windows partition and *French and Desktop Applications* is the image name.
 
     The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
 

@@ -10,7 +10,7 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for creating base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
-New in this lab: With siloed provisioning packages, you can now capture and apply Classic Windows applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
+New in this lab: With siloed provisioning packages, you can now capture and apply Windows desktop applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
 
 Let's get started!
 
@@ -30,5 +30,5 @@ Let's get started!
 *  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
 *  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
 *  [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1f: Add classic Windows applications with siloed provisioning packages](add-classic-apps-wth-spps-sxs.md)
+*  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 *  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)

@@ -1,22 +1,22 @@
 ---
 author: Justinha
-Description: 'Lab 1f: Add classic Windows applications with siloed provisioning packages'
+Description: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1f: Add classic Windows applications with siloed provisioning packages'
+title: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
 ---
-# Lab 1f: Add classic Windows applications with siloed provisioning packages
+# Lab 1f: Add Windows desktop applications with siloed provisioning packages
 
-Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all classic Windows applications and settings that are installed with a Windows image, a siloed provisioning package can capture classic Windows applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.
+Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.
 
-We recommend that each time you capture a new classic Windows application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
+We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
 1.  Create a VM with a new Windows image, and boot it into audit mode.
 2.  Create the 1st checkpoint.
-3.  Install a classic Windows application, then capture it as an SPP.
-    a. If the classic Windows application has add-ons, like Microsoft Office language packs, create a 2nd checkpoint.
+3.  Install a Windows desktop application, then capture it as an SPP.
+    a. If the Windows desktop application has add-ons, like Microsoft Office language packs, create a 2nd checkpoint.
 	b. Install the add-on, and capture it as a differential SPPs.
 	c. Restore to the 2nd checkpoint and repeat to capture any more add-ons.
-4.  Restore to the 1st checkpoint and repeat to capture more classic Windows applications.
+4.  Restore to the 1st checkpoint and repeat to capture more Windows desktop applications.
 
 ## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
 
@@ -38,11 +38,11 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 2.  If the device boots to the **Languages** or the **Get going fast** screen, press **Ctrl+Shift+F3** to enter Audit mode.
 3.  In audit mode, the device reboots to the Desktop, and the System Preparation Tool (Sysprep) appears. Ignore Sysprep for now.
 
-## <span id="Install_and capture_a_Classic_Windows_application"></span><span id="install_a_classic_windows_application"></span><span id="INSTALL_A_CLASSIC_WINDOWS_APPLICATION"></span>Step 3: Install and capture a Classic Windows application
+## <span id="Install_and capture_a_Classic_Windows_application"></span><span id="install_a_windows_desktop_application"></span><span id="INSTALL_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 3: Install and capture a Windows desktop application
 
 1.  Optional: if you're using a VM, capture a checkpoint.
 
-2.  Install a Classic Windows application. For example, to install Office 2016, put in a USB key with the Office installation program, open File Explorer and navigate to **oemsetup.en-us.cmd**. To learn more, download the Office OPK Update image from the Office OPK Connect site.
+2.  Install a Windows desktop application. For example, to install Office 2016, put in a USB key with the Office installation program, open File Explorer and navigate to **oemsetup.en-us.cmd**. To learn more, download the Office OPK Update image from the Office OPK Connect site.
 
 3.  Start a command prompt.
 
@@ -112,6 +112,6 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 	
 **Verify apps**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
-2.  See if your classic Windows applications and add-ons are installed.
+2.  See if your Windows desktop applications and add-ons are installed.
 
 Next step: [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
