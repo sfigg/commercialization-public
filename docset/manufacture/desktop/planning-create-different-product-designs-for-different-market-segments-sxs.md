@@ -61,7 +61,7 @@ This lab uses the following three sample hardware configurations.
 | Inbox apps (Universal)       | Yes          | Yes                 | Yes                               |
 | Pen                          | No           | Yes                 | No                                |
 | Office (Universal)           | Yes          | Yes                 | Yes                               |
-| Classic Windows applications | No           | Yes                 | Yes                               |
+| Windows desktop applications | No           | Yes                 | Yes                               |
 | Office 2016                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
  

@@ -157,6 +157,6 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
 
 Leave the PC booted into audit mode to continue to either of the following labs:
--  [Lab 1f: Add classic Windows applications with siloed provisioning packages](add-classic-apps-wth-spps-sxs.md).
+-  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
 -  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 

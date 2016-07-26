@@ -64,7 +64,7 @@ Use deployment scripts to apply the image onto a test device. These scripts set 
 For your initial tests, skip these steps. 
 For final deployments, you'll need to add the recovery image before deploying the PCs in case something goes wrong.
 
-1.  Skip this step until you've completed [Lab 1f: Add Windows classic apps with siloed provisioning packages (SPP)](add-classic-apps-wth-spps-sxs.md). This step adds classic Windows applications to your images. This must be done before adding the recovery image.
+1.  Skip this step until you've completed [Lab 1f: Add Windows desktop applications with siloed provisioning packages (SPP)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
     ```syntax
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
@@ -100,5 +100,5 @@ The next labs show you how to customize the images. You can do them in any order
 *  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
 *  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
 *  [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1f: Add classic Windows applications with siloed provisioning packages](add-classic-apps-wth-spps-sxs.md)
+*  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 *  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)

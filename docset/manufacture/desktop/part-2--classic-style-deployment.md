@@ -27,13 +27,13 @@ Here’s a sample set of hardware configurations that you might design.
 | Inbox apps (Universal)       | Yes          | Yes                 | Yes                               |
 | Pen                          | No           | Yes                 | No                                |
 | Office (Universal)           | Yes          | Yes                 | Yes                               |
-| Classic Windows applications | No           | Yes                 | Yes                               |
+| Windows desktop applications | No           | Yes                 | Yes                               |
 | Office 2016                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
 
  
 
-Lab 2 covers all the steps to customize and deploy a Windows image with optional steps for hardware configuration 1B and 2. Lab 2a shows you how to continue customizing your image by adding Classic Windows applications. Lab 2b shows you how to service your custom image with Windows updates.
+Lab 2 covers all the steps to customize and deploy a Windows image with optional steps for hardware configuration 1B and 2. Lab 2a shows you how to continue customizing your image by adding Windows desktop applications. Lab 2b shows you how to service your custom image with Windows updates.
 
 ## <span id="prepimages"></span><span id="PREPIMAGES"></span>Customize and deploy a Windows image
 

@@ -30,7 +30,7 @@ This guide is organized around three hardware and software configurations.
 | Inbox apps (universal)       | Yes          | Yes          | Yes          |
 | Pen                          | No           | Yes          | No           |
 | Office (Universal)           | Yes          | Yes          | Yes          |
-| Classic Windows applications | No           | Yes          | Yes          |
+| Windows desktop applications | No           | Yes          | Yes          |
 | Office 2016                  | No           | Yes          | Yes          |
 | Compact OS                   | Yes          | Yes          | No           |
 
@@ -1222,7 +1222,7 @@ Pre-install Office single image (either with or with out perpetual or subscripti
 
 #### Modify the Start layout
 
-The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, classic Windows applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists to the user, including important or frequently accessed system locations and recently installed apps.
+The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows desktop applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists to the user, including important or frequently accessed system locations and recently installed apps.
 
 To take advantage of all these new features and have the most robust and complete Start customization experience for Windows 10, consider creating a LayoutModification.xml file. This file specifies how the OEM tiles should be laid out in Start. For more information about how to customize the new Start layout, see [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/Mt170651.aspx).
 
@@ -1234,7 +1234,7 @@ To take advantage of all these new features and have the most robust and complet
 
     Keep the following in mind when creating your LayoutModification.xml file:
 
-    -   If you are pinning a Classic Windows application using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
+    -   If you are pinning a Windows desktop application using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
 
     -   If you use the **start:DesktopApplicationTile** tag to pin a legacy .url shortcut to Start, you must create a .url file and add this file to a legacy Start Menu directory before first boot.
 
@@ -1694,7 +1694,7 @@ The following Push-button reset features are available to users with Windows 10 
 
 -   **Reset your PC**
 
-    Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Classic Windows applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state.
+    Prepares the PC for recycling or for transfer of ownership by reinstalling the OS, removing all user accounts and contents (e.g. data, Windows desktop applications, and Universal Windows apps), and restoring preinstalled customizations to their factory state.
 
 -   **Bare metal recovery**
 
@@ -1707,7 +1707,7 @@ For more information, see:
 
 #### Prepare ScanState tool 
 
-Prepare ScanState tool to capture Classic Windows applications after they have been installed and additional settings like registry.
+Prepare ScanState tool to capture Windows desktop applications after they have been installed and additional settings like registry.
 
 Note: You will do this on the technician system.
 

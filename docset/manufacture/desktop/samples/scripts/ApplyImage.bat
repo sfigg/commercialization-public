@@ -59,7 +59,7 @@ if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /
 W:\Windows\System32\bcdboot W:\Windows /s S:
 @echo *********************************************************************
 @echo   Next steps:
-@echo   * Add Windows Classic apps (optional):
+@echo   * Add Windows desktop applications (optional):
 @echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
 @echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
 @echo   * Add the recovery image:

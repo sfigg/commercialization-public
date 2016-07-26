@@ -461,7 +461,7 @@
 #### [Lab 1c: Add updates and upgrade the edition](manufacture/desktop/servicing-the-image-with-windows-updates-sxs.md)
 #### [Lab 1d: Add drivers, languages, and universal Windows apps](manufacture/desktop/add-drivers-langs-universal-apps-sxs.md)
 #### [Lab 1e: Change settings and run scripts with an answer file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-#### [Lab 1f: Add classic Windows applications with siloed provisioning packages](manufacture/desktop/add-classic-apps-wth-spps-sxs.md)
+#### [Lab 1f: Add Windows desktop applications with siloed provisioning packages](manufacture/desktop/add-desktop-apps-wth-spps-sxs.md)
 #### [Lab 1g: Using audit mode and capturing changes](manufacture/desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
 ### [Windows Deployment Options](manufacture/desktop/windows-deployment-options.md)
