@@ -448,7 +448,7 @@
 
 # [Manufacture](manufacture/index.md)
 
-## [What's new in Windows manufacturing](manufacture/iot/whats-new-in-windows-manufacturing.md)
+## [What's new in Windows manufacturing](manufacture/whats-new-in-windows-manufacturing.md)
 
 ## [Desktop manufacturing](manufacture/desktop/index.md)
 

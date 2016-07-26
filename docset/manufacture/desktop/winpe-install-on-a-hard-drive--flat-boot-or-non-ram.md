@@ -56,7 +56,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     **Note**  
     The following commands prepare a USB hard drive that can boot on either a BIOS-based or UEFI-based PC.
 
-    On UEFI-based PCs, Windows PE requires a boot partition formatted using the FAT32 file format, which only supports file sizes up to 4 GB. We recommend creating a separate partition on the drive, formatted using NTFS, so that you can store Windows images and other large files.
+    On UEFI-based PCs, Windows PE requires a boot partition formatted using the FAT32 file format, which only supports file sizes up to 4 GB. We recommend creating a separate partition on the drive, formatted using NTFS, so that you can store Windows images and other large files. To learn more, see [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md).
 
      
 
@@ -108,20 +108,6 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
     Windows PE starts automatically. After the command window appears, the wpeinit command runs automatically. This might take a few minutes.
 
-## <span id="Scripting"> Scripting
-Here's a sample script you can use that looks through each of the drives for a folder titled Images. It does not look on the X: drive, as this drive is assigned to Windows PE.
-
-    ``` syntax
-	@echo Find a drive that has a folder titled Images.
-	@for %%finddrive in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do (
-        if exist %%finddrive:\Images\ (
-	    @echo Device Found : %%finddrive
-        set DRIVELETTER=%%finddrive
-	    )
-	  )
-    dir %DriveLetter%:\images /w
-
-
 	
 ## <span id="Troubleshooting"> Troubleshooting
 
@@ -141,8 +127,9 @@ Here's a sample script you can use that looks through each of the drives for a f
 
 ## <span id="Related_topics"></span>Related topics
 
-
 [WinPE for Windows 10](winpe-intro.md)
+
+[WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md)
 
 [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md)
 
