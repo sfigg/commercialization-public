@@ -1,3 +1,5 @@
+# [Get Started with Windows 10](get-started-with-windows-10-portal.md)
+
 # [Performance](performance/index.md)
 
 
