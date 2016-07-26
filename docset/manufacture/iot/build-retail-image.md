@@ -8,13 +8,11 @@ title: 'Lab 1f: Build a retail image'
 
 # Lab 1f: Build a retail image
 
-
 \[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
 
 We''ll take our test image and convert it to a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
-
 
 We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
 You can include any of the updates from [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md), [Lab 1c:  Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md), [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md), and [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).

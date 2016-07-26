@@ -1,0 +1,146 @@
+---
+author: joshbax-msft
+title: DXGI HybridPresent - PnPStop (FL9.1)
+description: DXGI HybridPresent - PnPStop (FL9.1)
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 38143d02-c8b2-43c6-b882-33c14c95a587
+---
+
+# DXGI HybridPresent - PnPStop (FL9.1)
+
+
+This test runs on Microsoft Supported Graphics Hybrid Configurations as if they were on the DList. It runs a present scenario (that is, present for a period of time), while in parallel PnP Enabling and PnP Disabling IGPU, DGPU or both. It does following validations:
+
+-   Conformance of the displayed image
+
+-   Validation of Presents (CrossAdapter presents when both GPUs are enabled; Regular presents when one or both GPUs are disabled).
+
+Tests iterate on following:
+
+-   Presentation models – Blt, Flip, DirectFlip
+
+-   Fullscreen versus Windowed
+
+-   PnPDisable/PnPEnable scenario (stop iGPU, stop dGPU, stop both GPUs)
+
+## Test details
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Associated requirements</strong></p></td>
+<td><p>System.Fundamentals.Graphics.HybridGraphics.MultiGPU</p>
+<p>[See the system hardware requirements.](http://go.microsoft.com/fwlink/p/?linkid=254482)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Platforms</strong></p></td>
+<td><p>Windows RT 8.1 Windows 8.1 x64 Windows 8.1 x86 Windows Server 2012 R2</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Expected run time</strong></p></td>
+<td><p>~30 minutes</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Categories</strong></p></td>
+<td><p>Certification Functional</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Type</strong></p></td>
+<td><p>Automated</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Running the test
+
+
+Before you run the test, complete the test setup as described in the test requirements: [WDTF System Fundamentals Testing Prerequisites](wdtf-system-fundamentals-testing-prerequisites.md).
+
+## Troubleshooting
+
+
+For troubleshooting information, see [Troubleshooting System Fundamentals Testing](troubleshooting-system-fundamentals-testing.md).
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Error</th>
+<th>Description/Workaround</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Conformance issues</p></td>
+<td><p>When the test detects a conformance issue, it saves an image in the test directory if the <strong>-saveBMP</strong> parameter is specified. The image might be helpful in diagnosing the issue.</p></td>
+</tr>
+<tr class="even">
+<td><p>Cross Adapter Present validation failures</p></td>
+<td><p>To get more information about the failure, run the test under User Mode Debugger. The test will output the information it gets from ETW events. The output might be helpful in diagnosing the failure.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## More information
+
+
+### Command syntax
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>-saveBMP</strong></p></td>
+<td><p>By using this parameter, the test saves presented images in BMP format to the test directory in case of conformance failure. This is useful for diagnosing conformance failures.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>-whql | -featurelevel:&lt;fl&gt;</strong></p></td>
+<td><p><strong>-whql</strong> results in device creation with highest support on a given adapter. <strong>–featurelevel:&lt;fl&gt;</strong> creates a device of requested feature level</p>
+<p>Default value: <strong>-wqhl</strong> for DX10+ drivers; <strong>-featurelevel</strong>:9.1 for DX9 drivers</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>-hybrid</strong></p></td>
+<td><p>This value forces application execution on dGPU as if it was on the DList.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>-TimeToExecute:&lt;ms&gt;</strong></p></td>
+<td><p>This value controls how long (in microseconds) each test case will run.</p>
+<p>Default value: 60000</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+

@@ -50,7 +50,7 @@ DISM is installed with Windows, and it is also distributed in the Windows Assess
 
 [Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md)
 
-[Language Packs (lp.cab) and Windows Deployment](language-packs--lpcab--and-windows-deployment.md)
+[Language Packs](language-packs-and-windows-deployment.md)
 
 [Understanding Servicing Strategies](understanding-servicing-strategies.md)
 

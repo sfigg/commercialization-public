@@ -29,10 +29,10 @@ You can also add language packs to Windows Preinstallation and Windows Recovery 
 
 1.  On the running operating system, open an elevated command-line prompt.
 
-2.  Type the following command to add a language pack to the operating system.
+2.  Type the following command to add a language pack (Spanish, in this example) to the operating system. 
 
     ``` syntax
-    Dism /online /Add-Package /PackagePath:C:\test\LangPacks\lp.cab
+    Dism /online /Add-Package /PackagePath:C:\test\LangPacks\Microsoft-Windows-Client-Language-Pack_x64_es-es.cab
     ```
 
 For more information about DISM international servicing commands, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)

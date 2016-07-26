@@ -41,7 +41,7 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Describes methods of adding and configuring device drivers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Language Packs (lp.cab) and Windows Deployment](language-packs--lpcab--and-windows-deployment.md)</p></td>
+<td align="left"><p>[Language Packs](language-packs-and-windows-deployment.md)</p></td>
 <td align="left"><p>Describes methods of adding language packs and language interface packs (LIPs).</p></td>
 </tr>
 <tr class="odd">

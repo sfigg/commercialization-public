@@ -11,7 +11,7 @@ title: Add and Remove Language Packs Offline Using DISM
 
 All installations of Windows® contain at least one language pack and the language-neutral binaries that make up the core operating system. This topic includes information about how to use Deployment Image Servicing and Management (DISM.exe) to add or remove additional language packs, and to configure international settings. You can use the same procedures to add or remove Language Interface Packs (LIPs). For more information about the difference between a language pack and a LIP, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
-The Windows image must be a recently installed and captured image, or the default retail image. This ensures that the Windows image does not have any pending package actions. The Windows images can be in any language. For example, you can start with an English (en-US) image and add support for Japanese (ja-JP) and Korean (ko-KR). In addition, you can add LIPs to a Windows image that contains the supported parent language. For more information about the supported language packs and LIPs, see [Language Packs (lp.cab) and Windows Deployment](language-packs--lpcab--and-windows-deployment.md).
+The Windows image must be a recently installed and captured image, or the default retail image. This ensures that the Windows image does not have any pending package actions. The Windows images can be in any language. For example, you can start with an English (en-US) image and add support for Japanese (ja-JP) and Korean (ko-KR). In addition, you can add LIPs to a Windows image that contains the supported parent language. For more information about the supported language packs and LIPs, see [Language Packs](language-packs-and-windows-deployment.md).
 
 This topic includes the following procedures.
 
@@ -26,14 +26,14 @@ For information about how to add a language pack to a Windows Preinstallation En
 ## <span id="AddLangPacktoImage"></span><span id="addlangpacktoimage"></span><span id="ADDLANGPACKTOIMAGE"></span>Add a Language Pack to a Windows Image
 
 
-Language packs are available as .cab files and are named Lp.cab. Packages provided as .cab files can be added to an offline Windows image using the DISM command-line tool. You can use the same procedure to add a language pack or a Language Interface Pack (LIP).
+Language packs are available as .cab files and are named with their locale; for example, Microsoft-Windows-Client-Language-Pack_x64_es-es.cab. Packages provided as .cab files can be added to an offline Windows image using the DISM command-line tool. You can use the same procedure to add a language pack or a Language Interface Pack (LIP).
 
 **Important**  
 LIPs are released as .mlc files. When you add a LIP to an offline Windows image using the DISM command-line tool, you must rename the LIP file from LIP.mlc to LIP.cab.
 
  
 
-LIPs can be installed only on a Windows image that has the supported parent languages installed. For example, the Basque (Basque) LIP can be installed only on a Windows image that has the Spanish (Spain) or French (France) parent language pack installed. Before you install a LIP to an offline Windows image, verify that the supported parent languages are installed. For more information about the supported language packs and LIPs, see [Language Packs (lp.cab) and Windows Deployment](language-packs--lpcab--and-windows-deployment.md).
+LIPs can be installed only on a Windows image that has the supported parent languages installed. For example, the Basque (Basque) LIP can be installed only on a Windows image that has the Spanish (Spain) or French (France) parent language pack installed. Before you install a LIP to an offline Windows image, verify that the supported parent languages are installed. For more information about the supported language packs and LIPs, see [Language Packs](language-packs-and-windows-deployment.md).
 
 You can also add language packs and LIPs to an answer file and then apply the answer file to an offline Windows image. When you do this, you can install the LIP and the parent language in the same operation.
 
@@ -75,8 +75,6 @@ Do not install a language pack after an update. If you install an update (hotfix
     **Note**  
     The scratch directory must be at least 1 GB for adding language packs.
 
-     
-
 5.  Type the following command to commit the changes. The image remains mounted until the **/unmount** option is used.
 
     ``` syntax
@@ -87,7 +85,7 @@ Do not install a language pack after an update. If you install an update (hotfix
 
 **To add a language pack using an answer file and DISM**
 
-1.  Note the location of the language packs you want to add to the Windows image. Language packs are stored in .cab files and are called Lp.cab.
+1.  Note the location of the language packs you want to add to the Windows image. Language packs are stored in .cab files.
 
 2.  Use Windows SIM to create an answer file that contains only the language packs that you want to add. For more information about how to create an answer file, see [Create or Open an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915085).
 
