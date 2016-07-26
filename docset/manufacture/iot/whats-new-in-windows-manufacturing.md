@@ -36,7 +36,7 @@ The following changes are new for Windows 10, version 1607:
 *  New BSP tools added:
    -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-&lt;arch&gt;\BSP. Multiple projects can now more easily share the same BSP folder.
    -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
-   -  Updated lab: [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md).
+   -  Updated lab: [Lab 2: Creating your own board support package](create-a-new-bsp.md).
 
 **June 9, 2016:** 
 Several updates of [command-line tools](iot-core-adk-addons-command-line-options.md):
