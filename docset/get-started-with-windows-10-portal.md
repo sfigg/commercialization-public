@@ -42,10 +42,10 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 <li>[... kits and tools](p_getstarted.what_s_new_in_kits_and_tools)</li>
 <li>[... driver development](p_getstarted.what_s_new_in_driver_development)</li>
 <li>[... customizations](p_changehistory.change_history_for_customize)</li>
+<li>[... manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-manufacturing)</li>
 <li>[... unattend settings](p_unattend.changed_answer_file_settings_from_windows_8_1#newwindowssettings)</li>
 <li>[... Windows Performance Toolkit](p_wpt.whats_new_in_the_windows_performance_toolkit)</li>
 <li>[... Windows PE](p_adk_online.whats_new_in_windows_pe_s14)</li>
-<li>[... IoT Core manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/whats-new-in-manufacturing)</li>
 </ul></td>
 </tr>
 </tbody>
