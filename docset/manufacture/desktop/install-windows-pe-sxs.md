@@ -6,20 +6,19 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows PE
 ---
 
-# Install Windows PE
+# Lab 1a: Install Windows PE
 
 
 Windows Preinstallation Environment (WinPE) is a small, command-line based operating system. You can use it to capture, update, and optimize Windows images, which you'll do in later sections. In this section, you'll prepare a basic WinPE image on a bootable USB flash drive and try it out.
 
-For this lab, you'll need two storage locations:
-
--   **A Windows PE USB key**. Must be at least 512MB and at most 32GB. It should not be a Windows-to-Go key or a key marked as a non-removable drive.
--   **A storage USB key or external hard drive**. Must be at least 8GB.
+The Windows PE USB must be at least 512MB and at most 32GB. It should not be a Windows-to-Go key or a key marked as a non-removable drive.
 
 **Prepare the WinPE files**
 
-1.  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
-2.  From the **Deployment and Imaging Tools Environment** command prompt, copy the base WinPE files into a new folder:
+1.  On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
+    -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
+
+2.  Copy the base WinPE files into a new folder:
 
     ``` syntax
     copype amd64 C:\winpe_amd64
@@ -31,7 +30,12 @@ For this lab, you'll need two storage locations:
     copype x86 C:\winpe_x86
     ```
 
-**Adding to WinPE**
+   **Troubleshooting**: If this doesn't work, make sure you're in the Deployment and Imaging Tools Environment, and not the standard command prompt. 
+	
+**Adding to WinPE (not usually needed. Use this for devices with non-standard video or network cards)**
+
+If you boot WinPE later and find you can't see the screen or connect to the network, you may need to add a video or network driver.
+To add the drivers, you'll mount the image. Mounting an image maps the contents of a file to a location where you can view and modify them. 
 
 1.  Mount the WinPE image:
 
@@ -39,9 +43,7 @@ For this lab, you'll need two storage locations:
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
-2.  For some devices, add drivers:
-
-    **Note**  Most devices don't need this step. But if you boot WinPE later and find you can't see the screen or connect to the network, you may need to add a video or network driver.
+2.  Add drivers.
 
     ``` syntax
     Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
@@ -56,6 +58,7 @@ For this lab, you'll need two storage locations:
 **Create a bootable drive**
 
 1.  Plug in a USB key that you don't mind formatting. Note the drive letter it uses, for example, D.
+
 2.  Install WinPE to an empty USB drive:
 
     ``` syntax
@@ -77,21 +80,17 @@ For this lab, you'll need two storage locations:
 **Try it out**
 
 1.  Connect the WinPE USB drive to your reference device.
-2.  After WinPE starts, manually create a pagefile equal to 256 MB in the WinPE. You'll need this later to deploy compressed images (CompactOS); those operations will require that WinPE has a pagefile equal to 256 MB.
 
-    ``` syntax
-    Wpeutil createpagefile C:\pagefile.sys /size=256
-    ```
-
-    Where "C" is the Windows partition.
-
-3.  Turn off the device, and then boot to the USB drive. You usually do this by powering on the device and quickly pressing a key (for example, the **Esc** key or the **Volume up** key).
+2.  Turn off the device, and then boot to the USB drive. You usually do this by powering on the device and quickly pressing a key (for example, the **Esc** key or the **Volume up** key).
 
     **Note**   On some devices, you might need to go into the boot menus to choose the USB drive. If you're given a choice between booting in UEFI mode or BIOS mode, choose UEFI mode. To learn more, see [Boot to UEFI Mode or Legacy BIOS mode](http://go.microsoft.com/fwlink/?LinkId=526943).
     If the device does not boot from the USB drive, see the troubleshooting tips in [WinPE: Create USB Bootable drive](http://go.microsoft.com/fwlink/?LinkId=526944).
 
     WinPE starts at a command line, and runs **wpeinit** to set up the system. This can take a few minutes.
 
+Leave this PC booted to Windows PE for now. 
+	
+Next step: [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  
 
  

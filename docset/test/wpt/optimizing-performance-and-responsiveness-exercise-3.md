@@ -25,7 +25,7 @@ Each thread that readies the current thread is probably another link in the crit
 
 All the required information is recorded in the **CPU Usage (Precise)** graph and table in **WPA**. CPU usage events that are logged by the dispatcher are associated with context switches. This table focuses on **NewThread** which is the thread that was switched in, and each row represents a context switch. Data is collected for the following event sequence:
 
-![](images/optimizingperformancelab25.png)
+![Diagram showing data collection workflow.](images/optimizingperformancelab25.png)
 
 1.  **NewThread** is switched out due to a blocking function call.
 
@@ -60,7 +60,7 @@ Here are the interesting columns in the **CPU Usage (Precise)** table.
 
 This exercise will focus on a dummy process with an unresponsive UI. The process is a simple Windows Form application with a button and a text box. When the button is clicked, the UI becomes unresponsive for 20 seconds until the text box is updated. You will analyze the critical path of this operation.
 
-![](images/optimizingperformancelab26.png)
+![Screenshot of UIDelage Sample dialog.](images/optimizingperformancelab26.png)
 
 1.  Download **UIDelay.exe** from [here](http://download.microsoft.com/download/9/C/5/9C562A35-2E52-4CAE-A662-753486C13F4A/UIDelay.exe).
 
@@ -76,7 +76,7 @@ This exercise will focus on a dummy process with an unresponsive UI. The process
 
     3.  Select **Verbose** as the detail level.
 
-        ![](images/optimizingperformancelab27.png)
+        ![Screenshot of WPR dialog.](images/optimizingperformancelab27.png)
 
 5.  Click on **Start**.
 
@@ -99,7 +99,7 @@ Before performing critical path analysis, you must first identify the activity s
 
 1.  Find the **UI Delays** graph in the **System Activity** node of the **Graph Explorer**.
 
-    ![](images/optimizingperformancelab28.png)
+    ![Screenshot of Graph Explorer UI.](images/optimizingperformancelab28.png)
 
 2.  Drag and drop the **UI Delays** graph in the analysis tab.
 
@@ -109,11 +109,11 @@ Before performing critical path analysis, you must first identify the activity s
 
     2.  The UI thread identifier is shown in the **Thread Id** column. In this example, it is 24174. This value will be different in the trace you’ve captured on your machine. Make sure to note the thread ID.
 
-        ![](images/optimizingperformancelab29.png)
+        ![Screenshot of sample data.](images/optimizingperformancelab29.png)
 
 4.  Select the entire **UIDelay.exe** time interval, right-click and zoom in.
 
-    ![](images/optimizingperformancelab30.png)
+    ![Screenshot of zoom option.](images/optimizingperformancelab30.png)
 
 You should always zoom in the regions you’re trying to analyze. It reduces the amount of noise introduced by unrelated activities.
 
@@ -126,13 +126,13 @@ The **NewThreadId** for this step is the thread you identified in Step 2 (Thread
 
 1.  Add the **CPU Usage (Precise)** graph to the **analysis** tab and apply the **Utilization by Process, Thread** preset.
 
-    ![](images/optimizingperformancelab31.png)
+    ![Screenshot of sample data in WPA.](images/optimizingperformancelab31.png)
 
 2.  Right-click the column headers and make the **NewThreadStack**, **ReadyThreadStack**, and **CPU Usage (ms)** columns visible.
 
 3.  Remove the **Ready (us) \[Max\]** and **Waits (us) \[Max\]** columns. Your viewport should now look like this.
 
-    ![](images/optimizingperformancelab32.png)
+    ![Screenshot of sample data in WPA.](images/optimizingperformancelab32.png)
 
 4.  Find and expand the **UIDelay.exe** process in the **NewProcess** column and sort by **Waits (us) \[Sum\]** by clicking on the column header.
 
@@ -146,7 +146,7 @@ The **NewThreadId** for this step is the thread you identified in Step 2 (Thread
 
         -   The thread is in the ready state for a negligible amount of time (10ms).
 
-        ![](images/optimizingperformancelab33.png)
+        ![Screenshot of sample data in WPA.](images/optimizingperformancelab33.png)
 
     **Note**  
     You can analyze the 10 seconds of CPU activity using the same methodology described in Exercise 2, Step 4 using the **CPU Usage (sampled)** graph and looking at the **UIDelay.exe** process.
@@ -157,7 +157,7 @@ The **NewThreadId** for this step is the thread you identified in Step 2 (Thread
 
 7.  Expand **\[Root\]** and identify the function calls leading to waits.
 
-    ![](images/optimizingperformancelab34.png)
+    ![Screenshot of sample data in WPA.](images/optimizingperformancelab34.png)
 
 In this example, **UIDelay.exe** thread ID 24174 is waiting on underlying blocking function calls for 5.073 seconds when the button click function is triggered:
 
@@ -169,7 +169,7 @@ In this example, **UIDelay.exe** thread ID 24174 is waiting on underlying blocki
 
 If you expand the call stack further under **ExecuteWMICall**, you’ll find that the UI thread is actually sleeping for 5 seconds by explicitly calling **Thread.Sleep**.
 
-![](images/optimizingperformancelab35.png)
+![Screenshot of sample data in WPA.](images/optimizingperformancelab35.png)
 
 This kind of behavior should be avoided at all cost as it directly impacts responsiveness. If the code needs to wait for information, it should do it asynchronously on a separate thread and use an event-driven method.
 
@@ -178,7 +178,7 @@ This kind of behavior should be avoided at all cost as it directly impacts respo
 
 If you expand the call stack further under **PingServer**, you’ll find that the UI thread has I/O dependencies as it is sending **Ping** commands over the network.
 
-![](images/optimizingperformancelab36.png)
+![Screenshot of sample data in WPA.](images/optimizingperformancelab36.png)
 
 While the delay is very small (35 ms), it should be avoided on a UI thread. Keep in mind that the average person will notice any UI delay larger than 100 ms. This operation could increase the total activity elapsed time above 100 ms, resulting in users having a bad perception of responsiveness.
 

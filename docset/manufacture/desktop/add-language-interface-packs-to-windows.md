@@ -30,7 +30,7 @@ For Windows 10, language packs and LIPs are also available to download from Win
 **To install a LIP using audit mode (used for manufacturing PCs)**
 
 1.  Download the appropriate LIP (and if necessary, its base language), and save it to removable media.
-2.  Boot the destination computer to audit mode. For example at the OOBE screen, press CTRL+SHIFT+F3. To learn more, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
+2.  Boot the destination computer to audit mode. For example at the OOBE screen, press Ctrl+Shift+F3. To learn more, see [Boot Windows to Audit Mode or OOBE](boot-windows-to-audit-mode-or-oobe.md).
 3.  Insert the removable media and copy the LIP (and base language, if necessary) to the destination computer.
 4.  If the base language isn't already installed, install it: Navigate to the .cab file and double-click it. Follow the instructions to complete the installation.
 5.  Install the LIP: Navigate to the .cab file and double-click it. Follow the instructions to complete the installation.

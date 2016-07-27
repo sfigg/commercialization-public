@@ -47,7 +47,7 @@ In this lab, you’ll analyze audio glitches. Audio glitches are often caused by
 
 7.  On the **MXA** splash screen, press the **Turn Symbols Off** button to turn off symbol lookup.
 
-    ![](images/optimizingwindowsdeviceslab4.png)
+    ![Screenshot of Media eXperience Analyzer (MXA), symbols option button.](images/optimizingwindowsdeviceslab4.png)
 
 8.  Once the trace is loaded, close any open panels that appear in the center of the application by pressing the small X next to the name of each panel.
 
@@ -74,7 +74,7 @@ You can look at the audio engine data from the event trace log (.etl) files to s
 
 4.  To measure time within the panel, press the **SHIFT** key while you drag your mouse from one end of the **iexplore.exe** process bar to the other. The tooltip over the mouse cursor shows you how many milliseconds you are measuring on the timeline. In the **MXA** screenshot below, the process was running for about 35 milliseconds.
 
-    ![](images/optimizingwindowsdeviceslab5.png)
+    ![Screenshot of Media eXperience Analyzer (MXA) showing example process running for about 35 milliseconds.](images/optimizingwindowsdeviceslab5.png)
 
 ## Step 3: Identify the cause of the delays in the pipeline
 
@@ -91,7 +91,7 @@ Before this audio glitch, the long-running **iexplore.exe** process was running 
 
 5.  Hold down the **SHIFT** key to freeze the **CallStack** and **Properties Data Viewers** and move your mouse to the **CallStack**. Press **Copy**.
 
-![](images/optimizingwindowsdeviceslab6.png)
+![Screenshot of Media eXperience Analyzer (MXA) showing CallStack dataviewer.](images/optimizingwindowsdeviceslab6.png)
 
  
 

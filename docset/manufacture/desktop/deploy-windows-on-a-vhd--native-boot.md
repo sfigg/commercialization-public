@@ -11,13 +11,13 @@ title: 'Deploy Windows on a VHD (Native Boot)'
 
 Create and deploy virtual hard disks (VHDs) with native-boot capabilities to test devices or to manage multiple operating systems on a device without repartitioning the drive.
 
-### <span id="Creating_VHDs"></span><span id="creating_vhds"></span><span id="CREATING_VHDS"></span>Creating VHDs
+## <span id="Creating_VHDs"></span><span id="creating_vhds"></span><span id="CREATING_VHDS"></span>Creating VHDs
 
 You can create virtual hard disks (.vhd or .vhdx files) using the DiskPart tool or the Disk Management Microsoft Management Console (MMC). You can create .vhdx files from PowerShell when you have the Hyper-V Manager Role installed.
 
 You can attach the VHD so that it appears as a system drive that you can partition, format, and apply your operating system to.
 
-### <span id="Deploying_VHDs"></span><span id="deploying_vhds"></span><span id="DEPLOYING_VHDS"></span>Deploying VHDs
+## <span id="Deploying_VHDs"></span><span id="deploying_vhds"></span><span id="DEPLOYING_VHDS"></span>Deploying VHDs
 
 You can deploy a supported Windows image to an attached VHD using disk-imaging software such as the Deployment Image Servicing and Management (DISM) tool. The VHD can then be copied to one or more systems either to run in a virtual machine or for native boot.
 

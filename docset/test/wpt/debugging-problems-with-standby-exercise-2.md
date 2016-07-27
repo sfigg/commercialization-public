@@ -22,11 +22,11 @@ If a device is missing a driver or doesn’t have the right driver, it can impac
 
 3.  Click on **Session 11**. The system consumes 4.585 Watts of energy during 11 minutes and the **DRIPS %** is 0.
 
-    ![](images/standbylab4.png)
+    ![Screenshot shows example data of the systems energy consumption.](images/standbylab4.png)
 
 4.  Look at the **Top Offenders** table. An **Unregistered Device** is listed as active 100% of the time during the session.
 
-    ![](images/standbylab5.png)
+    ![Screenshot shows example table of top offenders.](images/standbylab5.png)
 
 The unregistered device is the graphics adapter (GFX) as specified by the device name **\_SB.PCI0.GFX0**.
 
@@ -40,7 +40,7 @@ This could mean one of two things:
 
 In this example, the system didn’t have a proper driver installed for the **Display Adapter**, as shown below in the **Device Manager**.
 
-![](images/standbylab6.png)
+![Screenshot of Device Manager dialog.](images/standbylab6.png)
 
  
 

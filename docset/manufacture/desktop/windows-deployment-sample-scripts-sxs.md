@@ -8,16 +8,104 @@ title: Sample scripts
 
 # Sample scripts
 
-The following scripts are used in the lab. It may be helpful to create these all at once, or to [download the samples](http://go.microsoft.com/fwlink/p/?LinkId=800657) from the web.
+[Download the sample scripts used in this lab](http://go.microsoft.com/fwlink/p/?LinkId=800657) 
+
+Copy these scripts to the root of your storage USB drive.  Refer to this page to understand what's in the scripts.
+
+Next step: [Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
-
 
 The following scripts set up Windows devices by using an image file, and configure push-button reset features.
 
 ### <span id="CreatePartitions-_firmware_.txt"></span><span id="createpartitions-_firmware_.txt"></span><span id="CREATEPARTITIONS-_FIRMWARE_.TXT"></span>CreatePartitions-(firmware).txt
 
 Use these scripts together with DiskPart to format and set up the hard disk partitions for Windows, including recovery tools. Adjust the partition sizes to fill the drive as necessary.
+
+### ApplyImage.bat
+
+Use this script apply a Windows image to a new device.
+
+``` syntax
+@echo ApplyImage.bat
+@echo     Applies a Windows image to a desktop PC.
+@echo     To run this script, boot the device using WinPE first.
+@echo     NOTE: This script erases the primary hard drive
+@echo.
+@echo UPDATE (JULY 2016):
+@echo * This script stops just after applying the image.
+@echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
+@echo   so that you can include them in your recovery tools.
+@echo.
+@echo   After the script is complete, use apply-recovery.bat to finish
+@echo   setting up the recovery tools.
+@echo.
+@echo * Checks whether the PC is booted into BIOS or UEFI mode
+@echo   and applies the appropriate disk configuration.
+@echo.
+@echo * Includes support for the /EA variables for quicker
+@echo   image capture and recovery.
+@echo.
+@echo * Checks to see if you're booted into Windows PE.
+@echo.
+@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
+@if not exist X:\Windows\System32 goto END
+@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
+@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
+@if %1.==. goto END
+@echo *********************************************************************
+@echo Checking to see if the PC is booted in BIOS or UEFI mode.
+wpeutil UpdateBootInfo
+for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
+@echo            Note: delims is a TAB followed by a space.
+@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
+@if x%Firmware%==x echo        Common fix: In the command above:
+@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
+@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
+@if x%Firmware%==x goto END
+@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
+@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
+@echo *********************************************************************
+@echo Formatting the primary disk...
+@if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
+@if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
+@echo CAUTION: All the data on the disk will be DELETED.
+@SET /P READY=Erase all data and continue? (Y or N):
+@if %READY%.==y. set READY=Y
+@if not %READY%.==Y. goto END
+if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
+if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
+@echo *********************************************************************
+@echo  == Set high-performance power scheme to speed deployment ==
+call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+@echo *********************************************************************
+@echo  == Apply the image to the Windows partition ==
+@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
+@if %COMPACTOS%.==y. set COMPACTOS=Y
+@echo Does this image include Extended Attributes?
+@echo    (If you're not sure, type N).
+@SET /P EA=(Y or N):
+@if %EA%.==y. set EA=Y
+if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
+if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
+if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+@echo *********************************************************************
+@echo == Copy boot files to the System partition ==
+W:\Windows\System32\bcdboot W:\Windows /s S:
+@echo *********************************************************************
+@echo   Next steps:
+@echo   * Add Windows desktop applications (optional):
+@echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
+@echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
+@echo   * Add the recovery image:
+@echo       ApplyRecovery.bat
+@echo   * Reboot:
+@echo       exit
+:END
+```
+
+This script relies on the following two DiskPart scripts, CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt, which must be placed in the same folder:
 
 **CreatePartitions-UEFI.txt**:
 
@@ -112,98 +200,6 @@ list volume
 exit
 ```
 
-### <span id="Hide_the_recovery_partitions"></span><span id="hide_the_recovery_partitions"></span><span id="HIDE_THE_RECOVERY_PARTITIONS"></span>Hide the recovery partitions
-
-Use these scripts with DiskPart to hide the recovery partitions after they have been configured.
-
-**HideRecoveryPartitions-UEFI.txt**:
-
-``` syntax
-rem === HideRecoveryPartitions-UEFI.txt ===
-select disk 0
-select partition 4
-set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
-gpt attributes=0x8000000000000001
-remove
-list volume
-```
-
-**HideRecoveryPartitions-BIOS.txt:**
-
-``` syntax
-rem === HideRecoveryPartitions-BIOS.txt ===
-select disk 0
-select partition 3
-set id=27
-remove
-list volume
-```
-
-### ApplyImage.bat
-
-Use this script to launch the other scripts that deploy Windows to a new device.
-
-``` syntax
-@echo ApplyImage.bat
-@echo     Run from the reference device in the WinPE environment
-@echo     This script erases the primary hard drive and applies a new image
-@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
-@if not exist X:\Windows\System32 goto END
-@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
-@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
-@if %1.==. goto END
-@echo *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@echo *********************************************************************
-@echo Formatting the primary disk...
-@if %Firmware%==0x1 echo    ...using BIOS (MBR) format and partitions.
-@if %Firmware%==0x2 echo    ...using UEFI (GPT) format and partitions. 
-@echo CAUTION: All the data on the disk will be DELETED.
-@SET /P READY=Erase all data and continue? (Y or N):
-@if %READY%.==y. set READY=Y
-@if not %READY%.==Y. goto END
-if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
-@echo *********************************************************************
-@echo  == Set high-performance power scheme to speed deployment ==
-call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-@echo *********************************************************************
-@echo  == Apply the image to the Windows partition ==
-@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
-@if %COMPACTOS%.==y. set COMPACTOS=Y
-@echo Does this image include Extended Attributes?
-@echo    (If you're not sure, type N).
-@SET /P EA=(Y or N):
-@if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
-@echo *********************************************************************
-@echo == Copy boot files to the System partition ==
-W:\Windows\System32\bcdboot W:\Windows /s S:
-@echo *********************************************************************
-@echo   Next steps:
-@echo   * Add Windows Classic apps (optional):
-@echo       DISM /Apply-SiloedPackage /ImagePath:W:\ 
-@echo            /PackagePath:"D:\App1.spp" /PackagePath:"D:\App2.spp"  ...
-@echo   * Add the recovery image:
-@echo       ApplyRecovery.bat
-@echo   * Reboot:
-@echo       exit
-:END
-```
-
 ### ApplyRecovery.bat
 
 Use this script to prepare the Windows recovery partition.
@@ -257,93 +253,36 @@ W:\Windows\System32\Reagentc /Info /Target W:\Windows
 :END
 ```
 
-### <span id="Walkthrough-Deploy.bat"></span><span id="walkthrough-deploy.bat"></span><span id="WALKTHROUGH-DEPLOY.BAT"></span>Walkthrough-Deploy.bat
+This script relies on the following two DiskPart scripts, HideRecoveryPartitions-UEFI.txt and HideRecoveryPartitions-BIOS.txt, which must be placed in the same folder:
 
-Use this script to launch the other scripts, deploying Windows to a new device.
+**HideRecoveryPartitions-UEFI.txt**:
 
 ``` syntax
-@echo Walkthrough-Deploy.bat
-@echo     Run from the reference device in the WinPE environment
-@echo     This script erases the primary hard drive and applies a new image
-@echo.
-@echo UPDATE (JUNE 2016):
-@echo   To apply siloed provisioning packages (SPPs), use these scripts instead:
-@echo     ApplyImage.bat install.wim
-@echo       (apply your SPPs)
-@echo     ApplyRecovery.bat
-@echo.
-@if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
-@if not exist X:\Windows\System32 goto END
-@if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
-@if %1.==. echo Example: Walkthrough-Deploy D:\WindowsWithFrench.wim
-@if %1.==. goto END
-@echo *********************************************************************
-SET /P M=Deploy as Compact OS? (Y or N):
-@if %M%.==Y. set COMPACTOS=True
-@if %M%.==y. set COMPACTOS=True
-@if %COMPACTOS%==True echo Deploying as Compact OS.
-@rem *********************************************************************
-@echo Checking to see if the PC is booted in BIOS or UEFI mode.
-wpeutil UpdateBootInfo
-for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
-@echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
-@if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
-@if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
-@rem *********************************************************************
-@echo Formatting the primary disk...
-@if %Firmware%==0x1 echo ...using BIOS (MBR) format and partitions.
-@if %Firmware%==0x2 echo ...using UEFI (GPT) format and partitions. 
-@echo CAUTION: All the data on the disk will be DELETED.
-@SET /P READY=Erase all data and continue? (Y or N):
-@if %READY%.==y. set READY=Y
-@if not %READY%.==Y. goto END
-if %Firmware%==0x1 diskpart /s %~dp0CreatePartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s %~dp0CreatePartitions-UEFI.txt
-@echo *********************************************************************
-@echo  == Set high-performance power scheme to speed deployment ==
-call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-@echo *********************************************************************
-@echo  == Apply the image to the Windows partition ==
-@SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
-@if %COMPACTOS%.==y. set COMPACTOS=Y
-if %COMPACTOS%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
-@echo  *********************************************************************
-@echo == Copy boot files to the System partition ==
-W:\Windows\System32\bcdboot W:\Windows /s S:
-@echo  *********************************************************************
-@echo  == Copy the Windows RE image to the Windows RE Tools partition ==
-md R:\Recovery\WindowsRE
-xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
-@echo  *********************************************************************
-@echo  == Register the location of the recovery tools ==
-W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
-@echo  *********************************************************************
-@echo == Verify the configuration status of the images. ==
-@echo    Note: Windows RE may appear as Disabled, this is OK.
-W:\Windows\System32\Reagentc /Info /Target W:\Windows
-pause
-@echo  *********************************************************************
-@echo == Hiding the recovery tools partition
-if %Firmware%==0x1 diskpart /s %~dp0HideRecoveryPartitions-BIOS.txt
-if %Firmware%==0x2 diskpart /s %~dp0HideRecoveryPartitions-UEFI.txt
-@echo *********************************************************************
-@echo      All done!
-@echo      Disconnect the USB drive from the reference device.
-@echo      Type   exit   to reboot.
-@echo.
-:END
+rem === HideRecoveryPartitions-UEFI.txt ===
+select disk 0
+select partition 4
+set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac
+gpt attributes=0x8000000000000001
+remove
+list volume
 ```
+
+**HideRecoveryPartitions-BIOS.txt:**
+
+``` syntax
+rem === HideRecoveryPartitions-BIOS.txt ===
+select disk 0
+select partition 3
+set id=27
+remove
+list volume
+```
+
 
 ## <span id="start_layout__layoutmodification.xml_"></span><span id="START_LAYOUT__LAYOUTMODIFICATION.XML_"></span>Start layout (LayoutModification.xml)
 
 
-The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Classic Windows applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
+The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
 
 To take advantage of all these new features and have the most robust and complete Start customization experience for Windows 10, consider creating a LayoutModification.xml file. This file specifies how the OEM tiles should be laid out in Start. For more information about how to customize the new Start layout, see the topic [Customize the Windows 10 Start screen](https://msdn.microsoft.com/library/windows/hardware/mt170651) in the Windows 10 Partner Documentation.
 
@@ -449,7 +388,7 @@ Sample **LayoutModification.xml**:
               Size="2x2"
               Row="0"
               Column="0"/>
-            <!-- Add a Classic Windows application with a known AppUserModelID  -->
+            <!-- Add a Windows desktop application with a known AppUserModelID  -->
             <start:DesktopApplicationTile
               DesktopApplicationID="Microsoft.Windows.Explorer"
               Size="2x2"
@@ -480,7 +419,7 @@ Sample **LayoutModification.xml**:
               Size="2x2"
               Row="0"
               Column="2"/>
-            <!-- Add a Classic Windows application link in a legacy Start Menu folder. You must add the .lnk file 
+            <!-- Add a Windows desktop application link in a legacy Start Menu folder. You must add the .lnk file 
                  in the specified location when the device first boots. -->
             <start:DesktopApplicationTile
               DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
@@ -516,7 +455,7 @@ Sample **LayoutModification.xml**:
 
     Keep the following in mind when creating your LayoutModification.xml file:
 
-    -   If you are pinning a Classic Windows applications using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
+    -   If you are pinning a Windows desktop applications using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
     -   If you use the **start:DesktopApplicationTile** tag to pin a legacy .url shortcut to Start, you must create a .url file and add this file to a legacy Start Menu directory before first boot.
 
     For the above scenarios, you can use the following directories to put the .url or .lnk files:
@@ -824,10 +763,3 @@ xcopy "%ScriptFolder%\Info\" "%TargetOSDrive%\System32\Info\" /s
 To learn more about using extensibility points for push-button reset, see [Add a script to push-button reset features](http://go.microsoft.com/fwlink/?LinkId=618946).
 
  
-
- 
-
-
-
-
-

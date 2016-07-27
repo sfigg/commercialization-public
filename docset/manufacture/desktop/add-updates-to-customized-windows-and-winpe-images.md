@@ -66,7 +66,7 @@ Download the latest updates. Note, the ZDP is a cumulative update, so you'll onl
 **Recommended: Boot the image to complete the update process, and then clean up the image**
 
 1.  Boot a reference device to Windows PE.
-2.  Press **CTRL+SHIFT+F3** at the OOBE screens to enter audit mode.
+2.  Press **Ctrl+Shift+F3** at the OOBE screens to enter audit mode.
 3.  Open the Command Prompt as an administrator.
 4.  Clean up the Windows image. (It's OK to use /ResetBase now that the PC has been booted into audit mode.)
 
