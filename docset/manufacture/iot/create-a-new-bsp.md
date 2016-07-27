@@ -1,9 +1,10 @@
 ---
-Description: 'Replacing a driver in an existing BSP in a Windows 10 IOT Core image.'
-title: 'Lab 2a: Replace a driver in an existing board support package (BSP)'
+author: kpacquer
+Description: 'Creating your own board support package (BSP)'
+title: 'Lab 2: Creating your own board support package (BSP)'
 ---
 
-# Lab 2a: Replace a driver in an existing board support package (BSP)
+# Lab 2: Creating your own board support package (BSP)
 
 If the driver in your pre-built Board Support Package (BSP) doesn't support what you need it to do, you can replace it.
 
@@ -11,75 +12,80 @@ Note, when you modify the BSP, you become the owner for this new, modified BSP. 
 
 In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm). We'll also remove the existing GPIO driver from the device.
 
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
-
--  Complete [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
-
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
-1.  Create a duplicate copy of the BSP working folder that you'd like to modify.
-
-	For example, copy C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\Rpi2 to C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\CustomRpi2.
-
-2.  Remove/comment out any driver in the BSP feature manifest file that no longer apply.
-
-   For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\CustomRpi2\\CustomR_RPi2FM.xml**.
-
+1.  Create a BSP working folder that you'd like to modify.
     ``` syntax
-    <!---
-    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.GPIO.cab">
+	newbsp MyRPi2
+	```
+ 
+2.  Open the BSP feature manifest file for your new BSP MyRpi2FM.xml, .
+
+   For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRPi2FM.xml**.
+
+   a. Add the base packages you'll need
+   
+       You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, or use your own.
+   
+      Add:
+      *  UEFI drivers for the boot partition
+      *  Drivers required for UpdateOS
+      *  BCD settings
+      *  **  Device Info: Leave this empty. **
+         Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. 
+	     This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
+      *  Mandatory device drivers
+      *  Device-specific customizations
+   
+   
+    b.  Update the device layout
+
+    You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](iot-device-layout.md).
+    
+	c.  Under features, include the drivers that you want. 
+	
+	You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
+	
+	For example, add the HelloBlinky driver:
+	
+	 ``` syntax
+	 <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
         <FeatureIDs>
           <FeatureID>RPI2_DRIVERS</FeatureID>
         </FeatureIDs>
-    </PackageFile>
-        -->
-    ```  
-
-3.  Add new drivers. 
-
-    Optional: Use the same FeatureID as the rest of the files in the BSP (example, RPI2_DRIVERS) gets more easily picked up whenever you use this new BSP.  
-    
-    ``` syntax
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
-            <FeatureIDs>
-              <FeatureID>RPI2_DRIVERS</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
-    ```  
-
-4.  Comment out the Device Info file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
-
-    ``` syntax
-    <!---
-     <DeviceSpecificPackages>
-     <PackageFile Device="RPi2" Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.DeviceInfo.cab"/> 
-     </DeviceSpecificPackages>
-     -->
-    ```
+      </PackageFile>
+	  ```
+	
 	
 ## <span id="Create_a_new_product_folder"></span><span id="create_a_new_product_and_folder"></span><span id="CREATE_A_NEW_PRODUCT_FOLDER"></span>Create a new product folder
 
 1.  Create a new working product folder, adding your BSP name to the end.
 
     ``` syntax
-    newproduct ProductB CustomRpi2
+    newproduct ProductB MyRpi2
     ```
 
-    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new custom BSP.
+    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new Y BSP.
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
 2.  Add FeatureIDs:
-	  -  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
+	  	-  Add the FeatureID: IOT_GENERIC_POP to get OS-only updates.
+		  
+		-  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
 	  
 	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
 
     ``` syntax
-    <OEM> 
+    <Microsoft>
+	<Feature>IOT_GENERIC_POP</Feature>
+	...
+	</Microsoft>
+	
+	<OEM> 
     <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
     <Feature>PRODUCTION</Feature> 
     <Feature>IOT_DISABLE_UMCI</Feature> 
     <Feature>IOT_ENABLE_TESTSIGNING</Feature> 

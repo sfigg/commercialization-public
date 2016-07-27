@@ -30,7 +30,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
--   [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+-   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
 
 [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
