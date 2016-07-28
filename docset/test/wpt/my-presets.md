@@ -27,5 +27,6 @@ You can access the commands for presets on the toolbar or by right-clicking a pr
 | **Save** | Saves the current state of the preset. If the preset is a built-in preset that has been modified, then WPA displays a **Save As** dialog, because built-in presets cannot be overwritten. Note that if multiple instances of the same preset are open, the most recently modified instance is saved. |
 | **Apply** | Applies the preset in the most recently used **Analysis View** or **Comparative Analysis View**. You can also apply a preset by double-clicking its name. |
 | **Delete** | Deletes the preset from this view, and reverts any instances of this presets that are open in a graph. |
+<br/>
 
 The presets in this view stay synchronized with the non-default presets for each graph (accessed by the drop-down menu next to the trace name on an open graph). Saving, modifying, or deleting a preset in one location affects the other.
