@@ -70,7 +70,29 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 **Build the image**
 
-1.  From the IoT Core Shell, create the image:
+1.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
+    ``` syntax
+	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
+	```
+	
+	-  Issuer        : Issuer of the Certificate ( see Certificate -> Details -> Issuer )
+	
+	-  Subject       : Subject in the certificate ( see Certificate -> Details -> Subject)
+	
+	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://msdn.microsoft.com/windows/hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
+	
+	
+2.	From the IoT Core Shell, enable retail signing
+    ``` syntax
+	retailsign On
+	```
+	
+3.	Rebuild all the packages so that they are retail signed
+    ``` syntax
+	buildpkg all
+	```
+
+4.  From the IoT Core Shell, create the image:
 
     ``` syntax
     createimage ProductA Retail
@@ -78,16 +100,15 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Retail\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
-3.  Put the card into the IoT device and start it up.
+5.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
+6.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
 
 **Check to see if everything is working**
 
 With retail builds, you won't be able to log into the device using the SSH clients or by using the web interface. However, any files and reg keys that your app relies on should still work.
-
-
 
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
