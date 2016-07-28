@@ -29,7 +29,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 </tr>
 <tr class="even">
 <td><p>Learn about the different kits used to build Windows devices.</p>
-<p>[Get familiar with the kits and tools](p_getstarted.kit_and_tools_overview)</p>
+<p>[Get familiar with the kits and tools](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914754(v=vs.85).aspx)</p>
 <p>Download each of the kits here:</p>
 <ul>
 <li>[Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614)</li>
@@ -38,14 +38,14 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 </ul></td>
 <td><p>Welcome back! Here's what's new in:</p>
 <ul>
-<li>[... Windows 10](p_getstarted.what_s_new_in_windows_threshold)</li>
-<li>[... kits and tools](p_getstarted.what_s_new_in_kits_and_tools)</li>
-<li>[... driver development](p_getstarted.what_s_new_in_driver_development)</li>
-<li>[... customizations](p_changehistory.change_history_for_customize)</li>
-<li>[... manufacturing](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/whats-new-in-manufacturing)</li>
-<li>[... unattend settings](p_unattend.changed_answer_file_settings_from_windows_8_1#newwindowssettings)</li>
-<li>[... Windows Performance Toolkit](p_wpt.whats_new_in_the_windows_performance_toolkit)</li>
-<li>[... Windows PE](p_adk_online.whats_new_in_windows_pe_s14)</li>
+<li>[... Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927350(v=vs.85).aspx)</li>
+<li>[... kits and tools](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927348(v=vs.85).aspx)</li>
+<li>[... driver development](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927349(v=vs.85).aspx)</li>
+<li>[... customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx)</li>
+<li>[... manufacturing](manufacture/whats-new-in-manufacturing.md)</li>
+<li>[... unattend settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917933(v=vs.85).aspx#NewWindowsSettings)</li>
+<li>[... Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)</li>
+<li>[... Windows PE](manufacture/desktop/whats-new-in-windows-pe-s14.md)</li>
 </ul></td>
 </tr>
 </tbody>
@@ -71,15 +71,14 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>Continuum switches in and out of &quot;tablet mode&quot;, adapting and optimizing apps and the Windows shell based on the physical form factor and customer's preferences.</p>
-<p>[Read more about implementing Continuum](p_weg_hardware.continuum)</p></td>
+<p>[Read more about implementing Continuum](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917883(v=vs.85).aspx)</p></td>
 <td><p>Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on all Windows 10 devices. Learn device recommendations and test setup in these articles.</p>
-<p>[Read more about including Cortana](p_weg_hardware.cortana)</p></td>
+<p>[Read more about including Cortana](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915051(v=vs.85).aspx)</p></td>
 <td><p>Windows Hello allows users to securely logon to a device using a biometric device like a fingerprint reader or an IR camera.</p>
-<p>[Learn more about biometric requirements for Windows Hello](p_weg_hardware.biometric_requirements)</p></td>
+<p>[Learn more about biometric requirements for Windows Hello](https://msdn.microsoft.com/en-us/library/windows/hardware/mt587095(v=vs.85).aspx)</p></td>
 </tr>
 </tbody>
 </table>
-
  
 
 ### Develop Windows Universal Drivers
@@ -93,9 +92,9 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>Learn fundamental concepts about drivers.</p>
-<p>[Get started with Windows drivers](wdkgetstart.getting_started_with_windows_drivers)</p></td>
+<p>[Get started with Windows drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554690(v=vs.85).aspx)</p></td>
 <td><p>Build a universal sensor driver based on the Sharks Cove dev board. Learn how to load a Windows 10 image and provision these boards for driver deployment, debugging, and testing.</p>
-<p>[Work with the Sharks Cove hardware development board](wdkgetstart.sharks_cove_hardware_development_board)</p></td>
+<p>[Work with the Sharks Cove hardware development board](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745910(v=vs.85).aspx)</p></td>
 <td><p>Create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. UMDF and KMDF templates are included in Visual Studio to help you get started.</p>
 <p>[Get started with Universal Windows drivers](http://go.microsoft.com/fwlink/p/?LinkId=526095)</p></td>
 </tr>
@@ -115,9 +114,9 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tr class="odd">
 <td><p>Create provisioning packages that can gather your settings, languages, drivers, and apply them all at once to a new device with Windows Imaging and Configuration Designer (ICD).</p>
 <p>OEMs can apply the packages to new devices. Enterprises can apply them to devices that employees bring from home to quickly configure them to use the corporate network.</p>
-<p>[Get started with Windows ICD](p_icd.getting_started_with_the_imaging_configuration_and_designer_tool)</p></td>
+<p>[Get started with Windows ICD](https://msdn.microsoft.com/en-us/library/windows/hardware/dn916112(v=vs.85).aspx)</p></td>
 <td><p>For desktop PCs, you can use your existing settings file (Unattend.xml) to add settings during Windows installation.</p>
-<p>[Build a Windows Setup unattend file](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs)</p></td>
+<p>[Build a Windows Setup unattend file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)</p></td>
 </tr>
 </tbody>
 </table>
@@ -135,11 +134,11 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>Write and run test automations with the Test Authoring and Execution Framework (TAEF). Share your tests across disciplines and teams.</p>
-<p>[Get started with the Test Authoring and Execution Framework (TAEF)](taef.getting_started)</p></td>
+<p>[Get started with the Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/library/windows/hardware/hh439627(v=vs.85).aspx)</p></td>
 <td><p>Test your hardware with the Windows Hardware Lab Kit.</p>
-<p>[Get started with the Windows Hardware Lab Kit](p_sxs_hlk.windows_hlk_getting_started)</p></td>
+<p>[Get started with the Windows Hardware Lab Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002(v=vs.85).aspx)</p></td>
 <td><p>Analyze system and application performance using the Windows Performance Toolkit.</p>
-<p>[Get started with the Windows Performance step-by-step guides](p_wpt.windows_performance_step-by-step_guides)</p></td>
+<p>[Get started with the Windows Performance step-by-step guides](https://msdn.microsoft.com/en-us/library/windows/hardware/mt634257(v=vs.85).aspx)</p></td>
 </tr>
 </tbody>
 </table>
@@ -157,11 +156,11 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 <tbody>
 <tr class="odd">
 <td><p>For desktop PCs, learn strategies to build set of images for specific markets to meet different customers' needs. Apply classic and modern Windows apps, drivers, languages, and other customizations, and mix and match your customizations as new Windows editions are released through automated scripts or a familiar Windows interface.</p>
-<p>[Build and deploy desktop devices](p_sxs_dmfg.oem_windows_deployment_and_imaging_walkthrough_blue)</p></td>
+<p>[Build and deploy desktop devices](manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough.md)</p></td>
 <td><p>Build IoT Core devices, applying apps, drivers, and settings to new devices.</p>
-<p>[Build and deploy IoT Core devices](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/iot/iot-core-manufacturing-guide)</p></td>
+<p>[Build and deploy IoT Core devices](manufacture/iot/iot-core-manufacturing-guide.md)</p></td>
 <td><p>OEMs and ODMs can build and test mobile devices and drivers.</p>
-<p>[Build and deploy phones](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/mobile/mobile-deployment-and-imaging)</p></td>
+<p>[Build and deploy phones](manufacture/mobile/mobile-deployment-and-imaging.md)</p></td>
 </tr>
 </tbody>
 </table>
