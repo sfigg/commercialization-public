@@ -8,8 +8,6 @@ title: 'Lab 1f: Build a retail image'
 
 # Lab 1f: Build a retail image
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
 We''ll take our test image and convert it to a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
