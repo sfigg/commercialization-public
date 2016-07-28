@@ -28,7 +28,7 @@ The analysis process related to spurious wakes is fairly straightforward.
 
 5.  Click on the networking device row to obtain details about this offender.
 
-    ![Screenshot shows a details about the networking device.](images/standbylab3.png)
+    ![Screenshot shows detailed information about the networking device that is consuming the most power.](images/standbylab3.png)
 
 Spurious wakes are clearly identified by the report. There are 80 of them in this example. A follow-up discussion should happen with the IHV to determine why the wireless adapter is waking up the SoC unexpectedly. The underlying problem could be a bad device firmware implementation.
 

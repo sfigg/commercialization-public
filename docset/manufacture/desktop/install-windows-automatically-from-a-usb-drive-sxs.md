@@ -29,13 +29,13 @@ Here’s a sample set of hardware configurations that you might design.
 | Inbox apps (Universal)       | Yes          | Yes                 | Yes                               |
 | Pen                          | No           | Yes                 | No                                |
 | Office (Universal)           | Yes          | Yes                 | Yes                               |
-| Classic Windows applications | No           | Yes                 | Yes                               |
+| Windows desktop applications | No           | Yes                 | Yes                               |
 | Office 2013                  | No           | Yes                 | Yes                               |
 | Compact OS                   | Yes          | Yes                 | No                                |
 
  
 
-This lab will walk you through hardware configuration 1 with optional steps included for hardware configuration 2. Lab 1b continues the lab to include Classic Windows applications to deploy hardware configuration 1b and 2. Lab 1c continues the lab to show you how to edit an expand on existing projects.
+This lab will walk you through hardware configuration 1 with optional steps included for hardware configuration 2. Lab 1b continues the lab to include Windows desktop applications to deploy hardware configuration 1b and 2. Lab 1c continues the lab to show you how to edit an expand on existing projects.
 
 ## <span id="loadImage"></span><span id="loadimage"></span><span id="LOADIMAGE"></span>Step 1: Create a new project in Windows ICD
 

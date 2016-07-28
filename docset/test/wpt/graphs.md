@@ -49,7 +49,7 @@ You can specify from 4 to 100 intervals for a stacked-bar graph.
 
 To switch to flame graph, make sure the table is configured with columns to the left of the gold bar and a single numeric column to the right of the blue bar with SUM aggregation, and then select **Flame** from the graph menu at the top of the graph. Alternatively, use the built-in **Flame by Process, Stack** preset in **CPU Usage (Sampled)** graph.
 
-<html><img src="images\wpa-select-chart-type-menu.png" alt="Chart menu in WPA." height="170"></html>
+<img src="images\wpa-select-chart-type-menu.png" alt="Chart menu in WPA." height="170"><br/>
 
 The following illustration is an example of CPU Sampled and the stacks filtered down to Notepad.exe. In the graph, **comctl32.dll!TV_DrawTree** is the largest frame in the current filtered view. From here, you can walk the stack to find where the most amount of work is performed.
 

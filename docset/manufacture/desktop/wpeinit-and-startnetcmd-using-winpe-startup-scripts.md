@@ -58,6 +58,7 @@ You can create an answer file and include any of the following settings for use 
 
 ## <span id="related_topics"></span>Related topics
 
+[WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md)
 
 [WinPE for Windows 10](winpe-intro.md)
 

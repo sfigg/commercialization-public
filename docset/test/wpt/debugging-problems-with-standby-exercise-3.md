@@ -30,7 +30,7 @@ Missing constraints, or having too many constraints, can cause a variety of prob
 
     -   The hardware **DRIPS %** is 19%.
 
-    ![](images/standbylab7.png)
+    ![Screenshot shows example data of the systems energy consumption.](images/standbylab7.png)
 
 4.  Look at the **Top Offenders** table
 
@@ -38,7 +38,7 @@ Missing constraints, or having too many constraints, can cause a variety of prob
 
     -   This problem can’t account for the 19% HW **DRIPS** rate.
 
-    ![](images/standbylab8.png)
+    ![Screenshot shows example table of top offenders.](images/standbylab8.png)
 
 Large discrepancies between software **DRIPS %** (for example, 92%) and hardware **DRIPS %** (for example, 19%) is usually symptomatic of a missing constraint in the ACPI firmware.
 

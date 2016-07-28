@@ -252,7 +252,7 @@ Important: Connecting the computer to internet is not recommended during manufac
 
 2.  After WinPE has been booted connect USB-B.
 
-    Troubleshoot: If booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so, open the BIOS menu and adjust the boot sequence so that the first option is USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To generalize the image again, press CTRL+SHIFT+F3 to skip OOBE and boot in Audit mode. In Audit mode, Sysprep the system by using OOBE Reboot and Generalize switches. After the system reboots, make sure to boot from USB-A to WinPE.
+    Troubleshoot: If booting with USB fails, please make sure you have prioritized USB boot instead of HDD boot. To do so, open the BIOS menu and adjust the boot sequence so that the first option is USB boot. As the system continues booting from HDD, Windows will enter specialize and then OOBE pass. In order to capture a generalized and stable image, none of the Windows passes must be completed. To generalize the image again, press Ctrl+Shift+F3 to skip OOBE and boot in Audit mode. In Audit mode, Sysprep the system by using OOBE Reboot and Generalize switches. After the system reboots, make sure to boot from USB-A to WinPE.
 
 1.  Type *diskpart* and hit enter to start Diskpart. Then type *list volume* to identify volume label of Windows installation volume labelled “Windows” (For example: C:\). Finally type *exit* to quit Diskpart
 
@@ -416,7 +416,7 @@ To obtain update packages, download them from [Microsoft Update Catalog](http://
 
 #### Modify Start layout
 
-The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, classic Windows applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
+The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows desktop applications, and universal Windows apps. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
 
 1.  Create Layoutmodification.xml.
 
@@ -426,7 +426,7 @@ The Start tile layout in Windows 10 provides OEMs the ability to append tiles to
 
     Keep the following in mind when creating your LayoutModification.xml file:
 
-    - If you are pinning a Classic Windows application using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
+    - If you are pinning a Windows desktop application using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
 
     - If you use the **start:DesktopApplicationTile** tag to pin a legacy .url shortcut to Start, you must create a .url file and add this file to a legacy Start Menu directory before first boot.
 
@@ -842,7 +842,7 @@ Remove USB-A and USB-B and type *exit* to reboot your computer with Windows 10.
 
     For more information about the first boot time requirements, see [Windows Policy for System Builders](http://www.microsoft.com/oem/en/pages/download.aspx?wpid=w_w8_008).
 
-1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing-), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press CTRL+SHIFT+F3 in order to pass OOBE and boot in audit mode.
+1.  Please note that at the end of the section [Update images manually by using AUDIT MODE (online servicing)](#update-images-manually-by-using-audit-mode-online-servicing-), the system was sealed with OOBE mode. Please proceed with Audit. If the system boots in OOBE, press Ctrl+Shift+F3 in order to pass OOBE and boot in audit mode.
 
 2.  If you want to apply additional steps, such as executing OEM diagnostics tests and so on, apply them here.
 

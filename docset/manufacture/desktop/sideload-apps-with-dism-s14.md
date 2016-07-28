@@ -68,7 +68,7 @@ Here’s what you’ll need to know in order to sideload apps:
 
 **Understand Sideloading Concepts**
 
-Windows apps differ from Classic Windows applications in their design and in the way users can interact with them. To learn more about Windows apps , see [what is a Windows Store App?](http://go.microsoft.com/fwlink/?LinkId=264710).
+Windows apps differ from Windows desktop applications in their design and in the way users can interact with them. To learn more about Windows apps , see [what is a Windows Store App?](http://go.microsoft.com/fwlink/?LinkId=264710).
 
 You cannot sideload an app that has been downloaded from the Windows Store. To install Windows apps that are not part of your business line, you must use the Windows Store. To learn more, see [Managing Client Access to the Windows Store](http://go.microsoft.com/fwlink/?LinkId=264712).
 

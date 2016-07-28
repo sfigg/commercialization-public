@@ -116,7 +116,7 @@ With retail builds, you won't be able to log into the device using the SSH clien
 That's it for the first lab. 
 
 From here, you can continue on to:
--  [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+-  [Lab 2: Creating your own board support package](create-a-new-bsp.md)
 
 
 

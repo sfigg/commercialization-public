@@ -65,7 +65,7 @@ In this step, you’ll gather a trace using **WPR** that contains **VirtualAlloc
 
     3.  Select **general** as the **logging mode**.
 
-        ![](images/memoryfootprintlab11.png)
+        ![Screenshot of WPR tracing options menu.](images/memoryfootprintlab11.png)
 
 2.  Click **Start** to start tracing.
 
@@ -154,11 +154,11 @@ Follow these steps to analyze **MemoryTestApp.exe**
 
     -   Right-click, and select **Filter** to Selection.
 
-![](images/memoryfootprintlab12.png)
+![Screenshot showing how to filter results.](images/memoryfootprintlab12.png)
 
 Your analysis viewport should look similar to this:
 
-![](images/memoryfootprintlab13.png)
+![Example graph of what the data would look like when filtered.](images/memoryfootprintlab13.png)
 
 In the preceding example, two values are of interest:
 
@@ -170,15 +170,15 @@ In the preceding example, two values are of interest:
 
 When investigating memory allocation, you should try to answer the question: “Why is the steady state memory usage growing for this scenario?” In the **MemoryTestApp.exe** example, you can see that it has about 10 MB of steady state memory allocated at the beginning, and then it increases to 20 MB halfway through.
 
-![](images/memoryfootprintlab14.png)
+![Screenshot of sample data showing memory usage.](images/memoryfootprintlab14.png)
 
 To investigate this behavior, narrow the zoom to around the time interval when the sudden increase occurs in the middle of the trace.
 
-![](images/memoryfootprintlab15.png)
+![Screenshot showing how to zoom into the data.](images/memoryfootprintlab15.png)
 
 Your viewport should look like this.
 
-![](images/memoryfootprintlab16.png)
+![Screenshot of sample data after applying the zoom option.](images/memoryfootprintlab16.png)
 
 As you can see, the **Impacting Size** is now **10 MB**. This means that, between the start and the end of the time interval being analyzed, there’s a 10 MB increase in steady state memory usage.
 
@@ -190,13 +190,13 @@ As you can see, the **Impacting Size** is now **10 MB**. This means that, betwee
 
 4.  Navigate through the process **Commit Stack** until you find the function that allocated 10 MB of memory.
 
-    ![](images/memoryfootprintlab17.png)
+    ![Screenshot of sample data.](images/memoryfootprintlab17.png)
 
 In this example, the **Main** function of **MemoryTestApp.exe** allocates 10 MB of memory in the middle of the workload by directly calling **VirtualAlloc**. In the real world, the application developer should determine if the allocation is reasonable or if the code could be rearranged to minimize the steady state memory usage increase.
 
 You can now **unzoom** the viewport in WPA.
 
-![](images/memoryfootprintlab18.png)
+![Screenhsot of unzoom menu.](images/memoryfootprintlab18.png)
 
 ### Step 2.2: Analyze transient (or peak) memory usage
 
@@ -204,15 +204,15 @@ When investigating memory allocations, you should try to answer the question: �
 
 In the **MemoryTest** example, you can see that there are 10 different spikes of memory usage (of 10 MB) evenly scattered across the trace.
 
-![](images/memoryfootprintlab19.png)
+![Screenshot of graph showing memory usage data.](images/memoryfootprintlab19.png)
 
 Narrow the zoom to the last four spikes, to focus on a smaller region of interest and reduce noise from non-relevant behaviors.
 
-![](images/memoryfootprintlab20.png)
+![Screenshot of zoom option.](images/memoryfootprintlab20.png)
 
 Your viewport should look like this:
 
-![](images/memoryfootprintlab21.png)
+![Screenshot of graph showing memory usage data using zoom option.](images/memoryfootprintlab21.png)
 
 1.  Sort by **Size** by clicking on the column header.
 
@@ -232,7 +232,7 @@ Your viewport should look like this:
 
 5.  Navigate through the process **Commit Stack** until you find the functions that allocated 40 MB of memory.
 
-    ![](images/memoryfootprintlab22.png)
+    ![Screenshot of memory usage data.](images/memoryfootprintlab22.png)
 
 In this example, the **Main** function of **MemoryTestApp.exe** calls a function named **Operation1**, which in turn calls a function named **ManipulateTemporaryBuffer**. This **ManipulateTemporaryBuffer** function then directly calls **VirtualAlloc** four times, creating and freeing a 10 MB memory buffer every time. The buffers only last 100 ms each. The buffers' allocation and free times are represented by the **Commit Time** and **Decommit Time** columns.
 
@@ -319,7 +319,7 @@ Follow these steps to analyze **MemoryTestApp.exe**
 
 Your viewport should look like this:
 
-![](images/memoryfootprintlab23.png)
+![Screenshot of sample data.](images/memoryfootprintlab23.png)
 
 In this example, you can see that one of the heaps is steadily increasing in size over time at a constant rate. There are 1200 memory allocations on that heap, accounting for 130 KB of used memory by the end of the interval.
 
@@ -331,7 +331,7 @@ In this example, you can see that one of the heaps is steadily increasing in siz
 
 4.  Navigate through the process **Stack** until you find the function that is responsible for allocating all this memory.
 
-    ![](images/memoryfootprintlab24.png)
+    ![Screenshot of sample data after applying the zoom option.](images/memoryfootprintlab24.png)
 
 In this example, the **Main** function of **MemoryTestApp.exe** calls a function named **InnerLoopOperation**. This **InnerLoopOperation** function then allocates 40 bytes of memory 319 times through the C++ **new** operator. This memory remains allocated until the process is terminated.
 
