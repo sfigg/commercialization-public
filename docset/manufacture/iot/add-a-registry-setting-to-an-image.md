@@ -8,9 +8,6 @@ title: 'Lab 1c: Add a file and a registry setting to an image'
 
 # Lab 1c: Add a file and a registry setting to an image
 
-
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
 Many files and registry keys, and other customizations that you add to your image won't be specific to an architecture. For these, we recommend creating a common package that you can use for all of your builds.
  
 We'll create some test files and registry keys to the image, and again package them up so that they can be serviced after they reach your customers.
@@ -29,16 +26,13 @@ Finally, we'll rebuild the project and make sure it works.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-
 We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
-
 -   Create a few sample text files using Notepad, title them TestFile1.txt and TestFile2.txt.
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
-
 
 1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
 

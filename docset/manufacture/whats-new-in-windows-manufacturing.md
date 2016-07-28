@@ -13,7 +13,8 @@ This topic covers new improvements for manufacturing.
 
 **July 26, 2016**
 
-- New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
+-  Desktop: New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
+-  IoT: Added details on signing retail images: [Build a retail image](build-retail-image.md)
 
 **July 21, 2016**
 

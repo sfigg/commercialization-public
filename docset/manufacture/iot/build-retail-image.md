@@ -8,8 +8,6 @@ title: 'Lab 1f: Build a retail image'
 
 # Lab 1f: Build a retail image
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
 We''ll take our test image and convert it to a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
@@ -70,7 +68,9 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 **Build the image**
 
-1.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
+1.  [Get a code-signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887(v=vs.85).aspx).
+
+2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
     ``` syntax
 	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256

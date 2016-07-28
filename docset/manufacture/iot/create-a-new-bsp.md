@@ -23,38 +23,39 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 
    For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRPi2FM.xml**.
 
-   a. Add the base packages you'll need
+   a.  Add the base packages you'll need
    
        You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, or use your own.
    
-      Add:
-      *  UEFI drivers for the boot partition
-      *  Drivers required for UpdateOS
-      *  BCD settings
-      *  **  Device Info: Leave this empty. **
-         Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. 
-	     This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
-      *  Mandatory device drivers
-      *  Device-specific customizations
-   
-   
+       Add:
+       *  UEFI drivers for the boot partition
+       *  Drivers required for UpdateOS
+       *  BCD settings
+       *  Device Info: **Leave this empty.**
+         
+		  Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. 
+	      This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
+		 
+       *  Mandatory device drivers
+       *  Device-specific customizations
+     
     b.  Update the device layout
 
-    You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](iot-device-layout.md).
+        You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](iot-device-layout.md).
     
 	c.  Under features, include the drivers that you want. 
 	
-	You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
+	    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
 	
-	For example, add the HelloBlinky driver:
+	    For example, add the HelloBlinky driver:
 	
-	 ``` syntax
-	 <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
-        <FeatureIDs>
-          <FeatureID>RPI2_DRIVERS</FeatureID>
-        </FeatureIDs>
-      </PackageFile>
-	  ```
+	    ``` syntax
+	        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
+            <FeatureIDs>
+            <FeatureID>RPI2_DRIVERS</FeatureID>
+            </FeatureIDs>
+            </PackageFile>
+	    ```
 	
 	
 ## <span id="Create_a_new_product_folder"></span><span id="create_a_new_product_and_folder"></span><span id="CREATE_A_NEW_PRODUCT_FOLDER"></span>Create a new product folder
@@ -72,27 +73,28 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductB\\TestOEMInput.xml**.
 
 2.  Add FeatureIDs:
-	  	-  Add the FeatureID: IOT_GENERIC_POP to get OS-only updates.
-		  
-		-  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
-	  
-	  -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
-
-    ``` syntax
-    <Microsoft>
-	<Feature>IOT_GENERIC_POP</Feature>
-	...
-	</Microsoft>
 	
-	<OEM> 
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>PRODUCTION</Feature> 
-    <Feature>IOT_DISABLE_UMCI</Feature> 
-    <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
-    </OEM>
+	-  Add the FeatureID: IOT_GENERIC_POP to get OS-only updates.
+
+	-  Add the FeatureIDs: IOT_DISABLE_UMCI and IOT_ENABLE_TESTSIGNING to enable test binaries and packages to work.
+
+    -  Optional: add the FeatureID for the other apps and test packages: OEM_AppxHelloWorld, OEM_CustomCmd, OEM_FileAndRegKey, that you created in Lab 1.
+
+       ``` syntax
+       <Microsoft>
+          <Feature>IOT_GENERIC_POP</Feature>
+	   ...
+       </Microsoft>
+	
+       <OEM> 
+          <Feature>RPI2_DRIVERS</Feature> 
+          <Feature>PRODUCTION</Feature> 
+          <Feature>IOT_DISABLE_UMCI</Feature> 
+          <Feature>IOT_ENABLE_TESTSIGNING</Feature> 
+          <Feature>OEM_CustomCmd</Feature> 
+          <Feature>OEM_AppxHelloWorld</Feature> 
+          <Feature>OEM_FileAndRegKey</Feature> 
+        </OEM>
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
