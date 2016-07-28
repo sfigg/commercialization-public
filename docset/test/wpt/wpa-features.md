@@ -47,7 +47,7 @@ This section describes features of Windows Performance Analyzer.
 
 <tr class="even">
 <td><p>[Open an archive in WPA](opening-archive.md)</p></td>
-<td><p>Describe how to open ETL files in WPA that are contained within cabinet files and zip files, merging multiple traces within an archive, and compressing merged traces.</p></td>
+<td><p>Describes how to open ETL files in WPA that are contained within cabinet files and zip files, merging multiple traces within an archive, and compressing merged traces.</p></td>
 </tr>
 
 <tr class="odd">

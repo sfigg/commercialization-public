@@ -5999,7 +5999,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
  - This requirement is **Optional** for Server x64. However, if a TPM 2.0 is present on a Server x64 platform, that platform must comply with all requirements in System.Fundamentals.TPM20 and all sub-requirements.
 
-**Mandatory:** A system that implements a Trusted Platform Module must include a TPM which complies with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 0.99 (or later), 1.15 or later is recommended.
+**Mandatory:** A system that implements a Trusted Platform Module must include a TPM which complies with TCG Trusted Platform Module Library Specification, Family "2.0", Level 00, Revision 1.16 or later is recommended.
 
 **Mandatory:** Systems with TPM 2.0 must comply with the following requirements:
 
