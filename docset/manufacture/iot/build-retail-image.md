@@ -37,13 +37,13 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
     ``` syntax
     <OEM> 
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_ProvAuto</Feature>
-	<Feature>OEM_DriverHelloBlinky</Feature> 
+       <Feature>RPI2_DRIVERS</Feature> 
+       <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
+       <Feature>OEM_AppxHelloWorld</Feature> 
+       <Feature>OEM_FileAndRegKey</Feature> 
+       <Feature>OEM_CustomCmd</Feature> 
+       <Feature>OEM_ProvAuto</Feature>
+	   <Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
     ```
     
@@ -71,6 +71,7 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 **Build the image**
 
 1.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
+
     ``` syntax
 	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
 	```
@@ -82,12 +83,14 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://msdn.microsoft.com/windows/hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
 	
 	
-2.	From the IoT Core Shell, enable retail signing
+2.	From the IoT Core Shell, enable retail signing.
+
     ``` syntax
 	retailsign On
 	```
 	
-3.	Rebuild all the packages so that they are retail signed
+3.	Rebuild all the packages so that they are retail signed.
+
     ``` syntax
 	buildpkg all
 	```
@@ -95,7 +98,7 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 4.  From the IoT Core Shell, create the image:
 
     ``` syntax
-    createimage ProductA Retail
+    buildimage ProductA Retail
     ```
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Retail\\Flash.FFU.
