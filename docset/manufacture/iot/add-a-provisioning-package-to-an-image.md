@@ -140,7 +140,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     http://100.100.0.100:8080
     ```
 
-    This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
+    This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 3.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
 
