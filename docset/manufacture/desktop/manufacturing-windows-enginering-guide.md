@@ -449,7 +449,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM access to Windows&nbsp;10?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -464,7 +464,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM access to Windows&nbsp;10?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -479,7 +479,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM access to Manufacturing WEG?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -494,7 +494,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM access to Manufacturing WEG?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -509,7 +509,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM points of contact identified?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -524,7 +524,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM points of contact identified?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -539,7 +539,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM kick-off?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -554,7 +554,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM kick-off?</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -572,7 +572,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -601,7 +601,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM understanding of deployment concepts</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -616,7 +616,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM understanding of deployment concepts</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -634,7 +634,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -649,7 +649,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -664,7 +664,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -679,7 +679,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -694,7 +694,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -726,7 +726,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -741,7 +741,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -759,7 +759,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -774,7 +774,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -789,7 +789,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -807,7 +807,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 </tr>
 <tr>
 <td>
@@ -833,7 +833,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -848,7 +848,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -866,7 +866,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -881,7 +881,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -896,7 +896,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -911,7 +911,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -940,7 +940,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -958,7 +958,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -970,7 +970,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -985,7 +985,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1003,7 +1003,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1029,7 +1029,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>OEM understanding of security concepts</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1044,7 +1044,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM understanding of security concepts</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1065,7 +1065,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1083,7 +1083,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 </tr>
 <tr>
 <td>
@@ -1098,7 +1098,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 </tr>
 <tr>
 <td>
@@ -1113,7 +1113,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 </tr>
 <tr>
 <td>
@@ -1125,7 +1125,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1140,7 +1140,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1152,8 +1152,8 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
+<td>-</td>
 <td>
 <p>-</p>
 </td>
@@ -1185,7 +1185,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1200,7 +1200,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
@@ -1215,7 +1215,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>-</p>
 </td>
-<td>&nbsp;</td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
