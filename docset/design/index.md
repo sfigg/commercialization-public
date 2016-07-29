@@ -22,4 +22,4 @@ Windows 10 supports a wide range of devices—from phones, to tablets and lapto
 
 ## <a href="" id="developer-audience-heading"></a>Developer audience
 
-This section of the partner documentation is intended for all partners (OEMs, ODMs, IHV, ISV, system builders, and mobile operators.
+This section of the partner documentation is intended for all partners (OEMs, ODMs, IHV, ISV, system builders, and mobile operators).
