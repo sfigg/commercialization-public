@@ -29,6 +29,7 @@ author: beneluxboy
  - [Device.Graphics.AdapterRender.D3D11Level9WDDM12](#device.graphics.adapterrender.d3d11level9wddm12)
  - [Device.Graphics.AdapterRender.D3D11Level9WDDM13](#device.graphics.adapterrender.d3d11level9wddm13)
  - [Device.Graphics.AdapterRender.D3D11PartialPrecision](#device.graphics.adapterrender.d3d11partialprecision)
+ - [Device.Graphics.AdapterRender.D3D11RasterizerOrderedViews](#device.graphics.adapterrender.d3d11rasterizerorderedviews)
  - [Device.Graphics.AdapterRender.D3D11StencilReference](#device.graphics.adapterrender.d3d11stencilreference)
  - [Device.Graphics.AdapterRender.D3D11TypedUAVLoads](#device.graphics.adapterrender.d3d11typeduavloads)
  - [Device.Graphics.AdapterRender.D3D11WDDM12](#device.graphics.adapterrender.d3d11wddm12)
@@ -40,6 +41,7 @@ author: beneluxboy
  - [Device.Graphics.AdapterRender.D3D12ConservativeRasterization](#device.graphics.adapterrender.d3d12conservativerasterization)
  - [Device.Graphics.AdapterRender.D3D12Core](#device.graphics.adapterrender.d3d12core)
  - [Device.Graphics.AdapterRender.D3D12Multiadapter](#device.graphics.adapterrender.d3d12multiadapter)
+ - [Device.Graphics.AdapterRender.D3D12RasterizerOrderedViews](#device.graphics.adapterrender.d3d12rasterizerorderedviews)
  - [Device.Graphics.AdapterRender.D3D12StencilReference](#device.graphics.adapterrender.d3d12stencilreference)
  - [Device.Graphics.AdapterRender.D3D12TypedUAVLoads](#device.graphics.adapterrender.d3d12typeduavloads)
  - [Device.Graphics.AdapterRender.D312VolumeTiledResources](#device.graphics.adapterrender.d312volumetiledresources)
@@ -1168,6 +1170,10 @@ Additionally, the CheckDounter and CheckCounterInfo Direct3D11 Counter DDIs must
 
 The D3D11.1 Specification allows for optionally implementing Partial Precision Shader functionality on D3D9, D3D10\*, and Direct3D 11 hardware with a WDDM 1.2 driver.   If the hardware includes support for and the driver exposes this functionality, it must conform to the specifications for this feature as defined in the *D3D11.1 Hardware Specification*.  
 
+
+<a name="device.graphics.adapterrender.d3d11rasterizerorderedviews"></a>
+## Device.Graphics.AdapterRender.D3D11RasterizerOrderedViews
+
 ### Device.Graphics.AdapterRender.D3D11RasterizerOrderedViews.CoreRequirement 
 
 <table>
@@ -1641,7 +1647,7 @@ All display drivers which implement the D3D12 DDI must do so in a consistent man
 <a name="device.graphics.adapterrender.d3d12multiadapter"></a>
 ## Device.Graphics.AdapterRender.D3D12Multiadapter
 
-### 
+### Device.Graphics.AdapterRender.D3D12Multiadapter.CoreRequirement
 
 <table>
 <tr>
@@ -1669,6 +1675,9 @@ Note: This feature is Mandatory for a driver claiming to be D3D12 compliant driv
 **Business Justification:**
 
 All display drivers which implement the D3D12 DDI must do so in a consistent manner. This enables the D3D12 API to have a consistent behavior across many platforms, which reduces the cost to ISVs of developing 3D applications on PC/Tablet/Phone/XBOX platforms.
+
+<a name="device.graphics.adapterrender.d3d12rasterizerorderedviews"></a>
+## Device.Graphics.AdapterRender.D3D12RasterizerOrderedViews
 
 ### Device.Graphics.AdapterRender.D3D12RasterizerOrderedViews.CoreRequirement (If Implemented)
 

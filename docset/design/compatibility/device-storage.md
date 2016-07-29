@@ -10,6 +10,7 @@ author: beneluxboy
 
  - [Device.Storage.Controller](#device.storage.controller)
  - [Device.Storage.Controller.Ata](#device.storage.controller.ata)
+ - [Device.Storage.Controller.AzureStack](#device.storage.controller.azurestack)
  - [Device.Storage.Controller.Boot](#device.storage.controller.boot)
  - [Device.Storage.Controller.Fc](#device.storage.controller.fc)
  - [Device.Storage.Controller.Fc.NPIV](#device.storage.controller.fc.npiv)
@@ -26,11 +27,13 @@ author: beneluxboy
  - [Device.Storage.Controller.SD](#device.storage.controller.sd)
  - [Device.Storage.ControllerDrive.NVMe](#device.storage.controllerdrive.nvme)
  - [Device.Storage.Enclosure](#device.storage.enclosure)
+ - [Device.Storage.Enclosure.AzureStack](#device.storage.enclosure.azurestack)
  - [Device.Storage.Hd](#device.storage.hd)
  - [Device.Storage.Hd.1394](#device.storage.hd.1394)
  - [Device.Storage.Hd.Alua](#device.storage.hd.alua)
  - [Device.Storage.Hd.Ata](#device.storage.hd.ata)
  - [Device.Storage.Hd.AtaProtocol](#device.storage.hd.ataprotocol)
+ - [Device.Storage.Hd.AzureStack](#device.storage.hd.azurestack)
  - [Device.Storage.Hd.DataVerification](#device.storage.hd.dataverification)
  - [Device.Storage.Hd.Ehdd](#device.storage.hd.ehdd)
  - [Device.Storage.Hd.EMMC](#device.storage.hd.emmc)
@@ -224,6 +227,70 @@ The following requirements are also applied to ATA/ATAPI controllers.
 -   PATA controllers that support the PACKET command protocol must be fully implemented as defined in ATA/ATAPI-7 Volume 2, Section 11.8.
 
 -   Identify Device data fields (61:60) and (103:100) must not be used to determine 28-bit or 48-bit LBA addressing support. Instead, bit 10 of word 83 and bit 10 of word 86 must be checked for 48-bit LBA addressing support as defined in ATA/ATAPI-7, Volume 1, Section 4.2.1.
+
+
+
+<a name="device.storage.controller.azurestack"></a>
+## Device.Storage.Controller.AzureStack
+
+*Defines requirements that must be met if the storage controller is supported in a Microsoft Azure Stack based private cloud solution*
+
+### Device.Storage.Controller.AzureStack.BasicFunction
+
+*Basic requirements for storage controllers used in Microsoft Azure Stack solutions*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack requirements for storage controllers are captured by the following table.
+
+<table>
+    <tr><th>Feature</th><th>Requirement</th></tr>
+    <tr><td rowspan="4">Device.Storage.Controller</td><td>Device.Storage.Controller.BasicFunction</td></tr>
+	<tr><td>Device.Storage.Controller.ClassCode</td></tr>
+	<tr><td>Device.Storage.Controller.InfFile</td></tr>
+	<tr><td>Device.Storage.Controller.MiniportDriverModel</td></tr>
+    <tr><td>Device.Storage.Controller.Boot</td><td>If ‘Device.Storage.Controller.Boot.BasicFunction’ is implemented, then ‘Device.Storage.Controller.Boot.BitLocker’ is required</td></tr>
+    <tr><td>Device.Storage.Controller.Flush</td><td>Device.Storage.Controller.Flush.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Controller.PassThroughSupport</td><td>Device.Storage.Controller.PassThroughSupport.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Controller.Sas</td><td>If ‘Device.Storage.Controller.Sas.Interface’ is implemented, then ‘Device.Storage.Controller.Sas.TranslationLayer’ is required</td></tr>
+    <tr><td>Device.Storage.ControllerDrive.NVMe</td><td>Device.Storage.ControllerDrive.NVMe.BasicFunction</td></tr>
+    <tr><td rowspan="6">Device.DevFund.Server.Nano</td><td>Device.DevFund.Server.OperateInServerNano</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Deployment</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Diagnostics</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.PatchAndUpdate</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.MonitoringAndTelemetry</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.FirmwareUpdate</td></tr>
+</table>
+
+In addition to the above, the following requirements must be met:
+
+1.	SAS HBA required for SAS and SATA disk devices
+2.	SAS Expander with SES capability required for SAS and SATA devices
+
+### Device.Storage.Controller.AzureStack.CloudStress
+*Storage controllers that are used to connect to cluster storage for the private cloud solution must comply with this specification* 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and hardware components to deliver resiliency with high performance. Issues in any of the components (software, hardware, drivers, firmware, and so forth) can compromise the solution and undermine any promises made regarding the Service Level Agreement (SLA) for the private cloud. 
+
+Many of these issues are surfaced only under a high-stress, private cloud simulation. The Private Cloud Simulator (PCS) enables you to validate your component in a cloud scenario and identify such issues. It simulates a live datacenter/private cloud by creating VM workloads, scheduling administrative operations (load balancing, software/hardware maintenance), and injecting faults (unplanned hardware/software failures) on the private cloud. 
+
+To comply with this specification, the controller must pass the PCS test run with the ‘Storage Controller – Azure Stack’ profile on a 4-node clustered configuration.
+
+### Device.Storage.Controller.AzureStack.FirmwareUpdate
+*Storage controllers that are used to connect to cluster storage for the private cloud solution must comply with this specification*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack will require SAS and NVMe controllers to be firmware updateable. For NVMe controllers, this must be possible through the inbox [firmware update mechanism](https://blogs.technet.microsoft.com/filecab/2016/01/25/updating-firmware-for-disk-drives-in-windows-server-2016-tp4/) introduced in WS 2016 (Update-StorageFirmware). Also, SAS HBAs must properly translate firmware download and activate commands according to the [SAT-4](http://www.t10.org/cgi-bin/ac.pl?t=f&f=sat4r04a.pdf) specification.
+
 
 <a name="device.storage.controller.boot"></a>
 ## Device.Storage.Controller.Boot
@@ -872,7 +939,7 @@ SAS HBAs and/or their drivers should implement the following SCSI / ATA Translat
 -   Download Microcode mode 0Eh (Section 8.16.2.5)
 -   Download Microcode mode 0Fh (Section 8.16.2.6)
 
-Note: Compliance with this requirement should be tested by connecting a SATA drive, compliant with the Windows 10 firmware update requirements, to the SAS HBA and running the HLK Firmware Update Test.
+Note: Compliance with this requirement should be tested by connecting a SATA drive, compliant with the Windows 10 firmware update requirements, to the SAS HBA and running the HLK Firmware Update Test. Testing the controller's translation layer should be done with a SAS expander between the target (SATA drive) and the controller (HBA).
 
 <a name="device.storage.controller.sata"></a>
 ## Device.Storage.Controller.Sata
@@ -1074,8 +1141,6 @@ The following requirements that the device must fulfill are specific to revision
 
     -   The device must not fail I/O during the download phase and shall continue serving I/O.
 
-    -   If the device is dual-ported the download operation shall be possible utilizing both ports, i.e., part of the image can be downloaded through port 1, while another part arrives via port 2.
-
 -   5.9 Get Features – at least the following must be reported accurately:
 
 -   5.12.1.5 Error Recovery
@@ -1266,6 +1331,63 @@ Storage enclosure must meet the following requirements to support storage space 
 | 9h to Fh | Reserved          |  &nbsp;          |
 
 Notes:  Windows correlates enclosure services to drives via the protocol-specific information and the drives’ Device Identification VPD page (83h) with ASSOCIATION field set to 1.
+
+<a name="device.storage.enclosure.azurestack"></a>
+## Device.Storage.Enclosure.AzureStack
+
+*Defines requirements that must be met if the drive enclosure is supported in a Microsoft Azure Stack based private cloud solution*
+
+### Device.Storage.Enclosure.AzureStack.BasicFunction
+
+*Basic requirements for drive enclosures used in Microsoft Azure Stack solutions*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack requirements for drive enclosures are captured by the following table.
+
+<table>
+    <tr><th>Feature</th><th>Requirement</th></tr>
+    <tr><td rowspan="2">Device.Storage.Enclosure</td><td>Device.Storage.Enclosure.DirectAccess</td></tr>
+	<tr><td>Device.Storage.Enclosure.DriveIdentification</td></tr>
+    <tr><td rowspan="6">Device.DevFund.Server.Nano</td><td>Device.DevFund.Server.OperateInServerNano</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Deployment</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Diagnostics</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.PatchAndUpdate</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.MonitoringAndTelemetry</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.FirmwareUpdate</td></tr>
+</table>
+
+In addition to the above, the following requirement must be met:
+
+- Storage enclosures must have and report unique ID
+
+### Device.Storage.Enclosure.AzureStack.CloudStress
+
+*Drive enclosures that supply cluster storage for the private cloud solution must comply with this specification* 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and hardware components to deliver resiliency with high performance. Issues in any of the components (software, hardware, drivers, firmware, and so forth) can compromise the solution and undermine any promises made regarding the Service Level Agreement (SLA) for the private cloud.
+
+Many of these issues are surfaced only under a high-stress, private cloud simulation. The Private Cloud Simulator (PCS) enables you to validate your component in a cloud scenario and identify such issues. It simulates a live datacenter/private cloud by creating VM workloads, scheduling administrative operations (load balancing, software/hardware maintenance), and injecting faults (unplanned hardware/software failures) on the private cloud.
+
+To comply with this specification, the controller must pass the PCS test run with the Storage Enclosure profile on a 4-node clustered configuration.
+
+### Device.Storage.Enclosure.AzureStack.FirmwareUpdate
+
+*Drive enclosures that supply cluster storage for the private cloud solution must comply with this specification* 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack will require enclosures to be firmware updateable.
+
+
 
 <a name="device.storage.hd"></a>
 ## Device.Storage.Hd
@@ -1552,6 +1674,74 @@ Justification:
 
 When the Nominal Media Rotation Rate reported by the device is anything but 0001h Non-rotating media, Windows will by default perform defragmentation of the block storage device.
  
+
+<a name="device.storage.hd.azurestack"></a>
+## Device.Storage.Hd.AzureStack
+
+*Defines requirements that must be met if the disk is supported in a Microsoft Azure Stack based private cloud solution*
+
+### Device.Storage.Hd.AzureStack.BasicFunction
+
+*Basic requirements for disks used in Microsoft Azure Stack solutions*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack requirements for disks are captured by the following table.
+
+<table>
+    <tr><th>Feature</th><th>Requirement</th></tr>
+    <tr><td rowspan="3">Device.Storage.Hd</td><td>Device.Storage.Hd.BasicFunction</td></tr>
+	<tr><td>Device.Storage.Hd.PhysicalSectorSizeReportsAccurately</td></tr>
+	<tr><td>Device.Storage.Hd.RotationalRate</td></tr>
+    <tr><td>Device.Storage.Hd.DataVerification</td><td>Device.Storage.Hd.DataVerification.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Hd.Flush</td><td>Device.Storage.Hd.Flush.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Hd.PortAssociation</td><td>Device.Storage.Hd.PortAssociation.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Hd.Sas</td><td>Device.Storage.Hd.Sas.ComplyWithIndustrySpec</td></tr>
+    <tr><td>Device.Storage.Hd.Sata</td><td>Device.Storage.Hd.Sata.BasicFunction</td></tr>
+    <tr><td>Device.Storage.Hd.Scsi.ReliabilityCounters</td><td>Device.Storage.Hd.Scsi.ReliabilityCounters.BasicFunction</td></tr>
+    <tr><td rowspan="3">Device.Storage.Hd.ScsiProtocol</td><td>Device.Storage.Hd.ScsiProtocol.ReferenceSpec</td></tr>
+	<tr><td>Device.Storage.Hd.ScsiProtocol.SamCompliance</td></tr>
+	<tr><td>Device.Storage.Hd.ScsiProtocol.SpcCompliance</td></tr>
+    <tr><td rowspan="6">Device.DevFund.Server.Nano</td><td>Device.DevFund.Server.OperateInServerNano</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Deployment</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Diagnostics</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.PatchAndUpdate</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.MonitoringAndTelemetry</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.FirmwareUpdate</td></tr>
+</table>
+
+In addition to the above, the following requirements must be met:
+
+- Disk devices must be of, and reported as, either SATA, SAS or NVMe bus type
+- Disk devices must be of, and reported as, either SSD or HDD media type
+- Disk devices must have and report unique ID
+
+### Device.Storage.Hd.AzureStack.CloudStress
+
+*Disks that are used as cluster storage for the private cloud solution must comply with this specification*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and hardware components to deliver resiliency with high performance. Issues in any of the components (software, hardware, drivers, firmware, and so forth) can compromise the solution and undermine any promises made regarding the Service Level Agreement (SLA) for the private cloud. 
+
+Many of these issues are surfaced only under a high-stress, private cloud simulation. The Private Cloud Simulator (PCS) enables you to validate your component in a cloud scenario and identify such issues. It simulates a live datacenter/private cloud by creating VM workloads, scheduling administrative operations (load balancing, software/hardware maintenance), and injecting faults (unplanned hardware/software failures) on the private cloud. 
+
+To comply with this specification, the disk must pass the PCS test run with the ‘Storage Disk – AzureStack’ profile on a 4-node clustered configuration.
+
+### Device.Storage.Hd.AzureStack.FirmwareUpdate
+
+*Disks that are used as cluster storage for the private cloud solution must comply with this specification*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack will require SAS and SATA drives to be firmware updateable using the inbox [firmware update mechanism](https://blogs.technet.microsoft.com/filecab/2016/01/25/updating-firmware-for-disk-drives-in-windows-server-2016-tp4/), introduced in Windows Server 2016 (Update-StorageFirmware).
+
 
 <a name="device.storage.hd.dataverification"></a>
 ## Device.Storage.Hd.DataVerification
@@ -2218,137 +2408,6 @@ BitLocker must be properly enabled to protect data volumes on storage arrays.
 **Business Justification**
 
 (1) When a server is placed in an environment without adequate physical security, BitLocker protects data on the server against unauthorized access if a server is stolen. (2) When hosting service providers repurpose or decommission storage arrays, BitLocker Disk Encryption prevents data breach.
-
-### Device.Storage.Hd.RaidArray.Manageability
-
-*A connected storage device must be manageable.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-A storage device is considered connected when it operates with a Windows Server system through a fabric interface. This type of storage interface includes FibreChannel, FibreChannel over Ethernet (FCoE), iSCSI, and SMB3.
-
-This manageability of a connected storage device means the user can perform an end-to-end storage workflow using a common user interface such as PowerShell, or the File and Storage Services in a Server Management tool. This workflow must be achievable even before the operational target Windows Server OS is deployed in the environment.
-
-**Enforcement**
-
-This is a mandatory device requirement. This requirement becomes in effect at the release of Windows Server 2016.
-
-**Business Justification**
-
-Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server 2016 in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
-
-### Device.Storage.Hd.RaidArray.Manageability.Smapi
-
-*A connected storage device must be manageable by Windows through its Storage Management API (SMAPI) and an associated Storage Management Provider (SMP).*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description:**
-
-A storage device is considered connected when it operates with a Windows Server system through a fabric interface. This type of storage interface includes FibreChannel, FibreChannel over Ethernet (FCoE), iSCSI, and SMB3.
-
-This manageability of a connected storage device means the user can perform an end-to-end storage workflow using a common user interface such as PowerShell, or the File and Storage Services in a Server Management tool. This workflow must be achievable from a Windows Server 2016, through its Storage Management API (SMAPI) and an associated Storage Management Provider (SMP), to the connected storage device providing the services.
-
-**Enforcement**
-
-This is a mandatory device requirement. This requirement becomes in effect at the release of Windows Server 2016.
-
-**Business Justification**
-
-Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server 2016 in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
-
-### Device.Storage.Hd.RaidArray.Manageability.Smi
-
-*An industry-standard connected storage device is manageable through its native SNIA SMI-S v1.6.1 Provider interface.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description:**
-
-A storage device is considered connected when it operates with a Windows Server system through a fabric interface. This type of storage interface includes FibreChannel, FibreChannel over Ethernet (FCoE), iSCSI, and SMB3.
-
-A connected storage device is considered industry-standard when it supports the Storage Networking Industry Association (SNIA) Storage Management Initiative specification (SMI-S) v1.6.1 for manageability purposes. This SMI-S v1.6.1 Provider interface must be implemented in the connected storage device without the aid of an external companion provider operating in a separate device enclosure.
-
-This manageability of an industry-standard connected storage device means the user can perform an end-to-end storage workflow using a common user interface such as Windows PowerShell, or the file and storage services in a server management tool such as Microsoft System Center Virtual Machine Manager (SCVMM). This workflow must be achievable even when a Windows Server OS is not yet deployed in the environment.
-
-**Enforcement**
-
-This is an “If-Implemented” optional device requirement for a connected storage device.
-
-However, this and all related sub-requirements are mandatory for a connected storage device claiming to be industry-standard and manageable from a Windows Server 2016 system. This requirement becomes in effect at the release of Windows Server 2016.
-
-**Business Justification**
-
-Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server 2016 in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
-
-### Device.Storage.Hd.RaidArray.Manageability.Smi.Ctp
-
-*An industry-standard connected storage device that is manageable through its native SMI-S v1.6.1 Provider interface demonstrates such conformance through a successful CTP test pass.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-A storage device is considered connected when it operates with a Windows Server system through a fabric interface. This type of storage interface includes FibreChannel, FibreChannel over Ethernet (FCoE), iSCSI, and SMB3.
-
-A connected storage device is considered industry-standard when it supports the Storage Networking Industry Association (SNIA) Storage Management Initiative specification (SMI-S) v1.6.1 for manageability purposes. This SMI-S v1.6.1 Provider interface must demonstrate such conformance through a successful test pass of the [SNIA SMI-S Conformance Testing Program (CTP)](http://snia.org/ctp/), and the test result must be endorsed by the SNIA SMI Lab Conformance Committee.
-
-**Enforcement**
-
-This is a mandatory device requirement for a connected storage device claiming to be industry-standard and manageable from a Windows Server 2016 system. This requirement becomes in effect at the release of Windows Server 2016.
-
-**Business Justification**
-
-Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server 2016 in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
-
-### Device.Storage.Hd.RaidArray.Manageability.Smi.Scvmm
-
-*An industry-standard connected storage device that is manageable through its native SMI-S v1.6.1 Provider interface demonstrates its interoperability with the Microsoft SCVMM vNext.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-A storage device is considered connected when it operates with a Windows Server system through a fabric interface. This type of storage interface includes FibreChannel, FibreChannel over Ethernet (FCoE), iSCSI, and SMB3.
-
-A connected storage device is considered industry-standard when it supports the Storage Networking Industry Association (SNIA) Storage Management Initiative specification (SMI-S) v1.6.1 for manageability purposes. This SMI-S v1.6.1 Provider interface must demonstrate interoperability with the Microsoft System Center Virtual Machine Manager (SCVMM) vNext running on a Windows Server 2016 system.
-
-This interoperability with SCVMM vNext demonstrates the connected storage device manageability through the Windows Storage Management API (SMAPI) and a combination of the Windows Standards-Based Storage Management Service and its native SMI-S v1.6.1 Provider. This manageability means the user can perform an end-to-end storage workflow using a common interface such as PowerShell, or the File and Storage Services in SCVMM.
-
-**Enforcement**
-
-This is a mandatory device requirement for a connected storage device claiming to be industry-standard and manageable from a Windows Server 2016 system. This requirement becomes in effect at the release of Windows Server 2016.
-
-**Business Justification**
-
-Manageable connected storage devices allow efficient deployment and operation of server systems running Windows Server 2016 in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed.
 
 <a name="device.storage.hd.readzeroontrimunmap"></a>
 ## Device.Storage.Hd.ReadZeroOnTrimUnmap

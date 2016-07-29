@@ -36,6 +36,7 @@
 ####  [Device.Network.DevFund](design/compatibility/device-network-devfund.md)
 ####  [Device.Network.LAN](design/compatibility/device-network-lan.md)
 ####  [Device.Network.MobileBroadband](design/compatibility/device-network-mobilebroadband.md)
+####  [Device.Network.Switch.AzureStack](design/compatibility/device-network-switch-azurestack.md)
 ####  [Device.Network.Switch.Manageability](design/compatibility/device-network-switch-manageability.md)
 ####  [Device.Network.WLAN](design/compatibility/device-network-wlan.md)
 ####  [Device.Portable](design/compatibility/device-portable.md)
