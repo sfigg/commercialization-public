@@ -97,6 +97,7 @@ These specifications are divided into the following categories and topics:
  - [System.Fundamentals.PXE](#system.fundamentals.pxe)
  - [System.Fundamentals.Reliability](#system.fundamentals.reliability)
  - [System.Fundamentals.Security](#system.fundamentals.security)
+ - [System.Fundamentals.ServerNano](#system.fundamentals.servernano)
  - [System.Fundamentals.SignedDrivers](#system.fundamentals.signeddrivers)
  - [System.Fundamentals.SMBIOS](#system.fundamentals.smbios)
  - [System.Fundamentals.StorageAndBoot](#system.fundamentals.storageandboot)
@@ -109,6 +110,7 @@ These specifications are divided into the following categories and topics:
  - [System.Fundamentals.USBBoot](#system.fundamentals.usbboot)
  - [System.Fundamentals.USBDevice](#system.fundamentals.usbdevice)
  - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
+ - [System.Server.Assurance](#system.server.assurance)
  - [System.Server.AzureStack](#system.server.azurestack)
  - [System.Server.AzureStack.Storage](#system.server.azurestack.storage)
  - [System.Server.AzureStack.Networking](#system.server.azurestack.networking)
@@ -124,14 +126,21 @@ These specifications are divided into the following categories and topics:
  - [System.Server.Firmware.UEFI.GOP](#system.server.firmware.uefi.gop)
  - [System.Server.Firmware.VBE](#system.server.firmware.vbe)
  - [System.Server.Graphics](#system.server.graphics)
+ - [System.Server.Manageability.Redfish](#system.server.manageability.redfish)
  - [System.Server.PowerManageable](#system.server.powermanageable)
  - [System.Server.RemoteFX](#system.server.remotefx)
  - [System.Server.SMBIOS](#system.server.smbios)
+ - [System.Server.StorageManageability.Smapi](#system.server.storagemanageability.smapi)
+ - [System.Server.StorageManageability.Smapi.BlockStorage](#system.server.storagemanageability.smapi.blockStorage)
+ - [System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication](#system.server.storagemanageability.smapi.blockStorage.remotereplication)
+ - [System.Server.StorageManageability.Smapi.FileStorage](#system.server.storagemanageability.smapi.filestorage)
+ - [System.Server.StorageManageability.Smapi.Smi](#system.server.storagemanageability.smapi.smi)
  - [System.Server.SVVP](#system.server.svvp)
  - [System.Server.SystemStress](#system.server.systemstress)
  - [System.Server.Virtualization](#system.server.virtualization)
  - [System.Server.WHEA](#system.server.whea)
-
+ - [System.Solutions.AzureStack](#system.solutions.azurestack)
+ - [System.Solutions.StorageSpacesDirect](#system.solutions.storagespacesdirect)
 
 
 
@@ -4988,11 +4997,11 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 PlayReadyModule, when available on a device in secure firmware in conjunction with a compatible graphics driver, enables hardware-based content protection for media. If implemented, this module provides hardware-rooted protection of device keys, content keys and media content/samples that flow through a media pipeline. It will enable the device to have access to high definition (1080p and above) premium content. OEMs shipping on chipsets/SoCs that have a PlayReadyModule available (in the form of secure firmware available from the chipset vendor) must include PlayReadyModule on devices with screen resolutions of 1080p or higher.
 
 
-## <a href="" id="systems.fundamentals.servernano"></a>Systems.Fundamentals.ServerNano
+## <a href="" id="system.fundamentals.servernano"></a>System.Fundamentals.ServerNano
 
 Basic requirements for Windows Server Nano.
 
-### <a href="" id="systems.fundamentals.servernano.deployment"></a>System.Fundamentals.ServerNano.Deployment
+### System.Fundamentals.ServerNano.Deployment
 
 All drivers intended for use with Windows Server Nano must meet these requirements.
 
@@ -5016,7 +5025,7 @@ All drivers intended for use on Windows Server Nano must meet the following depl
 All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.
 
 
-### <a href="" id="systems.fundamentals.servernano.diagnostics"></a>System.Fundamentals.ServerNano.Diagnostics
+### System.Fundamentals.ServerNano.Diagnostics
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
@@ -5042,7 +5051,7 @@ If the tool or utility runs locally on Nano Server, it must be made available as
 In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.
 
 
-### <a href="" id="systems.fundamentals.servernano.firmwareupdate"></a>System.Fundamentals.ServerNano.FirmwareUpdate
+### System.Fundamentals.ServerNano.FirmwareUpdate
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
@@ -5066,7 +5075,7 @@ All firmware update tools and utilities intended for use on Windows Server Nano 
 If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
 
 
-### <a href="" id="systems.fundamentals.servernano.monitoringandtelemetry"></a>System.Fundamentals.ServerNano.MonitoringAndTelemetry
+### System.Fundamentals.ServerNano.MonitoringAndTelemetry
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
@@ -5092,7 +5101,7 @@ If the tool, utility, or agent runs locally on Nano Server, it must be made avai
 For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish.
 
 
-### <a href="" id="systems.fundamentals.servernano.operateinservernano"></a>System.Fundamentals.ServerNano.OperateInServerNano
+### System.Fundamentals.ServerNano.OperateInServerNano
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
@@ -5116,7 +5125,7 @@ Design Notes:
 Any device driver that does not meet this requirement will not be usable on Windows Server Nano systems.
 
 
-### <a href="" id="systems.fundamentals.servernano.patchandupdate"></a>System.Fundamentals.ServerNano.PatchAndUpdate
+### System.Fundamentals.ServerNano.PatchAndUpdate
 
 Patching requirements for Windows Server Nano.
 
@@ -7167,7 +7176,7 @@ Hardware watchdog timer monitors the OS, and reboots the machine if the OS fails
 This feature shows the requirements that need to be met by a server to get the Hardware Assurance AQ.
 
 
-### <a href="" id="system.server.assurance.enhancedplatformintegrityprotection"></a>System.Server.Assurance.EnhancedPlatformIntegrityProtection 
+### System.Server.Assurance.EnhancedPlatformIntegrityProtection 
 
 Server supports hardware- and firmware-based enhanced platform integrity protection.
 
@@ -8511,7 +8520,7 @@ Table below explains the scenario usage for the Graphic driver types.
 <!--No content provided here in the original Word file.-->
 
 
-### <a href="" id="system.server.manageability.redfish.basic"></a>System.Server.Manageability.Redfish.Basic
+### System.Server.Manageability.Redfish.Basic
 
 Server Baseboard Management Controller (BMC) devices can support out-of-band management capabilities based on the DMTF Redfish standard.
 
