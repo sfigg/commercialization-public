@@ -15,49 +15,50 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
 1.  Create a BSP working folder that you'd like to modify.
+
     ``` syntax
 	newbsp MyRPi2
 	```
  
-2.  Open the BSP feature manifest file for your new BSP MyRpi2FM.xml, .
+2.  Open the BSP feature manifest file for your new BSP, MyRpi2FM.xml.
 
-   For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRPi2FM.xml**.
+    For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRPi2FM.xml**.
 
-   a.  Add the base packages you'll need
+3.  Add the base packages you'll need.
    
-       You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, or use your own.
+    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, or use your own.
    
-       Add:
-       *  UEFI drivers for the boot partition
-       *  Drivers required for UpdateOS
-       *  BCD settings
-       *  Device Info: **Leave this empty.**
-         
-		  Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. 
-	      This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
+    Add:
+    *  UEFI drivers for the boot partition
+
+    *  Drivers required for UpdateOS
+
+    *  BCD settings
+
+    *  **Device Info: Leave this empty.**  Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file.  This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
 		 
-       *  Mandatory device drivers
-       *  Device-specific customizations
-     
-    b.  Update the device layout
+    *  Mandatory device drivers
 
-        You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](iot-device-layout.md).
+    *  Device-specific customizations
+     
+4.  Update the device layout.
+
+    You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](device-layout.md).
     
-	c.  Under features, include the drivers that you want. 
+5.  Under features, include the drivers that you want. 
 	
-	    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
+    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
 	
-	    For example, add the HelloBlinky driver:
+	For example, add the HelloBlinky driver:
 	
-	    ``` syntax
-	        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
-            <FeatureIDs>
+    ``` syntax
+        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
+          <FeatureIDs>
             <FeatureID>RPI2_DRIVERS</FeatureID>
-            </FeatureIDs>
-            </PackageFile>
-	    ```
-	
-	
+          </FeatureIDs>
+        </PackageFile>
+    ```
+
 ## <span id="Create_a_new_product_folder"></span><span id="create_a_new_product_and_folder"></span><span id="CREATE_A_NEW_PRODUCT_FOLDER"></span>Create a new product folder
 
 1.  Create a new working product folder, adding your BSP name to the end.
