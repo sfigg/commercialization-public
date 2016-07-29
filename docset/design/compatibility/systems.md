@@ -561,6 +561,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 *Hardware buttons are implemented correctly*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -570,6 +571,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -8717,77 +8719,77 @@ In addition to the above, for complete Microsoft Azure Stack solutions,
 the requirements below are applicable:
 
 <html>
-    <ol style="list-style-type: decimal">
-        <li>
-            <p><strong>Operate in Server Nano</strong></p>
-            <p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
-        </li>
+<ol style="list-style-type: decimal">
+	<li>
+		<p><strong>Operate in Server Nano</strong></p>
+		<p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
+	</li>
 
-        <li>
-            <p><strong>Diagnostics</strong></p>
-            <p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
-            <ul>
-                <li>
-                    <p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
-                </li>
-                <li>
-                    <p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
-                </li>
-            </ul>
-            <p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-            <p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
-        </li>
+	<li>
+		<p><strong>Diagnostics</strong></p>
+		<p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
+		<ul>
+			<li>
+				<p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
+			</li>
+			<li>
+				<p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
+			</li>
+		</ul>
+		<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+		<p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
+	</li>
 
-        <li>
-            <p><strong>Deployment</strong></p>
-            <p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
-            <ul>
-                <li>
-                    <p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
-                </li>
-                <li>
-                    <p>Drivers must support Device.DevFund.Server.Nano</p>
-                </li>
-                <li>
-                    <p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
-                </li>
-                <li>
-                    <p>Drivers must be installable offline using DISM.</p>
-                </li>
-            </ul>
-            <p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
-        </li>
+	<li>
+		<p><strong>Deployment</strong></p>
+		<p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
+		<ul>
+			<li>
+				<p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
+			</li>
+			<li>
+				<p>Drivers must support Device.DevFund.Server.Nano</p>
+			</li>
+			<li>
+				<p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
+			</li>
+			<li>
+				<p>Drivers must be installable offline using DISM.</p>
+			</li>
+		</ul>
+		<p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
+	</li>
 
-        <li>
-            <p><strong>Patch and update requirements</strong></p>
-            <p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
-        </li>
+	<li>
+		<p><strong>Patch and update requirements</strong></p>
+		<p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
+	</li>
 
-        <li>
-            <p><strong>Monitoring and telemetry</strong></p>
-            <p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
-            <ul>
-                <li>
-                    <p>Remote installation using Windows PowerShell or WMI</p>
-                </li>
-            </ul>
-            <p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
-        </li>
+	<li>
+		<p><strong>Monitoring and telemetry</strong></p>
+		<p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
+		<ul>
+			<li>
+				<p>Remote installation using Windows PowerShell or WMI</p>
+			</li>
+		</ul>
+		<p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
+	</li>
 
-        <li>
-            <p><strong>Firmware update</strong></p>
-            <p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
-            <ul>
-                <li>
-                    <p>Remote installation using Windows PowerShell or WMI</p>
-                </li>
-                <li>
-                    <p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
-                </li>
-            </ul>
-            <p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-        </li>
-    </ol>
+	<li>
+		<p><strong>Firmware update</strong></p>
+		<p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
+		<ul>
+			<li>
+				<p>Remote installation using Windows PowerShell or WMI</p>
+			</li>
+			<li>
+				<p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
+			</li>
+		</ul>
+		<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+	</li>
+</ol>
 </html>
 
 ### System.Solutions.AzureStack.Network
@@ -8816,7 +8818,7 @@ The feature support table is as below:
 |-----------|-----------------------------|
 | LAN Card (NIC) | Device.Network.LAN.AzureStack |
 | Switch | Device.Network.Switch.AzureStack |
-|||
+
 
 **Third party Hyper-V Switch Extensions**
 
@@ -8849,7 +8851,7 @@ The feature support table is as below:
 | Component | Azure Stack Feature Support |
 |-----------|-----------------------------|
 | Server    | System.Server.AzureStack |
-|||
+
 
 ### System.Solutions.AzureStack.Storage
 
@@ -8878,7 +8880,7 @@ The feature support table is as below:
 | Controller (HBA) | Device.Storage.Controller.AzureStack |
 | Enclosure        | Device.Storage.Enclosure.AzureStack |
 | Drive            | Device.Storage.Hd.AzureStack |
-|||
+
 
 **Storage Solutions built on ‘Storage Spaces Direct’**
 
@@ -9006,7 +9008,7 @@ below
 | Area                        | Azure Stack Requirement |
 |-----------------------------|-------------------------|
 | Windows Server Nano Support | System.Solutions.Azurestack.Nano |
-|||
+
 
 
 ### System.Solutions.StorageSpacesDirect.Network
@@ -9037,7 +9039,7 @@ The feature support table is as below:
 |----------------|-----------------------------|
 | LAN Card (NIC) | Device.Network.LAN.AzureStack |
 | Switch         | Device.Network.Switch.AzureStack |
-|||
+
 
 RDMA capable NICs are recommended for best
 performance and density. The RDMA protocol used must be one of the
@@ -9074,7 +9076,7 @@ The feature support table is as below:
 | Component | Azure Stack Feature Support |
 |-----------|-----------------------------|
 | Server    | System.Server.AzureStack |
-|||
+
 
 Server configuration should be homogenous. Windows Server 2016 supports
 a minimum of 3 and maximum of 16 servers in a single solution. Windows
@@ -9109,5 +9111,5 @@ The feature support table is as below:
 | Controller (HBA) | Device.Storage.Controller.AzureStack |
 | Enclosure        | Device.Storage.Enclosure.AzureStack |
 | Drive            | Device.Storage.Hd.AzureStack |
-|||
+
 
