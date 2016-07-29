@@ -3789,12 +3789,13 @@ Since all components in the boot path as well as many performance-critical OS su
 </tr>
 </tbody>
 </table>
-</html>
+
 
 <sup>1</sup> The Connected Standby vendor shall supply documentation indicating, and allowing Microsoft to estimate, the quality of the entropy source. The entropy shall be assessed using the min-entropy method of Appendix C of National Institute for Standards and Technology, "Recommendation for Random Number Generation using Deterministic Random Bit Generators," [FIPS 800-90](http://www.nist.gov/customcf/get_pdf.cfm?pub_id=50814), March 2007 and must surpass or be equal to 256 bits before the runtime OS starts.
 
-<sup>2</sup> This specification must be requested explicitly from Microsoft. To request the current version, please contact <http://go.microsoft.com/fwlink/?LinkId=237130>.
-
+<sup>2</sup> This specification must be requested explicitly from Microsoft. To request the current version, please contact [http://go.microsoft.com/fwlink/?LinkId=237130](http://go.microsoft.com/fwlink/?LinkId=237130 "http://go.microsoft.com/fwlink/?LinkId=237130").
+<p></p>
+</html>
 
 ### System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby
 
@@ -4040,6 +4041,7 @@ This is the list of applications maintained by the dGPU IHV for choosing a GPU f
 
 Following are the power management requirements for the discrete GPU participating in a hybrid configuration:
 
+<html>
 <ul>
 <li>
 <p>The driver is required to register for runtime power management.</p>
@@ -4080,15 +4082,6 @@ Following are the power management requirements for the discrete GPU participati
 Latency tolerance for that component is specified in the table below.</p>
 </li>
 </ul>
-
-
-
-
-
-
-
-
-
 <table border="2">
   <tr>
 	  <th colspan="2"> </th>
@@ -4161,7 +4154,7 @@ Latency tolerance for that component is specified in the table below.</p>
   </tr>
 </table>
 </html>
-
+<br/>
 
 
 ## <a href="" id="system.fundamentals.graphics.internaldisplay"></a>System.Fundamentals.Graphics.InternalDisplay
@@ -4878,6 +4871,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 
  - MUST meet the additional requirements as described in the table below:
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -4957,8 +4951,8 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </tr>
 </tbody>
 </table>
-</html>                                                                               
-
+</html>
+<br/>
 
 
 ### System.Fundamentals.Security.NoTDIFilterAndLSP
@@ -5335,6 +5329,7 @@ The CPU Vendor and/or Firmware Provider must furnish the software tools needed t
 
 The following requirements are applicable to boot storage media and are tested with the smaller of 2% or 1GB free space.
 
+<html>
 <table>
 <thead>
 <tr class="header">
