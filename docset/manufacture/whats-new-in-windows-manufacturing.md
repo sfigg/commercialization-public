@@ -7,14 +7,14 @@ title: What's new in IoT Core manufacturing
 
 # What's new in Windows manufacturing
 
-This topic covers new improvements for manufacturing. 
+This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
 ## What's new in desktop manufacturing 
 
 **July 26, 2016**
 
--  Desktop: New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
--  IoT: Added details on signing retail images: [Build a retail image](build-retail-image.md)
+-  New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
+
 
 **July 21, 2016**
 
@@ -31,6 +31,10 @@ The following changes are new for Windows 10, version 1607:
 ## What's new in IoT Core manufacturing
 
 ## <span id="IoT_Core_AddOns"></span>IoT Core Add-Ons
+
+**June 28, 2016**
+-  IoT: Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
+-  IoT: Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
 
 **June 20, 2016**
 *  New BSP tools added:

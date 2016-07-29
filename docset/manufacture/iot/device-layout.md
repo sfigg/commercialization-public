@@ -22,24 +22,24 @@ Note, many boards use GPT, though the Raspberry Pi 2 uses MBR. To learn more, se
 
 The following fields are the constants to be specified for IoTCore. 
 
-| Tag                           | Value    |
-|-------------------------------|----------|
-| Version                       | IoTUAP   |
-| SectorSize                    | 512      |
-| ChunkSize                     | 128      |
-| DefaultPartitionByteAlignment | 0x200000 |
+|Tag                           |Value    |
+|------------------------------|---------|
+|Version                       |IoTUAP   |
+|SectorSize                    |512      |
+|ChunkSize                     |128      |
+|DefaultPartitionByteAlignment |0x200000 |
 
 ### Partitions 
 
 IoTCore requires 3 mandatory partitions (EFIESP,MainOS and Data). Additional partitions can be added as per requirements (for example, CrashDump). The supported properties of these partitions are listed below 
 
-| Properties      | EFIESP                                 | MainOS                                 | Data                                   | CrashDump                              |
-|-----------------|----------------------------------------|----------------------------------------|----------------------------------------|------------------------------------------|
-| FileSystem      | FAT                                    | NTFS                                   | NTFS                                   | FAT32                                  |
-| Type (for MBR)  | 0x0C                                   | 0x07                                   | 0x07                                   | 0x0C                                   |
-| Type (for GPT)  | {c12a7328-f81f-11d2-ba4b-00a0c93ec93b} | {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} | {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} | {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} |
-| Bootable        | TRUE                                   | -                                      | -                                      | -                                      |
-| RequiredToFlash | TRUE                                   | -                                      | -                                      | -                                      |
+|Properties      |EFIESP                                 |MainOS                                 |Data                                   |CrashDump                              |
+|----------------|---------------------------------------|---------------------------------------|---------------------------------------|-----------------------------------------|
+|FileSystem      |FAT                                    |NTFS                                   |NTFS                                   |FAT32                                  |
+|Type (for MBR)  |0x0C                                   |0x07                                   |0x07                                   |0x0C                                   |
+|Type (for GPT)  |{c12a7328-f81f-11d2-ba4b-00a0c93ec93b} |{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} | {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} |{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} |
+|Bootable        |TRUE                                   |-                                      |-                                      |-                                      |
+|RequiredToFlash |TRUE                                   |-                                      |-                                      |-                                      |
 
  
 
