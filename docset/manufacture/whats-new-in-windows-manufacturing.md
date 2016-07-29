@@ -7,13 +7,14 @@ title: What's new in IoT Core manufacturing
 
 # What's new in Windows manufacturing
 
-This topic covers new improvements for manufacturing. 
+This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
 ## What's new in desktop manufacturing 
 
 **July 26, 2016**
 
-- New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
+-  New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
+
 
 **July 21, 2016**
 
@@ -31,11 +32,15 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="IoT_Core_AddOns"></span>IoT Core Add-Ons
 
+**June 28, 2016**
+-  IoT: Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
+-  IoT: Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
+
 **June 20, 2016**
 *  New BSP tools added:
    -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-&lt;arch&gt;\BSP. Multiple projects can now more easily share the same BSP folder.
    -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
-   -  Updated lab: [Lab 2a: Replace a driver in an existing board support package](iot\replace-a-driver-in-an-existing-bsp.md).
+   -  Updated lab: [Lab 2: Creating your own board support package](create-a-new-bsp.md).
 
 **June 9, 2016:** 
 Several updates of [command-line tools](iot\iot-core-adk-addons-command-line-options.md):

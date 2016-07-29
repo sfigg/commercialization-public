@@ -8,6 +8,8 @@ author: beneluxboy
 
 # Device.Network.LAN
 
+ - [Device.Network.LAN.10GbOrGreater](#device.network.lan.10gborgreater)
+ - [Device.Network.LAN.AzureStack](#device.network.lan.azurestack)
  - [Device.Network.LAN.Base](#device.network.lan.base)
  - [Device.Network.LAN.ChecksumOffload](#device.network.lan.checksumoffload)
  - [Device.Network.LAN.CS](#device.network.lan.cs)
@@ -22,14 +24,116 @@ author: beneluxboy
  - [Device.Network.LAN.SRIOV](#device.network.lan.sriov)
  - [Device.Network.LAN.SRIOV.VF](#device.network.lan.sriov.vf)
  - [Device.Network.LAN.TCPChimney](#device.network.lan.tcpchimney)
+ - [Device.Network.LAN.VMMQ](#device.network.lan.vmmq)
  - [Device.Network.LAN.VMQ](#device.network.lan.vmq)
  - [Device.Network.LAN.VXLAN](#device.network.lan.vxlan)
  - [Device.Network.LAN](#device.network.lan)
 
+<a name="device.network.lan.10gborgreater"></a>
+## Device.Network.LAN.10GbOrGreater
+
+10GB or Greater LAN requirements 
+
+### Device.Network.LAN.10GbOrGreater.CloudStress
+Ethernet Devices that implement GRE Encapsulated Packet Task Offloads must comply with the specification
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+This requirement applies to all Ethernet devices that are Certified for Server.  This test validates that an Ethernet device can meet the stress requirements of a datacenter cloud. Ethernet devices that meet this requirement must also comply with the specification and support the following features:
+
+All Network Adapters must support the following Device.Network.LAN features.  
+
+- Base (requirements 100MbOrGreater through SupportIEEE8023)
+- ChecksumOffload
+- LargeSendOffload
+- RSS
+
+All drivers for NICs operating at 10Gb or higher that implement any of the new features of WS2016 (i.e., NDKPI 2.0, VMMQ, VxLAN Task Offload, NVGREv2 Task Offload, MTU for HNV, PacketDirect) must also pass the PCS (Private Cloud Simulator) test with the ’Basic 10 GigE NIC’ profile on a 4-node clustered configuration.
+
+
+<a name="device.network.lan.azurestack"></a>
+## Device.Network.LAN.AzureStack
+
+_Defines requirements that must be met if the LAN card (NIC) is supported in a Microsoft Azure Stack based private cloud solution_
+
+### Device.Network.LAN.AzureStack.BasicFunction
+
+_Basic requirements for LAN cards used in Microsoft Azure Stack solutions_ 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Microsoft Azure Stack requirements for LAN cards (NICs) are captured by the following table.
+
+<table>
+    <tr><th>Feature</th><th>Requirement></th></tr>
+    <tr><td>Device.Network.LAN.10GbOrGreater</td><td>Device.Network.LAN.10GbOrGreater.CloudStress</td></tr>
+    <tr><td>Device.Network.LAN.VXLAN</td><td>Device.Network.LAN.VXLAN.VXLANPacketTaskOffloads</td></tr>
+    <tr><td>Device.Network.LAN.VMQ</td><td>Device.Network.LAN.VMQ.VirtualMachineQueues</td></tr>
+    <tr><td>Device.Network.LAN.VMMQ</td><td>Device.Network.LAN.VMMQ.VirtualMachineMultipleQueues</td></tr>
+    <tr><td rowspan="5">Device.Network.LAN.RSS</td><td>Device.Network.LAN.RSS.RSS</td></tr>
+   	<tr><td>Device.Network.LAN.RSS.SetHashFunctionTypeAndValue</td></tr>
+	<tr><td>Device.Network.LAN.RSS.SupportIndirectionTablesSizes</td></tr>
+	<tr><td>Device.Network.LAN.RSS.SupportToeplitzHashFunction</td></tr>
+	<tr><td>Device.Network.LAN.RSS.SupportUpdatesToRSSInfo</td></tr>
+    <tr><td>Device.Network.LAN.MTUSize</td><td>Device.Network.LAN.MTUSize</td></tr>
+    <tr><td>Device.Network.LAN.LargeSendOffload</td><td>Device.Network.LAN.LargeSendOffload.LargeSendOffload</td></tr>
+    <tr><td>Device.Network.LAN.KRDMA</td><td>Device.Network.LAN.KRDMA.KRDMA</td></tr>
+    <tr><td>Device.Network.LAN.GRE</td><td>Device.Network.LAN.GRE.GREPacketTaskOffloads</td></tr>
+    <tr><td>Device.Network.LAN.DCB</td><td>Device.Network.LAN.DCB.DCB</td></tr>
+    <tr><td>Device.Network.LAN.ChecksumOffload</td><td>Device.Network.LAN.ChecksumOffload.ChecksumOffload</td></tr>
+    <tr><td rowspan="12">Device.Network.LAN.Base</td><td>Device.Network.LAN.Base.100MbOrGreater</td></tr>
+    <tr><td>Device.Network.LAN.Base.32MulticastAddresses</td></tr>
+	<tr><td>Device.Network.LAN.Base.AdvProperties</td></tr>
+	<tr><td>Device.Network.LAN.Base.AnyBoundary</td></tr>
+	<tr><td>Device.Network.LAN.Base.IPv4AndIPv6OffloadParity</td></tr>
+	<tr><td>Device.Network.LAN.Base.NDISCalls</td></tr>
+	<tr><td>Device.Network.LAN.Base.NDISRequirements</td></tr>
+	<tr><td>Device.Network.LAN.Base.PacketFiltering</td></tr>
+	<tr><td>Device.Network.LAN.Base.PreserveOSServices</td></tr>
+	<tr><td>Device.Network.LAN.Base.PriorityVLAN</td></tr>
+	<tr><td>Device.Network.LAN.Base.ShortPacketPadding</td></tr>
+	<tr><td>Device.Network.LAN.Base.SupportIEEEE8023</td></tr>
+    <tr><td rowspan="6">Device.DevFund.Server.Nano</td><td>Device.DevFund.Server.OperateInServerNano</td></tr>
+    <tr><td>Device.DevFund.Server.Nano.Deployment</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.Diagnostics</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.PatchAndUpdate</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.MonitoringAndTelemetry</td></tr>
+	<tr><td>Device.DevFund.Server.Nano.FirmwareUpdate</td></tr>
+</table>
+
+### Device.Network.LAN.AzureStack.CloudStress
+
+_Network controllers that are used for Microsoft Azure Stack solutions must comply with this specification_ 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and hardware components to deliver resiliency with high performance. Issues in any of the components (software, hardware, drivers, firmware, and so forth) can compromise the solution and undermine any promises made regarding the Service Level Agreement (SLA) for the private cloud. 
+
+Many of these issues are surfaced only under a high-stress, private cloud simulation. The Private Cloud Simulator (PCS) enables you to validate your component in a cloud scenario and identify such issues. It simulates a live datacenter/private cloud by creating VM workloads, scheduling administrative operations (load balancing, software/hardware maintenance), and injecting faults (unplanned hardware/software failures) on the private cloud. 
+
+To comply with this specification, the controller must pass the PCS test run with the ‘Network Controller – AzureStack’ profile on a 4-node clustered configuration.
+
+### Device.Network.LAN.AzureStack.FirmwareUpdate
+
+_Network controllers that are used for Microsoft Azure Stack solutions must comply with this specification_ 
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+Device driver & firmware update tools must meet Nano Server compatibility requirements as detailed in Device.DevFund.Server.Nano
+
+
 <a name="device.network.lan.base"></a>
 ## Device.Network.LAN.Base
 
-*LAN requirements *
+*LAN requirements*
 
 ### Device.Network.LAN.Base.100MbOrGreater
 
@@ -567,11 +671,21 @@ Ethernet devices that support IPsec task offload for Windows 8 must use NDIS 6.3
 
 **Description**
 
-This requirement only applies to Ethernet devices that implement the Network Direct Kernel Mode Interface (NDKPI) Specification. Devices that implement Network Direct Kernel Mode Interface (NDKPI) (a.k.a., Kernel-mode RDMA) must comply with the Network Direct Kernel Mode Interface (NDKPI) Specification, version 1.2.
+This requirement only applies to Ethernet devices that implement the Network Direct Kernel Mode Interface (NDKPI) Specification. Devices that implement Network Direct Kernel Mode Interface (NDKPI) (a.k.a., Kernel-mode RDMA) must comply with the Network Direct Kernel Mode Interface (NDKPI) Specification. Version 2.0 has been the current specification since July 2014.  Submissions complying with Version 1.2 of the NDKPI Specification will be accepted until December 31, 2016, but will be unable to work with the hyper-converged scenarios in Windows Server 2016.  Effective January 1, 2017, only NDKPI version 2.0 compliant devices will be accepted.  Submissions for the Microsoft Azure Stack (MAS) AQ LOGO not AQ must support NDKPI Version 2.0.
+
+NDKPI version 2.0 describes three modes of operation:
+
+- Mode 1, a mode that supports native mode operation
+- Mode 2, a mode that supports NDKPI on NIC_Switch vPorts 
+- Mode 3, a mode that supports NDKPI exposed on a VF driver
+
+Windows 10 Client drivers are only required to support Mode 1.
+
+Windows Server 2016 and MAS drivers must support Modes 1 and 2.
 
 *Design Notes*
 
-See the Network Direct Kernel Mode Interface (NDKPI) Specification.
+See the Network Direct Kernel Mode Interface (NDKPI) Specification (version 2.0).
 
 <a name="device.network.lan.largesendoffload"></a>
 ## Device.Network.LAN.LargeSendOffload
@@ -605,20 +719,21 @@ See the Windows Driver Kit, "NDIS."
 
 ### Device.Network.LAN.MTUSize
 
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
-Ethernet devices must support Jumbo Frames. MTU values in the User Interface must include the Ethernet header size of 14 Bytes. The “\*JumboPacket” standardized keyword in the Windows Registry is currently used for setting the MTU size and should remain as either an integer or an enumerable value with supported values being 1514, 4088, and 9014. A new keyword will be added called “\*EncapOverhead” with type being numeric, default value of 0, max value of 256, and step increments of size 32. This value will account for overhead in Ethernet frames due to virtual network overlay encapsulation such as VXLAN and NVGRE. MTU size will therefore be determined by the summation of these two keyword values except perhaps in the case where \*JumboPacket + \*EncapOverhead would exceed some hardware upper bound of the NIC.
+Ethernet devices must support Jumbo Frames. MTU values in the User Interface must include the Ethernet header size of 14 Bytes. The “*JumboPacket” standardized keyword in the Windows Registry is currently used for setting the MTU size and should remain as an enumerable value with supported values being 1514, 4088, and 9014.
 
-| SubkeyName      | ParamDesc              | Type | Default Value | Min, Max, Step |
-|-----------------|------------------------|------|---------------|----------------|
-| \*EncapOverhead | Encapsulation Overhead | int  | 0             | 0, 256, 32     |
+### Device.Network.LAN.MTUSize.EncapOverhead
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+A new keyword will be added called “*EncapOverhead” with type being numeric, default value of 0, max value of 480, and step increments of size 32. This value will account for overhead in Ethernet frames due to virtual network overlay encapsulation such as VXLAN and NVGRE. MTU size will therefore be determined by the summation of these two keyword values except perhaps in the case where *JumboPacket + *EncapOverhead would exceed some hardware upper bound of the NIC.
+
+Devices implementing GRE or VxLAN offloads must also incorporate this requirement.
 
 <a name="device.network.lan.pm"></a>
 ## Device.Network.LAN.PM
@@ -1230,6 +1345,23 @@ This requirement only applies to Ethernet devices that implement TCP Chimney. If
 **Description**
 
 This requirement only applies to Ethernet devices that implement TCP Chimney. If the Ethernet device does not implement TCP Chimney, then this requirement does not apply. If the device uses PCI, it must support 64-bit addresses; 64-bit data support is not required.
+
+
+<a name="device.network.lan.vmmq"></a>
+## Device.Network.LAN.VMMQ
+
+*Defines requirements for Ethernet devices that implement Virtual Machine Multiple Queues.*
+
+### Device.Network.LAN.VMMQ.VirtualMachineMultipleQueues
+
+*Requirements for Ethernet devices that implement Virtual Machine Multiple Queues*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+The implementation must comply with the Virtual Machine Multiple Queues Reference Specification.
+
 
 <a name="device.network.lan.vmq"></a>
 ## Device.Network.LAN.VMQ

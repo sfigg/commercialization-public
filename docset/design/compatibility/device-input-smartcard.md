@@ -109,7 +109,7 @@ The following table describes the minimum and maximum specification version that
 | Windows 7 client        | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only etc.) |
 | Windows Server 2008     | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only etc.) |
 | Windows 8 client        | 6,7,8 (any combination allowed such as 6 and 8 only, 6 only, 7 only, 6 and 6 only, 7 and 8 only etc.) |
-| Windows Server v.Next   | 6,7,8 (any combination allowed such as 6 and 8 only, 6 only, 7 only, 6 and 6 only, 7 and 8 only etc.) |
+| Windows Server 2016     | 6,7,8 (any combination allowed such as 6 and 8 only, 6 only, 7 only, 6 and 6 only, 7 and 8 only etc.) |
 
  
 

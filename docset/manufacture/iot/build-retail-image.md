@@ -8,8 +8,6 @@ title: 'Lab 1f: Build a retail image'
 
 # Lab 1f: Build a retail image
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
 We''ll take our test image and convert it to a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
@@ -37,13 +35,13 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
     ``` syntax
     <OEM> 
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_ProvAuto</Feature>
-	<Feature>OEM_DriverHelloBlinky</Feature> 
+       <Feature>RPI2_DRIVERS</Feature> 
+       <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
+       <Feature>OEM_AppxHelloWorld</Feature> 
+       <Feature>OEM_FileAndRegKey</Feature> 
+       <Feature>OEM_CustomCmd</Feature> 
+       <Feature>OEM_ProvAuto</Feature>
+	   <Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
     ```
     
@@ -70,16 +68,44 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 **Build the image**
 
-1.  From the IoT Core Shell, create the image:
+1.  [Get a code-signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887(v=vs.85).aspx).
+
+2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 
     ``` syntax
-    createimage ProductA Retail
+	set SIGNTOOL_OEM_SIGN=/s my /i "Issuer" /n "Subject" /ac "CrossCertRoot" /fd SHA256
+	```
+	
+	-  Issuer        : Issuer of the Certificate ( see Certificate -> Details -> Issuer )
+	
+	-  Subject       : Subject in the certificate ( see Certificate -> Details -> Subject)
+	
+	-  CrossCertRoot : Microsoft-supplied Cross Certificate Root. See Cross-Certificate List in [Cross-Certificates for Kernel Mode Code Signing](https://msdn.microsoft.com/windows/hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing#cross-certificate-list).
+	
+	
+2.	From the IoT Core Shell, enable retail signing.
+
+    ``` syntax
+	retailsign On
+	```
+	
+3.	Rebuild all the packages so that they are retail signed.
+
+    ``` syntax
+	buildpkg all
+	```
+
+4.  From the IoT Core Shell, create the image:
+
+    ``` syntax
+    buildimage ProductA Retail
     ```
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Retail\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
-3.  Put the card into the IoT device and start it up.
+5.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
+6.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
 
@@ -88,14 +114,12 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 With retail builds, you won't be able to log into the device using the SSH clients or by using the web interface. However, any files and reg keys that your app relies on should still work.
 
 
-
-
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 **Congratulations!**
 That's it for the first lab. 
 
 From here, you can continue on to:
--  [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+-  [Lab 2: Creating your own board support package](create-a-new-bsp.md)
 
 
 

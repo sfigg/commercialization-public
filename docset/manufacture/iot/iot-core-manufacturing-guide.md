@@ -20,7 +20,6 @@ You can add customizations, including apps, settings, hardware configurations, a
 
 For OEM-style images, you’ll wrap your customizations into package (.cab) files. Packages let OEMs, ODMs, developers, and Microsoft work together to help deliver security and feature updates to your devices without stomping on each other's work.
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
 
 ## <span id="Scenarios"></span><span id="scenarios"></span><span id="SCENARIOS"></span>Scenarios
 -   [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md)
@@ -30,7 +29,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
--   [Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+-   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
 
 [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
