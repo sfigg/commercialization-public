@@ -587,11 +587,13 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <td>Max brightness supported by panel</td>
 </tr>
 </tbody>
-<table>
-<html>
+</table>
+</html>
 
 <a name="system.client.buttons"></a>
 ## System.Client.Buttons
+
+<!--There is no content provided here in the original Word file.-->
 
 ### System.Client.Buttons.HardwareButtons
 
@@ -607,7 +609,6 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
-</html>
 </html>
 
 **Description:**
@@ -1880,8 +1881,8 @@ Table below explains the scenario usage for the Graphic driver types:
 <td>N/A</td>
 </tr>
 </tbody>
-<table>
-<html>
+</table>
+</html>
 
 ### System.Client.Graphics.WDDMSupportRotatedModes
 
@@ -2086,26 +2087,29 @@ interfaces. The following table summarizes the required mobile broadband feature
 </tr>
 </tbody>
 <table>
-<html>
 
+<ul>
+<li><p>Devices MUST support 16 bitmap wake patterns of 128 bytes each.</p></li>
+<li><p>Devices MUST wake the system on register state change.</p></li>
+<li><p>Devices MUST wake the system on media connect.</p></li>
+<li><p>Devices MUST wake the system on media disconnect.</p></li>
+<li><p>GSM and CDMA class of Devices MUST wake the system on receiving an incoming SMS message.</p></li>
+<li><p>Devices that support USSD MUST wake the system on receiving USSD message.</p></li>
+<li><p>Devices MUST support wake packet indication. NIC should cache the packet causing the wake on hardware and pass it up when the OS is ready for receives.</p></li>
+<li><p>Mobile Broadband class of devices must support Wake on Mobile Broadband. It should wake the system on above mentioned events. Note that wake on USSD is mandatory only if the device reports that it supports USSD. Else it is optional. See the following MSDN documentation for more information on the SMS and register state wake events.</p>
+<ul>
+<li><p>NDIS_STATUS_WWAN_REGISTER_STATE</p></li>
+<li><p>NDIS_STATUS_WWAN_SMS_RECEIVE</p></li>
+</ul>
+</li>
+</ul>
+</html>
 
-Systems must also comply with Mobile Broadband requirements:
-
- - Devices MUST support 16 bitmap wake patterns of 128 bytes each.
- - Devices MUST wake the system on register state change.
- - Devices MUST wake the system on media connect.
- - Devices MUST wake the system on media disconnect.
- - GSM and CDMA class of Devices MUST wake the system on receiving an incoming SMS message.
- - Devices that support USSD MUST wake the system on receiving USSD message.
- - Devices MUST support wake packet indication. NIC should cache the packet causing the wake on hardware and pass it up when the OS is ready for receives.
- - Mobile Broadband class of devices must support Wake on Mobile Broadband. It should wake the system on above mentioned events. Note that wake on USSD is mandatory only if the device reports that it supports USSD. Else it is optional. See the following MSDN documentation for more information on the SMS and register state wake events.
-	 - NDIS\_STATUS\_WWAN\_REGISTER\_STATE
-	 - NDIS\_STATUS\_WWAN\_SMS\_RECEIVE
 
 <a name="system.client.pccontainer"></a>
 ## System.Client.PCContainer
 
-*Windows is moving towards a device centric presentation of computers and devices.  Elements of the Windows user interface (UI), such as the Devices and Printers folder, will show the computer and all devices that are connected to the computer.  The requirements in this section detail what is required to have the PC appear as a single object in the Windows UI.  *
+*Windows is moving towards a device centric presentation of computers and devices.  Elements of the Windows user interface (UI), such as the Devices and Printers folder, will show the computer and all devices that are connected to the computer.  The requirements in this section detail what is required to have the PC appear as a single object in the Windows UI.*
 
 ### System.Client.PCContainer.PCAppearsAsSingleObject
 
@@ -2664,8 +2668,8 @@ For all other Windows 10 systems, the table below lists the minimum required com
 <td>Minimum of Direct3D 10 Feature Level 9_3 and see System.Fundamentals.Graphics.WDDM</td>
 </tr>
 </tbody>
-<table>
-<html>
+</table>
+</html>
 
 <a name="system.client.systemimage"></a>
 ## System.Client.SystemImage
@@ -3222,7 +3226,7 @@ The system firmware must support booting the system DVD if the system includes a
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
-</tr></td></table>
+</td></tr></table>
 </html>
 
 **Description**
@@ -3478,6 +3482,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 Note: These requirements are "If Implemented" for Server systems and apply only if a Server system supports UEFI Secure Boot.
 
+<html>
 <ol style="list-style-type: decimal">
 <li><p>Secure Boot must ship enabled with minimum of UEFI 2.3.1 Errata C.</p></li>
 <li><p>For the purposes of UEFI Secure Boot, the platform shall expose an interface to Secure Boot, whereby the system firmware is compliant with the following sections and sub-sections of UEFI version 2.3.1 Errata C:</p>
@@ -3487,9 +3492,11 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>7.2.1</p></li>
 <li><p>27.2</p></li>
 <li><p>27.5 - 27.8 (as further profiled below).</p></li>
-</ol></li>
+</ol>
+</li>
 
 <li><p>UEFI Version 2.3.1 Errata C variables must be set to SecureBoot=1 and SetupMode=0 with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and include a PK that is set and a valid KEK database. The system uses this database to verify that only trusted code (for example: trusted signed boot loader) is initialized, and that any unsigned image or an image that is signed by an unauthorized publisher does not execute. The contents of the signature database are determined by the OEM, based on the required native and third- party UEFI drivers, respective recovery needs, and the OS Boot Loader installed on the machine. The following Microsoft-provided EFI_CERT_X509 signature shall be included in the signature database: &quot;CN=Microsoft Windows Production PCA 2011&quot; and &quot;Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d&quot; which shall use the following SignatureOwner GUID: {77fa9abd-0359-4d32- bd60-28f4e78f784b}, must also be included in the form of either an EFI_CERT_X509_GUID or EFI_CERT_RSA2048_GUID type:</p>
+
 
 <ol style="list-style-type: lower-alpha">
 <li><p>Note: Must NOT contain the following certificate: &quot;CN=Microsoft Windows PCA 2010&quot; and &quot;Cert Hash(sha1): c0 13 86 a9 07 49 64 04 f2 76 c3 c1 85 3a bf 4a 52 74 af 88&quot;</p></li>
@@ -3558,6 +3565,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Platform Recovery (Revision 1227, Section 23.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
 <li><p>[If Implemented] If platform ships with UEFI 2.5 the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document (this document is available on CONNECT).</p></li>
 </ol>
+</html>
 
 ### System.Fundamentals.Firmware.UEFITimingClass
 
@@ -3803,8 +3811,8 @@ Since all components in the boot path as well as many performance-critical OS su
 <td>Security strength must be at least 256 bits<sup>1</sup>. Note that exposing this functionality through the UEFI Entropy-Gathering Protocol is required (see Req 3) and exposing it as an OS entropy source is recommended (see Req 7).</td>
 </tr>
 </tbody>
-<table>
-<html>
+</table>
+</html>
 
 <sup>1</sup> The Connected Standby vendor shall supply documentation indicating, and allowing Microsoft to estimate, the quality of the entropy source. The entropy shall be assessed using the min-entropy method of Appendix C of National Institute for Standards and Technology, "Recommendation for Random Number Generation using Deterministic Random Bit Generators," [FIPS 800-90](http://www.nist.gov/customcf/get_pdf.cfm?pub_id=50814), March 2007 and must surpass or be equal to 256 bits before the runtime OS starts.
 
@@ -4135,8 +4143,8 @@ Following are the power management requirements for the discrete GPU participati
     <td>Monitor off and (no active context or all engines idle for 60 s)</td>
     <td align="right">250 ms</td>
   </tr>
-<table>
-<html>
+</table>
+</html>
 
 
 
@@ -4937,8 +4945,8 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </ol></td>
 </tr>
 </tbody>
-<table>
-<html>                                                                               
+</table>
+</html>                                                                               
 
 ### System.Fundamentals.Security.NoTDIFilterAndLSP
 
@@ -6556,10 +6564,9 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 **Mandatory:** Systems with TPM 2.0 must comply with the following requirements:
 
+<html>
 <ol>
 <li><p>The platform shall implement all "Required" features in the table below.</p>
-
-<html>
 <table>
 <thead>
 <tr class="header">
@@ -6855,6 +6862,8 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 <li><p>The Platform must comply with “TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9”.</p></li>
 </ol>
+</html>
+
 
 <a name="system.fundamentals.trustedplatformmodule"></a>
 ## System.Fundamentals.TrustedPlatformModule
@@ -7929,6 +7938,7 @@ Server systems must include the following devices or functionality.
 </tr>
 </tbody>
 </table>
+</html>
 
 The following devices or functionality are not required for Server Systems:
 
