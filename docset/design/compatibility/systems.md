@@ -156,7 +156,8 @@ These specifications are divided into the following categories and topics:
 
 **Description**
 
-The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low Energy (LE) Combined Core Configuration Controller Parts and Host/Controller Interface (HCI) Core Configuration requirements outlined in the Compliance Bluetooth Version 4.0 specifications. 
+The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low Energy (LE) Combined Core Configuration Controller Parts and Host/Controller Interface (HCI) Core Configuration requirements outlined in the Compliance Bluetooth Version 4.0 specifications.
+
 
 ### System.Client.BluetoothController.Base.CS
 
@@ -486,7 +487,8 @@ Support for the \_BQC method is highly recommended but not required. Systems mus
 
  - ACPI\_NOTIFY\_ZERO\_BRIGHTNESS\_HOTKEY 0x88
 
-*Design Notes: *
+ 
+*Design Notes:*
 
 The \_BCL and \_BCM methods in the firmware enable the operating system to query the brightness range and values and to set new values. Refer to the ACPI 3.0 specification for more details.
 
@@ -646,7 +648,7 @@ All other fields in the \_PLD are optional.
 
 **Description**
 
-*System Memory: *
+*System Memory:*
 
 System Memory must be supported.
 
@@ -654,7 +656,7 @@ System Memory must be supported.
 
 All integrated Cameras must support independent streaming between different pins and different filters (cameras) according to the capabilities listed in the Profiles advertised by the device. If the camera does not support Profiles, then concurrent streaming for *all* system cameras is optional.
 
-*Mirroring: *
+*Mirroring:*
 
 The default state for mirroring must be "not mirrored."
 
@@ -2100,7 +2102,7 @@ However, based on the text in the first columns, they aren't ready to simply hav
 the same table. Creating a table that accommodates the differences is beyond the scope of this conversion to Markdown.-->
 
 **Table 1. Button without LED (stateless button) – For laptops, tablets and convertibles**
-
+<html>
 <table border="2">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2151,9 +2153,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-
+</html>
 
 **Table 2. Button with LED – For laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2224,9 +2227,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-                                     
+</html>                                   
 
 **Table 3. Slider Switch (without LED) - For laptops, tablets and convertibles**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2276,10 +2280,11 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>END\_COLLECTION</td>
 		<td>C0,</td>
 	</tr>
-</table>
-                                       
- 
+</table>                                      
+</html> 
+
 **Table 4. Slider Switch with LED- Laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2350,10 +2355,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-                                                         
-                                        
- 
+</html>                                                       
+
 **Table 5. LED Only (No button or slider) - Laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2403,7 +2408,9 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>END\_COLLECTION</td>
 		<td>C0</td>
 	</tr>
-</table>                                       
+</table> 
+</html>
+
  
 Wireless radio LED must have a HID-compliant driver to reflect the state of the airplane mode switch located in the user interface.  Wireless radio LED only uses HID for output (no input since there is no button). 
 
@@ -6246,7 +6253,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </table>
 </li>
 
-<li><p>The TPM **Must** have support for the following:</p>
+<li><p>The TPM <strong>Must</strong> have support for the following:</p>
 
 <table>
 <thead>
@@ -6301,11 +6308,11 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </table>
 </li>
 
-<li><p>**Mandatory:** The TPM shall Comply with the following performance requirements. These requirements apply to the time the command is issued to the TPM from the OS or UEFI until the result is returned. Times specified as a mean refer to the mean of 100 or more operations completed in direct succession. For operations on keys other than import, the operations may be assumed to be being completed on imported (internal) keys.</p>
+<li><p><strong>Mandatory</strong>: The TPM shall Comply with the following performance requirements. These requirements apply to the time the command is issued to the TPM from the OS or UEFI until the result is returned. Times specified as a mean refer to the mean of 100 or more operations completed in direct succession. For operations on keys other than import, the operations may be assumed to be being completed on imported (internal) keys.</p>
 <ol style="list-style-type: lower-alpha">
-    <li><p>**Caching:** For TPM\_Create operations, if a TPM is capable of creating 10 of the specified key type within 1s each, in direct succession, starting 5s after first boot by the end user, they may otherwise generate keys within 3x the allotted time below.</p></li>
+<li><p><strong>Caching</strong>: For TPM\_Create operations, if a TPM is capable of creating 10 of the specified key type within 1s each, in direct succession, starting 5s after first boot by the end user, they may otherwise generate keys within 3x the allotted time below.</p></li>
 
-    <li><p>**Protected Import**: Protected Import is defined as an import operation on a key where “encryptedDuplication” was set in the duplicated object.</p></li>
+<li><p><strong>Protected Import</strong>: Protected Import is defined as an import operation on a key where “encryptedDuplication” was set in the duplicated object.</p></li>
 </ol>
 <table>
 <thead>
@@ -6483,7 +6490,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <a name="system.fundamentals.trustedplatformmodule"></a>
 ## System.Fundamentals.TrustedPlatformModule
 
-*A Trusted Platform Module (TPM) is a microchip designed to provide basic security related functions.  Requirements in this area reflect the required TPM version and compatibility with Windows Bitlocker.  *
+*A Trusted Platform Module (TPM) is a microchip designed to provide basic security related functions.  Requirements in this area reflect the required TPM version and compatibility with Windows Bitlocker.*
 
 ### System.Fundamentals.TrustedPlatformModule.TPMComplieswithTCGTPMMainSpecification
 
@@ -8720,75 +8727,75 @@ the requirements below are applicable:
 
 <html>
 <ol style="list-style-type: decimal">
-	<li>
-		<p><strong>Operate in Server Nano</strong></p>
-		<p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
-	</li>
+<li>
+<p><strong>Operate in Server Nano</strong></p>
+<p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
+</li>
 
-	<li>
-		<p><strong>Diagnostics</strong></p>
-		<p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
-		<ul>
-			<li>
-				<p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
-			</li>
-			<li>
-				<p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
-			</li>
-		</ul>
-		<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-		<p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
-	</li>
+<li>
+<p><strong>Diagnostics</strong></p>
+<p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
+<ul>
+<li>
+<p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
+</li>
+<li>
+<p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
+</li>
+</ul>
+<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+<p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
+</li>
 
-	<li>
-		<p><strong>Deployment</strong></p>
-		<p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
-		<ul>
-			<li>
-				<p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
-			</li>
-			<li>
-				<p>Drivers must support Device.DevFund.Server.Nano</p>
-			</li>
-			<li>
-				<p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
-			</li>
-			<li>
-				<p>Drivers must be installable offline using DISM.</p>
-			</li>
-		</ul>
-		<p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
-	</li>
+<li>
+<p><strong>Deployment</strong></p>
+<p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
+<ul>
+<li>
+<p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
+</li>
+<li>
+<p>Drivers must support Device.DevFund.Server.Nano</p>
+</li>
+<li>
+<p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
+</li>
+<li>
+<p>Drivers must be installable offline using DISM.</p>
+</li>
+</ul>
+<p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
+</li>
 
-	<li>
-		<p><strong>Patch and update requirements</strong></p>
-		<p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
-	</li>
+<li>
+<p><strong>Patch and update requirements</strong></p>
+<p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
+</li>
 
-	<li>
-		<p><strong>Monitoring and telemetry</strong></p>
-		<p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
-		<ul>
-			<li>
-				<p>Remote installation using Windows PowerShell or WMI</p>
-			</li>
-		</ul>
-		<p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
-	</li>
+<li>
+<p><strong>Monitoring and telemetry</strong></p>
+<p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
+<ul>
+<li>
+<p>Remote installation using Windows PowerShell or WMI</p>
+</li>
+</ul>
+<p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
+</li>
 
-	<li>
-		<p><strong>Firmware update</strong></p>
-		<p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
-		<ul>
-			<li>
-				<p>Remote installation using Windows PowerShell or WMI</p>
-			</li>
-			<li>
-				<p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
-			</li>
-		</ul>
-		<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
-	</li>
+<li>
+<p><strong>Firmware update</strong></p>
+<p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
+<ul>
+<li>
+<p>Remote installation using Windows PowerShell or WMI</p>
+</li>
+<li>
+<p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
+</li>
+</ul>
+<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+</li>
 </ol>
 </html>
 
