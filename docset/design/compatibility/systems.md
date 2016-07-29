@@ -144,6 +144,7 @@ These specifications are divided into the following categories and topics:
 
 *If a system includes a Bluetooth enabled controller it must support the Bluetooth 4.0 specification requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -153,6 +154,7 @@ These specifications are divided into the following categories and topics:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -163,6 +165,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 
 *Systems that support Connected Standby with Bluetooth enabled controllers must ship with Microsoft's inbox Bluetooth stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -172,6 +175,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -181,6 +185,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 
 *MSFT Defined HCI extensions support for hardware offload of advertisement and RSSI monitoring.*                                                                                                                                                       
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -190,6 +195,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 
 **Description**  
@@ -201,6 +207,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 
 *Systems with Bluetooth enabled controllers must support a minimum set of LE state combinations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -210,6 +217,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -219,6 +227,7 @@ The Bluetooth enabled controller must allow the spec LE state combinations (as a
 
 *Systems with Bluetooth enabled controllers must support a minimum LE allow list size of 25 entries.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -228,6 +237,7 @@ The Bluetooth enabled controller must allow the spec LE state combinations (as a
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -235,8 +245,9 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 
 ### System.Client.BluetoothController.Base.NoBluetoothLEFilterDriver
 
-*Bluetooth LE filter drivers are not allowed to load on BTHLEENUM.SYS. *
+*Bluetooth LE filter drivers are not allowed to load on BTHLEENUM.SYS.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -246,6 +257,7 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -253,8 +265,9 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 
 ### System.Client.BluetoothController.Base.OnOffStateControllableViaSoftware
 
-*Bluetooth enabled controllers’ On/Off state must be controllable via software. *
+*Bluetooth enabled controllers’ On/Off state must be controllable via software.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -264,6 +277,7 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -281,6 +295,7 @@ The radio must maintain on/off state across sleep and reboot.
 
 *Bluetooth enabled controllers must support simultaneous BR/EDR and LE traffic.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -290,6 +305,7 @@ The radio must maintain on/off state across sleep and reboot.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -297,6 +313,7 @@ Bluetooth enabled controllers must allow the simultaneous use of both Basic Rate
 
 ### System.Client.BluetoothController.Base.WidebandSpeech
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -304,6 +321,7 @@ Bluetooth enabled controllers must allow the simultaneous use of both Basic Rate
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -319,6 +337,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 
 *Windows Systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existence requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -328,6 +347,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -340,12 +360,13 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 <a name="system.client.bluetoothcontroller.nonusb"></a>
 ## System.Client.BluetoothController.NonUSB
 
-*These requirements apply to systems that have non-USB Bluetooth enabled controllers. *
+*These requirements apply to systems that have non-USB Bluetooth enabled controllers.*
 
 ### System.Client.BluetoothController.NonUSB.NonUsbUsesMicrosoftsStack
 
-*Any platform using a non-USB connected Bluetooth enabled controller must ship with Microsoft’s inbox Bluetooth stack. *
+*Any platform using a non-USB connected Bluetooth enabled controller must ship with Microsoft’s inbox Bluetooth stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -355,6 +376,7 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -362,8 +384,9 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 
 ### System.Client.BluetoothController.NonUSB.ScoSupport
 
-*Any platform with a non-USB connected Bluetooth enabled controller must use a sideband channel for SCO. *
+*Any platform with a non-USB connected Bluetooth enabled controller must use a sideband channel for SCO.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -373,6 +396,7 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -381,12 +405,13 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 <a name="system.client.bluetoothcontroller.usb"></a>
 ## System.Client.BluetoothController.USB
 
-*These requirements apply to systems that have USB Bluetooth enabled controllers. *
+*These requirements apply to systems that have USB Bluetooth enabled controllers.*
 
 ### System.Client.BluetoothController.USB.ScoDataTransportLayer
 
-*Bluetooth enabled host controllers support the SCO data transport layer as specified in the Bluetooth 2.1+EDR specifications. *
+*Bluetooth enabled host controllers support the SCO data transport layer as specified in the Bluetooth 2.1+EDR specifications.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -396,6 +421,7 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -410,6 +436,7 @@ A System with a Bluetooth enabled controller must comply with the Synchronous Co
 
 Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based backlight power optimization to reduce backlight level used by integrated panel.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -420,6 +447,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -453,6 +481,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 
 *Systems that have built in physical brightness control function keys use standard ACPI events and support control of LCD backlight brightness via ACPI methods in the system firmware.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -463,6 +492,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -496,6 +526,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 *Driver must support a smooth transition in response to all brightness change requests from Windows.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -506,6 +537,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -537,6 +569,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 14. Brightness levels are represented as a % in Windows. Therefore there is no absolute mapping between brightness % level and physical brightness level. For Windows 8, the following is the guidance.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -554,7 +587,8 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <td>Max brightness supported by panel</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 <a name="system.client.buttons"></a>
 ## System.Client.Buttons
@@ -574,6 +608,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
 </html>
+</html>
 
 **Description:**
 
@@ -592,6 +627,7 @@ In the case where buttons are not wired through GPIO interrupts, buttons must be
 
 *Systems with integrated cameras must meet camera device requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -601,6 +637,7 @@ In the case where buttons are not wired through GPIO interrupts, buttons must be
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -612,6 +649,7 @@ Note: With regards to ‘**Device.Streaming.Camera.Base.UsageIndicator’** if a
 
 *Systems with integrated cameras must report the physical location of each camera.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -621,6 +659,7 @@ Note: With regards to ‘**Device.Streaming.Camera.Base.UsageIndicator’** if a
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -636,6 +675,7 @@ All other fields in the \_PLD are optional.
 
 *Systems with integrated cameras meet the requirements of, and can support the Windows Capture Infrastructure.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -645,6 +685,7 @@ All other fields in the \_PLD are optional.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -761,6 +802,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 
 *System Digitizer Base*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -771,6 +813,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -784,6 +827,7 @@ The following Digitizer Base device level requirements must be met and verified 
 
 *System Pen*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -791,6 +835,7 @@ The following Digitizer Base device level requirements must be met and verified 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -811,6 +856,7 @@ The following Pen device level requirements must be met and verified upon integr
 
 *System Touch*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -820,6 +866,7 @@ The following Pen device level requirements must be met and verified upon integr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -852,6 +899,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 
 *Precision Touchpad*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -860,6 +908,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -887,6 +936,7 @@ A touchpad may not be marketed as a Precision Touchpad if the device requires a 
 
 *System Pen Contact Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -894,6 +944,7 @@ A touchpad may not be marketed as a Precision Touchpad if the device requires a 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -903,6 +954,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Buffering for buses with High Resume latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -910,6 +962,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -919,6 +972,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -926,6 +980,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -935,6 +990,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Custom Run-Time System Gestures*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -942,6 +998,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -951,6 +1008,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Eraser Affordance*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -958,6 +1016,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -967,6 +1026,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -974,6 +1034,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -983,6 +1044,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Hover Range*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -990,6 +1052,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -999,6 +1062,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1006,6 +1070,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1015,6 +1080,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Response Latencies*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1022,6 +1088,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1031,6 +1098,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Pressure Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1038,6 +1106,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1047,6 +1116,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Report Rate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1054,6 +1124,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1063,6 +1134,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1070,6 +1142,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1079,6 +1152,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1086,6 +1160,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1098,6 +1173,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Precision Touchpad Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1105,6 +1181,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1114,6 +1191,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Buffering for Buses with High Resume Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1121,6 +1199,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1130,6 +1209,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Physical Buttons and Button Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1137,6 +1217,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1146,6 +1227,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1153,6 +1235,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1162,6 +1245,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Contact Tip Switch Height*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1169,6 +1253,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1178,6 +1263,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Device Type*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1185,6 +1271,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1194,6 +1281,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Dimensions*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1201,6 +1289,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1210,6 +1299,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Finger Separation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1217,6 +1307,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1226,6 +1317,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1233,6 +1325,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1242,6 +1335,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1249,6 +1343,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1258,6 +1353,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1265,6 +1361,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1274,6 +1371,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Response Latencies*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1281,6 +1379,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1290,6 +1389,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Contact Count*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1297,6 +1397,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1306,6 +1407,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Report Rates*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1313,6 +1415,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1322,6 +1425,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Selective Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1329,6 +1433,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1338,6 +1443,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1345,6 +1451,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1357,6 +1464,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Touch Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1366,6 +1474,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1375,6 +1484,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Buffering for Buses with High Resume Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1384,6 +1494,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1393,6 +1504,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1402,6 +1514,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1411,6 +1524,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Custom Run-Time System Gestures*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1420,6 +1534,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1429,6 +1544,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Finger Separation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1438,6 +1554,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1447,6 +1564,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1456,6 +1574,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1465,6 +1584,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1474,6 +1594,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1483,6 +1604,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Response Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1492,6 +1614,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1501,6 +1624,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Minimum Simultaneous Reportable Contacts*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1510,6 +1634,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1519,6 +1644,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Report Rate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1528,6 +1654,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1537,6 +1664,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1546,6 +1674,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1555,6 +1684,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1564,6 +1694,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1576,6 +1707,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System firmware must support Graphics Output Protocol (GOP) and Windows display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1586,6 +1718,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1643,6 +1776,7 @@ The display is controlled by the system UEFI before the WDDM graphics driver tak
 
 *A Windows client system must have a "Full" graphics device and that device must be the post device.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1652,6 +1786,7 @@ The display is controlled by the system UEFI before the WDDM graphics driver tak
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1662,6 +1797,7 @@ Each of these driver/device types are designed for specific scenarios and usage 
 
 *Graphics driver must not enumerate more than one monitor as internal.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1671,6 +1807,7 @@ Each of these driver/device types are designed for specific scenarios and usage 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1682,6 +1819,7 @@ For more information, see the Graphics guide for Windows 7 at [http://go.microso
 
 *All Windows graphics drivers must be Windows Display Driver Model (WDDM).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1691,6 +1829,7 @@ For more information, see the Graphics guide for Windows 7 at [http://go.microso
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1700,6 +1839,7 @@ WDDMv1.3 is required by all systems shipped with Windows 10.
 
 Table below explains the scenario usage for the Graphic driver types:
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1740,12 +1880,14 @@ Table below explains the scenario usage for the Graphic driver types:
 <td>N/A</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 ### System.Client.Graphics.WDDMSupportRotatedModes
 
 *If accelerometer is present, Windows Display Driver Model (WDDM) driver must support all rotated modes.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1755,6 +1897,7 @@ Table below explains the scenario usage for the Graphic driver types:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1771,6 +1914,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *System limitations for wireless and USB connected displays.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1780,6 +1924,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1808,6 +1953,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *USB-interface-based GSM and CDMA class of Mobile Broadband device firmware must comply with USB-IF's Mobile Broadband Interface Model Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1818,6 +1964,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1841,6 +1988,7 @@ Note that above exceptions are applicable only if:
 
 *System Builders must ensure that the RF performance is optimized for Mobile Broadband, Wi-Fi and Bluetooth enabled radios running at the same time.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1851,6 +1999,7 @@ Note that above exceptions are applicable only if:
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1860,6 +2009,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 
 *Systems that include Broadband support meet Windows requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1870,6 +2020,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1880,6 +2031,7 @@ compliant with the Mobile Broadband Interface Model specification. These devices
 USB Forum for compliance (when it becomes available for MB devices).
 In addition to the above, firmware needs to support the features listed below as specified by NDIS.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1909,7 +2061,8 @@ In addition to the above, firmware needs to support the features listed below as
 <td>Required</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 No additional Connection Manager software is required for the operation of mobile broadband devices.
 Value-add Mobile Broadband Connection Managers, if implemented, need to implement the Mobile Broadband
@@ -1918,6 +2071,7 @@ Microsoft strongly recommends USB-based bus interfaces such as analog USB, HSIC 
 (when available). Mobile Broadband stack in Windows 8 is designed to support only USB protocol based bus
 interfaces. The following table summarizes the required mobile broadband features.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1931,7 +2085,8 @@ interfaces. The following table summarizes the required mobile broadband feature
 <td>USB-HSCI (preferred) or USB</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 
 Systems must also comply with Mobile Broadband requirements:
@@ -1956,6 +2111,7 @@ Systems must also comply with Mobile Broadband requirements:
 
 *Computers must appear as a single object in the Devices and Printers folder.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1966,6 +2122,7 @@ Systems must also comply with Mobile Broadband requirements:
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1996,8 +2153,9 @@ The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be exec
 
 ### System.Client.RadioManagement.HardwareButton
 
-*If a PC has a physical (hardware) button switch on a PC that turns wireless radios on and off, it must be software controllable and interact appropriately with the Radio Management UI. *
+*If a PC has a physical (hardware) button switch on a PC that turns wireless radios on and off, it must be software controllable and interact appropriately with the Radio Management UI.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2008,6 +2166,7 @@ The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be exec
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2028,8 +2187,9 @@ When there is a hardware button for wireless radios there must not be more than 
 
 ### System.Client.RadioManagement.RadioMaintainsState
 
-*Radio maintains on/off state across sleep and reboot power cycles. *
+*Radio maintains on/off state across sleep and reboot power cycles.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2040,6 +2200,7 @@ When there is a hardware button for wireless radios there must not be more than 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2047,8 +2208,9 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 
 ### System.Client.RadioManagement.RadioManagementAPIHID
 
-*Wireless hardware button must communicate the change of state to the Radio Management API using HID. *
+*Wireless hardware button must communicate the change of state to the Radio Management API using HID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2059,11 +2221,13 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 When the state of wireless radio switch changes, whether it is a slider A-B switch (with or without LED) or toggle button (with or without LED), this HID-compliant hardware switch/button must expose the HID collections to be consumed by the radio management API. Toggle button must not change the state of the device radio directly. A-B switch can be wired directly to the radios and change their state as long as it communicates the change of state to the Radio Management API using the HID driver and it changes the state in all radios present in the PC. The HID usage IDs are: 
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -2094,7 +2258,8 @@ When the state of wireless radio switch changes, whether it is a slider A-B swit
 <td>OOC</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 The collections are shown in the following tables.
 <!--These tables, which were simple lists in the original Word document, seem like they should and could be unified. 
@@ -2428,6 +2593,7 @@ For an A-B switch, the manufacturer's proprietary embedded controller must repor
 
 *Systems that support Connected Standby must not include a light indicating the status of the radios in the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2437,6 +2603,7 @@ For an A-B switch, the manufacturer's proprietary embedded controller must repor
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2449,6 +2616,7 @@ In order to conserve energy, systems that support connected standby cannot inclu
 
 *Windows 10 systems must include certain devices.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2458,11 +2626,14 @@ In order to conserve energy, systems that support connected standby cannot inclu
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 For all other Windows 10 systems, the table below lists the minimum required components to be present in a system in order for it to be compatible for Windows 10. All components must meet the compatibility requirements and pass device compatibility testing for Windows 10.
 <!--This table was also broken in the original Word document.-->
+
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -2493,7 +2664,8 @@ For all other Windows 10 systems, the table below lists the minimum required com
 <td>Minimum of Direct3D 10 Feature Level 9_3 and see System.Fundamentals.Graphics.WDDM</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 <a name="system.client.systemimage"></a>
 ## System.Client.SystemImage
@@ -2504,6 +2676,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 
 *System includes Windows Recovery Environment on a separate partition.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2513,6 +2686,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2527,6 +2701,7 @@ A system must include a separate partition with a bootable Windows Recovery Envi
 
 *Systems that ship with a Windows operating system must meet partitioning requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2536,6 +2711,7 @@ A system must include a separate partition with a bootable Windows Recovery Envi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2548,6 +2724,7 @@ Tools and documentation to implement split-loader configuration can be found in 
 
 *Windows systems with recovery & OEM partitions must meet partitioning requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2557,6 +2734,7 @@ Tools and documentation to implement split-loader configuration can be found in 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2574,6 +2752,7 @@ Partitions which are identified with the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED attr
 
 *Systems with accelerometers perform screen rotation in 300 milliseconds and without any video glitches.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2583,6 +2762,7 @@ Partitions which are identified with the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED attr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2601,6 +2781,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *Graphics drivers on Tablet systems are required to support all mode orientations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2610,6 +2791,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2627,6 +2809,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 ### System.Client.WLAN.BasicConnectivity.WlanBasicConnectivity
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2636,6 +2819,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2655,6 +2839,7 @@ Timing for the above actions can be found in the Windows 10 WLAN Device requirem
 
 ### System.Client.WLAN.HangDetectionAndRecovery.WlanHangDetectionAndRecovery (If-Implemented) **(WDI Drivers Only)**
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2664,6 +2849,7 @@ Timing for the above actions can be found in the Windows 10 WLAN Device requirem
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2686,6 +2872,7 @@ System: The system must complete the reset within 10 seconds.
 
 ### System.Client.WLAN.HostedNetwork.WlanHostedNetwork (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2695,6 +2882,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**With this feature, a Windows computer can use a single physical wireless adapter to connect as a client to a hardware access point (AP), while at the same time acting as a software AP allowing other wireless-capable devices to connect to it.
 
@@ -2703,6 +2891,7 @@ System: The system must complete the reset within 10 seconds.
 
 ### System.Client.WLAN.WiFiDirect.WlanWiFiDirect (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2712,6 +2901,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2722,6 +2912,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 
 ### System.Client.WLAN.Miracast.WlanMiracast (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2731,6 +2922,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2745,6 +2937,7 @@ Miracast requires both WiFiDirect support in the WLAN Adapter and support in the
 
 *System exposes debug interface that complies with Debug Port Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2755,6 +2948,7 @@ Miracast requires both WiFiDirect support in the WLAN Adapter and support in the
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2795,12 +2989,13 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 <a name="system.fundamentals.debugport.usb"></a>
 ## System.Fundamentals.DebugPort.USB
 
-*The ability to debug a USB3 system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the debugging capability for the xHCI controller based systems via a debug registers. Every system that has xHCI controller and USB3 external port should support via this port. *
+*The ability to debug a USB3 system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the debugging capability for the xHCI controller based systems via a debug registers. Every system that has xHCI controller and USB3 external port should support via this port.*
 
 ### System.Fundamentals.DebugPort.USB.SystemExposesDebugInterfaceUsb
 
 *USB 3 system exposes debug interface that complies with Debug Port Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2811,6 +3006,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2826,6 +3022,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 
 
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2835,9 +3032,11 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 ### System.Fundamentals.EnergyEstimation.Discretional
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2848,6 +3047,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 There are currently three energy micro-benchmark tests in the HLK including primary storage, network, and primary display. These benchmarks are targeted to execute on any battery powered device. While in execution, the benchmarks emulate a set of steady state workloads of a particular component. At the same time, they also observe the battery drain.
 
@@ -2895,6 +3095,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 
 *ACPI System Requirements*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2905,6 +3106,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2997,12 +3199,14 @@ Any system that supports Connected Standby that sets the "CMOS RTC Not Present
 
 *System firmware supports booting from DVD device as defined by the El Torito specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3012,12 +3216,14 @@ The system firmware must support booting the system DVD if the system includes a
 
 *System firmware provides USB boot support for USB keyboards, mouse, and hubs*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </tr></td></table>
+</html>
 
 **Description**
 
@@ -3041,6 +3247,7 @@ The USB controller and USB devices must be fully enumerated when:
 
 *System.Fundamentals.Firmware.HardwareMemoryReservation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3050,6 +3257,7 @@ The USB controller and USB devices must be fully enumerated when:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3082,6 +3290,7 @@ Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http:
 
 *All external DMA ports must be off by default until the OS explicitly powers them through related controller(s).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3091,6 +3300,7 @@ Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3104,6 +3314,7 @@ Note that this requirement precludes the use of attached storage as boot media i
 
 *A system with TPM that supports wired LAN in pre-OS must support the UEFI 2.3.1 EFI\_DHCP4\_PROTOCOL protocol and the UEFI 2.3.1 EFI\_DHCP6\_PROTOCOL (and the corresponding service binding protocols).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3114,6 +3325,7 @@ Note that this requirement precludes the use of attached storage as boot media i
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3130,6 +3342,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *UEFI firmware honors software control over load option variables.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3139,6 +3352,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3164,6 +3378,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *System firmware must meet Windows Compatibility requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3174,6 +3389,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3192,6 +3408,7 @@ OEMs may ship with CSM mode activated and the enterprise or government customer'
 
 *All client systems must be able to boot into UEFI boot mode and attempt to boot into this mode by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3202,6 +3419,7 @@ OEMs may ship with CSM mode activated and the enterprise or government customer'
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3213,6 +3431,7 @@ This requirement is "If Implemented" for Server systems.
 
 *System firmware must not fall back to legacy BIOS mode without explicit user action.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3223,6 +3442,7 @@ This requirement is "If Implemented" for Server systems.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3241,6 +3461,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *All client systems must support UEFI Secure boot.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3251,6 +3472,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3341,6 +3563,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 
 *System firmware must expose timing and class information.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3350,6 +3573,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3361,6 +3585,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 
 *System firmware must meet the requirements in order to support system and/or device firmware updates using firmware driver package.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3371,6 +3596,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3407,6 +3633,7 @@ OS after an update is applied.
 
 *System firmware must be able to boot a system with onboard or integrated graphics and with multiple graphics adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3417,6 +3644,7 @@ OS after an update is applied.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3427,6 +3655,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 
 *Systems with a boot device with a capacity greater than 2.2 terabytes must comply with requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3437,6 +3666,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3455,6 +3685,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
 
 *System that support Connected Standby must include cryptographic capabilities to meet customer expectations on platform speed and performance.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3464,6 +3695,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3486,6 +3718,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 **Table: Algorithm-specific requirements. The "Category" column classifies algorithms as mandatory to support at the software interface as per requirement 4 (M), or optional (O). Note that all algorithms that are accelerated in hardware must also be exposed through the software interface.**
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -3570,7 +3803,8 @@ Since all components in the boot path as well as many performance-critical OS su
 <td>Security strength must be at least 256 bits<sup>1</sup>. Note that exposing this functionality through the UEFI Entropy-Gathering Protocol is required (see Req 3) and exposing it as an OS entropy source is recommended (see Req 7).</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 <sup>1</sup> The Connected Standby vendor shall supply documentation indicating, and allowing Microsoft to estimate, the quality of the entropy source. The entropy shall be assessed using the min-entropy method of Appendix C of National Institute for Standards and Technology, "Recommendation for Random Number Generation using Deterministic Random Bit Generators," [FIPS 800-90](http://www.nist.gov/customcf/get_pdf.cfm?pub_id=50814), March 2007 and must surpass or be equal to 256 bits before the runtime OS starts.
 
@@ -3580,6 +3814,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 *All client systems that support Connected Standby must support UEFI Secure Boot.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3589,6 +3824,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3635,6 +3871,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 *Systems which ship with a self-encrypting hard drive as a storage device must support the UEFI 2.3.1 EFI\_STORAGE\_SECURITY\_COMMAND\_PROTOCOL protocols and shall contain a non-OS partition that can be used to store WinRE.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3645,6 +3882,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3671,6 +3909,7 @@ This requirement is “If Implemented” for Server systems and applies only if 
 
 *32-bit and 64-bit system firmware supports large aperture graphic adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3681,6 +3920,7 @@ This requirement is “If Implemented” for Server systems and applies only if 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3691,6 +3931,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 
 *System is compatible with the Microsoft Basic Display Driver.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3701,6 +3942,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3710,6 +3952,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 
 *Graphics drivers must be upgradable without a reboot of the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3720,6 +3963,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3735,6 +3979,7 @@ For example the graphics driver package includes the graphics driver and all ass
 
 *Display device functions properly and does not generate hangs or faults under prolonged stress.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3745,6 +3990,7 @@ For example the graphics driver package includes the graphics driver and all ass
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3759,6 +4005,7 @@ The system must run under prolonged stress without generating hangs or faults.
 
 *Hybrid Graphics*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3769,6 +4016,7 @@ The system must run under prolonged stress without generating hangs or faults.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3887,7 +4135,8 @@ Following are the power management requirements for the discrete GPU participati
     <td>Monitor off and (no active context or all engines idle for 60 s)</td>
     <td align="right">250 ms</td>
   </tr>
-</table>
+<table>
+<html>
 
 
 
@@ -3900,6 +4149,7 @@ Following are the power management requirements for the discrete GPU participati
 
 *Systems with integrated displays must use native resolution by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3910,6 +4160,7 @@ Following are the power management requirements for the discrete GPU participati
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3929,6 +4180,7 @@ This requirement applies to systems that use UEFI or BIOS. 
 
 *On a system with multiple graphics adapters, system firmware will allow the user to configure the usage of the adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3939,6 +4191,7 @@ This requirement applies to systems that use UEFI or BIOS. 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3969,6 +4222,7 @@ On a system with multiple graphics adapters, the system firmware (BIOS, UEFI, et
 
 *Hybrid/Switchable Graphics systems that support multiple discrete graphics adapters or chipset combination must use the same Subsystem ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3979,6 +4233,7 @@ On a system with multiple graphics adapters, the system firmware (BIOS, UEFI, et
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4032,6 +4287,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 
 *Render Only device on client or server system must be Direct3D 10 capable or greater.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4042,6 +4298,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4056,12 +4313,14 @@ If a client or server system includes a render only device, the device must be D
 
 *Signed HAL extensions are required for timers and DMA controllers that are not supported in-box*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Mobile ARM</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4088,12 +4347,14 @@ If the platform includes a system (shared) DMA controller, the CSRT must include
 
 *System provides a high-precision event timer*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4121,6 +4382,7 @@ Architecture Personal Computer (IA-PC) HPET Specification:
 
 *I2C connected HID devices must have a Unique HWID along with a HID compatible ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4130,6 +4392,7 @@ Architecture Personal Computer (IA-PC) HPET Specification:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4143,6 +4406,7 @@ See Microsoft published HID I2C protocol specification.
 
 *All PS/2 connected devices (such as internal keyboards) must have a unique hardware ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4152,6 +4416,7 @@ See Microsoft published HID I2C protocol specification.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4170,6 +4435,7 @@ See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/wh
 
 *System includes marker file*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4180,6 +4446,7 @@ See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/wh
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4221,6 +4488,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 
 *Wireless LAN networking device on systems that support Connected Standby must support NDIS 6.30 and support offloads.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4231,6 +4499,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4263,6 +4532,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 
 *All physical network devices in a system (inclusive of docking stations) must meet device certification criteria for power management requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4273,6 +4543,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4285,12 +4556,14 @@ Support of this feature is required. All physical network devices included in a 
 
 *Systems must ship with processors that support NX and include drivers that function normally when NX is enabled*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4308,6 +4581,7 @@ of NX.In addition, the system firmware must have NX on and data execution preven
 
 *System supports docking and undocking across a hibernate transition.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4318,6 +4592,7 @@ of NX.In addition, the system firmware must have NX on and data execution preven
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4327,6 +4602,7 @@ For systems which ship with a dock, the system must be able to hibernate and res
 
 *Storage subsystem supports multi-phase resume from Hibernate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4336,6 +4612,7 @@ For systems which ship with a dock, the system must be able to hibernate and res
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4350,6 +4627,7 @@ The driver and hardware subsystems for the boot storage device must support mult
 
 *Systems support S4 and S5 and either S0 low power idle or S3, states.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4360,6 +4638,7 @@ The driver and hardware subsystems for the boot storage device must support mult
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4385,6 +4664,7 @@ Power Management is an important aspect of good user experience. The system shou
 
 *System must report form factor via power management profile.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4395,6 +4675,7 @@ Power Management is an important aspect of good user experience. The system shou
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4411,6 +4692,7 @@ For more information see page 119 of the ACPI specification version 5.0.
 
 *Systems that support S0 low power idle must meet reliability standards for Runtime Power Management.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4421,6 +4703,7 @@ For more information see page 119 of the ACPI specification version 5.0.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4444,12 +4727,14 @@ If a PEP device is enumerated in ACPI namespace and the system does not have a P
 
 *Remote boot support for PXE complies with BIOS Boot Specification 1.01 or EFI boot manager*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4477,6 +4762,7 @@ Version 1.01, and Appendix C.
 
 *Drivers in a system must be reliable.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4487,6 +4773,7 @@ Version 1.01, and Appendix C.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4505,6 +4792,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 
 *This feature checks for Credential Guard.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4512,6 +4800,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 Description:
 
@@ -4531,6 +4820,7 @@ The following table shows the hardware, firmware and software requirements for C
 
 *Systems that support connected standby must support device encryption.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4540,6 +4830,7 @@ The following table shows the hardware, firmware and software requirements for C
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4549,6 +4840,7 @@ Systems that support connected standby must meet the security requirements to su
 
 *Device Guard requirement for systems*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4556,6 +4848,7 @@ Systems that support connected standby must meet the security requirements to su
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -4565,6 +4858,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 
  - MUST meet the additional requirements as described in the table below:
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -4643,12 +4937,14 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </ol></td>
 </tr>
 </tbody>
-</table>                                                                               
+<table>
+<html>                                                                               
 
 ### System.Fundamentals.Security.NoTDIFilterAndLSP
 
 *No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4658,6 +4954,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4665,6 +4962,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 
 ### System.Fundamentals.Security.PlayReadyModule 
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4675,6 +4973,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4689,12 +4988,14 @@ Basic requirements for Windows Server Nano.
 
 All drivers intended for use with Windows Server Nano must meet these requirements.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4711,12 +5012,14 @@ All tools, utilities, or agents to be installed on Nano Server must be made avai
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4735,12 +5038,14 @@ In addition to the above, systems running Windows Server Nano must support Nano 
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4757,12 +5062,14 @@ If the tool or utility runs locally on Nano Server, it must be made available as
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4781,12 +5088,14 @@ For Microsoft Azure Stack, in particular, all monitoring has to be agentless, an
 
 All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4803,12 +5112,14 @@ Any device driver that does not meet this requirement will not be usable on Wind
 
 Patching requirements for Windows Server Nano.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4824,6 +5135,7 @@ All patches and updates must be able to install offline as part of image creatio
 
 *Boot drivers must be self-signed with an embedded signature.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4834,6 +5146,7 @@ All patches and updates must be able to install offline as part of image creatio
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4866,6 +5179,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 
 *System must contain compatible qualified devices.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4876,6 +5190,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4894,6 +5209,7 @@ All devices and drivers need to be fully installed, and does not contain any pro
 
 *System firmware support for SMBIOS complies with the SMBIOS specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4904,6 +5220,7 @@ All devices and drivers need to be fully installed, and does not contain any pro
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4962,6 +5279,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 
 *Boot Devices in systems that support Connected Standby must meet these requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4972,6 +5290,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5002,6 +5321,7 @@ The CPU Vendor and/or Firmware Provider must furnish the software tools needed t
 
 The following requirements are applicable to boot storage media and are tested with the smaller of 2% or 1GB free space.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -5120,6 +5440,7 @@ The following requirements are applicable to boot storage media and are tested 
 </tr>
 </tbody>
 </table>
+</html>
 
 \* Applies only to devices with 16 GB of internal storage or lower.
 
@@ -5135,6 +5456,7 @@ Maximum of **20 seconds** sum-total of user-perceivable I/O latencies over any *
 
 *Systems which ship with a Encrypted Drive as a boot storage device must support security command protocols in order to make sure the data at rest is always protected.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5145,6 +5467,7 @@ Maximum of **20 seconds** sum-total of user-perceivable I/O latencies over any *
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5172,6 +5495,7 @@ The following requirements apply if Encrypted Drive (**System.Fundamentals.Stora
 
 *System with SATA boot storage must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5182,6 +5506,7 @@ The following requirements apply if Encrypted Drive (**System.Fundamentals.Stora
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5206,12 +5531,14 @@ When used in systems that support connected standby, the SATA device must meet t
 
 *System.Fundamentals.StorageClassMemory*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5223,12 +5550,14 @@ When used in systems that support connected standby, the SATA device must meet t
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.DSMCompliance*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 
 **Description:**
@@ -5243,12 +5572,14 @@ Note: NVDIMM-N devices are identified through the Firmware’s NFIT table as def
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.Persistence*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5260,12 +5591,14 @@ Note: It is highly recommended that persistence is achieved by implementing ADR 
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.HealthNotificationSupport*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5282,6 +5615,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 
 *Systems contain audio devices that conform to Windows Logo requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5292,6 +5626,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5301,6 +5636,7 @@ Systems need to conform to all **Device.Audio** requirements.
 
 *Microphone Location Reporting Requirement*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5311,6 +5647,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5330,6 +5667,7 @@ Systems need to conform to all **Device.Audio** requirements.
 
 *System uses the HD Audio device pin configuration registers to expose logical devices supported by the Windows UAA HD Audio class driver.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5340,6 +5678,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5354,12 +5693,14 @@ See the Pin Configuration Guidelines for High Definition Audio Devices white pap
 
 *System devices and firmware meet PCI requirements*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5404,6 +5745,7 @@ All 64-bit adapters must be DAC capable. This DAC requirement does not apply to 
 
 *External USB ports on system that support connected standby must be EHCI or XHCI*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5414,6 +5756,7 @@ All 64-bit adapters must be DAC capable. This DAC requirement does not apply to 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5446,6 +5789,7 @@ For improved power efficiency and performance, USB Host Controllers on systems 
 
 *Each exposed SuperSpeed capable connector supports SuperSpeed, high, full and low speed USB devices routed through its xHCI controller.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5456,6 +5800,7 @@ For improved power efficiency and performance, USB Host Controllers on systems 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5467,6 +5812,7 @@ xHCI Controllers are backwards compatible with SuperSpeed, high, full, and low s
 
 *Systems are recommended to expose at least one user-accessible USB port.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5477,6 +5823,7 @@ xHCI Controllers are backwards compatible with SuperSpeed, high, full, and low s
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5512,6 +5859,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 
 *Systems with xHCI Controllers must be tested with Microsoft's xHCI Stack installed.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5522,6 +5870,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5531,6 +5880,7 @@ Systems with Extensible Host Controller Interface (xHCI) Controllers must be tes
 
 *All USB devices and host controllers work properly upon resume from sleep, hibernation or restart without a forced reset of the USB host controller.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5541,6 +5891,7 @@ Systems with Extensible Host Controller Interface (xHCI) Controllers must be tes
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5559,6 +5910,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 
 *USB Type-C Charging cases are supported*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5568,6 +5920,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5581,6 +5934,7 @@ If a System contains a USB Type-C port that can be used to charge the system, th
 
 *USB Type-C Systems and Devices that ship with Cables ship with certified cables *
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5590,6 +5944,7 @@ If a System contains a USB Type-C port that can be used to charge the system, th
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5601,6 +5956,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 
 *USB Type-C systems must support UCM*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5610,6 +5966,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5649,6 +6006,7 @@ If the system or controller exposes dual role ports, the following additional re
 
 *USB Type-C Systems that support UCSI must implement USCI correctly*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5658,6 +6016,7 @@ If the system or controller exposes dual role ports, the following additional re
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5696,6 +6055,7 @@ If a USB Type-C system has local USB-C ports (e.g. directly on the system compar
 
 *xHCI BIOS handoff follows specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5706,6 +6066,7 @@ If a USB Type-C system has local USB-C ports (e.g. directly on the system compar
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5715,6 +6076,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 
 *Systems with xHCI controllers must have embedded ACPI information for port routing.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5725,6 +6087,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6092,6 +6455,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 
 *xHCI controller must support at least 31 primary streams per endpoint.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6102,6 +6466,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6118,6 +6483,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 
 *Systems shipping with TPM 2.0 must contain a full endorsement key certificate.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6128,6 +6494,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6166,6 +6533,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 *Requirements for all systems that implement the TPM 2.0 specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6176,6 +6544,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6190,6 +6559,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <ol>
 <li><p>The platform shall implement all "Required" features in the table below.</p>
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -6252,9 +6622,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </tbody>
 </table>
 </li>
-
 <li><p>The TPM <strong>Must</strong> have support for the following:</p>
-
 <table>
 <thead>
 <tr class="header">
@@ -6314,6 +6682,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 <li><p><strong>Protected Import</strong>: Protected Import is defined as an import operation on a key where “encryptedDuplication” was set in the duplicated object.</p></li>
 </ol>
+
 <table>
 <thead>
 <tr class="header">
@@ -6496,6 +6865,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 *A system that implements a Trusted Platform Module (TPM) 1.2 must include a TPM that complies with the TCG TPM Main Specification, Version 1.2, Revision 103 (or a later revision), parts 1, 2 and 3.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6505,6 +6875,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6537,6 +6908,7 @@ The TPM must meet the following additional requirements:
 
 *Systems with Trusted Platform Modules enable full use of the TPM including system firmware enhancements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6546,6 +6918,7 @@ The TPM must meet the following additional requirements:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6579,6 +6952,7 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 
 *System implementing TPM 1.2 must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6588,6 +6962,7 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6657,6 +7032,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 
 *System firmware supports booting from all exposed USB 1.x, 2.x, and 3.x ports*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6667,6 +7043,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6689,6 +7066,7 @@ OEMs are encouraged to test the boot functionality by creating a bootable USB fl
 
 *Systems support secure startup by providing system firmware support for writing to and reading from USB flash devices in the pre-operating system environment.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6699,6 +7077,7 @@ OEMs are encouraged to test the boot functionality by creating a bootable USB fl
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6716,6 +7095,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 
 *All internally connected USB devices must support selective suspend by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6726,6 +7106,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6754,6 +7135,7 @@ For more information about how to implement selective suspend in a driver, pleas
 
 *If a Watch Dog Timer is implemented and exposed through a WDRT (supported for versions prior to Windows 8) or WDAT (required for Windows 8 and later versions), it must meet Windows compatibility and functionality requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6764,6 +7146,7 @@ For more information about how to implement selective suspend in a driver, pleas
 <p>Windows 10 Mobile x86</p>
 <p>Windows 10 Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6779,12 +7162,14 @@ This feature shows the requirements that need to be met by a server to get the H
 
 Server supports hardware- and firmware-based enhanced platform integrity protection.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6846,127 +7231,84 @@ This is an *If-Implemented*, optional system requirement for a system providing 
 
 ## <a href="" id="system.server.azurestack"></a>System.Server.AzureStack
 
-<!--[This content does not seem to exist in version 1607 of the Word file.]
-
-Microsoft Azure Stack (MAS) is a new Microsoft offering that delivers a consistent set of Azure Cloud services on premise. While the exact composition of Microsoft Azure Stack is still under discussion, the components that will be required to build a "cloud-inspired infrastructure" solution can be broadly split into the categories below.
-
-<table>
-<thead>
-<tr class="header">
-<th>Compute</th>
-<td>Components in the compute cluster of the Microsoft Azure Stack solution—typically, all parts that go into making an individual server (CPU, memory, a motherboard, a boot disk, a graphics card, a BIOS, and so forth).</td>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th>Network</th>
-<td>Components that provide the networking fabric for the Microsoft Azure Stack solution—NICs (with a varying number of ports and functional levels), switches, hardware- and software-based load balancers, and so forth.</td>
-</tr>
-<tr class="even">
-<th>Storage</th>
-<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
-</tr>
-<tr class="odd">
-<th>Security</th>
-<td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
-</tr>
-<tr class="even">
-<th>Special Items</th>
-<td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
-</tr>
-</tbody>
-</table>
-
-The primary audiences for the completed hardware specifications for Microsoft Azure Stack solutions are:
-
- - Independent hardware vendors (IHVs) who build individual components (such as physical disks) that go into larger modules
-
- - Original equipment manufacturers (OEMs) who assemble white-box systems, area-focused solutions such as storage solutions, or complete Microsoft Azure Stack solutions
-
- - Solution Integrators (SIs) who implement Microsoft Azure Stack solutions using OEM-assembled or DIY hardware on the customer premises
-
-This version of the specification is an early draft, and will be used to gather feedback from key constituents. The final destination for the completed document will be to make it available as an externally facing document for the primary audiences.
-
-The goal of this requirement is to define product requirements for partners who build private cloud solutions based on the Microsoft Azure Stack.
-
-OEMs and Solution Integrators that build Microsoft Azure Stack solutions must incorporate components that have passed the associated Microsoft Azure Stack logo requirements tests, including the Private Cloud Simulation (PCS) test (System.Solutions.AzureStack.CloudStress). The fully assembled solutions must also pass the PCS tests.
-
-[This content does not seem to exist in version 1607 of the Word file.]-->
+<!--No content was provided here in the original Word file.-->
 
 ### System.Server.AzureStack.Base
 
 *Basic requirements that should be supported by any server used in a Microsoft Azure Stack solution.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Requirements for a server used in a Microsoft Azure Stack solution are captured in the following table.
 
 <html>
-    <table>
-        <thead>
-            <tr class="header">
-                <th>Feature</th>
-                <th>Requirement</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="odd">
-                <td rowspan="8">System.Fundamentals.Firmware</td>
-                <td>System.Fundamentals.Firmware.FirmwareSupportsUSBDevices</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.Firmware.UEFIBitLocker</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.Firmware.UEFIBootEntries</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.Firmware.UEFICompatibility</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.Firmware.UEFIDefaultBoot</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.Firmware.UEFILegacyFallback</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.Firmware.UEFISecureBoot</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.Firmware.Update</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Server.Virtualization</td>
-                <td>System.Server.Virtualization.ProcessorVirtualizationAssist</td>
-            </tr>
-            <tr class="even">
-                <td rowspan="6">System.Fundamentals.ServerNano</td>
-                <td>System.Fundamentals.ServerNano.Deployment</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.ServerNano.Diagnostics</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.ServerNano.FirmwareUpdate</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.ServerNano.MonitoringAndTelemetry</td>
-            </tr>
-            <tr class="even">
-                <td>System.Fundamentals.ServerNano.OperateInServerNano</td>
-            </tr>
-            <tr class="odd">
-                <td>System.Fundamentals.ServerNano.PatchAndUpdate</td>
-            </tr>
-        </tbody>
-    </table>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="8">System.Fundamentals.Firmware</td>
+<td>System.Fundamentals.Firmware.FirmwareSupportsUSBDevices</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.Firmware.UEFIBitLocker</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.Firmware.UEFIBootEntries</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.Firmware.UEFICompatibility</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.Firmware.UEFIDefaultBoot</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.Firmware.UEFILegacyFallback</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.Firmware.UEFISecureBoot</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.Firmware.Update</td>
+</tr>
+<tr class="odd">
+<td>System.Server.Virtualization</td>
+<td>System.Server.Virtualization.ProcessorVirtualizationAssist</td>
+</tr>
+<tr class="even">
+<td rowspan="6">System.Fundamentals.ServerNano</td>
+<td>System.Fundamentals.ServerNano.Deployment</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.ServerNano.Diagnostics</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.ServerNano.FirmwareUpdate</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.ServerNano.MonitoringAndTelemetry</td>
+</tr>
+<tr class="even">
+<td>System.Fundamentals.ServerNano.OperateInServerNano</td>
+</tr>
+<tr class="odd">
+<td>System.Fundamentals.ServerNano.PatchAndUpdate</td>
+</tr>
+</tbody>
+</table>
 </html>
 
 In addition to the above, the server must have:
@@ -6985,12 +7327,14 @@ In addition to the above, the server must have:
 
 *Hardware Assurance requirements for Servers used in an Azure Stack solution.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7005,12 +7349,14 @@ Servers used in an Azure Stack Solutions should meet the requirements of the Har
 
 *PXE boot requirements for deploying Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7025,12 +7371,14 @@ Servers used in Microsoft Azure Stack solutions should be able to boot successfu
 
 *Baseboard Management Controller requirements for Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7046,12 +7394,14 @@ The BMC feature requirement for a Microsoft Azure Stack solution is captured in 
 
 *Baseboard Management Controller reliability requirements for Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7078,12 +7428,14 @@ The IPMI functionality below will be tested from a reliability perspective since
 
 *A server system can natively run a 64-bit version of Windows Server.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7094,12 +7446,14 @@ Devices in a server system must also have 64-bit drivers available for 64-bit op
 
 *Baseboard management controller solution must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7153,12 +7507,14 @@ A KCS non-communication interrupt is defined as an OBF-generated interrupt that 
 
 *Baseboard Management Controller is discoverable and enumerable.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7168,12 +7524,14 @@ A system that has a baseboard management controller (BMC) present must expose it
 
 *Server system includes components and drivers that comply with Windows Hardware Certification Program.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7183,12 +7541,14 @@ All buses, devices, and other components in a system must meet their respective 
 
 *Server system includes storage and network solutions that use PCI Express architecture*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7201,12 +7561,14 @@ board. This requirement does not apply to integrated devices that are part of th
 
 *System memory uses ECC or other technology to prevent single-bit errors from causing system failure.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7217,12 +7579,14 @@ Server systems must support error correction code, memory mirroring, or another 
 
 *Server system that supports native Hot Plug functionality meets requirements defined in Hot-Plug ECN No. 31.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7232,12 +7596,14 @@ A server system must meet requirements defined in the PCI Hot-Plug ECN No. 31 if
 
 *Persistent storage devices on servers classified as Hard Disk Drives must not be PATA.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7252,12 +7618,14 @@ Parallel Advanced Technology Attachment (also known as Parallel ATA, PATA, IDE, 
 
 *Server system includes a method for installing the operating system for emergency recovery or repair.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7271,12 +7639,14 @@ The server system must provide a method for installing the operating system for 
 
 *Windows Server systems may implement AER (Advanced Error Reporting) as provided by the platform and specified in PCI Express Base Specification version 2.1 and ACPI Specification 3.0b*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7308,12 +7678,14 @@ policy.
 
 *Server system supports remote, headless, out of band management capabilities.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7357,12 +7729,14 @@ See service processor console redirection details at [http://go.microsoft.com/fw
 
 *Server device drivers must support Resource Rebalance requests*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7375,17 +7749,20 @@ resource rebalance operation.
 
 *Server system must include necessary devices and functionality.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Server systems must include the following devices or functionality.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -7611,12 +7988,14 @@ The following devices or functionality are not required for Server Systems:
 
 *Server system supports PCI Express natively*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7633,12 +8012,14 @@ precedence.
 
 *Server supports out-of-band remote management capabilities.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7663,12 +8044,14 @@ Out-of-band remote manageability through IPMI 2.0 allow different makes and mode
 
 *Servers that support hardware partitioning must supply partition management software as a Windows application running on a Windows operating system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7678,12 +8061,14 @@ Servers that support hardware partitioning must provide partition manager softwa
 
 *Servers that support hardware partitioning must supply partition management software that provides a GUI and a scripting capability for partition management.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7694,12 +8079,14 @@ Servers that support hardware partitioning must supply partition management so
 
 *Servers that support hardware partitioning must support persistence of hardware partition configuration information across a reboot and power cycle.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7709,12 +8096,14 @@ The hardware partition configuration on a server that supports hardware partitio
 
 *Systems that support Dynamic Hardware Partitioning must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7748,12 +8137,14 @@ Systems must meet the requirements listed below and pass the Dynamic Hardware Pa
 
 *Errors detected in a hardware partition on servers that support hardware partitioning cause no operating system-detectable effects on other partitions.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7763,12 +8154,14 @@ Hardware (which includes firmware) or software errors that occur within the boun
 
 *Servers that support hardware partitioning must provide server description and partitioning flows in firmware that comply with the Dynamic Hardware Partitioning Requirements Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7780,12 +8173,14 @@ For access to these specifications, send e-mail to <DPFB@Microsoft.com>.
 
 *Hardware components on a server that supports hardware partitioning that are within a unit that is hot added to a partition cannot be accessible from other hardware partitions.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7795,12 +8190,14 @@ Processors, memory, and I/O components within any unit that is hot added to an e
 
 *Servers that support hardware partitioning must support hot addition of processors, memory, and I/O and hot replace of processor and memory subsystems.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7811,12 +8208,14 @@ Servers that support hardware partitioning must support hot addition and hot rep
 
 *Servers that support hardware partitioning must provide visual user indication of the status of hot-add events if no software-based notification is provided.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7827,12 +8226,14 @@ Servers that support one or more hot-add component features must provide a visua
 
 *In servers that support dynamic partitioning, hot replacement PUs must have equal and compatible hardware resources to the PU being replaced.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7842,12 +8243,14 @@ A processor or memory PU used as a replacement on a server that supports dynamic
 
 *Partial success of a hot-add action on a server that supports dynamic partitioning does not affect the stability of the partition or server.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7857,12 +8260,14 @@ Components associated with a hot-add action on a server that supports dynamic pa
 
 *Servers that support hardware partitioning must supply partition management software that provides the user with status for each hot-add or hot-replace event.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7872,12 +8277,14 @@ Servers that support hardware partitioning must supply partition management soft
 
 *On servers that support dynamic partitioning, I/O subsystems are provided in a different partition unit to processors and memory subsystems.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7892,12 +8299,14 @@ To enable success of the hot replace feature, I/O subsystems must be implemented
 
 *Systems supporting Fault Tolerant operations must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7921,12 +8330,14 @@ FT systems may disable or not include devices which could cause asynchronous int
 
 *System firmware must support GOP and Windows display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -7988,12 +8399,14 @@ During this time when the firmware is in control, the following are the requirem
 
 *System firmware that supports VBE must comply with the Windows Display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8060,12 +8473,14 @@ The display is controlled by the video device firmware before the WDDM graphics
 
 *All Windows graphics drivers must be WDDM.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8090,12 +8505,14 @@ Table below explains the scenario usage for the Graphic driver types.
 
 Server Baseboard Management Controller (BMC) devices can support out-of-band management capabilities based on the DMTF Redfish standard.
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8213,12 +8630,14 @@ Server deployments are moving to RESTful management infrastructures that have sh
 
 *Power manageable servers support the power metering and budgeting ACPI interface.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8229,12 +8648,14 @@ Server provides support for reading system level power consumption and reading a
 
 *If processor(s) in a server system support performance states, the server provides mechanisms to makes these states available to Windows.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8244,12 +8665,14 @@ If the processors on the server support performance states, the server provides 
 
 *Power manageable server provides a standards based remote out-of-band interface to query and control the power of the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8267,12 +8690,14 @@ More detail on the SMASH profile can be found on the Distributed Management task
 
 *Server systems supporting RemoteFX must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8293,12 +8718,14 @@ Servers must meet the following requirements:
 
 *System firmware must fully and accurately implement SMBIOS structures of type 16 and of type 17*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8361,12 +8788,14 @@ where heterogeneous hardware platforms are deployed.
 
 *A connected block storage device must be manageable by Windows through its Storage Management API (SMAPI).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -8401,12 +8830,14 @@ This is a mandatory device requirement.
 
 *A connected block storage device remote replication must be manageable by Windows through its Storage Management API (SMAPI).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -8439,12 +8870,14 @@ This is a mandatory device requirement.
 
 *A connected file storage device must be manageable by Windows through its Storage Management API (SMAPI).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -8472,12 +8905,14 @@ This is a mandatory device requirement.
 through its native SMI-S v1.6.1 Provider interface demonstrates such
 conformance through a successful CTP test pass.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -8513,12 +8948,14 @@ SMI-S must support the requirements detailed here:
 
 *Products participating in the Server Virtualization Validation Program must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8533,12 +8970,14 @@ Server platforms participating in the Server Virtualization Validation Program m
 
 *Server system must function correctly under stress.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8554,12 +8993,14 @@ This will be tested using stress tools that emulate loads which may be placed up
 
 *Processors in the server support virtualization hardware assists.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8578,12 +9019,14 @@ For access to the Windows Server 2008 Virtualization Requirements document, send
 
 *Server enables reporting of system hardware errors to the operating system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8627,32 +9070,32 @@ components that will be required to build a "cloud-inspired
 infrastructure" solution can be broadly split into the categories below.
 
 <html>
-    <table>
-        <thead>
-            <tr class="header">
-                <th>Compute</th>
-                <th>Components in the compute cluster of the Microsoft Azure Stack solution—typically, all parts that go into making an individual server (CPU, memory, a motherboard, a boot disk, a graphics card, a BIOS, and so forth).</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="odd">
-                <td>Network</td>
-                <td>Components that provide the networking fabric for the Microsoft Azure Stack solution—NICs (with a varying number of ports and functional levels), switches, hardware- and software-based load balancers, and so forth.</td>
-            </tr>
-            <tr class="even">
-                <td>Storage</td>
-                <td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
-            </tr>
-            <tr class="odd">
-                <td>Security</td>
-                <td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
-            </tr>
-            <tr class="even">
-                <td>Special Items</td>
-                <td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
-            </tr>
-        </tbody>
-    </table>
+<table>
+<thead>
+<tr class="header">
+<th>Compute</th>
+<th>Components in the compute cluster of the Microsoft Azure Stack solution—typically, all parts that go into making an individual server (CPU, memory, a motherboard, a boot disk, a graphics card, a BIOS, and so forth).</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Network</td>
+<td>Components that provide the networking fabric for the Microsoft Azure Stack solution—NICs (with a varying number of ports and functional levels), switches, hardware- and software-based load balancers, and so forth.</td>
+</tr>
+<tr class="even">
+<td>Storage</td>
+<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
+</tr>
+<tr class="odd">
+<td>Security</td>
+<td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
+</tr>
+<tr class="even">
+<td>Special Items</td>
+<td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
+</tr>
+</tbody>
+</table>
 </html>
 
 The goal of this feature is to define product requirements for partners
@@ -8669,12 +9112,14 @@ tests in their minimum and maximum scale supported configurations.
 
 *Microsoft Azure Stack solutions must comply with this specification in their minimum and maximum configurations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8705,12 +9150,14 @@ configurations
 
 *Core requirements for Nano server support on solutions running Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8803,12 +9250,14 @@ the requirements below are applicable:
 
 *Core networking requirements for Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8837,12 +9286,14 @@ Microsoft Azure Stack solutions.
 
 *Server system requirements for Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8864,12 +9315,14 @@ The feature support table is as below:
 
 *Core Storage requirements for Microsoft Azure Stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8924,12 +9377,14 @@ solutions in Windows Server 2016:
 *Storage Spaces Direct solutions must comply with this specification in
 their minimum and maximum configurations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8962,12 +9417,14 @@ intermediate (aka 8-node or 12-node) configurations.
 *Storage Spaces Direct solutions must comply with this specification in
 their minimum and maximum configurations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8998,12 +9455,14 @@ and a 16-node maximum scale configuration, PCS is required on both
 *Core requirements for Nano server support on solutions built on Storage
 Spaces Direct.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9022,12 +9481,14 @@ below
 
 *Core network requirements for solutions built on ‘Storage Spaces Direct’*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9062,12 +9523,14 @@ protocols in support of RoCE).
 
 *Server system requirements for Storage Spaces Direct.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9093,12 +9556,14 @@ Server 2016 supports a maximum of 20 disk devices per server.
 
 *Core storage requirements for solutions built on ‘Storage Spaces Direct’*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
