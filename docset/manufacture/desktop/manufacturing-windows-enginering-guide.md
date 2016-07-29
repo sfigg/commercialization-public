@@ -232,9 +232,9 @@ To disable the app readiness service offline:
 It is recommended that you disable the service offline before entering audit mode. But you can also disable it online in audit mode. You must generalize the image after you disable the service.
 To disable the app readiness service online:
 
-1. In audit mode, open regedit
-2. Navigate to HKLM\Software\Microsoft\Windows\CurrentVersion\AppReadiness DisableInAuditMode 
-3. Set the value of the key to 1
+1. In audit mode, open regedit.
+2. Navigate to HKLM\Software\Microsoft\Windows\CurrentVersion\AppReadiness DisableInAuditMode. 
+3. Set the value of the key to 1.
 
 Run Sysprep generalize before continuing.
 
@@ -434,7 +434,7 @@ You can use this checklist to plan your manufacturing tasks.
 <td>
 <p>ODM chosen?</p>
 </td>
-<td><img src="https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/images/check-mark.png" alt="supported" /></td>
+<td><img src="https://i-technet.sec.s-msft.com/en-us/itpro/windows/manage/images/checkmark.png" alt="supported" /></td>
 <td>
 <p>-</p>
 </td>
