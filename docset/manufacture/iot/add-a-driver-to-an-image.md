@@ -6,17 +6,21 @@ title: 'Lab 1e: Add a driver to an image'
 
 # Lab 1e: Add a driver to an image
 
-Now we'll add drivers to a Windows 10 IoT Core image. 
-
-When you're using a pre-built Board Support Package (BSP), you'll want to know whether there's already similar drivers on the board. If not, you can usually just add the new driver. 
-
-If there is, but that driver doesn't meet your needs, then you'll need to replace the driver from the BSP, which we'll cover in [Lab 2a](create-a-new-bsp.md).
-
-In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm), package it up, and deploy it to the device.
+In this lab, we'll add the sample driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm), package it up, and deploy it to the to a Windows 10 IoT Core device.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 -  Complete [Lab 1a: Create a basic image](create-a-basic-image.md).
+
+## <span id="Check_for_similar_drivers"></span>Check for similar drivers
+
+Before adding drivers, you may want to review your pre-built Board Support Package (BSP) to make sure there's not already a similar driver. 
+
+For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-arm\\BSP\\Rpi2\\Packages\\RPi2FM.xml.
+
+- If there's not an existing driver, you can usually just add one.
+
+- If there is a driver, but it doesn't meet your needs, you'll need to replace the driver by creating a new BSP. We'll cover that in [Lab 2](create-a-new-bsp.md).
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
@@ -82,6 +86,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 **Add your driver package to the feature manifest**
 
 1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-<arch>\\Packages\\OEMFM.xml**
+
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
     ``` syntax      
@@ -98,6 +103,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductA\\TestOEMInput.xml**.
+
 2.  Make sure your feature manifest, OEMFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
     ``` syntax
@@ -125,7 +131,6 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-
 **Build the image**
 
 1.  From the IoT Core Shell, create the image:
@@ -137,6 +142,7 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
 3.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
@@ -145,8 +151,6 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 1.  Use the procedures in the [Hello, Blinky! lab](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab3.htm) to test your driver.
 
-
-
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-[Lab 2: Creating your own board support package](create-a-new-bsp.md)
+[Lab 1f: Build a retail image](build-retail-image.md)
