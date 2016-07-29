@@ -10,6 +10,42 @@ author: beneluxboy
 
 This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.
 
+
+# <a href="" id="overview"></a>Overview of Windows Hardware Compatibility Program
+
+The Windows Hardware Compatibility Program (WHCP) is the primary channel that we use to communicate to the partner community the core expectations that Windows places on devices, kernel-affecting software, systems and solutions. The purpose of the document is to help ensure that products can successfully and seamlessly integrate into Windows. This communication starts with the core tenets and user scenarios that drove Windows design. Those design principles translate into a set of features that cover fundamentals, connectivity, and product-specific features. These design features are codified as discrete requirements which define what Windows expects from the various components and connected devices. A product designed to meet the requirements will be reliable, stable, efficient in power and performance, and provide a great Windows experience.
+
+The program is unique in the industry in terms of the detail and engineering tools that Microsoft freely provides in order to assist partners build, test, secure, and maintain products for success in the Windows environment. No other program provides access to in-the-field telemetry in order to facilitate end-user support and quality assurance, nor as powerful a method to deliver software, drivers and certain firmware updates to end-users necessary to correct identified problems or allow new features to be embraced. 
+
+Partners can self-assess how their products comply with WHCP requirements by using the tests in the Windows Hardware Lab Kit (Windows HLK) for Windows 10. The Windows HLK contains significant enhancements to encourage efficient testing practices, such as early and focused testing, distributed testing and merged multifunction device fundamental testing. Not all requirements are able to be tested in an automated fashion, and automated testing can't fully assure absolute compliance with the requirements, so we continually analyze the end-user experience and improve the tools over time. 
+
+All products will expose a suite of features that can be categorized into four basic groupings, and they must meet all applicable requirements in order to be qualified for Windows Compatibility status. 
+
+| Requirement group | Description |
+|-----------------------|------------------------|
+| Device.Devfund | Fundamental requirements (features) expected of any device, filter or system. |
+| Device.Connectivity | The connectivity requirements exposed for the type of connectivity the device uses. Devices that use more than one type of connectivity bus must meet all of the applicable connectivity buses requirements. |
+| Device-, Filter-, and System-specific requirements | The Device- and System-specific requirements assure that the device/system behaves as Windows expects. |
+| Additional requirements | Requirements related to secondary functions added to the product. For example, removable storage is commonly found on mobile broadband USB-connected units. Both storage and the mobile broadband portion of the requirements must be met in order to be considered as Compatible. |
+
+
+	
+Compatibility is a public statement of confidence from us that the tested device, filter driver, or system works well with Windows. Compatibility benefits include:
+
+ - Signing device drivers.
+
+ - Publishing the product as qualified in various catalogs and on the compatibility center.
+
+ - Collecting and pre-analyzing telemetry on your product in the field to improve your quality assurance efforts.
+
+ - Providing a free and extremely effective distribution channel for driver updates.
+
+ - Providing eligibility for various marketing incentives and a logo license.
+
+
+
+# <a href="" id="system.requirements"></a>System Requirements
+
 These specifications are divided into the following categories and topics:
 
  - [System.Client.BluetoothController.Base](#system.client.bluetoothcontroller.base)
@@ -61,6 +97,7 @@ These specifications are divided into the following categories and topics:
  - [System.Fundamentals.PXE](#system.fundamentals.pxe)
  - [System.Fundamentals.Reliability](#system.fundamentals.reliability)
  - [System.Fundamentals.Security](#system.fundamentals.security)
+ - [System.Fundamentals.ServerNano](#system.fundamentals.servernano)
  - [System.Fundamentals.SignedDrivers](#system.fundamentals.signeddrivers)
  - [System.Fundamentals.SMBIOS](#system.fundamentals.smbios)
  - [System.Fundamentals.StorageAndBoot](#system.fundamentals.storageandboot)
@@ -73,6 +110,7 @@ These specifications are divided into the following categories and topics:
  - [System.Fundamentals.USBBoot](#system.fundamentals.usbboot)
  - [System.Fundamentals.USBDevice](#system.fundamentals.usbdevice)
  - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
+ - [System.Server.Assurance](#system.server.assurance)
  - [System.Server.AzureStack](#system.server.azurestack)
  - [System.Server.AzureStack.Storage](#system.server.azurestack.storage)
  - [System.Server.AzureStack.Networking](#system.server.azurestack.networking)
@@ -88,13 +126,22 @@ These specifications are divided into the following categories and topics:
  - [System.Server.Firmware.UEFI.GOP](#system.server.firmware.uefi.gop)
  - [System.Server.Firmware.VBE](#system.server.firmware.vbe)
  - [System.Server.Graphics](#system.server.graphics)
+ - [System.Server.Manageability.Redfish](#system.server.manageability.redfish)
  - [System.Server.PowerManageable](#system.server.powermanageable)
  - [System.Server.RemoteFX](#system.server.remotefx)
  - [System.Server.SMBIOS](#system.server.smbios)
+ - [System.Server.StorageManageability.Smapi](#system.server.storagemanageability.smapi)
+ - [System.Server.StorageManageability.Smapi.BlockStorage](#system.server.storagemanageability.smapi.blockStorage)
+ - [System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication](#system.server.storagemanageability.smapi.blockStorage.remotereplication)
+ - [System.Server.StorageManageability.Smapi.FileStorage](#system.server.storagemanageability.smapi.filestorage)
+ - [System.Server.StorageManageability.Smapi.Smi](#system.server.storagemanageability.smapi.smi)
  - [System.Server.SVVP](#system.server.svvp)
  - [System.Server.SystemStress](#system.server.systemstress)
  - [System.Server.Virtualization](#system.server.virtualization)
  - [System.Server.WHEA](#system.server.whea)
+ - [System.Solutions.AzureStack](#system.solutions.azurestack)
+ - [System.Solutions.StorageSpacesDirect](#system.solutions.storagespacesdirect)
+
 
 
 <a name="system.client.bluetoothcontroller.base"></a>
@@ -106,6 +153,7 @@ These specifications are divided into the following categories and topics:
 
 *If a system includes a Bluetooth enabled controller it must support the Bluetooth 4.0 specification requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -115,15 +163,18 @@ These specifications are divided into the following categories and topics:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
-The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low Energy (LE) Combined Core Configuration Controller Parts and Host/Controller Interface (HCI) Core Configuration requirements outlined in the Compliance Bluetooth Version 4.0 specifications. 
+The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low Energy (LE) Combined Core Configuration Controller Parts and Host/Controller Interface (HCI) Core Configuration requirements outlined in the Compliance Bluetooth Version 4.0 specifications.
+
 
 ### System.Client.BluetoothController.Base.CS
 
 *Systems that support Connected Standby with Bluetooth enabled controllers must ship with Microsoft's inbox Bluetooth stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -133,6 +184,7 @@ The Bluetooth enabled controller must comply with the Basic Rate (BR) and Low En
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -142,6 +194,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 
 *MSFT Defined HCI extensions support for hardware offload of advertisement and RSSI monitoring.*                                                                                                                                                       
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -151,6 +204,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 
 **Description**  
@@ -162,6 +216,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 
 *Systems with Bluetooth enabled controllers must support a minimum set of LE state combinations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -171,6 +226,7 @@ Systems that support Connected Standby that ship with Bluetooth enabled control
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -180,6 +236,7 @@ The Bluetooth enabled controller must allow the spec LE state combinations (as a
 
 *Systems with Bluetooth enabled controllers must support a minimum LE allow list size of 25 entries.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -189,6 +246,7 @@ The Bluetooth enabled controller must allow the spec LE state combinations (as a
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -196,8 +254,9 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 
 ### System.Client.BluetoothController.Base.NoBluetoothLEFilterDriver
 
-*Bluetooth LE filter drivers are not allowed to load on BTHLEENUM.SYS. *
+*Bluetooth LE filter drivers are not allowed to load on BTHLEENUM.SYS.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -207,6 +266,7 @@ The Bluetooth enabled controller on the system must support a minimum of 25 entr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -214,8 +274,9 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 
 ### System.Client.BluetoothController.Base.OnOffStateControllableViaSoftware
 
-*Bluetooth enabled controllers’ On/Off state must be controllable via software. *
+*Bluetooth enabled controllers’ On/Off state must be controllable via software.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -225,6 +286,7 @@ To ensure a uniform experience across Windows Store Apps using the Bluetooth LE 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -242,6 +304,7 @@ The radio must maintain on/off state across sleep and reboot.
 
 *Bluetooth enabled controllers must support simultaneous BR/EDR and LE traffic.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -251,6 +314,7 @@ The radio must maintain on/off state across sleep and reboot.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -258,6 +322,7 @@ Bluetooth enabled controllers must allow the simultaneous use of both Basic Rate
 
 ### System.Client.BluetoothController.Base.WidebandSpeech
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -265,6 +330,7 @@ Bluetooth enabled controllers must allow the simultaneous use of both Basic Rate
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -280,6 +346,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 
 *Windows Systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existence requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -289,6 +356,7 @@ We want users to experience the best possible quality audio when using Bluetooth
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -301,12 +369,13 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 <a name="system.client.bluetoothcontroller.nonusb"></a>
 ## System.Client.BluetoothController.NonUSB
 
-*These requirements apply to systems that have non-USB Bluetooth enabled controllers. *
+*These requirements apply to systems that have non-USB Bluetooth enabled controllers.*
 
 ### System.Client.BluetoothController.NonUSB.NonUsbUsesMicrosoftsStack
 
-*Any platform using a non-USB connected Bluetooth enabled controller must ship with Microsoft’s inbox Bluetooth stack. *
+*Any platform using a non-USB connected Bluetooth enabled controller must ship with Microsoft’s inbox Bluetooth stack.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -316,6 +385,7 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -323,8 +393,9 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 
 ### System.Client.BluetoothController.NonUSB.ScoSupport
 
-*Any platform with a non-USB connected Bluetooth enabled controller must use a sideband channel for SCO. *
+*Any platform with a non-USB connected Bluetooth enabled controller must use a sideband channel for SCO.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -334,6 +405,7 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -342,12 +414,13 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 <a name="system.client.bluetoothcontroller.usb"></a>
 ## System.Client.BluetoothController.USB
 
-*These requirements apply to systems that have USB Bluetooth enabled controllers. *
+*These requirements apply to systems that have USB Bluetooth enabled controllers.*
 
 ### System.Client.BluetoothController.USB.ScoDataTransportLayer
 
-*Bluetooth enabled host controllers support the SCO data transport layer as specified in the Bluetooth 2.1+EDR specifications. *
+*Bluetooth enabled host controllers support the SCO data transport layer as specified in the Bluetooth 2.1+EDR specifications.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -357,6 +430,7 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -371,6 +445,7 @@ A System with a Bluetooth enabled controller must comply with the Synchronous Co
 
 Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based backlight power optimization to reduce backlight level used by integrated panel.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -381,6 +456,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -414,6 +490,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 
 *Systems that have built in physical brightness control function keys use standard ACPI events and support control of LCD backlight brightness via ACPI methods in the system firmware.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -424,6 +501,7 @@ Windows Display Driver Model (*WDDM) 1.2 drivers must enable scenario based back
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -448,7 +526,8 @@ Support for the \_BQC method is highly recommended but not required. Systems mus
 
  - ACPI\_NOTIFY\_ZERO\_BRIGHTNESS\_HOTKEY 0x88
 
-*Design Notes: *
+ 
+*Design Notes:*
 
 The \_BCL and \_BCM methods in the firmware enable the operating system to query the brightness range and values and to set new values. Refer to the ACPI 3.0 specification for more details.
 
@@ -456,6 +535,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 *Driver must support a smooth transition in response to all brightness change requests from Windows.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -466,6 +546,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -497,6 +578,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 14. Brightness levels are represented as a % in Windows. Therefore there is no absolute mapping between brightness % level and physical brightness level. For Windows 8, the following is the guidance.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -515,14 +597,18 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 </tr>
 </tbody>
 </table>
+</html>
 
 <a name="system.client.buttons"></a>
 ## System.Client.Buttons
+
+<!--There is no content provided here in the original Word file.-->
 
 ### System.Client.Buttons.HardwareButtons
 
 *Hardware buttons are implemented correctly*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -532,8 +618,11 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
+
+This requirement is currently optional and will not be enforced until 2017.
 
 Hardware buttons must be implemented according to the guidance on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn957423(v=vs.85).aspx>
 
@@ -548,6 +637,7 @@ In the case where buttons are not wired through GPIO interrupts, buttons must be
 
 *Systems with integrated cameras must meet camera device requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -557,6 +647,7 @@ In the case where buttons are not wired through GPIO interrupts, buttons must be
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -568,6 +659,7 @@ Note: With regards to ‘**Device.Streaming.Camera.Base.UsageIndicator’** if a
 
 *Systems with integrated cameras must report the physical location of each camera.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -577,6 +669,7 @@ Note: With regards to ‘**Device.Streaming.Camera.Base.UsageIndicator’** if a
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -592,6 +685,7 @@ All other fields in the \_PLD are optional.
 
 *Systems with integrated cameras meet the requirements of, and can support the Windows Capture Infrastructure.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -601,10 +695,11 @@ All other fields in the \_PLD are optional.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
-*System Memory: *
+*System Memory:*
 
 System Memory must be supported.
 
@@ -612,7 +707,7 @@ System Memory must be supported.
 
 All integrated Cameras must support independent streaming between different pins and different filters (cameras) according to the capabilities listed in the Profiles advertised by the device. If the camera does not support Profiles, then concurrent streaming for *all* system cameras is optional.
 
-*Mirroring: *
+*Mirroring:*
 
 The default state for mirroring must be "not mirrored."
 
@@ -717,6 +812,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 
 *System Digitizer Base*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -727,6 +823,7 @@ If any parameter is not set in per frame settings the driver shall follow the gl
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -740,6 +837,7 @@ The following Digitizer Base device level requirements must be met and verified 
 
 *System Pen*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -747,6 +845,7 @@ The following Digitizer Base device level requirements must be met and verified 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -767,6 +866,7 @@ The following Pen device level requirements must be met and verified upon integr
 
 *System Touch*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -776,6 +876,7 @@ The following Pen device level requirements must be met and verified upon integr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -808,6 +909,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 
 *Precision Touchpad*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -816,6 +918,7 @@ All other systems must support a minimum of 5 simultaneous contact points
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -843,6 +946,7 @@ A touchpad may not be marketed as a Precision Touchpad if the device requires a 
 
 *System Pen Contact Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -850,6 +954,7 @@ A touchpad may not be marketed as a Precision Touchpad if the device requires a 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -859,6 +964,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Buffering for buses with High Resume latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -866,6 +972,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -875,6 +982,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -882,6 +990,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -891,6 +1000,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Custom Run-Time System Gestures*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -898,6 +1008,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -907,6 +1018,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Eraser Affordance*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -914,6 +1026,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -923,6 +1036,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -930,6 +1044,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -939,6 +1054,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Hover Range*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -946,6 +1062,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -955,6 +1072,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -962,6 +1080,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -971,6 +1090,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Response Latencies*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -978,6 +1098,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -987,6 +1108,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Pressure Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -994,6 +1116,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1003,6 +1126,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Report Rate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1010,6 +1134,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1019,6 +1144,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1026,6 +1152,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1035,6 +1162,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Pen Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1042,6 +1170,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1054,6 +1183,7 @@ The following Pen device level requirement must be met and verified upon integra
 
 *System Precision Touchpad Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1061,6 +1191,7 @@ The following Pen device level requirement must be met and verified upon integra
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1070,6 +1201,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Buffering for Buses with High Resume Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1077,6 +1209,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1086,6 +1219,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Physical Buttons and Button Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1093,6 +1227,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1102,6 +1237,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1109,6 +1245,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1118,6 +1255,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Contact Tip Switch Height*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1125,6 +1263,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1134,6 +1273,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Device Type*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1141,6 +1281,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1150,6 +1291,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Dimensions*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1157,6 +1299,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1166,6 +1309,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Finger Separation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1173,6 +1317,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1182,6 +1327,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1189,6 +1335,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1198,6 +1345,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1205,6 +1353,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1214,6 +1363,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1221,6 +1371,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1230,6 +1381,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Response Latencies*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1237,6 +1389,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1246,6 +1399,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Contact Count*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1253,6 +1407,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1262,6 +1417,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Report Rates*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1269,6 +1425,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1278,6 +1435,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Selective Reporting*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1285,6 +1443,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1294,6 +1453,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Precision Touchpad Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1301,6 +1461,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1313,6 +1474,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 
 *System Touch Accuracy*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1322,6 +1484,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1331,6 +1494,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Buffering for Buses with High Resume Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1340,6 +1504,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1349,6 +1514,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Digitizer Reliability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1358,6 +1524,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1367,6 +1534,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Custom Run-Time System Gestures*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1376,6 +1544,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1385,6 +1554,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Finger Separation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1394,6 +1564,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1403,6 +1574,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch HID Compliant Device Firmware and/or HID Mini-port Driver*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1412,6 +1584,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1421,6 +1594,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Jitter and Linearity*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1430,6 +1604,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1439,6 +1614,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Response Latency*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1448,6 +1624,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1457,6 +1634,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Minimum Simultaneous Reportable Contacts*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1466,6 +1644,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1475,6 +1654,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Report Rate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1484,6 +1664,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1493,6 +1674,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Input Resolution*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1502,6 +1684,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1511,6 +1694,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System Touch Servicing and 3<sup>rd</sup> Party Driver Availability*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1520,6 +1704,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1532,6 +1717,7 @@ The following Touch device level requirements must be met and verified upon inte
 
 *System firmware must support Graphics Output Protocol (GOP) and Windows display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1542,6 +1728,7 @@ The following Touch device level requirements must be met and verified upon inte
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1599,6 +1786,7 @@ The display is controlled by the system UEFI before the WDDM graphics driver tak
 
 *A Windows client system must have a "Full" graphics device and that device must be the post device.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1608,6 +1796,7 @@ The display is controlled by the system UEFI before the WDDM graphics driver tak
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1618,6 +1807,7 @@ Each of these driver/device types are designed for specific scenarios and usage 
 
 *Graphics driver must not enumerate more than one monitor as internal.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1627,6 +1817,7 @@ Each of these driver/device types are designed for specific scenarios and usage 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1638,6 +1829,7 @@ For more information, see the Graphics guide for Windows 7 at [http://go.microso
 
 *All Windows graphics drivers must be Windows Display Driver Model (WDDM).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1647,6 +1839,7 @@ For more information, see the Graphics guide for Windows 7 at [http://go.microso
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1656,6 +1849,7 @@ WDDMv1.3 is required by all systems shipped with Windows 10.
 
 Table below explains the scenario usage for the Graphic driver types:
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1697,11 +1891,13 @@ Table below explains the scenario usage for the Graphic driver types:
 </tr>
 </tbody>
 </table>
+</html>
 
 ### System.Client.Graphics.WDDMSupportRotatedModes
 
 *If accelerometer is present, Windows Display Driver Model (WDDM) driver must support all rotated modes.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1711,6 +1907,7 @@ Table below explains the scenario usage for the Graphic driver types:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1727,6 +1924,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *System limitations for wireless and USB connected displays.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1736,6 +1934,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1764,6 +1963,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *USB-interface-based GSM and CDMA class of Mobile Broadband device firmware must comply with USB-IF's Mobile Broadband Interface Model Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1774,6 +1974,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1797,6 +1998,7 @@ Note that above exceptions are applicable only if:
 
 *System Builders must ensure that the RF performance is optimized for Mobile Broadband, Wi-Fi and Bluetooth enabled radios running at the same time.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1807,6 +2009,7 @@ Note that above exceptions are applicable only if:
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1816,6 +2019,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 
 *Systems that include Broadband support meet Windows requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1826,6 +2030,7 @@ System Builders must ensure that the RF performance is optimized for Mobile Broa
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1836,6 +2041,7 @@ compliant with the Mobile Broadband Interface Model specification. These devices
 USB Forum for compliance (when it becomes available for MB devices).
 In addition to the above, firmware needs to support the features listed below as specified by NDIS.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1865,7 +2071,8 @@ In addition to the above, firmware needs to support the features listed below as
 <td>Required</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 No additional Connection Manager software is required for the operation of mobile broadband devices.
 Value-add Mobile Broadband Connection Managers, if implemented, need to implement the Mobile Broadband
@@ -1874,6 +2081,7 @@ Microsoft strongly recommends USB-based bus interfaces such as analog USB, HSIC 
 (when available). Mobile Broadband stack in Windows 8 is designed to support only USB protocol based bus
 interfaces. The following table summarizes the required mobile broadband features.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -1887,31 +2095,36 @@ interfaces. The following table summarizes the required mobile broadband feature
 <td>USB-HSCI (preferred) or USB</td>
 </tr>
 </tbody>
-</table>
+<table>
 
+<ul>
+<li><p>Devices MUST support 16 bitmap wake patterns of 128 bytes each.</p></li>
+<li><p>Devices MUST wake the system on register state change.</p></li>
+<li><p>Devices MUST wake the system on media connect.</p></li>
+<li><p>Devices MUST wake the system on media disconnect.</p></li>
+<li><p>GSM and CDMA class of Devices MUST wake the system on receiving an incoming SMS message.</p></li>
+<li><p>Devices that support USSD MUST wake the system on receiving USSD message.</p></li>
+<li><p>Devices MUST support wake packet indication. NIC should cache the packet causing the wake on hardware and pass it up when the OS is ready for receives.</p></li>
+<li><p>Mobile Broadband class of devices must support Wake on Mobile Broadband. It should wake the system on above mentioned events. Note that wake on USSD is mandatory only if the device reports that it supports USSD. Else it is optional. See the following MSDN documentation for more information on the SMS and register state wake events.</p>
+<ul>
+<li><p>NDIS_STATUS_WWAN_REGISTER_STATE</p></li>
+<li><p>NDIS_STATUS_WWAN_SMS_RECEIVE</p></li>
+</ul>
+</li>
+</ul>
+</html>
 
-Systems must also comply with Mobile Broadband requirements:
-
- - Devices MUST support 16 bitmap wake patterns of 128 bytes each.
- - Devices MUST wake the system on register state change.
- - Devices MUST wake the system on media connect.
- - Devices MUST wake the system on media disconnect.
- - GSM and CDMA class of Devices MUST wake the system on receiving an incoming SMS message.
- - Devices that support USSD MUST wake the system on receiving USSD message.
- - Devices MUST support wake packet indication. NIC should cache the packet causing the wake on hardware and pass it up when the OS is ready for receives.
- - Mobile Broadband class of devices must support Wake on Mobile Broadband. It should wake the system on above mentioned events. Note that wake on USSD is mandatory only if the device reports that it supports USSD. Else it is optional. See the following MSDN documentation for more information on the SMS and register state wake events.
-	 - NDIS\_STATUS\_WWAN\_REGISTER\_STATE
-	 - NDIS\_STATUS\_WWAN\_SMS\_RECEIVE
 
 <a name="system.client.pccontainer"></a>
 ## System.Client.PCContainer
 
-*Windows is moving towards a device centric presentation of computers and devices.  Elements of the Windows user interface (UI), such as the Devices and Printers folder, will show the computer and all devices that are connected to the computer.  The requirements in this section detail what is required to have the PC appear as a single object in the Windows UI.  *
+*Windows is moving towards a device centric presentation of computers and devices.  Elements of the Windows user interface (UI), such as the Devices and Printers folder, will show the computer and all devices that are connected to the computer.  The requirements in this section detail what is required to have the PC appear as a single object in the Windows UI.*
 
 ### System.Client.PCContainer.PCAppearsAsSingleObject
 
 *Computers must appear as a single object in the Devices and Printers folder.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1922,6 +2135,7 @@ Systems must also comply with Mobile Broadband requirements:
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1952,8 +2166,9 @@ The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be exec
 
 ### System.Client.RadioManagement.HardwareButton
 
-*If a PC has a physical (hardware) button switch on a PC that turns wireless radios on and off, it must be software controllable and interact appropriately with the Radio Management UI. *
+*If a PC has a physical (hardware) button switch on a PC that turns wireless radios on and off, it must be software controllable and interact appropriately with the Radio Management UI.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1964,6 +2179,7 @@ The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be exec
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -1984,8 +2200,9 @@ When there is a hardware button for wireless radios there must not be more than 
 
 ### System.Client.RadioManagement.RadioMaintainsState
 
-*Radio maintains on/off state across sleep and reboot power cycles. *
+*Radio maintains on/off state across sleep and reboot power cycles.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -1996,6 +2213,7 @@ When there is a hardware button for wireless radios there must not be more than 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2003,8 +2221,9 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 
 ### System.Client.RadioManagement.RadioManagementAPIHID
 
-*Wireless hardware button must communicate the change of state to the Radio Management API using HID. *
+*Wireless hardware button must communicate the change of state to the Radio Management API using HID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2015,11 +2234,13 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 When the state of wireless radio switch changes, whether it is a slider A-B switch (with or without LED) or toggle button (with or without LED), this HID-compliant hardware switch/button must expose the HID collections to be consumed by the radio management API. Toggle button must not change the state of the device radio directly. A-B switch can be wired directly to the radios and change their state as long as it communicates the change of state to the Radio Management API using the HID driver and it changes the state in all radios present in the PC. The HID usage IDs are: 
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -2050,7 +2271,8 @@ When the state of wireless radio switch changes, whether it is a slider A-B swit
 <td>OOC</td>
 </tr>
 </tbody>
-</table>
+<table>
+<html>
 
 The collections are shown in the following tables.
 <!--These tables, which were simple lists in the original Word document, seem like they should and could be unified. 
@@ -2058,7 +2280,7 @@ However, based on the text in the first columns, they aren't ready to simply hav
 the same table. Creating a table that accommodates the differences is beyond the scope of this conversion to Markdown.-->
 
 **Table 1. Button without LED (stateless button) – For laptops, tablets and convertibles**
-
+<html>
 <table border="2">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2109,9 +2331,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-
+</html>
 
 **Table 2. Button with LED – For laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2182,9 +2405,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-                                     
+</html>                                   
 
 **Table 3. Slider Switch (without LED) - For laptops, tablets and convertibles**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2234,10 +2458,11 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>END\_COLLECTION</td>
 		<td>C0,</td>
 	</tr>
-</table>
-                                       
- 
+</table>                                      
+</html> 
+
 **Table 4. Slider Switch with LED- Laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2308,10 +2533,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-                                                         
-                                        
- 
+</html>                                                       
+
 **Table 5. LED Only (No button or slider) - Laptops, tablets and convertibles that do NOT support connected standby**
+<html>
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2361,7 +2586,9 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>END\_COLLECTION</td>
 		<td>C0</td>
 	</tr>
-</table>                                       
+</table> 
+</html>
+
  
 Wireless radio LED must have a HID-compliant driver to reflect the state of the airplane mode switch located in the user interface.  Wireless radio LED only uses HID for output (no input since there is no button). 
 
@@ -2379,6 +2606,7 @@ For an A-B switch, the manufacturer's proprietary embedded controller must repor
 
 *Systems that support Connected Standby must not include a light indicating the status of the radios in the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2388,6 +2616,7 @@ For an A-B switch, the manufacturer's proprietary embedded controller must repor
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2400,6 +2629,7 @@ In order to conserve energy, systems that support connected standby cannot inclu
 
 *Windows 10 systems must include certain devices.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2409,11 +2639,14 @@ In order to conserve energy, systems that support connected standby cannot inclu
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 For all other Windows 10 systems, the table below lists the minimum required components to be present in a system in order for it to be compatible for Windows 10. All components must meet the compatibility requirements and pass device compatibility testing for Windows 10.
 <!--This table was also broken in the original Word document.-->
+
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -2445,6 +2678,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 </tr>
 </tbody>
 </table>
+</html>
 
 <a name="system.client.systemimage"></a>
 ## System.Client.SystemImage
@@ -2455,6 +2689,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 
 *System includes Windows Recovery Environment on a separate partition.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2464,6 +2699,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2478,6 +2714,7 @@ A system must include a separate partition with a bootable Windows Recovery Envi
 
 *Systems that ship with a Windows operating system must meet partitioning requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2487,6 +2724,7 @@ A system must include a separate partition with a bootable Windows Recovery Envi
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2499,6 +2737,7 @@ Tools and documentation to implement split-loader configuration can be found in 
 
 *Windows systems with recovery & OEM partitions must meet partitioning requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2508,6 +2747,7 @@ Tools and documentation to implement split-loader configuration can be found in 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2525,6 +2765,7 @@ Partitions which are identified with the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED attr
 
 *Systems with accelerometers perform screen rotation in 300 milliseconds and without any video glitches.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2534,6 +2775,7 @@ Partitions which are identified with the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED attr
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2552,6 +2794,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 *Graphics drivers on Tablet systems are required to support all mode orientations.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2561,6 +2804,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2578,6 +2822,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 
 ### System.Client.WLAN.BasicConnectivity.WlanBasicConnectivity
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2587,6 +2832,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2606,6 +2852,7 @@ Timing for the above actions can be found in the Windows 10 WLAN Device requirem
 
 ### System.Client.WLAN.HangDetectionAndRecovery.WlanHangDetectionAndRecovery (If-Implemented) **(WDI Drivers Only)**
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2615,6 +2862,7 @@ Timing for the above actions can be found in the Windows 10 WLAN Device requirem
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2637,6 +2885,7 @@ System: The system must complete the reset within 10 seconds.
 
 ### System.Client.WLAN.HostedNetwork.WlanHostedNetwork (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2646,6 +2895,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**With this feature, a Windows computer can use a single physical wireless adapter to connect as a client to a hardware access point (AP), while at the same time acting as a software AP allowing other wireless-capable devices to connect to it.
 
@@ -2654,6 +2904,7 @@ System: The system must complete the reset within 10 seconds.
 
 ### System.Client.WLAN.WiFiDirect.WlanWiFiDirect (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2663,6 +2914,7 @@ System: The system must complete the reset within 10 seconds.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2673,6 +2925,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 
 ### System.Client.WLAN.Miracast.WlanMiracast (If-Implemented)
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2682,6 +2935,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -2696,6 +2950,7 @@ Miracast requires both WiFiDirect support in the WLAN Adapter and support in the
 
 *System exposes debug interface that complies with Debug Port Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2706,6 +2961,7 @@ Miracast requires both WiFiDirect support in the WLAN Adapter and support in the
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2746,12 +3002,13 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 <a name="system.fundamentals.debugport.usb"></a>
 ## System.Fundamentals.DebugPort.USB
 
-*The ability to debug a USB3 system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the debugging capability for the xHCI controller based systems via a debug registers. Every system that has xHCI controller and USB3 external port should support via this port. *
+*The ability to debug a USB3 system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the debugging capability for the xHCI controller based systems via a debug registers. Every system that has xHCI controller and USB3 external port should support via this port.*
 
 ### System.Fundamentals.DebugPort.USB.SystemExposesDebugInterfaceUsb
 
 *USB 3 system exposes debug interface that complies with Debug Port Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2762,6 +3019,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2777,6 +3035,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 
 
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2786,9 +3045,11 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 ### System.Fundamentals.EnergyEstimation.Discretional
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2799,6 +3060,7 @@ For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 There are currently three energy micro-benchmark tests in the HLK including primary storage, network, and primary display. These benchmarks are targeted to execute on any battery powered device. While in execution, the benchmarks emulate a set of steady state workloads of a particular component. At the same time, they also observe the battery drain.
 
@@ -2846,6 +3108,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 
 *ACPI System Requirements*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -2856,6 +3119,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2948,12 +3212,14 @@ Any system that supports Connected Standby that sets the "CMOS RTC Not Present
 
 *System firmware supports booting from DVD device as defined by the El Torito specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -2963,12 +3229,14 @@ The system firmware must support booting the system DVD if the system includes a
 
 *System firmware provides USB boot support for USB keyboards, mouse, and hubs*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
-</tr></td></table>
+</td></tr></table>
+</html>
 
 **Description**
 
@@ -2992,6 +3260,7 @@ The USB controller and USB devices must be fully enumerated when:
 
 *System.Fundamentals.Firmware.HardwareMemoryReservation*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3001,6 +3270,7 @@ The USB controller and USB devices must be fully enumerated when:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3033,6 +3303,7 @@ Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http:
 
 *All external DMA ports must be off by default until the OS explicitly powers them through related controller(s).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3042,6 +3313,7 @@ Installed memory is queried via Query [GetPhysicallyInstalledSystemMemory](http:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3055,6 +3327,7 @@ Note that this requirement precludes the use of attached storage as boot media i
 
 *A system with TPM that supports wired LAN in pre-OS must support the UEFI 2.3.1 EFI\_DHCP4\_PROTOCOL protocol and the UEFI 2.3.1 EFI\_DHCP6\_PROTOCOL (and the corresponding service binding protocols).*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3065,6 +3338,7 @@ Note that this requirement precludes the use of attached storage as boot media i
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3081,6 +3355,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *UEFI firmware honors software control over load option variables.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3090,6 +3365,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3115,6 +3391,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *System firmware must meet Windows Compatibility requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3125,6 +3402,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3143,6 +3421,7 @@ OEMs may ship with CSM mode activated and the enterprise or government customer'
 
 *All client systems must be able to boot into UEFI boot mode and attempt to boot into this mode by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3153,6 +3432,7 @@ OEMs may ship with CSM mode activated and the enterprise or government customer'
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3164,6 +3444,7 @@ This requirement is "If Implemented" for Server systems.
 
 *System firmware must not fall back to legacy BIOS mode without explicit user action.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3174,6 +3455,7 @@ This requirement is "If Implemented" for Server systems.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3192,6 +3474,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 *All client systems must support UEFI Secure boot.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3202,11 +3485,13 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Note: These requirements are "If Implemented" for Server systems and apply only if a Server system supports UEFI Secure Boot.
 
+<html>
 <ol style="list-style-type: decimal">
 <li><p>Secure Boot must ship enabled with minimum of UEFI 2.3.1 Errata C.</p></li>
 <li><p>For the purposes of UEFI Secure Boot, the platform shall expose an interface to Secure Boot, whereby the system firmware is compliant with the following sections and sub-sections of UEFI version 2.3.1 Errata C:</p>
@@ -3216,9 +3501,11 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>7.2.1</p></li>
 <li><p>27.2</p></li>
 <li><p>27.5 - 27.8 (as further profiled below).</p></li>
-</ol></li>
+</ol>
+</li>
 
 <li><p>UEFI Version 2.3.1 Errata C variables must be set to SecureBoot=1 and SetupMode=0 with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned, and include a PK that is set and a valid KEK database. The system uses this database to verify that only trusted code (for example: trusted signed boot loader) is initialized, and that any unsigned image or an image that is signed by an unauthorized publisher does not execute. The contents of the signature database are determined by the OEM, based on the required native and third- party UEFI drivers, respective recovery needs, and the OS Boot Loader installed on the machine. The following Microsoft-provided EFI_CERT_X509 signature shall be included in the signature database: &quot;CN=Microsoft Windows Production PCA 2011&quot; and &quot;Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d&quot; which shall use the following SignatureOwner GUID: {77fa9abd-0359-4d32- bd60-28f4e78f784b}, must also be included in the form of either an EFI_CERT_X509_GUID or EFI_CERT_RSA2048_GUID type:</p>
+
 
 <ol style="list-style-type: lower-alpha">
 <li><p>Note: Must NOT contain the following certificate: &quot;CN=Microsoft Windows PCA 2010&quot; and &quot;Cert Hash(sha1): c0 13 86 a9 07 49 64 04 f2 76 c3 c1 85 3a bf 4a 52 74 af 88&quot;</p></li>
@@ -3287,11 +3574,13 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Platform Recovery (Revision 1227, Section 23.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
 <li><p>[If Implemented] If platform ships with UEFI 2.5 the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document (this document is available on CONNECT).</p></li>
 </ol>
+</html>
 
 ### System.Fundamentals.Firmware.UEFITimingClass
 
 *System firmware must expose timing and class information.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3301,6 +3590,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3312,6 +3602,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 
 *System firmware must meet the requirements in order to support system and/or device firmware updates using firmware driver package.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3322,6 +3613,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3358,6 +3650,7 @@ OS after an update is applied.
 
 *System firmware must be able to boot a system with onboard or integrated graphics and with multiple graphics adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3368,6 +3661,7 @@ OS after an update is applied.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3378,6 +3672,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 
 *Systems with a boot device with a capacity greater than 2.2 terabytes must comply with requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3388,6 +3683,7 @@ If the system includes PCI, AGP, or PCI Express expansion slots, the system fir
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3406,6 +3702,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
 
 *System that support Connected Standby must include cryptographic capabilities to meet customer expectations on platform speed and performance.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3415,6 +3712,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3437,6 +3735,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 **Table: Algorithm-specific requirements. The "Category" column classifies algorithms as mandatory to support at the software interface as per requirement 4 (M), or optional (O). Note that all algorithms that are accelerated in hardware must also be exposed through the software interface.**
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -3522,6 +3821,7 @@ Since all components in the boot path as well as many performance-critical OS su
 </tr>
 </tbody>
 </table>
+</html>
 
 <sup>1</sup> The Connected Standby vendor shall supply documentation indicating, and allowing Microsoft to estimate, the quality of the entropy source. The entropy shall be assessed using the min-entropy method of Appendix C of National Institute for Standards and Technology, "Recommendation for Random Number Generation using Deterministic Random Bit Generators," [FIPS 800-90](http://www.nist.gov/customcf/get_pdf.cfm?pub_id=50814), March 2007 and must surpass or be equal to 256 bits before the runtime OS starts.
 
@@ -3531,6 +3831,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 *All client systems that support Connected Standby must support UEFI Secure Boot.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3540,6 +3841,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3586,6 +3888,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 *Systems which ship with a self-encrypting hard drive as a storage device must support the UEFI 2.3.1 EFI\_STORAGE\_SECURITY\_COMMAND\_PROTOCOL protocols and shall contain a non-OS partition that can be used to store WinRE.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3596,6 +3899,7 @@ Since all components in the boot path as well as many performance-critical OS su
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3622,6 +3926,7 @@ This requirement is “If Implemented” for Server systems and applies only if 
 
 *32-bit and 64-bit system firmware supports large aperture graphic adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3632,6 +3937,7 @@ This requirement is “If Implemented” for Server systems and applies only if 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3642,6 +3948,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 
 *System is compatible with the Microsoft Basic Display Driver.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3652,6 +3959,7 @@ A system that supports multiple graphics adapters must ensure sufficient resourc
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3661,6 +3969,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 
 *Graphics drivers must be upgradable without a reboot of the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3671,6 +3980,7 @@ The System must boot in a mode where the frame buffer used by the Microsoft basi
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3686,6 +3996,7 @@ For example the graphics driver package includes the graphics driver and all ass
 
 *Display device functions properly and does not generate hangs or faults under prolonged stress.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3696,6 +4007,7 @@ For example the graphics driver package includes the graphics driver and all ass
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3710,6 +4022,7 @@ The system must run under prolonged stress without generating hangs or faults.
 
 *Hybrid Graphics*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3720,6 +4033,7 @@ The system must run under prolonged stress without generating hangs or faults.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3839,6 +4153,7 @@ Following are the power management requirements for the discrete GPU participati
     <td align="right">250 ms</td>
   </tr>
 </table>
+</html>
 
 
 
@@ -3851,6 +4166,7 @@ Following are the power management requirements for the discrete GPU participati
 
 *Systems with integrated displays must use native resolution by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3861,6 +4177,7 @@ Following are the power management requirements for the discrete GPU participati
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3880,6 +4197,7 @@ This requirement applies to systems that use UEFI or BIOS. 
 
 *On a system with multiple graphics adapters, system firmware will allow the user to configure the usage of the adapters.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3890,6 +4208,7 @@ This requirement applies to systems that use UEFI or BIOS. 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3920,6 +4239,7 @@ On a system with multiple graphics adapters, the system firmware (BIOS, UEFI, et
 
 *Hybrid/Switchable Graphics systems that support multiple discrete graphics adapters or chipset combination must use the same Subsystem ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3930,6 +4250,7 @@ On a system with multiple graphics adapters, the system firmware (BIOS, UEFI, et
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -3983,6 +4304,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 
 *Render Only device on client or server system must be Direct3D 10 capable or greater.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -3993,6 +4315,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4007,12 +4330,14 @@ If a client or server system includes a render only device, the device must be D
 
 *Signed HAL extensions are required for timers and DMA controllers that are not supported in-box*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows 10 Mobile ARM</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4039,12 +4364,14 @@ If the platform includes a system (shared) DMA controller, the CSRT must include
 
 *System provides a high-precision event timer*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4072,6 +4399,7 @@ Architecture Personal Computer (IA-PC) HPET Specification:
 
 *I2C connected HID devices must have a Unique HWID along with a HID compatible ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4081,6 +4409,7 @@ Architecture Personal Computer (IA-PC) HPET Specification:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4094,6 +4423,7 @@ See Microsoft published HID I2C protocol specification.
 
 *All PS/2 connected devices (such as internal keyboards) must have a unique hardware ID.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4103,6 +4433,7 @@ See Microsoft published HID I2C protocol specification.
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4121,6 +4452,7 @@ See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/wh
 
 *System includes marker file*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4131,6 +4463,7 @@ See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/wh
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4172,6 +4505,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 
 *Wireless LAN networking device on systems that support Connected Standby must support NDIS 6.30 and support offloads.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4182,6 +4516,7 @@ The marker file goes in the c:\\windows\\system32\\drivers folder.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4214,6 +4549,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 
 *All physical network devices in a system (inclusive of docking stations) must meet device certification criteria for power management requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4224,6 +4560,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4236,12 +4573,14 @@ Support of this feature is required. All physical network devices included in a 
 
 *Systems must ship with processors that support NX and include drivers that function normally when NX is enabled*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4259,6 +4598,7 @@ of NX.In addition, the system firmware must have NX on and data execution preven
 
 *System supports docking and undocking across a hibernate transition.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4269,6 +4609,7 @@ of NX.In addition, the system firmware must have NX on and data execution preven
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4278,6 +4619,7 @@ For systems which ship with a dock, the system must be able to hibernate and res
 
 *Storage subsystem supports multi-phase resume from Hibernate*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4287,6 +4629,7 @@ For systems which ship with a dock, the system must be able to hibernate and res
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4301,6 +4644,7 @@ The driver and hardware subsystems for the boot storage device must support mult
 
 *Systems support S4 and S5 and either S0 low power idle or S3, states.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4311,6 +4655,7 @@ The driver and hardware subsystems for the boot storage device must support mult
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4336,6 +4681,7 @@ Power Management is an important aspect of good user experience. The system shou
 
 *System must report form factor via power management profile.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4346,6 +4692,7 @@ Power Management is an important aspect of good user experience. The system shou
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4362,6 +4709,7 @@ For more information see page 119 of the ACPI specification version 5.0.
 
 *Systems that support S0 low power idle must meet reliability standards for Runtime Power Management.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4372,6 +4720,7 @@ For more information see page 119 of the ACPI specification version 5.0.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4395,12 +4744,14 @@ If a PEP device is enumerated in ACPI namespace and the system does not have a P
 
 *Remote boot support for PXE complies with BIOS Boot Specification 1.01 or EFI boot manager*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4428,6 +4779,7 @@ Version 1.01, and Appendix C.
 
 *Drivers in a system must be reliable.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4438,6 +4790,7 @@ Version 1.01, and Appendix C.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4456,6 +4809,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 
 *This feature checks for Credential Guard.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4463,6 +4817,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 Description:
 
@@ -4482,6 +4837,7 @@ The following table shows the hardware, firmware and software requirements for C
 
 *Systems that support connected standby must support device encryption.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4491,6 +4847,7 @@ The following table shows the hardware, firmware and software requirements for C
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4500,6 +4857,7 @@ Systems that support connected standby must meet the security requirements to su
 
 *Device Guard requirement for systems*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4507,6 +4865,7 @@ Systems that support connected standby must meet the security requirements to su
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -4516,6 +4875,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 
  - MUST meet the additional requirements as described in the table below:
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -4594,12 +4954,14 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </ol></td>
 </tr>
 </tbody>
-</table>                                                                               
+</table>
+</html>                                                                               
 
 ### System.Fundamentals.Security.NoTDIFilterAndLSP
 
 *No TDI filters or LSPs are installed by the driver or associated software packages during installation or usage.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4609,6 +4971,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4616,6 +4979,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 
 ### System.Fundamentals.Security.PlayReadyModule 
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4626,10 +4990,158 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 PlayReadyModule, when available on a device in secure firmware in conjunction with a compatible graphics driver, enables hardware-based content protection for media. If implemented, this module provides hardware-rooted protection of device keys, content keys and media content/samples that flow through a media pipeline. It will enable the device to have access to high definition (1080p and above) premium content. OEMs shipping on chipsets/SoCs that have a PlayReadyModule available (in the form of secure firmware available from the chipset vendor) must include PlayReadyModule on devices with screen resolutions of 1080p or higher.
+
+
+## <a href="" id="system.fundamentals.servernano"></a>System.Fundamentals.ServerNano
+
+Basic requirements for Windows Server Nano.
+
+### System.Fundamentals.ServerNano.Deployment
+
+All drivers intended for use with Windows Server Nano must meet these requirements.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+All drivers intended for use on Windows Server Nano must meet the following deployment requirements:
+
+ - Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).
+
+ - Drivers must be installable offline using DISM.
+
+All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.
+
+
+### System.Fundamentals.ServerNano.Diagnostics
+
+All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:
+
+ - Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).
+
+ - Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.
+
+If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.
+
+
+### System.Fundamentals.ServerNano.FirmwareUpdate
+
+All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+All firmware update tools and utilities intended for use on Windows Server Nano must support installation by either of the following methods:
+
+ - Remote installation using Windows PowerShell or WMI
+
+ - Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
+
+If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+
+### System.Fundamentals.ServerNano.MonitoringAndTelemetry
+
+All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+All monitoring tools, utilities, and agents must support installation by either of the following methods:
+
+ - Remote installation using Windows PowerShell or WMI
+ 
+ - Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
+ 
+If the tool, utility, or agent runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish.
+
+
+### System.Fundamentals.ServerNano.OperateInServerNano
+
+All diagnostic utilities intended for use with Windows Server Nano must meet these requirements.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+The hardware platforms on which Windows Server operating systems are deployed have evolved dramatically in the past decade. As these become graphic-less system designs for cost and deployment efficiencies, the customers expect to completely setup, deploy, configure and manage these hardware platforms using the minimal command line interface and automated scripting of Windows Server Nano. Windows Server device drivers must evolve in a similar manner to allow the customers to pursue these operations unhindered.
+
+A device driver must demonstrate its ability to install, configure, be serviced and operate without reliance on the presence of a GUI.
+
+Design Notes:
+
+Any device driver that does not meet this requirement will not be usable on Windows Server Nano systems.
+
+
+### System.Fundamentals.ServerNano.PatchAndUpdate
+
+Patching requirements for Windows Server Nano.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+All patches and updates must be able to install offline as part of image creation or online.
+
 
 <a name="system.fundamentals.signeddrivers"></a>
 ## System.Fundamentals.SignedDrivers
@@ -4640,6 +5152,7 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 
 *Boot drivers must be self-signed with an embedded signature.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4650,6 +5163,7 @@ PlayReadyModule, when available on a device in secure firmware in conjunction wi
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4682,6 +5196,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 
 *System must contain compatible qualified devices.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4692,6 +5207,7 @@ In the Windows Hardware Lab Kit, this requirement will be tested by using the Em
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4710,6 +5226,7 @@ All devices and drivers need to be fully installed, and does not contain any pro
 
 *System firmware support for SMBIOS complies with the SMBIOS specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4720,6 +5237,7 @@ All devices and drivers need to be fully installed, and does not contain any pro
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4778,6 +5296,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 
 *Boot Devices in systems that support Connected Standby must meet these requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4788,6 +5307,7 @@ Design Notes: SKU Number has been moved to a required field in order to improve 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4818,6 +5338,7 @@ The CPU Vendor and/or Firmware Provider must furnish the software tools needed t
 
 The following requirements are applicable to boot storage media and are tested with the smaller of 2% or 1GB free space.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -4936,6 +5457,7 @@ The following requirements are applicable to boot storage media and are tested 
 </tr>
 </tbody>
 </table>
+</html>
 
 \* Applies only to devices with 16 GB of internal storage or lower.
 
@@ -4951,6 +5473,7 @@ Maximum of **20 seconds** sum-total of user-perceivable I/O latencies over any *
 
 *Systems which ship with a Encrypted Drive as a boot storage device must support security command protocols in order to make sure the data at rest is always protected.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4961,6 +5484,7 @@ Maximum of **20 seconds** sum-total of user-perceivable I/O latencies over any *
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -4988,6 +5512,7 @@ The following requirements apply if Encrypted Drive (**System.Fundamentals.Stora
 
 *System with SATA boot storage must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -4998,6 +5523,7 @@ The following requirements apply if Encrypted Drive (**System.Fundamentals.Stora
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5022,12 +5548,14 @@ When used in systems that support connected standby, the SATA device must meet t
 
 *System.Fundamentals.StorageClassMemory*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5039,12 +5567,14 @@ When used in systems that support connected standby, the SATA device must meet t
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.DSMCompliance*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 
 **Description:**
@@ -5059,12 +5589,14 @@ Note: NVDIMM-N devices are identified through the Firmware’s NFIT table as def
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.Persistence*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5076,12 +5608,14 @@ Note: It is highly recommended that persistence is achieved by implementing ADR 
 
 *System.Fundamentals.StorageClassMemory.NVDIMM-N.HealthNotificationSupport*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description:**
 
@@ -5098,6 +5632,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 
 *Systems contain audio devices that conform to Windows Logo requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5108,6 +5643,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5117,6 +5653,7 @@ Systems need to conform to all **Device.Audio** requirements.
 
 *Microphone Location Reporting Requirement*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5127,6 +5664,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5146,6 +5684,7 @@ Systems need to conform to all **Device.Audio** requirements.
 
 *System uses the HD Audio device pin configuration registers to expose logical devices supported by the Windows UAA HD Audio class driver.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5156,6 +5695,7 @@ Systems need to conform to all **Device.Audio** requirements.
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5170,12 +5710,14 @@ See the Pin Configuration Guidelines for High Definition Audio Devices white pap
 
 *System devices and firmware meet PCI requirements*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5220,6 +5762,7 @@ All 64-bit adapters must be DAC capable. This DAC requirement does not apply to 
 
 *External USB ports on system that support connected standby must be EHCI or XHCI*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5230,6 +5773,7 @@ All 64-bit adapters must be DAC capable. This DAC requirement does not apply to 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5262,6 +5806,7 @@ For improved power efficiency and performance, USB Host Controllers on systems 
 
 *Each exposed SuperSpeed capable connector supports SuperSpeed, high, full and low speed USB devices routed through its xHCI controller.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5272,6 +5817,7 @@ For improved power efficiency and performance, USB Host Controllers on systems 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5283,6 +5829,7 @@ xHCI Controllers are backwards compatible with SuperSpeed, high, full, and low s
 
 *Systems are recommended to expose at least one user-accessible USB port.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5293,6 +5840,7 @@ xHCI Controllers are backwards compatible with SuperSpeed, high, full, and low s
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5328,6 +5876,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 
 *Systems with xHCI Controllers must be tested with Microsoft's xHCI Stack installed.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5338,6 +5887,7 @@ If a system exposes multiple Dual Role capable ports, only one port should in fu
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5347,6 +5897,7 @@ Systems with Extensible Host Controller Interface (xHCI) Controllers must be tes
 
 *All USB devices and host controllers work properly upon resume from sleep, hibernation or restart without a forced reset of the USB host controller.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5357,6 +5908,7 @@ Systems with Extensible Host Controller Interface (xHCI) Controllers must be tes
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5375,6 +5927,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 
 *USB Type-C Charging cases are supported*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5384,6 +5937,7 @@ A reset of the entire USB Host Controller results in significantly increased tim
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5397,6 +5951,7 @@ If a System contains a USB Type-C port that can be used to charge the system, th
 
 *USB Type-C Systems and Devices that ship with Cables ship with certified cables *
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5406,6 +5961,7 @@ If a System contains a USB Type-C port that can be used to charge the system, th
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5417,6 +5973,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 
 *USB Type-C systems must support UCM*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5426,6 +5983,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5465,6 +6023,7 @@ If the system or controller exposes dual role ports, the following additional re
 
 *USB Type-C Systems that support UCSI must implement USCI correctly*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5474,6 +6033,7 @@ If the system or controller exposes dual role ports, the following additional re
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5512,6 +6072,7 @@ If a USB Type-C system has local USB-C ports (e.g. directly on the system compar
 
 *xHCI BIOS handoff follows specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5522,6 +6083,7 @@ If a USB Type-C system has local USB-C ports (e.g. directly on the system compar
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5531,6 +6093,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 
 *Systems with xHCI controllers must have embedded ACPI information for port routing.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5541,6 +6104,7 @@ For all xHCI controllers exposed to the OS, the system firmware must follow the 
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5908,6 +6472,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 
 *xHCI controller must support at least 31 primary streams per endpoint.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5918,6 +6483,7 @@ Name( _PLD, Buffer( 0x10) {<br />
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5934,6 +6500,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 
 *Systems shipping with TPM 2.0 must contain a full endorsement key certificate.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5944,6 +6511,7 @@ Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize stre
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -5982,6 +6550,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 *Requirements for all systems that implement the TPM 2.0 specification*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -5992,6 +6561,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6003,9 +6573,9 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 **Mandatory:** Systems with TPM 2.0 must comply with the following requirements:
 
+<html>
 <ol>
 <li><p>The platform shall implement all "Required" features in the table below.</p>
-
 <table>
 <thead>
 <tr class="header">
@@ -6068,9 +6638,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </tbody>
 </table>
 </li>
-
-<li><p>The TPM **Must** have support for the following:</p>
-
+<li><p>The TPM <strong>Must</strong> have support for the following:</p>
 <table>
 <thead>
 <tr class="header">
@@ -6124,12 +6692,13 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </table>
 </li>
 
-<li><p>**Mandatory:** The TPM shall Comply with the following performance requirements. These requirements apply to the time the command is issued to the TPM from the OS or UEFI until the result is returned. Times specified as a mean refer to the mean of 100 or more operations completed in direct succession. For operations on keys other than import, the operations may be assumed to be being completed on imported (internal) keys.</p>
+<li><p><strong>Mandatory</strong>: The TPM shall Comply with the following performance requirements. These requirements apply to the time the command is issued to the TPM from the OS or UEFI until the result is returned. Times specified as a mean refer to the mean of 100 or more operations completed in direct succession. For operations on keys other than import, the operations may be assumed to be being completed on imported (internal) keys.</p>
 <ol style="list-style-type: lower-alpha">
-    <li><p>**Caching:** For TPM\_Create operations, if a TPM is capable of creating 10 of the specified key type within 1s each, in direct succession, starting 5s after first boot by the end user, they may otherwise generate keys within 3x the allotted time below.</p></li>
+<li><p><strong>Caching</strong>: For TPM\_Create operations, if a TPM is capable of creating 10 of the specified key type within 1s each, in direct succession, starting 5s after first boot by the end user, they may otherwise generate keys within 3x the allotted time below.</p></li>
 
-    <li><p>**Protected Import**: Protected Import is defined as an import operation on a key where “encryptedDuplication” was set in the duplicated object.</p></li>
+<li><p><strong>Protected Import</strong>: Protected Import is defined as an import operation on a key where “encryptedDuplication” was set in the duplicated object.</p></li>
 </ol>
+
 <table>
 <thead>
 <tr class="header">
@@ -6302,16 +6871,19 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 <li><p>The Platform must comply with “TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9”.</p></li>
 </ol>
+</html>
+
 
 <a name="system.fundamentals.trustedplatformmodule"></a>
 ## System.Fundamentals.TrustedPlatformModule
 
-*A Trusted Platform Module (TPM) is a microchip designed to provide basic security related functions.  Requirements in this area reflect the required TPM version and compatibility with Windows Bitlocker.  *
+*A Trusted Platform Module (TPM) is a microchip designed to provide basic security related functions.  Requirements in this area reflect the required TPM version and compatibility with Windows Bitlocker.*
 
 ### System.Fundamentals.TrustedPlatformModule.TPMComplieswithTCGTPMMainSpecification
 
 *A system that implements a Trusted Platform Module (TPM) 1.2 must include a TPM that complies with the TCG TPM Main Specification, Version 1.2, Revision 103 (or a later revision), parts 1, 2 and 3.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6321,6 +6893,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6353,6 +6926,7 @@ The TPM must meet the following additional requirements:
 
 *Systems with Trusted Platform Modules enable full use of the TPM including system firmware enhancements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6362,6 +6936,7 @@ The TPM must meet the following additional requirements:
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6395,6 +6970,7 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 
 *System implementing TPM 1.2 must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6404,74 +6980,62 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 For a system that implements a Trusted Platform Module (TPM) 1.2, the platform must comply with the following specifications:
 
-1.  The PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 Version 1.00, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/pc\_client\_work\_group\_platform\_reset\_attack\_mitigation\_specification\_version\_10.
-
-2.  The TCG Physical Presence Interface Specification Version 1.2, Revision 1.00, http://www.trustedcomputinggroup.org/resources/tcg\_physical\_presence\_interface\_specification.
-
-3.  The TCG PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21 Revision 1.00 or later (http://www.trustedcomputinggroup.org/resources/pc\_client\_work\_group\_pc\_client\_specific\_tpm\_interface\_specification\_tis).
-
-4.  If the platform implements UEFI firmware, it must implement
-<ol style="list-style-type: lower-alpha">
-    <li><p>The TCG EFI Platform Specification Version 1.20, Revision 1.0 or later, http://www.trustedcomputinggroup.org/resources/tcg\_efi\_platform\_specification\_version\_120\_revision\_10.</p></li>
-
-    <li><p>The TCG EFI Protocol Version 1.20, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/tcg\_efi\_protocol\_version\_120\_revision\_10.</p></li>
-</ol>
-5.  If the platform implements conventional BIOS, it must implement the PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.20, Revision 1.00 or later. Note: The errata version 1.21 is strongly recommended instead. (http://www.trustedcomputinggroup.org/resources/pc\_client\_work\_group\_specific\_implementation\_specification\_for\_conventional\_bios\_specification\_version\_12).
-
-6.  The TCG ACPI General Specification Version 1.00, Revision 1.00, http://www.trustedcomputinggroup.org/resources/server\_work\_group\_acpi\_general\_specification\_version\_10.
-
-7.  Windows Vista BitLocker Client Platform Requirements, dated May 16, 2006, or later (http://go.microsoft.com/fwlink/p/?LinkId=70763). For conventional BIOS systems instead of the PCR measurements listed in the Windows Vista BitLocker Client Platform Requirements, a system may implement the PCR measurements defined in the TCG PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.21, Revision 1.00.
+<html>
+    <ol style="list-style-type: decimal" start="0">
+        <li><p>The PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 Version 1.00, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/pc_client_work_group_platform_reset_attack_mitigation_specification_version_10.</p></li>
+        <li><p>The TCG Physical Presence Interface Specification Version 1.2, Revision 1.00, http://www.trustedcomputinggroup.org/resources/tcg_physical_presence_interface_specification.</p></li>
+        <li><p>The TCG PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21 Revision 1.00 or later (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_pc_client_specific_tpm_interface_specification_tis).</p></li>
+        <li>
+            <p>If the platform implements UEFI firmware, it must implement</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>The TCG EFI Platform Specification Version 1.20, Revision 1.0 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_platform_specification_version_120_revision_10.</p></li>
+                <li><p>The TCG EFI Protocol Version 1.20, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_protocol_version_120_revision_10.</p></li>
+            </ol>
+        </li>
+        <li><p>If the platform implements conventional BIOS, it must implement the PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.20, Revision 1.00 or later. Note: The errata version 1.21 is strongly recommended instead. (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_specific_implementation_specification_for_conventional_bios_specification_version_12).</p></li>
+        <li><p>The TCG ACPI General Specification Version 1.00, Revision 1.00, http://www.trustedcomputinggroup.org/resources/server_work_group_acpi_general_specification_version_10.</p></li>
+        <li><p>Windows Vista BitLocker Client Platform Requirements, dated May 16, 2006, or later (http://go.microsoft.com/fwlink/p/?LinkId=70763). For conventional BIOS systems instead of the PCR measurements listed in the Windows Vista BitLocker Client Platform Requirements, a system may implement the PCR measurements defined in the TCG PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.21, Revision 1.00.</p></li>
+    </ol>
+</html>
 
 And the system MUST meet the following additional requirements:
 
-1.  Platform firmware must ensure invariance of PCRs 0, 2 and 4 and also PCR 7 if implemented as specified in Appendix A of the Microsoft Corporation, "Trusted Execution Environment EFI Protocol, 1.00 dated March 2nd, 2012" document across power cycles in the absence of changes to the platform's static root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station shall not cause changes to the SRTM.
-
-2.  If the platform is a server platform, it must reserve PCRs 8 through 15 for OS use. (Note: The same requirement is true for client platforms.)
-
-3.  The platform must implement the memory mapped space for the TPM interface (for example, legacy port based I/O is not sufficient).
-
-4.  The system firmware must perform Physical Presence Interface operations when the platform is restarted. It is strongly recommended the system firmware performs Physical Presence Interface operations also after shutdown. (Specifically, the Physical Presence Interface Specification Version 1.2, section 2.1.4: Get Platform-Specific Action to Transition to Pre-OS Environment must return a value of 2: Reboot.) (This requirement allows remote administrators to perform Physical Presence Operations without needing to be physically present to turn the platform back on.)
-
-5.  The default configuration for the system must have the NoPPIProvision flag specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface set to TRUE.
-
-6.  The default system firmware configuration must allow the OS to request Physical Presence operations 6, 7, 10, and 15. Note: The operations are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00.
-
-7.  If the system implements the NoPPIClear flag it should do so as specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface. The platform should either provide a system firmware configuration setting to change the flag or implement physical presence operations 17 and 18. Note: The operations and the NoPPIClear flag are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00. (Implementing this flag helps facilitate automated testing of the physical presence interface during Windows certification testing and permits managed environments to completely automate TPM management from the OS without physical presence if an enterprise decides to set the NoPPIClear flag.)
-
-8.  The system firmware must implement the \_DSM Query method (function index 0) in addition to the Physical Presence Interface methods defined in the TCG Physical Presence Interface Specification, section 2: ACPI Functions. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the \_DSM Query method.)
-
-9.  The system firmware must implement the \_DSM Query method (function index 0) in addition to the Memory Clear Interface method defined in the TCG Platform Reset Attack Mitigation Specification, section 6: ACPI \_DSM Function. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the \_DSM Query method.)
-
-10. The system firmware must implement the auto detection of clean OS shutdown and clear the memory overwrite bit as defined in the TCG Platform Reset Attack Mitigation Specification, section 2.3: Auto Detection of Clean Static RTM OS Shutdown. Exception: If the system is able to unconditionally clear memory during boot without increasing boot time, the system may not implement the auto detection (however the pre-boot and ACPI interface implementations are still required).
-
-11. When the system is delivered to an end customer, the TPM permanent flag TPM\_PF\_NV\_LOCKED must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)
-
-12. When the system is delivered to an end customer, the TPM permanent flag TPM\_PF\_NV\_ PHYSICALPRESENCELIFETIMELOCK must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)
-
-13. The system must contain a full Endorsement Key (EK) certificate stored in the TPM NV RAM as described in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 7.4.5: TCG\_FULL\_CERT. The NV RAM index used for storing the EK certificate must be the pre-defined and reserved index TPM\_NV\_INDEX\_EKCert as defined the TPM Main Specification, Part 2, section 19.1.2: Reserved Index Values. As recommended in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 4.2.1: TPM Main Specification Reserved Indexes, the D bit attribute must be set for the index. (Note: The certificate may be created by the TPM manufacturer or the platform manufacturer.) Exception: If the system supports generation of a new EK it is not required (but is still strongly recommended) to have an EK certificate.
-
-14. The system firmware must ship with the TPM enumerated by default. (This means the ACPI device object for the TPM must be present by default in the system ACPI tables.)
-
-15. The system firmware must support clearing the TPM from within a setup menu.
-
-16. At least 256 bytes of TPM NVRAM must be reserved (and available) for OS use.
-
-17. The firmware must issue the TPM\_ContinueSelfTest during boot such that the self-test completes before the OS loader is launched.
-<ol style="list-style-type: lower-alpha">
-    <li><p>If the TPM device performs the self-test synchronously, the firmware TPM driver should be optimized to issue the command to the device but allow the boot process to proceed without waiting for the return result from the TPM\_ContinueSelfTest command. If the firmware TPM driver receives a subsequent command, it should delay the subsequent command until the TPM\_ContinueSelfTest command completes instead of aborting the TPM\_ContinueSelfTest command.)</p></li>
-
-    <li><p>A recommendation is to start the self-test before some action which takes at least one second but does not have a dependency on the TPM.</p></li>
-</ol>
-18. The platform may or may not issue the TPM\_ContinueSelfTest upon resume from S3 (sleep).
-
-19. The ACPI namespace location for the TPM device object must only depend on the System Bus, ISA or PCI bus drivers provided by Microsoft. The System Bus does not have an ID, but is identified as \\\_SB. The ISA bus device IDs may be PNP0A00 or PCI\\CC\_0601. The PCI bus device IDs may be PNP0A03 or PCI\\CC\_0604. In addition, the TPM device object may also depend on these generic bridges, containers or modules: PNP0A05, PNP0A06 and ACPI0004. No other device dependencies are permitted for the ACPI namespace location for the TPM device object.
-
-20. Optional. The platform is recommended to support measurements into PCR \[7\] as specified in Appendix A of Microsoft Corporation, "Trusted\_Execution\_Environment\_EFI\_Protocol, 1.00 dated March 2, 2012" specification, The UEFI firmware update process must also protect against rolling back to insecure firmware versions, or non-production versions that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared.
+<html>
+    <ol style="list-style-type: decimal">
+        <li><p>Platform firmware must ensure invariance of PCRs 0, 2 and 4 and also PCR 7 if implemented as specified in Appendix A of the Microsoft Corporation, &quot;Trusted Execution Environment EFI Protocol, 1.00 dated March 2nd, 2012&quot; document across power cycles in the absence of changes to the platform's static root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station shall not cause changes to the SRTM.</p></li>
+        <li><p>If the platform is a server platform, it must reserve PCRs 8 through 15 for OS use. (Note: The same requirement is true for client platforms.)</p></li>
+        <li><p>The platform must implement the memory mapped space for the TPM interface (for example, legacy port based I/O is not sufficient).</p></li>
+        <li><p>The system firmware must perform Physical Presence Interface operations when the platform is restarted. It is strongly recommended the system firmware performs Physical Presence Interface operations also after shutdown. (Specifically, the Physical Presence Interface Specification Version 1.2, section 2.1.4: Get Platform-Specific Action to Transition to Pre-OS Environment must return a value of 2: Reboot.) (This requirement allows remote administrators to perform Physical Presence Operations without needing to be physically present to turn the platform back on.)</p></li>
+        <li><p>The default configuration for the system must have the NoPPIProvision flag specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface set to TRUE.</p></li>
+        <li><p>The default system firmware configuration must allow the OS to request Physical Presence operations 6, 7, 10, and 15. Note: The operations are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00.</p></li>
+        <li><p>If the system implements the NoPPIClear flag it should do so as specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface. The platform should either provide a system firmware configuration setting to change the flag or implement physical presence operations 17 and 18. Note: The operations and the NoPPIClear flag are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00. (Implementing this flag helps facilitate automated testing of the physical presence interface during Windows certification testing and permits managed environments to completely automate TPM management from the OS without physical presence if an enterprise decides to set the NoPPIClear flag.)</p></li>
+        <li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Physical Presence Interface methods defined in the TCG Physical Presence Interface Specification, section 2: ACPI Functions. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
+        <li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Memory Clear Interface method defined in the TCG Platform Reset Attack Mitigation Specification, section 6: ACPI _DSM Function. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
+        <li><p>The system firmware must implement the auto detection of clean OS shutdown and clear the memory overwrite bit as defined in the TCG Platform Reset Attack Mitigation Specification, section 2.3: Auto Detection of Clean Static RTM OS Shutdown. Exception: If the system is able to unconditionally clear memory during boot without increasing boot time, the system may not implement the auto detection (however the pre-boot and ACPI interface implementations are still required).</p></li>
+        <li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_LOCKED must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
+        <li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_ PHYSICALPRESENCELIFETIMELOCK must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
+        <li><p>The system must contain a full Endorsement Key (EK) certificate stored in the TPM NV RAM as described in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 7.4.5: TCG_FULL_CERT. The NV RAM index used for storing the EK certificate must be the pre-defined and reserved index TPM_NV_INDEX_EKCert as defined the TPM Main Specification, Part 2, section 19.1.2: Reserved Index Values. As recommended in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 4.2.1: TPM Main Specification Reserved Indexes, the D bit attribute must be set for the index. (Note: The certificate may be created by the TPM manufacturer or the platform manufacturer.) Exception: If the system supports generation of a new EK it is not required (but is still strongly recommended) to have an EK certificate.</p></li>
+        <li><p>The system firmware must ship with the TPM enumerated by default. (This means the ACPI device object for the TPM must be present by default in the system ACPI tables.)</p></li>
+        <li><p>The system firmware must support clearing the TPM from within a setup menu.</p></li>
+        <li><p>At least 256 bytes of TPM NVRAM must be reserved (and available) for OS use.</p></li>
+        <li>
+            <p>The firmware must issue the TPM_ContinueSelfTest during boot such that the self-test completes before the OS loader is launched.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>If the TPM device performs the self-test synchronously, the firmware TPM driver should be optimized to issue the command to the device but allow the boot process to proceed without waiting for the return result from the TPM_ContinueSelfTest command. If the firmware TPM driver receives a subsequent command, it should delay the subsequent command until the TPM_ContinueSelfTest command completes instead of aborting the TPM_ContinueSelfTest command.)</p></li>
+                <li><p>A recommendation is to start the self-test before some action which takes at least one second but does not have a dependency on the TPM.</p></li>
+            </ol>
+        </li>
+        <li><p>The platform may or may not issue the TPM_ContinueSelfTest upon resume from S3 (sleep).</p></li>
+        <li><p>The ACPI namespace location for the TPM device object must only depend on the System Bus, ISA or PCI bus drivers provided by Microsoft. The System Bus does not have an ID, but is identified as \_SB. The ISA bus device IDs may be PNP0A00 or PCI\CC_0601. The PCI bus device IDs may be PNP0A03 or PCI\CC_0604. In addition, the TPM device object may also depend on these generic bridges, containers or modules: PNP0A05, PNP0A06 and ACPI0004. No other device dependencies are permitted for the ACPI namespace location for the TPM device object.</p></li>
+        <li><p>Optional. The platform is recommended to support measurements into PCR [7] as specified in Appendix A of Microsoft Corporation, &quot;Trusted_Execution_Environment_EFI_Protocol, 1.00 dated March 2, 2012&quot; specification, The UEFI firmware update process must also protect against rolling back to insecure firmware versions, or non-production versions that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared.</p></li>
+    </ol>
+</html>
 
 Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittleness. If Secure Boot launch of Windows BootMgr requires use of an Allowed DB entry other than the Microsoft-provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d, Bitlocker will then not be able to utilize PCR7. It is recommended that the only Allowed DB entry for Secure Boot are Microsoft-provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d.
 
@@ -6486,6 +7050,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 
 *System firmware supports booting from all exposed USB 1.x, 2.x, and 3.x ports*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6496,6 +7061,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6518,6 +7084,7 @@ OEMs are encouraged to test the boot functionality by creating a bootable USB fl
 
 *Systems support secure startup by providing system firmware support for writing to and reading from USB flash devices in the pre-operating system environment.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6528,6 +7095,7 @@ OEMs are encouraged to test the boot functionality by creating a bootable USB fl
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6545,6 +7113,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 
 *All internally connected USB devices must support selective suspend by default.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6555,6 +7124,7 @@ See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Clas
 <p>Windows 10 Mobile x86</p>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -6583,6 +7153,7 @@ For more information about how to implement selective suspend in a driver, pleas
 
 *If a Watch Dog Timer is implemented and exposed through a WDRT (supported for versions prior to Windows 8) or WDAT (required for Windows 8 and later versions), it must meet Windows compatibility and functionality requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
@@ -6591,2107 +7162,280 @@ For more information about how to implement selective suspend in a driver, pleas
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>
 <p>Windows 10 Mobile ARM</p>
 <p>Windows 10 Mobile x86</p>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Hardware watchdog timer monitors the OS, and reboots the machine if the OS fails to reset the watchdog. The watchdog must meet the requirements and comply with the specification in <http://MSDN.microsoft.com/en-us/windows/hardware/gg463320.aspx>.
 
-<a name="system.server.azurestack"></a>
-## System.Server.AzureStack
 
-Microsoft Azure Stack (MAS) is a new Microsoft offering that delivers a consistent set of Azure Cloud services on premise. While the exact composition of Microsoft Azure Stack is still under discussion, the components that will be required to build a "cloud-inspired infrastructure" solution can be broadly split into the categories below.
+## <a href="" id="system.server.assurance"></a>System.Server.Assurance
 
-<table>
-<thead>
-<tr class="header">
-<th>Compute</th>
-<td>Components in the compute cluster of the Microsoft Azure Stack solution—typically, all parts that go into making an individual server (CPU, memory, a motherboard, a boot disk, a graphics card, a BIOS, and so forth).</td>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th>Network</th>
-<td>Components that provide the networking fabric for the Microsoft Azure Stack solution—NICs (with a varying number of ports and functional levels), switches, hardware- and software-based load balancers, and so forth.</td>
-</tr>
-<tr class="even">
-<th>Storage</th>
-<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
-</tr>
-<tr class="odd">
-<th>Security</th>
-<td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
-</tr>
-<tr class="even">
-<th>Special Items</th>
-<td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
-</tr>
-</tbody>
-</table>
+This feature shows the requirements that need to be met by a server to get the Hardware Assurance AQ.
 
-The primary audiences for the completed hardware specifications for Microsoft Azure Stack solutions are:
 
- - Independent hardware vendors (IHVs) who build individual components (such as physical disks) that go into larger modules
+### System.Server.Assurance.EnhancedPlatformIntegrityProtection 
 
- - Original equipment manufacturers (OEMs) who assemble white-box systems, area-focused solutions such as storage solutions, or complete Microsoft Azure Stack solutions
+Server supports hardware- and firmware-based enhanced platform integrity protection.
 
- - Solution Integrators (SIs) who implement Microsoft Azure Stack solutions using OEM-assembled or DIY hardware on the customer premises
-
-This version of the specification is an early draft, and will be used to gather feedback from key constituents. The final destination for the completed document will be to make it available as an externally facing document for the primary audiences.
-
-The goal of this requirement is to define product requirements for partners who build private cloud solutions based on the Microsoft Azure Stack.
-
-OEMs and Solution Integrators that build Microsoft Azure Stack solutions must incorporate components that have passed the associated Microsoft Azure Stack logo requirements tests, including the Private Cloud Simulation (PCS) test (System.Solutions.AzureStack.CloudStress). The fully assembled solutions must also pass the PCS tests.
-
-### System.Server.AzureStack.NanoServer
-
-*Core requirements for Nano server systems using Microsoft Azure Stack*
-
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
-All drivers intended for use in a Microsoft Azure Stack solution must be certified for use with Windows Server 2016. Qualification for logo use requires that you test the feature on Nano Server and meet deployment requirements.
+This is an *If-Implemented*, optional system requirement for a system providing enhanced security for Windows Server.  The server platform must support:
 
-**Diagnostics**
+<html>
+    <ul>
+        <li>
+            <p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
+            <ul>
+                <li><p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFIBitLocker</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFIBootEntries</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFICompatibility</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFIDefaultBoot</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
+                <li><p>System.Fundamentals.Firmware.Update</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
+            <ul>
+                <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
+                <li><p>System.Fundamentals.Firmware.UEFISecureBoot</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
+            <ul>
+                <li><p>System.Server.Virtualization.ProcessorVirtualizationAssist</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests;</p>
+            <ul>
+                <li><p>System.Fundamentals.Security.DeviceGuard</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
+            <ul>
+                <li><p>System.Fundamentals.TPM20.EKCerts</p></li>
+                <li><p>System.Fundamentals.TPM20.TPM20</p></li>
+            </ul>
+        </li>
+    </ul>
+    <p>The platform is required to implement hardware security test interface and share documentation and tools as specified in the ‘Hardware Security Test Interface Specification’ document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx" class="uri">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.</p>
+    <p>All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.</p>
+    <p>For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default.  In addition, the NoPPIProvision flag must be set to TRUE by default.  There must be a mechanism in UEFI to confirm the settings of these variables and change them.  This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.</p>
+    <p>For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;</p>
+    <ul>
+        <li><p>Data pages must be separate from code pages.</p></li>
+        <li><p>Code and Data pages are at page level granularity for alignment.</p></li>
+        <li><p>The same page <em>will not</em> contain both Data [Read or Write] and executable Code.</p></li>
+        <li><p>The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.</p></li>
+    </ul>
+    <p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
+</html>
 
-All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:
+## <a href="" id="system.server.azurestack"></a>System.Server.AzureStack
 
- - Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).
+<!--No content was provided here in the original Word file.-->
 
- - Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.
+### System.Server.AzureStack.Base
 
-If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Installer (WSI) package.
+*Basic requirements that should be supported by any server used in a Microsoft Azure Stack solution.*
 
-**Deployment**
-
-All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:
-
- - Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo, which requires testing on Nano Server.
-
- - Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).
-
- - Drivers must be installable offline using DISM.
-
-All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Installer (WSI) package.
-
-**Patch and update requirements**
-
-All patches and updates must be able to install offline as part of image creation or online.
-
-**Monitoring and telemetry**
-
-All monitoring tools, utilities, and agents must support installation by either of the following methods:
-
- - Remote installation using Windows PowerShell or WMI
-
- - Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
-
-If the tool, utility, or agent runs locally on Nano Server, it must be made available as a Windows Server Installer (WSI) package.
-
-For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see Redfish requirement in baseboard management controller section
-
-**Firmware update**
-
-All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:
-
- - Remote installation using Windows PowerShell or WMI
-
- - Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
-
-If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Installer (WSI) package.
-
-<a name="system.server.azurestack.storage"></a>
-## System.Server.AzureStack.Storage
-
-### System.Server.AzureStack.Storage.Base
-
-*Core Storage requirements for Microsoft Azure Stack*
-
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
-Microsoft Azure Stack requirements for the physical disks (non-boot disks) are captured in the following table.
+Requirements for a server used in a Microsoft Azure Stack solution are captured in the following table.
 
- - The **WS2016 certification** column is included for comparison with specialized Microsoft Azure Stack certification requirements.
-
- - The Microsoft Azure Stack storage requirements (column) for the initial product release are identical to the hardware requirements for **Storage Spaces Direct**. Future Microsoft Azure Stack iterations may support additional storage types.
-
+<html>
 <table>
 <thead>
 <tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>WS2016 certification</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Hd</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_basicfunction">Device.Storage.Hd.BasicFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_physicalsectorsizereportsaccurately">Device.Storage.Hd.PhysicalSectorSizeReportsAccurately</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_rotationalrate">Device.Storage.Hd.RotationalRate</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.1394</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932726(v=vs.85).aspx#device_storage_hd_1394_compliance">Device.Storage.Hd.1394.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Alua</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932727(v=vs.85).aspx#device_storage_hd_alua_compliance">Device.Storage.Hd.Alua.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Ata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932728(v=vs.85).aspx#device_storage_hd_ata_basicfunction">Device.Storage.Hd.Ata.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932728(v=vs.85).aspx#device_storage_hd_ata_dma">Device.Storage.Hd.Ata.Dma</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.AtaProtocol</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932729(v=vs.85).aspx#device_storage_hd_ataprotocol_performance">Device.Storage.Hd.AtaProtocol.Performance</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932729(v=vs.85).aspx#device_storage_hd_ataprotocol_protocol">Device.Storage.Hd.AtaProtocol.Protocol</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.DataVerification</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932730(v=vs.85).aspx#device_storage_hd_dataverification_basicfunction">Device.Storage.Hd.DataVerification.BasicFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Ehdd</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932731(v=vs.85).aspx#device_storage_hd_ehdd_compliance">Device.Storage.Hd.Ehdd.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.EMMC</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932732(v=vs.85).aspx#device_storage_hd_emmc_basicfunction">Device.Storage.Hd.EMMC.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.EnhancedStorage</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932733(v=vs.85).aspx#device_storage_hd_enhancedstorage_1667compliance">Device.Storage.Hd.EnhancedStorage.1667Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.FibreChannel</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932734(v=vs.85).aspx#device_storage_hd_fibrechannel_compliance">Device.Storage.Hd.FibreChannel.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Flush</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932735(v=vs.85).aspx#device_storage_hd_flush_basicfunction">Device.Storage.Hd.Flush.BasicFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Iscsi</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932736(v=vs.85).aspx#device_storage_hd_iscsi_basicfunction">Device.Storage.Hd.Iscsi.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Mpio</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932737(v=vs.85).aspx#device_storage_hd_mpio_basicfunction">Device.Storage.Hd.Mpio.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.MultipleAccess</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932738(v=vs.85).aspx#device_storage_hd_multipleaccess_multipleports">Device.Storage.Hd.MultipleAccess.MultiplePorts</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.MultipleAccess.PersistentReservation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932739(v=vs.85).aspx#device_storage_hd_multipleaccess_persistentreservation_basicfunction">Device.Storage.Hd.MultipleAccess.PersistentReservation.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.OffloadedDataTransfer</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932740(v=vs.85).aspx#device_storage_hd_offloadeddatatransfer_copyoffload">Device.Storage.Hd.OffloadedDataTransfer.CopyOffload</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.PersistentReservation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932741(v=vs.85).aspx#device_storage_hd_persistentreservation_clusterfailover">Device.Storage.Hd.PersistentReservation.ClusterFailover</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.PortAssociation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932742(v=vs.85).aspx#device_storage_hd_portassociation_basicfunction">Device.Storage.Hd.PortAssociation.BasicFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.ReadZeroOnTrimUnmap</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932744(v=vs.85).aspx#device_storage_hd_readzeroontrimunmap_basicfunction">Device.Storage.Hd.ReadZeroOnTrimUnmap.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.RemovableMedia</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932745(v=vs.85).aspx#device_storage_hd_removablemedia_basicfunction">Device.Storage.Hd.RemovableMedia.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Sas</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932746(v=vs.85).aspx#device_storage_hd_sas_complywithindustryspec">Device.Storage.Hd.Sas.ComplyWithIndustrySpec</a></td>
-<td>If Implemented</td>
-<td>Required (including sections marked &quot;If Implemented&quot;)</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Sata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932747(v=vs.85).aspx#device_storage_hd_sata_basicfunction">Device.Storage.Hd.Sata.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required (including sections marked &quot;If Implemented&quot;)</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Sata.HybridInformation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932748(v=vs.85).aspx#device_storage_hd_sata_hybridinformation_basicfunction">Device.Storage.Hd.Sata.HybridInformation.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Not Allowed</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Scsi</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932749(v=vs.85).aspx#device_storage_hd_scsi_connectors">Device.Storage.Hd.Scsi.Connectors</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932749(v=vs.85).aspx#device_storage_hd_scsi_parallelinterface">Device.Storage.Hd.Scsi.ParallelInterface</a></td>
-<td>If Implemented</td>
-<td>Not allowed</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Scsi.ReliabilityCounters</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932751(v=vs.85).aspx#device_storage_hd_scsi_reliabilitycounters_basicfunction">Device.Storage.Hd.Scsi.ReliabilityCounters.BasicFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.ScsiProtocol</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_referencespec">Device.Storage.Hd.ScsiProtocol.ReferenceSpec</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_samcompliance">Device.Storage.Hd.ScsiProtocol.SamCompliance</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_spccompliance">Device.Storage.Hd.ScsiProtocol.SpcCompliance</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.ThinProvisioning</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932752(v=vs.85).aspx#device_storage_hd_thinprovisioning_basicfunction">Device.Storage.Hd.ThinProvisioning.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Trim</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932753(v=vs.85).aspx#device_storage_hd_trim_basicfunction">Device.Storage.Hd.Trim.Ba sicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Uas</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932754(v=vs.85).aspx#device_storage_hd_uas_compliance">Device.Storage.Hd.Uas.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.UasOnEHCI</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932755(v=vs.85).aspx#device_storage_hd_uasonehci_basicfunction">Device.Storage.Hd.UasOnEHCI.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Usb</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932756(v=vs.85).aspx#device_storage_hd_usb_compatibility">Device.Storage.Hd.Usb.Compatibility</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Usb3</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932757(v=vs.85).aspx">Device.Storage.Hd.Usb3.Compliance</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.WindowsToGoCapableUSBDrive</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932758(v=vs.85).aspx">Device.Storage.Hd.WindowsToGoCapableUSBDrive.WindowsToGoCapableUSBDrive</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-</tbody>
-</table>
-
-**Interpreting requirements**
-
-Disks used in all Microsoft Azure Stack solutions must support all "Required" feature requirements. Depending on the solution design, the disks might be required to support some of the "If Implemented" features.
-
-To illustrate this, disks for all Microsoft Azure Stack solutions must support the feature requirements in the following table.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Hd</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_basicfunction">Device.Storage.Hd.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_physicalsectorsizereportsaccurately">Device.Storage.Hd.PhysicalSectorSizeReportsAccurately</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932725(v=vs.85).aspx#device_storage_hd_rotationalrate">Device.Storage.Hd.RotationalRate</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.DataVerification</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932730(v=vs.85).aspx#device_storage_hd_dataverification_basicfunction">Device.Storage.Hd.DataVerification.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Flush</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932735(v=vs.85).aspx#device_storage_hd_flush_basicfunction">Device.Storage.Hd.Flush.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Mpio</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932737(v=vs.85).aspx#device_storage_hd_mpio_basicfunction">Device.Storage.Hd.Mpio.BasicFunction</a></td>
-<td>Not allowed</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.MultipleAccess</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932738(v=vs.85).aspx#device_storage_hd_multipleaccess_multipleports">Device.Storage.Hd.MultipleAccess.MultiplePorts</a></td>
-<td>Not allowed</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.MultipleAccess.PersistentReservation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932739(v=vs.85).aspx#device_storage_hd_multipleaccess_persistentreservation_basicfunction">Device.Storage.Hd.MultipleAccess.PersistentReservation.BasicFunction</a></td>
-<td>Not used</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.OffloadedDataTransfer</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932740(v=vs.85).aspx#device_storage_hd_offloadeddatatransfer_copyoffload">Device.Storage.Hd.OffloadedDataTransfer.CopyOffload</a></td>
-<td>Not used</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.PersistentReservation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932741(v=vs.85).aspx#device_storage_hd_persistentreservation_clusterfailover">Device.Storage.Hd.PersistentReservation.ClusterFailover</a></td>
-<td>Not used</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.PortAssociation</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932742(v=vs.85).aspx#device_storage_hd_portassociation_basicfunction">Device.Storage.Hd.PortAssociation.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Sas</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932746(v=vs.85).aspx#device_storage_hd_sas_complywithindustryspec">Device.Storage.Hd.Sas.ComplyWithIndustrySpec</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.Sata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932747(v=vs.85).aspx#device_storage_hd_sata_basicfunction">Device.Storage.Hd.Sata.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Hd.Scsi.ReliabilityCounters</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932751(v=vs.85).aspx#device_storage_hd_scsi_reliabilitycounters_basicfunction">Device.Storage.Hd.Scsi.ReliabilityCounters.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.ScsiProtocol</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_referencespec">Device.Storage.Hd.ScsiProtocol.ReferenceSpec</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_samcompliance">Device.Storage.Hd.ScsiProtocol.SamCompliance</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932750(v=vs.85).aspx#device_storage_hd_scsiprotocol_spccompliance">Device.Storage.Hd.ScsiProtocol.SpcCompliance</a></td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
-
-The disks might need to support additional requirements for the technologies used in a particular Microsoft Azure Stack solution. (The disks need not support *all* requirements that are tagged "If Implemented.") For example, in a Microsoft Azure Stack solution that uses Fibre Channel storage, all disks must support the following "If Implemented" requirement.
-
-| **Requirement**                | **Sub-requirement**                                                                                                                                                     | **Microsoft Azure Stack certification**             |
-|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| Device.Storage.Hd.FibreChannel | [Device.Storage.Hd.FibreChannel.Compliance](https://msdn.microsoft.com/en-us/library/windows/hardware/dn932734(v=vs.85).aspx#device_storage_hd_fibrechannel_compliance) | Required only when Fibre Channel storage is present |
-
-**Requirements unique to Microsoft Azure Stack**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-**Microsoft Azure Stack Reliability (quality) requirements**
-
-The following requirement verifies that the disk satisfies reliability criteria of a Microsoft Azure Stack-based private cloud solution.
-
-| **Requirement**                          | **Sub-requirement**                          | **Microsoft Azure Stack certification** |
-|------------------------------------------|----------------------------------------------|-----------------------------------------|
-| Device.Storage.Hd.AzureStack.CloudStress | Device.Storage.Hd.AzureStack.CloudStress.PCS | Required                                |
-
-Storage devices must be able to perform reliably in private cloud scenarios. To verify that the storage device can meet the stress requirements of a datacenter cloud, all storage devices must pass the [Private Cloud Stress test (storage profile).](http://PCSDocumentationNeeded)
-
-**Security requirements**
-
-No special requirements
-
-**Diagnostics requirements**
-
-No special requirements
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-Microsoft Azure Stack will require disk devices and NVMe controllers to be firmware updateable using the new mechanism introduced in Windows Server 2016. This also means that HBAs must properly translate firmware download and activate commands (according to SAT-4).
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-### System.Server.AzureStack.Storage.Controllers
-
-*Core Storage controller requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-Microsoft Azure Stack requirements for storage controllers are captured by the following table.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>WS2016 certification</strong></th>
-<th><strong>Microsoft Azure Stack<br />
-certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Controller</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_basicfunction">Device.Storage.Controller.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_classcode">Device.Storage.Controller.ClassCode</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_inffile">Device.Storage.Controller.InfFile</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_miniportdrivermodel">Device.Storage.Controller.MiniportDriverModel</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Ata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932709(v=vs.85).aspx#device_storage_controller_ata_interface">Device.Storage.Controller.Ata.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Boot</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932710(v=vs.85).aspx#device_storage_controller_boot_basicfunction">Device.Storage.Controller.Boot.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932710(v=vs.85).aspx#device_storage_controller_boot_bitlocker">Device.Storage.Controller.Boot.BitLocker</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Fc</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932711(v=vs.85).aspx#device_storage_controller_fc_interface">Device.Storage.Controller.Fc.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Fc.NPIV</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932713(v=vs.85).aspx#device_storage_controller_fc_npiv_basicfunction">Device.Storage.Controller.Fc.NPIV.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Fcoe</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932712(v=vs.85).aspx#device_storage_controller_fcoe_interface">Device.Storage.Controller.Fcoe.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932712(v=vs.85).aspx#device_storage_controller_fcoe_interoperability">Device.Storage.Controller.Fcoe.Interoperability</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Flush</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932714(v=vs.85).aspx#device_storage_controller_flush_basicfunction">Device.Storage.Controller.Flush.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Iscsi</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932715(v=vs.85).aspx#device_storage_controller_iscsi_interface">Device.Storage.Controller.Iscsi.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Iscsi.iSCSIBootComponent</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932716(v=vs.85).aspx#device_storage_controller_iscsi_iscsibootcomponent_fwtable">Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Optical</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932717(v=vs.85).aspx#device_storage_controller_optical_basicfunction">Device.Storage.Controller.Optical.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.PassThroughSupport</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932718(v=vs.85).aspx#device_storage_controller_passthroughsupport_basicfunction">Device.Storage.Controller.PassThroughSupport.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Raid</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932719(v=vs.85).aspx#device_storage_controller_raid_basicfunction">Device.Storage.Controller.Raid.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Raid.ContinuousAvailability</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_activemode">Device.Storage.Controller.Raid.ContinuousAvailability.ActiveMode</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_failoverclustering">Device.Storage.Controller.Raid.ContinuousAvailability.FailoverClustering</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_lunaccess">Device.Storage.Controller.Raid.ContinuousAvailability.LunAccess</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_raid">Device.Storage.Controller.Raid.ContinuousAvailability.RAID</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_recoveryprocessing">Device.Storage.Controller.Raid.ContinuousAvailability.RecoveryProcessing</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Sas</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932721(v=vs.85).aspx#device_storage_controller_sas_interface">Device.Storage.Controller.Sas.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><em>Device.Storage.Controller.Sas.TranslationLayer</em></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Sata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932722(v=vs.85).aspx#device_storage_controller_sata_interface">Device.Storage.Controller.Sata.Interface</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.SD</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932723(v=vs.85).aspx#device_storage_controller_sd_basicfunction">Device.Storage.Controller.SD.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.ControllerDrive.NVMe</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932708(v=vs.85).aspx#device_storage_controllerdrive_nvme_basicfunction">Device.Storage.ControllerDrive.NVMe.BasicFunction</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
-
-**Interpreting requirements**
-
-Storage controllers used in all Microsoft Azure Stack solutions must support the "Required" feature requirements. Depending on the protocols that the storage controller supports, the controller might be required to meet some additional "If Implemented" feature requirements.
-
-To illustrate this, storage controllers for all Microsoft Azure Stack solutions must support the following feature requirements.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Controller</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_basicfunction">Device.Storage.Controller.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_classcode">Device.Storage.Controller.ClassCode</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_inffile">Device.Storage.Controller.InfFile</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932707(v=vs.85).aspx#device_storage_controller_miniportdrivermodel">Device.Storage.Controller.MiniportDriverModel</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Boot</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932710(v=vs.85).aspx#device_storage_controller_boot_basicfunction">Device.Storage.Controller.Boot.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932710(v=vs.85).aspx#device_storage_controller_boot_bitlocker">Device.Storage.Controller.Boot.BitLocker</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Flush</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932714(v=vs.85).aspx#device_storage_controller_flush_basicfunction">Device.Storage.Controller.Flush.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.PassThroughSupport</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932718(v=vs.85).aspx#device_storage_controller_passthroughsupport_basicfunction">Device.Storage.Controller.PassThroughSupport.BasicFunction</a></td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
-
-Depending on its intended protocol functionality, the storage controller might also be required to meet some of the following "If Implemented" requirements.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Controller.Ata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932709(v=vs.85).aspx#device_storage_controller_ata_interface">Device.Storage.Controller.Ata.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Fc</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932711(v=vs.85).aspx#device_storage_controller_fc_interface">Device.Storage.Controller.Fc.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Fc.NPIV</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932713(v=vs.85).aspx#device_storage_controller_fc_npiv_basicfunction">Device.Storage.Controller.Fc.NPIV.BasicFunction</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Fcoe</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932712(v=vs.85).aspx#device_storage_controller_fcoe_interface">Device.Storage.Controller.Fcoe.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932712(v=vs.85).aspx#device_storage_controller_fcoe_interoperability">Device.Storage.Controller.Fcoe.Interoperability</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Iscsi</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932715(v=vs.85).aspx#device_storage_controller_iscsi_interface">Device.Storage.Controller.Iscsi.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Iscsi.iSCSIBootComponent</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932716(v=vs.85).aspx#device_storage_controller_iscsi_iscsibootcomponent_fwtable">Device.Storage.Controller.Iscsi.iSCSIBootComponent.FwTable</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Optical</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932717(v=vs.85).aspx#device_storage_controller_optical_basicfunction">Device.Storage.Controller.Optical.BasicFunction</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Raid</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932719(v=vs.85).aspx#device_storage_controller_raid_basicfunction">Device.Storage.Controller.Raid.BasicFunction</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Raid.ContinuousAvailability</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_activemode">Device.Storage.Controller.Raid.ContinuousAvailability.ActiveMode</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_failoverclustering">Device.Storage.Controller.Raid.ContinuousAvailability.FailoverClustering</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_lunaccess">Device.Storage.Controller.Raid.ContinuousAvailability.LunAccess</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_raid">Device.Storage.Controller.Raid.ContinuousAvailability.RAID</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932720(v=vs.85).aspx#device_storage_controller_raid_continuousavailability_recoveryprocessing">Device.Storage.Controller.Raid.ContinuousAvailability.RecoveryProcessing</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.Sas</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932721(v=vs.85).aspx#device_storage_controller_sas_interface">Device.Storage.Controller.Sas.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Sata</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932722(v=vs.85).aspx#device_storage_controller_sata_interface">Device.Storage.Controller.Sata.Interface</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Controller.SD</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932723(v=vs.85).aspx#device_storage_controller_sd_basicfunction">Device.Storage.Controller.SD.BasicFunction</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.ControllerDrive.NVMe</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932708(v=vs.85).aspx#device_storage_controllerdrive_nvme_basicfunction">Device.Storage.ControllerDrive.NVMe.BasicFunction</a></td>
-<td>If Implemented</td>
-</tr>
-</tbody>
-</table>
-
-For example, a storage controller that supports Fibre Channel must meet the following "If Implemented" requirements, but no others.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Controller.Fc</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932711(v=vs.85).aspx#device_storage_controller_fc_interface">Device.Storage.Controller.Fc.Interface</a></td>
-<td>Required Only if Controller supports Fibre Channel</td>
-</tr>
-<tr class="even">
-<td>Device.Storage.Controller.Fc.NPIV</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932713(v=vs.85).aspx#device_storage_controller_fc_npiv_basicfunction">Device.Storage.Controller.Fc.NPIV.BasicFunction</a></td>
-<td>Required Only if Controller supports Fibre Channel</td>
-</tr>
-</tbody>
-</table>
-
-**Reliability (quality) requirements**
-
-| **Requirement**                                  | **Sub-requirement**                                  | **Microsoft Azure Stack certification** |
-|--------------------------------------------------|------------------------------------------------------|-----------------------------------------|
-| Device.Storage.Controller.AzureStack.CloudStress | Device.Storage.Controller.AzureStack.CloudStress.PCS | Required                                |
-
-**Security requirements**
-
-No special requirements.
-
-**Diagnostics requirements**
-
-No special requirements.
-
-**Deployment requirements**
-
-No special requirements.
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-### System.Server.AzureStack.Storage.Enclosures
-
-*Core Storage enclosure requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-Feature requirements for storage enclosures that are used in Microsoft Azure Stack solutions are listed in the following table.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Storage.Enclosure</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932724(v=vs.85).aspx#device_storage_enclosure_directaccess">Device.Storage.Enclosure.DirectAccess</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932724(v=vs.85).aspx#device_storage_enclosure_driveidentification">Device.Storage.Enclosure.DriveIdentification</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Storage.Hd.RaidArray</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932743(v=vs.85).aspx#device_storage_hd_raidarray_manageability">Device.Storage.Hd.RaidArray.Manageability</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932743(v=vs.85).aspx#device_storage_hd_raidarray_manageability_smapi">Device.Storage.Hd.RaidArray.Manageability.Smapi</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932743(v=vs.85).aspx#device_storage_hd_raidarray_manageability_smi">Device.Storage.Hd.RaidArray.Manageability.Smi</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932743(v=vs.85).aspx#device_storage_hd_raidarray_manageability_smi_ctp">Device.Storage.Hd.RaidArray.Manageability.Smi.Ctp</a></td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Device.Storage.Hd.RaidArray.Manageability.Microsoft Azure StackManagement (TBD)</td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
-
-**Reliability (quality) requirements**
-
-| **Requirement**                                 | **Sub-requirement**                                 | **Microsoft Azure Stack certification** |
-|-------------------------------------------------|-----------------------------------------------------|-----------------------------------------|
-| Device.Storage.Enclosure.AzureStack.CloudStress | Device.Storage.Enclosure.AzureStack.CloudStress.PCS | Required                                |
-
-**Security requirements**
-
-No special requirements.
-
-**Diagnostics requirements**
-
-No special requirements.
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-<a name="system.server.azurestack.networking"></a>
-## System.Server.AzureStack.Networking
-
-### System.Server.AzureStack.Networking.Base
-
-*Core networking requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-Third party extensible switches for Hyper-V that support capturing, filtering, or forwarding of network traffic are not allowed in Microsoft Azure Stack solutions.
-
-### System.Server.AzureStack.Networking.Ethernet
-
-*Core networking requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-Microsoft Azure Stack requirements for LAN cards (NICs) are captured in the following table.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>WS2016 certification</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Network.LAN</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932671(v=vs.85).aspx#device_network_lan_cloudstress">Device.Network.LAN.CloudStress</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.VXLAN</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932687(v=vs.85).aspx#device_network_lan_vxlan_vxlanpackettaskoffloads">Device.Network.LAN.VXLAN.VXLANPacketTaskOffloads</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.VMQ</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932686(v=vs.85).aspx#device_network_lan_vmq_virtualmachinequeues">Device.Network.LAN.VMQ.VirtualMachineQueues</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.TCPChimney</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_complywithndis">Device.Network.LAN.TCPChimney.ComplyWithNDIS</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_complywithtcpipprotocol">Device.Network.LAN.TCPChimney.ComplyWithTCPIPProtocol</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_handlesoutoforderdata">Device.Network.LAN.TCPChimney.HandlesOutOfOrderData</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_implementsufficientlygranulartimers">Device.Network.LAN.TCPChimney.ImplementSufficientlyGranularTimers</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_neighborstateobjtimestampscomplywithwdk">Device.Network.LAN.TCPChimney.NeighborStateObjTimestampsComplyWithWDK</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_support1024connections">Device.Network.LAN.TCPChimney.Support1024Connections</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932685(v=vs.85).aspx#device_network_lan_tcpchimney_support64bitaddresses">Device.Network.LAN.TCPChimney.Support64bitAddresses</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.SRIOV.VF</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932684(v=vs.85).aspx#device_network_lan_sriov_vf_vf">Device.Network.LAN.SRIOV.VF.VF</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.SRIOV</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932683(v=vs.85).aspx#device_network_lan_sriov_sriov">Device.Network.LAN.SRIOV.SRIOV</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN. RSS</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932682(v=vs.85).aspx#device_network_lan_rss_rss">Device.Network.LAN.RSS.RSS</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932682(v=vs.85).aspx#device_network_lan_rss_sethashfunctiontypeandvalue">Device.Network.LAN.RSS.SetHashFunctionTypeAndValue</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932682(v=vs.85).aspx#device_network_lan_rss_supportindirectiontablessizes">Device.Network.LAN.RSS.SupportIndirectionTablesSizes</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932682(v=vs.85).aspx#device_network_lan_rss_supporttoeplitzhashfunction">Device.Network.LAN.RSS.SupportToeplitzHashFunction</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932682(v=vs.85).aspx#device_network_lan_rss_supportupdatestorssinfo">Device.Network.LAN.RSS.SupportUpdatesToRSSInfo</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.RSC</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932681(v=vs.85).aspx#device_network_lan_rsc_rsc">Device.Network.LAN.RSC.RSC</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.PM</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932680(v=vs.85).aspx#device_network_lan_pm_powmgmtndis">Device.Network.LAN.PM.PowMgmtNDIS</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932680(v=vs.85).aspx#device_network_lan_pm_wakeonlanpatterns">Device.Network.LAN.PM.WakeOnLANPatterns</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932680(v=vs.85).aspx#device_network_lan_pm_wakepacket">Device.Network.LAN.PM.WakePacket</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.MTUSize</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn706053(v=vs.85).aspx">Device.Network.LAN.MTUSize</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.LargeSendOffload</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932679(v=vs.85).aspx#device_network_lan_largesendoffload_largesendoffload">Device.Network.LAN.LargeSendOffload.LargeSendOffload</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.KRDMA</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932678(v=vs.85).aspx#device_network_lan_krdma_krdma">Device.Network.LAN.KRDMA.KRDMA</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.VMMQ</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932678(v=vs.85).aspx#device_network_lan_krdma_krdma">Device.Network.LAN.VMMQ</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.IPsec</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932677(v=vs.85).aspx#device_network_lan_ipsec_ipsec">Device.Network.LAN.IPsec.IPsec</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.GRE</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932676(v=vs.85).aspx#device_network_lan_gre_grepackettaskoffloads">Device.Network.LAN.GRE.GREPacketTaskOffloads</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.DCB</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932675(v=vs.85).aspx#device_network_lan_dcb_dcb">Device.Network.LAN.DCB.DCB</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.CS</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932674(v=vs.85).aspx#device_network_lan_cs_networkwake">Device.Network.LAN.CS.NetworkWake</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932674(v=vs.85).aspx#device_network_lan_cs_presenceoffload">Device.Network.LAN.CS.PresenceOffload</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932674(v=vs.85).aspx#device_network_lan_cs_reliablecsconnectivity">Device.Network.LAN.CS.ReliableCSConnectivity</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932674(v=vs.85).aspx#device_network_lan_cs_wakeevents">Device.Network.LAN.CS.WakeEvents</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932674(v=vs.85).aspx#device_network_lan_cs_wakereasondetection">Device.Network.LAN.CS.WakeReasonDetection</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td>Device.Network.LAN.ChecksumOffload</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932673(v=vs.85).aspx#device_network_lan_checksumoffload_checksumoffload">Device.Network.LAN.ChecksumOffload.ChecksumOffload</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.Network.LAN.Base</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_100mborgreater">Device.Network.LAN.Base.100MbOrGreater</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_32multicastaddresses">Device.Network.LAN.Base.32MulticastAddresses</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_advproperties">Device.Network.LAN.Base.AdvProperties</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_anyboundary">Device.Network.LAN.Base.AnyBoundary</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_ipv4andipv6offloadparity">Device.Network.LAN.Base.IPv4AndIPv6OffloadParity</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_ndiscalls">Device.Network.LAN.Base.NDISCalls</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932678(v=vs.85).aspx#device_network_lan_krdma_krdma">Device.Network.LAN.KRDMA.KRDMA</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_packetfiltering">Device.Network.LAN.Base.PacketFiltering</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_preserveosservices">Device.Network.LAN.Base.PreserveOSServices</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_priorityvlan">Device.Network.LAN.Base.PriorityVLAN</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_shortpacketpadding">Device.Network.LAN.Base.ShortPacketPadding</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932672(v=vs.85).aspx#device_network_lan_base_supportieeee8023">Device.Network.LAN.Base.SupportIEEEE8023</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
-
-**Reliability (quality) requirements**
-
-The requirement below verifies that the NIC satisfies reliability criteria of a Microsoft Azure Stack-based private cloud solution.
-
-| **Requirement**                           | **Sub-requirement**                           | **Microsoft Azure Stack certification** |
-|-------------------------------------------|-----------------------------------------------|-----------------------------------------|
-| Device.Network.LAN.AzureStack.CloudStress | Device.Network.LAN.AzureStack.CloudStress.PCS | Required                                |
-
-**Diagnostics requirements**
-
-No special requirements.
-
-**Deployment requirements**
-
-No special requirements.
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-Tooling for firmware updates must meet Nano Server requirements for device driver and tools used for firmware changes to a physical network device.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-### System.Server.AzureStack.Networking.Switch
-
-*Switch requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-A Microsoft Azure Stack solution for a private cloud must meet requirements for the physical switch infrastructure. This section enumerates the requirements.
-
-The Microsoft Azure Stack networking environment assumes a Spine/Leaf CLOS networking configuration for resiliency and scale:
-
- - The leaf switches provide connectivity to the compute and storage servers in the Microsoft Azure Stack solution.
-
- - The spine switches provide connectivity between other leaf switches and connectivity to a customer’s network border devices.
-
-These spine and leaf switches must provide Layer 3 (L3), IP-level connectivity in the form of routing/forwarding and Border Gateway Protocol (BGP) support.
-
-NOTE: The details of the physical and logical configuration are beyond the scope of this requirements enumeration and will be contained in the Architecture document for Microsoft Azure Stack.
-
-In addition to the requirements enumerated below Microsoft Azure Stack will have requirements to validate NIC and physical switches to ensure RDMA is configured and routed correctly.
-
-**Requirements**
-
-Physical switch infrastructure requirements for a private-cloud Microsoft Azure Stack solution are captured in the following table.
-
-Microsoft Azure Stack requirements for switches are captured in the following table.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>WS2016 certification</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Network.Switch.Manageability</td>
-<td><a href="https://msdn.microsoft.com/de-de/library/dn932691(v=vs.85).aspx#device_network_switch_manageability_networkswitchprofile__if_implemented">Device.Network.Switch.Manageability.NetworkSwitchProfile</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932691(v=vs.85).aspx#device_network_switch_manageability_networkswitchprofileview">Device.Network.Switch.Manageability.NetworkSwitchProfileView</a></td>
-<td>If Implemented</td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Security - Authentication</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/cc732256.aspx">802.1X Authenticating</a></td>
-<td>If Implemented</td>
-<td>requirement</td>
-</tr>
-</tbody>
-</table>
-
-The following table describes the directional thinking around Microsoft Azure Stack switch requirements. Switch tests, which are under development, will correspond to the Device.Network.Switch.AzureStack requirements.
-
-<table>
-<thead>
-<tr class="header">
-<th>SWITCH CHARACTERISTICS</th>
-<th>Microsoft Azure Stack Certification</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OSI layer support</td>
-<td>L2 &amp; L3 switching on all ports</td>
-</tr>
-<tr class="even">
-<td>Port speed</td>
-<td><p>Access Switch/Compute Nodes: Minimum 10 Gb Ethernet</p>
-<p>Aggregate Switch/Access Switch: Minimum 10 Gb Ethernet</p></td>
-</tr>
-<tr class="odd">
-<td>Traffic throughput</td>
-<td>Line rate for L2 and L3 traffic on all ports</td>
-</tr>
-<tr class="even">
-<td>Port capabilities</td>
-<td>L2 and L3 switching on all ports</td>
-</tr>
-<tr class="odd">
-<td>Addressing protocols</td>
-<td><p>Must support both IPv4 and IPv6 traffic.</p>
-<p>IPv6 support for the MUST statements in the following IETF standards is required:</p>
-<ul>
-<li><p>RFC 2460: &quot;Internet Protocol, Version 6 (IPv6)&quot;</p></li>
-<li><p>RFC 2461: &quot;Neighbor Discovery for IP Version 6 (IPv6)&quot;</p></li>
-<li><p>RFC 2462: &quot;IPv6 Stateless Address Autoconfiguration&quot;</p></li>
-<li><p>RFC 2463: &quot;Internet Control Message Protocol (ICMPv6) for the Internet Protocol, Version 6 (IPv6) Specification.&quot;</p></li>
-</ul>
-<p>Switches must support a minimum of 12,000 IPv6 host routes.</p></td>
-</tr>
-<tr class="even">
-<td>ROUTING AND SWITCHING</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>L3 protocols</td>
-<td><p>ECMP</p>
-<p>BGP (IETF RFC 4271)-based ECMP: Currently, BGP is used to provide fault tolerance between Access Switches and Aggregation Switches.</p>
-<p>Implementations should support the MUST statements in the following IETF standards:</p>
-<ul>
-<li><p>RFC 2545: &quot;BGP-4 Multiprotocol extensions for IPv6 Inter-Domain Routing&quot;</p></li>
-<li><p>RFC 4760: &quot;Multiprotocol Extensions for BGP-4&quot;</p></li>
-<li><p>RFC 4893: &quot;BGP Support for Four-octet AS Number Space&quot;</p></li>
-<li><p>RFC 4456: &quot;BGP Route Reflection: An Alternative to Full Mesh Internal BGP (IBGP)&quot;</p></li>
-<li><p>RFC 4724: &quot;Graceful Restart Mechanism for BGP&quot;</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>L2 protocols</td>
-<td>LLDP</td>
-</tr>
-<tr class="odd">
-<td>Overlay protocols</td>
-<td>VLAN – Isolation of various types of traffic.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>802.1q Truck</td>
-</tr>
-<tr class="odd">
-<td>Traffic Filtering</td>
-<td>Need a minimum number of ACL’s or VRF support</td>
-</tr>
-<tr class="even">
-<td>LINK CONTROL</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Quality of service</td>
-<td><p>Enhanced Traffic Selection (802.1Qaz)</p>
-<p>Priority Based Flow Control (802.1p/Q and 802.1Qbb)</p></td>
-</tr>
-<tr class="even">
-<td>AVAILABILITY AND REDUNDANCY</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Switch availability</td>
-<td>Multi-Chassis Link Aggregation in conjunction with NIC teaming</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>VRRP [Assuming that switches will be stackable or that the router is highly available]</td>
-</tr>
-<tr class="odd">
-<td>MANAGEMENT</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Startup/Boot</td>
-<td>Startup, boot-up and operations proceed without the intervention of a network switch administrator.</td>
-</tr>
-<tr class="odd">
-<td>Monitoring</td>
-<td>SNMP v1or SNMP v2</td>
-</tr>
-<tr class="even">
-<td>SNMP MIBs</td>
-<td>MIB-II (RFC 1213), LLDP, Interface MIB (RFC 2863), IF-MIB, IP-MIB, IP-FORWARD-MIB, Q-BRIDGE-MIB, BRIDGE-MIB, LLDB-MIB, Entity-MIB, IEEE8023-LAG-MIB</td>
-</tr>
-<tr class="odd">
-<td>Flow monitoring</td>
-<td><p>Port mirroring</p>
-<p>IPFIX</p></td>
-</tr>
-<tr class="even">
-<td>Events/Logging</td>
-<td>Syslog (for events and change detection)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Traps (Device must support multiple-trap destinations.)</td>
-</tr>
-<tr class="even">
-<td>Device programmability</td>
-<td>NETCONF (IETF RFC 6241) or OMI with DSC support</td>
-</tr>
-<tr class="odd">
-<td>ACCESS</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Users</td>
-<td><p>Multi-user support, with credential encryption through either ACL-based or role-based (RBAC) access controls</p>
-<p>Audit of user activities</p></td>
-</tr>
-<tr class="odd">
-<td>Device access</td>
-<td>SSHv2</td>
-</tr>
-<tr class="even">
-<td>Certificate Usage</td>
-<td>Revocable or CA</td>
-</tr>
-</tbody>
-</table>
-
-**Reliability (quality) requirements**
-
-| **Requirement**                              | **Sub-requirement**                              | **Microsoft Azure Stack certification** |
-|----------------------------------------------|--------------------------------------------------|-----------------------------------------|
-| Device.Network.Swtich.AzureStack.CloudStress | Device.Network.Switch.AzureStack.CloudStress.PCS | Required                                |
-
-**Diagnostics requirements**
-
-TBD
-
-**Deployment requirements**
-
-TBD
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-<a name="system.server.azurestack.firmware"></a>
-## System.Server.AzureStack.Firmware
-
-### System.Server.AzureStack.Firmware.Base
-
-*Firmware requirements for Microsoft Azure Stack*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-BIOS and UEFI feature requirements for a Microsoft Azure Stack solution are captured in the following table.
-
-<table>
-<thead>
-<tr class="header">
+<th>Feature</th>
 <th>Requirement</th>
-<th>Sub-requirement</th>
-<th>WS2016 certification</th>
-<th>Microsoft Azure Stack certification</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Device.DevFund.Server</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932581(v=vs.85).aspx#device_devfund_server_commandlineconfigurable">Device.DevFund.Server.CommandLineConfigurable</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td rowspan="8">System.Fundamentals.Firmware</td>
+<td>System.Fundamentals.Firmware.FirmwareSupportsUSBDevices</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932581(v=vs.85).aspx#device_devfund_server_multipleprocessorgroups">Device.DevFund.Server.MultipleProcessorGroups</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFIBitLocker</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932581(v=vs.85).aspx#device_devfund_server_operateinservercore">Device.DevFund.Server.OperateInServerCore</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFIBootEntries</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932581(v=vs.85).aspx#device_devfund_server_serverpowermanagement">Device.DevFund.Server.ServerPowerManagement</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFICompatibility</td>
 </tr>
 <tr class="odd">
-<td>Device.DevFund.Server.PCI</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932582(v=vs.85).aspx#device_devfund_server_pci_pciaer">Device.DevFund.Server.PCI.PCIAER</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFIDefaultBoot</td>
 </tr>
 <tr class="even">
-<td>Device.DevFund.Server.StaticTools</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932583(v=vs.85).aspx#device_devfund_server_statictools_sdvandpfd">Device.DevFund.Server.StaticTools.SDVandPFD</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFILegacyFallback</td>
 </tr>
 <tr class="odd">
-<td>System.Server.Base</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932833(v=vs.85).aspx">System.Server.Base</a></td>
-<td>Required</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.UEFISecureBoot</td>
 </tr>
 <tr class="even">
-<td>System.Fundamentals.Firmware</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_firmwaresupportsusbdevices">System.Fundamentals.Firmware.FirmwareSupportsUSBDevices</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefibitlocker">System.Fundamentals.Firmware.UEFIBitLocker</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>System.Fundamentals.Firmware</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefibootentries">System.Fundamentals.Firmware.UEFIBootEntries</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_ueficompatibility">System.Fundamentals.Firmware.UEFICompatibility</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefidefaultboot">System.Fundamentals.Firmware.UEFIDefaultBoot</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefilegacyfallback">System.Fundamentals.Firmware.UEFILegacyFallback</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_update">System.Fundamentals.Firmware.Update</a></td>
-<td>Required</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>System.Server.Firmware.UEFI.GOP</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932836(v=vs.85).aspx#system_server_firmware_uefi_gop_display">System.Server.Firmware.UEFI.GOP.Display</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.Firmware.Update</td>
 </tr>
 <tr class="odd">
 <td>System.Server.Virtualization</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932844(v=vs.85).aspx#system_server_virtualization_processorvirtualizationassist">System.Server.Virtualization.ProcessorVirtualizationAssist</a></td>
-<td>Required</td>
-<td>Required</td>
+<td>System.Server.Virtualization.ProcessorVirtualizationAssist</td>
 </tr>
 <tr class="even">
-<td>Device.DevFund.Reliability</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_basicreliabilityandperformance">Device.DevFund.Reliability.BasicReliabilityAndPerformance</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td rowspan="6">System.Fundamentals.ServerNano</td>
+<td>System.Fundamentals.ServerNano.Deployment</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_basicsecurity">Device.DevFund.Reliability.BasicSecurity</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.ServerNano.Diagnostics</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_bootdriverembeddedsignature">Device.DevFund.Reliability.BootDriverEmbeddedSignature</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.ServerNano.FirmwareUpdate</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_driverinstalluninstallreinstall">Device.DevFund.Reliability.DriverInstallUninstallReinstall</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.ServerNano.MonitoringAndTelemetry</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_driveruninstallinstallotherdevicestability">Device.DevFund.Reliability.DriverUninstallInstallOtherDeviceStability</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.ServerNano.OperateInServerNano</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_noreplacingsyscomponents">Device.DevFund.Reliability.NoReplacingSysComponents</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_normalopwithdep">Device.DevFund.Reliability.NormalOpWithDEP</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_pcsupportslowpowerstates">Device.DevFund.Reliability.PCSupportsLowPowerStates</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_pnpids">Device.DevFund.Reliability.PnPIDs</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_pnpirps">Device.DevFund.Reliability.PnPIRPs</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_properinf">Device.DevFund.Reliability.ProperINF</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_remotedesktopservices">Device.DevFund.Reliability.RemoteDesktopServices</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_signable">Device.DevFund.Reliability.Signable</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932576(v=vs.85).aspx#device_devfund_reliability_swdeviceinstallsusepnpapis">Device.DevFund.Reliability.SWDeviceInstallsUsePnPAPIs</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.DevFund.Reliability.3rdParty</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932578(v=vs.85).aspx#device_devfund_reliability_3rdparty_formertests">Device.DevFund.Reliability.3rdParty.FormerTests</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>Device.DevFund.Reliability.Interrupts</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932579(v=vs.85).aspx#device_devfund_reliability_interrupts_basicreliabilityandperformance">Device.DevFund.Reliability.Interrupts.BasicReliabilityAndPerformance</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>Device.DevFund.ReliabilityDisk</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932577(v=vs.85).aspx#device_devfund_reliabilitydisk_iocompletioncancellation">Device.DevFund.ReliabilityDisk.IOCompletionCancellation</a></td>
-<td>If Implemented</td>
-<td>Required</td>
+<td>System.Fundamentals.ServerNano.PatchAndUpdate</td>
 </tr>
 </tbody>
 </table>
+</html>
 
-**Reliability (quality) requirements**
+In addition to the above, the server must have:
 
-| **Requirement**                       | **Sub-requirement**                       | **Microsoft Azure Stack certification** |
-|---------------------------------------|-------------------------------------------|-----------------------------------------|
-| Device.DevFund.AzureStack.CloudStress | Device.DevFund.AzureStack.CloudStress.PCS | Required                                |
+1.	CPU that is a dual socket system with Intel® Xeon® Processor E5 v3 Family or better
 
-**Diagnostics requirements**
+2.	A minimum of 128 GB RAM
 
-No special requirements.
 
-**Deployment requirements**
+## <a href="" id="system.server.azurestack.security"></a>System.Server.AzureStack.Security
 
-No special requirements.
+*Security requirements for servers used in an Azure Stack solution.*
 
-**Patch and update requirements**
 
-No special requirements.
+### System.Server.AzureStack.Assurance
 
-**Field replacement requirements**
+*Hardware Assurance requirements for Servers used in an Azure Stack solution.*
 
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-Agent less monitoring is a requirement. Also see Redfish requirement in baseboard management controller section.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-<a name="system.server.azurestack.security"></a>
-## System.Server.AzureStack.Security
-
-System.Server.AzureStack.Security.Base
-
-*Security requirements for Microsoft Azure Stack*
-
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
-Assurance feature requirements for a Microsoft Azure Stack solution are captured in the following table.
+Servers used in an Azure Stack Solutions should meet the requirements of the Hardware Assurance AQ.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>WS2016 certification</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>System.Fundamentals.TPM20</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932828(v=vs.85).aspx#system_fundamentals_tpm20_ekcerts">System.Fundamentals.TPM20.EKCerts</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932828(v=vs.85).aspx#system_fundamentals_tpm20_tpm20">System.Fundamentals.TPM20.TPM20</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>System.Fundamentals.TrustedPlatformModule</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932829(v=vs.85).aspx#system_fundamentals_trustedplatformmodule_tpmcomplieswithtcgtpmmainspecification">System.Fundamentals.TrustedPlatformModule.TPMComplieswithTCGTPMMainSpecification</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932829(v=vs.85).aspx#system_fundamentals_trustedplatformmodule_tpmenablesfullusethroughsystemfirmware">System.Fundamentals.TrustedPlatformModule.TPMEnablesFullUseThroughSystemFirmware</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="odd">
-<td>System.Fundamentals.TrustedPlatformModule</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932829(v=vs.85).aspx#system_fundamentals_trustedplatformmodule_tpmrequirements">System.Fundamentals.TrustedPlatformModule.TPMRequirements</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td>System.Fundamentals.Firmware.CS</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807(v=vs.85).aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a></td>
-<td>If Implemented</td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
+| Feature | Requirements |
+|---------|--------------|
+|System.Server.Assurance | System.Server.Assurance.EnhancedPlatformIntegrityProtection |
 
-**Reliability (quality) requirements**
 
-No special requirements.
+### System.Server.AzureStack.SecureBootUEFIOverPXE
 
-**Diagnostics requirements**
+*PXE boot requirements for deploying Microsoft Azure Stack.*
 
-No special requirements.
-
-**Deployment requirements**
-
-No special requirements.
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-No special requirements.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
-
-<a name="system.server.azurestack.bmc"></a>
-## System.Server.AzureStack.BMC
-
-System.Server.AzureStack.BMC.Base
-
-*Baseboard Management Controller requirements for Microsoft Azure Stack*
-
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
+
+**Description**
+
+Servers used in Microsoft Azure Stack solutions should be able to boot successfully over PXE in the UEFI mode with SecureBoot enabled.
+
+
+## <a href="" id="system.server.azurestack.bmc"></a>System.Server.AzureStack.BMC
+
+<!--No content provided in the Word file for this section.-->
+
+### System.Server.AzureStack.BMC.Base
+
+*Baseboard Management Controller requirements for Microsoft Azure Stack.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
 
 **Description**
 
 The BMC feature requirement for a Microsoft Azure Stack solution is captured in the following table.
 
+| Feature | Requirement | Azure Stack Certification |
+|---------|-------------|---------------------------|
+| System.Server.BMC | System.Server.BMC.OutOfBandRemoteManageability | Required |
+| System.Server.Manageability.Redfish | System.Server.Manageability.Redfish.Basic | If Implemented |
+
+
+### System.Server.AzureStack.BMC.Base.Reliability
+
+*Baseboard Management Controller reliability requirements for Microsoft Azure Stack.*
+
+<html>
 <table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Sub-requirement</strong></th>
-<th><strong>Microsoft Azure Stack certification</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Device.Connectivity.Server</td>
-<td><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932566(v=vs.85).aspx#device_connectivity_server_serveroutofbandmanageability">Device.Connectivity.Server.ServerOutOfBandManageability</a></td>
-<td>Required</td>
-</tr>
-<tr class="even">
-<td><a href="http://www.dmtf.org/standards/redfish">Restful API using Redfish</a></td>
-<td><a href="http://www.dmtf.org/sites/default/files/standards/documents/DSP0266_1.0.0.pdf">Redfish 1.0 conformance</a></td>
-<td>If Implemented</td>
-</tr>
-<tr class="odd">
-<td>Security - Authentication</td>
-<td>NPS – Radius Support or LDAP</td>
-<td>Required</td>
-</tr>
-</tbody>
-</table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
 
-**Reliability (quality) requirements**
+**Description**
 
-| **Requirement**                            | **Sub-requirement**                            | **Microsoft Azure Stack certification** |
-|--------------------------------------------|------------------------------------------------|-----------------------------------------|
-| Device.Connectivity.AzureStack.CloudStress | Device.Connectivity.AzureStack.CloudStress.PCS | Required                                |
+The IPMI functionality below will be tested from a reliability perspective since it is critical for a successful deployment and continued access to an Azure Stack solution. The following powershell cmdlets will be used with the **-ManagementProtocol IPMI** parameter to exercise IPMI functionality in a stress environment. 
 
-**Diagnostics requirements**
+ - **Get-PcsvDevice**
+ - **Get-PcsvDeviecLog**
+ - **Restart-PcsvDevice**
+ - **Set-PcsvDeviceBootConfiguration**
+ - **Set-PcsvDeviceNetworkConfiguration**
+ - **Set-PcsvDeviceUserPassword**
+ - **Start-PcsvDevice**
+ - **Stop-PcsvDevice**
+ - **Clear-PcsvDeviceLog**
 
-No special requirements.
 
-**Deployment requirements**
-
-No special requirements.
-
-**Patch and update requirements**
-
-No special requirements.
-
-**Field replacement requirements**
-
-No special requirements.
-
-**Monitoring and telemetry requirements**
-
-Agent less monitoring is a requirement. Also see Redfish requirement in baseboard management controller section.
-
-**Firmware update requirements**
-
-No special requirements.
-
-**Recertification threshold for hardware and driver changes**
-
-The recertification threshold for Microsoft Azure Stack is the same as for Windows Server.
 
 <a name="system.server.base"></a>
 ## System.Server.Base
@@ -8702,12 +7446,14 @@ The recertification threshold for Microsoft Azure Stack is the same as for Windo
 
 *A server system can natively run a 64-bit version of Windows Server.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8718,12 +7464,14 @@ Devices in a server system must also have 64-bit drivers available for 64-bit op
 
 *Baseboard management controller solution must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8777,12 +7525,14 @@ A KCS non-communication interrupt is defined as an OBF-generated interrupt that 
 
 *Baseboard Management Controller is discoverable and enumerable.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8792,12 +7542,14 @@ A system that has a baseboard management controller (BMC) present must expose it
 
 *Server system includes components and drivers that comply with Windows Hardware Certification Program.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8807,12 +7559,14 @@ All buses, devices, and other components in a system must meet their respective 
 
 *Server system includes storage and network solutions that use PCI Express architecture*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8825,94 +7579,32 @@ board. This requirement does not apply to integrated devices that are part of th
 
 *System memory uses ECC or other technology to prevent single-bit errors from causing system failure.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Server systems must support error correction code, memory mirroring, or another technology that can detect and correct at least a single-bit memory error. The system memory and cache must be protected with ECC) or other memory protection. All ECC or otherwise protected RAM, visible to the operating system must be cacheable. The solution must be able to detect at least a double-bit error in one word and to correct a single-bit error in one word, where "word" indicates the width in bits of the memory subsystem. A detected error that cannot be corrected must result in a system fault.
 
-### System.Server.Base.EnhancedPlatformIntegrityProtectionForCloudServices (If Implemented)
-
-*Server supports hardware- and firmware-based enhanced platform integrity protection for cloud services.*
-
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
-
-**Description**
-
-This is an “If-Implemented”, optional system requirement for a system providing enhanced security for Windows Server. The server platform must support:
-
-<ul>
-    <li>
-        <p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
-        <ul>
-            <li><p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFIBitLocker</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFIBootEntries</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFICompatibility</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFIDefaultBoot</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
-            <li><p>System.Fundamentals.Firmware.Update<p>
-        </ul>
-    </li>
-
-    <li>
-        <p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
-        <ul>
-            <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
-            <li><p>System.Fundamentals.Firmware.UEFISecureBoot</p></li>
-        </ul>
-    </li>
-    <li>
-        <p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
-        <ul>
-            <li><p>System.Server.Virtualization.ProcessorVirtualizationAssist</p></li>
-        </ul>
-    </li>
-    <li>
-        <p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
-        <ul>
-            <li><p>System.Fundamentals.TPM20.EKCerts</p></li>
-            <li><p>System.Fundamentals.TPM20.TPM20</p></li>
-        </ul>
-    </li>
-</ul>
-
-All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.
-
-For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default.  In addition, the NoPPIProvision flag must be set to TRUE by default.  There must be a mechanism in UEFI to confirm the settings of these variables and change them.  This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.
-
-For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;
-
- - Data pages must be separate from code pages.
-
- - Code and Data pages are at page level granularity for alignment.
-
- - The same page *will not* contain both Data \[Read or Write\] and executable Code.
-
- - The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.
-
-This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
 
 ### System.Server.Base.HotPlugECN
 
 *Server system that supports native Hot Plug functionality meets requirements defined in Hot-Plug ECN No. 31.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8922,12 +7614,14 @@ A server system must meet requirements defined in the PCI Hot-Plug ECN No. 31 if
 
 *Persistent storage devices on servers classified as Hard Disk Drives must not be PATA.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8942,12 +7636,14 @@ Parallel Advanced Technology Attachment (also known as Parallel ATA, PATA, IDE, 
 
 *Server system includes a method for installing the operating system for emergency recovery or repair.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8961,12 +7657,14 @@ The server system must provide a method for installing the operating system for 
 
 *Windows Server systems may implement AER (Advanced Error Reporting) as provided by the platform and specified in PCI Express Base Specification version 2.1 and ACPI Specification 3.0b*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -8998,12 +7696,14 @@ policy.
 
 *Server system supports remote, headless, out of band management capabilities.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9047,12 +7747,14 @@ See service processor console redirection details at [http://go.microsoft.com/fw
 
 *Server device drivers must support Resource Rebalance requests*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9065,17 +7767,20 @@ resource rebalance operation.
 
 *Server system must include necessary devices and functionality.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
 Server systems must include the following devices or functionality.
 
+<html>
 <table>
 <thead>
 <tr class="header">
@@ -9242,6 +7947,7 @@ Server systems must include the following devices or functionality.
 </tr>
 </tbody>
 </table>
+</html>
 
 The following devices or functionality are not required for Server Systems:
 
@@ -9301,12 +8007,14 @@ The following devices or functionality are not required for Server Systems:
 
 *Server system supports PCI Express natively*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9323,12 +8031,14 @@ precedence.
 
 *Server supports out-of-band remote management capabilities.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9353,12 +8063,14 @@ Out-of-band remote manageability through IPMI 2.0 allow different makes and mode
 
 *Servers that support hardware partitioning must supply partition management software as a Windows application running on a Windows operating system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9368,12 +8080,14 @@ Servers that support hardware partitioning must provide partition manager softwa
 
 *Servers that support hardware partitioning must supply partition management software that provides a GUI and a scripting capability for partition management.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9384,12 +8098,14 @@ Servers that support hardware partitioning must supply partition management so
 
 *Servers that support hardware partitioning must support persistence of hardware partition configuration information across a reboot and power cycle.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9399,12 +8115,14 @@ The hardware partition configuration on a server that supports hardware partitio
 
 *Systems that support Dynamic Hardware Partitioning must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9438,12 +8156,14 @@ Systems must meet the requirements listed below and pass the Dynamic Hardware Pa
 
 *Errors detected in a hardware partition on servers that support hardware partitioning cause no operating system-detectable effects on other partitions.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9453,12 +8173,14 @@ Hardware (which includes firmware) or software errors that occur within the boun
 
 *Servers that support hardware partitioning must provide server description and partitioning flows in firmware that comply with the Dynamic Hardware Partitioning Requirements Specification.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9470,12 +8192,14 @@ For access to these specifications, send e-mail to <DPFB@Microsoft.com>.
 
 *Hardware components on a server that supports hardware partitioning that are within a unit that is hot added to a partition cannot be accessible from other hardware partitions.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9485,12 +8209,14 @@ Processors, memory, and I/O components within any unit that is hot added to an e
 
 *Servers that support hardware partitioning must support hot addition of processors, memory, and I/O and hot replace of processor and memory subsystems.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9501,12 +8227,14 @@ Servers that support hardware partitioning must support hot addition and hot rep
 
 *Servers that support hardware partitioning must provide visual user indication of the status of hot-add events if no software-based notification is provided.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9517,12 +8245,14 @@ Servers that support one or more hot-add component features must provide a visua
 
 *In servers that support dynamic partitioning, hot replacement PUs must have equal and compatible hardware resources to the PU being replaced.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9532,12 +8262,14 @@ A processor or memory PU used as a replacement on a server that supports dynamic
 
 *Partial success of a hot-add action on a server that supports dynamic partitioning does not affect the stability of the partition or server.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9547,12 +8279,14 @@ Components associated with a hot-add action on a server that supports dynamic pa
 
 *Servers that support hardware partitioning must supply partition management software that provides the user with status for each hot-add or hot-replace event.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9562,12 +8296,14 @@ Servers that support hardware partitioning must supply partition management soft
 
 *On servers that support dynamic partitioning, I/O subsystems are provided in a different partition unit to processors and memory subsystems.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9582,12 +8318,14 @@ To enable success of the hot replace feature, I/O subsystems must be implemented
 
 *Systems supporting Fault Tolerant operations must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9611,12 +8349,14 @@ FT systems may disable or not include devices which could cause asynchronous int
 
 *System firmware must support GOP and Windows display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9678,12 +8418,14 @@ During this time when the firmware is in control, the following are the requirem
 
 *System firmware that supports VBE must comply with the Windows Display requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9744,18 +8486,20 @@ The display is controlled by the video device firmware before the WDDM graphics
 <a name="system.server.graphics"></a>
 ## System.Server.Graphics
 
-*Base for Graphics on Server Systems*
+*Base for Graphics on Server Systems.*
 
 ### System.Server.Graphics.WDDM
 
 *All Windows graphics drivers must be WDDM.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
-<p>Windows Server 2016 x64</p>
+<p>Windows 10 Server x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9771,6 +8515,130 @@ Table below explains the scenario usage for the Graphic driver types.
 | Headless      | Not allowed                     | Optional | N/A                                     | N/A            |
 
  
+## <a href="" id="system.server.manageability.redfish"></a>System.Server.Manageability.Redfish
+
+<!--No content provided here in the original Word file.-->
+
+
+### System.Server.Manageability.Redfish.Basic
+
+Server Baseboard Management Controller (BMC) devices can support out-of-band management capabilities based on the DMTF Redfish standard.
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+BMC devices may support server hardware out-of-band management capability using the DMTF Redfish DSP0266 v1.0.1 specification and associated Redfish Schema definitions (DSP8010). If Redfish is implemented, all of the following requirements are mandatory.
+
+It is not necessary that the BMC implements the full Redfish specification, as only a subset of functionality is required for out-of-band management. The BMC must support the following capabilities and Redfish defined schema:
+
+<html>
+    <ol style="list-style-type: decimal">
+        <li>
+            <p>Security</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>Support session connections using HTTPS (TLS).</p></li>
+                <li><p>Support for both LDAP and Radius based authentication.</p></li>
+                <li><p>BMC must not have an anonymous user account configured by default. If this account exists, it must be disabled.</p></li>
+                <li><p>The BMC allows remote credential management. The BMC must support its Administrator password being changed through the AccountService schema.</p></li>
+            </ol>
+        </li>
+        <li>
+            <p>The hardware event logs can be managed through the BMC using the LogService schema.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>The hardware event log entries can be read.</p></li>
+                <li><p>The hardware event log entries can be cleared.</p></li>
+                <li><p>The hardware event log time of the server.</p></li>
+                <li><p>The hardware event log capacity information.</p></li>
+            </ol>
+        </li>
+        <li>
+            <p>The system’s power state can be managed through the BMC using the ComputerSystem schema.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li>
+                    <p>The BMC must expose the following server system information:</p>
+                    <ol style="list-style-type: lower-roman">
+                        <li><p>Current power state of the server.</p></li>
+                    </ol>
+                </li>
+                <li>
+                    <p>The BMC must support the following operations being performed on the server system.</p>
+                    <ol style="list-style-type: lower-roman">
+                        <li><p>Power off of the physical server via the BMC,</p></li>
+                        <li><p>Power on of the physical server via the BMC.</p></li>
+                        <li><p>Power cycle a physical server via the BMC</p></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>The system’s boot source is configurable through the BMC. This functionality is implemented using the ComputerSystem schema.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>The server can be configured to boot from the PXE server the next time it is reset</p></li>
+                <li><p>The server can be configured to boot from the hard-disk the next time it is reset</p></li>
+                <li><p>The server can be configured to always boot from the PXE server</p></li>
+                <li><p>The server can be configured to always boot from the hard-disk</p></li>
+            </ol>
+        </li>
+        <li>
+            <p>The system’s BMC firmware and BIOS version information is exposed through Redfish.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li>
+                    <p>The BMC must expose the version information for the following components:</p>
+                    <ol style="list-style-type: lower-roman">
+                        <li><p>BIOS/UEFI (ComputerSystem schema).</p></li>
+                        <li><p>BMC management firmware (Manager schema).</p></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>The OOB management LAN configuration can be updated through the BMC. This requirement is only applicable for systems that expose OOB management LAN configuration through the Redfish interface.</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>The BMC must expose the following information about its BMC LAN configuration:  IP Address, subnet mask, default gateway, and an indicator of whether the BMC is configured with a static IP address or if one is assigned by DHCP (BMC’s EthernetInterface schema).</p></li>
+            </ol>
+        </li>
+        <li>
+            <p>The system’s basic inventory is exposed through the BMC. The BMC must expose the following server system information through the ComputerSystem schema:</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>Manufacturer of the server hardware</p></li>
+                <li><p>Model of the server hardware</p></li>
+                <li><p>Server SMBIOS GUID</p></li>
+                <li><p>Asset Tag of the server</p></li>
+                <li><p>Serial Number of the server</p></li>
+            </ol>
+        </li>
+        <li>
+            <p>Hardware monitoring of the system must be supported through the Chassis, Thermal, and Power schemas:</p>
+            <ol style="list-style-type: lower-alpha">
+                <li><p>Retrieval of physical fan health</p></li>
+                <li><p>Retrieval of power supply health</p></li>
+                <li><p>Retrievel of sensor alerts for the CPU</p></li>
+                <li><p>Retrieval of on-board network adapter health alerts, if supported</p></li>
+                <li><p>Retrieval of HBA/Controller health alerts, if supported</p></li>
+                <li><p>Retrieval of memory health alerts, if supported</p></li>
+            </ol>
+        </li>
+    </ol>
+</html>
+
+**Enforcement**
+
+This is an *If-Implemented* optional device requirement. This is a prerequisite device requirement for servers claiming to be out-of-band manageable using the DMTF Redfish standard. This requirement becomes in effect at the release of Windows Server vNext.
+
+**Business Justification**
+
+Server deployments are moving to RESTful management infrastructures that have shown that they are highly scalable. As scalable deployments become more common, moving from an IPMI based out-of-band management interface to a Redfish interface to provide RESTful methods with common OData conventions is critical to support modern data center security and scale requirements.
+
+
+
 
 <a name="system.server.powermanageable"></a>
 ## System.Server.PowerManageable
@@ -9781,12 +8649,14 @@ Table below explains the scenario usage for the Graphic driver types.
 
 *Power manageable servers support the power metering and budgeting ACPI interface.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9797,12 +8667,14 @@ Server provides support for reading system level power consumption and reading a
 
 *If processor(s) in a server system support performance states, the server provides mechanisms to makes these states available to Windows.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9812,12 +8684,14 @@ If the processors on the server support performance states, the server provides 
 
 *Power manageable server provides a standards based remote out-of-band interface to query and control the power of the system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9835,12 +8709,14 @@ More detail on the SMASH profile can be found on the Distributed Management task
 
 *Server systems supporting RemoteFX must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9861,12 +8737,14 @@ Servers must meet the following requirements:
 
 *System firmware must fully and accurately implement SMBIOS structures of type 16 and of type 17*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9892,6 +8770,194 @@ The system firmware (BIOS or UEFI) probes and extracts this information from the
 
      - Enable certain classes of ISV products (RAM disk, etc.) to exploit this information for better performance and functionalities on Windows platforms.
 
+
+
+## <a href="" id="system.server.storagemanageability.smapi"></a>System.Server.StorageManageability.Smapi
+
+*This feature defines requirements for manageability of server connected
+storage device. A storage device is considered connected when it
+operates with a Windows Server system through a fabric interface. This
+type of storage interface includes FibreChannel, FibreChannel over
+Ethernet (FCoE), iSCSI, and SMB3.*
+
+*This manageability of a connected storage device means the user can
+perform an end-to-end storage workflow using a common user interface
+such as WMI, PowerShell, or the File and Storage Services in a Server
+Management tool. This workflow must be achievable even before the
+operational target Windows Server OS is deployed in the environment. The
+connected storage device must be manageable from Windows Server, through
+its Storage Management API (SMAPI). The integration with SMAPI using
+SNIA Storage Management Interface Specification (SMI-S) or a Storage
+Management Provider (SMP). Implementing both SMI-S and SMP is not
+required.*
+
+**Business Justification**
+
+Manageable connected storage devices allow efficient deployment and
+operation of server systems running Windows Server in a software-defined
+datacenter and therefore lowering operational costs for the customers
+where heterogeneous hardware platforms are deployed.
+
+
+## <a href="" id="system.server.storagemanageability.smapi.blockStorage"></a>System.Server.StorageManageability.Smapi.BlockStorage
+
+<!--No content provided here in the original Word file.-->
+
+### System.Server.StorageManageability.Smapi.BlockStorage.BasicFunction
+
+*A connected block storage device must be manageable by Windows through its Storage Management API (SMAPI).*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description:**
+
+SMAPI supports FC, FcoE, iSCSI, and SAS block storage devices.
+Connected block storage devices through SMAPI must support the following
+management operations:
+
+-   Discovery of storage pool, storage volumes (AKA LUN), storage media, initiator ports, target ports, masking views, consistency, replication groups
+
+-   Provisioning of new storage volumes, storage volume deletion, mask/unmask storage volumes,
+
+-   Creation and deletion of local storage volume snapshots, clones, or mirrors
+
+-   Creation, modification, deletion of consistency groups (AKA replication groups)
+
+-   Planned/unplanned failover and reverse replication of consistency groups
+
+-   Snapshot and clone of consistency groups
+
+-   Life cycle indications and alter indications
+
+**Enforcement**
+
+This is a mandatory device requirement.
+
+
+## <a href="" id="system.server.storagemanageability.smapi.blockStorage.remotereplication"></a>System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication
+
+<!--No content provided here in the original Word file.-->
+
+### System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication.BasicFunction
+
+*A connected block storage device remote replication must be manageable by Windows through its Storage Management API (SMAPI).*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description:**
+
+SMAPI supports FC, FcoE, iSCSI, and SAS block storage devices.
+Connected block storage devices through SMAPI must support the following
+management operations:
+
+-   Discovery of consistency, replication groups
+
+-   Creation and deletion of local or remote storage volume snapshots, clones, or mirrors
+
+-   Creation, modification, deletion of consistency groups (AKA replication groups)
+
+-   Planned/unplanned failover and reverse replication of consistency groups
+
+-   Snapshot and clone of consistency groups
+
+-   Life cycle indications and alter indications
+
+**Enforcement**
+
+This is a mandatory device requirement.
+
+
+## <a href="" id="system.server.storagemanageability.smapi.filestorage"></a>System.Server.StorageManageability.Smapi.FileStorage
+
+<!--No content provided here in the original Word file.-->
+
+### System.Server.StorageManageability.Smapi.FileStorage.BasicFunction
+
+*A connected file storage device must be manageable by Windows through its Storage Management API (SMAPI).*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description:**
+
+SMAPI supports SMB3 file storage devices. Connected file storage
+devices through SMAPI must support the following management operations:
+
+-   Discovery of filesystem
+-   Create/delete file system volumes
+-   Create/delete file share
+-   Modify permissions of fileshares
+-   Life cycle indications and alter indications
+
+**Enforcement**
+
+This is a mandatory device requirement.
+
+
+## <a href="" id="system.server.storagemanageability.smapi.smi"></a>System.Server.StorageManageability.Smapi.Smi
+
+<!--No content provided here in the original Word file.-->
+
+### System.Server.StorageManageability.Smapi.Smi.Ctp
+
+*An industry-standard connected storage device that is manageable
+through its native SMI-S v1.6.1 Provider interface demonstrates such
+conformance through a successful CTP test pass.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description:**
+
+A connected storage device is considered industry-standard when it
+supports the Storage Networking Industry Association (SNIA) Storage
+Management Initiative specification (SMI-S) v1.6.1 for manageability
+purposes. This SMI-S v1.6.1 Provider interface must be implemented in
+the connected storage device without the aid of an external companion
+provider operating in a separate device enclosure. This should
+demonstrate such conformance through a successful test pass of the [SNIA
+SMI-S Conformance Testing Program (CTP)](http://snia.org/ctp/), and the
+test result must be endorsed by the SNIA SMI Lab Conformance Committee.
+
+**Enforcement**
+
+This is a mandatory device requirement for a connected storage device
+claiming to be industry-standard and manageable from a Windows Server
+system using Smapi via Smi.
+
+However, this and all related sub-requirements are mandatory for a
+connected storage device claiming to be industry-standard and manageable
+from a Windows Server system. Connected storage devices that support
+SMI-S must support the requirements detailed here:
+<https://msdn.microsoft.com/en-us/library/windows/hardware/dn265461(v=vs.85).aspx>
+
+
 <a name="system.server.svvp"></a>
 ## System.Server.SVVP
 
@@ -9901,12 +8967,14 @@ The system firmware (BIOS or UEFI) probes and extracts this information from the
 
 *Products participating in the Server Virtualization Validation Program must meet requirements.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9921,12 +8989,14 @@ Server platforms participating in the Server Virtualization Validation Program m
 
 *Server system must function correctly under stress.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9942,12 +9012,14 @@ This will be tested using stress tools that emulate loads which may be placed up
 
 *Processors in the server support virtualization hardware assists.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -9964,14 +9036,16 @@ For access to the Windows Server 2008 Virtualization Requirements document, send
 
 ### System.Server.WHEA.Core
 
-*Server enables reporting of system hardware errors to the operating system*
+*Server enables reporting of system hardware errors to the operating system.*
 
+<html>
 <table>
 <tr>
 <th>Applies to</th>
 <td>
 <p>Windows Server 2016 x64</p>
 </td></tr></table>
+</html>
 
 **Description**
 
@@ -10004,3 +9078,529 @@ platform, and using the signaling mechanism specified for that error source. Opt
 described in the WHEA Platform Design Guide.
 
 For access to the WHEA Platform Design Guide, send e-mail to <WHEAFB@Microsoft.com>.
+
+
+## <a href="" id="system.solutions.azurestack"></a>System.Solutions.AzureStack
+
+Microsoft Azure Stack (MAS) is a new Microsoft offering that delivers a
+consistent set of Azure Cloud services on premise. While the exact
+composition of Microsoft Azure Stack is still under discussion, the
+components that will be required to build a "cloud-inspired
+infrastructure" solution can be broadly split into the categories below.
+
+<html>
+<table>
+<thead>
+<tr class="header">
+<th>Compute</th>
+<th>Components in the compute cluster of the Microsoft Azure Stack solution—typically, all parts that go into making an individual server (CPU, memory, a motherboard, a boot disk, a graphics card, a BIOS, and so forth).</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Network</td>
+<td>Components that provide the networking fabric for the Microsoft Azure Stack solution—NICs (with a varying number of ports and functional levels), switches, hardware- and software-based load balancers, and so forth.</td>
+</tr>
+<tr class="even">
+<td>Storage</td>
+<td>Components that provide permanent storage media for the Microsoft Azure Stack solution—physical disks (HDDs and SSDs), HBAs (with different interconnects: FC, SAS, ISCSI, SATA, and so forth), RAID adapters, storage enclosures, and so forth.</td>
+</tr>
+<tr class="odd">
+<td>Security</td>
+<td>TPM-based components needed to guarantee platform security and integrity—typically used by components such as BitLocker, Microsoft Assurance, and shielded VMs.</td>
+</tr>
+<tr class="even">
+<td>Special Items</td>
+<td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
+</tr>
+</tbody>
+</table>
+</html>
+
+The goal of this feature is to define product requirements for partners
+who build private cloud solutions based on the Microsoft Azure Stack.
+
+OEMs and Solution Integrators that build Microsoft Azure Stack solutions
+must incorporate components that have passed the associated Microsoft
+Azure Stack logo requirements tests, including the Private Cloud
+Simulation (PCS) test. The fully assembled solutions must pass the PCS
+tests in their minimum and maximum scale supported configurations.
+
+
+### System.Solutions.AzureStack.CloudStress
+
+*Microsoft Azure Stack solutions must comply with this specification in their minimum and maximum configurations.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and
+hardware components to deliver resiliency with high performance. Issues
+in any of the components (software, hardware, drivers, firmware, and so
+forth) can compromise the solution and undermine any promises made
+regarding the Service Level Agreement (SLA) for the private cloud.
+
+Many of these issues are surfaced only under a high-stress, private
+cloud simulation. The Private Cloud Simulator (PCS) enables you to
+validate your component in a cloud scenario and identify such issues. It
+simulates a live datacenter/private cloud by creating VM workloads,
+scheduling administrative operations (load balancing, software/hardware
+maintenance), and injecting faults (unplanned hardware/software
+failures) on the private cloud.
+
+To comply with this
+specification, the solution must pass the PCS test run with the ‘Azure
+Stack - Solutions’ profile in its **minimum** and **maximum**
+configurations. For instance, if an Azure Stack solution ships with a
+4-node minimum scale configuration and a 16-node maximum scale
+configuration, PCS is required on both 4-node and 16-node
+configurations, but not on any intermediate (aka 8-node or 12-node)
+configurations
+
+### System.Solutions.AzureStack.Nano
+
+*Core requirements for Nano server support on solutions running Microsoft Azure Stack.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Systems (AKA virtualization hosts) used in a Microsoft Azure Stack
+solution should run Windows Server Nano as the ‘host’ OS.
+
+Hence, all drivers, software utilities, diagnostic tools, patching and
+firmware update mechanisms expected to run on the host should support
+the Device.DevFund.Server.Nano feature and its applicable
+requirements.
+
+In addition to the above, for complete Microsoft Azure Stack solutions,
+the requirements below are applicable:
+
+<html>
+<ol style="list-style-type: decimal">
+<li>
+<p><strong>Operate in Server Nano</strong></p>
+<p>All systems must be able to install, be configureable, serviceable and operable in Windows Server Nano.</p>
+</li>
+
+<li>
+<p><strong>Diagnostics</strong></p>
+<p>All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:</p>
+<ul>
+<li>
+<p>Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).</p>
+</li>
+<li>
+<p>Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.</p>
+</li>
+</ul>
+<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+<p>In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.</p>
+</li>
+
+<li>
+<p><strong>Deployment</strong></p>
+<p>All drivers intended for use in a Microsoft Azure Stack solution must meet the following deployment requirements:</p>
+<ul>
+<li>
+<p>Drivers must be certified for use with Windows Server 2016 and have the Windows Server 2016 logo</p>
+</li>
+<li>
+<p>Drivers must support Device.DevFund.Server.Nano</p>
+</li>
+<li>
+<p>Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).</p>
+</li>
+<li>
+<p>Drivers must be installable offline using DISM.</p>
+</li>
+</ul>
+<p>All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.</p>
+</li>
+
+<li>
+<p><strong>Patch and update requirements</strong></p>
+<p>All patches and updates must be able to install offline (as part of image creation) or online.</p>
+</li>
+
+<li>
+<p><strong>Monitoring and telemetry</strong></p>
+<p>For Microsoft Azure Stack, all monitoring has to be agentless, and agents will not be allowed on the hosts. Hence, all monitoring tools, utilities, and agents must support installation by the following method:</p>
+<ul>
+<li>
+<p>Remote installation using Windows PowerShell or WMI</p>
+</li>
+</ul>
+<p>Also see: Redfish requirement in System.Server.Manageability.Redfish</p>
+</li>
+
+<li>
+<p><strong>Firmware update</strong></p>
+<p>All firmware update tools and utilities intended for use in a Microsoft Azure Stack solution must support installation by either of the following methods:</p>
+<ul>
+<li>
+<p>Remote installation using Windows PowerShell or WMI</p>
+</li>
+<li>
+<p>Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH</p>
+</li>
+</ul>
+<p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
+</li>
+</ol>
+</html>
+
+### System.Solutions.AzureStack.Network
+
+*Core networking requirements for Microsoft Azure Stack.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Azure Stack solutions must use network components that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component | Azure Stack Feature Support |
+|-----------|-----------------------------|
+| LAN Card (NIC) | Device.Network.LAN.AzureStack |
+| Switch | Device.Network.Switch.AzureStack |
+
+
+**Third party Hyper-V Switch Extensions**
+
+Third party extensible switches for Hyper-V that support capturing,
+filtering, or forwarding of network traffic are not supported in
+Microsoft Azure Stack solutions.
+
+### System.Solutions.AzureStack.Server
+
+*Server system requirements for Microsoft Azure Stack.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Azure Stack solutions must use server systems that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component | Azure Stack Feature Support |
+|-----------|-----------------------------|
+| Server    | System.Server.AzureStack |
+
+
+### System.Solutions.AzureStack.Storage
+
+*Core Storage requirements for Microsoft Azure Stack.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Azure Stack solutions must use storage components that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component | Azure Stack Feature Support |
+|-----------|-----------------------------|
+| Controller (HBA) | Device.Storage.Controller.AzureStack |
+| Enclosure        | Device.Storage.Enclosure.AzureStack |
+| Drive            | Device.Storage.Hd.AzureStack |
+
+
+**Storage Solutions built on ‘Storage Spaces Direct’**
+
+Microsoft Azure Stack storage requirements for the initial product
+release are identical to the hardware requirements for **Storage Spaces
+Direct**. Future Microsoft Azure Stack iterations may support additional
+storage types.
+
+
+## <a href="" id="system.solutions.storagespacesdirect"></a>System.Solutions.StorageSpacesDirect
+
+Windows Server 2016 introduces ‘Storage Spaces Direct’, which enables
+building highly available (HA) storage systems with local storage. This
+is a significant step forward in Microsoft Windows Server
+software-defined storage (SDS) as it simplifies the deployment and
+management of SDS systems and also unlocks use of new classes of disk
+devices, such as SATA and NVMe disk devices, that were previously not
+possible with clustered Storage Spaces with shared disks.
+
+OEMs and Solution Integrators that build Storage Spaces Direct solutions
+must incorporate components that have passed the associated Microsoft
+Azure Stack logo requirement tests, including the Private Cloud
+Simulation (PCS) test.
+
+The following capabilities are not supported by Storage Spaces Direct
+solutions in Windows Server 2016:
+
+-   RAID controllers (RAID or JBOD mode) are not supported
+-   FC/iSCSI connected devices are not supported
+-   MPIO or physically connecting disk via multiple paths is not supported
+
+### System.Solutions.StorageSpacesDirect.BVTandStress
+
+*Storage Spaces Direct solutions must comply with this specification in
+their minimum and maximum configurations.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+This requirement describes the BVT and stress scenarios that Storage
+Spaces Direct solutions have to support in a non-virtualized scenario.
+
+The BVT performs two types of tests: 
+
+ - Moving the Cluster Shared Volume (CSV) on top of Storage Spaces Direct between nodes while performing random write IO, and verifying that IO is uninterrupted and CSV does not fail. 
+
+ - Bringing down a node by stopping cluster service, killing cluster service, evict node, graceful machine restart, and non-graceful machine restart (with each action targeting a random node). Test also performs random write IO targeting the appropriate CSV during node failures and verifies that IO does not fail.
+
+The stress tests cause repeated and random node failures (by stopping or
+killing cluster service), potentially causing multiple nodes to fail if
+tolerated by the given configuration. During node failures, the test
+performs multiple IO streams from multiple nodes targeting the
+appropriate Cluster Shared Volume (with each stream performing
+sequential/random read/write with read data verification). The test can
+run for a user-specified amount of time, up to 24 hours.
+
+To comply with this specification, the solution must pass these tests in
+its **minimum** and **maximum** configurations. For instance, if a
+Storage Spaces Direct solution ships with a 4-node minimum scale
+configuration and a 16-node maximum scale configuration, these tests are
+required on both 4-node and 16-node configurations, but not on any
+intermediate (aka 8-node or 12-node) configurations.
+
+### System.Solutions.StorageSpacesDirect.CloudStress
+
+*Storage Spaces Direct solutions must comply with this specification in
+their minimum and maximum configurations.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Private cloud solutions comprise of tightly integrated software and
+hardware components to deliver resiliency with high performance. Issues
+in any of the components (software, hardware, drivers, firmware, and so
+forth) can compromise the solution and undermine any promises made
+regarding the Service Level Agreement (SLA) for the private cloud.
+
+Many of these issues are surfaced only under a high-stress, private
+cloud simulation. The Private Cloud Simulator (PCS) enables you to
+validate your component in a cloud scenario and identify such issues. It
+simulates a live datacenter/private cloud by creating VM workloads,
+scheduling administrative operations (load balancing, software/hardware
+maintenance), and injecting faults (unplanned hardware/software
+failures) on the private cloud.
+
+To comply with this specification, the solution must pass the PCS test
+run with the ‘Storage Spaces Direct - Solutions’ profile in its
+**minimum** and **maximum** configurations. For instance, if a Storage
+Spaces Direct solution ships with a 4-node minimum scale configuration
+and a 16-node maximum scale configuration, PCS is required on both
+4-node and 16-node configurations, but not on any intermediate (aka
+8-node or 12-node) configurations.
+
+### System.Solutions.StorageSpacesDirect.Nano
+
+*Core requirements for Nano server support on solutions built on Storage
+Spaces Direct.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Nano support requirements for Storage Spaces Direct solutions are
+identical to those for the initial release of Microsoft Azure Stack.
+Hence, Storage Spaces Direct solutions must support the requirement
+below
+
+| Area                        | Azure Stack Requirement |
+|-----------------------------|-------------------------|
+| Windows Server Nano Support | System.Solutions.Azurestack.Nano |
+
+
+
+### System.Solutions.StorageSpacesDirect.Network
+
+*Core network requirements for solutions built on ‘Storage Spaces Direct’*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Device requirements for Storage Spaces Direct solutions are identical to
+those for the initial release of Microsoft Azure Stack. Hence, Storage
+Spaces Direct solutions must use network components that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component      | Azure Stack Feature Support |
+|----------------|-----------------------------|
+| LAN Card (NIC) | Device.Network.LAN.AzureStack |
+| Switch         | Device.Network.Switch.AzureStack |
+
+
+RDMA capable NICs are recommended for best
+performance and density. The RDMA protocol used must be one of the
+following: iWARP or RoCE (either RoCE version 1 or RoCE version 2). When
+available, routable RDMA protocols are preferred (e.g., iWARP or RoCEv2)
+for greatest flexibility in support of scalable solutions. If RDMA
+capable NICs are used, the network switches connected to those NICS must
+provide the relevant capabilities in support of the RDMA protocol (for
+example but not limited to switch support of Data Center Bridging
+protocols in support of RoCE).
+
+### System.Solutions.StorageSpacesDirect.Server
+
+*Server system requirements for Storage Spaces Direct.*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Storage Spaces Direct solutions must use server systems that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component | Azure Stack Feature Support |
+|-----------|-----------------------------|
+| Server    | System.Server.AzureStack |
+
+
+Server configuration should be homogenous. Windows Server 2016 supports
+a minimum of 3 and maximum of 16 servers in a single solution. Windows
+Server 2016 supports a maximum of 20 disk devices per server.
+
+### System.Solutions.StorageSpacesDirect.Storage
+
+*Core storage requirements for solutions built on ‘Storage Spaces Direct’*
+
+<html>
+<table>
+<tr>
+<th>Applies to</th>
+<td>
+<p>Windows 10 Server x64</p>
+</td></tr></table>
+</html>
+
+**Description**
+
+Device requirements for Storage Spaces Direct solutions are identical to
+those for the initial release of Microsoft Azure Stack. Hence, Storage
+Spaces Direct solutions must use storage components that:
+
+1.  Are certified for Windows Server 2016
+
+2.  Support Azure Stack features and thereby meet all the corresponding
+    device requirements for that feature
+
+The feature support table is as below:
+
+| Component        | Azure Stack Feature Support |
+|------------------|-----------------------------|
+| Controller (HBA) | Device.Storage.Controller.AzureStack |
+| Enclosure        | Device.Storage.Enclosure.AzureStack |
+| Drive            | Device.Storage.Hd.AzureStack |
+
+
