@@ -540,7 +540,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 14. Brightness levels are represented as a % in Windows. Therefore there is no absolute mapping between brightness % level and physical brightness level. For Windows 8, the following is the guidance.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -559,7 +559,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 </tr>
 </tbody>
 </table>
-</html>
+
 
 
 ## <a href="" id="system.client.buttons"></a>System.Client.Buttons
@@ -1817,7 +1817,7 @@ WDDMv1.3 is required by all systems shipped with Windows 10.
 
 Table below explains the scenario usage for the Graphic driver types:
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -1859,7 +1859,7 @@ Table below explains the scenario usage for the Graphic driver types:
 </tr>
 </tbody>
 </table>
-</html>
+
 
 
 ### System.Client.Graphics.WDDMSupportRotatedModes
@@ -2007,7 +2007,7 @@ compliant with the Mobile Broadband Interface Model specification. These devices
 USB Forum for compliance (when it becomes available for MB devices).
 In addition to the above, firmware needs to support the features listed below as specified by NDIS.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -2038,7 +2038,7 @@ In addition to the above, firmware needs to support the features listed below as
 </tr>
 </tbody>
 <table>
-<html>
+
 
 No additional Connection Manager software is required for the operation of mobile broadband devices.
 Value-add Mobile Broadband Connection Managers, if implemented, need to implement the Mobile Broadband
@@ -2047,7 +2047,7 @@ Microsoft strongly recommends USB-based bus interfaces such as analog USB, HSIC 
 (when available). Mobile Broadband stack in Windows 8 is designed to support only USB protocol based bus
 interfaces. The following table summarizes the required mobile broadband features.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -2078,7 +2078,7 @@ interfaces. The following table summarizes the required mobile broadband feature
 </ul>
 </li>
 </ul>
-</html>
+
 
 
 ## <a href="" id="system.client.pccontainer"></a>System.Client.PCContainer
@@ -2205,7 +2205,7 @@ The state of the wireless radio must persist across sleep, reboot, user log off,
 
 When the state of wireless radio switch changes, whether it is a slider A-B switch (with or without LED) or toggle button (with or without LED), this HID-compliant hardware switch/button must expose the HID collections to be consumed by the radio management API. Toggle button must not change the state of the device radio directly. A-B switch can be wired directly to the radios and change their state as long as it communicates the change of state to the Radio Management API using the HID driver and it changes the state in all radios present in the PC. The HID usage IDs are: 
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -2237,7 +2237,7 @@ When the state of wireless radio switch changes, whether it is a slider A-B swit
 </tr>
 </tbody>
 <table>
-<html>
+
 
 The collections are shown in the following tables.
 <!--These tables, which were simple lists in the original Word document, seem like they should and could be unified. 
@@ -2245,7 +2245,7 @@ However, based on the text in the first columns, they aren't ready to simply hav
 the same table. Creating a table that accommodates the differences is beyond the scope of this conversion to Markdown.-->
 
 **Table 1. Button without LED (stateless button) – For laptops, tablets and convertibles**
-<html>
+
 <table border="2">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2296,10 +2296,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-</html>
+
 
 **Table 2. Button with LED – For laptops, tablets and convertibles that do NOT support connected standby**
-<html>
+
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2370,10 +2370,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-</html>                                   
+                                   
 
 **Table 3. Slider Switch (without LED) - For laptops, tablets and convertibles**
-<html>
+
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2424,10 +2424,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0,</td>
 	</tr>
 </table>                                      
-</html> 
+ 
 
 **Table 4. Slider Switch with LED- Laptops, tablets and convertibles that do NOT support connected standby**
-<html>
+
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2498,10 +2498,10 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table>
-</html>                                                       
+                                                       
 
 **Table 5. LED Only (No button or slider) - Laptops, tablets and convertibles that do NOT support connected standby**
-<html>
+
 <table border="2" cellpadding="0" cellspacing="0" width="0">
 	<tr>
 		<td>USAGE\_PAGE (Generic Desktop)</td>
@@ -2552,7 +2552,7 @@ the same table. Creating a table that accommodates the differences is beyond the
 		<td>C0</td>
 	</tr>
 </table> 
-</html>
+
 
  
 Wireless radio LED must have a HID-compliant driver to reflect the state of the airplane mode switch located in the user interface.  Wireless radio LED only uses HID for output (no input since there is no button). 
@@ -2610,7 +2610,7 @@ In order to conserve energy, systems that support connected standby cannot inclu
 For all other Windows 10 systems, the table below lists the minimum required components to be present in a system in order for it to be compatible for Windows 10. All components must meet the compatibility requirements and pass device compatibility testing for Windows 10.
 <!--This table was also broken in the original Word document.-->
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -2642,7 +2642,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 </tr>
 </tbody>
 </table>
-</html>
+
 
 
 ## <a href="" id="system.client.systemimage"></a>System.Client.SystemImage
@@ -3459,7 +3459,7 @@ This requirement is "If Implemented" for Server systems and applies only if a Se
 
 Note: These requirements are "If Implemented" for Server systems and apply only if a Server system supports UEFI Secure Boot.
 
-<html>
+
 <ol style="list-style-type: decimal">
 <li><p>Secure Boot must ship enabled with minimum of UEFI 2.3.1 Errata C.</p></li>
 <li><p>For the purposes of UEFI Secure Boot, the platform shall expose an interface to Secure Boot, whereby the system firmware is compliant with the following sections and sub-sections of UEFI version 2.3.1 Errata C:</p>
@@ -3542,7 +3542,7 @@ Note: These requirements are "If Implemented" for Server systems and apply only 
 <li><p>[If Implemented] If platform ships with UEFI 2.5 with support for Platform Recovery (Revision 1227, Section 23.7), then platform MUST also support HTTP Boot as mentioned above.</p></li>
 <li><p>[If Implemented] If platform ships with UEFI 2.5 the Platform MUST provide consistent Secure Boot workflows as specified in the “Windows Consistent Secure Boot Workflows” document (this document is available on CONNECT).</p></li>
 </ol>
-</html>
+
 
 
 ### System.Fundamentals.Firmware.UEFITimingClass
@@ -3795,7 +3795,7 @@ Since all components in the boot path as well as many performance-critical OS su
 
 <sup>2</sup> This specification must be requested explicitly from Microsoft. To request the current version, please contact [http://go.microsoft.com/fwlink/?LinkId=237130](http://go.microsoft.com/fwlink/?LinkId=237130 "http://go.microsoft.com/fwlink/?LinkId=237130").
 <p></p>
-</html>
+
 
 ### System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby
 
@@ -4041,7 +4041,7 @@ This is the list of applications maintained by the dGPU IHV for choosing a GPU f
 
 Following are the power management requirements for the discrete GPU participating in a hybrid configuration:
 
-<html>
+
 <ul>
 <li>
 <p>The driver is required to register for runtime power management.</p>
@@ -4153,7 +4153,7 @@ Latency tolerance for that component is specified in the table below.</p>
     <td align="right">250 ms</td>
   </tr>
 </table>
-</html>
+
 <br/>
 
 
@@ -4871,7 +4871,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 
  - MUST meet the additional requirements as described in the table below:
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -4951,7 +4951,7 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 </tr>
 </tbody>
 </table>
-</html>
+
 <br/>
 
 
@@ -5329,7 +5329,7 @@ The CPU Vendor and/or Firmware Provider must furnish the software tools needed t
 
 The following requirements are applicable to boot storage media and are tested with the smaller of 2% or 1GB free space.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -5448,7 +5448,7 @@ The following requirements are applicable to boot storage media and are tested 
 </tr>
 </tbody>
 </table>
-</html>
+
 
 \* Applies only to devices with 16 GB of internal storage or lower.
 
@@ -6564,7 +6564,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 **Mandatory:** Systems with TPM 2.0 must comply with the following requirements:
 
-<html>
+
 <ol>
 <li><p>The platform shall implement all "Required" features in the table below.</p>
 <table>
@@ -6862,7 +6862,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 
 <li><p>The Platform must comply with “TCG EFI Protocol Specification for TPM Family 2.0 Revision 1.0 Version 9”.</p></li>
 </ol>
-</html>
+
 
 
 ## <a href="" id="system.fundamentals.trustedplatformmodule"></a>System.Fundamentals.TrustedPlatformModule
@@ -6976,56 +6976,56 @@ The TPM provides a hardware root of trust for platform integrity measurement and
 
 For a system that implements a Trusted Platform Module (TPM) 1.2, the platform must comply with the following specifications:
 
-<html>
-    <ol style="list-style-type: decimal" start="0">
-        <li><p>The PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 Version 1.00, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/pc_client_work_group_platform_reset_attack_mitigation_specification_version_10.</p></li>
-        <li><p>The TCG Physical Presence Interface Specification Version 1.2, Revision 1.00, http://www.trustedcomputinggroup.org/resources/tcg_physical_presence_interface_specification.</p></li>
-        <li><p>The TCG PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21 Revision 1.00 or later (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_pc_client_specific_tpm_interface_specification_tis).</p></li>
-        <li>
-            <p>If the platform implements UEFI firmware, it must implement</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>The TCG EFI Platform Specification Version 1.20, Revision 1.0 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_platform_specification_version_120_revision_10.</p></li>
-                <li><p>The TCG EFI Protocol Version 1.20, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_protocol_version_120_revision_10.</p></li>
-            </ol>
-        </li>
-        <li><p>If the platform implements conventional BIOS, it must implement the PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.20, Revision 1.00 or later. Note: The errata version 1.21 is strongly recommended instead. (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_specific_implementation_specification_for_conventional_bios_specification_version_12).</p></li>
-        <li><p>The TCG ACPI General Specification Version 1.00, Revision 1.00, http://www.trustedcomputinggroup.org/resources/server_work_group_acpi_general_specification_version_10.</p></li>
-        <li><p>Windows Vista BitLocker Client Platform Requirements, dated May 16, 2006, or later (http://go.microsoft.com/fwlink/p/?LinkId=70763). For conventional BIOS systems instead of the PCR measurements listed in the Windows Vista BitLocker Client Platform Requirements, a system may implement the PCR measurements defined in the TCG PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.21, Revision 1.00.</p></li>
-    </ol>
-</html>
 
+<ol style="list-style-type: decimal" start="0">
+<li><p>The PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 Version 1.00, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/pc_client_work_group_platform_reset_attack_mitigation_specification_version_10.</p></li>
+<li><p>The TCG Physical Presence Interface Specification Version 1.2, Revision 1.00, http://www.trustedcomputinggroup.org/resources/tcg_physical_presence_interface_specification.</p></li>
+<li><p>The TCG PC Client Work Group PC Client Specific TPM Interface Specification (TIS) Version 1.21 Revision 1.00 or later (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_pc_client_specific_tpm_interface_specification_tis).</p></li>
+<li>
+<p>If the platform implements UEFI firmware, it must implement</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The TCG EFI Platform Specification Version 1.20, Revision 1.0 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_platform_specification_version_120_revision_10.</p></li>
+<li><p>The TCG EFI Protocol Version 1.20, Revision 1.00 or later, http://www.trustedcomputinggroup.org/resources/tcg_efi_protocol_version_120_revision_10.</p></li>
+</ol>
+</li>
+<li><p>If the platform implements conventional BIOS, it must implement the PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.20, Revision 1.00 or later. Note: The errata version 1.21 is strongly recommended instead. (http://www.trustedcomputinggroup.org/resources/pc_client_work_group_specific_implementation_specification_for_conventional_bios_specification_version_12).</p></li>
+<li><p>The TCG ACPI General Specification Version 1.00, Revision 1.00, http://www.trustedcomputinggroup.org/resources/server_work_group_acpi_general_specification_version_10.</p></li>
+<li><p>Windows Vista BitLocker Client Platform Requirements, dated May 16, 2006, or later (http://go.microsoft.com/fwlink/p/?LinkId=70763). For conventional BIOS systems instead of the PCR measurements listed in the Windows Vista BitLocker Client Platform Requirements, a system may implement the PCR measurements defined in the TCG PC Client Workgroup Specific Implementation Specification for Conventional BIOS, Version 1.21, Revision 1.00.</p></li>
+</ol>
+
+	
 And the system MUST meet the following additional requirements:
 
-<html>
-    <ol style="list-style-type: decimal">
-        <li><p>Platform firmware must ensure invariance of PCRs 0, 2 and 4 and also PCR 7 if implemented as specified in Appendix A of the Microsoft Corporation, &quot;Trusted Execution Environment EFI Protocol, 1.00 dated March 2nd, 2012&quot; document across power cycles in the absence of changes to the platform's static root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station shall not cause changes to the SRTM.</p></li>
-        <li><p>If the platform is a server platform, it must reserve PCRs 8 through 15 for OS use. (Note: The same requirement is true for client platforms.)</p></li>
-        <li><p>The platform must implement the memory mapped space for the TPM interface (for example, legacy port based I/O is not sufficient).</p></li>
-        <li><p>The system firmware must perform Physical Presence Interface operations when the platform is restarted. It is strongly recommended the system firmware performs Physical Presence Interface operations also after shutdown. (Specifically, the Physical Presence Interface Specification Version 1.2, section 2.1.4: Get Platform-Specific Action to Transition to Pre-OS Environment must return a value of 2: Reboot.) (This requirement allows remote administrators to perform Physical Presence Operations without needing to be physically present to turn the platform back on.)</p></li>
-        <li><p>The default configuration for the system must have the NoPPIProvision flag specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface set to TRUE.</p></li>
-        <li><p>The default system firmware configuration must allow the OS to request Physical Presence operations 6, 7, 10, and 15. Note: The operations are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00.</p></li>
-        <li><p>If the system implements the NoPPIClear flag it should do so as specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface. The platform should either provide a system firmware configuration setting to change the flag or implement physical presence operations 17 and 18. Note: The operations and the NoPPIClear flag are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00. (Implementing this flag helps facilitate automated testing of the physical presence interface during Windows certification testing and permits managed environments to completely automate TPM management from the OS without physical presence if an enterprise decides to set the NoPPIClear flag.)</p></li>
-        <li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Physical Presence Interface methods defined in the TCG Physical Presence Interface Specification, section 2: ACPI Functions. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
-        <li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Memory Clear Interface method defined in the TCG Platform Reset Attack Mitigation Specification, section 6: ACPI _DSM Function. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
-        <li><p>The system firmware must implement the auto detection of clean OS shutdown and clear the memory overwrite bit as defined in the TCG Platform Reset Attack Mitigation Specification, section 2.3: Auto Detection of Clean Static RTM OS Shutdown. Exception: If the system is able to unconditionally clear memory during boot without increasing boot time, the system may not implement the auto detection (however the pre-boot and ACPI interface implementations are still required).</p></li>
-        <li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_LOCKED must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
-        <li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_ PHYSICALPRESENCELIFETIMELOCK must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
-        <li><p>The system must contain a full Endorsement Key (EK) certificate stored in the TPM NV RAM as described in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 7.4.5: TCG_FULL_CERT. The NV RAM index used for storing the EK certificate must be the pre-defined and reserved index TPM_NV_INDEX_EKCert as defined the TPM Main Specification, Part 2, section 19.1.2: Reserved Index Values. As recommended in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 4.2.1: TPM Main Specification Reserved Indexes, the D bit attribute must be set for the index. (Note: The certificate may be created by the TPM manufacturer or the platform manufacturer.) Exception: If the system supports generation of a new EK it is not required (but is still strongly recommended) to have an EK certificate.</p></li>
-        <li><p>The system firmware must ship with the TPM enumerated by default. (This means the ACPI device object for the TPM must be present by default in the system ACPI tables.)</p></li>
-        <li><p>The system firmware must support clearing the TPM from within a setup menu.</p></li>
-        <li><p>At least 256 bytes of TPM NVRAM must be reserved (and available) for OS use.</p></li>
-        <li>
-            <p>The firmware must issue the TPM_ContinueSelfTest during boot such that the self-test completes before the OS loader is launched.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>If the TPM device performs the self-test synchronously, the firmware TPM driver should be optimized to issue the command to the device but allow the boot process to proceed without waiting for the return result from the TPM_ContinueSelfTest command. If the firmware TPM driver receives a subsequent command, it should delay the subsequent command until the TPM_ContinueSelfTest command completes instead of aborting the TPM_ContinueSelfTest command.)</p></li>
-                <li><p>A recommendation is to start the self-test before some action which takes at least one second but does not have a dependency on the TPM.</p></li>
-            </ol>
-        </li>
-        <li><p>The platform may or may not issue the TPM_ContinueSelfTest upon resume from S3 (sleep).</p></li>
-        <li><p>The ACPI namespace location for the TPM device object must only depend on the System Bus, ISA or PCI bus drivers provided by Microsoft. The System Bus does not have an ID, but is identified as \_SB. The ISA bus device IDs may be PNP0A00 or PCI\CC_0601. The PCI bus device IDs may be PNP0A03 or PCI\CC_0604. In addition, the TPM device object may also depend on these generic bridges, containers or modules: PNP0A05, PNP0A06 and ACPI0004. No other device dependencies are permitted for the ACPI namespace location for the TPM device object.</p></li>
-        <li><p>Optional. The platform is recommended to support measurements into PCR [7] as specified in Appendix A of Microsoft Corporation, &quot;Trusted_Execution_Environment_EFI_Protocol, 1.00 dated March 2, 2012&quot; specification, The UEFI firmware update process must also protect against rolling back to insecure firmware versions, or non-production versions that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared.</p></li>
-    </ol>
-</html>
+
+<ol style="list-style-type: decimal">
+<li><p>Platform firmware must ensure invariance of PCRs 0, 2 and 4 and also PCR 7 if implemented as specified in Appendix A of the Microsoft Corporation, &quot;Trusted Execution Environment EFI Protocol, 1.00 dated March 2nd, 2012&quot; document across power cycles in the absence of changes to the platform's static root of trust for measurements (SRTM). Attaching a (non-bootable) USB to the platform or attaching the platform to a docking station shall not cause changes to the SRTM.</p></li>
+<li><p>If the platform is a server platform, it must reserve PCRs 8 through 15 for OS use. (Note: The same requirement is true for client platforms.)</p></li>
+<li><p>The platform must implement the memory mapped space for the TPM interface (for example, legacy port based I/O is not sufficient).</p></li>
+<li><p>The system firmware must perform Physical Presence Interface operations when the platform is restarted. It is strongly recommended the system firmware performs Physical Presence Interface operations also after shutdown. (Specifically, the Physical Presence Interface Specification Version 1.2, section 2.1.4: Get Platform-Specific Action to Transition to Pre-OS Environment must return a value of 2: Reboot.) (This requirement allows remote administrators to perform Physical Presence Operations without needing to be physically present to turn the platform back on.)</p></li>
+<li><p>The default configuration for the system must have the NoPPIProvision flag specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface set to TRUE.</p></li>
+<li><p>The default system firmware configuration must allow the OS to request Physical Presence operations 6, 7, 10, and 15. Note: The operations are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00.</p></li>
+<li><p>If the system implements the NoPPIClear flag it should do so as specified in the TCG Physical Presence Interface Specification, section 2: Physical Presence Interface. The platform should either provide a system firmware configuration setting to change the flag or implement physical presence operations 17 and 18. Note: The operations and the NoPPIClear flag are described in Table 2 of the TCG Physical Presence Interface Specification Version 1.2, Revision 1.00. (Implementing this flag helps facilitate automated testing of the physical presence interface during Windows certification testing and permits managed environments to completely automate TPM management from the OS without physical presence if an enterprise decides to set the NoPPIClear flag.)</p></li>
+<li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Physical Presence Interface methods defined in the TCG Physical Presence Interface Specification, section 2: ACPI Functions. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
+<li><p>The system firmware must implement the _DSM Query method (function index 0) in addition to the Memory Clear Interface method defined in the TCG Platform Reset Attack Mitigation Specification, section 6: ACPI _DSM Function. (Please refer to the Advanced Configuration and Power Interface Specification Revision 5.0 for an implementation example of the _DSM Query method.)</p></li>
+<li><p>The system firmware must implement the auto detection of clean OS shutdown and clear the memory overwrite bit as defined in the TCG Platform Reset Attack Mitigation Specification, section 2.3: Auto Detection of Clean Static RTM OS Shutdown. Exception: If the system is able to unconditionally clear memory during boot without increasing boot time, the system may not implement the auto detection (however the pre-boot and ACPI interface implementations are still required).</p></li>
+<li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_LOCKED must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
+<li><p>When the system is delivered to an end customer, the TPM permanent flag TPM_PF_NV_ PHYSICALPRESENCELIFETIMELOCK must be set to TRUE. (This requirement is for systems. For motherboards the flag may be set to FALSE when delivered to the platform manufacturer, however instructions/tools must advise platform manufacturers to set the flag to TRUE before delivery to end customers.)</p></li>
+<li><p>The system must contain a full Endorsement Key (EK) certificate stored in the TPM NV RAM as described in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 7.4.5: TCG_FULL_CERT. The NV RAM index used for storing the EK certificate must be the pre-defined and reserved index TPM_NV_INDEX_EKCert as defined the TPM Main Specification, Part 2, section 19.1.2: Reserved Index Values. As recommended in the TCG PC Client Specific Implementation Specification for Conventional BIOS, section 4.2.1: TPM Main Specification Reserved Indexes, the D bit attribute must be set for the index. (Note: The certificate may be created by the TPM manufacturer or the platform manufacturer.) Exception: If the system supports generation of a new EK it is not required (but is still strongly recommended) to have an EK certificate.</p></li>
+<li><p>The system firmware must ship with the TPM enumerated by default. (This means the ACPI device object for the TPM must be present by default in the system ACPI tables.)</p></li>
+<li><p>The system firmware must support clearing the TPM from within a setup menu.</p></li>
+<li><p>At least 256 bytes of TPM NVRAM must be reserved (and available) for OS use.</p></li>
+<li>
+<p>The firmware must issue the TPM_ContinueSelfTest during boot such that the self-test completes before the OS loader is launched.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>If the TPM device performs the self-test synchronously, the firmware TPM driver should be optimized to issue the command to the device but allow the boot process to proceed without waiting for the return result from the TPM_ContinueSelfTest command. If the firmware TPM driver receives a subsequent command, it should delay the subsequent command until the TPM_ContinueSelfTest command completes instead of aborting the TPM_ContinueSelfTest command.)</p></li>
+<li><p>A recommendation is to start the self-test before some action which takes at least one second but does not have a dependency on the TPM.</p></li>
+</ol>
+</li>
+<li><p>The platform may or may not issue the TPM_ContinueSelfTest upon resume from S3 (sleep).</p></li>
+<li><p>The ACPI namespace location for the TPM device object must only depend on the System Bus, ISA or PCI bus drivers provided by Microsoft. The System Bus does not have an ID, but is identified as \_SB. The ISA bus device IDs may be PNP0A00 or PCI\CC_0601. The PCI bus device IDs may be PNP0A03 or PCI\CC_0604. In addition, the TPM device object may also depend on these generic bridges, containers or modules: PNP0A05, PNP0A06 and ACPI0004. No other device dependencies are permitted for the ACPI namespace location for the TPM device object.</p></li>
+<li><p>Optional. The platform is recommended to support measurements into PCR [7] as specified in Appendix A of Microsoft Corporation, &quot;Trusted_Execution_Environment_EFI_Protocol, 1.00 dated March 2, 2012&quot; specification, The UEFI firmware update process must also protect against rolling back to insecure firmware versions, or non-production versions that may disable secure boot or include non-production keys. A physically present user may however override the rollback protection manually. In such a scenario (where the rollback protection is overridden), the TPM must be cleared.</p></li>
+</ol>
+
 
 Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittleness. If Secure Boot launch of Windows BootMgr requires use of an Allowed DB entry other than the Microsoft-provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d, Bitlocker will then not be able to utilize PCR7. It is recommended that the only Allowed DB entry for Secure Boot are Microsoft-provided EFI\_CERT\_X509 signature with "CN=Microsoft Windows Production PCA 2011" and "Cert Hash(sha1): 58 0a 6f 4c c4 e4 b6 69 b9 eb dc 1b 2b 3e 08 7b 80 d0 67 8d.
 
@@ -7182,59 +7182,59 @@ Server supports hardware- and firmware-based enhanced platform integrity protect
 
 This is an *If-Implemented*, optional system requirement for a system providing enhanced security for Windows Server.  The server platform must support:
 
-<html>
-    <ul>
-        <li>
-            <p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
-            <ul>
-                <li><p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFIBitLocker</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFIBootEntries</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFICompatibility</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFIDefaultBoot</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
-                <li><p>System.Fundamentals.Firmware.Update</p></li>
-            </ul>
-        </li>
-        <li>
-            <p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
-            <ul>
-                <li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
-                <li><p>System.Fundamentals.Firmware.UEFISecureBoot</p></li>
-            </ul>
-        </li>
-        <li>
-            <p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
-            <ul>
-                <li><p>System.Server.Virtualization.ProcessorVirtualizationAssist</p></li>
-            </ul>
-        </li>
-        <li>
-            <p>If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests;</p>
-            <ul>
-                <li><p>System.Fundamentals.Security.DeviceGuard</p></li>
-            </ul>
-        </li>
-        <li>
-            <p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
-            <ul>
-                <li><p>System.Fundamentals.TPM20.EKCerts</p></li>
-                <li><p>System.Fundamentals.TPM20.TPM20</p></li>
-            </ul>
-        </li>
-    </ul>
-    <p>The platform is required to implement hardware security test interface and share documentation and tools as specified in the ‘Hardware Security Test Interface Specification’ document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx" class="uri">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.</p>
-    <p>All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.</p>
-    <p>For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default.  In addition, the NoPPIProvision flag must be set to TRUE by default.  There must be a mechanism in UEFI to confirm the settings of these variables and change them.  This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.</p>
-    <p>For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;</p>
-    <ul>
-        <li><p>Data pages must be separate from code pages.</p></li>
-        <li><p>Code and Data pages are at page level granularity for alignment.</p></li>
-        <li><p>The same page <em>will not</em> contain both Data [Read or Write] and executable Code.</p></li>
-        <li><p>The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.</p></li>
-    </ul>
-    <p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
-</html>
+
+<ul>
+<li>
+<p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
+<ul>
+<li><p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p></li>
+<li><p>System.Fundamentals.Firmware.UEFIBitLocker</p></li>
+<li><p>System.Fundamentals.Firmware.UEFIBootEntries</p></li>
+<li><p>System.Fundamentals.Firmware.UEFICompatibility</p></li>
+<li><p>System.Fundamentals.Firmware.UEFIDefaultBoot</p></li>
+<li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
+<li><p>System.Fundamentals.Firmware.Update</p></li>
+</ul>
+</li>
+<li>
+<p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
+<ul>
+<li><p>System.Fundamentals.Firmware.UEFILegacyFallback</p></li>
+<li><p>System.Fundamentals.Firmware.UEFISecureBoot</p></li>
+</ul>
+</li>
+<li>
+<p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
+<ul>
+<li><p>System.Server.Virtualization.ProcessorVirtualizationAssist</p></li>
+</ul>
+</li>
+<li>
+<p>If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests;</p>
+<ul>
+<li><p>System.Fundamentals.Security.DeviceGuard</p></li>
+</ul>
+</li>
+<li>
+<p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
+<ul>
+<li><p>System.Fundamentals.TPM20.EKCerts</p></li>
+<li><p>System.Fundamentals.TPM20.TPM20</p></li>
+</ul>
+</li>
+</ul>
+<p>The platform is required to implement hardware security test interface and share documentation and tools as specified in the ‘Hardware Security Test Interface Specification’ document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx" class="uri">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.</p>
+<p>All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.</p>
+<p>For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default.  In addition, the NoPPIProvision flag must be set to TRUE by default.  There must be a mechanism in UEFI to confirm the settings of these variables and change them.  This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.</p>
+<p>For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;</p>
+<ul>
+<li><p>Data pages must be separate from code pages.</p></li>
+<li><p>Code and Data pages are at page level granularity for alignment.</p></li>
+<li><p>The same page <em>will not</em> contain both Data [Read or Write] and executable Code.</p></li>
+<li><p>The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.</p></li>
+</ul>
+<p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
+
 
 
 ## <a href="" id="system.server.azurestack"></a>System.Server.AzureStack
@@ -7257,7 +7257,7 @@ This is an *If-Implemented*, optional system requirement for a system providing 
 
 Requirements for a server used in a Microsoft Azure Stack solution are captured in the following table.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -7316,7 +7316,7 @@ Requirements for a server used in a Microsoft Azure Stack solution are captured 
 </tr>
 </tbody>
 </table>
-</html>
+
 
 In addition to the above, the server must have:
 
@@ -7761,7 +7761,7 @@ resource rebalance operation.
 
 Server systems must include the following devices or functionality.
 
-<html>
+
 <table>
 <thead>
 <tr class="header">
@@ -7928,7 +7928,7 @@ Server systems must include the following devices or functionality.
 </tr>
 </tbody>
 </table>
-</html>
+
 
 The following devices or functionality are not required for Server Systems:
 
@@ -8515,95 +8515,95 @@ BMC devices may support server hardware out-of-band management capability using 
 
 It is not necessary that the BMC implements the full Redfish specification, as only a subset of functionality is required for out-of-band management. The BMC must support the following capabilities and Redfish defined schema:
 
-<html>
-    <ol style="list-style-type: decimal">
-        <li>
-            <p>Security</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>Support session connections using HTTPS (TLS).</p></li>
-                <li><p>Support for both LDAP and Radius based authentication.</p></li>
-                <li><p>BMC must not have an anonymous user account configured by default. If this account exists, it must be disabled.</p></li>
-                <li><p>The BMC allows remote credential management. The BMC must support its Administrator password being changed through the AccountService schema.</p></li>
-            </ol>
-        </li>
-        <li>
-            <p>The hardware event logs can be managed through the BMC using the LogService schema.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>The hardware event log entries can be read.</p></li>
-                <li><p>The hardware event log entries can be cleared.</p></li>
-                <li><p>The hardware event log time of the server.</p></li>
-                <li><p>The hardware event log capacity information.</p></li>
-            </ol>
-        </li>
-        <li>
-            <p>The system’s power state can be managed through the BMC using the ComputerSystem schema.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li>
-                    <p>The BMC must expose the following server system information:</p>
-                    <ol style="list-style-type: lower-roman">
-                        <li><p>Current power state of the server.</p></li>
-                    </ol>
-                </li>
-                <li>
-                    <p>The BMC must support the following operations being performed on the server system.</p>
-                    <ol style="list-style-type: lower-roman">
-                        <li><p>Power off of the physical server via the BMC,</p></li>
-                        <li><p>Power on of the physical server via the BMC.</p></li>
-                        <li><p>Power cycle a physical server via the BMC</p></li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>The system’s boot source is configurable through the BMC. This functionality is implemented using the ComputerSystem schema.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>The server can be configured to boot from the PXE server the next time it is reset</p></li>
-                <li><p>The server can be configured to boot from the hard-disk the next time it is reset</p></li>
-                <li><p>The server can be configured to always boot from the PXE server</p></li>
-                <li><p>The server can be configured to always boot from the hard-disk</p></li>
-            </ol>
-        </li>
-        <li>
-            <p>The system’s BMC firmware and BIOS version information is exposed through Redfish.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li>
-                    <p>The BMC must expose the version information for the following components:</p>
-                    <ol style="list-style-type: lower-roman">
-                        <li><p>BIOS/UEFI (ComputerSystem schema).</p></li>
-                        <li><p>BMC management firmware (Manager schema).</p></li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <p>The OOB management LAN configuration can be updated through the BMC. This requirement is only applicable for systems that expose OOB management LAN configuration through the Redfish interface.</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>The BMC must expose the following information about its BMC LAN configuration:  IP Address, subnet mask, default gateway, and an indicator of whether the BMC is configured with a static IP address or if one is assigned by DHCP (BMC’s EthernetInterface schema).</p></li>
-            </ol>
-        </li>
-        <li>
-            <p>The system’s basic inventory is exposed through the BMC. The BMC must expose the following server system information through the ComputerSystem schema:</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>Manufacturer of the server hardware</p></li>
-                <li><p>Model of the server hardware</p></li>
-                <li><p>Server SMBIOS GUID</p></li>
-                <li><p>Asset Tag of the server</p></li>
-                <li><p>Serial Number of the server</p></li>
-            </ol>
-        </li>
-        <li>
-            <p>Hardware monitoring of the system must be supported through the Chassis, Thermal, and Power schemas:</p>
-            <ol style="list-style-type: lower-alpha">
-                <li><p>Retrieval of physical fan health</p></li>
-                <li><p>Retrieval of power supply health</p></li>
-                <li><p>Retrievel of sensor alerts for the CPU</p></li>
-                <li><p>Retrieval of on-board network adapter health alerts, if supported</p></li>
-                <li><p>Retrieval of HBA/Controller health alerts, if supported</p></li>
-                <li><p>Retrieval of memory health alerts, if supported</p></li>
-            </ol>
-        </li>
-    </ol>
-</html>
+
+<ol style="list-style-type: decimal">
+<li>
+<p>Security</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Support session connections using HTTPS (TLS).</p></li>
+<li><p>Support for both LDAP and Radius based authentication.</p></li>
+<li><p>BMC must not have an anonymous user account configured by default. If this account exists, it must be disabled.</p></li>
+<li><p>The BMC allows remote credential management. The BMC must support its Administrator password being changed through the AccountService schema.</p></li>
+</ol>
+</li>
+<li>
+<p>The hardware event logs can be managed through the BMC using the LogService schema.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The hardware event log entries can be read.</p></li>
+<li><p>The hardware event log entries can be cleared.</p></li>
+<li><p>The hardware event log time of the server.</p></li>
+<li><p>The hardware event log capacity information.</p></li>
+</ol>
+</li>
+<li>
+<p>The system’s power state can be managed through the BMC using the ComputerSystem schema.</p>
+<ol style="list-style-type: lower-alpha">
+<li>
+<p>The BMC must expose the following server system information:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Current power state of the server.</p></li>
+</ol>
+</li>
+<li>
+<p>The BMC must support the following operations being performed on the server system.</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Power off of the physical server via the BMC,</p></li>
+<li><p>Power on of the physical server via the BMC.</p></li>
+<li><p>Power cycle a physical server via the BMC</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>The system’s boot source is configurable through the BMC. This functionality is implemented using the ComputerSystem schema.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The server can be configured to boot from the PXE server the next time it is reset</p></li>
+<li><p>The server can be configured to boot from the hard-disk the next time it is reset</p></li>
+<li><p>The server can be configured to always boot from the PXE server</p></li>
+<li><p>The server can be configured to always boot from the hard-disk</p></li>
+</ol>
+</li>
+<li>
+<p>The system’s BMC firmware and BIOS version information is exposed through Redfish.</p>
+<ol style="list-style-type: lower-alpha">
+<li>
+<p>The BMC must expose the version information for the following components:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>BIOS/UEFI (ComputerSystem schema).</p></li>
+<li><p>BMC management firmware (Manager schema).</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>The OOB management LAN configuration can be updated through the BMC. This requirement is only applicable for systems that expose OOB management LAN configuration through the Redfish interface.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The BMC must expose the following information about its BMC LAN configuration:  IP Address, subnet mask, default gateway, and an indicator of whether the BMC is configured with a static IP address or if one is assigned by DHCP (BMC’s EthernetInterface schema).</p></li>
+</ol>
+</li>
+<li>
+<p>The system’s basic inventory is exposed through the BMC. The BMC must expose the following server system information through the ComputerSystem schema:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Manufacturer of the server hardware</p></li>
+<li><p>Model of the server hardware</p></li>
+<li><p>Server SMBIOS GUID</p></li>
+<li><p>Asset Tag of the server</p></li>
+<li><p>Serial Number of the server</p></li>
+</ol>
+</li>
+<li>
+<p>Hardware monitoring of the system must be supported through the Chassis, Thermal, and Power schemas:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Retrieval of physical fan health</p></li>
+<li><p>Retrieval of power supply health</p></li>
+<li><p>Retrievel of sensor alerts for the CPU</p></li>
+<li><p>Retrieval of on-board network adapter health alerts, if supported</p></li>
+<li><p>Retrieval of HBA/Controller health alerts, if supported</p></li>
+<li><p>Retrieval of memory health alerts, if supported</p></li>
+</ol>
+</li>
+</ol>
+
 
 **Enforcement**
 
@@ -9058,7 +9058,7 @@ composition of Microsoft Azure Stack is still under discussion, the
 components that will be required to build a "cloud-inspired
 infrastructure" solution can be broadly split into the categories below.
 
-<html>
+
 <table>
 <thead>
 <tr>
@@ -9082,7 +9082,7 @@ infrastructure" solution can be broadly split into the categories below.
 <td>Components that are needed to enable specialized scenarios for a Microsoft Azure Stack solution, such as Skype for Business.</td>
 </tr>
 </table>
-</html>
+
 
 The goal of this feature is to define product requirements for partners
 who build private cloud solutions based on the Microsoft Azure Stack.
@@ -9157,7 +9157,7 @@ requirements.
 In addition to the above, for complete Microsoft Azure Stack solutions,
 the requirements below are applicable:
 
-<html>
+
 <ol style="list-style-type: decimal">
 <li>
 <p><strong>Operate in Server Nano</strong></p>
@@ -9229,7 +9229,7 @@ the requirements below are applicable:
 <p>If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.</p>
 </li>
 </ol>
-</html>
+
 
 
 ### System.Solutions.AzureStack.Network
