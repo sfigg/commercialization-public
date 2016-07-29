@@ -73,7 +73,7 @@ For more information about the structure of a custom profile XML file, see [Auth
 2.  Copy your custom profile XML file to Phone\\Documents\\FieldMedic\\CustomProfiles.
 3.  Open the FieldMedic app, and tap **Advanced.**
 4.  Tap the box under **Choose which ETW providers to use**. Scroll down to **Custom Group**.
-5.  Under **Custom Group**, Field Medic displays the names of the custom profile XML files that are in Phone\\Documents\\FieldMedic\\CustomProfiles. Select your custom profile.![](images/oem-softwaretracing-fieldmedic-customlogging.png)
+5.  Under **Custom Group**, Field Medic displays the names of the custom profile XML files that are in Phone\\Documents\\FieldMedic\\CustomProfiles. Select your custom profile.![custom logging dialog](images/oem-softwaretracing-fieldmedic-customlogging.png)
 6.  Generate a report as described in [Use Field Medic to generate a report](use-field-medic-to-generate-a-report.md). The resulting ETL files have a prefix of “Custom-“ and are placed in root of the device or the SD card.
 
 Custom profiles can be selected together, separate from, or mixed with the regular profiles depending on your logging requirements.

@@ -21,7 +21,7 @@ To record device information in a Field Medic report, use the following steps.
 
 2.  Tap **Advanced**. Select the categories that you want to include in the report.
 
-    ![](images/oem-field-medic-wp-ss-20140109-0003.png)
+    ![field medic advanced options dialog](images/oem-field-medic-wp-ss-20140109-0003.png)
 
 3.  Press the **Back** button to return to the main Field Medic screen.
 
