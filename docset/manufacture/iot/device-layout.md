@@ -61,26 +61,26 @@ The following diagrams provide an overview of two configurations.
 
 **2GB Configuration:**
 
-|Partition    | Contents   | MB   | Sectors | Remarks                    |
-|-------------|------------|------|---------|----------------------------|
-|EFIESP       | EFIESP     | 32   | 65536   | EFIESP size                |
-|Main OS      | Main OS    | 800  | 1638400 | MainOS (estimate)          |
-|Main OS      | Free space | 128  | 262144  | MainOS Headroom            |
-|Data         | Data       | 883  | 1808384 | Expands to fill free space |
-|**TOTAL**        |            | **1843** | **3774464** |                            |
+|Partition    |Contents   |MB   |Sectors |Remarks                    |
+|-------------|-----------|-----|--------|---------------------------|
+|EFIESP       |EFIESP     |32   |65536   |EFIESP size                |
+|Main OS      |Main OS    |800  |1638400 |MainOS (estimate)          |
+|Main OS      |Free space |128  |262144  |MainOS Headroom            |
+|Data         |Data       |883  |1808384 |Expands to fill free space |
+|**TOTAL**        |           |**1843** |**3774464** |                           |
 
 Note: On a typical 2GB (2048MB) flash device, 1843MB is available for storage.
 
 **4GB Configuration:**
 
-|             | Partitions | MB   | Sectors | Remarks                    |
-|-------------|------------|------|---------|----------------------------|
-|EFIESP       | EFIESP     | 32   | 65536   | EFIESP size                |
-|Main OS      | Main OS    | 800  | 1638400 | MainOS (estimate)          |
-|Main OS      | Free space | 512  | 1048576 | MainOS Headroom            |
-|CrashDump    | Crash Dump | 128  | 1228800 | CrashDump Size             |
-|Data         | Data       | 1656 | 3391488 | Expands to fill free space |
-|**TOTAL**        |            | **3600** | **7372800** |                            |
+|Partition    |Contents   |MB   |Sectors |Remarks                    |
+|-------------|-----------|-----|--------|---------------------------|
+|EFIESP       |EFIESP     |32   |65536   |EFIESP size                |
+|Main OS      |Main OS    |800  |1638400 |MainOS (estimate)          |
+|Main OS      |Free space |512  |1048576 |MainOS Headroom            |
+|CrashDump    |Crash Dump |128  |1228800 |CrashDump Size             |
+|Data         |Data       |1656 |3391488 |Expands to fill free space |
+|**TOTAL**        |           |**3600** |**7372800** |                           |
 
 Note: On a typical 4GB (4096MB) flash device, 3600MB is available for storage.
 
