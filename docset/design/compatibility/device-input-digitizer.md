@@ -555,7 +555,7 @@ If Windows precision touchpads implement external buttons and are not clickpads 
 
 If there is more than one button, buttons shall be reported as an array of button flags. Handling buttons beyond the first two (primary and secondary clicks) should be the role of the driver and/or mouse collection.
 
-(If Implemented) - Both clickpad-based and Non-clickpad-based Windows precision touchpads shall report a button down state when exerted pressure exceeds 190g within 1cm of the bottom edge.  Windows precision touchpads shall not report a button down state when exerted pressure is equal to or less than 140g within 1cm of the bottom edge.
+(If Implemented) – Both clickpad-based and Non-clickpad-based Windows precision touchpads shall report a button down state when exerted pressure exceeds 150g-180g.  This is tested at 140g-190g to tolerate manufacturing variance.
 
 **Business Justification**
 

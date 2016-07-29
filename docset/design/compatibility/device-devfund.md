@@ -23,6 +23,7 @@ author: beneluxboy
  - [Device.DevFund.Rollback](#device.devfund.rollback)
  - [Device.DevFund.Security](#device.devfund.security)
  - [Device.DevFund.Server](#device.devfund.server)
+ - [Device.DevFund.Server.Nano](#device.devfund.nano)
  - [Device.DevFund.Server.PCI](#device.devfund.server.pci)
  - [Device.DevFund.StaticTools](#device.devfund.statictools)
 
@@ -1865,7 +1866,7 @@ Note: Devices, such as printers, scanners, net switches, and storage arrays, tha
 
 The specific requirements are the following:
 
- - The utility or tool functionality may use either PowerShell or Windows Management Instrumentation (WMI) functionality that the Windows Nano Server installation option supports.
+ - The utility or tool functionality may use either PowerShell or Windows Management Instrumentation (WMI) functionality that the Windows Server Core installation option supports.
 
  - The utility or functionality must operate from the command line or be a WMI object and provider that is compatible with the Windows Management Instrumentation Command-line (WMIC) tool.
 
@@ -1946,7 +1947,7 @@ The command lines to remove the group settings and reboot the computer are the f
 
 ### Device.DevFund.Server.OperateInServerCore
 
-*Device drivers must install, configure, be serviced, and operate in Windows Nano Server and Server Core.*
+*Device drivers must install, configure, be serviced, and operate in Windows Server Core.*
 
 <table>
 <tr>
@@ -1957,13 +1958,13 @@ The command lines to remove the group settings and reboot the computer are the f
 
 **Description**
 
-The hardware platforms on which Windows Server operating systems are deployed have evolved dramatically in the past decade. As these become graphic-less system designs for cost and deployment efficiencies, the customers expect to completely setup, deploy, configure and manage these hardware platforms using the minimal command line interface and automated scripting of Windows Nano Server and Server Core. Windows Server device drivers must evolve in a similar manner to allow the customers to pursue these operations unhindered.
+The hardware platforms on which Windows Server operating systems are deployed have evolved dramatically in the past decade. As these become graphic-less system designs for cost and deployment efficiencies, the customers expect to completely setup, deploy, configure and manage these hardware platforms using the minimal command line interface and automated scripting of Windows Server Core. Windows Server device drivers must evolve in a similar manner to allow the customers to pursue these operations unhindered.
 
 A device driver must demonstrate its ability to install, configure, be serviced and operate without reliance on the presence of a GUI.
 
 Design Notes:
 
-Any device driver that does not meet this requirement will not be usable on Nano Server systems
+Any device driver that does not meet this requirement will not be usable on Windows Server Core systems
 
 Enforcement Date: Feb 2016
 
@@ -1971,12 +1972,7 @@ Enforcement Date: Feb 2016
 
 *Windows Server device drivers must support Query Power and Set Power Management requests*
 
-<table>
-<tr>
-<th>Applies to</th>
-<td>
-<p>Windows Server 2016 x64</p>
-</td></tr></table>
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
 
 **Description**
 
@@ -1989,6 +1985,96 @@ A device driver must not bind itself to a uniquely identifiable instance of syst
 *Design Notes*
 
 For more information, see the "Driver Compatibility for Dynamic Hardware Partitioning" white paper at the following website: http://www.microsoft.com/whdc/system/platform/server/dhp.mspx
+
+<a name="device.devfund.server.nano"></a>
+## Device.DevFund.Server.Nano
+
+*Basic requirements for Windows Server Nano*
+
+### Device.DevFund.Server.Nano.Deployment
+
+*All drivers intended for use with Windows Server Nano must meet these requirements*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+All drivers intended for use on Windows Server Nano must meet the following deployment requirements:
+
+- Drivers must not be packaged as an MSI. All driver files (such as .inf and .sys files) must be available as a set of files that can be copied to a folder for use with Deployment Image Servicing and Management (DISM).
+- Drivers must be installable offline using DISM.
+
+All tools, utilities, or agents to be installed on Nano Server must be made available as a Windows Server Application (WSA) installer package.
+
+### Device.DevFund.Server.Nano.Diagnostics
+
+*All diagnostic utilities intended for use with Windows Server Nano must meet these requirements*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+All diagnostics tools and utilities intended for use in a Microsoft Azure Stack solution must support management by either of the following methods:
+
+- Remotely, using Windows PowerShell or Windows Management Instrumentation (WMI).
+- Using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH.
+
+If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+In addition to the above, systems running Windows Server Nano must support Nano Server Recovery Console functionality by verifying that all of the appropriate features work properly on drivers used in Nano Server.
+
+### Device.DevFund.Server.Nano.FirmwareUpdate
+
+*Firmware Update requirements for Server Nano*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+All firmware update tools and utilities intended for use on Windows Server Nano must support installation by either of the following methods:
+
+- Remote installation using Windows PowerShell or WMI
+- Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
+
+If the tool or utility runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+### Device.DevFund.Server.Nano.MonitoringAndTelemetry
+
+*Monitoring requirements for Windows Server Nano.*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+All monitoring tools, utilities, and agents must support installation by either of the following methods:
+
+- Remote installation using Windows PowerShell or WMI
+- Local installation using a command line tool that an admin can run on Nano Server by connecting to a Nano Server instance through a remote Windows PowerShell session or SSH
+
+If the tool, utility, or agent runs locally on Nano Server, it must be made available as a Windows Server Application (WSA) installer package.
+
+For Microsoft Azure Stack, in particular, all monitoring has to be agentless, and agents will not be allowed on the hosts. Also see ‘if implemented’ Redfish requirement at System.Server.Manageability.Redfish
+
+### Device.DevFund.Server.Nano.OperateInServerNano
+
+*Device drivers must install, configure, be serviced, and operate in Windows Server Nano.*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+**Description**
+
+The hardware platforms on which Windows Server operating systems are deployed have evolved dramatically in the past decade. As these become graphic-less system designs for cost and deployment efficiencies, the customers expect to completely setup, deploy, configure and manage these hardware platforms using the minimal command line interface and automated scripting of Windows Server Nano. Windows Server device drivers must evolve in a similar manner to allow the customers to pursue these operations unhindered.
+
+A device driver must demonstrate its ability to install, configure, be serviced and operate without reliance on the presence of a GUI.
+
+Design Notes:
+
+Any device driver that does not meet this requirement will not be usable on Windows Server Nano systems
+
+### Device.DevFund.Server.Nano.PatchAndUpdate
+
+*Patching requirements for Windows Server Nano.*
+
+<table><tr><th>Applies to</th><td><p>Windows Server 2016 x64</p></td></tr></table>
+
+All patches and updates must be able to install offline as part of image creation or online.
+
 
 <a name="device.devfund.server.pci"></a>
 ## Device.DevFund.Server.PCI

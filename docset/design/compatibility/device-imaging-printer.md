@@ -542,6 +542,7 @@ Printers supporting PWG Raster must conform to the PWG Raster industry standard 
     <li><p>Device must support receiving content compressed using flate, run-length encoding or DCTDecode</p></li>
     </ol>
     <p><strong>OXPS</strong></p>
+	<p>Printer supporting OpenXPS must conform to industry standard and implement the following requirements.</p>
     <ol style="list-style-type: decimal">
         <li><p>If the device implements OpenXPS support, it must follow all rules described in ECMA-388</p></li>
         <li>
