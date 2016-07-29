@@ -456,7 +456,7 @@
 
 ### [OEM deployment of Windows 10 for desktop editions](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
 ### [System builder deployment of Windows 10 for desktop editions](manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)
-### [Manufacturing Windows Engineering Guide](manufacturing-windows-engineering-guide.md)
+### [Manufacturing Windows Engineering Guide](manufacture/desktop/manufacturing-windows-engineering-guide.md)
 ### [OEM Windows Desktop Deployment and Imaging Lab](manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough.md)
 #### [Planning: Customizing reference images for different audiences](manufacture/desktop/planning-create-different-product-designs-for-different-market-segments-sxs.md)
 #### [Get the tools needed to customize Windows](manufacture/desktop/get-the-tools-needed-to-customize-windows-sxs.md)
