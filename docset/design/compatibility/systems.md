@@ -2247,310 +2247,310 @@ the same table. Creating a table that accommodates the differences is beyond the
 **Table 1. Button without LED (stateless button) – For laptops, tablets and convertibles**
 
 <table border="2">
-	<tr>
-		<td>USAGE\_PAGE (Generic Desktop)</td>
-		<td>05 01</td>
-	</tr>
-	<tr>
-		<td>USAGE (Wireless Radio Controls)</td>
-		<td>09 0C</td>
-	</tr>
-	<tr>
-		<td>COLLECTION (Application)</td>
-		<td>A1 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
-		<td>15 00</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
-		<td>25 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Button)</td>
-		<td>09 C6</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
-		<td>95 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Rel)</td>
-		<td>81 06</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
-		<td>81 03</td>
-	</tr>
-	<tr>
-		<td>END\_COLLECTION</td>
-		<td>C0</td>
-	</tr>
+<tr>
+<td>USAGE\_PAGE (Generic Desktop)</td>
+<td>05 01</td>
+</tr>
+<tr>
+<td>USAGE (Wireless Radio Controls)</td>
+<td>09 0C</td>
+</tr>
+<tr>
+<td>COLLECTION (Application)</td>
+<td>A1 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
+<td>15 00</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
+<td>25 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Button)</td>
+<td>09 C6</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
+<td>95 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Rel)</td>
+<td>81 06</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
+<td>81 03</td>
+</tr>
+<tr>
+<td>END\_COLLECTION</td>
+<td>C0</td>
+</tr>
 </table>
 
 
 **Table 2. Button with LED – For laptops, tablets and convertibles that do NOT support connected standby**
 
 <table border="2" cellpadding="0" cellspacing="0" width="0">
-	<tr>
-		<td>USAGE\_PAGE (Generic Desktop)</td>
-		<td>05 01</td>
-	</tr>
-	<tr>
-		<td>USAGE (Wireless Radio Controls)</td>
-		<td>09 0C</td>
-	</tr>
-	<tr>
-		<td>COLLECTION (Application)</td>
-		<td>A1 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
-		<td>15 00</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
-		<td>25 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Button)</td>
-		<td>09 C6</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
-		<td>95 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Rel)</td>
-		<td>81 06</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
-		<td>81 03</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
-		<td>09 C7</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
-		<td>91 02</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
-		<td>91 03</td>
-	</tr>
-	<tr>
-		<td>END\_COLLECTION</td>
-		<td>C0</td>
-	</tr>
+<tr>
+<td>USAGE\_PAGE (Generic Desktop)</td>
+<td>05 01</td>
+</tr>
+<tr>
+<td>USAGE (Wireless Radio Controls)</td>
+<td>09 0C</td>
+</tr>
+<tr>
+<td>COLLECTION (Application)</td>
+<td>A1 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
+<td>15 00</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
+<td>25 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Button)</td>
+<td>09 C6</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
+<td>95 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Rel)</td>
+<td>81 06</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
+<td>81 03</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
+<td>09 C7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
+<td>91 02</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
+<td>91 03</td>
+</tr>
+<tr>
+<td>END\_COLLECTION</td>
+<td>C0</td>
+</tr>
 </table>
                                    
 
 **Table 3. Slider Switch (without LED) - For laptops, tablets and convertibles**
 
 <table border="2" cellpadding="0" cellspacing="0" width="0">
-	<tr>
-		<td>USAGE\_PAGE (Generic Desktop)</td>
-		<td>05 01</td>
-	</tr>
-	<tr>
-		<td>USAGE (Wireless Radio Controls)</td>
-		<td>09 0C</td>
-	</tr>
-	<tr>
-		<td>COLLECTION (Application)</td>
-		<td>A1 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
-		<td>15 00</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
-		<td>25 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Slider Switch)</td>
-		<td>09 C8</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
-		<td>95 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Abs)</td>
-		<td>81 02</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
-		<td>81 03</td>
-	</tr>
-	<tr>
-		<td>END\_COLLECTION</td>
-		<td>C0,</td>
-	</tr>
+<tr>
+<td>USAGE\_PAGE (Generic Desktop)</td>
+<td>05 01</td>
+</tr>
+<tr>
+<td>USAGE (Wireless Radio Controls)</td>
+<td>09 0C</td>
+</tr>
+<tr>
+<td>COLLECTION (Application)</td>
+<td>A1 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
+<td>15 00</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
+<td>25 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Slider Switch)</td>
+<td>09 C8</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
+<td>95 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Abs)</td>
+<td>81 02</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
+<td>81 03</td>
+</tr>
+<tr>
+<td>END\_COLLECTION</td>
+<td>C0,</td>
+</tr>
 </table>                                      
  
 
 **Table 4. Slider Switch with LED- Laptops, tablets and convertibles that do NOT support connected standby**
 
 <table border="2" cellpadding="0" cellspacing="0" width="0">
-	<tr>
-		<td>USAGE\_PAGE (Generic Desktop)</td>
-		<td>05 01</td>
-	</tr>
-	<tr>
-		<td>USAGE (Wireless Radio Controls)</td>
-		<td>09 0C</td>
-	</tr>
-	<tr>
-		<td>COLLECTION (Application)</td>
-		<td>A1 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
-		<td>15 00</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
-		<td>25 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Slider Switch)</td>
-		<td>09 C8</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
-		<td>95 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Abs)</td>
-		<td>81 02</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
-		<td>81 03</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
-		<td>09 C7</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
-		<td>91 02</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
-		<td>91 03</td>
-	</tr>
-	<tr>
-		<td>END\_COLLECTION</td>
-		<td>C0</td>
-	</tr>
+<tr>
+<td>USAGE\_PAGE (Generic Desktop)</td>
+<td>05 01</td>
+</tr>
+<tr>
+<td>USAGE (Wireless Radio Controls)</td>
+<td>09 0C</td>
+</tr>
+<tr>
+<td>COLLECTION (Application)</td>
+<td>A1 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
+<td>15 00</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
+<td>25 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio Slider Switch)</td>
+<td>09 C8</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
+<td>95 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Data,Var,Abs)</td>
+<td>81 02</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;INPUT (Cnst,Var,Abs)</td>
+<td>81 03</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
+<td>09 C7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
+<td>91 02</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
+<td>91 03</td>
+</tr>
+<tr>
+<td>END\_COLLECTION</td>
+<td>C0</td>
+</tr>
 </table>
                                                        
 
 **Table 5. LED Only (No button or slider) - Laptops, tablets and convertibles that do NOT support connected standby**
 
 <table border="2" cellpadding="0" cellspacing="0" width="0">
-	<tr>
-		<td>USAGE\_PAGE (Generic Desktop)</td>
-		<td>05 01</td>
-	</tr>
-	<tr>
-		<td>USAGE (Wireless Radio Controls)</td>
-		<td>09 0C</td>
-	</tr>
-	<tr>
-		<td>COLLECTION (Application)</td>
-		<td>A1 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
-		<td>15 00</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
-		<td>25 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
-		<td>09 C7</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
-		<td>95 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
-		<td>75 01</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
-		<td>91 02</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
-		<td>75 07</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
-		<td>91 03</td>
-	</tr>
-	<tr>
-		<td>END\_COLLECTION</td>
-		<td>C0</td>
-	</tr>
+<tr>
+<td>USAGE\_PAGE (Generic Desktop)</td>
+<td>05 01</td>
+</tr>
+<tr>
+<td>USAGE (Wireless Radio Controls)</td>
+<td>09 0C</td>
+</tr>
+<tr>
+<td>COLLECTION (Application)</td>
+<td>A1 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MINIMUM (0)</td>
+<td>15 00</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;LOGICAL\_MAXIMUM (1)</td>
+<td>25 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;USAGE (Wireless Radio LED)</td>
+<td>09 C7</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_COUNT (1)</td>
+<td>95 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (1)</td>
+<td>75 01</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Data,Var,Rel)</td>
+<td>91 02</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;REPORT\_SIZE (7)</td>
+<td>75 07</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;OUTPUT (Cnst,Var,Abs)</td>
+<td>91 03</td>
+</tr>
+<tr>
+<td>END\_COLLECTION</td>
+<td>C0</td>
+</tr>
 </table> 
 
 
@@ -4083,75 +4083,75 @@ Latency tolerance for that component is specified in the table below.</p>
 </li>
 </ul>
 <table border="2">
-  <tr>
-	  <th colspan="2"> </th>
-	  <th>Latency tolerances</th>
-  </tr>
-  <tr>
-    <th rowspan="3">Engine (monitor ON)</th>
-    <td>Initial state</td>
-    <td align="right">0.08 ms</td>
-  </tr>
-  <tr>
-    <td>After 200 ms of idle time</td>
-    <td align="right">15 ms</td>
-  </tr>
-  <tr>
-    <td>No context on the engine</td>
-    <td align="right">30 ms</td>
-  </tr>
-  <tr>
-    <th rowspan="3">Engine (monitor OFF)</th>
-    <td>Initial state</td>
-    <td align="right">2 ms</td>
-  </tr>
-  <tr>
-    <td>After 200 ms of idle time</td>
-    <td align="right">50 ms</td>
-  </tr>
-  <tr>
-    <td>No context on the engine</td>
-    <td align="right">100 ms</td>
-  </tr>
-  <tr>
-    <th rowspan="2">Memory</th>
-    <td>Active context exists</td>
-    <td align="right">15 ms</td>
-  </tr>
-  <tr>
-    <td>No active context exists</td>
-    <td align="right">30 ms</td>
-  </tr>
-  <tr>
-    <th rowspan="3">Memory refresh</th>
-    <td>Initial state</td>
-    <td align="right">0.08 ms</td>
-  </tr>
-  <tr>
-    <td>No active context exists</td>
-    <td align="right">30 ms</td>
-  </tr>
-  <tr>
-    <td>Monitor off and no active context exists</td>
-    <td align="right">80 ms</td>
-  </tr>
-  <tr>
-    <th rowspan="4">D3 transition</th>
-    <td>Initial state</td>
-    <td align="right">0.08 ms</td>
-  </tr>
-  <tr>
-    <td>After 10 s of all engines idle time</td>
-    <td align="right">15 ms</td>
-  </tr>
-  <tr>
-    <td>No active context</td>
-    <td align="right">200 ms</td>
-  </tr>
-  <tr>
-    <td>Monitor off and (no active context or all engines idle for 60 s)</td>
-    <td align="right">250 ms</td>
-  </tr>
+<tr>
+<th colspan="2"> </th>
+<th>Latency tolerances</th>
+</tr>
+<tr>
+<th rowspan="3">Engine (monitor ON)</th>
+<td>Initial state</td>
+<td align="right">0.08 ms</td>
+</tr>
+<tr>
+<td>After 200 ms of idle time</td>
+<td align="right">15 ms</td>
+</tr>
+<tr>
+<td>No context on the engine</td>
+<td align="right">30 ms</td>
+</tr>
+<tr>
+<th rowspan="3">Engine (monitor OFF)</th>
+<td>Initial state</td>
+<td align="right">2 ms</td>
+</tr>
+<tr>
+<td>After 200 ms of idle time</td>
+<td align="right">50 ms</td>
+</tr>
+<tr>
+<td>No context on the engine</td>
+<td align="right">100 ms</td>
+</tr>
+<tr>
+<th rowspan="2">Memory</th>
+<td>Active context exists</td>
+<td align="right">15 ms</td>
+</tr>
+<tr>
+<td>No active context exists</td>
+<td align="right">30 ms</td>
+</tr>
+<tr>
+<th rowspan="3">Memory refresh</th>
+<td>Initial state</td>
+<td align="right">0.08 ms</td>
+</tr>
+<tr>
+<td>No active context exists</td>
+<td align="right">30 ms</td>
+</tr>
+<tr>
+<td>Monitor off and no active context exists</td>
+<td align="right">80 ms</td>
+</tr>
+<tr>
+<th rowspan="4">D3 transition</th>
+<td>Initial state</td>
+<td align="right">0.08 ms</td>
+</tr>
+<tr>
+<td>After 10 s of all engines idle time</td>
+<td align="right">15 ms</td>
+</tr>
+<tr>
+<td>No active context</td>
+<td align="right">200 ms</td>
+</tr>
+<tr>
+<td>Monitor off and (no active context or all engines idle for 60 s)</td>
+<td align="right">250 ms</td>
+</tr>
 </table>
 
 <br/>
