@@ -269,7 +269,7 @@ Deliver the highest quality product possible, while keeping manufacturing times 
 
 The installation of the test OS can be handled a variety of ways. Since the test OS has less churn than the shipping OS the image can be laid down on the disk at any time, which can reduce the amount of time spent applying the image on the factory floor. Options include having the image pre-flashed from the IHV, or using disk duplication on site.
 
-**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows you need to set the following registry keys: 
+**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows, you need to set the following registry keys: 
 
 ```syntax
 [HKLM\System\CurrentControlSet\Services\Tpm\WMI\NoAutoProvision] (REG_DWORD) to 1
