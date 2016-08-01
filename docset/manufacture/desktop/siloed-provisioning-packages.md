@@ -309,8 +309,8 @@ Alternatively, the siloed provisioning packages can be captured using VM instead
 Siloed provisioning packages can also capture applications with dependencies. For example, to capture multiple apps that depend on .NET Framework:
 
 1.	Create a VM and boot it online using a Window 10, version 1607 VHD/VHDX image.
-2.	Install .Net Framework. 
-3.	Create a checkpoint of the of the OS installation with .Net Framework.
+2.	Install .NET Framework. 
+3.	Create a checkpoint of the of the OS installation with .NET Framework.
 4.	Capture a base .spp, for example, DotNet.spp.
 5.	Install App1, capture it as App1.spp, using /diff:DotNet.spp.
 6.	Revert the VM to the checkpoint created in Step 3.
@@ -343,7 +343,7 @@ In the BTO model, the last minute customizations at the factory floor could incl
 9.	(Optional) Boot the device to Windows PE, and run the DISM command to single-instance the application files in the siloed provisioning package captured in step 7.
 10.	Complete the rest of the factory floor tasks and shutdown/seal the product.
 
-**Preferred process guidelines for BTO model**: As described in the preceding steps, the diff capture support provides flexibility to allow installing a classic Windows applications at the factory floor as last minute customizations.  However, the diff capture operation may take some time to complete, depending on the number and the size of the siloed provisioning packages it needs to diff against.  There is also overhead cost for the other steps in the process.  Therefore, the preferred guideline for installing a classic Windows application in the BTO model is to incur the onetime cost of capturing the siloed provisioning packages for these applications in the imaging lab. Then they can be applied at the factory floor as needed for the last minute customizations.   
+**Preferred process guidelines for BTO model**: As described in the preceding steps, the diff capture support provides flexibility to allow installing a classic Windows applications at the factory floor as last minute customizations. However, the diff capture operation may take some time to complete, depending on the number and the size of the siloed provisioning packages it needs to diff against. There is also overhead cost for the other steps in the process. Therefore, the preferred guideline for installing a classic Windows application in the BTO model is to incur the onetime cost of capturing the siloed provisioning packages for these applications in the imaging lab. Then they can be applied at the factory floor as needed for the last-minute customizations.   
 
 
 

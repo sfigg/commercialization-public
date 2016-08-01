@@ -8,9 +8,8 @@ title: 'Windows Setup Command-Line Options'
 
 # Windows Setup Command-Line Options
 
-Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The following command-line options are available for Windows Setup:
+The following command-line options are available for Windows Setup. Beginning with Windows 10, version 1607, you can use a setupconfig file as an alternative to passing paramters to Windows Setup on a command line. For more information, see [Windows Setup Automation Overview](windows-setup-automation-overview.md).
 
 **setup.exe** \[**/1394debug:***&lt;channel&gt;* \[**baudrate:***&lt;baudrate&gt;*\]\]
 

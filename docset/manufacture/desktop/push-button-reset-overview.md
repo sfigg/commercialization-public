@@ -43,7 +43,7 @@ The following Push-button reset features are available to users with Windows 10
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Overview</strong></p></td>
-<td align="left"><p>[How push-button reset features work](how-push-button-reset-features-work.md) | [Recovery strategy for common customizations](recovery-strategy-for-common-customizations.md)</p></td>
+<td align="left"><p>[How push-button reset features work](how-push-button-reset-features-work.md) | [Recovery strategy for common customizations](recovery-strategy-for-common-customizations.md) | [Siloed provisoning packages](siloed-provisioning-packages.md) </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Hard drive setup</strong></p></td>
@@ -51,7 +51,7 @@ The following Push-button reset features are available to users with Windows 10
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md) | [Bare metal reset/recovery: enable your users to create recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md) | [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md) | [Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md)</p></td>
+<td align="left"><p>[Deploy push-button reset features using ScanState](deploy-push-button-reset-features.md) | [Bare metal reset/recovery: enable your users to create recovery media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md) | [Bare metal reset/recovery: create recovery media while deploying new devices](create-media-to-run-push-button-reset-features-s14.md) | [Add a script to push-button reset features](add-a-script-to-push-button-reset-features.md) | [Create a provisioning package with Windows desktop applications](combine-provisioning-packages-into-a-new-image.md) </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Configuration files</strong></p></td>
