@@ -1463,11 +1463,11 @@ A Windows device should ship with the correct DirectX Graphics Driver for the sy
 
     **Answer**: The type of apps listed below will need to be carefully validated. 
     
-        - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
-        - Any tool that writes system files can be affected:
-            - Imaging applications should perform block-level backup and restore of ALL volumes.
-            - Faulty/Incomplete restore-operations can render a system unbootable.
-            - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
+    - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
+    - Any tool that writes system files can be affected:
+        - Imaging applications should perform block-level backup and restore of ALL volumes.
+        - Faulty/Incomplete restore-operations can render a system unbootable.
+        - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
 
 - **Question**: Is Compact OS also applicable to Windows Embedded?
 
