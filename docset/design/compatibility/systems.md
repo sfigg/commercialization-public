@@ -2005,6 +2005,7 @@ Firmware Requirements
 USB-based devices for GSM and CDMA technologies (3GPP/3GPP2 standards based) need to be firmware
 compliant with the Mobile Broadband Interface Model specification. These devices need to be certified by the
 USB Forum for compliance (when it becomes available for MB devices).
+
 In addition to the above, firmware needs to support the features listed below as specified by NDIS.
 
 
@@ -2037,12 +2038,13 @@ In addition to the above, firmware needs to support the features listed below as
 <td>Required</td>
 </tr>
 </tbody>
-<table>
+</table>
 
 
 No additional Connection Manager software is required for the operation of mobile broadband devices.
 Value-add Mobile Broadband Connection Managers, if implemented, need to implement the Mobile Broadband
 API (<http://msdn.microsoft.com/en-us/library/dd323271(VS.85).aspx)>.
+
 Microsoft strongly recommends USB-based bus interfaces such as analog USB, HSIC (where applicable) and SSIC
 (when available). Mobile Broadband stack in Windows 8 is designed to support only USB protocol based bus
 interfaces. The following table summarizes the required mobile broadband features.
@@ -2061,7 +2063,7 @@ interfaces. The following table summarizes the required mobile broadband feature
 <td>USB-HSCI (preferred) or USB</td>
 </tr>
 </tbody>
-<table>
+</table>
 
 <ul>
 <li><p>Devices MUST support 16 bitmap wake patterns of 128 bytes each.</p></li>
@@ -2236,7 +2238,7 @@ When the state of wireless radio switch changes, whether it is a slider A-B swit
 <td>OOC</td>
 </tr>
 </tbody>
-<table>
+</table>
 
 
 The collections are shown in the following tables.
