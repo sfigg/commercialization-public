@@ -52,7 +52,7 @@ In this step, you’ll gather a boot trace using **Windows Performance Recorder 
 
 The system automatically reboots, gathers a trace, and stops after the desktop becomes visible.
 
-![](images/memoryfootprintlab25.png)
+![Screenshot on WPR settings dialog.](images/memoryfootprintlab25.png)
 
 ## Step 2: Review pool data using WPA
 
@@ -103,11 +103,11 @@ You can add or remove columns if you right-click on the column headers.
 
     If you’re a driver developer, make sure that the pool tags used by your driver are clear and easily identifiable to facilitate analysis. For example, if your company name is Fabrikam, you could add a “Fbk” prefix to all pool tags: FbkPool1, FbkPool2, FbkBuffer, etc.
 
-    ![](images/memoryfootprintlab26.png)
+    ![Screenshot showing what the reorganized WPA table should look like.](images/memoryfootprintlab26.png)
 
 7.  Disable all series on the graph (Right-click -&gt; **Disable** -&gt; **In Entire Graph** -&gt; **All Series**)
 
-    ![](images/memoryfootprintlab27.png)
+    ![Screenshot of the disable menu option in WPA.](images/memoryfootprintlab27.png)
 
 8.  Sort by impacting size by clicking on the **Impacting Size** column header.
 
@@ -126,7 +126,7 @@ You can add or remove columns if you right-click on the column headers.
 
     2.  Enable the **Legend** for the **Impacting** and **Transient** categories.
 
-        ![](images/memoryfootprintlab28.png)
+        ![Screenshot of sample data showing memory usage.](images/memoryfootprintlab28.png)
 
 3.  Sort by **Impacting Size** by clicking on the column header.
 
@@ -136,7 +136,7 @@ You can add or remove columns if you right-click on the column headers.
 
     2.  In the following example, you can see that ACPI.sys makes a total of 255 pool allocations, totaling 1.2 MB under the **ACPIInitStartACPI** function. This is where the driver developer should focus in order to improve the driver steady state memory usage, as this function accounts for most of the driver allocations.
 
-        ![](images/memoryfootprintlab29.png)
+        ![Screenshot of sample data showing memory usage by ACPI.sys.](images/memoryfootprintlab29.png)
 
 5.  Sort by **Size** by clicking on the column header.
 
@@ -144,7 +144,7 @@ You can add or remove columns if you right-click on the column headers.
 
     -   In the following example, you can see the initial spike of transient memory usage is mainly caused by ACPI executing DPCs of devices (**ACPI.sys!ACPIBuildDeviceDpc**). The spike that introduced the code under this function call totals 455 KB.
 
-        ![](images/memoryfootprintlab30.png)
+        ![Screenshot of sample data showing memory usage by ACPI.sys.](images/memoryfootprintlab30.png)
 
 ## Step 4: Measure the driver code footprint
 
@@ -157,13 +157,13 @@ You can add or remove columns if you right-click on the column headers.
 
 4.  Select the **File Backed Page** graph preset.
 
-    ![](images/memoryfootprintlab31.png)
+    ![Screenshot of File Backed Page option.](images/memoryfootprintlab31.png)
 
 5.  Through the **path tree** column, navigate to the driver you selected in Step 3 (for example, ACPI.sys under C:/Windows/drivers).
 
 6.  Expand the **Driver** category and focus on the **Active** pages.
 
-    The value in the **Size** column represents the impact the driver code has on the memory footprint. In the following example, it is 0.48 MB.![](images/memoryfootprintlab32.png)
+    The value in the **Size** column represents the impact the driver code has on the memory footprint. In the following example, it is 0.48 MB.![Screenshot of sample data showing active pages.](images/memoryfootprintlab32.png)
 
  
 

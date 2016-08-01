@@ -11,7 +11,7 @@ title: 'Deploy push-button reset features'
 
 Push-button reset features are included with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), though you'll need to perform additional steps to deploy PCs with the following customizations.
 
--   Classic Windows applications
+-   Windows desktop applications
 -   Windows settings, such as customized OOBE screens or Start Menus.
 -   Customized partition layouts.
 
@@ -35,7 +35,7 @@ You'll also need:
 
 For an overview of the entire deployment process, see the [Desktop manufacturing guide](http://go.microsoft.com/fwlink/p/?LinkId=526101).
 
-Use the follow steps to prepare the ScanState tool to capture Classic Windows applications after they have been installed:
+Use the follow steps to prepare the ScanState tool to capture Windows desktop applications after they have been installed:
 
 **Step 1: Prepare the ScanState tool**
 
@@ -510,7 +510,7 @@ If you plan to use Push-button reset’s extensibility points, use the following
 
      
 
-6.  (Optional) To save space, you can also convert your installed Classic Windows applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
+6.  (Optional) To save space, you can also convert your installed Windows desktop applications into file pointers referencing the customizations package. To do so, boot the destination PC to Windows PE and run the following:
 
     ``` syntax
     DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppkg /ImagePath:C:\ /SingleInstance

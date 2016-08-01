@@ -118,7 +118,7 @@ Windows PE does not support any of the following:
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Tools and settings</strong></p></td>
-<td align="left"><p>[Copype Command-Line Options](copype-command-line-options.md) | [Drvload Command-Line Options](drvload-command-line-options.md) | [Makewinpemedia Command-Line Options](makewinpemedia-command-line-options.md) | [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md) | [Wpeutil Command-Line Options](wpeutil-command-line-options.md) | [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)</p></td>
+<td align="left"><p>[Copype Command-Line Options](copype-command-line-options.md) | [Drvload Command-Line Options](drvload-command-line-options.md) | [Makewinpemedia Command-Line Options](makewinpemedia-command-line-options.md) | [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md) | [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md) | [Wpeutil Command-Line Options](wpeutil-command-line-options.md) | [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Technologies based on Windows PE</strong></p></td>

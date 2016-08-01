@@ -26,7 +26,7 @@ This section describes the parts of the Windows Performance Analyzer (WPA) works
 <tbody>
 <tr class="odd">
 <td><p>[Graph Explorer](graph-explorer.md)</p></td>
-<td><p>Describes the Graph Explorer window.</p></td>
+<td><p>Describes the <strong>Graph Explorer</strong> window.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Analysis Tab](analysis-tab.md)</p></td>
@@ -34,15 +34,19 @@ This section describes the parts of the Windows Performance Analyzer (WPA) works
 </tr>
 <tr class="odd">
 <td><p>[Issues Window](issues-window.md)</p></td>
-<td><p>Describes the Issues window.</p></td>
+<td><p>Describes the <strong>Issues</strong> window.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Details Window](details-window.md)</p></td>
-<td><p>Describes the Details window.</p></td>
+<td><p>Describes the <strong>Details</strong> window.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Diagnostic Console](diagnostic-console.md)</p></td>
-<td><p>Describes the Diagnostic Console window.</p></td>
+<td><p>Describes the <strong>Diagnostic Console</strong> window.</p></td>
+</tr>
+<tr class="even">
+<td><p>[My Presets](my-presets.md)</p></td>
+<td><p>Describes the <strong>My Presets</strong> window.</p></td>
 </tr>
 </tbody>
 </table>

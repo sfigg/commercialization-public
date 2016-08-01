@@ -78,7 +78,8 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 | /SWMFile | Enables you to reference split .wim files (SWMs). *Pattern* is the naming pattern and location of split files. You can also specify wildcard characters. For example, "E:\image\install.swm" will apply all of the split files in the E:\image directory named install1.swm, install2.swm, and so on. |
 | /ConfirmTrustedFile | Validates the image for Trusted Desktop on a Windows 10, Windows 8.1, or Windows 8. This option can only be run on a computer running at least WinPE 4.0. When using /Apply-Image with the /ConfirmTrustedFile option in WinPE, always specify the /ScratchDir option pointed to a physical media location. This ensures that short file names will always be available. See [DISM Global Options for Command-Line Syntax](dism-global-options-for-command-line-syntax.md) for more information about the default behavior of the /ScratchDir option. |
 |   /WIMBoot | Use /WIMBoot to append the image with Windows image file boot (WIMBoot) configuration. This only applies to Windows 8.1 images that have been captured or exported as a WIMBoot file. This feature isn't supported in Windows 10.|
-| /Compact | Applies an image in compact mode, saving drive space. Replaces WIMBoot. For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. 
+| /Compact | Applies an image in compact mode, saving drive space. Replaces WIMBoot. For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. | 
+| /EA      | Applies extended attributes |
 | /ApplyDrive  | Specifies the logical drive, using the DeviceID. to get the device ID from the command line, type "wmic diskdrive list brief". Note: a VHD may appear with the name “PhysicalDrive” in the description, for example, \.\PhysicalDrive2.|
 | /SFUFile  | Use /SFUFile to reference split FFU files (SFUs). *Pattern* is the naming pattern and location of split files. |
 |  /SkipPlatformCheck | Use /SkipPlatformCheck if the FFU file being applied is targeted for a device other than the device performing the application. A special FFU file is required. |
@@ -156,11 +157,16 @@ Dism /Capture-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_director
 | /Verify | Checks for errors and file duplication. |
 | /NoRpFix  | Disables the reparse point tag fix. A reparse point is a file that contains a link to another file on the file system. If /NoRpFix is not specified, reparse points that resolve to paths outside of the value specified by /ImageFile will not be captured.|
 |   /WIMBoot | Use /WIMBoot to append the image with Windows image file boot (WIMBoot) configuration. This only applies to Windows 8.1 images that have been captured or exported as a WIMBoot file. This feature isn't supported in Windows 10.|
+| /EA      | Captures extended attributes |
 
-Example:
+Examples:
 
 ``` syntax
 Dism /Capture-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
+```
+
+```syntax
+dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithOffice.wim" /Name:"Chinese Traditional" /ea
 ```
 
 ## /Cleanup-Mountpoints

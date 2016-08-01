@@ -316,7 +316,7 @@ To save space, you can remove English language components when deploying to non-
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
-3.  Classic Windows applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Classic Windows application.
+3.  Windows desktop applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
 
 **For installations managed by Windows Setup or distribution shares, update the language list**
 

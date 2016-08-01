@@ -9,7 +9,7 @@ title: Recovery components
 # Recovery components
 
 
-Push-button reset features by default restore only drivers (installed through INF packages) and preinstalled Windows apps. To configure the features to restore other customizations such as settings and Classic Windows applications, you will need to prepare one or more customization packages which contain the customizations. These customizations packages are in the form of provisioning packages (.ppkg).
+Push-button reset features by default restore only drivers (installed through INF packages) and preinstalled Windows apps. To configure the features to restore other customizations such as settings and Windows desktop applications, you will need to prepare one or more customization packages which contain the customizations. These customizations packages are in the form of provisioning packages (.ppkg).
 
 Push-button reset features look for and automatically restore provisioning packages which are located in the folder C:\\Recovery\\Customizations.
 
@@ -17,14 +17,14 @@ To protect the packages from tampering or accidental deletion, the Write/Modify 
 
 Some settings and customizations cannot be included in provisioning packages. Instead, you can restore them using an unattend file applied using the Push-button reset extensibility scripts. For settings which are supported by both provisioning packages and unattend, it is recommended that you specify them using only one of the mechanisms, not both. To learn more, see [How push-button reset features work](how-push-button-reset-features-work.md).
 
-## <span id="Capturing_Classic_Windows_applications_using_Windows_User_State_Migration_Tool__USMT__s_ScanState_tool"></span><span id="capturing_classic_windows_applications_using_windows_user_state_migration_tool__usmt__s_scanstate_tool"></span><span id="CAPTURING_CLASSIC_WINDOWS_APPLICATIONS_USING_WINDOWS_USER_STATE_MIGRATION_TOOL__USMT__S_SCANSTATE_TOOL"></span>Capturing Classic Windows applications using Windows User State Migration Tool (USMT)'s ScanState tool
+## <span id="Capturing_Classic_Windows_applications_using_Windows_User_State_Migration_Tool__USMT__s_ScanState_tool"></span><span id="capturing_windows_desktop_applications_using_windows_user_state_migration_tool__usmt__s_scanstate_tool"></span><span id="CAPTURING_WINDOWS_DESKTOP_APPLICATIONS_USING_WINDOWS_USER_STATE_MIGRATION_TOOL__USMT__S_SCANSTATE_TOOL"></span>Capturing Windows desktop applications using Windows User State Migration Tool (USMT)'s ScanState tool
 
 
-The Windows User State Migration Tool (USMT) ScanState.exe has been updated in Windows 10 to support capturing Classic Windows applications applications. This functionality can be activated by specifying the `/apps` option.
+The Windows User State Migration Tool (USMT) ScanState.exe has been updated in Windows 10 to support capturing Windows desktop applications applications. This functionality can be activated by specifying the `/apps` option.
 
 When `/apps` is specified, ScanState uses a set of application discovery rules to determine what should be captured, and stores the output as a reference device data image inside a provisioning package. In general, the reference device data includes the following:
 
--   Classic Windows applications installed using either Microsoft Windows Installer or other installers
+-   Windows desktop applications installed using either Microsoft Windows Installer or other installers
 -   All files and folders outside of the Windows namespace (in other words, outside of \\Windows, \\Program Files, \\Program Files (x86), \\ProgramData, and \\Users). This applies only to the volume on which Windows is installed.
 -   Not captured: Windows apps.
 -   Not captured: User state/data.
@@ -77,7 +77,7 @@ ScanState’s /apps option also supports the following optional parameters:
 
 For customizations involving settings which apply to all editions of Windows 10 (including Windows 10 Mobile), you can create provisioning packages using the Windows ICD.
 
-In build-to-stock (BTS) scenarios, if you have already captured your Classic Windows applications from your reference PC using the ScanState tool, you can import the output provisioning package into Windows ICD and specify additional settings which should be restored during recovery.
+In build-to-stock (BTS) scenarios, if you have already captured your Windows desktop applications from your reference PC using the ScanState tool, you can import the output provisioning package into Windows ICD and specify additional settings which should be restored during recovery.
 
 ## <span id="restoring_settings_using_unattend.xml_and_extensibility_scripts"></span><span id="RESTORING_SETTINGS_USING_UNATTEND.XML_AND_EXTENSIBILITY_SCRIPTS"></span>Restoring settings using unattend.xml and extensibility scripts
 
@@ -214,7 +214,7 @@ The following table outlines the recovery strategy for common customizations whi
 <td align="left">Use PBR extensibility scripts to restore unattend.xml from C:\Recovery\OEM</td>
 </tr>
 <tr class="even">
-<td align="left">Classic Windows applications (including driver applets installed via setup.exe)</td>
+<td align="left">Windows desktop applications (including driver applets installed via setup.exe)</td>
 <td align="left">MSI or custom installers</td>
 <td align="left">Use ScanState to capture and store the resulting PPKG under C:\Recovery\Customizations, which is restored automatically during PBR.</td>
 </tr>

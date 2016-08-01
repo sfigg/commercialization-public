@@ -8,8 +8,6 @@ title: 'Lab 1d: Add a provisioning package to an image'
 
 # Lab 1d: Add a provisioning package to an image
 
-\[This content has been tested on Windows 10 IoT Core Build 10586. Some of these procedures do not yet work on newer preview builds, including Windows 10, version 1607.\]
-
 We'll create a provisioning package that contains some sample Wi-Fi settings. You can use provisioning package in Windows Imaging and Configuration Designer (ICD) to add apps, drivers, features, or to modify many common settings, such as IT device management and policy settings.
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in. 
@@ -140,7 +138,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     http://100.100.0.100:8080
     ```
 
-    This opens the [Windows Device Portal](http://ms-iot.github.io/content/en-US/win10/tools/DevicePortal.md). From here, you can upload app packages, see what apps are installed, and switch between them.
+    This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
 3.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
 

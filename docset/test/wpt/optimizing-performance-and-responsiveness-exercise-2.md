@@ -28,7 +28,7 @@ While the **Fast Startup** assessment is an easy way to get measurements in an e
 
     3.  Change the **Number of iterations** to 1 in order to gather a single trace.
 
-        ![](images/optimizingperformancelab11.png)
+        ![Screenshot of WPR Start menu.](images/optimizingperformancelab11.png)
 
 3.  Click on **Start**.
 
@@ -64,13 +64,13 @@ You now have applied a visualization profile to the trace in order to get some c
 
     -   This view provides a timeline overview of all the **Fast Startup** subphases mentioned in Exercise 1.
 
-        ![](images/optimizingperformancelab12.png)
+        ![Screenshot of sample data showing timeline overview.](images/optimizingperformancelab12.png)
 
 2.  Hovering the mouse over a region bar causes a popup window to appear and provide more information for the region itself.
 
     -   If you put the mouse over the **Boot Main Path** region, you can see its duration. In the example below, it lasts 13.6 seconds.
 
-        ![](images/optimizingperformancelab13.png)
+        ![Screenshot of pop up window showing detailed region data.](images/optimizingperformancelab13.png)
 
 Take the time to navigate through the regions tree, and look at all the subphases to familiarize yourself with it.
 
@@ -78,7 +78,7 @@ The time that **Explorer** takes to initialize and finish is the time it takes t
 
 Select a 90 second interval starting at the beginning of Explorer Initialization and zoom in.
 
-![](images/optimizingperformancelab14.png)![](images/optimizingperformancelab15.png)
+![Screenshot of sample data view in WPA.](images/optimizingperformancelab14.png)![Screenshot of sample data view in WPA using zoom option.](images/optimizingperformancelab15.png)
 
 Under the **Regions of Interest** graph, there are two other valuable graphs: **CPU Usage (sampled)** and **Disk usage**. They will be used to evaluate the impact that the software preload has on **post on/off** resource consumption and responsiveness.
 
@@ -95,13 +95,13 @@ Any CPU activity that occurs between samples is not recorded by this sampling me
 
 Review the CPU usage for each process to identify the processes that have the highest CPU usage (**Weight** and **%Weight**). To do this, scroll down to the graph **CPU Usage (sampled)**. On the left, view the list of processes. Each active process that is selected on the left displays on the graph.
 
-![](images/optimizingperformancelab16.png)
+![Screenshot of sample CPU Usage data.](images/optimizingperformancelab16.png)
 
 **Tip:  **
 
 While using **WPA** graphs, you can change the view to display both the graph and the table. You can click the **Maximize** button to hide the other graphs displayed on the **Analysis** tab.
 
-![](images/optimizingperformancelab17.png)
+![Screenshot of Maximize button in WPA.](images/optimizingperformancelab17.png)
 
 In this example, **ImageSHELLY.exe** consumes 12.4 seconds of CPU time over the interval of 90 seconds currently analyzed. Since the CPU on this system has two cores, this represents a relative percentage of utilization of 6.9%.
 
@@ -113,7 +113,7 @@ You can add additional columns to extract more information (right-click on the t
 
 -   **Stack**: Call stack that highlights the code paths and functions that are causing CPU usage
 
-![](images/optimizingperformancelab18.png)
+![Screenshot showing how to add more columns to your results. ](images/optimizingperformancelab18.png)
 
 In the example above, there is only one thread causing most of the CPU usage within the **ImageSHELLY.exe** process: Thread 2612, with 10.77 seconds of CPU activity.
 
@@ -124,7 +124,7 @@ The stack shows that this activity is coming from the **ImageSTACEY.dll** module
 
 In order to evaluate how much disk bandwidth is consumed by a process, focus on the **Disk Usage** graph.
 
-![](images/optimizingperformancelab19.png)
+![Screenshot of sample data in WPA.](images/optimizingperformancelab19.png)
 
 The columns of interest are:
 
@@ -146,13 +146,13 @@ The columns of interest are:
 
 Add these columns and arrange them to obtain this view:
 
-![](images/optimizingperformancelab20.png)
+![Screenshot of sample data filtered with specific columns.](images/optimizingperformancelab20.png)
 
 **Post on/off** only takes into account normal priority I/Os. Investigate the information about those disk reads according to process. Disk reads usually account for more disk access time than disk writes on boot, as a lot of data must be read from disk in order to launch processes and services.
 
 1.  Click the color markers beside the **Pri**: Very Low and **Pri**: Low series so that only the normal priority I/Os are visible on the graph.
 
-    ![](images/optimizingperformancelab21.png)
+    ![Screenshot of sample graph showing very low data usage.](images/optimizingperformancelab21.png)
 
 2.  In the table view, expand the **Normal** priority row.
 
@@ -160,7 +160,7 @@ Add these columns and arrange them to obtain this view:
 
     Your screen should look something like this:
 
-    ![](images/optimizingperformancelab22.png)
+    ![Screenshot of sample data results.](images/optimizingperformancelab22.png)
 
     The preceding example shows the following:
 
@@ -176,11 +176,11 @@ Add these columns and arrange them to obtain this view:
 
 5.  Identify the top three processes that are contributing to disk reads and that are not Windows components.
 
-    ![](images/optimizingperformancelab23.png)
+    ![Screenshot of sample data results.](images/optimizingperformancelab23.png)
 
 6.  In the table view, expand the **Path Tree** row for **ImageSTUART.exe**, and navigate through it.
 
-    ![](images/optimizingperformancelab24.png)
+    ![Screenshot of sample data results.](images/optimizingperformancelab24.png)
 
 In the preceding example, **ImageSTUART.exe** reads 13.5 MB of data from disk when launched during **post on/off**, and most of the accesses are made reading DLL components in the **Program Files** folder.
 

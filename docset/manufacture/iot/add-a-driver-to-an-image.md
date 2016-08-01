@@ -10,7 +10,7 @@ Now we'll add drivers to a Windows 10 IoT Core image.
 
 When you're using a pre-built Board Support Package (BSP), you'll want to know whether there's already similar drivers on the board. If not, you can usually just add the new driver. 
 
-If there is, but that driver doesn't meet your needs, then you'll need to replace the driver from the BSP, which we'll cover in [Lab 2a](replace-a-driver-in-an-existing-bsp.md).
+If there is, but that driver doesn't meet your needs, then you'll need to replace the driver from the BSP, which we'll cover in [Lab 2a](create-a-new-bsp.md).
 
 In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm), package it up, and deploy it to the device.
 
@@ -149,4 +149,4 @@ In our lab, we'll use the sample driver: [Hello, Blinky!](https://ms-iot.github.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
-[Lab 2a: Replace a driver in an existing board support package](replace-a-driver-in-an-existing-bsp.md)
+[Lab 2: Creating your own board support package](create-a-new-bsp.md)
