@@ -120,7 +120,3 @@ That's it for the first lab.
 
 From here, you can continue on to:
 -  [Lab 2: Creating your own board support package](create-a-new-bsp.md)
-
-
-
- 

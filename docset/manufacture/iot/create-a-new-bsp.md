@@ -6,50 +6,71 @@ title: 'Lab 2: Creating your own board support package (BSP)'
 
 # Lab 2: Creating your own board support package (BSP)
 
-If the driver in your pre-built Board Support Package (BSP) doesn't support what you need it to do, you can replace it.
+A BSP includes a set of device drivers that are specific to the components/silicon used in the board. These are provided by the component vendors / silicon vendors, mostly in the form of .inf and associated .sys/.dll files. 
 
-Note, when you modify the BSP, you become the owner for this new, modified BSP. If the original BSP hardware manufacturer provides any updates to the board, you'll need to choose whether to pass the updates on to your own boards.
+Create a new Board Support Package (BSP) when:
 
-In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm). We'll also remove the existing GPIO driver from the device.
+-  Creating a new hardare design
+
+-  Replacing a driver or component on an existing hardware design
+
+Whether you're creating a new BSP or modifying an existing BSP, you become the owner. This lets you decide whether to allow updates to install on your boards.
+
+In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the existing GPIO driver and replacing it with the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm).
 
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
 1.  Create a BSP working folder that you'd like to modify.
 
     ``` syntax
-	newbsp MyRPi2
-	```
- 
-2.  Open the BSP feature manifest file for your new BSP, MyRpi2FM.xml.
+    newbsp MyRPi2
+    ```
 
-    For example, update: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRPi2FM.xml**.
+## <span id="Add_packages_into_the_feature_manifest"></span>Add packages into the feature manifest
 
-3.  Add the base packages you'll need.
+1.  Open the feature manifest file for your new BSP, \\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\BSP\\MyRpi2\\MyRpi2FM.xml.
+
+    In another window, open the Raspberry Pi 2 feature manifest to use as a template.
+
+2.  Add your base packages (BasePackages).
    
-    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, or use your own.
-   
-    Add:
-    *  UEFI drivers for the boot partition
+    *  UEFI drivers for the boot partition (RASPBERRYPI.RPi2.BootFirmware.cab)
 
-    *  Drivers required for UpdateOS
+    *  Drivers required for UpdateOS (SV.PlatExtensions.UpdateOS.cab)
 
-    *  BCD settings
+    *  Boot configuration data settings (Microsoft-IoTUAP-RPi2-BCD-Package.cab)
 
-    *  **Device Info: Leave this empty.**  Don't copy this from existing examples. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file.  This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes.
-		 
-    *  Mandatory device drivers
+    *  Mandatory device drivers (bcm2836sdhc.cab, dwcUsbOtg.cab, rpiq.cab)
+	   
+	   When creating your own BSP, it's typical to require a display driver and a storage driver, and sometimes a network driver.
 
     *  Device-specific customizations
-     
-4.  Update the device layout.
-
-    You can choose to use the existing device layout, or author your own, as shown as in the example. To learn more, see [Device layout](device-layout.md).
+	
+	**Do not copy in:**
     
-5.  Under features, include the drivers that you want. 
+    *  **Device targeting info (DeviceTargetingInfo.cab)**  For Microsoft-supported platforms, such as RPi2, MBM(x86) and Dragonboard, this package is required.  For custom BSPs like this one, this package should not be included. Instead, add the Feature ID: IOT_GENERIC_POP in the OEMInput file. This prevents your device from receiving updates from the original BSP manufacturer that could wipe out your changes. 
+
+    	
+4.  Copy in the device layout and platform packages (DeviceLayoutPackages, OEMDevicePlatformPackages).
+
+    Note that both the OEMDevicePlatform.xml and devicelayout.xml can be packaged into one package, for example, DeviceLayout.MBR4GB. The same package can then be specified as input in both the sections (for example, under <OEMDevicePlatformPackages> and <DeviceLayoutPackages>).  To learn more, see [Device layout](device-layout.md).
+    
+5.  Copy in features (Features).
 	
-    You can copy these from an existing file, such as \\BSP\RPi2\RPi2FM.xml, and exclude any drivers that don't apply.
+    Copy in features you want. Exclude any that don't apply to your project.
 	
-	For example, add the HelloBlinky driver:
+	For example, copy in each of the drivers **except** the existing GPIO driver:
+	``` syntax
+     <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="RASPBERRYPI.RPi2.GPIO.cab">
+        <FeatureIDs>
+          <FeatureID>RPI2_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+	```
+	
+	Note: To make grouping packages easier, you can combine them into one or more Feature IDs. For example, all of the Raspberry Pi 2 optional drivers use the Feature ID: RPI2_DRIVERS.
+
+6.  Add the HelloBlinky driver:
 	
     ``` syntax
         <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.HelloBlinky.cab">
@@ -67,7 +88,7 @@ In our lab, we'll again use the sample GPIO driver: [Hello, Blinky!](https://ms-
     newproduct ProductB MyRpi2
     ```
 
-    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new Y BSP.
+    This creates the folder: C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductB, which is linked to the new BSP.
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 

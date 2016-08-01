@@ -4,62 +4,98 @@ Description: 'IoT Device Layout'
 title: 'IoT Device Layout'
 ---
 
-# Reference
+# IoT Device Layout
 
-You can update your IoT Core device's drive partitions and layout using the DeviceLayout.xml file.
+When modifying an IoT Core board support package (BSP), you can change the drive partitions and layout by modifying the DeviceLayout files.
 
-## Drive partions:
-A board support package (BSP) is a collection of packages that are specific to the device and contains configuration elements that customize the device for specific purposes. The main elements of BSP are detailed below. 
+## Partition layout
 
-UEFI Read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) for details on UEFI.  
+IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535(v=vs.85).aspx).  
 
-### DeviceLayout.xml 
+Sample partition layouts included in the ADK Add-Ons:
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT2GB\devicelayout.xml
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR4GB\devicelayout.xml
+-  \iot-adk-addonkit\Common\Packages\DeviceLayout.MBR2GB\devicelayout.xml
 
-Device layout specifies the memory layout of the flash drive. This is specified in the DeviceLayout.xml. 
-Example partition layouts are included in the ADK Add-Ons, for example, \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml.
+These files use three component files:
+-  **DeviceLayout.<Name>.pkg.xml: Package file, creates packages for DeviceLayout and OEMDevicePlatform.xml.
+-  **DeviceLayout.xml**: Specifies the device partition layout
+-  **OEMDevicePlatform.xml**: Specifies the amount of free blocks available in the device and which partitions are compressed.
 
-Note, many boards use GPT, though the Raspberry Pi 2 uses MBR. To learn more, see [Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535(v=vs.85).aspx).
+### Partition layout (DeviceLayout.xml)
 
-The following fields are the constants to be specified for IoTCore. 
+IoT Core requires 3 mandatory partitions (EFIESP, MainOS and Data).  You can optionally include other partitions, for example, a CrashDump partition. 
+Sizes are calculated in sectors, the default sector is 512 bytes. 
 
-|Tag                           |Value    |
-|------------------------------|---------|
-|Version                       |IoTUAP   |
-|SectorSize                    |512      |
-|ChunkSize                     |128      |
-|DefaultPartitionByteAlignment |0x200000 |
+Supported properties:
 
-### Partitions 
+**EFI**: Fixed-size partition with the boot manager, boot configuration database. This partition is required for both MBR/GPT-style devices.
 
-IoTCore requires 3 mandatory partitions (EFIESP,MainOS and Data). Additional partitions can be added as per requirements (for example, CrashDump). The supported properties of these partitions are listed below 
+    Name: `EFIESP`
+	
+	Type: For MBR, use `0x0C`. For GPT, use `{c12a7328-f81f-11d2-ba4b-00a0c93ec93b}`
+	
+	FileSystem: `FAT`
+	
+	TotalSectors: `65536`  (= 32MB)
+	
+	Bootable: `true`
+	
+	RequiredToFlash: `true`
+	
+**MainOS**: OS and OEM-preloaded apps. This partition requires a minimum number of free sectors (MinFreeSectors) for normal operations. 
 
-|Properties      |EFIESP                                 |MainOS                                 |Data                                   |CrashDump                              |
-|----------------|---------------------------------------|---------------------------------------|---------------------------------------|-----------------------------------------|
-|FileSystem      |FAT                                    |NTFS                                   |NTFS                                   |FAT32                                  |
-|Type (for MBR)  |0x0C                                   |0x07                                   |0x07                                   |0x0C                                   |
-|Type (for GPT)  |{c12a7328-f81f-11d2-ba4b-00a0c93ec93b} |{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} | {ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} |{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7} |
-|Bootable        |TRUE                                   |-                                      |-                                      |-                                      |
-|RequiredToFlash |TRUE                                   |-                                      |-                                      |-                                      |
+    Name: `MainOS`
+	
+    Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+	
+	FileSystem: `NTFS`
+	
+    MinFreeSectors: `1048576`  (= 512MB)
+	
+	ByteAlignment: `0x800000`
+	
+    ClusterSize: `0x1000`  (This size is recommended to keep the partition size manageable.)
+	
+**Data**: User data partition, user registry hives, apps, apps data. This partition is typically set to use the remainder of the storage space on the device. (UseAllSpace: True)
+    
+	Name: `Data`
+    
+	Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+	
+	FileSystem: `NTFS`
+	
+	UseAllSpace: `true`
+	
+	ByteAlignment: `0x800000`
+	
+    ClusterSize: `0x4000`  (This partition tends to be larger, so 0x4000 is recommended. 0x1000 is also OK.)
 
- 
+**Crash dump partition**: Optional partition, used to collect data from crash dumps. When used, size is given in total sectors.
 
-The Partition sizes are specified in terms of the sectors. Each partition size is specified in different attribute to reflect the exact nature of the size constraint. 
+    Name: `CrashDump`
+   
+    Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+	
+    FileSystem: `FAT32`
+   
+    TotalSectors: `1228800`  (= 600 MB)
 
-* EFIESP – fixed size, so specified in total sectors 
+### Required fields
 
-* MainOS – requires minimum number of sectors free after installing for normal operations, so specified in minimum free sectors after install (MinFreeSectors). The MainOS used sectors 
+These fields are required, the following values are supported for IoTCore: 
 
-  Depends on the OS feature set (MainOS size) included in the OEMInput file. In order to keep this partition size manageable, the ClusterSize is chosen as 0x1000 in general. 
-
-* Data – can dynamically expand up to the available space in the device, if specified to use all remaining space available (UseAllSpace TRUE). Since the partition size is in general larger, ClusterSize of 0x4000 is used. However, this can also be 0x1000.  
-
-* CrashDump – fixed size, so specified in total sectors. 
-
-Storage Size Estimations 
+    Version: `IoTUAP`
+	SectorSize: `512`
+	ChunkSize: `128`
+	DefaultPartitionByteAlignment: `0x200000`
+	
+### Storage Size Estimations 
 
 The following diagrams provide an overview of two configurations. 
 
-**2GB Configuration:**
+**2GB Configuration**  (2048MB, typically has 1843MB for storage)
 
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|
@@ -69,31 +105,62 @@ The following diagrams provide an overview of two configurations.
 |Data         |Data       |883  |1808384 |Expands to fill free space |
 |**TOTAL**        |           |**1843** |**3774464** |                           |
 
-Note: On a typical 2GB (2048MB) flash device, 1843MB is available for storage.
 
-**4GB Configuration:**
+**4GB Configuration:**  (4096MB, typically has 3600MB available for storage)
 
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|
 |EFIESP       |EFIESP     |32   |65536   |EFIESP size                |
 |Main OS      |Main OS    |800  |1638400 |MainOS (estimate)          |
 |Main OS      |Free space |512  |1048576 |MainOS Headroom            |
-|CrashDump    |Crash Dump |128  |1228800 |CrashDump Size             |
+|CrashDump    |Crash Dump |600  |1228800 |CrashDump Size             |
 |Data         |Data       |1656 |3391488 |Expands to fill free space |
 |**TOTAL**        |           |**3600** |**7372800** |                           |
 
-Note: On a typical 4GB (4096MB) flash device, 3600MB is available for storage.
 
-## OEMDevicePlatform.xml 
+### Device platform layout (OEMDevicePlatform.xml)
 
-This specifies the about of free blocks available in the device and which partitions are compressed. 
+OEMDevicePlatform.xml specifies the amount of free blocks available in the device and which partitions are compressed. Example:
+   ``` syntax
+   <?xml version="1.0" encoding="utf-8"?>
+   <OEMDevicePlatform xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+      <MinSectorCount>7372800</MinSectorCount>
+      <DevicePlatformIDs>
+        <ID>*</ID>
+      </DevicePlatformIDs>
+     <CompressedPartitions>
+       <Name>MainOS</Name>
+     </CompressedPartitions>
+   </OEMDevicePlatform>
+   ```
 
-## Device Drivers 
+##BSP Samples in IoT-ADK-AddonKit
+BSP samples provided in the IoT-ADK-AddOnKit are detailed here along with the associated tools.
+The BSP components are present under the architecture specific source directory and has the following contents.
+   ``` syntax
+   Source-{arch}
+  +BSP
+    +{BSPName}        - Name of the BSP
+     +Packages        - Contains the BSP specific packages and FM file
+     +OEMInputSamples – Contains the sample oem input files 
+   ```
 
-BSP also includes a set of device drivers that are specific to the components/silicon used in the board. These are provided by the component vendors / silicon vendors, mostly in the form of .inf and associated .sys/.dll files. See <link> to create the driver packages.  
+###RPi2 (ARM)
 
-Typically you'll need at least a display driver and a storage driver.
+RPi2 BSP is the BSP supported and serviced by Microsoft. This is for the Raspberry Pi2 Boards. The source of this BSP is available at https://github.com/ms-iot/bsp
+
+###CustomRPi2 (ARM)
+
+CustomRPi2 is a customized version of the RPi2 BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components. 
+
+###MBM (x86)
+
+MBM BSP is the BSP supported and serviced by Microsoft. This is for the Intel MinnowBoard Max Boards.
+
+###CustomMBM (x86)
+
+CustomMBM is a customized version of the MBM BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components.
 
 
-
-
+##Related topics
+[Creating your own board support package (BSP)](create-a-new-bsp.md)
