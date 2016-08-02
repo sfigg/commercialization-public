@@ -645,7 +645,7 @@
 #### [Push-button reset](manufacture/desktop/push-button-reset-overview.md)
 ##### [How push-button reset features work](manufacture/desktop/how-push-button-reset-features-work.md)
 ##### [Recovery components](manufacture/desktop/recovery-strategy-for-common-customizations.md)
-##### [Siloed provisioning packages](siloed-provisioning-packages.md)
+##### [Siloed provisioning packages](manufacture/desktop/siloed-provisioning-packages.md)
 ##### [Deploy push-button reset features](manufacture/desktop/deploy-push-button-reset-features.md)
 ##### [Add a script to push-button reset features](manufacture/desktop/add-a-script-to-push-button-reset-features.md)
 ##### [Bare metal reset/recovery: create recovery media while deploying new devices](manufacture/desktop/create-media-to-run-push-button-reset-features-s14.md)
