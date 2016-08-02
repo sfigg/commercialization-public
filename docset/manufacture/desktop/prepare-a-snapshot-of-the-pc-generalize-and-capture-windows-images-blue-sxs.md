@@ -12,7 +12,7 @@ You can use audit mode to customize Windows using the familiar Windows environme
 
 We'll also show you how to generalize the image, which prepares the Windows files to be captured and applied to other devices.
 
-## <span id="Step_1__Get_into_audit_mode"></span>Step 1: Get into audit mode
+## <span id="Get_into_audit_mode"></span>Step 1: Get into audit mode
 
 1.  Boot up the reference device, if it's not already booted.
 2.  If the device boots to the **Languages** or the **Get going fast** screen, press **Ctrl+Shift+F3** to enter Audit mode.
@@ -59,7 +59,7 @@ We'll also show you how to generalize the image, which prepares the Windows file
 
     Note that some partitions might not receive a drive letter.
 
-**Optimize the image to take up less drive space (optional)**
+## <span id="Optimize_the_image"></span>Step 4: Optimize the image to take up less drive space (optional)
 
 1.  Convert the Windows desktop application and files outside of the provisioning package into pointer files which reference the contents inside the provisioning package. This is known as single-instancing the image:
 
@@ -81,7 +81,7 @@ We'll also show you how to generalize the image, which prepares the Windows file
 
     where *C* is the drive letter of the Windows partition. Beginning with Windows 10, version 1607, you can specify the /Defer parameter with /Resetbase to defer any long-running cleanup operations to the next automatic maintenance. But we highly recommend you **only** use /Defer as an option in the factory where DISM /Resetbase requires more than 30 minutes to complete.
 
-## <span id="Step_5__Capture_the_image"></span><span id="step_5__capture_the_image"></span><span id="STEP_5__CAPTURE_THE_IMAGE"></span>Step 5: Capture the image
+## <span id="Capture_the_image"></span><span id="capture_the_image"></span><span id="CAPTURE_THE_IMAGE"></span>Step 5: Capture the image
 
 -   Capture the image of the Windows partition, and then copy it to the external drive or share:
 
@@ -95,44 +95,40 @@ We'll also show you how to generalize the image, which prepares the Windows file
 
     **Troubleshooting**: If you receive an: "A parameter is incorrect" error message when you try to capture or copy the file to the USB key, the file might be too large for the destination file system. Copy the file to a different drive that is formatted as NTFS.
 
-## <span id="Step_6__Apply_the_image_to_a_new_device__optional__to_be_done_in_the_factory_process_"></span><span id="step_6__apply_the_image_to_a_new_device__optional__to_be_done_in_the_factory_process_"></span><span id="STEP_6__APPLY_THE_IMAGE_TO_A_NEW_DEVICE__OPTIONAL__TO_BE_DONE_IN_THE_FACTORY_PROCESS_"></span>Step 6: Apply the image to a new device (optional, to be done in the factory process)
+## <span id="Apply_the_image_to_a_new_device__optional__to_be_done_in_the_factory_process_"></span><span id="apply_the_image_to_a_new_device__optional__to_be_done_in_the_factory_process_"></span><span id="APPLY_THE_IMAGE_TO_A_NEW_DEVICE__OPTIONAL__TO_BE_DONE_IN_THE_FACTORY_PROCESS_"></span>Step 6: Apply the image to a new device (optional, to be done in the factory process)
 
 This represents the steps you'd use in the factory. For the purposes of the lab, reuse the reference device for this.
 
-**Prepare a place to store your files**
+**Optional: store your image on a network share**
 
-1.  For this step, you'll need another USB key, or an external hard drive or network location that can handle large files.
-    -   To format a separate USB key to accept large files: On your technician PC, go to File Explorer, right-click the drive and select **Format**. Select File system: **NTFS**, accept all other defaults, and click **OK**.
+1.  Copy the image to a network share. Example: 
+    ```syntax
+	net use N: \\server\share
+	copy C:\WindowsWithFinalChanges.wim N:\Images\WindowsWithFinalChanges.wim
+	```
 
-        Then, connect the USB key to the reference device.
-
-    -   To use a network file share: On your reference device, map a drive. Example: **net use N: \\\\server\\share**.
-    -   **Note**  You won't be able to use the WinPE key. To make WinPE bootable for both UEFI and BIOS-based systems, WinPE formats the key using the FAT32 file system, which has a 4GB limit. For other ways to get around this limit, see [Split a Windows image file (.wim) for FAT32 media or to span across multiple DVDs](http://go.microsoft.com/fwlink/?LinkId=526946).
-
-2.  Copy C:\\WindowsWithFinalChanges.wim to the storage USB drive or network share.
-
-Skip this step if the reference device is already booted to WinPE.
-
-**Step 7: Apply the image to a new PC**
+## <span id="Apply_the_image"></span>Step 7: Apply the image to a new PC
 Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`) or connect to a network drive (`net use N: \\\\server\\share`).
 3.  Apply the image: `D:\ApplyImage.bat D:\Images\WindowsWithFinalChanges.wim`.
 4.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
-    ```syntax
+    
+	```syntax
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
+
 5. 	Apply the recovery image after applying the SPP:
+
 	```syntax
 	D:\ApplyRecovery.bat
 	```
+	
 6.  Disconnect the drives, then reboot (`exit`).
 
 	
-**Step 8: Verify everything**
+## <span id="Verify_everything"></span>Step 8: Verify everything
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
-2.  See that the stuff you added in audit mode is there.
-
-
+2.  See that the changes you made in audit mode are there.

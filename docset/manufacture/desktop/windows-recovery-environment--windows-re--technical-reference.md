@@ -37,9 +37,10 @@ In addition, you can create your own custom recovery solution by using the [Wind
 
 Your users can access WinRE features through the **Boot Options** menu, which can be launched from Windows in a few different ways:
 
--   In Windows 10, select **Start** &gt; **Settings** &gt; **Update & recovery** &gt; **Recovery** &gt; under **Advanced Startup**, click **Restart now**.
+-   From the login screen, click Shutdown, then hold down the Shift key while selecting **Restart**.
+-   In Windows 10, select **Start** &gt; **Settings** &gt; **Update & security** &gt; **Recovery** &gt; under **Advanced Startup**, click **Restart now**.
 -   Boot to recovery media.
--   You can configure a hardware recovery button (or button combination) to run a secondary boot path that includes WinRE. For more information, see [Add a Hardware Recovery Button to Start Windows RE](add-a-hardware-recovery-button-to-start-windows-re.md).
+-   Use a [hardware recovery button (or button combination)](add-a-hardware-recovery-button-to-start-windows-re.md) configured by the OEM.
 
 After any of these actions is performed, all user sessions are signed off and the **Boot Options** menu is displayed. If your users select a WinRE feature from this menu, the PC restarts into WinRE and the selected feature is launched.
 
