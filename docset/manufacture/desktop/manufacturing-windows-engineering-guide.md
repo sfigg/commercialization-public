@@ -269,7 +269,7 @@ Deliver the highest quality product possible, while keeping manufacturing times 
 
 The installation of the test OS can be handled a variety of ways. Since the test OS has less churn than the shipping OS the image can be laid down on the disk at any time, which can reduce the amount of time spent applying the image on the factory floor. Options include having the image pre-flashed from the IHV, or using disk duplication on site.
 
-**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows you need to set the following registry keys: 
+**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows, you need to set the following registry keys: 
 
 ```syntax
 [HKLM\System\CurrentControlSet\Services\Tpm\WMI\NoAutoProvision] (REG_DWORD) to 1
@@ -1463,11 +1463,11 @@ A Windows device should ship with the correct DirectX Graphics Driver for the sy
 
     **Answer**: The type of apps listed below will need to be carefully validated. 
     
-        - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
-        - Any tool that writes system files can be affected:
-            - Imaging applications should perform block-level backup and restore of ALL volumes.
-            - Faulty/Incomplete restore-operations can render a system unbootable.
-            - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
+    - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
+    - Any tool that writes system files can be affected:
+        - Imaging applications should perform block-level backup and restore of ALL volumes.
+        - Faulty/Incomplete restore-operations can render a system unbootable.
+        - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
 
 - **Question**: Is Compact OS also applicable to Windows Embedded?
 

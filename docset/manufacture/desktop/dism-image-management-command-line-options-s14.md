@@ -50,7 +50,7 @@ Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 
 ## /Apply-Image
 
-For WIM, this command applies a Windows image file (.wim) or a split Windows image (.swm) files to a specified partition. 
+For WIM, this command applies a Windows image file (.wim) or a split Windows image (.swm) files to a specified partition. Beginning with Windows 10, version 1607, DISM can apply and capture extended attributes (EA).
 
 For FFU, this command applies a full flash update (.ffu) image to a specified drive. It doesn’t support applying an image from a virtual hard disk (.vhdx) file, though you can use this command to apply a full image to a VHD. FFU applies to Windows 10 only.
 
@@ -136,10 +136,7 @@ Dism /Capture-CustomImage /CaptureDir:D:\
 
 Captures an image of a drive to a new .wim file. Captured directories include all subfolders and data. You cannot capture an empty directory. A directory must contain at least one file.
 
-You can capture the image as a Windows image (.wim) file or a set of split Windows image (.swm) files; this option doesn’t support capturing a virtual hard disk (.vhd/.vhdx) file or a full flash update (.ffu) image.
-
-**Important**
-DISM will ignore extended attributes during a capture operation.
+You can capture the image as a Windows image (.wim) file or a set of split Windows image (.swm) files; this option doesn’t support capturing a virtual hard disk (.vhd/.vhdx) file or a full flash update (.ffu) image. Beginning with Windows 10, version 1607, DISM can apply and capture extended attributes (EA).
 
 Syntax:
 

@@ -48,3 +48,4 @@ We'll create an update to the Hello, World app we created from [Lab 1b: Add an a
 
 To keep track of your versions, open UpdateVersion.txt to see descriptions of your official set of packages. The tool automatically updates this file when creating a new update. This is required to keep track of completed updates.
 
+
