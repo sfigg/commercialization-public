@@ -304,7 +304,7 @@ The following table includes these settings:
 
 ### <span id="Language_Interface_Packs__LIPs_"></span><span id="language_interface_packs__lips_"></span><span id="LANGUAGE_INTERFACE_PACKS__LIPS_"></span>Language Interface Packs (LIPs)
 
-Except where noted, the following LIPs are available for Windows 10, Windows Server 2016 Technical Preview, and Windows Server 2012 R2. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
+Except where noted, the following LIPs are available for Windows 10. For Windows Server, options to change keyboard and regional settings such as currency, time zones, and time/date format are available but LIPs are not available. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
  
 
