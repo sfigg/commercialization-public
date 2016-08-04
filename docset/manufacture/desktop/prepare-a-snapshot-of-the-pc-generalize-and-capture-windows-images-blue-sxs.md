@@ -10,7 +10,7 @@ title: 'Lab 1g: Make changes from Windows (audit mode)'
 
 You can use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts.  
 
-To make sure your audit mode changes are included in the recovery image, you'll neeed to capture these changes into a provisioning package using ScanState. This image gets used by the system recovery tools to restore your changes if things go wrong. You can optionally save drive space by running the applications directly from the compressed recovery files; this is known as single-instancing.
+To make sure your audit mode changes are included in the recovery image, you'll need to capture these changes into a provisioning package using ScanState. This image gets used by the system recovery tools to restore your changes if things go wrong. You can optionally save drive space by running the applications directly from the compressed recovery files; this is known as single-instancing.
 
 If you want to capture the changes in an image and apply it to other devices, you'll need to use the Sysprep tool to generalize the image.
 
