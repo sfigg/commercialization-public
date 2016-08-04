@@ -1,6 +1,12 @@
 # [Get Started with Windows 10](get-started-with-windows-10-portal.md)
 
 # [Design](design/index.md)
+## [What's new in Design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)
+## [Change history for Design](https://msdn.microsoft.com/library/windows/hardware/mt707584.aspx)
+## [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)
+## [Form factors](https://msdn.microsoft.com/library/windows/hardware/dn915070.aspx)
+## [Device experiences](https://msdn.microsoft.com/library/windows/hardware/dn915057.aspx)
+## [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
 ## [Windows Hardware Compatibility Program](design/compatibility/index.md)
 ### [Devices](design/compatibility/device.md)
@@ -46,9 +52,12 @@
 ### [Filter](design/compatibility/filter.md)
 ### [Systems](design/compatibility/systems.md)
 
-
+# [Customize](https://msdn.microsoft.com/library/windows/hardware/mt269765.aspx)
 
 # [Test](test/index.md)
+
+## [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx)
+## [Windows Hardware Certification Kit](https://msdn.microsoft.com/library/windows/hardware/jj124227.aspx)
 
 ## [Windows Performance Toolkit](test/wpt/index.md)
 ### [What's New in the Windows Performance Toolkit](test/wpt/whats-new-in-the-windows-performance-toolkit.md)
@@ -798,12 +807,6 @@
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](manufacture/iot/iot-core-adk-addons-command-line-options.md)
 
-
-
-
-
-
-
 # [Service](service/index.md)
 ## [Desktop servicing](service/desktop/resetting-the-pc.md)
 ## [Mobile servicing](service/mobile/index.md)
@@ -839,4 +842,4 @@
 ### [Manage IoT Core device updates](service/iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](service/iot/updating-iot-core-apps.md)
 
-## [Dashboard Services](https://msdn.microsoft.com/en-us/library/windows/hardware/br230803(v=vs.85).aspx)
+## [Dashboard Services](https://msdn.microsoft.com/library/windows/hardware/br230803.aspx)
