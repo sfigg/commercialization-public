@@ -446,6 +446,7 @@
 
 
 
+## [Performance - Windows Engineering Guide](test/weg/index.md)
 
 
 
