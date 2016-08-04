@@ -14,7 +14,8 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **August 4, 2016**
 
--  Any changes made in audit mode should be captured so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
+-  Desktop apps, drivers, and settings added in audit mode need to be captured separately so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
+   Desktop apps, drivers, and settings added from siloed provisioning packages (SPPs) are configured automatically. 
 
 **July 26, 2016**
 

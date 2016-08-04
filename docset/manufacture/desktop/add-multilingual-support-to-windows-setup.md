@@ -13,13 +13,13 @@ This walkthrough provides steps for creating multilingual installations and dist
 
 In this topic:
 
--   [Copy Windows Source Files to a Local Directory](#bkmk-1)
+-   [Step 1: Copy Windows Source Files to a Local Directory](#bkmk-1)
 
--   [Add Windows PE Setup Language Packs to the Default Boot Image](#bkmk-2)
+-   [Step 2: Add Windows PE Setup Language Packs to the Default Boot Image](#bkmk-2)
 
--   [Add Font Support to the Default Boot Image](#bkmk-3)
+-   [Step 3: Add Font Support to the Default Boot Image](#bkmk-3)
 
--   [Add Windows Language Packs to the Windows Image](#bkmk-4)
+-   [Step 4: Add Windows Language Packs to the Windows Image](#bkmk-4)
 
 -   [Step 5: Add Localized Windows Setup Resources to the Windows Distribution](#step5)
 
