@@ -50,8 +50,6 @@
 
 # [Test](test/index.md)
 
-## [Windows Hardware Certification Kit](test/hck/)
-
 ## [Windows Performance Toolkit](test/wpt/index.md)
 ### [What's New in the Windows Performance Toolkit](test/wpt/whats-new-in-the-windows-performance-toolkit.md)
 
