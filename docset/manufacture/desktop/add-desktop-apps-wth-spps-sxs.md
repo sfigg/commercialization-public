@@ -11,12 +11,9 @@ Siloed provisioning packages (SPPs) are a new type of provisioning package that 
 
 We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
 1.  Create a VM with a new Windows image, and boot it into audit mode.
-2.  Create the 1st checkpoint.
+2.  Create a checkpoint.
 3.  Install a Windows desktop application, then capture it as an SPP.
-    a. If the Windows desktop application has add-ons, like Microsoft Office language packs, create a 2nd checkpoint.
-	b. Install the add-on, and capture it as a differential SPPs.
-	c. Restore to the 2nd checkpoint and repeat to capture any more add-ons.
-4.  Restore to the 1st checkpoint and repeat to capture more Windows desktop applications.
+4.  Revert to the checkpoint and repeat to capture more Windows desktop applications.
 
 ## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
 
