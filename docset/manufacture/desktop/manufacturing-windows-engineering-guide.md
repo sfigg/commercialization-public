@@ -75,7 +75,7 @@ Compact OS is not supported on mobile devices.
 
 ### Provisioning packages
 
-To save time while building images, you can now capture and apply Classic Windows applications during image deployment by using provisioning packages. This saves the time-consuming steps of generalizing and recapturing the entire image, and allows you to quickly deploy BTO devices.
+To save time while building images, you can now capture and apply desktop Windows applications during image deployment by using provisioning packages. This saves the time-consuming steps of generalizing and recapturing the entire image, and allows you to quickly deploy BTO devices.
 
 ### Language packs
 
@@ -95,13 +95,13 @@ Hardware decisions can also affect the manufacturing process. Besides the challe
 
 ### Antimalware apps
 
+**Recommendation:** Configure your devices to avoid full scan of the disk during first sign-in. Please work with your Antimalware vendor to determine best practices for limiting this scan.
+
 We have seen several instances where antimalware tools are doing a full disk scan during the user’s first sign-in. The scanning competes with critical tasks occurring during the first sign-in process, resulting in very slow first sign-in, a degraded Start experience and slow system performance. 
 
-**Recommendation:** Devices should be configured to avoid full scan of the disk during first sign-in. Please work with your Antimalware vendor to determine best practices for limiting this scan. 
+For Windows Defender, this can be configured by adding unique identifiers to your images. To learn more, see [Configure a Trusted Image Identifier for Windows Defender](http://go.microsoft.com/fwlink/?LinkId=532775).
 
 ### Windows Defender
-
-Add unique identifiers to your images to prevent Windows Defender from re-scanning all of the files you provided in the original disk image. To learn more, see [Configure a Trusted Image Identifier for Windows Defender](http://go.microsoft.com/fwlink/?LinkId=532775).
 
 ## Pre-factory floor image updates
 
@@ -129,23 +129,6 @@ The overall golden desktop image creation process in OEM image labs is similar t
 
 To avoid compatibility issues, use the new version of Windows PE when working on the reference device in the image creation lab. 
 
-### Servicing commands
-
-Use Dism to:
-
-- Add drivers
-- Add packages
-- Add languages
-- Add Windows apps
-- Cleanup image
-- Apply images
-- Enable Compact 
-
-Use Windows ICD to:
-
-- Combine the board support package (BSP) and the mobile OS packages into an FFU file
-- Customize your mobile image
-- Flash your mobile image
 
 ### Region-specific policy for Skype removal on desktop
 
@@ -232,7 +215,7 @@ To disable the app readiness service offline:
 It is recommended that you disable the service offline before entering audit mode. But you can also disable it online in audit mode. You must generalize the image after you disable the service.
 To disable the app readiness service online:
 
-1. In audit mode, open regedit.
+1. In audit mode, start `regedit`.
 2. Navigate to HKLM\Software\Microsoft\Windows\CurrentVersion\AppReadiness DisableInAuditMode. 
 3. Set the value of the key to 1.
 
@@ -255,7 +238,7 @@ Set the time to UTC and implement ACPI changes detailed below.
 
 ## Hardware test and run-in phase
 
-Testing on a full version of Windows lets you test final hardware/software interactions as the user will see them.
+We recommend testing on a full version of Windows. This lets you test final hardware/software interactions as the user will see them.
 
 ### Considerations
 
@@ -269,7 +252,7 @@ Deliver the highest quality product possible, while keeping manufacturing times 
 
 The installation of the test OS can be handled a variety of ways. Since the test OS has less churn than the shipping OS the image can be laid down on the disk at any time, which can reduce the amount of time spent applying the image on the factory floor. Options include having the image pre-flashed from the IHV, or using disk duplication on site.
 
-**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows you need to set the following registry keys: 
+**Important**: Disable TPM (Trusted Platform Module) auto-provisioning when booting into a test OS to ensure both good performance and to make sure the user’s OS has ownership of the module. To do this in Windows, you need to set the following registry keys: 
 
 ```syntax
 [HKLM\System\CurrentControlSet\Services\Tpm\WMI\NoAutoProvision] (REG_DWORD) to 1
@@ -1463,11 +1446,11 @@ A Windows device should ship with the correct DirectX Graphics Driver for the sy
 
     **Answer**: The type of apps listed below will need to be carefully validated. 
     
-        - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
-        - Any tool that writes system files can be affected:
-            - Imaging applications should perform block-level backup and restore of ALL volumes.
-            - Faulty/Incomplete restore-operations can render a system unbootable.
-            - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
+    - Full volume encryption tools should not encrypt WIM images to limit performance impact. Such tools should check integrity of the unencrypted WIM to prevent tampering.
+    - Any tool that writes system files can be affected:
+        - Imaging applications should perform block-level backup and restore of ALL volumes.
+        - Faulty/Incomplete restore-operations can render a system unbootable.
+        - Encryption/Back-Up/Defrag tools may unintentionally inflate system files. 
 
 - **Question**: Is Compact OS also applicable to Windows Embedded?
 

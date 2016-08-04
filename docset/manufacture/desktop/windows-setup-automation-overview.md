@@ -8,16 +8,54 @@ title: Windows Setup Automation Overview
 
 # Windows Setup Automation Overview
 
+## Use Setupconfig.ini to install Windows
 
-You can use a Windows Setup unattended answer file to modify system and control panel settings while installing Windows, or while updating an existing Windows image.
+### What is a setupconfig file?
 
-* [Use an Answer File] (#use-an-answer-file-while-installing-windows)
-* [Modify an existing installation] (#modify-an-existing-installation)
-* [Implicit Answer File Search Order] (#implicit-answer-file-search-order)
-* [Sensitive Data in Answer Files] (#sensitive-data-in-answer-files)
-* [Implicit Answer File Search Examples] (#implicit-answer-file-search-examples)
+Setupconfig is a configuration file that is used to pass a set of flags or parameters to Windows setup.exe. Use this file as an alternative to passing parameters to Windows setup on a command line. This functionality is available in Windows 10, version 1607 and later.
 
-##Use an answer file while installing Windows
+IT pros can use the setupconfig file to add parameters to Windows Setup from Windows Update and Windows Server Update Services.
+
+The different parameters that can be used with Windows 10 Setup.exe are described in this topic.
+
+Setupconfig.ini files can contain single parameters, or parameters and value pairs. Do not include “/” characters, and with parameter and value pairs, include “=” between the two. 
+
+For example, you create a Setupconfig.ini with the following. Note that the header `[SetupConfig]` is required.
+
+```syntax
+[SetupConfig]
+NoReboot
+ShowOobe=None
+Telemetry=Enable
+ReflectDrivers = <path of folder containing INF and SYS files for the encryption drivers>
+```
+
+This is equivalent to the following command line:
+
+```syntax
+Setup /NoReboot /ShowOobe None /Telemetry Enable
+```
+
+### How does Windows Setup use Setupconfig.ini?
+
+#### Using media/ISO file
+
+If you are running Windows setup from media or an ISO file, you must include the location to the setupconfig file on the command line (“/ConfigFile `<path>`”) when running setup.exe. For example:
+
+```syntax
+Setup.exe /ConfigFile <path to Setupconfig.ini>
+```
+
+If you include a parameter on the command line and the same parameter in the setupconfig file, the setupconfig file parameter and value has precedence. 
+
+#### Using Windows Update
+
+If the update is delivered through Windows Update, Windows Setup searches in a default location for a setupconfig file. You can include the setupconfig file here:
+
+"%systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini"
+
+
+## Use an answer file while installing Windows
 
 You can automate Windows installation by using an answer file:
 

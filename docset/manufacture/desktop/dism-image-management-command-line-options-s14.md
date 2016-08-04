@@ -50,7 +50,7 @@ Dism /Append-Image /ImageFile:install.wim /CaptureDir:D:\ /Name:Drive-D
 
 ## /Apply-Image
 
-For WIM, this command applies a Windows image file (.wim) or a split Windows image (.swm) files to a specified partition. 
+For WIM, this command applies a Windows image file (.wim) or a split Windows image (.swm) files to a specified partition. Beginning with Windows 10, version 1607, DISM can apply and capture extended attributes (EA).
 
 For FFU, this command applies a full flash update (.ffu) image to a specified drive. It doesn’t support applying an image from a virtual hard disk (.vhdx) file, though you can use this command to apply a full image to a VHD. FFU applies to Windows 10 only.
 
@@ -76,7 +76,7 @@ DISM.exe /Apply-Image /ImageFile:<path_to_image_file> /ApplyDrive:<target_drive>
 | /Verify | Checks for errors and file duplication. |
 | /NoRpFix | Disables the reparse point tag fix. A reparse point is a file that contains a link to another file on the file system. If /NoRpFix is not specified, reparse points that resolve to paths outside the value specified by /ImageFile will not be captured. |
 | /SWMFile | Enables you to reference split .wim files (SWMs). *Pattern* is the naming pattern and location of split files. You can also specify wildcard characters. For example, "E:\image\install.swm" will apply all of the split files in the E:\image directory named install1.swm, install2.swm, and so on. |
-| /ConfirmTrustedFile | Validates the image for Trusted Desktop on a Windows 10, Windows 8.1, or Windows 8. This option can only be run on a computer running at least WinPE 4.0. When using /Apply-Image with the /ConfirmTrustedFile option in WinPE, always specify the /ScratchDir option pointed to a physical media location. This ensures that short file names will always be available. See [DISM Global Options for Command-Line Syntax](dism-global-options-for-command-line-syntax.md) for more information about the default behavior of the /ScratchDir option. |
+| /ConfirmTrustedFile | Validates the image for Trusted Desktop on a Windows 10, Windows 8.1, or Windows 8. This option can only be run on a computer running at least WinPE 4.0. When using /Apply-Image with the /ConfirmTrustedFile option in WinPE, always specify the /ScratchDir option pointed to a physical media location. This ensures that short file names will always be available. See [DISM Global Options for Command-Line Syntax](dism-global-options-for-command-line-syntax.md) for more information about the default behavior of the /ScratchDir option. Beginning with Windows 10, version 1607, you can use /EA to apply extended attributes.  |
 |   /WIMBoot | Use /WIMBoot to append the image with Windows image file boot (WIMBoot) configuration. This only applies to Windows 8.1 images that have been captured or exported as a WIMBoot file. This feature isn't supported in Windows 10.|
 | /Compact | Applies an image in compact mode, saving drive space. Replaces WIMBoot. For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. | 
 | /EA      | New in Windows 10, version 1607. Applies extended attributes. |
@@ -136,10 +136,7 @@ Dism /Capture-CustomImage /CaptureDir:D:\
 
 Captures an image of a drive to a new .wim file. Captured directories include all subfolders and data. You cannot capture an empty directory. A directory must contain at least one file.
 
-You can capture the image as a Windows image (.wim) file or a set of split Windows image (.swm) files; this option doesn’t support capturing a virtual hard disk (.vhd/.vhdx) file or a full flash update (.ffu) image.
-
-**Important**
-DISM will ignore extended attributes during a capture operation.
+You can capture the image as a Windows image (.wim) file or a set of split Windows image (.swm) files; this option doesn’t support capturing a virtual hard disk (.vhd/.vhdx) file or a full flash update (.ffu) image. Beginning with Windows 10, version 1607, DISM can apply and capture extended attributes (EA).
 
 Syntax:
 

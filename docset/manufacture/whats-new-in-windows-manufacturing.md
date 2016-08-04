@@ -9,7 +9,7 @@ title: What's new in IoT Core manufacturing
 
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
-## What's new in desktop manufacturing 
+## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
 **July 26, 2016**
 
@@ -27,14 +27,38 @@ The following changes are new for Windows 10, version 1607:
 - Language packs for WinPE and WinRE have been moved to the language packs DVD. OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 - A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
 - A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep –Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](desktop/dism-image-management-command-line-options-s14.md). 
+- A new Windows Hardware Compatibility Program requirement, [Device.Graphics.AdapterBase.RunFromDriverStore](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-graphics#device-graphics-adapterbase), can impact OEM preloads. Drivers must be written so that their components can be run directly from the Driver Store. Drivers are installed at %SystemRoot%\System32\DriverStore\FileRepository.
 
-## What's new in IoT Core manufacturing
+## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
-## <span id="IoT_Core_AddOns"></span>IoT Core Add-Ons
+**August 3, 2016**
+-  Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+   
+   Features: 
+   
+   - IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
+   
+   - IOT_GENERIC_POP – Adds the Generic device targeting info for OS only Updates. 
+   
+   - IOT_NANORDPSERVER – Adds Nano RDP Server packages to [view and control your apps remotely](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
+   
+   - IOT_SHELL_HOTKEY_SUPPORT – Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)]
+   
+   - IOT_POWER_SETTINGS – (Renamed from IOT_POWER_SETIINGS)
+   
+   - IOT_ENABLE_ADMIN - Test feature
+   
+   Languages: 
+   
+   -  IOT_SPEECHDATA_JA_JP: Adds speech data for Japanese
+   
+   -  IOT_SPEECHDATA_ZH_HK: Adds speech data for Chinese (Hong Kong S.A.R.)
+   
+   -  IOT_SPEECHDATA_ZH_TW: Adds speech data for Chinese (Taiwan)
 
 **June 28, 2016**
--  IoT: Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
--  IoT: Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
+-  Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
+-  Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
 
 **June 20, 2016**
 *  New BSP tools added:

@@ -272,10 +272,10 @@ comply with the WHCR and OPD.
 
 ## Document updates
 
-  Date updated   Description
-  -------------- ------------------------------------------
-  April 2015     Version 1.0 first release for Windows 10
-  April 2015     Version 1.1 added url text to links
+| Date updated | Description |
+|--------------|------------------------------------------|
+| April 2015   | Version 1.0 first release for Windows 10 |
+| April 2015   | Version 1.1 added url text to links |
 
 
 # Delivering a great experience with low memory
