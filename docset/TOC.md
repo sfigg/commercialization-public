@@ -626,6 +626,7 @@
 #### [WinPE: Adding PowerShell support to Windows PE](manufacture/desktop/winpe-adding-powershell-support-to-windows-pe.md)
 #### [WinPE: Boot in UEFI or legacy BIOS mode](manufacture/desktop/winpe-boot-in-uefi-or-legacy-bios-mode.md)
 #### [WinPE: Store or split images to deploy Windows using a single USB key](manufacture/desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)
+#### [WinPE: Identify drive letters with a script](manufacture/desktop/winpe-identify-drive-letters.md) 
 #### [WinPE: Storage Area Network (SAN) Policy](manufacture/desktop/winpe-storage-area-network--san--policy.md)
 #### [WinPE Network Drivers: Initializing and adding drivers](manufacture/desktop/winpe-network-drivers-initializing-and-adding-drivers.md)
 #### [WinPE: Create Apps](manufacture/desktop/winpe-create-apps.md)
