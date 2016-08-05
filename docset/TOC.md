@@ -831,6 +831,7 @@
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](manufacture/iot/deploy-your-app-with-a-standard-board.md)
+##### [Test an appx file on an IoT device](manufacture/iot/test-the-app.md)
 #### [Lab 1c: Add a file and a registry setting to an image](manufacture/iot/add-a-registry-setting-to-an-image.md)
 #### [Lab 1d: Add a provisioning package to an image](manufacture/iot/add-a-provisioning-package-to-an-image.md)
 #### [Lab 1e: Add a driver to an image](manufacture/iot/add-a-driver-to-an-image.md)
