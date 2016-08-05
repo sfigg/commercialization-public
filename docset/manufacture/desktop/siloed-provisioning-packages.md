@@ -199,18 +199,8 @@ Beginning with Windows 10, version 1607, applications can be captured in multipl
 
 Single-instancing can occur automatically if Compact OS is used, or manually. 
 
-<table>
-<tr>
-    <td>Automatic</td>
-    <td>If Compact OS is used in imaging and siloed provisioning packages are applied in WinPE, Windows will automatically single-instance the contents after the package is applied using Dism.</td>
-</tr>
-<tr>
-    <td>Manual</td>
-    <td><p>For siloed provisioning packages created in Audit Mode in the factory after the image is applied, this requires going back into WinPE to run the Dism /SingleInstance command.</p>
-    <p>Manual operation should be evaluated for small storage devices to maximize space savings.
-</p></td>
-</tr>
-</table>
+- If you use WinPE, then applying an image as Compact OS, then apply SPPs to it, Windows automatically single-instances the contents of the package. To learn more, see [Lab1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
+- If you create provisioning packages in audit mode, you can choose to single-instance the contents by using the DISM /Apply-CustomDataImage /SingleInstance command. To learn more, see [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
 
 ## Copy script
 
