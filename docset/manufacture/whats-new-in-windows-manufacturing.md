@@ -15,6 +15,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 **August 4, 2016**
 
 -  Desktop apps, drivers, and settings added in audit mode need to be captured separately so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
+
    Desktop apps, drivers, and settings added from siloed provisioning packages (SPPs) are configured automatically. 
 
 **July 26, 2016**
@@ -38,15 +39,20 @@ The following changes are new for Windows 10, version 1607:
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
 **August 3, 2016**
--  Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+By default, in Windows 10, version 1607, the built-in administrator account is now disabled. 
+
+   -  To add the default account back, include the IOT_ENABLE_ADMIN feature in your feature manifest This adds the account with the user name: Administrator, and the password: `p@ssw0rd`.
    
-   Features: 
+   -  To add in a new account with its own username and password (recommended), update the file OEMCustomizations.cmd to use your own username and password, and add it into your build using the OEM_CustomCmd package. To learn more, see [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md).
+
+Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+Features: 
    
    - IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
    
    - IOT_GENERIC_POP – Adds the Generic device targeting info for OS only Updates. 
    
-   - IOT_NANORDPSERVER – Adds Nano RDP Server packages to [view and control your apps remotely](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
+   - IOT_NANORDPSERVER – Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
    
    - IOT_SHELL_HOTKEY_SUPPORT – Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)]
    
@@ -61,9 +67,11 @@ The following changes are new for Windows 10, version 1607:
    -  IOT_SPEECHDATA_ZH_HK: Adds speech data for Chinese (Hong Kong S.A.R.)
    
    -  IOT_SPEECHDATA_ZH_TW: Adds speech data for Chinese (Taiwan)
+   
 
 **June 28, 2016**
 -  Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
+
 -  Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
 
 **June 20, 2016**

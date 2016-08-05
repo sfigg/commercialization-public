@@ -16,7 +16,7 @@ Add features using the OEMInput XML file. To learn more, see the [IoT Core manuf
 
 The following table describes the Microsoft-defined features that can be used by OEMs in the Features element in the **OEMInput** file for **Retail** build.
 
-When creating images for your device, determine which features are required and which features are optional. Some features are required only for certain boards (Raspberry Pi 2=**RPi2**, Qualcomm Dragonboard=**DB**, Minnowboard Max =**MBM**.
+When creating images for your device, determine which features are required and which features are optional. 
 
 ### <span id="Required_features"></span>Required features
 
@@ -54,9 +54,9 @@ The following features must be included in all images, though they may be custom
 | **IOT\_ALLJOYN\_APP**           | Adds the AllJoyn application, used for Headless ZwaveAdapterAppx. Requires **IOT\_APP\_TOOLKIT** to install this appx on first boot.                             |
 | **IOT\_BERTHA**                 | Adds a sample app: "Bertha". This app provides basic version info and connectivity status.  Requires **IOT\_APP\_TOOLKIT** to install this appx on first boot.            |
 | **IOT\_CP210x\_MAKERDRIVER**    | Adds the SiliconLabs USB to Serial driver                                                                                   |
-| **IOT\_GENERIC\_POP             | Adds the Generic device targeting info for OS only Updates. New in Windows 10, version 1607.                                |
+| **IOT\_GENERIC\_POP**             | Adds the Generic device targeting info for OS only Updates. New in Windows 10, version 1607.                                |
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver                                                                                          |
-| **IOT\_NANORDPSERVER**          | Adds Nano RDP Server packages to [view and control your apps remotely](https://developer.microsoft.com/windows/iot/docs/remotedisplay). New in Windows 10, version 1607.                      |
+| **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay). New in Windows 10, version 1607.                      |
 | **IOT\_NETCMD**                 | Adds the command-line tool: net.exe, used for configuring network connectivity                                              |
 | **IOT\_SHELL\_HOTKEY\_SUPPORT** | Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx). New in Windows 10, version 1607.                                                    |  
 | **IOT\_UAP\_DEFAULTAPP**        | Adds a sample app, "Chucky". This app is similar to "Bertha".  Requires **IOT\_APP\_TOOLKIT** to install this appx on first boot.                             |
@@ -72,10 +72,10 @@ The following features must be included in all images, though they may be custom
 | **IOT\_SPEECHDATA\_ES\_ES**    | Adds speech data for Spanish                                                       |
 | **IOT\_SPEECHDATA\_FR\_FR**    | Adds speech data for French                                                        |
 | **IOT\_SPEECHDATA\_IT\_IT**    | Adds speech data for Italian                                                       |
-| **IOT\_SPEECHDATA\_JA\_JP**    | Adds speech data for Japanese: new in Windows 10, version 1607                     |
+| **IOT\_SPEECHDATA\_JA\_JP**    | Adds speech data for Japanese. New in Windows 10, version 1607                     |
 | **IOT\_SPEECHDATA\_ZH\_CN**    | Adds speech data for Chinese (PRC)                                                 |
-| **IOT\_SPEECHDATA\_ZH\_HK**    | Adds speech data for Chinese (Hong Kong S.A.R.): new in Windows 10, version 1607   |
-| **IOT\_SPEECHDATA\_ZH\_TW**    | Adds speech data for Chinese (Taiwan): new in Windows 10, version 1607             |
+| **IOT\_SPEECHDATA\_ZH\_HK**    | Adds speech data for Chinese (Hong Kong S.A.R.). New in Windows 10, version 1607   |
+| **IOT\_SPEECHDATA\_ZH\_TW**    | Adds speech data for Chinese (Taiwan). New in Windows 10, version 1607             |
 
 ### <span id="Features in the IoT Core Add-Ons"></span>Features in the IoT Core Add-Ons
 
@@ -103,6 +103,8 @@ The following table describes the Microsoft-defined test features that can be us
 | **IOT\_WDTF**                    | Includes components for Windows Driver Test Framework, required for HLK validation                                        |
 
 ## <span id="Device-specific_features"></span><span id="device-specific_features"></span><span id="DEVICE-SPECIFIC_FEATURES"></span>Device-specific features
+
+Some features are required only for certain boards (Raspberry Pi 2=**RPi2**, Qualcomm Dragonboard=**DB**, Minnowboard Max =**MBM**).
 
 | Features                             | Description                                                | Device                                                               |
 |--------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------|
