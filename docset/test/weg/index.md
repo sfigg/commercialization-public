@@ -1,6 +1,6 @@
 ---
-title: Performance - Windows Engineering Guide
-description: This guidance provides partners with a roadmap to delivering high-performing and power-efficient PCs to customers, and it identifies opportunities to measure, analyze, and improve performance in key areas, including battery life, browsing experience, and streaming media.
+title: Windows Engineering Guides
+description: This guidance provides partners with guidance on delivering Windows-based computers and devices to customers.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -10,9 +10,9 @@ ms.mktglfcycl: operate
 ms.sitesec: msdn
 ---
 
-# Performance - Windows Engineering Guide
+# Windows Engineering Guides
 
-The Performance – Windows Engineering Guide (WEG) provides partners with a roadmap to delivering high-performing and power-efficient PCs to customers. This document identifies opportunities to measure, analyze, and improve performance in key areas, including battery life, browsing experience, and streaming media. OEM, ODM, and IHV partners can also find guidance in this WEG on developing and selecting Windows Store apps that run efficiently on your system, and links to related documentation.
+Windows Engineering Guides (WEGs) provide partners with guidance in delivering Windows-based computers and devices to customers.
 
 
 ## Contents
@@ -31,7 +31,7 @@ The Performance – Windows Engineering Guide (WEG) provides partners with a roa
 <tbody>
 <tr class="odd">
 <td><p>[Performance - Windows Engineering Guide](weg-performance.md)</p></td>
-<td><p>Identifies opportunities to measure, analyze, and improve performance in key areas, including battery life, browsing experience, and streaming media.</p></td>
+<td><p>The Performance WEG provides a roadmap to delivering high-performing and power-efficient PCs to customers. It identifies opportunities to measure, analyze, and improve performance in key areas, including battery life, browsing experience, and streaming media. OEM, ODM, and IHV partners can also find guidance in this WEG on developing and selecting Windows Store apps that run efficiently on their systems, as well as links to related documentation.</p></td>
 </tr>
 <!--
 <tr class="even">
