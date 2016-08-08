@@ -1,18 +1,21 @@
 {
-  "build_entry_point": "",
+  "build_entry_point": "op",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "manufacture",
+      "docset_name": "VSO_manufacture",
       "build_source_folder": "docset",
       "build_output_subfolder": "docset",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
-        "Conceptual": "Content"
-      }
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
     }
   ],
   "notification_subscribers": [
