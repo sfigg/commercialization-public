@@ -486,7 +486,7 @@
 
 
 ## [Windows Engineering Guides](test/weg/index.md)
-## [Performance - Windows Engineering Guide](test/weg/weg-performance.md)
+### [Performance - Windows Engineering Guide](test/weg/weg-performance.md)
 
 
 
