@@ -6,10 +6,10 @@
     {
       "docset_name": "VSO_manufacture",
       "build_source_folder": "docset",
-      "build_output_subfolder": "windows/hardware/commercialize",
+      "build_output_subfolder": "docset",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
