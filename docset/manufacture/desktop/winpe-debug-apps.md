@@ -35,7 +35,7 @@ The easiest user-mode debugging method is to run a process server on the Windows
 3.  Start the Windows Debugging Process Server, specifying a connection method to the PC, for example, a TCP port:
 
     ``` syntax
-    dbgsrv.exe –t tcp:port=1234
+    dbgsrv.exe -t tcp:port=1234
     ```
 
     For more information, see [Activating a Process Server (Windows Debuggers)]( http://go.microsoft.com/fwlink/p/?LinkId=698645).

@@ -244,7 +244,7 @@ You can install an app package (.appx or .appxbundle) on a per-user basis by usi
 -   At the Windows PowerShell prompt on a Windows 8 or Windows Server 2012 computer, add an .appx (or .appxbundle) file package. Include any required dependency app packages when you add the app. For example, type:
 
     ``` syntax
-    add-appxpackage C:\app1.appx –DependencyPath C:\winjs.appx
+    add-appxpackage C:\app1.appx -DependencyPath C:\winjs.appx
     ```
 
     For more information, see [App Installation Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=393919).
@@ -298,7 +298,7 @@ On Windows 8.1 and newer, to update a provisioned app, you will need to update 
 1.  Use the PowerShell to update the LOB app without a Windows Store license. This must be done for each user that has signed in to the PC running the Windows image. For example, if you have installed the original version of the app, 1.0.0.0, that now needs to be updated to version 1.0.0.1, then at a PowerShell session, type:
 
     ``` syntax
-    Add-AppxPackage –Path App1_1.0.0.2 -DependencyPath C:\appx\WinJS.appx
+    Add-AppxPackage -Path App1_1.0.0.2 -DependencyPath C:\appx\WinJS.appx
     ```
 
     Where `c:\appx\WinJS.appx` is the path to the dependency package.

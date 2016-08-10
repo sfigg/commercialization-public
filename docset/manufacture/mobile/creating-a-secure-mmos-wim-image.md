@@ -36,15 +36,15 @@ To create a secure wim image, complete the following steps.
 
 2.  The platform ID must be used to create the WIM for a specific platform. The platform ID is set in using a device platform XML file.
 
-    You can display the platform ID using the ffutool command with the **–list** option.
+    You can display the platform ID using the ffutool command with the **-list** option.
 
     ``` syntax
-    C:\> ffutool –list
+    C:\> ffutool -list
     Name:   Contoso.DCD9X0X.BD301_ATT.3.2.1
     ID:     00000011-f151-a509-0000-FF0000000000
     ```
 
-    Build the unsigned secure WIM targeted for a specific platform using the *–platform* command option as shown here. No output is returned if the command completes successfully.
+    Build the unsigned secure WIM targeted for a specific platform using the *-platform* command option as shown here. No output is returned if the command completes successfully.
 
     ``` syntax
     C:\> SecWimTool -build MMOSwim.wim MMOS wim.secwim -platform Contoso.DCD9X0X.BD301_ATT.3.2.1
@@ -118,10 +118,10 @@ To create a secure wim image, complete the following steps.
 
 The serial number option can be used when including tools that should only be used for a specific device.
 
-**Serial Number**- The serial number is a unique ID for the phone that is generated automatically. You can display the serial number using the ffutool command with the *–serial* option.
+**Serial Number**- The serial number is a unique ID for the phone that is generated automatically. You can display the serial number using the ffutool command with the *-serial* option.
 
 ``` syntax
-C:\> ffutool –serial
+C:\> ffutool -serial
 Serial No. : 01000500000000000000000000001234
 ```
 

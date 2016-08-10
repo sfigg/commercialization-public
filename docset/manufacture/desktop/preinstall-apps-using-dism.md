@@ -60,19 +60,19 @@ For offline provisioning of an app into an image, you can use either the Dism.ex
 2.  Mount the image. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Mount-WindowsImage –ImagePath c:\images\myimage.wim –Index 1 –Path c:\test\offline
+    Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
     ```
 
 3.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option and the /DependencyPackagePath option to specify the location of the folder containing all of the unpacked files and the dependency files from the Store package. In Windows PowerShell, type:
 
     ``` syntax
-    Add-AppxProvisionedPackage –Path c:\test\offline –FolderPath c:\downloads\appxpackage –DependencyPackagePath c:\downloads\appxpackagedependency
+    Add-AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage -DependencyPackagePath c:\downloads\appxpackagedependency
     ```
 
 4.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Dismount-WindowsImage –Path c:\test\offline -Save
+    Dismount-WindowsImage -Path c:\test\offline -Save
     ```
 
 **Note**   Windows Store apps don't run in audit mode. To test your deployment, run Windows and create a new user profile. For more information about audit mode, see [Understanding Audit mode](http://go.microsoft.com/fwlink/p/?LinkId=311789) in the TechNet library.
@@ -131,19 +131,19 @@ You can remove a preinstalled app, including the license and custom data files, 
 2.  Mount the image. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Mount-WindowsImage –ImagePath c:\images\myimage.wim –Index 1 –Path c:\test\offline
+    Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path c:\test\offline
     ```
 
 3.  Find the full package name of the app you want to remove. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Get-AppxProvisionedPackage –Path c:\test\offline
+    Get-AppxProvisionedPackage -Path c:\test\offline
     ```
 
 4.  Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to remove the app. In Windows PowerShell, type:
 
     ``` syntax
-    Remove-AppxProvisionedPackage –Path c:\test\offline –PackageName microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp 
+    Remove-AppxProvisionedPackage -Path c:\test\offline -PackageName microsoft.devx.appx.app1_1.0.0.0_neutral_en-us_ac4zc6fex2zjp 
     ```
 
 **Note**  If the app isn't registered to a user profile in the image—for example if the image is generalized and hasn't been deployed—it's removed from the image. If the Windows image has been booted and a user profile has been created, the provisioned app is registered for that user and must be removed by using the Remove-AppxPackage cmdlets after you remove the provisioning for the app.
@@ -153,13 +153,13 @@ You can remove a preinstalled app, including the license and custom data files, 
 1.  If you want to update the app, you can preinstall the updated version of the Store-signed app. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Add- AppxProvisionedPackage –Path c:\test\offline –FolderPath c:\downloads\appxpackage
+    Add- AppxProvisionedPackage -Path c:\test\offline -FolderPath c:\downloads\appxpackage
     ```
 
 2.  Save changes and dismount the image. At the Windows PowerShell prompt, type:
 
     ``` syntax
-    Dismount-WindowsImage –Path c:\test\offline -Save
+    Dismount-WindowsImage -Path c:\test\offline -Save
     ```
 
 ## <span id="BKMK_UseCustomDateFiles"></span><span id="bkmk_usecustomdatefiles"></span><span id="BKMK_USECUSTOMDATEFILES"></span>Use custom data files

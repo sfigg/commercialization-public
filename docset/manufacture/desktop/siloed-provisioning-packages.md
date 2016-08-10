@@ -73,7 +73,7 @@ The following table explains some of the parameters.
                     Tells ScanState to ignore all the folders outside the Windows namespace. For example, if there is a folder c:\Folder, that folder will be
                     captured when running with /apps (or /apps:+sysdrive) but it will not be captured when running with /apps:-sysdrive.
                     <br/>
-                    Typically you use +sysdrive if you want to capture the entire state of the machine into a single siloed provisioning package; use –sysdrive
+                    Typically you use +sysdrive if you want to capture the entire state of the machine into a single siloed provisioning package; use -sysdrive
                     if you want to capture a single application (or a small group of applications).
                 </p>
                 <p>
