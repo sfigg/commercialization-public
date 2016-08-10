@@ -11,7 +11,6 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
-
 **August 4, 2016**
 
 -  Desktop apps, drivers, and settings added in audit mode need to be captured separately so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
@@ -21,7 +20,6 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 **July 26, 2016**
 
 -  New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
-
 
 **July 21, 2016**
 
