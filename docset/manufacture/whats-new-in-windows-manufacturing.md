@@ -11,6 +11,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**August 15, 2016**
+
+-  In Windows 10, Version 1507, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.
+
 **August 4, 2016**
 
 -  Desktop apps, drivers, and settings added in audit mode need to be captured separately so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).

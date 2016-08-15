@@ -164,7 +164,7 @@ Here are some common scenarios for image servicing and management:
 ## <span id="BKMK_limitations"></span><span id="bkmk_limitations"></span><span id="BKMK_LIMITATIONS"></span>Limitations
 
 
-**Version compatibility.** DISM can be used with target images of older Windows operating systems, but not with target images of operating systems that are more recent than the installed version of the Windows ADK in which DISM is distributed. For example, you’ll need the Windows 10 version of DISM to service Windows 10 images, otherwise the image may become corrupted. To learn more, see [DISM Supported Platforms](dism-supported-platforms.md).
+**Version compatibility.** DISM can be used with target images of older Windows operating systems, but not with target images of operating systems that are more recent than the installed version of the Windows ADK in which DISM is distributed. For example, DISM from Windows 10, version 1511 can service Windows 10, version 1511 and version 1507 but not version 1607. To learn more, see [DISM Supported Platforms](dism-supported-platforms.md).
 
 **Remote installation.** Installing packages to a remote computer over a network is not supported. The Windows image must be present on the local system. DISM can access packages on a network share, but it must copy them to a temporary, writable directory (called a *scratch directory*). We recommend that you use a unique scratch directory on a local drive for each package you install. The contents of the scratch directory can be deleted after installation.
 
