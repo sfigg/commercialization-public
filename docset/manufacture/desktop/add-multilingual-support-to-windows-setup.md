@@ -107,7 +107,7 @@ In this step, you add language support and the Windows Setup optional components
 
     For more information about specifying different international settings for input locale, and other items see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md).
 
-7.  Save your changes back into the image using the **Dism /Unmount–Image /Commit** command.
+7.  Save your changes back into the image using the **Dism /Unmount-Image /Commit** command.
 
     ``` syntax
     Dism /unmount-image /mountdir:C:\mount\boot /commit

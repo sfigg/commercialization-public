@@ -32,7 +32,7 @@ The following command-line option is available for Wpeinit:
 Example:
 
 ``` syntax
-Wpeinit –unattend:"C:\Unattend-PE.xml"
+Wpeinit -unattend:"C:\Unattend-PE.xml"
 ```
 
 ## <span id="Supported_Unattend_settings"></span><span id="supported_unattend_settings"></span><span id="SUPPORTED_UNATTEND_SETTINGS"></span>Supported Unattend settings

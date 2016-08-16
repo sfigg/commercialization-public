@@ -246,9 +246,9 @@ To add an OEM package to an IoT Core image as part of the image creation process
 2.  Connect to the device via SSH or Powershell
 3.  Run these commands
 
-    `ApplyUpdate.exe –stage C:\OEM\Package1.cab`
+    `ApplyUpdate.exe -stage C:\OEM\Package1.cab`
 
-    `ApplyUpdate.exe –commit`
+    `ApplyUpdate.exe -commit`
 
 The device will reboot into the Update OS, complete the installation, and then reboot back to the main OS. Depending on the package size, this step can take up to 10 minutes.
 

@@ -45,7 +45,7 @@ This document lists the basic validation scenarios that are required to pass bef
     **To run the script:**
 
     1.  Run PowerShell as administrator.
-    2.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted –Force` (This only has to be done once.)
+    2.  `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force` (This only has to be done once.)
     3.  Display the version and status details for the given GUID. For example: `.\QueryVersionAndStatus.ps1 6bd2efb9-23ab-4b4c-bc37-016517413e9a`
     4.  Check if firmware update was successful: Refer to the section “Validating the status of the firmware update” in the specification document. Make sure that the Last Attempt Status and the Current Version matches the expected version.
     5.  Recommended: Check to make sure that the devices you are updating are also still functioning.
