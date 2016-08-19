@@ -198,7 +198,7 @@ These fonts are optional and not required for any region.
 
 ### List of .cab files
 [Download this list](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows 10 1607 FOD to LP Mapping Table.xlsx)
-|Cab Name|Source Lang|Target Lang|Lang Group:|FOD Area:|Installed based on|
+|Cab Name|Source Lang|Target Lang|Lang Group|FOD Area|Installed based on|
 |--------|-----------|-----------|-----------|---------|-----------------|
 |Microsoft-Windows-LanguageFeatures-Basic-af-za-Package.cab|af-za|af-za||Basic Lang|Language Profile list|
 |Microsoft-Windows-LanguageFeatures-Basic-ar-sa-Package.cab|ar-sa|ar-AE||Basic Lang|Language Profile list|
