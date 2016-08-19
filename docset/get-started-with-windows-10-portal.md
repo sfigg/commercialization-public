@@ -42,7 +42,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 <li>[... kits and tools](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927348(v=vs.85).aspx)</li>
 <li>[... driver development](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927349(v=vs.85).aspx)</li>
 <li>[... customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx)</li>
-<li>[... manufacturing](manufacture/whats-new-in-manufacturing.md)</li>
+<li>[... manufacturing](manufacture/whats-new-in-windows-manufacturing.md)</li>
 <li>[... unattend settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917933(v=vs.85).aspx#NewWindowsSettings)</li>
 <li>[... Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)</li>
 <li>[... Windows PE](manufacture/desktop/whats-new-in-windows-pe-s14.md)</li>
