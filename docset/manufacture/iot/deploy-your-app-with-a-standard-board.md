@@ -226,4 +226,4 @@ You can skip these steps if you've already created and tested your app.
 
  ## <span id="Related_topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related topics
 
-[Update apps on your IoT Core devices](updating-iot-core-apps.md)
+[Update apps on your IoT Core devices](../service/updating-iot-core-apps.md)

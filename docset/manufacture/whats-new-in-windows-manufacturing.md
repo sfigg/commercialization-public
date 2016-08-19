@@ -34,7 +34,7 @@ The following changes are new for Windows 10, version 1607:
 - File names for language packs and language interface packs have been renamed. For examples of the new file names, see [Language packs](desktop/language-packs-and-windows-deployment.md).
 - The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used. The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see [Available Language Packs for Windows](desktop/available-language-packs-for-windows.md).
 - Language packs for WinPE and WinRE have been moved to the language packs DVD. OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
-- A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
+- A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image.md) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
 - A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep –Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](desktop/dism-image-management-command-line-options-s14.md). 
 - A new Windows Hardware Compatibility Program requirement, [Device.Graphics.AdapterBase.RunFromDriverStore](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-graphics#device-graphics-adapterbase), can impact OEM preloads. Drivers must be written so that their components can be run directly from the Driver Store. Drivers are installed at %SystemRoot%\System32\DriverStore\FileRepository.
 
@@ -47,7 +47,7 @@ By default, in Windows 10, version 1607, the built-in administrator account is n
    
    -  To add in a new account with its own username and password (recommended), update the file OEMCustomizations.cmd to use your own username and password, and add it into your build using the OEM_CustomCmd package. To learn more, see [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md).
 
-Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+Added [features for Windows 10, version 1607](iot/iot-core-feature-list.md) 
 Features: 
    
    - IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
@@ -83,15 +83,15 @@ Features:
    -  Updated lab: [Lab 2: Creating your own board support package](create-a-new-bsp.md).
 
 **June 9, 2016:** 
-Several updates of [command-line tools](iot\iot-core-adk-addons-command-line-options.md):
+Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
 *  New tool: BuildImage.cmd. Similar to CreateImage.cmd, this tool can build multiple images at a time, which can be useful for automated testing.  
 
    To troubleshoot, see log files at \\Build\\&lt;arch&gt;\\pkgs\\logs.   
 
-*  Updated: [Update apps on your IoT Core devices](..\service\updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
+*  Updated: [Update apps on your IoT Core devices](service/updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
 
 **May 18, 2016:** 
-Several updates of [command-line tools](iot\iot-core-adk-addons-command-line-options.md):
+Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
 *  Added new tools: 
    -  NewAppxPkg: Creates and prepares working folders for creating app packages based on .appx files, certificates, and dependencies.
    
