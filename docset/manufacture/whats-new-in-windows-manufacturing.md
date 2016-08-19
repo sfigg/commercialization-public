@@ -80,7 +80,7 @@ Features:
 *  New BSP tools added:
    -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-&lt;arch&gt;\BSP. Multiple projects can now more easily share the same BSP folder.
    -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
-   -  Updated lab: [Lab 2: Creating your own board support package](create-a-new-bsp.md).
+   -  Updated lab: [Lab 2: Creating your own board support package](iot/create-a-new-bsp.md).
 
 **June 9, 2016:** 
 Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
@@ -88,7 +88,7 @@ Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-opt
 
    To troubleshoot, see log files at \\Build\\&lt;arch&gt;\\pkgs\\logs.   
 
-*  Updated: [Update apps on your IoT Core devices](service/updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
+*  Updated: [Update apps on your IoT Core devices](../service/iot/updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
 
 **May 18, 2016:** 
 Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
