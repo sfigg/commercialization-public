@@ -140,7 +140,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
-3.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
+3.  Use the username and password that you created in [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md) to log on. (Default is: Administrator/p@ssw0rd)
 
 4.  Click **Networking.**
 

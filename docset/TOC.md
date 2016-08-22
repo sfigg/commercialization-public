@@ -1,6 +1,44 @@
 # [Get Started with Windows 10](get-started-with-windows-10-portal.md)
 
 # [Design](design/index.md)
+## [What's new in Design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)
+## [Change history for Design](https://msdn.microsoft.com/library/windows/hardware/mt707584.aspx)
+## [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)
+### [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx)
+## [Form factors](https://msdn.microsoft.com/library/windows/hardware/dn915070.aspx)
+### [2-in-1](https://msdn.microsoft.com/library/windows/hardware/dn915037.aspx)
+### [All-in-one](https://msdn.microsoft.com/library/windows/hardware/dn917882.aspx)
+### [Desktop PC](https://msdn.microsoft.com/library/windows/hardware/dn915054.aspx)
+### [Notebook](https://msdn.microsoft.com/library/windows/hardware/dn915092.aspx)
+### [Tablet](https://msdn.microsoft.com/library/windows/hardware/dn915113.aspx)
+### [Servers](https://msdn.microsoft.com/library/windows/hardware/dn915105.aspx)
+### [Smartphone](https://msdn.microsoft.com/library/windows/hardware/dn915112.aspx)
+### [Embedded devices](https://msdn.microsoft.com/library/windows/hardware/dn915063.aspx)
+## [Device experiences](https://msdn.microsoft.com/library/windows/hardware/dn915057.aspx)
+### [Cortana](https://msdn.microsoft.com/library/windows/hardware/dn915051.aspx)
+### [Docking](https://msdn.microsoft.com/library/windows/hardware/mt282514.aspx)
+### [Continuum](https://msdn.microsoft.com/library/windows/hardware/mt608594.aspx)
+### [Tablet mode](https://msdn.microsoft.com/library/windows/hardware/dn917883.aspx)
+### [Windows Hello](https://msdn.microsoft.com/library/windows/hardware/mt622007.aspx)
+### [Modern Standby](https://msdn.microsoft.com/library/windows/hardware/mt282515.aspx)
+### [Thermal management in Windows](https://msdn.microsoft.com/library/windows/hardware/mt614863.aspx)
+### [Security and reliability](https://msdn.microsoft.com/library/windows/hardware/dn915099.aspx)
+### [Versatile input platform](https://msdn.microsoft.com/library/windows/hardware/dn915129.aspx)
+## [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
+### [Audio](https://msdn.microsoft.com/library/windows/hardware/mt270256.aspx)
+### [Battery](https://msdn.microsoft.com/library/windows/hardware/mt449548.aspx)
+### [Bluetooth](https://msdn.microsoft.com/library/windows/hardware/dn915047.aspx)
+### [Display](https://msdn.microsoft.com/library/windows/hardware/dn915059.aspx)
+### [Ethernet](https://msdn.microsoft.com/library/windows/hardware/dn915065.aspx)
+### [Graphics](https://msdn.microsoft.com/library/windows/hardware/mt573156.aspx)
+### [Mobile Broadband](https://msdn.microsoft.com/library/windows/hardware/mt573998.aspx)
+### [Near Field Proximity (NFP/NFC)](https://msdn.microsoft.com/library/windows/hardware/dn915089.aspx)
+### [Peripheral Component Interface Express](https://msdn.microsoft.com/library/windows/hardware/mt349009.aspx)
+### [Simple Peripheral Bus (SPB)](https://msdn.microsoft.com/library/windows/hardware/dn915108.aspx)
+### [Trusted Platform Module (TPM)](https://msdn.microsoft.com/library/windows/hardware/mt592005.aspx)
+### [Windows Digitizer Class Input Devices](https://msdn.microsoft.com/library/windows/hardware/mt604233.aspx)
+### [Legacy Touchscreen and Pen Resources](https://msdn.microsoft.com/library/windows/hardware/mt653956.aspx)
+### [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/dn915125.aspx)
 
 ## [Windows Hardware Compatibility Program](design/compatibility/index.md)
 ### [Devices](design/compatibility/device.md)
@@ -46,11 +84,12 @@
 ### [Filter](design/compatibility/filter.md)
 ### [Systems](design/compatibility/systems.md)
 
-
+# [Customize](https://msdn.microsoft.com/library/windows/hardware/mt269765.aspx)
 
 # [Test](test/index.md)
 
-## [Windows Hardware Certification Kit](test/hck/)
+## [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx)
+## [Windows Hardware Certification Kit](https://msdn.microsoft.com/library/windows/hardware/jj124227.aspx)
 
 ## [Windows Performance Toolkit](test/wpt/index.md)
 ### [What's New in the Windows Performance Toolkit](test/wpt/whats-new-in-the-windows-performance-toolkit.md)
@@ -628,6 +667,7 @@
 #### [WinPE: Adding PowerShell support to Windows PE](manufacture/desktop/winpe-adding-powershell-support-to-windows-pe.md)
 #### [WinPE: Boot in UEFI or legacy BIOS mode](manufacture/desktop/winpe-boot-in-uefi-or-legacy-bios-mode.md)
 #### [WinPE: Store or split images to deploy Windows using a single USB key](manufacture/desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md)
+#### [WinPE: Identify drive letters with a script](manufacture/desktop/winpe-identify-drive-letters.md) 
 #### [WinPE: Storage Area Network (SAN) Policy](manufacture/desktop/winpe-storage-area-network--san--policy.md)
 #### [WinPE Network Drivers: Initializing and adding drivers](manufacture/desktop/winpe-network-drivers-initializing-and-adding-drivers.md)
 #### [WinPE: Create Apps](manufacture/desktop/winpe-create-apps.md)
@@ -792,6 +832,7 @@
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](manufacture/iot/deploy-your-app-with-a-standard-board.md)
+##### [Test an appx file on an IoT device](manufacture/iot/test-the-app.md)
 #### [Lab 1c: Add a file and a registry setting to an image](manufacture/iot/add-a-registry-setting-to-an-image.md)
 #### [Lab 1d: Add a provisioning package to an image](manufacture/iot/add-a-provisioning-package-to-an-image.md)
 #### [Lab 1e: Add a driver to an image](manufacture/iot/add-a-driver-to-an-image.md)
@@ -801,12 +842,6 @@
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](manufacture/iot/iot-core-adk-addons-command-line-options.md)
-
-
-
-
-
-
 
 # [Service](service/index.md)
 ## [Desktop servicing](service/desktop/resetting-the-pc.md)
@@ -843,4 +878,4 @@
 ### [Manage IoT Core device updates](service/iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](service/iot/updating-iot-core-apps.md)
 
-## [Dashboard Services](https://msdn.microsoft.com/en-us/library/windows/hardware/br230803(v=vs.85).aspx)
+## [Dashboard Services](https://msdn.microsoft.com/library/windows/hardware/br230803.aspx)

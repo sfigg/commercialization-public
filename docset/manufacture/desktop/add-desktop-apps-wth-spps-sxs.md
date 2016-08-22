@@ -7,7 +7,9 @@ title: 'Lab 1f: Add Windows desktop applications with siloed provisioning packag
 ---
 # Lab 1f: Add Windows desktop applications with siloed provisioning packages
 
-Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.
+Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows. 
+
+These packages are automatically included in the recovery tools. When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
 We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
 1.  Create a VM with a new Windows image, and boot it into audit mode.
@@ -21,7 +23,7 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 **Important**   Don't overwrite the existing DISM files on the WinPE image.
 
-1.  Copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
+1.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
 
     ``` syntax
     CopyDandI.cmd amd64 E:\ADKTools\amd64

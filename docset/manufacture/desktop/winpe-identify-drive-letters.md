@@ -13,12 +13,12 @@ You can use a script to figure out which drive letter is which by searching for 
 
 This sample script looks for a drive that has a folder titled Images, and assigns it to a system variable: %IMAGESDRIVE%. 
 
-    ``` syntax
-    @echo Find a drive that has a folder titled Images.
-    @for %%a in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do @if exist %%a:\Images\ set IMAGESDRIVE=%%a
-    @echo The Images folder is on drive: %IMAGESDRIVE%
-    @dir %IMAGESDRIVE%:\Images /w
-    ```
+``` syntax
+@echo Find a drive that has a folder titled Images.
+@for %%a in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do @if exist %%a:\Images\ set IMAGESDRIVE=%%a
+@echo The Images folder is on drive: %IMAGESDRIVE%
+@dir %IMAGESDRIVE%:\Images /w
+```
 
 ## <span id="Related_topics"></span>Related topics
 

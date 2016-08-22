@@ -11,6 +11,13 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+
+**August 4, 2016**
+
+-  Desktop apps, drivers, and settings added in audit mode need to be captured separately so they can be restored by the push-button recovery tools. To learn more, see [Lab 1g: Make changes from audit mode](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
+
+   Desktop apps, drivers, and settings added from siloed provisioning packages (SPPs) are configured automatically. 
+
 **July 26, 2016**
 
 -  New sample script: [WinPE: Identify drive letters with a script](desktop/winpe-identify-drive-letters.md)
@@ -23,7 +30,7 @@ The following changes are new for Windows 10, version 1607:
 - Sysprep supports preparing an image that has been upgraded from a previous version of Windows 10. For more information, see [Sysprep Overview](desktop/sysprep--system-preparation--overview.md).
 - Siloed provisioning packages are a new type of provisioning package that can capture classic Windows applications individually, drivers plus applications, and more. They provide more flexibility for the manufacturing process and help reduce factory time to build computers that run Windows. ScanState.exe and Dism.exe are both improved to capture and apply siloed provisioning packages, respectively. 
 - File names for language packs and language interface packs have been renamed. For examples of the new file names, see [Language packs](desktop/language-packs-and-windows-deployment.md).
-- The Chinese (Honk Kong SAR) language pack (zh-HK) is no longer used. The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see [Available Language Packs for Windows](desktop/available-language-packs-for-windows.md).
+- The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used. The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see [Available Language Packs for Windows](desktop/available-language-packs-for-windows.md).
 - Language packs for WinPE and WinRE have been moved to the language packs DVD. OEMs and System Builders with Microsoft Software License Terms can download language packs and LIPs from the [Microsoft OEM site](http://go.microsoft.com/fwlink/?LinkId=131359) or the [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 - A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
 - A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep –Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](desktop/dism-image-management-command-line-options-s14.md). 
@@ -32,15 +39,20 @@ The following changes are new for Windows 10, version 1607:
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
 **August 3, 2016**
--  Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+By default, in Windows 10, version 1607, the built-in administrator account is now disabled. 
+
+   -  To add the default account back, include the IOT_ENABLE_ADMIN feature in your feature manifest This adds the account with the user name: Administrator, and the password: `p@ssw0rd`.
    
-   Features: 
+   -  To add in a new account with its own username and password (recommended), update the file OEMCustomizations.cmd to use your own username and password, and add it into your build using the OEM_CustomCmd package. To learn more, see [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md).
+
+Added [features for Windows 10, version 1607](iot-core-feature-list.md) 
+Features: 
    
    - IOT_UNIFIED_WRITE_FILTER – Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes.
    
    - IOT_GENERIC_POP – Adds the Generic device targeting info for OS only Updates. 
    
-   - IOT_NANORDPSERVER – Adds Nano RDP Server packages to [view and control your apps remotely](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
+   - IOT_NANORDPSERVER – Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay).
    
    - IOT_SHELL_HOTKEY_SUPPORT – Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)]
    
@@ -55,9 +67,11 @@ The following changes are new for Windows 10, version 1607:
    -  IOT_SPEECHDATA_ZH_HK: Adds speech data for Chinese (Hong Kong S.A.R.)
    
    -  IOT_SPEECHDATA_ZH_TW: Adds speech data for Chinese (Taiwan)
+   
 
 **June 28, 2016**
 -  Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
+
 -  Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
 
 **June 20, 2016**

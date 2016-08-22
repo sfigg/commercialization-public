@@ -22,7 +22,8 @@ Connect to the device from another PC**
 
     This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
 
-4.  Use the default username (Administrator) and password (p@ssw0rd) to log on.
+4.  If you've added the IOT_ENABLE_ADMIN feature in your package, log in using Administrator/p@ssw0rd.
+If you created a custom username and password, use that now. To learn more, see [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md).
 
 Test the app by installing it**
 

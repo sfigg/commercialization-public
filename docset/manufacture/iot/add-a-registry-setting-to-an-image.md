@@ -174,7 +174,8 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     \\10.100.0.100\c$
     ```
 
-    When prompted, type in the username. The default username is: minwinpc\\administrator and the default password is p@ssw0rd.
+	
+	Use the username and password that you created in [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md) to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
 
 2.  Check to see if the files exist. Look for:
 
