@@ -104,7 +104,7 @@ You can use either the certutil.exe tool or a tool used by the HSM to list the C
 -   **This example uses the SafeNet Luna HSMs tool to list the CSP:**
 
     ``` syntax
-    C:\>certutil –csplist
+    C:\>certutil -csplist
     ------------------------------------------------------------------------------------------
     Provider Name: Luna Cryptographic Services for Microsoft Windows
     Provider Type: 1 - PROV_RSA_FULL
@@ -195,10 +195,10 @@ Update the following values:
 Verify that the certificate has been generated correctly:
 
 ``` syntax
-certutil –store –v my  "<Certificate_serial_number_or_thumbprint>"
+certutil -store -v my  "<Certificate_serial_number_or_thumbprint>"
 ```
 
-For example: `certutil –store –v my  "7569d364a2e77b814274c81ae6360ffe"`
+For example: `certutil -store -v my  "7569d364a2e77b814274c81ae6360ffe"`
 
 Sample output:
 

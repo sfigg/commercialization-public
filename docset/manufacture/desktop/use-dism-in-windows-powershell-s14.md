@@ -121,11 +121,11 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 </tr>
 <tr class="odd">
 <td align="left"><p>Dism.exe /Image:&lt;...&gt; /Cleanup-Image /ScanHealth</p></td>
-<td align="left"><p>Repair-WindowsImage –ScanHealth</p></td>
+<td align="left"><p>Repair-WindowsImage -ScanHealth</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Dism.exe /Image:&lt;...&gt; /Cleanup-Image /RestoreHealth</p></td>
-<td align="left"><p>Repair-WindowsImage –RestoreHealth</p></td>
+<td align="left"><p>Repair-WindowsImage -RestoreHealth</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Dism.exe /Image:&lt;...&gt; /Disable-Feature</p></td>

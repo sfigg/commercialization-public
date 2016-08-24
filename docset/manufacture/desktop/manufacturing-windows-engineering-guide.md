@@ -139,13 +139,13 @@ If you are required to remove the inbox Skype app due to policy requirements, yo
 To remove Skype online in audit mode from Windows PowerShell:
 
 ```syntax
-get-provisionedappxpackage -online | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage –online
+get-provisionedappxpackage -online | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage -online
 ```
 
 To remove Skype offline with Windows PowerShell:
 
 ```syntax
-get-provisionedappxpackage –path c:\mount | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage
+get-provisionedappxpackage -path c:\mount | where-object {$_.displayname -eq "Microsoft.SkypeApp"} | Remove-ProvisionedAppxPackage
 ```
 
 To remove Skype offline using Dism.exe:

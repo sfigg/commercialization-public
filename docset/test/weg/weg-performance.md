@@ -1750,7 +1750,7 @@ To optimize your platform power efficiency, you need to consider the following:
 - [How to design an OEM image to improve the Modern Standby experience](#how-to-design-an-oem-image-to-improve-the-modern-standby-experience)
 - [How apps affect Modern Standby](#how-apps-affect-modern-standby)
 - [How to get realistic test results](#how-to-get-realistic-test-results)
-- [How to calculate power consumption](how-to-calculate-power-consumption)
+- [How to calculate power consumption](#how-to-calculate-power-consumption)
 
 ### How hardware affects Modern Standby
 
