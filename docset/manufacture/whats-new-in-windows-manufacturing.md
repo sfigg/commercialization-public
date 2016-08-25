@@ -13,7 +13,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **August 25, 2016**
 
--  In Windows 10, Version 1507, it's no longer necessary to remove inbox apps when adding a language pack. In fact, we now recommend that you don't, because otherwise DISM command may fail. 
+-  In Windows 10, Version 1607, it's no longer necessary to remove inbox apps when adding a language pack. If you do try to remove the apps, the DISM command may fail. 
    Updated topics: 
    -  [Add Language Packs to Windows](add-language-packs-to-windows.md)
    -  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md).
