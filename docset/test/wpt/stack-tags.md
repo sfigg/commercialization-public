@@ -93,7 +93,7 @@ Hint tags and hint operators are defined in XML in the following syntax with the
 </tbody>
 </table>
 
-To add the hint tags that you have defined in an XML file, use the procedure in [Adding stack tags to the Stack Tags Definition File](test/wpt/stack-tags#adding-stack-tags-to-the-stack-tags-definition-file), later in this topic.
+To add the hint tags that you have defined in an XML file, use the procedure in [Adding stack tags to the Stack Tags Definition File](#adding-stack-tags-to-the-stack-tags-definition-file), later in this topic.
 
 ### Example of using a hint tag
 
@@ -101,14 +101,14 @@ Consider the example data shown in the following figure.
 
 <a href="images/wpa-hint-tag-example-1.jpg"><img src="images/wpa-hint-tag-example-1.jpg"></a>
 
-In this example, there are 4 RPC functions called in wbemcore.dll:
+In this example, there are 4 RPC functions called in WbemCore.dll:
 
 -   **CWbemLevel1Login::NTLMLogin**
 -   **CWbemNamespace::GetObjectW**
 -   **CWbemNamespace::PutInstance**
 -   **CWbemNamespace::ExecMethod**
 
-Being able to consolidate the cost of calling these functions is useful for determining the cost of RPC server-side functions, because WPA isplays the total expense as **RPC** in the **Stack Tag** column.
+Being able to consolidate the cost of calling these functions is useful for determining the cost of RPC server-side functions, because WPA displays the total expense as **RPC** in the **Stack Tag** column.
 
 With the **rpcrt4.dll!Invoke** function defined as the entry point for the hint tag **RPC**, and the hint operator specified as the callee, WPA represents **rpcrt4.dll!Invoke** with **RPC**, and **wbemcore.dll!CWbemLevel1Login::NTLMLogin** with **RPC\\wbemcore.dll\\CWbemLevel1Login::NTLMLogin**. So, in the **Stack Tag** column, WPA displays the cost of **wbemcore.dll!CWbemLevel1Login::NTLMLogin**, the RPC server-side function, as 31.855774ms. In WbemCore.dll, **NTLMLogin** is the top RPC function in the hierarchy of called functions.
 
