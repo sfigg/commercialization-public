@@ -11,6 +11,15 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**August 25, 2016**
+
+-  In Windows 10, Version 1607, it's no longer necessary to remove inbox apps when adding a language pack. If you do try to remove the apps, the DISM command may fail. 
+   Updated topics: 
+   -  [Add Language Packs to Windows](add-language-packs-to-windows.md)
+   -  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md).
+   -  [OEM deployment of Windows 10 for desktop editions](oem-deployment-of-windows-10-for-desktop-editions.md)
+   
+
 **August 15, 2016**
 
 -  In Windows 10, Version 1507, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.

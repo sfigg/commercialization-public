@@ -1130,13 +1130,11 @@ When you add language packs, you should reinstall the inbox apps by removing eac
 
 Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package.
 
+*Note:* it is no longer necessary to remove the Get Started inbox app. If you do try to remove it using DISM, the command may fail.
+
 1.  Right-click each folder and extract all to e:\apps.
 
     ![Extract application files](images/extract-app-files.png)
-
-Remove the Get Started inbox app (Example)
-
-    Dism /Image:"c:\mount\windows" /Remove-ProvisionedAppxPackage /PackageName: Microsoft.Getstarted_2015.522.28.1146_neutral_~_8wekyb3d8bbwe
 
 Install the apps
 
@@ -1199,6 +1197,7 @@ Install the apps
 Important: The appx bundles must install the matching dependency packages or apps will fail to work after OOBE. The correct dependency packages are defined in the \*.provxml files in the app folders. The following example has the correct dependency packages for each app:
 
     dism /image:"c:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d.appxbundle" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Framework.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Runtime.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_ARM__8wekyb3d8bbwe.appx" /licensepath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d_License1.xml"
+
 
 #### Adding Windows Universal Office Mobile
 
