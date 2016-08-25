@@ -306,15 +306,11 @@ The following table shows the types of language packages and components availabl
 
 ## <span id="Add_or_reinstall_apps"></span>Add/reinstall apps
 	
-**Step 8: Reinstall inbox apps (required whenever adding languages)**
+**Do not reinstall inbox apps **
 
-1.  Re-install the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+Note, in previous releases, it was required to re-install the inbox Windows universal apps. In Windows 10, version 1607, this is no longer required. If you do try to add these with DISM commands, those commands may fail because there's no longer anything to update.
 
-    ``` syntax
-    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
-    ```
-
-**Step 9: Add Windows Universal apps or Windows 8.1 Store apps (Optional)**
+**Step 8: Add Windows Universal apps or Windows 8.1 Store apps (Optional)**
 
 1.  You can add Windows Universal apps and Windows 8.1 Store apps to your image by using DISM. In this example, you will preinstall Office, OneNote, and Windows Reader 8.1.
 
@@ -334,7 +330,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
 
 Whenever possible, try to add and remove languages in Windows RE at the same time that you add and remove them in your Windows image to ensure a consistent recovery experience. (This isn’t always possible, as not all languages have Windows RE equivalents.)
 
-**Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
+**Step 9: Add languages to the recovery environment (highly recommended when adding languages)**
 
 1.  Add languages. These languages are included with the Windows ADK. You must use a matching version of the Windows ADK to service the Windows RE image.
 
@@ -406,7 +402,7 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     State : Installed
     ```
 
-**Step 11: Add the files you need to modify the Start layout (Optional)**
+**Step 10: Add the files you need to modify the Start layout (Optional)**
 
 In Windows 10, OEMs can modify the default Start layout and specify the layout of the OEM tiles by creating a LayoutModification.xml file and placing this file in the correct system location.
 1.  Create a LayoutModification.xml file. For this lab, you can use the sample from the Pre-Requisites document. The sample will pin Office, OneNote and Reader to Start if they are preloaded on the device (Step 8). To create your own LayoutModification.xml file by using an XML editor, see the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
@@ -427,7 +423,7 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
 ## <span id="Unmount_the_images"></span> Unmount the images
 
-**Step 12: Unmount the images**
+**Step 11: Unmount the images**
 
 1.  Close all applications that might access files from the image.
 2.  Commit the changes and unmount the Windows RE image:
@@ -477,7 +473,7 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
 ## Try it out
 	
-**Step 13: Copy the image and deployment scripts to a USB key**
+**Step 12: Copy the image and deployment scripts to a USB key**
 
 1.  Plug in the Windows PE USB key and note the drive location, for example, **D:**.
 2.  Copy the image and the premade deployment scripts to a USB key, for example:
@@ -493,7 +489,7 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
     If your image is greater than 4GB, you may need to preformat the USB key using the NTFS file format.
 
      
-**Step 14: Apply Windows images using a script**
+**Step 13: Apply Windows images using a script**
 
 Use deployment scripts to apply a newly-captured image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.
 
@@ -503,7 +499,7 @@ Use deployment scripts to apply a newly-captured image onto a test device. These
 
 ## <span id="Try_it_out"></span>Try it out
 
-**Step 15: Apply the image to a new PC**
+**Step 14: Apply the image to a new PC**
 Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
@@ -517,7 +513,7 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 	
 5.  Disconnect the drives, then reboot (`exit`).
 	
-**Step 16: Verify drivers and packages**
+**Step 15: Verify drivers and packages**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 2.  Right-click the **Start** button, and select **Command Prompt (Admin)**.
 3.  Verify that the drivers appear correctly:

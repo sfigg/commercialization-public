@@ -1124,81 +1124,10 @@ If you use an **x86** Windows 10 image:
 
     Dism /Add-Package /Image:C:\mount\windows /PackagePath:"E:\updates\KB3118754\x86\NEU\Windows10.0-KB3118754-x86.msu"
 
-#### Reinstall inbox apps
+#### Do not reinstall inbox Windows Universal apps **
 
-When you add language packs, you should reinstall the inbox apps by removing each app and then installing it again by using DISM. The following procedure shows you how to reinstall the Get Started inbox app, but the steps will work for all apps by substituting the appropriate package.
-
-Please verify on [SOC (Software  Order Center)](https://www.microsoftoem.com) the latest version of the "Windows Desktop OPK Supplemental" package.
-
-1.  Right-click each folder and extract all to e:\apps.
-
-    ![Extract application files](images/extract-app-files.png)
-
-Remove the Get Started inbox app (Example)
-
-    Dism /Image:"c:\mount\windows" /Remove-ProvisionedAppxPackage /PackageName: Microsoft.Getstarted_2015.522.28.1146_neutral_~_8wekyb3d8bbwe
-
-Install the apps
-
-**Note: There are 27 in-box apps to re-install into the image. Use the list below to identify the apps to re-apply to the image. If a Windows 10 supplemental update does not contain all 27 apps, install the remaining apps from the previous Windows 10 supplemental OPK. **
-
-[Desktop_2015.1071.40.0_Microsoft.Camera.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_Builder3D_10.9.50.0_x86_x64.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_Mobile_x86_ARM_1.10.26007.0_MicrosoftMessaging.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_10.1510.9010.0_WindowsPhone.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_15.1001.16470.0_WindowsPhotos.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_3.6.13281.0_Music_Desktop_Production.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_3.6.13571.0_Video_Desktop_Production.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_ARM_10.0.2840.0_MicrosoftPeople.appxbundle_Windows10_PreinstallKit]
-
-[Desktop_x86_x64_ARM_10.1510.13110.0_SoundRecorder.appxbundle_Windows10_PreinstallKit]
-
-[GetSkype_3.2.1.0_x86_bundle.appxupload_Windows10_PreinstallKit]
-
-[Microsoft.ConnectivityStore_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit]
-
-[Microsoft.WindowsStore_8wekyb3d8bbwe_2015.1013.14.0.1509.Universal.appxbundle_Windows10_PreinstallKit]
-
-[Mobile_Desktop_x86_x64_ARM_1.10.23004.0_CommsPhone.appxbundle_Windows10_PreinstallKit]
-
-[MoneyApp_4.6.169.0_x86.appxbundle_Windows10_PreinstallKit]
-
-[News_4.6.169.0_x86.appxbundle_Windows10_PreinstallKit]
-
-[PC_storeandTH2_6314.2375.officehubim.appxbundle_Windows10_PreinstallKit]
-
-[PC_Sway_6216.2025.storyim.appxbundle_Windows10_PreinstallKit]
-
-[PC_TH2RC_store.16.0.6131.1005.onenoteim.appxbundle_Windows10_PreinstallKit]
-
-[PC_TH2_store.16.0.6308.4227.Sc6131.1009.outlookim.appxbundle_Windows10_PreinstallKit]
-
-[Solitaire_3.4.9241.0_x86_x64.appxbundle_Windows10_PreinstallKit]
-
-[Universal_Maps.Windows_4.1509.50911.0_ARM_x64_x86.appxbundle_Windows10_PreinstallKit]
-
-[Universal_Sports_4.6.169.0_x86.appxbundle_Windows10_PreinstallKit]
-
-[Universal_Weather_4.6.169.0_x86.appxbundle_Windows10_PreinstallKit]
-
-[Universal_x86_x64_ARM_10.1510.13020_WindowsCalculator.appxbundle_Windows10_PreinstallKit]
-
-[Universal_x86_x64_ARM_10.1510.14020.0_WindowsAlarms.appxbundle_Windows10_PreinstallKit]
-
-[Universal_x86_x64_ARM_2.4.13.0_GetStarted.appxbundle_Windows10_PreinstallKit]
-
-[XboxApp_9.9.30030.0]
-
-Important: The appx bundles must install the matching dependency packages or apps will fail to work after OOBE. The correct dependency packages are defined in the \*.provxml files in the app folders. The following example has the correct dependency packages for each app:
-
-    dism /image:"c:\mount\windows" /Add-ProvisionedAppxPackage /PackagePath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d.appxbundle" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Framework.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.NET.Native.Runtime.1.0_1.0.22929.0_ARM__8wekyb3d8bbwe.appx" /DependencyPackagePath:"E:\Apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_ARM__8wekyb3d8bbwe.appx" /licensepath:"E:\apps\Universal_Microsoft.GetStarted_2.2.7.0_8wekyb3d8bbwe.appxbundle_Windows10_PreinstallKit\aed1db6c4a954880b3ff43b8e4d1a76d_License1.xml"
+Note, in previous releases, it was required to re-install the inbox apps. 
+In Windows 10, version 1607, this is no longer required. If you do try to add these with DISM commands, those commands may fail because there's no longer anything to update.
 
 #### Adding Windows Universal Office Mobile
 
