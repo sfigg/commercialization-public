@@ -298,13 +298,17 @@ To save space, you can remove English language components when deploying to non-
 
 3.  **Known issue**: If you've removed the English language pack, in Windows 10 Build 10240, you'll need to boot the image into audit mode, and use the command: `sfc.exe /scannow /verify` to repair issues with Windows 32-bit apps. For an example of how to do this with a script, see [Lab 2a: Answer files: Update settings and run scripts](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
 
-**Do not reinstall inbox Windows Universal apps **
+**Reinstall apps (required whenever adding languages)**
 
-Note, in previous releases, it was required to re-install the inbox apps. 
-In Windows 10, version 1607, this is no longer required. If you do try to add these with DISM commands, those commands may fail because there's no longer anything to update.
+Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox apps. If you do try to do this, the DISM command may fail.
 
-**Do reinstall any Windows desktop apps that you've added to the image**
-You'll often need to reinstall these, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
+1.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+
+    ``` syntax
+    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
+    ```
+
+2.  Windows desktop applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
 
 **For installations managed by Windows Setup or distribution shares, update the language list**
 
