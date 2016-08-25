@@ -41,12 +41,15 @@ We provide an array of tools and technology to help you test performance, compat
 
 ## Step-by-step guidance
 
-
 -   [HLK Getting Started Guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
 -   [Windows Performance step-by-step guides](wpt/windows-performance-step-by-step-guides.md)
--   [Performance - Windows Engineering Guide (WEG)](weg/index.md)
 -   [Windows Assessment Console step-by-step guide](assessments/windows-assessment-console-step-by-step-guide.md)
 -   [Windows Assessment Services step-by-step guide](assessments/windows-assessment-services-step-by-step-guide-was.md)
+
+<!--Remove until after 8/31/16, when a fix to the build system is deployed that will allow it to correctly build weg-performance.md, which is linked from weg/index.md. 
+-   [Performance - Windows Engineering Guide (WEG)](weg/index.md)
+Gary Moore, v-gmoor-->
+
 
 ## Related resources
 
