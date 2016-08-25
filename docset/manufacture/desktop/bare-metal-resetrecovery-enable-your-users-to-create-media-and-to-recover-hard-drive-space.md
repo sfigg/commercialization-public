@@ -20,7 +20,7 @@ If you're deploying Windows with a custom partition layout, you'll need to add a
 -   A **partition reset script**, which is a modified DiskPart script that resets your custom partition layout.
 -   A **push-button reset configuration file** ([ResetConfig XML](resetconfig-xml-reference-s14.md)) that identifies the Windows and Windows RE partitions.
 
-**Note:** In Windows 10, version 1607, desktop applications and settings captured in siloed provisioning packages will not be restored using this media. Regular customizations packages (.ppkg) captured using the ScanState tool are not affected by this issue. 
+**Note:** In Windows 10, version 1607, desktop applications and settings captured in [siloed provisioning packages](siloed-provisioning-packages.md) will not be restored using this media. Regular customizations packages (.ppkg) captured using the ScanState tool are not affected by this issue. 
 
 ## <span id="CreateConfigFiles"></span><span id="createconfigfiles"></span><span id="CREATECONFIGFILES"></span>Creating configuration files
 
