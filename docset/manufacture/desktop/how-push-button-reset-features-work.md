@@ -168,7 +168,7 @@ Manufacturers must configure custom utility partitions as follows to ensure thes
 
 The time it takes to perform data erasure depends on drive speed, partition size, and whether the drive is encrypted using Windows BitLocker Drive Encryption. The data erasure functionality is targeted at consumers and does not meet government and industry data erasure standards.
 
-If the operating system used [Compact OS](compact-os.md) before the reset, then the PC will be reset using Compact OS. 
+If [Compact OS](compact-os.md) is enabled on the OS before the reset, Compact OS will remain enabled after the PC has been reset. 
 
 ## <span id="Bare_metal_recovery"></span><span id="bare_metal_recovery"></span><span id="BARE_METAL_RECOVERY"></span>Bare metal recovery
 
