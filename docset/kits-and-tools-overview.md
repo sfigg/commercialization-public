@@ -65,7 +65,9 @@ Some tests, like graphics and multimedia tests, require additional files for tes
 
 Download the Windows ADK to install tools and documentation for OEMs and ODMs to customize Windows 10 images, assess the quality and performance of systems or components, and to deploy Windows operating systems to new computers. The Windows ADK includes Windows Imaging and Configuration Designer (ICD), the Windows Assessment Toolkit, the Windows Performance Toolkit, and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10. For more information, see [What’s new in kits and tools](what-s-new-in-kits-and-tools.md).
 
- 
+
+## What else is new?
+See [What's new in kits and tools](what-s-new-in-kits-and-tools.md)
 
  
 
