@@ -9,13 +9,11 @@ ms.assetid: e9ebd4e2-f05e-40fb-9dc3-925f96dce182
 
 # Get started with Windows 10
 
-
 Build innovative and differentiated devices with Windows 10. Windows 10 runs on a broad set of devices—from desktops, notebooks, phones, and Internet of Things (IoT) devices. The operating system's common core works across platforms with 80-inch screens, 4-inch screens, or devices with no screens at all.
 
 You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or you can build them to switch between input types.
 
 ## Start here
-
 
 <table>
 <colgroup>
@@ -29,7 +27,7 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 </tr>
 <tr class="even">
 <td><p>Learn about the different kits used to build Windows devices.</p>
-<p>[Get familiar with the kits and tools](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914754(v=vs.85).aspx)</p>
+<p>[Get familiar with the kits and tools](kits-and-tools-overview.md)</p>
 <p>Download each of the kits here:</p>
 <ul>
 <li>[Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614)</li>
@@ -38,8 +36,8 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 </ul></td>
 <td><p>Welcome back! Here's what's new in:</p>
 <ul>
-<li>[... Windows 10](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927350(v=vs.85).aspx)</li>
-<li>[... kits and tools](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927348(v=vs.85).aspx)</li>
+<li>[... Windows 10](what-s-new-in-windows.md)</li>
+<li>[... kits and tools](what-s-new-in-kits-and-tools.md)</li>
 <li>[... driver development](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927349(v=vs.85).aspx)</li>
 <li>[... customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx)</li>
 <li>[... manufacturing](manufacture/whats-new-in-windows-manufacturing.md)</li>
@@ -51,14 +49,9 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 </tbody>
 </table>
 
- 
-
-## <a href="" id="start-the-hardware-development-process-with-these-learning-resources-"></a>Start the hardware development process with these learning resources
-
-
 You can optimize your hardware for Windows 10 during any phase of the development process. These step-by-step guides walk you through using development boards, building Universal Windows drivers for a variety of devices, and making sure your hardware components, peripherals, and technologies are compatible with Windows 10.
 
-### Design hardware with the latest features
+## Design hardware with the latest features
 
 From Cortana to Continuum to the core architecture, this release includes tons of new platform features and improvements to help you create compelling user experiences on any form factor.
 
@@ -80,8 +73,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </tbody>
 </table>
  
-
-### Develop Windows Universal Drivers
+## Develop Windows Universal Drivers
 
 <table>
 <colgroup>
@@ -101,9 +93,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </tbody>
 </table>
 
- 
-
-### Customize Windows images to reflect your brand
+## Customize Windows images to reflect your brand
 
 <table>
 <colgroup>
@@ -121,9 +111,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </tbody>
 </table>
 
- 
-
-### Test system components for compatibility and performance
+## Test system components for compatibility and performance
 
 <table>
 <colgroup>
@@ -143,9 +131,7 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </tbody>
 </table>
 
- 
-
-### <a href="" id="manufacturing---putting-it-all-together"></a>Manufacturing – putting it all together
+## <a href="" id="manufacturing---putting-it-all-together"></a>Manufacturing – putting it all together
 
 <table>
 <colgroup>
@@ -165,14 +151,4 @@ From Cortana to Continuum to the core architecture, this release includes tons o
 </tbody>
 </table>
 
- 
-
- 
-
- 
-
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdknodes\wdknodes%5D:%20Get%20started%20with%20Windows%C2%A010%20%20RELEASE:%20%286/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
