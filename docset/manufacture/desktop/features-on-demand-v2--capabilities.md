@@ -43,7 +43,7 @@ Use DISM to add or remove capabilities:
 <td align="left">/Add-Capability</td>
 <td align="left"><p>Adds a capability to an image.</p>
 <p>For packages with dependencies this also pulls dependent packages. For example, if you add the Speech package, you'll also get the Text-to-speech and Basic packages in addition to Speech.</p></td>
-<td align="left">DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~~~en-US~0.0.1.0</td>
+<td align="left">DISM.exe /Online /Add-Capability /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</td>
 </tr>
 <tr class="even">
 <td align="left">/Get-Capabilities</td>
@@ -53,7 +53,7 @@ Use DISM to add or remove capabilities:
 <tr class="odd">
 <td align="left">/Get-CapabilityInfo</td>
 <td align="left">Get information of a capability in the image.</td>
-<td align="left">DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~~~en-US~0.0.1.0</td>
+<td align="left">DISM /Online /Get-CapabilityInfo /CapabilityName:Language.Basic~\~\~en-US~0.0.1.0</td>
 </tr>
 <tr class="even">
 <td align="left">/Remove-Capability</td>
