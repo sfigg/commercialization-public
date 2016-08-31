@@ -51,7 +51,7 @@ Symbol files make it easier to debug your code. The easiest way to get Windows s
 
 [Download the HLK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=532718)
 
-The Windows Hardware Lab Kit (HLK) for Windows 10 is an all-purpose test and measurement kit to help you determine how well your hardware interacts with Windows. The HLK provides a test infrastructure for PCs. For more information on the using the HLK with Windows 10, see [Windows Hardware Lab Kit User's Guide](p_hlk.windows_hardware_lab_kit_user_s_guide).
+The Windows Hardware Lab Kit (HLK) for Windows 10 is an all-purpose test and measurement kit to help you determine how well your hardware interacts with Windows. The HLK provides a test infrastructure for PCs. For more information on the using the HLK with Windows 10, see [Windows Hardware Lab Kit User's Guide](https://msdn.microsoft.com/library/windows/hardware/dn939963.aspx).
 
 ## HLK supplemental test content
 

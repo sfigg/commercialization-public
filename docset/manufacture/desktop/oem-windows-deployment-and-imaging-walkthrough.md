@@ -20,7 +20,7 @@ Let's get started!
 
 **Deploy images**
 
-*  [Get the tools needed to customize Windows](manufacture/desktop/get-the-tools-needed-to-customize-windows-sxs.md)
+*  [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
 *  [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
 *  [Lab 1a: Install Windows PE](install-windows-pe-sxs.md)
 *  [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)

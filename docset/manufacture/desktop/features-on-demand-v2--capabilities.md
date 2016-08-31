@@ -69,7 +69,7 @@ Use DISM to add or remove capabilities:
 ## <span id="Capabilities_reference"></span><span id="capabilities_reference"></span><span id="CAPABILITIES_REFERENCE"></span>Capabilities reference
 
 
-**.NET Framework**
+### .NET Framework  
 
 | Component | Description                                                             |
 |-----------|-------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ Use DISM to add or remove capabilities:
 
  
 
-**Language capabilities**
+### Language capabilities
 
 Not all capabilities are available for every language.
 
@@ -138,9 +138,7 @@ Not all capabilities are available for every language.
 </tbody>
 </table>
 
- 
-
-**Font capabilities**
+### Font capabilities
 
 When adding languages for some regions, you'll need to add font capabilities.
 
@@ -184,9 +182,7 @@ When adding languages for some regions, you'll need to add font capabilities.
 | zh-HK       | Chinese (Traditional, Hong Kong (SAR)) | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 | zh-TW       | Chinese (Traditional, Taiwan)          | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 
- 
-
-**Additional fonts available:**
+### Additional fonts available:
 
 These fonts are optional and not required for any region.
 
@@ -194,29 +190,18 @@ These fonts are optional and not required for any region.
 |-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft-Windows-LanguageFeatures-Fonts-PanEuropeanSupplementalFonts-Package | Pan-European Supplemental Fonts. Includes additional fonts: Arial Nova, Georgia Pro, Gill Sans Nova, Neue Haas Grotesk, Rockwell Nova, Verdana Pro. |
 
- 
-
-**Other region-specific requirements**
+### Other region-specific requirements
 
 | Region | Description                   | Capability                                             | Description                                                                                                            |
 |--------|-------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements. Package will be provided to customers located in Taiwan. |
 
- 
+### List of .cab files
+[Download the list of all available language FODs](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows 10 1607 FOD to LP Mapping Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
-
 
 [Add Language Packs to Windows](add-language-packs-to-windows.md)
 
 [DISM Capabilities Package Servicing Command-Line Options](dism-capabilities-package-servicing-command-line-options.md)
-
- 
-
- 
-
-
-
-
-
 
