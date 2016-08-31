@@ -226,8 +226,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 </tr>
 <tr class="even">
 <td align="left"><p>Network/WinPE-WiFi-Package</p></td>
-<td align="left"><p>Used by Windows RE for recovery scenarios. New in Windows 10.</p>
-<p>Although this package has en-US in the file description, it is not language-specific, and does not need to be added or removed when changing the available languages.</p></td>
+<td align="left"><p>WinPE-WiFi-Package is used by Windows Recovery Environment (Windows RE). This package is included in the base winre.wim file.</p>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows PowerShell/WinPE-PlatformID</p></td>
