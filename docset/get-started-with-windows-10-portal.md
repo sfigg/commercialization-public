@@ -37,12 +37,13 @@ You can create devices to use touch/pen, mouse/keyboard, controller/gesture—or
 <td><p>Welcome back! Here's what's new in:</p>
 <ul>
 <li>[... Windows 10](what-s-new-in-windows.md)</li>
-<li>[... kits and tools](what-s-new-in-kits-and-tools.md)</li>
-<li>[... driver development](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927349(v=vs.85).aspx)</li>
+<li>[... Windows ADK](what-s-new-in-kits-and-tools.md)</li>
+<li>[... Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)</li>
+<li>[... Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)</li>
+<li>[... driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</li>
 <li>[... customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx)</li>
 <li>[... manufacturing](manufacture/whats-new-in-windows-manufacturing.md)</li>
 <li>[... unattend settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917933(v=vs.85).aspx#NewWindowsSettings)</li>
-<li>[... Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)</li>
 <li>[... Windows PE](manufacture/desktop/whats-new-in-windows-pe-s14.md)</li>
 </ul></td>
 </tr>
