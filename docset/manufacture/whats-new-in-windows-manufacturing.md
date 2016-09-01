@@ -15,9 +15,9 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 -  In Windows 10, Version 1607, it's no longer necessary to remove inbox apps when adding a language pack. If you do try to remove the apps, the DISM command may fail. 
    Updated topics: 
-   -  [Add Language Packs to Windows](add-language-packs-to-windows.md)
-   -  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md).
-   -  [OEM deployment of Windows 10 for desktop editions](oem-deployment-of-windows-10-for-desktop-editions.md)
+   -  [Add Language Packs to Windows](destkop/add-language-packs-to-windows.md)
+   -  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](destkop/add-drivers-langs-universal-apps-sxs.md).
+   -  [OEM deployment of Windows 10 for desktop editions](destkop/oem-deployment-of-windows-10-for-desktop-editions.md)
    
 
 **August 15, 2016**

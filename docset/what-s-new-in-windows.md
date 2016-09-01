@@ -12,12 +12,12 @@ Welcome to Windows 10! Here are some resources to get you started with the new 
 ## Universal Windows driver development
 
 
-Now you can write one driver that runs on all versions of Windows that share a common set of interfaces. A Universal Windows driver can use Kernel-Mode Driver Framework (KMDF), User-Mode Driver Framework (UMDF) 2 or the Windows Driver Model (WDM). Windows Driver Kit (WDK) 10, integrated with Microsoft Visual Studio and Debugging Tools, gives you the tools you need to develop, build, package, deploy, test, and debug drivers that run on multiple Windows 10-based devices. For more information on new features for Universal Windows driver development, see [What's new in driver development](p_getstarted.what_s_new_in_universal_driver_development).
+Now you can write one driver that runs on all versions of Windows that share a common set of interfaces. A Universal Windows driver can use Kernel-Mode Driver Framework (KMDF), User-Mode Driver Framework (UMDF) 2 or the Windows Driver Model (WDM). Windows Driver Kit (WDK) 10, integrated with Microsoft Visual Studio and Debugging Tools, gives you the tools you need to develop, build, package, deploy, test, and debug drivers that run on multiple Windows 10-based devices. For more information on new features for Universal Windows driver development, see [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development).
 
 ## Windows OneCore
 
 
-Windows OneCore is a platform for any device—phone, tablet, desktop, or IoT. Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows 10. This set of interfaces is called OneCore. With OneCore, you can also be assured that drivers and apps that are created using OneCore interfaces will run on multiple devices. For more information, see [Getting started with Windows drivers](wdkgetstart.getting_started_with_windows_drivers).
+Windows OneCore is a platform for any device—phone, tablet, desktop, or IoT. Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows 10. This set of interfaces is called OneCore. With OneCore, you can also be assured that drivers and apps that are created using OneCore interfaces will run on multiple devices. For more information, see [Getting started with Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
 
 ## Continuum
 
@@ -32,14 +32,14 @@ Cortana, the personal assistant technology introduced on Windows 8.1, is now su
 ## Hardware Compatibility program
 
 
-The new Hardware Compatibility program gives you the opportunity to show your customers that your hardware has met Microsoft's standards for compatibility and reliability. If you’re familiar with Windows 8.1 Hardware Certification, you'll find that the tools and functionality are still available with the new Compatibility Program and the new Windows Hardware Lab Kit (HLK) for Windows 10. You can validate compatibility by testing your product with the Windows HLK tests. And, for IHVs, you can now attest to driver signing and get your hardware listed on the certified product list. This program is designed to increase end users confidence that your products are compatible and reliable with Windows 10. For more information on the Windows HLK for Windows 10, see [Windows Hardware Lab Kit User's Guide](p_hlk.windows_hardware_lab_kit_user_s_guide).
+The new Hardware Compatibility program gives you the opportunity to show your customers that your hardware has met Microsoft's standards for compatibility and reliability. If you’re familiar with Windows 8.1 Hardware Certification, you'll find that the tools and functionality are still available with the new Compatibility Program and the new Windows Hardware Lab Kit (HLK) for Windows 10. You can validate compatibility by testing your product with the Windows HLK tests. And, for IHVs, you can now attest to driver signing and get your hardware listed on the certified product list. This program is designed to increase end users confidence that your products are compatible and reliable with Windows 10. For more information on the Windows HLK for Windows 10, see [Windows Hardware Lab Kit User's Guide](https://msdn.microsoft.com/library/windows/hardware/dn939963.aspx).
 
 For more information on the other kits available for Windows 10, see [Kits and tools overview](kit-and-tools-overview.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
 
 ## New graphical UI for customizing and configuring images
 
 
-The new Windows Imaging and Configuration Designer (ICD) provides a graphical user interface that helps you install drivers, set system settings, and add languages and other Windows customizations quickly, so you can install Windows 10 onto test or retail devices. With one tool, hardware developers can create model or reference images, deployment solutions, and device provisioning packages for their mobile, desktop- or IoT-based devices. For more information, see [Windows Imaging and Configuration Designer](p_icd.icd_portal).
+The new Windows Imaging and Configuration Designer (ICD) provides a graphical user interface that helps you install drivers, set system settings, and add languages and other Windows customizations quickly, so you can install Windows 10 onto test or retail devices. With one tool, hardware developers can create model or reference images, deployment solutions, and device provisioning packages for their mobile, desktop- or IoT-based devices. For more information, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx).
 
 ## Internet of Things
 
@@ -49,7 +49,7 @@ Quickly iterate and expand on hardware and software designs with the new edition
 ## Deploy smaller Windows images, faster
 
 
-We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](http://go.microsoft.com/fwlink/p/?LinkId=526101).
+We’ve got new tools that help you save time on the factory floor and space on your hard drives. You can now separately package and apply Windows desktop applications to your images, avoiding some of the time-consuming steps involved in generalizing and recapturing images. You can also use improvements in push-button reset and language packs to save gigabytes on the hard drives. To give the new tools a try, see our [Manufacturing End-to-End Lab](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md).
 
 ## Mobile device management
 

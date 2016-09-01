@@ -59,7 +59,7 @@ The new partition layout resembles the traditional partition layouts from Window
 
 ![Default Partition Layout](images/default-partition-layout.png)
 
-For more information, see [Push-button reset](push-buton-reset-oveview.md)
+For more information, see [Push-button reset](push-button-reset-oveview.md)
 
 Push-button reset is not supported on mobile devices. Instead, you should do a factory reset.
 
