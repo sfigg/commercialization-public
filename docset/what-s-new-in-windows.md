@@ -34,7 +34,7 @@ Cortana, the personal assistant technology introduced on Windows 8.1, is now su
 
 The new Hardware Compatibility program gives you the opportunity to show your customers that your hardware has met Microsoft's standards for compatibility and reliability. If you’re familiar with Windows 8.1 Hardware Certification, you'll find that the tools and functionality are still available with the new Compatibility Program and the new Windows Hardware Lab Kit (HLK) for Windows 10. You can validate compatibility by testing your product with the Windows HLK tests. And, for IHVs, you can now attest to driver signing and get your hardware listed on the certified product list. This program is designed to increase end users confidence that your products are compatible and reliable with Windows 10. For more information on the Windows HLK for Windows 10, see [Windows Hardware Lab Kit User's Guide](https://msdn.microsoft.com/library/windows/hardware/dn939963.aspx).
 
-For more information on the other kits available for Windows 10, see [Kits and tools overview](kit-and-tools-overview.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
+For more information on the other kits available for Windows 10, see [Kits and tools overview](kits-and-tools-overview.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
 
 ## New graphical UI for customizing and configuring images
 
@@ -78,7 +78,7 @@ Learn about known issues and workarounds for this release in our [WinHEC forums]
 <td align="left"><p>Describes the new features of the Windows 10 kits and tools, including an updated Windows Driver Kit (WDK) 10, Windows HLK for Windows 10, Windows Software Development Kit (SDK) for Windows 10 , and Windows Assessment and Deployment Kit (ADK).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="" id="what-s-new-in-driver-development"></a>[What's new in driver development](what-s-new-in-driver-development.md)</p></td>
+<td align="left"><p><a href="" id="what-s-new-in-driver-development"></a>[What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)</p></td>
 <td align="left"><p>Describes new features for driver development in Windows 10.</p></td>
 </tr>
 </tbody>
