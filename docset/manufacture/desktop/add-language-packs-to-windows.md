@@ -300,23 +300,15 @@ To save space, you can remove English language components when deploying to non-
 
 **Reinstall apps (required whenever adding languages)**
 
-1.  If your image includes inbox Windows apps **obtained before August 18, 2015**, remove them. The following example shows you how to remove the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+Note:  In Windows 10, version 1607, it is no longer necessary to remove inbox apps. If you do try to do this, the DISM command may fail.
 
-    ``` syntax
-    Dism /Image:"c:\mount\windows" /Remove-ProvisionedAppxPackage /PackageName: Microsoft.Getstarted_2015.522.28.1146_neutral_~_8wekyb3d8bbwe
-    ```
-
-    **Note**  To remove all of the apps at once, run the sample script: “Remove\_apps\_in\_offline\_image.cmd” from the Lab Pre-requisites.
-
-     
-
-2.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+1.  Re-install the apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
     ``` syntax
     Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file> \2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
-3.  Windows desktop applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
+2.  Windows desktop applications: You'll often need to reinstall these too, as they often include language-specific files that are chosen at installation. You won't be able to update these using offline servicing; instead you'll need to recapture the image or create a separate provisioning package for the Windows desktop application.
 
 **For installations managed by Windows Setup or distribution shares, update the language list**
 

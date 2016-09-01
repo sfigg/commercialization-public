@@ -1,4 +1,7 @@
-# [Get Started with Windows 10](get-started-with-windows-10-portal.md)
+# [Get started with Windows 10](get-started-with-windows-10-portal.md)
+## [What's new in Windows 10](what-s-new-in-windows.md)
+## [Kits and tools overview](kits-and-tools-overview.md)
+## [What's new in kits and tools](what-s-new-in-kits-and-tools.md)
 
 # [Design](design/index.md)
 ## [What's new in Design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx)

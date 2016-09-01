@@ -308,6 +308,8 @@ The following table shows the types of language packages and components availabl
 	
 **Step 8: Reinstall inbox apps (required whenever adding languages)**
 
+Note, in previous versions, it was required to first remove inbox apps. This is no longer required, and if you do, the command may fail.
+
 1.  Re-install the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
     ``` syntax
