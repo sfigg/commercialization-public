@@ -58,7 +58,7 @@ To complete this walkthrough, you need the following:
 
 When you add languages to Windows RE, you need to add the base language pack and the corresponding language packs for each of the Windows PE optional components in the Windows RE tools image.
 
-To add languages, you must use a matching version and build number of the Windows ADK. For example, to add a language to Windows 10, you must use the Windows 10 ADK.
+Starting with Windows 10, Version 1607 and Windows Server 2016, the base language pack and optional component language packs required to customize Windows RE are included in the Language Pack DVDs for Windows 10 and Windows Server 2016. The Windows PE language packs in the Windows 10 ADK should not be used to customize Windows RE.
 
 **Note**  
 To ensure a consistent language experience in recovery scenarios, add the same set of languages to the Windows RE image that you add to the Windows image.
