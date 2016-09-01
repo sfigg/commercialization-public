@@ -11,9 +11,13 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 1, 2016**
+
+-  In Windows 10, Version 1607 language packs from the Windows ADK should not be used for WinRE. Instead, use the language packs available from the language pack ISO.
+
 **August 15, 2016**
 
--  In Windows 10, Version 1507, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.
+-  In Windows 10, Version 1607, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.
 
 **August 4, 2016**
 
