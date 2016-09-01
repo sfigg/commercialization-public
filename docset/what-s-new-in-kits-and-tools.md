@@ -15,7 +15,7 @@ With [siloed provisioning packages](manufacture\desktop\siloed-provisioning-pack
 
 ### Build IoT Core images for large-scale deployment
 
-Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](manufacture\iot\iot-core-manufacturing-guide.md).
+Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md).
 
 ### The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used.
 
@@ -26,14 +26,14 @@ See [What's new in Design](https://msdn.microsoft.com/library/windows/hardware/m
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
-The Windows ADK now includes [Windows Imaging and Configuration Designer](p_icd.icd_portal), the [Windows Assessment Toolkit](p_assessments.windows_assessment_toolkit), the [Windows Performance Toolkit](p_wpt.windows_performance_toolkit), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
+The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](test/assessments/index.md), the [Windows Performance Toolkit](test/wpt/index.md), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 
 ### Windows Imaging and Configuration Designer (ICD)
 
 -   Quickly create a provisioning package that you can use to customize devices without re-imaging.
 -   Build a customized Windows 10 image for specific market segments and regions.
 
-See [Getting started with Windows ICD](p_icd.getting_started_with_the_imaging_configuration_and_designer_tool) for more information.
+See [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx) for more information.
 
 ### Push-button reset incorporates system updates by default
 
@@ -43,7 +43,7 @@ Users can now refresh or restore their PCs to the updated version of the system 
 
 Want to add more languages for users when they turn on their device? Instead of adding full language packs, save space by adding just the base user interface files for a language. Later, if your user needs handwriting or voice recognition capabilities, Windows can download them as needed.
 
-For more information, see [Language Packs (lp.cab)](p_adk_online.language_packs__lpcab__and_windows_deployment).
+For more information, see [Language Packs (lp.cab)](manufacture/desktop/language_packs__lpcab__and_windows_deployment).
 
 ### New package type: Capabilities
 

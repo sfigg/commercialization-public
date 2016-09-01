@@ -47,7 +47,7 @@ Use the manufacturing tools to deploy your Windows [customizations](https://msdn
 <p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[What's new in Windows manufacturing](desktop/whats-new-in-windows-manufacturing.md)</td>
+<td align="left">[What's new in Windows manufacturing](whats-new-in-windows-manufacturing.md)</td>
 <td align="left">Learn what new features are available. </td>
 </tr>
 <tr class="odd">
