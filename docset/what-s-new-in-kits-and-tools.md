@@ -9,22 +9,31 @@ ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
 
 ## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1607
 
-### Siloed provisioning packages: Pick and choose your desktop applications
+### Pick and choose desktop applications
 
--   With [siloed provisioning packages](manufacture\desktop\siloed-provisioning-packages.md), you can capture desktop Windows applications and settings, and then pick and choose which ones to add when you're applying your images. They support drivespace-saving features like Compact OS and single-instancing, and are automatically integrated into your recovery tools. 
+With [siloed provisioning packages](manufacture\desktop\siloed-provisioning-packages.md), you can now pick and choose which desktop applications to add to your images during deployment. You no longer need to recapture the entire set of applications into your recovery image, they’re added in automatically. These packages support space-saving features like Compact OS and single-instancing. 
 
+### Build IoT Core images for large-scale deployment
+
+Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md).
+
+### The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used.
+
+The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see Available Language Packs for Windows.
+
+### More changes
+See [What's new in Design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [Change history for customization docs](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx), [What's new in manufacturing](manufacture/whats-new-in-windows-manufacturing.md), and [Changed answer file settings for desktop editions](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)</li>
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
-
-The Windows ADK now includes [Windows Imaging and Configuration Designer](p_icd.icd_portal), the [Windows Assessment Toolkit](p_assessments.windows_assessment_toolkit), the [Windows Performance Toolkit](p_wpt.windows_performance_toolkit), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
+The Windows ADK now includes [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx), the [Windows Assessment Toolkit](test/assessments/index.md), the [Windows Performance Toolkit](test/wpt/index.md), and several new and improved deployment tools that can help you automate a large-scale deployment of Windows 10.
 
 ### Windows Imaging and Configuration Designer (ICD)
 
 -   Quickly create a provisioning package that you can use to customize devices without re-imaging.
 -   Build a customized Windows 10 image for specific market segments and regions.
 
-See [Getting started with Windows ICD](p_icd.getting_started_with_the_imaging_configuration_and_designer_tool) for more information.
+See [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112.aspx) for more information.
 
 ### Push-button reset incorporates system updates by default
 
@@ -34,7 +43,7 @@ Users can now refresh or restore their PCs to the updated version of the system 
 
 Want to add more languages for users when they turn on their device? Instead of adding full language packs, save space by adding just the base user interface files for a language. Later, if your user needs handwriting or voice recognition capabilities, Windows can download them as needed.
 
-For more information, see [Language Packs (lp.cab)](p_adk_online.language_packs__lpcab__and_windows_deployment).
+For more information, see [Language Packs (lp.cab)](manufacture/desktop/language_packs__lpcab__and_windows_deployment).
 
 ### New package type: Capabilities
 
@@ -43,9 +52,6 @@ This new Windows package type lets you request services like Microsoft .NET or l
 ### Save space by running Windows from compressed OS files
 
 You can now run Windows directly from compressed files. This is similar to WIMBoot, introduced in Windows 8.1 Update 1. This new process uses individual files instead of a static WIM file. When updating system files, Windows now replaces the old files instead of keeping both copies.
-
-
-## <a href="" id="hlk"></a>What's new in the Hardware Lab Kit (HLK)
 
 
 ## Related topics

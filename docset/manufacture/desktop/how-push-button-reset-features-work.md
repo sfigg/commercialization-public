@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How push-button reset features work'
 ---
 
-# <span id="p_adk_online.how_push-button_reset_features_work"></span>How push-button reset features work
+# <span id="How_push-button_reset_features_work"></span>How push-button reset features work
 
 
 ## <span id="Restoring_the_operating_system_and_customizations"></span><span id="restoring_the_operating_system_and_customizations"></span><span id="RESTORING_THE_OPERATING_SYSTEM_AND_CUSTOMIZATIONS"></span>Restoring the operating system and customizations

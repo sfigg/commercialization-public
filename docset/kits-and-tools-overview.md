@@ -34,7 +34,7 @@ Windows SDK for Windows 10 contains headers, libraries, and tools you can use w
 
 WDK 10 contains the tools to build, test, debug, and deploy drivers for Windows 10. WDK 10 unifies support for mobile and desktop devices, Universal Windows drivers, and, with Visual Studio, provides a unified test experience with reliable deployment and debug provisioning that includes WinDbg. You can run many basic certification tests in the integrated environment. The WDK 10 includes templates for several technologies and driver models, including Windows Driver Frameworks (WDF), Universal Serial Bus (USB), print, networking, and file system filters. WDK 10 also supports Windows 7, Windows 8, and Windows 8.1 driver development.
 
-For more information about driver development for Windows 10, see [What's new in Universal Windows driver development](what-s-new-in-driver-development.md) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
+For more information about driver development for Windows 10, see [What's new in Universal Windows driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development) and [What's new in kits and tools](what-s-new-in-kits-and-tools.md).
 
 ## Enterprise WDK (EWDK)
 
