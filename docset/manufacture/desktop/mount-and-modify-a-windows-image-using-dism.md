@@ -25,7 +25,7 @@ You can mount an image using the **/optimize** option to reduce initial mount ti
 
 **To mount an image**
 
-1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
+1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8 or Windows 10, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
 
 2.  Mount the image.
 
@@ -90,15 +90,8 @@ After you modify an image, you must unmount it. If you mounted your image with t
 
 **To unmount an image**
 
-1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
+1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8 or Windows 10, use the Deployment Tools Cmd Prompt installed with the ADK or navigate to the DISM directory on your local computer.
 
-    For Windows 10:
-
-    ``` syntax
-    cd C:\Program Files (x86)\Windows Kits\10.0\Assessment and Deployment Kit\ <architecture>\DISM
-    ```
-
-    where *&lt;architecture&gt;* can be x86 or amd64.
 
 2.  Unmount the image.
 
