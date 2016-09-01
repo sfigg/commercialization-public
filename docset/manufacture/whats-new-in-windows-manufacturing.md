@@ -11,6 +11,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 1, 2016**
+
+-  In Windows 10, Version 1607 language packs from the Windows ADK should not be used for WinRE. Instead, use the language packs available from the language pack ISO.
+
 **August 25, 2016**
 
 -  In Windows 10, Version 1607, it's no longer necessary to remove inbox apps when adding a language pack. If you do try to remove the apps, the DISM command may fail. 
@@ -18,11 +22,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
    -  [Add Language Packs to Windows](destkop/add-language-packs-to-windows.md)
    -  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](destkop/add-drivers-langs-universal-apps-sxs.md).
    -  [OEM deployment of Windows 10 for desktop editions](destkop/oem-deployment-of-windows-10-for-desktop-editions.md)
-   
 
 **August 15, 2016**
 
--  In Windows 10, Version 1507, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.
+-  In Windows 10, Version 1607, the base recovery (WinRE) image includes a new optional component: WinPE-WiFi-Package. You shouldn’t need to change any of your scripts; this package is not language-specific and does not need to be added or removed when changing the available languages.
 
 **August 4, 2016**
 
