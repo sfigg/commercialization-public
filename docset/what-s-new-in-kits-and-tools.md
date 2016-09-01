@@ -43,7 +43,7 @@ Users can now refresh or restore their PCs to the updated version of the system 
 
 Want to add more languages for users when they turn on their device? Instead of adding full language packs, save space by adding just the base user interface files for a language. Later, if your user needs handwriting or voice recognition capabilities, Windows can download them as needed.
 
-For more information, see [Language Packs (lp.cab)](manufacture/desktop/language_packs__lpcab__and_windows_deployment).
+For more information, see [Language Packs (lp.cab)](manufacture/desktop/language-packs-and-windows-deployment.md).
 
 ### New package type: Capabilities
 
@@ -56,9 +56,9 @@ You can now run Windows directly from compressed files. This is similar to WIMBo
 
 ## Related topics
 
-- [Kits and tools overview](kit-and-tools-overview.md)
+- [Kits and tools overview](kits-and-tools-overview.md)
 
-- [What's new in driver development](what-s-new-in-driver-development.md)
+- [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)
 
 - [What's new in the Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)
 

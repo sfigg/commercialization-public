@@ -12,7 +12,7 @@ OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core (I
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--  Create an app and add it to your device, as shown in [Lab 1b: Add an app to your image](../iot/deploy-your-app-with-a-standard-board.md).
+-  Create an app and add it to your device, as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).
  
 -  For store updates, sign and submit the app package to the Windows Store.
 
