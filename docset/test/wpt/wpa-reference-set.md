@@ -146,7 +146,7 @@ trace.
 Likewise, the first access of any other page in the same process is
 recorded in the trace, including newly allocated pages. Pages that are
 released (such as by **HeapFree**), and files that are deleted have
-their *outstanding* *size* removed from the reference set at the end of
+their *outstanding size* removed from the reference set at the end of
 the measurement interval, but they are still shown as accessed. Files
 that are closed, or executables that are removed from memory are not
 removed from the outstanding size, because they are not purged from RAM
