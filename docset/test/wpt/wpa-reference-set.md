@@ -172,7 +172,7 @@ This shows memory divided by process for the viewport. This is a good
 place to start if you are investigating the effect on memory of a
 particular application.
 
-![Example of the "Outstanding Size by Process" view in Windows Performance Analyzer (WPA).](images/wpa-reference-set-outstanding-size-by-process-01.png)
+<a href="images/wpa-reference-set-outstanding-size-by-process-01.png"><img src="images/wpa-reference-set-outstanding-size-by-process-01.png" alt="Example of the 'Outstanding Size by Process' view in Windows Performance Analyzer (WPA)."></a>
 
 For the meanings of the columns in this view, see [Important column definitions](#important-column-definitions), later in this topic.
 
@@ -181,7 +181,7 @@ For the meanings of the columns in this view, see [Important column definitions]
 
 This shows memory pages by category for the viewport.
 
-![Example of the "Reference Set Outstanding by Category" view in Windows Performance Analyzer (WPA).](images/wpa-reference-set-outstanding-by-category-01.png)
+<a href="images/wpa-reference-set-outstanding-by-category-01.png"><img src="images/wpa-reference-set-outstanding-by-category-01.png" alt="Example of the 'Reference Set Outstanding by Category' view in Windows Performance Analyzer (WPA)."></a>
 
 For an explanation of page categories, see [Page Category (Dynamic)](#page-category-dynamic) and [Page Category (File)](#page-category-file), later in this topic.
 
@@ -190,7 +190,7 @@ For an explanation of page categories, see [Page Category (Dynamic)](#page-categ
 
 This shows memory categorized by whether it is memory-backed or file-backed for the viewport.
 
-![Example of the "Reference Set Outstanding by Dynamic/File" view in Windows Performance Analyzer (WPA).](images/wpa-reference-set-outstanding-by-dynamic-file-01.png)
+<a href="images/wpa-reference-set-outstanding-by-dynamic-file-01.png"><img src="images/wpa-reference-set-outstanding-by-dynamic-file-01.png" alt="Example of the 'Reference Set Outstanding by Dynamic/File' view in Windows Performance Analyzer (WPA)."></a>
 
 <blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;<i>Memory-backed pages</i> are backed by the page file, or in the case of non-paged pool, never paged out. Memory-backed pages include stack, heap, VirtualAlloc and other page categories that don't directly map to a file on disk. <i>File-backed pages</i> are backed by individual files on disk such as module images.</p></blockquote>
 
