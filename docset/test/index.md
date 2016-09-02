@@ -43,7 +43,6 @@ We provide an array of tools and technology to help you test performance, compat
 
 -   [HLK Getting Started Guide](https://msdn.microsoft.com/en-us/library/windows/hardware/dn915002.aspx)
 -   [Windows Performance step-by-step guides](wpt/windows-performance-step-by-step-guides.md)
--   [Performance - Windows Engineering Guide (WEG)](weg/index.md)
 -   [Windows Assessment Console step-by-step guide](assessments/windows-assessment-console-step-by-step-guide.md)
 -   [Windows Assessment Services step-by-step guide](assessments/windows-assessment-services-step-by-step-guide-was.md)
 
@@ -52,6 +51,7 @@ We provide an array of tools and technology to help you test performance, compat
 
 
 -   [Dashboard services](https://msdn.microsoft.com/library/windows/hardware/br230803.aspx) – The hardware dashboard is used to submit HLK tests and certify devices and apps, to submit and distribute drivers, and to manage your partner account.
+-   [Windows Engineering Guides (WEGs)](weg/index.md) - WEGs provide partners with guidance in delivering Windows-based computers and devices to customers.
 -   [Windows Hardware Compatibility Program](../design/compatibility/index.md)– This program provides you with the opportunity to list your product on Microsoft’s Certified Products List after passing the compatibility and reliability tests in the HLK.
 -   [Mobile software event tracing](mobile-tracing/index.md) – Event Tracing for Windows (ETW) can be enabled on mobile devices to help you debug or evaluate performance issues using event trace logs.
 
