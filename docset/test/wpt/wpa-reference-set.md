@@ -223,20 +223,20 @@ This causes a scenario to have two primary reference set metrics:
 
 <dl>
 <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Steady state</b></dt>
-<dd><p>A baseline cost of the app or scenario. This can
+<dd>A baseline cost of the app or scenario. This can
 be measured by executing a scenario (or multiple scenarios) and then
 waiting for the system to reach an idle state again. By minimizing
 the number of pages that your app accesses in a steady state across
 various scenarios, you can see the scenarios execute faster (for
 example, resume more quickly) and provide an experience that is
 better for your user, since you'll be reducing the memory pressure
-on the system.</p></dd>
+on the system.</dd>
 <dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Peak</b></dt>
-<dd><p>Transient high usage of memory, which can push more
+<dd>Transient high usage of memory, which can push more
 valuable information out of physical memory. By reducing the
 frequency and magnitude of any peaks of usage, your app or feature
 will be a better "system citizen" by decreasing the potential for
-the swapping out or termination of other processes.</p></dd>
+the swapping out or termination of other processes.</dd>
 </dl>
 
 
