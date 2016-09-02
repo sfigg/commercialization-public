@@ -264,7 +264,7 @@ which could be one of **Impacting**, **Transient**, or **Persistent**.
 This is not very valuable for analysis, but it is needed for graphing in
 WPA.
 
-Impact Size represents the effect on the size from the starting
+**Impact Size** represents the effect on the size from the starting
 timestamp to the ending timestamp for the current zoom level. A
 comparison of the graphed values at the start and end for the field of
 view, in simple terms, corresponds to the delta. Transient or persistent
@@ -272,15 +272,15 @@ accesses do not cause the graphed value to change for the zoom window,
 and so they do not count.
 
 When two processes reference the same page of physical memory, the page
-is counted for each process the **Size** column. Adding the two values
+is counted for each process in the **Size** column. Adding the two values
 does not produce a system-wide total for the reference set, because
 after the page is added to the working set, subsequent access is not
-counted. The page is also counted in the Impact Size column, just once,
+counted. The page is also counted in the **Impact Size** column, just once,
 for the first process that accesses the page. Adding the values in
 **Impact Size** for a process produces a valid system-wide total for the
 reference set, and it does so without missing or multiplying the count
 of any page. Therefore, the values in **Impact Size** represents the
-actual system-wide effects on memory.
+actual system-wide effects on memory. 
 
 Consider an example, from t\_start to t\_end, with the following values:
 
@@ -290,11 +290,11 @@ Consider an example, from t\_start to t\_end, with the following values:
 
 -   Transient accessed in the window: 10 MB
 
--   Graph at t\_end: 10 (persistent) + 10 (Impacting) = 20
+-   Graph at t\_end: 10 (Persistent) + 10 (Impacting) = 20
 
--   Size column: 10 (persistent) + 10 (transient) + 10 (Impacting) = 30
+-   Size column: 10 (Persistent) + 10 (Transient) + 10 (Impacting) = 30
 
--   Impact Size column: 10(impacting)
+-   Impact Size column: 10 (Impacting)
 
 <blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;Zooming in and out changes the viewport and causes these sizes to be recalculated.</p></blockquote>
 
