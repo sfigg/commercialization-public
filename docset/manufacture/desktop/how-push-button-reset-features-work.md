@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'How push-button reset features work'
 ---
 
-# <span id="p_adk_online.how_push-button_reset_features_work"></span>How push-button reset features work
+# <span id="How_push-button_reset_features_work"></span>How push-button reset features work
 
 
 ## <span id="Restoring_the_operating_system_and_customizations"></span><span id="restoring_the_operating_system_and_customizations"></span><span id="RESTORING_THE_OPERATING_SYSTEM_AND_CUSTOMIZATIONS"></span>Restoring the operating system and customizations
@@ -158,7 +158,7 @@ When users use the **Reset your PC** feature, they will be presented with option
     The Windows volume is never formatted, as the files needed to rebuild the OS are on it. Instead, user data files are deleted individually.
 
     If user chooses to remove data from all volumes, the data volumes are formatted.
-
+	
 -   Users can choose to simply delete their files or to also perform data erasure on the drive(s) so that recovery of the data by someone else is much more difficult.
 
 Manufacturers must configure custom utility partitions as follows to ensure these partitions are not affected by the reset process.
@@ -167,6 +167,8 @@ Manufacturers must configure custom utility partitions as follows to ensure thes
 -   For BIOS-based PCs, utility partitions on Master Boot Record (MBR) disks must be of a type other than 0x7, 0x0c, 0x0b, 0x0e, 0x06, and 0x42.
 
 The time it takes to perform data erasure depends on drive speed, partition size, and whether the drive is encrypted using Windows BitLocker Drive Encryption. The data erasure functionality is targeted at consumers and does not meet government and industry data erasure standards.
+
+If [Compact OS](compact-os.md) is enabled on the OS before the reset, Compact OS will remain enabled after the PC has been reset. 
 
 ## <span id="Bare_metal_recovery"></span><span id="bare_metal_recovery"></span><span id="BARE_METAL_RECOVERY"></span>Bare metal recovery
 

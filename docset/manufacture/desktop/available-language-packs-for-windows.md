@@ -17,6 +17,8 @@ OEMs and system builders with Microsoft Software License Terms can get the LIPs 
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](http://go.microsoft.com/fwlink/?LinkId=63026).
 
+For a complete list of available language features on demand, see [Available language FODs](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows 10 1607 FOD to LP Mapping Table.xlsx)
+
 To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows.md).
 
 ## <span id="Supported_Language_Packs_and_Language_Interface_Packs"></span><span id="supported_language_packs_and_language_interface_packs"></span><span id="SUPPORTED_LANGUAGE_PACKS_AND_LANGUAGE_INTERFACE_PACKS"></span>Supported Language Packs and Language Interface Packs

@@ -162,6 +162,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
 3.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
@@ -174,8 +175,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     \\10.100.0.100\c$
     ```
 
-	
-	Use the username and password that you created in [Lab 1b: Add an app to your image](iot/deploy-your-app-with-a-standard-board.md) to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
+	Use the username and password that you created in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
 
 2.  Check to see if the files exist. Look for:
 

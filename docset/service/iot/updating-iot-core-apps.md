@@ -12,13 +12,13 @@ OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core (I
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--  Create an app and add it to your device, as shown in [Lab 1b: Add an app to your image](../iot/deploy-your-app-with-a-standard-board.md).
+-  Create an app and add it to your device, as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).
  
 -  For store updates, sign and submit the app package to the Windows Store.
 
 ## <span id="Create_an_update_package"></span><span id="create_an_update_package"></span><span id="CREATE_AN_UPDATE_PACKAGE"></span>Create an update package
 
-Create a new version of your app, and package it into a .cab file using the same method in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md). 
+Create a new version of your app, and package it into a .cab file using the same method in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md). 
 
 It's OK to reuse the existing package names and even write over the old folder names and locations (though we recommend backing up your files first, in case you'd like to revert the change later.)
 
