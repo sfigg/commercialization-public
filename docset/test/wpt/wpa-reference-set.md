@@ -85,7 +85,7 @@ WPR's GUI interface.
 
 To collect data with WPR, enter:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**wpr -start** **referenceset** **-filemode**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**wpr -start** *referenceset* **-filemode**
 
 Run your scenario, and then stop collecting data by entering:
 
