@@ -11,6 +11,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 2, 2016**
+
+-  Updated [push-button reset,](desktop/push-button-reset-overview.md) added details about feature changes for Windows 10, Version 1607.  
+
 **September 1, 2016**
 
 -  In Windows 10, Version 1607 language packs from the Windows ADK should not be used for WinRE. Instead, use the language packs available from the language pack ISO.
