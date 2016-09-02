@@ -11,7 +11,7 @@ ms.mktglfcycl:
 ms.sitesec: msdn
 ---
 
-# Reference sets 
+# Reference sets and the system-wide effects on memory use 
 
 A *reference set* is the recommended way to understand the real effects
 of a process on the memory availability of the system as a whole.
