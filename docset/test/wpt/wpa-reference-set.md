@@ -85,11 +85,11 @@ WPR's GUI interface.
 
 To collect data with WPR, enter:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>wpr -start</b> <b>referenceset</b> <b>-filemode</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**wpr -start** **referenceset** **-filemode**
 
 Run your scenario, and then stop collecting data by entering:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>wpr -stop</b> <i>trace-name</i><b>.etl</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**wpr -stop** <i>trace-name</i><b>.etl</b>
 
 
 ## Collect data with Xperf
@@ -107,7 +107,7 @@ To collect data with Xperf, enter:
 
 Run your scenario, and then stop collecting data by entering:
 
-&nbsp;&nbsp;&nbsp;<b>xperf -stop user -stop -d</b> <i>trace-name</i><b>.etl</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**xperf -stop user -stop -d** <i>file-name</i><b>.etl</b>
 
 
 ## Collect data with the WPR desktop app
@@ -221,23 +221,22 @@ reflect the fact that it can subsequently be reused.
 This causes a scenario to have two primary reference set metrics:
 *steady state* and *peak*.
 
-<dl>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Steady state</b></dt>
-<dd>A baseline cost of the app or scenario. This can
+<table>
+<tr><th>Metric</th><th>Description</th></tr>
+<tr><td><b>Steady&nbsp;state</b></td><td><p>A baseline cost of the app or scenario. This can
 be measured by executing a scenario (or multiple scenarios) and then
 waiting for the system to reach an idle state again. By minimizing
 the number of pages that your app accesses in a steady state across
 various scenarios, you can see the scenarios execute faster (for
 example, resume more quickly) and provide an experience that is
 better for your user, since you'll be reducing the memory pressure
-on the system.</dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Peak</b></dt>
-<dd>Transient high usage of memory, which can push more
+on the system.</p></td></tr>
+<tr><td><b>Peak</b></td><td><p>Transient high usage of memory, which can push more
 valuable information out of physical memory. By reducing the
 frequency and magnitude of any peaks of usage, your app or feature
 will be a better "system citizen" by decreasing the potential for
-the swapping out or termination of other processes.</dd>
-</dl>
+the swapping out or termination of other processes.</p></td></tr>
+</table>
 
 
 ## Important column definitions
@@ -303,48 +302,54 @@ Consider an example, from t\_start to t\_end, with the following values:
 ### Impact Type
 
 The **Impact Type** column identifies the type of effect that a memory
-allocation has on the memory currently in use:
+allocation has on the memory currently in use: Impacting, Transient, and Persistent.
 
-<dl>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Impacting</b></dt>
-<dd><p>This identifies memory that was (A) allocated before
+<table>
+<tr><th>Impact&nbsp;Type</th><th>Description</th></tr>
+<tr>
+<td><p><b>Impacting</b></p></td>
+<td><p>Memory that was (A) allocated before
 the start of your viewport and freed during your viewport (allocated
 outside and freed inside) or (B) allocated during your viewport and
 freed after the end of your viewport (allocated inside and
 freed outside). An impacting allocation affects the memory in use at
-the end of the viewport.</p></dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Transient</b></dt>
-<dd><p>This identifies memory that was allocated and freed
+the end of the viewport.</p></td>
+</tr>
+<tr>
+<td><p><b>Transient</b></p></td>
+<td><p>Memory that was allocated and freed
 during your viewport (allocated inside and freed inside). A
 transient allocation is active only within the current viewport.
 Transient allocations typically contribute to any peaks in usage
-within a viewport.</p></dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Persistent</b></dt>
-<dd><p>Identifies allocations that were allocated before the
+within a viewport.</p></td>
+</tr>
+<tr>
+<td><p><b>Persistent</b></p></td>
+<td><p>Allocations that were allocated before the
 start of the viewport and freed after the end of it (allocated
 outside and freed outside). A persistent allocation is active during
-the entirety of the viewport.</p></dd>
-</dl>
+the entirety of the viewport.</p></td>
+</tr>
+</table>
 
 
 ### Category Class
 
 There are two categories of access for memory pages, identified in WPA
-in the **Category Class** column as **Dynamic** or **File**.
+in the **Category Class** column: Dynamic or File.
 
-<dl>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Dynamic</b></dt>
-<dd><p>These are on-demand allocations of memory that are
+<table>
+<tr><th>Category&nbsp;Class</th><th>Description</th></tr>
+<tr><td><b>Dynamic</b></td><td><p>These are on-demand allocations of memory that are
 associated with a process or system state that do not persist across
 a system shutdown. The allocations can be non-paged or backed by the
 page file, and they can be <b>Heap</b>, <b>VirtualAlloc</b>, and so on, as
 identified in the <b>Page Category</b> column. Shareable dynamic memory
-is also identified in <b>Page Category</b> as <b>PFMappedSection</b>.</p></dd>
-<dt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>File</b></dt>
-<dd><p>These are files referenced by processing that are backed
+is also identified in <b>Page Category</b> as <b>PFMappedSection</b>.</p></td></tr>
+<tr><td><b>File</b></td><td><p>These are files referenced by processing that are backed
 by a file on disk. Files loaded as data, files loaded as images
-(executable or DLL), and map files.</p></dd>
-</dl>
+(executable or DLL), and map files.</p></td></tr>
+</table>
 
 
 ### Page Category (Dynamic)
@@ -356,7 +361,7 @@ table.
 <table>
 <thead>
 <tr class="header">
-<th>Page categories, dynamic allocation</th>
+<th>Page&nbsp;Category, dynamic allocation</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -431,7 +436,7 @@ In the **Page Category** column, when the category class is **File**,
 WPA displays one or more of the categories described in the following
 table.
 
-| Page categories, file | Description |
+| Page&nbsp;Category, file | Description |
 |-----------------------|---------------------------------------------------------------|
 | Image                 | A file loaded as an executable, such as a DLL. |
 | MapFile               | A file loaded as data. |
