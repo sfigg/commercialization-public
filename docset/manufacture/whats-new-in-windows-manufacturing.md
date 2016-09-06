@@ -14,6 +14,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 **September 6, 2016**
 -  [Features on Demand](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/features-on-demand-v2--capabilities): We've added the list of [all available language features](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows%2010%201607%20FOD%20to%20LP%20Mapping%20Table.xlsx).
 
+**September 2, 2016**
+
+-  Updated [push-button reset](desktop/push-button-reset-overview.md), added details about feature changes for Windows 10, Version 1607.  
+
 **September 1, 2016**
 
 -  In Windows 10, Version 1607 language packs from the Windows ADK should not be used for WinRE. Instead, use the language packs available from the language pack ISO.

@@ -212,9 +212,9 @@ The Deployment Image Servicing and Management (DISM) cmdlets can be used to perf
 
 -   The DISM PowerShell module is included in Windows 10 and Windows Server 2016 Technical Preview. On other supported operating systems, you can install the Windows Assessment and Deployment Kit (ADK) which includes the DISM PowerShell module.
 
-**Install Windows PowerShell 4.0**
+**Install Windows PowerShell 5.0**
 
--   For Windows 10 and Windows Server 2016 Technical Preview, Windows Powershell 4.0 is included in the installation. For other older supported versions of Windows and Windows Server, you must install Windows Management Framework 4.0. You can download and install [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) from the Microsoft Download Center.
+-   For Windows 10 and Windows Server 2016 Technical Preview, Windows Powershell 5.0 is included in the installation. For other older supported versions of Windows and Windows Server, you must install Windows Management Framework 5.0. You can download and install [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) from the Microsoft Download Center.
 
 **To prepare the DISM PowerShell Environment**
 

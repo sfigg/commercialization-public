@@ -44,12 +44,10 @@ This section describes features of Windows Performance Analyzer.
 <td><p>[Loading Symbols](loading-symbols.md)</p></td>
 <td><p>Describes loading debugging symbols.</p></td>
 </tr>
-
 <tr class="even">
 <td><p>[Open an archive in WPA](open-archive.md)</p></td>
 <td><p>Describes how to open ETL files in WPA that are contained within cabinet files and zip files, merging multiple traces within an archive, and compressing merged traces.</p></td>
 </tr>
-
 <tr class="odd">
 <td><p>[Opening WPA from an Assessment](opening-wpa-from-an-assessment.md)</p></td>
 <td><p>Describes opening WPA from an assessment.</p></td>
@@ -70,6 +68,13 @@ This section describes features of Windows Performance Analyzer.
 <td><p>[Windows Store App Analysis](windows-store-app-analysis.md)</p></td>
 <td><p>Describes features in WPA that you can use for Windows Store App analysis.</p></td>
 </tr>
+<!--Not ready to be linked. [v-gmoor, 2016-09-02]
+<tr class="even">
+<td><p>[Reference sets and the system-wide effects on memory use](wpa-reference-set.md)</p></td>
+<td><p>Describes how and why to analyze memory use by recording the trace of a reference set,
+which more accurately reflects the effects of a scenario than a working set.</p></td>
+</tr>
+-->
 <tr class="even">
 <td><p>[Regions of Interest](regions-of-interest.md)</p></td>
 <td><p>Describes Regions of Interest, including how to create and apply them to a trace.</p></td>
