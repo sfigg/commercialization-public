@@ -196,7 +196,7 @@ These fonts are optional and not required for any region.
 |--------|-------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | zh-TW  | Chinese (Traditional, Taiwan) | Microsoft-Windows-InternationalFeatures-Taiwan-Package | Supplemental support for Taiwan date formatting requirements. Package will be provided to customers located in Taiwan. |
 
-### List of .cab files
+### List of all language-related features on demand
 [Download the list of all available language FODs](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows 10 1607 FOD to LP Mapping Table.xlsx)
 
 ## <span id="related_topics"></span>Related topics
