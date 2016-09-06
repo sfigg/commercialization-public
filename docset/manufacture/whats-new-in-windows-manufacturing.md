@@ -11,6 +11,9 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 6, 2016**
+-  [Features on Demand](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/features-on-demand-v2--capabilities): We've added the list of [all available language features](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows%2010%201607%20FOD%20to%20LP%20Mapping%20Table.xlsx).
+
 **September 1, 2016**
 
 -  In Windows 10, Version 1607 language packs from the Windows ADK should not be used for WinRE. Instead, use the language packs available from the language pack ISO.
@@ -51,6 +54,9 @@ The following changes are new for Windows 10, version 1607:
 - A new Windows Hardware Compatibility Program requirement, [Device.Graphics.AdapterBase.RunFromDriverStore](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-graphics#device-graphics-adapterbase), can impact OEM preloads. Drivers must be written so that their components can be run directly from the Driver Store. Drivers are installed at %SystemRoot%\System32\DriverStore\FileRepository.
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
+
+**September 6, 2016**
+You can set your IoT Core devices to [synchronize the time](iot/update-the-time-server.md) from one or more time servers.
 
 **August 3, 2016**
 By default, in Windows 10, version 1607, the built-in administrator account is now disabled. 
