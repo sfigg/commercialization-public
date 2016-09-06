@@ -24,7 +24,7 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 ### Add more apps to the Start Menu
 [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn923214(v=vs.85).aspx)
 
-### MDM: Enhanced device manageability
+### MDM: Enhanced device and PC management
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607).
 
 ### More changes
