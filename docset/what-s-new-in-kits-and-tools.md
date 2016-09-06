@@ -27,9 +27,6 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 ### MDM: Enhanced device manageability
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607).
 
-### MDM: Protect your enterprise data from malicious use with Windows Information Protection
-[Windows Information Protection (also known as Enterprise Data Protection)](https://msdn.microsoft.com/library/windows/hardware/mt697634.aspx) identifies and separately handles of enterprise and personal data.
-
 ### More changes
 See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md), and [answer file settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx), and [MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx).
 
