@@ -129,7 +129,7 @@ Connecting to an IPv4 network from Windows PE on an IPv6 network is not supporte
         <eapCommon:Type>25</eapCommon:Type>
         <eapCommon:AuthorId>0</eapCommon:AuthorId>
       </EapMethod>
-      <Credentials>
+      <Credentials
         xmlns:eapUser="http://www.microsoft.com/provisioning/EapUserPropertiesV1" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:baseEap="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1" 
