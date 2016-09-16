@@ -7,13 +7,14 @@ title: 'Update the time server'
 
 # Update the time server
 
-Synchronize the system time between IoT Core devices and a time server. IoT Core supports using multiple time servers.
+Synchronize the system time between IoT Core devices and a time server. Windows 10, version 1607 defaults to using the Windows Time Service at http://time.windows.com. You can change the time server or add multiple time servers for when your devices are on different network environments.
 
-To add a time server, create a registry key that lists the time server or servers.  
+##Update the server from a command line (for example, using a tool like PuTTY):
 
-To add the time server from a command line (for example, using a tool like PuTTY):
-1.	 Add the reg key
-reg add HKLM\SYSTEM\CurrentControlSet\Services\w32time\Parameters /v NtpServer /t REG_SZ /d "time.windows.com,0x9 tick.usno.navy.mil,0x9 europe.pool.ntp.org,0x9 asia.pool.ntp.org,0x9" /f >nul 2>&1
+1.	 Add the time server using a registry key
+     ``` syntax
+     reg add HKLM\SYSTEM\CurrentControlSet\Services\w32time\Parameters /v NtpServer /t REG_SZ /d "time.windows.com,0x9 tick.usno.navy.mil,0x9 europe.pool.ntp.org,0x9 asia.pool.ntp.org,0x9" /f >nul 2>&1
+     ```
 
 2.	Stop and restart the network services
     
@@ -22,9 +23,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\w32time\Parameters /v NtpServer /
     net start
 	```
 
-To add the time server for IoT Core images:
+##Update the server in an IoT Core image
 
-1.	Create a package definition file, and add it to the image. To learn more, see  Lab 1c: Add a file and a registry setting to an image. Sample script: 
+1.	Create a package definition file, and add it to the image. To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md). Sample script: 
 
 	``` syntax
     <OSComponent> 
@@ -34,5 +35,4 @@ To add the time server for IoT Core images:
         </RegKey>
       </RegKeys>
     </OSComponent>
-```
-
+    ```
