@@ -845,6 +845,7 @@
 ### [IoT Core feature list](manufacture/iot/iot-core-feature-list.md)
 ### [IoT Core Add-ons](manufacture/iot/iot-core-adk-addons.md)
 ### [IoT Core Add-ons command-line options](manufacture/iot/iot-core-adk-addons-command-line-options.md)
+### [Update the time server](manufacture/iot/update-the-time-server.md)
 
 # [Service](service/index.md)
 ## [Desktop servicing](service/desktop/resetting-the-pc.md)

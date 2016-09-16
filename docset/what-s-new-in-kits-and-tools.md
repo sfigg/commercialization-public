@@ -21,14 +21,27 @@ Capture your apps, drivers, and settings, and deploy them securely to new device
 
 The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see Available Language Packs for Windows.
 
-### Add more apps to the Start Menu
-[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn923214(v=vs.85).aspx)
+### You can limit access to a single Windows app (assigned access)](https://msdn.microsoft.com/library/windows/hardware/mt620043)
+
+### New answer file settings added
+
+-  Add more tiles to the Start Menu: [Microsoft-Windows-Shell-Setup|StartTiles|SquareTiles|SquareTiles|SquareOrDesktopTile7](https://msdn.microsoft.com/library/windows/hardware/dn915881) through [SquareOrDesktopTile12](https://msdn.microsoft.com/library/windows/hardware/dn915868)
+
+-  Add an [advanced pen settings app](https://msdn.microsoft.com/library/windows/hardware/mt757353)
+
+-  Allow a [chat window in a remote access session](https://msdn.microsoft.com/library/windows/hardware/mt752384)
+
+-  Set [auto-brightness controls](https://msdn.microsoft.com/library/windows/hardware/dn757391)
+
+-  See more [new answer file settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx)
 
 ### MDM: Enhanced device and PC management
+
 Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607).
 
 ### More changes
-See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md), and [answer file settings](https://msdn.microsoft.com/library/windows/hardware/mt750416.aspx), and [MDM enrollment and management](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx).
+
+See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
