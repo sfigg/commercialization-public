@@ -200,7 +200,7 @@ A camera must have a visual indicator that indicates when it is streaming. The v
 A hardware usage indicator (physical LED) is strongly recommended. In lieu of a physical LED, the following regkey may be set:
 
 <dl><dt>Path</dt><dd><p>HKLM\\SOFTWARE\\Microsoft\\OEM\\Device\\Capture</p></dd>
-<dt>Entry</dt><dd><p>NoPhysicalCameraLED (REG\_DWORD)</p></dd>
+<dt>Entry</dt><dd><p>NoPhysicalCameraLED (REG\_DWORD).</p></dd>
 <dt>0x1</dt><dd><p>Turn on the feature (= No Physical camera LED on the system)</p></dd>
 <dt>0x0</dt><dd><p>Default. Turn off the feature (= Physical camera LED on the system)</p></dd></dl>
 
