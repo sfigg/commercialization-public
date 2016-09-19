@@ -456,7 +456,7 @@ The **Allocation Stack** column identifies where the memory is allocated.
 The **Impacting Stack** column shows why the memory is accessed.
 
 
-# Recommendations for measuring and improving reference set
+# Recommendations for measuring and improving performance in a reference set
 
 The following general recommendations are helpful for measuring a
 reference set and improving the effects of an app or feature on the
