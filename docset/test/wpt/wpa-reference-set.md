@@ -103,7 +103,9 @@ using WPR.)
 
 To collect data with Xperf, enter:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>xperf -on referenceset -minbuffers 50 -maxbuffers 50 -buffersize 1024 -stackwalk PageAccess+PageRelease+PageRangeAccess+PageRangeRelease+PagefileMappedSectionCreate+VirtualFree+PagefileMappedSectionDelete -start user -on Win32HeapRanges -minbuffers 10 -maxbuffers 10 -buffersize 1024</b>
+<blockquote>
+<b>xperf -on referenceset -minbuffers 50 -maxbuffers 50 -buffersize 1024 -stackwalk PageAccess+PageRelease+PageRangeAccess+PageRangeRelease+PagefileMappedSectionCreate+VirtualFree+PagefileMappedSectionDelete -start user -on Win32HeapRanges -minbuffers 10 -maxbuffers 10 -buffersize 1024</b>
+</blockquote>
 
 Run your scenario, and then stop collecting data by entering:
 
