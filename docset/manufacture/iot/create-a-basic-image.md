@@ -69,13 +69,13 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 2.  Eject any removable storage drives, including the Micro SD card and any USB flash drives.
 
-3.  Create a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
+3.  Build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
     ``` syntax
-    createimage ProductA Test
+    buildimage ProductA Test
     ```
 
-    This creates a FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
+    This builds an FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
 
     Troubleshooting:
 	

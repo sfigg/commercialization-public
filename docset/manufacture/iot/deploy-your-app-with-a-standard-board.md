@@ -10,6 +10,8 @@ title: 'Lab 1b: Add an app to your image'
 
 We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), package it up, and create a new image you can load onto new devices. 
 
+For background apps, use the same method to install and run them. Note, only one app can be selected as the default app, all other apps installed using this method run as background apps.
+
 **Note**  As we go through this manufacturing guide, ProjectA will start to resemble the SampleA image that's in C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\SampleA.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
