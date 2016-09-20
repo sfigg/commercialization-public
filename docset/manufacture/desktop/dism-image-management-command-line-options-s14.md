@@ -466,6 +466,32 @@ Example:
 DISM.exe /Update-WIMBootEntry /Path:C:\ /DataSourceID:0 /ImageFile:R:\Install.wim
 ```
 
+## /Apply-SiloedPackage
+
+Applies one or more siloed provisioning packages (SPPs) to a specified image. This option is only available after running CopyDandI.cmd from the ADK for Windows 10, Version 1607, and running ``` dism.exe /Apply-SiloedPackage ``` from the target folder created by CopyDandI.cmd. 
+
+**Note**
+/Apply-SiloedPackage can only be run once against a Windows image, but /PackagePath can used more than once in the same command to apply multiple SPPs. SPPs will be applied in the specified order, so a dependency should be specified before the SPP that depends on it. 
+
+For more information about siloed provisioning packages, and how to use CopyDandI.cmd, see [Siloed provisioning packages.](siloed-provisioning-packages.md)
+
+To find out how to work with siloed provisioning packages, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages.](add-desktop-apps-wth-spps-sxs.md)
+
+``` Syntax
+/Apply-SiloedPackage /PackagePath:<package_path> /ImagePath:<applied_image_path>
+```
+
+|  Parameter   | Description  |
+|--------------|--------------|
+| /PackagePath | Specifies the path of a siloed provisioning package file. |
+| /ImagePath   | Specifies the path of the Windows image where you are applying the SPP. |
+
+Example:
+
+``` syntax
+Dism.exe /apply-SiloedPackage /PackagePath:C:\test\Word.spp /PackagePath:C:\test\spp2.spp /ImagePath:C:\
+```
+
 ## <span id="related_topics"></span>Related topics
 
 
