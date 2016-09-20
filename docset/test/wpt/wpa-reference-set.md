@@ -527,7 +527,7 @@ Use the following sequence to analyze the trace of a reference set:
 
 -   [Categorize to analyze costs and identify options for reduction.](#categorize-to-analyze-costs-and-identify-options-for-reduction)
 
-
+<br/>
 
 #### Classify by page category
 
