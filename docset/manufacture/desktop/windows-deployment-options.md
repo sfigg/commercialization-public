@@ -37,7 +37,7 @@ These topics describe additional Windows deployment options and customization sc
 <td align="left"><p>Common networking scenarios and how to implement them in unattended installations.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Siloed provisioning packages (SPPs)](manufacture/desktop/siloed-provisioning-packages.md)</p></td>
+<td align="left"><p>[Siloed provisioning packages (SPPs)](siloed-provisioning-packages.md)</p></td>
 <td align="left"><p>Capture individual Windows desktop applications and apply them to your images.</p></td>
 </tr>
 <tr class="odd">

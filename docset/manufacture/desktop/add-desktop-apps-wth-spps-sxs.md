@@ -118,7 +118,7 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     ```syntax
     W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
-    To learn more, see [Siloed provisioning packages](siloed-provisioning-packages). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
+    To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
 
 
 4. 	Apply the recovery image after applying the SPPs:
