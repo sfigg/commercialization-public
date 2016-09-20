@@ -472,6 +472,7 @@ system. Use these recommendations in the following order:
 
 <blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;Tracing uses memory, which is visible as non-paged pool with the description "ETWB" for <strong>ETW buffers</strong>.</blockquote>
 
+
 ## Examine steady-state use and peak use of memory
 
 Two aspects are important: (1) the amount of memory usage that is in a
@@ -480,15 +481,18 @@ occur in the reference set and why. Your analysis should focus first on
 the steady-state impact of the scenario, and then look at any specific
 peaks in the graphs of the reference set.
 
+
 ## Focus on the process with the greatest effects
 
 Focus on processes that have the greatest effect on the reference set,
 including the process of interest as well as other system processes.
 
+
 ## Characterize and categorize memory pages
 
 Characterization needs to be for both category classes of memory pages,
 dynamic and file, and further divided into subcategories.
+
 
 ### Examine memory pages in the File category
 
@@ -506,6 +510,7 @@ knowing which DLLs are unique to your scenario and why they are being
 loaded, as well as any files that your application or feature accesses
 (for example, image files when decoding for a slideshow).
 
+
 ### Examine memory pages in the Dynamic category
 
 Use the following sequence to analyze the trace of a reference set:
@@ -522,10 +527,12 @@ Use the following sequence to analyze the trace of a reference set:
 
 -   [Categorize to analyze costs and identify options for reduction.](#categorize-to-analyze-costs-and-identify-options-for-reduction)
 
+<br/>
+
 #### Classify by page category
 
-Classify by page category into the following: Win32Heap, VirtualAlloc,
-or PFMappedSection. The category can be directly attributed to the
+Classify by page category into the following: **Win32Heap**, **VirtualAlloc**,
+or **PFMappedSection**. The category can be directly attributed to the
 process.
 
 System-specific categories can usually be ignored for initial analysis,
@@ -533,10 +540,12 @@ although major contributions (more than 2-3 MB) from the paged pool or
 kernel stack are usually worth examining, because such volume often
 indicates an overuse of threads or components, such as the registry.
 
+
 #### Apply stack tags
 
 Applying stack tags to categorize memory usage by stack can be very
 helpful to identify where your memory usage is coming from.
+
 
 #### Perform heap-specific tracing
 
@@ -549,17 +558,20 @@ identifies which memory pages are referenced. A heavily fragmented heap
 may show a large steady-state footprint for heap usage even if the heap
 allocations themselves are small but scattered throughout the heap.
 
+
 #### Examine allocations stacks that have high usage
 
 VirtualAlloc: Examine specific allocation stacks that have high usage of
 **VirtualAlloc**. Viewing **VirtualAlloc Commit LifeTimes** in the
 **Analysis** tab displays details on commit usage by process.
 
+
 #### Examine system processes that have significant effects
 
 Are there other system processes that have greater effects on memory as
 a result of this scenario? Examples of candidates include services, app
 brokers, and antivirus scanners.
+
 
 #### Categorize to analyze costs and identify options for reduction
 
