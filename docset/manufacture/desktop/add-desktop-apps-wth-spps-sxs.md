@@ -11,10 +11,17 @@ Siloed provisioning packages (SPPs) are a new type of provisioning package that 
 
 These packages are automatically included in the recovery tools. When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
-We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.  **Tip**: Virtual machines (VMs) can be a huge time-saver when capturing multiple classic applications: Rather than reinstalling each time, you can use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. Overview:
+We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode. 
+
+### Tip: Use Virtual machines (VMs)
+VMs can be a huge time-saver when capturing multiple classic applications.  Rather than reinstalling each time, use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. 
+
 1.  Create a VM with a new Windows image, and boot it into audit mode.
+	
 2.  Create a checkpoint.
+
 3.  Install a Windows desktop application, then capture it as an SPP.
+	
 4.  Revert to the checkpoint and repeat to capture more Windows desktop applications.
 
 ## <span id="Prepare_a_copy_of_the_Deployment_and_Imaging_Tools"></span><span id="prepare_a_copy_of_the_deployment_and_imaging Tools"></span><span id="PREPARE_A_COPY_OF_THE_DEPLOYMENT_AND_IMAGING_TOOLS"></span>Step 1: Prepare a copy of the Deployment and Imaging Tools
@@ -23,7 +30,9 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 **Important**   Don't overwrite the existing DISM files on the WinPE image.
 
-1.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
+1.  Start the Deployment and Imaging Tools Environment as an administrator.
+
+2.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
 
     ``` syntax
     CopyDandI.cmd amd64 E:\ADKTools\amd64
@@ -86,31 +95,43 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
+
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+
 3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
 
 **Apply the SPP**
-1.  Install the Deployment and Imaging Tools  by using either **WimMountAdkSetupAmd64.exe /Install** or **WimMountAdkSetupX86.exe /Install**.
-
+1.  Copy the ADK tools to a non-removable file location, such as the primary hard drive, which is assigned to W after the ApplyImage command. 
+    Copying the file to a non-removable location avoids an error associated with installing DISM from removable drives.
     ``` syntax
-    D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
+    xcopy D:\ADKTools\ W:\ADKTools\ /s
     ```
 
-2.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
+2.  Install the ADK Tools by using either **WimMountAdkSetupAmd64.exe /Install /q** or **WimMountAdkSetupX86.exe /Install /q**.
+
+    ``` syntax
+    W:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
+    ```
+
+3.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     
     ```syntax
-    D:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
+    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
+    To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
 
-3. 	Apply the recovery image after applying the SPPs:
+
+4. 	Apply the recovery image after applying the SPPs:
 	```syntax
 	D:\ApplyRecovery.bat
 	```
 
-4.  Disconnect the drives, then reboot (`exit`).
+5.  Disconnect the drives, then reboot (`exit`).
 	
 **Verify apps**
+
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
+
 2.  See if your Windows desktop applications and add-ons are installed.
 
 Next step: [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)

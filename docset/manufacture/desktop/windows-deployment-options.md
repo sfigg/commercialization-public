@@ -30,19 +30,23 @@ These topics describe additional Windows deployment options and customization sc
 </tr>
 <tr class="odd">
 <td align="left"><p>[Deploy Windows on a VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)</p></td>
-<td align="left"><p>Describes how to create and deploy Windows using virtual hard disks (VHDs).</p></td>
+<td align="left"><p>Create and deploy Windows using virtual hard disks (VHDs).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Configure Network Settings in an Unattended Installation](configure-network-settings-in-an-unattended-installation.md)</p></td>
-<td align="left"><p>Describes common networking scenarios and how to implement them in unattended installations.</p></td>
+<td align="left"><p>Common networking scenarios and how to implement them in unattended installations.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[Siloed provisioning packages (SPPs)](siloed-provisioning-packages.md)</p></td>
+<td align="left"><p>Capture individual Windows desktop applications and apply them to your images.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Device Drivers and Deployment Overview](device-drivers-and-deployment-overview.md)</p></td>
-<td align="left"><p>Describes methods of adding and configuring device drivers.</p></td>
+<td align="left"><p>Add and configure device drivers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Language Packs](language-packs-and-windows-deployment.md)</p></td>
-<td align="left"><p>Describes methods of adding language packs and language interface packs (LIPs).</p></td>
+<td align="left"><p>Add language packs and language interface packs (LIPs).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Configure Oobe.xml](configure-oobexml.md)</p></td>
@@ -50,15 +54,15 @@ These topics describe additional Windows deployment options and customization sc
 </tr>
 <tr class="even">
 <td align="left"><p>[Work with Product Keys and Activation](work-with-product-keys-and-activation-auth-phases.md)</p></td>
-<td align="left"><p>Describes how to enter a product key and how to activate Windows.</p></td>
+<td align="left"><p>Enter a product key and how to activate Windows.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Battery Life](battery-life.md)</p></td>
-<td align="left"><p>Describes methods of managing battery life on different hardware and software platforms.</p></td>
+<td align="left"><p>Manage battery life on different hardware and software platforms.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Understanding Servicing Strategies](understanding-servicing-strategies.md)</p></td>
-<td align="left"><p>Describes servicing strategies, including customization during installation, offline servicing, and online servicing (audit mode).</p></td>
+<td align="left"><p>Servicing strategies, including customization during installation, offline servicing, and online servicing (audit mode).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Audit Mode Overview](audit-mode-overview.md)</p></td>
@@ -66,11 +70,11 @@ These topics describe additional Windows deployment options and customization sc
 </tr>
 <tr class="even">
 <td align="left"><p>[Enable and Disable the Built-in Administrator Account](enable-and-disable-the-built-in-administrator-account.md)</p></td>
-<td align="left"><p>Describes how to enable and disable the built-in Administrator account, which helps you run programs and apps as an administrator.</p></td>
+<td align="left"><p>Enable and disable the built-in Administrator account, which helps you run programs and apps as an administrator.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Windows Server Deployment Options](windows-server-deployment-options.md)</p></td>
-<td align="left"><p>Describes considerations when deploying Windows Server editions.</p></td>
+<td align="left"><p>Considerations when deploying Windows Server editions.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Configure a Trusted Image Identifier for Windows Defender](configure-a-trusted-image-identifier-for-windows-defender.md)</p></td>
