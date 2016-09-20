@@ -446,8 +446,7 @@ Dism /Unmount-Image /MountDir:C:\test\offline /discard
 
 Updates the WIMBoot configuration entry, associated with the specified data source ID, with the renamed image file or moved image file path.
 
-**Note**
-/Update-WIMBootEntry requires a restart in order for any updates to take effect.
+**Note:** **/Update-WIMBootEntry** requires a restart in order for any updates to take effect.
 
 Syntax:
 
@@ -470,8 +469,7 @@ DISM.exe /Update-WIMBootEntry /Path:C:\ /DataSourceID:0 /ImageFile:R:\Install.wi
 
 Applies one or more siloed provisioning packages (SPPs) to a specified image. This option is only available after running CopyDandI.cmd from the ADK for Windows 10, Version 1607, and running ``` dism.exe /Apply-SiloedPackage ``` from the target folder created by CopyDandI.cmd. 
 
-**Note**
-**/Apply-SiloedPackage** can only be run once against a Windows image, but **/PackagePath** can used more than once in the same command to apply multiple SPPs. SPPs will be applied in the specified order, so a dependency should be specified before the SPP that depends on it. 
+**Note:** **/Apply-SiloedPackage** can only be run once against a Windows image, but **/PackagePath** can used more than once in the same command to apply multiple SPPs. SPPs will be applied in the specified order, so a dependency should be specified before the SPP that depends on it. 
 
 For more information about siloed provisioning packages, and how to use CopyDandI.cmd, see [Siloed provisioning packages.](siloed-provisioning-packages.md)
 
