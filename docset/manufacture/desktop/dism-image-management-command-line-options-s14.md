@@ -19,7 +19,7 @@ The following commands can be used to mount, unmount, capture, append, and delet
 
 ## /Append-Image
 
-Adds an additional image to a .wim file. **/AppendImage** compares new files to the resources in the existing .wim file specified by the **/ImageFile** argument, and stores only a single copy of each unique file so that each file is only captured once. The .wim file can have only one assigned compression type. Therefore, you can only append files with the same compression type.
+Adds an additional image to a .wim file. **/Append-Image** compares new files to the resources in the existing .wim file specified by the **/ImageFile** argument, and stores only a single copy of each unique file so that each file is only captured once. The .wim file can have only one assigned compression type. Therefore, you can only append files with the same compression type.
 
 This command-line option does not apply to virtual hard disk (VHD) files.
 
@@ -471,7 +471,7 @@ DISM.exe /Update-WIMBootEntry /Path:C:\ /DataSourceID:0 /ImageFile:R:\Install.wi
 Applies one or more siloed provisioning packages (SPPs) to a specified image. This option is only available after running CopyDandI.cmd from the ADK for Windows 10, Version 1607, and running ``` dism.exe /Apply-SiloedPackage ``` from the target folder created by CopyDandI.cmd. 
 
 **Note**
-/Apply-SiloedPackage can only be run once against a Windows image, but /PackagePath can used more than once in the same command to apply multiple SPPs. SPPs will be applied in the specified order, so a dependency should be specified before the SPP that depends on it. 
+**/Apply-SiloedPackage** can only be run once against a Windows image, but **/PackagePath** can used more than once in the same command to apply multiple SPPs. SPPs will be applied in the specified order, so a dependency should be specified before the SPP that depends on it. 
 
 For more information about siloed provisioning packages, and how to use CopyDandI.cmd, see [Siloed provisioning packages.](siloed-provisioning-packages.md)
 
