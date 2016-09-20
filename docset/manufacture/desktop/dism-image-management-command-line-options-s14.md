@@ -168,7 +168,7 @@ dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithOffice.wim" /Name:
 
 ## /Cleanup-Mountpoints
 
-Deletes all of the resources associated with a mounted image that has been corrupted. This command will not unmount images that are already mounted, nor will it delete images that can be recovered using the **/Remount-Imag** command. 
+Deletes all of the resources associated with a mounted image that has been corrupted. This command will not unmount images that are already mounted, nor will it delete images that can be recovered using the **/Remount-Image** command. 
 
 Example: 
 
