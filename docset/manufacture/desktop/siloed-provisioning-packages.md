@@ -234,6 +234,8 @@ And then run the tools from that location:
 ```syntax
 W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 ```
+Command-line help for /Apply-SiloedPackage only appears when running DISM from the folder created by CopyDandI.cmd. To see command-line help, run ``` dism.exe /Apply-SiloedPackage /? ```. 
+
 For the full walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 
 ## Scenarios for using siloed provisioning packages
