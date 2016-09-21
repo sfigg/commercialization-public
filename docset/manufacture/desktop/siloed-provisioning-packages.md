@@ -181,11 +181,7 @@ The following example runs DISM in Windows PE to apply siloed provisioning packa
 C:\ADKTools\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 ```
 
-For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md), or see:
-
-```syntax
-C:\ADKTools\DISM /Apply-SiloedPackage /?
-```
+For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md), or run ``` DISM.exe /Apply-SiloedPackage /? ``` from the target location of CopyDandI.cmd. 
 
 All of the siloed provisioning packages applied by DISM will be placed in %systemdrive%\Recovery\Customizations folder.  
 
@@ -234,7 +230,6 @@ And then run the tools from that location:
 ```syntax
 W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 ```
-Command-line help for /Apply-SiloedPackage only appears when running DISM from the folder created by CopyDandI.cmd. To see command-line help, run ``` dism.exe /Apply-SiloedPackage /? ```. 
 
 For the full walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 
