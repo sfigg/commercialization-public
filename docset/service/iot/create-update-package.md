@@ -47,5 +47,3 @@ We'll create an update to the Hello, World app we created from [Lab 1b: Add an a
 2.  Copy this package into the build folder and create a FFU. This verifies that the FFU with new package is ok. This package will be delivered to the devices on the field over the air (OTA) and installed on the devices. Read more about OEM servicing < link to page detailing OEM servicing>
 
 To keep track of your versions, open UpdateVersion.txt to see descriptions of your official set of packages. The tool automatically updates this file when creating a new update. This is required to keep track of completed updates.
-
-

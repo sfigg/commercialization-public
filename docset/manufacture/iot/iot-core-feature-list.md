@@ -34,7 +34,7 @@ The following features must be included in all images, though they may be custom
 |----------------------------|---------------------------------------------------------------------------------------------------------|
 | **IOT\_CRT140**            | Adds CRT binaries                                                                                       |
 | **IOT\_DIRECTX\_TOOLS**    | Adds DirectX tools                                                                                      |
-| **IOT\_UMDFDBG\_SETTINGS** | Includes the inbox OOBE app that is launched during the first boot and also during installation of apps |
+| **IOT\_UMDFDBG\_SETTINGS** | Includes user-mode driver framework debug settings                                                      |
 
 ### <span id="Developer_tools"></span>Developer tools
 
@@ -44,8 +44,7 @@ The following features must be included in all images, though they may be custom
 | **IOT\_POWERSHELL**        | Adds PowerShell                                                                                                             |
 | **IOT\_SIREP**             | Enables SIREP service for TShell connectivity                                                                               |
 | **IOT\_SSH**               | Enables Secure Shell (SSH) connectivity                                                                                     |
-| **IOT\_TOOLKIT**           | Includes developer tools such as:                                                                                           |
-|                            | Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.  **Note** We don't recommend including this feature in the Retail image.                                 |
+| **IOT\_TOOLKIT**           | Includes developer tools such as: Kernel Debug components, FTP, Network Diagnostics, basic device portal, and XPerf. This also relaxes the firewall rules and enables various ports.  **Note** We don't recommend including this feature in the Retail image.                                                                                           |
 | **IOT\_WEBB\_EXTN**        | Enables IOTCore-specific extensions to the Windows Device Portal. The basic device portal is included in the IoT Toolkit.   |
 
 ### <span id="Apps"></span>Apps and related features
@@ -111,7 +110,6 @@ Some features are required only for certain boards (Raspberry Pi 2=**RPi2**, Qua
 | **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver.                    | This feature should only be used with the Qualcomm DragonBoard (DB). |
 | **IOT\_DMAP\_DRIVER**                | Adds DMAP drivers.                                         | Required for MBM and RPi2. Not supported for DB.                     |
 | **IOT\_EFIESP\_BCD** |Sets boot configuration data (BCD) for GPT-based drives.                    | Required for MBM.                                                    |
-| **IOT\_DISABLEBASICDISPLAYFALLBACK** | Disables the inbox basic render driver.                    | This feature should only be used with the DB. **Note**  RPi2 includes BCD settings for MBR devices through Microsoft-IoTUAP-RPi2-BCD-Package.cab. |
 | **IOT\_POWER\_SETTINGS**             | Prevents the device from going to sleep due to inactivity. | Required for MBM and other x86/amd64 platforms. **Note** The name of this package changed from IOT\_POWER\_SETIINGS in Windows 10, version 1607. |
 
 ## <span id="related_topics"></span>Related topics

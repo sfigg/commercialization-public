@@ -143,9 +143,7 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 1.  Use the [testing procedures in the Hello, Blinky! lab](https://ms-iot.github.io/content/win10/samples/DriverLab3.htm) to test your driver.
 
-<!--
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
 
-[Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
--->
+[Lab 3: Create an update package](../../service/iot/create-update-package.md)
