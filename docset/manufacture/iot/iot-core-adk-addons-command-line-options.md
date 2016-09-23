@@ -185,7 +185,7 @@ inf2cab C:\test\gpiodriver.inf
 inf2cab C:\test\gpiodriver.inf Drivers.GPIO
 ```
 
-## <span id="inf2cab.pkg"></span>inf2cab.pkg
+## <span id="inf2pkg.cmd"></span>inf2pkg.cmd
 
 Creates the folder structure and copies the template files for a new package
 
