@@ -477,8 +477,6 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
     This process may take several minutes.
 
-## Try it out
-	
 **Step 13: Copy the image and deployment scripts to a USB key**
 
 1.  Plug in the Windows PE USB key and note the drive location, for example, **D:**.
@@ -501,7 +499,7 @@ Use deployment scripts to apply a newly-captured image onto a test device. These
 
     **Note**  In Windows 10, we've changed the partition layout. While we still use a separate recovery tools image, Windows no longer needs a separate full-system recovery image to use push-button reset features. This can save several GB of drive space. We're also using a smaller MSR partition (down from 128MB to 16MB).
     
-    ![Image shows that to create a reference computer with customizations, you need a new Computer, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
+![Image shows that to create a reference computer with customizations, you need a new Computer, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
 
 ## <span id="Try_it_out"></span>Try it out
 
