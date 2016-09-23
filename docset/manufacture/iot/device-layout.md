@@ -134,7 +134,7 @@ OEMDevicePlatform.xml specifies the amount of free blocks available in the devic
    </OEMDevicePlatform>
    ```
 
-##BSP Samples in IoT-ADK-AddonKit
+## BSP Samples in IoT-ADK-AddonKit
 BSP samples provided in the IoT-ADK-AddOnKit are detailed here along with the associated tools.
 The BSP components are present under the architecture specific source directory and has the following contents.
    ``` syntax
@@ -145,22 +145,22 @@ The BSP components are present under the architecture specific source directory 
      +OEMInputSamples – Contains the sample oem input files 
    ```
 
-###RPi2 (ARM)
+### RPi2 (ARM)
 
 RPi2 BSP is the BSP supported and serviced by Microsoft. This is for the Raspberry Pi2 Boards. The source of this BSP is available at https://github.com/ms-iot/bsp
 
-###CustomRPi2 (ARM)
+### CustomRPi2 (ARM)
 
 CustomRPi2 is a customized version of the RPi2 BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components. 
 
-###MBM (x86)
+### MBM (x86)
 
 MBM BSP is the BSP supported and serviced by Microsoft. This is for the Intel MinnowBoard Max Boards.
 
-###CustomMBM (x86)
+### CustomMBM (x86)
 
 CustomMBM is a customized version of the MBM BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components.
 
 
-##Related topics
+## Related topics
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
