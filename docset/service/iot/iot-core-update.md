@@ -11,9 +11,9 @@ title: IoT Core Update
 
 Windows 10 IoT Core (IoT Core) devices automatically receive OS updates via Windows Update when connected to the internet.
 
--   **OS updates.** These OS and security updates target Microsoft code in the image, including the Microsoft packages in the ESP (EFI system partition) and the Main OS partitions, and Microsoft packages for the system loaders. All IoT Core devices will get updates automatically.
+-   **OS updates.** OS updates includes security updates for all Microsoft packages (releasetype=Production) present in the ESP (EFI System Partition) and Main OS partition. These updates are performed automatically. OEM and enterprise customers have the option to manage the OS updates using the Windows 10 IoT Core Pro SKU. To learn more, see [Manage Updates](managing-iot-device-update.md).
+
+OS and security updates target Microsoft code in the image, including the Microsoft packages in the ESP (EFI system partition) and the Main OS partitions, and Microsoft packages for the system loaders. All IoT Core devices will get updates automatically.
 -   **Windows Store app updates.** Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
 
 <!---   **OEM updates.** These are also referred to as Board Support Package (BSP) updates. OEMs develop specific BSP updates for their devices such as the Raspberry Pi 2 and the Minnowboard Max. These are then published to the Microsoft Update server where specified IoT Core devices can download and receive the OEM updates automatically. -->
-
-OEM and enterprise customers have the option to manage IoT Core device updates using the Windows 10 IoT Core Pro (IoT Core Pro) SKU. Customers using Windows 10 IoT Core (IoT Core) will automatically receive both OS and OEM updates.

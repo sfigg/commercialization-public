@@ -64,9 +64,11 @@ To select IoT Core updates in the WSUS catalog site:
 
 ## <span id="OS_updates_only"></span><span id="os_updates_only"></span><span id="OS_UPDATES_ONLY"></span>OS updates only
 
+An IoT Core device can be set to receive OS updates from Microsoft and not OEM updates:
 
-An IoT Core device can be set to receive OS updates from Microsoft and not OEM updates by editing the device's feature manifest file.
+**For Windows 10, version 1607**: use IoT\_GENERIC\_POP in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
 
+**For Windows 10, version 1511**: 
 To configure a device to receive only OS updates, you must edit the OEM Feature Manifest XML for the device. The feature manifest for supported devices can be found at the following directory locations on the device:
 
 -   **MinnowBoard Max:**` C:\Program Files (x86)\Windows Kits\10\FMFiles\x86\MBMFM.xml`
@@ -74,6 +76,7 @@ To configure a device to receive only OS updates, you must edit the OEM Feature 
 -   **Qualcomm DragonBoard:** ` C:\Program Files (x86)\Windows Kits\10\FMFiles\arm\QCDB410CFM.xml`
 
 In the **&lt;DeviceLayoutPackages&gt;** and **&lt;Features&gt;**sections, remove the device identifier and replace with **Generic**. For example **Intel.MBM.DeviceInfo.cab** becomes **Intel.Generic.DeviceInfo.cab**.
+
 ![generic pop on mbm](images/genericpop.png)
 
  
