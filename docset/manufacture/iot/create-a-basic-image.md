@@ -103,7 +103,7 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 3.  Power it on.
 
-    After a short while, the device should start automatically, and you should see the [default app](https://developer.microsoft.com/windows/iot/win10/samples/IoTDefaultApp) (code-named "Bertha"), which shows basic info about the image.
+    After a short while, the device should start automatically, and you should see the [default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
 
     **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
 
