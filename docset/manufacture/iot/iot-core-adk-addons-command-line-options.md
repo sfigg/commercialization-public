@@ -16,7 +16,7 @@ Creates the folder structure and copies the template files for a new package.
 
 ## <span id="BuildAgent.cmd"></span>BuildAgent.cmd
 
-Builds FFUs for all OEMInputSamples under the Addon Kit directory
+Builds FFUs for all OEMInputSamples under the Addon Kit directory. Can be used to automate nightly builds.
 
 ## <span id="BuildImage.cmd"></span>BuildImage.cmd
 
@@ -45,11 +45,11 @@ buildimage Clean
 
 ## <span id="BuildKitAgent.cmd"></span>BuildKitAgent.cmd
 
-Builds FFUs for all OEMInputSamples in Core Kit package
+Builds FFUs for all OEMInputSamples in Core Kit package. Can be used to automate nightly builds.
 
 ## <span id="BuildKitSamples.cmd"></span>BuildKitSamples.cmd
 
-Builds architecture-specific FFUs for OEMInputSamples in Core Kit package
+Builds architecture-specific FFUs for OEMInputSamples in Core Kit package.  Can be used to automate nightly builds.
 
 ## <span id="buildpkg.cmd"></span>buildpkg.cmd
 
@@ -256,7 +256,7 @@ newbsp CustomRPi2
 
 ## <span id="newcommonpkg.cmd"></span>newcommonpkg.cmd
 
-Creates a new working folder to help you save files, folders, registry keys, and provisioning packages as .cab files. After using this command, use the buildpkg command to create your final .cab file.
+Creates a new working folder to help you [add files, folders, registry keys, and provisioning packages](add-a-registry-setting-to-an-image.md) as .cab files. After using this command, use the buildpkg command to create your final .cab file.
 
 This command creates the working folder in the \Common\Packages\ folder.
 
@@ -369,7 +369,7 @@ Open setenv.cmd in a text editor to see the full list of variables set.
 setenv.cmd arm
 ```
 
-## <span id="setOEM.cmd></span>setOEM.cmd
+## <span id="setOEM.cmd"></span>setOEM.cmd
 Sets your OEM company name. Edit this file with a text editor.
 
 ``` syntax
