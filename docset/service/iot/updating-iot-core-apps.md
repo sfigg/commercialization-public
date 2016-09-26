@@ -8,29 +8,61 @@ title: Update apps on your IoT Core devices
 
 # Update apps on your IoT Core devices
 
-OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core (IoT Core) devices by running ApplyUpdate.exe from the device, or by submitting updates to the Windows Store.
+**New for Windows 10, version 1607**: OEMs and enterprise customers can deliver app updates to Windows 10 IoT Core devices by submitting updates to the Windows Store. When your devices connect to the internet, they periodically check for updates from the Windows Store, and install the updates automatically. 
 
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+Before you send updates to the store, we recommend testing them first on your own devices. 
 
--  Create an app and add it to your device, as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).
- 
--  For store updates, sign and submit the app package to the Windows Store.
+## <span id="Send_updates_to_the_Windows_Store"></span>Send updates to the Windows Store
 
-## <span id="Create_an_update_package"></span><span id="create_an_update_package"></span><span id="CREATE_AN_UPDATE_PACKAGE"></span>Create an update package
-
-Create a new version of your app, and package it into a .cab file using the same method in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md). 
-
-It's OK to reuse the existing package names and even write over the old folder names and locations (though we recommend backing up your files first, in case you'd like to revert the change later.)
+Create updates for your apps in the same way that you create the original apps.
 
 Use a higher version number each time. (Example, 1.0.0.0 --> 1.0.1.0.)
 
-If you're adding the image to a retail build or to the Windows Store, sign the app package.
+It's OK to reuse the existing package names and even write over the old folder names and locations. Back up your files first, in case you'd like to revert the change later.
 
-### <span id="Apply_update_directly_to_the_device"></span><span id="apply_update_directly_to_the_device"></span><span id="APPLY_UPDATE_DIRECTLY_TO_THE_DEVICE"></span>Apply update directly to the device
+We recommend that you [test and track the update](#Test_and_track_the_update) using the procedures in this topic.
 
-Log into the device and run ApplyUpdate.exe to trigger the update process.
+Finally, sign and submit the app package to the Windows Store. 
 
-1.  Copy the .cab file to the device. You can do this using an FTP tool such as [WinSCP](http://winscp.net), or by copying the file directly to the device's drive (such as a micro SD card.)
+To learn more, see [Installing and Servicing apps on Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/docs/store)
+
+## <span id="Test_and_track_the_update"></span><span id="test and track the update"></span><span id="TEST AND TRACK THE UPATE"></span>Test and track the update (recommended)
+
+Try out your updates on your devices before submitting them to the Windows Store.
+
+### <span id="Create_an_update_package"></span>Create an update package
+
+1.  Create a working folder for your update package. 
+
+    Use a new version number. This version number will apply to all of the packages in your projects.
+
+    ``` syntax
+    newupdate Update1 10.0.0.1
+    ```
+
+2.  Update the app with changes.
+
+3.  Build the app using a new version number. 
+	
+4.  Update the package info:
+
+    - Create a copy of the existing pacakge (for example, Appx.HelloWorld) under Update1\ folder and then update that with the version number.
+	
+	- Copy the new appx files to that directory.
+	
+	- Open  C:\\iot-adk-addonkit\\Source-arm\\Packages\\Appx.HelloWorld\\Appx.HelloWorld.pkg.xml, and update the version numbering.
+		
+5.  Build the update package
+
+    ``` syntax
+    createupdatepkgs Update1
+    ```
+
+	The output goes to C:\\iot-adk-addonkit\\Build\\arm\\Update1.
+
+### <span id="Apply_the_update_directly_to_the_device"></span><span id="apply_the_update_directly_to_the_device"></span><span id="APPLY_THE_UPDATE_DIRECTLY_TO_THE_DEVICE"></span>Apply the update directly to the device
+
+1.  Copy the .cab file to the device. You can do this using an FTP tool such as [WinSCP](http://winscp.net), or by copying the file directly to the device's drive (such as a micro SD card).
 
 2.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](http://ms-iot.github.io/content/en-US/win10/samples/SSH.md).)
 
@@ -57,7 +89,9 @@ Log into the device and run ApplyUpdate.exe to trigger the update process.
        Possible cause: Windows Update is in progress. Try again after the current Windows Update is completed.
 	   
 
-### <span id="Apply_update_from_the_Windows_Store"></span><span id="apply_update_from_the_windows_store"></span><span id="APPLY_UPDATE_FROM_THE_WINDOWS_STORE"></span>Apply update from the Windows Store
+### <span id="Keep_track_of_versions"></span>Keep track of versions
 
-**New for Windows 10, version 1607**: Submit your updated signed package to the Windows Store. When your devices are connected to the internet, they'll periodically check for updates from the Windows Store, and install the updates automatically. 
+Open `UpdateVersion.txt` to see descriptions of your packages. The createupdatepkgs tool updates this file when creating a new update.
 
+### <span id="Test_new_images"></span>Test new images
+Create a new package using the same procedures as shown in [Lab 1b: Add an app to your image](../../manufacture/iot/deploy-your-app-with-a-standard-board.md).
