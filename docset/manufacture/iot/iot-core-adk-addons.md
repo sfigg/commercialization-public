@@ -67,8 +67,6 @@ Some BSPs are included in each folder as a start. You can [create your own BSPs]
 
 -   **Appx.Main**: Sample package for Appx installation, shows system and network info. You can [replace it with your own app](deploy-your-app-with-a-standard-board.md).
 
--   **Appx.GlowClock**: Sample package for Appx installation, shows a glowing clock. 
-
 -   **Drivers.GPIO**: Sample package for a driver.
 
 -   **OEMFM.xml:** Feature manifest for OEM packages

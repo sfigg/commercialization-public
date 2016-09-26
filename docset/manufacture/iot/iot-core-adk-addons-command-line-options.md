@@ -205,15 +205,9 @@ inf2pkg C:\test\testdriver.inf
 
 ## <span id="iotcoreshell.cmd"></span><span id="IOTCORESHELL.CMD"></span>IoTCoreShell.cmd
 
-Opens the IoT Core Shell as an administrator. (In root folder, uses LaunchTool.cmd)
+Opens the IoT Core Shell as an administrator. (This file is in the root folder, and uses LaunchTool.cmd)
 
 After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
-
-**Error: "The system cannot find the path specified".**: If you get this, right-click the icon and modify the path in "Target" to the location you've chosen to install the tools, for example:
-
-``` syntax
-C:\Windows\System32\cmd.exe /k "C:\IoT\Tools\LaunchTool.cmd"
-```
 
 ## <span id="LaunchTool.cmd"></span>LaunchTool.cmd
 
