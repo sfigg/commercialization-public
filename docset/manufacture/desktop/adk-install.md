@@ -18,10 +18,10 @@ Some features require you to have matching versions of Windows and the ADK. Befo
 ## Install the ADK
 Install the ADK based on what works best for your enivornment.
 
-- For computers that are connected to the internet, you can [download the Windows ADK]().
+- For computers that are connected to the internet, you can [download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit).
 
-- For secure manufacturing environments, you can [install the Windows ADK offline]().
+- For secure manufacturing environments, you can [install the Windows ADK offline](adk-offline-install.md).
 
-- For automated installs, you can [install the Windows ADK from the command-line]().
+- For automated installs, you can [install the Windows ADK from the command-line](adk-silent-install.md).
 
 - To see the command line syntax, see [ADKSetup Command-Line Syntax](https://technet.microsoft.com/en-us/library/dn621910.aspx).
