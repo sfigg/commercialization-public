@@ -146,4 +146,4 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
 
-[Lab 3: Create an update package](../../service/iot/create-update-package.md)
+[Lab 3: Update apps](../../service/iot/updating-iot-core-apps.md)
