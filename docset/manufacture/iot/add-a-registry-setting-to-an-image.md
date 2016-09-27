@@ -34,7 +34,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 
-1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create a working folder for the registry key and test files, for example:
 

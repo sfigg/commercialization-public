@@ -105,7 +105,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
             </FeatureIDs>
     ```
 
-3.  Add the FeatureID to your test configuration file C:\\IoT-ADK-AddonKit\\Source-<arch>\\Products\\ProductA\\TestOEMInput.xml:
+3.  Add the FeatureID to your test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductA\\TestOEMInput.xml:
     ```
     <Feature>OEM_ProvAuto</Feature>
     ```
