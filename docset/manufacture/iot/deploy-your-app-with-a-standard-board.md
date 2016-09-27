@@ -42,7 +42,7 @@ You can skip these steps if you've already created and tested your app.
 
 **Create a package for an app**
 
-1.  Open **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+1.  Open **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 
 2.  Create a working folder for the app, for example:
