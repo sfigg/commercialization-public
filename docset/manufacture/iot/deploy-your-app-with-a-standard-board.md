@@ -25,17 +25,15 @@ You can skip these steps if you've already created and tested your app.
 
 2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **No** > **Next**. 
 
-3.  Select: 
-
-    - **Output location: C:\HelloWorld** (or any other path that doesn't include spaces.)
+3.  Select **Output location: C:\HelloWorld** (or any other path that doesn't include spaces.)
     
-    - **Generate app bundle: Never**
+4.  Select **Generate app bundle: Never**
     
-    Then click **Create**.
+5.  Click **Create**.
 
     Visual Studio creates the Appx file into C:\HelloWorld\HelloWorld_1.0.0.0_Debug_Test 
 
-4.  Optional: [Test the app](test-the-app.md). Note, you may have already tested the app as part of building the project. 
+6.  Optional: [Test the app](test-the-app.md). Note, you may have already tested the app as part of building the project. 
 
 
 ## <span id="Package_the_app"></span><span id="package_the_app"></span><span id="PACKAGE_THE_APP"></span>Package the app
