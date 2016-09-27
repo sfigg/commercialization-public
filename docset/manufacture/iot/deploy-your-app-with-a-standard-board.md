@@ -8,7 +8,7 @@ title: 'Lab 1b: Add an app to your image'
 
 # Lab 1b: Add an app to your image
 
-We're now going to take an app (like the sample [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app), package it up, and create a new image you can load onto new devices. 
+We're now going to take an app (like the sample [Hello, World!](https://developer.microsoft.com/windows/iot/samples/helloworld) app), package it up, and create a new image you can load onto new devices. 
 
 For background apps, use the same method to install and run them. Note, only one app can be selected as the default app, all other apps installed using this method run as background apps.
 
@@ -26,6 +26,7 @@ You can skip these steps if you've already created and tested your app.
 2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **No** > **Next**. 
 
 3.  Select: 
+
     - **Output location: C:\HelloWorld** (or any other path that doesn't include spaces.)
     
     - **Generate app bundle: Never**
@@ -196,9 +197,6 @@ You can skip these steps if you've already created and tested your app.
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
-
-
-****
 
 1.  From the IoT Core Shell, create the image:
 
