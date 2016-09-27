@@ -21,7 +21,7 @@ We'll use the ProjectA image we created from [Lab 1a: Create a basic image](crea
 ## <span id="Create_and_test_an_Windows_app"></span><span id="create_and_test_an_windows_app"></span><span id="CREATE_AND_TEST_AN_WINDOWS_APP"></span>Create and test an Windows app
 You can skip these steps if you've already created and tested your app.
 
-1.  Create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/en-us/windows/iot/win10/samples/HelloWorld.htm) app.
+1.  Create an app. This can be any app designed for IoT Core, saved as an Appx Package. For our example, we use the [Hello, World](https://developer.microsoft.com/windows/iot/samples/helloworld) app.
 
 2.  In Visual Studio, to save the Hello, World app as an Appx package, click **Project > Store > Create App Packages** > **No** > **Next**. 
 
