@@ -32,7 +32,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
-1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create the driver package using the .inf file as the base:
 
@@ -42,6 +42,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
     The new folder at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
 
+3. Copy the file: ACPITABL.dat to the new folder, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\Drivers.HelloBlinky\\**.
 
 **Verify that the sample files are in the package**
 
@@ -63,7 +64,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
                   DestinationDir="$(runtime.drivers)"  
                   Name="gpiokmdfdemo.sys" /> 
             <File Source="ACPITABL.dat"  
-                  DestinationDir="$(runtime.drivers)"  
+                  DestinationDir="$(runtime.system32)"  
                   Name="ACPITABL.dat" /> 
           </Files> 
         </Driver> 
@@ -85,7 +86,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 **Add your driver package to the feature manifest**
 
-1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-<arch>\\Packages\\OEMFM.xml**
+1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\OEMFM.xml**
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
@@ -109,10 +110,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
     ``` syntax
       <AdditionalFMs>
         <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
         <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
       </AdditionalFMs>
     ```
 
