@@ -50,7 +50,7 @@ You must use the matching version of the Windows ADK for the images that you pla
 |  Windows version  | Link to run ADKSetup.exe      |
 |-------------------|-------------------------------|
 | Windows 10 RTM    | [**Windows ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
-| Windows 10, version 1511 | [**Windows ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
+| Windows 10, version 1511 | [**Windows ADK**](https://go.microsoft.com/fwlink/p/?LinkId=823089) |
 
 Tools inside Windows ADK that you will use with this guide:
 
