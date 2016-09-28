@@ -33,7 +33,7 @@ To install the Windows ADK on a PC that does not have Internet access, first dow
     For example, copy the files to removable media or to a file server that the offline computer can access.
 6. On the offline computer, open a Command Prompt window as an administrator.
 7. Change to the directory that contains adksetup.exe.
-8. Run adksetup.exe. Use /quiet for a silent installation. Use /installpath to specify where to install the ADK. Use /features to specify features. For example, install Deployment Tools and Windows PE to c:\ADK silently: 
+8. Run adksetup.exe. Use /quiet for a silent installation, /installpath to specify where to install the ADK, and /features to specify features. For example, install Deployment Tools and Windows PE to c:\ADK silently: 
 
     ```
     adksetup.exe /quiet /installpath c:\ADK /features OptionId.DeploymentTools OptionId.WindowsPreinstallationEnvironment
