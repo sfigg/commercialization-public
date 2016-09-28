@@ -167,13 +167,13 @@ DISM is also improved to support applying siloed provisioning packages to a Wind
 
 The functionality for applying siloed provisioning packages using DISM is limited to support the following scenarios:
 
-- The DISM SiloedPackageProvider is not included in the Windows image, nor is it included in Windows PE, version 1607.  The Windows ADK version of DISM must be installed on the servicing host, and then launch DISM.exe from the Windows ADK installed location.  On a host that is not supported by Windows ADK installer, such as Windows PE, the required binaries can be copied to the host using the CopyDandI.cmd script.
+- The DISM SiloedPackageProvider is not included in the Windows image, nor is it included in Windows PE, version 1607.  The Windows ADK version of DISM must be installed on the servicing host, and then launch DISM.exe from the Windows ADK installed location.  On a host that is not supported by Windows ADK installer, such as Windows PE, the required binaries can be copied to the host using the CopyDandI.cmd script in *<%Windows ADK install root%>\Deployment Tools*.
 - DISM only supports applying siloed provisioning packages to a Windows image that has been applied at the root of a disk volume on a device, e.g. “C:\”.  It does not support applying siloed provisioning packages to a Windows image that is mounted for offline servicing.  The typical scenario is booting the device to Windows PE, and running the Windows ADK version of DISM in Windows PE to apply siloed provisioning packages after the Windows image has been applied to the device.
 - The DISM command to apply siloed provisioning packages to a Windows image (DISM Apply-SiloedPackage) can be run only once.  All of the siloed provisioning packages to be applied to the Windows image must be specified in the right order in a single command operation. The order of the installation will be preserved, so the packages can be restored in the same order during PBR.
 - If additional siloed provisioning packages need to be applied to a Windows desktop image that has already gone through the entire deployment process with using DISM to apply a set of siloed provisioning packages, the image can be Sysprep generalized and captured as a new model image.  DISM can then be run again to apply more siloed provisioning packages when this new model image is deployed onto other devices.
 - Siloed provisioning packages must be applied to the same architecture that they were captured on. It is not supported to capture an x86 app in an .spp and apply it to an x64 platform. 
 - Siloed provisioning packages can be applied to other editions of Windows. For example, an application captured on Windows 10 Enterprise can be applied to Windows 10 Pro.
-- Applying siloed provisioning packages is not supported on a generalized image that is set to boot into Audit mode. If booting into Audit mode is required, use Unattend.xml to reseal to Audit mode.
+- Windows 10, Version 1607, does not support applying siloed provisioning packages on a generalized image that is set to boot into Audit mode. If booting into Audit mode is required, use Unattend.xml to reseal to Audit mode.
 
 The following example runs DISM in Windows PE to apply siloed provisioning packages for Office en-us, fr-fr, and de-de to the applied Windows image on a device:
 
@@ -181,11 +181,7 @@ The following example runs DISM in Windows PE to apply siloed provisioning packa
 C:\ADKTools\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 ```
 
-For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md), or see:
-
-```syntax
-C:\ADKTools\DISM /Apply-SiloedPackage /?
-```
+For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md), or run ``` DISM.exe /Apply-SiloedPackage /? ``` from the target location of CopyDandI.cmd. 
 
 All of the siloed provisioning packages applied by DISM will be placed in %systemdrive%\Recovery\Customizations folder.  
 
@@ -234,6 +230,7 @@ And then run the tools from that location:
 ```syntax
 W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\office16_base.spp /PackagePath:e:\repository\office16_fr-fr.spp /PackagePath:e:\repository\office16_de-de.spp
 ```
+
 For the full walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 
 ## Scenarios for using siloed provisioning packages
