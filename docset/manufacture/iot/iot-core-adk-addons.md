@@ -3,89 +3,97 @@ author: kpacquer
 Description: 'The Windows 10 IoT Core ADK Add-Ons include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.'
 ms.assetid: 26cfbad0-9528-4f89-a174-f198ece325d4
 MSHAttr: 'PreferredLib:/library'
-title: 'Windows ADK IoT Core Add-ons'
+title: 'Windows ADK IoT Core Add-ons: contents'
 ---
 
-# Windows ADK IoT Core Add-ons
-
-
+# Windows ADK IoT Core Add-ons: contents
 
 The [Windows 10 IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include OEM-specific tools to create images for your IoT Core devices with your apps, board support packages (BSPs), settings, drivers, and features.
 
 The [IoT Core manufacturing guide](iot-core-adk-addons.md) walks you through building images with these tools.
 
-## <span id="Folder_structure_"></span><span id="folder_structure_"></span><span id="FOLDER_STRUCTURE_"></span>Folder structure:
+## <span id="Root_folder"></span>Root folder
+
+-   **IoTCoreShell**: Launches the [IoT Core Shell command-line](iot-core-adk-addons-command-line-options.md#iotcoreshell.cmd).
+
+-   **README.md**: Version info, links to documentation
+
+## <span id="Build"></span><span id="build"></span><span id="BUILD"></span>Build
+This is the output directory where the build contents are stored. It starts as empty.
+
+## <span id="Common_files"></span><span id="common_files"></span><span id="COMMON_FILES"></span>Common files
+
+Source files for packages that are common to all architectures.
+
+-   **Custom.Cmd**: Package to include the oemcustomization cmd. This is product-specific and picks up the input file from product directory. This also makes an registry entry with the product name.
+
+-   **Device.SystemInformation**: Package to add the System product name and manufacturer name to the image.
+
+-   **DeviceLayout.GPT4GB**: Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 4GB drives.
+
+-   **DeviceLayout.GPT2GB**: Package with GPT [drive/partition layout](device-layout.md) for UEFI-based devices with 2GB drives.
+
+-   **DeviceLayout.MBR4GB**: Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 4GB drives.
+
+-   **DeviceLayout.MBR2GB**: Package with MBR [drive/partition layout](device-layout.md) for legacy BIOS-based devices with 2GB drives.
+
+-   **ImageSettings.CrashSettings**: Package with settings for system crashes. Replaces the previous package: Registry.CrashSettings.
+
+-   **ImageSettings.VideoMode**: Package with settings for headed or headless video mode.
+
+-   **OemTools.InstallTools**: Package that automatically installs OEM apps found in the C:\OEMApps folder.
+
+-   **Provisioning.Auto**: Package used to [add a provisioning package to an image](add-a-provisioning-package-to-an-image.md). This is product specific and picks up the input ppkg file from the product directory.
+
+-   **Provisioning.Manual**: Package for manual provisioning. This depends on Custom.Cmd for triggering the provisioning.
+
+-   **Registry.Version**: Package containing registry settings with product and version information.
+
+-   **Settings.HotKey**: Sample package to demonstrate how to [add a registry setting to an image](add-a-registry-setting-to-an-image.md). This setting changes the values of the left Windows key, right Windows key, and the Alt+Right Windows key to act as the Home key.
+
+-   **OEMCommonFM.xml**: Feature manifest for OEM Common packages.
 
 
--   **IoTCoreShell**: Shortcut to launch the IoT Core Shell.
--   **Tools** (\\Tools)
--   **Common files** (\\Common), includes packages common to all architectures
--   **Source files** (\\Source-x86, \\Source-arm), includes packages specific to x86 or arm devices.
--   **Templates** (\\Templates), a directory with product template files.
--   **Build folder** (\\Build). You can use this folder to store your built binaries. It starts out empty.
+## <span id="Source"></span><span id="source"></span><span id="SOURCE"></span>Source (Source-arm, Source-x64, Source-x86)
+ 
+Source files for packages that are specific to an architecture.
+
+### <span id="BSP"></span><span id="bsp"></span>BSP
+Source files to create board support packages (BSPs). 
+
+Some BSPs are included in each folder as a start. You can [create your own BSPs](create-a-new-bsp.md) based on these packages.
+
+### <span id="Packages"></span><span id="packages"></span><span id="PACKAGES"></span>Packages
+
+-   **Appx.Main**: Sample package for Appx installation, shows system and network info. You can [replace it with your own app](deploy-your-app-with-a-standard-board.md).
+
+-   **Drivers.GPIO**: Sample package for a driver.
+
+-   **OEMFM.xml:** Feature manifest for OEM packages
+
+-   **versioninfo.txt:** Current version number. Used for [updating IoT Core apps](../../service/iot/updating-iot-core-apps.md).
+
+### <span id="Products"></span><span id="products"></span><span id="PRODUCTS"></span>Products
+
+Source file for product configurations. Use our samples (SampleA, SampleB, SampleC) or [create your own](iot-core-manfuacturing-guide.md).
+
+### <span id="Updates"></span><span id="updates"></span><span id="UPDATES"></span>Updates
+
+Source files for [app packages updates](../../service/iot/updating-iot-core-apps.md). It starts with two samples: Update1 and Update2.
+
+-   **UpdateVersions.txt**: Log of version numbers used so far.
+
+## <span id="Templates"></span><span id="templates"></span><span id="TEMPLATES"></span>Tools
+
+Includes templates used by the [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md) to create new packages and BSPs. 
 
 ## <span id="Tools"></span><span id="tools"></span><span id="TOOLS"></span>Tools
 
-
--   **createimage**: Combines product-specific packages into a new image
--   **createpkg**: Creates packages
--   **createprovpkg**: Creates provisioning packages
--   **createupdatepkgs**: Creates update packages
--   **newproduct**: Creates a new product directory based on the template file.
--   **newupdate**: Creates a new update directory based on the template file.
--   **setenv**: Sets environment variables for your architecture (x86 or arm).
--   **setversion**: Sets the version number of the packages you’re creating
-<!--- -   **updateimage**: Updates an existing package with new updates -->
-
-This folder also contains scripts used to generate packages/images.
-
-For details, see [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md).
-
-## <span id="Common_files__packages_common_to_all_architectures_"></span><span id="common_files__packages_common_to_all_architectures_"></span><span id="COMMON_FILES__PACKAGES_COMMON_TO_ALL_ARCHITECTURES_"></span>Common files (packages common to all architectures)
-
-
--   **Custom.Cmd**: Package to include the oemcustomization cmd. This is product-specific and picks up the input file from product directory. This also makes an registry entry with the product name.
--   **Provisioning.Auto**: Package for auto provisioning. This is product specific and picks up the input ppkg file from the product directory. To learn more, see [Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
--   **Provisioning.Manual**: Package for manual provisioning. This depends on Custom.Cmd for triggering the provisioning.
--   **Registry.Version**: Package containing registry settings with Product and version information.
--   **Registry.CrashSettings**: Package containing registry settings for the crash settings.
--   **Registry.TestSettings**: Sample package for OEM specific registry settings. To learn more, see [Add a registry setting to an image](add-a-registry-setting-to-an-image.md).
--   **OEMCommonFM.xml**: Feature manifest for OEM Common packages.
-
-## <span id="Source_files__packages_that_are_specific_to_an_architecture_"></span><span id="source_files__packages_that_are_specific_to_an_architecture_"></span><span id="SOURCE_FILES__PACKAGES_THAT_ARE_SPECIFIC_TO_AN_ARCHITECTURE_"></span>Source files (packages that are specific to an architecture)
-
-
-**\\Packages**: Architecture-specific sample packages:
-
--   **Appx.Main**: Sample package for Appx installation. This depends on Custom.Cmd to trigger the appx installation.
--   **Drivers.GPIO**: Sample package for a driver.
--   **OEMFM.xml:** Feature manifest for OEM packages
-
-**\\Products**: Directory containing named product configurations. It starts with sample update folders, SampleA, SampleB, and SampleC, each of which contains some of the following samples files:
-
--   OEM input files for retail and test builds:
-    -   **RetailOEMInput.xml**
-    -   **TestOEMInput.xml**
--   Image customization files:
-    -   A sample file that represents a customization, for example, **SampleAProv.cat**.
-    -   **Customizations.xml**: A sample customization file created from Windows ICD.
-    -   ***&lt;ProductName&gt;*Prov.ppkg**: A sample provisioning package created from the sample customization.xml files.
--   BSP feature manifest files:
-    -   **OEM\_RPi2FM.xml**: used for Raspberry Pi 2
-    -   **OEM\_MBMFM.xml**: used for Minnowboard MAX
-
-**\\Updates**: Directory containing named update packages. It starts with two sample update folders, Update1 and Update2, each of which contains the following files:
-
--   **Versioninfo.txt**: The text file with the version number corresponding to this update.
--   **UpdateInput.xml**: Input file for updating the FFU, lists the packages that need to be updated in the existing FFU
--   Packages with updated contents (For example, Appx.Main with version 1.0.2.0).
-
-## OK, let's build an image!
-[Start with the IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
-
+Includes the [IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md).
 
 ## <span id="related_topics"></span>Related topics
 
+[IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
 
 [IoT Core feature list](iot-core-feature-list.md)
 

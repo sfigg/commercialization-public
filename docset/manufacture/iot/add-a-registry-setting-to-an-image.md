@@ -34,7 +34,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 ## <span id="Build_a_package_for_your_test_files"></span><span id="build_a_package_for_your_test_files"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_TEST_FILES"></span>Build a package for your test files
 
-1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create a working folder for the registry key and test files, for example:
 
@@ -91,6 +91,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 **Add your file package to the feature manifest**
 
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
+
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_ConfigSettings".
 
     ``` syntax
@@ -123,6 +124,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 **Add your file package**
 
 1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductA\\TestOEMInput.xml**.
+
 2.  Make sure your feature manifest, OEMCommonFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
     ``` syntax
@@ -149,7 +151,6 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
-
 
 **Build the image**
 

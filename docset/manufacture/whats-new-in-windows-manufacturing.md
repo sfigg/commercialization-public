@@ -11,7 +11,12 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 20, 2016**
+
+-  To deploy individual Windows desktop apps, use [Siloed provisioning packages (SPPs)](desktop/siloed-provisioning-packages.md). To do this, you'll need to run a version of DISM from the Windows ADK, not the built-in version from Windows or Windows PE. The DISM installer program, WimMountADKSetup(x86/amd64).exe should be run from a non-removable drive. For a walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](desktop/add-desktop-apps-wth-spps-sxs.md). To get command-line help, use **C:\ADKTools\DISM /Apply-SiloedPackage /?**.
+
 **September 6, 2016**
+
 -  [Features on Demand](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/features-on-demand-v2--capabilities): We've added the list of [all available language features](http://download.microsoft.com/download/8/3/0/830AC3A9-68CF-4F10-9357-F27E0A03148A/Windows%2010%201607%20FOD%20to%20LP%20Mapping%20Table.xlsx).
 
 **September 2, 2016**
@@ -59,10 +64,24 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**September 22, 2016**
+
+- In Windows 10, version 1607, to [prevent automatic updates of custom BSPs](../service/iot/managing-iot-device-update.md), use the IoT\_GENERIC\_POP package in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
+
+- New [command-line options](iot/iot-core-adk-addons-command-line-options.md): 
+
+    - Nightly build tools: **BuildAgent**, **BuildKitAgent**.
+
+    - Tools to convert apps, drivers to packages: **Appx2pkg**, **Inf2Pkg**
+
+    - Tool to create update packages: **newupdate.cmd**. Works like **newpackage.cmd**, makes tracking easier by storing version numbers (versioninfo.txt) and keeping multiple folders for each of this update for comparison (updateversions.txt).
+
 **September 6, 2016**
+
 You can set your IoT Core devices to [synchronize the time](iot/update-the-time-server.md) from one or more time servers.
 
 **August 3, 2016**
+
 By default, in Windows 10, version 1607, the built-in administrator account is now disabled. 
 
    -  To add the default account back, include the IOT_ENABLE_ADMIN feature in your feature manifest This adds the account with the user name: Administrator, and the password: `p@ssw0rd`.
@@ -94,17 +113,20 @@ Features:
    
 
 **June 28, 2016**
+
 -  Added details on signing retail images: [Build a retail image](iot/build-retail-image.md)
 
 -  Updated [Instructions to create your own BSP](iot/create-a-new-bsp.md), added details about the [IoT Device Layout](iot/device-layout.md).
 
 **June 20, 2016**
+
 *  New BSP tools added:
    -  New folder structure: BSPs are now stored in separate folders, \iot-adk-addonkit\Source-&lt;arch&gt;\BSP. Multiple projects can now more easily share the same BSP folder.
    -  Updated tool: newproduct: Now allows you to link to a custom BSP. By default, arm builds default to RPi2, x86 builds default to MBM.
    -  Updated lab: [Lab 2: Creating your own board support package](iot/create-a-new-bsp.md).
 
 **June 9, 2016:** 
+
 Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
 *  New tool: BuildImage.cmd. Similar to CreateImage.cmd, this tool can build multiple images at a time, which can be useful for automated testing.  
 
@@ -113,6 +135,7 @@ Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-opt
 *  Updated: [Update apps on your IoT Core devices](../service/iot/updating-iot-core-apps.md). You can use the same procedures to build app packages and app update packages. For Windows 10, version 1607, you can also update your apps through the Windows Store. 
 
 **May 18, 2016:** 
+
 Several updates of [command-line tools](iot/iot-core-adk-addons-command-line-options.md):
 *  Added new tools: 
    -  NewAppxPkg: Creates and prepares working folders for creating app packages based on .appx files, certificates, and dependencies.

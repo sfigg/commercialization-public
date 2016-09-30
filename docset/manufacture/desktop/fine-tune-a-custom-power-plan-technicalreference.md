@@ -76,18 +76,16 @@ You can customize all configurable Windows power options by using the `powercfg`
         **Note**  
         You must enter these values by using decimal integers. However, the values appear on the screen as hexadecimal values that are specific to the setting.
 
-         
-
         For example, to set the maximum display brightness to 50 percent brightness, enter the value as 50. When you use the `powercfg -QUERY` command to confirm the setting, the value appears as 0x00000032.
 
         ``` syntax
         Power Setting GUID: {guidPowerSetting-Brightness}  (Display brightness)
-              Minimum Possible Setting: 0x00000000
-              Maximum Possible Setting: 0x00000064
-              Possible Settings increment: 0x00000001
-              Possible Settings units: %
-            Current AC Power Setting Index: 0x00000064
-            Current DC Power Setting Index: 0x00000032
+          Minimum Possible Setting: 0x00000000
+          Maximum Possible Setting: 0x00000064
+          Possible Settings increment: 0x00000001
+          Possible Settings units: %
+         Current AC Power Setting Index: 0x00000064
+         Current DC Power Setting Index: 0x00000032
         ```
 
 2.  Adjust the value for the power setting for times when the computer is plugged in. For example, to set the display brightness level to 100 percent when the computer is plugged in, type the following:

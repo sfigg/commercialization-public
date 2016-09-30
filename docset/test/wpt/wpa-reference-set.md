@@ -103,7 +103,9 @@ using WPR.)
 
 To collect data with Xperf, enter:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>xperf -on referenceset -minbuffers 50 -maxbuffers 50 -buffersize 1024 -stackwalk PageAccess+PageRelease+PageRangeAccess+PageRangeRelease+PagefileMappedSectionCreate+VirtualFree+PagefileMappedSectionDelete -start user -on Win32HeapRanges -minbuffers 10 -maxbuffers 10 -buffersize 1024</b>
+<blockquote>
+<b>xperf -on referenceset -minbuffers 50 -maxbuffers 50 -buffersize 1024 -stackwalk PageAccess+PageRelease+PageRangeAccess+PageRangeRelease+PagefileMappedSectionCreate+VirtualFree+PagefileMappedSectionDelete -start user -on Win32HeapRanges -minbuffers 10 -maxbuffers 10 -buffersize 1024</b>
+</blockquote>
 
 Run your scenario, and then stop collecting data by entering:
 
@@ -456,44 +458,133 @@ The **Allocation Stack** column identifies where the memory is allocated.
 The **Impacting Stack** column shows why the memory is accessed.
 
 
-# Recommendations for measuring and improving reference set
+# Recommendations for measuring and improving performance in a reference set
 
 The following general recommendations are helpful for measuring a
 reference set and improving the effects of an app or feature on the
-system:
+system. Use these recommendations in the following order:
+
+-   [Examine steady-state use and peak use of memory](#examine-steady-state-use-and-peak-use-of-memory)
+
+-   [Focus on the process with the greatest effects](#focus-on-the-process-with-the-greatest-effects)
+
+-   [Characterize and categorize memory pages](#characterize-and-categorize-memory-pages)
+
+<blockquote><b>Note</b>&nbsp;&nbsp;&nbsp;Tracing uses memory, which is visible as non-paged pool with the description "ETWB" for <strong>ETW buffers</strong>.</blockquote>
 
 
-<ol style="list-style-type: decimal">
-<li><p>Two aspects are important: (1) the amount of memory usage that is in a steady state at the end of the scenario, and (2) where the usage peaks occur in the reference set and why.</p></li>
-<li><p>Focus on processes that have the greatest effect on the reference set, including the process of interest as well as other system processes.</p></li>
-<li><p>Tracing uses memory, which is visible as non-paged pool with the description “ETWB” for <em>ETW buffers</em>.</p></li>
-<li><p>Your analysis should focus first on the steady-state impact of the scenario, and then look at any specific peaks in the graphs of the reference set.</p></li>
-<li><p>Characterization needs to be for both category classes of memory pages, dynamic and file, and further divided into subcategories:</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>For file</p>
-<ol style="list-style-type: lower-roman">
-<li><p>Grouping by path tree and identifying system-related file accesses (like DLLs) and process-specific file accesses (like local databases, text files, JPEGs, and so on) is usually the best way to look at file accesses.</p></li>
-<li><p>Minimizing process-specific file accesses reduces the size of the reference set and also improves performance when testing starts before the application or feature being tested is loaded (a <em>cold scenario</em>).</p></li>
-<li><p>Essentially, diagnosing the file portion of a reference set requires knowing which DLLs are unique to your scenario and why they are being loaded, as well as any files that your application or feature accesses (for example, image files when decoding for a slideshow).</p></li>
-</ol></li>
-<li><p>For dynamic</p>
-<ol style="list-style-type: lower-roman">
-<li><p>Classify by page category into Win32Heap, VirtualAlloc, or PFMappedSection. The category can be directly attributed to the process.</p></li>
-<li><p>System-specific categories can usually be ignored for initial analysis, although major contributions (more than 2-3 MB) from the paged pool or kernel stack are usually worth examining, because such volume often indicates an overuse of threads or components, such as the registry.</p></li>
-<li><p>Applying stack tags to categorize memory usage by stack can be very helpful to identify where your memory usage is coming from.</p></li>
-<li><p>While stack tags for a reference set can give you a general idea of which processes are using the heap, you often need to do heap-specific tracing if heap usage has a significant effect in your scenario. A reference set does not provide the necessary granularity to look into the heap from an allocation standpoint, because the reference set only identifies which memory pages are referenced. A heavily fragmented heap may show a large steady-state footprint for heap usage even if the heap allocations themselves are small but scattered through the heap.</p></li>
-<li><p>VirtualAlloc: Examine specific allocation stacks that have high usage of <strong>VirtualAlloc</strong>. Viewing <strong>VirtualAlloc Commit LifeTimes</strong> in the <strong>Analysis</strong> tab displays details on commit usage by process.</p></li>
-<li><p>Are there other system processes that have greater effects on memory as a result of this scenario? Examples of candidates include services, app brokers, and antivirus scanners.</p></li>
-<li><p>Categorize to analyze costs and identify options for reduction.</p>
-<ol style="list-style-type: decimal">
-<li><p>Identify the stacks that have the highest costs.</p></li>
-<li><p>Use annotations to categorize the stacks with a name for what each is supposed to do.</p></li>
-<li><p>Ask Is the cost for each category and stack an expected amount for this scenario?</p></li>
-<li><p>Can I reduce the peaks in the active scenario? For example, by allocating memory only when necessary.</p></li>
-<li><p>Can I reduce steady-state use of memory? Releasing resources during steady state that are scenario-specific and not required. such as caches and pooled resources, can decrease the steady-state memory footprint.</p></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
+## Examine steady-state use and peak use of memory
+
+Two aspects are important: (1) the amount of memory usage that is in a
+steady state at the end of the scenario, and (2) where the usage peaks
+occur in the reference set and why. Your analysis should focus first on
+the steady-state impact of the scenario, and then look at any specific
+peaks in the graphs of the reference set.
 
 
+## Focus on the process with the greatest effects
+
+Focus on processes that have the greatest effect on the reference set,
+including the process of interest as well as other system processes.
+
+
+## Characterize and categorize memory pages
+
+Characterization needs to be for both category classes of memory pages,
+dynamic and file, and further divided into subcategories.
+
+
+### Examine memory pages in the File category
+
+The best way to examine file accesses is usually to group them by path
+tree and then identify system-related file accesses (like DLLs) and
+process-specific file accesses (like local databases, text files, JPEGs,
+and so on).
+
+Minimizing process-specific file accesses reduces the size of the
+reference set. It also improves performance to start testing before the
+application or feature being tested is loaded (a *cold scenario*).
+
+Essentially, diagnosing the file portion of a reference set requires
+knowing which DLLs are unique to your scenario and why they are being
+loaded, as well as any files that your application or feature accesses
+(for example, image files when decoding for a slideshow).
+
+
+### Examine memory pages in the Dynamic category
+
+Use the following sequence to analyze the trace of a reference set:
+
+-   [Classify by page category](#classify-by-page-category)
+
+-   [Apply stack tags](#apply-stack-tags)
+
+-   [Perform heap-specific tracing](#perform-heap-specific-tracing)
+
+-   [Examine allocations stacks that have high usage](#examine-allocations-stacks-that-have-high-usage)
+
+-   [Examine system processes that have significant effects](#examine-system-processes-that-have-significant-effects)
+
+-   [Categorize to analyze costs and identify options for reduction.](#categorize-to-analyze-costs-and-identify-options-for-reduction)
+
+<br/>
+
+#### Classify by page category
+
+Classify by page category into the following: **Win32Heap**, **VirtualAlloc**,
+or **PFMappedSection**. The category can be directly attributed to the
+process.
+
+System-specific categories can usually be ignored for initial analysis,
+although major contributions (more than 2-3 MB) from the paged pool or
+kernel stack are usually worth examining, because such volume often
+indicates an overuse of threads or components, such as the registry.
+
+
+#### Apply stack tags
+
+Applying stack tags to categorize memory usage by stack can be very
+helpful to identify where your memory usage is coming from.
+
+
+#### Perform heap-specific tracing
+
+While stack tags for a reference set can give you a general idea of
+which processes are using the heap, you often need to do heap-specific
+tracing if heap usage has a significant effect in your scenario. A
+reference set does not provide the necessary granularity to analyze the
+heap from an allocation standpoint, because the reference set only
+identifies which memory pages are referenced. A heavily fragmented heap
+may show a large steady-state footprint for heap usage even if the heap
+allocations themselves are small but scattered throughout the heap.
+
+
+#### Examine allocations stacks that have high usage
+
+VirtualAlloc: Examine specific allocation stacks that have high usage of
+**VirtualAlloc**. Viewing **VirtualAlloc Commit LifeTimes** in the
+**Analysis** tab displays details on commit usage by process.
+
+
+#### Examine system processes that have significant effects
+
+Are there other system processes that have greater effects on memory as
+a result of this scenario? Examples of candidates include services, app
+brokers, and antivirus scanners.
+
+
+#### Categorize to analyze costs and identify options for reduction
+
+After you have worked through the preceding recommendations, then use the
+following procedure to analyze the stacks that have the greatest effect
+on the system and explore ways to reduce memory costs.
+
+1.  Identify the stacks that have the highest costs.
+
+2.  Use annotations to categorize the stacks with a name for what each is supposed to do.
+
+3.  Consider whether the cost for each category and stack is an expected amount for the scenario.
+
+4.  Consider whether you can reduce the peaks in the active scenario by, for example, allocating memory only when necessary.
+
+5.  Consider whether you can reduce steady-state use of memory. For example, can you release resources during steady state that are scenario-specific and not required? Examples may include caches and pooled resources. Releasing resources may decrease the steady-state memory footprint.
