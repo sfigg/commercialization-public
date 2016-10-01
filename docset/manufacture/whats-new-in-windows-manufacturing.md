@@ -11,6 +11,12 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**September 30, 2016**
+
+-  The recommended partition size for the Windows RE partition has shrunk from 500MB to 450MB. Your own Windows RE partition size may vary, based on add-ins like [boot-critical drivers and languages](desktop/add-drivers-langs-universal-apps-sxs.md). 
+
+-  New topic: [Optimize Windows PE](desktop/winpe-optimize.md) helps you boot Windows PE faster after adding customizations like languages or boot-critical drivers.
+
 **September 20, 2016**
 
 -  To deploy individual Windows desktop apps, use [Siloed provisioning packages (SPPs)](desktop/siloed-provisioning-packages.md). To do this, you'll need to run a version of DISM from the Windows ADK, not the built-in version from Windows or Windows PE. The DISM installer program, WimMountADKSetup(x86/amd64).exe should be run from a non-removable drive. For a walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](desktop/add-desktop-apps-wth-spps-sxs.md). To get command-line help, use **C:\ADKTools\DISM /Apply-SiloedPackage /?**.

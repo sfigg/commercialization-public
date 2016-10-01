@@ -314,19 +314,13 @@ If you use an **x86** Windows 10 image:
 
 To help you learn about Windows customizations, see the [Windows 10, version 1607 OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2017/Pages/DP-OPDRoyWin10v1607CL.aspx).
 
-<!-- Continue here -->
-
 Download Windows 10 Professional from the [Digital Operations Center](http://www.microsoftoem.com/) Software Order Center, and use the Microsoft Media Creation Tool from [SOC Resources](https://moo.microsoftoem.com/okdnet/SOCResources.aspx) to generate the ISO files. OEMs can download the Windows kit that is applicable to them in terms of language and edition.
 
 #### Create an answer file
 
-An "answer file" is an XML-based file that contains setting definitions and values to use during Windows Setup. In an answer file, you specify various setup options, including how to partition disks, the location of the Windows image to install, and the product key to apply. Values that apply to the Windows installation, such as the names of user accounts, display settings, and Internet Explorer Favorites can also be specified. The answer file for Setup is typically called **Unattend.xml**.
+An answer file is an XML-based file that contains setting definitions and values to use during Windows Setup. In an answer file, you specify various setup options, including how to partition disks, the location of the Windows image to install, and the product key to apply. Values that apply to the Windows installation, such as the names of user accounts, display settings, and Internet Explorer Favorites can also be specified. The answer file for Setup is typically called **Unattend.xml**.
 
 Answer files created in Windows System Image Manager (Windows SIM) are associated with a particular Windows image. This enables validating the settings in the answer file to the settings available in the Windows image. However, because any answer file can be used to install any Windows image, if there are settings in the answer file for components that do not exist in the Windows image, those settings are ignored.
-
-This guide uses three different answer files:
-
-![Three answer files](images/three-answer-files.png)
 
 Note: You need to point Windows System Image Manager (SIM) to an install.wim before you can create and customize the answer file.
 
@@ -402,7 +396,27 @@ Note: A blank character in specialize | Microsoft-Windows-Shell-Setup | Computer
 
 Please refer to the Kit Guide Windows 10 Default Manufacturing Key OEM PDF to find default product keys for **OA3.0** and **Non-OA3.0** keys.
 
-Example: Navigate to OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf.
+#### Add files to the drive
+
+This section provides technical guidance for using setup.exe to deploy an image to copy pre-installation files to an image to use as as a base installation WIM to be used for advanced configurations. Files you may want to copy in this phase include:
+
+
+
+First, copy the OS bits to USB-B for installation:
+
+1.	Mount .img for Windows 10 1607 home in X21-08790 Win Home 10 1607 32 64 EnglishOPK
+
+2.	Copy the Windows OS Bits to USB-B storage device, into the \MyWindows folder.
+
+3.  Copy any other files you'd like to add to the drive, for example:
+
+    - OEM Logo
+
+    - Desktop wallpaper
+
+    - Desktop application installation files
+
+    - Third-party drivers
 
 #### Install Windows
 
@@ -458,7 +472,7 @@ Example: Navigate to OPK X20-74664 Win Home 10 1511 32 64 English OPK\Print Cont
 
 2.  Disconnect **USB-B** immediately after the computer reboots.
 
-If you use the AutoUnattend, the system will automatically boot into Audit mode and the System Preparation Tool (sysprep) appears. If the device boots to the Languages or the Hi there screen instead, press Ctrl+Shift+F3 to enter Audit mode. The device reboots to the Desktop and the System Preparation Tool (sysprep) appears. Ignore Sysprep for now.
+If you use the AutoUnattend, the system will automatically boot into Audit mode and the System Preparation Tool (sysprep) appears. If the device boots to the **Languages** or the **Hi there** screen instead, press Ctrl+Shift+F3 to enter Audit mode. The device reboots to the Desktop and the System Preparation Tool (sysprep) appears. Ignore Sysprep for now.
 
 Note: Many Windows features, including the Start menu and the Settings menu, do not work in this environment.
 
@@ -1312,7 +1326,7 @@ Note: If you don’t create a LayoutModification.xml file and you continue to us
     
 #### Modify the answer file
 
-1.  The OEM may wish to create a new answer file. The following sample answer file covers most the required settings for [Windows OEM Policy Document (OPD)](http://click.email.microsoftemail.com/?qs=4e5762cd9d90bfec0d11dfa9bca1a9efd4924672c363af092f176011a77178f6f1caa72260b9766a). Therefore it is recommended to use this answer file:
+1.  The OEM may wish to create a new answer file. The following sample answer file covers most the required settings for [Windows 10, version 1607 OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2017/Pages/DP-OPDRoyWin10v1607CL.aspx). Therefore it is recommended to use this answer file:
 
     <table>
     <tr>
@@ -2009,7 +2023,7 @@ OEMs must power on the PC at least once, and allow the specialize configuration 
 
 The specialize configuration pass adds hardware-specific information to the PC and is complete when Windows OOBE appears.
 
-Please reference [OEM Policy Documentation](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/COMM-Win10-OPD-RTM-Now-Avail.aspx).
+Please reference the [Windows 10, version 1607 OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2017/Pages/DP-OPDRoyWin10v1607CL.aspx).
 
 ### Create recovery media
 

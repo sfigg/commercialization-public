@@ -10,9 +10,9 @@ title: 'Lab 1e: Change settings and run scripts with an answer file'
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
-As an example, we'll add a setting that shows you how to automatically boot to a maintenance mode called audit mode. This mode allows you to perform additional tests, and capture changes. We'll use audit mode in the next few labs.
+To learn about Windows customizations, see the [Windows 10, version 1607 OEM Policy Document (OPD)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2017/Pages/DP-OPDRoyWin10v1607CL.aspx).
 
-Note: If your image is set to boot into audit mode, you won't be able to send it to customers or apply SPPs to it.
+As an example, we'll add a setting that shows you how to automatically boot to a maintenance mode called audit mode. This mode allows you to perform additional tests, and capture changes. We'll use audit mode in the next few labs.
 
 ![diagram of creating a new answer file](images/dep-win8-sxs-createanswerfile.jpg)
 
@@ -44,15 +44,13 @@ You can specify which configuration pass to add new settings:
 
 1.  Start **Windows System Image Manager**.
 
-2.  On the **File** menu, click **Select Windows Image**.
+2.  Click **File** > **Select Windows Image**.
 
-3.  In the **Select a Windows Image** dialog, browse to and select the base-image file. Next, select an edition of Windows, for example, Windows 10 Pro, and click **OK**. Click **Yes** to create the catalog file. Windows SIM creates the file based on the base-image file, and saves it to the Windows desktop. This process can take several minutes.
+3.  In **Select a Windows Image**, browse to and select the image file (D:\install.wim). Next, select an edition of Windows, for example, Windows 10 Pro, and click **OK**. Click **Yes** to create the catalog file. Windows SIM creates the file based on the image file, and saves it to the same folder as the image file. This process can take several minutes.
 
-    The catalog file appears in the **Windows Image** pane. Windows SIM also lists the configurable components and packages in that image.
+    The catalog file appears in the **Windows Image** pane. Windows SIM lists the configurable components and packages in that image.
 
     **Troubleshooting:** If Windows SIM does not create the catalog file, try the following steps:
-
-    -   Make sure you are using a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) version of the Windows Assessment and Deployment Kit (Windows ADK) tools.
 
     -   To create a catalog file for either 32-bit or ARM-based devices, use a 32-bit device.
 
@@ -60,7 +58,7 @@ You can specify which configuration pass to add new settings:
 
 **Create an answer file**
 
--   On the **File** menu, click **New Answer File**.
+-   Click **File** > **New Answer File**.
 
     The new answer file appears in the **Answer File** pane.
 
@@ -142,8 +140,10 @@ You can specify which configuration pass to add new settings:
 
     This process may take several minutes.
 
-**Try it out**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
+4.  Copy the new image to the storage drive.
+
+## <span id="Try_it_out"></span>Try it out
+[Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -151,12 +151,14 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     Note, because this image is set to boot to audit mode, you won't be able to apply any siloed provisioning packages. 
 4.  Disconnect the drives, then reboot (`exit`).
 
-**Step 16: Verify settings and scripts**
+**Verify settings and scripts**
 If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
 
 1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
 
 Leave the PC booted into audit mode to continue to either of the following labs:
+
 -  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
+
 -  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 

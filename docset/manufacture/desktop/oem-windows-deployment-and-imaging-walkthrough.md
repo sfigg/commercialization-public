@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: KPacquer
 Description: OEM Windows Desktop Deployment and Imaging Lab
 ms.assetid: 04dace4d-9df9-4ead-b23d-f168832c9c04
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -10,7 +10,9 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for creating base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
-New in this lab: With siloed provisioning packages, you can now capture and apply Windows desktop applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
+New in this lab: 
+
+* With siloed provisioning packages, you can now capture and apply Windows desktop applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
 
 Let's get started!
 

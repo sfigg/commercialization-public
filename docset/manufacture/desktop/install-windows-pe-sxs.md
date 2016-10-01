@@ -55,6 +55,8 @@ To add the drivers, you'll mount the image. Mounting an image maps the contents 
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
+    **Note** For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](desktop/winpe-optimize.md) to help reduce the boot time.
+
 **Create a bootable drive**
 
 1.  Plug in a USB key that you don't mind formatting. Note the drive letter it uses, for example, D.
@@ -89,15 +91,6 @@ To add the drivers, you'll mount the image. Mounting an image maps the contents 
     WinPE starts at a command line, and runs **wpeinit** to set up the system. This can take a few minutes.
 
 Leave this PC booted to Windows PE for now. 
-	
+
 Next step: [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  
-
- 
-
- 
-
-
-
-
-
