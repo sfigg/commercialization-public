@@ -258,16 +258,16 @@ columns in the table view are especially important:
 -  [Allocation stack](#allocation-stack)
 -  [Impacting stack](#impacting-stack)
 
+If one of these columns is missing from your view in WPA, you can add it by right-clicking a column heading in the current view and then selecting the missing column from the list.
+
 All three reference set views provide 4 different columns providing sizes of the memory being counted:
 
--  Size (Process View): the total set of pages referenced by the given process
--  Size (System View): the set of pages referenced by 
--  Impact Size (Process View)
--  Impact Size (System View) 
+-  **Size (Process View)**: the total set of pages referenced by the given process
+-  **Size (System View)**: the set of pages referenced by 
+-  **Impact Size (Process View)**
+-  **Impact Size (System View)** 
 
 Different views show different columns by default, but they’re all available in all of the refset views if you look for them, and they add up sizes the same way no matter which views you use them in.
-
-<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;If one of these columns is missing from your view in WPA, you can add it by right-clicking a column heading in the current view and then selecting the missing column from the list.</p></blockquote>
 
 
 ### Impact Type
