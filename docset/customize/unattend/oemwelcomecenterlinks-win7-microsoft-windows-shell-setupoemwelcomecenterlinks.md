@@ -1,0 +1,132 @@
+---
+title: OEMWelcomeCenterLinks
+description: OEMWelcomeCenterLinks
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 0ff57656-db3d-4ac0-ad9a-b3b1fe582a26
+ms.prod: W10
+ms.mktglfcycl: deploy
+ms.sitesec: msdn
+---
+
+# OEMWelcomeCenterLinks
+
+
+`OEMWelcomeCenterLinks` contains settings for shortcuts that appear as tasks in the OEM First Run application Jump List.
+
+**Note**  
+This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only. The OEM First Run application is not available in Windows 8.
+
+ 
+
+Each of the settings under `OEMWelcomeCenterLinks` specifies the complete path and the file name of a shortcut file with a .lnk file name extension. The path to the shortcut file must refer to a location on the destination computer.
+
+Each shortcut file must include the complete path of a corresponding program, Web page, or document.
+
+We recommend that you do not add the shortcut by using the environment variable: `%USERPROFILE%`. Shortcuts added by using `%USERPROFILE%` are applied only to the profile of the next user to log on to the computer. Also, if the setting is applied during the **auditUser** configuration pass, the shortcut is applied only to the temporary administrator account, which is removed after the computer exits audit mode.
+
+## In This Section
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>[Link0](link0-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink0.md)</p></td>
+<td><p>Specifies the path to the first shortcut.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Link1](link1-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink1.md)</p></td>
+<td><p>Specifies the path to the second shortcut.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Link2](link2-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink2.md)</p></td>
+<td><p>Specifies the path to the third shortcut.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Link3](link3-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink3.md)</p></td>
+<td><p>Specifies the path to the fourth shortcut.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Link4](link4-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink4.md)</p></td>
+<td><p>Specifies the path to the fifth shortcut.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Link5](link5-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink5.md)</p></td>
+<td><p>Specifies the path to the sixth shortcut.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Link6](link6-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink6.md)</p></td>
+<td><p>Specifies the path to the seventh shortcut.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Link7](link7-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink7.md)</p></td>
+<td><p>Specifies the path to the eighth shortcut.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Link8](link8-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink8.md)</p></td>
+<td><p>Specifies the path to the ninth shortcut.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Link9](link9-win7-microsoft-windows-shell-setupoemwelcomecenterlinkslink9.md)</p></td>
+<td><p>Specifies the path to the tenth shortcut.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+### Valid Configuration Passes
+
+specialize
+
+auditUser
+
+oobeSystem
+
+### Parent Hierarchy
+
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **OEMWelcomeCenterLinks**
+
+### Applies To
+
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+
+### XML Example
+
+The following XML output shows how to set a group of First Run shortcuts in the OEM First Run application Jump List.
+
+``` syntax
+<OEMWelcomeCenterLinks>
+   <Link0>%SystemDrive%\Fabrikam\Welcome\View license agreement.lnk</Link0>
+   <Link1>%SystemDrive%\Fabrikam\Welcome\Register your new Fabrikam computer.lnk</Link1>
+   <Link2>%SystemDrive%\Fabrikam\Welcome\Set up an Internet connection.lnk</Link2>
+   <Link3>%SystemDrive%\Fabrikam\Welcome\Install an Antivirus program.lnk</Link3>
+   <Link4>%SystemDrive%\Fabrikam\Welcome\Back up your data.lnk</Link4>
+   <Link5>%SystemDrive%\Fabrikam\Welcome\Get tools from the Fabrikam Download Center.lnk</Link5>
+   <Link6>%SystemDrive%\Fabrikam\Welcome\Purchase accessories for your Fabrikam computer.lnk</Link6>
+   <Link7>%SystemDrive%\Fabrikam\Welcome\Extend your warranty.lnk</Link7>
+   <Link8>%SystemDrive%\Fabrikam\Welcome\Learn about other Fabrikam products.lnk</Link8>
+   <Link9>%SystemDrive%\Fabrikam\Welcome\Send feedback to Fabrikam.lnk</Link9>
+</OEMWelcomeCenterLinks>
+```
+
+## Related topics
+
+
+[OEMWelcomeCenter](oemwelcomecenter-win7-microsoft-windows-shell-setupoemwelcomecenter.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20OEMWelcomeCenterLinks%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

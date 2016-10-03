@@ -1,0 +1,166 @@
+---
+title: Microsoft-Windows-Shell-Setup
+description: Microsoft-Windows-Shell-Setup
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: eeac1b17-6ef9-4ba6-9888-7adf9387ec04
+ms.prod: W10
+ms.mktglfcycl: deploy
+ms.sitesec: msdn
+---
+
+# Microsoft-Windows-Shell-Setup
+
+
+Microsoft-Windows-Shell-Setup contains elements and settings that control how the Windows® operating system shell is installed on a destination computer.
+
+## In This Section
+
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>[AutoLogon](autologon-win7-microsoft-windows-shell-setupautologon.md)</p></td>
+<td><p>Specifies credentials for an account that is used to automatically log on to the computer.</p></td>
+</tr>
+<tr class="even">
+<td><p>[BluetoothTaskbarIconEnabled](bluetoothtaskbariconenabled-win7-microsoft-windows-shell-setupbluetoothtaskbariconenabled.md)</p></td>
+<td><p>Specifies whether to enable the Bluetooth taskbar icon.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[ComputerName](computername-win7-microsoft-windows-shell-setupcomputername.md)</p></td>
+<td><p>Specifies the name of the computer.</p></td>
+</tr>
+<tr class="even">
+<td><p>[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
+<td><p>Configure to support prompts triggered by changes to [ConvertibleSlateMode](convertibleslatemode-win8-microsoft-windowsgpiobuttonsconvertibleslatemode.md). OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[CopyProfile](copyprofile-win7-microsoft-windows-shell-setupcopyprofile.md)</p></td>
+<td><p>Specifies whether the default user profile that is normally stored in the C:\Users\Default User folder is overwritten by copying the current user's profile.</p></td>
+</tr>
+<tr class="even">
+<td><p>[DisableAutoDaylightTimeSet](disableautodaylighttimeset-win7-microsoft-windows-shell-setupdisableautodaylighttimeset.md)</p></td>
+<td><p>Specifies whether to enable the destination computer to automatically change between daylight saving time and standard time.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Display](display-win7-microsoft-windows-shell-setupdisplay.md)</p></td>
+<td><p>Specifies display settings to apply to a destination computer.</p></td>
+</tr>
+<tr class="even">
+<td><p>[FirstLogonCommands](firstlogoncommands-win7-microsoft-windows-shell-setupfirstlogoncommands.md)</p></td>
+<td><p>Specifies commands to run the first time that an end user logs on to the computer.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[FolderLocations](folderlocations-win7-microsoft-windows-shell-setupfolderlocations.md)</p></td>
+<td><p>Specifies the location of the user profile and program data folders.</p>
+<div class="alert">
+<strong>Important</strong>  
+<p>This setting should be used only in a test environment. If you change the default location of the user profile directories or program data folders to a volume other than the system volume, you cannot service your image.</p>
+</div>
+<div>
+ 
+</div></td>
+</tr>
+<tr class="even">
+<td><p>[LogonCommands](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md)</p></td>
+<td><p>Specifies commands to run when an end user logs on to the computer.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[NotificationArea](notificationarea-win7-microsoft-windows-shell-setupnotificationarea.md)</p></td>
+<td><p>Specifies settings that are related to the system notification area at the far right of the taskbar.</p></td>
+</tr>
+<tr class="even">
+<td><p>[OEMInformation](oeminformation-win7-microsoft-windows-shell-setupoeminformation.md)</p></td>
+<td><p>Specifies information about the OEM, including the name, the model of the computer, and a logo for the OEM.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[OEMName](oemname-win8-microsoft-windows-shell-setupoemname.md)</p></td>
+<td><p>Specifies the name of the OEM for the group or groups of app tiles that you pin to the Start screen.</p></td>
+</tr>
+<tr class="even">
+<td><p>[OfflineUserAccounts](microsoft-windows-shell-setup-offlineuseraccounts.md)</p></td>
+<td><p>Specifies local accounts to be created, domain accounts to be added, and the administrator password.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[OOBE](oobe-win7-microsoft-windows-shell-setupoobe.md)</p></td>
+<td><p>Specifies values that suppress certain pages of OOBE.</p></td>
+</tr>
+<tr class="even">
+<td><p>[ProductKey](productkey-win7-microsoft-windows-shell-setupproductkey.md)</p></td>
+<td><p>Specifies the product key for the Windows edition.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[RegisteredOrganization](registeredorganization-win7-microsoft-windows-shell-setupregisteredorganization.md)</p></td>
+<td><p>Specifies information about the computer's owner.</p></td>
+</tr>
+<tr class="even">
+<td><p>[RegisteredOwner](registeredowner-win7-microsoft-windows-shell-setupregisteredowner.md)</p></td>
+<td><p>Specifies information about the organization of the computer's owner.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[ShowPowerButtonOnStartScreen](showpowerbuttononstartscreen-win7-microsoft-windows-shell-setupshowpowerbuttononstartscreen.md)</p></td>
+<td><p>Specifies that the <strong>Power Options</strong> button is visible on the Start screen.</p></td>
+</tr>
+<tr class="even">
+<td><p>[SignInMode](microsoft-windows-shell-signinmode.md)</p></td>
+<td><p>Specifies whether users switch to tablet mode by default after signing in.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[StartTiles](starttiles-win8-microsoft-windows-shell-setupstarttiles.md)</p></td>
+<td><p>Specifies the position of up to 24 app tiles on the <strong>Start</strong> screen, and one app badge on the <strong>Lock</strong> screen.</p></td>
+</tr>
+<tr class="even">
+<td><p>[TaskbarLinks](taskbarlinks-win7-microsoft-windows-shell-setuptaskbarlinks.md)</p></td>
+<td><p>Specifies shortcuts to display on the taskbar. You can specify up to three links.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Themes](themes-win7-microsoft-windows-shell-setupthemes.md)</p></td>
+<td><p>Specifies custom elements of the Windows visual style.</p></td>
+</tr>
+<tr class="even">
+<td><p>[TimeZone](timezone-win7-microsoft-windows-shell-setuptimezone.md)</p></td>
+<td><p>Specifies the computer's time zone.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[UserAccounts](useraccounts-win7-microsoft-windows-shell-setupuseraccounts.md)</p></td>
+<td><p>Specifies local accounts to be created or domain accounts to be added during installation.</p></td>
+</tr>
+<tr class="even">
+<td><p>[VisualEffects](visualeffects-win7-microsoft-windows-shell-setupvisualeffects.md)</p></td>
+<td><p>Specifies additional display settings.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[WindowsFeatures](windowsfeatures-win7-microsoft-windows-shell-setupwindowsfeatures.md)</p></td>
+<td><p>Specifies whether to show entry points for Internet Explorer®, Media Center, and Windows Media® Player.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Applies To
+
+
+To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](p_wsim.configure_components_and_settings_in_an_answer_file_win8).
+
+## Related topics
+
+
+[Components](components-b-unattend.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Microsoft-Windows-Shell-Setup%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+
