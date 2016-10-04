@@ -827,6 +827,24 @@
 ### [Disabling the initial setup process](manufacture/mobile/disabling-the-initial-setup-process.md)
 ### [Reset protection](manufacture/mobile/reset-protection.md)
 
+## [Building and flashing mobile images](manufacture/mobile/building-and-flashing-images.md)
+### [Build a mobile image using Windows ICD](manufacture/mobile/build-a-mobile-image-using-windows-icd.md)
+### [Build a mobile image using ImgGen.cmd](manufacture/mobile/building-a-phone-image-using-imggencmd.md)
+### [Build a mobile image using a hybrid method](manufacture/mobile/build-a-mobile-image-using-windows-provisioning-and-mcsf-answer-files.md)
+### [Define the image using OEMInput and feature manifest files](manufacture/mobile/define-the-image-using-oeminput-and-feature-manifest-files.md)
+#### [OEMInput file contents](manufacture/mobile/oeminput-file-contents.md)
+#### [Optional features for building mobile images](manufacture/mobile/optional-features-for-building-images.md)
+#### [Feature manifest file contents](manufacture/mobile/feature-manifest-file-contents.md)
+#### [Create a feature and include it in an image](manufacture/mobile/create-a-feature-and-include-it-in-an-image.md)
+#### [Adding a driver to a test image](manufacture/mobile/adding-a-driver-to-a-test-image.md)
+#### [Feature groupings and constraints](manufacture/mobile/feature-groupings-and-constraints.md)
+#### [Set device platform information](manufacture/mobile/set-device-platform-information.md)
+### [Sign a full flash update (FFU) image](manufacture/mobile/sign-a-full-flash-update--ffu--image.md)
+### [Use the flashing tools provided by Microsoft](manufacture/mobile/use-the-flashing-tools-provided-by-microsoft.md)
+### [IUTool.exe: Update packages on a device](manufacture/mobile/iutool-exe--update-packages-on-a-phone.md)
+#### [IUTool error codes](manufacture/mobile/iutool-error-codes.md)
+### [Update packages on a device and get package update logs](manufacture/mobile/update-packages-on-a-phone-and-get-package-update-logs.md)
+### [Update packages in an .FFU image file](manufacture/mobile/update-packages-in-an-ffu-image-file.md)
 
 
 
