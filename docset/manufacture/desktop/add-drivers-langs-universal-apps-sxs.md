@@ -13,8 +13,7 @@ Some customizations have special requirements:
 *  Language updates have a specific order they need to be installed in.
 *  Universal apps should be installed after adding your languages, so that their language-specific assets are installed properly on first boot.
 
-The recovery (Windows RE) image file is included in the Windows image. To modify it, you'll need to mount the Windows image, then mount the recovery image that's inside it.
-(To save time, you can choose to download Windows RE images from the Microsoft Connect website that have languages pre-installed for different regions - these steps aren't covered in this lab.)
+The recovery (Windows RE) image file is included in the Windows image. To modify it, you'll need to mount the Windows image, then mount the recovery image that's inside it. (To save time, you can choose to download Windows RE images from the Microsoft Connect website that have languages pre-installed for different regions - these steps aren't covered in this lab.)
 
 ## <span id="prepimages"></span><span id="PREPIMAGES"></span>Mount the Windows image and its recovery image
 
@@ -148,13 +147,13 @@ The following table shows the types of language packages and components availabl
 <tbody>
 <tr class="odd">
 <td align="left">Language pack</td>
-<td align="left"><code>lp.cab</code></td>
+<td align="left"><code>Microsoft-Windows-Client-Language-Pack_x64_es-es</code></td>
 <td align="left">None</td>
 <td align="left">UI text, including basic Cortana capabilities.</td>
 </tr>
 <tr class="even">
 <td align="left">Language interface pack</td>
-<td align="left"><code>lp.cab</code></td>
+<td align="left"><code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es</code></td>
 <td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
@@ -313,7 +312,7 @@ Note, in previous versions, it was required to first remove inbox apps. This is 
 1.  Re-install the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
     ``` syntax
-    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.appxbundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
+    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.bundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
     ```
 
 **Step 9: Add Windows Universal apps or Windows 8.1 Store apps (Optional)**
@@ -408,10 +407,12 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     State : Installed
     ```
 
-**Step 11: Add the files you need to modify the Start layout (Optional)**
+**Step 11: Add the files you need to modify the Start tile and Taskbar pin layouts (Optional)**
 
-In Windows 10, OEMs can modify the default Start layout and specify the layout of the OEM tiles by creating a LayoutModification.xml file and placing this file in the correct system location.
+In Windows 10, OEMs can modify the default Start tile layout and specify the layout of the OEM tiles by creating a LayoutModification.xml file and placing this file in the correct system location.
+
 1.  Create a LayoutModification.xml file. For this lab, you can use the sample from the Pre-Requisites document. The sample will pin Office, OneNote and Reader to Start if they are preloaded on the device (Step 8). To create your own LayoutModification.xml file by using an XML editor, see the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
+
 2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
     ``` syntax
@@ -424,8 +425,9 @@ In Windows 10, OEMs can modify the default Start layout and specify the layout 
 
 **Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. You'll learn how to make sure these settings stay on the device in [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 
-## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
+4.  To add a taskbar layout in 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 
+## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
 
 ## <span id="Unmount_the_images"></span> Unmount the images
 
