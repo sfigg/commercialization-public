@@ -23,7 +23,7 @@ If you create a user account that does not include administrative privileges, th
 
 When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](mode-win7-microsoft-windows-deploymentresealmode.md) = Audit.
 
-**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](p_adk_online.add_a_custom_script_to_windows_setup_win8).
+**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
 
  
 

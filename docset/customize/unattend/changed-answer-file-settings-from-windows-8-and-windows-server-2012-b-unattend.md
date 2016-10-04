@@ -346,11 +346,11 @@ These settings in the Microsoft-Windows-IE-InternetExplorer component are remove
 ## Related topics
 
 
-[Changed Answer File Settings from Windows 7 and Windows Server 2008 R2](p_unattend.changed_answer_file_settings_from_windows_7_and_windows_server_2008_r2_b_unattend)
+[Changed Answer File Settings from Windows 7 and Windows Server 2008 R2](changed-answer-file-settings-from-windows-7-and-windows-server-2008-r2-b-unattend.md)
 
-[Changed Answer File Settings from Windows Vista and Windows Server 2008](p_unattend.changed_answer_file_settings_from_windows_vista_and_windows_server_2008_b_unattend)
+[Changed Answer File Settings from Windows Vista and Windows Server 2008](changed-answer-file-settings-from-windows-vista-and-windows-server-2008-b-unattend.md)
 
-[Changed Answer File Settings from Windows XP and Windows Server 2003](p_unattend.changed_answer_file_settings_from_windows_xp_and_windows_server_2003_b_unattend)
+[Changed Answer File Settings from Windows XP and Windows Server 2003](changed-answer-file-settings-from-windows-xp-and-windows-server-2003-b-unattend.md)
 
  
 

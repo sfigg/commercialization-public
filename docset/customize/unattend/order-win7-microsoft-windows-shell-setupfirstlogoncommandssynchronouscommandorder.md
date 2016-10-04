@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Order` specifies the order in which the [SynchronousCommand](synchronouscommand-win7-microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) is to be run at first logon.
 
-**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](p_adk_online.add_a_custom_script_to_windows_setup_win8).
+**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
 
  
 

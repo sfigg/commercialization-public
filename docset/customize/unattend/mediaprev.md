@@ -49,7 +49,7 @@ String
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.Microsoft-Windows-Embedded-KeyboardFilterService) | **MediaPrev**
+[Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md) | **MediaPrev**
 
 ## Valid Configuration Passes
 
@@ -59,7 +59,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.Microsoft-Windows-Embedded-KeyboardFilterService).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md).
 
 ## XML example
 

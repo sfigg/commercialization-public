@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DefaultAutoConnectSharedState
 
 
-If enabled, the OOBE **Wi-Fi Sense** checkbox to share networks with contacts will be checked. This checkbox will not appear unless [WiFiSenseAllowed](p_unattend.microsoft_windows_wifinetworkmanager_wifisenseallowed) is enabled.
+If enabled, the OOBE **Wi-Fi Sense** checkbox to share networks with contacts will be checked. This checkbox will not appear unless [WiFiSenseAllowed](microsoft-windows-wifinetworkmanager-wifisenseallowed.md) is enabled.
 
 **This setting has been deprecated in Windows 10, version 1607**. The information about this deprecated setting is provided for reference only. The Wi-Fi Sense credential sharing feature has been removed.
 

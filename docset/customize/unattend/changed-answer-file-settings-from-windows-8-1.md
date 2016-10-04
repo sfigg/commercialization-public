@@ -206,7 +206,7 @@ These Windows 10 for desktop editions and Windows Server 2016 settings have ch
 <tr class="even">
 <td><p>Microsoft-Windows-Setup-Shell\Deployment\FirstLogonCommands\[SynchronousCommand](firstlogoncommands-win7-microsoft-windows-shell-setupfirstlogoncommands.md)</p></td>
 <td><p>Starts a command or script after the user completes OOBE.</p></td>
-<td><p>This command now works like [LogonCommands\AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](p_adk_online.add_a_custom_script_to_windows_setup_win8).</p></td>
+<td><p>This command now works like [LogonCommands\AsynchronousCommand](logoncommands-win7-microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft-Windows-Deployment\[Reseal](reseal-win7-microsoft-windows-deploymentreseal.md)</p></td>

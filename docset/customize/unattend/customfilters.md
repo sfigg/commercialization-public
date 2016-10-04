@@ -20,12 +20,12 @@ DataTypeEnum
 ## Values
 
 
-An enumeration containing one or more [WEKF\_CustomKey](p_enterprise_customizations.wekf_customkey) values.
+An enumeration containing one or more [WEKF\_CustomKey](https://msdn.microsoft.com/library/windows/hardware/mt633814) values.
 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.Microsoft-Windows-Embedded-KeyboardFilterService) | **CustomFilters**
+[Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md) | **CustomFilters**
 
 ## Valid Configuration Passes
 
@@ -35,7 +35,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.Microsoft-Windows-Embedded-KeyboardFilterService).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Embedded-KeyboardFilterService](microsoft-windows-embedded-keyboardfilterservice.md).
 
  
 

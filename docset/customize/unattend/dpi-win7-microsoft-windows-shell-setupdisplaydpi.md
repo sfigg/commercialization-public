@@ -374,7 +374,7 @@ The following XML output sets the display resolution to 1900 x 1200, and adjus
 
 [Display](display-win7-microsoft-windows-shell-setupdisplay.md)
 
-[TouchUISize](p_unattend.touchuisize_win7_microsoft_windows_tabletpc_platform_input_coretouchuisize)
+[TouchUISize](touchuisize-win7-microsoft-windows-tabletpc-platform-input-coretouchuisize.md)
 
 [High DPI](http://go.microsoft.com/fwlink/?LinkId=149149)
 

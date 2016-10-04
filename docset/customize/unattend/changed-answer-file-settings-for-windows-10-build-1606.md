@@ -47,11 +47,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](p_icd_settings.shell_desktopoptimizations_gotodesktoponsignin)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](https://msdn.microsoft.com/library/windows/hardware/dn953808)</p></td>
 <td><p>New. Specifies to go to the desktop instead of Start Screen when signing in or when all the apps on a screen are closed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-ShowWindowsStoreAppsOnTaskbar](p_icd_settings.shell_desktopoptimizations_showwindowsstoreappsontaskbar)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-ShowWindowsStoreAppsOnTaskbar](https://msdn.microsoft.com/library/windows/hardware/dn953809)</p></td>
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
@@ -147,7 +147,7 @@ The following settings are no longer available in Windows 10, version 1607:
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TextInput](p_icd_settings.policies_textinput)\AllowKoreanExtendedHanja</p></td>
+<td><p>[TextInput](https://msdn.microsoft.com/library/windows/hardware/mt219159)\AllowKoreanExtendedHanja</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 </tbody>

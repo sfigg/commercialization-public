@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `OfflineLocalAccounts` specifies offline local accounts to be created during installation.
 
-You can use the **sysprep/generalize** command in conjunction with `OfflineLocalAccounts` to change account information. See the B[Best Practices for Authoring Answer Files](p_wsim.best_practices_for_authoring_answer_files_win8) topic for details.
+You can use the **sysprep/generalize** command in conjunction with `OfflineLocalAccounts` to change account information. See the B[Best Practices for Authoring Answer Files](https://msdn.microsoft.com/library/windows/hardware/dn915073) topic for details.
 
 ## Child Elements
 

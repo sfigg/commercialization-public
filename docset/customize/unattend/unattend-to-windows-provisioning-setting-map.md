@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Unattend to Windows Provisioning settings map
 
 
-This topic shows the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) Unattend components and settings (which are configurable in [Windows System Image Manager](p_wsim.windows_system_image_manager_user_interface_overview_win8)) and their equivalent Windows Provisioning setting group and setting name (which are configurable in [Windows Imaging and Configuration Designer](p_icd.icd_portal)).
+This topic shows the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) Unattend components and settings (which are configurable in [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922447)) and their equivalent Windows Provisioning setting group and setting name (which are configurable in [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)).
 
 **Note**  
 Due to the design change in Windows 10, settings marked **N/A** are not supported when using the Windows Provisioning framework or Windows Imaging and Configuration Designer (ICD).
@@ -25,7 +25,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name  | Windows Provisioning setting group and name                              |
 |------------------------|--------------------------------------------------------------------------|
-| - EnableCaptureMonitor | [/Audio/EnableCaptureMonitor](p_icd_settings.audio_enablecapturemonitor) |
+| - EnableCaptureMonitor | [/Audio/EnableCaptureMonitor](https://msdn.microsoft.com/library/windows/hardware/dn953351) |
 
  
 
@@ -34,7 +34,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name            | Windows Provisioning setting group and name                                                  |
 |----------------------------------|----------------------------------------------------------------------------------------------|
-| - EnableVolumeControlWhileLocked | [/Audio/EnableVolumeControlWhileLocked](p_icd_settings.audio_enablevolumecontrolwhilelocked) |
+| - EnableVolumeControlWhileLocked | [/Audio/EnableVolumeControlWhileLocked](https://msdn.microsoft.com/library/windows/hardware/dn953352) |
 
  
 
@@ -61,7 +61,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                            |
 |-----------------------|------------------------------------------------------------------------|
-| - MaintainServerList  | [/Domain/MaintainServerList](p_icd_settings.domain_maintainserverlist) |
+| - MaintainServerList  | [/Domain/MaintainServerList](https://msdn.microsoft.com/library/windows/hardware/dn953389) |
 
  
 
@@ -70,8 +70,8 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                      |
 |-----------------------|------------------------------------------------------------------|
-| - CameraSoundLevel    | [/Audio/CameraSoundLevel](p_icd_settings.audio_camerasoundlevel) |
-| - NoPhysicalCameraLED | [/Camera/NoPhysicalLED](p_icd_settings.camera_nophysicalled)     |
+| - CameraSoundLevel    | [/Audio/CameraSoundLevel](https://msdn.microsoft.com/library/windows/hardware/dn953350) |
+| - NoPhysicalCameraLED | [/Camera/NoPhysicalLED](https://msdn.microsoft.com/library/windows/hardware/dn953359)     |
 
  
 
@@ -83,8 +83,8 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | - AuditComputerName       | N/A                                                                        |
 | -- MustReboot             | N/A                                                                        |
 | -- Name                   | N/A                                                                        |
-| - DeviceForm              | [/DeviceFormFactor/DeviceForm](p_icd_settings.deviceformfactor_deviceform) |
-| - DuplicatorDescription   | [/Setup/DuplicatorDescription](p_icd_settings.setup_duplicatordescription) |
+| - DeviceForm              | [/DeviceFormFactor/DeviceForm](https://msdn.microsoft.com/library/windows/hardware/mt243450) |
+| - DuplicatorDescription   | [/Setup/DuplicatorDescription](https://msdn.microsoft.com/library/windows/hardware/dn953782) |
 | - ExtendOSPartition       | N/A                                                                        |
 | -- Extend                 | N/A                                                                        |
 | -- Size                   | N/A                                                                        |
@@ -121,7 +121,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name                  | Windows Provisioning setting group and name                                                                                          |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| - SetRegionSpecificPrivacyAccessPolicy | [/CountryAndRegion/CountryCodeForExtendedCapabilityPrompts](p_icd_settings.countryandregion_countrycodeforextendedcapabilityprompts) |
+| - SetRegionSpecificPrivacyAccessPolicy | [/CountryAndRegion/CountryCodeForExtendedCapabilityPrompts](https://msdn.microsoft.com/library/windows/hardware/mt219727) |
 
  
 
@@ -141,10 +141,10 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                                                    |
 |-----------------------|------------------------------------------------------------------------------------------------|
-| - Description         | [/HelpAndSupport/Description](p_icd_settings.helpandsupport_onlinesupporticondescription)      |
+| - Description         | [/HelpAndSupport/Description](https://msdn.microsoft.com/library/windows/hardware/dn953476)      |
 | - Icon                | N/A                                                                                            |
-| - Link                | [/HelpAndSupport/OnlineSupportIconLink](p_icd_settings.helpandsupport_onlinesupporticonlink)   |
-| - Title               | [/HelpAndSupport/OnlineSupportIconTitle](p_icd_settings.helpandsupport_onlinesupporticontitle) |
+| - Link                | [/HelpAndSupport/OnlineSupportIconLink](https://msdn.microsoft.com/library/windows/hardware/dn953478)   |
+| - Title               | [/HelpAndSupport/OnlineSupportIconTitle](https://msdn.microsoft.com/library/windows/hardware/dn953479) |
 
  
 
@@ -153,8 +153,8 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name           | Windows Provisioning setting group and name                                                                                  |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| - EnabledScenarioExecutionLevel | [/Diagnostics/DiskFailureEnabledScenarioExecutionLevel](p_icd_settings.diagnostics_diskfailureenabledscenarioexecutionlevel) |
-| - DfdAlertTextOverride          | [/Diagnostics/DiskFailureAlertTextOverride](p_icd_settings.diagnostics_diskfailurealerttextoverride)                         |
+| - EnabledScenarioExecutionLevel | [/Diagnostics/DiskFailureEnabledScenarioExecutionLevel](https://msdn.microsoft.com/library/windows/hardware/dn953367) |
+| - DfdAlertTextOverride          | [/Diagnostics/DiskFailureAlertTextOverride](https://msdn.microsoft.com/library/windows/hardware/dn953366)                         |
 
  
 
@@ -163,7 +163,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name                   | Windows Provisioning setting group and name                                |
 |-----------------------------------------|----------------------------------------------------------------------------|
-| - DNSDomain                             | [/DNS/DNSDomain](p_icd_settings.dns_domain)                                |
+| - DNSDomain                             | [/DNS/DNSDomain](https://msdn.microsoft.com/library/windows/hardware/dn953376)                                |
 | - DNSSuffixSearchOrder                  | N/A                                                                        |
 | -- DomainName                           | N/A                                                                        |
 | --- Key                                 | N/A                                                                        |
@@ -178,7 +178,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | ----- Key                               | N/A                                                                        |
 | ----- Value                             | N/A                                                                        |
 | --- EnableAdapterDomainNameRegistration | N/A                                                                        |
-| - UseDomainNameDevolution               | [/DNS/UseDomainNameDevolution](p_icd_settings.dns_usedomainnamedevolution) |
+| - UseDomainNameDevolution               | [/DNS/UseDomainNameDevolution](https://msdn.microsoft.com/library/windows/hardware/dn953387) |
 
  
 
@@ -187,12 +187,12 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name     | Windows Provisioning setting group and name                                                              |
 |---------------------------|----------------------------------------------------------------------------------------------------------|
-| - DisableBootMenu         | [/SMISettings/UnbrandedBoot/DisableBootMenu](p_icd_settings.smisettings_disablebootmenu)                 |
-| - DisplayDisabled         | [/SMISettings/UnbrandedBoot/DisplayDisabled](p_icd_settings.smisettings_displaydisabled)                 |
-| - HideAllBootUI           | [/SMISettings/UnbrandedBoot/HideAllBootUI](p_icd_settings.smisettings_hideallbootui)                     |
-| - HideBootLogo            | [/SMISettings/UnbrandedBoot/HideBootLogo](p_icd_settings.smisettings_hidebootlogo)                       |
-| - HideBootStatusIndicator | [/SMISettings/UnbrandedBoot/HideBootStatusIndicator](p_icd_settings.smisettings_hidebootstatusindicator) |
-| - HideBootStatusMessage   | [/SMISettings/UnbrandedBoot/HideBootStatusMessage](p_icd_settings.smisettings_hidebootstatusmessage)     |
+| - DisableBootMenu         | [/SMISettings/UnbrandedBoot/DisableBootMenu](https://msdn.microsoft.com/library/windows/hardware/mt586682)                 |
+| - DisplayDisabled         | [/SMISettings/UnbrandedBoot/DisplayDisabled](https://msdn.microsoft.com/library/windows/hardware/mt586683)                 |
+| - HideAllBootUI           | [/SMISettings/UnbrandedBoot/HideAllBootUI](https://msdn.microsoft.com/library/windows/hardware/mt586684)                     |
+| - HideBootLogo            | [/SMISettings/UnbrandedBoot/HideBootLogo](https://msdn.microsoft.com/library/windows/hardware/mt586685)                       |
+| - HideBootStatusIndicator | [/SMISettings/UnbrandedBoot/HideBootStatusIndicator](https://msdn.microsoft.com/library/windows/hardware/mt586686) |
+| - HideBootStatusMessage   | [/SMISettings/UnbrandedBoot/HideBootStatusMessage](https://msdn.microsoft.com/library/windows/hardware/mt586687)     |
 
  
 
@@ -201,11 +201,11 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                                                |
 |-----------------------|--------------------------------------------------------------------------------------------|
-| - AnimationDisabled   | [/SMISettings/CustomLogon/AnimationDisabled](p_icd_settings.smisettings_animationdisabled) |
-| - BrandingNeutral     | [/SMISettings/CustomLogon/BrandingNeutral](p_icd_settings.smisettings_brandingneutral)     |
-| - HideAutoLogonUI     | [/SMISettings/CustomLogon/HideAutologonUI](p_icd_settings.smisettings_hideautologonui)     |
-| - NoLockScreen        | [/SMISettings/CustomLogon/NoLockScreen](p_icd_settings.smisettings_nolockscreen)           |
-| - UIVerbosityLevel    | [/SMISettings/CustomLogon/UIVerbosityLevel](p_icd_settings.smisettings_uiverbositylevel)   |
+| - AnimationDisabled   | [/SMISettings/CustomLogon/AnimationDisabled](https://msdn.microsoft.com/library/windows/hardware/mt584191) |
+| - BrandingNeutral     | [/SMISettings/CustomLogon/BrandingNeutral](https://msdn.microsoft.com/library/windows/hardware/mt584192)     |
+| - HideAutoLogonUI     | [/SMISettings/CustomLogon/HideAutologonUI](https://msdn.microsoft.com/library/windows/hardware/mt584194)     |
+| - NoLockScreen        | [/SMISettings/CustomLogon/NoLockScreen](https://msdn.microsoft.com/library/windows/hardware/mt584195)           |
+| - UIVerbosityLevel    | [/SMISettings/CustomLogon/UIVerbosityLevel](https://msdn.microsoft.com/library/windows/hardware/mt584199)   |
 
  
 
@@ -214,92 +214,92 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name                    | Windows Provisioning setting group and name                                                                                                            |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - Alt                                    | [/SMISettings/KeyboardFilter/Alt](p_icd_settings.smisettings_keyboardfilter_alt)                                                                       |
-| - AltF4                                  | [/SMISettings/KeyboardFilter/AltF4](p_icd_settings.smisettings_keyboardfilter_altf4)                                                                   |
-| - AltSpace                               | [/SMISettings/KeyboardFilter/AltSpace](p_icd_settings.smisettings_keyboardfilter_altspace)                                                             |
-| - AltTab                                 | [/SMISettings/KeyboardFilter/AltTab](p_icd_settings.smisettings_keyboardfilter_alttab)                                                                 |
-| - AltWin                                 | [/SMISettings/KeyboardFilter/AltWin](p_icd_settings.smisettings_keyboardfilter_altwin)                                                                 |
-| - BrowserBack                            | [/SMISettings/KeyboardFilter/BrowserBack](p_icd_settings.smisettings_keyboardfilter_browserback)                                                       |
-| - BrowserFavorites                       | [/SMISettings/KeyboardFilter/BrowserFavorites](p_icd_settings.smisettings_keyboardfilter_browserfavorites)                                             |
-| - BrowserForward                         | [/SMISettings/KeyboardFilter/BrowserForward](p_icd_settings.smisettings_keyboardfilter_browserforward)                                                 |
-| - BrowserHome                            | [/SMISettings/KeyboardFilter/BrowserHome](p_icd_settings.smisettings_keyboardfilter_browserhome)                                                       |
-| - BrowserRefresh                         | [/SMISettings/KeyboardFilter/BrowserRefresh](p_icd_settings.smisettings_keyboardfilter_browserrefresh)                                                 |
-| - BrowserSearch                          | [/SMISettings/KeyboardFilter/BrowserSearch](p_icd_settings.smisettings_keyboardfilter_browsersearch)                                                   |
-| - BrowserStop                            | [/SMISettings/KeyboardFilter/BrowserStop](p_icd_settings.smisettings_keyboardfilter_browserstop)                                                       |
-| - ControlAltDelete                       | [/SMISettings/KeyboardFilter/CtrlAltDel](p_icd_settings.smisettings_keyboardfilter_ctrlaltdel)                                                         |
-| - ControlEscape                          | [/SMISettings/KeyboardFilter/CtrlEsc](p_icd_settings.smisettings_keyboardfilter_ctrlesc)                                                               |
-| - ControlTab                             | [/SMISettings/KeyboardFilter/CtrlTab](p_icd_settings.smisettings_keyboardfilter_ctrltab)                                                               |
-| - ControlWindowsF                        | [/SMISettings/KeyboardFilter/CtrlWinF](p_icd_settings.smisettings_keyboardfilter_ctrlwinf)                                                             |
-| - Ctrl                                   | [/SMISettings/KeyboardFilter/Ctrl](p_icd_settings.smisettings_keyboardfilter_ctrl)                                                                     |
-| - CtrlF4                                 | [/SMISettings/KeyboardFilter/CtrlF4](p_icd_settings.smisettings_keyboardfilter_ctrlf4)                                                                 |
-| - CtrlWin                                | [/SMISettings/KeyboardFilter/CtrlWin](p_icd_settings.smisettings_keyboardfilter_ctrlwin)                                                               |
-| - CustomFilters                          | [/SMISettings/KeyboardFilter/CustomKeyFilter](p_icd_settings.smisettings_keyboardfilter_customkeyfilter)                                               |
+| - Alt                                    | [/SMISettings/KeyboardFilter/Alt](https://msdn.microsoft.com/library/windows/hardware/mt593148)                                                                       |
+| - AltF4                                  | [/SMISettings/KeyboardFilter/AltF4](https://msdn.microsoft.com/library/windows/hardware/mt593148f4)                                                                   |
+| - AltSpace                               | [/SMISettings/KeyboardFilter/AltSpace](https://msdn.microsoft.com/library/windows/hardware/mt593148space)                                                             |
+| - AltTab                                 | [/SMISettings/KeyboardFilter/AltTab](https://msdn.microsoft.com/library/windows/hardware/mt593148tab)                                                                 |
+| - AltWin                                 | [/SMISettings/KeyboardFilter/AltWin](https://msdn.microsoft.com/library/windows/hardware/mt593148win)                                                                 |
+| - BrowserBack                            | [/SMISettings/KeyboardFilter/BrowserBack](https://msdn.microsoft.com/library/windows/hardware/mt593153)                                                       |
+| - BrowserFavorites                       | [/SMISettings/KeyboardFilter/BrowserFavorites](https://msdn.microsoft.com/library/windows/hardware/mt593154)                                             |
+| - BrowserForward                         | [/SMISettings/KeyboardFilter/BrowserForward](https://msdn.microsoft.com/library/windows/hardware/mt593155)                                                 |
+| - BrowserHome                            | [/SMISettings/KeyboardFilter/BrowserHome](https://msdn.microsoft.com/library/windows/hardware/mt593156)                                                       |
+| - BrowserRefresh                         | [/SMISettings/KeyboardFilter/BrowserRefresh](https://msdn.microsoft.com/library/windows/hardware/mt593157)                                                 |
+| - BrowserSearch                          | [/SMISettings/KeyboardFilter/BrowserSearch](https://msdn.microsoft.com/library/windows/hardware/mt593158)                                                   |
+| - BrowserStop                            | [/SMISettings/KeyboardFilter/BrowserStop](https://msdn.microsoft.com/library/windows/hardware/mt593159)                                                       |
+| - ControlAltDelete                       | [/SMISettings/KeyboardFilter/CtrlAltDel](https://msdn.microsoft.com/library/windows/hardware/mt593161)                                                         |
+| - ControlEscape                          | [/SMISettings/KeyboardFilter/CtrlEsc](https://msdn.microsoft.com/library/windows/hardware/mt593162)                                                               |
+| - ControlTab                             | [/SMISettings/KeyboardFilter/CtrlTab](https://msdn.microsoft.com/library/windows/hardware/mt593164)                                                               |
+| - ControlWindowsF                        | [/SMISettings/KeyboardFilter/CtrlWinF](https://msdn.microsoft.com/library/windows/hardware/mt593166)                                                             |
+| - Ctrl                                   | [/SMISettings/KeyboardFilter/Ctrl](https://msdn.microsoft.com/library/windows/hardware/mt593160)                                                                     |
+| - CtrlF4                                 | [/SMISettings/KeyboardFilter/CtrlF4](https://msdn.microsoft.com/library/windows/hardware/mt593160f4)                                                                 |
+| - CtrlWin                                | [/SMISettings/KeyboardFilter/CtrlWin](https://msdn.microsoft.com/library/windows/hardware/mt593160win)                                                               |
+| - CustomFilters                          | [/SMISettings/KeyboardFilter/CustomKeyFilter](https://msdn.microsoft.com/library/windows/hardware/mt593167)                                               |
 | -- FilterRule                            | N/A                                                                                                                                                    |
-| - CustomScancodes                        | [/SMISettings/KeyboardFilter/CustomScancodeFilter](p_icd_settings.smisettings_keyboardfilter_customscancodefilter)                                     |
+| - CustomScancodes                        | [/SMISettings/KeyboardFilter/CustomScancodeFilter](https://msdn.microsoft.com/library/windows/hardware/mt593168)                                     |
 | -- FilterRule                            | N/A                                                                                                                                                    |
-| - DisableKeyboardFilterForAdministrators | [/SMISettings/KeyboardFilter/DisableKeyboardFilterForAdministrators](p_icd_settings.smisettings_keyboardfilter_disablekeyboardfilterforadministrators) |
-| - Escape                                 | [/SMISettings/KeyboardFilter/Escape](p_icd_settings.smisettings_keyboardfilter_escape)                                                                 |
-| - F21                                    | [/SMISettings/KeyboardFilter/F21](p_icd_settings.smisettings_keyboardfilter_f21)                                                                       |
-| - ForceOffAccessibility                  | [/SMISettings/KeyboardFilter/ForceOffAccessibility](p_icd_settings.smisettings_keyboardfilter_forceoffaccessibility)                                   |
-| - LaunchApp1                             | [/SMISettings/KeyboardFilter/LaunchApp1](p_icd_settings.smisettings_keyboardfilter_launchapp1)                                                         |
-| - LaunchApp2                             | [/SMISettings/KeyboardFilter/LaunchApp2](p_icd_settings.smisettings_keyboardfilter_launchapp2)                                                         |
-| - LaunchMail                             | [/SMISettings/KeyboardFilter/LaunchMail](p_icd_settings.smisettings_keyboardfilter_launchmail)                                                         |
-| - LaunchMediaSelect                      | [/SMISettings/KeyboardFilter/LaunchMediaSelect](p_icd_settings.smisettings_keyboardfilter_launchmediaselect)                                           |
-| - LeftShiftLeftAltNumLock                | [/SMISettings/KeyboardFilter/LShiftLAltNumLock](p_icd_settings.smisettings_keyboardfilter_lshiftlaltnumlock)                                           |
-| - LeftShiftLeftAltPrintScreen            | [/SMISettings/KeyboardFilter/LShiftLAltPrintScrn](p_icd_settings.smisettings_keyboardfilter_lshiftlaltprintscrn)                                       |
-| - MediaNext                              | [/SMISettings/KeyboardFilter/MediaNext](p_icd_settings.smisettings_keyboardfilter_medianext)                                                           |
-| - MediaPlayPause                         | [/SMISettings/KeyboardFilter/MediaPlayPause](p_icd_settings.smisettings_keyboardfilter_mediaplaypause)                                                 |
-| - MediaPrev                              | [/SMISettings/KeyboardFilter/MediaPrev](p_icd_settings.smisettings_keyboardfilter_mediaprev)                                                           |
-| - MediaStop                              | [/SMISettings/KeyboardFilter/MediaStop](p_icd_settings.smisettings_keyboardfilter_mediastop)                                                           |
-| - Shift                                  | [/SMISettings/KeyboardFilter/Shift](p_icd_settings.smisettings_keyboardfilter_shift)                                                                   |
-| - ShiftControlEscape                     | [/SMISettings/KeyboardFilter/ShiftCtrlEsc](p_icd_settings.smisettings_keyboardfilter_shiftctrlesc)                                                     |
-| - ShiftWin                               | [/SMISettings/KeyboardFilter/ShiftWin](p_icd_settings.smisettings_keyboardfilter_shiftwin)                                                             |
-| - VolumeDown                             | [/SMISettings/KeyboardFilter/VolumeDown](p_icd_settings.smisettings_keyboardfilter_volumedown)                                                         |
-| - VolumeMute                             | [/SMISettings/KeyboardFilter/VolumeMute](p_icd_settings.smisettings_keyboardfilter_volumemute)                                                         |
-| - VolumeUp                               | [/SMISettings/KeyboardFilter/VolumeUp](p_icd_settings.smisettings_keyboardfilter_volumeup)                                                             |
-| - Windows                                | [/SMISettings/KeyboardFilter/Windows](p_icd_settings.smisettings_keyboardfilter_windows)                                                               |
-| - WindowsB                               | [/SMISettings/KeyboardFilter/WinB](p_icd_settings.smisettings_keyboardfilter_winb)                                                                     |
-| - WindowsBreak                           | [/SMISettings/KeyboardFilter/WinBreak](p_icd_settings.smisettings_keyboardfilter_winbreak)                                                             |
-| - WindowsC                               | [/SMISettings/KeyboardFilter/WinC](p_icd_settings.smisettings_keyboardfilter_winc)                                                                     |
-| - WindowsComma                           | [/SMISettings/KeyboardFilter/WinComma](p_icd_settings.smisettings_keyboardfilter_wincomma)                                                             |
-| - WindowsD                               | [/SMISettings/KeyboardFilter/WinD](p_icd_settings.smisettings_keyboardfilter_wind)                                                                     |
-| - WindowsDown                            | [/SMISettings/KeyboardFilter/WinDown](p_icd_settings.smisettings_keyboardfilter_windown)                                                               |
-| - WindowsE                               | [/SMISettings/KeyboardFilter/WinE](p_icd_settings.smisettings_keyboardfilter_wine)                                                                     |
-| - WindowsEnter                           | [/SMISettings/KeyboardFilter/WinEnter](p_icd_settings.smisettings_keyboardfilter_winenter)                                                             |
-| - WindowsEscape                          | [/SMISettings/KeyboardFilter/WinEsc](p_icd_settings.smisettings_keyboardfilter_winesc)                                                                 |
-| - WindowsF                               | [/SMISettings/KeyboardFilter/WinF](p_icd_settings.smisettings_keyboardfilter_winf)                                                                     |
-| - WindowsF1                              | [/SMISettings/KeyboardFilter/WinF1](p_icd_settings.smisettings_keyboardfilter_winf1)                                                                   |
-| - WindowsH                               | [/SMISettings/KeyboardFilter/WinH](p_icd_settings.smisettings_keyboardfilter_winh)                                                                     |
-| - WindowsHome                            | [/SMISettings/KeyboardFilter/WinHome](p_icd_settings.smisettings_keyboardfilter_winhome)                                                               |
-| - WindowsI                               | [/SMISettings/KeyboardFilter/WinI](p_icd_settings.smisettings_keyboardfilter_wini)                                                                     |
-| - WindowsJ                               | [/SMISettings/KeyboardFilter/WinJ](p_icd_settings.smisettings_keyboardfilter_winj)                                                                     |
-| - WindowsK                               | [/SMISettings/KeyboardFilter/WinK](p_icd_settings.smisettings_keyboardfilter_wink)                                                                     |
-| - WindowsL                               | [/SMISettings/KeyboardFilter/WinL](p_icd_settings.smisettings_keyboardfilter_winl)                                                                     |
-| - WindowsLeft                            | [/SMISettings/KeyboardFilter/WinLeft](p_icd_settings.smisettings_keyboardfilter_winleft)                                                               |
-| - WindowsM                               | [/SMISettings/KeyboardFilter/WinM](p_icd_settings.smisettings_keyboardfilter_winm)                                                                     |
-| - WindowsMinus                           | [/SMISettings/KeyboardFilter/WinMinus](p_icd_settings.smisettings_keyboardfilter_winminus)                                                             |
-| - WindowsO                               | [/SMISettings/KeyboardFilter/WinO](p_icd_settings.smisettings_keyboardfilter_wino)                                                                     |
-| - WindowsP                               | [/SMISettings/KeyboardFilter/WinP](p_icd_settings.smisettings_keyboardfilter_winp)                                                                     |
-| - WindowsPageDown                        | [/SMISettings/KeyboardFilter/WinPageDown](p_icd_settings.smisettings_keyboardfilter_winpagedown)                                                       |
-| - WindowsPageUp                          | [/SMISettings/KeyboardFilter/WinPageUp](p_icd_settings.smisettings_keyboardfilter_winpageup)                                                           |
-| - WindowsPeriod                          | [/SMISettings/KeyboardFilter/WinPeriod](p_icd_settings.smisettings_keyboardfilter_winperiod)                                                           |
-| - WindowsPlus                            | [/SMISettings/KeyboardFilter/WinPlus](p_icd_settings.smisettings_keyboardfilter_winplus)                                                               |
-| - WindowsQ                               | [/SMISettings/KeyboardFilter/WinQ](p_icd_settings.smisettings_keyboardfilter_winq)                                                                     |
-| - WindowsR                               | [/SMISettings/KeyboardFilter/WinR](p_icd_settings.smisettings_keyboardfilter_winr)                                                                     |
-| - WindowsRight                           | [/SMISettings/KeyboardFilter/WinRight](p_icd_settings.smisettings_keyboardfilter_winright)                                                             |
-| - WindowsShiftDown                       | [/SMISettings/KeyboardFilter/WinShiftDown](p_icd_settings.smisettings_keyboardfilter_winshiftdown)                                                     |
-| - WindowsShiftLeft                       | [/SMISettings/KeyboardFilter/WinShiftLeft](p_icd_settings.smisettings_keyboardfilter_winshiftleft)                                                     |
-| - WindowsShiftRight                      | [/SMISettings/KeyboardFilter/WinShiftRight](p_icd_settings.smisettings_keyboardfilter_winshiftright)                                                   |
-| - WindowsShiftUp                         | [/SMISettings/KeyboardFilter/WinShiftUp](p_icd_settings.smisettings_keyboardfilter_winshiftup)                                                         |
-| - WindowsSlash                           | [/SMISettings/KeyboardFilter/WinForwardslash](p_icd_settings.smisettings_keyboardfilter_winforwardslash)                                               |
-| - WindowsSpace                           | [/SMISettings/KeyboardFilter/WinSpace](p_icd_settings.smisettings_keyboardfilter_winspace)                                                             |
-| - WindowsT                               | [/SMISettings/KeyboardFilter/WinT](p_icd_settings.smisettings_keyboardfilter_wint)                                                                     |
-| - WindowsTab                             | [/SMISettings/KeyboardFilter/WinTab](p_icd_settings.smisettings_keyboardfilter_wintab)                                                                 |
-| - WindowsU                               | [/SMISettings/KeyboardFilter/WinU](p_icd_settings.smisettings_keyboardfilter_winu)                                                                     |
-| - WindowsUp                              | [/SMISettings/KeyboardFilter/WinUp](p_icd_settings.smisettings_keyboardfilter_winup)                                                                   |
-| - WindowsV                               | [/SMISettings/KeyboardFilter/WinV](p_icd_settings.smisettings_keyboardfilter_winv)                                                                     |
-| - WindowsW                               | [/SMISettings/KeyboardFilter/WinW](p_icd_settings.smisettings_keyboardfilter_winw)                                                                     |
-| - WindowsZ                               | [/SMISettings/KeyboardFilter/WinZ](p_icd_settings.smisettings_keyboardfilter_winz)                                                                     |
+| - DisableKeyboardFilterForAdministrators | [/SMISettings/KeyboardFilter/DisableKeyboardFilterForAdministrators](https://msdn.microsoft.com/library/windows/hardware/mt593169) |
+| - Escape                                 | [/SMISettings/KeyboardFilter/Escape](https://msdn.microsoft.com/library/windows/hardware/mt593170)                                                                 |
+| - F21                                    | [/SMISettings/KeyboardFilter/F21](https://msdn.microsoft.com/library/windows/hardware/mt593171)                                                                       |
+| - ForceOffAccessibility                  | [/SMISettings/KeyboardFilter/ForceOffAccessibility](https://msdn.microsoft.com/library/windows/hardware/mt593172)                                   |
+| - LaunchApp1                             | [/SMISettings/KeyboardFilter/LaunchApp1](https://msdn.microsoft.com/library/windows/hardware/mt593173)                                                         |
+| - LaunchApp2                             | [/SMISettings/KeyboardFilter/LaunchApp2](https://msdn.microsoft.com/library/windows/hardware/mt593174)                                                         |
+| - LaunchMail                             | [/SMISettings/KeyboardFilter/LaunchMail](https://msdn.microsoft.com/library/windows/hardware/mt593175)                                                         |
+| - LaunchMediaSelect                      | [/SMISettings/KeyboardFilter/LaunchMediaSelect](https://msdn.microsoft.com/library/windows/hardware/mt593176)                                           |
+| - LeftShiftLeftAltNumLock                | [/SMISettings/KeyboardFilter/LShiftLAltNumLock](https://msdn.microsoft.com/library/windows/hardware/mt593177)                                           |
+| - LeftShiftLeftAltPrintScreen            | [/SMISettings/KeyboardFilter/LShiftLAltPrintScrn](https://msdn.microsoft.com/library/windows/hardware/mt593178)                                       |
+| - MediaNext                              | [/SMISettings/KeyboardFilter/MediaNext](https://msdn.microsoft.com/library/windows/hardware/mt593179)                                                           |
+| - MediaPlayPause                         | [/SMISettings/KeyboardFilter/MediaPlayPause](https://msdn.microsoft.com/library/windows/hardware/mt593180)                                                 |
+| - MediaPrev                              | [/SMISettings/KeyboardFilter/MediaPrev](https://msdn.microsoft.com/library/windows/hardware/mt593181)                                                           |
+| - MediaStop                              | [/SMISettings/KeyboardFilter/MediaStop](https://msdn.microsoft.com/library/windows/hardware/mt593182)                                                           |
+| - Shift                                  | [/SMISettings/KeyboardFilter/Shift](https://msdn.microsoft.com/library/windows/hardware/mt593183)                                                                   |
+| - ShiftControlEscape                     | [/SMISettings/KeyboardFilter/ShiftCtrlEsc](https://msdn.microsoft.com/library/windows/hardware/mt593183ctrlesc)                                                     |
+| - ShiftWin                               | [/SMISettings/KeyboardFilter/ShiftWin](https://msdn.microsoft.com/library/windows/hardware/mt593183win)                                                             |
+| - VolumeDown                             | [/SMISettings/KeyboardFilter/VolumeDown](https://msdn.microsoft.com/library/windows/hardware/mt593186)                                                         |
+| - VolumeMute                             | [/SMISettings/KeyboardFilter/VolumeMute](https://msdn.microsoft.com/library/windows/hardware/mt593187)                                                         |
+| - VolumeUp                               | [/SMISettings/KeyboardFilter/VolumeUp](https://msdn.microsoft.com/library/windows/hardware/mt593188)                                                             |
+| - Windows                                | [/SMISettings/KeyboardFilter/Windows](https://msdn.microsoft.com/library/windows/hardware/mt593195)                                                               |
+| - WindowsB                               | [/SMISettings/KeyboardFilter/WinB](https://msdn.microsoft.com/library/windows/hardware/mt593189)                                                                     |
+| - WindowsBreak                           | [/SMISettings/KeyboardFilter/WinBreak](https://msdn.microsoft.com/library/windows/hardware/mt593189reak)                                                             |
+| - WindowsC                               | [/SMISettings/KeyboardFilter/WinC](https://msdn.microsoft.com/library/windows/hardware/mt593191)                                                                     |
+| - WindowsComma                           | [/SMISettings/KeyboardFilter/WinComma](https://msdn.microsoft.com/library/windows/hardware/mt593191omma)                                                             |
+| - WindowsD                               | [/SMISettings/KeyboardFilter/WinD](https://msdn.microsoft.com/library/windows/hardware/mt593193)                                                                     |
+| - WindowsDown                            | [/SMISettings/KeyboardFilter/WinDown](https://msdn.microsoft.com/library/windows/hardware/mt593193own)                                                               |
+| - WindowsE                               | [/SMISettings/KeyboardFilter/WinE](https://msdn.microsoft.com/library/windows/hardware/mt593196)                                                                     |
+| - WindowsEnter                           | [/SMISettings/KeyboardFilter/WinEnter](https://msdn.microsoft.com/library/windows/hardware/mt593196nter)                                                             |
+| - WindowsEscape                          | [/SMISettings/KeyboardFilter/WinEsc](https://msdn.microsoft.com/library/windows/hardware/mt593196sc)                                                                 |
+| - WindowsF                               | [/SMISettings/KeyboardFilter/WinF](https://msdn.microsoft.com/library/windows/hardware/mt593199)                                                                     |
+| - WindowsF1                              | [/SMISettings/KeyboardFilter/WinF1](https://msdn.microsoft.com/library/windows/hardware/mt5931991)                                                                   |
+| - WindowsH                               | [/SMISettings/KeyboardFilter/WinH](https://msdn.microsoft.com/library/windows/hardware/mt593202)                                                                     |
+| - WindowsHome                            | [/SMISettings/KeyboardFilter/WinHome](https://msdn.microsoft.com/library/windows/hardware/mt593202ome)                                                               |
+| - WindowsI                               | [/SMISettings/KeyboardFilter/WinI](https://msdn.microsoft.com/library/windows/hardware/mt593204)                                                                     |
+| - WindowsJ                               | [/SMISettings/KeyboardFilter/WinJ](https://msdn.microsoft.com/library/windows/hardware/mt593205)                                                                     |
+| - WindowsK                               | [/SMISettings/KeyboardFilter/WinK](https://msdn.microsoft.com/library/windows/hardware/mt593206)                                                                     |
+| - WindowsL                               | [/SMISettings/KeyboardFilter/WinL](https://msdn.microsoft.com/library/windows/hardware/mt593207)                                                                     |
+| - WindowsLeft                            | [/SMISettings/KeyboardFilter/WinLeft](https://msdn.microsoft.com/library/windows/hardware/mt593207eft)                                                               |
+| - WindowsM                               | [/SMISettings/KeyboardFilter/WinM](https://msdn.microsoft.com/library/windows/hardware/mt593209)                                                                     |
+| - WindowsMinus                           | [/SMISettings/KeyboardFilter/WinMinus](https://msdn.microsoft.com/library/windows/hardware/mt593209inus)                                                             |
+| - WindowsO                               | [/SMISettings/KeyboardFilter/WinO](https://msdn.microsoft.com/library/windows/hardware/mt593211)                                                                     |
+| - WindowsP                               | [/SMISettings/KeyboardFilter/WinP](https://msdn.microsoft.com/library/windows/hardware/mt593212)                                                                     |
+| - WindowsPageDown                        | [/SMISettings/KeyboardFilter/WinPageDown](https://msdn.microsoft.com/library/windows/hardware/mt593212agedown)                                                       |
+| - WindowsPageUp                          | [/SMISettings/KeyboardFilter/WinPageUp](https://msdn.microsoft.com/library/windows/hardware/mt593212ageup)                                                           |
+| - WindowsPeriod                          | [/SMISettings/KeyboardFilter/WinPeriod](https://msdn.microsoft.com/library/windows/hardware/mt593212eriod)                                                           |
+| - WindowsPlus                            | [/SMISettings/KeyboardFilter/WinPlus](https://msdn.microsoft.com/library/windows/hardware/mt593212lus)                                                               |
+| - WindowsQ                               | [/SMISettings/KeyboardFilter/WinQ](https://msdn.microsoft.com/library/windows/hardware/mt593217)                                                                     |
+| - WindowsR                               | [/SMISettings/KeyboardFilter/WinR](https://msdn.microsoft.com/library/windows/hardware/mt593218)                                                                     |
+| - WindowsRight                           | [/SMISettings/KeyboardFilter/WinRight](https://msdn.microsoft.com/library/windows/hardware/mt593218ight)                                                             |
+| - WindowsShiftDown                       | [/SMISettings/KeyboardFilter/WinShiftDown](https://msdn.microsoft.com/library/windows/hardware/mt593220)                                                     |
+| - WindowsShiftLeft                       | [/SMISettings/KeyboardFilter/WinShiftLeft](https://msdn.microsoft.com/library/windows/hardware/mt593221)                                                     |
+| - WindowsShiftRight                      | [/SMISettings/KeyboardFilter/WinShiftRight](https://msdn.microsoft.com/library/windows/hardware/mt593223)                                                   |
+| - WindowsShiftUp                         | [/SMISettings/KeyboardFilter/WinShiftUp](https://msdn.microsoft.com/library/windows/hardware/mt593224)                                                         |
+| - WindowsSlash                           | [/SMISettings/KeyboardFilter/WinForwardslash](https://msdn.microsoft.com/library/windows/hardware/mt593199orwardslash)                                               |
+| - WindowsSpace                           | [/SMISettings/KeyboardFilter/WinSpace](https://msdn.microsoft.com/library/windows/hardware/mt593225)                                                             |
+| - WindowsT                               | [/SMISettings/KeyboardFilter/WinT](https://msdn.microsoft.com/library/windows/hardware/mt593226)                                                                     |
+| - WindowsTab                             | [/SMISettings/KeyboardFilter/WinTab](https://msdn.microsoft.com/library/windows/hardware/mt593226ab)                                                                 |
+| - WindowsU                               | [/SMISettings/KeyboardFilter/WinU](https://msdn.microsoft.com/library/windows/hardware/mt593228)                                                                     |
+| - WindowsUp                              | [/SMISettings/KeyboardFilter/WinUp](https://msdn.microsoft.com/library/windows/hardware/mt593228p)                                                                   |
+| - WindowsV                               | [/SMISettings/KeyboardFilter/WinV](https://msdn.microsoft.com/library/windows/hardware/mt593230)                                                                     |
+| - WindowsW                               | [/SMISettings/KeyboardFilter/WinW](https://msdn.microsoft.com/library/windows/hardware/mt593231)                                                                     |
+| - WindowsZ                               | [/SMISettings/KeyboardFilter/WinZ](https://msdn.microsoft.com/library/windows/hardware/mt593232)                                                                     |
 
  
 
@@ -308,8 +308,8 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name       | Windows Provisioning setting group and name                                                                            |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------|
-| - DefaultReturnCodeAction   | [/SMISettings/ShellLauncher/DefaultReturnCodeAction](p_icd_settings.smisettings_shelllauncher_defaultreturncodeaction) |
-| - Shell                     | [/SMISettings/ShellLauncher/Shell](p_icd_settings.smisettings_shelllauncher_shell)                                     |
+| - DefaultReturnCodeAction   | [/SMISettings/ShellLauncher/DefaultReturnCodeAction](https://msdn.microsoft.com/library/windows/hardware/mt584197) |
+| - Shell                     | [/SMISettings/ShellLauncher/Shell](https://msdn.microsoft.com/library/windows/hardware/mt584198)                                     |
 | - UserSettings              | N/A                                                                                                                    |
 | -- User                     | N/A                                                                                                                    |
 | --- AccountName             | N/A                                                                                                                    |
@@ -329,7 +329,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name           | Windows Provisioning setting group and name                                                      |
 |---------------------------------|--------------------------------------------------------------------------------------------------|
-| - TCGSecurityActivationDisabled | [/Storage/DisableAutomaticDiscEncryption](p_icd_settings.storage_disableautomaticdiscencryption) |
+| - TCGSecurityActivationDisabled | [/Storage/DisableAutomaticDiscEncryption](https://msdn.microsoft.com/library/windows/hardware/dn934598) |
 
  
 
@@ -338,8 +338,8 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                                    |
 |-----------------------|--------------------------------------------------------------------------------|
-| - DefaultConsent      | [/ErrorReporting/DefaultConsent](p_icd_settings.errorreporting_defaultconsent) |
-| - DisableWER          | [/ErrorReporting/DisableWER](p_icd_settings.errorreporting_disablewer)         |
+| - DefaultConsent      | [/ErrorReporting/DefaultConsent](https://msdn.microsoft.com/library/windows/hardware/dn953414) |
+| - DisableWER          | [/ErrorReporting/DisableWER](https://msdn.microsoft.com/library/windows/hardware/dn953415)         |
 
  
 
@@ -348,29 +348,29 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name                | Windows Provisioning setting group and name                                                                      |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| - Fax                                | [/Fax/Fax](p_icd_settings.fax)                                                                                   |
-| -- ArchiveFaxes                      | [/Fax/Fax/ArchiveFaxes](p_icd_settings.fax_fax_archivefaxes)                                                     |
-| -- ArchiveFolderName                 | [/Fax/Fax/ArchiveFolderName](p_icd_settings.fax_fax_archivefoldername)                                           |
-| -- IncomingFaxesArePublic            | [/Fax/Fax/IncomingFaxesArePublic](p_icd_settings.fax_fax_incomingfaxesarepublic)                                 |
-| - FaxUnattend                        | [/Fax/FaxUnattend](p_icd_settings.fax_faxunattend)                                                               |
-| -- Csid                              | [/Fax/FaxUnattend/Csid](p_icd_settings.fax_faxunattend_csid)                                                     |
-| -- FaxPrinterIsShared                | [/Fax/FaxUnattend/FaxPrinterIsShared](p_icd_settings.fax_faxunattend_faxprinterisshared)                         |
-| -- ReceiveFaxes                      | [/Fax/FaxUnattend/ReceiveFaxes](p_icd_settings.fax_faxunattend_receivefaxes)                                     |
-| -- Rings                             | [/Fax/FaxUnattend/Rings](p_icd_settings.fax_faxunattend_rings)                                                   |
-| -- RouteFolderName                   | [/Fax/FaxUnattend/RouteFolderName](p_icd_settings.fax_faxunattend_routefoldername)                               |
-| -- RoutePrinterName                  | [/Fax/FaxUnattend/RoutePrinterName](p_icd_settings.fax_faxunattend_routeprintername)                             |
-| -- RouteToFolder                     | [/Fax/FaxUnattend/RouteToFolder](p_icd_settings.fax_faxunattend_routetofolder)                                   |
-| -- RouteToPrinter                    | [/Fax/FaxUnattend/RouteToPrinter](p_icd_settings.fax_faxunattend_routetoprinter)                                 |
-| -- SendFaxes                         | [/Fax/FaxUnattend/SendFaxes](p_icd_settings.fax_faxunattend_sendfaxes)                                           |
-| -- Tsid                              | [/Fax/FaxUnattend/Tsid](p_icd_settings.fax_faxunattend_tsid)                                                     |
-| - Receipts                           | [/Fax/Receipts](p_icd_settings.fax_receipts)                                                                     |
-| -- FaxUserName                       | [/Fax/Receipts/FaxUserName](p_icd_settings.fax_receipts_faxusername)                                             |
-| -- FaxUserPassword                   | [/Fax/Receipts/FaxUserPassword](p_icd_settings.fax_receipts_faxuserpassword)                                     |
-| -- SmtpNotificationsEnabled          | [/Fax/Receipts/SmtpNotificationsEnabled](p_icd_settings.fax_receipts_smtpnotificationsenabled)                   |
-| -- SmtpSenderAddress                 | [/Fax/Receipts/SmtpSenderAddress](p_icd_settings.fax_receipts_smtpsenderaddress)                                 |
-| -- SmtpServerAddress                 | [/Fax/Receipts/SmtpServerAddress](p_icd_settings.fax_receipts_smtpserveraddress)                                 |
-| -- SmtpServerAuthenticationMechanism | [/Fax/Receipts/SmtpServerAuthenticationMechanism](p_icd_settings.fax_receipts_smtpserverauthenticationmechanism) |
-| -- SmtpServerPort                    | [/Fax/Receipts/SmtpServerPort](p_icd_settings.fax_receipts_smtpserverport)                                       |
+| - Fax                                | [/Fax/Fax](https://msdn.microsoft.com/library/windows/hardware/dn953417)                                                                                   |
+| -- ArchiveFaxes                      | [/Fax/Fax/ArchiveFaxes](https://msdn.microsoft.com/library/windows/hardware/dn953417_fax_archivefaxes)                                                     |
+| -- ArchiveFolderName                 | [/Fax/Fax/ArchiveFolderName](https://msdn.microsoft.com/library/windows/hardware/dn953417_fax_archivefoldername)                                           |
+| -- IncomingFaxesArePublic            | [/Fax/Fax/IncomingFaxesArePublic](https://msdn.microsoft.com/library/windows/hardware/dn953417_fax_incomingfaxesarepublic)                                 |
+| - FaxUnattend                        | [/Fax/FaxUnattend](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend)                                                               |
+| -- Csid                              | [/Fax/FaxUnattend/Csid](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_csid)                                                     |
+| -- FaxPrinterIsShared                | [/Fax/FaxUnattend/FaxPrinterIsShared](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_faxprinterisshared)                         |
+| -- ReceiveFaxes                      | [/Fax/FaxUnattend/ReceiveFaxes](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_receivefaxes)                                     |
+| -- Rings                             | [/Fax/FaxUnattend/Rings](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_rings)                                                   |
+| -- RouteFolderName                   | [/Fax/FaxUnattend/RouteFolderName](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_routefoldername)                               |
+| -- RoutePrinterName                  | [/Fax/FaxUnattend/RoutePrinterName](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_routeprintername)                             |
+| -- RouteToFolder                     | [/Fax/FaxUnattend/RouteToFolder](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_routetofolder)                                   |
+| -- RouteToPrinter                    | [/Fax/FaxUnattend/RouteToPrinter](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_routetoprinter)                                 |
+| -- SendFaxes                         | [/Fax/FaxUnattend/SendFaxes](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_sendfaxes)                                           |
+| -- Tsid                              | [/Fax/FaxUnattend/Tsid](https://msdn.microsoft.com/library/windows/hardware/dn953417_faxunattend_tsid)                                                     |
+| - Receipts                           | [/Fax/Receipts](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts)                                                                     |
+| -- FaxUserName                       | [/Fax/Receipts/FaxUserName](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_faxusername)                                             |
+| -- FaxUserPassword                   | [/Fax/Receipts/FaxUserPassword](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_faxuserpassword)                                     |
+| -- SmtpNotificationsEnabled          | [/Fax/Receipts/SmtpNotificationsEnabled](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_smtpnotificationsenabled)                   |
+| -- SmtpSenderAddress                 | [/Fax/Receipts/SmtpSenderAddress](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_smtpsenderaddress)                                 |
+| -- SmtpServerAddress                 | [/Fax/Receipts/SmtpServerAddress](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_smtpserveraddress)                                 |
+| -- SmtpServerAuthenticationMechanism | [/Fax/Receipts/SmtpServerAuthenticationMechanism](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_smtpserverauthenticationmechanism) |
+| -- SmtpServerPort                    | [/Fax/Receipts/SmtpServerPort](https://msdn.microsoft.com/library/windows/hardware/dn953417_receipts_smtpserverport)                                       |
 
  
 
@@ -379,7 +379,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name  | Windows Provisioning setting group and name                                |
 |------------------------|----------------------------------------------------------------------------|
-| - ConvertibleSlateMode | [/Tablet/ConvertibleSlateHint](p_icd_settings.tablet_convertibleslatehint) |
+| - ConvertibleSlateMode | [/Tablet/ConvertibleSlateHint](https://msdn.microsoft.com/library/windows/hardware/dn934604) |
 
  
 
@@ -388,7 +388,7 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                                                                                                                      |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - HelpAndSupport      | Deprecated in Windows 10. To add customer support contact information in the Contact Support app or Web page, see [Information](p_icd_settings.oem_information). |
+| - HelpAndSupport      | Deprecated in Windows 10. To add customer support contact information in the Contact Support app or Web page, see [Information](https://msdn.microsoft.com/library/windows/hardware/dn953644). |
 | -- Logo               | N/A                                                                                                                                                              |
 | -- LogoURL            | N/A                                                                                                                                                              |
 | -- Manufacturer       | N/A                                                                                                                                                              |
@@ -403,17 +403,17 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name    | Windows Provisioning setting group and name                                                |
 |--------------------------|--------------------------------------------------------------------------------------------|
-| - CacheLimit             | [/NetworkProxy/CacheLimit](p_icd_settings.networkproxy_cachelimit)                         |
-| - HKLMConnectRetries     | [/NetworkProxy/HKLMConnectRetries](p_icd_settings.networkproxy_hklmconnectretries)         |
-| - HKLMConnectTimeOut     | [/NetworkProxy/HKLMConnectTimeOut](p_icd_settings.networkproxy_hklmconnecttimeout)         |
-| - HKLMContentPerUserItem | [/NetworkProxy/HKLMContentPerUserItem](p_icd_settings.networkproxy_hklmcontentperuseritem) |
-| - HKLMCookiesPerUserItem | [/NetworkProxy/HKLMCookiesPerUserItem](p_icd_settings.networkproxy_hklmcookiesperuseritem) |
-| - HKLMHistoryPerUserItem | [/NetworkProxy/HKLMHistoryPerUserItem](p_icd_settings.networkproxy_hklmhistoryperuseritem) |
-| - HKLMProxyEnable        | [/NetworkProxy/HKLMProxyEnable](p_icd_settings.networkproxy_hklmproxyenable)               |
-| - HKLMProxyOverride      | [/NetworkProxy/HKLMProxyOverride](p_icd_settings.networkproxy_hklmproxyoverride)           |
-| - HKLMProxyServer        | [/NetworkProxy/HKLMProxyServer](p_icd_settings.networkproxy_hklmproxyserver)               |
-| - HKLMReceiveTimeOut     | [/NetworkProxy/HKLMReceiveTimeOut](p_icd_settings.networkproxy_hklmreceivetimeout)         |
-| - HKLMSendTimeOut        | [/NetworkProxy/HKLMSendTimeOut](p_icd_settings.networkproxy_hklmsendtimeout)               |
+| - CacheLimit             | [/NetworkProxy/CacheLimit](https://msdn.microsoft.com/library/windows/hardware/dn953632)                         |
+| - HKLMConnectRetries     | [/NetworkProxy/HKLMConnectRetries](https://msdn.microsoft.com/library/windows/hardware/dn953633)         |
+| - HKLMConnectTimeOut     | [/NetworkProxy/HKLMConnectTimeOut](https://msdn.microsoft.com/library/windows/hardware/dn953634)         |
+| - HKLMContentPerUserItem | [/NetworkProxy/HKLMContentPerUserItem](https://msdn.microsoft.com/library/windows/hardware/dn953635) |
+| - HKLMCookiesPerUserItem | [/NetworkProxy/HKLMCookiesPerUserItem](https://msdn.microsoft.com/library/windows/hardware/dn953636) |
+| - HKLMHistoryPerUserItem | [/NetworkProxy/HKLMHistoryPerUserItem](https://msdn.microsoft.com/library/windows/hardware/dn953637) |
+| - HKLMProxyEnable        | [/NetworkProxy/HKLMProxyEnable](https://msdn.microsoft.com/library/windows/hardware/dn953638)               |
+| - HKLMProxyOverride      | [/NetworkProxy/HKLMProxyOverride](https://msdn.microsoft.com/library/windows/hardware/dn953639)           |
+| - HKLMProxyServer        | [/NetworkProxy/HKLMProxyServer](https://msdn.microsoft.com/library/windows/hardware/dn953640)               |
+| - HKLMReceiveTimeOut     | [/NetworkProxy/HKLMReceiveTimeOut](https://msdn.microsoft.com/library/windows/hardware/dn953641)         |
+| - HKLMSendTimeOut        | [/NetworkProxy/HKLMSendTimeOut](https://msdn.microsoft.com/library/windows/hardware/dn953642)               |
 
  
 
@@ -437,23 +437,23 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | -- Accelerator                   | N/A                                                                                                                |
 | --- AcceleratorXML               | N/A                                                                                                                |
 | --- IsDefault                    | N/A                                                                                                                |
-| - AllowedSites                   | [/InternetExplorer/AllowedSites](p_icd_settings.internetexplorer_allowedsites)                                     |
-| - BlockPopups                    | [/InternetExplorer/BlockPopups](p_icd_settings.internetexplorer_blockpopups)                                       |
-| - CommandLabelDisplay            | [/InternetExplorer/CommandLabelDisplay](p_icd_settings.internetexplorer_commandlabeldisplay)                       |
-| - CompanyName                    | [/InternetExplorer/CompanyName](p_icd_settings.internetexplorer_companyname)                                       |
-| - CompatibilityViewDomains       | [/InternetExplorer/CompatibilityViewDomains](p_icd_settings.internetexplorer_compatibilityviewdomains)             |
-| - DisableAccelerators            | [/InternetExplorer/DisableAccelerators](p_icd_settings.internetexplorer_disableaccelerators)                       |
-| - DisableDataExecutionPrevention | [/InternetExplorer/DisableDataExecutionPrevention](p_icd_settings.internetexplorer_disabledataexecutionprevention) |
-| - DisableDevTools                | [/InternetExplorer/DisableDevTools](p_icd_settings.internetexplorer_disabledevtools)                               |
-| - DisableFirstRunWizard          | [/InternetExplorer/DisableFirstRunWizard](p_icd_settings.internetexplorer_disablefirstrunwizard)                   |
-| - DisableOOBAccelerators         | [/InternetExplorer/DisableOOBAccelerators](p_icd_settings.internetexplorer_disableoobaccelerators)                 |
+| - AllowedSites                   | [/InternetExplorer/AllowedSites](https://msdn.microsoft.com/library/windows/hardware/dn953491)                                     |
+| - BlockPopups                    | [/InternetExplorer/BlockPopups](https://msdn.microsoft.com/library/windows/hardware/dn953493)                                       |
+| - CommandLabelDisplay            | [/InternetExplorer/CommandLabelDisplay](https://msdn.microsoft.com/library/windows/hardware/dn953494)                       |
+| - CompanyName                    | [/InternetExplorer/CompanyName](https://msdn.microsoft.com/library/windows/hardware/dn953495)                                       |
+| - CompatibilityViewDomains       | [/InternetExplorer/CompatibilityViewDomains](https://msdn.microsoft.com/library/windows/hardware/dn953496)             |
+| - DisableAccelerators            | [/InternetExplorer/DisableAccelerators](https://msdn.microsoft.com/library/windows/hardware/dn953497)                       |
+| - DisableDataExecutionPrevention | [/InternetExplorer/DisableDataExecutionPrevention](https://msdn.microsoft.com/library/windows/hardware/dn953498) |
+| - DisableDevTools                | [/InternetExplorer/DisableDevTools](https://msdn.microsoft.com/library/windows/hardware/dn953499)                               |
+| - DisableFirstRunWizard          | [/InternetExplorer/DisableFirstRunWizard](https://msdn.microsoft.com/library/windows/hardware/dn953500)                   |
+| - DisableOOBAccelerators         | [/InternetExplorer/DisableOOBAccelerators](https://msdn.microsoft.com/library/windows/hardware/dn953501)                 |
 | - FavoriteBarItems               | N/A                                                                                                                |
 | -- ItemKey                       | N/A                                                                                                                |
 | -- FavoriteBarItem               | N/A                                                                                                                |
 | --- ItemName                     | N/A                                                                                                                |
 | --- ItemType                     | N/A                                                                                                                |
 | --- ItemUrl                      | N/A                                                                                                                |
-| - FavoritesDelete                | [/InternetExplorer/FavoritesDelete](p_icd_settings.internetexplorer_favoritesdelete)                               |
+| - FavoritesDelete                | [/InternetExplorer/FavoritesDelete](https://msdn.microsoft.com/library/windows/hardware/dn953509)                               |
 | - FavoritesList                  | N/A                                                                                                                |
 | -- FavID                         | N/A                                                                                                                |
 | -- FavoriteItem                  | N/A                                                                                                                |
@@ -461,17 +461,17 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | --- FavOffLine                   | N/A                                                                                                                |
 | --- FavTitle                     | N/A                                                                                                                |
 | --- FavURL                       | N/A                                                                                                                |
-| - FavoritesOnTop                 | [/InternetExplorer/FavoritesOnTop](p_icd_settings.internetexplorer_favoritesontop)                                 |
+| - FavoritesOnTop                 | [/InternetExplorer/FavoritesOnTop](https://msdn.microsoft.com/library/windows/hardware/dn953517)                                 |
 | - FeedList                       | N/A                                                                                                                |
 | -- FeedKey                       | N/A                                                                                                                |
 | -- FeedItem                      | N/A                                                                                                                |
 | --- FeedTitle                    | N/A                                                                                                                |
 | --- FeedURL                      | N/A                                                                                                                |
-| - FilterLevel                    | [/InternetExplorer/FilterLevel](p_icd_settings.internetexplorer_filterlevel)                                       |
-| - FindProvidersURL               | [/InternetExplorer/FindProvidersURL](p_icd_settings.internetexplorer_findprovidersurl)                             |
-| - GroupTabs                      | [/InternetExplorer/GroupTabs](p_icd_settings.internetexplorer_grouptabs)                                           |
-| - Help\_Page                     | [/InternetExplorer/Help\_Page](p_icd_settings.internetexplorer_help_page)                                          |
-| - Home\_Page                     | [/InternetExplorer/Home\_Page](p_icd_settings.internetexplorer_home_page)                                          |
+| - FilterLevel                    | [/InternetExplorer/FilterLevel](https://msdn.microsoft.com/library/windows/hardware/dn953523)                                       |
+| - FindProvidersURL               | [/InternetExplorer/FindProvidersURL](https://msdn.microsoft.com/library/windows/hardware/dn953524)                             |
+| - GroupTabs                      | [/InternetExplorer/GroupTabs](https://msdn.microsoft.com/library/windows/hardware/dn953525)                                           |
+| - Help\_Page                     | [/InternetExplorer/Help\_Page](https://msdn.microsoft.com/library/windows/hardware/dn953526)                                          |
+| - Home\_Page                     | [/InternetExplorer/Home\_Page](https://msdn.microsoft.com/library/windows/hardware/dn953527)                                          |
 | - InstalledBHOList               | N/A                                                                                                                |
 | -- AddonGuid                     | N/A                                                                                                                |
 | -- AddonGuidItem                 | N/A                                                                                                                |
@@ -481,15 +481,15 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | - InstalledToolbarsList          | N/A                                                                                                                |
 | -- AddonGuid                     | N/A                                                                                                                |
 | -- AddonGuidItem                 | N/A                                                                                                                |
-| - IntranetCompatibilityMode      | [/InternetExplorer/IntranetCompatibilityMode](p_icd_settings.internetexplorer_intranetcompatibilitymode)           |
-| - LocalIntranetSites             | [/InternetExplorer/LocalIntranetSites](p_icd_settings.internetexplorer_localintranetsites)                         |
-| - LockToolbars                   | [/InternetExplorer/LockToolbars](p_icd_settings.internetexplorer_locktoolbars)                                     |
-| - MSCompatibilityMode            | [/InternetExplorer/MSCompatibilityMode](p_icd_settings.internetexplorer_mscompatibilitymode)                       |
-| - PlaySound                      | [/InternetExplorer/PlaySound](p_icd_settings.internetexplorer_playsound)                                           |
+| - IntranetCompatibilityMode      | [/InternetExplorer/IntranetCompatibilityMode](https://msdn.microsoft.com/library/windows/hardware/dn953537)           |
+| - LocalIntranetSites             | [/InternetExplorer/LocalIntranetSites](https://msdn.microsoft.com/library/windows/hardware/dn953538)                         |
+| - LockToolbars                   | [/InternetExplorer/LockToolbars](https://msdn.microsoft.com/library/windows/hardware/dn953539)                                     |
+| - MSCompatibilityMode            | [/InternetExplorer/MSCompatibilityMode](https://msdn.microsoft.com/library/windows/hardware/dn953540)                       |
+| - PlaySound                      | [/InternetExplorer/PlaySound](https://msdn.microsoft.com/library/windows/hardware/dn953542)                                           |
 | - PreApprovedAddons              | N/A                                                                                                                |
 | -- AddonGuid                     | N/A                                                                                                                |
 | -- AddonGuidItem                 | N/A                                                                                                                |
-| - PrivacyAdvisorMode             | [/InternetExplorer/PrivacyAdvisorMode](p_icd_settings.internetexplorer_privacyadvisormode)                         |
+| - PrivacyAdvisorMode             | [/InternetExplorer/PrivacyAdvisorMode](https://msdn.microsoft.com/library/windows/hardware/dn953547)                         |
 | - QuickLinkList                  | N/A                                                                                                                |
 | -- QLID                          | N/A                                                                                                                |
 | -- QuickLinkItem                 | N/A                                                                                                                |
@@ -506,17 +506,17 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 | --- ShowSearchSuggestions        | N/A                                                                                                                |
 | --- SuggestionsURL               | N/A                                                                                                                |
 | --- SuggestionsURL\_JSON         | N/A                                                                                                                |
-| - ShowLeftAddressToolbar         | [/InternetExplorer/ShowLeftAddressToolbar](p_icd_settings.internetexplorer_showleftaddresstoolbar)                 |
-| - ShowInformationBar             | [/InternetExplorer/ShowInformationBar](p_icd_settings.internetexplorer_showinformationbar)                         |
+| - ShowLeftAddressToolbar         | [/InternetExplorer/ShowLeftAddressToolbar](https://msdn.microsoft.com/library/windows/hardware/dn953571)                 |
+| - ShowInformationBar             | [/InternetExplorer/ShowInformationBar](https://msdn.microsoft.com/library/windows/hardware/dn953570)                         |
 | - StartPages                     | N/A                                                                                                                |
 | -- StartPageKey                  | N/A                                                                                                                |
 | -- StartPage                     | N/A                                                                                                                |
 | --- StartPageUrl                 | N/A                                                                                                                |
-| - SuggestedSitesEnabled          | [/InternetExplorer/SuggestedSitesEnabled](p_icd_settings.internetexplorer_suggestedsitesenabled)                   |
-| - TabProcessGrowth               | [/InternetExplorer/TabProcessGrowth](p_icd_settings.internetexplorer_tabprocessgrowth)                             |
-| - TrustedSites                   | [/InternetExplorer/TrustedSites](p_icd_settings.internetexplorer_trustedsites)                                     |
-| - UserAgent                      | [/InternetExplorer/UserAgent](p_icd_settings.internetexplorer_useragent)                                           |
-| - Window\_Title\_CN              | [/InternetExplorer/Window\_Title\_CN](p_icd_settings.internetexplorer_window_title_cn)                             |
+| - SuggestedSitesEnabled          | [/InternetExplorer/SuggestedSitesEnabled](https://msdn.microsoft.com/library/windows/hardware/dn953579)                   |
+| - TabProcessGrowth               | [/InternetExplorer/TabProcessGrowth](https://msdn.microsoft.com/library/windows/hardware/dn953580)                             |
+| - TrustedSites                   | [/InternetExplorer/TrustedSites](https://msdn.microsoft.com/library/windows/hardware/dn953581)                                     |
+| - UserAgent                      | [/InternetExplorer/UserAgent](https://msdn.microsoft.com/library/windows/hardware/dn953582)                                           |
+| - Window\_Title\_CN              | [/InternetExplorer/Window\_Title\_CN](https://msdn.microsoft.com/library/windows/hardware/dn953584)                             |
 
  
 
@@ -525,11 +525,11 @@ Due to the design change in Windows 10, settings marked **N/A** are not support
 
 | Unattend setting name | Windows Provisioning setting group and name                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
-| - InputLocale         | [/Internationalization/InputLocale](p_icd_settings.internationalization_inputlocale)               |
-| - SystemLocale        | [/Internationalization/SystemLocale](p_icd_settings.internationalization_systemlocale)             |
-| - UILanguage          | [/Internationalization/UILanguage](p_icd_settings.internationalization_uilanguage)                 |
-| - UILanguageFallback  | [/Internationalization/UILanguageFallback](p_icd_settings.internationalization_uilanguagefallback) |
-| - UserLocale          | [/Internationalization/UserLocale](p_icd_settings.internationalization_userlocale)                 |
+| - InputLocale         | [/Internationalization/InputLocale](https://msdn.microsoft.com/library/windows/hardware/dn953481)               |
+| - SystemLocale        | [/Internationalization/SystemLocale](https://msdn.microsoft.com/library/windows/hardware/dn953482)             |
+| - UILanguage          | [/Internationalization/UILanguage](https://msdn.microsoft.com/library/windows/hardware/dn953483)                 |
+| - UILanguageFallback  | [/Internationalization/UILanguageFallback](https://msdn.microsoft.com/library/windows/hardware/dn953483fallback) |
+| - UserLocale          | [/Internationalization/UserLocale](https://msdn.microsoft.com/library/windows/hardware/dn953485)                 |
 
  
 
@@ -557,7 +557,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                              |
 |-----------------------|--------------------------------------------------------------------------|
-| - EnableLUA           | [/UserAccountControl/Enabled](p_icd_settings.useraccountcontrol_enabled) |
+| - EnableLUA           | [/UserAccountControl/Enabled](https://msdn.microsoft.com/library/windows/hardware/dn934649) |
 
  
 
@@ -566,7 +566,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                      |
 |-----------------------|------------------------------------------------------------------|
-| - ChinaVariantWin10   | [/Maps/ChinaVariantWin10](p_icd_settings.maps_chinavariantwin10) |
+| - ChinaVariantWin10   | [/Maps/ChinaVariantWin10](https://msdn.microsoft.com/library/windows/hardware/mt203640) |
 
  
 
@@ -575,7 +575,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name       | Windows Provisioning setting group and name                                                    |
 |-----------------------------|------------------------------------------------------------------------------------------------|
-| - InitialOEMServiceProvider | [/MediaPlayer/InitialOEMServiceProvider](p_icd_settings.mediaplayer_initialoemserviceprovider) |
+| - InitialOEMServiceProvider | [/MediaPlayer/InitialOEMServiceProvider](https://msdn.microsoft.com/library/windows/hardware/dn953620) |
 
  
 
@@ -584,8 +584,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name           | Windows Provisioning setting group and name                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------|
-| - AdaptiveBrightness            | [/Sensors/AdaptiveBrightness](p_icd_settings.sensors_adaptivebrightness)                     |
-| -- ALRPoints                    | [/Sensors/AdaptiveBrightness/ALRPoints](p_icd_settings.sensors_adaptivebrightness_alrpoints) |
+| - AdaptiveBrightness            | [/Sensors/AdaptiveBrightness](https://msdn.microsoft.com/library/windows/hardware/dn953767)                     |
+| -- ALRPoints                    | [/Sensors/AdaptiveBrightness/ALRPoints](https://msdn.microsoft.com/library/windows/hardware/dn953767_alrpoints) |
 | -- DisplayResponseInterval      | N/A                                                                                          |
 | -- IlluminanceChangeSensitivity | N/A                                                                                          |
 
@@ -612,7 +612,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                  |
 |-----------------------|------------------------------------------------------------------------------|
-| - Bridge              | [/Networking/BridgedInterfaces](p_icd_settings.networking_bridgedinterfaces) |
+| - Bridge              | [/Networking/BridgedInterfaces](https://msdn.microsoft.com/library/windows/hardware/dn953630) |
 
  
 
@@ -687,7 +687,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                              |
 |-----------------------|------------------------------------------------------------------------------------------|
-| - SanPolicy           | [/StorageAreaNetwork/AutoMountPolicy](p_icd_settings.storageareanetwork_automountpolicy) |
+| - SanPolicy           | [/StorageAreaNetwork/AutoMountPolicy](https://msdn.microsoft.com/library/windows/hardware/dn934597) |
 
  
 
@@ -728,8 +728,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name           | Windows Provisioning setting group and name                                                    |
 |---------------------------------|------------------------------------------------------------------------------------------------|
-| - DoNotCleanUpNonPresentDevices | [/Drivers/DoNotCleanUpNonPresentDevices](p_icd_settings.drivers_donotcleanupnonpresentdevices) |
-| - PersistAllDeviceInstalls      | [/Drivers/PersistAllDeviceInstalls](p_icd_settings.drivers_persistalldeviceinstalls)           |
+| - DoNotCleanUpNonPresentDevices | [/Drivers/DoNotCleanUpNonPresentDevices](https://msdn.microsoft.com/library/windows/hardware/dn953410) |
+| - PersistAllDeviceInstalls      | [/Drivers/PersistAllDeviceInstalls](https://msdn.microsoft.com/library/windows/hardware/dn953412)           |
 
  
 
@@ -738,7 +738,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                |
 |-----------------------|------------------------------------------------------------|
-| - PreferredPlan       | [/Power/PreferredPlan](p_icd_settings.power_preferredplan) |
+| - PreferredPlan       | [/Power/PreferredPlan](https://msdn.microsoft.com/library/windows/hardware/dn953738) |
 
  
 
@@ -747,8 +747,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                          |
 |-----------------------|----------------------------------------------------------------------|
-| - RemoveMXDW          | [/Printing/RemoveMXDW](p_icd_settings.printing_removemxdw)           |
-| - Start               | [/Printing/StartAutoLogger](p_icd_settings.printing_startautologger) |
+| - RemoveMXDW          | [/Printing/RemoveMXDW](https://msdn.microsoft.com/library/windows/hardware/dn953740)           |
+| - Start               | [/Printing/StartAutoLogger](https://msdn.microsoft.com/library/windows/hardware/dn953741) |
 
  
 
@@ -757,8 +757,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                        |
 |-----------------------|------------------------------------------------------------------------------------|
-| - ConfigurationFlags  | [/RemoteAccess/ConfigurationFlags](p_icd_settings.remoteaccess_configurationflags) |
-| - RouterType          | [/RemoteAccess/RouterType](p_icd_settings.remoteaccess_routertype)                 |
+| - ConfigurationFlags  | [/RemoteAccess/ConfigurationFlags](https://msdn.microsoft.com/library/windows/hardware/dn953755) |
+| - RouterType          | [/RemoteAccess/RouterType](https://msdn.microsoft.com/library/windows/hardware/dn953756)                 |
 
  
 
@@ -767,11 +767,11 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name        | Windows Provisioning setting group and name                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
-| - CreateEncryptedOnlyTickets | [/RemoteAssistance/CreateEncryptedOnlyTickets](p_icd_settings.remoteassistance_createencryptedonlytickets) |
-| - fAllowToGetHelp            | [/RemoteAssistance/AllowToGetHelp](p_icd_settings.remoteassistance_allowtogethelp)                         |
-| - fAllowFullControl          | [/RemoteAssistance/AllowFullControl](p_icd_settings.remoteassistance_allowfullcontrol)                     |
-| - MaxTicketExpiry            | [/RemoteAssistance/MaxTicketExpiry](p_icd_settings.remoteassistance_maxticketexpiry)                       |
-| - MaxTicketExpiryUnits       | [/RemoteAssistance/MaxTicketExpiryUnits](p_icd_settings.remoteassistance_maxticketexpiryunits)             |
+| - CreateEncryptedOnlyTickets | [/RemoteAssistance/CreateEncryptedOnlyTickets](https://msdn.microsoft.com/library/windows/hardware/dn953760) |
+| - fAllowToGetHelp            | [/RemoteAssistance/AllowToGetHelp](https://msdn.microsoft.com/library/windows/hardware/dn953759)                         |
+| - fAllowFullControl          | [/RemoteAssistance/AllowFullControl](https://msdn.microsoft.com/library/windows/hardware/dn953758)                     |
+| - MaxTicketExpiry            | [/RemoteAssistance/MaxTicketExpiry](https://msdn.microsoft.com/library/windows/hardware/dn953761)                       |
+| - MaxTicketExpiryUnits       | [/RemoteAssistance/MaxTicketExpiryUnits](https://msdn.microsoft.com/library/windows/hardware/dn953761units)             |
 
  
 
@@ -784,7 +784,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 | - MaxCryptoRequestsPerIo              | N/A                                                                                                      |
 | - MaxDecryptRequests                  | N/A                                                                                                      |
 | - MaxEncryptRequests                  | N/A                                                                                                      |
-| - PreventDeviceEncryption             | [/BitLocker/DoNotAutomaticallyEncryptDevices](p_icd_settings.bitlocker_donotautomaticallyencryptdevices) |
+| - PreventDeviceEncryption             | [/BitLocker/DoNotAutomaticallyEncryptDevices](https://msdn.microsoft.com/library/windows/hardware/dn953354) |
 | - SlicedEncryptionInPlace             | N/A                                                                                                      |
 | - SlicedEncryptionMinSize             | N/A                                                                                                      |
 | - SlicedEncryptionRequestsMax         | N/A                                                                                                      |
@@ -799,7 +799,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                |
 |-----------------------|----------------------------------------------------------------------------|
-| - SkipRearm           | [/SoftwareLicensing/SkipRearm](p_icd_settings.softwarelicensing_skiprearm) |
+| - SkipRearm           | [/SoftwareLicensing/SkipRearm](https://msdn.microsoft.com/library/windows/hardware/dn934590) |
 
  
 
@@ -808,7 +808,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                                  |
 |-----------------------|----------------------------------------------------------------------------------------------|
-| - SkipAutoActivation  | [/SoftwareLicensing/SkipAutoActivation](p_icd_settings.softwarelicensing_skipautoactivation) |
+| - SkipAutoActivation  | [/SoftwareLicensing/SkipAutoActivation](https://msdn.microsoft.com/library/windows/hardware/dn934589) |
 
  
 
@@ -960,10 +960,10 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                    |
 |-----------------------|--------------------------------------------------------------------------------|
-| - EnableICS           | [/SharedAccess/EnableICS](p_icd_settings.sharedaccess_enableics)               |
-| - ExternalAdapter     | [/SharedAccess/ExternalAdapter](p_icd_settings.sharedaccess_externaladapter)   |
-| - InternalAdapter     | [/SharedAccess/InternalAdapter](p_icd_settings.sharedaccess_internaladapter)   |
-| - InternalIsBridge    | [/SharedAccess/InternalIsBridge](p_icd_settings.sharedaccess_internalisbridge) |
+| - EnableICS           | [/SharedAccess/EnableICS](https://msdn.microsoft.com/library/windows/hardware/dn953786)               |
+| - ExternalAdapter     | [/SharedAccess/ExternalAdapter](https://msdn.microsoft.com/library/windows/hardware/dn953787)   |
+| - InternalAdapter     | [/SharedAccess/InternalAdapter](https://msdn.microsoft.com/library/windows/hardware/dn953788)   |
+| - InternalIsBridge    | [/SharedAccess/InternalIsBridge](https://msdn.microsoft.com/library/windows/hardware/dn953789) |
 
  
 
@@ -972,84 +972,84 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name                  | Windows Provisioning setting group and name                                                                                                                |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - AutoLogon                            | [/Shell/AutoLogon](p_icd_settings.shell_autologon)                                                                                                         |
-| -- Domain                              | [/Shell/AutoLogon/Domain](p_icd_settings.shell_autologon_domain)                                                                                           |
-| -- Enabled                             | [/Shell/AutoLogon/Enabled](p_icd_settings.shell_autologon_enabled)                                                                                         |
-| -- LogonCount                          | [/Shell/AutoLogon/LogonCount](p_icd_settings.shell_autologon_logoncount)                                                                                   |
-| -- Password                            | [/Shell/AutoLogon/Password](p_icd_settings.shell_autologon_password)                                                                                       |
-| --- PlainText                          | [/Shell/AutoLogon/PlainText](p_icd_settings.shell_autologon_password_plaintext)                                                                            |
-| --- Value                              | [/Shell/AutoLogon/Value](p_icd_settings.shell_autologon_password_value)                                                                                    |
-| -- Username                            | [/Shell/AutoLogon/Username](p_icd_settings.shell_autologon_username)                                                                                       |
-| - BluetoothTaskbarIconEnabled          | [/Shell/BluetoothTaskbarIconEnabled](p_icd_settings.shell_bluetoothtaskbariconenabled)                                                                     |
-| - ClientApplications                   | [/Shell/ClientApplications](p_icd_settings.shell_clientapplications)                                                                                       |
-| -- IM                                  | [/Shell/ClientApplications/IM](p_icd_settings.shell_clientapplications_im)                                                                                 |
-| -- Internet                            | [/Shell/ClientApplications/Internet](p_icd_settings.shell_clientapplications_internet)                                                                     |
-| -- JavaVM                              | [/Shell/ClientApplications/JavaVM](p_icd_settings.shell_clientapplications_javavm)                                                                         |
-| -- Mail                                | [/Shell/ClientApplications/Mail](p_icd_settings.shell_clientapplications_mail)                                                                             |
-| -- Media                               | [/Shell/ClientApplications/Media](p_icd_settings.shell_clientapplications_media)                                                                           |
-| - ComputerName                         | [/Computer/Name](p_icd_settings.computer_name)                                                                                                             |
-| - ConvertibleSlateModePromptPreference | [/TabletMode/ConvertibleSlateModePromptPreference](p_icd_settings.tabletmode_convertibleslatemodepromptpreference)                                         |
-| - CopyProfile                          | [/Shell/CopyProfile](p_icd_settings.shell_copyprofile)                                                                                                     |
-| - DesktopOptimization                  | [/Shell/DesktopOptimizations](p_icd_settings.shell_desktopoptimizations)                                                                                   |
-| -- GoToDesktopOnSignIn                 | [/Shell/DesktopOptimizations/GoToDesktopOnSignIn](p_icd_settings.shell_desktopoptimizations_gotodesktoponsignin)                                           |
-| -- ShowWindowsStoreAppsOnTaskbar       | [/Shell/DesktopOptimizations/ShowWindowsStoreAppsOnTaskbar](p_icd_settings.shell_desktopoptimizations_showwindowsstoreappsontaskbar)                       |
-| - DisableAutoDaylightTimeSet           | [/Shell/DisableAutoDaylightTimeSet](p_icd_settings.shell_disableautodaylighttimeset)                                                                       |
-| - Display                              | [/Display/Settings](p_icd_settings.display)                                                                                                                |
-| -- ColorDepth                          | [/Display/Settings/ColorDepth](p_icd_settings.display_settings_colordepth)                                                                                 |
-| -- DPI                                 | [/Display/Settings/DPI](p_icd_settings.display_settings_dpi)                                                                                               |
-| -- HorizontalResolution                | [/Display/Settings/HorizontalResolution](p_icd_settings.display_settings_horizontalresolution)                                                             |
-| -- RefreshRate                         | [/Display/Settings/RefreshRate](p_icd_settings.display_settings_refreshrate)                                                                               |
-| -- VerticalResolution                  | [/Display/Settings/VerticalResolution](p_icd_settings.display_settings_verticalresolution)                                                                 |
-| - DoNotCleanTaskBar                    | [/Shell/DoNotCleanTaskBar](p_icd_settings.shell_donotcleantaskbar)                                                                                         |
+| - AutoLogon                            | [/Shell/AutoLogon](https://msdn.microsoft.com/library/windows/hardware/dn953791)                                                                                                         |
+| -- Domain                              | [/Shell/AutoLogon/Domain](https://msdn.microsoft.com/library/windows/hardware/dn953791_domain)                                                                                           |
+| -- Enabled                             | [/Shell/AutoLogon/Enabled](https://msdn.microsoft.com/library/windows/hardware/dn953791_enabled)                                                                                         |
+| -- LogonCount                          | [/Shell/AutoLogon/LogonCount](https://msdn.microsoft.com/library/windows/hardware/dn953791_logoncount)                                                                                   |
+| -- Password                            | [/Shell/AutoLogon/Password](https://msdn.microsoft.com/library/windows/hardware/dn953791_password)                                                                                       |
+| --- PlainText                          | [/Shell/AutoLogon/PlainText](https://msdn.microsoft.com/library/windows/hardware/dn953791_password_plaintext)                                                                            |
+| --- Value                              | [/Shell/AutoLogon/Value](https://msdn.microsoft.com/library/windows/hardware/dn953791_password_value)                                                                                    |
+| -- Username                            | [/Shell/AutoLogon/Username](https://msdn.microsoft.com/library/windows/hardware/dn953791_username)                                                                                       |
+| - BluetoothTaskbarIconEnabled          | [/Shell/BluetoothTaskbarIconEnabled](https://msdn.microsoft.com/library/windows/hardware/dn953799)                                                                     |
+| - ClientApplications                   | [/Shell/ClientApplications](https://msdn.microsoft.com/library/windows/hardware/dn953800)                                                                                       |
+| -- IM                                  | [/Shell/ClientApplications/IM](https://msdn.microsoft.com/library/windows/hardware/dn953800_im)                                                                                 |
+| -- Internet                            | [/Shell/ClientApplications/Internet](https://msdn.microsoft.com/library/windows/hardware/dn953800_internet)                                                                     |
+| -- JavaVM                              | [/Shell/ClientApplications/JavaVM](https://msdn.microsoft.com/library/windows/hardware/dn953800_javavm)                                                                         |
+| -- Mail                                | [/Shell/ClientApplications/Mail](https://msdn.microsoft.com/library/windows/hardware/dn953800_mail)                                                                             |
+| -- Media                               | [/Shell/ClientApplications/Media](https://msdn.microsoft.com/library/windows/hardware/dn953800_media)                                                                           |
+| - ComputerName                         | [/Computer/Name](https://msdn.microsoft.com/library/windows/hardware/dn953363)                                                                                                             |
+| - ConvertibleSlateModePromptPreference | [/TabletMode/ConvertibleSlateModePromptPreference](https://msdn.microsoft.com/library/windows/hardware/mt297551)                                         |
+| - CopyProfile                          | [/Shell/CopyProfile](https://msdn.microsoft.com/library/windows/hardware/dn953806)                                                                                                     |
+| - DesktopOptimization                  | [/Shell/DesktopOptimizations](https://msdn.microsoft.com/library/windows/hardware/dn953807)                                                                                   |
+| -- GoToDesktopOnSignIn                 | [/Shell/DesktopOptimizations/GoToDesktopOnSignIn](https://msdn.microsoft.com/library/windows/hardware/dn953807_gotodesktoponsignin)                                           |
+| -- ShowWindowsStoreAppsOnTaskbar       | [/Shell/DesktopOptimizations/ShowWindowsStoreAppsOnTaskbar](https://msdn.microsoft.com/library/windows/hardware/dn953807_showwindowsstoreappsontaskbar)                       |
+| - DisableAutoDaylightTimeSet           | [/Shell/DisableAutoDaylightTimeSet](https://msdn.microsoft.com/library/windows/hardware/dn953810)                                                                       |
+| - Display                              | [/Display/Settings](https://msdn.microsoft.com/library/windows/hardware/dn953368)                                                                                                                |
+| -- ColorDepth                          | [/Display/Settings/ColorDepth](https://msdn.microsoft.com/library/windows/hardware/dn953368_settings_colordepth)                                                                                 |
+| -- DPI                                 | [/Display/Settings/DPI](https://msdn.microsoft.com/library/windows/hardware/dn953368_settings_dpi)                                                                                               |
+| -- HorizontalResolution                | [/Display/Settings/HorizontalResolution](https://msdn.microsoft.com/library/windows/hardware/dn953368_settings_horizontalresolution)                                                             |
+| -- RefreshRate                         | [/Display/Settings/RefreshRate](https://msdn.microsoft.com/library/windows/hardware/dn953368_settings_refreshrate)                                                                               |
+| -- VerticalResolution                  | [/Display/Settings/VerticalResolution](https://msdn.microsoft.com/library/windows/hardware/dn953368_settings_verticalresolution)                                                                 |
+| - DoNotCleanTaskBar                    | [/Shell/DoNotCleanTaskBar](https://msdn.microsoft.com/library/windows/hardware/dn953811)                                                                                         |
 | - FirstLogonCommands                   | N/A                                                                                                                                                        |
 | -- SynchronousCommand                  | N/A                                                                                                                                                        |
 | --- CommandLine                        | N/A                                                                                                                                                        |
 | --- Description                        | N/A                                                                                                                                                        |
 | --- Order                              | N/A                                                                                                                                                        |
 | --- RequiresUserInput                  | N/A                                                                                                                                                        |
-| - FolderLocations                      | [/Shell/FolderLocations](p_icd_settings.shell_folderlocations)                                                                                             |
-| -- ProfilesDirectory                   | [/Shell/FolderLocations/ProfilesDirectory](p_icd_settings.shell_folderlocations_profilesdirectory)                                                         |
-| -- ProgramData                         | [/Shell/FolderLocations/ProgramData](p_icd_settings.shell_folderlocations_programdata)                                                                     |
+| - FolderLocations                      | [/Shell/FolderLocations](https://msdn.microsoft.com/library/windows/hardware/dn953817)                                                                                             |
+| -- ProfilesDirectory                   | [/Shell/FolderLocations/ProfilesDirectory](https://msdn.microsoft.com/library/windows/hardware/dn953817_profilesdirectory)                                                         |
+| -- ProgramData                         | [/Shell/FolderLocations/ProgramData](https://msdn.microsoft.com/library/windows/hardware/dn953817_programdata)                                                                     |
 | - LogonCommands                        | N/A                                                                                                                                                        |
 | -- AsynchronousCommand                 | N/A                                                                                                                                                        |
 | --- CommandLine                        | N/A                                                                                                                                                        |
-| --- Description                        | [/Shell/LogonCommands/AsynchronousCommand/Description](p_icd_settings.helpandsupport_onlinesupporticondescription)                                         |
+| --- Description                        | [/Shell/LogonCommands/AsynchronousCommand/Description](https://msdn.microsoft.com/library/windows/hardware/dn953476)                                         |
 | --- Order                              | N/A                                                                                                                                                        |
 | --- RequiresUserInput                  | N/A                                                                                                                                                        |
-| - NotificationArea                     | [/Shell/NotificationArea](p_icd_settings.shell_notificationarea)                                                                                           |
-| -- PromotedIcon1                       | [/Shell/NotificationArea/PromotedIcon1](p_icd_settings.shell_notificationarea_promotedicon1)                                                               |
-| --- GUID                               | [/Shell/NotificationArea/PromotedIcon1/GUID](p_icd_settings.shell_notificationarea_promotedicon1_guid)                                                     |
-| --- Path                               | [/Shell/NotificationArea/PromotedIcon1/Path](p_icd_settings.shell_notificationarea_promotedicon1_path)                                                     |
-| -- PromotedIcon2                       | [/Shell/PromotedIcon2](p_icd_settings.shell_notificationarea_promotedicon2)                                                                                |
-| --- GUID                               | [/Shell/PromotedIcon2/GUID](p_icd_settings.shell_notificationarea_promotedicon2_guid)                                                                      |
-| --- Path                               | [/Shell/PromotedIcon2/Path](p_icd_settings.shell_notificationarea_promotedicon2_path)                                                                      |
-| - OEMInformation                       | [/OEM/Information](p_icd_settings.oem_information)                                                                                                         |
-| -- HelpCustomized                      | [/OEM/Information/HelpCustomized](p_icd_settings.oem_information_helpcustomized)                                                                           |
+| - NotificationArea                     | [/Shell/NotificationArea](https://msdn.microsoft.com/library/windows/hardware/dn953825)                                                                                           |
+| -- PromotedIcon1                       | [/Shell/NotificationArea/PromotedIcon1](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon1)                                                               |
+| --- GUID                               | [/Shell/NotificationArea/PromotedIcon1/GUID](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon1_guid)                                                     |
+| --- Path                               | [/Shell/NotificationArea/PromotedIcon1/Path](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon1_path)                                                     |
+| -- PromotedIcon2                       | [/Shell/PromotedIcon2](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon2)                                                                                |
+| --- GUID                               | [/Shell/PromotedIcon2/GUID](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon2_guid)                                                                      |
+| --- Path                               | [/Shell/PromotedIcon2/Path](https://msdn.microsoft.com/library/windows/hardware/dn953825_promotedicon2_path)                                                                      |
+| - OEMInformation                       | [/OEM/Information](https://msdn.microsoft.com/library/windows/hardware/dn953644)                                                                                                         |
+| -- HelpCustomized                      | [/OEM/Information/HelpCustomized](https://msdn.microsoft.com/library/windows/hardware/dn953644_helpcustomized)                                                                           |
 | -- Logo                                | N/A                                                                                                                                                        |
-| -- Manufacturer                        | [/OEM/Information/Manufacturer](p_icd_settings.oem_information_manufacturer)                                                                               |
-| -- Model                               | [/OEM/Information/Model](p_icd_settings.oem_information_model)                                                                                             |
-| -- SupportAppURL                       | [/OEM/Information/SupportAppURL](p_icd_settings.oem_information_supportappurl)                                                                             |
-| -- SupportHours                        | [/OEM/Information/SupportHours](p_icd_settings.oem_information_supporthours)                                                                               |
-| -- SupportPhone                        | [/OEM/Information/SupportPhone](p_icd_settings.oem_information_supportphone)                                                                               |
-| -- SupportURL                          | [/OEM/Information/SupportURL](p_icd_settings.oem_information_supporturl)                                                                                   |
+| -- Manufacturer                        | [/OEM/Information/Manufacturer](https://msdn.microsoft.com/library/windows/hardware/dn953644_manufacturer)                                                                               |
+| -- Model                               | [/OEM/Information/Model](https://msdn.microsoft.com/library/windows/hardware/dn953644_model)                                                                                             |
+| -- SupportAppURL                       | [/OEM/Information/SupportAppURL](https://msdn.microsoft.com/library/windows/hardware/dn953644_supportappurl)                                                                             |
+| -- SupportHours                        | [/OEM/Information/SupportHours](https://msdn.microsoft.com/library/windows/hardware/dn953644_supporthours)                                                                               |
+| -- SupportPhone                        | [/OEM/Information/SupportPhone](https://msdn.microsoft.com/library/windows/hardware/dn953644_supportphone)                                                                               |
+| -- SupportURL                          | [/OEM/Information/SupportURL](https://msdn.microsoft.com/library/windows/hardware/dn953644_supporturl)                                                                                   |
 | - OEMName                              | N/A                                                                                                                                                        |
-| - OEMWelcomeCenter                     | [/OEM/WelcomeCenter](p_icd_settings.oem_welcomecenter)                                                                                                     |
-| -- link                                | [/OEM/WelcomeCenter/link](p_icd_settings.oem_welcomecenter_link)                                                                                           |
-| - OEMWelcomeCenterLinks                | [/OEM/WelcomeCenterLinks](p_icd_settings.oem_welcomecenterlinks)                                                                                           |
-| -- Link0                               | [/OEM/WelcomeCenterLinks/Link0](p_icd_settings.oem_welcomecenterlinks_link0)                                                                               |
-| -- Link1                               | [/OEM/WelcomeCenterLinks/Link1](p_icd_settings.oem_welcomecenterlinks_link1)                                                                               |
-| -- Link2                               | [/OEM/WelcomeCenterLinks/Link2](p_icd_settings.oem_welcomecenterlinks_link2)                                                                               |
-| -- Link3                               | [/OEM/WelcomeCenterLinks/Link3](p_icd_settings.oem_welcomecenterlinks_link3)                                                                               |
-| -- Link4                               | [/OEM/WelcomeCenterLinks/Link4](p_icd_settings.oem_welcomecenterlinks_link4)                                                                               |
-| -- Link5                               | [/OEM/WelcomeCenterLinks/Link5](p_icd_settings.oem_welcomecenterlinks_link5)                                                                               |
-| -- Link6                               | [/OEM/WelcomeCenterLinks/Link6](p_icd_settings.oem_welcomecenterlinks_link6)                                                                               |
-| -- Link7                               | [/OEM/WelcomeCenterLinks/Link7](p_icd_settings.oem_welcomecenterlinks_link7)                                                                               |
-| -- Link8                               | [/OEM/WelcomeCenterLinks/Link8](p_icd_settings.oem_welcomecenterlinks_link8)                                                                               |
-| -- Link9                               | [/OEM/WelcomeCenterLinks/Link9](p_icd_settings.oem_welcomecenterlinks_link9)                                                                               |
-| - OfflineUserAccounts                  | [/UserAccounts/OfflineAccounts](p_icd_settings.useraccounts_offlineaccounts)                                                                               |
-| -- OfflineAdministratorPassword        | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword](p_icd_settings.useraccounts_offlineaccounts_offlineadministratorpassword)                     |
-| --- PlainText                          | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword/PlainText](p_icd_settings.useraccounts_offlineaccounts_offlineadministratorpassword_plaintext) |
-| --- Value                              | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword/Value](p_icd_settings.useraccounts_offlineaccounts_offlineadministratorpassword_value)         |
+| - OEMWelcomeCenter                     | [/OEM/WelcomeCenter](https://msdn.microsoft.com/library/windows/hardware/dn953653)                                                                                                     |
+| -- link                                | [/OEM/WelcomeCenter/link](https://msdn.microsoft.com/library/windows/hardware/dn953653_link)                                                                                           |
+| - OEMWelcomeCenterLinks                | [/OEM/WelcomeCenterLinks](https://msdn.microsoft.com/library/windows/hardware/dn953653links)                                                                                           |
+| -- Link0                               | [/OEM/WelcomeCenterLinks/Link0](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link0)                                                                               |
+| -- Link1                               | [/OEM/WelcomeCenterLinks/Link1](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link1)                                                                               |
+| -- Link2                               | [/OEM/WelcomeCenterLinks/Link2](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link2)                                                                               |
+| -- Link3                               | [/OEM/WelcomeCenterLinks/Link3](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link3)                                                                               |
+| -- Link4                               | [/OEM/WelcomeCenterLinks/Link4](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link4)                                                                               |
+| -- Link5                               | [/OEM/WelcomeCenterLinks/Link5](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link5)                                                                               |
+| -- Link6                               | [/OEM/WelcomeCenterLinks/Link6](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link6)                                                                               |
+| -- Link7                               | [/OEM/WelcomeCenterLinks/Link7](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link7)                                                                               |
+| -- Link8                               | [/OEM/WelcomeCenterLinks/Link8](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link8)                                                                               |
+| -- Link9                               | [/OEM/WelcomeCenterLinks/Link9](https://msdn.microsoft.com/library/windows/hardware/dn953653links_link9)                                                                               |
+| - OfflineUserAccounts                  | [/UserAccounts/OfflineAccounts](https://msdn.microsoft.com/library/windows/hardware/dn934668)                                                                               |
+| -- OfflineAdministratorPassword        | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword](https://msdn.microsoft.com/library/windows/hardware/dn934668_offlineadministratorpassword)                     |
+| --- PlainText                          | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword/PlainText](https://msdn.microsoft.com/library/windows/hardware/dn934668_offlineadministratorpassword_plaintext) |
+| --- Value                              | [/UserAccounts/OfflineAccounts/OfflineAdministratorPassword/Value](https://msdn.microsoft.com/library/windows/hardware/dn934668_offlineadministratorpassword_value)         |
 | -- OfflineDomainAccounts               | N/A                                                                                                                                                        |
 | --- OfflineDomainAccount               | N/A                                                                                                                                                        |
 | ---- Group                             | N/A                                                                                                                                                        |
@@ -1063,30 +1063,30 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 | ----- Password                         | N/A                                                                                                                                                        |
 | ------ PlainText                       | N/A                                                                                                                                                        |
 | ------ Value                           | N/A                                                                                                                                                        |
-| - OOBE                                 | [/OutOfBoxExperience/Options](p_icd_settings.outofboxexperience_options)                                                                                   |
-| -- HideEULAPage                        | [/OutOfBoxExperience/Options/HideEULAPage](p_icd_settings.outofboxexperience_options_hideeulapage)                                                         |
-| -- HideLocalAccountScreen              | [/OutOfBoxExperience/Options/HideLocalAccountScreen](p_icd_settings.outofboxexperience_options_hidelocalaccountscreen)                                     |
-| -- HideOEMRegistrationScreen           | [/OutOfBoxExperience/Options/HideOEMRegistrationScreen](p_icd_settings.outofboxexperience_options_hideoemregistrationscreen)                               |
-| -- HideOnlineAccountScreens            | [/OutOfBoxExperience/Options/HideOnlineAccountScreens](p_icd_settings.outofboxexperience_options_hideonlineaccountscreens)                                 |
-| -- HideWirelessSetupInOOBE             | [/OutOfBoxExperience/Options/HideWirelessSetupInOOBE](p_icd_settings.outofboxexperience_options_hidewirelesssetupinoobe)                                   |
+| - OOBE                                 | [/OutOfBoxExperience/Options](https://msdn.microsoft.com/library/windows/hardware/dn953685)                                                                                   |
+| -- HideEULAPage                        | [/OutOfBoxExperience/Options/HideEULAPage](https://msdn.microsoft.com/library/windows/hardware/dn953685_hideeulapage)                                                         |
+| -- HideLocalAccountScreen              | [/OutOfBoxExperience/Options/HideLocalAccountScreen](https://msdn.microsoft.com/library/windows/hardware/dn953685_hidelocalaccountscreen)                                     |
+| -- HideOEMRegistrationScreen           | [/OutOfBoxExperience/Options/HideOEMRegistrationScreen](https://msdn.microsoft.com/library/windows/hardware/dn953685_hideoemregistrationscreen)                               |
+| -- HideOnlineAccountScreens            | [/OutOfBoxExperience/Options/HideOnlineAccountScreens](https://msdn.microsoft.com/library/windows/hardware/dn953685_hideonlineaccountscreens)                                 |
+| -- HideWirelessSetupInOOBE             | [/OutOfBoxExperience/Options/HideWirelessSetupInOOBE](https://msdn.microsoft.com/library/windows/hardware/dn953685_hidewirelesssetupinoobe)                                   |
 | -- NetworkLocation                     | Deprecated in Windows 10                                                                                                                                   |
-| -- OEMAppId                            | [/OutOfBoxExperience/Options/OEMAppId](p_icd_settings.outofboxexperience_options_oemappid)                                                                 |
-| -- ProtectYourPC                       | [/OutOfBoxExperience/Options/ProtectYourPC](p_icd_settings.outofboxexperience_options_protectyourpc)                                                       |
-| -- SkipMachineOOBE                     | [/OutOfBoxExperience/Options/SkipMachineOOBE](p_icd_settings.outofboxexperience_options_skipmachineoobe)                                                   |
-| -- SkipUserOOBE                        | [/OutOfBoxExperience/Options/SkipUserOOBE](p_icd_settings.outofboxexperience_options_skipuseroobe)                                                         |
-| -- UnattendEnableRetailDemo            | [/OutOfBoxExperience/Options/UnattendEnableRetailDemo](p_icd_settings.outofboxexperience_options_unattendenableretaildemo)                                 |
-| - ProductKey                           | [/Setup/ProductKey](p_icd_settings.setup_productkey)                                                                                                       |
-| - RegisteredOrganization               | [/Registered/Organization](p_icd_settings.registered_organization)                                                                                         |
-| - RegisteredOwner                      | [/Registered/Owner](p_icd_settings.registered_owner)                                                                                                       |
-| - ShowPowerButtonOnStartScreen         | [/StartMenu/ShowPowerButton](p_icd_settings.startmenu_showpowerbutton)                                                                                     |
-| - ShowWindowsLive                      | [/Shell/ShowWindowsLive](p_icd_settings.shell_showwindowslive)                                                                                             |
-| - SignInMode                           | [/TabletMode/SignInMode](p_icd_settings.tabletmode_signinmode)                                                                                             |
-| - StartPanelLinks                      | [/Shell/StartPanelLinks](p_icd_settings.shell_startpanellinks)                                                                                             |
-| -- Link0                               | [/Shell/StartPanelLinks/Link0](p_icd_settings.shell_startpanellinks_link0)                                                                                 |
-| -- Link1                               | [/Shell/StartPanelLinks/Link1](p_icd_settings.shell_startpanellinks_link1)                                                                                 |
-| -- Link2                               | [/Shell/StartPanelLinks/Link2](p_icd_settings.shell_startpanellinks_link2)                                                                                 |
-| -- Link3                               | [/Shell/StartPanelLinks/Link3](p_icd_settings.shell_startpanellinks_link3)                                                                                 |
-| -- Link4                               | [/Shell/StartPanelLinks/Link4](p_icd_settings.shell_startpanellinks_link4)                                                                                 |
+| -- OEMAppId                            | [/OutOfBoxExperience/Options/OEMAppId](https://msdn.microsoft.com/library/windows/hardware/dn953685_oemappid)                                                                 |
+| -- ProtectYourPC                       | [/OutOfBoxExperience/Options/ProtectYourPC](https://msdn.microsoft.com/library/windows/hardware/dn953685_protectyourpc)                                                       |
+| -- SkipMachineOOBE                     | [/OutOfBoxExperience/Options/SkipMachineOOBE](https://msdn.microsoft.com/library/windows/hardware/dn953685_skipmachineoobe)                                                   |
+| -- SkipUserOOBE                        | [/OutOfBoxExperience/Options/SkipUserOOBE](https://msdn.microsoft.com/library/windows/hardware/dn953685_skipuseroobe)                                                         |
+| -- UnattendEnableRetailDemo            | [/OutOfBoxExperience/Options/UnattendEnableRetailDemo](https://msdn.microsoft.com/library/windows/hardware/dn953685_unattendenableretaildemo)                                 |
+| - ProductKey                           | [/Setup/ProductKey](https://msdn.microsoft.com/library/windows/hardware/dn953783)                                                                                                       |
+| - RegisteredOrganization               | [/Registered/Organization](https://msdn.microsoft.com/library/windows/hardware/dn953752)                                                                                         |
+| - RegisteredOwner                      | [/Registered/Owner](https://msdn.microsoft.com/library/windows/hardware/dn953753)                                                                                                       |
+| - ShowPowerButtonOnStartScreen         | [/StartMenu/ShowPowerButton](https://msdn.microsoft.com/library/windows/hardware/dn934593)                                                                                     |
+| - ShowWindowsLive                      | [/Shell/ShowWindowsLive](https://msdn.microsoft.com/library/windows/hardware/dn953832)                                                                                             |
+| - SignInMode                           | [/TabletMode/SignInMode](https://msdn.microsoft.com/library/windows/hardware/mt297552)                                                                                             |
+| - StartPanelLinks                      | [/Shell/StartPanelLinks](https://msdn.microsoft.com/library/windows/hardware/dn953833)                                                                                             |
+| -- Link0                               | [/Shell/StartPanelLinks/Link0](https://msdn.microsoft.com/library/windows/hardware/dn953833_link0)                                                                                 |
+| -- Link1                               | [/Shell/StartPanelLinks/Link1](https://msdn.microsoft.com/library/windows/hardware/dn953833_link1)                                                                                 |
+| -- Link2                               | [/Shell/StartPanelLinks/Link2](https://msdn.microsoft.com/library/windows/hardware/dn953833_link2)                                                                                 |
+| -- Link3                               | [/Shell/StartPanelLinks/Link3](https://msdn.microsoft.com/library/windows/hardware/dn953833_link3)                                                                                 |
+| -- Link4                               | [/Shell/StartPanelLinks/Link4](https://msdn.microsoft.com/library/windows/hardware/dn953833_link4)                                                                                 |
 | - StartTiles                           | N/A                                                                                                                                                        |
 | -- LockScreen                          | N/A                                                                                                                                                        |
 | --- Badge                              | N/A                                                                                                                                                        |
@@ -1267,27 +1267,27 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 | --- WideTile6                          | N/A                                                                                                                                                        |
 | ---- AppId                             | N/A                                                                                                                                                        |
 | ---- FirstRunTask                      | N/A                                                                                                                                                        |
-| - StartPanelOff                        | [/StartMenu/UseClassicAppearance](p_icd_settings.startmenu_useclassicappearance)                                                                           |
-| - TaskbarLinks                         | [/Shell/TaskbarLinks](p_icd_settings.shell_taskbarlinks)                                                                                                   |
-| -- Link0                               | [/Shell/TaskbarLinks/Link0](p_icd_settings.shell_taskbarlinks_link0)                                                                                       |
-| -- Link1                               | [/Shell/TaskbarLinks/Link1](p_icd_settings.shell_taskbarlinks_link1)                                                                                       |
-| -- Link2                               | [/Shell/TaskbarLinks/Link2](p_icd_settings.shell_taskbarlinks_link2)                                                                                       |
-| -- Link3                               | [/Shell/TaskbarLinks/Link3](p_icd_settings.shell_taskbarlinks_link3)                                                                                       |
-| -- Link4                               | [/Shell/TaskbarLinks/Link4](p_icd_settings.shell_taskbarlinks_link4)                                                                                       |
-| -- Link5                               | [/Shell/TaskbarLinks/Link5](p_icd_settings.shell_taskbarlinks_link5)                                                                                       |
-| - Themes                               | [/Shell/Themes](p_icd_settings.shell_themes)                                                                                                               |
+| - StartPanelOff                        | [/StartMenu/UseClassicAppearance](https://msdn.microsoft.com/library/windows/hardware/dn934594)                                                                           |
+| - TaskbarLinks                         | [/Shell/TaskbarLinks](https://msdn.microsoft.com/library/windows/hardware/dn934546)                                                                                                   |
+| -- Link0                               | [/Shell/TaskbarLinks/Link0](https://msdn.microsoft.com/library/windows/hardware/dn934546_link0)                                                                                       |
+| -- Link1                               | [/Shell/TaskbarLinks/Link1](https://msdn.microsoft.com/library/windows/hardware/dn934546_link1)                                                                                       |
+| -- Link2                               | [/Shell/TaskbarLinks/Link2](https://msdn.microsoft.com/library/windows/hardware/dn934546_link2)                                                                                       |
+| -- Link3                               | [/Shell/TaskbarLinks/Link3](https://msdn.microsoft.com/library/windows/hardware/dn934546_link3)                                                                                       |
+| -- Link4                               | [/Shell/TaskbarLinks/Link4](https://msdn.microsoft.com/library/windows/hardware/dn934546_link4)                                                                                       |
+| -- Link5                               | [/Shell/TaskbarLinks/Link5](https://msdn.microsoft.com/library/windows/hardware/dn934546_link5)                                                                                       |
+| - Themes                               | [/Shell/Themes](https://msdn.microsoft.com/library/windows/hardware/dn934553)                                                                                                               |
 | -- BrandIcon                           | N/A                                                                                                                                                        |
 | -- CustomDefaultThemeFile              | N/A                                                                                                                                                        |
-| -- DefaultThemesOff                    | [/Shell/Themes/DefaultThemesOff](p_icd_settings.shell_themes_defaultthemesoff)                                                                             |
+| -- DefaultThemesOff                    | [/Shell/Themes/DefaultThemesOff](https://msdn.microsoft.com/library/windows/hardware/dn934553_defaultthemesoff)                                                                             |
 | -- DesktopBackground                   | N/A                                                                                                                                                        |
 | -- ScreenSaver                         | N/A                                                                                                                                                        |
-| -- ThemeName                           | [/Shell/Themes/ThemeName](p_icd_settings.shell_themes_themename)                                                                                           |
-| -- WindowColor                         | [/Shell/Themes/WindowColor](p_icd_settings.shell_themes_windowcolor)                                                                                       |
-| - TimeZone                             | [/Shell/TimeZone](p_icd_settings.shell_timezone)                                                                                                           |
-| - UserAccounts                         | [/UserAccounts/Accounts](p_icd_settings.useraccounts_accounts)                                                                                             |
-| -- AdministratorPassword               | [/UserAccounts/Accounts/AdministratorPassword](p_icd_settings.useraccounts_accounts_administratorpassword)                                                 |
-| --- PlainText                          | [/UserAccounts/Accounts/AdministratorPassword/PlainText](p_icd_settings.useraccounts_accounts_administratorpassword_plaintext)                             |
-| --- Value                              | [/UserAccounts/Accounts/AdministratorPassword/Value](p_icd_settings.useraccounts_accounts_administratorpassword_value)                                     |
+| -- ThemeName                           | [/Shell/Themes/ThemeName](https://msdn.microsoft.com/library/windows/hardware/dn934553_themename)                                                                                           |
+| -- WindowColor                         | [/Shell/Themes/WindowColor](https://msdn.microsoft.com/library/windows/hardware/dn934553_windowcolor)                                                                                       |
+| - TimeZone                             | [/Shell/TimeZone](https://msdn.microsoft.com/library/windows/hardware/dn934562)                                                                                                           |
+| - UserAccounts                         | [/UserAccounts/Accounts](https://msdn.microsoft.com/library/windows/hardware/dn934651)                                                                                             |
+| -- AdministratorPassword               | [/UserAccounts/Accounts/AdministratorPassword](https://msdn.microsoft.com/library/windows/hardware/dn934651_administratorpassword)                                                 |
+| --- PlainText                          | [/UserAccounts/Accounts/AdministratorPassword/PlainText](https://msdn.microsoft.com/library/windows/hardware/dn934651_administratorpassword_plaintext)                             |
+| --- Value                              | [/UserAccounts/Accounts/AdministratorPassword/Value](https://msdn.microsoft.com/library/windows/hardware/dn934651_administratorpassword_value)                                     |
 | -- DomainAccounts                      | N/A                                                                                                                                                        |
 | --- Domain                             | N/A                                                                                                                                                        |
 | --- DomainAccountList                  | N/A                                                                                                                                                        |
@@ -1297,20 +1297,20 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 | -- LocalAccounts                       | N/A                                                                                                                                                        |
 | --- Name                               | N/A                                                                                                                                                        |
 | --- LocalAccount                       | N/A                                                                                                                                                        |
-| ---- Description                       | [/UserAccounts/Accounts/LocalAccounts/LocalAccount/Description](p_icd_settings.helpandsupport_onlinesupporticondescription)                                |
+| ---- Description                       | [/UserAccounts/Accounts/LocalAccounts/LocalAccount/Description](https://msdn.microsoft.com/library/windows/hardware/dn953476)                                |
 | ---- DisplayName                       | N/A                                                                                                                                                        |
 | ---- Group                             | N/A                                                                                                                                                        |
 | ---- Password                          | N/A                                                                                                                                                        |
 | ----- PlainText                        | N/A                                                                                                                                                        |
 | ----- Value                            | N/A                                                                                                                                                        |
-| - VisualEffects                        | [/Shell/VisualEffects](p_icd_settings.shell_visualeffects)                                                                                                 |
-| -- FontSmoothing                       | [/Shell/VisualEffects/FontSmoothing](p_icd_settings.shell_visualeffects_fontsmoothing)                                                                     |
+| - VisualEffects                        | [/Shell/VisualEffects](https://msdn.microsoft.com/library/windows/hardware/dn934563)                                                                                                 |
+| -- FontSmoothing                       | [/Shell/VisualEffects/FontSmoothing](https://msdn.microsoft.com/library/windows/hardware/dn934563_fontsmoothing)                                                                     |
 | -- SystemDefaultBackgroundColor        | Deprecated in Windows 10 and should not be used.                                                                                                           |
-| - WindowsFeatures                      | [/Shell/WindowsFeatures](p_icd_settings.shell_windowsfeatures)                                                                                             |
-| -- ShowInternetExplorer                | [/Shell/WindowsFeatures/ShowInternetExplorer](p_icd_settings.shell_windowsfeatures_showinternetexplorer)                                                   |
-| -- ShowMediaCenter                     | [/Shell/WindowsFeatures/ShowMediaCenter](p_icd_settings.shell_windowsfeatures_showmediacenter)                                                             |
-| -- ShowWindowsMediaPlayer              | [/Shell/WindowsFeatures/ShowWindowsMediaPlayer](p_icd_settings.shell_windowsfeatures_showwindowsmediaplayer)                                               |
-| -- ShowWindowsMail                     | [/Shell/WindowsFeatures/ShowWindowsMail](p_icd_settings.shell_windowsfeatures_showwindowsmail)                                                             |
+| - WindowsFeatures                      | [/Shell/WindowsFeatures](https://msdn.microsoft.com/library/windows/hardware/dn934566)                                                                                             |
+| -- ShowInternetExplorer                | [/Shell/WindowsFeatures/ShowInternetExplorer](https://msdn.microsoft.com/library/windows/hardware/dn934566_showinternetexplorer)                                                   |
+| -- ShowMediaCenter                     | [/Shell/WindowsFeatures/ShowMediaCenter](https://msdn.microsoft.com/library/windows/hardware/dn934566_showmediacenter)                                                             |
+| -- ShowWindowsMediaPlayer              | [/Shell/WindowsFeatures/ShowWindowsMediaPlayer](https://msdn.microsoft.com/library/windows/hardware/dn934566_showwindowsmediaplayer)                                               |
+| -- ShowWindowsMail                     | [/Shell/WindowsFeatures/ShowWindowsMail](https://msdn.microsoft.com/library/windows/hardware/dn934566_showwindowsmail)                                                             |
 
  
 
@@ -1319,11 +1319,11 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                              |
 |-----------------------|--------------------------------------------------------------------------|
-| - Description         | [/OnlinePrinting/Description](p_icd_settings.onlineprinting_description) |
-| - DisplayName         | [/OnlinePrinting/DisplayName](p_icd_settings.onlineprinting_displayname) |
-| - href                | [/OnlinePrinting/href](p_icd_settings.onlineprinting_href)               |
+| - Description         | [/OnlinePrinting/Description](https://msdn.microsoft.com/library/windows/hardware/dn953679) |
+| - DisplayName         | [/OnlinePrinting/DisplayName](https://msdn.microsoft.com/library/windows/hardware/dn953680) |
+| - href                | [/OnlinePrinting/href](https://msdn.microsoft.com/library/windows/hardware/dn953681)               |
 | - Icon                | N/A                                                                      |
-| - ID                  | [/OnlinePrinting/ID](p_icd_settings.onlineprinting_id)                   |
+| - ID                  | [/OnlinePrinting/ID](https://msdn.microsoft.com/library/windows/hardware/dn953683)                   |
 
  
 
@@ -1332,14 +1332,14 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                              |
 |-----------------------|--------------------------------------------------------------------------|
-| - Gadget1             | [/Sidebar/Gadget1](p_icd_settings.sidebar_gadget1)                       |
-| - Gadget2             | [/Sidebar/Gadget2](p_icd_settings.sidebar_gadget2)                       |
-| - Gadget3             | [/Sidebar/Gadget3](p_icd_settings.sidebar_gadget3)                       |
-| - Gadget4             | [/Sidebar/Gadget4](p_icd_settings.sidebar_gadget4)                       |
-| - Gadget5             | [/Sidebar/Gadget5](p_icd_settings.sidebar_gadget5)                       |
-| - LayoutPosition      | [/Sidebar/LayoutPosition](p_icd_settings.sidebar_layoutposition)         |
-| - SidebarOnByDefault  | [/Sidebar/SidebarOnByDefault](p_icd_settings.sidebar_sidebaronbydefault) |
-| - SidebarVisible      | [/Sidebar/SidebarVisible](p_icd_settings.sidebar_sidebarvisible)         |
+| - Gadget1             | [/Sidebar/Gadget1](https://msdn.microsoft.com/library/windows/hardware/dn934572)                       |
+| - Gadget2             | [/Sidebar/Gadget2](https://msdn.microsoft.com/library/windows/hardware/dn934573)                       |
+| - Gadget3             | [/Sidebar/Gadget3](https://msdn.microsoft.com/library/windows/hardware/dn934574)                       |
+| - Gadget4             | [/Sidebar/Gadget4](https://msdn.microsoft.com/library/windows/hardware/dn934575)                       |
+| - Gadget5             | [/Sidebar/Gadget5](https://msdn.microsoft.com/library/windows/hardware/dn934576)                       |
+| - LayoutPosition      | [/Sidebar/LayoutPosition](https://msdn.microsoft.com/library/windows/hardware/dn934577)         |
+| - SidebarOnByDefault  | [/Sidebar/SidebarOnByDefault](https://msdn.microsoft.com/library/windows/hardware/dn934578) |
+| - SidebarVisible      | [/Sidebar/SidebarVisible](https://msdn.microsoft.com/library/windows/hardware/dn934579)         |
 
  
 
@@ -1348,8 +1348,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                  |
 |-----------------------|--------------------------------------------------------------|
-| - LmAnnounce          | [/SMBServer/LmAnnounce](p_icd_settings.smbserver_lmannounce) |
-| - Size                | [/SMBServer/CacheSize](p_icd_settings.smbserver_cachesize)   |
+| - LmAnnounce          | [/SMBServer/LmAnnounce](https://msdn.microsoft.com/library/windows/hardware/dn934586) |
+| - Size                | [/SMBServer/CacheSize](https://msdn.microsoft.com/library/windows/hardware/dn934585)   |
 
  
 
@@ -1381,7 +1381,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name  |
 |-----------------------|----------------------------------------------|
-| - CEIPEnabled         | [/CEIP/Enabled](p_icd_settings.ceip_enabled) |
+| - CEIPEnabled         | [/CEIP/Enabled](https://msdn.microsoft.com/library/windows/hardware/dn953361) |
 
  
 
@@ -1390,39 +1390,39 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name              | Windows Provisioning setting group and name                                                          |
 |------------------------------------|------------------------------------------------------------------------------------------------------|
-| - FlyoutAutoPowerScheme            | [/Power/FlyoutAutoPowerScheme](p_icd_settings.power_flyoutautopowerscheme)                           |
-| - FlyoutHighPerformancePowerScheme | [/Power/FlyoutHighPerformancePowerScheme](p_icd_settings.power_flyouthighperformancepowerscheme)     |
-| - FlyoutPowerSaverPowerScheme      | [/Power/FlyoutPowerSaverPowerScheme](p_icd_settings.power_flyoutpowersaverpowerscheme)               |
-| - CustomPowerApplication1          | [/Power/CustomPowerApplication1](p_icd_settings.power_custompowerapplication1)                       |
+| - FlyoutAutoPowerScheme            | [/Power/FlyoutAutoPowerScheme](https://msdn.microsoft.com/library/windows/hardware/dn953735)                           |
+| - FlyoutHighPerformancePowerScheme | [/Power/FlyoutHighPerformancePowerScheme](https://msdn.microsoft.com/library/windows/hardware/dn953736)     |
+| - FlyoutPowerSaverPowerScheme      | [/Power/FlyoutPowerSaverPowerScheme](https://msdn.microsoft.com/library/windows/hardware/dn953737)               |
+| - CustomPowerApplication1          | [/Power/CustomPowerApplication1](https://msdn.microsoft.com/library/windows/hardware/dn953705)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication1/ItemName](p_icd_settings.power_custompowerapplication1_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication1/Parameters](p_icd_settings.power_custompowerapplication1_parameters) |
-| - CustomPowerApplication2          | [/Power/CustomPowerApplication2](p_icd_settings.power_custompowerapplication2)                       |
+| -- ItemName                        | [/Power/CustomPowerApplication1/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953705_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication1/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953705_parameters) |
+| - CustomPowerApplication2          | [/Power/CustomPowerApplication2](https://msdn.microsoft.com/library/windows/hardware/dn953710)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication2/ItemName](p_icd_settings.power_custompowerapplication2_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication2/Parameters](p_icd_settings.power_custompowerapplication2_parameters) |
-| - CustomPowerApplication3          | [/Power/CustomPowerApplication3](p_icd_settings.power_custompowerapplication3)                       |
+| -- ItemName                        | [/Power/CustomPowerApplication2/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953710_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication2/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953710_parameters) |
+| - CustomPowerApplication3          | [/Power/CustomPowerApplication3](https://msdn.microsoft.com/library/windows/hardware/dn953715)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication3/ItemName](p_icd_settings.power_custompowerapplication3_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication3/Parameters](p_icd_settings.power_custompowerapplication3_parameters) |
-| - CustomPowerApplication4          | [/Power/CustomPowerApplication4](p_icd_settings.power_custompowerapplication4)                       |
+| -- ItemName                        | [/Power/CustomPowerApplication3/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953715_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication3/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953715_parameters) |
+| - CustomPowerApplication4          | [/Power/CustomPowerApplication4](https://msdn.microsoft.com/library/windows/hardware/dn953720)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication4/ItemName](p_icd_settings.power_custompowerapplication4_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication4/Parameters](p_icd_settings.power_custompowerapplication4_parameters) |
-| - CustomPowerApplication5          | [/Power/CustomPowerApplication5](p_icd_settings.power_custompowerapplication5)                       |
+| -- ItemName                        | [/Power/CustomPowerApplication4/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953720_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication4/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953720_parameters) |
+| - CustomPowerApplication5          | [/Power/CustomPowerApplication5](https://msdn.microsoft.com/library/windows/hardware/dn953725)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication5/ItemName](p_icd_settings.power_custompowerapplication5_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication5/Parameters](p_icd_settings.power_custompowerapplication5_parameters) |
-| - CustomPowerApplication6          | [/Power/CustomPowerApplication6](p_icd_settings.power_custompowerapplication6)                       |
+| -- ItemName                        | [/Power/CustomPowerApplication5/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953725_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication5/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953725_parameters) |
+| - CustomPowerApplication6          | [/Power/CustomPowerApplication6](https://msdn.microsoft.com/library/windows/hardware/dn953730)                       |
 | -- Application                     | N/A                                                                                                  |
 | -- IconID                          | N/A                                                                                                  |
-| -- ItemName                        | [/Power/CustomPowerApplication6/ItemName](p_icd_settings.power_custompowerapplication6_itemname)     |
-| -- Parameters                      | [/Power/CustomPowerApplication6/Parameters](p_icd_settings.power_custompowerapplication6_parameters) |
+| -- ItemName                        | [/Power/CustomPowerApplication6/ItemName](https://msdn.microsoft.com/library/windows/hardware/dn953730_itemname)     |
+| -- Parameters                      | [/Power/CustomPowerApplication6/Parameters](https://msdn.microsoft.com/library/windows/hardware/dn953730_parameters) |
 
  
 
@@ -1447,7 +1447,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                      |
 |-----------------------|------------------------------------------------------------------|
-| - DisableSR           | [/SystemRestore/Disabled](p_icd_settings.systemrestore_disabled) |
+| - DisableSR           | [/SystemRestore/Disabled](https://msdn.microsoft.com/library/windows/hardware/dn934600) |
 
  
 
@@ -1456,8 +1456,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name     | Windows Provisioning setting group and name                                            |
 |---------------------------|----------------------------------------------------------------------------------------|
-| - DisplayNetworkSelection | [/Wireless/DisplayNetworkSelection](p_icd_settings.pcsettings_displaynetworkselection) |
-| - WiFiToWlan              | [/Wireless/WiFiToWlan](p_icd_settings.pcsettings_wifitowlan)                           |
+| - DisplayNetworkSelection | [/Wireless/DisplayNetworkSelection](https://msdn.microsoft.com/library/windows/hardware/dn953701) |
+| - WiFiToWlan              | [/Wireless/WiFiToWlan](https://msdn.microsoft.com/library/windows/hardware/dn953702)                           |
 
  
 
@@ -1475,12 +1475,12 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 | -- DeviceElement                 | N/A                                                                  |
 | --- Key                          | N/A                                                                  |
 | --- Value                        | N/A                                                                  |
-| - MultiTouchEnabled              | [/Tablet/MultiTouchEnabled](p_icd_settings.tablet_multitouchenabled) |
-| - PanningDisabled                | [/Tablet/PanningDisabled](p_icd_settings.tablet_panningdisabled)     |
-| - TouchGate                      | [/Tablet/TouchEnabled](p_icd_settings.tablet_touchenabled)           |
+| - MultiTouchEnabled              | [/Tablet/MultiTouchEnabled](https://msdn.microsoft.com/library/windows/hardware/dn934607) |
+| - PanningDisabled                | [/Tablet/PanningDisabled](https://msdn.microsoft.com/library/windows/hardware/dn934608)     |
+| - TouchGate                      | [/Tablet/TouchEnabled](https://msdn.microsoft.com/library/windows/hardware/dn934609)           |
 | - TouchKeyboardAutoInvokeEnabled | This content is not yet available.                                   |
-| - TouchUI                        | [/Tablet/TouchUI](p_icd_settings.tablet_touchui)                     |
-| - TouchUISize                    | [/Tablet/TouchUISize](p_icd_settings.tablet_touchuisize)             |
+| - TouchUI                        | [/Tablet/TouchUI](https://msdn.microsoft.com/library/windows/hardware/dn934610)                     |
+| - TouchUISize                    | [/Tablet/TouchUISize](https://msdn.microsoft.com/library/windows/hardware/dn934610size)             |
 
  
 
@@ -1489,17 +1489,17 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name       | Windows Provisioning setting group and name                                                                                        |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| - TapiConfigured            | [/Telephony/TapiConfigured](p_icd_settings.telephony_tapiconfigured)                                                               |
-| - TapiUnattendLocation      | [/Telephony/TapiUnattendLocation](p_icd_settings.telephony_tapiunattendlocation)                                                   |
-| -- AreaCode                 | [/Telephony/TapiUnattendLocation/AreaCode](p_icd_settings.telephony_tapiunattendlocation_areacode)                                 |
-| -- CountryOrRegion          | [/Telephony/TapiUnattendLocation/CountryOrRegion](p_icd_settings.telephony_tapiunattendlocation_countryorregion)                   |
-| -- DisableCallWaiting       | [/Telephony/TapiUnattendLocation/DisableCallWaiting](p_icd_settings.telephony_tapiunattendlocation_disablecallwaiting)             |
-| -- InternationalCarrierCode | [/Telephony/TapiUnattendLocation/InternationalCarrierCode](p_icd_settings.telephony_tapiunattendlocation_internationalcarriercode) |
-| -- LongDistanceAccess       | [/Telephony/TapiUnattendLocation/LongDistanceAccess](p_icd_settings.telephony_tapiunattendlocation_longdistanceaccess)             |
-| -- LongDistanceCarrierCode  | [/Telephony/TapiUnattendLocation/LongDistanceCarrierCode](p_icd_settings.telephony_tapiunattendlocation_longdistancecarriercode)   |
-| -- Name                     | [/Telephony/TapiUnattendLocation/Name](p_icd_settings.telephony_tapiunattendlocation_name)                                         |
-| -- OutsideAccess            | [/Telephony/TapiUnattendLocation/OutsideAccess](p_icd_settings.telephony_tapiunattendlocation_outsideaccess)                       |
-| -- PulseOrToneDialing       | [/Telephony/TapiUnattendLocation/PulseOrToneDialing](p_icd_settings.telephony_tapiunattendlocation_pulseortonedialing)             |
+| - TapiConfigured            | [/Telephony/TapiConfigured](https://msdn.microsoft.com/library/windows/hardware/dn934632)                                                               |
+| - TapiUnattendLocation      | [/Telephony/TapiUnattendLocation](https://msdn.microsoft.com/library/windows/hardware/dn934633)                                                   |
+| -- AreaCode                 | [/Telephony/TapiUnattendLocation/AreaCode](https://msdn.microsoft.com/library/windows/hardware/dn934633_areacode)                                 |
+| -- CountryOrRegion          | [/Telephony/TapiUnattendLocation/CountryOrRegion](https://msdn.microsoft.com/library/windows/hardware/dn934633_countryorregion)                   |
+| -- DisableCallWaiting       | [/Telephony/TapiUnattendLocation/DisableCallWaiting](https://msdn.microsoft.com/library/windows/hardware/dn934633_disablecallwaiting)             |
+| -- InternationalCarrierCode | [/Telephony/TapiUnattendLocation/InternationalCarrierCode](https://msdn.microsoft.com/library/windows/hardware/dn934633_internationalcarriercode) |
+| -- LongDistanceAccess       | [/Telephony/TapiUnattendLocation/LongDistanceAccess](https://msdn.microsoft.com/library/windows/hardware/dn934633_longdistanceaccess)             |
+| -- LongDistanceCarrierCode  | [/Telephony/TapiUnattendLocation/LongDistanceCarrierCode](https://msdn.microsoft.com/library/windows/hardware/dn934633_longdistancecarriercode)   |
+| -- Name                     | [/Telephony/TapiUnattendLocation/Name](https://msdn.microsoft.com/library/windows/hardware/dn934633_name)                                         |
+| -- OutsideAccess            | [/Telephony/TapiUnattendLocation/OutsideAccess](https://msdn.microsoft.com/library/windows/hardware/dn934633_outsideaccess)                       |
+| -- PulseOrToneDialing       | [/Telephony/TapiUnattendLocation/PulseOrToneDialing](https://msdn.microsoft.com/library/windows/hardware/dn934633_pulseortonedialing)             |
 
  
 
@@ -1508,7 +1508,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name       | Windows Provisioning setting group and name                              |
 |-----------------------------|--------------------------------------------------------------------------|
-| - IcmpRedirectsEnabled      | [/TCPIP/IcmpRedirectsEnabled](p_icd_settings.tcpip_icmpredirectsenabled) |
+| - IcmpRedirectsEnabled      | [/TCPIP/IcmpRedirectsEnabled](https://msdn.microsoft.com/library/windows/hardware/dn934613) |
 | - Interfaces                | N/A                                                                      |
 | -- Identifier               | N/A                                                                      |
 | -- Interface                | N/A                                                                      |
@@ -1557,7 +1557,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                              |
 |-----------------------|------------------------------------------------------------------------------------------|
-| - fDenyTSConnections  | [/TerminalServices/DenyTSConnections](p_icd_settings.terminalservices_denytsconnections) |
+| - fDenyTSConnections  | [/TerminalServices/DenyTSConnections](https://msdn.microsoft.com/library/windows/hardware/dn934646) |
 
  
 
@@ -1566,7 +1566,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------|
-| - fDisabledAllowList  | [/TerminalServicesWMIProvider/DisabledAllowList](p_icd_settings.terminalserviceswmiprovider_disabledallowlist) |
+| - fDisabledAllowList  | [/TerminalServicesWMIProvider/DisabledAllowList](https://msdn.microsoft.com/library/windows/hardware/dn934645) |
 
  
 
@@ -1575,8 +1575,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                          |
 |-----------------------|--------------------------------------------------------------------------------------|
-| - SecurityLayer       | [/RemoteDesktop/SecurityLayer](p_icd_settings.remotedesktop_securitylayer)           |
-| - UserAuthentication  | [/RemoteDesktop/UserAuthentication](p_icd_settings.remotedesktop_userauthentication) |
+| - SecurityLayer       | [/RemoteDesktop/SecurityLayer](https://msdn.microsoft.com/library/windows/hardware/dn953764)           |
+| - UserAuthentication  | [/RemoteDesktop/UserAuthentication](https://msdn.microsoft.com/library/windows/hardware/dn953765) |
 
  
 
@@ -1585,7 +1585,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                                      |
 |-----------------------|----------------------------------------------------------------------------------|
-| - LicensingMode       | [/TerminalServices/LicensingMode](p_icd_settings.terminalservices_licensingmode) |
+| - LicensingMode       | [/TerminalServices/LicensingMode](https://msdn.microsoft.com/library/windows/hardware/dn934647) |
 
  
 
@@ -1594,24 +1594,24 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name       | Windows Provisioning setting group and name                                                                                      |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| - Identification            | [/Domain/UnattendedJoin/Online](p_icd_settings.domain_unattendedjoin_online)                                                     |
-| -- Credentials              | [/Domain/UnattendedJoin/Online/Credentials](p_icd_settings.domain_unattendedjoin_online_credentials)                             |
-| --- Domain                  | [/Domain/UnattendedJoin/Online/Credentials/Domain](p_icd_settings.domain_unattendedjoin_online_credentials_domain)               |
-| --- Password                | [/Domain/UnattendedJoin/Online/Credentials/Password](p_icd_settings.domain_unattendedjoin_online_credentials_password)           |
-| --- Username                | [/Domain/UnattendedJoin/Online/Credentials/Username](p_icd_settings.domain_unattendedjoin_online_credentials_username)           |
-| -- DebugJoin                | [/Domain/UnattendedJoin/Online/DebugJoin](p_icd_settings.domain_unattendedjoin_online_debugjoin)                                 |
-| -- DebugJoinOnlyOnThisError | [/Domain/UnattendedJoin/Online/DebugJoinOnlyOnThisError](p_icd_settings.domain_unattendedjoin_online_debugjoinonlyonthiserror)   |
-| -- JoinDomain               | [/Domain/UnattendedJoin/Online/JoinDomain](p_icd_settings.domain_unattendedjoin_online_joindomain)                               |
-| -- JoinWorkgroup            | [/Domain/UnattendedJoin/Online/JoinWorkgroup](p_icd_settings.domain_unattendedjoin_online_joinworkgroup)                         |
-| -- MachineObjectOU          | [/Domain/UnattendedJoin/Online/MachineObjectOU](p_icd_settings.domain_unattendedjoin_online_machineobjectou)                     |
-| -- MachinePassword          | [/Domain/UnattendedJoin/Online/MachinePassword](p_icd_settings.domain_unattendedjoin_online_machinepassword)                     |
-| -- Provisioning             | [/Domain/UnattendedJoin/Online/Provisioning](p_icd_settings.domain_unattendedjoin_online_provisioning)                           |
-| --- AccountData             | [/Domain/UnattendedJoin/Online/Provisioning/AccountData](p_icd_settings.domain_unattendedjoin_online_provisioning_accountdata)   |
-| -- TimeoutPeriodInMinutes   | [/Domain/UnattendedJoin/Online/TimeoutPeriodInMinutes](p_icd_settings.domain_unattendedjoin_online_timeoutperiodinminutes)       |
-| -- UnsecureJoin             | [/Domain/UnattendedJoin/Online/UnsecureJoin](p_icd_settings.domain_unattendedjoin_online_unsecurejoin)                           |
-| - OfflineIdentification     | [/Domain/UnattendedJoin/Offline](p_icd_settings.domain_unattendedjoin_offline)                                                   |
-| -- Provisioning             | [/Domain/UnattendedJoin/Offline/Provisioning](p_icd_settings.domain_unattendedjoin_offline_provisioning)                         |
-| --- AccountData             | [/Domain/UnattendedJoin/Offline/Provisioning/Accountdata](p_icd_settings.domain_unattendedjoin_offline_provisioning_accountdata) |
+| - Identification            | [/Domain/UnattendedJoin/Online](https://msdn.microsoft.com/library/windows/hardware/dn953394)                                                     |
+| -- Credentials              | [/Domain/UnattendedJoin/Online/Credentials](https://msdn.microsoft.com/library/windows/hardware/dn953394_credentials)                             |
+| --- Domain                  | [/Domain/UnattendedJoin/Online/Credentials/Domain](https://msdn.microsoft.com/library/windows/hardware/dn953394_credentials_domain)               |
+| --- Password                | [/Domain/UnattendedJoin/Online/Credentials/Password](https://msdn.microsoft.com/library/windows/hardware/dn953394_credentials_password)           |
+| --- Username                | [/Domain/UnattendedJoin/Online/Credentials/Username](https://msdn.microsoft.com/library/windows/hardware/dn953394_credentials_username)           |
+| -- DebugJoin                | [/Domain/UnattendedJoin/Online/DebugJoin](https://msdn.microsoft.com/library/windows/hardware/dn953394_debugjoin)                                 |
+| -- DebugJoinOnlyOnThisError | [/Domain/UnattendedJoin/Online/DebugJoinOnlyOnThisError](https://msdn.microsoft.com/library/windows/hardware/dn953394_debugjoinonlyonthiserror)   |
+| -- JoinDomain               | [/Domain/UnattendedJoin/Online/JoinDomain](https://msdn.microsoft.com/library/windows/hardware/dn953394_joindomain)                               |
+| -- JoinWorkgroup            | [/Domain/UnattendedJoin/Online/JoinWorkgroup](https://msdn.microsoft.com/library/windows/hardware/dn953394_joinworkgroup)                         |
+| -- MachineObjectOU          | [/Domain/UnattendedJoin/Online/MachineObjectOU](https://msdn.microsoft.com/library/windows/hardware/dn953394_machineobjectou)                     |
+| -- MachinePassword          | [/Domain/UnattendedJoin/Online/MachinePassword](https://msdn.microsoft.com/library/windows/hardware/dn953394_machinepassword)                     |
+| -- Provisioning             | [/Domain/UnattendedJoin/Online/Provisioning](https://msdn.microsoft.com/library/windows/hardware/dn953394_provisioning)                           |
+| --- AccountData             | [/Domain/UnattendedJoin/Online/Provisioning/AccountData](https://msdn.microsoft.com/library/windows/hardware/dn953394_provisioning_accountdata)   |
+| -- TimeoutPeriodInMinutes   | [/Domain/UnattendedJoin/Online/TimeoutPeriodInMinutes](https://msdn.microsoft.com/library/windows/hardware/dn953394_timeoutperiodinminutes)       |
+| -- UnsecureJoin             | [/Domain/UnattendedJoin/Online/UnsecureJoin](https://msdn.microsoft.com/library/windows/hardware/dn953394_unsecurejoin)                           |
+| - OfflineIdentification     | [/Domain/UnattendedJoin/Offline](https://msdn.microsoft.com/library/windows/hardware/dn953391)                                                   |
+| -- Provisioning             | [/Domain/UnattendedJoin/Offline/Provisioning](https://msdn.microsoft.com/library/windows/hardware/dn953391_provisioning)                         |
+| --- AccountData             | [/Domain/UnattendedJoin/Offline/Provisioning/Accountdata](https://msdn.microsoft.com/library/windows/hardware/dn953391_provisioning_accountdata) |
 
  
 
@@ -1620,7 +1620,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                    |
 |-----------------------|----------------------------------------------------------------|
-| - DriverStartType     | [/Drivers/KMDFStartType](p_icd_settings.drivers_kmdfstarttype) |
+| - DriverStartType     | [/Drivers/KMDFStartType](https://msdn.microsoft.com/library/windows/hardware/dn953411) |
 
  
 
@@ -1629,7 +1629,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                          |
 |-----------------------|----------------------------------------------------------------------|
-| - UninstallWindowsRE  | [/Setup/UninstallWindowsRE](p_icd_settings.setup_uninstallwindowsre) |
+| - UninstallWindowsRE  | [/Setup/UninstallWindowsRE](https://msdn.microsoft.com/library/windows/hardware/dn953784) |
 
  
 
@@ -1638,12 +1638,12 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name                     | Windows Provisioning setting group and name                                                                                                                                                        |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - CoexistenceSupport                      | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/CoexistenceSupport](p_icd_settings.connectivityprofiles_wifisense_systemcapabilities_coexistencesupport)                                       |
-| - NumAntennaConnected                     | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/NumAntennaConnected](p_icd_settings.connectivityprofiles_wifisense_systemcapabilities_numantennaconnected)                                     |
-| - RadioLocation                           | [/Wireless/RadioLocation](p_icd_settings.wireless_radiolocation)                                                                                                                                   |
-| - SimultaneousMultiChannelSupported       | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/SimultaneousMultiChannelSupported](p_icd_settings.connectivityprofiles_wifisense_systemcapabilities_simultaneousmultichannelsupported)         |
-| - WLANFunctionalLevelDeviceResetSupported | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/WLANFunctionLevelDeviceResetSupported](p_icd_settings.connectivityprofiles_wifisense_systemcapabilities_wlanfunctionleveldeviceresetsupported) |
-| - WLANPlatformLevelDeviceResetSupported   | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/WLANPlatformLevelDeviceResetSupported](p_icd_settings.connectivityprofiles_wifisense_systemcapabilities_wlanplatformleveldeviceresetsupported) |
+| - CoexistenceSupport                      | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/CoexistenceSupport](https://msdn.microsoft.com/library/windows/hardware/mt219721)                                       |
+| - NumAntennaConnected                     | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/NumAntennaConnected](https://msdn.microsoft.com/library/windows/hardware/mt219722)                                     |
+| - RadioLocation                           | [/Wireless/RadioLocation](https://msdn.microsoft.com/library/windows/hardware/dn953949)                                                                                                                                   |
+| - SimultaneousMultiChannelSupported       | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/SimultaneousMultiChannelSupported](https://msdn.microsoft.com/library/windows/hardware/mt219723)         |
+| - WLANFunctionalLevelDeviceResetSupported | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/WLANFunctionLevelDeviceResetSupported](https://msdn.microsoft.com/library/windows/hardware/mt219724) |
+| - WLANPlatformLevelDeviceResetSupported   | [/ConnectivityProfiles/WiFiSense/SystemCapabilities/WLANPlatformLevelDeviceResetSupported](https://msdn.microsoft.com/library/windows/hardware/mt219725) |
 
  
 
@@ -1652,8 +1652,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name      | Windows Provisioning setting group and name                                              |
 |----------------------------|------------------------------------------------------------------------------------------|
-| - OtherDomains             | [/SMBClient/OtherDomains](p_icd_settings.smbclient_otherdomains)                         |
-| - SyncDomainWithMembership | [/SMBClient/SyncDomainWithMembership](p_icd_settings.smbclient_syncdomainwithmembership) |
+| - OtherDomains             | [/SMBClient/OtherDomains](https://msdn.microsoft.com/library/windows/hardware/dn934582)                         |
+| - SyncDomainWithMembership | [/SMBClient/SyncDomainWithMembership](https://msdn.microsoft.com/library/windows/hardware/dn934583) |
 
  
 
@@ -1662,8 +1662,8 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name  | Windows Provisioning setting group and name                                        |
 |------------------------|------------------------------------------------------------------------------------|
-| - BTSearchIntervalOnAC | [/Bluetooth/MTPSearchIntervalOnAC](p_icd_settings.bluetooth_mtpsearchintervalonac) |
-| - BTSearchIntervalOnDC | [/Bluetooth/MTPSearchIntervalOnDC](p_icd_settings.bluetooth_mtpsearchintervalondc) |
+| - BTSearchIntervalOnAC | [/Bluetooth/MTPSearchIntervalOnAC](https://msdn.microsoft.com/library/windows/hardware/dn953356) |
+| - BTSearchIntervalOnDC | [/Bluetooth/MTPSearchIntervalOnDC](https://msdn.microsoft.com/library/windows/hardware/dn953357) |
 | - RegCacheUpdated      | N/A                                                                                |
 
  
@@ -1673,7 +1673,7 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name | Windows Provisioning setting group and name                    |
 |-----------------------|----------------------------------------------------------------|
-| - NotInOOBE           | [/Wireless/HideUIInOOBE](p_icd_settings.wireless_hideuiinoobe) |
+| - NotInOOBE           | [/Wireless/HideUIInOOBE](https://msdn.microsoft.com/library/windows/hardware/dn953947) |
 
  
 
@@ -1682,32 +1682,32 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name                      | Windows Provisioning setting group and name                                                                           |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| - DisableStatefulFTP                       | [/Firewall/DisableStatefulFTP](p_icd_settings.firewall_disablestatefulftp)                                            |
-| - DisableStatefulPPTP                      | [/Firewall/DisableStatefulPPTP](p_icd_settings.firewall_disablestatefulpptp)                                          |
-| - DomainProfile\_DisableNotifications      | [/Firewall/DomainProfile\_DisableNotifications](p_icd_settings.firewall_domainprofile_disablenotifications)           |
-| - DomainProfile\_EnableFirewall            | [/Firewall/DomainProfile\_EnableFirewall](p_icd_settings.firewall_domainprofile_enablefirewall)                       |
-| - DomainProfile\_LogDroppedPackets         | [/Firewall/DomainProfile\_LogDroppedPackets](p_icd_settings.firewall_domainprofile_logdroppedpackets)                 |
-| - DomainProfile\_LogFile                   | [/Firewall/DomainProfile\_LogFile](p_icd_settings.firewall_domainprofile_logfile)                                     |
-| - DomainProfile\_LogFileSize               | [/Firewall/DomainProfile\_LogFileSize](p_icd_settings.firewall_domainprofile_logfilesize)                             |
-| - DomainProfile\_LogSuccessfulConnections  | [/Firewall/DomainProfile\_LogSuccessfulConnections](p_icd_settings.firewall_domainprofile_logsuccessfulconnections)   |
+| - DisableStatefulFTP                       | [/Firewall/DisableStatefulFTP](https://msdn.microsoft.com/library/windows/hardware/dn953442)                                            |
+| - DisableStatefulPPTP                      | [/Firewall/DisableStatefulPPTP](https://msdn.microsoft.com/library/windows/hardware/dn953443)                                          |
+| - DomainProfile\_DisableNotifications      | [/Firewall/DomainProfile\_DisableNotifications](https://msdn.microsoft.com/library/windows/hardware/dn953445)           |
+| - DomainProfile\_EnableFirewall            | [/Firewall/DomainProfile\_EnableFirewall](https://msdn.microsoft.com/library/windows/hardware/dn953446)                       |
+| - DomainProfile\_LogDroppedPackets         | [/Firewall/DomainProfile\_LogDroppedPackets](https://msdn.microsoft.com/library/windows/hardware/dn953447)                 |
+| - DomainProfile\_LogFile                   | [/Firewall/DomainProfile\_LogFile](https://msdn.microsoft.com/library/windows/hardware/dn953448)                                     |
+| - DomainProfile\_LogFileSize               | [/Firewall/DomainProfile\_LogFileSize](https://msdn.microsoft.com/library/windows/hardware/dn953448size)                             |
+| - DomainProfile\_LogSuccessfulConnections  | [/Firewall/DomainProfile\_LogSuccessfulConnections](https://msdn.microsoft.com/library/windows/hardware/dn953450)   |
 | - FirewallGroups                           | N/A                                                                                                                   |
 | -- Key                                     | N/A                                                                                                                   |
 | -- FirewallGroup                           | N/A                                                                                                                   |
 | --- Active                                 | N/A                                                                                                                   |
 | --- Group                                  | N/A                                                                                                                   |
 | --- Profile                                | N/A                                                                                                                   |
-| - PrivateProfile\_DisableNotifications     | [/Firewall/PrivateProfile\_DisableNotifications](p_icd_settings.firewall_privateprofile_disablenotifications)         |
-| - PrivateProfile\_EnableFirewall           | [/Firewall/PrivateProfile\_EnableFirewall](p_icd_settings.firewall_privateprofile_enablefirewall)                     |
-| - PrivateProfile\_LogDroppedPackets        | [/Firewall/PrivateProfile\_LogDroppedPackets](p_icd_settings.firewall_privateprofile_logdroppedpackets)               |
-| - PrivateProfile\_LogFile                  | [/Firewall/PrivateProfile\_LogFile](p_icd_settings.firewall_privateprofile_logfile)                                   |
-| - PrivateProfile\_LogFileSize              | [/Firewall/PrivateProfile\_LogFileSize](p_icd_settings.firewall_privateprofile_logfilesize)                           |
-| - PrivateProfile\_LogSuccessfulConnections | [/Firewall/PrivateProfile\_LogSuccessfulConnections](p_icd_settings.firewall_privateprofile_logsuccessfulconnections) |
-| - PublicProfile\_DisableNotifications      | [/Firewall/PublicProfile\_DisableNotifications](p_icd_settings.firewall_publicprofile_disablenotifications)           |
-| - PublicProfile\_EnableFirewall            | [/Firewall/PublicProfile\_EnableFirewall](p_icd_settings.firewall_publicprofile_enablefirewall)                       |
-| - PublicProfile\_LogDroppedPackets         | [/Firewall/PublicProfile\_LogDroppedPackets](p_icd_settings.firewall_publicprofile_logdroppedpackets)                 |
-| - PublicProfile\_LogFile                   | [/Firewall/PublicProfile\_LogFile](p_icd_settings.firewall_publicprofile_logfile)                                     |
-| - PublicProfile\_LogFileSize               | [/Firewall/PublicProfile\_LogFileSize](p_icd_settings.firewall_publicprofile_logfilesize)                             |
-| - PublicProfile\_LogSuccessfulConnections  | [/Firewall/PublicProfile\_LogSuccessfulConnections](p_icd_settings.firewall_publicprofile_logsuccessfulconnections)   |
+| - PrivateProfile\_DisableNotifications     | [/Firewall/PrivateProfile\_DisableNotifications](https://msdn.microsoft.com/library/windows/hardware/dn953456)         |
+| - PrivateProfile\_EnableFirewall           | [/Firewall/PrivateProfile\_EnableFirewall](https://msdn.microsoft.com/library/windows/hardware/dn953457)                     |
+| - PrivateProfile\_LogDroppedPackets        | [/Firewall/PrivateProfile\_LogDroppedPackets](https://msdn.microsoft.com/library/windows/hardware/dn953458)               |
+| - PrivateProfile\_LogFile                  | [/Firewall/PrivateProfile\_LogFile](https://msdn.microsoft.com/library/windows/hardware/dn953459)                                   |
+| - PrivateProfile\_LogFileSize              | [/Firewall/PrivateProfile\_LogFileSize](https://msdn.microsoft.com/library/windows/hardware/dn953459size)                           |
+| - PrivateProfile\_LogSuccessfulConnections | [/Firewall/PrivateProfile\_LogSuccessfulConnections](https://msdn.microsoft.com/library/windows/hardware/dn953461) |
+| - PublicProfile\_DisableNotifications      | [/Firewall/PublicProfile\_DisableNotifications](https://msdn.microsoft.com/library/windows/hardware/dn953462)           |
+| - PublicProfile\_EnableFirewall            | [/Firewall/PublicProfile\_EnableFirewall](https://msdn.microsoft.com/library/windows/hardware/dn953463)                       |
+| - PublicProfile\_LogDroppedPackets         | [/Firewall/PublicProfile\_LogDroppedPackets](https://msdn.microsoft.com/library/windows/hardware/dn953464)                 |
+| - PublicProfile\_LogFile                   | [/Firewall/PublicProfile\_LogFile](https://msdn.microsoft.com/library/windows/hardware/dn953465)                                     |
+| - PublicProfile\_LogFileSize               | [/Firewall/PublicProfile\_LogFileSize](https://msdn.microsoft.com/library/windows/hardware/dn953465size)                             |
+| - PublicProfile\_LogSuccessfulConnections  | [/Firewall/PublicProfile\_LogSuccessfulConnections](https://msdn.microsoft.com/library/windows/hardware/dn953467)   |
 
  
 
@@ -1716,21 +1716,21 @@ WindowsPE settings are not available in Windows Provisioning/Windows ICD.
 
 | Unattend setting name               | Windows Provisioning setting group and name                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| - DefinitionUpdateFileSharesSources | [/WindowsDefender/DefinitionUpdateFileSharesSources](p_icd_settings.windowsdefender_definitionupdatefilesharessources)       |
-| - DisableAntiSpyware                | [/WindowsDefender/DisableAntiSpyware](p_icd_settings.windowsdefender_disableantispyware)                                     |
-| - EnableRemoteManagedDefaults       | [/WindowsDefender/EnableRemoteManagedDefaults](p_icd_settings.windowsdefender_enableremotemanageddefaults)                   |
-| - FallbackOrder                     | [/WindowsDefender/FallbackOrder](p_icd_settings.windowsdefender_fallbackorder)                                               |
-| - Scan                              | [/WindowsDefender/Scan](p_icd_settings.windowsdefender_scan)                                                                 |
-| -- ScanParameters                   | [/WindowsDefender/Scan/ScanParameters](p_icd_settings.windowsdefender_scan_scanparameters)                                   |
-| -- ScheduleDay                      | [/WindowsDefender/Scan/ScheduleDay](p_icd_settings.windowsdefender_scan_scheduleday)                                         |
-| -- ScheduleTime                     | [/WindowsDefender/Scan/ScheduleTime](p_icd_settings.windowsdefender_scan_scheduletime)                                       |
-| - SignatureUpdateInterval           | [/WindowsDefender/SignatureUpdateInterval](p_icd_settings.windowsdefender_signatureupdateinterval)                           |
-| - ThreatSeverityDefaultAction       | [/WindowsDefender/ThreatSeverityDefaultAction](p_icd_settings.windowsdefender_threatseveritydefaultaction)                   |
-| -- Low                              | [/WindowsDefender/ThreatSeverityDefaultAction/Low](p_icd_settings.windowsdefender_threatseveritydefaultaction_low)           |
-| -- Moderate                         | [/WindowsDefender/ThreatSeverityDefaultAction/Moderate](p_icd_settings.windowsdefender_threatseveritydefaultaction_moderate) |
-| -- High                             | [/WindowsDefender/ThreatSeverityDefaultAction/High](p_icd_settings.windowsdefender_threatseveritydefaultaction_high)         |
-| -- Severe                           | [/WindowsDefender/ThreatSeverityDefaultAction/Severe](p_icd_settings.windowsdefender_threatseveritydefaultaction_severe)     |
-| - TrustedImageIdentifier            | [/WindowsDefender/TrustedImageIdentifier](p_icd_settings.windowsdefender_trustedimageidentifier)                             |
+| - DefinitionUpdateFileSharesSources | [/WindowsDefender/DefinitionUpdateFileSharesSources](https://msdn.microsoft.com/library/windows/hardware/dn934686)       |
+| - DisableAntiSpyware                | [/WindowsDefender/DisableAntiSpyware](https://msdn.microsoft.com/library/windows/hardware/dn934687)                                     |
+| - EnableRemoteManagedDefaults       | [/WindowsDefender/EnableRemoteManagedDefaults](https://msdn.microsoft.com/library/windows/hardware/dn934688)                   |
+| - FallbackOrder                     | [/WindowsDefender/FallbackOrder](https://msdn.microsoft.com/library/windows/hardware/dn934689)                                               |
+| - Scan                              | [/WindowsDefender/Scan](https://msdn.microsoft.com/library/windows/hardware/dn934690)                                                                 |
+| -- ScanParameters                   | [/WindowsDefender/Scan/ScanParameters](https://msdn.microsoft.com/library/windows/hardware/dn934690_scanparameters)                                   |
+| -- ScheduleDay                      | [/WindowsDefender/Scan/ScheduleDay](https://msdn.microsoft.com/library/windows/hardware/dn934690_scheduleday)                                         |
+| -- ScheduleTime                     | [/WindowsDefender/Scan/ScheduleTime](https://msdn.microsoft.com/library/windows/hardware/dn934690_scheduletime)                                       |
+| - SignatureUpdateInterval           | [/WindowsDefender/SignatureUpdateInterval](https://msdn.microsoft.com/library/windows/hardware/dn934694)                           |
+| - ThreatSeverityDefaultAction       | [/WindowsDefender/ThreatSeverityDefaultAction](https://msdn.microsoft.com/library/windows/hardware/dn934695)                   |
+| -- Low                              | [/WindowsDefender/ThreatSeverityDefaultAction/Low](https://msdn.microsoft.com/library/windows/hardware/dn934695_low)           |
+| -- Moderate                         | [/WindowsDefender/ThreatSeverityDefaultAction/Moderate](https://msdn.microsoft.com/library/windows/hardware/dn934695_moderate) |
+| -- High                             | [/WindowsDefender/ThreatSeverityDefaultAction/High](https://msdn.microsoft.com/library/windows/hardware/dn934695_high)         |
+| -- Severe                           | [/WindowsDefender/ThreatSeverityDefaultAction/Severe](https://msdn.microsoft.com/library/windows/hardware/dn934695_severe)     |
+| - TrustedImageIdentifier            | [/WindowsDefender/TrustedImageIdentifier](https://msdn.microsoft.com/library/windows/hardware/dn934700)                             |
 
  
 

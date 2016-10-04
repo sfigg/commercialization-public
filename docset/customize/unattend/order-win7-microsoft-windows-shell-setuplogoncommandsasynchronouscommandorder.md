@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Order` specifies a unique value for each [AsynchronousCommand](asynchronouscommand-win7-microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md).
 
-To learn more about running scripts with Windows Setup, see [Add a Custom Script to Windows Setup](p_adk_online.add_a_custom_script_to_windows_setup_win8).
+To learn more about running scripts with Windows Setup, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
 
 ## Values
 

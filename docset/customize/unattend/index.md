@@ -38,7 +38,7 @@ Information about how to use Windows SIM and other deployment tools is available
 <tbody>
 <tr class="odd">
 <td><p>[Unattend to Windows Provisioning settings map](unattend-to-windows-provisioning-setting-map.md)</p></td>
-<td><p>This topic shows the Windows 10 for desktop editions Unattend components and settings (which are configurable in [Windows System Image Manager](p_wsim.windows_system_image_manager_user_interface_overview_win8)) and their equivalent Windows Provisioning setting group and setting name (which are configurable in [Windows Imaging and Configuration Designer](p_icd.icd_portal)).</p></td>
+<td><p>This topic shows the Windows 10 for desktop editions Unattend components and settings (which are configurable in [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922447)) and their equivalent Windows Provisioning setting group and setting name (which are configurable in [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)).</p></td>
 </tr>
 <tr class="even">
 <td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1607](changed-answer-file-settings-for-windows-10-build-1606.md)</p></td>
@@ -54,7 +54,7 @@ Information about how to use Windows SIM and other deployment tools is available
 </tr>
 <tr class="odd">
 <td><p>[Components](components-b-unattend.md)</p></td>
-<td><p>The topics in this section describe all of the unattended settings that can be set in Windows 10 and Windows Server 2016. To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](p_wsim.configure_components_and_settings_in_an_answer_file_win8).</p></td>
+<td><p>The topics in this section describe all of the unattended settings that can be set in Windows 10 and Windows Server 2016. To determine whether a component applies to the image you’re building, load your image into Windows SIM and search for the component or setting name. For information on how to view components and settings, see [Configure Components and Settings in an Answer File](https://msdn.microsoft.com/library/windows/hardware/dn915078).</p></td>
 </tr>
 </tbody>
 </table>
