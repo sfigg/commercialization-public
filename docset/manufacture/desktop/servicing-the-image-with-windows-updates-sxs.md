@@ -8,7 +8,9 @@ title: 'Lab 1c: Servicing the image with Windows Updates'
 
 # Lab 1c: Add drivers, updates, and upgrade the edition
 
-For many customizations, like adding Windows updates or upgrading the edition, you can mount the Windows image to a temporary folder. Mounting an image maps the contents of a file to a location where you can view and modify them.
+For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
+
+To add drivers that include an installation package, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
@@ -54,7 +56,7 @@ These are just examples - you don't have to add all of these.
 
 **Step 3: Add drivers to Windows**
 
-1.  Add any .inf-style drivers needed for your hardware.
+1.  For drivers that include an .inf file:
 
     ``` syntax
     Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
@@ -98,7 +100,11 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 	
 **Step 5: Add a Windows update package**
 
-Note: by default, updates installed after a target rollup update are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery.
+Notes: 
+
+* By default, updates installed after a target rollup update are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery.
+
+* Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
 
 1.  From Microsoft Connect, download the Windows update. Save this in the folder: C:\\WindowsUpdates.
 

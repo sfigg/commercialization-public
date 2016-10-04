@@ -29,8 +29,8 @@ Let's get started!
 
 **Customize images**: These labs can be performed in any order.
 
-*  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+*  [Lab 1c: Add .inf-style drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
 *  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
-*  [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
+*  [Lab 1e: Change settings, boot to audit, enter product keys, and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+*  [Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 *  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)

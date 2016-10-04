@@ -1,13 +1,15 @@
 ---
 author: Justinha
-Description: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
+Description: 'Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
 ---
-# Lab 1f: Add Windows desktop applications with siloed provisioning packages
+# Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)
 
-Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows. 
+Use this method to install Windows desktop applications and drivers that include an installation package (.exe-style), by capturing them into siloed provisioning packages (SPPs).
+
+SPPs are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows. 
 
 These packages are automatically included in the recovery tools. When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
