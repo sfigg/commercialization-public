@@ -78,6 +78,10 @@ You can use two different command-line tools to collect reference set
 data: Windows Performance Recorder (WPR) and Xperf. You can also use the
 WPR's GUI interface.
 
+WPR and Xperf are part of the Windows Performance Tookit, which is included 
+in the Windows Assessment and Deployment Kit (ADK). You can download the ADK for Windows 10 
+from the following link: [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526740). 
+
 <blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;Use an elevated command prompt when collecting reference set data.</p></blockquote>
 
 
@@ -128,13 +132,13 @@ To stop recording and save the trace data, click **Save**.
 ![Dialog box of Windows Performance Recorder (WPR) showing active recording.](images/wpa-reference-set-wpr-dialog-recording.png)
 
 
-# Procedures in tracing a reference set
+# How reference set tracing works
 
 When WPR starts collecting the trace of a reference set, the system
 immediately removes all memory pages from the working sets of all
 processes, including the system. In addition, all pages that remain in
 the working sets of either a process or the system are recorded to
-account for pages that are locked or marked as non-pageable. On access
+account for pages that are locked or marked as non-pageable. After that, on the first access
 of a page that was moved to the standby list, the system records a soft
 fault in the trace of the reference set, the page is added to the
 working set of the process, and the process continues running.
@@ -156,7 +160,7 @@ on closure or removal. If a page is shared between two or more
 processes, the trace will record the first access to that page in each
 process that touches it.
 
-<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;Recording the trace of a reference set has a significant effect on system performance, because all processes must fault large numbers of pages back into their working sets after their working sets are emptied.</p></blockquote>
+<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;Recording the trace of a reference set can have a significant effect on system performance, because all processes must fault large numbers of pages back into their working sets after their working sets are emptied.</p></blockquote>
 
 
 # Reference set visualizations
@@ -246,15 +250,58 @@ the swapping out or termination of other processes.</p></td></tr>
 When examining the trace of a reference set in WPA, the following
 columns in the table view are especially important:
 
--  [Size and Impact Size](#size-and-impact-size)
 -  [Impact Type](#impact-type)
+-  [Size and Impact Size](#size-and-impact-size)
 -  [Category Class](#category-class)
 -  [Page Category (Dynamic)](#page-category-dynamic)
 -  [Page Category (File)](#page-category-file)
 -  [Allocation stack](#allocation-stack)
 -  [Impacting stack](#impacting-stack)
 
-<blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;If one of these columns is missing from your view in WPA, you can add it by right-clicking a column heading in the current view and then selecting the missing column from the list.</p></blockquote>
+If one of these columns is missing from your view in WPA, you can add it by right-clicking a column heading in the current view and then selecting the missing column from the list.
+
+All three reference set views provide 4 different columns providing sizes of the memory being counted:
+
+-  **Size (Process View)**: the total set of pages referenced by the given process
+-  **Size (System View)**: the set of pages referenced by 
+-  **Impact Size (Process View)**
+-  **Impact Size (System View)** 
+
+Different views show different columns by default, but they’re all available in all of the refset views if you look for them, and they add up sizes the same way no matter which views you use them in.
+
+
+### Impact Type
+
+The **Impact Type** column identifies the type of effect that a memory
+allocation has on the memory currently in use: **Impacting**, **Transient**, and **Persistent**.
+
+<table>
+<tr><th>Impact&nbsp;Type</th><th>Description</th></tr>
+<tr>
+<td>Impacting</td>
+<td><p>Memory that was (A) allocated before
+the start of your viewport and freed during your viewport (allocated
+outside and freed inside) or (B) allocated during your viewport and
+freed after the end of your viewport (allocated inside and
+freed outside). An impacting allocation affects the memory in use at
+the end of the viewport.</p></td>
+</tr>
+<tr>
+<td>Transient</td>
+<td><p>Memory that was allocated and freed
+during your viewport (allocated inside and freed inside). A
+transient allocation is active only within the current viewport.
+Transient allocations typically contribute to any peaks in usage
+within a viewport.</p></td>
+</tr>
+<tr>
+<td>Persistent</td>
+<td><p>Allocations that were allocated before the
+start of the viewport and freed after the end of it (allocated
+outside and freed outside). A persistent allocation is active during
+the entirety of the viewport.</p></td>
+</tr>
+</table>
 
 
 ### Size and Impact Size
@@ -299,40 +346,6 @@ Consider an example, from t\_start to t\_end, with the following values:
 -   Impact Size column: 10 (Impacting)
 
 <blockquote><p><b>Note</b>&nbsp;&nbsp;&nbsp;Zooming in and out changes the viewport and causes these sizes to be recalculated.</p></blockquote>
-
-
-### Impact Type
-
-The **Impact Type** column identifies the type of effect that a memory
-allocation has on the memory currently in use: **Impacting**, **Transient**, and **Persistent**.
-
-<table>
-<tr><th>Impact&nbsp;Type</th><th>Description</th></tr>
-<tr>
-<td>Impacting</td>
-<td><p>Memory that was (A) allocated before
-the start of your viewport and freed during your viewport (allocated
-outside and freed inside) or (B) allocated during your viewport and
-freed after the end of your viewport (allocated inside and
-freed outside). An impacting allocation affects the memory in use at
-the end of the viewport.</p></td>
-</tr>
-<tr>
-<td>Transient</td>
-<td><p>Memory that was allocated and freed
-during your viewport (allocated inside and freed inside). A
-transient allocation is active only within the current viewport.
-Transient allocations typically contribute to any peaks in usage
-within a viewport.</p></td>
-</tr>
-<tr>
-<td>Persistent</td>
-<td><p>Allocations that were allocated before the
-start of the viewport and freed after the end of it (allocated
-outside and freed outside). A persistent allocation is active during
-the entirety of the viewport.</p></td>
-</tr>
-</table>
 
 
 ### Category Class
