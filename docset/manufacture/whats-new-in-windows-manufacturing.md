@@ -64,6 +64,9 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**October 4, 2016**
+- The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
+
 **September 22, 2016**
 
 - In Windows 10, version 1607, to [prevent automatic updates of custom BSPs](../service/iot/managing-iot-device-update.md), use the IoT\_GENERIC\_POP package in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
