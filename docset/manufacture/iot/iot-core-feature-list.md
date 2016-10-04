@@ -67,7 +67,7 @@ The following features must be included in all images, though they may be custom
 |--------------------------------|------------------------------------------------------------------------------------|
 | **IOT\_SPEECHDATA\_DE\_DE**    | Adds speech data for German                                                        |
 | **IOT\_SPEECHDATA\_EN\_GB**    | Adds speech data for UK English                                                    |
-| **IOT\_SPEECHDATA\_EN\_US**    | Adds speech data for US English                                                    |
+| **IOT\_SPEECHDATA\_EN\_US**    | Deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
 | **IOT\_SPEECHDATA\_ES\_ES**    | Adds speech data for Spanish                                                       |
 | **IOT\_SPEECHDATA\_FR\_FR**    | Adds speech data for French                                                        |
 | **IOT\_SPEECHDATA\_IT\_IT**    | Adds speech data for Italian                                                       |
