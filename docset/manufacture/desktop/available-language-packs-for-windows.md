@@ -26,7 +26,7 @@ To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows
 
 The following table includes these settings:
 
-- **Language/region**. The name of the language that will be displayed in the UI. All 38 language packs are available for Windows 10 and Windows Server, but in Server 2012 the user interface (UI) is localized only for the 18 languages listed in bold.
+- **Language/region**. The name of the language that will be displayed in the UI. All 38 language packs are available for Windows 10 and Windows Server 2016. In Windows Server 2012 the user interface (UI) is localized only for the 18 languages listed in bold.
 - **Language/region tag**. The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
 - **Language/region ID**. The hexadecimal representation of the language identifier. This setting is used with the keyboard identifier when specifying an input method using DISM.
 - **Language/region decimal identifier**.The decimal representation of the language identifier. This setting is used in Oobe.xml.
