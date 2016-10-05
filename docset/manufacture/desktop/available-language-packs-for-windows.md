@@ -13,7 +13,7 @@ The following tables show the supported language packs and language interface pa
 
 LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
 
-OEMs and system builders with Microsoft Software License Terms can get the LIPs from the [Microsoft OEM](http://go.microsoft.com/fwlink/?LinkId=131359) site and [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
+OEMs and system builders with Microsoft Software License Terms can get language packs and LIPs from the [Microsoft OEM](http://go.microsoft.com/fwlink/?LinkId=131359) site and [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
 
 For a complete list of supported languages and locales, see [Locale Identifier Constants and Strings](https://msdn.microsoft.com/en-us/library/dd318693(v=vs.85).aspx).
 
@@ -116,7 +116,7 @@ The following table includes these settings:
 <td align="left"><p>1033</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>**English (United Kingdom)**</p></td>
+<td align="left"><p>English (United Kingdom)</p></td>
 <td align="left"><p>en-GB</p></td>
 <td align="left"><p>0x0809</p></td>
 <td align="left"><p>2057</p></td>
