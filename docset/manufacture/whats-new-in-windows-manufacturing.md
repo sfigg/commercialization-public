@@ -87,6 +87,9 @@ The following changes are new for Windows 10, version 1607:
 
 [Windows 10 IoT Core is now free](iot/set-up-your-pc-to-customize-iot-core.md). You no longer need an MSDN subscription or an account as a registered Microsoft OEM, though you do need a Microsoft account.
 
+**October 4, 2016**
+- The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
+
 **September 22, 2016**
 
 - In Windows 10, version 1607, to [prevent automatic updates of custom BSPs](../service/iot/managing-iot-device-update.md), use the IoT\_GENERIC\_POP package in the OemInput XML. (You can no longer use the Intel.Generic.DeviceInfo.cab, this file has been removed.)
