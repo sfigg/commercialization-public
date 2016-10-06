@@ -40,7 +40,9 @@ Here's how we'll refer to them:
 
 2.  [Windows Driver Kit (WDK)](http://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
-3.  [IoT Core .iso package from MSDN Subscriber Downloads](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=70177)  The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. To get these files, you'll need an MSDN subscription or an account as a registered Microsoft OEM. By default, these packages are installed to **C:\\Program Files (x86)\\Windows Kits\\10\\MSPackages\\Retail**.
+3.  [IoT Core .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53898). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. You'll need to sign in with your Microsoft account. By default, these packages are installed to **C:\\Program Files (x86)\\Windows Kits\\10\\MSPackages\\Retail**.
+
+    - Optional: [IoT Core Pro .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53899)
 
 4.  [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)  Download the ZIP file on this page, and extract it to a folder, for example, **C:\\IoT-ADK-AddonKit**. This kit includes the sample scripts and base structures you'll use to create your image. (Want more detail? See [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)).
 

@@ -12,13 +12,13 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in. 
 
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+Note: To create a provisioning package that supports Windows 10 IoT Core Pro features, see [Windows 10 IoT Core Pro].(https://developer.microsoft.com/windows/iot/docs/createiotcorepro).
 
+## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) and [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
-
 
 1.  Start **Windows Imaging and Configuration Designer**.
 
