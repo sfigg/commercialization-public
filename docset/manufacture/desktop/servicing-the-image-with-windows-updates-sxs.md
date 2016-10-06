@@ -10,9 +10,9 @@ title: 'Lab 1c: Servicing the image with Windows Updates'
 
 For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
 
-To add drivers that include an installation package, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
-
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
+
+Note: To add drivers that include an installation package, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
 
 ## <span id="Prepare_and_mount_the_image"></span>Prepare and mount the image
 

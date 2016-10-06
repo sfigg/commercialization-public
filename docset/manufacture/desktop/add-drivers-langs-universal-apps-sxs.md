@@ -7,17 +7,7 @@ title: 'Lab 1d: Add boot-critical drivers, languages, and universal Windows apps
 
 # <span id="p_sxs_dmfg.part_2__classic-style_deployment"></span>Lab 1d: Add boot-critical drivers, languages, and universal Windows apps
 
-Some customizations have special requirements:
-
-*  Boot-critical drivers (such as storage drivers or video drivers) should be included in the system recovery image in case there's a problem.
-
-*  Add updates (including hotfixes, general distribution releases [GDR], or service packs [SP]) before installing languages. If you add an update later, you'll need to re-add the language to make sure you get all the language-specific resources.
-
-*  Language updates have a specific order they need to be installed in.
-
-*  Languages should also be included in the recovery image.
-
-*  Add languages before adding Universal apps, so that the language-specific assets are installed properly on first boot.
+Boot-critical drivers (such as storage drivers or video drivers) and languages should be included in both the Windows image and the system recovery image in case there's a problem.
 
 The recovery (Windows RE) image file is included in the Windows image. To modify it, you'll need to mount the Windows image, then mount the recovery image that's inside it. (To save time, you can choose to download Windows RE images from the Microsoft Connect website that have languages pre-installed for different regions - these steps aren't covered in this lab.)
 
@@ -215,7 +205,7 @@ The following table shows the types of language packages and components availabl
 
 1.  Add languages, and Features On Demand to the Windows image.
 
-    For packages with dependencies, make sure you install the packages in order. For example, to enable Cortana, install: **Microsoft-Windows-Client-Language-Pack**, then **–Basic**, then **–Fonts**, then **–TextToSpeech**, and then **–Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command. Not every region has fonts or capability packs for every feature.
+    Language updates have a specific order they need to be installed in. For example, to enable Cortana, install: **Microsoft-Windows-Client-Language-Pack**, then **–Basic**, then **–Fonts**, then **–TextToSpeech**, and then **–Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command. Not every region has fonts or capability packs for every feature.
 
     For example:
 
@@ -318,37 +308,51 @@ The following table shows the types of language packages and components availabl
 
 ## <span id="Add_or_reinstall_apps"></span>Add/reinstall apps
 	
-**Step 8: Reinstall inbox apps (required whenever adding languages)**
+**Step 8: Add/reinstall inbox apps (required whenever adding languages)**
 
 Note, in previous versions, it was required to first remove inbox apps. This is no longer required, and if you do, the command may fail.
 
-1.  Re-install the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
+NOTE: For Windows 10 version 1607, app bundles now only contain the dependency packages that pertain to the app. You no longer need to check the prov.xml file for what dependencies to install. Install all dependency packages found in the folder.
+
+1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. There will not be monthly updates of these apps. 
+
+2.  Extract the package to a folder, for example, E:\apps\amd64.
+
+3.  Add/reinstall the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
     ``` syntax
-    Dism /Image:"c:\mount\windows" /Add-ProvisionedAppxPackage /packagepath:<path to appxbundle>\2b362ab83144485d9e9629ad2889a680.bundle /licensepath:<path to license file>\2b362ab83144485d9e9629ad2889a680_License1.xml
+    Dism /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
     ```
 
-**Step 9: Add Windows Universal apps or Windows 8.1 Store apps (Optional)**
+    See [Sample scripts](windows-deployment-sample-scripts-sxs.md#Reinstall_Windows_inbox_apps).
 
-1.  You can add Windows Universal apps and Windows 8.1 Store apps to your image by using DISM. In this example, you will preinstall Office, OneNote, and Windows Reader 8.1.
+**Step 9: Add/reinstall Windows Universal apps (Optional)**
 
-    Skip this step for hardware configuration 1.
+For example, install Office Mobile.
 
-    Add the AppX package.
+**Note**: Install either Office Single Image (either with or with out perpetual or subscription license) or Office Mobile (not both). Office Mobile must be used on devices with screen size of 10.1” and below, and Office Single Image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. To learn more, see [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx).
+
+1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. There will not be monthly updates of these apps. 
+
+2.  Extract the package to a folder, for example, e:\Universal_office.
+
+3.  Add/reinstall Office Mobile:
 
     ``` syntax
-    Dism /Image:c:\mount\windows /Add-ProvisionedAppxPackage /PackagePath:c:\samples\excelpreview\excel.appxbundle /LicensePath:c:\samples\excelpreview\excel_license.xml
+    Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows" /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c_License1.xml"
+
+    Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows"  /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\7f255062294a415a974b4958961df056.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\7f255062294a415a974b4958961df056_License1.xml"
+
+     Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows" /packagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592.appxbundle" /dependencypackagepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592_License1.xml"
     ```
 
     Where the PackagePath points to the app bundle package.
 
-2.  Repeat the DISM command for the OneNote, Reader, Word and PowerPoint preview app bundle packages.
+**Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
 
 If the PC runs into trouble, your users may not be able to read/understand the recovery screens unless you add the appropriate language resources into the Windows Recovery Environment (Windows RE).
 
 Whenever possible, try to add and remove languages in Windows RE at the same time that you add and remove them in your Windows image to ensure a consistent recovery experience. (This isn’t always possible, as not all languages have Windows RE equivalents.)
-
-**Step 10: Add languages to the recovery environment (highly recommended when adding languages)**
 
 1.  Add languages. These languages are included with the Windows ADK. You must use a matching version of the Windows ADK to service the Windows RE image.
 
@@ -357,25 +361,25 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
 
     ``` syntax
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-EnhancedStorage_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Scripting_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SecureStartup_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-SRT_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WDS-Tools_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-WMI_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-StorageWMI_fr-fr.cab"
 
-    Dism /image:C:\mount\winre /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
     ```
 
 2.  Set the default recovery language to match the preferred language for your customers.
