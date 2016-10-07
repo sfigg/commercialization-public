@@ -38,15 +38,15 @@ Here's how we'll refer to them:
 
 1.  [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) including at least the **Deployment Tools** and **Imaging and Configuration Designer (ICD)** features. You'll use these tools to create images and provisioning packages.
 
-2.  [Windows Driver Kit (WDK)](http://developer.microsoft.com/windows/hardware/windows-driver-kit)
+2.  [Windows Driver Kit (WDK) 10](http://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
 3.  [IoT Core .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53898). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. You'll need to sign in with your Microsoft account. By default, these packages are installed to **C:\\Program Files (x86)\\Windows Kits\\10\\MSPackages\\Retail**.
 
     - Optional: [IoT Core Pro .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53899)
 
-4.  [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/)  Download the ZIP file on this page, and extract it to a folder, for example, **C:\\IoT-ADK-AddonKit**. This kit includes the sample scripts and base structures you'll use to create your image. (Want more detail? See [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)).
+4.  [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/).  Download the ZIP file on this page, and extract it to a folder, for example, **C:\\IoT-ADK-AddonKit**. This kit includes the sample scripts and base structures you'll use to create your image. To learn about the contents, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)).
 
-5.  [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576)
+5.  [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576).
 
 Other helpful software:
 

@@ -62,7 +62,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Check the auto-provisioning scripts to make sure they'll include your new provisioning package (optional)**
 
-1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. No changes should required.
+1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. No changes are required.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -122,11 +122,9 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; Device type: **Custom**, and browse to your image. Enter your device password. Put the Micro SD card in the device, select it. Accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
-3.  Put the card into the IoT device and start it up.
-
-    After a short while, the device should start automatically, and you should see your app.
+3.  Put the card into the IoT device and start it up. After a short while, the device should start automatically, and you should see your app.
 
 **Check to see if your provisioning settings were applied**
 

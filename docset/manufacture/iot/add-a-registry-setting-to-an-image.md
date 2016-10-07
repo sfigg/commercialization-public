@@ -50,13 +50,13 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\Registry.ConfigSettings.pkg.xml**:
 
-    -  The default package definition file includes sample XML that has been commented out. Remove the comment marks and instructions, then modify the sample to add your own registry keys and files.
+    a.  Remove the comment marks and instructions.
 
-    -  Update the values of RegKey to include a new KeyName, Name, and Value.
+    b.  Update the values of RegKey to include a new KeyName, Name, and Value.
 
-    -  Optional: update the DestinationDir and Name. If you don't include the DestinationDir option, the files will land in C:\\Windows\\system32\\.
+    c.  Update the File Source names to TestFile1.txt and TestFile2.txt. By default, files land in C:\\Windows\\System. To change the destination location, add a DestinationDir and Name.
     
-    Variables like (runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
+    Variables like $(runtime.root) are defined in C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386\\pkggen.cfg.xml.
 
     ``` syntax
       <OSComponent> 
@@ -86,6 +86,8 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for another architecture, use **setenv &lt;arch&gt;**, then **BuildAllPackages** to rebuild everything for your other architecture.
 
+    **Troubleshooting**: If you get an error: "The elementRegKeys in namespace 'urn:Microsoft.WindowsPhone/PackageSchema.v8.00' has incomplete content", remove the comments and instructions. If you don't want to include a reg key or a file, then remove these XML elements. 
+
 ## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
 
 **Add your file package to the feature manifest**
@@ -102,12 +104,6 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
               <FeatureID>OEM_ProvManual</FeatureID>
             </FeatureIDs>
           </PackageFile>
-          
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.CrashSettings.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_CrashSettings</FeatureID>
-            </FeatureIDs>
-          </PackageFile>    
           
           <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.ConfigSettings.cab">
             <FeatureIDs>
@@ -141,11 +137,13 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     ``` syntax
     <OEM> 
+    <!-- Include BSP Features -->
     <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PRODUCTION</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
+    <Feature>RPI3_DRIVERS</Feature> 
+    <!-- Include OEM Features -->
     <Feature>OEM_AppxHelloWorld</Feature> 
+    <Feature>OEM_CustomCmd</Feature> 
+    <Feature>OEM_ProvAuto</Feature> 
     <Feature>OEM_ConfigSettings</Feature> 
     </OEM>
     ```
@@ -186,11 +184,11 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Check to see if your reg key exists**
 
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](http://ms-iot.github.io/content/en-US/win10/samples/SSH.md).)
+1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY.exe](https://the.earth.li/~sgtatham/putty/0.67/x86/). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/Docs/SSH).)
 2.  From the command line in the SSH client, query the system for the reg key.
 
     ``` syntax
-    reg query HKLM\Software\Contoso\Test2
+    reg query HKLM\Software\$(OEMNAME)\Test
     ```
 
     The registry tool should return your test values.
