@@ -100,6 +100,8 @@ The following diagrams provide an overview of two configurations.
 
 **2GB Configuration**  (2048MB, typically has 1843MB for storage)
 
+![2GB partition layout: EFIESP, MainOS, and Data. MainOS includes Windows and free space](images/partition-layout-2gb.png)
+
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|
 |EFIESP       |EFIESP     |32   |65536   |EFIESP size                |
@@ -110,6 +112,8 @@ The following diagrams provide an overview of two configurations.
 
 
 **4GB Configuration:**  (4096MB, typically has 3600MB available for storage)
+
+![4GB partition layout: EFIESP, MainOS, CrashDump, and Data. MainOS includes Windows and free space](images/partition-layout-4gb.png)
 
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|

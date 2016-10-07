@@ -110,7 +110,7 @@ Windows PE does not support any of the following:
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Operations</strong></p></td>
-<td align="left"><p>[WinPE: Mount and Customize](winpe-mount-and-customize.md) | [WinPE: Storage Area Network (SAN) Policy](winpe-storage-area-network--san--policy.md) | [WinPE: Create Apps](winpe-create-apps.md)</p></td>
+<td align="left"><p>[WinPE: Mount and Customize](winpe-mount-and-customize.md) | [WinPE: Add drivers](winpe-add-drivers.md) | [WinPE: Storage Area Network (SAN) Policy](winpe-storage-area-network--san--policy.md) | [WinPE: Create Apps](winpe-create-apps.md) | [WinPE: Optimize and shrink the image](winpe-optimize.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Troubleshooting</strong></p></td>

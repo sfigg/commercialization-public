@@ -1,20 +1,22 @@
 ---
 author: Justinha
-Description: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
+Description: 'Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1f: Add Windows desktop applications with siloed provisioning packages'
 ---
-# Lab 1f: Add Windows desktop applications with siloed provisioning packages
+# Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)
 
-Siloed provisioning packages (SPPs) are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows. 
+Use this method to install Windows desktop applications and drivers that include an installation package (.exe-style), by capturing them into siloed provisioning packages (SPPs).
+
+SPPs are a new type of provisioning package that is available for Windows 10, version 1607. Where traditional provisioning packages can capture all Windows desktop applications and settings that are installed with a Windows image, a siloed provisioning package can capture Windows desktop applications individually, or capture add-ons for provisioning packages that were captured previously, or Windows settings. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows. 
 
 These packages are automatically included in the recovery tools. When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
 We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode. 
 
 ### Tip: Use Virtual machines (VMs)
-VMs can be a huge time-saver when capturing multiple classic applications.  Rather than reinstalling each time, use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. 
+VMs can be a huge time-saver when capturing multiple classic applications.  Rather than reinstalling each time, use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. We con't cover the steps in this lab, but here's the general steps:
 
 1.  Create a VM with a new Windows image, and boot it into audit mode.
 	
@@ -43,7 +45,9 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 **Get into audit mode**
 
 1.  Boot up the reference device (or VM), if it's not already booted.
+
 2.  If the device boots to the **Languages** or the **Get going fast** screen, press **Ctrl+Shift+F3** to enter Audit mode.
+
 3.  In audit mode, the device reboots to the Desktop, and the System Preparation Tool (Sysprep) appears. Ignore Sysprep for now.
 
 ## <span id="Install_and capture_a_Classic_Windows_application"></span><span id="install_a_windows_desktop_application"></span><span id="INSTALL_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 3: Install and capture a Windows desktop application
