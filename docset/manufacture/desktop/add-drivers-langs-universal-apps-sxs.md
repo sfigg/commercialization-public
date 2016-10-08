@@ -424,11 +424,25 @@ Whenever possible, try to add and remove languages in Windows RE at the same tim
     State : Installed
     ```
 
-**Step 11: Add the files you need to modify the Start tile and Taskbar pin layouts (Optional)**
+**Step 11: Modify the Start tile and Taskbar pin layouts (Optional)**
 
-In Windows 10, OEMs can modify the default Start tile layout and specify the layout of the OEM tiles by creating a LayoutModification.xml file and placing this file in the correct system location.
+You can define separate layouts for your default Start tiles and taskbar bins for different regions or markets.
 
-1.  Create a LayoutModification.xml file. For this lab, you can use the sample from the Pre-Requisites document. The sample will pin Office, OneNote and Reader to Start if they are preloaded on the device (Step 8). To create your own LayoutModification.xml file by using an XML editor, see the [Sample scripts](windows-deployment-sample-scripts-sxs.md).
+1.  Create a LayoutModification.xml file. For our lab, you can use the sample from USB-B or [sample LayoutModification.xml](windows-deployment-sample-scripts-sxs.md). This sample shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that are applied based on two regions. 
+
+    When creating your own LayoutModification file:
+
+    To add desktop applications or legacy URL (.url) shortcuts, use the start:DesktopApplicationTile tag.
+
+     -  For desktop apps, if you know the application user model ID, use that.
+
+     -  Otherwise, for desktop apps or legacy .url links, create link files (.lnk) in either of the legacy Start Menu folders:
+
+         -  %APPDATA%\Microsoft\Windows\Start Menu\Programs\
+
+         -  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\ 
+
+     You'll add the desktop applications in a later section: [Lab 1f: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).    
 
 2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
@@ -442,7 +456,7 @@ In Windows 10, OEMs can modify the default Start tile layout and specify the la
 
 **Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. You'll learn how to make sure these settings stay on the device in [Sample scripts](windows-deployment-sample-scripts-sxs.md).
 
-4.  To add a taskbar layout in 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
+4.  To add a taskbar layout in Windows 10, version 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 
 ## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
 
