@@ -79,7 +79,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 2.  From the IoT Core Shell, build the package. (The BuildAllPackages tool builds everything in the source folders.)
 
     ``` syntax
-    createpkg Registry.ConfigSettings
+    buildpkg Registry.ConfigSettings
     ```
 
     The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Registry.ConfigSettings.cab**.
@@ -155,7 +155,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 1.  From the IoT Core Shell, create the image:
 
     ``` syntax
-    createimage ProductA Test
+    buildimage ProductA Test
     ```
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
@@ -188,10 +188,10 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 2.  From the command line in the SSH client, query the system for the reg key.
 
     ``` syntax
-    reg query HKLM\Software\$(OEMNAME)\Test
+    reg query HKLM\Software\Fabrikam\Test
     ```
 
-    The registry tool should return your test values.
+    Where Fabrikam is your OEM name. The registry tool should return your test values.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
