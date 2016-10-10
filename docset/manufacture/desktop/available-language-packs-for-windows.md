@@ -11,6 +11,8 @@ title: Available Language Packs for Windows
 
 The following tables show the supported language packs and language interface packs (LIPs) for Windows. Language packs are available for Windows 10, Windows Server 2016, and Windows Server 2012 R2. LIPs are available for Windows 10, but are not available for Windows Server. For more information, see [Language packs](https://support.microsoft.com/help/14236/language-packs#lptabs=win10).
 
+Windows Server and Windows 10 language packs are not interchangeable. Windows Server language packs cannot be used on Windows 10, and Windows 10 language packs cannot be used on Windows Server.
+
 LIPs must be installed to the operating system that they support. Windows 10 LIPs cannot be used on Windows 8.1; similarly, Windows 8.1 LIPs cannot be used on Windows 10.
 
 OEMs and system builders with Microsoft Software License Terms can get language packs and LIPs from the [Microsoft OEM](http://go.microsoft.com/fwlink/?LinkId=131359) site and [OEM Partner Center](http://go.microsoft.com/fwlink/?LinkId=131358).
@@ -24,7 +26,7 @@ To learn more, see [Add Language Packs to Windows](add-language-packs-to-windows
 ## <span id="Supported_Language_Packs_and_Language_Interface_Packs"></span><span id="supported_language_packs_and_language_interface_packs"></span><span id="SUPPORTED_LANGUAGE_PACKS_AND_LANGUAGE_INTERFACE_PACKS"></span>Supported Language Packs and Language Interface Packs
 
 
-The following table includes these settings:
+The following tables include these settings:
 
 - **Language/region**. The name of the language that will be displayed in the UI. All 38 language packs are available for Windows 10 and Windows Server 2016. In Windows Server 2012 the user interface (UI) is localized only for the 18 languages listed in bold.
 - **Language/region tag**. The language identifier based on the language tagging conventions of RFC 3066. This setting is used with the Deployment Image Servicing and Management (DISM) tool, or in an unattended answer file.
