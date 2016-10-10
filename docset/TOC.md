@@ -87,7 +87,8 @@
 ### [Filter](design/compatibility/filter.md)
 ### [Systems](design/compatibility/systems.md)
 
-# [Customize](https://msdn.microsoft.com/library/windows/hardware/mt269765.aspx)
+# [Customize](customize/index.md)
+## [Mobile Device Management](customize/mdm/)
 
 # [Test](test/index.md)
 
