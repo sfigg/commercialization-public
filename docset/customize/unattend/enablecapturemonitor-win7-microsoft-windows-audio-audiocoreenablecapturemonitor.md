@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableCaptureMonitor
 
 
-`EnableCaptureMonitor` specifies whether Windows® includes an option to play audio from devices connected to the **Audio In** port. The computer actively detects whether a device is connected to an **Audio In** port.
+`EnableCaptureMonitor` specifies whether Windows includes an option to play audio from devices connected to the **Audio In** port. The computer actively detects whether a device is connected to an **Audio In** port.
 
 If this option is enabled, then the end user can configure the system to play audio from a device. For example, the end user can plug in a portable music player and listen to music through the computer speakers.
 
