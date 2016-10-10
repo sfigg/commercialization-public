@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md).
 
 ## XML Example
 
