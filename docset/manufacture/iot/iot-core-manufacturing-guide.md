@@ -57,7 +57,7 @@ Each package contains:
 
 The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, `createprovpkg` and `createupdatepkgs`, which call pkggen to create packages for our drivers, apps, and settings.
 
-The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/dn756642).
+The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/windows/hardware/dn756642).
 
 ### <span id="Feature_manifests__FMs_"></span><span id="feature_manifests__fms_"></span><span id="FEATURE_MANIFESTS__FMS_"></span>Feature manifests (FMs)
 

@@ -24,7 +24,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--  Complete the exercises in [Installing The Sample Driver](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
+-  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab3) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
