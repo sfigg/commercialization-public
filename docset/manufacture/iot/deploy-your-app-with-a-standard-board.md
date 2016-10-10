@@ -117,12 +117,21 @@ You can skip these steps if you've already created and tested your app.
     </AdditionalFMs>
     ```
 
-3.  Add the FeatureIDs for both your app package, as well as the **OEM\_CustomCmd** package, which is used to launch your app. Remove the FeatureID for the OEM_AppxMain.
+3.  Update the FeatureIds:
+
+    a. Remove the FeatureID for the OEM_AppxMain.
+
+    b. Add the FeatureID for your app package (OEM_AppxHelloWorld)
+
+    c. Add the FeatureID: **OEM\_CustomCmd** package, which installs and launches your app.
+    
+    d. Update the placement of the comment tags (_<!-- --_>) so the OEM features are included in the file. 
 
     ``` syntax
    <OEM>
       <!-- Include BSP Features -->
-          <Feature>RPI2_DRIVERS</Feature>
+      <Feature>RPI2_DRIVERS</Feature>
+      <Feature>RPI3_DRIVERS</Feature>
       <!-- Include OEM features -->
       <Feature>OEM_AppxHelloWorld</Feature>
       <Feature>OEM_CustomCmd</Feature>
@@ -164,7 +173,6 @@ You can skip these steps if you've already created and tested your app.
 		  <Feature>IOT_ALLJOYN_APP</Feature>
 	   -->
        </Microsoft>
-
     ```
 
 **Set the app to automatically install and set itself as the default app**
@@ -173,7 +181,7 @@ You can skip these steps if you've already created and tested your app.
 
 2.  Recommended: Change the device's default username and password.
 
-3.  Remove the first set of REM statements from the code block starting with "REM if exist..", this allows the AppInstall.cmd command to automatically install your app.
+3.  Remove the first set of REM statements from the code block starting with "REM if exist C:\AppInstall\AppInstall.cmd..", this allows the AppInstall.cmd command to automatically install your app.
 
     ``` syntax
     @echo off
@@ -183,14 +191,19 @@ You can skip these steps if you've already created and tested your app.
     REM Enable Administrator User
     net user Administrator p@ssw0rd /active:yes
 
-    if exist C:\AppInstall\AppInstall.cmd (
-    REM Enable Application Installation for onetime only, after this the files are deleted.
-    call C:\AppInstall\AppInstall.cmd > %temp%\AppInstallLog.txt
-    if %errorlevel%== 0 (
-    REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
-    cd \
-    rmdir /S /Q C:\AppInstall
+    if exist C:\OEMTools\InstallAppx.cmd (
+        REM Run the Appx Installer. This will install the appx present in C:\OEMApps\
+        call C:\OEMTools\InstallAppx.cmd
     )
+
+    if exist C:\AppInstall\AppInstall.cmd (
+        REM Enable Application Installation for onetime only, after this the files are deleted.
+        call C:\AppInstall\AppInstall.cmd > %temp%\AppInstallLog.txt
+        if %errorlevel%== 0 (
+            REM Cleanup Application Installation Files. Change dir to root so that the dirs can be deleted
+            cd \
+            rmdir /S /Q C:\AppInstall
+         )
     )
     ```
 
@@ -204,13 +217,17 @@ You can skip these steps if you've already created and tested your app.
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
 
-	Troubleshooting: Check the logfiles at C:\\iot-adk-addonkit\\Build\\&lt;arch&gt;\\HelloWorld_Test.log, and search for "fatal error".
-	
+	Troubleshooting: 
+
+    -  Make sure the Windows ADK, WDK, and IoT Core .ISO package are all for Windows 10, version 1607.
+
+    -  Check the logfiles at C:\\iot-adk-addonkit\\Build\\&lt;arch&gt;\\ProductA\\Test\\HelloWorld_Test.log, and search for "fatal error".
+
 2.  Install the image onto the Micro SD card.
     -  Start **Windows IoT Core Dashboard**
     -  Click the **Setup a new device** tab.
 	-  In Device Type, select **Custom**. This gives you new options to Browse for and to select your image. 
-	-  Add a device name and password.+.
+	-  Enter the device username and password. **This must match the password you entered in the OEMCustomization.cmd file for your app to install.**
 	-  Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
 	This replaces the previous image with your new image.
 

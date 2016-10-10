@@ -32,12 +32,19 @@ The Windows PE USB must be at least 512MB and at most 32GB. It should not be a W
 
    **Troubleshooting**: If this doesn't work, make sure you're in the Deployment and Imaging Tools Environment, and not the standard command prompt. 
 	
-**Adding to WinPE (not usually needed. Use this for devices with non-standard video or network cards)**
+**Add to WinPE (Usually not needed)**
 
-If you boot WinPE later and find you can't see the screen or connect to the network, you may need to add a video or network driver.
-To add the drivers, you'll mount the image. Mounting an image maps the contents of a file to a location where you can view and modify them. 
+Common scenarios:
 
-1.  Mount the WinPE image:
+* **Add a video or network driver**. (WinPE includes generic video and network drivers, but in some cases, additional drivers are needed to show the screen or connect to the network.)
+
+* **Add PowerShell scripting support**. To learn more, see [WinPE: Adding Windows PowerShell support to Windows PE](winpe-adding-powershell-support-to-windows-pe.md). PowerShell scripts are not included in this lab.
+
+Note, when you add more packages to WinPE, it impedes WinPE performance and boot time. Only add additional packages when necessary.  
+
+For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](desktop/winpe-optimize.md) to help reduce the boot time.
+
+1.  Mount the WinPE image. Mounting an image maps the contents of a file to a location where you can view and modify them.
 
     ``` syntax
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
@@ -89,15 +96,6 @@ To add the drivers, you'll mount the image. Mounting an image maps the contents 
     WinPE starts at a command line, and runs **wpeinit** to set up the system. This can take a few minutes.
 
 Leave this PC booted to Windows PE for now. 
-	
+
 Next step: [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  
-
- 
-
- 
-
-
-
-
-

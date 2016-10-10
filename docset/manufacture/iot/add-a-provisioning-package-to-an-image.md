@@ -12,13 +12,13 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in. 
 
-## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+Note: To create a provisioning package that supports Windows 10 IoT Core Pro features, see [Windows 10 IoT Core Pro].(https://developer.microsoft.com/windows/iot/docs/createiotcorepro).
 
+## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) and [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
-
 
 1.  Start **Windows Imaging and Configuration Designer**.
 
@@ -62,7 +62,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Check the auto-provisioning scripts to make sure they'll include your new provisioning package (optional)**
 
-1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. No changes should required.
+1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. No changes are required.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -122,11 +122,9 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\Flash.FFU.
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; Device type: **Custom**, and browse to your image. Enter your device password. Put the Micro SD card in the device, select it. Accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
-3.  Put the card into the IoT device and start it up.
-
-    After a short while, the device should start automatically, and you should see your app.
+3.  Put the card into the IoT device and start it up. After a short while, the device should start automatically, and you should see your app.
 
 **Check to see if your provisioning settings were applied**
 
