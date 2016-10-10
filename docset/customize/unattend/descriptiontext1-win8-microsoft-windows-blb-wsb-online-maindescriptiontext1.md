@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DescriptionText1
 
 
-`DescriptionText1` specifies the first of two lines of a description of an online backup service in the Windows® Server Backup menus.
+`DescriptionText1` specifies the first of two lines of a description of an online backup service in the Windows Server Backup menus.
 
 Before an online backup service is installed, Windows displays a description of a recommended online backup service. This text is part of the description.
 
