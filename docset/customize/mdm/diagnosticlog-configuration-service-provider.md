@@ -66,8 +66,8 @@ For more information about using DiagnosticLog to collect logs remotely from a P
 
 Here are the links to the DDFs:
 
--   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf#version-1-2.md)
--   [DiagnosticLog CSP version 1.3](diagnosticlog-ddf#version-1-3.md)
+-   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf.md#version-1-2)
+-   [DiagnosticLog CSP version 1.3](diagnosticlog-ddf.md#version-1-3)
 
 The following diagram shows the DiagnosticLog configuration service provider in tree format.
 

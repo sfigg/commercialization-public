@@ -112,7 +112,7 @@ The following parameters may be specified in the request URI.
 ## Response
 
 
-The response contains [LocalizedProductDetail](business-store-data-structures#localizedproductdetail.md).
+The response contains [LocalizedProductDetail](business-store-data-structures.md#localizedproductdetail).
 
  
 

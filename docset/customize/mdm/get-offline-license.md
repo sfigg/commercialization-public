@@ -120,7 +120,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response contains [OfflineLicense](business-store-data-structures#offlinelicense.md).
+The response contains [OfflineLicense](business-store-data-structures.md#offlinelicense).
 
  
 

@@ -109,7 +109,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response contains [ProductDetails](business-store-data-structures#productdetails.md).
+The response contains [ProductDetails](business-store-data-structures.md#productdetails).
 
  
 

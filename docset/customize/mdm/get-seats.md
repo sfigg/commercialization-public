@@ -84,7 +84,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contains [SeatDetailsResultSet](business-store-data-structures#seatdetailsresultset.md).
+The response body contains [SeatDetailsResultSet](business-store-data-structures.md#seatdetailsresultset).
 
 <table>
 <colgroup>

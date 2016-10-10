@@ -79,7 +79,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contain [SeatDetails](business-store-data-structures#seatdetails.md).
+The response body contain [SeatDetails](business-store-data-structures.md#seatdetails).
 
 <table>
 <colgroup>

@@ -71,7 +71,7 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="even">
 <td><p>seatAction</p></td>
-<td>[SeatAction](business-store-data-structures#seataction.md)</td>
+<td>[SeatAction](business-store-data-structures.md#seataction)</td>
 <td></td>
 </tr>
 </tbody>
@@ -84,7 +84,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contains [BulkSeatOperationResultSet](business-store-data-structures#bulkseatoperationresultset.md).
+The response body contains [BulkSeatOperationResultSet](business-store-data-structures.md#bulkseatoperationresultset).
 
 <table>
 <colgroup>

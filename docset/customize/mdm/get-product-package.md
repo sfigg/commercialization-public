@@ -125,7 +125,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contains [ProductPackageDetails](business-store-data-structures#productpackagedetails.md).
+The response body contains [ProductPackageDetails](business-store-data-structures.md#productpackagedetails).
 
  
 

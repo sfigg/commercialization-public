@@ -73,7 +73,7 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="odd">
 <td><p>licenseTypes</p></td>
-<td><p>collection of [LicenseType](business-store-data-structures#licensetype.md)</p></td>
+<td><p>collection of [LicenseType](business-store-data-structures.md#licensetype)</p></td>
 <td><p>{online,offline}</p></td>
 <td><p>Optional. A collection of license types</p></td>
 </tr>
@@ -157,7 +157,7 @@ Here are some examples.
 
 ### Response body
 
-The response contains [InventoryResultSet](business-store-data-structures#inventoryresultset.md).
+The response contains [InventoryResultSet](business-store-data-structures.md#inventoryresultset).
 
  
 
