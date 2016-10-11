@@ -18,7 +18,7 @@ The Windows Driver Kit (WDK) includes a tool for updating packages on a device o
 IUTool.exe must be used in a command-line window that is opened as an administrator. The command-line syntax for IUTool.exe is the following.
 
 ``` syntax
-IUTool –p <path to packages>
+IUTool -p <path to packages>
 ```
 
 The following table describes the command-line parameters for IUTool.exe.
@@ -41,9 +41,9 @@ The following table describes the command-line parameters for IUTool.exe.
 <ul>
 <li>To update or add a single package, specify the full path to the package on the development computer.</li>
 <li><p>To update or add multiple packages, specify a semicolon-delimited list of packages on the development computer. For example:</p>
-<pre class="syntax" space="preserve"><code>IUTool –p C:\ContosoPackages\Contoso.Device.SampleDriver.spkg;C:\ContosoPackages\Contoso.Device.SampleApplication.spkg</code></pre></li>
+<pre class="syntax" space="preserve"><code>IUTool -p C:\ContosoPackages\Contoso.Device.SampleDriver.spkg;C:\ContosoPackages\Contoso.Device.SampleApplication.spkg</code></pre></li>
 <li><p>To update or add an entire directory of packages, specify the path to the directory. For example:</p>
-<pre class="syntax" space="preserve"><code>IUTool –p C:\ContosoPackages</code></pre></li>
+<pre class="syntax" space="preserve"><code>IUTool -p C:\ContosoPackages</code></pre></li>
 </ul></td>
 </tr>
 </tbody>
@@ -60,7 +60,7 @@ If the specified package already exists on the device, the new version of the pa
 Use GetDULogs.exe to get package update logs from a device.
 
 ``` syntax
-GetDULogs –o <output file path>
+GetDULogs -o <output file path>
 ```
 
 For more info, see [GetDULogs: Get package update logs](update-packages-on-a-phone-and-get-package-update-logs.md).

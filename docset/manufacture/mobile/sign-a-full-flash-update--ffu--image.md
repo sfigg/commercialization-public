@@ -88,10 +88,10 @@ Before images can be shipped on a retail device, they must be signed by Microsof
 11. Flash the retail signed retail image on to a device and verify that it behaves as expected.
 
     ``` syntax
-    C:\> FFUTool –flash OEM.ffu
+    C:\> FFUTool -flash OEM.ffu
     ```
 
-12. After the retail signed image has been tested it can be used to flash to retail devices. For more information see [Flashing tools](p_phManuRetail.flashing_tools) and [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).
+12. After the retail signed image has been tested it can be used to flash to retail devices. For more information see [Flashing tools](flashing-tools.md) and [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).
 
 **Important**  
 Secure all of the retail signed binaries using industry best practices.
@@ -174,7 +174,7 @@ ImageSigner {SIGN|GETCATALOG|TRUNCATE} FFUFile CatalogFile|TruncatedFFU
 
 -   **GETCATALOG** – The **GETCATALOG** action extracts a catalog from an FFU file and writes it to a catalog file. This option can be used to determine if an FFU was prepared properly, by examining the extracted catalog file by using file properties or tools such as SignTool.
 
--   **Truncate** – The truncate action is used to create a truncated FFU.
+-   **TRUNCATE** – The truncate action is used to create a truncated FFU.
 
 -   *FFUFile* – The path to the FFU image file.
 

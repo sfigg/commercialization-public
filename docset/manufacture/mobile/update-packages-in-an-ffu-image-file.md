@@ -16,9 +16,9 @@ ImageApp has the following important limitations:
 
 -   ImageApp should only be used for adding packages to production, test and health images. Do not use ImageApp to modify retail images, as it may negatively impact update reliability and the security of the device. ImageApp cannot be used to change the partition layout of an existing image. If a different partition layout is needed, the image will need to be rebuilt. For more information, see [Building a device image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md).
 -   ImageApp cannot be used to remove packages from an image.
--   To prepare a device platform to use compressed partitions with CompactOS, you'll need a PC with the Windows 10 version of DISM. If your technician PC is running a previous version of Windows, you can get this by installing the Windows Assessment and Deployment Kit (ADK) for Windows 10, or by copying and installing the DISM driver. This process is the same as the one used to install DISM on Windows PE. To learn more, see [Install Windows 10 using a previous version of Windows PE: To add DISM into your Windows PE image](../desktopcopy-dism-to-another-computer.md).
+-   To prepare a device platform to use compressed partitions with CompactOS, you'll need a PC with the Windows 10 version of DISM. If your technician PC is running a previous version of Windows, you can get this by installing the Windows Assessment and Deployment Kit (ADK) for Windows 10, or by copying and installing the DISM driver. This process is the same as the one used to install DISM on Windows PE. To learn more, see [Install Windows 10 using a previous version of Windows PE: To add DISM into your Windows PE image](../desktop/copy-dism-to-another-computer.md).
 
-When updating an existing package, be sure to increment the version number. For more information, see [Update requirements](p_phUpdate.update_requirements). When adding a package that does not already exist in the image, any version number can be used.
+When updating an existing package, be sure to increment the version number. For more information, see [Update requirements](../../service/mobile/update-requirements.md). When adding a package that does not already exist in the image, any version number can be used.
 
 Specify the packages to be added in an input XML file similar to the one shown here.
 
@@ -77,7 +77,7 @@ The following table describes the command-line parameters for ImageApp.exe.
 ## Troubleshooting
 
 
-**"STATUS\_FILE\_IS\_A\_DIRECTORY"**: This error message appears when building an image with CompactOS from a PC that doesn't have the Windows 10 version of DISM. You can get this by installing the Windows ADK for Windows 10, or by just installing the DISM driver from another PC with the Windows ADK for Windows 10 installed. To learn more, see [Install Windows 10 using a previous version of Windows PE](../desktopcopy-dism-to-another-computer.md).
+**"STATUS\_FILE\_IS\_A\_DIRECTORY"**: This error message appears when building an image with CompactOS from a PC that doesn't have the Windows 10 version of DISM. You can get this by installing the Windows ADK for Windows 10, or by just installing the DISM driver from another PC with the Windows ADK for Windows 10 installed. To learn more, see [Install Windows 10 using a previous version of Windows PE](../desktop/copy-dism-to-another-computer.md).
 
 ## Related topics
 

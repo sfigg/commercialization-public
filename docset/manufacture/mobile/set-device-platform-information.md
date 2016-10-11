@@ -160,7 +160,7 @@ Note the following details concerning this example:
 
 -   Be sure to replace the "*OEMName*" and "*DeviceName*" entries with appropriate values.
 
--   The `$(runtime.windows)` string in the path for the **DestinationDir** attribute is a globally defined macro. The **DestinationDir** path must start with a globally defined macro for a directory. For more information about the **DestinationDir** attribute, see [Specifying files and registry entries in a package project file](p_phPackaging.specifying_files_and_registry_entries_in_a_package_project_file). For more information about macros, see [Primary elements and attributes of a package project file](p_phPackaging.primary_elements_and_attributes_of_a_package_project_file).
+-   The `$(runtime.windows)` string in the path for the **DestinationDir** attribute is a globally defined macro. The **DestinationDir** path must start with a globally defined macro for a directory. For more information about the **DestinationDir** attribute, see [Specifying files and registry entries in a package project file](https://msdn.microsoft.com/windows/hardware/dn789219). For more information about macros, see [Primary elements and attributes of a package project file](https://msdn.microsoft.com/library/windows/hardware/dn756796).
 
 **Including the device platform package in the image**
 
@@ -169,7 +169,7 @@ After the device platform package is created, it must be specified using the OEM
 ## <a href="" id="validating"></a>Validating the device platform information before flashing an image to a device
 
 
-To help ensure that an image about to be flashed to a device was actually designed for that device, the flashing tool set created by OEMs should check the *Manufacturer*, *Family*, and *Product Name* SMBIOS system information structure values on the device and compare these values against the *Manufacturer*.*Family*.*Product Name* portion of the **DevicePlatformID** string in the device platform package. The flashing tool should proceed with the flashing process only if these values match. The flashing tool can optionally verify that the *Version* value also matches, but this is not required. For more information, see [Developing custom OEM flashing tools](p_phManuRetail.developing_custom_oem_flashing_tools).
+To help ensure that an image about to be flashed to a device was actually designed for that device, the flashing tool set created by OEMs should check the *Manufacturer*, *Family*, and *Product Name* SMBIOS system information structure values on the device and compare these values against the *Manufacturer*.*Family*.*Product Name* portion of the **DevicePlatformID** string in the device platform package. The flashing tool should proceed with the flashing process only if these values match. The flashing tool can optionally verify that the *Version* value also matches, but this is not required. For more information, see [Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md).
 
 By default, the device-side UEFI flashing application provided by Microsoft validates that the device platform information in SMBIOS matches the device platform information in the image. For more information, see [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).
 
@@ -184,7 +184,7 @@ When it is necessary to migrate a phone to a new set of device platform values, 
 ## Related topics
 
 
-[Developing custom OEM flashing tools](p_phManuRetail.developing_custom_oem_flashing_tools)
+[Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md)
 
 [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md)
 

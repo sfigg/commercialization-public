@@ -17,7 +17,7 @@ Microsoft provides a tool set for flashing images to devices. This tool set incl
 
 -   The device-side UEFI flashing application from Microsoft is automatically included in all images. This application must be included in all retail devices.
 
--   For flashing images to devices during manufacturing, OEMs can build their own flashing tools by using the information provided in [Developing custom OEM flashing tools](p_phManuRetail.developing_custom_oem_flashing_tools) or by using ffutool.exe. If you use ffutool to flash your image, it might be slower than other flashing tools.
+-   For flashing images to devices during manufacturing, OEMs can build their own flashing tools by using the information provided in [Developing custom OEM flashing tools](developing-custom-oem-flashing-tools.md) or by using ffutool.exe. If you use ffutool to flash your image, it might be slower than other flashing tools.
 
  
 

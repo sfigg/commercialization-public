@@ -658,14 +658,14 @@ Use the following settings to specify the transport that is used for debugging. 
 <td><p>KDNETUSB_ON</p></td>
 <td><p>Includes all kernel debugger transports and enables KDNET over USB.</p>
 <p>The default debug transport settings for this feature are an IP address of &quot;1.2.3.4&quot;, a port address of &quot;50000&quot;, and a debugger key of &quot;4.3.2.1&quot;. To use the default IP address of 1.2.3.4, run VirtEth.exe with the <em>/autodebug</em> flag. To establish a kernel debugger connection to the phone, use the following command.</p>
-<p>Windbg –k net:port=50000,key=4.3.2.1</p></td>
+<p>Windbg -k net:port=50000,key=4.3.2.1</p></td>
 </tr>
 <tr class="odd">
 <td><p>KDUSB_ON</p></td>
 <td><p>Includes all kernel debugger transports and enables KDUSB.</p>
 <p></p>
 <p>The default debug transport target name for this feature is WOATARGET. To establish a kernel debugger connection to the phone, use the following command.</p>
-<p>Windbg –k usb:targetname=WOATARGET</p>
+<p>Windbg -k usb:targetname=WOATARGET</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>Do not include either KDUSB_ON or KDNETUSB_ON if you need to enable MTP or IP over USB in the image. If the kernel debugger is enabled in the image and the debug transports are used to connect to the device, the kernel debugger has exclusive use of the USB port and prevents MTP and IP over USB from working.</p>
@@ -775,7 +775,7 @@ Use the following settings to specify the transport that is used for debugging. 
 </tr>
 <tr class="even">
 <td><p>MSVCRT_DEBUG</p></td>
-<td><p>This feature adds support for explicit linking of debug c-runtime libs by including msvcp120d.dll and msvcr120d.dll in the image. For more information, see this topic on MSDN: [CRT Library Features](http://msdn.microsoft.com/library/abx4dbyh.aspx).</p></td>
+<td><p>This feature adds support for explicit linking of debug c-runtime libs by including msvcp120d.dll and msvcr120d.dll in the image. For more information, see this topic on MSDN: <a href="http://msdn.microsoft.com/library/abx4dbyh.aspx">CRT Library Features</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MWDBGSRV</p></td>
@@ -867,7 +867,7 @@ The following are some features that can be used for development and testing sup
 </tr>
 <tr class="even">
 <td><p>PSEUDOLOCALES</p></td>
-<td><p>This feature enables the use of pseudo-locales for localization testing. For more information, see [Using Psuedo-Locales for Localization Testing](http://msdn.microsoft.com/library/windows/desktop/dd374118.aspx) on MSDN.</p></td>
+<td><p>This feature enables the use of pseudo-locales for localization testing. For more information, see <a href="http://msdn.microsoft.com/library/windows/desktop/dd374118.aspx">Using Psuedo-Locales for Localization Testing</a> on MSDN.</p></td>
 </tr>
 <tr class="odd">
 <td><p>GRAPHICSSOFTWAREDRIVERS</p></td>
