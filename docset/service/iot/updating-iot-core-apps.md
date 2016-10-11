@@ -64,7 +64,7 @@ Try out your updates on your devices before submitting them to the Windows Store
 
 1.  Copy the .cab file to the device. You can do this using an FTP tool such as [WinSCP](http://winscp.net), or by copying the file directly to the device's drive (such as a micro SD card).
 
-2.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/Docs/SSH).)
+2.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/docs/ssh).)
 
 3.  From the device command line, stage the update. You can repeat this step to stage multiple updates.
     ``` syntax
