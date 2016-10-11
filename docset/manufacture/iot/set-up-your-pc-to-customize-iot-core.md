@@ -28,7 +28,7 @@ Here's how we'll refer to them:
 ## <span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>Storage
 
 
--   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://developer.microsoft.com/windows/iot/docs/HardwareCompatList#Storage) options.)
+-   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://developer.microsoft.com/windows/iot/docs/hardwarecompatlist#Storage) options.)
 
     If your technician PC doesn't include a Micro SD slot, you may also need an adapter.
 

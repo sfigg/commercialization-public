@@ -159,7 +159,7 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 ## <span id="related_topics"></span>Related topics
 
-[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/IoTCore.htm)
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore.htm)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
 
