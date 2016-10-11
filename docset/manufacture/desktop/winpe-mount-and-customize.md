@@ -205,6 +205,7 @@ In some cases, you may not be able to recover the mounted image. DISM protects y
 
 ## <span id="related_topics"></span>Related topics
 
+[WinPE: Optimize and shrink the image](desktop/winpe-optimize.md)
 
 [WinPE for Windows 10](winpe-intro.md)
 

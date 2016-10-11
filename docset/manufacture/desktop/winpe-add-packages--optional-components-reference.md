@@ -341,6 +341,7 @@ The default Windows RE image contains the following built-in optional component
 
 ## <span id="related_topics"></span>Related topics
 
+[WinPE: Optimize and shrink the image](desktop/winpe-optimize.md)
 
 [WinPE for Windows 10](winpe-intro.md)
 
