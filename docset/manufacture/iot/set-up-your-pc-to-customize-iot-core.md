@@ -28,7 +28,7 @@ Here's how we'll refer to them:
 ## <span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>Storage
 
 
--   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://developer.microsoft.com/windows/iot/docs/HardwareCompatList#Storage) options.)
+-   A **Micro SD card**. (Note, we just use this for our guide. You can build devices with other drives. Learn more about existing [supported storage](https://developer.microsoft.com/windows/iot/docs/hardwarecompatlist#Storage) options.)
 
     If your technician PC doesn't include a Micro SD slot, you may also need an adapter.
 
@@ -57,9 +57,9 @@ Other helpful software:
 ## <span id="Other_software"></span><span id="other_software"></span><span id="OTHER_SOFTWARE"></span>Other software
 
 
--   **An app built for IoT Core**. Our samples use the [Hello, World!](http://go.microsoft.com/fwlink/?LinkID=532945) app, though you can use your own.
+-   **An app built for IoT Core**. Our samples use the [Hello, World!](https://developer.microsoft.com/windows/iot/samples/helloworld) app, though you can use your own.
 
--   **A driver built for IoT Core**. Our samples use the [Hello, Blinky](http://go.microsoft.com/fwlink/?LinkId=780794) driver, though you can use your own.
+-   **A driver built for IoT Core**. Our samples use the [Hello, Blinky](https://developer.microsoft.com/windows/iot/samples/helloblinky) driver, though you can use your own.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
