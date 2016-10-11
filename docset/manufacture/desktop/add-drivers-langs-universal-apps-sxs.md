@@ -5,7 +5,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1d: Add boot-critical drivers, languages, and universal Windows apps'
 ---
 
-# <span id="p_sxs_dmfg.part_2__classic-style_deployment"></span>Lab 1d: Add boot-critical drivers, languages, and universal Windows apps
+# <span id="part_2__classic-style_deployment"></span>Lab 1d: Add boot-critical drivers, languages, and universal Windows apps
 
 Some customizations have special requirements:
 *  Boot-critical drivers (such as storage drivers or video drivers) should be included in the system recovery image in case there's a problem.

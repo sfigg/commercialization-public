@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 2: Classic-style imaging and deployment'
 ---
 
-# <span id="p_sxs_dmfg.part_2__classic-style_deployment"></span>Lab 2: Classic-style imaging and deployment
+# <span id="part_2__classic-style_deployment"></span>Lab 2: Classic-style imaging and deployment
 
 Lab 2, Classic-style deployment, uses command line tools in the Windows ADK to customize and deploy a Windows image.
 
