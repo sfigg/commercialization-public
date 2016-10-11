@@ -100,7 +100,7 @@ This walkthrough assumes that you have already created a test app named *TestApp
     info: Packages are generated to . successfully
     ```
 
-For more information about working with packages, see [Creating packages](p_phPackaging.creating_packages).
+For more information about working with packages, see [Creating packages](creating-mobile-packages.md).
 
 ### Create the feature manifest file
 
@@ -172,7 +172,7 @@ Complete the following steps to generate, sign, and flash the image.
     C:\>ImgGen Flash.ffu OEMInput.xml "%WPDKCONTENTROOT%\10\MSPackages"
     ```
 
-2.  Before you can sign images, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](p_phCodeSigning.set_up_the_signing_environment).
+2.  Before you can sign images, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn789236).
 
 3.  Sign the generated catalog using the /pk option.
 
@@ -230,7 +230,7 @@ Verify that the TestApplication executes as expected by completing the following
 ## Related topics
 
 
-[Creating packages](p_phPackaging.creating_packages)
+[Creating packages](creating-mobile-packages.md)
 
 [Building and flashing images](building-and-flashing-images.md)
 

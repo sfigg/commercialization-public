@@ -138,7 +138,7 @@ The following example demonstrates an OEMDevicePlatform.xml file.
 
 ### Creating the package
 
-To create a package that includes the OEMDevicePlatform.xml file, follow the guidance in [Creating packages](p_phPackaging.creating_packages). The following example demonstrates a device platform XML file that specifies a single device platform ID.
+To create a package that includes the OEMDevicePlatform.xml file, follow the guidance in [Creating packages](creating-mobile-packages.md). The following example demonstrates a device platform XML file that specifies a single device platform ID.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>

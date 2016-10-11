@@ -257,7 +257,7 @@ Generate a package that contains this driver by completing the following steps.
     info: Packages are generated to . successfully
     ```
 
-For more information about working with packages, see [Creating packages](p_phPackaging.creating_packages).
+For more information about working with packages, see [Creating packages](creating-mobile-packages.md).
 
 ### <a href="" id="create-a-feature"></a>Create a feature manifest file that references the package
 
@@ -331,7 +331,7 @@ Complete the following steps to generate, sign, and flash the image.
     C:\>ImgGen Flash.ffu OEMInput.xml "%WPDKCONTENTROOT%\10\MSPackages"
     ```
 
-2.  Before you can sign images, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](p_phCodeSigning.set_up_the_signing_environment).
+2.  Before you can sign images, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn789236).
 
 3.  Sign the generated catalog using the Sign.cmd with the **/pk** option.
 
@@ -440,7 +440,7 @@ To view the driver load process, complete the following steps to set a debug sta
     2.  Generate, sign, and flash the image.
 
     **Note**  
-    It is also possible to update the version of the driver by including the driver version in the INF file and then using the IUTool to deploy the updated driver to the phone. For more information about using IUTool, see [IUTool.exe: Update packages on a phone](update-packages-on-a-phone-and-get-package-update-logs.md). This process is similar to the process that is used to create a driver update. For more information about that, see [Update a KMDF device driver](p_phUpdate.update_a_kmdf_device_driver).
+    It is also possible to update the version of the driver by including the driver version in the INF file and then using the IUTool to deploy the updated driver to the phone. For more information about using IUTool, see [IUTool.exe: Update packages on a phone](update-packages-on-a-phone-and-get-package-update-logs.md). This process is similar to the process that is used to create a driver update. For more information about that, see [Update a KMDF device driver](../../service/mobile/update-a-kmdf-device-driver.md).
 
      
 
@@ -471,7 +471,7 @@ To view the driver load process, complete the following steps to set a debug sta
 
     ``` syntax
     0: kd> k
-# Child-SP RetAddr  Call Site
+    # Child-SP RetAddr  Call Site
     00 85679c68 90fd2abe KMDFDriver1!DriverEntry+0xa
     01 85679ce0 90fd2b38 KMDFDriver1!FxDriverEntryWorker+0x6a
     02 85679d00 81770990 KMDFDriver1!FxDriverEntry+0x18

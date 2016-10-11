@@ -54,7 +54,7 @@ The following table describes the command-line parameters for IUTool.exe.
 
 ### Package versioning
 
-If the specified package already exists on the device, the new version of the package must have a higher version than the package currently on the device or the update will fail. To specify the version for a package, use the **/version** command-line parameter for PkgGen.exe when generating the package. For more information, see [Command-line arguments for package generator](p_phPackaging.command_line_arguments_for_package_generator).
+If the specified package already exists on the device, the new version of the package must have a higher version than the package currently on the device or the update will fail. To specify the version for a package, use the **/version** command-line parameter for PkgGen.exe when generating the package. For more information, see [Command-line arguments for package generator](https://msdn.microsoft.com/library/windows/hardware/dn756636).
 
 ## Using GetDULogs.exe to get package update logs from a device
 

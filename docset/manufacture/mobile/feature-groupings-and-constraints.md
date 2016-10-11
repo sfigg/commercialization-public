@@ -190,7 +190,7 @@ To create a feature constraint to make sure this test feature is only shipped wi
 
 **SOC implicit feature IDs**
 
-SOC features are pre-appended with SOC\_. For example if *DCD6000* is specified in the feature manifest XML, the implicit feature ID would be *SOC\_*DCD6000.
+SOC features are pre-appended with SOC\_. For example if *DCD6000* is specified in the feature manifest XML, the implicit feature ID would be *SOC\_DCD6000*.
 
 **SV implicit feature IDs**
 
@@ -198,7 +198,7 @@ SV features are pre-appended with SV\_. For example if *CONTOSO* is specified in
 
 **DEVICE implicit feature IDs**
 
-Device features are pre-appended with Device\_. For example if *BETA* is specified in the feature manifest XML, the implicit feature ID would be *DEVICE\_*BETA.
+Device features are pre-appended with Device\_. For example if *BETA* is specified in the feature manifest XML, the implicit feature ID would be *DEVICE\_BETA*.
 
 For more information about working with the SOC, SV and DEVICE attributes, see [Feature manifest file contents](feature-manifest-file-contents.md).
 

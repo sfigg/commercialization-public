@@ -30,7 +30,7 @@ Here's the high-level view of the steps you'll take to build an image using ImgG
 
 4.  Create an *OEMInput file* that specifies the device platform, the feature manifest files, and other attributes used to define the image. For more info, see [Creating an OEMInput file to define the image](#adding).
 
-5.  Create an MCSF customization answer file. At minimum, specify the required device platform information and the information required for the mobile operator network. For more info, see [Customization answer file](p_phCustomization.customization_answer_file) and [Phone metadata in DeviceTargetingInfo](p_phCustomization.phone_metadata_in_devicetargetinginfo).
+5.  Create an MCSF customization answer file. At minimum, specify the required device platform information and the information required for the mobile operator network. For more info, see [Customization answer file](https://msdn.microsoft.com/library/windows/hardware/dn757452) and [Phone metadata in DeviceTargetingInfo](https://msdn.microsoft.com/library/windows/hardware/dn772214).
 
     **Note**  If you want to support multivariant settings in the answer file, the same set of conditions are supported in MCSF as in Windows provisioning. See the section *Target, TargetState, Condition and priorities* in [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) for a list of supported conditions but be sure to follow the schema for a MCSF customization answer file when you specify your **Targets** in the answer file.
 
@@ -56,11 +56,11 @@ Before building an image, you must first identify all the packages you need for 
 -   **SoC vendor packages**. These include packages for drivers and firmware components implemented by the SoC vendor. For more info about these packages, refer to documentation provided by the SoC vendor.
 
     **Note**  
-    Several UEFI packages are required from the SoC vendor to create bootable images. These packages vary depending on the layout of the device and the SoC vendor. Most of the packages populate binary partitions on the device. For more info about creating binary partition packages to populate these partitions, see [Specifying components in a package project file](p_phPackaging.specifying_components_in_a_package_project_file). The EFI system partition (ESP) is populated using Microsoft content and OEM content.
+    Several UEFI packages are required from the SoC vendor to create bootable images. These packages vary depending on the layout of the device and the SoC vendor. Most of the packages populate binary partitions on the device. For more info about creating binary partition packages to populate these partitions, see [Specifying components in a package project file](https://msdn.microsoft.com/library/windows/hardware/dn789218). The EFI system partition (ESP) is populated using Microsoft content and OEM content.
 
      
 
--   **OEM packages**. These are packages created by OEMs for content such as drivers and applications. For info about creating packages, see [Creating packages](p_phPackaging.creating_packages).
+-   **OEM packages**. These are packages created by OEMs for content such as drivers and applications. For info about creating packages, see [Creating packages](creating-mobile-packages.md).
 
 ## <a href="" id="adding"></a>Creating an OEMInput file to define the image
 
@@ -107,7 +107,7 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 <tbody>
 <tr class="odd">
 <td><p>Retail</p></td>
-<td><p>Retail images are the images that are flashed to final retail phones. Retail images must use Microsoft-signed packages that are returned to OEMs after submitting production images to Microsoft by using the OEM submission tool. For more info, see [Submit binaries to be retail signed](p_phCodeSigning.submit_binaries_to_be_retail_signed).</p>
+<td><p>Retail images are the images that are flashed to final retail phones. Retail images must use Microsoft-signed packages that are returned to OEMs after submitting production images to Microsoft by using the OEM submission tool. For more info, see [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223).</p>
 <p>Retail images include the following:</p>
 <ul>
 <li><p>Production version of core Windows components included in Windows 10 Mobile</p></li>
@@ -117,7 +117,7 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 </tr>
 <tr class="even">
 <td><p>Production</p></td>
-<td><p>Production images are similar to final retail images, but they have test signing enabled to run OEM-signed components as well as production-signed components, and they may contain test-related packages as well as production packages. Production images can be used for engineering work as well as mobile operator trials and other certification processes. Production images are submitted to Microsoft by using the OEM submission tool to be production signed by Microsoft before generating the final retail image. For more info, see [Submit binaries to be retail signed](p_phCodeSigning.submit_binaries_to_be_retail_signed).</p>
+<td><p>Production images are similar to final retail images, but they have test signing enabled to run OEM-signed components as well as production-signed components, and they may contain test-related packages as well as production packages. Production images can be used for engineering work as well as mobile operator trials and other certification processes. Production images are submitted to Microsoft by using the OEM submission tool to be production signed by Microsoft before generating the final retail image. For more info, see [Submit binaries to be retail signed](https://msdn.microsoft.com/library/windows/hardware/dn789223).</p>
 <p>Production images include the following:</p>
 <ul>
 <li><p>Production version of core Windows components included in Windows 10 Mobile.</p></li>
@@ -151,12 +151,12 @@ The following table lists the types of images OEMs can build and the OEMInput sa
 </tr>
 <tr class="odd">
 <td><p>Manufacturing</p></td>
-<td><p>Manufacturing images to be used in the manufacturing environment. For more info, see [MMOS image definition](p_phManuRetail.mmos_image_definition).</p></td>
+<td><p>Manufacturing images to be used in the manufacturing environment. For more info, see [MMOS image definition](mmos-image-definition.md).</p></td>
 <td><p>MfgOEMInput.xml</p></td>
 </tr>
 <tr class="even">
 <td><p>Customer care</p></td>
-<td><p>Customer care images include MMOS for retail customer care scenarios. For more info, see [MMOS image definition](p_phManuRetail.mmos_image_definition).</p></td>
+<td><p>Customer care images include MMOS for retail customer care scenarios. For more info, see [MMOS image definition](mmos-image-definition.md).</p></td>
 <td><p>CustomerCareOEMInput.xml</p></td>
 </tr>
 </tbody>
@@ -321,7 +321,7 @@ The following table describes the command line parameters for ImgGen.cmd.
 </tr>
 <tr class="even">
 <td><p><em>OEMCustomizationXML</em></p></td>
-<td><p>The path to the OEM customization XML file. For more info about customization answer files, see [Customization answer file](p_phCustomization.customization_answer_file).</p></td>
+<td><p>The path to the OEM customization XML file. For more info about customization answer files, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn75745">Customization answer file</a>
 </tr>
 <tr class="odd">
 <td><p><em>OEMCustomizationVer</em></p></td>

@@ -217,7 +217,7 @@ Refer to the Mobile Operator guides for any additional retail features that are 
 </tr>
 <tr class="odd">
 <td><p>SPATIALSOUND_FILTERDATA</p></td>
-<td><p>This feature installs [Spatial sound](https://dev.windows.com/holographic/spatial_sound).</p></td>
+<td><p>This feature installs <a href="https://dev.windows.com/holographic/spatial_sound">Spatial sound</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +349,7 @@ The following table describes the Microsoft-defined test features that can be us
 </tr>
 <tr class="even">
 <td><p>MMOSLOADER_TEST</p></td>
-<td><p>This feature includes the BCD boot sequence configuration to support booting into MMOS in a test image. This feature also includes a pre-boot crash dump application and a pre-boot crash dump entry. For more information about MMOS, see [MMOS image definition](p_phManuRetail.mmos_image_definition).</p>
+<td><p>This feature includes the BCD boot sequence configuration to support booting into MMOS in a test image. This feature also includes a pre-boot crash dump application and a pre-boot crash dump entry. For more information about MMOS, see <a href="mmos-image-definition.md">MMOS image definition</a>.</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>The following features are mutually exclusive; only one of them can be referenced in an OEMInput file: BOOTSEQUENCE_TEST, MMOSLOADER_TEST.</p>
@@ -380,7 +380,7 @@ The following table describes the Microsoft-defined test features that can be us
 </tr>
 <tr class="odd">
 <td><p>DISABLE_FFU_PLAT_ID_CHECK</p></td>
-<td><p>Disables the device platform validation in the Microsoft flashing application. For more information about the platform check in flashing, see [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).</p>
+<td><p>Disables the device platform validation in the Microsoft flashing application. For more information about the platform check in flashing, see <a href="use-the-flashing-tools-provided-by-microsoft.md">Use the flashing tools provided by Microsoft</a>.</p>
 <div class="alert">
 <strong>Important</strong>  
 <p>The device platform validation for flashing must not be disabled in retail images.</p>
@@ -515,7 +515,7 @@ This table provides a summary of build options and indicates if the option is ex
 </tr>
 <tr class="even">
 <td><p>LABIMAGE</p></td>
-<td><p>This feature causes the device to enter the FFU download mode automatically when the device is booted. For more information, see [Use the flashing tools provided by Microsoft](use-the-flashing-tools-provided-by-microsoft.md).</p></td>
+<td><p>This feature causes the device to enter the FFU download mode automatically when the device is booted. For more information, see <a href="use-the-flashing-tools-provided-by-microsoft.md">Use the flashing tools provided by Microsoft</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>BOOTKEYACTIONS_RETAIL</p></td>
@@ -532,7 +532,7 @@ This table provides a summary of build options and indicates if the option is ex
 
 ### Security related features
 
-There are two code signing modes on a Windows 10 Mobile device, retail and test. With retail, all code must be production signed to be able to run on the device. For test signing, all code must be signed with test certificates. For more information about code signing, see [Code signing](p_phCodeSigning.code_signing).
+There are two code signing modes on a Windows 10 Mobile device, retail and test. With retail, all code must be production signed to be able to run on the device. For test signing, all code must be signed with test certificates. For more information about code signing, see [Code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634).
 
 The two code signing modes are automatically managed in the build system. The previous DISABLETESTSIGNING and ENABLETESTSIGNING feature settings are no longer used. Instead test code signing is automatically enabled in the following build types:
 

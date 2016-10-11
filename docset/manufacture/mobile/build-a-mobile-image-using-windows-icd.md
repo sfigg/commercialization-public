@@ -53,7 +53,7 @@ To build a mobile image, you must also have a provisioning package or Windows pr
 
 -   You can use the Windows ICD UI to generate a provisioning package by configuring the settings and then exporting a provisioning package.
 
--   You can use the Windows ICD UI to quickly generate a Windows provisioning answer file. Whenever you start a new project using the UI, Windows ICD always creates a customizations.xml in your project folder. This is typically found in your Documents\\Windows Imaging and Configuration Designer (WICD)\\*Project\_Name* folder. If you want to create one from scratch, see [Windows provisioning answer file](p_customize_converged.windows_provisioning_answer_file) to understand the schema and then see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn953942) to learn about the settings available for you to configure.
+-   You can use the Windows ICD UI to quickly generate a Windows provisioning answer file. Whenever you start a new project using the UI, Windows ICD always creates a customizations.xml in your project folder. This is typically found in your Documents\\Windows Imaging and Configuration Designer (WICD)\\*Project\_Name* folder. If you want to create one from scratch, see [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) to understand the schema and then see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn953942) to learn about the settings available for you to configure.
 
     **Note**  We recommend using the Windows ICD UI to easily generate either the provisioning package or the Windows provisioning answer file.
 
@@ -65,7 +65,7 @@ Follow these instructions to build a single variant mobile image:
 
 1.  See [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112) and follow the instructions on launching the Windows ICD CLI.
 
-2.  [Build an image for Windows 10 Mobile](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image) using the Windows ICD CLI.
+2.  [Build an image for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/dn916115#to_build_a_mobile_image) using the Windows ICD CLI.
 
 Windows supports a mechanism that allows you to create a single image that can work for multiple markets. You can dynamically configure languages, branding, apps, and settings based on conditions. Building a mobile image that contains multivariant settings is only possible through the Windows ICD CLI.
 
@@ -79,7 +79,7 @@ Follow these instructions to build multivariant mobile image:
 
     You will use this package as one of the inputs for the next step.
 
-2.  [Build an image for Windows 10 Mobile](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image) using the Windows ICD CLI.
+2.  [Build an image for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/dn916115#to_build_a_mobile_image) using the Windows ICD CLI.
 
 ## Related topics
 

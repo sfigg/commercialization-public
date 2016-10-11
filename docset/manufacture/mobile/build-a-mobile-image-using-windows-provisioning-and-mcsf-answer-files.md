@@ -12,9 +12,9 @@ ms.assetid: 3A6BEF64-BCE1-4BF9-8A2F-14A79F956F7B
 
 You can take advantage of the benefits offered by both the Windows provisioning framework and MCSF by using a hybrid method to build your customized mobile image. This means that:
 
--   You can use a MCSF [customization answer file](p_phCustomization.customization_answer_file) to fully customize the device hardware and connectivity settings, preload apps, add assets such as ringtones and localized strings, and configure any other [MCSF settings not supported in Windows provisioning](https://msdn.microsoft.com/library/windows/hardware/mt573153).
+-   You can use a MCSF [customization answer file](https://msdn.microsoft.com/library/windows/hardware/dn757452) to fully customize the device hardware and connectivity settings, preload apps, add assets such as ringtones and localized strings, and configure any other [MCSF settings not supported in Windows provisioning](https://msdn.microsoft.com/library/windows/hardware/mt573153).
 
--   You can use a [Windows provisioning answer file](p_customize_converged.windows_provisioning_answer_file) to define the new runtime settings, enterprise policies, enrollment settings, and configure any other [mobile settings supported only in Windows Provisioning](https://msdn.microsoft.com/library/windows/hardware/mt560342).
+-   You can use a [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) to define the new runtime settings, enterprise policies, enrollment settings, and configure any other [mobile settings supported only in Windows Provisioning](https://msdn.microsoft.com/library/windows/hardware/mt560342).
 
 -   You can use the Windows Imaging and Configuration Designer (ICD) CLI to build your image.
 
@@ -35,15 +35,15 @@ Here's the high-level steps you need to take to build a customized mobile image 
 
 2.  Create your answer files to define the settings that you want to configure for your image.
 
-    -   Create a MCSF [customization answer file](p_phCustomization.customization_answer_file) to customize any of the available customizations in the MCSF framework. For more information, see the *Customizations for &lt;feature&gt;* sections in [Customize using the mobile MCSF framework](p_phCustomization.Provisioning_and_customization).
+    -   Create a MCSF [customization answer file](https://msdn.microsoft.com/library/windows/hardware/dn757452) to customize any of the available customizations in the MCSF framework. For more information, see the *Customizations for &lt;feature&gt;* sections in [Customize using the mobile MCSF framework](https://msdn.microsoft.com/library/windows/hardware/dn757433).
 
-    -   Create a [Windows provisioning answer file](p_customize_converged.windows_provisioning_answer_file) to define any of the available settings in the Windows provisioning framework. For more information, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn953942).
+    -   Create a [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) to define any of the available settings in the Windows provisioning framework. For more information, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn953942).
 
     If you are adding multivariant settings in both answer files, verify whether the multivariant rules in both answer files are consistent. See the section *Target, TargetState, Condition and priorities* in [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108) for a list of supported conditions but be sure to follow the schema for the answer file you are creating when you specify your **Targets** within the answer file.
 
     Also, make sure there are no duplicated settings in both answer files. You can use the [MCSF to Windows Provisioning settings map](https://msdn.microsoft.com/library/windows/hardware/mt450421) to help you identify the settings that correspond to each framework.
 
-3.  Run the Windows ICD CLI to build the image. For more information, see [Build an image for Windows 10 Mobile](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image).
+3.  Run the Windows ICD CLI to build the image. For more information, see [Build an image for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/dn916115#to_build_a_mobile_image).
 
 4.  Sign the image so that it can be flashed to a device. For more information, see [Sign a full flash update (FFU) image](sign-a-full-flash-update--ffu--image.md).
 

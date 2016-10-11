@@ -28,7 +28,7 @@ After you use the secure boot test tool to provision the appropriate test certif
 
 Before images can be shipped on a retail device, they must be signed by Microsoft. Use the process described in this section to create a retail signed image FFU file that can be flashed to retail devices.
 
-1.  Before you can sign binaries, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](p_phCodeSigning.set_up_the_signing_environment).
+1.  Before you can sign binaries, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn789236).
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 
@@ -103,7 +103,7 @@ Secure all of the retail signed binaries using industry best practices.
 
 If your development environment includes work outside of Windows ICD, you can manually sign images using sign.cmd. After the test certificate has been provisioned on the device using the secure boot test tool, you can you can use the /pk option of the sign.cmd tool to sign images, by completing the following steps.
 
-1.  Before you can sign binaries, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](p_phCodeSigning.set_up_the_signing_environment).
+1.  Before you can sign binaries, you must first install the test OEM certificates on the PC by following the steps in [Set up the signing environment](https://msdn.microsoft.com/library/windows/hardware/dn789236).
 
 2.  Add the directory for the sign.cmd script that is located in %WPDKCONTENTROOT%\\tools\\bin\\i386 to your path using the path command.
 

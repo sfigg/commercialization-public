@@ -15,7 +15,7 @@ Here's information to help you build and flash images to your Windows 10 Mobile
 ## <a href="" id="1---define--customize--and-build-an-image"></a>1. Define, customize, and build an image
 
 
-To build a customized image that can be flashed to mobile devices, you can use either the new Windows Imaging and Configuration Designer (ICD) or classic ImgGen.cmd, or a hybrid of these methods using the Windows ICD command-line interface. See [Customizations for Windows 10 Mobile](wdknodes.customizations_for_windows_10_mobile) to help you decide which method you need to use to meet your device customization needs.
+To build a customized image that can be flashed to mobile devices, you can use either the new Windows Imaging and Configuration Designer (ICD) or classic ImgGen.cmd, or a hybrid of these methods using the Windows ICD command-line interface. See [Customizations for Windows 10 Mobile](https://msdn.microsoft.com/library/windows/hardware/mt481438) to help you decide which method you need to use to meet your device customization needs.
 
 -   **Using Windows ICD**: This tool walks you through the process of creating images for Windows 10 Mobile using the Windows provisioning framework. Use this tool if you are building a device that is based on a reference design from a SoC vendor. To learn more about the tool, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113). To start building a mobile image, see [Build a mobile image using Windows ICD](build-a-mobile-image-using-windows-icd.md).
 

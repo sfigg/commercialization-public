@@ -66,7 +66,7 @@ The following table describes the required elements in the OEMInput file.
 <td><ul>
 <li><p><strong>QC8x26</strong>: Creates an image without any crash dump partitions. Use this value for production images.</p></li>
 <li><p><strong>QC8x26_Test</strong>: Creates an image with two dedicated crash dump partitions on eMMC. The combined size of the two partitions is 3.5 times the size of the total RAM memory on the phone. To create a test image that supports full dumps and offline dumps on a device with at least 8GB of eMMC, use this value and include the DEDICATEDUMPONEMMC feature.</p></li>
-<li><p><strong>QC8x26_UseSD_Test</strong>: Creates an image without dedicated partitions for storing crash dumps on devices with less than 8 GB of eMMC. To create full, kernel, or offline crash dumps, an SD card must be present and the feature DEDICATEDUMPONSD feature must be specified to redirect dumps to the SD card. The recommended SD card size for offline dumps is 16 or 32 GB. For more information about specifying debug features, see [Optional features for building images](optional-features-for-building-images.md).</p></li>
+<li><p><strong>QC8x26_UseSD_Test</strong>: Creates an image without dedicated partitions for storing crash dumps on devices with less than 8 GB of eMMC. To create full, kernel, or offline crash dumps, an SD card must be present and the feature DEDICATEDUMPONSD feature must be specified to redirect dumps to the SD card. The recommended SD card size for offline dumps is 16 or 32 GB. For more information about specifying debug features, see <a href="optional-features-for-building-images.md">Optional features for building images</a>.</p></li>
 </ul>
 <p>To build a QC8x26 test image that supports full dumps and offline dumps on a device with less than 8GB of eMMC, use QC8x26_UseSD_Test. Include the DEDICATEDUMPONSD feature to redirect dumps to the SD card. The recommended SD card size for offline dumps is 16 or 32 GB.</p>
 <p>To build a QC8x26 test image that supports full dumps and offline dumps on a device with at least 8GB of eMMC, use <strong>QC8x26_Test</strong> and include the DEDICATEDUMPONEMMC feature.</p>
@@ -81,7 +81,7 @@ The following table describes the required elements in the OEMInput file.
 </ul>
 <div class="alert">
 <strong>Important</strong>  
-<p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see [Update](p_phUpdate.update).</p>
+<p>The 8960 SOC options must only be used for images that are used to create updates for Windows 10 Mobile. For more information see <a href="../../service/mobile">Update</a>.</p>
 </div>
 <div>
  
@@ -100,7 +100,7 @@ The following table describes the required elements in the OEMInput file.
 <td><p>A string that indicates the release type of the image. Use this setting to include packages marked with the corresponding <strong>ReleaseType</strong> attribute value of a <strong>ReleasePackages</strong> element in the feature manifest file. The following values are supported:</p>
 <ul>
 <li><p><strong>Production</strong>: This value indicates that all packages in the image are production signed, and the image only includes production packages (that is, packages where the <strong>ReleaseType</strong> attribute in the package XML is set to <strong>Production</strong>). In addition, all Microsoft-owned packages must be signed with a certificate issued by Microsoft. This value should only be used when generating the final retail image.</p></li>
-<li><p><strong>Test</strong>: This value indicates that the image can contain test-signed packages as well as production-signed packages, and the image contains a mixture of production and test packages (that is, packages where the <strong>ReleaseType</strong> attribute in the package XML is set to <strong>Test</strong> or <strong>Production</strong>). This value is used in production, test, health, and manufacturing images. For more information about the different image types, see [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md).</p></li>
+<li><p><strong>Test</strong>: This value indicates that the image can contain test-signed packages as well as production-signed packages, and the image contains a mixture of production and test packages (that is, packages where the <strong>ReleaseType</strong> attribute in the package XML is set to <strong>Test</strong> or <strong>Production</strong>). This value is used in production, test, health, and manufacturing images. For more information about the different image types, see <a href="building-a-phone-image-using-imggencmd.md">Building a phone image using ImgGen.cmd</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -158,7 +158,7 @@ The following table describes the optional elements that OEMs can include in the
 <tr class="even">
 <td><p><strong>Product</strong></p></td>
 <td><p>A string that specifies what OS variant to build. Specify the value <strong>Manufacturing OS</strong> to build an MMOS (Microsoft Manufacturing OS) image, which includes the minimal set of OS packages required by MMOS. To build a full OS image, omit this element.</p>
-<p>For more information about building an MMOS image, see [MMOS image definition](p_phManuRetail.mmos_image_definition).</p></td>
+<p>For more information about building an MMOS image, see <a href="mmos-image-definition.md">MMOS image definition</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>FormatDPP</strong></p></td>
@@ -171,24 +171,24 @@ The following table describes the optional elements that OEMs can include in the
 </tr>
 <tr class="odd">
 <td><p><strong>Features</strong></p></td>
-<td><p>Contains one or more child elements that specify the names of optional features to reference when building the image. Each feature corresponds to one or more packages that will be included in the image. In order to use a feature, the feature must be defined in a feature manifest that is listed under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md) and [Feature manifest file contents](feature-manifest-file-contents.md).</p>
+<td><p>Contains one or more child elements that specify the names of optional features to reference when building the image. Each feature corresponds to one or more packages that will be included in the image. In order to use a feature, the feature must be defined in a feature manifest that is listed under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see <a href="building-a-phone-image-using-imggencmd.md">Building a phone image using ImgGen.cmd</a> and <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p>
 <p>The <strong>Features</strong> element contains one or more of the following child elements:</p>
 <ul>
-<li><p><strong>Microsoft</strong> Contains one or more <strong>Feature</strong> elements that specify the names of optional Microsoft features to include in the image. For more info about Microsoft features, see [Optional features for building images](optional-features-for-building-images.md).</p></li>
-<li><p><strong>OEM</strong> Contains one or more <strong>Feature</strong> elements that specify the names of optional OEM features to include in the image. For more information about adding OEM features, see [Feature manifest file contents](feature-manifest-file-contents.md).</p></li>
+<li><p><strong>Microsoft</strong> Contains one or more <strong>Feature</strong> elements that specify the names of optional Microsoft features to include in the image. For more info about Microsoft features, see <a href="optional-features-for-building-images.md">Optional features for building images</a>.</p></li>
+<li><p><strong>OEM</strong> Contains one or more <strong>Feature</strong> elements that specify the names of optional OEM features to include in the image. For more information about adding OEM features, see <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><strong>AdditionalFMs</strong></p></td>
 <td><p>Contains one or more <strong>AdditionalFM</strong> elements. Each <strong>AdditionalFM</strong> element contains a string value that specifies the full path of a feature manifest file to reference when building the image.</p>
-<p>Feature manifests define the set of packages that are automatically included in certain types of images, and they also define feature names that can be referenced under the <strong>Features</strong> element to include additional packages in the image. For more information about feature manifest files, see [Feature manifest file contents](feature-manifest-file-contents.md).</p></td>
+<p>Feature manifests define the set of packages that are automatically included in certain types of images, and they also define feature names that can be referenced under the <strong>Features</strong> element to include additional packages in the image. For more information about feature manifest files, see <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PackageFiles</strong></p></td>
 <td><p>Contains a set of <strong>PackageFile</strong> elements that specify additional packages to include in the image.</p>
 <div class="alert">
 <strong>Important</strong>  
-<p>The <strong>PackageFiles</strong> element can only be used in pre-retail images such as Test and Health images. It is only intended to be used in scenarios you need to quickly add an ad-hoc package to a pre-retail image. In retail images, all packages must be referenced using a feature that is listed under the <strong>Features</strong> element or listed in a feature manifest that is referenced under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see [Building a phone image using ImgGen.cmd](building-a-phone-image-using-imggencmd.md) and [Feature manifest file contents](feature-manifest-file-contents.md).</p>
+<p>The <strong>PackageFiles</strong> element can only be used in pre-retail images such as Test and Health images. It is only intended to be used in scenarios you need to quickly add an ad-hoc package to a pre-retail image. In retail images, all packages must be referenced using a feature that is listed under the <strong>Features</strong> element or listed in a feature manifest that is referenced under the <strong>AdditionalFMs</strong> element. For more information about features and feature manifests, see <a href="building-a-phone-image-using-imggencmd.md">Building a phone image using ImgGen.cmd</a> and <a href="feature-manifest-file-contents.md">Feature manifest file contents</a>.</p>
 </div>
 <div>
  

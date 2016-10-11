@@ -252,7 +252,7 @@ Describes packages that can be excluded using the **ExcludePrereleaseFeatures** 
 <p>This element supports the following attributes:</p>
 <ul>
 <li><p><strong>Type</strong> – Required. Can be either <strong>protected</strong> or <strong>replacement</strong>.</p>
-<p>The <strong>protected</strong> packages are excluded when <code>ExcludePrereleaseFeatures</code> is set to <strong>Yes</strong> and the replacement packages will instead be included. For example a replacement feature can be created by the OEM to enable scenarios such as mobile operator testing, while not distributing builds with sensitive functionality. This approach is one of many, and is not required, but is one option to consider, to help manage feature disclosure. For more information see [OEMInput file contents](oeminput-file-contents.md).</p>
+<p>The <strong>protected</strong> packages are excluded when <code>ExcludePrereleaseFeatures</code> is set to <strong>Yes</strong> and the replacement packages will instead be included. For example a replacement feature can be created by the OEM to enable scenarios such as mobile operator testing, while not distributing builds with sensitive functionality. This approach is one of many, and is not required, but is one option to consider, to help manage feature disclosure. For more information see <a href="oeminput-file-contents.md">OEMInput file contents</a>.</p>
 <div class="alert">
 <strong>Important</strong>  
 <p>No replacement packages should be included in a retail image.</p>
