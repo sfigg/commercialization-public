@@ -304,7 +304,7 @@ The OEMCustomization.cmd utility allows customization at device boot time. Durin
 ## <span id="OEM_apps"></span><span id="oem_apps"></span><span id="OEM_APPS"></span>OEM apps
 
 
-To help get you started writing apps for IoT Core, we've uploaded some batch files to GitHub. You'll need to download those files from <https://github.com/ms-iot/samples/tree/develop/AppInstall>
+To help get you started writing apps for IoT Core, we've uploaded some batch files to GitHub. You'll need to download those files from <https://github.com/ms-iot/content/blob/develop/en-US/Samples/AppInstaller.md>
 
 1.  Copy these files to the C:\\OEM directory on your development compute.
     **Note**  Files from GitHub may not display in a friendly format for notepad and may need to be opened in a development environment like Visual Studio.
@@ -462,7 +462,7 @@ To create an enterprise provisioning package that you can deploy to a IoT Core d
 ## <span id="related_topics"></span>Related topics
 
 
-[Download Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/Downloads)
+[Download Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/downloads)
 
  
 

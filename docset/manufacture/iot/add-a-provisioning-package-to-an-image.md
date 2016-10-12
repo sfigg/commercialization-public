@@ -12,9 +12,15 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.
 
+<<<<<<< HEAD
 For this lab, we start a new product, ProductB, that includes the default app (Bertha), which shows network status.  
 
 ## <span id="Create_a_basic_image"></span>Create a basic image
+=======
+Note: To create a provisioning package that supports Windows 10 IoT Core Pro features, see [Windows 10 IoT Core Pro](https://developer.microsoft.com/windows/iot/docs/createiotcorepro).
+
+## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
+>>>>>>> b8efdd902f1c70489ddbe9c6fa7bad86180e7877
 
 1.  Start the IoTCore Shell: open **C:\IoT-ADK-AddonKit\IoTCoreShell.cmd** as an administrator, then select an architecture.
 
@@ -24,8 +30,11 @@ For this lab, we start a new product, ProductB, that includes the default app (B
     newproduct ProductB
     ````
 
+<<<<<<< HEAD
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
 
+=======
+>>>>>>> b8efdd902f1c70489ddbe9c6fa7bad86180e7877
 1.  Start **Windows Imaging and Configuration Designer**.
 
 2.  Click **File &gt; New project**.

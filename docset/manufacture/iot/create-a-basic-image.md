@@ -28,7 +28,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 **Start the IoT Core shell, choose your architecture, and install test certificates**
 
-1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open IoTCoreShell.cmd. It should prompt you to run as an administrator.
+1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open **IoTCoreShell.cmd**. It should prompt you to run as an administrator.
 
     The new value for OEM\_NAME should appear when you start the tool.
 	
@@ -92,7 +92,9 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 4.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**, click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\ProductA.ffu), then click **Next**.
 
-5.  Accept the license terms, and then click **Install**. The Windows IoT Core Dashboard formats the micro SD card and installs the new image.
+5.  Enter your device password.
+
+6.  Accept the license terms, and then click **Install**. The Windows IoT Core Dashboard formats the micro SD card and installs the new image.
 
 **Boot it up**
 
