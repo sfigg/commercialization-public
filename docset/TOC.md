@@ -548,6 +548,7 @@
 ##### [Secure Boot isn't configured correctly: troubleshooting](manufacture/desktop/secure-boot-isnt-configured-correctly-troubleshooting.md)
 ##### [Secure Boot isn't configured correctly: Determine if the PC is in a manufacturing mode (info for manufacturers)](manufacture/desktop/secure-boot-isnt-configured-correctly-determine-if-the-pc-is-in-a-manufacturing-mode--info-for-manufacturers.md)
 #### [Siloed provisioning packages (SPPs)](manufacture/desktop/siloed-provisioning-packages.md)
+##### [Create a provisioning package with Windows desktop applications](manufacture/desktop/combine-provisioning-packages-into-a-new-image.md)
 #### [Device Drivers](manufacture/desktop/device-drivers-and-deployment-overview.md)
 ##### [Maintain Driver Configurations when Capturing a Windows Image](manufacture/desktop/maintain-driver-configurations-when-capturing-a-windows-image.md)
 ##### [Add a Driver Online in Audit Mode](manufacture/desktop/add-a-driver-online-in-audit-mode.md)
@@ -695,7 +696,6 @@
 ##### [Add a script to push-button reset features](manufacture/desktop/add-a-script-to-push-button-reset-features.md)
 ##### [Bare metal reset/recovery: create recovery media while deploying new devices](manufacture/desktop/create-media-to-run-push-button-reset-features-s14.md)
 ##### [Bare metal reset/recovery: enable your users to create recovery media](manufacture/desktop/bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md)
-##### [Create a provisioning package with Windows desktop applications](manufacture/desktop/combine-provisioning-packages-into-a-new-image.md)
 ##### [Push-button reset frequently-asked questions (FAQ)](manufacture/desktop/pbr-faq.md)
 #### [REAgentC command-line options](manufacture/desktop/reagentc-command-line-options.md)
 #### [ResetConfig XML reference](manufacture/desktop/resetconfig-xml-reference-s14.md)
@@ -831,7 +831,7 @@
 
 
 ## [IoT Core manufacturing](manufacture/iot/index.md)
-### [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md)
+### [IoT Core manufacturing guide](manufacture/iot/iot-core-manufacturing-guide.md)
 #### [Get the tools needed to customize Windows IoT Core](manufacture/iot/set-up-your-pc-to-customize-iot-core.md)
 #### [Lab 1a: Create a basic image](manufacture/iot/create-a-basic-image.md)
 #### [Lab 1b: Add an app to your image](manufacture/iot/deploy-your-app-with-a-standard-board.md)

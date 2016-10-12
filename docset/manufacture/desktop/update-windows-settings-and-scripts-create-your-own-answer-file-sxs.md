@@ -66,7 +66,7 @@ You can specify which configuration pass to add new settings:
 
 **Add new answer file settings**
 
-1.  Set the device to automatically boot to audit mode:
+1.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
 
     In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Deployment\_(version)**, and then select **Add Setting to Pass 7 oobeSystem**.
 
@@ -74,7 +74,7 @@ You can specify which configuration pass to add new settings:
 
     In the **Reseal Properties** pane, in the **Settings** section, select Mode=`Audit`.
 
-2.  Prepare a script to run after Audit mode begins.
+2.  Prepare a [script](https://msdn.microsoft.com/library/windows/hardware/dn915797.aspx) to run after Audit mode begins.
 
     In the **Windows Image** pane, right-click **amd64\_ Microsoft-Windows-Deployment\_(version)** and then click **Add Setting to Pass 6 auditUser**.
 
@@ -87,6 +87,12 @@ You can specify which configuration pass to add new settings:
     `Description = Sample command to run a system diagnostic check.`
 
     `Order = 1`
+
+More common settings: 
+
+*  Activate Windows without OEM Activation 3.0 (OA3.0) by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. For enterprises, this can be a volume license key.
+
+*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
 
 **Save the answer file**
 
