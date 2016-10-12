@@ -181,12 +181,8 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Check to see if your reg key exists**
 
-<<<<<<< HEAD
 1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/en-us/windows/iot/docs/ssh).)
 
-=======
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY.exe](https://the.earth.li/~sgtatham/putty/0.67/x86/). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/docs/ssh).)
->>>>>>> b8efdd902f1c70489ddbe9c6fa7bad86180e7877
 2.  From the command line in the SSH client, query the system for the reg key.
 
     ``` syntax
