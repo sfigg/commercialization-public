@@ -12,7 +12,7 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in. 
 
-Note: To create a provisioning package that supports Windows 10 IoT Core Pro features, see [Windows 10 IoT Core Pro].(https://developer.microsoft.com/windows/iot/docs/createiotcorepro).
+Note: To create a provisioning package that supports Windows 10 IoT Core Pro features, see [Windows 10 IoT Core Pro](https://developer.microsoft.com/windows/iot/docs/createiotcorepro).
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
