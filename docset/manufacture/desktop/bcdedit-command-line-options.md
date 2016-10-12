@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'BCDEdit Command-Line Options'
 ---
 
-# <span id="p_adk_online.bcdedit_command-line_options"></span>BCDEdit Command-Line Options
+# <span id="bcdedit_command-line_options"></span>BCDEdit Command-Line Options
 
 
 BCDEdit is a command-line tool for managing Boot Configuration Data (BCD).

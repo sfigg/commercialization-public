@@ -20,10 +20,6 @@ We'll add these FMs and Feature IDs to the test image configuration file (TestOE
 
 Finally, we'll rebuild the project and make sure it works.
 
-**Note**  As we go through this manufacturing guide, ProjectA will start to resemble the SampleA image that's in C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\SampleA.
-
- 
-
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
@@ -44,7 +40,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
     The new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
 
-**Add sample files to the package**
+### <span id="Add_sample_files_to_the_package"></span>Add sample files to the package
 
 1.  Copy your sample files (TestFile1.txt and TestFile2.txt), into the new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
 
@@ -90,63 +86,63 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 ## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
 
-**Add your file package to the feature manifest**
+**Add your file package to the feature manifest and project configuration file**
 
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_ConfigSettings".
 
     ``` syntax
-         <!-- Feature definitions below -->
-     
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Manual.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_ProvManual</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
-          
-          <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.ConfigSettings.cab">
-            <FeatureIDs>
-              <FeatureID>OEM_ConfigSettings</FeatureID>
-            </FeatureIDs>
-          </PackageFile>
+    <Features>
+      <OEM>
+        <!-- Feature definitions below -->
+
+        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Manual.cab">
+          <FeatureIDs>
+            <!-- This feature id brings in provisioning packages for manual installation via Custom.Cmd -->
+            <!-- Depends on OEM_CustomCmd -->
+          <FeatureID>OEM_ProvManual</FeatureID>
+            <!-- OEMCommon_ALL includes ProvAuto, so this is not included -->
+          </FeatureIDs>
+
+        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.ConfigSettings.cab">
+          <FeatureIDs>
+            <FeatureID>OEM_ConfigSettings</FeatureID>
+          </FeatureIDs>
+        </PackageFile>
     ```
 
     You'll now be able to add your test files and reg keys to any of your products by adding a reference to this feature manifest and Feature ID.
 
-## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
+3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductA\\TestOEMInput.xml:
 
+    1. Make sure the feature manifest: **OEMCommonFM.xml** is included, removing comment marks if necessary.
 
-**Add your file package**
+        ``` syntax
+        <AdditionalFMs>
+          <!-- Including BSP feature manifest -->
+          <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
+          <!-- Including OEM feature manifest-->
+          <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
+          <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
+          <!-- Including the test features -->
+          <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+        </AdditionalFMs>
+        ```
 
-1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductA\\TestOEMInput.xml**.
+    2.  Make sure the feature: **OEM_ProvAuto** is included, removing comment marks if necessary.
 
-2.  Make sure your feature manifest, OEMCommonFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
-
-    ``` syntax
-      <AdditionalFMs>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-      </AdditionalFMs>
-    ```
-
-3.  Add the FeatureID for your file and reg key:
-
-    ``` syntax
-    <OEM> 
-    <!-- Include BSP Features -->
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI3_DRIVERS</Feature> 
-    <!-- Include OEM Features -->
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_CustomCmd</Feature> 
-    <Feature>OEM_ProvAuto</Feature> 
-    <Feature>OEM_ConfigSettings</Feature> 
-    </OEM>
-    ```
+        ``` syntax
+        <OEM>
+          <!-- Include BSP Features -->
+          <Feature>RPI2_DRIVERS</Feature>
+          <Feature>RPI3_DRIVERS</Feature>
+          <!-- Include OEM features-->
+          <Feature>OEM_AppxMain</Feature>
+          <Feature>OEM_CustomCmd</Feature>
+          <Feature>OEM_ProvAuto</Feature>
+        </OEM>
+        ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
@@ -162,13 +158,14 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
-3.  Put the card into the IoT device and start it up.
+**Test to see if your files made it**
+
+1.  Put the card into the IoT device and start it up.
 
     After a short while, the device should start automatically, and you should see your app.
 
-**Check to see if your files made it**
 
-1.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
+2.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
 
     ``` syntax
     \\10.100.0.100\c$
@@ -176,7 +173,7 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 	Use the username and password that you created in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
 
-2.  Check to see if the files exist. Look for:
+3.  Check to see if the files exist. Look for:
 
     \\\\10.100.0.100\c$\\Windows\\system32\\TestFile1.txt
 
@@ -184,7 +181,8 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 
 **Check to see if your reg key exists**
 
-1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY.exe](https://the.earth.li/~sgtatham/putty/0.67/x86/). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [Using SSH to connect and configure a device running Windows IoT Core](https://developer.microsoft.com/windows/iot/docs/ssh).)
+1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/en-us/windows/iot/docs/ssh).)
+
 2.  From the command line in the SSH client, query the system for the reg key.
 
     ``` syntax
