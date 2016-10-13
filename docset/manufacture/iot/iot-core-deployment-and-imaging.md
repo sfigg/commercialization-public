@@ -462,7 +462,7 @@ To create an enterprise provisioning package that you can deploy to a IoT Core d
 ## <span id="related_topics"></span>Related topics
 
 
-[Download Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/Downloads)
+[Download Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/downloads)
 
  
 

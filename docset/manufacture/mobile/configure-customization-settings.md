@@ -1,5 +1,5 @@
 ---
-Description: 'In this section, we''ll focus on adding the Start layout modification file, preloading an app, and configuring some customization settings using MCSF.For more detailed information about the various customizations you can do, see Customize using the mobile MCSF framework.'
+Description: 'In this section, we''ll focus on adding the Start layout modification file, preloading an app, and configuring some customization settings using MCSF.For more detailed information about the various customizations you can do, see https://msdn.microsoft.com/library/windows/hardware/dn757433.'
 ms.assetid: 507fea31-f113-4cd3-84bf-1ab14898782f
 MSHAttr: 'PreferredLib:/library'
 title: Configure customization settings
@@ -15,7 +15,7 @@ Windows 10 Mobile supports two customization frameworks: MCSF and Windows provi
 
 In this section, we'll focus on adding the Start layout modification file, preloading an app, and configuring some customization settings using MCSF.
 
-For more detailed information about the various customizations you can do, see [Customize using the mobile MCSF framework](https://msdn.microsoft.com/library/windows/hardware/dn757433).
+For more detailed information about the various customizations you can do, see [https://msdn.microsoft.com/library/windows/hardware/dn757433](https://msdn.microsoft.com/library/windows/hardware/dn757433).
 
 ## <span id="create_an_mcsf_customization_answer_file"></span><span id="CREATE_AN_MCSF_CUSTOMIZATION_ANSWER_FILE"></span>Create an MCSF customization answer file
 

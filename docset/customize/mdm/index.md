@@ -39,14 +39,14 @@ Third-party MDM servers can manage Windows 10 by using the MDM protocol. The bu
 -   [Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices](enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md)
 -   [OMA DM protocol support](oma-dm-protocol-support.md)
 -   [Structure of OMA DM provisioning files](structure-of-oma-dm-provisioning-files.md)
--   [Server requirements for OMA DM](server-requirements-for-oma-dm.md)
--   [Enterprise settings, policies, and app management](enterprise-settings--policies--and-app-management.md)
+-   [Server requirements for OMA DM](server-requirements-windows-mdm.md)
+-   [Enterprise settings, policies, and app management](windows-mdm-enterprise-settings.md)
 
 ## Learn about configuration service providers
 
 
 -   [Configuration service provider reference](configuration-service-provider-reference.md)
--   [WMI providers supported in Windows 10](wmi-providers-supported-in-windows-10-technical-preview.md)
+-   [WMI providers supported in Windows 10](wmi-providers-supported-in-windows.md)
 -   [Using PowerShell scripting with the WMI Bridge Provider](using-powershell-scripting-with-the-wmi-bridge-provider.md)
 -   [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)
 
@@ -54,7 +54,7 @@ Third-party MDM servers can manage Windows 10 by using the MDM protocol. The bu
 
  
 
-10/10/2016
+
 
 
 
