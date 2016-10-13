@@ -402,7 +402,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 
  
 
-10/10/2016
+
 
 
 

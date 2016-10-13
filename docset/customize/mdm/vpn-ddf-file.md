@@ -1387,7 +1387,7 @@ This topic shows the OMA DM device description framework (DDF) for the **VPN** c
 
  
 
-10/10/2016
+
 
 
 

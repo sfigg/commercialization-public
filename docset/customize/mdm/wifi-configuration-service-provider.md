@@ -51,7 +51,7 @@ The profile XML must be escaped, as shown in the examples below.
 
 If it exists in the blob, the **keyType** and **protected** elements must come before **keyMaterial**, as shown in the example in [WPA2-Personal Profile Sample](http://go.microsoft.com/fwlink/p/?LinkId=523870).
 
-**Note**  If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](http://go.microsoft.com/fwlink/p/?LinkId=618963).
+> **Note**  If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](http://go.microsoft.com/fwlink/p/?LinkId=618963).
 
  
 
@@ -213,7 +213,7 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
  
 
-10/10/2016
+
 
 
 
