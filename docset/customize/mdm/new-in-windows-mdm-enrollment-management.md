@@ -45,7 +45,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew"></a>What's new in Windows 10, version 1511
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -59,8 +58,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>New configuration service providers added in Windows 10, version 1511</p></td>
-<td><ul>
+<td style="vertical-align:top"><p>New configuration service providers added in Windows 10, version 1511</p></td>
+<td style="vertical-align:top"><ul>
 <li>[AllJoynManagement CSP](alljoynmanagement-csp.md)</li>
 <li>[Maps CSP](maps-csp.md)</li>
 <li>[Reporting CSP](reporting-csp.md)</li>
@@ -69,8 +68,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>New and updated policies in Policy CSP</p></td>
-<td><p>The following policies have been added to the [Policy CSP](policy-configuration-service-provider.md):</p>
+<td style="vertical-align:top"><p>New and updated policies in Policy CSP</p></td>
+<td style="vertical-align:top"><p>The following policies have been added to the [Policy CSP](policy-configuration-service-provider.md):</p>
 <ul>
 <li>Accounts/DomainNamesForEmailSync</li>
 <li>ApplicationManagement/AllowWindowsBridgeForAndroidAppsExecution</li>
@@ -96,27 +95,27 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Management tool for the Windows Store for Business</p></td>
-<td><p>New topics. The Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. It enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.</p></td>
+<td style="vertical-align:top"><p>Management tool for the Windows Store for Business</p></td>
+<td style="vertical-align:top"><p>New topics. The Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. It enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.</p></td>
 </tr>
 <tr class="even">
-<td><p>Custom header for generic alert</p></td>
-<td><p>The MDM-GenericAlert is a new custom header that hosts one or more alert information provided in the http messages sent by the device to the server during an OMA DM session. The generic alert is sent if the session is triggered by the device due to one or more critical or fatal alerts. Here is alert format:</p>
-<pre space="preserve"><code>MDM-GenericAlert: &lt;AlertType1&gt;&lt;AlertType2&gt;</code></pre>
+<td style="vertical-align:top"><p>Custom header for generic alert</p></td>
+<td style="vertical-align:top"><p>The MDM-GenericAlert is a new custom header that hosts one or more alert information provided in the http messages sent by the device to the server during an OMA DM session. The generic alert is sent if the session is triggered by the device due to one or more critical or fatal alerts. Here is alert format:</p>
+<code>MDM-GenericAlert: &lt;AlertType1&gt;&lt;AlertType2&gt;</code>
 <p>If present, the MDM-GenericAlert is presented in every the outgoing MDM message in the same OMA DM session. For more information about generic alerts, see section 8.7 in the OMA Device Management Protocol, Approved Version 1.2.1 in this [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Alert message for slow client response</p></td>
-<td><p>When the MDM server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client does not send an alert that a DM request is pending.</p>
+<td style="vertical-align:top"><p>Alert message for slow client response</p></td>
+<td style="vertical-align:top"><p>When the MDM server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client does not send an alert that a DM request is pending.</p>
 <p>To work around the timeout, you can use EnableOmaDmKeepAliveMessage setting to keep the session alive by sending a heartbeat message back to the server. This is achieved by sending a SyncML message with a specific device alert element in the body until the client is able to respond back to the server with the requested information. For details, see EnableOmaDmKeepAliveMessage node in the [DMClient CSP](dmclient-configuration-service-provider.md).</p></td>
 </tr>
 <tr class="even">
-<td><p>New node in DMClient CSP</p></td>
-<td><p>Added a new node EnableOmaDmKeepAliveMessage to the [DMClient CSP](dmclient-configuration-service-provider.md) and updated the ManagementServerAddress to indicate that it can contain a list of URLs.</p></td>
+<td style="vertical-align:top"><p>New node in DMClient CSP</p></td>
+<td style="vertical-align:top"><p>Added a new node EnableOmaDmKeepAliveMessage to the [DMClient CSP](dmclient-configuration-service-provider.md) and updated the ManagementServerAddress to indicate that it can contain a list of URLs.</p></td>
 </tr>
 <tr class="odd">
-<td><p>New nodes in EnterpriseModernAppManagement CSP</p></td>
-<td><p>Added the following nodes to the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md):</p>
+<td style="vertical-align:top"><p>New nodes in EnterpriseModernAppManagement CSP</p></td>
+<td style="vertical-align:top"><p>Added the following nodes to the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md):</p>
 <ul>
 <li>AppManagement/GetInventoryQuery</li>
 <li>AppManagement/GetInventoryResults</li>
@@ -128,8 +127,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>New nodes in EnterpriseExt CSP</p></td>
-<td><p>Added the following nodes to the [EnterpriseExt CSP](enterpriseext-csp.md):</p>
+<td style="vertical-align:top"><p>New nodes in EnterpriseExt CSP</p></td>
+<td style="vertical-align:top"><p>Added the following nodes to the [EnterpriseExt CSP](enterpriseext-csp.md):</p>
 <ul>
 <li>DeviceCustomData (CustomID, CustomeString)</li>
 <li>Brightness (Default, MaxAuto)</li>
@@ -137,12 +136,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>New node in EnterpriseExtFileSystem CSP</p></td>
-<td><p>Added OemProfile node to [EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md).</p></td>
+<td style="vertical-align:top"><p>New node in EnterpriseExtFileSystem CSP</p></td>
+<td style="vertical-align:top"><p>Added OemProfile node to [EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md).</p></td>
 </tr>
 <tr class="even">
-<td><p>New nodes in PassportForWork CSP</p></td>
-<td><p>Added the following nodes to [PassportForWork CSP](passportforwork-csp.md):</p>
+<td style="vertical-align:top"><p>New nodes in PassportForWork CSP</p></td>
+<td style="vertical-align:top"><p>Added the following nodes to [PassportForWork CSP](passportforwork-csp.md):</p>
 <ul>
 <li>TenantId/Policies/PINComplexity/History</li>
 <li>TenantId/Policies/PINComplexity/Expiration</li>
@@ -152,8 +151,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Updated EnterpriseAssignedAccess CSP</p></td>
-<td><p>Here are the changes to the [EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md):</p>
+<td style="vertical-align:top"><p>Updated EnterpriseAssignedAccess CSP</p></td>
+<td style="vertical-align:top"><p>Here are the changes to the [EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md):</p>
 <ul>
 <li>In AssignedAccessXML node, added new page settings and quick action settings.</li>
 <li>In AssignedAccessXML node, added an example about how to pin applications in multiple app packages using the AUMID.</li>
@@ -161,16 +160,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>New nodes in the DevDetail CSP</p></td>
-<td><p>Here are the changes to the [DevDetail CSP](devdetail-configuration-service-provider.md):</p>
+<td style="vertical-align:top"><p>New nodes in the DevDetail CSP</p></td>
+<td style="vertical-align:top"><p>Here are the changes to the [DevDetail CSP](devdetail-configuration-service-provider.md):</p>
 <ul>
 <li>Added TotalStore and TotalRAM settings.</li>
 <li>Added support for Replace command for the DeviceName setting.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Handling large objects</p></td>
-<td><p>Added support for the client to handle uploading of large objects to the server.</p></td>
+<td style="vertical-align:top"><p>Handling large objects</p></td>
+<td style="vertical-align:top"><p>Added support for the client to handle uploading of large objects to the server.</p></td>
 </tr>
 </tbody>
 </table>
@@ -193,20 +192,20 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Sideloading of apps</p></td>
-<td><p>Starting in Windows 10, version 1607, sideloading of apps is only allowed through [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md). Product keys (5x5) will no longer be supported to enable sideloading on Windows 10, version 1607 devices.</p></td>
+<td style="vertical-align:top"><p>Sideloading of apps</p></td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1607, sideloading of apps is only allowed through [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md). Product keys (5x5) will no longer be supported to enable sideloading on Windows 10, version 1607 devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>New value for [NodeCache CSP](nodecache-configuration-service-provider.md)</p></td>
-<td><p>In [NodeCache CSP](nodecache-configuration-service-provider.md), the value of NodeCache root node starting in Windows 10, version 1607 is com.microsoft/1.0/MDM/NodeCache.</p></td>
+<td style="vertical-align:top"><p>New value for [NodeCache CSP](nodecache-configuration-service-provider.md)</p></td>
+<td style="vertical-align:top"><p>In [NodeCache CSP](nodecache-configuration-service-provider.md), the value of NodeCache root node starting in Windows 10, version 1607 is com.microsoft/1.0/MDM/NodeCache.</p></td>
 </tr>
 <tr class="odd">
-<td>[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
-<td><p>New CSP.</p></td>
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP.</p></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Removed the following policies:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Removed the following policies:</p>
 <ul>
 <li>DataProtection/AllowAzureRMSForEDP - moved this policy to [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</li>
 <li>DataProtection/AllowUserDecryption - moved this policy to [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</li>
@@ -348,8 +347,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>Updated Security/AntiTheftMode description to clarify what each supported value does.</p></td>
 </tr>
 <tr class="odd">
-<td>[DMClient CSP](dmclient-configuration-service-provider.md)</td>
-<td><p>Added the following settings:</p>
+<td style="vertical-align:top">[DMClient CSP](dmclient-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>ManagementServerAddressList</li>
 <li>AADDeviceID</li>
@@ -360,16 +359,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>Removed the EnrollmentID setting.</p></td>
 </tr>
 <tr class="even">
-<td>[Reporting CSP](reporting-csp.md)</td>
-<td><p>Added support for <strong>SecurityAuditing</strong> settings for the desktop.</p></td>
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Added support for <strong>SecurityAuditing</strong> settings for the desktop.</p></td>
 </tr>
 <tr class="odd">
-<td>[DeviceManageability CSP](devicemanageability-csp.md)</td>
-<td><p>New CSP.</p></td>
+<td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP.</p></td>
 </tr>
 <tr class="even">
-<td>[DeviceStatus CSP](devicestatus-csp.md)</td>
-<td><p>Added the following new settings:</p>
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following new settings:</p>
 <ul>
 <li>DeviceStatus/TPM/SpecificationVersion</li>
 <li>DeviceStatus/OS/Edition</li>
@@ -385,40 +384,40 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[AssignedAccess CSP](assignedaccess-csp.md)</td>
-<td><p>Added SyncML examples.</p></td>
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples.</p></td>
 </tr>
 <tr class="even">
-<td>[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
-<td><ul>
+<td style="vertical-align:top">[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
+<td style="vertical-align:top"><ul>
 <li>Added a new Folder table entry in the AssignedAccess/AssignedAccessXml description.</li>
 <li>Updated the DDF and XSD file sections.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td><p>New CSP for Windows 10, version 1607</p></td>
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607</p></td>
 </tr>
 <tr class="even">
-<td>[DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md)
+<td style="vertical-align:top">[DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md)
 <p>[DiagnosticLog DDF](diagnosticlog-ddf.md)</p></td>
-<td><p>Added version 1.3 of the CSP with two new settings. Added the new 1.3 version of the DDF. Added the following new settings in Windows 10, version 1607.</p>
+<td style="vertical-align:top"><p>Added version 1.3 of the CSP with two new settings. Added the new 1.3 version of the DDF. Added the following new settings in Windows 10, version 1607.</p>
 <ul>
 <li>DeviceStateData</li>
 <li>DeviceStateData/MdmConfiguration</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[Reboot CSP](reboot-csp.md)</td>
-<td><p>New CSP for Windows 10, version 1607</p></td>
+<td style="vertical-align:top">[Reboot CSP](reboot-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607</p></td>
 </tr>
 <tr class="even">
-<td>[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)</td>
-<td><p>New CSP for Windows 10, version 1607</p></td>
+<td style="vertical-align:top">[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607</p></td>
 </tr>
 <tr class="odd">
-<td>[VPNv2 CSP](vpnv2-configuration-service-provider.md)</td>
-<td><p>Added the following settings for Windows 10, version 1607</p>
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings for Windows 10, version 1607</p>
 <ul>
 <li><em>ProfileName</em>/RouteList/routeRowId/ExclusionRoute</li>
 <li><em>ProfileName</em>/DomainNameInformationList/<em>dniRowId</em>/AutoTrigger</li>
@@ -440,38 +439,38 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Win32AppInventory CSP](win32appinventory-csp.md)[Win32AppInventory DDF](win32appinventory-ddf-file.md)</td>
-<td><p>New CSP for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[Win32AppInventory CSP](win32appinventory-csp.md)[Win32AppInventory DDF](win32appinventory-ddf-file.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607.</p></td>
 </tr>
 <tr class="odd">
-<td>[SharedPC CSP](sharedpc-csp.md)</td>
-<td><p>New CSP for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[SharedPC CSP](sharedpc-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607.</p></td>
 </tr>
 <tr class="even">
-<td>[WindowsAdvancedThreatProtection CSP](watp-csp.md)</td>
-<td><p>New CSP for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](watp-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1607.</p></td>
 </tr>
 <tr class="odd">
-<td>[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
-<td><p>Added new classes for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
+<td style="vertical-align:top"><p>Added new classes for Windows 10, version 1607.</p></td>
 </tr>
 <tr class="even">
-<td>[MDM enrollment of Windows devices](enrollment-ui.md)</td>
-<td><p>Topic renamed from &quot;Enrollment UI&quot;.</p>
+<td style="vertical-align:top">[MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>Topic renamed from &quot;Enrollment UI&quot;.</p>
 <p>Completely updated enrollment procedures and screenshots.</p></td>
 </tr>
 <tr class="odd">
-<td>[UnifiedWriteFilter CSP](uwf-configuration-service-provider.md)
+<td style="vertical-align:top">[UnifiedWriteFilter CSP](uwf-configuration-service-provider.md)
 <p>[UnifiedWriteFilter DDF File](uwf-ddf-file.md)</p></td>
-<td><p>Added the following new setting for Windows 10, version 1607:</p>
+<td style="vertical-align:top"><p>Added the following new setting for Windows 10, version 1607:</p>
 <ul>
 <li>NextSession/HORMEnabled</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[CertificateStore CSP](certificatestore-configuration-service-provider.md)
+<td style="vertical-align:top">[CertificateStore CSP](certificatestore-configuration-service-provider.md)
 <p>[CertificateStore DDF file](certificatestore-ddf-file.md)</p></td>
-<td><p>Added the following new settings in Windows 10, version 1607:</p>
+<td style="vertical-align:top"><p>Added the following new settings in Windows 10, version 1607:</p>
 <ul>
 <li>My/WSTEP/Renew/LastRenewalAttemptTime</li>
 <li>My/WSTEP/Renew/RenewNow</li>
@@ -601,7 +600,7 @@ The following list describes the prerequisites for a certificate to be used with
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
 
-**Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
+> **Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
 
@@ -704,7 +703,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 </EapHostConfig>
 ```
 
-**Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
+> **Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
  
 
@@ -715,7 +714,7 @@ Alternately you can use the following procedure to create an EAP Configuration X
 
     ![vpn selfhost properties window](images/certfiltering1.png)
 
-    **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
+    > **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
      
 
@@ -732,7 +731,7 @@ Alternately you can use the following procedure to create an EAP Configuration X
 7.  Close the rasphone dialog box.
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
-**Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
+> **Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
 
  
 
@@ -779,8 +778,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Updated the most restricted values for the following policies:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the most restricted values for the following policies:</p>
 <ul>
 <li>Browser/AllowDoNotTrack</li>
 <li>Browser/AllowPasswordManager</li>
@@ -808,12 +807,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>WindowsTeam CSP</p></td>
-<td><p>Deleted the WindowsTeam CSP topic. You should use [SurfaceHub](surfacehub-csp.md) instead.</p></td>
+<td style="vertical-align:top"><p>WindowsTeam CSP</p></td>
+<td style="vertical-align:top"><p>Deleted the WindowsTeam CSP topic. You should use [SurfaceHub](surfacehub-csp.md) instead.</p></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following policies:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following policies:</p>
 <ul>
 <li>Search/DisableBackoff</li>
 <li>Search/DisableRemovableDriveIndexing</li>
@@ -841,8 +840,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Updated the following policy:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following policy:</p>
 <ul>
 <li>System/AllowBuildPreview - supported in Windows 10 Mobile and Windows 10 Mobile Enterprise</li>
 <li>Experience/AllowThirdPartySuggestionsInWindowsSpotlight - supported in Windows 10 Pro.</li>
@@ -868,26 +867,23 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[AppLocker CSP](applocker-configuration-service-provider.md)</td>
-<td><p>Added the following note the the list of [Inbox apps and components](applocker-configuration-service-provider.md#inbox-apps):</p>
-<div class="alert">
-<strong>Note</strong>  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
-</div>
-<div>
- 
-</div></td>
+<td style="vertical-align:top">[AppLocker CSP](applocker-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-configuration-service-provider.md#inbox-apps):</p>
+
+> **Note** This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+</td>
 </tr>
 <tr class="even">
-<td><p>[ComputerName](https://msdn.microsoft.com/library/windows/hardware/mt188590) in Windows Provisioning settings reference</p></td>
-<td><p>ComputerName does not support asterisk (*) and does not support empty string.</p></td>
+<td style="vertical-align:top"><p>[ComputerName](https://msdn.microsoft.com/library/windows/hardware/mt188590) in Windows Provisioning settings reference</p></td>
+<td style="vertical-align:top"><p>ComputerName does not support asterisk (*) and does not support empty string.</p></td>
 </tr>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Updated the supported values for [Update/BranchReadinessLevel](policy-configuration-service-provider.md#update-branchreadinesslevel)</p></td>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the supported values for [Update/BranchReadinessLevel](policy-configuration-service-provider.md#update-branchreadinesslevel)</p></td>
 </tr>
 <tr class="even">
-<td>[Device update management](device-update-management.md)</td>
-<td><p>Updated the following section:</p>
+<td style="vertical-align:top">[Device update management](device-update-management.md)</td>
+<td style="vertical-align:top"><p>Updated the following section:</p>
 <ul>
 <li>[Getting update metadata using the Server-Server sync protocol](device-update-management.md#gettingupdatemetadata)</li>
 </ul></td>
@@ -912,8 +908,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following statement to Update/DeferUpdatePeriod policy:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following statement to Update/DeferUpdatePeriod policy:</p>
 <p>In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:</p>
 <ul>
 <li>Update/RequireDeferUpgrade must be set to 1</li>
@@ -941,16 +937,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md)</td>
-<td><p>Updated the names for the following settings:</p>
+<td style="vertical-align:top">[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the names for the following settings:</p>
 <ul>
 <li>AppInventoryQuery</li>
 <li>AppInventoryResults</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Updated the following policy description:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following policy description:</p>
 <p></p>
 <dl>
 <dt><strong>System/AllowTelemetry</strong></dt>
@@ -965,50 +961,41 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p><strong>Windows 10 values</strong></p>
 <ul>
 <li>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
-<div class="alert">
-<strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
-</div>
-<div>
- 
-</div></li>
+
+> **Note**  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+</li>
 <li>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</li>
 <li>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</li>
 <li>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</li>
 </ul>
-<div class="alert">
-<strong>Important</strong>  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
-</div>
-<div>
- 
-</div>
+
+> **Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
+
 <p>Most restricted value is 0.</p>
 </dd>
 </dl></td>
 </tr>
 <tr class="odd">
-<td>[OMA DM protocol support](oma-dm-protocol-support.md)</td>
-<td><p>Updated the following description:</p>
+<td style="vertical-align:top">[OMA DM protocol support](oma-dm-protocol-support.md)</td>
+<td style="vertical-align:top"><p>Updated the following description:</p>
 <ul>
 <li>LocURI - Specifies the address of the target or source location. If the address contains a non-alphanumeric character, it must be properly escaped according to the URL encoding standard.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[VPNv2 CSP](vpnv2-configuration-service-provider.md)</td>
-<td><p>Updated the following description:</p>
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following description:</p>
 <ul>
 <li><p>VPNv2/ProfileName - Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/).</p>
 <p>Supported operations include Get, Add, and Delete.</p>
-<div class="alert">
-<strong>Note</strong>  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
-</div>
-<div>
- 
-</div></li>
+
+> **Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
-<td><p>Replaced the descriptions for each class member with links to the corresponding node in the CSP topic. The CSP topics contain the most up-to-date information.</p></td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
+<td style="vertical-align:top"><p>Replaced the descriptions for each class member with links to the corresponding node in the CSP topic. The CSP topics contain the most up-to-date information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1030,48 +1017,43 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)
 <p>[PolicyManager CSP](policymanager-configuration-service-provider.md)</p></td>
-<td><p>Added the following note:</p>
+<td style="vertical-align:top"><p>Added the following note:</p>
 <ul>
 <li>You cannot disable or enable <strong>Contact Support</strong> and <strong>Windows Feedback</strong> apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[PassportForWork CSP](passportforwork-csp.md)</td>
-<td><p>Added the following note:</p>
-<div class="alert">
-<strong>Important</strong>  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
-</div>
-<div>
- 
-</div></td>
+<td style="vertical-align:top">[PassportForWork CSP](passportforwork-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+
+> **Important**  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+
+</td>
 </tr>
 <tr class="odd">
-<td>[ProfileXML XSD](vpnv2-profile-xsd.md)</td>
-<td><p>Updated the [Native profile example](vpnv2-profile-xsd.md#native-profile-example) example.</p></td>
+<td style="vertical-align:top">[ProfileXML XSD](vpnv2-profile-xsd.md)</td>
+<td style="vertical-align:top"><p>Updated the [Native profile example](vpnv2-profile-xsd.md#native-profile-example) example.</p></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)
 <p>[Device update management](device-update-management.md)</p></td>
-<td><p>The following policies are not supported in Windows 10 Mobile Enterprise:</p>
+<td style="vertical-align:top"><p>The following policies are not supported in Windows 10 Mobile Enterprise:</p>
 <ul>
 <li>DeferUpgradePeriod</li>
 <li>DeferFeatureUpdatesPeriodInDays</li>
 <li>PauseFeatureUpdates</li>
 <li>ExcludeWUDrivers</li>
 </ul>
-<div class="alert">
-<strong>Note</strong>  Since these policies are not blocked, you will not get a failure message when you use them to configure a Windows 10 Mobile Enterprise device. However, the policies will not take effect.
-</div>
-<div>
+
+> **Note**  Since these policies are not blocked, you will not get a failure message when you use them to configure a Windows 10 Mobile Enterprise device. However, the policies will not take effect.
  
-</div>
 <p>Added additional information about update policies supported for Windows Update for Business in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies).</p></td>
 </tr>
 <tr class="odd">
-<td>[DevDetail CSP](devdetail-configuration-service-provider.md)</td>
-<td><p>In Ext/Microsoft/DeviceName node, the Replace operation is only supported in Windows 10 Mobile, and not supported in the desktop.</p></td>
+<td style="vertical-align:top">[DevDetail CSP](devdetail-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>In Ext/Microsoft/DeviceName node, the Replace operation is only supported in Windows 10 Mobile, and not supported in the desktop.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1093,12 +1075,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy DDF file](policy-ddf-file.md)</td>
-<td><p>Updated version for Windows 10, version 1607</p></td>
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Updated version for Windows 10, version 1607</p></td>
 </tr>
 <tr class="even">
-<td>[MDM enrollment of Windows devices](enrollment-ui.md)</td>
-<td><p>Updated the section about enrolling in MDM on a desktop. Added a new section for enrolling in MDM on a phone.</p></td>
+<td style="vertical-align:top">[MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>Updated the section about enrolling in MDM on a desktop. Added a new section for enrolling in MDM on a phone.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1120,9 +1102,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[CertificateStore CSP](certificatestore-configuration-service-provider.md)
+<td style="vertical-align:top">[CertificateStore CSP](certificatestore-configuration-service-provider.md)
 <p>[CertificateStore DDF file](certificatestore-ddf-file.md)</p></td>
-<td><p>Added the following new settings in Windows 10, version 1607:</p>
+<td style="vertical-align:top"><p>Added the following new settings in Windows 10, version 1607:</p>
 <ul>
 <li>My/WSTEP/Renew/LastRenewalAttemptTime</li>
 <li>My/WSTEP/Renew/RenewNow</li>
@@ -1148,15 +1130,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Bulk enrollment](bulk-enrollment.md)</td>
-<td><p>Added new section:</p>
+<td style="vertical-align:top">[Bulk enrollment]bulk-enrollment-using-windows-provisioning-tool.md)</td>
+<td style="vertical-align:top"><p>Added new section:</p>
 <ul>
-<li>[Retry logic in case of a failure](bulk-enrollment.md#retry-logic-in-case-of-a-failure)</li>
+<li>[Retry logic in case of a failure](bulk-enrollment-using-windows-provisioning-tool.md#retry-logic-in-case-of-a-failure)</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)</td>
-<td><p>Added a link to MDM enrollment templates and CSS files:</p>
+<td style="vertical-align:top">[Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)</td>
+<td style="vertical-align:top"><p>Added a link to MDM enrollment templates and CSS files:</p>
 <ul>
 <li>[Download the Windows 10 templates and CSS files](http://download.microsoft.com/download/3/E/5/3E535D52-6432-47F6-B460-4E685C5D543A/MDM-ISV_1.1.3.zip)</li>
 </ul></td>
@@ -1181,40 +1163,37 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[OMA DM protocol support](oma-dm-protocol-support.md)</td>
-<td><p>Added a table of common SyncML response codes that occur during OMA DM sessions.</p></td>
+<td style="vertical-align:top">[OMA DM protocol support](oma-dm-protocol-support.md)</td>
+<td style="vertical-align:top"><p>Added a table of common SyncML response codes that occur during OMA DM sessions.</p></td>
 </tr>
 <tr class="even">
-<td>[Mobile device enrollment](mobile-device-enrollment.md)</td>
-<td><p>Updated the following section:</p>
+<td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
+<td style="vertical-align:top"><p>Updated the following section:</p>
 <ul>
 <li>[Enrollment error messages](mobile-device-enrollment.md#enrollment-error-messages)</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[SUPL CSP](user-plane-location-configuration-service-provider.md)</td>
-<td><p>LocMasterSwitchDependencyNII setting is not deprecated. Removed the note that it's deprecated in Windows 10.</p></td>
+<td style="vertical-align:top">[SUPL CSP](user-plane-location-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>LocMasterSwitchDependencyNII setting is not deprecated. Removed the note that it's deprecated in Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td>[Push notification support for device management](push-notification-windows-mdm.md)</td>
-<td><p>Added the following section:</p>
+<td style="vertical-align:top">[Push notification support for device management](push-notification-windows-mdm.md)</td>
+<td style="vertical-align:top"><p>Added the following section:</p>
 <ul>
-<li>[Get WNS credentials and PFN for MDM push notification](push-notification-support-for-device-management#get-wns-credentials-and-pfn-for-mdm-push-notification.md)</li>
+<li>[Get WNS credentials and PFN for MDM push notification](push-notification-windows-mdm.md#get-wns-credentials-and-pfn-for-mdm-push-notification)</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[RemoteWipe CSP](remotewipe-configuration-service-provider.md)</td>
-<td><p>Updated [The Remote Wipe Process](remotewipe-configuration-service-provider.md#the-remote-wipe-process) section. Added the following note:</p>
-<div class="alert">
-<strong>Note</strong>  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
-</div>
-<div>
- 
-</div></td>
+<td style="vertical-align:top">[RemoteWipe CSP](remotewipe-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated [The Remote Wipe Process](remotewipe-configuration-service-provider.md#the-remote-wipe-process) section. Added the following note:</p>
+
+> **Note**  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
+</td>
 </tr>
 <tr class="even">
-<td>[Bulk enrollment](bulk-enrollment.md)</td>
-<td><p>Added new step-by-step guide for creating and applying provisioning packages.</p></td>
+<td style="vertical-align:top">[Bulk enrollment](bulk-enrollment.md)</td>
+<td style="vertical-align:top"><p>Added new step-by-step guide for creating and applying provisioning packages.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1236,19 +1215,19 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
-<td><p>Added new classes for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
+<td style="vertical-align:top"><p>Added new classes for Windows 10, version 1607.</p></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following policy for Windows 10, version 1607:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following policy for Windows 10, version 1607:</p>
 <ul>
 <li>Licensing/AllowWindowsEntitlementActivation</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[AssignedAccess CSP](assignedaccess-csp.md)</td>
-<td><p>Added the following statement:</p>
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following statement:</p>
 <ul>
 <li><p>In Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx).</p></li>
 </ul></td>
@@ -1273,38 +1252,35 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>ApplicationManagement/ApplicationRestrictions</p></td>
-<td><p>Updated the following statement in [Policy CSP](policy-configuration-service-provider.md) and [PolicyManager CSP](policymanager-configuration-service-provider.md):</p>
+<td style="vertical-align:top"><p>ApplicationManagement/ApplicationRestrictions</p></td>
+<td style="vertical-align:top"><p>Updated the following statement in [Policy CSP](policy-configuration-service-provider.md) and [PolicyManager CSP](policymanager-configuration-service-provider.md):</p>
 <ul>
 <li>Use the new Microsoft publisher name (PublisherName=&quot;CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot;) and Publisher=&quot;CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot; if you are using the publisher policy. Do not remove the Windows Phone 8.1 publisher rule if you are using it.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Mobile device enrollment](mobile-device-enrollment.md)</td>
-<td><p>Added the following note:</p>
-<div class="alert">
-<strong>Note</strong>  As a best practice, do not use hardcoded server-side checks on values such as:
+<td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
+<td style="vertical-align:top"><p>Added the following note:</p>
+
+> **Note**  As a best practice, do not use hardcoded server-side checks on values such as:
 <ul>
 <li>User agent string</li>
 <li>Any fixed URIs that are passed during enrollment</li>
 <li>Specific formatting of any value unless otherwise noted, such as the format of the device ID.</li>
 </ul>
-</div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="odd">
-<td>[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
-<td><p>Updated the Settings section in AssignedAccess/AssignedAccessXml node to reflect changes in Windows 10, version 1607</p></td>
+<td style="vertical-align:top">[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the Settings section in AssignedAccess/AssignedAccessXml node to reflect changes in Windows 10, version 1607</p></td>
 </tr>
 <tr class="even">
-<td>[MDM enrollment of Windows devices](enrollment-ui.md)</td>
-<td><p>Added new section describing how to enroll devices using a deep link.</p></td>
+<td style="vertical-align:top">[MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>Added new section describing how to enroll devices using a deep link.</p></td>
 </tr>
 <tr class="odd">
-<td>[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
-<td><p>Added new classes for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
+<td style="vertical-align:top"><p>Added new classes for Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1326,10 +1302,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[VPNv2 CSP](vpnv2-configuration-service-provider.md)
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-configuration-service-provider.md)
 <p>[VPNv2 DDF file](vpnv2-ddf-file.md)</p>
 <p>[ProfileXML XSD](vpnv2-profile-xsd.md)</p></td>
-<td><p>Added the following nodes for Windows 10, version 1607.</p>
+<td style="vertical-align:top"><p>Added the following nodes for Windows 10, version 1607.</p>
 <ul>
 <li>VPNv2/ProfileName/RouteList/routeRowId/ExclusionRoute</li>
 <li>VPNv2/ProfileName/DomainNameInformationList/dniRowId/Persistent</li>
@@ -1337,30 +1313,30 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Updated the DDF content. Added new SyncML examples. Added ProfileXML XSD and some examples.</p></td>
 </tr>
 <tr class="even">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Updated the following policies:</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following policies:</p>
 <ul>
 <li>Update/AllowMUUpdateService - this policy is not supported in Windows 10 Mobile Enterprise</li>
 <li>Accounts/DomainNamesForEmailSync - list of domain names are pipe-separated, instead of comma-separated.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[UnifiedWriteFilter CSP](uwf-configuration-service-provider.md)
+<td style="vertical-align:top">[UnifiedWriteFilter CSP](uwf-configuration-service-provider.md)
 <p>[UnifiedWriteFilter DDF File](uwf-ddf-file.md)</p></td>
-<td><p>Added the following new setting for Windows 10, version 1607:</p>
+<td style="vertical-align:top"><p>Added the following new setting for Windows 10, version 1607:</p>
 <ul>
 <li>NextSession/HORMEnabled</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Updated the text in this known issue</p></td>
-<td><p>There was a servicing update to fix a known issue.</p>
+<td style="vertical-align:top"><p>Updated the text in this known issue</p></td>
+<td style="vertical-align:top"><p>There was a servicing update to fix a known issue.</p>
 <p><strong>Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218</strong></p>
 <p>Applies only to phone prior to build 10586.218: When ApplicationManagement/ApplicationRestrictions policy is deployed to Windows 10 Mobile, installation and update of apps dependent on Microsoft Frameworks may get blocked with error 0x80073CF9. To work around this issue, you must include the Microsoft Framework Id to your list of allowed apps.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Feature name change for Microsoft Passport for Work</p></td>
-<td><p>The new name is 'Windows Hello for Business.' All references to 'Microsoft Passport for Work' in the descriptions were changed to the new name.</p></td>
+<td style="vertical-align:top"><p>Feature name change for Microsoft Passport for Work</p></td>
+<td style="vertical-align:top"><p>The new name is 'Windows Hello for Business.' All references to 'Microsoft Passport for Work' in the descriptions were changed to the new name.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1382,30 +1358,30 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following settings for Windows 10, version 1607</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings for Windows 10, version 1607</p>
 <ul>
 <li>Notifications/DisallowNotificationMirroring</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>[EAP configuration](eap-configuration.md)</td>
-<td><p>Add a new section, [EAP certificate filtering](eap-configuration.md#eap-certificate-filtering).</p></td>
+<td style="vertical-align:top">[EAP configuration](eap-configuration.md)</td>
+<td style="vertical-align:top"><p>Add a new section, [EAP certificate filtering](eap-configuration.md#eap-certificate-filtering).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Feature name change for Enterprise Data Protection (EDP)</p></td>
-<td><p>The new name for EDP is Windows Information Protection (WIP). References to Enterprise Data Protection and EDP throughout the MDM documentation were changed to this new feature name.</p></td>
+<td style="vertical-align:top"><p>Feature name change for Enterprise Data Protection (EDP)</p></td>
+<td style="vertical-align:top"><p>The new name for EDP is Windows Information Protection (WIP). References to Enterprise Data Protection and EDP throughout the MDM documentation were changed to this new feature name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)</p>
+<td style="vertical-align:top"><p>[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)</p>
 <p>[CMPolicy CSP](cmpolicy-configuration-service-provider.md)</p></td>
-<td><p>Updated node tree diagrams.</p>
+<td style="vertical-align:top"><p>Updated node tree diagrams.</p>
 <p>Updated SyncML samples</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SharedPC CSP](sharedpc-csp.md)</p>
+<td style="vertical-align:top"><p>[SharedPC CSP](sharedpc-csp.md)</p>
 <p>[SharedPC DDF file](sharedpc-ddf-file.md)</p></td>
-<td><p>Added the following new settings for Windows 10, version 1607:</p>
+<td style="vertical-align:top"><p>Added the following new settings for Windows 10, version 1607:</p>
 <p></p>
 <ul>
 <li>EnableAccountManager</li>
@@ -1416,8 +1392,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Device update management](device-update-management.md)</td>
-<td><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). Added the new policies added in Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[Device update management](device-update-management.md)</td>
+<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). Added the new policies added in Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1439,8 +1415,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following settings for Windows 10, version 1607</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings for Windows 10, version 1607</p>
 <ul>
 <li>Privacy/LetAppsAccessNotifications</li>
 <li>Privacy/LetAppsAccessNotifications_ForceAllowTheseApps</li>
@@ -1457,13 +1433,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="even">
-<td>[AppLocker CSP](applocker-configuration-service-provider.md)
+<td style="vertical-align:top">[AppLocker CSP](applocker-configuration-service-provider.md)
 <p>[AppLocker DDF file](applocker-ddf-file.md)</p></td>
-<td><p>Updated the CSP and DDF file topics. Changed the data type for Policy to string. Updated some supported operations.</p></td>
+<td style="vertical-align:top"><p>Updated the CSP and DDF file topics. Changed the data type for Policy to string. Updated some supported operations.</p></td>
 </tr>
 <tr class="odd">
-<td>[DeviceStatus CSP](devicestatus-csp.md)</td>
-<td><p>Added supported values to the following settings:</p>
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added supported values to the following settings:</p>
 <ul>
 <li>DeviceStatus/Antivirus/SignatureStatus</li>
 <li>DeviceStatus/Antivirus/Status</li>
@@ -1471,8 +1447,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Update DDF file](p_phDdeviceMgmt.update_ddf_file)</td>
-<td><p>Updated the DDF file content. Here's the list of changes: a</p>
+<td style="vertical-align:top">[Update DDF file](p_phDdeviceMgmt.update_ddf_file)</td>
+<td style="vertical-align:top"><p>Updated the DDF file content. Here's the list of changes: a</p>
 <ul>
 <li>Changed the data type of DeferUpgrade from int to bool.</li>
 <li>Changed the supported operation for <strong><em>Approved Update Guid</em></strong> to Get.</li>
@@ -1480,13 +1456,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="odd">
-<td>[MDM enrollment of Windows devices](enrollment-ui.md)</td>
-<td><p>Renamed from &quot;Enrollment UI&quot;.</p>
+<td style="vertical-align:top">[MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>Renamed from &quot;Enrollment UI&quot;.</p>
 <p>Completely updated enrollment procedures and screenshots.</p></td>
 </tr>
 <tr class="even">
-<td>[WiFi CSP](wifi-configuration-service-provider.md)</td>
-<td><p>Added the following nodes:</p>
+<td style="vertical-align:top">[WiFi CSP](wifi-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes:</p>
 <ul>
 <li>DisableInternetConnectivityChecks</li>
 <li>ProxyPacUrl</li>
@@ -1513,8 +1489,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following settings for Windows 10, version 1607</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings for Windows 10, version 1607</p>
 <ul>
 <li>AboveLock/AllowCortanaAboveLock</li>
 <li>Messaging/AllowMessageSync</li>
@@ -1527,30 +1503,30 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="even">
-<td>[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
-<td><p>Fixed code sample error in &quot;Collect logs remotely from Windows 10 PCs&quot; section.</p></td>
+<td style="vertical-align:top">[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)</td>
+<td style="vertical-align:top"><p>Fixed code sample error in &quot;Collect logs remotely from Windows 10 PCs&quot; section.</p></td>
 </tr>
 <tr class="odd">
-<td>[RemoteRing DDF file](remotering-ddf-file.md)</td>
-<td><p>Added missing DDF topic.</p></td>
+<td style="vertical-align:top">[RemoteRing DDF file](remotering-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Added missing DDF topic.</p></td>
 </tr>
 <tr class="even">
-<td>[ActiveSync CSP](activesync-configuration-service-provider.md)
+<td style="vertical-align:top">[ActiveSync CSP](activesync-configuration-service-provider.md)
 <p>[ActiveSync DDF file](activesync-ddf-file.md)</p></td>
-<td><p>Updated the topic and DDF file. Added Policies node. Changed some nodes to be dynamic instead of permanent.</p></td>
+<td style="vertical-align:top"><p>Updated the topic and DDF file. Added Policies node. Changed some nodes to be dynamic instead of permanent.</p></td>
 </tr>
 <tr class="odd">
-<td>[EMAIL2 CSP](email2-configuration-service-provider.md)
+<td style="vertical-align:top">[EMAIL2 CSP](email2-configuration-service-provider.md)
 <p>[EMAIL2 DDF file](email2-ddf-file.md)</p></td>
-<td><p>Updated the topic and DDF file. Changed some data types and supported operations for various nodes. No changes in the list of nodes.</p></td>
+<td style="vertical-align:top"><p>Updated the topic and DDF file. Changed some data types and supported operations for various nodes. No changes in the list of nodes.</p></td>
 </tr>
 <tr class="even">
-<td>[DMClient DDF file](dmclient-ddf-file.md)</td>
-<td><p>Added version 1.2 of the DDF.</p></td>
+<td style="vertical-align:top">[DMClient DDF file](dmclient-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Added version 1.2 of the DDF.</p></td>
 </tr>
 <tr class="odd">
-<td>[Win32AppInventory DDF](win32appinventory-ddf-file.md)</td>
-<td><p>Added missing DDF topic.</p></td>
+<td style="vertical-align:top">[Win32AppInventory DDF](win32appinventory-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Added missing DDF topic.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1572,8 +1548,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td>[Policy CSP](policy-configuration-service-provider.md)</td>
-<td><p>Added the following settings for Windows 10, version 1607</p>
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following settings for Windows 10, version 1607</p>
 <ul>
 <li>Browser/AllowExtensions</li>
 <li>Update/BranchReadinessLevel</li>
@@ -1586,16 +1562,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Updated DeliveryOptimization/DOMaxCacheAge to add a new value.</p></td>
 </tr>
 <tr class="even">
-<td>[SUPL DDF file](supl-ddf-file.md)</td>
-<td><p>Added missing topic.</p></td>
+<td style="vertical-align:top">[SUPL DDF file](supl-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Added missing topic.</p></td>
 </tr>
 <tr class="odd">
-<td>[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
-<td><p>Updated the descriptions for Status, LastError, and LastErrorDesc.</p></td>
+<td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the descriptions for Status, LastError, and LastErrorDesc.</p></td>
 </tr>
 <tr class="even">
-<td>[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
-<td><p>Added new classes for Windows 10, version 1607.</p></td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
+<td style="vertical-align:top"><p>Added new classes for Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1621,7 +1597,6 @@ No. Only one MDM is allowed.
 
  
 
-10/10/2016
 
 
 
