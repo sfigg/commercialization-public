@@ -869,8 +869,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[AppLocker CSP](applocker-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-configuration-service-provider.md#inbox-apps):</p>
-
-> **Note** This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+<div class="alert">
+<strong>Note</strong> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+</div>
 </td>
 </tr>
 <tr class="even">
@@ -961,16 +962,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p><strong>Windows 10 values</strong></p>
 <ul>
 <li>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
-
-> **Note**  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+<div class="alert">
+<strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+</div>
 </li>
 <li>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</li>
 <li>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</li>
 <li>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</li>
 </ul>
-
-> **Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
-
+<div class="alert">
+<strong>Important</strong>  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
+</div>
 <p>Most restricted value is 0.</p>
 </dd>
 </dl></td>
@@ -988,8 +990,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li><p>VPNv2/ProfileName - Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/).</p>
 <p>Supported operations include Get, Add, and Delete.</p>
-
-> **Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+<div class="alert">
+<strong>Note</strong>  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+</div>
 </li>
 </ul></td>
 </tr>
@@ -1027,9 +1030,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[PassportForWork CSP](passportforwork-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following note:</p>
-
-> **Important**  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
-
+<div class="alert">
+<strong>Important</strong>  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+</div>
 </td>
 </tr>
 <tr class="odd">
@@ -1046,9 +1049,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>PauseFeatureUpdates</li>
 <li>ExcludeWUDrivers</li>
 </ul>
-
-> **Note**  Since these policies are not blocked, you will not get a failure message when you use them to configure a Windows 10 Mobile Enterprise device. However, the policies will not take effect.
- 
+<div class="alert">
+<strong>Note</strong>  Since these policies are not blocked, you will not get a failure message when you use them to configure a Windows 10 Mobile Enterprise device. However, the policies will not take effect.
+</div>
 <p>Added additional information about update policies supported for Windows Update for Business in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies).</p></td>
 </tr>
 <tr class="odd">
@@ -1130,7 +1133,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top">[Bulk enrollment]bulk-enrollment-using-windows-provisioning-tool.md)</td>
+<td style="vertical-align:top">[Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md)</td>
 <td style="vertical-align:top"><p>Added new section:</p>
 <ul>
 <li>[Retry logic in case of a failure](bulk-enrollment-using-windows-provisioning-tool.md#retry-logic-in-case-of-a-failure)</li>
@@ -1187,12 +1190,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[RemoteWipe CSP](remotewipe-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Updated [The Remote Wipe Process](remotewipe-configuration-service-provider.md#the-remote-wipe-process) section. Added the following note:</p>
-
-> **Note**  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
+<div class="alert">
+<strong>Note</strong>  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
+</div>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">[Bulk enrollment](bulk-enrollment.md)</td>
+<td style="vertical-align:top">[Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md)</td>
 <td style="vertical-align:top"><p>Added new step-by-step guide for creating and applying provisioning packages.</p></td>
 </tr>
 </tbody>
@@ -1261,8 +1265,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
 <td style="vertical-align:top"><p>Added the following note:</p>
-
-> **Note**  As a best practice, do not use hardcoded server-side checks on values such as:
+<div class="alert">
+<strong>Note</strong>  As a best practice, do not use hardcoded server-side checks on values such as:
+</div>
 <ul>
 <li>User agent string</li>
 <li>Any fixed URIs that are passed during enrollment</li>
