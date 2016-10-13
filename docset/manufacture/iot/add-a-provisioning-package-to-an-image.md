@@ -22,7 +22,7 @@ For this lab, we start a new product, ProductB, that includes the default app (B
 
     ``` syntax
     newproduct ProductB
-    ````
+    ```
 
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
 1.  Start **Windows Imaging and Configuration Designer**.
