@@ -159,6 +159,8 @@ For this lab, we start a new product, ProductB, that includes the default app (B
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
 
+    Note: Ignore the settings for "Wi-Fi Netowrk Connection" in these menus, these settings are not used when installing custom devices. 
+
 **Test to see if your provisioning settings were applied**
 
 1.  Unplug any network cables from your IoT device.
