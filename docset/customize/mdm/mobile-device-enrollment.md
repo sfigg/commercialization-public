@@ -69,7 +69,7 @@ Value: DisableRegistration
 
 Using the GP editor, the path is Computer configuration &gt; Administrative Templates &gt; Windows Components &gt; MDM &gt; Disable MDM Enrollment.
 
-## Enrollment scenarios not supported [enrollments-not-supported]
+## [Enrollment scenarios not supported](#enrollments-not-supported)
 
 
 The following scenarios do not allow MDM enrollments:
