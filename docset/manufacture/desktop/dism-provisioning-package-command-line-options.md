@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Provisioning Package (.ppkg) Command-Line Options'
 ---
 
-# <span id="p_adk_online.dism_provisioning_package_command-line_options"></span>DISM Provisioning Package (.ppkg) Command-Line Options
+# <span id="dism_provisioning_package_command-line_options"></span>DISM Provisioning Package (.ppkg) Command-Line Options
 
 
 Use DISM to work with Provisioning Packages (.ppkg) files. For example, you can add settings and Windows desktop applications to Windows 10, or reduce the size of your Windows installation.

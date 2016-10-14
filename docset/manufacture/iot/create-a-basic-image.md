@@ -57,7 +57,7 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
     BuildPkg All
     ```
     	
-**Create a new test image**
+**Create a test project and build an image from it**
 
 1.  Create a new product folder. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
 

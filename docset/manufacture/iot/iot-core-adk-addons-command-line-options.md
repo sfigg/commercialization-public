@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library'
 title: 'IoT Core Add-ons command-line options'
 ---
 
-# <span id="p_iot_core.command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
+# <span id="command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
 These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 

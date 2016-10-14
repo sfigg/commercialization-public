@@ -25,6 +25,8 @@ Your PC may be OK, but it's not as protected as it could be, because Secure Boot
 
 You may need to disable Secure Boot to run some hardware, graphics cards, or operating systems such as Linux or previous versions of Windows. For more info, see [Disabling Secure Boot](disabling-secure-boot.md).
 
+You check the status of Secure Boot on your PC. click on `Start`, and type msinfo32 and press enter. Under System Summary, you can see your BIOS mode and Secure Boot State. If Bios Mode is UEFI, and Secure Boot State is Off, then Secure Boot is disabled.
+
 ## <span id="Can_I_just_dismiss_this_alert_or_remove_the_watermark_"></span><span id="can_i_just_dismiss_this_alert_or_remove_the_watermark_"></span><span id="CAN_I_JUST_DISMISS_THIS_ALERT_OR_REMOVE_THE_WATERMARK_"></span>Can I just dismiss this alert or remove the watermark?
 
 

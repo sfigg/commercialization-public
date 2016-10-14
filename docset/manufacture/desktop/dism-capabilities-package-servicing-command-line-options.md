@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'DISM Capabilities Package Servicing Command-Line Options'
 ---
 
-# <span id="p_adk_online.dism_capabilities_package_servicing_command-line_options"></span>DISM Capabilities Package Servicing Command-Line Options
+# <span id="dism_capabilities_package_servicing_command-line_options"></span>DISM Capabilities Package Servicing Command-Line Options
 
 
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) only. Use Deployment Image Servicing and Management (DISM.exe) to service Windows capabilities. Capabilities are a Windows package type allows you to request services like .NET or languages without specifying the version. Use DISM to search multiple sources like Windows Update or your corporate servers to find and install the latest version.
