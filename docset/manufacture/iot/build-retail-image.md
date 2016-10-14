@@ -53,7 +53,7 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 4.  To support your apps, add the FeatureIDs for IOT_UAP_OOBE and IOT_APP_TOOLKIT from the main list of Microsoft features:
 
-    ```
+    ``` syntax
       <Features>
         <Microsoft> 
          <Feature>IOT_EFIESP</Feature> 
@@ -63,6 +63,14 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
         </Microsoft>
        </Features>
     ```
+
+## Copy in the provisioning package from ProductB into ProductA.
+
+1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
+
+2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
+    
+    Rename the files to (your product name)Prov.cat and (your product name)Prov.ppkg, for example, ProductAProv.cat and ProductAProv.ppkg.
 
 ### <span id="Build_and_create_the_image"></span><span id="build_and_create_the_image"></span><span id="BUILD_AND_CREATE_THE_IMAGE"></span>Build and create the image
 

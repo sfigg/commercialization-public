@@ -71,7 +71,7 @@ The following changes are new for Windows 10, version 1607:
 
 - A new /Defer parameter can be specified along with /ResetBase when you [reduce the size of the component store](desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image.md) to defer any long-running cleanup operations to the next automatic maintenance, but we highly recommend that **only** use /Defer as an option in the factory where DISM /ResetBase requires more than 30 minutes to complete.
 
-- A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep –Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](desktop/dism-image-management-command-line-options-s14.md). 
+- A new /EA parameter has been added to Dism /Apply-Image and /Capture-Image commands to capture and apply extended attributes. For Windows, catalog location hints are captured in extended attributes for inbox Authenticate Code scenarios. This enables quicker verification of hashes to ensure system files/components that have not changed. The process of creating the catalog database and those hashes happens on first boot of a Sysprep -Generalized image. If extended attributes are used to capture and apply the image, those attributes will also be carried over, removing the time to re-create them and enabling a faster first boot. For more information, see [DISM Image Management Command-Line Options](desktop/dism-image-management-command-line-options-s14.md). 
 
 - A new Windows Hardware Compatibility Program requirement, [Device.Graphics.AdapterBase.RunFromDriverStore](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-graphics#device-graphics-adapterbase), can impact OEM preloads. Drivers must be written so that their components can be run directly from the Driver Store. Drivers are installed at %SystemRoot%\System32\DriverStore\FileRepository.
 
@@ -83,12 +83,17 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**October 12, 2016**
+[Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): 
+-  New steps added to make sure the feature manifest, OEMCommonFM.xml, is included in the TestOEMInput.xml file.
+-  New network connection and troubleshooting steps added.
+
 **October 5, 2016**
 
 [Windows 10 IoT Core is now free](iot/set-up-your-pc-to-customize-iot-core.md). You no longer need an MSDN subscription or an account as a registered Microsoft OEM, though you do need a Microsoft account.
 
 **October 4, 2016**
-- The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English. |
+- The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English.
 
 **September 22, 2016**
 
