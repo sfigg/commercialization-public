@@ -3,10 +3,10 @@ author: kpacquer
 Description: 'We''ll create a provisioning package that contains some sample Wi-Fi settings.'
 ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
-title: 'Lab 1d: Add a provisioning package to an image'
+title: 'Lab 1d: Add networking and other provisioning package settings to an image'
 ---
 
-# Lab 1d: Add a provisioning package to an image
+# Lab 1d: Add networking and other provisioning package settings to an image
 
 We'll create a provisioning package that contains some sample Wi-Fi settings. You can use provisioning package in Windows Imaging and Configuration Designer (ICD) to add apps, drivers, features, or to modify many common settings, such as IT device management and policy settings.
 
