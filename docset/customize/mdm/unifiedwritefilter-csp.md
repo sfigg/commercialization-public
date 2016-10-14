@@ -12,7 +12,7 @@ ms.assetid: F4716AC6-0AA5-4A67-AECE-E0F200BA95EB
 
 The UnifiedWriteFilter (UWF) configuration service provider enables the IT administrator to remotely manage the UWF to help protect physical storage media including any writable storage type.
 
-**Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
+> **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
 
  
 
@@ -240,7 +240,6 @@ Supported operations are Get and Execute.
 
  
 
-10/10/2016
 
 
 
