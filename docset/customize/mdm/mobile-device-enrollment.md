@@ -33,16 +33,16 @@ There are a number of changes made to the enrollment protocol to better support 
 
 The enrollment process involves the following steps:
 
-**Discovery request**
-The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
+**Discovery request**  
+   The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
 
-**Certificate enrollment policy**
+**Certificate enrollment policy**  
 The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](http://go.microsoft.com/fwlink/p/?LinkId=619345)
 
-**Certificate enrollment**
+**Certificate enrollment**  
 The certificate enrollment is an implementation of the MS-WSTEP protocol.
 
-**Management configuration**
+**Management configuration**  
 The server sends provisioning XML that contains a server certificate (for SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
 
 The following topics describe the end-to-end enrollment process using various authentication methods:
@@ -51,10 +51,10 @@ The following topics describe the end-to-end enrollment process using various au
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
-**Note**  As best practice, do not use hardcoded server-side checks on values such as:
--   User agent string
--   Any fixed URIs that are passed during enrollment
--   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
+> **Note**  As a best practice, do not use hardcoded server-side checks on values such as:
+> -   User agent string
+> -   Any fixed URIs that are passed during enrollment
+> -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
 
  
 
@@ -136,53 +136,53 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>s:</p></td>
-<td><p>MessageFormat</p></td>
-<td><p>MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</p></td>
-<td><p>Message format is bad</p></td>
-<td><p>80180001</p></td>
+<td style="vertical-align:top"><p>s:</p></td>
+<td style="vertical-align:top"><p>MessageFormat</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</p></td>
+<td style="vertical-align:top"><p>Message format is bad</p></td>
+<td style="vertical-align:top"><p>80180001</p></td>
 </tr>
 <tr class="even">
-<td><p>s:</p></td>
-<td><p>Authentication</p></td>
-<td><p>MENROLL_E_DEVICE_AUTHENTICATION_ERROR</p></td>
-<td><p>User not recognized</p></td>
-<td><p>80180002</p></td>
+<td style="vertical-align:top"><p>s:</p></td>
+<td style="vertical-align:top"><p>Authentication</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_AUTHENTICATION_ERROR</p></td>
+<td style="vertical-align:top"><p>User not recognized</p></td>
+<td style="vertical-align:top"><p>80180002</p></td>
 </tr>
 <tr class="odd">
-<td><p>s:</p></td>
-<td><p>Authorization</p></td>
-<td><p>MENROLL_E_DEVICE_AUTHORIZATION_ERROR</p></td>
-<td><p>User not allowed to enroll</p></td>
-<td><p>80180003</p></td>
+<td style="vertical-align:top"><p>s:</p></td>
+<td style="vertical-align:top"><p>Authorization</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_AUTHORIZATION_ERROR</p></td>
+<td style="vertical-align:top"><p>User not allowed to enroll</p></td>
+<td style="vertical-align:top"><p>80180003</p></td>
 </tr>
 <tr class="even">
-<td><p>s:</p></td>
-<td><p>CertificateRequest</p></td>
-<td><p>MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</p></td>
-<td><p>Failed to get certificate</p></td>
-<td><p>80180004</p></td>
+<td style="vertical-align:top"><p>s:</p></td>
+<td style="vertical-align:top"><p>CertificateRequest</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</p></td>
+<td style="vertical-align:top"><p>Failed to get certificate</p></td>
+<td style="vertical-align:top"><p>80180004</p></td>
 </tr>
 <tr class="odd">
-<td><p>s:</p></td>
-<td><p>EnrollmentServer</p></td>
-<td><p>MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</p></td>
-<td></td>
-<td><p>80180005</p></td>
+<td style="vertical-align:top"><p>s:</p></td>
+<td style="vertical-align:top"><p>EnrollmentServer</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</p></td>
+<td style="vertical-align:top"></td>
+<td style="vertical-align:top"><p>80180005</p></td>
 </tr>
 <tr class="even">
-<td><p>a:</p></td>
-<td><p>InternalServiceFault</p></td>
-<td><p>MENROLL_E_DEVICE_INTERNALSERVICE_ERROR</p></td>
-<td><p>The server hit an unexpected issue</p></td>
-<td><p>80180006</p></td>
+<td style="vertical-align:top"><p>a:</p></td>
+<td style="vertical-align:top"><p>InternalServiceFault</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_INTERNALSERVICE_ERROR</p></td>
+<td style="vertical-align:top"><p>The server hit an unexpected issue</p></td>
+<td style="vertical-align:top"><p>80180006</p></td>
 </tr>
 <tr class="odd">
-<td><p>a:</p></td>
-<td><p>InvalidSecurity</p></td>
-<td><p>MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</p></td>
-<td><p>Cannot parse the security header</p></td>
-<td><p>80180007</p></td>
+<td style="vertical-align:top"><p>a:</p></td>
+<td style="vertical-align:top"><p>InvalidSecurity</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</p></td>
+<td style="vertical-align:top"><p>Cannot parse the security header</p></td>
+<td style="vertical-align:top"><p>80180007</p></td>
 </tr>
 </tbody>
 </table>
@@ -238,46 +238,46 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>DeviceCapReached</p></td>
-<td><p>MENROLL_E_DEVICECAPREACHED</p></td>
-<td><p>User already enrolled in too many devices. Delete or unenroll old ones to fix this error. The user can fix it without admin help.</p></td>
-<td><p>80180013</p></td>
+<td style="vertical-align:top"><p>DeviceCapReached</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICECAPREACHED</p></td>
+<td style="vertical-align:top"><p>User already enrolled in too many devices. Delete or unenroll old ones to fix this error. The user can fix it without admin help.</p></td>
+<td style="vertical-align:top"><p>80180013</p></td>
 </tr>
 <tr class="even">
-<td><p>DeviceNotSupported</p></td>
-<td><p>MENROLL_E_DEVICENOTSUPPORTED</p></td>
-<td><p>Specific platform (e.g. Windows) or version is not supported. There is no point retrying or calling admin. User could upgrade device.</p></td>
-<td><p>80180014</p></td>
+<td style="vertical-align:top"><p>DeviceNotSupported</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_DEVICENOTSUPPORTED</p></td>
+<td style="vertical-align:top"><p>Specific platform (e.g. Windows) or version is not supported. There is no point retrying or calling admin. User could upgrade device.</p></td>
+<td style="vertical-align:top"><p>80180014</p></td>
 </tr>
 <tr class="odd">
-<td><p>NotSupported</p></td>
-<td><p>MENROLL_E_NOTSUPPORTED</p></td>
-<td><p>Mobile device management generally not supported (would save an admin call)</p></td>
-<td><p>80180015</p></td>
+<td style="vertical-align:top"><p>NotSupported</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_NOTSUPPORTED</p></td>
+<td style="vertical-align:top"><p>Mobile device management generally not supported (would save an admin call)</p></td>
+<td style="vertical-align:top"><p>80180015</p></td>
 </tr>
 <tr class="even">
-<td><p>NotEligibleToRenew</p></td>
-<td><p>MENROLL_E_NOTELIGIBLETORENEW</p></td>
-<td><p>Device is trying to renew but server rejects the request. Client might show notification for this if Robo fails. Check time on device. The user can fix it by re-enrolling.</p></td>
-<td><p>80180016</p></td>
+<td style="vertical-align:top"><p>NotEligibleToRenew</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_NOTELIGIBLETORENEW</p></td>
+<td style="vertical-align:top"><p>Device is trying to renew but server rejects the request. Client might show notification for this if Robo fails. Check time on device. The user can fix it by re-enrolling.</p></td>
+<td style="vertical-align:top"><p>80180016</p></td>
 </tr>
 <tr class="odd">
-<td><p>InMaintenance</p></td>
-<td><p>MENROLL_E_INMAINTENANCE</p></td>
-<td><p>Account is in maintenance, retry later. The user can retry later, but they may need to contact the admin because they would not know when problem is solved.</p></td>
-<td><p>80180017</p></td>
+<td style="vertical-align:top"><p>InMaintenance</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_INMAINTENANCE</p></td>
+<td style="vertical-align:top"><p>Account is in maintenance, retry later. The user can retry later, but they may need to contact the admin because they would not know when problem is solved.</p></td>
+<td style="vertical-align:top"><p>80180017</p></td>
 </tr>
 <tr class="even">
-<td><p>UserLicense</p></td>
-<td><p>MENROLL_E_USERLICENSE</p></td>
-<td><p>License of user is in bad state and blocking the enrollment. The user needs to call the admin.</p></td>
-<td><p>80180018</p></td>
+<td style="vertical-align:top"><p>UserLicense</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_USERLICENSE</p></td>
+<td style="vertical-align:top"><p>License of user is in bad state and blocking the enrollment. The user needs to call the admin.</p></td>
+<td style="vertical-align:top"><p>80180018</p></td>
 </tr>
 <tr class="odd">
-<td><p>InvalidEnrollmentData</p></td>
-<td><p>MENROLL_E_ENROLLMENTDATAINVALID</p></td>
-<td><p>The server rejected the enrollment data. The server may not be configured correctly.</p></td>
-<td><p>80180019</p></td>
+<td style="vertical-align:top"><p>InvalidEnrollmentData</p></td>
+<td style="vertical-align:top"><p>MENROLL_E_ENROLLMENTDATAINVALID</p></td>
+<td style="vertical-align:top"><p>The server rejected the enrollment data. The server may not be configured correctly.</p></td>
+<td style="vertical-align:top"><p>80180019</p></td>
 </tr>
 </tbody>
 </table>
@@ -289,16 +289,12 @@ TraceID is a freeform text node which is logged. It should identify the server s
 ## Related topics
 
 
--   [MDM enrollment of Windows-based devices](enrollment-ui.md)
+-   [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
 -   [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
- 
 
- 
-
-10/10/2016
 
 
 
