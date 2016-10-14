@@ -466,13 +466,13 @@ This topic shows the OMA DM device description framework (DDF) for the **Update*
 ## Related topics
 
 
-[Update configuration Service Provider](update-configuration-service-provider.md)
+[Update configuration Service Provider](update-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

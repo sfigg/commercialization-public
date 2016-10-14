@@ -28,7 +28,7 @@ When this is set, the MDM must first present the EULA to IT and have them accept
 
 The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (i.e., updates to the virus and spyware definitions on devices) and Security Updates (i.e., product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
-**Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
+> **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
 
  
 
@@ -140,7 +140,7 @@ Supported operation is Get.
 
  
 
-10/10/2016
+
 
 
 
