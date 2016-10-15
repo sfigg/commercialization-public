@@ -326,8 +326,6 @@ The following procedure describes how users can connect their devices to MDM usi
 
     > **Note**  Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-     
-
     After you complete the flow, your device will be connected to your organization’s MDM.
 
     ![corporate sign in](images/deeplinkenrollment4.png)
