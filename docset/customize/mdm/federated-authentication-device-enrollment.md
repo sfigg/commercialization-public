@@ -34,7 +34,7 @@ The discovery web service provides the configuration information necessary for a
 
  
 
-The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:\//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
+The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
 
 The first request is a standard HTTP GET request.
 
@@ -483,7 +483,7 @@ After validating the request, the web service looks up the assigned certificate 
 
  
 
-Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (http:\//schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc), because the token is more than an X.509 v3 certificate.
+Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (http:<span></span>//schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc), because the token is more than an X.509 v3 certificate.
 
 The provisioning XML contains:
 
