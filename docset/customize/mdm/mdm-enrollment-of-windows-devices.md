@@ -17,7 +17,7 @@ This topic describes the user experience of enrolling Windows 10-based PCs and 
 
 In today’s cloud-first world, enterprise IT departments increasingly want to let employees bring their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization’s resources (such as apps, the corporate network, and email).
 
-**Note**  When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
+> **Note**  When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
 
  
 
@@ -32,7 +32,7 @@ Corporate owned devices can be connected to work either by joining the device to
 
 Devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education can be connected to an Active Directory domain. These devices can be connected using the Settings app.
 
-**Note**  Mobile devices cannot be connected to an Active Directory domain.
+> **Note**  Mobile devices cannot be connected to an Active Directory domain.
 
  
 
@@ -225,7 +225,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
     ![access work or school](images/unifiedenrollment-rs1-30.png)
 
-4.  Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934) . For older builds, use [Connecting your Windows 10-based device to work using a deep link](https://msdn.microsoft.com/library/windows/hardware/dn925028.aspx#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+4.  Click the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934) . For older builds, use [Connecting your Windows 10-based device to work using a deep link](connecting-your-windows-10-based-device-to-work-using-a-deep-link).
 
     ![connect to work or school](images/unifiedenrollment-rs1-31.png)
 
@@ -251,7 +251,7 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
     ![phone settings](images/unifiedenrollment-rs1-39.png)
 
-3.  Click the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](https://msdn.microsoft.com/library/windows/hardware/dn925028.aspx#connecting-your-windows-10-based-device-to-work-using-a-deep-link).
+3.  Click the **Enroll only in device management** link. This is only available in the servicing build 14393.82 (KB3176934). For older builds, use [Connecting your Windows 10-based device to work using a deep link](connecting-your-windows-10-based-device-to-work-using-a-deep-link).
 
     ![access work or school page](images/unifiedenrollment-rs1-40.png)
 
@@ -308,15 +308,13 @@ The following procedure describes how users can connect their devices to MDM usi
 
 1.  Starting with Windows 10, version 1607, you can create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm** and user-friendly display text, such as **Click here to connect Windows to work**:
 
-    **Note**  This will launch the flow equivalent to the Enroll into device management option in Windows 10, version 1511.
+    > **Note**  This will launch the flow equivalent to the Enroll into device management option in Windows 10, version 1511.
 
-     
+    - IT admins can add this link to a welcome email that users can click on to enroll into MDM.
 
-    -   IT admins can add this link to a welcome email that users can click on to enroll into MDM.
+      ![using enrollment deeplink in email](images/deeplinkenrollment1.png)
 
-        ![using enrollment deeplink in email](images/deeplinkenrollment1.png)
-
-    -   IT admins can also add this link to an internal web page that users refer to enrollment instructions.
+    - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 
 2.  After clicking the link or running it, Windows 10 will launch the enrollment app in a special mode that only allows MDM enrollments (similar to the Enroll into device management option in Windows 10, version 1511).
 
@@ -326,7 +324,7 @@ The following procedure describes how users can connect their devices to MDM usi
 
 3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
 
-    **Note**  Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
+    > **Note**  Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
      
 
@@ -384,9 +382,7 @@ You can collect diagnostic logs around your work connections by going to **Setti
 
  
 
- 
 
-10/10/2016
 
 
 
