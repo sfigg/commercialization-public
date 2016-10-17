@@ -15,7 +15,9 @@ title: Windows Secure Boot Key Creation and Management Guidance
 
 This document helps guide OEMs and ODMs in creation and management of the Secure Boot keys and certificates in a manufacturing environment. It addresses questions related to creation, storage and retrieval of Platform Keys (PKs), secure firmware update keys, and third party Key Exchange Keys (KEKs).
 
-Windows requirements for UEFI and Secure Boot can be found in the [Windows Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=320504) and other documents made available through sources such as Windows Connect and MSDN. This paper does not introduce new requirements or represent an official Windows program. It is intended as guidance beyond certification requirements, to assist in building efficient and secure processes for creating and managing Secure Boot Keys. This is important because UEFI Secure Boot is based on the usage of Private Key Infrastructure to authenticate code before allowed to execute.
+**Note:** These steps are not specific to PC OEMs. Enterprises and customers can also use these steps to configure their servers to support Secure Boot. 
+
+Windows requirements for UEFI and Secure Boot can be found in the [Windows Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=320504). This paper does not introduce new requirements or represent an official Windows program. It is intended as guidance beyond certification requirements, to assist in building efficient and secure processes for creating and managing Secure Boot Keys. This is important because UEFI Secure Boot is based on the usage of Public Key Infrastructure to authenticate code before allowed to execute.
 
 The reader is expected to know the fundamentals of UEFI, basic understanding of Secure Boot (Chapter 27 of the [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187)), and PKI security model.
 
@@ -36,7 +38,7 @@ This document serves as a starting point in developing customer ready PCs, facto
 
 The UEFI (Unified Extensible Firmware Interface) specification defines a firmware execution authentication process called Secure Boot. As an industry standard, Secure Boot defines how platform firmware manages certificates, authenticates firmware, and how the operating system interfaces with this process.
 
-Secure Boot is based on the Public Key Infrastructure (PKI) process to authenticate modules before they are allowed to execute. These modules can include firmware drivers, option ROMs, UEFI drivers on disk, UEFI applications, or UEFI boot loaders. Through image authentication before execution, Secure Boot reduces the risk of pre-boot malware attacks such as rootkits. Microsoft relies on UEFI Secure Boot in Windows 10, Windows 8.1 and Windows 8 as part of its Trusted Boot security architecture to improve platform security for our customers. Secure Boot is required for Windows 10, Windows 8.1 and Windows 8 client PCs as defined in the Windows Hardware Certification Requirements.
+Secure Boot is based on the Public Key Infrastructure (PKI) process to authenticate modules before they are allowed to execute. These modules can include firmware drivers, option ROMs, UEFI drivers on disk, UEFI applications, or UEFI boot loaders. Through image authentication before execution, Secure Boot reduces the risk of pre-boot malware attacks such as rootkits. Microsoft relies on UEFI Secure Boot in Windows 8 and above as part of its Trusted Boot security architecture to improve platform security for our customers. Secure Boot is required for Windows 8 and above client PCs, and for Windows Server 2016 as defined in the Windows Hardware Compatibility Requirements.
 
 The Secure Boot process works as follows and as shown in Figure 1:
 
@@ -136,7 +138,7 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 
     -   Customer requirements
 
-    -   Windows HCK requirements
+    -   Windows Hardware Compatibility requirements
 
     -   Key generation and management requirements.
 
@@ -161,14 +163,16 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
     As per section 27.5.1 of the UEFI 2.3.1 Errata C, the platform key establishes a trust relationship between the platform owner and the platform firmware. The platform owner enrolls the public half of the key (PKpub) into the platform firmware as specified in **Section 7.2.1 of the UEFI 2.3.1 Errata C**. This step moves the platform into user mode from setup mode. Microsoft recommends that the Platform Key be of type **EFI\_CERT\_X509\_GUID** with public key algorithm RSA, public key length of 2048 bits, and signature algorithm sha256RSA. The platform owner may use type **EFI\_CERT\_RSA2048\_GUID** if storage space is a concern. Public keys are used to check signatures as described earlier in this document. The platform owner can later use the private half of the key (PKpriv):
 
     -   To change platform ownership you must put the firmware into UEFI defined **setup mode** which disables Secure Boot. We recommend reverting to setup mode only if there is a need to do this during manufacturing.
+    
+    -   For desktop PC, OEMs manage PK and necessary PKI associated with it. For Servers, OEMs by default manage PK and necessary PKI. Enterprise customers or Server customers can also customize PK, replacing the OEM-trusted PK with a custom-proprietary PK to lock down the trust in UEFI Secure Boot firmware to itself.
 
     **1.3.3.1 To enroll or update a Key Exchange Key (KEK) Enrolling the Platform Key**
 
-    The platform owner enrolls the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Service SetVariable() as specified in Section 7.2.1 and resetting the platform. If the platform is in setup mode, then the new **PKpub** shall be signed with its **PKpriv** counterpart. If the platform is in user mode, then the new **PKpub** must be signed with the current **PKpriv**. If the PK is of type **EFI\_CERT\_X509\_GUID**, then this must be signed by the immediate **PKpriv**, not a private key of any certificate issued under the PK.
+    The platform owner enrolls the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Service SetVariable() as specified in Section 7.2.1 of UEFI Spec 2.3.1 errata C, and resetting the platform. If the platform is in setup mode, then the new **PKpub** shall be signed with its **PKpriv** counterpart. If the platform is in user mode, then the new **PKpub** must be signed with the current **PKpriv**. If the PK is of type **EFI\_CERT\_X509\_GUID**, then this must be signed by the immediate **PKpriv**, not a private key of any certificate issued under the PK.
 
     **1.3.3.2 Clearing the Platform Key**
 
-    The platform owner clears the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Ser¬vice SetVariable() with a variable size of 0 and resetting the platform. If the platform is in setup mode, then the empty variable does not need to be authenticated. If the platform is in user mode, then the empty variable must be signed with the current **PKpriv**; see Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C for details. It is strongly recommended that the production PKpriv never be used to sign a package to reset the platform since this allows Secure Boot to be disabled. This is primarily a pre-production test scenario.
+    The platform owner clears the public half of the Platform Key (**PKpub**) by calling the UEFI Boot Ser¬vice SetVariable() with a variable size of 0 and resetting the platform. If the platform is in setup mode, then the empty variable does not need to be authenticated. If the platform is in user mode, then the empty variable must be signed with the current **PKpriv**; see Section 7.2(Variable Services) under [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) 2.3.1 Errata C for details. It is strongly recommended that the production PKpriv never be used to sign a package to reset the platform since this allows Secure Boot to be disabled programmatically. This is primarily a pre-production test scenario.
 
     The platform key may also be cleared using a secure platform-specific method. In this case, the global variable Setup Mode must also be updated to 1.
 
@@ -182,9 +186,9 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 
     The number of PK generated is at the discretion of the Platform owner (OEM). These keys could be:
 
-    1.  **One per PC**. This may be required for government agencies, financial institutions, or other customers with high-security needs. It may require additional storage and crypto processing power to generate private and public keys for large numbers of PCs. There are a few different HSM solutions available to manage large number of keys based on the HSM vendor. For more info, see [Secure Boot Key Generation Using HSM](http://go.microsoft.com/fwlink/?LinkId=321184).
+    1.  **One per PC**. Having one unique key for each device. This may be required for government agencies, financial institutions, or other server customers with high-security needs. It may require additional storage and crypto processing power to generate private and public keys for large numbers of PCs. This adds the complexity of mapping devices with their corresponding PK when pushing out firmware updates to the devices in the future. There are a few different HSM solutions available to manage large number of keys based on the HSM vendor. For more info, see [Secure Boot Key Generation Using HSM](http://go.microsoft.com/fwlink/?LinkId=321184).
 
-    2.  **One per model**. The tradeoff here is that if a key is compromised all the machines within the same model would be vulnerable.
+    2.  **One per model**. Having one key per PC model. The tradeoff here is that if a key is compromised all the machines within the same model would be vulnerable. This is recommended by Microsoft for desktop PCs.
 
     3.  **One per product line**. If a key is compromised a whole product line would be vulnerable.
 
@@ -232,12 +236,10 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 
     **1.3.4.4 KEKDefault** The platform vendor may provide a default set of Key Exchange Keys in the KEKDefault variable. Please reference [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkID=220187) section 27.3.3 for more information.
 
-    **1.3.4.5 OEM/3rd party KEK on non-Windows RT PCs**
+    **1.3.4.5 OEM/3rd party KEK - adding multiple KEK**
 
-    Partners don’t need to have their own KEK. On non-Windows RT PCs the OEM may have additional KEKs to allow additional OEM or a trusted 3rd party control of the db and dbx.
-
-    In that case you will need to store the private half of the KEK in a safe storage location. The public half will be on the PC in UEFI defined KEK database. As per UEFI recommendations, the public key must be stored in non-volatile storage which is tamper and delete resistant on the PC.
-
+    Customers and Platform Owners don’t need to have their own KEK. On non-Windows RT PCs the OEM may have additional KEKs to allow additional OEM or a trusted 3rd party control of the db and dbx.
+ 
 -   **1.3.5 Secure Boot firmware update key**The Secure firmware update key is used to sign the firmware when it needs to be updated. This key has to have a minimum key strength of RSA-2048. All firmware updates must be signed securely by the OEM, their trusted delegate such as the ODM or IBV (Independent BIOS Vendor), or by a secure signing service.
 
     As per [NIST publication 800-147 Field Firmware Update](http://go.microsoft.com/fwlink/?LinkId=321186) must support all elements of guidelines:
@@ -304,7 +306,7 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 
 -   **1.4.3 Forbidden Signature Database (dbx)**
 
-    The contents of **EFI\_IMAGE\_SIGNATURE\_DATABASE1** dbx must be checked when verifying images before checking db and any matches must prevent the image from executing. The database may contain multiple certificates, keys, and hashes in order to identify forbidden images. The Windows Hardware Certification Requirements state that a dbx must be present, so any dummy value, such as the SHA-256 hash of `0`, may be used as a safe placeholder until such time as Microsoft begins delivering dbx updates.
+    The contents of **EFI\_IMAGE\_SIGNATURE\_DATABASE1** dbx must be checked when verifying images before checking db and any matches must prevent the image from executing. The database may contain multiple certificates, keys, and hashes in order to identify forbidden images. The Windows Hardware Certification Requirements state that a dbx must be present, so any dummy value, such as the SHA-256 hash of `0`, may be used as a safe placeholder until such time as Microsoft begins delivering dbx updates. [Click Here](http://www.uefi.org/revocationlistfile) to download the latest UEFI revocation list from Microsoft.
 
 -   **1.4.4 DbxDefault**: The platform vendor may provide a default set of entries for the Signature Database in the dbxDefault variable. For more information see section 27.5.3 in the UEFI specification.
 
@@ -364,54 +366,6 @@ The UEFI-defined root of trust consists of the Platform Key and any keys an OEM 
 
 *Table 1: Keys/db needed for Secure Boot*
 
--   **1.5.1 Key recommended for non-Windows RT PCs**
-
-    <table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Key/db Name</th>
-    <th align="left">Variable</th>
-    <th align="left">Owner</th>
-    <th align="left">Notes</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Microsoft UEFI driver signing CA</p></td>
-    <td align="left"><p>db</p></td>
-    <td align="left"><p>Microsoft</p></td>
-    <td align="left"><p>Microsoft signer for 3rd party UEFI drivers and Apps signed through the DevCenter program: [http://go.microsoft.com/fwlink/?LinkId=321194](http://go.microsoft.com/fwlink/?LinkId=321194).</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
-    *Table 2: Non-Windows RT Secure Boot keys*
-
-    **1.5.2 Secure Boot PKI workflow**
-
-    Generating a key:
-
-    1.  Create keys: PK, Secure firmware update key, and other keys as needed.
-
-    2.  Create a backup of the PK, in case you need to rekey the PC, or if the original is lost.
-
-    3.  Install the MS KEK, db, and empty dbx (unless otherwise specified) using PowerShell scripts and/or BIOS vendor firmware methods.
-
-    4.  Update the firmware with pre-generated SecureFirmwareUpdateKey-public or hash (to save space).
-
-    5.  Sign and install UEFI variable PK using PowerShell scripts and/or BIOS vendor firmware.
-
-    6.  Run tests, including Windows HCK Secure Boot tests. For example, use [ChipSec](http://go.microsoft.com/fwlink/?LinkId=398265) to analyze the security of the platform components.
-
-    7.  Verify the state of Secure Boot variables by using PowerShell SecureBoot cmdlets, for example: [Confirm-SecureBootUEFI](http://go.microsoft.com/fwlink/?LinkId=398260) and [Get-SecureBootUEFI](http://go.microsoft.com/fwlink/?LinkId=398261).
 
 ## <span id="KeyManagementSolutions"></span><span id="keymanagementsolutions"></span><span id="KEYMANAGEMENTSOLUTIONS"></span>2. Key Management Solutions
 
@@ -516,13 +470,17 @@ The following metrics can help you select a HSM PC based on the requirements of 
 
     The drawbacks of Smart cards are similar to TPMs. They may not have fast crypto processors to speed up processing in the manufacturing environment. They also are not suitable for storing large number of keys. Backup and high availability and standards compliance to FIPS 140-2 level 3 may not be available.
 
--   **2.2.5 Software-centric approaches (NOT RECOMMENDED)**
+-   **2.2.5 Extended Validation Certificate**
+
+    EV Certificates are high assurance certificates whose private keys are stored in hardware tokens. This helps establish stronger key management practices. EV certificates have the same drawbacks as Smart cards.     
+
+-   **2.2.6 Software-centric approaches (NOT RECOMMENDED)**
 
     Use crypto APIs for key management. This may involve storing a key in a key container on an encrypted hard drive and possible for additional sandboxing and security use a Virtual machine.
 
     These solutions are not as secure as using an HSM and expose a higher attack vector.
 
-    **2.2.5.1 Makecert (NOT RECOMMENDED)**
+    **2.2.6.1 Makecert (NOT RECOMMENDED)**
 
     Makecert is a Microsoft tool and can be used as follows for key generation. To make sure that the attack surface is minimized you may need to “air gap” the PC. The PC that has the PKpriv on should not be connected to the network. It should be in a secure location and ideally should at least use a smart card reader if not a real HSM.
 
@@ -594,7 +552,7 @@ The following metrics can help you select a HSM PC based on the requirements of 
 
     Any drivers that are included in the system firmware image do not need to be re-verified. Being part of the overall system image provides sufficient assurance that the driver is trusted on the PC.
 
-    Microsoft has this made available to anyone who wants to sign UEFI drivers. This certificate is part of the Windows HCK Secure Boot tests.
+    Microsoft has this made available to anyone who wants to sign UEFI drivers. This certificate is part of the Windows HCK Secure Boot tests. Follow [this blog]((https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/) to read more about UEFI CA signing policy and updates.
 
 -   **2.4.2 Boot loaders**
 
@@ -647,7 +605,7 @@ This section intends to summarize the above sections and show a step by step app
 
     1.  Install the **Microsoft Windows Production PCA 2011** into db.
 
-    2.  Install an empty dbx if Microsoft does not provide one.
+    2.  Install an empty dbx if Microsoft does not provide one. Windows will automatically update DBX to the latest DBX through Windows Update on first reboot.
 
     **Note**  
     Use PowerShell cmdlets which are part of the Windows HCK tests or use methods provided by BIOS vendor.

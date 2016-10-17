@@ -11,9 +11,7 @@ title: Secure Boot
 
 Secure Boot is a security standard developed by members of the PC industry to help make sure that your PC boots using only software that is trusted by the PC manufacturer. Support for Secure Boot was introduced in Windows 8.
 
-When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs) and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
-
-**Note**  **Did you see the "Secure Boot isn't configured correctly" watermark after upgrading to Windows 8.1, Windows Server 2012 R2, or Windows RT 8.1?** If so, install this patch: [Microsoft Knowledge Base Article ID 2902864](http://go.microsoft.com/fwlink/p/?linkid=329932).
+When the PC starts, the firmware checks the signature of each piece of boot software, including firmware drivers (Option ROMs), EFI applications, and the operating system. If the signatures are good, the PC boots, and the firmware gives control to the operating system.
 
  
 
@@ -22,11 +20,10 @@ When the PC starts, the firmware checks the signature of each piece of boot soft
 
 -   **Do I need Secure Boot in order to upgrade to the latest version of Windows?**
 
-    No. There are no additional hardware requirements from Windows Vista or Windows 7.
+    No. There are no additional hardware or firmware requirements from Windows Vista or Windows 7 to upgrade to the latest version of Windows.
 
-    Secure Boot is an optional feature that can be activated by a PC manufacturer to enhance the security of a PC, and you’ll find it on all new logo-certified Windows devices.
 
--   **What happens if my new hardware isn’t trusted?**
+-   **What happens if my new hardware isn’t trusted by my PC manufacturer?**
 
     Your PC may not be able to boot. There are two kinds of problems that can occur:
 
@@ -36,7 +33,9 @@ When the PC starts, the firmware checks the signature of each piece of boot soft
 
     For more info, see [Windows 8 with Secure Boot enabled may no longer boot after installing new hardware](http://support.microsoft.com/kb/2800988).
 
--   **How can I add hardware or run software or operating systems that haven’t been trusted by my manufacturer?**
+-   **How can I add hardware or run software or operating systems that haven’t been trusted by my PC manufacturer?**
+
+    -   Most software and hardware should work seamlessly on Windows because they are signed by a trusted Microsoft certificate to support UEFI Secure Boot.
 
     -   You can check for software updates from Microsoft and/or the PC manufacturer.
 
@@ -44,8 +43,9 @@ When the PC starts, the firmware checks the signature of each piece of boot soft
 
     -   For most PCs, you can disable Secure Boot through the PC’s BIOS. For more info, see [Disabling Secure Boot](disabling-secure-boot.md).
 
-        For logo-certified PCs, Secure Boot is required to be configured so that it cannot be disabled.
+    -   You can customize which certificates are trusted by Secure Boot through the PC's BIOS, in the customize Secure Boot menu.
 
+        
 -   **How do I edit my PC’s Secure Boot database?**
 
     This can only be done by the PC manufacturer.
