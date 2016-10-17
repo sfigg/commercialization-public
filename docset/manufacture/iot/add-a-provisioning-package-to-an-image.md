@@ -197,6 +197,16 @@ You can connect to your device's portal page to troubleshoot network connections
 
     If your network requires steps such as accepting license terms, the device may not auto-connect.
 
+## <span id="Troubleshooting"></span>Troubleshooting
+
+To confirm that the provisioning package settings work on your network, use a laptop PC to test:
+
+1.	Disconnect the laptop from the network: Click on the network icon in the system tray, select the wireless network, and click **Disconnect**. 
+
+2.	Confirm that the network is no longer connected.
+
+3.	Install the provisioning package by double-clicking ProductAProv.ppkg. The wireless network should reconnect automatically.
+
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
 [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md) 
