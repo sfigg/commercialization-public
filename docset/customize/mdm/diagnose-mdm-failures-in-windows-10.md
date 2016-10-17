@@ -9,11 +9,9 @@ ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
 
 # Diagnose MDM failures in Windows 10
 
-
 To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
 
 ## Collect logs directly from Windows 10 PCs
-
 
 Starting with the Windows 10, version 1511, MDM logs are captured in the Event Viewer in the following location:
 
@@ -48,7 +46,6 @@ For more detailed logging, you can enable **Debug** logs. Right click on the **D
 You can open the log files (.evtx files) in the Event Viewer on a Windows 10 PC running the November 2015 update.
 
 ## Collect logs remotely from Windows 10 PCs
-
 
 When the PC is already enrolled in MDM, you can remotely collect logs from the PC through the MDM channel if your MDM server supports this. The [DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md) can be used to enable an event viewer channel by full name. Here are the Event Viewer names for the Admin and Debug channels:
 
@@ -98,12 +95,11 @@ Example: Export the Debug logs
 
 ## Collect logs from Windows 10 Mobile devices
 
-
 Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic]( http://go.microsoft.com/fwlink/p/?LinkId=718232) app to collect logs.
 
 **To collect logs manually**
 
-1.  Download and install the [Field Medic]( http://go.microsoft.com/fwlink/p/?LinkId=718232) app for the store.
+1.  Download and install the [Field Medic]( http://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
 2.  Open the Field Medic app and then click on **Advanced**.
 
     ![field medic screenshot](images/diagnose-mdm-failures2.png)
@@ -170,7 +166,6 @@ The following table contains a list of common providers and their corresponding 
  
 
 ## Collect logs remotely from Windows 10 Mobile devices
-
 
 For mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md).
 
@@ -270,7 +265,6 @@ After the logs are collected on the device, you can retrieve the files through t
 
 ## View logs
 
-
 For best results, ensure that the PC or VM on which you are viewing logs matches the build of the OS from which the logs were collected.
 
 1.  Open eventvwr.msc.
@@ -299,7 +293,6 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 
 ## Collect device state data
 
-
 Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
 
 ``` syntax
@@ -325,9 +318,7 @@ Here's an example of how to collect current MDM device state data using the [Dia
 
  
 
- 
 
-10/10/2016
 
 
 
