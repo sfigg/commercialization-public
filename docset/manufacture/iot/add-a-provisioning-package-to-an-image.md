@@ -205,7 +205,21 @@ To confirm that the provisioning package settings work on your network, use a la
 
 2.	Confirm that the network is no longer connected.
 
-3.	Install the provisioning package by double-clicking ProductAProv.ppkg. The wireless network should reconnect automatically.
+3.	Install the provisioning package by double-clicking ProductAProv.ppkg. The wireless network should connect automatically.
+
+If it doesn't connect, check to see if the profile has been added:
+
+1.  Connect using an ethernet connection to the device.
+
+2.  Connect using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe).
+
+3.  When connected, check to see what profiles have been installed:
+
+    ```syntax
+    netsh wlan show profiles
+    ``` 
+
+    The network should appear in the list of User profiles.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
