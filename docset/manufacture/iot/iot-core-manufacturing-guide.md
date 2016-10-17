@@ -26,7 +26,7 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1a: Create a basic image](create-a-basic-image.md)
 -   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
 -   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
--   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
+-   [Lab 1d: Add networking and other provisioning package settings to an image](add-a-provisioning-package-to-an-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 2: Creating your own board support package](create-a-new-bsp.md)

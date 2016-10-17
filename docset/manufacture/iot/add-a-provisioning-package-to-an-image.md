@@ -3,10 +3,10 @@ author: kpacquer
 Description: 'We''ll create a provisioning package that contains some sample Wi-Fi settings.'
 ms.assetid: d9a50f87-e8c0-48da-89e7-0cdd542ce053
 MSHAttr: 'PreferredLib:/library'
-title: 'Lab 1d: Add a provisioning package to an image'
+title: 'Lab 1d: Add networking and other provisioning package settings to an image'
 ---
 
-# Lab 1d: Add a provisioning package to an image
+# Lab 1d: Add networking and other provisioning package settings to an image
 
 We'll create a provisioning package that contains some sample Wi-Fi settings. You can use provisioning package in Windows Imaging and Configuration Designer (ICD) to add apps, drivers, features, or to modify many common settings, such as IT device management and policy settings.
 
@@ -158,6 +158,8 @@ For this lab, we start a new product, ProductB, that includes the default app (B
     This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.FFU.
 
 2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+
+    Note: Ignore the settings for "Wi-Fi Netowrk Connection" in these menus, these settings are not used when installing custom devices. 
 
 **Test to see if your provisioning settings were applied**
 
