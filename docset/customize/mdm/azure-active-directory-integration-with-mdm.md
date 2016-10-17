@@ -36,7 +36,7 @@ Windows 10 introduces a new way to configure and deploy corporate owned Windows
 
 Azure AD Join also enables company owned devices to be automatically enrolled in, and managed by an MDM. Furthermore, Azure AD Join can be performed on a store-bought PC, in the out-of-box experience (OOBE), which helps organizations streamline their device deployment. An administrator can require that users belonging to one or more groups enroll their devices for management with an MDM. If a user is configured to require automatic enrollment during Azure AD Join, this enrollment becomes a mandatory step to configure Windows. If the MDM enrollment fails, then the device will not be joined to Azure AD.
 
-**Important**  Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](https://msdn.microsoft.com/library/azure/dn499825.aspx) license.
+> [!Important]  Every user enabled for automatic MDM enrollment with Azure AD Join must be assigned a valid [Azure Active Directory Premium](https://msdn.microsoft.com/library/azure/dn499825.aspx) license.
 
  
 
@@ -62,7 +62,7 @@ For Azure AD enrollment to work for an Active Directory Federated Services (AD F
 
 Once a user has an Azure AD account added to Windows 10 and enrolled in MDM, the enrollment can be manages through **Settings** &gt; **Accounts** &gt; **Work access**. Device management of either Azure AD Join for corporate scenarios or BYOD scenarios are similar.
 
-**Note**  Users cannot remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
+> [!Note]  Users cannot remove the device enrollment through the **Work access** user interface because management is tied to the Azure AD or work account.
 
  
 
@@ -107,7 +107,7 @@ A cloud-based MDM is a SaaS application that provides device management capabili
 
 The MDM vendor must first register the application in their home tenant and mark it as a multi-tenant application. Here a code sample from GitHub that explains how to add multi-tenant applications to Azure AD, [WepApp-WebAPI-MultiTenant-OpenIdConnect-DotNet](http://go.microsoft.com/fwlink/p/?LinkId=613661).
 
-**Note**  For the MDM provider, if you don't have an existing Azure AD tentant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
+> **Note**  For the MDM provider, if you don't have an existing Azure AD tentant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
 
  
 
@@ -118,7 +118,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 1.  Login to the Azure Management Portal using an admin account in your home tenant.
 2.  In the left navigation, click on the **Active Directory**.
 3.  Click the directory tenant where you want to register the application.
-
+    
     Ensure that you are logged into your home tenant.
 
 4.  Click the **Applications** tab.
@@ -172,7 +172,7 @@ The following image illustrates how MDM applications will show up in the Azure a
 
 You should work with the Azure AD engineering team if your MDM application is cloud-based. The following table shows the required information to create an entry in the Azure AD app gallery.
 
-<table>
+<table style="vertical-align:top">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
@@ -279,11 +279,12 @@ The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join 
 
 ### Redirect to the Terms of Use endpoint
 
-This is a full page redirect to the Terms of User endpoint hosted by the MDM. Here is an example URL, https://fabrikam.contosomdm.com/TermsOfUse.
+This is a full page redirect to the Terms of User endpoint hosted by the MDM. Here is an example URL, https:<span></span>//fabrikam.contosomdm.com/TermsOfUse.
 
 The following parameters are passed in the query string:
 
-<table>
+<style type='text/css'> table.topalign td { vertical-align: top } </style>
+<table class="topalign">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
@@ -357,10 +358,9 @@ The following claims are expected in the access token passed by Windows to the T
 
  
 
-**Note**  There is no device ID claim in the access token because the device may not yet be enrolled at this time.
+> **Note**  There is no device ID claim in the access token because the device may not yet be enrolled at this time.
 
  
-
 To retrieve the list of group memberships for the user, you can use the [Azure AD Graph API](http://go.microsoft.com/fwlink/p/?LinkID=613654).
 
 Here's an example URL.
@@ -941,9 +941,6 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
 
  
 
- 
-
-10/10/2016
 
 
 
