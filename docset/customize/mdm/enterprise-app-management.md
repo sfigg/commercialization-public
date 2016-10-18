@@ -148,7 +148,7 @@ There are two basic types of apps you can deploy: Store apps and enterprise sign
 
 ### Unlock the device for non-Store apps
 
-To deploy app that are not from the Windows Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#Deploy-an-offline-license-to-a-user).
+To deploy app that are not from the Windows Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
 The AllowAllTrustedApps policy enables the installation apps that are trusted by a certificate in the Trusted People on the device or a root certificate in the Trusted Root of the device. The policy is not configured by default, which means only apps from the Windows Store can be installed. If the management server implicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
@@ -302,7 +302,7 @@ Here are the requirements for this scenario:
 -   The device does not need to have connectivity to the Windows Store, store services, or the have the Windows Store UI be enabled.
 -   The user must be logged in, but association with AAD identity is not required.
 
-> **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#Deploy-an-offline-license-to-a-user).
+> **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
  
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
@@ -386,6 +386,7 @@ To provision app for all users of a device from a hosted location, the managemen
 > **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
  
+
 Here is an example of app installation.
 
 > **Note**  This is only supported in Windows 10 for desktop editions.
@@ -708,7 +709,7 @@ Updating an existing app follows the same process as an initial installation. Fo
 
 ### Update provisioned apps
 
-A provisioned app automatically updates when an app update is sent to the user. You can also update a provisioned app using the same process as an initial provisioning. For more information about initial provisioning, see [Provision apps for all users of a device](#Provision-apps-for-all-users-of-a device).
+A provisioned app automatically updates when an app update is sent to the user. You can also update a provisioned app using the same process as an initial provisioning. For more information about initial provisioning, see [Provision apps for all users of a device](#provision-apps-for-all-users-of-a-device).
 
 ### Prevent app from automatic updates
 
