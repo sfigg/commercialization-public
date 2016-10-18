@@ -88,7 +88,36 @@
 ### [Systems](design/compatibility/systems.md)
 
 # [Customize](customize/index.md)
+## [Windows System Image Manager Technical Reference](customize/wsim/windows-system-image-manager-technical-reference--win8.md)
+### [Windows System Image Manager Overview Topics](customize/wsim/windows-system-image-manager-overview-topics-win8.md)
+#### [Windows System Image Manager Scenarios Overview](customize/wsim/windows-system-image-manager-scenarios-overview-win8.md)
+#### [Windows System Image Manager User Interface Overview](customize/wsim/windows-system-image-manager-user-interface-overview-win8.md)
+#### [Windows Image Files and Catalog Files Overview](customize/wsim/windows-image-files-and-catalog-files-overview-win8.md)
+#### [Answer Files Overview](customize/wsim/answer-files-overview-win8.md)
+#### [Best Practices for Authoring Answer Files](customize/wsim/best-practices-for-authoring-answer-files-win8.md)
+#### [Distribution Shares and Configuration Sets Overview](customize/wsim/distribution-shares-and-configuration-sets-overview-win8.md)
+### [Windows System Image Manager How-to Topics](customize/wsim/windows-system-image-manager-how-to-topics-win8.md)
+#### [Open a Windows Image or Catalog File](customize/wsim/open-a-windows-image-or-catalog-file-win8.md)
+#### [Create or Open an Answer File](customize/wsim/create-or-open-an-answer-file-win8.md)
+#### [Configure Components and Settings in an Answer File](customize/wsim/configure-components-and-settings-in-an-answer-file-win8.md)
+#### [Validate an Answer File](customize/wsim/validate-an-answer-file-win8.md)
+#### [Hide Sensitive Data in an Answer File](customize/wsim/hide-sensitive-data-in-an-answer-file-win8.md)
+#### [Add a Device Driver Path to an Answer File](customize/wsim/add-a-device-driver-path-to-an-answer-file-win8.md)
+#### [Add a Package to an Answer File](customize/wsim/add-a-package-to-an-answer-file-win8.md)
+#### [Add a Custom Command to an Answer File](customize/wsim/add-a-custom-command-to-an-answer-file-win8.md)
+#### [Find a Component, Setting, or Package in Windows SIM](customize/wsim/find-a-component-setting-or-package-in-windows-sim-win8.md)
+#### [Create a Configuration Set](customize/wsim/create-a-configuration-set-win8.md)
+#### [Create or Open a Distribution Share](customize/wsim/create-or-open-a-distribution-share-win8.md)
+#### [Manage Files and Folders in a Distribution Share](customize/wsim/manage-files-and-folders-in-a-distribution-share-win8.md)
+#### [Add Packages to a Distribution Share](customize/wsim/add-packages-to-a-distribution-share-win8.md)
+### [Windows System Image Manager Reference](customize/wsim/windows-system-image-manager-reference-topics-win8.md)
+#### [Component Settings and Properties Reference](customize/wsim/component-settings-and-properties-referencewin8.md)
+#### [Windows System Image Manager Architecture](customize/wsim/windows-system-image-manager-architecture-win8.md)
+#### [Windows System Image Manager Supported Platforms](customize/wsim/windows-system-image-manager-supported-platforms.md)
+
 ## [Unattended Windows Setup Reference](customize/unattend/)
+
+
 
 # [Test](test/index.md)
 
