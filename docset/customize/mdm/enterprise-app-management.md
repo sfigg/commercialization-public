@@ -9,11 +9,9 @@ ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
 
 # Enterprise app management
 
-
 This topic covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows. It is the ability to manage both Store and non-Store apps as part of the native MDM capabilities. New in Windows 10 is the ability to take inventory of all your apps.
 
 ## Application management goals
-
 
 Windows 10 offers the ability for management servers to:
 
@@ -27,7 +25,6 @@ Windows 10 offers the ability for management servers to:
 -   Remove the provisioned app on the device running Windows 10 for desktop editions
 
 ## Inventory your apps
-
 
 Windows 10 lets you inventory all apps deployed to a user and all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](enterprisemodernappmanagement-configuration-service-provider.md) configuration service provider (CSP) inventories packaged apps and does not include traditional Win32 apps installed via MSI or executables. When the apps are inventoried they are separated based on the following app classifications:
 
@@ -47,10 +44,9 @@ Inventory can be performed recursively at any level from the AppManagement node 
 
 Inventory is specific to the package full name and lists bundled packs and resources packs as applicable under the package family name.
 
-**Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
+> **Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
 
  
-
 Here are the nodes for each package full name:
 
 -   Name
@@ -115,9 +111,8 @@ Here are the nodes for each license ID:
 
 For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md).
 
-**Note**  The LicenseID in the CSP is the content ID for the license.
+> **Note**  The LicenseID in the CSP is the content ID for the license.
 
- 
 
 Here is an example of a query for all app licenses on a device.
 
@@ -149,12 +144,11 @@ Here is an example of a query for all app licenses for a user.
 
 ## Enable the device to install non-Store apps
 
-
 There are two basic types of apps you can deploy: Store apps and enterprise signed apps. To deploy enterprise signed apps, you must enable a setting on the device to allow trusted apps. The apps can be signed by a Microsoft approved root (such as Symantec), an enterprise deployed root or apps that are self-signed. This section covers the steps to configure the device for non-store app deployment.
 
 ### Unlock the device for non-Store apps
 
-To deploy app that are not from the Windows Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#deploy-offline-license).
+To deploy app that are not from the Windows Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#Deploy-an-offline-license-to-a-user).
 
 The AllowAllTrustedApps policy enables the installation apps that are trusted by a certificate in the Trusted People on the device or a root certificate in the Trusted Root of the device. The policy is not configured by default, which means only apps from the Windows Store can be installed. If the management server implicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
@@ -228,7 +222,6 @@ Here is an example.
 
 ## Install your apps
 
-
 You can install apps to a specific user or to all users of a device. Apps are installed directly from the Windows Store or in some cases from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md) to install apps.
 
 ### Deploy apps to user from the Store
@@ -270,7 +263,7 @@ Here are the changes from the previous release:
 
 3.  The skuid is a new parameter that is required. This value is acquired as a part of the Store for Business to management tool sync.
 
-### <a href="" id="deploy-offline-license"></a>Deploy an offline license to a user
+### Deploy an offline license to a user
 
 If you purchased an app from the Store for Business, the app license must be deployed to the device.
 
@@ -309,10 +302,9 @@ Here are the requirements for this scenario:
 -   The device does not need to have connectivity to the Windows Store, store services, or the have the Windows Store UI be enabled.
 -   The user must be logged in, but association with AAD identity is not required.
 
-**Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-offline-license).
+> **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#Deploy-an-offline-license-to-a-user).
 
  
-
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 Here is an example of a line-of-business app installation.
@@ -376,7 +368,7 @@ Here is an example of an app installation with dependencies.
 </Exec>
 ```
 
-### <a href="" id="provision-app-all-users"></a>Provision apps for all users of a device
+### Provision apps for all users of a device
 
 Provisioning allows you to stage the app to the device and all users of the device can have the app registered on their next login. This is only supported for app purchased from the Store for Business and the app is specified for an offline license or the app is a non-Store app. The app must be offered from a hosted location. The app is installed as a local system. To install to a local file share, the 'local system' of the device must have access to the share.
 
@@ -391,15 +383,13 @@ Here are the requirements for this scenario:
 
 To provision app for all users of a device from a hosted location, the management server performs an Add and Exec command on the AppInstallation node in the device context. The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
-**Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
+> **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
  
-
 Here is an example of app installation.
 
-**Note**  This is only supported in Windows 10 for desktop editions.
+> **Note**  This is only supported in Windows 10 for desktop editions.
 
- 
 
 ``` syntax
 <!-- Add PackageFamilyName -->
@@ -435,9 +425,8 @@ The DeploymentOptions parameter is only available in the user context.
 
 Here is an example of app installation with dependencies.
 
-**Note**  This is only supported in Windows 10 for desktop editions.
+> **Note**  This is only supported in Windows 10 for desktop editions.
 
- 
 
 ``` syntax
 <!-- Add PackageFamilyName -->
@@ -543,12 +532,10 @@ For user-based installation, use the ./User path and for provisioning of apps, u
 
 The Data field value of 0 (zero) indicates sucess, otherwise it is an error code. If there is a failure, you can get more details from the AppInstallation node.
 
-**Note**  At this time, the alert for Store app installation is not yet available.
+> **Note**  At this time, the alert for Store app installation is not yet available.
 
- 
 
 ## Uninstall your apps
-
 
 You can uninstall apps from users from Windows 10 devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
 
@@ -590,10 +577,9 @@ Here is an example for uninstalling a specific version of the app for a user.
 
 You can remove provisioned apps from a device for a specific version or for all versions of a package family. When a provisioned app is removed, it is not available to future users for the device. Logged in users who has the app registered to them will continue to have access to the app. If you want to removed the app for those users, you must explicitly uninstall the app for those users.
 
-**Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
+> **Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
 
  
-
 Removing provisioned app occurs in the device context.
 
 Here is an example for removing a provisioned app from a device.
@@ -682,7 +668,6 @@ Here is an example. There is only one uninstall for hosted and store apps.
 
 ## Update your apps
 
-
 Apps installed on a device can be updated using the management server. Apps can be updated directly from the store or installed from a hosted location.
 
 ### Update apps directly from the store
@@ -723,7 +708,7 @@ Updating an existing app follows the same process as an initial installation. Fo
 
 ### Update provisioned apps
 
-A provisioned app automatically updates when an app update is sent to the user. You can also update a provisioned app using the same process as an initial provisioning. For more information about initial provisioning, see [Provision apps for all users of a device](#provision-app-all-users).
+A provisioned app automatically updates when an app update is sent to the user. You can also update a provisioned app using the same process as an initial provisioning. For more information about initial provisioning, see [Provision apps for all users of a device](#Provision-apps-for-all-users-of-a device).
 
 ### Prevent app from automatic updates
 
@@ -751,16 +736,14 @@ Here is an example.
 
 ## Additional app management scenarios
 
-
 The following subsections provide information about additional settings configurations.
 
 ### Restrict app installation to the system volume
 
 You can install app on non-system volumes, such as a secondary partition or removable media (USB or SD cards). Using the RestrictApptoSystemVolume policy, you can prevent apps from getting installed or moved to non-system volumes. For more information about this policy, see [Policy CSP](policy-configuration-service-provider.md).
 
-**Note**  This is only supported in mobile devices.
+> **Note**  This is only supported in mobile devices.
 
- 
 
 Here is an example.
 
@@ -794,10 +777,9 @@ Here is an example.
 
 In Windows 10 Mobile IT administrators can set a policy to restrict user application data for a Windows Store app to the system volume, regardless of where the package is installed or moved.
 
-**Note**  The feature is only for Windows 10 Mobile.
+> **Note**  The feature is only for Windows 10 Mobile.
 
  
-
 The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-service-provider.md) enables you to restrict all user application data to stay on the system volume. When the policy is not configured or if it is disabled, and you move a package or when it is installed to a difference volume, then the user application data will moved to the same volume. You can set this policy to 0 (off, default) or 1.
 
 Here is an example.
@@ -832,9 +814,8 @@ Here is an example.
 
 The Universal Windows app has the ability to share application data between the users of the device. The ability to share data can be set at a package family level or per device.
 
-**Note**  This is only applicable to multi-user devices.
+> **Note**  This is only applicable to multi-user devices.
 
- 
 
 The AllowSharedUserAppData policy in [Policy CSP](policy-configuration-service-provider.md) enables or disables app packages to share data between app packages when there are multiple users. If you enable this policy, applications can share data between packages in their package family. Data can be shared through ShareLocal folder for that package family and local machine. This folder is available through the Windows.Storage API.
 
@@ -872,9 +853,7 @@ Here is an example.
 
  
 
- 
 
-10/10/2016
 
 
 
