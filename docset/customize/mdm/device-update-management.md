@@ -7,6 +7,11 @@ MSHAttr:
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ---
 
+<style type="text/css">
+    td { vertical-align:top; }
+</style>
+
+
 # Device update management
 
 In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology. In Windows 10, we are investing heavily in extending the management capabilities available to MDMs. One key feature we are adding is the ability for MDMs to keep devices up-to-date with the latest Microsoft Updates.
@@ -285,16 +290,16 @@ If the Allow Telemetry policy is enabled and the Options value is set to 0, then
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>OS upgrade</p></td>
-<td style="vertical-align:top"><p>8 months</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
+<td><p>OS upgrade</p></td>
+<td><p>8 months</p></td>
+<td><p>1 month</p></td>
+<td><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Update</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>1 week</p></td>
-<td style="vertical-align:top"><div class="alert">
+<td><p>Update</p></td>
+<td><p>1 month</p></td>
+<td><p>1 week</p></td>
+<td><div class="alert">
 <strong>Note</strong>  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
 <div>
@@ -312,10 +317,10 @@ If the Allow Telemetry policy is enabled and the Options value is set to 0, then
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Other/cannot defer</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
+<td><p>Other/cannot defer</p></td>
+<td><p>No deferral</p></td>
+<td><p>No deferral</p></td>
+<td><p>Any update category not specifically enumerated above falls into this category.</p>
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
@@ -622,9 +627,8 @@ Upgrades deferred until the next period.
 
 Supported operation is Get.
 
-<a href="" id="new-update-policies"></a>
-## Windows 10, version 1607 for update management
 
+## Windows 10, version 1607 for update management
 
 Here are the new policies added in Windows 10, version 1607 in [Policy CSP](policy-configuration-service-provider.md). You should use these policies for the new Windows 10, version 1607 devices.
 
@@ -655,50 +659,50 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>BranchReadinessLevel</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>16: systems take Feature Updates on the Current Branch (CB) train</p>
+<td><p>BranchReadinessLevel</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>16: systems take Feature Updates on the Current Branch (CB) train</p>
 <p>32: systems take Feature Updates on the Current Branch for Business</p>
 <p>Other value or absent: receive all applicable updates (CB)</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>DeferQualityUpdates</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>1: defer quality updates</p>
+<td><p>DeferQualityUpdates</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>1: defer quality updates</p>
 <p>Other value or absent: don’t defer quality updates</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>DeferQualityUpdatesPeriodInDays</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>0-30: days to defer quality updates</p></td>
+<td><p>DeferQualityUpdatesPeriodInDays</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>0-30: days to defer quality updates</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>PauseQualityUpdates</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>1: pause quality updates</p>
+<td><p>PauseQualityUpdates</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>1: pause quality updates</p>
 <p>Other value or absent: don’t pause quality updates</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>DeferFeatureUpdates</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>1: defer feature updates</p>
+<td><p>DeferFeatureUpdates</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>1: defer feature updates</p>
 <p>Other value or absent: don’t defer feature updates</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>DeferFeatureUpdatesPeriodInDays</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>0-180: days to defer feature updates</p></td>
+<td><p>DeferFeatureUpdatesPeriodInDays</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>0-180: days to defer feature updates</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>PauseFeatureUpdates</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>1: pause feature updates</p>
+<td><p>PauseFeatureUpdates</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>1: pause feature updates</p>
 <p>Other value or absent: don’t pause feature updates</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>ExcludeWUDriversInQualityUpdate</p></td>
-<td style="vertical-align:top"><p>REG_DWORD</p></td>
-<td style="vertical-align:top"><p>1: exclude WU drivers</p>
+<td><p>ExcludeWUDriversInQualityUpdate</p></td>
+<td><p>REG_DWORD</p></td>
+<td><p>1: exclude WU drivers</p>
 <p>Other value or absent: offer WU drivers</p></td>
 </tr>
 </tbody>
@@ -727,15 +731,14 @@ For policies supported for Windows Update for Business, when you set 1511 polici
 
 ## <a href="" id="userexperiencescreenshot"></a>Update management user experience screenshot
 
-
 The following screenshots of the administrator console shows the list of update titles, approval status, and additional metadata fields.
 
 ![mdm update management screenshot](images/deviceupdatescreenshot1.png)
 
 ![mdm update managment metadata screenshot](images/deviceupdatescreenshot2.png)
 
-## <a href="" id="syncmlexample"></a>SyncML example
 
+## <a href="" id="syncmlexample"></a>SyncML example
 
 Set auto update to notify and defer.
 
@@ -783,7 +786,6 @@ Set auto update to notify and defer.
 ```
 
 ## Process flow diagram and screenshots of server sync process
-<a href="" id="screenshotsofserversync"></a>
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
