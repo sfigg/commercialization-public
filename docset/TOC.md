@@ -459,6 +459,11 @@
 
 ## [Unattended Windows Setup Reference](customize/unattend/)
 
+## [Preinstalled apps](customize/preinstall/preinstall-apps.md)
+### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
+### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
+### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
+
 
 
 # [Test](test/index.md)
