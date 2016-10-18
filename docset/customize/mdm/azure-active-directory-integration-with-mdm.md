@@ -22,12 +22,10 @@ Once a device is enrolled in MDM, the MDM can enforce compliance with corporate 
 Several ways to connect your devices:
 
 For company-owned devices:
-
 -   Join Windows to a traditional Active Directory domain
 -   Join Windows to Azure AD
 
 For personal devices (BYOD):
-
 -   Add a Microsoft work account to Windows
 
 ### Azure AD Join
@@ -48,7 +46,6 @@ Windows 10 also introduces a simpler way to configure personal devices to acces
 ## Integrated MDM enrollment and UX
 
 Two Azure AD MDM enrollment scenarios:
-
 -   Joining a device to Azure AD for company-owned devices
 -   Adding a work account to a personal device (BYOD)
 
@@ -128,7 +125,6 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 12. Find the client ID value and copy it.
 
     You will need this later when configuring your application. This client ID is used when obtaining access tokens and adding applications to the Azure AD app gallery.
-
 13. Generate a key for your application and copy it.
 
     You will need this to call the Azure AD Graph API to report device compliance. This is covered in the subsequent section.
@@ -204,7 +200,6 @@ You should work with the Azure AD engineering team if your MDM application is cl
 </table>
 
  
-
 ### Add on-premises MDM to the app gallery
 
 There are no special requirements for adding on-premises MDM to the app gallery.There is a generic entry for administrator to add an app to their tenant.
@@ -266,7 +261,6 @@ An MDM page must adhere to a predefined theme depending on the scenario that is 
 </table>
 
  
-
 ## Terms of Use protocol semantics
 
 The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join protocol flow, Windows performs a full-page redirect to this endpoint. This enables the MDM to display the terms and conditions that apply and allows the user to accept or reject the terms associated with enrollment. After the user accepts the terms, the MDM redirects back to Windows for the enrollment process to continue.
@@ -309,7 +303,6 @@ The following parameters are passed in the query string:
 </table>
 
  
-
 ### Access token
 
 A bearer access token is issued by Azure AD is passed in the authorization header of the HTTP request. Here is a typical format:
@@ -344,12 +337,11 @@ The following claims are expected in the access token passed by Windows to the T
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>Resource</p></td>
-<td style="vertical-align:top"><p>A sanitized URL representing the MDM application. Example, https://fabrikam.contosomdm.com.</p></td>
+<td style="vertical-align:top"><p>A sanitized URL representing the MDM application. Example, https:<span></span>//fabrikam.contosomdm.com.</p></td>
 </tr>
 </tbody>
 </table>
  
-
 > **Note**  There is no device ID claim in the access token because the device may not yet be enrolled at this time.
 
  
