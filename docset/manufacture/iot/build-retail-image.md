@@ -76,7 +76,7 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 **Build the image**
 
-1.  [Get a code-signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887(v=vs.85).aspx).
+1.  [Get a code-signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
 
 2.	Configure the cross-signing certificate to be used for retail signing. Edit setsignature.cmd file to set SIGNTOOL_OEM_SIGN:
 

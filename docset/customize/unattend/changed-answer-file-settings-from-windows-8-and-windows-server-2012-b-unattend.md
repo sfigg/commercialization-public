@@ -1,0 +1,364 @@
+---
+title: Changed answer file settings for Windows 8.1 and Windows Server 2012 R2
+description: This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server® 2012.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 6b64c934-6be0-4897-be89-041bf86e46f9
+ms.prod: W10
+ms.mktglfcycl: deploy
+ms.sitesec: msdn
+---
+
+# Changed answer file settings for Windows 8.1 and Windows Server 2012 R2
+
+
+This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server® 2012.
+
+## In This Section
+
+
+-   [New Windows Settings](#newwindowssettings)
+
+-   [Changed Windows Settings](#changedwindowssettings)
+
+-   [Deprecated Windows Settings](#renamedordeprecatedsettings)
+
+-   [Deprecated Internet Explorer Settings](#deprecatediesettings)
+
+-   [Removed Windows Settings](#removedsettings)
+
+-   [Removed Internet Explorer Settings](#removediesettings)
+
+## <a href="" id="newwindowssettings"></a>New Windows Settings
+
+
+These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 2012 R2:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-CoreMmRes\[CameraSoundLevel](camerasoundlevel-win8-microsoft-windows-coremmrescamerasoundlevel.md)</p></td>
+<td><p>Sets the volume of the sound played when a user starts a recording, stops a recording, takes a photo or starts a photo sequence. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-CoreMmRes\[NoPhysicalCameraLED](nophysicalcameraled-win8-microsoft-windows-coremmresnophysicalcameraled.md)</p></td>
+<td><p>Indicates that there is no physical LED for the device’s camera. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-GPIOButtons\[ConvertibleSlateMode](convertibleslatemode-win8-microsoft-windowsgpiobuttonsconvertibleslatemode.md)</p></td>
+<td><p>Sets the touchscreen behavior for a laptop, a PC with permanently attached keyboard available at any time for typing comfortably</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-SecureStartup-FilterDriver\[PreventDeviceEncryption](preventdeviceencryption-win8-microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
+<td><p>Prevents encrypting the operating system drive and any fixed data drive using Windows BitLocker Drive Encryption.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-Shell-Setup\[DesktopOptimization](desktopoptimization-win8-microsoft-windows-shell-setupdesktopoptimization.md)</p></td>
+<td><p>Specifies display settings that affect the desktop. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-Shell-Setup \[ShowPowerButtonOnStartScreen](showpowerbuttononstartscreen-win7-microsoft-windows-shell-setupshowpowerbuttononstartscreen.md)</p></td>
+<td><p>Specifies that the Power Options button is displayed on the Start Screen. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](squareordesktoptile7-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile7. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](squareordesktoptile8-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile8.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile8. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](squareordesktoptile9-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile9.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile9. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](squareordesktoptile10-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile10.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile10. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](squareordesktoptile11-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile11.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile11. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](squareordesktoptile12-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile12.md)</p></td>
+<td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-SystemSettings\[DisplayNetworkSelection](displaynetworkselection--win8-microsoft-windows-systemsettingsdisplaynetworkselection.md)</p></td>
+<td><p>Specifies whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-SystemSettings\[WiFiToWlan](wifitowlan-win8-microsoft-windows-systemsettingswifitowlan.md)</p></td>
+<td><p>Replaces the. &quot;Wi-Fi&quot; heading in the Networks list with &quot;WLAN&quot;.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-WwanUI\[NotInOOBE](notinoobe-win8-microsoft-windows-wwanuinotinoobe.md)</p></td>
+<td><p>Hides mobile broadband devices and networks in OOBE.</p></td>
+</tr>
+<tr class="even">
+<td><p>Security-Malware-Windows-Defender\[DefinitionUpdateFileSharesSources](definitionupdatefilesharessources-win8-security-malware-windows-defenderdefinitionupdatefilesharessources.md)</p></td>
+<td><p>Configures UNC file share sources for downloading definition updates for Windows® Defender.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Security-Malware-Windows-Defender\[EnableRemoteManagedDefaults](enableremotemanageddefaults-win8-security-malware-windows-defenderenableremotemanageddefaults.md)</p></td>
+<td><p>Specifies whether to configure Windows® Defender to be remotely managed using recommended default settings.</p></td>
+</tr>
+<tr class="even">
+<td><p>Security-Malware-Windows-Defender\[FallbackOrder](fallbackorder-win8-security-malware-windows-defenderfallbackorder.md)</p></td>
+<td><p>Specifies the order in which different definition update sources should be contacted by Windows Defender.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Security-Malware-Windows-Defender\[Scan](scan-win8-security-malware-windows-defenderscan.md)</p></td>
+<td><p>Specifies settings that configure the scheduled scan for Windows® Defender.</p></td>
+</tr>
+<tr class="even">
+<td><p>Security-Malware-Windows-Defender\[SignatureUpdateInterval](signatureupdateinterval-win8-security-malware-windows-defendersignatureupdateinterval.md)</p></td>
+<td><p>Specifies the interval Windows® Defender checks for definition updates.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Security-Malware-Windows-Defender\[ThreatSeverityDefaultAction](threatseveritydefaultaction-win8-security-malware-windows-defenderthreatseveritydefaultaction.md)</p></td>
+<td><p>Specifies settings that define the default action to be taken for specific threat alert levels.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <a href="" id="changedwindowssettings"></a>Changed Windows Settings
+
+
+These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows 8 and Windows Server 2012:
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Changed setting</th>
+<th>Description of setting</th>
+<th>Description of change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](order-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideorder.md)</p></td>
+<td><p>Specifies a unique id for a set of regions. In the specified set of regions, Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
+<td><p>Changed the maximum value of unique IDs for the regional override from 19 to 199.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](systemdefaultbackgroundcolor-win8-microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.</p></td>
+<td><p>Added new color scheme for Windows 8.1.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Networking-MPSSVC-Svc: [DomainProfile_DisableNotifications](domainprofile-disablenotifications-win7-networking-mpssvc-svcdomainprofile-disablenotifications.md), [PrivateProfile_DisableNotifications](privateprofile-disablenotifications-win7-networking-mpssvc-svcprivateprofile-disablenotifications.md), and [PublicProfile_DisableNotifications](publicprofile-disablenotifications-win7-networking-mpssvc-svcpublicprofile-disablenotifications.md).</p></td>
+<td><p>Multiple settings</p></td>
+<td><p>Changed default value for Windows RT 8.1.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <a href="" id="renamedordeprecatedsettings"></a>Deprecated Windows Settings
+
+
+The following Windows 8 and Windows Server 2012 settings are not supported in Windows 8.1 and Windows Server 2012 R2, and may be removed in a future release. The following table includes status of the setting, and recommendations for new settings to use when applicable:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Deprecated setting from Windows 8 or Windows Server 2012</th>
+<th>Status or recommendation for Windows 8.1 or Windows Server 2012 R2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\Enable</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\GUID</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\GUIDClassification</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\Order</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-SecureStartup-FilterDriver\InPlaceCrypto</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-SecureStartup-FilterDriver\ModifiedWriteMaximum</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-SecureStartup-FilterDriver \ReadDoubleBuffering</p></td>
+<td><p>This is not applicable for Windows 8.1.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <a href="" id="deprecatediesettings"></a>Deprecated Internet Explorer Settings
+
+
+These settings in the Microsoft-Windows-IE-InternetExplorer component are deprecated:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Deprecated setting name</th>
+<th>Status or recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer\AllSitesCompatibilityMode</p></td>
+<td><p>This setting is not supported.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-IE-InternetExplorer\DisableWelcomePage</p></td>
+<td><p>This setting was deprecated in Windows 8 and is no longer supported.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer\NoDial</p></td>
+<td><p>Internet Explorer 9 through Internet Explorer 11 do not include an IEAK-based sign-up process.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-IE-InternetExplorer\[PreApprovedAddons](preapprovedaddons-win7-microsoft-windows-ie-internetexplorerpreapprovedaddons.md)</p></td>
+<td><p>Add-ons can still be installed but they will be disabled, by default. Users will be able to choose the add-ons to enable.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer\ShowCompatibilityViewButton</p></td>
+<td><p>This setting is not supported.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-IE-InternetExplorer\SmallCommandBarIcons</p></td>
+<td><p>This setting is not supported.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer\Scope\DisplayQuickPick</p></td>
+<td><p>This setting is not supported.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <a href="" id="removedsettings"></a>Removed Windows Settings
+
+
+We recommend these replacements for Windows 8 and Windows Server 2012 settings that have been removed from Windows 8 and Windows Server 2012:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Removed setting from Windows 8 or Windows Server 2012</th>
+<th>Recommendation for Windows 8.1 or Windows Server 2012 R2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-PerfCenterCPL\WindowsExperienceIndexOemInfo\HardwareUpgradeURL</p></td>
+<td><p>No recommendation.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-PerfCenterCPL\WindowsExperienceIndexOemInfo\Logo</p></td>
+<td><p>No recommendation.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-AllUserInstallAgent\LogonWaitForPackageRegistration</p></td>
+<td><p>No recommendation.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## <a href="" id="removediesettings"></a>Removed Internet Explorer Settings
+
+
+These settings in the Microsoft-Windows-IE-InternetExplorer component are removed:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Deprecated setting name</th>
+<th>Status or recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer: EnableLinksBar, ShowCommandBar, ShowMenuBar, and ShowStatusBar.</p></td>
+<td><p>Users can still make these bars appear in Internet Explorer for the desktop.</p></td>
+</tr>
+<tr class="even">
+<td><p>Microsoft-Windows-IE-InternetExplorer\IEWelcomeMsg</p></td>
+<td><p>To skip the First Run wizard and the welcome page when Internet Explorer starts for the first time, use the [DisableFirstRunWizard](disablefirstrunwizard-win7-microsoft-windows-ie-internetexplorerdisablefirstrunwizard.md) settings.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Microsoft-Windows-IE-InternetExplorer\PrintBackground</p></td>
+<td><p>This setting is not supported.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## Related topics
+
+
+[Changed Answer File Settings from Windows 7 and Windows Server 2008 R2](changed-answer-file-settings-from-windows-7-and-windows-server-2008-r2-b-unattend.md)
+
+[Changed Answer File Settings from Windows Vista and Windows Server 2008](changed-answer-file-settings-from-windows-vista-and-windows-server-2008-b-unattend.md)
+
+[Changed Answer File Settings from Windows XP and Windows Server 2003](changed-answer-file-settings-from-windows-xp-and-windows-server-2003-b-unattend.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Changed%20answer%20file%20settings%20for%20Windows%208.1%20and%20Windows%20Server%202012%20R2%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+
