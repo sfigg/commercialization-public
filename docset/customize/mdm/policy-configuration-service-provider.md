@@ -73,7 +73,7 @@ Supported operation is Get.
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
 -   [Table of Policies](#main-policy-table) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
--   [Policies supported by Windows 10 Holographic Enterprise](#hololens-policies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
+-   [Policies supported by Windows Holographic Enterprise](#hololens-policies) - Lists the policies that are supported in Windows Holographic Enterprise.
 
 ## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
 
@@ -8935,7 +8935,7 @@ Footnote:
 
 -   \* - Added in Windows 10, version 1607.
 
-## <a href="" id="hololens-policies"></a>Policies supported by Windows 10 Holographic Enterprise
+## <a href="" id="hololens-policies"></a>Policies supported by Windows Holographic Enterprise
 
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)

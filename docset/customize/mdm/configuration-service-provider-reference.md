@@ -12,7 +12,7 @@ ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). For the list of new CSPs added in Windows 10, see [New CSPs added in Windows 10, Version 1511](#newcsps). See the [list of CSPs supported in Windows 10 Holographic](#hololens) for additional information.
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). For the list of new CSPs added in Windows 10, see [New CSPs added in Windows 10, Version 1511](#newcsps). See the [list of CSPs supported in Windows Holographic](#hololens) for additional information.
 
 The following table show the configuration service providers supported in Windows 10.
 
@@ -774,12 +774,12 @@ The following table show the configuration service providers supported in Window
 
  
 
-## <a href="" id="hololens"></a>CSPs supported in Windows 10 Holographic
+## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
 
 
-The following list shows the configuration service providers supported in Windows 10 Holographic editions.
+The following list shows the configuration service providers supported in Windows Holographic editions.
 
-| Configuration service provider                                                                        | Windows 10 Holographic edition      | Windows 10 Holographic Enterprise edition |
+| Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic Enterprise edition |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
 | [application csp](application-configuration-service-provider.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [applocker csp](applocker-configuration-service-provider.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
