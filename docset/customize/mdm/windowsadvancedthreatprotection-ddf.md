@@ -1,165 +1,242 @@
 ---
-title: WindowsAdvancedThreatProtection CSP
-description: WindowsAdvancedThreatProtection CSP
+title: WindowsAdvancedThreatProtection DDF file
+description: WindowsAdvancedThreatProtection DDF file
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
+ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
 ---
 
-# WindowsAdvancedThreatProtection CSP
+# WindowsAdvancedThreatProtection DDF file
 
 
-The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
-
-The following diagram shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
-
-![windowsadvancedthreatprotection csp diagram](images/provisioning-csp-watp.png)
-
-The following list describes the characteristics and parameters.
-
-<a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**  
-The root node for the Windows Defender Advanced Threat Protection configuration service provider.
-
-Supported operation is Get.
-
-<a href="" id="onboarding"></a>**Onboarding**  
-Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
-
-The data type is a string.
-
-Supported operations are Get and Replace.
-
-<a href="" id="healthstate"></a>**HealthState**  
-Node that represents the Windows Defender Advanced Threat Protection health state.
-
-<a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**  
-Contains the timestamp of the last successful connection.
-
-Supported operation is Get.
-
-<a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**  
-Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
-
-The default value is false.
-
-Supported operation is Get.
-
-<a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**  
-Represents the onboarding state.
-
-Supported operation is Get.
-
-The following list shows the supported values:
-
--   0 (default) – Not onboarded.
--   1 – Onboarded
-
-<a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  
-String that represents the OrgID.
-
-Supported operation is Get.
-
-<a href="" id="configuration"></a>**Configuration**  
-Represents Windows Defender Advanced Threat Protection configuration.
-
-<a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
-Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter: 0 - none, 1 - All
-
-The following list shows the supported values:
-
--   0 – None
--   1 (default)– All
-
-Supported operations are Get and Replace.
-
-<a href="" id="offboarding"></a>**Offboarding**  
-Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
-
-The data type is a string.
-
-Supported operations are Get and Replace.
-
-## Examples
-
+This topic shows the OMA DM device description framework (DDF) for the **WindowsAdvancedThreatProtection** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>
-    <Get>
-      <CmdID>11</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-    <Get>
-      <CmdID>1</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/LastConnected
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-        <Get>
-      <CmdID>2</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-            <Get>
-      <CmdID>3</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/SenseIsRunning
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-            <Get>
-      <CmdID>4</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-
-            <Get>
-      <CmdID>5</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-    <Get>
-      <CmdID>99</CmdID>
-      <Item>
-        <Target>
-          <LocURI>
-            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
-          </LocURI>
-        </Target>
-      </Item>
-    </Get>
-    <Final/> 
-  </SyncBody>
-</SyncML>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+  <VerDTD>1.2</VerDTD>
+      <Node>
+        <NodeName>WindowsAdvancedThreatProtection</NodeName>
+        <Path>./Device/Vendor/MSFT</Path>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Windows Defender Advanced Threat Protection</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>com.microsoft/1.0/MDM/WindowsAdvancedThreatProtection</MIME>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>Onboarding</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Replace />
+              <Get />
+            </AccessType>
+            <Description>Set Windows Defender Advanced Threat Protection Onboarding blob and initiate onboarding to Windows Defender Advanced Threat Protection</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HealthState</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Represents Windows Defender Advanced Threat Protection Health State</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>LastConnected</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>The last successful connection.</Description>
+              <DFFormat>
+                <time />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SenseIsRunning</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>false</DefaultValue>
+              <Description>Return Windows Defender Advanced Threat Protection service running state</Description>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>OnboardingState</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Return Windows Defender Advanced Threat Protection onboarding state: 0 – not onboarded; 1 - onboarded</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>OrgId</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>Onboarded Org ID.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Configuration</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Represents Windows Defender Advanced Threat Protection Configuration</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>SampleSharing</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>1</DefaultValue>
+              <Description>Return or set Windows Defender Advanced Threat Protection Sample Sharing configuration parameter: 0 - none, 1 - All</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Offboarding</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Replace />
+              <Get />
+            </AccessType>
+            <Description>Set Windows Defender Advanced Threat Protection Offboarding blob and initiate offboarding</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+</MgmtTree>
 ```
 
 ## Related topics
