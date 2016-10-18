@@ -291,7 +291,8 @@ Here is an example of an offline license installation.
 </Exec>
 ```
 
-### <a href="" id="deploy-from-hosted-loc"></a>Deploy apps to a user from a hosted location
+<a href="" id="deploy-from-hosted-loc"></a>
+### Deploy apps to a user from a hosted location
 
 If you purchased an app from the Store for Business and the app is specified for an offline license or the app is a non-Store app, the app must be deployed from a hosted location.
 
@@ -705,7 +706,8 @@ Here is an example of a status check.
 
 ### Update apps from a hosted location
 
-Updating an existing app follows the same process as an initial installation. For more information, see [Deploy apps to a user from a hosted location](#deploy-from-hosted-loc).
+Updating an existing app follows the same process as an initial installation. For more information, see [Deploy apps to a user from a hosted location](#deploy-apps-to-a-user-from-a-hosted-location).
+
 
 ### Update provisioned apps
 
