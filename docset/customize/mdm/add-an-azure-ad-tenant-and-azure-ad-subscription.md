@@ -9,12 +9,10 @@ ms.assetid: 36D94BEC-A6D8-47D2-A547-EBD7B7D163FA
 
 # Add an Azure AD tenant and Azure AD subscription
 
-
 Here's a step-by-step guide to adding an Azure Active Directory tenant, adding an Azure AD subscription, and registering your subscription.
 
-**Note**  If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. For step-by-step guide to register this free subscription, see [Register your free Azure Active Directory subscription.](#register-your-free-azure-active-directory-subscription)
+> **Note**  If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. For step-by-step guide to register this free subscription, see [Register your free Azure Active Directory subscription.](#register-your-free-azure-active-directory-subscription)
 
- 
 
 1.  Sign-up for Azure AD tenant from [this website](https://account.windowsazure.com/organization) by creating an administrator account for your organization.
 
@@ -50,8 +48,6 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
     ![azure active directory option in purchase services page](images/azure-ad-add-tenant7.png)
 
-    .
-
 9.  Continue with your purchase.
 
     ![azure active directory premium payment page](images/azure-ad-add-tenant8.png)
@@ -63,7 +59,6 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
     When you choose Azure AD, it will take you to the Azure AD portal where you can manage your Azure AD applications.
 
 ## Register your free Azure Active Directory subscription
-
 
 If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. Here's a step-by-step guide to register your free Azure AD subscription using an Office 365 Premium Business subscription.
 
@@ -93,9 +88,7 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
  
 
- 
 
-10/10/2016
 
 
 
