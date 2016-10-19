@@ -7,10 +7,6 @@ MSHAttr:
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ---
 
-<style type="text/css">
-    td { vertical-align:top; }
-</style>
-
 
 # Device update management
 
@@ -290,16 +286,16 @@ If the Allow Telemetry policy is enabled and the Options value is set to 0, then
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>OS upgrade</p></td>
-<td><p>8 months</p></td>
-<td><p>1 month</p></td>
-<td><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
+<td style="vertical-align:top"><p>OS upgrade</p></td>
+<td style="vertical-align:top"><p>8 months</p></td>
+<td style="vertical-align:top"><p>1 month</p></td>
+<td style="vertical-align:top"><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
 </tr>
 <tr class="even">
-<td><p>Update</p></td>
-<td><p>1 month</p></td>
-<td><p>1 week</p></td>
-<td><div class="alert">
+<td style="vertical-align:top"><p>Update</p></td>
+<td style="vertical-align:top"><p>1 month</p></td>
+<td style="vertical-align:top"><p>1 week</p></td>
+<td style="vertical-align:top"><div class="alert">
 <strong>Note</strong>  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
 <div>
@@ -317,10 +313,10 @@ If the Allow Telemetry policy is enabled and the Options value is set to 0, then
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Other/cannot defer</p></td>
-<td><p>No deferral</p></td>
-<td><p>No deferral</p></td>
-<td><p>Any update category not specifically enumerated above falls into this category.</p>
+<td style="vertical-align:top"><p>Other/cannot defer</p></td>
+<td style="vertical-align:top"><p>No deferral</p></td>
+<td style="vertical-align:top"><p>No deferral</p></td>
+<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
@@ -659,50 +655,50 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>BranchReadinessLevel</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>16: systems take Feature Updates on the Current Branch (CB) train</p>
+<td style="vertical-align:top"><p>BranchReadinessLevel</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>16: systems take Feature Updates on the Current Branch (CB) train</p>
 <p>32: systems take Feature Updates on the Current Branch for Business</p>
 <p>Other value or absent: receive all applicable updates (CB)</p></td>
 </tr>
 <tr class="even">
-<td><p>DeferQualityUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: defer quality updates</p>
+<td style="vertical-align:top"><p>DeferQualityUpdates</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>1: defer quality updates</p>
 <p>Other value or absent: don’t defer quality updates</p></td>
 </tr>
 <tr class="odd">
-<td><p>DeferQualityUpdatesPeriodInDays</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>0-30: days to defer quality updates</p></td>
+<td style="vertical-align:top"><p>DeferQualityUpdatesPeriodInDays</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>0-30: days to defer quality updates</p></td>
 </tr>
 <tr class="even">
-<td><p>PauseQualityUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: pause quality updates</p>
+<td style="vertical-align:top"><p>PauseQualityUpdates</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>1: pause quality updates</p>
 <p>Other value or absent: don’t pause quality updates</p></td>
 </tr>
 <tr class="odd">
-<td><p>DeferFeatureUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: defer feature updates</p>
+<td style="vertical-align:top"><p>DeferFeatureUpdates</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>1: defer feature updates</p>
 <p>Other value or absent: don’t defer feature updates</p></td>
 </tr>
 <tr class="even">
-<td><p>DeferFeatureUpdatesPeriodInDays</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>0-180: days to defer feature updates</p></td>
+<td style="vertical-align:top"><p>DeferFeatureUpdatesPeriodInDays</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>0-180: days to defer feature updates</p></td>
 </tr>
 <tr class="odd">
-<td><p>PauseFeatureUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: pause feature updates</p>
+<td style="vertical-align:top"><p>PauseFeatureUpdates</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>1: pause feature updates</p>
 <p>Other value or absent: don’t pause feature updates</p></td>
 </tr>
 <tr class="even">
-<td><p>ExcludeWUDriversInQualityUpdate</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: exclude WU drivers</p>
+<td style="vertical-align:top"><p>ExcludeWUDriversInQualityUpdate</p></td>
+<td style="vertical-align:top"><p>REG_DWORD</p></td>
+<td style="vertical-align:top"><p>1: exclude WU drivers</p>
 <p>Other value or absent: offer WU drivers</p></td>
 </tr>
 </tbody>
