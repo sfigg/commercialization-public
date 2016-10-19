@@ -46,7 +46,7 @@ Here's the list of data structures used in the Windows Store for Business REST A
 ## AlternateIdentifier
 
 
-Specifies that properties of the alternate identifier.
+Specifies the properties of the alternate identifier.
 
 <table>
 <colgroup>
@@ -175,7 +175,7 @@ Specifies that properties of the alternate identifier.
 </tr>
 <tr class="odd">
 <td><p>location</p></td>
-<td>[PackageLocation](#packagelocation)</td>
+<td><p>[PackageLocation](#packagelocation)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -269,7 +269,7 @@ Specifies that properties of the alternate identifier.
 <tbody>
 <tr class="odd">
 <td><p>productKey</p></td>
-<td>[ProductKey](#productkey)</td>
+<td><p>[ProductKey](#productkey)</p></td>
 <td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
@@ -289,7 +289,7 @@ Specifies that properties of the alternate identifier.
 </tr>
 <tr class="odd">
 <td><p>licenseType</p></td>
-<td>[LicenseType](#licensetype)</td>
+<td><p>[LicenseType](#licensetype)</p></td>
 <td><p>Indicates whether the set of seats for a given application supports online or offline licensing.</p></td>
 </tr>
 <tr class="even">
@@ -440,7 +440,7 @@ Specifies the properties of the localized product.
 </tr>
 <tr class="odd">
 <td><p>publisher</p></td>
-<td>[PublisherDetails](#publisherdetails)</td>
+<td><p>[PublisherDetails](#publisherdetails)</p></td>
 <td><p>Publisher of the application.</p></td>
 </tr>
 </tbody>
@@ -599,7 +599,7 @@ Specifies the properties of the localized product.
 <tbody>
 <tr class="odd">
 <td><p>productKey</p></td>
-<td>[ProductKey](#productkey)</td>
+<td><p>[ProductKey](#productkey)</p></td>
 <td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
@@ -645,7 +645,7 @@ Specifies the properties of the localized product.
 ## ProductKey
 
 
-Specifies that properties of the product key.
+Specifies the proerties of the product key.
 
 <table>
 <colgroup>
@@ -679,7 +679,7 @@ Specifies that properties of the product key.
 ## ProductImage
 
 
-Specifies that properties of the product image.
+Specifies the proerties of the product image.
 
 <table>
 <colgroup>
@@ -743,7 +743,7 @@ Specifies that properties of the product image.
 ## PublisherDetails
 
 
-Specifies that properties of the publisher details.
+Specifies the proerties of the publisher details.
 
 <table>
 <colgroup>
@@ -808,7 +808,7 @@ Specifies that properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>location</p></td>
-<td>[PackageLocation](#packagelocation)</td>
+<td><p>[PackageLocation](#packagelocation)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -936,11 +936,11 @@ Specifies that properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>minVersion</p></td>
-<td>[VersionInfo](#versioninfo)</td>
+<td><p>[VersionInfo](#versioninfo)</p></td>
 </tr>
 <tr class="odd">
 <td><p>maxTestedVersion</p></td>
-<td>[VersionInfo](#versioninfo)</td>
+<td><p>[VersionInfo](#versioninfo)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1000,12 +1000,12 @@ Specifies that properties of the publisher details.
 </tr>
 <tr class="odd">
 <td><p>state</p></td>
-<td>[SeatState](#seatstate)</td>
+<td><p>[SeatState](#seatstate)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>productKey</p></td>
-<td>[ProductKey](#productkey)</td>
+<td><p>[ProductKey](#productkey)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -1086,11 +1086,11 @@ Specifies that properties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>minVersion</p></td>
-<td>[VersionInfo](#versioninfo)</td>
+<td><p>[VersionInfo](#versioninfo)</p></td>
 </tr>
 <tr class="odd">
 <td><p>maxTestedVersion</p></td>
-<td>[VersionInfo](#versioninfo)</td>
+<td><p>[VersionInfo](#versioninfo)</p></td>
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
@@ -1139,9 +1139,7 @@ Specifies that properties of the publisher details.
 
  
 
- 
 
-10/10/2016
 
 
 
