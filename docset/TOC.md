@@ -89,6 +89,9 @@
 
 # [Customize](customize/index.md)
 
+## [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
+## [Set dark theme](customize/desktop/set-dark-theme.md)
+
 ## [Windows System Image Manager Technical Reference](customize/wsim/windows-system-image-manager-technical-reference--win8.md)
 ### [Windows System Image Manager Overview Topics](customize/wsim/windows-system-image-manager-overview-topics-win8.md)
 #### [Windows System Image Manager Scenarios Overview](customize/wsim/windows-system-image-manager-scenarios-overview-win8.md)
