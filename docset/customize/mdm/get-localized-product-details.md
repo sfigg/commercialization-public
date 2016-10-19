@@ -9,11 +9,9 @@ ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
 
 # Get localized product details
 
-
 The **Get localized product details** operation retrieves the localization information of a product from the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -34,7 +32,6 @@ The **Get localized product details** operation retrieves the localization infor
 </tbody>
 </table>
 
- 
 
 ### URI parameters
 
@@ -72,7 +69,6 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 <table>
 <colgroup>
@@ -111,14 +107,11 @@ The following parameters may be specified in the request URI.
 
 ## Response
 
-
-The response contains [LocalizedProductDetail](business-store-data-structures.md#localizedproductdetail).
-
- 
+The response contains [LocalizedProductDetail](data-structures-windows-store-for-business.md#localizedproductdetail).
 
  
 
-10/10/2016
+
 
 
 

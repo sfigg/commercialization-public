@@ -9,11 +9,9 @@ ms.assetid: 039468BF-B9EE-4E1C-810C-9ACDD55C0835
 
 # Get product packages
 
-
 The **Get product packages** operation retrieves the information about applications in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -35,7 +33,6 @@ The **Get product packages** operation retrieves the information about applicati
 </table>
 
  
-
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -66,9 +63,8 @@ The following parameters may be specified in the request URI.
 </tr>
 </tbody>
 </table>
-
+   
  
-
 <table>
 <colgroup>
 <col width="25%" />
@@ -108,20 +104,15 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 ## Response
 
-
 ### Response body
 
-The response body contains [ProductPackageSet](business-store-data-structures.md#productpackageset).
+The response body contains [ProductPackageSet](data-structures-windows-store-for-business.md#productpackageset).
 
  
 
- 
-
-10/10/2016
 
 
 

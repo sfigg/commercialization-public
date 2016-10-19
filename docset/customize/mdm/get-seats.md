@@ -9,11 +9,9 @@ ms.assetid: 32945788-47AC-4259-B616-F359D48F4F2F
 
 # Get seats
 
-
 The **Get seats** operation retrieves the information about active seats in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -35,7 +33,6 @@ The **Get seats** operation retrieves the information about active seats in the 
 </table>
 
  
-
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -78,13 +75,11 @@ The following parameters may be specified in the request URI.
 </table>
 
  
-
 ## Response
-
 
 ### Response body
 
-The response body contains [SeatDetailsResultSet](business-store-data-structures.md#seatdetailsresultset).
+The response body contains [SeatDetailsResultSet](data-structures-windows-store-for-business.md#seatdetailsresultset).
 
 <table>
 <colgroup>
@@ -129,9 +124,6 @@ The response body contains [SeatDetailsResultSet](business-store-data-structures
 
  
 
- 
-
-10/10/2016
 
 
 

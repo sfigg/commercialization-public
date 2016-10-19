@@ -12,11 +12,9 @@ ms.assetid: C5485722-FC49-4358-A097-74169B204E74
 
 # Get Inventory
 
-
 The **Get Inventory** operation retrieves information from the Windows Store for Business to determine if new or updated applications are available.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -73,7 +71,7 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="odd">
 <td><p>licenseTypes</p></td>
-<td><p>collection of [LicenseType](business-store-data-structures.md#licensetype)</p></td>
+<td><p>collection of [LicenseType](data-structures-windows-store-for-business.md#licensetype)</p></td>
 <td><p>{online,offline}</p></td>
 <td><p>Optional. A collection of license types</p></td>
 </tr>
@@ -86,7 +84,6 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 Here are some examples.
 
@@ -104,24 +101,23 @@ Here are some examples.
 <tbody>
 <tr class="odd">
 <td><p>Online and offline</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
 </tr>
 <tr class="even">
 <td><p>Online only</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;maxResults=25</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;maxResults=25</p></td>
 </tr>
 <tr class="odd">
 <td><p>Offline only</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=offline&amp;maxResults=25</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=offline&amp;maxResults=25</p></td>
 </tr>
 <tr class="even">
 <td><p>Both license types and a time filter</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory?modifiedSince=2015-07-13T14%3a02%3a25.6863382-07%3a00&amp;licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?modifiedSince=2015-07-13T14%3a02%3a25.6863382-07%3a00&amp;licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 <table>
 <colgroup>
@@ -150,20 +146,16 @@ Here are some examples.
 </tbody>
 </table>
 
- 
 
 ## Response
 
-
 ### Response body
 
-The response contains [InventoryResultSet](business-store-data-structures.md#inventoryresultset).
+The response contains [InventoryResultSet](data-structures-windows-store-for-business.md#inventoryresultset).
 
  
 
- 
 
-10/10/2016
 
 
 

@@ -9,11 +9,9 @@ ms.assetid: B42BF490-35C9-405C-B5D6-0D9F0E377552
 
 # Assign seat
 
-
 The **Assign seat** operation assigns seat for a specified user in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -35,7 +33,6 @@ The **Assign seat** operation assigns seat for a specified user in the Windows S
 </table>
 
  
-
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -72,14 +69,12 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 ## Response
 
-
 ### Response body
 
-The response body contains [SeatDetails](business-store-data-structures.md#seatdetails).
+The response body contains [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
 
 <table>
 <colgroup>
@@ -131,9 +126,7 @@ The response body contains [SeatDetails](business-store-data-structures.md#seatd
 
  
 
- 
 
-10/10/2016
 
 
 

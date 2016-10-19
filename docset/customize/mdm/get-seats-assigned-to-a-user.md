@@ -9,11 +9,9 @@ ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
 
 # Get seats assigned to a user
 
-
 The **Get seats assigned to a user** operation retrieves information about assigned seats in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -29,12 +27,11 @@ The **Get seats assigned to a user** operation retrieves information about assig
 <tbody>
 <tr class="odd">
 <td><p>GET</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1 /Users/{username}/Seats?continuationToken={ContinuationToken}&amp;maxResults={MaxResults}</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Users/{username}/Seats?continuationToken={ContinuationToken}&amp;maxResults={MaxResults}</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
 ### URI parameters
 
@@ -73,13 +70,11 @@ The following parameters may be specified in the request URI.
 </table>
 
  
-
 ## Response
-
 
 ### Response body
 
-The response body contain [SeatDetailsResultSet](business-store-data-structures.md#seatdetailsresultset).
+The response body contain [SeatDetailsResultSet](data-structures-windows-store-for-business.md#seatdetailsresultset).
 
 <table>
 <colgroup>
@@ -119,9 +114,6 @@ The response body contain [SeatDetailsResultSet](business-store-data-structures.
 
  
 
- 
-
-10/10/2016
 
 
 

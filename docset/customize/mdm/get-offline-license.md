@@ -9,11 +9,9 @@ ms.assetid: 08DAD813-CF4D-42D6-A783-994A03AEE051
 
 # Get offline license
 
-
 The **Get offline license** operation retrieves the offline license information of a product from the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -35,7 +33,6 @@ The **Get offline license** operation retrieves the offline license information 
 </table>
 
  
-
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -71,8 +68,7 @@ The following parameters may be specified in the request URI.
 </tr>
 </tbody>
 </table>
-
- 
+   
 
 <table>
 <colgroup>
@@ -113,20 +109,16 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 ## Response
 
-
 ### Response body
 
-The response contains [OfflineLicense](business-store-data-structures.md#offlinelicense).
+The response contains [OfflineLicense](data-structures-windows-store-for-business.md#offlinelicense).
 
  
 
- 
 
-10/10/2016
 
 
 
