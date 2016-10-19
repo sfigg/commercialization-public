@@ -661,7 +661,7 @@ This topic shows the OMA DM device description framework (DDF) for the **SUPL** 
 
  
 
-10/10/2016
+
 
 
 

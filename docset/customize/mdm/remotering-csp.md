@@ -41,7 +41,7 @@ The following sample shows how to initiate a remote ring on the device.
 
  
 
-10/10/2016
+
 
 
 

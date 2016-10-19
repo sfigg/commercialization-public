@@ -12,7 +12,7 @@ ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
 
 The PolicyManager configuration service provider enables the enterprise to configure company policies on Windows 10 Mobile.
 
-**Note**   The PolicyManager CSP is supported in Windows 10 Mobile for backward compatibility. For Windows 10 devices you should use [Policy CSP](policy-configuration-service-provider.md), which replaces PolicyManager CSP. You can continue to use PolicyManager CSP for Windows Phone 8.1 and Windows Phone 8.1 GDR devices. The PolicyManager CSP will be deprecated some time in the future.
+> **Note**   The PolicyManager CSP is supported in Windows 10 Mobile for backward compatibility. For Windows 10 devices you should use [Policy CSP](policy-configuration-service-provider.md), which replaces PolicyManager CSP. You can continue to use PolicyManager CSP for Windows Phone 8.1 and Windows Phone 8.1 GDR devices. The PolicyManager CSP will be deprecated some time in the future.
 
  
 
@@ -81,15 +81,15 @@ The following list shows the supported values:
 
 -   1 – Disabled
 
-**Important**  
-The DevicePasswordEnabled setting must be set to 0 (device password is enabled) for the following settings to take effect:
-
--   AllowSimpleDevicePassword
--   MinDevicePasswordLength
--   AlphanumericDevicePasswordRequired
--   MaxDevicePasswordFailedAttempts
--   MaxInactivityTimeDeviceLock
--   MinDevicePasswordComplexCharacters
+> **Important**  
+>The DevicePasswordEnabled setting must be set to 0 (device password is enabled) for the following settings to take effect:
+>
+> -   AllowSimpleDevicePassword
+> -   MinDevicePasswordLength
+> -   AlphanumericDevicePasswordRequired
+> -   MaxDevicePasswordFailedAttempts
+> -   MaxInactivityTimeDeviceLock
+> -   MinDevicePasswordComplexCharacters
 
  
 
@@ -238,7 +238,7 @@ Max policy value is the most restricted
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 Force the user to input password every time the device returns from an idle state.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -255,7 +255,7 @@ Most restricted value is 0.
 <a href="" id="wifi-allowwifi"></a>**WiFi/AllowWiFi**  
 Allow or disallow Wi-Fi connection. (Configurable by Exchange as well – definition will be consistent with EAS definition.)
 
-**Note**  The policy is only supported in Windows 10 Mobile.
+> **Note**  The policy is only supported in Windows 10 Mobile.
 
  
 
@@ -313,7 +313,7 @@ Most restricted value is 0.
 <a href="" id="wifi-allowmanualwificonfiguration"></a>**WiFi/AllowManualWiFiConfiguration**  
 Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
-**Note**  The policy is only supported in Windows 10 Mobile.
+> **Note**  The policy is only supported in Windows 10 Mobile.
 
  
 
@@ -328,7 +328,7 @@ Most restricted value is 0.
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 Allow or disallow near field communication (NFC) on the device.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -356,7 +356,7 @@ Enables USB connection between the device and a computer to sync files with the 
 
 Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -447,7 +447,7 @@ Most restricted value is 0.
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -462,7 +462,7 @@ Most restricted value is 0.
 <a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
 Specifies whether the user is allowed to save a file on the device as an office file.
 
-**Note**  This policy is not supported and deprecated in Windows 10.
+> **Note**  This policy is not supported and deprecated in Windows 10.
 
  
 
@@ -477,7 +477,7 @@ Most restricted value is 0.
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 Specifies whether copy and paste is allowed.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -492,7 +492,7 @@ Most restricted value is 0.
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
 Specifies whether screen capture is allowed.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -507,7 +507,7 @@ Most restricted value is 0.
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
 Specifies whether voice recording is allowed.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -555,7 +555,7 @@ Specifies whether the user is allowed to share Office files.
 
 The following list shows the supported values:
 
-**Note**  This policy is not supported in Windows 10.
+> **Note**  This policy is not supported in Windows 10.
 
  
 
@@ -590,7 +590,7 @@ Most restricted value is 0.
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
 Specifies whether the user is allowed to manually install root and intermediate CAP certificates.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -620,7 +620,7 @@ Most restricted value is 1.
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
 Specifies whether Internet Explorer is allowed in the device.
 
-**Note**  This policy in only supported in Windows 10 Mobile.
+> **Note**  This policy in only supported in Windows 10 Mobile.
 
  
 
@@ -650,7 +650,7 @@ Most restricted value is 0.
 <a href="" id="applicationmanagement-allowstore"></a>**ApplicationManagement/AllowStore**  
 Specifies whether app store is allowed at the device.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -665,11 +665,11 @@ Most restricted value is 0.
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
 An XML blob that specifies the application restrictions company want to put to the device. It could be app allow list, app disallow list, allowed publisher IDs, etc. An application that is running may not be immediately terminated.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
-**Note**  List of known issues:
+> **Note**  List of known issues:
 -   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your list of allowed apps.
 
     Here's additional guidance for the upgrade process:
@@ -719,7 +719,7 @@ Most restricted value is 0.
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
 Specifies what level of safe search (filtering adult content) is required.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -734,7 +734,7 @@ Most restricted value is 0.
 <a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
 Specifies whether to allow Bing Vision to store the contents of the images captured when performing Bing Vision search.
 
-**Note**  This policy is not supported in Windows 10.
+> **Note**  This policy is not supported in Windows 10.
 
  
 
@@ -749,7 +749,7 @@ Most restricted value is 0.
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
 Specifies whether to allow action center notifications above the device lock screen.
 
-**Note**  This policy is only supported in Windows 10 Mobile.
+> **Note**  This policy is only supported in Windows 10 Mobile.
 
  
 
@@ -956,7 +956,7 @@ Here is an example SyncML for ApplicationRestrictions for adding all the inbox a
 
  
 
-10/10/2016
+
 
 
 

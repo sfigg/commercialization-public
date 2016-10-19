@@ -24,7 +24,7 @@ The supported operation is Get.
 <a href="" id="rebootnow"></a>**RebootNow**  
 This node executes a reboot of the device.
 
-**Note**  If this node is left in the Execute state, the device will reboot at every sync. We recommend that you clear the Execute state once the sync has occurred.
+> **Note**  If this node is left in the Execute state, the device will reboot at every sync. We recommend that you clear the Execute state once the sync has occurred.
 
  
 
@@ -52,7 +52,7 @@ The supported operation is Get and Replace.
 
  
 
-10/10/2016
+
 
 
 

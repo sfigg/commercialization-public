@@ -12,7 +12,7 @@ ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
 
 The RootCATrustedCertificates configuration service provider enables the enterprise to set the Root Certificate Authority (CA) certificates.
 
-**Note**  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
+> **Note**  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
  
 
@@ -42,7 +42,7 @@ Node for trusted publisher certificates.
 <a href="" id="rootcatrustedcertificates-trustedpeople"></a>**RootCATrustedCertificates/TrustedPeople**  
 Node for trusted people certificates.
 
-<a href="" id="certhash"></a>*CertHash*  
+<a href="" id="certhash"></a>**_CertHash_**  
 Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.
 
 The supported operations are Add, Delete, and Replace.
@@ -86,7 +86,7 @@ The only supported operation is Get.
 
  
 
-10/10/2016
+
 
 
 

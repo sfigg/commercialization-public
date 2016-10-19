@@ -12,8 +12,7 @@ ms.assetid: 9904d44c-4a1e-4ae7-a6c7-5dba06cb16ce
 
 The PROXY configuration service provider is used to configure proxy connections.
 
-**Note**  
-Use [CM\_ProxyEntries CSP](cm-proxyentries-configuration-service-provider.md) instead of PROXY CSP, which will be deprecated in a future release.
+> **Note**  Use [CM\_ProxyEntries CSP](cm-proxyentries-configuration-service-provider.md) instead of PROXY CSP, which will be deprecated in a future release.
 
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
@@ -100,7 +99,6 @@ Specifies one single connectivity object associated with the proxy connection.
 
  
 
-10/10/2016
 
 
 

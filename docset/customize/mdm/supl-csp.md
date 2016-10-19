@@ -282,7 +282,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 The default is 0. The default method provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
-**Important**   The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
+>  **Important**   The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
  
 
@@ -554,7 +554,7 @@ The following table shows the Microsoft custom elements that this configuration 
 
  
 
-10/10/2016
+
 
 
 

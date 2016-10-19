@@ -89,7 +89,7 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteR
 
  
 
-10/10/2016
+
 
 
 
