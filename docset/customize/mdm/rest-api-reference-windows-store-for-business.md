@@ -12,10 +12,9 @@ ms.assetid: 8C48A879-525A-471F-B0FD-506E743A7D2F
 
 # REST API reference for Windows Store for Business
 
-
 Here's the list of available operations:
 
--   [Get Inventory](get-seatblock.md)
+-   [Get Inventory](get-inventory.md)
 -   [Get product details](get-product-details.md)
 -   [Get localized product details](get-localized-product-details.md)
 -   [Get offline license](get-offline-license.md)
@@ -30,33 +29,31 @@ Here's the list of available operations:
 
 Here's the list of data structures:
 
--   [AlternateIdentifier](business-store-data-structures.md#alternateidentifier)
--   [BulkSeatOperationResultSet](business-store-data-structures.md#bulkseatoperationresultset)
--   [ContentRating](business-store-data-structures.md#contentrating)
--   [FailedSeatRequest](business-store-data-structures.md#failedseatrequest)
--   [FrameworkPackageDetails](business-store-data-structures.md#frameworkpackagedetails)
--   [InventoryDetails](business-store-data-structures.md#inventorydetails)
--   [LicenseType](business-store-data-structures.md#licensetype)
--   [PackageContentInfo](business-store-data-structures.md#packagecontentinfo)
--   [PackageLocation](business-store-data-structures.md#packagelocation)
--   [ProductContentDetails](business-store-data-structures.md#productcontentdetails)
--   [ProductImage](business-store-data-structures.md#productimage)
--   [ProductKey](business-store-data-structures.md#productkey)
--   [ProductPackageArchitectures](business-store-data-structures.md#productpackagearchitectures)
--   [ProductPackageDetails](business-store-data-structures.md#productpackagedetails)
--   [ProductPackageFormat](business-store-data-structures.md#productpackageformat)
--   [ProductPlatform](business-store-data-structures.md#productplatform)
--   [PublisherDetails](business-store-data-structures.md#publisherdetails)
--   [SeatAction](business-store-data-structures.md#seataction)
--   [SeatDetails](business-store-data-structures.md#seatdetails)
--   [SeatDetailsResultSet](business-store-data-structures.md#seatdetailsresultset)
--   [SeatState](business-store-data-structures.md#seatstate)
+-   [AlternateIdentifier](data-structures-windows-store-for-business.md#alternateidentifier)
+-   [BulkSeatOperationResultSet](data-structures-windows-store-for-business.md#bulkseatoperationresultset)
+-   [ContentRating](data-structures-windows-store-for-business.md#contentrating)
+-   [FailedSeatRequest](data-structures-windows-store-for-business.md#failedseatrequest)
+-   [FrameworkPackageDetails](data-structures-windows-store-for-business.md#frameworkpackagedetails)
+-   [InventoryDetails](data-structures-windows-store-for-business.md#inventorydetails)
+-   [LicenseType](data-structures-windows-store-for-business.md#licensetype)
+-   [PackageContentInfo](data-structures-windows-store-for-business.md#packagecontentinfo)
+-   [PackageLocation](data-structures-windows-store-for-business.md#packagelocation)
+-   [ProductContentDetails](data-structures-windows-store-for-business.md#productcontentdetails)
+-   [ProductImage](data-structures-windows-store-for-business.md#productimage)
+-   [ProductKey](data-structures-windows-store-for-business.md#productkey)
+-   [ProductPackageArchitectures](data-structures-windows-store-for-business.md#productpackagearchitectures)
+-   [ProductPackageDetails](data-structures-windows-store-for-business.md#productpackagedetails)
+-   [ProductPackageFormat](data-structures-windows-store-for-business.md#productpackageformat)
+-   [ProductPlatform](data-structures-windows-store-for-business.md#productplatform)
+-   [PublisherDetails](data-structures-windows-store-for-business.md#publisherdetails)
+-   [SeatAction](data-structures-windows-store-for-business.md#seataction)
+-   [SeatDetails](data-structures-windows-store-for-business.md#seatdetails)
+-   [SeatDetailsResultSet](data-structures-windows-store-for-business.md#seatdetailsresultset)
+-   [SeatState](data-structures-windows-store-for-business.md#seatstate)
 
  
 
- 
 
-10/10/2016
 
 
 

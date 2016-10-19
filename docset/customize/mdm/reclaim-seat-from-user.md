@@ -9,11 +9,9 @@ ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
 
 # Reclaim seat from user
 
-
 The **Reclaim seat from user** operation returns reclaimed seats for a user in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -34,7 +32,6 @@ The **Reclaim seat from user** operation returns reclaimed seats for a user in t
 </tbody>
 </table>
 
- 
 
 ### URI parameters
 
@@ -73,13 +70,11 @@ The following parameters may be specified in the request URI.
 </table>
 
  
-
 ## Response
-
 
 ### Response body
 
-The response body contain [SeatDetails](business-store-data-structures.md#seatdetails).
+The response body contain [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
 
 <table>
 <colgroup>
@@ -131,9 +126,6 @@ The response body contain [SeatDetails](business-store-data-structures.md#seatde
 
  
 
- 
-
-10/10/2016
 
 
 

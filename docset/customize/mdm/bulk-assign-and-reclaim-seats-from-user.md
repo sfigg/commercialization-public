@@ -9,11 +9,9 @@ ms.assetid: 99E2F37D-1FF3-4511-8969-19571656780A
 
 # Bulk assign and reclaim seats from users
 
-
 The **Bulk assign and reclaim seats from users** operation returns reclaimed or assigned seats in the Windows Store for Business.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -29,13 +27,12 @@ The **Bulk assign and reclaim seats from users** operation returns reclaimed or 
 <tbody>
 <tr class="odd">
 <td><p>POST</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/ Inventory/{productId}/{skuId}/Seats</p></td>
+<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory/{productId}/{skuId}/Seats</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
 ### URI parameters
 
 The following parameters may be specified in the request URI.
@@ -71,20 +68,18 @@ The following parameters may be specified in the request URI.
 </tr>
 <tr class="even">
 <td><p>seatAction</p></td>
-<td>[SeatAction](business-store-data-structures.md#seataction)</td>
+<td><p>[SeatAction](data-structures-windows-store-for-business.md#seataction)</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
  
-
 ## Response
-
 
 ### Response body
 
-The response body contains [BulkSeatOperationResultSet](business-store-data-structures.md#bulkseatoperationresultset).
+The response body contains [BulkSeatOperationResultSet](data-structures-windows-store-for-business.md#bulkseatoperationresultset).
 
 <table>
 <colgroup>
@@ -116,9 +111,6 @@ The response body contains [BulkSeatOperationResultSet](business-store-data-stru
 
  
 
- 
-
-10/10/2016
 
 
 

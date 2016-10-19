@@ -9,11 +9,9 @@ ms.assetid: BC432EBA-CE5E-43BD-BD54-942774767286
 
 # Get product details
 
-
 The **Get product details** operation retrieves the product information from the Windows Store for Business for a specific application.
 
 ## Request
-
 
 <table>
 <colgroup>
@@ -34,7 +32,6 @@ The **Get product details** operation retrieves the product information from the
 </tbody>
 </table>
 
- 
 
 ### URI parameters
 
@@ -67,7 +64,6 @@ The following parameters may be specified in the request URI.
 </tbody>
 </table>
 
- 
 
 <table>
 <colgroup>
@@ -103,19 +99,15 @@ The following parameters may be specified in the request URI.
 </table>
 
  
-
 ## Response
-
 
 ### Response body
 
-The response contains [ProductDetails](business-store-data-structures.md#productdetails).
+The response contains [ProductDetails](data-structures-windows-store-for-business.md#productdetails).
 
  
 
- 
 
-10/10/2016
 
 
 

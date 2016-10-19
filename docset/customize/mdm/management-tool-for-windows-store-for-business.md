@@ -12,7 +12,6 @@ ms.assetid: 0E39AE85-1703-4B24-9A7F-831C6455068F
 
 # Management tool for the Windows Store for Business
 
-
 The Windows Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.
 
 Here's the list of the available capabilities:
@@ -28,7 +27,6 @@ For additional information about Store for Business, see the TechNet topics in [
 
 ## Management services
 
-
 The Store for Business provides services that enable a management tool to synchronize new and updated applications on behalf of an organization. Once synchronized, you can distribute new and updated applications using the Windows Management framework. The services provides several capabilities including providing application data, the ability to assign and reclaim applications, and the ability to download offline-licensed application packages.
 
 <table>
@@ -38,12 +36,12 @@ The Store for Business provides services that enable a management tool to synchr
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Application data</p></td>
-<td><p>The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.</p></td>
+<td style="vertical-align:top"><p>Application data</p></td>
+<td style="vertical-align:top"><p>The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.</p></td>
 </tr>
 <tr class="even">
-<td><p>Licensing models</p></td>
-<td><p><strong>Offline vs. Online</strong></p>
+<td style="vertical-align:top"><p>Licensing models</p></td>
+<td style="vertical-align:top"><p><strong>Offline vs. Online</strong></p>
 <p>Online-licensed applications require connectivity to the Windows Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Windows Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.</p>
 <p>Offline-licensed applications enable an organization to use the application for imaging and for devices that may not have connectivity to the store or may not have Azure Active Directory. Offline-licensed application do not require connectivity to the store, however it can be updated directly from the store if the device has connectivity and the app update policies allow updates to be distributed via the store.</p></td>
 </tr>
@@ -66,7 +64,6 @@ The following diagram provides an overview of app distribution from acquisition 
 
 ## Integrate with Azure Active Directory
 
-
 The Store for Business services rely on Azure Active Directory for authentication. The management tool must be registered as an Azure AD application within an organization tenant to authenticate against the Store for Business.
 
 To learn more about Azure AD and how to register your application within Azure AD, here are some topics to get you started:
@@ -78,7 +75,6 @@ To learn more about Azure AD and how to register your application within Azure A
 For code samples, see [Microsoft Azure Active Directory Samples and Documentation](http://go.microsoft.com/fwlink/p/?LinkId=623024) in GitHub. Patterns are very similar to [Daemon-DotNet](http://go.microsoft.com/fwlink/p/?LinkId=623025) and [ConsoleApp-GraphAPI-DotNet](http://go.microsoft.com/fwlink/p/?LinkId=623026).
 
 ## Configure your Azure AD application
-
 
 Here are the steps to configure your Azure AD app. For additional information, see [Integrating Applications with Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=623021):
 
@@ -113,28 +109,25 @@ Here are the steps to configure your Azure AD app. For additional information, s
 
     ![business store management tool](images/businessstoreportalservices14.png)
 
-    **Note**  In the prior version of the tool, an update to the app manifest was required to authorize the application. This is no longer necessary.
-
+   > **Note**  In the prior version of the tool, an update to the app manifest was required to authorize the application. This is no longer necessary.
      
-
 11. Login to Store for Business and enable your application. For step-by-step guide, see [Configure an MDM provider](https://technet.microsoft.com/library/mt606939.aspx).
 
-## Azure AD Authentication for MTS
 
+## Azure AD Authentication for MTS
 
 MTS requires calls to be authenticated using an Azure AD OAuth bearer token. The authorization token is for the Azure AD application representing the MDM component (service/daemon/on-prem instance) within the context of the directory/tenant it will be working on behalf-of.
 
 Here are the details for requesting an authorization token:
 
--   Login Authority = https://login.windows.net/&lt;TargetTenantId&gt;
--   Resource/audience\* = https://onestore.microsoft.com
+-   Login Authority = https:<span></span>//login.windows.net/&lt;TargetTenantId&gt;
+-   Resource/audience\* = https:<span></span>//onestore.microsoft.com
 -   ClientId = your AAD application client id
 -   ClientSecret = your AAD application client secret/key
 
 \* The token audience URI is meant as an identifier of the application for which the token is being generated, and it is not a URL for a service endpoint or a web-page.
 
 ## Using the management tool
-
 
 After registering your management tool with Azure AD, the management tool can call into the management services. There are a couple of call patterns:
 
@@ -147,7 +140,7 @@ The diagram below shows the call patterns for acquiring a new or updated applica
 
 **Here is the list of available operations**:
 
--   [Get Inventory](get-seatblock.md)
+-   [Get Inventory](get-inventory.md)
 -   [Get product details](get-product-details.md)
 -   [Get localized product details](get-localized-product-details.md)
 -   [Get offline license](get-offline-license.md)
@@ -162,9 +155,6 @@ The diagram below shows the call patterns for acquiring a new or updated applica
 
  
 
- 
-
-10/10/2016
 
 
 
