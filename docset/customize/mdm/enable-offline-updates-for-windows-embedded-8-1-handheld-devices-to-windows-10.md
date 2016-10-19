@@ -42,7 +42,6 @@ Here is a table of update path to Windows 10 Mobile.
 </table>
 
  
-
 To configure the MDM service provider and enable the mobile devices to download updates from a predefined internal location, an IT administrator or device administrator must perform a series of manual and automated steps.
 
 Here is the outline of the process:
@@ -78,7 +77,7 @@ Down the road, after the upgrade to Windows 10 is complete, if you decide to pus
 -   Your device must have an SD card with at least 0.5 GB of free space.
 -   Ensure that the settings app and PhoneUpdate applet are available via Assigned Access.
 
-The following diagram is a high level overview of the process.
+The following diagram is a high-level overview of the process.
 
 ![update process for windows embedded 8.1 devices](images/windowsembedded-update.png)
 
@@ -95,9 +94,8 @@ Trigger the device to check for updates either manually or using System Center C
 2.  Sync the device. Go to **Settings** &gt; **Workplace** &gt; **Enrolled** and click the refresh icon. Repeat as needed.
 3.  Follow the installation prompts.
 
-**Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
+> **Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
 
- 
 
 **Using System Center Configuration Manager**
 
@@ -116,8 +114,8 @@ Trigger the device to check for updates either manually or using System Center C
 4.  Create a Configuration Baseline for TriggerScan and Deploy. It is recommended that this Configuration Baseline be deployed after the Controlled Updates Baseline has been applied to the device (the corresponding files are deployed on the device through a device sync session).
 5.  Follow the prompts for installation of the updates. The device may reboot several times while installing the update packages.
 
-## <a href="" id="step2"></a>Step 2: Retrieve the device update report XML from the device
 
+## <a href="" id="step2"></a>Step 2: Retrieve the device update report XML from the device
 
 After updates are installed on the device, the process generates an XML file that contains information about the packages it downloaded and installed. You must retrieve this XML file.
 
@@ -127,20 +125,16 @@ There are two ways to retrieve this file from the device; one pre-GDR1 and one p
 
 1.  Create a Configuration Item using ConfigMgr to look at the registry entry ./Vendor/MSFT/EnterpriseExt/DeviceUpdate/ApprovedUpdatesXml.
 
-    **Note**  In System Center Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
-
-     
+    > **Note**  In System Center Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
 
     If the XML file is greater than 32K you can also use ./Vendor/MSFT/FileSystem/&lt;*filename*&gt;.
-
 2.  Set a baseline for this Configuration Item with a “dummy” value (such as zzz), and ensure that you do not remediate it.
 
     The dummy value is not be set; it is only used for comparison.
-
 3.  After the report XML is sent to the device, System Center Configuration Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
 4.  Parse this log for the report XML content.
 
-For a step-by-step walkthrough, see [How to retrieve a device update report using System Center Configuration Manager logs](#how-to-retrieve).
+For a step-by-step walkthrough, see [How to retrieve a device update report using System Center Configuration Manager logs](#how-to-retrieve-a-device-update-report-using-system-center-configuration-manager-logs).
 
 **Post-GDR1: Retrieve the report xml file using an SD card**
 
@@ -150,21 +144,17 @@ For a step-by-step walkthrough, see [How to retrieve a device update report usin
 
 ## Step 3: Extract download URLs from the report XML
 
-
-Use the [example PowerShell script](#example-script) to extract the download URLs from the XML file or parse it manually.
+Use the [example PowerShell script](#example-powershell-script) to extract the download URLs from the XML file or parse it manually.
 
 ## Step 4: Retrieve update packages using download URLs
-
 
 Use a script or manually download each update package to a PC or an internal share.
 
 ## Step 5: Place the update packages on an accessible share
 
-
 Put all the update packages into an internal share that is accessible to all the devices that need these updates. Ensure that the internal share can support multiple devices trying to access the updates at the same time.
 
 ## Step 6: Create two XML files for production devices to select updates and download locations
-
 
 Here are the two files.
 
@@ -194,7 +184,7 @@ Here are the two files.
 
  
 
-For a walkthrough of these steps, [How to deploy controlled updates](#deploy-controlled-updates). Ensure that the trigger scan configuration baseline HAS NOT been deployed.
+For a walkthrough of these steps, [How to deploy controlled updates](#how-to-deploy-controlled-updates). Ensure that the trigger scan configuration baseline HAS NOT been deployed.
 
 ### <a href="" id="deploy-controlled-updates"></a>How to deploy controlled updates
 
@@ -244,7 +234,6 @@ This process has three parts:
 
 ## Step 7: Trigger the other devices to scan, download, and install updates
 
-
 Now that the other "production" or "in-store" devices have the necessary information to download updates from an internal share, the devices are ready for updates.
 
 ### Use this process for unmanaged devices
@@ -262,9 +251,8 @@ If the update policy of the device is managed or restricted by MDM, an update pr
 
     Ensure that the trigger scan has successfully executed, and then remove the trigger scan configuration baseline.
 
-    **Note**  Ensure that the PhoneUpdateRestriction Policy is set to a value of 0, to ensure that the device will not perform an automatic scan.
+    > **Note**  Ensure that the PhoneUpdateRestriction Policy is set to a value of 0, to ensure that the device will not perform an automatic scan.
 
-     
 
 -   Trigger the device to scan as part of a Maintenance Window defined by the IT Admin in System Center Configuration Manager.
 
@@ -455,7 +443,6 @@ DownloadFiles $inputFile $downloadCache $localCacheURL
 
 ## <a href="" id="how-to-retrieve"></a>How to retrieve a device update report using System Center Configuration Manager logs.
 
-
 Use this procedure for pre-GDR1 devices.
 
 **For pre-GDR1 devices**
@@ -536,9 +523,6 @@ Use this procedure for pre-GDR1 devices.
 
  
 
- 
-
-10/10/2016
 
 
 
