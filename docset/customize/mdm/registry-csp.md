@@ -12,7 +12,7 @@ ms.assetid: 2307e3fd-7b61-4f00-94e1-a639571f2c9d
 
 The Registry configuration service provider is used to update registry settings. However, if there is configuration service provider that is specific to the settings that need to be updated, use the specific configuration service provider.
 
-**Note**   The Registry CSP is only supported in Windows 10 Mobile for OEM configuration. Do not use this CSP for enterprise remote management.
+>  **Note**   The Registry CSP is only supported in Windows 10 Mobile for OEM configuration. Do not use this CSP for enterprise remote management.
 For Windows 10 Mobile only, this configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
  

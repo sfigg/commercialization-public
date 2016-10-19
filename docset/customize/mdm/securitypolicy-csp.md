@@ -12,7 +12,7 @@ ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
 
 The SecurityPolicy configuration service provider is used to configure security policy settings for WAP push, OMA Client Provisioning, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_SECURITY\_POLICIES capabilities to be accessed from a network configuration application.
+>  **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_SECURITY\_POLICIES capabilities to be accessed from a network configuration application.
 
  
 
@@ -296,7 +296,7 @@ The following table shows the Microsoft custom elements that this Configuration 
 
  
 
-10/10/2016
+
 
 
 

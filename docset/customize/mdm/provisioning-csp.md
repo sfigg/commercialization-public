@@ -12,7 +12,7 @@ ms.assetid: 5D6C17BE-727A-4AFA-9F30-B34C1EA1D2AE
 
 The Provisioning configuration service provider is used for bulk user enrollment to an MDM service.
 
-**Note**  Bulk enrollment does not work when two factor authentication is enabled.
+> **Note**  Bulk enrollment does not work when two factor authentication is enabled.
 
  
 
@@ -57,7 +57,7 @@ Specifies the enrollment service URL.
 
  
 
-10/10/2016
+
 
 
 

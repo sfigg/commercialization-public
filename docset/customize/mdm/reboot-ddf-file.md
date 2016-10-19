@@ -139,7 +139,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
 
  
 
-10/10/2016
+
 
 
 

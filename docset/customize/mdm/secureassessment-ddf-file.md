@@ -102,7 +102,7 @@ This topic shows the OMA DM device description framework (DDF) for the **SecureA
 
  
 
-10/10/2016
+
 
 
 

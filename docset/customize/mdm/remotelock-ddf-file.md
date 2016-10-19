@@ -112,7 +112,7 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteL
 
  
 
-10/10/2016
+
 
 
 

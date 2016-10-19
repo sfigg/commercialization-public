@@ -316,7 +316,7 @@ This topic shows the OMA DM device description framework (DDF) for the **SharedP
 
  
 
-10/10/2016
+
 
 
 

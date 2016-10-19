@@ -33,7 +33,7 @@ The default value is False.
 <a href="" id="setedupolicies"></a>**SetEduPolicies**  
 Optional. A boolean value that specifies that the policies defined for an education environment should be set when configuring SharedPC mode.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -44,7 +44,7 @@ The default value is True.
 <a href="" id="setpowerpolicies"></a>**SetPowerPolicies**  
 Optional. A boolean value that specifies that the power policies should be set when configuring SharedPC mode.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -55,7 +55,7 @@ The default value is True.
 <a href="" id="maintenancestarttime"></a>**MaintenanceStartTime**  
 Optional. An integer value that specifies the daily start time of maintenance hour. Given in minutes from midnight. The range is 0-1440.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -66,7 +66,7 @@ The default value is 0 (12 AM).
 <a href="" id="signinonresume"></a>**SignInOnResume**  
 Optional. A boolean value that, when set to True, requires sign in whenever the device wakes up from sleep mode.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -77,7 +77,7 @@ The default value is True.
 <a href="" id="sleeptimeout"></a>**SleepTimeout**  
 Optional. An integer value that specifies the time in seconds that a device sits at the Logon screen before signing the user out. Setting this value to 0 prevents the sleep timeout from occurring.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -88,7 +88,7 @@ The default value is 3600 (1 hour).
 <a href="" id="enableaccountmanager"></a>**EnableAccountManager**  
 A boolean that enables the account manager for shared PC mode.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -99,7 +99,7 @@ The default value is True.
 <a href="" id="accountmodel"></a>**AccountModel**  
 Configures which type of accounts are allowed to use the PC.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -114,7 +114,7 @@ The following list shows the supported values:
 <a href="" id="deletionpolicy"></a>**DeletionPolicy**  
 Configures when accounts are deleted.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -128,7 +128,7 @@ The following list shows the supported values:
 <a href="" id="diskleveldeletion"></a>**DiskLevelDeletion**  
 Sets the percentage of disk space remaining on a PC before cached accounts will be deleted to free disk space. Accounts that have been inactive the longest will be deleted first.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -141,7 +141,7 @@ The supported operations are Get and Replace.
 <a href="" id="disklevelcaching"></a>**DiskLevelCaching**  
 Sets the percentage of available disk space a PC should have before it stops deleting cached accounts.
 
-**Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
+>  **Note**  If used, this value needs to be set before the action on the **EnableSharedPCMode** node is taken.
 
  
 
@@ -158,7 +158,7 @@ For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevel
 
  
 
-10/10/2016
+
 
 
 

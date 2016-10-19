@@ -52,7 +52,7 @@ In Windows 10 Mobile, the remote wipe command is implemented on the device by u
 
  
 
-10/10/2016
+
 
 
 
