@@ -35,6 +35,7 @@ The **Get Inventory** operation retrieves information from the Windows Store for
 </tbody>
 </table>
 
+
  
 
 ### URI parameters
@@ -85,6 +86,8 @@ The following parameters may be specified in the request URI.
 </table>
 
 
+
+
 Here are some examples.
 
 <table>
@@ -119,6 +122,8 @@ Here are some examples.
 </table>
 
 
+
+
 <table>
 <colgroup>
 <col width="25%" />
@@ -145,6 +150,8 @@ Here are some examples.
 </tr>
 </tbody>
 </table>
+
+
 
 
 ## Response
