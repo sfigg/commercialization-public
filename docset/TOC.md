@@ -214,6 +214,9 @@
 ###### [UWF_Volume.Unprotect](customize/enterprise/uwf-volumeunprotect.md)
 #### [uwfmgr.exe](customize/enterprise/uwfmgrexe.md)
 
+## [Customizations for mobile enterprise devices](customize/mobile/windows-10-mobile-customizations-portal.md)
+### [Enterprise shared storage](customize/mobile/enterprise-shared-storage.md)
+
 ## [Customize using the mobile MCSF framework](customize/mobile/provisioning-and-customization.md)
 ### [Managed Centralized Settings Framework (MCSF)](customize/mobile/managed-centralized-settings-framework--mcsf-.md)
 ### [Customization answer file](customize/mobile/customization-answer-file.md)
