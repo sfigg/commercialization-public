@@ -2,6 +2,10 @@
 @echo     Run from the reference device in the WinPE environment
 @echo     This script erases the primary hard drive and applies a new image
 @echo.
+@echo     Note: This script uses separate scripts to configure the drive partions:
+@echo     CreatePartitions-BIOS.txt or CreatePartitions-UEFI.txt
+@echo     These scripts must be in the same folder as ApplyImage.bat.
+@echo.
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
 @echo   This gives you an opportunity to add siloed provisioning packages (SPPs)
@@ -21,7 +25,7 @@
 @if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
 @if not exist X:\Windows\System32 goto END
 @if %1.==. echo ERROR: To run this script, add a path to a Windows image file.
-@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
+@if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim 
 @if %1.==. goto END
 @echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.

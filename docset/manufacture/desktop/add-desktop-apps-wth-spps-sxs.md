@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: KPacquer
 Description: 'Lab 1f: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -13,7 +13,11 @@ SPPs are a new type of provisioning package that is available for Windows 10, ve
 
 These packages are automatically included in the recovery tools. When you apply SPPs to a Compact OS system, the applications in that SPP are single-instanced automatically to save space.
 
-We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode. 
+We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.
+
+**Notes*
+
+* To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 1f: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
 
 ### Tip: Use Virtual machines (VMs)
 VMs can be a huge time-saver when capturing multiple classic applications.  Rather than reinstalling each time, use checkpoints to quickly bounce back to the clean, freshly-reinstalled state. We con't cover the steps in this lab, but here's the general steps:
