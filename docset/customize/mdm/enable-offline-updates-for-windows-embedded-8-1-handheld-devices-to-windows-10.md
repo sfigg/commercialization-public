@@ -42,7 +42,6 @@ Here is a table of update path to Windows 10 Mobile.
 </table>
 
  
-
 To configure the MDM service provider and enable the mobile devices to download updates from a predefined internal location, an IT administrator or device administrator must perform a series of manual and automated steps.
 
 Here is the outline of the process:
@@ -78,7 +77,7 @@ Down the road, after the upgrade to Windows 10 is complete, if you decide to pus
 -   Your device must have an SD card with at least 0.5 GB of free space.
 -   Ensure that the settings app and PhoneUpdate applet are available via Assigned Access.
 
-The following diagram is a high level overview of the process.
+The following diagram is a high-level overview of the process.
 
 ![update process for windows embedded 8.1 devices](images/windowsembedded-update.png)
 
@@ -95,9 +94,8 @@ Trigger the device to check for updates either manually or using System Center C
 2.  Sync the device. Go to **Settings** &gt; **Workplace** &gt; **Enrolled** and click the refresh icon. Repeat as needed.
 3.  Follow the installation prompts.
 
-**Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
+> **Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
 
- 
 
 **Using System Center Configuration Manager**
 
@@ -116,8 +114,8 @@ Trigger the device to check for updates either manually or using System Center C
 4.  Create a Configuration Baseline for TriggerScan and Deploy. It is recommended that this Configuration Baseline be deployed after the Controlled Updates Baseline has been applied to the device (the corresponding files are deployed on the device through a device sync session).
 5.  Follow the prompts for installation of the updates. The device may reboot several times while installing the update packages.
 
-## <a href="" id="step2"></a>Step 2: Retrieve the device update report XML from the device
 
+## <a href="" id="step2"></a>Step 2: Retrieve the device update report XML from the device
 
 After updates are installed on the device, the process generates an XML file that contains information about the packages it downloaded and installed. You must retrieve this XML file.
 
@@ -127,20 +125,16 @@ There are two ways to retrieve this file from the device; one pre-GDR1 and one p
 
 1.  Create a Configuration Item using ConfigMgr to look at the registry entry ./Vendor/MSFT/EnterpriseExt/DeviceUpdate/ApprovedUpdatesXml.
 
-    **Note**  In System Center Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
-
-     
+    > **Note**  In System Center Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
 
     If the XML file is greater than 32K you can also use ./Vendor/MSFT/FileSystem/&lt;*filename*&gt;.
-
 2.  Set a baseline for this Configuration Item with a “dummy” value (such as zzz), and ensure that you do not remediate it.
 
     The dummy value is not be set; it is only used for comparison.
-
 3.  After the report XML is sent to the device, System Center Configuration Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
 4.  Parse this log for the report XML content.
 
-For a step-by-step walkthrough, see [How to retrieve a device update report using System Center Configuration Manager logs](#how-to-retrieve).
+For a step-by-step walkthrough, see [How to retrieve a device update report using System Center Configuration Manager logs](#how-to-retrieve-a-device-update-report-using-system-center-configuration-manager-logs).
 
 **Post-GDR1: Retrieve the report xml file using an SD card**
 
@@ -150,21 +144,17 @@ For a step-by-step walkthrough, see [How to retrieve a device update report usin
 
 ## Step 3: Extract download URLs from the report XML
 
-
-Use the [example PowerShell script](#example-script) to extract the download URLs from the XML file or parse it manually.
+Use the [example PowerShell script](#example-powershell-script) to extract the download URLs from the XML file or parse it manually.
 
 ## Step 4: Retrieve update packages using download URLs
-
 
 Use a script or manually download each update package to a PC or an internal share.
 
 ## Step 5: Place the update packages on an accessible share
 
-
 Put all the update packages into an internal share that is accessible to all the devices that need these updates. Ensure that the internal share can support multiple devices trying to access the updates at the same time.
 
 ## Step 6: Create two XML files for production devices to select updates and download locations
-
 
 Here are the two files.
 
@@ -194,9 +184,10 @@ Here are the two files.
 
  
 
-For a walkthrough of these steps, [How to deploy controlled updates](#deploy-controlled-updates). Ensure that the trigger scan configuration baseline HAS NOT been deployed.
+For a walkthrough of these steps, [How to deploy controlled updates](#how-to-deploy-controlled-updates). Ensure that the trigger scan configuration baseline HAS NOT been deployed.
 
-### <a href="" id="deploy-controlled-updates"></a>How to deploy controlled updates
+<a href="" id="deploy-controlled-updates"></a>
+### How to deploy controlled updates
 
 This process has three parts:
 
@@ -244,7 +235,6 @@ This process has three parts:
 
 ## Step 7: Trigger the other devices to scan, download, and install updates
 
-
 Now that the other "production" or "in-store" devices have the necessary information to download updates from an internal share, the devices are ready for updates.
 
 ### Use this process for unmanaged devices
@@ -262,16 +252,15 @@ If the update policy of the device is managed or restricted by MDM, an update pr
 
     Ensure that the trigger scan has successfully executed, and then remove the trigger scan configuration baseline.
 
-    **Note**  Ensure that the PhoneUpdateRestriction Policy is set to a value of 0, to ensure that the device will not perform an automatic scan.
+    > **Note**  Ensure that the PhoneUpdateRestriction Policy is set to a value of 0, to ensure that the device will not perform an automatic scan.
 
-     
 
 -   Trigger the device to scan as part of a Maintenance Window defined by the IT Admin in System Center Configuration Manager.
 
 After the installation of updates is completed, the IT Admin can use the DUReport generated in the production devices to determine if the device successfully installed the list of updates. If the device did not, error codes are provided in the DUReport.xml. To retrieve the device update report from a device, perform the same steps defined in [Step 2](#step2).
 
-## <a href="" id="example-script"></a>Example PowerShell script
-
+<a href="" id="example-script"></a>
+## Example PowerShell script
 
 ``` syntax
 param (
@@ -453,8 +442,8 @@ if ($downloadCacheFileCount -ne 0)
 DownloadFiles $inputFile $downloadCache $localCacheURL
 ```
 
-## <a href="" id="how-to-retrieve"></a>How to retrieve a device update report using System Center Configuration Manager logs.
-
+<a href="" id="how-to-retrieve"></a>
+## How to retrieve a device update report using System Center Configuration Manager logs
 
 Use this procedure for pre-GDR1 devices.
 
@@ -463,82 +452,65 @@ Use this procedure for pre-GDR1 devices.
 1.  Trigger a device scan. Go to **Settings** -&gt; **Phone Update** -&gt; **Check for Updates**.
 
     Since the DUReport settings have not been remedied, you should see a non-compliance.
-
 2.  In System Center Configuration Manager under **Assets and Compliance** &gt; **Compliance Settings**, right-click on **Configuration Items**.
 3.  Select **Create Configuration Item**.
 
     ![device update using sccm](images/windowsembedded-update5.png)
-
 4.  Enter a filename (such as GetDUReport) and then choose **Mobile Device**.
 5.  In the **Mobile Device Settings** page, check the box **Configure Additional Settings that are not in the default settings group**, and the click **Next**.
 
     ![device update using sccm](images/windowsembedded-update6.png)
-
 6.  In the **Additional Settings** page, click **Add**.
 
     ![device update using sccm](images/windowsembedded-update7.png)
-
 7.  In the **Browse Settings** page, click **Create Setting**.
 
     ![device update](images/windowsembedded-update8.png)
-
 8.  Enter a unique **Name**. For the **Setting type**, select **OMA-URI** and for the **Data type**, select **String**.
 9.  In the **OMA-URI** text box, enter `./Vendor/MSFT/EnterpriseExt/DeviceUpdate/UpdatesResultXml`, the click **OK**.
 
     ![handheld device update](images/windowsembedded-update9.png)
-
 10. In the **Browse Settings** page, click **Close**.
 11. In the **Create Configuration Item Wizard** page, check **All Windows Embedded 8.1 Handheld** as the supported platform, and then click **Next**.
 
     ![embedded device update](images/windowsembedded-update10.png)
-
 12. Close the **Create Configuration Item Wizard** page.
 13. Right-click on the newly create configuration item, and then select the **Compliance Rules** tab.
 14. Click the new created mobile device setting (such as DUReport) and then click **Select**.
 15. Enter a dummy value (such as zzz) that is different from the one on the device.
 
     ![embedded device update](images/windowsembedded-update11.png)
-
 16. Disable remediation by unchecking the **Remediate noncompliant rules when supported** option.
 17. Click **OK** to close the Edit Rule page.
 18. Create a new configuration baseline. Under **Assets and Compliance** &gt; **Compliance Settings**, right-click on **Configuration Baselines**.
 19. Select **Create Configuration Item**.
 
     ![embedded device update](images/windowsembedded-update12.png)
-
 20. Enter a baseline name (such as RetrieveDUReport).
 21. Add the configuration item that you just created. Select **Add** and then select the configuration item that you just created (such as DUReport).
 
     ![embedded device update](images/windowsembedded-update13.png)
-
 22. Click **OK**, then click **OK** again to complete the configuration baseline.
 23. Deploy the newly created configuration baseline to the appropriate device collection. Right-click on the configuration baseline that you created and the select **Deploy**.
 
     ![embedded device update](images/windowsembedded-update14.png)
-
 24. Check the check box **Remediate noncompliant rules when supported**.
 25. Select the appropriate device collection and define the schedule.
 
     ![device update](images/windowsembedded-update15.png)
-
 26. To view the DUReport content, select the appropriate deployment for the configuration saseline that you created. Right-click on the deployment and select **View Status**.
 27. Click **Run Summarization** and then click **Refresh**. On the Non-Compliant tab, the test device(s) should be listed.
 28. Under **Asset Details**, right-click on the test device, and then select **Mode Details**.
 
     ![device update](images/windowsembedded-update16.png)
-
 29. In the Non-compliant tab, you will see the DUReport, but you cannot retrieve the content from here.
 
     ![device update](images/windowsembedded-update17.png)
-
 30. To retrieve the DUReport, open an Explorer windows to C:\\Program Files\\SMS\_CCM\\SMS\_DM.log.
 31. In the log file, search from the bottom for "./Vendor/MSFT/EnterpriseExt/DeviceUpdate/UpdatesResultXml" RuleExression="Equals zzz" where zzz is the dummy value. Just above this copy the information for UpdateData and use this information to create the DUControlledUpdates.xml.
 
  
 
- 
-
-10/10/2016
 
 
 

@@ -12,7 +12,6 @@ ms.assetid: 5b90b631-62a6-4949-b53a-01275fd304b2
 
 # Server requirements for using OMA DM to manage Windows devices
 
-
 The following list shows the general server requirements for using OMA DM to manage Windows devices:
 
 -   The OMA DM server must support the OMA DM v1.1.2 or later protocol.
@@ -31,9 +30,6 @@ The following list shows the general server requirements for using OMA DM to man
 
  
 
- 
-
-10/10/2016
 
 
 

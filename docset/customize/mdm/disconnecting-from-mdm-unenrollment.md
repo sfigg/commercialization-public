@@ -10,8 +10,8 @@ MSHAttr:
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
 ---
 
-# Disconnecting from the management infrastructure (unenrollment)
 
+# Disconnecting from the management infrastructure (unenrollment)
 
 Disconnecting may be initiated either locally by the user from the phone or remotely by the IT admin using management server. User-initiated disconnection is performed much like the initial connection, and it is initiated from the same location in the Setting Control Panel as creating the workplace account. Users may choose to disconnect for any number of reasons, including leaving the company or getting a new device and no longer needing access to their LOB apps on the old device. When an administrator initiates a disconnection, the enrollment client performs the disconnection during its next regular maintenance session. Administrators may choose to disconnect a user’s device after they’ve left the company or because the device is regularly failing to comply with the organization’s security settings policy.
 
@@ -23,26 +23,25 @@ During disconnection, the client does the following:
 -   Removes the device management client configuration and other setting configuration added by MDM server, including the scheduled maintenance task. The client remains dormant unless the user reconnects it to the management infrastructure.
 -   Reports successful initiated disassociation to the management infrastructure if the admin initiated the process. Note that in Windows, user-initiated disassociation is reported to the server as a best effort.
 
-## In this topic
 
+## In this topic
 
 -   [User-initiated disconnection](#user-initiated-disconnection)
 -   [Server-initiated disconnection](#server-initiated-disconnection)
--   [Unenrollment from Work Access settings page](#work-access)
+-   [Unenrollment from Work Access settings page](#unenrollment-from-work-access-settings-page)
 -   [IT admin–requested disconnection](#it-admin-requested-disconnection)
--   [Data loss during unenrollment from Azure Active Directory Join](#dataloss)
+-   [Data loss during unenrollment from Azure Active Directory Join](#data-loss-during-unenrollment-from-azure-active-directory-join)
+
 
 ## User-initiated disconnection
-
 
 In Windows, after the user confirms the account deletion command and before the account is deleted, the MDM client will send a notification to the MDM server notifying that the server the account will be removed. This is a best effort action as no retry is built-in to ensure the notification is successfully sent to the device.
 
 This action utilizes the OMA DM generic alert 1226 function to send a user an MDM unenrollment user alert to the MDM server after the device accepts the user unenrollment request, but before it deletes any enterprise data. The server should set the expectation that unenrollment may succeed or fail, and the server can check whether the device is unenrolled by either checking whether the device calls back at scheduled time or by sending a push notification to the device to see whether it responds back. If the server plans to send a push notification, it should allow for some delay to give the device the time to complete the unenrollment work.
 
-**Note**  The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).
+> **Note**  The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, refer to the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).
 
  
-
 The vendor uses the Type attribute to specify what type of generic alert it is. For device initiated MDM unenrollment, the alert type is **com.microsoft:mdm.unenrollment.userrequest**.
 
 After the user elects to unenroll, any active MDM OMA DM sessions are terminated. After that, the DM client starts a DM session, including a user unenroll generic alert in the first package that it sends to the server.
@@ -95,8 +94,9 @@ The following sample shows an OMA DM first package that contains a generic alert
 ```
 
 After the previous package is sent, the unenrollment process begins.
-## Server-initiated disconnection
 
+
+## Server-initiated disconnection
 
 When the server initiates disconnection, all undergoing sessions for the enrollment ID are aborted immediately to avoid deadlocks. The server will not get a response for the unenrollment, instead a generic alert notification is sent with messageid=1.
 
@@ -114,8 +114,9 @@ When the server initiates disconnection, all undergoing sessions for the enrollm
 </Alert>
 ```
 
-## <a href="" id="work-access"></a>Unenrollment from Work Access settings page
 
+<a href="" id="work-access"></a>
+## Unenrollment from Work Access settings page
 
 If the user is enrolled into MDM using an Azure Active Directory (AAD Join or by adding a Microsoft work account), the MDM account will show up under the Work Access page. However, the **Remove** button is greyed out and not accessible. Users can remove that MDM account by removing the AAD association to the device.
 
@@ -124,15 +125,17 @@ You can only use the Work Access page to unenroll under the following conditions
 -   Enrollment was done using bulk enrollment.
 -   Enrollment was created using the Work Access page.
 
-## <a href="" id="dataloss"></a>Data loss during unenrollment from Azure Active Directory Join
 
+<a href="" id="dataloss"></a>
+## Data loss during unenrollment from Azure Active Directory Join
 
 When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there is no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message does not indicate the loss of WIP data.
 
 ![aadj unenerollment](images/azure-ad-unenrollment.png)
 
-## <a href="" id="it-admin-requested-disconnection"></a>IT admin–requested disconnection
 
+<a href="" id="it-admin-requested-disconnection"></a>
+## IT admin–requested disconnection
 
 The server requests an enterprise management disconnection request by issuing an Exec OMA DM SyncML XML command to the device using the DMClient configuration service provider’s Unenroll node during the next client-initiated DM session. The Data tag inside the Exec command should be the value of the provisioned DM server ProviderID. For more information, see the Enterprise-specific DM client configuration topic.
 
@@ -140,9 +143,7 @@ When the disconnection is completed, the user is notified that the device has be
 
  
 
- 
 
-10/10/2016
 
 
 

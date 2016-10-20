@@ -9,7 +9,6 @@ ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
 
 # Structure of OMA DM provisioning files
 
-
 OMA DM commands are transmitted between the server and the client device in messages. A message can contain one or more commands. For a list of commands supported, see the table in [OMA DM protocol support](oma-dm-protocol-support.md).
 
 A DM message is an XML document. The structure and content of the document is defined in the OMA DM Representation Protocol (OMA-SyncML-DevInfo-DTD-V1\_1\_2-20030505-D.dtd) available from the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=526900).
@@ -47,7 +46,6 @@ The following table shows the OMA DM versions that are supported.
 
 ## File format
 
-
 The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](http://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
 
 ``` syntax
@@ -83,7 +81,6 @@ The following example shows the general structure of the XML document sent by th
 
 ## SyncHdr element
 
-
 SyncHdr includes the following information:
 
 -   Document Type Definition (DTD) and protocol version numbers
@@ -96,11 +93,12 @@ SyncHdr includes the following information:
 
 This information is used to by the client device to properly manage the DM session.
 
+
 **Code example**
 
 The following example shows the header component of a DM message. In this case, OMA DM version 1.2 is used as an example only.
 
-**Note**   The &lt;LocURI&gt; node value for the &lt;Source&gt; element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-configuration-service-provider.md).
+> **Note**   The &lt;LocURI&gt; node value for the &lt;Source&gt; element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-configuration-service-provider.md).
 
  
 
@@ -120,7 +118,6 @@ The following example shows the header component of a DM message. In this case, 
 ```
 
 ## SyncBody element
-
 
 SyncBody contains one or more DM commands. The SyncBody can contain multiple DM commands; each command must have a different CmdID value.
 
@@ -150,7 +147,6 @@ When using SyncML for OMA DM provisioning, a LocURI in SyncBody can have a "." a
 ```
 
 ## Update device settings example
-
 
 The Replace command is used to update a device setting.
 
@@ -190,9 +186,7 @@ The following example illustrates how to use the Replace command to update a dev
 
  
 
- 
 
-10/10/2016
 
 
 

@@ -10,8 +10,8 @@ MSHAttr:
 ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
 ---
 
-# Push notification support for device management
 
+# Push notification support for device management
 
 The [DMClient CSP](dmclient-configuration-service-provider.md) supports the ability to configure push-initiated device management sessions. Using the [Windows Notification Services (WNS)](http://go.microsoft.com/fwlink/p/?linkid=528800), a management server can request a device to establish a management session with the server through a push notification. A device is configured to support push by the management server by providing the device with a PFN for an application. Once the device is configured, it registers a persistent connection with the WNS cloud (Battery Sense and Data Sense conditions permitting).
 
@@ -38,8 +38,8 @@ Note the following restrictions related to push notifications and WNS:
     -   If ExpiryTime has passed a schedule is set for 1 day +/- 4 hours from now.
 -   On Windows 10, version 1607, we check for network connectivity before retrying. We do not check for internet connectivity. If network connectivity is not available we will skip the retry and set schedule for 4+/-1 hours to try again.
 
-## Get WNS credentials and PFN for MDM push notification
 
+## Get WNS credentials and PFN for MDM push notification
 
 To get a PFN and WNS credentials, you must create an Windows Store app.
 
@@ -68,7 +68,6 @@ To get a PFN and WNS credentials, you must create an Windows Store app.
     ![mdm push notification](images/push-notification6.png)
 
 7.  In the **Application Registration Portal** page, you will see the properties for the app that you created, such as:
-
     -   Application Id
     -   Application Secrets
     -   Windows Store Package SID, Application Identity, and Publisher.
@@ -76,7 +75,6 @@ To get a PFN and WNS credentials, you must create an Windows Store app.
     ![mdm push notification](images/push-notification7.png)
 
 8.  Click **Save**.
-
 9.  Close the **Application Registration Portal** window and go back to the Windows Dev Center Dashboard.
 10. Select your app from the list on the left.
 11. From the left nav, expand **App management** and then click **App identity**.
@@ -87,9 +85,7 @@ To get a PFN and WNS credentials, you must create an Windows Store app.
 
  
 
- 
 
-10/10/2016
 
 
 
