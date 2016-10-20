@@ -15,7 +15,7 @@ These packages are automatically included in the recovery tools. When you apply 
 
 We recommend that each time you capture a new Windows desktop application, you start with a clean, freshly-installed Windows image, in audit mode.
 
-**Notes*
+**Notes**
 
 * To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 1f: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
 
