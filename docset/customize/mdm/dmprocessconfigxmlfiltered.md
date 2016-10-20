@@ -46,7 +46,7 @@ Microsoft recommends that this function is not used to configure the following t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
          LPCWSTR pszXmlIn,
    const WCHAR   **rgszAllowedCspNode,
@@ -58,17 +58,19 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 Parameters
 ----------
 
-*pszXmlIn*   
-   \[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).
+<dl>
+<dt><em>pszXmlIn</em></dt>
+<dd>\[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).</dd>
 
-*rgszAllowedCspNode*   
-   \[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.
+<dt><em>rgszAllowedCspNode</em></dt>
+<dd>\[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.</dd>
 
-*dwNumAllowedCspNodes*   
-   \[in\] Number of elements passed in *rgszAllowedCspNode*.
+<dt><em>dwNumAllowedCspNodes</em></dt>
+<dd>\[in\] Number of elements passed in *rgszAllowedCspNode*.</dd>
 
-*pbstrXmlOut*   
-   \[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.
+<dt><em>pbstrXmlOut</em></dt>
+<dd>\[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.</dd>
+</dl>
 
 If **DMProcessConfigXMLFiltered** retrieves a document, the *pbstrXmlOut* holds the XML output (in string form) of the provisioning operations. If **DMProcessConfigXMLFiltered** returns a failure, the XML output often contains "error nodes" that indicate which elements of the original XML failed. If the input document does not contain queries and is successfully processed, the output document should resemble the input document. In some error cases, no output is returned.
 
@@ -90,24 +92,24 @@ Returns the standard **HRESULT** value **S\_OK** to indicate success. The follow
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>CONFIG_E_OBJECTBUSY</strong></td>
-<td><p>Another instance of the configuration management service is currently running.</p></td>
+<td style="vertical-align:top"><p><strong>CONFIG_E_OBJECTBUSY</strong></p></td>
+<td style="vertical-align:top"><p>Another instance of the configuration management service is currently running.</p></td>
 </tr>
 <tr class="even">
-<td><strong>CONFIG_E_ENTRYNOTFOUND</strong></td>
-<td><p>No metabase entry was found.</p></td>
+<td style="vertical-align:top"><p><strong>CONFIG_E_ENTRYNOTFOUND</strong></p></td>
+<td style="vertical-align:top"><p>No metabase entry was found.</p></td>
 </tr>
 <tr class="odd">
-<td><strong>CONFIG_E_CSPEXCEPTION</strong></td>
-<td><p>An exception occurred in one of the configuration service providers.</p></td>
+<td style="vertical-align:top"><p><strong>CONFIG_E_CSPEXCEPTION</strong></p></td>
+<td style="vertical-align:top"><p>An exception occurred in one of the configuration service providers.</p></td>
 </tr>
 <tr class="even">
-<td><strong>CONFIG_E_TRANSACTIONINGFAILURE</strong></td>
-<td><p>A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.</p></td>
+<td style="vertical-align:top"><p><strong>CONFIG_E_TRANSACTIONINGFAILURE</strong></p></td>
+<td style="vertical-align:top"><p>A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.</p></td>
 </tr>
 <tr class="odd">
-<td><strong>CONFIG_E_BAD_XML</strong></td>
-<td><p>The XML input is invalid or malformed.</p></td>
+<td style="vertical-align:top"><p><strong>CONFIG_E_BAD_XML</strong></p></td>
+<td style="vertical-align:top"><p>The XML input is invalid or malformed.</p></td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +123,7 @@ The processing of the XML is transactional; either the entire document gets proc
 
 The usage of **DMProcessConfigXMLFiltered** depends on the configuration service providers that are used. For example, if the input .provxml contains the following two settings:
 
-``` syntax
+``` XML
 <wap-provisioningdoc>
     <characteristic type="NAPDEF">
         <characteristic type="Internet" mwid="1">
@@ -142,7 +144,7 @@ The usage of **DMProcessConfigXMLFiltered** depends on the configuration service
 
 Then, the second parameter in the call to **DMProcessConfigXMLFiltered** would have to have the following definition.
 
-``` syntax
+``` C++
 LPCWSTR rgszAllowedCspNodes[] =
 {
     L"NAPDEF",
@@ -154,7 +156,7 @@ This array of configuration service provider names indicates which .provxml cont
 
 The following code sample shows how this array would be passed in. Note that *szProvxmlContent* does not show the full XML contents for brevity. In actual usage, the "…" would contain the full XML string shown above.
 
-``` syntax
+``` C++
 WCHAR szProvxmlContent[] = L"<wap-provisioningdoc>...</wap-provisioningdoc>"; 
 BSTR bstr = NULL;
 
@@ -184,28 +186,28 @@ Requirements
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>None supported</p></td>
+<td style="vertical-align:top"><p>Minimum supported client</p></td>
+<td style="vertical-align:top"><p>None supported</p></td>
 </tr>
 <tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>None supported</p></td>
+<td style="vertical-align:top"><p>Minimum supported server</p></td>
+<td style="vertical-align:top"><p>None supported</p></td>
 </tr>
 <tr class="odd">
-<td><p>Minimum supported phone</p></td>
-<td><p>Windows Phone 8.1</p></td>
+<td style="vertical-align:top"><p>Minimum supported phone</p></td>
+<td style="vertical-align:top"><p>Windows Phone 8.1</p></td>
 </tr>
 <tr class="even">
-<td><p>Header</p></td>
-<td>Dmprocessxmlfiltered.h</td>
+<td style="vertical-align:top"><p>Header</p></td>
+<td style="vertical-align:top"><p>Dmprocessxmlfiltered.h</p></td>
 </tr>
 <tr class="odd">
-<td><p>Library</p></td>
-<td>Dmprocessxmlfiltered.lib</td>
+<td style="vertical-align:top"><p>Library</p></td>
+<td style="vertical-align:top"><p>Dmprocessxmlfiltered.lib</p></td>
 </tr>
 <tr class="even">
-<td><p>DLL</p></td>
-<td>Dmprocessxmlfiltered.dll</td>
+<td style="vertical-align:top"><p>DLL</p></td>
+<td style="vertical-align:top"><p>Dmprocessxmlfiltered.dll</p></td>
 </tr>
 </tbody>
 </table>
