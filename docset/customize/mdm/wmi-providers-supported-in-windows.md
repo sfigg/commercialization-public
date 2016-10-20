@@ -74,11 +74,11 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_ApplicationFramework</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610369framework)</td>
+<td>[<strong>MDM_ApplicationFramework</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610370)</td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_ApplicationSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610382)</td>
+<td>[<strong>MDM_ApplicationSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610382)</td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
@@ -94,7 +94,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_CertificateEnrollment</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610385enrollment)</td>
+<td>[<strong>MDM_CertificateEnrollment</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610386)</td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
@@ -138,7 +138,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[<strong>MDM_RestrictionsUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610392user)</td>
+<td>[<strong>MDM_RestrictionsUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610393)</td>
 <td><p>Test not started.</p></td>
 </tr>
 <tr class="even">
@@ -150,7 +150,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_SecurityStatusUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610394user)</td>
+<td>[<strong>MDM_SecurityStatusUser</strong>](https://msdn.microsoft.com/library/windows/hardware/dn920104)</td>
 <td><p>Currently testing.</p></td>
 </tr>
 <tr class="odd">
@@ -174,7 +174,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[<strong>MDM_WirelesssProfileXML</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610397xml)</td>
+<td>[<strong>MDM_WirelesssProfileXML</strong>](https://msdn.microsoft.com/library/windows/hardware/dn610398)</td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
@@ -191,10 +191,6 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 </tr>
 <tr class="even">
 <td>[<strong>MSFT_VpnConnection</strong>](https://msdn.microsoft.com/library/windows/hardware/jj206647)</td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td></td>
 <td><img src="images/checkmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
@@ -214,133 +210,91 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 
 | Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
-| [**wpcappoverride**](parcon.parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
-| [**wpcgameoverride**](parcon.parental-controls-wmi-provider-schema)      | ![cross mark](images/checkmark.png)      |
-| [**wpcgamessettings**](parcon.parental-controls-wmi-provider-schema)     | ![cross mark](images/checkmark.png)      |
-| [**wpcrating**](parcon.parental-controls-wmi-provider-schema)            | ![cross mark](images/checkmark.png)      |
+| [**wpcappoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
+| [**wpcgameoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
+| [**wpcgamessettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)     | ![cross mark](images/checkmark.png)      |
+| [**wpcrating**](https://msdn.microsoft.com/library/windows/hardware/ms711334)            | ![cross mark](images/checkmark.png)      |
 | [**wpcRatingsDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ms711334) |                                          |
-| [**wpcratingssystem**](parcon.parental-controls-wmi-provider-schema)     | ![cross mark](images/checkmark.png)      |
-| [**wpcsystemsettings**](parcon.parental-controls-wmi-provider-schema)    | ![cross mark](images/checkmark.png)      |
-| [**wpcurloverride**](parcon.parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
-| [**wpcusersettings**](parcon.parental-controls-wmi-provider-schema)      | ![cross mark](images/checkmark.png)      |
-| [**wpcwebsettings**](parcon.parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
+| [**wpcratingssystem**](https://msdn.microsoft.com/library/windows/hardware/ms711334)     | ![cross mark](images/checkmark.png)      |
+| [**wpcsystemsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)    | ![cross mark](images/checkmark.png)      |
+| [**wpcurloverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
+| [**wpcusersettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
+| [**wpcwebsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
 
  
 
 ### Win32 WMI classes
 
-Class
-Test completed in Windows 10 for desktop
-[**Win32\_1394Controller**](https://msdn.microsoft.com/library/windows/hardware/aa394059)
-[**Win32\_BaseBoard**](https://msdn.microsoft.com/library/windows/hardware/aa394072)
-[**Win32\_Battery**](https://msdn.microsoft.com/library/windows/hardware/aa394074)
-![cross mark](images/checkmark.png)
-
-[**Win32\_BIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394077)
-![cross mark](images/checkmark.png)
-
-[**Win32\_CDROMDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394081)
-[**Win32\_ComputerSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394102)
-![cross mark](images/checkmark.png)
-
-[**Win32\_ComputerSystemProduct**](https://msdn.microsoft.com/library/windows/hardware/aa394102product)
-![cross mark](images/checkmark.png)
-
-[**Win32\_CurrentTime**](https://msdn.microsoft.com/library/windows/hardware/aa394114)
-![cross mark](images/checkmark.png)
-
-[**Win32\_Desktop**](https://msdn.microsoft.com/library/windows/hardware/aa394121)
-[**Win32\_DesktopMonitor**](https://msdn.microsoft.com/library/windows/hardware/aa394121monitor)
-![cross mark](images/checkmark.png)
-
-[**Win32\_DiskDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394132)
-![cross mark](images/checkmark.png)
-
-[**Win32\_DiskPartition**](https://msdn.microsoft.com/library/windows/hardware/aa394135)
-[**Win32\_DisplayConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394137)
-![cross mark](images/checkmark.png)
-
-[**Win32\_DMAChannel**](https://msdn.microsoft.com/library/windows/hardware/aa394139)
-[**Win32\_DriverVXD**](https://msdn.microsoft.com/library/windows/hardware/aa394141)
-[**Win32\_EncryptableVolume**](https://msdn.microsoft.com/library/windows/hardware/aa376483)
-[**Win32\_Environment**](https://msdn.microsoft.com/library/windows/hardware/aa394143)
-[**Win32\_IDEController**](https://msdn.microsoft.com/library/windows/hardware/aa394155)
-[**Win32\_InfraredDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394158)
-[**Win32\_IRQResource**](https://msdn.microsoft.com/library/windows/hardware/aa394164)
-[**Win32\_Keyboard**](https://msdn.microsoft.com/library/windows/hardware/aa394166)
-[**Win32\_LoadOrderGroup**](https://msdn.microsoft.com/library/windows/hardware/aa394168)
-[**Win32\_LocalTime**](https://msdn.microsoft.com/library/windows/hardware/aa394171)
-![cross mark](images/checkmark.png)
-
-[**Win32\_LoggedOnUser**](https://msdn.microsoft.com/library/windows/hardware/aa394172)
-[**Win32\_LogicalDisk**](https://msdn.microsoft.com/library/windows/hardware/aa394173)
-![cross mark](images/checkmark.png)
-
-[**Win32\_MotherboardDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394204)
-[**Win32\_NetworkAdapter**](https://msdn.microsoft.com/library/windows/hardware/aa394216)
-![cross mark](images/checkmark.png)
-
-[**Win32\_NetworkAdapterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394216configuration)
-[**Win32\_NetworkClient**](https://msdn.microsoft.com/library/windows/hardware/aa394219)
-[**Win32\_NetworkLoginProfile**](https://msdn.microsoft.com/library/windows/hardware/aa394221)
-[**Win32\_NetworkProtocol**](https://msdn.microsoft.com/library/windows/hardware/aa394223)
-[**Win32\_NTEventlogFile**](https://msdn.microsoft.com/library/windows/hardware/aa394225)
-[**Win32\_OperatingSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394239)
-![cross mark](images/checkmark.png)
-
-[**Win32\_OSRecoveryConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394242)
-[**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245)
-[**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247)
-[**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251)
-[**Win32\_PhysicalMedia**](cimwin32a.win32_physicalmedia)
-[**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)
-![cross mark](images/checkmark.png)
-
-[**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)
-[**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)
-[**Win32\_PointingDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394356)
-[**Win32\_PortableBattery**](https://msdn.microsoft.com/library/windows/hardware/aa394357)
-[**Win32\_PortResource**](https://msdn.microsoft.com/library/windows/hardware/aa394359)
-[**Win32\_POTSModem**](https://msdn.microsoft.com/library/windows/hardware/aa394360)
-[**Win32\_Printer**](https://msdn.microsoft.com/library/windows/hardware/aa394363)
-[**Win32\_PrinterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394363configuration)
-[**Win32\_Processor**](https://msdn.microsoft.com/library/windows/hardware/aa394373)
-![cross mark](images/checkmark.png)
-
-[**Win32\_QuickFixEngineering**](https://msdn.microsoft.com/library/windows/hardware/aa394391)
-![cross mark](images/checkmark.png)
-
-[**Win32\_Registry**](https://msdn.microsoft.com/library/windows/hardware/aa394394)
-[**Win32\_SCSIController**](https://msdn.microsoft.com/library/windows/hardware/aa394400)
-[**Win32\_SerialPort**](https://msdn.microsoft.com/library/windows/hardware/aa394413)
-[**Win32\_SerialPortConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394413configuration)
-[**Win32\_ServerFeature**](https://msdn.microsoft.com/library/windows/hardware/cc280268)
-[**Win32\_Service**](https://msdn.microsoft.com/library/windows/hardware/aa394418)
-![cross mark](images/checkmark.png)
-
-[**Win32\_Share**](https://msdn.microsoft.com/library/windows/hardware/aa394435)
-![cross mark](images/checkmark.png)
-
-[**Win32\_SoundDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394463)
-[**Win32\_SystemAccount**](https://msdn.microsoft.com/library/windows/hardware/aa394466)
-[**Win32\_SystemBIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394467)
-![cross mark](images/checkmark.png)
-
-[**Win32\_SystemDriver**](https://msdn.microsoft.com/library/windows/hardware/aa394472)
-[**Win32\_SystemEnclosure**](https://msdn.microsoft.com/library/windows/hardware/aa394474)
-![cross mark](images/checkmark.png)
-
-[**Win32\_TapeDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394491)
-[**Win32\_TimeZone**](https://msdn.microsoft.com/library/windows/hardware/aa394498)
-![cross mark](images/checkmark.png)
-
-[**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503)
-[**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)
-[**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)
-![cross mark](images/checkmark.png)
-
-[**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394504device)
-**Win32\_WindowsUpdateAgentVersion**
+| Class                                                                    | Test completed in Windows 10 for desktop |
+|--------------------------------------------------------------------------|------------------------------------------|
+[**Win32\_1394Controller**](https://msdn.microsoft.com/library/windows/hardware/aa394059) |
+[**Win32\_BaseBoard**](https://msdn.microsoft.com/library/windows/hardware/aa394072)      |
+[**Win32\_Battery**](https://msdn.microsoft.com/library/windows/hardware/aa394074)        | ![cross mark](images/checkmark.png)
+[**Win32\_BIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394077)           | ![cross mark](images/checkmark.png)
+[**Win32\_CDROMDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394081)     |
+[**Win32\_ComputerSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394102) | ![cross mark](images/checkmark.png)
+[**Win32\_ComputerSystemProduct**](https://msdn.microsoft.com/library/windows/hardware/aa394102product) | ![cross mark](images/checkmark.png)
+[**Win32\_CurrentTime**](https://msdn.microsoft.com/library/windows/hardware/aa394114)    | ![cross mark](images/checkmark.png)
+[**Win32\_Desktop**](https://msdn.microsoft.com/library/windows/hardware/aa394121)        |
+[**Win32\_DesktopMonitor**](https://msdn.microsoft.com/library/windows/hardware/aa394121monitor) |![cross mark](images/checkmark.png)
+[**Win32\_DiskDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394132)      | ![cross mark](images/checkmark.png)
+[**Win32\_DiskPartition**](https://msdn.microsoft.com/library/windows/hardware/aa394135)  |
+[**Win32\_DisplayConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394137) | ![cross mark](images/checkmark.png)
+[**Win32\_DMAChannel**](https://msdn.microsoft.com/library/windows/hardware/aa394139)     | 
+[**Win32\_DriverVXD**](https://msdn.microsoft.com/library/windows/hardware/aa394141)      |
+[**Win32\_EncryptableVolume**](https://msdn.microsoft.com/library/windows/hardware/aa376483) |
+[**Win32\_Environment**](https://msdn.microsoft.com/library/windows/hardware/aa394143)    |
+[**Win32\_IDEController**](https://msdn.microsoft.com/library/windows/hardware/aa394155)  |
+[**Win32\_InfraredDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394158) |
+[**Win32\_IRQResource**](https://msdn.microsoft.com/library/windows/hardware/aa394164)    |
+[**Win32\_Keyboard**](https://msdn.microsoft.com/library/windows/hardware/aa394166)       |
+[**Win32\_LoadOrderGroup**](https://msdn.microsoft.com/library/windows/hardware/aa394168) |
+[**Win32\_LocalTime**](https://msdn.microsoft.com/library/windows/hardware/aa394171)      | ![cross mark](images/checkmark.png)
+[**Win32\_LoggedOnUser**](https://msdn.microsoft.com/library/windows/hardware/aa394172)   |
+[**Win32\_LogicalDisk**](https://msdn.microsoft.com/library/windows/hardware/aa394173)    | ![cross mark](images/checkmark.png)
+[**Win32\_MotherboardDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394204) |
+[**Win32\_NetworkAdapter**](https://msdn.microsoft.com/library/windows/hardware/aa394216) | ![cross mark](images/checkmark.png)
+[**Win32\_NetworkAdapterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394216configuration) |
+[**Win32\_NetworkClient**](https://msdn.microsoft.com/library/windows/hardware/aa394219)  |
+[**Win32\_NetworkLoginProfile**](https://msdn.microsoft.com/library/windows/hardware/aa394221) |
+[**Win32\_NetworkProtocol**](https://msdn.microsoft.com/library/windows/hardware/aa394223) |
+[**Win32\_NTEventlogFile**](https://msdn.microsoft.com/library/windows/hardware/aa394225)  |
+[**Win32\_OperatingSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394239) | ![cross mark](images/checkmark.png)
+[**Win32\_OSRecoveryConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394242) |
+[**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245) |
+[**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247) |
+[**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251) |
+[**Win32\_PhysicalMedia**](cimwin32a.win32_physicalmedia)                                   |  
+[**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)   | ![cross mark](images/checkmark.png)
+[**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |  
+[**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |  
+[**Win32\_PointingDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394356)   |
+[**Win32\_PortableBattery**](https://msdn.microsoft.com/library/windows/hardware/aa394357)  |
+[**Win32\_PortResource**](https://msdn.microsoft.com/library/windows/hardware/aa394359)     |
+[**Win32\_POTSModem**](https://msdn.microsoft.com/library/windows/hardware/aa394360)        |
+[**Win32\_Printer**](https://msdn.microsoft.com/library/windows/hardware/aa394363)          |
+[**Win32\_PrinterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394363configuration) |
+[**Win32\_Processor**](https://msdn.microsoft.com/library/windows/hardware/aa394373)        | ![cross mark](images/checkmark.png)
+[**Win32\_QuickFixEngineering**](https://msdn.microsoft.com/library/windows/hardware/aa394391) | ![cross mark](images/checkmark.png)
+[**Win32\_Registry**](https://msdn.microsoft.com/library/windows/hardware/aa394394)         |
+[**Win32\_SCSIController**](https://msdn.microsoft.com/library/windows/hardware/aa394400)   |
+[**Win32\_SerialPort**](https://msdn.microsoft.com/library/windows/hardware/aa394413)       |
+[**Win32\_SerialPortConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394413configuration) |
+[**Win32\_ServerFeature**](https://msdn.microsoft.com/library/windows/hardware/cc280268)    |
+[**Win32\_Service**](https://msdn.microsoft.com/library/windows/hardware/aa394418)          | ![cross mark](images/checkmark.png)
+[**Win32\_Share**](https://msdn.microsoft.com/library/windows/hardware/aa394435)            | ![cross mark](images/checkmark.png)
+[**Win32\_SoundDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394463)      |
+[**Win32\_SystemAccount**](https://msdn.microsoft.com/library/windows/hardware/aa394466)    |
+[**Win32\_SystemBIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394467)       | ![cross mark](images/checkmark.png)
+[**Win32\_SystemDriver**](https://msdn.microsoft.com/library/windows/hardware/aa394472)     |
+[**Win32\_SystemEnclosure**](https://msdn.microsoft.com/library/windows/hardware/aa394474)  | ![cross mark](images/checkmark.png)
+[**Win32\_TapeDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394491)        |
+[**Win32\_TimeZone**](https://msdn.microsoft.com/library/windows/hardware/aa394498)         | ![cross mark](images/checkmark.png)
+[**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503) |
+[**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)    |
+[**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
+[**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394504device) |
+**Win32\_WindowsUpdateAgentVersion**                                                        |
  
 
 ## Related topics
