@@ -12,10 +12,9 @@ ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
 
 # WMI providers supported in Windows 10
 
-
 Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows 10.
 
-**Note**  Applications installed using WMI classes are not removed when the MDM account is removed from device.
+> **Note**  Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
  
 
@@ -51,7 +50,6 @@ Result
 For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.microsoft.com/library/windows/hardware/dn905224).
 
 ## MDM WMI classes
-
 
 <table>
 <colgroup>
@@ -233,10 +231,10 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_BIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394077)           | ![cross mark](images/checkmark.png)
 [**Win32\_CDROMDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394081)     |
 [**Win32\_ComputerSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394102) | ![cross mark](images/checkmark.png)
-[**Win32\_ComputerSystemProduct**](https://msdn.microsoft.com/library/windows/hardware/aa394102product) | ![cross mark](images/checkmark.png)
+[**Win32\_ComputerSystemProduct**](https://msdn.microsoft.com/library/windows/hardware//aa394105) | ![cross mark](images/checkmark.png)
 [**Win32\_CurrentTime**](https://msdn.microsoft.com/library/windows/hardware/aa394114)    | ![cross mark](images/checkmark.png)
 [**Win32\_Desktop**](https://msdn.microsoft.com/library/windows/hardware/aa394121)        |
-[**Win32\_DesktopMonitor**](https://msdn.microsoft.com/library/windows/hardware/aa394121monitor) |![cross mark](images/checkmark.png)
+[**Win32\_DesktopMonitor**](https://msdn.microsoft.com/library/windows/hardware/aa394122) |![cross mark](images/checkmark.png)
 [**Win32\_DiskDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394132)      | ![cross mark](images/checkmark.png)
 [**Win32\_DiskPartition**](https://msdn.microsoft.com/library/windows/hardware/aa394135)  |
 [**Win32\_DisplayConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394137) | ![cross mark](images/checkmark.png)
@@ -254,7 +252,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_LogicalDisk**](https://msdn.microsoft.com/library/windows/hardware/aa394173)    | ![cross mark](images/checkmark.png)
 [**Win32\_MotherboardDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394204) |
 [**Win32\_NetworkAdapter**](https://msdn.microsoft.com/library/windows/hardware/aa394216) | ![cross mark](images/checkmark.png)
-[**Win32\_NetworkAdapterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394216configuration) |
+[**Win32\_NetworkAdapterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394217) |
 [**Win32\_NetworkClient**](https://msdn.microsoft.com/library/windows/hardware/aa394219)  |
 [**Win32\_NetworkLoginProfile**](https://msdn.microsoft.com/library/windows/hardware/aa394221) |
 [**Win32\_NetworkProtocol**](https://msdn.microsoft.com/library/windows/hardware/aa394223) |
@@ -264,7 +262,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245) |
 [**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247) |
 [**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251) |
-[**Win32\_PhysicalMedia**](cimwin32a.win32_physicalmedia)                                   |  
+[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/en-us/library/windows/hardware/aa394346)                                   |  
 [**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)   | ![cross mark](images/checkmark.png)
 [**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |  
 [**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |  
@@ -273,13 +271,13 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_PortResource**](https://msdn.microsoft.com/library/windows/hardware/aa394359)     |
 [**Win32\_POTSModem**](https://msdn.microsoft.com/library/windows/hardware/aa394360)        |
 [**Win32\_Printer**](https://msdn.microsoft.com/library/windows/hardware/aa394363)          |
-[**Win32\_PrinterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394363configuration) |
+[**Win32\_PrinterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394364) |
 [**Win32\_Processor**](https://msdn.microsoft.com/library/windows/hardware/aa394373)        | ![cross mark](images/checkmark.png)
 [**Win32\_QuickFixEngineering**](https://msdn.microsoft.com/library/windows/hardware/aa394391) | ![cross mark](images/checkmark.png)
 [**Win32\_Registry**](https://msdn.microsoft.com/library/windows/hardware/aa394394)         |
 [**Win32\_SCSIController**](https://msdn.microsoft.com/library/windows/hardware/aa394400)   |
 [**Win32\_SerialPort**](https://msdn.microsoft.com/library/windows/hardware/aa394413)       |
-[**Win32\_SerialPortConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394413configuration) |
+[**Win32\_SerialPortConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394414) |
 [**Win32\_ServerFeature**](https://msdn.microsoft.com/library/windows/hardware/cc280268)    |
 [**Win32\_Service**](https://msdn.microsoft.com/library/windows/hardware/aa394418)          | ![cross mark](images/checkmark.png)
 [**Win32\_Share**](https://msdn.microsoft.com/library/windows/hardware/aa394435)            | ![cross mark](images/checkmark.png)
@@ -293,7 +291,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503) |
 [**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)    |
 [**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
-[**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394504device) |
+[**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394505) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
  
 
