@@ -19,11 +19,9 @@ api_type:
 
 # DMProcessConfigXMLFiltered function
 
+> **Important**  
+The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/en-us/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
 
-**Important**  
-The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](p_phCustomization.connectivity_configuration) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
-
- 
 
 Configures phone settings by using OMA Client Provisioning XML. Use of this function is strictly limited to the following scenarios.
 
@@ -41,7 +39,7 @@ Microsoft recommends that this function is not used to configure the following t
 
 -   Email settings.
 
-**Note**  The **DMProcessConfigXMLFiltered** function has full functionality in Windows 10 Mobile and Windows Phone 8.1, but it has a read-only functionality in Windows 10 desktop.
+> **Note**  The **DMProcessConfigXMLFiltered** function has full functionality in Windows 10 Mobile and Windows Phone 8.1, but it has a read-only functionality in Windows 10 desktop.
 
  
 
@@ -61,16 +59,16 @@ Parameters
 ----------
 
 *pszXmlIn*   
-\[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).
+   \[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).
 
 *rgszAllowedCspNode*   
-\[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.
+   \[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.
 
 *dwNumAllowedCspNodes*   
-\[in\] Number of elements passed in *rgszAllowedCspNode*.
+   \[in\] Number of elements passed in *rgszAllowedCspNode*.
 
 *pbstrXmlOut*   
-\[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.
+   \[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.
 
 If **DMProcessConfigXMLFiltered** retrieves a document, the *pbstrXmlOut* holds the XML output (in string form) of the provisioning operations. If **DMProcessConfigXMLFiltered** returns a failure, the XML output often contains "error nodes" that indicate which elements of the original XML failed. If the input document does not contain queries and is successfully processed, the output document should resemble the input document. In some error cases, no output is returned.
 
@@ -214,14 +212,11 @@ Requirements
 
 ## See also
 
-
 [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)
 
  
 
- 
 
-10/10/2016
 
 
 
