@@ -25,9 +25,9 @@ Required. The node accepts requests to lock the device screen. The device screen
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="20%" />
+<col width="40%" />
+<col width="40%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -64,9 +64,9 @@ This node will return the following status. All OMA DM errors are listed [here](
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="20%" />
+<col width="40%" />
+<col width="<40></40>%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -153,7 +153,7 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
 
  
 
-10/10/2016
+
 
 
 

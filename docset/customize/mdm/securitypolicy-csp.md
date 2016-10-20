@@ -29,9 +29,9 @@ The following security policies are supported.
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="15%" />
+<col width="25%" />
+<col width="55%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -153,8 +153,8 @@ The following security roles are supported.
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
+<col width="15%" />
+<col width="25%" />
 <col width="33%" />
 </colgroup>
 <thead>

@@ -117,7 +117,7 @@ Here's the XSD for the ApplicationManagement/ApplicationRestrictions policy.
 
  
 
-10/10/2016
+
 
 
 

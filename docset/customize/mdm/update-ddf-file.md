@@ -466,7 +466,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Update*
 ## Related topics
 
 
-[Update configuration Service Provider](update-csp.md)
+[Update CSP](update-csp.md)
 
  
 

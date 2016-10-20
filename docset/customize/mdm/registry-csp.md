@@ -80,9 +80,9 @@ The following table shows the data types this configuration service provider sup
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="15%" />
+<col width="15%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -148,7 +148,7 @@ It is not possible to access registry keys nested under the current path by usin
 
  
 
-10/10/2016
+
 
 
 
