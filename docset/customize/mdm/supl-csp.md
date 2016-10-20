@@ -14,9 +14,9 @@ The SUPL configuration service provider is used to configure the location client
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="20%" />
+<col width="40%" />
+<col width="40%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -63,7 +63,7 @@ The following diagram shows the SUPL configuration service provider management o
 
 ![supl csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
 
-[]()****  
+
 
 <a href="" id="supl1"></a>**SUPL1**  
 Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node. Only one SUPL account is supported at a given time.
@@ -93,8 +93,8 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="15%" />
+<col width="85%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -245,8 +245,8 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="15%" />
+<col width="85%" />
 </colgroup>
 <thead>
 <tr class="header">

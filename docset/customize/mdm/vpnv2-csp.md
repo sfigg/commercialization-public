@@ -40,7 +40,7 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 
 Supported operations include Get, Add, and Delete.
 
-**Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+> **Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 
  
 

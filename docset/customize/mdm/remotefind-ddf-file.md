@@ -293,7 +293,7 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteF
 
  
 
-10/10/2016
+
 
 
 

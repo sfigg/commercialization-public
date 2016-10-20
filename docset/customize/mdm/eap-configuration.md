@@ -149,7 +149,7 @@ The following list describes the prerequisites for a certificate to be used with
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
 
-**Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
+> **Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
 
@@ -252,7 +252,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 </EapHostConfig>
 ```
 
-**Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
+> **Note**  The EAP TLS XSD is located at **%systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd**
 
  
 
@@ -280,7 +280,7 @@ Alternately you can use the following procedure to create an EAP Configuration X
 7.  Close the rasphone dialog box.
 8.  Continue following the procedure in the EAP configuration topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
-**Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
+> **Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
 
  
 

@@ -1040,7 +1040,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Unified
 ## Related topics
 
 
-[UWF configuration service provider](unifiedwriterfilter-csp.md)
+[UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 
  
 

@@ -14,7 +14,7 @@ Use an **APPLICATION** configuration service provider that has an APPID of w4 to
 
 The default security roles are defined in the root characteristic, and map to each subnode unless specific permission is granted to the subnode. The default security roles are Manager, Operator, and Operator – TPS.
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
 
  
 
@@ -34,7 +34,7 @@ This parameter takes a string value. The possible values to configure the NAME p
 
 -   no value specified
 
-**Note**  MDM servers should resend APPLICATION/NAME to DMAcc after an upgrade because this value is displayed in the UI but not saved in Windows Phone 8.1 and cannot be migrated to Windows 10.
+> **Note**  MDM servers should resend APPLICATION/NAME to DMAcc after an upgrade because this value is displayed in the UI but not saved in Windows Phone 8.1 and cannot be migrated to Windows 10.
 
  
 
