@@ -248,9 +248,7 @@ A short DM session can be summarized as the following:
 A server sends a Get command to a client device to retrieve the contents of one of the nodes of the management tree. The device performs the operation and responds with a Result command that contains the requested contents.
 
 A DM session can be divided into two phases:
-
 1.  **Setup phase**: In response to a trigger event, a client device sends an initiating message to a DM server. The device and server exchange needed authentication and device information. This phase is represented by steps 1, 2, and 3 in the following table.
-
 2.  **Management phase**: The DM server is in control. It sends management commands to the device and the device responds. Phase two ends when the DM server stops sending commands and terminates the session. This phase is represented by steps 3, 4, and 5 in the following table.
 
 The following table shows the sequence of events during a typical DM session.
@@ -339,7 +337,7 @@ Below is an alert example:
 
 The server notifies the device whether it is a user targeted or device targeted configuration by a prefix to the management node’s LocURL, with ./user for user targeted configuration, or ./device for device targeted configuration. By default, if no prefix with ./device or ./user, it is device targeted configuration.
 
-The following LocURL shows a per user CSP node configuration: **./user/vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/&lt; a PackageFamilyName&gt;/StoreInstall**
+The following LocURL shows a per user CSP node configuration: **./user/vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/&lt;PackageFamilyName&gt;/StoreInstall**
 
 The following LocURL shows a per device CSP node configuration: **./device/vendor/MSFT/RemoteWipe/DoWipe**
 
