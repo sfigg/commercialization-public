@@ -36,6 +36,8 @@ Note the following restrictions related to push notifications and WNS:
     -   If ExpiryTime is greater than 15 days a schedule is set for when 15 days are left.
     -   If ExpiryTime is between now and 15 days a schedule set for 4 +/- 1 hours from now.
     -   If ExpiryTime has passed a schedule is set for 1 day +/- 4 hours from now.
+
+
 -   On Windows 10, version 1607, we check for network connectivity before retrying. We do not check for internet connectivity. If network connectivity is not available we will skip the retry and set schedule for 4+/-1 hours to try again.
 
 
@@ -46,41 +48,33 @@ To get a PFN and WNS credentials, you must create an Windows Store app.
 1.  Go to the Windows [Dashboard](https://dev.windows.com/en-US/dashboard) and sign in with your developer account.
 
     ![mdm push notification](images/push-notification1.png)
-
 2.  Create a new app.
 
     ![mdm push notification](images/push-notification2.png)
-
 3.  Reserve an app name.
 
     ![mdm push notification](images/push-notification3.png)
-
 4.  Click **Services**.
 
     ![mdm push notification](images/push-notification4.png)
-
 5.  Click **Push notifications**.
 
     ![mdm push notification](images/push-notification5.png)
-
 6.  Click **Live Services site**. A new window opens for the **Application Registration Portal** page.
 
     ![mdm push notification](images/push-notification6.png)
-
 7.  In the **Application Registration Portal** page, you will see the properties for the app that you created, such as:
     -   Application Id
     -   Application Secrets
     -   Windows Store Package SID, Application Identity, and Publisher.
 
     ![mdm push notification](images/push-notification7.png)
-
 8.  Click **Save**.
 9.  Close the **Application Registration Portal** window and go back to the Windows Dev Center Dashboard.
 10. Select your app from the list on the left.
 11. From the left nav, expand **App management** and then click **App identity**.
 
     ![mdm push notification](images/push-notification10.png)
-
 12. In the **App identity** page, you will see the **Package Family Name (PFN)** of your app.
 
  
