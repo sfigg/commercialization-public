@@ -15,8 +15,6 @@ The Deployment Image Servicing and Management (DISM) tool is a command-line tool
 
 -   Which folders, files, and file types must be excluded from the compression process when you use the **/Compress** argument.
 
-If you name your configuration list file **wimscript.ini** and store it in your DISM directory (where the DISM.exe file is located), it will automatically run when you use the **/Capture-Image** option (with or without the **/Compress** argument) without requiring you to use the **/ConfigFile** argument.
-
 The **/ConfigFile** argument enables you to customize specific compression, capture, and boundary alignment actions for each file and folder when you capture an image using DISM.exe. You can create a configuration list (.ini) file by using a text editor, such as Notepad.
 
 ## <span id="Creating_a_Configuration_List_File"></span><span id="creating_a_configuration_list_file"></span><span id="CREATING_A_CONFIGURATION_LIST_FILE"></span>Creating a Configuration List File
