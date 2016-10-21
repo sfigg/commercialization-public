@@ -522,13 +522,11 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
-## <a href="" id="version"></a>Version information for mobile devices
-
+### <a href="" id="version"></a>Version information for mobile devices
 
 The software version information from **DevDetail/SwV** does not match the version in **Settings** under **System/About**.
 
-## <a href="" id="whitelist"></a>Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
-
+### <a href="" id="whitelist"></a>Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
 
 -   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your list of allowed apps.
 
@@ -549,8 +547,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
     No workaround is available at this time. An OS update to fix this issue is coming soon.
 
-## <a href="" id="frameworks"></a>Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218
-
+### <a href="" id="frameworks"></a>Apps dependent on Microsoft Frameworks may get blocked in phones prior to build 10586.218
 
 Applies only to phone prior to build 10586.218: When ApplicationManagement/ApplicationRestrictions policy is deployed to Windows 10 Mobile, installation and update of apps dependent on Microsoft Frameworks may get blocked with error 0x80073CF9. To work around this issue, you must include the Microsoft Framework Id to your list of allowed apps.
 
@@ -558,8 +555,7 @@ Applies only to phone prior to build 10586.218: When ApplicationManagement/Appli
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
-## <a href="" id="wifi-cert-issue"></a>Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
-
+### <a href="" id="wifi-cert-issue"></a>Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -603,7 +599,6 @@ The following XML sample explains the properties for the EAP TLS XML including c
 > **Note**  For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
-
 ``` syntax
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
@@ -707,7 +702,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
  
 
-Alternately you can use the following procedure to create an EAP Configuration XML.
+Alternatively you can use the following procedure to create an EAP Configuration XML.
 
 1.  Follow steps 1 through 7 in the [EAP configuration](eap-configuration.md) topic.
 2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
@@ -716,52 +711,42 @@ Alternately you can use the following procedure to create an EAP Configuration X
 
     > **Note**  For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-     
-
 3.  Click the **Properties** button underneath the drop down menu.
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
     ![smart card or other certificate properties window](images/certfiltering2.png)
-
 5.  In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
     ![configure certificate selection window](images/certfiltering3.png)
-
 6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
 7.  Close the rasphone dialog box.
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) topic from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > **Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
 
- 
 
-## Remote PIN reset not supported in Azure Active Directory joined mobile devices
-
+### Remote PIN reset not supported in Azure Active Directory joined mobile devices
 
 In Windows 10 Mobile, remote PIN reset in Azure AD joined devices are not supported. Devices are wiped when you issue a remote PIN reset command using the RemoteLock CSP.
 
-## <a href="" id="renew-wns"></a>MDM client will immediately check-in with the MDM server after client renews WNS channel URI
-
+### <a href="" id="renew-wns"></a>MDM client will immediately check-in with the MDM server after client renews WNS channel URI
 
 Starting in Windows 10, after the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-## <a href="" id="user-provisioning"></a>User provisioning failure in Azure Active Directory joined Windows 10 PC
-
+### <a href="" id="user-provisioning"></a>User provisioning failure in Azure Active Directory joined Windows 10 PC
 
 In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
-## <a href="" id="kerberos"></a>Requirements to note for VPN certificates also used for Kerberos Authentication
-
+### <a href="" id="kerberos"></a>Requirements to note for VPN certificates also used for Kerberos Authentication
 
 If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premise resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that do not meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. This issue primarily impacts Windows Phone.
 
-## <a href="" id="push-button-reset"></a>Device management agent for the push-button reset is not working
-
+### <a href="" id="push-button-reset"></a>Device management agent for the push-button reset is not working
 
 The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/push-button-reset-overview) keeps the registry settings for OMA DM sessions, but deletes the task schedules. The client enrollment is retained, but it never syncs with the MDM service.
 
-## <a href="" id="change-history"></a>Change history in MDM documentation
 
+## <a href="" id="change-history"></a>Change history in MDM documentation
 
 ### October 21, 2016
 
