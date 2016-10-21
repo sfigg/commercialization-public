@@ -23,7 +23,9 @@ HRESULT ConfigManagerNotification([in] CFGMGR_NOTIFICATION cmnfyState,
 ## Parameters
 
 
-<a href="" id="cmnfystate"></a>*cmnfyState*  
+<a href="" id="cmnfystate"></a>*cmnfyState*
+<ul style="list-style-type:none">
+<li>
 The following events are supported by all configuration service providers.
 
 <table>
@@ -84,19 +86,24 @@ The following events are supported by all configuration service providers.
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
+<br>
 
- 
 
-<a href="" id="lpparam"></a>*lpParam*  
+<a href="" id="lpparam"></a>*lpParam*
+<ul style="list-style-type:none">
+<li>
 Normally NULL, but contains a pointer to an IConfigSession2 instance if *cmnfState* is CFGMGR\_NOTIFICATION\_SETSESSIONOBJ.
+</li>
+</ul>
+<br>
 
 ## Return Value
-
 
 A value of S\_OK indicates success.
 
 ## Remarks
-
 
 ConfigManager2 guarantees that if it raised one of the BEGIN events
 
@@ -123,14 +130,11 @@ Each configuration service provider will receive the relevant BEGIN/END notifica
 
 ## Requirements
 
-
 **Header:** None
 
  
 
- 
 
-10/10/2016
 
 
 

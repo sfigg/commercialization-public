@@ -23,14 +23,24 @@ HRESULT GetNode([in] IConfigManager2URI* pURI,
 
 ## Parameters
 
-
-<a href="" id="puri"></a>*pUri*  
+<a href="" id="puri"></a>*pUri*
+<ul style="list-style-type:none">
+<li>
 URI of the child node, relative to the root node. For example, to access the "./Vendor/Contoso/SampleCSP/ContainerA/UserName" node, ConfigManager2 calls the configuration service provider's `GetNode` method and passes in an IConfigManager2URI instance representing the URI “SampleCSP/ContainerA/UserName”.
+</li>
+</ul>
+<br>
 
-<a href="" id="ppnode"></a>*ppNode*  
+<a href="" id="ppnode"></a>*ppNode*
+<ul style="list-style-type:none">
+<li>
 If the query is successful, this returns the ICSPNode instance at the *pUri* location in the configuration service provider's tree.
+</li>
+</ul>
 
-<a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
+<a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*
+<ul style="list-style-type:none">
+<li>
 Nodes support the following features.
 
 <table>
@@ -69,11 +79,11 @@ Nodes support the following features.
 </tr>
 </tbody>
 </table>
-
+</li>
+</ul>
  
 
 ## Return Value
-
 
 This method returns an ICSPNode. If the function returns null, call GetLastError to get the error value.
 
@@ -81,14 +91,11 @@ A value of S\_OK indicates that a node was successfully found. CFGMGR\_E\_NODENO
 
 ## Requirements
 
-
 **Header:** None
 
  
 
- 
 
-10/10/2016
 
 
 
