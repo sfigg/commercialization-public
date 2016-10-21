@@ -9,11 +9,9 @@ ms.assetid: 5f03d350-c82b-4747-975f-385fd8b5b3a8
 
 # ICSPNode::Add
 
-
 This method adds an immediate child node to a configuration service provider node and returns a pointer to the new node.
 
 ## Syntax
-
 
 ``` syntax
 HRESULT Add([in] IConfigManager2URI* pChildName,
@@ -25,9 +23,10 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 
 ## Parameters
 
-
-<a href="" id="pchildname"></a>*pChildName*  
-Name of child node to add.
+<dl>
+<dt><a href="" id="pchildname"></a><em>pChildName*</em></dt>
+<dd>Name of child node to add.</dd>
+</dl>
 
 <a href="" id="datatype"></a>*DataType*  
 Data type of the child node to add. Supported types include:
@@ -91,9 +90,7 @@ Features supported on the new child node.
 </table>
 
  
-
 ## Return Value
-
 
 This method returns an ICSPNode and the feature options supported on that child node. If the method returns null, call GetLastError to get the error value.
 
@@ -101,24 +98,19 @@ A value of S\_OK indicates that a node was successfully found. CMN\_E\_ALREADY\_
 
 ## Remarks
 
-
 For externally–transactioned nodes, if this method is implemented, then [ICSPNode::Clear](icspnodeclear.md) and [ICSPNode::DeleteChild](icspnodedeletechild.md) must also be implemented or rollback will fail.
 
 ## Requirements
-
 
 **Header:** None
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 

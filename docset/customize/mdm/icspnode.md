@@ -9,12 +9,11 @@ ms.assetid: 023466e6-a8ab-48ad-8548-291409686ac2
 
 # ICSPNode
 
-
 This interface does most of the work in a configuration service provider. Each individual node in a configuration service provider tree is represented by a separate implementation of this interface. The actions of a ConfigManager2 client are typically translated into calls to an instance of an ICSPNode.
 
 These methods must be implemented so that, if they fail, the node's state at the end of the method matches the state before the method was called.
 
-Some nodes will not be able to perform certain actions, and can return CFGMGR\_E\_COMMANDNOTALLOWED for those methods. For each method that is implemented for externally–transactioned nodes, the contrary method must also be implemented, as defined by "Determine node operations" in [Designing a custom configuration service provider](designing-a-custom-configuration-service-provider.md).
+Some nodes will not be able to perform certain actions, and can return CFGMGR\_E\_COMMANDNOTALLOWED for those methods. For each method that is implemented for externally–transactioned nodes, the contrary method must also be implemented, as defined by "Determine node operations" in [Designing a custom configuration service provider](design-a-custom-windows-csp.md).
 
 The following table shows the methods defined by this interface that OEMs must implement.
 
@@ -89,14 +88,11 @@ The following table shows the methods defined by this interface that OEMs must i
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 

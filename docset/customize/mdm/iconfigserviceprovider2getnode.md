@@ -30,14 +30,13 @@ URI of the child node, relative to the root node. For example, to access the "./
 </li>
 </ul>
 <br>
-
 <a href="" id="ppnode"></a>*ppNode*
 <ul style="list-style-type:none">
 <li>
 If the query is successful, this returns the ICSPNode instance at the *pUri* location in the configuration service provider's tree.
 </li>
 </ul>
-
+<br>
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*
 <ul style="list-style-type:none">
 <li>
@@ -81,7 +80,7 @@ Nodes support the following features.
 </table>
 </li>
 </ul>
- 
+<br>
 
 ## Return Value
 
