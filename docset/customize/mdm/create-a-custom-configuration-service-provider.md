@@ -9,7 +9,6 @@ ms.assetid: 0cb37f03-5bf2-4451-8276-23f4a1dee33f
 
 # Create a custom configuration service provider
 
-
 Mobile device OEMs can create custom configuration service providers to manage their devices. A configuration service provider includes an interface for creating, editing, and deleting nodes, and the nodes themselves. Each node contains data for one registry value and can optionally support get, set, and delete operations.
 
 To design a custom configuration service provider, the OEM must perform the following steps:
@@ -19,7 +18,7 @@ To design a custom configuration service provider, the OEM must perform the foll
 3.  Choose a transactioning scheme for each node
 4.  Determine node operations
 
-For more information, see [Designing a custom configuration service provider](designing-a-custom-configuration-service-provider.md).
+For more information, see [Designing a custom configuration service provider](design-a-custom-windows-csp.md).
 
 To write a custom configuration service provider, the OEM must implement the following interfaces:
 
@@ -31,7 +30,7 @@ To write a custom configuration service provider, the OEM must implement the fol
 
 -   [ICSPValidate](icspvalidate.md) (optional, for UI only)
 
-This code must be compiled into a single .dll file and added to a package by using the instructions found in "Adding content to a package" in [Creating packages](p_phPackaging.creating_packages). While writing this code, OEMs can store registry settings and files in the following locations.
+This code must be compiled into a single .dll file and added to a package by using the instructions found in "Adding content to a package" in [Creating packages](https://msdn.microsoft.com/en-us/library/windows/hardware/dn756642). While writing this code, OEMs can store registry settings and files in the following locations.
 
 <table>
 <colgroup>
@@ -50,7 +49,6 @@ This code must be compiled into a single .dll file and added to a package by usi
 </tbody>
 </table>
 
- 
 
 For examples of how to perform common tasks such as adding a node, replacing a node's value, querying a node's value, or enumerating a node's children, see [Samples for writing a custom configuration service provider](samples-for-writing-a-custom-configuration-service-provider.md).
 
@@ -87,9 +85,7 @@ To make the configuration service provider accessible from WAP XML, you must reg
 
  
 
- 
 
-10/10/2016
 
 
 
