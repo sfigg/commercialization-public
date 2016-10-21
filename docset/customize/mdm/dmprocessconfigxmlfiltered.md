@@ -61,22 +61,23 @@ Parameters
 *pszXmlIn*
 <ul style="list-style-type:none">
 <li>\[in\] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. **DMProcessConfigXMLFiltered** accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).</li>
-</ul>
+</ul>   
 
 *rgszAllowedCspNode*
 <ul style="list-style-type:none">
 <li>\[in\] Array of **WCHAR\*** that specify which configuration service provider nodes are allowed to be invoked.</li>
-</ul>
+</ul>   
 
 *dwNumAllowedCspNodes*
 <ul style="list-style-type:none">
 <li>\[in\] Number of elements passed in *rgszAllowedCspNode*.</li>
-</ul>
+</ul>   
 
 *pbstrXmlOut*
 <ul style="list-style-type:none">
 <li>\[out\] The resulting null–terminated XML from configuration. The caller of **DMProcessConfigXMLFiltered** is responsible for cleanup of the output buffer that the *pbstrXmlOut* parameter references. Use [**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481) to free the memory.</li>
 </ul>
+
 
 If **DMProcessConfigXMLFiltered** retrieves a document, the *pbstrXmlOut* holds the XML output (in string form) of the provisioning operations. If **DMProcessConfigXMLFiltered** returns a failure, the XML output often contains "error nodes" that indicate which elements of the original XML failed. If the input document does not contain queries and is successfully processed, the output document should resemble the input document. In some error cases, no output is returned.
 
