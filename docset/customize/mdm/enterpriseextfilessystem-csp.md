@@ -12,7 +12,7 @@ ms.assetid: F773AD72-A800-481A-A9E2-899BA56F4426
 
 The EnterpriseExtFileSystem configuration service provider (CSP) allows IT administrators to add, retrieve, or change files in the file system through the Mobile Device Management (MDM) service. For example, you can use this configuration service provider to push a provisioning XML file or a new lock screen background image file to a device through the MDM service, and also retrieve logs from the device in the enterprise environment.
 
-**Note**  The EnterpriseExtFileSystem CSP is only supported in Windows 10 Mobile.
+> **Note**  The EnterpriseExtFileSystem CSP is only supported in Windows 10 Mobile.
 
  
 
@@ -25,42 +25,42 @@ The following diagram shows the EnterpriseExtFileSystem configuration service pr
 The following list describes the characteristics and parameters.
 
 <a href="" id="--vendor-msft-enterpriseextfilesystem"></a>**./Vendor/MSFT/EnterpriseExtFileSystem**  
-The root node for the EnterpriseExtFileSystem configuration service provider. Supported operations are Add and Get.
+>   The root node for the EnterpriseExtFileSystem configuration service provider. Supported operations are Add and Get.
 
 <a href="" id="persistent"></a>**Persistent**  
 
-The EnterpriseExtFileSystem CSP allows an enterprise to read, write, delete and list files in this folder. When an app writes data to the Persistent folder, it accesses that data from the EnterpriseExtFileSystem\\Persistent node. Files written to the Persistent folder persists over ordinary power cycles.
+>   The EnterpriseExtFileSystem CSP allows an enterprise to read, write, delete and list files in this folder. When an app writes data to the Persistent folder, it accesses that data from the EnterpriseExtFileSystem\\Persistent node. Files written to the Persistent folder persists over ordinary power cycles.
 
-**Important**  
+> **Important**  
 There is a limit to the amount of data that can be persisted, which varies depending on how much disk space is available on one of the partitions. This data cap amount (that can be persisted) varies by manufacturer.
 
  
 
-**Note**   When the IT admin triggers a **doWipePersistProvisionedData** action using [RemoteWipe CSP](remotewipe-configuration-service-provider.md), items stored in the Persistent folder are persisted over wipe and restored when the device boots again. The contents are not persisted if a **doWipe** action is triggered.
+> **Note**   When the IT admin triggers a **doWipePersistProvisionedData** action using [RemoteWipe CSP](remotewipe-configuration-service-provider.md), items stored in the Persistent folder are persisted over wipe and restored when the device boots again. The contents are not persisted if a **doWipe** action is triggered.
 
  
 
 <a href="" id="nonpersistent"></a>**NonPersistent**  
-The EnterpriseExtFileSystem CSP allows an enterprise to read, write, delete and list files in this folder. When an app writes data to the Non-Persistent folder, it accesses that data from the EnterpriseExtFileSystem\\NonPersistent node. Files written to the NonPersistent folder will persist over ordinary power cycles.
+>   The EnterpriseExtFileSystem CSP allows an enterprise to read, write, delete and list files in this folder. When an app writes data to the Non-Persistent folder, it accesses that data from the EnterpriseExtFileSystem\\NonPersistent node. Files written to the NonPersistent folder will persist over ordinary power cycles.
 
-When the device is wiped, any data stored in the NonPersistent folder is deleted.
+>   When the device is wiped, any data stored in the NonPersistent folder is deleted.
 
 <a href="" id="oemprofile"></a>**OemProfile**  
-Added in Windows 10, version 1511. The EnterpriseExtFileSystem CSP allows an enterprise to deploy an OEM profile on the device, such as a barcode scanner profile then can be consumed by the OEM barcode scanner driver. The file is placed into the \\data\\shareddata\\oem\\public\\profile\\ folder of the device.
+>   Added in Windows 10, version 1511. The EnterpriseExtFileSystem CSP allows an enterprise to deploy an OEM profile on the device, such as a barcode scanner profile then can be consumed by the OEM barcode scanner driver. The file is placed into the \\data\\shareddata\\oem\\public\\profile\\ folder of the device.
 
 <a href="" id="directory"></a>***Directory***  
-The name of a directory in the device file system. Any *Directory* node can have directories and files as child nodes.
+>   The name of a directory in the device file system. Any *Directory* node can have directories and files as child nodes.
 
-Use the Add command to create a new directory. You cannot use it to add a new directory under a file system root.
+>   Use the Add command to create a new directory. You cannot use it to add a new directory under a file system root.
 
-Use the Get command to return the list of child node names under *Directory*.
+>   Use the Get command to return the list of child node names under *Directory*.
 
-Use the Get command with ?List=Struct to recursively return all child node names, including subdirectory names, under *Directory*.
+>   Use the Get command with ?List=Struct to recursively return all child node names, including subdirectory names, under *Directory*.
 
 <a href="" id="filename"></a>***Filename***  
-The name of a file in the device file system.
+>   The name of a file in the device file system.
 
-Supported operations is Get.
+>   Supported operations is Get.
 
 ## OMA DM examples
 
@@ -120,7 +120,7 @@ The following example shows how to push a file to the device.
 
  
 
-10/10/2016
+
 
 
 

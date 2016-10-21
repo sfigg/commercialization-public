@@ -12,11 +12,11 @@ ms.assetid: 9117ee16-ca7a-4efa-9270-c9ac8547e541
 
 The FileSystem configuration service provider is used to query, add, modify, and delete files, file directories, and file attributes on the mobile device. It can retrieve information about or manage files in ROM, files in persistent store and files on any removable storage card that is present in the device. It works for files that are hidden from the user as well as those that are visible to the user.
 
-**Note**  FileSystem CSP is only supported in Windows 10 Mobile.
+> **Note**  FileSystem CSP is only supported in Windows 10 Mobile.
 
  
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
  
 
@@ -102,7 +102,7 @@ The following properties are supported for files:
 
  
 
-10/10/2016
+
 
 
 

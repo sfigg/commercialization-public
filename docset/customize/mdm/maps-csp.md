@@ -12,7 +12,7 @@ ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
 
 The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 
-**Note**  The Maps CSP is only supported in Windows 10 Mobile.
+> **Note**  The Maps CSP is only supported in Windows 10 Mobile.
 
  
 
@@ -159,7 +159,7 @@ Here is an example that gets the status of the New York map package on the devic
 
  
 
-10/10/2016
+
 
 
 

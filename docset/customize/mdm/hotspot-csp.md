@@ -12,11 +12,11 @@ ms.assetid: ec49dec1-fa79-420a-a9a7-e86668b3eebf
 
 The HotSpot configuration service provider is used to configure and enable Internet sharing on the device, in which the device can be configured to share its cellular connection over Wi-Fi with up to eight client devices or computers.
 
-**Note**  HotSpot CSP is only supported in Windows 10 Mobile.
+> **Note**  HotSpot CSP is only supported in Windows 10 Mobile.
 
  
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
  
 
@@ -40,7 +40,7 @@ By default, any available connection will be used as a public connection. Howeve
 
 Specified connections will be mapped, by policy, to the Internet sharing service. All attempts to enumerate Connection Manager connections for the Internet sharing service will return only the mapped connections.
 
-**Note**   The mapping policy will also include the connection specified in the **TetheringNAIConnection** value as well.
+> **Note**   The mapping policy will also include the connection specified in the **TetheringNAIConnection** value as well.
 
  
 
@@ -55,7 +55,7 @@ If a CDMA mobile operator requires using a Tethering NAI during Internet sharing
 
 Specified connections will be mapped, by policy, to the Internet sharing service. All attempts to enumerate Connection Manager connections for the Internet sharing service will return only the mapped connections.
 
-**Note**   The mapping policy will also include the connections specified in the **DedicatedConnections** as well.
+> **Note**   The mapping policy will also include the connections specified in the **DedicatedConnections** as well.
 
  
 
@@ -87,7 +87,7 @@ Optional. Reference to a localized string, provided by the mobile operator, that
 
 Where `<path_to_res_dll>` is the path to the resource dll that contains the string and `<str_id>` is the string identifier. For more information on language-neutral string resource registry values, see [Using Registry String Redirection](http://msdn.microsoft.com/library/windows/desktop/dd374120.aspx) on MSDN.
 
-**Note**  MOAppLink is required to use the MOHelpMessage setting.
+> **Note**  MOAppLink is required to use the MOHelpMessage setting.
 
  
 
@@ -120,7 +120,7 @@ Changes to this node require a reboot.
  
 
 <a href="" id="minwifissidlength"></a>**MinWifiSSIDLength**  
-**Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi SSID is 1.
+> **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi SSID is 1.
 
  
 
@@ -147,7 +147,7 @@ For CDMA networks that use a separate Network Access Identity (NAI) for Internet
 </wap-provisioningdoc>
 ```
 
-**Note**  CDMA devices are limited to one active data connection at a time. This means any application or service (such as email or MMS) that is bound to another connection may not work while Internet sharing is turned on.
+> **Note**  CDMA devices are limited to one active data connection at a time. This means any application or service (such as email or MMS) that is bound to another connection may not work while Internet sharing is turned on.
 
  
 
@@ -160,7 +160,7 @@ For mobile operator networks that require an entitlement check, the OEM must pro
 
 The `EntitlementDll` parm of the HotSpot configuration service provider must be set to a string that is the path to this DLL.
 
-The DLL must be code signed in a specific way, see [Sign binaries and packages](p_phCodeSigning.sign_binaries_and_packages).
+The DLL must be code signed in a specific way, see [Sign binaries and packages](https://msdn.microsoft.com/en-us/library/windows/hardware/dn789217(v=vs.85).aspx).
 
 During an entitlement check the Internet Sharing service loads the specified DLL and then call the `IsEntitled` function. The function must connect to the server to perform any required validation, then return one of the following **ICS\_ENTITLEMENT\_RESULT** enumeration values.
 
@@ -204,7 +204,7 @@ The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEn
 
  
 
-10/10/2016
+
 
 
 

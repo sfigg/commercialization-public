@@ -12,11 +12,11 @@ ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
 
 The NAPDEF configuration service provider is used to add, modify, or delete WAP network access points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
 
-**Note**  You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
+> **Note**  You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
 
  
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -44,7 +44,7 @@ Specifies the protocol used to authenticate the user.
 
 The only permitted values for this element are "POP" (Password Authentication Protocol) and "CHAP" (Challenge Handshake Authentication Protocol) authentication protocols. Note
 
-**Note**  **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change.
+> **Note**  **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change.
 
  
 
@@ -96,8 +96,8 @@ The following table shows the Microsoft custom elements that this configuration 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -137,7 +137,7 @@ The following table shows the Microsoft custom elements that this configuration 
 
  
 
-10/10/2016
+
 
 
 
