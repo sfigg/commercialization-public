@@ -12,7 +12,6 @@ ms.assetid: 0fff9516-a71a-4036-a57b-503ef1a81a37
 
 # Design a custom configuration service provider
 
-
 To design a custom configuration service provider, the OEM must perform the following steps:
 
 1.  Establish node semantics
@@ -23,7 +22,6 @@ To design a custom configuration service provider, the OEM must perform the foll
 For more information about the larger process of writing a new configuration service provider, see [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md).
 
 ## Establish node semantics
-
 
 First, determine the nodes you need based on the kind of data to be stored in the registry.
 
@@ -44,7 +42,6 @@ For example, a hypothetical Email configuration service provider might have thes
 The `Account`, `Username`, and `Server` nodes would hold text-based information about the email account, the user's email address, and the server address associated with that account. The `Password` node, however, might hold a binary hash of the user's password.
 
 ## Shape the configuration service provider's subtree
-
 
 After determining what the nodes represent, decide where each node fits in the settings hierarchy.
 
@@ -82,7 +79,6 @@ Note that the process of shaping the configuration service provider’s subtree 
 
 ## Choose a transactioning scheme for each node
 
-
 For each node, decide whether to use *external transactioning* or *internal transactioning* to manage the transaction phases (rollback persistence, rollback, and commitment) for the node.
 
 External transactioning is the simplest option because it allows ConfigManager2 to automatically handle the node's transactioning.
@@ -98,7 +94,6 @@ However, you must use internal transactioning for the following types of nodes:
 You can choose to mix transactioning modes in your configuration service provider, using internal transactioning for some operations but external transactioning for others. For more information about writing an internally transactioned node, see the [ICSPNodeTransactioning](icspnodetransactioning.md) interface.
 
 ## Determine node operations
-
 
 The operations available for each node can vary depending on the purpose of the configuration service provider. The configuration service provider will be easier to use if the operations are consistent. For more information about the supported operations, see the [ICSPNode](icspnode.md) interface.
 
@@ -163,9 +158,6 @@ For internally transactioned nodes, the practice of implementing the contrary co
 
  
 
- 
-
-10/10/2016
 
 
 
