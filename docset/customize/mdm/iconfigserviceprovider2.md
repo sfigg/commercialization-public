@@ -41,14 +41,11 @@ The following table shows the methods defined by this interface that OEMs must i
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 
