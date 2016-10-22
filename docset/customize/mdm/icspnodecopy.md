@@ -9,11 +9,9 @@ ms.assetid: cd5ce0bc-a08b-4f82-802d-c7ff8701b41f
 
 # ICSPNode::Copy
 
-
 This method makes a copy of the current node at the specified path within the configuration service provider. If the target node exists, it should be overwritten.
 
 ## Syntax
-
 
 ``` syntax
 HRESULT Copy([in] IConfigManager2URI* puriDestination,
@@ -23,17 +21,16 @@ HRESULT Copy([in] IConfigManager2URI* puriDestination,
 
 ## Parameters
 
-
 <a href="" id="puridestination"></a>*puriDestination*  
-Path and name of new node's location, relative to the configuration service provider's root node.
+&nbsp;&nbsp;&nbsp;&nbsp;Path and name of new node's location, relative to the configuration service provider's root node.
 
 <a href="" id="ppnewnode"></a>*ppNewNode*  
-New node created by the copy operation.
+&nbsp;&nbsp;&nbsp;&nbsp;New node created by the copy operation.
 
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
-Features supported on the new node.
+&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new node.
 
-<table>
+&nbsp;&nbsp;&nbsp;&nbsp;<table>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -71,32 +68,23 @@ Features supported on the new node.
 </table>
 
  
-
 ## Return Value
-
 
 A value of S\_OK indicates that the node was successfully copied to the new location. CFGMGR\_E\_COMMANDNOTALLOWED indicates that this node does not support the **Copy** method.
 
 ## Remarks
 
-
 For externally–transactioned nodes, if this method is implemented, then [ICSPNode::Add](icspnodeadd.md), [ICSPNode::SetValue](icspnodesetvalue.md), [ICSPNode::Clear](icspnodeclear.md), and [ICSPNode::DeleteChild](icspnodedeletechild.md) must also be implemented or rollback will fail.
 
 ## Requirements
-
 
 **Header:** None
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
- 
 
- 
-
-10/10/2016
 
 
 
