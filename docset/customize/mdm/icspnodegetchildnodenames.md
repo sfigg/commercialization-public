@@ -20,11 +20,11 @@ HRESULT GetChildNodeNames([out] ULONG* pulCount,
 
 ## Parameters
 
-<a href="" id="pulcount"></a>*pulCount*  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The number of child nodes to return.
+<a href="" id="pulcount"></a>*pulCount*
+<p style="margin-left: 25px">The number of child nodes to return.</p>
 
-<a href="" id="pbstrnodenames"></a>*pbstrNodeNames*  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The array of child node names. The returned array must be allocated with `CoTaskMemAlloc`. Each element of the array must be a valid, non-NULL `BSTR`, allocated by `SysAllocString` or `SysAllocStringLen`. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.
+<a href="" id="pbstrnodenames"></a>*pbstrNodeNames*
+<p style="margin-left: 25px">The array of child node names. The returned array must be allocated with `CoTaskMemAlloc`. Each element of the array must be a valid, non-NULL `BSTR`, allocated by `SysAllocString` or `SysAllocStringLen`. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.</p>
 
 ## Return Value
 
