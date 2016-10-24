@@ -23,13 +23,11 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 
 ## Parameters
 
-<dl>
-<dt><a href="" id="pchildname"></a><em>pChildName*</em></dt>
-<dd>Name of child node to add.</dd>
-</dl>
+<a href="" id="pchildname"></a>*pChildName*  
+&nbsp;&nbsp;&nbsp;&nbsp;Name of child node to add.
 
 <a href="" id="datatype"></a>*DataType*  
-Data type of the child node to add. Supported types include:
+&nbsp;&nbsp;&nbsp;&nbsp;Data type of the child node to add. Supported types include:
 
 -   CFG\_DATATYPE\_NODE
 
@@ -44,15 +42,15 @@ Data type of the child node to add. Supported types include:
 -   CFG\_DATATYPE\_MULTIPLE\_STRING
 
 <a href="" id="varvalue"></a>*varValue*  
-Value of the child node to add.
+&nbsp;&nbsp;&nbsp;Value of the child node to add.
 
 <a href="" id="ppnewnode"></a>*ppNewNode*  
-New child node to return.
+&nbsp;&nbsp;&nbsp;New child node to return.
 
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
-Features supported on the new child node.
+&nbsp;&nbsp;&nbsp;Features supported on the new child node.
 
-<table>
+&nbsp;&nbsp;&nbsp;<table>
 <colgroup>
 <col width="33%" />
 <col width="33%" />
