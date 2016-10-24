@@ -1,5 +1,5 @@
 ---
-title: AltTab
+title: microsoft-windows-embedded-keyboardfilterservice-AltTab
 description: Blocks the Alt+Tab key combination used to switch tasks. Also blocks the Alt+Shift+Tab key combination.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

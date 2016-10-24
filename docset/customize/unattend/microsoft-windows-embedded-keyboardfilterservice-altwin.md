@@ -1,5 +1,5 @@
 ---
-title: AltWin
+title: microsoft-windows-embedded-keyboardfilterservice-AltWin
 description: Blocks all keyboard combinations beginning with Alt + Windows logo key, for example Alt + Win + S.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

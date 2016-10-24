@@ -1,5 +1,5 @@
 ---
-title: Alt
+title: microsoft-windows-embedded-keyboardfilterservice-Alt
 description: Blocks both Alt keys.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

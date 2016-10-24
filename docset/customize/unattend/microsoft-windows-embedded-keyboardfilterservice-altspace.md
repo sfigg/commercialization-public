@@ -1,5 +1,5 @@
 ---
-title: AltSpace
+title: microsoft-windows-embedded-keyboardfilterservice-AltSpace
 description: Blocks the Alt+Space key combination used to open the shortcut menu for the active window.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

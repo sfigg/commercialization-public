@@ -1,5 +1,5 @@
 ---
-title: AltF4
+title: microsoft-windows-embedded-keyboardfilterservice-AltF4
 description: Blocks the Alt+F4 key combination used to close applications.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
