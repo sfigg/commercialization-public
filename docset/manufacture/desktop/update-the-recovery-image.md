@@ -1,7 +1,6 @@
 ---
 author: KPacquer
 Description: 'Lab 1i: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages'
-ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 1i: Update the recovery image'
 ---
@@ -233,4 +232,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
     If languages have been successfully added, you'll either see the new language (for a single language image) or be prompted for your language (for a multi-language image). 
 	
-Next step: [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+Next step: [Lab 1j: Shrink your image size](shrink-your-image-size.md)

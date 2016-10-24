@@ -46,8 +46,9 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 **Customize the recovery image**
 
 *  [Lab 1i: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 1j: Shrink your image size](shrink-your-image-size.md)
 
 **Deploy final images**
 
-*  [Lab 1j: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+*  [Lab 1k: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 
