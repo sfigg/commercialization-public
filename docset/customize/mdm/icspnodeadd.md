@@ -24,11 +24,10 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 ## Parameters
 
 <a href="" id="pchildname"></a>*pChildName*  
-&nbsp;&nbsp;&nbsp;&nbsp;Name of child node to add.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name of child node to add.
 
 <a href="" id="datatype"></a>*DataType*  
-&nbsp;&nbsp;&nbsp;&nbsp;Data type of the child node to add. Supported types include:
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data type of the child node to add. Supported types include:
 -   CFG\_DATATYPE\_NODE
 
 -   CFG\_DATATYPE\_NULL
@@ -42,15 +41,14 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 -   CFG\_DATATYPE\_MULTIPLE\_STRING
 
 <a href="" id="varvalue"></a>*varValue*  
-&nbsp;&nbsp;&nbsp;Value of the child node to add.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value of the child node to add.
 
 <a href="" id="ppnewnode"></a>*ppNewNode*  
-&nbsp;&nbsp;&nbsp;New child node to return.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New child node to return.
 
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
-&nbsp;&nbsp;&nbsp;Features supported on the new child node.
-
-&nbsp;&nbsp;&nbsp;<table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new child node.
+<table style="margin-left:24px"> 
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -65,24 +63,24 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><code>CSPNODE_OPTION_NATIVESECURITY</code></p></td>
-<td><p>0x01</p></td>
-<td><p>The native security option signifies that the node handles its own security checking, and that ConfigManager2 does not have to manage security for this node.</p></td>
+<td style="vertical-align:top"><p><code>CSPNODE_OPTION_NATIVESECURITY</code></p></td>
+<td style="vertical-align:top"><p>0x01</p></td>
+<td style="vertical-align:top"><p>The native security option signifies that the node handles its own security checking, and that ConfigManager2 does not have to manage security for this node.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>CSPNODE_OPTION_INTERNALTRANSACTION</code></p></td>
-<td><p>0x02</p></td>
-<td><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the [ICSPNodeTransactioning](icspnodetransactioning.md).</p></td>
+<td style="vertical-align:top"><p><code>CSPNODE_OPTION_INTERNALTRANSACTION</code></p></td>
+<td style="vertical-align:top"><p>0x02</p></td>
+<td style="vertical-align:top"><p>The internal transactioning option tells ConfigManager2 that the configuration service provider handles the transactioning (rollback and commitment) for the node. To handle internal transactioning, the node must implement the [ICSPNodeTransactioning](icspnodetransactioning.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p><code>CSPNODE_OPTION_HANDLEALLPROPERTIES</code></p></td>
-<td><p>0x04</p></td>
-<td><p>Unused.</p></td>
+<td style="vertical-align:top"><p><code>CSPNODE_OPTION_HANDLEALLPROPERTIES</code></p></td>
+<td style="vertical-align:top"><p>0x04</p></td>
+<td style="vertical-align:top"><p>Unused.</p></td>
 </tr>
 <tr class="even">
-<td><p><code>CSPNODE_OPTION_SECRETDATA</code></p></td>
-<td><p>0x08</p></td>
-<td><p>Unused.</p></td>
+<td style="vertical-align:top"><p><code>CSPNODE_OPTION_SECRETDATA</code></p></td>
+<td style="vertical-align:top"><p>0x08</p></td>
+<td style="vertical-align:top"><p>Unused.</p></td>
 </tr>
 </tbody>
 </table>

@@ -22,15 +22,15 @@ HRESULT Copy([in] IConfigManager2URI* puriDestination,
 ## Parameters
 
 <a href="" id="puridestination"></a>*puriDestination*  
-&nbsp;&nbsp;&nbsp;&nbsp;Path and name of new node's location, relative to the configuration service provider's root node.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Path and name of new node's location, relative to the configuration service provider's root node.
 
 <a href="" id="ppnewnode"></a>*ppNewNode*  
-&nbsp;&nbsp;&nbsp;&nbsp;New node created by the copy operation.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New node created by the copy operation.
 
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
-&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new node.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new node.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<table>
+<table style="margin-left:25px">
 <colgroup>
 <col width="33%" />
 <col width="33%" />
