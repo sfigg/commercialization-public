@@ -1,12 +1,14 @@
 ---
 author: KPacquer
-Description: Customize Windows RE
+Description: Shrink your image size
 ms.assetid: ce94e3c4-03f6-46d1-b2a8-cc5d75c7a66d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Customize Windows RE
+title: Shrink your image size
 ---
 
-# Customize Windows RE
+# Shrink your image size
+
+Windows images are each over a few GB in size. Shrinking the image size smaller   
 
 
 You can customize Windows Recovery Environment (Windows RE) by adding languages, packages drivers, and custom diagnostic or troubleshooting tools.
