@@ -25,11 +25,11 @@ The Microsoft-Windows-TapiSetup component implements the Telephony API (TAPI).
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[TapiConfigured](tapiconfigured-win7-microsoft-windows-tapisetuptapiconfigured.md)</p></td>
+<td><p>[TapiConfigured](microsoft-windows-tapisetuptapiconfigured.md)</p></td>
 <td><p>Specifies whether to retain the configured telephony locations or to rewrite them.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TapiUnattendLocation](tapiunattendlocation-win7-microsoft-windows-tapisetuptapiunattendlocation.md)</p></td>
+<td><p>[TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md)</p></td>
 <td><p>Specifies unattended installation settings for a telephony location.</p></td>
 </tr>
 </tbody>

@@ -12,7 +12,7 @@ ms.assetid: 0F87E806-8C0C-4FD1-9C0C-16AE53C27454
 
 `SquareOrDesktopTile10` specifies which application appears as a square tile on the **Start** menu, in position SquareOrDesktopTile10. This position may vary based on the screen size, resolution, and DPI of the target device.
 
-If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
 
 ## Child Elements
 
@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)| [StartTiles](starttiles-win8-microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](regionaloverride-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)|**SquareOrDesktopTile10**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)|**SquareOrDesktopTile10**
 
 ## Applies To
 
@@ -90,13 +90,13 @@ The following XML output shows how to use the `<SquareOrDesktopTile1>` component
 ## Related topics
 
 
-[StartTiles](starttiles-win8-microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setupstarttiles.md)
 
-[RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
 
-[SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
 
-[SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
 
  
 

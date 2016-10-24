@@ -32,7 +32,7 @@ This information is for reference only.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ReferralId](referralid-win7-microsoft-windows-security-spp-ux-sppccreferralid.md)</p></td>
+<td><p>[ReferralId](microsoft-windows-security-spp-ux-sppccreferralid.md)</p></td>
 <td><p>Deprecated, do not use.</p>
 <p>Specifies the identity of the OEMs participating in the Windows Anytime Upgrade program.</p></td>
 </tr>

@@ -31,7 +31,7 @@ This setting has no effect on Server Core installations of Windows Server® 200
 <td><p>Specifies whether to remove the Microsoft Print to PDF print queue and driver package from a Windows installation.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RemoveMXDW](removemxdw-win7-microsoft-windows-printing-spooler-coreremovemxdw.md)</p></td>
+<td><p>[RemoveMXDW](microsoft-windows-printing-spooler-coreremovemxdw.md)</p></td>
 <td><p>Specifies whether to remove the Microsoft XPS Document Writer (MXDW) print queue and driver package from a Windows installation.</p></td>
 </tr>
 <tr class="odd">

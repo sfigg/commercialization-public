@@ -19,7 +19,7 @@ You can specify:
 
 -   For whom ESC is enabled: administrators only; all users, both administrators and all users; or neither.
 
--   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](localintranetsites-win7-microsoft-windows-ie-internetexplorerlocalintranetsites.md) and [TrustedSites](trustedsites-win7-microsoft-windows-ie-internetexplorertrustedsites.md).
+-   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md) and [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md).
 
 ## In This Section
 
@@ -31,11 +31,11 @@ You can specify:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IEHardenAdmin](iehardenadmin-win7-microsoft-windows-ie-esciehardenadmin.md)</p></td>
+<td><p>[IEHardenAdmin](microsoft-windows-ie-esciehardenadmin.md)</p></td>
 <td><p>Specifies whether ESC is enabled for all administrators on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IEHardenUser](iehardenuser-win7-microsoft-windows-ie-esciehardenuser.md)</p></td>
+<td><p>[IEHardenUser](microsoft-windows-ie-esciehardenuser.md)</p></td>
 <td><p>Specifies whether ESC is enabled for all users on the computer.</p></td>
 </tr>
 </tbody>
@@ -51,9 +51,9 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 
-[LocalIntranetSites](localintranetsites-win7-microsoft-windows-ie-internetexplorerlocalintranetsites.md)
+[LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md)
 
-[TrustedSites](trustedsites-win7-microsoft-windows-ie-internetexplorertrustedsites.md)
+[TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)
 
 [Components](components-b-unattend.md)
 

@@ -27,19 +27,19 @@ This setting has no effect on Server Core installations of Windows Server® 200
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EnableICS](enableics-win7-microsoft-windows-sharedaccessenableics.md)</p></td>
+<td><p>[EnableICS](microsoft-windows-sharedaccessenableics.md)</p></td>
 <td><p>Enables Internet-connection sharing.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ExternalAdapter](externaladapter-win7-microsoft-windows-sharedaccessexternaladapter.md)</p></td>
+<td><p>[ExternalAdapter](microsoft-windows-sharedaccessexternaladapter.md)</p></td>
 <td><p>Specifies the adapter for an Internet-connection-sharing, external connection.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[InternalAdapter](internaladapter-win7-microsoft-windows-sharedaccessinternaladapter.md)</p></td>
+<td><p>[InternalAdapter](microsoft-windows-sharedaccessinternaladapter.md)</p></td>
 <td><p>Specifies the adapter for Internet-connection-sharing, internal connection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InternalIsBridge](internalisbridge-win7-microsoft-windows-sharedaccessinternalisbridge.md)</p></td>
+<td><p>[InternalIsBridge](microsoft-windows-sharedaccessinternalisbridge.md)</p></td>
 <td><p>Specifies whether the internal adapter is a bridge.</p></td>
 </tr>
 </tbody>

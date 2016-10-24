@@ -27,11 +27,11 @@ Client systems use the SMB protocol to request file, print, and communications s
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[OtherDomains](otherdomains-win7-microsoft-windows-workstationserviceotherdomains.md)</p></td>
+<td><p>[OtherDomains](microsoft-windows-workstationserviceotherdomains.md)</p></td>
 <td><p>Specifies Microsoft® LAN Manager domains to be listed for browsing.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SyncDomainWithMembership](syncdomainwithmembership-win7-microsoft-windows-workstationservicesyncdomainwithmembership.md)</p></td>
+<td><p>[SyncDomainWithMembership](microsoft-windows-workstationservicesyncdomainwithmembership.md)</p></td>
 <td><p>Specifies whether the primary Domain Name Service (DNS) suffix changes when domain membership changes.</p></td>
 </tr>
 </tbody>

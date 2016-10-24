@@ -14,7 +14,7 @@ The `FirstRunTask` setting specifies the background task that is active, or live
 
 The background task must register the user with Windows Notification Service at first sign-in, and must send notifications to the app’s live tile.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
 
 ## Values
 
@@ -37,7 +37,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [StartTiles](starttiles-win8-microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](regionaloverride-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md) | [SquareOrDesktopTile11](squareordesktoptile6-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile6.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md) | [SquareOrDesktopTile11](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile6.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -79,13 +79,13 @@ The following XML output shows how to use the `<SquareTiles>` component.
 ## Related topics
 
 
-[StartTiles](starttiles-win8-microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setupstarttiles.md)
 
-[RegionalOverrides](regionaloverrides-win8-microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
 
-[SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
 
-[SquareTiles](squaretiles-win8-microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
 
  
 

@@ -25,11 +25,11 @@ The Microsoft-Windows-Disk-Failure-Diagnostic-Module controls the Windows® Disk
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EnabledScenarioExecutionLevel](enabledscenarioexecutionlevel-win7-microsoft-windows-disk-failure-diagnostic-moduleenabledscenarioexecutionlevel.md)</p></td>
+<td><p>[EnabledScenarioExecutionLevel](microsoft-windows-disk-failure-diagnostic-moduleenabledscenarioexecutionlevel.md)</p></td>
 <td><p>Enables or disables the disk diagnostic feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DfdAlertTextOverride](dfdalerttextoverride-win7-microsoft-windows-disk-failure-diagnostic-moduledfdalerttextoverride.md)</p></td>
+<td><p>[DfdAlertTextOverride](microsoft-windows-disk-failure-diagnostic-moduledfdalerttextoverride.md)</p></td>
 <td><p>Specifies customized text to display in the Windows Disk Diagnostic warning dialog box.</p></td>
 </tr>
 </tbody>

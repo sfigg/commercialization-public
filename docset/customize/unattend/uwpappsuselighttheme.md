@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [Themes](themes-win7-microsoft-windows-shell-setupthemes.md) | **UWPAppsUseLightTheme**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **UWPAppsUseLightTheme**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ In Windows 10, build 1607, a setting has been added for light/dark mode toggle.
 ## Related topics
 
 
-[Themes](themes-win7-microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setupthemes.md)
 
  
 

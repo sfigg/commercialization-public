@@ -25,11 +25,11 @@ The `Microsoft-Windows-CoreMmRes` component specifies settings for the camera so
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CameraSoundLevel](camerasoundlevel-win8-microsoft-windows-coremmrescamerasoundlevel.md)</p></td>
+<td><p>[CameraSoundLevel](microsoft-windows-coremmrescamerasoundlevel.md)</p></td>
 <td><p>Sets the volume of the sound played when a user starts a recording, stops a recording, takes a photo or starts a photo sequence.</p></td>
 </tr>
 <tr class="even">
-<td><p>[NoPhysicalCameraLED](nophysicalcameraled-win8-microsoft-windows-coremmresnophysicalcameraled.md)</p></td>
+<td><p>[NoPhysicalCameraLED](microsoft-windows-coremmresnophysicalcameraled.md)</p></td>
 <td><p>Indicates when there is no physical LED for the device’s camera.</p></td>
 </tr>
 </tbody>

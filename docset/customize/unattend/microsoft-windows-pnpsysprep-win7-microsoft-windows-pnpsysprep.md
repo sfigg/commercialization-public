@@ -29,11 +29,11 @@ During the **specialize** configuration pass, any Plug and Play devices that are
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DoNotCleanUpNonPresentDevices](donotcleanupnonpresentdevices-win7-microsoft-windows-pnpsysprepdonotcleanupnonpresentdevices.md)</p></td>
+<td><p>[DoNotCleanUpNonPresentDevices](microsoft-windows-pnpsysprepdonotcleanupnonpresentdevices.md)</p></td>
 <td><p>Specifies whether Plug and Play information persists on the destination computer during the following specialize configuration pass.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PersistAllDeviceInstalls](persistalldeviceinstalls-win7-microsoft-windows-pnpsyspreppersistalldeviceinstalls.md)</p></td>
+<td><p>[PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md)</p></td>
 <td><p>Specifies whether all Plug and Play information persists on the destination computer during the generalize configuration pass.</p></td>
 </tr>
 </tbody>

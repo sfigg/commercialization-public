@@ -25,7 +25,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AuditComputerName](auditcomputername-win7-microsoft-windows-deploymentauditcomputername.md)</p></td>
+<td><p>[AuditComputerName](microsoft-windows-deploymentauditcomputername.md)</p></td>
 <td><p>Specifies the name of the computer being audited, and whether to restart the computer immediately after you specify this name.</p></td>
 </tr>
 <tr class="even">
@@ -33,27 +33,27 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 <td><p>Specifies the device form factor running the OS.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DuplicatorDescription](duplicatordescription-win7-microsoft-windows-deploymentduplicatordescription.md)</p></td>
+<td><p>[DuplicatorDescription](microsoft-windows-deploymentduplicatordescription.md)</p></td>
 <td><p>Specifies a description of the duplication tool used, as well as any other information that an OEM or an administrator stores in the registry.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ExtendOSPartition](extendospartition-win7-microsoft-windows-deploymentextendospartition.md)</p></td>
+<td><p>[ExtendOSPartition](microsoft-windows-deploymentextendospartition.md)</p></td>
 <td><p>Specifies whether to extend the partition on which you are installing Windows®.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Generalize](generalize-win7-microsoft-windows-deploymentgeneralize.md)</p></td>
+<td><p>[Generalize](microsoft-windows-deploymentgeneralize.md)</p></td>
 <td><p>Instructs Windows Setup to shut down the system after other answer-file settings are processed, and then to start the <strong>generalize</strong> configuration pass.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Reseal](reseal-win7-microsoft-windows-deploymentreseal.md)</p></td>
+<td><p>[Reseal](microsoft-windows-deploymentreseal.md)</p></td>
 <td><p>Specifies whether the computer runs in audit mode or in Out-of-Box Experience (OOBE) when it next starts.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RunAsynchronous](runasynchronous-win7-microsoft-windows-deploymentrunasynchronous.md)</p></td>
+<td><p>[RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md)</p></td>
 <td><p>Specifies one or more commands to run asynchronously on the operating system during the specified configuration pass.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RunSynchronous](runsynchronous-win7-microsoft-windows-deploymentrunsynchronous.md)</p></td>
+<td><p>[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)</p></td>
 <td><p>Specifies one or more commands to run synchronously on the operating system during the specified configuration pass.</p></td>
 </tr>
 </tbody>

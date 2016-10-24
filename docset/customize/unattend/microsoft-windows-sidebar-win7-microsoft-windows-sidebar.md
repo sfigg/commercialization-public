@@ -31,42 +31,42 @@ The Microsoft-Windows-Sidebar component contains settings for displaying gadgets
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Gadget1](gadget1-win7-microsoft-windows-sidebargadget1.md)</p></td>
+<td><p>[Gadget1](microsoft-windows-sidebargadget1.md)</p></td>
 <td><p>Specifies the path of a gadget folder (.gadget).</p></td>
 <td><p>Windows Vista and Windows® 7 editions only.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Gadget2](gadget2-win7-microsoft-windows-sidebargadget2.md)</p></td>
+<td><p>[Gadget2](microsoft-windows-sidebargadget2.md)</p></td>
 <td><p>Specifies the path of a gadget folder (.gadget).</p></td>
 <td><p>Windows Vista and Windows® 7 editions only.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Gadget3](gadget3-win7-microsoft-windows-sidebargadget3.md)</p></td>
+<td><p>[Gadget3](microsoft-windows-sidebargadget3.md)</p></td>
 <td><p></p></td>
 <td><p>Specifies the path of a gadget folder (.gadget).</p></td>
 </tr>
 <tr class="even">
-<td><p>[Gadget4](gadget4-win7-microsoft-windows-sidebargadget4.md)</p></td>
+<td><p>[Gadget4](microsoft-windows-sidebargadget4.md)</p></td>
 <td><p>Specifies the path of a gadget folder (.gadget).</p></td>
 <td><p>Windows Vista and Windows® 7 editions only.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Gadget5](gadget5-win7-microsoft-windows-sidebargadget5.md)</p></td>
+<td><p>[Gadget5](microsoft-windows-sidebargadget5.md)</p></td>
 <td><p>Specifies the path of a gadget folder (.gadget).</p></td>
 <td><p>Windows Vista and Windows® 7 editions only.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LayoutPosition](layoutposition-win7-microsoft-windows-sidebarlayoutposition.md)</p></td>
+<td><p>[LayoutPosition](microsoft-windows-sidebarlayoutposition.md)</p></td>
 <td><p>Specifies whether the default location for gadgets is on the top or side edge of the desktop.</p></td>
 <td><p>Windows Vista and Windows® 7 editions only.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SidebarOnByDefault](sidebaronbydefault-win7-microsoft-windows-sidebarsidebaronbydefault.md)</p></td>
+<td><p>[SidebarOnByDefault](microsoft-windows-sidebarsidebaronbydefault.md)</p></td>
 <td><p>Specifies whether the Sidebar is on by default.</p></td>
 <td><p>The Sidebar available in Windows Vista editions only.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SidebarVisible](sidebarvisible-win7-microsoft-windows-sidebarsidebarvisible.md)</p></td>
+<td><p>[SidebarVisible](microsoft-windows-sidebarsidebarvisible.md)</p></td>
 <td><p>The Sidebar available in Windows Vista editions only.</p>
 <p>Specifies whether the Sidebar is visible.</p></td>
 <td><p>The Sidebar available in Windows Vista editions only.</p></td>

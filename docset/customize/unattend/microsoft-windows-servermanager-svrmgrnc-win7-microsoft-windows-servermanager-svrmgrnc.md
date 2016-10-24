@@ -27,7 +27,7 @@ This setting has no effect on Server Core installations of Windows Server® 200
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DoNotOpenServerManagerAtLogon](donotopenservermanageratlogon-win7-microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md)</p></td>
+<td><p>[DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md)</p></td>
 <td><p>Specifies whether the Server Manager application opens when the end user logs on for the first time.</p></td>
 </tr>
 </tbody>

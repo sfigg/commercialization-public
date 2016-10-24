@@ -30,11 +30,11 @@ The Microsoft-Windows-OutOfBoxExperience component specifies details about the I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DoNotOpenInitialConfigurationTasksAtLogon](donotopeninitialconfigurationtasksatlogon-win7-microsoft-windows-outofboxexperiencedonotopeninitialconfigurationtasksatlogon.md)</p></td>
+<td><p>[DoNotOpenInitialConfigurationTasksAtLogon](microsoft-windows-outofboxexperiencedonotopeninitialconfigurationtasksatlogon.md)</p></td>
 <td><p>Specifies whether the <strong>Initial Configuration Tasks</strong> application opens automatically when the end user logs on for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OemExtensionXmlFilePath](oemextensionxmlfilepath-win7-microsoft-windows-outofboxexperienceoemextensionxmlfilepath.md)</p></td>
+<td><p>[OemExtensionXmlFilePath](microsoft-windows-outofboxexperienceoemextensionxmlfilepath.md)</p></td>
 <td><p>Specifies the path to the OEM XML file that contains the OEM resources and tasks that are displayed in the <strong>Initial Configuration Tasks</strong> and <strong>Server Manager</strong> applications.</p></td>
 </tr>
 </tbody>

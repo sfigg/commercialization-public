@@ -25,7 +25,7 @@ The `Microsoft-Windows-LUA-Settings` component includes settings related to the 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EnableLUA](enablelua-win7-microsoft-windows-lua-settingsenablelua.md)</p></td>
+<td><p>[EnableLUA](microsoft-windows-lua-settingsenablelua.md)</p></td>
 <td><p>Specifies whether the Windows® User Account Controls (UAC) notify the user when programs try to make changes to the computer.</p></td>
 </tr>
 </tbody>

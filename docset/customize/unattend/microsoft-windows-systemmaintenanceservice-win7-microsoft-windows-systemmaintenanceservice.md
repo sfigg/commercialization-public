@@ -27,7 +27,7 @@ This component can improve system responsiveness, especially on systems with low
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CacheList](cachelist-win7-microsoft-windows-systemmaintenanceservicecachelist.md)</p></td>
+<td><p>[CacheList](microsoft-windows-systemmaintenanceservicecachelist.md)</p></td>
 <td><p>Specifies settings for Microsoft® ReadyBoost™ devices on the computer.</p></td>
 </tr>
 </tbody>

@@ -25,7 +25,7 @@ The Microsoft-Windows-Security-SPP component resets licensing values that were s
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SkipRearm](skiprearm-win7-microsoft-windows-security-sppskiprearm.md)</p></td>
+<td><p>[SkipRearm](microsoft-windows-security-sppskiprearm.md)</p></td>
 <td><p>Specifies whether to reset the licensing state of Windows®.</p></td>
 </tr>
 </tbody>

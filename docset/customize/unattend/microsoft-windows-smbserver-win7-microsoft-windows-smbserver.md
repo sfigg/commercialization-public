@@ -25,11 +25,11 @@ The Microsoft-Windows-SMBServer (Server Message Block) component provides the in
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[LmAnnounce](lmannounce-win7-microsoft-windows-smbserverlmannounce.md)</p></td>
+<td><p>[LmAnnounce](microsoft-windows-smbserverlmannounce.md)</p></td>
 <td><p>Specifies whether the server sends LanMan or Net BIOS messages to announce its presence.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Size](size-win7-microsoft-windows-smbserversize.md)</p></td>
+<td><p>[Size](microsoft-windows-smbserversize.md)</p></td>
 <td><p>Specifies the size of the cache.</p></td>
 </tr>
 </tbody>

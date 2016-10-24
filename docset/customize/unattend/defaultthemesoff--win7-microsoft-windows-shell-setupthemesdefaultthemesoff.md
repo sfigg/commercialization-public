@@ -56,7 +56,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [Themes](themes-win7-microsoft-windows-shell-setupthemes.md) | **DefaultThemesOff**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **DefaultThemesOff**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output shows how to set a customized theme.
 ## Related topics
 
 
-[Themes](themes-win7-microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setupthemes.md)
 
  
 

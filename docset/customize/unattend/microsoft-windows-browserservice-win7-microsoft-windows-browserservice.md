@@ -25,7 +25,7 @@ The Microsoft-Windows-BrowserService component maintains a list of all available
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[MaintainServerList](maintainserverlist-win7-microsoft-windows-browserservicemaintainserverlist.md)</p></td>
+<td><p>[MaintainServerList](microsoft-windows-browserservicemaintainserverlist.md)</p></td>
 <td><p>Specifies whether the computer can act as a master or backup browser on a subnet.</p></td>
 </tr>
 </tbody>
