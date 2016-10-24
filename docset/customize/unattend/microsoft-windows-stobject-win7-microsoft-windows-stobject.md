@@ -29,7 +29,7 @@ For more information about power-management, see [Battery Life Technical Referen
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FlyoutAutoPowerScheme](flyoutautopowerscheme-win7-microsoft-windows-stobjectflyoutautopowerscheme.md)</p></td>
+<td><p>[FlyoutAutoPowerScheme](microsoft-windows-stobjectflyoutautopowerscheme.md)</p></td>
 <td><p>Specifies the globally unique identifier (GUID) of the Battery Meter Fly-out Balanced power plan.</p></td>
 </tr>
 <tr class="even">
@@ -45,31 +45,31 @@ For more information about power-management, see [Battery Life Technical Referen
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>[FlyoutPowerSaverPowerScheme](flyoutpowersaverpowerscheme-win7-microsoft-windows-stobjectflyoutpowersaverpowerscheme.md)</p></td>
+<td><p>[FlyoutPowerSaverPowerScheme](microsoft-windows-stobjectflyoutpowersaverpowerscheme.md)</p></td>
 <td><p>Specifies the GUID of the Battery Meter Fly-out Power Saver power plan.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication1](custompowerapplication1-win7-microsoft-windows-stobjectcustompowerapplication1.md)</p></td>
+<td><p>[CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md)</p></td>
 <td><p>Specifies the first Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication2](custompowerapplication2-win7-microsoft-windows-stobjectcustompowerapplication2.md)</p></td>
+<td><p>[CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md)</p></td>
 <td><p>Specifies the second Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication3](custompowerapplication3-win7-microsoft-windows-stobjectcustompowerapplication3.md)</p></td>
+<td><p>[CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md)</p></td>
 <td><p>Specifies the third Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication4](custompowerapplication4-win7-microsoft-windows-stobjectcustompowerapplication4.md)</p></td>
+<td><p>[CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md)</p></td>
 <td><p>Specifies the fourth Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication5](custompowerapplication5-win7-microsoft-windows-stobjectcustompowerapplication5.md)</p></td>
+<td><p>[CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md)</p></td>
 <td><p>Specifies the fifth Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication6](custompowerapplication6-win7-microsoft-windows-stobjectcustompowerapplication6.md)</p></td>
+<td><p>[CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md)</p></td>
 <td><p>Specifies the sixth Battery Meter custom context-menu item.</p></td>
 </tr>
 </tbody>

@@ -25,7 +25,7 @@ The Microsoft-Windows-SystemRestore-Main component enables you to create restore
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisableSR](disablesr-win7-microsoft-windows-systemrestore-maindisablesr.md)</p></td>
+<td><p>[DisableSR](microsoft-windows-systemrestore-maindisablesr.md)</p></td>
 <td><p>Enables and disables System Restore.</p></td>
 </tr>
 </tbody>

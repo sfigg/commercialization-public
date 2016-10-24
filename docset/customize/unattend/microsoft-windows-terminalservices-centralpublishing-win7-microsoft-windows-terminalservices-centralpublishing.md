@@ -27,7 +27,7 @@ For more information about configuring RPC ports, see the MSDN topic: [How to co
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Port](port-win7-microsoft-windows-terminalservices-centralpublishingport.md)</p></td>
+<td><p>[Port](microsoft-windows-terminalservices-centralpublishingport.md)</p></td>
 <td><p>Specifies the port for RemoteApp and Desktop Connection Management.</p></td>
 </tr>
 </tbody>

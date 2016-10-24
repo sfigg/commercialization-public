@@ -25,11 +25,11 @@ The Networking-MPSSVC-Svc component is part of Windows® Firewall, which protect
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisableStatefulFTP](disablestatefulftp-win7-networking-mpssvc-svcdisablestatefulftp.md)</p></td>
+<td><p>[DisableStatefulFTP](networking-mpssvc-svcdisablestatefulftp.md)</p></td>
 <td><p>Disables the Windows Firewall File Transfer Protocol (FTP)-connection, inspection engine.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableStatefulPPTP](disablestatefulpptp-win7-networking-mpssvc-svcdisablestatefulpptp.md)</p></td>
+<td><p>[DisableStatefulPPTP](networking-mpssvc-svcdisablestatefulpptp.md)</p></td>
 <td><p>Disables the Windows Firewall Point-to-Point Tunneling Protocol (PPTP) connection inspection engine.</p></td>
 </tr>
 <tr class="odd">
@@ -57,7 +57,7 @@ The Networking-MPSSVC-Svc component is part of Windows® Firewall, which protect
 <td><p>Specifies whether successful connections are logged for Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FirewallGroups](firewallgroups-win7-networking-mpssvc-svcfirewallgroups.md)</p></td>
+<td><p>[FirewallGroups](networking-mpssvc-svcfirewallgroups.md)</p></td>
 <td><p>Specifies Windows Firewall groups.</p></td>
 </tr>
 <tr class="even">

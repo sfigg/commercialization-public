@@ -25,47 +25,47 @@ The Microsoft-Windows-IE-ClientNetworkProtocolImplementation component contains 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CacheLimit](cachelimit-win7-microsoft-windows-ie-clientnetworkprotocolimplementationcachelimit.md)</p></td>
+<td><p>[CacheLimit](microsoft-windows-ie-clientnetworkprotocolimplementationcachelimit.md)</p></td>
 <td><p>Specifies the amount of disk space to use for storing temporary Internet files.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HKLMConnectRetries](hklmconnectretries-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmconnectretries.md)</p></td>
+<td><p>[HKLMConnectRetries](microsoft-windows-ie-clientnetworkprotocolimplementationhklmconnectretries.md)</p></td>
 <td><p>Specifies the number of times Internet Explorer attempts to connect to resolve and connect to a host.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HKLMConnectTimeOut](hklmconnecttimeout-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmconnecttimeout.md)</p></td>
+<td><p>[HKLMConnectTimeOut](microsoft-windows-ie-clientnetworkprotocolimplementationhklmconnecttimeout.md)</p></td>
 <td><p>Specifies the number of milliseconds to wait for a connection to complete for all users on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HKLMContentPerUserItem](hklmcontentperuseritem-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmcontentperuseritem.md)</p></td>
+<td><p>[HKLMContentPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementationhklmcontentperuseritem.md)</p></td>
 <td><p>Specifies whether content is cached individually for each user on the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HKLMCookiesPerUserItem](hklmcookiesperuseritem-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmcookiesperuseritem.md)</p></td>
+<td><p>[HKLMCookiesPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementationhklmcookiesperuseritem.md)</p></td>
 <td><p>Specifies whether cookies are cached individually for each user on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HKLMHistoryPerUserItem](hklmhistoryperuseritem-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmhistoryperuseritem.md)</p></td>
+<td><p>[HKLMHistoryPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementationhklmhistoryperuseritem.md)</p></td>
 <td><p>Specifies whether history is cached individually for each user on the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HKLMProxyEnable](hklmproxyenable-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyenable.md)</p></td>
+<td><p>[HKLMProxyEnable](microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyenable.md)</p></td>
 <td><p>Specifies whether to use a proxy server to connect to the Internet for all users on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HKLMProxyOverride](hklmproxyoverride-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyoverride.md)</p></td>
+<td><p>[HKLMProxyOverride](microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyoverride.md)</p></td>
 <td><p>Specifies a list of host names or IP addresses that will bypass the proxy server for all users on the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HKLMProxyServer](hklmproxyserver-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyserver.md)</p></td>
+<td><p>[HKLMProxyServer](microsoft-windows-ie-clientnetworkprotocolimplementationhklmproxyserver.md)</p></td>
 <td><p>Specifies the IP address or the host name of the proxy server on the network for all users on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HKLMReceiveTimeOut](hklmreceivetimeout-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmreceivetimeout.md)</p></td>
+<td><p>[HKLMReceiveTimeOut](microsoft-windows-ie-clientnetworkprotocolimplementationhklmreceivetimeout.md)</p></td>
 <td><p>Specifies the number of milliseconds to wait for data to be received over the network for all users on the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HKLMSendTimeOut](hklmsendtimeout-win7-microsoft-windows-ie-clientnetworkprotocolimplementationhklmsendtimeout.md)</p></td>
+<td><p>[HKLMSendTimeOut](microsoft-windows-ie-clientnetworkprotocolimplementationhklmsendtimeout.md)</p></td>
 <td><p>Specifies the number of milliseconds to wait for to wait for data to be sent over the network for all users on the computer.</p></td>
 </tr>
 </tbody>

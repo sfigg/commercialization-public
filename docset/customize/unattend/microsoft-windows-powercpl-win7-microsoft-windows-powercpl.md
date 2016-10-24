@@ -25,7 +25,7 @@ The Microsoft-Windows-powercpl component specifies the preferred power plan of t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PreferredPlan](preferredplan-win7-microsoft-windows-powercplpreferredplan.md)</p></td>
+<td><p>[PreferredPlan](microsoft-windows-powercplpreferredplan.md)</p></td>
 <td><p>Specifies the preferred power plan of the computer.</p></td>
 </tr>
 </tbody>

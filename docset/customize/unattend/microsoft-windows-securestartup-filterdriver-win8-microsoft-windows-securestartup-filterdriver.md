@@ -33,37 +33,37 @@ These settings only apply to Windows 8.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[BytesDecryptedInDiskRequestOverhead](bytesdecryptedindiskrequestoverhead-win8-microsoft-windows-securestartup-filterdriverbytesdecryptedindiskrequestoverhead.md)</p></td>
+<td><p>[BytesDecryptedInDiskRequestOverhead](microsoft-windows-securestartup-filterdriverbytesdecryptedindiskrequestoverhead.md)</p></td>
 </tr>
 <tr class="even">
-<td><p>[MaxCryptoRequestsPerIo](maxcryptorequestsperio-win8-microsoft-windows-securestartup-filterdrivermaxcryptorequestsperio.md)</p></td>
+<td><p>[MaxCryptoRequestsPerIo](microsoft-windows-securestartup-filterdrivermaxcryptorequestsperio.md)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MaxDecryptRequests](maxdecryptrequests-win8-microsoft-windows-securestartup-filterdrivermaxdecryptrequests.md)</p></td>
+<td><p>[MaxDecryptRequests](microsoft-windows-securestartup-filterdrivermaxdecryptrequests.md)</p></td>
 </tr>
 <tr class="even">
-<td><p>[MaxEncryptRequests](maxencryptrequests-win8-microsoft-windows-securestartup-filterdrivermaxencryptrequests.md)</p></td>
+<td><p>[MaxEncryptRequests](microsoft-windows-securestartup-filterdrivermaxencryptrequests.md)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PreventDeviceEncryption](preventdeviceencryption-win8-microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
+<td><p>[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
 </tr>
 <tr class="even">
-<td><p>[SlicedEncryptionInPlace](slicedencryptioninplace-win8-microsoft-windows-securestartup-filterdriverslicedencryptioninplace.md)</p></td>
+<td><p>[SlicedEncryptionInPlace](microsoft-windows-securestartup-filterdriverslicedencryptioninplace.md)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SlicedEncryptionMinSize](slicedencryptionminsize-win8-microsoft-windows-securestartup-filterdriverslicedencryptionminsize.md)</p></td>
+<td><p>[SlicedEncryptionMinSize](microsoft-windows-securestartup-filterdriverslicedencryptionminsize.md)</p></td>
 </tr>
 <tr class="even">
-<td><p>[SlicedEncryptionRequestsMax](slicedencryptionrequestsmax-win8-microsoft-windows-securestartup-filterdriverslicedencryptionrequestsmax.md)</p></td>
+<td><p>[SlicedEncryptionRequestsMax](microsoft-windows-securestartup-filterdriverslicedencryptionrequestsmax.md)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WriteIoAggregateMaxSize](writeioaggregatemaxsize-win8-microsoft-windows-securestartup-filterdriverwriteioaggregatemaxsize.md)</p></td>
+<td><p>[WriteIoAggregateMaxSize](microsoft-windows-securestartup-filterdriverwriteioaggregatemaxsize.md)</p></td>
 </tr>
 <tr class="even">
-<td><p>[WriteIoAggregateMinSize](writeioaggregateminsize-win8-microsoft-windows-securestartup-filterdriverwriteioaggregateminsize.md)</p></td>
+<td><p>[WriteIoAggregateMinSize](microsoft-windows-securestartup-filterdriverwriteioaggregateminsize.md)</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WriteSubrequestLength](writesubrequestlength-win8-microsoft-windows-securestartup-filterdriverwritesubrequestlength.md)</p></td>
+<td><p>[WriteSubrequestLength](microsoft-windows-securestartup-filterdriverwritesubrequestlength.md)</p></td>
 </tr>
 </tbody>
 </table>

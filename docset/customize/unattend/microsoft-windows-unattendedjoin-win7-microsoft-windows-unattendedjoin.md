@@ -25,7 +25,7 @@ The Microsoft-Windows-UnattendedJoin component enables a computer to join a doma
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identification](identification-win7-microsoft-windows-unattendedjoinidentification.md)</p></td>
+<td><p>[Identification](microsoft-windows-unattendedjoinidentification.md)</p></td>
 <td><p>Specifies credentials to join a domain, the name of the domain to join, the workgroup to assign to the computer, and other options during the specialize configuration pass.</p></td>
 </tr>
 <tr class="even">

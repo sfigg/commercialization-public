@@ -25,7 +25,7 @@ The Microsoft-Windows-EnhancedStorage-Adm component specifies settings for encry
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[TCGSecurityActivationDisabled](tcgsecurityactivationdisabled-win8-microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md)</p></td>
+<td><p>[TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md)</p></td>
 <td><p>Specifies whether Windows® automatically encrypts eDrives.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 [Components](components-b-unattend.md)
 
-[DiskConfiguration](diskconfiguration-win7-microsoft-windows-setupdiskconfiguration.md)
+[DiskConfiguration](microsoft-windows-setupdiskconfiguration.md)
 
  
 

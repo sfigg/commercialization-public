@@ -25,7 +25,7 @@ The Microsoft-Windows-WwanUI component implements settings related to Network li
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[NotInOOBE](notinoobe-win8-microsoft-windows-wwanuinotinoobe.md)</p></td>
+<td><p>[NotInOOBE](microsoft-windows-wwanuinotinoobe.md)</p></td>
 <td><p>Hides mobile broadband devices and networks in OOBE.</p></td>
 </tr>
 </tbody>

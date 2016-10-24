@@ -27,7 +27,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Clusters](clusters-win7-microsoft-windows-networkloadbalancing-coreclusters.md)</p></td>
+<td><p>[Clusters](microsoft-windows-networkloadbalancing-coreclusters.md)</p></td>
 <td><p>Contains the settings to specify details about clusters.</p></td>
 </tr>
 </tbody>

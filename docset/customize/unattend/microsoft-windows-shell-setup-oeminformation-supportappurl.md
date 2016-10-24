@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [OEMInformation](oeminformation-win7-microsoft-windows-shell-setupoeminformation.md) | **SupportAppURL**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setupoeminformation.md) | **SupportAppURL**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following XML output shows how to set OEM information.
 ## Related topics
 
 
-[OEMInformation](oeminformation-win7-microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
 
  
 

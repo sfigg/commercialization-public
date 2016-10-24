@@ -25,15 +25,15 @@ The Microsoft-Windows-Fax-Service component specifies settings for faxes, includ
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Fax](fax-win7-microsoft-windows-fax-servicefax.md)</p></td>
+<td><p>[Fax](microsoft-windows-fax-servicefax.md)</p></td>
 <td><p>Specifies settings for saving incoming and outgoing faxes and whether incoming faxes can be viewed by all users.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FaxUnattend](faxunattend-win7-microsoft-windows-fax-servicefaxunattend.md)</p></td>
+<td><p>[FaxUnattend](microsoft-windows-fax-servicefaxunattend.md)</p></td>
 <td><p>Specifies details about sending, receiving, printing, and saving faxes.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Receipts](receipts-win7-microsoft-windows-fax-servicereceipts.md)</p></td>
+<td><p>[Receipts](microsoft-windows-fax-servicereceipts.md)</p></td>
 <td><p>Specifies Simple Mail Transfer Protocol (SMTP) settings for faxes.</p></td>
 </tr>
 </tbody>

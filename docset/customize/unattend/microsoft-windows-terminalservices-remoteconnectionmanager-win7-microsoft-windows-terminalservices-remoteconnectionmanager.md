@@ -30,7 +30,7 @@ This component is ignored unless the Windows® feature **AppServer** **(Terminal
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[LicensingMode](licensingmode-win7-microsoft-windows-terminalservices-remoteconnectionmanagerlicensingmode.md)</p></td>
+<td><p>[LicensingMode](microsoft-windows-terminalservices-remoteconnectionmanagerlicensingmode.md)</p></td>
 <td><p>Specifies whether Client Access Licenses (CALs) are configured on a per-user or per-device basis.</p></td>
 </tr>
 </tbody>

@@ -27,71 +27,71 @@ Some of the settings in this component apply only to Windows PE, and some setti
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ComplianceCheck](compliancecheck-win7-microsoft-windows-setupcompliancecheck.md)</p></td>
+<td><p>[ComplianceCheck](microsoft-windows-setupcompliancecheck.md)</p></td>
 <td><p>Checks that the requirements for installing Windows are fulfilled so that the operating system can be installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Diagnostics](diagnostics-win7-microsoft-windows-setupdiagnostics.md)</p></td>
+<td><p>[Diagnostics](microsoft-windows-setupdiagnostics.md)</p></td>
 <td><p>Specifies whether to send installation information to Microsoft.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DiskConfiguration](diskconfiguration-win7-microsoft-windows-setupdiskconfiguration.md)</p></td>
+<td><p>[DiskConfiguration](microsoft-windows-setupdiskconfiguration.md)</p></td>
 <td><p>Specifies the disk configurations to apply to a disk on the destination computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Display](display-win7-microsoft-windows-setupdisplay.md)</p></td>
+<td><p>[Display](microsoft-windows-setupdisplay.md)</p></td>
 <td><p>Specifies display settings to apply to Windows PE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DynamicUpdate](dynamicupdate-win7-microsoft-windows-setupdynamicupdate.md)</p></td>
+<td><p>[DynamicUpdate](microsoft-windows-setupdynamicupdate.md)</p></td>
 <td><p>Specifies whether to enable dynamic updates.</p></td>
 </tr>
 <tr class="even">
-<td><p>[EnableFirewall](enablefirewall-win7-microsoft-windows-setupenablefirewall.md)</p></td>
+<td><p>[EnableFirewall](microsoft-windows-setupenablefirewall.md)</p></td>
 <td><p>Specifies whether to enable Windows Firewall for Windows PE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EnableNetwork](enablenetwork-win7-microsoft-windows-setupenablenetwork.md)</p></td>
+<td><p>[EnableNetwork](microsoft-windows-setupenablenetwork.md)</p></td>
 <td><p>Specifies whether a network connection is enabled.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ImageInstall](imageinstall-win7-microsoft-windows-setupimageinstall.md)</p></td>
+<td><p>[ImageInstall](microsoft-windows-setupimageinstall.md)</p></td>
 <td><p>Specifies the Windows image to install.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LogPath](logpath-win7-microsoft-windows-setuplogpath.md)</p></td>
+<td><p>[LogPath](microsoft-windows-setuplogpath.md)</p></td>
 <td><p>Specifies the path used for log files during Windows PE.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PageFile](pagefile-win7-microsoft-windows-setuppagefile.md)</p></td>
+<td><p>[PageFile](microsoft-windows-setuppagefile.md)</p></td>
 <td><p>Specifies the size and the location of the page file used during Windows PE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Restart](restart-win7-microsoft-windows-setuprestart.md)</p></td>
+<td><p>[Restart](microsoft-windows-setuprestart.md)</p></td>
 <td><p>Specifies whether to restart or shut down the computer after Windows PE completes.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RunAsynchronous](runasynchronous-win7-microsoft-windows-setuprunasynchronous.md)</p></td>
+<td><p>[RunAsynchronous](microsoft-windows-setuprunasynchronous.md)</p></td>
 <td><p>Specifies commands to run asynchronously after Windows PE starts.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RunSynchronous](runsynchronous-win7-microsoft-windows-setuprunsynchronous.md)</p></td>
+<td><p>[RunSynchronous](microsoft-windows-setuprunsynchronous.md)</p></td>
 <td><p>Specifies commands to run synchronously after Windows PE starts.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UpgradeData](upgradedata-win7-microsoft-windows-setupupgradedata.md)</p></td>
+<td><p>[UpgradeData](microsoft-windows-setupupgradedata.md)</p></td>
 <td><p>Specifies whether the installation is an upgrade of an existing operating system.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UseConfigurationSet](useconfigurationset-win7-microsoft-windows-setupuseconfigurationset.md)</p></td>
+<td><p>[UseConfigurationSet](microsoft-windows-setupuseconfigurationset.md)</p></td>
 <td><p>Specifies that a configuration set is used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UserData](userdata-win7-microsoft-windows-setupuserdata.md)</p></td>
+<td><p>[UserData](microsoft-windows-setupuserdata.md)</p></td>
 <td><p>Specifies user data, such as the user name and the product key to apply to the Windows installation.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WindowsDeploymentServices](windowsdeploymentservices-win7-microsoft-windows-setupwindowsdeploymentservices.md)</p></td>
+<td><p>[WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md)</p></td>
 <td><p>Specifies settings for Windows Deployment Services, a management tool designed to facilitate deployment with a limited number of settings.</p></td>
 </tr>
 </tbody>

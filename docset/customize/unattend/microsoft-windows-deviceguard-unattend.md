@@ -83,7 +83,7 @@ In addition to the Unattend settings in `Microsoft-Windows-DeviceGuard-Unattend`
 
     **DISM.EXE /Image:***&lt;full path to offline image&gt;* **/Enable-Feature: IsolatedUserMode /All**
 
--   Set the following registry keys using the [FirstLogonCommands](firstlogoncommands-win7-microsoft-windows-shell-setupfirstlogoncommands.md) setting:
+-   Set the following registry keys using the [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) setting:
 
     **REG ADD "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG\_DWORD /d 1 /f**
 

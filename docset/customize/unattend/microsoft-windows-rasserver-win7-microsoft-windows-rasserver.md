@@ -25,11 +25,11 @@ The Microsoft-Windows-RasServer component provides Remote Access Service (RAS) f
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ConfigurationFlags](configurationflags-win7-microsoft-windows-rasserverconfigurationflags.md)</p></td>
+<td><p>[ConfigurationFlags](microsoft-windows-rasserverconfigurationflags.md)</p></td>
 <td><p>Specifies whether RAS is configured.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RouterType](routertype-win7-microsoft-windows-rasserverroutertype.md)</p></td>
+<td><p>[RouterType](microsoft-windows-rasserverroutertype.md)</p></td>
 <td><p>Specifies the router type for RAS.</p></td>
 </tr>
 </tbody>

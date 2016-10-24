@@ -48,51 +48,51 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-CoreMmRes\[CameraSoundLevel](camerasoundlevel-win8-microsoft-windows-coremmrescamerasoundlevel.md)</p></td>
+<td><p>Microsoft-Windows-CoreMmRes\[CameraSoundLevel](microsoft-windows-coremmrescamerasoundlevel.md)</p></td>
 <td><p>Sets the volume of the sound played when a user starts a recording, stops a recording, takes a photo or starts a photo sequence. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-CoreMmRes\[NoPhysicalCameraLED](nophysicalcameraled-win8-microsoft-windows-coremmresnophysicalcameraled.md)</p></td>
+<td><p>Microsoft-Windows-CoreMmRes\[NoPhysicalCameraLED](microsoft-windows-coremmresnophysicalcameraled.md)</p></td>
 <td><p>Indicates that there is no physical LED for the device’s camera. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-GPIOButtons\[ConvertibleSlateMode](convertibleslatemode-win8-microsoft-windowsgpiobuttonsconvertibleslatemode.md)</p></td>
+<td><p>Microsoft-Windows-GPIOButtons\[ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md)</p></td>
 <td><p>Sets the touchscreen behavior for a laptop, a PC with permanently attached keyboard available at any time for typing comfortably</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-SecureStartup-FilterDriver\[PreventDeviceEncryption](preventdeviceencryption-win8-microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
+<td><p>Microsoft-Windows-SecureStartup-FilterDriver\[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
 <td><p>Prevents encrypting the operating system drive and any fixed data drive using Windows BitLocker Drive Encryption.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[DesktopOptimization](desktopoptimization-win8-microsoft-windows-shell-setupdesktopoptimization.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[DesktopOptimization](microsoft-windows-shell-setupdesktopoptimization.md)</p></td>
 <td><p>Specifies display settings that affect the desktop. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup \[ShowPowerButtonOnStartScreen](showpowerbuttononstartscreen-win7-microsoft-windows-shell-setupshowpowerbuttononstartscreen.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup \[ShowPowerButtonOnStartScreen](microsoft-windows-shell-setupshowpowerbuttononstartscreen.md)</p></td>
 <td><p>Specifies that the Power Options button is displayed on the Start Screen. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](squareordesktoptile7-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile7. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](squareordesktoptile8-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile8.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile8.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile8. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](squareordesktoptile9-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile9.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile9.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile9. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](squareordesktoptile10-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile10.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile10.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile10. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](squareordesktoptile11-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile11.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile11.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile11. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](squareordesktoptile12-win8-microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile12.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
@@ -100,35 +100,35 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 <td><p>Specifies whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-SystemSettings\[WiFiToWlan](wifitowlan-win8-microsoft-windows-systemsettingswifitowlan.md)</p></td>
+<td><p>Microsoft-Windows-SystemSettings\[WiFiToWlan](microsoft-windows-systemsettingswifitowlan.md)</p></td>
 <td><p>Replaces the. &quot;Wi-Fi&quot; heading in the Networks list with &quot;WLAN&quot;.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-WwanUI\[NotInOOBE](notinoobe-win8-microsoft-windows-wwanuinotinoobe.md)</p></td>
+<td><p>Microsoft-Windows-WwanUI\[NotInOOBE](microsoft-windows-wwanuinotinoobe.md)</p></td>
 <td><p>Hides mobile broadband devices and networks in OOBE.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[DefinitionUpdateFileSharesSources](definitionupdatefilesharessources-win8-security-malware-windows-defenderdefinitionupdatefilesharessources.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[DefinitionUpdateFileSharesSources](security-malware-windows-defenderdefinitionupdatefilesharessources.md)</p></td>
 <td><p>Configures UNC file share sources for downloading definition updates for Windows® Defender.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[EnableRemoteManagedDefaults](enableremotemanageddefaults-win8-security-malware-windows-defenderenableremotemanageddefaults.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[EnableRemoteManagedDefaults](security-malware-windows-defenderenableremotemanageddefaults.md)</p></td>
 <td><p>Specifies whether to configure Windows® Defender to be remotely managed using recommended default settings.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[FallbackOrder](fallbackorder-win8-security-malware-windows-defenderfallbackorder.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[FallbackOrder](security-malware-windows-defenderfallbackorder.md)</p></td>
 <td><p>Specifies the order in which different definition update sources should be contacted by Windows Defender.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[Scan](scan-win8-security-malware-windows-defenderscan.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[Scan](security-malware-windows-defenderscan.md)</p></td>
 <td><p>Specifies settings that configure the scheduled scan for Windows® Defender.</p></td>
 </tr>
 <tr class="even">
-<td><p>Security-Malware-Windows-Defender\[SignatureUpdateInterval](signatureupdateinterval-win8-security-malware-windows-defendersignatureupdateinterval.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[SignatureUpdateInterval](security-malware-windows-defendersignatureupdateinterval.md)</p></td>
 <td><p>Specifies the interval Windows® Defender checks for definition updates.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Security-Malware-Windows-Defender\[ThreatSeverityDefaultAction](threatseveritydefaultaction-win8-security-malware-windows-defenderthreatseveritydefaultaction.md)</p></td>
+<td><p>Security-Malware-Windows-Defender\[ThreatSeverityDefaultAction](security-malware-windows-defenderthreatseveritydefaultaction.md)</p></td>
 <td><p>Specifies settings that define the default action to be taken for specific threat alert levels.</p></td>
 </tr>
 </tbody>
@@ -156,12 +156,12 @@ These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](order-win8-microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideorder.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideorder.md)</p></td>
 <td><p>Specifies a unique id for a set of regions. In the specified set of regions, Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
 <td><p>Changed the maximum value of unique IDs for the regional override from 19 to 199.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](systemdefaultbackgroundcolor-win8-microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
 <td><p>Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.</p></td>
 <td><p>Added new color scheme for Windows 8.1.</p></td>
 </tr>
@@ -255,7 +255,7 @@ These settings in the Microsoft-Windows-IE-InternetExplorer component are deprec
 <td><p>Internet Explorer 9 through Internet Explorer 11 do not include an IEAK-based sign-up process.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-IE-InternetExplorer\[PreApprovedAddons](preapprovedaddons-win7-microsoft-windows-ie-internetexplorerpreapprovedaddons.md)</p></td>
+<td><p>Microsoft-Windows-IE-InternetExplorer\[PreApprovedAddons](microsoft-windows-ie-internetexplorerpreapprovedaddons.md)</p></td>
 <td><p>Add-ons can still be installed but they will be disabled, by default. Users will be able to choose the add-ons to enable.</p></td>
 </tr>
 <tr class="odd">
@@ -332,7 +332,7 @@ These settings in the Microsoft-Windows-IE-InternetExplorer component are remove
 </tr>
 <tr class="even">
 <td><p>Microsoft-Windows-IE-InternetExplorer\IEWelcomeMsg</p></td>
-<td><p>To skip the First Run wizard and the welcome page when Internet Explorer starts for the first time, use the [DisableFirstRunWizard](disablefirstrunwizard-win7-microsoft-windows-ie-internetexplorerdisablefirstrunwizard.md) settings.</p></td>
+<td><p>To skip the First Run wizard and the welcome page when Internet Explorer starts for the first time, use the [DisableFirstRunWizard](microsoft-windows-ie-internetexplorerdisablefirstrunwizard.md) settings.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft-Windows-IE-InternetExplorer\PrintBackground</p></td>

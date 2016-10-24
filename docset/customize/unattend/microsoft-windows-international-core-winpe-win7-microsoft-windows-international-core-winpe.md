@@ -27,31 +27,31 @@ The settings in this component can be applied only in the windowsPE configuratio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InputLocale](inputlocale-win7-microsoft-windows-international-core-winpeinputlocale.md)</p></td>
+<td><p>[InputLocale](microsoft-windows-international-core-winpeinputlocale.md)</p></td>
 <td><p>Specifies the system input locale and the keyboard layout.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LayeredDriver](layereddriver-win7-microsoft-windows-international-core-winpelayereddriver.md)</p></td>
+<td><p>[LayeredDriver](microsoft-windows-international-core-winpelayereddriver.md)</p></td>
 <td><p>Specifies the keyboard driver to use for Japanese or Korean keyboards.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SetupUILanguage](setupuilanguage-win7-microsoft-windows-international-core-winpesetupuilanguage.md)</p></td>
+<td><p>[SetupUILanguage](microsoft-windows-international-core-winpesetupuilanguage.md)</p></td>
 <td><p>Specifies the default language to use during Windows Setup or Windows Deployment Services.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SystemLocale](systemlocale-win7-microsoft-windows-international-core-winpesystemlocale.md)</p></td>
+<td><p>[SystemLocale](microsoft-windows-international-core-winpesystemlocale.md)</p></td>
 <td><p>Specifies the default language for non-Unicode programs.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UILanguage](uilanguage-win7-microsoft-windows-international-core-winpeuilanguage.md)</p></td>
+<td><p>[UILanguage](microsoft-windows-international-core-winpeuilanguage.md)</p></td>
 <td><p>Specifies the default system user interface (UI) language.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UILanguageFallback](uilanguagefallback-win7-microsoft-windows-international-core-winpeuilanguagefallback.md)</p></td>
+<td><p>[UILanguageFallback](microsoft-windows-international-core-winpeuilanguagefallback.md)</p></td>
 <td><p>Specifies the fallback language if the system default UI language is only partially localized.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UserLocale](userlocale-win7-microsoft-windows-international-core-winpeuserlocale.md)</p></td>
+<td><p>[UserLocale](microsoft-windows-international-core-winpeuserlocale.md)</p></td>
 <td><p>Specifies the per-user settings used for formatting dates, times, currency, and numbers.</p></td>
 </tr>
 </tbody>

@@ -25,11 +25,11 @@ The Microsoft-Windows-ErrorReportingCore component specifies settings for error 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DefaultConsent](defaultconsent-win7-microsoft-windows-errorreportingcoredefaultconsent.md)</p></td>
+<td><p>[DefaultConsent](microsoft-windows-errorreportingcoredefaultconsent.md)</p></td>
 <td><p>Specifies in what circumstances the user is asked whether to send an error report.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableWER](disablewer-win7-microsoft-windows-errorreportingcoredisablewer.md)</p></td>
+<td><p>[DisableWER](microsoft-windows-errorreportingcoredisablewer.md)</p></td>
 <td><p>Enables or disables error reporting.</p></td>
 </tr>
 </tbody>

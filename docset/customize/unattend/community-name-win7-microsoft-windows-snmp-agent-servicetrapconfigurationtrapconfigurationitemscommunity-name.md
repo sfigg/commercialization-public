@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](trapconfiguration-win7-microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](trapconfigurationitems-win7-microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Community\_Name**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Community\_Name**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[TrapConfigurationItems](trapconfigurationitems-win7-microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md)
+[TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md)
 
  
 
