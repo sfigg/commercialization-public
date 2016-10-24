@@ -20,7 +20,7 @@ The CM\_ProxyEntries configuration service provider is used to configure proxy c
 
  
 
-The following diagram shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following diagram shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
 
 ![cm\-proxyentries csp (cp)](images/provisioning-csp-cm-proxyentries-cp.png)
 
