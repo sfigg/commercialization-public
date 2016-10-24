@@ -12,7 +12,7 @@ title: Windows Setup Automation Overview
 
 ### What is a setupconfig file?
 
-Setupconfig is a configuration file that is used to pass a set of flags or parameters to Windows setup.exe. Use this file as an alternative to passing parameters to Windows setup on a command line. This functionality is available in Windows 10, version 1607 and later.
+Setupconfig is a configuration file that is used to pass a set of flags or parameters to Windows setup.exe. Use this file as an alternative to passing parameters to Windows setup on a command line. This functionality is available in Windows 10, version 1511 and later.
 
 IT pros can use the setupconfig file to add parameters to Windows Setup from Windows Update and Windows Server Update Services.
 
