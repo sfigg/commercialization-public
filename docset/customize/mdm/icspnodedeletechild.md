@@ -20,7 +20,7 @@ HRESULT DeleteChild([in] IConfigManager2URI* puriChildToDelete);
 ## Parameters
 
 <a href="" id="purichildtodelete"></a>*puriChildToDelete*  
-&nbsp;&nbsp;&nbsp;&nbsp;The name of the child node to delete.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The name of the child node to delete.
 
 ## Return Values
 

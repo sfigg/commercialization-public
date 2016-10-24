@@ -20,7 +20,7 @@ HRESULT DeleteProperty([in] REFGUID guidProperty);
 ## Parameters
 
 <a href="" id="guidproperty"></a>*guidProperty*  
-&nbsp;&nbsp;&nbsp;&nbsp;The GUID of the property to delete.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The GUID of the property to delete.
 
 ## Return Value
 

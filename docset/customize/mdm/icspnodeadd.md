@@ -48,7 +48,7 @@ HRESULT Add([in] IConfigManager2URI* pChildName,
 
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new child node.
-<table style="margin-left:24px"> 
+<table style="margin-left:26px"> 
 <colgroup>
 <col width="33%" />
 <col width="33%" />

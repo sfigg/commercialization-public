@@ -30,7 +30,7 @@ HRESULT Copy([in] IConfigManager2URI* puriDestination,
 <a href="" id="pgrfnodeoptions"></a>*pgrfNodeOptions*  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Features supported on the new node.
 
-<table style="margin-left:25px">
+<table style="margin-left:26px">
 <colgroup>
 <col width="33%" />
 <col width="33%" />

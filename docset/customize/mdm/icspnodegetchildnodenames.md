@@ -9,11 +9,9 @@ ms.assetid: dc057f2b-282b-49ac-91c4-bb83bd3ca4dc
 
 # ICSPNode::GetChildNodeNames
 
-
 This method returns the list of child nodes for a configuration service provider node.
 
 ## Syntax
-
 
 ``` syntax
 HRESULT GetChildNodeNames([out] ULONG* pulCount,
@@ -22,38 +20,31 @@ HRESULT GetChildNodeNames([out] ULONG* pulCount,
 
 ## Parameters
 
-
 <a href="" id="pulcount"></a>*pulCount*  
-The number of child nodes to return.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The number of child nodes to return.
 
 <a href="" id="pbstrnodenames"></a>*pbstrNodeNames*  
-The array of child node names. The returned array must be allocated with `CoTaskMemAlloc`. Each element of the array must be a valid, non-NULL `BSTR`, allocated by `SysAllocString` or `SysAllocStringLen`. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The array of child node names. The returned array must be allocated with `CoTaskMemAlloc`. Each element of the array must be a valid, non-NULL `BSTR`, allocated by `SysAllocString` or `SysAllocStringLen`. The names returned must not be encoded in any way, including URI-encoding, for canonicalization reasons.
 
 ## Return Value
-
 
 A value of S\_OK indicates that a node was successfully found. CFGMGR\_E\_COMMANDNOTALLOWED indicates that this was called on a leaf node (no children will be returned).
 
 ## Remarks
 
-
 For externally–transactioned nodes, no additional methods are required for successful rollback.
 
 ## Requirements
-
 
 **Header:** None
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 
