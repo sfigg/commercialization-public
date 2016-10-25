@@ -3,16 +3,16 @@ author: KPacquer
 Description: 'Add device drivers'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1c: Add device drivers'
+title: 'Lab 3: Add device drivers'
 ---
 
-# Lab 1c: Add device drivers 
+# Lab 3: Add device drivers 
 
 Add device drivers to your images to support your hardware. Some have different installation procedures:
 
 -  **.inf-style drivers**: Many drivers include an information file (with an .inf extension) to help install the driver. These can be installed using tools described in this topic.    
--  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. We'll show you how to add those in [Lab 1j: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
--  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image (as shown earlier in [Lab 1a: Install Windows PE](install-windows-pe-sxs.md)), and in the Windows recovery image. We'll show you how to update the recovery image later in [Lab 1i: Update the recovery image](update-the-recovery-image.md).
+-  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. We'll show you how to add those in [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
+-  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image (as shown earlier in [Lab 1: Install Windows PE](install-windows-pe-sxs.md)), and in the Windows recovery image. We'll show you how to update the recovery image later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Prepare_and_mount_the_image"></span>Prepare and mount the image
 To make the changes to a Windows image, you'll mount the image contents into a temporary folder, and use tools like DISM to make the changes. Unmount the images to save the changes, and use your deployment scripts to test the images. 
@@ -103,7 +103,7 @@ These are just examples - you don't have to add all of these.
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 5: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -144,4 +144,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     The operation completed successfully.
     ```
 
-Next step: [Lab 1d: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+Next step: [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)

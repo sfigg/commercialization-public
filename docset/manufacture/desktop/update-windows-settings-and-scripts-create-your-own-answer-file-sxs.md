@@ -1,12 +1,12 @@
 ---
 author: Justinha
-Description: 'Lab 1g: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
+Description: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1g: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
+title: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ---
 
-# <span id="Add_settings"></span>Lab 1g: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)
+# <span id="Add_settings"></span>Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
@@ -120,7 +120,7 @@ More common settings:
 
 **Step 6: Mount the images**
 
-Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -157,7 +157,7 @@ Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 9: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -178,5 +178,5 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
--  [Lab 1h: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+-   [Lab 8: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 

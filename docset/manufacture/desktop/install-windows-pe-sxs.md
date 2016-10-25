@@ -1,19 +1,19 @@
 ---
-author: Justinha
+author: KPacquer
 Description: Install Windows PE
 ms.assetid: e6e571df-8b4f-43f8-9a8c-cb5f25969a5d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Install Windows PE
 ---
 
-# Lab 1a: Install Windows PE
+# Lab 1: Install Windows PE
 
 
 Windows Preinstallation Environment (WinPE) is a small, command-line based operating system. You can use it to capture, update, and optimize Windows images, which you'll do in later sections. In this section, you'll prepare a basic WinPE image on a bootable USB flash drive and try it out.
 
 The Windows PE USB must be at least 512MB and at most 32GB. It should not be a Windows-to-Go key or a key marked as a non-removable drive.
 
-**Prepare the WinPE files**
+## <span id="Prepare_the_WinPE_files"></span>Prepare the WinPE files
 
 1.  On your technician PC, start the **Deployment and Imaging Tools Environment**  as an administrator:
     -  Click **Start**, type **Deployment and Imaging Tools Environment**. Right-click **Deployment and Imaging Tools Environment** and select **Run as administrator**.
@@ -32,7 +32,7 @@ The Windows PE USB must be at least 512MB and at most 32GB. It should not be a W
 
    **Troubleshooting**: If this doesn't work, make sure you're in the Deployment and Imaging Tools Environment, and not the standard command prompt. 
 	
-**Add to WinPE (Usually not needed)**
+## <span id="Add_to_WinPE"></span>Add to WinPE (Usually not needed)
 
 Common scenarios:
 
@@ -40,7 +40,7 @@ Common scenarios:
 
 * **Add PowerShell scripting support**. To learn more, see [WinPE: Adding Windows PowerShell support to Windows PE](winpe-adding-powershell-support-to-windows-pe.md). PowerShell scripts are not included in this lab.
 
-Note, when you add more packages to WinPE, it impedes WinPE performance and boot time. Only add additional packages when necessary.  
+Note, when you add more packages to WinPE, it slows WinPE performance and boot time. Only add additional packages when necessary.  
 
 For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](desktop/winpe-optimize.md) to help reduce the boot time.
 
@@ -62,7 +62,7 @@ For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): Af
     Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
     ```
 
-**Create a bootable drive**
+## <span id="Create_a_bootable_drive"></span>Create a bootable drive
 
 1.  Plug in a USB key that you don't mind formatting. Note the drive letter it uses, for example, D.
 
@@ -84,7 +84,7 @@ For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): Af
 
 3.  In File Explorer, right-click the drive and select **Eject**.
 
-**Try it out**
+## <span id="Try_it_out"></span>Try it out
 
 1.  Connect the WinPE USB drive to your reference device.
 
@@ -97,5 +97,5 @@ For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): Af
 
 Leave this PC booted to Windows PE for now. 
 
-Next step: [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+Next step: [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  

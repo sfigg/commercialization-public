@@ -1,12 +1,12 @@
 ---
 author: kpacquer
-Description: 'Lab 1g: Make changes from Windows (audit mode)'
+Description: 'Lab 8: Make changes from Windows (audit mode)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1h: Make changes from Windows (audit mode)'
+title: 'Lab 8: Make changes from Windows (audit mode)'
 ---
 
-# Lab 1h: Make changes from Windows (audit mode)
+# Lab 8: Make changes from Windows (audit mode)
 
 You can use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts.  
 
@@ -134,7 +134,7 @@ This step is required when you're capturing images to apply to other PCs.
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 6: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -154,4 +154,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 2.  See that the changes you made in audit mode are there.
 
 
-Next steps: [Lab 1i: Update the recovery image](update-the-recovery-image.md)
+Next steps: [Lab 9: Update the recovery image](update-the-recovery-image.md)

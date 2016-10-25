@@ -1,25 +1,25 @@
 ---
 author: KPacquer
-Description: 'Lab 1e: Add languages'
+Description: 'Lab 5: Add languages'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1e: Add languages'
+title: 'Lab 5: Add languages'
 ---
 
-# <span id="Add_languages"></span>Lab 1e: Add languages
+# <span id="Add_languages"></span>Lab 5: Add languages
 
 **Notes** 
 
 *    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
 
-*    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 1f: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+*    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
 
-*    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 1i: Update the recovery image](update-the-recovery-image.md).
+*    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Mount_the_image"></span>Mount the image
 
 **Step 1: Mount the image**
 
-Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -213,7 +213,7 @@ The following table shows the types of language packages and components availabl
 
 **Step 5: Apply the image to a new PC**
 
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -241,4 +241,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     State : Installed
     ```
 	
-Next step: [Lab 1f: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+Next step: [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)

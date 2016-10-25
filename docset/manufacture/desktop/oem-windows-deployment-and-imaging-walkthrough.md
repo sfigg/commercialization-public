@@ -24,8 +24,8 @@ Let's get started!
 
 *  [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
 *  [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
-*  [Lab 1a: Install Windows PE](install-windows-pe-sxs.md)
-*  [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+*  [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
+*  [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
 **Customize the Window image**
 
@@ -36,19 +36,19 @@ In these labs, you'll modify the Windows image (install.wim). While you can perf
 To make the changes, you'll mount the image contents into a temporary folder, and use tools like DISM to make the changes. Unmount the images and redeploy.
    ![image: Mounting an image, making changes, and unmounting the image](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-*  [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
-*  [Lab 1d: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-*  [Lab 1e: Add languages](add-drivers-langs-universal-apps-sxs.md)
-*  [Lab 1f: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
-*  [Lab 1g: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1h: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+*  [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+*  [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+*  [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
+*  [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+*  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+*  [Lab 8: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
 **Customize the recovery image**
 
-*  [Lab 1i: Update the recovery image](update-the-recovery-image.md)
-*  [Lab 1j: Shrink your image size](shrink-your-image-size.md)
+*  [Lab 9: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 10: Shrink your image size](shrink-your-image-size.md)
 
 **Deploy final images**
 
-*  [Lab 1k: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+*  [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 

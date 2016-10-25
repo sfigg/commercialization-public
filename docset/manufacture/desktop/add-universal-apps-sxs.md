@@ -1,16 +1,16 @@
 ---
 author: KPacquer
-Description: 'Lab 1f: Add universal Windows apps, start tiles, and taskbar pins'
+Description: 'Lab 6: Add universal Windows apps, start tiles, and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1f: Add universal Windows apps, start tiles, and taskbar pins'
+title: 'Lab 6: Add universal Windows apps, start tiles, and taskbar pins'
 ---
 
-# <span id="Add_apps"></span>Lab 1f: Add universal Windows apps, start tiles, and taskbar pins
+# <span id="Add_apps"></span>Lab 6: Add universal Windows apps, start tiles, and taskbar pins
 
 Add apps to your images to support different customer needs. Some have different installation procedures:
 
 -  **Windows universal platform apps (UWP apps)**: These can be added or re-installed using tools described in this topic.    
--  **Windows desktop applications**: We'll show you how to add those in [Lab 1j: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
+-  **Windows desktop applications**: We'll show you how to add those in [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
 
 **Notes** 
 
@@ -22,7 +22,7 @@ Add apps to your images to support different customer needs. Some have different
 
 **Step 1: Mount the image**
 
-Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -91,7 +91,7 @@ You can define separate layouts for your default Start tiles and taskbar bins fo
 
          -  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\ 
 
-     You'll add the desktop applications in a later section: [Lab 1f: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).    
+     You'll add the desktop applications in a later section: [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).    
 
 2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
 
@@ -128,7 +128,7 @@ You can define separate layouts for your default Start tiles and taskbar bins fo
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 6: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -148,4 +148,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
 3.  Check the Start Menu and taskbar and make sure the apps you selected are pinned correctly.
 	
-Next step: [Lab 1g: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)]
+Next step: [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)]

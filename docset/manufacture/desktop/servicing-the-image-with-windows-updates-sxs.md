@@ -3,10 +3,10 @@ author: KPacquer
 Description: 'Add updates, and upgrade the edition.'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1d: Add updates and upgrade the edition'
+title: 'Lab 4: Add updates and upgrade the edition'
 ---
 
-# Lab 1d: Add updates and upgrade the edition
+# Lab 4: Add updates and upgrade the edition
 
 For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
 
@@ -14,17 +14,17 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 * Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
 
--  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 1i: Update the recovery image](update-the-recovery-image.md).
+-  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-Note: To add drivers that include an installation package, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
+Note: To add drivers that include an installation package, see [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 
 ## <span id="Mount_the_image"></span>Mount the image
 
 **Step 1: Mount the image**
 
-Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -84,7 +84,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 
 **Step 5: Apply the image to a new PC**
 
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
@@ -129,4 +129,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
     The operation completed successfully.
     ```
 
-Next step: [Lab 1e: Add languages](add-drivers-langs-universal-apps-sxs.md)
+Next step: [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)

@@ -1,10 +1,10 @@
 ---
 author: KPacquer
-Description: 'Lab 1i: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages'
+Description: 'Lab 9: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1i: Update the recovery image'
+title: 'Lab 9: Update the recovery image'
 ---
-# Lab 1i: Update the recovery image
+# Lab 9: Update the recovery image
 
 If the system can't boot to the Windows image, it will fail over to the Windows Recovery Environment (WinRE). WinRE can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (WinPE), and to make it work for your customers, you can add drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. 
 
@@ -13,9 +13,9 @@ The WinRE image is included inside the Windows 10 and Windows Server 2016 imag
    ![image: Mount the Windows image, then mount the recovery image inside it. Make changes, then unmount the recovery image, and finally the Windows image](images/customize-recovery-image.jpg)
 
 You should update your recovery image to ensure a consistent recovery experience whenever you:
-* Add boot-critical .inf-style drivers, such as the graphics and storage drivers for [Lab 1a: Install Windows PE](install-windows-pe-sxs.md).
-* Add major updates to Windows, like general distribution releases ([Lab 1d: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)).   
-* Add new languages, like you did in [Lab 1e: Add languages](add-drivers-langs-universal-apps-sxs.md).  (This isn’t always possible, as not all languages have Windows RE equivalents.)
+* Add boot-critical .inf-style drivers, such as the graphics and storage drivers for [Lab 1: Install Windows PE](install-windows-pe-sxs.md).
+* Add major updates to Windows, like general distribution releases ([Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)).   
+* Add new languages, like you did in [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md).  (This isn’t always possible, as not all languages have Windows RE equivalents.)
 
  **Note**  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
 
@@ -23,7 +23,7 @@ You should update your recovery image to ensure a consistent recovery experience
 
 **Step 1: Mount the Windows image**
 
-Use the steps from [Lab 1c: Add device drivers (.inf-style)](add-device-drivers.md) to mount the Windows image. The short version:
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the Windows image. The short version:
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
@@ -203,7 +203,7 @@ If you've optimized the image, you'll need to export the image in order to see a
 ## <span id="Try_it_out"></span>Try it out
 
 **Step 8: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 
@@ -232,4 +232,4 @@ Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a
 
     If languages have been successfully added, you'll either see the new language (for a single language image) or be prompted for your language (for a multi-language image). 
 	
-Next step: [Lab 1j: Shrink your image size](shrink-your-image-size.md)
+Next step: [Lab 10: Shrink your image size](shrink-your-image-size.md)
