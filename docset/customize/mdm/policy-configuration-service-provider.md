@@ -31,12 +31,12 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/*AreaName***  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/***AreaName***  
 The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/*AreaName/PolicyName***  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/***AreaName/PolicyName***  
 Specifies the name/value pair used in the policy.
 
 The following list shows some tips to help you when configuring policies:
@@ -44,7 +44,7 @@ The following list shows some tips to help you when configuring policies:
 -   Separate multistring values by the Unicode &\#xF000; in the XML file.
 -   End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
 
-    **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
+    > **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
      
 
@@ -57,7 +57,7 @@ Groups the evaluated policies from all providers that can be configured.
 
 Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/*AreaName***  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/****_AreaName_**  
 The area group that can be configured by a single technology independent of the providers.
 
 Supported operation is Get.
@@ -78,8856 +78,5421 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 ## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
 
 
-**Important**  When you see the right columns get cut-off, go to the bottom of the table and you will see a scroll bar.
+> **Important**  When you see the right columns get cut-off, go to the bottom of the table and you will see a scroll bar.
 
  
-
-Area Name / Policy Name
-Supported in Home
-Supported in Pro
-Supported in Enterprise
-Supported in Education
-Supported in Mobile
-Supported in Mobile Enterprise
-Supported in IoT Core
-Can be set using Exchange Active Sync (EAS)
-[AboveLock/AllowActionCenterNotifications](#abovelock-allowactioncenternotifications)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[AboveLock/AllowCortanaAboveLock](#abovelock-allowcortanaabovelock)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[AboveLock/AllowToasts](#abovelock-allowtoasts)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Accounts/AllowAddingNonMicrosoftAccountsManually](#accounts-allowaddingnonmicrosoftaccountsmanually)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Accounts/DomainNamesForEmailSync](#accounts-domainnamesforemailsync)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowGameDVR](#applicationmanagement-allowgamedvr)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowSharedUserAppData](#applicationmanagement-allowshareduserappdata)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/AllowStore](#applicationmanagement-allowstore)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/ApplicationRestrictions](#applicationmanagement-applicationrestrictions)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/DisableStoreOriginatedApps](#applicationmanagement-disablestoreoriginatedapps)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/RequirePrivateStoreOnly](#applicationmanagement-requireprivatestoreonly)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/RestrictAppDataToSystemVolume](#applicationmanagement-restrictappdatatosystemvolume)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[ApplicationManagement/RestrictAppToSystemVolume](#applicationmanagement-restrictapptosystemvolume)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Authentication/AllowEAPCertSSO](#authentication-alloweapcertsso)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Authentication/AllowSecondaryAuthenticationDevice](#authentication-allowsecondaryauthenticationdevice)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bitlocker/EncryptionMethod](#bitlocker-encryptionmethod)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowAutofill](#browser-allowautofill)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowBrowser](#browser-allowbrowser)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Browser/AllowCookies](#browser-allowcookies)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-[Browser/AllowDeveloperTools](#browser-allowdevelopertools)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowDoNotTrack](#browser-allowdonottrack)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowExtensions](#browser-allowextensions)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowInPrivate](#browser-allowinprivate)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowPopups](#browser-allowpopups)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/AllowSmartScreen](#browser-allowsmartscreen)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/FirstRunURL](#browser-firstrunurl)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/Homepages](#browser-homepages)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/PreventAccessToAboutFlagsInMicrosoftEdge](#browser-preventaccesstoaboutflagsinmicrosoftedge)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/PreventUsingLocalHostIPAddressForWebRTC](#browser-preventusinglocalhostipaddressforwebrtc)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Browser/ShowMessageWhenOpeningSitesInInternetExplorer](#browser-showmessagewhenopeningsitesininternetexplorer)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Camera/AllowCamera](#camera-allowcamera)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Connectivity/AllowCellularData](#connectivity-allowcellulardata)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Connectivity/AllowNFC](#connectivity-allownfc)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DataProtection/LegacySelectiveWipeID](#dataprotection-legacyselectivewipeid)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowArchiveScanning](#defender-allowarchivescanning)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowCloudProtection](#defender-allowcloudprotection)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowEmailScanning](#defender-allowemailscanning)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowIOAVProtection](#defender-allowioavprotection)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowScriptScanning](#defender-allowscriptscanning)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/AVGCPULoadFactor](#defender-avgcpuloadfactor)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ExcludedExtensions](#defender-excludedextensions)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ExcludedPaths](#defender-excludedpaths)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ExcludedProcesses](#defender-excludedprocesses)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/PUAProtection](#defender-puaprotection)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/RealTimeScanDirection](#defender-realtimescandirection)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ScanParameter](#defender-scanparameter)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ScheduleScanDay](#defender-schedulescanday)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ScheduleScanTime](#defender-schedulescantime)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOGroupID](#deliveryoptimization-dogroupid)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](#devicelock-allowscreentimeoutwhilelockeduserconfig)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/EnforceLockScreenAndLogonImage](#devicelock-enforcelockscreenandlogonimage)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeviceLock/EnforceLockScreenProvider](#devicelock-enforcelockscreenprovider)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[DeviceLock/ScreenTimeoutWhileLocked](#devicelock-screentimeoutwhilelocked)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Experience/AllowCopyPaste](#experience-allowcopypaste)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowCortana](#experience-allowcortana)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowDeviceDiscovery](#experience-allowdevicediscovery)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowScreenCapture](#experience-allowscreencapture)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowSIMErrorDialogPromptWhenNoSIM](#experience-allowsimerrordialogpromptwhennosim)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowSyncMySettings](#experience-allowsyncmysettings)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowTaskSwitcher](#experience-allowtaskswitcher)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowThirdPartySuggestionsInWindowsSpotlight](#experience-allowthirdpartysuggestionsinwindowsspotlight)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowVoiceRecording](#experience-allowvoicerecording)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowWindowsConsumerFeatures](#experience-allowwindowsconsumerfeatures)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowWindowsSpotlight](#experience-allowwindowsspotlight)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/AllowWindowsTips](#experience-allowwindowstips)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/ConfigureWindowsSpotlightOnLockScreen](#experience-configurewindowsspotlightonlockscreen)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Experience/DoNotShowFeedbackNotifications](#experience-donotshowfeedbacknotifications)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Licensing/AllowWindowsEntitlementReactivation](#licensing-allowwindowsentitlementreactivation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Licensing/DisallowKMSClientOnlineAVSValidation](#licensing-disallowkmsclientonlineavsvalidation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[LockDown/AllowEdgeSwipe](#lockdown-allowedgeswipe)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Maps/EnableOfflineMapsAutoUpdate](#maps-enableofflinemapsautoupdate)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Maps/AllowOfflineMapsDownloadOverMeteredConnection](#maps-allowofflinemapsdownloadovermeteredconnection)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Messaging/AllowMessageSync](#messaging-allowmessagesync)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseCloudResources](#networkisolation-enterprisecloudresources)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseInternalProxyServers](#networkisolation-enterpriseinternalproxyservers)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseIPRange](#networkisolation-enterpriseiprange)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseIPRangesAreAuthoritative](#networkisolation-enterpriseiprangesareauthoritative)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseNetworkDomainNames](#networkisolation-enterprisenetworkdomainnames)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseProxyServers](#networkisolation-enterpriseproxyservers)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/EnterpriseProxyServersAreAuthoritative](#networkisolation-enterpriseproxyserversareauthoritative)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[NetworkIsolation/NeutralResources](#networkisolation-neutralresources)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Notifications/DisallowNotificationMirroring](#notifications-disallownotificationmirroring)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts](#privacy-allowautoacceptpairingandprivacyconsentprompts)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/DisableAdvertisingId](#privacy-disableadvertisingid)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessAccountInfo\_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessAccountInfo\_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessAccountInfo\_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCalendar](#privacy-letappsaccesscalendar)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCalendar\_ForceAllowTheseApps](#privacy-letappsaccesscalendar-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCalendar\_ForceDenyTheseApps](#privacy-letappsaccesscalendar-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCalendar\_UserInControlOfTheseApps](#privacy-letappsaccesscalendar-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCallHistory](#privacy-letappsaccesscallhistory)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCallHistory\_ForceAllowTheseApps](#privacy-letappsaccesscallhistory-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCallHistory\_ForceDenyTheseApps](#privacy-letappsaccesscallhistory-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCallHistory\_UserInControlOfTheseApps](#privacy-letappsaccesscallhistory-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCamera\_ForceAllowTheseApps](#privacy-letappsaccesscamera-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCamera\_ForceDenyTheseApps](#privacy-letappsaccesscamera-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessCamera\_UserInControlOfTheseApps](#privacy-letappsaccesscamera-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessContacts](#privacy-letappsaccesscontacts)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessContacts\_ForceAllowTheseApps](#privacy-letappsaccesscontacts-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessContacts\_ForceDenyTheseApps](#privacy-letappsaccesscontacts-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessContacts\_UserInControlOfTheseApps](#privacy-letappsaccesscontacts-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessEmail](#privacy-letappsaccessemail)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessEmail\_ForceAllowTheseApps](#privacy-letappsaccessemail-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessEmail\_ForceDenyTheseApps](#privacy-letappsaccessemail-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessEmail\_UserInControlOfTheseApps](#privacy-letappsaccessemail-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessLocation\_ForceAllowTheseApps](#privacy-letappsaccesslocation-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessLocation\_ForceDenyTheseApps](#privacy-letappsaccesslocation-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessLocation\_UserInControlOfTheseApps](#privacy-letappsaccesslocation-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMessaging](#privacy-letappsaccessmessaging)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMessaging\_ForceAllowTheseApps](#privacy-letappsaccessmessaging-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMessaging\_ForceDenyTheseApps](#privacy-letappsaccessmessaging-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMessaging\_UserInControlOfTheseApps](#privacy-letappsaccessmessaging-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMicrophone\_ForceAllowTheseApps](#privacy-letappsaccessmicrophone-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMicrophone\_ForceDenyTheseApps](#privacy-letappsaccessmicrophone-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMicrophone\_UserInControlOfTheseApps](#privacy-letappsaccessmicrophone-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMotion](#privacy-letappsaccessmotion)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMotion\_ForceAllowTheseApps](#privacy-letappsaccessmotion-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMotion\_ForceDenyTheseApps](#privacy-letappsaccessmotion-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessMotion\_UserInControlOfTheseApps](#privacy-letappsaccessmotion-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessNotifications](#privacy-letappsaccessnotifications)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessNotifications\_ForceAllowTheseApps](#privacy-letappsaccessnotifications-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessNotifications\_ForceDenyTheseApps](#privacy-letappsaccessnotifications-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessNotifications\_UserInControlOfTheseApps](#privacy-letappsaccessnotifications-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessPhone](#privacy-letappsaccessphone)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-![cross mark](images/crossmark.png)
-
-[Privacy/LetAppsAccessPhone\_ForceAllowTheseApps](#privacy-letappsaccessphone-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessPhone\_ForceDenyTheseApps](#privacy-letappsaccessphone-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessPhone\_UserInControlOfTheseApps](#privacy-letappsaccessphone-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessRadios](#privacy-letappsaccessradios)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessRadios\_ForceAllowTheseApps](#privacy-letappsaccessradios-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessRadios\_ForceDenyTheseApps](#privacy-letappsaccessradios-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessRadios\_UserInControlOfTheseApps](#privacy-letappsaccessradios-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessTrustedDevices](#privacy-letappsaccesstrusteddevices)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessTrustedDevices\_ForceAllowTheseApps](#privacy-letappsaccesstrusteddevices-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessTrustedDevices\_ForceDenyTheseApps](#privacy-letappsaccesstrusteddevices-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsAccessTrustedDevices\_UserInControlOfTheseApps](#privacy-letappsaccesstrusteddevices-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsSyncWithDevices](#privacy-letappssyncwithdevices)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsSyncWithDevices\_ForceAllowTheseApps](#privacy-letappssyncwithdevices-forceallowtheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsSyncWithDevices\_ForceDenyTheseApps](#privacy-letappssyncwithdevices-forcedenytheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Privacy/LetAppsSyncWithDevices\_UserInControlOfTheseApps](#privacy-letappssyncwithdevices-userincontroloftheseapps)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/AllowIndexingEncryptedStoresOrItems](#search-allowindexingencryptedstoresoritems)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Search/AllowUsingDiacritics](#search-allowusingdiacritics)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/AlwaysUseAutoLangDetection](#search-alwaysuseautolangdetection)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/DisableBackoff](#search-disablebackoff)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/DisableRemovableDriveIndexing](#search-disableremovabledriveindexing)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/PreventIndexingLowDiskSpaceMB](#search-preventindexinglowdiskspacemb)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/PreventRemoteQueries](#search-preventremotequeries)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Search/SafeSearchPermissions](#search-safesearchpermissions)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices](#security-allowautomaticdeviceencryptionforazureadjoineddevices)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/AllowManualRootCertificateInstallation](#security-allowmanualrootcertificateinstallation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/AntiTheftMode](#security-antitheftmode)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](#security-allowautomaticdeviceencryptionforazureadjoineddevices)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)
-![check mark](images/checkmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowAutoPlay](#settings-allowautoplay)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowDataSense](#settings-allowdatasense)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowDateTime](#settings-allowdatetime)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowEditDeviceName](#settings-alloweditdevicename)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![cross mark](images/crossmark.png)
-
-Enterprise
-
-![cross mark](images/crossmark.png)
-
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowLanguage](#settings-allowlanguage)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowPowerSleep](#settings-allowpowersleep)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowRegion](#settings-allowregion)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowSignInOptions](#settings-allowsigninoptions)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowVPN](#settings-allowvpn)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowWorkplace](#settings-allowworkplace)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Settings/AllowYourAccount](#settings-allowyouraccount)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-![check mark](images/checkmark.png)\*
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)\*
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Start/ForceStartSize](#start-forcestartsize)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Start/StartLayout](#start-startlayout)
-![cross mark](images/crossmark.png)
-
-Home
-
-![cross mark](images/crossmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/AllowBuildPreview](#system-allowbuildpreview)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/AllowEmbeddedMode](#system-allowembeddedmode)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-[System/AllowExperimentation](#system-allowexperimentation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/AllowLocation](#system-allowlocation)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/AllowStorageCard](#system-allowstoragecard)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[System/AllowTelemetry](#system-allowtelemetry)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/AllowUserToResetPhone](#system-allowusertoresetphone)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[System/TelemetryProxy](#system-telemetryproxy)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[TextInput/AllowIMELogging](#textinput-allowimelogging)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowInputPanel](#textinput-allowinputpanel)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/ActiveHoursEnd](#update-activehoursend)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/ActiveHoursStart](#update-activehoursstart)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/AllowAutoUpdate](#update-allowautoupdate)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/AllowMUUpdateService](#update-allowmuupdateservice)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/AllowUpdateService](#update-allowupdateservice)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/BranchReadinessLevel](#update-branchreadinesslevel)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/DeferUpdatePeriod](#update-deferupdateperiod)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/DeferUpgradePeriod](#update-deferupgradeperiod)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/ExcludeWUDriversInQualityUpdate](#update-excludewudrivers)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/PauseDeferrals](#update-pausedeferrals)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/PauseFeatureUpdates](#update-pausefeatureupdates)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/PauseQualityUpdates](#update-pausequalityupdates)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)\*
-Mobile Enterprise
-
-![check mark](images/checkmark.png)\*
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/RequireUpdateApproval](#update-requireupdateapproval)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/ScheduledInstallDay](#update-scheduledinstallday)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/ScheduledInstallTime](#update-scheduledinstalltime)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[Update/UpdateServiceUrl](#update-updateserviceurl)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WiFi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WiFi/AllowInternetSharing](#wifi-allowinternetsharing)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[WiFi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WiFi/AllowWiFi](#wifi-allowwifi)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![check mark](images/checkmark.png)
-
-EAS
-
-[WiFi/WLANScanMode](#wifi-wlanscanmode)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)
-
-Pro
-
-![check mark](images/checkmark.png)
-
-Enterprise
-
-![check mark](images/checkmark.png)
-
-Education
-
-![check mark](images/checkmark.png)
-
-Mobile
-
-![check mark](images/checkmark.png)
-
-Mobile Enterprise
-
-![check mark](images/checkmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WindowsInkWorkspace/AllowWindowsInkWorkspace](#windowsinkworkspace-allowwindowsinkworkspace)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace](#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WirelessDisplay/AllowProjectionToPC](#wirelessdisplay-allowprojectiontopc)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
-
-[WirelessDisplay/RequirePinForPairing](#wirelessdisplay-requirepinforpairing)
-![cross mark](images/crossmark.png)
-
-Home
-
-![check mark](images/checkmark.png)\*
-Pro
-
-![check mark](images/checkmark.png)\*
-Enterprise
-
-![check mark](images/checkmark.png)\*
-Education
-
-![cross mark](images/crossmark.png)
-
-Mobile
-
-![cross mark](images/crossmark.png)
-
-Mobile Enterprise
-
-![cross mark](images/crossmark.png)
-
-IoT Core
-
-![cross mark](images/crossmark.png)
-
-EAS
+<table>
+<tr>
+<th>Area Name / Policy Name</th>
+<th>Supported in Home</th>
+<th>Supported in Pro</th>
+<th>Supported in Enterprise</th>
+<th>Supported in Education</th>
+<th>Supported in Mobile</th>
+<th>Supported in Mobile Enterprise</th>
+<th>Supported in IoT Core</th>
+<th>
+       Can be set using Exchange Active Sync (EAS)</th>
+</tr>
+<tr>
+<td><a href="#AboveLock_AllowActionCenterNotifications">AboveLock/AllowActionCenterNotifications</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#AboveLock_AllowCortanaAboveLock">AboveLock/AllowCortanaAboveLock</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*
+      <p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*
+      <p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*
+      <p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*
+      <p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*
+      <p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#AboveLock_AllowToasts">AboveLock/AllowToasts</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Accounts_AllowAddingNonMicrosoftAccountsManually">Accounts/AllowAddingNonMicrosoftAccountsManually</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Accounts_AllowMicrosoftAccountConnection">Accounts/AllowMicrosoftAccountConnection</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Accounts_DomainNamesForEmailSync">Accounts/DomainNamesForEmailSync</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowAllTrustedApps">ApplicationManagement/AllowAllTrustedApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowAppStoreAutoUpdate">ApplicationManagement/AllowAppStoreAutoUpdate</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowDeveloperUnlock">ApplicationManagement/AllowDeveloperUnlock</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowGameDVR">ApplicationManagement/AllowGameDVR</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowSharedUserAppData">ApplicationManagement/AllowSharedUserAppData</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_AllowStore">ApplicationManagement/AllowStore</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_ApplicationRestrictions">ApplicationManagement/ApplicationRestrictions</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_DisableStoreOriginatedApps">ApplicationManagement/DisableStoreOriginatedApps</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_RequirePrivateStoreOnly">ApplicationManagement/RequirePrivateStoreOnly</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_RestrictAppDataToSystemVolume">ApplicationManagement/RestrictAppDataToSystemVolume</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#ApplicationManagement_RestrictAppToSystemVolume">ApplicationManagement/RestrictAppToSystemVolume</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Authentication_AllowEAPCertSSO">Authentication/AllowEAPCertSSO</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Authentication_AllowFastReconnect">Authentication/AllowFastReconnect</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Authentication_AllowSecondaryAuthenticationDevice">Authentication/AllowSecondaryAuthenticationDevice</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#BitLocker_EncryptionMethod">Bitlocker/EncryptionMethod</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Bluetooth_AllowAdvertising">Bluetooth/AllowAdvertising</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Bluetooth_AllowDiscoverableMode">Bluetooth/AllowDiscoverableMode</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Bluetooth_AllowPrepairing">Bluetooth/AllowPrepairing</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Bluetooth_LocalDeviceName">Bluetooth/LocalDeviceName</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Bluetooth_ServicesAllowedList">Bluetooth/ServicesAllowedList</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowAutofill">Browser/AllowAutofill</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowBrowser">Browser/AllowBrowser</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowCookies">Browser/AllowCookies</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowDeveloperTools">Browser/AllowDeveloperTools</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowDoNotTrack">Browser/AllowDoNotTrack</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowExtensions">Browser/AllowExtensions</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowInPrivate">Browser/AllowInPrivate</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowPasswordManager">Browser/AllowPasswordManager</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowPopups">Browser/AllowPopups</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowSearchSuggestionsinAddressBar">Browser/AllowSearchSuggestionsinAddressBar</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_AllowSmartScreen">Browser/AllowSmartScreen</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_EnterpriseModeSiteList">Browser/EnterpriseModeSiteList</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_FirstRunURL">Browser/FirstRunURL</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_Homepages">Browser/Homepages</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_PreventAccessToAboutFlagsInMicrosoftEdge">Browser/PreventAccessToAboutFlagsInMicrosoftEdge</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_PreventSmartScreenPromptOverride">Browser/PreventSmartScreenPromptOverride</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_PreventSmartScreenPromptOverrideForFiles">Browser/PreventSmartScreenPromptOverrideForFiles</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_PreventUsingLocalHostIPAddressForWebRTC">Browser/PreventUsingLocalHostIPAddressForWebRTC</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_SendIntranetTraffictoInternetExplorer">Browser/SendIntranetTraffictoInternetExplorer</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Browser_ShowMessageWhenOpeningSitesInInternetExplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Camera_AllowCamera">Camera/AllowCamera</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowBluetooth">Connectivity/AllowBluetooth</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowCellularData">Connectivity/AllowCellularData</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowCellularDataRoaming">Connectivity/AllowCellularDataRoaming</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowNFC">Connectivity/AllowNFC</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowUSBConnection">Connectivity/AllowUSBConnection</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowVPNOverCellular">Connectivity/AllowVPNOverCellular</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Connectivity_AllowVPNRoamingOverCellular">Connectivity/AllowVPNRoamingOverCellular</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Cryptography_AllowFipsAlgorithmPolicy">Cryptography/AllowFipsAlgorithmPolicy</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Cryptography_TLSCipherSuites">Cryptography/TLSCipherSuites</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DataProtection_AllowDirectMemoryAccess">DataProtection/AllowDirectMemoryAccess</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DataProtection_LegacySelectiveWipeID">DataProtection/LegacySelectiveWipeID</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowArchiveScanning">Defender/AllowArchiveScanning</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowBehaviorMonitoring">Defender/AllowBehaviorMonitoring</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowCloudProtection">Defender/AllowCloudProtection</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowEmailScanning">Defender/AllowEmailScanning</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowFullScanOnMappedNetworkDrives">Defender/AllowFullScanOnMappedNetworkDrives</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowFullScanRemovableDriveScanning">Defender/AllowFullScanRemovableDriveScanning</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowIntrusionPreventionSystem">Defender/AllowIntrusionPreventionSystem</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowIOAVProtection">Defender/AllowIOAVProtection</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowOnAccessProtection">Defender/AllowOnAccessProtection</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowRealtimeMonitoring">Defender/AllowRealtimeMonitoring</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowScanningNetworkFiles">Defender/AllowScanningNetworkFiles</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowScriptScanning">Defender/AllowScriptScanning</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AllowUserUIAccess">Defender/AllowUserUIAccess</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_AVGCPULoadFactor">Defender/AVGCPULoadFactor</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_DaysToRetainCleanedMalware">Defender/DaysToRetainCleanedMalware</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ExcludedExtensions">Defender/ExcludedExtensions</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ExcludedPaths">Defender/ExcludedPaths</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ExcludedProcesses">Defender/ExcludedProcesses</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_PUAProtection">Defender/PUAProtection</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_RealTimeScanDirection">Defender/RealTimeScanDirection</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ScanParameter">Defender/ScanParameter</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ScheduleQuickScanTime">Defender/ScheduleQuickScanTime</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ScheduleScanDay">Defender/ScheduleScanDay</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ScheduleScanTime">Defender/ScheduleScanTime</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_SignatureUpdateInterval">Defender/SignatureUpdateInterval</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_SubmitSamplesConsent">Defender/SubmitSamplesConsent</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Defender_ThreatSeverityDefaultAction">Defender/ThreatSeverityDefaultAction</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOAbsoluteMaxCacheSize">DeliveryOptimization/DOAbsoluteMaxCacheSize</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DODownloadMode">DeliveryOptimization/DODownloadMode</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOGroupID">DeliveryOptimization/DOGroupID</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMaxCacheAge">DeliveryOptimization/DOMaxCacheAge</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMaxCacheSize">DeliveryOptimization/DOMaxCacheSize</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMaxDownloadBandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMaxUploadBandwidth">DeliveryOptimization/DOMaxUploadBandwidth</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMinBackgroundQoS">DeliveryOptimization/DOMinBackgroundQos</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOModifyCacheDrive">DeliveryOptimization/DOModifyCacheDrive</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOMonthlyUploadDataCap">DeliveryOptimization/DOMonthlyUploadDataCap</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeliveryOptimization_DOPercentageMaxDownloadBandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_AllowIdleReturnWithoutPassword">DeviceLock/AllowIdleReturnWithoutPassword</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig">DeviceLock/AllowScreenTimeoutWhileLockedUserConfig</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_AllowSimpleDevicePassword">DeviceLock/AllowSimpleDevicePassword</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_AlphanumericDevicePasswordRequired">DeviceLock/AlphanumericDevicePasswordRequired</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_DevicePasswordEnabled">DeviceLock/DevicePasswordEnabled</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_DevicePasswordExpiration">DeviceLock/DevicePasswordExpiration</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_DevicePasswordHistory">DeviceLock/DevicePasswordHistory</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_EnforceLockScreenAndLogonImage">DeviceLock/EnforceLockScreenAndLogonImage</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_EnforceLockScreenProvider">DeviceLock/EnforceLockScreenProvider</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_MaxDevicePasswordFailedAttempts">DeviceLock/MaxDevicePasswordFailedAttempts</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_MaxInactivityTimeDeviceLock">DeviceLock/MaxInactivityTimeDeviceLock</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_MinDevicePasswordComplexCharacters">DeviceLock/MinDevicePasswordComplexCharacters</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_ScreenTimeoutWhileLocked">DeviceLock/ScreenTimeoutWhileLocked</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#DeviceLock_MinDevicePasswordLength">DeviceLock/MinDevicePasswordLength</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowCopyPaste">Experience/AllowCopyPaste</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowCortana">Experience/AllowCortana</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowDeviceDiscovery">Experience/AllowDeviceDiscovery</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowManualMDMUnenrollment">Experience/AllowManualMDMUnenrollment</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowScreenCapture">Experience/AllowScreenCapture</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowSIMErrorDialogPromptWhenNoSIM">Experience/AllowSIMErrorDialogPromptWhenNoSIM</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowSyncMySettings">Experience/AllowSyncMySettings</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowTaskSwitcher">Experience/AllowTaskSwitcher</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowThirdPartySuggestionsInWindowsSpotlight">Experience/AllowThirdPartySuggestionsInWindowsSpotlight</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowVoiceRecording">Experience/AllowVoiceRecording</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowWindowsConsumerFeatures">Experience/AllowWindowsConsumerFeatures</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowWindowsSpotlight">Experience/AllowWindowsSpotlight</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_AllowWindowsTips">Experience/AllowWindowsTips</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_ConfigureWindowsSpotlightOnLockScreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Experience_DoNotShowFeedbackNotifications">Experience/DoNotShowFeedbackNotifications</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Licensing_AllowWindowsEntitlementReactivation">Licensing/AllowWindowsEntitlementReactivation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Licensing_DisallowKMSClientOnlineAVSValidation">Licensing/DisallowKMSClientOnlineAVSValidation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#LockDown_AllowEdgeSwipe">LockDown/AllowEdgeSwipe</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Maps_EnableOfflineMapsAutoUpdate">Maps/EnableOfflineMapsAutoUpdate</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Maps_AllowOfflineMapsDownloadOverMeteredConnection">Maps/AllowOfflineMapsDownloadOverMeteredConnection</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Messaging_AllowMessageSync">Messaging/AllowMessageSync</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseCloudResources">NetworkIsolation/EnterpriseCloudResources</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseInternalProxyServers">NetworkIsolation/EnterpriseInternalProxyServers</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseIPRange">NetworkIsolation/EnterpriseIPRange</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseIPRangesAreAuthoritative">NetworkIsolation/EnterpriseIPRangesAreAuthoritative</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseNetworkDomainNames">NetworkIsolation/EnterpriseNetworkDomainNames</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseProxyServers">NetworkIsolation/EnterpriseProxyServers</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_EnterpriseProxyServersAreAuthoritative">NetworkIsolation/EnterpriseProxyServersAreAuthoritative</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#NetworkIsolation_NeutralResources">NetworkIsolation/NeutralResources</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Notifications_DisallowNotificationMirroring">Notifications/DisallowNotificationMirroring</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_AllowAutoAcceptPairingAndPrivacyConsentPrompts">Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_AllowInputPersonalization">Privacy/AllowInputPersonalization</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_DisableAdvertisingId">Privacy/DisableAdvertisingId</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessAccountInfo">Privacy/LetAppsAccessAccountInfo</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessAccountInfo_ForceAllowTheseApps">Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessAccountInfo_ForceDenyTheseApps">Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessAccountInfo_UserInControlOfTheseApps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCalendar">Privacy/LetAppsAccessCalendar</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCalendar_ForceAllowTheseApps">Privacy/LetAppsAccessCalendar_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCalendar_ForceDenyTheseApps">Privacy/LetAppsAccessCalendar_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCalendar_UserInControlOfTheseApps">Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCallHistory">Privacy/LetAppsAccessCallHistory</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCallHistory_ForceAllowTheseApps">Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCallHistory_ForceDenyTheseApps">Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCallHistory_UserInControlOfTheseApps">Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCamera">Privacy/LetAppsAccessCamera</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCamera_ForceAllowTheseApps">Privacy/LetAppsAccessCamera_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCamera_ForceDenyTheseApps">Privacy/LetAppsAccessCamera_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessCamera_UserInControlOfTheseApps">Privacy/LetAppsAccessCamera_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessContacts">Privacy/LetAppsAccessContacts</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessContacts_ForceAllowTheseApps">Privacy/LetAppsAccessContacts_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessContacts_ForceDenyTheseApps">Privacy/LetAppsAccessContacts_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessContacts_UserInControlOfTheseApps">Privacy/LetAppsAccessContacts_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessEmail">Privacy/LetAppsAccessEmail</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessEmail_ForceAllowTheseApps">Privacy/LetAppsAccessEmail_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessEmail_ForceDenyTheseApps">Privacy/LetAppsAccessEmail_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessEmail_UserInControlOfTheseApps">Privacy/LetAppsAccessEmail_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessLocation">Privacy/LetAppsAccessLocation</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessLocation_ForceAllowTheseApps">Privacy/LetAppsAccessLocation_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessLocation_ForceDenyTheseApps">Privacy/LetAppsAccessLocation_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessLocation_UserInControlOfTheseApps">Privacy/LetAppsAccessLocation_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMessaging">Privacy/LetAppsAccessMessaging</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMessaging_ForceAllowTheseApps">Privacy/LetAppsAccessMessaging_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMessaging_ForceDenyTheseApps">Privacy/LetAppsAccessMessaging_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMessaging_UserInControlOfTheseApps">Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMicrophone">Privacy/LetAppsAccessMicrophone</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMicrophone_ForceAllowTheseApps">Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMicrophone_ForceDenyTheseApps">Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMicrophone_UserInControlOfTheseApps">Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMotion">Privacy/LetAppsAccessMotion</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMotion_ForceAllowTheseApps">Privacy/LetAppsAccessMotion_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMotion_ForceDenyTheseApps">Privacy/LetAppsAccessMotion_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessMotion_UserInControlOfTheseApps">Privacy/LetAppsAccessMotion_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessNotifications">Privacy/LetAppsAccessNotifications</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessNotifications_ForceAllowTheseApps">Privacy/LetAppsAccessNotifications_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessNotifications_ForceDenyTheseApps">Privacy/LetAppsAccessNotifications_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessNotifications_UserInControlOfTheseApps">Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessPhone">Privacy/LetAppsAccessPhone</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/></td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessPhone_ForceAllowTheseApps">Privacy/LetAppsAccessPhone_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessPhone_ForceDenyTheseApps">Privacy/LetAppsAccessPhone_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessPhone_UserInControlOfTheseApps">Privacy/LetAppsAccessPhone_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessRadios">Privacy/LetAppsAccessRadios</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessRadios_ForceAllowTheseApps">Privacy/LetAppsAccessRadios_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessRadios_ForceDenyTheseApps">Privacy/LetAppsAccessRadios_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessRadios_UserInControlOfTheseApps">Privacy/LetAppsAccessRadios_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessTrustedDevices">Privacy/LetAppsAccessTrustedDevices</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessTrustedDevices_ForceAllowTheseApps">Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessTrustedDevices_ForceDenyTheseApps">Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsAccessTrustedDevices_UserInControlOfTheseApps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsSyncWithDevices">Privacy/LetAppsSyncWithDevices</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsSyncWithDevices_ForceAllowTheseApps">Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsSyncWithDevices_ForceDenyTheseApps">Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Privacy_LetAppsSyncWithDevices_UserInControlOfTheseApps">Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_AllowIndexingEncryptedStoresOrItems">Search/AllowIndexingEncryptedStoresOrItems</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_AllowSearchToUseLocation">Search/AllowSearchToUseLocation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_AllowUsingDiacritics">Search/AllowUsingDiacritics</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_AlwaysUseAutoLangDetection">Search/AlwaysUseAutoLangDetection</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_DisableBackoff">Search/DisableBackoff</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_DisableRemovableDriveIndexing">Search/DisableRemovableDriveIndexing</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_PreventIndexingLowDiskSpaceMB">Search/PreventIndexingLowDiskSpaceMB</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_PreventRemoteQueries">Search/PreventRemoteQueries</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Search_SafeSearchPermissions">Search/SafeSearchPermissions</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AllowAddProvisioningPackage">Security/AllowAddProvisioningPackage</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AllowAutomaticDeviceEncryptionForAzureADJoinedDevices">Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AllowManualRootCertificateInstallation">Security/AllowManualRootCertificateInstallation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AllowRemoveProvisioningPackage">Security/AllowRemoveProvisioningPackage</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AntiTheftMode">Security/AntiTheftMode</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_AllowAutomaticDeviceEncryptionForAzureADJoinedDevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_RequireDeviceEncryption">Security/RequireDeviceEncryption</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_RequireProvisioningPackageSignature">Security/RequireProvisioningPackageSignature</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Security_RequireRetrieveHealthCertificateOnBoot">Security/RequireRetrieveHealthCertificateOnBoot</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowAutoPlay">Settings/AllowAutoPlay</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowDataSense">Settings/AllowDataSense</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowDateTime">Settings/AllowDateTime</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowEditDeviceName">Settings/AllowEditDeviceName</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowLanguage">Settings/AllowLanguage</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowPowerSleep">Settings/AllowPowerSleep</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowRegion">Settings/AllowRegion</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowSignInOptions">Settings/AllowSignInOptions</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowVPN">Settings/AllowVPN</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowWorkplace">Settings/AllowWorkplace</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Settings_AllowYourAccount">Settings/AllowYourAccount</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Speech_AllowSpeechModelUpdate">Speech/AllowSpeechModelUpdate</a></td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Start_ForceStartSize">Start/ForceStartSize</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Start_StartLayout">Start/StartLayout</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowBuildPreview">System/AllowBuildPreview</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowEmbeddedMode">System/AllowEmbeddedMode</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#System_AllowExperimentation">System/AllowExperimentation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowLocation">System/AllowLocation</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowStorageCard">System/AllowStorageCard</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowTelemetry">System/AllowTelemetry</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_AllowUserToResetPhone">System/AllowUserToResetPhone</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#System_TelemetryProxy">System/TelemetryProxy</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowIMELogging">TextInput/AllowIMELogging</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowIMENetworkAccess">TextInput/AllowIMENetworkAccess</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowInputPanel">TextInput/AllowInputPanel</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowJapaneseIMESurrogatePairCharacters">TextInput/AllowJapaneseIMESurrogatePairCharacters</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowJapaneseIVSCharacters">TextInput/AllowJapaneseIVSCharacters</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowJapaneseNonPublishingStandardGlyph">TextInput/AllowJapaneseNonPublishingStandardGlyph</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowJapaneseUserDictionary">TextInput/AllowJapaneseUserDictionary</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowLanguageFeaturesUninstall">TextInput/AllowLanguageFeaturesUninstall</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_AllowLinguisticDataCollection">TextInput/AllowLinguisticDataCollection</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_ExcludeJapaneseIMEExceptJIS0208">TextInput/ExcludeJapaneseIMEExceptJIS0208</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_ExcludeJapaneseIMEExceptJIS0208andEUDC">TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#TextInput_ExcludeJapaneseIMEExceptShiftJIS">TextInput/ExcludeJapaneseIMEExceptShiftJIS</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_ActiveHoursEnd">Update/ActiveHoursEnd</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_ActiveHoursStart">Update/ActiveHoursStart</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_AllowAutoUpdate">Update/AllowAutoUpdate</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_AllowMUUpdateService">Update/AllowMUUpdateService</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_AllowNonMicrosoftSignedUpdate">Update/AllowNonMicrosoftSignedUpdate</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_AllowUpdateService">Update/AllowUpdateService</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_BranchReadinessLevel">Update/BranchReadinessLevel</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_DeferFeatureUpdatesPeriodInDays">Update/DeferFeatureUpdatesPeriodInDays</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_DeferQualityUpdatesPeriodInDays">Update/DeferQualityUpdatesPeriodInDays</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_DeferUpdatePeriod">Update/DeferUpdatePeriod</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_DeferUpgradePeriod">Update/DeferUpgradePeriod</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_ExcludeWUDrivers">Update/ExcludeWUDriversInQualityUpdate</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_PauseDeferrals">Update/PauseDeferrals</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_PauseFeatureUpdates">Update/PauseFeatureUpdates</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_PauseQualityUpdates">Update/PauseQualityUpdates</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_RequireDeferUpgrade">Update/RequireDeferUpgrade</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_RequireUpdateApproval">Update/RequireUpdateApproval</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_ScheduledInstallDay">Update/ScheduledInstallDay</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_ScheduledInstallTime">Update/ScheduledInstallTime</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#Update_UpdateServiceUrl">Update/UpdateServiceUrl</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WiFi_AllowAutoConnectToWiFiSenseHotspots">WiFi/AllowAutoConnectToWiFiSenseHotspots</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WiFi_AllowInternetSharing">WiFi/AllowInternetSharing</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WiFi_AllowManualWiFiConfiguration">WiFi/AllowManualWiFiConfiguration</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WiFi_AllowWiFi">WiFi/AllowWiFi</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WiFi_WLANScanMode">WiFi/WLANScanMode</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WindowsInkWorkspace_AllowWindowsInkWorkspace">WindowsInkWorkspace/AllowWindowsInkWorkspace</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WindowsInkWorkspace_AllowSuggestedAppsInWindowsInkWorkspace">WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WirelessDisplay_AllowProjectionToPC">WirelessDisplay/AllowProjectionToPC</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td><a href="#WirelessDisplay_RequirePinForPairing">WirelessDisplay/RequirePinForPairing</a></td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Pro</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Enterprise</p>
+</td>
+<td><img src="images/CheckMark.png" alt="check mark"/>*<p>Education</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+</table>
 
  
 
@@ -8974,7 +5539,7 @@ Footnote:
 
 
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -9015,7 +5580,7 @@ The following list shows the supported values:
 
 Most restricted value is 0.
 
-**Note**  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-configuration-service-provider.md).
+> **Note**  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-configuration-service-provider.md).
 
  
 
@@ -9069,7 +5634,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9103,13 +5668,13 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
 
  
 
 An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-configuration-service-provider.md#inbox-apps). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
-**Note**  
+> **Note**  
 When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your list of allowed apps.
 
 Here's additional guidance for the upgrade process:
@@ -9139,7 +5704,7 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 Allows disabling of the retail catalog and only enables the Private store.
 
-**Important**  
+> **Important**  
 This node must be accessed using the following paths:
 
 -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
@@ -9177,13 +5742,13 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
 Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
-**Important**  
+> **Important**  
 This node must be accessed using the following paths:
 
 -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
@@ -9288,7 +5853,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 4.  Verify the setting **Save form entries** is greyed out.
 
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
 
  
 
@@ -9321,7 +5886,7 @@ To verify AllowCookies is set to 0 (not allowed):
 4.  Verify the setting **Cookies** is greyed out.
 
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9431,7 +5996,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9443,7 +6008,7 @@ The following list shows the supported values:
 -   Set to a URL location of the enterprise site list.
 
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -9454,7 +6019,7 @@ The data type is a string.
 The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
 <a href="" id="browser-homepages"></a>**Browser/Homepages**  
-**Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9462,7 +6027,7 @@ Specifies your Home pages for MDM-enrolled devices. Users can change this settin
 
 Starting in Windows 10, version 1607, this policy will be enforced so that the Home pages specified by this policy cannot be changed by the users.
 
-**Note**  Turning this setting off, or not configuring it, sets your default Home page to the web page specified in App settings.
+> **Note**  Turning this setting off, or not configuring it, sets your default Home page to the web page specified in App settings.
 
  
 
@@ -9493,7 +6058,7 @@ The following list shows the supported values:
 -   1 – On.
 
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9505,7 +6070,7 @@ The following list shows the supported values:
 -   1 – The localhost IP address is hidden.
 
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9519,7 +6084,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -9550,7 +6115,7 @@ The following list shows the supported values:
 -   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
 -   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
-    **Note**  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
+    > **Note**  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
 
      
 
@@ -9589,7 +6154,7 @@ To validate on mobile devices, do the following:
 3.  On the Properties page, select **Data roaming options**.
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -9603,7 +6168,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -9660,18 +6225,18 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
-**Important**  This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
+> **Important**  This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
  
 
 Setting used by Windows 8.1 Selective Wipe.
 
-**Note**  This policy is not recommended for use in Windows 10.
+> **Note**  This policy is not recommended for use in Windows 10.
 
  
 
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9683,7 +6248,7 @@ The following list shows the supported values:
 -   1 (default) – Not allowed.
 
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9695,7 +6260,7 @@ The following list shows the supported values:
 -   1 (default) – Not allowed.
 
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9707,7 +6272,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9719,7 +6284,7 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9731,7 +6296,7 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9743,7 +6308,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9755,7 +6320,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9767,7 +6332,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9779,7 +6344,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9791,7 +6356,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9803,7 +6368,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9815,7 +6380,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9827,7 +6392,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AVGCPULoadFactor**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9838,7 +6403,7 @@ Valid values: 0–100
 The default value is 50.
 
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9849,34 +6414,34 @@ Valid values: 0–90
 The default value is 0, which keeps items in quarantine, and does not automatically remove them.
 
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
 
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
-**Important**  The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
+> **Important**  The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
  
 
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9889,13 +6454,13 @@ The following list shows the supported values:
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Controls which sets of files should be monitored.
 
-**Note**  If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
+> **Note**  If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
 
  
 
@@ -9906,7 +6471,7 @@ The following list shows the supported values:
 -   2 – Monitor outgoing files.
 
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9918,13 +6483,13 @@ The following list shows the supported values:
 -   2 – Full scan
 
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Selects the time of day that the Windows Defender quick scan should run.
 
-**Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
  
 
@@ -9935,13 +6500,13 @@ For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, an
 The default value is 120
 
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Selects the day that the Windows Defender scan should run.
 
-**Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
  
 
@@ -9958,13 +6523,13 @@ The following list shows the supported values:
 -   8 – No scheduled scan
 
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
 Selects the time of day that the Windows Defender scan should run.
 
-**Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
  
 
@@ -9975,7 +6540,7 @@ For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, an
 The default value is 120.
 
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -9988,7 +6553,7 @@ A value of 0 means no check for new signatures, a value of 1 means to check ever
 The default value is 8.
 
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -10002,7 +6567,7 @@ The following list shows the supported values:
 -   3 – Send all samples automatically.
 
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -10027,7 +6592,7 @@ The following list shows the supported values for possible actions:
 -   10 – Block
 
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10036,7 +6601,7 @@ Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery
 The default value is 10.
 
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10052,18 +6617,18 @@ The following list shows the supported values:
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupID**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
 This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
 
-**Note**  You must use a GUID as the group ID.
+> **Note**  You must use a GUID as the group ID.
 
  
 
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10072,7 +6637,7 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 The default value is 259200 seconds (3 days).
 
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10081,7 +6646,7 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 The default value is 20.
 
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10090,7 +6655,7 @@ Added in Windows 10, version 1607. Specifies the maximum download bandwidth in 
 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10099,7 +6664,7 @@ Specifies the maximum upload bandwidth in KiloBytes/second that a device will us
 The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10108,7 +6673,7 @@ Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality 
 The default value is 500.
 
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10117,7 +6682,7 @@ Added in Windows 10, version 1607. Specifies the drive that Delivery Optimizati
 By default, %SystemDrive% is used to store the cache.
 
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10128,7 +6693,7 @@ The value 0 (zero) means "unlimited"; No monthly upload limit is applied if 0 is
 The default value is 20.
 
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
-**Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 
@@ -10137,13 +6702,13 @@ Added in Windows 10, version 1607. Specifies the maximum download bandwidth tha
 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
 Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10153,13 +6718,13 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
 Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10168,14 +6733,14 @@ The following list shows the supported values:
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-**Important**  If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
+> **Important**  If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
 
  
 
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10189,7 +6754,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
 Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
-**Note**  
+> **Note**  
 This policy must be wrapped in an Atomic command.
 
 Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
@@ -10202,7 +6767,7 @@ The following list shows the supported values:
 -   1 – Numeric PIN or password required.
 -   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
 
-**Note**  
+> **Note**  
 If AlphanumericDevicePasswordRequired is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
 
 If AlphanumericDevicePasswordRequired is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
@@ -10212,7 +6777,7 @@ If AlphanumericDevicePasswordRequired is set to 0, then MinDevicePasswordLength 
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 Specifies whether device lock is enabled.
 
-**Note**  
+> **Note**  
 This policy must be wrapped in an Atomic command.
 
 Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
@@ -10224,7 +6789,7 @@ The following list shows the supported values:
 -   0 (default) – Enabled
 -   1 – Disabled
 
-**Important**  
+> **Important**  
 The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
 
 -   AllowSimpleDevicePassword
@@ -10236,7 +6801,7 @@ The **DevicePasswordEnabled** setting must be set to 0 (device password is enabl
 
  
 
-**Important**  
+> **Important**  
 If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
 
 -   MinDevicePasswordLength is set to 4
@@ -10252,7 +6817,7 @@ If **DevicePasswordEnabled** is set to 1 (device password is disabled), then the
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 Specifies when the password expires (in days).
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10268,7 +6833,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
 Specifies how many passwords can be stored in the history that can’t be used.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10286,7 +6851,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 Added inWindows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
-**Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -10295,7 +6860,7 @@ Value type is a string, which is the full image filepath and filename.
 <a href="" id="devicelock-enforcelockscreenprovider"></a>**DeviceLock/EnforceLockScreenProvider**  
 Added inWindows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
-**Note**  This policy is only enforced in Windows 10 for mobile devices.
+> **Note**  This policy is only enforced in Windows 10 for mobile devices.
 
  
 
@@ -10304,7 +6869,7 @@ Value type is a string, which is the AppID.
 <a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10327,7 +6892,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
 Specifies the amount of time (in minutes) after the device is idle that will cause the device to become PIN or password locked.
 
-**Note**  This policy must be wrapped in an Atomic command.
+> **Note**  This policy must be wrapped in an Atomic command.
 
  
 
@@ -10341,7 +6906,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
 
-**Note**  
+> **Note**  
 This policy must be wrapped in an Atomic command.
 
 Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
@@ -10387,7 +6952,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
 Specifies the minimum number or characters required in the PIN or password.
 
-**Note**  
+> **Note**  
 This policy must be wrapped in an Atomic command.
 
 Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
@@ -10405,7 +6970,7 @@ Max policy value is the most restricted.
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10418,7 +6983,7 @@ Maximum supported value is 1800.
 The default value is 10.
 
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10456,7 +7021,7 @@ Most restricted value is 0.
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
-**Note**  The MDM server can always remotely delete the account.
+> **Note**  The MDM server can always remotely delete the account.
 
  
 
@@ -10468,7 +7033,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10482,7 +7047,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10502,7 +7067,7 @@ The following list shows the supported values:
 -   1 (default) – Sync settings allowed.
 
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10514,7 +7079,7 @@ The following list shows the supported values:
 -   1 (default) – Task switching allowed.
 
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
-**Note**  This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+> **Note**  This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
  
 
@@ -10526,7 +7091,7 @@ The following list shows the supported values:
 -   1 (default) – Third-party suggestions allowed.
 
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -10540,13 +7105,13 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
-**Important**  
+> **Important**  
 This node must be accessed using the following paths:
 
 -   **./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures** to set the policy.
@@ -10562,7 +7127,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
-**Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
  
 
@@ -10584,7 +7149,7 @@ The following list shows the supported values:
 -   1 (default) – Enabled.
 
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
-**Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
  
 
@@ -10688,7 +7253,7 @@ Boolean value that tells the client to accept the configured list and not to use
 <a href="" id="networkisolation-enterprisenetworkdomainnames"></a>**NetworkIsolation/EnterpriseNetworkDomainNames**  
 This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
-**Note**  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
+> **Note**  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
 
  
 
@@ -10739,7 +7304,7 @@ The following list shows the supported values:
 
 Most restricted value is 0.
 
-**Note**  In the current release of Windows 10 Mobile, setting this policy to 0 will not remove the list of contact names on the device from the list of typable candidates. This will be fixed in a future release.
+> **Note**  In the current release of Windows 10 Mobile, setting this policy to 0 will not remove the list of contact names on the device from the list of typable candidates. This will be fixed in a future release.
 
  
 
@@ -11139,7 +7704,7 @@ The following list shows the supported values:
 -   1 (default) – Enable.
 
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -11161,11 +7726,11 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
-**Note**  This policy has been deprecated in Windows 10, version 1607
+> **Note**  This policy has been deprecated in Windows 10, version 1607
 
  
 
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11177,7 +7742,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -11199,7 +7764,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="security-antitheftmode"></a>**Security/AntiTheftMode**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -11211,7 +7776,7 @@ The following list shows the supported values:
 -   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
 
 <a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11225,13 +7790,13 @@ The following list shows the supported values:
 -   1 – Encryption disabled.
 
 <a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
-**Note**  This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
+> **Note**  This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
 
  
 
 Allows enterprise to turn on internal storage encryption.
 
-**Important**  Bitlocker must be enabled on the device before using this policy.
+> **Important**  Bitlocker must be enabled on the device before using this policy.
 
  
 
@@ -11242,7 +7807,7 @@ The following list shows the supported values:
 
 Most restricted value is 1.
 
-**Important**  If encryption has been enabled, it cannot be turned off using this policy.
+> **Important**  If encryption has been enabled, it cannot be turned off using this policy.
 
  
 
@@ -11267,14 +7832,14 @@ Setting this policy to 1 (Required):
 -   Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2.0.
 -   Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
-**Note**  We recommend that this policy is set to Required after MDM enrollment.
+> **Note**  We recommend that this policy is set to Required after MDM enrollment.
 
  
 
 Most restricted value is 1.
 
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11285,7 +7850,7 @@ The following list shows the supported values:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-**Note**  Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> **Note**  Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
  
 
@@ -11314,7 +7879,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11326,7 +7891,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11338,7 +7903,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11350,7 +7915,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11370,7 +7935,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11398,7 +7963,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
-**Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 
@@ -11413,7 +7978,7 @@ The following list shows the supported values:
 If there is policy configuration conflict, the latest configuration request is applied to the device.
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
-**Important**  This node is set on a per-user basis and must be accessed using the following paths:
+> **Important**  This node is set on a per-user basis and must be accessed using the following paths:
 -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
@@ -11424,7 +7989,7 @@ Allows you to override the default Start layout and prevents the user from chang
 This policy is described in [Start/StartLayout Examples](#startlayout-examples) later in this topic.
 
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
-**Note**  This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
+> **Note**  This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
 
  
 
@@ -11532,14 +8097,14 @@ The following tables describe the supported values:
 
  
 
-**Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
+> **Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
 
  
 
 Most restricted value is 0.
 
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
-**Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 
@@ -11558,7 +8123,7 @@ Allows you to specify the fully qualified domain name (FQDN) or IP address of a 
 If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
 
 <a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11572,7 +8137,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11586,7 +8151,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11600,7 +8165,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11614,7 +8179,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11628,7 +8193,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11642,7 +8207,7 @@ The following list shows the supported values:
 Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11659,7 +8224,7 @@ Most restricted value is 0.
 This policy has been deprecated.
 
 <a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11675,7 +8240,7 @@ Most restricted value is 0.
 <a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
 Allows sending to Microsoft user text input data samples (anonymized) are collected for future language model improvements.
 
-**Important**  Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
+> **Important**  Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
 
  
 
@@ -11685,7 +8250,7 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11697,7 +8262,7 @@ The following list shows the supported values:
 -   1 – All characters except JIS0208 are filtered.
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11709,7 +8274,7 @@ The following list shows the supported values:
 -   1 – All characters except JIS0208 and EUDC are filtered.
 
 <a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
-**Note**  The policy is only enforced in Windows 10 for desktop.
+> **Note**  The policy is only enforced in Windows 10 for desktop.
 
  
 
@@ -11721,7 +8286,7 @@ The following list shows the supported values:
 -   1 – All characters except ShiftJIS are filtered.
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11732,7 +8297,7 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default is 17 (5 PM).
 
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11743,7 +8308,7 @@ Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 The default value is 8 (8 AM).
 
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11760,14 +8325,14 @@ The following list shows the supported values:
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
 
-    **Important**  This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+    > **Important**  This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
 
      
 
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
  
 
@@ -11779,7 +8344,7 @@ The following list shows the supported values:
 -   1 – Allowed. Accepts updates received through Microsoft Update.
 
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11795,7 +8360,7 @@ The following list shows the supported values:
 This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
 
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11810,12 +8375,12 @@ The following list shows the supported values:
 -   0 – Update service is not allowed.
 -   1 (default) – Update service is allowed.
 
-**Note**  This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
+> **Note**  This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
  
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11827,7 +8392,7 @@ The following list shows the supported values:
 -   32 – User gets upgrades from Current Branch for Business (CBB).
 
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
  
@@ -11837,7 +8402,7 @@ Added in Windows 10, version 1607. Defers Feature Updates for the specified num
 Supported values are 0-180.
 
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11846,7 +8411,7 @@ Added in Windows 10, version 1607. Defers Quality Updates for the specified num
 Supported values are 0-30.
 
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
-**Note**  
+> **Note**  
 This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
@@ -11922,7 +8487,7 @@ If the Allow Telemetry policy is enabled and the Options value is set to 0, then
  
 
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
-**Note**  
+> **Note**  
 This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
@@ -11940,7 +8505,7 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
  
@@ -11953,7 +8518,7 @@ The following list shows the supported values:
 -   1 – Exclude Windows Update drivers.
 
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
-**Note**  
+> **Note**  
 This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
@@ -11972,7 +8537,7 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
  
@@ -11985,7 +8550,7 @@ The following list shows the supported values:
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -11997,7 +8562,7 @@ The following list shows the supported values:
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
-**Note**  
+> **Note**  
 This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
@@ -12013,11 +8578,11 @@ The following list shows the supported values:
 
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
-**Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
+> **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
  
 
@@ -12031,7 +8596,7 @@ The following list shows the supported values:
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -12053,7 +8618,7 @@ The following list shows the supported values:
 -   7 – Saturday
 
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -12068,7 +8633,7 @@ Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 The default value is 3.
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
-**Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
  
 
@@ -12129,7 +8694,7 @@ The following list shows the supported values:
 
 Most restricted value is 0.
 
-**Note**  Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+> **Note**  Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
  
 
@@ -12308,7 +8873,7 @@ For **DesktopApplicationTile** elements, the **DesktopApplicationID** can be ret
 
 Creating a layout requires some special notes about secondary tiles. In general, the simplest way to correctly specify a **SecondaryTile** is to generate it using the **Export-StartLayout** PowerShell cmdlet as specified above.
 
-**Note**  Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
+> **Note**  Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
 
  
 
