@@ -15,7 +15,6 @@ ms.sitesec: msdn
 
 `Community_Name` specifies the name of the community to which Simple Network Management Protocl (SNMP) sends traps.
 
-You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows® Foundation package.
 
 ## Values
 
@@ -47,12 +46,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Community\_Name**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Community\_Name**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 

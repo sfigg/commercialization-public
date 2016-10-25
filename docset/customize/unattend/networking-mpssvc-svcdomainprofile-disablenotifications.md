@@ -63,7 +63,7 @@ For client editions of Windows:
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md) | **DomainProfile\_DisableNotifications**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **DomainProfile\_DisableNotifications**
 
 ## Valid Passes
 

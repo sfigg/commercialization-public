@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings--win7-microsoft-windows-systemsettings.md) | **DisplayNetworkSelection**
+[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md) | **DisplayNetworkSelection**
 
 ## Applies To
 
@@ -66,7 +66,7 @@ The following XML output shows how to always show the Network Selection control 
 ## Related topics
 
 
-[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings--win7-microsoft-windows-systemsettings.md)
+[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md)
 
  
 
