@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md) | `SuggestionsURL`
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md) | `SuggestionsURL`
 
 ## Applies To
 
@@ -75,9 +75,9 @@ The following XML output shows how to specify a URL to provide search suggestion
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[SuggestionsURL\_JSON](suggestionsurl-json-win7-microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)
+[SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)
 
  
 

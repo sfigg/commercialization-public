@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing-win7-microsoft-windows-terminalservices-centralpublishing.md) | **Port**
+[Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing.md) | **Port**
 
 ## Applies To
 

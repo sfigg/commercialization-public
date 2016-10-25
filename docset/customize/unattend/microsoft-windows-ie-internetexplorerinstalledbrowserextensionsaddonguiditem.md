@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md) | **AddonGuidItem**
 
 ## Applies To
 

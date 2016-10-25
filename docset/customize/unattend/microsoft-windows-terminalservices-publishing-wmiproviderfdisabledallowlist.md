@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider-win7-microsoft-windows-terminalservices-publishing-wmiprovider.md) | **fDisabledAllowList**
+[Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider.md) | **fDisabledAllowList**
 
 ## Applies To
 

@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | **StartPages**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **StartPages**
 
 ## Applies To
 
@@ -72,9 +72,9 @@ The following XML output shows how to set a primary home page and two secondary 
 ## Related topics
 
 
-[Home\_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md)
+[Home\_Page](microsoft-windows-ie-internetexplorerhome-page.md)
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
  
 

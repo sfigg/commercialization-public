@@ -44,7 +44,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md) | [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbholistaddonguiditem.md) | **AddonGuid**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md) | [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbholistaddonguiditem.md) | **AddonGuid**
 
 ## Applies To
 

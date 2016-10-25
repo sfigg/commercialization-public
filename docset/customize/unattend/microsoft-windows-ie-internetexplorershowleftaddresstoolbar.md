@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | **ShowLeftAddressToolbar**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **ShowLeftAddressToolbar**
 
 ## Applies To
 
@@ -65,7 +65,7 @@ The following XML output specifies that the **Stop** and **Refresh** buttons sho
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
  
 

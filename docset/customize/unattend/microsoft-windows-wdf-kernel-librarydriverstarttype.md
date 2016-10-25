@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library-win7-microsoft-windows-wdf-kernel-library.md) | **DriverStartType**
+[Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library.md) | **DriverStartType**
 
 ## Valid Configuration Passes
 

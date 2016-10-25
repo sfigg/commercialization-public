@@ -77,7 +77,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md) | **Identification**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | **Identification**
 
 ## Applies To
 

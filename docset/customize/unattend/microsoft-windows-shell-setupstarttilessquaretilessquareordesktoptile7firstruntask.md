@@ -38,7 +38,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md) | [SquareOrDesktopTile7](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md) | [SquareOrDesktopTile7](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7.md) | **FirstRunTask**
 
 ## Applies To
 

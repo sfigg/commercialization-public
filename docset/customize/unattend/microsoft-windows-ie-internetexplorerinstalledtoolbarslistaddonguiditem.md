@@ -45,12 +45,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md) | **AddonGuidItem**
 
 ## Applies To
 
 
-For the list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 

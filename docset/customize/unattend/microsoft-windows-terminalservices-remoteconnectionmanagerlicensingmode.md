@@ -69,7 +69,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager-win7-microsoft-windows-terminalservices-remoteconnectionmanager.md) | **LicensingMode**
+[Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager.md) | **LicensingMode**
 
 ## Applies To
 

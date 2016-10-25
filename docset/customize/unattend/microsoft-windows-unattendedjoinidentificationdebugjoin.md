@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **DebugJoin**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **DebugJoin**
 
 ## Applies To
 

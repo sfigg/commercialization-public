@@ -41,7 +41,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver-win7-microsoft-windows-terminalservices-licenseserver.md) | **DBPath**
+[Microsoft-Windows-TerminalServices-LicenseServer](microsoft-windows-terminalservices-licenseserver.md) | **DBPath**
 
 ## Applies To
 

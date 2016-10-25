@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions-win7-microsoft-windows-terminalservices-rdp-winstationextensions.md) | **UserAuthentication**
+[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions.md) | **UserAuthentication**
 
 ## Applies To
 

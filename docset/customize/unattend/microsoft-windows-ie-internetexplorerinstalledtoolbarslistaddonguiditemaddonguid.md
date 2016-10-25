@@ -44,7 +44,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md) | [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledtoolbarslistaddonguiditem.md) | **AddonGuid**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md) | [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledtoolbarslistaddonguiditem.md) | **AddonGuid**
 
 ## Applies To
 

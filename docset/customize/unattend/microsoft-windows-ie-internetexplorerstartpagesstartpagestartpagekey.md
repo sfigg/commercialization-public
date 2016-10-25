@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorerstartpages.md) | [StartPage](microsoft-windows-ie-internetexplorerstartpagesstartpage.md) | **StartPageKey**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorerstartpages.md) | [StartPage](microsoft-windows-ie-internetexplorerstartpagesstartpage.md) | **StartPageKey**
 
 ## Valid Passes
 

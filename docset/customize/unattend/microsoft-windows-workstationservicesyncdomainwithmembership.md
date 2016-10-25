@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md) | **SyncDomainWithMembership**
+[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md) | **SyncDomainWithMembership**
 
 ## Applies To
 

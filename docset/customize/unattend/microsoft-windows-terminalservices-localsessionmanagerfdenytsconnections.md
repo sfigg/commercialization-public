@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TerminalServices-LocalSessionManager](microsoft-windows-terminalservices-localsessionmanager-win7-microsoft-windows-terminalservices-localsessionmanager.md) | **fDenyTSConnections**
+[Microsoft-Windows-TerminalServices-LocalSessionManager]microsoft-windows-terminalservices-localsessionmanager.md) | **fDenyTSConnections**
 
 ## Applies To
 

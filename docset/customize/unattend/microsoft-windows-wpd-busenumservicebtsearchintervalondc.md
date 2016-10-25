@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice-win7-microsoft-windows-wpd-busenumservice.md) | **BTSearchIntervalOnDC**
+[Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice.md) | **BTSearchIntervalOnDC**
 
 ## Applies To
 

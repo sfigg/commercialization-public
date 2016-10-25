@@ -41,7 +41,7 @@ generalize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md) | **OtherDomains**
+[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md) | **OtherDomains**
 
 ## Applies To
 

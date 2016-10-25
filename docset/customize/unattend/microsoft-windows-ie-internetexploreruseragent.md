@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | **UserAgent**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **UserAgent**
 
 ## Applies To
 
@@ -62,7 +62,7 @@ The following XML output specifies the text string appended to the user agent st
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
  
 

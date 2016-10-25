@@ -65,12 +65,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | [Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md)| **AccountData**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | [Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md)| **AccountData**
 
 ## Applies To
 
 
-For a list of Windows® editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 

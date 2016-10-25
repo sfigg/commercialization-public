@@ -18,7 +18,7 @@ ms.sitesec: msdn
 ## Related topics
 
 
-[Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice-win7-microsoft-windows-wpd-busenumservice.md)
+[Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice.md)
 
  
 
