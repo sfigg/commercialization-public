@@ -20,6 +20,21 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 ![policy csp diagram](images/provisioning-csp-policy.png)
 
+
+<dl>
+<dt><a id="--vendor-msft-policy"></a><strong>./Vendor/MSFT/Policy</strong></dt>
+<dd>
+<p>The root node for the Policy configuration service provider.</p>
+<p>Supported operation is Get.</p>
+</dd>
+<dt><a id="policy-config"></a><a id="policy_config"></a><a id="POLICY_CONFIG"></a><strong>Policy/Config</strong></dt>
+<dd>
+<p>Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration  sources. If a configuration source wants to query the result of conflict resolution (for example, if  Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
+<p>Supported operation is Get.</p>
+</dd>
+</dl>
+
+
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
 The root node for the Policy configuration service provider.
 
@@ -30,7 +45,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/**_AreaName_**  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/****_AreaName_**  
 The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 Supported operations are Add, Get, and Delete.
