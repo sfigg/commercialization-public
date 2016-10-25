@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableStatefulFTP
 
 
-`DisableStatefulFTP` disables the Windows® Firewall File Transfer Protocol (FTP) connection inspection engine.
+`DisableStatefulFTP` disables the Windows Firewall File Transfer Protocol (FTP) connection inspection engine.
 
 ## Values
 
@@ -63,7 +63,7 @@ For client editions of Windows and for Windows RT 8.1:
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md) | **DisableStatefulFTP**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **DisableStatefulFTP**
 
 ## Valid Passes
 
@@ -103,7 +103,7 @@ The following XML output shows how to set Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md)
 
  
 

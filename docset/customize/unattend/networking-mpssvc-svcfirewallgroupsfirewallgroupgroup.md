@@ -52,7 +52,7 @@ For more information, see the MSDN topic: [Firewall Groups](http://go.microsoft.
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) | **Group**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) | **Group**
 
 ## Valid Passes
 

@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md) | **FirewallGroups**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | **FirewallGroups**
 
 ## Valid Passes
 
