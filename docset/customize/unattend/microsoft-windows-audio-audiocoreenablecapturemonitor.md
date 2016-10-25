@@ -43,7 +43,7 @@ If this option is enabled, then the end user can configure the system to play au
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore-win7-microsoft-windows-audio-audiocore.md) | **EnableCaptureMonitor**
+[Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore.md) | **EnableCaptureMonitor**
 
 ## Valid Configuration Passes
 

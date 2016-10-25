@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md) | **EnableVolumeControlWhileLocked**
+[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol.md) | **EnableVolumeControlWhileLocked**
 
 ## Applies To
 

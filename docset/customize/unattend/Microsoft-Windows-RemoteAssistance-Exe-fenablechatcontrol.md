@@ -37,7 +37,7 @@ ms.assetid: 2F8781AE-8C21-4EFD-BCE4-45D77166A5B9
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe-win7-microsoft-windows-remoteassistance-exe.md) | **fEnableChatControl**
+[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md) | **fEnableChatControl**
 
 ## Valid Passes
 

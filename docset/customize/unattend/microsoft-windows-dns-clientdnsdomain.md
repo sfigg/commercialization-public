@@ -40,7 +40,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | **DNSDomain**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **DNSDomain**
 
 ## Valid Passes
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-RemoteAssistance-Exe component enables a user with a computer problem to receive assistance from another person who is located elsewhere. The helper can be a friend or a support professional. In the corporate environment, the helper is usually an employee receiving help from the corporate IT helpdesk. In the home environment, the user is often receiving help from a friend or a family member who is a power user and is remotely located.
 
-To enable remote assistance, you must configure the Windows® Firewall. Use the [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) setting to create a command that configures Windows Firewall. Use `Netsh` to enable Remote Assistance. For example,
+To enable remote assistance, you must configure the Windows Firewall. Use the [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) setting to create a command that configures Windows Firewall. Use `Netsh` to enable Remote Assistance. For example,
 
 **netsh advfirewall firewall set rule group="Remote Assistance" new enable=yes**
 

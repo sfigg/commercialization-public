@@ -82,7 +82,7 @@ The value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversear
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | **DNSSuffixSearchOrder**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **DNSSuffixSearchOrder**
 
 ## Valid Passes
 

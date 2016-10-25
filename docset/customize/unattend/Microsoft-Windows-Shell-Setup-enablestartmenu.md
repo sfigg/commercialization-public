@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **EnableStartMenu**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **EnableStartMenu**
 
 ## Applies To
 

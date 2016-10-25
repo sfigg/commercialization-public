@@ -44,7 +44,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe-win7-microsoft-windows-remoteassistance-exe.md) | **MaxTicketExpiryUnits**
+[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md) | **MaxTicketExpiryUnits**
 
 ## Valid Configuration Passes
 

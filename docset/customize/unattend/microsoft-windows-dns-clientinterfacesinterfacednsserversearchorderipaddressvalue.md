@@ -41,7 +41,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) | [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) | **Value**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) | [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) | **Value**
 
 ## Valid Passes
 

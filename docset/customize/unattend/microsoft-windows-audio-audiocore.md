@@ -43,7 +43,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 [Components](components-b-unattend.md)
 
-[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md)
+[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol.md)
 
  
 

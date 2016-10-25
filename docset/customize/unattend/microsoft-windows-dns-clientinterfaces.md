@@ -38,7 +38,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | **Interfaces**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **Interfaces**
 
 ## Valid Passes
 

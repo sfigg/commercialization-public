@@ -47,7 +47,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) | **DomainName**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) | **DomainName**
 
 ## Valid Configuration Passes
 

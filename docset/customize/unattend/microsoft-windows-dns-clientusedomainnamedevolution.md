@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md) | **UseDomainNameDevolution**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **UseDomainNameDevolution**
 
 ## Valid Passes
 
