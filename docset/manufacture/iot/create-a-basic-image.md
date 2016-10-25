@@ -28,7 +28,7 @@ See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-custo
 
 **Start the IoT Core shell, choose your architecture, and install test certificates**
 
-1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open IoTCoreShell.cmd. It should prompt you to run as an administrator.
+1.  In Windows Explorer, go to the folder where you installed the IoT Core ADK Add-Ons, for example, **C:\\IoT-ADK-AddonKit**, and open **IoTCoreShell.cmd**. It should prompt you to run as an administrator.
 
     The new value for OEM\_NAME should appear when you start the tool.
 	
@@ -57,7 +57,7 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
     BuildPkg All
     ```
     	
-**Create a new test image**
+**Create a test project and build an image from it**
 
 1.  Create a new product folder. This folder represents a new device we want to build, and contains sample customization files that we can use to start our project.
 
@@ -69,13 +69,13 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 2.  Eject any removable storage drives, including the Micro SD card and any USB flash drives.
 
-3.  Create a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
+3.  Build a flashable test image using the default files. Test images include additional tools, and you can create test images using either signed or unsigned test packages.
 
     ``` syntax
-    createimage ProductA Test
+    buildimage ProductA Test
     ```
 
-    This creates a FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
+    This builds an FFU file with your basic image at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test.
 
     Troubleshooting:
 	
@@ -92,7 +92,9 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 4.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**, click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\ProductA.ffu), then click **Next**.
 
-5.  Accept the license terms, and then click **Install**. The Windows IoT Core Dashboard formats the micro SD card and installs the new image.
+5.  Enter your device password.
+
+6.  Accept the license terms, and then click **Install**. The Windows IoT Core Dashboard formats the micro SD card and installs the new image.
 
 **Boot it up**
 
@@ -103,7 +105,7 @@ These tasks only need to be done the first time you install the IoT ADK AddonKit
 
 3.  Power it on.
 
-    After a short while, the device should start automatically, and you should see the [default app](https://developer.microsoft.com/windows/iot/win10/samples/IoTDefaultApp) (code-named "Bertha"), which shows basic info about the image.
+    After a short while, the device should start automatically, and you should see the [default app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) (code-named "Bertha"), which shows basic info about the image.
 
     **Note**  Some devices may be extremely slow to boot up on the first boot when using some 8GB class 10 SD cards. Slow boot times may be over 15 minutes. Subsequent boots will be much quicker on the affected cards.
 

@@ -26,10 +26,11 @@ For OEM-style images, you’ll wrap your customizations into package (.cab) file
 -   [Lab 1a: Create a basic image](create-a-basic-image.md)
 -   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
 -   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
--   [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
+-   [Lab 1d: Add networking and other provisioning package settings to an image](add-a-provisioning-package-to-an-image.md)
 -   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 -   [Lab 1f: Build a retail image](build-retail-image.md)
 -   [Lab 2: Creating your own board support package](create-a-new-bsp.md)
+-   [Lab 3: Update your apps](../../service/iot/updating-iot-core-apps.md)
 
 [(Previous version of this guide): IoT Core deployment and imaging](iot-core-deployment-and-imaging.md)
 ## <span id="Concepts"></span><span id="concepts"></span><span id="CONCEPTS"></span>Concepts
@@ -56,7 +57,7 @@ Each package contains:
 
 The `pkggen` tool combines these items into signed packages. Our samples include scripts: `createpkg`, `createprovpkg` and `createupdatepkgs`, which call pkggen to create packages for our drivers, apps, and settings.
 
-The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/dn756642).
+The process is similar to that used by Windows 10 Mobile. To learn more about creating packages, see [Creating mobile packages](https://msdn.microsoft.com/library/windows/hardware/dn756642).
 
 ### <span id="Feature_manifests__FMs_"></span><span id="feature_manifests__fms_"></span><span id="FEATURE_MANIFESTS__FMS_"></span>Feature manifests (FMs)
 
@@ -158,7 +159,7 @@ Start here: [Get the tools needed to customize Windows IoT Core](set-up-your-pc-
 
 ## <span id="related_topics"></span>Related topics
 
-[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/IoTCore.htm)
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
 

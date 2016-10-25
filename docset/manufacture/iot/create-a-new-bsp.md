@@ -16,7 +16,7 @@ Create a new Board Support Package (BSP) when:
 
 Whether you're creating a new BSP or modifying an existing BSP, you become the owner. This lets you decide whether to allow updates to install on your boards.
 
-In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the existing GPIO driver and replacing it with the sample GPIO driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm).
+In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the existing GPIO driver and replacing it with the sample GPIO driver: [Hello, Blinky!](https://developer.microsoft.com/windows/iot/samples/driverlab).
 
 ## <span id="Create_a_new_BSP_working_folder"></span><span id="create_a_new_bsp_working_folder"></span><span id="CREATE_A_NEW_BSP_FILE"></span>Create a new BSP working folder
 
@@ -141,11 +141,12 @@ In our lab, we'll create a new BSP based on the Raspberry Pi 2, removing the exi
 
 **Check to see if your driver works**
 
-1.  Use the [testing procedures in the Hello, Blinky! lab](https://ms-iot.github.io/content/win10/samples/DriverLab3.htm) to test your driver.
+1.  Use the [testing procedures in the Hello, Blinky! lab](https://developer.microsoft.com/windows/iot/samples/driverlab3) to test your driver.
 
-<!--
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 Congratulations, you've completed Lab 2. 
 
-[Lab 2b: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md)
--->
+[Lab 3: Update apps](../../service/iot/updating-iot-core-apps.md)
+
+##  <span id="Related_topics"></span>Related topics
+[Device layout](device-layout.md)

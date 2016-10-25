@@ -45,7 +45,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p>Here's the features you can add to IoT Core images.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)</p></td>
+<td align="left"><p>[Windows ADK IoT Core Add-ons contents](iot-core-adk-addons.md)</p></td>
 <td align="left"><p>The [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
 </tr>
 <tr class="even">
@@ -59,7 +59,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 
 ## <span id="related_topics"></span>Related topics
 
-[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/IoTCore.htm)
+[Learn about Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/explore/iotcore)
 
 [IoT Core Developer Resources](https://developer.microsoft.com/windows/iot)
  

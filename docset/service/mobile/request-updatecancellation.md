@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Request-UpdateCancellation cmdlet'
 ---
 
-# <span id="p_phupdate.request-updatecancellation"></span>Request-UpdateCancellation cmdlet
+# <span id="request-updatecancellation"></span>Request-UpdateCancellation cmdlet
 
 
 Request a cancellation of a firmware submission request using the **Request-UpdateCancellation** cmdlet.

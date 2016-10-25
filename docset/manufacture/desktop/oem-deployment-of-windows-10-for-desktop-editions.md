@@ -10,9 +10,11 @@ description: Get step-by-step guidance for OEMs to deploy Windows 10 to desktop 
 
 # OEM deployment of Windows 10 for desktop editions
 
-This guide documents a prescriptive method for Windows 10 deployment using the classic deployment tools. Many of the tools and methods used in a Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 enables image-less recovery.
+This guide documents a prescriptive method for deploying Windows 10, version 1511 using the classic deployment tools. Many of the tools and methods used in a Windows 8.1 classic deployment are applicable to Windows 10. The biggest change is the recovery process, where Windows 10 enables image-less recovery.  
 
 This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting. For more information about what's new in Windows 10 deployment, see [Windows 10 Deployment and Tools](https://technet.microsoft.com/library/mt297512.aspx).
+
+For the latest version, see the [Windows 10, version 1607 version of this guide](oem-deployment-for-desktop-1607.md). 
 
 ## About this guide
 
@@ -50,7 +52,7 @@ You must use the matching version of the Windows ADK for the images that you pla
 |  Windows version  | Link to run ADKSetup.exe      |
 |-------------------|-------------------------------|
 | Windows 10 RTM    | [**Windows ADK**](http://download.microsoft.com/download/8/1/9/8197FEB9-FABE-48FD-A537-7D8709586715/adk/adksetup.exe)  |
-| Windows 10, version 1511 | [**Windows ADK**](http://download.microsoft.com/download/3/8/B/38BBCA6A-ADC9-4245-BCD8-DAA136F63C8B/adk/adksetup.exe) |
+| Windows 10, version 1511 | [**Windows ADK**](https://go.microsoft.com/fwlink/p/?LinkId=823089) |
 
 Tools inside Windows ADK that you will use with this guide:
 

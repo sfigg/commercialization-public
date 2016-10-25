@@ -32,70 +32,75 @@ Supported properties:
 
 **EFI**: Fixed-size partition with the boot manager, boot configuration database. This partition is required for both MBR/GPT-style devices.
 
-    Name: `EFIESP`
+- Name: `EFIESP`
 	
-	Type: For MBR, use `0x0C`. For GPT, use `{c12a7328-f81f-11d2-ba4b-00a0c93ec93b}`
+- Type: For MBR, use `0x0C`. For GPT, use `{c12a7328-f81f-11d2-ba4b-00a0c93ec93b}`
 	
-	FileSystem: `FAT`
+- FileSystem: `FAT`
 	
-	TotalSectors: `65536`  (= 32MB)
+- TotalSectors: `65536`  (= 32MB)
 	
-	Bootable: `true`
+- Bootable: `true`
 	
-	RequiredToFlash: `true`
+- RequiredToFlash: `true`
 	
 **MainOS**: OS and OEM-preloaded apps. This partition requires a minimum number of free sectors (MinFreeSectors) for normal operations. 
 
-    Name: `MainOS`
+- Name: `MainOS`
+
+- Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
 	
-    Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+- FileSystem: `NTFS`
 	
-	FileSystem: `NTFS`
+- MinFreeSectors: `1048576`  (= 512MB)
 	
-    MinFreeSectors: `1048576`  (= 512MB)
+- ByteAlignment: `0x800000`
 	
-	ByteAlignment: `0x800000`
-	
-    ClusterSize: `0x1000`  (This size is recommended to keep the partition size manageable.)
+- ClusterSize: `0x1000`  (This size is recommended to keep the partition size manageable.)
 	
 **Data**: User data partition, user registry hives, apps, apps data. This partition is typically set to use the remainder of the storage space on the device. (UseAllSpace: True)
     
-	Name: `Data`
+- Name: `Data`
     
-	Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+- Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
 	
-	FileSystem: `NTFS`
+- FileSystem: `NTFS`
 	
-	UseAllSpace: `true`
+- UseAllSpace: `true`
 	
-	ByteAlignment: `0x800000`
+- ByteAlignment: `0x800000`
 	
-    ClusterSize: `0x4000`  (This partition tends to be larger, so 0x4000 is recommended. 0x1000 is also OK.)
+- ClusterSize: `0x4000`  (This partition tends to be larger, so 0x4000 is recommended. 0x1000 is also OK.)
 
 **Crash dump partition**: Optional partition, used to collect data from crash dumps. When used, size is given in total sectors.
 
-    Name: `CrashDump`
+-    Name: `CrashDump`
    
-    Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
+-    Type: For MBR, use `0x07`. For GPT, use `{ebd0a0a2-b9e5-4433-87c0-68b6b72699c7}`
 	
-    FileSystem: `FAT32`
+-    FileSystem: `FAT32`
    
-    TotalSectors: `1228800`  (= 600 MB)
+-    TotalSectors: `1228800`  (= 600 MB)
 
 ### Required fields
 
 These fields are required, the following values are supported for IoTCore: 
 
-    Version: `IoTUAP`
-	SectorSize: `512`
-	ChunkSize: `128`
-	DefaultPartitionByteAlignment: `0x200000`
+-    Version: `IoTUAP`
+
+-	SectorSize: `512`
+
+-	ChunkSize: `128`
+
+-	DefaultPartitionByteAlignment: `0x200000`
 	
 ### Storage Size Estimations 
 
 The following diagrams provide an overview of two configurations. 
 
 **2GB Configuration**  (2048MB, typically has 1843MB for storage)
+
+![2GB partition layout: EFIESP, MainOS, and Data. MainOS includes Windows and free space](images/partition-layout-2gb.png)
 
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|
@@ -108,6 +113,8 @@ The following diagrams provide an overview of two configurations.
 
 **4GB Configuration:**  (4096MB, typically has 3600MB available for storage)
 
+![4GB partition layout: EFIESP, MainOS, CrashDump, and Data. MainOS includes Windows and free space](images/partition-layout-4gb.png)
+
 |Partition    |Contents   |MB   |Sectors |Remarks                    |
 |-------------|-----------|-----|--------|---------------------------|
 |EFIESP       |EFIESP     |32   |65536   |EFIESP size                |
@@ -115,7 +122,7 @@ The following diagrams provide an overview of two configurations.
 |Main OS      |Free space |512  |1048576 |MainOS Headroom            |
 |CrashDump    |Crash Dump |600  |1228800 |CrashDump Size             |
 |Data         |Data       |1656 |3391488 |Expands to fill free space |
-|**TOTAL**        |           |**3600** |**7372800** |                           |
+|**TOTAL**        |           |**3600** |**7372800** |         |
 
 
 ### Device platform layout (OEMDevicePlatform.xml)
@@ -134,33 +141,36 @@ OEMDevicePlatform.xml specifies the amount of free blocks available in the devic
    </OEMDevicePlatform>
    ```
 
-##BSP Samples in IoT-ADK-AddonKit
-BSP samples provided in the IoT-ADK-AddOnKit are detailed here along with the associated tools.
-The BSP components are present under the architecture specific source directory and has the following contents.
-   ``` syntax
-   Source-{arch}
-  +BSP
-    +{BSPName}        - Name of the BSP
-     +Packages        - Contains the BSP specific packages and FM file
-     +OEMInputSamples – Contains the sample oem input files 
-   ```
+## BSP Samples in IoT-ADK-AddonKit
 
-###RPi2 (ARM)
+The IoT-ADK-AddOnKit contains BSP samples for the following boards, each containing these files:
 
-RPi2 BSP is the BSP supported and serviced by Microsoft. This is for the Raspberry Pi2 Boards. The source of this BSP is available at https://github.com/ms-iot/bsp
+- \Source-{_arch_}\BSP\\{_BSPName_}
+  - \OEMInputSamples: Sample OEM input files
+  - \Packages       : BSP specific packages and feature manifest file
 
-###CustomRPi2 (ARM)
+For additional source files, see [Windows 10 IoT Core Board Support Package source files](https://github.com/ms-iot/bsp).
 
-CustomRPi2 is a customized version of the RPi2 BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components. 
+### ARM: RPi2
 
-###MBM (x86)
+The Raspberry Pi 2 BSP.
 
-MBM BSP is the BSP supported and serviced by Microsoft. This is for the Intel MinnowBoard Max Boards.
+### ARM: CustomRPi2
 
-###CustomMBM (x86)
+A customized version of the Raspberry Pi 2 BSP, where in custom GPIO drivers and device layouts are used.  Because custom drivers are used, the device targeting components are changed to generic components. 
 
-CustomMBM is a customized version of the MBM BSP, where in custom GPIO drivers and device layouts are used. Since the custom drivers are used, the device targeting components are changed to Generic components.
+### x86: MBM
 
+Intel MinnowBoard Max Board BSP, supported and serviced by Microsoft. This is for the Intel MinnowBoard Max Boards.
 
-##Related topics
+### x86: CustomMBM
+
+CustomMBM is a customized version of the Intel MinnowBoard Max Board BSP, where in custom GPIO drivers and device layouts are used. Because custom drivers are used, the device targeting components are changed to generic components.
+
+## Related topics
+[Windows 10 IoT Core Board Support Package source files](https://github.com/ms-iot/bsp)
+
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
+
+[Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) 
+[Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535(v=vs.85).aspx).  

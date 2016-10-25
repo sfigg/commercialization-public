@@ -42,10 +42,6 @@ Optimizing Windows power plans can help improve battery life. However, a single 
     **Note**  
     You can manage most common power plan settings through Control Panel. To fine-tune settings that do not appear in Control Panel, see [Fine-Tune a Custom Power Plan](fine-tune-a-custom-power-plan-technicalreference.md).
 
-     
-
-    To deploy the power plan, see [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md).
-
 ## <span id="ListPowerPlans"></span><span id="listpowerplans"></span><span id="LISTPOWERPLANS"></span>
 
 
@@ -74,36 +70,22 @@ Optimizing Windows power plans can help improve battery life. However, a single 
 
 **Deploying a power plan**
 
-1.  After you have created power plans that work for your system, you can deploy the power plans to your destination computers.
+After you have created power plans that work for your system, you can deploy the power plans to your destination computers.
 
-    To export the OutdoorPlan power plan that you created on your technician computer, open an elevated command prompt, and then type the following
+To export the OutdoorPlan power plan that you created on your technician computer, open an elevated command prompt, and then type the following
 
-    ``` syntax
-    powercfg -EXPORT C:\OutdoorPlan.pow {guidPlan-New}
-    ```
+``` syntax
+powercfg -EXPORT C:\OutdoorPlan.pow {guidPlan-New}
+```
 
-    This creates a new power plan file.
+This creates a new power plan file.
 
-2.  To deploy the power plan, see [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md).
-
-## <span id="Next_Steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next Steps
-
-
-[Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)
+To learn more, see [Set the Default Power Plan](set-the-default-power-plan-technicalreference.md).
 
 ## <span id="related_topics"></span>Related topics
-
 
 [Managing Battery Life and Power Consumption Overview](managing-battery-life-and-power-consumption-overview-technicalreference.md)
 
 [Test Battery Life and Power Consumption](test-battery-life-and-power-consumption-technicalreference.md)
 
- 
-
- 
-
-
-
-
-
-
+[Set the Default Power Plan](set-the-default-power-plan-technicalreference.md)

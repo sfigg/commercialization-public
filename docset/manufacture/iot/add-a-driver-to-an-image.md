@@ -6,7 +6,7 @@ title: 'Lab 1e: Add a driver to an image'
 
 # Lab 1e: Add a driver to an image
 
-In this lab, we'll add the sample driver: [Hello, Blinky!](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm), package it up, and deploy it to the to a Windows 10 IoT Core device.
+In this lab, we'll add the sample driver: [Hello, Blinky!](https://developer.microsoft.com/windows/iot/samples/driverlab), package it up, and deploy it to the to a Windows 10 IoT Core device.
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -24,7 +24,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--  Complete the exercises in [Installing The Sample Driver](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab.htm) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
+-  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab3) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
@@ -32,7 +32,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Build_a_package_for_your_driver"></span><span id="build_a_package_for_your_driver"></span><span id="BUILD_A_PACKAGE_FOR_YOUR_DRIVER"></span>Build a package for your driver
 
-1.  Run **C:\\IoT-ADK-AddonKit\\Tools\\IoTCoreShell** as an administrator.
+1.  Run **C:\\IoT-ADK-AddonKit\\IoTCoreShell** as an administrator.
 
 2.  Create the driver package using the .inf file as the base:
 
@@ -42,6 +42,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
     The new folder at **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Packages\\Drivers.HelloBlinky\\**.
 
+3. Copy the file: ACPITABL.dat to the new folder, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\Drivers.HelloBlinky\\**.
 
 **Verify that the sample files are in the package**
 
@@ -63,7 +64,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
                   DestinationDir="$(runtime.drivers)"  
                   Name="gpiokmdfdemo.sys" /> 
             <File Source="ACPITABL.dat"  
-                  DestinationDir="$(runtime.drivers)"  
+                  DestinationDir="$(runtime.system32)"  
                   Name="ACPITABL.dat" /> 
           </Files> 
         </Driver> 
@@ -85,7 +86,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 **Add your driver package to the feature manifest**
 
-1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-<arch>\\Packages\\OEMFM.xml**
+1.  Open the architecture-specific feature manifest file, **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Packages\\OEMFM.xml**
 
 2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_DriverHelloBlinky".
 
@@ -102,17 +103,14 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Update_the_project_s_configuration_files"></span><span id="update_the_project_s_configuration_files"></span><span id="UPDATE_THE_PROJECT_S_CONFIGURATION_FILES"></span>Update the project's configuration files
 
-1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-arm\\Products\\ProductA\\TestOEMInput.xml**.
+1.  Open your product's test configuration file: **C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductA\\TestOEMInput.xml**.
 
 2.  Make sure your feature manifest, OEMFM.xml, is in the list of AdditionalFMs. Add it if it isn't there already there:
 
     ``` syntax
       <AdditionalFMs>
         <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPRPi2FM.xml</AdditionalFM>
-        <AdditionalFM>%AKROOT%\FMFiles\arm\RPi2FM.xml</AdditionalFM>
         <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-        <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
       </AdditionalFMs>
     ```
 
@@ -149,7 +147,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 **Check to see if your driver works**
 
-1.  Use the procedures in the [Hello, Blinky! lab](https://ms-iot.github.io/content/en-US/win10/samples/DriverLab3.htm) to test your driver.
+1.  Use the procedures in the [Hello, Blinky! lab](https://developer.microsoft.com/windows/iot/samples/driverlab3) to test your driver.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 

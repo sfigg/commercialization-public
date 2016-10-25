@@ -6,94 +6,74 @@ MSHAttr: 'PreferredLib:/library'
 title: 'IoT Core Add-ons command-line options'
 ---
 
-# <span id="p_iot_core.command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
+# <span id="command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
+These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
-These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \\Tools folder. To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+## <span id="appx2pkg.cmd"></span>appx2pkg.cmd
 
-## <span id="iotcoreshell.lnk"></span><span id="IOTCORESHELL.LNK"></span>IoTCoreShell.lnk
+Creates the folder structure and copies the template files for a new package.
 
+## <span id="BuildAgent.cmd"></span>BuildAgent.cmd
 
-Opens the IoT Core Shell. You should run this program as an administrator.
+Builds FFUs for all OEMInputSamples under the Addon Kit directory. Can be used to automate nightly builds.
 
-If you have installed the IoTCore ADK Addons in a different path, modify the shortcut to the installed path:
+## <span id="BuildImage.cmd"></span>BuildImage.cmd
 
-``` syntax
-C:\Windows\System32\cmd.exe /k "C:\IoT-ADK-AddonKit\Tools\LaunchTool.cmd"
-```
+[Builds an image file (FFU)](create-a-basic-image.md), using the product-specific packages. Uses CreateImage.cmd, includes additional options.
 
- **To set this command to always run as an administrator:**
+**Usage**: `buildimage [Product]/[All]/[Clean] [BuildType]`
 
-1.  In Windows Explorer, right-click the shortcut, and select **Properties**.
-2.  In the Shortcut tab, click **Advanced**, and check **Run as administrator** &gt; **OK** &gt; **Apply**.
+**Parameters**:
+- `ProductName`....... Required, Name of the product to be created.
+- `All`............... All Products under \Products directory are built
+- `Clean`............. Cleans the output directory.  One of the above should be specified.
+- `BuildType`......... Optional, Retail/Test, if not specified both types are built
+- `[version]`......... Optional, Package version. If not specified, it uses BSP_VERSION
+- `[/?]`.............. Displays this usage string.
 
-After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
-
-
-## <span id="SETENV.CMD"></span>setenv.cmd
-Usage: `setenv <arch>`
-
-Parameters:
-
--   `<arch>`: Architecture to be set. (`arm` or `x86`).
-
-Description: This command resets your environment variables. 
-
-Common variables used include **IOTADK\_ROOT**, **COMMON\_DIR**, **SRC\_DIR**, **BLD\_DIR**, **PKGBLD\_DIR**, **TOOLS\_DIR**, and more. 
-
-Open setenv.cmd in a text editor to see the full list of variables set.
-
-Example:
+**Example**:
 
 ``` syntax
-setenv.cmd arm
+buildimage SampleA Test
+buildimage SampleA Retail
+buildimage SampleA
+buildimage All Test
+buildimage All
+buildimage Clean
 ```
 
-## <span id="SETVERSION.CMD"></span>setversion.cmd
+## <span id="BuildKitAgent.cmd"></span>BuildKitAgent.cmd
 
+Builds FFUs for all OEMInputSamples in Core Kit package. Can be used to automate nightly builds.
 
-Usage: `setversion x.y.z.a`
+## <span id="BuildKitSamples.cmd"></span>BuildKitSamples.cmd
 
-Parameters:
+Builds architecture-specific FFUs for OEMInputSamples in Core Kit package.  Can be used to automate nightly builds.
 
--   `x.y.z.a`: Four-part version number to be used for packages
+## <span id="buildpkg.cmd"></span>buildpkg.cmd
 
-Description: This command sets the version numbers used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
+Builds a package from \Sources-\<arch\>\Packages.
 
-(Why a four-part version number? Learn about versioning schemes in [Update requirements](../../service/mobile/update-requirements.md).)
+Buildpkg saves the package in the \Build\\<arch\>\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
 
-This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Note that whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
+For troubleshooting, Buildpkg saves logs at \Build\\<arch\>\pkgs\logs. 
 
-Example:
+**Usage**: `buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]`
 
-``` syntax
-setversion 10.0.0.1
-```
-
-## <span id="BUILDPKG.CMD"></span>buildpkg.cmd
-
-Usage: `buildpkg [CompName.SubCompName]/[packagefile.pkg.xml]/[All]/[Clean] [version]`
-
-Parameters:
+**Parameters**:
 
 -   `<CompName.SubCompName>`: Use this to refer to the package by its ComponentName.SubComponent Name.
 
 -   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
 
--   `<All>`: Use this to build all packages in the \Sources-&lt;arch&gt;\Packages folder. This is the same as the buildallpackages command.
+-   `<All>`: Use this to build all packages in the \Sources-\<arch\>\Packages folder. This is the same as the buildallpackages command.
 
--   `<Clean>`: Use this to erase everything in the \Build\&lt;arch&gt;\pkgs folder. Recommended before building all packages.
+-   `<Clean>`: Use this to erase everything in the \Build\\<arch\>\pkgs folder. Recommended before building all packages.
 
 -   `<version>`: Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. 
 
-
-Description: Builds a package from \Sources-&lt;arch&gt;\Packages.
-
-Buildpkg saves the package in the \Build\&lt;arch&gt;\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
-
-For troubleshooting, Buildpkg saves logs at \Build\&lt;arch&gt;\pkgs\logs. 
-
-Example:
+**Example**:
 
 ``` syntax
 buildpkg Appx.Main
@@ -105,10 +85,36 @@ buildpkg All 10.0.2.0
 buildpkg Clean
 ```
 
-## <span id="CREATEPKG.CMD"></span>createpkg.cmd
+## <span id="createimage.cmd"></span>createimage.cmd
 
-Usage: `createpkg <packagefile.pkg.xml>/<CompName.SubCompName> [version]`
-Parameters:
+Creates the image file (FFU), using the product-specific packages. It uses the createpkg.cmd with the imggen tool and the **Parameters** set in the command environment. The output files are available in the Build (%BLD\_DIR%) folder.
+
+createimage saves the FFU at %BLD\_DIR%\\<productname>\(Test or Retail)\
+
+**Usage**: `createimage <productname> <buildtype>`
+
+**Parameters**:
+
+-   `<productname>`: Name of the product to be built.
+
+-   `<buildtype>`: **Retail** or **Test**
+
+**Example**:
+
+``` syntax
+createimage.cmd ProductA Retail
+```
+
+
+## <span id="createpkg.cmd"></span>createpkg.cmd
+
+Creates a packaging definition file (.pkg.xml) using the pkggen tool and **Parameters** set in the environment defined by **IoTCoreShell.cmd** and **setversion.cmd**. 
+
+Createpkg saves the package in the \Build\\<arch\>\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
+
+**Usage**: `createpkg <packagefile.pkg.xml>/<CompName.SubCompName> [version]`
+
+**Parameters**:
 
 -   `<packagefile.pkg.xml>`: Use this to identify the package by its package definition XML file.
 
@@ -116,11 +122,8 @@ Parameters:
 
 -   `<version>`: Optional, used to specify a version number. If you don't specify one, the default is to use the version defined in the variable %BSP\_VERSION%. 
 
-Description: Creates a packaging definition file (.pkg.xml) using the pkggen tool and parameters set in the environment defined by **IoTCoreShell.lnk** and **setversion.cmd**. 
 
-Createpkg saves the package in the \Build\&lt;arch&gt;\pkgs folder as a .cab file (example: Contoso.Provisioning.Auto.cab).
-
-Examples:
+**Examples**:
 
 ``` syntax
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml
@@ -128,38 +131,36 @@ createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml 10.0.1.0
 createpkg Registry.ConfigSettings 
 ```
 
-## <span id="CREATEPROVPKG.CMD"></span>createprovpkg.cmd
+## <span id="createprovpkg.cmd"></span>createprovpkg.cmd
 
+Creates a provisioning package using the icd.exe tool and **Parameters** set in the environment defined by **IoTCoreShell.cmd** and **setversion.cmd**. The output file (.ppkg) is created at the specified output location.
 
-Usage: `createprovpkg <customizations.xml> <outputfilename>`
+**Usage**: `createprovpkg <customizations.xml> <outputfilename>`
 
-Parameters:
+**Parameters**:
 
 -   `<customizations.xml>`: Input file with Windows Customizations contents
 -   `<outputfilename>`: Output filename (.ppkg) with full path
 
-Description: Creates a provisioning package using the icd.exe tool and parameters set in the environment defined by **IoTCoreShell.lnk** and **setversion.cmd**. The output file (.ppkg) is created at the specified output location.
-
-Example:
+**Example**:
 
 ``` syntax
 createprovpkg %PRJ_DIR%\Products\SampleA\Prov\customizations.xml %PRJ_DIR%\Products\SampleA\Prov\SampleAProv.ppkg
 ```
 
-## <span id="____CREATEUPDATEPKGS.CMD"></span> createupdatepkgs.cmd
+## <span id="createupdatepkgs.cmd"></span>createupdatepkgs.cmd
 
+Creates an update package using the packaging definition files (.pkg.xml) in the update folder. It uses the pkggen tool and **Parameters** set in the environment defined by **IoTCoreShell.cmd** and **setversion.cmd**.
 
-Usage: `createupdatepkgs <updatename>`
+The output files are stored in the Build directory (%BLD\_DIR%), in the \<updatename\> folder.
 
-Parameters:
+**Usage**: `createupdatepkgs <updatename>`
 
--   `<updatename>`: Name of the update.
+**Parameters**:
 
-Description: Creates an update package using the packaging definition files (.pkg.xml) in the update folder. It uses the pkggen tool and parameters set in the environment defined by **IoTCoreShell.lnk** and **setversion.cmd**.
+-  `<updatename>`: Name of the update.
 
-The output files are stored in the Build directory (%BLD\_DIR%), in the &lt;updatename&gt; folder.
-
-Example:
+**Example**:
 
 ``` syntax
 createupdatepkgs Update1
@@ -167,148 +168,149 @@ createupdatepkgs Update1
 
 In this example, the output is stored at %BLD\_DIR%\\Update1\\.
 
-## <span id="CREATEIMAGE.CMD"></span>createimage.cmd
+## <span id="inf2cab.cmd"></span>inf2cab.cmd
 
+Converts a .inf driver package to a .cab file.
 
-Usage: `createimage <productname> <buildtype>`
+Inf2cab saves the package in the \Build\\<arch\>\pkgs folder  (example: Drivers.GPIO.cab).
 
-Parameters:
+**Usage**: `inf2cab filename.inf [CompName.SubCompName]`
 
--   `<productname>`: Name of the product to be built.
--   `<buildtype>`: **Retail** or **Test**
+**Parameters**:
 
-Description: Creates the image file (FFU), using the product-specific packages. It uses the createpkg.cmd with the imggen tool and the parameters set in the command environment. The output files are available in the Build (%BLD\_DIR%) folder.
+- `filename.inf` ........... Required, input file for the driver.
 
-Example:
+- `<CompName.SubCompName>`.. Optional, refers to the driver package by its ComponentName.SubComponent Name.
 
-``` syntax
-createimage.cmd ProductA Retail
-```
-
-createupdatepkgs saves the FFU at %BLD\_DIR%\\<productname>\\(Test or Retail)\\
-
-<!--- ## <span id="_UPDATEIMAGE.CMD"></span> updateimage.cmd
-
-
-Usage: `updateimage <productname> <buildtype> <updatename>`
-
-Parameters:
-
--   `<productname>`: Name of the product to be updated.
--   `<buildtype>`: **Retail** or **Test**
--   `<updatename>`: Name of the update to be applied
-
-Description: This tool copies the specified product build and updates with the contents specified by &lt;updatename&gt; using ImageApp tool with the correct parameters set in the environment. The output files are available in the Build (%BLD\_DIR%) folder.
-
-Example:
-
-``` syntax
-updateimage ProductA Retail Update1
-```
-
-Output is available at %BLD\_DIR%\\ProductA\\Update1\\Retail
-
---->
-
-## <span id="INF2CAB.CMD"></span>inf2cab.cmd
-
-Usage: `inf2cab filename.inf [CompName.SubCompName]`
-
-Parameters:
-
--   `filename.inf`: Required, input file for the driver.
-
--   `<CompName.SubCompName>`: Optional, refers to the driver package by its ComponentName.SubComponent Name.
-
-Description: Converts a .inf driver package to a .cab file.
-
-Inf2cab saves the package in the \Build\&lt;arch&gt;\pkgs folder  (example: Drivers.GPIO.cab).
-
-Example:
+**Examples**:
 
 ``` syntax
 inf2cab C:\test\gpiodriver.inf
 inf2cab C:\test\gpiodriver.inf Drivers.GPIO
 ```
 
-## <span id="NEWAPPXPKG.CMD"></span>newappxpkg.cmd
+## <span id="inf2pkg.cmd"></span>inf2pkg.cmd
 
-Usage: `newappxpkg filename.appx [CompName.SubCompName]`
+Creates the folder structure and copies the template files for a new package
 
-Parameters:
+**Usage**: `inf2pkg input.inf [CompName.SubCompName]`
+- `input.inf`............... Required, input .inf file
+- `CompName.SubCompName`.... Optional, default is Drivers.input
+- `[/?]`.................... Displays this usage string.
+
+**Example**:
+``` syntax
+inf2pkg C:\test\testdriver.inf
+```
+
+## <span id="iotcoreshell.cmd"></span><span id="IOTCORESHELL.CMD"></span>IoTCoreShell.cmd
+
+Opens the IoT Core Shell as an administrator. (This file is in the root folder, and uses LaunchTool.cmd)
+
+After you open IoTCoreShell, you'll be prompted to choose a default architecture (ARM or x86) for the devices you'll be building. This sets your default starting set of system variables.  
+
+## <span id="LaunchTool.cmd"></span>LaunchTool.cmd
+
+Used by LaunchTool.cmd (in the root folder) to open the IoT Core Shell. 
+
+## <span id="newappxpkg.cmd"></span>newappxpkg.cmd
+
+Creates a new working folder to help you convert Appx packages to .cab files. 
+
+Note: This tool expects a subfolder named "dependencies" with any of the .appx dependency packages.
+
+This command creates the working folder in the \Source-\<arch\>\Packages\ folder.
+
+If you run this command without any variables, you'll also see the other working folders in the \Source-\<arch\>\Packages\ folder.
+
+**Usage**: `newappxpkg filename.appx [CompName.SubCompName]`
+
+**Parameters**:
 
 -   `filename.appx`: Required, input file for the Appx package.
 
 -   `<CompName.SubCompName>`: Optional, creates the working folder using the name: ComponentName.SubComponent.
 
-Description: Creates a new working folder to help you convert Appx packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
-
-Note: This tool expects a subfolder named "dependencies" with any of the .appx dependency packages.
-
-This command creates the working folder in the \Source-&lt;arch&gt;\Packages\ folder.
-
-If you run this command without any variables, you'll also see the other working folders in the \Source-&lt;arch&gt;\Packages\ folder.
-
-Example:
+**Example**:
 
 ``` syntax
 newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx AppX.Main
 ```
 
-## <span id="NEWDRVPKG.CMD"></span>newdrvpkg.cmd
+To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board).
 
-Usage: `newdrvpkg filename.inf [CompName.SubCompName]`
+## <span id="newbsp.cmd"></span>newbsp.cmd
+Creates the folder structure and copies the template files for [creating a new board support package (BSP)](create-a-new-bsp.md).
 
-Parameters:
+**Usage**: `newbsp BSPName`
 
--   `filename.inf`: Required, input .inf file for the driver package.
+**Parameters**:
 
--   `<CompName.SubCompName>`: Optional, creates the working folder using the name: ComponentName.SubComponent. The default is Drivers.&lt;filename&gt;.
+- `BSPName`........... Required, Name of the BSP to be used
 
-Description: Creates a new working folder to help you convert driver packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
-
-This command creates the working folder in the \Source-&lt;arch&gt;\Packages\ folder.
-
-If you run this command without any variables, you'll also see the other working folders in the \Source-&lt;arch&gt;\Packages\ folder.
-
-Example:
-
+**Example**:
 ``` syntax
-newdrvpkg C:\test\GPIO.inf Drivers.GPIO
+newbsp CustomRPi2
 ```
 
-## <span id="NEWCOMMONPKG.CMD"></span>newcommonpkg.cmd
 
-Usage: `newcommonpkg CompName.SubCompName`
+## <span id="newcommonpkg.cmd"></span>newcommonpkg.cmd
 
-Parameters:
-
--   `<CompName.SubCompName>`: Required, creates the working folder using the name ComponentName.SubComponent.
-
-Description: Creates a new working folder to help you save files, folders, registry keys, and provisioning packages as .cab files. After using this command, use the buildpkg command to create your final .cab file.
+Creates a new working folder to help you [add files, folders, registry keys, and provisioning packages](add-a-registry-setting-to-an-image.md) as .cab files. After using this command, use the buildpkg command to create your final .cab file.
 
 This command creates the working folder in the \Common\Packages\ folder.
 
 If you run this command without any variables, you'll also see the other working folders in the \Common\Packages\ folder.
 
-Example:
+**Usage**: `newcommonpkg CompName.SubCompName`
+
+**Parameters**:
+
+-   `<CompName.SubCompName>`: Required, creates the working folder using the name ComponentName.SubComponent.
+
+**Example**:
 
 ``` syntax
 newcommonpkg Registry.ConfigSettings
 ```
 
-## <span id="_NEWPRODUCT.CMD"></span> newproduct.cmd
+To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 
-Usage: `newproduct <productname>`
 
-Parameters:
+## <span id="newdrvpkg.cmd"></span>newdrvpkg.cmd
+
+Used to [add a driver to an image](add-a-driver-to-an-image.md). Creates a new working folder to help you convert driver packages to .cab files. After using this command, use the buildpkg command to create your final .cab file.
+
+This command creates the working folder in the \Source-\<arch\>\Packages\ folder.
+
+If you run this command without any variables, you'll also see the other working folders in the \Source-\<arch\>\Packages\ folder.
+
+**Usage**: `newdrvpkg filename.inf [CompName.SubCompName]`
+
+**Parameters**:
+
+-   `filename.inf`: Required, input .inf file for the driver package.
+
+-   `<CompName.SubCompName>`: Optional, creates the working folder using the name: ComponentName.SubComponent. The default is Drivers.\<filename\>.
+
+**Example**:
+
+``` syntax
+newdrvpkg C:\test\GPIO.inf Drivers.GPIO
+```
+
+## <span id="newproduct.cmd"></span> newproduct.cmd
+
+Used to [create new product images](create-a-basic-image.md). Creates a new working product directory under \Products and copies the contents from the template file.
+
+**Usage**: `newproduct <productname>`
+
+**Parameters**:
 
 -   `<productname>`: Name of the product to be created
 
-Description: Creates a new working product directory under Products and copies the contents from the template file.
-
-Example:
+**Example**:
 
 ``` syntax
 newproduct ProductA
@@ -316,78 +318,122 @@ newproduct ProductA
 
 ## <span id="NEWUPDATE.CMD"></span>newupdate.cmd
 
+Creates a new working directory under \Updates and copies the contents from the template file.
 
-Usage: `newupdate <UpdateName>  <Version>`
+**Usage**: `newupdate <UpdateName>  <Version>`
 
-Parameters:
+**Parameters**:
 
 -   `<UpdateName>`: Name of the update to be created
+
 -   `<Version>`: Version number (x.y.z.a)
 
-Description: Creates a new working directory under Updates and copies the contents from the template file.
-
-Example:
+**Example**:
 
 ``` syntax
 newupdate Update2 10.0.2.0
 ```
 
+## <span id="retailsign.cmd"></span>retailsign.cmd
+
+Toggles between using cross-certifications for signing and enabling OEM test-signing of certificates
+
+**Usage**: `retailsign [On/Off]`
+
+**Parameters**:
+- `On` ................... Enables Cross Cert for signing
+- `Off`................... Disables Cross Cert for signing and enables OEM Test Signing
+
+**Examples**:
+
+```syntax
+retailsign On
+retailsign Off
+```
+
+
+## <span id="setenv.cmd"></span>setenv.cmd
+Resets your environment variables, including **IOTADK\_ROOT**, **COMMON\_DIR**, **SRC\_DIR**, **BLD\_DIR**, **PKGBLD\_DIR**, **TOOLS\_DIR**, and more. 
+
+Open setenv.cmd in a text editor to see the full list of variables set.
+
+**Usage**: `setenv <arch>`
+
+**Parameters**:
+
+-   `<arch>`: Architecture to be set. (`arm`, `x86`, or `x64`).
+
+**Example**:
+
+``` syntax
+setenv.cmd arm
+```
+
+## <span id="setOEM.cmd"></span>setOEM.cmd
+Sets your OEM company name. Edit this file with a text editor.
+
+``` syntax
+set OEM_NAME=Contoso
+```
+
+
+## <span id="setsignature.cmd"></span>setsignature.cmd
+Sets the [Cross-Certificates for kernel-mode code signing](https://msdn.microsoft.com/windows/hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing)
+
+## <span id="setversion.cmd"></span>setversion.cmd
+
+Sets the [version numbers](../../service/mobile/update-requirements.md) used when creating a package with **createpkg.cmd** or a provisioning package with **createprovpkg.cmd**.
+
+This version information is stored in **%PRJ\_DIR%\\versioninfo.txt** and loaded back when the IoT Core Shell is launched again. Whenever the package contents are changed, the version has to be updated and all packages need to be recreated.
+
+**Usage**: `setversion x.y.z.a`
+
+**Parameters**:
+
+-   `x.y.z.a`: Four-part version number to be used for packages
+
+**Example**:
+
+``` syntax
+setversion 10.0.0.1
+```
+
+
+<!--- ## <span id="UPDATEIMAGE.CMD"></span> updateimage.cmd
+
+
+**Usage**: `updateimage <productname> <buildtype> <updatename>`
+
+**Parameters**:
+
+-   `<productname>`: Name of the product to be updated.
+-   `<buildtype>`: **Retail** or **Test**
+-   `<updatename>`: Name of the update to be applied
+
+Description: This tool copies the specified product build and updates with the contents specified by &lt;updatename&gt; using ImageApp tool with the correct parameters set in the environment. The output files are available in the Build (%BLD\_DIR%) folder.
+
+**Example**:
+
+``` syntax
+updateimage ProductA Retail Update1
+```
+
+Output is available at %BLD\_DIR%\\ProductA\\Update1\\Retail
+
+-->
 
 ## <span id="older_tools"></span>Older tools
 
-### <span id="BUILDALLPACKAGES.CMD"></span>buildallpackages.cmd
+### <span id="buildallpackages.cmd"></span>buildallpackages.cmd
 
 This tool has been replaced with the tool: buildpkg All.
 
-Usage: `buildallpackages`
-
-Description: Builds all of the packages in \Sources-&lt;arch&gt;\Packages, including a few sample packages that help do things like install apps.
-
-Buildallpackages saves the packages in the \Build\&lt;arch&gt;\pkgs folder as .cab files (example: Contoso.Provisioning.Auto.cab).
-
-For troubleshooting, BuildAllPackages saves logs at \Build\&lt;arch&gt;\pkgs\logs. 
-
-Example:
-
-``` syntax
-buildallpackages
-```
-  
-### <span id="_NEWPKG.CMD"></span> newpkg.cmd
-
-Usage: `newpkg <package type> <component name> <sub-component name>`
+### <span id="newpkg.cmd"></span> newpkg.cmd
 
 This tool has been replaced with the tools: newappxpkg, newdrvpkg, and newcommonpkg.
 
-Parameters:
-
--   `<package type>`:       The type of package created. Must be: **pkgAppx**, **pkgDrv**, or **pkgFile**. 
--   `<component name>`:     Component name for the package. Examples include "App", "Driver", "File", "Registry", though you can use any naming scheme you like.
--   `<sub-component name>`: Sub-component name for the package. Examples include "Blinky"
-
-
-Description: Creates a new working package directory under Packages, and creates a package definition file using a template file. Some of these package definition files include sample entries to help you add more items. For example, the pkgFile type includes a sample entry for a Registry Key.
-
-Example:
-
-``` syntax
-newpkg pkgAppx Appx HelloWorld
-newpkg pkgDrv Driver Blinky
-newpkg pkgFile File MyFile
-newpkg pkgFile Registry MyRegKey
-```
-
-
 ## <span id="related_topics"></span>Related topics
 
-
-[What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)
+[IoT Core Add-ons](iot-core-adk-addons.md)
 
 [IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
-
- 
-
- 
-
-
-
