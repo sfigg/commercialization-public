@@ -12,7 +12,7 @@ ms.assetid: ACA5CD79-BBD5-4DD1-86DA-0285B93982BD
 
 The EnterpriseExt configuration service provider allows OEMs to set their own unique ID for their devices, set display brightness values, and set the LED behavior.
 
-**Note**   The EnterpriseExt CSP is only supported in Windows 10 Mobile.
+> **Note**   The EnterpriseExt CSP is only supported in Windows 10 Mobile.
 
  
 

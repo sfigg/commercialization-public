@@ -12,7 +12,7 @@ ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
 
 The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings, such as language and themes, lock down a device, and configure custom layouts on a device. For example, the administrator can lock down a device so that only applications specified in an Allow list are available. Apps not on the Allow list remain installed on the device, but are hidden from view and blocked from launching.
 
-**Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
+> **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
  
 
@@ -57,7 +57,7 @@ When using the AssignedAccessXml in a provisioning package using the Windows Ima
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>ActionCenter</p></td>
+<td style="vertical-align:top"><p>ActionCenter</p></td>
 <td><p>You can enable or disable the Action Center (formerly known as Notification Center) on the device. Set to true to enable the Action Center, or set to false to disable the Action Center.</p>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>&lt;ActionCenter enabled=&quot;true&quot;&gt;&lt;/ActionCenter&gt;</code></pre>
@@ -80,7 +80,7 @@ When using the AssignedAccessXml in a provisioning package using the Windows Ima
 <pre class="syntax" space="preserve"><code>&lt;ActionCenter enabled=&quot;true&quot; actionCenterNotificationEnabled=&quot;0&quot;/&gt;</code></pre></td>
 </tr>
 <tr class="even">
-<td><p>StartScreenSize</p></td>
+<td style="vertical-align:top"><p>StartScreenSize</p></td>
 <td><p>Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions.</p>
 <p>Valid values:</p>
 <ul>
@@ -92,7 +92,7 @@ When using the AssignedAccessXml in a provisioning package using the Windows Ima
 <pre class="syntax" space="preserve"><code>&lt;StartScreenSize&gt;Large&lt;/StartScreenSize&gt;</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>Application</p></td>
+<td style="vertical-align:top"><p>Application</p></td>
 <td><p>Provide the product ID for each app that will be available on the device.</p>
 <p>You can find the product ID for a locally developed app in the AppManifest.xml file of the app. For the list of product ID and AUMID see [ProductIDs in Windows 10 Mobile](#productid).</p>
 <p>To turn on the notification for a Windows app, you must include the application's AUMID in the lockdown XML. However, the user can change the setting at any time from user interface.</p>
@@ -139,7 +139,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 &lt;/Apps&gt;</code></pre></td>
 </tr>
 <tr class="even">
-<td><p>Folder</p></td>
+<td style="vertical-align:top"><p>Folder</p></td>
 <td><p>A folder should be contained in &lt;Applications/&gt; node among with other &lt;Application/&gt; nodes, it shares most grammar with the Application Node, <strong>folderId</strong> is mandatory, <strong>folderName</strong> is optional, which is the folder name displayed on Start. <strong>folderId</strong> is a unique unsigned integer for each folder.</p>
 <p>For example:</p>
 <pre class="syntax" space="preserve"><code>&lt;Application folderId=&quot;4&quot; folderName=&quot;foldername&quot;&gt;
@@ -164,7 +164,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 &lt;/Application&gt;</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>Settings</p></td>
+<td style="vertical-align:top"><p>Settings</p></td>
 <td><p><strong>Settings pages</strong></p>
 <p>Starting in Windows 10, version 1511, you can specify the following settings pages in the lockdown XML file.</p>
 <div class="alert">
@@ -331,7 +331,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 <p>To remove access to all of the settings in the system, the settings application would simply not be listed in the app list for a particular role.</p></td>
 </tr>
 <tr class="even">
-<td><p>Buttons</p></td>
+<td style="vertical-align:top"><p>Buttons</p></td>
 <td><p>The following list identifies the hardware buttons on the device that you can lock down in <strong>ButtonLockdownList</strong>. When a user taps a button that is in the lockdown list, nothing will happen.</p>
 <ul>
 <li><p>Start</p>
@@ -471,7 +471,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 &lt;/HandheldLockdown&gt;</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>MenuItems</p></td>
+<td style="vertical-align:top"><p>MenuItems</p></td>
 <td><p>Use <strong>DisableMenuItems</strong> to prevent use of the context menu, which is displayed when a user presses and holds an application in the All Programs list. You can include this entry in the default profile and in any additional user role profiles that you create.</p>
 <p>Example:</p>
 <pre class="syntax" space="preserve"><code>&lt;MenuItems&gt;
@@ -486,7 +486,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 </div></td>
 </tr>
 <tr class="even">
-<td><p>Tiles</p></td>
+<td style="vertical-align:top"><p>Tiles</p></td>
 <td><p><strong>Turning-on tile manipulation</strong></p>
 <p>By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile.</p>
 <p>If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile.</p>
@@ -577,7 +577,7 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 &lt;/HandheldLockdown&gt;</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>CSP Runner</p></td>
+<td style="vertical-align:top"><p>CSP Runner</p></td>
 <td><p>Allows CSPs to be executed on the device per user role. You can use this to implement role specific policies, such as changing the color scheme when an admin logs on the device, or to set configurations per role.</p></td>
 </tr>
 </tbody>
@@ -703,7 +703,7 @@ The accent color to apply as the foreground color for tiles, controls, and other
 <td><p>Optional colors, as defined by the OEM</p></td>
 </tr>
 <tr class="even">
-<td><p>151</p></td>
+<td><p><strong>151</strong></p></td>
 <td><p>Custom accent color for Enterprise</p></td>
 </tr>
 </tbody>
@@ -733,8 +733,8 @@ An integer that specifies the time zone of the device. The following table shows
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1664,7 +1664,7 @@ The following table lists the product ID and AUMID for each app that is included
 
  
 
-10/10/2016
+
 
 
 

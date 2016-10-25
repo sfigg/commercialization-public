@@ -308,16 +308,13 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
 </MgmtTree>
 ```
 
-## Related topics
 
-
-[EnterpriseAssignedAccess configuration service provider](enterpriseassignedaccess-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

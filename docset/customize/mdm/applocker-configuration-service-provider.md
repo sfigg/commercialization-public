@@ -40,11 +40,7 @@ Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
 - [Whitelist example](#whitelist-example) - example for Windows 10 Mobile that denies all apps except the ones listed.
-- [Deny list for Windows Information Protection](#Deny-list-for-Windows-Information-Protection) - example for Windows 10, version 1607 that denies all known unenlightened first party desktop apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
-
- 
-
-For a step-by-step guide for getting the publisher and product names for various Windows apps, see [Find publisher and product name of apps](#productname).
+- [Deny list for Windows Information Protection](#deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies all known unenlightened first party desktop apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 <a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -1380,7 +1376,6 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
  
 
-10/10/2016
 
 
 
