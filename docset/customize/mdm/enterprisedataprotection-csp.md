@@ -12,14 +12,14 @@ ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 
 The EnterpriseDataProtection configuration service provider (CSP) is used to configure Windows Information Protection (WIP) (formerly known as Enterprise Data Protection) specific settings. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
-**Note**  
+> **Note**  
 To make WIP functional the AppLocker CSP and the network isolation specific settings must also be configured. For more information, see [AppLocker CSP](applocker-configuration-service-provider.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
 
 This CSP was added in Windows 10, version 1607.
 
  
 
-While WIP has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPN CSP](vpnv2-configuration-service-provider.md).
+While WIP has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPNv2 CSP](vpnv2-csp.md).
 
 To learn more about WIP, see the following TechNet topics:
 
@@ -53,7 +53,7 @@ A list of domains used by the enterprise for its user identities separated by pi
 
 Changing the primary enterprise ID is not supported and may cause unexpected behavior on the client.
 
-**Note**  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
+> **Note**  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
 
  
 
@@ -82,7 +82,7 @@ Specifies whether the protection under lock feature (also known as encrypt under
 
 The CSP checks the current edition and hardware support (TPM), and returns an error message if the device does not have the required hardware.
 
-**Note**  This setting is only supported in Windows 10 Mobile.
+> **Note**  This setting is only supported in Windows 10 Mobile.
 
  
 
@@ -91,7 +91,7 @@ Supported operations are Add, Get, Replace and Delete. Value type is integer.
 <a href="" id="settings-datarecoverycertificate"></a>**Settings/DataRecoveryCertificate**  
 Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through MDM instead of Group Policy.
 
-**Note**  If this policy and the corresponding Group Policy setting are both configured, the Group Policy setting is enforced.
+> **Note**  If this policy and the corresponding Group Policy setting are both configured, the Group Policy setting is enforced.
 
  
 
@@ -190,7 +190,6 @@ Supported operation is Get. Value type is integer.
 
  
 
-10/10/2016
 
 
 

@@ -310,7 +310,7 @@ DDF files are used only with OMA DM provisioning XML.
 
  
 
-10/10/2016
+
 
 
 

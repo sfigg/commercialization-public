@@ -12,7 +12,7 @@ ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
 
 The EMAIL2 configuration service provider (CSP) is used to configure Simple Mail Transfer Protocol (SMTP) email accounts.
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_MAIL capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_MAIL capabilities to be accessed from a network configuration application.
 On the desktop, only per user configuration is supported.
 
  
@@ -74,7 +74,7 @@ Valid values are one of the following:
 -   0 - Server authentication is not required.
 -   1 - Server authentication is required.
 
-**Note**  If this value is not specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
+> **Note**  If this value is not specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
 
  
 
@@ -160,7 +160,7 @@ Required. Character string that specifies the name of the email service to creat
 
 Supported operations are Get, Add, Replace, and Delete.
 
-**Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+> **Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
  
 
@@ -169,7 +169,7 @@ Required. Character string that specifies the type of email service to create or
 
 Supported operations are Get, Add, Replace, and Delete.
 
-**Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+> **Note**   The EMAIL2 Configuration Service Provider does not support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
  
 
@@ -327,7 +327,7 @@ Windows 10 Mobile supports Transport Layer Security (TLS), but this cannot be e
 
  
 
-10/10/2016
+
 
 
 
