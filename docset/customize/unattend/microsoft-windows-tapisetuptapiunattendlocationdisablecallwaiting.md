@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **DisableCallWaiting**
+[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **DisableCallWaiting**
 
 ## Applies To
 

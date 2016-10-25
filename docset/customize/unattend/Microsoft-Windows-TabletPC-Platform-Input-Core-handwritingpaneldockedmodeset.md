@@ -41,7 +41,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core-win7-microsoft-windows-tabletpc-platform-input-core.md) | **HandwritingPanelDockedModeSet**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | **HandwritingPanelDockedModeSet**
 
 ## Valid Passes
 

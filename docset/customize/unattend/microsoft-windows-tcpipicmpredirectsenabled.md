@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md) | **IcmpRedirectsEnabled**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | **IcmpRedirectsEnabled**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md).
 
 ## XML Example
 

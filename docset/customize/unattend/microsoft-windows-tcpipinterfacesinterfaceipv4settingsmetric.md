@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md) | **Metric**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md) | **Metric**
 
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md).
 
 ## XML Example
 

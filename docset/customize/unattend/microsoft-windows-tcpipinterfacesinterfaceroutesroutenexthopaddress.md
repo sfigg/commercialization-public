@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md) | [Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md) | **NextHopAddress**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md) | [Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md) | **NextHopAddress**
 
 ## Applies To
 

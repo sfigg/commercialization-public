@@ -55,7 +55,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **CountryOrRegion**
+[Microsoft-Windows-TapiSetup](mmicrosoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **CountryOrRegion**
 
 ## Applies To
 

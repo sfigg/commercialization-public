@@ -45,12 +45,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **InternationalCarrierCode**
+[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **InternationalCarrierCode**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md).
 
 ## XML Example
 

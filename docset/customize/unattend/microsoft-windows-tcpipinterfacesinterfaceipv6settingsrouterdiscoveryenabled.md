@@ -47,7 +47,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md) | **RouterDiscoveryEnabled**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md) | **RouterDiscoveryEnabled**
 
 ## Applies To
 

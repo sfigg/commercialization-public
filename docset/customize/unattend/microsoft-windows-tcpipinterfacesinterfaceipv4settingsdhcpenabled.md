@@ -47,7 +47,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md) | **DhcpEnabled**
+[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md) | **DhcpEnabled**
 
 ## Applies To
 

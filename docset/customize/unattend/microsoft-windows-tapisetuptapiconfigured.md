@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md) | **TapiConfigured**
+[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md) | **TapiConfigured**
 
 ## Applies To
 
