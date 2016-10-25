@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **Manufacturer**
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **Manufacturer**
 
 ## Applies To
 

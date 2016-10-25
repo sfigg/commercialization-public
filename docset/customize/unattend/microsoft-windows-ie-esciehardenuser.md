@@ -45,12 +45,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md) | **IEHardenUser**
+[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md) | **IEHardenUser**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output specifies that ESC is enabled for all users on the comp
 
 [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)
 
-[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md)
+[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md)
 
  
 

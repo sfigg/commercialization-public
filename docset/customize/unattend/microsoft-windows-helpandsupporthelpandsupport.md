@@ -73,7 +73,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md) | `HelpAndSupport`
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | `HelpAndSupport`
 
 ## XML Example
 

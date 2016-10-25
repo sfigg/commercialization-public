@@ -41,9 +41,7 @@ Accelerators are menu options in Internet Explorer® that help to automate commo
 specialize
 
 ## Parent Hierarchy
-
-
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [Accelerators](microsoft-windows-ie-internetexploreraccelerators.md) | [Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md) | `ItemKey`
+microsoft-windows-ie-internetexplorer.md) | [Accelerators](microsoft-windows-ie-internetexploreraccelerators.md) | [Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md) | `ItemKey`
 
 ## Applies To
 

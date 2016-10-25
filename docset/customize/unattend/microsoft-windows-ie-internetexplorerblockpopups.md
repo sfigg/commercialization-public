@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | **BlockPopups**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | **BlockPopups**
 
 ## Applies To
 
@@ -66,7 +66,7 @@ The following XML output specifies how to disable pop-up blocking.
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
  
 

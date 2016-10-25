@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **TileColor**
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **TileColor**
 
 ## Applies To
 

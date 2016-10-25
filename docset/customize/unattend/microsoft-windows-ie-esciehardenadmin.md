@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md) | **IEHardenAdmin**
+[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md) | **IEHardenAdmin**
 
 ## Applies To
 
@@ -68,7 +68,7 @@ The following XML output specifies that ESC is enabled for all administrators on
 
 [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)
 
-[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md)
+[Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md)
 
  
 

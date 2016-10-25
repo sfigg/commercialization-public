@@ -55,7 +55,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | `LogoURL`
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | `LogoURL`
 
 ## Applies To
 
@@ -78,7 +78,7 @@ The following example shows how to set a customized **Help and Support** home pa
 ## Related topics
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md)
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md)
 
 [Logo](microsoft-windows-helpandsupporthelpandsupportlogo.md)
 
