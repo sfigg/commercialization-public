@@ -9,7 +9,6 @@ ms.assetid: b0993f2d-6269-412f-a329-af25fff34ca2
 
 # ICSPValidate
 
-
 This interface is optional. It is called by ConfigManager2 as it batches commands before transactioning begins. This allows the configuration service provider to validate the node before performing specific actions. It is generally only used for configuration service providers that need to expose UI.
 
 ``` syntax
@@ -39,14 +38,11 @@ interface ICSPValidate : IUnknown
 
 ## Related topics
 
-
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 
