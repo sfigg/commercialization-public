@@ -1,12 +1,12 @@
 ---
 author: Justinha
-Description: 'Lab 1e: Change settings and run scripts with an answer file'
+Description: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1e: Change settings and run scripts with an answer file'
+title: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ---
 
-# Lab 1e: Change settings and run scripts with an answer file
+# <span id="Add_settings"></span>Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
@@ -40,7 +40,7 @@ You can specify which configuration pass to add new settings:
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
-**Create a catalog file**
+**Step 1: Create a catalog file**
 
 1.  Start **Windows System Image Manager**.
 
@@ -56,7 +56,7 @@ You can specify which configuration pass to add new settings:
 
     -   Make sure the Windows base-image file **(\\Sources\\Install.wim**) is in a folder that has read-write privileges, such as a USB flash drive or on your hard drive.
 
-**Create an answer file**
+**Step 2: Create an answer file**
 
 -   Click **File** > **New Answer File**.
 
@@ -64,7 +64,7 @@ You can specify which configuration pass to add new settings:
 
     **Note**   If you open an existing answer file, you might be prompted to associate the answer file with the image. Click **Yes**.
 
-**Add new answer file settings**
+**Step 3: Add new answer file settings**
 
 1.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
 
@@ -94,13 +94,13 @@ More common settings:
 
 *  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
 
-**Save the answer file**
+**Step 4: Save the answer file**
 
 -   Save the answer file, for example: **C:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
      
-**Create a script**
+**Step 5: Create a script**
 
 -   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
 
@@ -116,17 +116,20 @@ More common settings:
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
 
-1.  Mount the Windows image. The mounting process maps the contents of an image file to a location where you can view and modify the mounted image.
+### <span id="Mount_the_image"></span>Mount the image
 
-    ``` syntax
-    md C:\mount\windows
-    Dism /Mount-Image /ImageFile:"C:\Images\WindowsWithOffice.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
-    ```
+**Step 6: Mount the images**
 
-    Where *C* is the drive letter of the drive that contains the image and *1* is the index of the image that you want to use.
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
-    This step can take several minutes.
+1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+
+### <span id="Add_the_answer_file"></span>Add the answer file
+**Step 7: Add the answer file**
 2.  Copy the answer file into the image into the \\Windows\\Panther folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
     ``` syntax
@@ -135,8 +138,13 @@ More common settings:
     MkDir c:\mount\windows\Fabrikam
     Copy C:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
     ```
+## <span id="Unmount_the_images"></span> Unmount the images
 
-3.  Commit the changes and unmount the Windows image:
+**Step 8: Unmount the images**
+
+1.  Close all applications that might access files from the image.
+
+2.  Commit the changes and unmount the Windows image:
 
     ``` syntax
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
@@ -146,25 +154,29 @@ More common settings:
 
     This process may take several minutes.
 
-4.  Copy the new image to the storage drive.
-
 ## <span id="Try_it_out"></span>Try it out
-[Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
+
+**Step 9: Apply the image to a new PC**
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
-    Note, because this image is set to boot to audit mode, you won't be able to apply any siloed provisioning packages. 
-4.  Disconnect the drives, then reboot (`exit`).
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+	
+4.  Apply the recovery image:
+    ``` syntax
+	D:\ApplyRecovery.bat
+	```
+	
+5.  Disconnect the drives, then reboot (`exit`).
+	
+**Step 10: Verify settings and scripts**
 
-**Verify settings and scripts**
 If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
 
 1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
 
-Leave the PC booted into audit mode to continue to either of the following labs:
+Leave the PC booted into audit mode to continue to the following lab:
 
--  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
-
--  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+-   [Lab 8: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 

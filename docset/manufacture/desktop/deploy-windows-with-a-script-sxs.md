@@ -2,10 +2,10 @@
 author: kpacquer
 Description: 'Deploy Windows using a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1b: Deploy Windows using a script'
+title: 'Lab 2: Deploy Windows using a script'
 ---
 
-# Lab 1b: Deploy Windows using a script
+# Lab 2: Deploy Windows using a script
 
 You can use scripts to take a Windows image and deploy Windows onto new PCs quickly. You can modify these scripts to change the size of the drive partitions, or to completely automate deployment. 
 
@@ -65,7 +65,7 @@ The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.t
 	
 ## <span id="Apply_desktop_applications"></span>Step 3: Apply desktop applications
 
-**Skip this step** until you've completed [Lab 1f: Add Windows desktop applications with siloed provisioning packages (SPP)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
+**Skip this step** until you've completed [Lab 11: Add Windows desktop applications with siloed provisioning packages (SPP)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
 
 1.  Apply desktop applications.
     ```syntax
@@ -96,9 +96,4 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 
 ## <span id="Whats_next"></span>What's next
 
-The next labs show you how to customize the images. You can do them in any order.
-*  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-*  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
-*  [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
-*  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+[Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)

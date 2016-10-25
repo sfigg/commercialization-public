@@ -155,18 +155,3 @@ In order to boot Windows RE directly from memory (also known as RAM disk boot), 
 </table>
 
  
-
-## <span id="related_topics"></span>Related topics
-
-
-[Windows Recovery Environment (Windows RE) Technical Reference](windows-recovery-environment--windows-re--technical-reference.md)
-
- 
-
- 
-
-
-
-
-
-
