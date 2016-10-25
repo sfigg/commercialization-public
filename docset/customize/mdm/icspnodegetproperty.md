@@ -9,11 +9,9 @@ ms.assetid: a2bdc158-72e0-4cdb-97ce-f5cf1a44b7db
 
 # ICSPNode::GetProperty
 
-
 This method returns a property value from a configuration service provider node.
 
 ## Syntax
-
 
 ``` syntax
 HRESULT GetProperty([in] REFGUID guidProperty, 
@@ -22,20 +20,17 @@ HRESULT GetProperty([in] REFGUID guidProperty,
 
 ## Parameters
 
-
 <a href="" id="guidproperty"></a>*guidProperty*  
-GUID that specifies the property to return.
+<p style="margin-left: 25px">GUID that specifies the property to return.</p>
 
 <a href="" id="pvarvalue"></a>*pvarValue*  
-Value to return.
+<p style="margin-left: 25px">Value to return.</p>
 
 ## Return Value
-
 
 A value of S\_OK indicates that the value was successfully returned. CFGMGR\_E\_COMMANDNOTSUPPORTED indicates that the node does not implement the property itself, but delegates the management of the property to ConfigManager2.
 
 ## Remarks
-
 
 Every node must handle the CFGMGR\_PROPERTY\_DATATYPE property.
 
@@ -43,19 +38,15 @@ For externally–transactioned nodes, no additional methods are required for suc
 
 ## Requirements
 
-
 **Header:** None
 
 ## Related topics
-
 
 [Create a custom configuration service provider](create-a-custom-configuration-service-provider.md)
 
  
 
- 
 
-10/10/2016
 
 
 
