@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableLUA
 
 
-`EnableLUA` specifies whether Windows® User Account Controls (UAC) notifies the user when programs try to make changes to the computer. UAC was formerly known as Limited User Account (LUA).
+`EnableLUA` specifies whether Windows User Account Controls (UAC) notifies the user when programs try to make changes to the computer. UAC was formerly known as Limited User Account (LUA).
 
 ## Values
 
@@ -47,7 +47,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings-win7-microsoft-windows-lua-settings.md) | **EnableLUA**
+[Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings.md) | **EnableLUA**
 
 ## Applies To
 
@@ -66,7 +66,7 @@ The following XML output specifies that Windows does not notify the user when pr
 ## Related topics
 
 
-[Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings-win7-microsoft-windows-lua-settings.md)
+[Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings.md)
 
  
 

@@ -61,7 +61,7 @@ This setting is used for telemetry only. There is no OS action associated with t
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md) | **CoexistenceSupport**
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md) | **CoexistenceSupport**
 
 ## Valid Configuration Passes
 

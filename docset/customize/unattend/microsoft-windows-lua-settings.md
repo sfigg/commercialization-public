@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-LUA-Settings
 
 
-The `Microsoft-Windows-LUA-Settings` component includes settings related to the Windows® User Account Controls (UAC), formerly known as Limited User Account (LUA).
+The `Microsoft-Windows-LUA-Settings` component includes settings related to the Windows User Account Controls (UAC), formerly known as Limited User Account (LUA).
 
 ## In This Section
 
@@ -26,7 +26,7 @@ The `Microsoft-Windows-LUA-Settings` component includes settings related to the 
 <tbody>
 <tr class="odd">
 <td><p>[EnableLUA](microsoft-windows-lua-settingsenablelua.md)</p></td>
-<td><p>Specifies whether the Windows® User Account Controls (UAC) notify the user when programs try to make changes to the computer.</p></td>
+<td><p>Specifies whether the windows User Account Controls (UAC) notify the user when programs try to make changes to the computer.</p></td>
 </tr>
 </tbody>
 </table>

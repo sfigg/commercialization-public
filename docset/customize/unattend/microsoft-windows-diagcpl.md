@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-DiagCpl module manages settings for the **Online Support** icon in the **Additional Information** page located in the **Troubleshooting** Control Panel.
 
-When users experience problems with their computers, Windows® offers a path to resolve the issues through the **Troubleshooting** Control Panel. If the **Troubleshooting** Control Panel does not offer a satisfactory solution, users can choose **Explore additional options**. This opens the **Additional Information** page of **Troubleshooting** Control Panel. This page offers a number of options. One of these is **Online Support**. By default, this link opens the **Escalation** page in Help and Support.
+When users experience problems with their computers, Windows offers a path to resolve the issues through the **Troubleshooting** Control Panel. If the **Troubleshooting** Control Panel does not offer a satisfactory solution, users can choose **Explore additional options**. This opens the **Additional Information** page of **Troubleshooting** Control Panel. This page offers a number of options. One of these is **Online Support**. By default, this link opens the **Escalation** page in Help and Support.
 
 ## In This Section
 
