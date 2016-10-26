@@ -58,7 +58,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | **ExtendOSPartition**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **ExtendOSPartition**
 
 ## Applies To
 

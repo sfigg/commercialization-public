@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module-win7-microsoft-windows-disk-failure-diagnostic-module.md) | **DfdAlertTextOverride**
+[Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module.md) | **DfdAlertTextOverride**
 
 ## Applies To
 

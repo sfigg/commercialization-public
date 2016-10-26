@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | **RunAsynchronous**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **RunAsynchronous**
 
 ## Applies To
 

@@ -194,7 +194,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | [Reseal](microsoft-windows-deploymentreseal.md) | **Mode**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Reseal](microsoft-windows-deploymentreseal.md) | **Mode**
 
 ## Applies To
 

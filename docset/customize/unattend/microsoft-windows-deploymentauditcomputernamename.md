@@ -50,7 +50,7 @@ auditSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deploymentauditcomputername.md) | **Name**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deploymentauditcomputername.md) | **Name**
 
 ## Applies To
 

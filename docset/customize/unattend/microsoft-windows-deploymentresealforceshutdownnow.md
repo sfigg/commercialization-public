@@ -187,7 +187,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | [Reseal](microsoft-windows-deploymentreseal.md) | **ForceShutdownNow**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Reseal](microsoft-windows-deploymentreseal.md) | **ForceShutdownNow**
 
 ## Applies To
 

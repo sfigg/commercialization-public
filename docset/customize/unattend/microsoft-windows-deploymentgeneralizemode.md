@@ -50,7 +50,7 @@ auditUser
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deploymentgeneralize.md) | **Mode**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deploymentgeneralize.md) | **Mode**
 
 ## Applies To
 

@@ -48,7 +48,7 @@ auditUser
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deploymentgeneralize.md) | **ForceShutdownNow**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deploymentgeneralize.md) | **ForceShutdownNow**
 
 ## Applies To
 
