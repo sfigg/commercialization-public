@@ -66,7 +66,7 @@ The following XML output specifies the URLs of local intranet sites with trusted
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
 [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)
 

@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | **FeedItem**
+[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | **FeedItem**
 
 ## Applies To
 

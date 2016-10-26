@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md) | **FeedKey**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md) | **FeedKey**
 
 ## Valid Configuration Passes
 
