@@ -83,6 +83,9 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**October 17, 2016**
+- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
+
 **October 12, 2016**
 [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): 
 -  New steps added to make sure the feature manifest, OEMCommonFM.xml, is included in the TestOEMInput.xml file.

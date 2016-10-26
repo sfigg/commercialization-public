@@ -27,7 +27,7 @@ Required. Returns an application-specific global unique device identifier by def
 
 Supported operation is Get.
 
-The **UseHWDevID** parm of the [DMAcc configuration service provider](dmacc-configuration-service-provider.md) or DMS configuration service provider can be used to modify the return value to instead return a hardware device ID as follows:
+The **UseHWDevID** parm of the [DMAcc configuration service provider](dmacc-csp.md) or DMS configuration service provider can be used to modify the return value to instead return a hardware device ID as follows:
 
 -   For GSM phones, the IMEI is returned.
 
@@ -70,7 +70,7 @@ Supported operation is Get.
 
  
 
-10/10/2016
+
 
 
 

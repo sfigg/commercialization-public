@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: KPacquer
 Description: Customize Windows RE
 ms.assetid: ce94e3c4-03f6-46d1-b2a8-cc5d75c7a66d
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -11,12 +11,15 @@ title: Customize Windows RE
 
 You can customize Windows Recovery Environment (Windows RE) by adding languages, packages drivers, and custom diagnostic or troubleshooting tools.
 
-The Windows RE image (winre.wim) is stored inside the Windows image (install.wim), and is eventually copied to the Windows RE tools partition on the destination PC or device.
+The WinRE image is included inside the Windows 10 and Windows Server 2016 images, and is eventually copied to the Windows RE tools partition on the destination PC or device. To modify it, you'll mount the Windows image, then mount the WinRE image inside it. Make your changes, unmount the WinRE image, then unmount the Windows image. 
+
+   ![image: Mount the Windows image, then mount the recovery image inside it. Make changes, then unmount the recovery image, and finally the Windows image](images/customize-recovery-image.jpg)
 
 We recommend that when you update your Windows images with languages and boot-critical drivers, update the Windows RE image at the same time.
 
 This topic also gives optional steps to optimize the Windows RE image after updating it.
 
+   
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
@@ -171,7 +174,6 @@ Occasionally, a Windows update may require you to update the Windows RE image.
 
 ## <span id="Step_6__Optimizing_the_image__part_1__optional_"></span><span id="step_6__optimizing_the_image__part_1__optional_"></span><span id="STEP_6__OPTIMIZING_THE_IMAGE__PART_1__OPTIONAL_"></span>Step 6: Optimizing the image, part 1 (optional)
 
-
 After adding a language or Windows update package, you can reduce the size of the final Windows RE package by checking for duplicate files and marking the older versions as superseded.
 
 1.  Optimize the image:
@@ -238,13 +240,3 @@ If you’re deploying your reference image by using **Windows PE**, **Diskpart**
 [Deploy Push-Button Reset Features](deploy-push-button-reset-features.md)
 
 [REAgentC Command-Line Options](reagentc-command-line-options.md)
-
- 
-
- 
-
-
-
-
-
-

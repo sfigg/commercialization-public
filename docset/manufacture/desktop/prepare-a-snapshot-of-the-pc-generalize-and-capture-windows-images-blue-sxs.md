@@ -1,12 +1,12 @@
 ---
 author: kpacquer
-Description: 'Lab 1g: Make changes from Windows (audit mode)'
+Description: 'Lab 8: Make changes from Windows (audit mode)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1g: Make changes from Windows (audit mode)'
+title: 'Lab 8: Make changes from Windows (audit mode)'
 ---
 
-# Lab 1g: Make changes from Windows (audit mode)
+# Lab 8: Make changes from Windows (audit mode)
 
 You can use audit mode to customize Windows using the familiar Windows environment. In audit mode, you can add Windows desktop applications, change system settings, add data, and run scripts.  
 
@@ -131,35 +131,27 @@ This step is required when you're capturing images to apply to other PCs.
 	copy C:\WindowsWithFinalChanges.wim N:\Images\WindowsWithFinalChanges.wim
 	```
 
-## <span id="Apply_the_image_to_a_new_device"></span><span id="apply_the_image_to_a_new_device"></span><span id="APPLY_THE_IMAGE_TO_A_NEW_DEVICE"></span>Step 8: Apply the image to a new device (optional, to be done in the factory process)
+## <span id="Try_it_out"></span>Try it out
 
-This represents the steps you'd use in the factory. For the purposes of the lab, reuse the reference device for this.
-
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
+**Step 6: Apply the image to a new PC**
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
-
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`) or connect to a network drive (`net use D: \\server\share`).
-
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\WindowsWithFinalChanges.wim`.
-
-4.  Apply the SPPs. This example applies the Microsoft Office base pack, plus two Microsoft Office language packs: fr-fr and de-de.
-    
-	```syntax
-    D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
-    D:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
-	```
-
-5. 	Apply the recovery image after applying the SPP:
-
-	```syntax
+2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+	
+4.  Apply the recovery image:
+    ``` syntax
 	D:\ApplyRecovery.bat
 	```
 	
-6.  Disconnect the drives, then reboot (`exit`).
+5.  Disconnect the drives, then reboot (`exit`).
 	
-## <span id="Verify_everything"></span>Step 9: Verify everything
+**Step 7: Verify customizations**
 
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
 2.  See that the changes you made in audit mode are there.
+
+
+Next steps: [Lab 9: Update the recovery image](update-the-recovery-image.md)

@@ -12,7 +12,7 @@ ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
-**Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -91,8 +91,6 @@ Supported operation is Get.
 
 <a href="" id="ext-microsoft-osplatform"></a>**Ext/Microsoft/OSPlatform**  
 Required. Returns the OS platform of the device. For Windows 10 for desktop editions, it returns the ProductName as defined in HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProductName.
-
-For
 
 Supported operation is Get.
 
@@ -187,7 +185,7 @@ Supported operation is Get.
 
  
 
-10/10/2016
+
 
 
 

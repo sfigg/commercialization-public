@@ -495,13 +495,13 @@ This topic shows the OMA DM device description framework (DDF) for the **DeviceL
 ## Related topics
 
 
-[DeviceLock configuration service provider](devicelock-configuration-service-provider.md)
+[DeviceLock configuration service provider](devicelock-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

@@ -759,7 +759,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DeviceS
 
  
 
-10/10/2016
+
 
 
 

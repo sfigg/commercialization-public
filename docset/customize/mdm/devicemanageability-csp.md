@@ -142,7 +142,7 @@ Result of the query.
 
  
 
-10/10/2016
+
 
 
 

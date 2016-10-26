@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: KPacquer
 Description: 'Lab 1: Customize and install Windows using the Windows Imaging and Configuration Designer (ICD)'
 ms.assetid: 97f2cc2b-ae4b-4117-a73b-42e508fe7a03
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -34,10 +34,7 @@ Here’s a sample set of hardware configurations that you might design.
 | Compact OS                   | Yes          | Yes                 | No                                |
 
  
-
-This lab will walk you through hardware configuration 1 with optional steps included for hardware configuration 2. Lab 1b continues the lab to include Windows desktop applications to deploy hardware configuration 1b and 2. Lab 1c continues the lab to show you how to edit an expand on existing projects.
-
-## <span id="loadImage"></span><span id="loadimage"></span><span id="LOADIMAGE"></span>Step 1: Create a new project in Windows ICD
+,## <span id="loadImage"></span><span id="loadimage"></span><span id="LOADIMAGE"></span>Step 1: Create a new project in Windows ICD
 
 
 1.  Click **Start**, type **icd**, and then click **Windows Imaging and Configuration Designer**.

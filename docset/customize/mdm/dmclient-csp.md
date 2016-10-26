@@ -27,7 +27,7 @@ Required. The root node for all settings that belong to a single management serv
 
 Supported operation is Get.
 
-<a href="" id="provider-providerid"></a>**Provider/*ProviderID***  
+<a href="" id="provider-providerid"></a>**Provider/ProviderID**  
 Optional. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. As a best practice, use text that doesn’t require XML/URI escaping.
 
 Supported operations are Get and Add.
@@ -42,7 +42,7 @@ Optional. Character string that contains the unique enterprise device ID. The va
 
 Supported operations are Get and Add.
 
-**Note**   Although hardware device IDs are guaranteed to be unique, there is a concern that this is not ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION configuration service provider’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
+> **Note**   Although hardware device IDs are guaranteed to be unique, there is a concern that this is not ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION configuration service provider’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
 This node is required and must be set by the server before the client certificate renewal is triggered.
 
  
@@ -50,7 +50,7 @@ This node is required and must be set by the server before the client certificat
 <a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
 Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that is managed by exchange and natively managed by a dedicated management server.
 
-**Note**  In some cases for the desktop, this node will return "not found" until the user sets up their email.
+> **Note**  In some cases for the desktop, this node will return "not found" until the user sets up their email.
 
  
 
@@ -87,7 +87,7 @@ Supported operation is Get.
 <a href="" id="provider-providerid-managementserviceaddress"></a>**Provider/*ProviderID*/ManagementServiceAddress**  
 Required. The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server.
 
-**Note**  When the ManagementServerAddressList value is set, the device ignores the value in ManagementServiceAddress.
+> **Note**  When the ManagementServerAddressList value is set, the device ignores the value in ManagementServiceAddress.
 
  
 
@@ -131,7 +131,7 @@ Supported operations are Get, Replace, and Delete.
 <a href="" id="provider-providerid-syncapplicationversion"></a>**Provider/*ProviderID*/SyncApplicationVersion**  
 Optional. Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there is a client behavior change between 1.0 and 2.0.
 
-**Note**  
+> **Note**  
 This node is only supported in Windows 10 and later.
 
 Once you set the value to 2.0, it will not go back to 1.0.
@@ -213,7 +213,7 @@ Supported operations are Add, Get, Replace, and Delete.
 <a href="" id="provider-providerid-managementserveraddresslist"></a>**Provider/*ProviderID*/ManagementServerAddressList**  
 Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, etc... If there is only one, the angle brackets (&lt;&gt;) are not required.
 
-**Note**  The &lt; and &gt; should be escaped.
+> **Note**  The &lt; and &gt; should be escaped.
 
  
 
@@ -350,7 +350,7 @@ If there is no infinite schedule set, then a 24-hour schedule is created and sch
 
 **Invalid poll schedule: disable all poll schedules**
 
-**Note**   Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
+> **Note**   Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
 
  
 
@@ -548,8 +548,8 @@ The status error mapping is listed below.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -633,7 +633,7 @@ The following SyncML shows how to remotely unenroll the device. Note that this c
 
  
 
-10/10/2016
+
 
 
 

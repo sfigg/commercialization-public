@@ -12,7 +12,7 @@ ms.assetid: 43e73d8a-6617-44e7-8459-5c96f4422e63
 
 The DMAcc configuration service provider allows an OMA Device Management (DM) version 1.2 server to handle OMA DM account objects. The server can use this configuration service provider to add a new account or to manage an existing account, including an account that was bootstrapped by using the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md)
 
-**Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -251,7 +251,7 @@ The supported names are Subject and Stores; wildcard certificate search is not s
 
 Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name is not case sensitive.
 
-**Note**   %EF%80%80 is the UTF8-encoded character U+F000.
+> **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
 
  
 
@@ -273,7 +273,7 @@ Value type is string. Supported operations are Add, Get, and Replace.
 
  
 
-10/10/2016
+
 
 
 

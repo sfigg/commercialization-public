@@ -151,13 +151,13 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
 ## Related topics
 
 
-[DevInfo configuration service provider](devinfo-configuration-service-provider.md)
+[DevInfo configuration service provider](devinfo-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

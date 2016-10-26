@@ -101,6 +101,7 @@ Here’s how to set up your PC.
 **Install the Windows ADK for Windows 10**
 
 1.  If you have a previous version of the Windows Assessment and Deployment Kit (ADK), uninstall it.
+
 2.  Download the version of the [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows that you’re installing. **Run** the installer.
 
 3.  Click **Next** &gt; **Next** &gt; **Accept** to accept the defaults and to join the Customer Experience Improvement Program.
