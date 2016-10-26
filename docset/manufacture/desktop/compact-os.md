@@ -68,17 +68,17 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 **From Windows PE, determine if the OS is compacted:**
 
--   ``` syntax
-    Compact.exe /CompactOS:Query /WinDir:E:\Windows
-    ```
+``` syntax
+Compact.exe /CompactOS:Query /WinDir:E:\Windows
+```
 
-    Where E:\\Windows is the folder where Windows has been installed.
+Where E:\\Windows is the folder where Windows has been installed.
 
 **From an online installation, change from non-compacted to compacted OS:**
 
--   ``` syntax
-    Compact.exe /CompactOS:always
-    ```
+``` syntax
+Compact.exe /CompactOS:always
+```
 
 ### <span id="Single-instancing_of_provisioning_packages"></span><span id="single-instancing_of_provisioning_packages"></span><span id="SINGLE-INSTANCING_OF_PROVISIONING_PACKAGES"></span>Single-instancing of provisioning packages
 
@@ -95,8 +95,6 @@ DISM /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Customizations\USMT.ppk
 where *C* is the drive letter of the Windows partition.
 
 **Warning**  Do not put quotes with the /ImagePath:C:\\ option.
-
- 
 
 You can determine whether a provisioning package (.ppkg) is single-instanced by using fsutil.exe:
 
@@ -141,8 +139,6 @@ Some of the primary reasons for the increase over time in the memory footprint i
 -   **Servicing**. Hard disk space must be reserved for software patches to the operating system and for service pack releases.
 -   **System Restore Points**. Windows automatically generate restore points. The amount of space that is required by default is relative to the size of the hard drive. For more information about restore points, see the [Restore Points](http://go.microsoft.com/fwlink/?LinkId=142170) topic on MSDN.
     **Note**   Users can adjust the amount of space used on the computer for System Restore by using the **System Protection** user interface in the **System Properties** dialog box (Sysdm.cpl). Users can also use system image backups that are stored on an external hard disk to restore a system.
-
-     
 
 -   **Logs and Caches**. The operating system stores files such as event logs and error logs on the drive.
 
