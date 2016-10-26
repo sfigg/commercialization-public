@@ -43,7 +43,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 [Components](components-b-unattend.md)
 
-[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess-win7-microsoft-windows-sharedaccess.md)
+[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess.md)
 
  
 

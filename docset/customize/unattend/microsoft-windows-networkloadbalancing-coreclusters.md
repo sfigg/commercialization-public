@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md) | **Clusters**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | **Clusters**
 
 ## Applies To
 
@@ -154,7 +154,7 @@ The following XML output for the `Clusters` setting shows how to set up a cluste
 ## Related topics
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md)
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md)
 
  
 

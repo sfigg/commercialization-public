@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | **Interface**
+[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | **Interface**
 
 ## Applies To
 

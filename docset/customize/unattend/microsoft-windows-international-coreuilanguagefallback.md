@@ -49,7 +49,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md) | **UILanguageFallback**
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md) | **UILanguageFallback**
 
 ## Valid Configuration Passes
 
@@ -79,7 +79,7 @@ The following example shows how to set the fallback language to US English (Unit
 ## Related topics
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](mmicrosoft-windows-international-core.md)
 
  
 

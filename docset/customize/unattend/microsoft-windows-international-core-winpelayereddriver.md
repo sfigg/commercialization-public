@@ -60,7 +60,7 @@ This setting provides a means to select the specific keyboard to configure durin
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **LayeredDriver**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **LayeredDriver**
 
 ## Valid Configuration Passes
 
@@ -84,9 +84,9 @@ The following example configures the `LayeredDriver` setting to use the Japanese
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

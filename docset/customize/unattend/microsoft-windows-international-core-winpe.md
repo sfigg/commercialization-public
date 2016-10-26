@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-International-Core-WinPE component specifies the default language, locale, and other international settings to use during Windows® Setup or Windows Deployment Services installations.
 
-The settings in this component can be applied only in the windowsPE configuration pass. To specify language and locale settings in the oobeSystem and specialize configuration passes, see [Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md).
+The settings in this component can be applied only in the windowsPE configuration pass. To specify language and locale settings in the oobeSystem and specialize configuration passes, see [Microsoft-Windows-International-Core](microsoft-windows-international-core.md).
 
 ## In This Section
 

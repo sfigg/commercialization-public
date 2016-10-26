@@ -50,7 +50,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md) | **InputLocale**
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md) | **InputLocale**
 
 ## Valid Configuration Passes
 
@@ -79,7 +79,7 @@ The following example shows how to set the input locale to the English (US) Dvor
 ## Related topics
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

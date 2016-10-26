@@ -52,7 +52,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | [NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md) | **IpAddress**
+[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | [NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md) | **IpAddress**
 
 ## Applies To
 

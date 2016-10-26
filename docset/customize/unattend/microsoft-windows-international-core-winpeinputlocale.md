@@ -52,7 +52,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **InputLocale**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **InputLocale**
 
 ## Valid Configuration Passes
 
@@ -79,9 +79,9 @@ The following example shows how to set the input locale to the English (United S
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

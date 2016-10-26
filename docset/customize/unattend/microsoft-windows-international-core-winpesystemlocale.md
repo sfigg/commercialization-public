@@ -48,7 +48,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **SystemLocale**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **SystemLocale**
 
 ## Valid Configuration Passes
 
@@ -75,9 +75,9 @@ The following example shows how to set the system locale to English (United Stat
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

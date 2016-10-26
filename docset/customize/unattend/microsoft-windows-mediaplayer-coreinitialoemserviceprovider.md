@@ -43,7 +43,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core-win7-microsoft-windows-mediaplayer-core.md) | **InitialOEMServiceProvider**
+[Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core.md) | **InitialOEMServiceProvider**
 
 ## Applies To
 
@@ -62,7 +62,7 @@ The following XML output shows how to configure the `InitialOEMServiceProvider` 
 ## Related topics
 
 
-[Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core-win7-microsoft-windows-mediaplayer-core.md)
+[Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core.md)
 
  
 

@@ -46,7 +46,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **UserLocale**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **UserLocale**
 
 ## Valid Configuration Passes
 
@@ -75,7 +75,7 @@ The following example shows how to set the user locale to Japanese (Japan).
 
 [Available Language Packs](http://go.microsoft.com/fwlink/p/?linkid=200318)
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
  
 

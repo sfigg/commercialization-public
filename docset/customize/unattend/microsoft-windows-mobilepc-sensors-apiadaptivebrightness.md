@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md) | **AdaptiveBrightness**
+[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md) | **AdaptiveBrightness**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following sample XML output shows how to set adaptive brightness:
 ## Related topics
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md)
+[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md)
 
  
 

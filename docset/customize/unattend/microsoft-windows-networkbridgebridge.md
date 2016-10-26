@@ -48,7 +48,7 @@ generalize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md) | **Bridge**
+[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge.md) | **Bridge**
 
 ## Applies To
 

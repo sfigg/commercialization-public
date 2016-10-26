@@ -48,7 +48,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **UILanguageFallback**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **UILanguageFallback**
 
 ## Valid Configuration Passes
 
@@ -76,9 +76,9 @@ The following example shows how to change the fallback language to English (Unit
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
 [UILanguage](microsoft-windows-international-core-winpeuilanguage.md)
 

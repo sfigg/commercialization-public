@@ -44,7 +44,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md) | **UILanguage**
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md) | **UILanguage**
 
 ## Valid Configuration Passes
 

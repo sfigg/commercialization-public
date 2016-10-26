@@ -44,7 +44,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **Identifier**
+[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **Identifier**
 
 ## Applies To
 

@@ -42,7 +42,7 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | **SetupUILanguage**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **SetupUILanguage**
 
 ## Valid Configuration Passes
 
@@ -68,9 +68,9 @@ The following example shows how to configure the Windows Setup UI language to d
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

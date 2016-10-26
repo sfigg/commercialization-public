@@ -43,7 +43,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md) | [SetupUILanguage](microsoft-windows-international-core-winpesetupuilanguage.md) | **UILanguage**
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | [SetupUILanguage](microsoft-windows-international-core-winpesetupuilanguage.md) | **UILanguage**
 
 ## Valid Configuration Passes
 
@@ -69,9 +69,9 @@ The following example shows how to configure the Windows Setup UI language to d
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md)
+[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](mmicrosoft-windows-international-core.md)
 
  
 

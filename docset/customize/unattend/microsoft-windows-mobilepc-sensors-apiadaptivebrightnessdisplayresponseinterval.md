@@ -42,7 +42,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **DisplayResponseInterval**
+[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **DisplayResponseInterval**
 
 ## Applies To
 
@@ -63,7 +63,7 @@ This XML example shows how to set the minimum time between changes in display br
 ## Related topics
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md)
+[Microsoft-Windows-MobilePC-Sensors-API](mmicrosoft-windows-mobilepc-sensors-api.md)
 
 [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-apiadaptivebrightnessilluminancechangesensitivity.md)
 

@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md) | [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **ALRPoints**
+[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md) | [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **ALRPoints**
 
 ## Applies To
 

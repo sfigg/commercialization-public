@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **NameServerList**
+[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **NameServerList**
 
 ## Applies To
 
