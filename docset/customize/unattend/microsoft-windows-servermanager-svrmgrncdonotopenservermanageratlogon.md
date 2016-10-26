@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md) | **DoNotOpenServerManagerAtLogon**
+[Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md) | **DoNotOpenServerManagerAtLogon**
 
 ## Applies To
 
@@ -73,7 +73,7 @@ The following XML output shows how to specify that Server Manager opens the firs
 ## Related topics
 
 
-[Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md)
+[Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md)
 
 [DoNotOpenInitialConfigurationTasksAtLogon](microsoft-windows-outofboxexperiencedonotopeninitialconfigurationtasksatlogon.md)
 

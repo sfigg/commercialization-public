@@ -53,12 +53,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | **DiskConfiguration**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **DiskConfiguration**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Examples
 
@@ -78,7 +78,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)
 
  
 

@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core-win7-microsoft-windows-printing-spooler-core.md) | **Start**
+[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md) | **Start**
 
 ## Applies to
 

@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) | **SlicedEncryptionMinSize**
+[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md) | **SlicedEncryptionMinSize**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following example specifies recommended values for Bitlocker optimizations o
 ## Related topics
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md)
+[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md)
 
  
 

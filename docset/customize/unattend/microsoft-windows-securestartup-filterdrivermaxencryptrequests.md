@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) | **MaxEncryptRequests**
+[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md) | **MaxEncryptRequests**
 
 ## Applies To
 

@@ -59,7 +59,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) | **PreventDeviceEncryption**
+[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md) | **PreventDeviceEncryption**
 
 ## Applies To
 

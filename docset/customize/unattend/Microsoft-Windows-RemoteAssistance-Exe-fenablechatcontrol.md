@@ -52,7 +52,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## Related topics
 
 
-[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe-win7-microsoft-windows-remoteassistance-exe.md)
+[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md)
 
  
 

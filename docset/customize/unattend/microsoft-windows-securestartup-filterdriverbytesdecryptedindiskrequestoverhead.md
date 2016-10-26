@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) | **BytesDecryptedInDiskRequestOverhead**
+[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md) | **BytesDecryptedInDiskRequestOverhead**
 
 ## Applies To
 

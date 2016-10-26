@@ -44,7 +44,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md) | **Password**
+[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md) | **Password**
 
 ## Applies To
 

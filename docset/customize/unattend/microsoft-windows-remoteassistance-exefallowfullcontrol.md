@@ -68,7 +68,7 @@ The following XML output shows how to enable a friend or a support professional 
 ## Related topics
 
 
-[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe-win7-microsoft-windows-remoteassistance-exe.md)
+[Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md)
 
  
 

@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md) | **ConfigurationFlags**
+[Microsoft-Windows-RasServer](microsoft-windows-rasserver.md) | **ConfigurationFlags**
 
 ## Valid Passes
 

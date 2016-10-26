@@ -69,7 +69,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-powercpl](microsoft-windows-powercpl-win7-microsoft-windows-powercpl.md) | **PreferredPlan**
+[Microsoft-Windows-powercpl](microsoft-windows-powercpl.md) | **PreferredPlan**
 
 ## Valid Configuration Passes
 

@@ -61,7 +61,7 @@ generalize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md) | **PersistAllDeviceInstalls**
+[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md) | **PersistAllDeviceInstalls**
 
 ## Applies To
 
@@ -82,7 +82,7 @@ The following XML output specifies that device drivers remain be installed on th
 
 [DoNotCleanUpNonPresentDevices](microsoft-windows-pnpsysprepdonotcleanupnonpresentdevices.md)
 
-[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md)
+[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md)
 
 [Maintain Driver Configurations When Capturing a Windows Image](http://go.microsoft.com/fwlink/?LinkId=184946)
 

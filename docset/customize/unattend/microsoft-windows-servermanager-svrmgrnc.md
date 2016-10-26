@@ -43,7 +43,7 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 
-[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md)
+[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
 
  
 

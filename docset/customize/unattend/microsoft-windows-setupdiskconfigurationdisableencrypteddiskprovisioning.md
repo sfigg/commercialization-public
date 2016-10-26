@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | **DisableEncryptedDiskProvisioning**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | **DisableEncryptedDiskProvisioning**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

@@ -61,7 +61,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core-win7-microsoft-windows-printing-spooler-core.md) | **RemoveMPDW**
+[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md) | **RemoveMPDW**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output shows how to remove the Microsoft Print to PDF print qu
 ## Related topics
 
 
-[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core-win7-microsoft-windows-printing-spooler-core.md)
+[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md)
 
  
 

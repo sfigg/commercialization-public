@@ -49,12 +49,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux-win7-microsoft-windows-security-spp-ux.md) | **SkipAutoActivation**
+[Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux.md) | **SkipAutoActivation**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux-win7-microsoft-windows-security-spp-ux.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following sample XML output specifies that auto-activation is skipped.
 ## Related topics
 
 
-[Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux-win7-microsoft-windows-security-spp-ux.md)
+[Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux.md)
 
 [ProductKey](microsoft-windows-shell-setupproductkey.md)
 

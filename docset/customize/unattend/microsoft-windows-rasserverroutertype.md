@@ -62,7 +62,7 @@ The default value is **7**.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md) | **RouterType**
+[Microsoft-Windows-RasServer](microsoft-windows-rasserver.md) | **RouterType**
 
 ## Valid Passes
 

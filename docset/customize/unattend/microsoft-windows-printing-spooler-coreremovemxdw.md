@@ -61,7 +61,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core-win7-microsoft-windows-printing-spooler-core.md) | **RemoveMXDW**
+[Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md) | **RemoveMXDW**
 
 ## Applies To
 

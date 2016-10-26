@@ -68,7 +68,7 @@ generalize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Security-SPP](microsoft-windows-security-spp-win7-microsoft-windows-security-spp.md) | **SkipRearm**
+[Microsoft-Windows-Security-SPP](microsoft-windows-security-spp.md) | **SkipRearm**
 
 ## Applies To
 

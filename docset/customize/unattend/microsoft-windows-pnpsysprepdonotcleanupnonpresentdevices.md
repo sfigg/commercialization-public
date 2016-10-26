@@ -82,7 +82,7 @@ Though this setting is specified in the **generalize** configuration pass, it co
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md) | **DoNotCleanUpNonPresentDevices**
+[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md) | **DoNotCleanUpNonPresentDevices**
 
 ## Applies To
 
