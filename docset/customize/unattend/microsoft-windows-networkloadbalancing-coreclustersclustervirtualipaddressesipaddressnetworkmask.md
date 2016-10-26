@@ -55,7 +55,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) | **NetworkMask**
+[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) | **NetworkMask**
 
 ## Applies To
 

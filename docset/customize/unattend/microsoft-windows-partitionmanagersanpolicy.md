@@ -52,7 +52,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager-win7-microsoft-windows-partitionmanager.md) | **SanPolicy**
+[Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager.md) | **SanPolicy**
 
 ## Applies To
 

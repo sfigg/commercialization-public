@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md) | **OemExtensionXmlFilePath**
+[Microsoft-Windows-OutOfBoxExperience](mmicrosoft-windows-outofboxexperience.md) | **OemExtensionXmlFilePath**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ The following XML output specifies the path to the OEM XML file that contains th
 ## Related topics
 
 
-[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md)
+[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
 
  
 

@@ -57,7 +57,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md) | **DoNotOpenInitialConfigurationTasksAtLogon**
+[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md) | **DoNotOpenInitialConfigurationTasksAtLogon**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following XML output specifies that the Initial Configuration Tasks applicat
 ## Related topics
 
 
-[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md)
+[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
 
 [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md)
 
