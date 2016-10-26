@@ -653,13 +653,13 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
 ## Related topics
 
 
-[DevDetail configuration service provider](devdetail-configuration-service-provider.md)
+[DevDetail configuration service provider](devdetail-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

@@ -649,13 +649,13 @@ This topic shows the OMA DM device description framework (DDF) for the **Defende
 ## Related topics
 
 
-[Defender configuration service provider](defender-configuration-service-provider.md)
+[Defender configuration service provider](defender-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

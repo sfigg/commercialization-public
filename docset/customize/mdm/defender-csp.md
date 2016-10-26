@@ -21,7 +21,7 @@ An interior node to group all threats detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid"></a>**Detections/*ThreatId***  
+<a href="" id="detections-threatid"></a>**Detections/****ThreatId**  
 The ID of a threat that has been detected by Windows Defender.
 
 Supported operation is Get.
@@ -312,7 +312,7 @@ Supported operations are Get and Execute.
 
  
 
-10/10/2016
+
 
 
 

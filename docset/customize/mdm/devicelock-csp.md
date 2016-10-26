@@ -12,7 +12,7 @@ ms.assetid: 9a547efb-738e-4677-95d3-5506d350d8ab
 
 The DeviceLock configuration service provider is used by the enterprise management server to configure device lock related policies. This configuration service provider is supported by an enterprise management server.
 
-**Note**   The DeviceLock CSP is supported in Windows 10 Mobile for backward compatibility. For Windows 10 devices you should use [Policy CSP](policy-configuration-service-provider.md) for various device lock settings. You can continue to use DeviceLock CSP for Windows Phone 8.1 and Windows Phone 8.1 GDR devices. The DeviceLock CSP will be deprecated some time in the future.
+> **Note**   The DeviceLock CSP is supported in Windows 10 Mobile for backward compatibility. For Windows 10 devices you should use [Policy CSP](policy-configuration-service-provider.md) for various device lock settings. You can continue to use DeviceLock CSP for Windows Phone 8.1 and Windows Phone 8.1 GDR devices. The DeviceLock CSP will be deprecated some time in the future.
 
  
 
@@ -39,7 +39,7 @@ Optional. The node that contains the configured management server's ProviderID. 
 -   **Delete** - Delete all policies set by this account. This command could be used in enterprise unenrollment for removing policy values set by the enterprise management server.
 -   **Get** - Return all policies set by the management server.
 
-**Note**   The value cannot be changed after it is added. The **Replace** command isn't supported.
+> **Note**   The value cannot be changed after it is added. The **Replace** command isn't supported.
 
  
 
@@ -282,7 +282,7 @@ The value applied to the device can be queried via the nodes under the **DeviceV
 
  
 
-10/10/2016
+
 
 
 

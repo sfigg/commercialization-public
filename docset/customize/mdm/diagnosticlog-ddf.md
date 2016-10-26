@@ -1278,13 +1278,13 @@ This topic shows the OMA DM device description framework (DDF) for the Diagnosti
 ## Related topics
 
 
-[DiagnosticLog configuration service provider](diagnosticlog-configuration-service-provider.md)
+[DiagnosticLog configuration service provider](diagnosticlog-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

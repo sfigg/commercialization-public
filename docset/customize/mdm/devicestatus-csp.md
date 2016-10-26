@@ -31,7 +31,7 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-**Note**  Multiple SIMs are supported.
+> **Note**  Multiple SIMs are supported.
 
  
 
@@ -229,7 +229,7 @@ Supported operation is Get.
 
  
 
-10/10/2016
+
 
 
 

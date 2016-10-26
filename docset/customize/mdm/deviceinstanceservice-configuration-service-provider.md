@@ -12,7 +12,7 @@ ms.assetid: f113b6bb-6ce1-45ad-b725-1b6610721e2d
 
 The DeviceInstanceService configuration service provider provides some device inventory information that could be useful for an enterprise. Additionally, this CSP supports querying two different phone numbers in the case of dual SIM. The URIs for SIM 1 and SIM 2 are ./Vendor/MSFT/DeviceInstanceService/Identity/Identity1 and ./Vendor/MSFT/DeviceInstanceService/Identity/Identity2 respectively.
 
-**Note**  
+> **Note**  
 Stop using DeviceInstanceService CSP and use the updated [DeviceStatus CSP](devicestatus-csp.md) instead.
 
 The DeviceInstance CSP is only supported in Windows 10 Mobile.
@@ -109,7 +109,7 @@ Response from the phone.
 
  
 
-10/10/2016
+
 
 
 
