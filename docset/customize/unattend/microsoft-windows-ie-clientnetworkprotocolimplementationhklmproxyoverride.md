@@ -53,7 +53,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMProxyOverride**
+[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMProxyOverride**
 
 ## Applies To
 

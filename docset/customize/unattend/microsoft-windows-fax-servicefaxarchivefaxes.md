@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-servicefax.md) | **ArchiveFaxes**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-servicefax.md) | **ArchiveFaxes**
 
 ## Applies To
 

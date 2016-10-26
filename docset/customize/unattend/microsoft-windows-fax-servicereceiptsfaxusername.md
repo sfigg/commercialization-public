@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **FaxUserName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **FaxUserName**
 
 ## Applies To
 

@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **SmtpNotificationsEnabled**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **SmtpNotificationsEnabled**
 
 ## Applies To
 

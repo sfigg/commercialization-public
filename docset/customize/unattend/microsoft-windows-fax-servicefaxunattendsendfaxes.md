@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **SendFaxes**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **SendFaxes**
 
 ## Applies To
 

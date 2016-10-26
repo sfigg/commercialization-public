@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **Csid**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **Csid**
 
 ## Applies To
 

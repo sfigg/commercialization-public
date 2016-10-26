@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavID**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavID**
 
 ## Applies To
 

@@ -41,7 +41,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **SmtpServerPort**
+[Microsoft-Windows-Fax-Service](mmicrosoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **SmtpServerPort**
 
 ## Applies To
 

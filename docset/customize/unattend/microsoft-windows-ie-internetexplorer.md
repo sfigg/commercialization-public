@@ -173,7 +173,7 @@ The following table describes these settings:
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MSCompatibilityMode](mscompatibilitymode--win7-microsoft-windows-ie-internetexplorermscompatibilitymode.md)</p></td>
+<td><p>[MSCompatibilityMode](microsoft-windows-ie-internetexplorermscompatibilitymode.md)</p></td>
 <td><p>Specifies whether Compatibility View uses updated website lists from Microsoft®.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>

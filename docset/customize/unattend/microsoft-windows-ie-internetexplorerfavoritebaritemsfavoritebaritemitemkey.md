@@ -44,7 +44,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) | [FavoriteBarItems](microsoft-windows-ie-internetexplorerfavoritebaritems.md) | [FavoriteBarItem](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritem.md) | **ItemKey**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoriteBarItems](microsoft-windows-ie-internetexplorerfavoritebaritems.md) | [FavoriteBarItem](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritem.md) | **ItemKey**
 
 ## Applies To
 
@@ -82,7 +82,7 @@ The following XML example shows three Favorite bar items.
 ## Related topics
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
  
 
