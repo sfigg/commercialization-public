@@ -24,26 +24,26 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
 <dt><a id="--vendor-msft-policy"></a><strong>./Vendor/MSFT/Policy</strong></dt>
 <dd>
-<p>The root node for the Policy configuration service provider.</p>
-<p>Supported operation is Get.</p>
+<p style="margin-left: 25px">The root node for the Policy configuration service provider.</p>
+<p style="margin-left: 25px">Supported operation is Get.</p>
 </dd>
 <dt><a id="policy-config"></a><a id="policy_config"></a><a id="POLICY_CONFIG"></a><strong>Policy/Config</strong></dt>
 <dd>
-<p>Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration  sources. If a configuration source wants to query the result of conflict resolution (for example, if  Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
-<p>Supported operation is Get.</p>
+<p style="margin-left: 25px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration  sources. If a configuration source wants to query the result of conflict resolution (for example, if  Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
+<p style="margin-left: 25px">Supported operation is Get.</p>
 </dd>
 </dl>
 
 
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
-The root node for the Policy configuration service provider.
+<p style="margin-left: 25px">The root node for the Policy configuration service provider.</p>
 
 Supported operation is Get.
 
 <a href="" id="policy-config"></a>**Policy/Config**  
-Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
+<p style="margin-left: 25px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
 
-Supported operation is Get.
+<p style="margin-left: 25px">Supported operation is Get.</p>
 
 <a href="" id="policy-config-areaname"></a>**Policy/Config/****_AreaName_**  
 The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
@@ -105,7 +105,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
        Can be set using Exchange Active Sync (EAS)</th>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#AboveLock_AllowActionCenterNotifications">AboveLock/AllowActionCenterNotifications</a></td>
+<td style="vertical-align:top"><a href="#abovelock-allowactioncenternotifications">AboveLock/AllowActionCenterNotifications</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
@@ -124,7 +124,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#AboveLock_AllowCortanaAboveLock">AboveLock/AllowCortanaAboveLock</a></td>
+<td style="vertical-align:top"><a href="#abovelock-allowcortanaabovelock">AboveLock/AllowCortanaAboveLock</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>*
@@ -5548,10 +5548,8 @@ Footnote:
 ## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 
-<a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
+### <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
 > **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
- 
 
 Specifies whether to allow Action Center notifications above the device lock screen.
 
