@@ -51,12 +51,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) | **Format**
+[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) | **Format**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](mmicrosoft-windows-setup.md).
 
 ## XML Examples
 

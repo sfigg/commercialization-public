@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | [InstallFrom](microsoft-windows-setupimageinstalldataimageinstallfrom.md) | **Credentials**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | [InstallFrom](microsoft-windows-setupimageinstalldataimageinstallfrom.md) | **Credentials**
 
 ## Applies To
 

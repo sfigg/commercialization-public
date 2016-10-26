@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) | **Label**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) | **Label**
 
 ## Applies To
 

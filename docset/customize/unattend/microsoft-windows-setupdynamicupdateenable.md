@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [DynamicUpdate](microsoft-windows-setupdynamicupdate.md) | **Enable**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DynamicUpdate](microsoft-windows-setupdynamicupdate.md) | **Enable**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

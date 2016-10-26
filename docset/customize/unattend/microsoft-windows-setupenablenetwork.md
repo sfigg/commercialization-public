@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | **EnableNetwork**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **EnableNetwork**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output shows how to disable network connection.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)
 
  
 

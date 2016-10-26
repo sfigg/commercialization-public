@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | **DynamicUpdate**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **DynamicUpdate**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output shows the value for the `DynamicUpdate` setting.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)
 
 [Dynamic Update and Resulting Internet Communication in Windows 7 and Windows Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=189355)
 
