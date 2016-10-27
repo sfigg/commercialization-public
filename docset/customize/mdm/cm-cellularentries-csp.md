@@ -12,7 +12,7 @@ ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
 
 The CM\_CellularEntries configuration service provider is used to configure the General Packet Radio Service (GPRS) entries on the device. It defines each GSM data access point.
 
-**Note**  
+> **Note**  
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
  
@@ -21,10 +21,10 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 ![cm\-cellularentries csp](images/provisioning-csp-cm-cellularentries.png)
 
-<a href="" id="entryname"></a>**entryname**  
+<a href="" id="entryname"></a>**_entryname_**  
 Defines the name of the connection.
 
-The [CMPolicy configuration service provider](cmpolicy-configuration-service-provider.md) uses the value of *entryname* to identify the connection that is associated with a policy and [CM\_ProxyEntries configuration service provider](cm-proxyentries-configuration-service-provider.md) uses the value of *entryname* to identify the connection that is associated with a proxy.
+The [CMPolicy configuration service provider](cmpolicy-csp.md) uses the value of *entryname* to identify the connection that is associated with a policy and [CM\_ProxyEntries configuration service provider](cm-proxyentries-csp.md) uses the value of *entryname* to identify the connection that is associated with a proxy.
 
 <a href="" id="alwayson"></a>**AlwaysOn**  
 Type: Int. Specifies if the Connection Manager will automatically attempt to connect to the APN when a connection is available.
@@ -45,8 +45,8 @@ Optional. Type: String. Specifies the type of connection used for the APN. The f
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -138,7 +138,7 @@ Optional. Type: Int. Specifies the purpose of the APN. If a value is not specifi
 <a href="" id="iptype"></a>**IPType**  
 Optional. Type: String. Specifies the network protocol of the connection. Available values are "IPv4", "IPv6", "IPv4v6", and "IPv4v6xlat". If a value is not specified, the default value is "IPv4".
 
-**Warning**  
+> **Warning**  
 Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
 
  
@@ -148,7 +148,7 @@ Added back in Windows 10, version 1511. Optional. Type: Int. This should only 
 
 To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
 
-**Important**  
+> **Important**  
 Do not set ExemptFromDisablePolicy to "1", ExemptFromRoaming to "1", or UseRequiresMappingsPolicy to "1" for general purpose connections.
 
 To avoid UX inconsistency with certain value combinations of ExemptFromDisablePolicy and AllowMmsIfDataIsOff, when you do not set ExemptFromDisablePolicy to 1 (default is 0), you should:
@@ -167,12 +167,12 @@ Optional. Type: Int. CDMA only. Specifies if the connection is a tethering conne
 <a href="" id="idledisconnecttimeout"></a>**IdleDisconnectTimeout**  
 Optional. Type: Int. Specifies how long an on-demand connection can be unused before Connection Manager tears the connection down. This value is specified in seconds. Valid value range is 5 to 60 seconds. If not specified, the default is 30 seconds.
 
-**Important**  
+> **Important**  
 You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
 
  
 
-**Note**  
+> **Note**  
 If tear-down/activation requests occur too frequently, this value should be set to greater than 5 seconds.
 
  
@@ -188,7 +188,7 @@ Optional. Type: String. Specifies the purposes of the connection by a comma-sepa
 -   IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13
 -   SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD
 
-## Notes
+## Additional information
 
 
 To delete a connection, you must first delete any associated proxies and then delete the connection. The following example shows how to delete the proxy and then the connection.

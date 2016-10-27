@@ -12,7 +12,7 @@ ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
 
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
-**Note**  
+> **Note**  
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
@@ -504,7 +504,7 @@ Adding a host-based mapping policy:
 
  
 
-10/10/2016
+
 
 
 

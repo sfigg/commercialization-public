@@ -1001,13 +1001,13 @@ Supported operation is Get</Description>
 ## Related topics
 
 
-[ClientCertificateInstall configuration service provider](clientcertificateinstall-configuration-service-provider.md)
+[ClientCertificateInstall configuration service provider](clientcertificateinstall-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

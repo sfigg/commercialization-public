@@ -12,11 +12,11 @@ ms.assetid: f4c3dc71-c85a-4c68-9ce9-19f408ff7a0a
 
 The CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 
-**Note**  CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
+> **Note**  CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
 
  
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -30,7 +30,7 @@ Defines the name of the connection proxy.
 Each cellular entry can have only one proxy entry. For example, an Internet connection can have no more than one HTTP proxy specified but it might also have a WAP proxy. If two applications need access to the same APN but one application needs a proxy and the other application cannot have a proxy, two entries can be created with different names for the same APN.
 
 <a href="" id="connectionname"></a>**ConnectionName**  
-Specifies the name of the connection the proxy is associated with. This is the APN name of a connection configured using the [CM\_CellularEntries configuration service provider](cm-cellularentries-configuration-service-provider.md).
+Specifies the name of the connection the proxy is associated with. This is the APN name of a connection configured using the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md).
 
 <a href="" id="bypasslocal"></a>**BypassLocal**  
 Specifies if the proxy should be bypassed when local hosts are accessed by the device.
@@ -80,7 +80,7 @@ The Null proxy can be used to allow Connection Manager to treat one network as a
 <a href="" id="username"></a>**UserName**  
 Specifies the username used to connect to the proxy.
 
-## Notes
+## Additional information
 
 
 To delete both a proxy and its associated connection, you must delete the proxy first, and then delete the connection. The following example shows how to delete the proxy and then the connection.
@@ -141,7 +141,7 @@ The following table shows the Microsoft custom elements that this configuration 
 
  
 
-10/10/2016
+
 
 
 

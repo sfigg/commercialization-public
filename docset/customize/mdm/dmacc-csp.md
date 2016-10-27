@@ -59,7 +59,7 @@ Interior node for DM server address.
 
 Required.
 
-<a href="" id="appaddr-objectname"></a>**AppAddr/*ObjectName***  
+<a href="" id="appaddr-objectname"></a>**AppAddr/****_ObjectName_**  
 Required. Defines the OMA DM server address. Only one server address can be configured.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) to the DMAcc Configuration Service Provider, the name of this element is "1". This is the first DM address encountered in the w7 APPLICATION configuration service provider, other DM accounts are ignored.
@@ -103,7 +103,7 @@ Value type is string. Supported operations are Add, Get, and Replace.
 <a href="" id="accountuid-appauth"></a>***AccountUID*/AppAuth**  
 Optional. Defines authentication settings.
 
-<a href="" id="appauth-objectname"></a>**AppAuth/*ObjectName***  
+<a href="" id="appauth-objectname"></a>**AppAuth/****_ObjectName_**  
 Required. Defines one set of authentication settings.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
