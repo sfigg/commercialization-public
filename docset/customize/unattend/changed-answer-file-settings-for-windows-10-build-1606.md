@@ -158,7 +158,7 @@ The following settings are no longer available in Windows 10, version 1607:
 ## <a href="" id="removediesettings"></a>Removed Internet Explorer Settings
 
 
-These settings in the [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md) component are removed:
+These settings in the [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) component are removed:
 
 <table>
 <colgroup>
@@ -173,27 +173,27 @@ These settings in the [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\AllSitesCompatibilityMode</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\AllSitesCompatibilityMode</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\DisableWelcomePage</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\DisableWelcomePage</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\NoDial</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\NoDial</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\ShowCompatibilityViewButton</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\ShowCompatibilityViewButton</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\SmallCommandBarIcons</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\SmallCommandBarIcons</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)\Scope\DisplayQuickPick</p></td>
+<td><p>[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)\Scope\DisplayQuickPick</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 </tbody>

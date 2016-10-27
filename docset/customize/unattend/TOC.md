@@ -271,7 +271,7 @@
 ### [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md)
 #### [IEHardenAdmin](microsoft-windows-ie-esciehardenadmin.md)
 #### [IEHardenUser](microsoft-windows-ie-esciehardenuser.md)
-### [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md)
+### [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 #### [Accelerators](microsoft-windows-ie-internetexploreraccelerators.md)
 ##### [Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md)
 ###### [AcceleratorXML](microsoft-windows-ie-internetexploreracceleratorsacceleratoracceleratorxml.md)
