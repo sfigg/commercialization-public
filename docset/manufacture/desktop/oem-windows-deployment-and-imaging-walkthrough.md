@@ -27,7 +27,7 @@ Let's get started!
 *  [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
 *  [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
-**Customize the Window image**
+**Customize Window images**
 
 In these labs, you'll modify the Windows image (install.wim). While you can perform most of these tasks in any order, a few have dependencies:
 *    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
@@ -41,14 +41,11 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
 *  [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
 *  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 8: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+*  [Lab 8: Add a license agreement (OOBE.xml)](add-a-license-agreement.md)
+*  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
-**Customize the recovery image**
+**Final tasks**
 
-*  [Lab 9: Update the recovery image](update-the-recovery-image.md)
-*  [Lab 10: Shrink your image size](shrink-your-image-size.md)
-
-**Deploy final images**
-
-*  [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
-
+*  [Lab 10: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 11: Shrink your image size](shrink-your-image-size.md)
+*  [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
