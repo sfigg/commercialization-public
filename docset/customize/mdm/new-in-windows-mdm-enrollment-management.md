@@ -529,7 +529,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
 ### <a href="" id="whitelist"></a>Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
 
--   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inbox-apps) that you need to your list of allowed apps.
+-   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inbox-apps-and-components) that you need to your list of allowed apps.
 
     Here's additional guidance for the upgrade process:
 
@@ -854,7 +854,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr class="odd">
 <td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-csp.md#inbox-apps):</p>
+<td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-csp.md#inbox-apps-and-components):</p>
 <div class="alert">
 <strong>Note</strong> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 </div>
@@ -1010,7 +1010,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>[PolicyManager CSP](policymanager-csp.md)</p></td>
 <td style="vertical-align:top"><p>Added the following note:</p>
 <ul>
-<li>You cannot disable or enable <strong>Contact Support</strong> and <strong>Windows Feedback</strong> apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inbox-apps).</li>
+<li>You cannot disable or enable <strong>Contact Support</strong> and <strong>Windows Feedback</strong> apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inbox-apps-and-components).</li>
 </ul></td>
 </tr>
 <tr class="even">

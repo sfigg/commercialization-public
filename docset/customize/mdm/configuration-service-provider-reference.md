@@ -41,7 +41,7 @@ The following table show the configuration service providers supported in Window
 </thead>
 <tbody>
 <tr class="odd">
-<td>[ActiveSync CSP](activesync-configuration-service-provider.md)</td>
+<td>[ActiveSync CSP](activesync-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -61,7 +61,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="odd">
-<td>[APPLICATION CSP](application-configuration-service-provider.md)</td>
+<td>[APPLICATION CSP](application-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -71,7 +71,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[AppLocker CSP](applocker-configuration-service-provider.md)</td>
+<td>[AppLocker CSP](applocker-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -91,7 +91,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[BOOTSTRAP CSP](bootstrap-configuration-service-provider.md)</td>
+<td>[BOOTSTRAP CSP](bootstrap-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -101,7 +101,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[BrowserFavorite CSP](browserfavorite-configuration-service-provider.md)</td>
+<td>[BrowserFavorite CSP](browserfavorite-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -111,7 +111,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[CellularSettings CSP](cellularsettings-configuration-service-provider.md)</td>
+<td>[CellularSettings CSP](cellularsettings-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -121,7 +121,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[CertificateStore CSP](certificatestore-configuration-service-provider.md)</td>
+<td>[CertificateStore CSP](certificatestore-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -131,7 +131,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[ClientCertificateInstall CSP](clientcertificateinstall-configuration-service-provider.md)</td>
+<td>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -141,7 +141,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="odd">
-<td>[CM_CellularEntries CSP](cm-cellularentries-configuration-service-provider.md)</td>
+<td>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -151,7 +151,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[CM_ProxyEntries CSP](cm-proxyentries-configuration-service-provider.md)</td>
+<td>[CM_ProxyEntries CSP](cm-proxyentries-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -161,7 +161,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[CMPolicy CSP](cmpolicy-configuration-service-provider.md)</td>
+<td>[CMPolicy CSP](cmpolicy-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -181,7 +181,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[CustomDeviceUI CSP](customdeviceui-configuration-service-provider.md)</td>
+<td>[CustomDeviceUI CSP](customdeviceui-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -191,7 +191,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[Defender CSP](defender-configuration-service-provider.md)</td>
+<td>[Defender CSP](defender-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -201,7 +201,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[DevDetail CSP](devdetail-configuration-service-provider.md)</td>
+<td>[DevDetail CSP](devdetail-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -211,7 +211,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[DeviceInstanceService CSP](deviceinstanceservice-configuration-service-provider.md)</td>
+<td>[DeviceInstanceService CSP](deviceinstanceservice-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -221,7 +221,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[DeviceLock CSP](devicelock-configuration-service-provider.md)</td>
+<td>[DeviceLock CSP](devicelock-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -251,7 +251,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[DevInfo CSP](devinfo-configuration-service-provider.md)</td>
+<td>[DevInfo CSP](devinfo-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -261,7 +261,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="odd">
-<td>[DiagnosticLog CSP](diagnosticlog-configuration-service-provider.md)</td>
+<td>[DiagnosticLog CSP](diagnosticlog-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -271,7 +271,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[DMAcc CSP](dmacc-configuration-service-provider.md)</td>
+<td>[DMAcc CSP](dmacc-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -281,7 +281,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="odd">
-<td>[DMClient CSP](dmclient-configuration-service-provider.md)</td>
+<td>[DMClient CSP](dmclient-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -291,7 +291,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[EMAIL2 CSP](email2-configuration-service-provider.md)</td>
+<td>[EMAIL2 CSP](email2-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -311,7 +311,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[EnterpriseAppManagement CSP](enterpriseappmanagement-configuration-service-provider.md)</td>
+<td>[EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -371,7 +371,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md)</td>
+<td>[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -381,7 +381,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="odd">
-<td>[FileSystem CSP](filesystem-configuration-service-provider.md)</td>
+<td>[FileSystem CSP](filesystem-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -403,7 +403,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[HotSpot CSP](hotspot-configuration-service-provider.md)</td>
+<td>[HotSpot CSP](hotspot-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -423,7 +423,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[NAP CSP](filesystem-configuration-service-provider.md)</td>
+<td>[NAP CSP](filesystem-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -433,7 +433,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[NAPDEF CSP](napdef-configuration-service-provider.md)</td>
+<td>[NAPDEF CSP](napdef-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -443,7 +443,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[NodeCache CSP](nodecache-configuration-service-provider.md)</td>
+<td>[NodeCache CSP](nodecache-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -473,7 +473,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[PolicyManager CSP](policymanager-configuration-service-provider.md)</td>
+<td>[PolicyManager CSP](policymanager-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -500,7 +500,7 @@ The following table show the configuration service providers supported in Window
 <p>(Provisioning only)</p></td>
 </tr>
 <tr class="even">
-<td>[PROXY CSP](proxy-configuration-service-provider.md)</td>
+<td>[PROXY CSP](proxy-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -510,7 +510,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[PXLOGICAL CSP](pxlogical-configuration-service-provider.md)</td>
+<td>[PXLOGICAL CSP](pxlogical-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -530,7 +530,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[Registry CSP](registry-configuration-service-provider.md)</td>
+<td>[Registry CSP](registry-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -540,7 +540,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[RemoteFind CSP](remotefind-configuration-service-provider.md)</td>
+<td>[RemoteFind CSP](remotefind-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -550,7 +550,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[RemoteLock](remotelock-configuration-service-provider.md)</td>
+<td>[RemoteLock](remotelock-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -560,7 +560,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[RemoteRing CSP](remotering-configuration-service-provider.md)</td>
+<td>[RemoteRing CSP](remotering-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -570,7 +570,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[RemoteWipe CSP](remotewipe-configuration-service-provider.md)</td>
+<td>[RemoteWipe CSP](remotewipe-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -590,7 +590,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[RootCATrustedCertificates CSP](rootcacertificates-configuration-service-provider.md)</td>
+<td>[RootCATrustedCertificates CSP](rootcacertificates-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -610,7 +610,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[SecurityPolicy CSP](securitypolicy-configuration-service-provider.md)</td>
+<td>[SecurityPolicy CSP](securitypolicy-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -630,7 +630,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[Storage CSP](storage-configuration-service-provider.md)</td>
+<td>[Storage CSP](storage-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -640,7 +640,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[SUPL CSP](user-plane-location-configuration-service-provider.md)</td>
+<td>[SUPL CSP](supl-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -660,7 +660,7 @@ The following table show the configuration service providers supported in Window
 <td></td>
 </tr>
 <tr class="even">
-<td>[UnifiedWriteFilter CSP](uwf-configuration-service-provider.md)</td>
+<td>[UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -670,7 +670,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[Update CSP](update-configuration-service-provider.md)</td>
+<td>[Update CSP](update-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -680,7 +680,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[VPN CSP](vpn-configuration-service-provider.md)</td>
+<td>[VPN CSP](vpn-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -690,7 +690,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[VPNv2 CSP](vpnv2-configuration-service-provider.md)</td>
+<td>[VPNv2 CSP](vpnv2-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -750,7 +750,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[WindowsLicensing CSP](windowslicensing-configuration-service-provider.md)</td>
+<td>[WindowsLicensing CSP](windowslicensing-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -781,24 +781,24 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic Enterprise edition |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
-| [application csp](application-configuration-service-provider.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [applocker csp](applocker-configuration-service-provider.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [certificatestore csp](certificatestore-configuration-service-provider.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [clientcertificateinstall csp](clientcertificateinstall-configuration-service-provider.md)           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [devdetail csp](devdetail-configuration-service-provider.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [application csp](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [applocker csp](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [certificatestore csp](certificatestore-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [clientcertificateinstall csp](clientcertificateinstall-csp.md)           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [devdetail csp](devdetail-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [devicestatus csp](devicestatus-csp.md)                                                              | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [devinfo csp](devinfo-configuration-service-provider.md)                                             | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [diagnosticlog csp](diagnosticlog-configuration-service-provider.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [dmacc csp](dmacc-configuration-service-provider.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [dmclient csp](dmclient-configuration-service-provider.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [enterprisemodernappmanagement csp](enterprisemodernappmanagement-configuration-service-provider.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [nodecache csp](nodecache-configuration-service-provider.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [devinfo csp](devinfo-csp.md)                                             | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [diagnosticlog csp](diagnosticlog-csp.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [dmacc csp](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [dmclient csp](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [enterprisemodernappmanagement csp](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [nodecache csp](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [policy csp](policy-configuration-service-provider.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [rootcatrustedcertificates csp](rootcacertificates-configuration-service-provider.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [update csp](update-configuration-service-provider.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [vpnv2 csp](vpnv2-configuration-service-provider.md)                                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [rootcatrustedcertificates csp](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [update csp](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [vpnv2 csp](vpnv2-csp.md)                                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [wi-fi csp](wifi-configuration-service-provider.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [windowslicensing csp](windowslicensing-configuration-service-provider.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [windowslicensing csp](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
  
 
@@ -813,9 +813,7 @@ The following list shows the configuration service providers supported in Window
 
  
 
- 
 
-10/10/2016
 
 
 
