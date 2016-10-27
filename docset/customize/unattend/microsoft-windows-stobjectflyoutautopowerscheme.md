@@ -62,12 +62,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md) | **FlyoutAutoPowerScheme**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | **FlyoutAutoPowerScheme**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject.md).
 
 ## XML Example
 
@@ -81,7 +81,7 @@ The following XML output shows how to configure `FlyoutAutoPowerScheme`.
 ## Related topics
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md)
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
  
 

@@ -43,7 +43,7 @@ If more than eight [Cache](microsoft-windows-systemmaintenanceservicecachelistca
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md) | **CacheList**
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | **CacheList**
 
 ## Valid Configuration Passes
 
@@ -83,7 +83,7 @@ The following XML output example shows a configuration of two ReadyBoost devices
 ## Related topics
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md)
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md)
 
  
 

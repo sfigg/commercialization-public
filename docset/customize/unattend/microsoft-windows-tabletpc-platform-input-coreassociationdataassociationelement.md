@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core-win7-microsoft-windows-tabletpc-platform-input-core.md) | [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md) | **AssociationElement**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md) | **AssociationElement**
 
 ## Valid Configuration Passes
 
@@ -50,7 +50,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core-win7-microsoft-windows-tabletpc-platform-input-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md).
 
 ## XML Example
 
@@ -74,7 +74,7 @@ In Windows System Image Manager, you can enter values with quotation marks. In t
 ## Related topics
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core-win7-microsoft-windows-tabletpc-platform-input-core.md)
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)
 
  
 

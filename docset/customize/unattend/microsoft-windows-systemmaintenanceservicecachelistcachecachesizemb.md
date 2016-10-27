@@ -41,7 +41,7 @@ The maximum cache size on a device partition formatted as FAT32 is 4096 MB, whi
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) | **CacheSizeMB**
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) | **CacheSizeMB**
 
 ## Valid Configuration Passes
 
@@ -51,7 +51,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 

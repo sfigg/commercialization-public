@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings--win7-microsoft-windows-systemsettings.md) | **WiFiToWlan**
+[Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md) | **WiFiToWlan**
 
 ## Applies To
 

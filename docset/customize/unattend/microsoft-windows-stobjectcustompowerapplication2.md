@@ -55,12 +55,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md) | **CustomPowerApplication2**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | **CustomPowerApplication2**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output specifies how to configure `CustomPowerApplication2`.
 ## Related topics
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md)
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
  
 

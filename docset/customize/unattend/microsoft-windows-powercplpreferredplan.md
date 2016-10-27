@@ -95,7 +95,7 @@ The following XML output shows how to configure a GUID for `PreferredPlan`.
 ## Related topics
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md)
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
 [Microsoft-Windows-powercpl](microsoft-windows-powercpl-win7-microsoft-windows-powercpl.md)
 

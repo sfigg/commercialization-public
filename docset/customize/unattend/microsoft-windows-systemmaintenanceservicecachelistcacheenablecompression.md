@@ -49,7 +49,7 @@ Enabling compression may be necessary for systems with a low amount of RAM or ca
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) | **EnableCompression**
+[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) | **EnableCompression**
 
 ## Valid Configuration Passes
 
@@ -59,7 +59,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 

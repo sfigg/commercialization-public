@@ -41,7 +41,7 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md)
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
 [Components](components-b-unattend.md)
 

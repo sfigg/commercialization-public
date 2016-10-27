@@ -52,7 +52,7 @@ specialize
 ## Applies To
 
 
-For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings--win7-microsoft-windows-systemsettings.md).
+For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemSettings](microsoft-windows-systemsettings.md).
 
 ## XML Example
 
