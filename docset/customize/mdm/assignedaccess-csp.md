@@ -14,7 +14,7 @@ The AssignedAccess configuration service provider (CSP) is used set the device t
 
 For step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](http://go.microsoft.com/fwlink/p/?LinkID=722211)
 
-**Note**  The AssignedAccess CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
+> **Note**  The AssignedAccess CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
 
  
 
@@ -28,7 +28,7 @@ Root node for the CSP.
 <a href="" id="assignedaccess-kioskmodeapp"></a>**AssignedAccess/KioskModeApp**  
 A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, follow the information in [this Microsoft website](http://go.microsoft.com/fwlink/p/?LinkId=404220).
 
-In Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx).
+In Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
 
 Here's an example:
 
@@ -38,7 +38,7 @@ Here's an example:
 
 When configuring the kiosk mode app, the account name will be used to find the target user. The account name includes domain name and user name.
 
-**Note**  The domain name can be optional if the user name is unique across the system.
+> **Note**  The domain name can be optional if the user name is unique across the system.
 
  
 
@@ -133,7 +133,6 @@ KioskModeApp Replace
 
  
 
-10/10/2016
 
 
 

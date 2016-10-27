@@ -671,13 +671,13 @@ This topic shows the OMA DM device description framework (DDF) for the **ActiveS
 ## Related topics
 
 
-[ActiveSync configuration service provider](activesync-configuration-service-provider.md)
+[ActiveSync configuration service provider](activesync-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

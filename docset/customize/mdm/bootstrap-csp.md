@@ -12,11 +12,11 @@ ms.assetid: b8acbddc-347f-4543-a45b-ad2ffae3ffd0
 
 The BOOTSTRAP configuration service provider sets the Trusted Provisioning Server (TPS) for the device.
 
-**Note**  BOOTSTRAP CSP is only supported in Windows 10 Mobile.
+> **Note**  BOOTSTRAP CSP is only supported in Windows 10 Mobile.
 
  
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -39,7 +39,7 @@ Required. Specifies the location of a Trusted Provisioning Server (TPS). The PRO
 
  
 
-10/10/2016
+
 
 
 

@@ -14,7 +14,7 @@ The ActiveSync configuration service provider is used to set up and change setti
 
 Configuring Windows Live ActiveSync accounts through this configuration service provider is not supported.
 
-**Note**  
+> **Note**  
 The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync path will work if the user is logged in. The CSP fails when no user is logged in.
@@ -30,7 +30,7 @@ The following diagram shows the ActiveSync configuration service provider manage
 <a href="" id="--user-vendor-msft-activesync"></a>**./User/Vendor/MSFT/ActiveSync**  
 The root node for the ActiveSync configuration service provider.
 
-**Note**  
+> **Note**  
 The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync will work if the user is logged in. The CSP fails when no user is logged in.
@@ -226,7 +226,7 @@ Valid values are one of the following:
 <a href="" id="options-contenttypes-content-type-guid-name"></a>**Options/ContentTypes/*Content Type GUID*/Name**  
 Required. A character string that specifies the name of the content type.
 
-**Note**  In Windows 10, this node is currently not working.
+> **Note**  In Windows 10, this node is currently not working.
 
  
 
@@ -256,7 +256,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
  
 
-10/10/2016
+
 
 
 

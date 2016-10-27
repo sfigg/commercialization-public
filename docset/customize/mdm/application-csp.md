@@ -31,7 +31,7 @@ For the device to decode correctly, provisioning XML that contains the APPLICATI
 
  
 
-10/10/2016
+
 
 
 
