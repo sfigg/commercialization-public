@@ -21,25 +21,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 ![policy csp diagram](images/provisioning-csp-policy.png)
 
 
-<a id="--vendor-msft-policy"></a><strong>./Vendor/MSFT/Policy</strong>
-
-<p style="margin-left: 20px">The root node for the Policy configuration service provider.
-<p style="margin-left: 20px">Supported operation is Get.
-
-<a id="policy-config"></a><a id="policy_config"></a><a id="POLICY_CONFIG"></a><strong>Policy/Config</strong>
-
-<p style="margin-left: 20px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration  sources. If a configuration source wants to query the result of conflict resolution (for example, if  Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
-<p style="margin-left: 20px">Supported operation is Get.</p>
-
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
-<p style="margin-left: 20px">The root node for the Policy configuration service provider.</p>
+<p style="margin-left: 20px">The root node for the Policy configuration service provider.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="policy-config"></a>**Policy/Config**  
-<p style="margin-left: 20px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.</p>
+<p style="margin-left: 20px">Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
 
-<p style="margin-left: 20px">Supported operation is Get.</p>
+<p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="policy-config-areaname"></a>**Policy/Config/****_AreaName_**  
 <p style="margin-left: 20px">The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
@@ -7661,8 +7651,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 > **Note**  This policy has been deprecated in Windows 10, version 1607
-
-
+   
+   
 > **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
@@ -8474,8 +8464,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
-
+   
+   
 > **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
 
