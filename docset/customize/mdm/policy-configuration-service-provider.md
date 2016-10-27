@@ -59,33 +59,35 @@ The following diagram shows the Policy configuration service provider in tree fo
 </div>
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
--   Value type is string.
+-   Value type is string.    
 
 <a href="" id="policy-result"></a>**Policy/Result**  
 <p style="margin-left: 25px">Groups the evaluated policies from all providers that can be configured.
 
 <p style="margin-left: 25px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/****_AreaName_**  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/****_AreaName_**   
+
 <p style="margin-left: 25px">The area group that can be configured by a single technology independent of the providers.
 
 <p style="margin-left: 25px">Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/****_AreaName/PolicyName_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/****_AreaName/PolicyName_**   
+
 <p style="margin-left: 25px">Specifies the name/value pair used in the policy.
 
-<p style="margin-left: 25px">Supported operation is Get.
+<p style="margin-left: 25px">Supported operation is Get.   
 
-## **Policy Tables**
+## **Policy Tables**   
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
 -   [Table of Policies](#main-policy-table) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
--   [Policies supported by Windows Holographic Enterprise](#hololens-policies) - Lists the policies that are supported in Windows Holographic Enterprise.
+-   [Policies supported by Windows Holographic Enterprise](#hololens-policies) - Lists the policies that are supported in Windows Holographic Enterprise.   
 
-## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
+## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10   
 
-<div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  To navigate the table horizontally, use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+<p style="margin-left: 25px"><div class="alert"><strong>Important</strong>  To navigate the table horizontally, use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 </div>
 
 <table>
@@ -5544,8 +5546,8 @@ Footnote:
 ## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 
-<a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
-<div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+<a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**   
+<p style="margin-left: 25px"><div class="alert"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 </div>
 <p style="margin-left: 25px">Specifies whether to allow Action Center notifications above the device lock screen.
 
@@ -5556,7 +5558,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**  
+<a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**   
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5564,7 +5566,7 @@ Footnote:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**  
+<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**   
 <p style="margin-left: 25px">Specifies whether to allow toast notifications above the device lock screen.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5574,7 +5576,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="accounts-allowaddingnonmicrosoftaccountsmanually"></a>**Accounts/AllowAddingNonMicrosoftAccountsManually**  
+<a href="" id="accounts-allowaddingnonmicrosoftaccountsmanually"></a>**Accounts/AllowAddingNonMicrosoftAccountsManually**   
 <p style="margin-left: 25px">Specifies whether user is allowed to add non-MSA email accounts.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5587,7 +5589,7 @@ Footnote:
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-configuration-service-provider.md).
 </div>
  
-<a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
+<a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**   
 <p style="margin-left: 25px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5597,14 +5599,14 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
+<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**   
 <p style="margin-left: 25px">Specifies a list of the domains that are allowed to sync email on the device.
 
 <p style="margin-left: 25px">The data type is a string.
 
 <p style="margin-left: 25px">The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
 
-<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**  
+<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**   
 <p style="margin-left: 25px">Specifies whether non Windows Store apps are allowed.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5615,7 +5617,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**  
+<a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**   
 <p style="margin-left: 25px">Specifies whether automatic update of apps from Windows Store are allowed.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5625,7 +5627,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**  
+<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**   
 <p style="margin-left: 25px">Specifies whether developer unlock is allowed.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5636,7 +5638,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
+<a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**   
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
 </div>
 
@@ -5649,7 +5651,7 @@ Footnote:
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
-<a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**  
+<a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**   
 <p style="margin-left: 25px">Specifies whether multiple users of the same app can share data.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5679,12 +5681,18 @@ Footnote:
  When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your > list of allowed apps.
 
  Here's additional guidance for the upgrade process:
- 
- -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
- -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
- -   In the SyncML, you must use lowercase product ID.
- -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
- -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+<ul> 
+<li>   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+</li>
+<li>   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
+</li>
+<li>   In the SyncML, you must use lowercase product ID.
+</li>
+<li>  Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
+</li>
+<li>  You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+</li>
+</ul>
 </div>
 
 <p style="margin-left: 25px">An application that is running may not be immediately terminated.
@@ -5705,10 +5713,10 @@ Footnote:
 <p style="margin-left: 25px">Allows disabling of the retail catalog and only enables the Private store.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/ApplicationManagement/RequirePrivateStoreOnly** to get the result.
+ This node must be accessed using the following paths:
+
+   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
+   **./User/Vendor/MSFT/Policy/Result/ApplicationManagement/RequirePrivateStoreOnly** to get the result.
 </div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5747,10 +5755,10 @@ Footnote:
 <p style="margin-left: 25px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/Authentication/AllowEAPCertSSO** to get the result.
+This node must be accessed using the following paths:
+
+   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
+   **./User/Vendor/MSFT/Policy/Result/Authentication/AllowEAPCertSSO** to get the result.
 </div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
