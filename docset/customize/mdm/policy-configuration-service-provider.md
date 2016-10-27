@@ -56,7 +56,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  A query from a different caller could provide a different value as each caller could have different values for a named policy.
-
+</div>
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
 -   Value type is string.
@@ -86,7 +86,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 ## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  To navigate the table horizontally, use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
-
+</div>
 
 <table>
 <tr>
@@ -5546,7 +5546,7 @@ Footnote:
 
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 <p style="margin-left: 25px">Specifies whether to allow Action Center notifications above the device lock screen.
 
 <p style="margin-left: 25px">The following list shows the supported values:
@@ -5585,7 +5585,7 @@ Footnote:
 <p style="margin-left: 25px">Most restricted value is 0.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-configuration-service-provider.md).
-
+</div>
  
 <a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
 <p style="margin-left: 25px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
@@ -5638,7 +5638,7 @@ Footnote:
 
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether DVR and broadcasting is allowed.
 
@@ -5671,21 +5671,21 @@ Footnote:
 
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
-
+</div>
  
 <p style="margin-left: 25px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-configuration-service-provider.md#inbox-apps). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  
-> When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your > list of allowed apps.
->
-> Here's additional guidance for the upgrade process:
-> 
-> -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
-> -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows > Phone 8.1 publisher if you are using it.
-> -   In the SyncML, you must use lowercase product ID.
-> -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
-> -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+ When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your > list of allowed apps.
 
+ Here's additional guidance for the upgrade process:
+ 
+ -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+ -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
+ -   In the SyncML, you must use lowercase product ID.
+ -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
+ -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+</div>
 
 <p style="margin-left: 25px">An application that is running may not be immediately terminated.
 
@@ -5709,7 +5709,7 @@ Footnote:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/ApplicationManagement/RequirePrivateStoreOnly** to get the result.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -5742,7 +5742,7 @@ Footnote:
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
@@ -5751,7 +5751,7 @@ Footnote:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Authentication/AllowEAPCertSSO** to get the result.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -5851,7 +5851,7 @@ Footnote:
 
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether the browser is allowed on the device.
 
@@ -5883,7 +5883,7 @@ Footnote:
 
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turning this setting on, or not configuring it, lets employees use F12 Developer Tools. Turning this setting off stops employees from using F12 Developer Tools.
 
@@ -5992,7 +5992,7 @@ Footnote:
 
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
  
 <p style="margin-left: 25px">Allows the user to specify an URL of an enterprise site list.
 
@@ -6003,7 +6003,7 @@ Footnote:
 
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies the URL that Microsoft Edge for Windows 10 Mobile. will use when it is opened the first time.
 
@@ -6013,14 +6013,14 @@ Footnote:
 
 <a href="" id="browser-homepages"></a>**Browser/Homepages**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
  
 <p style="margin-left: 25px">Specifies your Home pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Home pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
 
 <p style="margin-left: 25px">Starting in Windows 10, version 1607, this policy will be enforced so that the Home pages specified by this policy cannot be changed by the users.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  Turning this setting off, or not configuring it, sets your default Home page to the web page specified in App settings.
-
+</div>
 
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 <p style="margin-left: 25px">Specifies whether users can access the about:flags page, which is used to change developer settings and to enable experimental features.
@@ -6050,7 +6050,7 @@ Footnote:
 
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol. Turning this setting on hides an user’s localhost IP address while making phone calls using WebRTC. Turning this setting off, or not configuring it, shows an <p style="margin-left: 25px">user’s localhost IP address while making phone calls using WebRTC.
 
@@ -6061,7 +6061,7 @@ Footnote:
 
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether to send intranet traffic over to Internet Explorer.
 
@@ -6074,7 +6074,7 @@ Footnote:
 
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List.
 
@@ -6104,7 +6104,7 @@ Footnote:
 -   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
     <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
-
+</div>
 -   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
 <p style="margin-left: 25px">If this is not set or it is deleted, the default value of 2 (Allow) is used.
@@ -6141,7 +6141,7 @@ Footnote:
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows near field communication (NFC) on the device.
 
@@ -6154,7 +6154,7 @@ Footnote:
 
 <a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging.
 
@@ -6215,10 +6215,11 @@ Footnote:
 <p style="margin-left: 25px">Setting used by Windows 8.1 Selective Wipe.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is not recommended for use in Windows 10.
- 
+</div>
 
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
+</div>
 
 <p style="margin-left: 25px">Allows or disallows scanning of archives.
 
@@ -6229,7 +6230,7 @@ Footnote:
 
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Allows or disallows Windows Defender Behavior Monitoring functionality.
 
@@ -6240,7 +6241,7 @@ Footnote:
 
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
 
@@ -6251,7 +6252,7 @@ Footnote:
 
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows scanning of email.
 
@@ -6262,7 +6263,7 @@ Footnote:
 
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows a full scan of mapped network drives.
 
@@ -6273,7 +6274,7 @@ Footnote:
 
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
- 
+</div>
 
 <p style="margin-left: 25px">Allows or disallows a full scan of removable drives.
 
@@ -6284,7 +6285,7 @@ Footnote:
 
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows Windows Defender Intrusion Prevention functionality.
 
@@ -6295,7 +6296,7 @@ Footnote:
 
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Allows or disallows Windows Defender IOAVP Protection functionality.
 
@@ -6306,7 +6307,7 @@ Footnote:
 
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows Windows Defender On Access Protection functionality.
 
@@ -6317,7 +6318,7 @@ Footnote:
 
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows Windows Defender Realtime Monitoring functionality.
 
@@ -6328,7 +6329,7 @@ Footnote:
 
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Allows or disallows a scanning of network files.
 
@@ -6339,7 +6340,7 @@ Footnote:
 
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows Windows Defender Script Scanning functionality.
 
@@ -6350,7 +6351,7 @@ Footnote:
 
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
- 
+</div>
 
 <p style="margin-left: 25px">Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
 
@@ -6361,7 +6362,7 @@ Footnote:
 
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AVGCPULoadFactor**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Represents the average CPU load factor for the Windows Defender scan (in percent).
 
@@ -6371,7 +6372,7 @@ Footnote:
 
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Time period (in days) that quarantine items will be stored on the system.
 
@@ -6381,30 +6382,30 @@ Footnote:
 
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">llows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
 
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-<p style="margin-left: 25px">
+</div>
 
 <p style="margin-left: 25px">Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
-
+</div>
  
 <p style="margin-left: 25px">Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
@@ -6416,12 +6417,12 @@ Footnote:
 
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Controls which sets of files should be monitored.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6431,7 +6432,7 @@ Footnote:
 
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Selects whether to perform a quick scan or full scan.
 
@@ -6442,12 +6443,12 @@ Footnote:
 
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Selects the time of day that the Windows Defender quick scan should run.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
-
+</div>
  
 <p style="margin-left: 25px">Valid values: 0–1380
 
@@ -6457,12 +6458,12 @@ Footnote:
 
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Selects the day that the Windows Defender scan should run.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6478,12 +6479,12 @@ Footnote:
 
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Selects the time of day that the Windows Defender scan should run.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
-
+</div>
 
 <p style="margin-left: 25px">Valid values: 0–1380.
 
@@ -6493,7 +6494,7 @@ Footnote:
 
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
@@ -6505,7 +6506,7 @@ Footnote:
 
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
@@ -6518,7 +6519,7 @@ Footnote:
 
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
- 
+</div>
 
 <p style="margin-left: 25px">Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
@@ -6542,7 +6543,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space.
 
@@ -6550,7 +6551,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
 
@@ -6565,16 +6566,16 @@ Footnote:
 
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupID**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  You must use a GUID as the group ID.
-
+</div>
 
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
 
@@ -6582,7 +6583,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
  
 <p style="margin-left: 25px">Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
 
@@ -6590,7 +6591,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
- 
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
@@ -6598,7 +6599,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
  
 <p style="margin-left: 25px">Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
 
@@ -6606,7 +6607,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set.
 
@@ -6614,7 +6615,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
 
@@ -6622,7 +6623,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
 
@@ -6632,7 +6633,7 @@ Footnote:
 
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
+</div>
  
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
 
@@ -6640,12 +6641,12 @@ Footnote:
 
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
  
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6654,12 +6655,12 @@ Footnote:
 
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6667,13 +6668,13 @@ Footnote:
 -   1 – Allowed.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
-
+</div>
 
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 <p style="margin-left: 25px">Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6689,7 +6690,7 @@ Footnote:
 > <p style="margin-left: 25px">This policy must be wrapped in an Atomic command.
 >
 > <p style="margin-left: 25px">Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6701,7 +6702,7 @@ Footnote:
 > If AlphanumericDevicePasswordRequired is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
 >
 > If AlphanumericDevicePasswordRequired is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
-
+</div>
  
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 <p style="margin-left: 25px">Specifies whether device lock is enabled.
@@ -6710,7 +6711,7 @@ Footnote:
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
- 
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6726,8 +6727,8 @@ Footnote:
 > -   MaxDevicePasswordFailedAttempts
 > -   MaxInactivityTimeDeviceLock
 > -   MinDevicePasswordComplexCharacters
+</div>
 
-<br>
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
@@ -6739,14 +6740,14 @@ Footnote:
 >
 > -   MinDevicePasswordLength
 > -   MinDevicePasswordComplexCharacters
-
+</div>
  
 
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 25px">Specifies when the password expires (in days).
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6761,7 +6762,7 @@ Footnote:
 <p style="margin-left: 25px">Specifies how many passwords can be stored in the history that can’t be used.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6778,7 +6779,7 @@ Footnote:
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Value type is a string, which is the full image filepath and filename.
 
@@ -6786,7 +6787,7 @@ Footnote:
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for mobile devices.
-
+</div>
 
 <p style="margin-left: 25px">Value type is a string, which is the AppID.
 
@@ -6794,7 +6795,7 @@ Footnote:
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">This policy has different behaviors on the mobile device and desktop.
 
@@ -6816,7 +6817,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 25px">Specifies the amount of time (in minutes) after the device is idle that will cause the device to become PIN or password locked.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy must be wrapped in an Atomic command.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6832,6 +6833,7 @@ The number of authentication failures allowed before the device will be wiped. A
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
+</div>
 
 <p style="margin-left: 25px">PIN enforces the following behavior for desktop and mobile devices:
 
@@ -6850,7 +6852,6 @@ The default value is 1. The following list shows the supported values and actual
 | Desktop Domain Accounts    | Not supported    | Not supported          |
 
  
-
 <p style="margin-left: 25px">Enforced values for Local and Microsoft Accounts:
 
 -   Local accounts support values of 1, 2, and 3, however they always enforce a value of 3.
@@ -6876,7 +6877,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6890,7 +6891,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
  
 
 <p style="margin-left: 25px">Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
@@ -6903,7 +6904,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether copy and paste is allowed.
 
@@ -6940,7 +6941,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 <p style="margin-left: 25px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The MDM server can always remotely delete the account.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -6951,7 +6952,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether screen capture is allowed.
 
@@ -6964,7 +6965,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether to display dialog prompt when no SIM card is detected.
 
@@ -6983,7 +6984,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows or disallows task switching on the device.
 
@@ -6994,7 +6995,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
 
@@ -7005,7 +7006,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether voice recording is allowed for apps.
 
@@ -7018,7 +7019,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
@@ -7027,7 +7028,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures** to set the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Experience/AllowWindowsConsumerFeatures** to get the result.
-
+</div>
  
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -7038,7 +7039,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
 
@@ -7059,7 +7060,7 @@ Enables or disables Windows Tips / soft landing.
 
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
-
+</div>
 
 <p style="margin-left: 25px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If you select 2 (Windows spotlight with Enterprise spotlight enabled) and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
@@ -7162,7 +7163,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 25px">This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
- 
+</div>
 
 <p style="margin-left: 25px">Here are the steps to create canonical domain names:
 
@@ -7212,7 +7213,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 25px">Most restricted value is 0.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  In the current release of Windows 10 Mobile, setting this policy to 0 will not remove the list of contact names on the device from the list of typable candidates. This will be fixed in a future release.
-
+</div>
  
 
 <a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
@@ -7612,7 +7613,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies what level of safe search (filtering adult content) is required.
 
@@ -7633,9 +7634,10 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy has been deprecated in Windows 10, version 1607
-<br>
-<div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+</div>
 
+<div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+</div>
 
 <p style="margin-left: 25px">Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
 
@@ -7646,7 +7648,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether the user is allowed to manually install root and intermediate CA certificates.
 
@@ -7667,7 +7669,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-antitheftmode"></a>**Security/AntiTheftMode**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
  
 <p style="margin-left: 25px">Allows or disallow Anti Theft Mode on the device.
 
@@ -7678,7 +7680,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607 to replace the deprecated policy **Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**.
 
@@ -7691,12 +7693,12 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
-
+</div>
 
 <p style="margin-left: 25px">Allows enterprise to turn on internal storage encryption.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  Bitlocker must be enabled on the device before using this policy.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -7730,13 +7732,13 @@ Setting this policy to 1 (Required):
 -   Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  We recommend that this policy is set to Required after MDM enrollment.
- 
+</div>
 
 <p style="margin-left: 25px">Most restricted value is 1.
 
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to change Auto Play settings.
 
@@ -7746,7 +7748,7 @@ Setting this policy to 1 (Required):
 -   1 (default) – Allowed.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
-
+</div>
 
 <a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
 <p style="margin-left: 25px">Allows the user to change Data Sense settings.
@@ -7774,7 +7776,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to change the language settings.
 
@@ -7785,7 +7787,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to change power and sleep settings.
 
@@ -7796,7 +7798,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to change the region settings.
 
@@ -7807,7 +7809,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to change sign-in options.
 
@@ -7826,7 +7828,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Allows user to change workplace settings.
 
@@ -7853,7 +7855,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
+</div>
 
 <p style="margin-left: 25px">Forces the start screen size.
 
@@ -7869,7 +7871,7 @@ Setting this policy to 1 (Required):
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  This node is set on a per-user basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
-
+</div>
 
 <p style="margin-left: 25px">Allows you to override the default Start layout and prevents the user from changing it.
 
@@ -7877,7 +7879,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
-
+</div>
 
 <p style="margin-left: 25px">This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
 
@@ -7901,6 +7903,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong> This policy is not supported in Windows 10, version 1607.
+</div>
 
 <p style="margin-left: 25px">This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
 
@@ -7966,9 +7969,7 @@ Setting this policy to 1 (Required):
 <div class="alert">
 <strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 </div>
-<div>
- 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</p></td>
@@ -7984,13 +7985,13 @@ Setting this policy to 1 (Required):
 
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
-
+</div>
 
 <p style="margin-left: 25px">Most restricted value is 0.
 
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
@@ -8008,7 +8009,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input.
 
@@ -8021,7 +8022,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary.
 
@@ -8034,7 +8035,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the IT admin to disable the touch/handwriting keyboard on Windows.
 
@@ -8047,7 +8048,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the Japanese IME surrogate pair characters.
 
@@ -8060,7 +8061,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows Japanese Ideographic Variation Sequence (IVS) characters.
 
@@ -8073,7 +8074,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the Japanese non-publishing standard glyph.
 
@@ -8086,7 +8087,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the Japanese user dictionary.
 
@@ -8102,7 +8103,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the uninstall of language features, such as spell checkers, on a device.
 
@@ -8117,7 +8118,7 @@ Setting this policy to 1 (Required):
 <p style="margin-left: 25px">Allows sending to Microsoft user text input data samples (anonymized) are collected for future language model improvements.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
-
+</div>
 
 <p style="margin-left: 25px">The following list shows the supported values:
 
@@ -8126,7 +8127,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the users to restrict character code range of conversion by setting the character filter.
 
@@ -8137,7 +8138,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the users to restrict character code range of conversion by setting the character filter.
 
@@ -8148,7 +8149,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  The policy is only enforced in Windows 10 for desktop.
-
+</div>
 
 <p style="margin-left: 25px">Allows the users to restrict character code range of conversion by setting the character filter.
 
@@ -8159,7 +8160,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
@@ -8169,7 +8170,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from start time.
 
@@ -8179,7 +8180,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
 
@@ -8195,7 +8196,7 @@ Setting this policy to 1 (Required):
 -   5 – Turn off automatic updates.
 
     <div class="alert"><p style="margin-left: 25px"><strong>Important</strong>  This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
+ </div>
 
 <p style="margin-left: 25px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
@@ -8212,7 +8213,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
 
@@ -8227,7 +8228,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store.
 
@@ -8241,11 +8242,11 @@ Setting this policy to 1 (Required):
 -   1 (default) – Update service is allowed.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
-
+</div>
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
 
@@ -8256,8 +8257,9 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-<p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
+</div>
 
+<p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
 
@@ -8265,7 +8267,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
 
@@ -8273,6 +8275,8 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  
+</div>
+
 <p style="margin-left: 25px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 <p style="margin-left: 25px">Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
@@ -8320,9 +8324,6 @@ Setting this policy to 1 (Required):
 <td style="vertical-align:top"><div class="alert">
 <strong>Note</strong>  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
-<div>
- 
-</div>
 <ul>
 <li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
 <li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4</li>
@@ -8348,6 +8349,7 @@ Setting this policy to 1 (Required):
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  
 <p style="margin-left: 25px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+</div>
 
 <p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
@@ -8364,6 +8366,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+</div>
 
 <p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
@@ -8380,7 +8383,7 @@ Setting this policy to 1 (Required):
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
-
+</div>
 
 <p style="margin-left: 25px">Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks.
 
@@ -8395,8 +8398,9 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-<p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
+</div>
 
+<p style="margin-left: 25px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
 
@@ -8407,7 +8411,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
@@ -8419,6 +8423,7 @@ Setting this policy to 1 (Required):
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  
 <p style="margin-left: 25px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+</div>
 
 <p style="margin-left: 25px">Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
@@ -8433,9 +8438,10 @@ Setting this policy to 1 (Required):
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+</div>
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
-
+</div>
 
 <p style="margin-left: 25px">Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
 
@@ -8448,7 +8454,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Enables the IT admin to schedule the day of the update installation.
 
@@ -8469,7 +8475,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Enables the IT admin to schedule the time of the update installation.
 
@@ -8483,7 +8489,7 @@ Setting this policy to 1 (Required):
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
+</div>
 
 <p style="margin-left: 25px">Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premise MDMs that need to update devices that cannot connect to the Internet.
 
@@ -8543,7 +8549,7 @@ Example
 <p style="margin-left: 25px">Most restricted value is 0.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
-
+</div>
 
 <a href="" id="wifi-allowwifi"></a>**WiFi/AllowWiFi**  
 <p style="margin-left: 25px">Allow or disallow Wi-Fi connection.
@@ -8719,7 +8725,7 @@ For **DesktopApplicationTile** elements, the **DesktopApplicationID** can be ret
 Creating a layout requires some special notes about secondary tiles. In general, the simplest way to correctly specify a **SecondaryTile** is to generate it using the **Export-StartLayout** PowerShell cmdlet as specified above.
 
 <div class="alert"><p style="margin-left: 25px"><strong>Note</strong>  Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
-
+</div>
 
 ### Generic webpage shortcuts
 
