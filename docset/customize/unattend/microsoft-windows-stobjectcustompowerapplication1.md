@@ -55,7 +55,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md) | **CustomPowerApplication1**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | **CustomPowerApplication1**
 
 ## Applies To
 
