@@ -49,7 +49,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 <td><p>Specifies whether the computer runs in audit mode or in Out-of-Box Experience (OOBE) when it next starts.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md)</p></td>
+<td><p>[RunAsynchronous](microsoft-windows-deployment-runasynchronous.md)</p></td>
 <td><p>Specifies one or more commands to run asynchronously on the operating system during the specified configuration pass.</p></td>
 </tr>
 <tr class="even">

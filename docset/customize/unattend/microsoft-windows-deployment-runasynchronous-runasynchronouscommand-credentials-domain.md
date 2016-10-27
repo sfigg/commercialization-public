@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentials.md) | **Domain**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md) | **Domain**
 
 ## Applies To
 
@@ -85,7 +85,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[Credentials](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md)
 
  
 

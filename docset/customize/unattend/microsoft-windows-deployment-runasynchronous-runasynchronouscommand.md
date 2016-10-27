@@ -29,15 +29,15 @@ To run services or commands that can start at the same time, use asynchronous co
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md)</p></td>
 <td><p>Specifies the credentials to use when accessing paths.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-deploymentrunasynchronousrunasynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-deployment-runasynchronousrunasynchronouscommanddescription.md)</p></td>
 <td><p>Specifies a description of the command to execute.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-deployment-runasynchronousrunasynchronouscommandorder.md)</p></td>
 <td><p>Specifies a unique value for each command.</p>
 <div class="alert">
 <strong>Important</strong>  
@@ -48,7 +48,7 @@ To run services or commands that can start at the same time, use asynchronous co
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-deployment-runasynchronousrunasynchronouscommandpath.md)</p></td>
 <td><p>Specifies the path to the command to execute.</p></td>
 </tr>
 </tbody>
@@ -66,7 +66,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) | **RunAsynchronousCommand**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | **RunAsynchronousCommand**
 
 ## Applies To
 
@@ -106,9 +106,9 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md)
+[RunAsynchronous](microsoft-windows-deployment-runasynchronous.md)
 
-[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
  
 

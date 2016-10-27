@@ -29,7 +29,7 @@ To run services or commands that can start at the same time, use asynchronous co
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md)</p></td>
+<td><p>[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run asynchronously.</p></td>
 </tr>
 </tbody>
@@ -91,7 +91,7 @@ The following XML output shows how to set asynchronous commands.
 
 [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md)
 
  
 

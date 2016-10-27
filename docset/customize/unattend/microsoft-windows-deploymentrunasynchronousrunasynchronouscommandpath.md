@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Path
 
 
-`Path` specifies the path and the name of the command to execute. [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
+`Path` specifies the path and the name of the command to execute. [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, the [Credentials](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentials.md) setting must be specified.</p>
+<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, the [Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md) setting must be specified.</p>
 <p><em>Path</em> is a string with a maximum length of 259 characters.</p></td>
 </tr>
 </tbody>
@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md) | **Path**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md) | **Path**
 
 ## Applies To
 
@@ -83,7 +83,7 @@ The first command runs an application on the local hard drive. The command inclu
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials to use when accessing the [Path](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandpath.md).
+`Credentials` specifies the credentials to use when accessing the [Path](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-path.md).
 
 ## Child Elements
 
@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account to use for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialspassword.md)</p></td>
 <td><p>Specifies the password of the account to use for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-deploymentrunasynchronousrunasynchronouscommandcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account to use for authentication.</p></td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md) | **Credentials**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
  
 

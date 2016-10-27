@@ -15,12 +15,12 @@ ms.sitesec: msdn
 
 `RunSynchronousCommand` specifies a single command to run during the specified configuration pass.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) instead.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) instead.
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands always run before commands in the same pass. `RunSynchronous` commands run in the user context in the auditUser configuration pass configuration pass and in the system context in the specialize configuration pass.
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md) commands always run before commands in the same pass. `RunSynchronous` commands run in the user context in the auditUser configuration pass configuration pass and in the system context in the specialize configuration pass.
 
 **Warning**  
-Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandwillreboot.md).
+Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-willreboot.md).
 
  
 
@@ -34,23 +34,23 @@ Do not add commands that shut down or reboot the computer; instead, use the sett
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md)</p></td>
 <td><p>Specifies the credentials to use when accessing paths.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-deploymentrunsynchronousrunsynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-description.md)</p></td>
 <td><p>Specifies a description of the command to run.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-order.md)</p></td>
 <td><p>Specifies the order of the command to run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-path.md)</p></td>
 <td><p>Specifies the path to the command to run.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WillReboot](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandwillreboot.md)</p></td>
+<td><p>[WillReboot](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-willreboot.md)</p></td>
 <td><p>Specifies in what circumstances to restart the computer after running a synchronous command.</p></td>
 </tr>
 </tbody>
@@ -68,7 +68,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | **RunSynchronousCommand**
+[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | **RunSynchronousCommand**
 
 ## Applies To
 
@@ -110,9 +110,9 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md)
 
-[RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md)
+[RunAsynchronous](microsoft-windows-deployment-runasynchronous.md)
 
  
 

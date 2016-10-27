@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 `RunSynchronous` commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) instead.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) instead.
 
 ## Child Elements
 

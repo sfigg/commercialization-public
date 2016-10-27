@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` briefly describes the asynchronous command to run. [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
+`Description` briefly describes the asynchronous command to run. [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
 
 ## Values
 
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deploymentrunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md) | **Description**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md) | **Description**
 
 ## Applies To
 
@@ -85,7 +85,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-deploymentrunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
  
 
