@@ -51,12 +51,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **UserAccounts**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **UserAccounts**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
@@ -117,7 +117,7 @@ The following XML output shows how to set `UserAccounts`.
 ## Related topics
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

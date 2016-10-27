@@ -62,12 +62,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [StartPanelLinks](microsoft-windows-shell-setupstartpanellinks.md) | **Link0**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartPanelLinks](microsoft-windows-shell-setupstartpanellinks.md) | **Link0**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 

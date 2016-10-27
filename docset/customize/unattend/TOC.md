@@ -629,7 +629,7 @@
 #### [ExternalAdapter](microsoft-windows-sharedaccessexternaladapter.md)
 #### [InternalAdapter](microsoft-windows-sharedaccessinternaladapter.md)
 #### [InternalIsBridge](microsoft-windows-sharedaccessinternalisbridge.md)
-### [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+### [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 #### [AutoLogon](microsoft-windows-shell-setupautologon.md)
 ##### [Domain](microsoft-windows-shell-setupautologondomain.md)
 ##### [Enabled](microsoft-windows-shell-setupautologonenabled.md)

@@ -70,12 +70,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **ClientApplications**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **ClientApplications**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
@@ -95,7 +95,7 @@ The following XML output shows how to set client applications.
 ## Related topics
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

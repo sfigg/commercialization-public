@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `VerticalResolution` specifies the vertical resolution to apply to the video adapter.
 
-This setting is used to configure only Windows PE, and is not applied to the Windows installation. To change the display settings for the Windows installation, see [Display](microsoft-windows-shell-setupdisplay.md) in the [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) component.
+This setting is used to configure only Windows PE, and is not applied to the Windows installation. To change the display settings for the Windows installation, see [Display](microsoft-windows-shell-setupdisplay.md) in the [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) component.
 
 **Note**  
 We recommend that you use the default settings. If you select a value for this setting that is not supported by Windows PE, your video adapter, or the display monitor, then Windows PE might show only a blank screen and will not display an error.

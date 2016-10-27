@@ -55,14 +55,14 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **BluetoothTaskbarIconEnabled**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **BluetoothTaskbarIconEnabled**
 
 ## Applies To
 
 
 This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
 
-For a list of other supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md). This setting is not configured in a Nano Server image.
+For a list of other supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md). This setting is not configured in a Nano Server image.
 
 ## XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to enable the Bluetooth taskbar.
 ## Related topics
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

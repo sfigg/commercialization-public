@@ -61,12 +61,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **FirstLogonCommands**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **FirstLogonCommands**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
@@ -95,7 +95,7 @@ The following XML output shows how to specify two commands to run after first lo
 
 [LogonCommands](microsoft-windows-shell-setuplogoncommands.md)
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

@@ -604,12 +604,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **StartTiles**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **StartTiles**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
@@ -723,7 +723,7 @@ The following XML output shows to how to use the &lt;StartTiles&gt; component an
 ## Related topics
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

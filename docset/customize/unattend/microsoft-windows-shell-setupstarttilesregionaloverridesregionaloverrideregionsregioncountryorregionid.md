@@ -55,7 +55,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md)| [Regions](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideregions.md) | [Region](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideregionsregion.md) | **CountryOrRegionID**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md)| [Regions](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideregions.md) | [Region](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverrideregionsregion.md) | **CountryOrRegionID**
 
 ## XML Example
 

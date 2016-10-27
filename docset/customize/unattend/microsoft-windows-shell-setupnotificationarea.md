@@ -49,14 +49,14 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | **Notification Area**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | **Notification Area**
 
 ## Applies To
 
 
 Windows 8, Windows 7, Windows Server® 2012, and Windows Server 2008 R2 editions.
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output shows how to promote two other notification icons to be
 ## Related topics
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md)
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
  
 

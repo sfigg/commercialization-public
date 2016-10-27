@@ -41,12 +41,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **CommandLine**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **CommandLine**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 

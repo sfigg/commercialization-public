@@ -45,12 +45,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md) | **Domain**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
 ## XML Example
 
