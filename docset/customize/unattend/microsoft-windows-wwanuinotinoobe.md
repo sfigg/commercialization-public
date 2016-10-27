@@ -47,12 +47,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WwanUI](microsoft-windows-wwanui-win8-microsoft-windows-wwanui.md) | **NotInOOBE**
+[Microsoft-Windows-WwanUI](microsoft-windows-wwanui.md) | **NotInOOBE**
 
 ## Applies To
 
 
-For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WwanUI](microsoft-windows-wwanui-win8-microsoft-windows-wwanui.md).
+For a full list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WwanUI](microsoft-windows-wwanui.md).
 
 ## XML Example
 

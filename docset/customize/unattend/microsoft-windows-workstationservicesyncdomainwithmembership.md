@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WorkstationService](Windowsmicrosoft-windows-workstationservice.md).
 
 ## XML Example
 
@@ -64,7 +64,7 @@ The following XML output shows how to specify that the primary Domain Name Servi
 ## Related topics
 
 
-[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md)
+[Microsoft-Windows-WorkstationService](Windowsmicrosoft-windows-workstationservice.md)
 
  
 

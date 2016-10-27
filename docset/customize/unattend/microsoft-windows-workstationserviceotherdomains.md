@@ -46,7 +46,7 @@ generalize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md).
 
 ## XML Example
 
@@ -60,7 +60,7 @@ The following XML output shows how to specify the Microsoft LAN Manager domains 
 ## Related topics
 
 
-[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice-win7-microsoft-windows-workstationservice.md)
+[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md)
 
  
 

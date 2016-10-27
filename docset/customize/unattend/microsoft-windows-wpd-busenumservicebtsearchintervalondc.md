@@ -52,7 +52,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice-win7-microsoft-windows-wpd-busenumservice.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-WPD-BusEnumService](microsoft-windows-wpd-busenumservice.md).
 
 ## XML Example
 

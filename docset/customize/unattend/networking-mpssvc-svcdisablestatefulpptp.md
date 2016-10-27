@@ -73,7 +73,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md).
 
 ## XML Example
 
@@ -103,7 +103,7 @@ The following XML output shows how to set Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md)
 
  
 

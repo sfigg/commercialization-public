@@ -59,7 +59,7 @@ This setting is related to [ConvertibleSlateModePromptPreference](microsoft-wind
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons-win8-microsoft-windows-gpiobuttons.md) | **ConvertibleSlateMode**
+[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md) | **ConvertibleSlateMode**
 
 ## Valid Configuration Passes
 
@@ -73,7 +73,7 @@ offlineServicing
 
 This setting applies to Windows 10 and Windows 8.1.
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons-win8-microsoft-windows-gpiobuttons.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md).
 
 ## XML Example
 
@@ -87,7 +87,7 @@ The following XML output specifies a laptop form factor.
 ## Related topics
 
 
-[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons-win8-microsoft-windows-gpiobuttons.md)
+[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md)
 
 [ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)
 

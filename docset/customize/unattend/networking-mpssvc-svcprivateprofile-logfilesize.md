@@ -1,19 +1,19 @@
 ---
-title: PublicProfile\_LogFileSize
-description: PublicProfile\_LogFileSize
+title: PrivateProfile\_LogFileSize
+description: PrivateProfile\_LogFileSize
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 8131e1c7-0bbe-4de4-aace-0de4ae0ecebb
+ms.assetid: c1fc1eba-3372-48e8-867d-5ebfad76c8b3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# PublicProfile\_LogFileSize
+# PrivateProfile\_LogFileSize
 
 
-`PublicProfile_LogFileSize` specifies the size of the default log file for Windows Firewall for the public profile.
+`PrivateProfile_LogFileSize` specifies the size of the default log file for Windows Firewall for the private profile.
 
 ## Values
 
@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md) | **PublicProfile\_LogFileSize**
+[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md) | **PrivateProfile\_LogFileSize**
 
 ## Valid Passes
 
@@ -46,7 +46,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md).
 
 ## XML Example
 
@@ -76,13 +76,13 @@ The following XML output shows how to set Windows Firewall.
 ## Related topics
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc-win7-networking-mpssvc-svc.md)
+[Networking-MPSSVC-Svc](Windowsnetworking-mpssvc-svc.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20PublicProfile_LogFileSize%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20PrivateProfile_LogFileSize%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

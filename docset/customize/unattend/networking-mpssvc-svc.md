@@ -33,27 +33,27 @@ The Networking-MPSSVC-Svc component is part of Windows Firewall, which protects 
 <td><p>Disables the Windows Firewall Point-to-Point Tunneling Protocol (PPTP) connection inspection engine.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DomainProfile_DisableNotifications](domainprofile-disablenotifications-win7-networking-mpssvc-svcdomainprofile-disablenotifications.md)</p></td>
+<td><p>[DomainProfile_DisableNotifications](networking-mpssvc-svcdomainprofile-disablenotifications.md)</p></td>
 <td><p>Disables Windows Firewall notifications for the domain profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DomainProfile_EnableFirewall](domainprofile-enablefirewall-win7-networking-mpssvc-svcdomainprofile-enablefirewall.md)</p></td>
+<td><p>[DomainProfile_EnableFirewall](networking-mpssvc-svcdomainprofile-enablefirewall.md)</p></td>
 <td><p>Enables Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DomainProfile_LogDroppedPackets](domainprofile-logdroppedpackets-win7-networking-mpssvc-svcdomainprofile-logdroppedpackets.md)</p></td>
+<td><p>[DomainProfile_LogDroppedPackets](networking-mpssvc-svcdomainprofile-logdroppedpackets.md)</p></td>
 <td><p>Specifies whether dropped packets are logged for Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DomainProfile_LogFile](domainprofile-logfile-win7-networking-mpssvc-svcdomainprofile-logfile.md)</p></td>
+<td><p>[DomainProfile_LogFile](networking-mpssvc-svcdomainprofile-logfile.md)</p></td>
 <td><p>Specifies the default log file for Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DomainProfile_LogFileSize](domainprofile-logfilesize-win7-networking-mpssvc-svcdomainprofile-logfilesize.md)</p></td>
+<td><p>[DomainProfile_LogFileSize](networking-mpssvc-svcdomainprofile-logfilesize.md)</p></td>
 <td><p>Specifies the default log file size for Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DomainProfile_LogSuccessfulConnections](domainprofile-logsuccessfulconnections-win7-networking-mpssvc-svcdomainprofile-logsuccessfulconnections.md)</p></td>
+<td><p>[DomainProfile_LogSuccessfulConnections](networking-mpssvc-svcdomainprofile-logsuccessfulconnections.md)</p></td>
 <td><p>Specifies whether successful connections are logged for Windows Firewall for the domain profile.</p></td>
 </tr>
 <tr class="odd">
@@ -61,51 +61,51 @@ The Networking-MPSSVC-Svc component is part of Windows Firewall, which protects 
 <td><p>Specifies Windows Firewall groups.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PrivateProfile_DisableNotifications](privateprofile-disablenotifications-win7-networking-mpssvc-svcprivateprofile-disablenotifications.md)</p></td>
+<td><p>[PrivateProfile_DisableNotifications](networking-mpssvc-svcprivateprofile-disablenotifications.md)</p></td>
 <td><p>Specifies whether Windows Firewall notifications are disabled for the standard profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PrivateProfile_EnableFirewall](privateprofile-enablefirewall-win7-networking-mpssvc-svcprivateprofile-enablefirewall.md)</p></td>
+<td><p>[PrivateProfile_EnableFirewall](networking-mpssvc-svcprivateprofile-enablefirewall.md)</p></td>
 <td><p>Enables Windows Firewall for the standard profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PrivateProfile_LogDroppedPackets](privateprofile-logdroppedpackets-win7-networking-mpssvc-svcprivateprofile-logdroppedpackets.md)</p></td>
+<td><p>[PrivateProfile_LogDroppedPackets](networking-mpssvc-svcprivateprofile-logdroppedpackets.md)</p></td>
 <td><p>Specifies whether dropped packets are logged for Windows Firewall for the standard profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PrivateProfile_LogFile](privateprofile-logfile-win7-networking-mpssvc-svcprivateprofile-logfile.md)</p></td>
+<td><p>[PrivateProfile_LogFile](networking-mpssvc-svcprivateprofile-logfile.md)</p></td>
 <td><p>Specifies the default log file for Windows Firewall for the standard profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PrivateProfile_LogFileSize](privateprofile-logfilesize-win7-networking-mpssvc-svcprivateprofile-logfilesize.md)</p></td>
+<td><p>[PrivateProfile_LogFileSize](networking-mpssvc-svcprivateprofile-logfilesize.md)</p></td>
 <td><p>Specifies the default log file size for Windows Firewall for the standard profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PrivateProfile_LogSuccessfulConnections](privateprofile-logsuccessfulconnections-win7-networking-mpssvc-svcprivateprofile-logsuccessfulconnections.md)</p></td>
+<td><p>[PrivateProfile_LogSuccessfulConnections](networking-mpssvc-svcprivateprofile-logsuccessfulconnections.md)</p></td>
 <td><p>Specifies whether successful connections are logged for Windows Firewall for the standard profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PublicProfile_DisableNotifications](publicprofile-disablenotifications-win7-networking-mpssvc-svcpublicprofile-disablenotifications.md)</p></td>
+<td><p>[PublicProfile_DisableNotifications](networking-mpssvc-svcpublicprofile-disablenotifications.md)</p></td>
 <td><p>Disables Windows Firewall notifications for the public profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PublicProfile_EnableFirewall](publicprofile-enablefirewall-win7-networking-mpssvc-svcpublicprofile-enablefirewall.md)</p></td>
+<td><p>[PublicProfile_EnableFirewall](pnetworking-mpssvc-svcpublicprofile-enablefirewall.md)</p></td>
 <td><p>Enables Windows Firewall for the public profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PublicProfile_LogDroppedPackets](publicprofile-logdroppedpackets-win7-networking-mpssvc-svcpublicprofile-logdroppedpackets.md)</p></td>
+<td><p>[PublicProfile_LogDroppedPackets](networking-mpssvc-svcpublicprofile-logdroppedpackets.md)</p></td>
 <td><p>Specifies whether dropped packets are logged for Windows Firewall for the public profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PublicProfile_LogFile](publicprofile-logfile-win7-networking-mpssvc-svcpublicprofile-logfile.md)</p></td>
+<td><p>[PublicProfile_LogFile](networking-mpssvc-svcpublicprofile-logfile.md)</p></td>
 <td><p>Specifies the default log file for Windows Firewall for the public profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PublicProfile_LogFileSize](publicprofile-logfilesize-win7-networking-mpssvc-svcpublicprofile-logfilesize.md)</p></td>
+<td><p>[PublicProfile_LogFileSize](networking-mpssvc-svcpublicprofile-logfilesize.md)</p></td>
 <td><p>Specifies the default log file size for Windows Firewall for the public profile.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PublicProfile_LogSuccessfulConnections](publicprofile-logsuccessfulconnections-win7-networking-mpssvc-svcpublicprofile-logsuccessfulconnections.md)</p></td>
+<td><p>[PublicProfile_LogSuccessfulConnections](networking-mpssvc-svcpublicprofile-logsuccessfulconnections.md)</p></td>
 <td><p>Specifies whether successful connections are logged for Windows Firewall for the public profile.</p></td>
 </tr>
 </tbody>
