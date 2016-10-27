@@ -5663,15 +5663,15 @@ Footnote:
 <p style="margin-left: 20px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-configuration-service-provider.md#inbox-apps). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
 > **Note**  
- When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your > list of allowed apps.
-
- <p style="margin-left: 20px">Here's additional guidance for the upgrade process:
- 
- -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
- -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
- -   In the SyncML, you must use lowercase product ID.
- -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
- -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+>  When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your list of allowed apps.
+>
+> Here's additional guidance for the upgrade process:
+>
+>  -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+>  -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
+>  -   In the SyncML, you must use lowercase product ID.
+>  -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
+>  -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
 
 
 <p style="margin-left: 20px">An application that is running may not be immediately terminated.
@@ -6686,9 +6686,9 @@ Footnote:
 -   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
 
 > **Note**  
-> If AlphanumericDevicePasswordRequired is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
+> If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
 >
-> If AlphanumericDevicePasswordRequired is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
+> If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
 
  
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
@@ -7651,8 +7651,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 > **Note**  This policy has been deprecated in Windows 10, version 1607
-   
-   
+
+&nbsp;
+
 > **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
@@ -8307,9 +8308,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 > **Note**  
-<p style="margin-left: 20px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
-<p style="margin-left: 20px">Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+>
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 
 <p style="margin-left: 20px">Allows IT Admins to specify update delays for up to 4 weeks.
@@ -8378,11 +8379,11 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 > **Note**  
-<p style="margin-left: 20px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 
-<p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
+> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
-<p style="margin-left: 20px">Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
 <p style="margin-left: 20px">Allows IT Admins to specify additional upgrade delays for up to 8 months.
@@ -8395,9 +8396,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-
-<p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
+> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
@@ -8449,9 +8448,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 > **Note**  
-<p style="margin-left: 20px">This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
-<p style="margin-left: 20px">Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+>
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
 <p style="margin-left: 20px">Allows the IT admin to set a device to CBB train.
@@ -8464,8 +8463,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-   
-   
+
+&nbsp;
+
 > **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
 
