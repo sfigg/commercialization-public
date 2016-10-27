@@ -11,7 +11,7 @@ title: Clean Up the WinSxS Folder
 
 One commonly asked question is can I delete the WinSxS folder to regain some disk space? The short answer is no. However, there are ways to reduce the size of the WinSxS folder. For more information about the WinSxS folder, see [Manage the Component Store](manage-the-component-store.md). This topic was written to provide information about the different ways to reduce the size of the WinSxS folder on a running version of Windows 10.
 
-Windows 10 and Windows Server 2016 Technical Preview automatically reduces the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
+Windows 10 and Windows Server 2016 automatically reduces the size of the WinSxS by using methods similar to the ones described in this topic, however these methods also include internal processes, such as uninstalling and deleting packages with components that have been replaced by other components with newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After a period of time, these components are removed from the installation.
 
 You can also reduce the size of a Windows image using some of the same techniques, as discussed in [Reduce the Size of the Component Store in an Offline Windows Image](reduce-the-size-of-the-component-store-in-an-offline-windows-image.md).
 
@@ -20,7 +20,7 @@ Deleting files from the WinSxS folder or deleting the entire WinSxS folder may s
 
  
 
-In Windows 10 and Windows Server 2016 Technical Preview, you have a number of ways to start the cleanup of the component store, which use a combination of package deletion and component compression to clean up the WinSxS folder:
+In Windows 10 and Windows Server 2016, you have a number of ways to start the cleanup of the component store, which use a combination of package deletion and component compression to clean up the WinSxS folder:
 
 ## <span id="Task_Scheduler"></span><span id="task_scheduler"></span><span id="TASK_SCHEDULER"></span>Task Scheduler
 

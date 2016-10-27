@@ -27,7 +27,7 @@ Required. The root node for all settings that belong to a single management serv
 
 Supported operation is Get.
 
-<a href="" id="provider-providerid"></a>**Provider/ProviderID**  
+<a href="" id="provider-providerid"></a>**Provider/****_ProviderID_**  
 Optional. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. As a best practice, use text that doesn’t require XML/URI escaping.
 
 Supported operations are Get and Add.

@@ -14,7 +14,7 @@ The ClientCertificateInstall configuration service provider enables the enterpri
 
 For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure enrollment execution is not triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
-**Note**  
+> **Note**  
 Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
@@ -36,7 +36,7 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 
 Supported operation is Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID*  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/****_UniqueID_**  
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
 
 The data type format is node.
@@ -45,7 +45,7 @@ Supported operations are Get, Add, and Delete .
 
 Calling Delete on this node should delete the certificates and the keys that were installed by the corresponding PFX blob.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-keylocation"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID***/KeyLocation**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-keylocation"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/KeyLocation**  
 Required for PFX certificate installation. Indicates the KeyStorage provider to target the private key installation to.
 
 Supported operations are Get and Add.
@@ -68,7 +68,7 @@ Date type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID***/PFXCertBlob**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**  
 CRYPT\_DATA\_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before this is called. This also sets the Status node to the current Status of the operation.
 
 The data type format is binary.
@@ -81,14 +81,14 @@ If Add is called on this node for a new PFX, the certificate will be added. When
 
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT\_DATA\_BLOB, which can be found in [CRYPT\_INTEGER\_BLOB](http://go.microsoft.com/fwlink/p/?LinkId=523871).
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID***/PFXCertPassword**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**  
 Password that protects the PFX blob. This is required if the PFX is password protected.
 
 Data Type is a string.
 
 Supported operations are Add and Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID***/PFXCertPasswordEncryptionType**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionType**  
 Optional. Used to specify whtether the PFX certificate password is encrypted with the MDM certificate by the MDM sever.
 
 The data type is int. Valid values:
@@ -104,7 +104,7 @@ Supported operations are Add and Replace.
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxkeyexportable"></a>**ClientCertificateInstall/PFXCertInstall/***UniqueID***/PFXKeyExportable**  
 Optional. Used to specify if the private key installed is exportable (and can be exported later). The PFX is not exportable when it is installed to TPM.
 
-**Note**  You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
+> **Note**  You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
  
 
@@ -136,7 +136,7 @@ Supported operations are Add, Get, and Replace.
 <a href="" id="clientcertificateinstall-scep"></a>**ClientCertificateInstall/SCEP**  
 Node for SCEP.
 
-**Note**  An alert is sent after the SCEP certificate is installed.
+> **Note**  An alert is sent after the SCEP certificate is installed.
 
  
 
@@ -150,7 +150,7 @@ A node required for SCEP certificate enrollment. Parent node to group SCEP cert 
 
 Supported operations are Add, and Delete.
 
-**Note**  Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
+> **Note**  Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
 
  
 
@@ -192,7 +192,7 @@ Supported operations are Add, Get, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-keyprotection"></a>**ClientCertificateInstall/SCEP/***UniqueID***/Install/KeyProtection**  
 Optional. Specifies where to keep the private key.
 
-**Note**  Even if the private key is protected by TPM, it is not protected with a TPM PIN.
+> **Note**  Even if the private key is protected by TPM, it is not protected with a TPM PIN.
 
  
 
@@ -236,7 +236,7 @@ Supported operations are Add, Get, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-templatename"></a>**ClientCertificateInstall/SCEP/***UniqueID***/Install/TemplateName**  
 Optional. OID of certificate template name.
 
-**Note**  This name is typically ignored by the SCEP server; therefore the MDM server typically doesn’t need to provide it.
+> **Note**  This name is typically ignored by the SCEP server; therefore the MDM server typically doesn’t need to provide it.
 
  
 
@@ -291,7 +291,7 @@ Valid values are:
 -   Months
 -   Years
 
-**Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
+> **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
  
 
@@ -302,7 +302,7 @@ Optional. Specifies the desired number of units used in the validity period. Thi
 
 Data type is string.
 
-**Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
+>**Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
  
 
@@ -671,7 +671,7 @@ Add a PFX certificate. The PFX certificate password is encrypted with a custom c
 
  
 
-10/10/2016
+
 
 
 

@@ -12,7 +12,7 @@ ms.assetid: 62623915-9747-4eb1-8027-449827b85e6b
 
 The CMPolicy configuration service provider defines rules that the Connection Manager uses to identify the correct connection for a connection request.
 
-**Note**  
+> **Note**  
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
@@ -70,8 +70,8 @@ For `CMST_CONNECTION_TYPE`, specify the GUID for the desired connection type. Th
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -113,8 +113,8 @@ For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network typ
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -188,8 +188,8 @@ For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -504,7 +504,7 @@ Adding a host-based mapping policy:
 
  
 
-10/10/2016
+
 
 
 

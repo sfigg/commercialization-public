@@ -124,13 +124,13 @@ This topic shows the OMA DM device description framework (DDF) for the **CustomD
 ## Related topics
 
 
-[CustomDeviceUI configuration service provider](customdeviceui-configuration-service-provider.md)
+[CustomDeviceUI configuration service provider](customdeviceui-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

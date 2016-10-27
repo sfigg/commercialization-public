@@ -10,7 +10,7 @@ ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 # CustomDeviceUI CSP
 
 
-**Note**  This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
+> **Note**  This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
 
  
 
@@ -19,40 +19,17 @@ The following diagram shows the CustomDeviceUI configuration service provider in
 
 ![customdeviceui csp](images/provisioning-csp-customdeviceui.png)
 
-The following list shows the characteristics and parameters.
+<a href="" id="./Vendor/MSFT/CustomDeviceUI"></a>**./Vendor/MSFT/CustomDeviceUI**  
+The root node for the CustomDeviceUI configuration service provider. The supported operation is Get.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>./Vendor/MSFT/CustomDeviceUI</strong></p></td>
-<td><p>The root node for the CustomDeviceUI configuration service provider. The supported operation is Get.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>StartupAppID</strong></p></td>
-<td><p>AppID string value is the default appid/AUMID to launch during startup. The supported operations are Get and Replace.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>BackgroundTasksToLaunch</strong></p></td>
-<td><p>List of package names of background tasks that need to be launched on device startup. The supported operation is Get.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>BackgroundTasksToLaunch/<em>BackgroundTaskPackageName</em></strong></p></td>
-<td><p>Package Full Name of the App that needs be launched in the background. This can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.</p></td>
-</tr>
-</tbody>
-</table>
+<a href="" id="StartupAppID"></a>**StartupAppID**  
+AppID string value is the default appid/AUMID to launch during startup. The supported operations are Get and Replace.
 
- 
+<a href="" id="BackgroundTasksToLaunch"></a>**BackgroundTasksToLaunch**  
+List of package names of background tasks that need to be launched on device startup. The supported operation is Get.
+
+<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/****_BackgroundTaskPackageName_**  
+Package Full Name of the App that needs be launched in the background. This can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.
 
 ## SyncML examples
 
@@ -123,7 +100,7 @@ The following list shows the characteristics and parameters.
 
  
 
-10/10/2016
+
 
 
 
