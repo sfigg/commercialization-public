@@ -52,12 +52,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md) | **Icon**
+[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md) | **Icon**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to describe a recommended online backup servi
 ## Related topics
 
 
-[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md)
+[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
  
 

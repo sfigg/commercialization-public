@@ -41,7 +41,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md) | **NoPhysicalCameraLED**
+[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md) | **NoPhysicalCameraLED**
 
 ## Valid Configuration Passes
 
@@ -59,7 +59,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md).
 
 ## XML Example
 
@@ -73,7 +73,7 @@ The following XML output specifies that no physical camera LED exists for the de
 ## Related topics
 
 
-[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md)
+[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)
 
  
 

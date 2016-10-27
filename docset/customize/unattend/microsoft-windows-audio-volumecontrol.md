@@ -25,7 +25,7 @@ The **Microsoft-Windows-Audio-VolumeControl** component specifies settings for a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EnableVolumeControlWhileLocked](microsoft-windows-audio-volumecontrolenablevolumecontrolwhilelocked.md)</p></td>
+<td><p>[EnableVolumeControlWhileLocked](microsoft-windows-audio-volumecontrol-enablevolumecontrolwhilelocked.md)</p></td>
 <td><p>Specifies whether volume can be changed when the computer is locked.</p></td>
 </tr>
 </tbody>

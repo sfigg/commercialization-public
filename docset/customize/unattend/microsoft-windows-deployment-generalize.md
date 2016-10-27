@@ -65,7 +65,7 @@ When `Generalize` is set, Windows Setup will:
      
 
 **Note**  
-Do not use this setting in conjunction with the [Reseal](microsoft-windows-deploymentreseal.md) setting. If you use both settings, the **Reseal** setting is ignored.
+Do not use this setting in conjunction with the [Reseal](microsoft-windows-deployment-reseal.md) setting. If you use both settings, the **Reseal** setting is ignored.
 
  
 
@@ -79,11 +79,11 @@ Do not use this setting in conjunction with the [Reseal](microsoft-windows-deplo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ForceShutdownNow](microsoft-windows-deploymentgeneralizeforceshutdownnow.md)</p></td>
+<td><p>[ForceShutdownNow](microsoft-windows-deployment-generalizeforceshutdownnow.md)</p></td>
 <td><p>Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Mode](microsoft-windows-deploymentgeneralizemode.md)</p></td>
+<td><p>[Mode](microsoft-windows-deployment-generalizemode.md)</p></td>
 <td><p>Specifies which configuration pass the computer start after the <strong>generalize</strong> configuration pass is complete. The options include: <strong>Audit</strong> or <strong>OOBE</strong>.</p></td>
 </tr>
 </tbody>
@@ -99,12 +99,12 @@ auditUser
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md) | **Generalize**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | **Generalize**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
@@ -128,7 +128,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md)
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
  
 

@@ -44,7 +44,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-BrowserService](microsoft-windows-browserservice-win7-microsoft-windows-browserservice.md) | **MaintainServerList**
+[Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md) | **MaintainServerList**
 
 ## Valid Passes
 
@@ -54,7 +54,7 @@ generalize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-BrowserService](microsoft-windows-browserservice-win7-microsoft-windows-browserservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output specifies that the computer cannot act as a master or b
 ## Related topics
 
 
-[Microsoft-Windows-BrowserService](microsoft-windows-browserservice-win7-microsoft-windows-browserservice.md)
+[Microsoft-Windows-BrowserService](microsoft-windows-browserservice.md)
 
  
 

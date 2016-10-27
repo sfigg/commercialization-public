@@ -24,7 +24,7 @@
 ### [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md)
 #### [CameraSoundLevel](microsoft-windows-coremmrescamerasoundlevel.md)
 #### [NoPhysicalCameraLED](microsoft-windows-coremmresnophysicalcameraled.md)
-### [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md)
+### [Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 #### [AuditComputerName](microsoft-windows-deploymentauditcomputername.md)
 ##### [MustReboot](microsoft-windows-deploymentauditcomputernamemustreboot.md)
 ##### [Name](microsoft-windows-deploymentauditcomputernamename.md)

@@ -45,12 +45,12 @@ auditSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deploymentauditcomputername.md) | **MustReboot**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deployment-auditcomputername.md) | **MustReboot**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 

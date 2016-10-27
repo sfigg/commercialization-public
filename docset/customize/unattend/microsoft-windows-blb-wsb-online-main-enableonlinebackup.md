@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `EnableOnlineBackup` specifies whether a recommended online backup service appears in the Windows Server Backup menus.
 
-By default, the Windows Server Backup menus show a recommended online backup service. By default, this service is Windows Azure Online Backup. You can select another default cloud backup service by setting the other settings in the [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md) component.
+By default, the Windows Server Backup menus show a recommended online backup service. By default, this service is Windows Azure Online Backup. You can select another default cloud backup service by setting the other settings in the [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md) component.
 
 ## Values
 
@@ -50,12 +50,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md) | **EnableOnlineBackup**
+[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md) | **EnableOnlineBackup**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md).
 
 ## XML Example
 
@@ -69,7 +69,7 @@ The following XML output shows how to specify that no recommendations for online
 ## Related topics
 
 
-[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md)
+[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
  
 

@@ -36,7 +36,7 @@ ms.sitesec: msdn
 **Note**  
 If you do not specify this setting, the existing computer name is preserved.
 
-If you specify a new computer name, you might have to restart the computer for it to take effect. If additional processing is dependent on the new computer name, set the [MustReboot](microsoft-windows-deploymentauditcomputernamemustreboot.md) value to **true** to restart the computer immediately.
+If you specify a new computer name, you might have to restart the computer for it to take effect. If additional processing is dependent on the new computer name, set the [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) value to **true** to restart the computer immediately.
 
  
 
@@ -50,12 +50,12 @@ auditSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deploymentauditcomputername.md) | **Name**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [AuditComputerName](microsoft-windows-deployment-auditcomputername.md) | **Name**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[AuditComputerName](microsoft-windows-deploymentauditcomputername.md)
+[AuditComputerName](microsoft-windows-deployment-auditcomputername.md)
 
  
 

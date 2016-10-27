@@ -48,7 +48,7 @@ generalize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
@@ -62,7 +62,7 @@ The following XML output specifies the duplication tool.
 ## Related topics
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md)
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
  
 

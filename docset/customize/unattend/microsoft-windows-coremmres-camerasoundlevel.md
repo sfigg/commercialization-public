@@ -47,7 +47,7 @@ This feature will make a best effort to provide the restrictions for the camera 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md) | **CameraSoundLevel**
+[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md) | **CameraSoundLevel**
 
 ## Valid Configuration Passes
 
@@ -65,7 +65,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output specifies that Windows will play a medium volume tone w
 ## Related topics
 
 
-[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres-win8-microsoft-windows-coremmres.md)
+[Microsoft-Windows-CoreMmRes](microsoft-windows-coremmres.md)
 
  
 

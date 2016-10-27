@@ -54,7 +54,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
@@ -89,7 +89,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md)
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md)
 
 [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)
 
