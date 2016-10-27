@@ -41,14 +41,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
 
--   Separate multistring values by the Unicode &\#xF000; in the XML file.
--   End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
+    - Separate multistring values by the Unicode &\#xF000; in the XML file.
+-    End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
 
 > **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
--   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
--   Supported operations are Add, Get, Delete, and Replace.
--   Value type is string.
+-   
+    - In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
+    - Supported operations are Add, Get, Delete, and Replace.
+    - Value type is string.
 
 <a href="" id="policy-result"></a>**Policy/Result**  
 <p style="margin-left: 20px">Groups the evaluated policies from all providers that can be configured.
