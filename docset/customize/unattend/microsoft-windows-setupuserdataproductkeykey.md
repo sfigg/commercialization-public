@@ -72,12 +72,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | [ProductKey](microsoft-windows-setupuserdataproductkey.md) | **Key**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | [ProductKey](microsoft-windows-setupuserdataproductkey.md) | **Key**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

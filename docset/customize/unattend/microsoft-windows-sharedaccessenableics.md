@@ -47,12 +47,12 @@ generalize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess-win7-microsoft-windows-sharedaccess.md) | **EnableICS**
+[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess.md) | **EnableICS**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess-win7-microsoft-windows-sharedaccess.md).
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output shows how to set Shared Access.
 ## Related topics
 
 
-[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess-win7-microsoft-windows-sharedaccess.md)
+[Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess.md)
 
 [Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md)
 

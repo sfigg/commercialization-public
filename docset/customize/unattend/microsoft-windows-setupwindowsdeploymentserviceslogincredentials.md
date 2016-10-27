@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | **Credentials**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

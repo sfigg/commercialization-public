@@ -55,12 +55,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | **AcceptEula**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | **AcceptEula**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
