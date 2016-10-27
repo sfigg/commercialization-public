@@ -52,12 +52,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Traps**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | [TrapConfigurationItems](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitems.md) | **Traps**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 

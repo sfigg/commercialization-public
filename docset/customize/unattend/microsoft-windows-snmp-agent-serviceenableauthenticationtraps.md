@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | **EnableAuthenticationTraps**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **EnableAuthenticationTraps**
 
 ## Applies To
 
@@ -68,7 +68,7 @@ The following XML output shows how to disable authentication traps.
 ## Related topics
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md)
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
 
  
 

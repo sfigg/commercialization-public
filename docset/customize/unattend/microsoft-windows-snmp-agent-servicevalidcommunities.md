@@ -45,12 +45,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | **ValidCommunities**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **ValidCommunities**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 

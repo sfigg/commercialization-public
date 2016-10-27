@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SMBServer](microsoft-windows-smbserver-win7-microsoft-windows-smbserver.md) | **LmAnnounce**
+[Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md) | **LmAnnounce**
 
 ## Valid Passes
 
@@ -65,7 +65,7 @@ The following XML output shows how to specify that the server sends LanMan (LM) 
 ## Related topics
 
 
-[Microsoft-Windows-SMBServer](microsoft-windows-smbserver-win7-microsoft-windows-smbserver.md)
+[Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md)
 
  
 

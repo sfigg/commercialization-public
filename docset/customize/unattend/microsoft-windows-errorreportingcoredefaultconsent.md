@@ -48,7 +48,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md) | **DefaultConsent**
+[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md) | **DefaultConsent**
 
 ## Valid Configuration Passes
 
@@ -72,7 +72,7 @@ The following XML output specifies that all data is sent automatically.
 ## Related topics
 
 
-[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md)
+[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md)
 
  
 

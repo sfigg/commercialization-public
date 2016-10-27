@@ -42,7 +42,7 @@ For more information on privacy concerns about error reporting, see [this Micros
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md) | **DisableWER**
+[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md) | **DisableWER**
 
 ## Valid Passes
 
@@ -52,7 +52,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md).
+For a list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md).
 
 ## XML Example
 
@@ -66,7 +66,7 @@ The following XML output disables Windows Error Reporting.
 ## Related topics
 
 
-[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md)
+[Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md)
 
  
 

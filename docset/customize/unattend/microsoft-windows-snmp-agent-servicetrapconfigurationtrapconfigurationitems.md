@@ -27,7 +27,7 @@ You can use this setting in core installations of Windows Server® 2008, Window
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Community_Name](community-name-win7-microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitemscommunity-name.md)</p></td>
+<td><p>[Community_Name](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitemscommunity-name.md)</p></td>
 <td><p>Specifies the name of the community to which Simple Network Management Protocol (SNMP) sends traps.</p></td>
 </tr>
 <tr class="even">
@@ -49,12 +49,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | **TrapConfigurationItems**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | **TrapConfigurationItems**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 

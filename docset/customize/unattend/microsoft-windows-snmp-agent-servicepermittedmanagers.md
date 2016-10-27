@@ -53,7 +53,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | **PermittedManagers**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | **PermittedManagers**
 
 ## Applies To
 

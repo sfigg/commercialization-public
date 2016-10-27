@@ -49,7 +49,7 @@ In earlier releases, the default was **1** for clients and **3** for servers.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SMBServer](microsoft-windows-smbserver-win7-microsoft-windows-smbserver.md) | **Size**
+[Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md) | **Size**
 
 ## Valid Configuration Passes
 
@@ -74,7 +74,7 @@ The following XML output shows how to specify that the computer balances memory 
 ## Related topics
 
 
-[Microsoft-Windows-SMBServer](microsoft-windows-smbserver-win7-microsoft-windows-smbserver.md)
+[Microsoft-Windows-SMBServer](microsoft-windows-smbserver.md)
 
  
 

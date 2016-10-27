@@ -50,12 +50,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi-win7-microsoft-windows-sqmapi.md) | **CEIPEnabled**
+[Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi.md) | **CEIPEnabled**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi-win7-microsoft-windows-sqmapi.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi.md).
 
 ## XML Example
 

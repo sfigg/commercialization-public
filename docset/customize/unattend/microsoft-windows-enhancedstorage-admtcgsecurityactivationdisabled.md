@@ -52,12 +52,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm-win8-microsoft-windows-enhancedstorage-adm.md) | **TCGSecurityActivationDisabled**
+[Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm.md) | **TCGSecurityActivationDisabled**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm-win8-microsoft-windows-enhancedstorage-adm.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm.md).
 
 ## XML Example
 
