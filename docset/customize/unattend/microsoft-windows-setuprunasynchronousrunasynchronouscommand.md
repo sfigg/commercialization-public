@@ -64,7 +64,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | **RunAsynchronousCommand**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | **RunAsynchronousCommand**
 
 ## Applies To
 

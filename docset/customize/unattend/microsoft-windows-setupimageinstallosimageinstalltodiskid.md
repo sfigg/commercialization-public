@@ -42,7 +42,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [OSImage](microsoft-windows-setupimageinstallosimage.md) | [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) | **DiskID**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [OSImage](microsoft-windows-setupimageinstallosimage.md) | [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) | **DiskID**
 
 ## Applies To
 

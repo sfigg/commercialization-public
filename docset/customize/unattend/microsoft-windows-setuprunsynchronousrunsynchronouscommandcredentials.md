@@ -51,12 +51,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Credentials**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

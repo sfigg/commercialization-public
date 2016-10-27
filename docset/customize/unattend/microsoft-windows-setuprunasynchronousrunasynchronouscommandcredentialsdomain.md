@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md) | **Domain**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

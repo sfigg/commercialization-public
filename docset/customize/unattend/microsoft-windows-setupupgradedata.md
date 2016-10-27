@@ -54,12 +54,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | **UpgradeData**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **UpgradeData**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## <a href="" id="xmlexample"></a>XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to set an upgrade installation to run in guar
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[Microsoft-Windows-Setup](microsoft-windows-setup.md)
 
  
 

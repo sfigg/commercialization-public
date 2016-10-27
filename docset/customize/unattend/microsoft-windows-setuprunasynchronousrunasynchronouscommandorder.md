@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | **Order**
+[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | **Order**
 
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 
