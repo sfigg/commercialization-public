@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 In Japan, many retail users have 106-key keyboards, while some others have 101- or 102-key keyboards. In Korea, several different types of keyboards are available, some with different numbers of keys.
 
-This setting provides a means to select the specific keyboard to configure during Windows® Setup.
+This setting provides a means to select the specific keyboard to configure during Windows Setup.
 
 ## Value
 

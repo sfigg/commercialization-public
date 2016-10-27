@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-PnpCustomizationsWinPE
 
 
-The Microsoft-Windows-PnpCustomizationsWinPE component is used to add one or more out-of-box drivers to a Windows® installation. Drivers that are located in the path specified by [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) are copied to the driver store of the Windows installation during the windowsPE configuration pass.
+The Microsoft-Windows-PnpCustomizationsWinPE component is used to add one or more out-of-box drivers to a Windows installation. Drivers that are located in the path specified by [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) are copied to the driver store of the Windows installation during the windowsPE configuration pass.
 
 You can add boot-critical as well as non boot-critical drivers with this component to a Windows image before it is installed.
 

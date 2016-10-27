@@ -18,7 +18,7 @@ ms.sitesec: msdn
 **Warning**  
 We don’t recommend using this setting, except perhaps in a test environment. The following are known issues:
 
--   The Windows® Store and Windows Store apps are not supported.
+-   The Windows Store and Windows Store apps are not supported.
 
 -   If you change the default location of the program-data folders to a volume other than the system volume, you cannot service your image. Any updates, fixes, or service packs may not be applied to the installation.
 
@@ -67,7 +67,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
 
 ## XML Example
 

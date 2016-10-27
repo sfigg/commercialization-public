@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-WDF-Kernel Library
 
 
-`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows® Hardware Developer Central topic: [Kernel-Mode Driver Framework](http://go.microsoft.com/fwlink/?LinkId=143072).
+`Microsoft-Windows-WDF-KernelLibrary` provides a kernel-mode framework for device drivers. For more information, see the Windows Hardware Developer Central topic: [Kernel-Mode Driver Framework](http://go.microsoft.com/fwlink/?LinkId=143072).
 
 ## In This Section
 

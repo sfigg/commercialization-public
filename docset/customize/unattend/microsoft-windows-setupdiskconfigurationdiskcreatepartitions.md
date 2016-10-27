@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `CreatePartitions` specifies one or more partitions to create on a hard disk. Partitions are created in the order specified by the [Order](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionorder.md) setting.
 
-If you are installing Windows® to a blank hard disk, you must use the `CreatePartitions` and [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) settings to create and format partitions on the disk. You must also specify either the [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) or the [InstallToAvailablePartition](microsoft-windows-setupimageinstallosimageinstalltoavailablepartition.md) setting.
+If you are installing Windows to a blank hard disk, you must use the `CreatePartitions` and [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) settings to create and format partitions on the disk. You must also specify either the [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) or the [InstallToAvailablePartition](microsoft-windows-setupimageinstallosimageinstalltoavailablepartition.md) setting.
 
 `CreatePartitions` settings can have one or more [CreatePartition](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartition.md) list items, one for each partition to be configured.
 

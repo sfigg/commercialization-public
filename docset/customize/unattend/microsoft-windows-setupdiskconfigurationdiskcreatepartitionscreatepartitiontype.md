@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Creates a primary partition type.</p>
 <p>A standard master boot record (MBR)-based hard disk can contain up to four primary partitions or three primary partitions and one extended partition. The extended partition can include additional logical drives.</p>
 <p>A GUID partition table (GPT)-based hard disk can contain up to 128 primary partitions.</p>
-<p>Windows® must be installed on either a primary or a logical partition.</p></td>
+<p>Windows must be installed on either a primary or a logical partition.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>EFI</strong></p></td>
@@ -50,7 +50,7 @@ ms.sitesec: msdn
 <tr class="even">
 <td><p><strong>Logical</strong></p></td>
 <td><p>Specifies that the partition is a logical partition.</p>
-<p>Windows® 7 must be installed on either a primary or a logical partition.</p>
+<p>Windows 7 must be installed on either a primary or a logical partition.</p>
 <p>A logical partition is a volume that is created inside an extended partition on a basic master boot record (MBR)-based disk.</p>
 <p>Logical partitions are similar to primary partitions. However, while only four primary partitions can exist on a single disk, the number of logical partitions that can exist on a disk is unlimited. A logical partition can be formatted and assigned a drive letter.</p>
 <p>A logical partition must be created inside an extended partition. If an extended partition does not already exist on the disk or the specified size of the logical drive exceeds the extended partition, no partition is created.</p>

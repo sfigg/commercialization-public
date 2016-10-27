@@ -17,7 +17,7 @@ Use `TypeID` to manually specify a hard-drive partition type, such as a utility 
 
 -   Five partition types are already built in: primary, extensible firmware interface (EFI), extended, logical, and Microsoft® Reserved (MSR). To use these built-in partition types, enter a value in the setting: Microsoft-Windows-Setup/DiskConfiguration/Disk/CreatePartitions/CreatePartition/[Type](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitiontype.md).
 
--   Some partition types are not assigned a drive letter by default. Without a drive letter, these partitions do not appear in some common lists of devices, such as in Windows® Explorer or in Open or Save file dialog boxes. If you assign a letter to the partition, the partition appears in these common lists of devices.
+-   Some partition types are not assigned a drive letter by default. Without a drive letter, these partitions do not appear in some common lists of devices, such as in Windows Explorer or in Open or Save file dialog boxes. If you assign a letter to the partition, the partition appears in these common lists of devices.
 
 ## Values
 

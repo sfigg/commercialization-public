@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Mode
 
 
-`Mode` indicates whether, after completing other tasks, the computer returns to audit mode, or is set to start the Windows® Out-of-Box Experience (OOBE). For more information about modes, see [Windows Setup Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
+`Mode` indicates whether, after completing other tasks, the computer returns to audit mode, or is set to start the Windows Out-of-Box Experience (OOBE). For more information about modes, see [Windows Setup Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
 
 `Generalize` is a special-case setting. It is processed after all other settings in that configuration pass.
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ShowWindowsMail
 
 
-`ShowWindowsMail` specifies whether to show entry points for Windows® Mail.
+`ShowWindowsMail` specifies whether to show entry points for Windows Mail.
 
 **Important**  
 This setting is deprecated and should not be used.

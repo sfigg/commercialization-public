@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InstallImage
 
 
-`InstallImage` identifies the image to be installed and its Windows® Deployment Services group.
+`InstallImage` identifies the image to be installed and its Windows Deployment Services group.
 
 ## Child Elements
 

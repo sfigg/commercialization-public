@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-TerminalServices-LocalSessionManager
 
 
-The Microsoft-Windows-TerminalServices-LocalSessionManager component is responsible for starting the computer and implementing Windows® Fast User Switching (FUS). FUS utilizes the data separation technology of user profiles, providing a fast and convenient mechanism for switching between user accounts.
+The Microsoft-Windows-TerminalServices-LocalSessionManager component is responsible for starting the computer and implementing Windows Fast User Switching (FUS). FUS utilizes the data separation technology of user profiles, providing a fast and convenient mechanism for switching between user accounts.
 
 Terminal Services uses terminal emulation to deliver the Windows desktop and Windows-based applications to a wide variety of computers.
 

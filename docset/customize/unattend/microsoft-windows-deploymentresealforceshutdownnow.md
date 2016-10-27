@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ForceShutdownNow` modifies the `Reseal` setting, and specifies whether the computer shuts down immediately after the setting is applied.
 
-`Reseal` is a special-case setting. It is processed before any other setting in the configuration pass. In some scenarios, it instructs Windows® Setup either to process or to ignore all other settings in that configuration pass before starting another configuration pass. The following table provides scenarios for each combination of configuration pass, mode, and forced-shutdown behavior. When a configuration pass has more than one result, the table lists the results in the order that they take place.
+`Reseal` is a special-case setting. It is processed before any other setting in the configuration pass. In some scenarios, it instructs Windows Setup either to process or to ignore all other settings in that configuration pass before starting another configuration pass. The following table provides scenarios for each combination of configuration pass, mode, and forced-shutdown behavior. When a configuration pass has more than one result, the table lists the results in the order that they take place.
 
 <table>
 <colgroup>

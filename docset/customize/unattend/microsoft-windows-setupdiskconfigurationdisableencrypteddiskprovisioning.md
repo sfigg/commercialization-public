@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableEncryptedDiskProvisioning
 
 
-`DisableEncryptedDiskProvisioning` specifies whether Windows® activates encryption on blank drives that are capable of hardware-based encryption during installation.
+`DisableEncryptedDiskProvisioning` specifies whether Windows activates encryption on blank drives that are capable of hardware-based encryption during installation.
 
 By default, Windows activates drives that are capable of hardware-based encryption by using a fixed access control list (ACL) that is based on the Opal Security Subsystem Class (Opal SSC) specification.
 

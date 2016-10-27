@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `AcceptEula` specifies whether to automatically accept the Microsoft® Software License Terms.
 
 **Note**  
-This setting is required for all unattended installations. To prevent the Windows® Setup user interface (UI) from displaying, you must configure this setting. For a complete list of required settings, see the [How to Automate Windows Setup](http://go.microsoft.com/fwlink/?LinkId=206673) topic in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+This setting is required for all unattended installations. To prevent the Windows Setup user interface (UI) from displaying, you must configure this setting. For a complete list of required settings, see the [How to Automate Windows Setup](http://go.microsoft.com/fwlink/?LinkId=206673) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
  
 

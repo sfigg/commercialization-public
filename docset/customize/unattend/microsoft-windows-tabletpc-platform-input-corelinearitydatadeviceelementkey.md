@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for the [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md) to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md). The attribute `wcm:keyValue` is used to identify each unique device. For example, you can specify three different IP addresses by using the `Key` values of **MyKey1**, **MyKey2**, and **MyKey3**.
 

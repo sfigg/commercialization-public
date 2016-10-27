@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-MediaPlayer-Core
 
 
-The Microsoft-Windows-MediaPlayer-Core component contains a setting that specifies an override for the default Online Store provider for Windows® Media Player 12.
+The Microsoft-Windows-MediaPlayer-Core component contains a setting that specifies an override for the default Online Store provider for Windows Media Player 12.
 
 ## In This Section
 

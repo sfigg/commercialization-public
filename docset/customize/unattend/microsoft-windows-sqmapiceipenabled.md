@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CEIPEnabled
 
 
-`CEIPEnabled` indicates whether the Windows® Customer Experience Improvement Program (CEIP) is enabled.
+`CEIPEnabled` indicates whether the Windows Customer Experience Improvement Program (CEIP) is enabled.
 
 If the Microsoft-Windows-SQMAPI component is enabled, it collects and sends data to Microsoft® about Windows usage. Participation in this program is voluntary, and the results are recorded to implement improvements for future releases.
 

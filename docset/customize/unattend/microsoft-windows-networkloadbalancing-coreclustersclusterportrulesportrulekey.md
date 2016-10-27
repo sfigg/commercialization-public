@@ -16,11 +16,11 @@ ms.sitesec: msdn
 `Key` specifies the name of the port rule used by the cluster. The name is specified as an attribute in the port rule.
 
 **Note**  
--   This setting does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add IPAddress to the answer file.
+-   This setting does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add IPAddress to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [Portrule](microsoft-windows-networkloadbalancing-coreclustersclusterportrulesportrule.md) element. The attribute `wcm:keyValue` is used to identify each unique port rule. For example, you can specify three different port rules by using the `Key` values of **Portrule1**, **Portrule2**, and **Portrule3**.
 
--   To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows® image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows® Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
+-   To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
  
 

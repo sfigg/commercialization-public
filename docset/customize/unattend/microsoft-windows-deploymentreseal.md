@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Reseal
 
 
-`Reseal` indicates whether the computer runs in audit mode or Windows® Out-of-Box Experience (OOBE) when the computer is next started. For more information about modes, see [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
+`Reseal` indicates whether the computer runs in audit mode or Windows Out-of-Box Experience (OOBE) when the computer is next started. For more information about modes, see [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
 
 Prior to Windows 10, `Reseal` was a special-case setting which caused all other settings in the same configuration pass to be skipped when specified in the auditSystem or oobeSystem configuration passes. In Windows 10, Reseal is always processed after all other settings in the same configuration pass.
 

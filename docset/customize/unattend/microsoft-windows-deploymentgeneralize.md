@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Generalize` prepares the computer to be captured as a reference image immediately after other answer-file settings are processed. For more information about configuration passes, see [Windows Setup Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344).
 
-When `Generalize` is set, Windows® Setup will:
+When `Generalize` is set, Windows Setup will:
 
 1.  Complete all of the other unattend settings in the configuration pass.
 
@@ -104,7 +104,7 @@ auditUser
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
 
 ## XML Example
 

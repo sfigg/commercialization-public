@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md).
 
 ## XML Example
 

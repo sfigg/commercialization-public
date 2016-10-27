@@ -26,7 +26,7 @@ The Microsoft-Windows-EnhancedStorage-Adm component specifies settings for encry
 <tbody>
 <tr class="odd">
 <td><p>[TCGSecurityActivationDisabled](microsoft-windows-enhancedstorage-admtcgsecurityactivationdisabled.md)</p></td>
-<td><p>Specifies whether Windows® automatically encrypts eDrives.</p></td>
+<td><p>Specifies whether Windows automatically encrypts eDrives.</p></td>
 </tr>
 </tbody>
 </table>

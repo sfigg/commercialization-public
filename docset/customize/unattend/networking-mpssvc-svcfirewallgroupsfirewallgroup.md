@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FirewallGroup
 
 
-`FirewallGroup` specifies a Windows® Firewall group.
+`FirewallGroup` specifies a Windows Firewall group.
 
 ## Child Elements
 

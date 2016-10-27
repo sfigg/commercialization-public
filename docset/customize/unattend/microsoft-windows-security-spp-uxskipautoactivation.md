@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # SkipAutoActivation
 
 
-`SkipAutoActivation` specifies whether Windows® attempts to automatically activate. For automatic activation to complete, a valid Windows product key is required.
+`SkipAutoActivation` specifies whether Windows attempts to automatically activate. For automatic activation to complete, a valid Windows product key is required.
 
 After Windows has been activated, it is not necessary to use the unattended-Setup setting: Microsoft-Windows-Security-SPP-UX\\`SkipAutoActivation`. Do not use the `SkipAutoActivation` setting on a system that has already been activated with a non-system locked pre-installation (SLP) license key.
 

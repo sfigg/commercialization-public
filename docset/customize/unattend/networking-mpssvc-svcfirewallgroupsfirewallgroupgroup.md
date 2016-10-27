@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Group
 
 
-The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md). The available rule groups differ by Windows® edition.
+The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md). The available rule groups differ by Windows edition.
 
 **To see the rule groups available on a computer**
 

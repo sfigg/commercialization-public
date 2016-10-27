@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `WillWipeDisk` specifies whether to erase all partitions and data on the hard disk before adding additional configurations to the disk.
 
-`WillWipeDisk` is blocked in the Windows® Preinstallation Environment (Windows PE) if any of the following conditions are true:
+`WillWipeDisk` is blocked in the Windows Preinstallation Environment (Windows PE) if any of the following conditions are true:
 
 -   Windows Setup binaries are running from the disk in question.
 

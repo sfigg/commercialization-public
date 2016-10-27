@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Accelerator` contains the settings that add a predefined Accelerator.
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add this element to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
  
 

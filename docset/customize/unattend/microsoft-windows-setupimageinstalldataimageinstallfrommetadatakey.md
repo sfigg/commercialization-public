@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies whether the image index, name, or description is used to specify the metadata for an image in a Windows® image (.wim) file. For information about using this setting, see [MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md).
+`Key` specifies whether the image index, name, or description is used to specify the metadata for an image in a Windows image (.wim) file. For information about using this setting, see [MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md).
 
 ## Values
 

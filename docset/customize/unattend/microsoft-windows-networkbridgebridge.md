@@ -53,7 +53,7 @@ generalize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md).
 
 ## XML Example
 

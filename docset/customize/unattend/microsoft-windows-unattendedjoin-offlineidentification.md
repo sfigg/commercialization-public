@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p>[Provisioning](microsoft-windows-unattendedjoin-offlineidentfication-provisioning.md)</p></td>
-<td><p>Specifies the account information used to join a domain during Windows® Setup.</p></td>
+<td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
 </tr>
 </tbody>
 </table>

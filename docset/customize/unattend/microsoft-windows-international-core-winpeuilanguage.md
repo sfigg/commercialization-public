@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `UILanguage` specifies the language that will be used as the default system language to display user interface (UI) items (such as menus, dialog boxes, and Help files).
 
-This setting is used by Windows® Setup and Windows Deployment Services.
+This setting is used by Windows Setup and Windows Deployment Services.
 
 For a list of supported languages, see [Supported Language Packs and Default Settings](http://go.microsoft.com/fwlink/p/?linkid=200317).
 

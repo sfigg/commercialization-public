@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableStatefulPPTP
 
 
-`DisableStatefulPPTP` disables the Windows® Firewall Point-to-Point Tunneling Protocol (PPTP) connection inspection engine.
+`DisableStatefulPPTP` disables the Windows Firewall Point-to-Point Tunneling Protocol (PPTP) connection inspection engine.
 
 ## Values
 

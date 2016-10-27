@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `SystemLocale` specifies the default language to use for non-Unicode programs.
 
-This setting is used by both Windows® Setup and Windows Deployment Services.
+This setting is used by both Windows Setup and Windows Deployment Services.
 
 The system locale specifies which bitmap fonts and code pages (for example, ANSI or DOS) are used on the system by default. The system locale setting affects only ANSI applications (non-Unicode) applications. The language for non-Unicode programs is a per-system setting.
 

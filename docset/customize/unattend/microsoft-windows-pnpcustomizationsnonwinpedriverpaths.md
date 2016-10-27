@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DriverPaths
 
 
-`DriverPaths` specifies one or more paths that contain out-of-box drivers. These drivers are copied to the Windows® installation during the **auditSystem** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) list items.
+`DriverPaths` specifies one or more paths that contain out-of-box drivers. These drivers are copied to the Windows installation during the **auditSystem** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) list items.
 
 ## Child Elements
 
@@ -48,7 +48,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe-win7-microsoft-windows-pnpcustomizationsnonwinpe.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe-win7-microsoft-windows-pnpcustomizationsnonwinpe.md).
 
 ## XML Example
 

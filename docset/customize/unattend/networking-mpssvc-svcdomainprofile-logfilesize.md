@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DomainProfile\_LogFileSize
 
 
-`DomainProfile_LogFileSize` specifies the size of the default log file for Windows® Firewall for the domain profile.
+`DomainProfile_LogFileSize` specifies the size of the default log file for Windows Firewall for the domain profile.
 
 ## Values
 

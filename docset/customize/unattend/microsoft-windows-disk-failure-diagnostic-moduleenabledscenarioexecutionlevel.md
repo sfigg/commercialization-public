@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnabledScenarioExecutionLevel
 
 
-`EnabledScenarioExecutionLevel` enables the Windows® Disk Diagnostic feature.
+`EnabledScenarioExecutionLevel` enables the Windows Disk Diagnostic feature.
 
 ## Values
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-Disk-Failure-Diagnostic-Module
 
 
-The Microsoft-Windows-Disk-Failure-Diagnostic-Module controls the Windows® Disk Diagnostic feature on a computer. This feature alerts users to the imminent failure of their hard disks and assists users in backing up their files. When imminent disk failure is diagnosed, users are presented with a wizard that helps users initiate backup procedures.
+The Microsoft-Windows-Disk-Failure-Diagnostic-Module controls the Windows Disk Diagnostic feature on a computer. This feature alerts users to the imminent failure of their hard disks and assists users in backing up their files. When imminent disk failure is diagnosed, users are presented with a wizard that helps users initiate backup procedures.
 
 ## In This Section
 

@@ -30,7 +30,7 @@ If the provider is a Microsoft partner, and the icon is hosted on the Microsoft 
 <tbody>
 <tr class="odd">
 <td><p><em>Icon</em></p></td>
-<td><p>Specifies the path and the file name of the icon for the online printing company to display in the Online Print Wizard. <em>Icon</em> is a string. The .ico file must be present on the installed Windows® operating system.</p></td>
+<td><p>Specifies the path and the file name of the icon for the online printing company to display in the Online Print Wizard. <em>Icon</em> is a string. The .ico file must be present on the installed Windows operating system.</p></td>
 </tr>
 </tbody>
 </table>

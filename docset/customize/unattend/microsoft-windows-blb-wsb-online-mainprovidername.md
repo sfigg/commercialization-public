@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ProviderName
 
 
-`ProviderName` specifies the name of the backup provider of an online backup service in the Windows® Server Backup menus.
+`ProviderName` specifies the name of the backup provider of an online backup service in the Windows Server Backup menus.
 
 Before an online backup service is installed, Windows describes a recommended service. The provider name is part of the description.
 

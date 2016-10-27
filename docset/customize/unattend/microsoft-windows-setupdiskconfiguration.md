@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # DiskConfiguration
 
 
-`DiskConfiguration` contains the settings that Windows® uses to partition and to configure one or more physical hard disks.
+`DiskConfiguration` contains the settings that Windows uses to partition and to configure one or more physical hard disks.
 
-Valid disk partition configurations vary depending on whether you are using a BIOS-based computer or a Unified Extensible Firmware Interface (UEFI)-based computer. For more information, see the [Manage Hard Disks and Partitions](http://go.microsoft.com/fwlink/?LinkId=206671) topic in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+Valid disk partition configurations vary depending on whether you are using a BIOS-based computer or a Unified Extensible Firmware Interface (UEFI)-based computer. For more information, see the [Manage Hard Disks and Partitions](http://go.microsoft.com/fwlink/?LinkId=206671) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 You can configure disk partitions manually in the disk configuration user interface (UI) in Windows Setup, or automatically by using settings in the [Disk](microsoft-windows-setupdiskconfigurationdisk.md) element. If you do not specify a `Disk` element and the [WillShowUI](microsoft-windows-setupdiskconfigurationwillshowui.md) setting is set to **Never**, Windows logs an error, and the installation terminates.
 

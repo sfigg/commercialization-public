@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Login
 
 
-`Login` specifies the credentials used for Windows® Deployment Services login and in what circumstances the user interface (UI) is displayed for login.
+`Login` specifies the credentials used for Windows Deployment Services login and in what circumstances the user interface (UI) is displayed for login.
 
 ## Child Elements
 
@@ -50,7 +50,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

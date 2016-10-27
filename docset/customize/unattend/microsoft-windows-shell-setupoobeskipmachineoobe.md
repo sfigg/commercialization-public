@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # SkipMachineOOBE
 
 
-`SkipMachineOOBE` specifies whether to skip Windows® Welcome.
+`SkipMachineOOBE` specifies whether to skip Windows Welcome.
 
 **Important**  
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only.
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only.
 
 `SkipMachineOOBE` should be used only in a test environment, and you should never ship a computer with the `SkipMachineOOBE` setting configured to **true**.
 

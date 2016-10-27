@@ -22,7 +22,7 @@ For more information on how OEMs can include their customer support contact info
 
 `SearchContent` specifies whether the Original Equipment Manufacturer (OEM) or organization has provided offline Help content that **Help and Support** must return in search results.
 
-When an end user performs a search in **Help and Support**, Windows® searches for the OEM's offline Help content.
+When an end user performs a search in **Help and Support**, Windows searches for the OEM's offline Help content.
 
 ## Values
 

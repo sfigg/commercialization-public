@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies the name of the virtual IP address. The name is specified as an attribute in the IP address.
 
 **Note**  
--   This XML attribute does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add an [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) to the answer file.
+-   This XML attribute does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add an [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique virtual IP Address. For example, you can specify three different virtual IP addresses by using the `Key` value of **Ip1**, **Ip2**, and **Ip3**.
 

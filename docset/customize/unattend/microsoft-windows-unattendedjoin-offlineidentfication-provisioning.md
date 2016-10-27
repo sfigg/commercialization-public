@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Provisioning
 
 
-`Provisioning` specifies the account information used to join a domain during Windows® Setup.
+`Provisioning` specifies the account information used to join a domain during Windows Setup.
 
 ## Child Elements
 

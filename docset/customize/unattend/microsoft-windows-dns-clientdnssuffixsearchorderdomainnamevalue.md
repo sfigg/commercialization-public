@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Value` specifies the value of the [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) to the answer file.
 
  
 

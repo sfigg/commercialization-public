@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 After the specified number of automated logon actions has occurred, you must manually log onto the computer.
 
-If the built-in administrator account is used, the account is still active. For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](http://go.microsoft.com/fwlink/?LinkId=206616) topic in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+If the built-in administrator account is used, the account is still active. For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](http://go.microsoft.com/fwlink/?LinkId=206616) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## Values
 
@@ -54,7 +54,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md). This setting is not configured in a Nano Server image.
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md). This setting is not configured in a Nano Server image.
 
 ## XML Example
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `IM` specifies the default instant messenger application. This must be the application’s canonical name.
 
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only. For information about setting the default file associations, see [Default Application Association Servicing Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=247509).
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only. For information about setting the default file associations, see [Default Application Association Servicing Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=247509).
 
 ## Values
 
@@ -55,7 +55,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
 
 ## XML Example
 

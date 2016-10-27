@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ImageInstall
 
 
-`ImageInstall` specifies the Windows® image or secondary data image to install and the location to which the image is to be installed.
+`ImageInstall` specifies the Windows image or secondary data image to install and the location to which the image is to be installed.
 
 ## Child Elements
 

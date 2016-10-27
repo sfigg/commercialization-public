@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-Security-SPP-UX-SPPCC
 
 
-The Microsoft-Windows-Security-SPP-UX-SPPCC component specifies referral IDs for the Windows® Anytime Upgrade program.
+The Microsoft-Windows-Security-SPP-UX-SPPCC component specifies referral IDs for the Windows Anytime Upgrade program.
 
 **Important**  
 This setting is deprecated.

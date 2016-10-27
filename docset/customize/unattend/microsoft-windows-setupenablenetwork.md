@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableNetwork
 
 
-`EnableNetwork` specifies whether network connection is enabled. This setting applies only to Windows® Preinstallation Environment (Windows PE).
+`EnableNetwork` specifies whether network connection is enabled. This setting applies only to Windows Preinstallation Environment (Windows PE).
 
 If you set `EnableNetwork` to **false**, network initialization is skipped, and any network settings are ignored.
 

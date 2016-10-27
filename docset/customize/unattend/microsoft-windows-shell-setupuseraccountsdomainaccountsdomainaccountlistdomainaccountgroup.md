@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Group` specifies the local security group to which the domain account or the security group will be added. You can add a user to multiple groups by entering multiple group names separated by semicolons.
 
-The [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) component recognizes the following English group names and sets the appropriate localized group name, regardless of the default language of the Windows® image:
+The [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md) component recognizes the following English group names and sets the appropriate localized group name, regardless of the default language of the Windows image:
 
 -   AccountOperators
 

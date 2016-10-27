@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Networking-MPSSVC-Svc
 
 
-The Networking-MPSSVC-Svc component is part of Windows® Firewall, which protects computers by preventing unauthorized users from gaining access through the Internet or a network.
+The Networking-MPSSVC-Svc component is part of Windows Firewall, which protects computers by preventing unauthorized users from gaining access through the Internet or a network.
 
 ## In This Section
 

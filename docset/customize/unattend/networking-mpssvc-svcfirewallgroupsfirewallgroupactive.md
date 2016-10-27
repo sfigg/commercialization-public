@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that a Windows® Firewall group is active.</p></td>
+<td><p>Specifies that a Windows Firewall group is active.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>

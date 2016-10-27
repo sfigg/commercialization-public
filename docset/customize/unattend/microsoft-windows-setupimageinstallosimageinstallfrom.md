@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InstallFrom
 
 
-`InstallFrom` specifies the Windows® image (.wim) file that contains the image to install and the credentials used to access the file.
+`InstallFrom` specifies the Windows image (.wim) file that contains the image to install and the credentials used to access the file.
 
 ## Child Elements
 

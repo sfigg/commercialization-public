@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `IpAddress` specifies a unicast IP address for the interface. You can specify the unicast IP address for both the IPv4 and the IPv6 protocols.
 
 **Note**  
-The child elements do not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add this element to the answer file.
+The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
  
 

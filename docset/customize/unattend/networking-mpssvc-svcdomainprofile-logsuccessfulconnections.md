@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DomainProfile\_LogSuccessfulConnections
 
 
-`DomainProfile_LogSuccessfulConnections` specifies whether to log successful connections for Windows® Firewall for the domain profile.
+`DomainProfile_LogSuccessfulConnections` specifies whether to log successful connections for Windows Firewall for the domain profile.
 
 ## Values
 

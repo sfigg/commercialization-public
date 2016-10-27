@@ -56,7 +56,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](mmicrosoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](mmicrosoft-windows-setup.md).
 
 ## XML Examples
 

@@ -55,7 +55,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment-win7-microsoft-windows-deployment.md).
 
 ## XML Example
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Link2
 
 
-`Link2` specifies the URL or file path for the second of two links that describe a recommended online backup service in the Windows® Server Backup menus.
+`Link2` specifies the URL or file path for the second of two links that describe a recommended online backup service in the Windows Server Backup menus.
 
 Before an online backup service is installed, Windows displays a description of a recommended online backup service. This includes one or two description lines and one or two links that provide more information.
 

@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `DomainName` specifies the domain name for the search.
 
 **Note**  
-The child elements do not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add this element to the answer file.
+The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
  
 

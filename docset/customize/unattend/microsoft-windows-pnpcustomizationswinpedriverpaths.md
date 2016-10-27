@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DriverPaths
 
 
-`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows® image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) list items.
+`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) list items.
 
 By using this setting, you can add boot-critical and non boot–critical drivers to your Windows image before it is installed.
 

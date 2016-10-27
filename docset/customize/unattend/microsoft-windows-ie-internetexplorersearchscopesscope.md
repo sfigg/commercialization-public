@@ -28,7 +28,7 @@ ms.sitesec: msdn
 <tr class="header">
 <th>Setting name</th>
 <th>Description</th>
-<th>Applies to which versions of Windows® Internet Explorer®</th>
+<th>Applies to which versions of Windows Internet Explorer®</th>
 </tr>
 </thead>
 <tbody>

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ComplianceCheck
 
 
-`ComplianceCheck` checks that the following requirements are fulfilled so that Windows® can be installed:
+`ComplianceCheck` checks that the following requirements are fulfilled so that Windows can be installed:
 
 -   Valid hardware configuration.
 
@@ -23,7 +23,7 @@ ms.sitesec: msdn
 
 -   In-box drivers available.
 
--   Product key matches available hardware. Windows® 7 Starter and Windows Vista® Starter can be installed only on the following types of central processing unit (CPU):
+-   Product key matches available hardware. Windows 7 Starter and Windows Vista® Starter can be installed only on the following types of central processing unit (CPU):
 
     -   Intel Celeron and Intel Pentium III processors, including mobile versions, except for Intel Pentium III Xeon processors.
 

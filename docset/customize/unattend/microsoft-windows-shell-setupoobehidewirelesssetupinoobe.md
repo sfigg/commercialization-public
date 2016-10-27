@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # HideWirelessSetupInOOBE
 
 
-`HideWirelessSetupInOOBE` specifies whether to hide the **Join Wireless Network** screen that appears during Windows® Welcome.
+`HideWirelessSetupInOOBE` specifies whether to hide the **Join Wireless Network** screen that appears during Windows Welcome.
 
 During Windows Welcome, the **Join Wireless Network** screen prompts the end user to connect to a wireless network when all of the following conditions are met:
 

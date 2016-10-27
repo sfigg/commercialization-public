@@ -17,7 +17,7 @@ The `DoNotCleanUpNonPresentDevices` setting specifies whether plug and play info
 
 This setting is useful for devices with a physical on/off switch. When a physical on/off switch is off, the device information may be removed during either the **generalize** or **specialize** configuration pass. However, when both [PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md) and `DoNotCleanUpNonPresentDevices` are set to **true**, the device information remains on the computer.
 
-This list describes the process Windows® Setup uses to determine whether plug and play information remains on the computer, or is removed, or is removed and then re-initialized:
+This list describes the process Windows Setup uses to determine whether plug and play information remains on the computer, or is removed, or is removed and then re-initialized:
 
 -   When [PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md) is set to **true**, then during the **generalize** configuration pass, plug and play device information remains on the computer.
 

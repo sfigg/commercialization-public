@@ -16,11 +16,11 @@ ms.sitesec: msdn
 `Value` specifies a value for [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) to the answer file.
 
  
 
-You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows® Foundation package.
+You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 ## Values
 

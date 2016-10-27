@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `BrandIcon` specifies the path to a graphic file that appears in the **Personalization** Control Panel to represent a theme.
 
-Themes enable users to customize elements of the Windows® visual style, including the desktop, background, and screen saver.
+Themes enable users to customize elements of the Windows visual style, including the desktop, background, and screen saver.
 
 The icon graphic must be a .png file that is no larger than 240x80 pixels in size.
 

@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP Address. For example, you can specify three different IP addresses by using Key values of 1, 2, and 3.
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The `PersistAllDeviceInstalls` setting indicates whether all plug and play devices on the destination computer remain installed during the generalize configuration pass.
 
-To speed up the deployment of a group of computers that have identical hardware configurations, you can instruct Windows® Setup to maintain the driver settings from the reference computer when you capture a Windows image. When you apply the image to identical destination computers, the drivers are correctly configured.
+To speed up the deployment of a group of computers that have identical hardware configurations, you can instruct Windows Setup to maintain the driver settings from the reference computer when you capture a Windows image. When you apply the image to identical destination computers, the drivers are correctly configured.
 
 To instruct Windows Setup to maintain the driver settings, prepare the computer for image capture by generalizing the computer with an answer file that includes the Microsoft-Windows-PnpSysPrep\\`PersistAllDeviceInstalls` setting.
 

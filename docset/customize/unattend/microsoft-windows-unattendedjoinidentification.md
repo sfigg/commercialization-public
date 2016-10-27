@@ -54,7 +54,7 @@ ms.sitesec: msdn
 </tr>
 <tr class="even">
 <td><p>[Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md)</p></td>
-<td><p>Specifies the account information used to join a domain during Windows® Setup.</p></td>
+<td><p>Specifies the account information used to join a domain during Windows Setup.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[TimeoutPeriodInMinutes](microsoft-windows-unattendedjoinidentificationtimeoutperiodinminutes.md)</p></td>

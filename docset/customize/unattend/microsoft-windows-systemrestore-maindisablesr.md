@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-SystemRestore-Main](microsoft-windows-systemrestore-main-win7-microsoft-windows-systemrestore-main.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemRestore-Main](microsoft-windows-systemrestore-main-win7-microsoft-windows-systemrestore-main.md).
 
 ## XML Example
 

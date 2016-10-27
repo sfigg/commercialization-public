@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PartitionID
 
 
-`PartitionID` specifies the partition on which to install Windows®.
+`PartitionID` specifies the partition on which to install Windows.
 
 ## Values
 

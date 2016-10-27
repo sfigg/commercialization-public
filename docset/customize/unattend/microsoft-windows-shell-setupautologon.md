@@ -1,6 +1,6 @@
 ---
 title: AutoLogon
-description: AutoLogon specifies the account to use to log on to a computer automatically. AutoLogon credentials are deleted from the unattended installation answer file after Windows® Setup is complete.
+description: AutoLogon specifies the account to use to log on to a computer automatically. AutoLogon credentials are deleted from the unattended installation answer file after Windows Setup is complete.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AutoLogon
 
 
-`AutoLogon` specifies the account to use to log on to a computer automatically. `AutoLogon` credentials are deleted from the unattended installation answer file after Windows® Setup is complete.
+`AutoLogon` specifies the account to use to log on to a computer automatically. `AutoLogon` credentials are deleted from the unattended installation answer file after Windows Setup is complete.
 
 **Important**  
 -   In Windows 10, if you configure `AutoLogon`, the OS will skip the user account creation phase during OOBE. This is a change from previous versions of Windows.
@@ -24,7 +24,7 @@ ms.sitesec: msdn
 
  
 
-For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](http://go.microsoft.com/fwlink/?LinkId=206616) topic in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+For more information about the built-in administrator account, see the [How to Enable and Disable the Built-in Administrator Account](http://go.microsoft.com/fwlink/?LinkId=206616) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 **Note**  
 These settings are valid for upgrades.

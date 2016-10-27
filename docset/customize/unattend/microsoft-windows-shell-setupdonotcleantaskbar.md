@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `DoNotCleanTaskBar` specifies whether Sysprep removes deskbands. A deskband is a customized toolbar that can be added to the taskbar. Deskbands contain shortcuts to frequently performed tasks.
 
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only. In Windows 8, we do not recommend using deskbands to the desktop taskbar.
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only. In Windows 8, we do not recommend using deskbands to the desktop taskbar.
 
 ## Values
 
@@ -60,7 +60,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
 
 ## XML Example
 

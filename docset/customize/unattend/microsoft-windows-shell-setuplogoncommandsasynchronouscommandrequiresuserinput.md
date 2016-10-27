@@ -16,7 +16,7 @@ ms.sitesec: msdn
 The `RequiresUserInput` setting is not used.
 
 **Note**  
-Unlike synchronous commands, asynchronous commands may start and finish in any order. They cannot delay the appearance of the Windows® desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about synchronous commands, see [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md).
+Unlike synchronous commands, asynchronous commands may start and finish in any order. They cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about synchronous commands, see [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md).
 
  
 
@@ -55,7 +55,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
 
 ## XML Example
 

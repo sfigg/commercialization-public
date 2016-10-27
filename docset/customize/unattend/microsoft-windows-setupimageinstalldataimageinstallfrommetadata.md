@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MetaData
 
 
-`MetaData` specifies a data image in a Windows® image (.wim) file.
+`MetaData` specifies a data image in a Windows image (.wim) file.
 
 Use the MetaData\\[Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md) and MetaData\\[Value](microsoft-windows-setupimageinstalldataimageinstallfrommetadatavalue.md) settings together to select an image based on the index, the name, or the description of the data image.
 

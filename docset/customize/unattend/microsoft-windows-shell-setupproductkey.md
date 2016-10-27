@@ -20,7 +20,7 @@ Entering an invalid product key in the answer file will cause Windows Setup to f
 
  
 
-If you are using a Volume License Multiple Activation Key (MAK), you must specify it in the `ProductKey` setting. If you preinstall Windows under a volume license agreement, consult your specific license agreement to determine the number of installations permitted per product key. For more information about product keys, see [Work with Product Keys and Activation](http://go.microsoft.com/fwlink/?LinkId=206615) in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+If you are using a Volume License Multiple Activation Key (MAK), you must specify it in the `ProductKey` setting. If you preinstall Windows under a volume license agreement, consult your specific license agreement to determine the number of installations permitted per product key. For more information about product keys, see [Work with Product Keys and Activation](http://go.microsoft.com/fwlink/?LinkId=206615) in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## Comparison of Product Key Settings
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DomainProfile\_DisableNotifications
 
 
-`DomainProfile_DisableNotifications` disables Windows® Firewall notifications for the domain profile.
+`DomainProfile_DisableNotifications` disables Windows Firewall notifications for the domain profile.
 
 ## Values
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-SMBServer
 
 
-The Microsoft-Windows-SMBServer (Server Message Block) component provides the integration and the authentication for Windows® client computers to access network printers and file systems that run on UNIX servers. Computers running Windows must have a clear text registry patch and an SMBServer mapping to use SMBServer.
+The Microsoft-Windows-SMBServer (Server Message Block) component provides the integration and the authentication for Windows client computers to access network printers and file systems that run on UNIX servers. Computers running Windows must have a clear text registry patch and an SMBServer mapping to use SMBServer.
 
 ## In This Section
 

@@ -13,11 +13,11 @@ ms.sitesec: msdn
 # MetaData
 
 
-`MetaData` specifies a Windows edition or image in a Windows® image (.wim) file.
+`MetaData` specifies a Windows edition or image in a Windows image (.wim) file.
 
 Use the [Key](microsoft-windows-setupimageinstallosimageinstallfrommetadatakey.md) and [Value](microsoft-windows-setupimageinstallosimageinstallfrommetadatavalue.md) settings together to select a Windows edition or image based on the index, the name, or the description of the image.
 
-Use the `DISM /Get-ImageInfo` command to determine which images and editions are included on your Windows DVD or Windows image (.wim) file. For instructions on how to select a Windows image using the `MetaData` setting, see the [Best Practices for Image Deployment](http://go.microsoft.com/fwlink/?LinkId=206672) topic in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+Use the `DISM /Get-ImageInfo` command to determine which images and editions are included on your Windows DVD or Windows image (.wim) file. For instructions on how to select a Windows image using the `MetaData` setting, see the [Best Practices for Image Deployment](http://go.microsoft.com/fwlink/?LinkId=206672) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## Child Elements
 

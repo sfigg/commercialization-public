@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # OOBE
 
 
-`OOBE` specifies the behavior of some of the Windows® Out of Box Experience (OOBE) screens. For a full list of settings used to automate OOBE, see [Settings for Automating Windows Welcome](http://go.microsoft.com/fwlink/?LinkId=210588).
+`OOBE` specifies the behavior of some of the Windows Out of Box Experience (OOBE) screens. For a full list of settings used to automate OOBE, see [Settings for Automating Windows Welcome](http://go.microsoft.com/fwlink/?LinkId=210588).
 
 ## Child Elements
 

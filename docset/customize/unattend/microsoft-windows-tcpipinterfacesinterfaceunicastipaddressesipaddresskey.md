@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for an IP address.
 
 **Note**  
--   This setting does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md) to the unattended installation answer file.
+-   This setting does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md) to the unattended installation answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key value of **1**, **2**, and **3**.
 

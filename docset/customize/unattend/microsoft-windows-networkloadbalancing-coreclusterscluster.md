@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Cluster` contains the settings to specify details about a cluster, such as its interface, IP address, portrules, and so on.
 
 **Note**  
-To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows® image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows® Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
+To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
  
 
@@ -107,7 +107,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </tr>
 <tr class="even">
 <td><p>[PersistSuspendedState](microsoft-windows-networkloadbalancing-coreclustersclusterpersistsuspendedstate.md)</p></td>
-<td><p>Specifies whether a host that is shut down while in a suspended state will remain suspended when Windows® is started.</p></td>
+<td><p>Specifies whether a host that is shut down while in a suspended state will remain suspended when Windows is started.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Portrules](microsoft-windows-networkloadbalancing-coreclustersclusterportrules.md)</p></td>

@@ -43,7 +43,7 @@ For example:
 
 Because the partition structure on a disk can change during installation, it is important to be aware of the changes to the partitions on a disk as you are creating your unattended installation answer file.
 
-If you create additional partitions during Windows® Setup, `PartitionID` must exactly match the partition that you want to modify. For example, if you add two logical partitions to your disk configuration and then want to modify the last partition, the partition ID of the last partition will have changed from 3 to 5:
+If you create additional partitions during Windows Setup, `PartitionID` must exactly match the partition that you want to modify. For example, if you add two logical partitions to your disk configuration and then want to modify the last partition, the partition ID of the last partition will have changed from 3 to 5:
 
 <table>
 <colgroup>

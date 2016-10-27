@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Link1Text
 
 
-`Link1Text` specifies the text that appears over the first of two links that describe a recommended online backup service in the Windows® Server Backup menus.
+`Link1Text` specifies the text that appears over the first of two links that describe a recommended online backup service in the Windows Server Backup menus.
 
 Before an online backup service is installed, Windows displays a description of a recommended online backup service. This includes one or two links that provide more information.
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ExtendOSPartition
 
 
-`ExtendOSPartition` specifies whether to extend the partition on which you are installing Windows®. This setting is required for scenarios in which a customer has installed the Windows image by using a sector-based imaging solution and now plans on extending the partition.
+`ExtendOSPartition` specifies whether to extend the partition on which you are installing Windows. This setting is required for scenarios in which a customer has installed the Windows image by using a sector-based imaging solution and now plans on extending the partition.
 
 These settings are valid only for NTFS file-system partitions.
 

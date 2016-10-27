@@ -80,7 +80,7 @@ If the routing prefix length is not defined, the default routing prefix length w
  
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md) to the unattended installation answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md) to the unattended installation answer file.
 
  
 

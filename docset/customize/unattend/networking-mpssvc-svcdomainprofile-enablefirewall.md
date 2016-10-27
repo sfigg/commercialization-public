@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DomainProfile\_EnableFirewall
 
 
-`DomainProfile_EnableFirewall` enables Windows® Firewall for the domain profile.
+`DomainProfile_EnableFirewall` enables Windows Firewall for the domain profile.
 
 ## Values
 

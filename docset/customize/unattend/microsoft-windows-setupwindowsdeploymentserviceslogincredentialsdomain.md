@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Domain
 
 
-`Domain` specifies the name of the domain for Windows® Deployment Services login. This setting is optional. It is not required if the domain was specified as a user principal name (UPN) in [Username](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsusername.md).
+`Domain` specifies the name of the domain for Windows Deployment Services login. This setting is optional. It is not required if the domain was specified as a user principal name (UPN) in [Username](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsusername.md).
 
 ## Values
 

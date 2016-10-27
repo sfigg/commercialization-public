@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ReferralId
 
 
-`ReferralId` specifies the identity of an OEM participating in the Windows® Anytime Upgrade reward program.
+`ReferralId` specifies the identity of an OEM participating in the Windows Anytime Upgrade reward program.
 
 **Important**  
 This setting is deprecated.

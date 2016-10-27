@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-Setup
 
 
-The Microsoft-Windows-Setup component contains settings that enable you to select the Windows® image that you install, configure the disk that you install Windows to, and configure the Windows PE operating system.
+The Microsoft-Windows-Setup component contains settings that enable you to select the Windows image that you install, configure the disk that you install Windows to, and configure the Windows PE operating system.
 
 Some of the settings in this component apply only to Windows PE, and some settings are applied to the installed Windows image. Each setting describes which operating system the setting applies to.
 

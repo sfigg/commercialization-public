@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for the domain name.
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) element. The attribute `wcm:keyValue` is used to identify each unique domain name. For example, you can specify three different domain names by using `Key` values of **1**, **2**, and **3**.
 

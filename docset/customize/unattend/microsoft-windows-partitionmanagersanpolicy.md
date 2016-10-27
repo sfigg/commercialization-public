@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `SanPolicy` specifies the type of Storage Area Network (SAN) policy to apply to the computer. A SAN enables a server to mount disks and other storage devices automatically from other computers.
 
-By configuring the SAN policy on a Windows® image, you can control whether disks are automatically mounted, which disks can be mounted, and you can disable disks from being mounted automatically.
+By configuring the SAN policy on a Windows image, you can control whether disks are automatically mounted, which disks can be mounted, and you can disable disks from being mounted automatically.
 
 ## Values
 

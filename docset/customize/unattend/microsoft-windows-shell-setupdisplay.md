@@ -50,7 +50,7 @@ ms.sitesec: msdn
  
 
 **Note**  
-If the specified settings cannot be set on the display device, Windows® attempts to match the requested mode as closely as possible.
+If the specified settings cannot be set on the display device, Windows attempts to match the requested mode as closely as possible.
 
  
 

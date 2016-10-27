@@ -29,7 +29,7 @@ This setting is deprecated and should not be used. This information is included 
 <tbody>
 <tr class="odd">
 <td><p><strong>Always</strong></p></td>
-<td><p>Specifies to always show the Windows® Setup user interface (UI).</p></td>
+<td><p>Specifies to always show the Windows Setup user interface (UI).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>onError</strong></p></td>

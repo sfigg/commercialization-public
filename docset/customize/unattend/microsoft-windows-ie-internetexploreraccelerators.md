@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Accelerators are menu options in Internet Explorer that help automate common browser-related tasks. In Internet Explorer, when you right-click selected text, Accelerators appear in the list of available options. For example, if you select an address, you can use an Accelerator to show a map of that address.
 
-To add an Accelerator in Windows® System Image Manager (Windows SIM), add the Accelerators component to your answer file. Next, right-click **Accelerators**, and select **Insert New Accelerator**.
+To add an Accelerator in Windows System Image Manager (Windows SIM), add the Accelerators component to your answer file. Next, right-click **Accelerators**, and select **Insert New Accelerator**.
 
 For more information about setting up accelerators, see the MSDN Topic, [OpenService Accelerators Developer Guide](http://go.microsoft.com/fwlink/?LinkId=130617).
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # SkipRearm
 
 
-`SkipRearm` specifies whether to reset the Windows® licensing state when you generalize a computer.
+`SkipRearm` specifies whether to reset the Windows licensing state when you generalize a computer.
 
 Resetting the Windows licensing state means that all licensing and registry data related to activation is either removed or reset.
 

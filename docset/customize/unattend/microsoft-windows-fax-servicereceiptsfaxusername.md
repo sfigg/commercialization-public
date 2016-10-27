@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FaxUserName
 
 
-`FaxUserName` specifies the account name used for Simple Mail Transfer Protocol (SMTP) authentication or for authentication based on Windows® Security.
+`FaxUserName` specifies the account name used for Simple Mail Transfer Protocol (SMTP) authentication or for authentication based on Windows Security.
 
 ## Values
 

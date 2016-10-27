@@ -30,7 +30,7 @@ ms.sitesec: msdn
 </tr>
 <tr class="even">
 <td><p>[MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md)</p></td>
-<td><p>Required. Specifies metadata to select a unique data image from the Windows® image (.wim) file.</p></td>
+<td><p>Required. Specifies metadata to select a unique data image from the Windows image (.wim) file.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Path](microsoft-windows-setupimageinstalldataimageinstallfrompath.md)</p></td>

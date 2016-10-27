@@ -74,7 +74,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For the list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

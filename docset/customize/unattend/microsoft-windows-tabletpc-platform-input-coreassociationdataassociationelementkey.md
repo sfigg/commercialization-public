@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) to the answer file.
 
 -   The value for `Key` is added to the answer file as an attribute of the [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) element. The attribute `wcm:keyValue` is used to identify each unique association. For example, you can specify three different associations by using the `Key` values of **Monitor1**, **Monitor2**, and **Monitor3**.
 

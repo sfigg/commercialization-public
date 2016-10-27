@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Filename
 
 
-`Filename` specifies the file name of the image to be installed. This setting is optional. It is required only if more than one Windows® image with the listed image name exists in the image group on the Windows Deployment Services server.
+`Filename` specifies the file name of the image to be installed. This setting is optional. It is required only if more than one Windows image with the listed image name exists in the image group on the Windows Deployment Services server.
 
 ## Values
 

@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [UpgradeData](microsoft-windows-setupupgradedata.md).
 
 **Note**  
-Windows® Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\UpgradeData settings. Then, you must use either the Windows product DVD or the System Preparation (sysprep) tool to upgrade Windows.
+Windows Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\UpgradeData settings. Then, you must use either the Windows product DVD or the System Preparation (sysprep) tool to upgrade Windows.
 
  
 

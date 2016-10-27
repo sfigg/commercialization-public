@@ -16,16 +16,16 @@ ms.sitesec: msdn
 The `DPI` setting specifies what size to show text and other items on the desktop. This does not affect the Start screen.
 
 **Important**  
-This setting has been deprecated in Windows® 8.1. The information about this deprecated setting is provided for reference only. The setting continues to exist for Windows 8 and Windows® 7.
+This setting has been deprecated in Windows 8.1. The information about this deprecated setting is provided for reference only. The setting continues to exist for Windows 8 and Windows 7.
 
  
 
-We recommend that you use the automatic DPI configuration in Windows 8 and Windows® 7 to calculate an appropriate size. To do this, leave the `DPI` value empty.
+We recommend that you use the automatic DPI configuration in Windows 8 and Windows 7 to calculate an appropriate size. To do this, leave the `DPI` value empty.
 
 **Note**  
 If you manually set `DPI`:
 
--   Choose a supported Windows® DPI value that is close to the *physical DPI*.
+-   Choose a supported Windows DPI value that is close to the *physical DPI*.
 
     The *physical DPI* of a display is the measurement of the dots per inch that display is capable of. For example, for a display with a native resolution of 1440 x 900 pixels, and a physical display size of 14.4 inches x 9 inches, the physical DPI is 100 (1440 horizontal pixels ÷ 14.4 horizontal inches = 100 DPI).
 

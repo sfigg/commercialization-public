@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `IpAddress` specifies the IP address of a DNS server.
 
 **Note**  
-The child elements do not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add `IpAddress` to the answer file.
+The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add `IpAddress` to the answer file.
 
  
 

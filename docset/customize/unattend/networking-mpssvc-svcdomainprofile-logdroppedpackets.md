@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DomainProfile\_LogDroppedPackets
 
 
-`DomainProfile_LogDroppedPackets` specifies whether dropped packets are logged for Windows® Firewall for the domain profile.
+`DomainProfile_LogDroppedPackets` specifies whether dropped packets are logged for Windows Firewall for the domain profile.
 
 ## Values
 

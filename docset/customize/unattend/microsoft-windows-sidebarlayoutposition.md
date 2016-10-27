@@ -62,7 +62,7 @@ oobeSystem
 ## Applies To
 
 
-For the list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
 
 ## XML Example
 

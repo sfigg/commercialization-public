@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InitialOEMServiceProvider
 
 
-`InitialOEMServiceProvider` specifies the initial service provider for Windows® Media Player 12. The service provider specified is the initial active Online Store when the user first runs Windows Media Player and completes the Windows Media Player First-Use Experience Configuration Wizard. The value used for this setting is obtained from the Online Store provider.
+`InitialOEMServiceProvider` specifies the initial service provider for Windows Media Player 12. The service provider specified is the initial active Online Store when the user first runs Windows Media Player and completes the Windows Media Player First-Use Experience Configuration Wizard. The value used for this setting is obtained from the Online Store provider.
 
 ## Value
 

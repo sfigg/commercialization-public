@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # TCGSecurityActivationDisabled
 
 
-`TCGSecurityActivationDisabled` specifies whether Windows® automatically configures encrypted drives (eDrives), also known as encrypted hard disk drives (eHDDs).
+`TCGSecurityActivationDisabled` specifies whether Windows automatically configures encrypted drives (eDrives), also known as encrypted hard disk drives (eHDDs).
 
 `TCGSecurityActivationDisabled` sets the Group Policy administrative template setting: **Do not automatically encrypt files moved to encrypted folders**. This Group Policy setting is used after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning. Use the [DisableEncryptedDiskProvisioning](microsoft-windows-setupdiskconfigurationdisableencrypteddiskprovisioning.md) unattend setting for configuring the operating system installation for the target HDD.
 

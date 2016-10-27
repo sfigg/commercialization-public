@@ -48,7 +48,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc-win7-microsoft-windows-shwebsvc.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc-win7-microsoft-windows-shwebsvc.md).
 
 ## XML Example
 

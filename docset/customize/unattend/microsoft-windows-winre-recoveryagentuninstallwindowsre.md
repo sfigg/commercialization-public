@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # UninstallWindowsRE
 
 
-`UninstallWindowsRE` specifies whether Windows® Recovery Environment (Windows RE) is installed or removed from the system.
+`UninstallWindowsRE` specifies whether Windows Recovery Environment (Windows RE) is installed or removed from the system.
 
 You can save hard disk space by configuring Windows Setup to uninstall Windows RE from the local hard disk.
 

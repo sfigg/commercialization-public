@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FaxUserPassword
 
 
-`FaxUserPassword` specifies the password to use for authenticating against the server in basic SMTP authentication or Windows® Security-based authentication.
+`FaxUserPassword` specifies the password to use for authenticating against the server in basic SMTP authentication or Windows Security-based authentication.
 
 ## Values
 

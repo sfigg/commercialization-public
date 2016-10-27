@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft® Word, Microsoft Excel® and Microsoft PowerPoint® documents.
 
-To add a predefined Favorite bar item in Windows® System Image Manager, add the **FavoriteBarItems** component to your answer file. Next, right-click **FavoriteBarItems**, and select **Insert New FavoriteBarItem**.
+To add a predefined Favorite bar item in Windows System Image Manager, add the **FavoriteBarItems** component to your answer file. Next, right-click **FavoriteBarItems**, and select **Insert New FavoriteBarItem**.
 
 ## Child Elements
 

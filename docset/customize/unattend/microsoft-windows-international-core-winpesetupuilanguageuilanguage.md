@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # UILanguage
 
 
-`UILanguage` specifies the language that is used to display menu items in Windows® Setup and Windows Deployment Services.
+`UILanguage` specifies the language that is used to display menu items in Windows Setup and Windows Deployment Services.
 
 In addition to this `UILanguage` setting, a [UILanguage](microsoft-windows-international-core-winpeuilanguage.md) setting is used to specify the default user interface (UI) language of the Windows installation.
 

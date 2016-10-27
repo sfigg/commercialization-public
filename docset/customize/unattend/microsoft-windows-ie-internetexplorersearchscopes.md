@@ -55,7 +55,7 @@ specialize
 
 For a list of which Search Scope settings are available in each version of Internet Explorer®, see [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md).
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer-win7-microsoft-windows-ie-internetexplorer.md).
 
 ## XML Example
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DiskID
 
 
-`DiskID` specifies the identification number of the disk on which to install Windows®.
+`DiskID` specifies the identification number of the disk on which to install Windows.
 
 ## Values
 

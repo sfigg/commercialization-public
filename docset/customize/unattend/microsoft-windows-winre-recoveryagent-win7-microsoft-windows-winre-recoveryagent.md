@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-WinRE-RecoveryAgent
 
 
-The Microsoft-Windows-WinRE-RecoveryAgent component manages settings related to Windows® Recovery Environment (Windows RE).
+The Microsoft-Windows-WinRE-RecoveryAgent component manages settings related to Windows Recovery Environment (Windows RE).
 
 ## In This Section
 

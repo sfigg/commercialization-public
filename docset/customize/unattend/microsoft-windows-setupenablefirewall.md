@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableFirewall
 
 
-`EnableFirewall` specifies whether Windows® Firewall is enabled for Windows Preinstallation Environment (Windows PE). This setting does not apply to the Windows Firewall settings of the Windows installation.
+`EnableFirewall` specifies whether Windows Firewall is enabled for Windows Preinstallation Environment (Windows PE). This setting does not apply to the Windows Firewall settings of the Windows installation.
 
 Windows Firewall is a stateful-host firewall that discards unsolicited incoming traffic, providing a level of protection for computers against malicious users or programs. A *stateful firewall* is a firewall that keeps track of the state of network connections (such as TCP streams or UDP communication) traveling across it. To provide better protection for computers connected to any kind of network (such as the Internet, a home network, or an organization network), the Windows operating system enables Windows Firewall on all network connections by default.
 

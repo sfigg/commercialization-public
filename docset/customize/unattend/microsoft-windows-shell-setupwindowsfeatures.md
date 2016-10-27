@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WindowsFeatures
 
 
-`WindowsFeatures` specifies whether to show entry points for Internet Explorer®, Media Center, Windows® Media Player, and Windows Mail.
+`WindowsFeatures` specifies whether to show entry points for Internet Explorer®, Media Center, Windows Media Player, and Windows Mail.
 
 **Important**  
 Using these settings to remove components that do not exist in the image will cause Windows Setup to fail.

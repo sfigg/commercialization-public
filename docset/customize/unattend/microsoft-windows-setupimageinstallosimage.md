@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # OSImage
 
 
-`OSImage` specifies the path and the destination of a Windows® image (.wim) file that contains the image to install.
+`OSImage` specifies the path and the destination of a Windows image (.wim) file that contains the image to install.
 
 ## Child Elements
 

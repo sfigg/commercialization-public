@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ImageGroup
 
 
-`ImageGroup` specifies the Windows® Deployment Services image group of the image to be installed.
+`ImageGroup` specifies the Windows Deployment Services image group of the image to be installed.
 
 ## Values
 

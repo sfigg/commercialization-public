@@ -109,11 +109,11 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 </tr>
 <tr class="even">
 <td><p>Security-Malware-Windows-Defender\[DefinitionUpdateFileSharesSources](security-malware-windows-defenderdefinitionupdatefilesharessources.md)</p></td>
-<td><p>Configures UNC file share sources for downloading definition updates for Windows® Defender.</p></td>
+<td><p>Configures UNC file share sources for downloading definition updates for Windows Defender.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Security-Malware-Windows-Defender\[EnableRemoteManagedDefaults](security-malware-windows-defenderenableremotemanageddefaults.md)</p></td>
-<td><p>Specifies whether to configure Windows® Defender to be remotely managed using recommended default settings.</p></td>
+<td><p>Specifies whether to configure Windows Defender to be remotely managed using recommended default settings.</p></td>
 </tr>
 <tr class="even">
 <td><p>Security-Malware-Windows-Defender\[FallbackOrder](security-malware-windows-defenderfallbackorder.md)</p></td>
@@ -121,11 +121,11 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 </tr>
 <tr class="odd">
 <td><p>Security-Malware-Windows-Defender\[Scan](security-malware-windows-defenderscan.md)</p></td>
-<td><p>Specifies settings that configure the scheduled scan for Windows® Defender.</p></td>
+<td><p>Specifies settings that configure the scheduled scan for Windows Defender.</p></td>
 </tr>
 <tr class="even">
 <td><p>Security-Malware-Windows-Defender\[SignatureUpdateInterval](security-malware-windows-defendersignatureupdateinterval.md)</p></td>
-<td><p>Specifies the interval Windows® Defender checks for definition updates.</p></td>
+<td><p>Specifies the interval Windows Defender checks for definition updates.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Security-Malware-Windows-Defender\[ThreatSeverityDefaultAction](security-malware-windows-defenderthreatseveritydefaultaction.md)</p></td>

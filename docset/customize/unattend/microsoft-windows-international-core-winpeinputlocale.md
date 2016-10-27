@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InputLocale
 
 
-`InputLocale` specifies the input language and the input method for input devices, such as the keyboard layout. This setting is used by Windows® Setup and Windows Deployment Services.
+`InputLocale` specifies the input language and the input method for input devices, such as the keyboard layout. This setting is used by Windows Setup and Windows Deployment Services.
 
 The input locale (also called input language) is a per-process setting that describes a language (for example, Greek) and an input method (for example, the keyboard).
 

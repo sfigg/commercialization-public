@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `UILanguageFallback` specifies the language to use for resources that are not localized for the default system user interface (UI) ([UILanguage](microsoft-windows-international-core-winpeuilanguage.md) setting).
 
-This setting is used by Windows® Setup and Windows Deployment Services.
+This setting is used by Windows Setup and Windows Deployment Services.
 
 A fallback language is used when resources are not localized for a partially localized language. For example, Arabic is a partially localized language. Only 80 percent of the Windows resources are localized into Arabic. The possible fallback languages for the Arabic language pack are its base languages, English and French. See the “Language pack type” column in [Available Language Packs](http://go.microsoft.com/fwlink/p/?linkid=200318) for details.
 

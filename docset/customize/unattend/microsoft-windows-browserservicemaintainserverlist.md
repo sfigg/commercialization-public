@@ -54,7 +54,7 @@ generalize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-BrowserService](microsoft-windows-browserservice-win7-microsoft-windows-browserservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-BrowserService](microsoft-windows-browserservice-win7-microsoft-windows-browserservice.md).
 
 ## XML Example
 

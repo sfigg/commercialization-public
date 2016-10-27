@@ -14,11 +14,11 @@ ms.sitesec: msdn
 
 
 **Note**  
-This setting is deprecated. In Windows 8, the **Get Windows® Live Essentials** item does not appear in the **Start** menu.
+This setting is deprecated. In Windows 8, the **Get Windows Live Essentials** item does not appear in the **Start** menu.
 
  
 
-`ShowWindowsLive` specifies whether to display the **Get Windows® Live Essentials** item in Getting Started. **Getting Started** is displayed in the **Start** menu by default.
+`ShowWindowsLive` specifies whether to display the **Get Windows Live Essentials** item in Getting Started. **Getting Started** is displayed in the **Start** menu by default.
 
 Get Windows Live Essentials provides users with an opportunity to download e-mail, photo-editing and movie-making utilities, and parental controls with Web filtering applications.
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `AdministratorPassword` specifies the administrator password and whether it is hidden in the unattended installation answer file.
 
-To configure a blank administrator password for Windows® 7, write an empty string in Windows® System Image Manager (Windows SIM), by right-clicking the [Value](microsoft-windows-shell-setupuseraccountsadministratorpasswordvalue.md) setting, and then selecting **Write Empty String**.
+To configure a blank administrator password for Windows 7, write an empty string in Windows System Image Manager (Windows SIM), by right-clicking the [Value](microsoft-windows-shell-setupuseraccountsadministratorpasswordvalue.md) setting, and then selecting **Write Empty String**.
 
 **Caution**  
 Creating a blank administrator password is a security risk.

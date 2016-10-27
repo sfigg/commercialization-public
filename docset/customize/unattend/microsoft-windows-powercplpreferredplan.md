@@ -30,7 +30,7 @@ The preferred power button, sleep button, lid switch, and password-on-resume set
 
  
 
-When an end user clicks the battery meter, Windows® displays two featured power-plan options. The default featured power plans are **Balanced** and **Power Saver**. If `PreferredPlan` is set to a different power plan, Windows displays **Balanced** and the specified plan.
+When an end user clicks the battery meter, Windows displays two featured power-plan options. The default featured power plans are **Balanced** and **Power Saver**. If `PreferredPlan` is set to a different power plan, Windows displays **Balanced** and the specified plan.
 
 Use the **powercfg -list** option to view the GUIDs for the different power plans on the Windows installation. For example:
 

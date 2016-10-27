@@ -46,7 +46,7 @@ To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell
 This string type supports empty elements.
 
 **Note**  
-The background color or design must not, in any way, obscure the Windows® desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
+The background color or design must not, in any way, obscure the Windows desktop icons, taskbar, **Start** button, or **Start** menu, or otherwise impair the functionality of the user interface. Users must be able to view and to use the Windows desktop for its intended purpose, which is to provide easy access to icons and to folders.
 
  
 

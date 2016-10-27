@@ -15,9 +15,9 @@ ms.sitesec: msdn
 
 `ClientApplications` specifies that client programs be set as default applications when the user elects to restore the computer manufacturer's settings through Default Programs.
 
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only. For information about setting the default file associations, see [Default Application Association Servicing Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=247509).
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only. For information about setting the default file associations, see [Default Application Association Servicing Command-Line Options](http://go.microsoft.com/fwlink/p/?LinkId=247509).
 
-Use these settings to configure Windows® so that a user can later reinstate the original OEM configuration for these applications. Any program specified for any of these settings must be able to change default file associations. If a setting is missing or blank, the default program associated with that setting does not change when the user chooses to reinstate the original OEM configuration. For example, if a setting is not specified for `JavaVM`, the default virtual machine for Java is left unchanged.
+Use these settings to configure Windows so that a user can later reinstate the original OEM configuration for these applications. Any program specified for any of these settings must be able to change default file associations. If a setting is missing or blank, the default program associated with that setting does not change when the user chooses to reinstate the original OEM configuration. For example, if a setting is not specified for `JavaVM`, the default virtual machine for Java is left unchanged.
 
 This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
 
@@ -36,7 +36,7 @@ This setting has no effect on Server Core installations of Windows Server® 200
 </tr>
 <tr class="even">
 <td><p>[Internet](microsoft-windows-shell-setupclientapplicationsinternet.md)</p></td>
-<td><p>This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only.</p>
+<td><p>This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only.</p>
 <p>Sets the default application for Internet browsing. This must be the application’s canonical name.</p></td>
 </tr>
 <tr class="odd">

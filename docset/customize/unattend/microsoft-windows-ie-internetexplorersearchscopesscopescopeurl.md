@@ -37,7 +37,7 @@ To find the URL for a search provider:
 
     Example: `http://search.fabrikam.com/results.aspx?q="{searchTerms}"` becomes `http://search.fabrikam.com/results.aspx?q=&quot;{searchTerms}&quot;`
 
-8.  Copy the URL and paste it into Windows® System Image Manager.
+8.  Copy the URL and paste it into Windows System Image Manager.
 
 **XML-Reserved Characters:**
 

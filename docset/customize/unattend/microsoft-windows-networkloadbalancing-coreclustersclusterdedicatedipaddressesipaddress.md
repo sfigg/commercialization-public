@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies the name of the host's unique IP address.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>This XML attribute does not appear in the <strong>Properties</strong> pane of Windows® System Image Manager (Windows SIM) until you add <code>IpAddress</code> to the answer file.</p>
+<p>This XML attribute does not appear in the <strong>Properties</strong> pane of Windows System Image Manager (Windows SIM) until you add <code>IpAddress</code> to the answer file.</p>
 </div>
 <div>
  

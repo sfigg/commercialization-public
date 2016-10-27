@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Link0` specifies the path to the first shortcut in the **Start** menu list of most frequently used programs.
 
 **Note**  
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only. In Windows 8, the **Start** menu list of most frequently used programs is not available.
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only. In Windows 8, the **Start** menu list of most frequently used programs is not available.
 
  
 
@@ -67,7 +67,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup-win7-microsoft-windows-shell-setup.md).
 
 ## XML Example
 

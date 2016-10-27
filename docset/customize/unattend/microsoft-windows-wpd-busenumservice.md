@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The `Microsoft-Windows-WPD-BusEnumService` component contains settings used to manage how the system searches for devices that use Media Transfer Protocol over Bluetooth (MTP/BT).
 
-MTP/BT enables the computer to synchronize and transfer data between the computer and portable devices. For example, the computer may synchronize Windows® Media Player music and playlists to a portable music device.
+MTP/BT enables the computer to synchronize and transfer data between the computer and portable devices. For example, the computer may synchronize Windows Media Player music and playlists to a portable music device.
 
 ## In This Section
 

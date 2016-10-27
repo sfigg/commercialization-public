@@ -15,13 +15,13 @@ ms.sitesec: msdn
 
 **Security Note:  **
 
-This setting has been deprecated in Windows® 8. The information about this deprecated setting is provided for reference only.
+This setting has been deprecated in Windows 8. The information about this deprecated setting is provided for reference only.
 
 Gadgets are not available in Windows 8.
 
 `Gadget1` specifies the path of a gadget folder. The gadget folder has a .gadget extension.
 
-You can enable built-in Windows® 7 gadgets in the C:\\Program Files\\Windows Sidebar\\Gadgets folder, or you can enable your own custom gadgets. We recommend that you install custom gadgets in the C:\\Program Files\\Windows Sidebar\\Shared Gadgets\\ folder.
+You can enable built-in Windows 7 gadgets in the C:\\Program Files\\Windows Sidebar\\Gadgets folder, or you can enable your own custom gadgets. We recommend that you install custom gadgets in the C:\\Program Files\\Windows Sidebar\\Shared Gadgets\\ folder.
 
 ## Values
 
@@ -59,7 +59,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
 
 ## XML Example
 

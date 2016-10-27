@@ -55,7 +55,7 @@ offlineServicing
 ## Applies To
 
 
-For the list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe-win7-microsoft-windows-pnpcustomizationsnonwinpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe-win7-microsoft-windows-pnpcustomizationsnonwinpe.md).
 
 ## XML Example
 

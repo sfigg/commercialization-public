@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # SetupUILanguage
 
 
-`SetupUILanguage` defines the language to use in Windows® Setup and Windows Deployment Services.
+`SetupUILanguage` defines the language to use in Windows Setup and Windows Deployment Services.
 
 For the list of supported languages, locales, and identifiers, see [Supported Language Packs and Default Settings](http://go.microsoft.com/fwlink/p/?linkid=200317).
 

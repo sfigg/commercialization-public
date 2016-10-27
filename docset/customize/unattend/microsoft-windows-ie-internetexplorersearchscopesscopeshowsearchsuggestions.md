@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ShowSearchSuggestions
 
 
-`ShowSearchSuggestions` specifies whether Search Suggestions are shown in Windows® Internet Explorer®.
+`ShowSearchSuggestions` specifies whether Search Suggestions are shown in Windows Internet Explorer®.
 
 When Search Suggestions are shown, a menu appears below the search box with suggestions when a user types a search into the Internet Explorer Search box.
 

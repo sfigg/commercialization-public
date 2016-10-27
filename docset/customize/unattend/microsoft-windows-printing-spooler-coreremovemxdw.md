@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # RemoveMXDW
 
 
-The `RemoveMXDW` setting is used to remove the Microsoft® XPS Document Writer (MXDW) print queue and driver package from a Windows® installation.
+The `RemoveMXDW` setting is used to remove the Microsoft® XPS Document Writer (MXDW) print queue and driver package from a Windows installation.
 
 **To create a Windows image without the MXDW print queue and driver package**
 

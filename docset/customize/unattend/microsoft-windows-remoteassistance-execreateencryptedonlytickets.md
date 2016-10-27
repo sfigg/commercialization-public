@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that tickets must be encrypted. Only computers running Windows® 7, Windows Vista, Windows Server 2008 R2, or Windows Server 2008 can be used to assist users on this computer.</p></td>
+<td><p>Specifies that tickets must be encrypted. Only computers running Windows 7, Windows Vista, Windows Server 2008 R2, or Windows Server 2008 can be used to assist users on this computer.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>

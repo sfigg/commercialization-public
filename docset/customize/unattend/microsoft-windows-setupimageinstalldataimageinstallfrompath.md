@@ -49,7 +49,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the Windows® editions and architectures thatthis component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures thatthis component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
 
 ## XML Example
 

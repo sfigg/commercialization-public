@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Domain
 
 
-`Domain` specifies the name of the domain used for an account authentication. `Domain` is used to authenticate an account before the computer can be joined to a domain during Windows® Setup.
+`Domain` specifies the name of the domain used for an account authentication. `Domain` is used to authenticate an account before the computer can be joined to a domain during Windows Setup.
 
 ## Values
 

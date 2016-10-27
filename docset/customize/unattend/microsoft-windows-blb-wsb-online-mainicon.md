@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Icon
 
 
-`Icon` specifies the icon that appears in the Windows® Server Backup menus to describe a recommended online backup service.
+`Icon` specifies the icon that appears in the Windows Server Backup menus to describe a recommended online backup service.
 
 Before a recommended online backup service is installed, Windows displays a description of a recommended online backup service. This icon is part of the description.
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # UserLocale
 
 
-`UserLocale` specifies the per-user settings used for formatting dates, times, currency, and numbers in a Windows® installation.
+`UserLocale` specifies the per-user settings used for formatting dates, times, currency, and numbers in a Windows installation.
 
 Users can change this value on a running Windows installation by using the **Administrative** pane in the **Region and Language** Control Panel.
 

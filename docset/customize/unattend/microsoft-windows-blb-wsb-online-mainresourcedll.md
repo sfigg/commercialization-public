@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ResourceDll
 
 
-`ResourceDll` specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows® Server Backup menus. These settings include Microsoft-Windows-BLB-WSB-Online-Main\\[DescriptionText1](microsoft-windows-blb-wsb-online-maindescriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-maindescriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-mainicon.md), [Link1](microsoft-windows-blb-wsb-online-mainlink1.md), [Link1Text](microsoft-windows-blb-wsb-online-mainlink1text.md), [Link2](microsoft-windows-blb-wsb-online-mainlink2.md), [Link2Text](microsoft-windows-blb-wsb-online-mainlink2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md).
+`ResourceDll` specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows Server Backup menus. These settings include Microsoft-Windows-BLB-WSB-Online-Main\\[DescriptionText1](microsoft-windows-blb-wsb-online-maindescriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-maindescriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-mainicon.md), [Link1](microsoft-windows-blb-wsb-online-mainlink1.md), [Link1Text](microsoft-windows-blb-wsb-online-mainlink1text.md), [Link2](microsoft-windows-blb-wsb-online-mainlink2.md), [Link2Text](microsoft-windows-blb-wsb-online-mainlink2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md).
 
 For information about how to create localized versions for these settings, see the topic [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 

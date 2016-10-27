@@ -17,7 +17,7 @@ The Microsoft-Windows-stobject component enables you to customize the power-mana
 
 You can display customized power plans and also add links to additional power-management software by using the settings in this component.
 
-For more information about power-management, see [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.
+For more information about power-management, see [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## In This Section
 
@@ -37,7 +37,7 @@ For more information about power-management, see [Battery Life Technical Referen
 <td><p>Specifies the GUID of the Battery Meter Fly-out High Performance power plan.</p>
 <div class="alert">
 <strong>Important</strong>  
-<p>This setting is deprecated in Windows 8 and Windows® 7.</p>
+<p>This setting is deprecated in Windows 8 and Windows 7.</p>
 <p>This setting is available in Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.</p>
 </div>
 <div>

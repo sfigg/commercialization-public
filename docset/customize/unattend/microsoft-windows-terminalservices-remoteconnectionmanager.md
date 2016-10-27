@@ -16,7 +16,7 @@ ms.sitesec: msdn
 Microsoft-Windows-TerminalServices-RemoteConnectionManager configures how Terminal Services manages Client Access Licenses (CALs).
 
 **Note**  
-This component is ignored unless the Windows® feature **AppServer** **(Terminal Services Application Server)** is enabled in the Windows image.
+This component is ignored unless the Windows feature **AppServer** **(Terminal Services Application Server)** is enabled in the Windows image.
 
  
 

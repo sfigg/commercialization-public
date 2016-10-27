@@ -35,7 +35,7 @@ ms.sitesec: msdn
  
 
 **Note**  
-Do not create a value for `Size` that entirely fills or exceeds the available space, because Windows® reserves a small amount of space to manage partitions. For example, if you create an extended partition with 2000 MB, and you create two logical partitions with the size of 1000 MB each inside that partition, the second partition is not created. An error is logged, and installation is terminated.
+Do not create a value for `Size` that entirely fills or exceeds the available space, because Windows reserves a small amount of space to manage partitions. For example, if you create an extended partition with 2000 MB, and you create two logical partitions with the size of 1000 MB each inside that partition, the second partition is not created. An error is logged, and installation is terminated.
 
 -   To fill the available space on the drive with a primary partition, use the CreatePartition:[Extend](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionextend.md) setting. Do not set CreatePartition:`Size`.
 

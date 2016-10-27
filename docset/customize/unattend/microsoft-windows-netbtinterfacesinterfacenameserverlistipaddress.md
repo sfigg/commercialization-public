@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `IpAddress` specifies an IP address that is a member of [NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md).
 
 **Note**  
-The child elements do not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add this element to the answer file.
+The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
 
  
 

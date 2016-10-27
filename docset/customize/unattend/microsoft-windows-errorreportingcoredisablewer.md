@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableWER
 
 
-`DisableWER` disables Windows® Error Reporting. You may want to disable error-reporting functionality when you are deploying Windows in large, managed environments.
+`DisableWER` disables Windows Error Reporting. You may want to disable error-reporting functionality when you are deploying Windows in large, managed environments.
 
 For more information on privacy concerns about error reporting, see [this Microsoft website](http://go.microsoft.com/fwlink/?linkid=50163).
 

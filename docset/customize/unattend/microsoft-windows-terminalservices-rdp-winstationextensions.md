@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-TerminalServices-RDP-WinStationExtensions
 
 
-The Microsoft-Windows-TerminalServices-RDP-WinStationExtensions component implements the Microsoft® Remote Desktop Protocol (RDP). The RDP provides remote-display and -input capabilities over network connections for Windows®-based applications running on a server. The RDP is designed to support different types of network topologies and multiple LAN protocols.
+The Microsoft-Windows-TerminalServices-RDP-WinStationExtensions component implements the Microsoft® Remote Desktop Protocol (RDP). The RDP provides remote-display and -input capabilities over network connections for Windows-based applications running on a server. The RDP is designed to support different types of network topologies and multiple LAN protocols.
 
 ## In This Section
 

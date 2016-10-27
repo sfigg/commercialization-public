@@ -59,7 +59,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows® editions and architectures that this component supports, see [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md)
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md)
 
 ## XML Example
 

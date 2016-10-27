@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Provisioning
 
 
-`Provisioning` specifies the account information used to join a domain during Windows® Setup.
+`Provisioning` specifies the account information used to join a domain during Windows Setup.
 
 **Note**  
 Use either Provisioning or [Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.

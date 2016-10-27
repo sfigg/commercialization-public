@@ -1,6 +1,6 @@
 ---
 title: Unattended Windows Setup Reference
-description: The Windows® Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.
+description: The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

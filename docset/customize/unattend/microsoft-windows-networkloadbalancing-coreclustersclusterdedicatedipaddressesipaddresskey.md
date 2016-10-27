@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies the name for the dedicated IP address. The name is specified as an attribute in the IpAddress.
 
 **Note**  
--   This XML attribute does not appear in the **Properties** pane of Windows® System Image Manager (Windows SIM) until you add this IPAddress to the answer file.
+-   This XML attribute does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this IPAddress to the answer file.
 
 -   The value for Key is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md) element. The attribute wcm:keyValue is used to identify multiple IP address list items. For example, you can specify three different IP addresses by using the Key values of Ip1, Ip2, and Ip3.
 

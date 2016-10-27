@@ -67,7 +67,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows® editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-stobject](microsoft-windows-stobject-win7-microsoft-windows-stobject.md).
 
 ## XML Example
 

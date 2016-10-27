@@ -38,7 +38,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 </tr>
 <tr class="even">
 <td><p>[ExtendOSPartition](microsoft-windows-deploymentextendospartition.md)</p></td>
-<td><p>Specifies whether to extend the partition on which you are installing Windows®.</p></td>
+<td><p>Specifies whether to extend the partition on which you are installing Windows.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Generalize](microsoft-windows-deploymentgeneralize.md)</p></td>

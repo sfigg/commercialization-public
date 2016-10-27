@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ShowLeftAddressToolbar
 
 
-`ShowLeftAddressToolbar` specifies where on the **Address** bar the **Stop** and **Refresh** buttons appear in Windows® Internet Explorer®.
+`ShowLeftAddressToolbar` specifies where on the **Address** bar the **Stop** and **Refresh** buttons appear in Windows Internet Explorer®.
 
 ## Values
 

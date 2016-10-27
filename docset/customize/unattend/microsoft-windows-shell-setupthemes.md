@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Themes
 
 
-The `Themes` setting includes settings to customize elements of the Windows® visual style, including the window glass color, desktop background, and screen saver.
+The `Themes` setting includes settings to customize elements of the Windows visual style, including the window glass color, desktop background, and screen saver.
 
 To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setupthemesdesktopbackground.md) and [ThemeName](microsoft-windows-shell-setupthemesthemename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setupthemesbrandicon.md), [ScreenSaver](microsoft-windows-shell-setupthemesscreensaver.md), and [WindowColor](microsoft-windows-shell-setupthemeswindowcolor.md).
 
@@ -60,7 +60,7 @@ To create additional custom theme files, use the **Personalization** item within
 <td><p>Specifies the path to a screen-saver file.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. For more information on power plans, see the [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows® Assessment and Deployment Kit (Windows ADK) Technical Reference.</p>
+<p>We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. For more information on power plans, see the [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.</p>
 </div>
 <div>
  

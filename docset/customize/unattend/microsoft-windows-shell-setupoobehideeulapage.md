@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # HideEULAPage
 
 
-`HideEULAPage` specifies whether to hide the Microsoft® Software License Terms page of Windows® Welcome.
+`HideEULAPage` specifies whether to hide the Microsoft® Software License Terms page of Windows Welcome.
 
 **Note**  
 OEMs and System Builders can use this setting only for testing prior to shipment.

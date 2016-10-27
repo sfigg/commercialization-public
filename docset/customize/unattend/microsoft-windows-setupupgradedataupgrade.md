@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Upgrade
 
 
-`Upgrade` specifies whether the present installation is an upgrade from a previous version of Windows®.
+`Upgrade` specifies whether the present installation is an upgrade from a previous version of Windows.
 
-Windows® Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\`UpgradeData` settings. Then, you must use either the Windows product DVD or the System Preparation (Sysprep) tool to upgrade Windows.
+Windows Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\`UpgradeData` settings. Then, you must use either the Windows product DVD or the System Preparation (Sysprep) tool to upgrade Windows.
 
 For a sample answer file, see the [XML Example](#xmlexample) section.
 

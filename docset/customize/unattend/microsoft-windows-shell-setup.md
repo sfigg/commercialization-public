@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-Shell-Setup
 
 
-Microsoft-Windows-Shell-Setup contains elements and settings that control how the Windows® operating system shell is installed on a destination computer.
+Microsoft-Windows-Shell-Setup contains elements and settings that control how the Windows operating system shell is installed on a destination computer.
 
 ## In This Section
 
