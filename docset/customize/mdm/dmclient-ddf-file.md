@@ -909,7 +909,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DMClien
 ## Related topics
 
 
-[DMClient configuration service provider](dmclient-configuration-service-provider.md)
+[DMClient configuration service provider](dmclient-csp.md)
 
  
 

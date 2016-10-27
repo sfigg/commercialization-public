@@ -12,7 +12,7 @@ ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-**Note**  
+> **Note**  
 When you create a list of allowed apps, all [inbox apps](#inbox-apps) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 
 In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
@@ -31,7 +31,7 @@ Defines the root node for the AppLocker configuration service provider.
 <a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**  
 Defines restrictions for applications.
 
-**Note**  
+> **Note**  
 When you create a list of allowed apps, all [inbox apps](#inbox-apps) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 
 In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
@@ -52,8 +52,8 @@ Each of the previously listed nodes contains a **Grouping** node.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -77,8 +77,8 @@ In addition, each **Grouping** node contains one or more of the following nodes:
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -125,8 +125,8 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -196,8 +196,8 @@ The following table show the mapping of information to the AppLocker publisher r
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,8 +281,8 @@ You can get the publisher name and product name of apps using a web API.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -342,7 +342,7 @@ The product name is first part of the PackageFullName followed by the version nu
 
 The following list shows the apps that may be included in the inbox.
 
-**Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 
  
 

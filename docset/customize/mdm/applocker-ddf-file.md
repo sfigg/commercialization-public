@@ -666,13 +666,13 @@ This topic shows the OMA DM device description framework (DDF) for the **AppLock
 ## Related topics
 
 
-[AppLocker configuration service provider](applocker-configuration-service-provider.md)
+[AppLocker configuration service provider](applocker-csp.md)
 
  
 
  
 
-10/10/2016
+
 
 
 

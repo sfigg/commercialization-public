@@ -21,8 +21,8 @@ Optional. Integer. Specifies the default roaming value. Valid values are:
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,7 +57,7 @@ Optional. Integer. Specifies the default roaming value. Valid values are:
 
  
 
-10/10/2016
+
 
 
 

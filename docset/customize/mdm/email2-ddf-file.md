@@ -859,7 +859,7 @@ This topic shows the OMA DM device description framework (DDF) for the **EMAIL2*
 ## Related topics
 
 
-[EMAIL2 configuration service provider](email2-configuration-service-provider.md)
+[EMAIL2 configuration service provider](email2-csp.md)
 
  
 
