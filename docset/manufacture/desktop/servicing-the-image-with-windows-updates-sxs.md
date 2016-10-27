@@ -1,88 +1,40 @@
 ---
-author: Justinha
-Description: 'Add drivers, updates, and upgrade the edition.'
+author: KPacquer
+Description: 'Add updates, and upgrade the edition.'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1c: Servicing the image with Windows Updates'
+title: 'Lab 4: Add updates and upgrade the edition'
 ---
 
-# Lab 1c: Add drivers, updates, and upgrade the edition
+# Lab 4: Add updates and upgrade the edition
 
 For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
 
+**Notes** 
+
+* Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
+
+-  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
+
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-Note: To add drivers that include an installation package, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
+Note: To add drivers that include an installation package, see [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 
-## <span id="Prepare_and_mount_the_image"></span>Prepare and mount the image
+## <span id="Mount_the_image"></span>Mount the image
 
-**Step 1: Make a copy of your Windows image file (recommended)**
+**Step 1: Mount the image**
 
-1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
-2.  Copy the file:
-``` syntax
-copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-updated.wim
-```
+1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
-**Step 2: Mount the Windows image file**
-Create a temporary folder to mount the files, and mount the image into it: 
-``` syntax
-md C:\mount\windows
-Dism /Mount-Image /ImageFile:"C:\Images\install-updated.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
-```
-Where /Index:1 refers to the image you want to mount. 
-For the Windows 10 Home/Pro edition, use /Index:2 to select the Home edition.
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
 
-This step can take several minutes.
-
--   **Troubleshooting**
-
-    If this command fails, make sure that you are using the Windows 10 version of DISM that is installed with the Windows ADK.
-
-    If your technician PC uses Windows 8.1, Windows 8, or Windows 7, make sure you're using the **Deployment and Imaging Tools Environment** rather than the standard command prompt.
-
-    Don’t mount images to protected folders, such as your User\\Documents folder.
-
-    If DISM processes are interrupted, consider temporarily disconnecting from the public network and disabling virus protection.
-	
-	If you've mounted an image to the folder before, try cleaning up the resources associated with the mounted image:
-	``` syntax
-	Dism /Cleanup-Mountpoints
-	```
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
 ## <span id="Add_customizations_to_the_image"></span>Add customizations to the image
-These are just examples - you don't have to add all of these.
-
-**Step 3: Add drivers to Windows**
-
-1.  For drivers that include an .inf file:
-
-    ``` syntax
-    Dism /Add-Driver /Image:"C:\mount\windows" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
-    ```
-
-    where "C:\\Drivers\\PnP.Media.V1\\media1.inf" is the base .inf file in your driver package.
-
-    **Note**  For this section we’re adding /LogPath in case things go wrong –if there’s a problem with adding your driver, open this file to quickly check for errors.
-    
-    To install all of the drivers from a folder and all its subfolders, point to the folder and use the /Recurse option.
-
-    ``` syntax
-    Dism /Add-Driver /Image:"C:\mount\windows" /Driver:c:\drivers /Recurse
-    ```
-
-    **Warning**  While /Recurse can be handy, it's easy to bloat your image with it. Some driver packages include multiple .inf driver packages, which often share payload files from the same folder. During installation, each .inf driver package is expanded into a separate folder, each with a copy of the payload files. We've seen cases where a popular driver in a 900MB folder added 10GB to images when added with the /Recurse option.
-
-2.  Verify that the driver is part of the image:
-
-    ``` syntax
-    Dism /Get-Drivers /Image:"C:\mount\windows"
-    ```
-
-    Review the resulting list of packages and verify that the list contains the driver.
 	
-**Step 4: Upgrade the edition from Home to Pro**
+**Step 2: Upgrade the edition from Home to Pro**
 
 Use this procedure to upgrade the edition. You cannot set a Windows image to a lower edition. You should not use this procedure on an image that has already been changed to a higher edition.
 
@@ -98,13 +50,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
     Dism /Set-Edition:Professional /Image:C:\mount\windows
     ```
 	
-**Step 5: Add a Windows update package**
-
-Notes: 
-
-* By default, updates installed after a target rollup update are not restored. To ensure that updates preinstalled during manufacturing are not discarded after recovery, they should be marked as permanent by using the /Cleanup-Image command in DISM with the /StartComponentCleanup and /ResetBase options. Updates marked as permanent are always restored during recovery.
-
-* Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
+**Step 3: Add a Windows update package**
 
 1.  From Microsoft Connect, download the Windows update. Save this in the folder: C:\\WindowsUpdates.
 
@@ -116,52 +62,71 @@ Notes:
 
     where C is the drive letter of the drive and `kb1010101.cab`, `kb1020202.cab`, and `kb3030303.cab` are update packages that you’re adding to the image.
 
-3.  Lock in the updates, so that they are restored during a recovery.
+3.  Lock in the updates, so that they are restored during a recovery. 
+
     ``` syntax
     DISM /Cleanup-Image /Image=C:\ /StartComponentCleanup /ResetBase /ScratchDir:C:\Temp
     ```
 
 ## <span id="Unmount_the_image"></span>Unmount the image
 	
-**Step 6: Unmount the images**
+**Step 4: Unmount the images**
 
 1.  Close all applications that might access files from the image.
 
 2.  Commit the changes and unmount the Windows image:
+
     ``` syntax
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
     ```
 
 ## <span id="Try_it_out"></span>Try it out
 
-**Step 7: Apply the image to a new PC**
-Use the steps from [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
+**Step 5: Apply the image to a new PC**
+
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
 1.  Boot the reference PC to Windows PE.
 2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
+3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 4.  Disconnect the drives, then reboot (`exit`).
 
-**Step 8: Verify drivers**
+**Step 6: Verify updates**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
+
 2.  Right-click the **Start** button, and select **Command Prompt (Admin)**.
-3.  Verify that the drivers appear correctly:
+
+3.  Verify that the edition is correct:
 
     ``` syntax
-    C:\Windows\System32\Dism /Get-Drivers /Online
+    dism /online /get-currentedition
     ```
-	
+
+    Make sure it's the right edition. For example:
+
+    ``` syntax
+    Current edition is:
+
+    Current Edition : Professional
+
+    The operation completed successfully.
+    ```
+
 4.  Verify that the packages appear correctly:
 
     ``` syntax
-    C:\Windows\System32\Dism /Get-Packages /Online
+    Dism /Get-Packages /Online
     ```
 
     Review the resulting list of packages and verify that the list contains the package. For example:
 
     ``` syntax
-    Package Identity : Microsoft-Windows-Client-LanguagePack  ...  fr-FR~10.0.10240.0
+    Package Identity : Package_for_RollupFix~31bf3856ad364e35~amd64~~14393.321.1.5
     State : Installed
+    Release Type : Security Update
+    Install Time : 10/13/2016 6:26 PM
+
+    The operation completed successfully.
     ```
 
-Next step: [Lab 1d: Add drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
+Next step: [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
