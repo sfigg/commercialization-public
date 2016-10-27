@@ -533,7 +533,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
     Here's additional guidance for the upgrade process:
 
-    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inbox-apps).
+    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inbox-apps-and-components).
     -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows Phone 8.1 publisher rule if you are using it.
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
@@ -1313,7 +1313,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
-<p>[UnifiedWriteFilter DDF File](uwf-ddf-file.md)</p></td>
+<p>[UnifiedWriteFilter DDF File](unifiedwritefilter-ddf.md)</p></td>
 <td style="vertical-align:top"><p>Added the following new setting for Windows 10, version 1607:</p>
 <ul>
 <li>NextSession/HORMEnabled</li>
@@ -1365,7 +1365,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top"><p>[CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)</p>
-<p>[CMPolicy CSP](cmpolicy-configuration-service-provider.md)</p></td>
+<p>[CMPolicy CSP](cmpolicy-csp.md)</p></td>
 <td style="vertical-align:top"><p>Updated node tree diagrams.</p>
 <p>Updated SyncML samples</p></td>
 </tr>
@@ -1384,7 +1384,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Device update management](device-update-management.md)</td>
-<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies). Added the new policies added in Windows 10, version 1607.</p></td>
+<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows-10-version-1607-for-update-management). Added the new policies added in Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1438,7 +1438,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">[Update DDF file](p_phDdeviceMgmt.update_ddf_file)</td>
+<td style="vertical-align:top">[Update DDF file](update-ddf-file.md)</td>
 <td style="vertical-align:top"><p>Updated the DDF file content. Here's the list of changes: a</p>
 <ul>
 <li>Changed the data type of DeferUpgrade from int to bool.</li>
