@@ -50,7 +50,7 @@ In Windows Vista installations, it was necessary to add a comma (**,**), and **
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md) | **Gadget4**
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md) | **Gadget4**
 
 ## Valid Configuration Passes
 
@@ -60,7 +60,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md).
 
 ## XML Example
 
@@ -78,7 +78,7 @@ The following XML output shows how to set three built-in Windows 7 gadgets, and
 ## Related topics
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md)
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md)
 
  
 

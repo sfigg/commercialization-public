@@ -73,7 +73,7 @@ ms.sitesec: msdn
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SuggestionsURL_JSON](suggestionsurl-json-win7-microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)</p></td>
+<td><p>[SuggestionsURL_JSON](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)</p></td>
 <td><p>Specifies suggestions that appear to the user during a search, by using a search that is based on JavaScript Object Notation (JSON).</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>

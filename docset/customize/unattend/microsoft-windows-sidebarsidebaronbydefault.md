@@ -47,7 +47,7 @@ By default, the Sidebar is not available in Windows 8.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md) | **SidebarOnByDefault**
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md) | **SidebarOnByDefault**
 
 ## Valid Configuration Passes
 
@@ -57,7 +57,7 @@ oobeSystem
 ## Applies To
 
 
-Windows Vista editions only. For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
+Windows Vista editions only. For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md).
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following sample XML output shows how to specify that the gadget toolbar is 
 ## Related topics
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md)
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md)
 
  
 

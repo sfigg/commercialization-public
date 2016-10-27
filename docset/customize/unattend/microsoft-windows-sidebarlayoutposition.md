@@ -52,7 +52,7 @@ Gadgets are not available in Windows 8.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md) | **LayoutPosition**
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md) | **LayoutPosition**
 
 ## Valid Configuration Passes
 
@@ -62,7 +62,7 @@ oobeSystem
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md).
 
 ## XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to set gadgets to appear on the top of the de
 ## Related topics
 
 
-[Microsoft-Windows-Sidebar](microsoft-windows-sidebar-win7-microsoft-windows-sidebar.md)
+[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md)
 
  
 

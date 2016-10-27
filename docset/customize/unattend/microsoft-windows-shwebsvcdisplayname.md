@@ -43,12 +43,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc-win7-microsoft-windows-shwebsvc.md) | **DisplayName**
+[Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc.md) | **DisplayName**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc-win7-microsoft-windows-shwebsvc.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc.md).
 
 ## XML Example
 
