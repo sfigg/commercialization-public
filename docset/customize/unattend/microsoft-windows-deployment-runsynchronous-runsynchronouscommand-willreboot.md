@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 If there are any additional commands that have yet to be processed before the computer restarts, those commands are saved. After the restart, the remaining synchronous commands resume.
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
 
 ## Values
 
@@ -93,7 +93,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | **WillReboot**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | **WillReboot**
 
 ## Applies To
 

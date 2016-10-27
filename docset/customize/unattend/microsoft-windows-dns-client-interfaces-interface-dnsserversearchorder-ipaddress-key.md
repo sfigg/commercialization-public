@@ -4,7 +4,7 @@ description: Key
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 90c20ccc-891f-487d-9f42-1ac1be0f4b9a
+ms.assetid: a5aaf9ec-53b4-43dd-aadb-5203f3d64097
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -13,12 +13,12 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies a unique key for the domain name.
+`Key` specifies a unique key for the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) to the answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) element. The attribute `wcm:keyValue` is used to identify each unique domain name. For example, you can specify three different domain names by using `Key` values of **1**, **2**, and **3**.
+-   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP Address. For example, you can specify three different IP addresses by using Key values of 1, 2, and 3.
 
  
 
@@ -33,19 +33,17 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the domain name. <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md). <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-This string type does not support empty elements. Do not create an empty value for this setting.
-
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) | [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md) | **Key**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) | **Key**
 
 ## Valid Passes
 
@@ -60,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows a Domain Name System (DNS) configuration for Fabrikam.
+The following XML output shows a DNS domain configuration for Fabrikam.
 
 ``` syntax
    <DNSDomain>fabrikam.com</DNSDomain>
@@ -96,7 +94,7 @@ The following XML output shows a Domain Name System (DNS) configuration for Fabr
 ## Related topics
 
 
-[DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md)
+[IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md)
 
  
 

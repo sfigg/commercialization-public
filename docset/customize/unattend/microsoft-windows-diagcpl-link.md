@@ -47,12 +47,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md) | **Link**
+[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md) | **Link**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md).
 
 ## XML Example
 
@@ -78,7 +78,7 @@ The following XML output shows how to configure the **Additional Information** i
 ## Related topics
 
 
-[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md)
+[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md)
 
  
 

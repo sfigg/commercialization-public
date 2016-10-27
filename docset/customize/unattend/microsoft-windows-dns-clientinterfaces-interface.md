@@ -43,7 +43,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 <td><p>Specifies whether to register the host (A) and pointer (PTR) resource records for this adapter. If it is not specified, only the [DNSDomain](microsoft-windows-dns-clientdnsdomain.md) value specified in the global parameters is used.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-dns-clientinterfacesinterfaceidentifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-dns-client-interfaces-interface-identifier.md)</p></td>
 <td><p>Specifies the interface identifier.</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
@@ -105,7 +105,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Interfaces](microsoft-windows-dns-clientinterfaces.md)
+[Interfaces](microsoft-windows-dns-client-interfaces.md)
 
  
 

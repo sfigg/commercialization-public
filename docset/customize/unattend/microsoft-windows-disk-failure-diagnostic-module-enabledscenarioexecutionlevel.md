@@ -54,7 +54,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module-win7-microsoft-windows-disk-failure-diagnostic-module.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module.md).
 
 ## XML Example
 
@@ -69,7 +69,7 @@ The following XML output shows how to configure Windows Disk Diagnostic.
 ## Related topics
 
 
-[Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module-win7-microsoft-windows-disk-failure-diagnostic-module.md)
+[Microsoft-Windows-Disk-Failure-Diagnostic-Module](microsoft-windows-disk-failure-diagnostic-module.md)
 
  
 

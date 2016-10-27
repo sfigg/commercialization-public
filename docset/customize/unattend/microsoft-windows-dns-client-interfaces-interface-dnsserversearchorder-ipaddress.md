@@ -47,7 +47,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) | **IpAddress**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfaces-interface-dnsserversearchorder.md) | **IpAddress**
 
 ## Valid Passes
 
@@ -57,7 +57,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
@@ -98,7 +98,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md)
+[DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md)
 
  
 

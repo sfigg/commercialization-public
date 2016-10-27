@@ -78,7 +78,7 @@ The value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversear
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | **DNSServerSearchOrder**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfacesinterface.md) | **DNSServerSearchOrder**
 
 ## Valid Passes
 
@@ -88,7 +88,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
@@ -129,7 +129,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Interface](microsoft-windows-dns-clientinterfacesinterface.md)
+[Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
  
 

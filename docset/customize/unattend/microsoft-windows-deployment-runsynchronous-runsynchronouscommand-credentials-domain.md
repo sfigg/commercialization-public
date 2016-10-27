@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | [Credentials](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentials.md) | **Domain**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | [Credentials](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md) | **Domain**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[Credentials](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials.md)
 
  
 

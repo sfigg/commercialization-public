@@ -43,7 +43,7 @@ You can also use the [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomai
       </DNSSuffixSearchOrder>
 ```
 
-For both of these examples, the value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddresskey.md) in [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) and [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md) in `DNSSuffixSearchOrder` indicates the order in which the DNS servers are searched. In this example, the server search order list is:
+For both of these examples, the value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorderipaddresskey.md) in [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainnamekey.md) in `DNSSuffixSearchOrder` indicates the order in which the DNS servers are searched. In this example, the server search order list is:
 
 1.  192.168.1.1
 

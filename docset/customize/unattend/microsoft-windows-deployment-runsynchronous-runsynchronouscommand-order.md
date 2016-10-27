@@ -19,7 +19,7 @@ Synchronous commands start in the order specified in the unattended installation
 
 To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) instead.
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
 ## Values
 
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | **Order**
+[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | **Order**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
  
 

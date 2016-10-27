@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Order
 
 
-`Order` specifies a unique value for each [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md).
+`Order` specifies a unique value for each [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md).
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) instead.
 
 [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md) | **Order**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md) | **Order**
 
 ## Applies To
 
@@ -94,7 +94,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronou-runasynchronouscommand.md)
 
  
 

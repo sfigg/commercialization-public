@@ -29,19 +29,19 @@ Some settings are global, and others are interface-specific. Global settings app
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DNSDomain](microsoft-windows-dns-clientdnsdomain.md)</p></td>
+<td><p>[DNSDomain](microsoft-windows-dns-client-dns-domain.md)</p></td>
 <td><p>Specifies the primary DNS suffix of the network connection across all adapters. If <code>DNSDomain</code> is specified in two places as a global parameter (x) and as an interface-specific parameter (y), the two values are concatenated appropriately for each interface (as x, y) and used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md)</p></td>
+<td><p>[DNSSuffixSearchOrder](microsoft-windows-dns-client-dns-suffixsearchorder.md)</p></td>
 <td><p>Specifies the suffix search order for DNS servers. This is a global setting.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Interfaces](microsoft-windows-dns-clientinterfaces.md)</p></td>
+<td><p>[Interfaces](microsoft-windows-dns-client-interfaces.md)</p></td>
 <td><p>Specifies an interface collection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UseDomainNameDevolution](microsoft-windows-dns-clientusedomainnamedevolution.md)</p></td>
+<td><p>[UseDomainNameDevolution](microsoft-windows-dns-client-usedomainnamedevolution.md)</p></td>
 <td><p>Specifies whether to use domain-name devolution when the DNS-caching resolver resolves an unqualified query.</p></td>
 </tr>
 </tbody>

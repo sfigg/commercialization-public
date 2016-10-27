@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` briefly describes the synchronous command to execute. [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
+`Description` briefly describes the synchronous command to execute. [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize pass.
 
 ## Values
 
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | **Description**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | **Description**
 
 ## Applies To
 

@@ -1,21 +1,24 @@
 ---
-title: Interfaces
-description: Interfaces
+title: DomainName
+description: DomainName
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 07f16d9a-97b5-487b-8860-eae032e91f36
+ms.assetid: d3a5be03-d687-4383-90b7-3a18d0ed70c8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Interfaces
+# DomainName
 
 
-`Interfaces` is a container for DNS interface settings.
+`DomainName` specifies the domain name for the search.
 
-DNS settings can be divided into two primary groups—global settings and interface settings. Global settings apply to the protocols as a whole and are applied across all network interfaces. Interface settings are specific to a particular network interface.
+**Note**  
+The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
+
+ 
 
 ## Child Elements
 
@@ -27,20 +30,26 @@ DNS settings can be divided into two primary groups—global settings and interf
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-dns-clientinterfacesinterface.md)</p></td>
-<td><p>Specifies interface settings.</p></td>
+<td><p>[Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md)</p></td>
+<td><p>Specifies a unique key for the <code>DomainName</code>.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Value](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamevalue.md)</p></td>
+<td><p>Specifies the value of the <code>DomainName</code>.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
+This string type does not support empty elements. Do not create an empty value for this setting.
+
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | **Interfaces**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) | **DomainName**
 
-## Valid Passes
+## Valid Configuration Passes
 
 
 specialize
@@ -89,13 +98,13 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md)
+[DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Interfaces%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20DomainName%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

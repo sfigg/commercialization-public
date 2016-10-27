@@ -47,12 +47,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md) | **Title**
+[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md) | **Title**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md).
 
 ## XML Example
 
@@ -69,7 +69,7 @@ The following XML output shows how to configure the **Online Support** icon to p
 ## Related topics
 
 
-[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl-win7-microsoft-windows-diagcpl.md)
+[Microsoft-Windows-DiagCpl](mmicrosoft-windows-diagcpl.md)
 
  
 

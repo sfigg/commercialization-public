@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentialsd-omain.md)</p></td>
 <td><p>Specifies the domain of the account to use for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-password.md)</p></td>
 <td><p>Specifies the password of the account to use for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-username.md)</p></td>
 <td><p>Specifies the user name of the account to use for authentication.</p></td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | **Credentials**
+[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
@@ -93,7 +93,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
  
 

@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | **DisableDynamicUpdate**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DisableDynamicUpdate**
 
 ## Valid Passes
 
@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](mmicrosoft-windows-dns-client.md).
 
 ## XML Example
 
@@ -91,7 +91,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Interface](microsoft-windows-dns-clientinterfacesinterface.md)
+[Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
  
 

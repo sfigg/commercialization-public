@@ -4,7 +4,7 @@ description: Path
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 1ad8938e-24f1-4532-85a3-099c2361c724
+ms.assetid: 3aa12be4-75f9-49a5-8d60-2f25d0f7be33
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -13,12 +13,7 @@ ms.sitesec: msdn
 # Path
 
 
-`Path` specifies the path and the name of the command to run. [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
-
-**Warning**  
-Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandwillreboot.md).
-
- 
+`Path` specifies the path and the name of the command to execute. [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
 ## Values
 
@@ -31,7 +26,8 @@ Do not add commands that shut down or reboot the computer; instead, use the sett
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a UNC path. If the path is a UNC path, the [Credentials](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandcredentials.md) must be specified. <em>Path</em> is a string with a maximum length of 259 characters.</p></td>
+<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, the [Credentials](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials.md) setting must be specified.</p>
+<p><em>Path</em> is a string with a maximum length of 259 characters.</p></td>
 </tr>
 </tbody>
 </table>
@@ -40,7 +36,7 @@ Do not add commands that shut down or reboot the computer; instead, use the sett
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
-## Valid Configuration Passes
+## Valid Passes
 
 
 auditUser
@@ -50,46 +46,44 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) | **Path**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunAsynchronous](microsoft-windows-deployment-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md) | **Path**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
+For a list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-Deployment](microsoft-windows-deployment.md).
 
 ## XML Example
 
 
-The following XML output shows how to set synchronous commands.
+The following XML output shows how to set asynchronous commands.
 
 The first command runs an application on the local hard drive. The command includes the environment variable %ProgramFiles%. The second command runs a command from the network.
 
 ``` syntax
-<RunSynchronous>
-   <RunSynchronousCommand wcm:action="add">
-      <Description>Command1-Local</Description>
+<RunAsynchronous>
+   <RunAsynchronousCommand wcm:action="add">
+      <Description>AsynchCommand1</Description>
       <Order>1</Order>
       <Path>%ProgramFiles%\FabriKam\FabriKam First Run Application.exe</Path>
-      <WillReboot>OnRequest</WillReboot>
-   </RunSynchronousCommand>
-   <RunSynchronousCommand wcm:action="add">
+   </RunAsynchronousCommand>
+   <RunAsynchronousCommand wcm:action="add">
       <Credentials>
          <Domain>MyDomain</Domain>
          <Password>MyPassword</Password>
          <Username>MyUsername</Username>
       </Credentials>
-      <Description>Command2-Network</Description>
+      <Description>SynchCommand2-FromNetwork</Description>
       <Order>2</Order>
       <Path>\\network\server\share\filename</Path>
-      <WillReboot>OnRequest</WillReboot>
-   </RunSynchronousCommand>
-</RunSynchronous>
+   </RunAsynchronousCommand>
+</RunAsynchronous>
 ```
 
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
  
 

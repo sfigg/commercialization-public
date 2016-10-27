@@ -29,7 +29,7 @@ To start a command that needs to finish before other commands can start, use syn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)</p></td>
+<td><p>[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run synchronously.</p></td>
 </tr>
 </tbody>
