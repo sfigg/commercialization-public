@@ -76,7 +76,7 @@
 ### [CellularSettings CSP](cellularsettings-configuration-service-provider.md)
 ### [CertificateStore CSP](certificatestore-configuration-service-provider.md)
 #### [CertificateStore DDF file](certificatestore-ddf-file.md)
-### [ClientCertificateInstall CSP](clientcertificateinstall-configuration-service-provider.md)
+### [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 #### [ClientCertificateInstall DDF file](clientcertificateinstall-ddf-file.md)
 ### [CM_CellularEntries CSP](cm-cellularentries-csp.md)
 ### [CM_ProxyEntries CSP](cm-proxyentries-csp.md)
