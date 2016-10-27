@@ -75,7 +75,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md).
 
 ## Related topics
 

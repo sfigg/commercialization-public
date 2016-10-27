@@ -46,7 +46,7 @@ Specifies whether the device supports functional level device reset (FLDR). The 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md) | **WLANFunctionLevelDeviceResetSupported**
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md) | **WLANFunctionLevelDeviceResetSupported**
 
 ## Valid Configuration Passes
 
@@ -60,12 +60,12 @@ oobeSystem
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md).
 
 ## Related topics
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md)
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
  
 

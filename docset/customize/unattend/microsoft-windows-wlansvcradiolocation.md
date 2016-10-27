@@ -59,7 +59,7 @@ This string type supports empty elements.
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md) | **RadioLocation**
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md) | **RadioLocation**
 
 ## Valid Configuration Passes
 
@@ -71,7 +71,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md).
 
 ## XML Example
 
@@ -102,7 +102,7 @@ This changes the WLAN activation recommendation to:
 ## Related topics
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md)
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
  
 

@@ -50,7 +50,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library-win7-microsoft-windows-wdf-kernel-library.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library.md).
 
 ## XML Example
 

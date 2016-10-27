@@ -69,7 +69,7 @@ windowsPE
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 

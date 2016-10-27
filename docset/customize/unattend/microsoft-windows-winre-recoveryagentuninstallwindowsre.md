@@ -53,12 +53,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent-win7-microsoft-windows-winre-recoveryagent.md) | **UninstallWindowsRE**
+[Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent.md) | **UninstallWindowsRE**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent-win7-microsoft-windows-winre-recoveryagent.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent.md).
 
 ## XML Example
 

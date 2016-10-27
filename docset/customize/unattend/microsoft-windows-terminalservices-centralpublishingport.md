@@ -48,7 +48,7 @@ oobeSystem
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing-win7-microsoft-windows-terminalservices-centralpublishing.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-CentralPublishing](microsoft-windows-terminalservices-centralpublishing.md).
 
 ## XML Example
 

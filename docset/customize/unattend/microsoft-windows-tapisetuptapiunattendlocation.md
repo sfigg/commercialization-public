@@ -80,7 +80,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md).
 
 ## XML Example
 
@@ -104,7 +104,7 @@ The following XML output shows how to set the location from which you are callin
 ## Related topics
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md)
+[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md)
 
  
 

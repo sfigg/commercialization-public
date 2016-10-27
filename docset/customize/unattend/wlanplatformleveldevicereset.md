@@ -46,7 +46,7 @@ Specifies whether the device supports platform level device reset (PLDR). The PL
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md) | **WLANPlatformLevelDeviceResetSupported**
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md) | **WLANPlatformLevelDeviceResetSupported**
 
 ## Valid Configuration Passes
 
@@ -60,12 +60,12 @@ oobeSystem
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md).
 
 ## Related topics
 
 
-[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc-win7-microsoft-windows-wlansvc.md)
+[Microsoft-Windows-Wlansvc](microsoft-windows-wlansvc.md)
 
  
 
