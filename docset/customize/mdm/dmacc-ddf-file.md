@@ -831,7 +831,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DMAcc**
 ## Related topics
 
 
-[DMAcc configuration service provider](dmacc-configuration-service-provider.md)
+[DMAcc configuration service provider](dmacc-csp.md)
 
  
 

@@ -9,13 +9,10 @@ ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 
 # CustomDeviceUI CSP
 
-
-> **Note**  This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
-
- 
-
 The CustomDeviceUI configuration service provider allows OEMs to implement their custom foreground application, as well as the background tasks to run on an IoT device running IoT Core. Only one foreground application is supported per device. Multiple background tasks are supported.
 The following diagram shows the CustomDeviceUI configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
+
+> **Note**  This configuration service provider only applies to Windows 10 IoT Core (IoT Core).
 
 ![customdeviceui csp](images/provisioning-csp-customdeviceui.png)
 

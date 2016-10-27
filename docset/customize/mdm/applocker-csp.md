@@ -13,7 +13,7 @@ ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
 > **Note**  
-When you create a list of allowed apps, all [inbox apps](#inbox-apps) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+When you create a list of allowed apps, all [inbox apps](#inbox-apps-and-components) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 
 In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 
@@ -32,7 +32,7 @@ Defines the root node for the AppLocker configuration service provider.
 Defines restrictions for applications.
 
 > **Note**  
-When you create a list of allowed apps, all [inbox apps](#inbox-apps) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+When you create a list of allowed apps, all [inbox apps](#inbox-apps-and-components) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 
 In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 
@@ -337,7 +337,7 @@ The product name is first part of the PackageFullName followed by the version nu
 
  
 
-## <a href="" id="inbox-apps"></a>Inbox apps and components
+## <a href="" id="inbox-apps-and-components"></a>Inbox apps and components
 
 
 The following list shows the apps that may be included in the inbox.
@@ -757,7 +757,7 @@ The following list shows the apps that may be included in the inbox.
 The following example for Windows 10 Mobile denies all apps and allows the following apps:
 
 -   [settings app that rely on splash apps](#settingssplashapps)
--   most of the [inbox apps](#inbox-apps), but not all.
+-   most of the [inbox apps](#inbox-apps-and-components), but not all.
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
