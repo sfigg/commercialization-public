@@ -31,7 +31,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <tbody>
 <tr class="odd">
 <td><p><em>LoadWeight</em></p></td>
-<td><p>Specifies a number for the load. This number will be applied only if the [EqualLoad](microsoft-windows-networkloadbalancing-coreclustersclusterportrulesportruleequalload.md) setting is set to <strong>false</strong>. If the <code>EqualLoad</code> setting is set to <strong>true</strong>, a default load weight of <strong>50</strong> will be applied to each node in the cluster.</p></td>
+<td><p>Specifies a number for the load. This number will be applied only if the [EqualLoad](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportruleequalload.md) setting is set to <strong>false</strong>. If the <code>EqualLoad</code> setting is set to <strong>true</strong>, a default load weight of <strong>50</strong> will be applied to each node in the cluster.</p></td>
 </tr>
 </tbody>
 </table>
@@ -46,12 +46,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [Portrules](microsoft-windows-networkloadbalancing-coreclustersclusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-coreclustersclusterportrulesportrule.md) | **LoadWeight**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md) | **LoadWeight**
 
 ## Applies To
 
 
-For list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -65,7 +65,7 @@ The following example specifies that the load weight for the cluster is 100.
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-coreclustersclusterportrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)
 
  
 

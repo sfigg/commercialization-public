@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md)</p></td>
 <td><p>Specifies an IP address.</p></td>
 </tr>
 </tbody>
@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | **NameServerList**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | **NameServerList**
 
 ## Applies To
 
@@ -64,7 +64,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[Interface](microsoft-windows-netbt-interfacesinterface.md)
+[Interface](microsoft-windows-netbt-interfaces-interface.md)
 
  
 

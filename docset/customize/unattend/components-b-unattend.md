@@ -149,7 +149,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Connects network segments and can create connections between different types of network media.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md)</p></td>
+<td><p>[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md)</p></td>
 <td><p>Includes settings for configuring and binding Network Load Balancing (NLB) to the adapters on an NLB cluster node.</p></td>
 </tr>
 <tr class="odd">

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Interfaces
 
 
-`Interfaces` serves as a container for groups of [Interface](microsoft-windows-netbt-interfacesinterface.md)-specific settings.
+`Interfaces` serves as a container for groups of [Interface](microsoft-windows-netbt-interfaces-interface.md)-specific settings.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-netbt-interfacesinterface.md)</p></td>
+<td><p>[Interface](microsoft-windows-netbt-interfaces-interface.md)</p></td>
 <td><p>Contains all settings for a single network interface.</p></td>
 </tr>
 </tbody>

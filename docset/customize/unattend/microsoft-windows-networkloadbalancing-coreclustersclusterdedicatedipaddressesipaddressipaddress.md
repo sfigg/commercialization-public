@@ -48,12 +48,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md) | **IpAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md) | **IpAddress**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output specifies a host's unique IP address.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md)
+[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md)
 
  
 

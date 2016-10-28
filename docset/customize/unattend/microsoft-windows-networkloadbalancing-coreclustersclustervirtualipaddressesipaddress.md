@@ -30,7 +30,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddresskey.md)</p></td>
 <td><p>Specifies the name of the virtual IP address.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -41,11 +41,11 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddressipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddressipaddress.md)</p></td>
 <td><p>Specifies the IP address for the cluster's virtual IP address.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddressnetworkmask.md)</p></td>
+<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddressnetworkmask.md)</p></td>
 <td><p>Specifies the network mask for the cluster's virtual IP address.</p></td>
 </tr>
 </tbody>
@@ -61,12 +61,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddresses.md) | **IPAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddresses.md) | **IPAddress**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -83,7 +83,7 @@ The following XML output specifies details about the cluster's virtual IP addres
 ## Related topics
 
 
-[VirtualIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddresses.md)
+[VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddresses.md)
 
  
 

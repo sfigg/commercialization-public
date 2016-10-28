@@ -18,7 +18,7 @@ ms.sitesec: msdn
 **Note**  
 -   This XML attribute does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this IPAddress to the answer file.
 
--   The value for Key is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md) element. The attribute wcm:keyValue is used to identify multiple IP address list items. For example, you can specify three different IP addresses by using the Key values of Ip1, Ip2, and Ip3.
+-   The value for Key is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md) element. The attribute wcm:keyValue is used to identify multiple IP address list items. For example, you can specify three different IP addresses by using the Key values of Ip1, Ip2, and Ip3.
 
  
 
@@ -48,12 +48,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md) | **Key**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md) | **Key**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -70,7 +70,7 @@ The following XML output specifies the name of the IP address as "Ip1".
 ## Related topics
 
 
-[IpAddress](microsoft-windows-networkloadbalancing-coreclustersclusterdedicatedipaddressesipaddress.md)
+[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md)
 
  
 

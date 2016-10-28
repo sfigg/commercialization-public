@@ -30,15 +30,15 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Master](microsoft-windows-networkloadbalancing-coreclustersclusterbdateammaster.md)</p></td>
+<td><p>[Master](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateammaster.md)</p></td>
 <td><p>Specifies whether the host is the master.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ReverseHash](microsoft-windows-networkloadbalancing-coreclustersclusterbdateamreversehash.md)</p></td>
+<td><p>[ReverseHash](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateamreversehash.md)</p></td>
 <td><p>Specifies whether the adapter reverses the source and destination IP addresses and ports before making load-balancing decisions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Team](microsoft-windows-networkloadbalancing-coreclustersclusterbdateamteam.md)</p></td>
+<td><p>[Team](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateamteam.md)</p></td>
 <td><p>Specifies a valid Globally Unique Identifier (GUID) that identifies a BDA team.</p></td>
 </tr>
 </tbody>
@@ -54,12 +54,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | **BDATeam**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | **BDATeam**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -77,7 +77,7 @@ The following XML output specifies details about a BDA team.
 ## Related topics
 
 
-[Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md)
+[Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
 
  
 

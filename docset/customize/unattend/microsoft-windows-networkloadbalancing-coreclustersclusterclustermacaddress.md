@@ -34,7 +34,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies the cluster MAC address be used when configuring a unicast cluster. This MAC address will replace the adapter's physical MAC address.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>You must set [ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-coreclustersclusterclusteriptoclustermacenabled.md) to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
+<p>You must set [ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-clusterclusteriptoclustermacenabled.md) to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
 </div>
 <div>
  
@@ -55,12 +55,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | **ClusterMacAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | **ClusterMacAddress**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -74,7 +74,7 @@ The following XML output shows how to specify a cluster MAC address.
 ## Related topics
 
 
-[Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md)
+[Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
 
  
 

@@ -44,7 +44,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | **NetbiosOptions**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | **NetbiosOptions**
 
 ## Applies To
 
@@ -72,7 +72,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[Interface](microsoft-windows-netbt-interfacesinterface.md)
+[Interface](microsoft-windows-netbt-interfaces-interface.md)
 
  
 

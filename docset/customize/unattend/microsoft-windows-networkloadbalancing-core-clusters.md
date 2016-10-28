@@ -30,7 +30,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md)</p></td>
+<td><p>[Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)</p></td>
 <td><p>Specifies details about a cluster, such as its interface, IP address, port rules, and so on.</p></td>
 </tr>
 </tbody>
@@ -46,12 +46,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | **Clusters**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | **Clusters**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -154,7 +154,7 @@ The following XML output for the `Clusters` setting shows how to set up a cluste
 ## Related topics
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md)
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md)
 
  
 

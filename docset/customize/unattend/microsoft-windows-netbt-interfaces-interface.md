@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-netbt-interfacesinterfaceidentifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-netbt-interfaces-interfaceidentifier.md)</p></td>
 <td><p>Specifies the interface to apply to other settings in <code>Interface</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[NameServerList](microsoft-windows-netbt-interfacesinterfacenameserverlist.md)</p></td>
+<td><p>[NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md)</p></td>
 <td><p>Specifies the list of name servers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetbiosOptions](microsoft-windows-netbt-interfacesinterfacenetbiosoptions.md)</p></td>
+<td><p>[NetbiosOptions](microsoft-windows-netbt-interfaces-interfacenetbiosoptions.md)</p></td>
 <td><p>Specifies security settings for the NetBIOS service.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | **Interface**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | **Interface**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[Interfaces](microsoft-windows-netbt-interfaces.md)
+[Interfaces](microsoft-windows-netbt-interfaces-.md)
 
  
 

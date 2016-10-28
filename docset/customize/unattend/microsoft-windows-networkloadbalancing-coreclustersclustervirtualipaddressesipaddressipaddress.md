@@ -48,12 +48,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-coreclusters.md) | [Cluster](microsoft-windows-networkloadbalancing-coreclusterscluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md) | **IPAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md) | **IPAddress**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetworkLoadBalancing-Core](microsoft-windows-networkloadbalancing-core-win7-microsoft-windows-networkloadbalancing-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output specifies the IP address for the virtual IP address.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-networkloadbalancing-coreclustersclustervirtualipaddressesipaddress.md)
+[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md)
 
  
 
