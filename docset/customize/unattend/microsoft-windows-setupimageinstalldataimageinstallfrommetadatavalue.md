@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value for the [Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md) setting. For information about using this setting, see [MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md).
+`Value` specifies the value for the [Key](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatakey.md) setting. For information about using this setting, see [MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.md).
 
 ## Values
 
@@ -41,12 +41,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | [InstallFrom](microsoft-windows-setupimageinstalldataimageinstallfrom.md) | [MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md) | **Value**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.md) | **Value**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Examples
 
@@ -81,9 +81,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.md)
 
-[Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatakey.md)
 
  
 

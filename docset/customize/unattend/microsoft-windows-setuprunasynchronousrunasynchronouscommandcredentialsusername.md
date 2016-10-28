@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Username
 
 
-`Username` specifies the user name of the account used to authenticate access to the location specified by [Path](microsoft-windows-setuprunasynchronousrunasynchronouscommandpath.md).
+`Username` specifies the user name of the account used to authenticate access to the location specified by [Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md).
 
-All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in the system context.
+All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md) | **Username**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md) | **Username**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to configure asynchronous commands to run.
 ## Related topics
 
 
-[Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md)
 
  
 

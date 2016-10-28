@@ -42,12 +42,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | **Order**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | **Order**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -101,7 +101,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[DataImage](microsoft-windows-setupimageinstalldataimage.md)
+[DataImage](microsoft-windows-setup-imageinstalldataimage.md)
 
  
 

@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setupimageinstallosimageinstallfromcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-imageinstallosimageinstallfromcredentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setupimageinstallosimageinstallfromcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-imageinstallosimageinstallfromcredentialspassword.md)</p></td>
 <td><p>Specifies the password of the user account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setupimageinstallosimageinstallfromcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-imageinstallosimageinstallfromcredentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>
@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [OSImage](microsoft-windows-setupimageinstallosimage.md) | [InstallFrom](microsoft-windows-setupimageinstallosimageinstallfrom.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](mmicrosoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](mmicrosoft-windows-setup-.md).
 
 ## XML Example
 
@@ -108,7 +108,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setupimageinstallosimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md)
 
  
 

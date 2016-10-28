@@ -135,15 +135,15 @@ The following settings are no longer available in Windows 10, version 1607:
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md)\InPlaceCrypto</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)\InPlaceCrypto</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md)\ModifiedWriteMaximum</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)\ModifiedWriteMaximum</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) \ReadDoubleBuffering</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md) \ReadDoubleBuffering</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">

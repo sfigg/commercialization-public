@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Path` specifies the path and the name of the command to execute.
 
-All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in the system context.
+All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -28,7 +28,7 @@ All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in
 <tbody>
 <tr class="odd">
 <td><p><em>Path_to_command</em></p></td>
-<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a UNC path. If the path is a UNC path, [Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md) must be specified. <em>Path_to_command</em> is a string.</p></td>
+<td><p>Specifies the path and the file name of the command to execute asynchronously. The path can be a local path or a UNC path. If the path is a UNC path, [Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md) must be specified. <em>Path_to_command</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | **Path**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) | **Path**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to configure asynchronous commands to run.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)
 
  
 

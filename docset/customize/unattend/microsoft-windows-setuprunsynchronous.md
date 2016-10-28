@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Synchronous commands start in the order that you specify in the unattended installation answer file, and each command must finish before the next command starts.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) instead. `RunSynchronous` commands always run before RunAsynchronous commands in the same pass.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) instead. `RunSynchronous` commands always run before RunAsynchronous commands in the same pass.
 
 All `RunSynchronous` commands run in the system context.
 
@@ -31,7 +31,7 @@ All `RunSynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md)</p></td>
+<td><p>[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run synchronously.</p></td>
 </tr>
 </tbody>
@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **RunSynchronous**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **RunSynchronous**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -84,7 +84,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

@@ -15,10 +15,10 @@ ms.sitesec: msdn
 
 `TCGSecurityActivationDisabled` specifies whether Windows automatically configures encrypted drives (eDrives), also known as encrypted hard disk drives (eHDDs).
 
-`TCGSecurityActivationDisabled` sets the Group Policy administrative template setting: **Do not automatically encrypt files moved to encrypted folders**. This Group Policy setting is used after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning. Use the [DisableEncryptedDiskProvisioning](microsoft-windows-setupdiskconfigurationdisableencrypteddiskprovisioning.md) unattend setting for configuring the operating system installation for the target HDD.
+`TCGSecurityActivationDisabled` sets the Group Policy administrative template setting: **Do not automatically encrypt files moved to encrypted folders**. This Group Policy setting is used after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning. Use the [DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfigurationdisableencrypteddiskprovisioning.md) unattend setting for configuring the operating system installation for the target HDD.
 
 **Note**  
-The eDrive must be configured in the unattend file by using the settings in Microsoft-Windows-Setup\\DiskConfiguration\\Disk. If the drives are configured manually, then the eDrive configuration policy may not be properly configured.
+The eDrive must be configured in the unattend file by using the settings in microsoft-windows-setup-\\DiskConfiguration\\Disk. If the drives are configured manually, then the eDrive configuration policy may not be properly configured.
 
  
 
@@ -75,9 +75,9 @@ The following XML output shows how to configure Windows so that Windows does not
 
 [Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm-win8-microsoft-windows-enhancedstorage-adm.md)
 
-[DisableEncryptedDiskProvisioning](microsoft-windows-setupdiskconfigurationdisableencrypteddiskprovisioning.md)
+[DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfigurationdisableencrypteddiskprovisioning.md)
 
-[DiskConfiguration](microsoft-windows-setupdiskconfiguration.md)
+[DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
 
  
 

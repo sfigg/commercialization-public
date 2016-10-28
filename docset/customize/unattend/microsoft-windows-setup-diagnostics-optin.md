@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [Diagnostics](microsoft-windows-setupdiagnostics.md) | **OptIn**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Diagnostics](microsoft-windows-setup-diagnostics.md) | **OptIn**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -66,7 +66,7 @@ The following XML output shows how to change this setting so that no information
 ## Related topics
 
 
-[Diagnostics](microsoft-windows-setupdiagnostics.md)
+[Diagnostics](microsoft-windows-setup-diagnostics.md)
 
  
 

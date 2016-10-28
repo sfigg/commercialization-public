@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ComplianceCheck](microsoft-windows-setupcompliancecheck.md) | **DisplayReport**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ComplianceCheck](microsoft-windows-setup-compliancecheck.md) | **DisplayReport**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output specifies that the installation is to run in guaranteed
 ## Related topics
 
 
-[ComplianceCheck](microsoft-windows-setupcompliancecheck.md)
+[ComplianceCheck](microsoft-windows-setup-compliancecheck.md)
 
  
 

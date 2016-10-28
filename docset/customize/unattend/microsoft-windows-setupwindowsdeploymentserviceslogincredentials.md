@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-windowsdeploymentserviceslogincredentialsdomain.md)</p></td>
 <td><p>Specifies the domain.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setupwindowsdeploymentserviceslogincredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-windowsdeploymentserviceslogincredentialspassword.md)</p></td>
 <td><p>Specifies the password.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-windowsdeploymentserviceslogincredentialsusername.md)</p></td>
 <td><p>Specifies the user name.</p></td>
 </tr>
 </tbody>
@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -106,7 +106,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md)
+[Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md)
 
  
 

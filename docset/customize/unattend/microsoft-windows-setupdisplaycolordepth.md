@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [Display](microsoft-windows-setupdisplay.md) | **ColorDepth**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display.md) | **ColorDepth**
 
 ## Applies To
 
@@ -60,7 +60,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output sets the display resolution to 640x480, with 16-bit col
 ## Related topics
 
 
-[Display](microsoft-windows-setupdisplay.md)
+[Display](microsoft-windows-setup-display.md)
 
  
 

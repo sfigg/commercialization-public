@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances to display the user interface (UI) for disk configuration. Settings in [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) are processed before the UI is displayed, but setting this value to **Always** or **OnError** gives notification of success or failure.
+`WillShowUI` specifies in what circumstances to display the user interface (UI) for disk configuration. Settings in [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) are processed before the UI is displayed, but setting this value to **Always** or **OnError** gives notification of success or failure.
 
 ## Values
 
@@ -50,12 +50,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -111,7 +111,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[DiskConfiguration](microsoft-windows-setupdiskconfiguration.md)
+[DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
 
  
 

@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Domain
 
 
-`Domain` specifies the domain of the account used to authentication access to the location specified by [Path](microsoft-windows-setuprunsynchronousrunsynchronouscommandpath.md).
+`Domain` specifies the domain of the account used to authentication access to the location specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
 
-All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in the system context.
+All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | [Credentials](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentials.md) | **Domain**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -82,7 +82,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[Credentials](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md)
 
  
 

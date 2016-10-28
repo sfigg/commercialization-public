@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **EnableFirewall**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **EnableFirewall**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -66,7 +66,7 @@ The following XML output disables the Windows Firewall.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md)
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md)
 
  
 

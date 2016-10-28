@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Size
 
 
-`Size` specifies the size, in megabytes, of the page file to create for [PageFile](microsoft-windows-setuppagefile.md).
+`Size` specifies the size, in megabytes, of the page file to create for [PageFile](microsoft-windows-setup-pagefile.md).
 
 ## Values
 
@@ -42,12 +42,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [PageFile](microsoft-windows-setuppagefile.md) | **Size**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [PageFile](microsoft-windows-setup-pagefile.md) | **Size**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -64,7 +64,7 @@ The following XML output shows how to create a page file.
 ## Related topics
 
 
-[PageFile](microsoft-windows-setuppagefile.md)
+[PageFile](microsoft-windows-setup-pagefile.md)
 
  
 

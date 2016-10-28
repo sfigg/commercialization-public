@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DynamicUpdate](microsoft-windows-setupdynamicupdate.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DynamicUpdate](microsoft-windows-setup-dynamicupdate.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -74,7 +74,7 @@ The following XML output shows the value for the `WillShowUI` setting.
 ## Related topics
 
 
-[DynamicUpdate](microsoft-windows-setupdynamicupdate.md)
+[DynamicUpdate](microsoft-windows-setup-dynamicupdate.md)
 
  
 

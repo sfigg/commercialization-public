@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setupwindowsdeploymentserviceslogincredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md)</p></td>
 <td><p>Specifies the credentials for Windows Deployment Services login.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setupwindowsdeploymentservicesloginwillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservicesloginwillshowui.md)</p></td>
 <td><p>Specifies in what circumstances the UI is displayed for Windows Deployment Services login.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | **Login**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **Login**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -102,7 +102,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md)
+[WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md)
 
  
 

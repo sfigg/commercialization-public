@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ModifyPartitions` specifies one or more partitions to modify on a hard disk.
 
-[CreatePartitions](microsoft-windows-setupdiskconfigurationdiskcreatepartitions.md) settings are applied before `ModifyPartitions` settings.
+[CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) settings are applied before `ModifyPartitions` settings.
 
 ## Child Elements
 
@@ -27,7 +27,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md)</p></td>
+<td><p>[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)</p></td>
 <td><p>Specifies the order, size, and type of a single partition to modify.</p>
 <p><code>ModifyPartitions</code> settings can have one or more <code>ModifyPartition</code> child elements, one for each partition to be configured.</p></td>
 </tr>
@@ -44,12 +44,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | **ModifyPartitions**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | **ModifyPartitions**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -121,7 +121,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Disk](microsoft-windows-setupdiskconfigurationdisk.md)
+[Disk](microsoft-windows-setup-diskconfigurationdisk.md)
 
  
 

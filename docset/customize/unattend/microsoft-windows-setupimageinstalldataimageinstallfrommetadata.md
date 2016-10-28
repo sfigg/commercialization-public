@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `MetaData` specifies a data image in a Windows image (.wim) file.
 
-Use the MetaData\\[Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md) and MetaData\\[Value](microsoft-windows-setupimageinstalldataimageinstallfrommetadatavalue.md) settings together to select an image based on the index, the name, or the description of the data image.
+Use the MetaData\\[Key](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatakey.md) and MetaData\\[Value](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatavalue.md) settings together to select an image based on the index, the name, or the description of the data image.
 
 ## To determine what images are available to be installed
 
@@ -60,11 +60,11 @@ Size : 3,234,567 bytes
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md)</p></td>
+<td><p>[Key](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatakey.md)</p></td>
 <td><p>Required. Specifies whether the image index, name, or description is used to specify the metadata for an image in a .wim file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-setupimageinstalldataimageinstallfrommetadatavalue.md)</p></td>
+<td><p>[Value](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatavalue.md)</p></td>
 <td><p>Required. Specifies the value of the <code>Key</code> element for the data image.</p></td>
 </tr>
 </tbody>
@@ -80,12 +80,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | [InstallFrom](microsoft-windows-setupimageinstalldataimageinstallfrom.md) | **MetaData**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md) | **MetaData**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md).
 
 ## XML Examples
 
@@ -172,11 +172,11 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setupimageinstalldataimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md)
 
-[Key](microsoft-windows-setupimageinstalldataimageinstallfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatakey.md)
 
-[Value](microsoft-windows-setupimageinstalldataimageinstallfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstalldataimageinstallfrommetadatavalue.md)
 
  
 

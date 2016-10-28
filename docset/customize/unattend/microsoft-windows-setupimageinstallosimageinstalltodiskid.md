@@ -42,12 +42,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [OSImage](microsoft-windows-setupimageinstallosimage.md) | [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) | **DiskID**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md) | **DiskID**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -101,7 +101,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md)
+[InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md)
 
  
 

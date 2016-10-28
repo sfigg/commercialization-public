@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials used when accessing an application over a network. `Credentials` is used to authenticate access to a location specified by [Path](microsoft-windows-setuprunsynchronousrunsynchronouscommandpath.md).
+`Credentials` specifies the credentials used when accessing an application over a network. `Credentials` is used to authenticate access to a location specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
 
-All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in the system context.
+All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
 ## Child Elements
 
@@ -27,15 +27,15 @@ All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentialspassword.md)</p></td>
 <td><p>Specifies the password of the account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UserName](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentialsusername.md)</p></td>
+<td><p>[UserName](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>
@@ -51,12 +51,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -88,7 +88,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
 
  
 

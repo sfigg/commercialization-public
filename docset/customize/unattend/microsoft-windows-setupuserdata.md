@@ -25,19 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AcceptEula](microsoft-windows-setupuserdataaccepteula.md)</p></td>
+<td><p>[AcceptEula](microsoft-windows-setup-userdataaccepteula.md)</p></td>
 <td><p>Specifies whether to automatically accept the Microsoft Software License Terms.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FullName](microsoft-windows-setupuserdatafullname.md)</p></td>
+<td><p>[FullName](microsoft-windows-setup-userdatafullname.md)</p></td>
 <td><p>Specifies the name of the end user.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Organization](microsoft-windows-setupuserdataorganization.md)</p></td>
+<td><p>[Organization](microsoft-windows-setup-userdataorganization.md)</p></td>
 <td><p>Specifies the name of the organization that owns the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProductKey](microsoft-windows-setupuserdataproductkey.md)</p></td>
+<td><p>[ProductKey](microsoft-windows-setup-userdataproductkey.md)</p></td>
 <td><p>Specifies the product key to use, which determines the edition of Windows to install.</p></td>
 </tr>
 </tbody>
@@ -53,12 +53,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **UserData**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **UserData**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to set user data.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

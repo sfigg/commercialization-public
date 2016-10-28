@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md) | **Restart**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | **Restart**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -66,7 +66,7 @@ The following XML output shows how to set the computer to shut down after the wi
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Disk
 
 
-`Disk` specifies the disk settings to add or to edit on the destination computer. `Disk` is a list item type, and each instance of `Disk` in an unattended installation answer file applies to a single hard disk (specified by [DiskID](microsoft-windows-setupdiskconfigurationdiskdiskid.md)).
+`Disk` specifies the disk settings to add or to edit on the destination computer. `Disk` is a list item type, and each instance of `Disk` in an unattended installation answer file applies to a single hard disk (specified by [DiskID](microsoft-windows-setup-diskconfigurationdiskdiskid.md)).
 
 ## Child Elements
 
@@ -25,19 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreatePartitions](microsoft-windows-setupdiskconfigurationdiskcreatepartitions.md)</p></td>
-<td><p>Specifies a list of [CreatePartition](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartition.md) items.</p></td>
+<td><p>[CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md)</p></td>
+<td><p>Specifies a list of [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) items.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DiskID](microsoft-windows-setupdiskconfigurationdiskdiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-diskconfigurationdiskdiskid.md)</p></td>
 <td><p>Specifies the identification number of the disk to edit.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md)</p></td>
-<td><p>Specifies a list of [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) items.</p></td>
+<td><p>[ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md)</p></td>
+<td><p>Specifies a list of [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) items.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillWipeDisk](microsoft-windows-setupdiskconfigurationdiskwillwipedisk.md)</p></td>
+<td><p>[WillWipeDisk](microsoft-windows-setup-diskconfigurationdiskwillwipedisk.md)</p></td>
 <td><p>Specifies whether to reformat the disk.</p></td>
 </tr>
 </tbody>
@@ -53,12 +53,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | **Disk**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | **Disk**
 
 ## Applies To
 
 
-For a list of supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Examples
 
@@ -159,7 +159,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[DiskConfiguration](microsoft-windows-setupdiskconfiguration.md)
+[DiskConfiguration](microsoft-windows-setup-diskconfiguration.md)
 
  
 

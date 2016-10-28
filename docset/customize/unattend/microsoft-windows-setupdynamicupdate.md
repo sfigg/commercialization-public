@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Enable](microsoft-windows-setupdynamicupdateenable.md)</p></td>
+<td><p>[Enable](microsoft-windows-setup-dynamicupdateenable.md)</p></td>
 <td><p>Specifies whether to enable dynamic updates for installation.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setupdynamicupdatewillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-dynamicupdatewillshowui.md)</p></td>
 <td><p>Specifies in what circumstances to show the user interface (UI) for dynamic updates.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **DynamicUpdate**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **DynamicUpdate**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output shows the value for the `DynamicUpdate` setting.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
 [Dynamic Update and Resulting Internet Communication in Windows 7 and Windows Server 2008 R2](http://go.microsoft.com/fwlink/?LinkId=189355)
 

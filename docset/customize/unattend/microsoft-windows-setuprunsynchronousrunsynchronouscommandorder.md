@@ -13,13 +13,13 @@ ms.sitesec: msdn
 # Order
 
 
-`Order` specifies the order in which the [RunSynchronous](microsoft-windows-setuprunsynchronous.md) command is run.
+`Order` specifies the order in which the [RunSynchronous](microsoft-windows-setup-runsynchronous.md) command is run.
 
 Synchronous commands start in the order specified in the unattended installation answer file, and each command must finish before the next command starts.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) instead.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) instead.
 
-All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in the system context.
+All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Order**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | **Order**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -84,9 +84,9 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
 
-[RunAsynchronous](microsoft-windows-setuprunasynchronous.md)
+[RunAsynchronous](microsoft-windows-setup-runasynchronous.md)
 
  
 

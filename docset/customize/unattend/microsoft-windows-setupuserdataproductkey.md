@@ -30,12 +30,12 @@ For more information about product keys, see the topic [Work with Product Keys a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Setup\UserData\ProductKey\[Key](microsoft-windows-setupuserdataproductkeykey.md)</p></td>
+<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-shell-setupproductkey.md)</p></td>
-<td><p>Specifies a product key to activate Windows with. This setting can be used with Microsoft-Windows-Setup\UserData\ProductKey\Key, and the two product keys can be different.</p>
+<td><p>Specifies a product key to activate Windows with. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\Key, and the two product keys can be different.</p>
 <p>If you are using a Volume License Multiple Activation Key (MAK), you must specify the MAK by using this setting.</p></td>
 </tr>
 </tbody>
@@ -53,11 +53,11 @@ For more information about product keys, see the topic [Work with Product Keys a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-setupuserdataproductkeykey.md)</p></td>
+<td><p>[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
 <td><p>Specifies the product key.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setupuserdataproductkeywillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-userdataproductkeywillshowui.md)</p></td>
 <td><p>Specifies the circumstances in which the user interface (UI) for the product key will be displayed.</p></td>
 </tr>
 </tbody>
@@ -73,12 +73,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | **ProductKey**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [UserData](microsoft-windows-setup-userdata.md) | **ProductKey**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -100,7 +100,7 @@ The following XML output shows how to set user data.
 ## Related topics
 
 
-[UserData](microsoft-windows-setupuserdata.md)
+[UserData](microsoft-windows-setup-userdata.md)
 
  
 

@@ -56,7 +56,7 @@ UEFI/GPT-based disks do not support the `Extend` setting.
 
 -   **To specify a newly-created partition to fill the remainder of the hard disk**
 
-    Set `CreatePartitions:`[Extend](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionextend.md) to `true`, and leave `ModifyPartitions:Extend` empty.
+    Set `CreatePartitions:`[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md) to `true`, and leave `ModifyPartitions:Extend` empty.
 
 ## Valid Configuration Passes
 
@@ -66,12 +66,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setupdiskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) | **Extend**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Extend**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -244,7 +244,7 @@ The following XML output for the `DiskConfiguration` setting shows how to modify
 ## Related topics
 
 
-[ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md)
+[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)
 
 [How to Configure More Than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 

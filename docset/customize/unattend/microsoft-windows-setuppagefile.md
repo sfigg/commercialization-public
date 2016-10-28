@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-setuppagefilepath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-pagefilepath.md)</p></td>
 <td><p>Specifies the path of the page file to create.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Size](microsoft-windows-setuppagefilesize.md)</p></td>
+<td><p>[Size](microsoft-windows-setup-pagefilesize.md)</p></td>
 <td><p>Specifies the size of the page file to create.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **PageFile**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **PageFile**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output shows how to create a page file.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
 
  
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `CreatePartition` specifies a single partition to create on the hard disk.
 
-If you are installing Windows to a blank hard disk, you must use `CreatePartition` and [ModifyPartition](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartition.md) to create and to format partitions on the disk. You must also add values to either [InstallTo](microsoft-windows-setupimageinstallosimageinstallto.md) or [InstallToAvailablePartition](microsoft-windows-setupimageinstallosimageinstalltoavailablepartition.md) to specify where to install Windows.
+If you are installing Windows to a blank hard disk, you must use `CreatePartition` and [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) to create and to format partitions on the disk. You must also add values to either [InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md) or [InstallToAvailablePartition](microsoft-windows-setup-imageinstallosimageinstalltoavailablepartition.md) to specify where to install Windows.
 
 ## Child Elements
 
@@ -27,19 +27,19 @@ If you are installing Windows to a blank hard disk, you must use `CreatePartitio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Extend](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionextend.md)</p></td>
+<td><p>[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md)</p></td>
 <td><p>Specifies whether to extend the partition to fill the disk.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Order](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionorder.md)</p></td>
 <td><p>Specifies the creation order for multiple partitions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Size](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionsize.md)</p></td>
+<td><p>[Size](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionsize.md)</p></td>
 <td><p>Specifies the size of the partition to create, in megabytes.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Type](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitiontype.md)</p></td>
+<td><p>[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md)</p></td>
 <td><p>Specifies the type of partition to create. For example, you can specify a primary partition type or an extended partition type.</p></td>
 </tr>
 </tbody>
@@ -55,12 +55,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setupdiskconfigurationdiskcreatepartitions.md) | **CreatePartition**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) | **CreatePartition**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -132,7 +132,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[CreatePartitions](microsoft-windows-setupdiskconfigurationdiskcreatepartitions.md)
+[CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md)
 
  
 

@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](-microsoft-windows-setup.md) | **LogPath**
+[microsoft-windows-setup-](-microsoft-windows-setup-.md) | **LogPath**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output shows how to set the log path.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
 
  
 

@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setupimageinstalldataimageinstallfromcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-imageinstalldataimageinstallfromcredentials.md)</p></td>
 <td><p>Optional. Specifies the credentials to access the data image.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MetaData](microsoft-windows-setupimageinstalldataimageinstallfrommetadata.md)</p></td>
+<td><p>[MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.md)</p></td>
 <td><p>Required. Specifies metadata to select a unique data image from the Windows image (.wim) file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-setupimageinstalldataimageinstallfrompath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-imageinstalldataimageinstallfrompath.md)</p></td>
 <td><p>Required. Specifies the path to the data image to install.</p></td>
 </tr>
 </tbody>
@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | **InstallFrom**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | **InstallFrom**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -108,7 +108,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[DataImage](microsoft-windows-setupimageinstalldataimage.md)
+[DataImage](microsoft-windows-setup-imageinstalldataimage.md)
 
  
 

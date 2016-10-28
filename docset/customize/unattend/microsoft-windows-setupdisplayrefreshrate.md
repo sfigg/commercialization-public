@@ -50,12 +50,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [Display](microsoft-windows-setupdisplay.md) | **RefreshRate**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display.md) | **RefreshRate**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](mmicrosoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](mmicrosoft-windows-setup-.md).
 
 ## XML Example
 
@@ -74,7 +74,7 @@ The following XML output sets the display resolution to 640x480, with 16-bit col
 ## Related topics
 
 
-[Display](microsoft-windows-setupdisplay.md)
+[Display](microsoft-windows-setup-display.md)
 
  
 

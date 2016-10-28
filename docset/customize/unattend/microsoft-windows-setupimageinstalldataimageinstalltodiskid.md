@@ -28,7 +28,7 @@ ms.sitesec: msdn
 <td><p><em>Disk_identification_number</em></p></td>
 <td><p>Specifies the identification number of the disk on which to install a data image. <em>Disk_identification_number</em> is an integer.</p>
 <p>Disk IDs start with 0. For example, to specify the first disk, assign <code>DiskID</code> to <strong>0</strong>. For the second disk, assign <code>DiskID</code> to <strong>1</strong>.</p>
-<p>If you are installing a data image to a computer with a single disk, assign <code>DiskID</code> to <strong>0</strong>. In contrast, [PartitionID](microsoft-windows-setupimageinstalldataimageinstalltopartitionid.md) starts with <strong>1</strong> for the first partition.</p></td>
+<p>If you are installing a data image to a computer with a single disk, assign <code>DiskID</code> to <strong>0</strong>. In contrast, [PartitionID](microsoft-windows-setup-imageinstalldataimageinstalltopartitionid.md) starts with <strong>1</strong> for the first partition.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [DataImage](microsoft-windows-setupimageinstalldataimage.md) | [InstallTo](microsoft-windows-setupimageinstalldataimageinstallto.md) | **DiskID**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallTo](microsoft-windows-setup-imageinstalldataimageinstallto.md) | **DiskID**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -102,7 +102,7 @@ The following XML output shows how to set the `ImageInstall` setting if you are 
 ## Related topics
 
 
-[InstallTo](microsoft-windows-setupimageinstalldataimageinstallto.md)
+[InstallTo](microsoft-windows-setup-imageinstalldataimageinstallto.md)
 
  
 

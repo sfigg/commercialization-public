@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md) | [InstallImage](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimage.md) | **ImageName**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | [InstallImage](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimage.md) | **ImageName**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -100,7 +100,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[InstallImage](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimage.md)
+[InstallImage](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimage.md)
 
  
 

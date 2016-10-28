@@ -60,7 +60,7 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 <td><p>Sets the touchscreen behavior for a laptop, a PC with permanently attached keyboard available at any time for typing comfortably</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-SecureStartup-FilterDriver\[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriverpreventdeviceencryption.md)</p></td>
+<td><p>microsoft-windows-securestartup-filterdriver-\[PreventDeviceEncryption](microsoft-windows-securestartup-filterdriver-preventdeviceencryption.md)</p></td>
 <td><p>Prevents encrypting the operating system drive and any fixed data drive using Windows BitLocker Drive Encryption.</p></td>
 </tr>
 <tr class="odd">
@@ -209,15 +209,15 @@ The following Windows 8 and Windows Server 2012 settings are not supported in 
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-SecureStartup-FilterDriver\InPlaceCrypto</p></td>
+<td><p>microsoft-windows-securestartup-filterdriver-\InPlaceCrypto</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-SecureStartup-FilterDriver\ModifiedWriteMaximum</p></td>
+<td><p>microsoft-windows-securestartup-filterdriver-\ModifiedWriteMaximum</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-SecureStartup-FilterDriver \ReadDoubleBuffering</p></td>
+<td><p>microsoft-windows-securestartup-filterdriver- \ReadDoubleBuffering</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 </tbody>

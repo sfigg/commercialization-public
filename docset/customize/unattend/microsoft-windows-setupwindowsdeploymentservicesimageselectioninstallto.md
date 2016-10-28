@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstalltodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstalltodiskid.md)</p></td>
 <td><p>Specifies the disk ID of the disk to which the image is installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstalltopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstalltopartitionid.md)</p></td>
 <td><p>Specifies the partition ID of the partition to which the image is installed.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md) | **InstallTo**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | **InstallTo**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -102,7 +102,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md)
+[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)
 
  
 

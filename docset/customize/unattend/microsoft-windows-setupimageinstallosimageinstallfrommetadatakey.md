@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` is used with the setting: [Value](microsoft-windows-setupimageinstallosimageinstallfrommetadatavalue.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. A Windows image may be selected by its index number, its name, or its description.
+`Key` is used with the setting: [Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. A Windows image may be selected by its index number, its name, or its description.
 
 ## Values
 
@@ -57,12 +57,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md) | [ImageInstall](microsoft-windows-setupimageinstall.md) | [OSImage](microsoft-windows-setupimageinstallosimage.md) | [InstallFrom](microsoft-windows-setupimageinstallosimageinstallfrom.md) | [MetaData](microsoft-windows-setupimageinstallosimageinstallfrommetadata.md) | **Key**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md) | **Key**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Examples
 
@@ -97,9 +97,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setupimageinstallosimageinstallfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md)
 
-[Value](microsoft-windows-setupimageinstallosimageinstallfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md)
 
  
 

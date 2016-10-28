@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MaxEncryptRequests
 
 
-The `MaxEncryptRequests` setting works with other settings in the [Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md) component to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC). Do not use these settings for standard 32-bit or 64-bit hardware architectures.
+The `MaxEncryptRequests` setting works with other settings in the [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md) component to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC). Do not use these settings for standard 32-bit or 64-bit hardware architectures.
 
 These settings are intended for OEM manufacturing only. For specific guidance on using these settings, contact Microsoft.
 
@@ -43,12 +43,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md) | **MaxEncryptRequests**
+[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver-.md) | **MaxEncryptRequests**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md).
 
 ## XML Example
 
@@ -56,7 +56,7 @@ For a list of the Windows editions and architectures that this component support
 The following example specifies recommended values for Bitlocker optimizations on an x86 System on a Chip.
 
 ``` syntax
-<component name="Microsoft-Windows-SecureStartup-FilterDriver" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<component name="microsoft-windows-securestartup-filterdriver-" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <BytesDecryptedInDiskRequestOverhead>262144</BytesDecryptedInDiskRequestOverhead>
   <InPlaceCrypto>0</InPlaceCrypto>
   <MaxCryptoRequestsPerIo>4</MaxCryptoRequestsPerIo>
@@ -76,7 +76,7 @@ The following example specifies recommended values for Bitlocker optimizations o
 ## Related topics
 
 
-[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver-win8-microsoft-windows-securestartup-filterdriver.md)
+[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)
 
  
 

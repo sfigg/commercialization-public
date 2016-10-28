@@ -15,9 +15,9 @@ ms.sitesec: msdn
 
 `Order` specifies a unique value for each AsynchronousCommand.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands instead.
 
-All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in the system context.
+All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | **Order**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) | **Order**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -87,9 +87,9 @@ The following XML output shows how to configure asynchronous commands to run.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)
 
-[RunSynchronous](microsoft-windows-setuprunsynchronous.md)
+[RunSynchronous](microsoft-windows-setup-runsynchronous.md)
 
  
 

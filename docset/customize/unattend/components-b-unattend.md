@@ -189,7 +189,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Enables a user who has a computer problem to receive assistance from another person who is remotely located.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-SecureStartup-FilterDriver](microsoft-windows-securestartup-filterdriver.md)</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver-.md)</p></td>
 <td><p>Optimizes BitLocker for PCs with hardware architectures such as System on a Chip (SoC).</p></td>
 </tr>
 <tr class="odd">
@@ -205,7 +205,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Specifies whether the Server Manager application opens when the end user logs on for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Setup](microsoft-windows-setup.md)</p></td>
+<td><p>[microsoft-windows-setup-](microsoft-windows-setup-.md)</p></td>
 <td><p>Contains settings to select the Windows image that you install, to configure the disk that you install Windows to, and to configure the Windows PE operating system.</p></td>
 </tr>
 <tr class="odd">
@@ -353,7 +353,7 @@ The following components are deprecated in Windows 10 and Windows Server 2016.
 <td><p>Removed. Use Microsoft-Windows-Security-SPP-UX instead.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Security-SPP-UX-SPPCC](microsoft-windows-security-spp-ux-sppcc.md)</p></td>
+<td><p>[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc-.md)</p></td>
 <td><p>Deprecated. Do not use.</p></td>
 </tr>
 <tr class="even">

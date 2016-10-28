@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunAsynchronousCommand` specifies a single command to run during the windowsPE configuration pass.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) instead.
 
 All `RunAsynchronous` commands run in the system context.
 
@@ -29,15 +29,15 @@ All `RunAsynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md)</p></td>
 <td><p>Specifies the credentials used to access the command if the command is on a network share.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-setuprunasynchronousrunasynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-setup-runasynchronousrunasynchronouscommanddescription.md)</p></td>
 <td><p>Specifies a description of the command to execute.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-setuprunasynchronousrunasynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-runasynchronousrunasynchronouscommandorder.md)</p></td>
 <td><p>Specifies a unique value for each command.</p>
 <div class="alert">
 <strong>Important</strong>  
@@ -48,7 +48,7 @@ All `RunAsynchronous` commands run in the system context.
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-setuprunasynchronousrunasynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md)</p></td>
 <td><p>Specifies the path to the command to execute.</p></td>
 </tr>
 </tbody>
@@ -64,12 +64,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | **RunAsynchronousCommand**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | **RunAsynchronousCommand**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -99,7 +99,7 @@ The following XML output shows how to configure asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronous](microsoft-windows-setuprunasynchronous.md)
+[RunAsynchronous](microsoft-windows-setup-runasynchronous.md)
 
  
 

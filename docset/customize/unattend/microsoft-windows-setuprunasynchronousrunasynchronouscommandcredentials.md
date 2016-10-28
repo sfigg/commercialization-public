@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials to use when accessing a data image file specified by [Path](microsoft-windows-setuprunasynchronousrunasynchronouscommandpath.md).
+`Credentials` specifies the credentials to use when accessing a data image file specified by [Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md).
 
-All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in the system context.
+All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 
 ## Child Elements
 
@@ -27,15 +27,15 @@ All [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) commands run in
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialspassword.md)</p></td>
 <td><p>Specifies the password of the account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setuprunasynchronousrunasynchronouscommandcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>
@@ -51,12 +51,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](mmicrosoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setuprunasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) | **Credentials**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -86,7 +86,7 @@ The following XML output shows how to configure asynchronous commands to run.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)
 
  
 

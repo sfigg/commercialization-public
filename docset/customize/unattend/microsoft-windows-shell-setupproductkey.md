@@ -32,12 +32,12 @@ If you are using a Volume License Multiple Activation Key (MAK), you must specif
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Setup\UserData\ProductKey\[Key](microsoft-windows-setupuserdataproductkeykey.md)</p></td>
+<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft-Windows-Shell-Setup\<code>ProductKey</code></p></td>
-<td><p>Specifies a Product Key to activate Windows. This setting can be used with Microsoft-Windows-Setup\UserData\ProductKey\<code>Key</code>. The two product keys can be different.</p></td>
+<td><p>Specifies a Product Key to activate Windows. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\<code>Key</code>. The two product keys can be different.</p></td>
 </tr>
 </tbody>
 </table>

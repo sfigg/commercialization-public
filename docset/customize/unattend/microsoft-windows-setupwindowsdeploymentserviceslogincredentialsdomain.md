@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Domain
 
 
-`Domain` specifies the name of the domain for Windows Deployment Services login. This setting is optional. It is not required if the domain was specified as a user principal name (UPN) in [Username](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsusername.md).
+`Domain` specifies the name of the domain for Windows Deployment Services login. This setting is optional. It is not required if the domain was specified as a user principal name (UPN) in [Username](microsoft-windows-setup-windowsdeploymentserviceslogincredentialsusername.md).
 
 ## Values
 
@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | [Credentials](microsoft-windows-setupwindowsdeploymentserviceslogincredentials.md) | **Domain**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md) | [Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -100,7 +100,7 @@ The following XML output shows a complete Windows Deployment Services deploymen
 ## Related topics
 
 
-[Credentials](microsoft-windows-setupwindowsdeploymentserviceslogincredentials.md)
+[Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md)
 
  
 

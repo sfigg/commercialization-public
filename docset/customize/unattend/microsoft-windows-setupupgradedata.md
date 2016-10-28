@@ -34,11 +34,11 @@ If you use an installation image that was originally installed by using an Unatt
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Upgrade](microsoft-windows-setupupgradedataupgrade.md)</p></td>
+<td><p>[Upgrade](microsoft-windows-setup-upgradedataupgrade.md)</p></td>
 <td><p>Specifies whether the installation is an upgrade of an existing operating system.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setupupgradedatawillshowui.md)WillShowUI</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-upgradedatawillshowui.md)WillShowUI</p></td>
 <td><p>Specifies in what circumstances the UI is displayed.</p></td>
 </tr>
 </tbody>
@@ -54,12 +54,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **UpgradeData**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **UpgradeData**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## <a href="" id="xmlexample"></a>XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to set an upgrade installation to run in guar
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

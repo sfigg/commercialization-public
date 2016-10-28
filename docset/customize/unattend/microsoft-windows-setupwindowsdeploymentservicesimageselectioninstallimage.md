@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Filename](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimagefilename.md)</p></td>
+<td><p>[Filename](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimagefilename.md)</p></td>
 <td><p>Specifies the file name of the image to be installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ImageGroup](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimageimagegroup.md)</p></td>
+<td><p>[ImageGroup](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimageimagegroup.md)</p></td>
 <td><p>Specifies the image group of the image to be installed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ImageName](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimageimagename.md)</p></td>
+<td><p>[ImageName](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimageimagename.md)</p></td>
 <td><p>Specifies the name of the image to be installed.</p></td>
 </tr>
 </tbody>
@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md) | **InstallImage**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | **InstallImage**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -106,7 +106,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md)
+[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)
 
  
 

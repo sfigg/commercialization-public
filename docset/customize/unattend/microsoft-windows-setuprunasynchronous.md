@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunAsynchronous` specifies one or more commands to run during the windowsPE configuration pass.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-setuprunsynchronous.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-setup-runsynchronous.md) instead.
 
 All `RunAsynchronous` commands run in the system context.
 
@@ -29,7 +29,7 @@ All `RunAsynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md)</p></td>
+<td><p>[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run asynchronously.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **RunAsynchronous**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **RunAsynchronous**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -80,9 +80,9 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
-[RunSynchronous](microsoft-windows-setuprunsynchronous.md)
+[RunSynchronous](microsoft-windows-setup-runsynchronous.md)
 
  
 

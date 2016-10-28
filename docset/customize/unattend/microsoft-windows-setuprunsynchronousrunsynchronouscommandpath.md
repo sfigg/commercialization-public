@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Path` specifies the path and the name of the command to run.
 
-All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in the system context.
+All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -28,7 +28,7 @@ All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in t
 <tbody>
 <tr class="odd">
 <td><p><em>Path_to_command</em></p></td>
-<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, [Credentials](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentials.md) must be specified.</p>
+<td><p>Specifies the path and the file name of the command to run synchronously. The path can be a local path or a Universal Naming Convention (UNC) path. If the path is a UNC path, [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) must be specified.</p>
 <p><em>Path_to_command</em> is a string.</p></td>
 </tr>
 </tbody>
@@ -46,12 +46,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Path**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | **Path**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -83,7 +83,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
 
  
 

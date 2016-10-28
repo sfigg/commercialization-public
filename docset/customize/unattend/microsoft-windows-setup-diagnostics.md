@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[OptIn](microsoft-windows-setupdiagnosticsoptin.md)</p></td>
+<td><p>[OptIn](microsoft-windows-setup-diagnosticsoptin.md)</p></td>
 <td><p>Specifies whether to send installation statistic information to Microsoft.</p></td>
 </tr>
 </tbody>
@@ -41,12 +41,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **Diagnostics**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **Diagnostics**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -62,7 +62,7 @@ The following XML output shows how to change this setting so that no information
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
 
  
 

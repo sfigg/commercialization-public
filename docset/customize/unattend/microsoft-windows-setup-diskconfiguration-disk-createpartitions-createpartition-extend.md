@@ -30,14 +30,14 @@ ms.sitesec: msdn
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the newly-created partition is a fixed size, as specified by <code>CreatePartition:</code>[Size](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionsize.md). This is the default value.</p></td>
+<td><p>Specifies that the newly-created partition is a fixed size, as specified by <code>CreatePartition:</code>[Size](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionsize.md). This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-When creating a new partition, you must either use `CreatePartition:`[Size](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartitionsize.md), or set `CreatePartition:Extend` to true.
+When creating a new partition, you must either use `CreatePartition:`[Size](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionsize.md), or set `CreatePartition:Extend` to true.
 
 **Note**  
 **To use extended and logical partitions:**
@@ -56,12 +56,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setupdiskconfiguration.md) | [Disk](microsoft-windows-setupdiskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setupdiskconfigurationdiskcreatepartitions.md) | [CreatePartition](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartition.md) | **Extend**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) | **Extend**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -133,9 +133,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Extend](microsoft-windows-setupdiskconfigurationdiskmodifypartitionsmodifypartitionextend.md)
+[Extend](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionextend.md)
 
-[CreatePartition](microsoft-windows-setupdiskconfigurationdiskcreatepartitionscreatepartition.md)
+[CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md)
 
 [How to Configure BIOS/MBR-Based Hard Disk Partitions](http://go.microsoft.com/fwlink/?LinkId=214260)
 

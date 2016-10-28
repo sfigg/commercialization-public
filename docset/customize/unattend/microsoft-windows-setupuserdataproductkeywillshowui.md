@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances to display the user interface (UI) when applying a product key specified by [ProductKey](microsoft-windows-setupuserdataproductkey.md).
+`WillShowUI` specifies in what circumstances to display the user interface (UI) when applying a product key specified by [ProductKey](microsoft-windows-setup-userdataproductkey.md).
 
 ## Values
 
@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UserData](microsoft-windows-setupuserdata.md) | [ProductKey](microsoft-windows-setupuserdataproductkey.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [UserData](microsoft-windows-setup-userdata.md) | [ProductKey](microsoft-windows-setup-userdataproductkey.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -79,7 +79,7 @@ The following XML output shows how to set user data.
 ## Related topics
 
 
-[ProductKey](microsoft-windows-setupuserdataproductkey.md)
+[ProductKey](microsoft-windows-setup-userdataproductkey.md)
 
  
 

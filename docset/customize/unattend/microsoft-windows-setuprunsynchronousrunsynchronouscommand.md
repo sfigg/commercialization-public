@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunSynchronousCommand` specifies a single command to run during the windowsPE configuration pass.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md) instead.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) instead.
 
 All `RunSynchronous` commands run in the system context.
 
@@ -29,19 +29,19 @@ All `RunSynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setuprunsynchronousrunsynchronouscommandcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md)</p></td>
 <td><p>Specifies the credentials used to access the command if the command is on a network share.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-setuprunsynchronousrunsynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-setup-runsynchronousrunsynchronouscommanddescription.md)</p></td>
 <td><p>Specifies a description of the command to run.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-setuprunsynchronousrunsynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-runsynchronousrunsynchronouscommandorder.md)</p></td>
 <td><p>Specifies the order of the command to run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-setuprunsynchronousrunsynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md)</p></td>
 <td><p>Specifies the path to the command to run.</p></td>
 </tr>
 </tbody>
@@ -57,12 +57,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | **RunSynchronousCommand**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | **RunSynchronousCommand**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -94,9 +94,9 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronous](microsoft-windows-setuprunsynchronous.md)
+[RunSynchronous](microsoft-windows-setup-runsynchronous.md)
 
-[RunAsynchronousCommand](microsoft-windows-setuprunasynchronousrunasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)
 
  
 

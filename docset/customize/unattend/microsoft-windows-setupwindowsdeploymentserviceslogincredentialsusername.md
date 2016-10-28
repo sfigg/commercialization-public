@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Username
 
 
-`Username` specifies the user name for Windows Deployment Services login. This setting can be either a regular user name or a universal principal name (UPN), in the format of an e-mail address. If this setting is a UPN, [Domain](microsoft-windows-setupwindowsdeploymentserviceslogincredentialsdomain.md) is not required.
+`Username` specifies the user name for Windows Deployment Services login. This setting can be either a regular user name or a universal principal name (UPN), in the format of an e-mail address. If this setting is a UPN, [Domain](microsoft-windows-setup-windowsdeploymentserviceslogincredentialsdomain.md) is not required.
 
 ## Values
 
@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | [Credentials](microsoft-windows-setupwindowsdeploymentserviceslogincredentials.md) | **Username**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md) | [Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md) | **Username**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -100,7 +100,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[Credentials](microsoft-windows-setupwindowsdeploymentserviceslogincredentials.md)
+[Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md)
 
  
 

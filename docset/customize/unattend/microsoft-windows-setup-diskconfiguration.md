@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Valid disk partition configurations vary depending on whether you are using a BIOS-based computer or a Unified Extensible Firmware Interface (UEFI)-based computer. For more information, see the [Manage Hard Disks and Partitions](http://go.microsoft.com/fwlink/?LinkId=206671) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
-You can configure disk partitions manually in the disk configuration user interface (UI) in Windows Setup, or automatically by using settings in the [Disk](microsoft-windows-setupdiskconfigurationdisk.md) element. If you do not specify a `Disk` element and the [WillShowUI](microsoft-windows-setupdiskconfigurationwillshowui.md) setting is set to **Never**, Windows logs an error, and the installation terminates.
+You can configure disk partitions manually in the disk configuration user interface (UI) in Windows Setup, or automatically by using settings in the [Disk](microsoft-windows-setup-diskconfigurationdisk.md) element. If you do not specify a `Disk` element and the [WillShowUI](microsoft-windows-setup-diskconfigurationwillshowui.md) setting is set to **Never**, Windows logs an error, and the installation terminates.
 
 ## Child Elements
 
@@ -29,15 +29,15 @@ You can configure disk partitions manually in the disk configuration user interf
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisableEncryptedDiskProvisioning](microsoft-windows-setupdiskconfigurationdisableencrypteddiskprovisioning.md)</p></td>
+<td><p>[DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfigurationdisableencrypteddiskprovisioning.md)</p></td>
 <td><p>Specifies whether Windows activates encryption on blank drives that are capable of hardware-based encryption.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Disk](microsoft-windows-setupdiskconfigurationdisk.md)</p></td>
+<td><p>[Disk](microsoft-windows-setup-diskconfigurationdisk.md)</p></td>
 <td><p>Specifies the disk configurations to apply to a disk on the destination computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setupdiskconfigurationwillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-diskconfigurationwillshowui.md)</p></td>
 <td><p>Specifies whether to show the disk configuration UI in Windows Setup.</p></td>
 </tr>
 </tbody>
@@ -53,12 +53,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **DiskConfiguration**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **DiskConfiguration**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Examples
 
@@ -78,7 +78,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

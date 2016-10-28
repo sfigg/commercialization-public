@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md).
+`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md).
 
 ## Values
 
@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -109,7 +109,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[ImageSelection](microsoft-windows-setupwindowsdeploymentservicesimageselection.md)
+[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)
 
  
 

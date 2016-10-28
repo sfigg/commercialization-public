@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` describes the synchronous command to run specified by [Path](microsoft-windows-setuprunsynchronousrunsynchronouscommandpath.md).
+`Description` describes the synchronous command to run specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
 
-All [RunSynchronous](microsoft-windows-setuprunsynchronous.md) commands run in the system context.
+All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
 ## Values
 
@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setuprunsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md) | **Description**
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | **Description**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setuprunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
 
  
 

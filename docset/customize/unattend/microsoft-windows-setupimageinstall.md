@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DataImage](microsoft-windows-setupimageinstalldataimage.md)</p></td>
+<td><p>[DataImage](microsoft-windows-setup-imageinstalldataimage.md)</p></td>
 <td><p>Specifies the secondary data image to install.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OSImage](microsoft-windows-setupimageinstallosimage.md)</p></td>
+<td><p>[OSImage](microsoft-windows-setup-imageinstallosimage.md)</p></td>
 <td><p>Specifies the Windows operating system image to install.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **ImageInstall**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **ImageInstall**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -104,7 +104,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 

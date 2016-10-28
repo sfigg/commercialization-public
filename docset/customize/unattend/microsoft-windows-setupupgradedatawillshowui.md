@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [UpgradeData](microsoft-windows-setupupgradedata.md).
+`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [UpgradeData](microsoft-windows-setup-upgradedata.md).
 
 **Note**  
 Windows Setup does not support using any other unattended Setup settings during upgrades. When you upgrade from an earlier version of Windows, you must create an answer file that includes only the Windows-Setup\\UpgradeData settings. Then, you must use either the Windows product DVD or the System Preparation (sysprep) tool to upgrade Windows.
@@ -57,12 +57,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [UpgradeData](microsoft-windows-setupupgradedata.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [UpgradeData](microsoft-windows-setup-upgradedata.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## <a href="" id="xmlexample"></a>XML Example
 
@@ -79,7 +79,7 @@ The following XML output shows how to set an upgrade installation to run in guar
 ## Related topics
 
 
-[UpgradeData](microsoft-windows-setupupgradedata.md)
+[UpgradeData](microsoft-windows-setup-upgradedata.md)
 
  
 

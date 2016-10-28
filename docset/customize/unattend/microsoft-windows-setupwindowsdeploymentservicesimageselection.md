@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InstallImage](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallimage.md)</p></td>
+<td><p>[InstallImage](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimage.md)</p></td>
 <td><p>Specifies the file name, the image group, and the name of the image to be installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallTo](microsoft-windows-setupwindowsdeploymentservicesimageselectioninstallto.md)</p></td>
+<td><p>[InstallTo](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallto.md)</p></td>
 <td><p>Specifies the location to which the image is to be installed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setupwindowsdeploymentservicesimageselectionwillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservicesimageselectionwillshowui.md)</p></td>
 <td><p>Specifies in what circumstances the UI is displayed.</p></td>
 </tr>
 </tbody>
@@ -49,12 +49,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | **ImageSelection**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | **ImageSelection**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -106,7 +106,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md)
+[WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md)
 
  
 

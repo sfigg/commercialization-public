@@ -52,12 +52,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setupwindowsdeploymentservices.md) | [Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -109,7 +109,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[Login](microsoft-windows-setupwindowsdeploymentserviceslogin.md)
+[Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md)
 
  
 

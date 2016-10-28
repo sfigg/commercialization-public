@@ -64,7 +64,7 @@ ms.sitesec: msdn
 
  
 
-The user is also warned if any of the following conditions apply (provided [DisplayReport](microsoft-windows-setupcompliancecheckdisplayreport.md) is set to **OnError**). Otherwise, the user must boot from installation media and perform a clean installation instead of an upgrade.
+The user is also warned if any of the following conditions apply (provided [DisplayReport](microsoft-windows-setup-compliancecheckdisplayreport.md) is set to **OnError**). Otherwise, the user must boot from installation media and perform a clean installation instead of an upgrade.
 
 -   There are SMART failures, and no alternate disk is available.
 
@@ -82,7 +82,7 @@ The user is also warned if any of the following conditions apply (provided [Disp
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisplayReport](microsoft-windows-setupcompliancecheckdisplayreport.md)</p></td>
+<td><p>[DisplayReport](microsoft-windows-setup-compliancecheckdisplayreport.md)</p></td>
 <td><p>A string that specifies in what circumstances the user interface (UI) is displayed for this item.</p></td>
 </tr>
 </tbody>
@@ -98,12 +98,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **ComplianceCheck**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **ComplianceCheck**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -119,7 +119,7 @@ The following XML output changes the `ComplianceCheck` setting to run in guarant
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup-win7-microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
 
  
 

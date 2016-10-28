@@ -36,19 +36,19 @@ We recommend that you use the default settings. If you select a value for this s
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ColorDepth](microsoft-windows-setupdisplaycolordepth.md)</p></td>
+<td><p>[ColorDepth](microsoft-windows-setup-displaycolordepth.md)</p></td>
 <td><p>Specifies the color depth to apply to the display device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HorizontalResolution](microsoft-windows-setupdisplayhorizontalresolution.md)</p></td>
+<td><p>[HorizontalResolution](microsoft-windows-setup-displayhorizontalresolution.md)</p></td>
 <td><p>Specifies the horizontal resolution to apply to the display device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RefreshRate](microsoft-windows-setupdisplayrefreshrate.md)</p></td>
+<td><p>[RefreshRate](microsoft-windows-setup-displayrefreshrate.md)</p></td>
 <td><p>Specifies the refresh rate to apply to the display device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[VerticalResolution](microsoft-windows-setupdisplayverticalresolution.md)</p></td>
+<td><p>[VerticalResolution](microsoft-windows-setup-displayverticalresolution.md)</p></td>
 <td><p>Specifies the vertical resolution to apply to the display device.</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md) | **Display**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | **Display**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Setup](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
 
 ## XML Example
 
@@ -93,7 +93,7 @@ The following XML output sets the display resolution to 1920x1080, with 16-bit c
 ## Related topics
 
 
-[Microsoft-Windows-Setup](microsoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup-.md)
 
  
 
