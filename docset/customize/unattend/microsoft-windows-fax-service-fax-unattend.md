@@ -25,43 +25,43 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Csid](microsoft-windows-fax-servicefaxunattendcsid.md)</p></td>
+<td><p>[Csid](microsoft-windows-fax-servicefax-unattendcsid.md)</p></td>
 <td><p>Specifies the called subscriber ID (CSID) transmitted to the sending fax machine when receiving incoming faxes.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FaxPrinterIsShared](microsoft-windows-fax-servicefaxunattendfaxprinterisshared.md)</p></td>
+<td><p>[FaxPrinterIsShared](microsoft-windows-fax-servicefax-unattendfaxprinterisshared.md)</p></td>
 <td><p>Specifies if the fax printer is shared and if remote users can use the server as a shared fax server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ReceiveFaxes](microsoft-windows-fax-servicefaxunattendreceivefaxes.md)</p></td>
+<td><p>[ReceiveFaxes](microsoft-windows-fax-servicefax-unattendreceivefaxes.md)</p></td>
 <td><p>Specifies whether the fax service answers incoming calls on a device. This entry applies to existing and new fax devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Rings](microsoft-windows-fax-servicefaxunattendrings.md)</p></td>
+<td><p>[Rings](microsoft-windows-fax-servicefax-unattendrings.md)</p></td>
 <td><p>Specifies the number of rings before the fax service answers the telephone. This entry applies to existing and new fax devices.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RouteFolderName](microsoft-windows-fax-servicefaxunattendroutefoldername.md)</p></td>
+<td><p>[RouteFolderName](microsoft-windows-fax-servicefax-unattendroutefoldername.md)</p></td>
 <td><p>Specifies the folder name to which the fax service automatically routes and saves incoming faxes.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RoutePrinterName](microsoft-windows-fax-servicefaxunattendrouteprintername.md)</p></td>
+<td><p>[RoutePrinterName](microsoft-windows-fax-servicefax-unattendrouteprintername.md)</p></td>
 <td><p>Specifies the printer name to which the fax service routes (prints) incoming faxes automatically.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RouteToFolder](microsoft-windows-fax-servicefaxunattendroutetofolder.md)</p></td>
+<td><p>[RouteToFolder](microsoft-windows-fax-servicefax-unattendroutetofolder.md)</p></td>
 <td><p>Specifies whether to route incoming faxes to a folder.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RouteToPrinter](microsoft-windows-fax-servicefaxunattendroutetoprinter.md)</p></td>
+<td><p>[RouteToPrinter](microsoft-windows-fax-servicefax-unattendroutetoprinter.md)</p></td>
 <td><p>Specifies whether to route incoming faxes to a printer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SendFaxes](microsoft-windows-fax-servicefaxunattendsendfaxes.md)</p></td>
+<td><p>[SendFaxes](microsoft-windows-fax-servicefax-unattendsendfaxes.md)</p></td>
 <td><p>Specifies whether the fax service uses a device to send faxes. This entry applies to existing and new fax devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Tsid](microsoft-windows-fax-servicefaxunattendtsid.md)</p></td>
+<td><p>[Tsid](microsoft-windows-fax-servicefax-unattendtsid.md)</p></td>
 <td><p>Specifies the transmitting subscriber ID (TSID) sent by the fax device to a receiving fax machine.</p></td>
 </tr>
 </tbody>

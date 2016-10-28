@@ -27,7 +27,7 @@ To find the URL for a search provider:
 
     Example: `http://search.fabrikam.com/results.aspx?q="TEST"&language=en`: remove `language=en` to become `http://search.fabrikam.com/results.aspx?q="TEST"`
 
-5.  Copy the URL, and paste it into Notepad.
+5.  Copy the URL, and paste it into .
 
 6.  Replace `TEST` with {searchTerms}.
 

@@ -68,7 +68,7 @@ The following XML output shows how to set the OEM name. On the Start screen, the
 
 [Manufacturer](microsoft-windows-shell-setupoeminformationmanufacturer.md)
 
-[Manufacturer](microsoft-windows-helpandsupporthelpandsupportmanufacturer.md)
+[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)
 
  
 

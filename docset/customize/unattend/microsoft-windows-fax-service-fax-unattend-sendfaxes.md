@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **SendFaxes**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefax-unattend.md) | **SendFaxes**
 
 ## Applies To
 
@@ -89,7 +89,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-servicefaxunattend.md)
+[FaxUnattend](microsoft-windows-fax-servicefax-unattend.md)
 
  
 

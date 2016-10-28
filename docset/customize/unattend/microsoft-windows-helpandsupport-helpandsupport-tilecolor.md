@@ -14,13 +14,13 @@ ms.sitesec: msdn
 
 
 **Note**  
-In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
+In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).
 
  
 
-`TileColor` specifies the RGB background color of the tile for the Original Equipment Manufacturer (OEM) or organization on the **Help and Support** home page. The [Logo](microsoft-windows-helpandsupporthelpandsupportlogo.md) setting specifies the OEM tile.
+`TileColor` specifies the RGB background color of the tile for the Original Equipment Manufacturer (OEM) or organization on the **Help and Support** home page. The [Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md) setting specifies the OEM tile.
 
 ## Values
 
@@ -37,7 +37,7 @@ For more information on how OEMs can include their customer support contact info
 <p>The RGB color model is used for specifying colors. This model specifies the intensity of red, green, and blue on a scale of 0 to 255. A 0 indicates the minimum intensity. You can use this formula to convert the settings of the three colors to a single integer value:</p>
 <p>RGB value = Red + (Green*256) + (Blue*256*256)</p>
 <p>For more information and examples, see [RGB Color Model](http://go.microsoft.com/fwlink/?LinkId=140169).</p>
-<p>For the background color to appear, you must also configure the TileColor setting, the [Logo](microsoft-windows-helpandsupporthelpandsupportlogo.md) setting, and the [Manufacturer](microsoft-windows-helpandsupporthelpandsupportmanufacturer.md) setting.</p></td>
+<p>For the background color to appear, you must also configure the TileColor setting, the [Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md) setting, and the [Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md) setting.</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **TileColor**
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) | **TileColor**
 
 ## Applies To
 
@@ -78,9 +78,9 @@ The following example shows how to set the background color of the OEM tile on t
 
 [Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md)
 
-[Logo](microsoft-windows-helpandsupporthelpandsupportlogo.md)
+[Logo](microsoft-windows-helpandsupport-helpandsupport-logo.md)
 
-[Manufacturer](microsoft-windows-helpandsupporthelpandsupportmanufacturer.md)
+[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)
 
  
 

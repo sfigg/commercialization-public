@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Note**  
-In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
+In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).
 
@@ -52,7 +52,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **Logo**
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) | **Logo**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following example shows how to set a customized **Help and Support** home pa
 
 [Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md)
 
-[TileColor](microsoft-windows-helpandsupporthelpandsupporttilecolor.md)
+[TileColor](microsoft-windows-helpandsupport-helpandsupport-tilecolor.md)
 
  
 

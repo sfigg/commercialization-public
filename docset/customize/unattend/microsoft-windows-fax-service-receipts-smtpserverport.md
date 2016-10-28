@@ -41,7 +41,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](mmicrosoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **SmtpServerPort**
+[Microsoft-Windows-Fax-Service](mmicrosoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-service-receipts.md) | **SmtpServerPort**
 
 ## Applies To
 
@@ -85,7 +85,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[Receipts](microsoft-windows-fax-servicereceipts.md)
+[Receipts](microsoft-windows-fax-service-receipts.md)
 
  
 

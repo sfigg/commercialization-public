@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-servicereceipts.md) | **FaxUserName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-service-receipts.md) | **FaxUserName**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[Receipts](microsoft-windows-fax-servicereceipts.md)
+[Receipts](microsoft-windows-fax-service-receipts.md)
 
  
 

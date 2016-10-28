@@ -1,19 +1,19 @@
 ---
-title: RoutePrinterName
-description: RoutePrinterName
+title: SmtpServerAddress
+description: SmtpServerAddress
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 79795dfb-6555-4d18-9080-8c3725c1bdfa
+ms.assetid: 83363d28-4eeb-4a71-9fbe-22df86f4c1f8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# RoutePrinterName
+# SmtpServerAddress
 
 
-`RoutePrinterName` specifies the printer to which the fax service automatically routes and prints incoming faxes.
+`SmtpServerAddress` specifies the name or IP address of the e-mail server used to send and receive faxes.
 
 ## Values
 
@@ -25,8 +25,8 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>RoutePrinterName</em></p></td>
-<td><p>Specifies the printer to which the fax service automatically routes and prints incoming faxes. <em>RoutePrinterName</em> is a string.</p></td>
+<td><p><em>SmtpServerAddress</em></p></td>
+<td><p>Specifies the name or IP address of the e-mail server. <em>SmtpServerAddress</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefaxunattend.md) | **RoutePrinterName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Receipts](microsoft-windows-fax-service-receipts.md) | **SmtpServerAddress**
 
 ## Applies To
 
@@ -87,13 +87,13 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-servicefaxunattend.md)
+[Receipts](microsoft-windows-fax-service-receipts.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20RoutePrinterName%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20SmtpServerAddress%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

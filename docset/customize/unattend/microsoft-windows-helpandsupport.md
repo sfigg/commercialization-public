@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Note**  
-In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
+In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
 
  
 
@@ -35,7 +35,7 @@ For more information on how OEMs can include their customer support contact info
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md)</p></td>
+<td><p>[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md)</p></td>
 <td><p>Contains settings to specify OEM information for a customized <strong>Help and Support</strong> page.</p></td>
 </tr>
 </tbody>

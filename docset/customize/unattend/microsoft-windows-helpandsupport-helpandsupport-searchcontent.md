@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Note**  
-In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
+In Windows 10, this setting and other [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information in this topic is provided for reference only.
 
 For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).
 
@@ -38,7 +38,7 @@ When an end user performs a search in **Help and Support**, Windows searches for
 <td><p>When a user performs a search in <strong>Help and Support</strong>, Windows searches for matching Help content in offline Help files that the OEM provides.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>For the results to appear, you must also set both the Microsoft-Windows-HelpAndSupport/<code>HelpAndSupport</code>/[Manufacturer](microsoft-windows-helpandsupporthelpandsupportmanufacturer.md) value to <strong>true</strong> and the Microsoft-Windows-Shell-Setup/<code>OEMInformation</code>/[HelpCustomized](microsoft-windows-shell-setupoeminformationhelpcustomized.md) value to <strong>true</strong>.</p>
+<p>For the results to appear, you must also set both the Microsoft-Windows-HelpAndSupport/<code>HelpAndSupport</code>/[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md) value to <strong>true</strong> and the Microsoft-Windows-Shell-Setup/<code>OEMInformation</code>/[HelpCustomized](microsoft-windows-shell-setupoeminformationhelpcustomized.md) value to <strong>true</strong>.</p>
 </div>
 <div>
  
@@ -64,7 +64,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md) | **SearchContent**
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md) | [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) | **SearchContent**
 
 ## Applies To
 

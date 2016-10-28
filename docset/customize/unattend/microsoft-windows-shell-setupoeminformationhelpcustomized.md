@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `HelpCustomized` specifies whether the Original Equipment Manufacturer (OEM) customizes Help. The outcome depends on the operating system:
 
--   In Windows 8, when you set this value to `true` and set values in Microsoft-Windows-HelpAndSupport\\[HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md), you customize the **Windows Help and Support** page.
+-   In Windows 8, when you set this value to `true` and set values in Microsoft-Windows-HelpAndSupport\\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md), you customize the **Windows Help and Support** page.
 
     For information about how to add customized Help files, see [Author and Add Custom Help and Support Content](http://go.microsoft.com/fwlink/?LinkId=237145).
 
@@ -90,7 +90,7 @@ This XML shows how to specify that Help is customized:
 
 [OEMInformation](microsoft-windows-shell-setupoeminformation.md)
 
-[HelpAndSupport](microsoft-windows-helpandsupporthelpandsupport.md)
+[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md)
 
 [Author and Add Custom Help and Support Content](http://go.microsoft.com/fwlink/?LinkId=237145)
 
