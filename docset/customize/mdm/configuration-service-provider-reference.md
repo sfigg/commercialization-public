@@ -211,7 +211,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[DeviceInstanceService CSP](deviceinstanceservice-csp.md)</td>
+<td>[DeviceInstanceService CSP](deviceinstanceservice-configuration-service-provider.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -423,7 +423,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[NAP CSP](filesystem-csp.md)</td>
+<td>[NAP CSP](nap-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -740,7 +740,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[WindowsAdvancedThreatProtection CSP](watp-csp.md)</td>
+<td>[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" />*</td>
 <td><img src="images/checkmark.png" alt="check mark" />*</td>
 <td><img src="images/checkmark.png" alt="check mark" />*</td>
