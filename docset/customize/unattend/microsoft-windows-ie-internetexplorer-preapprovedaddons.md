@@ -22,7 +22,7 @@ This setting has been deprecated in Windows 8.1. The information about this dep
 
 Pre-approved add-ons are plug-in modules used to add functionality to Internet Explorer.
 
-`PreapprovedAddons` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorerpreapprovedaddonsaddonguiditem.md) settings each of which represents a single add-on module.
+`PreapprovedAddons` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem.md) settings each of which represents a single add-on module.
 
 ## Child Elements
 
@@ -34,7 +34,7 @@ Pre-approved add-ons are plug-in modules used to add functionality to Internet E
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorerpreapprovedaddonsaddonguiditem.md)</p></td>
+<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem.md)</p></td>
 <td><p>Specifies settings for an add-on module.</p></td>
 </tr>
 </tbody>
@@ -78,11 +78,11 @@ The following XML output shows how to set two Internet Explorer pre-approved add
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md)
+[InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)
 
-[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md)
+[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)
 
-[InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md)
+[InstalledToolbarsList](microsoft-windows-ie-internetexplorer-installedtoolbarslist.md)
 
  
 

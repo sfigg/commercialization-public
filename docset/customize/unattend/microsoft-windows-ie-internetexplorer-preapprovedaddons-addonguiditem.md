@@ -27,7 +27,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuid](microsoft-windows-ie-internetexplorerpreapprovedaddonsaddonguiditemaddonguid.md)</p></td>
+<td><p>[AddonGuid](microsoft-windows-ie-internetexplorer-preapprovedaddons-addonguiditem-addonguid.md)</p></td>
 <td><p>Specifies a GUID for an add-on module.</p></td>
 </tr>
 </tbody>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [PreApprovedAddons](microsoft-windows-ie-internetexplorerpreapprovedaddons.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md) | **AddonGuidItem**
 
 ## Applies To
 
