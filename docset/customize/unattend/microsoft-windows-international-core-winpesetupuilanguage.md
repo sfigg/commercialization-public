@@ -27,11 +27,11 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[UILanguage](microsoft-windows-international-core-winpesetupuilanguageuilanguage.md)</p></td>
+<td><p>[UILanguage](microsoft-windows-international-core-winpe--setupuilanguageuilanguage.md)</p></td>
 <td><p>Specifies the language of the user interface (UI) to use during Windows Setup or Windows Deployment Services.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-international-core-winpesetupuilanguagewillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-international-core-winpe--setupuilanguagewillshowui.md)</p></td>
 <td><p>This setting is deprecated and should not be used.</p></td>
 </tr>
 </tbody>
@@ -42,7 +42,7 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | **SetupUILanguage**
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md) | **SetupUILanguage**
 
 ## Valid Configuration Passes
 
@@ -52,7 +52,7 @@ windowsPE
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe--.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following example shows how to configure the Windows Setup UI language to d
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md)
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 

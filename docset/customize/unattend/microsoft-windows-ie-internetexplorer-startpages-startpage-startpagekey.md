@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorerstartpages.md) | [StartPage](microsoft-windows-ie-internetexplorerstartpagesstartpage.md) | **StartPageKey**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [StartPages](microsoft-windows-ie-internetexplorer-startpages.md) | [StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md) | **StartPageKey**
 
 ## Valid Passes
 
@@ -71,7 +71,7 @@ The following XML output shows how to set secondary start pages.
 ## Related topics
 
 
-[StartPage](microsoft-windows-ie-internetexplorerstartpagesstartpage.md)
+[StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md)
 
  
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `UILanguage` specifies the language that is used to display menu items in Windows Setup and Windows Deployment Services.
 
-In addition to this `UILanguage` setting, a [UILanguage](microsoft-windows-international-core-winpeuilanguage.md) setting is used to specify the default user interface (UI) language of the Windows installation.
+In addition to this `UILanguage` setting, a [UILanguage](microsoft-windows-international-core-winpe--uilanguage.md) setting is used to specify the default user interface (UI) language of the Windows installation.
 
 ## Values
 
@@ -43,7 +43,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md) | [SetupUILanguage](microsoft-windows-international-core-winpesetupuilanguage.md) | **UILanguage**
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md) | [SetupUILanguage](microsoft-windows-international-core-winpe--setupuilanguage.md) | **UILanguage**
 
 ## Valid Configuration Passes
 
@@ -53,7 +53,7 @@ windowsPE
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe-win7-microsoft-windows-international-core-winpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe--.md).
 
 ## XML Example
 
@@ -69,7 +69,7 @@ The following example shows how to configure the Windows Setup UI language to d
 ## Related topics
 
 
-[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md)
 
 [Microsoft-Windows-International-Core](mmicrosoft-windows-international-core.md)
 

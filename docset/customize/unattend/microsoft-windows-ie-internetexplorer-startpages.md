@@ -27,7 +27,7 @@ To set the primary home page, use the [Home\_Page](home-page-win7-microsoft-wind
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[StartPage](microsoft-windows-ie-internetexplorerstartpagesstartpage.md)</p></td>
+<td><p>[StartPage](microsoft-windows-ie-internetexplorer-startpages-startpage.md)</p></td>
 <td><p>Specifies a tabbed browsing home page.</p></td>
 </tr>
 </tbody>

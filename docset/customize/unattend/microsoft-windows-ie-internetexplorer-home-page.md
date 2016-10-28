@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Home\_Page
 
 
-`Home_Page` specifies the Uniform Resource Locator (URL) for the default home page that appears when the user starts Internet Explorer®. To set additional home pages, use the Microsoft-Windows-IE-InternetExplorer/[StartPages](microsoft-windows-ie-internetexplorerstartpages.md) setting.
+`Home_Page` specifies the Uniform Resource Locator (URL) for the default home page that appears when the user starts Internet Explorer®. To set additional home pages, use the Microsoft-Windows-IE-InternetExplorer/[StartPages](microsoft-windows-ie-internetexplorer-startpages.md) setting.
 
 ## Values
 
@@ -64,7 +64,7 @@ The following XML output specifies the fully qualified URL.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[StartPages](microsoft-windows-ie-internetexplorerstartpages.md)
+[StartPages](microsoft-windows-ie-internetexplorer-startpages.md)
 
  
 

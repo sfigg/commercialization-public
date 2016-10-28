@@ -121,7 +121,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Includes the language and input locale settings for the system and the user.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-International-Core-WinPE](microsoft-windows-international-core-winpe.md)</p></td>
+<td><p>[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md)</p></td>
 <td><p>Specifies the default language, locale, and other international settings to use during Windows Setup or Windows Deployment Services installations.</p></td>
 </tr>
 <tr class="even">
