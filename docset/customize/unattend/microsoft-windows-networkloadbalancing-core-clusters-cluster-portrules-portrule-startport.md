@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md) | **StartPort**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md) | **StartPort**
 
 ## Applies To
 
@@ -63,7 +63,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
 
  
 

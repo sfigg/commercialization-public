@@ -30,7 +30,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)</p></td>
+<td><p>[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)</p></td>
 <td><p>Specifies details about a port rule used for a cluster, such as its name, IP address, protocol, mode, and so on.</p></td>
 </tr>
 </tbody>

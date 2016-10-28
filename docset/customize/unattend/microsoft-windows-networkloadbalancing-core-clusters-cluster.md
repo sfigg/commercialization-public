@@ -58,7 +58,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies the subnet mask for the cluster IP address.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddresses.md)</p></td>
+<td><p>[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-.md)</p></td>
 <td><p>Specifies the host's unique IP addresses.</p></td>
 </tr>
 <tr class="odd">
@@ -110,7 +110,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies whether a host that is shut down while in a suspended state will remain suspended when Windows is started.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md)</p></td>
+<td><p>[Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md)</p></td>
 <td><p>Specifies details about the port rules that are used for the cluster, including a port rule's name, virtual IP address, protocol, mode, and so on.</p></td>
 </tr>
 <tr class="even">

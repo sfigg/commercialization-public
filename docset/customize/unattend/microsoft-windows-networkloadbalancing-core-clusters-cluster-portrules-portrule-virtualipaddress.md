@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md) | **VirtualIPAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md) | **VirtualIPAddress**
 
 ## Applies To
 
@@ -67,7 +67,7 @@ The following XML output shows how to specify the virtual IP address of the port
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
 
  
 

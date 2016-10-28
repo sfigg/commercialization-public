@@ -56,7 +56,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md) | **Mode**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md) | **Mode**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following sample XML output shows how to specify that multiple hosts in the 
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
 
  
 

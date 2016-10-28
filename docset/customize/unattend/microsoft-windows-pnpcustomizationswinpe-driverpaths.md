@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DriverPaths
 
 
-`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) list items.
+`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) list items.
 
 By using this setting, you can add boot-critical and non boot–critical drivers to your Windows image before it is installed.
 
@@ -27,8 +27,8 @@ By using this setting, you can add boot-critical and non boot–critical drivers
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md)</p></td>
-<td><p>Specifies a local or Universal Naming Convention (UNC) path to the out-of-box drivers and, optionally, the [Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md) used to access them.</p></td>
+<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md)</p></td>
+<td><p>Specifies a local or Universal Naming Convention (UNC) path to the out-of-box drivers and, optionally, the [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) used to access them.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,12 +43,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](mmicrosoft-windows-pnpcustomizationswinpe.md) | **DriverPaths**
+[microsoft-windows-pnpcustomizationswinpe-](mmicrosoft-windows-pnpcustomizationswinpe-.md) | **DriverPaths**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md).
 
 ## XML Example
 
@@ -81,7 +81,7 @@ The following XML output specifies the UNC paths to additional locations for dev
 ## Related topics
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md)
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md)
 
  
 

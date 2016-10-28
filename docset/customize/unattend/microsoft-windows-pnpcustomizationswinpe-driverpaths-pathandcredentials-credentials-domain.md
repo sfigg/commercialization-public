@@ -30,7 +30,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
-<td><p>Specifies the domain name or computer name of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialspath.md).</p>
+<td><p>Specifies the domain name or computer name of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md).</p>
 <p><em>Domain_name</em> is a string.</p></td>
 </tr>
 </tbody>
@@ -48,12 +48,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md) | **Domain**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md).
 
 ## XML Example
 
@@ -86,7 +86,7 @@ The following XML output specifies the Universal Naming Convention (UNC) paths t
 ## Related topics
 
 
-[Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md)
+[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md)
 
  
 

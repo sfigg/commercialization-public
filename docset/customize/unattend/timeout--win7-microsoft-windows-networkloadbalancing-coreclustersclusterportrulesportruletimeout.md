@@ -22,7 +22,7 @@ By default, all network requests are load-balanced across the cluster without re
 When extended client affinity is specified, then after a network connection terminates, it retains ownership of a connection for a configurable amount of time. Requests coming in from the same client during the timeout period are guaranteed to be picked up by the same cluster host. After this time expires, the connection is released.
 
 **Note**  
--   This setting will be applied only if the [ClientAffinity](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportruleclientaffinity.md) setting is set to `Single` or `Network`.
+-   This setting will be applied only if the [ClientAffinity](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleclientaffinity.md) setting is set to `Single` or `Network`.
 
 -   To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServer package must be enabled in the Windows image you are installing. To do this, use Windows System Image Manager to add the Microsoft-Windows-Foundation-Package to your answer file, and then configure the NetworkLoadBalancingFullServer package to enable it. For more information about adding and configuring packages, see the [Windows Assessment and Deployment (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206587).
 
@@ -56,7 +56,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-clusterportrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md) | **Timeout**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md) | **Timeout**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML example shows how to set the network so that requests from the
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-clusterportrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
 
  
 

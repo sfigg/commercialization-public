@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies the unique string to identify the device-driver path.
 
 **Note**  
-The value for `Key` is added to the answer file as an attribute of the [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) element. The attribute `wcm:keyValue` is used to identify each unique device-driver path. For example, you can specify three different device-driver paths by using the `Key` values of **Path1**, **Path2**, and **Path3**.
+The value for `Key` is added to the answer file as an attribute of the [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) element. The attribute `wcm:keyValue` is used to identify each unique device-driver path. For example, you can specify three different device-driver paths by using the `Key` values of **Path1**, **Path2**, and **Path3**.
 
  
 
@@ -50,12 +50,12 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) | **Key**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | **Key**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md).
 
 ## XML Example
 

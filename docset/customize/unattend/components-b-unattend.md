@@ -165,7 +165,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Adds one or more out-of-box drivers to a Windows installation. (Drivers are added during the <strong>auditSystem</strong> configuration pass.)</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md)</p></td>
+<td><p>[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md)</p></td>
 <td><p>Adds one or more out-of-box drivers to a Windows installation. (Drivers are added during the <strong>windowsPE</strong> configuration pass.)</p></td>
 </tr>
 <tr class="odd">

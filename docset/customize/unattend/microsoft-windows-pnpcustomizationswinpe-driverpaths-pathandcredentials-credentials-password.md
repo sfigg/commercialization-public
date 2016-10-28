@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Password
 
 
-`Password` specifies the password of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialspath.md).
+`Password` specifies the password of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md).
 
 ## Values
 
@@ -44,12 +44,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md) | **Password**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) | **Password**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpCustomizationsWinPE](microsoft-windows-pnpcustomizationswinpe-win7-microsoft-windows-pnpcustomizationswinpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md).
 
 ## XML Example
 
@@ -82,7 +82,7 @@ The following XML output specifies the Universal Naming Convention (UNC) paths t
 ## Related topics
 
 
-[Credentials](microsoft-windows-pnpcustomizationswinpedriverpathspathandcredentialscredentials.md)
+[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md)
 
  
 

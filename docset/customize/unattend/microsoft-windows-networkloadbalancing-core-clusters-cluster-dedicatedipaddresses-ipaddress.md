@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddresskey.md)</p></td>
 <td><p>Specifies the name of the host's unique IP address.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -36,11 +36,11 @@ ms.sitesec: msdn
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddressipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddressipaddress.md)</p></td>
 <td><p>Specifies the host's unique IP address.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddressnetworkmask.md)</p></td>
+<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddressnetworkmask.md)</p></td>
 <td><p>Specifies the network mask for the host's unique IP address.</p></td>
 </tr>
 </tbody>
@@ -56,7 +56,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddresses.md) | **IpAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-.md) | **IpAddress**
 
 ## Applies To
 
@@ -78,7 +78,7 @@ The following XML output specifies a host's unique IP address.
 ## Related topics
 
 
-[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddresses.md)
+[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-.md)
 
  
 

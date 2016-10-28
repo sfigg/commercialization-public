@@ -30,7 +30,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clusterdedicatedipaddressesipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress.md)</p></td>
 <td><p>Specifies details about a host's unique IP address.</p></td>
 </tr>
 </tbody>
