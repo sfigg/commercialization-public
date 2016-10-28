@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Username
 
 
-`Username` setting specifies the name of the account used for authentication to access the data image specified by [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md).
+`Username` setting specifies the name of the account used for authentication to access the data image specified by [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md).
 
 ## Values
 
@@ -41,7 +41,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md) | [Credentials](microsoft-windows-setup-imageinstalldataimageinstallfromcredentials.md) | **Username**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Username**
 
 ## Applies To
 
@@ -100,7 +100,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[Credentials](microsoft-windows-setup-imageinstalldataimageinstallfromcredentials.md)
+[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md)
 
  
 

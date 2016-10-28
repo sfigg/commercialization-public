@@ -36,19 +36,19 @@ We recommend that you use the default settings. If you select a value for this s
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ColorDepth](microsoft-windows-setup-displaycolordepth.md)</p></td>
+<td><p>[ColorDepth](microsoft-windows-setup-display-colordepth.md)</p></td>
 <td><p>Specifies the color depth to apply to the display device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HorizontalResolution](microsoft-windows-setup-displayhorizontalresolution.md)</p></td>
+<td><p>[HorizontalResolution](microsoft-windows-setup-display-horizontalresolution.md)</p></td>
 <td><p>Specifies the horizontal resolution to apply to the display device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RefreshRate](microsoft-windows-setup-displayrefreshrate.md)</p></td>
+<td><p>[RefreshRate](microsoft-windows-setup-display-refreshrate.md)</p></td>
 <td><p>Specifies the refresh rate to apply to the display device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[VerticalResolution](microsoft-windows-setup-displayverticalresolution.md)</p></td>
+<td><p>[VerticalResolution](microsoft-windows-setup-display-verticalresolution.md)</p></td>
 <td><p>Specifies the vertical resolution to apply to the display device.</p></td>
 </tr>
 </tbody>

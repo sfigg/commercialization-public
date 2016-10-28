@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-imageinstallosimageinstallfromcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-imageinstall-osimageinstallfromcredentials.md)</p></td>
 <td><p>Specifies the credentials used to access the .wim file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md)</p></td>
+<td><p>[MetaData](microsoft-windows-setup-imageinstall-osimageinstallfrommetadata.md)</p></td>
 <td><p>Specifies a unique Windows image in the .wim file to install.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-setup-imageinstallosimageinstallfrompath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-imageinstall-osimageinstallfrompath.md)</p></td>
 <td><p>Specifies the path to the .wim file.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | **InstallFrom**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **InstallFrom**
 
 ## Applies To
 
@@ -108,7 +108,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[OSImage](microsoft-windows-setup-imageinstallosimage.md)
+[OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
  
 

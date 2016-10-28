@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-imageinstalldataimageinstalltodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-imageinstall-dataimage-installtodiskid.md)</p></td>
 <td><p>Specifies the identification number of the disk on which to install the data image.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-imageinstalldataimageinstalltopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-imageinstall-dataimage-installtopartitionid.md)</p></td>
 <td><p>Specifies the identification number of the partition on which to install the data image.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | **InstallTo**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | **InstallTo**
 
 ## Applies To
 
@@ -104,7 +104,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[DataImage](microsoft-windows-setup-imageinstalldataimage.md)
+[DataImage](microsoft-windows-setup-imageinstall-dataimage-.md)
 
  
 

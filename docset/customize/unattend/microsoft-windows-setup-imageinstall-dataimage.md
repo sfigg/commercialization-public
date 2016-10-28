@@ -17,10 +17,10 @@ ms.sitesec: msdn
 
 You should never use a data image to overwrite Windows system data. Use data images only to add files.
 
-There can be more than one data image. The [OSImage](microsoft-windows-setup-imageinstallosimage.md) is installed before any data images.
+There can be more than one data image. The [OSImage](microsoft-windows-setup-imageinstall-osimage.md) is installed before any data images.
 
 **Note**  
-The [MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.md) settings are required.
+The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md) settings are required.
 
  
 
@@ -34,15 +34,15 @@ The [MetaData](microsoft-windows-setup-imageinstalldataimageinstallfrommetadata.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md)</p></td>
+<td><p>[InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)</p></td>
 <td><p>Required. Specifies the location from which to install the data image.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallTo](microsoft-windows-setup-imageinstalldataimageinstallto.md)</p></td>
+<td><p>[InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md)</p></td>
 <td><p>Required. Specifies the location to which to install the data image.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-setup-imageinstalldataimageorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-imageinstall-dataimage-order.md)</p></td>
 <td><p>Required. Specifies the order in which to install the data image.</p></td>
 </tr>
 </tbody>
@@ -58,7 +58,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **DataImage**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | **DataImage**
 
 ## Applies To
 
@@ -117,7 +117,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[ImageInstall](microsoft-windows-setup-imageinstall.md)
+[ImageInstall](microsoft-windows-setup-imageinstall-.md)
 
  
 

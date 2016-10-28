@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `MetaData` specifies a Windows edition or image in a Windows image (.wim) file.
 
-Use the [Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md) and [Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md) settings together to select a Windows edition or image based on the index, the name, or the description of the image.
+Use the [Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md) and [Value](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatavalue.md) settings together to select a Windows edition or image based on the index, the name, or the description of the image.
 
 Use the `DISM /Get-ImageInfo` command to determine which images and editions are included on your Windows DVD or Windows image (.wim) file. For instructions on how to select a Windows image using the `MetaData` setting, see the [Best Practices for Image Deployment](http://go.microsoft.com/fwlink/?LinkId=206672) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
@@ -29,11 +29,11 @@ Use the `DISM /Get-ImageInfo` command to determine which images and editions are
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md)</p></td>
+<td><p>[Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md)</p></td>
 <td><p>Specifies whether the image number, name, or description is used to select the image in a .wim file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md)</p></td>
+<td><p>[Value](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatavalue.md)</p></td>
 <td><p>Specifies the value of the <code>Key</code> setting.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | **MetaData**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md) | **MetaData**
 
 ## Applies To
 
@@ -108,11 +108,11 @@ The following XML output shows how to configure the `ImageInstall` setting to in
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md)
 
-[Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md)
 
-[Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatavalue.md)
 
  
 

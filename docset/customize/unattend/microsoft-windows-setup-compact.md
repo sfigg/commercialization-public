@@ -57,7 +57,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | **Compact**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **Compact**
 
 ## Applies To
 
@@ -67,7 +67,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## Related topics
 
 
-[OSImage](microsoft-windows-setup-imageinstallosimage.md)
+[OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
  
 

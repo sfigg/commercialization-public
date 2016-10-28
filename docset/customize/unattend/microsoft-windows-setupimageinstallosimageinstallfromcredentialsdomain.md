@@ -43,7 +43,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | [Credentials](microsoft-windows-setup-imageinstallosimageinstallfromcredentials.md) | **Domain**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-osimageinstallfromcredentials.md) | **Domain**
 
 ## Applies To
 
@@ -102,7 +102,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[Credentials](microsoft-windows-setup-imageinstallosimageinstallfromcredentials.md)
+[Credentials](microsoft-windows-setup-imageinstall-osimageinstallfromcredentials.md)
 
  
 

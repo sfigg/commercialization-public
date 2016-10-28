@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display.md) | **ColorDepth**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display-.md) | **ColorDepth**
 
 ## Applies To
 
@@ -79,7 +79,7 @@ The following XML output sets the display resolution to 640x480, with 16-bit col
 ## Related topics
 
 
-[Display](microsoft-windows-setup-display.md)
+[Display](microsoft-windows-setup-display-.md)
 
  
 

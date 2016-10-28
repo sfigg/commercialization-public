@@ -20,7 +20,7 @@ If you are installing Windows to a blank disk, you must create and format partit
 ## Comparison of OSImage Settings: InstallTo and InstallToAvailablePartition
 
 
-For unattended installations, you must specify either the [InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md) setting or the **InstallToAvailablePartition** setting.
+For unattended installations, you must specify either the [InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md) setting or the **InstallToAvailablePartition** setting.
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ For unattended installations, you must specify either the [InstallTo](microsoft-
  
 
 **Note**  
-In the [OSImage](microsoft-windows-setup-imageinstallosimage.md) setting, if you set the **InstallToAvailablePartition** setting to **true**, do not set the **InstallTo** setting.
+In the [OSImage](microsoft-windows-setup-imageinstall-osimage.md) setting, if you set the **InstallToAvailablePartition** setting to **true**, do not set the **InstallTo** setting.
 
 If both **InstallToAvailablePartition** and **InstallTo** are set the installation will fail.
 
@@ -80,7 +80,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | InstallToAvailablePartition
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | InstallToAvailablePartition
 
 ## Applies To
 
@@ -116,9 +116,9 @@ The following XML output shows how to set the **InstallToAvailablePartition** se
 ## Related topics
 
 
-[OSImage](microsoft-windows-setup-imageinstallosimage.md)
+[OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
-[InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md)
+[InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md)
 
 [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md)
 

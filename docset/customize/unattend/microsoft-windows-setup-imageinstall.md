@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DataImage](microsoft-windows-setup-imageinstalldataimage.md)</p></td>
+<td><p>[DataImage](microsoft-windows-setup-imageinstall-dataimage-.md)</p></td>
 <td><p>Specifies the secondary data image to install.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OSImage](microsoft-windows-setup-imageinstallosimage.md)</p></td>
+<td><p>[OSImage](microsoft-windows-setup-imageinstall-osimage.md)</p></td>
 <td><p>Specifies the Windows operating system image to install.</p></td>
 </tr>
 </tbody>

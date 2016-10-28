@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` is used with the setting: [Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. A Windows image may be selected by its index number, its name, or its description.
+`Key` is used with the setting: [Value](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatavalue.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. A Windows image may be selected by its index number, its name, or its description.
 
 ## Values
 
@@ -57,7 +57,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md) | **Key**
+[microsoft-windows-setup-](mmicrosoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-osimageinstallfrommetadata.md) | **Key**
 
 ## Applies To
 
@@ -97,9 +97,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstall-osimageinstallfrommetadata.md)
 
-[Value](microsoft-windows-setup-imageinstallosimageinstallfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatavalue.md)
 
  
 

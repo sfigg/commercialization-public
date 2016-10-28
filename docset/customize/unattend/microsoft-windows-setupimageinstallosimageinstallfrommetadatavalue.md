@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` is used with the setting: [Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. The `Value` may identify a Windows image by its index number, its name, or its description.
+`Value` is used with the setting: [Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md) to choose which Windows image to install from a Windows image file (.wim). Windows image files may contain multiple Windows images. The `Value` may identify a Windows image by its index number, its name, or its description.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies a value for the setting: [Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md).</p>
+<td><p>Specifies a value for the setting: [Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md).</p>
 <p><em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
@@ -44,7 +44,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md) | **Value**
+[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-osimageinstallfrommetadata.md) | **Value**
 
 ## Applies To
 
@@ -84,9 +84,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setup-imageinstallosimageinstallfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstall-osimageinstallfrommetadata.md)
 
-[Key](microsoft-windows-setup-imageinstallosimageinstallfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstall-osimageinstallfrommetadatakey.md)
 
  
 

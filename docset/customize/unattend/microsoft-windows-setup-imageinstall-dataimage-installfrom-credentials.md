@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials to use when accessing a data image file specified by [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md).
+`Credentials` specifies the credentials to use when accessing a data image file specified by [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md).
 
 ## Child Elements
 
@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-imageinstalldataimageinstallfromcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setup-imageinstalldataimageinstallfromcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialspassword.md)</p></td>
 <td><p>Specifies the password of the user account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setup-imageinstalldataimageinstallfromcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | **Credentials**
 
 ## Applies To
 
@@ -108,7 +108,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)
 
  
 

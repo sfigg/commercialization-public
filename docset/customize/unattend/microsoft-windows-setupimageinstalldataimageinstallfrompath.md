@@ -44,7 +44,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md) | **Path**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | **Path**
 
 ## Applies To
 
@@ -128,7 +128,7 @@ E:\> setup.exe /installfrom:".\wims\32bitimage.wim" /unattend:".\autounattend_fi
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setup-imageinstalldataimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)
 
  
 

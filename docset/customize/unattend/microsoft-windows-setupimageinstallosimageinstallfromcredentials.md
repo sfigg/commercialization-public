@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-imageinstallosimageinstallfromcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-imageinstall-osimageinstallfromcredentialsdomain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setup-imageinstallosimageinstallfromcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-imageinstall-osimageinstallfromcredentialspassword.md)</p></td>
 <td><p>Specifies the password of the user account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setup-imageinstallosimageinstallfromcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-imageinstall-osimageinstallfromcredentialsusername.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md) | **Credentials**
 
 ## Applies To
 
@@ -108,7 +108,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md)
+[InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md)
 
  
 

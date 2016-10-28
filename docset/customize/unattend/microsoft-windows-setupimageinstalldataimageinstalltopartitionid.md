@@ -93,7 +93,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstalldataimage.md) | [InstallTo](microsoft-windows-setup-imageinstalldataimageinstallto.md) | **PartitionID**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md) | **PartitionID**
 
 ## Applies To
 
@@ -152,7 +152,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallTo](microsoft-windows-setup-imageinstalldataimageinstallto.md)
+[InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md)
 
  
 

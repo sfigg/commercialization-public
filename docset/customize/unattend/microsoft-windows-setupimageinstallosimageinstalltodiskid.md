@@ -42,7 +42,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | [InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md) | **DiskID**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | [InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md) | **DiskID**
 
 ## Applies To
 
@@ -101,7 +101,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md)
+[InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md)
 
  
 

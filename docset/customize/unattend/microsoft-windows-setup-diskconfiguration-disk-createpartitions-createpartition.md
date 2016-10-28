@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `CreatePartition` specifies a single partition to create on the hard disk.
 
-If you are installing Windows to a blank hard disk, you must use `CreatePartition` and [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) to create and to format partitions on the disk. You must also add values to either [InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md) or [InstallToAvailablePartition](microsoft-windows-setup-imageinstallosimageinstalltoavailablepartition.md) to specify where to install Windows.
+If you are installing Windows to a blank hard disk, you must use `CreatePartition` and [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) to create and to format partitions on the disk. You must also add values to either [InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md) or [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimageinstalltoavailablepartition.md) to specify where to install Windows.
 
 ## Child Elements
 

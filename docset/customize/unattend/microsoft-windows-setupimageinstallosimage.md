@@ -29,19 +29,19 @@ ms.sitesec: msdn
 <td><p>Specifies whether the Windows image should be applied with compression enabled during installation. If set to <strong>true</strong>, files written to the disk during installation are compressed individually, which allows Windows to take up less disk space.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallFrom](microsoft-windows-setup-imageinstallosimageinstallfrom.md)</p></td>
+<td><p>[InstallFrom](microsoft-windows-setup-imageinstall-osimageinstallfrom.md)</p></td>
 <td><p>Specifies the path of the .wim file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[InstallTo](microsoft-windows-setup-imageinstallosimageinstallto.md)</p></td>
+<td><p>[InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md)</p></td>
 <td><p>Specifies the disk and the partition to install the image to.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallToAvailablePartition](microsoft-windows-setup-imageinstallosimageinstalltoavailablepartition.md)</p></td>
+<td><p>[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimageinstalltoavailablepartition.md)</p></td>
 <td><p>Specifies whether to install to the first available bootable partition on a computer that does not already have an installation of Windows.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setup-imageinstallosimagewillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-imageinstall-osimagewillshowui.md)</p></td>
 <td><p>Specifies in what circumstances to show the user interface (UI).</p></td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | **OSImage**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | **OSImage**
 
 ## Applies To
 
@@ -116,7 +116,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[ImageInstall](microsoft-windows-setup-imageinstall.md)
+[ImageInstall](microsoft-windows-setup-imageinstall-.md)
 
  
 

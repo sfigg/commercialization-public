@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstallosimage.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **WillShowUI**
 
 ## Applies To
 
@@ -109,7 +109,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[OSImage](microsoft-windows-setup-imageinstallosimage.md)
+[OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
  
 
