@@ -17,7 +17,7 @@ Content under development and will be published soon.
 ## Related topics
 
 
-[WiFi configuration service provider](wifi-configuration-service-provider.md)
+[WiFi configuration service provider](wifi-csp.md)
 
  
 

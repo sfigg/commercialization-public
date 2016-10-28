@@ -91,7 +91,7 @@ Required. The character string that contains the device management server addres
 
  
 
-The DMClient configuration service provider will save the address to the same location as the w7 and DMS configuration service providers to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the w7 APPLICATION configuration service provider.
+The DMClient configuration service provider will save the address to the same location as the w7 and DMS configuration service providers to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION configuration service provider](w7-application-csp.md).
 
 Starting in Windows 10, version 1511, this node supports multiple server addresses in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;. If there is only a single URL, then the &lt;&gt; are not required. This is supported for both desktop and mobile devices.
 

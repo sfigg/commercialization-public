@@ -10,7 +10,7 @@ ms.assetid: 43e73d8a-6617-44e7-8459-5c96f4422e63
 # DMAcc CSP
 
 
-The DMAcc configuration service provider allows an OMA Device Management (DM) version 1.2 server to handle OMA DM account objects. The server can use this configuration service provider to add a new account or to manage an existing account, including an account that was bootstrapped by using the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md)
+The DMAcc configuration service provider allows an OMA Device Management (DM) version 1.2 server to handle OMA DM account objects. The server can use this configuration service provider to add a new account or to manage an existing account, including an account that was bootstrapped by using the [w7 APPLICATION configuration service provider](w7-application-csp.md)
 
 > **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
@@ -28,7 +28,7 @@ Required. Defines the root node of all OMA DM server accounts that use the OMA D
 <a href="" id="accountuid"></a>***AccountUID***  
 Optional. Defines the unique identifier for an OMA DM server account that uses the OMA DM version 1.2 protocol.
 
-For a [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) bootstrapped account, this element is assigned a unique name by the OMA DM Client. The unique name is the hexadecimal representation of the 256-bit SHA-2 hash of the provider ID. The OMA DM server can change this node name in subsequent OMA DM sessions.
+For a [w7 APPLICATION configuration service provider](w7-application-csp.md) bootstrapped account, this element is assigned a unique name by the OMA DM Client. The unique name is the hexadecimal representation of the 256-bit SHA-2 hash of the provider ID. The OMA DM server can change this node name in subsequent OMA DM sessions.
 
 <a href="" id="accountuid-appid"></a>***AccountUID*/AppID**  
 Required. Specifies the application identifier for the OMA DM account.
@@ -62,7 +62,7 @@ Required.
 <a href="" id="appaddr-objectname"></a>**AppAddr/****_ObjectName_**  
 Required. Defines the OMA DM server address. Only one server address can be configured.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) to the DMAcc Configuration Service Provider, the name of this element is "1". This is the first DM address encountered in the w7 APPLICATION configuration service provider, other DM accounts are ignored.
+When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1". This is the first DM address encountered in the w7 APPLICATION configuration service provider, other DM accounts are ignored.
 
 <a href="" id="objectname-addr"></a>***ObjectName*/Addr**  
 Required. Specifies the address of the OMA DM account. The type of address stored is specified by the AddrType element.
@@ -84,7 +84,7 @@ Optional.
 <a href="" id="port-objectname"></a>**Port/*ObjectName***  
 Required. Only one port number can be configured.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) to the DMAcc Configuration Service Provider, the name of this element is "1".
+When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1".
 
 <a href="" id="objectname-portnbr"></a>***ObjectName*/PortNbr**  
 Required. Specifies the port number of the OMA MD account address. This must be a decimal number that fits within the range of a 16-bit unsigned integer.
@@ -106,7 +106,7 @@ Optional. Defines authentication settings.
 <a href="" id="appauth-objectname"></a>**AppAuth/****_ObjectName_**  
 Required. Defines one set of authentication settings.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-configuration-service-provider.md) to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
+When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
 
 <a href="" id="objectname-aauthlevel"></a>***ObjectName*/AAuthlevel**  
 Required. Specifies the application authentication level.

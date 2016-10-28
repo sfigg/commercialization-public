@@ -271,7 +271,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Windows
 ## Related topics
 
 
-[WindowsLicensing configuration service provider](windowslicensing-configuration-service-provider.md)
+[WindowsLicensing configuration service provider](windowslicensing-csp.md)
 
  
 

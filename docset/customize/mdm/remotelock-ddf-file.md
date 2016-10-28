@@ -106,7 +106,7 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteL
 ## Related topics
 
 
-[RemoteLock configuration service provider](remotelock-configuration-service-provider.md)
+[RemoteLock configuration service provider](remotelock-csp.md)
 
  
 

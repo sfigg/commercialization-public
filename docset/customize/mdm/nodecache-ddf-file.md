@@ -208,7 +208,7 @@ This topic shows the OMA DM device description framework (DDF) for the **NodeCac
 ## Related topics
 
 
-[NodeCache configuration service provider](nodecache-configuration-service-provider.md)
+[NodeCache configuration service provider](nodecache-csp.md)
 
  
 

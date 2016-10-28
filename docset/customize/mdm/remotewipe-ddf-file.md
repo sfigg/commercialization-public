@@ -98,7 +98,7 @@ THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
 ## Related topics
 
 
-[RemoteWipe configuration service provider](remotewipe-configuration-service-provider.md)
+[RemoteWipe configuration service provider](remotewipe-csp.md)
 
  
 

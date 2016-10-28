@@ -112,7 +112,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Registr
 ## Related topics
 
 
-[Registry configuration service provider](registry-configuration-service-provider.md)
+[Registry configuration service provider](registry-csp.md)
 
  
 

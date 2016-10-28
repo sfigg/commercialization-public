@@ -20,7 +20,7 @@ The following diagram shows the NodeCache configuration service provider in tree
 Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax. Starting in Windows 10, version 1607 the value is com.microsoft/1.0/MDM/NodeCache.
 
 <a href="" id="providerid"></a>***ProviderID***  
-Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
+Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
