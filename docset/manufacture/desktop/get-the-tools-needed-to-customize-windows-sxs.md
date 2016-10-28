@@ -56,6 +56,8 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 ### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1607
 
 [Windows ADK for Windows 10, version 1607](http://go.microsoft.com/fwlink/?LinkId=526803)
+or
+X21-05999: Win 10 ADK
 
 ### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
