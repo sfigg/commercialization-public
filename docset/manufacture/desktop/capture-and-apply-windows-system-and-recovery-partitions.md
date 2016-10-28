@@ -53,9 +53,10 @@ Here's a few ways to apply the image:
 
      
 
-    ``` syntax
+    ``` 
     diskpart /s D:\CreatePartitions-UEFI.txt
     ```
+    
 
     Where D: is a USB flash drive or other file storage location.
 
