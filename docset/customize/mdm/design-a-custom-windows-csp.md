@@ -51,11 +51,11 @@ All of the nodes defined in the previous step must reside under the configuratio
 
 There are three typical scenarios for grouping and structuring the nodes:
 
--   If all of the data belongs to the same component and no further categorizing or grouping is required, you can build a flat tree in which all values are stored directly under the root node. For examples of this design, see [DevInfo configuration service provider](devinfo-configuration-service-provider.md), [HotSpot configuration service provider](hotspot-configuration-service-provider.md), and [w4 APPLICATION configuration service provider](w4-application-configuration-service-provider.md).
+-   If all of the data belongs to the same component and no further categorizing or grouping is required, you can build a flat tree in which all values are stored directly under the root node. For examples of this design, see [DevInfo configuration service provider](devinfo-csp.md), [HotSpot configuration service provider](hotspot-csp.md), and [w4 APPLICATION configuration service provider](w4-application-csp.md).
 
 -   If the configuration service provider's nodes represent a preexisting set of entities whose structure is well-defined (such as directories and files), the configuration service provider's nodes can simply mirror the existing structure.
 
--   If the data must be grouped by type or component, a more complex structure is required. This is especially true when there can be multiple instances of the dataset on the device, and each set is indexed by an ID, account name, or account type. In this case, you must build a more complex tree structure. For examples, see [ActiveSync configuration service provider](activesync-configuration-service-provider.md), [CertificateStore configuration service provider](certificatestore-configuration-service-provider.md), and [CMPolicy configuration service provider](cmpolicy-configuration-service-provider.md).
+-   If the data must be grouped by type or component, a more complex structure is required. This is especially true when there can be multiple instances of the dataset on the device, and each set is indexed by an ID, account name, or account type. In this case, you must build a more complex tree structure. For examples, see [ActiveSync configuration service provider](activesync-csp.md), [CertificateStore configuration service provider](certificatestore-csp.md), and [CMPolicy configuration service provider](cmpolicy-csp.md).
 
 ### Example
 

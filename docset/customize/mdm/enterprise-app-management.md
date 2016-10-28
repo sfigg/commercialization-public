@@ -26,7 +26,7 @@ Windows 10 offers the ability for management servers to:
 
 ## Inventory your apps
 
-Windows 10 lets you inventory all apps deployed to a user and all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](enterprisemodernappmanagement-configuration-service-provider.md) configuration service provider (CSP) inventories packaged apps and does not include traditional Win32 apps installed via MSI or executables. When the apps are inventoried they are separated based on the following app classifications:
+Windows 10 lets you inventory all apps deployed to a user and all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and does not include traditional Win32 apps installed via MSI or executables. When the apps are inventoried they are separated based on the following app classifications:
 
 -   Store - Apps that are from the Windows Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
 -   nonStore - Apps that were not acquired from the Windows Store.
@@ -63,7 +63,7 @@ Here are the nodes for each package full name:
 -   Users
 -   IsProvisioned
 
-For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md).
+For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md).
 
 ### App inventory
 
@@ -109,7 +109,7 @@ Here are the nodes for each license ID:
 -   LicenseUsage
 -   RequestedID
 
-For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md).
+For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md).
 
 > **Note**  The LicenseID in the CSP is the content ID for the license.
 
@@ -222,7 +222,7 @@ Here is an example.
 
 ## Install your apps
 
-You can install apps to a specific user or to all users of a device. Apps are installed directly from the Windows Store or in some cases from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-configuration-service-provider.md) to install apps.
+You can install apps to a specific user or to all users of a device. Apps are installed directly from the Windows Store or in some cases from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) to install apps.
 
 ### Deploy apps to user from the Store
 

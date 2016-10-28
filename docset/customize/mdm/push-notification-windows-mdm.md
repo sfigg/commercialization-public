@@ -13,7 +13,7 @@ ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
 
 # Push notification support for device management
 
-The [DMClient CSP](dmclient-configuration-service-provider.md) supports the ability to configure push-initiated device management sessions. Using the [Windows Notification Services (WNS)](http://go.microsoft.com/fwlink/p/?linkid=528800), a management server can request a device to establish a management session with the server through a push notification. A device is configured to support push by the management server by providing the device with a PFN for an application. Once the device is configured, it registers a persistent connection with the WNS cloud (Battery Sense and Data Sense conditions permitting).
+The [DMClient CSP](dmclient-csp.md) supports the ability to configure push-initiated device management sessions. Using the [Windows Notification Services (WNS)](http://go.microsoft.com/fwlink/p/?linkid=528800), a management server can request a device to establish a management session with the server through a push notification. A device is configured to support push by the management server by providing the device with a PFN for an application. Once the device is configured, it registers a persistent connection with the WNS cloud (Battery Sense and Data Sense conditions permitting).
 
 To initiate a device management session, the management server must first authenticate with WNS using its SID and client secret. Once authenticated, the server receives a token that it can use to initiate a raw push notification for any ChannelURI. When the management server wants to initiate a device management session with a device, it can utilize its token and the device ChannelURI and begin communicating with the device.
 

@@ -1452,7 +1452,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>Completely updated enrollment procedures and screenshots.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">[WiFi CSP](wifi-configuration-service-provider.md)</td>
+<td style="vertical-align:top">[WiFi CSP](wifi-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following nodes:</p>
 <ul>
 <li>DisableInternetConnectivityChecks</li>
