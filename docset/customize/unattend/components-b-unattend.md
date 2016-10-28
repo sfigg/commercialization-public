@@ -105,7 +105,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Specifies OEM information for a customized Help and Support page.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md)</p></td>
+<td><p>[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md)</p></td>
 <td><p>Contains network policy settings.</p></td>
 </tr>
 <tr class="even">

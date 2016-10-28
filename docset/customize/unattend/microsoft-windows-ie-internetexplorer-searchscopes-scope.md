@@ -33,47 +33,47 @@ ms.sitesec: msdn
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[FaviconURL](microsoft-windows-ie-internetexplorersearchscopesscopefaviconurl.md)</p></td>
+<td><p>[FaviconURL](microsoft-windows-ie-internetexplorer-searchscopes-scopefaviconurl.md)</p></td>
 <td><p>Specifies the path to an icon for a specific Search Scope item.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[PreviewURL](microsoft-windows-ie-internetexplorersearchscopesscopepreviewurl.md)</p></td>
+<td><p>[PreviewURL](microsoft-windows-ie-internetexplorer-searchscopes-scopepreviewurl.md)</p></td>
 <td><p>Specifies the URL where previews are shown in the <strong>Accelerator</strong> window.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ScopeDefault](microsoft-windows-ie-internetexplorersearchscopesscopescopedefault.md)</p></td>
+<td><p>[ScopeDefault](microsoft-windows-ie-internetexplorer-searchscopes-scopescopedefault.md)</p></td>
 <td><p>Specifies whether the Search Scope item is the default search provider.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[ScopeDisplayName](microsoft-windows-ie-internetexplorersearchscopesscopescopedisplayname.md)</p></td>
+<td><p>[ScopeDisplayName](microsoft-windows-ie-internetexplorer-searchscopes-scopescopedisplayname.md)</p></td>
 <td><p>Specifies the display name for the search provider.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ScopeKey](microsoft-windows-ie-internetexplorersearchscopesscopescopekey.md)</p></td>
+<td><p>[ScopeKey](microsoft-windows-ie-internetexplorer-searchscopes-scopescopekey.md)</p></td>
 <td><p>Specifies the unique string for the search provider.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[ScopeUrl](microsoft-windows-ie-internetexplorersearchscopesscopescopeurl.md)</p></td>
+<td><p>[ScopeUrl](microsoft-windows-ie-internetexplorer-searchscopes-scopescopeurl.md)</p></td>
 <td><p>Specifies the URL for the search provider.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ShowSearchSuggestions](microsoft-windows-ie-internetexplorersearchscopesscopeshowsearchsuggestions.md)</p></td>
+<td><p>[ShowSearchSuggestions](microsoft-windows-ie-internetexplorer-searchscopes-scopeshowsearchsuggestions.md)</p></td>
 <td><p>Specifies whether Search Suggestions are shown.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[SuggestionsURL](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl.md)</p></td>
+<td><p>[SuggestionsURL](microsoft-windows-ie-internetexplorer-searchscopes-scopesuggestionsurl.md)</p></td>
 <td><p>Specifies suggestions that appear to the user during a search, by using a search that is based on XML.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SuggestionsURL_JSON](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)</p></td>
+<td><p>[SuggestionsURL_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scopesuggestionsurl-json.md)</p></td>
 <td><p>Specifies suggestions that appear to the user during a search, by using a search that is based on JavaScript Object Notation (JSON).</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
@@ -90,7 +90,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | **Scope**
+[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md) | **Scope**
 
 ## Applies To
 
@@ -121,7 +121,7 @@ The following example shows how to set search providers.
 ## Related topics
 
 
-[SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md)
+[SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md)
 
  
 

@@ -41,12 +41,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMSendTimeOut**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMSendTimeOut**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-.md).
 
 ## XML Example
 
@@ -61,7 +61,7 @@ The following XML output shows how to specify that the system waits two minutes 
 ## Related topics
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md)
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
  
 

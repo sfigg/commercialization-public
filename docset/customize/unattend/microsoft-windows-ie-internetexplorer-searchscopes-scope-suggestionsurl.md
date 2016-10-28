@@ -16,7 +16,7 @@ ms.sitesec: msdn
 The `SuggestionsURL` setting specifies the URL where suggestions can be retrieved by using a search based on XML.
 
 **Note**  
-To specify search suggestions by using a search based on JavaScript Object Notation (JSON), use the [SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md) setting instead.
+To specify search suggestions by using a search based on JavaScript Object Notation (JSON), use the [SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scopesuggestionsurl-json.md) setting instead.
 
  
 
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md) | `SuggestionsURL`
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md) | [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md) | `SuggestionsURL`
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output shows how to specify a URL to provide search suggestion
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorersearchscopesscopesuggestionsurl-json.md)
+[SuggestionsURL\_JSON](microsoft-windows-ie-internetexplorer-searchscopes-scopesuggestionsurl-json.md)
 
  
 

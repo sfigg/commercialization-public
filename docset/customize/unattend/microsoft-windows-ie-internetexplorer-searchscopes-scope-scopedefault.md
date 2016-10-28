@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md) | **ScopeDefault**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md) | [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md) | **ScopeDefault**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following XML output shows how to set search providers.
 ## Related topics
 
 
-[Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md)
+[Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md)
 
  
 

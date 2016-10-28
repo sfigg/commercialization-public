@@ -35,212 +35,212 @@ The following table describes these settings:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Accelerators](microsoft-windows-ie-internetexploreraccelerators.md)</p></td>
+<td><p>[Accelerators](microsoft-windows-ie-internetexplorer-accelerators.md)</p></td>
 <td><p>Contains settings for Accelerators.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[AllowedSites](microsoft-windows-ie-internetexplorerallowedsites.md)</p></td>
+<td><p>[AllowedSites](microsoft-windows-ie-internetexplorer-allowedsites.md)</p></td>
 <td><p>Specifies the Internet sites that Pop-up Blocker allows to use pop-up windows.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[BlockPopups](microsoft-windows-ie-internetexplorerblockpopups.md)</p></td>
+<td><p>[BlockPopups](microsoft-windows-ie-internetexplorer-blockpopups.md)</p></td>
 <td><p>Specifies whether to block pop-up windows for the end user.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[CommandLabelDisplay](microsoft-windows-ie-internetexplorercommandlabeldisplay.md)</p></td>
+<td><p>[CommandLabelDisplay](microsoft-windows-ie-internetexplorer-commandlabeldisplay.md)</p></td>
 <td><p>Specifies whether tooltips appear next to the icons in the <strong>Command</strong> bar.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CompanyName](microsoft-windows-ie-internetexplorercompanyname.md)</p></td>
+<td><p>[CompanyName](microsoft-windows-ie-internetexplorer-companyname.md)</p></td>
 <td><p>Specifies the name of the company that created the unattended installation answer file and that the company has a valid Internet Explorer Administrator Kit (IEAK) license.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[CompatibilityViewDomains](microsoft-windows-ie-internetexplorercompatibilityviewdomains.md)</p></td>
+<td><p>[CompatibilityViewDomains](microsoft-windows-ie-internetexplorer-compatibilityviewdomains.md)</p></td>
 <td><p>Specifies the list of domains that will be rendered in Internet Explorer 7 Compatibility View mode.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DisableAccelerators](microsoft-windows-ie-internetexplorerdisableaccelerators.md)</p></td>
+<td><p>[DisableAccelerators](microsoft-windows-ie-internetexplorer-disableaccelerators.md)</p></td>
 <td><p>Specifies whether Accelerators are disabled.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableDataExecutionPrevention](microsoft-windows-ie-internetexplorerdisabledataexecutionprevention.md)</p></td>
+<td><p>[DisableDataExecutionPrevention](microsoft-windows-ie-internetexplorer-disabledataexecutionprevention.md)</p></td>
 <td><p>Specifies whether Internet Explorer prevents arbitrary code execution from a virtual memory page that is marked non-executable.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DisableDevTools](microsoft-windows-ie-internetexplorerdisabledevtools.md)</p></td>
+<td><p>[DisableDevTools](microsoft-windows-ie-internetexplorer-disabledevtools.md)</p></td>
 <td><p>Specifies whether development tools are disabled.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableFirstRunWizard](microsoft-windows-ie-internetexplorerdisablefirstrunwizard.md)</p></td>
+<td><p>[DisableFirstRunWizard](microsoft-windows-ie-internetexplorer-disablefirstrunwizard.md)</p></td>
 <td><p>Specifies whether to skip the First Run Wizard when the user opens Internet Explorer for the first time.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DisableOOBAccelerators](microsoft-windows-ie-internetexplorerdisableoobaccelerators.md)</p></td>
+<td><p>[DisableOOBAccelerators](microsoft-windows-ie-internetexplorer-disableoobaccelerators.md)</p></td>
 <td><p>Specifies whether the built-in Accelerators are disabled.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[FavoriteBarItems](microsoft-windows-ie-internetexplorerfavoritebaritems.md)</p></td>
+<td><p>[FavoriteBarItems](microsoft-windows-ie-internetexplorer-favoritebaritems.md)</p></td>
 <td><p>Contains settings to add predefined Favorite items to the <strong>Favorites</strong> bar.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FavoritesDelete](microsoft-windows-ie-internetexplorerfavoritesdelete.md)</p></td>
+<td><p>[FavoritesDelete](microsoft-windows-ie-internetexplorer-favoritesdelete.md)</p></td>
 <td><p>Specifies whether pre-existing Favorites and quick links are deleted.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md)</p></td>
+<td><p>[FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md)</p></td>
 <td><p>Specifies shortcuts for the Favorites folder.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FavoritesOnTop](microsoft-windows-ie-internetexplorerfavoritesontop.md)</p></td>
+<td><p>[FavoritesOnTop](microsoft-windows-ie-internetexplorer-favoritesontop.md)</p></td>
 <td><p>Specifies whether to add new Favorites to the top of the <strong>Favorites</strong> menu.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FeedList](microsoft-windows-ie-internetexplorerfeedlist.md)</p></td>
+<td><p>[FeedList](microsoft-windows-ie-internetexplorer-feedlist.md)</p></td>
 <td><p>Contains feed items.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FilterLevel](microsoft-windows-ie-internetexplorerfilterlevel.md)</p></td>
+<td><p>[FilterLevel](microsoft-windows-ie-internetexplorer-filterlevel.md)</p></td>
 <td><p>Specifies the level of Pop-up Blocker filtering.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[FindProvidersURL](microsoft-windows-ie-internetexplorerfindprovidersurl.md)</p></td>
+<td><p>[FindProvidersURL](microsoft-windows-ie-internetexplorer-findprovidersurl.md)</p></td>
 <td><p>Specifies the URL of the <strong>Find More Providers</strong> option in the <strong>Search</strong> bar.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[GroupTabs](microsoft-windows-ie-internetexplorergrouptabs.md)</p></td>
+<td><p>[GroupTabs](microsoft-windows-ie-internetexplorer-grouptabs.md)</p></td>
 <td><p>Specifies whether tabs appear in groups.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[Help_Page](help-page-win7-microsoft-windows-ie-internetexplorerhelp-page.md)</p></td>
+<td><p>[Help_Page](help-page-win7-microsoft-windows-ie-internetexplorer-help-page.md)</p></td>
 <td><p>Specifies the URL to your technical support website.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Home_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md)</p></td>
+<td><p>[Home_Page](home-page-win7-microsoft-windows-ie-internetexplorer-home-page.md)</p></td>
 <td><p>Specifies the URL for the default home page.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md)</p></td>
+<td><p>[InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)</p></td>
 <td><p>Contains settings for configuring Browser Helper Objects.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md)</p></td>
+<td><p>[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)</p></td>
 <td><p>Contains settings for configuring browser extensions.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md)</p></td>
+<td><p>[InstalledToolbarsList](microsoft-windows-ie-internetexplorer-installedtoolbarslist.md)</p></td>
 <td><p>Contains settings for configuring add-on toolbars.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IntranetCompatibilityMode](microsoft-windows-ie-internetexplorerintranetcompatibilitymode.md)</p></td>
+<td><p>[IntranetCompatibilityMode](microsoft-windows-ie-internetexplorer-intranetcompatibilitymode.md)</p></td>
 <td><p>Specifies the default rendering mode for intranet sites.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md)</p></td>
+<td><p>[LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md)</p></td>
 <td><p>Specifies the local intranet sites whose content you trust.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LockToolbars](microsoft-windows-ie-internetexplorerlocktoolbars.md)</p></td>
+<td><p>[LockToolbars](microsoft-windows-ie-internetexplorer-locktoolbars.md)</p></td>
 <td><p>Specifies whether the toolbars are locked in place.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MSCompatibilityMode](microsoft-windows-ie-internetexplorermscompatibilitymode.md)</p></td>
+<td><p>[MSCompatibilityMode](microsoft-windows-ie-internetexplorer-mscompatibilitymode.md)</p></td>
 <td><p>Specifies whether Compatibility View uses updated website lists from Microsoft®.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PlaySound](microsoft-windows-ie-internetexplorerplaysound.md)</p></td>
+<td><p>[PlaySound](microsoft-windows-ie-internetexplorer-playsound.md)</p></td>
 <td><p>Specifies whether the end user hears a sound when a pop-up window is blocked.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[PreApprovedAddons](microsoft-windows-ie-internetexplorerpreapprovedaddons.md)</p></td>
+<td><p>[PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)</p></td>
 <td><p>Contains settings for configuring pre-approved add-on modules.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 9</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PrivacyAdvisorMode](microsoft-windows-ie-internetexplorerprivacyadvisormode.md)</p></td>
+<td><p>[PrivacyAdvisorMode](microsoft-windows-ie-internetexplorer-privacyadvisormode.md)</p></td>
 <td><p>Specifies the Privacy Advisor mode.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[QuickLinkList](microsoft-windows-ie-internetexplorerquicklinklist.md)</p></td>
+<td><p>[QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md)</p></td>
 <td><p>Specifies shortcuts for the <strong>Favorites</strong> toolbar.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md)</p></td>
+<td><p>[SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md)</p></td>
 <td><p>Specifies search providers.</p></td>
-<td><p>See [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md).</p></td>
+<td><p>See [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md).</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowLeftAddressToolbar](microsoft-windows-ie-internetexplorershowleftaddresstoolbar.md)</p></td>
+<td><p>[ShowLeftAddressToolbar](microsoft-windows-ie-internetexplorer-showleftaddresstoolbar.md)</p></td>
 <td><p>Specifies where the <strong>Stop</strong> and <strong>Refresh</strong> buttons appear on the <strong>Address</strong> bar.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ShowInformationBar](microsoft-windows-ie-internetexplorershowinformationbar.md)</p></td>
+<td><p>[ShowInformationBar](microsoft-windows-ie-internetexplorer-showinformationbar.md)</p></td>
 <td><p>Specifies whether to display the <strong>Information</strong> bar when a pop-up window is blocked.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>
 </tr>
 <tr class="even">
-<td><p>[StartPages](microsoft-windows-ie-internetexplorerstartpages.md)</p></td>
+<td><p>[StartPages](microsoft-windows-ie-internetexplorer-startpages.md)</p></td>
 <td><p>Specifies start pages.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SuggestedSitesEnabled](microsoft-windows-ie-internetexplorersuggestedsitesenabled.md)</p></td>
+<td><p>[SuggestedSitesEnabled](microsoft-windows-ie-internetexplorer-suggestedsitesenabled.md)</p></td>
 <td><p>Specifies whether the <strong>Suggested Sites</strong> Web Slice appears.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[TabProcessGrowth](microsoft-windows-ie-internetexplorertabprocessgrowth.md)</p></td>
+<td><p>[TabProcessGrowth](microsoft-windows-ie-internetexplorer-tabprocessgrowth.md)</p></td>
 <td><p>Sets the rate at which new tab processes are created.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)</p></td>
+<td><p>[TrustedSites](microsoft-windows-ie-internetexplorer-trustedsites.md)</p></td>
 <td><p>Specifies the Internet sites whose content is trusted.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[UserAgent](microsoft-windows-ie-internetexploreruseragent.md)</p></td>
+<td><p>[UserAgent](microsoft-windows-ie-internetexplorer-useragent.md)</p></td>
 <td><p>Specifies the text string that is appended to the default end-user agent string.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Window_Title_CN](window-title-cn-win7-microsoft-windows-ie-internetexplorerwindow-title-cn.md)</p></td>
+<td><p>[Window_Title_CN](microsoft-windows-ie-internetexplorer-window-title-cn.md)</p></td>
 <td><p>Specifies the company name that is appended to the window-title text.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p>
 <p>This setting only applies to Internet Explorer for the desktop.</p></td>

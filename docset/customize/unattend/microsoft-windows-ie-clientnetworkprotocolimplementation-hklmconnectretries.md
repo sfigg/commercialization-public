@@ -46,12 +46,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMConnectRetries**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md) | **HKLMConnectRetries**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md).
 
 ## XML Examples
 
@@ -71,7 +71,7 @@ The following XML example shows how to specify that the system try 10 IP addres
 ## Related topics
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md)
 
  
 

@@ -44,7 +44,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorersearchscopes.md) | [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md) | `PreviewURL`
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [SearchScopes](microsoft-windows-ie-internetexplorer-searchscopes.md) | [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md) | `PreviewURL`
 
 ## Applies To
 

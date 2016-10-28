@@ -45,12 +45,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMCookiesPerUserItem**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md) | **HKLMCookiesPerUserItem**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md).
 
 ## XML Example
 
@@ -64,11 +64,11 @@ The following XML output shows how to specify that there is a common cache on th
 ## Related topics
 
 
-[Microsoft-Windows-IE-ClientNetworkProtocolImplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-win7-microsoft-windows-ie-clientnetworkprotocolimplementation.md)
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md)
 
-[HKLMContentPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementationhklmcontentperuseritem.md)
+[HKLMContentPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmcontentperuseritem.md)
 
-[HKLMHistoryPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementationhklmhistoryperuseritem.md)
+[HKLMHistoryPerUserItem](microsoft-windows-ie-clientnetworkprotocolimplementation-hklmhistoryperuseritem.md)
 
  
 

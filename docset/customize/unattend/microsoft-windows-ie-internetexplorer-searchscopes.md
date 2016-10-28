@@ -32,7 +32,7 @@ If the user performs an upgrade to the operating system, the existing search pro
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md)</p></td>
+<td><p>[Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md)</p></td>
 <td><p>Specifies a search provider.</p></td>
 </tr>
 </tbody>
@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of which Search Scope settings are available in each version of Internet Explorer®, see [Scope](microsoft-windows-ie-internetexplorersearchscopesscope.md).
+For a list of which Search Scope settings are available in each version of Internet Explorer®, see [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md).
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 

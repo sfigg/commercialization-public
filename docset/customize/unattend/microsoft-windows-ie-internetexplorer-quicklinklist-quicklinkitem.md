@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[QLID](microsoft-windows-ie-internetexplorerquicklinklistquicklinkitemqlid.md)</p></td>
+<td><p>[QLID](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemqlid.md)</p></td>
 <td><p>Specifies a unique ID to associate with a <code>QuickLinkItem</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[QuickLinkName](microsoft-windows-ie-internetexplorerquicklinklistquicklinkitemquicklinkname.md)</p></td>
+<td><p>[QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemquicklinkname.md)</p></td>
 <td><p>Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[QuickLinkUrl](microsoft-windows-ie-internetexplorerquicklinklistquicklinkitemquicklinkurl.md)</p></td>
+<td><p>[QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemquicklinkurl.md)</p></td>
 <td><p>Specifies a URL value to associate with a <code>QuickLinkItem</code>.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorerquicklinklist.md) | **QuickLinkItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | **QuickLinkItem**
 
 ## Applies To
 
@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to configure a [QuickLinkList](microsoft-windows-ie-internetexplorerquicklinklist.md).
+The following XML output shows how to configure a [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md).
 
 ``` syntax
 <QuickLinkList>
@@ -79,7 +79,7 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 ## Related topics
 
 
-[QuickLinkList](microsoft-windows-ie-internetexplorerquicklinklist.md)
+[QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md)
 
  
 

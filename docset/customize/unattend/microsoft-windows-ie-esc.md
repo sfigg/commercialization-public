@@ -19,7 +19,7 @@ You can specify:
 
 -   For whom ESC is enabled: administrators only; all users, both administrators and all users; or neither.
 
--   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md) and [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md).
+-   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md) and [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md).
 
 ## In This Section
 
@@ -51,9 +51,9 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 
-[LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md)
+[LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md)
 
-[TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md)
+[TrustedSites](microsoft-windows-ie-internetexplorer-trustedsites.md)
 
 [Components](components-b-unattend.md)
 

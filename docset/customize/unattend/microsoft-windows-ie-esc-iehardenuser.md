@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # IEHardenUser
 
 
-`IEHardenUser` specifies whether Internet Explorer® Enhanced Security Configuration (ESC) is enabled for all users. When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the Local Intranet zone or the Trusted Sites zone.
+`IEHardenUser` specifies whether Internet Explorer Enhanced Security Configuration (ESC) is enabled for all users. When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the Local Intranet zone or the Trusted Sites zone.
 
 ## Values
 
