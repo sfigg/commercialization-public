@@ -51,7 +51,7 @@ If the Internet sharing service is already in a sharing state, setting this node
 <a href="" id="tetheringnaiconnection"></a>**TetheringNAIConnection**  
 Optional. Specifies the CDMA TetheringNAI Connection Manager cellular connection that Internet sharing will use as a public connection.
 
-If a CDMA mobile operator requires using a Tethering NAI during Internet sharing, they must use the [CM\_CellularEntries configuration service provider](cm-cellularentries-configuration-service-provider.md) to provision a TetheringNAI connection and then specify the provisioned connection in this node.
+If a CDMA mobile operator requires using a Tethering NAI during Internet sharing, they must use the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) to provision a TetheringNAI connection and then specify the provisioned connection in this node.
 
 Specified connections will be mapped, by policy, to the Internet sharing service. All attempts to enumerate Connection Manager connections for the Internet sharing service will return only the mapped connections.
 
@@ -127,7 +127,7 @@ Changes to this node require a reboot.
 ## Additional requirements for CDMA networks
 
 
-For CDMA networks that use a separate Network Access Identity (NAI) for Internet sharing, a new parm, TetheringNAI, has been added in the [CM\_CellularEntries configuration service provider](cm-cellularentries-configuration-service-provider.md) configuration service provider. The following sample demonstrates how to specify the connection.
+For CDMA networks that use a separate Network Access Identity (NAI) for Internet sharing, a new parm, TetheringNAI, has been added in the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) configuration service provider. The following sample demonstrates how to specify the connection.
 
 ``` syntax
 <wap-provisioningdoc>

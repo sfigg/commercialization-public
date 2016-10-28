@@ -211,7 +211,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[DeviceInstanceService CSP](deviceinstanceservice-configuration-service-provider.md)</td>
+<td>[DeviceInstanceService CSP](deviceinstanceservice-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -700,7 +700,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 <tr class="even">
-<td>[W4 APPLICATION CSP](w4-application-configuration-service-provider.md)</td>
+<td>[W4 APPLICATION CSP](w4-application-csp.md)</td>
 <td></td>
 <td></td>
 <td></td>
@@ -710,7 +710,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
-<td>[w7 APPLICATION CSP](w7-application-configuration-service-provider.md)</td>
+<td>[w7 APPLICATION CSP](w7-application-csp.md)</td>
 <td></td>
 <td></td>
 <td></td>
@@ -720,7 +720,7 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
-<td>[Wi-Fi CSP](wifi-configuration-service-provider.md)</td>
+<td>[Wi-Fi CSP](wifi-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -793,11 +793,11 @@ The following list shows the configuration service providers supported in Window
 | [dmclient csp](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [enterprisemodernappmanagement csp](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [nodecache csp](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [policy csp](policy-configuration-service-provider.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [policy csp](policy-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [rootcatrustedcertificates csp](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [update csp](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [vpnv2 csp](vpnv2-csp.md)                                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [wi-fi csp](wifi-configuration-service-provider.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [wi-fi csp](wifi-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [windowslicensing csp](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
  

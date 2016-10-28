@@ -12,7 +12,7 @@ ms.assetid: 05ca946a-1c0b-4e11-8d7e-854e14740707
 
 The VPN configuration service provider allows the MDM server to configure the VPN profile of the device. Windows 10 supports both IKEv2 VPN and SSL VPN profiles. For information about IKEv2, see [Configure IKEv2-based Remote Access](http://technet.microsoft.com/library/ff687731%28v=ws.10%29.aspx).
 
-> **Note**   The VPN CSP is deprecated in Windows 10 and it only supported in Windows 10 Mobile for backward compatibility. Use [VPNv2 CSP](vpnv2-configuration-service-provider.md) instead.
+> **Note**   The VPN CSP is deprecated in Windows 10 and it only supported in Windows 10 Mobile for backward compatibility. Use [VPNv2 CSP](vpnv2-csp.md) instead.
 
  
 

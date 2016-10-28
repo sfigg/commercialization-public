@@ -5573,7 +5573,7 @@ Footnote:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-> **Note**  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-configuration-service-provider.md).
+> **Note**  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
 
 <a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
 <p style="margin-left: 20px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
@@ -5657,21 +5657,21 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
  
-<p style="margin-left: 20px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-configuration-service-provider.md#inbox-apps). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
+<p style="margin-left: 20px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-csp.md#inbox-apps). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
 > **Note**  
->  When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-configuration-service-provider.md#inbox-apps) that you need to your list of allowed apps.
+>  When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inbox-apps) that you need to your list of allowed apps.
 >
 > Here's additional guidance for the upgrade process:
 >
->  -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+>  -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inbox-apps).
 >  -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows  Phone 8.1 publisher if you are using it.
 >  -   In the SyncML, you must use lowercase product ID.
 >  -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
->  -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-configuration-service-provider.md#inbox-apps).
+>  -   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inbox-apps).
 
 
 <p style="margin-left: 20px">An application that is running may not be immediately terminated.
@@ -5837,7 +5837,7 @@ Footnote:
 4.  Verify the setting **Save form entries** is greyed out.
 
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-configuration-service-provider.md) instead.
+> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
 
 <p style="margin-left: 20px">Specifies whether the browser is allowed on the device.

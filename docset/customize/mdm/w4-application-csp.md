@@ -48,7 +48,7 @@ Required. Specifies one logical proxy with a matching PROXY-ID. It is only possi
 The TO-PROXY value must be set to the value of the PROXY ID in PXLOGICAL that defines the MMS specific-proxy.
 
 <a href="" id="to-napid"></a>**TO-NAPID**  
-Required. Specifies the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](napdef-configuration-service-provider.md).
+Required. Specifies the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](napdef-csp.md).
 
 <a href="" id="addr"></a>**ADDR**  
 Required. Specifies the address of the MMS application server, as a string. The possible values to configure the ADDR parameter are:

@@ -34,7 +34,7 @@ The following list describes the characteristics and parameters.
 
  
 
-> **Note**   When the IT admin triggers a **doWipePersistProvisionedData** action using [RemoteWipe CSP](remotewipe-configuration-service-provider.md), items stored in the Persistent folder are persisted over wipe and restored when the device boots again. The contents are not persisted if a **doWipe** action is triggered.
+> **Note**   When the IT admin triggers a **doWipePersistProvisionedData** action using [RemoteWipe CSP](remotewipe-csp.md), items stored in the Persistent folder are persisted over wipe and restored when the device boots again. The contents are not persisted if a **doWipe** action is triggered.
 
  
 

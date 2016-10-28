@@ -726,7 +726,7 @@ Not supported in Windows 10.
 The parent node of whether to persist data that has been provisioned on the device.
 
 <a href="" id="persistdata-persistprovisioneddata"></a>**PersistData/PersistProvisionedData**  
-Not supported in Windows 10. Use doWipePersistProvisionedData in [RemoteWipe CSP](remotewipe-configuration-service-provider.md) instead.
+Not supported in Windows 10. Use doWipePersistProvisionedData in [RemoteWipe CSP](remotewipe-csp.md) instead.
 
 <a href="" id="clock-timezone-"></a>**Clock/TimeZone/**  
 An integer that specifies the time zone of the device. The following table shows the possible values.

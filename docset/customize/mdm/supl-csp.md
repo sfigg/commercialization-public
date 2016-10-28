@@ -380,7 +380,7 @@ The following optional nodes are not supported on Windows devices.
 
 If the configuration application tries to set, delete or query these nodes, a response indicating this node is not implemented will be returned over OMA DM. In OMA Client Provisioning, the request to set this node will be ignored and the configuration service provider will continue processing the rest of the nodes.
 
-If a mobile operator requires the communication with the H-SLP to take place over a specific connection rather than a default cellular connection, then this must be configured by using the [CM\_CellularEntries configuration service provider](cm-cellularentries-configuration-service-provider.md) and the [CM\_ProxyEntries configuration service provider](cm-proxyentries-configuration-service-provider.md) to map the H-SLP server with the required connection.
+If a mobile operator requires the communication with the H-SLP to take place over a specific connection rather than a default cellular connection, then this must be configured by using the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) and the [CM\_ProxyEntries configuration service provider](cm-proxyentries-csp.md) to map the H-SLP server with the required connection.
 
 ## OMA Client Provisioning examples
 

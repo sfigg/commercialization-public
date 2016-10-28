@@ -13,7 +13,7 @@ ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 The EnterpriseDataProtection configuration service provider (CSP) is used to configure Windows Information Protection (WIP) (formerly known as Enterprise Data Protection) specific settings. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 > **Note**  
-To make WIP functional the AppLocker CSP and the network isolation specific settings must also be configured. For more information, see [AppLocker CSP](applocker-configuration-service-provider.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
+To make WIP functional the AppLocker CSP and the network isolation specific settings must also be configured. For more information, see [AppLocker CSP](applocker-csp.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
 
 This CSP was added in Windows 10, version 1607.
 
