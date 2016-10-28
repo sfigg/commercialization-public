@@ -24,21 +24,28 @@ Let's get started!
 
 *  [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
 *  [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
-*  [Lab 1a: Install Windows PE](install-windows-pe-sxs.md)
-*  [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+*  [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
+*  [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
-**Customize images**
+**Customize Window images**
 
-*  [Lab 1c: Add .inf-style drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-   
-   Add updates (including hotfixes, general distribution releases, or service packs) before installing languages. If you add an update later, you'll need to re-add the language.
-   
-*  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
-   
-   Add languages before adding apps (UWA or desktop applications). If you add a language later, you'll need to re-add the apps.
+In these labs, you'll modify the Windows image (install.wim). While you can perform most of these tasks in any order, a few have dependencies:
+*    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
+*    **Add languages before apps**. This includes universal Windows apps and desktop applications. If you add a language later, you'll need to re-add the apps.
 
-*  [Lab 1e: Change settings, boot to audit, enter product keys, and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+To make the changes, you'll mount the image contents into a temporary folder, and use tools like DISM to make the changes. Unmount the images and redeploy.
+   ![image: Mounting an image, making changes, and unmounting the image](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-*  [Lab 1f: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+*  [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+*  [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+*  [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
+*  [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+*  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+*  [Lab 8: Add a license agreement (OOBE.xml)](add-a-license-agreement.md)
+*  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
-*  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+**Final tasks**
+
+*  [Lab 10: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 11: Shrink your image size](shrink-your-image-size.md)
+*  [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)

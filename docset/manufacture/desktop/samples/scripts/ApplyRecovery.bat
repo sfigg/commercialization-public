@@ -1,8 +1,26 @@
 @echo == ApplyRecovery.bat ==
+@echo This script applies the Windows recovery environment (WinRE.wim).
+@echo Prerequisite: apply the Windows image with ApplyImage.bat.
 @echo  *********************************************************************
+@echo  UPDATE (OCTOBER 2016):
+@echo  This script now has an option to let you specify a recovery image.
+@echo  Usage:
+@echo    ApplyRecovery.bat D:\recoveryimages\WinRE-French.wim
+@echo.  
+@echo  By default, this script applies the recovery image that's built into
+@echo  the Windows image (\Windows\System32\Recovery\Winre.wim).
+@echo  *********************************************************************
+@SET RECOVERYIMAGE="W:\Windows\System32\Recovery\Winre.wim"
+@echo   Check to see if a custom recovery image was specified
+@if %1.==.     echo Using the default recovery image (%RECOVERYIMAGE%)  
+@if not %1.==. echo Using a custom recovery image: %1.
+@if not %1.==. SET RECOVERYIMAGE=%1
+@echo   Check to see if the image exists
+@if not exist %RECOVERYIMAGE% echo ERROR: Recovery image: %RECOVERYIMAGE% not found.
+@if not exist %RECOVERYIMAGE% goto END
 @echo  == Copy the Windows RE image to the Windows RE Tools partition ==
-md R:\Recovery\WindowsRE
-xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
+@md R:\Recovery\WindowsRE
+@xcopy /h %RECOVERYIMAGE% R:\Recovery\WindowsRE\
 @echo  *********************************************************************
 @echo  == Register the location of the recovery tools ==
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows

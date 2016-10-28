@@ -2,18 +2,23 @@
 author: kpacquer
 Description: 'Deploy Windows using a script'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1b: Deploy Windows using a script'
+title: 'Lab 2: Deploy Windows using a script'
 ---
 
-# Lab 1b: Deploy Windows using a script
+# Lab 2: Deploy Windows using a script
 
 You can use scripts to take a Windows image and deploy Windows onto new PCs quickly. You can modify these scripts to change the size of the drive partitions, or to completely automate deployment. 
 
-## <span id="Copy_the_base_image"></span>Step 1: Copy the base Windows image file to the Storage USB drive
+## <spand id="Get_the_image></span>Step 1: Mount the image
 
-1.  From your technician PC, copy the main Windows image file to your USB storage drive:
+On your technician PC, right-click the image file for Windows 10, version 1607 Home (X21-08790), and select Mount. This loads the files to a temporary drive letter (example, D:). 
+
+## <span id="Copy_the_base_image"></span>Step 2: Copy the base Windows image file to the Storage USB drive
+
+1.  Copy the Windows image file to your USB storage drive:
 
     ``` syntax
+    md E:\images
     copy D:\sources\install.wim file E:\images\install.wim.
 	```
 	
@@ -21,13 +26,13 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 
 2.  Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive.
 
-## <span id="Apply_the_image"></span>Step 2: Apply the Windows image using a script
+## <span id="Apply_the_image"></span>Step 3: Apply the Windows image using a script
 
 Use deployment scripts to apply the image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.
 
-    You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
+You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
 
-    ![Image shows that to create a reference computer with customizations, you need a new PC, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
+![Image shows that to create a reference computer with customizations, you need a new PC, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
 
 1.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
 
@@ -63,9 +68,9 @@ The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.t
     The scripts apply the image to the drive, and then finishes.
 
 	
-## <span id="Apply_desktop_applications"></span>Step 3: Apply desktop applications
+## <span id="Apply_desktop_applications"></span>Step 4: Apply desktop applications
 
-**Skip this step** until you've completed [Lab 1f: Add Windows desktop applications with siloed provisioning packages (SPP)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
+**Skip this step** until you've completed [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
 
 1.  Apply desktop applications.
     ```syntax
@@ -73,15 +78,19 @@ The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.t
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
 	```
 
-## <span id="Apply_the_recovery_image"></span>Step 4: Set up the system recovery tools
+## <span id="Apply_the_recovery_image"></span>Step 5: Set up the system recovery tools
 
-Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
+**Optional: skip this step** until you've completed [Lab 10: Update the recovery image](update-the-recovery-image.md). 
+
+Include a recovery image for your final images, but it's not required for these early testing steps. 
+
+1.  Apply the Windows Recovery Environment (Windows RE) image. These tools help repair common causes of unbootable operating systems. The image is stored in a separate drive partition. The script **ApplyRecovery.bat** uses the diskpart scripts: HidePartitions-UEFI.txt and HidePartitions-BIOS.txt to set up this partition. These scripts must be placed in the same folder as ApplyRecovery.bat.
 
 	```syntax
 	D:\ApplyRecovery.bat
 	```
 
-## <span id="Reboot"></span>Step 5: Reboot
+## <span id="Reboot"></span>Step 6: Reboot
 
 Disconnect the drives, then reboot (`exit`).
 
@@ -96,9 +105,4 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 
 ## <span id="Whats_next"></span>What's next
 
-The next labs show you how to customize the images. You can do them in any order.
-*  [Lab 1c: Add drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-*  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
-*  [Lab 1e: Change settings and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
-*  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
-*  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+[Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
