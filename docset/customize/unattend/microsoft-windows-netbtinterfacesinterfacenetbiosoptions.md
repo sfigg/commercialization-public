@@ -44,17 +44,17 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **NetbiosOptions**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | **NetbiosOptions**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure Microsoft-Windows-NetBT.
+The following XML output shows how to configure microsoft-windows-netbt-.
 
 ``` syntax
 <Interfaces>
@@ -72,7 +72,7 @@ The following XML output shows how to configure Microsoft-Windows-NetBT.
 ## Related topics
 
 
-[Interface](microsoft-windows-netbtinterfacesinterface.md)
+[Interface](microsoft-windows-netbt-interfacesinterface.md)
 
  
 

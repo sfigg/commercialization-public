@@ -42,12 +42,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **IlluminanceChangeSensitivity**
+[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api-.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-.md) | **IlluminanceChangeSensitivity**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md).
 
 ## XML Example
 
@@ -63,11 +63,11 @@ The following sample XML output shows how to specify that a minimum of a 20% cha
 ## Related topics
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md)
+[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md)
 
-[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-apiadaptivebrightnessdisplayresponseinterval.md)
+[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
 
-[ALRPoints](microsoft-windows-mobilepc-sensors-apiadaptivebrightnessalrpoints.md)
+[ALRPoints](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-alrpoints.md)
 
  
 

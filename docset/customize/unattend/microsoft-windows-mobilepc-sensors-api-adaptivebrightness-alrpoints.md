@@ -49,12 +49,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md) | [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-apiadaptivebrightness.md) | **ALRPoints**
+[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api-.md) | [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-.md) | **ALRPoints**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api-win7-microsoft-windows-mobilepc-sensors-api.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md).
 
 ## XML Example
 
@@ -76,9 +76,9 @@ Adjust the screen to 80% of the baseline brightness level when the ambient light
 ## Related topics
 
 
-[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-apiadaptivebrightnessdisplayresponseinterval.md)
+[DisplayResponseInterval](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-displayresponseinterval.md)
 
-[IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-apiadaptivebrightnessilluminancechangesensitivity.md)
+[IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
 
  
 

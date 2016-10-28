@@ -137,11 +137,11 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Contains a setting that specifies an override for the default Online Store provider for Windows Media Player.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-MobilePC-Sensors-API](microsoft-windows-mobilepc-sensors-api.md)</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api-.md)</p></td>
 <td><p>Specifies settings for sensor devices or mechanisms. Examples of sensors include accelerometers, light sensors, temperature sensors, and location sensors.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-NetBT](microsoft-windows-netbt.md)</p></td>
+<td><p>[microsoft-windows-netbt-](microsoft-windows-netbt-.md)</p></td>
 <td><p>Contains networking settings for NetBT.</p></td>
 </tr>
 <tr class="odd">

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Interfaces
 
 
-`Interfaces` serves as a container for groups of [Interface](microsoft-windows-netbtinterfacesinterface.md)-specific settings.
+`Interfaces` serves as a container for groups of [Interface](microsoft-windows-netbt-interfacesinterface.md)-specific settings.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-netbtinterfacesinterface.md)</p></td>
+<td><p>[Interface](microsoft-windows-netbt-interfacesinterface.md)</p></td>
 <td><p>Contains all settings for a single network interface.</p></td>
 </tr>
 </tbody>
@@ -41,17 +41,17 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | **Interfaces**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | **Interfaces**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+The following XML output shows how to configure [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ``` syntax
 <Interfaces>
@@ -69,7 +69,7 @@ The following XML output shows how to configure [Microsoft-Windows-NetBT](micros
 ## Related topics
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md)
+[microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md)
 
  
 

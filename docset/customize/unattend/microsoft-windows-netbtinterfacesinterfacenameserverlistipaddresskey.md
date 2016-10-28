@@ -13,12 +13,12 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies a unique key for [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md). Name-server priority is based on the key of the IP address, with higher priority given to lower keys (lexicographically).
+`Key` specifies a unique key for [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md). Name-server priority is based on the key of the IP address, with higher priority given to lower keys (lexicographically).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md) to the answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key values of **IpAddress1**, **IpAddress2**, and **IpAddress3**.
+-   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key values of **IpAddress1**, **IpAddress2**, and **IpAddress3**.
 
  
 
@@ -48,17 +48,17 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](mmicrosoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | [NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md) | [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md) | **Key**
+[microsoft-windows-netbt-](mmicrosoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | [NameServerList](microsoft-windows-netbt-interfacesinterfacenameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md) | **Key**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure Microsoft-Windows-NetBT.
+The following XML output shows how to configure microsoft-windows-netbt-.
 
 ``` syntax
 <Interfaces>
@@ -77,7 +77,7 @@ The following XML output shows how to configure Microsoft-Windows-NetBT.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md)
+[IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md)
 
  
 

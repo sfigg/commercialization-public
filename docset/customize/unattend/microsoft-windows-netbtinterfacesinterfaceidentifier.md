@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Identifier
 
 
-`Identifier` specifies the interface to apply to other settings within [Interface](microsoft-windows-netbtinterfacesinterface.md). It can be expressed in one of the following ways:
+`Identifier` specifies the interface to apply to other settings within [Interface](microsoft-windows-netbt-interfacesinterface.md). It can be expressed in one of the following ways:
 
 -   As a string representation of an interface net locally unique identifier (NetLUID) (0x6000001000000)
 
@@ -32,7 +32,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Identifier</em></p></td>
-<td><p>Specifies the interface to apply to the other settings within the [Interface](microsoft-windows-netbtinterfacesinterface.md) setting. <em>Identifier</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p>Specifies the interface to apply to the other settings within the [Interface](microsoft-windows-netbt-interfacesinterface.md) setting. <em>Identifier</em> is a string with a maximum length of 256 characters.</p></td>
 </tr>
 </tbody>
 </table>
@@ -44,17 +44,17 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | **Identifier**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | **Identifier**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure Microsoft-Windows-NetBT.
+The following XML output shows how to configure microsoft-windows-netbt-.
 
 ``` syntax
 <Interfaces>
@@ -72,7 +72,7 @@ The following XML output shows how to configure Microsoft-Windows-NetBT.
 ## Related topics
 
 
-[Interface](microsoft-windows-netbtinterfacesinterface.md)
+[Interface](microsoft-windows-netbt-interfacesinterface.md)
 
  
 

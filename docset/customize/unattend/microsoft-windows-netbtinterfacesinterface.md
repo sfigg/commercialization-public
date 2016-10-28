@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-netbtinterfacesinterfaceidentifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-netbt-interfacesinterfaceidentifier.md)</p></td>
 <td><p>Specifies the interface to apply to other settings in <code>Interface</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md)</p></td>
+<td><p>[NameServerList](microsoft-windows-netbt-interfacesinterfacenameserverlist.md)</p></td>
 <td><p>Specifies the list of name servers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetbiosOptions](microsoft-windows-netbtinterfacesinterfacenetbiosoptions.md)</p></td>
+<td><p>[NetbiosOptions](microsoft-windows-netbt-interfacesinterfacenetbiosoptions.md)</p></td>
 <td><p>Specifies security settings for the NetBIOS service.</p></td>
 </tr>
 </tbody>
@@ -49,17 +49,17 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | **Interface**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | **Interface**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure Microsoft-Windows-NetBT.
+The following XML output shows how to configure microsoft-windows-netbt-.
 
 ``` syntax
 <Interfaces>
@@ -77,7 +77,7 @@ The following XML output shows how to configure Microsoft-Windows-NetBT.
 ## Related topics
 
 
-[Interfaces](microsoft-windows-netbtinterfaces.md)
+[Interfaces](microsoft-windows-netbt-interfaces.md)
 
  
 

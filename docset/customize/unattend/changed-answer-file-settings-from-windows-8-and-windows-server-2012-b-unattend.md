@@ -193,19 +193,19 @@ The following Windows 8 and Windows Server 2012 settings are not supported in 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\Enable</p></td>
+<td><p>microsoft-windows-mobilepc-sensors-api-\SensorPermissions\Sensor\Enable</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\GUID</p></td>
+<td><p>microsoft-windows-mobilepc-sensors-api-\SensorPermissions\Sensor\GUID</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\GUIDClassification</p></td>
+<td><p>microsoft-windows-mobilepc-sensors-api-\SensorPermissions\Sensor\GUIDClassification</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-MobilePC-Sensors-API\SensorPermissions\Sensor\Order</p></td>
+<td><p>microsoft-windows-mobilepc-sensors-api-\SensorPermissions\Sensor\Order</p></td>
 <td><p>This is not applicable for Windows 8.1.</p></td>
 </tr>
 <tr class="odd">

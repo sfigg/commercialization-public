@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md).
+`Value` specifies the value of [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md) to the answer file.
 
  
 
@@ -46,17 +46,17 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-NetBT](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbtinterfaces.md) | [Interface](microsoft-windows-netbtinterfacesinterface.md) | [NameServerList](microsoft-windows-netbtinterfacesinterfacenameserverlist.md) | [IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md) | **Value**
+[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfacesinterface.md) | [NameServerList](microsoft-windows-netbt-interfacesinterfacenameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md) | **Value**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-NetBT](microsoft-windows-netbt-win7-microsoft-windows-netbt.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure Microsoft-Windows-NetBT.
+The following XML output shows how to configure microsoft-windows-netbt-.
 
 ``` syntax
 <Interfaces>
@@ -74,7 +74,7 @@ The following XML output shows how to configure Microsoft-Windows-NetBT.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-netbtinterfacesinterfacenameserverlistipaddress.md)
+[IpAddress](microsoft-windows-netbt-interfacesinterfacenameserverlistipaddress.md)
 
  
 
