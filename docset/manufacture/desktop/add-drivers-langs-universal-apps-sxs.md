@@ -13,7 +13,7 @@ title: 'Lab 5: Add languages'
 
 *    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
 
-*    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
+*    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Mount_the_image"></span>Mount the image
 
@@ -110,13 +110,21 @@ The following table shows the types of language packages and components availabl
 
 1.  Add languages and Features On Demand to the Windows image.
 
-    Language updates have a specific order they need to be installed in. For example, to enable Cortana, install: **Microsoft-Windows-Client-Language-Pack**, then **–Basic**, then **–Fonts**, then **–TextToSpeech**, and then **–Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command. Not every region has fonts or capability packs for every feature.
-
-    For example:
+    Language updates have a specific order they need to be installed in. For example, to enable Cortana, install: **Microsoft-Windows-Client-Language-Pack**, then **–Basic**, then **–Fonts**, then **–TextToSpeech**, and then **–Speech**, in this order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command. 
+    
+    Example for adding French, x64:
 
     ``` syntax
     Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-Client-Language-Pack_x64_fr-fr" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Basic-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-OCR-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Handwriting-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-fr-fr-Package.cab" /PackagePath="C:\Languages\fr-fr x64\Microsoft-Windows-LanguageFeatures-Speech-fr-fr-Package.cab" /LogPath=C:\mount\dism.log
     ```
+
+    Example for adding Japanese, x64. Note, Japanese requires a font pack.
+
+    ``` syntax
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-Client-Language-Pack_x64_ja-jp" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Basic-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-OCR-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Handwriting-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-TextToSpeech-ja-jp-Package.cab" /PackagePath="C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Speech-ja-jp-Package.cab" /PackagePath:"C:\Languages\ja-jp x64\Microsoft-Windows-LanguageFeatures-Fonts-Jpan-Package.cab"  /LogPath=C:\mount\dism.log
+    ```
+
+    Not every region has fonts or capability packs for every feature.
 
 2.  Verify that the language package is part of the image:
 
@@ -154,25 +162,21 @@ The following table shows the types of language packages and components availabl
 4.  Change the default language to match the preferred language for your customers.
 
     ``` syntax
-    Dism /Set-AllIntl:fr-fr /Image:C:\mount\windows
+    Dism /Set-AllIntl:fr-fr /Image:"C:\mount\windows"
+    ```
+    
+5.  Change the default timezone to match the timezone for your customers. See [List of timezones](default-time-zones.md).
+
+    ``` syntax
+    Dism /Set-TimeZone:"W. Europe Standard Time" /Image:"C:\mount\windows"
     ```
 
 **Step 3: Remove the base language (only needed for non-English regions)**
 
-1.  To save space, you can remove English language components when deploying to non-English regions. You'll need to uninstall them in the reverse order from how you add them.
+1.  To save space, you can remove English language components when deploying to non-English regions. You can either uninstall them in the reverse order from how you add them, or remove them all at once in the same DISM /remove-package command.
 
     ``` syntax
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
-
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
-
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
-
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
-
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
-
-    Dism /Remove-Package /Image:"C:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.14393.0 /LogPath=C:\mount\dism.fod2.log
+    dism /Remove-Package /Image:"c:\mount\windows" /PackageName:Microsoft-Windows-Client-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Handwriting-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-Speech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0 /PackageName:Microsoft-Windows-LanguageFeatures-TextToSpeech-en-us-Package~31bf3856ad364e35~amd64~~10.0.14393.0  /LogPath=C:\mount\dism.fod2.log
     ```
 
     where *C* is the drive letter of the drive.
@@ -215,10 +219,11 @@ The following table shows the types of language packages and components availabl
 
 Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
-1.  Boot the reference PC to Windows PE.
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
-4.  Disconnect the drives, then reboot (`exit`).
+1.  Copy the image file to the storage drive.
+2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
+3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+5.  Disconnect the drives, then reboot (`exit`).
 
 **Step 6: Verify updates**
 

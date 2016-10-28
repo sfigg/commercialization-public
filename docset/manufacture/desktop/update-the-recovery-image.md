@@ -1,10 +1,10 @@
 ---
 author: KPacquer
-Description: 'Lab 9: Update the recovery image'
+Description: 'Lab 10: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 9: Update the recovery image'
+title: 'Lab 10: Update the recovery image'
 ---
-# Lab 9: Update the recovery image
+# Lab 10: Update the recovery image
 
 If the system can't boot to the Windows image, it will fail over to the Windows Recovery Environment (WinRE). WinRE can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (WinPE), and to make it work for your customers, you can add drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. 
 
@@ -19,9 +19,7 @@ You should update your recovery image to ensure a consistent recovery experience
 
  **Note**  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
 
-## <span id="Mount_the_images"></span>Mount the images
-
-**Step 1: Mount the Windows image**
+## <span id="Mount_the_Windows_image"></span>Step 1: Mount the Windows image
 
 Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the Windows image. The short version:
 
@@ -31,7 +29,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
-**Step 2: Mount the recovery image**
+## <span id="Mount_the_recovery_image"></span>Step 1: Mount the recovery image
 
 -   Mount the Windows RE image file. 
 
@@ -51,9 +49,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
     `attrib -h -a -s C:\mount\windows\Windows\System32\Recovery\winre.wim`
 
-## <span id="Add_drivers_to_the_image"></span>Add drivers to the image
-
-**Step 3: Add boot-critical drivers to WinRE**
+## <span id="Add_drivers_to_the_image"></span>Step 3: Add boot-critical drivers to WinRE
 
 1.  Add any .inf-style drivers needed for your hardware.
 
@@ -61,11 +57,27 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
-## <span id="Add_languages_to_the_image"></span>Add languages to the image
+## <span id="Add_updates_to_the_image"></span>Step 4: Add updates to the image
 
-**Step 4: Add or change languages**
+1.  Get a Windows update package. Use the same update package that you used for Windows in [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md). For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the (Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
 
-If the PC runs into trouble, your users may not be able to read/understand the recovery screens unless you add the appropriate language resources into the Windows Recovery Environment (Windows RE).
+2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
+
+    Example: adding a cumulative update:
+
+    ``` syntax
+    Dism /Add-Package /Image:"C:\mount\winre" /PackagePath="C:\WindowsUpdates\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu"  /LogPath=C:\mount\dism.log
+    ```
+
+    Example: adding multiple updates:
+
+    ``` syntax
+    Dism /Add-Package /Image:"C:\mount\winre" /PackagePath="C:\WindowsUpdates\windows10.0-kb00001-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00002-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00003-x64.msu" /LogPath=C:\mount\dism.log
+    ```
+
+## <span id="Add_languages_to_the_image"></span>Step 5: Add languages to the image
+
+If the PC runs into trouble, your users may not be able to read/understand the recovery screens unless you add the appropriate language resources into WinRE.
 
 1.  Add languages. These languages are included with the Windows ADK. You must use a matching version of the Windows ADK to service the Windows RE image.
 
@@ -74,7 +86,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
     **Note**  The WinPE-WiFi-Package is not language-specific and does not need to be added when adding other languages. This is new for Windows 10.
 
     ``` syntax
-    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
+    Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab" 
 
     Dism /Add-Package /image:C:\mount\winre /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-Rejuv_fr-fr.cab"
 
@@ -137,7 +149,7 @@ If the PC runs into trouble, your users may not be able to read/understand the r
     State : Installed
     ```
 
-## <span id="Optimizing_the_image_part_1"></span><span id="optimizing_the_image_part_1"></span><span id="OPTIMIZING_THE_IMAGE_PART_1"></span>Step 5: Optimizing the image, part 1 (optional)
+## <span id="Optimizing_the_image_part_1"></span><span id="optimizing_the_image_part_1"></span><span id="OPTIMIZING_THE_IMAGE_PART_1"></span>Step 6: Optimizing the image, part 1 (optional)
 
 After adding a language or Windows update package, you can reduce the size of the final Windows RE package by checking for duplicate files and marking the older versions as superseded.
 
@@ -149,8 +161,7 @@ After adding a language or Windows update package, you can reduce the size of th
 
 2.  Later, you'll export the image to remove the superseded files.
 
-## <span id="BKMK_SaveImage"></span><span id="bkmk_saveimage"></span><span id="BKMK_SAVEIMAGE"></span>Step 6: Unmount the WinRE image
-
+## <span id="BKMK_SaveImage"></span><span id="bkmk_saveimage"></span><span id="BKMK_SAVEIMAGE"></span>Step 7: Unmount the WinRE image
 
 -   Unmount and save the image:
 
@@ -158,7 +169,7 @@ After adding a language or Windows update package, you can reduce the size of th
     Dism /Unmount-Image /MountDir:C:\mount\winre /Commit
     ```
 
-## <span id="Optimizing_the_image_part_2"></span><span id="optimizing_the_image_part_2"></span><span id="OPTIMIZING_THE_IMAGE_PART_2"></span>Step 7: Optimizing the image, part 2 (optional)
+## <span id="Optimizing_the_image_part_2"></span><span id="optimizing_the_image_part_2"></span><span id="OPTIMIZING_THE_IMAGE_PART_2"></span>Step 8: Optimizing the image, part 2 (optional)
 
 
 If you've optimized the image, you'll need to export the image in order to see a change in the file size. During the export process, DISM removes files that were superseded.
@@ -202,28 +213,31 @@ If you've optimized the image, you'll need to export the image in order to see a
 
 ## <span id="Try_it_out"></span>Try it out
 
-**Step 8: Apply the image to a new PC**
-Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
+**Step 9: Apply the image to a new PC**
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. 
 
-1.  Boot the reference PC to Windows PE.
+Note, you'll now include the steps to add the recovery image:
 
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+The short version:
 
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
-	
-4.  Apply the recovery image:
-    ``` syntax
-	D:\ApplyRecovery.bat
-	```
+1.  Copy the image file to the storage drive.
+
+2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
+
+3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+
+4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+
+5.  Apply the recovery image: `D:\ApplyRecovery.bat`
 	
     Note: To test a different recovery image, add it the same way, specifying the recovery image: 
     ``` syntax
-	D:\ApplyRecovery.bat D:\Images\winre_with_drivers_for_fabrikam_model_1.wim
+	D:\ApplyRecovery.bat D:\Images\winre_custom.wim
 	```
 
 5.  Disconnect the drives, then reboot (`exit`).
 	
-**Step 9: Verify drivers and packages**
+**Step 10: Verify drivers and packages**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
 2.  Click the **Start** button, click the Power icon, then hold down the **Shift key** and select **Restart**.
@@ -232,4 +246,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
     If languages have been successfully added, you'll either see the new language (for a single language image) or be prompted for your language (for a multi-language image). 
 	
-Next step: [Lab 10: Shrink your image size](shrink-your-image-size.md)
+Next step: [Lab 11: Shrink your image size](shrink-your-image-size.md)
