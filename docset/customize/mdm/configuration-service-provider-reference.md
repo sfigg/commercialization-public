@@ -14,7 +14,9 @@ A configuration service provider (CSP) is an interface to read, set, modify, or 
 
 For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). For the list of new CSPs added in Windows 10, see [New CSPs added in Windows 10, Version 1511](#newcsps). See the [list of CSPs supported in Windows Holographic](#hololens) for additional information.
 
-The following table show the configuration service providers supported in Windows 10.
+The following table show the configuration service providers supported in Windows 10.  
+
+> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
 <table>
 <colgroup>
@@ -793,7 +795,7 @@ The following list shows the configuration service providers supported in Window
 | [dmclient csp](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [enterprisemodernappmanagement csp](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [nodecache csp](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [policy csp](policy-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [policy csp](policy-configuration-service-provider.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [rootcatrustedcertificates csp](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [update csp](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [vpnv2 csp](vpnv2-csp.md)                                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
