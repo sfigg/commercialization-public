@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InstallImage](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallimage.md)</p></td>
+<td><p>[InstallImage](microsoft-windows-setup-windowsdeploymentservices-imageselection-installimage.md)</p></td>
 <td><p>Specifies the file name, the image group, and the name of the image to be installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InstallTo](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstallto.md)</p></td>
+<td><p>[InstallTo](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto.md)</p></td>
 <td><p>Specifies the location to which the image is to be installed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservicesimageselectionwillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservices-imageselection-willshowui.md)</p></td>
 <td><p>Specifies in what circumstances the UI is displayed.</p></td>
 </tr>
 </tbody>

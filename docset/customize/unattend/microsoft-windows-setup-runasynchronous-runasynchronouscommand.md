@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunAsynchronousCommand` specifies a single command to run during the windowsPE configuration pass.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) instead.
 
 All `RunAsynchronous` commands run in the system context.
 
@@ -29,15 +29,15 @@ All `RunAsynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md)</p></td>
 <td><p>Specifies the credentials used to access the command if the command is on a network share.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-setup-runasynchronousrunasynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-setup-runasynchronous-runasynchronouscommand-description.md)</p></td>
 <td><p>Specifies a description of the command to execute.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-setup-runasynchronousrunasynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-runasynchronous-runasynchronouscommand-order.md)</p></td>
 <td><p>Specifies a unique value for each command.</p>
 <div class="alert">
 <strong>Important</strong>  
@@ -48,7 +48,7 @@ All `RunAsynchronous` commands run in the system context.
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md)</p></td>
 <td><p>Specifies the path to the command to execute.</p></td>
 </tr>
 </tbody>

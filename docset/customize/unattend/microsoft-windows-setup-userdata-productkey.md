@@ -57,7 +57,7 @@ For more information about product keys, see the topic [Work with Product Keys a
 <td><p>Specifies the product key.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-userdataproductkeywillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-userdata-productkey-willshowui.md)</p></td>
 <td><p>Specifies the circumstances in which the user interface (UI) for the product key will be displayed.</p></td>
 </tr>
 </tbody>

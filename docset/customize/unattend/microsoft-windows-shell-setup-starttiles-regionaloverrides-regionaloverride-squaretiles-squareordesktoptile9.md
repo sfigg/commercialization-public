@@ -12,7 +12,7 @@ ms.assetid: 501264F0-183F-4AE6-A033-978BA08A201B
 
 `SquareOrDesktopTile9` specifies which application appears as a square tile on the **Start** menu, in position SquareOrDesktopTile9. This position may vary based on the screen size, resolution, and DPI of the target device.
 
-If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 
 ## Child Elements
 
@@ -24,11 +24,11 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppIdOrPath](appidorpath-9.md)</p></td>
+<td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile9-appidorpath)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](firstruntask-9.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile9-firstruntask)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)|**SquareOrDesktopTile9**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)|**SquareOrDesktopTile9**
 
 ## Applies To
 
@@ -58,7 +58,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<SquareOrDesktopTile1>` component.
+The following XML output shows how to use the `<SquareOrDesktopTile9>` component.
 
 ``` syntax
 <SquareTiles>
@@ -70,9 +70,9 @@ The following XML output shows how to use the `<SquareOrDesktopTile1>` component
                <AppIdOrPath>67890ChannelFabrikam.channel-JKL_mnop1234789!App</AppIdOrPath>
                <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
           </SquareOrDesktopTile2>
-          <SquareOrDesktopTile3>
+          <SquareOrDesktopTile9>
                <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile3.lnk</AppIdOrPath>
-          </SquareOrDesktopTile3>
+          </SquareOrDesktopTile9>
           <SquareTile1>
                <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
                <FirstRunTask>backgroundtask.js</FirstRunTask>

@@ -70,7 +70,7 @@ The following XML output shows how to set Shared Access.
 
 [Microsoft-Windows-SharedAccess](microsoft-windows-sharedaccess.md)
 
-[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md)
+[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge.md)
 
  
 

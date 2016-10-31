@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) | [Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md) | **Domain**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) | [RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md) | [Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md) | **Domain**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output shows how to configure asynchronous commands to run.
 ## Related topics
 
 
-[Credentials](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials.md)
 
  
 

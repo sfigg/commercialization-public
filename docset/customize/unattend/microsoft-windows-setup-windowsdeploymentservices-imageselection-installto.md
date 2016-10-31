@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstalltodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installtodiskid.md)</p></td>
 <td><p>Specifies the disk ID of the disk to which the image is installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservicesimageselectioninstalltopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installtopartitionid.md)</p></td>
 <td><p>Specifies the partition ID of the partition to which the image is installed.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | **InstallTo**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md) | **InstallTo**
 
 ## Applies To
 
@@ -102,7 +102,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)
+[ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md)
 
  
 

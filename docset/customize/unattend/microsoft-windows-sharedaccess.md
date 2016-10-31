@@ -27,19 +27,19 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[EnableICS](microsoft-windows-sharedaccessenableics.md)</p></td>
+<td><p>[EnableICS](microsoft-windows-sharedaccess-enableics.md)</p></td>
 <td><p>Enables Internet-connection sharing.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ExternalAdapter](microsoft-windows-sharedaccessexternaladapter.md)</p></td>
+<td><p>[ExternalAdapter](microsoft-windows-sharedaccess-externaladapter.md)</p></td>
 <td><p>Specifies the adapter for an Internet-connection-sharing, external connection.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[InternalAdapter](microsoft-windows-sharedaccessinternaladapter.md)</p></td>
+<td><p>[InternalAdapter](microsoft-windows-sharedaccess-internaladapter.md)</p></td>
 <td><p>Specifies the adapter for Internet-connection-sharing, internal connection.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InternalIsBridge](microsoft-windows-sharedaccessinternalisbridge.md)</p></td>
+<td><p>[InternalIsBridge](microsoft-windows-sharedaccess-internalisbridge.md)</p></td>
 <td><p>Specifies whether the internal adapter is a bridge.</p></td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 [Components](components-b-unattend.md)
 
-[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md)
+[Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials to use when accessing a data image file specified by [Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md).
+`Credentials` specifies the credentials to use when accessing a data image file specified by [Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md).
 
 All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 
@@ -27,15 +27,15 @@ All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run i
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-password.md)</p></td>
 <td><p>Specifies the password of the account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setup-runasynchronousrunasynchronouscommandcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-runasynchronous-runasynchronouscommand-credentials-username.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>

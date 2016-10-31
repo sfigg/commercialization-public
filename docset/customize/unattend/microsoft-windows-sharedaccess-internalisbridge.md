@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `InternalIsBridge` specifies whether the internal adapter is a bridge.
 
 **Note**  
-If this value is set to **true**, you cannot set a value for [InternalAdapter](microsoft-windows-sharedaccessinternaladapter.md), and [EnableICS](microsoft-windows-sharedaccessenableics.md) must also be **true**.
+If this value is set to **true**, you cannot set a value for [InternalAdapter](microsoft-windows-sharedaccess-internaladapter.md), and [EnableICS](microsoft-windows-sharedaccess-enableics.md) must also be **true**.
 
  
 

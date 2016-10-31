@@ -4,7 +4,7 @@ description: WillShowUI
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 41edf47c-c8f1-44ff-80b1-e568a4b45966
+ms.assetid: aad08547-4b21-462f-a7ef-7f4667eb5051
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md).
+`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for Windows Deployment Services login.
 
 ## Values
 
@@ -35,7 +35,7 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><strong>Never</strong></p></td>
 <td><p>Specifies that the UI is never displayed.</p>
-<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=206587).</p></td>
+<p><code>WillShowUI</code> only prevents Windows Setup UI pages from being displayed. If a critical error occurs, an error message might be displayed. To avoid displaying the error message, you can use the ErrorHandler.cmd file to automatically run a script to handle the error. For more information about ErrorHandler.cmd, see the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.</p></td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +52,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [Login](microsoft-windows-setup-windowsdeploymentservices-login.md) | **WillShowUI**
 
 ## Applies To
 
@@ -109,7 +109,7 @@ The following XML output shows a complete Windows Deployment Services deployment
 ## Related topics
 
 
-[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)
+[Login](microsoft-windows-setup-windowsdeploymentservices-login.md)
 
  
 

@@ -4,7 +4,7 @@ description: WillShowUI
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7116ee10-76a2-4dff-aaa5-127a7a0fb9b4
+ms.assetid: 41edf47c-c8f1-44ff-80b1-e568a4b45966
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # WillShowUI
 
 
-`WillShowUI` specifies in what circumstances to display the user interface (UI) when applying a product key specified by [ProductKey](microsoft-windows-setup-userdataproductkey.md).
+`WillShowUI` specifies in what circumstances the user interface (UI) is displayed for [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md).
 
 ## Values
 
@@ -30,7 +30,7 @@ ms.sitesec: msdn
 </tr>
 <tr class="even">
 <td><p><strong>OnError</strong></p></td>
-<td><p>Specifies that the UI is displayed if an error occurs, even for catastrophic, non-recoverable errors. This is the default value.</p></td>
+<td><p>Specifies that the UI is displayed if an error occurs. This is the default value.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Never</strong></p></td>
@@ -52,34 +52,64 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | [ProductKey](microsoft-windows-setup-userdataproductkey.md) | **WillShowUI**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [WindowsDeploymentServices](microsoft-windows-setup-windowsdeploymentservices.md) | [ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md) | **WillShowUI**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
 
-The following XML output shows how to set user data.
+The following XML output shows a complete Windows Deployment Services deployment.
 
 ``` syntax
-<UserData>
-   <AcceptEula>true</AcceptEula>
-   <FullName>EndUserName</FullName>
-   <Organization>Fabrikam</Organization>
-   <ProductKey>
-      <Key>12345-12345-12345-12345-12345</Key>
-      <WillShowUI>Never</WillShowUI>
-   </ProductKey>
-</UserData>
+<WindowsDeploymentServices>
+   <Login>
+      <WillShowUI>OnError</WillShowUI>
+      <Credentials>
+         <Username>Administrator</Username>
+         <Domain>MY-DOMAIN-NAME</Domain>
+         <Password>********</Password>
+      </Credentials>
+   </Login>
+  <ImageSelection>
+      <WillShowUI>OnError</WillShowUI>
+      <InstallImage>
+         <ImageName>MY_IMAGE_NAME</ImageName>
+         <ImageGroup>My IMAGE GROUP</ImageGroup>
+      </InstallImage>
+      <InstallTo>
+         <DiskID>0</DiskID>
+         <PartitionID>1</PartitionID>
+      </InstallTo>
+   </ImageSelection>
+</WindowsDeploymentServices>
+<DiskConfiguration>
+   <WillShowUI>OnError</WillShowUI>
+   <Disk>
+      <DiskID>0</DiskID>
+      <WillWipeDisk>false</WillWipeDisk>
+      <ModifyPartitions>
+         <ModifyPartition>
+            <Order>1</Order>
+            <PartitionID>3</PartitionID>
+            <Letter>C</Letter>
+            <Label>TestOS</Label>
+            <Format>NTFS</Format>
+            <Active>true</Active>
+            <Extend>false</Extend>
+         </ModifyPartition>
+      </ModifyPartitions>
+   </Disk>
+</DiskConfiguration>
 ```
 
 ## Related topics
 
 
-[ProductKey](microsoft-windows-setup-userdataproductkey.md)
+[ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md)
 
  
 

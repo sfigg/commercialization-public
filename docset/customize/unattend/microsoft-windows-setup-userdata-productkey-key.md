@@ -33,7 +33,7 @@ Standard licensing agreements specify that you can use a product key only to act
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-setup-userdataproductkey.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-setup-userdata-productkey.md)</p></td>
 <td><p>Specifies a product key to activate Windows. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\Key, and the two product keys can be different.</p>
 <p>If you are using a Volume-License Multiple-Activation Key (MAK), it must be specified using this setting.</p></td>
 </tr>
@@ -72,7 +72,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | [ProductKey](microsoft-windows-setup-userdataproductkey.md) | **Key**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | [ProductKey](microsoft-windows-setup-userdata-productkey.md) | **Key**
 
 ## Applies To
 
@@ -99,7 +99,7 @@ The following XML output shows how to set user data.
 ## Related topics
 
 
-[ProductKey](microsoft-windows-setup-userdataproductkey.md)
+[ProductKey](microsoft-windows-setup-userdata-productkey.md)
 
  
 

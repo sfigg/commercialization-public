@@ -12,7 +12,7 @@ ms.assetid: 5708078D-DEE0-4DDD-ABF7-DD79E5D15D6C
 
 `AppIdOrPath` specifies the `AppID` of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the **Start** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 
 ## Values
 
@@ -31,7 +31,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md) | [SquareOrDesktopTile10](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile6.md) | **AppIdOrPath**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setupstarttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile10](microsoft-windows-shell-setupstarttiles-regionaloverrides-regionaloverrides-quaretiles-SquareOrDesktopTile10.md) | **AppIdOrPath**
 
 ## Applies To
 
@@ -41,7 +41,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<SquareOrDesktopTile6>` component.
+The following XML output shows how to use the `<SquareOrDesktopTile10>` component.
 
 ``` syntax
 <SquareTiles>
@@ -64,9 +64,9 @@ The following XML output shows how to use the `<SquareOrDesktopTile6>` component
                <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
                <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
           </SquareTile2>
-          <SquareTile3>
+          <SquareTile10>
                <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
-          </SquareTile3>
+          </SquareTile10>
      </SquareTiles> 
 
 ```
@@ -74,13 +74,13 @@ The following XML output shows how to use the `<SquareOrDesktopTile6>` component
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

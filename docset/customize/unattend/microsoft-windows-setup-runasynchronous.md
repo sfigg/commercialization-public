@@ -29,7 +29,7 @@ All `RunAsynchronous` commands run in the system context.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md)</p></td>
+<td><p>[RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run asynchronously.</p></td>
 </tr>
 </tbody>

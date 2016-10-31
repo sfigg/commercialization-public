@@ -25,20 +25,20 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AutoLogon](microsoft-windows-shell-setupautologon.md)</p></td>
+<td><p>[AutoLogon](microsoft-windows-shell-setup-autologon.md)</p></td>
 <td><p>Specifies credentials for an account that is used to automatically log on to the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[BluetoothTaskbarIconEnabled](microsoft-windows-shell-setupbluetoothtaskbariconenabled.md)</p></td>
+<td><p>[BluetoothTaskbarIconEnabled](microsoft-windows-shell-setup-bluetoothtaskbariconenabled.md)</p></td>
 <td><p>Specifies whether to enable the Bluetooth taskbar icon.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ComputerName](microsoft-windows-shell-setupcomputername.md)</p></td>
+<td><p>[ComputerName](microsoft-windows-shell-setup-computername.md)</p></td>
 <td><p>Specifies the name of the computer.</p></td>
 </tr>
 <tr class="even">
 <td><p>[ConvertibleSlateModePromptPreference](microsoft-windows-shell-convertibleslatemodepromptpreference.md)</p></td>
-<td><p>Configure to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md). OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></td>
+<td><p>Configure to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md). OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[CopyProfile](microsoft-windows-shell-setupcopyprofile.md)</p></td>

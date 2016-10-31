@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AcceptEula](microsoft-windows-setup-userdataaccepteula.md)</p></td>
+<td><p>[AcceptEula](microsoft-windows-setup-userdata-accepteula.md)</p></td>
 <td><p>Specifies whether to automatically accept the Microsoft Software License Terms.</p></td>
 </tr>
 <tr class="even">
@@ -33,11 +33,11 @@ ms.sitesec: msdn
 <td><p>Specifies the name of the end user.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Organization](microsoft-windows-setup-userdataorganization.md)</p></td>
+<td><p>[Organization](microsoft-windows-setup-userdata-organization.md)</p></td>
 <td><p>Specifies the name of the organization that owns the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProductKey](microsoft-windows-setup-userdataproductkey.md)</p></td>
+<td><p>[ProductKey](microsoft-windows-setup-userdata-productkey.md)</p></td>
 <td><p>Specifies the product key to use, which determines the edition of Windows to install.</p></td>
 </tr>
 </tbody>
