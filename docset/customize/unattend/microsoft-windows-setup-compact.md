@@ -57,12 +57,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **Compact**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **Compact**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## Related topics
 

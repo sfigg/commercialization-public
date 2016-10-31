@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # ItemKey
 
 
-`ItemKey` specifies a unique key for a Favorite bar item in Internet Explorer®.
+`ItemKey` specifies a unique key for a Favorite bar item in Internet Explorer.
 
-A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft® Word, Microsoft Excel® and Microsoft PowerPoint® documents.
+A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft Word, Microsoft Excel and Microsoft PowerPoint documents.
 
 ## Values
 

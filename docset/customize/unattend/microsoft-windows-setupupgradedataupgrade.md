@@ -54,12 +54,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [UpgradeData](microsoft-windows-setup-upgradedata.md) | **Upgrade**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [UpgradeData](microsoft-windows-setup-upgradedata.md) | **Upgrade**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## <a href="" id="xmlexample"></a>XML Example
 

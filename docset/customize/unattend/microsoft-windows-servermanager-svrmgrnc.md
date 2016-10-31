@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-ServerManager-SvrMgrNc component specifies whether the Server Manager application opens when the end user logs on for the first time.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## In This Section
 

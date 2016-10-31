@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Name_of_company</em></p></td>
-<td><p>Specifies the company name to be appended to the window title, including the text &quot;Internet Explorer® provided by&quot; or its localized equivalent. <em>Name_of_company</em> is a string.</p></td>
+<td><p>Specifies the company name to be appended to the window title, including the text &quot;Internet Explorer provided by&quot; or its localized equivalent. <em>Name_of_company</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>

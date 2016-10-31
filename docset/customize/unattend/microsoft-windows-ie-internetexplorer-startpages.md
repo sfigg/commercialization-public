@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The `StartPages` setting specifies additional home pages opened when tabbed browsing is enabled.
 
-To set the primary home page, use the [Home\_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md) setting. If you set **StartPages**, and do not set the Home\_Page setting, then the default MSN® home page will appear as the first home page.
+To set the primary home page, use the [Home\_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md) setting. If you set **StartPages**, and do not set the Home\_Page setting, then the default MSN home page will appear as the first home page.
 
 ## Child Elements
 

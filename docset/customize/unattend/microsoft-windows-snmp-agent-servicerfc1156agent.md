@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RFC1156` specifies the contact name, the physical location, and the SNMP services for the computer.
 
-You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
+You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 ## Child Elements
 

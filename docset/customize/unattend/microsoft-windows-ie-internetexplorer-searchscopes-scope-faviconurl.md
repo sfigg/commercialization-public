@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FaviconURL
 
 
-`FaviconURL` specifies the path to an icon for a specific Internet Explorer® Search Scope.
+`FaviconURL` specifies the path to an icon for a specific Internet Explorer Search Scope.
 
 ## Values
 

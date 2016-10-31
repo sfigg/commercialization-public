@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ItemKey` contains a unique key for [Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md).
 
-Accelerators are menu options in Internet Explorer® that help to automate common browser-related tasks. In Internet Explorer, when you right-click selected text, Accelerators appear in the list of available options. For example, if you right-click a selected address, you can use an Accelerator to show a map of that address.
+Accelerators are menu options in Internet Explorer that help to automate common browser-related tasks. In Internet Explorer, when you right-click selected text, Accelerators appear in the list of available options. For example, if you right-click a selected address, you can use an Accelerator to show a map of that address.
 
 ## Values
 

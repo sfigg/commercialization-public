@@ -19,7 +19,7 @@ The service is also responsible for sending traps on behalf of SNMP Extension ag
 
 If the service is stopped, then the computer cannot process SNMP requests. If this service is disabled, then any services that explicitly depend on it fail to start.
 
-You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
+You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 For more information, see [Simple Network Management Protocol](http://go.microsoft.com/fwlink/?LinkId=139843).
 

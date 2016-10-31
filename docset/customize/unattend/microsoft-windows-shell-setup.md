@@ -137,7 +137,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 </tr>
 <tr class="odd">
 <td><p>[WindowsFeatures](microsoft-windows-shell-setupwindowsfeatures.md)</p></td>
-<td><p>Specifies whether to show entry points for Internet Explorer®, Media Center, and Windows Media® Player.</p></td>
+<td><p>Specifies whether to show entry points for Internet Explorer, Media Center, and Windows Media Player.</p></td>
 </tr>
 </tbody>
 </table>

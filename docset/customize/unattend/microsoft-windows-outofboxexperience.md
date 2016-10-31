@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Warning**  
-This setting is deprecated. The Initial Configurations Tasks application is not available in Windows Server® 2012.
+This setting is deprecated. The Initial Configurations Tasks application is not available in Windows Server 2012.
 
  
 

@@ -64,7 +64,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | **Display**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **Display**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -93,7 +93,7 @@ The following XML output sets the display resolution to 1920x1080, with 16-bit c
 ## Related topics
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md)
+[microsoft-windows-setup-](microsoft-windows-setup.md)
 
  
 

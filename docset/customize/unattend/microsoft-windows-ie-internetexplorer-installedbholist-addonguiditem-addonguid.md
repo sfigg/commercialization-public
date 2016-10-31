@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuid
 
 
-`AddonGuid` specifies a GUID for an Internet Explorer® Browser Help Object.
+`AddonGuid` specifies a GUID for an Internet Explorer Browser Help Object.
 
 Browser Help Objects are add-on modules used to add functionality to Internet Explorer. Examples of Browser Help Objects include toolbars, animated mouse pointers, and stock tickers.
 

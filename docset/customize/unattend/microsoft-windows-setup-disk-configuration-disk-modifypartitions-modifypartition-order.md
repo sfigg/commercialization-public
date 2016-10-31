@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Order**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Order**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Examples
 
@@ -296,7 +296,7 @@ The following XML output for the `DiskConfiguration` setting shows partition mod
 
 ### UEFI-Based System with One Hard Drive
 
-The following XML output for the `DiskConfiguration` setting shows partition modifications for a UEFI-based computer. The hard drive includes three partitions: an EFI system partition, a Microsoft® Reserved (MSR) partition, and a primary Windows partition. There are two modifications configured, ordered 1 and 2. The MSR extended partition does not require modification.
+The following XML output for the `DiskConfiguration` setting shows partition modifications for a UEFI-based computer. The hard drive includes three partitions: an EFI system partition, a Microsoft Reserved (MSR) partition, and a primary Windows partition. There are two modifications configured, ordered 1 and 2. The MSR extended partition does not require modification.
 
 ``` syntax
 <DiskConfiguration>

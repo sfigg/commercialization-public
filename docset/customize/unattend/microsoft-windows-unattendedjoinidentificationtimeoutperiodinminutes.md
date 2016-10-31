@@ -48,7 +48,7 @@ specialize
 ## Applies To
 
 
-Windows 8 and Windows Server® 2012 only.
+Windows 8 and Windows Server 2012 only.
 
 For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
 

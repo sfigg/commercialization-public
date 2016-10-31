@@ -18,7 +18,7 @@ This setting has been deprecated in Windows 8.1. The information about this dep
 
  
 
-`PreapprovedAddons` contains settings for configuring Internet Explorer® pre-approved add-ons.
+`PreapprovedAddons` contains settings for configuring Internet Explorer pre-approved add-ons.
 
 Pre-approved add-ons are plug-in modules used to add functionality to Internet Explorer.
 

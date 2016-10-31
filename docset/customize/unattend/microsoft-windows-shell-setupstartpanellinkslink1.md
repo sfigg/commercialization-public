@@ -24,7 +24,7 @@ Shortcut files must be placed either on the **Start** menu or on the desktop, ot
 
 We do not recommend adding the shortcut by using the environment variable: `%USERPROFILE%`. Shortcuts using `%USERPROFILE%` are applied only to the profile of the next user to log on to the computer. Also, if the setting is applied during the **auditUser** configuration pass, the shortcut is applied only to the temporary administrator account, which is removed after the computer exits audit mode.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

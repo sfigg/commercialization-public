@@ -38,7 +38,7 @@ For more information about power-management, see [Battery Life Technical Referen
 <div class="alert">
 <strong>Important</strong>  
 <p>This setting is deprecated in Windows 8 and Windows 7.</p>
-<p>This setting is available in Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.</p>
+<p>This setting is available in Windows Vista, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008.</p>
 </div>
 <div>
  

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuidItem
 
 
-`AddonGuidItem` contains settings for configuring an Internet Explorer® Browser Help Object.
+`AddonGuidItem` contains settings for configuring an Internet Explorer Browser Help Object.
 
 Browser Help Objects are plug-in modules used to add functionality to Internet Explorer. Examples of Browser Help Objects include toolbars, animated mouse pointers, and stock tickers.
 

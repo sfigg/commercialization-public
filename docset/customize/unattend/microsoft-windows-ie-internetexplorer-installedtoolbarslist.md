@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InstalledToolbarsList
 
 
-`InstalledToolbarsList` contains settings for configuring Internet Explorer® toolbars.
+`InstalledToolbarsList` contains settings for configuring Internet Explorer toolbars.
 
 Toolbars are plug-in modules used to add functionality to Internet Explorer.
 

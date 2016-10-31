@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `CompatibilityViewDomains` controls the list of domains that will be rendered in Compatibility View mode. The administrator needs to list the domains manually.
 
-In Compatibility View, Internet Explorer® displays WWeb pages from the specified domain as they would be shown on an earlier version of Internet Explorer.
+In Compatibility View, Internet Explorer displays WWeb pages from the specified domain as they would be shown on an earlier version of Internet Explorer.
 
 ## Values
 

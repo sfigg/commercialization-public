@@ -506,7 +506,7 @@
 #### [ReferralId](microsoft-windows-security-spp-ux-sppcc-referralid.md)
 ### [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md)
 #### [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md)
-### [microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
+### [microsoft-windows-setup-](microsoft-windows-setup.md)
 #### [ComplianceCheck](microsoft-windows-setup-compliancecheck.md)
 ##### [DisplayReport](microsoft-windows-setup-compliancecheckdisplayreport.md)
 #### [Diagnostics](microsoft-windows-setup-diagnostics.md)

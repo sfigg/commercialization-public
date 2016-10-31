@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of which Search Scope settings are available in each version of Internet Explorer®, see [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md).
+For a list of which Search Scope settings are available in each version of Internet Explorer, see [Scope](microsoft-windows-ie-internetexplorer-searchscopes-scope.md).
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md).
 

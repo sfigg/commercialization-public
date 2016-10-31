@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuidItem
 
 
-`AddonGuidItem` contains settings for configuring an Internet Explorer® toolbar.
+`AddonGuidItem` contains settings for configuring an Internet Explorer toolbar.
 
 Toolbars are plug-in modules used to add functionality to Internet Explorer.
 

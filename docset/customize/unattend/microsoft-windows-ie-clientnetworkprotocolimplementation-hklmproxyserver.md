@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `HKLMProxyServer` specifies the IP address or the host name of the proxy server on the network for all users on the computer.
 
 **Note**  
-`HKLMProxyServer` is effective only if the Group Policy for Microsoft® Internet Explorer®: "Make proxy settings per-machine (rather than per-user)" is set to **Enabled**. This Group Policy is accessible through the registry key:`HKLMSoftware\Policies\Microsoft\Windows\CurrentVersion\InternetSettings`. When this setting is active, it appears as `ProxySettingsPerUser`, as the type: `ProxySettingsPerUser`, as the type: **REG DWORD**, with the default value set to **0**.
+`HKLMProxyServer` is effective only if the Group Policy for Microsoft Internet Explorer: "Make proxy settings per-machine (rather than per-user)" is set to **Enabled**. This Group Policy is accessible through the registry key:`HKLMSoftware\Policies\Microsoft\Windows\CurrentVersion\InternetSettings`. When this setting is active, it appears as `ProxySettingsPerUser`, as the type: `ProxySettingsPerUser`, as the type: **REG DWORD**, with the default value set to **0**.
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AcceptEula
 
 
-`AcceptEula` specifies whether to automatically accept the Microsoft® Software License Terms.
+`AcceptEula` specifies whether to automatically accept the Microsoft Software License Terms.
 
 **Note**  
 This setting is required for all unattended installations. To prevent the Windows Setup user interface (UI) from displaying, you must configure this setting. For a complete list of required settings, see the [How to Automate Windows Setup](http://go.microsoft.com/fwlink/?LinkId=206673) topic in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
@@ -55,12 +55,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [UserData](microsoft-windows-setup-userdata.md) | **AcceptEula**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [UserData](microsoft-windows-setup-userdata.md) | **AcceptEula**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

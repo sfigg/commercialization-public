@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # StartPageUrl
 
 
-`StartPageUrl` specifies the URL of a start page. If you set `StartPages`, and do not set `Home_Page`, then the default MSN® home page will appear as the first home page. For the primary home page, see the [Home\_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md) setting.
+`StartPageUrl` specifies the URL of a start page. If you set `StartPages`, and do not set `Home_Page`, then the default MSN home page will appear as the first home page. For the primary home page, see the [Home\_Page](home-page-win7-microsoft-windows-ie-internetexplorerhome-page.md) setting.
 
 ## Values
 

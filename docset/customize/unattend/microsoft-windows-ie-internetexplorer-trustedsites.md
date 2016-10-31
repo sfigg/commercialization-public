@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # TrustedSites
 
 
-`TrustedSites` specifies the Uniform Resource Locator (URL) for Internet sites whose content can be trusted by administrators and users for whom Internet Explorer® Enhanced Security Configuration (ESC) is enabled.
+`TrustedSites` specifies the Uniform Resource Locator (URL) for Internet sites whose content can be trusted by administrators and users for whom Internet Explorer Enhanced Security Configuration (ESC) is enabled.
 
 When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the Trusted sites zone.
 

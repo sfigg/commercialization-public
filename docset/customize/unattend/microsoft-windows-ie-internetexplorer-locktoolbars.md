@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # LockToolbars
 
 
-`LockToolbars` specifies whether the toolbars in Internet Explorer® are locked in position.
+`LockToolbars` specifies whether the toolbars in Internet Explorer are locked in position.
 
 By default, menu toolbars are not visible and must be enabled. Selected toolbars can be moved by clicking and dragging the separator bars on the left side of the toolbar.
 

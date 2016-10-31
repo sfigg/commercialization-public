@@ -13,14 +13,14 @@ ms.sitesec: msdn
 # WindowsFeatures
 
 
-`WindowsFeatures` specifies whether to show entry points for Internet Explorer®, Media Center, Windows Media Player, and Windows Mail.
+`WindowsFeatures` specifies whether to show entry points for Internet Explorer, Media Center, Windows Media Player, and Windows Mail.
 
 **Important**  
 Using these settings to remove components that do not exist in the image will cause Windows Setup to fail.
 
  
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Child Elements
 

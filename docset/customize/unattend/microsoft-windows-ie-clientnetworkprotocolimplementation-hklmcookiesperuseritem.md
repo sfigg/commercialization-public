@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # HKLMCookiesPerUserItem
 
 
-`HKLMCookiesPerUserItem` specifies whether Microsoft® Internet Explorer® cookies are cached individually for each user on a specific computer.
+`HKLMCookiesPerUserItem` specifies whether Microsoft Internet Explorer cookies are cached individually for each user on a specific computer.
 
 ## Values
 

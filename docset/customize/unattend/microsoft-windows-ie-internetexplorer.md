@@ -174,7 +174,7 @@ The following table describes these settings:
 </tr>
 <tr class="even">
 <td><p>[MSCompatibilityMode](microsoft-windows-ie-internetexplorer-mscompatibilitymode.md)</p></td>
-<td><p>Specifies whether Compatibility View uses updated website lists from Microsoft®.</p></td>
+<td><p>Specifies whether Compatibility View uses updated website lists from Microsoft.</p></td>
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">

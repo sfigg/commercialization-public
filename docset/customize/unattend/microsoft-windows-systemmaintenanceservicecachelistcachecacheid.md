@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CacheID
 
 
-`CacheID` specifies a unique cache ID for the Microsoft® ReadyBoost™ device.
+`CacheID` specifies a unique cache ID for the Microsoft ReadyBoost™ device.
 
 ## Values
 

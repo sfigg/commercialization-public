@@ -23,7 +23,7 @@ ms.sitesec: msdn
 
 -   In-box drivers available.
 
--   Product key matches available hardware. Windows 7 Starter and Windows Vista® Starter can be installed only on the following types of central processing unit (CPU):
+-   Product key matches available hardware. Windows 7 Starter and Windows Vista Starter can be installed only on the following types of central processing unit (CPU):
 
     -   Intel Celeron and Intel Pentium III processors, including mobile versions, except for Intel Pentium III Xeon processors.
 
@@ -98,12 +98,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | **ComplianceCheck**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **ComplianceCheck**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -119,7 +119,7 @@ The following XML output changes the `ComplianceCheck` setting to run in guarant
 ## Related topics
 
 
-[microsoft-windows-setup-](microsoft-windows-setup--win7-microsoft-windows-setup-.md)
+[microsoft-windows-setup-](microsoft-windows-setup.md)
 
  
 

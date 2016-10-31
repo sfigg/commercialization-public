@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `EnableICS` specifies whether Internet-connection sharing is enabled.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # SuggestedSitesEnabled
 
 
-`SuggestedSitesEnabled` specifies whether the **Suggested Sites** Web Slice appears in Internet Explorer®.
+`SuggestedSitesEnabled` specifies whether the **Suggested Sites** Web Slice appears in Internet Explorer.
 
 ## Values
 

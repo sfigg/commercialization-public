@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InstalledBHOList
 
 
-`InstalledBHOList` contains settings for configuring Internet Explorer® Browser Help Objects.
+`InstalledBHOList` contains settings for configuring Internet Explorer Browser Help Objects.
 
 Browser Help Objects are add-on modules used to add functionality to Internet Explorer. Examples of Browser Help Objects include toolbars, animated mouse pointers, and stock tickers.
 

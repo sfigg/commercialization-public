@@ -32,7 +32,7 @@ ms.sitesec: msdn
 <tr class="even">
 <td><p><strong>false</strong></p></td>
 <td><p>Windows does not notify the user when programs try to install software or make changes to the computer.</p>
-<p>We do not recommend using this setting, but it can be selected for systems that use programs that are not certified for Windows 8, Windows Server® 2012, Windows 7 or Windows Server 2008 R2 because they do not support UAC.</p></td>
+<p>We do not recommend using this setting, but it can be selected for systems that use programs that are not certified for Windows 8, Windows Server 2012, Windows 7 or Windows Server 2008 R2 because they do not support UAC.</p></td>
 </tr>
 </tbody>
 </table>

@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | **UseConfigurationSet**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **UseConfigurationSet**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -66,7 +66,7 @@ The following XML output specifies that a configuration set is used.
 ## Related topics
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md)
+[microsoft-windows-setup-](microsoft-windows-setup.md)
 
  
 

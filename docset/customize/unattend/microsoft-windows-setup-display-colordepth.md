@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display-.md) | **ColorDepth**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [Display](microsoft-windows-setup-display-.md) | **ColorDepth**
 
 ## Applies To
 
@@ -60,7 +60,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

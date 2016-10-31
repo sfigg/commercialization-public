@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableDevTools
 
 
-`DisableDevTools` specifies whether the Internet Explorer® Development Tools are disabled.
+`DisableDevTools` specifies whether the Internet Explorer Development Tools are disabled.
 
 Internet Explorer Development Tools assist Web developers with troubleshooting issues with Internet Explorer Web pages.
 

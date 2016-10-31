@@ -1,6 +1,6 @@
 ---
 title: Unattended Windows Setup Reference
-description: The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.
+description: The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Unattended Windows Setup Reference
 
 
-The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server® 2012, Windows Server 2008 R2, and Windows Server 2008.
+The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008.
 
 The Windows Unattended Setup Reference is organized by Windows components and Windows packages, in the same order that the Windows System Image Manager (Windows SIM) tool displays each Windows component and package.
 
@@ -46,11 +46,11 @@ Information about how to use Windows SIM and other deployment tools is available
 </tr>
 <tr class="odd">
 <td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1511](changed-answer-file-settings-from-windows-8-1.md)</p></td>
-<td><p>This topic describes Windows 10 for desktop editions and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server® 2012 R2.</p></td>
+<td><p>This topic describes Windows 10 for desktop editions and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Changed answer file settings for Windows 8.1 and Windows Server 2012 R2](changed-answer-file-settings-from-windows-8-and-windows-server-2012-b-unattend.md)</p></td>
-<td><p>This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server® 2012.</p></td>
+<td><p>This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server 2012.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Components](components-b-unattend.md)</p></td>

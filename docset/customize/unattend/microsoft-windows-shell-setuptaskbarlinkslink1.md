@@ -26,7 +26,7 @@ We do not recommend adding the shortcut by using the environment variable: `%USE
 
 Certain programs cannot be added to the taskbar. For a list of these programs, see [this MSDN website](http://go.microsoft.com/fwlink/?LinkId=70602).
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

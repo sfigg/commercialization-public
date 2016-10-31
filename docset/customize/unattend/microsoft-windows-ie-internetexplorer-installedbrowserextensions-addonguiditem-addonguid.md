@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuid
 
 
-`AddonGuid` specifies a GUID for an Internet Explorer® Browser Extension.
+`AddonGuid` specifies a GUID for an Internet Explorer Browser Extension.
 
 Browser Extensions are plug-in modules used to add functionality to Internet Explorer. Examples of Browser Extensions include shortcut menu extensions, toolbars, explorer bars, and Browser Help Objects.
 

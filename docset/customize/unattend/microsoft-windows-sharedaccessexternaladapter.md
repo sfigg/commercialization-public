@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ExternalAdapter` specifies the external adapter for Internet-connection sharing. This cannot be used as part of a network bridge.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

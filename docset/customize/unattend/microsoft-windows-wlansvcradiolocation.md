@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Use this setting when you are deploying a portable computer with WLAN hardware that can be manually enabled or disabled.
 
-In a typical scenario, a user may deactivate the WLAN hardware by a keyboard command or a physical switch. Later, the user forgets the switch is off, and tries to browse the Internet. Windows Internet Explorer® shows an error page. From this page, the user selects **Diagnose connection problems**. Windows diagnoses the problem, and provides a recommendation to resolve the problem.
+In a typical scenario, a user may deactivate the WLAN hardware by a keyboard command or a physical switch. Later, the user forgets the switch is off, and tries to browse the Internet. Windows Internet Explorer shows an error page. From this page, the user selects **Diagnose connection problems**. Windows diagnoses the problem, and provides a recommendation to resolve the problem.
 
 <table>
 <colgroup>

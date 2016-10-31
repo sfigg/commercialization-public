@@ -15,9 +15,9 @@ ms.sitesec: msdn
 
 `CEIPEnabled` indicates whether the Windows Customer Experience Improvement Program (CEIP) is enabled.
 
-If the Microsoft-Windows-SQMAPI component is enabled, it collects and sends data to Microsoft® about Windows usage. Participation in this program is voluntary, and the results are recorded to implement improvements for future releases.
+If the Microsoft-Windows-SQMAPI component is enabled, it collects and sends data to Microsoft about Windows usage. Participation in this program is voluntary, and the results are recorded to implement improvements for future releases.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

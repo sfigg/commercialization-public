@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Media` specifies the default media application. This must be the application’s canonical name.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

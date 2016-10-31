@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # microsoft-windows-ie-clientnetworkprotocolimplementation-
 
 
-The microsoft-windows-ie-clientnetworkprotocolimplementation- component contains Microsoft® Internet Explorer® network policy settings.
+The microsoft-windows-ie-clientnetworkprotocolimplementation- component contains Microsoft Internet Explorer network policy settings.
 
 ## In This Section
 

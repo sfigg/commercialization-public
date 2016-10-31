@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `IntranetCompatibilityMode` specifies whether intranet sites render using Compatibility view.
 
-In Compatibility view, Internet Explorer® displays Web pages as they would be shown on an earlier version of Internet Explorer.
+In Compatibility view, Internet Explorer displays Web pages as they would be shown on an earlier version of Internet Explorer.
 
 ## Values
 

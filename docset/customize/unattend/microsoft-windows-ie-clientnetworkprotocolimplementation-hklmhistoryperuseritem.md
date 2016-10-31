@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # HKLMHistoryPerUserItem
 
 
-`HKLMHistoryPerUserItem` specifies whether Microsoft® Internet Explorer® history is cached individually for each user on a specific computer.
+`HKLMHistoryPerUserItem` specifies whether Microsoft Internet Explorer history is cached individually for each user on a specific computer.
 
 ## Values
 

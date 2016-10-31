@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 After Windows has been activated, it is not necessary to use the unattended-Setup setting: Microsoft-Windows-Security-SPP-UX\\`SkipAutoActivation`. Do not use the `SkipAutoActivation` setting on a system that has already been activated with a non-system locked pre-installation (SLP) license key.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

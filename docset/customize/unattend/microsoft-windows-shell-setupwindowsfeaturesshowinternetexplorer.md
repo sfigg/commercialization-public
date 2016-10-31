@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ShowInternetExplorer` specifies whether to show entry points for Internet Explorer.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

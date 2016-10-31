@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies the identity of the online printing company. This ID is not displayed to the end user. <em>ID</em> is a string with a minimum length of 1 character and a maximum length of 20 characters.</p>
 <p>This string must be unique for each service provider.</p>
 <p>We recommended that the service provider name, without spaces, be used as the string ID.</p>
-<p>For service providers that are managed through the Microsoft® Service Provider server, an ID string is assigned.</p></td>
+<p>For service providers that are managed through the Microsoft Service Provider server, an ID string is assigned.</p></td>
 </tr>
 </tbody>
 </table>

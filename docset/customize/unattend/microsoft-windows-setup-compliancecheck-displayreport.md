@@ -47,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ComplianceCheck](microsoft-windows-setup-compliancecheck.md) | **DisplayReport**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ComplianceCheck](microsoft-windows-setup-compliancecheck.md) | **DisplayReport**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

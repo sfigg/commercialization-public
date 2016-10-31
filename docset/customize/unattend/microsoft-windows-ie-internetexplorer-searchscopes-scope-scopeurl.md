@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 To find the URL for a search provider:
 
-1.  Open Internet Explorer®.
+1.  Open Internet Explorer.
 
 2.  Open the provider's web page where the web search is performed.
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-Print-Spooler-Core is used to configure actions that the print spooler service performs when the computer starts. The print spooler actions will occur whenever the print spooler service is restarted. This includes system restart, user login, and manual restart of the print spooler service.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## In This Section
 

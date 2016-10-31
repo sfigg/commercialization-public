@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Display](microsoft-windows-setup-display-.md) | **VerticalResolution**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [Display](microsoft-windows-setup-display-.md) | **VerticalResolution**
 
 ## Applies To
 
@@ -60,7 +60,7 @@ This setting only affects the Windows Setup process on BIOS-based computers. UEF
 
  
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

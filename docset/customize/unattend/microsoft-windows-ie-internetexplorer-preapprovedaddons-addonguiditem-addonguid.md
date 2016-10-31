@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuid
 
 
-`AddonGuid` specifies a GUID for an Internet Explorer® add-on module.
+`AddonGuid` specifies a GUID for an Internet Explorer add-on module.
 
 These add-ons are plug-in modules used to add functionality to Internet Explorer.
 

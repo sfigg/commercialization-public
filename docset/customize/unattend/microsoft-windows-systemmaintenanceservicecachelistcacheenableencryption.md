@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableEncryption
 
 
-`EnableEncryption` specifies whether the Microsoft® ReadyBoost™ cache uses encryption.
+`EnableEncryption` specifies whether the Microsoft ReadyBoost™ cache uses encryption.
 
 Enabling encryption can improve system security, especially on a shared computer.
 

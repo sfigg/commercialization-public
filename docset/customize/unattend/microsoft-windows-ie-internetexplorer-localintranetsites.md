@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # LocalIntranetSites
 
 
-`LocalIntranetSites` specifies the URL for local intranet sites whose content can be trusted by administrators and users for whom Internet Explorer® Enhanced Security Configuration (ESC) is enabled.
+`LocalIntranetSites` specifies the URL for local intranet sites whose content can be trusted by administrators and users for whom Internet Explorer Enhanced Security Configuration (ESC) is enabled.
 
 When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the local intranet zone.
 

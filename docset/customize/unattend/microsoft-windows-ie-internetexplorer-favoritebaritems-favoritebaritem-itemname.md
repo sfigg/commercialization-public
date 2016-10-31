@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # ItemName
 
 
-`ItemName` specifies the name that appears for a Favorite bar item in the Favorite bar in Internet Explorer®.
+`ItemName` specifies the name that appears for a Favorite bar item in the Favorite bar in Internet Explorer.
 
-A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft® Word, Microsoft Excel® and Microsoft PowerPoint® documents.
+A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft Word, Microsoft Excel and Microsoft PowerPoint documents.
 
 ## Values
 

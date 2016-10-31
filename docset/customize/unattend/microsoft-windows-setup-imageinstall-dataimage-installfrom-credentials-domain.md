@@ -41,12 +41,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Domain**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

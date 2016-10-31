@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Cache
 
 
-`Cache` specifies settings for a Microsoft® ReadyBoost™ flash-storage cache, to be used as a supplemental memory cache. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
+`Cache` specifies settings for a Microsoft ReadyBoost™ flash-storage cache, to be used as a supplemental memory cache. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
 
 ## Values
 

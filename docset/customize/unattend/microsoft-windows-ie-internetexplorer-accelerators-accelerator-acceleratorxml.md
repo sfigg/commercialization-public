@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AcceleratorXML
 
 
-`AcceleratorXML` specifies the Uniform Resource Locator (URL) for an Internet Explorer® Accelerator.
+`AcceleratorXML` specifies the Uniform Resource Locator (URL) for an Internet Explorer Accelerator.
 
 Accelerators are menu options in Internet Explorer that help to automate common browser-related tasks. In Internet Explorer, when you right-click selected text, Accelerators appear in the list of available options. For example, if you select an address, you can use an Accelerator to show a map of that address.
 

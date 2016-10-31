@@ -53,12 +53,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | **UserData**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **UserData**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following XML output shows how to set user data.
 ## Related topics
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md)
+[microsoft-windows-setup-](microsoft-windows-setup.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuidItem
 
 
-`AddonGuidItem` contains settings for configuring an Internet Explorer® Browser Help Object.
+`AddonGuidItem` contains settings for configuring an Internet Explorer Browser Help Object.
 
 Browser Extensions are plug-in modules used to add functionality to Internet Explorer. Examples of Browser Extensions include shortcut menu extensions, toolbars, explorer bars, and Browser Help Objects.
 

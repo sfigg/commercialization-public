@@ -205,7 +205,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Specifies whether the Server Manager application opens when the end user logs on for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-setup-](microsoft-windows-setup-.md)</p></td>
+<td><p>[microsoft-windows-setup-](microsoft-windows-setup.md)</p></td>
 <td><p>Contains settings to select the Windows image that you install, to configure the disk that you install Windows to, and to configure the Windows PE operating system.</p></td>
 </tr>
 <tr class="odd">

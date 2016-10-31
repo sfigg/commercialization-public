@@ -46,7 +46,7 @@ ms.sitesec: msdn
 </tr>
 <tr class="even">
 <td><p>[MachineObjectOU](microsoft-windows-unattendedjoinidentificationmachineobjectou.md)</p></td>
-<td><p>Specifies the Lightweight Directory Access Protocol (LDAP) X.500-distinguished name of the organizational unit (OU) in which the computer account is created. This account is in Active Directory® on a domain controller in the domain to which the computer is being joined.</p></td>
+<td><p>Specifies the Lightweight Directory Access Protocol (LDAP) X.500-distinguished name of the organizational unit (OU) in which the computer account is created. This account is in Active Directory on a domain controller in the domain to which the computer is being joined.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[MachinePassword](microsoft-windows-unattendedjoinidentificationmachinepassword.md)</p></td>

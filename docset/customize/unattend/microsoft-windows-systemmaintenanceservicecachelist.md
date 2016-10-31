@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CacheList
 
 
-`CacheList` configures Microsoft® ReadyBoost™ flash storage devices that are used as supplemental memory caches. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
+`CacheList` configures Microsoft ReadyBoost™ flash storage devices that are used as supplemental memory caches. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
 
 `CacheList` can contain up to eight [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) settings that represent a single ReadyBoost cache on the computer that you configure.
 

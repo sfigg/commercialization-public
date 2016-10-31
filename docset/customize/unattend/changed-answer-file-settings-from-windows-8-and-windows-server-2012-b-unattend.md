@@ -1,6 +1,6 @@
 ---
 title: Changed answer file settings for Windows 8.1 and Windows Server 2012 R2
-description: This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server® 2012.
+description: This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server 2012.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Changed answer file settings for Windows 8.1 and Windows Server 2012 R2
 
 
-This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server® 2012.
+This topic describes Windows 8.1 and Windows Server 2012 R2 answer-file settings that have changed since Windows 8 and Windows Server 2012.
 
 ## In This Section
 

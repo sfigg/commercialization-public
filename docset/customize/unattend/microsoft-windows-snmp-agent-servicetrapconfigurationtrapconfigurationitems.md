@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `TrapConfigurationItems` specifies details about the community name and traps used by the trap configuration.
 
-You can use this setting in core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
+You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 
 ## Child Elements
 

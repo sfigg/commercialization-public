@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # TabProcessGrowth
 
 
-`TabProcessGrowth` sets the rate at which Internet Explorer® creates new tab processes.
+`TabProcessGrowth` sets the rate at which Internet Explorer creates new tab processes.
 
 ## Values
 

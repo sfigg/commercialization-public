@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ItemUrl` contains the path to a predefined Favorite item on the Favorite bar.
 
-A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft® Word, Microsoft Excel® and Microsoft PowerPoint® documents.
+A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft Word, Microsoft Excel and Microsoft PowerPoint documents.
 
 ## Values
 

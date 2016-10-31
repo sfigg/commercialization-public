@@ -19,7 +19,7 @@ This setting has been deprecated in Windows 8. The information about this depre
 
 Use these settings to configure Windows so that a user can later reinstate the original OEM configuration for these applications. Any program specified for any of these settings must be able to change default file associations. If a setting is missing or blank, the default program associated with that setting does not change when the user chooses to reinstate the original OEM configuration. For example, if a setting is not specified for `JavaVM`, the default virtual machine for Java is left unchanged.
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Child Elements
 

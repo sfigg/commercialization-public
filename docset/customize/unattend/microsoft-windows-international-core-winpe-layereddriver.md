@@ -34,7 +34,7 @@ This setting provides a means to select the specific keyboard to configure durin
 </tr>
 <tr class="even">
 <td><p><strong>2</strong></p></td>
-<td><p>Specifies the Korean PC/AT 101-Key Compatible keyboard or the Microsoft® Natural keyboard (type 1).</p></td>
+<td><p>Specifies the Korean PC/AT 101-Key Compatible keyboard or the Microsoft Natural keyboard (type 1).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>3</strong></p></td>

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableFirstRunWizard
 
 
-`DisableFirstRunWizard` specifies whether to skip the First Run Wizard when the user runs Windows Internet Explorer® for the first time.
+`DisableFirstRunWizard` specifies whether to skip the First Run Wizard when the user runs Windows Internet Explorer for the first time.
 
 The Internet Explorer First Run Wizard helps users complete the browser-installation process by prompting them to define the default search provider, the phishing filter settings, and so on.
 

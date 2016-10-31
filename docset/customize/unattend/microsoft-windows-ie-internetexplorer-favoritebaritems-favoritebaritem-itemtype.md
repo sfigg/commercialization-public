@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # ItemType
 
 
-`ItemType` specifies the type of Favorite for a predefined Favorite item in the Internet Explorer® Favorite bar.
+`ItemType` specifies the type of Favorite for a predefined Favorite item in the Internet Explorer Favorite bar.
 
-A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft® Word, Microsoft Excel® and Microsoft PowerPoint® documents.
+A Favorite can include web content such as links, feeds, web slices, or documents, such as Microsoft Word, Microsoft Excel and Microsoft PowerPoint documents.
 
 To add a predefined Favorite bar item in Windows System Image Manager (Windows SIM), add the **FavoriteBarItems** component to your answer file. Next, right-click **FavoriteBarItems**, and select **Insert New FavoriteBarItem**.
 

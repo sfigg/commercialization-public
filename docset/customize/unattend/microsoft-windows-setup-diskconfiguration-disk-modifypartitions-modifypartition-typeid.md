@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 Use `TypeID` to manually specify a hard-drive partition type, such as a utility partition type.
 
--   Five partition types are already built in: primary, extensible firmware interface (EFI), extended, logical, and Microsoft® Reserved (MSR). To use these built-in partition types, enter a value in the setting: microsoft-windows-setup-/DiskConfiguration/Disk/CreatePartitions/CreatePartition/[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md).
+-   Five partition types are already built in: primary, extensible firmware interface (EFI), extended, logical, and Microsoft Reserved (MSR). To use these built-in partition types, enter a value in the setting: microsoft-windows-setup-/DiskConfiguration/Disk/CreatePartitions/CreatePartition/[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md).
 
 -   Some partition types are not assigned a drive letter by default. Without a drive letter, these partitions do not appear in some common lists of devices, such as in Windows Explorer or in Open or Save file dialog boxes. If you assign a letter to the partition, the partition appears in these common lists of devices.
 
@@ -151,12 +151,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **TypeID**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **TypeID**
 
 ## Applies To
 
 
-For a list of Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

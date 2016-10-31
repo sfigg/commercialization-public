@@ -45,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [Diagnostics](microsoft-windows-setup-diagnostics.md) | **OptIn**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [Diagnostics](microsoft-windows-setup-diagnostics.md) | **OptIn**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-setup-](microsoft-windows-setup.md).
 
 ## XML Example
 

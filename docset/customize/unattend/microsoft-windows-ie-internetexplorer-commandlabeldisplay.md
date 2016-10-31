@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CommandLabelDisplay
 
 
-`CommandLabelDisplay` specifies whether tooltips appear next to the icons in the Internet Explorer® Command Bar.
+`CommandLabelDisplay` specifies whether tooltips appear next to the icons in the Internet Explorer Command Bar.
 
 The Command Bar appears at the top of the Internet Explorer screen, and includes items such as **Home**, **Print**, **Page**, and **Tools**.
 

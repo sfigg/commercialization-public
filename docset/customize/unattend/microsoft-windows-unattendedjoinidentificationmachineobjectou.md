@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MachineObjectOU
 
 
-`MachineObjectOU` is an optional setting. It specifies the Lightweight Directory Access Protocol (LDAP) X 500-distinguished name of the organizational unit (OU) in which the computer account is created. This account is in Active Directory® on a domain controller in the domain to which the computer is being joined.
+`MachineObjectOU` is an optional setting. It specifies the Lightweight Directory Access Protocol (LDAP) X 500-distinguished name of the organizational unit (OU) in which the computer account is created. This account is in Active Directory on a domain controller in the domain to which the computer is being joined.
 
 ## Values
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # GroupTabs
 
 
-`GroupTabs` specifies whether Internet Explorer® displays tabs in groups.
+`GroupTabs` specifies whether Internet Explorer displays tabs in groups.
 
 ## Values
 

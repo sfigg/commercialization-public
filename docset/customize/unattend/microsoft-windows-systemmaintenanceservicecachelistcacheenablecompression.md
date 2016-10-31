@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableCompression
 
 
-`EnableCompression` specifies whether the Microsoft® ReadyBoost™ cache uses compression.
+`EnableCompression` specifies whether the Microsoft ReadyBoost™ cache uses compression.
 
 Disabling compression can improve CPU usage and decrease battery consumption.
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableDataExecutionPrevention
 
 
-`DisableDataExecutionPrevention` specifies whether Internet Explorer® prevents arbitrary code execution from a virtual-memory page that is marked as non-executable.
+`DisableDataExecutionPrevention` specifies whether Internet Explorer prevents arbitrary code execution from a virtual-memory page that is marked as non-executable.
 
 ## Values
 

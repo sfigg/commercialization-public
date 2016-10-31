@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # InstalledBrowserExtensions
 
 
-`InstalledBrowserExtensions` contains settings for configuring Internet Explorer® Browser Extensions.
+`InstalledBrowserExtensions` contains settings for configuring Internet Explorer Browser Extensions.
 
 Browser Extensions are add-on modules used to add functionality to Internet Explorer. Examples of Browser Extensions include shortcut menu extensions, toolbars, explorer bars, and Browser Help Objects.
 

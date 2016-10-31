@@ -37,7 +37,7 @@ Any item that is pinned to the taskbar will not appear in the **Start** menu lis
 
 You cannot add certain programs to the list of most frequently used programs. For a list of these programs, see the [Microsoft Help and Support website](http://go.microsoft.com/fwlink/?LinkId=70602).
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Child Elements
 

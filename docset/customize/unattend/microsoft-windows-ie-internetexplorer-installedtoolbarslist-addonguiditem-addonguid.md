@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuid
 
 
-`AddonGuid` specifies a GUID for an Internet Explorer® toolbar.
+`AddonGuid` specifies a GUID for an Internet Explorer toolbar.
 
 Toolbars are plug-in modules used to add functionality to Internet Explorer.
 

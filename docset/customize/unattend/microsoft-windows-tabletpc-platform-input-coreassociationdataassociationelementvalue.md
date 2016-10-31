@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Value` specifies information to associate a Tablet PC monitor to a digitizer.
 
-This setting requires the string values of: *DigitizerPattern*, *AdapterPattern*, and *MonitorPattern*. For information about finding the Device String or Device ID values, see the MSDN® articles: [DISPLAY\_DEVICE](http://go.microsoft.com/fwlink/?LinkId=140784) and [EnumDisplayDevices](http://go.microsoft.com/fwlink/?LinkId=140787).
+This setting requires the string values of: *DigitizerPattern*, *AdapterPattern*, and *MonitorPattern*. For information about finding the Device String or Device ID values, see the MSDN articles: [DISPLAY\_DEVICE](http://go.microsoft.com/fwlink/?LinkId=140784) and [EnumDisplayDevices](http://go.microsoft.com/fwlink/?LinkId=140787).
 
 **Note**  
 Some portions of these patterns may change depending on installation order. For best results, only use portions of the string that are unique to the device.

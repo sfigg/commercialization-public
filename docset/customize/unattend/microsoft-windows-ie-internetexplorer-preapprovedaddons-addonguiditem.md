@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AddonGuidItem
 
 
-`AddonGuidItem` contains settings for configuring an Internet Explorer® add-on module, which add functionality to Internet Explorer.
+`AddonGuidItem` contains settings for configuring an Internet Explorer add-on module, which add functionality to Internet Explorer.
 
 `AddonGuidItem` contains settings for a single add-on module.
 

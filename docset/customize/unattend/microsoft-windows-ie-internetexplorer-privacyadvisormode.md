@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PrivacyAdvisorMode
 
 
-`PrivacyAdvisorMode` specifies whether InPrivate Browsing and InPrivate Blocking are active in Internet Explorer®, and when they provide alerts.
+`PrivacyAdvisorMode` specifies whether InPrivate Browsing and InPrivate Blocking are active in Internet Explorer, and when they provide alerts.
 
 InPrivate Browsing prevents Internet Explorer from storing data about your browsing session. This includes cookies, temporary Internet files, history, and other data.
 

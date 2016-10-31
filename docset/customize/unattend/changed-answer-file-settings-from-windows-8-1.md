@@ -1,6 +1,6 @@
 ---
 title: Changed answer file settings for Windows 10 for desktop editions, build 1511
-description: This topic describes Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server® 2012 R2.
+description: This topic describes Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Changed answer file settings for Windows 10 for desktop editions, build 1511
 
 
-This topic describes Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server® 2012 R2.
+This topic describes Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 answer file settings that have changed since Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2.
 
 ## In This Section
 

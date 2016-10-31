@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PartitionID
 
 
-`PartitionID` specifies the Partition ID that identifies the Microsoft® ReadyBoost™ device. This value is used with [DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md).
+`PartitionID` specifies the Partition ID that identifies the Microsoft ReadyBoost™ device. This value is used with [DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md).
 
 ## Values
 

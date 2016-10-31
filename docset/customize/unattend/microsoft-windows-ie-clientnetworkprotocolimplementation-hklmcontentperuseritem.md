@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # HKLMContentPerUserItem
 
 
-`HKLMContentPerUserItem` specifies whether Microsoft® Internet Explorer® content is cached individually for each user.
+`HKLMContentPerUserItem` specifies whether Microsoft Internet Explorer content is cached individually for each user.
 
 ## Values
 

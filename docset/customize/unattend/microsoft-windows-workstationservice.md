@@ -28,7 +28,7 @@ Client systems use the SMB protocol to request file, print, and communications s
 <tbody>
 <tr class="odd">
 <td><p>[OtherDomains](microsoft-windows-workstationserviceotherdomains.md)</p></td>
-<td><p>Specifies Microsoft® LAN Manager domains to be listed for browsing.</p></td>
+<td><p>Specifies Microsoft LAN Manager domains to be listed for browsing.</p></td>
 </tr>
 <tr class="even">
 <td><p>[SyncDomainWithMembership](microsoft-windows-workstationservicesyncdomainwithmembership.md)</p></td>

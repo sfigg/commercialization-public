@@ -26,7 +26,7 @@ We do not recommend adding the shortcut by using the environment variable: `%USE
 
 When you add the OEM First Run application, we recommend that you also add it as the first shortcut in the **Start** menu list of most frequently used programs, so that users can access the application repeatedly until they have accomplished all of the specified tasks. For information, see [OEMWelcomeCenter](microsoft-windows-shell-setupoemwelcomecenter.md).
 
-This setting has no effect on Server Core installations of Windows Server® 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
 
 ## Values
 

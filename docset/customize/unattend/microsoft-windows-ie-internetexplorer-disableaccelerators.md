@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisableAccelerators
 
 
-`DisableAccelerators` specifies whether Accelerators are available in Internet Explorer®.
+`DisableAccelerators` specifies whether Accelerators are available in Internet Explorer.
 
 Accelerators are menu options in Internet Explorer that help automate common browser-related tasks. In Internet Explorer, when you right-click selected text, Accelerators appear in the list of available options. For example, if you select an address, you can use an Accelerator to show a map of that address.
 
