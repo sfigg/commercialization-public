@@ -246,14 +246,14 @@ The following Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2 sett
 <td><p>This setting is deprecated in Windows 10 and should not be used. The default background color during OOBE is always dark. To align with this change, partners can no longer change the default screen background color during OOBE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-HelpAndSupport\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md)</p></td>
-<td><p>In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.</p>
+<td><p>Microsoft-Windows-HelpAndSupport\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)</p></td>
+<td><p>In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.</p>
 <p>In Windows 10, the OS disables the help components that shipped in Windows 8 and Windows 8.1 including the Help and Support Windows desktop application (HelpPane.exe). HelpPane.exe will continue to exist in the box, but calls to its interfaces will result in one of two outcomes:</p>
 <ul>
 <li>If the user is offline, the OS launches the Getting Started app.</li>
 <li>If the user is online, the OS opens a browser instance and redirects the browser to an online topic.</li>
 </ul>
-<p>For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).</p></td>
+<p>For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).</p></td>
 </tr>
 </tbody>
 </table>

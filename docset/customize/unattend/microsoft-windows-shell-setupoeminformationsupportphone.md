@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setupoeminformation.md) | **SupportPhone**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **SupportPhone**
 
 ## Applies To
 
@@ -68,7 +68,6 @@ The following XML shows how to set OEM information.
    <HelpCustomized>false</HelpCustomized>
    <Manufacturer>OEM name</Manufacturer>
    <Model>model name</Model>
-   <Logo>C:\Windows\OEM\Logo.bmp</Logo>
    <SupportHours>hours</SupportHours>
    <SupportPhone>123-456-7890</SupportPhone>
    <SupportURL>http://www.contoso.com</SupportURL>
@@ -78,7 +77,7 @@ The following XML shows how to set OEM information.
 ## Related topics
 
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
  
 

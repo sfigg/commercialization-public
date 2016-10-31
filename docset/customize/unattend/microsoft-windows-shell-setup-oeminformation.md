@@ -32,19 +32,19 @@ This change affects context-sensitive (or F1) help and accessing help from the m
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HelpCustomized](microsoft-windows-shell-setupoeminformationhelpcustomized.md)</p></td>
-<td><p>Specifies whether the OEM customizes Help. If this element is set to <strong>true</strong>, Control Panel shows a support link. Otherwise, Control Panel shows the support information that [SupportHours](microsoft-windows-shell-setupoeminformationsupporthours.md), [SupportPhone](microsoft-windows-shell-setupoeminformationsupportphone.md), and [SupportURL](microsoft-windows-shell-setupoeminformationsupporturl.md) specify.</p></td>
+<td><p>[HelpCustomized](microsoft-windows-shell-setup-oeminformationhelpcustomized.md)</p></td>
+<td><p>Specifies whether the OEM customizes Help. If this element is set to <strong>true</strong>, Control Panel shows a support link. Otherwise, Control Panel shows the support information that [SupportHours](microsoft-windows-shell-setup-oeminformation-supporthours.md), [SupportPhone](microsoft-windows-shell-setup-oeminformation-supportphone.md), and [SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md) specify.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Logo](microsoft-windows-shell-setupoeminformationlogo.md)</p></td>
+<td><p>[Logo](microsoft-windows-shell-setup-oeminformationlogo.md)</p></td>
 <td><p>Specifies the path of the .bmp file of the manufacturer logo.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Manufacturer](microsoft-windows-shell-setupoeminformationmanufacturer.md)</p></td>
+<td><p>[Manufacturer](microsoft-windows-shell-setup-oeminformation-manufacturer.md)</p></td>
 <td><p>Specifies the name of the manufacturer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Model](microsoft-windows-shell-setupoeminformationmodel.md)</p></td>
+<td><p>[Model](microsoft-windows-shell-setup-oeminformation-model.md)</p></td>
 <td><p>Specifies the name of the computer model.</p></td>
 </tr>
 <tr class="odd">
@@ -52,15 +52,15 @@ This change affects context-sensitive (or F1) help and accessing help from the m
 <td><p>Specifies the OEM-built support app that will be launched instead of the web URL.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SupportHours](microsoft-windows-shell-setupoeminformationsupporthours.md)</p></td>
+<td><p>[SupportHours](microsoft-windows-shell-setup-oeminformation-supporthours.md)</p></td>
 <td><p>Specifies the hours that support is available from an OEM.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SupportPhone](microsoft-windows-shell-setupoeminformationsupportphone.md)</p></td>
+<td><p>[SupportPhone](microsoft-windows-shell-setup-oeminformation-supportphone.md)</p></td>
 <td><p>Specifies the telephone numbers for support for an OEM.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SupportURL](microsoft-windows-shell-setupoeminformationsupporturl.md)</p></td>
+<td><p>[SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md)</p></td>
 <td><p>Specifies the URL of the support website for an OEM.</p></td>
 </tr>
 </tbody>
@@ -114,7 +114,7 @@ The following example shows how to set OEM information.
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 
-[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport-win8-microsoft-windows-helpandsupport.md)
+[Microsoft-Windows-HelpAndSupport](microsoft-windows-helpandsupport.md)
 
  
 

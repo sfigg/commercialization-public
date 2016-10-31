@@ -76,7 +76,7 @@ The following XML output shows how to set OEM information.
 ## Related topics
 
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
  
 

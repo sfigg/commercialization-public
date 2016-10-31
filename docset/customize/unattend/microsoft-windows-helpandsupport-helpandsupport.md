@@ -23,7 +23,7 @@ In Windows 10, the OS disables the help components that shipped in Windows 8 an
 -   If the user is offline, the OS launches the Getting Started app.
 -   If the user is online, the OS opens a browser instance and redirects the browser to an online topic.
 
-For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).
+For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
 ## Child Elements
 
@@ -96,7 +96,7 @@ The following example shows how to set values for customizing the **Help and Sup
 
 [Components](components-b-unattend.md)
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
  
 

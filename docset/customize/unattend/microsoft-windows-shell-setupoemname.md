@@ -66,7 +66,7 @@ The following XML output shows how to set the OEM name. On the Start screen, the
 
 [StartTiles](microsoft-windows-shell-setupstarttiles.md)
 
-[Manufacturer](microsoft-windows-shell-setupoeminformationmanufacturer.md)
+[Manufacturer](microsoft-windows-shell-setup-oeminformationmanufacturer.md)
 
 [Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md)
 

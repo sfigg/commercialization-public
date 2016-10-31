@@ -15,13 +15,13 @@ ms.sitesec: msdn
 
 `HelpCustomized` specifies whether the Original Equipment Manufacturer (OEM) customizes Help. The outcome depends on the operating system:
 
--   In Windows 8, when you set this value to `true` and set values in Microsoft-Windows-HelpAndSupport\\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md), you customize the **Windows Help and Support** page.
+-   In Windows 8, when you set this value to `true` and set values in Microsoft-Windows-HelpAndSupport\\[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md), you customize the **Windows Help and Support** page.
 
     For information about how to add customized Help files, see [Author and Add Custom Help and Support Content](http://go.microsoft.com/fwlink/?LinkId=237145).
 
--   In Windows 7 and Windows Vista, when you set this value to **true**, Control Panel shows a link to customized Help. Otherwise, it shows the support information that [SupportHours](microsoft-windows-shell-setupoeminformationsupporthours.md), [SupportPhone](microsoft-windows-shell-setupoeminformationsupportphone.md), and [SupportURL](microsoft-windows-shell-setupoeminformationsupporturl.md) specify.
+-   In Windows 7 and Windows Vista, when you set this value to **true**, Control Panel shows a link to customized Help. Otherwise, it shows the support information that [SupportHours](microsoft-windows-shell-setup-oeminformation-supporthours.md), [SupportPhone](microsoft-windows-shell-setup-oeminformation-supportphone.md), and [SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md) specify.
 
-    All information (including [Manufacturer](microsoft-windows-shell-setupoeminformationmanufacturer.md) and [Model](microsoft-windows-shell-setupoeminformationmodel.md)) should be in the customized Help file. This information doesn't appear in the **System** item in Control Panel.
+    All information (including [Manufacturer](microsoft-windows-shell-setup-oeminformationmanufacturer.md) and [Model](microsoft-windows-shell-setup-oeminformationmodel.md)) should be in the customized Help file. This information doesn't appear in the **System** item in Control Panel.
 
 ## Values
 
@@ -61,7 +61,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setupoeminformation.md) | **HelpCustomized**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **HelpCustomized**
 
 ## Applies To
 
@@ -78,7 +78,6 @@ This XML shows how to specify that Help is customized:
    <HelpCustomized>true</HelpCustomized>
    <Manufacturer><OEM name></Manufacturer>
    <Model><model name></Model>
-   <Logo>C:\Windows\OEM\Logo.bmp</Logo>
    <SupportHours><hours></SupportHours>
    <SupportPhone>425-555-0190</SupportPhone>
    <SupportURL>http://www.contoso.com</SupportURL>
@@ -88,9 +87,9 @@ This XML shows how to specify that Help is customized:
 ## Related topics
 
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
-[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md)
+[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)
 
 [Author and Add Custom Help and Support Content](http://go.microsoft.com/fwlink/?LinkId=237145)
 

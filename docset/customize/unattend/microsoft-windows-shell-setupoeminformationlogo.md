@@ -61,34 +61,17 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setupoeminformation.md) | **Logo**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OEMInformation](microsoft-windows-shell-setup-oeminformation.md) | **Logo**
 
 ## Applies To
 
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
-## XML Example
-
-
-The following example shows how to set OEM information for Control Panel. Starting in Windows 10, version 1607, the logo setting is deprecated, and it is ignored when applied to the **Settings** app.
-
-``` syntax
-<OEMInformation>
-   <HelpCustomized>false</HelpCustomized>
-   <Manufacturer>OEM name</Manufacturer>
-   <Model>model name</Model>
-   <Logo>C:\Windows\OEM\Logo.bmp</Logo>
-   <SupportHours>hours</SupportHours>
-   <SupportPhone>123-456-7890</SupportPhone>
-   <SupportURL>http://www.contoso.com</SupportURL>
-</OEMInformation>
-```
-
 ## Related topics
 
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
  
 

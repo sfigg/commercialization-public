@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Note**  
-In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
+In Windows 10, the [HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md) settings are deprecated because the Help component that they impact is being retired. Existing information about the HelpAndSupport settings are provided for reference only.
 
  
 
@@ -23,7 +23,7 @@ In Windows 10, the OS disables the help components that shipped in Windows 8 an
 -   If the user is offline, the OS launches the Getting Started app.
 -   If the user is online, the OS opens a browser instance and redirects the browser to an online topic.
 
-For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setupoeminformation.md).
+For more information on how OEMs can include their customer support contact information in the Contact Support App or Support Web page, see [OEMInformation](microsoft-windows-shell-setup-oeminformation.md).
 
 ## Child Elements
 
@@ -35,7 +35,7 @@ For more information on how OEMs can include their customer support contact info
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport-.md)</p></td>
+<td><p>[HelpAndSupport](microsoft-windows-helpandsupport-helpandsupport.md)</p></td>
 <td><p>Contains settings to specify OEM information for a customized <strong>Help and Support</strong> page.</p></td>
 </tr>
 </tbody>
@@ -75,7 +75,7 @@ The following example shows how to set a customized **Help and Support** page. T
 
 [Components](components-b-unattend.md)
 
-[OEMInformation](microsoft-windows-shell-setupoeminformation.md)
+[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)
 
  
 
