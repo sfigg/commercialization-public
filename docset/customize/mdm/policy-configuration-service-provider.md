@@ -73,7 +73,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <li><a href="#hololens-policies">Policies supported by Windows Holographic Enterprise</a> - Lists the policies that are supported in Windows Holographic Enterprise.</li>
 </ul>
 
-## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
+<a href="" id="main-policy-table"></a>
+## Table of Policies for Windows 10
 
 > **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
@@ -5497,7 +5498,8 @@ Footnote:
 
 -   \* - Added in Windows 10, version 1607.
 
-## <a href="" id="hololens-policies"></a>Policies supported by Windows Holographic Enterprise
+<a href="" id="hololens-policies"></a>
+## Policies supported by Windows Holographic Enterprise
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
