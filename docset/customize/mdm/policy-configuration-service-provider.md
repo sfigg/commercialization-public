@@ -134,7 +134,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#AboveLock-AllowToasts">AboveLock/AllowToasts</a></td>
+<td style="vertical-align:top"><a href="#abovelock-allowtoasts">AboveLock/AllowToasts</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -153,7 +153,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#Accounts-AllowAddingNonMicrosoftAccountsManually">Accounts/AllowAddingNonMicrosoftAccountsManually</a></td>
+<td style="vertical-align:top"><a href="#accounts-allowaddingnonmicrosoftaccountsmanually">Accounts/AllowAddingNonMicrosoftAccountsManually</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -172,7 +172,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#Accounts_AllowMicrosoftAccountConnection">Accounts/AllowMicrosoftAccountConnection</a></td>
+<td style="vertical-align:top"><a href="#accounts_allowmicrosoftaccountconnection">Accounts/AllowMicrosoftAccountConnection</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -191,7 +191,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#Accounts_DomainNamesForEmailSync">Accounts/DomainNamesForEmailSync</a></td>
+<td style="vertical-align:top"><a href="#accounts_domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -210,7 +210,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowAllTrustedApps">ApplicationManagement/AllowAllTrustedApps</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowalltrustedapps">ApplicationManagement/AllowAllTrustedApps</a></td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -229,7 +229,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowAppStoreAutoUpdate">ApplicationManagement/AllowAppStoreAutoUpdate</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowappstoreautoupdate">ApplicationManagement/AllowAppStoreAutoUpdate</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -248,7 +248,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowDeveloperUnlock">ApplicationManagement/AllowDeveloperUnlock</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowdeveloperunlock">ApplicationManagement/AllowDeveloperUnlock</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -267,7 +267,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowGameDVR">ApplicationManagement/AllowGameDVR</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowgamedvr">ApplicationManagement/AllowGameDVR</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -286,7 +286,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowSharedUserAppData">ApplicationManagement/AllowSharedUserAppData</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -305,7 +305,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_AllowStore">ApplicationManagement/AllowStore</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_allowstore">ApplicationManagement/AllowStore</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
@@ -324,7 +324,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_ApplicationRestrictions">ApplicationManagement/ApplicationRestrictions</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_applicationrestrictions">ApplicationManagement/ApplicationRestrictions</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
@@ -343,7 +343,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_DisableStoreOriginatedApps">ApplicationManagement/DisableStoreOriginatedApps</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
@@ -362,7 +362,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_RequirePrivateStoreOnly">ApplicationManagement/RequirePrivateStoreOnly</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_requireprivatestoreonly">ApplicationManagement/RequirePrivateStoreOnly</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
@@ -381,7 +381,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_RestrictAppDataToSystemVolume">ApplicationManagement/RestrictAppDataToSystemVolume</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_restrictappdatatosystemvolume">ApplicationManagement/RestrictAppDataToSystemVolume</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -400,7 +400,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#ApplicationManagement_RestrictAppToSystemVolume">ApplicationManagement/RestrictAppToSystemVolume</a></td>
+<td style="vertical-align:top"><a href="#applicationmanagement_restrictapptosystemvolume">ApplicationManagement/RestrictAppToSystemVolume</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
