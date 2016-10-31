@@ -69,7 +69,7 @@ In this step, you add language support and the Windows Setup optional components
     ```
 
     **Important**  
-    For Windows Server 2016, you must use the WinPE-Setup-Server optional component and associated language pack.
+    For Windows Server 2016, you must use the WinPE-Setup-Server optional components instead of the WinPE-Setup-Client optional components.
 
      
 4.  For Japanese (ja-JP), Korean (ko-KR), and Chinese (zh-HK, zh-CN, zh-TW), you have to add additional font support to your image. For example, to add Japanese font support:
@@ -83,7 +83,7 @@ In this step, you add language support and the Windows Setup optional components
 
 ### Add Language Packs to the Windows Image
 
-**You must add the same language support to your Windows image file, Install.wim, as you did for the Boot.wim file.** The setup process requires that both images contain the same set of language packs. For more information, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
+**You must add the same language support to your Windows image file, install.wim, as you did for the boot.wim file.** The setup process requires that both images contain the same set of language packs. For more information, see [Add and Remove Language Packs Offline Using DISM](add-and-remove-language-packs-offline-using-dism.md).
 
 1.   Mount the Windows image with DISM
 
@@ -119,7 +119,7 @@ In this step you copy the language-specific Setup resources from each language s
 
 In this step you recreate the Lang.ini file and specify the default language settings.
 
-1.  Recreate the Lang.ini file to reflect the additional languages using **Dism /Gen-LangINI*.
+1.  Recreate the Lang.ini file to reflect the additional languages using *Dism /Gen-LangINI*.
 
     ``` syntax
     Dism /image:C:\mount\windows /gen-langINI /distribution:C:\my_distribution
