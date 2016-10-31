@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Password
 
 
-`Password` specifies the password for the [Username](microsoft-windows-shell-setupautologonusername.md) account used for autologon to the [Domain](microsoft-windows-shell-setupautologondomain.md), and whether the password is made more security-enhanced in the unattended installation answer file.
+`Password` specifies the password for the [Username](microsoft-windows-shell-setup-autologon-username.md) account used for autologon to the [Domain](microsoft-windows-shell-setup-autologon-domain.md), and whether the password is made more security-enhanced in the unattended installation answer file.
 
 ## Child Elements
 
@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PlainText](microsoft-windows-shell-setupautologonpasswordplaintext.md)</p></td>
-<td><p>Specifies whether the autologon password [Value](microsoft-windows-shell-setupautologonpasswordvalue.md) is hidden in the answer file.</p></td>
+<td><p>[PlainText](microsoft-windows-shell-setup-autologon-password-plaintext.md)</p></td>
+<td><p>Specifies whether the autologon password [Value](microsoft-windows-shell-setup-autologon-password-value.md) is hidden in the answer file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-shell-setupautologonpasswordvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-shell-setup-autologon-password-value.md)</p></td>
 <td><p>Specifies the autologon password.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | **Password**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | **Password**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[AutoLogon](microsoft-windows-shell-setupautologon.md)
+[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
  
 

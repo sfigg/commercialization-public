@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the autologon [Password](microsoft-windows-shell-setupautologonpassword.md).
+`Value` specifies the autologon [Password](microsoft-windows-shell-setup-autologon-password.md).
 
 ## Values
 
@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | [Password](microsoft-windows-shell-setupautologonpassword.md) | **Value**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | [Password](microsoft-windows-shell-setup-autologon-password.md) | **Value**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[Password](microsoft-windows-shell-setupautologonpassword.md)
+[Password](microsoft-windows-shell-setup-autologon-password.md)
 
  
 

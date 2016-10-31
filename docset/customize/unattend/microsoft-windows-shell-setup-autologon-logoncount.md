@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # LogonCount
 
 
-`LogonCount` specifies the number of times that you can log on to the computer by using `AutoLogon`. This value decrements each time you log on to the computer. You must restart the computer to reset the value of `LogonCount`. `LogonCount` must be specified if [AutoLogon](microsoft-windows-shell-setupautologon.md) is used.
+`LogonCount` specifies the number of times that you can log on to the computer by using `AutoLogon`. This value decrements each time you log on to the computer. You must restart the computer to reset the value of `LogonCount`. `LogonCount` must be specified if [AutoLogon](microsoft-windows-shell-setup-autologon.md) is used.
 
 After the specified number of automated logon actions has occurred, you must manually log onto the computer.
 
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | **LogonCount**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | **LogonCount**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following XML output shows how to set `AutoLogon` so that you can log onto t
 ## Related topics
 
 
-[AutoLogon](microsoft-windows-shell-setupautologon.md)
+[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
  
 

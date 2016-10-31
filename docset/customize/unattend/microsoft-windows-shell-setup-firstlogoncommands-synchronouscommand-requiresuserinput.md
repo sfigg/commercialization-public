@@ -20,7 +20,7 @@ After the Windows Out of Box Experience (OOBE), the "Preparing Your Desktop" sc
 If a first logon command requires user input, end users may be forced to wait up to two minutes before they can see the desktop. After this delay, they can interact with the user interface that requires their input. You can use the `RequiresUserInput` setting to reduce this delay.
 
 **Note**  
--   If the command that requires user input is not dependent on other commands, consider using an asynchronous command instead. Unlike synchronous commands, asynchronous commands may start and finish in any order. Asynchronous commands cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about asynchronous commands, see [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md).
+-   If the command that requires user input is not dependent on other commands, consider using an asynchronous command instead. Unlike synchronous commands, asynchronous commands may start and finish in any order. Asynchronous commands cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about asynchronous commands, see [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md).
 
 -   If you have multiple first logon commands, we recommend that you set the command that requires user input last in the order of first logon commands. This will help to prevent users from interfering with the other first logon commands.
 
@@ -59,7 +59,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) | **RequiresUserInput**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) | **RequiresUserInput**
 
 ## Applies To
 
@@ -90,9 +90,9 @@ The following XML output shows how to specify that one of the first logon comman
 ## Related topics
 
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
  
 

@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | **Enabled**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | **Enabled**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[AutoLogon](microsoft-windows-shell-setupautologon.md)
+[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
  
 

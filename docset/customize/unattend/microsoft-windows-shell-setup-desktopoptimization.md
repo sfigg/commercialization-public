@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[GoToDesktopOnSignIn](microsoft-windows-shell-setupdesktopoptimizationgotodesktoponsignin.md)</p></td>
+<td><p>[GoToDesktopOnSignIn](microsoft-windows-shell-setup-desktopoptimization-gotodesktoponsignin.md)</p></td>
 <td><p>Specifies to go to the desktop instead of Start Screen when signing in or when all the apps on a screen are closed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setupdesktopoptimizationshowwindowsstoreappsontaskbar.md)</p></td>
+<td><p>[ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setup-desktopoptimization-showwindowsstoreappsontaskbar.md)</p></td>
 <td><p>Specifies to show Windows Store apps on the taskbar.</p></td>
 </tr>
 </tbody>

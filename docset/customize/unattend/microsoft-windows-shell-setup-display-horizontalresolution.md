@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Display](microsoft-windows-shell-setupdisplay.md) | **HorizontalResolution**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Display](microsoft-windows-shell-setup-display.md) | **HorizontalResolution**
 
 ## Applies To
 
@@ -72,7 +72,7 @@ The following XML output sets the display resolution to 1024x768, with 32-bit co
 ## Related topics
 
 
-[Display](microsoft-windows-shell-setupdisplay.md)
+[Display](microsoft-windows-shell-setup-display.md)
 
  
 

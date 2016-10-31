@@ -25,23 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ColorDepth](microsoft-windows-shell-setupdisplaycolordepth.md)</p></td>
+<td><p>[ColorDepth](microsoft-windows-shell-setup-display-colordepth.md)</p></td>
 <td><p>Specifies a valid color depth for the display device in bits per pixel.</p></td>
 </tr>
-<tr class="even">
-<td><p>[DPI](microsoft-windows-shell-setupdisplaydpi.md)</p></td>
-<td><p>Specifies what size to show text and other items on the screen.</p></td>
-</tr>
 <tr class="odd">
-<td><p>[HorizontalResolution](microsoft-windows-shell-setupdisplayhorizontalresolution.md)</p></td>
+<td><p>[HorizontalResolution](microsoft-windows-shell-setup-display-horizontalresolution.md)</p></td>
 <td><p>Specifies a valid horizontal resolution for the display device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RefreshRate](microsoft-windows-shell-setupdisplayrefreshrate.md)</p></td>
+<td><p>[RefreshRate](microsoft-windows-shell-setup-display-refreshrate.md)</p></td>
 <td><p>Specifies a valid refresh rate for the display device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[VerticalResolution](microsoft-windows-shell-setupdisplayverticalresolution.md)</p></td>
+<td><p>[VerticalResolution](microsoft-windows-shell-setup-display-verticalresolution.md)</p></td>
 <td><p>Specifies a valid vertical resolution for the display device.</p></td>
 </tr>
 </tbody>

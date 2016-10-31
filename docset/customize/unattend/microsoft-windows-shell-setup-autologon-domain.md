@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | **Domain**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | **Domain**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[AutoLogon](microsoft-windows-shell-setupautologon.md)
+[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
  
 

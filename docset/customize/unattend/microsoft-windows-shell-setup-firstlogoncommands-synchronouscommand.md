@@ -21,9 +21,9 @@ If you create a user account that does not include administrative privileges, th
 
 -   If User Account Control is disabled, these commands don’t run.
 
-When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deploymentresealmode.md) = Audit.
+When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deployment-resealmode.md) = Audit.
 
-**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
+**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. 
 
  
 
@@ -37,19 +37,19 @@ When you add a script using FirstLogonCommands, it will be triggered on the next
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CommandLine](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommandcommandline.md)</p></td>
+<td><p>[CommandLine](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-commandline.md)</p></td>
 <td><p>Specifies the path to the command to run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-description.md)</p></td>
 <td><p>Describes the command to run.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-order.md)</p></td>
 <td><p>Specifies the order in which the command is run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RequiresUserInput](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommandrequiresuserinput.md)</p></td>
+<td><p>[RequiresUserInput](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-requiresuserinput.md)</p></td>
 <td><p>Specifies whether the first logon command launches a dialog box that requires input from the user. This can reduce the delay of the &quot;Preparing Your Desktop&quot; screen.</p></td>
 </tr>
 </tbody>

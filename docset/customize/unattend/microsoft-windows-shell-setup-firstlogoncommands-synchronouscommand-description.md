@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` gives a brief description of the [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) to be run at first logon.
+`Description` gives a brief description of the [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) to be run at first logon.
 
 ## Values
 
@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) | **Description**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) | **Description**
 
 ## Applies To
 
@@ -73,7 +73,7 @@ The following XML output shows how to set first logon commands.
 ## Related topics
 
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
  
 

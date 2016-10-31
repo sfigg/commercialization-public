@@ -41,23 +41,23 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Configure to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md). OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CopyProfile](microsoft-windows-shell-setupcopyprofile.md)</p></td>
+<td><p>[CopyProfile](microsoft-windows-shell-setup-copyprofile.md)</p></td>
 <td><p>Specifies whether the default user profile that is normally stored in the C:\Users\Default User folder is overwritten by copying the current user's profile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisableAutoDaylightTimeSet](microsoft-windows-shell-setupdisableautodaylighttimeset.md)</p></td>
+<td><p>[DisableAutoDaylightTimeSet](microsoft-windows-shell-setup-disableautodaylighttimeset.md)</p></td>
 <td><p>Specifies whether to enable the destination computer to automatically change between daylight saving time and standard time.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Display](microsoft-windows-shell-setupdisplay.md)</p></td>
+<td><p>[Display](microsoft-windows-shell-setup-display.md)</p></td>
 <td><p>Specifies display settings to apply to a destination computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md)</p></td>
+<td><p>[FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md)</p></td>
 <td><p>Specifies commands to run the first time that an end user logs on to the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FolderLocations](microsoft-windows-shell-setupfolderlocations.md)</p></td>
+<td><p>[FolderLocations](microsoft-windows-shell-setup-folderlocations.md)</p></td>
 <td><p>Specifies the location of the user profile and program data folders.</p>
 <div class="alert">
 <strong>Important</strong>  
@@ -68,19 +68,19 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[LogonCommands](microsoft-windows-shell-setuplogoncommands.md)</p></td>
+<td><p>[LogonCommands](microsoft-windows-shell-setup-logoncommands.md)</p></td>
 <td><p>Specifies commands to run when an end user logs on to the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NotificationArea](microsoft-windows-shell-setupnotificationarea.md)</p></td>
+<td><p>[NotificationArea](microsoft-windows-shell-setup-notificationarea.md)</p></td>
 <td><p>Specifies settings that are related to the system notification area at the far right of the taskbar.</p></td>
 </tr>
 <tr class="even">
-<td><p>[OEMInformation](microsoft-windows-shell-setupoeminformation.md)</p></td>
+<td><p>[OEMInformation](microsoft-windows-shell-setup-oeminformation.md)</p></td>
 <td><p>Specifies information about the OEM, including the name, the model of the computer, and a logo for the OEM.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OEMName](microsoft-windows-shell-setupoemname.md)</p></td>
+<td><p>[OEMName](microsoft-windows-shell-setup-oemname.md)</p></td>
 <td><p>Specifies the name of the OEM for the group or groups of app tiles that you pin to the Start screen.</p></td>
 </tr>
 <tr class="even">
@@ -92,19 +92,19 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Specifies values that suppress certain pages of OOBE.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProductKey](microsoft-windows-shell-setupproductkey.md)</p></td>
+<td><p>[ProductKey](microsoft-windows-shell-setup-productkey.md)</p></td>
 <td><p>Specifies the product key for the Windows edition.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RegisteredOrganization](microsoft-windows-shell-setupregisteredorganization.md)</p></td>
+<td><p>[RegisteredOrganization](microsoft-windows-shell-setup-registeredorganization.md)</p></td>
 <td><p>Specifies information about the computer's owner.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RegisteredOwner](microsoft-windows-shell-setupregisteredowner.md)</p></td>
+<td><p>[RegisteredOwner](microsoft-windows-shell-setup-registeredowner.md)</p></td>
 <td><p>Specifies information about the organization of the computer's owner.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ShowPowerButtonOnStartScreen](microsoft-windows-shell-setupshowpowerbuttononstartscreen.md)</p></td>
+<td><p>[ShowPowerButtonOnStartScreen](microsoft-windows-shell-setup-showpowerbuttononstartscreen.md)</p></td>
 <td><p>Specifies that the <strong>Power Options</strong> button is visible on the Start screen.</p></td>
 </tr>
 <tr class="even">
@@ -112,31 +112,31 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Specifies whether users switch to tablet mode by default after signing in.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[StartTiles](microsoft-windows-shell-setupstarttiles.md)</p></td>
+<td><p>[StartTiles](microsoft-windows-shell-setup-starttiles.md)</p></td>
 <td><p>Specifies the position of up to 24 app tiles on the <strong>Start</strong> screen, and one app badge on the <strong>Lock</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TaskbarLinks](microsoft-windows-shell-setuptaskbarlinks.md)</p></td>
+<td><p>[TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md)</p></td>
 <td><p>Specifies shortcuts to display on the taskbar. You can specify up to three links.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Themes](microsoft-windows-shell-setupthemes.md)</p></td>
+<td><p>[Themes](microsoft-windows-shell-setup-themes.md)</p></td>
 <td><p>Specifies custom elements of the Windows visual style.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TimeZone](microsoft-windows-shell-setuptimezone.md)</p></td>
+<td><p>[TimeZone](microsoft-windows-shell-setup-timezone.md)</p></td>
 <td><p>Specifies the computer's time zone.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UserAccounts](microsoft-windows-shell-setupuseraccounts.md)</p></td>
+<td><p>[UserAccounts](microsoft-windows-shell-setup-useraccounts.md)</p></td>
 <td><p>Specifies local accounts to be created or domain accounts to be added during installation.</p></td>
 </tr>
 <tr class="even">
-<td><p>[VisualEffects](microsoft-windows-shell-setupvisualeffects.md)</p></td>
+<td><p>[VisualEffects](microsoft-windows-shell-setup-visualeffects.md)</p></td>
 <td><p>Specifies additional display settings.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WindowsFeatures](microsoft-windows-shell-setupwindowsfeatures.md)</p></td>
+<td><p>[WindowsFeatures](microsoft-windows-shell-setup-windowsfeatures.md)</p></td>
 <td><p>Specifies whether to show entry points for Internet Explorer, Media Center, and Windows Media Player.</p></td>
 </tr>
 </tbody>

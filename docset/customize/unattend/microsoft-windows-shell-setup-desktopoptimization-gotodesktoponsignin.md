@@ -59,7 +59,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [DesktopOptimization](microsoft-windows-shell-setupdesktopoptimization.md) | **GoToDesktopOnSignIn**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [DesktopOptimization](microsoft-windows-shell-setup-desktopoptimization.md) | **GoToDesktopOnSignIn**
 
 ## Applies To
 
@@ -81,9 +81,9 @@ The following XML output specifies to go to the desktop on sign in and to show W
 ## Related topics
 
 
-[DesktopOptimization](microsoft-windows-shell-setupdesktopoptimization.md)
+[DesktopOptimization](microsoft-windows-shell-setup-desktopoptimization.md)
 
-[ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setupdesktopoptimizationshowwindowsstoreappsontaskbar.md)
+[ShowWindowsStoreAppsOnTaskbar](microsoft-windows-shell-setup-desktopoptimization-showwindowsstoreappsontaskbar.md)
 
  
 

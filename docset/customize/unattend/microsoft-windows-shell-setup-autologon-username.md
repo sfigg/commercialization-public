@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # Username
 
 
-`Username` specifies a local account or a domain user account on the domain specified by the [Domain](microsoft-windows-shell-setupautologondomain.md).
+`Username` specifies a local account or a domain user account on the domain specified by the [Domain](microsoft-windows-shell-setup-autologon-domain.md).
 
-By default, the built-in administrator account is disabled in all default clean installations. You can enable the built-in Administrator account during unattended installations, by setting `Username` to **Administrator** (only the English word will automatically enable the account). This enables the built-in administrator account, even if a password is not specified in [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md).
+By default, the built-in administrator account is disabled in all default clean installations. You can enable the built-in Administrator account during unattended installations, by setting `Username` to **Administrator** (only the English word will automatically enable the account). This enables the built-in administrator account, even if a password is not specified in [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md).
 
 If you are deploying a multilingual Windows image, you should specify account names and group names, by using the language-neutral names. The language-neutral account and group names are specified in English, for example, **Administrators**, **Power Users**, and **Guest**. This is required because the shell account settings are processed before a default user interface (UI) language is applied to the computer.
 
@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setupautologon.md) | **Username**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [AutoLogon](microsoft-windows-shell-setup-autologon.md) | **Username**
 
 ## Applies To
 
@@ -82,7 +82,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[AutoLogon](microsoft-windows-shell-setupautologon.md)
+[AutoLogon](microsoft-windows-shell-setup-autologon.md)
 
  
 

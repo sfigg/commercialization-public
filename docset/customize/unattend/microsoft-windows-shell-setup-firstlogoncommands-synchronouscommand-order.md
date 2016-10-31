@@ -13,10 +13,9 @@ ms.sitesec: msdn
 # Order
 
 
-`Order` specifies the order in which the [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) is to be run at first logon.
+`Order` specifies the order in which the [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) is to be run at first logon.
 
-**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
-
+**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. 
  
 
 ## Values
@@ -45,7 +44,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) | **Order**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) | **Order**
 
 ## Applies To
 
@@ -75,9 +74,9 @@ The following XML output shows how to set first logon commands.
 ## Related topics
 
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
  
 

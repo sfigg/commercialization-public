@@ -41,23 +41,23 @@ These settings are valid for upgrades.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-shell-setupautologondomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-shell-setup-autologon-domain.md)</p></td>
 <td><p>Specifies the domain to which the computer is logging on.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Enabled](microsoft-windows-shell-setupautologonenabled.md)</p></td>
+<td><p>[Enabled](microsoft-windows-shell-setup-autologon-enabled.md)</p></td>
 <td><p>Specifies whether the automatic logon process is enabled.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LogonCount](microsoft-windows-shell-setupautologonlogoncount.md)</p></td>
+<td><p>[LogonCount](microsoft-windows-shell-setup-autologon-logoncount.md)</p></td>
 <td><p>Specifies the number of times that the account has been used. <code>LogonCount</code> must be specified if <code>AutoLogon</code> is used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-shell-setupautologonpassword.md)</p></td>
+<td><p>[Password](microsoft-windows-shell-setup-autologon-password.md)</p></td>
 <td><p>Specifies the password for the account that is used for automatic logon.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-shell-setupautologonusername.md)</p></td>
+<td><p>[Username](microsoft-windows-shell-setup-autologon-username.md)</p></td>
 <td><p>Specifies the user account name that is used for automatic logon.</p></td>
 </tr>
 </tbody>

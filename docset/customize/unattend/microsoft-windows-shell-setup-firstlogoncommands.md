@@ -29,11 +29,11 @@ If the command launches a separate system process, the system process will run i
 
 Other processes, such as services, are not restricted by `FirstLogonCommands` and will continue to start or to terminate independently.
 
-**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setuplogoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
+**Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
 
  
 
-When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deploymentresealmode.md) = Audit.
+When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deployment-resealmode.md) = Audit.
 
 ## Child Elements
 
@@ -45,7 +45,7 @@ When you add a script using FirstLogonCommands, it will be triggered on the next
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)</p></td>
+<td><p>[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)</p></td>
 <td><p>Specifies a command to run the first time a user logs on to the computer, its description, and the order in which it is run.</p></td>
 </tr>
 </tbody>
@@ -91,9 +91,9 @@ The following XML output shows how to specify two commands to run after first lo
 ## Related topics
 
 
-[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)
+[RunSynchronous](microsoft-windows-deployment-runsynchronous.md)
 
-[LogonCommands](microsoft-windows-shell-setuplogoncommands.md)
+[LogonCommands](microsoft-windows-shell-setup-logoncommands.md)
 
 [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)
 

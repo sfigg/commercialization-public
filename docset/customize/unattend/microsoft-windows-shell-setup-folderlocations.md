@@ -15,9 +15,6 @@ ms.sitesec: msdn
 
 The `FolderLocations` setting specifies the location of the user-profile and program-data folders.
 
-**Important**  
-For a list of known issues with the `FolderLocations` setting, see [Description of known issues with the FolderLocation settings](http://go.microsoft.com/fwlink/?LinkId=142275%0A).
-
  
 
 ## Child Elements
@@ -30,11 +27,11 @@ For a list of known issues with the `FolderLocations` setting, see [Description 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ProfilesDirectory](microsoft-windows-shell-setupfolderlocationsprofilesdirectory.md)</p></td>
+<td><p>[ProfilesDirectory](microsoft-windows-shell-setup-folderlocations-profilesdirectory.md)</p></td>
 <td><p>Specifies the path to the user profile folder.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProgramData](microsoft-windows-shell-setupfolderlocationsprogramdata.md)</p></td>
+<td><p>[ProgramData](microsoft-windows-shell-setup-folderlocations-programdata.md)</p></td>
 <td><p>Specifies the path to the program-data folder.</p>
 <div class="alert">
 <strong>Warning</strong>  

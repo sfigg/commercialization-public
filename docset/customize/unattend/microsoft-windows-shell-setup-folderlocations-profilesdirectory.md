@@ -66,7 +66,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FolderLocations](microsoft-windows-shell-setupfolderlocations.md) | **ProfilesDirectory**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FolderLocations](microsoft-windows-shell-setup-folderlocations.md) | **ProfilesDirectory**
 
 ## Applies To
 
@@ -88,7 +88,7 @@ The following XML example shows how to set the paths to folder locations.
 ## Related topics
 
 
-[FolderLocations](microsoft-windows-shell-setupfolderlocations.md)
+[FolderLocations](microsoft-windows-shell-setup-folderlocations.md)
 
  
 

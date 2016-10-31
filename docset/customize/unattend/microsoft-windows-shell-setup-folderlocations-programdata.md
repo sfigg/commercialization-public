@@ -22,8 +22,6 @@ We don’t recommend using this setting, except perhaps in a test environment. T
 
 -   If you change the default location of the program-data folders to a volume other than the system volume, you cannot service your image. Any updates, fixes, or service packs may not be applied to the installation.
 
-For a list of more known issues with this setting, see [Description of known issues with the FolderLocation settings](http://go.microsoft.com/fwlink/?LinkId=142275%0A).
-
  
 
 The path can be on a volume other than the system drive, as long as it meets the following requirements:
@@ -62,7 +60,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FolderLocations](microsoft-windows-shell-setupfolderlocations.md) | **ProgramData**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FolderLocations](microsoft-windows-shell-setup-folderlocations.md) | **ProgramData**
 
 ## Applies To
 
@@ -84,7 +82,7 @@ The following XML example shows how to set the paths to folder locations.
 ## Related topics
 
 
-[FolderLocations](microsoft-windows-shell-setupfolderlocations.md)
+[FolderLocations](microsoft-windows-shell-setup-folderlocations.md)
 
  
 

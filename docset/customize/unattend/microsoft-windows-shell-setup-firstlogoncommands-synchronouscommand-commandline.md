@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CommandLine
 
 
-`CommandLine` specifies the path to the [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) to be run at first logon.
+`CommandLine` specifies the path to the [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) to be run at first logon.
 
 If you create a user account that does not include administrative privileges, the following commands may not be executed:
 
@@ -21,7 +21,7 @@ If you create a user account that does not include administrative privileges, th
 
 -   If User Account Control is disabled, these commands are not executed.
 
-When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deploymentresealmode.md) = Audit.
+When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deployment-resealmode.md) = Audit.
 
 ## Values
 
@@ -51,7 +51,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md) | **CommandLine**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) | [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md) | **CommandLine**
 
 ## Applies To
 
@@ -81,7 +81,7 @@ The following XML output shows how to set first logon commands.
 ## Related topics
 
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
  
 
