@@ -54,7 +54,7 @@ In this step, you add language support and the Windows Setup optional components
     Dism /mount-image /imagefile:C:\my_distribution\sources\boot.wim /index:2 /mountdir:C:\Mount\boot
     ```
 
-3.  Add Windows PE Setup optional component and language packs into your mounted image using **Dism /Add-Package** for each language you want to support. Add *lp.cab*, *WinPE-setup_<language>.cab*, and *WinPE-Setup-client_<language>.cab* for each language you are adding.
+3.  Add Windows PE Setup optional component and language packs into your mounted image using **Dism /Add-Package** for each language you want to support. Add *lp.cab*, *WinPE-setup_\<language>.cab*, and *WinPE-Setup-client_\<language>.cab* for each language you are adding.
 
     Windows PE language packs are available in the Windows ADK.
 
