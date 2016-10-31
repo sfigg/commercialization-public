@@ -21,7 +21,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 
 -   [What's new in Windows 10, version 1511](#whatsnew)
--   [What's new in Windows 10, version 1607](#whatsnew-1607)
+-   [What's new in Windows 10, version 1607](#whatsnew1607)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -31,7 +31,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     -   [MDM enrollment fails on the mobile device when traffic is going through proxy](#enrollmentviaproxy)
     -   [Server-initiated unenroll failure](#unenrollment)
     -   [Certificates causing issues with Wi-Fi and VPN](#certissues)
-    -   [Version information for mobile devices](#version)
+    -   [Version information for mobile devices](#versioninformation)
     -   [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#whitelist)
     -   [Apps dependent on Microsoft Frameworks may get blocked](#frameworks)
     -   [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#wificertissue)
@@ -176,7 +176,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
  
 
-## <a href="" id="whatsnew-1607"></a>What's new in Windows 10, version 1607
+## <a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607
 
 
 <table>
@@ -523,7 +523,7 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
-### <a href="" id="version"></a>Version information for mobile devices
+### <a href="" id="versioninformation"></a>Version information for mobile devices
 
 The software version information from **DevDetail/SwV** does not match the version in **Settings** under **System/About**.
 
