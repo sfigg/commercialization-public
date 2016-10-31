@@ -22,25 +22,25 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew-1607)
--   [Breaking changes and known issues](#breaking-changes)
-    -   [Get command inside an atomic command is not supported](#get-command)
+-   [Breaking changes and known issues](#breaking-changes-and-known-issues)
+    -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
-    -   [Apps installed using WMI classes are not removed](#apps-not-removed)
+    -   [Apps installed using WMI classes are not removed](#appsnotremoved)
     -   [Passing CDATA in SyncML does not work](#cdata)
-    -   [SSL settings in IIS server for SCEP must be set to "Ignore"](#ssl-settings)
-    -   [MDM enrollment fails on the mobile device when traffic is going through proxy](#enrollment-via-proxy)
+    -   [SSL settings in IIS server for SCEP must be set to "Ignore"](#sslsettings)
+    -   [MDM enrollment fails on the mobile device when traffic is going through proxy](#enrollmentviaproxy)
     -   [Server-initiated unenroll failure](#unenrollment)
-    -   [Certificates causing issues with Wi-Fi and VPN](#cert-issues)
+    -   [Certificates causing issues with Wi-Fi and VPN](#certissues)
     -   [Version information for mobile devices](#version)
     -   [Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues](#whitelist)
     -   [Apps dependent on Microsoft Frameworks may get blocked](#frameworks)
-    -   [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#wifi-cert-issue)
-    -   [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote-pin-reset-not-supported-in-azure-active-directory-joined-mobile-devices)
-    -   [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#renew-wns)
-    -   [User provisioning failure in Azure Active Directory joined Windows 10 PC](#user-provisioning)
+    -   [Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile](#wificertissue)
+    -   [Remote PIN reset not supported in Azure Active Directory joined mobile devices](#remote)
+    -   [MDM client will immediately check-in with the MDM server after client renews WNS channel URI](#renewwns)
+    -   [User provisioning failure in Azure Active Directory joined Windows 10 PC](#userprovisioning)
     -   [Requirements to note for VPN certificates also used for Kerberos Authentication](#kerberos)
-    -   [Device management agent for the push-button reset is not working](#push-button-reset)
--   [Change history in MDM documentation](#change-history)
+    -   [Device management agent for the push-button reset is not working](#pushbuttonreset)
+-   [Change history in MDM documentation](#change-history-in-mdm-documentation)
 -   [FAQ](#faq)
 
 ## <a href="" id="whatsnew"></a>What's new in Windows 10, version 1511
@@ -482,10 +482,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
  
 
-## <a href="" id="breaking-changes"></a>Breaking changes and known issues
+## Breaking changes and known issues
 
 
-### <a href="" id="get-command"></a>Get command inside an atomic command is not supported
+### <a href="" id="getcommand"></a>Get command inside an atomic command is not supported
 
 In Windows 10, a Get command inside an atomic command is not supported. This was allowed in Windows Phone 8 and Windows Phone 8.1.
 
@@ -495,7 +495,7 @@ During an upgrade from Windows 8.1 to Windows 10, the notification channel URI
 
 After upgrading to Windows 10, you should call MDM\_WNSConfiguration class to recreate the notification channel URI.
 
-### <a href="" id="apps-not-removed"></a>Apps installed using WMI classes are not removed
+### <a href="" id="appsnotremoved"></a>Apps installed using WMI classes are not removed
 
 Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
@@ -503,13 +503,13 @@ Applications installed using WMI classes are not removed when the MDM account is
 
 Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10. It worked in Windows Phone 8.
 
-### <a href="" id="ssl-settings"></a>SSL settings in IIS server for SCEP must be set to "Ignore"
+### <a href="" id="sslsettings"></a>SSL settings in IIS server for SCEP must be set to "Ignore"
 
 The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10. In Windows Phone 8.1, when you set the client certificate to "Accept," it works fine.
 
 ![ssl settings](images/ssl-settings.png)
 
-### <a href="" id="enrollment-via-proxy"></a>MDM enrollment fails on the mobile device when traffic is going through proxy
+### <a href="" id="enrollmentviaproxy"></a>MDM enrollment fails on the mobile device when traffic is going through proxy
 
 When the mobile device is configured to use a proxy that requires authentication, the enrollment will fail. To work around this issue, the user can use a proxy that does not require authentication or remove the proxy setting from the connected network.
 
@@ -519,7 +519,7 @@ Server-initiated unenrollment for a device enrolled by adding a work account sil
 
 Remote server unenrollment is disabled for mobile devices enrolled via Azure Active Directory Join. It returns an error message to the server. The only way to remove enrollment for a mobile device that is Azure AD joined is by remotely wiping the device.
 
-### <a href="" id="cert-issues"></a>Certificates causing issues with Wi-Fi and VPN
+### <a href="" id="certissues"></a>Certificates causing issues with Wi-Fi and VPN
 
 Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
@@ -556,7 +556,7 @@ Applies only to phone prior to build 10586.218: When ApplicationManagement/Appli
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
-### <a href="" id="wifi-cert-issue"></a>Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
+### <a href="" id="wificertissue"></a>Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 Mobile
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -726,15 +726,15 @@ Alternatively you can use the following procedure to create an EAP Configuration
 > **Note**  You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) topic.
 
 
-### Remote PIN reset not supported in Azure Active Directory joined mobile devices
+### <a href="" id="remote"></a>Remote PIN reset not supported in Azure Active Directory joined mobile devices
 
 In Windows 10 Mobile, remote PIN reset in Azure AD joined devices are not supported. Devices are wiped when you issue a remote PIN reset command using the RemoteLock CSP.
 
-### <a href="" id="renew-wns"></a>MDM client will immediately check-in with the MDM server after client renews WNS channel URI
+### <a href="" id="renewwns"></a>MDM client will immediately check-in with the MDM server after client renews WNS channel URI
 
 Starting in Windows 10, after the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### <a href="" id="user-provisioning"></a>User provisioning failure in Azure Active Directory joined Windows 10 PC
+### <a href="" id="userprovisioning"></a>User provisioning failure in Azure Active Directory joined Windows 10 PC
 
 In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -742,12 +742,12 @@ In Azure AD joined Windows 10 PC, provisioning /.User resources fails when the 
 
 If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premise resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that do not meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. This issue primarily impacts Windows Phone.
 
-### <a href="" id="push-button-reset"></a>Device management agent for the push-button reset is not working
+### <a href="" id="pushbuttonreset"></a>Device management agent for the push-button reset is not working
 
 The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/push-button-reset-overview) keeps the registry settings for OMA DM sessions, but deletes the task schedules. The client enrollment is retained, but it never syncs with the MDM service.
 
 
-## <a href="" id="change-history"></a>Change history in MDM documentation
+## Change history in MDM documentation
 
 ### November 3, 2016
 
