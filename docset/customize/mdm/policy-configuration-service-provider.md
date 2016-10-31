@@ -134,7 +134,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#AboveLock_AllowToasts">AboveLock/AllowToasts</a></td>
+<td style="vertical-align:top"><a href="#AboveLock-AllowToasts">AboveLock/AllowToasts</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -153,7 +153,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#Accounts_AllowAddingNonMicrosoftAccountsManually">Accounts/AllowAddingNonMicrosoftAccountsManually</a></td>
+<td style="vertical-align:top"><a href="#Accounts-AllowAddingNonMicrosoftAccountsManually">Accounts/AllowAddingNonMicrosoftAccountsManually</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
