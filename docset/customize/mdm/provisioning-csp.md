@@ -16,7 +16,7 @@ The Provisioning configuration service provider is used for bulk user enrollment
 
  
 
-For bulk enrollment step-by-step guide, see [Bulk enrollment](bulk-enrollment.md).
+For bulk enrollment step-by-step guide, see [Bulk enrollment](bulk-enrollment-using-windows-provisioning-tool.md).
 
 The following diagram shows the Provisioning configuration service provider in tree format.
 

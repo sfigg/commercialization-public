@@ -749,6 +749,55 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## <a href="" id="change-history"></a>Change history in MDM documentation
 
+### November 3, 2016
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>The EnterpriseAPN configuration service provider (CSP) is not supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), versions 1511 and 1607.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### October 27, 2016
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[CM_ProxyEntries CSP](cm-proxyentries-csp.md)</td>
+<td style="vertical-align:top"><p>Support for OMA DM was added in Windows 10, version 1607</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
+<td style="vertical-align:top"><p> [Recommended deny list for Windows Information Protection](applocker-csp.md#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications. 
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### October 21, 2016
 
 <table>

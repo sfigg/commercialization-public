@@ -75,7 +75,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 
 ## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
 
-> **Important**  To navigate the table horizontally, use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
 
 <table>
