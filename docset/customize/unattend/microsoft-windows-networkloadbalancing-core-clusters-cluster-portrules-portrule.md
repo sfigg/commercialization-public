@@ -30,47 +30,47 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ClientAffinity](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleclientaffinity.md)</p></td>
+<td><p>[ClientAffinity](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-clientaffinity.md)</p></td>
 <td><p>Specifies how network multiple requests are directed in a cluster.</p></td>
 </tr>
 <tr class="even">
-<td><p>[EndPort](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleendport.md)</p></td>
+<td><p>[EndPort](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-endport.md)</p></td>
 <td><p>Specifies the end port used by the port rule.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EqualLoad](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleequalload.md)</p></td>
+<td><p>[EqualLoad](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-equalload.md)</p></td>
 <td><p>Specifies details about the equal load for the port rule.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HostPriority](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrulehostpriority.md)</p></td>
+<td><p>[HostPriority](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-hostpriority.md)</p></td>
 <td><p>Specifies the host priority for the port rule.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrulekey.md)</p></td>
+<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-key.md)</p></td>
 <td><p>Specifies the name of the port rule.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleloadweight.md)</p></td>
+<td><p>[LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md)</p></td>
 <td><p>Specifies the load weight of the port rule.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Mode](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrulemode.md)</p></td>
+<td><p>[Mode](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-mode.md)</p></td>
 <td><p>Specifies the mode of the port rule.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Protocol](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleprotocol.md)</p></td>
+<td><p>[Protocol](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-protocol.md)</p></td>
 <td><p>Specifies the protocol used by the port rule.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[StartPort](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrulestartport.md)</p></td>
+<td><p>[StartPort](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-startport.md)</p></td>
 <td><p>Specifies the start port used by the port rule.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Timeout](timeout--win7-microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruletimeout.md)</p></td>
+<td><p>[Timeout](timeout--win7-microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-timeout.md)</p></td>
 <td><p>Specifies the number of seconds for which the client affinity would be preserved across configuration changes in a cluster.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[VirtualIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrulevirtualipaddress.md)</p></td>
+<td><p>[VirtualIpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-virtualipaddress.md)</p></td>
 <td><p>Specifies the virtual IP address of the port rule.</p></td>
 </tr>
 </tbody>
@@ -91,7 +91,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 

@@ -395,7 +395,7 @@
 ###### [NetbiosOptions](microsoft-windows-netbt-interfaces-interfacenetbiosoptions.md)
 ### [Microsoft-Windows-NetworkBridge](microsoft-windows-networkbridge-win7-microsoft-windows-networkbridge.md)
 #### [Bridge](microsoft-windows-networkbridgebridge.md)
-### [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md)
+### [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md)
 #### [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md)
 ##### [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md)
 ###### [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateam.md)

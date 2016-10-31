@@ -35,7 +35,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleloadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.</p></td>
+<td><p>Specifies that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,17 +50,17 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md) | **EqualLoad**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [Portrules](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules.md) | [Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md) | **EqualLoad**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core--win7-microsoft-windows-networkloadbalancing-core-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md).
 
 ## XML Example
 
 
-The following XML output shows how to specify that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportruleloadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.
+The following XML output shows how to specify that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portruleloadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.
 
 ``` syntax
 <EqualLoad>false</EqualLoad>
@@ -76,7 +76,7 @@ The following XML output shows how to specify that the distribution of the load 
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)
 
  
 
