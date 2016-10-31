@@ -9,7 +9,7 @@ title: Customize the Start Screen
 # Customize the Start Screen
 
 
-You can add your business apps to a Windows image and customize the **Start** screen to include them. You can customize the **Start** screen for Windows 10 Enterprise, Windows Server 2016 Technical Preview, or a domain-joined PC running Windows 10 Pro.
+You can add your business apps to a Windows image and customize the **Start** screen to include them. You can customize the **Start** screen for Windows 10 Enterprise, Windows Server 2016, or a domain-joined PC running Windows 10 Pro.
 
 Line-of-business (LOB) Windows Store apps do not have to be certified or installed through the Windows Store. Adding apps that do not come from the Windows Store is called *sideloading*. Sideloaded apps must be signed with a certificate that is chained to a trusted root certificate. For more information about sideloading Windows Store apps, including requirements, see [Sideload Apps with DISM](sideload-apps-with-dism-s14.md).
 
