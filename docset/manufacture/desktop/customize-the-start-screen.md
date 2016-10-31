@@ -160,9 +160,9 @@ You can capture the generalized image using the DISM tool and deploy it to multi
 ## <span id="BKMK_AppFolder"></span><span id="bkmk_appfolder"></span><span id="BKMK_APPFOLDER"></span>Copy the AppsFolderLayout.Bin file to set default Start screen layout
 
 
-You can customize the **Start** screen for Windows 10 Enterprise, Windows Server 2016 Technical Preview, or a domain-joined PC running Windows 10 Pro by copying a customized AppsFolderLayout.bin file to the default user profile in the Windows image. In this method, you deploy your image to a test computer, create a user profile, visually design the **Start** screen, and copy that design back into your master image. You can remove app tiles from the **Start** screen, add tiles for Windows apps, resize tiles, and label tile groups.
+You can customize the **Start** screen for Windows 10 Enterprise, Windows Server 2016, or a domain-joined PC running Windows 10 Pro by copying a customized AppsFolderLayout.bin file to the default user profile in the Windows image. In this method, you deploy your image to a test computer, create a user profile, visually design the **Start** screen, and copy that design back into your master image. You can remove app tiles from the **Start** screen, add tiles for Windows apps, resize tiles, and label tile groups.
 
-1.  On a reference PC running Windows 10 Enterprise, Windows Server 2016 Technical Preview, or a domain-joined PC running Windows 10 Pro, customize the **Start** screen.
+1.  On a reference PC running Windows 10 Enterprise, Windows Server 2016, or a domain-joined PC running Windows 10 Pro, customize the **Start** screen.
 
 2.  Run the Sysprep tool to initialize system cleanup. For example, from a command prompt type:
 
