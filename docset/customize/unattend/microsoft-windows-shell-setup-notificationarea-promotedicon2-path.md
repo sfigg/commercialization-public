@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Path` specifies the path to an application. This application should contain an icon to be shown in the notification area at the far right of the taskbar.
 
-By setting the **Path** and [GUID](microsoft-windows-shell-setupnotificationareapromotedicon2guid.md) elements of the **PromotedIcon2** component, you can configure another icon to be visible in the notification area. This icon will appear in place of the **Battery** icon.
+By setting the **Path** and [GUID](microsoft-windows-shell-setup-notificationarea-promotedicon2-guid.md) elements of the **PromotedIcon2** component, you can configure another icon to be visible in the notification area. This icon will appear in place of the **Battery** icon.
 
 To select the icon to be visible, you must:
 
@@ -51,7 +51,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setupnotificationarea.md) | [PromotedIcon2](microsoft-windows-shell-setupnotificationareapromotedicon2.md) | **Path**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setup-notificationarea.md) | [PromotedIcon2](microsoft-windows-shell-setup-notificationareapromotedicon2.md) | **Path**
 
 ## Applies To
 
@@ -73,9 +73,9 @@ The following XML output shows how to promote a new notification-area icon to be
 ## Related topics
 
 
-[PromotedIcon2](microsoft-windows-shell-setupnotificationareapromotedicon2.md)
+[PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md)
 
-[GUID](microsoft-windows-shell-setupnotificationareapromotedicon2guid.md)
+[GUID](microsoft-windows-shell-setup-notificationare-promotedicon2-guid.md)
 
  
 

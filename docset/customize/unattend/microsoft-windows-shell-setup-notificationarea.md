@@ -29,11 +29,11 @@ You can select up to two other icons to be visible in the notification area. The
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PromotedIcon1](microsoft-windows-shell-setupnotificationareapromotedicon1.md)</p></td>
+<td><p>[PromotedIcon1](microsoft-windows-shell-setup-notificationarea-promotedicon1.md)</p></td>
 <td><p>Specifies an icon to be visible in the notification area in place of the <strong>Action Center</strong> icon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PromotedIcon2](microsoft-windows-shell-setupnotificationareapromotedicon2.md)</p></td>
+<td><p>[PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md)</p></td>
 <td><p>Specifies an icon to be visible in the notification area in place of the <strong>Battery</strong> icon.</p></td>
 </tr>
 </tbody>
@@ -53,8 +53,6 @@ specialize
 
 ## Applies To
 
-
-Windows 8, Windows 7, Windows Server 2012, and Windows Server 2008 R2 editions.
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 

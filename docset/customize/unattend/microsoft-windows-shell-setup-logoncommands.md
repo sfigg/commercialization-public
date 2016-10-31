@@ -20,8 +20,6 @@ This setting cannot be used to launch applications that require administrative p
 
  
 
-To learn more about running scripts with Windows Setup, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
-
 ## Child Elements
 
 
@@ -32,7 +30,7 @@ To learn more about running scripts with Windows Setup, see [Add a Custom Script
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)</p></td>
+<td><p>[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)</p></td>
 <td><p>Specifies a single command to run the first time a user logs on to the computer.</p></td>
 </tr>
 </tbody>

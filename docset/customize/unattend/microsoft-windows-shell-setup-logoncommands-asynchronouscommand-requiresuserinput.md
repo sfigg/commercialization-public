@@ -16,7 +16,7 @@ ms.sitesec: msdn
 The `RequiresUserInput` setting is not used.
 
 **Note**  
-Unlike synchronous commands, asynchronous commands may start and finish in any order. They cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about synchronous commands, see [SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md).
+Unlike synchronous commands, asynchronous commands may start and finish in any order. They cannot delay the appearance of the Windows desktop, even if the asynchronous command requires user input. If an asynchronous command requires user input, the end user will see the input window after the desktop appears. For information about synchronous commands, see [SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md).
 
  
 
@@ -50,7 +50,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **RequiresUserInput**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setup-logoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) | **RequiresUserInput**
 
 ## Applies To
 
@@ -82,9 +82,9 @@ The following XML output shows examples of how to set two logon commands. The `R
 ## Related topics
 
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
-[RequiresUserInput](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommandrequiresuserinput.md)
+[RequiresUserInput](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand-requiresuserinput.md)
 
  
 

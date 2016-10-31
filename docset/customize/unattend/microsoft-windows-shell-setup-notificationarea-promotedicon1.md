@@ -37,11 +37,11 @@ For information about specifying the GUID for your icon, see [NOTIFYICONDATA Str
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[GUID](microsoft-windows-shell-setupnotificationareapromotedicon1guid.md)</p></td>
+<td><p>[GUID](microsoft-windows-shell-setup-notificationarea-promotedicon1-guid.md)</p></td>
 <td><p>Specifies the GUID of the icon to be displayed in the notification area.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-shell-setupnotificationareapromotedicon1path.md)</p></td>
+<td><p>[Path](microsoft-windows-shell-setup-notificationarea-promotedicon1-path.md)</p></td>
 <td><p>Specifies the path to the application that contains the icon.</p></td>
 </tr>
 </tbody>
@@ -57,12 +57,10 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setupnotificationarea.md) | **PromotedIcon1**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setup-notificationarea.md) | **PromotedIcon1**
 
 ## Applies To
 
-
-Windows 8, Windows 7, Windows Server 2012, and Windows Server 2008 R2 editions.
 
 For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md).
 
@@ -81,7 +79,7 @@ The following XML output shows how to promote a new system notification icon to 
 ## Related topics
 
 
-[NotificationArea](microsoft-windows-shell-setupnotificationarea.md)
+[NotificationArea](microsoft-windows-shell-setup-notificationarea.md)
 
  
 

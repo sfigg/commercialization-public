@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `GUID` specifies the globally unique identifier (GUID) of an icon to appear in the notification area at the far right of the taskbar.
 
-By setting the [Path](microsoft-windows-shell-setupnotificationareapromotedicon2path.md) and GUID elements of the PromotedIcon2 component, you can configure another icon to appear in the notification area. This icon will appear in place of the **Battery** icon.
+By setting the [Path](microsoft-windows-shell-setup-notificationarea-promotedicon2-path.md) and GUID elements of the PromotedIcon2 component, you can configure another icon to appear in the notification area. This icon will appear in place of the **Battery** icon.
 
 To select the icon to be visible, you must:
 
@@ -53,7 +53,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setupnotificationarea.md) | [PromotedIcon2](microsoft-windows-shell-setupnotificationareapromotedicon2.md) | **GUID**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setup-notificationarea.md) | [PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md) | **GUID**
 
 ## Applies To
 
@@ -75,9 +75,9 @@ The following XML output shows how to promote a new notification icon to appear 
 ## Related topics
 
 
-[PromotedIcon2](microsoft-windows-shell-setupnotificationareapromotedicon2.md)
+[PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md)
 
-[Path](microsoft-windows-shell-setupnotificationareapromotedicon2path.md)
+[Path](microsoft-windows-shell-setup-notificationarea-promotedicon2-path.md)
 
  
 

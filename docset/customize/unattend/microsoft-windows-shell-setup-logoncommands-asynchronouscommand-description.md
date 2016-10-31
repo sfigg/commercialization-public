@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` gives a brief description of the [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) to run.
+`Description` gives a brief description of the [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) to run.
 
 ## Values
 
@@ -41,7 +41,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **Description**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setup-logoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) | **Description**
 
 ## Applies To
 
@@ -71,7 +71,7 @@ The following XML output shows how to set logon commands.
 ## Related topics
 
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
  
 

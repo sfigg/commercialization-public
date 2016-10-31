@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Order
 
 
-`Order` specifies a unique value for each [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md).
+`Order` specifies a unique value for each [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md).
 
 To learn more about running scripts with Windows Setup, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).
 
@@ -50,7 +50,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **Order**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setup-logoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) | **Order**
 
 ## Applies To
 
@@ -80,9 +80,9 @@ The following XML output shows how to set logon commands.
 ## Related topics
 
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
  
 

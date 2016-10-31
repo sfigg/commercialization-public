@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Path` specifies the path to an application. This application should contain an icon to be shown in the visible system notification area on the taskbar.
 
-By setting the **Path** and [GUID](microsoft-windows-shell-setupnotificationareapromotedicon1guid.md) elements of the **PromotedIcon1** component, you can configure another icon to be visible in the system notification area. This icon will appear in place of the **Action Center** icon.
+By setting the **Path** and [GUID](microsoft-windows-shell-setup-notificationarea-promotedicon1-guid.md) elements of the **PromotedIcon1** component, you can configure another icon to be visible in the system notification area. This icon will appear in place of the **Action Center** icon.
 
 To select the icon to be visible, you must:
 
@@ -53,7 +53,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setupnotificationarea.md) | [PromotedIcon1](microsoft-windows-shell-setupnotificationareapromotedicon1.md) | **Path**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [NotificationArea](microsoft-windows-shell-setup-notificationarea.md) | [PromotedIcon1](microsoft-windows-shell-setup-notificationarea-promotedicon1.md) | **Path**
 
 ## Applies To
 
@@ -77,9 +77,9 @@ The following XML output shows how to promote a new system notification icon to 
 ## Related topics
 
 
-[PromotedIcon1](microsoft-windows-shell-setupnotificationareapromotedicon1.md)
+[PromotedIcon1](microsoft-windows-shell-setup-notificationarea-promotedicon1.md)
 
-[GUID](microsoft-windows-shell-setupnotificationareapromotedicon1guid.md)
+[GUID](microsoft-windows-shell-setup-notificationarea-promotedicon1-guid.md)
 
 [NOTIFYICONDATA Structure](http://go.microsoft.com/fwlink/?LinkId=120340)
 

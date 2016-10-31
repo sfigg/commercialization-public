@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # CommandLine
 
 
-`CommandLine` specifies the path to the [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) to be run.
+`CommandLine` specifies the path to the [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) to be run.
 
 ## Values
 
@@ -41,7 +41,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setuplogoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md) | **CommandLine**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [LogonCommands](microsoft-windows-shell-setup-logoncommands.md) | [AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md) | **CommandLine**
 
 ## Applies To
 
@@ -71,7 +71,7 @@ The following XML output shows how to set logon commands.
 ## Related topics
 
 
-[AsynchronousCommand](microsoft-windows-shell-setuplogoncommandsasynchronouscommand.md)
+[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands-asynchronouscommand.md)
 
  
 
