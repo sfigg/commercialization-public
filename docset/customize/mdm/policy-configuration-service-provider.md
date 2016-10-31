@@ -68,11 +68,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
+<ul>
+<li><a href="#main-policy-table">Table of Policies for Windows 10</a> - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).</li>
+<li><a href="#hololens-policies">Policies supported by Windows Holographic Enterprise</a> - Lists the policies that are supported in Windows Holographic Enterprise.</li>
+</ul>
 
--   [Table of Policies](#main-policy-table) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
--   [Policies supported by Windows Holographic Enterprise](#hololens-policies) - Lists the policies that are supported in Windows Holographic Enterprise.
-
-### <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
+## <a href="" id="main-policy-table"></a>Table of Policies for Windows 10
 
 > **Important**  To navigate the table horizontally, use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
@@ -5496,7 +5497,7 @@ Footnote:
 
 -   \* - Added in Windows 10, version 1607.
 
-### <a href="" id="hololens-policies"></a>Policies supported by Windows Holographic Enterprise
+## <a href="" id="hololens-policies"></a>Policies supported by Windows Holographic Enterprise
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5530,7 +5531,7 @@ Footnote:
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 
-### <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
+## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
