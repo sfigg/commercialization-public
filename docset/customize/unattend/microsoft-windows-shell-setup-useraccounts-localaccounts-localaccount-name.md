@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Name
 
 
-`Name` specifies the user name for a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) to be created during installation.
+`Name` specifies the user name for a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) to be created during installation.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>Specifies the name of a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md). <em>Name</em> is a string with a maximum length of 256 characters.</p>
+<td><p>Specifies the name of a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Name</em> is a string with a maximum length of 256 characters.</p>
 <p>Do not use any of the following characters: &quot;/\[]:|&lt;&gt;+=;,?*%@</p>
 <p>Do not use the name &quot;NONE&quot;, this is a restricted username.</p>
 <p>This string type does not support empty elements. Do not create an empty value for this setting.</p>
@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) | **Name**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | **Name**
 
 ## Applies To
 
@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -90,7 +90,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md)
+[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
  
 

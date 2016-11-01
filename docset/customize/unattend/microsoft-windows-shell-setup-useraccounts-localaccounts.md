@@ -27,7 +27,7 @@ You can use the **sysprep/generalize** command in conjunction with `LocalAccount
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md)</p></td>
+<td><p>[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)</p></td>
 <td><p>Specifies a local account to be created during installation.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | **LocalAccounts**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **LocalAccounts**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output shows how to set user accounts.
 ## Related topics
 
 
-[UserAccounts](microsoft-windows-shell-setupuseraccounts.md)
+[UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
 
  
 

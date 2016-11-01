@@ -25,23 +25,23 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Description](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountdescription.md)</p></td>
+<td><p>[Description](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-description.md)</p></td>
 <td><p>Specifies a <code>LocalAccount</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisplayName](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountdisplayname.md)</p></td>
+<td><p>[DisplayName](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-displayname.md)</p></td>
 <td><p>Specifies the display name for a <code>LocalAccount</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Group](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountgroup.md)</p></td>
+<td><p>[Group](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-group.md)</p></td>
 <td><p>Specifies the name of existing local security groups to which a <code>LocalAccount</code> will be added.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Name](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountname.md)</p></td>
+<td><p>[Name](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-name.md)</p></td>
 <td><p>Specifies the user name for a <code>LocalAccount</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Password](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountpassword.md)</p></td>
+<td><p>[Password](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password.md)</p></td>
 <td><p>Specifies the password for a <code>LocalAccount</code> and whether the password is hidden in the unattended installation answer file.</p></td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | **LocalAccount**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | **LocalAccount**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -101,7 +101,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md)
+[LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md)
 
  
 

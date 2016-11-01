@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisplayName
 
 
-`DisplayName` specifies the name to display for a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) to be created during installation. If present, this name is displayed instead of the logon name.
+`DisplayName` specifies the name to display for a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) to be created during installation. If present, this name is displayed instead of the logon name.
 
 ## Values
 
@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) | **DisplayName**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | **DisplayName**
 
 ## Applies To
 
@@ -55,7 +55,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -87,7 +87,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md)
+[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
  
 

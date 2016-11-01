@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` specifies a description of a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) to be created during installation.
+`Description` specifies a description of a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) to be created during installation.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Description</em></p></td>
-<td><p>Specifies a description of a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md). <em>Description</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p>Specifies a description of a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Description</em> is a string with a maximum length of 256 characters.</p></td>
 </tr>
 </tbody>
 </table>
@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) | **Description**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | **Description**
 
 ## Applies To
 
@@ -55,7 +55,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>

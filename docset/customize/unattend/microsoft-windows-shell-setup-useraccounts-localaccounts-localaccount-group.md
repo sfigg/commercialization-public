@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Group
 
 
-`Group` specifies the name of an existing local security group to which a new [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) will be added during installation. You can add a user to multiple groups by entering multiple group names separated by semicolons.
+`Group` specifies the name of an existing local security group to which a new [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) will be added during installation. You can add a user to multiple groups by entering multiple group names separated by semicolons.
 
 The [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) component recognizes the following English group names and sets the appropriate localized group name, regardless of the default language of the Windows image:
 
@@ -81,7 +81,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) | **Group**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | **Group**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -123,7 +123,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md)
+[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Password
 
 
-`Password` specifies the password for a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) to be created during installation and whether the password is hidden in the unattended installation answer file.
+`Password` specifies the password for a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) to be created during installation and whether the password is hidden in the unattended installation answer file.
 
 ## Child Elements
 
@@ -25,12 +25,12 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PlainText](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountpasswordplaintext.md)</p></td>
-<td><p>Specifies whether the [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) password is hidden in the answer file.</p></td>
+<td><p>[PlainText](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-passwordp-laintext.md)</p></td>
+<td><p>Specifies whether the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password is hidden in the answer file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccountpasswordvalue.md)</p></td>
-<td><p>Specifies the [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) password.</p></td>
+<td><p>[Value](microsoft-windows-shell-setupu-seraccounts-localaccounts-localaccount-passwordvalue.md)</p></td>
+<td><p>Specifies the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password.</p></td>
 </tr>
 </tbody>
 </table>
@@ -47,7 +47,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md) | [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) | **Password**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md) | [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) | **Password**
 
 ## Applies To
 
@@ -57,7 +57,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -89,7 +89,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md)
+[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md)
 
  
 
