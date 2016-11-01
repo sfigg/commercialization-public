@@ -418,8 +418,7 @@ The following list shows the supported values:
 
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
- 
-
+<br>
 > **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
  
@@ -526,7 +525,7 @@ The update approval list enables IT to approve individual updates and update cla
 
 Supported operations are Get and Add.
 
-<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/*Approved Update Guid***  
+<a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/****_Approved Update Guid_**  
 Specifies the update GUID.
 
 To auto-approve a class of updates, you can specify the [Update Classifications](http://go.microsoft.com/fwlink/p/?LinkId=526723) GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
@@ -549,7 +548,7 @@ Specifies the approved updates that failed to install on a device.
 
 Supported operation is Get.
 
-<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/*Failed Update Guid***  
+<a href="" id="failedupdates-failed-update-guid"></a>**FailedUpdates/****_Failed Update Guid_**  
 Update identifier field of the UpdateIdentity GUID that represent an update that failed to download or install.
 
 Supported operation is Get.
@@ -569,7 +568,7 @@ The updates that are installed on the device.
 
 Supported operation is Get.
 
-<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/*Installed Update Guid***  
+<a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/****_Installed Update Guid_**  
 UpdateIDs that represent the updates installed on a device.
 
 Supported operation is Get.
@@ -579,7 +578,7 @@ The updates that are applicable and not yet installed on the device. This includ
 
 Supported operation is Get.
 
-<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/*Installable Update Guid***  
+<a href="" id="installableupdates-installable-update-guid"></a>**InstallableUpdates/****_Installable Update Guid_**  
 Update identifiers that represent the updates applicable and not installed on a device.
 
 Supported operation is Get.
@@ -603,7 +602,7 @@ The updates that require a reboot to complete the update session.
 
 Supported operation is Get.
 
-<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/*Pending Reboot Update Guid***  
+<a href="" id="pendingrebootupdates-pending-reboot-update-guid"></a>**PendingRebootUpdates/****_Pending Reboot Update Guid_**  
 Update identifiers for the pending reboot state.
 
 Supported operation is Get.
