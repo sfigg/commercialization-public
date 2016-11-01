@@ -46,7 +46,7 @@ Captures the list of apps that are allowed to handle enterprise data. Should be 
 
 Additional information:
 
-- [Deny list for Windows Information Protection](#deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies all known unenlightened first party Office apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 Each of the previously listed nodes contains a **Grouping** node.
 
@@ -1214,8 +1214,8 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 </SyncML>
 ```
 
-## Deny list for Windows Information Protection
-The following example for Windows 10, version 1607 denies all known unenlightened first party Office apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+## Recommended deny list for Windows Information Protection
+The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
