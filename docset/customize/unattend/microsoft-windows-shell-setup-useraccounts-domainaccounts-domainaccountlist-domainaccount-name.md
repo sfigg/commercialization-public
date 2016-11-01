@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md) | [DomainAccount](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccount.md) | **Name**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md) | [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md) | **Name**
 
 ## Applies To
 
@@ -58,7 +58,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -88,7 +88,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[DomainAccount](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccount.md)
+[DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)
 
  
 

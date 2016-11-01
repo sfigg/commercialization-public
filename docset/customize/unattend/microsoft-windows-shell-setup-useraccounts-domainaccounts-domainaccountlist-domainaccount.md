@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Group](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccountgroup.md)</p></td>
+<td><p>[Group](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccountgroup.md)</p></td>
 <td><p>Specifies the group to which the <code>DomainAccount</code> belongs.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Name](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccountname.md)</p></td>
+<td><p>[Name](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccountname.md)</p></td>
 <td><p>Specifies the name of the <code>DomainAccount</code>.</p></td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md) | **DomainAccount**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md) | **DomainAccount**
 
 ## Applies To
 
@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -87,7 +87,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md)
+[DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)
 
  
 

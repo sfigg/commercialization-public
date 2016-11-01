@@ -54,7 +54,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **ScreenSaver**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **ScreenSaver**
 
 ## Applies To
 
@@ -64,7 +64,7 @@ For a list of the Windows editions and architectures that this component support
 ## Related topics
 
 
-[Themes](microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setup-themes.md)
 
  
 

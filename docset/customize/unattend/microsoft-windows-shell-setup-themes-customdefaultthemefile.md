@@ -20,7 +20,7 @@ This setting is deprecated.
 
 While you can add themes to a Windows 7 or Windows 8 installation by using a .theme file, .theme files can no longer be used as the default theme.
 
-To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell-setupthemesbrandicon.md), [DesktopBackground](microsoft-windows-shell-setupthemesdesktopbackground.md), [ScreenSaver](microsoft-windows-shell-setupthemesscreensaver.md), [ThemeName](microsoft-windows-shell-setupthemesthemename.md), and [WindowColor](microsoft-windows-shell-setupthemeswindowcolor.md).
+To define a default theme, use the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), [ThemeName](microsoft-windows-shell-setup-themes-themename.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
  
 
@@ -64,7 +64,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **CustomDefaultThemeFile**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **CustomDefaultThemeFile**
 
 ## Applies To
 
@@ -86,7 +86,7 @@ The following XML output shows how to set a customized theme.
 ## Related topics
 
 
-[Themes](microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setup-themes.md)
 
  
 

@@ -1,19 +1,19 @@
 ---
-title: Link4
-description: Link4
+title: Link3
+description: Link3
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 65711c58-e13b-4677-a8ae-6bda793adc71
+ms.assetid: 0542e76a-c63c-460f-a2b9-1d45e51c39bf
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Link4
+# Link3
 
 
-`Link4` specifies the path to the first available program shortcut on the taskbar.
+`Link3` specifies the path to the first available program shortcut on the taskbar.
 
 **Note**  
 Any item that is pinned to the taskbar will not appear in the **Start** menu list of most frequently used programs.
@@ -62,7 +62,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [TaskbarLinks](microsoft-windows-shell-setuptaskbarlinks.md) | **Link4**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md) | **Link3**
 
 ## Applies To
 
@@ -88,13 +88,13 @@ The following XML output shows how to add shortcuts for Remote Desktop Connectio
 ## Related topics
 
 
-[TaskbarLinks](microsoft-windows-shell-setuptaskbarlinks.md)
+[TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Link4%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Link3%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

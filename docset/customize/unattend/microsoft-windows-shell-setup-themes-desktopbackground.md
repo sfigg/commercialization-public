@@ -59,7 +59,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **DesktopBackground**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **DesktopBackground**
 
 ## Applies To
 
@@ -81,7 +81,7 @@ The following XML output shows how to assign a background to a customized theme.
 ## Related topics
 
 
-[Themes](microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setup-themes.md)
 
  
 

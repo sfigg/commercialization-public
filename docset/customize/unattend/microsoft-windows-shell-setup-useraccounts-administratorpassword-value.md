@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md). If the computer is connected to a domain, this value must meet domain password complexity requirements.
+`Value` specifies the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md). If the computer is connected to a domain, this value must meet domain password complexity requirements.
 
 To configure a blank administrator password, write an empty string in Windows System Image Manager (Windows SIM) by right-clicking on the `Value` setting, and choose **Write Empty String**. The built-in administrator account will be enabled with a blank password.
 
@@ -33,7 +33,7 @@ Creating a blank administrator password is a security risk.
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the [AdministratorPassword](microsoft-windows-shell-setupu-seraccounts-administratorpassword.md). <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +52,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md)| [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md) | **Value**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md)| [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) | **Value**
 
 ## Applies To
 
@@ -62,7 +62,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -76,7 +76,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md)
+[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)
 
  
 

@@ -53,7 +53,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **BrandIcon**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **BrandIcon**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following example shows how to set a customized logo to represent a theme.
 ## Related topics
 
 
-[Themes](microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setup-themes.md)
 
  
 

@@ -33,11 +33,11 @@ You cannot set this value directly. Select **Hide sensitive data** on the **Tool
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md) appears in plain text in the answer file. This is the default value.</p></td>
+<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) appears in plain text in the answer file. This is the default value.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md) is hidden in the answer file.</p></td>
+<td><p>Specifies that the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) is hidden in the answer file.</p></td>
 </tr>
 </tbody>
 </table>
@@ -59,7 +59,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md) | **PlainText**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) | **PlainText**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -83,7 +83,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md)
+[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)
 
  
 

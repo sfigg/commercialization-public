@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md)</p></td>
+<td><p>[DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)</p></td>
 <td><p>Specifies the domains and the domain accounts to be created.</p></td>
 </tr>
 </tbody>
@@ -43,7 +43,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | **DomainAccounts**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **DomainAccounts**
 
 ## Applies To
 
@@ -53,7 +53,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -83,7 +83,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[UserAccounts](microsoft-windows-shell-setupuseraccounts.md)
+[UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
 
  
 

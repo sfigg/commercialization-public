@@ -53,7 +53,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setupthemes.md) | **ThemeName**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [Themes](microsoft-windows-shell-setup-themes.md) | **ThemeName**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML output shows how to name a customized theme, as well as set th
 ## Related topics
 
 
-[Themes](microsoft-windows-shell-setupthemes.md)
+[Themes](microsoft-windows-shell-setup-themes.md)
 
  
 

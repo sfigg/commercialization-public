@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domain.md)</p></td>
 <td><p>Specifies the name of the domain for the <code>DomainAccountList</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DomainAccount](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccount.md)</p></td>
+<td><p>[DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)</p></td>
 <td><p>Specifies the details of domain accounts to be added to local security groups on the computer during installation.</p></td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | **DomainAccountList**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | **DomainAccountList**
 
 ## Applies To
 
@@ -57,7 +57,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -87,7 +87,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md)
+[DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md)
 
  
 

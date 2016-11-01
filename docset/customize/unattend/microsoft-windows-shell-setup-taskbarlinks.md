@@ -74,27 +74,27 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Link0](microsoft-windows-shell-setuptaskbarlinkslink0.md)</p></td>
+<td><p>[Link0](microsoft-windows-shell-setup-taskbarlinks-link0.md)</p></td>
 <td><p>Specifies the path to the first shortcut.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Link1](microsoft-windows-shell-setuptaskbarlinkslink1.md)</p></td>
+<td><p>[Link1](microsoft-windows-shell-setup-taskbarlinks-link1.md)</p></td>
 <td><p>Specifies the path to the second shortcut.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Link2](microsoft-windows-shell-setuptaskbarlinkslink2.md)</p></td>
+<td><p>[Link2](microsoft-windows-shell-setup-taskbarlinks-link2.md)</p></td>
 <td><p>Specifies the path to the third shortcut.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Link3](microsoft-windows-shell-setuptaskbarlinkslink3.md)</p></td>
+<td><p>[Link3](microsoft-windows-shell-setup-taskbarlinks-link3.md)</p></td>
 <td><p>Specifies the path to the fourth shortcut.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Link4](microsoft-windows-shell-setuptaskbarlinkslink4.md)</p></td>
+<td><p>[Link4](microsoft-windows-shell-setup-taskbarlinks-link4.md)</p></td>
 <td><p>Specifies the path to the fifth shortcut.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Link5](microsoft-windows-shell-setuptaskbarlinkslink5.md)</p></td>
+<td><p>[Link5](microsoft-windows-shell-setup-taskbarlinks-link5.md)</p></td>
 <td><p>Specifies the path to the sixth shortcut.</p></td>
 </tr>
 </tbody>

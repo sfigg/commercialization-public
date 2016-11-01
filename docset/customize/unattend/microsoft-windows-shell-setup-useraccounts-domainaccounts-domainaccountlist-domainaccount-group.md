@@ -81,7 +81,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | [DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlist.md) | [DomainAccount](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccount.md) | **Group**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | [DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md) | [DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md) | [DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md) | **Group**
 
 ## Applies To
 
@@ -124,7 +124,7 @@ Example 2:
 ## Related topics
 
 
-[DomainAccount](microsoft-windows-shell-setupuseraccountsdomainaccountsdomainaccountlistdomainaccount.md)
+[DomainAccount](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount.md)
 
  
 

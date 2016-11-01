@@ -62,7 +62,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [TaskbarLinks](microsoft-windows-shell-setuptaskbarlinks.md) | **Link5**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md) | **Link5**
 
 ## Applies To
 
@@ -88,7 +88,7 @@ The following XML output shows how to add shortcuts for Remote Desktop Connectio
 ## Related topics
 
 
-[TaskbarLinks](microsoft-windows-shell-setuptaskbarlinks.md)
+[TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md)
 
  
 

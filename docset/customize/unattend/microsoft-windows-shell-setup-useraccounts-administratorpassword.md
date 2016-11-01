@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `AdministratorPassword` specifies the administrator password and whether it is hidden in the unattended installation answer file.
 
-To configure a blank administrator password for Windows 7, write an empty string in Windows System Image Manager (Windows SIM), by right-clicking the [Value](microsoft-windows-shell-setupuseraccountsadministratorpasswordvalue.md) setting, and then selecting **Write Empty String**.
+To configure a blank administrator password for Windows 7, write an empty string in Windows System Image Manager (Windows SIM), by right-clicking the [Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md) setting, and then selecting **Write Empty String**.
 
 **Caution**  
 Creating a blank administrator password is a security risk.
@@ -24,9 +24,9 @@ Creating a blank administrator password is a security risk.
 
 By default, the built-in administrator account is disabled in all default clean installations.
 
-You can enable the built-in administrator account during unattended installations, by setting the AutoLogon/[Username](microsoft-windows-shell-setupautologonusername.md) to **Administrator**. This enables the built-in administrator account, even if a password is not specified in the `AdministratorPassword` setting.
+You can enable the built-in administrator account during unattended installations, by setting the AutoLogon/[Username](microsoft-windows-shell-setup-autologonusername.md) to **Administrator**. This enables the built-in administrator account, even if a password is not specified in the `AdministratorPassword` setting.
 
-If no values are set for the administrator password and [Username](microsoft-windows-shell-setupautologonusername.md) is not set to **Administrator**, the administrator account is disabled.
+If no values are set for the administrator password and [Username](microsoft-windows-shell-setup-autologonusername.md) is not set to **Administrator**, the administrator account is disabled.
 
 Both **Microsoft-Windows-Shell-Setup | Autologon** and **Microsoft-Windows-Shell-Setup | UserAccounts | AdministratorPassword** sections are now needed for autologon in audit mode to work. Both of these settings should be added to the **auditSystem** configuration pass.
 
@@ -58,11 +58,11 @@ A corporate customer can configure a non-complex password for the built-in admin
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PlainText](microsoft-windows-shell-setupuseraccountsadministratorpasswordplaintext.md)</p></td>
+<td><p>[PlainText](microsoft-windows-shell-setup-useraccounts-administratorpassword-plaintext.md)</p></td>
 <td><p>Specifies whether the <code>AdministratorPassword</code> is hidden in the unattended installation answer file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-shell-setupuseraccountsadministratorpasswordvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-shell-setup-useraccounts-administratorpassword-value.md)</p></td>
 <td><p>Specifies the <code>AdministratorPassword</code>.</p></td>
 </tr>
 </tbody>
@@ -80,7 +80,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setupuseraccounts.md) | **AdministratorPassword**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [UserAccounts](microsoft-windows-shell-setup-useraccounts.md) | **AdministratorPassword**
 
 ## Applies To
 
@@ -90,7 +90,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setupuseraccounts.md).
+The following XML output shows how to set [UserAccounts](microsoft-windows-shell-setup-useraccounts.md).
 
 ``` syntax
 <UserAccounts>
@@ -104,7 +104,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[UserAccounts](microsoft-windows-shell-setupuseraccounts.md)
+[UserAccounts](microsoft-windows-shell-setup-useraccounts.md)
 
  
 
