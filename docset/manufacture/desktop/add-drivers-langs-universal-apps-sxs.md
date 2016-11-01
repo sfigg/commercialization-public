@@ -62,7 +62,7 @@ The following table shows the types of language packages and components availabl
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see [Available Language Packs for Windows](available-language-packs-for-windows.md).</td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see <a href="available-language-packs-for-windows.md">Available Language Packs for Windows</a>.</td>
 <td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
 </tr>
 <tr class="odd">
@@ -77,7 +77,7 @@ The following table shows the types of language packages and components availabl
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
 <td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md).</p></td>
+<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see <a href="features-on-demand-v2--capabilities.md">Features On Demand V2 (Capabilities).</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
