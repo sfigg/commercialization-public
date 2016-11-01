@@ -29,27 +29,27 @@ If you skip a setting, Windows will rearrange the flow of your app tiles around 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[WideTile1](microsoft-windows-shell-setup-starttileswidetiles-widetile1.md)</p></td>
+<td><p>[WideTile1](microsoft-windows-shell-setup-starttiles-widetiles-widetile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile2](microsoft-windows-shell-setup-starttileswidetiles-widetile2.md)</p></td>
+<td><p>[WideTile2](microsoft-windows-shell-setup-starttiles-widetiles-widetile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile3](microsoft-windows-shell-setup-starttileswidetiles-widetile3.md)</p></td>
+<td><p>[WideTile3](microsoft-windows-shell-setup-starttiles-widetiles-widetile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile4](microsoft-windows-shell-setup-starttileswidetiles-widetile4.md)</p></td>
+<td><p>[WideTile4](microsoft-windows-shell-setup-starttiles-widetiles-widetile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile5](microsoft-windows-shell-setup-starttileswidetiles-widetile5.md)</p></td>
+<td><p>[WideTile5](microsoft-windows-shell-setup-starttiles-widetiles-widetile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile6](microsoft-windows-shell-setup-starttileswidetiles-widetile6.md)</p></td>
+<td><p>[WideTile6](microsoft-windows-shell-setup-starttiles-widetiles-widetile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile6.</p></td>
 </tr>
 </tbody>

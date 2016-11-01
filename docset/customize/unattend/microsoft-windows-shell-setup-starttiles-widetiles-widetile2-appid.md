@@ -4,7 +4,7 @@ description: AppId
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: b509bddb-e451-4347-95e2-2131de1ea81f
+ms.assetid: 012f0e6f-beca-4d2f-b62b-dc9339bf912a
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -32,7 +32,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md) | [WideTile3](microsoft-windows-shell-setup-starttileswidetiles-widetile3.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md) | [WideTile2](microsoft-windows-shell-setup-starttiles-widetiles-widetile2.md) | **AppId**
 
 ## Applies To
 
@@ -42,7 +42,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<WideTile3>` component.
+The following XML output shows how to use the `<WideTile2>` component.
 
 ``` syntax
      <WideTiles>
@@ -69,7 +69,7 @@ The following XML output shows how to use the `<WideTile3>` component.
 
 [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)
 
  
 

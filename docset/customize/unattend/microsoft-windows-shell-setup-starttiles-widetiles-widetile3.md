@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1appid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttiles-widetiles-widetile1-appid.md)</p></td>
 <td><p>Specifies the Windows Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-widetiles-widetile1-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for the tile.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md) | **WideTile3**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md) | **WideTile3**
 
 ## Applies To
 
@@ -86,7 +86,7 @@ The following XML output shows how to use the `<WideTile3>` component.
 
 [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)
 
  
 

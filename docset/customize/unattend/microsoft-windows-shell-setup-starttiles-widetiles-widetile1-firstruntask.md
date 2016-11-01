@@ -4,7 +4,7 @@ description: FirstRunTask
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: b212295c-97b6-452d-bb39-c66b9e0cb76a
+ms.assetid: 86b9c8b0-0319-4ebe-af90-3041f703a367
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -38,7 +38,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md) | [WideTile3](microsoft-windows-shell-setup-starttileswidetiles-widetile3.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md) | [WideTile1](microsoft-windows-shell-setup-starttiles-widetiles-widetile1.md) | **FirstRunTask**
 
 ## Applies To
 
