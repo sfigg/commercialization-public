@@ -7954,7 +7954,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – SD card use is not allowed and the USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
+-   0 – SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
 -   1 (default) – Allow a storage card.
 
 <p style="margin-left: 20px">Most restricted value is 0.
