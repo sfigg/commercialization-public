@@ -19,7 +19,7 @@ Each regional override can be used for multiple regions. For example, you could 
 
 Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-coreuserlocale.md).
 
-If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregionsregion.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\RegionalOverride: WideTiles, SquareTiles, and LockScreen.
+If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregionsregion.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\RegionalOverride: WideTiles, SquareTiles, and LockScreen.
 
 If the selected region doesn’t match any of these regions, then Windows displays the set of apps from Microsoft-Windows-Shell-Setup\\[StartTiles](microsoft-windows-shell-setup-starttiles.md): WideTiles, SquareTiles, and LockScreen.
 
@@ -33,23 +33,23 @@ If the selected region doesn’t match any of these regions, then Windows displa
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideorder.md)</p></td>
+<td><p>[Order](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideorder.md)</p></td>
 <td><p>Specifies an instance</p></td>
 </tr>
 <tr class="even">
-<td><p>[LockScreen](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridelockscreen.md)</p></td>
+<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridelockscreen.md)</p></td>
 <td><p>Specifies application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Regions](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregions.md)</p></td>
+<td><p>[Regions](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregions.md)</p></td>
 <td><p>Specifies a set of regions where Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)</p></td>
+<td><p>[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md)</p></td>
 <td><p>Specifies the default Windows Runtime-based apps to appear as square tiles on the Start screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)</p></td>
+<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md)</p></td>
 <td><p>Specifies the default Windows Runtime-based apps to appear as wide tiles on the Start screen.</p></td>
 </tr>
 </tbody>
@@ -69,7 +69,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | **RegionalOverride**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | **RegionalOverride**
 
 ## Applies To
 
@@ -81,7 +81,7 @@ For a list of the Windows editions and architectures that this component support
 
 [How to Customize the Start Screen](http://go.microsoft.com/fwlink/?LinkId=254187)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 

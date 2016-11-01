@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `AppId` specifies the application whose monochrome icon appears on the **Lock** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store.
 
-If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 
 ## Values
 
@@ -34,7 +34,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | [LockScreen](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridelockscreen.md) | [Badge](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridelockscreenbadge.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md) | [LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridelockscreen.md) | [Badge](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridelockscreenbadge.md) | **AppId**
 
 ## Applies To
 
@@ -59,11 +59,11 @@ The following XML output shows how to configure the AppId for the `LockScreen`.
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md)
 
  
 

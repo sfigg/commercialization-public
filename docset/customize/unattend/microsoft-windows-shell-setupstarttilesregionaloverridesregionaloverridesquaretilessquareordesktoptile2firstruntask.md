@@ -17,7 +17,7 @@ The `FirstRunTask` setting specifies the background task that is active, or live
 
 The background task must register the user with Windows Notification Service at first sign-in, and must send notifications to the app’s live tile.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 
 ## Values
 
@@ -40,7 +40,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md) | [SquareOrDesktopTile2](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile2.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md) | [SquareOrDesktopTile2](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretilessquareordesktoptile2.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -84,9 +84,9 @@ The following XML output shows how to use the `<SquareTiles>` component.
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md)
 
 [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 

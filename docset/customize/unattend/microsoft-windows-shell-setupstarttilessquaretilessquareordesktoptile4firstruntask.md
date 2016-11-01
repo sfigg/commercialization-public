@@ -38,7 +38,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | [SquareOrDesktopTile4](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile4.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | [SquareOrDesktopTile4](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretilessquareordesktoptile4.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -82,9 +82,9 @@ The following XML output shows how to use the `<SquareTiles>` component.
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md)
 
 [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 

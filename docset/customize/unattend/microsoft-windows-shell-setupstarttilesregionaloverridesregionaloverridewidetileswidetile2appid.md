@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `AppId` specifies the `AppID` of the Windows Store apps that appear as wide tiles on the **Start** screen. The `AppId` must be the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).
 
 ## Values
 
@@ -34,7 +34,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md) | [WideTile2](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile2.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md) | [WideTile2](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile2.md) | **AppId**
 
 ## Applies To
 
@@ -67,9 +67,9 @@ The following XML output shows how to use the `<WideTile2>` component.
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md)
 
 [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 

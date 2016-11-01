@@ -156,7 +156,7 @@ These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideorder.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\RegionalOverrides\RegionalOverride\[Order](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideorder.md)</p></td>
 <td><p>Specifies a unique id for a set of regions. In the specified set of regions, Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
 <td><p>Changed the maximum value of unique IDs for the regional override from 19 to 199.</p></td>
 </tr>

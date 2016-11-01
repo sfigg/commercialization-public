@@ -19,7 +19,7 @@ Each regional override can be used for multiple regions. For example, you could 
 
 Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-coreuserlocale.md).
 
-If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregionsregion.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\[RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md): WideTiles, SquareTiles, and LockScreen.
+If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregionsregion.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\[RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md): WideTiles, SquareTiles, and LockScreen.
 
 If the selected region doesn’t match any of these regions, then Windows displays the set of apps from Microsoft-Windows-Shell-Setup\\[StartTiles](microsoft-windows-shell-setup-starttiles.md): WideTiles, SquareTiles, and LockScreen.
 
@@ -55,7 +55,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md)| [Regions](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregions.md) | [Region](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregionsregion.md) | **CountryOrRegionID**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md)| [Regions](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregions.md) | [Region](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregionsregion.md) | **CountryOrRegionID**
 
 ## XML Example
 
@@ -86,7 +86,7 @@ The following XML output shows how to configure a set of Apps that apply to only
 
 [How to Customize the Start Screen](http://go.microsoft.com/fwlink/?LinkId=254187)
 
-[Region](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverrideregionsregion.md)
+[Region](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverrideregionsregion.md)
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 

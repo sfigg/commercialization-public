@@ -65,9 +65,9 @@ The following XML output shows how to use the `<WideTile6>` component.
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md)
 
 [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 

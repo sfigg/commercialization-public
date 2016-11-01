@@ -69,7 +69,7 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <tr class="even">
 <td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12</p>
-<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).</p></td>
+<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](appidorpath-12.md)</p></td>
