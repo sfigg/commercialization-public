@@ -82,7 +82,7 @@ The following XML output shows how to use the `<SquareTile4>` component.
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

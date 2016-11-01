@@ -4,7 +4,7 @@ description: FirstRunTask
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: d7838756-aab0-4a92-b9e9-42cb4edb6859
+ms.assetid: 97967551-c71f-49d1-992e-39707fdcd3b0
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -40,7 +40,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile1](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile1.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile6](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile6.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -53,30 +53,30 @@ For a list of the Windows editions and architectures that this component support
 The following XML output shows how to use the `<SquareTiles>` component.
 
 ``` syntax
-     <SquareTiles>
-          <SquareOrDesktopTile1>
-               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
-               <FirstRunTask>backgroundtask.js</FirstRunTask>
-          </SquareOrDesktopTile1>
-          <SquareOrDesktopTile2>
-               <AppIdOrPath>67890ChannelFabrikam.channel-JKL_mnop1234789!App</AppIdOrPath>
-               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
-          </SquareOrDesktopTile2>
-          <SquareOrDesktopTile3>
-               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile3.lnk</AppIdOrPath>
-          </SquareOrDesktopTile3>
-          <SquareTile1>
-               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
-               <FirstRunTask>backgroundtask.js</FirstRunTask>
-          </SquareTile1>
-          <SquareTile2>
-               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
-               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
-          </SquareTile2>
-          <SquareTile3>
-               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
-          </SquareTile3>
-     </SquareTiles> 
+     <SquareTiles>
+          <SquareOrDesktopTile1>
+               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile1.lnk</AppIdOrPath>
+               <FirstRunTask>backgroundtask.js</FirstRunTask>
+          </SquareOrDesktopTile1>
+          <SquareOrDesktopTile2>
+               <AppIdOrPath>67890ChannelFabrikam.channel-JKL_mnop1234789!App</AppIdOrPath>
+               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
+          </SquareOrDesktopTile2>
+          <SquareOrDesktopTile3>
+               <AppIdOrPath>C:\programdata\microsoft\windows\start menu\programs\desktoptile3.lnk</AppIdOrPath>
+          </SquareOrDesktopTile3>
+          <SquareTile1>
+               <AppId>12345ChannelFabrikam.channel-ABC_defghij6789!App</AppId>
+               <FirstRunTask>backgroundtask.js</FirstRunTask>
+          </SquareTile1>
+          <SquareTile2>
+               <AppId>34567ChannelFabrikam.channel-DEF_012ghijk345!App</AppId>
+               <FirstRunTask>Fabrikam.FirstRunTask</FirstRunTask>
+          </SquareTile2>
+          <SquareTile3>
+               <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
+          </SquareTile3>
+     </SquareTiles> 
 ```
 
 ## Related topics
@@ -88,7 +88,7 @@ The following XML output shows how to use the `<SquareTiles>` component.
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

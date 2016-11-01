@@ -89,7 +89,7 @@ If you skip a setting, Windows will rearrange the flow of your app tiles around 
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile7.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile8](microsoft-windows-shell-setup-starttilessquaretiles-squaretile8.md)</p></td>
+<td><p>[SquareTile8](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile8.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile8.</p></td>
 </tr>
 <tr class="odd">

@@ -4,7 +4,7 @@ description: AppIdOrPath
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7892d410-72d9-40a1-9bc8-c764b8525af2
+ms.assetid: e2dbea3b-4766-455b-8a41-1517766eeea8
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -34,7 +34,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile6](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile6.md) | **AppIdOrPath**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile5](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile5.md) | **AppIdOrPath**
 
 ## Applies To
 
@@ -44,7 +44,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<SquareOrDesktopTile6>` component.
+The following XML output shows how to use the `<SquareOrDesktopTile5>` component.
 
 ``` syntax
 <SquareTiles>
@@ -71,7 +71,6 @@ The following XML output shows how to use the `<SquareOrDesktopTile6>` component
                <AppId>56789ChannelFabrikam.channel-GHI_67890jklmno!App</AppId>
           </SquareTile3>
      </SquareTiles> 
-
 ```
 
 ## Related topics
@@ -83,7 +82,7 @@ The following XML output shows how to use the `<SquareOrDesktopTile6>` component
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

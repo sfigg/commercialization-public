@@ -104,7 +104,7 @@ The following XML output shows how to use the `<WideTiles>` component and its se
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
 StartTiles
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)

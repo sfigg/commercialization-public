@@ -72,27 +72,27 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 <td><p>Specifies that the Power Options button is displayed on the Start Screen. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile7.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile7. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile8.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile8](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile8.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile8. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile9.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile9](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile9.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile9. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile10.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile10](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile10.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile10. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile11.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile11](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile11.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile11. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile12.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\StartTiles\SquareTiles\[SquareOrDesktopTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">

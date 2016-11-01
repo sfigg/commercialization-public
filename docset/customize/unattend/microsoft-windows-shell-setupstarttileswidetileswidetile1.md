@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setup-starttilessquaretiles-squaretile1appid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1appid.md)</p></td>
 <td><p>Specifies the Windows Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilessquaretiles-squaretile1firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for the tile.</p></td>
 </tr>
 </tbody>

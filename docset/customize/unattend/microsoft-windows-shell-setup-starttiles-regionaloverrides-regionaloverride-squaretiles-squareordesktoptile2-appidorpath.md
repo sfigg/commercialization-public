@@ -4,7 +4,7 @@ description: AppIdOrPath
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e2dbea3b-4766-455b-8a41-1517766eeea8
+ms.assetid: ef53cf38-3026-4f53-8e51-7eb34a47d08e
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -34,7 +34,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile5](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile5.md) | **AppIdOrPath**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md)| [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md) | [SquareOrDesktopTile2](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile2.md) | **AppIdOrPath**
 
 ## Applies To
 
@@ -44,7 +44,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<SquareOrDesktopTile5>` component.
+The following XML output shows how to use the `<SquareOrDesktopTile2>` component.
 
 ``` syntax
 <SquareTiles>
@@ -82,7 +82,7 @@ The following XML output shows how to use the `<SquareOrDesktopTile5>` component
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

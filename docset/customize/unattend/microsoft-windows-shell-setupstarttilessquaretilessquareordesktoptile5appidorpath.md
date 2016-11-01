@@ -32,7 +32,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | [SquareOrDesktopTile5](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile5.md) | **AppIdOrPath**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md) | [SquareOrDesktopTile5](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile5.md) | **AppIdOrPath**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output shows how to use the `<SquareOrDesktopTile5>` component
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
  
 

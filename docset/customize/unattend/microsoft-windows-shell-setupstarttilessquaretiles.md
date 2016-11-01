@@ -33,75 +33,75 @@ If you skip a setting, Windows appears rearrange the flow of your app tiles arou
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile1](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile1.md)</p></td>
+<td><p>[SquareOrDesktopTile1](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile2](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile2.md)</p></td>
+<td><p>[SquareOrDesktopTile2](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile3](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile3.md)</p></td>
+<td><p>[SquareOrDesktopTile3](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile4](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile4.md)</p></td>
+<td><p>[SquareOrDesktopTile4](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile5](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile5.md)</p></td>
+<td><p>[SquareOrDesktopTile5](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile6](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile6.md)</p></td>
+<td><p>[SquareOrDesktopTile6](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareOrDesktopTile6.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile1](microsoft-windows-shell-setup-starttilessquaretiles-squaretile1.md)</p></td>
+<td><p>[SquareTile1](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile2](microsoft-windows-shell-setup-starttilessquaretiles-squaretile2.md)</p></td>
+<td><p>[SquareTile2](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile3](microsoft-windows-shell-setup-starttilessquaretiles-squaretile3.md)</p></td>
+<td><p>[SquareTile3](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile4](microsoft-windows-shell-setup-starttilessquaretiles-squaretile4.md)</p></td>
+<td><p>[SquareTile4](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile5](microsoft-windows-shell-setup-starttilessquaretiles-squaretile5.md)</p></td>
+<td><p>[SquareTile5](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile6](microsoft-windows-shell-setup-starttilessquaretiles-squaretile6.md)</p></td>
+<td><p>[SquareTile6](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile6.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile7](microsoft-windows-shell-setup-starttilessquaretiles-squaretile7.md)</p></td>
+<td><p>[SquareTile7](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile7.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile7.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile8](microsoft-windows-shell-setup-starttilessquaretiles-squaretile8.md)</p></td>
+<td><p>[SquareTile8](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile8.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile8.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile9](microsoft-windows-shell-setup-starttilessquaretiles-squaretile9.md)</p></td>
+<td><p>[SquareTile9](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile9.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile9.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile10](microsoft-windows-shell-setup-starttilessquaretiles-squaretile10.md)</p></td>
+<td><p>[SquareTile10](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile10.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile10.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile11](microsoft-windows-shell-setup-starttilessquaretiles-squaretile11.md)</p></td>
+<td><p>[SquareTile11](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile11.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile11.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile12](microsoft-windows-shell-setup-starttilessquaretiles-squaretile12.md)</p></td>
+<td><p>[SquareTile12](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile12.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position SquareTile12.</p></td>
 </tr>
 </tbody>
