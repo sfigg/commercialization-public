@@ -40,7 +40,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md) | [WideTile1](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile1.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md) | [WideTile1](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile1.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML output shows how to use the `<WideTiles>` component.
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md)
 
 [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 

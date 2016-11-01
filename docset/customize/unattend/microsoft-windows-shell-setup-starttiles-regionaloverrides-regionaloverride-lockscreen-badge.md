@@ -27,7 +27,7 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setup-starttileslockscreenbadgeappid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttiles-lockscreen-badge-appid.md)</p></td>
 <td><p>Specifies the application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverride.md) | [LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridelockscreen.md) | **Badge**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen.md) | **Badge**
 
 ## Applies To
 
@@ -57,7 +57,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttileslockscreen.md).
+The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md).
 
 ``` syntax
 <LockScreen>

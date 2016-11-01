@@ -31,27 +31,27 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[WideTile1](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile1.md)</p></td>
+<td><p>[WideTile1](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile2](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile2.md)</p></td>
+<td><p>[WideTile2](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile3](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile3.md)</p></td>
+<td><p>[WideTile3](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile4](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile4.md)</p></td>
+<td><p>[WideTile4](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile5](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile5.md)</p></td>
+<td><p>[WideTile5](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile6](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridewidetileswidetile6.md)</p></td>
+<td><p>[WideTile6](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile6.</p></td>
 </tr>
 </tbody>

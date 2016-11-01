@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttilessquaretilessquareordesktoptile8appidorpath.md)</p></td>
+<td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile8appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilessquaretilessquareordesktoptile8firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilessquaretiles-squareordesktoptile8firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 </tbody>
@@ -95,7 +95,7 @@ The following XML output shows how to use the **SquareTiles** component.
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
 [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 

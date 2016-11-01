@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Logo
 
 
-Starting in Windows 10, version 1607, the Logo setting is deprecated.
+In Windows 10, version 1607, the Logo setting is deprecated.
 
 `Logo` specifies the path to the .bmp file of the manufacturer's logo. This logo appears in the **Performance Information and Tools** Control Panel, but is not used in the **Settings** app. In the **Settings** app, no logo displays.
 
