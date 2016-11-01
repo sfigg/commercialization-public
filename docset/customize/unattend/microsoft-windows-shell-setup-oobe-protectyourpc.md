@@ -65,7 +65,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **ProtectYourPC**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **ProtectYourPC**
 
 ## Applies To
 
@@ -86,7 +86,7 @@ The following XML example shows how to turn off Express settings.
 ## Related topics
 
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 

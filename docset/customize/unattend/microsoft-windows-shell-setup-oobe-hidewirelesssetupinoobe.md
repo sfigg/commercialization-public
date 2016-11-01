@@ -58,7 +58,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **HideWirelessSetupInOOBE**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **HideWirelessSetupInOOBE**
 
 ## Applies To
 
@@ -79,7 +79,7 @@ The following XML example shows how to set Windows Welcome to always hide the *
 ## Related topics
 
 
-[NetworkLocation](microsoft-windows-shell-setupoobenetworklocation.md)
+[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)
 
 [OOBE](microsoft-windows-shell-setupoobe.md)
 

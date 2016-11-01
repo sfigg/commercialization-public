@@ -69,7 +69,6 @@ The following XML output shows how to set OEM information.
    <HelpCustomized>false</HelpCustomized>
    <Manufacturer>OEM name</Manufacturer>
    <Model>model name</Model>
-   <Logo>C:\Windows\OEM\Logo.bmp</Logo>
    <SupportHours>hours</SupportHours>
    <SupportPhone>123-456-7890</SupportPhone>
    <SupportURL>http://www.contoso.com</SupportURL>

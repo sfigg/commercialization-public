@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # OOBE
 
 
-`OOBE` specifies the behavior of some of the Windows Out of Box Experience (OOBE) screens. For a full list of settings used to automate OOBE, see [Settings for Automating Windows Welcome](http://go.microsoft.com/fwlink/?LinkId=210588).
+`OOBE` specifies the behavior of some of the Windows Out of Box Experience (OOBE) screens. 
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HideEULAPage](microsoft-windows-shell-setupoobehideeulapage.md)</p></td>
+<td><p>[HideEULAPage](microsoft-windows-shell-setup-oobe-hideeulapage.md)</p></td>
 <td><p>Hides the <strong>Microsoft Software License Terms</strong> page.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -36,32 +36,32 @@ ms.sitesec: msdn
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[HideLocalAccountScreen](microsoft-windows-shell-setupoobehidelocalaccountscreen.md)</p></td>
+<td><p>[HideLocalAccountScreen](microsoft-windows-shell-setup-oobe-hidelocalaccountscreen.md)</p></td>
 <td><p>Hides the Administrator password screen.</p>
 <p>This setting applies only to the Windows Server editions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HideOEMRegistrationScreen](microsoft-windows-shell-setupoobehideoemregistrationscreen.md)</p></td>
+<td><p>[HideOEMRegistrationScreen](microsoft-windows-shell-setup-oobe-hideoemregistrationscreen.md)</p></td>
 <td><p>Hides the OEM registration page.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HideOnlineAccountScreens](microsoft-windows-shell-setupoobehideonlineaccountscreens.md)</p></td>
+<td><p>[HideOnlineAccountScreens](microsoft-windows-shell-setup-oobe-hideonlineaccountscreens.md)</p></td>
 <td><p>Specifies whether the user will be required to sign-in during OOBE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HideWirelessSetupInOOBE](microsoft-windows-shell-setupoobehidewirelesssetupinoobe.md)</p></td>
+<td><p>[HideWirelessSetupInOOBE](microsoft-windows-shell-set-upoo-behidewirelesssetupinoobe.md)</p></td>
 <td><p>Hides the <strong>Join Wireless Network</strong> page.</p></td>
 </tr>
 <tr class="even">
-<td><p>[NetworkLocation](microsoft-windows-shell-setupoobenetworklocation.md)</p></td>
+<td><p>[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)</p></td>
 <td><p>Specifies the network type.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OEMAppID](microsoft-windows-shell-setupoobeoemappid.md)</p></td>
+<td><p>[OEMAppID](microsoft-windows-shell-setup-oobe-oemappid.md)</p></td>
 <td><p>Enables the OEM to specify app information.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ProtectYourPC](microsoft-windows-shell-setupoobeprotectyourpc.md)</p></td>
+<td><p>[ProtectYourPC](microsoft-windows-shell-setup-oobe-protectyourpc.md)</p></td>
 <td><p>Hides the <strong>Help protect your computer and improve Windows automatically</strong> page. That page specifies whether updates are automatically downloaded and installed.</p></td>
 </tr>
 <tr class="odd">
@@ -71,31 +71,6 @@ ms.sitesec: msdn
 <tr class="even">
 <td><p>[VMModeOptimizations](microsoft-windows-shell-setup-oobe-vmmodeoptimizations.md)</p></td>
 <td><p>Use to customize the user experience when in VM mode.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Deprecated settings
-
-
-These settings are not available in Windows 8
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>[SkipMachineOOBE](microsoft-windows-shell-setupoobeskipmachineoobe.md)</p></td>
-<td><p>This setting was used to skip Windows Welcome. To skip Windows Welcome, see [How to Automate Windows Welcome](http://go.microsoft.com/fwlink/p/?linkid=206674).</p>
-<p>If you set <code>SkipMachineOOBE</code> to <strong>true</strong>, you must specify values in the answer file to supply data that the Windows Welcome screens collect. If you do not specify these values, the computer could be left in an unusable state.</p></td>
-</tr>
-<tr class="even">
-<td><p>[SkipUserOOBE](microsoft-windows-shell-setupoobeskipuseroobe.md)</p></td>
-<td><p>This setting was used to skip the Welcome Center pop-up window. That pop-up window has been replaced by the Getting Started application, which is available on the <strong>Start</strong> menu.</p></td>
 </tr>
 </tbody>
 </table>

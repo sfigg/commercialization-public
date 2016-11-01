@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **HideLocalAccountScreen**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **HideLocalAccountScreen**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ The following XML example shows how to hide the Administrator password screen du
 ## Related topics
 
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 

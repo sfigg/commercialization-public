@@ -28,7 +28,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **OEMAppID**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **OEMAppID**
 
 ## Applies To
 
@@ -49,7 +49,7 @@ The following XML example shows how to use the `OEMAppID` setting.
 ## Related topics
 
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 

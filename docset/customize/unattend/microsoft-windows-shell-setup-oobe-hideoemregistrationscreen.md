@@ -46,7 +46,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **HideOEMRegistrationScreen**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **HideOEMRegistrationScreen**
 
 ## Applies To
 
@@ -67,7 +67,7 @@ The following XML example shows how to hide the OEM registration page during OOB
 ## Related topics
 
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 

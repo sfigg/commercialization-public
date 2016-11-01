@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `HideEULAPage` specifies whether to hide the Microsoft Software License Terms page of Windows Welcome.
 
 **Note**  
-OEMs and System Builders can use this setting only for testing prior to shipment.
+OEMs and System Builders can only use this setting for testing prior to shipment.
 
  
 
@@ -58,7 +58,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **HideEULAPage**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **HideEULAPage**
 
 ## Applies To
 
@@ -79,7 +79,7 @@ The following XML output shows how to hide the EULA page during Windows Welcome.
 ## Related topics
 
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 
