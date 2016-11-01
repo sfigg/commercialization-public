@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `WideTile2` specifies which application appears as a wide tile on the **Start** menu, in position WideTile2. This position may vary based on the screen size, resolution, and DPI of the target Windows 8 PC.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
 
 ## Child Elements
 
@@ -27,11 +27,11 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile2appid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile2appid.md)</p></td>
 <td><p>Specifies the Windows Store apps appearing on wide tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile2firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile2firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for the tile.</p></td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [WideTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetiles.md) | **WideTile2**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md) | **WideTile2**
 
 ## Applies To
 
@@ -82,13 +82,13 @@ The following XML output shows how to use the `<WideTile2>` component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 
  
 

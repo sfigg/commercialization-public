@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppIdOrPath](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7appidorpath.md)</p></td>
+<td><p>[AppIdOrPath](microsoft-windows-shell-setup-starttilessquaretilessquareordesktoptile7appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps, which appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setupstarttilessquaretilessquareordesktoptile7firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilessquaretilessquareordesktoptile7firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md) | **SquareOrDesktopTile7**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | **SquareOrDesktopTile7**
 
 ## Applies To
 
@@ -91,13 +91,13 @@ The following XML output shows how to use the **SquareTiles** component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 
  
 

@@ -32,7 +32,7 @@ If you are using a Volume License Multiple Activation Key (MAK), you must specif
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
+<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">

@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Badge](microsoft-windows-shell-setupstarttileslockscreenbadge.md)</p></td>
+<td><p>[Badge](microsoft-windows-shell-setup-starttiles-lockscreen-badge.md)</p></td>
 <td><p>A container that holds the <code>AppId</code> value for the application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | **LockScreen**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | **LockScreen**
 
 ## Applies To
 
@@ -68,7 +68,7 @@ The following XML output shows how to use the `LockScreen` component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
  
 

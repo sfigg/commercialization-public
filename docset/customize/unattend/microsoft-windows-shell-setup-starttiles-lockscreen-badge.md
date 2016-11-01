@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setupstarttileslockscreenbadgeappid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttiles-lockscreen-badge-appid.md)</p></td>
 <td><p>Specifies the application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [LockScreen](microsoft-windows-shell-setupstarttileslockscreen.md) | **Badge**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md) | **Badge**
 
 ## Applies To
 
@@ -55,7 +55,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to set [LockScreen](microsoft-windows-shell-setupstarttileslockscreen.md).
+The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttileslockscreen.md).
 
 ``` syntax
 <LockScreen>
@@ -68,9 +68,9 @@ The following XML output shows how to set [LockScreen](microsoft-windows-shell-s
 ## Related topics
 
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)
 
  
 

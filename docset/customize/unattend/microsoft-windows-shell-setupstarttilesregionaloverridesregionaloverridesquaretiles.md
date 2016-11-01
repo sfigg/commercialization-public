@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `SquareTiles` defines the default Windows Store apps to appear as square tiles on the **Start** screen.
 
-If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
 
 The two available `SquareTiles` types are:
 
@@ -25,7 +25,7 @@ The two available `SquareTiles` types are:
 
 To use either of these tile types with your Windows Store apps, you must include the `AppId`. The `AppId` is the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store. You can also include a `FirstRunTask` setting to specify the background task that should be active, or live, by default for the tile.
 
-If you skip a setting, Windows will rearrange the flow of your app tiles around the position of that setting on the **Start** screen. The flow rearrangement is based on columns and is designed to eliminate gaps. The positions may vary based on the screen size, resolution, and DPI of the PC. For more information about these settings, see the associated [StartTiles](microsoft-windows-shell-setupstarttiles.md) settings topics.
+If you skip a setting, Windows will rearrange the flow of your app tiles around the position of that setting on the **Start** screen. The flow rearrangement is based on columns and is designed to eliminate gaps. The positions may vary based on the screen size, resolution, and DPI of the PC. For more information about these settings, see the associated [StartTiles](microsoft-windows-shell-setup-starttiles.md) settings topics.
 
 ## Child Elements
 
@@ -37,75 +37,75 @@ If you skip a setting, Windows will rearrange the flow of your app tiles around 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile1](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile1.md)</p></td>
+<td><p>[SquareOrDesktopTile1](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile2](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile2.md)</p></td>
+<td><p>[SquareOrDesktopTile2](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile3](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile3.md)</p></td>
+<td><p>[SquareOrDesktopTile3](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile4](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile4.md)</p></td>
+<td><p>[SquareOrDesktopTile4](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareOrDesktopTile5](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile5.md)</p></td>
+<td><p>[SquareOrDesktopTile5](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareOrDesktopTile6](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile6.md)</p></td>
+<td><p>[SquareOrDesktopTile6](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquareordesktoptile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareOrDesktopTile6.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile1](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile1.md)</p></td>
+<td><p>[SquareTile1](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile2](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile2.md)</p></td>
+<td><p>[SquareTile2](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile3](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile3.md)</p></td>
+<td><p>[SquareTile3](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile4](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile4.md)</p></td>
+<td><p>[SquareTile4](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile5](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile5.md)</p></td>
+<td><p>[SquareTile5](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile6](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile6.md)</p></td>
+<td><p>[SquareTile6](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile6.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile7](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile7.md)</p></td>
+<td><p>[SquareTile7](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile7.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile7.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile8](microsoft-windows-shell-setupstarttilessquaretilessquaretile8.md)</p></td>
+<td><p>[SquareTile8](microsoft-windows-shell-setup-starttilessquaretilessquaretile8.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile8.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile9](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile9.md)</p></td>
+<td><p>[SquareTile9](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile9.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile9.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile10](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile10.md)</p></td>
+<td><p>[SquareTile10](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile10.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile10.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTile11](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile11.md)</p></td>
+<td><p>[SquareTile11](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile11.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile11.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SquareTile12](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile12.md)</p></td>
+<td><p>[SquareTile12](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretilessquaretile12.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> screen, in position SquareTile12.</p></td>
 </tr>
 </tbody>
@@ -125,7 +125,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | **SquareTiles**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | **SquareTiles**
 
 ## Applies To
 
@@ -167,13 +167,13 @@ The following XML output shows how to use the `<SquareTiles>` component and its 
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[LockScreen](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridelockscreen.md)
+[LockScreen](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridelockscreen.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
 
  
 

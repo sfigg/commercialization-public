@@ -32,7 +32,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [LockScreen](microsoft-windows-shell-setupstarttileslockscreen.md) | [Badge](microsoft-windows-shell-setupstarttileslockscreenbadge.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [LockScreen](microsoft-windows-shell-setup-starttile-slockscreen.md) | [Badge](microsoft-windows-shell-setup-starttiles-lockscreen-badge.md) | **AppId**
 
 ## Applies To
 
@@ -55,9 +55,9 @@ The following XML output shows how to configure the AppId for the `LockScreen`.
 ## Related topics
 
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)
 
  
 

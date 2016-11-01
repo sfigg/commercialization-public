@@ -38,7 +38,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md) | [WideTile5](microsoft-windows-shell-setupstarttileswidetileswidetile5.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md) | [WideTile5](microsoft-windows-shell-setup-starttileswidetileswidetile5.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -69,13 +69,13 @@ The following XML output shows how to use the `<WideTiles>` component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetiles.md)
 
-[WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 
  
 

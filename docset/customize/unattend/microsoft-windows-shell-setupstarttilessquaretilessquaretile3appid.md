@@ -32,7 +32,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md) | [SquareTile3](microsoft-windows-shell-setupstarttilessquaretilessquaretile3.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | [SquareTile3](microsoft-windows-shell-setup-starttilessquaretilessquaretile3.md) | **AppId**
 
 ## Applies To
 
@@ -74,13 +74,13 @@ The following XML output shows how to use the `<SquareTile3>` component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 
  
 

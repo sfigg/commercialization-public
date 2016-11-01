@@ -17,9 +17,9 @@ ms.sitesec: msdn
 
 To use this setting you must include the `AppId`. The `AppId` is the `AppUserModelID` found in the application's AUMIDs.txt file, which is located in the app package downloaded from the OEM channel partner portal of the Windows Store. You can also include the `FirstRunTask` setting to set a background task to run for each app tile on the **Start** screen that you want to be active, or live, by default.
 
-If you skip a setting, Windows will rearrange the flow of your app tiles around the position of that setting on the **Start** screen. The flow rearrangement is based on columns and is designed to eliminate gaps. This position may vary based on the screen size, resolution, and DPI. For more information about these settings, see the associated [StartTiles](microsoft-windows-shell-setupstarttiles.md) settings topics.
+If you skip a setting, Windows will rearrange the flow of your app tiles around the position of that setting on the **Start** screen. The flow rearrangement is based on columns and is designed to eliminate gaps. This position may vary based on the screen size, resolution, and DPI. For more information about these settings, see the associated [StartTiles](microsoft-windows-shell-setup-starttiles.md) settings topics.
 
-If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional layouts, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
 
 ## Child Elements
 
@@ -31,27 +31,27 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[WideTile1](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile1.md)</p></td>
+<td><p>[WideTile1](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile1.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile1.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile2](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile2.md)</p></td>
+<td><p>[WideTile2](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile2.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile2.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile3](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile3.md)</p></td>
+<td><p>[WideTile3](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile3.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile3.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile4](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile4.md)</p></td>
+<td><p>[WideTile4](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile4.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile4.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTile5](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile5.md)</p></td>
+<td><p>[WideTile5](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile5.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile5.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTile6](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridewidetileswidetile6.md)</p></td>
+<td><p>[WideTile6](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridewidetileswidetile6.md)</p></td>
 <td><p>Specifies the application that appears on the <strong>Start</strong> menu, in position WideTile6.</p></td>
 </tr>
 </tbody>
@@ -71,7 +71,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setupstarttiles.md) | **WideTiles**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | **WideTiles**
 
 ## Applies To
 
@@ -102,12 +102,12 @@ The following XML output shows how to use the `<WideTiles>` component and its se
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 
 StartTiles
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
  
 

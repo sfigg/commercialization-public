@@ -572,19 +572,19 @@ The following tables show the typical number of rows of tiles on different combi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[LockScreen](microsoft-windows-shell-setupstarttileslockscreen.md)</p></td>
+<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md)</p></td>
 <td><p>Specifies an app whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)</p></td>
+<td><p>[RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)</p></td>
 <td><p>Specifies sets of apps that appear on the Start screen for different regions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)</p></td>
+<td><p>[SquareTiles](microsoft-windows-shell-setup-starttile-ssquaretiles.md)</p></td>
 <td><p>Specifies the default Windows Store apps to appear as square tiles on the Start screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WideTiles](microsoft-windows-shell-setupstarttileswidetiles.md)</p></td>
+<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-widetiles.md)</p></td>
 <td><p>Specifies the default Windows Store apps to appear as wide tiles on the Start screen.</p></td>
 </tr>
 </tbody>

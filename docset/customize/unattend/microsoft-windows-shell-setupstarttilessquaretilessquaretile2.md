@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setupstarttilessquaretilessquaretile1appid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttilessquaretilessquaretile1appid.md)</p></td>
 <td><p>Specifies the Windows Store apps appearing on square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FirstRunTask](microsoft-windows-shell-setupstarttilessquaretilessquaretile1firstruntask.md)</p></td>
+<td><p>[FirstRunTask](microsoft-windows-shell-setup-starttilessquaretilessquaretile1firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for the tile.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md) | **SquareTile2**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md) | **SquareTile2**
 
 ## Applies To
 
@@ -91,13 +91,13 @@ The following XML output shows how to use the `<SquareTile2>` component.
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridesquaretiles.md)
 
-[SquareTiles](microsoft-windows-shell-setupstarttilessquaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttilessquaretiles.md)
 
  
 

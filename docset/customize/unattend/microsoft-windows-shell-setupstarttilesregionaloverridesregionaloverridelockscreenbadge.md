@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Badge` is a container that holds the `AppId` value for the application whose monochrome icon appears on the **Lock** screen. No additional work is required on your end to make it monochrome; Windows does that automatically. Lock screen badges should only show toast notifications, be easy to understand, include only personally relevant information, and should stay current so users can scan the tile to get the latest information. Clicking on the badge does not activate the app.
 
-If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md).
+If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md).
 
 ## Child Elements
 
@@ -27,7 +27,7 @@ If the region of the current user account is among those in the Start Tile regio
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AppId](microsoft-windows-shell-setupstarttileslockscreenbadgeappid.md)</p></td>
+<td><p>[AppId](microsoft-windows-shell-setup-starttileslockscreenbadgeappid.md)</p></td>
 <td><p>Specifies the application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setupstarttiles.md) | [RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverride.md) | [LockScreen](microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridelockscreen.md) | **Badge**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md)| [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverride.md) | [LockScreen](microsoft-windows-shell-setup-starttilesregionaloverridesregionaloverridelockscreen.md) | **Badge**
 
 ## Applies To
 
@@ -57,7 +57,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to set [LockScreen](microsoft-windows-shell-setupstarttileslockscreen.md).
+The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttileslockscreen.md).
 
 ``` syntax
 <LockScreen>
@@ -70,9 +70,9 @@ The following XML output shows how to set [LockScreen](microsoft-windows-shell-s
 ## Related topics
 
 
-[StartTiles](microsoft-windows-shell-setupstarttiles.md)
+[StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[RegionalOverrides](microsoft-windows-shell-setupstarttilesregionaloverrides.md)
+[RegionalOverrides](microsoft-windows-shell-setup-starttilesregionaloverrides.md)
 
  
 
