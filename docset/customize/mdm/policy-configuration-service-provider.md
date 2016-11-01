@@ -68,16 +68,14 @@ The following diagram shows the Policy configuration service provider in tree fo
 ## **Policy Tables**
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
-<ul>
-<li><a href="#main-policy-table">Table of Policies for Windows 10</a> - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).</li>
-<li><a href="#hololens-policies">Policies supported by Windows Holographic Enterprise</a> - Lists the policies that are supported in Windows Holographic Enterprise.</li>
-</ul>
 
-<a href="" id="main-policy-table"></a>
-## Table of Policies for Windows 10
+-   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
+-   [Policies supported by Windows Holographic Enterprise](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
+
+
+## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
 > **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
-
 
 <table>
 <tr>
@@ -5498,8 +5496,7 @@ Footnote:
 
 -   \* - Added in Windows 10, version 1607.
 
-<a href="" id="hololens-policies"></a>
-## Policies supported by Windows Holographic Enterprise
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic Enterprise
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -7957,7 +7954,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – SD card use is not allowed. This does not prevent programmatic access to the storage card.
+-   0 – SD card use is not allowed and the USB drives are disabled. This setting does not prevent programmatic access to the storage card. 
 -   1 (default) – Allow a storage card.
 
 <p style="margin-left: 20px">Most restricted value is 0.
