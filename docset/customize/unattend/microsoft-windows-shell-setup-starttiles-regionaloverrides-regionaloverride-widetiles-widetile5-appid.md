@@ -4,7 +4,7 @@ description: AppId
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7779d7e6-b106-43f5-9916-3b33f1f1afa8
+ms.assetid: 4297695f-4cc4-4f1b-a330-28145c8ede11
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -34,7 +34,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md) | [WideTile4](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile4.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md) | [WideTile5](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile5.md) | **AppId**
 
 ## Applies To
 
@@ -44,7 +44,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to use the `<WideTile4>` component.
+The following XML output shows how to use the `<WideTile5>` component.
 
 ``` syntax
      <WideTiles>
@@ -69,7 +69,7 @@ The following XML output shows how to use the `<WideTile4>` component.
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 
 [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 

@@ -4,7 +4,7 @@ description: FirstRunTask
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 32007dbd-98f3-4f57-95f3-170be3e634f0
+ms.assetid: 05bb56ca-dde4-4b55-84f4-5446951fc6a3
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
@@ -40,7 +40,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md) | [WideTile6](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetileswidetile6.md) | **FirstRunTask**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md) | [RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md) | [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md) | [WideTile2](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile2.md) | **FirstRunTask**
 
 ## Applies To
 
@@ -75,7 +75,7 @@ The following XML output shows how to use the `<WideTiles>` component.
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md)
+[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 
 [WideTiles](microsoft-windows-shell-setup-starttileswidetiles.md)
 

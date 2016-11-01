@@ -49,7 +49,7 @@ If the selected region doesn’t match any of these regions, then Windows displa
 <td><p>Specifies the default Windows Runtime-based apps to appear as square tiles on the Start screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridewidetiles.md)</p></td>
+<td><p>[WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)</p></td>
 <td><p>Specifies the default Windows Runtime-based apps to appear as wide tiles on the Start screen.</p></td>
 </tr>
 </tbody>
