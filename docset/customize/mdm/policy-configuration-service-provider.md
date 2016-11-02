@@ -7650,7 +7650,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 > **Note**  This policy has been deprecated in Windows 10, version 1607
-&nbsp;
+
+<br>
 
 > **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
@@ -8462,7 +8463,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
-&nbsp;
+<br>
 
 > **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
