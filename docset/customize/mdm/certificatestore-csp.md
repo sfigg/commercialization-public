@@ -102,7 +102,7 @@ Supported operation is Get.
 
  
 
-<a href="" id="my-scep-uniqueid"></a>**My/SCEP/*UniqueID***  
+<a href="" id="my-scep-uniqueid"></a>**My/SCEP/****_UniqueID_**  
 Required for SCEP certificate enrollment. A unique ID to differentiate certificate enrollment requests. Format is node.
 
 Supported operations are Get, Add, Replace, and Delete.

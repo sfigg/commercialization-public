@@ -109,7 +109,7 @@ Interior node to contain dynamic child interior nodes for active providers.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-collectors-collectorname"></a>**EtwLog/Collectors/*CollectorName***  
+<a href="" id="etwlog-collectors-collectorname"></a>**EtwLog/Collectors/****_CollectorName_**  
 Dynamic nodes to represent active collector configuration.
 
 Supported operations are Add, Delete, and Get.
@@ -285,7 +285,7 @@ Interior node to contain dynamic child interior nodes for active providers.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-collectors-collectorname-providers-providerguid"></a>**EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID***  
+<a href="" id="etwlog-collectors-collectorname-providers-providerguid"></a>**EtwLog/Collectors/*CollectorName*/Providers/****_ProviderGUID_**  
 Dynamic nodes to represent active provider configuration per provider GUID.
 
 > **Note**  Microsoft-WindowsPhone-Enterprise-Diagnostics-Provider (GUID - 3da494e4-0fe2-415C-b895-fb5265c5c83b) has the required debug resource files built into Windows OS, which will allow the logs files to be decoded on the remote machine. Any other logs may not have the debug resources required to decode.
@@ -520,7 +520,7 @@ Interior node to contain dynamic child interior nodes for registered channels.
 
 The supported operation is Get.
 
-<a href="" id="etwlog-channels-channelname"></a>**EtwLog/Channels/*ChannelName***  
+<a href="" id="etwlog-channels-channelname"></a>**EtwLog/Channels/****_ChannelName_**  
 Dynamic nodes to represent a registered channel. The node name must be a valid Windows event log channel name, such as "Microsoft-Client-Licensing-Platform%2FAdmin"
 
 Supported operations are Add, Delete, and Get.
@@ -729,7 +729,7 @@ Node to contain child nodes for log file transportation protocols and correspond
 <a href="" id="filedownload-dmchannel"></a>**FileDownload/DMChannel**  
 Node to contain child nodes using DM channel for transport protocol.
 
-<a href="" id="filedownload-dmchannel-filecontext"></a>**FileDownload/DMChannel/*FileContext***  
+<a href="" id="filedownload-dmchannel-filecontext"></a>**FileDownload/DMChannel/****_FileContext_**  
 Dynamic interior nodes that represents per log file context.
 
 <a href="" id="filedownload-dmchannel-filecontext-blocksizekb"></a>**FileDownload/DMChannel/*FileContext*/BlockSizeKB**  
@@ -889,7 +889,7 @@ Get **BlockData**
 <a href="" id="filedownload-dmchannel-filecontext-datablocks"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks**  
 Node to transfer the selected log file block to the DM server.
 
-<a href="" id="filedownload-dmchannel-filecontext-datablocks-blocknumber"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks/*BlockNumber***  
+<a href="" id="filedownload-dmchannel-filecontext-datablocks-blocknumber"></a>**FileDownload/DMChannel/*FileContext*/DataBlocks/****_BlockNumber_**  
 The data type is Base64.
 
 The only supported operation is Get.

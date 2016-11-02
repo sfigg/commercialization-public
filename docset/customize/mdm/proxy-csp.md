@@ -58,7 +58,7 @@ Depending on the ProxyID, the valid values are ISA, WAP, SOCKS, or NULL.
 <a href="" id="proxyname-ports"></a>***ProxyName*/Ports**  
 Node for port information.
 
-<a href="" id="proxyname-ports-portname"></a>***ProxyName*/Ports/*PortName***  
+<a href="" id="proxyname-ports-portname"></a>***ProxyName*/Ports/****_PortName_**  
 Defines the name of a port.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two ports, use "PORT0" and "PORT1" as the element names.
@@ -69,7 +69,7 @@ Specifies the port number to be associated with the parent port.
 <a href="" id="proxyname-ports-portname-services"></a>***ProxyName*/Ports/*PortName*/Services**  
 Node for services information.
 
-<a href="" id="proxyname-ports-services-servicename"></a>***ProxyName*/Ports/Services/*ServiceName***  
+<a href="" id="proxyname-ports-services-servicename"></a>***ProxyName*/Ports/Services/****_ServiceName_**  
 Defines the name of a service.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two services, use "SERVICE0" and "SERVICE1" as the element names.
@@ -82,7 +82,7 @@ One commonly used value is "HTTP".
 <a href="" id="proxyname-conrefs"></a>***ProxyName*/ConRefs**  
 Node for connection reference information
 
-<a href="" id="proxyname-conrefs-conrefname"></a>***ProxyName*/ConRefs/*ConRefName***  
+<a href="" id="proxyname-conrefs-conrefname"></a>***ProxyName*/ConRefs/****_ConRefName_**  
 Defines the name of a connection reference.
 
 It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two connection references, use "CONREF0" and "CONREF1" as the element names.
