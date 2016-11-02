@@ -13,13 +13,12 @@ ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
 > **Note**  
-When you create a list of allowed apps, all [inbox apps](#inbox-apps-and-components) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+>
+> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+> 
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
-In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
-
-Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
-
- 
 
 The following diagram shows the AppLocker configuration service provider in tree format.
 
@@ -32,9 +31,9 @@ Defines the root node for the AppLocker configuration service provider.
 Defines restrictions for applications.
 
 > **Note**  
-When you create a list of allowed apps, all [inbox apps](#inbox-apps-and-components) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
-
-In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+> 
+> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
 
 Additional information:
 
@@ -239,7 +238,7 @@ You can get the publisher name and product name of apps using a web API.
 **To find publisher and product name for Microsoft apps in Windows Store for Business**
 
 1.  Go to the Windows Store for Business website, and find your app. For example, Microsoft OneNote.
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
     <table>
@@ -337,7 +336,7 @@ The product name is first part of the PackageFullName followed by the version nu
 
  
 
-## <a href="" id="inbox-apps-and-components"></a>Inbox apps and components
+## <a href="" id="inboxappsandcomponents"></a>Inbox apps and components
 
 
 The following list shows the apps that may be included in the inbox.
