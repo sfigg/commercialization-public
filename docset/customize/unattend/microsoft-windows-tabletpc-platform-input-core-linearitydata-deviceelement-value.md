@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of the [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md).
+`Value` specifies the value of the [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md) to the answer file.
 
  
 
@@ -31,7 +31,7 @@ This element does not appear in the **Properties** pane of Windows System Image
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies the value of the [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md). <em>Value</em> is a string.</p></td>
+<td><p>Specifies the value of the [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md). <em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -48,7 +48,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [LinearityData](microsoft-windows-tabletpc-platform-input-corelinearitydata.md)| [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md) | **Value**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [LinearityData](microsoft-windows-tabletpc-platform-input-corelinearitydata.md)| [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md) | **Value**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ The following XML output shows how to configure `Value`.
 ## Related topics
 
 
-[DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md)
+[DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md)
 
  
 

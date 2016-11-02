@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # AssociationData
 
 
-`AssociationData` contains one or more instances of [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md). The AssociationElement specifies information to associate a Tablet PC monitor to the digitizer. Add a separate AssociationElement for each Tablet PC monitor that you want to associate to a digitizer.
+`AssociationData` contains one or more instances of [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md). The AssociationElement specifies information to associate a Tablet PC monitor to the digitizer. Add a separate AssociationElement for each Tablet PC monitor that you want to associate to a digitizer.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md)</p></td>
+<td><p>[AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)</p></td>
 <td><p>Specifies information to associate a Tablet PC monitor to a digitizer.</p></td>
 </tr>
 </tbody>
@@ -65,7 +65,7 @@ The following XML output shows how to configure `AssociationData` to associate t
 ## Related topics
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core-win7-microsoft-windows-tabletpc-platform-input-core.md)
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)
 
  
 

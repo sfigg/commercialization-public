@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # LinearityData
 
 
-`LinearityData` is a container for one or more instances of [DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md). This key is the parent key for calibration data for particular devices. You can create subkeys under this key to include calibration data for a particular digitizer. Run `tabcal.exe -export` to produce a device ID and a hexadecimal string containing calibration data. Insert the device ID and hexadecimal string under linearity data as a new subkey, using the device ID as a name and the calibration data as the value.
+`LinearityData` is a container for one or more instances of [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md). This key is the parent key for calibration data for particular devices. You can create subkeys under this key to include calibration data for a particular digitizer. Run `tabcal.exe -export` to produce a device ID and a hexadecimal string containing calibration data. Insert the device ID and hexadecimal string under linearity data as a new subkey, using the device ID as a name and the calibration data as the value.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceElement](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelement.md)</p></td>
+<td><p>[DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md)</p></td>
 <td><p>Specifies a device.</p></td>
 </tr>
 </tbody>

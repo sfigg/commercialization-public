@@ -25,11 +25,11 @@ The Microsoft-Windows-SystemSettings component implements settings related to mo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisplayNetworkSelection](displaynetworkselection--win8-microsoft-windows-systemsettingsdisplaynetworkselection.md)</p></td>
+<td><p>[DisplayNetworkSelection](microsoft-windows-systemsettings-displaynetworkselection.md)</p></td>
 <td><p>Specify whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WiFiToWlan](microsoft-windows-systemsettingswifitowlan.md)</p></td>
+<td><p>[WiFiToWlan](microsoft-windows-systemsetting-swifitowlan.md)</p></td>
 <td><p>Use &quot;WLAN&quot; instead of &quot;Wi-Fi&quot; for the heading in the Networks list.</p></td>
 </tr>
 </tbody>

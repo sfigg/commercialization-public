@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelementkey.md)</p></td>
+<td><p>[Key](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement-key.md)</p></td>
 <td><p>Specifies a unique key for the <code>AssociationElement</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelementvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement-value.md)</p></td>
 <td><p>Specifies information to associate a Tablet PC monitor to a digitizer.</p></td>
 </tr>
 </tbody>
@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md) | **AssociationElement**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [AssociationData](microsoft-windows-tabletpc-platform-input-core-associationdata.md) | **AssociationElement**
 
 ## Valid Configuration Passes
 

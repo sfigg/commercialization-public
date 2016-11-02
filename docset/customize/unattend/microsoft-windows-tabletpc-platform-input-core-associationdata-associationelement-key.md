@@ -13,12 +13,12 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md).
+`Key` specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) to the answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) element. The attribute `wcm:keyValue` is used to identify each unique association. For example, you can specify three different associations by using the `Key` values of **Monitor1**, **Monitor2**, and **Monitor3**.
+-   The value for `Key` is added to the answer file as an attribute of the [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) element. The attribute `wcm:keyValue` is used to identify each unique association. For example, you can specify three different associations by using the `Key` values of **Monitor1**, **Monitor2**, and **Monitor3**.
 
  
 
@@ -33,7 +33,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md). <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,7 +50,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md)| [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) | **Key**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md)| [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) | **Key**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ The following XML output shows how to configure `AssociationElement` to associat
 ## Related topics
 
 
-[AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md)
+[AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)
 
  
 

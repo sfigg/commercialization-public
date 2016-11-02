@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelementkey.md)</p></td>
+<td><p>[Key](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-key.md)</p></td>
 <td><p>Specifies a unique key for the <code>DeviceElement</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tabletpc-platform-input-corelinearitydatadeviceelementvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-tabletpc-platform-input-corelinearitydata-deviceelement-value.md)</p></td>
 <td><p>Specifies the value of the <code>DeviceElement</code>.</p></td>
 </tr>
 </tbody>
@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [LinearityData](microsoft-windows-tabletpc-platform-input-corelinearitydata.md) | **DeviceElement**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md) | [LinearityData](microsoft-windows-tabletpc-platform-input-core-linearitydata.md) | **DeviceElement**
 
 ## Valid Passes
 

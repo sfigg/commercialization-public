@@ -25,7 +25,7 @@ The Microsoft-Windows-TabletPC-Platform-Input-Core component contains settings t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md)</p></td>
+<td><p>[AssociationData](microsoft-windows-tabletpc-platform-input-core-associationdata.md)</p></td>
 <td><p>A container for <code>AssociationData</code> list items. These list items help associate a Tablet PC digitizer with a monitor.</p></td>
 </tr>
 <tr class="even">
@@ -33,19 +33,19 @@ The Microsoft-Windows-TabletPC-Platform-Input-Core component contains settings t
 <td><p>Specifies whether the handwriting panel is initially docked by default.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LinearityData](microsoft-windows-tabletpc-platform-input-corelinearitydata.md)</p></td>
+<td><p>[LinearityData](microsoft-windows-tabletpc-platform-input-core-linearitydata.md)</p></td>
 <td><p>A container for <code>DeviceElement</code> list items. These list items enable the input of linearity data for calibrating the digitizers on the device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MultiTouchEnabled](microsoft-windows-tabletpc-platform-input-coremultitouchenabled.md)</p></td>
+<td><p>[MultiTouchEnabled](microsoft-windows-tabletpc-platform-input-core-multitouchenabled.md)</p></td>
 <td><p>Specifies whether the touch input can receive multiple simultaneous responses.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PanningDisabled](microsoft-windows-tabletpc-platform-input-corepanningdisabled.md)</p></td>
+<td><p>[PanningDisabled](microsoft-windows-tabletpc-platform-input-core-panningdisabled.md)</p></td>
 <td><p>Specifies whether an end user can scroll through a page by touching the screen and sliding their finger up or down.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TouchGate](microsoft-windows-tabletpc-platform-input-coretouchgate.md)</p></td>
+<td><p>[TouchGate](microsoft-windows-tabletpc-platform-input-core-touchgate.md)</p></td>
 <td><p>Specifies whether the touch input is turned on or off for the device.</p></td>
 </tr>
 <tr class="odd">
