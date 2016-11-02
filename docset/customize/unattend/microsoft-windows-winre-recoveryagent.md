@@ -25,7 +25,7 @@ The Microsoft-Windows-WinRE-RecoveryAgent component manages settings related to 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[UninstallWindowsRE](microsoft-windows-winre-recoveryagentuninstallwindowsre.md)</p></td>
+<td><p>[UninstallWindowsRE](microsoft-windows-winre-recoveryagent-uninstallwindowsre.md)</p></td>
 <td><p>Specifies whether to install or remove files related to Windows RE.</p></td>
 </tr>
 </tbody>

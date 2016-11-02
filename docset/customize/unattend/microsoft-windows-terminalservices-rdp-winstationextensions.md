@@ -25,11 +25,11 @@ The Microsoft-Windows-TerminalServices-RDP-WinStationExtensions component implem
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SecurityLayer](microsoft-windows-terminalservices-rdp-winstationextensionssecuritylayer.md)</p></td>
+<td><p>[SecurityLayer](microsoft-windows-terminalservices-rdp-winstationextensions-securitylayer.md)</p></td>
 <td><p>Specifies how servers and clients authenticate each other before a remote desktop connection is established.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UserAuthentication](microsoft-windows-terminalservices-rdp-winstationextensionsuserauthentication.md)</p></td>
+<td><p>[UserAuthentication](microsoft-windows-terminalservices-rdp-winstationextensions-userauthentication.md)</p></td>
 <td><p>Specifies how users are authenticated before the remote desktop connection is established.</p></td>
 </tr>
 </tbody>

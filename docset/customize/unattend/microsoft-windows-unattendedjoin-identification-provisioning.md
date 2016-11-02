@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Provisioning` specifies the account information used to join a domain during Windows Setup.
 
 **Note**  
-Use either Provisioning or [Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.
+Use either Provisioning or [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.
 
  
 
@@ -30,7 +30,7 @@ Use either Provisioning or [Credentials](microsoft-windows-unattendedjoinidentif
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AccountData](microsoft-windows-unattendjoinidentificationprovisioningaccountdata.md)</p></td>
+<td><p>[AccountData](microsoft-windows-unattendjoin-identificationprovisioning-accountdata.md)</p></td>
 <td><p>Specifies account data used when joining a domain.</p></td>
 </tr>
 </tbody>
@@ -46,12 +46,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **Provisioning**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | **Provisioning**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -69,7 +69,7 @@ The following XML output shows how to set the Provisioning settings.
 ## Related topics
 
 
-[Identification](microsoft-windows-unattendedjoinidentification.md)
+[Identification](microsoft-windows-unattendedjoin-identification.md)
 
  
 

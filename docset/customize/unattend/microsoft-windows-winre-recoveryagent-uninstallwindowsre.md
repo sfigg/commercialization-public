@@ -72,7 +72,7 @@ The following XML output shows how to instruct Windows to save drive space by un
 ## Related topics
 
 
-[Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent-win7-microsoft-windows-winre-recoveryagent.md)
+[Microsoft-Windows-WinRE-RecoveryAgent](microsoft-windows-winre-recoveryagent.md)
 
  
 

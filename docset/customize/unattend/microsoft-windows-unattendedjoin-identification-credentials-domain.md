@@ -27,7 +27,7 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
 <td><p>Specifies the name of the domain used to authenticate an account. <em>Domain_name</em> is a string. The value may be either a fully qualified DNS domain name or a NetBIOS domain name.</p>
-<p>If a value for <code>Domain</code> is not specified, [Username](microsoft-windows-unattendedjoinidentificationcredentialsusername.md) must use the user principal name (UPN) format (user@fully-qualified-DNS-domain), NetBIOS-domain\username format, or the fully-qualified-DNS-domain\username format.</p></td>
+<p>If a value for <code>Domain</code> is not specified, [Username](microsoft-windows-unattendedjoin-identification-credentialsusername.md) must use the user principal name (UPN) format (user@fully-qualified-DNS-domain), NetBIOS-domain\username format, or the fully-qualified-DNS-domain\username format.</p></td>
 </tr>
 </tbody>
 </table>
@@ -44,12 +44,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | [Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md) | **Domain**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) | **Domain**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following XML output shows how to set the identification credentials.
 ## Related topics
 
 
-[Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md)
+[Credentials](microsoft-windows-unattendedjoin-identification-credentials.md)
 
  
 

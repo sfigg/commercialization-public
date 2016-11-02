@@ -74,7 +74,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager-win7-microsoft-windows-terminalservices-remoteconnectionmanager.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager.md).
 
 ## XML Example
 
@@ -86,7 +86,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager-win7-microsoft-windows-terminalservices-remoteconnectionmanager.md)
+[Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager.md)
 
  
 

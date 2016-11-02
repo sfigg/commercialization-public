@@ -25,7 +25,7 @@ The Microsoft-Windows-TerminalServices-Publishing-WMIProvider component is used 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[fDisabledAllowList](microsoft-windows-terminalservices-publishing-wmiproviderfdisabledallowlist.md)</p></td>
+<td><p>[fDisabledAllowList](microsoft-windows-terminalservices-publishing-wmiprovider-fdisabledallowlist.md)</p></td>
 <td><p>Specifies whether the Allow list is enforced.</p></td>
 </tr>
 </tbody>

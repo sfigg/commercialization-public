@@ -47,12 +47,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-shwebsvc](mWindowsmicrosoft-windows-shwebsvc.md) | **Icon**
+[Microsoft-Windows-shwebsvc](mmicrosoft-windows-shwebsvc.md) | **Icon**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](mWindowsmicrosoft-windows-shwebsvc.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-shwebsvc](mmicrosoft-windows-shwebsvc.md).
 
 ## XML Example
 
@@ -70,7 +70,7 @@ The following XML output shows how to set Lucerne Publishing for online printing
 ## Related topics
 
 
-[Microsoft-Windows-shwebsvc](mWindowsmicrosoft-windows-shwebsvc.md)
+[Microsoft-Windows-shwebsvc](mmicrosoft-windows-shwebsvc.md)
 
  
 

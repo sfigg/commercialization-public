@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DebugJoin
 
 
-`DebugJoin` specifies a trigger to run the debugging routine if setup encounters an error code. This setting enables you to debug Windows Setup failures. Additionally, if a specific error code is used with [DebugJoinOnlyOnThisError](microsoft-windows-unattendedjoinidentificationdebugjoinonlyonthiserror.md), `DebugJoin` will apply only for failures with the specified error code. For more information, see DebugJoinOnlyOnThisError.
+`DebugJoin` specifies a trigger to run the debugging routine if setup encounters an error code. This setting enables you to debug Windows Setup failures. Additionally, if a specific error code is used with [DebugJoinOnlyOnThisError](microsoft-windows-unattendedjoin-identification-debugjoinonlyonthiserror.md), `DebugJoin` will apply only for failures with the specified error code. For more information, see DebugJoinOnlyOnThisError.
 
 **Important**  
 This is an advanced setting designed to be used by product development and Microsoft Product Support Services. Leave this setting unmodified when you configure the unattended answer file.
@@ -54,12 +54,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **DebugJoin**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | **DebugJoin**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -73,7 +73,7 @@ The following XML output shows how to set debug joins.
 ## Related topics
 
 
-[Identification](microsoft-windows-unattendedjoinidentification.md)
+[Identification](microsoft-windows-unattendedjoin-identification.md)
 
  
 

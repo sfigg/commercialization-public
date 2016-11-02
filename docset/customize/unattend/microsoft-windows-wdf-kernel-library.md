@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DriverStartType](microsoft-windows-wdf-kernel-librarydriverstarttype.md)</p></td>
+<td><p>[DriverStartType](microsoft-windows-wdf-kernel-library-driverstarttype.md)</p></td>
 <td><p>Specifies whether the Kernel-Mode Driver Framework (KMDF) service is started at startup or on demand.</p></td>
 </tr>
 </tbody>

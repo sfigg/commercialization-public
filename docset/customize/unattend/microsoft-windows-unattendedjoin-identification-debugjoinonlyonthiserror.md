@@ -15,9 +15,9 @@ ms.sitesec: msdn
 
 `DebugJoinOnlyOnThisError` specifies a particular error code that causes `DebugJoin` to trigger if encountered during Windows Setup.
 
-This setting modifies the behavior of [DebugJoin](microsoft-windows-unattendedjoinidentificationdebugjoin.md). If specified, this setting causes the DebugJoin behavior only when the domain join operation fails with the error specified by this setting.
+This setting modifies the behavior of [DebugJoin](microsoft-windows-unattendedjoin-identification-debugjoin.md). If specified, this setting causes the DebugJoin behavior only when the domain join operation fails with the error specified by this setting.
 
-`DebugJoinOnlyOnThisError` only functions if [DebugJoin](microsoft-windows-unattendedjoinidentificationdebugjoin.md) is set to **true**.
+`DebugJoinOnlyOnThisError` only functions if [DebugJoin](microsoft-windows-unattendedjoin-identification-debugjoin.md) is set to **true**.
 
 **Important**  
 This is an advanced setting designed to be used by product development and Microsoft Product Support Services. Leave this setting unmodified when you configure the unattended answer file.
@@ -52,12 +52,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **DebugJoinOnlyOnThisError**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | **DebugJoinOnlyOnThisError**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -72,7 +72,7 @@ The following XML output shows how to set debug joins.
 ## Related topics
 
 
-[Identification](microsoft-windows-unattendedjoinidentification.md)
+[Identification](microsoft-windows-unattendedjoin-identification.md)
 
  
 

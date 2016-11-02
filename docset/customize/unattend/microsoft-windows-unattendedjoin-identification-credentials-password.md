@@ -43,12 +43,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | [Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md) | **Password**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) | **Password**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -70,7 +70,7 @@ The following XML output shows how to set the identification credentials.
 ## Related topics
 
 
-[Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md)
+[Credentials](microsoft-windows-unattendedjoin-identification-credentials.md)
 
  
 

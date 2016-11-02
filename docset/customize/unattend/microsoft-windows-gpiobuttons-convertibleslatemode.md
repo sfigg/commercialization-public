@@ -70,9 +70,6 @@ offlineServicing
 
 ## Applies To
 
-
-This setting applies to Windows 10 and Windows 8.1.
-
 For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md).
 
 ## XML Example

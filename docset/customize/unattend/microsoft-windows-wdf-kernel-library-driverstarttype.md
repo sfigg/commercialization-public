@@ -64,7 +64,7 @@ The following XML output shows how to set the service to start on demand.
 ## Related topics
 
 
-[Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library-win7-microsoft-windows-wdf-kernel-library.md)
+[Microsoft-Windows-WDF-Kernel Library](microsoft-windows-wdf-kernel-library.md)
 
  
 

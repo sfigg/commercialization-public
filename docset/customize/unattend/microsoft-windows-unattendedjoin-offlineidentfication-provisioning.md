@@ -46,11 +46,7 @@ offlineServicing
 ## Applies To
 
 
-Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
-
-Windows Server 2016
-
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
  
 

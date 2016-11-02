@@ -64,7 +64,7 @@ The following XML output shows how to specify that the primary Domain Name Servi
 ## Related topics
 
 
-[Microsoft-Windows-WorkstationService](Windowsmicrosoft-windows-workstationservice.md)
+[Microsoft-Windows-WorkstationService](microsoft-windows-workstationservice.md)
 
  
 

@@ -56,7 +56,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions-win7-microsoft-windows-terminalservices-rdp-winstationextensions.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions.md).
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following XML output shows how to set the Microsoft-Windows-TerminalServices
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions-win7-microsoft-windows-terminalservices-rdp-winstationextensions.md)
+[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions.md)
 
  
 

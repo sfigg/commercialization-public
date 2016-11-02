@@ -54,7 +54,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider-win7-microsoft-windows-terminalservices-publishing-wmiprovider.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider.md).
 
 ## XML Example
 
@@ -68,7 +68,7 @@ The following XML output specifies that the Allow list is not checked and enforc
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider-win7-microsoft-windows-terminalservices-publishing-wmiprovider.md)
+[Microsoft-Windows-TerminalServices-Publishing-WMIProvider](microsoft-windows-terminalservices-publishing-wmiprovider.md)
 
  
 

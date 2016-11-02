@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # JoinDomain
 
 
-`JoinDomain` specifies the name of the domain to join. If this value is set, [JoinWorkgroup](microsoft-windows-unattendedjoinidentificationjoinworkgroup.md) cannot be set.
+`JoinDomain` specifies the name of the domain to join. If this value is set, [JoinWorkgroup](microsoft-windows-unattendedjoin-identification-joinworkgroup.md) cannot be set.
 
 ## Values
 
@@ -27,7 +27,7 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
 <td><p>Specifies the name of the domain to join during Windows Setup. <em>Domain_name</em> can be the fully qualified Domain Name System (DNS) name of the domain or the NetBIOS name of the domain. <em>Domain_name</em> is a string.</p>
-<p>You can specify either a domain to join or a workgroup to assign by using the <code>JoinDomain</code> or [JoinWorkgroup](microsoft-windows-unattendedjoinidentificationjoinworkgroup.md) settings respectively. However, only one of these settings should be present in an answer file. If both exist in an answer file, the value for <code>JoinDomain</code> is used, and JoinWorkgroup is ignored.</p></td>
+<p>You can specify either a domain to join or a workgroup to assign by using the <code>JoinDomain</code> or [JoinWorkgroup](microsoft-windows-unattendedjoin-identification-joinworkgroup.md) settings respectively. However, only one of these settings should be present in an answer file. If both exist in an answer file, the value for <code>JoinDomain</code> is used, and JoinWorkgroup is ignored.</p></td>
 </tr>
 </tbody>
 </table>
@@ -44,12 +44,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **JoinDomain**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | **JoinDomain**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following XML output shows how to set the identification credentials.
 ## Related topics
 
 
-[Identification](microsoft-windows-unattendedjoinidentification.md)
+[Identification](microsoft-windows-unattendedjoin-identification.md)
 
  
 

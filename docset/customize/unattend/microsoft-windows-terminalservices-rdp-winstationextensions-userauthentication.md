@@ -67,7 +67,7 @@ The following XML output shows how to set the Microsoft-Windows-TerminalServices
 ## Related topics
 
 
-[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions-win7-microsoft-windows-terminalservices-rdp-winstationextensions.md)
+[Microsoft-Windows-TerminalServices-RDP-WinStationExtensions](microsoft-windows-terminalservices-rdp-winstationextensions.md)
 
  
 

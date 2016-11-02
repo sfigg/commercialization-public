@@ -67,7 +67,7 @@ The following XML output specifies that the system will search for MTP/BT portab
 ## Related topics
 
 
-[BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservicebtsearchintervalondc.md)
+[BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservice-btsearchintervalondc.md)
 
  
 

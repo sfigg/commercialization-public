@@ -29,15 +29,15 @@ This component includes two settings:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[BTSearchIntervalOnAC](microsoft-windows-wpd-busenumservicebtsearchintervalonac.md)</p></td>
+<td><p>[BTSearchIntervalOnAC](microsoft-windows-wpd-busenumservice-btsearchintervalonac.md)</p></td>
 <td><p>Specifies how often the computer will search for portable devices using MTP/BT while plugged in to AC power.</p></td>
 </tr>
 <tr class="even">
-<td><p>[BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservicebtsearchintervalondc.md)</p></td>
+<td><p>[BTSearchIntervalOnDC](microsoft-windows-wpd-busenumservice-btsearchintervalondc.md)</p></td>
 <td><p>Specifies how often the computer will search for portable devices using MTP/BT while on battery power.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RegCacheUpdated](microsoft-windows-wpd-busenumserviceregcacheupdated.md)</p></td>
+<td><p>[RegCacheUpdated](microsoft-windows-wpd-busenumservice-regcacheupdated.md)</p></td>
 <td><p>For Microsoft internal use only.</p></td>
 </tr>
 </tbody>

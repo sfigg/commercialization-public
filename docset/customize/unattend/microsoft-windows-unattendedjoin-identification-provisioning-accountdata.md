@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `AccountData` specifies account data used when joining a domain.
 
 **Note**  
-Use either [Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md) or [Credentials](microsoft-windows-unattendedjoinidentificationcredentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.
+Use either [Provisioning](microsoft-windows-unattendedjoin-identification-provisioning.md) or [Credentials](microsoft-windows-unattendedjoin-identification-credentials.md) to join an account to the domain. The settings in Provisioning will be used to join the account to the domain, if values are entered for both the Provisioning and Credentials settings.
 
  
 
@@ -65,12 +65,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | [Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md)| **AccountData**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | [Provisioning](microsoft-windows-unattendedjoin-identification-provisioning.md)| **AccountData**
 
 ## Applies To
 
 
-For a list of Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -88,7 +88,7 @@ The following XML output shows how to set the Provisioning settings.
 ## Related topics
 
 
-[Provisioning](microsoft-windows-unattendedjoinidentificationprovisioning.md)
+[Provisioning](microsoft-windows-unattendedjoin-identification-provisioning.md)
 
  
 

@@ -66,7 +66,7 @@ The following XML output shows how to hide the mobile broadband category in OOBE
 ## Related topics
 
 
-[Microsoft-Windows-WwanUI](microsoft-windows-wwanui-win8-microsoft-windows-wwanui.md)
+[Microsoft-Windows-WwanUI](microsoft-windows-wwanui.md)
 
  
 

@@ -13,9 +13,9 @@ ms.sitesec: msdn
 # MachinePassword
 
 
-`MachinePassword `is used with [UnsecureJoin](microsoft-windows-unattendedjoinidentificationunsecurejoin.md), which is performed by using a null session with a pre-existing account. This means there is no authentication to the domain controller when configuring the computer account. It is done anonymously. The account must have a well-known password or a specified `MachinePassword`. The well-known password is the first 14 characters of the computer name in lowercase.
+`MachinePassword `is used with [UnsecureJoin](microsoft-windows-unattendedjoin-identification-unsecurejoin.md), which is performed by using a null session with a pre-existing account. This means there is no authentication to the domain controller when configuring the computer account. It is done anonymously. The account must have a well-known password or a specified `MachinePassword`. The well-known password is the first 14 characters of the computer name in lowercase.
 
-This setting is valid only if [UnsecureJoin](microsoft-windows-unattendedjoinidentificationunsecurejoin.md) is set to **true**.
+This setting is valid only if [UnsecureJoin](microsoft-windows-unattendedjoin-identification-unsecurejoin.md) is set to **true**.
 
 ## Values
 
@@ -43,12 +43,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoinidentification.md) | **MachinePassword**
+[Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md) | [Identification](microsoft-windows-unattendedjoin-identification.md) | **MachinePassword**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin-win7-microsoft-windows-unattendedjoin.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md).
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following XML output shows how to specify the value of the unique password f
 ## Related topics
 
 
-[Identification](microsoft-windows-unattendedjoinidentification.md)
+[Identification](microsoft-windows-unattendedjoin-identification.md)
 
  
 
