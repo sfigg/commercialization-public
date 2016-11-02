@@ -33,25 +33,25 @@ The following screen shot illustrates the Windows SIM user interface.
 
 ### Distribution Share Pane
 
-The **Distribution Share** pane displays the currently open distribution share folder in tree view. You can select, create, explore, and close distribution share folders by selecting the top node and then right-clicking in the pane. You can add items in an open distribution share folder to an answer file by right-clicking the item. For more information, see [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview-win8.md).
+The **Distribution Share** pane displays the currently open distribution share folder in tree view. You can select, create, explore, and close distribution share folders by selecting the top node and then right-clicking in the pane. You can add items in an open distribution share folder to an answer file by right-clicking the item. For more information, see [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md).
 
 ### Answer File Pane
 
-The **Answer File** pane displays the Windows Setup configuration passes, the settings to apply in each pass, and the packages to install. You can open and change an existing answer file, validate the settings in an answer file against a Windows image, or create a new answer file. For more information, see [Answer Files Overview](answer-files-overview-win8.md).
+The **Answer File** pane displays the Windows Setup configuration passes, the settings to apply in each pass, and the packages to install. You can open and change an existing answer file, validate the settings in an answer file against a Windows image, or create a new answer file. For more information, see [Answer Files Overview](answer-files-overview.md).
 
 ### Windows Image Pane
 
-The **Windows Image** pane displays the currently open Windows image in tree view. When the tree is expanded, all of the components and packages for the image are visible and available to add to an answer file in the **Answer File** pane. For more information, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview-win8.md).
+The **Windows Image** pane displays the currently open Windows image in tree view. When the tree is expanded, all of the components and packages for the image are visible and available to add to an answer file in the **Answer File** pane. For more information, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md).
 
 ### Properties Pane
 
-The **Properties** pane displays the properties and settings of a selected component or package. You can use the **Properties** pane to change the settings, and, in the case of packages, Windows feature selections. At the bottom of the **Properties** pane, Windows SIM displays the name of the setting and the associated **Microsoft® .NET** type. For more information, see [Component Settings and Properties Reference](component-settings-and-properties-referencewin8.md).
+The **Properties** pane displays the properties and settings of a selected component or package. You can use the **Properties** pane to change the settings, and, in the case of packages, Windows feature selections. At the bottom of the **Properties** pane, Windows SIM displays the name of the setting and the associated **Microsoft® .NET** type. For more information, see [Component Settings and Properties Reference](component-settings-and-properties-reference.md).
 
 ### Messages Pane
 
 The **Messages** pane consists of three tabs: **XML**, **Validation**, and **Configuration Set**. Clicking a tab in the **Messages** pane displays the type of message, a description, and the location of the issue.
 
-The types of messages that the **Messages** pane displays are informational. Messages appear on the **Configuration Set** tab if a configuration set has been created. For more information, see [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview-win8.md).
+The types of messages that the **Messages** pane displays are informational. Messages appear on the **Configuration Set** tab if a configuration set has been created. For more information, see [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md).
 
 ## <a href="" id="-simmenu"></a>Windows SIM Menus
 
@@ -233,11 +233,11 @@ The types of messages that the **Messages** pane displays are informational. Mes
 </tr>
 <tr class="even">
 <td><p><strong>Import Package(s)</strong></p></td>
-<td><p>Enables you to browse to a folder that contains a package, and then import it into the currently open distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md).</p></td>
+<td><p>Enables you to browse to a folder that contains a package, and then import it into the currently open distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Create Catalog</strong></p></td>
-<td><p>Generates a catalog file. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file-win8.md).</p></td>
+<td><p>Generates a catalog file. For more information, see [Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md).</p></td>
 </tr>
 </tbody>
 </table>
@@ -334,9 +334,9 @@ The types of messages that the **Messages** pane displays are informational. Mes
 ## Related topics
 
 
-[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview-win8.md)
+[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview.md)
 
-[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics-win8.md)
+[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
  
 

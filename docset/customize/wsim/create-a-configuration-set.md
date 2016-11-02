@@ -23,7 +23,7 @@ Because a configuration set contains only internal references, it can be used fo
 
 1.  Open Windows SIM.
 
-2.  Open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file-win8.md).
+2.  Open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 
 3.  On the **Tools** menu, click **Create Configuration Set**.
 
@@ -41,13 +41,13 @@ Because a configuration set contains only internal references, it can be used fo
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share-win8.md)
+[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share.md)
 
-[Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md)
+[Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)
 
-[Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md)
+[Create or Open a Distribution Share](create-or-open-a-distribution-share.md)
 
  
 

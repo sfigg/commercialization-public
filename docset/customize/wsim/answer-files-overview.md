@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 An answer file is an XML-based file that contains setting definitions and values to use during Windows® Setup. In an answer file, you specify various setup options. These options include how to partition disks, where to find the Windows image that will be installed, and which product key to apply. You can also specify values that apply to the Windows installation, such as names of user accounts, display settings, and Windows Internet Explorer® favorites. The answer file for Setup is typically called Unattend.xml.
 
-Answer files that are created in Windows System Image Manager (Windows SIM) are associated with a particular Windows image. You can therefore validate the settings in the answer file to the settings in the Windows image. However, because any answer file can be used to install any Windows image, if there are settings in the answer file for components that are not in the Windows image, those settings are ignored. For information about how to create answer files, see [Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files-win8.md).
+Answer files that are created in Windows System Image Manager (Windows SIM) are associated with a particular Windows image. You can therefore validate the settings in the answer file to the settings in the Windows image. However, because any answer file can be used to install any Windows image, if there are settings in the answer file for components that are not in the Windows image, those settings are ignored. For information about how to create answer files, see [Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files.md).
 
 ## Sections of an Answer File
 
@@ -47,9 +47,9 @@ Packages in an answer file are applied to the Windows image during the **offline
 ## Related topics
 
 
-[Create or Open an Answer File](create-or-open-an-answer-file-win8.md)
+[Create or Open an Answer File](create-or-open-an-answer-file.md)
 
-[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics-win8.md)
+[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
  
 

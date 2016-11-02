@@ -30,7 +30,7 @@ You can add only .inf drivers to a Windows image by using this procedure. You mu
 
 1.  Open Windows SIM.
 
-2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file-win8.md).
+2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 
 3.  On the **Insert** menu, click **Driver Path**.
 
@@ -59,21 +59,21 @@ You can add only .inf drivers to a Windows image by using this procedure. You mu
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Create or Open an Answer File](create-or-open-an-answer-file-win8.md)
+[Create or Open an Answer File](create-or-open-an-answer-file.md)
 
-[Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file-win8.md)
+[Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file.md)
 
-[Validate an Answer File](validate-an-answer-file-win8.md)
+[Validate an Answer File](validate-an-answer-file.md)
 
-[Hide Sensitive Data in an Answer File](hide-sensitive-data-in-an-answer-file-win8.md)
+[Hide Sensitive Data in an Answer File](hide-sensitive-data-in-an-answer-file.md)
 
-[Add a Package to an Answer File](add-a-package-to-an-answer-file-win8.md)
+[Add a Package to an Answer File](add-a-package-to-an-answer-file.md)
 
-[Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file-win8.md)
+[Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file.md)
 
-[Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim-win8.md)
+[Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim.md)
 
  
 

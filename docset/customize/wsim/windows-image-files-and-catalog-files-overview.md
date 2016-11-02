@@ -128,9 +128,9 @@ In some scenarios, you might not be able to create a catalog for a Windows image
 ## Related topics
 
 
-[Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file-win8.md)
+[Open a Windows Image or Catalog File](open-a-windows-image-or-catalog-file.md)
 
-[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics-win8.md)
+[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
  
 

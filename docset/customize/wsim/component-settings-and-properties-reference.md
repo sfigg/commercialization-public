@@ -356,7 +356,7 @@ Some component settings require arrays of data. These arrays are mapped to their
 
 Settings are sometimes organized into groups called list items. List items specify one or more values for a list-item type. A list-item type may include one or more component settings. For example, you can create multiple Favorites links by using the **FavoriteItem** setting for Internet Explorer.
 
-You add a list item by right-clicking the setting for a container. For example, you can add a **FavoriteItem** list item by right-clicking the **FavoritesList** container in the Answer File pane. For more information, see [Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file-win8.md).
+You add a list item by right-clicking the setting for a container. For example, you can add a **FavoriteItem** list item by right-clicking the **FavoritesList** container in the Answer File pane. For more information, see [Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file.md).
 
 ### Key Settings for List Items
 
@@ -381,9 +381,9 @@ You can use Windows SIM to modify a list item that is defined in a Windows imag
 ## Related topics
 
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics-win8.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
 
-[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics-win8.md)
+[Windows System Image Manager Overview Topics](windows-system-image-manager-overview-topics.md)
 
  
 

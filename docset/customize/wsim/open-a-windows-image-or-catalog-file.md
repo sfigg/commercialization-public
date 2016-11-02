@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 When you open a Windows® image (.wim) file in Windows System Image Manager (Windows SIM), a catalog (.clg) file is automatically created. If a catalog file already exists, Windows SIM re-creates the catalog file based on the contents of the Windows image that you select. When a catalog file is created, it queries the Windows image for a listing of all the settings in that image.
 
-To create an answer file, you must first open a Windows image file or catalog file in Windows SIM. For more information about Windows image files and catalog files, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview-win8.md).
+To create an answer file, you must first open a Windows image file or catalog file in Windows SIM. For more information about Windows image files and catalog files, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md).
 
 **To open a Windows image file or catalog file**
 
@@ -60,14 +60,14 @@ To create an answer file, you must first open a Windows image file or catalog fi
     -   Make sure the Windows base-image file (Install.wim) is in a folder that has read-write privileges, such as a USB flash drive or on your hard drive.
 
     **Important**  
-    Windows SIM cannot create catalog files for some Windows images of different architecture types. For information about the support of cross-platform catalog creation, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview-win8.md).
+    Windows SIM cannot create catalog files for some Windows images of different architecture types. For information about the support of cross-platform catalog creation, see [Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md).
 
      
 
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
  
 

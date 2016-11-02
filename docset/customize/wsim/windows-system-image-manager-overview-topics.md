@@ -39,27 +39,27 @@ You can use Windows SIM to do the following:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview-win8.md)</p></td>
+<td><p>[Windows System Image Manager Scenarios Overview](windows-system-image-manager-scenarios-overview.md)</p></td>
 <td><p>Describes Windows SIM scenarios and when to use which scenario.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager User Interface Overview](windows-system-image-manager-user-interface-overview-win8.md)</p></td>
+<td><p>[Windows System Image Manager User Interface Overview](windows-system-image-manager-user-interface-overview.md)</p></td>
 <td><p>Describes the user interface of Windows SIM.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview-win8.md)</p></td>
+<td><p>[Windows Image Files and Catalog Files Overview](windows-image-files-and-catalog-files-overview.md)</p></td>
 <td><p>Describes conceptual information about Windows image files and catalog (.clg) files.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Answer Files Overview](answer-files-overview-win8.md)</p></td>
+<td><p>[Answer Files Overview](answer-files-overview.md)</p></td>
 <td><p>Describes conceptual information about the structure of answer files.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files-win8.md)</p></td>
+<td><p>[Best Practices for Authoring Answer Files](best-practices-for-authoring-answer-files.md)</p></td>
 <td><p>Describes recommendations to consider when you are creating and managing answer files.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview-win8.md)</p></td>
+<td><p>[Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md)</p></td>
 <td><p>Describes information about distribution shares, how they work, and when to create a configuration set.</p></td>
 </tr>
 </tbody>
@@ -70,9 +70,9 @@ You can use Windows SIM to do the following:
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics-win8.md)
+[Windows System Image Manager Reference Topics](windows-system-image-manager-reference-topics.md)
 
  
 

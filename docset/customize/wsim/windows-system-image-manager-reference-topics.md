@@ -25,11 +25,11 @@ The following topics provide reference information about Windows® System Image
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Component Settings and Properties Reference](component-settings-and-properties-referencewin8.md)</p></td>
+<td><p>[Component Settings and Properties Reference](component-settings-and-properties-reference.md)</p></td>
 <td><p>Describes the structure of answer files, along with the attributes and elements that components and settings use.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Windows System Image Manager Architecture](windows-system-image-manager-architecture-win8.md)</p></td>
+<td><p>[Windows System Image Manager Architecture](windows-system-image-manager-architecture.md)</p></td>
 <td><p>Describes how Windows SIM works.</p></td>
 </tr>
 <tr class="odd">
@@ -46,7 +46,7 @@ The following topics provide reference information about Windows® System Image
 
 [Windows Deployment Options](http://go.microsoft.com/fwlink/?LinkId=214574)
 
-[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference--win8.md)
+[Windows System Image Manager Technical Reference](windows-system-image-manager-technical-reference-.md)
 
  
 

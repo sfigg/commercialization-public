@@ -18,7 +18,7 @@ A distribution share is an optional storage folder for third-party drivers, appl
 You can create a distribution-share folder by using Windows® System Image Manager (Windows SIM) or by using a manual technique. The procedures in this topic describe how to create, open, and explore a distribution-share folder.
 
 **Note**  
-You must use Windows SIM to add packages. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md).
+You must use Windows SIM to add packages. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md).
 
  
 
@@ -88,11 +88,11 @@ You must use Windows SIM to add packages. For more information, see [Add Packag
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share-win8.md)
+[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share.md)
 
-[Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md)
+[Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)
 
  
 

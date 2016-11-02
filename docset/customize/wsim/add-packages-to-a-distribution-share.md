@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 Packages are groups of files that Microsoft provides. These groups of files include service packs, security updates, language packs, and modifications to Windows® features. You can add a package to a Windows installation by using an answer file, a configuration set, or a distribution share.
 
-You must use Windows System Image Manager (Windows SIM) to import packages. After a package is imported and available in a distribution share, you can add the package to an answer file. For more information, see [Add a Package to an Answer File](add-a-package-to-an-answer-file-win8.md).
+You must use Windows System Image Manager (Windows SIM) to import packages. After a package is imported and available in a distribution share, you can add the package to an answer file. For more information, see [Add a Package to an Answer File](add-a-package-to-an-answer-file.md).
 
 **Note**  
 For specific information about how to add language packs, see Add Multilingual Support to a Windows Distribution.
@@ -24,7 +24,7 @@ For specific information about how to add language packs, see Add Multilingual S
 
 **To import a package to a distribution share**
 
-1.  Select and open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md).
+1.  Select and open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
 
 2.  On the **Tools** menu, click **Import Package(s)**.
 
@@ -37,9 +37,9 @@ For specific information about how to add language packs, see Add Multilingual S
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share-win8.md)
+[Manage Files and Folders in a Distribution Share](manage-files-and-folders-in-a-distribution-share.md)
 
  
 

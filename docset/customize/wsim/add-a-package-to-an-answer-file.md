@@ -21,9 +21,9 @@ You can add a package to an answer file by using one of three options: from the 
 
 1.  Open Windows SIM.
 
-2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file-win8.md).
+2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 
-3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md).
+3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
 
 4.  On the **Insert** menu, click **Package(s)**.
 
@@ -37,9 +37,9 @@ You can add a package to an answer file by using one of three options: from the 
 
 1.  Open Windows SIM.
 
-2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file-win8.md).
+2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 
-3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md).
+3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
 
 4.  In the **Windows Image** pane, select the **Packages** node. Expand the node, right-click the package that you want to add to the answer file, and then click **Add to Answer File**.
 
@@ -49,9 +49,9 @@ You can add a package to an answer file by using one of three options: from the 
 
 1.  Open Windows SIM.
 
-2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file-win8.md).
+2.  Create or open an answer file. For more information, see [Create or Open an Answer File](create-or-open-an-answer-file.md).
 
-3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md).
+3.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
 
 4.  Right-click the package that you want to add to the distribution share packages directory, and then click **Add to Answer File**.
 
@@ -62,21 +62,21 @@ You can add a package to an answer file by using one of three options: from the 
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Create or Open an Answer File](create-or-open-an-answer-file-win8.md)
+[Create or Open an Answer File](create-or-open-an-answer-file.md)
 
-[Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file-win8.md)
+[Configure Components and Settings in an Answer File](configure-components-and-settings-in-an-answer-file.md)
 
-[Validate an Answer File](validate-an-answer-file-win8.md)
+[Validate an Answer File](validate-an-answer-file.md)
 
-[Hide Sensitive Data in an Answer File](hide-sensitive-data-in-an-answer-file-win8.md)
+[Hide Sensitive Data in an Answer File](hide-sensitive-data-in-an-answer-file.md)
 
-[Add a Device Driver Path to an Answer File](add-a-device-driver-path-to-an-answer-file-win8.md)
+[Add a Device Driver Path to an Answer File](add-a-device-driver-path-to-an-answer-file.md)
 
-[Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file-win8.md)
+[Add a Custom Command to an Answer File](add-a-custom-command-to-an-answer-file.md)
 
-[Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim-win8.md)
+[Find a Component, Setting, or Package in Windows SIM](find-a-component-setting-or-package-in-windows-sim.md)
 
  
 

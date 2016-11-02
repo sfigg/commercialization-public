@@ -13,11 +13,11 @@ ms.sitesec: msdn
 # Manage Files and Folders in a Distribution Share
 
 
-After a distribution-share folder is created, you can add files to the **$OEM$ Folders** or **Out-of-Box Drivers** folders. You cannot add packages directly to the Packages folder. You must use Windows® System Image Manager (Windows SIM) to add packages to a distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md).
+After a distribution-share folder is created, you can add files to the **$OEM$ Folders** or **Out-of-Box Drivers** folders. You cannot add packages directly to the Packages folder. You must use Windows® System Image Manager (Windows SIM) to add packages to a distribution share. For more information, see [Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md).
 
 You can make out-of-box device drivers (also called third-party drivers) available in Windows SIM by copying device drivers to the **Out-of-Box Drivers** folder in a distribution share. You can use subfolders to organize out-of-box drivers. When you add an **Out-of-Box Drivers** folder to an answer file, all drivers in the folder and subfolders are also added. After drivers are copied to the appropriate folder, they are available through Windows SIM and can be added to an answer file.
 
-When you create a configuration set, you can use the **$OEM$ Folders** folder to copy scripts, binaries, and other files to Windows during installation. An answer file can reference files and folders stored in subfolders of **\\$OEM$ Folders** can be referenced in an answer file. For more information, see [Create a Configuration Set](create-a-configuration-set-win8.md).
+When you create a configuration set, you can use the **$OEM$ Folders** folder to copy scripts, binaries, and other files to Windows during installation. An answer file can reference files and folders stored in subfolders of **\\$OEM$ Folders** can be referenced in an answer file. For more information, see [Create a Configuration Set](create-a-configuration-set.md).
 
 **Important**  
 Do not overwrite existing files carried and serviced by the operating system. Overwriting system files can cause the operating system to behave unpredictably and cause serious issues.
@@ -26,7 +26,7 @@ Do not overwrite existing files carried and serviced by the operating system. Ov
 
 **To manage files and folders in a distribution share**
 
-1.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md).
+1.  Open a distribution share. For more information, see [Create or Open a Distribution Share](create-or-open-a-distribution-share.md).
 
 2.  Right-click the distribution share, and then click **Explore Distribution Share**.
 
@@ -46,7 +46,7 @@ Do not overwrite existing files carried and serviced by the operating system. Ov
 
     -   Add applications, scripts, or other files to the **$OEM$ Folders** subfolders.
 
-        The **$OEM$ Folders** subfolders are organized in a specific structure. Copy files to the **$OEM$ Folders** subfolders as described in [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview-win8.md). For example, if you add files to **$OEM$ Folders\\$1\\Program Files\\Application1**, Windows Setup will copy them to **C:\\Program Files\\Application1** on the Windows installation.
+        The **$OEM$ Folders** subfolders are organized in a specific structure. Copy files to the **$OEM$ Folders** subfolders as described in [Distribution Shares and Configuration Sets Overview](distribution-shares-and-configuration-sets-overview.md). For example, if you add files to **$OEM$ Folders\\$1\\Program Files\\Application1**, Windows Setup will copy them to **C:\\Program Files\\Application1** on the Windows installation.
 
 5.  Close the distribution-share folder.
 
@@ -55,11 +55,11 @@ Do not overwrite existing files carried and serviced by the operating system. Ov
 ## Related topics
 
 
-[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics-win8.md)
+[Windows System Image Manager How-to Topics](windows-system-image-manager-how-to-topics.md)
 
-[Create or Open a Distribution Share](create-or-open-a-distribution-share-win8.md)
+[Create or Open a Distribution Share](create-or-open-a-distribution-share.md)
 
-[Add Packages to a Distribution Share](add-packages-to-a-distribution-share-win8.md)
+[Add Packages to a Distribution Share](add-packages-to-a-distribution-share.md)
 
  
 

@@ -62,7 +62,7 @@ We recommend that you use the 32-bit version of Windows SIM when you create you
 
 You can use Windows SIM to create an answer file to be used during Windows Setup. You can view all of the components that are available in a Windows image, add component settings to your answer file, and choose when to apply a component setting by adding it to a particular configuration pass.
 
-After you add component settings to an unattended answer file, you can view and customize the available settings for each component. For more information, see [Answer Files Overview](answer-files-overview-win8.md).
+After you add component settings to an unattended answer file, you can view and customize the available settings for each component. For more information, see [Answer Files Overview](answer-files-overview.md).
 
 ### Edit an Existing Answer File
 
