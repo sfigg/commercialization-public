@@ -40,12 +40,12 @@ Node for policies for a specific provider that can be retrieved, modified, or de
 
 Supported operation is Get.
 
-<a href="" id="my--areaname-"></a>**My/*&lt;AreaName&gt;***  
+<a href="" id="my--areaname-"></a>**My/****_&lt;AreaName&gt;_**  
 The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="my--areaname---policyname-"></a>**My/*&lt;AreaName&gt;*/*&lt;PolicyName&gt;***  
+<a href="" id="my--areaname---policyname-"></a>**My/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
 Specifies the name/value pair used in the policy. The following list shows some tips to help you when configuring policies:
 
 -   Separate multistring values by the Unicode &\#xF000; in the XML file.
@@ -63,10 +63,10 @@ For possible area and policy names, see [Supported company policies](#bkmk-suppo
 <a href="" id="device"></a>**Device**  
 Groups the evaluated policies from all providers that can be configured. Supported operations is Get.
 
-<a href="" id="device--areaname-"></a>**Device/*&lt;AreaName&gt;***  
+<a href="" id="device--areaname-"></a>**Device/****_&lt;AreaName&gt;_**  
 The area group that can be configured by a single technology independent of the providers. Supported operation is Get.
 
-<a href="" id="device--areaname---policyname-"></a>**Device/*&lt;AreaName&gt;*/*&lt;PolicyName&gt;***  
+<a href="" id="device--areaname---policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
 Specifies the name/value pair used in the policy. Supported operation is Get.
 
 ## <a href="" id="bkmk-supportedpolicies"></a>List of *&lt;AreaName&gt;*/*&lt;PolicyName&gt;*

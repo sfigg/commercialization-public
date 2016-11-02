@@ -122,7 +122,7 @@ Required. Used for managing apps from the Windows Store.
 
 Supported operations are Get and Delete.
 
-<a href="" id="----packagefamilyname"></a>**.../*PackageFamilyName***  
+<a href="" id="----packagefamilyname"></a>**.../****_PackageFamilyName_**  
 Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
 
 Supported operations are Get and Delete.
@@ -150,7 +150,7 @@ Here's an example for uninstalling an app:
 </SyncML>
 ```
 
-<a href="" id="----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/*PackageFullName***  
+<a href="" id="----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
 Optional. Full name of the package installed.
 
 Supported operations are Get and Delete.
@@ -262,7 +262,7 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="----packagefamilyname-appsettingpolicy---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy** (only for ./User/Vendor/MSFT)  
 Added in Windows 10, version 1511. Interior node for all managed app setting values. This node is only supported in the user context.
 
-<a href="" id="----packagefamilyname-appsettingpolicy-settingvalue---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/*SettingValue*** (only for ./User/Vendor/MSFT)  
+<a href="" id="----packagefamilyname-appsettingpolicy-settingvalue---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
 Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value.
 
 This setting only works for apps that support the feature and it is only supported in the user context.
@@ -304,7 +304,7 @@ The following example gets all managed app settings for a specific app.
 <a href="" id="appinstallation"></a>**AppInstallation**  
 Required node. Used to perform app installation.
 
-<a href="" id="appinstallation-packagefamilyname"></a>**AppInstallation/*PackageFamilyName***  
+<a href="" id="appinstallation-packagefamilyname"></a>**AppInstallation/****_PackageFamilyName_**  
 Optional node. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
 
 Supported operations are Get and Add.
@@ -370,7 +370,7 @@ Required node. Used to manage licenses for app scenarios.
 <a href="" id="applicenses-storelicenses"></a>**AppLicenses/StoreLicenses**  
 Required node. Used to manage licenses for store apps.
 
-<a href="" id="applicenses-storelicenses-licenseid"></a>**AppLicenses/StoreLicenses/*LicenseID***  
+<a href="" id="applicenses-storelicenses-licenseid"></a>**AppLicenses/StoreLicenses/****_LicenseID_**  
 Optional node. License ID for a store installed app. The license ID is generally the PFN of the app.
 
 Supported operations are Add, Get, and Delete.

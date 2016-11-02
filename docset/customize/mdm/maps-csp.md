@@ -26,7 +26,7 @@ Root node.
 <a href="" id="packages"></a>**Packages**  
 Represents the map packages installed on the device.
 
-<a href="" id="packages-package"></a>**Packages/*Package***  
+<a href="" id="packages-package"></a>**Packages/****_Package_**  
 A GUID that represents a map package. When you add a *Package* node, Windows adds it to the queue for download to the device. See the table below for the list of various maps and corresponding GUIDS.
 
 <a href="" id="packages-package-status"></a>**Packages/*Package*/Status**  

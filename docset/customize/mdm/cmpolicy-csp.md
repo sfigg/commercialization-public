@@ -58,7 +58,7 @@ Specifies whether the list of connections is in preference order.
 
 A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
-<a href="" id="connxxx"></a>**Conn*XXX***  
+<a href="" id="connxxx"></a>**Conn****_XXX_**  
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  

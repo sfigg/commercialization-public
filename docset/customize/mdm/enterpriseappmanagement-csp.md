@@ -74,7 +74,7 @@ Required. The root node for individual enterprise application inventory settings
 
 Supported operation is Get.
 
-<a href="" id="-inventory-productid"></a>**/Inventory/*ProductID***  
+<a href="" id="-inventory-productid"></a>**/Inventory/****_ProductID_**  
 Optional. A node that contains s single enterprise application product ID in GUID format. Scope is dynamic.
 
 Supported operation is Get.
@@ -104,7 +104,7 @@ Required. This node groups application download-related parameters. The enterpri
 
 Supported operation is Get.
 
-<a href="" id="-download-productid"></a>**/Download/*ProductID***  
+<a href="" id="-download-productid"></a>**/Download/****_ProductID_**  
 Optional. This node contains the GUID for the installed enterprise application. Each installed application has a unique ID. Scope is dynamic.
 
 Supported operations are Get, Add, and Replace.

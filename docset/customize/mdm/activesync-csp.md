@@ -200,7 +200,7 @@ Valid values are one of the following:
 
 -   5 – Email up to a month old is synced to the device.
 
-<a href="" id="options-contenttypes-content-type-guid"></a>**Options/ContentTypes/*Content Type GUID***  
+<a href="" id="options-contenttypes-content-type-guid"></a>**Options/ContentTypes/****_Content Type GUID_**  
 Defines the type of content to be individually enabled/disabled for sync.
 
 The *GUID* values allowed are one of the following:

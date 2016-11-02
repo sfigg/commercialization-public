@@ -81,7 +81,7 @@ Interior node for port information.
 
 Optional.
 
-<a href="" id="port-objectname"></a>**Port/*ObjectName***  
+<a href="" id="port-objectname"></a>**Port/****_ObjectName_**  
 Required. Only one port number can be configured.
 
 When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1".

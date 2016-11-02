@@ -21,7 +21,7 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 <a href="" id="enterpriseapn"></a>**EnterpriseAPN**  
 The root node for the EnterpriseAPN configuration service provider.
 
-<a href="" id="enterpriseapn-connectionname"></a>**EnterpriseAPN/*ConnectionName***  
+<a href="" id="enterpriseapn-connectionname"></a>**EnterpriseAPN/****_ConnectionName_**  
 Name of the connection as seen by Windows Connection Manager.
 
 Supported operations are Add, Get, Delete, and Replace.

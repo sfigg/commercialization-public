@@ -24,7 +24,7 @@ The root node for the EnterpriseDesktopAppManagement configuration service provi
 <a href="" id="msi"></a>**MSI**  
 Node for all settings.
 
-<a href="" id="msi-productid"></a>**MSI/*ProductID***  
+<a href="" id="msi-productid"></a>**MSI/****_ProductID_**  
 The MSI product code for the application.
 
 <a href="" id="msi-productid-version"></a>**MSI/*ProductID*/Version**  
