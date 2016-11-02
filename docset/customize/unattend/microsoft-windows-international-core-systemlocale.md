@@ -79,7 +79,7 @@ The following example shows how to set the system locale to English (United Stat
 
 [Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
-[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe-.md)
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md)
 
  
 
