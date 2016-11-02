@@ -229,8 +229,6 @@ Specifies the name of the H-SLP root certificate as a string, in the format *nam
 <a href="" id="rootcertificate3-data"></a>**RootCertificate3/Data**  
 The base 64 encoded blob of the H-SLP root certificate.
 
-[]()****  
-
 <a href="" id="v2upl1"></a>**V2UPL1**  
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.
 
