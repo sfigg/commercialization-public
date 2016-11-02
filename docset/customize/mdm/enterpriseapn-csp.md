@@ -12,7 +12,7 @@ ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
 
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
-> **Note** The EnterpriseAPN configuration service provider (CSP) is not supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), versions 1511 and 1607.
+> **Note** The EnterpriseAPN configuration service provider (CSP) is not supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
 The following image shows the EnterpriseAPN configuration service provider in tree format.
 
