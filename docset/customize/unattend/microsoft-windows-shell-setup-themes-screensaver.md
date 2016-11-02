@@ -18,7 +18,7 @@ In Windows 10 version 1607, ScreenSaver is deprecated.
 `ScreenSaver` specifies the path to a Windows screen saver file in a theme.
 
 **Note**  
-We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. For more information, see [Understanding Battery Life and Power Plans](http://go.microsoft.com/fwlink/p/?linkid=208183) in the Windows Assessment and Deployment Kit (Windows ADK).
+We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. 
 
  
 

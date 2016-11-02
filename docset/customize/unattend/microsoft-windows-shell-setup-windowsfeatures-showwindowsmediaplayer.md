@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ShowWindowsMediaPlayer` specifies whether to show entry points for Windows Media Player.
 
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## Values
 
@@ -53,7 +53,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [WindowsFeatures](microsoft-windows-shell-setupwindowsfeatures.md) | **ShowWindowsMediaPlayer**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [WindowsFeatures](microsoft-windows-shell-setup-windowsfeatures.md) | **ShowWindowsMediaPlayer**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output shows how to specify that the entry points for these Wi
 ## Related topics
 
 
-[WindowsFeatures](microsoft-windows-shell-setupwindowsfeatures.md)
+[WindowsFeatures](microsoft-windows-shell-setup-windowsfeatures.md)
 
  
 

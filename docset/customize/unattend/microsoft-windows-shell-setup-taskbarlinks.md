@@ -40,7 +40,7 @@ Each of the settings under `TaskbarLinks` specifies:
 </tr>
 <tr class="even">
 <td><p>Shortcut to website link</p></td>
-<td><p>The complete path and website name of the shortcut file with a .website file name extension. The path to the shortcut file must refer to a location on the destination computer. For information about creating .website files, see [Deploying Pinned Websites](http://go.microsoft.com/fwlink/?LinkId=397519).</p></td>
+<td><p>The complete path and website name of the shortcut file with a .website file name extension. The path to the shortcut file must refer to a location on the destination computer. </p></td>
 </tr>
 <tr class="odd">
 <td><p>Shortcut to a Windows Store app</p></td>
@@ -57,12 +57,7 @@ We recommend that you add shortcut files to the All Users **Start** menu, for ex
 
 We do not recommend adding the shortcut by using the environment variable: `%USERPROFILE%`. Shortcuts added by using `%USERPROFILE%` are applied only to the profile of the next user to log on to the computer. Also, if the setting is applied during the **auditUser** configuration pass, the shortcut is applied only to the temporary administrator account, which is removed after exiting audit mode.
 
-**Note**  
-Certain programs cannot be added to the taskbar. For a list of these programs, see [the Microsoft Help and Support website](http://go.microsoft.com/fwlink/?LinkId=70602).
-
- 
-
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## Child Elements
 

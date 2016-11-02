@@ -25,23 +25,23 @@ The Microsoft-Windows-shwebsvc component contains settings that enable you to se
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Description](microsoft-windows-shwebsvcdescription.md)</p></td>
+<td><p>[Description](microsoft-windows-shwebsvc-description.md)</p></td>
 <td><p>Specifies the description of the online printing company to display in the Online Print Wizard.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DisplayName](microsoft-windows-shwebsvcdisplayname.md)</p></td>
+<td><p>[DisplayName](microsoft-windows-shwebsvc-displayname.md)</p></td>
 <td><p>Specifies the name of the online printing company to display in the Online Print Wizard.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[href](microsoft-windows-shwebsvchref.md)</p></td>
+<td><p>[href](microsoft-windows-shwebsvc-href.md)</p></td>
 <td><p>Specifies the link to the online printing company to display in the Online Print Wizard.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Icon](microsoft-windows-shwebsvcicon.md)</p></td>
+<td><p>[Icon](microsoft-windows-shwebsvc-icon.md)</p></td>
 <td><p>Specifies the path to and the name of the icon that represents the online printing company.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ID](microsoft-windows-shwebsvcid.md)</p></td>
+<td><p>[ID](microsoft-windows-shwebsvc-id.md)</p></td>
 <td><p>Specifies the identity of the default online printing company in the Online Print Wizard.</p></td>
 </tr>
 </tbody>

@@ -17,8 +17,6 @@ The `Themes` setting includes settings to customize elements of the Windows visu
 
 To customize the Windows default theme, you must include the settings: [DesktopBackground](microsoft-windows-shell-setup-themes-desktopbackground.md) and [ThemeName](microsoft-windows-shell-setup-themes-themename.md). You may also optionally include the settings: [BrandIcon](microsoft-windows-shell-setup-themes-brandicon.md), [ScreenSaver](microsoft-windows-shell-setup-themes-screensaver.md), and [WindowColor](microsoft-windows-shell-setup-themes-windowcolor.md).
 
-To use the Windows Classic theme as the default theme instead, set [DefaultThemesOff](microsoft-windows-shell-setup-themes-defaultthemesoff.md) to **true**.
-
 To create additional custom theme files, use the **Personalization** item within Control Panel, or see the MSDN topic: [Creating and Installing Theme Files](http://go.microsoft.com/fwlink/?LinkId=141343).
 
 ## Child Elements
@@ -60,7 +58,7 @@ To create additional custom theme files, use the **Personalization** item within
 <td><p>Specifies the path to a screen-saver file.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. For more information on power plans, see the [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.</p>
+<p>We do not recommend setting this value. Instead, we recommend using automatic power plans to dim the screen. This can help reduce system power consumption. </p>
 </div>
 <div>
  

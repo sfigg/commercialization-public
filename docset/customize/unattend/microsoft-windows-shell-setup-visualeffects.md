@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `VisualEffects` specifies additional display settings.
 
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## Child Elements
 
@@ -27,11 +27,11 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FontSmoothing](microsoft-windows-shell-setupvisualeffectsfontsmoothing.md)</p></td>
+<td><p>[FontSmoothing](microsoft-windows-shell-setup-visualeffectsfontsmoothing.md)</p></td>
 <td><p>Specifies whether font smoothing is enabled, and which type of font smoothing is enabled.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SystemDefaultBackgroundColor](microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
 <td><p>Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.</p></td>
 </tr>
 </tbody>

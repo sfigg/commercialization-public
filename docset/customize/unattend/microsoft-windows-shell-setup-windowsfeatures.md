@@ -32,19 +32,19 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ShowInternetExplorer](microsoft-windows-shell-setupwindowsfeaturesshowinternetexplorer.md)</p></td>
+<td><p>[ShowInternetExplorer](microsoft-windows-shell-setup-windowsfeaturesshowinternetexplorer.md)</p></td>
 <td><p>Specifies whether to show entry points for Internet Explorer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowMediaCenter](microsoft-windows-shell-setupwindowsfeaturesshowmediacenter.md)</p></td>
+<td><p>[ShowMediaCenter](microsoft-windows-shell-setup-windowsfeaturesshowmediacenter.md)</p></td>
 <td><p>Specifies whether to show entry points for Media Center.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ShowWindowsMediaPlayer](microsoft-windows-shell-setupwindowsfeaturesshowwindowsmediaplayer.md)</p></td>
+<td><p>[ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeaturesshowwindowsmediaplayer.md)</p></td>
 <td><p>Specifies whether to show entry points for Windows Media Player.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowWindowsMail](microsoft-windows-shell-setupwindowsfeaturesshowwindowsmail.md)</p></td>
+<td><p>[ShowWindowsMail](microsoft-windows-shell-setup-windowsfeaturesshowwindowsmail.md)</p></td>
 <td><p>Deprecated. Do not use.</p></td>
 </tr>
 </tbody>

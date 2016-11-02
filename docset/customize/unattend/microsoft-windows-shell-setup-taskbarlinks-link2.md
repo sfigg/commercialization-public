@@ -24,9 +24,7 @@ We recommend that you add shortcut files to the All Users **Start** menu, for ex
 
 We do not recommend adding the shortcut by using the environment variable: `%USERPROFILE%`. Shortcuts added by using `%USERPROFILE%` are applied only to the profile of the next user to log on to the computer. Also, if the setting is applied during the **auditUser** configuration pass, the shortcut is applied only to the temporary administrator account, which is removed after exiting audit mode.
 
-Certain programs cannot be added to the taskbar. For a list of these programs, see [this MSDN website](http://go.microsoft.com/fwlink/?LinkId=70602).
-
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## Values
 

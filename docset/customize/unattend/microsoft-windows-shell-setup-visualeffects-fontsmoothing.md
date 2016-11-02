@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `FontSmoothing` specifies whether font smoothing is enabled, and which type.
 
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## Values
 
@@ -57,7 +57,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [VisualEffects](microsoft-windows-shell-setupvisualeffects.md) | **FontSmoothing**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [VisualEffects](microsoft-windows-shell-setup-visualeffects.md) | **FontSmoothing**
 
 ## Applies To
 
@@ -78,7 +78,7 @@ The following XML output shows **ClearType** enabled for font smoothing.
 ## Related topics
 
 
-[VisualEffects](microsoft-windows-shell-setupvisualeffects.md)
+[VisualEffects](microsoft-windows-shell-setup-visualeffects.md)
 
  
 

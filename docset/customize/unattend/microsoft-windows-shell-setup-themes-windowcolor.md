@@ -36,11 +36,6 @@ ms.sitesec: msdn
 
     ![predefined colors are mapped to specific numbers](unattend-windowcolor-presetcolorsnumbered.jpg)
 
--   In Windows 7 and Windows Server 2008 R2, `WindowColor` specifies a predefined color of window glass and color effects.
-
-    Predefined colors include: `Sky`, `Twilight`, `Sea`, `Leaf`, `Lime`, `Sun`, `Pumpkin`, `Ruby`, `Fuchsia`, `Blush`, `Violet`, `Lavender`, `Taupe`, `Chocolate`, `Slate`, and `Frost`.
-
-    The default value is `Sky`.
 
 ## Valid Configuration Passes
 

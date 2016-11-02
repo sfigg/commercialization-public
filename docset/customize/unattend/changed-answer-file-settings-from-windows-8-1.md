@@ -242,7 +242,7 @@ The following Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2 sett
 <td><p>This is not applicable for Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffectssystemdefaultbackgroundcolor.md)</p></td>
 <td><p>This setting is deprecated in Windows 10 and should not be used. The default background color during OOBE is always dark. To align with this change, partners can no longer change the default screen background color during OOBE.</p></td>
 </tr>
 <tr class="odd">

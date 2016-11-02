@@ -28,7 +28,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [VisualEffects](microsoft-windows-shell-setupvisualeffects.md) | **SystemDefaultBackgroundColor**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [VisualEffects](microsoft-windows-shell-setup-visualeffects.md) | **SystemDefaultBackgroundColor**
 
 ## Applies To
 
@@ -38,7 +38,7 @@ For a list of the Windows editions and architectures that this component support
 ## Related topics
 
 
-[VisualEffects](microsoft-windows-shell-setupvisualeffects.md)
+[VisualEffects](microsoft-windows-shell-setup-visualeffects.md)
 
  
 

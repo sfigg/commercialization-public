@@ -161,7 +161,7 @@ These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows
 <td><p>Changed the maximum value of unique IDs for the regional override from 19 to 199.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setupvisualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffectssystemdefaultbackgroundcolor.md)</p></td>
 <td><p>Specifies the system default Windows background color scheme appearing on first boot, and on LogonUI if no user is selected.</p></td>
 <td><p>Added new color scheme for Windows 8.1.</p></td>
 </tr>
