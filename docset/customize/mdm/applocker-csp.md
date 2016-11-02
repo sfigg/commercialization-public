@@ -756,7 +756,7 @@ The following list shows the apps that may be included in the inbox.
 The following example for Windows 10 Mobile denies all apps and allows the following apps:
 
 -   [settings app that rely on splash apps](#settingssplashapps)
--   most of the [inbox apps](#inbox-apps-and-components), but not all.
+-   most of the [inbox apps](#inboxappsandcomponents), but not all.
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
