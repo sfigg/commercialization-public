@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ItemName
 
 
-`ItemName` is the display name of [CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md).
+`ItemName` is the display name of [CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md).
 
 To use a different `ItemName` for each language, create a resource file, and refer to it using the format: “filename.dll,-referenceid”. For information on creating localized text versions for this setting, see the topic [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
@@ -28,7 +28,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>Specifies the display name to use for [CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md).</p>
+<td><p>Specifies the display name to use for [CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md).</p>
 <p><code>ItemName</code> is represented as @<em>dllname,-resourceid</em>, where <em>dllname</em> is the full path to the resource DLL, including environment variables. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-100</code></pre>
 <p><em>Name</em> is a string.</p></td>
@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md) | **ItemName**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md) | **ItemName**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ The following XML output shows `CustomPowerApplication5` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md)
+[CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md)
 
  
 

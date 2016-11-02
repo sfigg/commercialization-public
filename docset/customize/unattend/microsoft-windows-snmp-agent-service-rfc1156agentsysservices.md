@@ -86,7 +86,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [RFC1156Agent](microsoft-windows-snmp-agent-servicerfc1156agent.md) | **sysServices**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md) | **sysServices**
 
 ## Applies To
 
@@ -126,7 +126,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[RFC1156Agent](microsoft-windows-snmp-agent-servicerfc1156agent.md)
+[RFC1156Agent](microsoft-windows-snmp-agent-service-rfc1156agent.md)
 
  
 

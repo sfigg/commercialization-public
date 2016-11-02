@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-SQMAPI component implements the Windows Customer Experience Improvement Program (CEIP). If the component is enabled, it collects and sends data to Microsoft about the use of Windows. Participation in this program is voluntary, and the results are recorded to implement improvements in future releases.
 
-This setting has no effect on Server Core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+This setting has no effect on Server Core installations.
 
 ## In This Section
 
@@ -27,7 +27,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CEIPEnabled](microsoft-windows-sqmapiceipenabled.md)</p></td>
+<td><p>[CEIPEnabled](microsoft-windows-sqmapi-ceipenabled.md)</p></td>
 <td><p>Specifies whether Windows CEIP is enabled.</p></td>
 </tr>
 </tbody>

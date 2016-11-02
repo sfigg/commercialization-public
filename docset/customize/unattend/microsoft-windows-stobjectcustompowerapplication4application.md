@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Application
 
 
-`Application` specifies the full path to the application specified by [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md).
+`Application` specifies the full path to the application specified by [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the full path and the executable file name for [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md). For example,</p>
+<td><p>Specifies the full path and the executable file name for [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md). For example,</p>
 <pre class="syntax" space="preserve"><code>%ProgramFiles%\CustomPower\Application.exe</code></pre>
 <p><em>Path</em> is a string.</p></td>
 </tr>
@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md) | **Application**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md) | **Application**
 
 ## Applies To
 
@@ -71,7 +71,7 @@ The following XML output shows `CustomPowerApplication4` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md)
+[CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md)
 
  
 

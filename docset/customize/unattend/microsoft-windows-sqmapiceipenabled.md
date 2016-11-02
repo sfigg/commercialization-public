@@ -69,7 +69,7 @@ The following XML output disables Windows CEIP.
 ## Related topics
 
 
-[Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi-win7-microsoft-windows-sqmapi.md)
+[Microsoft-Windows-SQMAPI](microsoft-windows-sqmapi.md)
 
  
 

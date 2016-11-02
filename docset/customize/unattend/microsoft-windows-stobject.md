@@ -17,7 +17,6 @@ The Microsoft-Windows-stobject component enables you to customize the power-mana
 
 You can display customized power plans and also add links to additional power-management software by using the settings in this component.
 
-For more information about power-management, see [Battery Life Technical Reference](http://go.microsoft.com/fwlink/?LinkId=206664) in the Windows Assessment and Deployment Kit (Windows ADK) Technical Reference.
 
 ## In This Section
 
@@ -29,47 +28,35 @@ For more information about power-management, see [Battery Life Technical Referen
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FlyoutAutoPowerScheme](microsoft-windows-stobjectflyoutautopowerscheme.md)</p></td>
+<td><p>[FlyoutAutoPowerScheme](microsoft-windows-stobject-flyoutautopowerscheme.md)</p></td>
 <td><p>Specifies the globally unique identifier (GUID) of the Battery Meter Fly-out Balanced power plan.</p></td>
 </tr>
-<tr class="even">
-<td><p>[FlyoutHighPerformancePowerScheme](flyouthighperformancepowerscheme--win7-microsoft-windows-stobjectflyouthighperformancepowerscheme.md)</p></td>
-<td><p>Specifies the GUID of the Battery Meter Fly-out High Performance power plan.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>This setting is deprecated in Windows 8 and Windows 7.</p>
-<p>This setting is available in Windows Vista, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
 <tr class="odd">
-<td><p>[FlyoutPowerSaverPowerScheme](microsoft-windows-stobjectflyoutpowersaverpowerscheme.md)</p></td>
+<td><p>[FlyoutPowerSaverPowerScheme](microsoft-windows-stobject-flyoutpowersaverpowerscheme.md)</p></td>
 <td><p>Specifies the GUID of the Battery Meter Fly-out Power Saver power plan.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md)</p></td>
+<td><p>[CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)</p></td>
 <td><p>Specifies the first Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md)</p></td>
+<td><p>[CustomPowerApplication2](microsoft-windows-stobject-custompowerapplication2.md)</p></td>
 <td><p>Specifies the second Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md)</p></td>
+<td><p>[CustomPowerApplication3](microsoft-windows-stobject-custompowerapplication3.md)</p></td>
 <td><p>Specifies the third Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md)</p></td>
+<td><p>[CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md)</p></td>
 <td><p>Specifies the fourth Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CustomPowerApplication5](microsoft-windows-stobjectcustompowerapplication5.md)</p></td>
+<td><p>[CustomPowerApplication5](microsoft-windows-stobject-custompowerapplication5.md)</p></td>
 <td><p>Specifies the fifth Battery Meter custom context-menu item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md)</p></td>
+<td><p>[CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)</p></td>
 <td><p>Specifies the sixth Battery Meter custom context-menu item.</p></td>
 </tr>
 </tbody>
@@ -85,7 +72,7 @@ To determine whether a component applies to the image you’re building, load yo
 ## Related topics
 
 
-[Microsoft-Windows-powercpl](microsoft-windows-powercpl-win7-microsoft-windows-powercpl.md)
+[Microsoft-Windows-powercpl](microsoft-windows-powercpl.md)
 
 [Components](components-b-unattend.md)
 

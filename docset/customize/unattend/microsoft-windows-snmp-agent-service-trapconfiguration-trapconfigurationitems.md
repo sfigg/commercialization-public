@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md) | **TrapConfigurationItems**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md) | **TrapConfigurationItems**
 
 ## Applies To
 
@@ -89,7 +89,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[TrapConfiguration](microsoft-windows-snmp-agent-servicetrapconfiguration.md)
+[TrapConfiguration](microsoft-windows-snmp-agent-service-trapconfiguration.md)
 
  
 

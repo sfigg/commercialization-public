@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # IconID
 
 
-`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md).
+`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md).
 
 This setting is optional.
 
@@ -30,7 +30,7 @@ To use a different IconID for each language, create a resource file, and refer t
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md).</p>
+<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md).</p>
 <p><code>IconID</code> is represented as @<em>dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</code></pre>
 <p><em>ID</em> is a string.</p></td>
@@ -52,7 +52,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md) | **IconID**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md) | **IconID**
 
 ## Applies To
 
@@ -76,7 +76,7 @@ The following XML output shows `CustomPowerApplication4` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication4](microsoft-windows-stobjectcustompowerapplication4.md)
+[CustomPowerApplication4](microsoft-windows-stobject-custompowerapplication4.md)
 
  
 

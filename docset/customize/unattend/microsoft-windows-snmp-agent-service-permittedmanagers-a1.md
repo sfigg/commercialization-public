@@ -57,7 +57,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [PermittedManagers](microsoft-windows-snmp-agent-servicepermittedmanagers.md) | **A1**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [PermittedManagers](microsoft-windows-snmp-agent-service-permittedmanagers.md) | **A1**
 
 ## Applies To
 
@@ -97,7 +97,7 @@ The following XML output shows how to set SNMP.
 ## Related topics
 
 
-[PermittedManagers](microsoft-windows-snmp-agent-servicepermittedmanagers.md)
+[PermittedManagers](microsoft-windows-snmp-agent-service-permittedmanagers.md)
 
  
 

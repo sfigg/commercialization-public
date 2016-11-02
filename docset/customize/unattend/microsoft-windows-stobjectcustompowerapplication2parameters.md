@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Parameters
 
 
-`Parameters` specifies the arguments to add to [CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md).
+`Parameters` specifies the arguments to add to [CustomPowerApplication2](microsoft-windows-stobject-custompowerapplication2.md).
 
 This setting is optional.
 
@@ -28,7 +28,7 @@ This setting is optional.
 <tbody>
 <tr class="odd">
 <td><p><em>Parameters</em></p></td>
-<td><p>Specifies the arguments to use when running the application specified by [CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md).</p>
+<td><p>Specifies the arguments to use when running the application specified by [CustomPowerApplication2](microsoft-windows-stobject-custompowerapplication2.md).</p>
 <p><em>Parameters</em> is a string.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md) | **Parameters**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication2](microsoft-windows-stobject-custompowerapplication2.md) | **Parameters**
 
 ## Applies To
 
@@ -72,7 +72,7 @@ The following XML output shows `CustomPowerApplication2` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication2](microsoft-windows-stobjectcustompowerapplication2.md)
+[CustomPowerApplication2](microsoft-windows-stobject-custompowerapplication2.md)
 
  
 

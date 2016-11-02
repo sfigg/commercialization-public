@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies a value for [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md).
+`Value` specifies a value for [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) to the answer file.
 
  
 
@@ -66,7 +66,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-servicevalidcommunities.md) | [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) | **Value**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md) | [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) | **Value**
 
 ## Applies To
 
@@ -106,7 +106,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md)
+[ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)
 
  
 

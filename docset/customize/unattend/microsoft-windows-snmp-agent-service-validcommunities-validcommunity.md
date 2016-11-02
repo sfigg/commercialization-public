@@ -32,11 +32,11 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunitykey.md)</p></td>
+<td><p>[Key](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-key.md)</p></td>
 <td><p>Specifies a unique key for the community.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunityvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-snmp-agent-service-validcommunities-validcommunity-value.md)</p></td>
 <td><p>Specifies the type of permissions that the agent has.</p></td>
 </tr>
 </tbody>
@@ -54,12 +54,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-servicevalidcommunities.md) | **ValidCommunity**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md) | **ValidCommunity**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md).
 
 ## XML Example
 
@@ -94,7 +94,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[ValidCommunities](microsoft-windows-snmp-agent-servicevalidcommunities.md)
+[ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md)
 
  
 

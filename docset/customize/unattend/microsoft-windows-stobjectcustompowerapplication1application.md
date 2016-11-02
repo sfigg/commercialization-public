@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Application
 
 
-`Application` specifies the full path to the application specified by [CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md).
+`Application` specifies the full path to the application specified by [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md).
 
 ## Values
 
@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md) | **Application**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md) | **Application**
 
 ## Applies To
 
@@ -71,7 +71,7 @@ The following XML output shows `CustomPowerApplication1` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md)
+[CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md)
 
  
 

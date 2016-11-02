@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Key` specifies a unique key for an SNMP community.
 
 **Note**  
-The value for **Key** is added to the answer file as an attribute of the [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) element. The attribute `wcm:keyValue` is used to identify multiple list item types of ValidCommunity. For example, you can specify three different communities, by using the Key values of **1**, **2**, and **3**.
+The value for **Key** is added to the answer file as an attribute of the [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) element. The attribute `wcm:keyValue` is used to identify multiple list item types of ValidCommunity. For example, you can specify three different communities, by using the Key values of **1**, **2**, and **3**.
 
  
 
@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-servicevalidcommunities.md) | [ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md) | **Key**
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md) | [ValidCommunities](microsoft-windows-snmp-agent-service-validcommunities.md) | [ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md) | **Key**
 
 ## Applies To
 
@@ -90,7 +90,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md)
+[ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)
 
  
 

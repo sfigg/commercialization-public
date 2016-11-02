@@ -27,7 +27,7 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ValidCommunity](microsoft-windows-snmp-agent-servicevalidcommunitiesvalidcommunity.md)</p></td>
+<td><p>[ValidCommunity](microsoft-windows-snmp-agent-service-validcommunities-validcommunity.md)</p></td>
 <td><p>Specifies the community name from which the computer running Simple Network Management Protocol (SNMP) can accept SNMP requests, such as GET, SET, GETNEXT, and GETBULK.</p></td>
 </tr>
 </tbody>
@@ -85,7 +85,7 @@ The following XML sample output shows how to set SNMP.
 ## Related topics
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md)
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
 
  
 

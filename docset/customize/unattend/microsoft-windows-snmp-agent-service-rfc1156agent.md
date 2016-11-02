@@ -33,15 +33,15 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[sysContact](microsoft-windows-snmp-agent-servicerfc1156agentsyscontact.md)</p></td>
+<td><p>[sysContact](microsoft-windows-snmp-agent-service-rfc1156agentsyscontact.md)</p></td>
 <td><p>Specifies the contact name for this managed node, as well as information about how to contact this person.</p></td>
 </tr>
 <tr class="even">
-<td><p>[sysLocation](microsoft-windows-snmp-agent-servicerfc1156agentsyslocation.md)</p></td>
+<td><p>[sysLocation](microsoft-windows-snmp-agent-service-rfc1156agentsyslocation.md)</p></td>
 <td><p>Specifies the physical location of the computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[sysServices](microsoft-windows-snmp-agent-servicerfc1156agentsysservices.md)</p></td>
+<td><p>[sysServices](microsoft-windows-snmp-agent-service-rfc1156agentsysservices.md)</p></td>
 <td><p>Specifies any combination of up to five Simple Network Management Protocol (SNMP) services.</p></td>
 </tr>
 </tbody>
@@ -99,7 +99,7 @@ The following XML output shows how to set SNMP.
 ## Related topics
 
 
-[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service-win7-microsoft-windows-snmp-agent-service.md)
+[Microsoft-Windows-SNMP-Agent-Service](microsoft-windows-snmp-agent-service.md)
 
  
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ItemName
 
 
-`ItemName` is the display name of [CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md)
+`ItemName` is the display name of [CustomPowerApplication3](microsoft-windows-stobject-custompowerapplication3.md)
 
 To use a different `ItemName` for each language, create a resource file, and refer to it using the format: "filename.dll,-referenceid". For information on creating localized text versions for this setting, see the topic [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md) | **ItemName**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication3](microsoft-windows-stobject-custompowerapplication3.md) | **ItemName**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ The following XML output shows `CustomPowerApplication3` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md)
+[CustomPowerApplication3](microsoft-windows-stobject-custompowerapplication3.md)
 
  
 
