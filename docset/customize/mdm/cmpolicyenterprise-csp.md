@@ -37,7 +37,7 @@ For Universal Windows Platform (UWP) app-based mapping policies, SID is the Pack
 
 For non-UWP application-based mapping policies, SID is the application product ID in GUID format. The curly brackets {} around the GUID are required.
 
-For host-based mapping policies, SID must be set to *.
+For host-based mapping policies, SID must be set to `*`.
 
 <a href="" id="clienttype"></a>**ClientType**  
 Specifies the mapping policy type.
