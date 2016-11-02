@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Windows System Image Manager Technical Reference
 
 
-Windows® System Image Manager (Windows SIM) is the tool that you use to create unattended Windows Setup answer files.
+Windows System Image Manager (Windows SIM) is the tool that you use to create unattended Windows Setup answer files.
 
 Windows SIM is included with the Windows ADK. Download the Windows ADK [from this website](http://go.microsoft.com/fwlink/p/?LinkID=528384).
 

@@ -40,7 +40,7 @@ Provides information about how to modify the default UWF servicing screen saver.
 
 [Unified Write Filter](unified-write-filter.md)
 
-[Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md)
+[Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [UWF\_Servicing](uwf-servicing.md)
 

@@ -72,7 +72,7 @@ Before you can change the overlay type to RAM-based, your device must meet the f
 
 [UWF\_OverlayConfig](uwf-overlayconfig.md)
 
-[Overlay for Unified Write Filter (UWF)](overlay-for-unified-write-filter-uwf.md)
+[Overlay for Unified Write Filter (UWF)](uwfoverlay.md)
 
 [Unified Write Filter](unified-write-filter.md)
 

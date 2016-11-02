@@ -211,9 +211,9 @@ Enable-Custom-Key "Shift+Numpad1"
 ## Related topics
 
 
-[Keyboard Filter WMI provider reference](keyboard-filter-wmi-provider-reference.md)
+[Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter key names](keyboard-filter-key-names.md)
+[Keyboard Filter key names](keyboardfilter-key-names.md)
 
  
 

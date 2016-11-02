@@ -153,7 +153,7 @@ Most configuration changes take effect immediately. Some changes, such as enabli
 
 You can configure keyboard filter by using Windows Management Instrumentation (WMI) providers. You can use the Keyboard Filter WMI providers directly in a PowerShell script or in an application.
 
-For more information about Keyboard Filter WMI providers, see [Keyboard Filter WMI provider reference](keyboard-filter-wmi-provider-reference.md).
+For more information about Keyboard Filter WMI providers, see [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md).
 
 ## <a href="" id="change-keyboard-breakout"></a>Keyboard breakout
 
@@ -180,10 +180,10 @@ Some custom keyboard software, such as Microsoft IntelliType Pro, can install Ke
 ## In this section
 
 
--   [Keyboard Filter key names](keyboard-filter-key-names.md)
+-   [Keyboard Filter key names](keyboardfilter-key-names.md)
 -   [Predefined key combinations](predefined-key-combinations.md)
--   [Keyboard Filter WMI provider reference](keyboard-filter-wmi-provider-reference.md)
--   [Windows PowerShell script samples for Keyboard Filter](windows-powershell-script-samples-for-keyboard-filter.md)
+-   [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
+-   [Windows PowerShell script samples for Keyboard Filter](keyboardfilter-powershell-script-samples.md)
 
  
 

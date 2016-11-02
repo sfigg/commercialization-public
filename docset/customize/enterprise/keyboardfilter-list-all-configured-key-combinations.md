@@ -67,11 +67,11 @@ Get-WMIObject -class WEKF_Scancode @CommonParams |
 ## Related topics
 
 
-[Windows PowerShell script samples for keyboard filter](windows-powershell-script-samples-for-keyboard-filter.md)
+[Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
-[Keyboard filter WMI provider reference](keyboard-filter-wmi-provider-reference.md)
+[Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard filter](keyboard-filter.md)
+[Keyboard filter](keyboardfilter.md)
 
  
 

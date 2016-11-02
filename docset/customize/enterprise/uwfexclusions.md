@@ -110,11 +110,11 @@ You can add the following registry exclusions to persist daylight saving time (D
 
 [Unified Write Filter](unified-write-filter.md)
 
-[Common write filter exclusions](common-write-filter-exclusions.md)
+[Common write filter exclusions](uwfexclusions.md)
 
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 
-[Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md)
+[Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
  
 

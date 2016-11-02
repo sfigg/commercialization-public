@@ -27,7 +27,7 @@ Enables or disables settings for Keyboard Filter.
 ## Related topics
 
 
-[Keyboard filter](keyboard-filter.md)
+[Keyboard filter](keyboardfilter.md)
 
  
 
