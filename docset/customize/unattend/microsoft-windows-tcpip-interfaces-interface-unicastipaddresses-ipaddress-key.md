@@ -16,9 +16,9 @@ ms.sitesec: msdn
 `Key` specifies a unique key for an IP address.
 
 **Note**  
--   This setting does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md) to the unattended installation answer file.
+-   This setting does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) to the unattended installation answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key value of **1**, **2**, and **3**.
+-   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP address. For example, you can specify three different IP addresses by using the Key value of **1**, **2**, and **3**.
 
  
 
@@ -33,7 +33,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md). <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md) | **Key**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) | **Key**
 
 ## Applies To
 
@@ -127,7 +127,7 @@ The following XML output shows how to configure TCP/IP.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md)
+[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md)
 
  
 

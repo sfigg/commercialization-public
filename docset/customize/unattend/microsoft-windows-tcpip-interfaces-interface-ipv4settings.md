@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Ipv4Settings` contains the settings for the IPv4 protocol.
 
 **Note**  
-The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: Ipv4Settings, [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
+The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
  
 
@@ -38,7 +38,7 @@ The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) mus
 <td><p>Specifies the interface metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RouterDiscoveryEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4setting-srouterdiscoveryenabled.md)</p></td>
+<td><p>[RouterDiscoveryEnabled](microsoft-windows-tcpip-interfaces-interface-ipv4settings-routerdiscoveryenabled.md)</p></td>
 <td><p>Specifies whether the router discovery protocol, which informs hosts of the existence of routers, is enabled for the IPv4 protocol.</p></td>
 </tr>
 </tbody>

@@ -1,24 +1,21 @@
 ---
-title: IpAddress
-description: IpAddress
+title: Route
+description: Route
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 88e2eddf-d83e-4dca-916b-091406f56956
+ms.assetid: cddd343b-5f29-4409-bcdd-7e1a6e135b2c
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# IpAddress
+# Route
 
 
-`IpAddress` specifies a unicast IP address for the interface. You can specify the unicast IP address for both the IPv4 and the IPv6 protocols.
+`Route` specifies information for each route.
 
-**Note**  
-The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
-
- 
+The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must be added in the following order: [Identifier](http://go.microsoft.com/fwlink/?LinkId=224315), [Metric](http://go.microsoft.com/fwlink/?LinkId=224320), [NextHopAddress](http://go.microsoft.com/fwlink/?LinkId=224322), and then [Prefix](http://go.microsoft.com/fwlink/?LinkId=224326). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
 ## Child Elements
 
@@ -30,19 +27,25 @@ The child elements do not appear in the **Properties** pane of Windows System I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddresskey.md)</p></td>
-<td><p>Specifies a unique key for the <code>IpAddress</code>.</p></td>
+<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface-routes-route-identifier.md)</p></td>
+<td><p>Specifies a unique integer for each route.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddressvalue.md)</p></td>
-<td><p>Specifies the value of the <code>IpAddress</code>.</p></td>
+<td><p>[Metric](microsoft-windows-tcpip-interfaces-interface-routes-route-metric.md)</p></td>
+<td><p>Specifies the metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md)</p></td>
+<td><p>Specifies the IP address of the next hop in the route.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Prefix](microsoft-windows-tcpip-interfaces-interface-routes-route-prefix.md)</p></td>
+<td><p>Specifies the prefix to match to each route.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
-This string type does not support empty elements. Do not create an empty value for this setting.
 
 ## Valid Configuration Passes
 
@@ -54,12 +57,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | **IpAddress**
+[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | **Route**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
@@ -131,13 +134,13 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md)
+[Routes](microsoft-windows-tcpip-interfaces-interface-routes.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20IpAddress%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Route%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

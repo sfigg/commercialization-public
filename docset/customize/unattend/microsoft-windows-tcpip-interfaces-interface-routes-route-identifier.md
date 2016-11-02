@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | [Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md) | **Identifier**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md) | **Identifier**
 
 ## Applies To
 
@@ -127,7 +127,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md)
+[Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)
 
  
 

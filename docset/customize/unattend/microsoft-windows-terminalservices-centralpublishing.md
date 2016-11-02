@@ -15,8 +15,6 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-TerminalServices-CentralPublishing component specifies the RPC port for RemoteApp and Desktop Connection Management.
 
-For more information about configuring RPC ports, see the MSDN topic: [How to configure RPC to use certain ports and how to help secure those ports by using IPsec](http://go.microsoft.com/fwlink/?LinkId=143405).
-
 ## In This Section
 
 

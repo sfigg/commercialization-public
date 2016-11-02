@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md).
+`Value` specifies the value of the [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md).
 
 It can also optionally specify a routing prefix length, which is often expressed as a subnet mask. The *routing prefix length* refers to the number of leading bits in the IP address. A *subnet mask* is a bit mask covering the number of bits used in the prefix.
 
@@ -80,7 +80,7 @@ If the routing prefix length is not defined, the default routing prefix length w
  
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md) to the unattended installation answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) to the unattended installation answer file.
 
  
 
@@ -114,7 +114,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md) | **Value**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | [IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md) | **Value**
 
 ## Applies To
 
@@ -156,7 +156,7 @@ The following XML output shows how to configure a single TCP/IP address. In this
 ## Related topics
 
 
-[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md)
+[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md)
 
  
 

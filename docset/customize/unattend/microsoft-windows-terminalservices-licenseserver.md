@@ -25,11 +25,11 @@ The Microsoft-Windows-TerminalServices-LicenseServer component specifies the dat
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DBPath](microsoft-windows-terminalservices-licenseserverdbpath.md)</p></td>
+<td><p>[DBPath](microsoft-windows-terminalservices-licenseserver-dbpath.md)</p></td>
 <td><p>Specifies the path to the license database.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Role](microsoft-windows-terminalservices-licenseserverrole.md)</p></td>
+<td><p>[Role](microsoft-windows-terminalservices-licenseserver-role.md)</p></td>
 <td><p>Specifies the Terminal Services license server role.</p></td>
 </tr>
 </tbody>
