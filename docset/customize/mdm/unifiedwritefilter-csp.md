@@ -211,7 +211,7 @@ The only supported operation is Get.
 <a href="" id="nextsession-volume-volume-exclusions"></a>**NextSession/Volume/*Volume*/Exclusions**  
 Required. The root node that contains all file exclusions for this volume in the next session.
 
-<a href="" id="nextsession-volume-volume-exclusionsexclusionpath"></a>**NextSession/Volume/*Volume*/Exclusions****_ExclusionPath_**  
+<a href="" id="nextsession-volume-volume-exclusionsexclusionpath"></a>**NextSession/Volume/*Volume*/Exclusions/****_ExclusionPath_**  
 Optional. A string that contains the full path of the file or folder relative to the volume.
 
 Supported operations are Add, Delete, Get, and Replace.
