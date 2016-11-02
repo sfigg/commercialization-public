@@ -36,12 +36,12 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | **NameServerList**
+[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | **NameServerList**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md).
 
 ## XML Example
 

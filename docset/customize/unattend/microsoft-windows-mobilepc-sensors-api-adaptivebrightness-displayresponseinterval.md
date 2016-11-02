@@ -42,12 +42,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api-.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-.md) | **DisplayResponseInterval**
+[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api.md)| [AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md) | **DisplayResponseInterval**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api.md).
 
 ## XML Example
 
@@ -63,7 +63,7 @@ This XML example shows how to set the minimum time between changes in display br
 ## Related topics
 
 
-[microsoft-windows-mobilepc-sensors-api-](mmicrosoft-windows-mobilepc-sensors-api-.md)
+[microsoft-windows-mobilepc-sensors-api-](mmicrosoft-windows-mobilepc-sensors-api.md)
 
 [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
 

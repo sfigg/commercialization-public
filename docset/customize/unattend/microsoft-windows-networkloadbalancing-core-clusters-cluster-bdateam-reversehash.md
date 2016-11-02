@@ -50,12 +50,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateam.md) | **ReverseHash**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateam.md) | **ReverseHash**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 

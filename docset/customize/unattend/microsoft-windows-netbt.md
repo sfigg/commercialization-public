@@ -25,7 +25,7 @@ NetBT settings are interface-specific and consist of the NetbiosOptions setting 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interfaces](microsoft-windows-netbt-interfaces-.md)</p></td>
+<td><p>[Interfaces](microsoft-windows-netbt-interfaces.md)</p></td>
 <td><p>Contains all settings for the TCP/IP interface settings.</p></td>
 </tr>
 </tbody>

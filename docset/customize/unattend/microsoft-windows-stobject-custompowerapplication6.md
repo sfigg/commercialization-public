@@ -25,19 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Application](microsoft-windows-stobjectcustompowerapplication6application.md)</p></td>
+<td><p>[Application](microsoft-windows-stobject-custompowerapplication6-application.md)</p></td>
 <td><p>Specifies the name and the path of the application to run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IconID](microsoft-windows-stobjectcustompowerapplication6iconid.md)</p></td>
+<td><p>[IconID](microsoft-windows-stobject-custompowerapplication6-iconid.md)</p></td>
 <td><p>Specifies the optional icon resource ID.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ItemName](microsoft-windows-stobjectcustompowerapplication6itemname.md)</p></td>
+<td><p>[ItemName](microsoft-windows-stobject-custompowerapplication6-itemname.md)</p></td>
 <td><p>Specifies the display text of the application.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Parameters](microsoft-windows-stobjectcustompowerapplication6parameters.md)</p></td>
+<td><p>[Parameters](microsoft-windows-stobject-custompowerapplication6-parameters.md)</p></td>
 <td><p>Specifies the optional parameters to use when running the application.</p></td>
 </tr>
 </tbody>

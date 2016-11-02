@@ -15,8 +15,6 @@ ms.sitesec: msdn
 
 `FlyoutAutoPowerScheme` is the globally unique identifier (GUID) of the Battery Meter Fly-out Balanced power plan.
 
-For information on creating a customized power plan, see [How to Create a Custom Power Plan](http://go.microsoft.com/fwlink/?LinkId=206617).
-
 You can use the Powercfg command-line tool to list the available power plans. For example,
 
 ``` syntax

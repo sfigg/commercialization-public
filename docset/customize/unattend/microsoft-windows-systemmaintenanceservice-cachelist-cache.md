@@ -25,28 +25,28 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CacheID](microsoft-windows-systemmaintenanceservicecachelistcachecacheid.md)</p></td>
+<td><p>[CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cachecacheid.md)</p></td>
 <td><p>Specifies a unique cache ID.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CacheSizeMB](microsoft-windows-systemmaintenanceservicecachelistcachecachesizemb.md)</p></td>
+<td><p>[CacheSizeMB](microsoft-windows-systemmaintenanceservice-cachelist-cachesizemb.md)</p></td>
 <td><p>Specifies the size of the ReadyBoost cache in megabytes (MB).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md)</p></td>
-<td><p>Specifies the Disk ID that identifies the ReadyBoost device. Used with [PartitionID](microsoft-windows-systemmaintenanceservicecachelistcachepartitionid.md).</p></td>
+<td><p>[DiskID](microsoft-windows-systemmaintenanceservice-cachelist-cachediskid.md)</p></td>
+<td><p>Specifies the Disk ID that identifies the ReadyBoost device. Used with [PartitionID](microsoft-windows-systemmaintenanceservice-cachelist-cachepartitionid.md).</p></td>
 </tr>
 <tr class="even">
-<td><p>[EnableCompression](microsoft-windows-systemmaintenanceservicecachelistcacheenablecompression.md)</p></td>
+<td><p>[EnableCompression](microsoft-windows-systemmaintenanceservice-cachelist-cache-enablecompression.md)</p></td>
 <td><p>Specifies whether the ReadyBoost cache uses compression.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EnableEncryption](microsoft-windows-systemmaintenanceservicecachelistcacheenableencryption.md)</p></td>
+<td><p>[EnableEncryption](microsoft-windows-systemmaintenanceservice-cachelist-cache-enableencryption.md)</p></td>
 <td><p>Specifies whether the ReadyBoost cache uses encryption.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-systemmaintenanceservicecachelistcachepartitionid.md)</p></td>
-<td><p>Specifies the Partition ID that identifies the ReadyBoost device. Used with [DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md).</p></td>
+<td><p>[PartitionID](microsoft-windows-systemmaintenanceservice-cachelist-cachepartitionid.md)</p></td>
+<td><p>Specifies the Partition ID that identifies the ReadyBoost device. Used with [DiskID](microsoft-windows-systemmaintenanceservice-cachelist-cachediskid.md).</p></td>
 </tr>
 </tbody>
 </table>
@@ -56,7 +56,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | **Cache**
+[microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservice-cachelist.md) | **Cache**
 
 ## Valid Configuration Passes
 
@@ -66,7 +66,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 
@@ -96,7 +96,7 @@ The following XML output example shows a configuration of two ReadyBoost devices
 ## Related topics
 
 
-[CacheList](microsoft-windows-systemmaintenanceservicecachelist.md)
+[CacheList](microsoft-windows-systemmaintenanceservice-cachelist.md)
 
  
 

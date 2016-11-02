@@ -58,7 +58,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies the subnet mask for the cluster IP address.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-.md)</p></td>
+<td><p>[DedicatedIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses.md)</p></td>
 <td><p>Specifies the host's unique IP addresses.</p></td>
 </tr>
 <tr class="odd">
@@ -134,12 +134,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | **Cluster**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | **Cluster**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md).
 
 ## XML Example
 

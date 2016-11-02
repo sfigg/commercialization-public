@@ -41,7 +41,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Password**
+[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Password**
 
 ## Applies To
 

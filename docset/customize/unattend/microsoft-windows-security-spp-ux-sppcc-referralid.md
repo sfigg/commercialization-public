@@ -57,12 +57,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc-.md) | **ReferralId**
+[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md) | **ReferralId**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc--win7-microsoft-windows-security-spp-ux-sppcc-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc--win7-microsoft-windows-security-spp-ux-sppcc.md).
 
 ## XML Example
 
@@ -76,7 +76,7 @@ The following XML output shows how to set Windows Anytime Upgrade.
 ## Related topics
 
 
-[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc-.md)
+[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md)
 
  
 

@@ -15,10 +15,10 @@ ms.sitesec: msdn
 
 `CacheList` configures Microsoft ReadyBoost™ flash storage devices that are used as supplemental memory caches. This is typically used for devices that have been integrated with the computer, such as an internal flash device or solid-state drive (SSD).
 
-`CacheList` can contain up to eight [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) settings that represent a single ReadyBoost cache on the computer that you configure.
+`CacheList` can contain up to eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) settings that represent a single ReadyBoost cache on the computer that you configure.
 
 **Note**  
-If more than eight [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservicecachelistcachecacheid.md), will be recognized.
+If more than eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cachecacheid.md), will be recognized.
 
  
 
@@ -32,7 +32,7 @@ If more than eight [Cache](microsoft-windows-systemmaintenanceservicecachelistca
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md)</p></td>
+<td><p>[Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)</p></td>
 <td><p>Specifies settings that represent a single ReadyBoost cache on the computer that you configure.</p></td>
 </tr>
 </tbody>
@@ -43,7 +43,7 @@ If more than eight [Cache](microsoft-windows-systemmaintenanceservicecachelistca
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | **CacheList**
+[microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice.md) | **CacheList**
 
 ## Valid Configuration Passes
 
@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice](microsoft-windows-systemmaintenanceservice-win7-microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 
@@ -83,7 +83,7 @@ The following XML output example shows a configuration of two ReadyBoost devices
 ## Related topics
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md)
+[microsoft-windows-systemmaintenanceservice-](microsoft-windows-systemmaintenanceservice.md)
 
  
 

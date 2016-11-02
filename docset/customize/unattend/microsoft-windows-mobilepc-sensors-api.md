@@ -27,7 +27,7 @@ Examples of sensors include accelerometers, light sensors, temperature sensors, 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-.md)</p></td>
+<td><p>[AdaptiveBrightness](microsoft-windows-mobilepc-sensors-api-adaptivebrightness.md)</p></td>
 <td><p>Specifies settings related to adaptive brightness.</p>
 <p>Adaptive brightness changes the brightness of a monitor or display based on the ambient light.</p></td>
 </tr>

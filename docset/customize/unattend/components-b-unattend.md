@@ -105,7 +105,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Specifies OEM information for a customized Help and Support page.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md)</p></td>
+<td><p>[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)</p></td>
 <td><p>Contains network policy settings.</p></td>
 </tr>
 <tr class="even">
@@ -121,7 +121,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Includes the language and input locale settings for the system and the user.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md)</p></td>
+<td><p>[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe-.md)</p></td>
 <td><p>Specifies the default language, locale, and other international settings to use during Windows Setup or Windows Deployment Services installations.</p></td>
 </tr>
 <tr class="even">
@@ -137,11 +137,11 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Contains a setting that specifies an override for the default Online Store provider for Windows Media Player.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api-.md)</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api.md)</p></td>
 <td><p>Specifies settings for sensor devices or mechanisms. Examples of sensors include accelerometers, light sensors, temperature sensors, and location sensors.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-netbt-](microsoft-windows-netbt-.md)</p></td>
+<td><p>[microsoft-windows-netbt-](microsoft-windows-netbt.md)</p></td>
 <td><p>Contains networking settings for NetBT.</p></td>
 </tr>
 <tr class="odd">
@@ -149,7 +149,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Connects network segments and can create connections between different types of network media.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core-.md)</p></td>
+<td><p>[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md)</p></td>
 <td><p>Includes settings for configuring and binding Network Load Balancing (NLB) to the adapters on an NLB cluster node.</p></td>
 </tr>
 <tr class="odd">
@@ -165,7 +165,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Adds one or more out-of-box drivers to a Windows installation. (Drivers are added during the <strong>auditSystem</strong> configuration pass.)</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md)</p></td>
+<td><p>[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md)</p></td>
 <td><p>Adds one or more out-of-box drivers to a Windows installation. (Drivers are added during the <strong>windowsPE</strong> configuration pass.)</p></td>
 </tr>
 <tr class="odd">
@@ -189,7 +189,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Enables a user who has a computer problem to receive assistance from another person who is remotely located.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver-.md)</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)</p></td>
 <td><p>Optimizes BitLocker for PCs with hardware architectures such as System on a Chip (SoC).</p></td>
 </tr>
 <tr class="odd">
@@ -237,7 +237,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Customizes the power management applications that are provided to end users.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md)</p></td>
+<td><p>[microsoft-windows-systemmaintenanceservice-](microsoft-windows-systemmaintenanceservice.md)</p></td>
 <td><p>Configures flash storage devices such as USB keys and Secure Digital (SD) cards as supplemental memory caches. This can improve system responsiveness, especially on systems with less RAM or slower disks.</p></td>
 </tr>
 <tr class="odd">
@@ -353,7 +353,7 @@ The following components are deprecated in Windows 10 and Windows Server 2016.
 <td><p>Removed. Use Microsoft-Windows-Security-SPP-UX instead.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc-.md)</p></td>
+<td><p>[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md)</p></td>
 <td><p>Deprecated. Do not use.</p></td>
 </tr>
 <tr class="even">

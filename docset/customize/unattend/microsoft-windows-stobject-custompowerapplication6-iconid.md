@@ -13,11 +13,9 @@ ms.sitesec: msdn
 # IconID
 
 
-`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md).
+`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md).
 
 This setting is optional.
-
-To use a different IconID for each language, create a resource file, and refer to it using the format: "filename.dll,-referenceid". For information on creating localized text versions for this setting, see the topic [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
 ## Values
 
@@ -30,7 +28,7 @@ To use a different IconID for each language, create a resource file, and refer t
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md).</p>
+<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md).</p>
 <p><code>IconID</code> is represented as @<em>dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</code></pre>
 <p><em>ID</em> is a string.</p></td>
@@ -52,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md) | **IconID**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md) | **IconID**
 
 ## Applies To
 
@@ -76,7 +74,7 @@ The following XML output shows `CustomPowerApplication6` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md)
+[CustomPowerApplication6](microsoft-windows-stobject-custompowerapplication6.md)
 
  
 

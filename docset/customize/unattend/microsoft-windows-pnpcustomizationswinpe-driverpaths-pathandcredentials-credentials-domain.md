@@ -48,12 +48,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe-.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) | **Domain**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) | **Domain**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe.md).
 
 ## XML Example
 

@@ -43,7 +43,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md) | **DiskID**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallTo](microsoft-windows-setup-imageinstall-dataimage-installto.md) | **DiskID**
 
 ## Applies To
 

@@ -47,7 +47,7 @@ This setting is deprecated and should not be used. This information is included 
 ## Parent Hierarchy
 
 
-[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md) | [SetupUILanguage](microsoft-windows-international-core-winpe--setupuilanguage.md) | **WillShowUI**
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe-.md) | [SetupUILanguage](microsoft-windows-international-core-winpe--setupuilanguage.md) | **WillShowUI**
 
 ## Valid Configuration Passes
 
@@ -57,7 +57,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe--.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe-.md).
 
 ## XML Example
 
@@ -73,7 +73,7 @@ The following XML output shows how to configure the Windows Setup UI language t
 ## Related topics
 
 
-[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe--.md)
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe-.md)
 
 [SetupUILanguage](microsoft-windows-international-core-winpe--setupuilanguage.md)
 

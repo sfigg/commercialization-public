@@ -46,12 +46,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md) | **Value**
+[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md) | **Value**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md).
 
 ## XML Example
 

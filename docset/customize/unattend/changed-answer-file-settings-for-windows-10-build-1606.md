@@ -119,31 +119,31 @@ The following settings are no longer available in Windows 10, version 1607:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md)\SensorPermissions\Sensor\Enable</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api.md)\SensorPermissions\Sensor\Enable</p></td>
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md)\SensorPermissions\Sensor\GUID</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api.md)\SensorPermissions\Sensor\GUID</p></td>
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md)\SensorPermissions\Sensor\GUIDClassification</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api.md)\SensorPermissions\Sensor\GUIDClassification</p></td>
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api-.md)\SensorPermissions\Sensor\Order</p></td>
+<td><p>[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api--win7-microsoft-windows-mobilepc-sensors-api.md)\SensorPermissions\Sensor\Order</p></td>
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)\InPlaceCrypto</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)\InPlaceCrypto</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)\ModifiedWriteMaximum</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)\ModifiedWriteMaximum</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md) \ReadDoubleBuffering</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md) \ReadDoubleBuffering</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MaxCryptoRequestsPerIo
 
 
-The `MaxCryptoRequestsPerIo` setting works with other settings in the [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md) component to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC). Do not use these settings for standard 32-bit or 64-bit hardware architectures.
+The `MaxCryptoRequestsPerIo` setting works with other settings in the [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md) component to optimize BitLocker settings for PCs with hardware architectures such as System on a Chip (SoC). Do not use these settings for standard 32-bit or 64-bit hardware architectures.
 
 These settings are intended for OEM manufacturing only. For specific guidance on using these settings, contact Microsoft.
 
@@ -43,12 +43,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver-.md) | **MaxCryptoRequestsPerIo**
+[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md) | **MaxCryptoRequestsPerIo**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md).
 
 ## XML Example
 
@@ -76,7 +76,7 @@ The following example specifies recommended values for Bitlocker optimizations o
 ## Related topics
 
 
-[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver-.md)
+[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)
 
  
 

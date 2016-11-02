@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PartitionID
 
 
-`PartitionID` specifies the Partition ID that identifies the Microsoft ReadyBoost™ device. This value is used with [DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md).
+`PartitionID` specifies the Partition ID that identifies the Microsoft ReadyBoost™ device. This value is used with [DiskID](microsoft-windows-systemmaintenanceservice-cachelist-cachediskid.md).
 
 ## Values
 
@@ -36,7 +36,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservicecachelist.md) | [Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md) | **PartitionID**
+[microsoft-windows-systemmaintenanceservice-](microsoft-windows-systemmaintenanceservice.md) | [CacheList](microsoft-windows-systemmaintenanceservice-cachelist.md) | [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) | **PartitionID**
 
 ## Valid Configuration Passes
 
@@ -46,7 +46,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-SystemMaintenanceService](microsoft-windows-systemmaintenanceservice.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-systemmaintenanceservice-](microsoft-windows-systemmaintenanceservice.md).
 
 ## XML Example
 
@@ -76,9 +76,9 @@ The following XML output example shows a configuration of two ReadyBoost devices
 ## Related topics
 
 
-[DiskID](microsoft-windows-systemmaintenanceservicecachelistcachediskid.md)
+[DiskID](microsoft-windows-systemmaintenanceservice-cachelist-cachediskid.md)
 
-[Cache](microsoft-windows-systemmaintenanceservicecachelistcache.md)
+[Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 
  
 

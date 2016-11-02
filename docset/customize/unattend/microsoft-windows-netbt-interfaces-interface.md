@@ -49,12 +49,12 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt-.md) | [Interfaces](microsoft-windows-netbt-interfaces-.md) | **Interface**
+[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | **Interface**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md).
 
 ## XML Example
 
@@ -77,7 +77,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[Interfaces](microsoft-windows-netbt-interfaces-.md)
+[Interfaces](microsoft-windows-netbt-interfaces.md)
 
  
 

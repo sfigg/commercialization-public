@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **InstallFrom**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [OSImage](microsoft-windows-setup-imageinstall-osimage.md) | **InstallFrom**
 
 ## Applies To
 

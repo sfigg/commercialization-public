@@ -48,12 +48,12 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[microsoft-windows-ie-clientnetworkprotocolimplementation-](mmicrosoft-windows-ie-clientnetworkprotocolimplementation-.md) | **HKLMProxyServer**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](mmicrosoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMProxyServer**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md).
 
 ## XML Example
 
@@ -73,7 +73,7 @@ The following XML output shows how to specify the hostname of the proxy server o
 ## Related topics
 
 
-[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation-.md)
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md)
 
  
 

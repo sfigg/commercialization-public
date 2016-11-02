@@ -46,7 +46,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation](microsoft-windows-ie-clientnetworkprotocolimplementation-.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-ie-clientnetworkprotocolimplementation](microsoft-windows-ie-clientnetworkprotocolimplementation.md).
 
 ## XML Example
 

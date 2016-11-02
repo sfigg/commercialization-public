@@ -44,7 +44,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall-.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage-.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | **Path**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | **Path**
 
 ## Applies To
 

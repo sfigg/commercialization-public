@@ -39,7 +39,7 @@ Some of the settings in this component apply only to Windows PE, and some setti
 <td><p>Specifies the disk configurations to apply to a disk on the destination computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Display](microsoft-windows-setup-display-.md)</p></td>
+<td><p>[Display](microsoft-windows-setup-display.md)</p></td>
 <td><p>Specifies display settings to apply to Windows PE.</p></td>
 </tr>
 <tr class="odd">
@@ -55,7 +55,7 @@ Some of the settings in this component apply only to Windows PE, and some setti
 <td><p>Specifies whether a network connection is enabled.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ImageInstall](microsoft-windows-setup-imageinstall-.md)</p></td>
+<td><p>[ImageInstall](microsoft-windows-setup-imageinstall.md)</p></td>
 <td><p>Specifies the Windows image to install.</p></td>
 </tr>
 <tr class="odd">

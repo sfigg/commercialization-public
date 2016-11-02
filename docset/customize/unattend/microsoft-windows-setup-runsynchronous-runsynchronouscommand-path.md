@@ -46,7 +46,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup-.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | **Path**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | **Path**
 
 ## Applies To
 

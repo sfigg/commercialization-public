@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Application
 
 
-`Application `specifies the full path to the application specified by [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md).
+`Application `specifies the full path to the application specified by [CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the full path and the executable file name for [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md). For example,</p>
+<td><p>Specifies the full path and the executable file name for [CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md). For example,</p>
 <pre class="syntax" space="preserve"><code>%ProgramFiles%\CustomPower\Application.exe</code></pre>
 <p><em>Path</em> is a string.</p></td>
 </tr>
@@ -47,7 +47,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md) | **Application**
+[Microsoft-Windows-stobject](microsoft-windows-stobject.md) | [CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md) | **Application**
 
 ## Applies To
 
@@ -71,7 +71,7 @@ The following XML output shows `CustomPowerApplication6` Application.exe with `p
 ## Related topics
 
 
-[CustomPowerApplication6](microsoft-windows-stobjectcustompowerapplication6.md)
+[CustomPowerApplication6](microsoft-windows-stobject=custompowerapplication6.md)
 
  
 
