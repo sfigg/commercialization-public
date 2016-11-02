@@ -39,7 +39,7 @@ Required. Root node for cached nodes. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-nodes-nodeid"></a>**/Nodes/*NodeID***  
+<a href="" id="-nodes-nodeid"></a>**/Nodes/****_NodeID_**  
 Optional. Information about each cached node is stored under *NodeID* as specified by the server. This value must not contain a comma. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.

@@ -8,15 +8,17 @@ title: 'Lab 1f: Build a retail image'
 
 # Lab 1f: Build a retail image
 
-We''ll take our test image and convert it to a retail build. 
+We''ll take our customizations, put them together, and test them in a retail build. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md).
-You can include any of the updates from [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md), [Lab 1c:  Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md), [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md), and [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md).
+-   [Lab 1a: Create a basic image](create-a-basic-image.md)
+-   [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md)
+-   [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md)
+-   [Lab 1d: Add networking and other provisioning package settings to an image](add-a-provisioning-package-to-an-image.md)
+-   [Lab 1e: Add a driver to an image](add-a-driver-to-an-image.md)
 
 ## <span id="Add_your_app_to_the_retail_configuration_file"></span><span id="add_your_app_to_the_retail_configuration_file"></span><span id="ADD_YOUR_APP_TO_THE_RETAIL_CONFIGURATION_FILE"></span>Add your app to the retail configuration file
-
 
 1.  Open your product's retail configuration file: **C:\\IoT-ADK-AddonKit\\Source-&lt;arch&gt;\\Products\\ProductA\\RetailOEMInput.xml**..
 
@@ -35,13 +37,15 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
     ``` syntax
     <OEM> 
-       <Feature>RPI2_DRIVERS</Feature> 
-       <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-       <Feature>OEM_AppxHelloWorld</Feature> 
-       <Feature>OEM_FileAndRegKey</Feature> 
+       <!-- Include BSP Features -->
+       <Feature>RPi2_DRIVERS</Feature> 
+       <Feature>RPi3_DRIVERS</Feature>
+       <!-- Include OEM features -->
        <Feature>OEM_CustomCmd</Feature> 
        <Feature>OEM_ProvAuto</Feature>
-	   <Feature>OEM_DriverHelloBlinky</Feature> 
+       <Feature>OEM_AppxHelloWorld</Feature> 
+       <Feature>OEM_FilesAndRegKeys</Feature>
+       <Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
     ```
     
@@ -49,22 +53,9 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
     
     OEM_ProvAuto is required to pull in the provisioning package.
 	
-	OEM_FileAndRegKey, OEM_AppxHelloWorld, and OEM_DriverHelloBlinky were sample packages added in previous labs.
+	OEM_FilesAndRegKeys, OEM_AppxHelloWorld, and OEM_DriverHelloBlinky were sample packages added in previous labs.
 
-4.  To support your apps, add the FeatureIDs for IOT_UAP_OOBE and IOT_APP_TOOLKIT from the main list of Microsoft features:
-
-    ``` syntax
-      <Features>
-        <Microsoft> 
-         <Feature>IOT_EFIESP</Feature> 
-         <Feature>IOT_DMAP_DRIVER</Feature> 
-         <Feature>IOT_UAP_OOBE</Feature> 
-         <Feature>IOT_APP_TOOLKIT</Feature> 
-        </Microsoft>
-       </Features>
-    ```
-
-## Copy in the provisioning package from ProductB into ProductA.
+## <span id="Copy_in_provisioning_packages"></span>Copy in the provisioning package from ProductB into ProductA.
 
 1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Products\\ProductA\\prov.
 
@@ -121,10 +112,6 @@ You can include any of the updates from [Lab 1b: Add an app to your image](deplo
 
 With retail builds, you won't be able to log into the device using the SSH clients or by using the web interface. However, any files and reg keys that your app relies on should still work.
 
-
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
-**Congratulations!**
-That's it for the first lab. 
 
-From here, you can continue on to:
--  [Lab 2: Creating your own board support package](create-a-new-bsp.md)
+- [Lab 2: Creating your own board support package](create-a-new-bsp.md)
