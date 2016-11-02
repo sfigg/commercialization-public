@@ -24,7 +24,7 @@ Describes the procedures to add support for Windows Defender and System Center E
 <a href="" id="uwfapply-oem-updates"></a>[Apply OEM updates to UWF-protected devices](uwfapply-oem-updates.md)  
 Provides information about how to apply OEM updates to a UWF-protected device.
 
-<a href="" id="apply-windows-updates-to-uwf-protected-devices"></a>[Apply Windows updates to UWF-protected devices](apply-windows-updates-to-uwf-protected-devices.md)  
+<a href="" id="uwfapply-windows-updates"></a>[Apply Windows updates to UWF-protected devices](uwfapply-windows-updates.md)  
 Describes the procedures to apply Windows updates to your UWF-protected devices.
 
 <a href="" id="uwf-master-servicing-script"></a>[UWF master servicing script](uwf-master-servicing-script.md)  
