@@ -1195,6 +1195,6 @@
 #### [ThreatSeverityDefaultAction](security-malware-windows-defender-threatseveritydefaultaction.md)
 ##### [Low](security-malware-windows-defender-threatseveritydefaultaction-low.md)
 ##### [Moderate](security-malware-windows-defender-threatseveritydefaultaction-moderate.md)
-##### [High ](high--win8-security-malware-windows-defender-threatseveritydefaultaction-high.md)
+##### [High ](security-malware-windows-defender-threatseveritydefaultaction-high.md)
 ##### [Severe](security-malware-windows-defender-threatseveritydefaultaction-severe.md)
 #### [TrustedImageIdentifier](security-malware-windows-defender-trustedimageidentifier.md)
