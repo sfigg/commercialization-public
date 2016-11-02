@@ -6714,7 +6714,7 @@ Footnote:
 > -   MaxDevicePasswordFailedAttempts
 > -   MaxInactivityTimeDeviceLock
 > -   MinDevicePasswordComplexCharacters
-<br>
+&nbsp;
 
 > **Important**  
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
@@ -7650,7 +7650,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 > **Note**  This policy has been deprecated in Windows 10, version 1607
-<br>
+&nbsp;
 
 > **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
