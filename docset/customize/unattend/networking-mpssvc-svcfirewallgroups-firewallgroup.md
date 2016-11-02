@@ -25,19 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Active](networking-mpssvc-svcfirewallgroupsfirewallgroupactive.md)</p></td>
+<td><p>[Active](networking-mpssvc-svcfirewallgroups-firewallgroup-active.md)</p></td>
 <td><p>Specifies whether a Windows Firewall group is active.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Group](networking-mpssvc-svcfirewallgroupsfirewallgroupgroup.md)</p></td>
+<td><p>[Group](networking-mpssvc-svcfirewallgroups-firewallgroup-group.md)</p></td>
 <td><p>Specifies a Windows Firewall group name</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Key](networking-mpssvc-svcfirewallgroupsfirewallgroupkey.md)</p></td>
+<td><p>[Key](networking-mpssvc-svcfirewallgroups-firewallgroup-key.md)</p></td>
 <td><p>Specifies a unique name that you can use to identify the Firewall group.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Profile](networking-mpssvc-svcfirewallgroupsfirewallgroupprofile.md)</p></td>
+<td><p>[Profile](networking-mpssvc-svcfirewallgroups-firewallgroup-profile.md)</p></td>
 <td><p>Specifies a Windows Firewall group profile.</p></td>
 </tr>
 </tbody>
