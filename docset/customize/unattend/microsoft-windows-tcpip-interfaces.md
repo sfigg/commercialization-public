@@ -1,21 +1,23 @@
 ---
-title: RouterDiscoveryEnabled
-description: RouterDiscoveryEnabled
+title: Interfaces
+description: Interfaces
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: f1373ce8-e081-46c7-8d24-df068219e23a
+ms.assetid: d84ed504-c707-47ac-8087-0e1b0229d6ce
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# RouterDiscoveryEnabled
+# Interfaces
 
 
-`RouterDiscoveryEnabled` controls whether the router discovery protocol—which informs hosts of the existence of routers—is enabled for the IPv6 protocol. This setting controls the IPv6 Neighbor Discovery protocol defined in RFC 2461.
+`Interfaces` specifies details about the TCP/IP interface settings.
 
-## Values
+TCP/IP settings can be divided into two primary groups—global settings and interface settings. Global settings apply to the protocols as a whole and are applied across all network interfaces. Interface settings are specific to a particular network interface.
+
+## Child Elements
 
 
 <table>
@@ -25,12 +27,8 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>true</strong></p></td>
-<td><p>Enables router discovery for the IPv6 protocol on this interface. This is the default value.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>false</strong></p></td>
-<td><p>Disables router discovery for the IPv6 protocol on this interface.</p></td>
+<td><p>[Interface](microsoft-windows-tcpipinterfaces-interface.md)</p></td>
+<td><p>Contains settings for the TCP/IP interface.</p></td>
 </tr>
 </tbody>
 </table>
@@ -47,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md) | **RouterDiscoveryEnabled**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | **Interfaces**
 
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
@@ -124,13 +122,13 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md)
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20RouterDiscoveryEnabled%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Interfaces%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

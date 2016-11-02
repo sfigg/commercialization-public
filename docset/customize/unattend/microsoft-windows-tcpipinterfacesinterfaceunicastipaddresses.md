@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `UnicastIpAddresses` specifies the unicast IP addresses for the IPv4 and IPv6 settings.
 
 **Note**  
-The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md), [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md), [Identifier](microsoft-windows-tcpipinterfacesinterfaceidentifier.md), UnicastIpAddresses, and then [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md), as shown in the XML example below.
+The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), UnicastIpAddresses, and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md), as shown in the XML example below.
 
  
 
@@ -30,7 +30,7 @@ The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md)</p></td>
 <td><p>Specifies a static unicast IP address for the interface.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | **UnicastIpAddresses**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **UnicastIpAddresses**
 
 ## Applies To
 
@@ -184,7 +184,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Interface](microsoft-windows-tcpipinterfacesinterface.md)
+[Interface](microsoft-windows-tcpip-interfaces-interface.md)
 
  
 

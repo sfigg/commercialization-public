@@ -30,11 +30,11 @@ The child elements do not appear in the **Properties** pane of Windows System I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddresskey.md)</p></td>
 <td><p>Specifies a unique key for the <code>IpAddress</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tcpipinterfacesinterfaceunicastipaddressesipaddressvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddressvalue.md)</p></td>
 <td><p>Specifies the value of the <code>IpAddress</code>.</p></td>
 </tr>
 </tbody>
@@ -54,7 +54,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [UnicastIpAddresses](microsoft-windows-tcpipinterfacesinterfaceunicastipaddresses.md) | **IpAddress**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md) | **IpAddress**
 
 ## Applies To
 
@@ -131,7 +131,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[UnicastIpAddresses](microsoft-windows-tcpipinterfacesinterfaceunicastipaddresses.md)
+[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md)
 
  
 

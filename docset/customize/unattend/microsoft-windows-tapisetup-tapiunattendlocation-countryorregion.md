@@ -55,12 +55,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](mmicrosoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md) | **CountryOrRegion**
+[microsoft-windows-tapisetup-](mmicrosoft-windows-tapisetup.md) | [TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md) | **CountryOrRegion**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md).
 
 ## XML Example
 
@@ -84,7 +84,7 @@ The following example shows how to set the location that you are calling from.
 ## Related topics
 
 
-[TapiUnattendLocation](microsoft-windows-tapisetuptapiunattendlocation.md)
+[TapiUnattendLocation](microsoft-windows-tapisetup-tapiunattendlocation.md)
 
  
 

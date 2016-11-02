@@ -27,39 +27,39 @@ If one of the child elements is not applicable in your country or region, you mu
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AreaCode](microsoft-windows-tapisetuptapiunattendlocationareacode.md)</p></td>
+<td><p>[AreaCode](microsoft-windows-tapisetup-tapiunattendlocationa-reacode.md)</p></td>
 <td><p>Specifies the local telephone area code.</p></td>
 </tr>
 <tr class="even">
-<td><p>[CountryOrRegion](microsoft-windows-tapisetuptapiunattendlocationcountryorregion.md)</p></td>
+<td><p>[CountryOrRegion](microsoft-windows-tapisetup-tapiunattendlocation-countryorregion.md)</p></td>
 <td><p>Specifies the region ID for this location. This not the same as the country or region code used for dialing.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DisableCallWaiting](microsoft-windows-tapisetuptapiunattendlocationdisablecallwaiting.md)</p></td>
+<td><p>[DisableCallWaiting](microsoft-windows-tapisetup-tapiunattendlocation-disablecallwaiting.md)</p></td>
 <td><p>Specifies the number to dial to disable call waiting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[InternationalCarrierCode](microsoft-windows-tapisetuptapiunattendlocationinternationalcarriercode.md)</p></td>
+<td><p>[InternationalCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-internationalcarriercode.md)</p></td>
 <td><p>Specifies the international telephone carrier.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LongDistanceAccess](microsoft-windows-tapisetuptapiunattendlocationlongdistanceaccess.md)</p></td>
+<td><p>[LongDistanceAccess](microsoft-windows-tapisetup-tapiunattendlocation-longdistanceaccess.md)</p></td>
 <td><p>Specifies the number to dial from this location for long distance access.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LongDistanceCarrierCode](microsoft-windows-tapisetuptapiunattendlocationlongdistancecarriercode.md)</p></td>
+<td><p>[LongDistanceCarrierCode](microsoft-windows-tapisetup-tapiunattendlocation-longdistancecarriercode.md)</p></td>
 <td><p>Specifies the long distance carrier.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Name](microsoft-windows-tapisetuptapiunattendlocationname.md)</p></td>
+<td><p>[Name](microsoft-windows-tapisetup-tapiunattendlocatio-nname.md)</p></td>
 <td><p>Specifies the name of this location. This appears in the user interface (UI).</p></td>
 </tr>
 <tr class="even">
-<td><p>[OutsideAccess](microsoft-windows-tapisetuptapiunattendlocationoutsideaccess.md)</p></td>
+<td><p>[OutsideAccess](microsoft-windows-tapisetup-tapiunattendlocation-outsideaccess.md)</p></td>
 <td><p>Specifies the number to dial to access an outside line from this location.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PulseOrToneDialing](microsoft-windows-tapisetuptapiunattendlocationpulseortonedialing.md)</p></td>
+<td><p>[PulseOrToneDialing](microsoft-windows-tapisetup-tapiunattendlocation-pulseortonedialing.md)</p></td>
 <td><p>Specifies whether to use pulse dialing or tone dialing.</p></td>
 </tr>
 </tbody>
@@ -75,12 +75,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md) | **TapiUnattendLocation**
+[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md) | **TapiUnattendLocation**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md).
 
 ## XML Example
 
@@ -104,7 +104,7 @@ The following XML output shows how to set the location from which you are callin
 ## Related topics
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md)
+[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md)
 
  
 

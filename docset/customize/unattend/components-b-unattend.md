@@ -249,7 +249,7 @@ The topics in this section describe all of the unattended settings that can be s
 <td><p>Contains settings to adjust the Tablet PC user interface.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md)</p></td>
+<td><p>[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md)</p></td>
 <td><p>Implements the Telephony API (TAPI).</p></td>
 </tr>
 <tr class="even">

@@ -66,7 +66,7 @@ The following XML output shows how to disable ICMP redirects.
 ## Related topics
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip-win7-microsoft-windows-tcpip.md)
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md)
 
  
 

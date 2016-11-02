@@ -45,12 +45,12 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md) | **TapiConfigured**
+[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md) | **TapiConfigured**
 
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md).
 
 ## XML Example
 
@@ -64,7 +64,7 @@ The following XML output shows how to rewrite the configured telephony locations
 ## Related topics
 
 
-[Microsoft-Windows-TapiSetup](microsoft-windows-tapisetup-win7-microsoft-windows-tapisetup.md)
+[microsoft-windows-tapisetup-](microsoft-windows-tapisetup.md)
 
  
 

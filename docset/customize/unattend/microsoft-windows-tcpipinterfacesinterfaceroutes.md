@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Routes` contains entries that specify IPv4 or IPv6 routes.
 
 **Note**  
-The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md), [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md), [Identifier](microsoft-windows-tcpipinterfacesinterfaceidentifier.md), [UnicastIpAddresses](microsoft-windows-tcpipinterfacesinterfaceunicastipaddresses.md), and then Routes. After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
+The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then Routes. After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
  
 
@@ -30,7 +30,7 @@ The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md)</p></td>
+<td><p>[Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md)</p></td>
 <td><p>Specifies an individual IPv4 or IPv6 route.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | **Routes**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **Routes**
 
 ## Applies To
 
@@ -125,7 +125,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Interface](microsoft-windows-tcpipinterfacesinterface.md)
+[Interface](microsoft-windows-tcpip-interfaces-interface.md)
 
  
 

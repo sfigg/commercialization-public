@@ -1,21 +1,19 @@
 ---
-title: Metric
-description: Metric
+title: DhcpEnabled
+description: DhcpEnabled
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 19be08e4-9aa3-4d30-89de-528a40de77ab
+ms.assetid: 16d5b856-f557-4b81-bf5c-0980ccbb1a40
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Metric
+# DhcpEnabled
 
 
-`Metric` specifies the interface metric for the IPv6 protocol. When routes are chosen, the overall metric used to determine the preference is the sum of the route metric and the interface metric. Typically, the interface metric gives preference to a particular interface, such as using wired if both wired and wireless are available.
-
-If a preference is not specified, the stack will choose an automatic metric, such as automatically preferring wired over wireless.
+`DhcpEnabled` specifies whether the Dynamic Host Configuration Protocol (DHCP) is enabled for the IPv6 protocol.
 
 ## Values
 
@@ -27,8 +25,12 @@ If a preference is not specified, the stack will choose an automatic metric, suc
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>metric</em></p></td>
-<td><p>Specifies the interface metric for the IPv6 protocol. The range is from five (more than 2 gigabytes (GB) per second) to fifty (less than 500 kilobytes (KB) per second).</p></td>
+<td><p><strong>true</strong></p></td>
+<td><p>Enables DHCP for the IPv6 protocol on this interface.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>false</strong></p></td>
+<td><p>Disables DHCP for the IPv6 protocol on this interface. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -45,12 +47,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md) | **Metric**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md) | **DhcpEnabled**
 
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
@@ -122,13 +124,13 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md)
+[Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Metric%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20DhcpEnabled%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

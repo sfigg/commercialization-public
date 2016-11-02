@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `Ipv6Settings` contains settings for the IPv6 protocol.
 
 **Note**  
-The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md), Ipv6Settings, [Identifier](microsoft-windows-tcpipinterfacesinterfaceidentifier.md), [UnicastIpAddresses](microsoft-windows-tcpipinterfacesinterfaceunicastipaddresses.md), and then [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md), as shown in the XML example below.
+The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md),  [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md), as shown in the XML example below.
 
  
 
@@ -30,15 +30,15 @@ The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DhcpEnabled](microsoft-windows-tcpipinterfacesinterfaceipv6settingsdhcpenabled.md)</p></td>
+<td><p>[DhcpEnabled](microsoft-windows-tcpip-interfaces-interface-ipv6settings-dhcpenabled.md)</p></td>
 <td><p>Specifies whether the Dynamic Host Configuration Protocol (DHCP) is enabled for the IPv6 protocol.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Metric](microsoft-windows-tcpipinterfacesinterfaceipv6settingsmetric.md)</p></td>
+<td><p>[Metric](microsoft-windows-tcpip-interfaces-interface-ipv6settings-metric.md)</p></td>
 <td><p>Specifies the metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RouterDiscoveryEnabled](microsoft-windows-tcpipinterfacesinterfaceipv6settingsrouterdiscoveryenabled.md)</p></td>
+<td><p>[RouterDiscoveryEnabled](microsoft-windows-tcpip-interfaces-interface-ipv6settings-routerdiscoveryenabled.md)</p></td>
 <td><p>Specifies whether the router discovery protocol—which informs hosts of the existence of routers—is enabled for the IPv6 protocol.</p></td>
 </tr>
 </tbody>
@@ -56,7 +56,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | **Ipv6ettings**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **Ipv6ettings**
 
 ## Applies To
 
@@ -133,7 +133,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Interface](microsoft-windows-tcpipinterfacesinterface.md)
+[Interface](microsoft-windows-tcpip-interfaces-interface.md)
 
  
 

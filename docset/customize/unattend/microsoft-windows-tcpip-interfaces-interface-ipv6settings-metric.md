@@ -1,30 +1,21 @@
 ---
-title: Identifier
-description: Identifier
+title: Metric
+description: Metric
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 21a5ee52-ddfb-485c-ac93-945278790b24
+ms.assetid: 19be08e4-9aa3-4d30-89de-528a40de77ab
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Identifier
+# Metric
 
 
-`Identifier` specifies the interface to apply to the other settings within [Interface](microsoft-windows-tcpipinterfacesinterface.md). It can be expressed in any one of the following ways:
+`Metric` specifies the interface metric for the IPv6 protocol. When routes are chosen, the overall metric used to determine the preference is the sum of the route metric and the interface metric. Typically, the interface metric gives preference to a particular interface, such as using wired if both wired and wireless are available.
 
--   The string representation of an interface net locally unique identifier (NetLUID) (0x6000001000000)
-
--   The interface alias (for example, Local Area Connection)
-
--   The interface MAC address (00-11-22-33-44-55)
-
-**Note**  
-The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpipinterfacesinterfaceipv4settings.md), [Ipv6Settings](microsoft-windows-tcpipinterfacesinterfaceipv6settings.md), Identifier, [UnicastIpAddresses](microsoft-windows-tcpipinterfacesinterfaceunicastipaddresses.md), and then [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
-
- 
+If a preference is not specified, the stack will choose an automatic metric, such as automatically preferring wired over wireless.
 
 ## Values
 
@@ -36,18 +27,11 @@ The settings in [Interface](microsoft-windows-tcpipinterfacesinterface.md) must 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><em>Identifier</em></p></td>
-<td><p>Specifies the interface to apply to the other settings within <code>Interface</code>. <em>Identifier</em> is a string with a maximum length of 256 characters.</p></td>
+<td><p><em>metric</em></p></td>
+<td><p>Specifies the interface metric for the IPv6 protocol. The range is from five (more than 2 gigabytes (GB) per second) to fifty (less than 500 kilobytes (KB) per second).</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
-This string type does not support empty elements. Do not create an empty value for this setting.
-
-**Note**  
-In computers with multiple occurrences of the same type of network interface, such as a LAN connection, the LUID and interface aliases for each interface are not guaranteed to be the same between different builds. After installation, verify that the settings were applied to the correct interface.
 
  
 
@@ -61,12 +45,12 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | **Identifier**
+[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md) | **Metric**
 
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md).
 
 ## XML Example
 
@@ -87,7 +71,7 @@ The following XML output shows how to configure TCPIP.
             <Metric>30</Metric> 
             <RouterDiscoveryEnabled>true</RouterDiscoveryEnabled> 
          </Ipv6Settings>
-      <!-- Target the interface with identifier "Ethernet 1" -->         <Identifier>Ethernet 1</Identifier>
+      <Identifier>Ethernet 1</Identifier>
          <UnicastIpAddresses>
            <IpAddress wcm:action="add" wcm:keyValue="1">192.168.0.1/24</IpAddress>
            <IpAddress wcm:action="add" wcm:keyValue="2">ffff:1::3/48</IpAddress>
@@ -138,13 +122,13 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Interface](microsoft-windows-tcpipinterfacesinterface.md)
+[Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Identifier%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Metric%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

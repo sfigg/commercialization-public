@@ -1,21 +1,26 @@
 ---
-title: Interfaces
-description: Interfaces
+title: Interface
+description: Interface
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: d84ed504-c707-47ac-8087-0e1b0229d6ce
+ms.assetid: d8e46af0-a0e1-4489-a4b1-167a39759f58
 ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: msdn
 ---
 
-# Interfaces
+# Interface
 
 
-`Interfaces` specifies details about the TCP/IP interface settings.
+`Interface` contains settings for the TCP/IP interface.
 
 TCP/IP settings can be divided into two primary groups—global settings and interface settings. Global settings apply to the protocols as a whole and are applied across all network interfaces. Interface settings are specific to a particular network interface.
+
+**Note**  
+The settings in Interface must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface--ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface--ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface--identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface--unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface--routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
+
+ 
 
 ## Child Elements
 
@@ -27,8 +32,24 @@ TCP/IP settings can be divided into two primary groups—global settings and int
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-tcpipinterfacesinterface.md)</p></td>
-<td><p>Contains settings for the TCP/IP interface.</p></td>
+<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface--identifier.md)</p></td>
+<td><p>Specifies the interface to apply to the other settings within <code>Interface</code>.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Ipv4Settings](microsoft-windows-tcpip-interfaces-interface--ipv4settings.md)</p></td>
+<td><p>Specifies settings for the IP version 4 interface.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-i-pv6settings.md)</p></td>
+<td><p>Specifies settings for the IP version 6 interface.</p></td>
+</tr>
+<tr class="even">
+<td><p>[Routes](microsoft-windows-tcpip-interfaces-interface--routes.md)</p></td>
+<td><p>Specifies the IPv4 and IPv6 routes.</p></td>
+</tr>
+<tr class="odd">
+<td><p>[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface--unicastipaddresses.md)</p></td>
+<td><p>Specifies the unicast IP addresses for the IPv4 and IPv6 settings.</p></td>
 </tr>
 </tbody>
 </table>
@@ -44,8 +65,7 @@ windowsPE
 
 ## Parent Hierarchy
 
-
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | **Interfaces**
+microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | **Interface**
 
 ## Applies To
 
@@ -122,13 +142,13 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md)
+[Interfaces](microsoft-windows-tcpip-interfaces.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Interfaces%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Interface%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

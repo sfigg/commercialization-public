@@ -27,19 +27,19 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-tcpipinterfacesinterfaceroutesrouteidentifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface-routesrouteidentifier.md)</p></td>
 <td><p>Specifies a unique integer for each route.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Metric](microsoft-windows-tcpipinterfacesinterfaceroutesroutemetric.md)</p></td>
+<td><p>[Metric](microsoft-windows-tcpip-interfaces-interface-routesroutemetric.md)</p></td>
 <td><p>Specifies the metric used to distinguish between multiple matching routes of the same prefix length.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NextHopAddress](microsoft-windows-tcpipinterfacesinterfaceroutesroutenexthopaddress.md)</p></td>
+<td><p>[NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routesroutenexthopaddress.md)</p></td>
 <td><p>Specifies the IP address of the next hop in the route.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Prefix](microsoft-windows-tcpipinterfacesinterfaceroutesrouteprefix.md)</p></td>
+<td><p>[Prefix](microsoft-windows-tcpip-interfaces-interface-routesrouteprefix.md)</p></td>
 <td><p>Specifies the prefix to match to each route.</p></td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md) | **Route**
+[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | **Route**
 
 ## Applies To
 
@@ -134,7 +134,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md)
+[Routes](microsoft-windows-tcpip-interfaces-interface-routes.md)
 
  
 

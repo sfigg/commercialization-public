@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # NextHopAddress
 
 
-`NextHopAddress` specifies the IP address of the next hop in the [Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md).
+`NextHopAddress` specifies the IP address of the next hop in the [Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md).
 
 `NextHopAddress` can also be used to specify the default gateway in network configuration.
 
@@ -30,7 +30,7 @@ The settings under [Route](http://go.microsoft.com/fwlink/?LinkId=254767) must b
 <tbody>
 <tr class="odd">
 <td><p><em>Nexthopaddress</em></p></td>
-<td><p>Specifies the IP address of the next hop in the [Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md). <em>Nexthopaddress</em> is a string with a maximum length of 45 characters.</p></td>
+<td><p>Specifies the IP address of the next hop in the [Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md). <em>Nexthopaddress</em> is a string with a maximum length of 45 characters.</p></td>
 </tr>
 </tbody>
 </table>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpipinterfacesinterface.md) | [Routes](microsoft-windows-tcpipinterfacesinterfaceroutes.md) | [Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md) | **NextHopAddress**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | [Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md) | **NextHopAddress**
 
 ## Applies To
 
@@ -183,7 +183,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[Route](microsoft-windows-tcpipinterfacesinterfaceroutesroute.md)
+[Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md)
 
  
 
