@@ -6714,7 +6714,6 @@ Footnote:
 > -   MaxDevicePasswordFailedAttempts
 > -   MaxInactivityTimeDeviceLock
 > -   MinDevicePasswordComplexCharacters
-
 <br>
 
 > **Important**  
@@ -6765,7 +6764,7 @@ Footnote:
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Home.
 
 
 <p style="margin-left: 20px">Value type is a string, which is the full image filepath and filename.
@@ -7651,8 +7650,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 > **Note**  This policy has been deprecated in Windows 10, version 1607
-
-&nbsp;
+<br>
 
 > **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
