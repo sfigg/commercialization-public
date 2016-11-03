@@ -21,7 +21,7 @@ Here's how we'll refer to them:
 
 -   **IoT device**: A test device or board that represents all of the devices in a single model line.
 
-    For our examples, you'll need a MinnowBoard Max or Raspberry Pi 2. These guides do not include sample files for the Qualcomm Dragonboard or the Raspberry Pi 3. To learn more, see [Windows compatible hardware development boards](https://msdn.microsoft.com/library/windows/hardware/dn914597).
+    For our examples, you'll need a MinnowBoard Max or Raspberry Pi 2. To see more options, see [Device options](https://developer.microsoft.com/windows/iot/explore/deviceoptions).
 
 -   An **HDMI cable**, and a **monitor or TV** with a dedicated HDMI input. We'll use this to verify that the image is loaded and that our sample apps are running.
 
