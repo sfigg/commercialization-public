@@ -14,11 +14,11 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 * Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
 
--  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 9: Update the recovery image](update-the-recovery-image.md).
+-  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-Note: To add drivers that include an installation package, see [Lab 11: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+Note: To add drivers that include an installation package, see [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 
 ## <span id="Mount_the_image"></span>Mount the image
 
@@ -52,15 +52,21 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 	
 **Step 3: Add a Windows update package**
 
-1.  From Microsoft Connect, download the Windows update. Save this in the folder: C:\\WindowsUpdates.
+1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the (Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
 
-2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command.
+2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
+
+    Example: adding a cumulative update:
 
     ``` syntax
-    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\kb1010101.cab" /PackagePath="C:\WindowsUpdates\kb1020202.cab" /PackagePath="C:\WindowsUpdates\kb1030303.cab" /LogPath=C:\mount\dism.log
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu"  /LogPath=C:\mount\dism.log
     ```
 
-    where C is the drive letter of the drive and `kb1010101.cab`, `kb1020202.cab`, and `kb3030303.cab` are update packages that you’re adding to the image.
+    Example: adding multiple updates:
+
+    ``` syntax
+    Dism /Add-Package /Image:"C:\mount\windows" /PackagePath="C:\WindowsUpdates\windows10.0-kb00001-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00002-x64.msu" /PackagePath="C:\WindowsUpdates\windows10.0-kb00003-x64.msu" /LogPath=C:\mount\dism.log
+    ```
 
 3.  Lock in the updates, so that they are restored during a recovery. 
 
@@ -86,10 +92,11 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 
 Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
 
-1.  Boot the reference PC to Windows PE.
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
-4.  Disconnect the drives, then reboot (`exit`).
+1.  Copy the image file to the storage drive.
+2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
+3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+5.  Disconnect the drives, then reboot (`exit`).
 
 **Step 6: Verify updates**
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).

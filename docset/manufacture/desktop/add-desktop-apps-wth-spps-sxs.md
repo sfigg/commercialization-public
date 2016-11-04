@@ -1,17 +1,17 @@
 ---
 author: KPacquer
-Description: 'Lab 11: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)'
+Description: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 11: Add Windows desktop applications with siloed provisioning packages'
+title: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ---
-# Lab 11: Add Windows desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)
+# Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)
 
-Install Windows desktop applications by capturing them into siloed provisioning packages (SPPs).
+Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).
 
 SPPs are a new type of provisioning package that is available for Windows 10, version 1607. In previous versions of Windows 10, to capture these applications, you'd capture them all at once into a single provisioning package.  
 
-With SPPs, you can capture individual Windows desktop applications, .exe-style drivers (), and Windows settings. You can then apply these to your PCs after you've applied the Windows image. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.    
+With SPPs, you can capture individual Windows desktop applications, .exe-style drivers, and Windows settings. You can then apply these to your PCs after you've applied the Windows image. This provides more flexibility for the manufacturing process and helps reduce the time required to build PCs that run Windows.    
 
 SPPs also support capturing add-on packs for apps that include optional components, like application language packs.
 
@@ -21,7 +21,7 @@ When you apply SPPs to a Compact OS system, the applications in that SPP are sin
 
 **Notes**
 
-* To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
+*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
 
 ## Best practices while capturing applications: use clean installations
 
@@ -57,9 +57,46 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 4.  For VMs, create a checkpoint for this clean, freshly-installed Windows image.
 
-## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 3: Install and capture a Windows desktop application
+## <span id="Capture_a_setting"></span><span id="capture_a_setting"></span>Step 3: Capture a setting (Windows Store ID)
 
-1.  Install a Windows desktop application. For example, to install Office 2016, put in a USB key with the Office installation program, open File Explorer and navigate to **oemsetup.en-us.cmd**. To learn more, download the Office OPK Update image from the Office OPK Connect site.
+Through the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
+
+Windows Store apps are at the center of the Windows 10 experience. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing software and services that add value to your PCs that you build.
+
+To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and the [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx).
+
+1.  Add a setting. For instance, add your Windows Store Program ID into the Windows registry:
+
+    a.  Start 'regedit'.
+
+    b.  Navigate to 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store'.
+
+    c.  Click **Edit > New > String Value**.
+
+    d.  Depending on your type of agreement, type `OEMID` or `StoreContentModifier`.
+
+    e.  Double-click either OEMID or StoreContentModifier, and in **Value**, type your Windows Store Program ID.
+
+2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
+
+    ``` syntax
+    E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\store.spp
+    ```
+
+    where *E* is the drive letter of the USB drive with ScanState.
+
+    **Optional**: Delete the ScanState logfile: `del C:\Scanstate.log`.
+
+## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 3: Install and capture a Windows desktop application (Microsoft Office)
+
+1.  Install a Windows desktop application. For example, to install Office 2016.
+
+    a.  On your technician PC, mount ISO for the deployment tool from " X21-05453 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-05495 SW DVD5 Office 2016 v16.2 Deployment Tool for OEM\X21-05495.img"
+
+    b.  Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.2
+    
+    c.  Double click e:\Officev16.2\officedeploymenttool.exe
+
 
 2.  Start a command prompt.
 
@@ -99,7 +136,9 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 	
 **Apply the image**
 
-Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. The short version:
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the image, and boot it up. 
+
+The short version:
 
 1.  Boot the reference PC to Windows PE.
 
@@ -107,7 +146,8 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
 
-**Apply the SPP**
+**Apply the SPPs**
+
 1.  Copy the ADK tools to a non-removable file location, such as the primary hard drive, which is assigned to W after the ApplyImage command. 
     Copying the file to a non-removable location avoids an error associated with installing DISM from removable drives.
     ``` syntax
@@ -123,17 +163,15 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 3.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     
     ```syntax
-    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
+    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\store.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
+
     To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
 
+**Apply the recovery image**
+1. 	Apply the recovery image after applying the SPPs: `D:\ApplyRecovery.bat`
 
-4. 	Apply the recovery image after applying the SPPs:
-	```syntax
-	D:\ApplyRecovery.bat
-	```
-
-5.  Disconnect the drives, then reboot (`exit`).
+2.  Disconnect the drives, then reboot (`exit`).
 	
 **Verify apps**
 

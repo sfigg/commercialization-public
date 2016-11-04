@@ -8,21 +8,17 @@ title: 'Lab 1c: Add a file and a registry setting to an image'
 
 # Lab 1c: Add a file and a registry setting to an image
 
-Many files and registry keys, and other customizations that you add to your image won't be specific to an architecture. For these, we recommend creating a common package that you can use for all of your builds.
+Files and registry keys that you add to your image often won't be specific to an architecture. For these, we recommend creating a common package that you can use across all of your device architectures.
  
 We'll create some test files and registry keys to the image, and again package them up so that they can be serviced after they reach your customers.
 
-We'll add these to a common feature manifest (OEMCommonFM.xml), which is used in both your x86 and ARM builds. Give it a new feature ID, OEM\_FileAndRegKey.
+We'll add these to the common feature manifest (OEMCommonFM.xml), which is used in x86, x64, and ARM builds, and give it a new feature ID, OEM\_FilesAndRegKeys.
 
-To add the features to the image, we'll go to our Product A, add our Feature Manifest and Feature ID. We're also going to add a helper app, which is listed in feature manifest: OEMCommonFM.xml, with the ID: OEM\_CustomCmd.
-
-We'll add these FMs and Feature IDs to the test image configuration file (TestOEMInput.xml).
-
-Finally, we'll rebuild the project and make sure it works.
+For this lab, we'll start an new product, ProductB, so that later we can use the IoT sample app to get the IP address of our device and verify that our files and reg keys have made it. 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-We'll start with the ProjectA image we created from [Lab 1a: Create a basic image](create-a-basic-image.md), and updated in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
@@ -35,16 +31,16 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
 2.  Create a working folder for the registry key and test files, for example:
 
     ``` syntax
-    newcommonpkg Registry.ConfigSettings
+    newcommonpkg Registry.FilesAndRegKeys
     ```
 
-    The new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
+    The new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\**.
 
 ### <span id="Add_sample_files_to_the_package"></span>Add sample files to the package
 
-1.  Copy your sample files (TestFile1.txt and TestFile2.txt), into the new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\**.
+1.  Copy your sample files (TestFile1.txt and TestFile2.txt), into the new folder at **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\**.
 
-2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.ConfigSettings\\Registry.ConfigSettings.pkg.xml**:
+2.  Update the package definition file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\Registry.FilesAndRegKeys\\Registry.FilesAndRegKeys.pkg.xml**:
 
     a.  Remove the comment marks and instructions.
 
@@ -72,118 +68,137 @@ We'll start with the ProjectA image we created from [Lab 1a: Create a basic imag
       </OSComponent> 
     ```
 
-2.  From the IoT Core Shell, build the package. (The BuildAllPackages tool builds everything in the source folders.)
+2.  From the IoT Core Shell, build the package. (The `BuildPkg All` command builds everything in the source folders.)
 
     ``` syntax
-    buildpkg Registry.ConfigSettings
+    buildpkg Registry.FilesAndRegKeys
     ```
 
-    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Registry.ConfigSettings.cab**.
+    The package is built, appearing as **C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\pkgs\\&lt;your OEM name&gt;.Registry.FilesAndRegKeys.cab**.
 
-    All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for another architecture, use **setenv &lt;arch&gt;**, then **BuildAllPackages** to rebuild everything for your other architecture.
+    All packages that you build appear in your architecture-specific folder. Tip: to quickly rebuild for another architecture, use **setenv &lt;arch&gt;**, then **`BuildPkg All`** to rebuild everything for your other architecture.
 
     **Troubleshooting**: If you get an error: "The elementRegKeys in namespace 'urn:Microsoft.WindowsPhone/PackageSchema.v8.00' has incomplete content", remove the comments and instructions. If you don't want to include a reg key or a file, then remove these XML elements. 
 
 ## <span id="Update_your_feature_manifest"></span><span id="update_your_feature_manifest"></span><span id="UPDATE_YOUR_FEATURE_MANIFEST"></span>Update your feature manifest
 
-**Add your file package to the feature manifest and project configuration file**
-
 1.  Open the common feature manifest file, **C:\\IoT-ADK-AddonKit\\Common\\Packages\\OEMCommonFM.xml**
 
-2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_ConfigSettings".
+2.  Create a new PackageFile section in the XML, with your package file listed, and give it a new FeatureID, such as "OEM\_FilesAndRegKeys".
 
     ``` syntax
     <Features>
       <OEM>
         <!-- Feature definitions below -->
-
-        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Provisioning.Manual.cab">
+        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.FilesAndRegKeys.cab">
           <FeatureIDs>
-            <!-- This feature id brings in provisioning packages for manual installation via Custom.Cmd -->
-            <!-- Depends on OEM_CustomCmd -->
-          <FeatureID>OEM_ProvManual</FeatureID>
-            <!-- OEMCommon_ALL includes ProvAuto, so this is not included -->
-          </FeatureIDs>
-
-        <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.ConfigSettings.cab">
-          <FeatureIDs>
-            <FeatureID>OEM_ConfigSettings</FeatureID>
+            <FeatureID>OEM_FilesAndRegKeys</FeatureID>
           </FeatureIDs>
         </PackageFile>
     ```
 
-    You'll now be able to add your test files and reg keys to any of your products by adding a reference to this feature manifest and Feature ID.
+    You'll now be able to add your files and registry keys to any of your products by adding a reference to this feature manifest and Feature ID.
 
-3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductA\\TestOEMInput.xml:
 
-    1. Make sure the feature manifest: **OEMCommonFM.xml** is included, removing comment marks if necessary.
+## <span id="Create_a_new_product"></span><span id="create_a_basic_image"></span><span id="CREATE_A_BASIC_IMAGE"></span>Create a new product
 
-        ``` syntax
-        <AdditionalFMs>
-          <!-- Including BSP feature manifest -->
-          <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
-          <!-- Including OEM feature manifest-->
-          <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
-          <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
-          <!-- Including the test features -->
-          <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
-        </AdditionalFMs>
-        ```
+1.  Create a new product folder. 
 
-    2.  Make sure the feature: **OEM_ProvAuto** is included, removing comment marks if necessary.
+    ``` syntax
+    newproduct ProductB
+    ```
 
-        ``` syntax
-        <OEM>
-          <!-- Include BSP Features -->
-          <Feature>RPI2_DRIVERS</Feature>
-          <Feature>RPI3_DRIVERS</Feature>
-          <!-- Include OEM features-->
-          <Feature>OEM_AppxMain</Feature>
-          <Feature>OEM_CustomCmd</Feature>
-          <Feature>OEM_ProvAuto</Feature>
-        </OEM>
-        ```
+## <span id="Update_your_configuration_file"></span>Update your product configuration file
+
+1.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
+
+    Make sure the feature manifest: **OEMCommonFM.xml** is included, removing comment marks if necessary.
+
+    ``` syntax
+    <AdditionalFMs>
+      <!-- Including BSP feature manifest -->
+      <AdditionalFM>%BSPSRC_DIR%\RPi2\Packages\RPi2FM.xml</AdditionalFM>
+      <!-- Including OEM feature manifest-->
+      <AdditionalFM>%COMMON_DIR%\Packages\OEMCommonFM.xml</AdditionalFM>
+      <AdditionalFM>%SRC_DIR%\Packages\OEMFM.xml</AdditionalFM>
+      <!-- Including the test features -->
+      <AdditionalFM>%AKROOT%\FMFiles\arm\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    </AdditionalFMs>
+    ```
+
+2.  Update the features included in the product: 
+
+    a. Make sure the sample apps are included (especially the IOT_BERTHA app).
+
+    b. Add the OEM features: OEM_AppxMain, OEM_CustomCmd, and OEM_ProvAuto, by removing the comment tags (_<!-- --_>) in this section. 
+
+    c. Add the FeatureID for your registry package, example: OEM_FilesAndRegKeys.
+    
+    ``` syntax
+    <Features>
+      <Microsoft>
+    
+      ...
+      
+      <!-- Sample Apps, remove this when you introduce OEM Apps -->
+      <Feature>IOT_BERTHA</Feature>
+      <Feature>IOT_ALLJOYN_APP</Feature>
+      <Feature>IOT_NANORDPSERVER</Feature>
+      <Feature>IOT_SHELL_HOTKEY_SUPPORT</Feature>
+      <Feature>IOT_APPLICATIONS</Feature>
+      <Feature>IOT_ENABLE_ADMIN</Feature>
+      </Microsoft>
+      <OEM>
+        <!-- Include BSP Features -->
+        <Feature>RPI2_DRIVERS</Feature>
+        <Feature>RPI3_DRIVERS</Feature>
+        <!-- Include OEM features -->
+        <Feature>OEM_AppxMain</Feature>
+        <Feature>OEM_CustomCmd</Feature>
+        <Feature>OEM_ProvAuto</Feature>
+        <Feature>OEM_FilesAndRegKeys</Feature>
+     </OEM>
+    ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-**Build the image**
+Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
-1.  From the IoT Core Shell, create the image:
+1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
+2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
+4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
+5.  Put the card into the IoT device and start it up.
 
-    ``` syntax
-    buildimage ProductA Test
-    ```
+After a short while, you should see the [IoT test (Bertha) app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) which shows basic info about the image.
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
+## <span id="See_your_files"></span>See if your files made it
 
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
+1.  Connect both your technician PC and the device to the same ethernet network. 
 
-**Test to see if your files made it**
+    For example, to connect over a wired network, plug in a ethernet cable. To connect directly to the device, plug a network cable directly from your technician PC to the device.   
 
-1.  Put the card into the IoT device and start it up.
+2.  On the test app, note the IP address, for example, 10.100.0.100. 
 
-    After a short while, the device should start automatically, and you should see your app.
-
-
-2.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
+3.  On your technician PC, open File Explorer, and type in the IP address of the device with a \\\\ prefix and \\c$ suffix:
 
     ``` syntax
     \\10.100.0.100\c$
     ```
 
-	Use the username and password that you created in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md) to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
+	Use the devicename, the default Administrator account, and password to log on. (Default is: minwinpc\\Administrator / p@ssw0rd)
 
-3.  Check to see if the files exist. Look for:
+4.  Check to see if the files exist. Look for:
 
     \\\\10.100.0.100\c$\\Windows\\system32\\TestFile1.txt
 
     \\\\10.100.0.100\c$\\OEMInstall\\TestFile2.txt
 
-**Check to see if your reg key exists**
+## <span id="See_your_regkeys"></span>See if your registry keys exist
 
 1.  On your technician PC, connect to your device using an SSH client, such as [PuTTY](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). For example, use the IP address and port 22 to connect to the device, then log in using the Administrator account and password. (To learn more, see [SSH](https://developer.microsoft.com/en-us/windows/iot/docs/ssh).)
 
-2.  From the command line in the SSH client, query the system for the reg key.
+2.  From the command line in the SSH client, query the system for the registry key.
 
     ``` syntax
     reg query HKLM\Software\Fabrikam\Test

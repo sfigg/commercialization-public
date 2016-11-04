@@ -13,19 +13,6 @@ You can use audit mode to customize your computer, add applications and device d
 
 If a password-protected screen saver starts when you are in audit mode, you cannot log back on to the system. The built-in administrator account that is used to log on to audit mode is immediately disabled after logon. To disable the screen saver, either change the power plan through Windows Control Panel or configure and deploy a custom plan. For more information, see [Create a Custom Power Plan](create-a-custom-power-plan-technicalreference.md).
 
-In this topic:
-
--   [Boot to audit mode automatically on a new installation](#bkmk-1)
-
--   [Boot to audit mode manually](#bkmk-2)
-
--   [Boot to OOBE automatically on a new installation](#bkmk-3)
-
--   [Modify an existing image that is configured to boot to OOBE](#bkmk-4)
-
--   [Boot to audit mode automatically from an existing image](#bkmk-5)
-
--   [Deployment examples](#bkmk-6)
 
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Boot to audit mode automatically on a new installation
 

@@ -10,7 +10,7 @@ In this lab, we'll add the sample driver: [Hello, Blinky!](https://developer.mic
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--  Complete [Lab 1a: Create a basic image](create-a-basic-image.md).
+* Create a product folder (ProductB) that's set up to boot to the default (Bertha) app, as shown in [Lab 1a: Create a basic image](create-a-basic-image.md) or [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 ## <span id="Check_for_similar_drivers"></span>Check for similar drivers
 
@@ -24,7 +24,7 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 
 ## <span id="Create_your_test_files"></span><span id="create_your_test_files"></span><span id="CREATE_YOUR_TEST_FILES"></span>Create your test files
 
--  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab3) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
+-  Complete the exercises in [Installing The Sample Driver](https://developer.microsoft.com/en-us/windows/iot/samples/driverlab1) to build the Hello, Blinky app. You'll create three files: ACPITABL.dat, gpiokmdfdemo.inf, and gpiokmdfdemo.sys, which you'll use to install the driver.
 
    You can also use your own IoT Core driver, so long as it doesn't conflict with the existing Board Support Package (BSP).
 
@@ -117,33 +117,28 @@ For example, review the list of drivers in the file: \\IoT-ADK-AddonKit\\Source-
 3.  Add the FeatureID for your driver:
 
     ``` syntax
-    <OEM> 
-    <Feature>RPI2_DRIVERS</Feature> 
-    <Feature>RPI2_DEVICE_TARGETINGINFO</Feature> 
-    <Feature>PRODUCTION</Feature> 
-    <Feature>OEM_AppxHelloWorld</Feature> 
-    <Feature>OEM_FileAndRegKey</Feature> 
-    <Feature>OEM_DriverHelloBlinky</Feature> 
+    <OEM>
+      <!-- Include BSP Features -->
+      <Feature>RPI2_DRIVERS</Feature>
+      <Feature>RPI3_DRIVERS</Feature>
+      <!-- Include OEM features-->
+      <Feature>OEM_AppxMain</Feature>
+      <Feature>OEM_CustomCmd</Feature>
+      <Feature>OEM_ProvAuto</Feature>
+      <Feature>OEM_FilesAndRegKeys</Feature>
+      <Feature>OEM_DriverHelloBlinky</Feature> 
     </OEM>
     ```
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-**Build the image**
+Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
-1.  From the IoT Core Shell, create the image:
-
-    ``` syntax
-    createimage ProductA Test
-    ```
-
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
-
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
-
-3.  Put the card into the IoT device and start it up.
-
-    After a short while, the device should start automatically, and you should see your app.
+1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
+2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
+4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
+5.  Put the card into the IoT device and start it up.
 
 **Check to see if your driver works**
 

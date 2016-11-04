@@ -169,7 +169,7 @@ Occasionally, a Windows update may require you to update the Windows RE image.
 -   Add the Windows update package, for example, C:\\MSU\\Windows8.1-KB123456-x64.msu.
 
     ``` syntax
-    Dism /Add-Package /PackagePath:C:\MSU\Windows8.1-KB123456-x64.msu /Image:C:\WinPE_amd64\mount /LogPath:AddPackage.log
+    Dism /Add-Package /PackagePath:C:\MSU\Windows8.1-KB123456-x64.msu /Image:C:\mount\winre /LogPath:AddPackage.log
     ```
 
 ## <span id="Step_6__Optimizing_the_image__part_1__optional_"></span><span id="step_6__optimizing_the_image__part_1__optional_"></span><span id="STEP_6__OPTIMIZING_THE_IMAGE__PART_1__OPTIONAL_"></span>Step 6: Optimizing the image, part 1 (optional)
