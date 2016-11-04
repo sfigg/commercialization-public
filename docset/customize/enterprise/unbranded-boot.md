@@ -232,7 +232,7 @@ If Windows has not been installed and you are using Windows ICD to create instal
 
 In the following image, the BootLogo is identified by the green outline, the BootStatusIndicator is identified by the red outline, and the BootStatusMessage is identified by the blue outline.
 
-![unbranded boot screen](../images/boot.jpg)
+![unbranded boot screen](images/boot.jpg)
 
 ## <a href="" id="replace-logo"></a>Replace the startup logo
 
