@@ -48,7 +48,9 @@ Displays information about app packages (.appx or .appxbundle), in an image, tha
 
 **Dism /Image:C:\\test\\offline /Get-ProvisionedAppxPackages**
 
-### <span id="_Add-ProvisionedAppxPackage____FolderPath___App_folder_path____SkipLicense____CustomDataPath___custom_file_path_______PackagePath___main_package_path____DependencyPackagePath___dependency_package_path______LicenseFile___license_file_path_____SkipLicense_____CustomDataPath___custom_file_path____"></span><span id="_add-provisionedappxpackage____folderpath___app_folder_path____skiplicense____customdatapath___custom_file_path_______packagepath___main_package_path____dependencypackagepath___dependency_package_path______licensefile___license_file_path_____skiplicense_____customdatapath___custom_file_path____"></span><span id="_ADD-PROVISIONEDAPPXPACKAGE____FOLDERPATH___APP_FOLDER_PATH____SKIPLICENSE____CUSTOMDATAPATH___CUSTOM_FILE_PATH_______PACKAGEPATH___MAIN_PACKAGE_PATH____DEPENDENCYPACKAGEPATH___DEPENDENCY_PACKAGE_PATH______LICENSEFILE___LICENSE_FILE_PATH_____SKIPLICENSE_____CUSTOMDATAPATH___CUSTOM_FILE_PATH____"></span>/Add-ProvisionedAppxPackage { /FolderPath:&lt; App\_folder\_path&gt; \[/SkipLicense\] \[/CustomDataPath:&lt; custom\_file\_path&gt;\] | /PackagePath:&lt; main\_package\_path&gt; \[/DependencyPackagePath:&lt; dependency\_package\_path&gt;\] {\[/LicenseFile:&lt; license\_file\_path&gt;\]|\[/SkipLicense\]} \[/CustomDataPath:&lt; custom\_file\_path&gt;\] }
+### <span id="Add-ProvisionedAppxPackage"></span>/Add-ProvisionedAppxPackage
+
+**/Add-ProvisionedAppxPackage { /FolderPath:&lt; App\_folder\_path&gt; \[/SkipLicense\] \[/CustomDataPath:&lt; custom\_file\_path&gt;\] | /PackagePath:&lt; main\_package\_path&gt; \[/DependencyPackagePath:&lt; dependency\_package\_path&gt;\] {\[/LicenseFile:&lt; license\_file\_path&gt;\]|\[/SkipLicense\]} \[/CustomDataPath:&lt; custom\_file\_path&gt;\] }**
 
 Adds one or more app packages to the image.
 
@@ -112,7 +114,9 @@ Examples:
 
 **Dism /Image:C:\\test\\offline /Add-ProvisionedAppxPackage /PackagePath:C:\\Test\\Apps\\MyPackedApp\\MainPackage.appxbundle /SkipLicense**
 
-### <span id="_Remove-ProvisionedAppxPackage__PackageName___PackageName_"></span><span id="_remove-provisionedappxpackage__packagename___packagename_"></span><span id="_REMOVE-PROVISIONEDAPPXPACKAGE__PACKAGENAME___PACKAGENAME_"></span>/Remove-ProvisionedAppxPackage /PackageName:&lt; PackageName&gt;
+### <span id="Remove-ProvisionedAppxPackage"></span>/Remove-ProvisionedAppxPackage
+
+**/Remove-ProvisionedAppxPackage /PackageName:&lt; PackageName&gt;**
 
 Removes provisioning for app packages (.appx or .appxbundle) from the image. App packages will not be registered to new user accounts that are created.
 
@@ -159,8 +163,6 @@ For example, an app might support English (US), French (France), and Spanish (Sp
 **Important**  
 If you add or remove a language pack from an image, you change the applicability context which may result in leaving an incorrect or incomplete set of resource packages in the image. When a language pack is added or removed, you must, once again, add all .appxbundle packages (including any dependency packages and Windows Store license file) to the image. This will ensure that the correct set of resource packages is provisioned.
 
- 
-
 ## <span id="Limitations"></span><span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
 
 
@@ -182,13 +184,3 @@ If you add or remove a language pack from an image, you change the applicability
 [Deployment Image Servicing and Management (DISM) Command-Line Options](deployment-image-servicing-and-management--dism--command-line-options.md)
 
 [Sideload Apps with DISM](sideload-apps-with-dism-s14.md)
-
- 
-
- 
-
-
-
-
-
-

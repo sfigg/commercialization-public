@@ -117,62 +117,40 @@ You can skip these steps if you've already created and tested your app.
     </AdditionalFMs>
     ```
 
-3.  Update the FeatureIds:
+3.  Change the features included in the product: 
 
-    a. Remove the FeatureID for the OEM_AppxMain.
+    a. Remove the sample test apps by adding comment tags: _<!-- --_>. (We'll use these apps again in later labs.)
 
-    b. Add the FeatureID for your app package (OEM_AppxHelloWorld)
+    b. Add the OEM features: OEM_AppxMain, OEM_CustomCmd, and OEM_ProvAuto, by removing the comment tags (_<!-- --_>) in this section. 
 
-    c. Add the FeatureID: **OEM\_CustomCmd** package, which installs and launches your app.
+    c. Add the FeatureID for your app package, example: OEM_AppxHelloWorld.
     
-    d. Update the placement of the comment tags (_<!-- --_>) so the OEM features are included in the file. 
-
     ``` syntax
-   <OEM>
-      <!-- Include BSP Features -->
-      <Feature>RPI2_DRIVERS</Feature>
-      <Feature>RPI3_DRIVERS</Feature>
-      <!-- Include OEM features -->
-      <Feature>OEM_AppxHelloWorld</Feature>
-      <Feature>OEM_CustomCmd</Feature>
-      <Feature>OEM_ProvAuto</Feature>
-   </OEM>
-    ```
-
-4.  Remove the FeatureID for the IoT Core default app (IOT\_BERTHA) and the IOT_ALLJOYN_APP either by using &lt;!-- ... --&gt; to comment it out, or delete it from the list:
-
-    ``` syntax
-     <Microsoft>
-       <Feature>IOT_EFIESP</Feature>
-       <Feature>IOT_DMAP_DRIVER</Feature>
-       <Feature>IOT_CP210x_MAKERDRIVER</Feature>
-       <Feature>IOT_FTSER2K_MAKERDRIVER</Feature>
-       <!-- Following two required for Appx Installation -->
-       <Feature>IOT_UAP_OOBE</Feature>
-       <Feature>IOT_APP_TOOLKIT</Feature>
-       <!-- for Connectivity -->
-       <Feature>IOT_WEBB_EXTN</Feature>
-       <Feature>IOT_POWERSHELL</Feature>
-       <Feature>IOT_NETCMD</Feature>
-       <Feature>IOT_SSH</Feature>
-       <Feature>IOT_SIREP</Feature>
-       <!-- Enabling Test images -->
-       <Feature>IOT_DISABLE_UMCI</Feature>
-       <Feature>IOT_ENABLE_TESTSIGNING</Feature>
-       <Feature>IOT_TOOLKIT</Feature>
-       <!-- Debug Features -->
-       <Feature>IOT_KDSERIAL_SETTINGS</Feature>
-       <Feature>IOT_UMDFDBG_SETTINGS</Feature>
-       <Feature>IOT_WDTF</Feature>
-       <Feature>IOT_CRT140</Feature>
-       <Feature>IOT_DIRECTX_TOOLS</Feature>
-       <Feature>PRODUCTION_CORE</Feature>
-       <!-- 
-		  Sample Apps, remove this when you introduce OEM Apps
-          <Feature>IOT_BERTHA</Feature>
-		  <Feature>IOT_ALLJOYN_APP</Feature>
-	   -->
-       </Microsoft>
+    <Features>
+      <Microsoft>
+    
+      ...
+      
+      <!-- Sample Apps, remove this when you introduce OEM Apps -->
+      <!--
+      <Feature>IOT_BERTHA</Feature>
+      <Feature>IOT_ALLJOYN_APP</Feature>
+      <Feature>IOT_NANORDPSERVER</Feature>
+      <Feature>IOT_SHELL_HOTKEY_SUPPORT</Feature>
+      <Feature>IOT_APPLICATIONS</Feature>
+      <Feature>IOT_ENABLE_ADMIN</Feature>
+      -->
+      </Microsoft>
+      <OEM>
+        <!-- Include BSP Features -->
+        <Feature>RPI2_DRIVERS</Feature>
+        <Feature>RPI3_DRIVERS</Feature>
+        <!-- Include OEM features -->
+        <Feature>OEM_AppxMain</Feature>
+        <Feature>OEM_CustomCmd</Feature>
+        <Feature>OEM_ProvAuto</Feature>
+        <Feature>OEM_AppxHelloWorld</Feature>
+     </OEM>
     ```
 
 **Set the app to automatically install and set itself as the default app**
@@ -209,31 +187,15 @@ You can skip these steps if you've already created and tested your app.
 
 ## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-1.  From the IoT Core Shell, create the image:
+Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
-    ``` syntax
-    buildimage ProductA Test
-    ```
+1.  From the IoT Core Shell, build the image (`buildimage ProductA Test`).
+2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Test\\ProductA.ffu), then click **Next**.
+4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
+4.  Put the card into the IoT device and start it up.
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductA\\Flash.FFU.
-
-	Troubleshooting: 
-
-    -  Make sure the Windows ADK, WDK, and IoT Core .ISO package are all for Windows 10, version 1607.
-
-    -  Check the logfiles at C:\\iot-adk-addonkit\\Build\\&lt;arch&gt;\\ProductA\\Test\\HelloWorld_Test.log, and search for "fatal error".
-
-2.  Install the image onto the Micro SD card.
-    -  Start **Windows IoT Core Dashboard**
-    -  Click the **Setup a new device** tab.
-	-  In Device Type, select **Custom**. This gives you new options to Browse for and to select your image. 
-	-  Enter the device username and password. **This must match the password you entered in the OEMCustomization.cmd file for your app to install.**
-	-  Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. 
-	This replaces the previous image with your new image.
-
-3.  Put the card into the IoT device and start it up.
-
-    After a short while, the device should start automatically, and you should see your app.
+After a short while, the device should start automatically, and you should see your app.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 

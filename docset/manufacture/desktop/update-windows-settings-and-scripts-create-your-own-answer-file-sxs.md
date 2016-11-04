@@ -66,7 +66,23 @@ You can specify which configuration pass to add new settings:
 
 **Step 3: Add new answer file settings**
 
-1.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
+1.  Add OEM info:
+
+    In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Shell-Setup\_(version)**, and then select **Add Setting to Pass 4 specialize**.
+
+    In the **Answer File** pane, select **Components\\4 specialize\\amd64\_Microsoft-Windows-Shell-Setup\_neutral\\OEMInformation**.
+
+    In the **OEMInformation Properties** pane, in the **Settings** section, select:
+    
+    -   Manufacturer=`Fabrikam`
+    -   Model=`Notebook Model 1`
+    -   Logo=`C:\Fabrikam\Fabrikam.bmp`
+        
+    Create a 32-bit color with a maximum size of 120x120 pixels, save it as C:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `C:\USB-B\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
+    
+    We'll copy the logo into the Windows image in a few steps.
+
+2.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
 
     In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Deployment\_(version)**, and then select **Add Setting to Pass 7 oobeSystem**.
 
@@ -74,7 +90,7 @@ You can specify which configuration pass to add new settings:
 
     In the **Reseal Properties** pane, in the **Settings** section, select Mode=`Audit`.
 
-2.  Prepare a [script](https://msdn.microsoft.com/library/windows/hardware/dn915797.aspx) to run after Audit mode begins.
+3.  Prepare a [script](https://msdn.microsoft.com/library/windows/hardware/dn915797.aspx) to run after Audit mode begins.
 
     In the **Windows Image** pane, right-click **amd64\_ Microsoft-Windows-Deployment\_(version)** and then click **Add Setting to Pass 6 auditUser**.
 
@@ -136,6 +152,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     MkDir c:\mount\windows\Windows\Panther
     Copy C:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
     MkDir c:\mount\windows\Fabrikam
+    Copy C:\AnswerFiles\Fabrikam.bmp    C:\mount\windows\Fabrikam\Fabrikam.bmp
     Copy C:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
     ```
 ## <span id="Unmount_the_images"></span> Unmount the images
@@ -159,15 +176,10 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 **Step 9: Apply the image to a new PC**
 Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
-1.  Boot the reference PC to Windows PE.
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
-	
-4.  Apply the recovery image:
-    ``` syntax
-	D:\ApplyRecovery.bat
-	```
-	
+1.  Copy the image file to the storage drive.
+2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
+3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
 **Step 10: Verify settings and scripts**
@@ -178,5 +190,4 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
--   [Lab 8: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
-
+Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
