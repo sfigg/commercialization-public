@@ -12,7 +12,11 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.
 
-For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.  
+For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.
+
+Other settings that use provisioning packages:
+
+* **Change the automatic update settings in your runtime image**: [Windows 10 IoT Core Pro Update Control File](https://developer.microsoft.com/en-us/windows/iot/docs/createiotcorepro)   
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 

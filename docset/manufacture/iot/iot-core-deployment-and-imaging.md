@@ -19,10 +19,11 @@ OEMs and ODMs customizing and deploying images for IoT devices.
 ## <span id="Download_and_install_the_kits_and_packages"></span><span id="download_and_install_the_kits_and_packages"></span><span id="DOWNLOAD_AND_INSTALL_THE_KITS_AND_PACKAGES"></span>Download and install the kits and packages
 
 
-Before you can create an IoT Core image, you must first install the Windows Assessment and Deployment Kit (ADK) as well as the IoT Core Core OS Packages.
+Before you can create an IoT Core image:
 
--   [Download the Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526740)
--   Download the [IoT Core OS Packages]( http://go.microsoft.com/fwlink/?LinkId=722759).
+-   Download the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+-   Download the [IoT Core OS Packages](https://www.microsoft.com/en-us/download/details.aspx?id=53898).
+-   Optional: Download the [Windows 10 IoT Core Pro Update Control File](https://www.microsoft.com/en-us/download/details.aspx?id=53899) 
 
 When these installations are complete, verify that you have directories called *FMFiles*, *MSPackages*, and *OEMInputSamples* in your computer’s C:\\Program Files (x86)\\Windows Kits\\10 directory.
 
