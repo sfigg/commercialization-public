@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Size
 
 
-`Size` specifies the size of the extension. If `Size` and [Extend](microsoft-windows-deploymentextendospartitionextend.md) are present in the same configuration pass, an error is logged, and installation terminates.
+`Size` specifies the size of the extension. If `Size` and [Extend](microsoft-windows-deployment-extendospartitionextend.md) are present in the same configuration pass, an error is logged, and installation terminates.
 
 ## Values
 
@@ -54,7 +54,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [ExtendOSPartition](microsoft-windows-deploymentextendospartition.md) | **Size**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [ExtendOSPartition](microsoft-windows-deployment-extendospartition.md) | **Size**
 
 ## Applies To
 
@@ -83,7 +83,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[ExtendOSPartition](microsoft-windows-deploymentextendospartition.md)
+[ExtendOSPartition](microsoft-windows-deployment-extendospartition.md)
 
  
 

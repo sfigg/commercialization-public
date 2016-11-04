@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[MustReboot](microsoft-windows-deploymentauditcomputernamemustreboot.md)</p></td>
-<td><p>Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deploymentauditcomputernamename.md) setting.</p></td>
+<td><p>[MustReboot](microsoft-windows-deployment-auditcomputernamemustreboot.md)</p></td>
+<td><p>Specifies whether to restart the computer immediately after specifying the [Name](microsoft-windows-deployment-auditcomputernamename.md) setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Name](microsoft-windows-deploymentauditcomputernamename.md)</p></td>
+<td><p>[Name](microsoft-windows-deployment-auditcomputernamename.md)</p></td>
 <td><p>Specifies the computer name to use during audit mode.</p></td>
 </tr>
 </tbody>

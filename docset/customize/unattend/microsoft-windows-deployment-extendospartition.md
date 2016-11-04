@@ -27,7 +27,7 @@ These settings are valid only for NTFS file-system partitions.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Extend](microsoft-windows-deploymentextendospartitionextend.md)</p></td>
+<td><p>[Extend](microsoft-windows-deployment-extendospartitionextend.md)</p></td>
 <td><p>Specifies whether to extend the partition to fill the entire hard disk.</p></td>
 </tr>
 <tr class="even">

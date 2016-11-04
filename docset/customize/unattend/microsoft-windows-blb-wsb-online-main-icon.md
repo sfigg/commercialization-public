@@ -19,7 +19,7 @@ Before a recommended online backup service is installed, Windows displays a desc
 
 After a recommended online backup service is installed, this icon continues to appear in the Windows Server Backup status menus.
 
-The icon is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-mainresourcedll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
+The icon is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-main-resource-dll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
 The icon in the resource DLL file must be an icon file.
 

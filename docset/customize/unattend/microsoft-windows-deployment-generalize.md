@@ -23,7 +23,7 @@ When `Generalize` is set, Windows Setup will:
 
 3.  Prepare the computer for imaging.
 
-    The following table provides scenarios for each combination of [Mode](microsoft-windows-deploymentgeneralizemode.md) and [ForceShutdownNow](microsoft-windows-deploymentgeneralizeforceshutdownnow.md).
+    The following table provides scenarios for each combination of [Mode](microsoft-windows-deployment-generalizemode.md) and [ForceShutdownNow](microsoft-windows-deployment-generalizeforceshutdownnow.md).
 
     <table>
     <colgroup>

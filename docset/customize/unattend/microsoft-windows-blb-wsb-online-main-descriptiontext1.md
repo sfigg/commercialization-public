@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Before an online backup service is installed, Windows displays a description of a recommended online backup service. This text is part of the description.
 
-This description text is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-mainresourcedll.md) setting specifies, and may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/p/?linkid=247425).
+This description text is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-main-resource-dll.md) setting specifies, and may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/p/?linkid=247425).
 
 The description text in the resource DLL file must be a text string. For example, the description may resemble the following:
 
