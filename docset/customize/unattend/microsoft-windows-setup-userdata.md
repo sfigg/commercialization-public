@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies whether to automatically accept the Microsoft Software License Terms.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FullName](microsoft-windows-setup-userdatafullname.md)</p></td>
+<td><p>[FullName](microsoft-windows-setup-userdata-fullname.md)</p></td>
 <td><p>Specifies the name of the end user.</p></td>
 </tr>
 <tr class="odd">

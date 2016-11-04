@@ -25,7 +25,7 @@ The Microsoft-Windows-PartitionManager component specifies settings that enable 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SanPolicy](microsoft-windows-partitionmanagersanpolicy.md)</p></td>
+<td><p>[SanPolicy](microsoft-windows-partitionmanager-sanpolicy.md)</p></td>
 <td><p>Specifies whether disks are automatically mounted, which disks can be mounted, and disables the automatic mounting of disks.</p></td>
 </tr>
 </tbody>

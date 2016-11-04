@@ -41,7 +41,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md) | **Username**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [Credentials](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials.md) | **Username**
 
 ## Applies To
 
@@ -100,7 +100,7 @@ The following XML output shows how to set the `ImageInstall` setting to install 
 ## Related topics
 
 
-[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md)
+[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials.md)
 
  
 

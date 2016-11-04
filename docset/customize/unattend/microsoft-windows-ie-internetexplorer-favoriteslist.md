@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)</p></td>
+<td><p>[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)</p></td>
 <td><p>Specifies the settings for the icon that appears to the user, which sites must appear offline, the name that appears in the Favorites folder, and the associated Uniform Resource Locator (URL).</p></td>
 </tr>
 </tbody>

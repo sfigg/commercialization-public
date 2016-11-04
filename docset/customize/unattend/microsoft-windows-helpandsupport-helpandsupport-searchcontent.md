@@ -38,7 +38,7 @@ When an end user performs a search in **Help and Support**, Windows searches for
 <td><p>When a user performs a search in <strong>Help and Support</strong>, Windows searches for matching Help content in offline Help files that the OEM provides.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>For the results to appear, you must also set both the Microsoft-Windows-HelpAndSupport/<code>HelpAndSupport</code>/[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md) value to <strong>true</strong> and the Microsoft-Windows-Shell-Setup/<code>OEMInformation</code>/[HelpCustomized](microsoft-windows-shell-setup-oeminformationhelpcustomized.md) value to <strong>true</strong>.</p>
+<p>For the results to appear, you must also set both the Microsoft-Windows-HelpAndSupport/<code>HelpAndSupport</code>/[Manufacturer](microsoft-windows-helpandsupport-helpandsupport-manufacturer.md) value to <strong>true</strong> and the Microsoft-Windows-Shell-Setup/<code>OEMInformation</code>/[HelpCustomized](microsoft-windows-shell-setup-oeminformation-helpcustomized.md) value to <strong>true</strong>.</p>
 </div>
 <div>
  

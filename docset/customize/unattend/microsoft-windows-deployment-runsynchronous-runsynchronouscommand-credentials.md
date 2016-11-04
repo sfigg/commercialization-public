@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials to use when accessing the [Path](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandpath.md).
+`Credentials` specifies the credentials to use when accessing the [Path](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-path.md).
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentialsd-omain.md)</p></td>
+<td><p>[Domain](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account to use for authentication.</p></td>
 </tr>
 <tr class="even">

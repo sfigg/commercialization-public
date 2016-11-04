@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FavTitle
 
 
-`FavTitle` specifies the friendly name of [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) that appears in the Favorites folder.
+`FavTitle` specifies the friendly name of [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) that appears in the Favorites folder.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Name_of_link</em></p></td>
-<td><p>Specifies the name of your [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md), based on your license terms, for inclusion within the Favorites folder.</p>
+<td><p>Specifies the name of your [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md), based on your license terms, for inclusion within the Favorites folder.</p>
 <p>You can organize favorite items into folders by preceding the value of <code>FavTitle</code> with a folder name. For example, the value <strong>Fabrikam Links\Fabrikam Support</strong> creates the Fabrikam Support <code>FavoriteItem</code> in a Fabrikam Links folder.</p>
 <p><code>FavTitle</code> must appear only once for each <code>FavoriteItem</code>.</p>
 <p><em>Name_of_link</em> is a string.</p></td>
@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavTitle**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | **FavTitle**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)
+[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
  
 

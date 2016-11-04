@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `InstallTo` specifies the disk and partition where you install the Windows operating system image.
 
-You must specify valid values for the [DiskID](microsoft-windows-setup-imageinstall-osimage-installtodiskid.md) and [PartitionID](microsoft-windows-setup-imageinstall-osimage-installto-partitionid.md) settings. If you are installing to a blank disk, you must create and format partitions with the [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) and [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) settings.
+You must specify valid values for the [DiskID](microsoft-windows-setup-imageinstall-osimage-installto-diskid.md) and [PartitionID](microsoft-windows-setup-imageinstall-osimage-installto-partitionid.md) settings. If you are installing to a blank disk, you must create and format partitions with the [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) and [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) settings.
 
 ## Comparison of OSImage Settings: InstallTo and InstallToAvailablePartition
 
@@ -58,11 +58,11 @@ If both **InstallToAvailablePartition** and **InstallTo** are set the installati
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-imageinstall-osimageinstalltodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-imageinstall-osimage-installto-diskid.md)</p></td>
 <td><p>Specifies the disk identifier of the hard disk on which to install Windows.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-imageinstall-osimageinstalltopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-imageinstall-osimage-installto-partitionid.md)</p></td>
 <td><p>Specifies the partition identifier of the partition on which to install Windows.</p></td>
 </tr>
 </tbody>
@@ -139,7 +139,7 @@ The following XML output shows how to set the **ImageInstall** setting to instal
 
 [OSImage](microsoft-windows-setup-imageinstall-osimage.md)
 
-[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimageinstalltoavailablepartition.md)
+[InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)
 
  
 

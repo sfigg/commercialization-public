@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # QuickLinkUrl
 
 
-`QuickLinkUrl` specifies a Uniform Resource Locator (URL) to associate with a [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md).
+`QuickLinkUrl` specifies a Uniform Resource Locator (URL) to associate with a [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md).
 
 ## Values
 
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md) | **QuickLinkUrl**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | **QuickLinkUrl**
 
 ## Applies To
 
@@ -73,7 +73,7 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 ## Related topics
 
 
-[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md)
+[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)
 
  
 

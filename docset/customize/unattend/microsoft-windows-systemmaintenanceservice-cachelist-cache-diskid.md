@@ -76,7 +76,7 @@ The following example XML output shows a configuration of two ReadyBoost devices
 ## Related topics
 
 
-[PartitionID](microsoft-windows-systemmaintenanceservice-cachelist-cachepartitionid.md)
+[PartitionID](microsoft-windows-systemmaintenanceservice-cachelist-cache-partitionid.md)
 
 [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md)
 

@@ -27,20 +27,20 @@ DNS settings can be divided into two primary groups—global settings and interf
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisableDynamicUpdate](microsoft-windows-dns-clientinterfacesinterfacedisabledynamicupdate.md)</p></td>
+<td><p>[DisableDynamicUpdate](microsoft-windows-dns-client-interfaces-interface-disabledynamicupdate.md)</p></td>
 <td><p>Specifies whether to register the host (A) and pointer (PTR) resource records dynamically.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DNSDomain](microsoft-windows-dns-clientinterfacesinterfacednsdomain.md)</p></td>
+<td><p>[DNSDomain](microsoft-windows-dns-client-interfaces-interface-dnsdomain.md)</p></td>
 <td><p>Specifies the DNS suffix of the network connection across all adapters. If <code>DNSDomain</code> is specified in two places—as a global parameter (x) and as an interface-specific parameter (y)—the two values are concatenated appropriately for each interface (as x, y) and used.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md)</p></td>
+<td><p>[DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md)</p></td>
 <td><p>Specifies a list of addresses to use when searching for the DNS server on the network.</p></td>
 </tr>
 <tr class="even">
-<td><p>[EnableAdapterDomainNameRegistration](microsoft-windows-dns-clientinterfacesinterfaceenableadapterdomainnameregistration.md)</p></td>
-<td><p>Specifies whether to register the host (A) and pointer (PTR) resource records for this adapter. If it is not specified, only the [DNSDomain](microsoft-windows-dns-clientdnsdomain.md) value specified in the global parameters is used.</p></td>
+<td><p>[EnableAdapterDomainNameRegistration](microsoft-windows-dns-client-interfaces-interface-enableadapterdomainnameregistration.md)</p></td>
+<td><p>Specifies whether to register the host (A) and pointer (PTR) resource records for this adapter. If it is not specified, only the [DNSDomain](microsoft-windows-dns-client-dnsdomain.md) value specified in the global parameters is used.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Identifier](microsoft-windows-dns-client-interfaces-interface-identifier.md)</p></td>
@@ -54,7 +54,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | **Interface**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | **Interface**
 
 ## Valid Passes
 

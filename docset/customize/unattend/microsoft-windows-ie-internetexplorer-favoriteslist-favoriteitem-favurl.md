@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FavURL
 
 
-`FavURL` specifies a Uniform Resource Locator (URL) to associate with a [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md).
+`FavURL` specifies a Uniform Resource Locator (URL) to associate with a [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Url</em></p></td>
-<td><p>Specifies the fully qualified path that begins with the <strong>http://</strong> prefix to the URL of each [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md). <em>Url</em> is a string.</p></td>
+<td><p>Specifies the fully qualified path that begins with the <strong>http://</strong> prefix to the URL of each [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md). <em>Url</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavURL**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | **FavURL**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)
+[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
  
 

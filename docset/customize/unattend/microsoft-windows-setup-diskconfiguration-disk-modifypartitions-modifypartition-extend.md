@@ -56,7 +56,7 @@ UEFI/GPT-based disks do not support the `Extend` setting.
 
 -   **To specify a newly-created partition to fill the remainder of the hard disk**
 
-    Set `CreatePartitions:`[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md) to `true`, and leave `ModifyPartitions:Extend` empty.
+    Set `CreatePartitions:`[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md) to `true`, and leave `ModifyPartitions:Extend` empty.
 
 ## Valid Configuration Passes
 
@@ -66,7 +66,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Extend**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) | **Extend**
 
 ## Applies To
 
@@ -244,7 +244,7 @@ The following XML output for the `DiskConfiguration` setting shows how to modify
 ## Related topics
 
 
-[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)
+[ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
 [How to Configure More Than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 

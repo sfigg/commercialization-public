@@ -50,7 +50,7 @@ You can enter the prefix in one of the following ways:
 
 -   **As a string.**
 
-    When Prefix is set as a string, you do not need to set the [NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routesroutenexthopaddress.md) value.
+    When Prefix is set as a string, you do not need to set the [NextHopAddress](microsoft-windows-tcpip-interfaces-interface-routes-route-nexthopaddress.md) value.
 
 This string type does not support empty elements. Do not create an empty value for this setting.
 
@@ -64,7 +64,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | [Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md) | **Prefix**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md) | [Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md) | **Prefix**
 
 ## Applies To
 
@@ -208,7 +208,7 @@ The following XML output shows how to configure the TCP/IP interfaces, including
 ## Related topics
 
 
-[Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md)
+[Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)
 
  
 

@@ -60,7 +60,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [AssociationData](microsoft-windows-tabletpc-platform-input-coreassociationdata.md)| [AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md) | **Value**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [AssociationData](microsoft-windows-tabletpc-platform-input-core-associationdata.md)| [AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md) | **Value**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ In Windows System Image Manager, you can enter values with quotation marks. In t
 ## Related topics
 
 
-[AssociationElement](microsoft-windows-tabletpc-platform-input-coreassociationdataassociationelement.md)
+[AssociationElement](microsoft-windows-tabletpc-platform-input-core-associationdata-associationelement.md)
 
  
 

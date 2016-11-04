@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DriverPaths
 
 
-`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) list items.
+`DriverPaths` specifies one or more paths that contain out-of-box drivers. These out-of-box drivers are copied to the Windows image during the **windowsPE** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md) list items.
 
 By using this setting, you can add boot-critical and non boot–critical drivers to your Windows image before it is installed.
 
@@ -27,8 +27,8 @@ By using this setting, you can add boot-critical and non boot–critical drivers
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md)</p></td>
-<td><p>Specifies a local or Universal Naming Convention (UNC) path to the out-of-box drivers and, optionally, the [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) used to access them.</p></td>
+<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md)</p></td>
+<td><p>Specifies a local or Universal Naming Convention (UNC) path to the out-of-box drivers and, optionally, the [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md) used to access them.</p></td>
 </tr>
 </tbody>
 </table>

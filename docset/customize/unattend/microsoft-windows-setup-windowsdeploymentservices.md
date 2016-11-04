@@ -27,11 +27,11 @@ These settings are specific to Windows Deployment Services installations and are
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ImageSelection](microsoft-windows-setup-windowsdeploymentservicesimageselection.md)</p></td>
+<td><p>[ImageSelection](microsoft-windows-setup-windowsdeploymentservices-imageselection.md)</p></td>
 <td><p>Specifies the image name and the group, as well as any language pack to install, the location to install it to, and whether the user interface (UI) is displayed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Login](microsoft-windows-setup-windowsdeploymentserviceslogin.md)</p></td>
+<td><p>[Login](microsoft-windows-setup-windowsdeploymentservices-login.md)</p></td>
 <td><p>Specifies credentials for logging on to Windows Deployment Services.</p></td>
 </tr>
 </tbody>

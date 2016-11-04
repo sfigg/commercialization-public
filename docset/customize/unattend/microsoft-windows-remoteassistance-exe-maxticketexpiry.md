@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MaxTicketExpiry
 
 
-`MaxTicketExpiry` specifies the maximum length of a ticket in the units set by the [MaxTicketExpiryUnits](microsoft-windows-remoteassistance-exemaxticketexpiryunits.md) setting. The value of the MaxTicketExpiryUnits setting can be set to minutes, hours, or days. By default, a ticket expires in six (6) hours.
+`MaxTicketExpiry` specifies the maximum length of a ticket in the units set by the [MaxTicketExpiryUnits](microsoft-windows-remoteassistance-exe-maxticketexpiryunits.md) setting. The value of the MaxTicketExpiryUnits setting can be set to minutes, hours, or days. By default, a ticket expires in six (6) hours.
 
 ## Values
 

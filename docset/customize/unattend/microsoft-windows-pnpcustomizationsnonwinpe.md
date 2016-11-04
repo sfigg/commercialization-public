@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Microsoft-Windows-PnpCustomizationsNonWinPE
 
 
-The Microsoft-Windows-PnpCustomizationsNonWinPE component is used to add one or more out-of-box drivers to a Windows installation. Drivers located in the path specified by [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpedriverpaths.md) are copied to the driver store of the Windows installation during the auditSystem configuration pass. When the system runs Plug and Play, these out-of-box drivers are available to install hardware on the computer.
+The Microsoft-Windows-PnpCustomizationsNonWinPE component is used to add one or more out-of-box drivers to a Windows installation. Drivers located in the path specified by [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths.md) are copied to the driver store of the Windows installation during the auditSystem configuration pass. When the system runs Plug and Play, these out-of-box drivers are available to install hardware on the computer.
 
 ## In This Section
 
@@ -25,7 +25,7 @@ The Microsoft-Windows-PnpCustomizationsNonWinPE component is used to add one or 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DriverPaths](microsoft-windows-pnpcustomizationsnonwinpedriverpaths.md)</p></td>
+<td><p>[DriverPaths](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths.md)</p></td>
 <td><p>Specifies one or more driver paths that contain out-of-box drivers. Drivers in this path are copied to the Windows image during the <strong>auditSystem</strong> configuration pass.</p></td>
 </tr>
 </tbody>

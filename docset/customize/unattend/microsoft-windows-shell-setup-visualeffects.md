@@ -27,7 +27,7 @@ This setting has no effect on Server Core installations.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FontSmoothing](microsoft-windows-shell-setup-visualeffectsfontsmoothing.md)</p></td>
+<td><p>[FontSmoothing](microsoft-windows-shell-setup-visualeffects-fontsmoothing.md)</p></td>
 <td><p>Specifies whether font smoothing is enabled, and which type of font smoothing is enabled.</p></td>
 </tr>
 <tr class="even">

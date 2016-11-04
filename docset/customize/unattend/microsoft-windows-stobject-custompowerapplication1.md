@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Application](microsoft-windows-stobject-custompowerapplication1-application.md)</p></td>
+<td><p>[Application](microsoft-windows-stobject-custompowerapplication1application.md)</p></td>
 <td><p>Specifies the name and the path of the application to run.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IconID](microsoft-windows-stobject-custompower-application1-iconid.md)</p></td>
+<td><p>[IconID](microsoft-windows-stobject-custompowerapplication1-iconid.md)</p></td>
 <td><p>Specifies the optional icon resource ID.</p></td>
 </tr>
 <tr class="odd">

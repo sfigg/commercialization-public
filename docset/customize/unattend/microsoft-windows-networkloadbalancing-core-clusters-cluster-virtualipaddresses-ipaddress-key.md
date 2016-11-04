@@ -16,9 +16,9 @@ ms.sitesec: msdn
 `Key` specifies the name of the virtual IP address. The name is specified as an attribute in the IP address.
 
 **Note**  
--   This XML attribute does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add an [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md) to the answer file.
+-   This XML attribute does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add an [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) to the answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique virtual IP Address. For example, you can specify three different virtual IP addresses by using the `Key` value of **Ip1**, **Ip2**, and **Ip3**.
+-   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique virtual IP Address. For example, you can specify three different virtual IP addresses by using the `Key` value of **Ip1**, **Ip2**, and **Ip3**.
 
  
 
@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md) | **Key**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) | **Key**
 
 ## Applies To
 
@@ -70,7 +70,7 @@ The following XML output shows how to specify a virtual IP address by using the 
 ## Related topics
 
 
-[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md)
+[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md)
 
  
 

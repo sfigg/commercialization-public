@@ -34,7 +34,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies the cluster MAC address be used when configuring a unicast cluster. This MAC address will replace the adapter's physical MAC address.</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>You must set [ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-clusterclusteriptoclustermacenabled.md) to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
+<p>You must set [ClusterIpToClusterMacEnabled](microsoft-windows-networkloadbalancing-core-clusters-cluster-clusteriptoclustermacenabled.md) to <strong>False</strong> for this setting to work. If it is set to <strong>True</strong>, the cluster MAC address is automatically generated based on the cluster IP address.</p>
 </div>
 <div>
  

@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DiskID](microsoft-windows-setup-imageinstall-dataimage-installtodiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-imageinstall-dataimage-installto-diskid.md)</p></td>
 <td><p>Specifies the identification number of the disk on which to install the data image.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-imageinstall-dataimage-installtopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-imageinstall-dataimage-installto-partitionid.md)</p></td>
 <td><p>Specifies the identification number of the partition on which to install the data image.</p></td>
 </tr>
 </tbody>

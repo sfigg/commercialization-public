@@ -43,7 +43,7 @@ If `UnsecureJoin` is enabled, do not create settings for [Domain](microsoft-wind
  
 
 **Note**  
-[Domain](microsoft-windows-unattendedjoin-identification-credentialsdomain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), and [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) must not be specified in the Credentials section if `UnsecureJoin` is set to true.
+[Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md), [Username](microsoft-windows-unattendedjoin-identification-credentials-username.md), and [Password](microsoft-windows-unattendedjoin-identification-credentials-password.md) must not be specified in the Credentials section if `UnsecureJoin` is set to true.
 
  
 

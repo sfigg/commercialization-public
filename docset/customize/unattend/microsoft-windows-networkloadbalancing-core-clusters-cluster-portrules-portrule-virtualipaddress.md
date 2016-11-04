@@ -67,7 +67,7 @@ The following XML output shows how to specify the virtual IP address of the port
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)
 
  
 

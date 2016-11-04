@@ -27,11 +27,11 @@ For the list of supported languages, locales, and identifiers, see [Supported La
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[UILanguage](microsoft-windows-international-core-winpe--setupuilanguageuilanguage.md)</p></td>
+<td><p>[UILanguage](microsoft-windows-international-core-winpe-setupuilanguage-uilanguage.md)</p></td>
 <td><p>Specifies the language of the user interface (UI) to use during Windows Setup or Windows Deployment Services.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-international-core-winpe--setupuilanguagewillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-international-core-winpe-setupuilanguage-willshowui.md)</p></td>
 <td><p>This setting is deprecated and should not be used.</p></td>
 </tr>
 </tbody>

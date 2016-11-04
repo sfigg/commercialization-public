@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FavOffLine
 
 
-`FavOffLine` specifies whether to make the [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) available for offline browsing.
+`FavOffLine` specifies whether to make the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) available for offline browsing.
 
 ## Values
 
@@ -26,11 +26,11 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) is available for offline browsing.</p></td>
+<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) is available for offline browsing.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
-<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) is not available for offline browsing. This is the default value.</p></td>
+<td><p>Specifies that the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) is not available for offline browsing. This is the default value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavOffLine**
+[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | **FavOffLine**
 
 ## Applies To
 
@@ -79,7 +79,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)
+[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
  
 

@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-windowsdeploymentserviceslogincredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-windowsdeploymentservices-login-credentials.md)</p></td>
 <td><p>Specifies the credentials for Windows Deployment Services login.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-windowsdeploymentservicesloginwillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setupwindowsdeploymentservices-login-willshowui.md)</p></td>
 <td><p>Specifies in what circumstances the UI is displayed for Windows Deployment Services login.</p></td>
 </tr>
 </tbody>

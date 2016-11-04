@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` specifies the credentials used when accessing an application over a network. `Credentials` is used to authenticate access to a location specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
+`Credentials` specifies the credentials used when accessing an application over a network. `Credentials` is used to authenticate access to a location specified by [Path](microsoft-windows-setup-runsynchronous-runsynchronouscommand-path.md).
 
 All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
@@ -27,11 +27,11 @@ All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials-domain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials-password.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials-password.md)</p></td>
 <td><p>Specifies the password of the account used for authentication.</p></td>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | **Credentials**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | **Credentials**
 
 ## Applies To
 
@@ -88,7 +88,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md)
 
  
 

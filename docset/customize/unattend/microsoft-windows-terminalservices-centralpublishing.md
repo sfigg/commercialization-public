@@ -25,7 +25,7 @@ The Microsoft-Windows-TerminalServices-CentralPublishing component specifies the
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Port](microsoft-windows-terminalservices-centralpublishingport.md)</p></td>
+<td><p>[Port](microsoft-windows-terminalservices-centralpublishing-port.md)</p></td>
 <td><p>Specifies the port for RemoteApp and Desktop Connection Management.</p></td>
 </tr>
 </tbody>

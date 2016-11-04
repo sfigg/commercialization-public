@@ -24,9 +24,9 @@ Creating a blank administrator password is a security risk.
 
 By default, the built-in administrator account is disabled in all default clean installations.
 
-You can enable the built-in administrator account during unattended installations, by setting the AutoLogon/[Username](microsoft-windows-shell-setup-autologonusername.md) to **Administrator**. This enables the built-in administrator account, even if a password is not specified in the `AdministratorPassword` setting.
+You can enable the built-in administrator account during unattended installations, by setting the AutoLogon/[Username](microsoft-windows-shell-setup-autologon-username.md) to **Administrator**. This enables the built-in administrator account, even if a password is not specified in the `AdministratorPassword` setting.
 
-If no values are set for the administrator password and [Username](microsoft-windows-shell-setup-autologonusername.md) is not set to **Administrator**, the administrator account is disabled.
+If no values are set for the administrator password and [Username](microsoft-windows-shell-setup-autologon-username.md) is not set to **Administrator**, the administrator account is disabled.
 
 Both **Microsoft-Windows-Shell-Setup | Autologon** and **Microsoft-Windows-Shell-Setup | UserAccounts | AdministratorPassword** sections are now needed for autologon in audit mode to work. Both of these settings should be added to the **auditSystem** configuration pass.
 

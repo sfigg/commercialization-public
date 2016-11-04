@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Warning**  
-This setting is deprecated. Use [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md) instead.
+This setting is deprecated. Use [DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md) instead.
 
  
 
@@ -78,7 +78,7 @@ The following XML output specifies that the Initial Configuration Tasks applicat
 
 [Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)
 
-[DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrncdonotopenservermanageratlogon.md)
+[DoNotOpenServerManagerAtLogon](microsoft-windows-servermanager-svrmgrnc-donotopenservermanageratlogon.md)
 
  
 

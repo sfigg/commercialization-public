@@ -29,7 +29,7 @@ Browser Extensions are plug-in modules used to add functionality to Internet Exp
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuid](microsoft-windows-ie-internetexplorerinstalledbrowserextensionsaddonguiditemaddonguid.md)</p></td>
+<td><p>[AddonGuid](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem-addonguid.md)</p></td>
 <td><p>Specifies a GUID for a Browser Extension.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md) | **AddonGuidItem**
 
 ## Applies To
 

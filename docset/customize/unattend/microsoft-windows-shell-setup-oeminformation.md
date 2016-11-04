@@ -32,11 +32,11 @@ This change affects context-sensitive (or F1) help and accessing help from the m
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[HelpCustomized](microsoft-windows-shell-setup-oeminformationhelpcustomized.md)</p></td>
+<td><p>[HelpCustomized](microsoft-windows-shell-setup-oeminformation-helpcustomized.md)</p></td>
 <td><p>Specifies whether the OEM customizes Help. If this element is set to <strong>true</strong>, Control Panel shows a support link. Otherwise, Control Panel shows the support information that [SupportHours](microsoft-windows-shell-setup-oeminformation-supporthours.md), [SupportPhone](microsoft-windows-shell-setup-oeminformation-supportphone.md), and [SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md) specify.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Logo](microsoft-windows-shell-setup-oeminformationlogo.md)</p></td>
+<td><p>[Logo](microsoft-windows-shell-setup-oeminformation-logo.md)</p></td>
 <td><p>Specifies the path of the .bmp file of the manufacturer logo.</p></td>
 </tr>
 <tr class="odd">

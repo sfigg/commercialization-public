@@ -37,11 +37,11 @@ ms.sitesec: msdn
 **Note**  
 Do not create a value for `Size` that entirely fills or exceeds the available space, because Windows reserves a small amount of space to manage partitions. For example, if you create an extended partition with 2000 MB, and you create two logical partitions with the size of 1000 MB each inside that partition, the second partition is not created. An error is logged, and installation is terminated.
 
--   To fill the available space on the drive with a primary partition, use the CreatePartition:[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md) setting. Do not set CreatePartition:`Size`.
+-   To fill the available space on the drive with a primary partition, use the CreatePartition:[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md) setting. Do not set CreatePartition:`Size`.
 
--   To fill the available space on an extended partition with a logical partition, set CreatePartition:`Size` to a small value, such as **100**. Set ModifyPartition:[Extend](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionextend.md) to **true**. Do not set CreatePartition:[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md). For more information, see [How to Configure More than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072).
+-   To fill the available space on an extended partition with a logical partition, set CreatePartition:`Size` to a small value, such as **100**. Set ModifyPartition:[Extend](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-extend.md) to **true**. Do not set CreatePartition:[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md). For more information, see [How to Configure More than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072).
 
--   Do not set both CreatePartition:`Size` and CreatePartition:[Extend](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionextend.md). If a value for `Size` is specified and CreatePartition:`Extend` is set to **true**, no partition is created. An error is logged, and installation is terminated.
+-   Do not set both CreatePartition:`Size` and CreatePartition:[Extend](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-extend.md). If a value for `Size` is specified and CreatePartition:`Extend` is set to **true**, no partition is created. An error is logged, and installation is terminated.
 
  
 
@@ -53,7 +53,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) | **Size**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) | **Size**
 
 ## Applies To
 
@@ -268,7 +268,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md)
+[CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)
 
 [How to Configure More than Four Partitions on a BIOS-Based Hard Disk](http://go.microsoft.com/fwlink/?LinkId=214072)
 

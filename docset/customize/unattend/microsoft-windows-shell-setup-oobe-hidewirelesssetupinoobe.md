@@ -81,7 +81,7 @@ The following XML example shows how to set Windows Welcome to always hide the *
 
 [NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)
 
-[OOBE](microsoft-windows-shell-setupoobe.md)
+[OOBE](microsoft-windows-shell-setup-oobe.md)
 
  
 

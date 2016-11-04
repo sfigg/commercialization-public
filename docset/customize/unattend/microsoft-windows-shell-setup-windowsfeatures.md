@@ -32,15 +32,15 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ShowInternetExplorer](microsoft-windows-shell-setup-windowsfeaturesshowinternetexplorer.md)</p></td>
+<td><p>[ShowInternetExplorer](microsoft-windows-shell-setup-windowsfeatures-showinternetexplorer.md)</p></td>
 <td><p>Specifies whether to show entry points for Internet Explorer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ShowMediaCenter](microsoft-windows-shell-setup-windowsfeaturesshowmediacenter.md)</p></td>
+<td><p>[ShowMediaCenter](microsoft-windows-shell-setup-windowsfeatures-showmediacenter.md)</p></td>
 <td><p>Specifies whether to show entry points for Media Center.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeaturesshowwindowsmediaplayer.md)</p></td>
+<td><p>[ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeatures-showwindowsmediaplayer.md)</p></td>
 <td><p>Specifies whether to show entry points for Windows Media Player.</p></td>
 </tr>
 <tr class="even">

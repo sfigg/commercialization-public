@@ -59,11 +59,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7firstruntask.md) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12firstruntask.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-firstruntask.md) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="even">

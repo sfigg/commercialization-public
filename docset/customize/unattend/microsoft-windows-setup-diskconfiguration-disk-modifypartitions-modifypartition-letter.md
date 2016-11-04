@@ -50,7 +50,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Letter**
+[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) | **Letter**
 
 ## Applies To
 
@@ -156,7 +156,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)
+[ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
  
 

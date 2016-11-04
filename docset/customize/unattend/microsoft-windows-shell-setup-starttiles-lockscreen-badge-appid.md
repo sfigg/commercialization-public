@@ -32,7 +32,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [LockScreen](microsoft-windows-shell-setup-starttile-slockscreen.md) | [Badge](microsoft-windows-shell-setup-starttiles-lockscreen-badge.md) | **AppId**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [StartTiles](microsoft-windows-shell-setup-starttiles.md) | [LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md) | [Badge](microsoft-windows-shell-setup-starttiles-lockscreen-badge.md) | **AppId**
 
 ## Applies To
 

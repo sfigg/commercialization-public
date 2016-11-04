@@ -85,7 +85,7 @@ The following XML output shows how to set [UserAccounts](microsoft-windows-shell
 ## Related topics
 
 
-[DomainAccountList](microsoft-windows-shell-setu-puseraccounts-domainaccounts-domainaccountlist.md)
+[DomainAccountList](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist.md)
 
  
 

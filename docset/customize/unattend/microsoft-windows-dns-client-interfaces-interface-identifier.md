@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | **Identifier**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **Identifier**
 
 ## Valid Configuration Passes
 
@@ -89,7 +89,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Interface](microsoft-windows-dns-clientinterfacesinterface.md)
+[Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
  
 

@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[OptIn](microsoft-windows-setup-diagnosticsoptin.md)</p></td>
+<td><p>[OptIn](microsoft-windows-setup-diagnostics-optin.md)</p></td>
 <td><p>Specifies whether to send installation statistic information to Microsoft.</p></td>
 </tr>
 </tbody>

@@ -23,7 +23,7 @@ When `Generalize` is set, Windows Setup will:
 
 3.  Prepare the computer for imaging.
 
-    The following table provides scenarios for each combination of [Mode](microsoft-windows-deployment-generalizemode.md) and [ForceShutdownNow](microsoft-windows-deployment-generalizeforceshutdownnow.md).
+    The following table provides scenarios for each combination of [Mode](microsoft-windows-deployment-generalize-mode.md) and [ForceShutdownNow](microsoft-windows-deployment-generalize-forceshutdownnow.md).
 
     <table>
     <colgroup>
@@ -79,11 +79,11 @@ Do not use this setting in conjunction with the [Reseal](microsoft-windows-deplo
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ForceShutdownNow](microsoft-windows-deployment-generalizeforceshutdownnow.md)</p></td>
+<td><p>[ForceShutdownNow](microsoft-windows-deployment-generalize-forceshutdownnow.md)</p></td>
 <td><p>Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Mode](microsoft-windows-deployment-generalizemode.md)</p></td>
+<td><p>[Mode](microsoft-windows-deployment-generalize-mode.md)</p></td>
 <td><p>Specifies which configuration pass the computer start after the <strong>generalize</strong> configuration pass is complete. The options include: <strong>Audit</strong> or <strong>OOBE</strong>.</p></td>
 </tr>
 </tbody>

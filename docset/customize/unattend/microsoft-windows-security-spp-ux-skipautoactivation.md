@@ -70,9 +70,9 @@ The following sample XML output specifies that auto-activation is skipped.
 
 [Microsoft-Windows-Security-SPP-UX](microsoft-windows-security-spp-ux.md)
 
-[ProductKey](microsoft-windows-shell-setupproductkey.md)
+[ProductKey](microsoft-windows-shell-setup-productkey.md)
 
-[ProductKey](microsoft-windows-setup-userdataproductkey.md)
+[ProductKey](microsoft-windows-setup-userdata-productkey.md)
 
  
 

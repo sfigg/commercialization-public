@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account to use for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials-password.md)</p></td>
 <td><p>Specifies the password of the account to use for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-credentials-username.md)</p></td>
 <td><p>Specifies the user name of the account to use for authentication.</p></td>
 </tr>
 </tbody>

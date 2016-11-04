@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # microsoft-windows-netbt-
 
 
-NetBT settings are interface-specific and consist of the NetbiosOptions setting and the [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md) list. These can appear once for each interface configured by the answer file.
+NetBT settings are interface-specific and consist of the NetbiosOptions setting and the [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md) list. These can appear once for each interface configured by the answer file.
 
 ## In This Section
 

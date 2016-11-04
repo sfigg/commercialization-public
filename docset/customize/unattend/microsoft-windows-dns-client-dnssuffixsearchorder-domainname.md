@@ -30,11 +30,11 @@ The child elements do not appear in the **Properties** pane of Windows System I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md)</p></td>
+<td><p>[Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md)</p></td>
 <td><p>Specifies a unique key for the <code>DomainName</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamevalue.md)</p></td>
+<td><p>[Value](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-value.md)</p></td>
 <td><p>Specifies the value of the <code>DomainName</code>.</p></td>
 </tr>
 </tbody>
@@ -98,7 +98,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md)
+[DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md)
 
  
 

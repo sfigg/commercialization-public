@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies a unique key for the <code>DeviceElement</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tabletpc-platform-input-corelinearitydata-deviceelement-value.md)</p></td>
+<td><p>[Value](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement-value.md)</p></td>
 <td><p>Specifies the value of the <code>DeviceElement</code>.</p></td>
 </tr>
 </tbody>

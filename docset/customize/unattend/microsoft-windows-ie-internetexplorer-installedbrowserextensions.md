@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Browser Extensions are add-on modules used to add functionality to Internet Explorer. Examples of Browser Extensions include shortcut menu extensions, toolbars, explorer bars, and Browser Help Objects.
 
-`InstalledBrowserExtensions` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbrowserextensionsaddonguiditem.md) settings, each of which represents a single Browser Extension.
+`InstalledBrowserExtensions` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem.md) settings, each of which represents a single Browser Extension.
 
 For information about creating custom toolbars, see the MSDN topic: [Creating Custom Explorer Bars, Tool Bands, and Desk Bands](http://go.microsoft.com/fwlink/?LinkId=140376).
 
@@ -31,7 +31,7 @@ For information about creating custom toolbars, see the MSDN topic: [Creating Cu
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbrowserextensionsaddonguiditem.md)</p></td>
+<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbrowserextensions-addonguiditem.md)</p></td>
 <td><p>Specifies settings for a Browser Extension.</p></td>
 </tr>
 </tbody>
@@ -75,11 +75,11 @@ The following XML output shows how to set two Internet Explorer Browser Extensio
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md)
+[InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)
 
-[InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md)
+[InstalledToolbarsList](microsoft-windows-ie-internetexplorer-installedtoolbarslist.md)
 
-[PreApprovedAddons](microsoft-windows-ie-internetexplorerpreapprovedaddons.md)
+[PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)
 
  
 

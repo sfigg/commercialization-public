@@ -25,23 +25,23 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FavIconFile](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitemfaviconfile.md)</p></td>
+<td><p>[FavIconFile](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem-faviconfile.md)</p></td>
 <td><p>Specifies the icon to associate with the <code>FavoriteItem</code> in the Favorites folder.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FavID](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitemfavid.md)</p></td>
+<td><p>[FavID](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem-favid.md)</p></td>
 <td><p>Specifies a unique key to associate with a <code>FavoriteItem</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FavOffLine](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitemfavoffline.md)</p></td>
+<td><p>[FavOffLine](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem-favoffline.md)</p></td>
 <td><p>Specifies whether to make the <code>FavoriteItem</code> available for offline browsing.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FavTitle](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitemfavtitle.md)</p></td>
+<td><p>[FavTitle](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem-favtitle.md)</p></td>
 <td><p>Specifies a friendly name for the site appearing as a <code>FavoriteItem</code> in the Favorites folder.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FavURL](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitemfavurl.md)</p></td>
+<td><p>[FavURL](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem-favurl.md)</p></td>
 <td><p>Specifies a fully qualified path to the URL of each <code>FavoriteItem</code>.</p></td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | **FavoriteItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | **FavoriteItem**
 
 ## Applies To
 
@@ -91,7 +91,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md)
+[FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md)
 
  
 

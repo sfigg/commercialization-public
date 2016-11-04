@@ -113,7 +113,7 @@ These Unattend settings are new in Windows 10:
 <td><p>OEMs can configure these settings to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences.</p>
 <ul>
 <li><p>To configure devices to boot straight into tablet mode, use <code>SignInMode</code>.</p></li>
-<li><p>To support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md), configure <code>ConvertibleSlateModePromptPreference</code>. OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></li>
+<li><p>To support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md), configure <code>ConvertibleSlateModePromptPreference</code>. OEMs must make sure that <code>ConvertibleSlateMode</code> is always accurate for their devices.</p></li>
 </ul>
 <p>OEMs may also specify the device form factor using <code>DeviceForm</code>.</p></td>
 </tr>
@@ -188,28 +188,28 @@ These Windows 10 for desktop editions and Windows Server 2016 settings have ch
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[ComputerName](microsoft-windows-shell-setupcomputername.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[ComputerName](microsoft-windows-shell-setup-computername.md)</p></td>
 <td><p>Specifies the computer name used to access the computer from the network.</p></td>
 <td><p>Added offlineServicing to the list of valid configuration passes.</p>
 <p>In Windows 10, users can no longer enter a computer name during OOBE as the name is auto-generated. To set a default computer name pre-OOBE, OEMs can configure <code>ComputerName</code> in the unattend file and specify a name for the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[ProtectYourPC](microsoft-windows-shell-setupoobeprotectyourpc.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\OOBE\[ProtectYourPC](microsoft-windows-shell-setup-oobe-protectyourpc.md)</p></td>
 <td><p>Specifies whether Express settings are used.</p></td>
 <td><p>Updated the description for the setting as well as the list of valid values and their descriptions for the values.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\[AutoLogon](microsoft-windows-shell-setupautologon.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[AutoLogon](microsoft-windows-shell-setup-autologon.md)</p></td>
 <td><p>Specifies the account to use to log on to a computer automatically.</p></td>
 <td><p>Added an important note that in Windows 10, if you configure <code>AutoLogon</code> the OS will skip the user account creation phase during OOBE and the account creation phase during OOBE is skipped in all versions of Windows when at least one user account is created through the <code>UserAccounts</code> section of the same unattend file.</p></td>
 </tr>
 <tr class="even">
-<td><p>microsoft-windows-setup--Shell\Deployment\FirstLogonCommands\[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommands.md)</p></td>
+<td><p>microsoft-windows-setup--Shell\Deployment\FirstLogonCommands\[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands.md)</p></td>
 <td><p>Starts a command or script after the user completes OOBE.</p></td>
 <td><p>This command now works like [LogonCommands\AsynchronousCommand](microsoft-windows-shell-setup-logoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. To learn more, see [Add a Custom Script to Windows Setup](../../manufacture/desktop/add-a-custom-script-to-windows-setup-win8.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-Deployment\[Reseal](microsoft-windows-deploymentreseal.md)</p></td>
+<td><p>Microsoft-Windows-Deployment\[Reseal](microsoft-windows-deployment-reseal.md)</p></td>
 <td><p>Indicates whether the computer runs in audit mode or Windows OOBE when the computer is next started.</p></td>
 <td><p>Prior to Windows 10, <code>Reseal</code> was a special-case setting which caused all other settings in the same configuration pass to be skipped when specified in the auditSystem or oobeSystem configuration passes. In Windows 10, Reseal is always processed after all other settings in the same configuration pass.</p>
 <p>For the &quot;auditSystem Audit true&quot; row, this scenario is now supported and the Result column has been updated.</p>
@@ -238,11 +238,11 @@ The following Windows 8.1 Update, Windows 8.1, and Windows Server 2012 R2 sett
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Microsoft-Windows-Shell-Setup\OOBE\[NetworkLocation](microsoft-windows-shell-setupoobenetworklocation.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\OOBE\[NetworkLocation](microsoft-windows-shell-setup-oobe-networklocation.md)</p></td>
 <td><p>This is not applicable for Windows 10.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffectssystemdefaultbackgroundcolor.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\VisualEffects\[SystemDefaultBackgroundColor](microsoft-windows-shell-setup-visualeffects-systemdefaultbackgroundcolor.md)</p></td>
 <td><p>This setting is deprecated in Windows 10 and should not be used. The default background color during OOBE is always dark. To align with this change, partners can no longer change the default screen background color during OOBE.</p></td>
 </tr>
 <tr class="odd">

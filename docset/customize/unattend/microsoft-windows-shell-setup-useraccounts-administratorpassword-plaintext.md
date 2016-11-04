@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PlainText
 
 
-`PlainText` specifies whether the [AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md) is hidden in the unattended installation answer file.
+`PlainText` specifies whether the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md) is hidden in the unattended installation answer file.
 
 **Note**  
 You can only use this setting to hide the passwords for local accounts only. Domain account passwords are not hidden.

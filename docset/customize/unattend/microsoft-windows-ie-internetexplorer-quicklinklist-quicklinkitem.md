@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[QLID](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemqlid.md)</p></td>
+<td><p>[QLID](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-qlid.md)</p></td>
 <td><p>Specifies a unique ID to associate with a <code>QuickLinkItem</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemquicklinkname.md)</p></td>
+<td><p>[QuickLinkName](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkname.md)</p></td>
 <td><p>Specifies a friendly name for the <code>QuickLinkItem</code>, as it appears on the <strong>Favorites</strong> toolbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitemquicklinkurl.md)</p></td>
+<td><p>[QuickLinkUrl](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem-quicklinkurl.md)</p></td>
 <td><p>Specifies a URL value to associate with a <code>QuickLinkItem</code>.</p></td>
 </tr>
 </tbody>

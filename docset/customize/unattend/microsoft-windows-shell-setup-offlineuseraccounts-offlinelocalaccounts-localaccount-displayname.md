@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DisplayName
 
 
-`DisplayName` specifies the name to display for a [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md)[LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md) to be created during installation. If present, this name is displayed instead of the logon name.
+`DisplayName` specifies the name to display for a [LocalAccount](microsoft-windows-shell-setup-offlineuseraccounts-offlinelocalaccounts-localaccount.md)[LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) to be created during installation. If present, this name is displayed instead of the logon name.
 
 ## Values
 

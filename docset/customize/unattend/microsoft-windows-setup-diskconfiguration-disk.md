@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Disk
 
 
-`Disk` specifies the disk settings to add or to edit on the destination computer. `Disk` is a list item type, and each instance of `Disk` in an unattended installation answer file applies to a single hard disk (specified by [DiskID](microsoft-windows-setup-diskconfigurationdiskdiskid.md)).
+`Disk` specifies the disk settings to add or to edit on the destination computer. `Disk` is a list item type, and each instance of `Disk` in an unattended installation answer file applies to a single hard disk (specified by [DiskID](microsoft-windows-setup-diskconfiguration-disk-diskid.md)).
 
 ## Child Elements
 
@@ -25,19 +25,19 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md)</p></td>
-<td><p>Specifies a list of [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) items.</p></td>
+<td><p>[CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md)</p></td>
+<td><p>Specifies a list of [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) items.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DiskID](microsoft-windows-setup-diskconfigurationdiskdiskid.md)</p></td>
+<td><p>[DiskID](microsoft-windows-setup-diskconfiguration-disk-diskid.md)</p></td>
 <td><p>Specifies the identification number of the disk to edit.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md)</p></td>
-<td><p>Specifies a list of [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) items.</p></td>
+<td><p>[ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md)</p></td>
+<td><p>Specifies a list of [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) items.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillWipeDisk](microsoft-windows-setup-diskconfigurationdiskwillwipedisk.md)</p></td>
+<td><p>[WillWipeDisk](microsoft-windows-setup-diskconfiguration-disk-willwipedisk.md)</p></td>
 <td><p>Specifies whether to reformat the disk.</p></td>
 </tr>
 </tbody>

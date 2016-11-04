@@ -30,7 +30,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md)</p></td>
 <td><p>Specifies details about the cluster virtual IP addresses.</p></td>
 </tr>
 </tbody>

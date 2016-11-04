@@ -29,7 +29,7 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the *
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FavoriteBarItem](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritem.md)</p></td>
+<td><p>[FavoriteBarItem](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem.md)</p></td>
 <td><p>Specifies settings for each Favorite bar item.</p></td>
 </tr>
 </tbody>

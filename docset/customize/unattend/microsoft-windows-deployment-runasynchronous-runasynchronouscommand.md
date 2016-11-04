@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunAsynchronousCommand` specifies a single command to run during the auditUser Configuration Pass or specialize Configuration Pass.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md) instead.
 
 `RunAsynchronous` commands run in the user context in the auditUser Configuration Pass and in the system context in the specialize Configuration Pass.
 
@@ -33,11 +33,11 @@ To run services or commands that can start at the same time, use asynchronous co
 <td><p>Specifies the credentials to use when accessing paths.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Description](microsoft-windows-deployment-runasynchronousrunasynchronouscommanddescription.md)</p></td>
+<td><p>[Description](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-description.md)</p></td>
 <td><p>Specifies a description of the command to execute.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-deployment-runasynchronousrunasynchronouscommandorder.md)</p></td>
+<td><p>[Order](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-order.md)</p></td>
 <td><p>Specifies a unique value for each command.</p>
 <div class="alert">
 <strong>Important</strong>  
@@ -48,7 +48,7 @@ To run services or commands that can start at the same time, use asynchronous co
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-deployment-runasynchronousrunasynchronouscommandpath.md)</p></td>
+<td><p>[Path](microsoft-windows-deployment-runasynchronous-runasynchronouscommand-path.md)</p></td>
 <td><p>Specifies the path to the command to execute.</p></td>
 </tr>
 </tbody>

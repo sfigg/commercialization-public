@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>name</em></p></td>
-<td><p>Specifies the name of the computer. If you do not specify a name and the [MustReboot](microsoft-windows-deployment-auditcomputernamemustreboot.md) setting is present, this setting is ignored. The <em>name</em> value is a string with a maximum length of 15 characters.</p></td>
+<td><p>Specifies the name of the computer. If you do not specify a name and the [MustReboot](microsoft-windows-deployment-auditcomputername-mustreboot.md) setting is present, this setting is ignored. The <em>name</em> value is a string with a maximum length of 15 characters.</p></td>
 </tr>
 </tbody>
 </table>

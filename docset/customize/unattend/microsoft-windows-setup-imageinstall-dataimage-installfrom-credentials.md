@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-password.md)</p></td>
 <td><p>Specifies the password of the user account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-setup-imageinstall-dataimage-installfromcredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials-username.md)</p></td>
 <td><p>Specifies the user name of the account used for authentication.</p></td>
 </tr>
 </tbody>

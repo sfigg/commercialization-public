@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [Password](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password.md) for a [LocalAccount](microsoft-windows-shell-setupuseraccountslocalaccountslocalaccount.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the [Password](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password.md) for a [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md). <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>

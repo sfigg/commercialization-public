@@ -25,7 +25,7 @@ The `Microsoft-Windows-GPIOButtons` component specifies settings for GPIO button
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md)</p></td>
+<td><p>[ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)</p></td>
 <td><p>Specifies a hardware form factor to be in the laptop or tablet mode.</p></td>
 </tr>
 </tbody>

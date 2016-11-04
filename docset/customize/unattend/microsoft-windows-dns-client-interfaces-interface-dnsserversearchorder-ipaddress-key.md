@@ -13,12 +13,12 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies a unique key for the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md).
+`Key` specifies a unique key for the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md).
 
 **Note**  
--   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) to the answer file.
+-   This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) to the answer file.
 
--   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP Address. For example, you can specify three different IP addresses by using Key values of 1, 2, and 3.
+-   The value for `Key` is added to the answer file as an attribute of the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) element. The attribute `wcm:keyValue` is used to identify each unique IP Address. For example, you can specify three different IP addresses by using Key values of 1, 2, and 3.
 
  
 
@@ -33,7 +33,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique key for the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md). <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -94,7 +94,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md)
+[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)
 
  
 

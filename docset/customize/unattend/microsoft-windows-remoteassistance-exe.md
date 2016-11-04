@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 The Microsoft-Windows-RemoteAssistance-Exe component enables a user with a computer problem to receive assistance from another person who is located elsewhere. The helper can be a friend or a support professional. In the corporate environment, the helper is usually an employee receiving help from the corporate IT helpdesk. In the home environment, the user is often receiving help from a friend or a family member who is a power user and is remotely located.
 
-To enable remote assistance, you must configure the Windows Firewall. Use the [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) setting to create a command that configures Windows Firewall. Use `Netsh` to enable Remote Assistance. For example,
+To enable remote assistance, you must configure the Windows Firewall. Use the [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) setting to create a command that configures Windows Firewall. Use `Netsh` to enable Remote Assistance. For example,
 
 **netsh advfirewall firewall set rule group="Remote Assistance" new enable=yes**
 
@@ -29,23 +29,23 @@ To enable remote assistance, you must configure the Windows Firewall. Use the [F
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreateEncryptedOnlyTickets](microsoft-windows-remoteassistance-execreateencryptedonlytickets.md)</p></td>
+<td><p>[CreateEncryptedOnlyTickets](microsoft-windows-remoteassistance-exe-createencryptedonlytickets.md)</p></td>
 <td><p>Specifies whether only encrypted tickets are created.</p></td>
 </tr>
 <tr class="even">
-<td><p>[fAllowToGetHelp](microsoft-windows-remoteassistance-exefallowtogethelp.md)</p></td>
+<td><p>[fAllowToGetHelp](microsoft-windows-remoteassistance-exe-fallowtogethelp.md)</p></td>
 <td><p>Specifies that a user can request help from a friend or a support professional.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[fAllowFullControl](microsoft-windows-remoteassistance-exefallowfullcontrol.md)</p></td>
+<td><p>[fAllowFullControl](microsoft-windows-remoteassistance-exe-fallowfullcontrol.md)</p></td>
 <td><p>Specifies that a friend or a support professional can take control of the computer of the person requesting assistance.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MaxTicketExpiry](microsoft-windows-remoteassistance-exemaxticketexpiry.md)</p></td>
+<td><p>[MaxTicketExpiry](microsoft-windows-remoteassistance-exe-maxticketexpiry.md)</p></td>
 <td><p>Specifies the maximum amount of time that a ticket can live.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MaxTicketExpiryUnits](microsoft-windows-remoteassistance-exemaxticketexpiryunits.md)</p></td>
+<td><p>[MaxTicketExpiryUnits](microsoft-windows-remoteassistance-exe-maxticketexpiryunits.md)</p></td>
 <td><p>Specifies the units for the maximum amount of time that a ticket can live.</p></td>
 </tr>
 </tbody>

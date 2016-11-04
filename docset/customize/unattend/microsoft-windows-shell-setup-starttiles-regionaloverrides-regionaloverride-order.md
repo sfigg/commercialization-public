@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Each regional override can be used for multiple regions. For example, you could add a set of apps that are designed for South American business travel that only appear for your users in South America.
 
-Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-coreuserlocale.md).
+Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-core-userlocale.md).
 
 If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions-region.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\[RegionalOverride](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride.md): WideTiles, SquareTiles, and LockScreen.
 
@@ -96,7 +96,7 @@ The following XML output shows how to configure two set of apps, one applies to 
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[UserLocale](microsoft-windows-international-coreuserlocale.md)
+[UserLocale](microsoft-windows-international-core-userlocale.md)
 
  
 

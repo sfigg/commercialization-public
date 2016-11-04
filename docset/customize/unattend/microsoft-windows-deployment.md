@@ -33,7 +33,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 <td><p>Specifies the device form factor running the OS.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[DuplicatorDescription](microsoft-windows-deploymentduplicatordescription.md)</p></td>
+<td><p>[DuplicatorDescription](microsoft-windows-deployment-duplicatordescription.md)</p></td>
 <td><p>Specifies a description of the duplication tool used, as well as any other information that an OEM or an administrator stores in the registry.</p></td>
 </tr>
 <tr class="even">
@@ -45,7 +45,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 <td><p>Instructs Windows Setup to shut down the system after other answer-file settings are processed, and then to start the <strong>generalize</strong> configuration pass.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Reseal](microsoft-windows-deploymentreseal.md)</p></td>
+<td><p>[Reseal](microsoft-windows-deployment-reseal.md)</p></td>
 <td><p>Specifies whether the computer runs in audit mode or in Out-of-Box Experience (OOBE) when it next starts.</p></td>
 </tr>
 <tr class="odd">
@@ -53,7 +53,7 @@ The Microsoft-Windows-Deployment component specifies settings related to auditin
 <td><p>Specifies one or more commands to run asynchronously on the operating system during the specified configuration pass.</p></td>
 </tr>
 <tr class="even">
-<td><p>[RunSynchronous](microsoft-windows-deploymentrunsynchronous.md)</p></td>
+<td><p>[RunSynchronous](microsoft-windows-deployment-runsynchronous.md)</p></td>
 <td><p>Specifies one or more commands to run synchronously on the operating system during the specified configuration pass.</p></td>
 </tr>
 </tbody>

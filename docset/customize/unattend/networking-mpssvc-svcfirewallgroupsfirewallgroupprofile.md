@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Profile
 
 
-`Profile` specifies the profile of a [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md).
+`Profile` specifies the profile of a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md).
 
 ## Values
 
@@ -48,7 +48,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) | **Profile**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Profile**
 
 ## Valid Passes
 
@@ -78,7 +78,7 @@ The following XML output shows how to set Windows Firewall groups.
 ## Related topics
 
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md)
+[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
 
  
 

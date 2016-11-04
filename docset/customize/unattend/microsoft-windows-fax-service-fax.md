@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ArchiveFaxes](microsoft-windows-fax-servicefaxarchivefaxes.md)</p></td>
+<td><p>[ArchiveFaxes](microsoft-windows-fax-service-fax-archivefaxes.md)</p></td>
 <td><p>Specifies whether to save all incoming and outgoing faxes in a folder.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ArchiveFolderName](microsoft-windows-fax-servicefaxarchivefoldername.md)</p></td>
+<td><p>[ArchiveFolderName](microsoft-windows-fax-service-fax-archivefoldername.md)</p></td>
 <td><p>Specifies the folder in which the fax service saves copies of all incoming and outgoing faxes.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IncomingFaxesArePublic](microsoft-windows-fax-servicefaxincomingfaxesarepublic.md)</p></td>
+<td><p>[IncomingFaxesArePublic](microsoft-windows-fax-service-fax-incomingfaxesarepublic.md)</p></td>
 <td><p>Specifies whether all incoming faxes not assigned to a specific user can be viewed by all users.</p></td>
 </tr>
 </tbody>

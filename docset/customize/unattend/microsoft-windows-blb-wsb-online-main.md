@@ -33,7 +33,7 @@ The Microsoft-Windows-BLB-WSB-Online-Main component specifies settings to descri
 <td><p>Specifies the second of two lines of a description of an online backup service in the Windows Server Backup menus.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EnableOnlineBackup](microsoft-windows-blb-wsb-online-mainenableonlinebackup.md)</p></td>
+<td><p>[EnableOnlineBackup](microsoft-windows-blb-wsb-online-main-enableonlinebackup.md)</p></td>
 <td><p>Specifies whether recommendations for an online backup service appear in the Windows Server Backup menus.</p></td>
 </tr>
 <tr class="even">
@@ -57,12 +57,12 @@ The Microsoft-Windows-BLB-WSB-Online-Main component specifies settings to descri
 <td><p>Specifies the text that appears over the second of two links that describe a recommended online backup service in the Windows Server Backup menus.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md)</p></td>
+<td><p>[ProviderName](microsoft-windows-blb-wsb-online-main-providername.md)</p></td>
 <td><p>Specifies the name of the backup provider of an online backup service in the Windows Server Backup menus.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ResourceDll](microsoft-windows-blb-wsb-online-main-resource-dll.md)</p></td>
-<td><p>Specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows Server Backup menus. This includes [DescriptionText1](microsoft-windows-blb-wsb-online-main-descriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-main-descriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-main-icon.md), [Link1](microsoft-windows-blb-wsb-online-main-link1.md), [Link1Text](microsoft-windows-blb-wsb-online-main-link1text.md), [Link2](microsoft-windows-blb-wsb-online-main-link2.md), [Link2Text](microsoft-windows-blb-wsb-online-main-link2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md).</p></td>
+<td><p>[ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md)</p></td>
+<td><p>Specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows Server Backup menus. This includes [DescriptionText1](microsoft-windows-blb-wsb-online-main-descriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-main-descriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-main-icon.md), [Link1](microsoft-windows-blb-wsb-online-main-link1.md), [Link1Text](microsoft-windows-blb-wsb-online-main-link1text.md), [Link2](microsoft-windows-blb-wsb-online-main-link2.md), [Link2Text](microsoft-windows-blb-wsb-online-main-link2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-main-providername.md).</p></td>
 </tr>
 </tbody>
 </table>

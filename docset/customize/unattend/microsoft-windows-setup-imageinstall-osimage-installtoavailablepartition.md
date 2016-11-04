@@ -15,12 +15,12 @@ ms.sitesec: msdn
 
 `InstallToAvailablePartition` specifies whether to install the Windows operating system to the first available partition that has enough space and does not already contain an installation of Windows.
 
-If you are installing Windows to a blank disk, you must create and format partitions with the [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) and [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) settings, and set one of the partitions as the active partition. After the partitions are created and formatted, using the **InstallToAvailablePartition** setting will select the first available partition with enough space to install Windows.
+If you are installing Windows to a blank disk, you must create and format partitions with the [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) and [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) settings, and set one of the partitions as the active partition. After the partitions are created and formatted, using the **InstallToAvailablePartition** setting will select the first available partition with enough space to install Windows.
 
 ## Comparison of OSImage Settings: InstallTo and InstallToAvailablePartition
 
 
-For unattended installations, you must specify either the [InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md) setting or the **InstallToAvailablePartition** setting.
+For unattended installations, you must specify either the [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md) setting or the **InstallToAvailablePartition** setting.
 
 <table>
 <colgroup>
@@ -120,9 +120,9 @@ The following XML output shows how to set the **InstallToAvailablePartition** se
 
 [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md)
 
-[CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md)
+[CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md)
 
-[ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md)
+[ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md)
 
  
 

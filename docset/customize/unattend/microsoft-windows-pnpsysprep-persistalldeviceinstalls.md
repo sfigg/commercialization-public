@@ -80,7 +80,7 @@ The following XML output specifies that device drivers remain be installed on th
 ## Related topics
 
 
-[DoNotCleanUpNonPresentDevices](microsoft-windows-pnpsysprepdonotcleanupnonpresentdevices.md)
+[DoNotCleanUpNonPresentDevices](microsoft-windows-pnpsysprep-donotcleanupnonpresentdevices.md)
 
 [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md)
 

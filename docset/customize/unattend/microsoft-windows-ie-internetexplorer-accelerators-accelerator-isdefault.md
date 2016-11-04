@@ -77,7 +77,7 @@ The following XML output specifies adding two Accelerators, and specifies the fi
 ## Related topics
 
 
-[Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md)
+[Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md)
 
  
 

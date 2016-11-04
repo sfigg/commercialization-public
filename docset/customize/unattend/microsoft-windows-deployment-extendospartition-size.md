@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Size
 
 
-`Size` specifies the size of the extension. If `Size` and [Extend](microsoft-windows-deployment-extendospartitionextend.md) are present in the same configuration pass, an error is logged, and installation terminates.
+`Size` specifies the size of the extension. If `Size` and [Extend](microsoft-windows-deployment-extendospartition-extend.md) are present in the same configuration pass, an error is logged, and installation terminates.
 
 ## Values
 

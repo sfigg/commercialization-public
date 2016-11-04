@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[StartPageKey](microsoft-windows-ie-internetexplorer-startpages-startpagestartpagekey.md)</p></td>
+<td><p>[StartPageKey](microsoft-windows-ie-internetexplorer-startpages-startpage-startpagekey.md)</p></td>
 <td><p>Specifies a unique string for a start page.</p></td>
 </tr>
 <tr class="even">
-<td><p>[StartPageUrl](microsoft-windows-ie-internetexplorer-startpages-startpagestartpageurl.md)</p></td>
+<td><p>[StartPageUrl](microsoft-windows-ie-internetexplorer-startpages-startpage-startpageurl.md)</p></td>
 <td><p>Specifies the URL of a start page.</p></td>
 </tr>
 </tbody>

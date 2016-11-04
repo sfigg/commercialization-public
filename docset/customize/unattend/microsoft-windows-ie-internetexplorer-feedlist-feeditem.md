@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FeedKey](microsoft-windows-ie-internetexplorerfeedlistfeeditemfeedkey.md)</p></td>
+<td><p>[FeedKey](microsoft-windows-ie-internetexplorer-feedlist-feeditem-feedkey.md)</p></td>
 <td><p>Specifies a unique string for a <code>FeedItem</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FeedTitle](microsoft-windows-ie-internetexplorerfeedlistfeeditemfeedtitle.md)</p></td>
+<td><p>[FeedTitle](microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedtitle.md)</p></td>
 <td><p>Specifies the title of a <code>FeedItem</code>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[FeedURL](microsoft-windows-ie-internetexplorerfeedlistfeeditemfeedurl.md)</p></td>
+<td><p>[FeedURL](microsoft-windows-ie-internetexplorer-feedlistfeed-item-feedurl.md)</p></td>
 <td><p>Specifies the URL of a <code>FeedItem</code>.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | **FeedItem**
+[Microsoft-Windows-IE-InternetExplorer](mmicrosoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md) | **FeedItem**
 
 ## Applies To
 
@@ -59,7 +59,7 @@ For the list of the supported Windows editions and architectures that this compo
 ## XML Example
 
 
-The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md).
+The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md).
 
 ``` syntax
 <FeedList>
@@ -79,7 +79,7 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 ## Related topics
 
 
-[FeedList](microsoft-windows-ie-internetexplorerfeedlist.md)
+[FeedList](microsoft-windows-ie-internetexplorer-feedlist.md)
 
  
 

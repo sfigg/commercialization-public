@@ -21,7 +21,7 @@ If you create a user account that does not include administrative privileges, th
 
 -   If User Account Control is disabled, these commands don’t run.
 
-When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deployment-resealmode.md) = Audit.
+When you add a script using FirstLogonCommands, it will be triggered on the next boot, even if you boot into audit mode using Ctrl+Shift+F3. If you plan to use audit mode later, add the following setting to skip this script automatically: Microsoft-Windows-Deployment\\Reseal\\[Mode](microsoft-windows-deployment-reseal-mode.md) = Audit.
 
 **Note**  This command now works like Microsoft-Windows-Shell-Setup\\LogonCommands\\[AsynchronousCommand](microsoft-windows-shell-setup-logoncommands.md): all commands using these unattend settings are now started at the same time, and no longer wait for the previous command to finish. 
 
@@ -65,7 +65,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md) | **SynchronousCommand**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md) | **SynchronousCommand**
 
 ## Applies To
 
@@ -95,7 +95,7 @@ The following XML output shows how to set first logon commands.
 ## Related topics
 
 
-[FirstLogonCommands](microsoft-windows-shell-setupfirstlogoncommands.md)
+[FirstLogonCommands](microsoft-windows-shell-setup-firstlogoncommands.md)
 
  
 

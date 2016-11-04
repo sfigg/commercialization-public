@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PlainText](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-passwordp-laintext.md)</p></td>
+<td><p>[PlainText](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password-plaintext.md)</p></td>
 <td><p>Specifies whether the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password is hidden in the answer file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-shell-setupu-seraccounts-localaccounts-localaccount-passwordvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount-password-value.md)</p></td>
 <td><p>Specifies the [LocalAccount](microsoft-windows-shell-setup-useraccounts-localaccounts-localaccount.md) password.</p></td>
 </tr>
 </tbody>

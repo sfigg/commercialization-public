@@ -27,19 +27,19 @@ When users experience problems with their computers, Windows offers a path to re
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Description](microsoft-windows-diagcpldescription.md)</p></td>
+<td><p>[Description](microsoft-windows-diagcpl-description.md)</p></td>
 <td><p>Specifies customized text to display under the icon title by the <strong>Online Support</strong> icon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Icon](microsoft-windows-diagcplicon.md)</p></td>
+<td><p>[Icon](microsoft-windows-diagcpl-icon.md)</p></td>
 <td><p>Specifies the path and file name of the icon for the <strong>Online Support</strong> icon.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Link](microsoft-windows-diagcpllink.md)</p></td>
+<td><p>[Link](microsoft-windows-diagcpl-link.md)</p></td>
 <td><p>Specifies a GUID of the <strong>Online Support</strong> icon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Title](microsoft-windows-diagcpltitle.md)</p></td>
+<td><p>[Title](microsoft-windows-diagcpl-title.md)</p></td>
 <td><p>Specifies the title to display next to the <strong>Online Support</strong> icon.</p></td>
 </tr>
 </tbody>

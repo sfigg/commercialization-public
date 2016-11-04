@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FavID
 
 
-`FavID` specifies a unique key to associate with a [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md).
+`FavID` specifies a unique key to associate with a [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique string value (key) to represent the <code>FavoriteItem</code> in the unattended installation answer file. <code>FavID </code>must be unique for each [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md). <em>Key</em> is a string.</p></td>
+<td><p>Specifies a unique string value (key) to represent the <code>FavoriteItem</code> in the unattended installation answer file. <code>FavID </code>must be unique for each [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md). <em>Key</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavID**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | **FavID**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)
+[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
  
 

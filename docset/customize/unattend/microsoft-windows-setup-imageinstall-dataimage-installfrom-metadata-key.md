@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Key
 
 
-`Key` specifies whether the image index, name, or description is used to specify the metadata for an image in a Windows image (.wim) file. For information about using this setting, see [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md).
+`Key` specifies whether the image index, name, or description is used to specify the metadata for an image in a Windows image (.wim) file. For information about using this setting, see [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md).
 
 ## Values
 
@@ -57,7 +57,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md) | **Key**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) | **Key**
 
 ## Applies To
 
@@ -98,9 +98,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md)
 
-[Value](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-value.md)
 
  
 

@@ -27,7 +27,7 @@ DNS settings can be divided into two primary groups—global settings and interf
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-dns-clientinterfaces-interface.md)</p></td>
+<td><p>[Interface](microsoft-windows-dns-client-interfaces-interface.md)</p></td>
 <td><p>Specifies interface settings.</p></td>
 </tr>
 </tbody>

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # EnableAdapterDomainNameRegistration
 
 
-`EnableAdapterDomainNameRegistration` specifies whether to register the host (A) and pointer (PTR) resource records for this adapter. If it is not specified, only the [DNSDomain](microsoft-windows-dns-clientdnsdomain.md) value specified in the global parameters is used.
+`EnableAdapterDomainNameRegistration` specifies whether to register the host (A) and pointer (PTR) resource records for this adapter. If it is not specified, only the [DNSDomain](microsoft-windows-dns-client-dnsdomain.md) value specified in the global parameters is used.
 
 ## Values
 
@@ -40,7 +40,7 @@ ms.sitesec: msdn
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | **EnableAdapterDomainNameRegistration**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **EnableAdapterDomainNameRegistration**
 
 ## Valid Configuration Passes
 
@@ -91,7 +91,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Interface](microsoft-windows-dns-clientinterfacesinterface.md)
+[Interface](microsoft-windows-dns-client-interfaces-interface.md)
 
  
 

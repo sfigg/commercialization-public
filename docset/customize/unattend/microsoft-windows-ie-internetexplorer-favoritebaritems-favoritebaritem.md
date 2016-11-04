@@ -29,19 +29,19 @@ To add a predefined Favorite bar item in Windows System Image Manager, add the 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ItemKey](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritemitemkey.md)</p></td>
+<td><p>[ItemKey](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemkey.md)</p></td>
 <td><p>Specifies a unique key for the Favorite bar item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ItemName](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritemitemname.md)</p></td>
+<td><p>[ItemName](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemname.md)</p></td>
 <td><p>Specifies the name that appears in the Favorite bar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[ItemType](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritemitemtype.md)</p></td>
+<td><p>[ItemType](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemtype.md)</p></td>
 <td><p>Specifies the type of Favorite.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ItemUrl](microsoft-windows-ie-internetexplorerfavoritebaritemsfavoritebaritemitemurl.md)</p></td>
+<td><p>[ItemUrl](microsoft-windows-ie-internetexplorer-favoritebaritems-favoritebaritem-itemurl.md)</p></td>
 <td><p>Specifies the path to the Favorite.</p></td>
 </tr>
 </tbody>
@@ -57,7 +57,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoriteBarItems](microsoft-windows-ie-internetexplorerfavoritebaritems.md)| **FavoriteBarItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoriteBarItems](microsoft-windows-ie-internetexplorer-favoritebaritems.md)| **FavoriteBarItem**
 
 ## Applies To
 

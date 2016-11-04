@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunSynchronousCommand` specifies a single command to run during the windowsPE configuration pass.
 
-To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronousCommand](microsoft-windows-setup-runasynchronousrunasynchronouscommand.md) instead.
+To start a command that needs to finish before other commands can start, use synchronous commands. To run services or commands that can start at the same time, use [RunAsynchronousCommand](microsoft-windows-setup-runasynchronous-runasynchronouscommand.md) instead.
 
 All `RunSynchronous` commands run in the system context.
 

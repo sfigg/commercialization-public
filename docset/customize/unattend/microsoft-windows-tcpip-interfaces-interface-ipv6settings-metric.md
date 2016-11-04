@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md) | **Metric**
+[Microsoft-Windows-TCPIP](mmicrosoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md) | **Metric**
 
 ## Applies To
 

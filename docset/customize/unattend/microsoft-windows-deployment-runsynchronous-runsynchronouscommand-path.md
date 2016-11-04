@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Path
 
 
-`Path` specifies the path and the name of the command to run. [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
+`Path` specifies the path and the name of the command to run. [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
 **Warning**  
-Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deploymentrunsynchronousrunsynchronouscommandwillreboot.md).
+Do not add commands that shut down or reboot the computer; instead, use the setting: Microsoft-Windows-Deployment\\RunSynchronous\\RunSynchronousCommand\\[WillReboot](microsoft-windows-deployment-runsynchronous-runsynchronouscommand-willreboot.md).
 
  
 

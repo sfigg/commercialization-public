@@ -75,7 +75,7 @@ The following sample XML output shows how to specify that multiple hosts in the 
 ## Related topics
 
 
-[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrulesportrule.md)
+[Portrule](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule.md)
 
  
 

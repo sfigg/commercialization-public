@@ -43,7 +43,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [CreatePartitions](microsoft-windows-setup-diskconfigurationdiskcreatepartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) | **Order**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [CreatePartitions](microsoft-windows-setup-diskconfiguration-disk-createpartitions.md) | [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) | **Order**
 
 ## Applies To
 
@@ -270,7 +270,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md)
+[CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)
 
  
 

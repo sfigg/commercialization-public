@@ -48,7 +48,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [LinearityData](microsoft-windows-tabletpc-platform-input-corelinearitydata.md)| [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md) | **Value**
+[Microsoft-Windows-TabletPC-Platform-Input-Core](microsoft-windows-tabletpc-platform-input-core.md)| [LinearityData](microsoft-windows-tabletpc-platform-input-core-linearitydata.md)| [DeviceElement](microsoft-windows-tabletpc-platform-input-core-linearitydata-deviceelement.md) | **Value**
 
 ## Applies To
 

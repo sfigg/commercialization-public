@@ -42,11 +42,11 @@ For information about specifying the GUID for your icon, see the MSDN Topic: [NO
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[GUID](microsoft-windows-shell-setup-notificationareapromotedicon2guid.md)</p></td>
+<td><p>[GUID](microsoft-windows-shell-setup-notificationarea-promotedicon2-guid.md)</p></td>
 <td><p>Specifies the GUID of the icon to be displayed in the notification area.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Path](microsoft-windows-shell-setup-notificationareapromotedicon2path.md)</p></td>
+<td><p>[Path](microsoft-windows-shell-setup-notificationarea-promotedicon2-path.md)</p></td>
 <td><p>Specifies the path to the application that contains the icon.</p></td>
 </tr>
 </tbody>

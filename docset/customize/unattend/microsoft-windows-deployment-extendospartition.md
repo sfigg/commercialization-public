@@ -27,11 +27,11 @@ These settings are valid only for NTFS file-system partitions.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Extend](microsoft-windows-deployment-extendospartitionextend.md)</p></td>
+<td><p>[Extend](microsoft-windows-deployment-extendospartition-extend.md)</p></td>
 <td><p>Specifies whether to extend the partition to fill the entire hard disk.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Size](microsoft-windows-deployment-extendospartitionsize.md)</p></td>
+<td><p>[Size](microsoft-windows-deployment-extendospartition-size.md)</p></td>
 <td><p>Specifies the size of the extension in megabytes. If the total value of the current size of the partition plus this setting exceeds the available space, then the partition is not extended.</p></td>
 </tr>
 </tbody>

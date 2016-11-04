@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-netbt-interfaces-interfaceidentifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-netbt-interfaces-interface-identifier.md)</p></td>
 <td><p>Specifies the interface to apply to other settings in <code>Interface</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md)</p></td>
+<td><p>[NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md)</p></td>
 <td><p>Specifies the list of name servers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetbiosOptions](microsoft-windows-netbt-interfaces-interfacenetbiosoptions.md)</p></td>
+<td><p>[NetbiosOptions](microsoft-windows-netbt-interfaces-interface-netbiosoptions.md)</p></td>
 <td><p>Specifies security settings for the NetBIOS service.</p></td>
 </tr>
 </tbody>

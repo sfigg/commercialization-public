@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](-microsoft-windows-setup.md) | **LogPath**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **LogPath**
 
 ## Applies To
 

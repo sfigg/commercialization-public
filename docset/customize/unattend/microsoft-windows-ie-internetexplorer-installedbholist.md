@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Browser Help Objects are add-on modules used to add functionality to Internet Explorer. Examples of Browser Help Objects include toolbars, animated mouse pointers, and stock tickers.
 
-`InstalledBHOList` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbholistaddonguiditem.md) settings each of which represents a single Browser Help Object. For more information, see the MSDN topic: [Building Browser Helper Objects](http://go.microsoft.com/fwlink/?LinkId=136975).
+`InstalledBHOList` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md) settings each of which represents a single Browser Help Object. For more information, see the MSDN topic: [Building Browser Helper Objects](http://go.microsoft.com/fwlink/?LinkId=136975).
 
 ## Child Elements
 
@@ -29,7 +29,7 @@ Browser Help Objects are add-on modules used to add functionality to Internet Ex
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledbholistaddonguiditem.md)</p></td>
+<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md)</p></td>
 <td><p>Specifies settings for a Browser Help Object.</p></td>
 </tr>
 </tbody>
@@ -73,7 +73,7 @@ The following XML output shows how to set two Internet Explorer Browser Help Obj
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md)
+[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)
 
  
 

@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-servicefax.md) | **IncomingFaxesArePublic**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-service-fax.md) | **IncomingFaxesArePublic**
 
 ## Applies To
 
@@ -89,7 +89,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[Fax](microsoft-windows-fax-servicefax.md)
+[Fax](microsoft-windows-fax-service-fax.md)
 
  
 

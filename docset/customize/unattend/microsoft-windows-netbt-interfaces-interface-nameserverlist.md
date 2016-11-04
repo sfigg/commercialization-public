@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md)</p></td>
 <td><p>Specifies an IP address.</p></td>
 </tr>
 </tbody>

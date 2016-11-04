@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FeedURL
 
 
-`FeedURL` specifies the URL of a [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md).
+`FeedURL` specifies the URL of a [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md).
 
 ## Values
 
@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md) | **FeedURL**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md) | **FeedURL**
 
 ## Valid Configuration Passes
 
@@ -53,7 +53,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md).
+The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md).
 
 ``` syntax
 <FeedList>
@@ -73,7 +73,7 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 ## Related topics
 
 
-[FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md)
+[FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)
 
  
 

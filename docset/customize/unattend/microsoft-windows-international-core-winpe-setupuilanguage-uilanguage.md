@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `UILanguage` specifies the language that is used to display menu items in Windows Setup and Windows Deployment Services.
 
-In addition to this `UILanguage` setting, a [UILanguage](microsoft-windows-international-core-winpe--uilanguage.md) setting is used to specify the default user interface (UI) language of the Windows installation.
+In addition to this `UILanguage` setting, a [UILanguage](microsoft-windows-international-core-winpe-uilanguage.md) setting is used to specify the default user interface (UI) language of the Windows installation.
 
 ## Values
 
@@ -43,7 +43,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md) | [SetupUILanguage](microsoft-windows-international-core-winpe--setupuilanguage.md) | **UILanguage**
+[microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md) | [SetupUILanguage](microsoft-windows-international-core-winpe-setupuilanguage.md) | **UILanguage**
 
 ## Valid Configuration Passes
 

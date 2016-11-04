@@ -46,7 +46,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) | **Path**
+[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) | **Path**
 
 ## Applies To
 
@@ -84,7 +84,7 @@ The following XML output specifies the UNC paths to two additional locations for
 ## Related topics
 
 
-[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md)
+[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md)
 
  
 

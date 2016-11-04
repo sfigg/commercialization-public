@@ -75,9 +75,9 @@ The following XML output shows how to specify that Server Manager opens the firs
 
 [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md)
 
-[DoNotOpenInitialConfigurationTasksAtLogon](microsoft-windows-outofboxexperiencedonotopeninitialconfigurationtasksatlogon.md)
+[DoNotOpenInitialConfigurationTasksAtLogon](microsoft-windows-outofboxexperience-donotopeninitialconfigurationtasksatlogon.md)
 
-[OemExtensionXmlFilePath](microsoft-windows-outofboxexperienceoemextensionxmlfilepath.md)
+[OemExtensionXmlFilePath](microsoft-windows-outofboxexperience-oemextensionxmlfilepath.md)
 
  
 

@@ -20,7 +20,7 @@ You should never use a data image to overwrite Windows system data. Use data ima
 There can be more than one data image. The [OSImage](microsoft-windows-setup-imageinstall-osimage.md) is installed before any data images.
 
 **Note**  
-The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md) settings are required.
+The [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) settings are required.
 
  
 

@@ -64,7 +64,7 @@ The following XML output specifies how to render Web pages from the fabrikam.com
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[IntranetCompatibilityMode](microsoft-windows-ie-internetexplorerintranetcompatibilitymode.md)
+[IntranetCompatibilityMode](microsoft-windows-ie-internetexplorer-intranetcompatibilitymode.md)
 
  
 

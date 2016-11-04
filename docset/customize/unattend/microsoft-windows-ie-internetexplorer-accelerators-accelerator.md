@@ -32,15 +32,15 @@ Accelerators are menu options in Internet Explorer that help automate common bro
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AcceleratorXML](microsoft-windows-ie-internetexploreracceleratorsacceleratoracceleratorxml.md)</p></td>
+<td><p>[AcceleratorXML](microsoft-windows-ie-internetexplorer-accelerators-accelerator-acceleratorxml.md)</p></td>
 <td><p>Specifies the URL of an Accelerator XML file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ItemKey](microsoft-windows-ie-internetexploreracceleratorsacceleratoritemkey.md)</p></td>
+<td><p>[ItemKey](microsoft-windows-ie-internetexplorer-accelerators-accelerator-itemkey.md)</p></td>
 <td><p>Specifies a unique key for the Accelerator.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[IsDefault](microsoft-windows-ie-internetexploreracceleratorsacceleratorisdefault.md)</p></td>
+<td><p>[IsDefault](microsoft-windows-ie-internetexplorer-accelerators-accelerator-isdefault.md)</p></td>
 <td><p>Specifies whether the Accelerator is the default Accelerator.</p></td>
 </tr>
 </tbody>
@@ -56,7 +56,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [Accelerators](microsoft-windows-ie-internetexploreraccelerators.md)| **Accelerator**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [Accelerators](microsoft-windows-ie-internetexplorer-accelerators.md)| **Accelerator**
 
 ## Applies To
 

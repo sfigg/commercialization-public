@@ -30,7 +30,7 @@ The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) mus
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Route](microsoft-windows-tcpip-interfaces-interface-routesroute.md)</p></td>
+<td><p>[Route](microsoft-windows-tcpip-interfaces-interface-routes-route.md)</p></td>
 <td><p>Specifies an individual IPv4 or IPv6 route.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **Routes**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **Routes**
 
 ## Applies To
 

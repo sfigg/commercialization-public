@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-setup-pagefilepath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-pagefile-path.md)</p></td>
 <td><p>Specifies the path of the page file to create.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Size](microsoft-windows-setup-pagefilesize.md)</p></td>
+<td><p>[Size](microsoft-windows-setup-pagefile-size.md)</p></td>
 <td><p>Specifies the size of the page file to create.</p></td>
 </tr>
 </tbody>

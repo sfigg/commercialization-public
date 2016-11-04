@@ -160,11 +160,11 @@ The following table provides scenarios for each combination of configuration pas
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[ForceShutdownNow](microsoft-windows-deploymentresealforceshutdownnow.md)</p></td>
+<td><p>[ForceShutdownNow](microsoft-windows-deployment-reseal-forceshutdownnow.md)</p></td>
 <td><p>Specifies whether the computer shuts down immediately after the <code>Mode</code> setting is applied.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Mode](microsoft-windows-deploymentresealmode.md)</p></td>
+<td><p>[Mode](microsoft-windows-deployment-reseal-mode.md)</p></td>
 <td><p>Specifies whether the computer starts in audit mode or OOBE.</p></td>
 </tr>
 </tbody>

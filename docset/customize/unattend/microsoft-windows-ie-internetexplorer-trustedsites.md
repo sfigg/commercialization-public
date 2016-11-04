@@ -73,7 +73,7 @@ The following XML output specifies the fully qualified URLs.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[LocalIntranetSites](microsoft-windows-ie-internetexplorerlocalintranetsites.md)
+[LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md)
 
  
 

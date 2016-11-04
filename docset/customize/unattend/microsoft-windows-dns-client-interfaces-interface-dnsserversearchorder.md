@@ -19,7 +19,7 @@ When running unattended setup for a DNS client, you can configure a list of suff
 
 However, the entries are not guaranteed to be applied in any specific order.
 
-To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddresskey.md) in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) to specify the order in which each DNS server should be searched. For example,
+To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md) in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) to specify the order in which each DNS server should be searched. For example,
 
 ``` syntax
    <DNSServerSearchOrder>
@@ -29,7 +29,7 @@ To ensure the correct ordering of DNS servers, use [Key](microsoft-windows-dns-c
    </DNSServerSearchOrder>
 ```
 
-You can also use the [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md) setting under [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) element to ensure that suffixes are searched in a specific order. For example,
+You can also use the [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) setting under [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) element to ensure that suffixes are searched in a specific order. For example,
 
 ``` syntax
    <DNSSuffixSearchOrder>
@@ -39,7 +39,7 @@ You can also use the [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomai
       </ DNSSuffixSearchOrder >
 ```
 
-For both of these examples, the value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddresskey.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) indicates the order in which the DNS servers are searched. In this example, the server search order list is:
+For both of these examples, the value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) indicates the order in which the DNS servers are searched. In this example, the server search order list is:
 
 1.  192.168.1.1
 
@@ -55,7 +55,7 @@ The suffix search order is:
 
 3.  server2.fabrikam.com
 
-The value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddresskey.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-clientdnssuffixsearchorderdomainnamekey.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) must be unique, and can be set to any alphanumeric character. If the value is numeric (contains only numbers), these will be applied to order the list of [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) within `DNSServerSearchOrder`.
+The value for [Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)in `DNSServerSearchOrder` and [Key](microsoft-windows-dns-client-dnssuffixsearchorder-domainname-key.md) in [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) must be unique, and can be set to any alphanumeric character. If the value is numeric (contains only numbers), these will be applied to order the list of [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) within `DNSServerSearchOrder`.
 
 ## Child Elements
 
@@ -67,7 +67,7 @@ The value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversear
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)</p></td>
 <td><p>Specifies an IP address.</p></td>
 </tr>
 </tbody>
@@ -78,7 +78,7 @@ The value for [Key](microsoft-windows-dns-clientinterfacesinterfacednsserversear
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfacesinterface.md) | **DNSServerSearchOrder**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | **DNSServerSearchOrder**
 
 ## Valid Passes
 

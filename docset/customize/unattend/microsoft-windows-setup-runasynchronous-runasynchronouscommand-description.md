@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Description
 
 
-`Description` describes the asynchronous command to execute specified by [Path](microsoft-windows-setup-runasynchronou-srunasynchronouscommand-path.md).
+`Description` describes the asynchronous command to execute specified by [Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md).
 
 All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 

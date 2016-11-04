@@ -25,11 +25,11 @@ The Microsoft-Windows-TCPIP component specifies the TCP/IP settings.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IcmpRedirectsEnabled](microsoft-windows-tcpipicmpredirectsenabled.md)</p></td>
+<td><p>[IcmpRedirectsEnabled](microsoft-windows-tcpip-icmpredirectsenabled.md)</p></td>
 <td><p>Specifies whether the IPv4 and IPv6 path caches are updated in response to Internet Control Message Protocol (ICMP) redirect messages.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Interfaces](microsoft-windows-tcpipinterfaces.md)</p></td>
+<td><p>[Interfaces](microsoft-windows-tcpip-interfaces.md)</p></td>
 <td><p>Specifies settings for TCP/IP interfaces.</p></td>
 </tr>
 </tbody>

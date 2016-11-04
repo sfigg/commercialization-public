@@ -21,7 +21,7 @@ ms.sitesec: msdn
 
 -   In Windows 7 and Windows Vista, when you set this value to **true**, Control Panel shows a link to customized Help. Otherwise, it shows the support information that [SupportHours](microsoft-windows-shell-setup-oeminformation-supporthours.md), [SupportPhone](microsoft-windows-shell-setup-oeminformation-supportphone.md), and [SupportURL](microsoft-windows-shell-setup-oeminformation-supporturl.md) specify.
 
-    All information (including [Manufacturer](microsoft-windows-shell-setup-oeminformationmanufacturer.md) and [Model](microsoft-windows-shell-setup-oeminformationmodel.md)) should be in the customized Help file. This information doesn't appear in the **System** item in Control Panel.
+    All information (including [Manufacturer](microsoft-windows-shell-setup-oeminformation-manufacturer.md) and [Model](microsoft-windows-shell-setup-oeminformation-model.md)) should be in the customized Help file. This information doesn't appear in the **System** item in Control Panel.
 
 ## Values
 

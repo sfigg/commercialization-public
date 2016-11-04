@@ -218,7 +218,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 
 [Reseal](microsoft-windows-deployment-reseal.md)
 
-[Mode](microsoft-windows-deployment-resealmode.md)
+[Mode](microsoft-windows-deployment-reseal-mode.md)
 
 [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344)
 

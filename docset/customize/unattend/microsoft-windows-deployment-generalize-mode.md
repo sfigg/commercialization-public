@@ -79,7 +79,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[Reseal](microsoft-windows-deploymentreseal.md)
+[Reseal](microsoft-windows-deployment-reseal.md)
 
  
 

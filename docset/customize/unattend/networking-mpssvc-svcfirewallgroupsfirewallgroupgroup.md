@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Group
 
 
-The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md). The available rule groups differ by Windows edition.
+The `Group` setting specifies the name of a [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md). The available rule groups differ by Windows edition.
 
 **To see the rule groups available on a computer**
 
@@ -52,7 +52,7 @@ For more information, see the MSDN topic: [Firewall Groups](http://go.microsoft.
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) | **Group**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Group**
 
 ## Valid Passes
 
@@ -87,7 +87,7 @@ The following XML output shows how to set two Windows Firewall groups. The first
 ## Related topics
 
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md)
+[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
 
  
 

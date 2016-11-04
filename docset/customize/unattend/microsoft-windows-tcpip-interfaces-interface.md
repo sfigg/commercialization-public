@@ -18,7 +18,7 @@ ms.sitesec: msdn
 TCP/IP settings can be divided into two primary groups—global settings and interface settings. Global settings apply to the protocols as a whole and are applied across all network interfaces. Interface settings are specific to a particular network interface.
 
 **Note**  
-The settings in Interface must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface--ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface--ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface--identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface--unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface--routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
+The settings in Interface must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md), [Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md), [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
  
 
@@ -32,23 +32,23 @@ The settings in Interface must be added in the following order: [Ipv4Settings](m
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface--identifier.md)</p></td>
+<td><p>[Identifier](microsoft-windows-tcpip-interfaces-interface-identifier.md)</p></td>
 <td><p>Specifies the interface to apply to the other settings within <code>Interface</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Ipv4Settings](microsoft-windows-tcpip-interfaces-interface--ipv4settings.md)</p></td>
+<td><p>[Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md)</p></td>
 <td><p>Specifies settings for the IP version 4 interface.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-i-pv6settings.md)</p></td>
+<td><p>[Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md)</p></td>
 <td><p>Specifies settings for the IP version 6 interface.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Routes](microsoft-windows-tcpip-interfaces-interface--routes.md)</p></td>
+<td><p>[Routes](microsoft-windows-tcpip-interfaces-interface-routes.md)</p></td>
 <td><p>Specifies the IPv4 and IPv6 routes.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface--unicastipaddresses.md)</p></td>
+<td><p>[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md)</p></td>
 <td><p>Specifies the unicast IP addresses for the IPv4 and IPv6 settings.</p></td>
 </tr>
 </tbody>

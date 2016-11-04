@@ -19,7 +19,7 @@ You can specify:
 
 -   For whom ESC is enabled: administrators only; all users, both administrators and all users; or neither.
 
--   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md) and [TrustedSites](microsoft-windows-ie-internetexplorertrustedsites.md).
+-   Local intranet sites and Internet sites whose content can be trusted by administrators and users for whom ESC is enabled. For more information, see [LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md) and [TrustedSites](microsoft-windows-ie-internetexplorer-trustedsites.md).
 
 ## In This Section
 
@@ -31,11 +31,11 @@ You can specify:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IEHardenAdmin](microsoft-windows-ie-esciehardenadmin.md)</p></td>
+<td><p>[IEHardenAdmin](microsoft-windows-ie-esc-iehardenadmin.md)</p></td>
 <td><p>Specifies whether ESC is enabled for all administrators on the computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[IEHardenUser](microsoft-windows-ie-esciehardenuser.md)</p></td>
+<td><p>[IEHardenUser](microsoft-windows-ie-esc-iehardenuser.md)</p></td>
 <td><p>Specifies whether ESC is enabled for all users on the computer.</p></td>
 </tr>
 </tbody>
