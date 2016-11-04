@@ -28,7 +28,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Start + theme settings: Enabling dark mode](p_phcustomization.start___theme_settings__enabling_dark_mode)</p></td>
+<td><p>[Start + theme settings: Enabling dark mode](https://msdn.microsoft.com/library/windows/hardware/mt762907)</p></td>
 <td><p>OEMs can choose to specify whether the dark mode is applied.</p></td>
 </tr>
 <tr class="even">
@@ -169,7 +169,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>For mobile operators that require it, OEMs can show the <strong>View Internet APN</strong> button in the <strong>Cellular &amp; SIM</strong> settings page for users that have a data plan.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Cellular + SIM settings: Wi-Fi calling errors](p_phcustomization.wi-fi_calling_errors)</p></td>
+<td><p>[Cellular + SIM settings: Wi-Fi calling errors](https://msdn.microsoft.com/library/windows/hardware/mt651724)</p></td>
 <td><p>OEMs can customize the mobile device to configure settings related to Wi-Fi calling errors</p></td>
 </tr>
 <tr class="odd">
@@ -213,7 +213,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Partners must select the set of available languages to include on the mobile device. Partners must also specify one of the included languages as the default device language.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Region settings: Default list of countries/regions](p_phcustomization.default_list_of_countries_regions)</p></td>
+<td><p>[Region settings: Default list of countries/regions](https://msdn.microsoft.com/library/windows/hardware/mt637405)</p></td>
 <td><p>OEMs can select the countries/regions to exclude from the default list shown in the mobile device's <strong>Country/Region</strong> list in the <strong>Settings</strong> screen.</p></td>
 </tr>
 <tr class="even">
@@ -261,7 +261,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Partners can enable or disable the <strong>Show pictures automatically</strong> setting in the browser's <strong>advanced settings</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Messaging settings: Adding an LED notification option](p_phcustomization.notifications__adding_an_led_notification_option)</p></td>
+<td><p>[Messaging settings: Adding an LED notification option](https://msdn.microsoft.com/library/windows/hardware/mt653694)</p></td>
 <td><p>OEMs can configure a registry key to specify a selected notification LED as the LED notification and then add an <strong>LED notification</strong> option to the device's messaging <strong>Settings</strong> screen.</p></td>
 </tr>
 <tr class="even">
@@ -297,7 +297,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Partners can choose to display an <strong>Automatically download MMS</strong> toggle to allows users to turn off automatic downloads of MMS messages. If the toggle is displayed, partners can also change the default value to stop automatic MMS downloads.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Messaging settings: MMS data options](p_phcustomization.mms_data_options)</p></td>
+<td><p>[Messaging settings: MMS data options](https://msdn.microsoft.com/library/windows/hardware/mt628525)</p></td>
 <td><p>Partners can configure the MMS data options to:</p>
 <ul>
 <li><p>Show the <strong>Allow MMS if cellular data is off</strong> toggle in the <strong>Messaging</strong> settings screen.</p></li>
@@ -366,7 +366,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>Mobile operators can override the voicemail number on the UICC with a different voicemail number that is configured in the registry.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Phone settings: Trim supplementary service codes](p_phcustomization.phone_settings__trim_supplementary_service_codes)</p></td>
+<td><p>[Phone settings: Trim supplementary service codes](https://msdn.microsoft.com/library/windows/hardware/mt762906)</p></td>
 <td><p>OEMs can trim supplementary service codes to ensure network compatibility. When a code is sent using a USSD string in a ##code# format, <code>EnableSupplementaryServiceEraseToDeactivateOverride</code> trims the USSD string so #code# is sent. This customization applies only to codes that use the ##code# format.</p></td>
 </tr>
 <tr class="odd">
@@ -378,7 +378,7 @@ The **Settings** app contains a predefined collection of user-configurable syste
 <td><p>CDMA mobile operator partners who do not have the voicemail numbers on the device SIM can configure the voicemail number for their devices.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Phone settings: Wi-Fi calling operator name](p_phcustomization.wi-fi_calling_operator_name)</p></td>
+<td><p>[Phone settings: Wi-Fi calling operator name](https://msdn.microsoft.com/library/windows/hardware/mt628526)</p></td>
 <td><p>OEMs can customize the display name for the mobile operator when the device is using Wi-Fi calling.</p></td>
 </tr>
 <tr class="even">

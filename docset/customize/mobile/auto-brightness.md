@@ -30,7 +30,7 @@ This customization allows partners to customize the brightness by specifying:
 
 The value for `ABSRangeMilliLuxMapping` is a list of values, separated by semicolons, that represent the upper bound in the range of ambient light readings measured by the light sensor. The upper bound value is measured in millilux. For example, if `ABSRangeMilliLuxMapping` is set to 100000;500000;MAX, then the three brightness levels for the phone will be 100000 millilux, 500000 millilux, and maximum brightness. Specifying "MAX" in the list of values means that there is no upper bound to the range.
 
-The ABS millilux range mapping and ABS intensity percent mapping are used together to make a table of brightness values. They must have the same number of elements as each other. For example if `ABSRangeMilliLuxMapping` = 100000;500000;MAX and [ABSPercentIntensityMapping](p_icd_settings.autobrightness_abspercentintensitymapping) = 33;66;100, the table will look like the following.
+The ABS millilux range mapping and ABS intensity percent mapping are used together to make a table of brightness values. They must have the same number of elements as each other. For example if `ABSRangeMilliLuxMapping` = 100000;500000;MAX and [ABSPercentIntensityMapping](https://msdn.microsoft.com/library/windows/hardware/mt147022) = 33;66;100, the table will look like the following.
 
 <table>
 <colgroup>

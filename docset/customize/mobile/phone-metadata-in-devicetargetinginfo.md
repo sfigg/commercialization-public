@@ -173,7 +173,7 @@ Partners are required to set the following information:
     <tr class="even">
     <td><p>ImageTimeOnly</p></td>
     <td><p><strong>PhoneROMLanguage</strong></p></td>
-    <td><p><strong>Required.</strong> Set the value to a four character Language Code Identifier (LCID), such as &quot;0409&quot; for English (US). For more info, see [Available Language Packs for Windows](p_adk_online.available_language_packs_for_windows_blue).</p></td>
+    <td><p><strong>Required.</strong> Set the value to a four character Language Code Identifier (LCID), such as &quot;0409&quot; for English (US). For more info, see [Available Language Packs for Windows](../../manufacture/desktop/available-language-packs-for-windows-blue.md).</p></td>
     </tr>
     <tr class="odd">
     <td><p>ImageTimeOnly</p></td>

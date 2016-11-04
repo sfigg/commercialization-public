@@ -99,7 +99,7 @@ Provides information about customizations you can configure for the phone or dia
 <td><p>Partners can edit the list of valid emergency phone numbers for the market in which the phone will be sold.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Enable call recording by default](p_phcustomization.enable_call_recording_by_default)</p></td>
+<td><p>[Enable call recording by default](https://msdn.microsoft.com/library/windows/hardware/mt762905)</p></td>
 <td><p>Partners can configure devices to have the call recording feature enabled by default.</p></td>
 </tr>
 <tr class="odd">
@@ -111,7 +111,7 @@ Provides information about customizations you can configure for the phone or dia
 <td><p>OEMs can enable long DTMF tones if the user presses a dialpad key for an extended period.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Enable RCS](p_phcustomization.enable_rcs)</p></td>
+<td><p>[Enable RCS](https://msdn.microsoft.com/library/windows/hardware/mt667951)</p></td>
 <td><p>OEMs can configure the RCS settings using the multivariant support in the OS. Using these settings, you can:</p>
 <ul>
 <li>Specify whether the device is RCS-enabled.</li>
@@ -136,7 +136,7 @@ Provides information about customizations you can configure for the phone or dia
 <td><p>To meet certain market requirements or user expectations, OEMs can change the button label in USSD dialogs from <strong>Close</strong> (the default) to <strong>OK</strong>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Use HD audio codec for call branding](p_phcustomization.use_hd_audio_codec_for_call_branding)</p></td>
+<td><p>[Use HD audio codec for call branding](https://msdn.microsoft.com/library/windows/hardware/mt762908)</p></td>
 <td><p>OEMs can customize call progress branding when a call is made using a specific audio codec.</p></td>
 </tr>
 <tr class="odd">

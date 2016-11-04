@@ -81,7 +81,7 @@ BCDEdit is the primary tool for editing the startup configuration and is on your
 ## Configure Unbranded Boot using Unattend
 
 
-You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-BootExp](p_unattend.microsoft-windows-embedded-bootexp) component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in Microsoft-Windows-Embedded-BootExp.
+You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-BootExp](../unattend/microsoft-windows-embedded-bootexp.md) component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in Microsoft-Windows-Embedded-BootExp.
 
 ### Unbranded Boot settings
 
@@ -192,7 +192,7 @@ The following table shows Unbranded Boot settings and their values.
 
 If Windows has not been installed and you are using Windows ICD to create installation media with settings for Unbranded Boot included in the image or you are applying a provisioning package during setup you must enable Unbranded Boot on the installation media with DISM in order for a provisioning package to successfully apply. First you have to create the image or package.
 
-1.  Build a provisioning package or create a new Windows image in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](p_icd.create_a_provisioning_package) or [Build and deploy an image for Windows 10 Desktop](p_icd.build_a_customized_windows_10_image).
+1.  Build a provisioning package or create a new Windows image in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) or [Build and deploy an image for Windows 10 Desktop](https://msdn.microsoft.com/library/windows/hardware/dn916105).
     **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
      

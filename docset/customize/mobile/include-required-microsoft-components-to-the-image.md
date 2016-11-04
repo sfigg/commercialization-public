@@ -10,7 +10,7 @@ ms.assetid: B1F6D86A-8E5C-4E4F-ABC5-B3DF59916019
 # Include required Microsoft components to the image
 
 
-This customization provides information on how partners can include the required Microsoft components in the OS image. For more information about other features you can include or exclude from your image, see [Optional features for building images](p_phFlashing.optional_features_for_building_images).
+This customization provides information on how partners can include the required Microsoft components in the OS image. For more information about other features you can include or exclude from your image, see [Optional features for building images](../../manufacture/mobile/optional-features-for-building-images.md).
 
 For a comprehensive list of required Microsoft components that must be included in a Windows 10 Mobile image, refer to the *OEM Policy Document (OPD) for Windows 10 Mobile*.
 
