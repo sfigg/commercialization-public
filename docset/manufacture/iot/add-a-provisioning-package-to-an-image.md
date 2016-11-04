@@ -198,7 +198,9 @@ You can connect to your device's portal page to troubleshoot network connections
 
 ## <span id="Troubleshooting"></span>Troubleshooting
 
-To confirm that the provisioning package settings work on your network, use a laptop PC to test:
+**Check your Wi-Fi broadcast frequency (2.4GHz vs 5GHz)**. Some Wi-Fi adapters, such as the built-in Wi-Fi adapter on the Raspberry Pi 3, only support 2.4GHz Wi-Fi networks. While this is the most common Wi-Fi broadcast frequency, many Wi-Fi networks broadcast at frequencies of 5GHz. Either change the broadcast frequency or use a different adapter.
+
+**Confirm that the provisioning package settings work on your network**. Use a laptop PC to test:
 
 1.	Disconnect the laptop from the network: Click on the network icon in the system tray, select the wireless network, and click **Disconnect**. 
 
@@ -206,7 +208,7 @@ To confirm that the provisioning package settings work on your network, use a la
 
 3.	Install the provisioning package by double-clicking ProductAProv.ppkg. The wireless network should connect automatically.
 
-If it doesn't connect, check to see if the profile has been added:
+**Check to see if the profile has been added to the device**
 
 1.  Connect using an ethernet connection to the device.
 

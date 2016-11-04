@@ -83,6 +83,10 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+**November 4, 2016**
+- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
+- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
+
 **October 17, 2016**
 - Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
 
