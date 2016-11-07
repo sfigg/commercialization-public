@@ -12,7 +12,7 @@ ms.assetid: 82f04492-88a6-4afd-af10-a62b8d444d21
 
 The NAP (Network Access Point) Configuration Service Provider is used to manage and query GPRS and CDMA connections.
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 

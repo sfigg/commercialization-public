@@ -133,7 +133,7 @@ Added in Windows 10, version 1511. Integer that specifies the total available 
 
 Supported operation is Get.
 
-**Note**  This is only supported in Windows 10 Mobile.
+> **Note**  This is only supported in Windows 10 Mobile.
 
  
 
@@ -147,7 +147,7 @@ The MAC address of the active WLAN connection, as a 12-digit hexadecimal number.
 
 Supported operation is Get.
 
-**Note**  This is not supported in Windows 10 for desktop editions.
+> **Note**  This is not supported in Windows 10 for desktop editions.
 
  
 

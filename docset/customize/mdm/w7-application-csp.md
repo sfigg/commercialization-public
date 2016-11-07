@@ -12,7 +12,7 @@ ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
 
 The APPLICATION configuration service provider that has an APPID of w7 is used for bootstrapping a device with an OMA DM account. Although this configuration service provider is used to set up an OMA DM account, it is managed over OMA Client Provisioning.
 
-**Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
@@ -20,7 +20,7 @@ The following image shows the configuration service provider in tree format as u
 
 ![w7 application csp (dm)](images/provisioning-csp-w7-application-dm.png)
 
-**Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
+> **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.
 
  
@@ -80,7 +80,7 @@ Required. The APPID parameter is used in the APPLICATION characteristic to diffe
 <a href="" id="backcompatretrydisabled"></a>**BACKCOMPATRETRYDISABLED**  
 Optional. The BACKCOMPATRETRYDISABLED parameter is used in the APPLICATION characteristic to specify whether to retry resending a package with an older protocol version (for example, 1.1) in the SyncHdr (not including the first time).
 
-**Note**   This parameter does not contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
+> **Note**   This parameter does not contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
 
  
 
@@ -99,7 +99,7 @@ The valid values are:
 <a href="" id="init"></a>**INIT**  
 Optional. The INIT parameter is used in the APPLICATION characteristic to indicate that the management server wants the client to initiate a management session immediately after settings approval. If the current w7 APPLICATION document will be put in ROM, the INIT parameter must not be present.
 
-**Note**   This node is only for mobile operators and MDM servers that try to use this will fail. This node is not supported in the enterprise MDM enrollment scenario.
+> **Note**   This node is only for mobile operators and MDM servers that try to use this will fail. This node is not supported in the enterprise MDM enrollment scenario.
 This parameter forces the device to attempt to connect with the OMA DM server. The connection attempt fails if the XML is set during the coldinit phase. A common cause of this failure is that immediately after coldinit is finished the radio is not yet ready.
 
  
@@ -149,7 +149,7 @@ The supported names are Subject and Stores; wildcard certificate search is not s
 
 Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name is not case sensitive.
 
-**Note**   %EF%80%80 is the UTF8-encoded character U+F000.
+> **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
 
  
 
