@@ -12,7 +12,7 @@ ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
 
 The RemoteLock CSP supports the ability to lock a device that has a PIN set on the device or reset the PIN on a device that may or may not have a PIN set.
 
-**Note**   The RemoteLock CSP is only supported in Windows 10 Mobile.
+> **Note**   The RemoteLock CSP is only supported in Windows 10 Mobile.
 
  
 
@@ -140,7 +140,7 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
 </Sequence>
 ```
 
-**Note**  If you send a remote lock or remote lock and PIN reset command to a device that is already locked, the device will reboot.
+> **Note**  If you send a remote lock or remote lock and PIN reset command to a device that is already locked, the device will reboot.
 
  
 

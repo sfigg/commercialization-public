@@ -57,7 +57,7 @@ The SUPL or V2 UPL connection will be reconfigured every time the device is rebo
 
 The following diagram shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
 
-**Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
+> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
  
 
@@ -134,7 +134,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
-**Important**   The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
+> **Important**   The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
  
 

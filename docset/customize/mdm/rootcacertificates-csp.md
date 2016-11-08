@@ -29,7 +29,7 @@ The root node for the RootCATrustedCertificates configuration service provider.
 <a href="" id="rootcatrustedcertificates-root-"></a>**RootCATrustedCertificates/Root/**  
 Defines the certificate store that contains root, or self-signed certificates, in this case, the computer store.
 
-**Note**  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
+> **Note**  The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
  
 

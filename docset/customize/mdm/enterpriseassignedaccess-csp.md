@@ -37,7 +37,7 @@ Supported operations are Add, Delete, Get and Replace.
 
 The Apps and Settings sections of lockdown XML constitute an Allow list. Any app or setting that is not specified in AssignedAccessXML will not be available on the device to users. The following table describes the entries in lockdown XML.
 
-**Important**  
+> **Important**  
 When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an MDM, the XML must use escaped characters, such as &lt; instead of &lt; because it is embedded in an XML. The examples provided in the topic are formatted for readability.
 
 When using the AssignedAccessXml in a provisioning package using the Windows Imaging and Configuration Designer (ICD) tool, do not use escaped characters.
@@ -1167,7 +1167,7 @@ The culture code that identifies the language to display on a device, and specif
 
 The language setting is configured in the Default User profile only.
 
-**Note**  Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
+> **Note**  Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
 
  
 
@@ -1178,8 +1178,7 @@ Supported operations are Get and Replace.
 
 The XML examples in this section show how to perform various tasks by using OMA client provisioning.
 
-**Note**  
-These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
+> **Note**  These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
 
  
 

@@ -145,7 +145,7 @@ The supported operation is Exec.
 </SyncML>
 ```
 
-**Note**  `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
+> **Note**  `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
  
 

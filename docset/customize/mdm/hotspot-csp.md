@@ -115,7 +115,7 @@ Optional. The time-out value, in minutes, after which Internet sharing is automa
 Changes to this node require a reboot.
 
 <a href="" id="minwifikeylength"></a>**MinWifiKeyLength**  
-**Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi key is 8.
+> **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi key is 8.
 
  
 
