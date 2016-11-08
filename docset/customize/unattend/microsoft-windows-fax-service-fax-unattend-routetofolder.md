@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md).
+For the list of the supported Windows editions and architectures this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
 
 ## XML Example
 

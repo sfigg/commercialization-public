@@ -70,7 +70,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md).
 
 ## XML Example
 

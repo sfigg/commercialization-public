@@ -82,7 +82,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md).
 
 ## XML Example
 
@@ -121,7 +121,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service-win7-microsoft-windows-fax-service.md)
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md)
 
  
 
