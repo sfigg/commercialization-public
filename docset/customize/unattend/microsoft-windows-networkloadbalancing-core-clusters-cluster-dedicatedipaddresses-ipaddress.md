@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress-key.md)</p></td>
 <td><p>Specifies the name of the host's unique IP address.</p>
 <div class="alert">
 <strong>Note</strong>  
@@ -36,11 +36,11 @@ ms.sitesec: msdn
 </div></td>
 </tr>
 <tr class="even">
-<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddressipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress-ipaddress.md)</p></td>
 <td><p>Specifies the host's unique IP address.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddressnetworkmask.md)</p></td>
+<td><p>[NetworkMask](microsoft-windows-networkloadbalancing-core-clusters-cluster-dedicatedipaddresses-ipaddress-networkmask.md)</p></td>
 <td><p>Specifies the network mask for the host's unique IP address.</p></td>
 </tr>
 </tbody>

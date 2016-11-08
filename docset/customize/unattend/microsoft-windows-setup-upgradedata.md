@@ -34,11 +34,11 @@ If you use an installation image that was originally installed by using an Unatt
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Upgrade](microsoft-windows-setup-upgradedataupgrade.md)</p></td>
+<td><p>[Upgrade](microsoft-windows-setup-upgradedata-upgrade.md)</p></td>
 <td><p>Specifies whether the installation is an upgrade of an existing operating system.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-upgradedatawillshowui.md)WillShowUI</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-upgradedata-willshowui.md)WillShowUI</p></td>
 <td><p>Specifies in what circumstances the UI is displayed.</p></td>
 </tr>
 </tbody>

@@ -19,7 +19,7 @@ Before an online backup service is installed, Windows describes a recommended se
 
 After an online backup service is installed, this provider name continues to appear in the Windows Server Backup menus.
 
-The provider name is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-mainresourcedll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
+The provider name is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
 The provider name in the resource DLL file must be a text string. For example, the provider name may resemble the following:
 
@@ -84,7 +84,7 @@ The following XML output shows how to describe a recommended online backup servi
 
 [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
-[ResourceDll](microsoft-windows-blb-wsb-online-mainresourcedll.md)
+[ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md)
 
  
 

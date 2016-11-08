@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DNSDomain
 
 
-`DNSDomain` specifies the primary Domain Name System (DNS) domain to be searched for the name resolution. The DNS suffix is used by the DNS client for registrations and to assist with resolution if no [DNSSuffixSearchOrder](microsoft-windows-dns-clientdnssuffixsearchorder.md) is configured.
+`DNSDomain` specifies the primary Domain Name System (DNS) domain to be searched for the name resolution. The DNS suffix is used by the DNS client for registrations and to assist with resolution if no [DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md) is configured.
 
 By default, a global `DNSDomain` parameter applies to all configured network interfaces. A connection-specific DNS domain name can also be applied if `DNSDomain` is used on an interface-specific basis. For example, if `DNSDomain` is specified as a global parameter (x) and as an interface-specific parameter (y), both parameters are used, x first and then y, by the DNS client for that interface.
 

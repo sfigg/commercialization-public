@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FavIconFile
 
 
-`FavIconFile` specifies the icon to associate with the [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) in the Favorites folder.
+`FavIconFile` specifies the icon to associate with the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) in the Favorites folder.
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Path_and_file_name</em></p></td>
-<td><p>Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. <em>Path_and_file_name</em> is a string.</p></td>
+<td><p>Specifies the location and the name of the icon to associate with the [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) in the Favorites folder, for example, C:\Windows\favlink2.ico. <em>Path_and_file_name</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorerfavoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md) | **FavIconFile**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FavoritesList](microsoft-windows-ie-internetexplorer-favoriteslist.md) | [FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md) | **FavIconFile**
 
 ## Applies To
 
@@ -77,7 +77,7 @@ The following XML output specifies how to configure favorites.
 ## Related topics
 
 
-[FavoriteItem](microsoft-windows-ie-internetexplorerfavoriteslistfavoriteitem.md)
+[FavoriteItem](microsoft-windows-ie-internetexplorer-favoriteslist-favoriteitem.md)
 
  
 

@@ -32,7 +32,7 @@ This section contains information about customizations related to apps and Micro
 <td><p>OEMs can create and register an active phone cover app, which allows partners to create a user experience with their mobile device cover accessories. This app must be preloaded on the phone as a Settings/CPL application.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Customize the SIM toolkit](p_phcustomization.customize_the_sim_toolkit)</p></td>
+<td><p>[Customize the SIM toolkit](https://msdn.microsoft.com/library/windows/hardware/mt629102)</p></td>
 <td><p>OEMs can change the display duration for certain SIM toolkit UI dialogs or messages if the default values do not meet the requirements of the mobile operator.</p></td>
 </tr>
 <tr class="odd">
@@ -48,7 +48,7 @@ This section contains information about customizations related to apps and Micro
 <td><p>OEMs can build and register a phone call/SMS filter application, which helps reduce the number of unwanted phone calls and text messages that users receive.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Preload an app with a dependency](p_phcustomization.preload_an_app_with_a_dependency)</p></td>
+<td><p>[Preload an app with a dependency](https://msdn.microsoft.com/library/windows/hardware/mt691485)</p></td>
 <td><p>If you need to preinstall an app that has dependencies on other packages or components, you need to make sure that the other packages or components are preinstalled first before your app. If the dependent packages or components are not installed first, your app preinstall will fail.</p></td>
 </tr>
 <tr class="odd">

@@ -101,7 +101,7 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><em>partition_identification_number</em></p></td>
 <td><p>Specifies the identification number of the partition that you modify.</p>
-<p>If [WillShowUI](microsoft-windows-setup-diskconfigurationwillshowui.md) is set to <strong>Never</strong> and an invalid <code>PartitionID</code> setting is specified, an error is logged and installation terminates.</p></td>
+<p>If [WillShowUI](microsoft-windows-setup-diskconfiguration-willshowui.md) is set to <strong>Never</strong> and an invalid <code>PartitionID</code> setting is specified, an error is logged and installation terminates.</p></td>
 </tr>
 </tbody>
 </table>
@@ -116,7 +116,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **PartitionID**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) | **PartitionID**
 
 ## Applies To
 
@@ -452,7 +452,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)
+[ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
  
 

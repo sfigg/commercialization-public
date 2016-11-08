@@ -30,15 +30,15 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Master](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateammaster.md)</p></td>
+<td><p>[Master](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-master.md)</p></td>
 <td><p>Specifies whether the host is the master.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ReverseHash](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateamreversehash.md)</p></td>
+<td><p>[ReverseHash](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-reversehash.md)</p></td>
 <td><p>Specifies whether the adapter reverses the source and destination IP addresses and ports before making load-balancing decisions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Team](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateamteam.md)</p></td>
+<td><p>[Team](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam-team.md)</p></td>
 <td><p>Specifies a valid Globally Unique Identifier (GUID) that identifies a BDA team.</p></td>
 </tr>
 </tbody>

@@ -105,7 +105,7 @@ To build an FWVGA image with software-rendered buttons:
 
      
 
-7.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](p_phFlashing.building_a_phone_image_using_imggencmd).
+7.  If you have not done so already, create an OEMInput XML file to define the set of packages to include in your phone image, and configure your computer to use the imaging tools. For more information, see [Building a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md).
 
 8.  In your OEMInput XML file, set the value of the **Resolution** element to 480x800. This configuration ensures that WVGA assets are used for the FWVGA image. Only WVGA assets can be used in FWVGA images that use software-rendered buttons.
 
@@ -119,7 +119,7 @@ To build an FWVGA image with software-rendered buttons:
     </Features>
     ```
 
-    For more information, see [Optional features for building images](p_phFlashing.optional_features_for_building_images).
+    For more information, see [Optional features for building images](../../manufacture/mobile/optional-features-for-building-images.md).
 
  
 

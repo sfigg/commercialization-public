@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Extend
 
 
-`Extend` indicates whether to extend the partition to fill the remaining space on the hard disk. If this setting and [Size](microsoft-windows-deploymentextendospartitionsize.md) are present in the same configuration pass, an error is logged, and installation is terminated.
+`Extend` indicates whether to extend the partition to fill the remaining space on the hard disk. If this setting and [Size](microsoft-windows-deployment-extendospartition-size.md) are present in the same configuration pass, an error is logged, and installation is terminated.
 
 ## Values
 
@@ -85,7 +85,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[ExtendOSPartition](microsoft-windows-deploymentextendospartition.md)
+[ExtendOSPartition](microsoft-windows-deployment-extendospartition.md)
 
  
 

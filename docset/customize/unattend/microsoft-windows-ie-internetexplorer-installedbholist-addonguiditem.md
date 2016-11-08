@@ -29,7 +29,7 @@ Browser Help Objects are plug-in modules used to add functionality to Internet E
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuid](microsoft-windows-ie-internetexplorerinstalledbholistaddonguiditemaddonguid.md)</p></td>
+<td><p>[AddonGuid](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem-addonguid.md)</p></td>
 <td><p>Specifies a GUID for a Browser Help Object.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md) | **AddonGuidItem**
 
 ## Applies To
 

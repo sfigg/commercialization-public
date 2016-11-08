@@ -27,7 +27,7 @@ This setting has no effect on Server Core installations of Windows Server 2008,
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[SkipAutoActivation](microsoft-windows-security-spp-uxskipautoactivation.md)</p></td>
+<td><p>[SkipAutoActivation](microsoft-windows-security-spp-ux-skipautoactivation.md)</p></td>
 <td><p>Specifies whether to skip auto-activation of the Microsoft Windows license.</p></td>
 </tr>
 </tbody>

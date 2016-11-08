@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # QLID
 
 
-`QLID` specifies a unique ID to associate with a [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md).
+`QLID` specifies a unique ID to associate with a [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies a unique value to represent the [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md). <em>ID</em> is a string.</p></td>
+<td><p>Specifies a unique value to represent the [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md). <em>ID</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md) | **QLID**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | **QLID**
 
 ## Applies To
 
@@ -73,7 +73,7 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 ## Related topics
 
 
-[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md)
+[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)
 
  
 

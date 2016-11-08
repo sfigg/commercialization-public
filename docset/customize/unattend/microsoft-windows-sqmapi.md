@@ -27,7 +27,7 @@ This setting has no effect on Server Core installations.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CEIPEnabled](microsoft-windows-sqmapi-ceipenabled.md)</p></td>
+<td><p>[CEIPEnabled](microsoft-windows-sqmapiceipenabled.md)</p></td>
 <td><p>Specifies whether Windows CEIP is enabled.</p></td>
 </tr>
 </tbody>

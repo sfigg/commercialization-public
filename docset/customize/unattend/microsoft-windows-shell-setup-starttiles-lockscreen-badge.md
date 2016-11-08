@@ -55,7 +55,7 @@ For a list of the Windows editions and architectures that this component support
 ## XML Example
 
 
-The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttileslockscreen.md).
+The following XML output shows how to set [LockScreen](microsoft-windows-shell-setup-starttiles-lockscreen.md).
 
 ``` syntax
 <LockScreen>

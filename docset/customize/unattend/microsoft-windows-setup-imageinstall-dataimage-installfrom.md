@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfromcredentials.md)</p></td>
+<td><p>[Credentials](microsoft-windows-setup-imageinstall-dataimage-installfrom-credentials.md)</p></td>
 <td><p>Optional. Specifies the credentials to access the data image.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md)</p></td>
+<td><p>[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md)</p></td>
 <td><p>Required. Specifies metadata to select a unique data image from the Windows image (.wim) file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-setup-imageinstall-dataimage-installfrompath.md)</p></td>
+<td><p>[Path](microsoft-windows-setup-imageinstall-dataimage-installfrom-path.md)</p></td>
 <td><p>Required. Specifies the path to the data image to install.</p></td>
 </tr>
 </tbody>

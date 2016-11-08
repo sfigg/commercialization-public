@@ -27,7 +27,7 @@ If one of the child elements is not applicable in your country or region, you mu
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AreaCode](microsoft-windows-tapisetup-tapiunattendlocationa-reacode.md)</p></td>
+<td><p>[AreaCode](microsoft-windows-tapisetup-tapiunattendlocation-areacode.md)</p></td>
 <td><p>Specifies the local telephone area code.</p></td>
 </tr>
 <tr class="even">
@@ -51,7 +51,7 @@ If one of the child elements is not applicable in your country or region, you mu
 <td><p>Specifies the long distance carrier.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Name](microsoft-windows-tapisetup-tapiunattendlocatio-nname.md)</p></td>
+<td><p>[Name](microsoft-windows-tapisetup-tapiunattendlocation-name.md)</p></td>
 <td><p>Specifies the name of this location. This appears in the user interface (UI).</p></td>
 </tr>
 <tr class="even">

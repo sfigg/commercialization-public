@@ -41,7 +41,7 @@ The WIFI\_FEATURE\_PACK package reduces memory usage and improves the user exper
     </Features>
     ```
 
-    For more information about other features you can include in your image, see [Optional features for building images](p_phFlashing.optional_features_for_building_images).
+    For more information about other features you can include in your image, see [Optional features for building images](../../manufacture/mobile/optional-features-for-building-images.md).
 
 4.  Save the updated OEMInput.xml file and build your mobile OS image.
 

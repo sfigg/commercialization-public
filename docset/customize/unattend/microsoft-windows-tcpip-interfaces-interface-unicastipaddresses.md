@@ -30,7 +30,7 @@ The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) mus
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddressesipaddress.md)</p></td>
+<td><p>[IpAddress](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress.md)</p></td>
 <td><p>Specifies a static unicast IP address for the interface.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpipinterfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **UnicastIpAddresses**
+[Microsoft-Windows-TCPIP](microsoft-windows-tcpip.md) | [Interfaces](microsoft-windows-tcpip-interfaces.md) | [Interface](microsoft-windows-tcpip-interfaces-interface.md) | **UnicastIpAddresses**
 
 ## Applies To
 

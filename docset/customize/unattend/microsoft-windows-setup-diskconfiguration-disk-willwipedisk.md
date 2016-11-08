@@ -53,7 +53,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | **WillWipeDisk**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **WillWipeDisk**
 
 ## Applies To
 
@@ -129,9 +129,9 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Disk](microsoft-windows-setup-diskconfigurationdisk.md)
+[Disk](microsoft-windows-setup-diskconfiguration-disk.md)
 
-[Format](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionformat.md)
+[Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md)
 
  
 

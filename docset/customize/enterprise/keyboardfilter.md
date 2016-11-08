@@ -50,21 +50,21 @@ Turning on an off Keyboard Filter requires that you restart your device. Keyboar
 
 **Configure Keyboard using Unattend**
 
-1.  You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.microsoft-windows-embedded-keyboardfilterservice) component to add Keyboard Filter features to your image during the design or imaging phase.
-2.  You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](p_unattend.microsoft-windows-embedded-keyboardfilterservice).
+1.  You can configure the Unattend settings in the [Microsoft-Windows-Embedded-KeyboardFilterService](../unattend/microsoft-windows-embedded-keyboardfilterservice.md) component to add Keyboard Filter features to your image during the design or imaging phase.
+2.  You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the keyboard filter settings and XML examples, see the settings in [Microsoft-Windows-Embedded-KeyboardFilterService](../unattend/microsoft-windows-embedded-keyboardfilterservice.md).
 
 ## Turn on and configure Keyboard Filter using Windows Imaging and Configuration Designer (ICD)
 
 
 The Keyboard Filter settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image deployment time or runtime. You can set one or all keyboard filter settings by creating a provisioning package using Windows Imaging and Configuration Designer (ICD) and then applying the provisioning package during image deployment time or runtime.
 
-1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](p_icd.create_a_provisioning_package).
+1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
     **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
      
 
 2.  On the **Available customizations** page, select **Runtime settings** &gt; **SMISettings**, and then set the desired values for the keyboard filter settings.
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop devices sectionin [Build and apply a provisioning package](p_icd.create_a_provisioning_package) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop devices sectionin [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
 
 This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package. For more information on DISM, see [What Is Deployment Image Servicing and Management](https://technet.microsoft.com/en-us/library/dd744566.aspx)?
 

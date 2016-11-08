@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-servicefax.md) | **ArchiveFolderName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [Fax](microsoft-windows-fax-service-fax.md) | **ArchiveFolderName**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[Fax](microsoft-windows-fax-servicefax.md)
+[Fax](microsoft-windows-fax-service-fax.md)
 
  
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Display` contains display settings for a video adapter.
 
-The `Display` setting is used during the Windows PE phase of the Windows installation process. The display settings are not applied to the Windows installation. To change the display settings for the Windows installation, see [Display](microsoft-windows-shell-setupdisplay.md) in the [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) component.
+The `Display` setting is used during the Windows PE phase of the Windows installation process. The display settings are not applied to the Windows installation. To change the display settings for the Windows installation, see [Display](microsoft-windows-shell-setup-display.md) in the [Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) component.
 
 We recommend that you use the default settings. If you select a value for this setting that is not supported by Windows PE, your video adapter, or the display monitor, then Windows PE might show only a blank screen without displaying an error.
 

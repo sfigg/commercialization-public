@@ -16,7 +16,7 @@ ms.sitesec: msdn
 `CacheSizeMB` specifies the size of the Microsoft ReadyBoost™ cache, in megabytes (MB).
 
 **Note**  
-The maximum cache size on a device partition formatted as FAT32 is 4096 MB, which is equal to 4 gigabytes (GB). To use a larger cache size, use a partition formatted as NTFS or exFAT. For information about reformatting a partition using NTFS, see [Format](microsoft-windows-setup-diskconfiguration-diskmodifypartitions-modifypartition-format.md).
+The maximum cache size on a device partition formatted as FAT32 is 4096 MB, which is equal to 4 gigabytes (GB). To use a larger cache size, use a partition formatted as NTFS or exFAT. For information about reformatting a partition using NTFS, see [Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md).
 
  
 

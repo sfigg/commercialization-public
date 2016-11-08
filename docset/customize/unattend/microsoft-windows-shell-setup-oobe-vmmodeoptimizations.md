@@ -55,7 +55,7 @@ oobeSystem
 ## Parent hierarchy
 
 
-[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setupoobe.md) | **VMModeOptimizations**
+[Microsoft-Windows-Shell-Setup](microsoft-windows-shell-setup.md) | [OOBE](microsoft-windows-shell-setup-oobe.md) | **VMModeOptimizations**
 
 ## Applies to
 

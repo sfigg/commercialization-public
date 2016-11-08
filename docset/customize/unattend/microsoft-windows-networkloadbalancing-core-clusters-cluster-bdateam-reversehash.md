@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateam.md) | **ReverseHash**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [BDATeam](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam.md) | **ReverseHash**
 
 ## Applies To
 
@@ -69,7 +69,7 @@ The following XML output specifies that the adapter reverses the source and dest
 ## Related topics
 
 
-[BDATeam](microsoft-windows-networkloadbalancing-core-clusters-clusterbdateam.md)
+[BDATeam](microsoft-windows-networkloadbalancing-core-clusters-cluster-bdateam.md)
 
  
 

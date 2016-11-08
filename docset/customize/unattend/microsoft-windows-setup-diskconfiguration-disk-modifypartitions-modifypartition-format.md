@@ -27,19 +27,19 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><strong>NTFS</strong></p></td>
 <td><p>Formats the partition for the NTFS file system.</p>
-<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md) is set to <strong>Primary</strong> or <strong>Logical</strong>, this is the default file format.</p></td>
+<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to <strong>Primary</strong> or <strong>Logical</strong>, this is the default file format.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>FAT32</strong></p></td>
 <td><p>Formats the partition for the File Allocation Table (FAT) file system.</p>
-<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md) is set to <strong>EFI</strong>, this is the default file format.</p></td>
+<p>When CreatePartition\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to <strong>EFI</strong>, this is the default file format.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-When CreatePartition\\[Type](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitiontype.md) is set to **Extended** or **MSR**, the partition does not receive a file format.
+When CreatePartition\\[Type](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-type.md) is set to **Extended** or **MSR**, the partition does not receive a file format.
 
 When using a disk that already contains an existing partition structure, `Format` can be used to erase and reformat an existing partition. By default, if an existing partition structure is used, the existing partition is not erased or reformatted.
 
@@ -51,7 +51,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md) | **Format**
+[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | [ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md) | **Format**
 
 ## Applies To
 
@@ -84,7 +84,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[ModifyPartition](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartition.md)
+[ModifyPartition](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition.md)
 
  
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Key` specifies the unique string to identify the device-driver path.
 
-The value for `Key` is added to the answer file as an attribute of the [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) element. The attribute `wcm:keyValue` is used to identify each unique device-driver path. For example, you can specify three different device-driver paths, by using the `Key` values of **1**, **2**, and **3**.
+The value for `Key` is added to the answer file as an attribute of the [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) element. The attribute `wcm:keyValue` is used to identify each unique device-driver path. For example, you can specify three different device-driver paths, by using the `Key` values of **1**, **2**, and **3**.
 
 ## Values
 
@@ -47,7 +47,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpedriverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) | **Key**
+[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) | **Key**
 
 ## Applies To
 
@@ -85,7 +85,7 @@ The following XML output specifies the UNC paths to two additional locations for
 ## Related topics
 
 
-[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md)
+[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md)
 
  
 

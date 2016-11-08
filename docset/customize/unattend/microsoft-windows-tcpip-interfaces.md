@@ -27,7 +27,7 @@ TCP/IP settings can be divided into two primary groups—global settings and int
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Interface](microsoft-windows-tcpipinterfaces-interface.md)</p></td>
+<td><p>[Interface](microsoft-windows-tcpip-interfaces-interface.md)</p></td>
 <td><p>Contains settings for the TCP/IP interface.</p></td>
 </tr>
 </tbody>

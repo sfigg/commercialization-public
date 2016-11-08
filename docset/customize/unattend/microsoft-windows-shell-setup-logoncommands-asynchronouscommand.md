@@ -92,7 +92,7 @@ The following XML output shows how to set logon commands.
 
 [LogonCommands](microsoft-windows-shell-setup-logoncommands.md)
 
-[SynchronousCommand](microsoft-windows-shell-setupfirstlogoncommandssynchronouscommand.md)
+[SynchronousCommand](microsoft-windows-shell-setup-firstlogoncommands-synchronouscommand.md)
 
  
 

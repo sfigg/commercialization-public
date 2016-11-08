@@ -51,12 +51,9 @@ Here's a few ways to apply the image:
     **Note**  
     If you apply an image to a volume that has an existing Windows installation, files from the previous installation may not be deleted. Format the volume by using a tool such as DiskPart before you apply the new image. For example:
 
-     
-
-    ``` syntax
+    ``` 
     diskpart /s D:\CreatePartitions-UEFI.txt
     ```
-
     Where D: is a USB flash drive or other file storage location.
 
     In these **DiskPart** examples, the partitions are assigned the letters: System=S, Windows=W, and Recovery=R.

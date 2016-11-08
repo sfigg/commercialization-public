@@ -79,7 +79,7 @@ When you use
 
 The Custom Logon settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image deployment time or runtime. You can set one or all Custom Logon settings by creating a provisioning package using Windows Imaging and Configuration Designer (ICD) and then applying the provisioning package during image deployment time or runtime. If Windows has not been installed and you are using Windows ICD to create installation media with settings for Custom Logon included in the image or you are applying a provisioning package during setup you must turn on Custom Logon on the installation media with DISM in order for a provisioning package to be successfully applied.
 
-1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](p_icd.create_a_provisioning_package).
+1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
     **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
      
@@ -91,11 +91,11 @@ The Custom Logon settings are also available as Windows provisioning settings so
     -   UIVerbosityLevel =
     -   HideAutoLogonUI = TRUE
 
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](p_icd.create_a_provisioning_package) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
 
 ### Configure Custom Logon settings using Unattend
 
-You can configure the Unattend settings in the [Microsoft-Windows-Embedded-EmbeddedLogon](p_unattend.microsoft-windows-embedded-embeddedlogon) component to add custom logon features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the custom logon settings and XML examples, see the settings in Microsoft-Windows-Embedded-EmbeddedLogon.
+You can configure the Unattend settings in the [Microsoft-Windows-Embedded-EmbeddedLogon](../unattend/microsoft-windows-embedded-embeddedlogon.md) component to add custom logon features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the custom logon settings and XML examples, see the settings in Microsoft-Windows-Embedded-EmbeddedLogon.
 
 The following example shows how to disable all Welcome screen UI elements and the **Switch user** button.
 

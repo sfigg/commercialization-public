@@ -292,9 +292,9 @@ The following screenshots show what a partner setup app's UI might look like and
 <td>Screen 3</td>
 </tr>
 <tr class="even">
-<td><p><img src="../images/windows-mo-samplelayouts-01.png" alt="sample app ui 1" /></p></td>
-<td><p><img src="../images/windows-mo-samplelayouts-02.png" alt="sample app ui 2" /></p></td>
-<td><p><img src="../images/windows-mo-samplelayouts-03.png" alt="sample app 3" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-01.png" alt="sample app ui 1" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-02.png" alt="sample app ui 2" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-03.png" alt="sample app 3" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -314,9 +314,9 @@ The following screenshots show what a partner setup app's UI might look like and
 <td>Screen 6</td>
 </tr>
 <tr class="even">
-<td><p><img src="../images/windows-mo-samplelayouts-04.png" alt="sample layout 4" /></p></td>
-<td><p><img src="../images/windows-mo-samplelayouts-05.png" alt="sample app screen 5" /></p></td>
-<td><p><img src="../images/windows-mo-samplelayouts-06.png" alt="sample app screen 6" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-04.png" alt="sample layout 4" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-05.png" alt="sample app screen 5" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-06.png" alt="sample app screen 6" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -332,7 +332,7 @@ The following screenshots show what a partner setup app's UI might look like and
 <td>Screen 7</td>
 </tr>
 <tr class="even">
-<td><p><img src="../images/windows-mo-samplelayouts-07.png" alt="sample app screen 7" /></p></td>
+<td><p><img src="images/windows-mo-samplelayouts-07.png" alt="sample app screen 7" /></p></td>
 </tr>
 </tbody>
 </table>

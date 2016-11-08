@@ -22,7 +22,7 @@ ms.sitesec: msdn
 -   The interface MAC address (00-11-22-33-44-55)
 
 **Note**  
-The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface--ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface--ipv6settings.md), Identifier, [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface--unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface--routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
+The settings in [Interface](microsoft-windows-tcpip-interfaces-interface.md) must be added in the following order: [Ipv4Settings](microsoft-windows-tcpip-interfaces-interface-ipv4settings.md), [Ipv6Settings](microsoft-windows-tcpip-interfaces-interface-ipv6settings.md), Identifier, [UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md), and then [Routes](microsoft-windows-tcpip-interfaces-interface-routes.md). After saving your Unattend file in Windows SIM, verify in the XML file that the output is shown in the correct order, as shown in the XML example below.
 
  
 

@@ -50,7 +50,7 @@ auditUser
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deploymentgeneralize.md) | **Mode**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [Generalize](microsoft-windows-deployment-generalize.md) | **Mode**
 
 ## Applies To
 
@@ -79,7 +79,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[Reseal](microsoft-windows-deploymentreseal.md)
+[Reseal](microsoft-windows-deployment-reseal.md)
 
  
 

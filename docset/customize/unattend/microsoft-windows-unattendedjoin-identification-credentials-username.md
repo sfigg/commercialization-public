@@ -27,7 +27,7 @@ ms.sitesec: msdn
 <tr class="odd">
 <td><p><em>User_name</em></p></td>
 <td><p>Specifies the name of the user account with permission to create a computer account in a domain or to use an existing computer account in a domain. <em>User_name</em> is a string.</p>
-<p>The value for <em>Username</em> can be in user principal name (UPN) format (user@fully_qualified_DNS_domain_name), domain\username format, or fully-qualified-DNS-domain\username format. If any of these formats is specified, the [Domain](microsoft-windows-unattendedjoin-identification-credentialsdomain.md) setting must be excluded.</p></td>
+<p>The value for <em>Username</em> can be in user principal name (UPN) format (user@fully_qualified_DNS_domain_name), domain\username format, or fully-qualified-DNS-domain\username format. If any of these formats is specified, the [Domain](microsoft-windows-unattendedjoin-identification-credentials-domain.md) setting must be excluded.</p></td>
 </tr>
 </tbody>
 </table>

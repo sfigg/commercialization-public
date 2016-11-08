@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # PlainText
 
 
-`PlainText` specifies whether the AutoLogon/Password/[Value](microsoft-windows-shell-setup-autologon-passwordvalue.md) is hidden in the unattend installation answer file.
+`PlainText` specifies whether the AutoLogon/Password/[Value](microsoft-windows-shell-setup-autologon-password-value.md) is hidden in the unattend installation answer file.
 
 **Note**  
 You can use this setting only to hide the passwords for local accounts only. Domain account passwords are not hidden.
@@ -89,7 +89,7 @@ The following XML output shows how to set autologon.
 ## Related topics
 
 
-[Password](microsoft-windows-shell-setu-pautologon-password.md)
+[Password](microsoft-windows-shell-setup-autologon-password.md)
 
  
 

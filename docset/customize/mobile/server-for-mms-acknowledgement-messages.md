@@ -10,7 +10,7 @@ ms.assetid: e084eff2-0d48-4a93-aa25-6a097f0dd6d0
 # Server for MMS acknowledgement messages
 
 
-By default, the MMS transport sends an acknowledgement to the MMS application server (MMSC) provisioned by following the instructions in [MMS application configuration](p_phDeviceMgmt.mms_application_configuration). However, on some networks, the correct server to use is sent as a URL in the MMS message. In that case, a registry key must be set, or else the acknowledgement will not be received and the server will continue to send duplicate messages.
+By default, the MMS transport sends an acknowledgement to the MMS application server (MMSC) provisioned by following the instructions in [MMS application configuration](../mdm/mms-application-configuration.md). However, on some networks, the correct server to use is sent as a URL in the MMS message. In that case, a registry key must be set, or else the acknowledgement will not be received and the server will continue to send duplicate messages.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-SIM** value

@@ -30,7 +30,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Domain_name</em></p></td>
-<td><p>Specifies the domain name or computer name of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md).</p>
+<td><p>Specifies the domain name or computer name of the account used to authenticate the [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md).</p>
 <p><em>Domain_name</em> is a string.</p></td>
 </tr>
 </tbody>
@@ -48,7 +48,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md) | **Domain**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md) | [Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md) | **Domain**
 
 ## Applies To
 
@@ -86,7 +86,7 @@ The following XML output specifies the Universal Naming Convention (UNC) paths t
 ## Related topics
 
 
-[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md)
+[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md)
 
  
 

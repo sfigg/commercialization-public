@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # QuickLinkName
 
 
-`QuickLinkName` specifies a friendly name for the [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md), as it appears on the **Favorites** toolbar.
+`QuickLinkName` specifies a friendly name for the [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md), as it appears on the **Favorites** toolbar.
 
 ## Values
 
@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md) | **QuickLinkName**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [QuickLinkList](microsoft-windows-ie-internetexplorer-quicklinklist.md) | [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) | **QuickLinkName**
 
 ## Applies To
 
@@ -73,7 +73,7 @@ The following XML output shows how to configure a [QuickLinkList](microsoft-wind
 ## Related topics
 
 
-[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md)
+[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)
 
  
 

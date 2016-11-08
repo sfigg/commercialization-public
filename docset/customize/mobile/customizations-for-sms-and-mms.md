@@ -101,7 +101,7 @@ Contains settings that you can configure for SMS and MMS.
 </tr>
 <tr class="odd">
 <td><p>[Server for MMS acknowledgement messages](server-for-mms-acknowledgement-messages.md)</p></td>
-<td><p>By default, the MMS transport sends an acknowledgement to the MMS application server (MMSC) provisioned by following the instructions in [MMS application configuration](p_phDeviceMgmt.mms_application_configuration).</p></td>
+<td><p>By default, the MMS transport sends an acknowledgement to the MMS application server (MMSC) provisioned by following the instructions in [MMS application configuration](../mdm/mms-application-configuration.md).</p></td>
 </tr>
 <tr class="even">
 <td><p>[SMS encoding](sms-encoding.md)</p></td>

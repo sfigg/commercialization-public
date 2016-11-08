@@ -13,11 +13,11 @@ ms.sitesec: msdn
 # CreatePartitions
 
 
-`CreatePartitions` specifies one or more partitions to create on a hard disk. Partitions are created in the order specified by the [Order](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartitionorder.md) setting.
+`CreatePartitions` specifies one or more partitions to create on a hard disk. Partitions are created in the order specified by the [Order](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition-order.md) setting.
 
-If you are installing Windows to a blank hard disk, you must use the `CreatePartitions` and [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) settings to create and format partitions on the disk. You must also specify either the [InstallTo](microsoft-windows-setup-imageinstall-osimageinstallto.md) or the [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimageinstalltoavailablepartition.md) setting.
+If you are installing Windows to a blank hard disk, you must use the `CreatePartitions` and [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) settings to create and format partitions on the disk. You must also specify either the [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md) or the [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md) setting.
 
-`CreatePartitions` settings can have one or more [CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md) list items, one for each partition to be configured.
+`CreatePartitions` settings can have one or more [CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md) list items, one for each partition to be configured.
 
 ## Child Elements
 
@@ -29,7 +29,7 @@ If you are installing Windows to a blank hard disk, you must use the `CreatePart
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[CreatePartition](microsoft-windows-setup-diskconfigurationdiskcreatepartitionscreatepartition.md)</p></td>
+<td><p>[CreatePartition](microsoft-windows-setup-diskconfiguration-disk-createpartitions-createpartition.md)</p></td>
 <td><p>Specifies the order, size, and type of a single partition to be configured.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | **CreatePartitions**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **CreatePartitions**
 
 ## Applies To
 
@@ -122,7 +122,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Disk](microsoft-windows-setup-diskconfigurationdisk.md)
+[Disk](microsoft-windows-setup-diskconfiguration-disk.md)
 
  
 

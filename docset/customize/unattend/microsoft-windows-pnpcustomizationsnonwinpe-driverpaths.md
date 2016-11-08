@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # DriverPaths
 
 
-`DriverPaths` specifies one or more paths that contain out-of-box drivers. These drivers are copied to the Windows installation during the **auditSystem** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md) list items.
+`DriverPaths` specifies one or more paths that contain out-of-box drivers. These drivers are copied to the Windows installation during the **auditSystem** configuration pass. `DriverPaths` is a container for one or more [PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md) list items.
 
 ## Child Elements
 
@@ -25,8 +25,8 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentials.md)</p></td>
-<td><p>Specifies the local or Universal Naming Convention (UNC) path to the out-of-box drivers and the [Credentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentialscredentials.md) (optional) used to access them.</p></td>
+<td><p>[PathAndCredentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials.md)</p></td>
+<td><p>Specifies the local or Universal Naming Convention (UNC) path to the out-of-box drivers and the [Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md) (optional) used to access them.</p></td>
 </tr>
 </tbody>
 </table>

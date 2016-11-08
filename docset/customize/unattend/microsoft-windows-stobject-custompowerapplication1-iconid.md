@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # IconID
 
 
-`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md).
+`IconID` specifies the full path to the resource DLL that contains the icon to use with [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md).
 
 This setting is optional.
 
@@ -30,7 +30,7 @@ To use a different IconID for each language, create a resource file, and refer t
 <tbody>
 <tr class="odd">
 <td><p><em>ID</em></p></td>
-<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md).</p>
+<td><p>Specifies the resource ID of the icon to use for [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md).</p>
 <p><code>IconID</code> is represented as @<em>dllname,-resourceID</em>, where <em>dllname</em> must include a full path to the resource DLL. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-200</code></pre>
 <p><em>ID</em> is a string.</p></td>

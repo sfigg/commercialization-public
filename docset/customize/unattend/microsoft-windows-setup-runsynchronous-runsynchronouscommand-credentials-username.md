@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # UserName
 
 
-`UserName` specifies the user name of the account used to authenticate access to the location specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
+`UserName` specifies the user name of the account used to authenticate access to the location specified by [Path](microsoft-windows-setup-runsynchronous-runsynchronouscommand-path.md).
 
 All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **UserName**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **UserName**
 
 ## Applies To
 

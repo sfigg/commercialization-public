@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentials.md)</p></td>
-<td><p>Specifies the credentials used to access the path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md). (Optional)</p></td>
+<td><p>[Credentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials.md)</p></td>
+<td><p>Specifies the credentials used to access the path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md). (Optional)</p></td>
 </tr>
 <tr class="even">
-<td><p>[Key](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialskey.md)</p></td>
+<td><p>[Key](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-key.md)</p></td>
 <td><p>Specifies a unique string identifier for the driver path.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md)</p></td>
+<td><p>[Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md)</p></td>
 <td><p>Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows image.</p></td>
 </tr>
 </tbody>

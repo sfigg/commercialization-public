@@ -29,11 +29,11 @@ Some settings are global, and others are interface-specific. Global settings app
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DNSDomain](microsoft-windows-dns-client-dns-domain.md)</p></td>
+<td><p>[DNSDomain](microsoft-windows-dns-client-dnsdomain.md)</p></td>
 <td><p>Specifies the primary DNS suffix of the network connection across all adapters. If <code>DNSDomain</code> is specified in two places as a global parameter (x) and as an interface-specific parameter (y), the two values are concatenated appropriately for each interface (as x, y) and used.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DNSSuffixSearchOrder](microsoft-windows-dns-client-dns-suffixsearchorder.md)</p></td>
+<td><p>[DNSSuffixSearchOrder](microsoft-windows-dns-client-dnssuffixsearchorder.md)</p></td>
 <td><p>Specifies the suffix search order for DNS servers. This is a global setting.</p></td>
 </tr>
 <tr class="odd">

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `ModifyPartition` specifies a single partition on a disk to be modified
 
-One or more `ModifyPartition` list items can exist in the [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) parent list.
+One or more `ModifyPartition` list items can exist in the [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) parent list.
 
 The following table shows the modifications that can be made to various partition types.
 
@@ -88,35 +88,35 @@ Extended partitions cannot be modified.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Active](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionactive.md)</p></td>
+<td><p>[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md)</p></td>
 <td><p>Specifies whether the partition is active.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Extend](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionextend.md)</p></td>
+<td><p>[Extend](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-extend.md)</p></td>
 <td><p>Specifies whether to extend the partition to use the remainder of the contiguous space on the hard disk.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Format](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionformat.md)</p></td>
+<td><p>[Format](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-format.md)</p></td>
 <td><p>Specifies the file-system format to apply to the partition.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Label](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionlabel.md)</p></td>
+<td><p>[Label](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-label.md)</p></td>
 <td><p>Specifies the name to apply to the partition.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Letter](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionletter.md)</p></td>
+<td><p>[Letter](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-letter.md)</p></td>
 <td><p>Specifies the drive letter to assign to the partition.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Order](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionorder.md)</p></td>
+<td><p>[Order](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-order.md)</p></td>
 <td><p>Specifies the order in which the partition will be modified.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[PartitionID](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitionpartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-partitionid.md)</p></td>
 <td><p>Specifies the identification number of the partition to modify.</p></td>
 </tr>
 <tr class="even">
-<td><p>[TypeID](microsoft-windows-setup-diskconfigurationdiskmodifypartitionsmodifypartitiontypeid.md)</p></td>
+<td><p>[TypeID](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid.md)</p></td>
 <td><p>Specifies the hard drive partition type.</p></td>
 </tr>
 </tbody>
@@ -132,7 +132,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md) | **ModifyPartition**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | [ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md) | **ModifyPartition**
 
 ## Applies To
 
@@ -207,7 +207,7 @@ The following XML output shows two partition modifications. The first modificati
 ## Related topics
 
 
-[ModifyPartitions](microsoft-windows-setup-diskconfigurationdiskmodifypartitions.md)
+[ModifyPartitions](microsoft-windows-setup-diskconfiguration-disk-modifypartitions.md)
 
  
 

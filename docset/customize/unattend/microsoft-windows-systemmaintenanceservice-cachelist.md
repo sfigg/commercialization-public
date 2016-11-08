@@ -18,7 +18,7 @@ ms.sitesec: msdn
 `CacheList` can contain up to eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) settings that represent a single ReadyBoost cache on the computer that you configure.
 
 **Note**  
-If more than eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cachecacheid.md), will be recognized.
+If more than eight [Cache](microsoft-windows-systemmaintenanceservice-cachelist-cache.md) values are added, only the first eight caches, in the alphabetical order of their [CacheID](microsoft-windows-systemmaintenanceservice-cachelist-cache-cacheid.md), will be recognized.
 
  
 

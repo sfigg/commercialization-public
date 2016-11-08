@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `MetaData` specifies a data image in a Windows image (.wim) file.
 
-Use the MetaData\\[Key](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatakey.md) and MetaData\\[Value](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatavalue.md) settings together to select an image based on the index, the name, or the description of the data image.
+Use the MetaData\\[Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md) and MetaData\\[Value](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-value.md) settings together to select an image based on the index, the name, or the description of the data image.
 
 ## To determine what images are available to be installed
 
@@ -60,11 +60,11 @@ Size : 3,234,567 bytes
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatakey.md)</p></td>
+<td><p>[Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md)</p></td>
 <td><p>Required. Specifies whether the image index, name, or description is used to specify the metadata for an image in a .wim file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatavalue.md)</p></td>
+<td><p>[Value](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-value.md)</p></td>
 <td><p>Required. Specifies the value of the <code>Key</code> element for the data image.</p></td>
 </tr>
 </tbody>
@@ -174,9 +174,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 
 [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md)
 
-[Key](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md)
 
-[Value](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatavalue.md)
+[Value](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-value.md)
 
  
 

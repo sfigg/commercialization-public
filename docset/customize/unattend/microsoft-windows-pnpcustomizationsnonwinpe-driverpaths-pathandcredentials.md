@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Credentials](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentialscredentials.md)</p></td>
-<td><p>Specifies the credentials (optional) used to access the path specified by the [Path](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentialspath.md).</p></td>
+<td><p>[Credentials](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-credentials.md)</p></td>
+<td><p>Specifies the credentials (optional) used to access the path specified by the [Path](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md).</p></td>
 </tr>
 <tr class="even">
-<td><p>[Key](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentialskey.md)</p></td>
+<td><p>[Key](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-key.md)</p></td>
 <td><p>Specifies a unique string identifier for the driver path.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Path](microsoft-windows-pnpcustomizationsnonwinpedriverpathspathandcredentialspath.md)</p></td>
+<td><p>[Path](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths-pathandcredentials-path.md)</p></td>
 <td><p>Specifies a local or UNC path that contains additional out-of-box device drivers that you copy to the Windows installation.</p></td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ offlineServicing
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpedriverpaths.md) | **PathAndCredentials**
+[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationsnonwinpe-driverpaths.md) | **PathAndCredentials**
 
 ## Applies To
 

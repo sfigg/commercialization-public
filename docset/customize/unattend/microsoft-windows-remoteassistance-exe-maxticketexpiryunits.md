@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MaxTicketExpiryUnits
 
 
-`MaxTicketExpiryUnits` specifies the unit of time in which the expiration of a remote assistance ticket is measured. `MaxTicketExpiryUnits` is used in conjunction with [MaxTicketExpiry](microsoft-windows-remoteassistance-exemaxticketexpiry.md) to specify the expiration of a remote assistance ticket. By default, a ticket expires in six hours.
+`MaxTicketExpiryUnits` specifies the unit of time in which the expiration of a remote assistance ticket is measured. `MaxTicketExpiryUnits` is used in conjunction with [MaxTicketExpiry](microsoft-windows-remoteassistance-exe-maxticketexpiry.md) to specify the expiration of a remote assistance ticket. By default, a ticket expires in six hours.
 
 ## Values
 

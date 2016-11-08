@@ -580,7 +580,7 @@ The following tables show the typical number of rows of tiles on different combi
 <td><p>Specifies sets of apps that appear on the Start screen for different regions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[SquareTiles](microsoft-windows-shell-setup-starttile-ssquaretiles.md)</p></td>
+<td><p>[SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)</p></td>
 <td><p>Specifies the default Windows Store apps to appear as square tiles on the Start screen.</p></td>
 </tr>
 <tr class="even">

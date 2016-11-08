@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Password
 
 
-`Password` specifies the password of the user account used to authentication access to the location specified by [Path](microsoft-windows-setup-runsynchronousrunsynchronouscommandpath.md).
+`Password` specifies the password of the user account used to authentication access to the location specified by [Path](microsoft-windows-setup-runsynchronous-runsynchronouscommand-path.md).
 
 All [RunSynchronous](microsoft-windows-setup-runsynchronous.md) commands run in the system context.
 
@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **Pasword**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **Pasword**
 
 ## Applies To
 

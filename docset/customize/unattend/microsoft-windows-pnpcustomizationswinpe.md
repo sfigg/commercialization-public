@@ -45,7 +45,7 @@ To determine whether a component applies to the image you’re building, load yo
 
 [Components](components-b-unattend.md)
 
-[Microsoft-Windows-PnpCustomizationsNonWinPE](-microsoft-windows-pnpcustomizationsnonwinpe.md)
+[Microsoft-Windows-PnpCustomizationsNonWinPE](microsoft-windows-pnpcustomizationsnonwinpe.md)
 
  
 

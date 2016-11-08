@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AdministratorPassword](microsoft-windows-shell-setupuseraccountsadministratorpassword.md)</p></td>
+<td><p>[AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md)</p></td>
 <td><p>Specifies the administrator password for the computer and whether it is hidden in the unattended installation answer file.</p></td>
 </tr>
 <tr class="even">
-<td><p>[DomainAccounts](microsoft-windows-shell-setupuseraccountsdomainaccounts.md)</p></td>
+<td><p>[DomainAccounts](microsoft-windows-shell-setup-useraccounts-domainaccounts.md)</p></td>
 <td><p>Specifies the details of domain accounts to be added to local security groups on the computer during installation.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LocalAccounts](microsoft-windows-shell-setupuseraccountslocalaccounts.md)</p></td>
+<td><p>[LocalAccounts](microsoft-windows-shell-setup-useraccounts-localaccounts.md)</p></td>
 <td><p>Specifies the details of local accounts to be created during installation.</p></td>
 </tr>
 </tbody>

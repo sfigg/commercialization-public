@@ -64,7 +64,7 @@ ms.sitesec: msdn
 
  
 
-The user is also warned if any of the following conditions apply (provided [DisplayReport](microsoft-windows-setup-compliancecheckdisplayreport.md) is set to **OnError**). Otherwise, the user must boot from installation media and perform a clean installation instead of an upgrade.
+The user is also warned if any of the following conditions apply (provided [DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md) is set to **OnError**). Otherwise, the user must boot from installation media and perform a clean installation instead of an upgrade.
 
 -   There are SMART failures, and no alternate disk is available.
 
@@ -82,7 +82,7 @@ The user is also warned if any of the following conditions apply (provided [Disp
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[DisplayReport](microsoft-windows-setup-compliancecheckdisplayreport.md)</p></td>
+<td><p>[DisplayReport](microsoft-windows-setup-compliancecheck-displayreport.md)</p></td>
 <td><p>A string that specifies in what circumstances the user interface (UI) is displayed for this item.</p></td>
 </tr>
 </tbody>

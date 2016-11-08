@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Credentials
 
 
-`Credentials` is an optional setting used to access the Universal Naming Convention (UNC) path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialspath.md).
+`Credentials` is an optional setting used to access the Universal Naming Convention (UNC) path specified by the [Path](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-path.md).
 
 ## Child Elements
 
@@ -25,15 +25,15 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentialsdomain.md)</p></td>
+<td><p>[Domain](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-domain.md)</p></td>
 <td><p>Specifies the domain of the account used for authentication. If the account is not a domain account, then the computer name should be used instead of the domain name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Password](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentialspassword.md)</p></td>
+<td><p>[Password](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-password.md)</p></td>
 <td><p>Specifies the password of the account used for authentication.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Username](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentialscredentialsusername.md)</p></td>
+<td><p>[Username](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials-credentials-username.md)</p></td>
 <td><p>Specifies the user name of the account.</p></td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | **Credentials**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md) | **Credentials**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output specifies the UNC paths to additional locations for dev
 ## Related topics
 
 
-[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md)
+[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md)
 
  
 

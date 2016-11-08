@@ -25,7 +25,7 @@ The Microsoft-Windows-NetworkBridge component connects network segments and can 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Bridge](microsoft-windows-networkbridgebridge.md)</p></td>
+<td><p>[Bridge](microsoft-windows-networkbridge-bridge.md)</p></td>
 <td><p>Specifies the adapters to bridge together to form a home network.</p></td>
 </tr>
 </tbody>

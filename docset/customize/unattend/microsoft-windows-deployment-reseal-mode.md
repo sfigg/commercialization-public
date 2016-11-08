@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Mode
 
 
-`Mode` is used with the [ForceShutdownNow](microsoft-windows-deploymentresealforceshutdownnow.md) setting to indicate whether the computer starts in audit mode or Out-of-Box-Experience (OOBE). For more information about modes, see the [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344) topic.
+`Mode` is used with the [ForceShutdownNow](microsoft-windows-deployment-reseal-forceshutdownnow.md) setting to indicate whether the computer starts in audit mode or Out-of-Box-Experience (OOBE). For more information about modes, see the [Configuration Passes](http://go.microsoft.com/fwlink/?LinkId=268344) topic.
 
 `Reseal` is a special-case setting. It is processed before any other setting in the configuration pass. In some scenarios, it instructs Windows Setup either to process or to ignore all other settings in that configuration pass before starting another configuration pass. The following table provides scenarios for each combination of configuration pass, mode, and forced-shutdown behavior. When a configuration pass has more than one result, the table lists the results in the order that they take place.
 

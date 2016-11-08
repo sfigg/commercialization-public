@@ -49,7 +49,7 @@ ms.sitesec: msdn
 <td><p>Specifies whether the user will be required to sign-in during OOBE.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[HideWirelessSetupInOOBE](microsoft-windows-shell-set-upoo-behidewirelesssetupinoobe.md)</p></td>
+<td><p>[HideWirelessSetupInOOBE](microsoft-windows-shell-setup-oobe-hidewirelesssetupinoobe.md)</p></td>
 <td><p>Hides the <strong>Join Wireless Network</strong> page.</p></td>
 </tr>
 <tr class="even">

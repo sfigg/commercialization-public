@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # QuickLinkList
 
 
-`QuickLinkList` is a container for [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md) settings.
+`QuickLinkList` is a container for [QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md) settings.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklistquicklinkitem.md)</p></td>
+<td><p>[QuickLinkItem](microsoft-windows-ie-internetexplorer-quicklinklist-quicklinkitem.md)</p></td>
 <td><p>Specifies a shortcut on the <strong>Favorites</strong> toolbar.</p></td>
 </tr>
 </tbody>

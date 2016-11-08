@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md).
+`Value` specifies the value of the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) to the answer file.
 
  
 
@@ -31,7 +31,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 <tbody>
 <tr class="odd">
 <td><p><em>Value</em></p></td>
-<td><p>Specifies the value of the [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md). <em>Value</em> is a string.</p></td>
+<td><p>Specifies the value of the [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md). <em>Value</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>
@@ -41,7 +41,7 @@ This element does not appear in the **Properties** pane of Windows System Image 
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-clientinterfaces.md) | [Interface](microsoft-windows-dns-clientinterfacesinterface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorder.md) | [IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md) | **Value**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | [IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md) | **Value**
 
 ## Valid Passes
 
@@ -92,7 +92,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddress.md)
+[IpAddress](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress.md)
 
  
 

@@ -13,10 +13,10 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of [IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md).
+`Value` specifies the value of [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md).
 
 **Note**  
-This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md) to the answer file.
+This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md) to the answer file.
 
  
 
@@ -46,7 +46,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md) | **Value**
+[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md) | [IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md) | **Value**
 
 ## Applies To
 
@@ -74,7 +74,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddress.md)
+[IpAddress](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress.md)
 
  
 

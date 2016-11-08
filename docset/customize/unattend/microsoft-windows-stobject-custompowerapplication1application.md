@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Path</em></p></td>
-<td><p>Specifies the full path and the executable file name for [CustomPowerApplication1](microsoft-windows-stobjectcustompowerapplication1.md). For example,</p>
+<td><p>Specifies the full path and the executable file name for [CustomPowerApplication1](microsoft-windows-stobject-custompowerapplication1.md). For example,</p>
 <pre class="syntax" space="preserve"><code>%ProgramFiles%\CustomPower\Application.exe</code></pre>
 <p><em>Path</em> is a string.</p></td>
 </tr>

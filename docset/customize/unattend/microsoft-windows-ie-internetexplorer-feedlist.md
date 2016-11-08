@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FeedList
 
 
-`FeedList` is a container for [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md) settings.
+`FeedList` is a container for [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md) settings.
 
 ## Child Elements
 
@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md)</p></td>
+<td><p>[FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)</p></td>
 <td><p>Specifies a Web feed to be received on the computer.</p></td>
 </tr>
 </tbody>

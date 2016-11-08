@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # MustReboot
 
 
-`MustReboot` specifies whether to restart the computer immediately after setting it to audit mode [Name](microsoft-windows-deploymentauditcomputernamename.md).
+`MustReboot` specifies whether to restart the computer immediately after setting it to audit mode [Name](microsoft-windows-deployment-auditcomputername-name.md).
 
 ## Values
 
@@ -74,7 +74,7 @@ The following XML output shows a deployment with no asynchronous or synchronous 
 ## Related topics
 
 
-[AuditComputerName](microsoft-windows-deploymentauditcomputername.md)
+[AuditComputerName](microsoft-windows-deployment-auditcomputername.md)
 
  
 

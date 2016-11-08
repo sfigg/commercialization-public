@@ -48,7 +48,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md) | **IPAddress**
+[microsoft-windows-networkloadbalancing-core-](microsoft-windows-networkloadbalancing-core.md) | [Clusters](microsoft-windows-networkloadbalancing-core-clusters.md) | [Cluster](microsoft-windows-networkloadbalancing-core-clusters-cluster.md) | [VirtualIpAddresses](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses.md) | [IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md) | **IPAddress**
 
 ## Applies To
 
@@ -67,7 +67,7 @@ The following XML output specifies the IP address for the virtual IP address.
 ## Related topics
 
 
-[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-clustervirtualipaddressesipaddress.md)
+[IpAddress](microsoft-windows-networkloadbalancing-core-clusters-cluster-virtualipaddresses-ipaddress.md)
 
  
 

@@ -135,7 +135,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
 3.  Write down the location and names of the .spkg files that were generated for your primary app and the required component.
 
-4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](p_phFlashing.feature_manifest_file_contents).
+4.  Update your feature manifest file to include these new packages and define a feature name for them. For more information, see [Feature manifest file contents](../../manufacture/mobile/feature-manifest-file-contents.md).
 
     1.  Edit the feature manifest file.
 
@@ -165,7 +165,7 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     6.  Save your updated feature manifest file.
 
-5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](p_phFlashing.oeminput_file_contents).
+5.  Update your OEMInput.xml file to include the new features that you defined in the previous step. For more information, see [OEMInput file contents](../../manufacture/mobile/oeminput-file-contents.md).
 
     1.  Edit your OEMInput.xml file.
 
@@ -190,11 +190,11 @@ If you need to preinstall an app that has dependencies on other packages or comp
 
     You can use either ImgGen.cmd or the Windows Imaging and Configuration Designer (ICD) command-line to do build the image. However, there may be other inputs that you need to provide using either of these tools. For more information, see these topics:
 
-    -   [Build a mobile image using ImgGen.cmd](p_phFlashing.building_a_phone_image_using_imggencmd)
+    -   [Build a mobile image using ImgGen.cmd](../../manufacture/mobile/building-a-phone-image-using-imggencmd.md)
 
     -   [Build an image for Windows 10 Mobile](p_icd.use_the_windows_icd_command_line_interface#to-build-a-mobile-image) using the Windows ICD CLI.
 
-7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](p_phFlashing.sign_a_full_flash_update__ffu__image).
+7.  Depending on the mobile image type that you built, you may need to sign the image before you can flash it to the phone. For more information, see [Sign a full flash update (FFU) image](../../manufacture/mobile/sign-a-full-flash-update--ffu--image.md).
 
 <a href="" id="testing"></a>**Testing**  
 1.  Flash the image that contains the preloaded app to a mobile device.

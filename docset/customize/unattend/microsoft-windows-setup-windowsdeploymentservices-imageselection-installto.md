@@ -29,7 +29,7 @@ ms.sitesec: msdn
 <td><p>Specifies the disk ID of the disk to which the image is installed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installtopartitionid.md)</p></td>
+<td><p>[PartitionID](microsoft-windows-setup-windowsdeploymentservices-imageselection-installto-partitionid.md)</p></td>
 <td><p>Specifies the partition ID of the partition to which the image is installed.</p></td>
 </tr>
 </tbody>

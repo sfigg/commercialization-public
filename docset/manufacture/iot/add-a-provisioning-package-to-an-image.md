@@ -12,17 +12,13 @@ We'll create a provisioning package that contains some sample Wi-Fi settings. Yo
 
 Note, to test Wi-Fi, your board will need Wi-Fi support. You can use a Wi-Fi adapter/dongle, or use a board like the Raspberry Pi 3 that has Wi-Fi built-in.
 
-For this lab, we start a new product, ProductB, that includes the default app (Bertha), which shows network status.  
+For this lab, we'll use the ProductB, that includes the default app (Bertha), which shows network status.  
 
-## <span id="Create_a_basic_image"></span>Create a basic image
+## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
-1.  Start the IoTCore Shell: open **C:\IoT-ADK-AddonKit\IoTCoreShell.cmd** as an administrator, then select an architecture.
+* See [Get the tools needed to customize Windows IoT Core](set-up-your-pc-to-customize-iot-core.md) to get your technician PC ready.
 
-2.  Create a new test product, ProductB.
-
-    ``` syntax
-    newproduct ProductB
-    ```
+* Create a product folder (ProductB) that's set up to boot to the default (Bertha) app, as shown in [Lab 1a: Create a basic image](create-a-basic-image.md) or [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).
 
 ## <span id="Create_your_provisioning_package_in_Windows_ICD"></span><span id="create_your_provisioning_package_in_windows_icd"></span><span id="CREATE_YOUR_PROVISIONING_PACKAGE_IN_WINDOWS_ICD"></span>Create your provisioning package in Windows ICD
 1.  Start **Windows Imaging and Configuration Designer**.
@@ -49,27 +45,31 @@ For this lab, we start a new product, ProductB, that includes the default app (B
 
 7.  Optional: add other apps, drivers, and settings through the UI. To learn more, see [Configure customizations using Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916109).
 
-8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; Next &gt; Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
+8.  Export the provisioning package. For example, click **Export &gt; Provisioning Package &gt; Next &gt; (Uncheck the Encrypt Package box) &gt; Next &gt;  Build**. (To learn more, see [Export a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916110). )
 
 9.  At the **All done!** page, click the link to the **Output location**.
 
 **Create a folder for the provisioning package in your test product**
 
-1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Products\\ProductB\\prov.
+1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov.
 
     This folder is structure is used by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
 
 2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
     
-    If necessary, rename the files to (your product name)Prov.cat and (your product name)Prov.ppkg, for example, ProductBProv.cat and ProductBProv.ppkg.
-	
+    Rename the files if necessary to match your product names:
+
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.cat
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\customizations.xml    
+    	
 3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
 
 **Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
-1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. No changes should be required.
+1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. 
 
-    The file source: ($PROD)Prov.ppkg resolves to ProductBProv.ppkg, which should match your file name.
+    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -117,7 +117,7 @@ For this lab, we start a new product, ProductB, that includes the default app (B
 
 3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
 
-    1.  Remove the comment marks to make sure the common feature manifest: OEMCommonFM.xml is included.
+    1.  Make sure the common feature manifest: OEMCommonFM.xml is included. (Remove comment marks if necessary.)
 
         ``` syntax
         <AdditionalFMs>
@@ -131,7 +131,7 @@ For this lab, we start a new product, ProductB, that includes the default app (B
         </AdditionalFMs>
         ```
 
-    2.  Remove the comment marks to make sure the Feature: OEM_ProvAuto is included.
+    2.  Make sure the Feature: OEM_ProvAuto is included. (Remove comment marks if necessary.)
 
         ``` syntax
         <OEM>
@@ -142,36 +142,31 @@ For this lab, we start a new product, ProductB, that includes the default app (B
           <Feature>OEM_AppxMain</Feature>
           <Feature>OEM_CustomCmd</Feature>
           <Feature>OEM_ProvAuto</Feature>
+          <Feature>OEM_FilesAndRegKeys</Feature>
         </OEM>
         ```
 
-### <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
+## <span id="Build_and_test_the_image"></span><span id="build_and_test_the_image"></span><span id="BUILD_AND_TEST_THE_IMAGE"></span>Build and test the image
 
-**Build the image**
+Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
-1.  From the IoT Core Shell, create the image:
+1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
+2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
+4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
+5.  Put the card into the IoT device and start it up.
 
-    ``` syntax
-    createimage ProductB Test
-    ```
+Note: Ignore the settings for "Wi-Fi Network Connection" in these menus, these settings are not used. 
 
-    This creates the product binaries at C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\Flash.FFU.
-
-2.  Start **Windows IoT Core Dashboard** &gt; **Setup a new device** &gt; **Custom**, and browse to your image. Put the Micro SD card in the device, select it, accept the license terms, and click **Install**. This replaces the previous image with our new image.
-
-    Note: Ignore the settings for "Wi-Fi Netowrk Connection" in these menus, these settings are not used when installing custom devices. 
+After a short while, you should see the [IoT test (Bertha) app](https://developer.microsoft.com/windows/iot/samples/iotdefaultapp) which shows basic info about the image.
 
 **Test to see if your provisioning settings were applied**
 
 1.  Unplug any network cables from your IoT device.
 
-2.  Put the Micro SD card into the IoT device and start it up.
+2.  Select the defaults. At the **Let's get connected** screen, select **Skip this step**.
 
-    After a short while, the device should start automatically, and you should see the default app. 
-
-3.  Select the defaults. At the Let's get connected screen, select **Skip this step**.
-
-4.  If your wireless network is in range, this screen should show the network successfully connected, and show an IP address for the network.
+3.  If your wireless network is in range, this screen should show the network successfully connected, and show an IP address for the network.
 
 ## <span id="Test_network_connections"></span>Test network connections and upload apps
 
@@ -187,7 +182,7 @@ You can connect to your device's portal page to troubleshoot network connections
     http://10.123.45.67:8080
     ```
 
-3.  When prompted, enter your device's password. (Default is: Administrator/p@ssw0rd)
+3.  When prompted, enter your device's default username and password. (Default is: Administrator \ p@ssw0rd)
 
     This opens the [Windows Device Portal](https://developer.microsoft.com/windows/iot/win10/tools/deviceportal). From here, you can upload app packages, see what apps are installed, and switch between them.
 

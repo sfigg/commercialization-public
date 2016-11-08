@@ -33,7 +33,7 @@ Creating a blank administrator password is a security risk.
 <tbody>
 <tr class="odd">
 <td><p><em>Password</em></p></td>
-<td><p>Specifies the [AdministratorPassword](microsoft-windows-shell-setupu-seraccounts-administratorpassword.md). <em>Password</em> is a string.</p></td>
+<td><p>Specifies the [AdministratorPassword](microsoft-windows-shell-setup-useraccounts-administratorpassword.md). <em>Password</em> is a string.</p></td>
 </tr>
 </tbody>
 </table>

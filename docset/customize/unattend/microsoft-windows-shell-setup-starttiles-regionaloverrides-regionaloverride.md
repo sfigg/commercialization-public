@@ -17,7 +17,7 @@ A `RegionalOverride` specifies a set of apps that appear on the Start and Lock s
 
 Each regional override can be used for multiple regions. For example, you could add a set of apps that are designed for South American business travel that only appear for your users in South America.
 
-Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-coreuserlocale.md).
+Your user’s region can be selected by the user during OOBE, or can be specified with Microsoft-Windows-International-Core\\[UserLocale](microsoft-windows-international-core-userlocale.md).
 
 If the selected region matches a region in Windows-Shell-Setup\\StartMenu\\RegionalOverrides\\RegionalOverride\\Regions\\[Region](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions-region.md), then Windows displays the set of apps from that regional override. The set of apps is specified by Microsoft-Windows-Shell-Setup\\StartTiles\\RegionalOverrides\\RegionalOverride: WideTiles, SquareTiles, and LockScreen.
 
@@ -33,15 +33,15 @@ If the selected region doesn’t match any of these regions, then Windows displa
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverrideorder.md)</p></td>
+<td><p>[Order](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-order.md)</p></td>
 <td><p>Specifies an instance</p></td>
 </tr>
 <tr class="even">
-<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverridelockscreen.md)</p></td>
+<td><p>[LockScreen](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-lockscreen.md)</p></td>
 <td><p>Specifies application whose monochrome icon appears on the <strong>Lock</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Regions](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverrideregions.md)</p></td>
+<td><p>[Regions](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-regions.md)</p></td>
 <td><p>Specifies a set of regions where Windows displays a customized set of apps that appear on the Start and Lock screens.</p></td>
 </tr>
 <tr class="even">
@@ -85,7 +85,7 @@ For a list of the Windows editions and architectures that this component support
 
 [StartTiles](microsoft-windows-shell-setup-starttiles.md)
 
-[UserLocale](microsoft-windows-international-coreuserlocale.md)
+[UserLocale](microsoft-windows-international-core-userlocale.md)
 
  
 

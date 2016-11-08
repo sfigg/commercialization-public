@@ -28,7 +28,7 @@ To use a different `ItemName` for each language, create a resource file, and ref
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>Specifies the display name to use for [CustomPowerApplication3](microsoft-windows-stobjectcustompowerapplication3.md).</p>
+<td><p>Specifies the display name to use for [CustomPowerApplication3](microsoft-windows-stobject-custompowerapplication3.md).</p>
 <p><code>ItemName</code> is represented as @<em>dllname,-resourceid</em>, where <em>dllname</em> is the full path to the resource DLL, including environment variables. For example,</p>
 <pre class="syntax" space="preserve"><code>@%ProgramFiles%\Microsoft Shared\Resource.dll,-100</code></pre>
 <p><em>Name</em> is a string.</p></td>

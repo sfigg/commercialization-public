@@ -80,7 +80,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-setup-runsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md)
 
  
 

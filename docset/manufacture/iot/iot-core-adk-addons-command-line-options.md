@@ -67,7 +67,7 @@ For troubleshooting, Buildpkg saves logs at \Build\\<arch\>\pkgs\logs.
 
 -   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
 
--   `<All>`: Use this to build all packages in the \Sources-\<arch\>\Packages folder. This is the same as the buildallpackages command.
+-   `<All>`: Use this to build all packages in the \Sources-\<arch\>\Packages folder. This is the same as the `BuildPkg All` command.
 
 -   `<Clean>`: Use this to erase everything in the \Build\\<arch\>\pkgs folder. Recommended before building all packages.
 
@@ -128,7 +128,7 @@ Createpkg saves the package in the \Build\\<arch\>\pkgs folder as a .cab file (e
 ``` syntax
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml 10.0.1.0
-createpkg Registry.ConfigSettings 
+createpkg Registry.FilesAndRegKeys 
 ```
 
 ## <span id="createprovpkg.cmd"></span>createprovpkg.cmd
@@ -271,7 +271,7 @@ If you run this command without any variables, you'll also see the other working
 **Example**:
 
 ``` syntax
-newcommonpkg Registry.ConfigSettings
+newcommonpkg Registry.FilesAndRegKeys
 ```
 
 To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).

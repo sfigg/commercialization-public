@@ -30,11 +30,11 @@ For more information about product keys, see the topic [Work with Product Keys a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
+<td><p>microsoft-windows-setup-\UserData\ProductKey\[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
 <td><p>Specifies the Windows image to install during Windows Setup.</p></td>
 </tr>
 <tr class="even">
-<td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-shell-setupproductkey.md)</p></td>
+<td><p>Microsoft-Windows-Shell-Setup\[ProductKey](microsoft-windows-shell-setup-productkey.md)</p></td>
 <td><p>Specifies a product key to activate Windows with. This setting can be used with microsoft-windows-setup-\UserData\ProductKey\Key, and the two product keys can be different.</p>
 <p>If you are using a Volume License Multiple Activation Key (MAK), you must specify the MAK by using this setting.</p></td>
 </tr>
@@ -53,7 +53,7 @@ For more information about product keys, see the topic [Work with Product Keys a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-setup-userdataproductkeykey.md)</p></td>
+<td><p>[Key](microsoft-windows-setup-userdata-productkey-key.md)</p></td>
 <td><p>Specifies the product key.</p></td>
 </tr>
 <tr class="even">

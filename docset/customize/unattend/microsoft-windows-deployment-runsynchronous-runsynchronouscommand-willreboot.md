@@ -135,7 +135,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[RunSynchronousCommand](microsoft-windows-deploymentrunsynchronousrunsynchronouscommand.md)
+[RunSynchronousCommand](microsoft-windows-deployment-runsynchronous-runsynchronouscommand.md)
 
  
 

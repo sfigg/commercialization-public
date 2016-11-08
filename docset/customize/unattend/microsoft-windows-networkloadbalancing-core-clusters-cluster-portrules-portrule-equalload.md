@@ -60,7 +60,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to specify that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portruleloadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.
+The following XML output shows how to specify that the number specified in the [LoadWeight](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-loadweight.md) setting is used to increase or decrease the load relative to other nodes in the cluster.
 
 ``` syntax
 <EqualLoad>false</EqualLoad>

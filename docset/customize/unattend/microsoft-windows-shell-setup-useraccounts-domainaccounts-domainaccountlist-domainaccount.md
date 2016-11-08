@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Group](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccountgroup.md)</p></td>
+<td><p>[Group](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-group.md)</p></td>
 <td><p>Specifies the group to which the <code>DomainAccount</code> belongs.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Name](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccountname.md)</p></td>
+<td><p>[Name](microsoft-windows-shell-setup-useraccounts-domainaccounts-domainaccountlist-domainaccount-name.md)</p></td>
 <td><p>Specifies the name of the <code>DomainAccount</code>.</p></td>
 </tr>
 </tbody>

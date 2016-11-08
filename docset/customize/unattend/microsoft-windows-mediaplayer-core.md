@@ -25,7 +25,7 @@ The Microsoft-Windows-MediaPlayer-Core component contains a setting that specifi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InitialOEMServiceProvider](microsoft-windows-mediaplayer-coreinitialoemserviceprovider.md)</p></td>
+<td><p>[InitialOEMServiceProvider](microsoft-windows-mediaplayer-core-initialoemserviceprovider.md)</p></td>
 <td><p>Specifies the initial OEM service provider for Windows Media Player 12.</p></td>
 </tr>
 </tbody>

@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Before an online backup service is installed, Windows displays a description of a recommended online backup service. This includes one or two description lines and one or two links that provide more information.
 
-The link is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-mainresourcedll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
+The link is added to the resource DLL file that the [ResourceDll](microsoft-windows-blb-wsb-online-main-resourcedll.md) setting specifies. The icon may be localized for different regions. For information about how to create localized versions for these settings, see [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
 The link in the Resource DLL file must be a text string. It must begin with `http://` or `file://`. For example, the link may resemble the following:
 

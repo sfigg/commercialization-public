@@ -82,12 +82,12 @@ There are eight steps to customize the taskbar with up to three additional pinne
     1.  Put the path of the mounted TaskbarLayoutModification.xml file as the registry key’s value, for example, %AppData%\\Local\\Microsoft\\Windows\\Shell\\TaskbarLayoutModification.xml.
     2.  Add this file to the image.
 
-5.  Prepare to run this registry key by adding a [FirstLogonCommands](p_unattend.firstlogoncommands_win7_microsoft_windows_shell_setupfirstlogoncommands) in an Unattend file.
+5.  Prepare to run this registry key by adding a [FirstLogonCommands](../unattend/firstlogoncommands-win7-microsoft-windows-shell-setupfirstlogoncommands.md) in an Unattend file.
 6.  Add the Unattend file to the image.
 7.  Unmount the image.
 8.  Apply and boot the image.
 
-    TaskbarLayoutModification.xml is applied during [Sysprep](p_adk_online.sysprep_process_overview_win8). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](p_unattend.taskbarlinks_win7_microsoft_windows_shell_setuptaskbarlinks). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
+    TaskbarLayoutModification.xml is applied during [Sysprep](../../manufacture/desktop/sysprep-process-overview-win8.md). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](../unattend/taskbarlinks-win7-microsoft-windows-shell-setuptaskbarlinks.md). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
 
 **Note**  Note: If the taskbar detects registry keys that map to default pins (the pre-Windows 10, version 1607 method of pinning apps to the taskbar), and it also detects app pinning by using TaskbarLayoutModification.xml, only TaskbarLayoutModification.xml pinning will be applied. If, however, no TaskbarLayoutModification.xml file exists, the legacy method will be applied. **The legacy method is deprecated in Windows 10, version 1607, and may not be supported in future versions of Windows. We recommend this new approach, adding a TaskbarLayoutModification.xml file.**
 

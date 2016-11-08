@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # IpAddress
 
 
-`IpAddress` specifies an IP address that is a member of [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md).
+`IpAddress` specifies an IP address that is a member of [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md).
 
 **Note**  
 The child elements do not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add this element to the answer file.
@@ -30,11 +30,11 @@ The child elements do not appear in the **Properties** pane of Windows System I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress-key.md)</p></td>
 <td><p>Specifies a unique key for the IP address.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-netbt-interfaces-interfacenameserverlistipaddressvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-netbt-interfaces-interface-nameserverlist-ipaddress-value.md)</p></td>
 <td><p>Specifies the value of the IP address.</p></td>
 </tr>
 </tbody>
@@ -52,7 +52,7 @@ specialize
 ## Parent Hierarchy
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md) | **IpAddress**
+[microsoft-windows-netbt-](microsoft-windows-netbt.md) | [Interfaces](microsoft-windows-netbt-interfaces.md) | [Interface](microsoft-windows-netbt-interfaces-interface.md) | [NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md) | **IpAddress**
 
 ## Applies To
 
@@ -80,7 +80,7 @@ The following XML output shows how to configure microsoft-windows-netbt-.
 ## Related topics
 
 
-[NameServerList](microsoft-windows-netbt-interfaces-interfacenameserverlist.md)
+[NameServerList](microsoft-windows-netbt-interfaces-interface-nameserverlist.md)
 
  
 

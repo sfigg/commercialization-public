@@ -112,7 +112,7 @@ This customization supports: **per-SIM** value
 
     -   Set `AllowMmsIfDataIsOff` itself to 1 (0 by default).
 
-    For more information about `ExemptFromDisablePolicy`, see [CM\_CellularEntries CSP](p_phDeviceMgmt.cm_cellularentries_configuration_service_provider).
+    For more information about `ExemptFromDisablePolicy`, see [CM\_CellularEntries CSP](../mdm/cm-cellularentries-configuration-service-provider.md).
 
     To allow or disallow MMS messaging even if data is turned off, set the value of `AllowMmsIfDataIsOff` to one of the following:
 

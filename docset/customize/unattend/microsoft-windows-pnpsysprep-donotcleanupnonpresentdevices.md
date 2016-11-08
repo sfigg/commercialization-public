@@ -15,11 +15,11 @@ ms.sitesec: msdn
 
 The `DoNotCleanUpNonPresentDevices` setting specifies whether plug and play information for devices that are not detected on the destination computer during the next specialize should remain on the computer.
 
-This setting is useful for devices with a physical on/off switch. When a physical on/off switch is off, the device information may be removed during either the **generalize** or **specialize** configuration pass. However, when both [PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md) and `DoNotCleanUpNonPresentDevices` are set to **true**, the device information remains on the computer.
+This setting is useful for devices with a physical on/off switch. When a physical on/off switch is off, the device information may be removed during either the **generalize** or **specialize** configuration pass. However, when both [PersistAllDeviceInstalls](microsoft-windows-pnpsysprep-persistalldeviceinstalls.md) and `DoNotCleanUpNonPresentDevices` are set to **true**, the device information remains on the computer.
 
 This list describes the process Windows Setup uses to determine whether plug and play information remains on the computer, or is removed, or is removed and then re-initialized:
 
--   When [PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md) is set to **true**, then during the **generalize** configuration pass, plug and play device information remains on the computer.
+-   When [PersistAllDeviceInstalls](microsoft-windows-pnpsysprep-persistalldeviceinstalls.md) is set to **true**, then during the **generalize** configuration pass, plug and play device information remains on the computer.
 
     During the next **specialize** configuration pass:
 
@@ -31,7 +31,7 @@ This list describes the process Windows Setup uses to determine whether plug an
 
         -   If `DoNotCleanUpNonPresentDevices` is set to **false**, the device information is removed from the computer.
 
--   When [PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md) is set to **false**, then during the **generalize** configuration pass, plug and play device information is removed from the computer.
+-   When [PersistAllDeviceInstalls](microsoft-windows-pnpsysprep-persistalldeviceinstalls.md) is set to **false**, then during the **generalize** configuration pass, plug and play device information is removed from the computer.
 
     During the next **specialize** configuration pass:
 
@@ -102,7 +102,7 @@ The following XML output specifies that drivers for devices that are not on the 
 ## Related topics
 
 
-[PersistAllDeviceInstalls](microsoft-windows-pnpsyspreppersistalldeviceinstalls.md)
+[PersistAllDeviceInstalls](microsoft-windows-pnpsysprep-persistalldeviceinstalls.md)
 
 [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md)
 

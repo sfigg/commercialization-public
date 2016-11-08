@@ -43,7 +43,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefax-unattend.md) | **RouteFolderName**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **RouteFolderName**
 
 ## Applies To
 
@@ -87,7 +87,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-servicefax-unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
 
  
 

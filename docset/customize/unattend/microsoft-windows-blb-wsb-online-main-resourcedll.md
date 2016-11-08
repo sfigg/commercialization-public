@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ResourceDll
 
 
-`ResourceDll` specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows Server Backup menus. These settings include Microsoft-Windows-BLB-WSB-Online-Main\\[DescriptionText1](microsoft-windows-blb-wsb-online-maindescriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-maindescriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-mainicon.md), [Link1](microsoft-windows-blb-wsb-online-mainlink1.md), [Link1Text](microsoft-windows-blb-wsb-online-mainlink1text.md), [Link2](microsoft-windows-blb-wsb-online-mainlink2.md), [Link2Text](microsoft-windows-blb-wsb-online-mainlink2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md).
+`ResourceDll` specifies the resource DLL file that is used for multiple settings that describe an online backup service in the Windows Server Backup menus. These settings include Microsoft-Windows-BLB-WSB-Online-Main\\[DescriptionText1](microsoft-windows-blb-wsb-online-main-descriptiontext1.md), [DescriptionText2](microsoft-windows-blb-wsb-online-main-descriptiontext2.md), [Icon](microsoft-windows-blb-wsb-online-main-icon.md), [Link1](microsoft-windows-blb-wsb-online-main-link1.md), [Link1Text](microsoft-windows-blb-wsb-online-main-link1text.md), [Link2](microsoft-windows-blb-wsb-online-main-link2.md), [Link2Text](microsoft-windows-blb-wsb-online-main-link2text.md), and [ProviderName](microsoft-windows-blb-wsb-online-main-providername.md).
 
 For information about how to create localized versions for these settings, see the topic [Using the MUI with Applications](http://go.microsoft.com/fwlink/?LinkId=140252).
 
@@ -76,21 +76,21 @@ The following XML output shows how to describe a recommended online backup servi
 
 [Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
-[DescriptionText1](microsoft-windows-blb-wsb-online-maindescriptiontext1.md)
+[DescriptionText1](microsoft-windows-blb-wsb-online-main-descriptiontext1.md)
 
-[DescriptionText2](microsoft-windows-blb-wsb-online-maindescriptiontext2.md)
+[DescriptionText2](microsoft-windows-blb-wsb-online-main-descriptiontext2.md)
 
-[Icon](microsoft-windows-blb-wsb-online-mainicon.md)
+[Icon](microsoft-windows-blb-wsb-online-main-icon.md)
 
-[Link1](microsoft-windows-blb-wsb-online-mainlink1.md)
+[Link1](microsoft-windows-blb-wsb-online-main-link1.md)
 
-[Link1Text](microsoft-windows-blb-wsb-online-mainlink1text.md)
+[Link1Text](microsoft-windows-blb-wsb-online-main-link1text.md)
 
-[Link2](microsoft-windows-blb-wsb-online-mainlink2.md)
+[Link2](microsoft-windows-blb-wsb-online-main-link2.md)
 
-[Link2Text](microsoft-windows-blb-wsb-online-mainlink2text.md)
+[Link2Text](microsoft-windows-blb-wsb-online-main-link2text.md)
 
-[ProviderName](microsoft-windows-blb-wsb-online-mainprovidername.md)
+[ProviderName](microsoft-windows-blb-wsb-online-main-providername.md)
 
  
 

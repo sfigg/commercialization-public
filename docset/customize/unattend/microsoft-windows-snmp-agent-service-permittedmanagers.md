@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `PermittedManagers` specifies whether the computer accepts Simple Network Management Protocol (SNMP) requests from any host.
 
-If a host is specified in [A1](microsoft-windows-snmp-agent-servicepermittedmanagersa1.md), the computer accepts SNMP requests only from that host. You can specify either the host computer name or its IP address for the host. It is recommended that `Host` be used as the host computer name.
+If a host is specified in [A1](microsoft-windows-snmp-agent-service-permittedmanagers-a1.md), the computer accepts SNMP requests only from that host. You can specify either the host computer name or its IP address for the host. It is recommended that `Host` be used as the host computer name.
 
 You can use this setting in core installations of Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, by enabling **SNMP-SC** in the Windows Foundation package.
 

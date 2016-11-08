@@ -67,7 +67,7 @@ The Microsoft-Windows-Wlansvc component implements:
 <td><p>Specifies the number of antennas that are connected to the WLAN radio.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[RadioLocation](microsoft-windows-wlansvcradiolocation.md)</p></td>
+<td><p>[RadioLocation](microsoft-windows-wlansvc-radiolocation.md)</p></td>
 <td><p><code>RadioLocation</code> provides instructions to users for enabling the wireless local area network (WLAN) hardware. These instructions are displayed when a wireless connectivity problem is detected, for example, when a wireless adapter is turned off.</p></td>
 </tr>
 <tr class="even">

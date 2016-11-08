@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value for the [Key](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatakey.md) setting. For information about using this setting, see [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md).
+`Value` specifies the value for the [Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md) setting. For information about using this setting, see [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md).
 
 ## Values
 
@@ -41,7 +41,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md) | **Value**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [ImageInstall](microsoft-windows-setup-imageinstall.md) | [DataImage](microsoft-windows-setup-imageinstall-dataimage.md) | [InstallFrom](microsoft-windows-setup-imageinstall-dataimage-installfrom.md) | [MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md) | **Value**
 
 ## Applies To
 
@@ -81,9 +81,9 @@ The following XML output shows how to configure the `MetaData` setting to instal
 ## Related topics
 
 
-[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrommetadata.md)
+[MetaData](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata.md)
 
-[Key](microsoft-windows-setup-imageinstall-dataimage-installfrommetadatakey.md)
+[Key](microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key.md)
 
  
 

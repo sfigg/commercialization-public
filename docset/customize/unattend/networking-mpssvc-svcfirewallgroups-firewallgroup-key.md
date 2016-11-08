@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `Key` specifies the unique string to identify the name of the firewall group.
 
-The value for `Key` is added to the answer file as an attribute of the [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) element. The attribute `wcm:keyValue` is used to identify each unique firewall group. For example, you can specify three different firewall groups by using the `Key` value of **RemoteDesktop**, **WindowsMediaPlayer**, and **HomeGroup**.
+The value for `Key` is added to the answer file as an attribute of the [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) element. The attribute `wcm:keyValue` is used to identify each unique firewall group. For example, you can specify three different firewall groups by using the `Key` value of **RemoteDesktop**, **WindowsMediaPlayer**, and **HomeGroup**.
 
 ## Values
 
@@ -40,7 +40,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md) | **Key**
+[Networking-MPSSVC-Svc](networking-mpssvc-svc.md) | [FirewallGroups](networking-mpssvc-svcfirewallgroups.md) | [FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md) | **Key**
 
 ## Valid Passes
 
@@ -70,7 +70,7 @@ The following XML output shows how to set Windows Firewall groups.
 ## Related topics
 
 
-[FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md)
+[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)
 
  
 

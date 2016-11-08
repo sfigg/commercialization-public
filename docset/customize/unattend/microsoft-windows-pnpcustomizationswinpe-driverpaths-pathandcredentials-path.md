@@ -44,7 +44,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md) | **Path**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | [DriverPaths](microsoft-windows-pnpcustomizationswinpe-driverpaths.md) | [PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md) | **Path**
 
 ## Applies To
 
@@ -82,7 +82,7 @@ The following XML output specifies the UNC paths to additional locations for dev
 ## Related topics
 
 
-[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpathspathandcredentials.md)
+[PathAndCredentials](microsoft-windows-pnpcustomizationswinpe-driverpaths-pathandcredentials.md)
 
  
 

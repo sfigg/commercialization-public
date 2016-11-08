@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 Toolbars are plug-in modules used to add functionality to Internet Explorer.
 
-`InstalledToolbarsList` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledtoolbarslistaddonguiditem.md) settings each of which represents a single toolbar.
+`InstalledToolbarsList` can contain one or more [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem.md) settings each of which represents a single toolbar.
 
 ## Child Elements
 
@@ -29,7 +29,7 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorerinstalledtoolbarslistaddonguiditem.md)</p></td>
+<td><p>[AddonGuidItem](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem.md)</p></td>
 <td><p>Specifies settings for a toolbar.</p></td>
 </tr>
 </tbody>
@@ -73,11 +73,11 @@ The following XML output shows how to set two Internet Explorer toolbars.
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[InstalledBHOList](microsoft-windows-ie-internetexplorerinstalledbholist.md)
+[InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)
 
-[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorerinstalledbrowserextensions.md)
+[InstalledBrowserExtensions](microsoft-windows-ie-internetexplorer-installedbrowserextensions.md)
 
-[PreApprovedAddons](microsoft-windows-ie-internetexplorerpreapprovedaddons.md)
+[PreApprovedAddons](microsoft-windows-ie-internetexplorer-preapprovedaddons.md)
 
  
 

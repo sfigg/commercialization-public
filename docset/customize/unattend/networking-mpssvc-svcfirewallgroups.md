@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[FirewallGroup](networking-mpssvc-svcfirewallgroupsfirewallgroup.md)</p></td>
+<td><p>[FirewallGroup](networking-mpssvc-svcfirewallgroups-firewallgroup.md)</p></td>
 <td><p>Specifies a Windows Firewall group.</p></td>
 </tr>
 </tbody>

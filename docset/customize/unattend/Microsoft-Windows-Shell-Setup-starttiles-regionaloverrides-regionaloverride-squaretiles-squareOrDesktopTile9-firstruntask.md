@@ -83,7 +83,7 @@ The following XML output shows how to use the `<FirstRunTask>` component.
 
 [RegionalOverrides](microsoft-windows-shell-setup-starttiles-regionaloverrides.md)
 
-[SquareTiles](microsoft-windows-shell-setup-starttile-sregionaloverrides-regionaloverride-squaretiles.md)
+[SquareTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles.md)
 
 [SquareTiles](microsoft-windows-shell-setup-starttiles-squaretiles.md)
 

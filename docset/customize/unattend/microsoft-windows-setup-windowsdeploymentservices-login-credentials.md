@@ -25,7 +25,7 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Domain](microsoft-windows-setup-windowsdeploymentservices-login-credentials-domain.md)</p></td>
+<td><p>[Domain](microsoft-windows-setupwindowsdeploymentservices-login-credentials-domain.md)</p></td>
 <td><p>Specifies the domain.</p></td>
 </tr>
 <tr class="even">

@@ -88,7 +88,7 @@ Microsoft-Windows-Shell-Setup contains elements and settings that control how th
 <td><p>Specifies local accounts to be created, domain accounts to be added, and the administrator password.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OOBE](microsoft-windows-shell-setupoobe.md)</p></td>
+<td><p>[OOBE](microsoft-windows-shell-setup-oobe.md)</p></td>
 <td><p>Specifies values that suppress certain pages of OOBE.</p></td>
 </tr>
 <tr class="even">

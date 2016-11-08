@@ -25,11 +25,11 @@ ms.sitesec: msdn
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Enable](microsoft-windows-setup-dynamicupdateenable.md)</p></td>
+<td><p>[Enable](microsoft-windows-setup-dynamicupdate-enable.md)</p></td>
 <td><p>Specifies whether to enable dynamic updates for installation.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WillShowUI](microsoft-windows-setup-dynamicupdatewillshowui.md)</p></td>
+<td><p>[WillShowUI](microsoft-windows-setup-dynamicupdate-willshowui.md)</p></td>
 <td><p>Specifies in what circumstances to show the user interface (UI) for dynamic updates.</p></td>
 </tr>
 </tbody>

@@ -30,11 +30,11 @@ The child elements do not appear in the **Properties** pane of Windows System Im
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddresskey.md)</p></td>
+<td><p>[Key](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-key.md)</p></td>
 <td><p>Specifies a unique key for the <code>IpAddress</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-dns-clientinterfacesinterfacednsserversearchorderipaddressvalue.md)</p></td>
+<td><p>[Value](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder-ipaddress-value.md)</p></td>
 <td><p>Specifies the value of the <code>IpAddress</code>.</p></td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-clientinterfaces-interface-dnsserversearchorder.md) | **IpAddress**
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md) | [Interfaces](microsoft-windows-dns-client-interfaces.md) | [Interface](microsoft-windows-dns-client-interfaces-interface.md) | [DNSServerSearchOrder](microsoft-windows-dns-client-interfaces-interface-dnsserversearchorder.md) | **IpAddress**
 
 ## Valid Passes
 

@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Value
 
 
-`Value` specifies the value of the [DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md).
+`Value` specifies the value of the [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md).
 
 **Note**  
 This element does not appear in the **Properties** pane of Windows System Image Manager (Windows SIM) until you add [DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md) to the answer file.
@@ -94,7 +94,7 @@ The following XML output shows a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[DomainName](microsoft-windows-dns-clientdnssuffixsearchorderdomainname.md)
+[DomainName](microsoft-windows-dns-client-dnssuffixsearchorder-domainname.md)
 
  
 

@@ -15,7 +15,7 @@ ms.sitesec: msdn
 
 `RunAsynchronous` specifies one or more commands to run during the auditUser configuration pass or specialize configuration pass.
 
-To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-deploymentrunsynchronous.md) instead.
+To run services or commands that can start at the same time, use asynchronous commands. To run commands that need to finish before other commands can start, use [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) instead.
 
 `RunAsynchronous` commands run in the user context in the auditUser configuration pass and in the system context in the specialize configuration pass.
 
@@ -29,7 +29,7 @@ To run services or commands that can start at the same time, use asynchronous co
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronousrunasynchronouscommand.md)</p></td>
+<td><p>[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)</p></td>
 <td><p>Specifies the path, the order, and the credentials of the command to run asynchronously.</p></td>
 </tr>
 </tbody>

@@ -10,7 +10,7 @@ ms.assetid: 8b02b8c8-353a-445c-af09-070a4fa8cac4
 # Remove optional Microsoft components from the image
 
 
-This customization provides information on how partners can remove any of the optional Microsoft components. For more information about other features you can include or exclude from your image, see [Optional features for building images](p_phFlashing.optional_features_for_building_images).
+This customization provides information on how partners can remove any of the optional Microsoft components. For more information about other features you can include or exclude from your image, see [Optional features for building images](../../manufacture/mobile/optional-features-for-building-images.md).
 
 For a comprehensive list of optional Microsoft components, refer to the *OEM Policy Document (OPD) for Windows 10 Mobile*.
 

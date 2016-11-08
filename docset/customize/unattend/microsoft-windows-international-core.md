@@ -25,23 +25,23 @@ The Microsoft-Windows-International-Core component includes the language and inp
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[InputLocale](microsoft-windows-international-coreinputlocale.md)</p></td>
+<td><p>[InputLocale](microsoft-windows-international-core-inputlocale.md)</p></td>
 <td><p>Specifies the system input locale and the keyboard layout.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SystemLocale](microsoft-windows-international-coresystemlocale.md)</p></td>
+<td><p>[SystemLocale](microsoft-windows-international-core-systemlocale.md)</p></td>
 <td><p>Specifies the language for non-Unicode programs.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UILanguage](microsoft-windows-international-coreuilanguage.md)</p></td>
+<td><p>[UILanguage](microsoft-windows-international-core-uilanguage.md)</p></td>
 <td><p>Specifies the system default user interface (UI) language.</p></td>
 </tr>
 <tr class="even">
-<td><p>[UILanguageFallback](microsoft-windows-international-coreuilanguagefallback.md)</p></td>
+<td><p>[UILanguageFallback](microsoft-windows-international-core-uilanguagefallback.md)</p></td>
 <td><p>Specifies the fallback language if the system default UI language is only partially localized.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[UserLocale](microsoft-windows-international-coreuserlocale.md)</p></td>
+<td><p>[UserLocale](microsoft-windows-international-core-userlocale.md)</p></td>
 <td><p>Specifies the per-user settings used for formatting dates, times, currency, and numbers.</p></td>
 </tr>
 </tbody>

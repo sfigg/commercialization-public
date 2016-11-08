@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # FeedKey
 
 
-`FeedKey` specifies a unique string for a [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md).
+`FeedKey` specifies a unique string for a [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md).
 
 ## Values
 
@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><em>Key</em></p></td>
-<td><p>Specifies a unique string for the [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md).</p></td>
+<td><p>Specifies a unique string for the [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md).</p></td>
 </tr>
 </tbody>
 </table>
@@ -38,7 +38,7 @@ This string type does not support empty elements. Do not create an empty value f
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md) | **FeedKey**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md) | [FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md) | **FeedKey**
 
 ## Valid Configuration Passes
 
@@ -53,7 +53,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorerfeedlist.md).
+The following XML output shows how to set a [FeedList](microsoft-windows-ie-internetexplorer-feedlist.md).
 
 ``` syntax
 <FeedList>
@@ -73,7 +73,7 @@ The following XML output shows how to set a [FeedList](microsoft-windows-ie-inte
 ## Related topics
 
 
-[FeedItem](microsoft-windows-ie-internetexplorerfeedlistfeeditem.md)
+[FeedItem](microsoft-windows-ie-internetexplorer-feedlist-feeditem.md)
 
  
 

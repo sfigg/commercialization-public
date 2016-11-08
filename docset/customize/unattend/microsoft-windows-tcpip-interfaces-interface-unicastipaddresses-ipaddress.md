@@ -30,11 +30,11 @@ The child elements do not appear in the **Properties** pane of Windows System I
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Key](microsoft-windows-tcpip-interfaces-interface-unicast-ipaddresses-ipaddress-key.md)</p></td>
+<td><p>[Key](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-key.md)</p></td>
 <td><p>Specifies a unique key for the <code>IpAddress</code>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Value](microsoft-windows-tcpip-interfaces-interface-unicast-ipaddresses-ipaddress-value.md)</p></td>
+<td><p>[Value](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses-ipaddress-value.md)</p></td>
 <td><p>Specifies the value of the <code>IpAddress</code>.</p></td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ The following XML output shows how to configure TCPIP.
 ## Related topics
 
 
-[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicast-ipaddresses.md)
+[UnicastIpAddresses](microsoft-windows-tcpip-interfaces-interface-unicastipaddresses.md)
 
  
 

@@ -10,7 +10,7 @@ ms.assetid: d3723ee6-3615-4ebd-bc34-274fe5c2e452
 # Maps for phones shipped in China
 
 
-Microsoft recommends using the new [ChinaVariantWin10](p_icd_settings.maps_chinavariantwin10) setting instead of this legacy MCSF setting.
+Microsoft recommends using the new [ChinaVariantWin10](https://msdn.microsoft.com/library/windows/hardware/mt203640) setting instead of this legacy MCSF setting.
 
 For a Windows mobile device shipping in China, partners must specify that the device is intended for that market by configuring `ChinaVariant` setting. When enabled, maps approved by the State Bureau of Surveying and Mapping in China are used and the maps are obtained from a server located in China.
 

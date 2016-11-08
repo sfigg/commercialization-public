@@ -29,7 +29,7 @@ Toolbars are plug-in modules used to add functionality to Internet Explorer.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[AddonGuid](microsoft-windows-ie-internetexplorerinstalledtoolbarslistaddonguiditemaddonguid.md)</p></td>
+<td><p>[AddonGuid](microsoft-windows-ie-internetexplorer-installedtoolbarslist-addonguiditem-addonguid.md)</p></td>
 <td><p>Specifies a GUID for a toolbar.</p></td>
 </tr>
 </tbody>
@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorerinstalledtoolbarslist.md) | **AddonGuidItem**
+[Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md) | [InstalledToolbarsList](microsoft-windows-ie-internetexplorer-installedtoolbarslist.md) | **AddonGuidItem**
 
 ## Applies To
 

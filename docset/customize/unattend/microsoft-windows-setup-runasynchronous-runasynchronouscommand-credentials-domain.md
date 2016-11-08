@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Domain
 
 
-`Domain` specifies the domain of the account used to authenticate access to the location specified by [Path](microsoft-windows-setup-runasynchronousrunasynchronouscommandpath.md).
+`Domain` specifies the domain of the account used to authenticate access to the location specified by [Path](microsoft-windows-setup-runasynchronous-runasynchronouscommand-path.md).
 
 All [RunAsynchronous](microsoft-windows-setup-runasynchronous.md) commands run in the system context.
 

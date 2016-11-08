@@ -71,9 +71,9 @@ The following XML example demonstrates not including the default Internet Explor
 
 [Microsoft-Windows-IE-InternetExplorer](microsoft-windows-ie-internetexplorer.md)
 
-[Accelerators](microsoft-windows-ie-internetexploreraccelerators.md)
+[Accelerators](microsoft-windows-ie-internetexplorer-accelerators.md)
 
-[DisableAccelerators](microsoft-windows-ie-internetexplorerdisableaccelerators.md)
+[DisableAccelerators](microsoft-windows-ie-internetexplorer-disableaccelerators.md)
 
  
 

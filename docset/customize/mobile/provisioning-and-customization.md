@@ -42,11 +42,11 @@ MCSF can co-exist with the Windows Provisioning customization framework so OEMs 
 <td><p>A <strong>customization answer file</strong> is an XML file that you write based on the MCSF schema. OEMs can use the MCSF customization answer file to specify the settings and variants for a custom mobile OS image. The customization answer file allows for a broader integration across the OS by providing OEMs with a single place to define nearly all mobile OS settings.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MCSF to Windows Provisioning settings map](p_phcustomization.mcsf_to_windows_provisioning_settings_map)</p></td>
+<td><p>[MCSF to Windows Provisioning settings map](https://msdn.microsoft.com/library/windows/hardware/mt450421)</p></td>
 <td><p>This topic lists the customizations available for Windows 10 Mobile.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MCSF settings not supported in Windows Provisioning](p_phcustomization.mcsf_settings_not_supported_in_windows_provisioning)</p></td>
+<td><p>[MCSF settings not supported in Windows Provisioning](https://msdn.microsoft.com/library/windows/hardware/mt573153)</p></td>
 <td><p>The following tables list the runtime and image time settings that were available in Windows Phone 8.1 but are not supported in the Windows Provisioning framework. You must use MCSF and [Customization answer files](customization-answer-file.md) to configure the values for these settings.</p></td>
 </tr>
 <tr class="odd">

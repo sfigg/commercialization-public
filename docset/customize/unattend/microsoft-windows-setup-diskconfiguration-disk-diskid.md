@@ -42,7 +42,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfigurationdisk.md) | **DiskID**
+[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | [DiskConfiguration](microsoft-windows-setup-diskconfiguration.md) | [Disk](microsoft-windows-setup-diskconfiguration-disk.md) | **DiskID**
 
 ## Applies To
 
@@ -174,7 +174,7 @@ For full XML examples and recommended partition configurations, see [How to Conf
 ## Related topics
 
 
-[Disk](microsoft-windows-setup-diskconfigurationdisk.md)
+[Disk](microsoft-windows-setup-diskconfiguration-disk.md)
 
  
 

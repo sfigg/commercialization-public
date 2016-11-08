@@ -31,7 +31,7 @@ For more information about setting up accelerators, see the MSDN Topic, [OpenSer
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Accelerator](microsoft-windows-ie-internetexploreracceleratorsaccelerator.md)</p></td>
+<td><p>[Accelerator](microsoft-windows-ie-internetexplorer-accelerators-accelerator.md)</p></td>
 <td><p>Contains the settings used to specify a shortcut to an Accelerator in the <strong>Accelerators</strong> menu.</p></td>
 </tr>
 </tbody>

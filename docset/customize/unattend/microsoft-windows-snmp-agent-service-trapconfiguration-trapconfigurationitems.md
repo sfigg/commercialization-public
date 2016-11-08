@@ -27,11 +27,11 @@ You can use this setting in core installations of Windows Server 2008, Windows 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Community_Name](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitemscommunity-name.md)</p></td>
+<td><p>[Community_Name](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-community-name.md)</p></td>
 <td><p>Specifies the name of the community to which Simple Network Management Protocol (SNMP) sends traps.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Traps](microsoft-windows-snmp-agent-servicetrapconfigurationtrapconfigurationitemstraps.md)</p></td>
+<td><p>[Traps](microsoft-windows-snmp-agent-service-trapconfiguration-trapconfigurationitems-traps.md)</p></td>
 <td><p>Specifies the IP addresses to which SNMP sends traps.</p></td>
 </tr>
 </tbody>

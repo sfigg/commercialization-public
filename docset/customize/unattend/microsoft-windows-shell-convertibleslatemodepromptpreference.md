@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # ConvertibleSlateModePromptPreference
 
 
-Configure `ConvertibleSlateModePromptPreference` to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md). OEMs must make sure that `ConvertibleSlateMode` is always accurate for their devices.
+Configure `ConvertibleSlateModePromptPreference` to support prompts triggered by changes to [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md). OEMs must make sure that `ConvertibleSlateMode` is always accurate for their devices.
 
 OEMs can configure `ConvertibleSlateModePromptPreference` to support Continuum, which is a new, adaptive user experience in Windows 10 that optimizes the look and behavior of apps and the Windows UI for a given physical form factor and the customer's usage preferences. OEMs can also configure their devices to boot straight into tablet mode using [SignInMode](microsoft-windows-shell-signinmode.md). In addition, OEMs may also specify the device form factor by setting [DeviceForm](microsoft-windows-deployment-deviceform.md). For more information about Continuum, partners can download the "Windows 10 Continuum whitepaper" through the Microsoft Connect site.
 
@@ -73,7 +73,7 @@ For a list of the Windows editions and architectures that this component support
 
 [Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons-win8-microsoft-windows-gpiobuttons.md)
 
-[ConvertibleSlateMode](microsoft-windowsgpiobuttonsconvertibleslatemode.md)
+[ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)
 
 [SignInMode](microsoft-windows-shell-signinmode.md)
 
