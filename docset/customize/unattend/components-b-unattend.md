@@ -356,10 +356,6 @@ The following components are deprecated in Windows 10 and Windows Server 2016.
 <td><p>[microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md)</p></td>
 <td><p>Deprecated. Do not use.</p></td>
 </tr>
-<tr class="even">
-<td><p>[Microsoft-Windows-Sidebar](microsoft-windows-sidebar.md)</p></td>
-<td><p>Deprecated. Gadgets are not available in Windows 8.</p></td>
-</tr>
 <tr class="odd">
 <td><p>UDDI-Setup</p></td>
 <td><p>Removed. Do not use.</p></td>
