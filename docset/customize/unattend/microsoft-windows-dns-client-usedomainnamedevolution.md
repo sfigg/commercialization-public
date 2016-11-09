@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md).
 
 ## XML Example
 
@@ -91,7 +91,7 @@ The following XML output specifies a DNS domain configuration for Fabrikam.
 ## Related topics
 
 
-[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client-win7-microsoft-windows-dns-client.md)
+[Microsoft-Windows-DNS-Client](microsoft-windows-dns-client.md)
 
  
 

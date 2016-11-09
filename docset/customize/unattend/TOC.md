@@ -310,7 +310,7 @@
 #### [FindProvidersURL](microsoft-windows-ie-internetexplorer-findprovidersurl.md)
 #### [GroupTabs](microsoft-windows-ie-internetexplorer-grouptabs.md)
 #### [Help_Page](help-page-win7-microsoft-windows-ie-internetexplorer-help-page.md)
-#### [Home_Page](home-page-win7-microsoft-windows-ie-internetexplorer-home-page.md)
+#### [Home_Page](microsoft-windows-ie-internetexplorer-home-page.md)
 #### [InstalledBHOList](microsoft-windows-ie-internetexplorer-installedbholist.md)
 ##### [AddonGuidItem](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem.md)
 ###### [AddonGuid](microsoft-windows-ie-internetexplorer-installedbholist-addonguiditem-addonguid.md)

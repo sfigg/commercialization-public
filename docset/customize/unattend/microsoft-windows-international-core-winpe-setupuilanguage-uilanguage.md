@@ -53,7 +53,7 @@ windowsPE
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe---win7-microsoft-windows-international-core-winpe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md).
 
 ## XML Example
 

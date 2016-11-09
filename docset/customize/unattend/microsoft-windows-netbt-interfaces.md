@@ -46,12 +46,12 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-netbt-](microsoft-windows-netbt.md).
 
 ## XML Example
 
 
-The following XML output shows how to configure [microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md).
+The following XML output shows how to configure [microsoft-windows-netbt-](microsoft-windows-netbt.md).
 
 ``` syntax
 <Interfaces>
@@ -69,7 +69,7 @@ The following XML output shows how to configure [microsoft-windows-netbt-](micro
 ## Related topics
 
 
-[microsoft-windows-netbt-](microsoft-windows-netbt--win7-microsoft-windows-netbt.md)
+[microsoft-windows-netbt-](microsoft-windows-netbt.md)
 
  
 

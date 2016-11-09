@@ -137,7 +137,7 @@ The following table describes these settings:
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Home_Page](home-page-win7-microsoft-windows-ie-internetexplorer-home-page.md)</p></td>
+<td><p>[Home_Page](microsoft-windows-ie-internetexplorer-home-page.md)</p></td>
 <td><p>Specifies the URL for the default home page.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>

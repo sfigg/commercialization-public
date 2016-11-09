@@ -57,7 +57,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager-win7-microsoft-windows-partitionmanager.md)
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager.md)
 
 ## XML Example
 
@@ -71,7 +71,7 @@ The following XML output shows how to configure the SAN policy to mount all avai
 ## Related topics
 
 
-[Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager-win7-microsoft-windows-partitionmanager.md)
+[Microsoft-Windows-PartitionManager](microsoft-windows-partitionmanager.md)
 
  
 

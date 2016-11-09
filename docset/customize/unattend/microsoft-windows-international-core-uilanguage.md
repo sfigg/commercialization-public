@@ -56,7 +56,7 @@ specialize
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-International-Core](microsoft-windows-international-core.md).
 
 ## XML Example
 
@@ -73,7 +73,7 @@ The following example shows how to set the UI language to German (Germany).
 ## Related topics
 
 
-[Microsoft-Windows-International-Core](microsoft-windows-international-core-win7-microsoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

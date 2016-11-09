@@ -53,7 +53,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol.md).
 
 ## XML Example
 
@@ -67,7 +67,7 @@ The following XML output specifies that volume controls are not available when t
 ## Related topics
 
 
-[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol-win7-microsoft-windows-audio-volumecontrol.md)
+[Microsoft-Windows-Audio-VolumeControl](microsoft-windows-audio-volumecontrol.md)
 
  
 
