@@ -29,7 +29,7 @@ Node for setting device account information. A device account is a Microsoft Exc
 3.  Execute ValidateAndCommit to validate the specified username and password combination against Azure AD.
 4.  Get the ErrorContext in case something goes wrong during validation
 
-**Note**  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
+> **Note**  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
  
 

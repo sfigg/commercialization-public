@@ -42,8 +42,6 @@ Here's how we'll refer to them:
 
 3.  [IoT Core .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53898). The .iso package adds the IoT Core packages and feature manifests used to create IoT Core images. You'll need to sign in with your Microsoft account. By default, these packages are installed to **C:\\Program Files (x86)\\Windows Kits\\10\\MSPackages\\Retail**.
 
-    - Optional: [IoT Core Pro .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53899)
-
 4.  [IoT Core ADK Add-Ons](https://github.com/ms-iot/iot-adk-addonkit/).  Click **Clone or Download** > **Download ZIP**, and extract it to a folder, for example, **C:\\IoT-ADK-AddonKit**. This kit includes the sample scripts and base structures you'll use to create your image. To learn about the contents, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md)).
 
 5.  [Windows 10 IoT Core Dashboard](http://go.microsoft.com/fwlink/p/?LinkId=708576).
@@ -53,6 +51,10 @@ Other helpful software:
 -   **A text editor such as Notepad++**. You can also use the Notepad tool, though for some files, you won't see the line breaks unless you open each file as a UTF-8 file.
 
 -   **A compression program such as 7-Zip**, which can uncompress Windows app packages.
+
+-   [Visual Studio 2015](http://go.microsoft.com/fwlink/?LinkId=715695), used to create an app in [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
+
+-   [IoT Core Pro .iso package](https://www.microsoft.com/download/confirmation.aspx?id=53899): Used to change the automatic update settings (referenced in [Lab 1d: Add provisioning package settings to an image](add-a-provisioning-package-to-an-image.md).)
 
 ## <span id="Other_software"></span><span id="other_software"></span><span id="OTHER_SOFTWARE"></span>Other software
 

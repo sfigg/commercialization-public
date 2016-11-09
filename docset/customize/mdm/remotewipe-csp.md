@@ -39,7 +39,7 @@ The remote wipe command is sent as an XML provisioning file to the device. Since
 
 In Windows 10 Mobile, the remote wipe command is implemented on the device by using the **ResetPhone** function. On the desktop, the remote wipe triggers the **Reset this PC** functionality with the **Remove everything** option.
 
-**Note**  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
+> **Note**  On the desktop, the remote wipe effectively performs a factory reset and the PC does not retain any information about the command once the wipe completes. Any response from the device about the actual status or result of the command may be inconsistent and unreliable because the MDM information has been removed.
 
  
 
