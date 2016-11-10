@@ -49,16 +49,14 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     copype amd64 C:\WinPE_amd64
     ```
 
-## <span id="Install_Windows_PE"> Install Windows PE to the Media
+## <span id="Install_Windows_PE"></span> Install Windows PE to the Media
 
 1.  Use DiskPart to prepare the partitions.
 
     **Note**  
     The following commands prepare a USB hard drive that can boot on either a BIOS-based or UEFI-based PC.
 
-    On UEFI-based PCs, Windows PE requires a boot partition formatted using the FAT32 file format, which only supports file sizes up to 4 GB. We recommend creating a separate partition on the drive, formatted using NTFS, so that you can store Windows images and other large files. To learn more, see [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md).
-
-     
+    On UEFI-based PCs, Windows PE requires a boot partition formatted using the FAT32 file format, which only supports file sizes up to 4 GB. We recommend creating a separate partition on the drive, formatted using NTFS, so that you can store Windows images and other large files. To learn more, see [WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md). 
 
     ``` syntax
     diskpart
@@ -97,7 +95,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
 
      
 
-## <span id="Boot_to_Windows_PE"> Boot to Windows PE
+## <span id="Boot_to_Windows_PE"></span> Boot to Windows PE
 
 1.  Connect the device (internal or external USB hard drive) into the PC you want to work on.
 
@@ -109,7 +107,7 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     Windows PE starts automatically. After the command window appears, the wpeinit command runs automatically. This might take a few minutes.
 
 	
-## <span id="Troubleshooting"> Troubleshooting
+## <span id="Troubleshooting"></span>o Troubleshooting
 
 1.  If the PC does not boot, try the following steps in sequence, and try to boot the PC after each step:
 

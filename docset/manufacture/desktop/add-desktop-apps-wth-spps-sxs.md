@@ -68,9 +68,13 @@ To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsof
 1.  Add a setting. For instance, add your Windows Store Program ID into the Windows registry:
 
     a.  Start 'regedit'.
+
     b.  Navigate to 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store'.
+
     c.  Click **Edit > New > String Value**.
+
     d.  Depending on your type of agreement, type `OEMID` or `StoreContentModifier`.
+
     e.  Double-click either OEMID or StoreContentModifier, and in **Value**, type your Windows Store Program ID.
 
 2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
@@ -87,8 +91,10 @@ To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsof
 
 1.  Install a Windows desktop application. For example, to install Office 2016.
 
-    a.  On your technician PC, mount ISO for the deployment tool from " X21-05453 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-05495 SW DVD5 Office 2016 v16.2 Deployment Tool for OEM\X21-05495.img" 
+    a.  On your technician PC, mount ISO for the deployment tool from " X21-05453 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-05495 SW DVD5 Office 2016 v16.2 Deployment Tool for OEM\X21-05495.img"
+
     b.  Copy files from mounted drive to USB-B (where E:\ is driver letter for USB-B) E:\OfficeV16.2
+    
     c.  Double click e:\Officev16.2\officedeploymenttool.exe
 
 

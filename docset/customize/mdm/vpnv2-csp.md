@@ -130,7 +130,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/WebProxyServers**  
 Optional. Web Proxy Server IP address if you are redirecting traffic through your intranet.
 
-**Note**  Currently only one web proxy server is supported.
+> **Note**  Currently only one web proxy server is supported.
 
  
 
@@ -158,7 +158,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-trafficfilterlist"></a>**VPNv2/***ProfileName***/TrafficFilterList**  
 An optional node that specifies a list of rules. Only traffic that matches these rules can be sent via the VPN Interface.
 
-**Note**  Once a TrafficFilterList is added, all traffic are blocked other than the ones matching the rules.
+> **Note**  Once a TrafficFilterList is added, all traffic are blocked other than the ones matching the rules.
 
  
 
@@ -197,7 +197,7 @@ Value type is int. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localportranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/LocalPortRanges**  
 A list of comma separated values specifying local port ranges to allow. For example, `100-120, 200, 300-320`.
 
-**Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
+> **Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
 
  
 
@@ -206,7 +206,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteportranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/RemotePortRanges**  
 A list of comma separated values specifying remote port ranges to allow. For example, `100-120, 200, 300-320`.
 
-**Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
+> **Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
 
  
 
@@ -247,7 +247,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-alwayson"></a>**VPNv2/***ProfileName***/AlwaysOn**  
 An optional flag to enable Always On mode. This will automatically connect the VPN at sign-in and will stay connected until the user manually disconnects.
 
-**Note**  Always On only works for the active profile. Always On cannot be set with force tunnel. The first profile provisioned that can be auto triggered will automatically be set as active.
+> **Note**  Always On only works for the active profile. Always On cannot be set with force tunnel. The first profile provisioned that can be auto triggered will automatically be set as active.
 
  
 
