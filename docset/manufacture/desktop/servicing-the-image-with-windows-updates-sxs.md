@@ -52,7 +52,7 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 	
 **Step 3: Add a Windows update package**
 
-1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the (Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
+1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
 
 2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
 
