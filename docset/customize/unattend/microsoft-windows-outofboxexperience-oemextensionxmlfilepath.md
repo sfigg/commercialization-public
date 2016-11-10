@@ -50,7 +50,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-OutOfBoxExperience](mmicrosoft-windows-outofboxexperience.md) | **OemExtensionXmlFilePath**
+[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md) | **OemExtensionXmlFilePath**
 
 ## Applies To
 

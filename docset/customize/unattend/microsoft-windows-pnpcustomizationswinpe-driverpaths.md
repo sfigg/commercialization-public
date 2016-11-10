@@ -43,7 +43,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-pnpcustomizationswinpe-](mmicrosoft-windows-pnpcustomizationswinpe.md) | **DriverPaths**
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md) | **DriverPaths**
 
 ## Applies To
 

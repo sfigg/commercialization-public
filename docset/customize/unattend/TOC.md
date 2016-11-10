@@ -970,7 +970,7 @@
 ##### [ShowMediaCenter](microsoft-windows-shell-setup-windowsfeatures-showmediacenter.md)
 ##### [ShowWindowsMediaPlayer](microsoft-windows-shell-setup-windowsfeatures-showwindowsmediaplayer.md)
 #### [SignInMode](microsoft-windows-shell-signinmode.md)
-### [Microsoft-Windows-shwebsvc](mmicrosoft-windows-shwebsvc.md)
+### [Microsoft-Windows-shwebsvc](microsoft-windows-shwebsvc.md)
 #### [Description](microsoft-windows-shwebsvc-description.md)
 #### [DisplayName](microsoft-windows-shwebsvc-displayname.md)
 #### [href](microsoft-windows-shwebsvc-href.md)

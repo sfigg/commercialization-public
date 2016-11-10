@@ -66,7 +66,7 @@ The following XML output disables the Windows Firewall.
 ## Related topics
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md)
+[microsoft-windows-setup-](microsoft-windows-setup.md)
 
  
 

@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ESC](mmicrosoft-windows-ie-esc.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md).
 
 ## XML Example
 

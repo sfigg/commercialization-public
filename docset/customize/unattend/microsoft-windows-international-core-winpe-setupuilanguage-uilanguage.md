@@ -71,7 +71,7 @@ The following example shows how to configure the Windows Setup UI language to d
 
 [microsoft-windows-international-core-winpe--](microsoft-windows-international-core-winpe.md)
 
-[Microsoft-Windows-International-Core](mmicrosoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

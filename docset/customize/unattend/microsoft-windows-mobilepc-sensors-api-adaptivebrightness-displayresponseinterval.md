@@ -63,7 +63,7 @@ This XML example shows how to set the minimum time between changes in display br
 ## Related topics
 
 
-[microsoft-windows-mobilepc-sensors-api-](mmicrosoft-windows-mobilepc-sensors-api.md)
+[microsoft-windows-mobilepc-sensors-api-](microsoft-windows-mobilepc-sensors-api.md)
 
 [IlluminanceChangeSensitivity](microsoft-windows-mobilepc-sensors-api-adaptivebrightness-illuminancechangesensitivity.md)
 

@@ -79,7 +79,7 @@ The following example shows how to set the fallback language to US English (Unit
 ## Related topics
 
 
-[Microsoft-Windows-International-Core](mmicrosoft-windows-international-core.md)
+[Microsoft-Windows-International-Core](microsoft-windows-international-core.md)
 
  
 

@@ -69,7 +69,7 @@ The following XML output shows how to configure the **Online Support** icon to p
 ## Related topics
 
 
-[Microsoft-Windows-DiagCpl](mmicrosoft-windows-diagcpl.md)
+[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md)
 
  
 

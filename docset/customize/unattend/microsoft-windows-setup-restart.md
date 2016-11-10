@@ -47,7 +47,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](mmicrosoft-windows-setup.md) | **Restart**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | **Restart**
 
 ## Applies To
 

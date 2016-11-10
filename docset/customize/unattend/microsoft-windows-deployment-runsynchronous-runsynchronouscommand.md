@@ -68,7 +68,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Deployment](mmicrosoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | **RunSynchronousCommand**
+[Microsoft-Windows-Deployment](microsoft-windows-deployment.md) | [RunSynchronous](microsoft-windows-deployment-runsynchronous.md) | **RunSynchronousCommand**
 
 ## Applies To
 

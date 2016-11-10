@@ -48,7 +48,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[microsoft-windows-ie-clientnetworkprotocolimplementation-](mmicrosoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMProxyServer**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMProxyServer**
 
 ## Applies To
 

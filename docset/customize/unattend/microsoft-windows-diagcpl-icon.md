@@ -70,7 +70,7 @@ The following XML output shows how to configure the **Additional Information** i
 ## Related topics
 
 
-[Microsoft-Windows-DiagCpl](mmicrosoft-windows-diagcpl.md)
+[Microsoft-Windows-DiagCpl](microsoft-windows-diagcpl.md)
 
  
 

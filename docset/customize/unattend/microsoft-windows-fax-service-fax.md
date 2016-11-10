@@ -49,7 +49,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](mmicrosoft-windows-fax-service.md) | **Fax**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | **Fax**
 
 ## Applies To
 

@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](mmicrosoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefax_unattend.md) | **FaxPrinterIsShared**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefax_unattend.md) | **FaxPrinterIsShared**
 
 ## Applies To
 

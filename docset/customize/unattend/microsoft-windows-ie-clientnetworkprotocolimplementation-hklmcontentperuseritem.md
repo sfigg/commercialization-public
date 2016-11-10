@@ -45,7 +45,7 @@ oobeSystem
 ## Parent Hierarchy
 
 
-[microsoft-windows-ie-clientnetworkprotocolimplementation-](mmicrosoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMContentPerUserItem**
+[microsoft-windows-ie-clientnetworkprotocolimplementation-](microsoft-windows-ie-clientnetworkprotocolimplementation.md) | **HKLMContentPerUserItem**
 
 ## Applies To
 
