@@ -221,7 +221,7 @@
 ### [Enterprise shared storage](customize/mobile/enterprise-shared-storage.md)
 
 ## [Customize using the mobile MCSF framework](customize/mobile/provisioning-and-customization.md)
-### [Managed Centralized Settings Framework (MCSF)](customize/mobile/managed-centralized-settings-framework--mcsf-.md)
+### [Managed Centralized Settings Framework (MCSF)](customize/mobile/managed-centralized-settings-framework-mcsf-.md)
 ### [Customization answer file](customize/mobile/customization-answer-file.md)
 ### [MCSF to Windows Provisioning settings map](customize/mobile/mcsf-to-windows-provisioning-settings-map.md)
 ### [MCSF settings not supported in Windows Provisioning](customize/mobile/mcsf-settings-not-supported-in-windows-provisioning.md)
@@ -335,7 +335,7 @@
 #### [Reset the audio volume limitation and warning](customize/mobile/reset-the-audio-volume-limitation-and-warning.md)
 #### [Settings for capture mode, burst support, and burst storage duration](customize/mobile/settings-for-capture-mode-burst-support-and-burst-storage-duration.md)
 ### [Customizations for Settings](customize/mobile/customizations-for-settings.md)
-#### [Start + theme settings: Enabling dark mode](customize/mobile/start---theme-settings--enabling-dark-mode.md)
+#### [Start + theme settings: Enabling dark mode](customize/mobile/start-theme-settings-enabling-dark-mode.md)
 #### [Start + theme settings: Warning about light theme for AMOLED and OLED screens](customize/mobile/warning-about-light-theme-for-amoled-and-oled-screens.md)
 #### [Ringtones + sounds settings: Additional alarms](customize/mobile/additional-alarms.md)
 #### [Ringtones + sounds settings: Additional notification sounds](customize/mobile/additional-notification-sounds.md)
