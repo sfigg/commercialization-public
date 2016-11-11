@@ -776,7 +776,6 @@
 ######## [SquareOrDesktopTile12](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-quareordesktoptile12.md)
 ######### [AppIdOrPath](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12-appidorpath.md)
 ######### [FirstRunTask](Microsoft-Windows-Shell-Setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12-firstruntask.md)
-
 ######## [SquareTile1](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile1.md)
 ######### [AppId](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile1-appid.md)
 ######### [FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile1-firstruntask.md)
@@ -813,7 +812,6 @@
 ######## [SquareTile12](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12.md)
 ######### [AppId](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12-appid.md)
 ######### [FirstRunTask](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile12-firstruntask.md)
-
 ####### [WideTiles](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles.md)
 ######## [WideTile1](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile1.md)
 ######### [AppId](microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-widetiles-widetile1-appid.md)
@@ -873,7 +871,6 @@
 ###### [SquareTile1](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1.md)
 ####### [AppId](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1-appid.md)
 ####### [FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile1-firstruntask.md)
-
 ####### [FirstRunTask](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile12-firstruntask.md)
 ###### [SquareTile2](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile2.md)
 ####### [AppId](microsoft-windows-shell-setup-starttiles-squaretiles-squaretile2-appid.md)
@@ -1187,7 +1184,7 @@
 #### [DisableAntiSpyware](security-malware-windows-defender-disableantispyware.md)
 #### [EnableRemoteManagedDefaults](security-malware-windows-defender-enableremotemanageddefaults.md)
 #### [FallbackOrder](security-malware-windows-defender-fallbackorder.md)
-#### [Scan(security-malware-windows-defender-scan.md)
+#### [Scan](security-malware-windows-defender-scan.md)
 ##### [ScanParameters](security-malware-windows-defender-scanscanparameters.md)
 ##### [ScheduleDay](security-malware-windows-defender-scanscheduleday.md)
 ##### [ScheduleTime](security-malware-windows-defender-scanscheduletime.md)
