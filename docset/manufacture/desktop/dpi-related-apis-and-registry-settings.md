@@ -13,6 +13,8 @@ If you need to perform deployment customizations, the following sections explain
 
 **In this topic:**
 
+-   [System vs. per-monitor DPI awareness](#awareness)
+
 -   [Primary display native resolution](#native)
 
 -   [Primary display DPI scale factor](#scale)
@@ -26,6 +28,12 @@ If you need to perform deployment customizations, the following sections explain
 -   [Simplest mitigation for 125% displays](#onetwentyfive)
 
 -   [Mitigation for 150% displays](#onefifty)
+
+## <span id="awareness"></span><span id="AWARENESS"></span>System vs. per-monitor DPI awareness
+
+Windows defines two distinct categories of DPI scaling – system DPI and display DPI. System DPI – also known as “primary display” DPI – represents the DPI value of the primary display when the Windows session was started. Windows 10 Anniversary Update supports display or per-monitor DPI settings, which can differ from the baseline system DPI and can be set individually for each connected monitor. Therefore, for a user with multiple monitors, or for a user who manually changes the DPI settings of their primary display during a Windows session, querying the system DPI will not return useful results. To obtain the set display DPI from any specific monitor, use the GetDpiForMonitor() function.
+Processes which are System DPI aware base their DPI scaling on the system DPI, and do not support a per-monitor DPI value (and therefore will not adjust their scaling based on the display). Any DPI query they make will always return the system DPI value, which may not correspond with any current display DPI. Only processes which are Per-Monitor DPI aware have access to individual display DPIs, and can automatically scale based on the individual DPI of the display on which they are viewed.
+For more information about DPI awareness modes, see the [documentation for developing High PDI applications.](https://msdn.microsoft.com/library/windows/desktop/dd464646.aspx)
 
 ## <span id="native"></span><span id="NATIVE"></span>Primary display native resolution
 
@@ -218,7 +226,7 @@ These results are returned in a coordinate system in which 96 corresponds to 100
  
 
 **Note**  
-This API will always return 96 unless the tool that calls it is registered as DPI-aware. This requires adding the following XML to the manifest for the utility program.
+This API will always return 96 unless the process that calls it is per-monitor DPI-aware. This requires adding the following XML to the manifest for the utility program.
 
  
 
