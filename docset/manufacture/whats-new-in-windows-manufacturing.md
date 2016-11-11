@@ -23,7 +23,7 @@ To update install the latest updates:
 
 -  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
 
-   To learn more about applying updates, see [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md) and [Lab 10: Update the recovery image](update-the-recovery-image.md).
+   To learn more about applying updates, see [Lab 4: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 10: Update the recovery image](desktop/update-the-recovery-image.md).
 
 The SSU:KB3199209 addresses two issues:
  
