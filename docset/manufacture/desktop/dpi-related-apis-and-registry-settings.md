@@ -25,9 +25,6 @@ If you need to perform deployment customizations, the following sections explain
 
 -   [System-wide scale factor in Windows 8 scaling mode](#system)
 
--   [Simplest mitigation for 125% displays](#onetwentyfive)
-
--   [Mitigation for 150% displays](#onefifty)
 
 ## <span id="awareness"></span><span id="AWARENESS"></span>System vs. per-monitor DPI awareness
 
@@ -390,24 +387,6 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
 </table>
 
  
-
-## <span id="onetwentyfive"></span><span id="ONETWENTYFIVE"></span>Simplest mitigation for 125% displays
-
-
-The simplest generic fix is to place the system in single-scale-factor mode with a scale factor of 125%. This is not recommended unless the enterprise environment includes a large number of apps that aren’t DPI-aware and that scale poorly at 125%. In pseudo-code this would look something like this:
-
-``` syntax
-If (verticalResolution < 1080) and (DPI == 125%)
-Set HKCU\...\Win8DPIScaling to 1
-Set HKCU\...\LogPixels to 120
-Require logoff/logon
-```
-
-## <span id="onefifty"></span><span id="ONEFIFTY"></span>Mitigation for 150% displays
-
-
-For more pixel-dense displays, the same approach can be used as described in the previous section. This is not recommended as a general practice; in addition to disabling the Windows 8.1 DPI feature benefits, it also results in making display content significantly smaller than optimal. As a result, we recommend that only users customize their DPI scaling on these devices.
-
 ## <span id="related_topics"></span>Related topics
 
 
