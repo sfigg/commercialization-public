@@ -13,8 +13,6 @@ If you need to perform deployment customizations, the following sections explain
 
 **In this topic:**
 
--   [System vs. per-monitor DPI awareness](#awareness)
-
 -   [Primary display native resolution](#native)
 
 -   [Primary display DPI scale factor](#scale)
@@ -25,14 +23,6 @@ If you need to perform deployment customizations, the following sections explain
 
 -   [System-wide scale factor in Windows 8 scaling mode](#system)
 
-
-## <span id="awareness"></span><span id="AWARENESS"></span>System vs. per-monitor DPI awareness
-
-Windows defines two distinct categories of DPI scaling – system DPI and display DPI. System DPI – also known as “primary display” DPI – represents the DPI value of the primary display when the Windows session was started. Windows 10 Anniversary Update supports display or per-monitor DPI settings, which can differ from the baseline system DPI and can be set individually for each connected monitor. Therefore, for a user with multiple monitors, or for a user who manually changes the DPI settings of their primary display during a Windows session, querying the system DPI will not return useful results. To obtain the set display DPI from any specific monitor, use the [GetDpiForMonitor()](https://msdn.microsoft.com/library/windows/desktop/dn280510.aspx) function.
-
-Processes which are System DPI aware base their DPI scaling on the system DPI, and do not support a per-monitor DPI value (and therefore will not adjust their scaling based on the display). Any DPI query they make will always return the system DPI value, which may not correspond with any current display DPI. Only processes which are Per-Monitor DPI aware have access to individual display DPIs, and can automatically scale based on the individual DPI of the display on which they are viewed.
-
-For more information about DPI awareness modes, see the [documentation for developing High PDI applications.](https://msdn.microsoft.com/library/windows/desktop/dd464646.aspx)
 
 ## <span id="native"></span><span id="NATIVE"></span>Primary display native resolution
 
@@ -225,17 +215,14 @@ These results are returned in a coordinate system in which 96 corresponds to 100
  
 
 **Note**  
-This API will always return 96 unless the process that calls it is per-monitor DPI-aware. This requires adding the following XML to the manifest for the utility program.
+This API will return different results depending on the DPI awareness mode of your application. Configuring the awareness mode requires adding XML to the application manifest, as detailed below:
 
- 
+| DPI Awareness Mode | Manifest Setting | Returned Value |
+| ------------------ | ---------------- | -------------- |
+| None               | None             |  96 for all displays, regardless of the scale factor |
+| System DPI Aware      | <dpiAware>True</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows) |
+| Per-Monitor DPI Aware | <dpiAware>True/PM</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows). To obtain the DPI of the display that the application is located on, use [GetWindowDpi()](https://msdn.microsoft.com/en-us/library/windows/desktop/mt748624.aspx) or [GetDpiForMonitor()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280510.aspx) |
 
-``` syntax
-<asmv3:application>
-    <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
-      <dpiAware>Per monitor</dpiAware>
-    </asmv3:windowsSettings>
-  </asmv3:application>
-```
 
 For more information about this manifest setting, see [SetProcessDPIAware function](http://go.microsoft.com/fwlink/p/?linkid=331146).
 
@@ -389,6 +376,7 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
  
 ## <span id="related_topics"></span>Related topics
 
+[Documentation for developing High DPI applications](https://msdn.microsoft.com/library/windows/desktop/dd464646.aspx)
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 
