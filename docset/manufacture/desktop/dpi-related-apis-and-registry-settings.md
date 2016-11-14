@@ -220,8 +220,8 @@ This API will return different results depending on the DPI awareness mode of yo
 | DPI Awareness Mode | Manifest Setting | Returned Value |
 | ------------------ | ---------------- | -------------- |
 | None               | None             |  96 for all displays, regardless of the scale factor |
-| System DPI Aware      | <dpiAware>True</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows) |
-| Per-Monitor DPI Aware | <dpiAware>True/PM</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows). To obtain the DPI of the display that the application is located on, use [GetWindowDpi()](https://msdn.microsoft.com/en-us/library/windows/desktop/mt748624.aspx) or [GetDpiForMonitor()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280510.aspx) |
+| System DPI Aware      | \<dpiAware>True</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows) |
+| Per-Monitor DPI Aware | \<dpiAware>True/PM</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows). To obtain the DPI of the display that the application is located on, use [GetWindowDpi()](https://msdn.microsoft.com/en-us/library/windows/desktop/mt748624.aspx) or [GetDpiForMonitor()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280510.aspx) |
 
 
 For more information about this manifest setting, see [SetProcessDPIAware function](http://go.microsoft.com/fwlink/p/?linkid=331146).
