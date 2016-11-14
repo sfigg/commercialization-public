@@ -251,7 +251,7 @@ The **Control Panel\\ Appearance and Personalization\\Display** user interface (
 </tr>
 <tr class="even">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior.Content that is moved from one display to another might be the wrong size</p></td>
+<td align="left"><p>Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior. Content that is moved from one display to another might be the wrong size.</p></td>
 </tr>
 </tbody>
 </table>
