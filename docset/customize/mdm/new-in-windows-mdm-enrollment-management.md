@@ -1433,7 +1433,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Device update management](device-update-management.md)</td>
-<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows-10-version-1607-for-update-management). Added the new policies added in Windows 10, version 1607.</p></td>
+<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). Added the new policies added in Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>
