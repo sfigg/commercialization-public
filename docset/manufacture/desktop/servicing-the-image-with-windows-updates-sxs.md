@@ -16,7 +16,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
 
--  **Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required** before applying the most recent General Distribution Release (GDR, currently 10D:KB3197954) or any future GDRs.
+-  **Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required** before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
