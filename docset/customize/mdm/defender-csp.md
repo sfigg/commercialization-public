@@ -296,6 +296,10 @@ Supported operation is Get.
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
 
+Valid values are:
+- 1 - quick scan
+- 2 - full scan
+
 Supported operations are Get and Execute.
 
 <a href="" id="updatesignature"></a>**UpdateSignature**  
