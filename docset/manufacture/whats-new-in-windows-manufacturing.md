@@ -13,11 +13,11 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **November 11, 2016**
 
-Servicing Stack Update (SSU):KB3199209 is required before applying the most recent General Distribution Release (GDR, currently 10D:KB3197954) or any future GDRs.
+Servicing Stack Update (SSU):KB3199209 is required before applying the most recent General Distribution Release (GDR, currently KB 3200970) or any future GDRs.
 
 To update install the latest updates: 
 
--  Download [SSU:KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) (currently [GDR 10D:KB3197954](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3197954)), from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
+-  Download [SSU:KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) (currently [KB 3200970](http://www.catalog.update.microsoft.com/Search.aspx?q=3200970)), from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
 
 -  Apply this SSU, and then apply the latest GDR, into both Windows and WinRE.
 
@@ -31,9 +31,9 @@ The SSU:KB3199209 addresses two issues:
 
 2.	Push-button reset failure to keep OEM pre-installed GDRs:
 
-    1.	Half of the fix which allows GDRs marked as permanent using /ResetBase to come back after PBR – This requires injecting the SSU into the Windows image
+    1.	Half of the fix requires injecting the SSU into the Windows image: This part allows GDRs marked as permanent using /ResetBase to come back after PBR. 
 
-    2.	10D includes the other half of the fix for the PBR ”permanent” GDR issue, and needs to be injected into winre.wim.
+    2.	The other half of the fix requires injecting the GDR into WinRE.wim.
 
 **September 30, 2016**
 
