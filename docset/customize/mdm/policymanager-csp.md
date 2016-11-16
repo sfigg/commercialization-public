@@ -670,18 +670,18 @@ An XML blob that specifies the application restrictions company want to put to t
  
 
 > **Note**  List of known issues:
--   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inbox-apps) that you need to your list of allowed apps.
+-   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
 
     Here's additional guidance for the upgrade process:
 
-    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inbox-apps).
+    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inboxappsandcomponents).
     -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows Phone 8.1 publisher if you are using it.
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
 
     For a sample SyncML, see [Examples](#examples).
 
--   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inbox-apps).
+-   You cannot disable or enable **Contact Support** and **Windows Feedback** apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inboxappsandcomponents).
 -   When ApplicationManagement/ApplicationRestrictions policy is deployed to Windows 10 Mobile, installation and update of apps dependent on Microsoft Frameworks may get blocked with error 0x80073CF9. To work around this issue, you must include the Microsoft Framework Id to your list of allowed apps.
 
     ``` syntax
@@ -764,7 +764,7 @@ Most restricted value is 0.
 ## Examples
 
 
-Here is an example SyncML for ApplicationRestrictions for adding all the inbox apps listed in [inbox apps](applocker-csp.md#inbox-apps).
+Here is an example SyncML for ApplicationRestrictions for adding all the inbox apps listed in [inbox apps](applocker-csp.md#inboxappsandcomponents).
 
 ``` syntax
 <SyncML>
