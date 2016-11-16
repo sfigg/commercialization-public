@@ -20,7 +20,7 @@ You should update your recovery image to ensure a consistent recovery experience
  **Notes**  
  -  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
 
--  Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required before applying the most recent General Distribution Release (GDR, currently 10D:KB3197954) or any future GDRs.
+-  Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
 
 ## <span id="Mount_the_Windows_image"></span>Step 1: Mount the Windows image
 
