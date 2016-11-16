@@ -910,4 +910,4 @@
 ### [Manage IoT Core device updates](service/iot/managing-iot-device-update.md)
 ### [Update IoT Core Apps](service/iot/updating-iot-core-apps.md)
 
-## [Dashboard Services](https://msdn.microsoft.com/library/windows/hardware/br230803.aspx)
+## [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/library/windows/hardware/mt786455.aspx)
