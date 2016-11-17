@@ -802,7 +802,6 @@ The following list shows the configuration service providers supported in Window
 | [wi-fi csp](wifi-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [windowslicensing csp](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
- 
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
 
@@ -812,7 +811,6 @@ The following list shows the configuration service providers supported in Window
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 
- 
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
 -   [APPLICATION CSP](application-csp.md)
@@ -834,7 +832,7 @@ The following list shows the configuration service providers supported in Window
 -   [Reboot CSP](reboot-csp.md)
 -   [RemoteWipe CSP](remotewipe-csp.md)
 -   [Reporting CSP](reporting-csp.md)
--   [RootCATrustedCertificates CSP](rootcatrustedcertificates-csp.md)
+-   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 

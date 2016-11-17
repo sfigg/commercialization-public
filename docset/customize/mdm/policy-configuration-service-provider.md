@@ -5547,7 +5547,7 @@ Footnote:
 -   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
 -   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)
 -   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)
--   [Camera/AllowCamera](#browser-allowcamera)
+-   [Camera/AllowCamera](#camera-allowcamera)
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
 -   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
 -   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
