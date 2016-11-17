@@ -529,11 +529,11 @@ The software version information from **DevDetail/SwV** does not match the versi
 
 ### <a href="" id="whitelist"></a>Upgrading Windows Phone 8.1 devices with app whitelisting using ApplicationRestriction policy has issues
 
--   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inbox-apps-and-components) that you need to your list of allowed apps.
+-   When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile using ApplicationRestrictions with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
 
     Here's additional guidance for the upgrade process:
 
-    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inbox-apps-and-components).
+    -   Use Windows 10 product IDs for the apps listed in [inbox apps](applocker-csp.md#inboxappsandcomponents).
     -   Use the new Microsoft publisher name (PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US") and Publisher="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" if you are using the publisher policy. Do not remove the Windows Phone 8.1 publisher rule if you are using it.
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
@@ -903,7 +903,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tbody>
 <tr class="odd">
 <td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-csp.md#inbox-apps-and-components):</p>
+<td style="vertical-align:top"><p>Added the following note the the list of [Inbox apps and components](applocker-csp.md#inboxappsandcomponents):</p>
 <div class="alert">
 <strong>Note</strong> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 </div>
@@ -1059,7 +1059,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <p>[PolicyManager CSP](policymanager-csp.md)</p></td>
 <td style="vertical-align:top"><p>Added the following note:</p>
 <ul>
-<li>You cannot disable or enable <strong>Contact Support</strong> and <strong>Windows Feedback</strong> apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inbox-apps-and-components).</li>
+<li>You cannot disable or enable <strong>Contact Support</strong> and <strong>Windows Feedback</strong> apps using ApplicationManagement/ApplicationRestrictions policy, although these are listed in the [inbox apps](applocker-csp.md#inboxappsandcomponents).</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -1087,7 +1087,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <div class="alert">
 <strong>Note</strong>  Since these policies are not blocked, you will not get a failure message when you use them to configure a Windows 10 Mobile Enterprise device. However, the policies will not take effect.
 </div>
-<p>Added additional information about update policies supported for Windows Update for Business in [Changes in Windows 10, version 1607 for update management](device-update-management.md#new-update-policies).</p></td>
+<p>Added additional information about update policies supported for Windows Update for Business in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement).</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -1433,7 +1433,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Device update management](device-update-management.md)</td>
-<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows-10-version-1607-for-update-management). Added the new policies added in Windows 10, version 1607.</p></td>
+<td style="vertical-align:top"><p>Added a new section, [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). Added the new policies added in Windows 10, version 1607.</p></td>
 </tr>
 </tbody>
 </table>

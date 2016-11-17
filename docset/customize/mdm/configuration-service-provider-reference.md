@@ -12,7 +12,7 @@ ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). For the list of new CSPs added in Windows 10, see [New CSPs added in Windows 10, Version 1511](#newcsps). See the [list of CSPs supported in Windows Holographic](#hololens) for additional information.
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). For the list of new CSPs added in Windows 10, see [New CSPs added in Windows 10, Version 1511](#newcsps). See the [list of CSPs supported in Windows Holographic](#hololens) and the [list of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport) for additional information.
 
 The following table show the configuration service providers supported in Windows 10.  
 
@@ -802,10 +802,8 @@ The following list shows the configuration service providers supported in Window
 | [wi-fi csp](wifi-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [windowslicensing csp](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
- 
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
-
 
 -   [AllJoynManagement CSP](alljoynmanagement-csp.md)
 -   [Maps CSP](maps-csp.md)
@@ -813,9 +811,30 @@ The following list shows the configuration service providers supported in Window
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 
- 
+## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
-
+-   [APPLICATION CSP](application-csp.md)
+-   [CertificateStore CSP](certificatestore-csp.md)
+-   [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
+-   [Defender CSP](defender-csp.md)
+-   [DevDetail CSP](devdetail-csp.md)
+-   [DeviceManageability CSP](devicemanageability-csp.md)
+-   [DeviceStatus CSP](devicestatus-csp.md)
+-   [DevInfo CSP](devinfo-csp.md)
+-   [DiagnosticLog CSP](diagnosticlog-csp.md)
+-   [DMAcc CSP](dmacc-csp.md)
+-   [DMClient CSP](dmclient-csp.md)
+-   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
+-   [HealthAttestation CSP](healthattestation-csp.md)
+-   [NodeCache CSP](nodecache-csp.md)
+-   [PassportForWork CSP](passportforwork-csp.md)
+-   [Policy CSP](policy-configuration-service-provider.md)
+-   [Reboot CSP](reboot-csp.md)
+-   [RemoteWipe CSP](remotewipe-csp.md)
+-   [Reporting CSP](reporting-csp.md)
+-   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
+-   [SurfaceHub CSP](surfacehub-csp.md)
+-   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 
 
