@@ -11,6 +11,30 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**November 11, 2016**
+
+Servicing Stack Update (SSU):KB3199209 is required before applying the most recent General Distribution Release (GDR, currently KB 3200970) or any future GDRs.
+
+To update install the latest updates: 
+
+-  Download [SSU:KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) and the [latest GDR](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) (currently [KB 3200970](http://www.catalog.update.microsoft.com/Search.aspx?q=3200970)), from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com).
+
+-  Apply this SSU, and then apply the latest GDR, into both Windows and WinRE.
+
+-  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
+
+   To learn more about applying updates, see [Lab 4: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 10: Update the recovery image](desktop/update-the-recovery-image.md).
+
+The SSU:KB3199209 addresses two issues:
+ 
+1.	Failure while injecting GDRs into winre.wim – This requires injecting the SSU into winre.wim
+
+2.	Push-button reset failure to keep OEM pre-installed GDRs:
+
+    1.	Half of the fix requires injecting the SSU into the Windows image: This part allows GDRs marked as permanent using /ResetBase to come back after PBR. 
+
+    2.	The other half of the fix requires injecting the GDR into WinRE.wim.
+
 **September 30, 2016**
 
 -  The recommended partition size for the Windows RE partition has shrunk from 500MB to 450MB. Your own Windows RE partition size may vary, based on add-ins like [boot-critical drivers and languages](desktop/add-drivers-langs-universal-apps-sxs.md). 
