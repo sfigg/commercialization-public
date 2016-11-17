@@ -53,6 +53,8 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     ```
 
 4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx).
+    
+    For more information about /SkipPlatformCheck, see [/Apply-Image in DISM image management command-line options](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/dism-image-management-command-line-options-s14#apply-image) 
 
     ``` syntax
     DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
