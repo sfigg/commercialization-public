@@ -87,8 +87,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 6.  Apply the image to a drive.
 
     ``` syntax
-    DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /SkipPlatformCheck
-     /ApplyDrive:\\.\PhysicalDrive0
+    DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
 **To use a previous version of WinPE**
@@ -124,8 +123,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 7.  Apply the image to a drive.
 
     ``` syntax
-    E:\DISM_Win10\DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:E:\flash*.sfu
-     /ApplyDrive:\\.\PhysicalDrive0
+    E:\DISM_Win10\DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:E:\flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
 ## <span id="related_topics"></span>Related topics
