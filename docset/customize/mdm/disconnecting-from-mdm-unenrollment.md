@@ -137,7 +137,7 @@ When a device is enrolled into MDM through Azure Active Directory Join and then 
 
 Before remotely unenrolling corporate devices, you must ensure that there is at least one admin user on the device that is not part of the Azure tenant, otherwise the device will not have any admin user after the operation.
 
-In mobile devices, remote unenrollment for Azure Active Directory Joined devices will fail. To remove corporate content from these devices, we recommendation to remotely wipe the device.
+In mobile devices, remote unenrollment for Azure Active Directory Joined devices will fail. To remove corporate content from these devices, we recommend you remotely wipe the device.
 
 <a href="" id="it-admin-requested-disconnection"></a>
 ## IT admin–requested disconnection
