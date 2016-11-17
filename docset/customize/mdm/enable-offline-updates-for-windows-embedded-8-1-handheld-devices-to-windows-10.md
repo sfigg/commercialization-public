@@ -46,13 +46,15 @@ To configure the MDM service provider and enable the mobile devices to download 
 
 Here is the outline of the process:
 
-1.  Prepare a test device that can connect to the Internet to download the released update packages.
-2.  Retrieve an XML file on the device that contains all the metadata about each update package.
-3.  Using a script that we provide, parse the XML file to extract download URLs for the update packages.
-4.  Download the update packages using the download URLs.
-5.  Place the downloaded packages on an internal share that is accessible to devices you are updating.
-6.  Create two additional XML files that define the specific updates to download and the specific locations from which to download the updates, and deploy them onto the production device.
-7.  Start the update process from the devices.
+1.  Prepare a test device that can connect to the Internet to download the released update packages. 
+2.  After the updates are downloaded and before pressing the install button, retrieve an XML file on the device that contains all the metadata about each update package.
+3.  Check the status code in the XML file.
+4.  Check for registry dependencies.
+5.  Using a script that we provide, parse the XML file to extract download URLs for the update packages.
+6.  Download the update packages using the download URLs.
+7.  Place the downloaded packages on an internal share that is accessible to devices you are updating.
+8.  Create two additional XML files that define the specific updates to download and the specific locations from which to download the updates, and deploy them onto the production device.
+9.  Start the update process from the devices.
 
 As a part of the update process, Windows will run data migrators to bring forward configured settings and data on the device. For instance, if the device was configured with a maintenance time or other update policy in Windows Embedded 8.1 Handheld, these settings will automatically get migrated to Windows 10 as part of the update process. If the Handheld device was configured for assigned access lockdown, then this configuration will also get migrated to Windows 10 as part of the update process. This includes ProductId & AumId conversion for all internal apps (including buttonremapping apps).
 
@@ -92,7 +94,7 @@ Trigger the device to check for updates either manually or using System Center C
 
 1.  From the device, go to **Settings** &gt; **Phone updates** &gt; **Check for updates**.
 2.  Sync the device. Go to **Settings** &gt; **Workplace** &gt; **Enrolled** and click the refresh icon. Repeat as needed.
-3.  Follow the installation prompts.
+3.  Follow the prompts to download the updates, but do not press the install button.
 
 > **Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
 
@@ -112,12 +114,12 @@ Trigger the device to check for updates either manually or using System Center C
     ![device scan using sccm](images/windowsembedded-update4.png)
 
 4.  Create a Configuration Baseline for TriggerScan and Deploy. It is recommended that this Configuration Baseline be deployed after the Controlled Updates Baseline has been applied to the device (the corresponding files are deployed on the device through a device sync session).
-5.  Follow the prompts for installation of the updates. The device may reboot several times while installing the update packages.
+5.  Follow the prompts for downloading the updates, but do not install the updates on the device.
 
 
 ## <a href="" id="step2"></a>Step 2: Retrieve the device update report XML from the device
 
-After updates are installed on the device, the process generates an XML file that contains information about the packages it downloaded and installed. You must retrieve this XML file.
+After updates are downloaded (but not installed on the device), the process generates an XML file that contains information about the packages it downloaded. You must retrieve this XML file.
 
 There are two ways to retrieve this file from the device; one pre-GDR1 and one post-GDR1.
 
@@ -142,19 +144,25 @@ For a step-by-step walkthrough, see [How to retrieve a device update report usin
 2.  The value that you define for this Configuration Item is defined by the relative path to the SD card which includes the filename of the XML file (such as SDCardRoot\\Update\\DUReport.xml).
 3.  Remove the SD card from device and copy the XML file to your PC.
 
-## Step 3: Extract download URLs from the report XML
+## Step 3: Check the status code in the XML file
+Make sure that the status code is set to 0000-0000 (success).
+
+## Step 4: Check for registry dependencies
+Remove any registry dependencies in the XML file.
+
+## Step 5: Extract download URLs from the report XML
 
 Use the [example PowerShell script](#example-powershell-script) to extract the download URLs from the XML file or parse it manually.
 
-## Step 4: Retrieve update packages using download URLs
+## Step 6: Retrieve update packages using download URLs
 
 Use a script or manually download each update package to a PC or an internal share.
 
-## Step 5: Place the update packages on an accessible share
+## Step 7: Place the update packages on an accessible share
 
 Put all the update packages into an internal share that is accessible to all the devices that need these updates. Ensure that the internal share can support multiple devices trying to access the updates at the same time.
 
-## Step 6: Create two XML files for production devices to select updates and download locations
+## Step 8: Create two XML files for production devices to select updates and download locations
 
 Here are the two files.
 
