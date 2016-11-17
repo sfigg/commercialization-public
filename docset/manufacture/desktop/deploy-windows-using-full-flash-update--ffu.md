@@ -55,7 +55,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 4.  Apply the image to a drive. For a physical drive *X:*, the string should be the following form: "\\\\.\\PhysicalDrive*X*", where *X* is the disk number that diskpart provides, such as \\\\.\\PhysicalDrive0. Hard disk numbers start at zero. For more information about PhysicalDrive*X*, see [CreateFile function](https://msdn.microsoft.com/library/windows/desktop/aa363858.aspx).
 
     ``` syntax
-    DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0
+    DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
 **To use a single drive for both WinPE and an FFU image**
@@ -85,7 +85,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 6.  Apply the image to a drive.
 
     ``` syntax
-    DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu
+    DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /SkipPlatformCheck
      /ApplyDrive:\\.\PhysicalDrive0
     ```
 
