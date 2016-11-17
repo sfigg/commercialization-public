@@ -71,7 +71,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 
 -   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
 -   [Policies supported by Windows Holographic Enterprise](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
-
+-   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
 ## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
@@ -5530,8 +5530,92 @@ Footnote:
 -   [Update/RequireUpdateApproval](#update-requireupdateapproval)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 
-## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
+## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
+
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
+-   [Browser/Homepages](#browser-homepages)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)
+-   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)
+-   [Camera/AllowCamera](#browser-allowcamera)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
+-   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
+-   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
+-   [Defender/AllowCloudProtection](#defender-allowcloudprotection)
+-   [Defender/AllowEmailScanning](#defender-allowemailscanning)
+-   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)
+-   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)
+-   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)
+-   [Defender/AllowIOAVProtection](#defender-allowioavprotection)
+-   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)
+-   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)
+-   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
+-   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
+-   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
+-   [Defender/AVGCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
+-   [Defender/ExcludedExtensions](#defender-excludedextensions)
+-   [Defender/ExcludedPaths](#defender-excludedpaths)
+-   [Defender/ExcludedProcesses](#defender-excludedprocesses)
+-   [Defender/PUAProtection](#defender-puaprotection)
+-   [Defender/RealTimeScanDirection](#defender-realtimescandirection)
+-   [Defender/ScanParameter](#defender-scanparameter)
+-   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)
+-   [Defender/ScheduleScanDay](#defender-schedulescanday)
+-   [Defender/ScheduleScanTime](#defender-schedulescantime)
+-   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)
+-   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
+-   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupID](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)
+-   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [TextInput/AllowIMELogging](#textinput-allowimelogging)
+-   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
+-   [TextInput/AllowInputPanel](#textinput-allowinputpanel)
+-   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
+-   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
+-   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
+-   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
+-   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
+-   [TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
+-   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+-   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+-   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+-   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+-   [Update/PauseQualityUpdates](#update-pausequalityupdates)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+
+## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
 > **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
