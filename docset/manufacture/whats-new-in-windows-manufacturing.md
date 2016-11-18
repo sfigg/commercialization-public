@@ -11,6 +11,9 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**November 17, 2016**
+[Add Language Packs to Windows](add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
+
 **November 11, 2016**
 
 Servicing Stack Update (SSU):KB3199209 is required before applying the most recent General Distribution Release (GDR, currently KB 3200970) or any future GDRs.
