@@ -39,7 +39,7 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
 *  [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
 *  [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
-*  [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+*  [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
 *  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 *  [Lab 8: Add a license agreement (OOBE.xml)](add-a-license-agreement.md)
 *  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
