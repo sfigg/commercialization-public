@@ -103,6 +103,12 @@ The following table shows the types of language packages and components availabl
 <td align="left">Basic, Text-To-Speech recognition</td>
 <td align="left">Recognizes voice input, used by Cortana and Windows Speech Recognition.</td>
 </tr>
+<tr class="even">
+<td align="left">Retail Demo experience</td>
+<td align="left"><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
+<td align="left">Basic</td>
+<td align="left">[Retail Demo experience](https://msdn.microsoft.com/windows/uwp/monetize/retail-demo-experience)</td>
+</tr>
 </tbody>
 </table>
 

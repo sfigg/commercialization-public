@@ -30,7 +30,7 @@ During disconnection, the client does the following:
 -   [Server-initiated disconnection](#server-initiated-disconnection)
 -   [Unenrollment from Work Access settings page](#unenrollment-from-work-access-settings-page)
 -   [IT admin–requested disconnection](#it-admin-requested-disconnection)
--   [Data loss during unenrollment from Azure Active Directory Join](#data-loss-during-unenrollment-from-azure-active-directory-join)
+-   [Unenrollment from Azure Active Directory Join](#dataloss)
 
 
 ## User-initiated disconnection
@@ -127,12 +127,17 @@ You can only use the Work Access page to unenroll under the following conditions
 
 
 <a href="" id="dataloss"></a>
-## Data loss during unenrollment from Azure Active Directory Join
+## Unenrollment from Azure Active Directory Join
 
 When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there is no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message does not indicate the loss of WIP data.
 
 ![aadj unenerollment](images/azure-ad-unenrollment.png)
 
+When a device is enrolled into MDM through Azure Active Directory Join and then remotely unenrolled, the device may get into a state where it must be re-imaged. When devices are remotely unenrolled from MDM, the AAD association is also removed. This safeguard is in place to avoid leaving the corporated devices in unmanaged state.
+
+Before remotely unenrolling corporate devices, you must ensure that there is at least one admin user on the device that is not part of the Azure tenant, otherwise the device will not have any admin user after the operation.
+
+In mobile devices, remote unenrollment for Azure Active Directory Joined devices will fail. To remove corporate content from these devices, we recommend you remotely wipe the device.
 
 <a href="" id="it-admin-requested-disconnection"></a>
 ## IT admin–requested disconnection

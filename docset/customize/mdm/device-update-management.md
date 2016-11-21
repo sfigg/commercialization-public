@@ -625,7 +625,7 @@ Upgrades deferred until the next period.
 Supported operation is Get.
 
 
-## Windows 10, version 1607 for update management
+## <a href="" id="windows10version1607forupdatemanagement"></a> Windows 10, version 1607 for update management
 
 Here are the new policies added in Windows 10, version 1607 in [Policy CSP](policy-configuration-service-provider.md). You should use these policies for the new Windows 10, version 1607 devices.
 

@@ -515,7 +515,7 @@
 #### [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (manufacture/desktop/includes basics on mounting images)
 #### [Lab 4: Add updates and upgrade the edition](manufacture/desktop/servicing-the-image-with-windows-updates-sxs.md)
 #### [Lab 5: Add languages](manufacture/desktop/add-drivers-langs-universal-apps-sxs.md)
-#### [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](manufacture/desktop/add-universal-apps.md)
+#### [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](manufacture/desktop/add-universal-apps-sxs.md)
 #### [Lab 7: Change settings, product keys, scripts with an answer file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 #### [Lab 8: Add a license agreement (OOBE.xml)](manufacture/desktop/add-a-license-agreement.md)
 #### [Lab 9: Make changes from Windows (audit mode)](manufacture/desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
