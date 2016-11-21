@@ -775,6 +775,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>2 - full scan</li>
 </ul>
 </td>
+</tr><tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added data recovery agent (DRA) information to Settings/DataRecoveryCertificate.</p>
+</td>
+</tr><tr class="even">
+<td style="vertical-align:top">[Disconnecting from the management infrastructure (unenrollment)](disconnecting-from-mdm-unenrollment.md)</td>
+<td style="vertical-align:top"><p>Added information about unenrollment from Azure Active Directory Join.</p>
+</td>
+</tr><tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the description of Browser/Homepages.</p>
+</td>
 </tr>
 </tbody>
 </table>
