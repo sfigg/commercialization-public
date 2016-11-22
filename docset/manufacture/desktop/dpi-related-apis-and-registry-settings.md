@@ -23,9 +23,6 @@ If you need to perform deployment customizations, the following sections explain
 
 -   [System-wide scale factor in Windows 8 scaling mode](#system)
 
--   [Simplest mitigation for 125% displays](#onetwentyfive)
-
--   [Mitigation for 150% displays](#onefifty)
 
 ## <span id="native"></span><span id="NATIVE"></span>Primary display native resolution
 
@@ -218,17 +215,14 @@ These results are returned in a coordinate system in which 96 corresponds to 100
  
 
 **Note**  
-This API will always return 96 unless the tool that calls it is registered as DPI-aware. This requires adding the following XML to the manifest for the utility program.
+This API will return different results depending on the DPI awareness mode of your application. Configuring the awareness mode requires adding XML to the application manifest, as detailed below:
 
- 
+| DPI Awareness Mode | Manifest Setting | Returned Value |
+| ------------------ | ---------------- | -------------- |
+| None               | None             |  96 for all displays, regardless of the scale factor |
+| System DPI Aware      | \<dpiAware>True\</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows) |
+| Per-Monitor DPI Aware | \<dpiAware>True/PM\</dpiAware> | The DPI of the primary display at the time the Windows session was started (when the user first logged in to Windows). To obtain the DPI of the display that the application is located on, use [GetWindowDpi()](https://msdn.microsoft.com/en-us/library/windows/desktop/mt748624.aspx) or [GetDpiForMonitor()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280510.aspx) |
 
-``` syntax
-<asmv3:application>
-    <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
-      <dpiAware>Per monitor</dpiAware>
-    </asmv3:windowsSettings>
-  </asmv3:application>
-```
 
 For more information about this manifest setting, see [SetProcessDPIAware function](http://go.microsoft.com/fwlink/p/?linkid=331146).
 
@@ -257,7 +251,7 @@ The **Control Panel\\ Appearance and Personalization\\Display** user interface (
 </tr>
 <tr class="even">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior.Content that is moved from one display to another might be the wrong size</p></td>
+<td align="left"><p>Same scale factor is applied to all displays: Windows 8 and earlier Windows versions behavior. Content that is moved from one display to another might be the wrong size.</p></td>
 </tr>
 </tbody>
 </table>
@@ -380,26 +374,9 @@ When the **Let me choose one scaling level for all my displays** checkbox is che
 </table>
 
  
-
-## <span id="onetwentyfive"></span><span id="ONETWENTYFIVE"></span>Simplest mitigation for 125% displays
-
-
-The simplest generic fix is to place the system in single-scale-factor mode with a scale factor of 125%. This is not recommended unless the enterprise environment includes a large number of apps that aren’t DPI-aware and that scale poorly at 125%. In pseudo-code this would look something like this:
-
-``` syntax
-If (verticalResolution < 1080) and (DPI == 125%)
-Set HKCU\...\Win8DPIScaling to 1
-Set HKCU\...\LogPixels to 120
-Require logoff/logon
-```
-
-## <span id="onefifty"></span><span id="ONEFIFTY"></span>Mitigation for 150% displays
-
-
-For more pixel-dense displays, the same approach can be used as described in the previous section. This is not recommended as a general practice; in addition to disabling the Windows 8.1 DPI feature benefits, it also results in making display content significantly smaller than optimal. As a result, we recommend that only users customize their DPI scaling on these devices.
-
 ## <span id="related_topics"></span>Related topics
 
+[Documentation for developing High DPI applications](https://msdn.microsoft.com/library/windows/desktop/dd464646.aspx)
 
 [High DPI Support for IT Professionals](high-dpi-support-for-it-professionals.md)
 

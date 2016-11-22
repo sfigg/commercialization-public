@@ -6086,11 +6086,11 @@ Footnote:
 > **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
-<p style="margin-left: 20px">Specifies your Home pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Home pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
+<p style="margin-left: 20px">Specifies your Start pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Start pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
 
-<p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Home pages specified by this policy cannot be changed by the users.
+<p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
 
-> **Note**  Turning this setting off, or not configuring it, sets your default Home page to the web page specified in App settings.
+> **Note**  Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
 
 
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
