@@ -51,12 +51,12 @@ You can use tools that are available for Windows 8.1 Connected Standby to evalua
 <td><p>These tests perform repeated transitions into and out of standby to ensure system health over time and prolonged usage.</p>
 <p>The tests include:</p>
 <ul>
-<li>[Connected Standby energy efficiency](p_assessments.connected_standby_energy_efficiency)</li>
-<li>[Connected Standby Duration Test](p_hlk_test.36463e42-7d6e-408e-933f-dbf56ea41e65)</li>
-<li>[Connected Standby Exit Latency Stress](p_hlk_test.26600683-c1c8-4b9c-8661-84141db17807)</li>
-<li>[Connected Standby Hardware Security Test](p_hlk_test.13292c6c-a807-4916-80ac-fea6de9af552)</li>
-<li>[Connected Standby IO Stress](p_hlk_test.e9247100-a8e9-4620-a7ef-5ebd438c86a1)</li>
-<li>[Connected Standby Stress with Driver Verifier's Concurrency Stress](p_hlk_test.ae264d13-307b-452b-b5fc-4d9098ea22f1)</li>
+<li>[Connected Standby energy efficiency](../../test/assessments/connected-standby-energy-efficiency.md)</li>
+<li>[Connected Standby Duration Test](https://msdn.microsoft.com/library/windows/hardware/dn949525)</li>
+<li>[Connected Standby Exit Latency Stress](https://msdn.microsoft.com/library/windows/hardware/dn940611)</li>
+<li>[Connected Standby Hardware Security Test](https://msdn.microsoft.com/library/windows/hardware/dn940396)</li>
+<li>[Connected Standby IO Stress](https://msdn.microsoft.com/library/windows/hardware/dn942043)</li>
+<li>[Connected Standby Stress with Driver Verifier's Concurrency Stress](https://msdn.microsoft.com/library/windows/hardware/dn924110)</li>
 </ul></td>
 <td><p>HLK</p></td>
 <td><p>To ensure reliable transitions into and out of standby</p></td>

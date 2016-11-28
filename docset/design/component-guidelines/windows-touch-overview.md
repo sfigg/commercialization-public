@@ -22,7 +22,7 @@ In Windows 7, vendors who support Windows Touch might be required to provide a d
 
 We recommend that touch devices be USB HID devices, and that vendors do not supply a driver. In this scenario, the report descriptor and related information is provided in firmware.
 
-Whether you provide a driver or not, you must support selective suspend in your INF file. For more information about how to support selective suspend, see [Enabling USB Selective Suspend for HID Devices](hid.selective_suspend_for_hid_over_usb_devices).
+Whether you provide a driver or not, you must support selective suspend in your INF file. For more information about how to support selective suspend, see [Enabling USB Selective Suspend for HID Devices](https://msdn.microsoft.com/library/windows/hardware/jj131716).
 
 A vendor-supplied driver should limit the processing that it does to avoid slower system performance and shorter battery life in mobile scenarios. Touch devices should process as much as they can in firmware to provide an optimal user experience.
 

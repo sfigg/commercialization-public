@@ -176,7 +176,7 @@ If the system-under-test has a GPS device or location sensor device, you must en
 -   **Control Panel\\Hardware and Sound\\Location Settings\\Turn on the Windows Location platform**
 -   **PC Settings\\Privacy\\Location: Let Windows and apps use my location**
 
-You can use the Sensor Diagnostic Tool in the Windows Driver Kit (WDK) to confirm the reception of the GPS signal at the test site. For more information, see [Testing sensor functionality with the Sensor Diagnostic Tool](sensors.the_sensor_diagnostic_tool).
+You can use the Sensor Diagnostic Tool in the Windows Driver Kit (WDK) to confirm the reception of the GPS signal at the test site. For more information, see [Testing sensor functionality with the Sensor Diagnostic Tool](https://msdn.microsoft.com/library/windows/hardware/hh780319).
 
  
 

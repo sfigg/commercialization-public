@@ -12,7 +12,7 @@ ms.assetid: 82D894F5-D715-4991-92B2-287A33C48ECD
 
 Windows Hello provides you the ability to enable facial or fingerprint recognition to log on to a Windows 10 system or device. This topic discusses how to enable Windows Hello for an infrared video camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices. Specifically, IHVs who are producing calibrated color, IR or depth sensors for use by the app-facing Perception APIs, and OEMs who are assembling and calibrating across sensors from various IHVs to produce a final device.
 
-**Note**  This topic does not cover the mechanics of reading data off the underlying device. If the IHV has a proprietary driver, the [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) implementation should talk to that driver. If the device is a UVC device, the IHV should leverage use Media Foundation and the class driver to pull data from the device. For more information about Media Foundation, see [Microsoft Media Foundation](mf.microsoft_media_foundation_sdk).
+**Note**  This topic does not cover the mechanics of reading data off the underlying device. If the IHV has a proprietary driver, the [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) implementation should talk to that driver. If the device is a UVC device, the IHV should leverage use Media Foundation and the class driver to pull data from the device. For more information about Media Foundation, see [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/hardware/ms694197).
 
  
 
@@ -57,7 +57,7 @@ To allow the Windows Hello enrollment user interface to display without the dela
 
 ### Implement a IPerceptionFrameProviderManager
 
-The System service loads the provider DLL and initializes the manager. The dll must have an activatable class implementing [**IPerceptionFrameProviderManager**](w_dvc_percpt_prov.iperceptionframeprovidermanager), the system will activate this class.
+The System service loads the provider DLL and initializes the manager. The dll must have an activatable class implementing [**IPerceptionFrameProviderManager**](https://msdn.microsoft.com/library/windows/hardware/mt187468manager), the system will activate this class.
 
 ```
 namespace WDDP = Windows::Devices::Perception::Provider;
@@ -78,9 +78,9 @@ private:
 
 ### Initialize and register the device
 
-When a device is attached, you must create the provider and register it through [**RegisterFrameProviderInfo**](w_dvc_percpt_prov.perceptionframeprovidermanagerservice_registerframeproviderinfo).
+When a device is attached, you must create the provider and register it through [**RegisterFrameProviderInfo**](https://msdn.microsoft.com/library/windows/hardware/mt187525).
 
-You also need to notify the source is available using [**UpdateAvailabilityForProvider**](w_dvc_percpt_prov.perceptionframeprovidermanagerservice_updateavailabilityforprovider).
+You also need to notify the source is available using [**UpdateAvailabilityForProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187530).
 
 ```
    
@@ -128,7 +128,7 @@ You also need to notify the source is available using [**UpdateAvailabilityForPr
 
 ### Unregister the device
 
-When device is unplugged from the computer, unregister the provider through [**UnregisterFrameProviderInfo**](w_dvc_percpt_prov.perceptionframeprovidermanagerservice_unregisterframeproviderinfo) to notify the system that the device is no longer available.
+When device is unplugged from the computer, unregister the provider through [**UnregisterFrameProviderInfo**](https://msdn.microsoft.com/library/windows/hardware/mt187529) to notify the system that the device is no longer available.
 
 ```
    
@@ -207,7 +207,7 @@ this, providerInfo);
 
 ### Respond to Start requests
 
-The provider must turn on the camera and start publishing frames using [**PerceptionFrameProviderManagerService.PublishFrameForProvider**](w_dvc_percpt_prov.perceptionframeprovidermanagerservice_publishframeforprovider)in less than 400ms after receiving a Start request. If the Start request arrives when the device is unavailable, the provider should queue this request and start publishing frames when the device becomes available.
+The provider must turn on the camera and start publishing frames using [**PerceptionFrameProviderManagerService.PublishFrameForProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187521)in less than 400ms after receiving a Start request. If the Start request arrives when the device is unavailable, the provider should queue this request and start publishing frames when the device becomes available.
 
 ```
    
@@ -245,7 +245,7 @@ void SampleFrameProvider::Stop()
 
 ### Enter or exit face authentication mode
 
-The provider is notified when face authentication actually begins and ends via the [**PerceptionStartFaceAuthenticationHandler**](w_dvc_percpt_prov.perceptionstartfaceauthenticationhandler) and [**PerceptionStopFaceAuthenticationHandler**](w_dvc_percpt_prov.perceptionstopfaceauthenticationhandler) events respectively. Respond to these events if your device requires a state or mode change to support face authentication. For example, switching the camera from “RGB mode” to “IR mode” and back again.
+The provider is notified when face authentication actually begins and ends via the [**PerceptionStartFaceAuthenticationHandler**](https://msdn.microsoft.com/library/windows/hardware/mt187539) and [**PerceptionStopFaceAuthenticationHandler**](https://msdn.microsoft.com/library/windows/hardware/mt187540) events respectively. Respond to these events if your device requires a state or mode change to support face authentication. For example, switching the camera from “RGB mode” to “IR mode” and back again.
 
 ```
    
@@ -297,19 +297,19 @@ void SampleFrameProvider::ExitFaceAuthenticationMode()
 
 ### Report AmbientSubtractionEnabled through IPerceptionFrameProvider.Properties
 
-Windows Hello requires “clean IR” to perform face authentication with high accuracy, which is produced through Ambient Light Subtraction of illuminated and non-illuminated frame pairs. The [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) is required to configure the system for this operation by setting the [**AmbientSubtractionEnabled**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_ambientsubtractionenabled) property:
+Windows Hello requires “clean IR” to perform face authentication with high accuracy, which is produced through Ambient Light Subtraction of illuminated and non-illuminated frame pairs. The [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) is required to configure the system for this operation by setting the [**AmbientSubtractionEnabled**](https://msdn.microsoft.com/library/windows/hardware/mt187404) property:
 
 -   Set AmbientSubtractionEnabled=False
     **Important**  Frame providers are not permitted to use custom Ambient Light Subtraction algorithms for frames passed to Windows Hello and must set AmbientSubtractionEnabled=False for face authentication.
 
      
 
-In addition, the frame provider is required to tag each IR frame as “illuminated” or “non-illuminated” before passing it up to the system. This is performed by setting the [**ActiveIlluminationEnabled**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_activeilluminationenabled) property according to the following situations:
+In addition, the frame provider is required to tag each IR frame as “illuminated” or “non-illuminated” before passing it up to the system. This is performed by setting the [**ActiveIlluminationEnabled**](https://msdn.microsoft.com/library/windows/hardware/mt187403) property according to the following situations:
 
 -   The LED emitter is on (frame is illuminated): set ActiveIlluminationEnabled=True
 -   The LED emitter is off (frame is not illuminated): set ActiveIlluminationEnabled=False
 
-**Note**  The Windows Hello infrared camera sample demonstrates setting [**AmbientSubtractionEnabled**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_ambientsubtractionenabled) and [**ActiveIlluminationEnabled**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_activeilluminationenabled) properties for illuminated/non-illuminated frame pairs.
+**Note**  The Windows Hello infrared camera sample demonstrates setting [**AmbientSubtractionEnabled**](https://msdn.microsoft.com/library/windows/hardware/mt187404) and [**ActiveIlluminationEnabled**](https://msdn.microsoft.com/library/windows/hardware/mt187403) properties for illuminated/non-illuminated frame pairs.
 
  
 
@@ -347,7 +347,7 @@ void SampleFrameProvider::OnFrameArrived(/* NewFrame */)
 
 ### Respond to changes in properties
 
-You can respond to changes in properties like [**ExposureCompensation**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_exposurecompensation), as shown in the following code example.
+You can respond to changes in properties like [**ExposureCompensation**](https://msdn.microsoft.com/library/windows/hardware/mt187407), as shown in the following code example.
 
 ```
    
@@ -400,7 +400,7 @@ void SampleFrameProvider::SetProperty(_In_ WWP::PerceptionPropertyChangeRequest^
 
 ### Handle life cycle methods
 
-[**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) and [**IPerceptionFrameProviderManager**](w_dvc_percpt_prov.iperceptionframeprovidermanager) both utilize the [**Windows.Foundation.IClosable**](w_found.iclosable) interface, which projects a Close method onto the C++ class destructor. This method may be invoked directly by the service when your Provider objects are being uninitialized but the object RefCounts haven’t reached 0. This means, the class destructor may be called twice: once when the service calls Close on your object and again when the RefCount reaches 0. Therefore, it’s important to code your provider so that it tracks its own initialized state, i.e. checks that an object or resource hasn’t been already cleaned up before releasing it.
+[**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) and [**IPerceptionFrameProviderManager**](https://msdn.microsoft.com/library/windows/hardware/mt187468manager) both utilize the [**Windows.Foundation.IClosable**](https://msdn.microsoft.com/library/windows/hardware/hh700638) interface, which projects a Close method onto the C++ class destructor. This method may be invoked directly by the service when your Provider objects are being uninitialized but the object RefCounts haven’t reached 0. This means, the class destructor may be called twice: once when the service calls Close on your object and again when the RefCount reaches 0. Therefore, it’s important to code your provider so that it tracks its own initialized state, i.e. checks that an object or resource hasn’t been already cleaned up before releasing it.
 
 ```
    
@@ -430,17 +430,17 @@ private:
 
 The following requirements must be met in order for your IR camera to function correctly for Windows Hello.
 
--   [**PixelWidth**](w_graph_img.bitmapdecoder_pixelwidth) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
--   [**PixelHeight**](w_graph_img.bitmapframe_pixelheight) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
--   [**BitmapPixelFormat**](w_graph_img.bitmapdecoder_bitmappixelformat) must be Gray8.
+-   [**PixelWidth**](https://msdn.microsoft.com/library/windows/hardware/br226203) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
+-   [**PixelHeight**](https://msdn.microsoft.com/library/windows/hardware/br226244) must be equal or less than the maximum listed in [Windows Hello biometric requirements](biometric-requirements.md).
+-   [**BitmapPixelFormat**](https://msdn.microsoft.com/library/windows/hardware/br226179) must be Gray8.
 
 ### PerceptionVideoProfile.FrameDuration requirements
 
-The minimum requirement for [**PerceptionVideoProfile.FrameDuration**](w_dvc_percpt.perceptionvideoprofile_frameduration) is 15 fps; recommended &gt;=30fps.
+The minimum requirement for [**PerceptionVideoProfile.FrameDuration**](https://msdn.microsoft.com/library/windows/hardware/mt187672) is 15 fps; recommended &gt;=30fps.
 
 ### IVideoFrame::RelativeTime requirements
 
-[**RelativeTime**](w_media.videoframe_relativetime) must be equal to the time when the frame was captured in 100-nanosecond units.
+[**RelativeTime**](https://msdn.microsoft.com/library/windows/hardware/dn930925) must be equal to the time when the frame was captured in 100-nanosecond units.
 
 ### Report KnownPerceptionVideoFrameSourceProperties.IsMirrored
 

@@ -14,13 +14,13 @@ This sample demonstrates a basic implementation of the [Windows.Devices.Percepti
 
 Specifically, this sample shows how to:
 
--   Implement [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) and [**IPerceptionFrameProviderManager**](w_dvc_percpt_prov.iperceptionframeprovidermanager) to deliver infrared frames to the Windows 10 Sensor Data Service.
--   Implement a module to interface with [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) and pass device specific properties.
--   Set [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) properties to enable face authentication.
--   Respond to property change requests, specifically to handle requests to change a camera's [**ExposureCompensation**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_exposurecompensation) property.
+-   Implement [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) and [**IPerceptionFrameProviderManager**](https://msdn.microsoft.com/library/windows/hardware/mt187468manager) to deliver infrared frames to the Windows 10 Sensor Data Service.
+-   Implement a module to interface with [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) and pass device specific properties.
+-   Set [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) properties to enable face authentication.
+-   Respond to property change requests, specifically to handle requests to change a camera's [**ExposureCompensation**](https://msdn.microsoft.com/library/windows/hardware/mt187407) property.
 -   Enumerate video capture devices using media capture.
--   Open a capture stream using the Media Foundation's [**IMFSourceReader**](mf.imfsourcereader).
--   Read YUY2 video frames from the Media Foundation APIs, convert them to 8-bit grayscale, and deliver them to the Windows 10 Sensor Data Service. For more information about Media Foundation, see [Microsoft Media Foundation](mf.microsoft_media_foundation_sdk).
+-   Open a capture stream using the Media Foundation's [**IMFSourceReader**](https://msdn.microsoft.com/library/windows/hardware/dd374655).
+-   Read YUY2 video frames from the Media Foundation APIs, convert them to 8-bit grayscale, and deliver them to the Windows 10 Sensor Data Service. For more information about Media Foundation, see [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/hardware/ms694197).
 
 ## Prerequisites
 
@@ -36,9 +36,9 @@ Specifically, this sample shows how to:
 
 Download the sample from the [Partner application development repo](http:/go.microsoft.com/fwlink?LinkId=698623) on GitHub.
 
-This sample is an implementation of [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider), intended to work across a wide variety of capture devices, and serves as a starting point for developing device-specific providers. Depending on the specific device or scenario, additional properties or functionality will need to be added.
+This sample is an implementation of [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468), intended to work across a wide variety of capture devices, and serves as a starting point for developing device-specific providers. Depending on the specific device or scenario, additional properties or functionality will need to be added.
 
-In order to work with this [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) sample, a sensor must meet the following requirements:
+In order to work with this [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) sample, a sensor must meet the following requirements:
 
 -   The infrared sensor must function as a standard Windows Media Device like a webcam
 -   The sensor must support YUY2 video mode
@@ -52,7 +52,7 @@ The sample provider selects the first valid video capture device during enumerat
 
 ### Install the registry keys
 
-Registry keys are used to identify the [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider) module path and *ActivationClass* name to the Sensor Data Service. Keys for this sample are included but need to be manually installed. Use the following steps to install the keys.
+Registry keys are used to identify the [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468) module path and *ActivationClass* name to the Sensor Data Service. Keys for this sample are included but need to be manually installed. Use the following steps to install the keys.
 
 1.  Using file explorer, locate "FrameProviderSample.reg" file within the sample’s project folder
 2.  Right-click on this file and choose "Merge" to install the keys
@@ -66,7 +66,7 @@ Keys are installed to "HKLM\\Software\\Microsoft\\Analog\\Providers\\MediaFounda
 
 The SampleMft0 module project provides a driver Media Foundation Transform (MFT) for use with a camera's Windows Store device app. A driver MFT is used with a specific camera when capturing video. Thus the sample will not fully function until you write driver code for your specific device.
 
-Installation of the SampleMft0 module isn't required for the basic operation of the [**IPerceptionFrameProvider**](w_dvc_percpt_prov.iperceptionframeprovider), i.e. passing frames up to Sensor Data Service. However, in order for Windows Hello to work end-to-end, you must tag the IR frames with [**ActiveIlluminationEnabled**](w_dvc_percpt.knownperceptioninfraredframesourceproperties_activeilluminationenabled) property (as described in the Windows Hello Checklist), requiring you to add device specific functionality. The SampleMft0 project demonstrates one way you may choose to implement this requirement by reading the LED illumination state within the SampleMft0 module and passing an attribute up with the frame to your **IPerceptionFrameProvider**. Note that you must first modify the SampleMft0 project to read the device state and set the attribute appropriately before it’ll work.
+Installation of the SampleMft0 module isn't required for the basic operation of the [**IPerceptionFrameProvider**](https://msdn.microsoft.com/library/windows/hardware/mt187468), i.e. passing frames up to Sensor Data Service. However, in order for Windows Hello to work end-to-end, you must tag the IR frames with [**ActiveIlluminationEnabled**](https://msdn.microsoft.com/library/windows/hardware/mt187403) property (as described in the Windows Hello Checklist), requiring you to add device specific functionality. The SampleMft0 project demonstrates one way you may choose to implement this requirement by reading the LED illumination state within the SampleMft0 module and passing an attribute up with the frame to your **IPerceptionFrameProvider**. Note that you must first modify the SampleMft0 project to read the device state and set the attribute appropriately before it’ll work.
 
 **Note**  Using SampleMft0 is not the only solution for tagging frames with an illumination state nor is it necessarily the recommended way.
 

@@ -46,4 +46,4 @@ Building a great device for Windows means with selecting the right components. M
 
 We provide tests that help you deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10. We also give you the opportunity to promote your product on Microsoft’s Certified Products List and with the Windows logo.
 
-[Learn more about the Windows Hardware Compatibility Program](p_compat_program.windows_hardware_compatibility_program)
+[Learn more about the Windows Hardware Compatibility Program](compatibility/windows-hardware-compatibility-program.md)

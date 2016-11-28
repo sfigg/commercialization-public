@@ -54,8 +54,8 @@ If your system is a 2-in-1 device that uses physical GPIOs to indicate state tra
 
 For more information, review the following resources on MSDN.
 
--   [Indicator implementation](gpiobtn.indicator_implementation) (https://msdn.microsoft.com/library/windows/hardware/dn457884.aspx)
--   [ACPI descriptor samples](gpiobtn.acpi_descriptor_samples) (https://msdn.microsoft.com/library/windows/hardware/dn457868.aspx)
+-   [Indicator implementation](https://msdn.microsoft.com/library/windows/hardware/dn457884) (https://msdn.microsoft.com/library/windows/hardware/dn457884.aspx)
+-   [ACPI descriptor samples](https://msdn.microsoft.com/library/windows/hardware/dn457868) (https://msdn.microsoft.com/library/windows/hardware/dn457868.aspx)
 
 ### <a href="" id="method-2----use-the-injection-interface"></a>Method 2 - Use the injection interface
 
@@ -218,8 +218,8 @@ The APIs allows both Windows desktop applications and Universal Windows apps to 
 
 |                                                                         |                                                                                                                                                                                 |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIViewSettings**](w_ui_view.uiviewsettings)                          | Allows apps to query the current pointer device preference state of the system for a particular application. It is a non-activatable class that you get from GetForCurrentView. |
-| [**UserInteractionMode**](w_ui_view.uiviewsettings_userinteractionmode) | Property of GetForWindow that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                         |
+| [**UIViewSettings**](https://msdn.microsoft.com/library/windows/hardware/dn708109)                          | Allows apps to query the current pointer device preference state of the system for a particular application. It is a non-activatable class that you get from GetForCurrentView. |
+| [**UserInteractionMode**](https://msdn.microsoft.com/library/windows/hardware/dn708109_userinteractionmode) | Property of GetForWindow that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                         |
 | WM\_SETTINGSCHANGE                                                      | Apps are notified when the current input state changes by broadcasting WM\_SETTINGSCHANGE with “UserInteractionMode”.                                                           |
 
  
@@ -228,8 +228,8 @@ The APIs allows both Windows desktop applications and Universal Windows apps to 
 
 |                                                                         |                                                                                                                                                                                 |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIViewSettings**](w_ui_view.uiviewsettings)                          | Allows apps to query the current pointer device preference state of the system for a particular application. It is a non-activatable class that you get from GetForCurrentView. |
-| [**UserInteractionMode**](w_ui_view.uiviewsettings_userinteractionmode) | Property of UIViewSettings that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                       |
+| [**UIViewSettings**](https://msdn.microsoft.com/library/windows/hardware/dn708109)                          | Allows apps to query the current pointer device preference state of the system for a particular application. It is a non-activatable class that you get from GetForCurrentView. |
+| [**UserInteractionMode**](https://msdn.microsoft.com/library/windows/hardware/dn708109_userinteractionmode) | Property of UIViewSettings that takes a value in the Windows.UI.ViewManagement.UserInteractionMode enum, the allowed values of which are Touch and Mouse.                       |
 | SizeChanged                                                             | Event is triggered when the current input state changes. Apps should query for this event.                                                                                      |
 
  

@@ -18,17 +18,17 @@ The IOCTL\_THERMAL\_READ\_POLICY input/output (I/O) control request is sent by t
 ## <a href="" id="input-parameters-"></a>Input Parameters
 
 
-To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](wdf.wdfrequestretrieveinputbuffer). The input buffer contains a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) struct that specifies the current policy that the kernel has for the thermal zone.
+To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014). The input buffer contains a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) struct that specifies the current policy that the kernel has for the thermal zone.
 
 ## Output Parameters
 
 
-To retrieve the output buffer, call [**WdfRequestRetrieveOutputBuffer**](wdf.wdfrequestretrieveoutputbuffer). The *Buffer* parameter points to a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) structure. Set the THERMAL\_POLICY's members to your policy driver's preferred thermal policy.
+To retrieve the output buffer, call [**WdfRequestRetrieveOutputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550018). The *Buffer* parameter points to a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) structure. Set the THERMAL\_POLICY's members to your policy driver's preferred thermal policy.
 
 ## I/O Status
 
 
-Complete the request by calling [**WdfRequestCompleteWithInformation**](wdf.wdfrequestcompletewithinformation) and set Status to STATUS\_SUCCESS if the request is successful. Otherwise, an appropriate NTSTATUS error condition. The driver can pass the bytes returned to `sizeof(ULONG)` in the **Information** parameter.
+Complete the request by calling [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948) and set Status to STATUS\_SUCCESS if the request is successful. Otherwise, an appropriate NTSTATUS error condition. The driver can pass the bytes returned to `sizeof(ULONG)` in the **Information** parameter.
 
 ## Related topics
 

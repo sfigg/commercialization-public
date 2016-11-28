@@ -12,7 +12,7 @@ ms.assetid: 74515ED2-4D78-4735-BDC3-4DE311C28AD8
 
 Windows Hello provides you the ability to enable facial or fingerprint recognition to log on to a Windows system or device.
 
-The Providers APIs allow IHVs and OEMs to expose depth, infrared, and color cameras (and related metadata) for computer vision into UWP, and to designate a camera as participating in Windows Hello face authentication. The [**Windows.Devices.Perception**](w_dvc_percpt.windows_devices_perception) namespace contains the client APIs that allow a UWP application to access the color, depth, or infrared data of computer vision cameras.
+The Providers APIs allow IHVs and OEMs to expose depth, infrared, and color cameras (and related metadata) for computer vision into UWP, and to designate a camera as participating in Windows Hello face authentication. The [**Windows.Devices.Perception**](https://msdn.microsoft.com/library/windows/hardware/mt187676) namespace contains the client APIs that allow a UWP application to access the color, depth, or infrared data of computer vision cameras.
 
 Microsoft Windows Hello OEM and IHV app scenarios are currently focused on enabling a generic infrared camera to work with Windows Hello. This section contains a topic that describe how to enable a generic IR camera, as well as an accompanying sample and verification tool.
 

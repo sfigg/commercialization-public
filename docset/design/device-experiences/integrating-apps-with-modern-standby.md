@@ -46,8 +46,8 @@ For more information about the effect of modern standby on app execution, see th
 
 -   [Modern Standby](modern-standby.md)
 -   [Prepare software for modern standby](prepare-software-for-modern-standby.md)
--   [**PowerSetRequest**](base.powersetrequest)
--   [**PowerClearRequest**](base.powerclearrequest)
+-   [**PowerSetRequest**](https://msdn.microsoft.com/library/windows/hardware/dd405534)
+-   [**PowerClearRequest**](https://msdn.microsoft.com/library/windows/hardware/dd405532)
 
  
 
