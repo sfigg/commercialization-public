@@ -41,8 +41,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
 
--   Separate multistring values by the Unicode &\#xF000; in the XML file.
--   End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
+-   Separate substring values by the Unicode &\#xF000; in the XML file.
 
 > **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
