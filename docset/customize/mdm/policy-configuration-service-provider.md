@@ -7168,7 +7168,7 @@ Enables or disables Windows Tips / soft landing.
 
 -   0 – None.
 -   1 (default) – Windows spotlight enabled.
--   2 – placeholder only for future extension. Using this value has not effect.
+-   2 – placeholder only for future extension. Using this value has no effect.
 
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 <p style="margin-left: 20px">Prevents devices from showing feedback questions from Microsoft.
