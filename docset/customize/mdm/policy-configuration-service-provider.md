@@ -6884,7 +6884,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
-<p style="margin-left: 20px">Specifies the amount of time (in minutes) after the device is idle that will cause the device to become PIN or password locked.
+<p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
 > **Note**  This policy must be wrapped in an Atomic command.
 
