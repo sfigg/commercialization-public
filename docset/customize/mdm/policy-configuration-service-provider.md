@@ -7162,13 +7162,13 @@ Enables or disables Windows Tips / soft landing.
 > **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
-<p style="margin-left: 20px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If you select 2 (Windows spotlight with Enterprise spotlight enabled) and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
+<p style="margin-left: 20px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – None.
 -   1 (default) – Windows spotlight enabled.
--   2 – Windows Spotlight with Enterprise spotlight enabled.
+-   2 – placeholder only for future extension. Using this value has not effect.
 
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 <p style="margin-left: 20px">Prevents devices from showing feedback questions from Microsoft.
