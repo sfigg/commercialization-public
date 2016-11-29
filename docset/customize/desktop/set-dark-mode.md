@@ -7,16 +7,16 @@ MSHAttr:
 ms.assetid: 8D954E98-0090-4EB2-9FC7-7CE7B7483AEF
 ---
 
-# Set dark theme
+# Set dark mode
 
 
-Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.
+This personalization setting for end users allows them to express preference whether to see applications which support the setting in a dark or light mode.
 
-![](images/darktheme1.png)
+![](images/darkmode1.png)
 
 Many Microsoft first party applications apply the setting and it is easy for you to support the functionality in your UWP applications as well.
 
-![](images/darktheme2.png)![](images/darktheme3.png)
+![](images/darkmode2.png)![](images/darkmode3.png)
 
 OEMs can customize themes via Unattend.xml as such:
 

@@ -10,7 +10,7 @@ ms.assetid: 23839EDA-AB63-432A-AEC7-A9741AFB15E5
 # Customize the taskbar
 
 
-Starting in Windows 10, version 1607, you can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.
+You can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.
 
 **Note**  The filename “TaskbarLayoutModification.xml” is not required, you can choose any name you like. The important things are that the registry key is set to the path of mounted location of the xml file.
 
@@ -30,8 +30,7 @@ There are two ways of adding pins:
     ```
     UWA AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App"
     ```
-
-Beginning with Windows 10, version 1607, for left-to-right languages, the taskbar icons are ordered from left to right. For right-to-left languages, the taskbar icons are ordered from right to left (the rightmost element is **Start**).
+For left-to-right languages, the taskbar icons are ordered from left to right. For right-to-left languages, the taskbar icons are ordered from right to left (the rightmost element is **Start**).
 
 -   **Start**
 -   **Search**
@@ -87,7 +86,7 @@ There are eight steps to customize the taskbar with up to three additional pinne
 7.  Unmount the image.
 8.  Apply and boot the image.
 
-    TaskbarLayoutModification.xml is applied during [Sysprep](../../manufacture/desktop/sysprep-process-overview-win8.md). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](../unattend/taskbarlinks-win7-microsoft-windows-shell-setuptaskbarlinks.md). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
+    TaskbarLayoutModification.xml is applied during [Sysprep](../../manufacture/desktop/sysprep-process-overview-win8.md). After Sysprep processes the file, it is moved to %AppData%\\Local\\Microsoft\\Windows\\Shell\\. During OOBE, the tray creates an instance of ITaskbarLayoutPolicyManager and determines whether the TaskbarLayoutModification.xml is present and is well formed. If not, Windows checks for pins in the Unattend setting:[TaskbarLinks](../unattend/microsoft-windows-shell-setup-taskbarlinks.md). If neither exist, no new pins are added. If the TaskbarLayoutModification.xml is valid, Windows adds the pins to the taskbar.
 
 **Note**  Note: If the taskbar detects registry keys that map to default pins (the pre-Windows 10, version 1607 method of pinning apps to the taskbar), and it also detects app pinning by using TaskbarLayoutModification.xml, only TaskbarLayoutModification.xml pinning will be applied. If, however, no TaskbarLayoutModification.xml file exists, the legacy method will be applied. **The legacy method is deprecated in Windows 10, version 1607, and may not be supported in future versions of Windows. We recommend this new approach, adding a TaskbarLayoutModification.xml file.**
 
