@@ -215,7 +215,7 @@ For an ACPI example, see [How to Get the Connection Settings for a Device](https
 | Understanding Low-Power Buses                              | Video        | Demonstrates how to integrate a device on the new buses and create a driver. You will learn how to write ACPI to enumerate your peripheral and get started writing and testing a peripheral driver. | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-251T)              |
 | Kernel-Mode Driver Framework Design Guide                  | Article      | Introduces Kernel-Mode Driver Framework (KMDF).                                                                                                                                                     | [MSDN](http://msdn.microsoft.com/library/windows/hardware/ff544283.aspx) |
 | UMDF 1.x Design Guide                                      | Article      | Introduces User-Mode Driver Framework (UMDF).                                                                                                                                                       | [MSDN](http://go.microsoft.com/fwlink/?LinkId=227355)                             |
-| Windows Hardware Compatibility Program                     | Article      | Provides information on the Windows Certification Program.                                                                                                                                          | [MSDN](../compatibility/windows-hardware-compatibility-program.md)                   |
+| Windows Hardware Compatibility Program                     | Article      | Provides information on the Windows Certification Program.                                                                                                                                          | [MSDN](../../compatibility/windows-hardware-compatibility-program.md)                   |
 
  
 
@@ -223,7 +223,7 @@ For an ACPI example, see [How to Get the Connection Settings for a Device](https
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_WEG_Hardware\p_weg_hardware%5D:%20Simple%20Peripheral%20Bus%20%28SPB%29%20%20RELEASE:%20%2811/28/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 
