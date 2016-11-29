@@ -205,8 +205,8 @@ When the hardware platform enters modern standby, Windows will transition the Wi
 5.  If the Wi-Fi device is outside the SoC and attached via an SDIO bus:
 
     1.  Configure the Wi-Fi device to wake the SoC using the out-of-band GPIO wake interrupt. (For more information, see [Supported hardware power configurations](#supportedhw).)
-    2.  Mask the Wi-Fi device interrupts and cancel all related timers. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](buses.sdbus_property) property to FALSE by calling the [**SdBusSubmitRequest**](buses.sdbussubmitrequest) routine.
-    3.  Instruct the SD bus driver to stop forwarding Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](buses.sdbus_property) property to FALSE by calling the **SdBusSubmitRequest** routine.
+    2.  Mask the Wi-Fi device interrupts and cancel all related timers. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to FALSE by calling the [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) routine.
+    3.  Instruct the SD bus driver to stop forwarding Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to FALSE by calling the **SdBusSubmitRequest** routine.
     4.  Complete the [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request for the NdisDeviceStateD2 state.
 
 6.  If the Wi-Fi device is outside the SoC and attached via the PCIe bus:
@@ -249,8 +249,8 @@ When the wait-wake IRP is completed, NDIS will first send a D0 IRP (an [**IRP\_M
 2.  Restore any register state or other hardware context needed to complete the Wi-Fi device's transition to connected-idle (D0) mode.
 3.  If the Wi-Fi device is external to the SoC and connected via SDIO, the Wi-Fi miniport driver must:
 
-    1.  Instruct the SD bus driver to forward interrupts to the Wi-Fi miniport driver. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](buses.sdbus_property) property to TRUE by calling the [**SdBusSubmitRequest**](buses.sdbussubmitrequest) routine.
-    2.  Mask the Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](buses.sdbus_property) property to TRUE by calling the **SdBusSubmitRequest** routine.
+    1.  Instruct the SD bus driver to forward interrupts to the Wi-Fi miniport driver. The Wi-Fi miniport driver must set the [**SDP\_SET\_CARD\_INTERRUPT\_FORWARD**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to TRUE by calling the [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) routine.
+    2.  Mask the Wi-Fi device interrupts. The Wi-Fi miniport driver must set the [**SDP\_FUNCTION\_INT\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537927) property to TRUE by calling the **SdBusSubmitRequest** routine.
 
 4.  Complete the **IRP\_MN\_SET\_POWER** request.
 

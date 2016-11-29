@@ -33,7 +33,7 @@ Low cost
 
 [Windows Hello](../device-experiences/windows-hello.md)
 
-[Continuum for Phones](continuum-phone.md)
+[Continuum for Phones](../device-experiences/continuum-phone.md)
 
 [Cortana](../device-experiences/cortana.md)
 

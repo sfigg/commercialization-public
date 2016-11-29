@@ -29,7 +29,7 @@ Low cost
 
 [Cortana](../device-experiences/cortana.md)
 
-[Continuum for Phones](continuum-phone.md)
+[Continuum for Phones](../device-experiences/continuum-phone.md)
 
 [Battery Life 8+ hours](../component-guidelines/battery.md)
 
