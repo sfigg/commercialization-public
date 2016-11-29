@@ -33,51 +33,51 @@ Workstation Notebook
 Gaming Notebook
 
 Key Features
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Battery Life 8+ hours](battery.md)
+[Battery Life 8+ hours](../component-guidelines/battery.md)
 
-[Precision Touchpad](precision-touchpad-devices.md)
+[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Wired and Wireless Docking and Casting (USB-C; Miracast)](docking.md)
+[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)
 
-[Inking/Pen Support](pen-devices.md)
+[Inking/Pen Support](../component-guidelines/pen-devices.md)
 
-[Precision Touchpad](precision-touchpad-devices.md)
+[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)
 
 High-DPI (4K)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Long battery life (12+ hours)](battery.md)
+[Long battery life (12+ hours)](../component-guidelines/battery.md)
 
-[Wired and Wireless Docking and Casting (USB-C; Miracast)](docking.md)
+[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Precision Touchpad](precision-touchpad-devices.md)
+[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Wired and Wireless Docking and Casting (USB-C; Miracast)](docking.md)
+[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)
 
-[Inking/Pen Support](pen-devices.md)
+[Inking/Pen Support](../component-guidelines/pen-devices.md)
 
-[Precision Touchpad](precision-touchpad-devices.md)
+[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)
 
 Premium Audio/Visual experience (DX12, 4K support (display, chipset), premium speakers, Chipset support PlayReady, H/W DRM, H.265 H/W (decord/encord) )
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
 Xbox content/Controller/Xbox Live
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Precision Touchpad](precision-touchpad-devices.md)
+[Precision Touchpad](../component-guidelines/precision-touchpad-devices.md)
 
 Operating System
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
@@ -85,7 +85,7 @@ Windows 10 for desktop editions
 Windows 10 for desktop editions
 Windows 10 for desktop editions
 Windows 10 for desktop editions
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/components.md)
 
 CPU
 Mid-tier x86

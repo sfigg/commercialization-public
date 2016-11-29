@@ -27,23 +27,23 @@ Value Phablet
 Key Features
 Low cost
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
 [Continuum for Phones](continuum-phone.md)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
 Operating System
 Windows 10 Mobile
 Windows 10 Mobile
 Windows 10 Mobile
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/components.md)
 
 CPU
 Supported entry SoC

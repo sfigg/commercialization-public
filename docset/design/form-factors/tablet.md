@@ -27,31 +27,31 @@ Large Tablet
 Key Features
 Low cost
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
 [Continuum for Phones](continuum-phone.md)
 
-[Battery Life 8+ hours](battery.md)
+[Battery Life 8+ hours](../component-guidelines/battery.md)
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Wired and Wireless Docking and Casting (USB-C; Miracast)](docking.md)
+[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)
 
 Ruggedized for Commercial/EDU use
 
-[Cortana](cortana.md)
+[Cortana](../device-experiences/cortana.md)
 
-[Inking/Pen Support](pen-devices.md)
+[Inking/Pen Support](../component-guidelines/pen-devices.md)
 
-[Windows Hello](windows-hello.md)
+[Windows Hello](../device-experiences/windows-hello.md)
 
-[Wired and Wireless Docking and Casting (USB-C; Miracast)](docking.md)
+[Wired and Wireless Docking and Casting (USB-C; Miracast)](../device-experiences/docking.md)
 
 Operating System
 Windows 10 Mobile
 Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 Windows 10 for desktop editions
-[Recommended Components](components.md)
+[Recommended Components](../component-guidelines/components.md)
 
 CPU
 Supported entry SoC
