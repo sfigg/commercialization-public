@@ -341,7 +341,7 @@ High-Quality Viewing Experience Guidelines:
 
 [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385.aspx)
 
-[Windows Hardware Compatibility Program](../../compatibility/windows-hardware-compatibility-program.md)
+[Windows Hardware Compatibility Program](../compatibility/index.md)
 
 [HID over I2C](http://msdn.microsoft.com/library/windows/hardware/jj127208)
 

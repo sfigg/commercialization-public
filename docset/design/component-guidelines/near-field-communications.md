@@ -194,7 +194,7 @@ The table below describes the location for the antenna by form factor.
 
 [Proximity Devices Design Guide](http://go.microsoft.com/fwlink/?LinkId=237135)
 
-[Windows Hardware Compatibility Program](../../compatibility/windows-hardware-compatibility-program.md)
+[Windows Hardware Compatibility Program](../compatibility/index.md)
 
 [Minimum hardware requirements](../minimum/minimum-hardware-requirements-overview.md)
 

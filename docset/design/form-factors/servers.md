@@ -22,7 +22,7 @@ Server form factors usually include high performance/capacity components. For ex
 For detailed information on server hardware requirements, see
 
 -   [Minimum Hardware Requirements Overview](../minimum/minimum-hardware-requirements-overview.md)
--   [Windows Hardware Compatibility Program Requirements (System.Server)](../../compatibility/systems.md)
+-   [Windows Hardware Compatibility Program Requirements (System.Server)](../compatibility/systems.md)
 
  
 
