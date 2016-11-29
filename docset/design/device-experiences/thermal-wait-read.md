@@ -13,7 +13,7 @@ ms.assetid: 4EB9199A-BD40-4599-A6F3-F3E03ED1DFB0
 # THERMAL\_WAIT\_READ structure
 
 
-The **THERMAL\_WAIT\_READ** struct is used as the input buffer by the [IOCTL\_THERMAL\_READ\_TEMPERATURE](p_WEG_hardware.ioctl_thermal_read_temperature) IOCTL control code.
+The **THERMAL\_WAIT\_READ** struct is used as the input buffer by the [IOCTL\_THERMAL\_READ\_TEMPERATURE](ioctl-thermal-read-temperature.md) IOCTL control code.
 
 ## Syntax
 
@@ -58,11 +58,11 @@ The upper threshold for returning the new temperature given in tenths degrees Ke
 ## Related topics
 
 
-[Thermal Management in Windows](p_WEG_hardware.thermal_management_in_windows)
+[Thermal Management in Windows](thermal-management-in-windows.md)
 
-[Thermal Management Datatypes](p_WEG_hardware.thermal_management_datatypes)
+[Thermal Management Datatypes](thermal-management-datatypes.md)
 
-[Thermal Management IOCTLs](p_WEG_hardware.thermal_management_ioctls)
+[Thermal Management IOCTLs](thermal-management-ioctls.md)
 
  
 

@@ -42,7 +42,7 @@ The example in the following image shows that the modern standby session had ver
 
 ![sleep study report - high drain example](../images/sleepstudyhighdrainnooffender.png)
 
-For this example, a you can view a trace to identify the component that is causing the system to frequently exit the low-power state (DRIPS). For more information, see [Capture and View a WPA Trace for Modern Standby Issues](p_WEG_hardware.capture_and_view_a_wpa_trace_for_modern_standby_diagnostics).
+For this example, a you can view a trace to identify the component that is causing the system to frequently exit the low-power state (DRIPS). For more information, see [Capture and View a WPA Trace for Modern Standby Issues](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md).
 
 ## No software DRIPS or hardware DRIPS due to a missing driver
 

@@ -68,7 +68,7 @@ This section describes the supported power management configurations for devices
 </tr>
 <tr class="even">
 <td><p>[Wi-Fi power management for modern standby platforms](wi-fi-power-management-for-modern-standby-platforms.md)</p></td>
-<td><p>In a Windows hardware platform that implements the [modern standby power model](p_WEG_hardware.modern_standby), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.</p></td>
+<td><p>In a Windows hardware platform that implements the [modern standby power model](modern-standby.md), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.</p></td>
 </tr>
 </tbody>
 </table>

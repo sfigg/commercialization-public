@@ -121,7 +121,7 @@ The instant messaging and video chat scenarios are enumerated in the following t
 <tr class="odd">
 <td><p>System can receive IM notifications during modern standby.</p></td>
 <td><p>Ensure that all IMs received during modern standby are accompanied by sound notifications, while the display remains powered off. When the system wakes from modern standby, check that all IM messages have been received and that the badge on the lock screen is updated appropriately.</p></td>
-<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and View a WPA Trace for Modern Standby Diagnostics](p_WEG_Hardware.capture_and_view_a_wpa_trace_for_modern_standby_diagnostics) for information on how to capture a trace and analyze the information.</p></td>
+<td><p>If a notification is not received, a trace is needed to diagnose the problem. See [Capture and View a WPA Trace for Modern Standby Diagnostics](capture-and-view-a-wpa-trace-for-modern-standby-diagnostics.md) for information on how to capture a trace and analyze the information.</p></td>
 </tr>
 <tr class="even">
 <td><p>System can receive video call and audio conference call notifications during modern standby.</p></td>

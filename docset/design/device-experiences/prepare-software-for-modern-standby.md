@@ -155,7 +155,7 @@ The following table describes each phase of preparing software for modern standb
 
  
 
-After Windows has entered the resiliency phase, software is considered to be fully prepared for low-power operation. As soon as all devices have entered their low-power modes, the SoC and core chipset will enter the lowest idle power mode, as described in [Prepare Hardware for Modern Standby](p_WEG_hardware.prepare_hardware_for_modern_standby).
+After Windows has entered the resiliency phase, software is considered to be fully prepared for low-power operation. As soon as all devices have entered their low-power modes, the SoC and core chipset will enter the lowest idle power mode, as described in [Prepare Hardware for Modern Standby](prepare-hardware-for-modern-standby.md).
 
 **Note**  Currently, no means is available to system designers to change or influence the behavior of these phases—they are a core part of Windows behavior. The details are explained here to aid in system debugging and development.
 

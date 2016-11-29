@@ -13,7 +13,7 @@ ms.assetid: FBE35BCB-E31D-49E9-9AF9-0C8A0D9AEB97
 # Wi-Fi power management for modern standby platforms
 
 
-In a Windows hardware platform that implements the [modern standby power model](p_WEG_hardware.modern_standby), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.
+In a Windows hardware platform that implements the [modern standby power model](modern-standby.md), the Wi-Fi device maintains its connection to the network while the platform is in the modern standby power state. Correct power management of the Wi-Fi device—both during modern standby and when the display is turned on—is essential to achieving long battery life.
 
 Wi-Fi is a ubiquitous, medium-range wireless technology that enables high-bandwidth, low-latency communication between computer systems, devices, and the Internet.
 

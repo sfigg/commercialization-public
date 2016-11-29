@@ -22,7 +22,7 @@ As part of Automatic Maintenance, Windows performs periodic system maintenance a
 
 Modern standby, particularly when on AC power, is the perfect time to perform Automatic Maintenance because the user is guaranteed to not be interacting with the system when the screen is off. Windows will perform Automatic Maintenance on a modern standby PC at the scheduled time if the system is on AC power at the time.
 
-When an Automatic Maintenance task is running, desktop applications and services are allowed to run normally and the network is available. When Automatic Maintenance is being performed, [SleepStudy](p_WEG_hardware.modern_standby_sleepstudy) and other diagnostics indicate that the system is in the maintenance phase.
+When an Automatic Maintenance task is running, desktop applications and services are allowed to run normally and the network is available. When Automatic Maintenance is being performed, [SleepStudy](modern-standby-sleepstudy.md) and other diagnostics indicate that the system is in the maintenance phase.
 
 For more information, see Automatic Maintenance.
 

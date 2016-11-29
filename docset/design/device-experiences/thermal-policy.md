@@ -13,7 +13,7 @@ ms.assetid: C26D5AE4-92A8-4FBA-A930-79DF4B9A4E0B
 # THERMAL\_POLICY
 
 
-The THERMAL\_POLICY struct is used with the [IOCTL\_THERMAL\_READ\_POLICY](p_WEG_hardware.ioctl_thermal_read_policy) IO control code. Policy drivers use IOCTL\_THERMAL\_READ\_POLICY to set the thermal policy for their associated thermal zone. If no thermal policy is specified, then the kernel uses the policies specified by the ACPI objects and methods declared under the thermal zone, as described in the ACPI specification.
+The THERMAL\_POLICY struct is used with the [IOCTL\_THERMAL\_READ\_POLICY](ioctl-thermal-read-policy.md) IO control code. Policy drivers use IOCTL\_THERMAL\_READ\_POLICY to set the thermal policy for their associated thermal zone. If no thermal policy is specified, then the kernel uses the policies specified by the ACPI objects and methods declared under the thermal zone, as described in the ACPI specification.
 
 ## Syntax
 
@@ -53,7 +53,7 @@ Specifies the version of the policy structure. The current version is THERMAL\_P
 
 **WaitForUpdate**
 
-Specifies if the policy driver should complete the [IOCTL\_THERMAL\_READ\_POLICY](p_WEG_hardware.ioctl_thermal_read_policy) IOCTL immediately. If the state is up to date and WaitForUpdate is TRUE, the policy driver should pend the IOCTL in a cancellable state until one of its policy preferences has changed, at which point it should complete the IOCTL with the new preferences. If the state is not up to date or WaitForUpdate is FALSE, the policy driver should immediately complete the IOCTL with the new preferences.
+Specifies if the policy driver should complete the [IOCTL\_THERMAL\_READ\_POLICY](ioctl-thermal-read-policy.md) IOCTL immediately. If the state is up to date and WaitForUpdate is TRUE, the policy driver should pend the IOCTL in a cancellable state until one of its policy preferences has changed, at which point it should complete the IOCTL with the new preferences. If the state is not up to date or WaitForUpdate is FALSE, the policy driver should immediately complete the IOCTL with the new preferences.
 
 **Hibernate**
 
@@ -94,7 +94,7 @@ Specifies the index (from 0 through 9) of the current set of active cooling devi
 ## Related topics
 
 
-[THERMAL\_WAIT\_READ](p_WEG_hardware.thermal_wait_read)
+[THERMAL\_WAIT\_READ](thermal-wait-read.md)
 
 [Thermal management in Windows](thermal-management-in-windows.md)
 

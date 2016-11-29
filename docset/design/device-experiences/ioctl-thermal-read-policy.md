@@ -18,12 +18,12 @@ The IOCTL\_THERMAL\_READ\_POLICY input/output (I/O) control request is sent by t
 ## <a href="" id="input-parameters-"></a>Input Parameters
 
 
-To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014). The input buffer contains a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) struct that specifies the current policy that the kernel has for the thermal zone.
+To retrieve the input buffer, call [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014). The input buffer contains a [THERMAL\_POLICY](thermal-wait-read.md) struct that specifies the current policy that the kernel has for the thermal zone.
 
 ## Output Parameters
 
 
-To retrieve the output buffer, call [**WdfRequestRetrieveOutputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550018). The *Buffer* parameter points to a [THERMAL\_POLICY](p_WEG_hardware.thermal_wait_read) structure. Set the THERMAL\_POLICY's members to your policy driver's preferred thermal policy.
+To retrieve the output buffer, call [**WdfRequestRetrieveOutputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550018). The *Buffer* parameter points to a [THERMAL\_POLICY](thermal-wait-read.md) structure. Set the THERMAL\_POLICY's members to your policy driver's preferred thermal policy.
 
 ## I/O Status
 
@@ -33,9 +33,9 @@ Complete the request by calling [**WdfRequestCompleteWithInformation**](https://
 ## Related topics
 
 
-[IOCTL\_THERMAL\_READ\_TEMPERATURE](p_WEG_hardware.ioctl_thermal_read_temperature)
+[IOCTL\_THERMAL\_READ\_TEMPERATURE](ioctl-thermal-read-temperature.md)
 
-[Thermal management in Windows](p_WEG_hardware.thermal_management_in_windows)
+[Thermal management in Windows](thermal-management-in-windows.md)
 
  
 
