@@ -9,7 +9,7 @@ title: 'Windows Recovery Environment (Windows RE)'
 # Windows Recovery Environment (Windows RE)
 
 
-Windows Recovery Environment (WinRE) is a recovery environment that can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (Windows PE), and can be customized with additional drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. By default, WinRE is preloaded into the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 Technical Preview installations.
+Windows Recovery Environment (WinRE) is a recovery environment that can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (Windows PE), and can be customized with additional drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. By default, WinRE is preloaded into the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 installations.
 
 ![Screenshot shows options: Continue, Use a device, Troubleshoot, or Turn off your PC](images/dep-winre-menu.png)
 
@@ -28,7 +28,7 @@ WinRE includes these tools:
 
 -   **Automatic repair and other troubleshooting tools**. For more info, see [Windows RE Troubleshooting Features](windows-re-troubleshooting-features.md).
 -   **Push-button reset** (Windows 10 for desktop editions , Windows 8.1 and Windows 8 only). This tool enables your users to repair their own PCs quickly while preserving their data and important customizations, without having to back up data in advance. For more info, see [Push-Button Reset Overview](push-button-reset-overview.md).
--   **System image recovery** (Windows Server 2016 Technical Preview, Windows Server 2012 R2 and Windows Server 2012 only). This tool restores the entire hard drive. For more info, see [Recover the Operating System or Full Server](http://go.microsoft.com/fwlink/p/?LinkID=225039).
+-   **System image recovery** (Windows Server 2016, Windows Server 2012 R2 and Windows Server 2012 only). This tool restores the entire hard drive. For more info, see [Recover the Operating System or Full Server](http://go.microsoft.com/fwlink/p/?LinkID=225039).
 
 In addition, you can create your own custom recovery solution by using the [Windows Imaging API](http://go.microsoft.com/fwlink/p/?LinkId=245837), or by using the [Deployment Image Servicing and Management (DISM) API](http://go.microsoft.com/fwlink/p/?LinkID=245836).
 

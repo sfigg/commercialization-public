@@ -41,8 +41,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">The following list shows some tips to help you when configuring policies:
 
--   Separate multistring values by the Unicode &\#xF000; in the XML file.
--   End multistrings with &\#xF000;. For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;.
+-   Separate substring values by the Unicode &\#xF000; in the XML file.
 
 > **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
@@ -6884,7 +6883,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
-<p style="margin-left: 20px">Specifies the amount of time (in minutes) after the device is idle that will cause the device to become PIN or password locked.
+<p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
 > **Note**  This policy must be wrapped in an Atomic command.
 
@@ -7162,13 +7161,13 @@ Enables or disables Windows Tips / soft landing.
 > **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
-<p style="margin-left: 20px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If you select 2 (Windows spotlight with Enterprise spotlight enabled) and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
+<p style="margin-left: 20px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – None.
 -   1 (default) – Windows spotlight enabled.
--   2 – Windows Spotlight with Enterprise spotlight enabled.
+-   2 – placeholder only for future extension. Using this value has no effect.
 
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 <p style="margin-left: 20px">Prevents devices from showing feedback questions from Microsoft.
