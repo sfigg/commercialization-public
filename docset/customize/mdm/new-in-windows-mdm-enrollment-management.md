@@ -788,6 +788,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Updated the description of the following policies.<ul>
 <li>[Browser/Homepages](policy-configuration-service-provider#browser-homepages)</li>
 <li>[DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider#devicelock-maxinactivitytimedevicelock)</li>
+<li>[Experience/ConfigureWindowsSpotlightOnLockScreen](policy-configuration-service-provider#experience-configurewindowsspotlightonlockscreen)</li>
 </ul></p>
 </td>
 </tr>
