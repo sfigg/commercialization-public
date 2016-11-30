@@ -28,7 +28,7 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Alt](alt.md)</p></td>
+<td><p>[Alt](Microsoft-Windows-Embedded-KeyboardFilterService-alt.md)</p></td>
 <td><p>Blocks both Alt keys.</p></td>
 </tr>
 <tr class="even">
@@ -208,7 +208,7 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 <td><p>Blocks the Windows logo key+C key combination used to open charms.</p></td>
 </tr>
 <tr class="even">
-<td><p>[WindowsComma](windowscomma.md)</p></td>
+<td><p>[WindowsComma](Microsoft-Windows-Embedded-KeyboardFilterService-windowscomma.md)</p></td>
 <td><p>Blocks the Windows logo key+Comma key combination used to peek at the desktop.</p></td>
 </tr>
 <tr class="odd">
@@ -356,7 +356,7 @@ You can use KeyboardFilterService in to suppress undesirable key presses or key 
 <td><p>Blocks the Windows logo key+V key combination used to cycle through toasts in reverse order.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[WindowsW](windowsw.md)</p></td>
+<td><p>[WindowsW](Microsoft-Windows-Embedded-KeyboardFilterService-windowsw.md)</p></td>
 <td><p>Blocks the Windows logo key+W key combination used to open the Settings Search charm.</p></td>
 </tr>
 <tr class="even">

@@ -62,7 +62,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc--win7-microsoft-windows-security-spp-ux-sppcc.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-security-spp-ux-sppcc-](microsoft-windows-security-spp-ux-sppcc.md).
 
 ## XML Example
 

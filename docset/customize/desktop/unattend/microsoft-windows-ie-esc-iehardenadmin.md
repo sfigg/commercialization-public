@@ -66,7 +66,7 @@ The following XML output specifies that ESC is enabled for all administrators on
 
 [LocalIntranetSites](microsoft-windows-ie-internetexplorer-localintranetsites.md)
 
-[TrustedSites](microsoft-windows-ie-internetexplore-trustedsites.md)
+[TrustedSites](microsoft-windows-ie-internetexplorer-trustedsites.md)
 
 [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md)
 

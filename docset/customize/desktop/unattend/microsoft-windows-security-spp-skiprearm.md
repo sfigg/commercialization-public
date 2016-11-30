@@ -73,7 +73,7 @@ generalize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Security-SPP](microsoft-windows-security-spp-win7-microsoft-windows-security-spp.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-Security-SPP](microsoft-windows-security-spp.md).
 
 ## XML Example
 
@@ -87,7 +87,7 @@ The following example XML output specifies that the Windows licensing state will
 ## Related topics
 
 
-[Microsoft-Windows-Security-SPP](microsoft-windows-security-spp-win7-microsoft-windows-security-spp.md)
+[Microsoft-Windows-Security-SPP](microsoft-windows-security-spp.md)
 
  
 

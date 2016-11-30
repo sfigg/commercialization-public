@@ -67,7 +67,7 @@ The following XML output specifies that an end user cannot configure the system 
 ## Related topics
 
 
-[Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore-win7-microsoft-windows-audio-audiocore.md)
+[Microsoft-Windows-Audio-AudioCore](microsoft-windows-audio-audiocore.md)
 
  
 

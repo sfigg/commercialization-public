@@ -338,7 +338,7 @@ The following components are deprecated in Windows 10 and Windows Server 2016.
 <tbody>
 <tr class="odd">
 <td><p>[Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md)</p></td>
-<td><p>Deprecated. Use [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md) instead.</p></td>
+<td><p>Deprecated. Use [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md) instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft-Windows-Security-Licensing-SLC</p></td>

@@ -19,7 +19,7 @@ The `RemoveMXDW` setting is used to remove the Microsoft XPS Document Writer (MX
 
 1.  In your answer file, set `RemoveMXDW` to **1**.
 
-2.  In your answer file, remove the MXDW print queue and driver package installation files. To do this, add the Microsoft-Windows-Printing-XPSServices-Package package. In the **Actions** field, select **Remove**. For more information, see [Packages](aa238f9a-b69d-4761-a966-90f8e809d3fb).
+2.  In your answer file, remove the MXDW print queue and driver package installation files. To do this, add the Microsoft-Windows-Printing-XPSServices-Package package. In the **Actions** field, select **Remove**. 
 
 3.  Install Windows using your answer file.
 

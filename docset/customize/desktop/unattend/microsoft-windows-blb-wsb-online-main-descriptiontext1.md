@@ -80,7 +80,7 @@ The following XML output shows how to describe a recommended online backup servi
 ## Related topics
 
 
-[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main-win8-microsoft-windows-blb-wsb-online-main.md)
+[Microsoft-Windows-BLB-WSB-Online-Main](microsoft-windows-blb-wsb-online-main.md)
 
  
 

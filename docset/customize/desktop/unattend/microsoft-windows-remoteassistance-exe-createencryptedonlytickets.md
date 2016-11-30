@@ -26,7 +26,7 @@ ms.sitesec: msdn
 <tbody>
 <tr class="odd">
 <td><p><strong>true</strong></p></td>
-<td><p>Specifies that tickets must be encrypted. Only computers running Windows 7, Windows Vista, Windows Server 2008 R2, or Windows Server 2008 can be used to assist users on this computer.</p></td>
+<td><p>Specifies that tickets must be encrypted. /p></td>
 </tr>
 <tr class="even">
 <td><p><strong>false</strong></p></td>
@@ -50,7 +50,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe-win7-microsoft-windows-remoteassistance-exe.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-RemoteAssistance-Exe](microsoft-windows-remoteassistance-exe.md).
 
 ## XML Example
 
