@@ -12,6 +12,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
 **November 17, 2016**
+
 [Add Language Packs to Windows](add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
 
 **November 11, 2016**
@@ -106,19 +107,23 @@ The following changes are new for Windows 10, version 1607:
 
 
 **October 4, 2016**
+
 - New [optional feature](https://msdn.microsoft.com/library/windows/hardware/dn756780.aspx): **16GBFEATURESONDATA** added in Windows 10, version 1607. This feature moves several of the common inbox apps to the data partition. 
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
 **November 4, 2016**
-- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
-- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
+
+- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md).
+- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
 
 **October 17, 2016**
-- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
+
+- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md).
 
 **October 12, 2016**
-[Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): 
+
+[Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md): 
 -  New steps added to make sure the feature manifest, OEMCommonFM.xml, is included in the TestOEMInput.xml file.
 -  New network connection and troubleshooting steps added.
 
@@ -127,6 +132,7 @@ The following changes are new for Windows 10, version 1607:
 [Windows 10 IoT Core is now free](iot/set-up-your-pc-to-customize-iot-core.md). You no longer need an MSDN subscription or an account as a registered Microsoft OEM, though you do need a Microsoft account.
 
 **October 4, 2016**
+
 - The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English.
 
 **September 22, 2016**
