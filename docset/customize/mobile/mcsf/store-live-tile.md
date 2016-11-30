@@ -16,8 +16,7 @@ Microsoft recommends that partners keep the default Store live tile behavior. Ho
 
 Regardless of the default Store live tile settings, users have the option of changing the defaults by choosing the **Live Tile** settings in the Windows Store **Settings** screen.
 
-<a href="" id="sample---storelivetile"></a>**Sample:** StoreLiveTile  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
+
 
 <a href="" id="constraints---imagetimeonly"></a>**Constraints:** ImageTimeOnly  
 

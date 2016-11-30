@@ -12,9 +12,6 @@ ms.assetid: 275fcc7e-257f-4c88-9b52-37e924ab6f64
 
 When a user attempts to view map data for a location that was not preloaded or is not already installed on the phone, map data will be downloaded to dynamically render a map. This data is stored in a temporary cache that the Maps application maintains for this purpose. By default this cache is allowed to use a maximum of 128 MB of storage. For phones with a limited amount of available storage, OEMs can specify that the cache only use a maximum of 64 MB of storage. Microsoft recommends that this customization only be used for phones with a limited amount of internal storage space. Reducing the size of the online cache for Map data does not affect the size of the installed (or offline) maps.
 
-<a href="" id="sample---usesmallercache"></a>**Sample:** UseSmallerCache  
-[Use the customization samples](p_phCustomization.use_the_customization_samples)
-
 <a href="" id="constraints---firstvariationonly"></a>**Constraints:** FirstVariationOnly  
 
 <a href="" id="instructions-"></a>**Instructions:**  

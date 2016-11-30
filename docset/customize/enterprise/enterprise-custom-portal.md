@@ -50,7 +50,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Log in automatically</p></td>
-<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](create-a-kiosk-image.md#aa-other-settings).</p></td>
+<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](create-a-kiosk-image.md).</p></td>
 </tr>
 <tr class="even">
 <td><p>Prevent use of removable media</p></td>

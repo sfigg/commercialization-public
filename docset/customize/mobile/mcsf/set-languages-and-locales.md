@@ -54,9 +54,6 @@ There are several types of language settings that partners can control on the mo
 <tr class="odd">
 <td><p>Keyboard layout</p></td>
 <td><p>Nothing. 160 keyboard layouts are included on the device by default, and OEMs cannot modify, add, or delete keyboard layouts from the OS image.</p>
-<div class="alert">
-<strong>Note</strong>  An additional keyboard for Zawgyi is available by installing the MYANMAR_ZAWGYI_ENABLEMENT package. For more information, see [Optional features for building images](../../manufacture/mobile/optional-features-for-building-images.md).
-</div>
 <div>
  
 </div></td>

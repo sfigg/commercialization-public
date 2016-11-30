@@ -14,7 +14,6 @@ OEMs can configure ports on which a Wireless Application Protocol (WAP)-formatte
 
 Certain mobile operators require the ability to intercept SMS messages for processing by a mobile operator app rather than by the standard Microsoft messaging app. To meet these operator requirements, OEMs can specify string filters in a deny list to be matched against incoming SMS messages intended for operator partner apps that are not installed on the device. For more information on how to do this, see [SMS intercept deny list](sms-intercept-deny-list.md). In addition, operators can also require the ability to configure the port on which a Wireless Application Protocol (WAP)-formatted message can be intercepted by the mobile operator app. The incoming WAP message must have its destination port set to be one of the configured ports in order for the message to be accepted. To configure the correct port, OEMs can use the `SmsInterceptPorts` setting that's documented in this topic.
 
-For more information about the app, see [Route an SMS message to a partner application](p_phPartAppDev.route_an_sms_message_to_a_partner_application).
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-SIM** value

@@ -56,7 +56,7 @@ Partners can use the **LowPowerSupported** and **AlwaysOnAlwaysConnected** setti
 
 2.  Specify an `Owner`.
 
-3.  To specify whether the Wi-Fi driver supports transitions from the D0 state to the D2 state and the required low power features as listed in [AOAC in Windows Phone 8.1](p_phDrivComp.aoac_in_windows_phone_81), configure the value for `LowPowerSupported` to one of the following values:
+3.  To specify whether the Wi-Fi driver supports transitions from the D0 state to the D2 state and the required low power features, configure the value for `LowPowerSupported` to one of the following values:
 
     <table>
     <colgroup>
