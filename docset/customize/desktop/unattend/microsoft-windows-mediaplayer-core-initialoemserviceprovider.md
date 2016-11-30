@@ -48,7 +48,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core-win7-microsoft-windows-mediaplayer-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-MediaPlayer-Core](microsoft-windows-mediaplayer-core.md).
 
 ## XML Example
 

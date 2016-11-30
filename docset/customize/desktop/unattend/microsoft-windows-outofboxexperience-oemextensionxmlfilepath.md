@@ -14,7 +14,7 @@ ms.sitesec: msdn
 
 
 **Warning**  
-This setting is deprecated. By default, the Initial Configurations Tasks application does not appear in Windows Server 2012. Use [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc-win7-microsoft-windows-servermanager-svrmgrnc.md) instead.
+This setting is deprecated. By default, the Initial Configurations Tasks application does not appear in Windows Server 2012. Use [Microsoft-Windows-ServerManager-SvrMgrNc](microsoft-windows-servermanager-svrmgrnc.md) instead.
 
  
 
@@ -55,7 +55,7 @@ specialize
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience-win7-microsoft-windows-outofboxexperience.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-OutOfBoxExperience](microsoft-windows-outofboxexperience.md).
 
 ## XML Example
 

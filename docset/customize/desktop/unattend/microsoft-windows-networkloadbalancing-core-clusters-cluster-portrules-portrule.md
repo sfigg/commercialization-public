@@ -66,7 +66,7 @@ To enable this Network Load Balancing setting, the NetworkLoadBalancingFullServe
 <td><p>Specifies the start port used by the port rule.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Timeout](timeout--win7-microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-timeout.md)</p></td>
+<td><p>[Timeout](microsoft-windows-networkloadbalancing-core-clusters-cluster-portrules-portrule-timeout.md)</p></td>
 <td><p>Specifies the number of seconds for which the client affinity would be preserved across configuration changes in a cluster.</p></td>
 </tr>
 <tr class="odd">

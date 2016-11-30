@@ -48,7 +48,7 @@ windowsPE
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe.md).
+For a list of the supported Windows editions and architectures that this component supports, see [microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md).
 
 ## XML Example
 
@@ -81,7 +81,7 @@ The following XML output specifies the UNC paths to additional locations for dev
 ## Related topics
 
 
-[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe--win7-microsoft-windows-pnpcustomizationswinpe.md)
+[microsoft-windows-pnpcustomizationswinpe-](microsoft-windows-pnpcustomizationswinpe.md)
 
  
 
