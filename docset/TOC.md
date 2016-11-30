@@ -97,7 +97,7 @@
 
 ## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
-### [Set dark theme](customize/desktop/set-dark-theme.md)
+### [Set dark theme](customize/desktop/set-dark-mode.md)
 
 ### [Windows System Image Manager Technical Reference](customize/desktop/wsim/windows-system-image-manager-technical-reference.md)
 #### [Windows System Image Manager Overview Topics](customize/desktop/wsim/windows-system-image-manager-overview-topics.md)
@@ -122,7 +122,7 @@
 ##### [Manage Files and Folders in a Distribution Share](customize/desktop/wsim/manage-files-and-folders-in-a-distribution-share.md)
 ##### [Add Packages to a Distribution Share](customize/desktop/wsim/add-packages-to-a-distribution-share.md)
 #### [Windows System Image Manager Reference](customize/desktop/wsim/windows-system-image-manager-reference-topics.md)
-##### [Component Settings and Properties Reference](customize/desktop/wsim/component-settings-and-properties-referencewin8.md)
+##### [Component Settings and Properties Reference](customize/desktop/wsim/component-settings-and-properties-reference.md)
 ##### [Windows System Image Manager Architecture](customize/desktop/wsim/windows-system-image-manager-architecture.md)
 ##### [Windows System Image Manager Supported Platforms](customize/desktop/wsim/windows-system-image-manager-supported-platforms.md)
 
@@ -179,8 +179,8 @@
 #### [Overlay for Unified Write Filter (UWF)](customize/enterprise/uwfoverlay.md)
 #### [Service UWF-protected devices](customize/enterprise/service-uwf-protected-devices.md)
 ##### [Antimalware support on UWF-protected devices](customize/enterprise/uwf-antimalware-support.md)
+##### [Apply Windows updates to UWF-protected devices](customize/enterprise/uwf-apply-windows-updates.md)
 ##### [Apply OEM updates to UWF-protected devices](customize/enterprise/uwf-apply-oem-updates.md)
-##### [Apply Windows updates to UWF-protected devices](customize/enterprise/apply-windows-updates-to-uwf-protected-devices.md)
 ##### [UWF master servicing script](customize/enterprise/uwf-master-servicing-script.md)
 ##### [UWF servicing screen saver](customize/enterprise/uwf-servicing-screen-saver.md)
 #### [Troubleshooting Unified Write Filter (UWF)](customize/enterprise/uwftroubleshooting.md)
@@ -229,7 +229,7 @@
 ### [Enterprise shared storage](customize/mobile/enterprise-shared-storage.md)
 
 ### [Customize using the mobile MCSF framework](customize/mobile/mcsf/provisioning-and-customization.md)
-#### [Managed Centralized Settings Framework (MCSF)](customize/mobile/mcsf/managed-centralized-settings-framework-mcsf-.md)
+#### [Managed Centralized Settings Framework (MCSF)](customize/mobile/mcsf/managed-centralized-settings-framework-mcsf.md)
 #### [Customization answer file](customize/mobile/mcsf/customization-answer-file.md)
 #### [MCSF to Windows Provisioning settings map](customize/mobile/mcsf/mcsf-to-windows-provisioning-settings-map.md)
 #### [MCSF settings not supported in Windows Provisioning](customize/mobile/mcsf/mcsf-settings-not-supported-in-windows-provisioning.md)
@@ -300,7 +300,7 @@
 ##### [Control Panel device icon](customize/mobile/mcsf/control-panel-device-icon.md)
 ##### [Phone image in the phone app](customize/mobile/mcsf/phone-image-in-the-windows-phone-app.md)
 #### [Customizations for email](customize/mobile/mcsf/customizations-for-email.md)
-##### [Light or dark theme in email](customize/mobile/mcsf/light-or-dark-theme-in-email.md)
+##### [Light or dark theme in email](customize/mobile/mcsf/light-or-dark-mode-in-email.md)
 #### [Customizations for maps](customize/mobile/mcsf/customizations-for-maps.md)
 ##### [Map data on an SD card and map preload](customize/mobile/mcsf/map-data-on-an-sd-card-and-map-preload.md)
 ##### [Maps for phones shipped in China](customize/mobile/mcsf/maps-for-phones-shipped-in-china.md)

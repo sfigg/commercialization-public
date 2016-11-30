@@ -1,5 +1,5 @@
 ---
-title: Light or dark theme in email
+title: Light or dark mode in email
 description: The email application consists of several screens, including the List View, Settings, Automatic Replies, Search, Inbox Linking, Read, and Compose.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 81ec5d29-1be6-4fbc-81aa-39ccb04087ba
 ---
 
-# Light or dark theme in email
+# Light or dark mode in email
 
 
 The email application consists of several screens, including the List View, Settings, Automatic Replies, Search, Inbox Linking, Read, and Compose. By default, the email background for all pages except Read and Compose match the system theme. The Read and Compose pages always have a light background. Partners can specify that the entire email application always has a light background, but users do not have access to this setting. However, if the user turns on high-contrast mode, it overrides all other settings, and all screens use the high contrast settings.
