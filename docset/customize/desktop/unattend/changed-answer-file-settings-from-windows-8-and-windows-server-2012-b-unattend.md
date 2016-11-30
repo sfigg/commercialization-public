@@ -96,7 +96,7 @@ These settings are new in Windows 8.1 Update, Windows 8.1 and Windows Server 20
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> screen, in position SquareOrDesktopTile12. New for Windows 8.1 Update.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Microsoft-Windows-SystemSettings\[DisplayNetworkSelection](displaynetworkselection--win8-microsoft-windows-systemsettingsdisplaynetworkselection.md)</p></td>
+<td><p>Microsoft-Windows-SystemSettings\[DisplayNetworkSelection](microsoft-windows-systemsettingsdisplaynetworkselection.md)</p></td>
 <td><p>Specifies whether to always show the Network Selection control in the <strong>Mobile Broadband Properties</strong> dialog.</p></td>
 </tr>
 <tr class="even">
@@ -166,7 +166,7 @@ These Windows 8.1 and Windows Server 2012 R2 settings have changed from Windows
 <td><p>Added new color scheme for Windows 8.1.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Networking-MPSSVC-Svc: [DomainProfile_DisableNotifications](domainprofile-disablenotifications-win7-networking-mpssvc-svcdomainprofile-disablenotifications.md), [PrivateProfile_DisableNotifications](privateprofile-disablenotifications-win7-networking-mpssvc-svcprivateprofile-disablenotifications.md), and [PublicProfile_DisableNotifications](publicprofile-disablenotifications-win7-networking-mpssvc-svcpublicprofile-disablenotifications.md).</p></td>
+<td><p>Networking-MPSSVC-Svc: [DomainProfile_DisableNotifications](networking-mpssvc-svcdomainprofile-disablenotifications.md), [PrivateProfile_DisableNotifications](networking-mpssvc-svcprivateprofile-disablenotifications.md), and [PublicProfile_DisableNotifications](networking-mpssvc-svcpublicprofile-disablenotifications.md).</p></td>
 <td><p>Multiple settings</p></td>
 <td><p>Changed default value for Windows RT 8.1.</p></td>
 </tr>
@@ -341,20 +341,6 @@ These settings in the Microsoft-Windows-IE-InternetExplorer component are remove
 </tbody>
 </table>
 
- 
-
-## Related topics
-
-
-[Changed Answer File Settings from Windows 7 and Windows Server 2008 R2](changed-answer-file-settings-from-windows-7-and-windows-server-2008-r2-b-unattend.md)
-
-[Changed Answer File Settings from Windows Vista and Windows Server 2008](changed-answer-file-settings-from-windows-vista-and-windows-server-2008-b-unattend.md)
-
-[Changed Answer File Settings from Windows XP and Windows Server 2003](changed-answer-file-settings-from-windows-xp-and-windows-server-2003-b-unattend.md)
-
- 
-
- 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_unattend\p_unattend%5D:%20Changed%20answer%20file%20settings%20for%20Windows%208.1%20and%20Windows%20Server%202012%20R2%20%20RELEASE:%20%2810/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

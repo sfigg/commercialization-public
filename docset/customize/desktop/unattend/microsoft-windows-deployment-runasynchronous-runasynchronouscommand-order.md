@@ -94,7 +94,7 @@ The following XML output shows how to set asynchronous commands.
 ## Related topics
 
 
-[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronou-runasynchronouscommand.md)
+[RunAsynchronousCommand](microsoft-windows-deployment-runasynchronous-runasynchronouscommand.md)
 
  
 

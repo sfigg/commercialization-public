@@ -33,15 +33,15 @@ Administrators can set values for the following settings to control virtualizati
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[EnableVirtualizationBasedSecurity](enablevirtualizationbasedsecurity.md)</p></td>
+<td><p>[EnableVirtualizationBasedSecurity](Microsoft-Windows-DeviceGuard-Unattend-enablevirtualizationbasedsecurity.md)</p></td>
 <td><p>Use to enable virtualization-based security.</p></td>
 </tr>
 <tr class="even">
-<td><p>[HypervisorEnforcedCodeIntegrity](hypervisorenforcedcodeintegrity.md)</p></td>
+<td><p>[HypervisorEnforcedCodeIntegrity](Microsoft-Windows-DeviceGuard-Unattend-hypervisorenforcedcodeintegrity.md)</p></td>
 <td><p>Specifies the code integrity that will be enforced for the hypervisor, which is a layer of software under the OS that runs virtual machines.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LsaCfgFlags](lsacfgflags.md)</p></td>
+<td><p>[LsaCfgFlags](Microsoft-Windows-DeviceGuard-Unattend-lsacfgflags.md)</p></td>
 <td><p>Use to enable the Credential Guard, which uses virtualization-based security to isolate secrets so that only privileged system software can access them when they are stored on disk or in memory. For more information, see [Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=623856).</p></td>
 </tr>
 </tbody>

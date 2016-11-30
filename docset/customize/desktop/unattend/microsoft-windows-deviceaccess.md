@@ -31,7 +31,7 @@ The `Microsoft-Windows-DeviceAccess` component specifies settings for enabling d
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SetRegionSpecificPrivacyAccessPolicy](setregionspecificprivacyaccesspolicy.md)</p></td>
+<td><p>[SetRegionSpecificPrivacyAccessPolicy](Microsoft-Windows-DeviceAccess-setregionspecificprivacyaccesspolicy.md)</p></td>
 <td><p>Enables the China CTA policy.</p></td>
 </tr>
 </tbody>

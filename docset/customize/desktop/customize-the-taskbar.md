@@ -81,7 +81,7 @@ There are eight steps to customize the taskbar with up to three additional pinne
     1.  Put the path of the mounted TaskbarLayoutModification.xml file as the registry key’s value, for example, %AppData%\\Local\\Microsoft\\Windows\\Shell\\TaskbarLayoutModification.xml.
     2.  Add this file to the image.
 
-5.  Prepare to run this registry key by adding a [FirstLogonCommands](../unattend/firstlogoncommands-win7-microsoft-windows-shell-setupfirstlogoncommands.md) in an Unattend file.
+5.  Prepare to run this registry key by adding a [FirstLogonCommands](../unattend/microsoft-windows-shell-setup-firstlogoncommands.md) in an Unattend file.
 6.  Add the Unattend file to the image.
 7.  Unmount the image.
 8.  Apply and boot the image.

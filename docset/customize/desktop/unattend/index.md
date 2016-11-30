@@ -13,7 +13,7 @@ ms.sitesec: msdn
 # Unattended Windows Setup Reference
 
 
-The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 8.1 Update, Windows 8.1, Windows Server 2012 R2, Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2008 R2, and Windows Server 2008.
+The Windows Unattended Setup Reference provides a complete listing of all the settings that you can use to automate the configuration and the deployment of Windows 10.
 
 The Windows Unattended Setup Reference is organized by Windows components and Windows packages, in the same order that the Windows System Image Manager (Windows SIM) tool displays each Windows component and package.
 
@@ -36,12 +36,8 @@ Information about how to use Windows SIM and other deployment tools is available
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p>[Unattend to Windows Provisioning settings map](unattend-to-windows-provisioning-setting-map.md)</p></td>
-<td><p>This topic shows the Windows 10 for desktop editions Unattend components and settings (which are configurable in [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922447)) and their equivalent Windows Provisioning setting group and setting name (which are configurable in [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113)).</p></td>
-</tr>
 <tr class="even">
-<td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1607](changed-answer-file-settings-for-windows-10-build-1606.md)</p></td>
+<td><p>[Changed answer file settings for Windows 10 for desktop editions, build 1607](changed-answer-file-settings-for-windows-10-build-1607.md)</p></td>
 <td><p>This topic describes Windows 10, version 1607 answer-file settings that have changed since Windows 10 for desktop editions, Build 1511.</p></td>
 </tr>
 <tr class="odd">

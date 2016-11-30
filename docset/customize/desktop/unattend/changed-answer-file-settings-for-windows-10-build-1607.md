@@ -39,11 +39,11 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Microsoft-Windows-RemoteAssistance-Exe-fEnableChatControl](fenablechatcontrol.md)</p></td>
+<td><p>[Microsoft-Windows-RemoteAssistance-Exe-fEnableChatControl](Microsoft-Windows-RemoteAssistance-Exe-fenablechatcontrol.md)</p></td>
 <td><p>New.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](enablestartmenu.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](Microsoft-Windows-Shell-Setup-enablestartmenu.md)</p></td>
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
@@ -76,15 +76,15 @@ This topic describes Windows 10, version 1607 answer-file settings that have ch
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](firstruntask-7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](firstruntask-12.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask-firstruntask7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-firstruntask12.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-Themes-UWPAppsUseLightTheme](uwpappsuselighttheme.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-Themes-UWPAppsUseLightTheme](Microsoft-Windows-Shell-Setup-Themes-uwpappsuselighttheme.md)</p></td>
 <td><p>Specifies whether the dark mode is applied.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-TwinUI-CustomProtocol](customprotocol.md)</p></td>
+<td><p>[Microsoft-Windows-TwinUI-CustomProtocol](Microsoft-Windows-TwinUI-customprotocol.md)</p></td>
 <td><p>Specifies advanced pen settings.</p></td>
 </tr>
 </tbody>
@@ -135,15 +135,15 @@ The following settings are no longer available in Windows 10, version 1607:
 <td><p>The setting and its ancestor elements have been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)\InPlaceCrypto</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)\InPlaceCrypto</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)\ModifiedWriteMaximum</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)\ModifiedWriteMaximum</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md) \ReadDoubleBuffering</p></td>
+<td><p>[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md) \ReadDoubleBuffering</p></td>
 <td><p>The setting has been removed.</p></td>
 </tr>
 <tr class="even">
