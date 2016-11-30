@@ -511,7 +511,7 @@
 #### [Sample scripts](manufacture/desktop/windows-deployment-sample-scripts-sxs.md)
 #### [Lab 1: Install Windows PE](manufacture/desktop/install-windows-pe-sxs.md)
 #### [Lab 2: Deploy Windows using a script](manufacture/desktop/deploy-windows-with-a-script-sxs.md)
-#### [Lab 3: Add device drivers (.inf-style)](manufacture/desktop/add-device-drivers.md) (manufacture/desktop/includes basics on mounting images)
+#### [Lab 3: Add device drivers (.inf-style)](manufacture/desktop/add-device-drivers.md)
 #### [Lab 4: Add updates and upgrade the edition](manufacture/desktop/servicing-the-image-with-windows-updates-sxs.md)
 #### [Lab 5: Add languages](manufacture/desktop/add-drivers-langs-universal-apps-sxs.md)
 #### [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](manufacture/desktop/add-universal-apps-sxs.md)
