@@ -11,7 +11,7 @@ title: 'Lab 5: Add languages'
 
 *    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
 
-*    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+*    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
 
 *    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
 
@@ -252,4 +252,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     State : Installed
     ```
 	
-Next step: [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md)
+Next step: [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)

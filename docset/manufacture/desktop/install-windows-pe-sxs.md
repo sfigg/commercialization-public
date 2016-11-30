@@ -42,7 +42,7 @@ Common scenarios:
 
 Note, when you add more packages to WinPE, it slows WinPE performance and boot time. Only add additional packages when necessary.  
 
-For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](desktop/winpe-optimize.md) to help reduce the boot time.
+For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](winpe-optimize.md) to help reduce the boot time.
 
 1.  Mount the WinPE image. Mounting an image maps the contents of a file to a location where you can view and modify them.
 
