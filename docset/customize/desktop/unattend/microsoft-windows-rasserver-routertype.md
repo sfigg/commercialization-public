@@ -72,7 +72,7 @@ specialize
 ## Applies To
 
 
-For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md).
+For the list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-RasServer](microsoft-windows-rasserver.md).
 
 ## XML Example
 
@@ -87,7 +87,7 @@ The following XML output shows how to enable RAS and set the router type for LAN
 ## Related topics
 
 
-[Microsoft-Windows-RasServer](microsoft-windows-rasserver-win7-microsoft-windows-rasserver.md)
+[Microsoft-Windows-RasServer](microsoft-windows-rasserver.md)
 
  
 

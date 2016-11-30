@@ -66,7 +66,7 @@ generalize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md).
 
 ## XML Example
 

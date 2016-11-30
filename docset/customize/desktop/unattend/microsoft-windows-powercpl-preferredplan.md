@@ -81,7 +81,7 @@ specialize
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-powercpl](microsoft-windows-powercpl-win7-microsoft-windows-powercpl.md).
+For a list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-powercpl](microsoft-windows-powercpl.md).
 
 ## XML Example
 
@@ -97,7 +97,7 @@ The following XML output shows how to configure a GUID for `PreferredPlan`.
 
 [Microsoft-Windows-stobject](microsoft-windows-stobject.md)
 
-[Microsoft-Windows-powercpl](microsoft-windows-powercpl-win7-microsoft-windows-powercpl.md)
+[Microsoft-Windows-powercpl](microsoft-windows-powercpl.md)
 
  
 

@@ -51,7 +51,7 @@ specialize
 ## Applies to
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core-win7-microsoft-windows-printing-spooler-core.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-Printing-Spooler-Core](microsoft-windows-printing-spooler-core.md).
 
  
 

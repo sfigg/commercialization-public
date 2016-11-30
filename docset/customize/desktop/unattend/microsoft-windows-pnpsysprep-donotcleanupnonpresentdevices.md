@@ -87,7 +87,7 @@ Though this setting is specified in the **generalize** configuration pass, it co
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md).
 
 ## XML Example
 
@@ -104,7 +104,7 @@ The following XML output specifies that drivers for devices that are not on the 
 
 [PersistAllDeviceInstalls](microsoft-windows-pnpsysprep-persistalldeviceinstalls.md)
 
-[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep-win7-microsoft-windows-pnpsysprep.md)
+[Microsoft-Windows-PnpSysprep](microsoft-windows-pnpsysprep.md)
 
 [Maintain Driver Configurations When Capturing a Windows Image](http://go.microsoft.com/fwlink/p/?linkid=184946)
 

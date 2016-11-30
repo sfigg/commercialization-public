@@ -64,7 +64,7 @@ oobeSystem
 ## Applies To
 
 
-For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md).
+For a list of the Windows editions and architectures that this component supports, see [microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md).
 
 ## XML Example
 
@@ -80,7 +80,7 @@ The following example configures Windows 8.1 to not automatically encrypt the op
 ## Related topics
 
 
-[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver--win8-microsoft-windows-securestartup-filterdriver.md)
+[microsoft-windows-securestartup-filterdriver-](microsoft-windows-securestartup-filterdriver.md)
 
  
 
