@@ -75,7 +75,7 @@ Some BSPs are included in each folder as a start. You can [create your own BSPs]
 
 ### <span id="Products"></span><span id="products"></span><span id="PRODUCTS"></span>Products
 
-Source file for product configurations. Use our samples (SampleA, SampleB, SampleC) or [create your own](iot-core-manfuacturing-guide.md).
+Source file for product configurations. Use our samples (SampleA, SampleB, SampleC) or [create your own](iot-core-manufacturing-guide.md).
 
 ### <span id="Updates"></span><span id="updates"></span><span id="UPDATES"></span>Updates
 
