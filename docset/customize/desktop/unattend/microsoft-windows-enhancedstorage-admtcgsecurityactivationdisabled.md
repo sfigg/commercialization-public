@@ -73,7 +73,7 @@ The following XML output shows how to configure Windows so that Windows does not
 
 [Encrypted Drives (eDrive) Reference](http://go.microsoft.com/fwlink/?LinkId=217371)
 
-[Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm-win8-microsoft-windows-enhancedstorage-adm.md)
+[Microsoft-Windows-EnhancedStorage-Adm](microsoft-windows-enhancedstorage-adm.md)
 
 [DisableEncryptedDiskProvisioning](microsoft-windows-setup-diskconfiguration-disableencrypteddiskprovisioning.md)
 

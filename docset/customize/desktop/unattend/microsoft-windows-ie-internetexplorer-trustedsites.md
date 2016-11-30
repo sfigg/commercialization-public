@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the Trusted sites zone.
 
-For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md).
+For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md).
 
 **Note**  
 This setting is applicable only for Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 and Windows Server 2008. The Internet Explorer ESC must also be enabled for this setting to apply.

@@ -17,7 +17,7 @@ ms.sitesec: msdn
 
 When Internet Explorer ESC is enabled, it reduces the exposure of your server to potential security attacks from Web pages that do not belong to the local intranet zone.
 
-For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc-win7-microsoft-windows-ie-esc.md).
+For more information, see [Microsoft-Windows-IE-ESC](microsoft-windows-ie-esc.md).
 
 ## Values
 

@@ -132,7 +132,7 @@ The following table describes these settings:
 <td><p>Internet Explorer 8 through Internet Explorer 11</p></td>
 </tr>
 <tr class="even">
-<td><p>[Help_Page](help-page-win7-microsoft-windows-ie-internetexplorer-help-page.md)</p></td>
+<td><p>[Help_Page](microsoft-windows-ie-internetexplorer-help-page.md)</p></td>
 <td><p>Specifies the URL to your technical support website.</p></td>
 <td><p>Internet Explorer 7 through Internet Explorer 11</p></td>
 </tr>

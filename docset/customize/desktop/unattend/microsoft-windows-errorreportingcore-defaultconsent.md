@@ -58,7 +58,7 @@ specialize
 ## Applies To
 
 
-For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore-win7-microsoft-windows-errorreportingcore.md).
+For the list of the Windows editions and architectures that this component supports, see [Microsoft-Windows-ErrorReportingCore](microsoft-windows-errorreportingcore.md).
 
 ## XML Example
 

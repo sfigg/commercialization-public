@@ -45,7 +45,7 @@ specialize
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-servicefax_unattend.md) | **FaxPrinterIsShared**
+[Microsoft-Windows-Fax-Service](microsoft-windows-fax-service.md) | [FaxUnattend](microsoft-windows-fax-service-fax-unattend.md) | **FaxPrinterIsShared**
 
 ## Applies To
 
@@ -89,7 +89,7 @@ The following XML output shows how to set fax settings.
 ## Related topics
 
 
-[FaxUnattend](microsoft-windows-fax-servicefax_unattend.md)
+[FaxUnattend](microsoft-windows-fax-service-fax-unattend.md)
 
  
 

@@ -52,7 +52,7 @@ offlineServicing
 ## Applies To
 
 
-For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings-win7-microsoft-windows-lua-settings.md).
+For a list of the supported Windows editions and architectures that this component supports, see [Microsoft-Windows-LUA-Settings](microsoft-windows-lua-settings.md).
 
 ## XML Example
 
