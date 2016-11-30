@@ -13,7 +13,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **November 17, 2016**
 
-[Add Language Packs to Windows](add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
+[Add Language Packs to Windows](desktop/add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
 
 **November 11, 2016**
 
@@ -114,16 +114,16 @@ The following changes are new for Windows 10, version 1607:
 
 **November 4, 2016**
 
-- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md).
-- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
+- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md).
+- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
 
 **October 17, 2016**
 
-- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md).
+- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md).
 
 **October 12, 2016**
 
-[Lab 1d: Add a provisioning package to an image](desktop/add-a-provisioning-package-to-an-image.md): 
+[Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md): 
 -  New steps added to make sure the feature manifest, OEMCommonFM.xml, is included in the TestOEMInput.xml file.
 -  New network connection and troubleshooting steps added.
 
