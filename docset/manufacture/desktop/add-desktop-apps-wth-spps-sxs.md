@@ -21,7 +21,7 @@ When you apply SPPs to a Compact OS system, the applications in that SPP are sin
 
 **Notes**
 
-*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
+*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md). New versions of these files can simply be copied into the image or to the destination device directly. 
 
 ## Best practices while capturing applications: use clean installations
 

@@ -10,7 +10,7 @@ title: 'Windows ADK IoT Core Add-ons: contents'
 
 The [Windows 10 IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include OEM-specific tools to create images for your IoT Core devices with your apps, board support packages (BSPs), settings, drivers, and features.
 
-The [IoT Core manufacturing guides](iot-core-manufacturing-guide.md) walks you through building images with these tools.
+The [IoT Core manufacturing guide](iot-core-manufacturing-guide.md) walks you through building images with these tools.
 
 ## <span id="Root_folder"></span>Root folder
 
