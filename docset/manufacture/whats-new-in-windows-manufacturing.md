@@ -1,8 +1,8 @@
 ---
 author: kpacquer
-Description: 'Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized for smaller devices with or without a display. IoT Core uses the rich, extensible Universal Windows Platform (UWP) API for building great solutions.'
+Description: 'What's new in Windows manufacturing'
 MSHAttr: 'PreferredLib:/library'
-title: What's new in IoT Core manufacturing
+title: 'What's new in Windows manufacturing'
 ---
 
 # What's new in Windows manufacturing
@@ -10,6 +10,13 @@ title: What's new in IoT Core manufacturing
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
+
+
+**November 30, 2016**
+
+OEM deployment lab: [Get the sample scripts](windows-deployment-sample-scripts-sxs.md): ApplyImage.bat now prompts for an image number. 
+
+[WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md#highperformance): Added instructions to build the high-performance power scheme into  WinPE by default.
 
 **November 17, 2016**
 

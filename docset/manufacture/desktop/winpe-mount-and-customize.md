@@ -8,7 +8,6 @@ title: 'WinPE: Mount and Customize'
 
 # WinPE: Mount and Customize
 
-
 Add drivers to Windows Preinstallation Environment (WinPE), such as graphics drivers or network drivers.
 
 Common customizations:
@@ -22,6 +21,7 @@ Common customizations:
 -   [Add an app](#addapp). Note, WinPE only supports legacy apps.
 -   [Add temporary storage (scratch space)](#scratchspace). If your application requires temporary file storage, you can reserve extra memory space in RAM.
 -   [Replace the background image](#addwallpaper)
+-   [Set the power scheme to high performance](#highperformance)
 -   [Add answer file settings](#addanswerfilesettings)
 
 **Get the Windows Assessment and Deployment Kit with Windows PE tools**
@@ -133,25 +133,37 @@ Common customizations:
 <span id="AddWallpaper"></span><span id="addwallpaper"></span><span id="ADDWALLPAPER"></span>
 **Replace the background image**
 
-1.  If you've got multiple versions of WinPE, you can set the background image so you can instantly tell which version of WinPE is running.
+If you've got multiple versions of WinPE, you can set the background image so you can instantly tell which version of WinPE is running.
 
-    Change the security permissions of the WinPE background image file (`\windows\system32\winpe.jpg`). This allows you to modify or delete the file.
+Change the security permissions of the WinPE background image file (`\windows\system32\winpe.jpg`). This allows you to modify or delete the file.
 
-    1.  In Windows Explorer, navigate to `C:\WinPE_amd64\mount\windows\system32`.
+1.  In Windows Explorer, navigate to `C:\WinPE_amd64\mount\windows\system32`.
 
-    2.  Right-click the `C:\WinPE_amd64\mount\windows\system32\winpe.jpg` file, and select **Properties** &gt; **Security** tab &gt; **Advanced**.
+2.  Right-click the `C:\WinPE_amd64\mount\windows\system32\winpe.jpg` file, and select **Properties** &gt; **Security** tab &gt; **Advanced**.
 
-    3.  Next to Owner, select **Change**. Change the owner to **Administrators**.
+3.  Next to Owner, select **Change**. Change the owner to **Administrators**.
 
-    4.  Apply the changes, and exit the Properties window to save changes.
+4.  Apply the changes, and exit the Properties window to save changes.
 
-    5.  Right-click the `C:\WinPE_amd64\mount\windows\system32\winpe.jpg` file, and select **Properties** &gt; **Security** tab &gt; **Advanced**.
+5.  Right-click the `C:\WinPE_amd64\mount\windows\system32\winpe.jpg` file, and select **Properties** &gt; **Security** tab &gt; **Advanced**.
 
-    6.  Modify the permissions for **Administrators** to allow full access.
+6.  Modify the permissions for **Administrators** to allow full access.
 
-    7.  Apply the changes, and exit the Properties window to save changes.
+7.  Apply the changes, and exit the Properties window to save changes.
 
-2.  Replace the `winpe.jpg` file with your own image file.
+8.  Replace the `winpe.jpg` file with your own image file.
+
+<span id="HighPerformance"></span><span id="highperformance"></span><span id="HIGHPERFORMANCE"></span>
+**Set the power scheme to high performance**
+
+Note: Using the high performance power scheme can make the device run hotter than usual. 
+
+1.  In Notepad, edit the file: `C:\WinPE_amd64\mount\windows\system32\startnet.cmd`, adding a command to set the power scheme to High Performance.
+
+    ``` syntax
+    winpeinit
+    powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 
+    ```
 
 <span id="AddAnswerFileSettings"></span><span id="addanswerfilesettings"></span><span id="ADDANSWERFILESETTINGS"></span>
 **Add answer file settings**

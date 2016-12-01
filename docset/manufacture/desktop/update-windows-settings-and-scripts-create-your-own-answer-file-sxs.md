@@ -106,7 +106,9 @@ You can specify which configuration pass to add new settings:
 
 More common settings: 
 
-*  Activate Windows without OEM Activation 3.0 (OA3.0) by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. For enterprises, this can be a volume license key.
+*  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
+
+   `OPK X21-08790 Win Home 10 1607 32 64 English OPK\Print  Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf`.
 
 *  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
 
@@ -190,4 +192,4 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
-Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+Next steps: [Lab 8: Add a license agreement (OOBE.xml)](add-a-license-agreement.md)

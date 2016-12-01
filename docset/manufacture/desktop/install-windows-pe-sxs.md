@@ -34,33 +34,17 @@ The Windows PE USB must be at least 512MB and at most 32GB. It should not be a W
 	
 ## <span id="Add_to_WinPE"></span>Add to WinPE (Usually not needed)
 
-Common scenarios:
+Note, when you add more packages to WinPE, it slows WinPE performance and boot time. Only add additional packages when necessary.  
 
-* **Add a video or network driver**. (WinPE includes generic video and network drivers, but in some cases, additional drivers are needed to show the screen or connect to the network.)
+Common customizations:
+
+* **Add a video or network driver**. (WinPE includes generic video and network drivers, but in some cases, additional drivers are needed to show the screen or connect to the network.). To learn more, see [WinPE: Add drivers](winpe-add-drivers.md).
 
 * **Add PowerShell scripting support**. To learn more, see [WinPE: Adding Windows PowerShell support to Windows PE](winpe-adding-powershell-support-to-windows-pe.md). PowerShell scripts are not included in this lab.
 
-Note, when you add more packages to WinPE, it slows WinPE performance and boot time. Only add additional packages when necessary.  
+* **Set the power scheme to high-performance**. Speeds deployment. Note, our sample deployment scripts already set this scheme automatically. See  [WinPE: Mount and Customize: High Performance](desktop/winpe-mount-and-customize.md#highperformance).
 
-For devices with limited RAM and storage (for example, 1GB RAM/16GB storage): After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](winpe-optimize.md) to help reduce the boot time.
-
-1.  Mount the WinPE image. Mounting an image maps the contents of a file to a location where you can view and modify them.
-
-    ``` syntax
-    Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
-    ```
-
-2.  Add drivers.
-
-    ``` syntax
-    Dism /Add-Driver /Image:"C:\WinPE_amd64\mount" /Driver:"C:\SampleDriver\driver.inf"
-    ```
-
-3.  Unmount the WinPE image:
-
-    ``` syntax
-    Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
-    ```
+* **Optimize WinPE**: Recommended for devices with limited RAM and storage (for example, 1GB RAM/16GB storage). After you add drivers or other customizations to Windows PE, see [WinPE: Optimize and shrink the image](winpe-optimize.md) to help reduce the boot time.
 
 ## <span id="Create_a_bootable_drive"></span>Create a bootable drive
 

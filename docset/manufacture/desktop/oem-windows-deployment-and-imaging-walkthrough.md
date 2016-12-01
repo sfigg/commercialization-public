@@ -45,7 +45,6 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
 **Final tasks**
-
 *  [Lab 10: Update the recovery image](update-the-recovery-image.md)
 *  [Lab 11: Shrink your image size](shrink-your-image-size.md)
 *  [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
