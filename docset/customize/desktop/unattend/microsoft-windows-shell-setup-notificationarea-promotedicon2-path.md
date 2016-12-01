@@ -75,7 +75,7 @@ The following XML output shows how to promote a new notification-area icon to be
 
 [PromotedIcon2](microsoft-windows-shell-setup-notificationarea-promotedicon2.md)
 
-[GUID](microsoft-windows-shell-setup-notificationare-promotedicon2-guid.md)
+[GUID](microsoft-windows-shell-setup-notificationarea-promotedicon2-guid.md)
 
  
 

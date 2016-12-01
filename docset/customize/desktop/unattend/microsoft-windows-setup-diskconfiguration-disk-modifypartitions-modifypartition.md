@@ -88,7 +88,7 @@ Extended partitions cannot be modified.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartition-smodifypartition-active.md)</p></td>
+<td><p>[Active](microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-active.md)</p></td>
 <td><p>Specifies whether the partition is active.</p></td>
 </tr>
 <tr class="even">

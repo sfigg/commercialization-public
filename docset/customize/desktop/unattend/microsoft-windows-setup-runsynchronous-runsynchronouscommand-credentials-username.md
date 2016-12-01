@@ -45,7 +45,7 @@ windowsPE
 ## Parent Hierarchy
 
 
-[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md) | **UserName**
+[microsoft-windows-setup-](microsoft-windows-setup.md) | [RunSynchronous](microsoft-windows-setup-runsynchronous.md) | [RunSynchronousCommand](microsoft-windows-setup-runsynchronous-runsynchronouscommand.md) | [Credentials](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials.md) | **UserName**
 
 ## Applies To
 
@@ -82,7 +82,7 @@ The following XML output shows how to set synchronous commands.
 ## Related topics
 
 
-[Credentials](microsoft-windows-setup-runsynchronousrunsynchronouscommandcredentials.md)
+[Credentials](microsoft-windows-setup-runsynchronous-runsynchronouscommand-credentials.md)
 
  
 

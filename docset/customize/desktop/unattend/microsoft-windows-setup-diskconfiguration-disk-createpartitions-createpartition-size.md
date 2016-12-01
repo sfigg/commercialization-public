@@ -65,9 +65,8 @@ For a list of supported Windows editions and architectures that this component s
 
 ### Setting a Primary Partition to Fill the Available Space on a Drive
 
-The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive on a BIOS-based system. The first partition is 300 MB. The second partition extends to fill the remainder of the hard disk. This is shown in the following illustration.
+The following XML output for the `DiskConfiguration` setting shows how to create two partitions on a hard drive on a BIOS-based system. The first partition is 300 MB. The second partition extends to fill the remainder of the hard disk. 
 
-![partitions: system, windows](opk-partitions-mbr-default.jpg)
 
 ``` syntax
 <DiskConfiguration>
@@ -131,9 +130,7 @@ The following XML output for the `DiskConfiguration` setting shows how to create
 
 ### Setting a Logical Partition to Fill the Available Space in an Extended Partition
 
-The following XML output for the `DiskConfiguration` setting shows how to create an extended partition that fills the remainder of the drive on a BIOS-based system. The extended partition includes two logical partitions. The first logical partition is 15 GB. The second logical partition extends to fill the remainder of the extended partition. This is shown in the following illustration.
-
-![example of more than four partitions](opk-partitions-mbr-morethanfour.jpg)
+The following XML output for the `DiskConfiguration` setting shows how to create an extended partition that fills the remainder of the drive on a BIOS-based system. The extended partition includes two logical partitions. The first logical partition is 15 GB. The second logical partition extends to fill the remainder of the extended partition. 
 
 ``` syntax
 <DiskConfiguration>

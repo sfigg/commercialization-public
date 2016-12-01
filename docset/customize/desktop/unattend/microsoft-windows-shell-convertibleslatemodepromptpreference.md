@@ -71,7 +71,7 @@ For a list of the Windows editions and architectures that this component support
 ## Related topics
 
 
-[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons-win8-microsoft-windows-gpiobuttons.md)
+[Microsoft-Windows-GPIOButtons](microsoft-windows-gpiobuttons.md)
 
 [ConvertibleSlateMode](microsoft-windows-gpiobuttons-convertibleslatemode.md)
 

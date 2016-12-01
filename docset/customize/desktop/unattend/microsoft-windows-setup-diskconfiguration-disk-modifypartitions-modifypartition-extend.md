@@ -78,9 +78,7 @@ For a list of the Windows editions and architectures that this component support
 
 ### Specify a Logical Partition to Fill the Remainder of an Extended Partition
 
-The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two logical partitions. This XML example includes the creation of an extended partition that is set to extend to the end of the hard disk. The second logical partition, labeled **Logical2**, is set to extend to the end of the extended partition. The following illustration shows these partitions.
-
-![example of more than four partitions](opk-partitions-mbr-morethanfour.jpg)
+The following XML output for the `DiskConfiguration` setting shows partition modifications for a BIOS-based computer with two logical partitions. This XML example includes the creation of an extended partition that is set to extend to the end of the hard disk. The second logical partition, labeled **Logical2**, is set to extend to the end of the extended partition. 
 
 ``` syntax
 <DiskConfiguration>
