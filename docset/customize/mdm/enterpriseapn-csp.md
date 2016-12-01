@@ -9,10 +9,11 @@ ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
 
 # EnterpriseAPN CSP
 
+<div style="color:red">[Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</div>
 
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
-> **Note** The EnterpriseAPN configuration service provider (CSP) is not supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
+Starting in the next major update to Windows 10, the CellularSettings CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
 The following image shows the EnterpriseAPN configuration service provider in tree format.
 
