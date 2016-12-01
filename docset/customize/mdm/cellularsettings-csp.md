@@ -10,7 +10,7 @@ ms.assetid: ce8b6f16-37ca-4aaf-98b0-306d12e326df
 # CellularSettings CSP
 
 
-<div style="color:red">[Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</div>
+<div style="color:red">[Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</div>  
 
 The CellularSettings configuration service provider is used to configure cellular settings on a mobile device.
 
