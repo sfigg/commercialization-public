@@ -27,10 +27,16 @@ Use these scripts together with DiskPart to format and set up the hard disk part
 Use this script apply a Windows image to a new device.
 
 ``` syntax
-@echo ApplyImage.bat
-@echo     Applies a Windows image to a desktop PC.
-@echo     To run this script, boot the device using WinPE first.
-@echo     NOTE: This script erases the primary hard drive
+@echo Apply-Image.bat
+@echo     Run from the reference device in the WinPE environment
+@echo     This script erases the primary hard drive and applies a new image
+@echo.
+@echo     Note: This script uses separate scripts to configure the drive partions:
+@echo     CreatePartitions-BIOS.txt or CreatePartitions-UEFI.txt
+@echo     These scripts must be in the same folder as ApplyImage.bat.
+@echo.
+@echo UPDATE (NOVEMBER 2016):
+@echo * This script now prompts for an image index number if one isn't given.
 @echo.
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
@@ -40,13 +46,13 @@ Use this script apply a Windows image to a new device.
 @echo   After the script is complete, use apply-recovery.bat to finish
 @echo   setting up the recovery tools.
 @echo.
-@echo * Checks whether the PC is booted into BIOS or UEFI mode
-@echo   and applies the appropriate disk configuration.
-@echo.
-@echo * Includes support for the /EA variables for quicker
+@echo * This script creates a now includes support for the /EA variables for quicker
 @echo   image capture and recovery.
 @echo.
-@echo * Checks to see if you're booted into Windows PE.
+@echo * This script now includes support for the /EA variables for quicker
+@echo   image capture and recovery.
+@echo.
+@echo * This script now checks to see if you're booted into Windows PE.
 @echo.
 @if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
 @if not exist X:\Windows\System32 goto END
@@ -54,15 +60,26 @@ Use this script apply a Windows image to a new device.
 @if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
 @if %1.==. goto END
 @echo *********************************************************************
+if not %2.==. goto INDEXSELECTED
+:WHICHIMAGE
+@echo Which Windows image should we apply?
+@echo (Default is image index 1)
+@SET /P INDEX=Type an image index number, or press L to list the images:
+@if %INDEX%.==. set INDEX=1
+@if %INDEX%==l set INDEX=L
+@if %INDEX%==L Dism /Get-ImageInfo /ImageFile:%1
+@if %INDEX%==L goto WHICHIMAGE
+:INDEXSELECTED
+@echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
 for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
 @echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
+@if %Firmware%.==. echo ERROR: Can't figure out which firmware we're on.
+@if %Firmware%.==. echo        Common fix: In the command above:
+@if %Firmware%.==. echo             for /f "tokens=2* delims=	 "
+@if %Firmware%.==. echo        ...replace the spaces with a TAB character followed by a space.
+@if %Firmware%.== goto END
 @if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
 @if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo *********************************************************************
@@ -82,14 +99,8 @@ call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @echo  == Apply the image to the Windows partition ==
 @SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
 @if %COMPACTOS%.==y. set COMPACTOS=Y
-@echo Does this image include Extended Attributes?
-@echo    (If you're not sure, type N).
-@SET /P EA=(Y or N):
-@if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+if %COMPACTOS%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:%INDEX% /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:%INDEX% /ApplyDir:W:\ /EA
 @echo *********************************************************************
 @echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:

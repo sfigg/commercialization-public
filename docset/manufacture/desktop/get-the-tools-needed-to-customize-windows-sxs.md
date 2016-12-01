@@ -16,9 +16,9 @@ Here's what you'll need to start testing and deploying devices:
 
 Here's how we'll refer to them:
 
--   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) and for modifying Windows images. We recommend using Windows 10 or Windows 8.1 with the latest updates. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as mounting .ISO images.
+-   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) and for modifying Windows images. We recommend using Windows 10. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as running PowerShell scripts or mounting .ISO images.
 
-    For most tasks, you can use either an x86 or x64 PC. If you're creating x86 images, you'll need an x86-based PC for one particular one-time task, [generating a catalog file for x86-based PCs](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
+    For most tasks, you can use either an x86 or x64 PC. If you're creating x86 images, you'll need an x86-based PC (or virtual machine) for a one-time task of [generating a catalog file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
 
 -   **Reference device**: A test PC or tablet that represents all of the devices in a single model line; for example, the *Fabrikam Notebook PC Series 1*. This device must meet the Windows 10 minimum hardware requirements.
 
@@ -55,9 +55,8 @@ This lab assumes the 64-bit architecture, so if you’re using the 32-bit versio
 
 ### Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1607
 
-[Windows ADK for Windows 10, version 1607](http://go.microsoft.com/fwlink/?LinkId=526803)
-or
-X21-05999: Win 10 ADK
+[Windows ADK for Windows 10, version 1607](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK)
+or X21-08803: Win 10 1607 32/64 OPK ADK
 
 ### Customizations: Windows updates, languages, features, apps, and Microsoft Office
 
@@ -104,7 +103,7 @@ Here’s how to set up your PC.
 
 1.  If you have a previous version of the Windows Assessment and Deployment Kit (ADK), uninstall it.
 
-2.  Download the version of the [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows that you’re installing. **Run** the installer.
+2.  Download the version of the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#winADK) that matches the version of Windows that you’re installing. **Run** the installer.
 
 3.  Click **Next** &gt; **Next** &gt; **Accept** to accept the defaults and to join the Customer Experience Improvement Program.
 

@@ -143,4 +143,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 3.  Check the Start Menu and taskbar and make sure the apps you selected are pinned correctly.
 	
-Next step: [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)]
+Next step: [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
