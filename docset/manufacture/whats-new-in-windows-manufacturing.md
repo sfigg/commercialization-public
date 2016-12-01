@@ -14,7 +14,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **November 30, 2016**
 
-OEM deployment lab: [Get the sample scripts](windows-deployment-sample-scripts-sxs.md): ApplyImage.bat now prompts for an image number. 
+OEM deployment lab: [Get the sample scripts](desktop/windows-deployment-sample-scripts-sxs.md): ApplyImage.bat now prompts for an image number. 
 
 [WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md#highperformance): Added instructions to build the high-performance power scheme into  WinPE by default.
 
