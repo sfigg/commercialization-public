@@ -9,6 +9,7 @@ ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
 
 # Configuration service provider reference
 
+<div style="color:red">[Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</div>
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
@@ -114,10 +115,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[CellularSettings CSP](cellularsettings-csp.md)</td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -144,10 +145,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -304,10 +305,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
-<td><img src="images/crossmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
