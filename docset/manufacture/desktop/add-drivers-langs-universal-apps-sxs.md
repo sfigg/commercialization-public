@@ -1,19 +1,19 @@
 ---
 author: KPacquer
-Description: 'Lab 5: Add languages'
+Description: 'Lab 4: Add languages'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 5: Add languages'
+title: 'Lab 4: Add languages'
 ---
 
-# <span id="Add_languages"></span>Lab 5: Add languages
+# <span id="Add_languages"></span>Lab 4: Add languages
 
 **Notes** 
 
-*    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
+- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](servicing-the-image-with-windows-updates-sxs.md).
 
-*    **Add languages before apps**. This includes universal Windows apps, the **inbox apps (required)** and desktop applications. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
+- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  reinstall the apps. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
 
-*    **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
+- **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Mount_the_image"></span>Mount the image
 
@@ -62,8 +62,8 @@ The following table shows the types of language packages and components availabl
 <tr class="even">
 <td align="left">Language interface pack</td>
 <td align="left"><code>Microsoft-Windows-Client-Language-Interface-Pack_x64_ca-es</code></td>
-<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES. To learn more, see <a href="available-language-packs-for-windows.md">Available Language Packs for Windows</a>.</td>
-<td align="left"><p>UI text, including basic Cortana capabilities.</p></td>
+<td align="left">Requires a specific fully-localized or partially-localized language pack. Example: ca-ES requires es-ES.</td>
+<td align="left"><p>UI text, including basic Cortana capabilities. To learn more, see <a href="available-language-packs-for-windows.md">Available Language Packs for Windows</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Basic</td>
@@ -76,8 +76,7 @@ The following table shows the types of language packages and components availabl
 <td align="left">Fonts</td>
 <td align="left"><code>Microsoft-Windows-LanguageFeatures-Fonts-Thai-Package</code></td>
 <td align="left">None</td>
-<td align="left"><p>Fonts.</p>
-<p>Required for some regions to render text that appears in documents. Example, th-TH requires the Thai font pack. To learn more, see <a href="features-on-demand-v2--capabilities.md">Features On Demand V2 (Capabilities).</p></td>
+<td align="left"><a href="features-on-demand-v2--capabilities.md#Fonts">Fonts required for some regions</a>. Example, th-TH requires the Thai font pack.</td>
 </tr>
 <tr class="odd">
 <td align="left">Optical character recognition</td>
@@ -107,7 +106,7 @@ The following table shows the types of language packages and components availabl
 <td align="left">Retail Demo experience</td>
 <td align="left"><code>Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package</code></td>
 <td align="left">Basic</td>
-<td align="left">[Retail Demo experience](https://msdn.microsoft.com/windows/uwp/monetize/retail-demo-experience)</td>
+<td align="left"><a href="https://msdn.microsoft.com/windows/uwp/monetize/retail-demo-experience">Retail Demo Experience (RDX)</a></td>
 </tr>
 </tbody>
 </table>
@@ -204,8 +203,6 @@ The following table shows the types of language packages and components availabl
     ```
 
     where *C* is the drive letter of the drive that contains the image.
-    ```
-
 
 ## <span id="Unmount_the_images"></span> Unmount the images
 
@@ -252,4 +249,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     State : Installed
     ```
 	
-Next step: [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
+Next step: [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)

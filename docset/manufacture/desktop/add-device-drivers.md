@@ -150,4 +150,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 * When creating several devices with the identical hardware configuration, you can speed up installation time and first boot-up time by [maintaining driver configurations when capturing a Windows image](maintain-driver-configurations-when-capturing-a-windows-image.md). 
 
 
-Next step: [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+Next step: [Lab 4: Add languages](manufacture/desktop/add-drivers-langs-universal-apps-sxs.md)
