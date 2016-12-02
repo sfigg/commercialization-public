@@ -74,6 +74,11 @@ Specifies the failed update status (for example, download, install).
 
 Supported operation is Get.
 
+<a href="" id="failedupdates-failed-update-guid-revisionnumber"></a>**FailedUpdates/*Failed Update Guid*/RevisionNumber**  
+The revision number for the update that must be passed in server to server sync to get the metadata for the update.
+
+Supported operation is Get.
+
 <a href="" id="installedupdates"></a>**InstalledUpdates**  
 The updates that are installed on the device.
 
@@ -81,6 +86,11 @@ Supported operation is Get.
 
 <a href="" id="installedupdates-installed-update-guid"></a>**InstalledUpdates/****_Installed Update Guid_**  
 UpdateIDs that represent the updates installed on a device.
+
+Supported operation is Get.
+
+<a href="" id="installedupdates-installed-update-guid-revisionnumber"></a>**InstalledUpdates/*Installed Update Guid*/RevisionNumber**  
+The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 Supported operation is Get.
 
@@ -120,6 +130,11 @@ Supported operation is Get.
 
 <a href="" id="pendingrebootupdates-pending-reboot-update-guid-installedtime"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/InstalledTime**  
 The time the update is installed.
+
+Supported operation is Get.
+
+<a href="" id="pendingrebootupdates-pending-reboot-update-guid-revisionnumber"></a>**PendingRebootUpdates/*Pending Reboot Update Guid*/RevisionNumber**  
+The revision number for the update that must be passed in server to server sync to get the metadata for the update.
 
 Supported operation is Get.
 
