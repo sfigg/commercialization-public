@@ -9,14 +9,14 @@ ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
 
 # CM\_CellularEntries CSP
 
-<div style="color:red">[Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</div>  
-
+> [!WARNING]
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 The CM\_CellularEntries configuration service provider is used to configure the General Packet Radio Service (GPRS) entries on the device. It defines each GSM data access point.
 
 Starting in the next major update to Windows 10, the CM\_CellularEntries CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
-> **Note**  
+> **Note**  
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
  Starting in the next major update to Windows 10, the CellularSettings CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
@@ -191,6 +191,8 @@ Optional. Type: String. Specifies the purposes of the connection by a comma-sepa
 -   MMS - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8
 -   IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13
 -   SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD
+-   Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB  (added in the next version of Windows 10)
+-   Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364  (added in the next version of Windows 10)
 
 ## Additional information
 
