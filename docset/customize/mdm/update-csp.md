@@ -9,6 +9,8 @@ ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
 
 # Update CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
@@ -17,31 +19,31 @@ The following diagram shows the Update configuration service provider in tree fo
 ![update csp diagram](images/provisioning-csp-update.png)
 
 <a href="" id="update"></a>**Update**  
-The root node.
+    The root node.
 
 Supported operation is Get.
 
 <a href="" id="approvedupdates"></a>**ApprovedUpdates**  
-Node for update approvals and EULA acceptance on behalf of the end-user.
+     Node for update approvals and EULA acceptance on behalf of the end-user.
 
-> **Note** When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
+> [!NOTE]
+> When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
 The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
 The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (i.e., updates to the virus and spyware definitions on devices) and Security Updates (i.e., product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
-> **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
-
- 
+> [!NOTE]
+> For the Windows 10 build, the client may need to reboot after additional updates are added.
 
 Supported operations are Get and Add.
 
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/****_Approved Update Guid_**  
-Specifies the update GUID.
+  Specifies the update GUID.
 
-To auto-approve a class of updates, you can specify the [Update Classifications](http://go.microsoft.com/fwlink/p/?LinkId=526723) GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+  To auto-approve a class of updates, you can specify the [Update Classifications](http://go.microsoft.com/fwlink/p/?LinkId=526723) GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. There are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
-Supported operations are Get and Add.
+   Supported operations are Get and Add.
 
 Sample syncml:
 
