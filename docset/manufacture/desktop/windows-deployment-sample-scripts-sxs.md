@@ -290,7 +290,7 @@ list volume
 ```
 
 
-## <span id="start_layout__layoutmodification.xml_"></span><span id="START_LAYOUT__LAYOUTMODIFICATION.XML_"></span>Start layout (LayoutModification.xml)
+## <span id="Start_Layout"></span><span id="layoutmodification.xml"></span><span id="LAYOUTMODIFICATION.XML"></span>Start layout (LayoutModification.xml)
 
 
 The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
@@ -485,10 +485,7 @@ Sample **LayoutModification.xml**:
 
 5.  Save the LayoutModification.xml file.
 
-    Once you’ve created the LayoutModification.xml file, you’ll need to place this file in the correct system location using either Windows ICD or classic-style deployment. For more information on how to do this, see:
-
-    -   Windows ICD - Lab 1, Step 7: Customize the Start layout
-    -   Classic-style deployment - Lab 2a, Step 5: Add the files you need to modify the Start layout
+    Once you’ve created the LayoutModification.xml file, you’ll need to place this file in the correct system location. For more information on how to do this, see [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md).
 
     If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
@@ -710,7 +707,6 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 ```
 
 ## <span id="Keeping_Windows_settings_through_a_recovery"></span><span id="keeping_windows_settings_through_a_recovery"></span><span id="KEEPING_WINDOWS_SETTINGS_THROUGH_A_RECOVERY"></span>Keeping Windows settings through a recovery
-
 
 Windows doesn't automatically save settings created through unattend.xml setup files, nor Windows Start Menu customizations created with LayoutModification.xml during a full-system reset, nor first-login info from oobe.xml.
 

@@ -14,8 +14,8 @@ The WinRE image is included inside the Windows 10 and Windows Server 2016 imag
 
 You should update your recovery image to ensure a consistent recovery experience whenever you:
 * Add boot-critical .inf-style drivers, such as the graphics and storage drivers for [Lab 1: Install Windows PE](install-windows-pe-sxs.md).
-* Add major updates to Windows, like general distribution releases ([Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)).   
-* Add new languages, like you did in [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md).  (This isn’t always possible, as not all languages have Windows RE equivalents.)
+* Add major updates to Windows, like general distribution releases ([Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)).   
+* Add new languages, like you did in [Lab 4: Add languages](add-drivers-langs-universal-apps-sxs.md).  (This isn’t always possible, as not all languages have Windows RE equivalents.)
 
  **Notes**  
  -  This lab assumes you’d rather keep winre.wim inside of install.wim to keep your languages and drivers in sync. If you’d like to save a bit of time on the factory floor, and if you’re OK managing these images separately, you may prefer to remove winre.wim from the image and apply it separately.
@@ -28,7 +28,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
-2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" "C:\Images\install-backup.wim"`)
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
@@ -60,9 +60,15 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\PnP.Media.V1\media1.inf" /LogPath=C:\mount\dism.log
     ```
 
+    Example: Add a collection of drivers from a folder and its subfolders, use the /Recurse option:
+
+    ``` syntax
+    Dism /Add-Driver /Image:"C:\mount\winre" /Driver:"C:\Drivers\SampleDrivers" /Recurse /LogPath=C:\mount\dism.log
+    ```
+
 ## <span id="Add_updates_to_the_image"></span>Step 4: Add updates to the image
 
-1.  Get a Windows update package. Use the same update package that you used for Windows in [Lab 4: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md). For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
+1.  Get a Windows update package. Use the same update package that you used for Windows in [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md). For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com/). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
 
 2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
 
