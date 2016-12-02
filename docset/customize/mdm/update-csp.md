@@ -26,17 +26,17 @@ The following diagram shows the Update configuration service provider in tree fo
 <a href="" id="approvedupdates"></a>**ApprovedUpdates**  
 <p style="margin-left: 20px">Node for update approvals and EULA acceptance on behalf of the end-user.
 
-<p style="margin-left: 20px"> > [!NOTE]
-<p style="margin-left: 20px"> > When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
+> [!NOTE]
+> When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
 <p style="margin-left: 20px">The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
 <p style="margin-left: 20px">The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (i.e., updates to the virus and spyware definitions on devices) and Security Updates (i.e., product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
-<p style="margin-left: 20px"> > [!NOTE]
-<p style="margin-left: 20px"> > For the Windows 10 build, the client may need to reboot after additional updates are added.
+> [!NOTE]
+> For the Windows 10 build, the client may need to reboot after additional updates are added.
 
-Supported operations are Get and Add.
+<p style="margin-left: 20px">Supported operations are Get and Add.
 
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/****_Approved Update Guid_**  
 <p style="margin-left: 20px">Specifies the update GUID.
@@ -46,15 +46,14 @@ Supported operations are Get and Add.
 <p style="margin-left: 20px">Supported operations are Get and Add.
 
 <p style="margin-left: 20px">Sample syncml:
-
-```
+<p style="margin-left: 20px"><code>
 <LocURI>./Vendor/MSFT/Update/ApprovedUpdates/%7ba317dafe-baf4-453f-b232-a7075efae36e%7d</LocURI>
-```
+</code>
 
 <a href="" id="approvedupdates-approved-update-guid-approvedtime"></a>**ApprovedUpdates/*Approved Update Guid*/ApprovedTime**  
 <p style="margin-left: 20px">Specifies the time the update gets approved.
 
-Supported operations are Get and Add.
+<p style="margin-left: 20px">Supported operations are Get and Add.
 
 <a href="" id="failedupdates"></a>**FailedUpdates**  
 <p style="margin-left: 20px">Specifies the approved updates that failed to install on a device.
@@ -67,7 +66,7 @@ Supported operations are Get and Add.
 <p style="margin-left: 20px">Supported operation is Get.
 
 <a href="" id="failedupdates-failed-update-guid-hresult"></a>**FailedUpdates/*Failed Update Guid*/HResult**  
-T<p style="margin-left: 20px">he update failure error code.
+<p style="margin-left: 20px">The update failure error code.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
