@@ -112,6 +112,24 @@ More common settings:
 
 *  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
 
+*  Set the Internet Explorer default search engine: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
+
+   Example:
+
+   ```syntax
+   <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SearchScopes>
+     <Scope wcm:action="add">             <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
+       <FaviconURL>http://www.bing.com/favicon.ico</FaviconURL>
+       <ScopeKey>Bing</ScopeKey>
+       <ScopeDefault>true</ScopeDefault>
+       <ScopeDisplayName>Bing</ScopeDisplayName>
+       <ScopeUrl>http://www.bing.com/search?q={searchTerms}&amp;form=&PRNAM1&amp;src=PRNAM1&amp;pc=NMTE</ScopeUrl>
+     </Scope>
+   </SearchScopes>
+   <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
+   ``` 
+
 **Step 4: Save the answer file**
 
 -   Save the answer file, for example: **C:\\AnswerFiles\\BootToAudit-x64.xml**.
@@ -131,6 +149,18 @@ More common settings:
     md C:\Fabrikam
     C:\Windows\System32\dxdiag /t C:\Fabrikam\DxDiag-TestLogFiles.txt
     ```
+
+**Step 5: Add a registry key**
+Registry settings can be added by creating a .reg file, and then running either with a script or by adding an Asynchronous command (Components\\6 auditUser\\amd64\_Microsoft-Windows-Deployment\_neutral\\RunAsynchronous).
+
+Common registry settings:
+
+*  Set the Edge Browser default search engine: 
+   
+   The only value that needs to be set in the Edge browser is the PartnerSearchCode which is a string that will be concatenated to the Bing search URL (which is fixed in Edge browser). The PartnerSearchCode is the only thing that is configurable in the Edge browser.
+
+   The registry key is located here: HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Configuration. Create a key called “PartnerSearchCode” and place the OEM Edge partner code there.
+
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
 
@@ -192,4 +222,4 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
-Next steps: [Lab 8: Add a license agreement (OOBE.xml)](add-a-license-agreement.md)
+Next steps: [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)

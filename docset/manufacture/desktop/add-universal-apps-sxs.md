@@ -9,14 +9,23 @@ title: 'Lab 6: Add universal Windows apps, start tiles, and taskbar pins'
 
 Add apps to your images to support different customer needs. Some have different installation procedures:
 
--  **Windows universal platform apps (UWP apps)**: These can be added or re-installed using tools described in this topic.    
+-  **Windows universal platform apps (UWP apps)**: These can be added or re-installed using tools described in this topic.
+
 -  **Windows desktop applications**: We'll show you how to add those in [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
 
 **Notes** 
 
-*    **Add updates before languages.** These include hotfixes, general distribution releases, or service packs. If you add an update later, you'll need to re-add the language.
+- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](servicing-the-image-with-windows-updates-sxs.md).
 
-*    **Add languages before apps**. This includes universal Windows apps and desktop applications. If you add a language later, you'll need to re-install the apps.
+- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](add-universal-apps-sxs.md).
+
+- **There's no longer monthly updates of the inbox apps**. This process changed for Windows 10, version 1607. See the [communication on the MyOEM Portal](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/mda/Pages/COMM-MDAinboxApUpdtRlsPrcssChng.aspx):
+
+  - In the future, Microsoft will release updated versions of the apps only when Microsoft releases full updated versions of Windows.
+
+  - OEMs will need to incorporate the updated apps at the same time they incorporate the broader Windows release.
+
+- **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all Store Program terms and conditions, and related documents. 
 
 ## <span id="Mount_the_image"></span>Mount the image
 
@@ -38,40 +47,41 @@ Note, in previous versions, it was required to first remove inbox apps. This is 
 
 NOTE: For Windows 10 version 1607, app bundles now only contain the dependency packages that pertain to the app. You no longer need to check the prov.xml file for what dependencies to install. Install all dependency packages found in the folder.
 
-1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. There will not be monthly updates of these apps. 
+1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. 
 
 2.  Extract the package to a folder, for example, E:\apps\amd64.
 
 3.  Add/reinstall the inbox apps. The following example shows you how to reinstall the Get Started inbox app. Repeat these steps for each of the inbox apps (with the exception of AppConnector) by substituting the appropriate package.
 
+    Partial example: 
+
     ``` syntax
     Dism /Add-ProvisionedAppxPackage /Image:c:\mount\windows /PackagePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.appxbundle /LicensePath:e:\apps\amd64\Microsoft.3DBuilder_8wekyb3d8bbwe.xml /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x64.14.00.appx /DependencyPackagePath:e:\apps\amd64\Microsoft.VCLibs.x86.14.00.appx
     ```
 
-    See [Sample scripts](windows-deployment-sample-scripts-sxs.md#Reinstall_Windows_inbox_apps).
+    For full examples, see [sample scripts](windows-deployment-sample-scripts-sxs.md#Reinstall_Windows_inbox_apps).
 
-**Step 3: Add/reinstall Windows Universal apps (Optional)**
+**Step 3: Add/reinstall other apps, example: Microsoft Universal Office Apps**
 
-In our example, we install Office Mobile, though you can install any UWP app using this procedure.
+Get the latest version of the app. In our example, we install Microsoft Universal Office Apps, though you can install any UWP app using this procedure. 
 
-**Note**: Install either Office Single Image (either with or with out perpetual or subscription license) or Office Mobile (not both). Office Mobile must be used on devices with screen size of 10.1” and below, and Office Single Image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. To learn more, see [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx).
+1.  Go to <https://microsoftoem.com> and get the latest version of the Office Mobile supplemental OPK. This guide uses X20-98485 Office Mobile Multilang v1.3 OPK. 
 
-1.  Go to <https://microsoftoem.com> and get the supplemental OPK. This package includes the Windows 10, version 1607 inbox apps. There will not be monthly updates of these apps. 
+    **Note**: Install either Office Single Image (either with or with out perpetual or subscription license) or Office Mobile (not both). Office Mobile must be used on devices with screen size of 10.1” and below, and Office Single Image must be used on devices with screen sizes above 10.1”. For devices that have a single fixed storage drive with less than 32 GB, OEMs may preinstall Office Mobile, regardless of the screen size. To learn more, see [Office Mobile Communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-OfficeUnvrslAppsOPKRlsTmng.aspx).
 
 2.  Extract the package to a folder, for example, e:\Universal_Office.
 
-3.  Add/reinstall Office Mobile:
+3.  Add/reinstall Microsoft Universal Office Apps:
 
     ``` syntax
     Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows" /packagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c.appxbundle" /dependencypackagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Excelim.appxbundle_Windows10_PreinstallKit\1b0569bd5fbd41d6bf0669beb013073c_License1.xml"
 
     Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows"  /packagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\7f255062294a415a974b4958961df056.appxbundle" /dependencypackagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Pptim.appxbundle_Windows10_PreinstallKit\7f255062294a415a974b4958961df056_License1.xml"
 
-     Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows" /packagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592.appxbundle" /dependencypackagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592_License1.xml"
+    Dism /Add-ProvisionedAppxPackage /Image:"c:\mount\windows" /packagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592.appxbundle" /dependencypackagepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\Microsoft.VCLibs.140.00_14.0.22929.0_x86__8wekyb3d8bbwe.appx" /licensepath:"e:\Universal_Office\PC_TH1_store.16.0.6228.1011.Wordim.appxbundle_Windows10_PreinstallKit\532f710ca9d34f0aae6af4abe0af0592_License1.xml"
     ```
 
     Where the PackagePath points to the app bundle package.
-
 
 **Step 4: Modify the Start tile and Taskbar pin layouts (Optional)**
 
@@ -93,7 +103,7 @@ You can define separate layouts for your default Start tiles and taskbar bins fo
 
      You'll add the desktop applications in a later section: [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).    
 
-2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file exists, you should replace the LayoutModification.XML that is already included in the image.
+2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file already exists in the image, replace it with your new file.
 
     ``` syntax
     C:\Mount\Windows\Users\Default\AppData\Local\Microsoft\Windows\Shell\
@@ -103,7 +113,14 @@ You can define separate layouts for your default Start tiles and taskbar bins fo
     -   %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\
     -   %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\
 
-**Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. You'll learn how to make sure these settings stay on the device in [Sample scripts](windows-deployment-sample-scripts-sxs.md).
+    ```syntax
+    Copy E:\StartLayout\Bing.url  "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
+    Copy E:\StartLayout\Paint.lnk "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
+    Copy E:\StartLayout\Bing.url  "C:\mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
+    Copy E:\StartLayout\Paint.lnk "C:\mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
+    ```
+
+**Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 4.  To add a taskbar layout in Windows 10, version 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
 
