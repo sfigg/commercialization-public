@@ -118,11 +118,13 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 
 This script relies on the following two DiskPart scripts, CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt, which must be placed in the same folder:
 
-### CreatePartitions-UEFI.txt
+### <span id="CreatePartitions-UEFI.txt"></span> CreatePartitions-UEFI.txt
 
 Creates the System, MSR, Windows, and recovery tools partitions for UEFI-based PCs.
 
 This script temporarily assigns these drive letters: System=S, Windows=W, and Recovery=R. The MSR partition doesn't get a letter. The letter W is used to avoid potential drive letter conflicts. After the device reboots, the Windows partition is assigned the letter C, and the other partitions don’t receive drive letters.
+
+The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.
 
 The following diagram shows the resulting partition configuration:
 
@@ -167,11 +169,13 @@ list volume
 exit
 ```
 
-### CreatePartitions-BIOS.txt
+### <span id="CreatePartitions-BIOS.txt"></span> CreatePartitions-BIOS.txt
 
 Creates the System, Windows, and recovery tools partitions for BIOS-based PCs.
 
 This script temporarily assigns these drive letters: System=S, Windows=W, and Recovery=R. The letter W is used to avoid potential drive letter conflicts. After the device reboots, the Windows partition is assigned the letter C, and the other partitions don’t receive drive letters.
+
+The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.
 
 The following diagram shows the resulting partition configuration:
 
@@ -710,7 +714,7 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 
 Windows doesn't automatically save settings created through unattend.xml setup files, nor Windows Start Menu customizations created with LayoutModification.xml during a full-system reset, nor first-login info from oobe.xml.
 
-To make sure your customizations are saved, that includes steps to put the unattend.xml, LayoutModification.xml, and oobe.xml files back into place. Here's some sample scripts that show how to retain these settings and put them back into the right spots. Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two text files, in C:\\Recovery\\OEM\\:
+To make sure your customizations are saved, that includes steps to put the unattend.xml, LayoutModification.xml, and oobe.xml files back into place. Here's some sample scripts that show how to retain these settings and put them back into the right spots. Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two text files: ResetConfig.xml and EnableCustomizations.cmd, in C:\\Recovery\\OEM\\:
 
 ### ResetConfig.xml
 
@@ -719,20 +723,20 @@ To make sure your customizations are saved, that includes steps to put the unatt
 <!-- ResetConfig.xml -->
 <Reset>
   <Run Phase="BasicReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
   <Run Phase="FactoryReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
 </Reset>
 ```
 
-### EnableCustomizationsAfterRecovery.cmd
+### EnableCustomizations.cmd
 
 ``` syntax
-rem EnableCustomizationsAfterRecovery.cmd
+rem EnableCustomizations.cmd
 
 rem Set the variable %TARGETOS%      (Typically this is C:\Windows)
 for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
@@ -747,24 +751,6 @@ xcopy "%TARGETOSDRIVE%\Recovery\OEM\OOBE\Info" "%TARGETOS%\System32\Info\" /s
 
 rem Recommended: Create a pagefile for devices with 1GB or less of RAM.
 wpeutil CreatePageFile /path=%TARGETOSDRIVE%\PageFile.sys /size=256
-
-
-rem EnableCustomizationsAfterRecovery.cmd
-set ScriptFolder=%~dp0
-
-for /f "skip=2 tokens=2,*" %%a in ('reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v "TargetOS"') do set "TargetOS=%%b"
-echo TargetOS: %TargetOS% >> %LogFile%
-for %%A in (%TargetOS%) do set "TargetOSDrive=%%~dpA"
-
-copy "%ScriptFolder%\Unattend.xml" "%TargetOSDrive%\Windows\Panther\Unattend.xml" /y
-copy "%ScriptFolder%\LayoutModification.xml" "%TargetOSDrive%\Users\Default\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml" /y
-copy "%ScriptFolder%\oobe.xml" "%TargetOSDrive%\System32\Info\Oobe.xml" /y
-```
-
-For multilingual deployments, OOBE.xml uses a more complicated folder structure. It's OK to just copy the entire folder structure into C:\\Recovery\\OEM, and then modify the script to copy the entire folder:
-
-``` syntax
-xcopy "%ScriptFolder%\Info\" "%TargetOSDrive%\System32\Info\" /s
 ```
 
 To learn more about using extensibility points for push-button reset, see [Add a script to push-button reset features](http://go.microsoft.com/fwlink/?LinkId=618946).
