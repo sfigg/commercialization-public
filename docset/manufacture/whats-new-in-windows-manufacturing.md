@@ -13,11 +13,13 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **December 1, 2016**
 
-[OEM deployment lab](oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
+[OEM deployment lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
 
-- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](servicing-the-image-with-windows-updates-sxs.md).
+[Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md): added examples of adding registry keys through Unattend, including setting OEM Store settings and Edge browser defaults. 
 
-- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](add-universal-apps-sxs.md).
+- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
+
+- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
 
 **November 30, 2016**
 

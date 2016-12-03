@@ -22,10 +22,16 @@ While you can set many Windows settings in audit mode, some settings can only be
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
+We'll show you more ways to add settings later in [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
+
+## <span id="Unattend_overview"></span>Answer file settings
+
 You can specify which configuration pass to add new settings:
 
 -   **1 windowsPE**: These settings are used by the Windows Setup installation program. If you’re modifying existing images, you can usually ignore these settings.
+
 -   **4 specialize**: Most settings should be added here. These settings are triggered both at the beginning of audit mode and at the beginning of OOBE. If you need to make multiple updates or test settings, generalize the device again and add another batch of settings in the Specialize Configuration pass.
+
 -   **6 auditUser**: Runs as soon as you start audit mode.
 
     This is a great time to run a system test script - we'll add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) as our example. To learn more, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
@@ -34,9 +40,9 @@ You can specify which configuration pass to add new settings:
 
     If your script relies on knowing which language the user selects during OOBE, you’d add it to the oobeSystem pass.
 
--   For info on the other configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
+-   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts](windows-deployment-sample-scripts-sxs.md): Keeping Windows settings through a recovery.
+**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
@@ -102,15 +108,35 @@ You can specify which configuration pass to add new settings:
 
     `Description = Sample command to run a system diagnostic check.`
 
-    `Order = 1`
+    `Order = 1`  (Determines the order that commands are run, starting with 1.)
 
-More common settings: 
+4.  Add a registry key. In this example, we add keys for the OEM Windows Store program. Use the same process as adding a script, using `CMD /c REG ADD`. 
+
+    For Windows 10 Customer Systems, you may use the OEM Store ID alone or in combination with a Store Content Modifier (SCM) to identify an OEM brand for the OEM Store. By adding a SCM, you can target Customer Systems at a more granular level.  For example, you may choose to target commercial devices separately from consumer devices by inserting unique SCMs for consumer and commercial brands into those devices.
+
+    Add two more RunAsynchronousCommands (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand** twice). Add the following values:
+    
+    ```syntax
+    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store /v OEMID /t REG_SZ Fabrikam
+    Description = Adds a OEM registry key for the OEM Windows Store program.
+    Order = 2
+
+    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store /v SCMID /t REG_SZ Fabrikam
+    Description = Adds a SCM registry key for the OEM Windows Store program.
+    Order = 3
+    ```
+
+More common Windows settings: 
 
 *  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
 
    `OPK X21-08790 Win Home 10 1607 32 64 English OPK\Print  Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf`.
 
 *  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
+
+*  Set the Edge browser search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
+
+   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.yahoo.com/search?p={searchTerms}" /f`   
 
 *  Set the Internet Explorer default search engine: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
 
@@ -149,18 +175,6 @@ More common settings:
     md C:\Fabrikam
     C:\Windows\System32\dxdiag /t C:\Fabrikam\DxDiag-TestLogFiles.txt
     ```
-
-**Step 5: Add a registry key**
-Registry settings can be added by creating a .reg file, and then running either with a script or by adding an Asynchronous command (Components\\6 auditUser\\amd64\_Microsoft-Windows-Deployment\_neutral\\RunAsynchronous).
-
-Common registry settings:
-
-*  Set the Edge Browser default search engine: 
-   
-   The only value that needs to be set in the Edge browser is the PartnerSearchCode which is a string that will be concatenated to the Bing search URL (which is fixed in Edge browser). The PartnerSearchCode is the only thing that is configurable in the Edge browser.
-
-   The registry key is located here: HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Configuration. Create a key called “PartnerSearchCode” and place the OEM Edge partner code there.
-
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
 
