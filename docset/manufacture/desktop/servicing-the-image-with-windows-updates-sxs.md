@@ -16,7 +16,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 -  **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to re-add the apps.
 
--  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
+-  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 14: Update the recovery image](update-the-recovery-image.md).
 
 -  **Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required** before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
 
@@ -144,4 +144,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 5.   Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR'.
 
-Next step: [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
+Next step: [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)
