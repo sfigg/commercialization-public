@@ -11,9 +11,9 @@ title: 'Lab 4: Add languages'
 
 - **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](servicing-the-image-with-windows-updates-sxs.md).
 
-- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  reinstall the apps. We'll show you how to add these later in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps-sxs.md)
+- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  reinstall the apps. We'll show you how to add these later in [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)
 
-- **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
+- **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 14: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Mount_the_image"></span>Mount the image
 

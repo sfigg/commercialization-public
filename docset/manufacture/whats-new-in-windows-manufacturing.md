@@ -15,7 +15,11 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [OEM deployment lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
 
-[Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md): added examples of adding registry keys through Unattend, including setting OEM Store settings and Edge browser defaults. 
+[Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md): added examples of adding registry keys through Unattend, including setting OEM Store settings and Edge browser defaults.
+
+[Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+
+[Lab 14: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
 - **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
 
@@ -43,7 +47,7 @@ To update install the latest updates:
 
 -  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
 
-   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 10: Update the recovery image](desktop/update-the-recovery-image.md).
+   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 14: Update the recovery image](desktop/update-the-recovery-image.md).
 
 The SSU:KB3199209 addresses two issues:
  

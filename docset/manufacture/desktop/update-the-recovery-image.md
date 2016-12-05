@@ -1,10 +1,10 @@
 ---
 author: KPacquer
-Description: 'Lab 10: Update the recovery image'
+Description: 'Lab 14: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 10: Update the recovery image'
+title: 'Lab 14: Update the recovery image'
 ---
-# Lab 10: Update the recovery image
+# Lab 14: Update the recovery image
 
 If the system can't boot to the Windows image, it will fail over to the Windows Recovery Environment (WinRE). WinRE can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (WinPE), and to make it work for your customers, you can add drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. 
 

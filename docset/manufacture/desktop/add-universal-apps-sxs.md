@@ -1,11 +1,11 @@
 ---
 author: KPacquer
-Description: 'Lab 6: Add universal Windows apps, start tiles, and taskbar pins'
+Description: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 6: Add universal Windows apps, start tiles, and taskbar pins'
+title: 'Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins'
 ---
 
-# <span id="Add_apps"></span>Lab 6: Add universal Windows apps, start tiles, and taskbar pins
+# <span id="Add_apps"></span>Lab 6: Add universal Windows apps, Lab 6: Add universal Windows apps, and taskbar pins
 
 Add apps to your images to support different customer needs. Some have different installation procedures:
 
@@ -83,50 +83,9 @@ Get the latest version of the app. In our example, we install Microsoft Universa
 
     Where the PackagePath points to the app bundle package.
 
-**Step 4: Modify the Start tile and Taskbar pin layouts (Optional)**
+**Step 4: Start Menu**
 
-You can define separate layouts for your default Start tiles and taskbar bins for different regions or markets.
-
-1.  Create a LayoutModification.xml file. For our lab, you can use the sample from USB-B or [sample LayoutModification.xml](windows-deployment-sample-scripts-sxs.md). This sample shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that are applied based on two regions. 
-
-    When creating your own LayoutModification file:
-
-    To add desktop applications or legacy URL (.url) shortcuts, use the start:DesktopApplicationTile tag.
-
-     -  For desktop apps, if you know the application user model ID, use that.
-
-     -  Otherwise, for desktop apps or legacy .url links, create link files (.lnk) in either of the legacy Start Menu folders:
-
-         -  %APPDATA%\Microsoft\Windows\Start Menu\Programs\
-
-         -  %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\ 
-
-     You'll add the desktop applications in a later section: [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).    
-
-2.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file already exists in the image, replace it with your new file.
-
-    ``` syntax
-    C:\Mount\Windows\Users\Default\AppData\Local\Microsoft\Windows\Shell\
-    ```
-
-3.  If you pinned tiles that require .url or .lnk files, add the files to the following legacy Start Menu directories:
-    -   %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\
-    -   %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\
-
-    ```syntax
-    Copy E:\StartLayout\Bing.url  "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
-    Copy E:\StartLayout\Paint.lnk "C:\mount\Windows\ProgramData\Microsoft\Windows\Start Menu\Programs"
-    Copy E:\StartLayout\Bing.url  "C:\mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
-    Copy E:\StartLayout\Paint.lnk "C:\mount\Windows\Users\All Users\Microsoft\Windows\Start Menu\Programs"
-    ```
-
-**Note**  The Start layout can be lost if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
-
-4.  To add a taskbar layout in Windows 10, version 1607, you can either add a similar [taskbar layout modification file (see additional steps here)](https://msdn.microsoft.com/library/windows/hardware/mt736838.aspx), or use [traditional unattend settings](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
-
-## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
-
-## <span id="Unmount_the_images"></span> Unmount the images
+Note the app IDs, you'll need these later in [Lab 13: Add universal Windows apps and taskbar pins](add-start-tiles-sxs.md).
 
 **Step 5: Unmount the images**
 
