@@ -8,7 +8,7 @@ title: 'IoT Core Add-ons command-line options'
 
 # <span id="command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
-These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-adk-addons-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
 ## <span id="appx2pkg.cmd"></span>appx2pkg.cmd
 
@@ -237,7 +237,7 @@ If you run this command without any variables, you'll also see the other working
 newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx AppX.Main
 ```
 
-To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board).
+To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
 ## <span id="newbsp.cmd"></span>newbsp.cmd
 Creates the folder structure and copies the template files for [creating a new board support package (BSP)](create-a-new-bsp.md).

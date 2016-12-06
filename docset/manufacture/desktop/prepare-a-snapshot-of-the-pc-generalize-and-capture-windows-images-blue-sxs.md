@@ -148,4 +148,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 2.  See that the changes you made in audit mode are there.
 
-Next steps: [Lab 10: Update the recovery image](update-the-recovery-image.md)
+Next steps: [Lab 11: Shrink your image size](shrink-your-image-size.md)

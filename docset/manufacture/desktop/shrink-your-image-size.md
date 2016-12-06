@@ -1,8 +1,8 @@
 ---
 author: KPacquer
-Description: Lab 11: Shrink your image size
+Description: 'Lab 11: Shrink your image size'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Lab 11: Shrink your image size
+title: 'Lab 11: Shrink your image size'
 ---
 
 # Lab 11: Shrink your image size
