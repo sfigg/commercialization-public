@@ -1,11 +1,11 @@
 ---
 author: KPacquer
-Description: 'Lab 11: Shrink your image size'
+Description: 'Lab 10: Shrink your image size'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 11: Shrink your image size'
+title: 'Lab 10: Shrink your image size'
 ---
 
-# Lab 11: Shrink your image size
+# Lab 10: Shrink your image size
 
 Optimize your Windows image to save space on the PC, to speed up transfers to new devices, and to make it easier to store.
 
@@ -63,4 +63,4 @@ If you've optimized the image, you'll need to export the image in order to see a
     Dism /Export-Image /SourceImageFile:"C:\Images\Win10_x64\sources\install.wim" /SourceIndex:1 /DestinationImageFile:"C:\Images\Win10_x64\sources\install-optimized.wim"
     ```
 
-Next step: [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+Next step: [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
