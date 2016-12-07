@@ -57,7 +57,7 @@ The following features must be included in all images, though they may be custom
 | **IOT\_FTSER2K\_MAKERDRIVER**   | Adds the FTDI USB-to-Serial driver                                                                                          |
 | **IOT\_NANORDPSERVER**          | Adds [Remote Display packages](https://developer.microsoft.com/windows/iot/docs/remotedisplay). New in Windows 10, version 1607.                      |
 | **IOT\_NETCMD**                 | Adds the command-line tool: net.exe, used for configuring network connectivity                                              |
-| **IOT\_SHELL\_HOTKEY\_SUPPORT** | Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx). New in Windows 10, version 1607.                                                    |  
+| **IOT\_SHELL\_HOTKEY\_SUPPORT** | Adds support to launch default app using a hotkey: [VK_LWIN (Left Windows key)](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx). New in Windows 10, version 1607.                                                    |  
 | **IOT\_UAP\_DEFAULTAPP**        | Adds a sample app, "Chucky". This app is similar to "Bertha".  Requires **IOT\_APP\_TOOLKIT** to install this appx on first boot.                             |
 | **IOT\_UNIFIED\_WRITE\_FILTER** | Adds [Unified Write Filter (UWF)](https://developer.microsoft.com/windows/iot/docs/uwf) to protect physical storage media from data writes. New in Windows 10, version 1607.        |
 
