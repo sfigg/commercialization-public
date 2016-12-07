@@ -1,0 +1,25 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch migrate-customize
+# Your branch is up-to-date with 'origin/migrate-customize'.
+#
+# Changes to be committed:
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile3appid.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile3-appid.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile3firstruntask.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile3-firstruntask.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile3.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile3.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile4appid.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile4-appid.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile4firstruntask.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile4-firstruntask.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile4.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile4.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile5appid.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile5-appid.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile5firstruntask.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile5-firstruntask.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile5.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile5.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile6appid.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile6-appid.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile6firstruntask.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile6-firstruntask.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretilessquaretile6.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile6.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile7appid.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile7-appid.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile7firstruntask.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile7-firstruntask.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile7.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile7.md
+#	renamed:    docset/customize/unattend/microsoft-windows-shell-setupstarttilesregionaloverridesregionaloverridesquaretilessquaretile8.md -> docset/customize/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squaretile8.md
+#
+

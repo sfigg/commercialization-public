@@ -107,7 +107,7 @@ Anti-virus filter drivers must be architected to exercise basic anti-virus fun
 This requirement will be tested implicitly. The driver detection mechanism of the Windows Hardware Lab Kit will be written such that legacy file system filter drivers are not enumerated. Only minifilter drivers will be enumerated and surfaced in the kit. As such, a user will be unable to select a legacy filter driver for logo testing via the kit.
 
 Information about filter manger and minifilter drivers available here:
-<http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
+<http://msdn.microsoft.com/en-us/library/ff540402.aspx>
 <http://msdn.microsoft.com/en-us/windows/hardware/gg462968.aspx>
 
 ### Filter.Driver.AntiVirus.NamedPipeAndMailSlots
@@ -165,7 +165,7 @@ Kernel mode filter drivers must be architected to maximize the reliability and
 -   Functionality and stress for common APIs
 
 Information about Named Pipe and Mail Slots can be found at:
-<http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
+<http://msdn.microsoft.com/en-us/library/aa365574.aspx>
 
 ### Filter.Driver.AntiVirus.RegistryAndProcess
 
@@ -270,7 +270,7 @@ The following attributes must be set on the sys file.
 
 You can find more details on the following MSDN page:
 
--   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa381058(v=vs.85).aspx>
+-   <https://msdn.microsoft.com/en-us/library/windows/desktop/aa381058.aspx>
 
 All kernel drivers on Windows MUST be signed by Microsoft (WHQL certificate) through the SysDev dashboard.
 
@@ -475,7 +475,7 @@ Information about Oplock semantics over SMB, see the \[MS-SMB2\] protocol docume
 This requirement will be tested implicitly. The gatherer will be written such that it enumerates and surfaces only minifilter drivers for the Windows Hardware Certification Kit (WHCK). Hence, a user will be unable to select a legacy filter driver for certification testing.
 
 Information about Filter Manger and minifilter drivers available here:
-<http://msdn.microsoft.com/en-us/library/ff540402(v=VS.85).aspx>
+<http://msdn.microsoft.com/en-us/library/ff540402.aspx>
 
 ### Filter.Driver.FileSystem.NamedPipeAndMailSlots
 
@@ -532,7 +532,7 @@ Kernel Mode filter drivers must be architected to maximize the reliability and
 -   Functionality and stress for common APIs
 
 Information about Named Pipe and Mail Slots can be found at:
-<http://msdn.microsoft.com/en-us/library/aa365574(v=VS.85).aspx>
+<http://msdn.microsoft.com/en-us/library/aa365574.aspx>
 
 ### Filter.Driver.FileSystem.RegistryAndProcess
 

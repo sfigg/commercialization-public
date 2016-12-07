@@ -577,11 +577,11 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 This requirement is currently optional and will not be enforced until 2017.
 
-Hardware buttons must be implemented according to the guidance on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn957423(v=vs.85).aspx>
+Hardware buttons must be implemented according to the guidance on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn957423.aspx>
 
-GPIO buttons must be specified using the standardized ACPI generic button device (ACPI0011): <https://msdn.microsoft.com/en-us/library/windows/hardware/dn957422(v=vs.85).aspx>
+GPIO buttons must be specified using the standardized ACPI generic button device (ACPI0011): <https://msdn.microsoft.com/en-us/library/windows/hardware/dn957422.aspx>
 
-In the case where buttons are not wired through GPIO interrupts, buttons must be reported to Windows as HID collections. HID button report descriptors must follow the report descriptors specified on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn457881(v=vs.85).aspx>
+In the case where buttons are not wired through GPIO interrupts, buttons must be reported to Windows as HID collections. HID button report descriptors must follow the report descriptors specified on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn457881.aspx>
 
 
 ## System.Client.Camera
@@ -4881,13 +4881,13 @@ Windows 10 has an optional feature called [Device Guard](http://blogs.msdn.com/b
 <tr class="odd">
 <td>UEFI firmware version 2.3.1 or higher with UEFI Secure Boot and Platform Secure Boot</td>
 <td><p>UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (aka Platform Secure Boot) must be supported following the requirement in Hardware Compatibility Specification for Systems for Windows 10:</p>
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></p>
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807(v=vs.85).aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a> (this includes Hardware Security Test Interface)</p></td>
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a></p>
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn932807.aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby">System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</a> (this includes Hardware Security Test Interface)</p></td>
 </tr>
 <tr class="even">
 <td>Secure firmware update process</td>
 <td><p>System Firmware must support field updates through Windows Update.</p>
-<p>UEFI firmware must support secure firmware update as described in <a href="http://msdn.microsoft.com/library/windows/hardware/dn932805(v=vs.85).aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a>.</p></td>
+<p>UEFI firmware must support secure firmware update as described in <a href="http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system_fundamentals_firmware_uefisecureboot">System.Fundamentals.Firmware.UEFISecureBoot</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Firmware BIOS lockdown</td>
@@ -5970,7 +5970,7 @@ In addition, if the USB Type-C cable or adapter is used for an Alternate Mode St
 
 Systems with local USB-C ports (e.g. directly on the system compared to on a detachable or separate device or dock) that do not implement UCSI must ship with a 3rd-party UCMCx client driver. 3rd-party UCMCx client drivers must be implemented as per the following MSDN documentation:
 
- - <https://msdn.microsoft.com/en-us/library/windows/hardware/mt188011(v=vs.85).aspx>
+ - <https://msdn.microsoft.com/en-us/library/windows/hardware/mt188011.aspx>
 
 The UCMCx client driver is required to implement the following APIs:
 
@@ -7220,7 +7220,7 @@ For more information about enabling selective suspend for HID devices, please re
 For more information about how to implement selective suspend in a driver, please refer to this white paper:
 <http://www.microsoft.com/whdc/driver/wdf/USB_select-susp.mspx>
 
- To specify a port that is internal (not user visible) and can be connected to an integrated device, the ACPI properties \_UPC.PortIsConnectable byte must be set to 0xFF and the \_PLD.UserVisible bit must be set to 0. More details are available on [MSDN](http://msdn.microsoft.com/en-us/library/ff553550(v=VS.85).aspx).
+ To specify a port that is internal (not user visible) and can be connected to an integrated device, the ACPI properties \_UPC.PortIsConnectable byte must be set to 0xFF and the \_PLD.UserVisible bit must be set to 0. More details are available on [MSDN](http://msdn.microsoft.com/en-us/library/ff553550.aspx).
 
 
 ## System.Fundamentals.WatchDogTimer
@@ -9046,7 +9046,7 @@ However, this and all related sub-requirements are mandatory for a
 connected storage device claiming to be industry-standard and manageable
 from a Windows Server system. Connected storage devices that support
 SMI-S must support the requirements detailed here:
-<https://msdn.microsoft.com/en-us/library/windows/hardware/dn265461(v=vs.85).aspx>
+<https://msdn.microsoft.com/en-us/library/windows/hardware/dn265461.aspx>
 
 
 ## System.Server.SVVP

@@ -37,11 +37,11 @@ The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong lo
 
 ### MDM: Enhanced device and PC management
 
-Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607).
+Check out the [new CSPs settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056.aspx#whatsnew_1607).
 
 ### More changes
 
-See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363(v=vs.85).aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
+See what's new in [design](https://msdn.microsoft.com/library/windows/hardware/mt703371.aspx), [customizations](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723363.aspx), [manufacturing](manufacture/whats-new-in-windows-manufacturing.md).
 
 ## <a href="" id="adk"></a>What’s new in the Windows ADK, version 1511
 
@@ -79,7 +79,7 @@ You can now run Windows directly from compressed files. This is similar to WIMBo
 
 - [What's new in driver development](https://msdn.microsoft.com/windows/hardware/drivers/what-s-new-in-driver-development)
 
-- [What's new in the Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303(v=vs.85).aspx)
+- [What's new in the Windows Performance Toolkit](https://msdn.microsoft.com/en-us/library/windows/hardware/dn927303.aspx)
 
 - [What's new in the Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/mt187880.aspx)
  
