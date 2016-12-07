@@ -1,11 +1,11 @@
 ---
 author: KPacquer
-Description: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
+Description: 'Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
+title: 'Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ---
-# Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)
+# Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)
 
 Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).
 
@@ -21,7 +21,7 @@ When you apply SPPs to a Compact OS system, the applications in that SPP are sin
 
 **Notes**
 
-*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files, we'll show you this in [Lab 13: Add Start tiles and taskbar pins](add-start-tiles-sxs.md). New versions of these files can simply be copied into the image or to the destination device directly.
+*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files, we'll show you this in [Lab 12: Add Start tiles and taskbar pins](add-start-tiles-sxs.md). New versions of these files can simply be copied into the image or to the destination device directly.
 
    **For Microsoft Office, this is required**: you must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
@@ -181,4 +181,4 @@ The short version:
 
 2.  See if your Windows desktop applications and add-ons are installed.
 
-**Next steps**: [Lab 13: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
+**Next steps**: [Lab 12: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)

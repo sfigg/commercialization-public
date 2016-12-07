@@ -40,14 +40,14 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
 *  [Lab 4: Add languages](add-drivers-langs-universal-apps-sxs.md)
 *  [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-*  [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)
+*  [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md) (includes Microsoft Universal Office Apps)
 *  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 *  [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
-*  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+*  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md) (includes Microsoft Office 2016)
 
 **Final tasks**
 
-*  [Lab 11: Shrink your image size](shrink-your-image-size.md)
-*  [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
-*  [Lab 13: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
-*  [Lab 14: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 10: Shrink your image size](shrink-your-image-size.md)
+*  [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
+*  [Lab 12: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
+*  [Lab 13: Update the recovery image](update-the-recovery-image.md)
