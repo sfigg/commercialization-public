@@ -25,7 +25,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 - **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
 
-- **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
+- **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
 
 **November 30, 2016**
 
