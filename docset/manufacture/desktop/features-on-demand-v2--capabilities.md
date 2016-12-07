@@ -69,7 +69,7 @@ Use DISM to add or remove capabilities:
 ## <span id="Capabilities_reference"></span><span id="capabilities_reference"></span><span id="CAPABILITIES_REFERENCE"></span>Capabilities reference
 
 
-### .NET Framework  
+### <span id="DOTNET"></span><span id="dotnet"></span> .NET Framework  
 
 | Component | Description                                                             |
 |-----------|-------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ Use DISM to add or remove capabilities:
 
  
 
-### Language capabilities
+### <span id="language_capabilities"></span><span id="Language_capabilities"></span> Language capabilities
 
 Not all capabilities are available for every language.
 
@@ -138,7 +138,7 @@ Not all capabilities are available for every language.
 </tbody>
 </table>
 
-### Font capabilities
+### <span id="Fonts"></span><span id="fonts"></span> Font capabilities
 
 When adding languages for some regions, you'll need to add font capabilities.
 
@@ -182,7 +182,7 @@ When adding languages for some regions, you'll need to add font capabilities.
 | zh-HK       | Chinese (Traditional, Hong Kong (SAR)) | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 | zh-TW       | Chinese (Traditional, Taiwan)          | Microsoft-Windows-LanguageFeatures-Fonts-Hant-Package |
 
-### Additional fonts available:
+### <span id="Additional_fonts"></span><span id="additional_fonts"></span> Additional fonts available:
 
 These fonts are optional and not required for any region.
 
@@ -190,7 +190,7 @@ These fonts are optional and not required for any region.
 |-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft-Windows-LanguageFeatures-Fonts-PanEuropeanSupplementalFonts-Package | Pan-European Supplemental Fonts. Includes additional fonts: Arial Nova, Georgia Pro, Gill Sans Nova, Neue Haas Grotesk, Rockwell Nova, Verdana Pro. |
 
-### Other region-specific requirements
+### <span id="Region_requirements"></span><span id="region_requirements"></span> Other region-specific requirements
 
 | Region | Description                   | Capability                                             | Description                                                                                                            |
 |--------|-------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|

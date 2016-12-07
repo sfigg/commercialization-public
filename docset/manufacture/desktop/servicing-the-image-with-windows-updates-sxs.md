@@ -3,18 +3,20 @@ author: KPacquer
 Description: 'Add updates, and upgrade the edition.'
 ms.assetid: 9a8f525c-bb8f-492c-a555-0b512e44bcd1
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 4: Add updates and upgrade the edition'
+title: 'Lab 5: Add updates and upgrade the edition'
 ---
 
-# Lab 4: Add updates and upgrade the edition
+# Lab 5: Add updates and upgrade the edition
 
 For many customizations, like adding .inf-style drivers, Windows updates or upgrading the edition, you can mount and edit the Windows image. Mounting an image maps the contents of a file to a temporary location where you can edit the files or use DISM to perform common deployment tasks.
 
 **Notes** 
 
-* Add updates before adding languages. If you've already added languages to your image, then after adding the update, go back and [add your language again](add-drivers-langs-universal-apps-sxs.md).
+-  **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to re-add the updates.
 
--  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 10: Update the recovery image](update-the-recovery-image.md).
+-  **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to re-add the apps.
+
+-  **For major updates, update the recovery image too**: These may include hotfixes, general distribution releases, service packs, or other pre-release updates. We'll show you how to update these later in [Lab 14: Update the recovery image](update-the-recovery-image.md).
 
 -  **Servicing Stack Update (SSU):[KB3199209](http://www.catalog.update.microsoft.com/Search.aspx?q=KB3199209) is required** before applying the most recent General Distribution Release (GDR, currently KB3200970) or any future GDRs.
 
@@ -55,6 +57,8 @@ Use this procedure to upgrade the edition. You cannot set a Windows image to a l
 **Step 3: Add a Windows update package**
 
 1.  Get a Windows update package. For example, grab the latest cumulative update listed in [Windows 10 update history](https://support.microsoft.com/en-us/help/12387/windows-10-update-history) from the [Microsoft Update catalog](http://www.catalog.update.microsoft.com). Extract the .msu file update to a folder, for example, C:\\WindowsUpdates\\windows10.0-kb3194798-x64_8bc6befc7b3c51f94ae70b8d1d9a249bb4b5e108.msu.
+
+    To learn more, see [https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx](https://myoem.microsoft.com/oem/myoem/en/product/winemb/pages/comm-ms-updt-ctlg-trnstn.aspx).    
 
 2.  Add the updates to the image. For packages with dependencies, make sure you install the packages in order. If you’re not sure of the dependencies, it’s OK to put them all in the same folder, and then add them all using the same DISM /Add-Package command by adding multiple /PackagePath items.
 
@@ -138,4 +142,6 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
     The operation completed successfully.
     ```
 
-Next step: [Lab 5: Add languages](add-drivers-langs-universal-apps-sxs.md)
+5.   Each package will usually be a new KB, and will increase the build revision number of Windows on the device. The revision number of windows a device can be found in the following registry key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UBR'.
+
+Next step: [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)

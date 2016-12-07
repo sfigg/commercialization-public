@@ -19,9 +19,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## In this section
 
-
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
+-   [What's new in the next major update to Windows 10](#whatsnew10)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -174,10 +174,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
- 
 
 ## <a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607
-
 
 <table>
 <colgroup>
@@ -480,10 +478,35 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
- 
+## <a href="" id="whatsnew10"></a>What's new in the next major update to Windows 10
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top"><p>New nodes in Update CSP</p></td>
+<td style="vertical-align:top"><p>Added the following nodes to the [Update CSP](update-csp.md):</p>
+<ul>
+<li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
+<li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
+<li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> 
+
 
 ## Breaking changes and known issues
-
 
 ### <a href="" id="getcommand"></a>Get command inside an atomic command is not supported
 
@@ -749,6 +772,33 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### December, 2016
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes:</p>
+<ul>
+<li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
+<li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
+<li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### November 2016
 
 <table>
@@ -774,6 +824,22 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>1 - quick scan</li>
 <li>2 - full scan</li>
 </ul>
+</td>
+</tr><tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added data recovery agent (DRA) information to Settings/DataRecoveryCertificate.</p>
+</td>
+</tr><tr class="even">
+<td style="vertical-align:top">[Disconnecting from the management infrastructure (unenrollment)](disconnecting-from-mdm-unenrollment.md)</td>
+<td style="vertical-align:top"><p>Added information about unenrollment from Azure Active Directory Join.</p>
+</td>
+</tr><tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the description of the following policies.<ul>
+<li>[Browser/Homepages](policy-configuration-service-provider#browser-homepages)</li>
+<li>[DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider#devicelock-maxinactivitytimedevicelock)</li>
+<li>[Experience/ConfigureWindowsSpotlightOnLockScreen](policy-configuration-service-provider#experience-configurewindowsspotlightonlockscreen)</li>
+</ul></p>
 </td>
 </tr>
 </tbody>
