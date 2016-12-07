@@ -18,13 +18,11 @@ Here's some ways to shrink the image, optimize the image, and some consideration
 
 ### <span id="Compact_OS"></span><span id="compact_os"></span><span id="COMPACT_OS"></span>Compact OS
 
-Compact OS installs the operating system files as compressed files. Compact OS is supported on both UEFI-based and BIOS-based devices.
+Compact OS installs the operating system files as compressed files. Compact OS is supported on both UEFI-based and BIOS-based devices. See the [size comparison table](#Size_comparisons) below.
 
-Unlike WIMBoot, because the files are no longer combined into a single WIM file, Windows update can replace or remove individual files as needed to help maintain the drive footprint size over time.
+Unlike WIMBoot, because the files are no longer combined into a single WIM file, Windows update can replace or remove individual files as needed to help maintain the drive footprint size over time. 
 
 **Note**  When running Windows Imaging and Configuration Designer (ICD) on a PC running a previous version of Windows, such as Windows 8.1, you'll need to install the [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) with both the Windows ICD and **Deployment Tools** features. This installs the latest versions of the drivers required by DISM (wimmount.sys and adkwof.sys) used to create Compact OS images.
-
- 
 
 **To deploy Compact OS with a USB bootable drive**
 
@@ -82,7 +80,7 @@ Compact.exe /CompactOS:always
 
 ### <span id="Single-instancing_of_provisioning_packages"></span><span id="single-instancing_of_provisioning_packages"></span><span id="SINGLE-INSTANCING_OF_PROVISIONING_PACKAGES"></span>Single-instancing of provisioning packages
 
-For Windows 10, when you add new Windows desktop applications to a device, you'll capture these changes into a compressed provisioning package for use by the automatic recovery tools. Rather than maintaining both the original files and the provisioning package, you can use DISM to remove the original files, and run from directly from the compressed provisioning package instead. This is known as single-instancing the image.
+For Windows 10, when you add new Windows desktop applications to a device, you'll capture these changes into a compressed provisioning package for use by the automatic recovery tools. Rather than maintaining both the original files and the provisioning package, you can use DISM to remove the original files, and run from directly from the compressed provisioning package instead. This is known as single-instancing the image. See the [size comparison table](#Size_comparisons) below.
 
 While single-instancing is supported on both solid-state drives and rotational drives, for performance reasons, we recommend that single-instancing is only used on devices with solid-state drives.
 
@@ -142,9 +140,14 @@ Some of the primary reasons for the increase over time in the memory footprint i
 
 -   **Logs and Caches**. The operating system stores files such as event logs and error logs on the drive.
 
-### <span id="RAM"></span><span id="ram"></span>RAM
+### <span id="RAM"></span><span id="ram"></span>RAM, Pagefile.sys, and Hiberfil.sys
 
-The Pagefile.sys and Hiberfil.sys files increase in size in direct proportion to the amount of RAM on the computer. Windows installations on 16 GB drives have a smaller memory footprint when the computer is limited to 1 GB of RAM. An increase of RAM to a size that is greater than 1 GB will result in increased size of the system files and less space on the hard drive for other applications and files. Increasing the size of the hard drive, however, does not affect the size of these system files.
+The Pagefile.sys and Hiberfil.sys files increase in size in direct proportion to the amount of RAM on the computer. Windows installations on 16 GB drives have a smaller memory footprint when the computer is limited to 1 GB of RAM. An increase of RAM to a size that is greater than 1 GB will result in increased size of the system files and less space on the hard drive for other applications and files. Increasing the size of the hard drive, however, does not affect the size of these system files. Learn more about [On/Off Transition Performance](../../test/assessments/onoff-transition-performance.md)
+
+To save space on the drive, you can remove or reduce the size of the hiberfil.sys. See the [size comparison table](#Size_comparisons) below. To learn more, see [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). 
+
+-  `powercfg /h /type reduced`   : Reduces the file by 30%   
+-  `powercfg /h /off`            : Removes the file.   
 
 ### <span id="Applications_"></span><span id="applications_"></span><span id="APPLICATIONS_"></span>Applications
 
@@ -153,6 +156,18 @@ Software applications that are installed on the computer may require additional 
 ### <span id="User_Data"></span><span id="user_data"></span><span id="USER_DATA"></span>User Data
 
 On computers that support removable media such as an SD card or USB flash drive, users can easily expand personal data file storage for user documents by using this removable media. However, we recommend that users reserve some space on the hard drive for these types of files.
+
+## <span id="Size_comparisons"></span>Size comparisons
+The table below shows the additional space saved by using compact OS, Single instancing, and reducing or turning Off Hiberfile on 2GB (x86 processor architecture) and 4GB (x64 processor architecture), on Windows 10, version 1607:
+
+Image                                 | Windows 10 Home x86, 2GB memory   | Windows 10 Home x64, 4GB Memory
+--------------------------------------|-----------------------------------|---------------------------------
+Base Footprint                        | 11.68GB                           | 15.06GB
+Compact OS, with no single instancing |  8.85GB (>2.75GB savings)         | 11.3GB  (>3.7GB)
+Compact OS, single instanced          |  7.66GB (>4GB)                    | 10.09GB (>4.75GB)
+Hiberfile off, no compact OS          | 10.87GB (>825MB)                  | 13.48GB (>1.5GB)
+Hiberfile reduced, no compact OS      | 11.27GB (>400MB)                  | 14.15GB (>930MB)
+
 
 ## <span id="related_topics"></span>Related topics
 
