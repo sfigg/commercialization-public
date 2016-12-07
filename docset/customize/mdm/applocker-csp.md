@@ -46,12 +46,12 @@ Captures the list of apps that are allowed to handle enterprise data. Should be 
 In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.  
 
 You can set the allowed list using the following URI:
-- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<Grouping>/EXE/Policy
-- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<Grouping>/StoreApps/Policy
+- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_>/EXE/Policy
+- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps/Policy
 
 You can set the exempt list using the following  URI:
-- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<Grouping includes "EdpExempt">/EXE/Policy
-- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<Grouping includes "EdpExempt">/StoreApps/Policy
+- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/EXE/Policy
+- ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/StoreApps/Policy
 
 Exempt examples:
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/ContosoEdpExempt/EXE/Policy
