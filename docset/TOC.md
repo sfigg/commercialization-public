@@ -519,7 +519,7 @@
 #### [Lab 8: Add branding and license agreements (OOBE.xml)](manufacture/desktop/add-a-license-agreement.md)
 #### [Lab 9: Make changes from Windows (audit mode)](manufacture/desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 #### [Lab 10: Shrink your image size](manufacture/desktop/shrink-your-image-size.md)
-#### [Lab 12: Add desktop apps with siloed provisioning packages](manufacture/desktop/add-desktop-apps-wth-spps-sxs.md)
+#### [Lab 11: Add desktop apps with siloed provisioning packages](manufacture/desktop/add-desktop-apps-wth-spps-sxs.md)
 #### [Lab 12: Add Start tiles and taskbar pins](manufacture/desktop/add-start-tiles-sxs.md)
 #### [Lab 13: Update the recovery image](manufacture/desktop/update-the-recovery-image.md)
 
