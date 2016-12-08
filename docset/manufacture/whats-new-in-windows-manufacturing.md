@@ -1,15 +1,15 @@
 ---
 author: kpacquer
-Description: 'What's new in Windows manufacturing'
+Description: What's new in Windows manufacturing
 MSHAttr: 'PreferredLib:/library'
-title: 'What's new in Windows manufacturing'
+title: What's new in Windows manufacturing
 ---
 
 # What's new in Windows manufacturing
 
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
-## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
+## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
 
 **December 1, 2016**
 
@@ -129,12 +129,21 @@ The following changes are new for Windows 10, version 1607:
 
 - A new Windows Hardware Compatibility Program requirement, [Device.Graphics.AdapterBase.RunFromDriverStore](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-graphics#device-graphics-adapterbase), can impact OEM preloads. Drivers must be written so that their components can be run directly from the Driver Store. Drivers are installed at %SystemRoot%\System32\DriverStore\FileRepository.
 
-## <span id="Whats_new_in_Mobile_Manufacturing"></span>What's new in mobile manufacturing
 
+
+
+
+
+
+## <span id="Whats_new_in_Mobile_Manufacturing"></span>What's new in mobile manufacturing
 
 **October 4, 2016**
 
 - New [optional feature](https://msdn.microsoft.com/library/windows/hardware/dn756780.aspx): **16GBFEATURESONDATA** added in Windows 10, version 1607. This feature moves several of the common inbox apps to the data partition. 
+
+
+
+
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
