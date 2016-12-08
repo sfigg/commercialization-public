@@ -25,7 +25,7 @@ Creates a new custom key combination and enables Keyboard Filter to block the ne
 
 
 <a href="" id="customkey"></a>*CustomKey*  
-\[in\] The custom key combination to add. For a list of valid key names, see [Keyboard Filter key names](keyboard-filter-key-names.md).
+\[in\] The custom key combination to add. For a list of valid key names, see [Keyboard Filter key names](keyboardfilter-key-names.md).
 
 ## Return Value
 
@@ -113,7 +113,7 @@ foreach ($objCustomKeyItem in $objCustomKeyList) {
 
 [WEKF\_CustomKey](wekf-customkey.md)
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
  
 

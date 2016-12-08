@@ -30,6 +30,7 @@ The latest playlist can be downloaded at the following location:
 
 ## Hardware Certification Policies and Processes for Windows 10, version 1607
 
-The WHCP Policies and Processes document below contains certification testing policies, product submission, and business requirements.
+The WHCP Policies and Processes documents below contains certification testing policies, product submission, and business requirements.
 
 - [WHCP Policies and Processes](http://go.microsoft.com/fwlink/p/?LinkID=823111)
+- [WHCP Policies and Processes (Windows Server)](https://go.microsoft.com/fwlink/p/?linkid=834831)

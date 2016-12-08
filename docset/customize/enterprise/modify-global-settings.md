@@ -169,11 +169,11 @@ Set-ForceOffAccessibility $Enabled
 ## Related topics
 
 
-[Windows PowerShell script samples for keyboard filter](windows-powershell-script-samples-for-keyboard-filter.md)
+[Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 
 [WEKF\_Settings](wekf-settings.md)
 
-[Keyboard filter](keyboard-filter.md)
+[Keyboard filter](keyboardfilter.md)
 
  
 

@@ -50,7 +50,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Log in automatically</p></td>
-<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](create-a-kiosk-image.md#aa-other-settings).</p></td>
+<td><p>When your device restarts, whether from an update or power outage, you can log on the assigned access account manually or you can configure the device to [log on to the assigned access account automatically](create-a-kiosk-image.md).</p></td>
 </tr>
 <tr class="even">
 <td><p>Prevent use of removable media</p></td>
@@ -58,7 +58,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="odd">
 <td><p>Protect storage media from being written to</p></td>
-<td><p>You can use [Overlay for Unified Write Filter (UWF)](overlay-for-unified-write-filter-uwf.md) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.</p></td>
+<td><p>You can use [Overlay for Unified Write Filter (UWF)](uwfoverlay.md) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.</p></td>
 </tr>
 <tr class="even">
 <td><p>Put the device in tablet mode</p></td>
@@ -70,7 +70,7 @@ You can lock down your Windows 10 desktop device by using the lock down features
 </tr>
 <tr class="even">
 <td><p>Suppress unwanted keyboard entries</p></td>
-<td><p>You can use [Keyboard Filter](keyboard-filter.md) to suppress undesirable key presses or key combinations. Normally, a customer can use certain Windows key combinations like <strong>Ctrl+Alt+Delete</strong> or <strong>Ctrl+Shift+Tab</strong> to alter the operation of a device by locking the screen or using Task Manager to close a running application. Other common examples include <strong>ALT + F4</strong> for closing an application or <strong>Windows + L</strong> for locking a device. This may not be desirable if your device is intended for a dedicated purpose.</p></td>
+<td><p>You can use [Keyboard Filter](keyboardfilter.md) to suppress undesirable key presses or key combinations. Normally, a customer can use certain Windows key combinations like <strong>Ctrl+Alt+Delete</strong> or <strong>Ctrl+Shift+Tab</strong> to alter the operation of a device by locking the screen or using Task Manager to close a running application. Other common examples include <strong>ALT + F4</strong> for closing an application or <strong>Windows + L</strong> for locking a device. This may not be desirable if your device is intended for a dedicated purpose.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Suppress Windows branding on Startup</p></td>
@@ -102,17 +102,17 @@ You can lock down your Windows 10 desktop device by using the lock down features
 [WEDL\_AssignedAccess](wedl-assignedaccess.md)
 
 **Keyboard Filter reference**
-[Keyboard Filter key names](keyboard-filter-key-names.md)
+[Keyboard Filter key names](keyboardfilter-key-names.md)
 
 [Predefined key combinations](predefined-key-combinations.md)
 
-[Keyboard Filter WMI provider reference](keyboard-filter-wmi-provider-reference.md)
+[Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
 **Shell Launcher reference**
 [WESL\_UserSetting](wesl-usersetting.md)
 
 **Unified Write Filter reference**
-[Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md)
+[Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
  
 

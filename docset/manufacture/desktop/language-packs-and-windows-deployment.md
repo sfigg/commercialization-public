@@ -23,6 +23,7 @@ To help you reduce the size of your image, language packs have now been split in
 -   Optical character recognition
 -   Text-to-speech
 -   Speech
+-   Retail Demo experience
 
 You can now choose to add only core language pack UI resources to your image, significantly reducing image size.
 

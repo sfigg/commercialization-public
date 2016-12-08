@@ -106,7 +106,7 @@ The Shell Launcher settings are also available as Windows provisioning settings 
 
 Use the following steps to create a provisioning package that contains the ShellLauncher settings.
 
-1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](p_icd.create_a_provisioning_package).
+1.  Build a provisioning package in Windows ICD by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
     **Note**  In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
      
@@ -114,7 +114,7 @@ Use the following steps to create a provisioning package that contains the Shell
 2.  In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the following ShellLauncher settings.
     -   Shell = *yourapp* where the default is cmd.exe
 
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](p_icd.create_a_provisioning_package) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
 
 ## <a href="" id="launch-diff-shells"></a>Launch different shells for different user accounts
 

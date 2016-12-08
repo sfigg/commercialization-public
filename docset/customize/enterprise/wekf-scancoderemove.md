@@ -61,7 +61,7 @@ Because this method is static, you cannot call it on an object instance, but mus
 
 [WEKF\_Scancode](wekf-scancode.md)
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
  
 

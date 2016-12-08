@@ -8,7 +8,7 @@ title: 'IoT Core Add-ons command-line options'
 
 # <span id="command-line_options_to_manufacture_iot_core_images"></span>IoT Core Add-ons command-line options
 
-These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
+These tools are part of the [Windows 10 IoT Core (IoT Core) ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the [\\Tools folder](iot-core-adk-addons-command-line-options.md). To learn more about these tools, see [What's in the Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).
 
 ## <span id="appx2pkg.cmd"></span>appx2pkg.cmd
 
@@ -67,7 +67,7 @@ For troubleshooting, Buildpkg saves logs at \Build\\<arch\>\pkgs\logs.
 
 -   `<packagefile.pkg.xml>`: Use this to refer to the package by its package definition XML file.
 
--   `<All>`: Use this to build all packages in the \Sources-\<arch\>\Packages folder. This is the same as the buildallpackages command.
+-   `<All>`: Use this to build all packages in the \Sources-\<arch\>\Packages folder. This is the same as the `BuildPkg All` command.
 
 -   `<Clean>`: Use this to erase everything in the \Build\\<arch\>\pkgs folder. Recommended before building all packages.
 
@@ -128,7 +128,7 @@ Createpkg saves the package in the \Build\\<arch\>\pkgs folder as a .cab file (e
 ``` syntax
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml
 createpkg %SRC_DIR%\Packages\Appx.Main\Appx.Main.pkg.xml 10.0.1.0
-createpkg Registry.ConfigSettings 
+createpkg Registry.FilesAndRegKeys 
 ```
 
 ## <span id="createprovpkg.cmd"></span>createprovpkg.cmd
@@ -237,7 +237,7 @@ If you run this command without any variables, you'll also see the other working
 newappxpkg C:\test\MainAppx_1.0.0.0_arm.appx AppX.Main
 ```
 
-To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board).
+To learn more, see [Lab 1b: Add an app to your image](deploy-your-app-with-a-standard-board.md).
 
 ## <span id="newbsp.cmd"></span>newbsp.cmd
 Creates the folder structure and copies the template files for [creating a new board support package (BSP)](create-a-new-bsp.md).
@@ -271,7 +271,7 @@ If you run this command without any variables, you'll also see the other working
 **Example**:
 
 ``` syntax
-newcommonpkg Registry.ConfigSettings
+newcommonpkg Registry.FilesAndRegKeys
 ```
 
 To learn more, see [Lab 1c: Add a file and a registry setting to an image](add-a-registry-setting-to-an-image.md).

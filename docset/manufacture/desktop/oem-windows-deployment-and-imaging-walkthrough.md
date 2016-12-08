@@ -10,10 +10,6 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for creating base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
-New in this lab: 
-
-* With siloed provisioning packages, you can now capture and apply Windows desktop applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
-
 Let's get started!
 
 **Preparation**
@@ -24,21 +20,34 @@ Let's get started!
 
 *  [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
 *  [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
-*  [Lab 1a: Install Windows PE](install-windows-pe-sxs.md)
-*  [Lab 1b: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+*  [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
+*  [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
-**Customize images**
+**Customize Window images**
 
-*  [Lab 1c: Add .inf-style drivers, updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
-   
-   Add updates (including hotfixes, general distribution releases, or service packs) before installing languages. If you add an update later, you'll need to re-add the language.
-   
-*  [Lab 1d: Add boot-critical drivers, languages, and universal Windows apps](add-drivers-langs-universal-apps-sxs.md)
-   
-   Add languages before adding apps (UWA or desktop applications). If you add a language later, you'll need to re-add the apps.
+In these labs, you'll modify the Windows image (install.wim). While you can perform most of these tasks in any order, a few have dependencies:
+*    **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to reinstall the updates.
+*    **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  reinstall the apps.
 
-*  [Lab 1e: Change settings, boot to audit, enter product keys, and run scripts with an answer file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 
-*  [Lab 1f: Add desktop applications and .exe-style drivers with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+To make the changes, you'll mount the image contents into a temporary folder, and use tools like DISM to make the changes. Unmount the images and redeploy.
+   ![image: Mounting an image, making changes, and unmounting the image](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-*  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+*  [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
+*  [Lab 4: Add languages](add-drivers-langs-universal-apps-sxs.md)
+*  [Lab 5: Add updates and upgrade the edition](servicing-the-image-with-windows-updates-sxs.md)
+*  [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md) (includes Microsoft Universal Office Apps)
+*  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
+*  [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
+*  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md) (includes Microsoft Office 2016)
+
+**Add desktop apps**
+
+* When you're creating PCs with a variety of Windows desktop applications, it's often easier to apply them separately from the Windows image.
+
+*  [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
+*  [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md) (used for all Windows application types)
+
+**Final tasks**
+*  [Lab 12: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 13: Shrink your image size](shrink-your-image-size.md)

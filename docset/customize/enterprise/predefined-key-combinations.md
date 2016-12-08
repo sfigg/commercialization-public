@@ -633,7 +633,7 @@ You can use the values in the WEKF\_PredefinedKey.Id column to configure the Win
 ## Related topics
 
 
-[Keyboard filter](keyboard-filter.md)
+[Keyboard filter](keyboardfilter.md)
 
  
 

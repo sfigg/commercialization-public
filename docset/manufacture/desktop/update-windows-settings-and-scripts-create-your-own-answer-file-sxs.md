@@ -1,12 +1,12 @@
 ---
 author: Justinha
-Description: 'Lab 1e: Change settings and run scripts with an answer file'
+Description: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 1e: Change settings and run scripts with an answer file'
+title: 'Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)'
 ---
 
-# Lab 1e: Change settings and run scripts with an answer file
+# <span id="Add_settings"></span>Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)
 
 Answer files (or Unattend files) can be used to modify Windows settings in your images during Setup. You can also create settings that trigger scripts in your images that run after the first user creates their account and picks their default language.
 
@@ -22,10 +22,16 @@ While you can set many Windows settings in audit mode, some settings can only be
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
+We'll show you more ways to add settings later in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
+
+## <span id="Unattend_overview"></span>Answer file settings
+
 You can specify which configuration pass to add new settings:
 
 -   **1 windowsPE**: These settings are used by the Windows Setup installation program. If you’re modifying existing images, you can usually ignore these settings.
+
 -   **4 specialize**: Most settings should be added here. These settings are triggered both at the beginning of audit mode and at the beginning of OOBE. If you need to make multiple updates or test settings, generalize the device again and add another batch of settings in the Specialize Configuration pass.
+
 -   **6 auditUser**: Runs as soon as you start audit mode.
 
     This is a great time to run a system test script - we'll add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) as our example. To learn more, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
@@ -34,13 +40,13 @@ You can specify which configuration pass to add new settings:
 
     If your script relies on knowing which language the user selects during OOBE, you’d add it to the oobeSystem pass.
 
--   For info on the other configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
+-   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts](windows-deployment-sample-scripts-sxs.md): Keeping Windows settings through a recovery.
+**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
-**Create a catalog file**
+**Step 1: Create a catalog file**
 
 1.  Start **Windows System Image Manager**.
 
@@ -56,7 +62,7 @@ You can specify which configuration pass to add new settings:
 
     -   Make sure the Windows base-image file **(\\Sources\\Install.wim**) is in a folder that has read-write privileges, such as a USB flash drive or on your hard drive.
 
-**Create an answer file**
+**Step 2: Create an answer file**
 
 -   Click **File** > **New Answer File**.
 
@@ -64,9 +70,25 @@ You can specify which configuration pass to add new settings:
 
     **Note**   If you open an existing answer file, you might be prompted to associate the answer file with the image. Click **Yes**.
 
-**Add new answer file settings**
+**Step 3: Add new answer file settings**
 
-1.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
+1.  Add OEM info:
+
+    In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Shell-Setup\_(version)**, and then select **Add Setting to Pass 4 specialize**.
+
+    In the **Answer File** pane, select **Components\\4 specialize\\amd64\_Microsoft-Windows-Shell-Setup\_neutral\\OEMInformation**.
+
+    In the **OEMInformation Properties** pane, in the **Settings** section, select:
+    
+    -   Manufacturer=`Fabrikam`
+    -   Model=`Notebook Model 1`
+    -   Logo=`C:\Fabrikam\Fabrikam.bmp`
+        
+    Create a 32-bit color with a maximum size of 120x120 pixels, save it as C:\\AnswerFiles\\Fabrikam.bmp file on your local PC, or use the sample from the USB-B key: `C:\USB-B\ConfigSet\$OEM$\$$\System32\OEM\Fabrikam.bmp`. 
+    
+    We'll copy the logo into the Windows image in a few steps.
+
+2.  Set the device to automatically [boot to audit mode](https://msdn.microsoft.com/library/windows/hardware/dn923110.aspx):
 
     In the **Windows Image** pane, expand **Components**, right-click **amd64\_Microsoft-Windows-Deployment\_(version)**, and then select **Add Setting to Pass 7 oobeSystem**.
 
@@ -74,7 +96,7 @@ You can specify which configuration pass to add new settings:
 
     In the **Reseal Properties** pane, in the **Settings** section, select Mode=`Audit`.
 
-2.  Prepare a [script](https://msdn.microsoft.com/library/windows/hardware/dn915797.aspx) to run after Audit mode begins.
+3.  Prepare a [script](https://msdn.microsoft.com/library/windows/hardware/dn915797.aspx) to run after Audit mode begins.
 
     In the **Windows Image** pane, right-click **amd64\_ Microsoft-Windows-Deployment\_(version)** and then click **Add Setting to Pass 6 auditUser**.
 
@@ -86,21 +108,82 @@ You can specify which configuration pass to add new settings:
 
     `Description = Sample command to run a system diagnostic check.`
 
-    `Order = 1`
+    `Order = 1`  (Determines the order that commands are run, starting with 1.)
 
-More common settings: 
+4.  Add a registry key. In this example, we add keys for the OEM Windows Store program. Use the same process as adding a script, using `CMD /c REG ADD`. 
 
-*  Activate Windows without OEM Activation 3.0 (OA3.0) by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. For enterprises, this can be a volume license key.
+    For Windows 10 Customer Systems, you may use the OEM Store ID alone or in combination with a Store Content Modifier (SCM) to identify an OEM brand for the OEM Store. By adding a SCM, you can target Customer Systems at a more granular level.  For example, you may choose to target commercial devices separately from consumer devices by inserting unique SCMs for consumer and commercial brands into those devices.
 
-*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
+    Add RunAsynchronousCommands for each registry key to add. (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand**).
+    
+    ```syntax
+    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\OEM /v Value /t REG_SZ ABCD
+    Description = Adds a OEM registry key
+    Order = 2
+    RequiredUserInput = false
+    ```
 
-**Save the answer file**
+## <span id="Common_Windows_settings"></span> More common Windows settings: 
+
+*  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
+
+   `OPK X21-08790 Win Home 10 1607 32 64 English OPK\Print  Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf`.
+
+*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
+
+*  Set the Internet Explorer default search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
+
+   ```syntax
+   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.fabrikam.com/search?p={searchTerms}" /f`   
+   Description = Changes the Internet Explorer default browser to Fabrikam Search
+   Order = 3
+   RequiredUserInput = false
+   ```
+
+*  Set the Internet Explorer search scopes: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
+
+   Example:
+
+   ```syntax
+   <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SearchScopes>
+     <Scope wcm:action="add">             <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
+       <FaviconURL>http://www.bing.com/favicon.ico</FaviconURL>
+       <ScopeKey>Bing</ScopeKey>
+       <ScopeDefault>true</ScopeDefault>
+       <ScopeDisplayName>Bing</ScopeDisplayName>
+       <ScopeUrl>http://www.bing.com/search?q={searchTerms}&amp;form=&PRNAM1&amp;src=PRNAM1&amp;pc=NMTE</ScopeUrl>
+     </Scope>
+   </SearchScopes>
+   <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
+   ``` 
+
+*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
+
+   ```syntax
+   Path = `powercfg /h /type reduced`   
+   Description = Saves drive space by reducing hiberfile by 30%.
+   Order = 4
+   RequiredUserInput = false
+   ```
+
+   or
+
+   ```syntax   
+   Path = `powercfg /h /off`   
+   Description = Turns off the hiberfile.
+   Order = 4
+   RequiredUserInput = false
+   ```
+     
+
+**Step 4: Save the answer file**
 
 -   Save the answer file, for example: **C:\\AnswerFiles\\BootToAudit-x64.xml**.
 
     **Note**   Windows SIM will not allow you to save the answer file into the mounted image folders.
      
-**Create a script**
+**Step 5: Create a script**
 
 -   Copy the following sample script into Notepad, and save it as **C:\\AnswerFiles\\SampleCommand.cmd**.
 
@@ -116,27 +199,36 @@ More common settings:
 
 ## <span id="Add_the_answer_file_and_script_to_the_image"></span><span id="add_the_answer_file_and_script_to_the_image"></span><span id="ADD_THE_ANSWER_FILE_AND_SCRIPT_TO_THE_IMAGE"></span>Add the answer file and script to the image
 
-1.  Mount the Windows image. The mounting process maps the contents of an image file to a location where you can view and modify the mounted image.
+### <span id="Mount_the_image"></span>Mount the image
 
-    ``` syntax
-    md C:\mount\windows
-    Dism /Mount-Image /ImageFile:"C:\Images\WindowsWithOffice.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize
-    ```
+**Step 6: Mount the images**
 
-    Where *C* is the drive letter of the drive that contains the image and *1* is the index of the image that you want to use.
+Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
-    This step can take several minutes.
+1.  Open the command line as an administrator (**Start** > type **deployment** > right-click **Deployment and Imaging Tools Environment** > **Run as administrator**.)
 
+2.  Make a backup of the file (`copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim`)
+
+3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
+
+### <span id="Add_the_answer_file"></span>Add the answer file
+**Step 7: Add the answer file**
 2.  Copy the answer file into the image into the \\Windows\\Panther folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
     ``` syntax
     MkDir c:\mount\windows\Windows\Panther
     Copy C:\AnswerFiles\BootToAudit-x64.xml  C:\mount\windows\Windows\Panther\unattend.xml
     MkDir c:\mount\windows\Fabrikam
+    Copy C:\AnswerFiles\Fabrikam.bmp    C:\mount\windows\Fabrikam\Fabrikam.bmp
     Copy C:\AnswerFiles\SampleCommand.cmd    C:\mount\windows\Fabrikam\SampleCommand.cmd
     ```
+## <span id="Unmount_the_images"></span> Unmount the images
 
-3.  Commit the changes and unmount the Windows image:
+**Step 8: Unmount the images**
+
+1.  Close all applications that might access files from the image.
+
+2.  Commit the changes and unmount the Windows image:
 
     ``` syntax
     Dism /Unmount-Image /MountDir:"C:\mount\windows" /Commit
@@ -146,25 +238,23 @@ More common settings:
 
     This process may take several minutes.
 
-4.  Copy the new image to the storage drive.
-
 ## <span id="Try_it_out"></span>Try it out
-[Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image, SPPs, and the recovery image, and boot it up. The short version:
 
-1.  Boot the reference PC to Windows PE.
-2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
-3.  Apply the image: `D:\ApplyImage.bat D:\Images\install-updated.wim`.
-    Note, because this image is set to boot to audit mode, you won't be able to apply any siloed provisioning packages. 
-4.  Disconnect the drives, then reboot (`exit`).
+**Step 9: Apply the image to a new PC**
+Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
-**Verify settings and scripts**
+1.  Copy the image file to the storage drive.
+2.  [Boot the reference device to Windows PE using the Windows PE USB key](install-windows-pe-sxs.md).
+3.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
+5.  Disconnect the drives, then reboot (`exit`).
+	
+**Step 10: Verify settings and scripts**
+
 If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
 
 1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
 
-Leave the PC booted into audit mode to continue to either of the following labs:
+Leave the PC booted into audit mode to continue to the following lab:
 
--  [Lab 1f: Add Windows desktop applications with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
-
--  [Lab 1g: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
-
+Next steps: [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)

@@ -105,7 +105,7 @@ foreach ($objCustomKey in $objDisabledCustomKeys) {
 
 [WEKF\_CustomKey](wekf-customkey.md)
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
  
 

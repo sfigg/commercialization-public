@@ -79,7 +79,7 @@ You can use the [UWF\_Volume.AddExclusion](uwf-volumeaddexclusion.md) and [UWF\_
 ## Related topics
 
 
-[Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md)
+[Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [Unified Write Filter](unified-write-filter.md)
 

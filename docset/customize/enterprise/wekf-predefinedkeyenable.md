@@ -50,7 +50,7 @@ Returns an HRESULT value that indicates [WMI non-error constant](http://go.micro
 
 [WEKF\_PredefinedKey](wekf-predefinedkey.md)
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
  
 

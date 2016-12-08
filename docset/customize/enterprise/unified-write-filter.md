@@ -90,7 +90,7 @@ If Windows has already been installed and you are applying a provisioning packag
 
 **Turn on and configure UWF by using Windows Imaging and Configuration Designer (ICD)**
 
-1.  Build a provisioning package in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](p_icd.create_a_provisioning_package).
+1.  Build a provisioning package in Windows Imaging and Configuration Designer (ICD) by following the instructions in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
 
     In the **Select Windows Edition** window, choose **Common to all Windows desktop editions**.
 
@@ -99,7 +99,7 @@ If Windows has already been installed and you are applying a provisioning packag
      
 
 2.  In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the unified write filter setting.
-3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](p_icd.create_a_provisioning_package) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
+3.  Once you have finished configuring the settings and building the provisioning package, you can apply the package to the image deployment time or runtime. See the To apply a provisioning package to a Windows 10 for desktop editions image section in [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107) for more information. Note that the process for applying the image to a Windows 10 Enterprise is the same.
 
 ## Turn on and configure UWF by using Windows Management Instrumentation (WMI)
 
@@ -133,7 +133,7 @@ All configuration settings for UWF are stored in the registry. UWF automatically
 
 UWF maintains configuration settings in the registry for the current session and for the next session after a device restart. Static configuration changes do not take effect until after a device restart, and these changes are saved in the registry entries for the next session. Dynamic configuration changes occur immediately and persist after a device restart.
 
-For more information about UWF WMI providers, see [Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md).
+For more information about UWF WMI providers, see [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md).
 
 For more information about the command line tool for configuring UWF, see [uwfmgr.exe](uwfmgrexe.md).
 
@@ -150,7 +150,7 @@ UWF also supports the use of paging to increase virtual memory, if the page file
 
 UWF does not support the use of fast startup when shutting down your device. If fast startup is turned on, shutting down the device does not clear the overlay. You can disable fast startup in Control Panel by navigating to **Control Panel** &gt; **All Control Panel Items** &gt; **Power Options** &gt; **System Settings** and clearing the checkbox next to **Turn on fast startup (recommended)**.
 
-For more information about overlays in UWF, see [Overlay for Unified Write Filter (UWF)](overlay-for-unified-write-filter-uwf.md).
+For more information about overlays in UWF, see [Overlay for Unified Write Filter (UWF)](uwfoverlay.md).
 
 ## Volumes
 
@@ -210,7 +210,7 @@ You cannot rename or move a file or folder from a protected location to an unpro
 
 To work around this, you can disable the Recycle Bin. Alternatively, the user can press Ctrl+Shift and then left-click on the file to directly delete the excluded file, bypassing the Recycle Bin, or the user can delete the excluded file directly from a command prompt. You must restart the device for new exclusions to take effect.
 
-For more information about common file exclusions, see [Common write filter exclusions](common-write-filter-exclusions.md).
+For more information about common file exclusions, see [Common write filter exclusions](uwfexclusions.md).
 
 ### Virtual Hard Disk (VHD) file exclusions
 
@@ -248,7 +248,7 @@ UWF automatically excludes certain registry keys from being filtered. These regi
 
  
 
-For more information about common registry exclusions, see [Common write filter exclusions](common-write-filter-exclusions.md).
+For more information about common registry exclusions, see [Common write filter exclusions](uwfexclusions.md).
 
 ## UWF servicing mode
 
@@ -262,7 +262,7 @@ For more information about how to use UWF servicing mode to apply software updat
 
 UWF uses Windows Event Log to log events, errors and messages related to overlay consumption, configuration changes, and servicing.
 
-For more information about how to find event log information for troubleshooting problems with Unified Write Filter (UWF), see [Troubleshooting Unified Write Filter (UWF)](troubleshooting-unified-write-filter-uwf.md).
+For more information about how to find event log information for troubleshooting problems with Unified Write Filter (UWF), see [Troubleshooting Unified Write Filter (UWF)](uwftroubleshooting.md).
 
 ## Related topics
 

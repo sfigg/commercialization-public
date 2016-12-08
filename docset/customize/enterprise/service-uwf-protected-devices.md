@@ -18,13 +18,13 @@ When a device is protected with UWF, you must use UWF servicing mode commands to
 ## In this section
 
 
-<a href="" id="antimalware-support-on-uwf-protected-devices"></a>[Antimalware support on UWF-protected devices](antimalware-support-on-uwf-protected-devices.md)  
+<a href="" id="uwfantimalware-support"></a>[Antimalware support on UWF-protected devices](uwfantimalware-support.md)  
 Describes the procedures to add support for Windows Defender and System Center Endpoint Protection (SCEP/Forefront) antimalware to your UWF-protected devices.
 
-<a href="" id="apply-oem-updates-to-uwf-protected-devices"></a>[Apply OEM updates to UWF-protected devices](apply-oem-updates-to-uwf-protected-devices.md)  
+<a href="" id="uwfapply-oem-updates"></a>[Apply OEM updates to UWF-protected devices](uwfapply-oem-updates.md)  
 Provides information about how to apply OEM updates to a UWF-protected device.
 
-<a href="" id="apply-windows-updates-to-uwf-protected-devices"></a>[Apply Windows updates to UWF-protected devices](apply-windows-updates-to-uwf-protected-devices.md)  
+<a href="" id="uwfapply-windows-updates"></a>[Apply Windows updates to UWF-protected devices](uwfapply-windows-updates.md)  
 Describes the procedures to apply Windows updates to your UWF-protected devices.
 
 <a href="" id="uwf-master-servicing-script"></a>[UWF master servicing script](uwf-master-servicing-script.md)  
@@ -40,7 +40,7 @@ Provides information about how to modify the default UWF servicing screen saver.
 
 [Unified Write Filter](unified-write-filter.md)
 
-[Unified Write Filter WMI provider reference](unified-write-filter-wmi-provider-reference.md)
+[Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 
 [UWF\_Servicing](uwf-servicing.md)
 

@@ -50,7 +50,7 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>Accessibility</p></td>
 <td><p>Assigned access does not change Ease of Access settings.</p>
-<p>We recommend that you use [Keyboard Filter](keyboard-filter.md) to block the following key combinations that bring up accessibility features:</p>
+<p>We recommend that you use [Keyboard Filter](keyboardfilter.md) to block the following key combinations that bring up accessibility features:</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -86,7 +86,7 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>Key sequences blocked by assigned access</p></td>
 <td><p>When in assigned access, some key combinations are blocked for assigned access users.</p>
-<p>Alt+F4, Alt+Shift+TaB, Alt+Tab are not blocked by Assigned Access, it is recommended you use [Keyboard Filter](keyboard-filter.md) to block these key combinations.</p>
+<p>Alt+F4, Alt+Shift+TaB, Alt+Tab are not blocked by Assigned Access, it is recommended you use [Keyboard Filter](keyboardfilter.md) to block these key combinations.</p>
 <p>Ctrl+Alt+Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](wekf-settings.md).</p>
 <table>
 <colgroup>
@@ -146,10 +146,10 @@ The following table describes some features that have interoperability issues we
 <p>Keyboard Filter settings apply to other standard accounts.</p></td>
 </tr>
 <tr class="even">
-<td><p>Key sequences blocked by [Keyboard Filter](keyboard-filter.md)</p></td>
-<td><p>If Keyboard Filter is turned ON then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](keyboard-filter.md) reference topic.</p>
+<td><p>Key sequences blocked by [Keyboard Filter](keyboardfilter.md)</p></td>
+<td><p>If Keyboard Filter is turned ON then some key combinations are blocked automatically without you having to explicitly block them. For more information, see the [Keyboard Filter](keyboardfilter.md) reference topic.</p>
 <div class="alert">
-<strong>Note</strong>  [Keyboard Filter](keyboard-filter.md) is only available on Windows 10 Enterprise or Windows 10 Education.
+<strong>Note</strong>  [Keyboard Filter](keyboardfilter.md) is only available on Windows 10 Enterprise or Windows 10 Education.
 </div>
 <div>
  
@@ -216,7 +216,7 @@ The following table describes some features that have interoperability issues we
 ## Related topics
 
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
 [Unified Write Filter](unified-write-filter.md)
 

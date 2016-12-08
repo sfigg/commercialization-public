@@ -8,8 +8,6 @@ title: 'Sysprep (System Preparation) Overview'
 
 # Sysprep (System Preparation) Overview
 
-Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 **Sysprep** (System Preparation) prepares a Windows installation (Windows client and Windows Server) for imaging, allowing you to capture a customized installation. **Sysprep** removes PC-specific information from a Windows installation, "generalizing" the installation so it can be installed on different PCs. With **Sysprep** you can configure the PC to boot to audit mode, where you can make additional changes or updates to your image. Or, you can configure Windows to boot to the Out-of-Box Experience (OOBE).
 
 Sysprep is part of the Windows image, and is used during audit mode.

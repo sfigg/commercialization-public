@@ -202,9 +202,9 @@ Enable-Predefined-Key "Ctrl+Esc"
 ## Related topics
 
 
-[Keyboard Filter WMI provider reference](keyboard-filter-wmi-provider-reference.md)
+[Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter](keyboard-filter.md)
+[Keyboard Filter](keyboardfilter.md)
 
  
 

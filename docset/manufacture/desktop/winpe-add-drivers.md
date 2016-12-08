@@ -99,7 +99,7 @@ You can also update device drivers while you're running Windows PE. For more in
 
 ## <span id="related_topics"></span>Related topics
 
-[WinPE: Optimize and shrink the image](desktop/winpe-optimize.md)
+[WinPE: Optimize and shrink the image](winpe-optimize.md)
 
 [WinPE for Windows 10](winpe-intro.md)
 
