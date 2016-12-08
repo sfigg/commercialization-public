@@ -53,15 +53,17 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
     
     Obtain: Office v16.2.1 in desired language, this sample uses English X21-20393 Office 2016 v16.2.1 English OPK
 
-4.  Mount "X21-20393 Office v16.2.1  English OPK\Software - DVD\X21-20435 SW DVD5 Office Pro 2016 32 64-bit English C2ROPK Pro HS HB OEM v16.2.1\X21-20435.img" and Copy the Office folder to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.2.1
+4.  Mount "X21-20393 Office v16.2.1  English OPK\Software - DVD\X21-20435 SW DVD5 Office Pro 2016 32 64-bit English C2ROPK Pro HS HB OEM v16.2.1\X21-20435.img"
+
+5.  Copy the Office folder to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.2.1
  
     [Optional] if you applied a language pack to your Windows image, you may want to add the language pack for Office 2016 as well for better end user experience. The below samples will show with the Language pack applied
 
-5.	Mount “x21-20487 Office v16.2.1 German OPK”
+6.	Mount “x21-20487 Office v16.2.1 German OPK”
 
-6.	Copy the office folder to E:\OfficeV16.2.1
+7.	Copy the office folder to E:\OfficeV16.2.1
 
-7.	Skip replacing duplicate files in the copy so that only the German languages are copied.
+8.	Skip replacing duplicate files in the copy so that only the German languages are copied.
 
 ### <span id="Update_the_installer"></span>Microsoft Office 2016: Install the Home and Student edition
 

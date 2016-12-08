@@ -29,6 +29,7 @@ copy "C:\Images\Win10_x64\sources\install.wim" C:\Images\install-backup.wim
 ```
 
 **Step 2: Mount the Windows image file**
+
 Create a temporary folder to mount the files, and mount the image into it: 
 ``` syntax
 md C:\mount\windows
@@ -150,4 +151,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 * When creating several devices with the identical hardware configuration, you can speed up installation time and first boot-up time by [maintaining driver configurations when capturing a Windows image](maintain-driver-configurations-when-capturing-a-windows-image.md). 
 
 
-Next step: [Lab 4: Add languages](manufacture/desktop/add-drivers-langs-universal-apps-sxs.md)
+Next step: [Lab 4: Add languages](add-drivers-langs-universal-apps-sxs.md)

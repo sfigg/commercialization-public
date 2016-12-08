@@ -8,7 +8,7 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 
 # OEM Windows Desktop Deployment and Imaging Lab
 
-Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for creating base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
+Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for designing base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
 Let's get started!
 
@@ -39,15 +39,17 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md) (includes Microsoft Universal Office Apps)
 *  [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 *  [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
+
+**Add desktop applications, tiles, and pins**
+
+For Windows desktop applications, you can add them in audit mode, or apply them separately after you've applied a Windows image.
+
 *  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md) (includes Microsoft Office 2016)
-
-**Add desktop apps**
-
-* When you're creating PCs with a variety of Windows desktop applications, it's often easier to apply them separately from the Windows image.
-
 *  [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
-*  [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md) (used for all Windows application types)
+*  [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md) (used for universal apps and desktop applications)
 
 **Final tasks**
+Make sure your customizations are included in the recovery image, and optimize the images for quick and easy deployment.
+
 *  [Lab 12: Update the recovery image](update-the-recovery-image.md)
 *  [Lab 13: Shrink your image size](shrink-your-image-size.md)

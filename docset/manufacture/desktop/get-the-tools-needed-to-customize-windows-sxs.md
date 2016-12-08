@@ -16,7 +16,9 @@ Here's what you'll need to start testing and deploying devices:
 
 Here's how we'll refer to them:
 
--   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) and for modifying Windows images. We recommend using Windows 10. The minimum requirement is Windows 7 SP1, though this may require additional tools or workarounds for tasks such as running PowerShell scripts or mounting .ISO images.
+-   **Technician PC**: Your work PC. This PC should have at least 15GB of free space for installing the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/?LinkId=526803) and for modifying Windows images. 
+
+    We recommend using Windows 10 for this PC. The minimum requirement is Windows 7 SP1, though this requires additional tools or workarounds for tasks such as running PowerShell scripts and mounting .ISO images.
 
     For most tasks, you can use either an x86 or x64 PC. If you're creating x86 images, you'll need an x86-based PC (or virtual machine) for a one-time task of [generating a catalog file](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md).
 
@@ -26,10 +28,11 @@ Here's how we'll refer to them:
 
 ## <span id="hw"></span><span id="HW"></span>Storage
 
-
 -   **WinPE USB key**: Must be at least 512MB and at most 32GB. This drive will be formatted, so save your data off of it first. It should not be a Windows-to-Go key or a key marked as a non-removable drive.
 
--   **Storage USB key** (USB-B): A second USB key or an external USB hard drive for storing files. Minimum free space: 8GB, using NTFS, ExFAT, or any other file system that allows files over 4GB.  If your hardware allows it, use USB 3.0 keys/drives and USB 3.0 ports to speed up file copy procedures. Note, some USB 3.0 keys don't work with some USB 2.0 ports. We won't be reformatting this drive, so as long as you have enough free space, you can reuse an existing storage drive. 
+-   **Storage USB key** (USB-B): A second USB key or an external USB hard drive for storing files. Minimum free space: 8GB, using NTFS, ExFAT, or any other file system that allows files over 4GB.  If your hardware allows it, use USB 3.0 keys/drives and USB 3.0 ports to speed up file copy procedures. Note, some USB 3.0 keys don't work with some USB 2.0 ports. We won't be reformatting this drive, so as long as you have enough free space, you can reuse an existing storage drive.
+
+To use a single storage drive, see [WinPE: Store or split images to deploy Windows using a single USB drive](winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim.md) 
 
 ## <span id="sw"></span><span id="SW"></span>Software
 
@@ -121,4 +124,6 @@ Here’s how to set up your PC.
 
 6.  When the installation is finished, click **Close**.
 
-Next step: [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
+**Next steps**
+* [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
+

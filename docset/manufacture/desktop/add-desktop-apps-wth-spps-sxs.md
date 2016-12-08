@@ -85,7 +85,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 
     **Optional**: Delete the ScanState logfile: `del C:\Scanstate.log`.
 
-## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 3: Install and capture a Windows desktop application (Microsoft Office)
+## <span id="Install_and_capture_a_Windows_desktop_application"></span><span id="install_and_capture_a_windows_desktop_application"></span><span id="INSTALL_AND_CAPTURE_A_WINDOWS_DESKTOP_APPLICATION"></span>Step 4: Install and capture a Windows desktop application (Microsoft Office)
 
 1.  Install a Windows desktop application. For example, to install Office 2016.
 
@@ -130,7 +130,7 @@ You can add registry keys, for example, an OEM key, or a Windows Store identifie
 	   or
 	-  For VMs, revert back to the checkpoint, then capture the next app.
 
-## <span id="Try_it_out"></span><span id="try_it_out"></span><span id="TRY_IT_OUT"></span>Step 4: Try it out
+## <span id="Try_it_out"></span><span id="try_it_out"></span><span id="TRY_IT_OUT"></span>Step 5: Try it out
 	
 **Apply the image**
 

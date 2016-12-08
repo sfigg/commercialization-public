@@ -1,12 +1,12 @@
 ---
 author: KPacquer
-Description: 'WinPE: Store or split images to deploy Windows using a single USB key'
+Description: 'WinPE: Store or split images to deploy Windows using a single USB drive'
 ms.assetid: 66036c4e-f64c-4175-b4fe-15e4cc1fc600
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'WinPE: Store or split images to deploy Windows using a single USB key'
+title: 'WinPE: Store or split images to deploy Windows using a single USB drive'
 ---
 
-# WinPE: Store or split images to deploy Windows using a single USB key
+# WinPE: Store or split images to deploy Windows using a single USB drive
 
 How can you deploy Windows to PCs with just one USB port?
 
