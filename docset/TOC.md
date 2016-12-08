@@ -92,8 +92,8 @@
 
 # [Customize](customize/index.md)
 
-## [What's new in customizations](https://msdn.microsoft.com/library/windows/hardware/mt723364)
-## [Change history for customization docs](https://msdn.microsoft.com/library/windows/hardware/mt723363)
+## [What's new in customizations](customize/what-s-new-in-customizations.md)
+## [Change history for customization docs](customize/change-history-for-customize.md)
 
 ## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
