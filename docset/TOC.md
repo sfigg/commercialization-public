@@ -128,8 +128,6 @@
 
 ### [Unattended Windows Setup Reference](customize/desktop/unattend/)
 
-
-
 ## [Customizations for enterprise desktop](customize/enterprise/enterprise-custom-portal.md)
 ### [Create a Kiosk Experience](customize/enterprise/create-a-kiosk-image.md)
 ### [Find the Application User Model ID of an installed app](customize/enterprise/find-the-application-user-model-id-of-an-installed-app.md)
@@ -475,6 +473,12 @@
 ##### [Store live tile](customize/mobile/mcsf/store-live-tile.md)
 
 ## [Mobile Device Management](customize/mdm/)
+
+## [Preinstalled apps](customize/preinstall/preinstall-apps.md)
+### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
+### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
+### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
+
 
 # [Test](test/index.md)
 
@@ -902,10 +906,10 @@
 #### [Lab 7: Change settings, product keys, scripts with an answer file](manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md)
 #### [Lab 8: Add branding and license agreements (OOBE.xml)](manufacture/desktop/add-a-license-agreement.md)
 #### [Lab 9: Make changes from Windows (audit mode)](manufacture/desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
-#### [Lab 10: Shrink your image size](manufacture/desktop/shrink-your-image-size.md)
-#### [Lab 11: Add desktop apps with siloed provisioning packages](manufacture/desktop/add-desktop-apps-wth-spps-sxs.md)
-#### [Lab 12: Add Start tiles and taskbar pins](manufacture/desktop/add-start-tiles-sxs.md)
-#### [Lab 13: Update the recovery image](manufacture/desktop/update-the-recovery-image.md)
+#### [Lab 10: Add desktop apps with siloed provisioning packages](manufacture/desktop/add-desktop-apps-wth-spps-sxs.md)
+#### [Lab 11: Add Start tiles and taskbar pins](manufacture/desktop/add-start-tiles-sxs.md)
+#### [Lab 12: Update the recovery image](manufacture/desktop/update-the-recovery-image.md)
+#### [Lab 13: Shrink your image size](manufacture/desktop/shrink-your-image-size.md)
 
 ### [Deployment Options](manufacture/desktop/windows-deployment-options.md)
 #### [Add updates to customized Windows images](manufacture/desktop/add-updates-to-customized-windows-and-winpe-images.md)
