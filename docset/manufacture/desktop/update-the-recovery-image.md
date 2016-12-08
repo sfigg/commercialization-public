@@ -1,16 +1,16 @@
 ---
 author: KPacquer
-Description: 'Lab 13: Update the recovery image'
+Description: 'Lab 12: Update the recovery image'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 13: Update the recovery image'
+title: 'Lab 12: Update the recovery image'
 ---
-# Lab 13: Update the recovery image
+# Lab 12: Update the recovery image
 
 If the system can't boot to the Windows image, it will fail over to the Windows Recovery Environment (WinRE). WinRE can repair common causes of unbootable operating systems. WinRE is based on Windows Preinstallation Environment (WinPE), and to make it work for your customers, you can add drivers, languages, Windows PE Optional Components, and other troubleshooting and diagnostic tools. 
 
 The WinRE image is included inside the Windows 10 and Windows Server 2016 images, and is eventually copied to the Windows RE tools partition on the destination PC or device. To modify it, you'll mount the Windows image, then mount the WinRE image inside it. Make your changes, unmount the WinRE image, then unmount the Windows image. 
 
-   ![image: Mount the Windows image, then mount the recovery image inside it. Make changes, then unmount the recovery image, and finally the Windows image](images/customize-recovery-image.jpg)
+![image: Mount the Windows image, then mount the recovery image inside it. Make changes, then unmount the recovery image, and finally the Windows image](images/customize-recovery-image.jpg)
 
 You should update your recovery image to ensure a consistent recovery experience whenever you:
 * Add boot-critical .inf-style drivers, such as the graphics and storage drivers for [Lab 1: Install Windows PE](install-windows-pe-sxs.md).
@@ -32,7 +32,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
-## <span id="Mount_the_recovery_image"></span>Step 1: Mount the recovery image
+## <span id="Mount_the_recovery_image"></span>Step 2: Mount the recovery image
 
 -   Mount the Windows RE image file. 
 
@@ -283,4 +283,4 @@ The short version:
 
     If languages have been successfully added, you'll either see the new language (for a single language image) or be prompted for your language (for a multi-language image). 
 	
-Next step: [Lab 10: Shrink your image size](shrink-your-image-size.md)
+Next step: [Lab 13: Shrink your image size](shrink-your-image-size.md)

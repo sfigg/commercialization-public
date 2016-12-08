@@ -15,17 +15,21 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [OEM deployment lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
 
+- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
+
+- **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
+
 [Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md): added examples of adding registry keys through Unattend.
 
 [Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
 
-[Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
-[Lab 13: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
+[Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
-- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
+[Append, apply, and export volume images with a Windows Image (.wim) file](append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
 
-- **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
+[Compact OS, single-instancing, and image optimization](desktop/compact_os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
 
 **November 30, 2016**
 
@@ -49,7 +53,7 @@ To update install the latest updates:
 
 -  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
 
-   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 13: Update the recovery image](desktop/update-the-recovery-image.md).
+   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md).
 
 The SSU:KB3199209 addresses two issues:
  
