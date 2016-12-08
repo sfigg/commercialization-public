@@ -9,7 +9,7 @@ title: 'Lab 2: Deploy Windows using a script'
 
 You can use scripts to take a Windows image and deploy Windows onto new PCs quickly. You can modify these scripts to change the size of the drive partitions, or to completely automate deployment. 
 
-## <spand id="Get_the_image></span>Step 1: Mount the image
+## <span id="Get_the_image></span>Step 1: Mount the image
 
 1.  On your technician PC, right-click the image file for Windows 10, version 1607 Home (X21-08790 Win Home 10 1607 32 64 English OPK\Software - DVD\X21-05999 SW DVD5 NTRL Win 10 1607 64Bit English Home Pro\X21-05999.img), and select **Mount**. This loads the files to a temporary drive letter (example, D:).
 
@@ -108,6 +108,5 @@ The PC should reboot into Windows. While you’re waiting for the preparation ph
 2.  Select **Start** &gt; **Settings** &gt; **Update & security** &gt; **Recovery** &gt; under **Reset this PC**, click **Get started** > **Remove everything** > **Just remove my files** > **Next**.
 3.  After Windows completes the reset,  Windows should go back to the original welcome screens as if there were no user account on the device.
 
-## <span id="Whats_next"></span>What's next
-
+**Next Steps**
 [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) (includes basics on mounting images)
