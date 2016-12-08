@@ -22,7 +22,7 @@ While you can set many Windows settings in audit mode, some settings can only be
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
-We'll show you more ways to add settings later in [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
+We'll show you more ways to add settings later in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
 
 ## <span id="Unattend_overview"></span>Answer file settings
 

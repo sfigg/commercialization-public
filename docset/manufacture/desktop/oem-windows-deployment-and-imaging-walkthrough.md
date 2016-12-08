@@ -10,10 +10,6 @@ title: OEM Windows Desktop Deployment and Imaging Lab
 
 Getting ready to build and test Windows 10 desktop PCs? This lab provides strategies for creating base images and updating them with command-line tools. The commands can be scripted, helping you quickly customize new images for specific markets to meet your customers' needs.
 
-New in this lab: 
-
-* With siloed provisioning packages, you can now capture and apply Windows desktop applications during deployment, one at a time. This avoids some of the time-consuming steps involved in generalizing and recapturing images.
-
 Let's get started!
 
 **Preparation**
@@ -45,9 +41,13 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 *  [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)
 *  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md) (includes Microsoft Office 2016)
 
-**Final tasks**
+**Add desktop apps**
 
-*  [Lab 10: Shrink your image size](shrink-your-image-size.md)
-*  [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
-*  [Lab 12: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)
-*  [Lab 13: Update the recovery image](update-the-recovery-image.md)
+* When you're creating PCs with a variety of Windows desktop applications, it's often easier to apply them separately from the Windows image.
+
+*  [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
+*  [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md) (used for all Windows application types)
+
+**Final tasks**
+*  [Lab 12: Update the recovery image](update-the-recovery-image.md)
+*  [Lab 13: Shrink your image size](shrink-your-image-size.md)

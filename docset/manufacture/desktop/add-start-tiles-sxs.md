@@ -1,18 +1,18 @@
 ---
 author: KPacquer
-Description: 'Lab 12: Add Start tiles and taskbar pins'
+Description: 'Lab 11: Add Start tiles and taskbar pins'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 12: Add Start tiles and taskbar pins'
+title: 'Lab 11: Add Start tiles and taskbar pins'
 ---
 
-# <span id="Add_apps"></span>Lab 12: Add Start tiles and taskbar pins
+# <span id="Add_apps"></span>Lab 11: Add Start tiles and taskbar pins
 
 Add Start tiles and taskbar pins. 
 
 Notes:
 * **Start menu** : If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-**Note**  The Start layout and taskbar pins can be lost if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Lab 13: Update the recovery image](update-the-recovery-image.md).
+**Note**  The Start layout and taskbar pins can be lost if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
 - **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all Store Program terms and conditions, and related documents. 
 
@@ -222,4 +222,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 3.  Check the Start Menu and taskbar and make sure the apps you selected are pinned correctly.
 	
-Next steps: [Lab 13: Update the recovery image](update-the-recovery-image.md)
+Next steps: [Lab 12: Update the recovery image](update-the-recovery-image.md)

@@ -91,7 +91,7 @@ The current OEM recommendation is to install Office Home and Student 2016, rathe
 
 ### <span id="Pin_tiles"></span>Microsoft Office 2016: Pin tiles to the Start Menu layout
 
-You must pin the Office tiles to the Start menu. Not doing so Windows will remove the Office files during OOBE boot phase. To learn more, see [Lab 12: Add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite).
+You must pin the Office tiles to the Start menu. Not doing so Windows will remove the Office files during OOBE boot phase. To learn more, see [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite).
 
 ### <span id="Configure_setup"></span>Microsoft Office 2016: Configure setup experience for the user
 
@@ -226,4 +226,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 2.  See that the changes you made in audit mode are there.
 
-Next steps: [Lab 10: Shrink your image size](shrink-your-image-size.md)
+Next steps: [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)

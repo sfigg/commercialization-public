@@ -74,7 +74,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 	
 ## <span id="Apply_desktop_applications"></span>Step 4: Apply desktop applications
 
-**Skip this step** until you've completed [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
+**Skip this step** until you've completed [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
 
 1.  Apply desktop applications.
 
@@ -85,7 +85,7 @@ The sample scripts include steps that detect the firmware type (the newer UEFI-b
 
 ## <span id="Apply_the_recovery_image"></span>Step 5: Set up the system recovery tools
 
-**Optional: skip this step** until you've completed [Lab 13: Update the recovery image](update-the-recovery-image.md). 
+**Optional: skip this step** until you've completed [Lab 12: Update the recovery image](update-the-recovery-image.md). 
 
 Include a recovery image for your final images, but it's not required for these early testing steps. 
 

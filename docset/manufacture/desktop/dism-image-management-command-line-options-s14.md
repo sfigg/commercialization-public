@@ -473,7 +473,7 @@ Applies one or more siloed provisioning packages (SPPs) to a specified image. Th
 
 For more information about siloed provisioning packages, and how to use CopyDandI.cmd, see [Siloed provisioning packages.](siloed-provisioning-packages.md)
 
-To find out how to work with siloed provisioning packages, see [Lab 11: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
+To find out how to work with siloed provisioning packages, see [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
 
 ``` Syntax
 /Apply-SiloedPackage /PackagePath:<package_path> /ImagePath:<applied_image_path>
