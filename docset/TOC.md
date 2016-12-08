@@ -128,8 +128,6 @@
 
 ### [Unattended Windows Setup Reference](customize/desktop/unattend/)
 
-
-
 ## [Customizations for enterprise desktop](customize/enterprise/enterprise-custom-portal.md)
 ### [Create a Kiosk Experience](customize/enterprise/create-a-kiosk-image.md)
 ### [Find the Application User Model ID of an installed app](customize/enterprise/find-the-application-user-model-id-of-an-installed-app.md)
@@ -475,6 +473,12 @@
 ##### [Store live tile](customize/mobile/mcsf/store-live-tile.md)
 
 ## [Mobile Device Management](customize/mdm/)
+
+## [Preinstalled apps](customize/preinstall/preinstall-apps.md)
+### [Preinstallable apps for desktop devices](customize/preinstall/preinstallable-apps-for-windows-10-desktop.md)
+### [Preinstallable apps for mobile devices](customize/preinstall/preinstallable-apps-for-window-10-for-phones.md)
+### [Preinstall tasks](customize/preinstall/preinstall-tasks.md)
+
 
 # [Test](test/index.md)
 
