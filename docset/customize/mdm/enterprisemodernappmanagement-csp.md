@@ -9,19 +9,23 @@ ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 
 # EnterpriseModernAppManagement CSP
 
+
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
 > **Note**  Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 
+ 
 
 The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
 
-![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
+![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement2.png)
 
 <a href="" id="device-or-user-context"></a>**Device or User context**  
 For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
 > **Note**  Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
+
+ 
 
 <a href="" id="appmanagement"></a>**AppManagement**  
 Required. Used for inventory and app management (post-install).
@@ -35,24 +39,6 @@ Supported operation is Execute.
 Required. Reports the last error code returned by the update scan.
 
 Supported operation is Get.
-
-<a href="" id="appmanagement-appinventoryresults"></a>**AppManagement/AppInventoryResults**  
-Added in Windows 10, version 1511. Required. Returns the results for app inventory that was created after the AppInventoryQuery operation.
-
-Supported operation is Get.
-
-Here's an example of AppInventoryResults operation.
-
-``` syntax
-<Get>
-   <CmdID>11</CmdID>
-   <Item>
-      <Target>
-         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppInventoryResults</LocURI>
-      </Target>
-   </Item>
-</Get>
-```
 
 <a href="" id="appmanagement-appinventoryquery"></a>**AppManagement/AppInventoryQuery**  
 Added in Windows 10, version 1511. Required. Specifies the query for app inventory.
@@ -102,10 +88,24 @@ The following example sets the inventory query for the package names and checks 
    </Item>
 </Replace>
 ```
-<a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-Added in the next major update of Windows 10.
+
+<a href="" id="appmanagement-appinventoryresults"></a>**AppManagement/AppInventoryResults**  
+Added in Windows 10, version 1511. Required. Returns the results for app inventory that was created after the AppInventoryQuery operation.
 
 Supported operation is Get.
+
+Here's an example of AppInventoryResults operation.
+
+``` syntax
+<Get>
+   <CmdID>11</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppInventoryResults</LocURI>
+      </Target>
+   </Item>
+</Get>
+```
 
 <a href="" id="appmanagement-nonstore"></a>**AppManagement/nonStore**  
 Used to manage enterprise apps or developer apps that were not acquired from the Windows Store.
@@ -129,6 +129,7 @@ Supported operations are Get and Delete.
 
 > **Note**  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
+ 
 
 Here's an example for uninstalling an app:
 
@@ -157,6 +158,7 @@ Supported operations are Get and Delete.
 > **Note**  XAP files use a product ID in place of PackageFullName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
+
 <a href="" id="----packagefamilyname-packagefullname-name"></a>**.../*PackageFamilyName*/*PackageFullName*/Name**  
 Required. Name of the app. Value type is string.
 
@@ -196,6 +198,7 @@ Required. Whether or not the app is a framework package. Value type is int. The 
 > **Note**  Not applicable to XAP files.
 
  
+
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-isbundle"></a>**.../*PackageFamilyName*/*PackageFullName*/IsBundle**  
@@ -214,6 +217,7 @@ Required. Resource ID of the app. This is null for the main app, ~ for a bundle,
 > **Note**  Not applicable to XAP files.
 
  
+
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
@@ -237,6 +241,7 @@ Required. Specifies whether the package state has changed and requires a reinsta
 > **Note**  Not applicable to XAP files.
 
  
+
 Supported operation is Get.
 
 <a href="" id="----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
@@ -307,6 +312,7 @@ Supported operations are Get and Add.
 > **Note**  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
+
 <a href="" id="appinstallation-packagefamilyname-storeinstall"></a>**AppInstallation/*PackageFamilyName*/StoreInstall**  
 Required. Command to perform an install of an app and a license from the Windows Store.
 
@@ -334,6 +340,7 @@ Supported operation is Get.
 > **Note**  This element is not present after the app is installed.
 
  
+
 <a href="" id="appinstallation-packagefamilyname-status"></a>**AppInstallation/*PackageFamilyName*/Status**  
 Required. Status of app installation. The following values are returned:
 
@@ -347,6 +354,7 @@ Supported operation is Get.
 > **Note**  This element is not present after the app is installed.
 
  
+
 <a href="" id="appinstallation-packagefamilyname-progessstatus"></a>**AppInstallation/*PackageFamilyName*/ProgessStatus**  
 Required. An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
 
@@ -355,6 +363,7 @@ Supported operation is Get.
 > **Note**  This element is not present after the app is installed.
 
  
+
 <a href="" id="applicenses"></a>**AppLicenses**  
 Required node. Used to manage licenses for app scenarios.
 
@@ -445,6 +454,7 @@ Subsequent query for a specific app for its properties.
 ```
 
 ## Related topics
+
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
