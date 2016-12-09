@@ -9,10 +9,12 @@ ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 
 # EnterpriseModernAppManagement CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
 > **Note**  Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
-
 
 The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
 
@@ -103,7 +105,7 @@ The following example sets the inventory query for the package names and checks 
 </Replace>
 ```
 <a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-Added in the next major update of Windows 10.
+Added in the next major update of Windows 10. Used to remove packages.
 
 Supported operation is Get.
 
