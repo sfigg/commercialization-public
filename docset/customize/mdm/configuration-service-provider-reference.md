@@ -117,10 +117,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[CellularSettings CSP](cellularsettings-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -147,10 +147,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -181,8 +181,8 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" />*</td>
-<td><img src="images/checkmark.png" alt="check mark" />*</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
@@ -307,10 +307,10 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[EnterpriseAPN CSP](enterpriseapn-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
-<td><img src="images/checkmark.png" alt="check mark" />\**</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -606,9 +606,9 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -626,9 +626,9 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[SharedPC CSP](sharedpc-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -736,9 +736,9 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[Win32AppInventory CSP](win32appinventory-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -746,9 +746,9 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
-<td><img src="images/checkmark.png" alt="check mark" />\*</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -778,8 +778,8 @@ The following table show the configuration service providers supported in Window
 </table>
 
  Footnotes: 
-- \* - Added in Windows 10, version 1607
-- \** - Added in the next major updated of Windows 10
+- 1 - Added in Windows 10, version 1607
+- 2 - Added in the next major updated of Windows 10
 
 
 ## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
