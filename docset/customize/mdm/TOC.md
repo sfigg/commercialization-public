@@ -128,6 +128,7 @@
 ### [EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md)
 #### [EnterpriseExtFileSystem DDF file](enterpriseextfilesystem-ddf.md)
 ### [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
+#### [EnterpriseModernAppManagement DDF](enterprisemodernappmanagement-ddf.md)
 #### [EnterpriseModernAppManagement XSD](enterprisemodernappmanagement-xsd.md)
 ### [FileSystem CSP](filesystem-csp.md)
 ### [HealthAttestation CSP](healthattestation-csp.md)
