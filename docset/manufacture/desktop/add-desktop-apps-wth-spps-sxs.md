@@ -1,11 +1,11 @@
 ---
 author: KPacquer
-Description: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
+Description: 'Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ms.assetid: 142bc507-64db-43dd-8432-4a19af3c568c
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)'
+title: 'Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)'
 ---
-# Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)
+# Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)
 
 Install Windows desktop applications and system settings by capturing them into siloed provisioning packages (SPPs).
 
@@ -21,7 +21,9 @@ When you apply SPPs to a Compact OS system, the applications in that SPP are sin
 
 **Notes**
 
-*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files that you added earlier in [Lab 6: Add universal Windows apps, start tiles, and taskbar pins](add-universal-apps.md). New versions of these files can simply be copied into the image or to the destination device directly. 
+*  To add these apps to the taskbar and start menu, you'll need to update the LayoutModification.xml and TaskbarLayoutModification.xml files, we'll show you this in [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md). New versions of these files can simply be copied into the image or to the destination device directly.
+
+   **For Microsoft Office, this is required**: you must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
 ## Best practices while capturing applications: use clean installations
 
@@ -57,30 +59,26 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 4.  For VMs, create a checkpoint for this clean, freshly-installed Windows image.
 
-## <span id="Capture_a_setting"></span><span id="capture_a_setting"></span>Step 3: Capture a setting (Windows Store ID)
+## <span id="Capture_a_setting"></span><span id="capture_a_setting"></span>Step 3: Capture a setting 
 
-Through the Windows Store, you have tremendous opportunities for brand and device differentiation, revenue creation, and customer access. 
+You can add registry keys, for example, an OEM key, or a Windows Store identifier. To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and the [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx).
 
-Windows Store apps are at the center of the Windows 10 experience. As an OEM, you can provide an engaging customer experience and increase brand loyalty by providing software and services that add value to your PCs that you build.
-
-To learn more, see the [Windows Store Program 2016 Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx) and the [Apps and Store Windows Engineering Guide (WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WinEngnrngGdAppsStore.aspx).
-
-1.  Add a setting. For instance, add your Windows Store Program ID into the Windows registry:
+1.  Add a setting. For example, add a registry key:
 
     a.  Start 'regedit'.
 
-    b.  Navigate to 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store'.
+    b.  Navigate to 'HKEY_LOCAL_MACHINE\Software\OEM\Fabrikam'.
 
     c.  Click **Edit > New > String Value**.
 
-    d.  Depending on your type of agreement, type `OEMID` or `StoreContentModifier`.
+    d.  Type `FabrikamID`.
 
-    e.  Double-click either OEMID or StoreContentModifier, and in **Value**, type your Windows Store Program ID.
+    e.  Double-click OEMID, and in **Value**, type "Fabrikam-1".
 
 2.  Capture the changes into the siloed provisioning package, and save it on the hard drive:
 
     ``` syntax
-    E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\store.spp
+    E:\ADKTools\amd64\ScanState.exe /config:E:\ADKTools\amd64\Config_SettingsOnly.xml /o /v:13 /ppkg e:\SPPs\Fabrikam-ID.spp
     ```
 
     where *E* is the drive letter of the USB drive with ScanState.
@@ -163,7 +161,7 @@ The short version:
 3.  Apply the SPPs. This example applies the Office base pack, plus two language packs: fr-fr and de-de.
     
     ```syntax
-    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\store.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
+    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\fabrikam-id.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
 	```
 
     To learn more, see [Siloed provisioning packages](siloed-provisioning-packages.md). For syntax, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md). 
@@ -177,5 +175,8 @@ The short version:
 
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
-2.  See if your Windows desktop applications and add-ons are installed.
+2.  See if your Windows desktop applications and add-ons are installed. 
 
+3.  Use Regedit to check to see if the registry key is installed.
+
+**Next steps**: [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md)

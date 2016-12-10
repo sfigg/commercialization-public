@@ -22,10 +22,16 @@ While you can set many Windows settings in audit mode, some settings can only be
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
+We'll show you more ways to add settings later in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
+
+## <span id="Unattend_overview"></span>Answer file settings
+
 You can specify which configuration pass to add new settings:
 
 -   **1 windowsPE**: These settings are used by the Windows Setup installation program. If you’re modifying existing images, you can usually ignore these settings.
+
 -   **4 specialize**: Most settings should be added here. These settings are triggered both at the beginning of audit mode and at the beginning of OOBE. If you need to make multiple updates or test settings, generalize the device again and add another batch of settings in the Specialize Configuration pass.
+
 -   **6 auditUser**: Runs as soon as you start audit mode.
 
     This is a great time to run a system test script - we'll add [Microsoft-Windows-Deployment\\RunAsynchronousCommand](https://msdn.microsoft.com/library/windows/hardware/dn915797) as our example. To learn more, see [Add a Custom Script to Windows Setup](add-a-custom-script-to-windows-setup.md).
@@ -34,9 +40,9 @@ You can specify which configuration pass to add new settings:
 
     If your script relies on knowing which language the user selects during OOBE, you’d add it to the oobeSystem pass.
 
--   For info on the other configuration passes, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
+-   To learn more, see [Windows Setup Configuration Passes](windows-setup-configuration-passes.md).
 
-**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts](windows-deployment-sample-scripts-sxs.md): Keeping Windows settings through a recovery.
+**Note**  These settings could be lost if the user resets their PC with the built-in recovery tools. To see how to make sure these settings stay on the device during a reset, see [Sample scripts: Keeping Windows settings through a recovery](windows-deployment-sample-scripts-sxs.md#Keeping_Windows_settings_through_a_recovery).
 
 ## <span id="createanswer"></span><span id="CREATEANSWER"></span>Create and modify an answer file
 
@@ -102,13 +108,74 @@ You can specify which configuration pass to add new settings:
 
     `Description = Sample command to run a system diagnostic check.`
 
-    `Order = 1`
+    `Order = 1`  (Determines the order that commands are run, starting with 1.)
 
-More common settings: 
+4.  Add a registry key. In this example, we add keys for the OEM Windows Store program. Use the same process as adding a script, using `CMD /c REG ADD`. 
 
-*  Activate Windows without OEM Activation 3.0 (OA3.0) by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. For enterprises, this can be a volume license key.
+    For Windows 10 Customer Systems, you may use the OEM Store ID alone or in combination with a Store Content Modifier (SCM) to identify an OEM brand for the OEM Store. By adding a SCM, you can target Customer Systems at a more granular level.  For example, you may choose to target commercial devices separately from consumer devices by inserting unique SCMs for consumer and commercial brands into those devices.
 
-*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
+    Add RunAsynchronousCommands for each registry key to add. (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand**).
+    
+    ```syntax
+    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\OEM /v Value /t REG_SZ ABCD
+    Description = Adds a OEM registry key
+    Order = 2
+    RequiredUserInput = false
+    ```
+
+## <span id="Common_Windows_settings"></span> More common Windows settings: 
+
+*  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
+
+   `OPK X21-08790 Win Home 10 1607 32 64 English OPK\Print  Content\X20-09791 Kit Guide Win 10 Default Manufacturing Key OEM\X2009791GDE.pdf`.
+
+*  Speed up first boot by [maintaining driver configurations when capturing an image](maintain-driver-configurations-when-capturing-a-windows-image.md): `Microsoft-Windows-PnpSysprep/DoNotCleanUpNonPresentDevices`, `Microsoft-Windows-PnpSysprep/PersistAllDeviceInstalls`.
+
+*  Set the Internet Explorer default search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
+
+   ```syntax
+   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.fabrikam.com/search?p={searchTerms}" /f`   
+   Description = Changes the Internet Explorer default browser to Fabrikam Search
+   Order = 3
+   RequiredUserInput = false
+   ```
+
+*  Set the Internet Explorer search scopes: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
+
+   Example:
+
+   ```syntax
+   <component name="Microsoft-Windows-IE-InternetExplorer" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SearchScopes>
+     <Scope wcm:action="add">             <SuggestionsURL>http://api.bing.com/qsml.aspx?query={searchTerms}&amp;src={referrer:source?}&amp;maxwidth={ie:maxWidth}&amp;rowheight={ie:rowHeight}&amp;sectionHeight={ie:sectionHeight}&amp;FORM=IE8SSC&amp;market={Language}</SuggestionsURL>
+       <FaviconURL>http://www.bing.com/favicon.ico</FaviconURL>
+       <ScopeKey>Bing</ScopeKey>
+       <ScopeDefault>true</ScopeDefault>
+       <ScopeDisplayName>Bing</ScopeDisplayName>
+       <ScopeUrl>http://www.bing.com/search?q={searchTerms}&amp;form=&PRNAM1&amp;src=PRNAM1&amp;pc=NMTE</ScopeUrl>
+     </Scope>
+   </SearchScopes>
+   <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
+   ``` 
+
+*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
+
+   ```syntax
+   Path = `powercfg /h /type reduced`   
+   Description = Saves drive space by reducing hiberfile by 30%.
+   Order = 4
+   RequiredUserInput = false
+   ```
+
+   or
+
+   ```syntax   
+   Path = `powercfg /h /off`   
+   Description = Turns off the hiberfile.
+   Order = 4
+   RequiredUserInput = false
+   ```
+     
 
 **Step 4: Save the answer file**
 
@@ -190,4 +257,4 @@ If your audit mode setting worked, the PC should boot to audit mode automaticall
 
 Leave the PC booted into audit mode to continue to the following lab:
 
-Next steps: [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+Next steps: [Lab 8: Add branding and license agreements (OOBE.xml)](add-a-license-agreement.md)

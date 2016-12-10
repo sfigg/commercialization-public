@@ -11,26 +11,30 @@ You can use scripts to take a Windows image and deploy Windows onto new PCs quic
 
 ## <spand id="Get_the_image></span>Step 1: Mount the image
 
-On your technician PC, right-click the image file for Windows 10, version 1607 Home (X21-08790), and select Mount. This loads the files to a temporary drive letter (example, D:). 
+1.  On your technician PC, right-click the image file for Windows 10, version 1607 Home (X21-08790 Win Home 10 1607 32 64 English OPK\Software - DVD\X21-05999 SW DVD5 NTRL Win 10 1607 64Bit English Home Pro\X21-05999.img), and select **Mount**. This loads the files to a temporary drive letter (example, D:).
 
-## <span id="Copy_the_base_image"></span>Step 2: Copy the base Windows image file to the Storage USB drive
-
-1.  Copy the Windows image file to your USB storage drive:
+2.  Extract the Home edition. The X21-08790 image includes both  Professional and Home editions. (Index 1=Professional, Index 2=Home). We recommend starting with the Home edition, because you can upgrade your images later from Home to Professional using DISM commands, but you can't downgrade. 
 
     ``` syntax
+    Dism /Get-ImageInfo /ImageFile:"D:\sources\install.wim"
+
     md E:\images
-    copy D:\sources\install.wim file E:\images\install.wim.
+
+    Dism /Export-Image /SourceImageFile:"D:\sources\install.wim" /SourceIndex:2 /DestinationImageFile:"E:\Images\install.wim"
 	```
-	
+
 	where D: is the drive from the Windows ISO and E: is the USB storage drive. 
 
-2.  Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive.
+## <span id="Copy_the_deployment_scripts"></span>Step 2: Copy the deployment scripts to the root of the USB storage drive
+
+Copy the [sample scripts](windows-deployment-sample-scripts-sxs.md) to the root of the USB storage drive.
+[Download a copy here](http://go.microsoft.com/fwlink/p/?LinkId=800657)
 
 ## <span id="Apply_the_image"></span>Step 3: Apply the Windows image using a script
 
 Use deployment scripts to apply the image onto a test device. These scripts set up the hard drive partitions and add the files from the Windows image to the partitions.
 
-You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for different device firmware types (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
+The sample scripts include steps that detect the firmware type (the newer UEFI-based BIOS, or the legacy BIOS). Some UEFI-based devices include support for the older legacy BIOS. For more info, see [UEFI Firmware](http://go.microsoft.com/fwlink/?LinkId=526945).
 
 ![Image shows that to create a reference computer with customizations, you need a new PC, an image file, and a deployment script.](images/dep-win8-sxs-createdeploymentscript.jpg)
 
@@ -50,7 +54,7 @@ You can use the [sample scripts](windows-deployment-sample-scripts-sxs.md) for d
 
 4.  Format the primary hard drive, create the partitions, and apply the image by using the pre-made [sample scripts](windows-deployment-sample-scripts-sxs.md). 
 
-The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
+    The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt to create the partitions and define the partition layout. These scripts must be placed in the same folder. You can update these scripts to change the partition sizes.
 
     ``` syntax
     D:
@@ -59,20 +63,21 @@ The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.t
 
     When prompted by the script: 
     
-    1.  Press Y to format the drive.
-    2.  Press Y to select Compact OS, or N to select a non-compacted OS:
-        -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space. Use this for hardware configuration 1 and 2.
-        -   **N**: Applies the image as a fully-uncompressed image. This is best for high-performance devices or devices that use traditional hard drives with rotational media. Use this for hardware configuration 3.
-    3.  Press N to indicate the image does not include extended attributes (EA).
+    1.  Select an image index number. For the Home/Pro edition, the Pro edition is index 1, the Home edition is index 2. 
+    2.  Press Y to format the drive.
+    3.  Press Y to select [Compact OS](compact-os.md), or N to select a non-compacted OS:
+        -   **Y**: Applies the image using Compact OS. This is best for devices with solid-state drives and drives with limited free space.
+        -   **N**: Applies the image as a fully-uncompressed image. This is best for high-performance devices or devices that use traditional hard drives with rotational media.
+    4.  Press N to indicate the image does not include extended attributes (EA).
 
     The scripts apply the image to the drive, and then finishes.
-
 	
 ## <span id="Apply_desktop_applications"></span>Step 4: Apply desktop applications
 
-**Skip this step** until you've completed [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
+**Skip this step** until you've completed [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md). This step adds Windows desktop applications to your images. This must be done before adding the recovery image.
 
 1.  Apply desktop applications.
+
     ```syntax
     D:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
     D:\ADKTools\amd64\DISM.exe /ImagePath:C:\ /Apply-SiloedPackage /PackagePath:E:\SPPs\office16_base.spp /PackagePath:E:\SPPs\office16_fr-fr.spp /PackagePath:E:\SPPs\office16_de-de.spp
@@ -80,7 +85,7 @@ The script **ApplyImage.bat** uses the diskpart scripts: CreatePartitions-UEFI.t
 
 ## <span id="Apply_the_recovery_image"></span>Step 5: Set up the system recovery tools
 
-**Optional: skip this step** until you've completed [Lab 10: Update the recovery image](update-the-recovery-image.md). 
+**Optional: skip this step** until you've completed [Lab 12: Update the recovery image](update-the-recovery-image.md). 
 
 Include a recovery image for your final images, but it's not required for these early testing steps. 
 

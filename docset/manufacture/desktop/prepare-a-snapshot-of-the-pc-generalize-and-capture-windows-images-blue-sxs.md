@@ -39,6 +39,84 @@ You'll need the Windows 10, version 1607 version of the Deployment and Imaging T
 
 -   Install a Windows desktop application. Change system settings. Add data. Run scripts.
 
+## <span id="Office_2016"></span>Example: Add Microsoft Office 2016
+
+1.	On your technician PC, prepare a USB key with the Office Deployment Tool:
+
+    a.  Mount the ISO for the deployment tool from "X21-20432 Office v16.2 Deployment Tool for OEM OPK\Software - DVD\X21-20474 SW DVD5 Office 2016 v16.2.1 Deployment Tool for OEM\X21-20474.img" 
+    
+    b.  Copy files from the mounted drive to the USB-B key, for example, (where E:\ is driver letter for USB-B) E:\OfficeV16.2.1
+
+2.	On your reference PC, open the Office Deployment Tool, for example: E:\Officev16.2.1\officedeploymenttool.exe
+
+3.  Provide folder path to extract files E:\Officev16.2.1.  Setup.exe and configuration.xml are extracted to E:\Officev16.2.1
+    
+    Obtain: Office v16.2.1 in desired language, this sample uses English X21-20393 Office 2016 v16.2.1 English OPK
+
+4.  Mount "X21-20393 Office v16.2.1  English OPK\Software - DVD\X21-20435 SW DVD5 Office Pro 2016 32 64-bit English C2ROPK Pro HS HB OEM v16.2.1\X21-20435.img" and Copy the Office folder to USB-B (where E:\ is drive letter for USB-B) E:\OfficeV16.2.1
+ 
+    [Optional] if you applied a language pack to your Windows image, you may want to add the language pack for Office 2016 as well for better end user experience. The below samples will show with the Language pack applied
+
+5.	Mount “x21-20487 Office v16.2.1 German OPK”
+
+6.	Copy the office folder to E:\OfficeV16.2.1
+
+7.	Skip replacing duplicate files in the copy so that only the German languages are copied.
+
+### <span id="Update_the_installer"></span>Microsoft Office 2016: Install the Home and Student edition
+
+The current OEM recommendation is to install Office Home and Student 2016, rather than Office Home Premium. To do this, you'll need to edit the configuration.xml file used to install Office v16.2.1. To learn more, see  [Office 16.2.1 communication](https://myoem.microsoft.com/oem/myoem/en/product/office/Pages/COMM-Offv16-2-OPK.aspx).
+
+1.  Use Notepad to create a configuration file with the edition info: E:\Officev16.2\ConfigureO365Home.xml
+
+    Make sure the ProductID is HomeStudentRetail, as follows: 
+
+    ```syntax
+    <?xml version="1.0"?> 
+    <Configuration> 
+      <Add OfficeClientEdition="32" SourcePath="\\Server\Share\">
+        <Product ID="HomeStudentRetail">
+          <Language ID="en-us"/>
+        </Product>
+      </Add>
+      <Display Level="None"/>
+    </Configuration> 
+    ```
+
+2.  On the reference computer, install Office 2016 using the configuration file:
+
+    ```syntax
+    D:\Officev16.2\Setup.exe /configure D:\Officev16.2\ConfigureO365Home.xml
+    ```
+
+### <span id="Pin_tiles"></span>Microsoft Office 2016: Pin tiles to the Start Menu layout
+
+You must pin the Office tiles to the Start menu. Not doing so Windows will remove the Office files during OOBE boot phase. To learn more, see [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite).
+
+### <span id="Configure_setup"></span>Microsoft Office 2016: Configure setup experience for the user
+
+After you install Office on the device, you also need to configure the setup experience for the user. This is the experience the user sees when they open an Office app for the first time on the device. This also is intended to ensure that Office is properly licensed and activated.
+
+Setup mode |  	Description
+-----------|----------------- 
+OEM |	In this mode, a customer can choose to try, buy, or activate Office with an existing account, PIN, or product key. This mode doesn’t support Activation for Office (AFO) or AFO late binding. Therefore, if you choose this mode, you need to provide the customer with an Activation Card (formerly called a product key card or a Microsoft Product Identifier (MPI) card). 
+OEMTA |	This mode supports the try, buy, or activate experience of the OEM mode as well as supporting AFO and AFO late binding. This mode supports Office activation through the device’s Windows product key, which means the customer wouldn’t need to enter a 5x5 product key code. 
+
+OEM Mode – Provide user with activation card
+
+1.	In command prompt go to drive letter for USB-B\Officev16.2
+
+2.	Type and run oemsetup.cmd Mode=OEM Referral=####
+
+OEMTA Mode – Activation is done through the device’s Windows product key
+
+Type and run oemsetup.cmd Mode=OEMTA Referral=####
+
+NOTE: “Referral”   switch is optional,  If OEM partner is  participating in  office Incentive program For OEM referral ID information please refer to [Office Incentive Program Operations Guide 2017](https://myoem.microsoft.com/oem/myoem/en/programs/mktg/ofcprog/Pages/rc-office-program.aspx).
+
+
+
+
 ## <span id="Capture_your_changes"></span>Step 4: Capture your changes for the recovery tools
 
 1.  Connect to your external storage (for example, a storage USB key with the drive letter D:)
@@ -119,7 +197,7 @@ This step is required when you're capturing images to apply to other PCs.
     dism /Capture-Image /CaptureDir:C:\ /ImageFile:"C:\WindowsWithFinalChanges.wim" /Name:"Final changes"
     ```
 
-    where *C* is the drive letter of the Windows partition and *French and Desktop Applications* is the image name.
+    where *C* is the drive letter of the Windows partition and *Final changes* is the image name.
 
     The DISM tool captures the Windows partition into a new image file. This process can take several minutes.
 
@@ -148,4 +226,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 2.  See that the changes you made in audit mode are there.
 
-Next steps: [Lab 10: Update the recovery image](update-the-recovery-image.md)
+Next steps: [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)

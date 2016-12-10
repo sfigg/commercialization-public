@@ -1,8 +1,8 @@
 ---
 author: kpacquer
-Description: 'Windows 10 IoT Core (IoT Core) is a version of Windows 10 that is optimized for smaller devices with or without a display. IoT Core uses the rich, extensible Universal Windows Platform (UWP) API for building great solutions.'
+Description: 'What's new in Windows manufacturing'
 MSHAttr: 'PreferredLib:/library'
-title: What's new in IoT Core manufacturing
+title: 'What's new in Windows manufacturing'
 ---
 
 # What's new in Windows manufacturing
@@ -11,8 +11,35 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_Manufacturing"></span>What's new in desktop manufacturing 
 
+**December 1, 2016**
+
+[OEM deployment lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
+
+- **Add languages before major updates.** Major updates include hotfixes, general distribution releases, or service packs. If you add a language later, you'll need to [reinstall the updates](desktop/servicing-the-image-with-windows-updates-sxs.md).
+
+- **Add major updates before apps**. These apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  [reinstall the apps](desktop/add-universal-apps-sxs.md).
+
+[Lab 7: Change settings, enter product keys, and run scripts with an answer file (unattend.xml)](desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md): added examples of adding registry keys through Unattend.
+
+[Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
+
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+
+[Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
+
+[Append, apply, and export volume images with a Windows Image (.wim) file](append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
+
+[Compact OS, single-instancing, and image optimization](desktop/compact_os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
+
+**November 30, 2016**
+
+OEM deployment lab: [Get the sample scripts](desktop/windows-deployment-sample-scripts-sxs.md): ApplyImage.bat now prompts for an image number. 
+
+[WinPE: Mount and Customize](desktop/winpe-mount-and-customize.md#highperformance): Added instructions to build the high-performance power scheme into  WinPE by default.
+
 **November 17, 2016**
-[Add Language Packs to Windows](add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
+
+[Add Language Packs to Windows](desktop/add-language-packs-to-windows.md): Added Retail Demo experience (Microsoft-Windows-RetailDemo-OfflineContent-Content-fr-fr-Package) to the list of features on demand.
 
 **November 11, 2016**
 
@@ -26,7 +53,7 @@ To update install the latest updates:
 
 -  Run DISM /Cleanup-Image /Resetbase.  This step is recommended after any cumulative update, and in this case, it's required to make sure the changes stay in effect after a user resets their PC back to OOBE.
 
-   To learn more about applying updates, see [Lab 4: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 10: Update the recovery image](desktop/update-the-recovery-image.md).
+   To learn more about applying updates, see [Lab 5: Add updates and upgrade the edition](desktop/servicing-the-image-with-windows-updates-sxs.md) and [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md).
 
 The SSU:KB3199209 addresses two issues:
  
@@ -106,19 +133,23 @@ The following changes are new for Windows 10, version 1607:
 
 
 **October 4, 2016**
+
 - New [optional feature](https://msdn.microsoft.com/library/windows/hardware/dn756780.aspx): **16GBFEATURESONDATA** added in Windows 10, version 1607. This feature moves several of the common inbox apps to the data partition. 
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
 **November 4, 2016**
-- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
-- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
+
+- Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md).
+- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md): Check the Wi-Fi broadcast frequency. Some Wi-Fi adapters, including the one built into the Raspberry Pi 3, don't support 5GHz Wi-Fi networks.
 
 **October 17, 2016**
-- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md).
+
+- Added troubleshooting steps to [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md).
 
 **October 12, 2016**
-[Lab 1d: Add a provisioning package to an image](add-a-provisioning-package-to-an-image.md): 
+
+[Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md): 
 -  New steps added to make sure the feature manifest, OEMCommonFM.xml, is included in the TestOEMInput.xml file.
 -  New network connection and troubleshooting steps added.
 
@@ -127,6 +158,7 @@ The following changes are new for Windows 10, version 1607:
 [Windows 10 IoT Core is now free](iot/set-up-your-pc-to-customize-iot-core.md). You no longer need an MSDN subscription or an account as a registered Microsoft OEM, though you do need a Microsoft account.
 
 **October 4, 2016**
+
 - The [feature: **IOT\_SPEECHDATA\_EN\_US**](iot/iot-core-feature-list.md) is deprecated in Windows 10, version 1607. Do not add this feature. The default image includes speech data for US English.
 
 **September 22, 2016**

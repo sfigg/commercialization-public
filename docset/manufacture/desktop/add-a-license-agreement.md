@@ -1,14 +1,14 @@
 ---
 author: KPacquer
-Description: 'Lab 8: Add an OEM license agreement'
+Description: 'Lab 8: Add branding and license agreements'
 ms.assetid: a29101dc-4922-44ee-a758-d555e6cf39fa
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Lab 8: Add a license agreement'
+title: 'Lab 8: Add branding and license agreements'
 ---
 
-# Add an OEM license agreement
+# Add branding and license agreements
 
-You can add your own OEM license terms to Windows. 
+You can add your own branding and license terms to Windows. 
 
 For multi-region or multi-language images, you can create region specific license terms. These display to the user during the first login experience, based on the region or language that they choose. 
 
@@ -18,50 +18,65 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 
 ## <span id="Create_license_files"></span>Create license files
 
-1.  Create folders under a working folder, for example, C:\oobe. 
+1.  Create folders under a working folder, for example:
 
-2.  Name each folder under C:\oobe\info\default\ directory as the **Language Decimal Identifier** corresponding the language. Do this step for each language pack added to the Windows image.
+    `C:\mount\windows\Windows\System32\oobe\info\default\` 
 
-    For the complete list of language decimal identifiers of corresponding languages, see [Available Language Packs for Windows](available-language-packs-for-windows.md).
+2.  Add subfolders for each language using the **[Language Decimal Identifier](available-language-packs-for-windows.md)** corresponding the language. Do this step for each language pack added to the Windows image.
 
     For example, if en-us and de-de language packs are added to the Windows image, add a folder named “1033” (representing en-us language) under C:\mount\windows\Windows\System32\oobe\info\default\. Then add a folder named “1031” (representing de-de language) under the same directory.
 
     ```syntax
-    md c:\oobe\info\default\1033
-    md c:\oobe\info\default\1031
+    md c:\mount\windows\windows\system32\oobe\info\default\1033
+    md c:\mount\windows\windows\system32\oobe\info\default\1031
     ```
 
-1.  Create license term document for each language specified. Move each license term document to the corresponding language folder.
+3.  Create license terms documents using the .rtf file format for each language specified. Move each license term document to the corresponding language folder. For example:
 
-    For example, move the agreement.rtf file **in English** to:  
+    ```syntax
+    C:\mount\windows\Windows\System32\oobe\info\default\1033\agreement.rtf  (English version)
+    C:\mount\windows\Windows\System32\oobe\info\default\1031\agreement.rtf  (German version)
+    ```
+    
+    Samples are in C:\USB-B\resources\agreement.rtf
+    
+4.  Create an **oobe.xml** file to specify the agreement.rtf file path.
+
+    ```syntax
+    <?xml version="1.0" encoding="utf-8"?>
+    <FirstExperience>
+      <oobe>
+        <oem>
+	      <eulafilename>agreement.rtf</eulafilename>
+        </oem>
+      </oobe>
+    </FirstExperience>
+
+5.  Copy **oobe.xml file** to each language folder.
+
+    ```syntax
+    Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1033
+    Copy e:\configset\oobe.xml c:\mount\windows\windows\system32\oobe\info\default\1031
+    ```
+
+6.  For Chinese Hong Kong, add the following OOBE.xml file. (In Windows 10 version 1607, the Chinese Hong Kong language pack was merged into the Chinese Taiwan language pack, so for this region, these steps are now required).
+
+    File: c:\mount\windows\Windows\System32\OOBE\Info\OOBE.xml
     
     ```syntax
-    C:\oobe\info\default\\**1033**\  
+    <?xml version="1.0" encoding="utf-8" ?>
+    <FirstExperience>
+      <oobe>
+        <defaults>
+          <location>104</location>
+        </defaults>
+      </oobe>
+    </FirstExperience>
     ```
 
-    Move the agreement.rtf file **in German** to: 
-    
-    ```syntax
-    C:\oobe\info\default\\**1031**\ 
-    Copy C:\USB-B\resources\agreement.rtf c:\oobe\info\default\1033
-    ```
-
-1.  Create an **oobe.xml** file to specify the agreement.rtf file path. In the following image, you can see a sample oobe.xml which is located in **USB-B**\ConfigSet\oobe.xml destination.
-
-    ![Sample OOBE](images/sample-oobe.png)
-
-2.  Copy **oobe.xml file** to each language folder.
-
-    For example, copy oobe.xml to C:\oobe\info\default\\**1033**\ where the agreement.rtf in English is valid and to C:\oobe\info\default\\**1031**\ directory where the agreement.rtf in German is valid.
-
-    ```syntax
-    Copy C:\USB-B\configset\oobe.xml c:\oobe\info\default\1033
-    ```
-
-1.  Finally, each language folder must contain an **oobe.xml** file and an agreement.rtf file in that corresponding language.
+7.  Verify that each language folder contains an **oobe.xml** file and an **agreement.rtf** file in that corresponding language.
 
     ![Agreement and OOBE files](images/agreement-and-oobe-files.png)
-
 
 ### <span id="Mount_the_image"></span>Mount the image
 
@@ -80,6 +95,17 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
     ``` syntax
     MkDir c:\mount\windows\windows\system32\oobe
     xcopy C:\oobe \c:\mount\windows\windows\system32\oobe /s
+    ```
+
+### <span id="Add_custom_logo_and_wallpapaer"></span>Add a custom logo and wallpaper
+
+Learn how to apply the logo using the [User Experience Windows Engineering Guide (UX WEG)](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-UXWEGWin10.aspx) and for logo resolution requirements. 
+
+1.  Copy the logo files into the image into the \\Windows\\System32\\OEM\\ folder. Create the folder if it doesn’t exist.
+
+    ``` syntax
+    MkDir c:\mount\windows\windows\system32\OEM
+    Copy C:\OEM c:\mount\windows\windows\system32\OEM
     ```
 
 ## <span id="Unmount_the_images"></span> Unmount the images
