@@ -79,6 +79,13 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 <a href="" id="settings-requireprotectionunderlockconfig"></a>**Settings/RequireProtectionUnderLockConfig**  
 <p style="margin-left: 20px">Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured.
 
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Not required.
+-   1 – Required.
+
+<p style="margin-left: 20px">Most restricted value is 1.
+
 <p style="margin-left: 20px">The CSP checks the current edition and hardware support (TPM), and returns an error message if the device does not have the required hardware.
 
 > **Note**  This setting is only supported in Windows 10 Mobile.
