@@ -795,7 +795,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
 </ul>
 </td>
-</tr>
+</tr><tr class="odd">
+<td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added information about exempt applications list to the EnterpriseDataProtection setting.</p>
+</td>
 </tbody>
 </table>
 
