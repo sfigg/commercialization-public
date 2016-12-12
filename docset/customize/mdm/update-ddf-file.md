@@ -9,6 +9,8 @@ ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
 
 # Update DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **Update** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -201,6 +203,28 @@ This topic shows the OMA DM device description framework (DDF) for the **Update*
                         </DFType>
                     </DFProperties>
                 </Node>
+                <Node>
+                    <NodeName>RevisionNumber</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                        </AccessType>
+                        <Description>The revision number of the update</Description>
+                        <DFFormat>
+                            <int />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFTitle>Update's revision number</DFTitle>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
             </Node>
         </Node>
         <Node>
@@ -245,8 +269,30 @@ This topic shows the OMA DM device description framework (DDF) for the **Update*
                         <DDFName></DDFName>
                     </DFType>
                 </DFProperties>
+                <Node>
+                    <NodeName>RevisionNumber</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                        </AccessType>
+                        <Description>The revision number of the update</Description>
+                        <DFFormat>
+                            <int />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFTitle>Update's revision number</DFTitle>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
             </Node>
-        </Node>      
+        </Node>
         <Node>
             <NodeName>InstallableUpdates</NodeName>
             <DFProperties>
@@ -401,6 +447,28 @@ This topic shows the OMA DM device description framework (DDF) for the **Update*
                             <Dynamic />
                         </Scope>
                         <DFTitle>InstalledTime</DFTitle>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>RevisionNumber</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                        </AccessType>
+                        <Description>The revision number of the update</Description>
+                        <DFFormat>
+                            <int />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFTitle>Update's revision number</DFTitle>
                         <DFType>
                             <MIME>text/plain</MIME>
                         </DFType>

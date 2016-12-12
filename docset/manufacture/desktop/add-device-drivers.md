@@ -11,8 +11,8 @@ title: 'Lab 3: Add device drivers'
 Add device drivers to your images to support your hardware. Some have different installation procedures:
 
 -  **.inf-style drivers**: Many drivers include an information file (with an .inf extension) to help install the driver. These can be installed using tools described in this topic.    
--  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. We'll show you how to add those in [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
--  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image (as shown earlier in [Lab 1: Install Windows PE](install-windows-pe-sxs.md)), and in the Windows recovery image. We'll show you how to update the recovery image later in [Lab 14: Update the recovery image](update-the-recovery-image.md).
+-  **.exe-style drivers**: Drivers without an .inf file often must be installed like typical Windows desktop applications. We'll show you how to add those in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
+-  **Boot-critical drivers**: Graphics and storage drivers may sometimes need to be added to the Windows image (as shown in this topic), as well as the Windows PE image (as shown earlier in [Lab 1: Install Windows PE](install-windows-pe-sxs.md)), and in the Windows recovery image. We'll show you how to update the recovery image later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Prepare_and_mount_the_image"></span>Prepare and mount the image
 To make the changes to a Windows image, you'll mount the image contents into a temporary folder, and use tools like DISM to make the changes. Unmount the images to save the changes, and use your deployment scripts to test the images. 

@@ -22,7 +22,7 @@ While you can set many Windows settings in audit mode, some settings can only be
 
 Enterprises can control other settings by using Group Policy. For more info, see [Group Policy](http://go.microsoft.com/fwlink/p/?linkid=268543).
 
-We'll show you more ways to add settings later in [Lab 12: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
+We'll show you more ways to add settings later in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md#Capture_a_setting).
 
 ## <span id="Unattend_overview"></span>Answer file settings
 
@@ -114,19 +114,16 @@ You can specify which configuration pass to add new settings:
 
     For Windows 10 Customer Systems, you may use the OEM Store ID alone or in combination with a Store Content Modifier (SCM) to identify an OEM brand for the OEM Store. By adding a SCM, you can target Customer Systems at a more granular level.  For example, you may choose to target commercial devices separately from consumer devices by inserting unique SCMs for consumer and commercial brands into those devices.
 
-    Add two more RunAsynchronousCommands (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand** twice). Add the following values:
+    Add RunAsynchronousCommands for each registry key to add. (Right-click **RunAsynchronousCommand Properties** and click **Insert New AsynchronousCommand**).
     
     ```syntax
-    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store /v OEMID /t REG_SZ Fabrikam
-    Description = Adds a OEM registry key for the OEM Windows Store program.
+    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\OEM /v Value /t REG_SZ ABCD
+    Description = Adds a OEM registry key
     Order = 2
-
-    Path = CMD /c REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Store /v SCMID /t REG_SZ Fabrikam
-    Description = Adds a SCM registry key for the OEM Windows Store program.
-    Order = 3
+    RequiredUserInput = false
     ```
 
-More common Windows settings: 
+## <span id="Common_Windows_settings"></span> More common Windows settings: 
 
 *  Activate Windows by [adding a product key](https://msdn.microsoft.com/library/windows/hardware/dn915735.aspx): `Microsoft-Windows-Shell-Setup\ProductKey`. Please refer to the Kit Guide Win 10 Default Manufacturing Key OEM PDF to find default product keys for OA3.0 and Non-OA3.0 keys: 
 
@@ -136,7 +133,12 @@ More common Windows settings:
 
 *  Set the Internet Explorer default search engine: Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown above to add a registry key:
 
-   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.yahoo.com/search?p={searchTerms}" /f`   
+   ```syntax
+   Path = `CMD /c REG.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\InternetSettings\Configuration m /v PartnerSearchCode /t REG_DWORD /d "https://search.fabrikam.com/search?p={searchTerms}" /f`   
+   Description = Changes the Internet Explorer default browser to Fabrikam Search
+   Order = 3
+   RequiredUserInput = false
+   ```
 
 *  Set the Internet Explorer search scopes: See [Scope](https://msdn.microsoft.com/en-us/library/windows/hardware/dn923228(v=vs.85).aspx)
 
@@ -155,6 +157,25 @@ More common Windows settings:
    </SearchScopes>
    <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
    ``` 
+
+*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
+
+   ```syntax
+   Path = `powercfg /h /type reduced`   
+   Description = Saves drive space by reducing hiberfile by 30%.
+   Order = 4
+   RequiredUserInput = false
+   ```
+
+   or
+
+   ```syntax   
+   Path = `powercfg /h /off`   
+   Description = Turns off the hiberfile.
+   Order = 4
+   RequiredUserInput = false
+   ```
+     
 
 **Step 4: Save the answer file**
 

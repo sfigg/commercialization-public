@@ -13,7 +13,7 @@ title: 'Lab 4: Add languages'
 
 - **Add major updates before apps**. Thes apps include universal Windows apps and desktop applications. If you add an update later, you'll need to  reinstall the apps. We'll show you how to add these later in [Lab 6: Add universal Windows apps](add-universal-apps-sxs.md)
 
-- **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 14: Update the recovery image](update-the-recovery-image.md).
+- **Add your languages to your recovery image, too**: Many common languages can be added to your recovery image. We'll show you how to add these later in [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
 ## <span id="Mount_the_image"></span>Mount the image
 

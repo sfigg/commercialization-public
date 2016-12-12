@@ -484,10 +484,10 @@ footprint and user experience when not optimized for performance.
     -   Use low CPU/Disk and Memory priorities for minimizing impact
 
         -   SetPriorityClass\
-            <http://msdn.microsoft.com/en-us/library/ms686219(v=vs.85).aspx>
+            <http://msdn.microsoft.com/en-us/library/ms686219.aspx>
 
         -   SetThreadPriority\
-            <http://msdn.microsoft.com/en-us/library/ms686277(v=vs.85).aspx>
+            <http://msdn.microsoft.com/en-us/library/ms686277.aspx>
 
 -   Focus on idle memory footprint to ensure that memory footprint at
     idle is &lt; 15 MB as well as during full system scans and during
@@ -1292,7 +1292,7 @@ There are two types of video quality:
 		receives prioritized access to CPU resources. Multimedia apps can
 		use as much of the CPU as possible without denying CPU resources to
 		lower-priority apps. Learn more about MMCSS on
-		[MSDN](http://msdn.microsoft.com/en-us/library/windows/desktop/ms684247(v=vs.85).aspx) (https://msdn.microsoft.com/en-us/library/windows/desktop/ms684247(v=vs.85).aspx).
+		[MSDN](http://msdn.microsoft.com/en-us/library/windows/desktop/ms684247.aspx) (https://msdn.microsoft.com/en-us/library/windows/desktop/ms684247.aspx).
 
 -   *Spatial quality* refers to any corruption in the video stream
 	during media playback or when the content is encoded. The decoding
@@ -1314,9 +1314,9 @@ media workloads. These features include:
     resulting in power savings and increased glitch resilience.
 
 -   *[Direct
-    Flip (https:/msdn.microsoft.com/en-us/library/windows/hardware/dn653329(v=vs.85).aspx)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn653329(v=vs.85).aspx)
+    Flip (https:/msdn.microsoft.com/en-us/library/windows/hardware/dn653329.aspx)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn653329.aspx)
     & [Independent
-    Flip](http://msdn.microsoft.com/en-us/library/windows/hardware/dn457716(v=vs.85).aspx) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn457716(v=vs.85).aspx)* -
+    Flip](http://msdn.microsoft.com/en-us/library/windows/hardware/dn457716.aspx) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn457716.aspx)* -
     Bypassess the DWM and flips surfaces directly to the GPU, removing
     memory copies during full screen video playback.
 
@@ -1601,7 +1601,7 @@ component owners.
 | Battery Life Overview                                                          | Video & Slide Deck | Overview of the various aspects of designing and shipping a system that delivers a long battery life when the system is on and in standby. Topics include: Power modeling and tuning, Optimizing the power floor during screen on and standby, Standby modes: Connected Standby (CS), and Modern Standby (MS), Energy Estimation Engine and reporting the impact software pre-loads have on battery life, and Introduction to Battery Saver UX. | [Channel 9](http://channel9.msdn.com/Events/WinHEC/2015/OWD202) (http://channel9.msdn.com/Events/WinHEC/2015/OWD202) |
 | Media Playback Apps - Audio and Video Performance                              | Article            | When you develop an app that uses audio and video, you should be aware of some important performance considerations. This document summarizes key design areas for getting high-performing media playback in Windows Store apps using JavaScript.                                                                                                                                                                                               | [MSDN](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh848311.aspx) (https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh848311.aspx) |
 | How to optimize video rendering (Windows Store apps using JavaScript and HTML) | Article            | Includes information about the msIsLayoutOptimalForPlayback attribute.                                                                                                                                                                                                                                                                                                                                                                          | [MSDN](http://go.microsoft.com/fwlink/?LinkId=311550) (https://msdn.microsoft.com/library/windows/apps/hh452785.aspx) |
-| Hardware-Offloaded Audio Processing                                            | Article            | Provides information about audio offloading in Windows 8 and how this support allows an audio driver to expose offloaded audio capabilities to the Windows audio stack.                                                                                                                                                                                                                                                                         | [MSDN](http://go.microsoft.com/fwlink/?LinkId=311551) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn302038(v=vs.85).aspx) |
+| Hardware-Offloaded Audio Processing                                            | Article            | Provides information about audio offloading in Windows 8 and how this support allows an audio driver to expose offloaded audio capabilities to the Windows audio stack.                                                                                                                                                                                                                                                                         | [MSDN](http://go.microsoft.com/fwlink/?LinkId=311551) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn302038.aspx) |
 
 # Delivering a great app experience
 
@@ -1737,9 +1737,9 @@ For more information about how Modern Standby works, see these resources:
 | WinHEC 2015 Battery Life Optimization Overview Talk                  | Video        | Power modeling and tuning, Optimizing the power floor during screen on and standby                                                                                                                                                                                                 | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWD202) (http://channel9.msdn.com/Events/WinHEC/2015/OWD202) |
 | WinHEC 2015 Battery Life: Debugging Power Problems with Standby Talk | Video        | Windows 10 CS/MS power transition flow, System integration, Impact of subcomponents on system, Power management of storage, networking and USB connected devices, Process for analyzing battery drain issues, and SleepStudy and Windows Performance Analyzer (WPA) tools overview | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWD200) (http://channel9.msdn.com/Events/WinHEC/2015/OWD200) |
 | WinHEC 2015 Battery Life: Debugging Power Problems with Standby Lab  | Lab document | This lab demonstrates how to validate the energy efficiency of a Connected Standby or Modern Standby system                                                                                                                                                                        | [Channel9](http://channel9.msdn.com/Events/WinHEC/2015/OWDHOL304) (http://channel9.msdn.com/Events/WinHEC/2015/OWDHOL304) |
-| Introduction to Connected Standby                                    | Document     | Details the connected standby experience, software impacts of connected standby, and hardware requirements to enable connected standby on qualified systems.                                                                                                                       | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306985) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn481216(v=vs.85).aspx) |
+| Introduction to Connected Standby                                    | Document     | Details the connected standby experience, software impacts of connected standby, and hardware requirements to enable connected standby on qualified systems.                                                                                                                       | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306985) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn481216.aspx) |
 | Understanding Connected Standby                                      | Video        | This session provides an overview of connected standby, including key user scenarios, system architecture, and technical requirements.                                                                                                                                             | [Channel9](http://go.microsoft.com/fwlink/?LinkId=306986) (http://channel9.msdn.com/events/BUILD/BUILD2011/HW-456T) |
-| Desktop Activity Moderator                                           | Article      | Overview of DAM feature                                                                                                                                                                                                                                                            | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306987) (https://msdn.microsoft.com/en-us/library/hh848040(v=vs.85).aspx) |
+| Desktop Activity Moderator                                           | Article      | Overview of DAM feature                                                                                                                                                                                                                                                            | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306987) (https://msdn.microsoft.com/en-us/library/hh848040.aspx) |
 
 
 ## Considerations
@@ -1877,8 +1877,8 @@ have a self-hosting program to find and triage bugs.
 
 For more information about the PowerCfg /SleepStudy tool, see [Connected
 standby
-SleepStudy](https://msdn.microsoft.com/en-us/library/windows/hardware/dn495346(v=vs.85).aspx)
-(https://msdn.microsoft.com/en-us/library/windows/hardware/dn495346(v=vs.85).aspx).
+SleepStudy](https://msdn.microsoft.com/en-us/library/windows/hardware/dn495346.aspx)
+(https://msdn.microsoft.com/en-us/library/windows/hardware/dn495346.aspx).
 
 Here’s an example. This screen shows PC info, including device name,
 firmware, and build version. The chart shows the drain rate while in
@@ -1931,7 +1931,7 @@ test cycles.
 
 For more information, see
 [PwrTest](http://go.microsoft.com/fwlink/?LinkId=306989)
-(https://msdn.microsoft.com/en-us/library/windows/hardware/ff550682(v=vs.85).aspx).
+(https://msdn.microsoft.com/en-us/library/windows/hardware/ff550682.aspx).
 
 # Delivering a great energy efficiency experience
 
@@ -2172,7 +2172,7 @@ analyze performance from these resources:
 | Delivering Great Performance and Battery Life                | Video        | Describes how to create high-performance and energy efficient experiences on the full spectrum of Windows 8 platforms. Learn app design and development practices that maximize the performance of apps and power consumption as a whole.                                  | [Channel9](http://go.microsoft.com/fwlink/?LinkId=306082) (http://channel9.msdn.com/events/BUILD/BUILD2011/HW-459T) |
 | Improving Battery Life and Energy Efficiency                 | Video        | Demonstrates how the Windows ADK has made it easy to consistently measure battery life, and to identify and fix energy efficiency problems. Learn how to configure battery life assessments, and design assessment workflows, for multiple scenarios.  |  [Channel9](http://go.microsoft.com/fwlink/?LinkId=306083) (http://channel9.msdn.com/events/BUILD/BUILD2011/HW-149P) |
 | Results for Idle Energy Efficiency                           | Document     | This topic helps you interpret the results produced by an Energy Efficiency job that uses the Idle workload. |  [MSDN](http://msdn.microsoft.com/en-us/library/windows/hardware/jj130809.aspx) (https://msdn.microsoft.com/en-us/library/windows/hardware/jj130809.aspx)  |
-| Mobile Battery Life Solutions                                | Document     | Outlines issues and solutions for advancing battery life for portable computers that run the Windows 7 operating system. Provides system design, power policy guidelines, and preinstallation configuration recommendations as well as test configuration recommendations. | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306534) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn641606(v=vs.85).aspx) |
+| Mobile Battery Life Solutions                                | Document     | Outlines issues and solutions for advancing battery life for portable computers that run the Windows 7 operating system. Provides system design, power policy guidelines, and preinstallation configuration recommendations as well as test configuration recommendations. | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306534) (https://msdn.microsoft.com/en-us/library/windows/hardware/dn641606.aspx) |
 | Using PowerCfg to Evaluate System Energy Efficiency          | Document     | Provides information about functionality in the PowerCfg utility for evaluating system energy efficiency for the Windows family of operating systems.  | [MSDN](http://go.microsoft.com/fwlink/?LinkId=306533) (https://msdn.microsoft.com/en-US/library/windows/hardware/dn550976) |
 
 
