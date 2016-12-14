@@ -501,7 +501,18 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
 </ul>
 </td>
-</tr>
+</tr><tr class="even">
+<td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<ul>
+<li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
+<li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -795,10 +806,26 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
 </ul>
 </td>
-</tr><tr class="odd">
+</tr><tr class="even">
 <td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
 <td style="vertical-align:top"><p>Added information about exempt applications list to the EnterpriseDataProtection setting.</p>
-</td>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>To Settings/RequireProtectionUnderLockConfig, added supported values.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<ul>
+<li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
+<li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+</td></tr>
 </tbody>
 </table>
 
