@@ -39,7 +39,7 @@ All of Windows Ink Workspace is available above lock. This functionality is off 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[CustomProtocol](customprotocol.md)</p></td>
+<td><p>[CustomProtocol](microsoft-windows-twinui-customprotocol.md)</p></td>
 <td><p><code>CustomProtocol</code> specifies that you are using your own advanced Pen settings application.</p></td>
 </tr>
 </tbody>
