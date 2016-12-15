@@ -356,10 +356,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 <p>Removed the EnrollmentID setting.</p></td>
 </tr>
-<tr class="even">
-<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
-<td style="vertical-align:top"><p>Added support for <strong>SecurityAuditing</strong> settings for the desktop.</p></td>
-</tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
 <td style="vertical-align:top"><p>New CSP.</p></td>

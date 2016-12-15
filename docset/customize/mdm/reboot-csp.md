@@ -17,31 +17,31 @@ The following diagram shows the Reboot configuration service provider management
 ![reboot](images/reboot-csp.png)
 
 <a href="" id="--vendor-msft-reboot"></a>**./Vendor/MSFT/Reboot**  
-The root node for the Reboot configuration service provider.
+<p style="margin-left: 20px">The root node for the Reboot configuration service provider.</p>
 
-The supported operation is Get.
+<p style="margin-left: 20px">The supported operation is Get.</p>
 
 <a href="" id="rebootnow"></a>**RebootNow**  
-This node executes a reboot of the device.
+<p style="margin-left: 20px">This node executes a reboot of the device.</p>
 
 > **Note**  If this node is left in the Execute state, the device will reboot at every sync. We recommend that you clear the Execute state once the sync has occurred.
 
  
 
-The supported operation is Execute.
+<p style="margin-left: 20px">The supported operations are Execute and Get.
 
 <a href="" id="schedule"></a>**Schedule**  
-The supported operation is Get.
+<p style="margin-left: 20px">The supported operation is Get.</p>
 
 <a href="" id="schedule-single"></a>**Schedule/Single**  
-This node will execute a reboot at a scheduled date and time. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z
+<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z</p>
 
-The supported operation is Get and Replace.
+<p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
 
 <a href="" id="schedule-dailyrecurrent"></a>**Schedule/DailyRecurrent**  
-This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z
+<p style="margin-left: 20px">This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z</p>
 
-The supported operation is Get and Replace.
+<p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
 
 ## Related topics
 
