@@ -158,7 +158,7 @@ Supported operations are Get, Add, Replace
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
-CRYPT_DATA_BLOB on MSDN can be found at http://msdn.microsoft.com/library/windows/desktop/aa381414.aspx
+CRYPT_DATA_BLOB on MSDN can be found at http://msdn.microsoft.com/en-us/library/windows/desktop/aa381414(v=vs.85).aspx
 </Description>
                         <DFFormat>
                             <bin />
@@ -261,7 +261,7 @@ Supported operations are Add, Get
                 <Node>
                     <NodeName>Thumbprint</NodeName>
                     <DFProperties>
-                        <AccessType>
+                        <AccessType>     
                             <Get />
                         </AccessType>
                         <Description>Returns the thumbprint of the PFX certificate installed. Format is string.Supported operations are Get.
@@ -408,6 +408,7 @@ NOTE: though the children nodes under Install support Replace commands, once the
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -433,6 +434,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -456,6 +458,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -483,6 +486,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -510,6 +514,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -533,6 +538,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -573,6 +579,7 @@ Supported operations are Get, Add, Delete, Replace
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -604,6 +611,7 @@ Supported operations are Get, Add, Delete noreplace</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -629,6 +637,7 @@ The min value is 0 which means no retry. Supported operations are Get, Add, Dele
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -652,6 +661,7 @@ The min value is 0 which means no retry. Supported operations are Get, Add, Dele
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -679,6 +689,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -707,6 +718,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -732,6 +744,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -759,6 +772,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -787,6 +801,7 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -817,6 +832,7 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -845,6 +861,7 @@ Supported operations are Get, Add, Delete and Replace</Description>
                         <DFProperties>
                             <AccessType>
                                 <Add />
+                                <Delete />
                                 <Get />
                                 <Replace />
                             </AccessType>
@@ -996,6 +1013,7 @@ Supported operation is Get</Description>
         </Node>
     </Node>
 </MgmtTree>
+
 ```
 
 ## Related topics

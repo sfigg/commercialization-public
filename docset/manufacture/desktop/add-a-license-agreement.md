@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'Lab 8: Add branding and license agreements'
 ---
 
-# Add branding and license agreements
+# Lab 8: Add branding and license agreements
 
 You can add your own branding and license terms to Windows. 
 
@@ -51,6 +51,7 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
         </oem>
       </oobe>
     </FirstExperience>
+    ```
 
 5.  Copy **oobe.xml file** to each language folder.
 

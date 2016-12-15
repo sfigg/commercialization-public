@@ -12,13 +12,11 @@ Add Start tiles and taskbar pins.
 Notes:
 * **Start menu** : If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
-**Note**  The Start layout and taskbar pins can be lost if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Lab 12: Update the recovery image](update-the-recovery-image.md).
+* **The Start layout and taskbar pins can be lost** if the user resets their PC with the built-in recovery tools. To make sure these settings stay on the device, see [Lab 12: Update the recovery image](update-the-recovery-image.md).
 
-- **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all Store Program terms and conditions, and related documents. 
+* **When adding 3rd party apps, follow the [Windows Store OEM Program Guide](https://myoem.microsoft.com/oem/myoem/en/topics/Licensing/roylicres/ost2016/Pages/DP-WindowsStoreOEMProgramGuide2016FinalCL.aspx)**. You must comply with all Store Program terms and conditions, and related documents. 
 
-## <span id="Mount_the_image"></span>Mount the image
-
-**Step 1: Mount the image**
+## <span id="Mount_the_image"></span>Step 1: Mount the image
 
 Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
 
@@ -29,9 +27,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
 
-## <span id="Create_the_start_layout"></span>Create the Start layout
-
-**Step 2: Create the layout**
+## <span id="Create_the_start_layout"></span>Step 2: Create the Start layout
 
 1.  If you don’t already have one, create a file called **LayoutModification.xml**. You can start by editing a sample from USB-B or [sample LayoutModification.xml](windows-deployment-sample-scripts-sxs.md). 
 
@@ -152,9 +148,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 6.  Save the LayoutModification.xml file.
 
-## <span id="AppendOfficeSuite"></span> Microsoft Office: Add choice to AppendOfficeSuite
-
-**Step 3: Add the AppendOfficeSuite choice**
+## <span id="AppendOfficeSuite"></span>Step 3: Microsoft Office: Add choice to AppendOfficeSuite
 
 You must pin the Office tiles to the Start menu. Not doing so Windows will remove the Office files during OOBE boot phase.
 Note: You must be using at least version 10.0.10586.0 of Windows 10. The following steps don’t work with earlier versions of Windows 10.
@@ -173,9 +167,7 @@ In **layoutmodification.xml**:
 
 2.  Save the LayoutModification.xml file.
 
-## <span id="Add_layout_to_image"></span>Add the layout to the image
-
-**Step 4: Add the layout to the image**
+## <span id="Add_layout_to_image"></span>Step 4: Add the layout to the image
 
 1.  Add your LayoutModification.xml file to the Windows image. You’ll need to put the file in the following specific location before first boot. If the file already exists in the image, replace it with your new file.
 
@@ -188,9 +180,7 @@ In **layoutmodification.xml**:
 ## <span id="Add_or_change_languages_and_Cortana_features_on_demand__Optional_"></span><span id="add_or_change_languages_and_cortana_features_on_demand__optional_"></span><span id="ADD_OR_CHANGE_LANGUAGES_AND_CORTANA_FEATURES_ON_DEMAND__OPTIONAL_"></span>Add or change languages and Cortana features on demand (Optional)
 
 
-## <span id="Unmount_the_images"></span> Unmount the images
-
-**Step 5: Unmount the images**
+## <span id="Unmount_the_images"></span>Step 5: Unmount the images
 
 1.  Close all applications that might access files from the image.
 
@@ -204,9 +194,10 @@ In **layoutmodification.xml**:
 
     This process may take several minutes.
 
-## <span id="Try_it_out"></span>Try it out
+## <span id="Try_it_out"></span>Step 6: Try it out
 
-**Step 6: Apply the image to a new PC**
+**Apply the image to a new PC**
+
 Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md) to copy the image to the storage USB drive, apply the Windows image and the recovery image, and boot it up. The short version:
 
 1.  Copy the image file to the storage drive.
@@ -215,7 +206,8 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 4.  Apply the image: `D:\ApplyImage.bat D:\Images\install.wim`.
 5.  Disconnect the drives, then reboot (`exit`).
 	
-**Step 7: Verify apps**
+**Verify apps**
+
 1.  After the PC boots, either create a new user account, or else press Ctrl+Shift+F3 to reboot into the built-in administrator account (This is also known as audit mode).
 
 2.  Check the Start Menu to make sure the apps are available.

@@ -34,8 +34,8 @@ Consider adding language packs before you add the ZDP updates – it may save yo
 
 Download the latest updates. Note, the ZDP is a cumulative update, so you'll only need to get the latest update package.
 
--   Windows 10 64-bit version: <http://go.microsoft.com/fwlink/?LinkId=619271>.
--   Windows 10 32-bit version: [http://go.microsoft.com/fwlink/?LinkId=619272](http://go.microsoft.com/fwlink/?LinkId=619271).
+-   Windows 10 64-bit version: [http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3122962](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3122962).
+-   Windows 10 32-bit version: [http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3122962](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3122962).
 
 ## <span id="Update_your_images"></span><span id="update_your_images"></span><span id="UPDATE_YOUR_IMAGES"></span>Update your images
 

@@ -36,7 +36,7 @@ The Windows PE USB must be at least 512MB and at most 32GB. It should not be a W
 
 Note, when you add more packages to WinPE, it slows WinPE performance and boot time. Only add additional packages when necessary.  
 
-Common customizations:
+**Common customizations**:
 
 * **Add a video or network driver**. (WinPE includes generic video and network drivers, but in some cases, additional drivers are needed to show the screen or connect to the network.). To learn more, see [WinPE: Add drivers](winpe-add-drivers.md).
 
@@ -81,5 +81,6 @@ Common customizations:
 
 Leave this PC booted to Windows PE for now. 
 
-Next step: [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+**Next steps**
+* [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
  

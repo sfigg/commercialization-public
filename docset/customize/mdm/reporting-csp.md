@@ -10,7 +10,7 @@ ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
 # Reporting CSP
 
 
-The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511. Support for desktop security auditing was added for the desktop in Windows 10, version 1607.
+The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
 The following diagram shows the Reporting configuration service provider in tree format.
 

@@ -158,7 +158,7 @@ You can specify which configuration pass to add new settings:
    <Home_Page>http://oem17WIN10.msn.com/?pc=NMTE</Home_Page>
    ``` 
 
-*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
+*  Save drive space by reducing or turning off the hiberfile. The hiberfile helps speed up the time after the system powers up or recovers from low-power states. Create a [RunAsynchronous](https://msdn.microsoft.com/library/windows/hardware/dn915799) command as shown below. To learn more, see [Compact OS, single-instancing, and image optimization: RAM, Pagefile.sys, and Hiberfil.sys](compact-os.md#RAM)
 
    ```syntax
    Path = `powercfg /h /type reduced`   
@@ -213,7 +213,7 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 ### <span id="Add_the_answer_file"></span>Add the answer file
 **Step 7: Add the answer file**
-2.  Copy the answer file into the image into the \\Windows\\Panther folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
+2.  Copy the answer file into the image into the **\\Windows\\Panther** folder, and name it unattend.xml. Create the folder if it doesn’t exist. If there’s an existing answer file, replace it or use Windows System Image Manager to edit/combine settings if necessary.
 
     ``` syntax
     MkDir c:\mount\windows\Windows\Panther
@@ -253,7 +253,7 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 If your audit mode setting worked, the PC should boot to audit mode automatically.  When audit mode starts, your script should start automatically.
 
-1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, your sample script ran correctly.
+1.  In File Explorer, check to see if the file: **C:\\Fabrikam\\DxDiag-TestLogFiles.txt** exists. If so, the SampleCommand.cmd sample script ran correctly.
 
 Leave the PC booted into audit mode to continue to the following lab:
 
