@@ -13,14 +13,15 @@ ms.sitesec: msdn
 # WindowColor
 
 
-`WindowColor` specifies the accent color used throughout Windows in places like start tiles, calendar fly-out, and Common Controls.
+'WindowColor' specifies the accent color used throughout Windows in places like start tiles, calendar fly-out, and Common Controls.
 
 ## Values
 
 
--   In Windows 10 and Windows Server 2016, predefined colors are as follows: `Automatic`, `Color 1`, `Color 2`, `Color 3`, `Color 4`, `Color 5`, `Color 6`, `Color 7`, `Color 8`, `Color 9`, `Color 10`, `Color 11`, `Color 12`, `Color 13`, `Color 14`, and `Color 15`.
+-   In the next major update to Windows 10, there are no predefined colors.`Color 1`, `Color 2`, `Color 3`, `Color 4`, `Color 5`, `Color 6`, `Color 7`, `Color 8`, `Color 9`, `Color 10`, `Color 11`, `Color 12`, `Color 13`, `Color 14`, and `Color 15` are deprecated and have effect if set. Due to the large number of surface that are impacted by the color choice, avoid using colors that are too dark or too bright when setting 'WindowColor'. 
+There are two options for setting 'WindowColor' in unattend.xml.
 
-    Use the color name to specify the color. If you choose `Automatic`, Windows chooses a color that’s harmonious with the palette of the desktop wallpaper.
+    If you choose `Automatic`, Windows chooses a color that’s harmonious with the palette of the desktop wallpaper.
 
     Here are samples of the color choices mapped to the corresponding color number in the color name (for example `Color 1` is represented by the number 1 below).
 
