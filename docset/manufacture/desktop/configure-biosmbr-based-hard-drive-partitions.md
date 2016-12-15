@@ -34,6 +34,7 @@ An MBR drive can have up to four standard partitions. Typically, these standard 
     -   This partition must be formatted using the NTFS file format.
     -   This partition must have enough 10 GB of free space after the user has completed the Out Of Box Experience (OOBE).
     -   This partition can have a maximum of 2 terabytes (TB) of space. Software tools to extend the visible partition space beyond 2 TB are not supported on BIOS because they can interfere with software solutions for application compatibility and recovery.
+
 -   **Recovery tools partition**
 
     The Windows Recovery Environment (Windows RE) tools image (winre.wim) should be in a separate partition than the Windows partition to support automatic failover and to support booting Windows BitLocker Drive Encryption-encrypted partitions.
@@ -50,6 +51,7 @@ An MBR drive can have up to four standard partitions. Typically, these standard 
 
     -   It must have at least 320 MB of free space.
     -   We recommend that it should have at least 1 GB free.
+
 -   **Data partitions**
 
     The recommended partition layout for Windows 10 does not include utility or data partitions.
