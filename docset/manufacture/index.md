@@ -12,12 +12,12 @@ author: justinha
 ## <span id="purpose"></span>Purpose
 
 
-Use the manufacturing tools to deploy your Windows [customizations](https://msdn.microsoft.com/library/windows/hardware/mt269765.aspx) to new Windows 10 devices. Learn how to:
+Use the manufacturing tools to deploy Windows [customizations](https://msdn.microsoft.com/library/windows/hardware/mt269765.aspx) to new Windows 10 devices. Learn how to:
 
--   Combine your customizations, plus languages, drivers, apps and more, into new Windows images.
+-   Combine customizations, plus languages, drivers, apps and more, into new Windows images.
 -   Modify these images either from a manufacturing mode for a familiar Windows experience, or from a command line for quicker changes that can be automated and scripted.
 -   Install images onto new devices. Choose whether to use compression to balance disk space verses device performance. Use flashing tools to speed up the final manufacturing processes
--   Capture your customizations into the recovery tools, helping your customers get back up to speed quickly.
+-   Capture customizations into the recovery tools, helping your customers get back up to speed quickly.
 
 **[What's new in Windows manufacturing](whats-new-in-windows-manufacturing.md)**
 
