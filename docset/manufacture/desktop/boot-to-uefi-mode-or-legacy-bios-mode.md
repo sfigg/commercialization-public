@@ -24,13 +24,13 @@ If you install Windows using the wrong mode, you won’t be able to use the feat
 
      
 
-    If a boot device option does not appear for your device:
+**If a boot device option does not appear for your device:**
 
-    -   Check the options in the firmware menus to enable or disable BIOS-compatibility mode.
+-   Check the options in the firmware menus to enable or disable BIOS-compatibility mode.
 
-    -   To use BIOS-compatibility mode, check for options in the firmware menus to disable UEFI SecureBoot features.
+-   To use BIOS-compatibility mode, check for options in the firmware menus to disable UEFI SecureBoot features.
 
-    -   For older PCs (Windows® 7-era or earlier), look for options to **Boot from file**, and browse to the \\EFI\\BOOT\\BOOTX64.EFI file on that device.
+-   For older PCs (Windows® 7-era or earlier), look for options to **Boot from file**, and browse to the \\EFI\\BOOT\\BOOTX64.EFI file on that device.
 
 **Use any of these methods to help make sure that Windows is installed using the correct firmware mode**
 
