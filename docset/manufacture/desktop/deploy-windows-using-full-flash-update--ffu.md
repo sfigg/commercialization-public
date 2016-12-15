@@ -93,7 +93,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 **To use a previous version of WinPE**
 
 1.  Plug in a WinPE USB key and note the drive letter, for example, E.
-2.  Add the Windows 10 version of DISM to the WinPE drive. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).
+2.  Add the Windows 10 version of DISM to the WinPE drive. To learn more, see [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md).
 
     ``` syntax
     copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM" E:\DISM_Win10 /s
