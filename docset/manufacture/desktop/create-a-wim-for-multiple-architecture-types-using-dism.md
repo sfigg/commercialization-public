@@ -9,7 +9,7 @@ title: Create a WIM for Multiple Architecture Types Using DISM
 # Create a WIM for Multiple Architecture Types Using DISM
 
 
-When you plan your deployment scenarios, consider how you will deploy and maintain your images for different architecture types. There are several ways you can manage multiple Windows® images for multiple architecture types. Because you can deploy both 32-bit and 64-bit Windows images from a 32-bit preinstallation environment, you can maintain 32-bit and 64-bit Windows images in the same Windows image (.wim) file or separate .wim files.
+When you plan your deployment scenarios, consider how you will deploy and maintain your images for different architecture types. There are several ways you can manage multiple Windows images for multiple architecture types. Because you can deploy both 32-bit and 64-bit Windows images from a 32-bit preinstallation environment, you can maintain 32-bit and 64-bit Windows images in the same Windows image (.wim) file or separate .wim files.
 
 Because you can store multiple Windows images in a single .wim file, you can create architecture-specific .wim files or a single .wim file that contains images for multiple architecture types.
 
