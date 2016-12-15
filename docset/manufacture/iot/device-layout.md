@@ -10,7 +10,7 @@ When modifying an IoT Core board support package (BSP), you can change the drive
 
 ## Partition layout
 
-IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535(v=vs.85).aspx).  
+IoT Core supports UEFI (GPT) and legacy BIOS (MBR) partition layouts. Most IoT Core devices use UEFI and GPT-style partitions, though Raspberry Pi 2 uses MBR-style partitions. To learn more about UEFI, read [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) and the [Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535.aspx).  
 
 Sample partition layouts included in the ADK Add-Ons:
 -  \iot-adk-addonkit\Common\Packages\DeviceLayout.GPT4GB\devicelayout.xml
@@ -173,4 +173,4 @@ CustomMBM is a customized version of the Intel MinnowBoard Max Board BSP, where 
 [Creating your own board support package (BSP)](create-a-new-bsp.md)
 
 [Boot and UEFI](https://msdn.microsoft.com/windows/hardware/drivers/bringup/boot-and-uefi) 
-[Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535(v=vs.85).aspx).  
+[Windows and GPT FAQ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn640535.aspx).  

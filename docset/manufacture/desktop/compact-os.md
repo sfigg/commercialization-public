@@ -66,6 +66,7 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 **From Windows PE, determine if the OS is compacted:**
 
+
 ``` syntax
 Compact.exe /CompactOS:Query /WinDir:E:\Windows
 ```
@@ -73,6 +74,7 @@ Compact.exe /CompactOS:Query /WinDir:E:\Windows
 Where E:\\Windows is the folder where Windows has been installed.
 
 **From an online installation, change from non-compacted to compacted OS:**
+
 
 ``` syntax
 Compact.exe /CompactOS:always

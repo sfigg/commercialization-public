@@ -104,12 +104,12 @@ See Smart Card Minidriver Specification for Windows Base Cryptographic Service P
 See Smart Card Minidriver Certification Criteria, at <http://msdn.microsoft.com/en-us/windows/hardware/gg487504>.
 The following table describes the minimum and maximum specification version that must be supported on any given OS family:
 
-| Operating system family | Allowed specification versions                                                                        |
-|-------------------------|-------------------------------------------------------------------------------------------------------|
-| Windows 7 client        | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only etc.) |
-| Windows Server 2008     | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only etc.) |
-| Windows 8 client        | 6,7,8 (any combination allowed such as 6 and 8 only, 6 only, 7 only, 6 and 6 only, 7 and 8 only etc.) |
-| Windows Server 2016     | 6,7,8 (any combination allowed such as 6 and 8 only, 6 only, 7 only, 6 and 6 only, 7 and 8 only etc.) |
+| Operating system family | Allowed specification versions                                                                         |
+|-------------------------|--------------------------------------------------------------------------------------------------------|
+| Windows 7 client        | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only, etc.) |
+| Windows Server 2008     | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only, etc.) |
+| Windows 8 client        | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only, etc.) |
+| Windows Server 2016     | 5,6,7 (any combination allowed such as 5 and 7 only, 5 only, 7 only, 5 and 6 only, 6 and 7 only, etc.) |
 
  
 
