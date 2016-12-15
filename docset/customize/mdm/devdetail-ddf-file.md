@@ -231,6 +231,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
           <Get />
         </AccessType>
         <Description>
+          Large object isn't supported. The data for this node is "false".
         </Description>
         <DFFormat>
           <bool />
@@ -648,6 +649,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
     </Node>
   </Node>
 </MgmtTree>
+
 ```
 
 ## Related topics

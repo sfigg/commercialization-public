@@ -39,6 +39,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
             <DFType>
                 <DDFName>urn:oma:mo:oma-dm-devinfo:1.0</DDFName>
             </DFType>
+            <MSFT:RWAccess>1</MSFT:RWAccess>
         </DFProperties>
         <Node>
             <NodeName>DevId</NodeName>
@@ -59,6 +60,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
+                <MSFT:RWAccess>1</MSFT:RWAccess>
             </DFProperties>
         </Node>
         <Node>
@@ -79,6 +81,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
+                <MSFT:RWAccess>1</MSFT:RWAccess>
             </DFProperties>
         </Node>
         <Node>
@@ -100,6 +103,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
+                <MSFT:RWAccess>1</MSFT:RWAccess>
             </DFProperties>
         </Node>
         <Node>
@@ -121,6 +125,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
+                <MSFT:RWAccess>1</MSFT:RWAccess>
             </DFProperties>
         </Node>
         <Node>
@@ -142,6 +147,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevInfo
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
+                <MSFT:RWAccess>1</MSFT:RWAccess>
             </DFProperties>
         </Node>
     </Node>

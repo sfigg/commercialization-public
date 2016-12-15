@@ -47,7 +47,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Passpor
               <Delete />
               <Get />
             </AccessType>
-            <Description>This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Microsoft Passport for work provisioning and management.</Description>
+            <Description>This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -66,6 +66,8 @@ This topic shows the OMA DM device description framework (DDF) for the **Passpor
             <NodeName>Policies</NodeName>
             <DFProperties>
               <AccessType>
+                <Add />
+                <Delete />
                 <Get />
               </AccessType>
               <Description>Root node for policies.</Description>
@@ -76,7 +78,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Passpor
                 <One />
               </Occurrence>
               <Scope>
-                <Permanent />
+                <Dynamic />
               </Scope>
               <DFTitle>Policies</DFTitle>
               <DFType>
@@ -93,11 +95,11 @@ This topic shows the OMA DM device description framework (DDF) for the **Passpor
                   <Replace />
                 </AccessType>
                 <DefaultValue>True</DefaultValue>
-                <Description>Microsoft Passport for Work is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+                <Description>Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-If you enable or do not configure this policy setting, the device provisions Microsoft Passport for Work for all users.
+If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-If you disable this policy setting, the device does not provision Microsoft Passport for Work for any user.</Description>
+If you disable this policy setting, the device does not provision Windows Hello for Business for any user.</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -124,9 +126,9 @@ If you disable this policy setting, the device does not provision Microsoft Pass
                 <DefaultValue>False</DefaultValue>
                 <Description>A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
 
-If you enable this policy setting, only devices with a usable TPM provision Microsoft Passport for Work.
+If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Microsoft Passport for Work using software if the TPM is non-functional or unavailable.</Description>
+If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -145,6 +147,8 @@ If you disable or do not configure this policy setting, the TPM is still preferr
               <NodeName>PINComplexity</NodeName>
               <DFProperties>
                 <AccessType>
+                  <Add />
+                  <Delete />
                   <Get />
                 </AccessType>
                 <Description>Root node for PIN policies</Description>
@@ -155,7 +159,7 @@ If you disable or do not configure this policy setting, the TPM is still preferr
                   <One />
                 </Occurrence>
                 <Scope>
-                  <Permanent />
+                  <Dynamic />
                 </Scope>
                 <DFType>
                   <DDFName></DDFName>
@@ -171,11 +175,11 @@ If you disable or do not configure this policy setting, the TPM is still preferr
                     <Replace />
                   </AccessType>
                   <DefaultValue>4</DefaultValue>
-                  <Description>Minimum PIN length configures the minimum number of characters required for the work PIN.  The lowest number you can configure for this policy setting is 4.  The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+                  <Description>Minimum PIN length configures the minimum number of characters required for the PIN.  The lowest number you can configure for this policy setting is 4.  The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
 
-If you configure this policy setting, the work PIN length must be greater than or equal to this number.
+If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-If you do not configure this policy setting, the work PIN length must be greater than or equal to 4.
+If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
 
 NOTE: If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.</Description>
                   <DFFormat>
@@ -202,11 +206,11 @@ NOTE: If the above specified conditions for the minimum PIN length are not met, 
                     <Replace />
                   </AccessType>
                   <DefaultValue>127</DefaultValue>
-                  <Description>Maximum PIN length configures the maximum number of characters allowed for the work PIN.  The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
+                  <Description>Maximum PIN length configures the maximum number of characters allowed for the PIN.  The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
 
-If you configure this policy setting, the work PIN length must be less than or equal to this number.
+If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-If you do not configure this policy setting, the work PIN length must be less than or equal to 127.
+If you do not configure this policy setting, the PIN length must be less than or equal to 127.
 
 NOTE: If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.</Description>
                   <DFFormat>
@@ -233,13 +237,13 @@ NOTE: If the above specified conditions for the maximum PIN length are not met, 
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of uppercase letters in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one uppercase letter in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using uppercase letters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use uppercase letters in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -264,13 +268,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of lowercase letters in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one lowercase letter in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using lowercase letters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use lowercase letters in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -295,13 +299,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description><![CDATA[Use this policy setting to configure the use of special characters in the Microsoft Passport for work PIN gesture.  Valid special characters for Microsoft Passport for work PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~ .
+                  <Description><![CDATA[Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture.  Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one special character in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using special characters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use special characters in their work PIN.]]></Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.]]></Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -326,13 +330,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of digits in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one digit in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using digits in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work requires users to use digits in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -429,7 +433,7 @@ If you do not configure this policy setting, Microsoft Passport for Work require
               <Delete />
               <Get />
             </AccessType>
-            <Description>This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Microsoft Passport for work provisioning and management.</Description>
+            <Description>This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -448,6 +452,8 @@ If you do not configure this policy setting, Microsoft Passport for Work require
             <NodeName>Policies</NodeName>
             <DFProperties>
               <AccessType>
+                <Add />
+                <Delete />
                 <Get />
               </AccessType>
               <Description>Root node for policies.</Description>
@@ -458,7 +464,7 @@ If you do not configure this policy setting, Microsoft Passport for Work require
                 <One />
               </Occurrence>
               <Scope>
-                <Permanent />
+                <Dynamic />
               </Scope>
               <DFTitle>Policies</DFTitle>
               <DFType>
@@ -475,11 +481,11 @@ If you do not configure this policy setting, Microsoft Passport for Work require
                   <Replace />
                 </AccessType>
                 <DefaultValue>True</DefaultValue>
-                <Description>Microsoft Passport for Work is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
+                <Description>Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-If you enable or do not configure this policy setting, the device provisions Microsoft Passport for Work for all users.
+If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-If you disable this policy setting, the device does not provision Microsoft Passport for Work for any user.</Description>
+If you disable this policy setting, the device does not provision Windows Hello for Business for any user.</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -506,9 +512,9 @@ If you disable this policy setting, the device does not provision Microsoft Pass
                 <DefaultValue>False</DefaultValue>
                 <Description>A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
 
-If you enable this policy setting, only devices with a usable TPM provision Microsoft Passport for Work.
+If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Microsoft Passport for Work using software if the TPM is non-functional or unavailable.</Description>
+If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -533,9 +539,9 @@ If you disable or do not configure this policy setting, the TPM is still preferr
                   <Replace />
                 </AccessType>
                 <DefaultValue>False</DefaultValue>
-                <Description>Microsoft Passport for Work can use certificates to authenticate to on-premise resources. 
+                <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources. 
 
-If you enable this policy setting, Microsoft Passport for Work will wait until the device has received a certificate payload from the enterprise Certificate Authority before provisioning a PIN.
+If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the enterprise Certificate Authority before provisioning a PIN.
 
 If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.</Description>
                 <DFFormat>
@@ -556,6 +562,8 @@ If you disable or do not configure this policy setting, the PIN will be provisio
               <NodeName>PINComplexity</NodeName>
               <DFProperties>
                 <AccessType>
+                  <Add />
+                  <Delete />
                   <Get />
                 </AccessType>
                 <Description>Root node for PIN policies</Description>
@@ -566,7 +574,7 @@ If you disable or do not configure this policy setting, the PIN will be provisio
                   <One />
                 </Occurrence>
                 <Scope>
-                  <Permanent />
+                  <Dynamic />
                 </Scope>
                 <DFType>
                   <DDFName></DDFName>
@@ -582,11 +590,11 @@ If you disable or do not configure this policy setting, the PIN will be provisio
                     <Replace />
                   </AccessType>
                   <DefaultValue>4</DefaultValue>
-                  <Description>Minimum PIN length configures the minimum number of characters required for the work PIN.  The lowest number you can configure for this policy setting is 4.  The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+                  <Description>Minimum PIN length configures the minimum number of characters required for the PIN.  The lowest number you can configure for this policy setting is 4.  The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
 
-If you configure this policy setting, the work PIN length must be greater than or equal to this number.
+If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-If you do not configure this policy setting, the work PIN length must be greater than or equal to 4.
+If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
 
 NOTE: If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.</Description>
                   <DFFormat>
@@ -613,11 +621,11 @@ NOTE: If the above specified conditions for the minimum PIN length are not met, 
                     <Replace />
                   </AccessType>
                   <DefaultValue>127</DefaultValue>
-                  <Description>Maximum PIN length configures the maximum number of characters allowed for the work PIN.  The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
+                  <Description>Maximum PIN length configures the maximum number of characters allowed for the PIN.  The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
 
-If you configure this policy setting, the work PIN length must be less than or equal to this number.
+If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-If you do not configure this policy setting, the work PIN length must be less than or equal to 127.
+If you do not configure this policy setting, the PIN length must be less than or equal to 127.
 
 NOTE: If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.</Description>
                   <DFFormat>
@@ -644,13 +652,13 @@ NOTE: If the above specified conditions for the maximum PIN length are not met, 
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of uppercase letters in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one uppercase letter in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using uppercase letters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use uppercase letters in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -675,13 +683,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of lowercase letters in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one lowercase letter in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using lowercase letters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use lowercase letters in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -706,13 +714,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description><![CDATA[Use this policy setting to configure the use of special characters in the Microsoft Passport for work PIN gesture.  Valid special characters for Microsoft Passport for work PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~ .
+                  <Description><![CDATA[Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture.  Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one special character in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using special characters in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work does not allow users to use special characters in their work PIN.]]></Description>
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.]]></Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -737,13 +745,13 @@ If you do not configure this policy setting, Microsoft Passport for Work does no
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Use this policy setting to configure the use of digits in the Microsoft Passport for work PIN.
+                  <Description>Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Microsoft Passport for Work requires users to include at least one digit in their work PIN.
+A value of 1 corresponds to “Required.” If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Microsoft Passport for Work prevents users from using digits in their work PIN.
+A value of 2 corresponds to “Disallow.” If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-If you do not configure this policy setting, Microsoft Passport for Work requires users to use digits in their work PIN.</Description>
+If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -813,9 +821,11 @@ If you do not configure this policy setting, Microsoft Passport for Work require
               <NodeName>Remote</NodeName>
               <DFProperties>
                 <AccessType>
+                  <Add />
+                  <Delete />
                   <Get />
                 </AccessType>
-                <Description>Root node for Remote Passport policies</Description>
+                <Description>Root node for phone sign-in policies</Description>
                 <DFFormat>
                   <node />
                 </DFFormat>
@@ -823,7 +833,7 @@ If you do not configure this policy setting, Microsoft Passport for Work require
                   <One />
                 </Occurrence>
                 <Scope>
-                  <Permanent />
+                  <Dynamic />
                 </Scope>
                 <DFType>
                   <DDFName></DDFName>
@@ -839,7 +849,7 @@ If you do not configure this policy setting, Microsoft Passport for Work require
                     <Replace />
                   </AccessType>
                   <DefaultValue>False</DefaultValue>
-                  <Description>Boolean that specifies if Remote Passport can be used with a device. Remote Passport provides the ability for a portable, registered device to be usable as a companion device for desktop authentication.
+                  <Description>Boolean that specifies if phone sign-in can be used with a device. Phone sign-in provides the ability for a portable, registered device to be usable as a companion device for desktop authentication.
 
 Default value is false. If you enable this setting, a desktop device will allow a registered, companion device to be used as an authentication factor. If you disable this setting, a companion device cannot be used in desktop authentication scenarios.</Description>
                   <DFFormat>
@@ -871,15 +881,13 @@ Default value is false. If you enable this setting, a desktop device will allow 
             <DefaultValue>False</DefaultValue>
             <Description>THIS NODE IS DEPRECATED AND WILL BE REMOVED IN A FUTURE VERSION. PLEASE USE Biometrics/UseBiometrics NODE INSTEAD.
 
-Microsoft Passport for Work enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However users must still configure a work PIN to use in case of failures.
+Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-If you enable this policy setting, Microsoft Passport for Work allows the use biometric gestures on.
+If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
-If you disable this policy setting, Microsoft Passport for Work prevents the use of biometric gestures.
+If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
-If you do not configure this policy setting, Microsoft Passport for Work allows the use of biometric gestures.
-
-NOTE: Disabling this policy prevents the user of biometric gestures on the device for all account types.</Description>
+NOTE: Disabling this policy prevents the use of biometric gestures on the device for all account types.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -924,15 +932,13 @@ NOTE: Disabling this policy prevents the user of biometric gestures on the devic
                 <Replace />
               </AccessType>
               <DefaultValue>False</DefaultValue>
-              <Description>Microsoft Passport for Work enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However users must still configure a work PIN to use in case of failures.
+              <Description>Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-If you enable this policy setting, Microsoft Passport for Work allows the use biometric gestures on.
+If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
-If you disable this policy setting, Microsoft Passport for Work prevents the use of biometric gestures.
+If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
-If you do not configure this policy setting, Microsoft Passport for Work allows the use of biometric gestures.
-
-NOTE: Disabling this policy prevents the user of biometric gestures on the device for all account types.</Description>
+NOTE: Disabling this policy prevents the use of biometric gestures on the device for all account types.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -982,6 +988,7 @@ If you disable this policy setting, enhanced anti-spoofing for facial features i
         </Node>
       </Node>
 </MgmtTree>
+
 ```
 
  
