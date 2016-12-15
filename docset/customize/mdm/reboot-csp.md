@@ -28,7 +28,7 @@ This node executes a reboot of the device.
 
  
 
-The supported operation is Execute.
+The supported operations are Execute and Get.
 
 <a href="" id="schedule"></a>**Schedule**  
 The supported operation is Get.
@@ -36,12 +36,12 @@ The supported operation is Get.
 <a href="" id="schedule-single"></a>**Schedule/Single**  
 This node will execute a reboot at a scheduled date and time. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z
 
-The supported operation is Get and Replace.
+The supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="schedule-dailyrecurrent"></a>**Schedule/DailyRecurrent**  
 This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. For example: 2015-12-15T07:36:25Z
 
-The supported operation is Get and Replace.
+The supported operations are Get, Add, Replace, and Delete.
 
 ## Related topics
 
