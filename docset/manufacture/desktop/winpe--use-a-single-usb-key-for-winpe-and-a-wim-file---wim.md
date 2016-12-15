@@ -1,13 +1,12 @@
 ---
-author: Justinha
-Description: 'WinPE: Store or split images to deploy Windows using a single USB key'
+author: KPacquer
+Description: 'WinPE: Store or split images to deploy Windows using a single USB drive'
 ms.assetid: 66036c4e-f64c-4175-b4fe-15e4cc1fc600
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'WinPE: Store or split images to deploy Windows using a single USB key'
+title: 'WinPE: Store or split images to deploy Windows using a single USB drive'
 ---
 
-# WinPE: Store or split images to deploy Windows using a single USB key
-
+# WinPE: Store or split images to deploy Windows using a single USB drive
 
 How can you deploy Windows to PCs with just one USB port?
 
@@ -33,7 +32,9 @@ Even if your PC only has one USB port, you can still deploy Windows using two se
 
 
 1.  Copy the image to a server on your network, for example, \\\\server\\share\\install.wim
+
 2.  Boot to WinPE.
+
 3.  Connect a network drive using a drive letter, for example, N.
 
     ``` syntax
@@ -56,7 +57,9 @@ Even if your PC only has one USB port, you can still deploy Windows using two se
 -   For images larger than 32GB, you'd need a second USB key anyway because of the FAT32 partition size limitation.
 
 1.  From your technician PC, create your WinPE key. See [WinPE: Create USB Bootable drive](winpe-create-usb-bootable-drive.md).
+
 2.  Open the **Deployment and Imaging Tools Environment** as an adminstrator.
+
 3.  Split the Windows image into files smaller than 4GB each:
 
     ``` syntax
@@ -74,13 +77,13 @@ Even if your PC only has one USB port, you can still deploy Windows using two se
     In this example, the */split* option creates an install.swm file, an install2.swm file, an install3.swm file, and so on, in the D:\\Images directory.
 
 4.  Copy the files to the WinPE key.
+
 5.  On the destination PC, boot to WinPE, and then apply an image using DISM /Apply-Image /SWMFile command.
     ```
     Dism /apply-image /imagefile:install.swm /swmfile:install*.swm /index:1 /applydir:D:\
     ```
 
-## <span id="Option_4__Create_a_multiple_partition_USB_drive__Windows_to_Go_or_other_storage_drive_"></span><span id="option_4__create_a_multiple_partition_usb_drive__windows_to_go_or_other_storage_drive_"></span><span id="OPTION_4__CREATE_A_MULTIPLE_PARTITION_USB_DRIVE__WINDOWS_TO_GO_OR_OTHER_STORAGE_DRIVE_"></span>Option 4: Create a multiple partition USB drive (Windows to Go or other storage drive)
-
+## <span id="Create_a_multiple_partition_USB_drive"></span>Option 4: Create a multiple partition USB drive (Windows to Go or other storage drive)
 
 Most flash drives report themselves as removable drives, but to create multiple partitions on a USB drive the drive must report itself as a fixed (non-removable) drive. If you have access to a [Windows to Go (WTG) certified drive](http://technet.microsoft.com/library/hh831833.aspx) you can use it, because WTG drives report as fixed. Some USB external hard drives also report themselves as fixed.
 
@@ -93,7 +96,9 @@ Most flash drives report themselves as removable drives, but to create multiple 
 **Create a drive with multiple partitions**
 
 1.  Start the **Deployment and Imaging Tools Environment** as an administrator.
+
 2.  Type **diskpart** and press Enter.
+
 3.  Use Diskpart to reformat the drive and create two new partitions for WinPE and for your images:
 
     ``` syntax
@@ -125,17 +130,8 @@ Most flash drives report themselves as removable drives, but to create multiple 
 
 ## <span id="related_topics"></span>Related topics
 
+[WinPE: Identify drive letters with a script](winpe-identify-drive-letters.md)
 
 [Split a Windows image file (.wim) for FAT32 media or to span across multiple DVDs](split-a-windows-image--wim--file-to-span-across-multiple-dvds.md)
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
-
- 
-
- 
-
-
-
-
-
-

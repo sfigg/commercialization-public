@@ -1,64 +1,63 @@
 ---
-author: Justinha
-Description: Append a Volume Image to an Existing Image Using DISM
+author: KPacquer
+Description: Append, apply, and export volume images with a Windows Image (.wim) file
 ms.assetid: c537f8bb-05ed-48cd-b75a-a8c1ed3bc66f
 MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: Append a Volume Image to an Existing Image Using DISM
+title: Append, apply, and export volume images with a Windows Image (.wim) file
 ---
 
-# Append a Volume Image to an Existing Image Using DISM
+# Append, apply, and export volume images with a Windows Image (.wim) file
 
+Manage multiple Windows images by combining them into a single .wim file. A single .wim file can take a fraction of the drive space that multiple .wim files can take. 
 
-The Deployment Image Servicing and Management (DISM) tool is a command-line tool that enables the creation of Windows® image (.wim) files for deployment in a manufacturing or corporate IT environment. The **/Append-Image** option appends a volume image to an existing .wim file allowing you to store many customized Windows images in a fraction of the space. When you combine two or more Windows image files into a single .wim, any files that are duplicated between the images are only stored once.
+When you combine two or more Windows image files into a single .wim, any files that are duplicated between the images are only stored once.
+
+  ![image: Use DISM to list the images (Get-ImageInfo), then apply the correct image (Apply-Image)](images/apply-a-volume-image.jpg)
+
+Run these commands using DISM from a command prompt with administrator privileges.
 
 ## <span id="multiple_windows_images_in_a_.wim_file"></span><span id="MULTIPLE_WINDOWS_IMAGES_IN_A_.WIM_FILE"></span>Multiple Windows Images in a .wim file
 
+**Combine images: append a volume image to an existing image**
 
-Before you can append data to an image, you must have the following:
+Example: append an image of the D drive to an existing image called install.wim. Each new image receives a new index number, starting from 1.
 
--   A technician computer running Windows 8 or a technician computer with the Windows Assessment and Deployment Kit (Windows ADK) tools installed on it.
+``` syntax
+Dism /Append-Image /ImageFile:"C:\images\install.wim /CaptureDir:D:\ /Name:"Home + drivers"
+ ```
 
--   A Windows image (.wim) file. For more information about how to capture an image using DISM, see [Capture Images of Hard Disk Partitions Using DISM](capture-images-of-hard-disk-partitions-using-dism.md).
+**See a list of the volume images contained in a .WIM file**
 
-**To append a volume image to an existing image**
+``` syntax
+Dism /Get-ImageInfo /ImageFile:"C:\images\install.wim"
+```
 
-1.  Open a command prompt with administrator privileges. If you are using a version of Windows other than Windows 8, navigate to the DISM directory.
+**Apply a volume image from the .WIM file**
 
-2.  Append a volume image to an existing image. For example, you can append an image of the D drive to an existing image called my-windows-partition.wim.
+You can refer to an image either by image name or image index number. Examples:
 
-    ``` syntax
-    Dism /Append-Image /ImageFile:c:\my-windows-partition.wim /CaptureDir:D:\ /Name:Drive-D
-    ```
+``` syntax
+Dism /Apply-Image /ImageFile:"C:\images\install.wim" /Index:2 /ApplyDir:D:\
 
-**Next Steps**
+Dism /Apply-Image /ImageFile:"C:\images\install.wim" /Name:"Home + drivers" /ApplyDir:D:\
+```
 
-1.  You can apply the image by referring to it by image number or image name, for example:
+**Extract an image from the .WIM file**
 
-    ``` syntax
-    Dism /apply-image /imagefile:install.wim /name:Drive-D /ApplyDir:D:\
-    ```
+Create a new .WIM file that includes only the files you need from a single volume image, for example, when [creating recovery media](create-media-to-run-push-button-reset-features-s14.md). The destination .WIM file starts with a new index number: 1.
 
-2.  You can extract the image into a separate file by using the **/Export-Image** option. For example:
+Examples:
 
-    ``` syntax
-    Dism /Export-Image /SourceImageFile:install.wim /SourceName:Drive-D /DestinationImageFile:DriveD.wim
-    ```
+``` syntax
+Dism /Export-Image /SourceImageFile:"C:\images\install.wim" /SourceIndex:2 /DestinationImageFile:"C:\resetmedia_amd64\media\sources\install.wim"
+
+Dism /Export-Image /SourceImageFile:"C:\images\install.wim" /SourceName:"Home + drivers" /DestinationImageFile:"C:\resetmedia_amd64\media\sources\install.wim"
+```
 
 For more information, see [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md).
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Capture Images of Hard Disk Partitions Using DISM](capture-images-of-hard-disk-partitions-using-dism.md)
 
 [DISM Image Management Command-Line Options](dism-image-management-command-line-options-s14.md)
-
- 
-
- 
-
-
-
-
-
-

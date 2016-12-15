@@ -44,6 +44,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
           <DFProperties>
             <AccessType>
               <Exec />
+              <Get />
             </AccessType>
             <DFFormat>
               <null />
@@ -85,6 +86,8 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
               <AccessType>
                 <Get />
                 <Replace />
+                <Add />
+                <Delete />
               </AccessType>
               <Description>Value in ISO8601, both the date and time are required. A reboot will be scheduled at the configured date time. Setting a null (empty) date will delete the existing schedule.</Description>
               <DFFormat>
@@ -94,7 +97,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
                 <One />
               </Occurrence>
               <Scope>
-                <Permanent />
+                <Dynamic />
               </Scope>
               <DFTitle>Single</DFTitle>
               <DFType>
@@ -108,6 +111,8 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
               <AccessType>
                 <Get />
                 <Replace />
+                <Add />
+                <Delete />
               </AccessType>
               <Description>Value in ISO8601, time is required. A reboot will be scheduled each day at the configured time starting at the date and time. Setting a null (empty) date will delete the existing schedule.</Description>
               <DFFormat>
@@ -117,7 +122,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
                 <One />
               </Occurrence>
               <Scope>
-                <Permanent />
+                <Dynamic />
               </Scope>
               <DFTitle>DailyRecurrent</DFTitle>
               <DFType>
@@ -128,6 +133,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Reboot*
         </Node>
       </Node>
 </MgmtTree>
+
 ```
 
 ## Related topics

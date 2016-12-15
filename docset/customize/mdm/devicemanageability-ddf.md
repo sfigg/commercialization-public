@@ -20,27 +20,6 @@ This topic shows the OMA DM device description framework (DDF) for the DeviceMan
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
       <Node>
-        <NodeName>Root</NodeName>
-        <Path>./User/Vendor/MSFT</Path>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-      </Node>
-      <Node>
         <NodeName>DeviceManageability</NodeName>
         <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
@@ -103,6 +82,7 @@ This topic shows the OMA DM device description framework (DDF) for the DeviceMan
         </Node>
       </Node>
 </MgmtTree>
+
 ```
 
  

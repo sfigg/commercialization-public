@@ -200,20 +200,20 @@ Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two te
 <!-- ResetConfig.xml -->
 <Reset>
   <Run Phase="BasicReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
   <Run Phase="FactoryReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
 </Reset>
 ```
 
-**EnableCustomizationsAfterRecovery.cmd:**
+**EnableCustomizations.cmd:**
 
 ``` syntax
-rem EnableCustomizationsAfterRecovery.cmd
+rem EnableCustomizations.cmd
 
 rem Define %TARGETOS% as the Windows folder (This later becomes C:\Windows) 
 for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C

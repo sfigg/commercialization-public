@@ -8,9 +8,9 @@ title: 'Planning: Customizing reference images for different audiences'
 
 # Planning: Customizing reference images for different audiences
 
-Instead of having one device design that tries to fit everyone, Windows image management tools can help you tailor device designs to meet the specific needs of various customers.
+Instead of having one device design that tries to fit everyone, Windows image management tools help you tailor device designs to meet the specific needs of various customers.
 
-To get started, we recommend choosing a hardware design that targets a specific audience, market, or price point. Build a base image for this design and test it. Next, customize Windows for that audience, include branding, logos, languages, and apps.
+To get started, we recommend choosing a hardware design that targets a specific audience, market, or price point. Build base images for this design and test it. Next, modify the base images to create designs for for different audiences, include branding, logos, languages, and apps.
 
 ## <span id="Device_types"></span><span id="device_types"></span><span id="DEVICE_TYPES"></span>Device types
 
@@ -46,9 +46,8 @@ To save drive space, we've split up the language packs. This can help you preloa
 
 This lab uses the following three sample hardware configurations.
 
-|                              |              |                     |                                   |
-|------------------------------|--------------|---------------------|-----------------------------------|
 | Hardware Configuration:      | 1            | 1B                  | 2                                 |
+|------------------------------|--------------|---------------------|-----------------------------------|
 | Form factor                  | Small tablet | 2-in-1              | Notebook                          |
 | Architecture                 | x86          | x86                 | x64                               |
 | RAM                          | 1 GB         | 2 GB                | 4 GB                              |
@@ -68,3 +67,5 @@ This lab uses the following three sample hardware configurations.
  Notes:
 * We can build an image for Hardware Configuration 1B by using Hardware Configuration 1 as a base image.
 * We can't build Hardware Configuration 2 from either Hardware Configuration 1 or 1B, because they use a different architecture.
+
+Next: [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)

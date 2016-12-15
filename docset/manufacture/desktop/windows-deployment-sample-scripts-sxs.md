@@ -12,7 +12,11 @@ title: Sample scripts
 
 Copy these scripts to the root of your storage USB drive.  Refer to this page to understand what's in the scripts.
 
-Next step: [Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+**To keep moving with the labs, it's OK to skip the rest of this topic**. Come back later when you want to understand what's going on or to make changes: we designed these scripts so that you can modify them to fit your needs.
+
+**Next step**: [Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
+
+--------------------------
 
 ## <span id="Image_deployment_scripts"></span><span id="image_deployment_scripts"></span><span id="IMAGE_DEPLOYMENT_SCRIPTS"></span>Image deployment scripts
 
@@ -27,10 +31,16 @@ Use these scripts together with DiskPart to format and set up the hard disk part
 Use this script apply a Windows image to a new device.
 
 ``` syntax
-@echo ApplyImage.bat
-@echo     Applies a Windows image to a desktop PC.
-@echo     To run this script, boot the device using WinPE first.
-@echo     NOTE: This script erases the primary hard drive
+@echo Apply-Image.bat
+@echo     Run from the reference device in the WinPE environment
+@echo     This script erases the primary hard drive and applies a new image
+@echo.
+@echo     Note: This script uses separate scripts to configure the drive partions:
+@echo     CreatePartitions-BIOS.txt or CreatePartitions-UEFI.txt
+@echo     These scripts must be in the same folder as ApplyImage.bat.
+@echo.
+@echo UPDATE (NOVEMBER 2016):
+@echo * This script now prompts for an image index number if one isn't given.
 @echo.
 @echo UPDATE (JULY 2016):
 @echo * This script stops just after applying the image.
@@ -40,13 +50,13 @@ Use this script apply a Windows image to a new device.
 @echo   After the script is complete, use apply-recovery.bat to finish
 @echo   setting up the recovery tools.
 @echo.
-@echo * Checks whether the PC is booted into BIOS or UEFI mode
-@echo   and applies the appropriate disk configuration.
-@echo.
-@echo * Includes support for the /EA variables for quicker
+@echo * This script creates a now includes support for the /EA variables for quicker
 @echo   image capture and recovery.
 @echo.
-@echo * Checks to see if you're booted into Windows PE.
+@echo * This script now includes support for the /EA variables for quicker
+@echo   image capture and recovery.
+@echo.
+@echo * This script now checks to see if you're booted into Windows PE.
 @echo.
 @if not exist X:\Windows\System32 echo ERROR: This script is built to run in Windows PE.
 @if not exist X:\Windows\System32 goto END
@@ -54,15 +64,26 @@ Use this script apply a Windows image to a new device.
 @if %1.==. echo Example: ApplyImage D:\WindowsWithFrench.wim
 @if %1.==. goto END
 @echo *********************************************************************
+if not %2.==. goto INDEXSELECTED
+:WHICHIMAGE
+@echo Which Windows image should we apply?
+@echo (Default is image index 1)
+@SET /P INDEX=Type an image index number, or press L to list the images:
+@if %INDEX%.==. set INDEX=1
+@if %INDEX%==l set INDEX=L
+@if %INDEX%==L Dism /Get-ImageInfo /ImageFile:%1
+@if %INDEX%==L goto WHICHIMAGE
+:INDEXSELECTED
+@echo *********************************************************************
 @echo Checking to see if the PC is booted in BIOS or UEFI mode.
 wpeutil UpdateBootInfo
 for /f "tokens=2* delims=	 " %%A in ('reg query HKLM\System\CurrentControlSet\Control /v PEFirmwareType') DO SET Firmware=%%B
 @echo            Note: delims is a TAB followed by a space.
-@if x%Firmware%==x echo ERROR: Can't figure out which firmware we're on.
-@if x%Firmware%==x echo        Common fix: In the command above:
-@if x%Firmware%==x echo             for /f "tokens=2* delims=	 "
-@if x%Firmware%==x echo        ...replace the spaces with a TAB character followed by a space.
-@if x%Firmware%==x goto END
+@if %Firmware%.==. echo ERROR: Can't figure out which firmware we're on.
+@if %Firmware%.==. echo        Common fix: In the command above:
+@if %Firmware%.==. echo             for /f "tokens=2* delims=	 "
+@if %Firmware%.==. echo        ...replace the spaces with a TAB character followed by a space.
+@if %Firmware%.== goto END
 @if %Firmware%==0x1 echo The PC is booted in BIOS mode. 
 @if %Firmware%==0x2 echo The PC is booted in UEFI mode. 
 @echo *********************************************************************
@@ -82,14 +103,8 @@ call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @echo  == Apply the image to the Windows partition ==
 @SET /P COMPACTOS=Deploy as Compact OS? (Y or N):
 @if %COMPACTOS%.==y. set COMPACTOS=Y
-@echo Does this image include Extended Attributes?
-@echo    (If you're not sure, type N).
-@SET /P EA=(Y or N):
-@if %EA%.==y. set EA=Y
-if %COMPACTOS%.==Y.     if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact /EA
-if not %COMPACTOS%.==Y. if %EA%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /EA
-if %COMPACTOS%.==Y.     if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\ /Compact
-if not %COMPACTOS%.==Y. if not %EA%.==Y. dism /Apply-Image /ImageFile:%1 /Index:1 /ApplyDir:W:\
+if %COMPACTOS%.==Y.     dism /Apply-Image /ImageFile:%1 /Index:%INDEX% /ApplyDir:W:\ /Compact /EA
+if not %COMPACTOS%.==Y. dism /Apply-Image /ImageFile:%1 /Index:%INDEX% /ApplyDir:W:\ /EA
 @echo *********************************************************************
 @echo == Copy boot files to the System partition ==
 W:\Windows\System32\bcdboot W:\Windows /s S:
@@ -107,11 +122,13 @@ W:\Windows\System32\bcdboot W:\Windows /s S:
 
 This script relies on the following two DiskPart scripts, CreatePartitions-UEFI.txt and CreatePartitions-BIOS.txt, which must be placed in the same folder:
 
-### CreatePartitions-UEFI.txt
+### <span id="CreatePartitions-UEFI.txt"></span> CreatePartitions-UEFI.txt
 
 Creates the System, MSR, Windows, and recovery tools partitions for UEFI-based PCs.
 
 This script temporarily assigns these drive letters: System=S, Windows=W, and Recovery=R. The MSR partition doesn't get a letter. The letter W is used to avoid potential drive letter conflicts. After the device reboots, the Windows partition is assigned the letter C, and the other partitions don’t receive drive letters.
+
+The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.
 
 The following diagram shows the resulting partition configuration:
 
@@ -156,11 +173,13 @@ list volume
 exit
 ```
 
-### CreatePartitions-BIOS.txt
+### <span id="CreatePartitions-BIOS.txt"></span> CreatePartitions-BIOS.txt
 
 Creates the System, Windows, and recovery tools partitions for BIOS-based PCs.
 
 This script temporarily assigns these drive letters: System=S, Windows=W, and Recovery=R. The letter W is used to avoid potential drive letter conflicts. After the device reboots, the Windows partition is assigned the letter C, and the other partitions don’t receive drive letters.
+
+The Recovery partition must be the partition after the Windows partition to ensure winre.wim can be kept up-to-date during life of the device.
 
 The following diagram shows the resulting partition configuration:
 
@@ -279,7 +298,7 @@ list volume
 ```
 
 
-## <span id="start_layout__layoutmodification.xml_"></span><span id="START_LAYOUT__LAYOUTMODIFICATION.XML_"></span>Start layout (LayoutModification.xml)
+## <span id="Start_Layout"></span><span id="layoutmodification.xml"></span><span id="LAYOUTMODIFICATION.XML"></span>Start layout (LayoutModification.xml)
 
 
 The Start tile layout in Windows 10 provides OEMs the ability to append tiles to the default Start layout to include Web links, secondary tiles, Windows apps, and Windows desktop applications. OEMs can use this layout to make it applicable to multiple regions or markets without duplicating a lot of the work. In addition, OEMs can add up to three default apps to the frequently used apps section in the system area, which delivers sytem-driven lists o the user including important or frequently accessed system locations and recently installed apps.
@@ -361,125 +380,6 @@ Sample **LayoutModification.xml**:
   </TopMFUApps>  
 </LayoutModificationTemplate>
 ```
-
-**Start layout walkthrough**
-
-1.  If you don’t already have one, create a file called **LayoutModification.xml**.
-2.  If you need to specify whether the append groups must only be applied to specific regions, use the optional **Region** attribute in the **RequiredStartGroups** element. The Region value must be equal to two-letter country/region codes. Use a pipe “|” delimiter if you need to specify multiple countries/regions.
-
-    ``` syntax
-    <RequiredStartGroups
-          Region="DE|ES|FR|GB|IT|US">
-    ```
-
-3.  Specify the tiles you want to add within an **AppendGroup**. OEMs can add a maximum of two **AppendGroup**. The following example shows two groups called “Fabrikam Group 1” and “Fabrikam Group 2”, which contain tiles that will be applied if the device country/region matches what’s specified in **Region** (in this case, the regions are Germany, Spain, France, United Kingdom, Italy, and United States). Each group contains three tiles and the various elements you need to use depending on the tile that you want to pin to Start.
-
-    ``` syntax
-    <RequiredStartGroups
-          Region="DE|ES|FR|GB|IT|US">
-          
-          <!-- OEMs can add a maximum of two AppendGroup. Each AppendGroup specifies a group of
-               tiles that will be appended to Start. -->
-          <AppendGroup
-            Name="Fabrikam Group 1">
-            <!-- Add the News Universal Windows app to Start -->
-            <start:Tile
-              AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
-              Size="2x2"
-              Row="0"
-              Column="0"/>
-            <!-- Add a Windows desktop application with a known AppUserModelID  -->
-            <start:DesktopApplicationTile
-              DesktopApplicationID="Microsoft.Windows.Explorer"
-              Size="2x2"
-              Row="0"
-              Column="2"/>
-            <!-- Add the Excel Preview Universal Windows app -->
-            <start:Tile
-              AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel"
-              Size="2x2"
-              Row="0"
-              Column="4"/>
-          </AppendGroup>
-          
-          <AppendGroup
-            Name="Fabrikam Group 2">
-            <!-- Add a Windows 8.1 app -->
-            <start:Tile
-              AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader"
-              Size="2x2"
-              Row="0"
-              Column="0"/>
-            <!-- Web link tile with associated .url file is in legacy Start Menu folder. This requires
-                 a shortcut or .url file to be added in one of several legacy Start Menu directories, such as
-                 "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" 
-                 or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\" -->
-            <start:DesktopApplicationTile
-              DesktopApplicationID="http://www.bing.com/"
-              Size="2x2"
-              Row="0"
-              Column="2"/>
-            <!-- Add a Windows desktop application link in a legacy Start Menu folder. You must add the .lnk file 
-                 in the specified location when the device first boots. -->
-            <start:DesktopApplicationTile
-              DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
-              Size="2x2"
-              Row="0"
-              Column="4"/>
-          </AppendGroup>
-        </RequiredStartGroups>
-    ```
-
-    The following example shows one group called “Fabrikam Group 1”, which will be applied if the device country/region doesn’t match any of the ones specified in the previous RequiredStartGroups.
-
-    ``` syntax
-        <!-- Non-region specific group -->
-        <RequiredStartGroups>
-          <AppendGroup
-            Name="Fabrikam Group 1">
-            <!-- Add the Word Preview Universal Windows app -->
-            <start:Tile
-              AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
-              Size="2x2"
-              Row="0"
-              Column="0"/>
-            <!-- Add the Excel Preview Universal Windows app -->
-            <start:Tile
-              AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel"
-              Size="2x2"
-              Row="0"
-              Column="2"/>
-          </AppendGroup>    
-        </RequiredStartGroups>
-    ```
-
-    Keep the following in mind when creating your LayoutModification.xml file:
-
-    -   If you are pinning a Windows desktop applications using the **start:DesktopApplicationTile** tag and you don’t know the application’s application user model ID, you need to create a .lnk file in a legacy Start Menu directory before first boot.
-    -   If you use the **start:DesktopApplicationTile** tag to pin a legacy .url shortcut to Start, you must create a .url file and add this file to a legacy Start Menu directory before first boot.
-
-    For the above scenarios, you can use the following directories to put the .url or .lnk files:
-
-    -   %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\
-    -   %ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\
-
-4.  Optionally, you can add up to 3 apps to the frequently used section of the system area. The following example shows how to add the calculator app to the frequently used system area.
-
-    ``` syntax
-      <!-- Add the calculator app to the frequently used system area -->
-      <TopMFUApps>
-        <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-      </TopMFUApps>
-    ```
-
-5.  Save the LayoutModification.xml file.
-
-    Once you’ve created the LayoutModification.xml file, you’ll need to place this file in the correct system location using either Windows ICD or classic-style deployment. For more information on how to do this, see:
-
-    -   Windows ICD - Lab 1, Step 7: Customize the Start layout
-    -   Classic-style deployment - Lab 2a, Step 5: Add the files you need to modify the Start layout
-
-    If you don’t create a LayoutModification.xml file and you continue to use the Start Unattend settings, the OS will use the Unattend answer file and take the first 12 SquareTiles or DesktoporSquareTiles settings specified in the Unattend file. The system then places these tiles automatically within the newly-created groups at the end of Start—the first six tiles are placed in the first OEM group and the second set of six tiles are placed in the second OEM group. If OEMName is specified in the Unattend file, the value for this element is used to name the OEM groups that will be created.
 
 ## <span id="microphone_settings__speechsetting.cmd_"></span><span id="MICROPHONE_SETTINGS__SPEECHSETTING.CMD_"></span>Microphone settings (SpeechSetting.cmd)
 
@@ -700,10 +600,9 @@ Add an answer file to the Windows image in C:\\mount\\windows\\Windows\\Panther\
 
 ## <span id="Keeping_Windows_settings_through_a_recovery"></span><span id="keeping_windows_settings_through_a_recovery"></span><span id="KEEPING_WINDOWS_SETTINGS_THROUGH_A_RECOVERY"></span>Keeping Windows settings through a recovery
 
-
 Windows doesn't automatically save settings created through unattend.xml setup files, nor Windows Start Menu customizations created with LayoutModification.xml during a full-system reset, nor first-login info from oobe.xml.
 
-To make sure your customizations are saved, that includes steps to put the unattend.xml, LayoutModification.xml, and oobe.xml files back into place. Here's some sample scripts that show how to retain these settings and put them back into the right spots. Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two text files, in C:\\Recovery\\OEM\\:
+To make sure your customizations are saved, that includes steps to put the unattend.xml, LayoutModification.xml, and oobe.xml files back into place. Here's some sample scripts that show how to retain these settings and put them back into the right spots. Save copies of unattend.xml, LayoutModification.xml, oobe.xml, plus these two text files: ResetConfig.xml and EnableCustomizations.cmd, in C:\\Recovery\\OEM\\:
 
 ### ResetConfig.xml
 
@@ -712,20 +611,20 @@ To make sure your customizations are saved, that includes steps to put the unatt
 <!-- ResetConfig.xml -->
 <Reset>
   <Run Phase="BasicReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
   <Run Phase="FactoryReset_AfterImageApply">
-    <Path>EnableCustomizationsAfterRecovery.cmd</Path>
+    <Path>EnableCustomizations.cmd</Path>
     <Duration>2</Duration>
   </Run>
 </Reset>
 ```
 
-### EnableCustomizationsAfterRecovery.cmd
+### EnableCustomizations.cmd
 
 ``` syntax
-rem EnableCustomizationsAfterRecovery.cmd
+rem EnableCustomizations.cmd
 
 rem Set the variable %TARGETOS%      (Typically this is C:\Windows)
 for /F "tokens=1,2,3 delims= " %%A in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v TargetOS') DO SET TARGETOS=%%C
@@ -740,24 +639,6 @@ xcopy "%TARGETOSDRIVE%\Recovery\OEM\OOBE\Info" "%TARGETOS%\System32\Info\" /s
 
 rem Recommended: Create a pagefile for devices with 1GB or less of RAM.
 wpeutil CreatePageFile /path=%TARGETOSDRIVE%\PageFile.sys /size=256
-
-
-rem EnableCustomizationsAfterRecovery.cmd
-set ScriptFolder=%~dp0
-
-for /f "skip=2 tokens=2,*" %%a in ('reg.exe query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\RecoveryEnvironment" /v "TargetOS"') do set "TargetOS=%%b"
-echo TargetOS: %TargetOS% >> %LogFile%
-for %%A in (%TargetOS%) do set "TargetOSDrive=%%~dpA"
-
-copy "%ScriptFolder%\Unattend.xml" "%TargetOSDrive%\Windows\Panther\Unattend.xml" /y
-copy "%ScriptFolder%\LayoutModification.xml" "%TargetOSDrive%\Users\Default\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml" /y
-copy "%ScriptFolder%\oobe.xml" "%TargetOSDrive%\System32\Info\Oobe.xml" /y
-```
-
-For multilingual deployments, OOBE.xml uses a more complicated folder structure. It's OK to just copy the entire folder structure into C:\\Recovery\\OEM, and then modify the script to copy the entire folder:
-
-``` syntax
-xcopy "%ScriptFolder%\Info\" "%TargetOSDrive%\System32\Info\" /s
 ```
 
 To learn more about using extensibility points for push-button reset, see [Add a script to push-button reset features](http://go.microsoft.com/fwlink/?LinkId=618946).

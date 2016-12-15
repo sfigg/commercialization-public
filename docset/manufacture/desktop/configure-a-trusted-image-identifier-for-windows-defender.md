@@ -48,7 +48,7 @@ For optimal performance, we recommend that you add this setting when you prepare
 
 [Sysprep Process Overview](sysprep-process-overview.md)
 
-[Use Answer Files with Sysprep](use-answer-files-with-sysprep.md#bkmk-1)
+[Use Answer Files with Sysprep](use-answer-files-with-sysprep.md#bkmk_1)
 
  
 

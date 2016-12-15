@@ -19,9 +19,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## In this section
 
-
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
+-   [What's new in the next major update to Windows 10](#whatsnew10)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -174,10 +174,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
- 
 
 ## <a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607
-
 
 <table>
 <colgroup>
@@ -358,10 +356,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 <p>Removed the EnrollmentID setting.</p></td>
 </tr>
-<tr class="even">
-<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
-<td style="vertical-align:top"><p>Added support for <strong>SecurityAuditing</strong> settings for the desktop.</p></td>
-</tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
 <td style="vertical-align:top"><p>New CSP.</p></td>
@@ -480,10 +474,46 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
- 
+## <a href="" id="whatsnew10"></a>What's new in the next major update to Windows 10
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top"><p>New nodes in Update CSP</p></td>
+<td style="vertical-align:top"><p>Added the following nodes to the [Update CSP](update-csp.md):</p>
+<ul>
+<li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
+<li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
+<li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
+</ul>
+</td>
+</tr><tr class="even">
+<td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<ul>
+<li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
+<li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+</td></tr>
+</tbody>
+</table> 
+
 
 ## Breaking changes and known issues
-
 
 ### <a href="" id="getcommand"></a>Get command inside an atomic command is not supported
 
@@ -749,6 +779,52 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### December, 2016
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Update CSP](update-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes:</p>
+<ul>
+<li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
+<li>InstalledUpdates/<em>Installed Update Guid</em>/RevisionNumber</li>
+<li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
+</ul>
+</td>
+</tr><tr class="even">
+<td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added information about exempt applications list to the EnterpriseDataProtection setting.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>To Settings/RequireProtectionUnderLockConfig, added supported values.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<ul>
+<li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
+<li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### November 2016
 
 <table>
@@ -788,6 +864,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Updated the description of the following policies.<ul>
 <li>[Browser/Homepages](policy-configuration-service-provider#browser-homepages)</li>
 <li>[DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider#devicelock-maxinactivitytimedevicelock)</li>
+<li>[Experience/ConfigureWindowsSpotlightOnLockScreen](policy-configuration-service-provider#experience-configurewindowsspotlightonlockscreen)</li>
 </ul></p>
 </td>
 </tr>
