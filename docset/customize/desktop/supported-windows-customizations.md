@@ -1,6 +1,6 @@
 ---
 title: Supported Windows customizations
-description: Windows 10 supports the following customizations Customization assetsConfiguration settings.
+description: Windows 10 supports the following customizations
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
