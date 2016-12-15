@@ -28,15 +28,15 @@ After you've learned how to design, develop, and customize Windows images, you c
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Getting started</strong></p></td>
-<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough.md) | [Manufacturing Windows Engineering Guide (WEG)](manufacturing-windows-engineering-guide.md)</p></td>
+<td align="left"><p>[Download the Windows ADK](http://go.microsoft.com/fwlink/p/?LinkId=526803) | [OEM Desktop manufacturing guide](oem-windows-deployment-and-imaging-walkthrough.md) | [System builder deployment guide](system-builder-deployment-of-windows-10-for-desktop-editions.md)| [Manufacturing Windows Engineering Guide (WEG)](manufacturing-windows-engineering-guide.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Deployment options</strong></p></td>
-<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [Hard Drives and Partitions](hard-drives-and-partitions.md) | [VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md)| [Secure Boot](secure-boot-overview.md) | [Device Drivers](device-drivers-and-deployment-overview.md) | [Language Packs](language-packs-and-windows-deployment.md) | [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md) | [More deployment options](windows-deployment-options.md)</p></td>
+<td align="left"><p>[UEFI Firmware](uefi-firmware.md) | [Hard Drives and Partitions](hard-drives-and-partitions.md) | [VHD (Native Boot)](deploy-windows-on-a-vhd--native-boot.md) | [Secure Boot](secure-boot-overview.md) | [Device Drivers](device-drivers-and-deployment-overview.md) | [Language Packs](language-packs-and-windows-deployment.md) | [Features On Demand V2 (Capabilities)](features-on-demand-v2--capabilities.md) | [More deployment options](windows-deployment-options.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Tools</strong></p></td>
-<td align="left"><p>[Deployment Image Servicing and Management (DISM)](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md) | [System Preparation (SysPrep)](sysprep--system-preparation--overview.md) | [Windows PE (WinPE)](winpe-intro.md) | [Windows Recovery Environment (Windows RE)](windows-recovery-environment--windows-re--technical-reference.md) | [Windows Setup](windows-setup-technical-reference.md) | [More command-line tools](windows-deployment-command-line-tools-reference.md)</p></td>
+<td align="left"><p>[Deployment Image Servicing and Management (DISM)](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md) | [SysPrep](sysprep--system-preparation--overview.md) | [Windows PE (WinPE)](winpe-intro.md) | [Windows Recovery Environment (Windows RE)](windows-recovery-environment--windows-re--technical-reference.md) | [Windows Setup](windows-setup-technical-reference.md) | [More command-line tools](windows-deployment-command-line-tools-reference.md)</p></td>
 </tr>
 </tbody>
 </table>

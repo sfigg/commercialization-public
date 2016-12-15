@@ -19,59 +19,29 @@ Use the manufacturing tools to deploy your Windows [customizations](https://msdn
 -   Install images onto new devices. Choose whether to use compression to balance disk space verses device performance. Use flashing tools to speed up the final manufacturing processes
 -   Capture your customizations into the recovery tools, helping your customers get back up to speed quickly.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">[OEM deployment of Windows 10 for desktop editions](desktop/oem-deployment-of-windows-10-for-desktop-editions.md)</td>
-<td align="left">This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting.
-</td>
-</tr>
-<tr class="even">
-<td align="left">[System builder deployment of Windows 10 for desktop editions](desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)</td>
-<td align="left">Learn how to deploy Windows 10 desktop, including online and offline customizations, and optional steps for specific scenarios. This guide is intended to help system builders with both 64-bit and 32-bit configurations.</td>
-</tr>
-<tr class="odd">
-<td align="left">[OEM Windows Desktop Deployment and Imaging Lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md)</td>
-<td align="left"><p>Building your first devices with Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)?</p>
-<p>Want to learn strategies to save time on the factory floor?</p>
-<p>This walkthrough shows two ways of creating custom images with languages, apps, and drivers, and modifying them when new designs become available.</p></td>
-</tr>
-<tr class="even">
-<td align="left">[What's new in Windows manufacturing](whats-new-in-windows-manufacturing.md)</td>
-<td align="left">Learn what new features are available. </td>
-</tr>
-<tr class="odd">
-<td align="left">[Desktop manufacturing](desktop/index.md)</td>
-<td align="left">Technical reference for Windows 10 for desktop editions</td>
-</tr>
-<tr class="even">
-<td align="left">[Mobile manufacturing](mobile/index.md)</td>
-<td align="left">Technical reference for Windows 10 Mobile</td>
-</tr>
-<tr class="odd">
-<td align="left">[IoT Core manufacturing](iot/index.md)</td>
-<td align="left">Technical reference for Windows 10 IoT Core</td>
-</tr>
-</tbody>
-</table>
+**[What's new in Windows manufacturing](whats-new-in-windows-manufacturing.md)**
 
- 
+### [Desktop manufacturing](desktop/index.md)
+* [System builder deployment of Windows 10, version 1511](desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)
 
- 
+   First-time deployment? Start here to learn how to deploy Windows 10 desktop with your customizations.
 
- 
+* [OEM Windows Desktop Deployment and Imaging Lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md)
 
+   Save time when designing and deploying images for a factory floor. Windows 10 desktop editions (Home, Pro, Enterprise, and Education), version 1607.
 
+* [OEM deployment of Windows 10, version 1511](desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
 
+   This guide is intended for OEMs, and applies to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education). IT professionals using this guide should have prior knowledge of Windows basic administration and troubleshooting.
 
+### [Mobile manufacturing](mobile/index.md)
 
+* [Mobile deployment and imaging](mobile-deployment-and-imaging.md)
+
+  Build new Windows 10 Mobile devices and customize them to meet your customers' needs.
+
+### [IoT Core manufacturing](iot/index.md)
+
+* [IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
+
+   Create Windows 10 IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.

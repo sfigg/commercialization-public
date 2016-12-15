@@ -32,7 +32,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[What's new in IoT Manufacturing](whats-new-in-manufacturing.md)</p></td>
+<td align="left"><p>[What's new in Manufacturing](..\whats-new-in-manufacturing.md#iot_core)</p></td>
 <td align="left"><p>Find out what we've been working on.</p></td>
 </tr>
 
