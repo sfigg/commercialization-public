@@ -11,7 +11,7 @@ title: 'Windows 8.1 Upgrade Scenarios for OEMs'
 
 The Windows 8.1 upgrade retains the majority of OEM customizations, including OEM branding, apps, help and support information, drivers, and OEM store listings. Some OEM solutions, including a custom Help and Support experience or custom recovery solution might not persist through the upgrade. To mitigate any potential problems for your customers, test the end-to-end upgrade experience.
 
-The Windows 8.1 can be installed from the Windows Store or from media.
+The Windows 8.1 upgrade can be installed from the Windows Store or from media.
 
 Upgrade options for Windows 8.1 include:
 
