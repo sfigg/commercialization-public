@@ -41,7 +41,7 @@ When you use a RAM-based overlay, make sure to leave enough available RAM to mee
 
 ### Disk-based overlay
 
-In a disk-based overlay, UWF uses a pre-allocated file created on the system volume to increase the available space for the overlay. The maximum size of the overlay is limited to the size of the disk file. The disk file does not dynamically grow in size, but must be pre-allocated on the volume. Disk-based overlays require a "Maximum Overlay Size" of 1024 KB.
+In a disk-based overlay, UWF uses a pre-allocated file created on the system volume to increase the available space for the overlay. The maximum size of the overlay is limited to the size of the disk file. The disk file does not dynamically grow in size, but must be pre-allocated on the volume. Disk-based overlays require a "Maximum Overlay Size" of 1024 MB.
 
 ## Overlay thresholds and notifications
 
