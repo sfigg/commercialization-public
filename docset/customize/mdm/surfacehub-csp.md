@@ -9,6 +9,8 @@ ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 
 # SurfaceHub CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
 
@@ -29,10 +31,9 @@ Node for setting device account information. A device account is a Microsoft Exc
 3.  Execute ValidateAndCommit to validate the specified username and password combination against Azure AD.
 4.  Get the ErrorContext in case something goes wrong during validation
 
-> **Note**  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
+> [!NOTE]  If the device cannot auto-discover the Exchange server and Session Initiation Protocol (SIP) address from this information, you should specify the ExchangeServer and SipAddress.
 
  
-
 Here's a SyncML example.
 
 ``` syntax
@@ -199,10 +200,16 @@ If there is an error calling ValidateAndCommit, there is additional context for 
 </tr>
 </tbody>
 </table>
-
  
-
 The data type is int. Supported operation is Get.
+
+<a href="" id="hardware"></a>**Hardware**  
+Added in the next major update of Windows 10. Node for hardware settings.
+
+<a href="" id="hardware-wakeonpresencedetectedenabled"></a>**Hardware/WakeOnPresenceDetectedEnabled**  
+Added in the next major update of Windows 10. True if wake on presence detected is enabled.
+
+The data type is Boolean. Supported operation is Get and Replace.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**  
 Node for maintenance schedule.
@@ -220,6 +227,14 @@ The data type is int. Supported operation is Get and Replace.
 <a href="" id="inboxapps"></a>**InBoxApps**  
 Node for the in-box app settings.
 
+<a href="" id="inboxapps-skypeforbusiness"></a>**InBoxApps/SkypeForBusiness**
+Added in the next major update of Windows 10. Node for the Skype for Business settings.
+
+<a href="" id="inboxapps-skypeforbusiness-domainname"></a>**SkypeForBusiness/DomainName**  
+Added in the next major update of Windows 10. Domain of the device account when you are using Active Directory. 
+
+The data type is char. Supported operation is Get and Replace.
+
 <a href="" id="inboxapps-welcome"></a>**InBoxApps/Welcome**  
 Node for the welcome screen.
 
@@ -232,6 +247,11 @@ The data type is bool. Supported operation is Get and Replace.
 Background image for the welcome screen. To set this, specify a https URL to a PNG file (only PNGs are supported for security reasons).
 
 The data type is string. Supported operation is Get and Replace.
+
+<a href="" id="inboxapps-welcome-engagementdetection"></a>**InBoxApps/Welcome/EngagementDetection**  
+Added in the next major update of Windows 10. 
+
+The data type is Boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-meetinginfooption"></a>**InBoxApps/Welcome/MeetingInfoOption**  
 Meeting information displayed on the welcome screen.
@@ -281,7 +301,6 @@ Wireless channel to use for Miracast operation. The supported channels are defin
 </table>
 
  
-
 The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won't be looking for).
 
 The data type is int. Supported operation is Get and Replace.
@@ -291,6 +310,19 @@ Node for the device properties.
 
 <a href="" id="properties-friendlyname"></a>**Properties/FriendlyName**  
 Friendly name of the device. This is the name that users see when they want to wirelessly project to the device.
+
+The data type is string. Supported operation is Get and Replace.
+
+<a href="" id="management"></a>**Management**  
+Added in the next major update of Windows 10. Node for managing the administrators group.
+
+<a href="" id="management-groupname"></a>**Management/GroupName**  
+Added in the next major update of Windows 10. The name of the domain admin group to add to the administrators group on the device.
+
+The data type is string. Supported operation is Get and Replace.
+
+<a href="" id="management-groupsid"></a>**Management/GroupSid**  
+Added in the next major update of Windows 10. The SID of the domain admin group to add to the administrators group on the device.
 
 The data type is string. Supported operation is Get and Replace.
 
