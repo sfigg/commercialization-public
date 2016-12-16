@@ -34,7 +34,7 @@ In this topic:
 
     In the following example, the location path of the selected drive is PCIROOT(0)\#PCI(0100)\#ATA(C00T00L00).
 
-    ``` syntax
+```
     DISKPART> detail disk
 
     HITACHI HTS722016K9SA00
@@ -57,7 +57,7 @@ In this topic:
       Volume 1     C                NTFS   Partition    149 GB  Healthy    System
 
     DISKPART>
-    ```
+```
 
 ## <span id="Selecting_Drives"></span><span id="selecting_drives"></span><span id="SELECTING_DRIVES"></span>Selecting Drives
 

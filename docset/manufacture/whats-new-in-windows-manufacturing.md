@@ -9,7 +9,7 @@ title: What's new in Windows manufacturing
 
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
-## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
+## <span id="Whats_new_in_desktop_manufacturing"></span><span id="desktop"></span> What's new in desktop manufacturing 
 
 **December 1, 2016**
 
@@ -135,7 +135,7 @@ The following changes are new for Windows 10, version 1607:
 
 
 
-## <span id="Whats_new_in_Mobile_Manufacturing"></span>What's new in mobile manufacturing
+## <span id="Whats_new_in_Mobile_Manufacturing"></span><span id="mobile"></span>What's new in mobile manufacturing
 
 **October 4, 2016**
 
@@ -145,7 +145,7 @@ The following changes are new for Windows 10, version 1607:
 
 
 
-## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
+## <span id="Whats_new_in_IoT_Core_Manufacturing"></span><span id="iot_core"></span>What's new in IoT Core manufacturing
 
 **November 4, 2016**
 
