@@ -822,6 +822,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
 <td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DeviceManageability DDF file](devicemanageability-ddf-file.md)<p>[ClientCertificateInstall DDF file](clientcertificateinstall-ddf-file.md)</p><p>[DevDetail DDF file](devdetail-ddf-file.md)</p><p>[DeviceStatus DDF file](devicestatus-ddf-file.md)</p><p>[DevInfo DDF file](DevInfo-ddf-file.md)</p><p>[]()</p></td>
+<td style="vertical-align:top"><p>Updated the DDF topics.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
+<td style="vertical-align:top"><p>Reporting/SecurityAuditing setting is not supported in Windows 10, version 1607 in the desktop editions.</p>
+</td></tr>
 </tbody>
 </table>
 
