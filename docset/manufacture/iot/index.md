@@ -32,7 +32,7 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>[What's new in Manufacturing](..\whats-new-in-manufacturing.md#iot_core)</p></td>
+<td align="left"><p>[What's new in IoT Core Manufacturing](..\whats-new-in-windows-manufacturing.md#iot_core)</p></td>
 <td align="left"><p>Find out what we've been working on.</p></td>
 </tr>
 
@@ -41,16 +41,16 @@ When developing your own board, see the [Minimum hardware requirements for IoT C
 <td align="left"><p>This guide walks you through creating IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core feature list](iot-core-feature-list.md)</p></td>
+<td align="left"><p>[IoT Core: Feature list](iot-core-feature-list.md)</p></td>
 <td align="left"><p>Here's the features you can add to IoT Core images.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows ADK IoT Core Add-ons contents](iot-core-adk-addons.md)</p></td>
-<td align="left"><p>The [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028) include tools to help you customize and create new images for your devices with the apps, board support packages (BSPs), drivers, and Windows features that you choose, and a sample structure you can use to quickly create new images.</p></td>
+<td align="left"><p>[IoT Core Add-ons: Contents](iot-core-adk-addons.md)</p></td>
+<td align="left"><p>List of tools and folders in the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IoT Core Add-ons command-line options](iot-core-adk-addons-command-line-options.md)</p></td>
-<td align="left"><p>These tools are part of the [IoT Core ADK Add-Ons](http://go.microsoft.com/fwlink/?LinkId=735028), in the \Tools folder. To learn more about these tools, see [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
+<td align="left"><p>[IoT Core Add-ons: command-line options](iot-core-adk-addons-command-line-options.md)</p></td>
+<td align="left"><p>Command-line option syntax for the [Windows ADK IoT Core Add-ons](iot-core-adk-addons.md).</p></td>
 </tr>
 </tbody>
 </table>
