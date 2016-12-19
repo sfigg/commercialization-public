@@ -95,7 +95,7 @@
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
 ## [Change history for customization docs](customize/change-history-for-customize.md)
 
-## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
+## [Customizations for desktop](customize/desktop/customizations-for-desktop-devices.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
 ### [Set dark theme](customize/desktop/set-dark-mode.md)
 

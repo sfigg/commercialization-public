@@ -36,12 +36,12 @@ Use the manufacturing tools to deploy Windows [customizations](https://msdn.micr
 
 ### [Mobile manufacturing](mobile/index.md)
 
-* [Mobile deployment and imaging](mobile-deployment-and-imaging.md)
+* [Mobile deployment and imaging](mobile/mobile-deployment-and-imaging.md)
 
   Build new Windows 10 Mobile devices and customize them to meet your customers' needs.
 
 ### [IoT Core manufacturing](iot/index.md)
 
-* [IoT Core manufacturing guides](iot-core-manufacturing-guide.md)
+* [IoT Core manufacturing guides](iot/iot-core-manufacturing-guide.md)
 
    Create Windows 10 IoT Core images that can be flashed to retail devices and maintained after they have been delivered to your customers.
