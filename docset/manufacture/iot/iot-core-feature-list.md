@@ -81,7 +81,7 @@ The following features must be included in all images, though they may be custom
 
 | Features                  | Description                                                          |
 |---------------------------|----------------------------------------------------------------------|
-| **IOT\_OEM\_CustomCmd**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons     |
+| **OEM\_CustomCmd**   | Adds scripts which support adding OEM Apps using the ADK Add-Ons     |
 
 
 ## <span id="Test_features_defined_by_Microsoft"></span><span id="test_features_defined_by_microsoft"></span><span id="TEST_FEATURES_DEFINED_BY_MICROSOFT"></span>Test features defined by Microsoft
