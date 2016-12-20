@@ -10,7 +10,7 @@ ms.assetid: 63D0980E-930F-4984-9760-3E57A142693E
 # MCSF settings not supported in Windows Provisioning
 
 
-The following tables list the runtime and image time settings that were available in Windows Phone 8.1 but are not supported in the Windows Provisioning framework. You must use MCSF and [Customization answer files](customization-answer-file.md) to configure the values for these settings.
+The following tables list the runtime and image time settings that are not supported in the Windows Provisioning framework. You must use MCSF and [Customization answer files](customization-answer-file.md) to configure the values for these settings.
 
 ## Runtime settings
 

@@ -21,7 +21,7 @@ author: beneluxboy
 
 <table>
 <tr>
-<th>Applies to</th>
+<th>Applies to   </th>
 <td>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x64</p>
 <p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) x86</p>

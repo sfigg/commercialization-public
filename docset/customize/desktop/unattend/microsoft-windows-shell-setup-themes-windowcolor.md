@@ -13,28 +13,21 @@ ms.sitesec: msdn
 # WindowColor
 
 
-`WindowColor` specifies the accent color used throughout Windows in places like start tiles, calendar fly-out, and Common Controls.
+'WindowColor' specifies the accent color used throughout Windows in places like start tiles, calendar fly-out, and Common Controls.
 
 ## Values
 
 
--   In Windows 10 and Windows Server 2016, predefined colors are as follows: `Automatic`, `Color 1`, `Color 2`, `Color 3`, `Color 4`, `Color 5`, `Color 6`, `Color 7`, `Color 8`, `Color 9`, `Color 10`, `Color 11`, `Color 12`, `Color 13`, `Color 14`, and `Color 15`.
+-   In the next major update to Windows 10, there are no predefined colors.`Color 1`, `Color 2`, `Color 3`, `Color 4`, `Color 5`, `Color 6`, `Color 7`, `Color 8`, `Color 9`, `Color 10`, `Color 11`, `Color 12`, `Color 13`, `Color 14`, and `Color 15` are deprecated and have effect if set. Due to the large number of surface that are impacted by the color choice, avoid using colors that are too dark or too bright when setting 'WindowColor'. 
+There are two options for setting 'WindowColor' in unattend.xml.
+1. Set 'WindowColor' to 'Automatic'.
+2. Use a custom hexidecimal color value. When using custom hexidecimal color values, the accent color is defined by the ARGB color scheme, where the value is 0x[Opacity][Red][Green][Blue], for example 0xffcc5029. 
+Colors that are set with a luminance less than .25 or greater than .75 are not allowed. Colors set to these values will be filtered to be within the .27-.75 range of luminosity. 
+The opacity (also known as alpha) value is ignored and has no bearing on the color. 00 is completely transparent, and FF is fully opaque. 
+To learn more about ARGB values, see Color.ToArgb Method ().
 
-    Use the color name to specify the color. If you choose `Automatic`, Windows chooses a color that’s harmonious with the palette of the desktop wallpaper.
-
-    Here are samples of the color choices mapped to the corresponding color number in the color name (for example `Color 1` is represented by the number 1 below).
-
-    ![window colors for windows 10](images/win10-windowcolor.png)
-
--   In Windows 8 and Windows Server 2012, `WindowColor` specifies the color of the window borders and taskbar.
-
-    Predefined colors are `Automatic`, `Color 1`, `Color 2`, `Color 3`, `Color 4`, `Color 5`, `Color 6`, `Color 7`, `Color 8`, `Color 9`, `Color 10`, `Color 11`, `Color 12`, `Color 13`, `Color 14`, and `Color 15`.
-
-    The default value is `Automatic`, meaning a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
-
-    Here are samples of the color choices mapped to the corresponding number.
-
-    ![predefined colors are mapped to specific numbers](unattend-windowcolor-presetcolorsnumbered.jpg)
+You can also use the value 'Automatic' select a color that’s harmonious with the color palette of the desktop wallpaper. 'Automatic' sets 'WindowColor' to a color that is harmonious with the color palette of the desktop wallpaper will be chosen.
+The default color is a shade of blue (0xff0078d7).
 
 
 ## Valid Configuration Passes
