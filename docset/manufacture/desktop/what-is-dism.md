@@ -30,7 +30,7 @@ For a complete technical description of WIM, see the [Windows Imaging File Forma
 DISM can be used to service the following operating systems:
 
 -   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 -   Windows 8.1
 -   Windows 8
 -   Windows Server 2012 R2
