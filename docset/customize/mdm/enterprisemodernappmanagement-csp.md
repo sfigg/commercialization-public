@@ -14,7 +14,7 @@ ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
 
-> **Note**  Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
+> [!Note]  Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 
 The following image shows the EnterpriseModernAppManagement configuration service provider in tree format.
 
@@ -23,7 +23,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 <a href="" id="device-or-user-context"></a>**Device or User context**  
 For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
-> **Note**  Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
+> [!Note]  Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
 
 <a href="" id="appmanagement"></a>**AppManagement**  
 Required. Used for inventory and app management (post-install).
@@ -129,7 +129,7 @@ Optional. Package family name (PFN) of the app. There is one for each PFN on the
 
 Supported operations are Get and Delete.
 
-> **Note**  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
+> [!Note]  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
 
 Here's an example for uninstalling an app:
@@ -156,7 +156,7 @@ Optional. Full name of the package installed.
 
 Supported operations are Get and Delete.
 
-> **Note**  XAP files use a product ID in place of PackageFullName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
+> [!Note]  XAP files use a product ID in place of PackageFullName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
 <a href="" id="----packagefamilyname-packagefullname-name"></a>**.../*PackageFamilyName*/*PackageFullName*/Name**  
@@ -177,7 +177,7 @@ Supported operation is Get.
 <a href="" id="----packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
 Required. Architecture of installed package. Value type is string.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 
@@ -186,7 +186,7 @@ Supported operation is Get.
 <a href="" id="----packagefamilyname-packagefullname-installlocation"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallLocation**  
 Required. Install location of the app on the device. Value type is string.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 
@@ -195,7 +195,7 @@ Supported operation is Get.
 <a href="" id="----packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
 Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 Supported operation is Get.
@@ -213,7 +213,7 @@ Supported operation is Get.
 <a href="" id="----packagefamilyname-packagefullname-resourceid"></a>**.../*PackageFamilyName*/*PackageFullName*/ResourceID**  
 Required. Resource ID of the app. This is null for the main app, ~ for a bundle, and contains resource information for resources packages. Value type is string.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 Supported operation is Get.
@@ -227,7 +227,7 @@ Required. Provides information about the status of the package. Value type is in
 -   Tampered (4) - The package payload was tampered intentionally.
 -   Disabled (8) - The package is not available for use. It can still be serviced.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 
@@ -236,7 +236,7 @@ Supported operation is Get.
 <a href="" id="----packagefamilyname-packagefullname-requiresreinstall"></a>**.../*PackageFamilyName*/*PackageFullName*/RequiresReinstall**  
 Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur of the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
 
-> **Note**  Not applicable to XAP files.
+> [!Note]  Not applicable to XAP files.
 
  
 Supported operation is Get.
@@ -306,7 +306,7 @@ Optional node. Package family name (PFN) of the app. There is one for each PFN o
 
 Supported operations are Get and Add.
 
-> **Note**  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
+> [!Note]  XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
 <a href="" id="appinstallation-packagefamilyname-storeinstall"></a>**AppInstallation/*PackageFamilyName*/StoreInstall**  
@@ -324,7 +324,7 @@ Required. Last error relating to the app installation.
 
 Supported operation is Get.
 
-> **Note**  This element is not present after the app is installed.
+> [!Note]  This element is not present after the app is installed.
 
  
 
@@ -333,7 +333,7 @@ Required. Description of last error relating to the app installation.
 
 Supported operation is Get.
 
-> **Note**  This element is not present after the app is installed.
+> [!Note]  This element is not present after the app is installed.
 
  
 <a href="" id="appinstallation-packagefamilyname-status"></a>**AppInstallation/*PackageFamilyName*/Status**  
@@ -346,7 +346,7 @@ Required. Status of app installation. The following values are returned:
 
 Supported operation is Get.
 
-> **Note**  This element is not present after the app is installed.
+> [!Note]  This element is not present after the app is installed.
 
  
 <a href="" id="appinstallation-packagefamilyname-progessstatus"></a>**AppInstallation/*PackageFamilyName*/ProgessStatus**  
@@ -354,7 +354,7 @@ Required. An integer the indicates the progress of the app installation. For htt
 
 Supported operation is Get.
 
-> **Note**  This element is not present after the app is installed.
+> [!Note]  This element is not present after the app is installed.
 
  
 <a href="" id="applicenses"></a>**AppLicenses**  
