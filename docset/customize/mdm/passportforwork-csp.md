@@ -9,13 +9,11 @@ ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
 
 # PassportForWork CSP
 
-
 The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
-> **Important**  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
+> [!IMPORTANT]  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
 
  
-
 ### User configuration diagram
 
 The following diagram shows the PassportForWork configuration service provider in tree format.
@@ -32,7 +30,7 @@ The following diagram shows the PassportForWork configuration service provider i
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-The Globally Unique Identifier (GUID) without curly braces ( { , } ).
+A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management.
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.
@@ -64,25 +62,23 @@ Supported operations are Add, Get, Delete, and Replace.
 Node for defining PIN settings.
 
 <a href="" id="tenantid-policies-pincomplexity-minimumpinlength"></a>***TenantId*/Policies/PINComplexity/MinimumPINLength**  
-Integer value that sets the minimum number of characters required for the work PIN. Default value is 4. The lowest number you can configure for this policy setting is 4. The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
+Integer value that sets the minimum number of characters required for the PIN. Default value is 4. The lowest number you can configure for this policy setting is 4. The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
 
-If you configure this policy setting, the work PIN length must be greater than or equal to this number. If you disable or do not configure this policy setting, the work PIN length must be greater than or equal to 4.
+If you configure this policy setting, the PIN length must be greater than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be greater than or equal to 4.
 
-> **Note**  If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]  If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
-
 Value type is int. Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-pincomplexity-maximumpinlength"></a>***TenantId*/Policies/PINComplexity/MaximumPINLength**  
-Integer value that sets the maximum number of characters allowed for the work PIN. Default value is 127. The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
+Integer value that sets the maximum number of characters allowed for the PIN. Default value is 127. The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
 
-If you configure this policy setting, the work PIN length must be less than or equal to this number. If you disable or do not configure this policy setting, the work PIN length must be less than or equal to 127.
+If you configure this policy setting, the PIN length must be less than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be less than or equal to 127.
 
-> **Note**  If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> [!NOTE]  If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
 
  
-
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-pincomplexity-uppercaseletters"></a>***TenantId*/Policies/PINComplexity/UppercaseLetters**  
