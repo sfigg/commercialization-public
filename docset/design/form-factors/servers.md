@@ -14,8 +14,8 @@ The server form factor comes in a wide range of styles including pedestal, rackm
 
 Server form factors usually include high performance/capacity components. For example,
 
--   Larger Power Supply
--   Larger Fan(s)
+-   Larger power supply
+-   Larger fan(s)
 -   Multiple processor support
 -   Multiple storage bays
 
@@ -23,13 +23,3 @@ For detailed information on server hardware requirements, see
 
 -   [Minimum Hardware Requirements Overview](../minimum/minimum-hardware-requirements-overview.md)
 -   [Windows Hardware Compatibility Program Requirements (System.Server)](../compatibility/systems.md)
-
- 
-
- 
-
-
-
-
-
-
