@@ -194,464 +194,698 @@ Table 3 summarizes the hardware requirements for all Windows 10 operating system
 
 **Table 3:** Minimum hardware requirements summary
 
-Components
-Operating system
-Windows 10 Mobile
-Windows 10 for desktop editions
-Windows Server 2016
-IoT Core
-**Processor**
-One of the SoCs listed in section 2.1
-
-1 GHz or faster processor or SoC
-
-For details, see 3.1
-
-1.4 GHz or faster 64-bit processor or SoC
-
-For details, see 4.1
-
-400 MHz or faster x86, x64 processor or ARM SoC
-
-For details, see 5.1
-
-**RAM**
-1 GB or higher
-
-For details, see 2.2
-
-1 GB for 32-bit OS
-
-2 GB for 64-bit OS
-
-For details, see 3.2
-
-512 MB
-
-For details, see 4.3
-
-256 MB available to the OS for devices without display support
-
-512 MB available to the OS for devices with display support, depending on resolution
-
-For details, see 5.2
-
-**Storage**
-8 GB flash storage
-
-For details, see 2.3
-
-16 GB for 32-bit OS
-
-20 GB for 64-bit OS
-
-For details, see 3.3
-
-60 GB
-
-For details, see 4.4
-
-2 GB
-
-For details, see 5.3
-
-**Security**
-**Trusted Platform Module (TPM)**
-Required
-
-For details, see 2.8
-
-Required
-
-For details, see 3.7
-
-Optional
-
-For details, see 4.7
-
-Optional
-
-For details, see 5.4
-
-**UEFI Secure Boot**
-Required
-
-Required
-
-Optional
-
-Optional
-
-**Display**
-**Screen**
-Less than 9-inches
-
-7-inches or greater required for tablets, 2-in-1s, laptops, and All-in-one
-
-Optional for desktop PCs
-
-Optional
-
-Optional
-
-**Resolution**
-WVGA, FWVGA, WXGA, qHD, 720p (HD), or 1080p (FHD), WQHD
-
-For details, see 2.4
-
-SVGA (800 x 600) or higher
-
-For details, see 3.4
-
-XGA (1024 x 768) or higher
-
-For details, see 4.5
-
-Design dependent
-
-**Bit depth**
-32 bits of color per pixel
-
-32 bits of color per pixel
-
-32 bits of color per pixel
-
-Design dependent
-
-**Touch, touch pad, and active pen**
-For details, see 6.1
-
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Camera**
-For details, see 6.2.1
-
-**Rear-facing camera**
-Required for phones that run Windows 10 Mobile
-
-Optional for other devices that run Windows 10 Mobile and for any devices that run Windows 10 Mobile Enterprise
-
-Optional
-
-Optional
-
-Optional
-
-**Forward-facing camera**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Audio**
-For details, see 6.2.2
-
-**Audio codec**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**Primary microphone**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**Secondary microphone**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Dynamic noise suppression**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Loudspeaker**
-Required for phones that run Windows 10 Mobile
-
-Optional for other devices that run Windows 10 Mobile and for any devices that run Windows 10 Mobile Enterprise
-
-Optional
-
-Optional
-
-Optional
-
-**Earpiece**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**Wireless**
-For details, see 6.3
-
-**2G / 2.5G / 3G (UMTS/EvDO) / 4G (HSPA) cellular radio**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional (data only; no voice support)
-
-**LTE cellular radio**
-Optional
-
-Optional
-
-Optional
-
-Optional (data only; no voice support)
-
-**Bluetooth**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Wi-Fi**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**A-GNSS**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**FM radio**
-Optional
-
-Not supported
-
-Not supported
-
-Optional
-
-**NFC**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Networking**
-Wi-Fi and cellular is required for phones
-
-At least one option for network connectivity is required for other devices (such as Wi-Fi)
-
-At least one option for network connectivity is required (such as Wi-Fi or an Ethernet adapter)
-
-The following are required:
-
--   A Gigabit Ethernet adapter
--   A network adapter that supports PXE
-
-Optional
-
-**Sensors**
-For details, see 6.4
-
-**Accelerometer**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Magnetometer**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Ambient light sensor**
-Optional
-
-For details, see 2.5.1
-
-Optional
-
-Optional
-
-Optional
-
-**Proximity sensor**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Gyroscope**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Notification**
-For details, see 6.5
-
-**Vibration mechanism**
-Required for phones
-
-Optional
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**NLED**
-Optional
-
-Optional
-
-Optional
-
-**Hardware buttons**
-**Power**
-See 2.6 for the required, optional, and not supported buttons
-
-See 6.6 for button behavior requirements
-
-See 3.6 for the required, optional, and not supported buttons
-
-See 6.6 for button behavior requirements
-
-Power button is required, all other buttons are not supported
-
-See 6.6 for button behavior requirements
-
-All buttons are optional
-
-See 6.6 for button behavior requirements
-
-**Volume Up / Volume Down**
-**Start**
-**Back / Search**
-**Camera**
-**Rotation lock**
-**Connectors**
-For details, see 6.7
-
-**USB**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Headphone / headset jack**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
-
-**Micro SD card slot**
-Optional
-
-Optional
-
-Optional
-
-Optional
-
-**Video output**
-Optional
-
-At least one video output port is required for desktop PCs
-
-Optional for other devices
-
-Optional
-
-Optional
-
-**SIM slot**
-Required for phones
-
-Optional for other devices
-
-Optional
-
-Optional
-
-Optional
+<table>
+<tr>
+<th rowspan="2" colspan="2">Components</th>
+<th colspan="4">  Operating system</th>
+</tr>
+<tr>
+<th>Windows 10 Mobile</th>
+<th>Windows 10 for desktop editions</th>
+<th>Windows Server 2016</th>
+<th>IoT Core</th>
+</tr>
+<tr>
+<td colspan="2"><b>Processor</b></td>
+<td>
+<p>One of the SoCs listed in section 2.1</p>
+</td>
+<td>
+<p>1 GHz or faster processor or SoC
+</p>
+<p>For details, see 3.1</p>
+</td>
+<td>
+<p>1.4 GHz or faster 64-bit processor or SoC</p>
+<p>For details, see 4.1</p>
+</td>
+<td>
+<p>400 MHz or faster x86, x64 processor or ARM SoC</p>
+<p>For details, see 5.1</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><b>RAM</b></td>
+<td>
+<p>1 GB or higher </p>
+<p>For details, see 2.2
+</p>
+</td>
+<td>
+<p>1 GB for 32-bit OS</p>
+<p>2 GB for 64-bit OS</p>
+<p>For details, see 3.2
+</p>
+</td>
+<td>
+<p>512 MB</p>
+<p>For details, see 4.3
+</p>
+</td>
+<td>
+<p>256 MB available to the OS for devices without display support</p>
+<p>512 MB available to the OS for devices with display support, depending on resolution</p>
+<p>For details, see 5.2</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><b>Storage</b></td>
+<td>
+<p>8 GB flash storage</p>
+<p>For details, see 2.3</p>
+</td>
+<td>
+<p>16 GB for 32-bit OS</p>
+<p>20 GB for 64-bit OS</p>
+<p>For details, see 3.3
+</p>
+</td>
+<td>
+<p>60 GB</p>
+<p>For details, see 4.4
+</p>
+</td>
+<td>
+<p>2 GB</p>
+<p>For details, see 5.3
+</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"><b>Security</b></td>
+<td><b>Trusted Platform Module (TPM)</b></td>
+<td>
+<p>Required</p>
+<p>For details, see 2.8</p>
+</td>
+<td>
+<p>Required</p>
+<p>For details, see 3.7
+</p>
+</td>
+<td>
+<p>Optional</p>
+<p>For details, see 4.7
+</p>
+</td>
+<td>
+<p>Optional</p>
+<p>For details, see 5.4
+</p>
+</td>
+</tr>
+<tr>
+<td><b>UEFI Secure Boot</b></td>
+<td>
+<p>Required</p>
+</td>
+<td>
+<p>Required</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3"><b>Display</b></td>
+<td><b>Screen</b></td>
+<td>
+<p>Less than 9-inches</p>
+</td>
+<td>
+<p>7-inches or greater required for tablets, 2-in-1s, laptops, and All-in-one
+</p>
+<p>Optional for desktop PCs
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Resolution</b></td>
+<td>
+<p>WVGA, FWVGA, WXGA, qHD, 720p (HD), or 1080p (FHD), WQHD</p>
+<p>For details, see 2.4
+</p>
+</td>
+<td>
+<p>SVGA (800 x 600) or higher</p>
+<p>For details, see 3.4
+
+</p>
+</td>
+<td>
+<p>XGA (1024 x 768) or higher</p>
+<p>For details, see 4.5
+</p>
+</td>
+<td>
+<p>Design dependent</p>
+</td>
+</tr>
+<tr>
+<td><b>Bit depth</b></td>
+<td>
+<p>32 bits of color per pixel</p>
+</td>
+<td>
+<p>32 bits of color per pixel</p>
+</td>
+<td>
+<p>32 bits of color per pixel</p>
+</td>
+<td>
+<p>Design dependent</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><b>Touch, touch pad, and active pen</b><p>For details, see 6.1
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"><b>Camera</b><p>For details, see 6.2.1</p>
+</td>
+<td><b>Rear-facing camera</b></td>
+<td>
+<p>Required for phones that run Windows 10 Mobile</p>
+<p>Optional for other devices that run Windows 10 Mobile and for any devices that run Windows 10 Mobile Enterprise</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Forward-facing camera</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="6"><b>Audio</b><p>For details, see 6.2.2
+</p>
+</td>
+<td><b>Audio codec</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Primary microphone</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Secondary microphone</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Dynamic noise suppression</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Loudspeaker</b></td>
+<td>
+<p>Required for phones that run Windows 10 Mobile</p>
+<p>Optional for other devices that run Windows 10 Mobile and for any devices that run Windows 10 Mobile Enterprise</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Earpiece</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="7"><b>Wireless</b><p>For details, see 6.3
+</p>
+</td>
+<td><b>2G / 2.5G / 3G (UMTS/EvDO) / 4G (HSPA) cellular radio</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional (data only; no voice support)</p>
+</td>
+</tr>
+<tr>
+<td><b>LTE cellular radio</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional (data only; no voice support)</p>
+</td>
+</tr>
+<tr>
+<td><b>Bluetooth</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Wi-Fi</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>A-GNSS</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>FM radio</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Not supported</p>
+</td>
+<td>
+<p>Not supported</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>NFC</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><b>Networking</b></td>
+<td>
+<p>Wi-Fi and cellular is required for phones
+</p>
+<p>At least one option for network connectivity is required for other devices (such as Wi-Fi)</p>
+</td>
+<td>
+<p>At least one option for network connectivity is required (such as Wi-Fi or an Ethernet adapter)</p>
+</td>
+<td>
+<p>The following are required:<ul>
+<li>A Gigabit Ethernet adapter</li>
+<li>A network adapter that supports PXE</li>
+</ul>
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="5"><b>Sensors</b><p>For details, see 6.4 
+</p>
+</td>
+<td><b>Accelerometer</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Magnetometer</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Ambient light sensor</b></td>
+<td>
+<p>Optional</p>
+<p>For details, see 2.5.1</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Proximity sensor</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Gyroscope</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"><b>Notification</b><p>For details, see 6.5
+</p>
+</td>
+<td><b>Vibration mechanism</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>NLED</b></td>
+<td></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td rowspan="6"><b>Hardware buttons</b></td>
+<td><b>Power</b></td>
+<td rowspan="6">
+<p>See 2.6 for the required, optional, and not supported buttons</p>
+<p>See 6.6 for button behavior requirements
+</p>
+</td>
+<td rowspan="6">
+<p>See 3.6 for the required, optional, and not supported buttons</p>
+<p>See 6.6 for button behavior requirements</p>
+</td>
+<td rowspan="6">
+<p>Power button is required, all other buttons are not supported</p>
+<p>See 6.6 for button behavior requirements</p>
+</td>
+<td rowspan="6">
+<p>All buttons are optional</p>
+<p>See 6.6 for button behavior requirements
+</p>
+</td>
+</tr>
+<tr>
+<td><b>Volume Up / Volume Down</b></td>
+</tr>
+<tr>
+<td><b>Start</b></td>
+</tr>
+<tr>
+<td><b>Back / Search</b></td>
+</tr>
+<tr>
+<td><b>Camera</b></td>
+</tr>
+<tr>
+<td><b>Rotation lock</b></td>
+</tr>
+<tr>
+<td rowspan="5"><b>Connectors</b><p>For details, see 6.7
+</p>
+</td>
+<td><b>USB</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Headphone / headset jack</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Micro SD card slot</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>Video output</b></td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>At least one video output port is required for desktop PCs
+</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+<tr>
+<td><b>SIM slot</b></td>
+<td>
+<p>Required for phones</p>
+<p>Optional for other devices
+</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+<td>
+<p>Optional</p>
+</td>
+</tr>
+</table>
 
  
 
@@ -1033,7 +1267,7 @@ Devices that run Windows 10 Mobile must include a Trusted Platform Module (TPM)
 -   It must ship with SHA-256 PCR banks and implement PCRs 0 through 23 for SHA-256. Note it is acceptable to ship TPMs with a single switchable PCR bank that can be used for both SHA-1 and SHA-256 measurements.
 -   It must support TPM2\_HMAC command.
 
-For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet.
+For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet.
 
 ## Section 3.0 - Minimum hardware requirements for Windows 10 for desktop editions
 
@@ -1131,7 +1365,7 @@ The following requirements must be met:
 
 A UEFI firmware option to turn off the TPM is not required. OEM systems for special purpose commercial systems, custom order, and customer systems with a custom image are not required to ship with a TPM support enabled.
 
-For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet and for TPM 1.2 and 2.0 version comparisons, please reference this article [here](https://technet.microsoft.com/library/mt604232.aspx).
+For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet, and for TPM 1.2 and 2.0 version comparisons, see [TPM recommendations](https://technet.microsoft.com/library/mt604232.aspx), also on TechNet.
 
 ## Section 4.0 - Minimum hardware requirements for Windows Server 2016
 
@@ -1195,7 +1429,7 @@ For devices or computers that run Windows Server 2016, a Trusted Platform Modul
 
 A UEFI firmware option to turn off the TPM is not required.
 
-For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet.
+For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet.
 
 ## <a href="" id="iotcore"></a>Section 5.0 - Minimum hardware requirements for IoT Core
 
@@ -1240,18 +1474,18 @@ The following SoCs are supported in-box:
 <li>BCM2836</li>
 </ul></td>
 <td><ul>
-<li>[Intel® Joule™](http://www.intel.com/joule)</li>
-<li>[Intel® Atom™ processor E3900 series (Apollo Lake)](http://ark.intel.com/products/codename/80644/)</li>
-<li>[Intel® Celeron® processor N3350 (Apollo Lake)](http://ark.intel.com/products/codename/80644/)</li>
-<li>[Intel® Pentium® Processor N4200 platform (Apollo Lake)](http://ark.intel.com/products/codename/80644/)</li>
-<li>[Intel® Atom™ processor E3800 Product Family (Bay Trail-I)](http://ark.intel.com/products/codename/55844/#@Embedded)</li>
-<li>[Intel® Celeron® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/)</li>
-<li>[Intel® Pentium® Processor N and J Series (Bay Trail-M/D)](http://ark.intel.com/products/codename/55844/)</li>
+<li><a href="http://www.intel.com/joule">Intel® Joule™</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Atom™ processor E3900 series (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Celeron® processor N3350 (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/80644/">Intel® Pentium® Processor N4200 platform (Apollo Lake)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/#@Embedded">Intel® Atom™ processor E3800 Product Family (Bay Trail-I)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/">Intel® Celeron® Processor N and J Series (Bay Trail-M/D)</a></li>
+<li><a href="http://ark.intel.com/products/codename/55844/">Intel® Pentium® Processor N and J Series (Bay Trail-M/D)</a></li>
 </ul></td>
 <td><ul>
-<li>[Qualcomm® Snapdragon™ 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212)</li>
-<li>[Qualcomm® Snapdragon™ 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410)</li>
-<li>[Qualcomm® Snapdragon™ 617 (APQ8052)](https://www.qualcomm.com/products/snapdragon/processors/617)</li>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/212">Qualcomm® Snapdragon™ 212 (APQ8009)</a></li>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/410">Qualcomm® Snapdragon™ 410 (APQ8016)</a></li>
+<li><a href="https://www.qualcomm.com/products/snapdragon/processors/617">Qualcomm® Snapdragon™ 617 (APQ8052)</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -1269,8 +1503,6 @@ Devices that run IoT Core must meet the RAM requirements shown in Table 14.
 |-------------------------|----------------------------------|
 | Without display support | &gt;= 256 MB available to the OS |
 | With display support    | &gt;= 512 MB available to the OS |
-
- 
 
 <sup>\*</sup>Available RAM needed after any carve-out by SoC vendor/OEM components. Additional RAM may be required based on the design and functionality of the device and display resolution.
 
@@ -1291,7 +1523,7 @@ TPM 2.0 must meet the following requirements:
 -   An EK certificate must either be pre-provisioned to the TPM by the hardware vendor or be capable of being retrieved by the device during the first boot experience.
 -   It must ship with a SHA-256 PCR bank and implement PCRs 0 through 23 for SHA-256. Note it is acceptable to ship TPMs with a single switchable PCR bank that can be used for both SHA-1 and SHA-256 measurements.
 
-For detailed TPM information, see [Trusted Platform Module](http://go.microsoft.com/fwlink/?LinkId=624832) topic on TechNet.
+For detailed TPM information, see [Trusted Platform Module Technology Overview](http://go.microsoft.com/fwlink/?LinkId=624832) on TechNet.
 
 ## Section 6.0 - Shared minimum hardware requirements for components
 
@@ -1471,8 +1703,6 @@ If audio is implemented on a device with cellular support, the device must route
 
 **Note**  **Table 19:** Audio output routing requirements for devices with cellular support
 
- 
-
 | Destination                  | Cellular RX source | Mix of Cellular RX and Cellular TX source¹⁵ |
 |------------------------------|--------------------|---------------------------------------------|
 | Handset Speaker              | Required           | N/A                                         |
@@ -1505,8 +1735,6 @@ If audio is implemented on a device with FM stereo support, the device must rout
  
 
 **Note**  **Table 21:** Audio output routing requirements for devices with FM stereo
-
- 
 
 | Destination              | Source – FM stereo |
 |--------------------------|--------------------|
@@ -1584,27 +1812,48 @@ If FM radio is implemented, the mobile device must be able to mix audio generate
 
 **Table 22:** FM radio technical requirements
 
-Required tuning features
-Band support
-Worldwide (76 MHz to 108 MHz) with 50 kHz, 100 kHz and 200 kHz spacing
-Programmable channel spacing
-50 kHz, 100 kHz, or 200 kHz spacing
-Seek tuning
-Required
-FM chip initialization or power-on time
-≤2 sec
-Sweep time (Total time taken to an automatic search to sweep from 88 to 108 MHz or 76 to 90 MHz—or reverse direction—assuming no channels found)
-≤16 sec (with 50 kHz spacing)
+<table>
+<tr>
+<th colspan="2">Required tuning features</th>
+</tr>
+<tr>
+<td>Band support</td>
+<td>Worldwide (76 MHz to 108 MHz) with 50 kHz, 100 kHz and 200 kHz spacing</td>
+</tr>
+<tr>
+<td>Programmable channel spacing</td>
+<td>50 kHz, 100 kHz, or 200 kHz spacing</td>
+</tr>
+<tr>
+<td>Seek tuning</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>FM chip initialization or power-on time</td>
+<td>≤2 sec </td>
+</tr>
+<tr>
+<td>Sweep time (Total time taken to an automatic search to sweep from 88 to 108 MHz or 76 to 90 MHz—or reverse direction—assuming no channels found)</td>
+<td>
+<p>≤16 sec (with 50 kHz spacing)</p>
+<p>≤8 sec (with 100 kHz spacing)</p>
+<p>≤4 sec (with 200 kHz spacing)
+</p>
+</td>
+</tr>
+<tr>
+<th colspan="2">Required additional features</th>
+</tr>
+<tr>
+<td>FM antenna</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>RDS/RBDS text display</td>
+<td>Hardware must supply “error-corrected information words” as specified in Section 5 of the RDS specification: IEC 62106 Edition 2.0, 2009-07</td>
+</tr>
+</table>
 
-≤8 sec (with 100 kHz spacing)
-
-≤4 sec (with 200 kHz spacing)
-
-Required additional features
-FM antenna
-Required
-RDS/RBDS text display
-Hardware must supply “error-corrected information words” as specified in Section 5 of the RDS specification: IEC 62106 Edition 2.0, 2009-07
  
 
 ### 6.3.6 Near Field Communication (NFC)
