@@ -84,9 +84,9 @@ The following table provides a summary of the Bluetooth features in the Windows�
 <table>
 <thead valign="bottom">
 <tr>
-<th>Feature</td>
-<th>Windows 10 for desktop editions</td>
-<th>Windows 10 Mobile</td>
+<th>Feature</th>
+<th>Windows 10 for desktop editions</th>
+<th>Windows 10 Mobile</th>
 </tr>
 </thead>
 <tbody valign="top">
