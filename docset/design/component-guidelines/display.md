@@ -259,7 +259,7 @@ For optimal damage resistance:
 
      
 
-    | \#  | Feature               | Measure  | Guidance         |
+    | *#* | Feature               | Measure  | Guidance         |
     |-----|-----------------------|----------|------------------|
     | 1   | Outer corner          | Radius   | &gt; 1.0 mm      |
     | 2   | Slot radius           | Radius   | &gt; 1.5 mm      |

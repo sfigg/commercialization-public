@@ -82,12 +82,14 @@ Additional features that were added after Windows 10, version 1507 are marked a
 The following table provides a summary of the Bluetooth features in the Windows 10 for desktop editions and Windows 10 Mobile editions.
 
 <table>
-<tbody valign="top">
-<tr class="odd">
-<td>Feature</td>
-<td>Windows 10 for desktop editions</td>
-<td>Windows 10 Mobile</td>
+<thead valign="bottom">
+<tr>
+<th>Feature</td>
+<th>Windows 10 for desktop editions</td>
+<th>Windows 10 Mobile</td>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="even">
 <td>Advertisement API</td>
 <td>Yes</td>
