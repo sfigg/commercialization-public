@@ -1,12 +1,9 @@
 ---
-title: OEM Windows Desktop Deployment and Imaging Lab
 author: KPacquer
-ms.author: kenpacq
-ms.topic: get-started-article
-ms.prod: windows-client-
-description: OEM Windows Desktop Deployment and Imaging Lab
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+Description: OEM Windows Desktop Deployment and Imaging Lab
 ms.assetid: 04dace4d-9df9-4ead-b23d-f168832c9c04
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: OEM Windows Desktop Deployment and Imaging Lab
 ---
 
 # OEM Windows Desktop Deployment and Imaging Lab
@@ -18,11 +15,11 @@ Let's get started!
 **Preparation**
 
 *  [Planning: Customizing reference images for different audiences](planning-create-different-product-designs-for-different-market-segments-sxs.md)
+
+**Deploy images**
+
 *  [Get the tools needed to customize Windows](get-the-tools-needed-to-customize-windows-sxs.md)
 *  [Get the sample scripts](windows-deployment-sample-scripts-sxs.md)
-
-**Deploy a Windows image**
-
 *  [Lab 1: Install Windows PE](install-windows-pe-sxs.md)
 *  [Lab 2: Deploy Windows using a script](deploy-windows-with-a-script-sxs.md)
 
