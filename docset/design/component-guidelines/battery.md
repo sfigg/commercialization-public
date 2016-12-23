@@ -16,10 +16,6 @@ For optimal battery performance review the following recommendations.
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Topic</th>
