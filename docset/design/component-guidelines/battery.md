@@ -16,17 +16,13 @@ For optimal battery performance review the following recommendations.
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Battery and charging](battery-and-charging.md)</p></td>
 <td><p>This topic covers recommendations for battery and charging in Windows 10. All devices running Windows have a consistent battery charging experience, regardless of form factor, instruction set, or platform architecture. As a result, users have a consistent and quality experience with battery charging.</p></td>

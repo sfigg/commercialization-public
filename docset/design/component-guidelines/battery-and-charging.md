@@ -205,11 +205,6 @@ The \_PSR method must only report online (AC power) when the system is connected
 The ACPI firmware must implement the ACPI \_BIX method for each battery that provides static information about the battery, including design capacity, cycle count, and serial number. The table below expands on the definitions of the fields described in the ACPI specification and enumerates Windows-specific requirements for this information.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -217,7 +212,7 @@ The ACPI firmware must implement the ACPI \_BIX method for each battery that pro
 <th>Windows-specific requirements</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Revision</td>
 <td>Indicates _BIX revision</td>
@@ -330,11 +325,6 @@ The ACPI firmware must implement the ACPI \_BIX method for each battery that pro
 The ACPI firmware must implement the ACPI \_BST method for each battery which provides real-time status information about the battery, including remaining capacity and current rate of drain. The table below expands on the definitions of the fields described in the ACPI specification and enumerates the Windows-specific requirements for this information.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -342,7 +332,7 @@ The ACPI firmware must implement the ACPI \_BST method for each battery which pr
 <th>Windows-specific requirements</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Battery State</td>
 <td>Indicates if the battery is currently being charged, is discharging or is in a critical state.</td>
@@ -383,11 +373,6 @@ Windows supports the following \_DSM methods for control-method battery devices.
 ### Thermal charge rate direction
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -395,7 +380,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>UUID</td>
 <td>4c2067e3-887d-475c-9720-4af1d3ed602e</td>
@@ -431,11 +416,6 @@ Windows supports the following \_DSM methods for control-method battery devices.
 ### User serviceable battery
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -443,7 +423,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>UUID</td>
 <td>4c2067e3-887d-475c-9720-4af1d3ed602e</td>
@@ -478,11 +458,6 @@ Windows supports the following \_DSM methods for control-method battery devices.
 ### Charging watchdog required
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -490,7 +465,7 @@ Windows supports the following \_DSM methods for control-method battery devices.
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>UUID</td>
 <td>4c2067e3-887d-475c-9720-4af1d3ed602e</td>
@@ -514,11 +489,11 @@ Windows supports the following \_DSM methods for control-method battery devices.
 <tr class="odd">
 <td>Return Value(s)</td>
 <td>Package containing a single integer.</td>
-<td><p>0x0 if the battery does not require watchdog servicing.</p>
+<td>0x0 if the battery does not require watchdog servicing.
 <p>Values inclusive of 0x0000001e and 0x12C indicate the maximum poling interval in seconds.</p>
 <p>All other values are ignored and are treated as 0x0 and watchdog resetting is not required.</p>
 <p>If a valid watchdog interval is specified, Windows will execute the _BST method at an interval no longer than the watchdog value specified whenever the value of BatteryState in the _BST method is set to charging.</p>
-<p>Dynamic update of this value is not supported</p></td>
+<p>Dynamic update of this value is not supported.</p></td>
 </tr>
 </tbody>
 </table>
@@ -536,7 +511,7 @@ Microsoft recognizes the value in providing the option to support USB charging o
 Beginning with Windows 8, a mobile device could be powered and/or charged through USB provided that the battery charging requirements outlined below are met. In addition, there are a number of USB-specific requirements that must be met to ensure a quality user experience.
 
 1.  USB power/charge must be implemented entirely in the platform firmware. Support must not require an operating system, driver, or application.
-2.  The device MUST NOT enumerate when connected to another device. As a result, the device will not charge when connected to a standard PC USB port as these ports are limited to 500mA by default . The only exceptions are when this port is used for debugging and for initial factory firmware programming.
+2.  The device MUST NOT enumerate when connected to another device. As a result, the device will not charge when connected to a standard PC USB port as these ports are limited to 500mA by default. The only exceptions are when this port is used for debugging and for initial factory firmware programming.
 3.  The device supports charging from a dedicated USB charging port. The device must charge when connected to a charger that is compliant with the [USB Battery Charging specification version 1.2](http://www.usb.org/developers/docs/devclass_docs/). The device should not draw more than 1.5A per charging standards when connected to a standard USB charger. The OEM may opt to support higher current levels provided the following conditions are met:
 
     -   The device automatically detects the charger type and charges at the appropriate rate for the specific charger type.

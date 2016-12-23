@@ -33,11 +33,7 @@ This topic covers guidelines for Display components in Windows 10.
 The following table lists new features related to touch.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Desktop and mobile use same input platform</td>
 <td><ul>
@@ -66,15 +62,13 @@ The following table lists new features related to touch.
 The following table lists requirements for touch-related attributes:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Attribute</td>
-<td>Windows 10 Requirements</td>
+<thead>
+<tr>
+<th>Attribute</td>
+<th>Windows 10 Requirements</td>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="even">
 <td>HID Compliance</td>
 <td>Required</td>
@@ -141,7 +135,8 @@ The following table lists requirements for touch-related attributes:
 </tr>
 <tr class="odd">
 <td>Third party drivers</td>
-<td>Desktop: Third party drivers prohibited Mobile: Third party drivers allowed</td>
+<td><p>Desktop: Third party drivers prohibited</p>
+<p>Mobile: Third party drivers allowed</p></td>
 </tr>
 </tbody>
 </table>
@@ -201,16 +196,33 @@ Because the battery life savings when running at 24 Hz are so significant (measu
 
 Windows 10 switches to the following refresh rates based on the underlying content in order of priority (lower refresh rates are always a higher priority since the power savings are greater there).
 
-|                                               |                     |
-|-----------------------------------------------|---------------------|
-| 24 fps (NTSC film)                            | 24 Hz, 48 Hz, 60 Hz |
-| 25 fps (PAL film)                             | 25 Hz, 50 Hz, 60 Hz |
-| 29.97 fps (NTSC TV)                           | 30 Hz               |
-| 48 fps (very rare, some films shot at 48 fps) | 48 Hz               |
-| 50 fps (PAL TV)                               | 50 Hz               |
-| 59.94 fps (NTSC TV)                           | 60 Hz               |
-
- 
+<table>
+<tbody valign="top">
+<tr>
+<td>24 fps (NTSC film)</td>
+<td>24 Hz, 48 Hz, 60 Hz</td>
+</tr>
+<tr>
+<td>25 fps (PAL film)</td>
+<td>25 Hz, 50 Hz, 60 Hz</td>
+</tr>
+<tr>
+<td>29.97 fps (NTSC TV)</td>
+<td>30 Hz</td>
+</tr>
+<tr>
+<td>48 fps (very rare, some films shot at 48 fps)</td>
+<td>48 Hz</td>
+</tr>
+<tr>
+<td>50 fps (PAL TV)</td>
+<td>50 Hz</td>
+</tr>
+<tr>
+<td>59.94 fps (NTSC TV)</td>
+<td>60 Hz</td>
+</tr>
+</table>
 
 This feature is designed so that the lower refresh rates are triggered automatically and triggered without any visible artifacts normally associated with a mode switch.
 
@@ -247,7 +259,7 @@ For optimal damage resistance:
 
      
 
-    | \#  | Feature               | Measure  | Guidance         |
+    | #   | Feature               | Measure  | Guidance         |
     |-----|-----------------------|----------|------------------|
     | 1   | Outer corner          | Radius   | &gt; 1.0 mm      |
     | 2   | Slot radius           | Radius   | &gt; 1.5 mm      |

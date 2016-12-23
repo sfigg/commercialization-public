@@ -356,7 +356,7 @@
 ## [What's new in customizations](customize/what-s-new-in-customizations.md)
 ## [Change history for customization docs](customize/change-history-for-customize.md)
 
-## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
+## [Customizations for desktop](customize/desktop/customizations-for-desktop-devices.md)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
 ### [Set dark theme](customize/desktop/set-dark-mode.md)
 
@@ -1165,11 +1165,10 @@
 ## [What's new in Windows manufacturing](manufacture/whats-new-in-windows-manufacturing.md)
 
 ## [Desktop manufacturing](manufacture/desktop/index.md)
-
-### [OEM deployment of Windows 10 for desktop editions](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
+### [OEM Deployment Lab](manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough.md)
+### [OEM Deployment Lab (Windows 10, version 1511)](manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions.md)
 ### [System builder deployment of Windows 10 for desktop editions](manufacture/desktop/system-builder-deployment-of-windows-10-for-desktop-editions.md)
 ### [Manufacturing Windows Engineering Guide](manufacture/desktop/manufacturing-windows-engineering-guide.md)
-### [OEM Windows Desktop Deployment and Imaging Lab](manufacture/desktop/oem-windows-deployment-and-imaging-walkthrough.md)
 #### [Planning images for different audiences](manufacture/desktop/planning-create-different-product-designs-for-different-market-segments-sxs.md)
 #### [Get the tools needed to customize Windows](manufacture/desktop/get-the-tools-needed-to-customize-windows-sxs.md)
 #### [Sample scripts](manufacture/desktop/windows-deployment-sample-scripts-sxs.md)

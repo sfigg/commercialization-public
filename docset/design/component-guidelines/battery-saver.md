@@ -54,7 +54,7 @@ When battery saver is on, several Windows features behave differently:
 
     All other triggers are delayed until the system exits battery saver mode.
 
-For more information about accessing battery saver status in your application, see [SYSTEM\_POWER\_STATUS](https://msdn.microsoft.com/library/windows/hardware/aa373232)
+For more information about accessing battery saver status in your application, see [SYSTEM\_POWER\_STATUS](https://msdn.microsoft.com/library/windows/hardware/aa373232).
 
  
 
