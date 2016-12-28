@@ -14,7 +14,7 @@ MSHAttr:
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 
-> [!Notes]  
+> [!Note]  
 > Settings are only read at the time encryption is started. Encryption is not restarted with settings changes.
 
 The following diagram shows the AppLocker configuration service provider in tree format.
@@ -22,7 +22,7 @@ The following diagram shows the AppLocker configuration service provider in tree
 ![bitlocker csp](images/provisioning-csp-bitlocker.png)
 
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
-<p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.
+<p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.  
 
 <a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
 <p style="margin-left: 20px">TBD.</p>
@@ -116,13 +116,13 @@ The following diagram shows the AppLocker configuration service provider in tree
 <a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to removable drives not protected by BitLocker".</p>
 
-This setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
+<p style="margin-left: 20px">This setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.</p>
 
-If you enable this setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+<p style="margin-left: 20px">If you enable this setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.</p>
 
-If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" setting.
+<p style="margin-left: 20px">If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" setting.</p>
 
-If you disable or do not configure this setting, all removable data drives on the computer will be mounted with read and write access.
+<p style="margin-left: 20px">If you disable or do not configure this setting, all removable data drives on the computer will be mounted with read and write access.</p>
 
 > [!Note]  
 > This setting can be overridden by the settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" setting is enabled this setting will be ignored.
