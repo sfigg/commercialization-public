@@ -12,6 +12,11 @@ MSHAttr:
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
+
+> [!Notes]  
+> Settings are only read at the time encryption is started. Encryption is not restarted with settings changes.
+
 The following diagram shows the AppLocker configuration service provider in tree format.
 
 ![bitlocker csp](images/provisioning-csp-bitlocker.png)
@@ -23,7 +28,7 @@ The following diagram shows the AppLocker configuration service provider in tree
 <p style="margin-left: 20px">TBD.</p>
 
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
-<p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy.</p>
+<p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy. The last write wins if RequireDeviceEncryption is set in both Policy CSP and BitLocker CSP.</p>
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**  
 <p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive type. This is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
