@@ -263,7 +263,7 @@ Supported operations are Add, Get, Delete, and Replace.
 Added in Windows 10, version 1511. Interior node for all managed app setting values. This node is only supported in the user context.
 
 <a href="" id="----packagefamilyname-appsettingpolicy-settingvalue---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
-Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value.
+Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
 
 This setting only works for apps that support the feature and it is only supported in the user context.
 
