@@ -9,6 +9,9 @@ ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
 
 # PassportForWork CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
 > [!IMPORTANT]  Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
@@ -50,10 +53,10 @@ Default value is false. If you set this policy to true, only devices with a usab
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-excludesecuritydevices--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices** (only for ./Device/Vendor/MSFT)  
-Root node for excluded security devices.
+Added in the next major update of Windows 10. Root node for excluded security devices.
 
 <a href="" id="tenantid-policies-excludesecuritydevices-tpm12--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
-Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
+Added in the next major update of Windows 10. Some Trusted Platform Modules (TPMs) are compliant only with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
 
 Default value is false. If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
@@ -62,7 +65,7 @@ If you disable or do not configure this policy setting, TPM revision 1.2 modules
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-enablepinrecovery"></a>***TenantId*/Policies/EnablePinRecovery**  
-Boolean value that enables a user to change their PIN by using the Windows Hello for Business PIN recovery service. 
+Added in the next major update of Windows 10. Boolean value that enables a user to change their PIN by using the Windows Hello for Business PIN recovery service. 
 This cloud service encrypts a recovery secret, which is stored locally on the client, and can be decrypted only by the cloud service.
 
 Default value is false. If you enable this policy setting, the PIN recovery secret will be stored on the device and the user can change their PIN if needed.
