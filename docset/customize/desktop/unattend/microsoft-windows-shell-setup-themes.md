@@ -110,7 +110,7 @@ The following XML output shows how to set a customized theme.
    <DesktopBackground>%WINDIR%\web\wallpaper\fabrikam.jpg</DesktopBackground>
    <BrandIcon>%programfiles%\Fabrikam\fabrikam-logo.png</BrandIcon>
    <ScreenSaver>Bubbles.scr</ScreenSaver>
-   <WindowColor>Color 11</WindowColor>
+   <WindowColor>Automatic</WindowColor>
 </Themes>
 ```
 

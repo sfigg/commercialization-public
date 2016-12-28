@@ -1098,6 +1098,8 @@
 #### [UserAuthentication](microsoft-windows-terminalservices-rdp-winstationextensions-userauthentication.md)
 ### [Microsoft-Windows-TerminalServices-RemoteConnectionManager](microsoft-windows-terminalservices-remoteconnectionmanager.md)
 #### [LicensingMode](microsoft-windows-terminalservices-remoteconnectionmanager-licensingmode.md)
+### [Microsoft-Windows-Tpm-Tasks] (microsoft-windows-tpm-tasks.md)
+####[Microsoft-windows-Tpm-Tasks-ClearTpm] (microsoft-windows-tpm-tasks-cleartpm.md)
 ### [Microsoft-Windows-TwinUI](microsoft-windows-twinui.md)
 #### [CustomProtocol](microsoft-windows-twinui-customprotocol.md)
 ### [Microsoft-Windows-UnattendedJoin](microsoft-windows-unattendedjoin.md)

@@ -33,15 +33,15 @@ See the following sections for more information about what you can do to customi
 <tbody>
 <tr class="odd">
 <td><p>[What's new in customizations](what-s-new-in-customizations.md)</p></td>
-<td><p>Learn about the new customizations available in Windows 10, build 1703.</p></td>
+<td><p>Learn about the new customizations available in Windows 10, build 1607.</p></td>
 </tr>
 <tr class="even">
 <td><p>[Change history for Customize](change-history-for-customize.md)</p></td>
-<td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1703.</p></td>
+<td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 <tr class="odd">
 <td><p>[Customizations for Windows desktop](customizations-for-windows-10-for-desktop-editions--home--pro--and-enterprise-.md)</p></td>
-<td><p>Read this high-level guide to help you determine which framework best meets your needs if you're customizing Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).</p>
+<td><p>Learn which framework best meets your needs if you're customizing Windows 10 for desktop editions.</p>
 <p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattend framework](customize-using-the-legacy-desktop-framework.md) settings.</p></td>
 </tr>
 <tr class="even">
@@ -49,15 +49,18 @@ See the following sections for more information about what you can do to customi
 <td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for Mobile](customizations-for-windows-10-mobile.md)</p></td>
-<td><p>Read this high-level guide to learn about the capabilities that are available in Windows 10 Mobile.</p>
+<td><p>[Customizations for mobile devices](customizations-for-windows-10-mobile.md)</p></td>
+<td><p>Learn about the capabilities that are available in Windows 10 Mobile.</p>
 <p>The additional topics in this section help with key tasks, as well as providing reference for the [mobile MCSF framework](p_phCustomization.Provisioning_and_customization).</p></td>
-</tr>
-<tr class="even">
-<td><p>[Mobile device management](mdm/index.md)</p></td>
+</tr><tr class="even">
+<td><p>[Windows Provisioning framework](https://msdn.microsoft.com/library/windows/hardware/dn898375)</p></td>
 <td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
 </tr>
 <tr class="odd">
+<td><p>[Mobile device management](mdm/index.md)</p></td>
+<td><p>Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal phones. A built-in management component can communicate with the management server.</p></td>
+</tr>
+<tr class="even">
 <td><p>[Preinstalled apps](https://msdn.microsoft.com/library/windows/hardware/mt269740)</p></td>
 <td><p>If you're a Windows OEM or mobile operator partner, find out how you can create partner apps that you can package and configure to install during the initial device setup process. While the user is going through the initial setup process, the preinstalled apps are installed in the background.</p></td>
 </tr>
@@ -69,7 +72,7 @@ See the following sections for more information about what you can do to customi
 ## <a href="" id="developer-audience-heading"></a>Developer audience
 
 
-This section of the partner documentation is intended for OEMs, ODMs, system builders, mobile operators, and IT administrators.
+This section of the partner documentation is intended for OEMs, ODMs, IHVs, system builders, mobile operators, and IT administrators.
 
  
 

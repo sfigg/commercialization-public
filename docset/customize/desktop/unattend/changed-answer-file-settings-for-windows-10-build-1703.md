@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 2F87B811-7E27-4CC4-8695-82423E25C95C
 ---
 
-# Changed answer file settings for Windows 10 for desktop editions, build 1607
+# Changed answer file settings for Windows 10 for desktop editions, build 1703
 
 
 This topic describes Windows 10, version 1703 answer-file settings that have changed since Windows 10, Build 1607.
@@ -25,6 +25,7 @@ This topic describes Windows 10, version 1703 answer-file settings that have ch
 
 ## <a href="" id="newwindowsettings"></a>New Windows Settings
 
+The following settings are new in Windows 10, version 1703:
 
 <table>
 <colgroup>
@@ -54,6 +55,26 @@ This topic describes Windows 10, version 1703 answer-file settings that have ch
 
 ## <a href="" id="renamedordeprecatedsettings"></a>Deprecated Windows Settings
 
+The following settings are deprecated in Windows 10, version 1703:
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Removed setting from Windows 10, version 1703</th>
+<th>Recommendation for Windows 10, version 1703</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
 
 | Deprecated setting                                                               | Status or recomendation for Windows 10, version 1703                                               |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -73,7 +94,7 @@ The following settings are no longer available in Windows 10, version 1703:
 </colgroup>
 <thead>
 <tr class="header">
-<th>Removed setting from Windows 10, version 1607</th>
+<th>Removed setting from Windows 10, version 1703</th>
 <th>Recommendation for Windows 10, version 1703</th>
 </tr>
 </thead>
