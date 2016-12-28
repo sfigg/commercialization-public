@@ -49,10 +49,32 @@ Default value is false. If you set this policy to true, only devices with a usab
 
 Supported operations are Add, Get, Delete, and Replace.
 
+<a href="" id="tenantid-policies-excludesecuritydevices--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices** (only for ./Device/Vendor/MSFT)  
+Root node for excluded security devices.
+
+<a href="" id="tenantid-policies-excludesecuritydevices-tpm12--only-for---device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
+Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
+
+Default value is false. If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
+
+If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
+
+Supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="tenantid-policies-enablepinrecovery"></a>***TenantId*/Policies/EnablePinRecovery**  
+Boolean value that enables a user to change their PIN by using the Windows Hello for Business PIN recovery service. 
+This cloud service encrypts a recovery secret, which is stored locally on the client, and can be decrypted only by the cloud service.
+
+Default value is false. If you enable this policy setting, the PIN recovery secret will be stored on the device and the user can change their PIN if needed.
+
+If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+
+Supported operations are Add, Get, Delete, and Replace.
+
 <a href="" id="tenantid-policies-usecertificateforonpremauth--only-for---device-vendor-msft-"></a>***TenantId*/Policies/UseCertificateForOnPremAuth** (only for ./Device/Vendor/MSFT)  
 Boolean value that enables Windows Hello for Business to use certificates to authenticate on-premise resources.
 
-If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the enterprise Certificate Authority before provisioning a PIN.
+If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
 If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
 
@@ -168,19 +190,22 @@ Node for defining biometric settings. This node was added in Windows 10, versi
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
 
-Default value is true. If you set this policy to true, biometric gestures are enabled for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
+Default value is false. If you set this policy to true, biometric gestures are enabled for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="biometrics-facialfeaturesuseenhancedantispoofing--only-for---device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
-Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on devices which support it. This node was added in Windows 10, version 1511.
+Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
 
-If this policy is not configured, the user can choose whether they want anti-spoofing on or off. If you set this policy to true, enhanced anti-spoofing is required on devices which support it. If you set this policy to false, enhanced anti-spoofing is turned off and the user cannot turn it on.
+Default value is false. If you set this policy to true or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that do not support enhanced anti-spoofing.
+
+If you set this policy to false, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+
+Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 ## Examples
-
 
 Here's an example for setting Windows Hello for Business and setting the PIN policies. It also turns on the use of biometrics and TPM.
 
