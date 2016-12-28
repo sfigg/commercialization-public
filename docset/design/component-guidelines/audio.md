@@ -20,11 +20,7 @@ The minimum hardware requirements and Windows Hardware Compatibility Program req
 The following table summarizes the minimum hardware requirements for Audio. For more detail, see section 6.2.2 in [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx).
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Audio decode and encode</td>
 <td>The codecs supplied by Windows 10 must not be removed or modified. OEMs may add software or hardware audio decoders or encoders not provided by Microsoft.</td>
@@ -32,40 +28,40 @@ The following table summarizes the minimum hardware requirements for Audio. For 
 <tr class="even">
 <td>Audio codec hardware</td>
 <td><ul>
-<li><p>The codec must support at least one of the bit depths and containers listed in section 6.2.2 in Minimum hardware requirements.</p></li>
-<li><p>The codec must support at least one of the channel configurations listed in section 6.2.2 in Minimum hardware requirements.</p></li>
-<li><p>The samples must be either integer or IEEE 754 float.</p></li>
-<li><p>Devices that support both audio input and output must support independent selection of formats and support concurrent streaming at arbitrarily selected formats subject to resource limitation.</p></li>
+<li>The codec must support at least one of the bit depths and containers listed in section 6.2.2 in Minimum hardware requirements.</li>
+<li>The codec must support at least one of the channel configurations listed in section 6.2.2 in Minimum hardware requirements.</li>
+<li>The samples must be either integer or IEEE 754 float.</li>
+<li>Devices that support both audio input and output must support independent selection of formats and support concurrent streaming at arbitrarily selected formats subject to resource limitation.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Audio input routing for cellular devices</td>
-<td><p>The device must route audio input from these sources:</p>
+<td>The device must route audio input from these sources:
 <ul>
-<li><p>Handset microphone</p></li>
-<li><p>Wired headset microphone</p></li>
-<li><p>Bluetooth Hands-Free Profile microphone</p></li>
-<li><p>Processor (optional)</p></li>
+<li>Handset microphone</li>
+<li>Wired headset microphone</li>
+<li>Bluetooth Hands-Free Profile microphone</li>
+<li>Processor (optional)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Audio output routing for cellular devices</td>
-<td><p>The device must route audio output to these destinations:</p>
+<td>The device must route audio output to these destinations:
 <ul>
-<li><p>Handset Speaker</p></li>
-<li><p>Loudspeaker</p></li>
-<li><p>Wired headset/headphone</p></li>
-<li><p>Bluetooth Hands-Free Profile</p></li>
-<li><p>Processor (Optional for Cellular RX source; required for voice call recording if there is a mix of cellular RX and TX)</p></li>
+<li>Handset speaker</li>
+<li>Loudspeaker</li>
+<li>Wired headset/headphone</li>
+<li>Bluetooth Hands-Free Profile</li>
+<li>Processor (Optional for Cellular RX source; required for voice call recording if there is a mix of cellular RX and TX)</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Audio output for FM stereo devices</td>
-<td><p>The device must route audio output between the FM stereo and these destinations:</p>
+<td>The device must route audio output between the FM stereo and these destinations:
 <ul>
-<li><p>Loudspeaker</p></li>
-<li><p>Wired headset microphone</p></li>
-<li><p>Processor (Optional)</p></li>
+<li>Loudspeaker</li>
+<li>Wired headset microphone</li>
+<li>Processor (Optional)</li>
 </ul></td>
 </tr>
 </tbody>
@@ -77,22 +73,21 @@ The following table summarizes the minimum hardware requirements for Audio. For 
 
 The following table lists the requirements for Audio devices for the [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx). Click the corresponding link for more details about each requirement.
 
-|                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                            |
-|-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requirement                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                |
-| [Device.Audio.APO.MicArrayRawData](../compatibility/device-audio.md#device.audio.apo)                                                 | If a microphone array processing algorithm is provided in a Windows system effect APO instantiated in a stream effect (SFX) insert point in the capture path, it must provide all the individual audio streams as channels from the array when a client asks for a format with number of channels equal to the number of microphone elements in the array. |
-| [Device.Audio.Base.AudioProcessing](../compatibility/device-audio.md#device.audio.base)                                               | Audio devices must support proper audio processing discovery and control.                                                                                                                                                                                                                                                                                  |
-| [Device.Audio.Base.DRM](../compatibility/device-audio.md#device.audio.base)                                                           | Audio device must implement DRM support as defined in [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260.aspx) in the Windows Driver Kit.                                                                                                                                                                   |
-| [Device.Audio.Base.Endpoints](../compatibility/device-audio.md#device.audio.base)                                                     | Any audio device that is exposed by any of the audio device enumeration APIs must reflect the current state of all of its endpoints appropriately at all times when the system is powered on.                                                                                                                                                              |
-| [Device.Audio.Base.HardwareArchitecture](../compatibility/device-audio.md#device.audio.base)                                          | Audio subsystems must use a technology compatible with Windows.                                                                                                                                                                                                                                                                                            |
-| [Device.Audio.Base.PowerManagement](../compatibility/device-audio.md#device.audio.base)                                               | Audio device must comply with related power management specifications.                                                                                                                                                                                                                                                                                     |
-| [Device.Audio.Base.SamplePositionAccuracy](../compatibility/device-audio.md#device.audio.base)                                        | Audio driver reports render sample position with defined accuracy for stream synchronization.                                                                                                                                                                                                                                                              |
-| [Device.Audio.Base.StreamingFormats](../compatibility/device-audio.md#device.audio.base)                                              | Audio subsystems must use formats supported by Windows.                                                                                                                                                                                                                                                                                                    |
-| [Device.Audio.Base.VolumeControl](../compatibility/device-audio.md#device.audio.base)                                                 | Audio driver volume controls are linear and have adequate resolution.                                                                                                                                                                                                                                                                                      |
-| [Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading](../compatibility/device-audio.md#device.audio.hardwareaudioprocessing) | Hardware that supports offloaded audio render processing must meet this requirement.                                                                                                                                                                                                                                                                       |
-| [Device.Audio.HDAudio.HDAudioSpecCompliance](../compatibility/device-audio.md#device.audio.hdaudio)                                   | HD Audio codec for audio must comply with the Intel High Definition Audio specification.                                                                                                                                                                                                                                                                   |
-| [Device.Audio.USB.HIDControls](../compatibility/device-audio.md#device.audio.usb)                                                     | USB audio device uses USB HID audio controls to keep the operating system informed of user interactions with the device.                                                                                                                                                                                                                                   |
-| [Device.Audio.USB.USB](../compatibility/device-audio.md#device.audio.usb)                                                             | USB audio device must follow UAA USB audio design guidelines.                                                                                                                                                                                                                                                                                              |
+| Requirement                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Device.Audio.APO.MicArrayRawData](../compatibility/device-audio.md#deviceaudioapomicarrayrawdata)                                                         | If a microphone array processing algorithm is provided in a Windows system effect APO instantiated in a stream effect (SFX) insert point in the capture path, it must provide all the individual audio streams as channels from the array when a client asks for a format with number of channels equal to the number of microphone elements in the array. |
+| [Device.Audio.Base.AudioProcessing](../compatibility/device-audio.md#deviceaudiobaseaudioprocessing)                                                       | Audio devices must support proper audio processing discovery and control.                                                                                                                                                                                                                                                                                  |
+| [Device.Audio.Base.DRM](../compatibility/device-audio.md#deviceaudiobasedrm)                                                                               | Audio device must implement DRM support as defined in [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260.aspx) in the Windows Driver Kit.                                                                                                                                                                            |
+| [Device.Audio.Base.Endpoints](../compatibility/device-audio.md#deviceaudiobaseendpoints)                                                                   | Any audio device that is exposed by any of the audio device enumeration APIs must reflect the current state of all of its endpoints appropriately at all times when the system is powered on.                                                                                                                                                              |
+| [Device.Audio.Base.HardwareArchitecture](../compatibility/device-audio.md#deviceaudiobasehardwarearchitecture)                                             | Audio subsystems must use a technology compatible with Windows.                                                                                                                                                                                                                                                                                            |
+| [Device.Audio.Base.PowerManagement](../compatibility/device-audio.md#deviceaudiobasepowermanagement)                                                       | Audio device must comply with related power management specifications.                                                                                                                                                                                                                                                                                     |
+| [Device.Audio.Base.SamplePositionAccuracy](../compatibility/device-audio.md#deviceaudiobasesamplepositionaccuracy)                                         | Audio driver reports render sample position with defined accuracy for stream synchronization.                                                                                                                                                                                                                                                              |
+| [Device.Audio.Base.StreamingFormats](../compatibility/device-audio.md#deviceaudiobasestreamingformats)                                                     | Audio subsystems must use formats supported by Windows.                                                                                                                                                                                                                                                                                                    |
+| [Device.Audio.Base.VolumeControl](../compatibility/device-audio.md#deviceaudiobasevolumecontrol)                                                           | Audio driver volume controls are linear and have adequate resolution.                                                                                                                                                                                                                                                                                      |
+| [Device.Audio.HardwareAudioProcessing.AudioHardwareOffloading](../compatibility/device-audio.md#deviceaudiohardwareaudioprocessingaudiohardwareoffloading) | Hardware that supports offloaded audio render processing must meet this requirement.                                                                                                                                                                                                                                                                       |
+| [Device.Audio.HDAudio.HDAudioSpecCompliance](../compatibility/device-audio.md#deviceaudiohdaudiohdaudiospeccompliance)                                     | HD Audio codec for audio must comply with the Intel High Definition Audio specification.                                                                                                                                                                                                                                                                   |
+| [Device.Audio.USB.HIDControls](../compatibility/device-audio.md#deviceaudiousbhidcontrols)                                                                 | USB audio device uses USB HID audio controls to keep the operating system informed of user interactions with the device.                                                                                                                                                                                                                                   |
+| [Device.Audio.USB.USB](../compatibility/device-audio.md#deviceaudiousbusb)                                                                                 | USB audio device must follow UAA USB audio design guidelines.                                                                                                                                                                                                                                                                                              |
 
  
 
@@ -139,9 +134,8 @@ Passing [Skype/Lync audio certification](https://technet.microsoft.com/office/dn
 
 The following sections cover recommendations for speech. To ensure a high quality speech experience, all devices should be tested against these performance requirements.
 
-|                                                       |                                                                                                                                                 |                                                                                    |
-|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | Area                                                  | Type of guidance                                                                                                                                | Which devices should be tested                                                     |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [Device.SpeechRecognition](#device-speechrecognition) | Provides the speech recognition performance requirements to ensure a high quality speech experience.                                            | All devices should be tested against these performance requirements.               |
 | [Device.Audio](#device-audio)                         | Provides guidelines in order to function optimally with the host OS in terms of software interfaces, communication protocols, and data formats. | All devices should be tested against these guidelines.                             |
 | [Device.Audio.Acoustics](#device-audio-acoustics)     | Provides recommendations and best practices for acoustics and related properties of device design.                                              | Most relevant for devices that will use Microsoft’s speech enhancement processing. |
@@ -152,9 +146,8 @@ The following sections cover recommendations for speech. To ensure a high qualit
 
 The following table summarizes Microsoft recommendations for target speech recognition accuracy for devices in various environments. For test steps, see [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009.aspx). All targets are in speech accuracy. All three tests must reach Standard to be classified as Standard.
 
-|                                       |                                                                                                                     |                                      |                            |
-|---------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------|----------------------------|
 | Test                                  | Description                                                                                                         | Target                               | Recommendation             |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------|----------------------------|
 | Device.SpeechRecognition.Quiet        | An ideal environment with minimal ambient noise (noise floor &lt; 35 dBA SPL) and no receive (echo path) noise.     | Quiet &lt;= 35 dBA SPL               | Premium: 95% Standard: 90% |
 | Device.SpeechRecognition.AmbientNoise | Various levels and types of noisy environments, e.g. [Café & Pub](http://go.microsoft.com/fwlink/p/?linkid=528451). | Ambient Noise @ DUT &gt;= 57 dBA SPL | Premium: 90% Standard: 85% |
 | Device.SpeechRecognition.EchoNoise    | Various levels and types of render playback scenarios (e.g. media playing).                                         | Echo Noise @ LRP &gt;= 70 dBA SPL    | Premium: 90% Standard: 85% |
@@ -175,9 +168,8 @@ For more information and examples, see [Cortana Device Recommendations](https://
 
 Recommendations in this section are made regarding the software and hardware interfaces, communication protocols, and data formats of the device. Devices intended to use speech recognition functionality must meet all [Device.Audio Requirements](https://msdn.microsoft.com/library/windows/hardware/jj134354.aspx).
 
-|                                          |                                                                                                                                                                                                                                                                                                                          |
-|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name                                     | Recommendation                                                                                                                                                                                                                                                                                                           |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Device.Audio.Base.AudioProcessing        | Drivers must expose all audio effect via the FXStreamCLSID, FXModeCLSID, and FXEndpointCLSID APOs (or proxy APOs). The APOs must send an accurate list of effects that are enabled to the system when queried. Drivers must support APO change notifications and only notify the system when an APO change has occurred. |
 | Device.Audio.Base.StreamingFormats       | Speech recognition functions under all audio capture and render streaming formats defined in the StreamingFormats HLK, with the optimum being 16 kHz with 24-bit capture and mono render.                                                                                                                                |
 | Device.Audio.Base.SamplePositionAccuracy | It is important that render and capture audio signals are both 1) sampled accurately and 2) time-stamped accurately.                                                                                                                                                                                                     |
@@ -194,9 +186,8 @@ The recommendations and tests are relative to the signal before the speech enhan
 
 For more details about all of these recommendations, including recommended mic array geometries, see [Device.AudioAcoustics Recommendations](https://msdn.microsoft.com/library/windows/hardware/dn957008.aspx#section-4--device-audioacoustics-recommendations).
 
-|                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name                                            | Recommendation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Device.Audio.Acoustics.MicArray                 | Refer to [Microphone Array Support in Windows](http://msdn.microsoft.com/library/windows/hardware/dn613960.aspx). The audio driver must implement the [KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY](https://go.microsoft.com/fwlink/p/?linkid=528456) property. Then the System.Devices.MicrophoneArray.Geometry property can be accessed via the Windows.Devices.Enumeration API. The USB audio driver will support this property for USB microphone arrays that have the appropriate fields set in the USB descriptor. |
 | Microphone Array Descriptor                     | The device must describe its microphone type and geometry using the mic array descriptor.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Device.Audio.Acoustics.MicSensitivity           | The Max recommendation is set to be able to support speech input levels considered to be “loud” and the Min recommendation is set to be able to support speech input levels considered to be “quiet.”                                                                                                                                                                                                                                                                                                                |
@@ -218,9 +209,9 @@ For more details about all of these recommendations, including recommended mic a
 
 The following requirements are key to enable a third-party enhancement pipeline. These and other recommendations are covered in more detail in the following sections:
 
--   [Device.SpeechRecognition.DefaultMicGain](speechplatformdevicesrecommendations.md) – explains how to set microphone gain to an optimal level to pass Device.SpeechRecognition tests.
+-   [Device.SpeechRecognition.DefaultMicGain](..\device-experiences\speechplatformdevicesrecommendations.md#device-speechrecognition-defaultmicgain) – explains how to set microphone gain to an optimal level to pass Device.SpeechRecognition tests.
 
--   [Device.Audio.Acoustics.MicArray](https://msdn.microsoft.com/library/windows/hardware/dn957008.aspx#section-4--device-audioacoustics-recommendations) – covers mic array geometries that are recommended and known to work well with Windows.
+-   [Device.Audio.Acoustics.MicArray](..\device-experiences\speechplatformdevicesrecommendations.md#device-audio-acoustics-micarray) – covers mic array geometries that are recommended and known to work well with Windows.
 
 -   Microphone location reporting –explains how to implement a reporting structure for a mic array.
 
@@ -246,14 +237,3 @@ The following requirements are key to enable a third-party enhancement pipeline.
 [Skype/Lync audio certification](https://technet.microsoft.com/office/dn788953)
 
 [Microphone Array Support in Windows](http://msdn.microsoft.com/library/windows/hardware/dn613960.aspx)
-
- 
-
- 
-
-
-
-
-
-
-

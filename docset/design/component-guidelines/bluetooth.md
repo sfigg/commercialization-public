@@ -82,17 +82,14 @@ Additional features that were added after Windows 10, version 1507 are marked a
 The following table provides a summary of the Bluetooth features in the Windows 10 for desktop editions and Windows 10 Mobile editions.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Feature</td>
-<td>Windows 10 for desktop editions</td>
-<td>Windows 10 Mobile</td>
+<thead valign="bottom">
+<tr>
+<th>Feature</th>
+<th>Windows 10 for desktop editions</th>
+<th>Windows 10 Mobile</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="even">
 <td>Advertisement API</td>
 <td>Yes</td>
@@ -121,7 +118,7 @@ The following table provides a summary of the Bluetooth features in the Windows�
 <tr class="odd">
 <td>Dual mode, LE Privacy 1.1 (BT Spec updates)</td>
 <td>Yes</td>
-<td><p>Dual mode - Yes</p>
+<td>Dual mode - Yes
 <p>(Only while using pairing APIs)<sup>*</sup></p></td>
 </tr>
 <tr class="even">
