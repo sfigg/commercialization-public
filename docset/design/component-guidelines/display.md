@@ -257,20 +257,66 @@ For optimal damage resistance:
 
     ![machined cover glass](../images/machined-cover-glass-small.jpg)
 
-     
-
-    | Num | Feature               | Measure  | Guidance         |
-    |-----|-----------------------|----------|------------------|
-    | 1   | Outer corner          | Radius   | &gt; 1.0 mm      |
-    | 2   | Slot radius           | Radius   | &gt; 1.5 mm      |
-    | 3   | Slot width            | Width    | &gt; 1.5 mm      |
-    | 4   | Min. hole diameter    | Diameter | &gt; 1.5 mm      |
-    | 5   | Hole-to-edge distance | Diameter | &gt; 4.0 mm      |
-    | 6   | Width of protrusion   | Width    | Width &gt; Depth |
-    | 7   | Width of the slot     | Width    | Width &gt; Depth |
-    | 8   | Inner radius          | Radius   | &gt; 1.0 mm      |
-
-     
+    <table>
+        <thead valign="bottom">
+            <tr>
+                <th>#</th>
+                <th>Feature</th>
+                <th>Measure</th>
+                <th>Guidance</th>
+            </tr>
+        </thead>
+        <tbody valign="top">
+            <tr>
+                <td>1</td>
+                <td>Outer corner</td>
+                <td>Radius</td>
+                <td>&gt; 1.0 mm</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Slot radius</td>
+                <td>Radius</td>
+                <td>&gt; 1.5 mm</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Slot width</td>
+                <td>Width</td>
+                <td>&gt; 1.5 mm</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Min. hole diameter</td>
+                <td>Diameter</td>
+                <td>&gt; 1.5 mm</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Hole-to-edge distance</td>
+                <td>Diameter</td>
+                <td>&gt; 4.0 mm</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Width of protrusion</td>
+                <td>Width</td>
+                <td>Width &gt; Depth</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Width of the slot</td>
+                <td>Width</td>
+                <td>Width &gt; Depth</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Inner radius</td>
+                <td>Radius</td>
+                <td>&gt; 1.0 mm</td>
+            </tr>
+        </tbody>
+        </table> 
 
     **Note**   Tests conducted using a standard 1mm glass.
 
