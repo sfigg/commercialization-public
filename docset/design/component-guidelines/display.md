@@ -259,62 +259,17 @@ For optimal damage resistance:
 
     <table>
         <thead valign="bottom">
-            <tr>
-                <th>#</th>
-                <th>Feature</th>
-                <th>Measure</th>
-                <th>Guidance</th>
-            </tr>
+            <tr><th>#</th><th>Feature</th><th>Measure</th><th>Guidance</th></tr>
         </thead>
         <tbody valign="top">
-            <tr>
-                <td>1</td>
-                <td>Outer corner</td>
-                <td>Radius</td>
-                <td>&gt; 1.0 mm</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Slot radius</td>
-                <td>Radius</td>
-                <td>&gt; 1.5 mm</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Slot width</td>
-                <td>Width</td>
-                <td>&gt; 1.5 mm</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Min. hole diameter</td>
-                <td>Diameter</td>
-                <td>&gt; 1.5 mm</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Hole-to-edge distance</td>
-                <td>Diameter</td>
-                <td>&gt; 4.0 mm</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Width of protrusion</td>
-                <td>Width</td>
-                <td>Width &gt; Depth</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Width of the slot</td>
-                <td>Width</td>
-                <td>Width &gt; Depth</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Inner radius</td>
-                <td>Radius</td>
-                <td>&gt; 1.0 mm</td>
-            </tr>
+            <tr><td>1</td><td>Outer corner</td><td>Radius</td><td>&gt; 1.0 mm</td></tr>
+            <tr><td>2</td><td>Slot radius</td><td>Radius</td><td>&gt; 1.5 mm</td></tr>
+            <tr><td>3</td><td>Slot width</td><td>Width</td><td>&gt; 1.5 mm</td></tr>
+            <tr><td>4</td><td>Min. hole diameter</td><td>Diameter</td><td>&gt; 1.5 mm</td></tr>
+            <tr><td>5</td><td>Hole-to-edge distance</td><td>Diameter</td><td>&gt; 4.0 mm</td></tr>
+            <tr><td>6</td><td>Width of protrusion</td><td>Width</td><td>Width &gt; Depth</td></tr>
+            <tr><td>7</td><td>Width of the slot</td><td>Width</td><td>Width &gt; Depth</td></tr>
+            <tr><td>8</td><td>Inner radius</td><td>Radius</td><td>&gt; 1.0 mm</td></tr>
         </tbody>
         </table> 
 
