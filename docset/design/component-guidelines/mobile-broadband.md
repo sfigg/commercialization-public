@@ -23,15 +23,13 @@ Windows supports combinations of the GSM-based and CDMA-based mobile broadband t
 The following table summarizes the recommended mobile broadband hardware features.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Feature</td>
-<td>Remarks</td>
+<thead valign="bottom">
+<tr>
+<th>Feature</th>
+<th>Remarks</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="even">
 <td>Bus</td>
 <td><p>USB-SSIC (USB 3.0)</p>
@@ -70,9 +68,8 @@ USB based devices for GSM and CDMA technologies (3GPP/3GPP2 standards based) mus
 
 The following table summarizes the additional features, as specified by NDIS, that we recommend the firmware support.
 
-|                       |                      |
-|-----------------------|----------------------|
 | Feature               | Remarks              |
+|-----------------------|----------------------|
 | No pause on suspend   | Support              |
 | Wake reason reporting | Support              |
 | USB SS                | Support if USB-based |

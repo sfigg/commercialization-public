@@ -16,17 +16,13 @@ The topics in this section present legacy resources for Windows Touchscreen and 
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Windows Pointer Device Data Delivery Protocol](windows-pointer-device-data-delivery-protocol.md)</p></td>
 <td><p>This section provides information about Windows 8 devices that support the pen, or touch, functionality.</p></td>
@@ -45,15 +41,3 @@ The topics in this section present legacy resources for Windows Touchscreen and 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

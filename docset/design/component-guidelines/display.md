@@ -62,10 +62,10 @@ The following table lists new features related to touch.
 The following table lists requirements for touch-related attributes:
 
 <table>
-<thead>
+<thead valign="bottom">
 <tr>
-<th>Attribute</td>
-<th>Windows 10 Requirements</td>
+<th>Attribute</th>
+<th>Windows 10 Requirements</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -259,7 +259,7 @@ For optimal damage resistance:
 
      
 
-    | #   | Feature               | Measure  | Guidance         |
+    | Num | Feature               | Measure  | Guidance         |
     |-----|-----------------------|----------|------------------|
     | 1   | Outer corner          | Radius   | &gt; 1.0 mm      |
     | 2   | Slot radius           | Radius   | &gt; 1.5 mm      |

@@ -16,17 +16,13 @@ Building a great Windows device starts with selecting the right components. This
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Audio](audio.md)</p></td>
 <td><p>This document provides recommendations for the design and development of audio devices, including audio playback and audio input devices intended for use with Microsoft’s Speech Platform.</p></td>

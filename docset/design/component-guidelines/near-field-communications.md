@@ -19,15 +19,13 @@ ms.assetid: 629D1C23-5293-4F51-8E96-12B42E728440
 This topic covers recommendations for near field communications (NFC) in Windows 10. The following table lists required, recommended, and optional near field proximity features.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Feature</td>
-<td>Remarks</td>
+<thead valign="bottom">
+<tr>
+<th>Feature</th>
+<th>Remarks</th>
 </tr>
+</thead>
+<tbody valign="top">
 <tr class="even">
 <td>Bus</td>
 <td><p>Refer to Hardware Configurations.</p>
@@ -87,11 +85,7 @@ The Windows near field proximity services and APIs provide a standard way for de
 Near field proximity enables new [Tap and Do](http://go.microsoft.com/fwlink/p/?LinkId=625070) experiences for PC to PC, mobile phone to PC, and PC to tag interaction. The design supports scenarios that are interpersonal in nature, between two people holding different devices; it also works when one user is holding two devices.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Tap and Use, Tap and Launch, Tap and Acquire</td>
 <td><ul>
@@ -140,17 +134,13 @@ Antenna placement is critical for providing the best user experience and providi
 The table below describes the location for the antenna by form factor.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Form Factor</th>
 <th>Antenna Location and Considerations</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>Tablet</td>
 <td><p>Place the NFC loop antenna near the surface of the device, not in the middle, with proper shielding to insure sufficient actuation volume (required).</p>
