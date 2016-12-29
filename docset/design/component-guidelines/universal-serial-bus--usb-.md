@@ -28,21 +28,20 @@ For the complete set of hardware requirements for Windows 10, see [Minimum hardw
 ## Windows Hardware Compatibility Program requirements for USB
 
 
-The [System.Fundamentals.SystemUSB.SystemExposesUSBPort](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-systemexposesusbport) Windows Hardware Compatibility Program requirement has a table that lists which USB controller types are recommended, supported, or not supported.
+The [System.Fundamentals.SystemUSB.SystemExposesUSBPort](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbsystemexposesusbport) Windows Hardware Compatibility Program requirement has a table that lists which USB controller types are recommended, supported, or not supported.
 
 The following table summarizes all of the [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588.aspx) requirements for USB, with a link to more details about each requirement. The Windows Hardware Compatibility Program leverages tests in the Windows [Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814.aspx) (HLK), which OEMs can use to help diagnose issues early in the development process, ensure driver compatibility with Windows, and optionally certify devices or systems. New tests in the HLK can validate Dual Role and Function mode on any Windows 10 edition.
 
-|                                                                                                                                                                                                             |                                                                                                                                                      |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requirement                                                                                                                                                                                                 | Description                                                                                                                                          |
-| [ExternalUSBonCSisEHCIorXHCI](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-externalusboncsisehciorxhci)                                         | External USB ports on a system that support connected standby must be EHCI or xHCI.                                                                  |
-| [SuperSpeedCapableConnectorRequirements](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-superspeedcapableconnectorrequirements)                   | Each exposed SuperSpeed capable connector supports SuperSpeed, high, full and low speed USB devices routed through its xHCI controller.              |
-| [SystemExposesUSBPort](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-systemexposesusbport)                                                       | Systems are recommended to expose at least one user-accessible USB port. If a USB port is exposed, this section covers requirements for it.          |
-| [TestedUsingMicrosoftUsbStack](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-testedusingmicrosoftusbstack)                                       | Systems with xHCI Controllers must be tested with Microsoft's xHCI Stack installed.                                                                  |
-| [USBDevicesandHostControllersWorkAfterPowerCycle](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-usbdevicesandhostcontrollersworkafterpowercycle) | All USB devices and host controllers work properly upon resume from sleep, hibernation or restart without a forced reset of the USB host controller. |
-| [XhciBiosHandoffFollowsSpec](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-xhcibioshandofffollowsspec)                                           | xHCI BIOS handoff follows section 4.2.2.1 of the XHCI specification.                                                                                 |
-| [XHCIControllersMustHaveEmbeddedInfo](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-xhcicontrollersmusthaveembeddedinfo)                         | Systems with xHCI controllers must have embedded ACPI information for port routing.                                                                  |
-| [XhciSupportsMinimum31Streams](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#system-fundamentals-systemusb-xhcisupportsminimum31streams)                                       | xHCI controller must support at least 31 primary streams per endpoint.                                                                               |
+| Requirement                                                                                                                                                                                     | Description                                                                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [ExternalUSBonCSisEHCIorXHCI](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbexternalusboncsisehciorxhci)                                         | External USB ports on a system that support connected standby must be EHCI or xHCI.                                                                  |
+| [SuperSpeedCapableConnectorRequirements](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbsuperspeedcapableconnectorrequirements)                   | Each exposed SuperSpeed capable connector supports SuperSpeed, high, full and low speed USB devices routed through its xHCI controller.              |
+| [SystemExposesUSBPort](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbsystemexposesusbport)                                                       | Systems are recommended to expose at least one user-accessible USB port. If a USB port is exposed, this section covers requirements for it.          |
+| [TestedUsingMicrosoftUsbStack](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbtestedusingmicrosoftusbstack)                                       | Systems with xHCI Controllers must be tested with Microsoft's xHCI Stack installed.                                                                  |
+| [USBDevicesandHostControllersWorkAfterPowerCycle](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbusbdevicesandhostcontrollersworkafterpowercycle) | All USB devices and host controllers work properly upon resume from sleep, hibernation or restart without a forced reset of the USB host controller. |
+| [XhciBiosHandoffFollowsSpec](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbxhcibioshandofffollowsspec)                                           | xHCI BIOS handoff follows section 4.2.2.1 of the XHCI specification.                                                                                 |
+| [XHCIControllersMustHaveEmbeddedInfo](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbxhcicontrollersmusthaveembeddedinfo)                         | Systems with xHCI controllers must have embedded ACPI information for port routing.                                                                  |
+| [XhciSupportsMinimum31Streams](https://msdn.microsoft.com/library/windows/hardware/dn932827.aspx#systemfundamentalssystemusbxhcisupportsminimum31streams)                                       | xHCI controller must support at least 31 primary streams per endpoint.                                                                               |
 
  
 
@@ -148,14 +147,3 @@ For improved power efficiency and performance, it is recommended USB Host Contro
 [Setting Up a USB 3.0 Connection Manually](http://go.microsoft.com/fwlink/?LinkId=227380)
 
 [USB Reference](http://msdn.microsoft.com/library/windows/hardware/ff540134.aspx)
-
- 
-
- 
-
-
-
-
-
-
-

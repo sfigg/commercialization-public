@@ -19,14 +19,7 @@ The Windows infrastructure supports devices that share buses, buses that are mul
 The following table summarizes the support for the Simple Peripheral Bus.
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Bus</th>
 <th>Inbox Support</th>
@@ -35,7 +28,7 @@ The following table summarizes the support for the Simple Peripheral Bus.
 <th>Additional support details</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>I²C</td>
 <td>No</td>
@@ -151,19 +144,14 @@ Peripherals are enumerated by ACPI and are generally static. Peripheral function
 Controller ACPI settings and bus parameters are vendor-specific and dependent on the particular controller. The following table summarizes the ACPI settings for the controller and the peripheral bus.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Bus</th>
 <th>Controller ACPI settings</th>
 <th>Peripheral ACPI settings</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td>I²C</td>
 <td><p>Controller addresses</p>
@@ -209,22 +197,10 @@ For an ACPI example, see [How to Get the Connection Settings for a Device](https
 ## Tools and technical reference
 
 
-| Resource Title                                             | Content type | Description                                                                                                                                                                                         | Link                                                                              |
-|------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Using the Windows Driver Framework to build better drivers | Video        | Discusses how the WDF can improve driver reliability, what’s new in the WDF, and how to better realize power-savings and deploy drivers on multiple versions of Windows.                            | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-328T)              |
-| Understanding Low-Power Buses                              | Video        | Demonstrates how to integrate a device on the new buses and create a driver. You will learn how to write ACPI to enumerate your peripheral and get started writing and testing a peripheral driver. | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-251T)              |
+| Resource Title                                             | Content type | Description                                                                                                                                                                                         | Link                                                                     |
+|------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Using the Windows Driver Framework to build better drivers | Video        | Discusses how the WDF can improve driver reliability, what’s new in the WDF, and how to better realize power-savings and deploy drivers on multiple versions of Windows.                            | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-328T)     |
+| Understanding Low-Power Buses                              | Video        | Demonstrates how to integrate a device on the new buses and create a driver. You will learn how to write ACPI to enumerate your peripheral and get started writing and testing a peripheral driver. | [Channel 9](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-251T)     |
 | Kernel-Mode Driver Framework Design Guide                  | Article      | Introduces Kernel-Mode Driver Framework (KMDF).                                                                                                                                                     | [MSDN](http://msdn.microsoft.com/library/windows/hardware/ff544283.aspx) |
-| UMDF 1.x Design Guide                                      | Article      | Introduces User-Mode Driver Framework (UMDF).                                                                                                                                                       | [MSDN](http://go.microsoft.com/fwlink/?LinkId=227355)                             |
-| Windows Hardware Compatibility Program                     | Article      | Provides information on the Windows Certification Program.                                                                                                                                          | [MSDN](../compatibility/windows-hardware-compatibility-program.md)                   |
-
- 
-
- 
-
- 
-
-
-
-
-
-
+| UMDF 1.x Design Guide                                      | Article      | Introduces User-Mode Driver Framework (UMDF).                                                                                                                                                       | [MSDN](http://go.microsoft.com/fwlink/?LinkId=227355)                    |
+| Windows Hardware Compatibility Program                     | Article      | Provides information on the Windows Certification Program.                                                                                                                                          | [MSDN](../compatibility/index.md)                                        |

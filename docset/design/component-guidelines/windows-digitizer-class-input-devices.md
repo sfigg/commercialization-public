@@ -19,17 +19,13 @@ Touch interfaces can be found today across myriad devices ranging from mobile ph
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Pen Devices](pen-devices.md)</p></td>
 <td><p>This section provides information about how to implement and validate an integrated Windows pen device, for Windows 10 and later operating systems.</p></td>
@@ -44,15 +40,3 @@ Touch interfaces can be found today across myriad devices ranging from mobile ph
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
