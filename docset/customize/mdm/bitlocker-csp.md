@@ -22,13 +22,13 @@ The following diagram shows the AppLocker configuration service provider in tree
 ![bitlocker csp](images/provisioning-csp-bitlocker.png)
 
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
-<p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.  
-
-<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
-<p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy. The last write wins if RequireDeviceEncryption is set in both Policy CSP and BitLocker CSP.</p>
+<p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.</p>
 
 <a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
 <p style="margin-left: 20px">TBD.</p>
+
+<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
+<p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy. The last write wins if RequireDeviceEncryption is set in both Policy CSP and BitLocker CSP.</p>
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**  
 <p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive type. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
