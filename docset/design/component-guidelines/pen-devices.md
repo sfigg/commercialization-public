@@ -19,17 +19,13 @@ This section provides information about how to implement and validate an integra
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Pen Implementation Guide](pen-implementation-guide.md)</p></td>
 <td><p>This section is an implementation guide for an integrated Pen device, for Windows 10 and later operating systems.</p></td>
@@ -40,15 +36,3 @@ This section provides information about how to implement and validate an integra
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
