@@ -12,7 +12,7 @@ MSHAttr:
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
+The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. The CSP was added in the next major update of Windows 10.
 
 > [!Note]  
 > Settings are only read at the time encryption is started. Encryption is not restarted with settings changes.
@@ -24,14 +24,14 @@ The following diagram shows the AppLocker configuration service provider in tree
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 <p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.  
 
-<a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
-<p style="margin-left: 20px">TBD.</p>
-
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
 <p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy. The last write wins if RequireDeviceEncryption is set in both Policy CSP and BitLocker CSP.</p>
 
+<a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
+<p style="margin-left: 20px">TBD.</p>
+
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**  
-<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive type. This is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
+<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive type. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
 
 <p style="margin-left: 20px">This setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
 
@@ -44,7 +44,7 @@ The following diagram shows the AppLocker configuration service provider in tree
 <a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup".</p>
 
-<p style="margin-left: 20px">ConfigureAdvancedStartup_Help">This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.</p>
+<p style="margin-left: 20px">This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.</p>
 
 > [!Note]  
 > Only one of the additional authentication options can be required at startup, otherwise an error occurs.
