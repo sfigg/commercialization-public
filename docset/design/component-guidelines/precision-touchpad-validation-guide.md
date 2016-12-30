@@ -18,17 +18,13 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[General Testing Guidelines](precision-touchpad-general-testing-guidelines.md)</p></td>
 <td><p>This topic provides general guidelines for testing a Windows Precision Touchpad device, using the Windows Hardware Lab Kit (HLK) for Windows 10.</p></td>
@@ -43,15 +39,3 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

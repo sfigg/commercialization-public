@@ -18,17 +18,13 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Pen Validation Overview](pen-validation-overview.md)</p></td>
 <td><p>This topic presents a brief overview of the assumed device test conditions for pen validation, and outlines critical pre-test requirements.</p></td>
@@ -55,15 +51,3 @@ The guidance provided here ensures compliance with Hardware Lab Kit (HLK) testin
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

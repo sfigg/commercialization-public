@@ -18,17 +18,13 @@ The information includes guidance on using the Human Interface Device (HID) prot
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Device Bus Connectivity](touchscreen-device-bus-connectivity.md)</p></td>
 <td><p>This topic discusses bus connectivity methods for an integrated Windows touchscreen device.</p></td>
@@ -43,15 +39,3 @@ The information includes guidance on using the Human Interface Device (HID) prot
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-
