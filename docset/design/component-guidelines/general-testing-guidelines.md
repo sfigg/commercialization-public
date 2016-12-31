@@ -16,13 +16,11 @@ This topic provides general guidelines for testing a Windows pen device, using t
 
 -   Unless otherwise specified, all numbers in error messages which report distance or location are in himetric (0.01mm).
 
--   
+-   Unless otherwise specified, a nominal weight of 150g should be applied to the pen holder for all tests.
 
-    Unless otherwise specified, a nominal weight of 150g should be applied to the pen holder for all tests.
+    + When applying the 150g of weight, distribute the weight as evenly as possible onto both sides of the pen holder. This can be either a 50g/100g split, or a 75g/75g split, if enough weights are available.
 
-    o When applying the 150g of weight, distribute the weight as evenly as possible onto both sides of the pen holder. This can be either a 50g/100g split, or a 75g/75g split, if enough weights are available.
-
-    o Except for tests that require precise application of weights, it is acceptable that the total applied weight at pen tip exceeds 150g due to the weight of the pen and the pen holder.
+    + Except for tests that require precise application of weights, it is acceptable that the total applied weight at pen tip exceeds 150g due to the weight of the pen and the pen holder.
 
 -   Unless otherwise specified, the pen holder should be held at an angle of 90 degrees i.e. placed vertically against the screen.
 
@@ -37,13 +35,3 @@ This topic provides general guidelines for testing a Windows pen device, using t
 -   The Windows 10 HLK only supports testing a single pen digitizer at a time. If your device exposes multiple pen TLCs, you will need to do the following to ensure that the correct pen digitizer is being tested:
     1. Open **Device Manager**, then expand the **Human Interface Devices** node.
     2. Find and disable all HID-compliant pen digitizers, with the exception of the one that you want to validate.
-
- 
-
- 
-
-
-
-
-
-

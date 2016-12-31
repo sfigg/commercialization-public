@@ -14,8 +14,8 @@ This section provides guidelines for pen protocol implementation. Integrated Win
 
 A good understanding of the HID protocol is needed to be able to understand the information presented here. See the following resources for information about the HID protocol:
 
--   [Device Class Definition for Human Interface Devices (HID) Version 1.11](http://www.usb.org/developers/hidpage#class-definitions)
--   [HID Usage Tables Version 1.12](http://www.usb.org/developers/hidpage#hid-usage)
+-   [Device Class Definition for Human Interface Devices (HID) Version 1.11](http://www.usb.org/developers/hidpage#Class_Definitions)
+-   [HID Usage Tables Version 1.12](http://www.usb.org/developers/hidpage#HID_Usage)
 -   [HID Over I2C Protocol Specification Version 1.0](https://msdn.microsoft.com/library/windows/hardware/Dn642101.aspx)
 
 Windows includes a HID class driver and corresponding HID I²C, HID USB and HID BTH miniport drivers. So there is no need to develop 3rd-party drivers for integrated Windows pen devices that use one of these buses. In fact, the Windows 10 Hardware Lab Kit (HLK) doesn't even allow the testing of 3rd-party drivers for Windows pen devices that connect via one of the buses mentioned previously. However, if you want to use a 3rd-party bus controller, or develop your own to use with your Windows pen device, you can do that.
@@ -28,17 +28,13 @@ A sample descriptor is provided in the [Sample Report Descriptors](pen-sample-re
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
+<thead valign="bottom">
 <tr class="header">
 <th>Topic</th>
 <th>Description</th>
 </tr>
 </thead>
-<tbody>
+<tbody valign="top">
 <tr class="odd">
 <td><p>[Required HID Descriptors](required-hid-descriptors.md)</p></td>
 <td><p>This topic presents the required HID descriptors (and device attributes) for a Windows pen device in Windows 10 and later operating systems.</p></td>
@@ -57,15 +53,3 @@ A sample descriptor is provided in the [Sample Report Descriptors](pen-sample-re
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
-

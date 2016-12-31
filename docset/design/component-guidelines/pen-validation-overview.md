@@ -20,8 +20,10 @@ In order to ensure that all Windows Hardware Lab Kit (HLK) tests run successfull
 This Pen Validation Guide makes the following assumptions about the testing conditions of the device:
 
 -   HLK tests are being run on a device with Windows 10 installed.
+    
     Only the Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) are supported by the HLK tests at this time. See the [Appendix: Frequently Asked Questions](appendix.md) section for additional information.
 -   Device under test has a diagonal screen size of 4.5” - 30.”
+    
     See the [Appendix: Frequently Asked Questions](appendix.md) section for additional information.
 -   Device reports HID usages as described in the [Pen Implementation Guide](pen-implementation-guide.md).
 
@@ -41,18 +43,10 @@ If your device or testing setup does not meet the above criteria, you will not b
 These steps must be performed on the device under test before running the pen HLK tests.
 
 -   Put the device into Developer Mode:
+    
     To put your device into Developer Mode, navigate to the **Settings** &gt; **Update & security** dialog window. Then select **For developers** in the left-hand pane, and click **Developer Mode** in the right-hand window.
 -   Enable test signing:
+    
     To enable test signing, open an Administrator Command Prompt and Enter the command "**bcdedit /set testsigning on**", then restart the system.
 
 The remaining topics in the Pen Validation Guide, provide more detailed information about the setup and other procedures for performing the pen-related tests in the HLK.
-
- 
-
- 
-
-
-
-
-
-

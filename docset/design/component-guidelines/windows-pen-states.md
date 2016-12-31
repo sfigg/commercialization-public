@@ -27,7 +27,7 @@ In this state (shown in the preceding diagram), no input reports are delivered t
 
 **In Range**
 
-This is a common scenario for a Windows pen, ad it occurs when the user is holding the pen within the detection range of the digitizer.
+This is a common scenario for a Windows pen, and it occurs when the user is holding the pen within the detection range of the digitizer.
 
 ![diagram showing a windows pen device that is in range of the digitizer surface](../images/pen-inrange.png)
 
@@ -112,7 +112,7 @@ Integrated Windows pen devices should be able to recover from a firmware update 
 
 Prior to Windows 10, upon receiving input from a pen device that was either in-range or in contact of the screen, the operating system would suppress all touch input (whether in inking or erase mode).
 
-In Windows 10, version 1607the dead-zone is more compact to aid with simultaneous pen and touch interaction. The modified dead-zone captures almost 95% of inadvertent touches while still providing great end-user experience.
+In Windows 10, version 1607, the dead-zone is more compact to aid with simultaneous pen and touch interaction. The modified dead-zone captures almost 95% of inadvertent touches while still providing great end-user experience.
 
 For left-handed users, the dead-zone ranges from 100 - 270 degrees and spans up to 12 cm radially.
 
@@ -124,7 +124,7 @@ The operating system accepts touch interactions either from the left or right of
 
 ![image showing the pen settings dialog window, where you can select your handedness, for proper operation of the windows 10 palm rejection feature.](../images/pen-settings-dlg.png)
 
-**Note**  Although legacy devices (specifically ones suppress touch input when pen input is being delivered) will function in Windows 10, these devices will not deliver the functionality described above. Additionally, these devices will not deliver any future functionality that leverages simultaneous pen and touch reporting.
+**Note**  Although legacy devices (specifically ones that suppress touch input when pen input is being delivered) will function in Windows 10, these devices will not deliver the functionality described above. Additionally, these devices will not deliver any future functionality that leverages simultaneous pen and touch reporting.
 
  
 
@@ -151,13 +151,3 @@ Here's the registry key that can be used to set the pinch/zoom delay value.
  
 
 Note that this registry setting and the related delay zoom mechanism are only effective on Windows 10 systems which expose an integrated pen digitizer.
-
- 
-
- 
-
-
-
-
-
-

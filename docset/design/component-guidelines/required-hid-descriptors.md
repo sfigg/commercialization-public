@@ -15,7 +15,7 @@ This topic presents the required HID descriptors (and device attributes) for a W
 ## Required USB HID Descriptor
 
 
-The following table shows the required USB HID descriptor. For more information, see **section 6.2.1** in [Device Class Definition for Human Interface Devices (HID) Version 1.11](http://www.usb.org/developers/hidpage#class-definitions).
+The following table shows the required USB HID descriptor. For more information, see **section 6.2.1** in [Device Class Definition for Human Interface Devices (HID) Version 1.11](http://www.usb.org/developers/hidpage#Class_Definitions).
 
 | Member            | Size in bytes | Description              |
 |-------------------|---------------|--------------------------|
@@ -62,15 +62,3 @@ The following HID properties must be provided in the device attributes. The repo
 | wVendorID  | Vendor ID               | idVendor in USB Device Descriptor  | wVendorID in I²C HID Descriptor (see the preceding table). |
 | wProduct   | Product ID              | idProduct in USB Device Descriptor | wDeviceID in I²C HID Descriptor (see the preceding table). |
 | wVersionID | Firmware version number | bcdDevice in USB Device Descriptor | wVersionID I²C HID Descriptor (see the preceding table).   |
-
- 
-
- 
-
- 
-
-
-
-
-
-

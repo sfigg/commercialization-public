@@ -66,28 +66,24 @@ You can use either one of these tools for RA testing.
 In addition to the Pen Holder parts from TRIEX and ITRI, the following accessories are also required for testing.
 
 -   Zip Ties (for affixing pen to TRIEX pen holders)
+    
     Recommended part is available from McMaster, part 7130K12
 -   Ruler/Caliper (for measuring height for Hover Range test)
+    
     Anything that can measure in millimeters will meet requirements
 
 ## <a href="" id="hw-vendor-contacts"></a>Contacts for TRIEX and ITRI
 
 
 -   Triex Technologies, Inc.
+    <p>
     Tim Wright
-    +1 (206) 940-0943
-    timw@triextech.com
+    <br/>+1 (206) 940-0943
+    <br/>timw@triextech.com
+    </p>
 -   Industrial Technology Research Institute
+    <p>
     Sen Yih Chou
-    +886 (03) 5743887
-    senyih@itri.org.tw
-
- 
-
- 
-
-
-
-
-
-
+    <br/>+886 (03) 5743887
+    <br/>senyih@itri.org.tw
+    </p>
