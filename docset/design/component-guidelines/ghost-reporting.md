@@ -45,18 +45,9 @@ Here's a screenshot from the Ghost Reporting test.
 **Common error messages**
 
 -   "Ghost input detected"
+    
     Occurs if any pen input is detected during the test.
 
 **Passing criteria**
 
 -   2/2 test iterations must pass for the test to succeed.
-
- 
-
- 
-
-
-
-
-
-

@@ -47,10 +47,13 @@ Here's a screenshot from the Stationary Jitter test.
 **Common error messages**
 
 -   "Jitter too high."
+
     Occurs if the pen’s jitter exceeds the tolerance.
 -   "The contact did not begin/end in the correct location."
+
     Occurs if the pen stroke does not begin and end in the green rectangle.
 -   "The interaction’s duration was too short."
+
     Occurs if the pen stroke does not last the required duration.
 
 **Passing criteria**
@@ -59,14 +62,4 @@ Here's a screenshot from the Stationary Jitter test.
 -   This test has a .06 mm (20%) allowed tolerance, therefore a recorded stationary jitter &lt;= 0.36 mm will result in a pass.
 -   A single iteration that is more than .06 above the allowed tolerance, resulting in a stationary jitter of &gt;=0.42 mm, will fail the entire test.
 
-    Output is derived as the max value of jitter over valid iterations
-
- 
-
- 
-
-
-
-
-
-
+    Output is derived as the max value of jitter over valid iterations.

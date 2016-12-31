@@ -45,7 +45,7 @@ If you decide to use the wake functionality, the power line that is connected to
 
 **ACPI Table Entries**
 
-A Windows pen device that is connected via I²C must define an entry in the Advanced Configuration and Power Interface (ACPI) table of the host, for the device to be recognized by the host. For more information about ACPI, see [Advanced Configuration and Power Interface Specification](http://www.acpi.info/spec.md).
+A Windows pen device that is connected via I²C must define an entry in the Advanced Configuration and Power Interface (ACPI) table of the host, for the device to be recognized by the host. For more information about ACPI, see [Advanced Configuration and Power Interface Specification](http://www.acpi.info/spec.htm).
 
 The ACPI table entry should specify the following information:
 
@@ -77,13 +77,3 @@ Note that, when connecting to a USB hub, it is important to understand the bandw
 **USB Bridge Devices (I**²**C -&gt; USB)**
 
 If you use a USB bridge to connect an integrated I²C Windows pen to the host, the bridge should expose the integrated Windows pen as a distinct device node, with the device’s unique attributes (wVendorID, wProductID, wVersionID).
-
- 
-
- 
-
-
-
-
-
-

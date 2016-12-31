@@ -44,12 +44,16 @@ Here's a screenshot from the Moving Jitter test.
 **Common error messages**
 
 -   "Distance from line of best fit too large."
+
     Occurs if the pen stroke’s jitter deviates too far from the line of best fit (defined as the straight line between the first and last packets).
 -   "The contact did not begin/end in the correct location."
+
     Occurs if the pen stroke does not begin in the green rectangle and end in the yellow rectangle.
 -   "The interaction’s duration was too short."
+
     Occurs if the pen stroke does not last the required duration.
 -   "Report rate too low."
+
     Occurs if the pen fails the report rate requirement of &gt;= 133 Hz with a tolerance of 7 Hz.
 
 **Passing criteria**
@@ -57,13 +61,3 @@ Here's a screenshot from the Moving Jitter test.
 -   7/8 test iterations must pass for test success.
 -   This test has an allowed tolerance of 0.05 mm for moving jitter, therefore a recorded moving jitter &lt;= 0.45 mm will result in the iteration passing.
 -   Any iteration that is more than 0.1 mm beyond the allowed tolerance, resulting in a recorded moving jitter &gt;= 0.5 mm, will fail the entire test.
-
- 
-
- 
-
-
-
-
-
-

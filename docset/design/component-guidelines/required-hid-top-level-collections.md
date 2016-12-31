@@ -103,6 +103,7 @@ The following sections provide more details about the mandatory and the Windows-
 -   Physical minimum & Physical maximum
 -   Unit & Unit exponent
 -   Logical minimum & Logical maximum (ensuring an input resolution &gt;= 150DPI)
+    
     **Note**  The entire logical coordinate range should be reportable across both the *X* and *Y* axis.
 
      
@@ -184,13 +185,3 @@ The physical range and logical range must be specified. The physical range may b
 Twist specifies the clockwise rotation of the pen around its own major axis.
 
 The physical range and logical range must be specified. The physical range must be 0 to 360. The logical range must be large enough to deliver data that is accurate to at least two decimal places. Radians can also be used for the physical range. In this case, the logical range must be large enough to report values that are accurate to at least four decimal places.
-
- 
-
- 
-
-
-
-
-
-

@@ -45,12 +45,16 @@ Here's a screenshot from the Hover Stationary Jitter test.
 **Common error messages**
 
 -   "The contact did not begin/end in the correct location."
+
     Occurs if the pen stroke does not begin and end in the green rectangle.
 -   "Input made contact with the screen."
+
     Occurs if the pen interaction touches the screen.
 -   "Input ended too early."
+
     Occurs if the pen is not held stationary in hover range for the required duration.
 -   "Jitter too high."
+
     Occurs if the pen does not pass the hover stationary jitter requirement.
 
 **Passing criteria**
@@ -59,13 +63,3 @@ Here's a screenshot from the Hover Stationary Jitter test.
 -   This test has a 0.10 mm allowed tolerance, therefore a recorded hover stationary jitter of &lt;= 0.6 mm will result in a pass.
 -   Any iteration that is 0.15mm beyond the allowed tolerance, resulting in a recorded hover stationary jitter of &gt;= 0.7 mm, will fail the entire test.
 -   Recorded value for Hover Stationary jitter is calculated as maximum hover jitter over the iteration.
-
- 
-
- 
-
-
-
-
-
-
