@@ -91,6 +91,8 @@
 #### [Defender DDF file](defender-ddf.md)
 ### [DevDetail CSP](devdetail-csp.md)
 #### [DevDetail DDF file](devdetail-ddf-file.md)
+### [DeveloperSetup CSP](developersetup-csp.md)
+#### [DeveloperSetup DDF](developersetup-ddf.md)
 ### [DeviceInstanceService CSP](deviceinstanceservice-csp.md)
 ### [DeviceLock CSP](devicelock-csp.md)
 #### [DeviceLock DDF file](devicelock-ddf-file.md)
