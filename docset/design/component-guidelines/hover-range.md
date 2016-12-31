@@ -48,20 +48,12 @@ Here's a screenshot of the Hover - Range test.
 **Common error messages**
 
 -   "Contact is not hovering in the correct quadrant"
+
     Occurs if pen input is detected in an area other than the highlighted quadrant.
 -   "Manually failed by user"
+
     Occurs if the operator manually Fails the test (Fails the hover range requirement).
 
 **Passing criteria**
 
 -   4/4 test iterations must pass for the test to succeed.
-
- 
-
- 
-
-
-
-
-
-

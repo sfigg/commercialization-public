@@ -45,10 +45,13 @@ Here's a screenshot from the Hover Accuracy test.
 **Common error messages**
 
 -   "The contact did not begin/end in the correct location"
+
     Occurs if the pen stroke does not begin and end in the green rectangle.
 -   "Input did not make contact with the screen"
+
     Occurs if the pen interaction never touches the screen.
 -   "Contact distance from hover point too large”
+
     Occurs if the pen’s hover accuracy does not pass the requirement.
 
 **Passing criteria**
@@ -56,13 +59,3 @@ Here's a screenshot from the Hover Accuracy test.
 -   7/8 test iterations must pass for the test to succeed.
 -   This test has a 0.2 mm allowed tolerance, therefore a recorded hover accuracy &lt;= 1.2 mm will result in a pass.
 -   Any iteration that is 0.2 mm beyond the allowed tolerance, resulting in a recorded hover accuracy &gt;= 1.4 mm, will fail the entire test.
-
- 
-
- 
-
-
-
-
-
-

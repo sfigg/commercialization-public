@@ -37,18 +37,9 @@ This is to ensure that there is no 3rd party driver for a Windows pen device tha
 **Common error messages**
 
 -   "Must not require additional drivers."
+
     Occurs if the pen fails the third party driver requirement.
 
 **Passing criteria**
 
 -   1/1 test iterations must pass for the test to succeed.
-
- 
-
- 
-
-
-
-
-
-

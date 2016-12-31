@@ -32,6 +32,7 @@ This is a test to indicate whether or not a Windows pen device supports custom g
 
 1. Run test case for Custom Gestures.
 2. Click the "Fail" button, if your device has custom runtime gestures, otherwise click "Pass."
+
 Here's a screenshot from the Custom Gestures test.
 
 ![screenshot from the custom gestures test for a windows pen device.](../images/pen-test-custgesture.png)
@@ -39,18 +40,9 @@ Here's a screenshot from the Custom Gestures test.
 **Common error messages**
 
 -   "Manually failed by user"
+    
     Occurs if the operator manually Fails the test (fails the Custom Gestures requirement).
 
 **Passing criteria**
 
 -   1/1 test iterations must pass for the test to succeed.
-
- 
-
- 
-
-
-
-
-
-

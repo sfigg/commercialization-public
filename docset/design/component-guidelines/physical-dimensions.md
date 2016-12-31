@@ -34,7 +34,7 @@ This is to test the accuracy of the reported screen size (its physical dimension
 
 2. Using a ruler, measure the physical dimensions (width and height) of the device’s screen. If the dimensions measured do not match the values reported in the text box in the center of the screen, manually Fail the test. Otherwise, manually Pass the test.
 
-**Note**  Physical measurements should be accurate to +/- 2mm.
+   **Note**  Physical measurements should be accurate to +/- 2mm.
 
  
 
@@ -49,13 +49,3 @@ Here's a screenshot from the Physical Dimensions test.
 **Passing criteria**
 
 -   1/1 test iterations must pass for test to succeed.
-
- 
-
- 
-
-
-
-
-
-
