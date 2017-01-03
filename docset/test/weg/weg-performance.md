@@ -571,8 +571,8 @@ longer the case in Windows 8.x and Windows 10.
 
 The default boot performance has improved dramatically by leveraging
 hibernate technology. To understand the improvements made to the
-performance of the on/off experience, see the [Hibernate (S4) suspend
-and resume](#z1) section of this document. The considerations in this
+performance of the on/off experience, see [Hibernate (S4) suspend
+and resume](#hibernate-s4-suspend-and-resume), later in this topic. The considerations in this
 section outline the user model for the fast on/off transitions, options
 related to those transitions, and the components required by OEMs/ODMs
 to deliver the experience.
