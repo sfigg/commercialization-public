@@ -151,6 +151,12 @@ To save space on the drive, you can remove or reduce the size of the hiberfil.sy
 -  `powercfg /h /type reduced`   : Reduces the file by 30%   
 -  `powercfg /h /off`            : Removes the file.   
 
+### <span id="Language_packs"></span>Language packs and features on demand
+
+Installed language packs (LPs) can take more space than just the size of the LP itself. When you preinstall FODs and UWP apps on a Windows installation that contains multiple LPs, resource files based on preinstalled LPs are also installed. When unused languages are automatically removed after OOBE, corresponding UWP and feature on demand (FOD) resource files are not removed. Preinstalling fewer LPs saves disk space by limiting the number of resource files that remain on a system after removing unused language packs.
+
+Features on demand are distributed in compressed CAB files so the size of an installed FOD is larger than the size of the original CAB. You can use`/Get-CapabilityInfo` in DISM to view an FOD's download and install sizes. See [Features on demand](features-on-demand-v2--capabilities.md) for how to get information about FODs.
+
 ### <span id="Applications_"></span><span id="applications_"></span><span id="APPLICATIONS_"></span>Applications
 
 Software applications that are installed on the computer may require additional space for caches, logs, and updates. Disk space must also be available on the drive to account for temporary increases in resource usage during installation of applications, patches, and updates.
