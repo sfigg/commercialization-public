@@ -13,7 +13,9 @@ You may need to disable Secure Boot to run some PC graphics cards, hardware, or 
 
 Secure Boot helps to make sure that your PC boots using only firmware that is trusted by the manufacturer.
 
-For most PCs, you can disable Secure Boot through the PC’s firmware (BIOS) menus. For logo-certified Windows RT 8.1 and Windows RT PCs, Secure Boot is required to be configured so that it cannot be disabled.
+You can disable Secure Boot through the PC’s firmware (BIOS) menus, but the way you disable it varies by PC manufacturer. If you are having trouble disabling Secure Boot after following the steps below, contact your manufacturer for help.
+
+For logo-certified Windows RT 8.1 and Windows RT PCs, Secure Boot is required to be configured so that it cannot be disabled.
 
 **Warning**  
 -   After disabling Secure Boot and installing other software and hardware, it may be difficult to re-activate Secure Boot without restoring your PC to the factory state.
@@ -22,7 +24,7 @@ For most PCs, you can disable Secure Boot through the PC’s firmware (BIOS) men
 
  
 
-**To disable Secure Boot:**
+## <span id="disable_secure_boot"></span>Disable Secure Boot
 
 1.  Before disabling Secure Boot, consider whether it is necessary. From time to time, your manufacturer may update the list of trusted hardware, drivers, and operating systems for your PC. To check for updates, go to Windows Update, or check your manufacturer's website.
 
@@ -40,7 +42,7 @@ For most PCs, you can disable Secure Boot through the PC’s firmware (BIOS) men
 
 6.  If you’re using Windows 8.1, you may see a watermark on the desktop alerting you that Secure Boot is not configured correctly. Get this [update to remove the Secure Boot desktop watermark](http://go.microsoft.com/fwlink/p/?linkid=329932).
 
-**To re-enable Secure Boot:**
+## <span id="enable_secure_boot"></span>Re-enable Secure Boot
 
 1.  Uninstall any graphics cards, hardware, or operating systems that aren’t compatible with Secure Boot.
 
