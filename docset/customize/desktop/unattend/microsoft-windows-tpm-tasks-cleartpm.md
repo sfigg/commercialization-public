@@ -1,9 +1,11 @@
+---
 title: Microsoft-Windows-TPM-Tasks-ClearTpm
 description: Microsoft-Windows-TPM-Tasks-ClearTpm
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
----# Microsoft-Windows-TPM-Tasks
+---
+# Microsoft-Windows-TPM-Tasks
 
 # Microsoft-Windows-TPM-Tasks-ClearTpm
 
