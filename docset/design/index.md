@@ -1,25 +1,49 @@
 ---
-title: Design
-description: Provides guidelines for designing hardware components and systems.
+title: Design Windows 10 devices
+description: Building a great Windows 10 device starts with selecting the right components.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 084fc682-8542-4e36-9543-bb7c84f02ddd
-author: joshbax-msft
 ---
 
-# Design
+# Design Windows 10 devices
 
-## Purpose
 
-Building a great Windows 10 device starts with selecting the right components. Understanding the difference between minimum and optimal hardware requirements will ensure the best usability and performance. To take advantage of the latest features like Cortana and Windows Hello, your hardware must meet specific requirements to ensure an optimal device experience.
+Building a great Windows 10 device starts with selecting the right components. Understanding the difference between minimum and optimal hardware requirements will ensure the best usability and performance. To take advantage of the latest features like Cortana and Continuum, your hardware must meet specific requirements to ensure an optimal device experience.
 
-Windows 10 supports a wide range of devices—from phones, to tablets and laptops, to All-in-one and desktop devices. This section provides guidelines for designing your next Windows 10 device.
+## Form factors
 
-| Topic | Description |
-|-------|-------------|
-| [Windows Hardware Compatibility Program](compatibility/index.md) | The Windows Hardware Compatibility Program is an evolution of the Windows Logo Program and the Windows Hardware Certification Programs. It is designed to help your company deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10 for desktop editions (Home, Pro, and Enterprise), and the next version of Windows Server. |
 
-## <a href="" id="developer-audience-heading"></a>Developer audience
+![windows device form factors](images/formfactors.png)
 
-This section of the partner documentation is intended for all partners (OEMs, ODMs, IHV, ISV, system builders, and mobile operators).
+Windows 10 supports a wide range of devices—from phones, to tablets and laptops, to All-in-one or desktop devices. See [Form factors](p_weg_hardware.form_factors) to choose your device and learn more info about creating great Windows devices.
+
+## Design guidelines
+
+
+![review minimum hardware requirements](images/review-min-hw-requirements.png)
+
+The minimum hardware requirements specification defines the minimum hardware requirements necessary to boot and run Windows 10, update and service Windows 10, and provide a baseline user experience that is comparable with similar devices and computers.
+
+Minimum hardware requirements enable OEMs, ODMs, SoC vendors, and other component vendors to make early design decisions for devices and computers that will run Windows 10.
+
+[Review the minimum hardware requirements](p_weg_hardware.minimum_hardware_requirements_overview)
+
+![plan the user experience](images/plan-the-user-experience.png)
+
+Build devices that take full advantage of the latest Windows 10 features. To get started learn how the feature works and then choose the right hardware.
+
+[Learn more about the latest Windows 10 features](p_weg_hardware.device_experiences__scenarios_)
+
+![select the right components](images/select-right-components.png)
+
+Building a great device for Windows means with selecting the right components. Microsoft makes recommendations to help you put together the best system for running Windows 10.
+
+[Learn more about individual component guidelines](p_weg_hardware.components)
+
+![test for compatibility and reliability](images/test-for-compatibility-and-reliability.png)
+
+We provide tests that help you deliver systems, software and hardware products that are compatible with Windows and run reliably on Windows 10. We also give you the opportunity to promote your product on Microsoft’s Certified Products List and with the Windows logo.
+
+[Learn more about the Windows Hardware Compatibility Program](compatibility/index.md)

@@ -9,7 +9,7 @@ title: What's new in Windows manufacturing
 
 This topic covers new improvements for desktop, mobile, and IoT manufacturing. 
 
-## <span id="Whats_new_in_desktop_manufacturing"></span><span id="desktop"></span> What's new in desktop manufacturing 
+## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
 
 **December 1, 2016**
 
@@ -23,13 +23,13 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
 
-[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](desktop/add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
 [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
-[Append, apply, and export volume images with a Windows Image (.wim) file](desktop/append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
+[Append, apply, and export volume images with a Windows Image (.wim) file](append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
 
-[Compact OS, single-instancing, and image optimization](desktop/compact-os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
+[Compact OS, single-instancing, and image optimization](desktop/compact_os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
 
 **November 30, 2016**
 
@@ -135,7 +135,7 @@ The following changes are new for Windows 10, version 1607:
 
 
 
-## <span id="Whats_new_in_Mobile_Manufacturing"></span><span id="mobile"></span>What's new in mobile manufacturing
+## <span id="Whats_new_in_Mobile_Manufacturing"></span>What's new in mobile manufacturing
 
 **October 4, 2016**
 
@@ -145,7 +145,7 @@ The following changes are new for Windows 10, version 1607:
 
 
 
-## <span id="Whats_new_in_IoT_Core_Manufacturing"></span><span id="iot_core"></span>What's new in IoT Core manufacturing
+## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
 **November 4, 2016**
 
