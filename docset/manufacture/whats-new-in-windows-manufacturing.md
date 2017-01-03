@@ -11,6 +11,10 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 ## <span id="Whats_new_in_desktop_manufacturing"></span> What's new in desktop manufacturing 
 
+**January 3, 2017**
+
+- [Lab 8: Add branding and license agreements](desktop/add-a-license-agreement.md): added instructions to add an image info file (csup.txt) to the image.
+
 **December 1, 2016**
 
 [OEM deployment lab](desktop/oem-windows-deployment-and-imaging-walkthrough.md): Changed the recommendation for the order to install updates and languages:
