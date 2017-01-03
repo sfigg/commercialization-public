@@ -125,4 +125,4 @@ The following diagram shows the AppLocker configuration service provider in tree
 <p style="margin-left: 20px">If you disable or do not configure this setting, all removable data drives on the computer will be mounted with read and write access.</p>
 
 > [!Note]  
-> This setting can be overridden by the settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" setting is enabled this setting will be ignored.
+> This setting can be overridden by the Group Policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" setting is enabled this setting will be ignored.
