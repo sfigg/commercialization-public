@@ -119,7 +119,7 @@ The following command-line options are available for BCDBoot.exe.
 <li><p>When you specify the <code>ALL</code> value, BCDBoot creates both the <strong>\Boot</strong> and the <strong>\Efi\Microsoft\Boot</strong> directories, and copies all required boot-environment files for BIOS and UEFI to these directories.</p></li>
 </ul>
 <p>If you specify the <strong>/f</strong> option, you must also specify the <strong>/s</strong> option to identify the volume letter of the system partition.</p>
-<p>The following example copies BCD files that support booting on either a UEFI-based or a BIOS-based computer from the C:\Windows folder to a USB flash drive that was assigned the volume letter <em>F</em>:</p>
+<p>The following example copies BCD files that support booting on either a UEFI-based or a BIOS-based computer from the C:\Windows folder to a USB flash drive that was assigned the volume letter <em>S</em>:</p>
 <pre class="syntax" space="preserve"><code>bcdboot C:\Windows /s S: /f ALL </code></pre></td>
 </tr>
 <tr class="odd">
