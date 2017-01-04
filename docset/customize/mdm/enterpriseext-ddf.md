@@ -43,9 +43,10 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
             <NodeName>DeviceCustomData</NodeName>
             <DFProperties>
                 <AccessType>
-                    <Exec />
                     <Get />
                     <Replace />
+                    <Add />
+                    <Delete />
                 </AccessType>
                 <DFFormat>
                     <node />
@@ -107,9 +108,10 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
             <NodeName>Brightness</NodeName>
             <DFProperties>
                 <AccessType>
-                    <Exec />
                     <Get />
                     <Replace />
+                    <Add />
+                    <Delete />
                 </AccessType>
                 <DFFormat>
                     <node />
@@ -171,9 +173,10 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
             <NodeName>LedAlertNotification</NodeName>
             <DFProperties>
                 <AccessType>
-                    <Exec />
                     <Get />
                     <Replace />
+                    <Add />
+                    <Delete />
                 </AccessType>
                 <DFFormat>
                     <node />
@@ -296,6 +299,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Enterpr
         </Node>
     </Node>
 </MgmtTree>
+
 ```
 
 
