@@ -18,7 +18,7 @@ Note: Split WIMs are supported by DISM /Apply-Image, but are not supported in th
 
 After the files are split, you can copy them onto separate DVDs, or onto USB key(s).
 
-**Note** Before you can apply the image, you must first put all of the split files into the same folder, for example, by copying them to a temporary folder on the destination computer. Then use DISM to apply the image, while specifying the split .swm files location and file pattern. DISM does not support applying the files from separate folders or DVDs.
+Note, before you can apply the image, you must first put all of the split files into the same folder, for example, by copying them to a temporary folder on the destination computer. Then use DISM to apply the image, while specifying the split .swm files location and file pattern. DISM does not support applying the files from separate folders or DVDs.
 
 By default, this option creates new split .wim files with a .swm extension. The first file name is based on the specified file name, and each of the following files receives a number after it. For example, when you split "Install.wim", the default filenames are "Install.swm", "Install2.swm", "Install3.swm", and so on.
 
