@@ -70,7 +70,7 @@ This is a test to check the time lag (latency) between the Windows pen being in 
     + Because of this, the pause before the beginning of the Acquisition stage always occurs when the count = 17.
     + If the count isn’t incrementing properly, abort the test. Turn off the control box, unplug and re-plug the control box into the test machine via USB, then turn the control box on again. Start the test from the beginning, and verify that the count is incrementing correctly.
     
-      **Note**  A correctly incrementing count should start at 1, and increment by 2 each rotation cycle until the count hits 17.
+    **Note**  A correctly incrementing count should start at 1, and increment by 2 each rotation cycle until the count hits 17.
 
      
 
