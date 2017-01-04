@@ -107,7 +107,7 @@ The following command-line options are available for BCDBoot.exe.
 </ol>
 <p>The following example copies BCD files from the C:\Windows folder to a system partition on a secondary hard drive that will be booted on another computer. The system partition on the secondary drive was assigned the volume letter <em>S</em>:</p>
 <pre class="syntax" space="preserve"><code>bcdboot C:\Windows /s S:</code></pre>
-<p>The following example creates boot entries on a USB flash drive with the volume letter F, including boot files to support either a UEFI-based or a BIOS-based computer:</p>
+<p>The following example creates boot entries on a USB flash drive with the volume letter S, including boot files to support either a UEFI-based or a BIOS-based computer:</p>
 <pre class="syntax" space="preserve"><code>bcdboot C:\Windows /s S: /f ALL</code></pre></td>
 </tr>
 <tr class="even">
