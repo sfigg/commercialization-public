@@ -9,7 +9,7 @@ title: Understanding Servicing Strategies
 # Understanding Servicing Strategies
 
 
-A Windows image can be serviced at various phases of deployment in the following ways: offline, during an automated installation, or online. The phase of deployment that you select depends on your deployment strategy.
+A Windows® image can be serviced at various phases of deployment in the following ways: offline, during an automated installation, or online. The phase of deployment that you select depends on your deployment strategy.
 
 [Offline Servicing](#offlineservicingstrategy): Involves adding and removing updates, drivers, and language packs, and configuring other settings, without booting Windows. Offline servicing is an efficient way to manage existing images that are stored on a server because it eliminates the need for re-creating updated images. You can perform offline servicing on an image that is mounted or applied to a drive or directory.
 
@@ -24,7 +24,7 @@ The following illustration shows the servicing opportunities available during th
 ## <span id="OfflineServicingStrategy"></span><span id="offlineservicingstrategy"></span><span id="OFFLINESERVICINGSTRATEGY"></span>Offline Servicing
 
 
-Offline servicing was introduced with Windows Vista. Offline servicing occurs when you modify or service a Windows image entirely offline without booting it first. For Windows Vista, the Package Manager command-line tool was provided for updating Windows images. In Windows 7, Windows 8, and Windows 10, Deployment Image Servicing and Management (DISM) replaces Package Manager. For Windows 8, most operating system servicing operations can be performed on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows 8 and Windows 10, and also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see [DISM - Deployment Image Servicing and Management Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
+Offline servicing was introduced with Windows Vista. Offline servicing occurs when you modify or service a Windows image entirely offline without booting it first. For Windows Vista, the Package Manager command-line tool was provided for updating Windows images. In Windows 7 and Windows 8, Deployment Image Servicing and Management (DISM) replaces Package Manager. For Windows 8, most operating system servicing operations can be performed on an offline Windows image by using the DISM command-line tool. DISM is installed with Windows 8, and also distributed in the Windows Assessment and Deployment Kit (Windows ADK). For more information about DISM, see [DISM - Deployment Image Servicing and M\\anagement Technical Reference for Windows](dism---deployment-image-servicing-and-management-technical-reference-for-windows.md).
 
 DISM can be used on an offline image to:
 

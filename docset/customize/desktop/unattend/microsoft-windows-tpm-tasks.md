@@ -5,7 +5,10 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ---
+<<<<<<< HEAD
 # Microsoft-Windows-TPM-Tasks
+=======
+>>>>>>> 2f8ed784490794487058cd7fe976f9aa17e64119
 
 # Microsoft-Windows-TPM-Tasks
 

@@ -53,27 +53,27 @@ Other settings that use provisioning packages:
 
 9.  At the **All done!** page, click the link to the **Output location**.
 
-**Add your provisioning package into the automatic provisioning package folder**
+**Create a folder for the provisioning package in your test product**
 
-1.  In File Explorer, navigate to: C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov.
+1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov.
 
-    This folder was created by the NewProduct command, and should include one file, customizations.xml. This folder is referenced by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
+    This folder is structure is used by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
 
-2.  Copy the .ppkg, .cat, and customizations.xml files into this folder, overwriting the existing customizations.xml file.
+2.  Copy the .ppkg, .cat, and customizations.xml files into this folder.
     
     Rename the files if necessary to match your product names:
 
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.cat
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg
-    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\customizations.xml    
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.cat
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg
+    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\customizations.xml    
     	
 3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
 
-**Review the auto-provisioning scripts and definition files, and update them if necessary**
+**Add the auto-provisioning scripts to the feature manifest and product configuration file**
 
 1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. 
 
-    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
+    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -119,7 +119,7 @@ Other settings that use provisioning packages:
         </FeatureIDs>
     ```
 
-3.  Review the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml, and update if necessary:
+3.  Update the test configuration file C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\TestOEMInput.xml:
 
     1.  Make sure the common feature manifest: OEMCommonFM.xml is included. (Remove comment marks if necessary.)
 

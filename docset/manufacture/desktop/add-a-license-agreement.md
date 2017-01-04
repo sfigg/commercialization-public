@@ -79,6 +79,13 @@ Use the examples in the [USB-B.zip](http://download.microsoft.com/download/5/8/4
 
     ![Agreement and OOBE files](images/agreement-and-oobe-files.png)
 
+### <span id="Create_image_files"></span>Create image info file
+1.  Create an **csup.txt** file to specify when the Windows image was created. This file must include the date that the image was created, in the form of 'MM-DD-YYYY', with no other characters, on a single line at the top of the file.
+
+    ```syntax
+    12-31-2016
+    ```
+
 ### <span id="Mount_the_image"></span>Mount the image
 
 Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.md) to mount the image. The short version:
@@ -89,13 +96,19 @@ Use the steps from [Lab 3: Add device drivers (.inf-style)](add-device-drivers.m
 
 3.  Mount the image (`md C:\mount\windows`, then `Dism /Mount-Image /ImageFile:"C:\Images\install.wim" /Index:1 /MountDir:"C:\mount\windows" /Optimize`)
 
-### <span id="Add_the_license files"></span>Add the license files
+### <span id="Add_the_license files"></span>Add the license and image info files
 
 1.  Copy the answer file into the image into the \\Windows\\System32\\oobe\\ folder. Create the folder if it doesn’t exist.
 
     ``` syntax
     MkDir c:\mount\windows\windows\system32\oobe
     xcopy C:\oobe \c:\mount\windows\windows\system32\oobe /s
+    ```
+    
+2.  Copy the image info file into the image.
+
+    ``` syntax
+    xcopy C:\temp\CSUP.txt c:\mount\windows\windows\csup.txt
     ```
 
 ### <span id="Add_custom_logo_and_wallpapaer"></span>Add a custom logo and wallpaper

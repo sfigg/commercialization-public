@@ -9,7 +9,7 @@ ms.assetid: EE27ABF7-C197-4E8E-AC1B-77266E2B9FD9
 
 ## <a href="" id="adk"></a>What’s new in the the Windows ADK for Windows 10, version 1607
 
-### Pick and choose desktop applications  
+### Pick and choose desktop applications
 
 With [siloed provisioning packages](manufacture/desktop/siloed-provisioning-packages.md), you can now pick and choose which desktop applications to add to your images during deployment. You no longer need to recapture the entire set of applications into your recovery image, they’re added in automatically. These packages support space-saving features like Compact OS and single-instancing. 
 
@@ -17,7 +17,7 @@ With [siloed provisioning packages](manufacture/desktop/siloed-provisioning-pack
 
 Capture your apps, drivers, and settings, and deploy them securely to new devices. Learn how with the [IoT Core manufacturing guides](manufacture/iot/iot-core-manufacturing-guide.md).
 
-### The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used
+### The Chinese (Hong Kong SAR) language pack (zh-HK) is no longer used.
 
 The Chinese (Taiwan) language pack (zh-TW) supports both Taiwan and Hong Kong locales. For more information, see Available Language Packs for Windows.
 
