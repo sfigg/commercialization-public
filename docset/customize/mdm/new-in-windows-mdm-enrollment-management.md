@@ -833,6 +833,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>[DevInfo DDF file](DevInfo-ddf-file.md)</li>
 <li>[RootCATrustedCertificates DDF file](rootcacertificates-ddf-file.md)</li>
 <li>[PassportForWork DDF](passportforwork-ddf.md)</li>
+<li>[EnterpriseExt DDF](enterpriseext-ddf.md)</li>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
