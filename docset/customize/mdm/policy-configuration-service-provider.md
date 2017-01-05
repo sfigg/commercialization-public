@@ -833,7 +833,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#browser-homepages">Browser/Homepages</a></td>
+<td style="vertical-align:top"><a href="#browser-homepages">Browser/HomePages</a></td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -5535,7 +5535,7 @@ Footnote:
 -   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
 -   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
 -   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
--   [Browser/Homepages](#browser-homepages)
+-   [Browser/HomePages](#browser-homepages)
 -   [Browser/AllowCookies](#browser-allowcookies)
 -   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
 -   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
@@ -6079,7 +6079,7 @@ Footnote:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
-<a href="" id="browser-homepages"></a>**Browser/Homepages**  
+<a href="" id="browser-homepages"></a>**Browser/HomePages**  
 > **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
