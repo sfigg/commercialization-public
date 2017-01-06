@@ -384,7 +384,7 @@ must meet these requirements:</p>
 </li>
 </ul>
 </td>
-<td>X</td>
+<td></td>
 <td>X</td>
 </tr>
 <tr>
