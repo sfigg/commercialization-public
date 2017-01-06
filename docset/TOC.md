@@ -8,21 +8,19 @@
 
 # [Design](design/index.md)
 
-# [What's new in Design](design/what-s-new-in-design.md)
-# [Change history for Design](design/change-history-for-design.md)
-
-# [Minimum hardware requirements](design/minimum/minimum-hardware-requirements-overview.md)
-## [PC OEM requirements for Device Guard and Credential Guard](design/minimum/device-guard-and-credential-guard.md)
-
-# [Form factors](design/form-factors/form-factors.md)
-## [2-in-1](design/form-factors/2-in-1.md)
-## [All-in-one](design/form-factors/all-in-one.md)
-## [Desktop PC](design/form-factors/desktop-pc.md)
-## [Notebook](design/form-factors/notebook.md)
-## [Tablet](design/form-factors/tablet.md)
-## [Servers](design/form-factors/servers.md)
-## [Smartphone](design/form-factors/smartphone.md)
-## [Embedded devices](design/form-factors/embedded-devices.md)
+## [What's new in Design](design/what-s-new-in-design.md)
+## [Change history for Design](design/change-history-for-design.md)
+## [Minimum hardware requirements](design/minimum/minimum-hardware-requirements-overview.md)
+### [PC OEM requirements for Device Guard and Credential Guard](design/minimum/device-guard-and-credential-guard.md)
+## [Form factors](design/form-factors/form-factors.md)
+### [2-in-1](design/form-factors/2-in-1.md)
+### [All-in-one](design/form-factors/all-in-one.md)
+### [Desktop PC](design/form-factors/desktop-pc.md)
+### [Notebook](design/form-factors/notebook.md)
+### [Tablet](design/form-factors/tablet.md)
+### [Servers](design/form-factors/servers.md)
+### [Smartphone](design/form-factors/smartphone.md)
+### [Embedded devices](design/form-factors/embedded-devices.md)
 
 ## [Device experiences](design/device-experiences/device-experiences-scenarios.md)
 ### [Cortana](design/device-experiences/cortana.md)
@@ -127,6 +125,7 @@
 ##### [IOCTL_THERMAL_READ_TEMPERATURE](design/device-experiences/ioctl-thermal-read-temperature.md)
 ### [Security and reliability](design/device-experiences/security-and-reliabilty.md)
 ### [Versatile input platform](design/device-experiences/versitle-input-platform.md)
+
 ## [Hardware component guidelines](design/component-guidelines/components.md)
 ### [Audio](design/component-guidelines/audio.md)
 ### [Battery](design/component-guidelines/battery.md)
