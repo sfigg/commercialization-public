@@ -5327,9 +5327,9 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="cross mark"/><p>IoT Core</p>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
