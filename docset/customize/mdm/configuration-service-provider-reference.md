@@ -526,12 +526,12 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="even">
 <td>[Reboot CSP](reboot-csp.md)</td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
+<td><img src="images/checkmark.png" alt="check mark" />1</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
