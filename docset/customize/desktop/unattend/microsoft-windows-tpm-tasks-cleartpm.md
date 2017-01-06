@@ -37,7 +37,7 @@ Clearing the TPM prevents an issue in earlier versions that kept some Windows fe
 ## Parent Hierarchy
 
 
-[Microsoft-Windows-TwinUI](microsoft-windows-tpm-tasks.md) | **ClearTpm**
+[Microsoft-Windows-TPM-Tasks](microsoft-windows-tpm-tasks.md) | **ClearTpm**
 
 ## Valid Configuration Passes
 
@@ -52,7 +52,7 @@ For a list of the supported Windows editions and architectures that this compone
 ## XML Example
 
 
-The following XML output shows how to use the `<ClearTpm>` setting.
+The following XML shows how to use the `<ClearTpm>` setting in an unattend file.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
