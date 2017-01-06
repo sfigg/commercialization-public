@@ -1,5 +1,5 @@
 ---
-title: Configure C+G dual SIM settings
+title: 
 description: Partners can configure the settings for C+G dual SIM phones.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
