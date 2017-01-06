@@ -20,6 +20,8 @@ OEMs must meet the following DG/CG requirements for each OS version:
 
 -   2017 additional qualification requirements - Lists all the future additional qualification requirements starting with Windows 10. This list is not final and subject to change.
 
+**Important** The following tables are additive, so that you must meet all of the previous requirements in addition to the requirements for the current build. 
+
 **Note**  If you are an enterprise IT administrator looking to deploy Device Guard or Credential Guard, see [Requirements and deployment planning guidelines for Device Guard](http://go.microsoft.com/fwlink/?LinkId=822877) and [Requirements and deployment planning guidelines for Credential Guard](https://technet.microsoft.com/itpro/windows/keep-secure/credential-guard#hardware-and-software-requirements) on TechNet.
 
  
