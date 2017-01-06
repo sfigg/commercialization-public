@@ -8,16 +8,32 @@ title: Install Windows 10 using a previous version of Windows PE
 
 # Install Windows 10 using a previous version of Windows PE
 
+To use some DISM features in WinPE, such as [siloed provisioning packages](siloed-provisioning-packages.md), you may run the latest version of DISM from a separate location.
 
-To install some features of Windows 10, such as Compact OS, you'll need the Windows 10 version of DISM.
+Each time you boot WinPE and want to use these features, you'll need to install and configure the drivers needed for DISM, including the wimmount.sys and wofadk.sys drivers.
 
-You can include the latest version DISM in your Windows Preinstallation Environment (WinPE) image, or run it from a separate location, such as on a removable drive. If you include it with WinPE, it will add roughly 4MB to the size of your DISM image.
+The CopyDandI.cmd script copies the version of DISM from your local installation of the ADK to a folder which you can use in WinPE. 
 
-You'll need to install and configure the drivers needed for DISM, including the wimmount.sys and wofadk.sys drivers, each time you boot WinPE.
+## <span id="Run_DISM_from_a_separate_location"></span>Option 1: Run DISM from a separate location
 
-**To add DISM into your Windows PE image**
+You'll need the Windows 10, version 1607 version of the Deployment and Imaging Tools from the ADK. 
+
+**Important**   Don't overwrite the existing DISM files on the WinPE image.
+
+1.  Start the Deployment and Imaging Tools Environment as an administrator.
+
+2.  From the technician PC, copy the Deployment and Imaging Tools from the Windows ADK to the storage USB key.
+
+    ``` syntax
+    CopyDandI.cmd amd64 E:\ADKTools\amd64
+	```
+
+## <span id="Add_PE_to_the_RAMdisk"></span>Option 2: Add WinPE to the WinPE RAMDisk. 
+
+Note: this will add roughly 4MB to the size of your DISM image, which may affect performance.
 
 1.  On your technician PC, install the Windows ADK for Windows 10.
+
 2.  Mount WinPE. For WinPE 3.x, mount the file: \\sources\\winpe.wim. For WinPE 4.x and 5.x, mount the file: \\sources\\boot.wim.
 
     ``` syntax
@@ -36,8 +52,6 @@ You'll need to install and configure the drivers needed for DISM, including the 
 
     **Important**   Don't overwrite the existing DISM files from the **system32** folder in the WinPE image. Instead, create a new folder on the host computer to copy the Windows ADK files into.
 
-     
-
 4.  Unmount WinPE.
 
     ``` syntax
@@ -50,42 +64,47 @@ You'll need to install and configure the drivers needed for DISM, including the 
     MakeWinPEMedia /UFD C:\WinPE_amd64 F:
     ```
 
-**Install and use DISM from WinPE**
+## <span id="Use DISM"></span>Use the new version of DISM
 
-1.  Boot your destination device to WinPE.
-2.  Install and configure DISM's required drivers by using either **WimMountAdkSetupAmd64.exe /Install** or **WimMountAdkSetupX86.exe /Install**.
+1.  Boot the reference PC to WinPE.
+
+2.  Find the drive letter of the storage drive (`diskpart, list volume, exit`).
+
+3.  Install and configure DISM's required drivers by using either **wimmountadksetupamd64.exe /Install** or **wimmountadksetupx86.exe /Install**.
 
     ``` syntax
-    X:\DISM\WimMountAdkSetupAmd64.exe /Install /q
+    W:\ADKTools\amd64\wimmountadksetupAmd64.exe /Install /q
     ```
 
     For the default (RAMDisk) version of WinPE, you'll need to run this command each time you boot WinPE. To learn how to run this command automatically when WinPE boots, see [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md).
 
-3.  Verify that the Windows 10 version of DISM is installed.
+4.  Verify the new version of DISM:
 
     ``` syntax
-    X:\DISM\Dism.exe /?
+    W:\ADKTools\amd64\DISM.exe /?
     ```
 
     The output shows the build number, for example:
 
     ``` syntax
     Deployment Image Servicing and Management tool
-    Version: 10.0.10122.0
+    Version: 10.0.14939.0
     ```
 
-4.  Run DISM commands from the new folder.
+4.  Use the new version of DISM. Example:
 
     ``` syntax
-    X:\DISM\Dism.exe /Apply-Image /ImageFile:install.wim /Index:1 /ApplyDir:W: /Compact
+    W:\ADKTools\amd64\DISM.exe /Apply-Image /ImageFile:install.wim /Index:1 /ApplyDir:W: /Compact
+    W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:W:\ /PackagePath:"e:\SPPs\fabrikam-id.spp" /PackagePath:"D:\SPPs\office16_base.spp" /PackagePath:"D:\SPPs\office16_fr-fr.spp" /PackagePath:"D:\SPPs\office16_de-de.spp"
     ```
 
 ## <span id="related_topics"></span>Related topics
 
-
 [DISM Supported Platforms](dism-supported-platforms.md)
 
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
+
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md)
 
  
 
