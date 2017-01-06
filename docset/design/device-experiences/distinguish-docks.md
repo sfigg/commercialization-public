@@ -123,31 +123,28 @@ This section illustrates the layout of the header section, which includes the le
 <th>Offset</th>
 <th>Field</th>
 <th>Size (bytes)</th>
-<th>Type</th>
 <th>Value</th>
 <th>Description</th>
 <tr class="odd">
 <td>0</td>
-<td>dwLength</td>
+<td>dwSize</td>
 <td>4</td>
-<td>DWORD</td>
-<td>0x042</td>
-<td>The length of this custom property section is 66 bytes.</td>
+<td>0x00000038</td>
+<td>Length of this custom property section is 56 bytes.</td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>bcdVersion</td>
-<td>2</td>
-<td>BCD</td>
-<td>0x0100</td>
-<td>Version 1.0</td>
+<td>dwPropertyDataType</td>
+<td>42</td>
+<td>0x00000004 </td>
+<td>Property value stores a little-endian 32-bit integer.</td>
 </tr>
 <tr class="odd">
-<td>6</td>
-<td>wIndex</td>
-<td>2</td>
+<td>10</td>
+<td>wPropertyNameLength</td>
+<td>38</td>
 <td>WORD</td>
-<td>0x0005</td>
+<td>0x00000026</td>
 <td>Extended property OS descriptor</td>
 </tr>
 <tr class="even">
