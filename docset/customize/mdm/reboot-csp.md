@@ -22,11 +22,10 @@ The following diagram shows the Reboot configuration service provider management
 <p style="margin-left: 20px">The supported operation is Get.</p>
 
 <a href="" id="rebootnow"></a>**RebootNow**  
-<p style="margin-left: 20px">This node executes a reboot of the device.</p>
+<p style="margin-left: 20px">This node executes a reboot of the device. RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work.</p>
 
-> **Note**  If this node is left in the Execute state, the device will reboot at every sync. We recommend that you clear the Execute state once the sync has occurred.
-
- 
+> [!Note]  
+> If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
 <p style="margin-left: 20px">The supported operations are Execute and Get.
 
