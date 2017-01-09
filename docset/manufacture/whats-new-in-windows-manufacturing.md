@@ -151,6 +151,11 @@ The following changes are new for Windows 10, version 1607:
 
 ## <span id="Whats_new_in_IoT_Core_Manufacturing"></span>What's new in IoT Core manufacturing
 
+
+**January 9, 2017**
+
+- Added networking troubleshooting steps to [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md): Use different device names for each device.
+
 **November 4, 2016**
 
 - Added references to change the automatic update settings in [Lab 1d: Add a provisioning package to an image](iot/add-a-provisioning-package-to-an-image.md).
