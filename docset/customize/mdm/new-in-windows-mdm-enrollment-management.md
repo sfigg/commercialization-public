@@ -779,6 +779,28 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### January 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Reboot CSP](reboot-csp.md)</td>
+<td style="vertical-align:top"><p>RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work. Also updated the Note in RebootNow.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### December, 2016
 
 <table>
@@ -833,6 +855,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>[DevInfo DDF file](DevInfo-ddf-file.md)</li>
 <li>[RootCATrustedCertificates DDF file](rootcacertificates-ddf-file.md)</li>
 <li>[PassportForWork DDF](passportforwork-ddf.md)</li>
+<li>[EnterpriseExt DDF](enterpriseext-ddf.md)</li>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>

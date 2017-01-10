@@ -77,7 +77,7 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 <a href="" id="settings-requireprotectionunderlockconfig"></a>**Settings/RequireProtectionUnderLockConfig**  
-<p style="margin-left: 20px">Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured.
+<p style="margin-left: 20px">Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured. A PIN must be configured on the device before you can apply this policy.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

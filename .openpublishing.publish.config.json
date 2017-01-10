@@ -20,16 +20,16 @@
   ],
   "notification_subscribers": [
     "justinha@microsoft.com",
-    "kathyna@microsoft.com",
     "joshbax@microsoft.com",
-    "celested@microsoft.com",
     "maricia@microsoft.com",
     "pabloan@microsoft.com",
     "dawnwood@microsoft.com",
     "kenpacq@microsoft.com",
 	"themar@microsoft.com",
 	"v-gmoor@microsoft.com",
-	"v-desim@microsoft.com"
+	"v-desim@microsoft.com",
+	"elkr@microsoft.com",
+	"nibr@microsoft.com"
   ],
   "branches_to_filter": [
     ""

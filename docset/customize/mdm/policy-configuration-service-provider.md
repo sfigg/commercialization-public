@@ -9,6 +9,9 @@ ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 
 # Policy CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
+
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
@@ -830,7 +833,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#browser-homepages">Browser/Homepages</a></td>
+<td style="vertical-align:top"><a href="#browser-homepages">Browser/HomePages</a></td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -5532,7 +5535,7 @@ Footnote:
 -   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
 -   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
 -   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
--   [Browser/Homepages](#browser-homepages)
+-   [Browser/HomePages](#browser-homepages)
 -   [Browser/AllowCookies](#browser-allowcookies)
 -   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
 -   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
@@ -6076,7 +6079,7 @@ Footnote:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
-<a href="" id="browser-homepages"></a>**Browser/Homepages**  
+<a href="" id="browser-homepages"></a>**Browser/HomePages**  
 > **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
@@ -7297,7 +7300,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**  
-<p style="margin-left: 20px">Allows or disallows the input of personally identifiable information to leave devices or save locally (Cortana, Typing, Inking, Speech, Dictation, etc.)
+<p style="margin-left: 20px">Updated in the next major update of Windows 10. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -7305,11 +7308,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-> **Note**  In the current release of Windows 10 Mobile, setting this policy to 0 will not remove the list of contact names on the device from the list of typable candidates. This will be fixed in a future release.
-
  
-
 <a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or disables the Advertising ID.
 
