@@ -33,7 +33,7 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
 
      
 
-    The information returned is:
+   The information returned is:
 
     <table>
     <colgroup>
@@ -85,11 +85,11 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
 
      
 
-    Based on this analysis you can determine the overhead of the WinSxS folder by taking the sum of the backups and disabled features size with the cache and temporary data size.
+   Based on this analysis you can determine the overhead of the WinSxS folder by taking the sum of the backups and disabled features size with the cache and temporary data size.
 
-    Example output:
+Example output:
 
-    ``` syntax
+```
     C:\>dism /online /cleanup-image /analyzecomponentstore
 
     Deployment Image Servicing and Management tool
@@ -115,9 +115,8 @@ A new option has been added to the DISM tool for Windows 8.1 to help determine h
     Component Store Cleanup Recommended : No
 
     The operation completed successfully.
-    ```
-
-    In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhead (the sum of the size of backups and disabled features and the size of cache and temporary data) is 786.42 MB.
+```
+In this example, the WinSxS folder appears to be 4.98 GB, but the actual overhead (the sum of the size of backups and disabled features and the size of cache and temporary data) is 507.18 MB.
 
 **Determine if you should clean up the component store (WinSxS folder) based on the analysis results**
 
