@@ -511,7 +511,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td style="vertical-align:top"><p>Updated for Windows 10, version 1703. Added the following settings</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
 <ul>
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
@@ -812,7 +812,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul></td>
 </tr><tr class="odd">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td style="vertical-align:top"><p>Updated for Windows 10, version 1703. Added the following settings</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
 <ul>
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
