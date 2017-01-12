@@ -128,6 +128,7 @@
 #### [HealthAttestation DDF](healthattestation-ddf.md)
 ### [HotSpot CSP](hotspot-csp.md)
 ### [Maps CSP](maps-csp.md)
+#### [Maps DDF](maps-ddf-file.md)
 ### [Messaging CSP](messaging-csp.md)
 #### [Messaging DDF file](messaging-ddf.md)
 ### [NAP CSP](nap-csp.md)
