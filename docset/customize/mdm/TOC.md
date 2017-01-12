@@ -129,7 +129,7 @@
 ### [HotSpot CSP](hotspot-csp.md)
 ### [Maps CSP](maps-csp.md)
 ### [Messaging CSP](messaging-csp.md)
-#### [Maps DDF file](maps-ddf-file.md)
+#### [Messaging DDF file](messaging-ddf.md)
 ### [NAP CSP](nap-csp.md)
 ### [NAPDEF CSP](napdef-csp.md)
 ### [NodeCache CSP](nodecache-csp.md)
