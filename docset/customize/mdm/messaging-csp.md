@@ -15,7 +15,7 @@ The Messaging configuration service provider is used to . This CSP was added in 
 
 The following diagram shows the AppLocker configuration service provider in tree format.
 
-![messaging csp](provisioning-csp-messaging.png)
+![messaging csp](images/provisioning-csp-messaging.png)
 
 <a href="" id="--user-msft-applocker"></a>**./User/Vendor/MSFT/Messaging**  
 
