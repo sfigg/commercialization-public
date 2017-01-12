@@ -21,7 +21,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
--   [What's new in the next major update to Windows 10](#whatsnew10)
+-   [What's new in Windows 10, version 1703](#whatsnew10)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -474,7 +474,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table>
 
-## <a href="" id="whatsnew10"></a>What's new in the next major update to Windows 10
+## <a href="" id="whatsnew10"></a>What's new in Windows 10, version 1703
 
 <table>
 <colgroup>
@@ -509,6 +509,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
 <td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
+<ul>
+<li>ScreenCaptureCapability</li>
+<li>PrintingCapability</li></td>
+</tr>
 </tbody>
 </table> 
 
@@ -779,6 +786,40 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### January 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Reboot CSP](reboot-csp.md)</td>
+<td style="vertical-align:top"><p>RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work. Also updated the Note in RebootNow.</p>
+</td>
+</tr><tr class="even">
+<td style="vertical-align:top">[Device update management](device-update-management.md)</td>
+<td style="vertical-align:top"><p>Updated the following section:</p>
+<ul>
+<li>[Recommended Flow for Using the Server-Server Sync Protocol](device-update-management.md#recommendedflow)</li>
+</ul></td>
+</tr><tr class="odd">
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
+<ul>
+<li>ScreenCaptureCapability</li>
+<li>PrintingCapability</li></td>
+</tr>
+</tbody>
+</table>
+
 ### December, 2016
 
 <table>
@@ -833,6 +874,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>[DevInfo DDF file](DevInfo-ddf-file.md)</li>
 <li>[RootCATrustedCertificates DDF file](rootcacertificates-ddf-file.md)</li>
 <li>[PassportForWork DDF](passportforwork-ddf.md)</li>
+<li>[EnterpriseExt DDF](enterpriseext-ddf.md)</li>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Reporting CSP](reporting-csp.md)</td>
