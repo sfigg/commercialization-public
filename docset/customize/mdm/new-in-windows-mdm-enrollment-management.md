@@ -510,11 +510,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
+<td style="vertical-align:top">New nodes in [SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following nodes</p>
 <ul>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></td>
+<li>PrintingCapability</li></ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
+</td>
 </tr>
 </tbody>
 </table> 
@@ -816,6 +821,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
+</td>
 </tr>
 </tbody>
 </table>
