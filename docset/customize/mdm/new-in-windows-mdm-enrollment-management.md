@@ -489,7 +489,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>New nodes in Update CSP</p></td>
+<td style="vertical-align:top"><p>New nodes in [Update CSP](update-csp.md)</p></td>
 <td style="vertical-align:top"><p>Added the following nodes to the [Update CSP](update-csp.md):</p>
 <ul>
 <li>FailedUpdates/<em>Failed Update Guid</em>/RevisionNumber</li>
@@ -499,7 +499,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td>
 </tr><tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values:</p>
 <ul>
 <li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
 <li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
@@ -507,15 +507,19 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
-<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+<td style="vertical-align:top"><p>For these CSPs, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
+<td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+</td></tr>
 </tbody>
 </table> 
 
@@ -817,6 +821,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+</td></tr>
 </tbody>
 </table>
 
