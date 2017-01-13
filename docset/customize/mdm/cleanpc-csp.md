@@ -18,18 +18,14 @@ The following diagram shows the CleanPC configuration service provider in tree f
 ![eUICCs csp diagram](images/provisioning-csp-cleanpc.png)
 
 <a href="" id="cleanpc"></a>**CleanPC**  
-<p style="margin-left: 20px">Root node for the CleanPC configuration service provider.</p>
+<p style="margin-left: 20px">The root node for the CleanPC configuration service provider.</p>
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
-<p style="margin-left: 20px">A CleanPC operation without any retention of user data.
-
-<p style="margin-left: 20px">Data type is integer.
+<p style="margin-left: 20px">An integer specifying a CleanPC operation without any retention of user data.
 
 <p style="margin-left: 20px">The only supported operation is Execute.
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
-<p style="margin-left: 20px">A CleanPC operation with retention of user data. 
-
-<p style="margin-left: 20px">Data type is integer.
+<p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data. 
 
 <p style="margin-left: 20px">The only supported operation is Execute.
