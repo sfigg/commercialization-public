@@ -520,6 +520,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1703.</p></td>
+</tr>
 </tbody>
 </table> 
 
@@ -825,6 +829,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
+<td style="vertical-align:top"><p>New CSP for Windows 10, version 1703.</p></td>
+</tr>
 </tbody>
 </table>
 
