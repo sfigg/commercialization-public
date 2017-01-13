@@ -21,9 +21,15 @@ The following diagram shows the CleanPC configuration service provider in tree f
 <p style="margin-left: 20px">Root node for the CleanPC configuration service provider.</p>
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
-<p style="margin-left: 20px">A CleanPC operation without any retention of user data. ResetPrepareSession needs to be called with the Reset option.  
+<p style="margin-left: 20px">A CleanPC operation without any retention of user data.
 
-<p style="margin-left: 20px">Data type is string.
+<p style="margin-left: 20px">Data type is integer.
 
-<p style="margin-left: 20px">Supported operations are Get and Execute.
+<p style="margin-left: 20px">The only supported operation is Execute.
 
+<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
+<p style="margin-left: 20px">A CleanPC operation with retention of user data. 
+
+<p style="margin-left: 20px">Data type is integer.
+
+<p style="margin-left: 20px">The only supported operation is Execute.

@@ -17,57 +17,74 @@ This topic shows the OMA DM device description framework (DDF) for the **CleanPC
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+    "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+    [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
-  <VerDTD>1.2</VerDTD>
-      <Node>
+    <VerDTD>1.2</VerDTD>
+    <Node>
         <NodeName>CleanPC</NodeName>
         <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <Description>Allow removal of user installed and pre-installed applications, with option to persist user data</Description>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME>com.microsoft/1.0/MDM/CleanPC</MIME>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>CleanPCWithoutRetainingUserData</NodeName>
-          <DFProperties>
             <AccessType>
-              <Get />
-              <Exec />
+                <Get />
             </AccessType>
-            <Description>CleanPC operation without any retention of User data. ResetPrepareSession needs to be called with Reset option</Description>
+            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data</Description>
             <DFFormat>
-              <chr />
+                <node />
             </DFFormat>
             <Occurrence>
-              <One />
+                <One />
             </Occurrence>
             <Scope>
-              <Permanent />
+                <Permanent />
             </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
             <DFType>
-              <MIME>text/plain</MIME>
+                <MIME>com.microsoft/1.0/MDM/CleanPC</MIME>
             </DFType>
-          </DFProperties>
+        </DFProperties>
+        <Node>
+            <NodeName>CleanPCWithoutRetainingUserData</NodeName>
+            <DFProperties>
+                <AccessType>                    
+                    <Exec />
+                </AccessType>
+                <Description>CleanPC operation without any retention of User data</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>         
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
         </Node>
-      </Node>
+        <Node>
+            <NodeName>CleanPCRetainingUserData</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Exec />
+                </AccessType>
+                <Description>CleanPC operation with retention of User data</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+    </Node>
 </MgmtTree>
 ```
 
