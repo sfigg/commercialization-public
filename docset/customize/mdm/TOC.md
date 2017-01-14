@@ -76,6 +76,8 @@
 ### [CellularSettings CSP](cellularsettings-csp.md)
 ### [CertificateStore CSP](certificatestore-csp.md)
 #### [CertificateStore DDF file](certificatestore-ddf-file.md)
+### [CleanPC CSP](cleanpc-csp.md)
+#### [CleanPC DDF](cleanpc-ddf.md)
 ### [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 #### [ClientCertificateInstall DDF file](clientcertificateinstall-ddf-file.md)
 ### [CM_CellularEntries CSP](cm-cellularentries-csp.md)
