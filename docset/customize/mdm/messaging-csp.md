@@ -9,11 +9,11 @@ MSHAttr:
 # Messaging CSP
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
-The Messaging configuration service provider is used to . This CSP was added in Windows 10, version 1703.
+The Messaging configuration service provider is used to configure the ability to get text messages audited on a mobile device. This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
+The following diagram shows the Messaging configuration service provider in tree format.
 
 ![messaging csp](images/provisioning-csp-messaging.png)
 
@@ -23,7 +23,7 @@ The following diagram shows the AppLocker configuration service provider in tree
 
 <a href="" id="auditinglevel"></a>**AuditingLevel**  
 <p style="margin-left: 20px">Turns on the 'Text' auditing feature.</p>
-<p style="margin-left: 20px">Supporter values</p>
+<p style="margin-left: 20px">Supported values:</p>
 <ul>
 <li>0 - off</li>
 <li>1 - on</li>
@@ -32,14 +32,14 @@ The following diagram shows the AppLocker configuration service provider in tree
 
 <a href="" id="auditing"></a>**Auditing**  
 <p style="margin-left: 20px">Node for messages.</p>
-<p style="margin-left: 20px">Supprted operation is Get.</p>
+<p style="margin-left: 20px">Supported operation is Get.</p>
 
 <a href="" id="messages"></a>**Messages**  
 <p style="margin-left: 20px">Node for messages.</p>
-<p style="margin-left: 20px">Supprted operation is Get.</p>
+<p style="margin-left: 20px">Supported operation is Get.</p>
 
 <a href="" id="count"></a>**Count**  
-<p style="margin-left: 20px">Number of messages to return in the Data element</p>
+<p style="margin-left: 20px">Number of messages to return in the Data element.</p>
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
 
 <a href="" id="revisionid"></a>**RevisionId**  
@@ -50,3 +50,53 @@ The following diagram shows the AppLocker configuration service provider in tree
 <p style="margin-left: 20px">JSON string of text messages on the device.</p>
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
 
+
+**SyncML example**
+
+``` syntax
+ <SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Replace>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./User/Vendor/MSFT/Messaging/Auditing/Messages/Count
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>100</Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>3</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./User/Vendor/MSFT/Messaging/Auditing/Messages/RevisionId
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">chr</Format>
+          <Type>text/plain</Type>
+        </Meta>
+        <Data>0</Data>
+      </Item>
+    </Replace>
+    <Get>
+      <CmdID>4</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./User/Vendor/MSFT/Messaging/Auditing/Messages/Data
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
