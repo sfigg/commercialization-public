@@ -514,7 +514,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></td>
+<li>PrintingCapability</li></ul></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
+</td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -522,7 +527,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
-<td style="vertical-align:top"><p>New CSP for Windows 10, version 1703.</p></td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
 </table> 
@@ -825,13 +830,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>ScreenCaptureCapability</li>
 <li>PrintingCapability</li></td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
+</td>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
-<td style="vertical-align:top"><p>New CSP for Windows 10, version 1703.</p></td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>

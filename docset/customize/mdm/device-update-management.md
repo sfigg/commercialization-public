@@ -90,7 +90,7 @@ First some background:
 
 - If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it is common to all tenants.
 - A metadata sync service can then be implemented that periodically calls server-server sync to pull in metadata for the updates IT cares about.
-- The MDM component that uses OMA DM to control devices (described in the next section) should send the send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
+- The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
 
 
 The following procedure describes a basic algorithm for a metadata sync service:
