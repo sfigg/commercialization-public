@@ -90,21 +90,18 @@ First some background:
 
 - If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it is common to all tenants.
 - A metadata sync service can then be implemented that periodically calls server-server sync to pull in metadata for the updates IT cares about.
-- The MDM component that uses OMA DM to control devices (described in the next section) should send the send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
+- The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
 
 
 The following procedure describes a basic algorithm for a metadata sync service:
 
 -   Initialization, composed of the following:
     1.  Create an empty list of “needed update IDs to fault in”. This list will get updated by the MDM service component that uses OMA DM. We recommend not adding definition updates to this list, since those are temporary in nature (for example, Defender releases about 4 new definition updates per day, each of which is cumulative).
-    2.  Create an empty list of “product categories” (or feel free to pre-populate it with a known product category you need).
 -   Sync periodically (we recommend once every 2 hours - no more than once/hour).
     1.  Implement the authorization phase of the protocol to get a cookie if you don’t already have a non-expired cookie. See **Sample 1: Authorization** in [Protocol Examples](http://go.microsoft.com/fwlink/p/?LinkId=526720).
     2.  Implement the metadata portion of the protocol (see **Sample 2: Metadata and Deployments Synchronization** in [Protocol Examples](http://go.microsoft.com/fwlink/p/?LinkId=526720)), and:
-        -   Specify update classification = security updates, and product categories = current list (initially empty) as your filter for GetRevisionIdList This step is optional if you want to proactively pull in security updates.
-        -   Call GetUpdateData for all updates returned from GetRevisionIdList and all updates in the "needed update IDs to fault in" list if the update metadata has not already been pulled into the DB.
+        -   Call GetUpdateData for all updates in the "needed update IDs to fault in" list if the update metadata has not already been pulled into the DB.
             -   If the update is a newer revision of an existing update (same UpdateID, higher revision number), replace the previous update metadata with the new one.
-            -   If the updates product category is not already on the "product categories" list, then add it to that list.
             -   Remove updates from the "needed update IDs to fault in" list once they have been brought in.
 
 This provides an efficient way to pull in the information about the set of Microsoft Updates that IT needs to manage, so the information can be used in various update management scenarios. For example, at update approval time you can pull information so IT can see what updates they are approving, or for compliance reports to see what updates are needed but not yet installed.
