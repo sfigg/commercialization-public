@@ -137,7 +137,7 @@ The following table show the configuration service providers supported in Window
 </tr>
 <tr class="odd">
 <td>[CleanPC CSP](cleanpc-csp.md)</td>
-<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
