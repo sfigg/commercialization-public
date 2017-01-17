@@ -7137,28 +7137,28 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">The datatype is a string.
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value contains the URL of an endpoint. For example: https://\ecprintselfhost.company.com.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https://ecprintselfhost.company.com".
 
 <a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
 
 <p style="margin-left: 20px">The datatype is a string.
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value contains the URL of an endpoint. For example: https://\test/adfs.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https://test/adfs".
 
 <a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
 
 <p style="margin-left: 20px">The datatype is a string.
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value contains a GUID. For example: E1CF1107-FF90-4228-93BF-26052DD2C714.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a GUID. For example, E1CF1107-FF90-4228-93BF-26052DD2C714.
 
 <a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
 
 <p style="margin-left: 20px">The datatype is a string. 
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value contains a URL. For example: http://\MicrosoftEnterpriseCloudPrint/CloudPrint.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http://MicrosoftEnterpriseCloudPrint/CloudPrint".
 
 <a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maxium number of printers that should be queried from a discovery end point.
@@ -7170,7 +7170,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">The datatype is a string.
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value contains a URL. For example: http://\MopriaDiscoveryService/CloudPrint.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http://\MopriaDiscoveryService/CloudPrint".
 
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 > **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
