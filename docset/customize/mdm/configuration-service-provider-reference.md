@@ -10,7 +10,7 @@ ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
 # Configuration service provider reference
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
@@ -224,6 +224,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr class="odd">
+<td>[DeveloperSetup CSP](developersetup-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
 <td>[DeviceInstanceService CSP](deviceinstanceservice-csp.md)</td>
@@ -809,25 +819,34 @@ The following list shows the configuration service providers supported in Window
 
 | Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic Enterprise edition |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
-| [Application csp](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [AppLocker csp](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [CertificateStore csp](certificatestore-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [ClientCertificateInstall csp](clientcertificateinstall-csp.md)           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DevDetail csp](devdetail-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DeviceStatus csp](devicestatus-csp.md)                                                              | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DevInfo csp](devinfo-csp.md)                                             | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DiagnosticLog csp](diagnosticlog-csp.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [DMAcc csp](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [DMClient csp](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [Application CSP](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [AppLocker CSP](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [CertificateStore CSP](certificatestore-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)           | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [DevDetail CSP](devdetail-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DeveloperSetup CSP](developersetup-csp.md)                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2      |
+| [DeviceStatus CSP](devicestatus-csp.md)                                   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [DevInfo CSP](devinfo-csp.md)                                             | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [DMAcc CSP](dmacc-csp.md)                                                 | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [DMClient CSP](dmclient-csp.md)                                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [EnterpriseModernAppManagement csp](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [NodeCache csp](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
-| [Policy csp](policy-configuration-service-provider.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [RootCATrustedCertificates csp](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [Update csp](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [VPN2 csp](vpnv2-csp.md)                                                 | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WiFi csp](wifi-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
-| [WindowsLicensing csp](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [NodeCache CSP](nodecache-csp.md)                                         | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
+| [Policy CSP](policy-configuration-service-provider.md)                    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)                | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [Update CSP](update-csp.md)                                               | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [VPN2 CSP](vpnv2-csp.md)                                                  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [WiFi CSP](wifi-csp.md)                                                   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
+| [WindowsLicensing CSP](windowslicensing-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 
+Footnotes: 
+- 2 - Added in Windows 10, version 1703
+
+## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1703
+
+-   [CleanPC CSP](cleanpc-csp.md)
+-   [DeveloperSetup csp](developersetup-csp.md)
+-   [Messaging CSP](messaging-csp.md)
 
 ## <a href="" id="newcsps"></a>New CSPs added in Windows 10, version 1511
 
