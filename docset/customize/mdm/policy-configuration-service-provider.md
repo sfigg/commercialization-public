@@ -8863,10 +8863,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <td style="vertical-align:top"><p>Update</p></td>
 <td style="vertical-align:top"><p>1 month</p></td>
 <td style="vertical-align:top"><p>1 week</p></td>
-<td style="vertical-align:top"><div class="alert">
+<td style="vertical-align:top">
 > [!NOTE]
 > If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-</div>
 <ul>
 <li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
 <li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4</li>
