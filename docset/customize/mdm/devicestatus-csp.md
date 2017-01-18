@@ -92,9 +92,9 @@ Supported operation is Get.
 <a href="" id="devicestatus-networkidentifiers-macaddress-type"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/Type**  
 Type of network connection. The value is one of the following:
 
--   WLAN
--   LAN
--   Unknown (Bluetooth or other unknown network connections)
+-   2 - WLAN (or other Wireless interface)
+-   1 - LAN (or other Wired interface)
+-   0 - Unknown
 
 Supported operation is Get.
 

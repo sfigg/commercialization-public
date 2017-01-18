@@ -833,7 +833,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#browser-homepages">Browser/Homepages</a></td>
+<td style="vertical-align:top"><a href="#browser-homepages">Browser/HomePages</a></td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
@@ -5316,6 +5316,25 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#update-updateserviceurlalternate">Update/UpdateServiceUrlAlternate</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">WiFi/AllowAutoConnectToWiFiSenseHotspots</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5535,7 +5554,7 @@ Footnote:
 -   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
 -   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
 -   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
--   [Browser/Homepages](#browser-homepages)
+-   [Browser/HomePages](#browser-homepages)
 -   [Browser/AllowCookies](#browser-allowcookies)
 -   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
 -   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
@@ -6079,7 +6098,7 @@ Footnote:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
-<a href="" id="browser-homepages"></a>**Browser/Homepages**  
+<a href="" id="browser-homepages"></a>**Browser/HomePages**  
 > **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
@@ -8619,6 +8638,20 @@ Example
             </Item>
         </Replace>
 ```
+
+<a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+<p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+
+<p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
+
+<p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
+
+<p style="margin-left: 20px">Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+
+> [!Note]  
+> If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
+> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
+> This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 <a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**WiFi/AllowAutoConnectToWiFiSenseHotspots**  
 <p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.

@@ -133,6 +133,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
 </tr>
+<tr class="odd">
+<td>[CleanPC CSP](cleanpc-csp.md)</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
 <tr class="even">
 <td>[ClientCertificateInstall CSP](clientcertificateinstall-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -424,6 +434,16 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
+</tr>
+<tr class="even">
+<td>[Messaging CSP](messaging-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="odd">
 <td>[NAP CSP](nap-csp.md)</td>
@@ -777,7 +797,7 @@ The following table show the configuration service providers supported in Window
 
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
-- 2 - Added in the next major updated of Windows 10
+- 2 - Added in Windows 10, version 1703
 
 
 ## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
