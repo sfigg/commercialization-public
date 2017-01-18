@@ -78,7 +78,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 
 ## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
-> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+> [!IMPORTANT]
+> To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
 <table>
 <tr>
@@ -5990,7 +5991,7 @@ Footnote:
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 <p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
@@ -6033,7 +6034,7 @@ Footnote:
 
 <p style="margin-left: 20px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
@@ -6508,7 +6509,8 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
-> **Important**  This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
+> [!IMPORTANT]
+> This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
  
 <p style="margin-left: 20px">Setting used by Windows 8.1 Selective Wipe.
@@ -6716,7 +6718,8 @@ Footnote:
 
 <p style="margin-left: 20px">Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
-> **Important**  The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
+> [!IMPORTANT]
+> The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
  
 <p style="margin-left: 20px">Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
@@ -7055,7 +7058,8 @@ Footnote:
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-> **Important**  If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
+> [!IMPORTANT]
+> If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
 
 
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
@@ -7107,7 +7111,7 @@ Footnote:
 -   0 (default) – Enabled
 -   1 – Disabled
 
-> **Important**  
+> [!IMPORTANT]
 > The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
 >
 > -   AllowSimpleDevicePassword
@@ -7118,7 +7122,7 @@ Footnote:
 > -   MinDevicePasswordComplexCharacters
 &nbsp;
 
-> **Important**  
+> [!IMPORTANT]
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
 >
 > -   MinDevicePasswordLength is set to 4
@@ -7502,7 +7506,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures** to set the policy.
@@ -8183,7 +8187,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Allows enterprise to turn on internal storage encryption.
 
-> **Important**  Bitlocker must be enabled on the device before using this policy.
+> [!IMPORTANT]
+> Bitlocker must be enabled on the device before using this policy.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8193,7 +8198,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-> **Important**  If encryption has been enabled, it cannot be turned off using this policy.
+> [!IMPORTANT]
+> If encryption has been enabled, it cannot be turned off using this policy.
 
 
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
@@ -8363,7 +8369,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">If there is policy configuration conflict, the latest configuration request is applied to the device.
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
-> **Important**  This node is set on a per-user basis and must be accessed using the following paths:
+> [!IMPORTANT]
+> This node is set on a per-user basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
@@ -8497,7 +8504,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 </table>
 
 
-> **Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
+> [!IMPORTANT]
+> If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
 
 
 <p style="margin-left: 20px">Most restricted value is 0.
@@ -8639,7 +8647,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
 <p style="margin-left: 20px">Allows sending to Microsoft user text input data samples (anonymized) are collected for future language model improvements.
 
-> **Important**  Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
+> [!IMPORTANT]
+> Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -8723,7 +8732,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
 
-    > **Important**  This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+> [!IMPORTANT]
+> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
  
 
 <p style="margin-left: 20px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
@@ -8854,7 +8864,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <td style="vertical-align:top"><p>1 month</p></td>
 <td style="vertical-align:top"><p>1 week</p></td>
 <td style="vertical-align:top"><div class="alert">
-<strong>Note</strong>  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+> [!NOTE]
+> If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
 <ul>
 <li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
