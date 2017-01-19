@@ -105,9 +105,8 @@ When Windows PE is running from the drive, you must turn off the PC before disc
     For UEFI-based PCs, you might need to find an option to manually select the UEFI boot files, for example, USBDrive01\\EFI\\BOOT\\BOOTX64.EFI.
 
     Windows PE starts automatically. After the command window appears, the wpeinit command runs automatically. This might take a few minutes.
-
 	
-## <span id="Troubleshooting"></span>o Troubleshooting
+## <span id="Troubleshooting"></span>Troubleshooting
 
 1.  If the PC does not boot, try the following steps in sequence, and try to boot the PC after each step:
 
