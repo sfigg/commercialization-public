@@ -8175,7 +8175,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceAllowTheseApps**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
-<a href="" id="privacy-letappsruninbackground-forcedenytheseappss"></a>**Privacy/LetAppsRunInBackground\_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceDenyTheseApps**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will not have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground\_UserInControlOfTheseApps**  
