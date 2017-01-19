@@ -2181,6 +2181,120 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprinterdiscoveryendpoint">EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintoauthauthority">EnterpriseCloudPrint/CloudPrintOAuthAuthority</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintoauthclientid">EnterpriseCloudPrint/CloudPrintOAuthClientId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintresourceid">EnterpriseCloudPrint/CloudPrintResourceId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-discoverymaxprinterlimit">EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-mopriadiscoveryresourceid">EnterpriseCloudPrint/MopriaDiscoveryResourceId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#experience-allowcopypaste">Experience/AllowCopyPaste</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -7007,9 +7121,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 > **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
  
-
 <p style="margin-left: 20px">Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 <p style="margin-left: 20px">Minimum supported value is 10.
@@ -7018,9 +7130,52 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">The default value is 10.
 
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//cloudprinterdiscovery.contoso.com".
+
+<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//azuretenant.contoso.com/adfs".
+
+<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a GUID. For example, "E1CF1107-FF90-4228-93BF-26052DD2C714".
+
+<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
+
+<p style="margin-left: 20px">The datatype is a string. 
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
+
+<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point.
+
+<p style="margin-left: 20px">The datatype is an integer. 
+
+<p style="margin-left: 20px">For Windows Mobile, the default value is 20.
+
+<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MopriaDiscoveryService/CloudPrint".
+
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 > **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
 
 <p style="margin-left: 20px">Specifies whether copy and paste is allowed.
 
@@ -8640,6 +8795,8 @@ Example
 ```
 
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 
 <p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
