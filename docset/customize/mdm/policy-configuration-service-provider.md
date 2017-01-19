@@ -4065,6 +4065,158 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forceallowtheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forcedenytheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps">Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground">Privacy/LetAppsRunInBackground</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forceallowtheseapps">Privacy/LetAppsRunInBackground_ForceAllowTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forcedenytheseapps">Privacy/LetAppsRunInBackground_ForceDenyTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-userincontroloftheseapps">Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices">Privacy/LetAppsSyncWithDevices</a></td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
 </td>
@@ -7988,6 +8140,46 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices\_UserInControlOfTheseApps**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Force allow, force deny or give user control of apps that can get diagnostic information about other apps, including user names.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – User in control.
+-   1 – Force allow.
+-   2 - Force deny.
+
+<p style="margin-left: 20px">Most restricted value is 2.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_ForceAllowTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_ForceDenyTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_UserInControlOfTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Force allow, Force deny or give user control of background activity from all UWP and Silverlight apps.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – User in control (default).
+-   1 – Force allow.
+-   2 - Force deny.
+
+<p style="margin-left: 20px">Most restricted value is 2.
+
+<a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceAllowTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground-forcedenytheseappss"></a>**Privacy/LetAppsRunInBackground\_ForceDenyTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will not have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground\_UserInControlOfTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. The user is able to control the 'run in background' privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can sync with devices.
