@@ -8162,7 +8162,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
 <a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Force allow, Force deny or give user control of background activity from all UWP and Silverlight apps.
+> [!WARNING]
+> Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can run in the background.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -8173,13 +8175,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 2.
 
 <a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceAllowTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceDenyTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps will not have access to run in background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground\_UserInControlOfTheseApps**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. The user is able to control the 'run in background' privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited UWP and Silverlight apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can sync with devices.
