@@ -8164,6 +8164,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
 > [!WARNING]
 > Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
+
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can run in the background.
 
 <p style="margin-left: 20px">The following list shows the supported values:
