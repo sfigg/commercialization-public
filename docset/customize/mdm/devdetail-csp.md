@@ -176,6 +176,11 @@ Returns the subnet mask for the active Wi-Fi connection. This is only exposed to
 
 Supported operation is Get.
 
+<a href="" id="devicehardwaredata"></a>**DeviceHardwareData**  
+Added in Windows 10 version 1703. Returns a base64-encoded string of the hardware parameters of a device.
+
+Supported operation is Get.
+
 ## Related topics
 
 
