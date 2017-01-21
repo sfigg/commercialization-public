@@ -523,7 +523,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Added the following new policies: </p>
+<ul>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Update/UpdateServiceUrlAlternate</li>
+</ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
@@ -840,7 +849,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policies: 
+<ul>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Update/UpdateServiceUrlAlternate</li>
+</ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
