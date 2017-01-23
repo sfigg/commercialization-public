@@ -540,7 +540,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p><p>Added the following setting: DeviceHardwareData</p></p>
+<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData</p>
 </td>
 </tr>
 <tr class="even">
