@@ -3728,8 +3728,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </table>
 
 
- 
-
 Footnote:
 
 -   1 - Added in Windows 10, version 1607.
@@ -5544,6 +5542,21 @@ The number of authentication failures allowed before the device will be wiped. A
 -   0 – Sync settings is not allowed.
 -   1 (default) – Sync settings allowed.
 
+<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
+
+<p style="margin-left: 20px">This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
+
+<p style="margin-left: 20px">Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
+
+> **Note** This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -5609,6 +5622,29 @@ The number of authentication failures allowed before the device will be wiped. A
 
 
 <p style="margin-left: 20px">Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
+
+<p style="margin-left: 20px">This policy allows administrators to prevent Windows Spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows Spotlight notifications will no longer be displayed in the Action Center. If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
+
+<p style="margin-left: 20px">This policy setting lets you turn off the Windows Spotlight Windows Welcome experience feature. 
+The Windows Welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a web page that highlights new features. If you enable this policy, the Windows Welcome Experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows Welcome Experience will be launched to inform onboard users about what's new, changed, and suggested.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
