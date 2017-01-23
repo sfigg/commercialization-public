@@ -9,12 +9,12 @@ ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 
 # DevDetail CSP
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
-> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
-
- 
+> [!NOTE]  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
 For the DevDetail CSP, you cannot use the Replace command unless the node already exists.
 
@@ -133,9 +133,7 @@ Added in Windows 10, version 1511. Integer that specifies the total available 
 
 Supported operation is Get.
 
-> **Note**  This is only supported in Windows 10 Mobile.
-
- 
+> [!NOTE]  This is only supported in Windows 10 Mobile.
 
 <a href="" id="ext-microsoft-totalram"></a>**Ext/Microsoft/TotalRAM**  
 Added in Windows 10, version 1511. Integer that specifies the total available memory in MB on the device (may be less than total physical memory).
@@ -147,9 +145,7 @@ The MAC address of the active WLAN connection, as a 12-digit hexadecimal number.
 
 Supported operation is Get.
 
-> **Note**  This is not supported in Windows 10 for desktop editions.
-
- 
+> [!NOTE]  This is not supported in Windows 10 for desktop editions.
 
 <a href="" id="volteservicesetting"></a>**VoLTEServiceSetting**  
 Returns the VoLTE service to on or off. This is only exposed to mobile operator OMA-DM servers.
@@ -176,8 +172,12 @@ Returns the subnet mask for the active Wi-Fi connection. This is only exposed to
 
 Supported operation is Get.
 
-## Related topics
+<a href="" id="devicehardwaredata"></a>**DeviceHardwareData**  
+Added in Windows 10 version 1703. Returns a base64-encoded string of the hardware parameters of a device.
 
+Supported operation is Get.
+
+## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
