@@ -15,15 +15,8 @@ The location path is a string that specifies the physical location that each dri
 
 For BIOS-based computers or a computer that is running Virtual Disk Service (VDS), you can use the **SELECT DISK=SYSTEM** and **SELECT DISK=NEXT** commands to select the appropriate hard drive.
 
-In this topic:
 
--   [Identifying a Drive Location Path](#identifyingdisklocationpath)
--   [Selecting the System Drive](#selectingsystemdisk)
--   [Selecting Non-System Drives](#selectingnonsystemdisks)
--   [Identifying the System Drive After a Reboot](#exampleidentifyingsystemdiskafterreboot)
--   [Formatting Nonsystem Drives](#exampleformattingnonsystemdisks)
-
-## <span id="IdentifyingDiskLocationPath"></span><span id="identifyingdisklocationpath"></span><span id="IDENTIFYINGDISKLOCATIONPATH"></span>Identifying a disk location path
+## <span id="IdentifyingDiskLocationPath"></span><span id="identifyingdisklocationpath"></span><span id="IDENTIFYINGDISKLOCATIONPATH"></span>Identifying a drive location path
 
 
 -   Use the DiskPart commands: **list disk** and **select disk &lt;disk number&gt;** (Example: **select disk 1**) to navigate between the drives on your computer.
