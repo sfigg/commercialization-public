@@ -6,7 +6,7 @@ MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Configure Multiple Hard Drives
 ---
 
-# Configure Multiple Hard Drives
+# Configure multiple hard drives
 
 
 If you are deploying Windows to a computer that has multiple hard drives, you can verify that the image is applied to a specific hard drive by using hardware-specific identifiers such as the location path or the hardware interrupt value.
@@ -15,18 +15,9 @@ The location path is a string that specifies the physical location that each dri
 
 For BIOS-based computers or a computer that is running Virtual Disk Service (VDS), you can use the **SELECT DISK=SYSTEM** and **SELECT DISK=NEXT** commands to select the appropriate hard drive.
 
-In this topic:
 
--   [Identifying a Drive Location Path](#identifyingdisklocationpath)
--   [Selecting the System Drive](#selectingsystemdisk)
--   [Selecting Non-System Drives](#selectingnonsystemdisks)
--   [Identifying the System Drive After a Reboot](#exampleidentifyingsystemdiskafterreboot)
--   [Formatting Nonsystem Drives](#exampleformattingnonsystemdisks)
+## <span id="IdentifyingDiskLocationPath"></span><span id="identifyingdisklocationpath"></span><span id="IDENTIFYINGDISKLOCATIONPATH"></span>Identifying a drive location path
 
-## <span id="IdentifyingDiskLocationPath"></span><span id="identifyingdisklocationpath"></span><span id="IDENTIFYINGDISKLOCATIONPATH"></span>
-
-
- **Identifying a Disk Location Path**
 
 -   Use the DiskPart commands: **list disk** and **select disk &lt;disk number&gt;** (Example: **select disk 1**) to navigate between the drives on your computer.
 
@@ -62,14 +53,12 @@ In this topic:
 ## <span id="Selecting_Drives"></span><span id="selecting_drives"></span><span id="SELECTING_DRIVES"></span>Selecting Drives
 
 
-<span id="SelectingSystemDisk"></span><span id="selectingsystemdisk"></span><span id="SELECTINGSYSTEMDISK"></span>
- **Selecting the System Drive**
+### <span id="SelectingSystemDisk"></span><span id="selectingsystemdisk"></span><span id="SELECTINGSYSTEMDISK"></span>Selecting the system drive
+
 
 1.  **BIOS-based computers**: Use the command **SELECT DISK=SYSTEM** to select the default system drive.
 
-    This command selects the drive that has an interrupt 13h value of 80h. If the value 80h is assigned to a USB flash drive, this command selects a hard drive that has a value of 81h. For more information, visit the following Microsoft Developer Network (MSDN) website:
-
-    [Converting Drive Letters to MS-DOS INT 13H Disk Drive Numbers](http://go.microsoft.com/fwlink/?LinkId=164574)
+    This command selects the drive that has an interrupt 13h value of 80h. If the value 80h is assigned to a USB flash drive, this command selects a hard drive that has a value of 81h.
 
 2.  **UEFI-based computers**: To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**.
 
@@ -78,8 +67,8 @@ In this topic:
 
      
 
-<span id="SelectingNonSystemDisks"></span><span id="selectingnonsystemdisks"></span><span id="SELECTINGNONSYSTEMDISKS"></span>
- **Selecting Non-System Drives**
+### <span id="SelectingNonSystemDisks"></span><span id="selectingnonsystemdisks"></span><span id="SELECTINGNONSYSTEMDISKS"></span>Selecting a non-system drive
+ 
 
 1.  **Select the drive by location path.** To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**, where &lt;*location path*&gt; is the location path of your drive. This command helps specify a drive by location.
 
@@ -139,7 +128,7 @@ In this topic:
     assign letter=z
     ```
 
-### <span id="ExampleIdentifyingSystemDiskAfterReboot"></span><span id="exampleidentifyingsystemdiskafterreboot"></span><span id="EXAMPLEIDENTIFYINGSYSTEMDISKAFTERREBOOT"></span>Identifying the System Drive After a Reboot
+### <span id="ExampleIdentifyingSystemDiskAfterReboot"></span><span id="exampleidentifyingsystemdiskafterreboot"></span><span id="EXAMPLEIDENTIFYINGSYSTEMDISKAFTERREBOOT"></span>Identifying the system drive after a reboot
 
 After you reboot, drive lettering may change. You can use the following example script to select the system drive and then reassign letters to the ESP, recovery, and Windows partitions.
 
@@ -153,7 +142,7 @@ select partition=3
 assign letter=w
 ```
 
-### <span id="ExampleFormattingNonSystemDisks"></span><span id="exampleformattingnonsystemdisks"></span><span id="EXAMPLEFORMATTINGNONSYSTEMDISKS"></span>Formatting Non-System Drives
+### <span id="ExampleFormattingNonSystemDisks"></span><span id="exampleformattingnonsystemdisks"></span><span id="EXAMPLEFORMATTINGNONSYSTEMDISKS"></span>Formatting non-system drives
 
 This example script selects the system drive and then skips past the drive without modifying the contents of the drive. The script then selects two non-system drives and creates a single, formatted, empty partition on each drive. The partitions do not receive an image, so it is not necessary to specifically identify them.
 
