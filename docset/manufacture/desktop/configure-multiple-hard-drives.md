@@ -62,14 +62,12 @@ In this topic:
 ## <span id="Selecting_Drives"></span><span id="selecting_drives"></span><span id="SELECTING_DRIVES"></span>Selecting Drives
 
 
-<span id="SelectingSystemDisk"></span><span id="selectingsystemdisk"></span><span id="SELECTINGSYSTEMDISK"></span>
+### <span id="SelectingSystemDisk"></span><span id="selectingsystemdisk"></span><span id="SELECTINGSYSTEMDISK"></span>
  **Selecting the System Drive**
 
 1.  **BIOS-based computers**: Use the command **SELECT DISK=SYSTEM** to select the default system drive.
 
-    This command selects the drive that has an interrupt 13h value of 80h. If the value 80h is assigned to a USB flash drive, this command selects a hard drive that has a value of 81h. For more information, visit the following Microsoft Developer Network (MSDN) website:
-
-    [Converting Drive Letters to MS-DOS INT 13H Disk Drive Numbers](http://go.microsoft.com/fwlink/?LinkId=164574)
+    This command selects the drive that has an interrupt 13h value of 80h. If the value 80h is assigned to a USB flash drive, this command selects a hard drive that has a value of 81h.
 
 2.  **UEFI-based computers**: To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**.
 
@@ -78,7 +76,7 @@ In this topic:
 
      
 
-<span id="SelectingNonSystemDisks"></span><span id="selectingnonsystemdisks"></span><span id="SELECTINGNONSYSTEMDISKS"></span>
+### <span id="SelectingNonSystemDisks"></span><span id="selectingnonsystemdisks"></span><span id="SELECTINGNONSYSTEMDISKS"></span>
  **Selecting Non-System Drives**
 
 1.  **Select the drive by location path.** To select a drive, use the DiskPart command **SELECT DISK=&lt;location path&gt;**, where &lt;*location path*&gt; is the location path of your drive. This command helps specify a drive by location.
