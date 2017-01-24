@@ -6426,7 +6426,7 @@ Footnote:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Not Allowed.
+-   0 – Not allowed.
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
@@ -6437,7 +6437,7 @@ Footnote:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Not Allowed.
+-   0 – Not allowed.
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
