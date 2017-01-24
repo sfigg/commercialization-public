@@ -33,7 +33,9 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
 **To deploy Compact OS using a WIM file**
 
-1.  Create a pagefile equal to 256 MB in WinPE.
+1.  Boot your destination device with the Windows 10 version of Windows PE. (To use a previous version of Windows PE, make sure you use the Windows 10 version of DISM. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).)
+
+2.  Create a pagefile equal to 256 MB.
 
     ``` syntax
     Wpeutil createpagefile C:\pagefile /size=256
@@ -41,7 +43,6 @@ Unlike WIMBoot, because the files are no longer combined into a single WIM file,
 
     Where "C" is the Windows partition.
 
-2.  Boot your destination device with the Windows 10 version of Windows PE. (To use a previous version of Windows PE, make sure you use the Windows 10 version of DISM. To learn more, see [Copy DISM to Another Computer](copy-dism-to-another-computer.md).)
 3.  Format and prepare the partitions, and then apply the image to a partition using the DISM /Apply-Image /Compact option:
 
     ``` syntax

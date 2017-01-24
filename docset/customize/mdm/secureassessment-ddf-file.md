@@ -97,14 +97,14 @@ This topic shows the OMA DM device description framework (DDF) for the **SecureA
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ScreenCaptureCapability</NodeName>
+          <NodeName>AllowScreenMonitoring</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
               <Replace />
             </AccessType>
             <DefaultValue>false</DefaultValue>
-            <Description>Indicates if screen capture is allowed by the app.</Description>
+            <Description>Indicates if screen monitoring is allowed by the app.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -123,14 +123,40 @@ This topic shows the OMA DM device description framework (DDF) for the **SecureA
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>PrintingCapability</NodeName>
+          <NodeName>RequirePrinting</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
               <Replace />
             </AccessType>
             <DefaultValue>false</DefaultValue>
-            <Description>Indicates if printing is allowed by the app.</Description>
+            <Description>Indicates if printing is required by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTextSuggestions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if keyboard text suggestions are allowed by the app.</Description>
             <DFFormat>
               <bool />
             </DFFormat>

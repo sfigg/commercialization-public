@@ -497,7 +497,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
 </ul>
 </td>
-</tr><tr class="even">
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
 <td style="vertical-align:top"><p>To PurposeGroups setting, added the following values:</p>
 <ul>
@@ -506,15 +507,18 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>[CellularSettings CSP](cellularsettings-csp.md)</p><p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
 <td style="vertical-align:top"><p>For these CSPs, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
+<li>AllowTextSuggestions</li>
+<li>PrintingCapability</li>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></ul></td>
+</ul>
+</td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
@@ -523,13 +527,27 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Added the following new policies: </p>
+<ul>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Update/UpdateServiceUrlAlternate</li>
+</ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData</p>
+</td>
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
@@ -831,8 +849,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
 <ul>
+<li>AllowTextSuggestions</li>
+<li>PrintingCapability</li>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></td>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting: DeviceHardwareData</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
@@ -840,7 +865,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policies: 
+<ul>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Update/UpdateServiceUrlAlternate</li>
+</ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>

@@ -9,6 +9,8 @@ ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
 
 # DevDetail DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 This topic shows the OMA DM device description framework (DDF) for the **DevDetail** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -36,7 +38,7 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName>urn:oma:mo:oma-dm-devdetail:1.0</DDFName>
+        <DDFName>urn:oma:mo:oma-dm-devdetail:1.1</DDFName>
       </DFType>
     </DFProperties>
     <Node>
@@ -646,10 +648,30 @@ This topic shows the OMA DM device description framework (DDF) for the **DevDeta
           </DFType>
         </DFProperties>
       </Node>
+      <Node>
+        <NodeName>DeviceHardwareData</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Added in Windows 10 version 1703. Returns a base64 encoded string of the hardware parameters of a device.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>text/plain</MIME>
+          </DFType>
+        </DFProperties>
+      </Node>
     </Node>
   </Node>
 </MgmtTree>
-
 ```
 
 ## Related topics
