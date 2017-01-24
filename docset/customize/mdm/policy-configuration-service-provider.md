@@ -6426,8 +6426,8 @@ Footnote:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Allowed.
--   1 (default) – Not allowed.
+-   0 – Not Allowed.
+-   1 (default) – Allowed.
 
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 > **Note**  This policy is only enforced in Windows 10 for desktop.
@@ -6437,8 +6437,8 @@ Footnote:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Allowed.
--   1 (default) – Not allowed.
+-   0 – Not Allowed.
+-   1 (default) – Allowed.
 
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 > **Note**  This policy is only enforced in Windows 10 for desktop.
