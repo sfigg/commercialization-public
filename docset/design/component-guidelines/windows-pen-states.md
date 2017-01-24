@@ -127,6 +127,7 @@ The operating system accepts touch interactions either from the left or right of
 **Note**  Although legacy devices (specifically ones that suppress touch input when pen input is being delivered) will function in Windows 10, these devices will not deliver the functionality described above. Additionally, these devices will not deliver any future functionality that leverages simultaneous pen and touch reporting.
 
 Starting in Windows 10, this setting can be hidden on systems that do not support simultaneous pen and touch reporting by using the following registry key. Setting the key to 0 will display the settings to the user, while setting it to 1 will hide them. 
+
 | Registry key                                               | Type  | Units             |
 |------------------------------------------------------------|-------|-------------------|
 | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Pen\HideSPTSettings | DWORD | Boolean (1 or 0) |
