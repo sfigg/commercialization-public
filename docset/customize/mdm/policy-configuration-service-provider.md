@@ -7470,13 +7470,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
-<<<<<<< HEAD
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-=======
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
->>>>>>> b576fa8... Changed notes to new style, fixed a few fields for the new DeliveryOptimization CSPs
  
 <p style="margin-left: 20px">Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
