@@ -334,6 +334,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ExcludeWUDriversInQualityUpdate</li>
 <li>Update/PauseFeatureUpdates</li>
 <li>Update/PauseQualityUpdates</li>
+<li>Update/UpdateServiceUrlAlternate (Added in the January service release of Windows 10, version 1607)</li>
 <li>WindowsInkWorkspace/AllowWindowsInkWorkspace</li>
 <li>WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</li>
 <li>WirelessDisplay/AllowProjectionToPC</li>
@@ -535,12 +536,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
-<li>Update/UpdateServiceUrlAlternate</li>
 </ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData</p>
+<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData.</p>
 </td>
 </tr>
 <tr class="even">
@@ -865,7 +865,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policies: 
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
@@ -873,8 +873,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
-<li>Update/UpdateServiceUrlAlternate</li>
 </ul>
+<p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
