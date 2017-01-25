@@ -25,7 +25,7 @@ To install Windows to a device without a DVD drive, you can use a USB flash driv
 
 1.  Copy and paste the entire contents of the Windows product DVD to the USB flash drive.
 
-2.  Optional: add an Unattend file or a configuration set to automate the installation process. For more information, see Automate Windows Setup.
+2.  Optional: add an Unattend file or a configuration set to automate the installation process. For more information, see [Automate Windows Setup](windows-setup-automation-overview.md).
 
 **Install Windows to the new PC**
 
