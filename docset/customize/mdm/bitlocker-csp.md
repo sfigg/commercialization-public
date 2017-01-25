@@ -10,14 +10,14 @@ MSHAttr:
 
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. The CSP was added in the next major update of Windows 10.
+The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703.
 
 > [!Note]  
-> Settings are only read at the time encryption is started. Encryption is not restarted with settings changes.
+> Settings are enforced only at the time encryption is started. Encryption is not restarted with settings changes.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
+The following diagram shows the BitLocker configuration service provider in tree format.
 
 ![bitlocker csp](images/provisioning-csp-bitlocker.png)
 
@@ -25,19 +25,70 @@ The following diagram shows the AppLocker configuration service provider in tree
 <p style="margin-left: 20px">Defines the root node for the BitLocker configuration service provider.</p>
 
 <a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
-<p style="margin-left: 20px">TBD.</p>
+<p style="margin-left: 20px">Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.</p>
+
+<p style="margin-left: 20px">Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.</p>
+
+<p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>0</Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+<p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
-<p style="margin-left: 20px">This setting maps to Policy CSP [Security/RequireDeviceEncryption](policy-configuration-service-provider#security-requiredeviceencryption) policy. The last write wins if RequireDeviceEncryption is set in both Policy CSP and BitLocker CSP.</p>
+
+<p style="margin-left: 20px">Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.</p>
+
+<p style="margin-left: 20px">Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
+
+<p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>0</Data>
+            </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>        
+```
+
+<p style="margin-left: 20px">Data type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**  
-<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive type. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
+<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive types. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
 
 <p style="margin-left: 20px">This setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
 
 <p style="margin-left: 20px">If you enable this setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10 (Version 1511).</p>
 
-<p style="margin-left: 20px">If you disable or do not configure this setting, BitLocker will use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" settings (in that order), if they are set. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script.</p>
+<p style="margin-left: 20px">If you disable or do not configure this setting, BitLocker will conform to local policy and use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" settings (in that order), if they are set. If the local policy is also not set, XTS-AES 128-bit will be used. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script.</p>
 
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
@@ -126,3 +177,158 @@ The following diagram shows the AppLocker configuration service provider in tree
 
 > [!Note]  
 > This setting can be overridden by the Group Policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" setting is enabled this setting will be ignored.
+
+
+### SyncML example
+
+``` syntax
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data>1</Data>
+            </Item>
+        </Replace>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data>1</Data>
+            </Item>
+        </Replace>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethod</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data>4</Data>
+            </Item>
+        </Replace>
+      
+     <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/EncryptionMethodByDriveType</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;
+                &lt;data id=&quot;EncryptionMethodWithXtsOsDropDown_Name&quot; value=&quot;4&quot;/&gt;
+                &lt;data id=&quot;EncryptionMethodWithXtsFdv&quot; value=&quot;7&quot;/&gt;
+                &lt;data id=&quot;EncryptionMethodWithXtsRdv&quot; value=&quot;4&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+       <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRequireStartupAuthentication</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;
+                &lt;data id=&quot;ConfigureTPMStartupKeyUsageDropDown_Name&quot; value=&quot;1&quot;
+                &lt;data id=&quot;ConfigurePINUsageDropDown_Name&quot; value=&quot;1&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+       <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesMinimumPINLength</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;&lt;data id=&quot;MinPINLength&quot;
+                value=&quot;6&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+       
+       <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;&lt;data id=&quot;PrebootRecoveryInfoDropDown_Name&quot;
+                value=&quot;2&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+       <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRecoveryOptions</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;&lt;data id=&quot;FDVRecoveryPasswordUsageDropDown_Name&quot;
+                value=&quot;2&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryOptions</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;&lt;data id=&quot;OSRecoveryPasswordUsageDropDown_Name&quot;
+                value=&quot;0&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+       <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/RemovableDrivesRequireEncryption</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;&lt;data id=&quot;RDVCrossOrg&quot;
+                value=&quot;1&quot;/&gt;
+              </Data>
+            </Item>
+        </Replace>
+      
+      <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/BitLocker/FixedDrivesRequireEncryption</LocURI>
+                </Target>
+              <Data>
+                &lt;enabled/&gt;
+              </Data>
+            </Item>
+        </Replace>
+    
+        <Final/>
+    </SyncBody>
+</SyncML>
+```
