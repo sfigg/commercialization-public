@@ -143,6 +143,7 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          If you disable or do not configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.”
                          The format is string.
                          Sample value for this node to enable this policy and set the encryption methods is:
+                         
                          &lt;enabled/&gt;&lt;data id=&quot;EncryptionMethodWithXtsOsDropDown_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;EncryptionMethodWithXtsFdvDropDown_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;EncryptionMethodWithXtsRdvDropDown_Name&quot; value=&quot;xx&quot;/&gt;
 
                          EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives.
