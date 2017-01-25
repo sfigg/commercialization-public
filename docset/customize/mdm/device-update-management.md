@@ -90,21 +90,18 @@ First some background:
 
 - If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it is common to all tenants.
 - A metadata sync service can then be implemented that periodically calls server-server sync to pull in metadata for the updates IT cares about.
-- The MDM component that uses OMA DM to control devices (described in the next section) should send the send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
+- The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
 
 
 The following procedure describes a basic algorithm for a metadata sync service:
 
 -   Initialization, composed of the following:
     1.  Create an empty list of “needed update IDs to fault in”. This list will get updated by the MDM service component that uses OMA DM. We recommend not adding definition updates to this list, since those are temporary in nature (for example, Defender releases about 4 new definition updates per day, each of which is cumulative).
-    2.  Create an empty list of “product categories” (or feel free to pre-populate it with a known product category you need).
 -   Sync periodically (we recommend once every 2 hours - no more than once/hour).
     1.  Implement the authorization phase of the protocol to get a cookie if you don’t already have a non-expired cookie. See **Sample 1: Authorization** in [Protocol Examples](http://go.microsoft.com/fwlink/p/?LinkId=526720).
     2.  Implement the metadata portion of the protocol (see **Sample 2: Metadata and Deployments Synchronization** in [Protocol Examples](http://go.microsoft.com/fwlink/p/?LinkId=526720)), and:
-        -   Specify update classification = security updates, and product categories = current list (initially empty) as your filter for GetRevisionIdList This step is optional if you want to proactively pull in security updates.
-        -   Call GetUpdateData for all updates returned from GetRevisionIdList and all updates in the "needed update IDs to fault in" list if the update metadata has not already been pulled into the DB.
+        -   Call GetUpdateData for all updates in the "needed update IDs to fault in" list if the update metadata has not already been pulled into the DB.
             -   If the update is a newer revision of an existing update (same UpdateID, higher revision number), replace the previous update metadata with the new one.
-            -   If the updates product category is not already on the "product categories" list, then add it to that list.
             -   Remove updates from the "needed update IDs to fault in" list once they have been brought in.
 
 This provides an efficient way to pull in the information about the set of Microsoft Updates that IT needs to manage, so the information can be used in various update management scenarios. For example, at update approval time you can pull information so IT can see what updates they are approving, or for compliance reports to see what updates are needed but not yet installed.
@@ -129,7 +126,7 @@ Updates are configured using a combination of the [Update CSP](update-csp.md), a
 
 ### Update policies
 
-The enterprise IT can configure auto-update polices via OMA DM using the [Policy CSP](policy-configuration-service-provider.md) (this functionality is not supported in Windows 10 Mobile and Windows 10 Home. Here's the CSP diagram for the Update node in Policy CSP.
+The enterprise IT can configure auto-update polices via OMA DM using the [Policy CSP](policy-configuration-service-provider.md) (this functionality is not supported in Windows 10 Mobile and Windows 10 Home). Here's the CSP diagram for the Update node in Policy CSP.
 
 The following diagram shows the Update policies in a tree format.
 
@@ -500,6 +497,20 @@ Example
             </Item>
         </Replace>
 ```
+
+<a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+<p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+
+<p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
+
+<p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
+
+<p style="margin-left: 20px">Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+
+> [!Note]  
+> If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
+> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
+> This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 ### Update management
 

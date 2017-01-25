@@ -55,7 +55,7 @@ Other settings that use provisioning packages:
 
 **Create a folder for the provisioning package in your test product**
 
-1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov.
+1.  In File Explorer, create a new folder, C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov.
 
     This folder is structure is used by the script: Provisioning.Auto.pkg.xml file in Provisioning.Auto folder. No changes are required.
 
@@ -63,9 +63,9 @@ Other settings that use provisioning packages:
     
     Rename the files if necessary to match your product names:
 
-    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.cat
-    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg
-    *  C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\customizations.xml    
+    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.cat
+    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg
+    *  C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\customizations.xml    
     	
 3.  Optional: update customizations.xml with any desired changes. See [Windows provisioning answer file](https://msdn.microsoft.com/library/windows/hardware/dn916153) for more info.
 
@@ -73,7 +73,7 @@ Other settings that use provisioning packages:
 
 1.  Review the package definition file: Provisioning.Auto.pkg.xml: C:\\IoT-ADK-AddonKit\\Common\\Packages\\Provisioning.Auto\\Provisioning.Auto.pkg.xml. 
 
-    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Common\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
+    Make sure the file source resolves correctly. ($PROD)Prov.ppkg resolves to C:\\IoT-ADK-AddonKit\\Source-_<arch_>\\Products\\ProductB\\prov\\ProductBProv.ppkg, this should match your provisioning package's file name.
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8"?>
@@ -155,10 +155,18 @@ Other settings that use provisioning packages:
 Build and flash the image using the same procedures from [Lab 1a: Create a basic image](create-a-basic-image.md). Short version:
 
 1.  From the IoT Core Shell, build the image (`buildimage ProductB Test`).
+
 2.  Install the image: Start **Windows IoT Core Dashboard** > Click the **Setup a new device** tab >  select **Device Type: Custom** >
+
 3.  From **Flash the pre-downloaded file (Flash.ffu) to the SD card**: click **Browse**, browse to your FFU file (C:\\IoT-ADK-AddonKit\\Build\\&lt;arch&gt;\\ProductB\\Test\\ProductB.ffu), then click **Next**.
-4.  Enter username and password (Default is: minwinpc / p@ssw0rd) > Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
-5.  Put the card into the IoT device and start it up.
+
+4.  Enter username and password (Default is: minwinpc / p@ssw0rd). 
+
+    **Note: We recommend using a different device name for each device to help prevent network conflicts.**
+
+5.  Put the Micro SD card in the device, select it, accept the license terms, and click *Install**. 
+
+6.  Put the card into the IoT device and start it up.
 
 Note: Ignore the settings for "Wi-Fi Network Connection" in these menus, these settings are not used. 
 
@@ -221,6 +229,8 @@ You can connect to your device's portal page to troubleshoot network connections
     ``` 
 
     The network should appear in the list of User profiles.
+
+**Use a different device name for each device.** This can help prevent network conflicts. Set this name while creating media for the device.
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 

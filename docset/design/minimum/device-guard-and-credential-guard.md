@@ -197,6 +197,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </td>
 <td>
 <p>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise</p>
+<p>Note: Windows Server 2016 running as a Domain Controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p>
 </td>
 <td>
 <ul>

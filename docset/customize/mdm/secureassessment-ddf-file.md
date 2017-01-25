@@ -9,6 +9,8 @@ ms.assetid: 68D17F2A-FAEA-4608-8727-DBEC1D7BE48A
 
 # SecureAssessment DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 This topic shows the OMA DM device description framework (DDF) for the **SecureAssessment** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -37,7 +39,7 @@ This topic shows the OMA DM device description framework (DDF) for the **SecureA
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/SecureAssessment</MIME>
+            <MIME>com.microsoft/1.1/MDM/SecureAssessment</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -85,6 +87,84 @@ This topic shows the OMA DM device description framework (DDF) for the **SecureA
             </Occurrence>
             <Scope>
               <Dynamic />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowScreenMonitoring</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if screen monitoring is allowed by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RequirePrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if printing is required by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTextSuggestions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if keyboard text suggestions are allowed by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
             </Scope>
             <CaseSense>
               <CIS />

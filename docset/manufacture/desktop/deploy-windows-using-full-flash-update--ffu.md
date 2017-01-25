@@ -24,18 +24,18 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
 ## <span id="Using___FFUs"></span><span id="using___ffus"></span><span id="USING___FFUS"></span>Using FFUs
 
 
-**To create an FFU image**
+### To create an FFU image
 
 1.  On your technician PC, open Windows ICD and create your project.
 2.  Plug in a USB flash drive and note the drive letter (example: D:).
 3.  Click **Create** &gt; **Production Media** &gt; **FFU** &gt; **Enable OS File Compression:** (**Yes** or **No**)&gt; name the file, for example, D:\\install.ffu &gt; **Build**.
 
-**To deploy Windows directly to an SD card or removable drive**
+### To deploy Windows directly to an SD card or removable drive
 
 1.  From Windows ICD, click **Deploy** &gt; (either **To USB connected device** or **To removable drive**) &gt; **Browse** &gt; browse to the FFU image &gt; **Next** &gt; Select the SD card or device &gt; **Next** &gt; **Flash**.
 2.  If you're deploying to SD cards, then after the flashing process is finished, insert the SD card into your target device.
 
-**To deploy Windows from WinPE**
+### To deploy Windows from WinPE
 
 1.  Boot your destination device to WinPE.
 2.  Connect a storage drive or a network location and note the drive letter, for example, N.
@@ -60,7 +60,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     DISM /Apply-Image /ImageFile:N:\flash.ffu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
-**To use a single drive for both WinPE and an FFU image**
+### To use a single drive for both WinPE and an FFU image
 
 1.  Split the FFU image into smaller files:
 
@@ -90,7 +90,7 @@ FFU images are often too large to fit on a standard WinPE FAT32-formatted USB fl
     DISM.exe /Apply-Image /ImageFile:E:\flash.sfu /SFUFile:flash*.sfu /ApplyDrive:\\.\PhysicalDrive0 /SkipPlatformCheck
     ```
 
-**To use a previous version of WinPE**
+### To use a previous version of WinPE
 
 1.  Plug in a WinPE USB key and note the drive letter, for example, E.
 2.  Add the Windows 10 version of DISM to the WinPE drive. To learn more, see [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md).
