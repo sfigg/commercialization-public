@@ -556,7 +556,6 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 ## System.Client.Buttons
 
-<!--There is no content provided here in the original Word file.-->
 
 ### System.Client.Buttons.HardwareButtons
 
@@ -7358,9 +7357,8 @@ This is an *If-Implemented*, optional system requirement for a system providing 
 </ul>
 <p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
 
-## System.Server.AzureStack
 
-<!--No content was provided here in the original Word file.-->
+## System.Server.AzureStack
 
 ### System.Server.AzureStack.Base
 
