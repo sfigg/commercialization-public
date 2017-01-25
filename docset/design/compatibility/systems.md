@@ -556,7 +556,6 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 
 ## System.Client.Buttons
 
-<!--There is no content provided here in the original Word file.-->
 
 ### System.Client.Buttons.HardwareButtons
 
@@ -7271,96 +7270,41 @@ Server supports hardware- and firmware-based enhanced platform integrity protect
 
 This is an *If-Implemented*, optional system requirement for a system providing enhanced security for Windows Server.  The server platform must support:
 
+- UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD
+  - System.Fundamentals.Firmware.UEFIBitLocker
+  - System.Fundamentals.Firmware.UEFIBootEntries
+  - System.Fundamentals.Firmware.UEFICompatibility
+  - System.Fundamentals.Firmware.UEFIDefaultBoot
+  - System.Fundamentals.Firmware.UEFILegacyFallback
+  - System.Fundamentals.Firmware.Update
+- SecureBoot as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.Firmware.UEFILegacyFallback
+  - System.Fundamentals.Firmware.UEFISecureBoot
+- The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests
+  - System.Server.Virtualization.ProcessorVirtualizationAssist
+- If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests
+  - System.Fundamentals.Security.DeviceGuard
+- The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.TPM20.EKCerts
+  - System.Fundamentals.TPM20.TPM20
 
-<ul>
-    <li>
-      <p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIBitLocker</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIBootEntries</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFICompatibility</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIDefaultBoot</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFILegacyFallback</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.Update</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFILegacyFallback</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFISecureBoot</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Server.Virtualization.ProcessorVirtualizationAssist</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Security.DeviceGuard</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.TPM20.EKCerts</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.TPM20.TPM20</p>
-        </li>
-      </ul>
-    </li>
-</ul>
-<p>The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.</p>
-<p>All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.</p>
-<p>For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default. In addition, the NoPPIProvision flag must be set to TRUE by default. There must be a mechanism in UEFI to confirm the settings of these variables and change them. This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.</p>
-<p>For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;</p>
-<ul>
-    <li>
-      <p>Data pages must be separate from code pages.</p>
-    </li>
-    <li>
-      <p>Code and Data pages are at page level granularity for alignment.</p>
-    </li>
-    <li>
-      <p>The same page <em>will not</em> contain both Data [Read or Write] and executable Code.</p>
-    </li>
-    <li>
-      <p>The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.</p>
-    </li>
-</ul>
-<p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
+The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.
+
+All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.
+
+For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default. In addition, the NoPPIProvision flag must be set to TRUE by default. There must be a mechanism in UEFI to confirm the settings of these variables and change them. This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.
+
+For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically,
+- Data pages must be separate from code pages.
+- Code and Data pages are at page level granularity for alignment.
+- The same page *will not* contain both Data [Read or Write] and executable Code.
+- The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.
+
+This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
+
 
 ## System.Server.AzureStack
-
-<!--No content was provided here in the original Word file.-->
 
 ### System.Server.AzureStack.Base
 
