@@ -17,19 +17,6 @@ The process described in this walkthrough is primarily intended for OEMs who wan
 
 IT Professionals who want to reduce the size of their overall image should instead use the process described in [Add Multilingual Support to a Windows Distribution](add-multilingual-support-to-a-windows-distribution.md). This process describes how to copy the lp.cab file to the Windows distribution, reducing the overall image size.
 
-In this guide:
-
--   [Step 1: Add language packs to a Windows image](#addlang)
-
--   [Step 2 (optional): Add language packs to Windows Setup](#optlang)
-
--   [Step 3: Test the Windows Installation](#test)
-
--   [Step 4: Boot to audit mode, add applications and run sysprep](#bootaudit)
-
--   [Step 5: Capture the image](#imagex)
-
--   [Step 6: Create regional images by removing language packs](#removepacks)
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
