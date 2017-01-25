@@ -5854,8 +5854,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 
 Footnote:
 
--   \1 - Added in Windows 10, version 1607.
--   \2 - Added in Windows 10, version 1703.
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
 
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic Enterprise
 
