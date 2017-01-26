@@ -46,7 +46,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   Separate substring values by the Unicode &\#xF000; in the XML file.
 
-> **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
+> **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
@@ -69,15 +69,15 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 ## **Policy Tables**
 
-Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
+Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
--   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
+-   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
 -   [Policies supported by Windows Holographic Enterprise](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
 -   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
-## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
+## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
-> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
 
 <table>
 <tr>
@@ -88,7 +88,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <th>Supported in Education</th>
 <th>Supported in Mobile</th>
 <th>Supported in Mobile Enterprise</th>
-<th>Supported in IoT Core</th>
 <th>
        Can be set using Exchange Active Sync (EAS)</th>
 </tr>
@@ -106,8 +105,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -125,8 +123,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -144,8 +141,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -163,8 +159,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -182,8 +177,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -201,8 +195,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -220,8 +213,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -239,8 +231,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -258,8 +249,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -277,8 +267,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -296,8 +285,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -315,8 +303,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -334,8 +321,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -353,8 +339,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -372,8 +357,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -391,8 +375,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -410,8 +393,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -429,8 +411,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -448,8 +429,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -467,8 +447,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -486,8 +465,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -505,8 +483,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -524,8 +501,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -543,8 +519,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -562,8 +537,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -581,8 +555,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -600,8 +573,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -619,8 +591,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -638,8 +609,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"></td>
 </tr>
 <tr>
@@ -656,8 +626,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -675,8 +644,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -694,8 +662,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -713,8 +680,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -732,8 +698,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -751,8 +716,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -770,8 +734,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -789,8 +752,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -808,8 +770,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -827,8 +788,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -846,8 +806,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -865,8 +824,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -884,8 +842,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -903,8 +860,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -922,8 +878,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -941,8 +896,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -960,8 +914,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -979,8 +932,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -998,8 +950,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1017,8 +968,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1036,8 +986,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1055,8 +1004,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1074,8 +1022,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1093,8 +1040,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1112,8 +1058,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1131,8 +1076,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1150,8 +1094,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1169,8 +1112,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1188,8 +1130,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1207,8 +1148,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1226,8 +1166,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1245,8 +1184,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1264,8 +1202,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1283,8 +1220,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1302,8 +1238,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1321,8 +1256,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1340,8 +1274,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1359,8 +1292,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1378,8 +1310,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1397,8 +1328,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1416,8 +1346,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1435,8 +1364,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1454,8 +1382,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1473,8 +1400,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1492,8 +1418,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1511,8 +1436,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1530,8 +1454,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1549,8 +1472,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1568,8 +1490,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1587,8 +1508,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1606,8 +1526,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1625,8 +1544,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1644,8 +1562,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1663,8 +1580,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1682,8 +1598,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1701,8 +1616,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1720,8 +1634,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1739,8 +1652,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1758,8 +1670,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1777,8 +1688,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1796,8 +1706,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1815,8 +1724,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1834,8 +1742,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1853,8 +1760,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1872,8 +1778,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1891,8 +1796,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1910,8 +1814,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1929,8 +1832,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1948,8 +1850,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1967,8 +1868,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -1986,8 +1886,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2005,8 +1904,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2024,8 +1922,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2043,8 +1940,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2062,8 +1958,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2081,8 +1976,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2100,8 +1994,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2119,8 +2012,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2138,8 +2030,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2157,8 +2048,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"></td>
 </tr>
 <tr>
@@ -2175,8 +2065,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2194,8 +2083,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2213,8 +2101,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2232,8 +2119,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2251,8 +2137,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2270,8 +2155,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2289,8 +2173,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2308,8 +2191,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2327,8 +2209,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2346,8 +2227,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2365,8 +2245,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2384,8 +2263,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2403,8 +2281,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2422,8 +2299,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2441,8 +2317,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2460,8 +2335,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2479,8 +2353,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2498,8 +2371,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2517,8 +2389,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2536,8 +2407,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2555,8 +2425,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2574,8 +2443,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2593,8 +2461,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2612,8 +2479,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2631,8 +2497,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2650,8 +2515,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2669,8 +2533,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2688,8 +2551,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2707,8 +2569,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2726,8 +2587,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2745,8 +2605,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2764,8 +2623,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2783,8 +2641,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2802,8 +2659,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2821,8 +2677,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2840,8 +2695,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2859,8 +2713,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2878,8 +2731,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2897,8 +2749,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2916,8 +2767,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2935,8 +2785,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2954,8 +2803,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2973,8 +2821,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -2992,8 +2839,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3011,8 +2857,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3030,8 +2875,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3049,8 +2893,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3068,8 +2911,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3087,8 +2929,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3106,8 +2947,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3125,8 +2965,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3144,8 +2983,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3163,8 +3001,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3182,8 +3019,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3201,8 +3037,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3220,8 +3055,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3239,8 +3073,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3258,8 +3091,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3277,8 +3109,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3296,8 +3127,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3315,8 +3145,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3334,8 +3163,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3353,8 +3181,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3372,8 +3199,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3391,8 +3217,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3410,8 +3235,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3429,8 +3253,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3448,8 +3271,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3467,8 +3289,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3486,8 +3307,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3505,8 +3325,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3524,8 +3343,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3543,8 +3361,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3562,8 +3379,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3581,8 +3397,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3600,8 +3415,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3619,8 +3433,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3638,8 +3451,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3657,8 +3469,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/></td>
@@ -3677,8 +3488,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3696,8 +3506,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3715,8 +3524,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3734,8 +3542,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3753,8 +3560,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3772,8 +3578,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3791,8 +3596,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3810,8 +3614,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3829,8 +3632,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3848,8 +3650,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3867,8 +3668,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3886,8 +3686,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3905,8 +3704,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3924,8 +3722,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3943,8 +3740,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3962,8 +3758,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -3981,8 +3776,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4000,8 +3794,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4019,8 +3812,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4038,8 +3830,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4057,8 +3848,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4076,8 +3866,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4095,8 +3884,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4114,8 +3902,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4133,8 +3920,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4152,8 +3938,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4171,8 +3956,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4190,8 +3974,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4209,8 +3992,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4228,8 +4010,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4247,8 +4028,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4266,8 +4046,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4285,8 +4064,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4304,8 +4082,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4323,8 +4100,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4342,8 +4118,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4361,8 +4136,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4380,8 +4154,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4399,8 +4172,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4418,8 +4190,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4437,8 +4208,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4456,8 +4226,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4475,8 +4244,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4494,8 +4262,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4513,8 +4280,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4532,8 +4298,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4551,8 +4316,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4570,8 +4334,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4589,8 +4352,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"></td>
 </tr>
 <tr>
@@ -4607,8 +4369,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4626,8 +4387,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4645,8 +4405,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4664,8 +4423,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4683,8 +4441,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4702,8 +4459,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4721,8 +4477,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4740,8 +4495,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4759,8 +4513,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4778,8 +4531,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4797,8 +4549,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4816,8 +4567,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4835,8 +4585,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4854,8 +4603,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4873,8 +4621,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4892,8 +4639,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4911,8 +4657,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4930,8 +4675,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4949,8 +4693,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4968,8 +4711,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4987,8 +4729,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5006,8 +4747,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5025,8 +4765,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5044,8 +4783,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5063,8 +4801,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5082,8 +4819,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5101,8 +4837,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5120,8 +4855,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5139,8 +4873,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5158,8 +4891,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5177,8 +4909,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5196,8 +4927,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5215,8 +4945,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5234,8 +4963,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5253,8 +4981,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5272,8 +4999,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5291,8 +5017,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5310,8 +5035,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5329,8 +5053,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5348,8 +5071,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5367,8 +5089,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5386,8 +5107,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5405,8 +5125,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5423,8 +5142,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5442,8 +5160,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5461,8 +5178,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5480,12 +5196,12 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
+
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 </table>
+
 
  
 
@@ -5610,6 +5326,64 @@ Footnote:
 -   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
 -   [Update/PauseQualityUpdates](#update-pausequalityupdates)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
+
+## <a href="" id="iotcorepolicies"></a>Policies supported by Windows IoT Core
+
+-  [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-  [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-  [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-  [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-  [Bluetooth/AllowPrepairing\*](#bluetooth-allowprepairing)
+-  [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-  [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
+-  [Browser/AllowAutofill](#browser-allowautofill)
+-  [Browser/AllowBrowser](#browser-allowbrowser)
+-  [Browser/AllowCookies](#browser-allowcookies)
+-  [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-  [Browser/AllowInPrivate](#browser-allowinprivate)
+-  [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-  [Browser/AllowPopups](#browser-allowpopups)
+-  [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-  [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)
+-  [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)
+-  [Camera/AllowCamera](#camera-allowcamera)
+-  [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-  [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)
+-  [Connectivity/AllowNFC](#connectivity-allownfc)
+-  [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-  [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)
+-  [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)
+-  [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)
+-  [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)
+-  [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)
+-  [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-  [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)
+-  [System/AllowEmbeddedMode](#system-allowembeddedmode)
+-  [System/AllowStorageCard](#system-allowstoragecard)
+-  [System/TelemetryProxy](#system-telemetryproxy)
+-  [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)
+-  [Update/AllowUpdateService](#update-allowupdateservice)
+-  [Update/BranchReadinessLevel\*](#update-branchreadinesslevel)
+-  [Update/DeferFeatureUpdatesPeriodInDays\*](#update-deferfeatureupdatesperiodindays)
+-  [Update/DeferQualityUpdatesPeriodInDays\*](#update-deferqualityupdatesperiodindays)
+-  [Update/ExcludeWUDriversInQualityUpdate\*](#update-excludewudriversinqualityupdate)
+-  [Update/PauseDeferrals](#update-pausedeferrals)
+-  [Update/PauseFeatureUpdates\*](#update-pausefeatureupdates)
+-  [Update/PauseQualityUpdates\*](#update-pausequalityupdates)
+-  [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-  [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-  [Update/ScheduledInstallDay](#update-scheduledinstallday)
+-  [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-  [Update/UpdateServiceUrl](#update-updateserviceurl)
+-  [WiFi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)
+-  [WiFi/AllowInternetSharing](#wifi-allowinternetsharing)
+-  [WiFi/AllowWiFi](#wifi-allowwifi)
+-  [WiFi/WLANScanMode](#wifi-wlanscanmode)
+
+Footnote:
+
+-   \* - Added in Windows 10, version 1607.
+
 
 
 ## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
