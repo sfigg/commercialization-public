@@ -1731,11 +1731,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><a href="#deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1883,11 +1883,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><a href="#deliveryoptimization-domindisksizeallowedtopeer">DeliveryOptimization/DOMinDiskSizeAllowedToPeer</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1902,11 +1902,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><a href="#deliveryoptimization-dominfilesizetocache">DeliveryOptimization/DOMinFileSizeToCache</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1921,11 +1921,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><a href="#deliveryoptimization-dominramallowedtopeer">DeliveryOptimization/DOMinRAMAllowedToPeer</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -4066,17 +4066,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2*<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4085,17 +4085,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forceallowtheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4104,17 +4104,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forcedenytheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4123,17 +4123,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps">Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4142,17 +4142,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsruninbackground">Privacy/LetAppsRunInBackground</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4161,17 +4161,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forceallowtheseapps">Privacy/LetAppsRunInBackground_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4180,17 +4180,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forcedenytheseapps">Privacy/LetAppsRunInBackground_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -4199,17 +4199,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsruninbackground-userincontroloftheseapps">Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -5299,6 +5299,25 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#update-activehoursmaxrange">Update/ActiveHoursMaxRange</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#update-activehoursstart">Update/ActiveHoursStart</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5394,6 +5413,63 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-autorestartnotificationstyle">Update/AutoRestartNotificationStyle</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5482,6 +5558,63 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
@@ -5603,6 +5736,44 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#update-scheduleimminentrestartwarning">Update/ScheduleImminentRestartWarning</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-schedulerestartwarning">Update/ScheduleRestartWarning</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#update-scheduledinstallday">Update/ScheduledInstallDay</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5636,6 +5807,25 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
@@ -5855,6 +6045,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 Footnote:
 
 -   \* - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
 
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic Enterprise
 
@@ -8893,6 +9084,17 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">The default is 17 (5 PM).
 
+<a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
+
+<p style="margin-left: 20px">Supported values are 8-18.
+
+<p style="margin-left: 20px">The default value is 18 (hours).
+
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -8975,6 +9177,41 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
+
+<a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 15, 30, 60, 120, and 240 (minutes).
+
+<p style="margin-left: 20px">The default value is 15 (minutes).
+
+<a href="" id="update-autorestartnotificationstyle"></a>**Update/AutoRestartNotificationStyle**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the style used for auto-restart reminder notifications.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   1 (default) – Full Screen.
+-   2 – Partial Screen.
+
+<a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   1 (default) – Auto Dismissal.
+-   2 – User Dismissal.
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 > [!NOTE]
@@ -9096,6 +9333,39 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
+<a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline before a pending restart will automatically be executed outside of active hours.
+
+<p style="margin-left: 20px">Supported values are 2-30 (days).
+
+<p style="margin-left: 20px">The default value is 14 (days).
+
+<a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 1-3 (days).
+
+<p style="margin-left: 20px">The default value is 3 (days).
+
+<a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the timing before transitioning from Auto-restart to Engaged restart.
+
+<p style="margin-left: 20px">Supported values are 2-30 (days).
+
+<p style="margin-left: 20px">The default value is 7 (days).
+
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -9185,6 +9455,28 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 – Not configured. The device installs all applicable updates.
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
+<a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
+
+<p style="margin-left: 20px">Supported values are 15, 30, or 60 (minutes).
+
+<p style="margin-left: 20px">The default value is 15 (minutes).
+
+<a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 2, 4, 8, 12, or 24 (hours).
+
+<p style="margin-left: 20px">The default value is 4 (hours).
+
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -9221,6 +9513,18 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 
 <p style="margin-left: 20px">The default value is 3.
+
+<a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Enabled
+-   1 – Disabled
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 > [!NOTE]
