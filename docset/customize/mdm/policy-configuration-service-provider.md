@@ -8702,9 +8702,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
-> [!NOTE]
-> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
 
 <p style="margin-left: 20px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
