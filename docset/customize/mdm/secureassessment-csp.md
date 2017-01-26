@@ -9,6 +9,8 @@ ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 
 # SecureAssessment CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
@@ -24,7 +26,7 @@ The supported operation is Get.
 <a href="" id="launchuri"></a>**LaunchURI**  
 URI Link to an assessment that's automatically loaded when the secure assessment browser is launched.
 
-The supported operation is Add, Delete, Get, and Replace.
+The supported operations are Add, Delete, Get, and Replace.
 
 <a href="" id="testeraccount"></a>**TesterAccount**  
 The user name of the test taking account.
@@ -33,7 +35,17 @@ The user name of the test taking account.
 -   To specify an AAD account, use username@tenant.com.
 -   To specify a local account, use the username.
 
-The supported operation is Add, Delete, Get, and Replace.
+The supported operations are Add, Delete, Get, and Replace.
+
+<a href="" id="ScreenCaptureCapability"></a>**ScreenCaptureCapability**  
+Added in Windows 10, version 1703. Boolean value that indicates whether screen capture is allowed by the app.  
+
+Supported operations are Get and Replace.
+
+<a href="" id="PrintingCapability"></a>**PrintingCapability**  
+Added in Windows 10, version 1703. Boolean value that indicates whether printing is allowed by the app.  
+
+Supported operations are Get and Replace.
 
 ## Related topics
 
