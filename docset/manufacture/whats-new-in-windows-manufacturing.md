@@ -13,7 +13,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 **January 5, 2017**
 
-- [Install Windows 10 using a previous version of Windows PE](copy-dism-to-another-computer.md): Added instructions to copy DISM to a separate file location, to help improve WinPE boot performance. Fixed file path errors.
+- [Install Windows 10 using a previous version of Windows PE](desktop/copy-dism-to-another-computer.md): Added instructions to copy DISM to a separate file location, to help improve WinPE boot performance. Fixed file path errors.
 
 **January 3, 2017**
 
@@ -31,13 +31,13 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
 
-[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
 [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
-[Append, apply, and export volume images with a Windows Image (.wim) file](append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
+[Append, apply, and export volume images with a Windows Image (.wim) file](desktop/append-a-volume-image-to-an-existing-image-using-dism--s14.md): Updated (Shows how to manage and combine multiple volume images from a single .WIM file.)
 
-[Compact OS, single-instancing, and image optimization](desktop/compact_os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
+[Compact OS, single-instancing, and image optimization](desktop/compact-os.md#Size_comparisons): Added a comparison table to show the drive space savings when using Compact OS, single-instancing, and when shrinking or removing the hibernation file (hiberfile.sys).
 
 **November 30, 2016**
 
