@@ -19,7 +19,7 @@ The image will be cropped to fit the size of your display, while preserving the 
 
 Select an image which will look good when cropped to the common aspect ratios for your computer. In most cases, we recommend that you use a 1920x1200 image with the focal point of the image near the center.
 
-The graphic must be a .jpg or .bmp image.
+The graphic must be a .png, .jpg, or .bmp image.
 
 **Note**  NOTE: In Windows 10, if you use this (DesktopBackground/ThemeName) setting, you’ll also need to set (ThemeName/DesktopBackground).
 
