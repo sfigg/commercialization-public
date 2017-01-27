@@ -27,7 +27,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 <a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
 <p style="margin-left: 20px">Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.</p>
 
-<p style="margin-left: 20px">Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.</p>
+<p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.</p>
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
@@ -41,7 +41,7 @@ The following diagram shows the BitLocker configuration service provider in tree
                     <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">int</Format>
                 </Meta>
                 <Data>0</Data>
                 </Item>
@@ -50,13 +50,13 @@ The following diagram shows the BitLocker configuration service provider in tree
 </SyncML>
 ```
 
-<p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+<p style="margin-left: 20px">Data type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
 
 <p style="margin-left: 20px">Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.</p>
 
-<p style="margin-left: 20px">Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
+<p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
@@ -70,7 +70,7 @@ The following diagram shows the BitLocker configuration service provider in tree
                     <LocURI>./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption</LocURI>
                 </Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Format xmlns="syncml:metinf">int</Format>
                 </Meta>
                 <Data>0</Data>
             </Item>
@@ -88,7 +88,7 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">If you enable this setting you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511.</p>
 
-<p style="margin-left: 20px">If you disable or do not configure this setting, BitLocker will conform to local policy and use AES with the same bit strength (128-bit or 256-bit) as the "Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)" and "Choose drive encryption method and cipher strength" settings (in that order), if they are set. If the local policy is also not set, XTS-AES 128-bit will be used. If none of the policies are set, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by the setup script.</p>
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.</p>
 
 <p style="margin-left: 20px"> Sample value for this node to enable this policy and set the encryption methods is:</p>
 
@@ -151,8 +151,8 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The possible values for 'xx' are:</p>
 <ul>
-<li>1 = Explicitly allow</li>
-<li>0 = Policy not set</li>
+<li>true = Explicitly allow</li>
+<li>false = Policy not set</li>
 </ul>
 
 <p style="margin-left: 20px">The possible values for 'yy' are:</p>
@@ -293,8 +293,8 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The possible values for 'xx' are:</p>
 <ul>
-<li>1 = Explicitly allow</li>
-<li>0 = Policy not set</li>
+<li>true = Explicitly allow</li>
+<li>false = Policy not set</li>
 <li></li>
 </ul>
 
@@ -342,9 +342,11 @@ The following diagram shows the BitLocker configuration service provider in tree
                          
 <p style="margin-left: 20px">Set "FDVHideRecoveryPage_Name" (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.</p>
                          
-<p style="margin-left: 20px">Set "FDVActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "2" (Backup recovery password only) only the recovery password is stored in AD DS.</p>
+<p style="margin-left: 20px">Set "FDVActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services) to enable saving the recovery key to AD.</p>
                          
 <p style="margin-left: 20px">Set the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.</p>
+
+<p style="margin-left: 20px">Set the "FDVActiveDirectoryBackupDropDown_Name" (Configure storage of BitLocker recovery information to AD DS) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "2" (Backup recovery password only) only the recovery password is stored in AD DS.</p>
                          
 > [!Note]  
 > If the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field is set, a recovery password is automatically generated.
@@ -361,8 +363,8 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The possible values for 'xx' are:</p>
 <ul>
-<li>1 = Explicitly allow</li>
-<li>0 = Policy not set</li>
+<li>true = Explicitly allow</li>
+<li>false = Policy not set</li>
 </ul>
 
 <p style="margin-left: 20px">The possible values for 'yy' are:</p>
@@ -452,8 +454,8 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">The possible values for 'xx' are:</p>
 <ul>
-<li>1 = Explicitly allow</li>
-<li>0 = Policy not set</li>
+<li>true = Explicitly allow</li>
+<li>false = Policy not set</li>
 </ul>
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:</p>

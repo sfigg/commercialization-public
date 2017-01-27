@@ -52,7 +52,7 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
               <Replace />
             </AccessType>
             <Description>Allows the Admin to require storage card encryption on the device.
-                         The format is string.
+                         The format is integer.
                          This policy is only valid for mobile SKU.
                          Sample value for this node to enable this policy:
                          1
@@ -66,7 +66,7 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
                              </Target>
                              <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
+                                 <Format xmlns="syncml:metinf">int</Format>
                              </Meta>
                              <Data>0</Data>
                            </Item>
@@ -96,7 +96,7 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
               <Replace />
             </AccessType>
             <Description>Allows the Admin to require encryption to be turned on using BitLocker\Device Encryption.
-                         The format is string.
+                         The format is integer.
                          Sample value for this node to enable this policy:
                          1
 
@@ -109,7 +109,7 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption</LocURI>
                              </Target>
                              <Meta>
-                                 <Format xmlns="syncml:metinf">chr</Format>
+                                 <Format xmlns="syncml:metinf">int</Format>
                              </Meta>
                              <Data>0</Data>
                            </Item>
@@ -143,7 +143,6 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          If you disable or do not configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.”
                          The format is string.
                          Sample value for this node to enable this policy and set the encryption methods is:
-                         
                          &lt;enabled/&gt;&lt;data id=&quot;EncryptionMethodWithXtsOsDropDown_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;EncryptionMethodWithXtsFdvDropDown_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;EncryptionMethodWithXtsRdvDropDown_Name&quot; value=&quot;xx&quot;/&gt;
 
                          EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives.
@@ -214,8 +213,8 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          ConfigureTPMUsageDropDown_Name = Configure TPM startup.
 
                          The possible values for 'xx' are:
-                         1 = Explicitly allow
-                         0 = Policy not set
+                         true = Explicitly allow
+                         false = Policy not set
 
                          The possible values for 'yy' are:
                          2 = Optional
@@ -380,8 +379,8 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          &lt;enabled/&gt;&lt;data id=&quot;OSAllowDRA_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;OSRecoveryPasswordUsageDropDown_Name&quot; value=&quot;yy&quot;/&gt;&lt;data id=&quot;OSRecoveryKeyUsageDropDown_Name&quot; value=&quot;yy&quot;/&gt;&lt;data id=&quot;OSHideRecoveryPage_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;OSActiveDirectoryBackup_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;OSActiveDirectoryBackupDropDown_Name&quot; value=&quot;zz&quot;/&gt;&lt;data id=&quot;OSRequireActiveDirectoryBackup_Name&quot; value=&quot;xx&quot;/&gt;
 
                          The possible values for 'xx' are:
-                         1 = Explicitly allow
-                         0 = Policy not set
+                         true = Explicitly allow
+                         false = Policy not set
 
                          The possible values for 'yy' are:
                          2 = Allowed
@@ -436,8 +435,9 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. Consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet for more information about adding data recovery agents.
                          In "FDVRecoveryPasswordUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
                          Set "FDVHideRecoveryPage_Name" (Omit recovery options from the BitLocker setup wizard) to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
-                         Set "FDVActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "2" (Backup recovery password only) only the recovery password is stored in AD DS.
+                         Set "FDVActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services) to enable saving the recovery key to AD.
                          Set the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+                         Set the "FDVActiveDirectoryBackupDropDown_Name" (Configure storage of BitLocker recovery information to AD DS) to choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "2" (Backup recovery password only) only the recovery password is stored in AD DS.
                          Note: If the "FDVRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" data field is set, a recovery password is automatically generated.
                          If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
                          The format is string.
@@ -445,8 +445,8 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          &lt;enabled/&gt;&lt;data id=&quot;FDVAllowDRA_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;FDVRecoveryPasswordUsageDropDown_Name&quot; value=&quot;yy&quot;/&gt;&lt;data id=&quot;FDVRecoveryKeyUsageDropDown_Name&quot; value=&quot;yy&quot;/&gt;&lt;data id=&quot;FDVHideRecoveryPage_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;FDVActiveDirectoryBackup_Name&quot; value=&quot;xx&quot;/&gt;&lt;data id=&quot;FDVActiveDirectoryBackupDropDown_Name&quot; value=&quot;zz&quot;/&gt;&lt;data id=&quot;FDVRequireActiveDirectoryBackup_Name&quot; value=&quot;xx&quot;/&gt;
 
                          The possible values for 'xx' are:
-                         1 = Explicitly allow
-                         0 = Policy not set
+                         true = Explicitly allow
+                         false = Policy not set
 
                          The possible values for 'yy' are:
                          2 = Allowed
@@ -554,8 +554,8 @@ This topic shows the OMA DM device description framework (DDF) for the **BitLock
                          &lt;enabled/&gt;&lt;data id=&quot;RDVCrossOrg&quot; value=&quot;xx&quot;/&gt;
 
                          The possible values for 'xx' are:
-                         1 = Explicitly allow
-                         0 = Policy not set
+                         true = Explicitly allow
+                         false = Policy not set
 
                          Disabling the policy will let the system choose the default behaviors.
                          If you want to disable this policy use the following SyncML:
