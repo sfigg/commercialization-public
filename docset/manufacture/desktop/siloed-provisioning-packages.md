@@ -228,9 +228,14 @@ The /Apply-SiloedPackage command works with both traditional provisioning packag
 
 ### Push-button reset restores packages in the order they were applied
 
-During push-button reset, Windows applies the siloed provisioning packages in the same order that they were originally applied when using Dism /Apply-SiloedPackage.
+When using ScanState to capture traditional provisioning packages, only one package with all the applications and system settings can be placed in %systemdrive%\Recovery\Customizations folder.  During push-button reset (PBR), the single provisioning package is processed to restore the applications and system settings.
 
-If the packages used single-instancing before the reset, they'll be single-instanced again after the device is restored.
+Beginning with Windows 10, version 1607, applications can be captured in multiple siloed provisioning packages and system settings can also be captured in a separate siloed provisioning package. As a result, PBR is enhanced to allow multiple siloed provisioning packages to be applied, in the preserved order in which they were applied using Dism /Apply-Siloed Package. The packages can then be queued and processed in the right order during PBR to restore the applications and system settings captured in these packages. If the packages were applied using single-instancing, it will be honored when PBR restores them to the device. 
+
+Single-instancing can occur automatically if Compact OS is used, or manually. 
+
+- If you use WinPE, then applying an image as Compact OS, then apply SPPs to it, Windows automatically single-instances the contents of the package. To learn more, see [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+- If you create provisioning packages in audit mode, you can choose to single-instance the contents by using the DISM /Apply-CustomDataImage /SingleInstance command. To learn more, see  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md).
 
 
 ## Scenarios for using siloed provisioning packages
