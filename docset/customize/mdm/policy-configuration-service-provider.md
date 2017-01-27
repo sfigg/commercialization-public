@@ -4408,15 +4408,15 @@ Footnote:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**
+<a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**   
 Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
   
 > [!NOTE]
 > This policy has no effect when the Browser/HomePages policy is not configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).  
-  
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages. 
@@ -4524,7 +4524,7 @@ Added in Windows 10, version 1703. Boolean value that specifies whether the lock
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**   
-Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
 
 <p style="margin-left: 20px">You must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. If you want your employees to use the Microsoft Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; otherwise, if you want your employees to use Bing as the default search engine, set the string EDGEBING. 
  
