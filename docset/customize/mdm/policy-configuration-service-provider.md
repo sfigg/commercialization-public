@@ -4206,6 +4206,19 @@ Footnote:
 
 <p style="margin-left: 20px">The default value is an empty string.
 
+<a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
+
+> [!NOTE]
+> Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type." 
+-   1 (default) – Allowed. Address bar drop-down is enabled.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 <p style="margin-left: 20px">Specifies whether autofill on websites is allowed.
 
@@ -4339,6 +4352,18 @@ Footnote:
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Block pop-ups** is greyed out.
 
+<a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows search engine customization for MDM-enrolled devices. Users can change their default search engine. 
+  
+<p style="margin-left: 20px">If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge settings. If this setting is disabled, users will be unable to add search engines or change the default used in the address bar. This policy applies only on domain-joined machines or when the device is MDM-enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy). 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 <p style="margin-left: 20px">Specifies whether search suggestions are allowed in the address bar.
 
@@ -4365,6 +4390,38 @@ Footnote:
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
+
+<a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you to add up to 5 additional search engines for MDM-enrolled devices. 
+ 
+<p style="margin-left: 20px">If this policy is enabled, you can add up to 5 additional search engines for your employees. For each additional search engine you want to add, you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. Employees cannot remove these search engines, but they can set any one as the default. This setting does not affect the default search engine. 
+
+<p style="margin-left: 20px">If this setting is not configured, the search engines used are the ones that are specified in the App settings. If this setting is disabled, the search engines you added will be deleted from your employee's machine.
+ 
+<p style="margin-left: 20px">Due to Protected Settings (aka.ms/browserpolicy), this setting will apply only on domain-joined machines or when the device is MDM-enrolled. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Additional search engines are not allowed.
+-   1 – Additional search engines are allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**
+Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
+  
+> [!NOTE]
+> This policy has no effect when the Browser/HomePages policy is not configured. 
+ 
+> [!IMPORTANT]
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).  
+  
+p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Enable lockdown of the Start pages according to the settings specified in Browser/HomePages policy. Users cannot change the Start pages. 
+-   1  – Disable lockdown of the Start pages and allow users to modify them.  
+
+<p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 > [!NOTE]
@@ -4393,10 +4450,11 @@ Footnote:
 > [!NOTE]
 > This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
- 
 <p style="margin-left: 20px">Specifies your Start pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Start pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
 
 <p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
+
+<p style="margin-left: 20px">Starting in Windows 10, version 1703, if you don’t want to send traffic to Microsoft, you can use the '<about:blank>' value, which is honored for both domain- and non-domain-joined machines, when it’s the only configured URL. 
 
 > [!NOTE]
 > Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
@@ -4409,6 +4467,16 @@ Footnote:
 
 -   0 (default) – Users can access the about:flags page in Microsoft Edge.
 -   1 – Users can't access the about:flags page in Microsoft Edge.
+
+<a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the first-run web page. On the first explicit user-launch of Microsoft Edge, a first-run web page hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
+
+p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Employees see the first-run web page. 
+-   1 – Employees don't see the first-run web page.
+
+<p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 <p style="margin-left: 20px">Specifies whether users can override the SmartScreen Filter warnings about potentially malicious websites.
@@ -4451,6 +4519,23 @@ Footnote:
 
 -   0 (default) – Intranet traffic is sent to Internet Explorer.
 -   1 – Intranet traffic is sent to Microsoft Edge.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**
+Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
+
+<p style="margin-left: 20px">You must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. If you want your employees to use the Microsoft Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; otherwise, if you want your employees to use Bing as the default search engine, set the string EDGEBING. 
+ 
+<p style="margin-left: 20px">If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees. If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market.   
+ 
+> [!IMPORTANT]
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) - The default search engine is set to the one specified in App settings.
+-   1 - Allows you to configure the default search engine for your employees.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
