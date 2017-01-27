@@ -4409,7 +4409,7 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**   
-Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
   
 > [!NOTE]
 > This policy has no effect when the Browser/HomePages policy is not configured. 
