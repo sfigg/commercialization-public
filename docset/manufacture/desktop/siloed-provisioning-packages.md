@@ -226,7 +226,7 @@ DISM.exe /ImagePath:C:\ /Apply-CustomDataImage /CustomDataImage:C:\Recovery\Cust
 The /Apply-SiloedPackage command works with both traditional provisioning packages and siloed provisioning packages (.spp).
 -If you create provisioning packages in audit mode, you can choose to single-instance contents by using the DISM /Apply-CustomDataImage /SingleInstance command. To learn more see Lab 1g: Make changes from Windows (audit mode).
 
-### Push-button reset restores packages in the order they were applied
+### Push-button reset
 
 When using ScanState to capture traditional provisioning packages, only one package with all the applications and system settings can be placed in %systemdrive%\Recovery\Customizations folder.  During push-button reset (PBR), the single provisioning package is processed to restore the applications and system settings.
 
