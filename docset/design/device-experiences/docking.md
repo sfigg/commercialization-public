@@ -28,7 +28,6 @@ Wired docking features to consider:
 -   An Ethernet port
 
 ### Recommendations
-
 -   Device to dock connection is USB Type-C. For more information see [Windows support for USB Type-C connectors](https://msdn.microsoft.com/library/windows/hardware/mt628692).
 
 ## Wireless docking

@@ -10,100 +10,101 @@ author: beneluxboy
 
 This section of the documentation provides specifications for hardware compatibility for systems running Windows 10, version 1607.
 
- - [System.Client.BluetoothController.Base](#system-client-bluetoothcontroller-base)
- - [System.Client.BluetoothController.NonUSB](#system-client-bluetoothcontroller-nonusb)
- - [System.Client.BluetoothController.USB](#system-client-bluetoothcontroller-usb)
- - [System.Client.BrightnessControls](#system-client-brightnesscontrols)
- - [System.Client.Buttons](#system-client-buttons)
- - [System.Client.Camera](#system-client-camera)
- - [System.Client.Digitizer](#system-client-digitizer)
- - [System.Client.Digitizer.Pen](#system-client-digitizer-pen)
- - [System.Client.Digitizer.PrecisionTouchpad](#system-client-digitizer-precisiontouchpad)
- - [System.Client.Digitizer.Touch](#system-client-digitizer-touch)
- - [System.Client.Firmware.UEFI.GOP](#system-client-firmware-uefi-gop)
- - [System.Client.Graphics](#system-client-graphics)
- - [System.Client.MobileBroadBand](#system-client-mobilebroadband)
- - [System.Client.PCContainer](#system-client-pccontainer)
- - [System.Client.RadioManagement](#system-client-radiomanagement)
- - [System.Client.RadioManagement.ConnectedStandby](#system-client-radiomanagement-connectedstandby)
- - [System.Client.SystemConfiguration](#system-client-systemconfiguration)
- - [System.Client.SystemImage](#system-client-systemimage)
- - [System.Client.SystemPartition](#system-client-systempartition)
- - [System.Client.ScreenRotation](#system-client-screenrotation)
- - [System.Client.Tablet.Graphics](#system-client-tablet-graphics)
- - [System.Client.WLAN.BasicConnectivity](#system-client-wlan-basicconnectivity)
- - [System.Client.WLAN.HangDetectionAndRecovery](#system-client-wlan-hangdetectionandrecovery)
- - [System.Client.WLAN.HostedNetwork](#system-client-wlan-hostednetwork)
- - [System.Client.WLAN.WiFiDirect](#system-client-wlan-wifidirect)
- - [System.Client.WLAN.Miracast](#system-client-wlan-miracast)
- - [System.Fundamentals.DebugPort](#system-fundamentals-debugport)
- - [System.Fundamentals.DebugPort.USB](#system-fundamentals-debugport-usb)
- - [System.Fundamentals.EnergyEstimation](#system-fundamentals-energyestimation)
- - [System.Fundamentals.Firmware](#system-fundamentals-firmware)
- - [System.Fundamentals.Firmware.Boot](#system-fundamentals-firmware-boot)
- - [System.Fundamentals.Firmware.CS](#system-fundamentals-firmware-cs)
- - [System.Fundamentals.Firmware.TPR](#system-fundamentals-firmware-tpr)
- - [System.Fundamentals.Graphics](#system-fundamentals-graphics)
- - [System.Fundamentals.Graphics.DisplayRender](#system-fundamentals-graphics-displayrender)
- - [System.Fundamentals.Graphics.HybridGraphics](#system-fundamentals-graphics-hybridgraphics)
- - [System.Fundamentals.Graphics.InternalDisplay](#system-fundamentals-graphics-internaldisplay)
- - [System.Fundamentals.Graphics.MultipleDevice](#system-fundamentals-graphics-multipledevice)
- - [System.Fundamentals.Graphics.RenderOnly](#system-fundamentals-graphics-renderonly)
- - [System.Fundamentals.HAL](#system-fundamentals-hal)
- - [System.Fundamentals.Input](#system-fundamentals-input)
- - [System.Fundamentals.MarkerFile](#system-fundamentals-markerfile)
- - [System.Fundamentals.Network](#system-fundamentals-network)
- - [System.Fundamentals.NX](#system-fundamentals-nx)
- - [System.Fundamentals.PowerManagement](#system-fundamentals-powermanagement)
- - [System.Fundamentals.PowerManagement.CS](#system-fundamentals-powermanagement-cs)
- - [System.Fundamentals.PXE](#system-fundamentals-pxe)
- - [System.Fundamentals.Reliability](#system-fundamentals-reliability)
- - [System.Fundamentals.Security](#system-fundamentals-security)
- - [System.Fundamentals.ServerNano](#system-fundamentals-servernano)
- - [System.Fundamentals.SignedDrivers](#system-fundamentals-signeddrivers)
- - [System.Fundamentals.SMBIOS](#system-fundamentals-smbios)
- - [System.Fundamentals.StorageAndBoot](#system-fundamentals-storageandboot)
- - [System.Fundamentals.StorageClassMemory](#system-fundamentals-storageclassmemory)
- - [System.Fundamentals.SystemAudio](#system-fundamentals-systemaudio)
- - [System.Fundamentals.SystemPCIController](#system-fundamentals-systempcicontroller)
- - [System.Fundamentals.SystemUSB](#system-fundamentals-systemusb)
- - [System.Fundamentals.TPM20](#system-fundamentals-tpm20)
- - [System.Fundamentals.TrustedPlatformModule](#system-fundamentals-trustedplatformmodule)
- - [System.Fundamentals.USBBoot](#system-fundamentals-usbboot)
- - [System.Fundamentals.USBDevice](#system-fundamentals-usbdevice)
- - [System.Fundamentals.WatchDogTimer](#system-fundamentals-watchdogtimer)
- - [System.Server.Assurance](#system-server-assurance)
- - [System.Server.AzureStack](#system-server-azurestack)
- - [System.Server.AzureStack.Storage](#system-server-azurestack-storage)
- - [System.Server.AzureStack.Networking](#system-server-azurestack-networking)
- - [System.Server.AzureStack.Firmware](#system-server-azurestack-firmware)
- - [System.Server.AzureStack.Security](#system-server-azurestack-security)
- - [System.Server.AzureStack.Security.Base](#system-server-azurestack-security-base)
- - [System.Server.AzureStack.BMC](#system-server-azurestack-bmc)
- - [System.Server.AzureStack.BMC.Base](#system-server-azurestack-bmc-base)
- - [System.Server.Base](#system-server-base)
- - [System.Server.BMC](#system-server-bmc)
- - [System.Server.DynamicPartitioning](#system-server-dynamicpartitioning)
- - [System.Server.FaultTolerant](#system-server-faulttolerant)
- - [System.Server.Firmware.UEFI.GOP](#system-server-firmware-uefi-gop)
- - [System.Server.Firmware.VBE](#system-server-firmware-vbe)
- - [System.Server.Graphics](#system-server-graphics)
- - [System.Server.Manageability.Redfish](#system-server-manageability-redfish)
- - [System.Server.PowerManageable](#system-server-powermanageable)
- - [System.Server.RemoteFX](#system-server-remotefx)
- - [System.Server.SMBIOS](#system-server-smbios)
- - [System.Server.StorageManageability.Smapi](#system-server-storagemanageability-smapi)
- - [System.Server.StorageManageability.Smapi.BlockStorage](#system-server-storagemanageability-smapi-blockStorage)
- - [System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication](#system-server-storagemanageability-smapi-blockStorage-remotereplication)
- - [System.Server.StorageManageability.Smapi.FileStorage](#system-server-storagemanageability-smapi-filestorage)
- - [System.Server.StorageManageability.Smapi.Smi](#system-server-storagemanageability-smapi-smi)
- - [System.Server.SVVP](#system-server-svvp)
- - [System.Server.SystemStress](#system-server-systemstress)
- - [System.Server.Virtualization](#system-server-virtualization)
- - [System.Server.WHEA](#system-server-whea)
- - [System.Solutions.AzureStack](#system-solutions-azurestack)
- - [System.Solutions.StorageSpacesDirect](#system.solutions-storagespacesdirect)
+ - [System.Client.BluetoothController.Base](#system.client.bluetoothcontroller.base)
+ - [System.Client.BluetoothController.NonUSB](#system.client.bluetoothcontroller.nonusb)
+ - [System.Client.BluetoothController.USB](#system.client.bluetoothcontroller.usb)
+ - [System.Client.BrightnessControls](#system.client.brightnesscontrols)
+ - [System.Client.Buttons](#system.client.buttons)
+ - [System.Client.Camera](#system.client.camera)
+ - [System.Client.Digitizer](#system.client.digitizer)
+ - [System.Client.Digitizer.Pen](#system.client.digitizer.pen)
+ - [System.Client.Digitizer.PrecisionTouchpad](#system.client.digitizer.precisiontouchpad)
+ - [System.Client.Digitizer.Touch](#system.client.digitizer.touch)
+ - [System.Client.Firmware.UEFI.GOP](#system.client.firmware.uefi.gop)
+ - [System.Client.Graphics](#system.client.graphics)
+ - [System.Client.MobileBroadBand](#system.client.mobilebroadband)
+ - [System.Client.PCContainer](#system.client.pccontainer)
+ - [System.Client.RadioManagement](#system.client.radiomanagement)
+ - [System.Client.RadioManagement.ConnectedStandby](#system.client.radiomanagement.connectedstandby)
+ - [System.Client.SystemConfiguration](#system.client.systemconfiguration)
+ - [System.Client.SystemImage](#system.client.systemimage)
+ - [System.Client.SystemPartition](#system.client.systempartition)
+ - [System.Client.ScreenRotation](#system.client.screenrotation)
+ - [System.Client.Tablet.Graphics](#system.client.tablet.graphics)
+ - [System.Client.WLAN.BasicConnectivity](#system.client.wlan.basicconnectivity)
+ - [System.Client.WLAN.HangDetectionAndRecovery](#system.client.wlan.hangdetectionandrecovery)
+ - [System.Client.WLAN.HostedNetwork](#system.client.wlan.hostednetwork)
+ - [System.Client.WLAN.WiFiDirect](#system.client.wlan.wifidirect)
+ - [System.Client.WLAN.Miracast](#system.client.wlan.miracast)
+ - [System.Fundamentals.DebugPort](#system.fundamentals.debugport)
+ - [System.Fundamentals.DebugPort.USB](#system.fundamentals.debugport.usb)
+ - [System.Fundamentals.EnergyEstimation](#system.fundamentals.energyestimation)
+ - [System.Fundamentals.Firmware](#system.fundamentals.firmware)
+ - [System.Fundamentals.Firmware.Boot](#system.fundamentals.firmware.boot)
+ - [System.Fundamentals.Firmware.CS](#system.fundamentals.firmware.cs)
+ - [System.Fundamentals.Firmware.TPR](#system.fundamentals.firmware.tpr)
+ - [System.Fundamentals.Graphics](#system.fundamentals.graphics)
+ - [System.Fundamentals.Graphics.DisplayRender](#system.fundamentals.graphics.displayrender)
+ - [System.Fundamentals.Graphics.HybridGraphics](#system.fundamentals.graphics.hybridgraphics)
+ - [System.Fundamentals.Graphics.InternalDisplay](#system.fundamentals.graphics.internaldisplay)
+ - [System.Fundamentals.Graphics.MultipleDevice](#system.fundamentals.graphics.multipledevice)
+ - [System.Fundamentals.Graphics.RenderOnly](#system.fundamentals.graphics.renderonly)
+ - [System.Fundamentals.HAL](#system.fundamentals.hal)
+ - [System.Fundamentals.Input](#system.fundamentals.input)
+ - [System.Fundamentals.MarkerFile](#system.fundamentals.markerfile)
+ - [System.Fundamentals.Network](#system.fundamentals.network)
+ - [System.Fundamentals.NX](#system.fundamentals.nx)
+ - [System.Fundamentals.PowerManagement](#system.fundamentals.powermanagement)
+ - [System.Fundamentals.PowerManagement.CS](#system.fundamentals.powermanagement.cs)
+ - [System.Fundamentals.PXE](#system.fundamentals.pxe)
+ - [System.Fundamentals.Reliability](#system.fundamentals.reliability)
+ - [System.Fundamentals.Security](#system.fundamentals.security)
+ - [System.Fundamentals.ServerNano](#system.fundamentals.servernano)
+ - [System.Fundamentals.SignedDrivers](#system.fundamentals.signeddrivers)
+ - [System.Fundamentals.SMBIOS](#system.fundamentals.smbios)
+ - [System.Fundamentals.StorageAndBoot](#system.fundamentals.storageandboot)
+ - [System.Fundamentals.StorageClassMemory](#system.fundamentals.storageclassmemory)
+ - [System.Fundamentals.SystemAudio](#system.fundamentals.systemaudio)
+ - [System.Fundamentals.SystemPCIController](#system.fundamentals.systempcicontroller)
+ - [System.Fundamentals.SystemUSB](#system.fundamentals.systemusb)
+ - [System.Fundamentals.TPM20](#system.fundamentals.tpm20)
+ - [System.Fundamentals.TrustedPlatformModule](#system.fundamentals.trustedplatformmodule)
+ - [System.Fundamentals.USBBoot](#system.fundamentals.usbboot)
+ - [System.Fundamentals.USBDevice](#system.fundamentals.usbdevice)
+ - [System.Fundamentals.WatchDogTimer](#system.fundamentals.watchdogtimer)
+ - [System.Server.Assurance](#system.server.assurance)
+ - [System.Server.AzureStack](#system.server.azurestack)
+ - [System.Server.AzureStack.Storage](#system.server.azurestack.storage)
+ - [System.Server.AzureStack.Networking](#system.server.azurestack.networking)
+ - [System.Server.AzureStack.Firmware](#system.server.azurestack.firmware)
+ - [System.Server.AzureStack.Security](#system.server.azurestack.security)
+ - [System.Server.AzureStack.Security.Base](#system.server.azurestack.security.base)
+ - [System.Server.AzureStack.BMC](#system.server.azurestack.bmc)
+ - [System.Server.AzureStack.BMC.Base](#system.server.azurestack.bmc.base)
+ - [System.Server.Base](#system.server.base)
+ - [System.Server.BMC](#system.server.bmc)
+ - [System.Server.DynamicPartitioning](#system.server.dynamicpartitioning)
+ - [System.Server.FaultTolerant](#system.server.faulttolerant)
+ - [System.Server.Firmware.UEFI.GOP](#system.server.firmware.uefi.gop)
+ - [System.Server.Firmware.VBE](#system.server.firmware.vbe)
+ - [System.Server.Graphics](#system.server.graphics)
+ - [System.Server.Manageability.Redfish](#system.server.manageability.redfish)
+ - [System.Server.PowerManageable](#system.server.powermanageable)
+ - [System.Server.RemoteFX](#system.server.remotefx)
+ - [System.Server.SMBIOS](#system.server.smbios)
+ - [System.Server.StorageManageability.Smapi](#system.server.storagemanageability.smapi)
+ - [System.Server.StorageManageability.Smapi.BlockStorage](#system.server.storagemanageability.smapi.blockStorage)
+ - [System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication](#system.server.storagemanageability.smapi.blockStorage.remotereplication)
+ - [System.Server.StorageManageability.Smapi.FileStorage](#system.server.storagemanageability.smapi.filestorage)
+ - [System.Server.StorageManageability.Smapi.Smi](#system.server.storagemanageability.smapi.smi)
+ - [System.Server.SVVP](#system.server.svvp)
+ - [System.Server.SystemStress](#system.server.systemstress)
+ - [System.Server.Virtualization](#system.server.virtualization)
+ - [System.Server.WHEA](#system.server.whea)
+ - [System.Solutions.AzureStack](#system.solutions.azurestack)
+ - [System.Solutions.StorageSpacesDirect](#system.solutions.storagespacesdirect)
 
+<a name="system.client.bluetoothcontroller.base"></a>
 ## System.Client.BluetoothController.Base
 
 *These requirements apply to systems that have generic Bluetooth controllers.*
@@ -321,7 +322,7 @@ Windows systems that support both WLAN and Bluetooth must meet WLAN-BT Co-existe
 
  - Must be able to scan simultaneously for both WLAN and Bluetooth networks.
 
-
+<a name="system.client.bluetoothcontroller.nonusb"></a>
 ## System.Client.BluetoothController.NonUSB
 
 *These requirements apply to systems that have non-USB Bluetooth enabled controllers.*
@@ -367,6 +368,7 @@ Any platform using a non-USB connected Bluetooth enabled controller must ship wi
 Any platform using a Non-USB connected Bluetooth enabled controller must use sideband channel for SCO (such as SCO over an I2S/PCM interface).
 
 
+<a name="system.client.bluetoothcontroller.usb"></a>
 ## System.Client.BluetoothController.USB
 
 *These requirements apply to systems that have USB Bluetooth enabled controllers.*
@@ -392,6 +394,7 @@ Any platform using a Non-USB connected Bluetooth enabled controller must use sid
 A System with a Bluetooth enabled controller must comply with the Synchronous Connection Oriented (SCO)-USB requirements that are outlined in the Specification of the Bluetooth System, Version 2.1 + Enhanced Data Rate (EDR), Part A, Section 3.5.
 
 
+<a name="system.client.brightnesscontrols"></a>
 ## System.Client.BrightnessControls 
 
 *This section describes requirements systems with brightness controls.*
@@ -553,7 +556,7 @@ The \_BCL and \_BCM methods in the firmware enable the operating system to query
 </table>
 
 
-
+<a name="system.client.buttons"></a>
 ## System.Client.Buttons
 
 
@@ -583,6 +586,7 @@ GPIO buttons must be specified using the standardized ACPI generic button device
 In the case where buttons are not wired through GPIO interrupts, buttons must be reported to Windows as HID collections. HID button report descriptors must follow the report descriptors specified on the following page: <https://msdn.microsoft.com/en-us/library/windows/hardware/dn457881.aspx>
 
 
+<a name="system.client.camera"></a>
 ## System.Client.Camera
 
 <!--No content was provided here in the original Word file.-->
@@ -759,6 +763,7 @@ It is recommended that the variable photo sequence allows the application to spe
 If any parameter is not set in per frame settings the driver shall follow the global settings and 3A locks. For example when EV bracketing is used, the driver shall ensure that exposure related parameters like gain and exposure are set according to EV bracketing settings.  The driver may vary auto white balance settings for image frames unless the per frame settings use manual white balance settings or in case of application uses white balance lock. It not recommended that lens position is automatically changed between the VPS frames (unless manually specified by the application).
 
 
+<a name="system.client.digitizer"></a>
 ## System.Client.Digitizer
 
 <!--No content was provided here in the original Word file.-->
@@ -894,6 +899,7 @@ The following Precision Touchpad device level requirements must be met and verif
 A touchpad may not be marketed as a Precision Touchpad if the device requires a 3<sup>rd</sup> party driver be installed in order to report as a Precision Touchpad.
 
 
+<a name="system.client.digitizer.pen"></a>
 ## System.Client.Digitizer.Pen
 
 <!--No content was provided here in the original Word file.-->
@@ -1132,6 +1138,7 @@ The following Pen device level requirement must be met and verified upon integra
 The following Pen device level requirement must be met and verified upon integration into a system. Please refer to the **Device.Input.Digitizer.Pen.ThirdPartyDrivers** requirement for full requirement details.
 
 
+<a name="system.client.digitizer.precisiontouchpad"></a>
 ## System.Client.Digitizer.PrecisionTouchpad
 
 <!--No content was provided here in the original Word file.-->
@@ -1424,6 +1431,7 @@ The following Precision Touchpad device level requirement must be met and verifi
 The following Precision Touchpad device level requirement must be met and verified upon integration into a system. Please refer to the **Device.Input.Digitizer.PrecisionTouchpad.ThirdPartyDrivers** requirements for full requirement details.
 
 
+<a name="system.client.digitizer.touch"></a>
 ## System.Client.Digitizer.Touch
 
 <!--No content was provided here in the original Word file.-->
@@ -1668,6 +1676,7 @@ The following Touch device level requirements must be met and verified upon inte
 The following Touch device level requirements must be met and verified upon integration into a system. Please refer to the following **Device.Input.Digitizer.Touch.ThirdPartyDrivers** requirement for full requirement details.
 
 
+<a name="system.client.firmware.uefi.gop"></a>
 ## System.Client.Firmware.UEFI.GOP
 
 <!--No content was provided here in the original Word file.-->
@@ -1738,6 +1747,7 @@ The display is controlled by the system UEFI before the WDDM graphics driver tak
      - If the display is not integrated and does not have an EDID, then the UEFI does not need to manufacture an EDID.
 
 
+<a name="system.client.graphics"></a>
 ## System.Client.Graphics
 
 <!--No content was provided here in the original Word file.-->
@@ -1912,6 +1922,7 @@ Both the above mentioned requirements are optional for Stereo 3D capable resolut
  - Systems may use an Indirect Display driver to connect a USB display.
 
 
+<a name="system.client.mobilebroadband"></a>
 ## System.Client.MobileBroadBand
 
 *These are requirements for Mobile Broadband devices integrated in the systems.*
@@ -2073,7 +2084,7 @@ interfaces. The following table summarizes the required mobile broadband feature
 </ul>
 
 
-
+<a name="system.client.pccontainer"></a>
 ## System.Client.PCContainer
 
 *Windows is moving towards a device centric presentation of computers and devices.  Elements of the Windows user interface (UI), such as the Devices and Printers folder, will show the computer and all devices that are connected to the computer.  The requirements in this section detail what is required to have the PC appear as a single object in the Windows UI.*
@@ -2118,6 +2129,7 @@ To group the functionality exposed by the computer into a single device containe
 The Single Computer Display Object test (ComputerSingleDDOTest.exe) must be executed on the system to check if this requirement has been met. The tool is available in Windows Lab Kit.
 
 
+<a name="system.client.radiomanagement"></a>
 ## System.Client.RadioManagement
 
 *This feature contains requirements for buttons that control the management of any radios in a laptop or Tablet/convertible PC. It also contains requirements for GPS radios, Near Field Proximity radios, and Bluetooth enabled radios that do not use the Windows native Bluetooth stack.  *
@@ -2555,6 +2567,7 @@ When the Radio Management API sends a HID message because the global wireless st
 For an A-B switch, the manufacturer's proprietary embedded controller must report the correct state of the switch at all times by sending a HID message to the HID driver, including every time the PC is turned on back on. Reporting the state of the A-B switch when the computer is turned back on is especially important in the case that the switch changed states while the PC was in states S3/S4/S5.
  
 
+<a name="system.client.radiomanagement.connectedstandby"></a>
 ## System.Client.RadioManagement.ConnectedStandby
 
 *This feature contains requirements for buttons that control the management of any radios in a laptop or Tablet/convertible PC. The radios that this requirement applies to are GPS.*
@@ -2580,6 +2593,7 @@ For an A-B switch, the manufacturer's proprietary embedded controller must repor
 In order to conserve energy, systems that support connected standby cannot include a status indicator indicating whether the radios are on. 
 
 
+<a name="system.client.systemconfiguration"></a>
 ## System.Client.SystemConfiguration
 
 
@@ -2637,7 +2651,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 </table>
 
 
-
+<a name="system.client.systemimage"></a>
 ## System.Client.SystemImage
 
 *The requirements in this section describe the level two quality of HW + SW + OEM image*
@@ -2663,6 +2677,7 @@ For all other Windows 10 systems, the table below lists the minimum required com
 A system must include a separate partition with a bootable Windows Recovery Environment image file (winre.wim). The GPT partition should be of type PARTITION\_MSFT\_RECOVERY\_GUID, includes the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED and GPT\_BASIC\_DATA\_ATTRIBUTE\_NO\_DRIVE\_LETTER attributes, and contains at least 50 megabytes (MB) of free space after the Windows Recovery Environment image file has been copied to it.
 
 
+<a name="system.client.systempartition"></a>
 ## System.Client.SystemPartition
 
 *The requirements in this section describe the PC system partition configuration requirements.*
@@ -2716,6 +2731,7 @@ For example:
 Partitions which are identified with the GPT\_ATTRIBUTE\_PLATFORM\_REQUIRED attribute must not be used for storing user data (such as through data backup, for example).
 
 
+<a name="system.client.screenrotation"></a>
 ## System.Client.ScreenRotation
 
 <!--No content was provided here in the original Word file.-->
@@ -2746,6 +2762,7 @@ All Windows systems with an accelerometer must have sufficient graphics performa
 Both the above mentioned requirements are optional for Stereo 3D capable resolutions.
 
 
+<a name="system.client.tablet.graphics"></a>
 ## System.Client.Tablet.Graphics
 
 <!--No content was provided here in the original Word file.-->
@@ -2777,6 +2794,7 @@ Graphics drivers on tablet systems are required to support all mode orientati
 Both the above mentioned requirements are optional for Stereo 3D capable resolutions.
 
 
+<a name="system.client.wlan.basicconnectivity"></a>
 ## System.Client.WLAN.BasicConnectivity
 
 <!--No content was provided here in the original Word file.-->
@@ -2808,6 +2826,7 @@ If present WLAN allows for untethered connectivity to networks allowing for a wi
 Timing for the above actions can be found in the Windows 10 WLAN Device requirements.
 
 
+<a name="system.client.wlan.hangdetectionandrecovery"></a>
 ## System.Client.WLAN.HangDetectionAndRecovery
 
 <!--No content was provided here in the original Word file.-->
@@ -2842,6 +2861,7 @@ Device: The Lower Edge driver will be able to gather dumps with 25 ms and 250 Kb
 System: The system must complete the reset within 10 seconds.
 
 
+<a name="system.client.wlan.hostednetwork"></a>
 ## System.Client.WLAN.HostedNetwork
 
 <!--No content was provided here in the original Word file.-->
@@ -2862,6 +2882,7 @@ System: The system must complete the reset within 10 seconds.
 **Description**With this feature, a Windows computer can use a single physical wireless adapter to connect as a client to a hardware access point (AP), while at the same time acting as a software AP allowing other wireless-capable devices to connect to it.
 
 
+<a name="system.client.wlan.wifidirect"></a>
 ## System.Client.WLAN.WiFiDirect
 
 <!--No content was provided here in the original Word file.-->
@@ -2884,6 +2905,7 @@ System: The system must complete the reset within 10 seconds.
 Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for Wi-Fi Direct to allow pairing to & from the PC, Accepting and Connecting to other Wi-Fi Direct Device for the GO & the Client Role. This includes support for concurrent operation over Wi-Fi Direct & Station.
 
 
+<a name="system.client.wlan.miracast"></a>
 ## System.Client.WLAN.Miracast
 
 <!--No content was provided here in the original Word file.-->
@@ -2906,6 +2928,7 @@ Support for Wi-Fi Direct by the Wi-Fi Driver to enable Miracast, Public APIs for
 Miracast requires both WiFiDirect support in the WLAN Adapter and support in the Graphics driver. Miracast allows the user to extend their display to a Miracast supported sync device.
 
 
+<a name="system.fundamentals.debugport"></a>
 ## System.Fundamentals.DebugPort
 
 *The ability to debug a system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the ability to kernel debug a Windows system.*
@@ -2964,6 +2987,7 @@ FOR ALL OF THE ABOVE IMPLEMENTATIONS THE FOLLOWING MUST APPLY:
 For additional information, see <http://go.microsoft.com/fwlink/?LinkId=237141>
 
 
+<a name="system.fundamentals.debugport.usb"></a>
 ## System.Fundamentals.DebugPort.USB
 
 *The ability to debug a USB3 system is crucial to supporting customers in the field and root-causing behavior in the kernel.  Requirements in this area support the debugging capability for the xHCI controller based systems via a debug registers. Every system that has xHCI controller and USB3 external port should support via this port.*
@@ -2998,6 +3022,7 @@ USB 3.0 hubs must not be integrated into the SoC or PCH/Southbridge.
 For additional information, see <http://go.microsoft.com/fwlink/?LinkId=58376>.
 
 
+<a name="system.fundamentals.energyestimation"></a>
 ## System.Fundamentals.EnergyEstimation
 
 <table>
@@ -3063,6 +3088,7 @@ Storage benchmark needs to setup a fake drive get the baseline power.</p>
 </ol>
 
 
+<a name="system.fundamentals.firmware"></a>
 ## System.Fundamentals.Firmware
 
 <!--No content was provided here in the original Word file.-->
@@ -3603,6 +3629,7 @@ version between the current version and the lowest supported version (inclusive)
 OS after an update is applied.
 
 
+<a name="system.fundamentals.firmware.boot"></a>
 ## System.Fundamentals.Firmware.Boot
 
 *This section describes boot requirements for all client systems.*
@@ -3657,6 +3684,7 @@ Systems with a boot device with a capacity greater than 2.2 terabytes must compl
  - The system must comply with Advanced Configuration and Power Interface (ACPI) Specification version 4.0. Specifically, the system must be able to support legacy or Operating System-directed configuration and Power Management (OSPM)/ACPI mode.
 
 
+<a name="system.fundamentals.firmware.cs"></a>
 ## System.Fundamentals.Firmware.CS
 
 <!--No content was provided here in the original Word file.-->
@@ -3842,6 +3870,7 @@ Since all components in the boot path as well as many performance-critical OS su
 17. The platform is required to implement hardware security test interface and share documentation and tools as specified in the ‘Hardware Security Test Interface Specification’ document. This requirement is IF IMPLEMENTED for Server.
 
 
+<a name="system.fundamentals.firmware.tpr"></a>
 ## System.Fundamentals.Firmware.TPR
 
 *This feature includes requirements specific to system firmware with eDrive support.*
@@ -3882,6 +3911,7 @@ If WinRE is on the system partition, the size is 350 MB. If it’s not the syste
 This requirement is “If Implemented” for Server systems and applies only if a Server system is UEFI capable.
 
 
+<a name="system.fundamentals.graphics"></a>
 ## System.Fundamentals.Graphics
 
 <!--No content was provided here in the original Word file.-->
@@ -3951,6 +3981,7 @@ The WDDM driver model has supported rebootless upgrade since Windows Vista.  Fo
 For example the graphics driver package includes the graphics driver and all associated utilities and services.
 
 
+<a name="system.fundamentals.graphics.displayrender"></a>
 ## System.Fundamentals.Graphics.DisplayRender
 
 *The requirements in this section are enforced on any graphics device implementing display and render portion of the WDDM.*
@@ -3977,6 +4008,7 @@ For example the graphics driver package includes the graphics driver and all ass
 The system must run under prolonged stress without generating hangs or faults.
 
 
+<a name="system.fundamentals.graphics.hybridgraphics"></a>
 ## System.Fundamentals.Graphics.HybridGraphics
 
 *Hybrid Graphics Feature*
@@ -4146,6 +4178,8 @@ Following are the power management requirements for the discrete GPU participati
   </tr>
 </table>
 
+
+<a name="system.fundamentals.graphics.internaldisplay"></a>
 ## System.Fundamentals.Graphics.InternalDisplay
 
 *Base for Graphics on Systems*
@@ -4177,6 +4211,7 @@ Windows is designed to work best in native resolution.
 This requirement applies to systems that use UEFI or BIOS. 
 
 
+<a name="system.fundamentals.graphics.multipledevice"></a>
 ## System.Fundamentals.Graphics.MultipleDevice
 
 *Requirements which apply to systems with more than one graphics device.*
@@ -4284,6 +4319,7 @@ Device Key: Enum\\PCI\\VEN\_AAAA&DEV\_EEEE&SUBSYS\_9999104D&REV\_A1<br/>
 Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \#2; however, although they are the same hardware, they must have a different SSID.
 
 
+<a name="system.fundamentals.graphics.renderonly"></a>
 ## System.Fundamentals.Graphics.RenderOnly
 
 *Requirements which apply to a graphics device only implementing WDDM Render DDI's.*
@@ -4310,6 +4346,7 @@ Note that the OutStanding InField GFX in \#1. Is the same as the one stated in \
 If a client or server system includes a render only device, the device must be Direct3D 10 capable or greater.   This device can only be supported by a WDDMv1.2 Render Only Driver. Render Only devices are not allowed as the primary graphics device on client systems.  All Windows client systems must have a full graphics WDDM v1.3 device as the primary boot device.
 
 
+<a name="system.fundamentals.hal"></a>
 ## System.Fundamentals.HAL
 
 *This feature defines Hardware Abstraction Layer (HAL) requirements for systems.*
@@ -4378,6 +4415,7 @@ Architecture Personal Computer (IA-PC) HPET Specification:
  - Timer interrupts must not be shared in LegacyIRQRouting mode.
  
  
+<a name="system.fundamentals.input"></a>
 ## System.Fundamentals.Input
 
 *Requirements in this section apply to HID devices that are integrated in the system.*
@@ -4431,6 +4469,7 @@ All PS/2 connected devices (such as touchpads and keyboards) must have a unique
 See [Hardware IDs for PS/2 Input Devices on Laptops](http://www.microsoft.com/whdc/device/input/mobileHW-IDs.mspx), a white paper.
 
 
+<a name="system.fundamentals.markerfile"></a>
 ## System.Fundamentals.MarkerFile
 
 *A marker file is used to help associate WER data with specific computer models.  Requirements in this section describe the syntax for the "marker file.*
@@ -4484,6 +4523,7 @@ Optionally, the \_I field can be used as a part number that can be used to link 
 The marker file goes in the c:\\windows\\system32\\drivers folder.
 
 
+<a name="system.fundamentals.network"></a>
 ## System.Fundamentals.Network
 
 *These are system level requirements that may impact the integration with a type of network device*.
@@ -4553,6 +4593,7 @@ Systems that support Connected Standby require the use of an NDIS 6.30 Ethernet
 Support of this feature is required. All physical network devices included in a system (inclusive of docking stations) must meet the device-level power management requirements for that specific device type. Example: If an Ethernet device is included in a Connected Standby capable system or associated dock, that Ethernet device must meet the power management requirements for Connected Standby regardless of whether the individual device certification was achieved when tested on a Connected Standby capable system or not.
 
 
+<a name="system.fundamentals.nx"></a>
 ## System.Fundamentals.NX
 
 <!--No content was provided here in the original Word file.-->
@@ -4577,6 +4618,7 @@ drivers must not fail to load when Physical Address Extension (PAE) mode is enab
 of NX.In addition, the system firmware must have NX on and data execution prevention (DEP) policy must not be set to “always off."
 
 
+<a name="system.fundamentals.powermanagement"></a>
 ## System.Fundamentals.PowerManagement
 
 *Power management is a feature that turns the PC off or into a lower power state. Requirements in this section describes requirements around power management.*
@@ -4687,6 +4729,7 @@ The Preferred\_PM\_Profile in the FADT table must be set to one of the values ba
 For more information see page 119 of the ACPI specification version 5.0.
 
 
+<a name="system.fundamentals.powermanagement.cs"></a>
 ## System.Fundamentals.PowerManagement.CS
 
 *Power management is a feature that turns the PC off or into a lower power state.  Requirements in this section describes requirements around power management for systems that support connected standby.*
@@ -4724,6 +4767,7 @@ These tests will also be run separately with the Driver Verifier Concurrency Tes
 If a PEP device is enumerated in ACPI namespace and the system does not have a PEP loaded, the test will fail.
 
 
+<a name="system.fundamentals.pxe"></a>
 ## System.Fundamentals.PXE
 
 <!--No content was provided here in the original Word file.-->
@@ -4760,6 +4804,7 @@ Microsoft recommends that the implementation of accessing PXE be consistent with
 Version 1.01, and Appendix C.
 
 
+<a name="system.fundamentals.reliability"></a>
 ## System.Fundamentals.Reliability
 
 <!--No content was provided here in the original Word file.-->
@@ -4789,6 +4834,7 @@ All drivers in a system must pass all requirements under **Device.DevFund.Reliab
 2.  Sleep stress with IO before and after
 
 
+<a name="system.fundamentals.security"></a>
 ## System.Fundamentals.Security
 
 <!--No content was provided here in the original Word file.-->
@@ -4983,6 +5029,7 @@ There can be no use of TDI filters or LSPs by either kernel mode software or dri
 PlayReadyModule, when available on a device in secure firmware in conjunction with a compatible graphics driver, enables hardware-based content protection for media. If implemented, this module provides hardware-rooted protection of device keys, content keys and media content/samples that flow through a media pipeline. It will enable the device to have access to high definition (1080p and above) premium content. OEMs shipping on chipsets/SoCs that have a PlayReadyModule available (in the form of secure firmware available from the chipset vendor) must include PlayReadyModule on devices with screen resolutions of 1080p or higher.
 
 
+<a name="system.fundamentals.servernano"></a>
 ## System.Fundamentals.ServerNano
 
 Basic requirements for Windows Server Nano.
@@ -5124,6 +5171,7 @@ Patching requirements for Windows Server Nano.
 All patches and updates must be able to install offline as part of image creation or online.
 
 
+<a name="system.fundamentals.signeddrivers"></a>
 ## System.Fundamentals.SignedDrivers
 
 *This feature checks for signed drivers.*
@@ -5198,6 +5246,7 @@ For example, if a logo qualifying a system for Windows 10, then all drivers on t
 All devices and drivers need to be fully installed, and does not contain any problem codes. 
 
 
+<a name="system.fundamentals.smbios"></a>
 ## System.Fundamentals.SMBIOS
 
 *System Management BIOS (SMBIOS) requirements defines data structures in the system firmware which allows a user or application to store and retrieve information about the computer.  *
@@ -5268,6 +5317,7 @@ Microsoft recommends that the following fields have non-Null values that accurat
 Design Notes: SKU Number has been moved to a required field in order to improve telemetry reporting. We encourage the OEM to be careful to fill in Manufacturer consistently and to fill in SKU Number with a value that can identify what the OEM considers a unique system configuration for telemetry and servicing.
 
 
+<a name="system.fundamentals.storageandboot"></a>
 ## System.Fundamentals.StorageAndBoot
 
 *This section summarizes the requirements for storage and boot devices.*
@@ -5522,6 +5572,7 @@ When SATA is used as the primary boot device, to ensure reliability and prevent 
 When used in systems that support connected standby, the SATA device must meet the power requirements stated in the section for **System.Fundamentals.StorageAndBoot.BootPerformance**.
 
 
+<a name="system.fundamentals.storageclassmemory"></a>
 ## System.Fundamentals.StorageClassMemory
 
 <!--No content was provided here in the original Word file.-->
@@ -5606,6 +5657,7 @@ Platforms supporting NVDIMM-N devices must implement NFIT Health Event Notificat
  - Register EVENT\_NOTIFICATION\_SUPPORT must indicate that all notifications are supported, as returned by the “Supported Notification Events” of “Get NVDIMM-N Identification” (1)
 
 
+<a name="system.fundamentals.systemaudio"></a>
 ## System.Fundamentals.SystemAudio
 
 <!--No content was provided here in the original Word file.-->
@@ -5685,6 +5737,7 @@ If the PnP ID of an HD Audio device matches as compatible with any of the audio 
 See the Pin Configuration Guidelines for High Definition Audio Devices white paper at <http://go.microsoft.com/fwlink/?LinkId=58572>.
 
 
+<a name="system.fundamentals.systempcicontroller"></a>
 ## System.Fundamentals.SystemPCIController
 
 <!--No content was provided here in the original Word file.-->
@@ -5736,6 +5789,7 @@ x64-based system provides 64-bit support in PCI subsystem. For x64-based systems
 All 64-bit adapters must be DAC capable. This DAC requirement does not apply to outbound accesses to PCI devices. However, for systems in which DAC is not supported on outbound accesses to PCI devices, the system firmware must not claim that the bus aperture can be placed above the 4-GB boundary.
 
 
+<a name="system.fundamentals.systemusb"></a>
 ## System.Fundamentals.SystemUSB
 
 *This section contains requirements for systems with USB host controllers.*
@@ -6473,6 +6527,7 @@ This requirement is for the MaxPSASize in the HCCPARAMS to be set to 4 at the mi
 Storage devices based on the USB Attached SCSI Protocol (UASP) will utilize streams to achieve faster data transfer rates. To enable the best experience with these devices, every xHCI controller will need to support at least 31 primary streams.
 
 
+<a name="system.fundamentals.tpm20"></a>
 ## System.Fundamentals.TPM20
 
 <!--No content was provided here in the original Word file.-->
@@ -6951,7 +7006,7 @@ The AIA extension must also be present in each non-root cert in the chain with U
 </ol>
 
 
-
+<a name="system.fundamentals.trustedplatformmodule"></a>
 ## System.Fundamentals.TrustedPlatformModule
 
 *A Trusted Platform Module (TPM) is a microchip designed to provide basic security related functions.  Requirements in this area reflect the required TPM version and compatibility with Windows Bitlocker.*
@@ -7119,6 +7174,7 @@ Note: Bitlocker utilizes PCR7 for better user experience and limit PCR brittlene
 "Trusted Execution Environment EFI Protocol, 1.00 dated March 2, 2012" specification must be requested explicitly from Microsoft. To acquire the current version, first check for its availability on the Microsoft Connect site. If it is not available, contact http://go.microsoft.com/fwlink/?LinkId=237130.
 
 
+<a name="system.fundamentals.usbboot"></a>
 ## System.Fundamentals.USBBoot
 
 *The feature and requirements are about being able to boot from a USB device.*
@@ -7182,6 +7238,7 @@ On all UEFI systems and all systems that implement a TPM, the system must suppor
 See the USB Mass Storage Class Bulk-Only Transport and the USB Mass Storage Class UFI Command specifications, downloadable from <http://go.microsoft.com/fwlink/?LinkId=58382>.
 
 
+<a name="system.fundamentals.usbdevice"></a>
 ## System.Fundamentals.USBDevice
 
 *These requirements apply to USB devices that are integrated into a system.*
@@ -7222,6 +7279,7 @@ For more information about how to implement selective suspend in a driver, pleas
  To specify a port that is internal (not user visible) and can be connected to an integrated device, the ACPI properties \_UPC.PortIsConnectable byte must be set to 0xFF and the \_PLD.UserVisible bit must be set to 0. More details are available on [MSDN](http://msdn.microsoft.com/en-us/library/ff553550.aspx).
 
 
+<a name="system.fundamentals.watchdogtimer"></a>
 ## System.Fundamentals.WatchDogTimer
 
 *A watchdog timer is a device that provides basic watchdog support to a hardware timer exposed by the Microsoft hardware watchdog timer resource table.  *
@@ -7248,7 +7306,7 @@ For more information about how to implement selective suspend in a driver, pleas
 Hardware watchdog timer monitors the OS, and reboots the machine if the OS fails to reset the watchdog. The watchdog must meet the requirements and comply with the specification in <http://MSDN.microsoft.com/en-us/windows/hardware/gg463320.aspx>.
 
 
-
+<a name="system.server.assurance"></a>
 ## System.Server.Assurance
 
 This feature shows the requirements that need to be met by a server to get the Hardware Assurance AQ.
@@ -7270,94 +7328,41 @@ Server supports hardware- and firmware-based enhanced platform integrity protect
 
 This is an *If-Implemented*, optional system requirement for a system providing enhanced security for Windows Server.  The server platform must support:
 
+- UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD
+  - System.Fundamentals.Firmware.UEFIBitLocker
+  - System.Fundamentals.Firmware.UEFIBootEntries
+  - System.Fundamentals.Firmware.UEFICompatibility
+  - System.Fundamentals.Firmware.UEFIDefaultBoot
+  - System.Fundamentals.Firmware.UEFILegacyFallback
+  - System.Fundamentals.Firmware.Update
+- SecureBoot as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.Firmware.UEFILegacyFallback
+  - System.Fundamentals.Firmware.UEFISecureBoot
+- The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests
+  - System.Server.Virtualization.ProcessorVirtualizationAssist
+- If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests
+  - System.Fundamentals.Security.DeviceGuard
+- The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests
+  - System.Fundamentals.TPM20.EKCerts
+  - System.Fundamentals.TPM20.TPM20
 
-<ul>
-    <li>
-      <p>UEFI 2.3.1c or later as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Firmware.TPR.UEFIEncryptedHDD</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIBitLocker</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIBootEntries</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFICompatibility</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFIDefaultBoot</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFILegacyFallback</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.Update</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>SecureBoot as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFILegacyFallback</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.Firmware.UEFISecureBoot</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>The processors in the system are capable of IOMMU, as defined in the following Requirements, or tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Server.Virtualization.ProcessorVirtualizationAssist</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>If the processor supports microcode updates then it must require signed microcode updates as defined in the following requirement, validated by the respective tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.Security.DeviceGuard</p>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <p>The system supports TPM 2.0, as defined in the following Requirements, and tested by the respective Tests;</p>
-      <ul>
-        <li>
-          <p>System.Fundamentals.TPM20.EKCerts</p>
-        </li>
-        <li>
-          <p>System.Fundamentals.TPM20.TPM20</p>
-        </li>
-      </ul>
-    </li>
-</ul>
-<p>The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.</p>
-<p>All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.</p>
-<p>For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default. In addition, the NoPPIProvision flag must be set to TRUE by default. There must be a mechanism in UEFI to confirm the settings of these variables and change them. This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.</p>
-<p>For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically;</p>
-<ul>
-    <li>
-      <p>Data pages must be separate from code pages.</p>
-    </li>
-    <li>
-      <p>Code and Data pages are at page level granularity for alignment.</p>
-    </li>
-    <li>
-      <p>The same page <em>will not</em> contain both Data [Read or Write] and executable Code.</p>
-    </li>
-    <li>
-      <p>The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.</p>
-    </li>
-</ul>
-<p>This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.</p>
+The platform is required to implement hardware security test interface and share documentation and tools as specified in the Hardware Security Test Interface Specification document, available at this location, <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx">https://msdn.microsoft.com/en-us/library/windows/hardware/dn879006.aspx</a>. This requirement is IF IMPLEMENTED for Server, but REQUIRED for the Hardware Assurance Additional Qualification.
+
+All the components in the system, such as storage, network or graphics adapters or circuitry, or other components that are the default configuration of the system, or components which a customer may order from the vendor with the system, must support Secure Boot. For example, all drivers must be signed to comply with Secure Boot and the network card needs to support PXE Boot when the system is configured for Secure Boot.
+
+For systems to be awarded the Assurance AQ, the UEFI flag NoPPIClear must be set to TRUE by default. In addition, the NoPPIProvision flag must be set to TRUE by default. There must be a mechanism in UEFI to confirm the settings of these variables and change them. This requirement is in place to allow for total remote management of TPMs out of the box without additional configuration.
+
+For systems to be awarded the Assurance AQ, the UEFI implementation must be compliant with the needs of code integrity. Specifically,
+- Data pages must be separate from code pages.
+- Code and Data pages are at page level granularity for alignment.
+- The same page *will not* contain both Data [Read or Write] and executable Code.
+- The memory mappings for what pages are code and data are correct i.e., it is not the case that the whole image is marked as data or code.
+
+This will be accomplished using the correct build options for creating the UEFI binaries. The system must include the GUID the firmware can set to claim compliance with this requirement.
 
 
+<a name="system.server.azurestack"></a>
 ## System.Server.AzureStack
 
 ### System.Server.AzureStack.Base
@@ -7444,6 +7449,7 @@ In addition to the above, the server must have:
 2.	A minimum of 128 GB RAM
 
 
+<a name="system.server.azurestack.security"></a>
 ## System.Server.AzureStack.Security
 
 *Security requirements for servers used in an Azure Stack solution.*
@@ -7487,6 +7493,7 @@ Servers used in an Azure Stack Solutions should meet the requirements of the Har
 Servers used in Microsoft Azure Stack solutions should be able to boot successfully over PXE in the UEFI mode with SecureBoot enabled.
 
 
+<a name="system.server.azurestack.bmc"></a>
 ## System.Server.AzureStack.BMC
 
 <!--No content provided in the Word file for this section.-->
@@ -7540,7 +7547,7 @@ The IPMI functionality below will be tested from a reliability perspective since
  - **Clear-PcsvDeviceLog**
 
 
-
+<a name="system.server.base"></a>
 ## System.Server.Base
 
 *Basic requirements for server systems*
@@ -8124,6 +8131,7 @@ PCI Local Bus Specification, Revision 2.3, or later. If discrepancies exist, the
 precedence.
 
 
+<a name="system.server.bmc"></a>
 ## System.Server.BMC
 
 <!--No content was provided here in the original Word file.-->
@@ -8155,6 +8163,7 @@ Business Justification
 Out-of-band remote manageability through IPMI 2.0 allow different makes and models of server systems running Windows Server 2016 to operate efficiently in a software-defined datacenter and therefore lowering operational costs for the customers where heterogeneous hardware platforms are deployed. In order to achieve this objective, systems must expose this functionality remotely. A server BMC with a dedicated NIC can make this available via IPMI over LAN. A server BMC that only exposes its IPMI functionality through a Serial interface, must be part of a chassis or enclosure that can translate these management operations to a remote operator on the network (for example, through a Chassis Manager).
 
 
+<a name="system.server.dynamicpartitioning"></a>
 ## System.Server.DynamicPartitioning
 
 *This feature defines dynamic partitioning requirements of server systems. This feature is not required of all server systems.*
@@ -8407,6 +8416,7 @@ Servers that support hardware partitioning must supply partition management soft
 To enable success of the hot replace feature, I/O subsystems must be implemented in a different PU to processors and memory subsystems on servers that support dynamic partitioning.
 
 
+<a name="system.server.faulttolerant"></a>
 ## System.Server.FaultTolerant
 
 *This feature defines fault tolerant requirements of server systems.*
@@ -8437,6 +8447,7 @@ An FT set is able to resynchronize, i.e., make identical, operating system image
 FT systems may disable or not include devices which could cause asynchronous interrupts to occur such that one system in the FT redundant set had to respond to an interrupt to which the other system(s) of the FT set did not experience. Examples of such devices would be monitoring devices \[thermal, voltage, etc.\], or external devices that would allow a user to inadvertently interrupt or access only one system in an FT set, such as a CD/DVD device, keyboard, mouse, etc.
  
 
+<a name="system.server.firmware.uefi.gop"></a>
 ## System.Server.Firmware.UEFI.GOP
 
 *This section describes requirements for systems implementing UEFI firmware.*
@@ -8506,6 +8517,7 @@ During this time when the firmware is in control, the following are the requirem
  - If the display is not integrated and does not have an EDID, then the UEFI does not need to manufacture an EDID.
 
 
+<a name="system.server.firmware.vbe"></a>
 ## System.Server.Firmware.VBE
 
 *The requirements in this section are enforced on any graphics device with firmware supporting VBE and driver is implementing display portion of the WDDM.*
@@ -8580,6 +8592,7 @@ The display is controlled by the video device firmware before the WDDM graphics
      - If the display is not integrated and does not have an EDID, then the video device firmware does not need to manufacture an EDID
 
 
+<a name="system.server.graphics"></a>
 ## System.Server.Graphics
 
 *Base for Graphics on Server Systems.*
@@ -8611,6 +8624,7 @@ Table below explains the scenario usage for the Graphic driver types.
 | Headless      | Not allowed                     | Optional | N/A                                     | N/A            |
 
  
+<a name="system.server.manageability.redfish"></a>
 ## System.Server.Manageability.Redfish
 
 <!--No content provided here in the original Word file.-->
@@ -8734,7 +8748,7 @@ Server deployments are moving to RESTful management infrastructures that have sh
 
 
 
-
+<a name="system.server.powermanageable"></a>
 ## System.Server.PowerManageable
 
 *This feature defines power manageable requirements of server systems.*
@@ -8794,6 +8808,7 @@ This is a requirement for the Power Manageable Additional Qualification for Win
 More detail on the SMASH profile can be found on the Distributed Management task Force web site at - <http://www.dmtf.org/standards/published_documents/DSP1027.pdf>.
 
 
+<a name="system.server.remotefx"></a>
 ## System.Server.RemoteFX
 
 *This feature defines RemoteFX requirements of server systems.*
@@ -8822,6 +8837,7 @@ Servers must meet the following requirements:
  - Homogenous GPUs for RemoteFX- workloads - the GPUs that are intended to run RemoteFX workloads must be the same GPU running the same hardware driver.
 
 
+<a name="system.server.smbios"></a>
 ## System.Server.SMBIOS
 
 *This feature defines SMBIOS requirements of server systems*
@@ -8864,7 +8880,7 @@ The system firmware (BIOS or UEFI) probes and extracts this information from the
      - Enable certain classes of ISV products (RAM disk, etc.) to exploit this information for better performance and functionalities on Windows platforms.
 
 
-
+<a name="system.server.storagemanageability.smapi"></a>
 ## System.Server.StorageManageability.Smapi
 
 *This feature defines requirements for manageability of server connected
@@ -8892,6 +8908,7 @@ datacenter and therefore lowering operational costs for the customers
 where heterogeneous hardware platforms are deployed.
 
 
+<a name="system.server.storagemanageability.smapi.blockstorage"></a>
 ## System.Server.StorageManageability.Smapi.BlockStorage
 
 <!--No content provided here in the original Word file.-->
@@ -8933,6 +8950,7 @@ management operations:
 This is a mandatory device requirement.
 
 
+<a name="system.server.storagemanageability.smapi.blockstorage.remotereplication"></a>
 ## System.Server.StorageManageability.Smapi.BlockStorage.RemoteReplication
 
 <!--No content provided here in the original Word file.-->
@@ -8972,6 +8990,7 @@ management operations:
 This is a mandatory device requirement.
 
 
+<a name="system.server.storagemanageability.smapi.filestorage"></a>
 ## System.Server.StorageManageability.Smapi.FileStorage
 
 <!--No content provided here in the original Word file.-->
@@ -9004,6 +9023,7 @@ devices through SMAPI must support the following management operations:
 This is a mandatory device requirement.
 
 
+<a name="system.server.storagemanageability.smapi.smi"></a>
 ## System.Server.StorageManageability.Smapi.Smi
 
 <!--No content provided here in the original Word file.-->
@@ -9047,6 +9067,7 @@ SMI-S must support the requirements detailed here:
 <https://msdn.microsoft.com/en-us/library/windows/hardware/dn265461.aspx>
 
 
+<a name="system.server.svvp"></a>
 ## System.Server.SVVP
 
 *This feature defines requirements for the SVVP program.*
@@ -9069,6 +9090,7 @@ SMI-S must support the requirements detailed here:
 Server platforms participating in the Server Virtualization Validation Program must meet the requirements called out here: <http://www.windowsservercatalog.com/svvp.aspx>.
 
 
+<a name="system.server.systemstress"></a>
 ## System.Server.SystemStress
 
 *This feature defines system stress requirements of server systems.*
@@ -9092,6 +9114,7 @@ Server system must operate correctly under long-haul, non-deterministic, high st
 This will be tested using stress tools that emulate loads which may be placed upon a Windows Server system.
 
 
+<a name="system.server.virtualization"></a>
 ## System.Server.Virtualization
 
 *This feature defines virtualization requirements of server systems.*
@@ -9120,6 +9143,7 @@ Details on specific requirements for each of these technologies are available in
 For access to the Windows Server 2008 Virtualization Requirements document, send e-mail to <lhvrtreq@microsoft.com>.
 
 
+<a name="system.server.whea"></a>
 ## System.Server.WHEA
 
 <!--No content was provided here in the original Word file.-->
@@ -9169,6 +9193,7 @@ described in the WHEA Platform Design Guide.
 For access to the WHEA Platform Design Guide, send e-mail to <WHEAFB@Microsoft.com>.
 
 
+<a name="system.solutions.azurestack"></a>
 ## System.Solutions.AzureStack
 
 Microsoft Azure Stack (MAS) is a new Microsoft offering that delivers a
@@ -9453,6 +9478,7 @@ Direct**. Future Microsoft Azure Stack iterations may support additional
 storage types.
 
 
+<a name="system.solutions.storagespacesdirect"></a>
 ## System.Solutions.StorageSpacesDirect
 
 Windows Server 2016 introduces ‘Storage Spaces Direct’, which enables
