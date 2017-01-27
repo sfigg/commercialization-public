@@ -4210,7 +4210,7 @@ Footnote:
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
 
 > [!NOTE]
-> Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
+> Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4355,7 +4355,7 @@ Footnote:
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows search engine customization for MDM-enrolled devices. Users can change their default search engine. 
   
-<p style="margin-left: 20px">If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge settings. If this setting is disabled, users will be unable to add search engines or change the default used in the address bar. This policy applies only on domain-joined machines or when the device is MDM-enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy). 
+<p style="margin-left: 20px">If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge settings. If this setting is disabled, users will be unable to add search engines or change the default used in the address bar. This policy applies only on domain-joined machines or when the device is MDM-enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy). 
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4398,7 +4398,8 @@ Footnote:
 
 <p style="margin-left: 20px">If this setting is not configured, the search engines used are the ones that are specified in the App settings. If this setting is disabled, the search engines you added will be deleted from your employee's machine.
  
-<p style="margin-left: 20px">Due to Protected Settings (aka.ms/browserpolicy), this setting will apply only on domain-joined machines or when the device is MDM-enrolled. 
+> [!IMPORTANT]
+> Due to Protected Settings (aka.ms/browserpolicy), this setting will apply only on domain-joined machines or when the device is MDM-enrolled. 
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4416,9 +4417,9 @@ Added in Windows 10, version 1703. Boolean value that specifies whether the lock
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).  
   
-p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – Enable lockdown of the Start pages according to the settings specified in Browser/HomePages policy. Users cannot change the Start pages. 
+-   0 (default) – Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages. 
 -   1  – Disable lockdown of the Start pages and allow users to modify them.  
 
 <p style="margin-left: 20px">Most restricted value is 0.
@@ -4454,7 +4455,7 @@ p style="margin-left: 20px">The following list shows the supported values:
 
 <p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
 
-<p style="margin-left: 20px">Starting in Windows 10, version 1703, if you don’t want to send traffic to Microsoft, you can use the '<about:blank>' value, which is honored for both domain- and non-domain-joined machines, when it’s the only configured URL. 
+<p style="margin-left: 20px">Starting in Windows 10, version 1703, if you don’t want to send traffic to Microsoft, you can use the "&lt;about:blank&gt;" value, which is honored for both domain- and non-domain-joined machines, when it’s the only configured URL. 
 
 > [!NOTE]
 > Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
@@ -4468,10 +4469,10 @@ p style="margin-left: 20px">The following list shows the supported values:
 -   0 (default) – Users can access the about:flags page in Microsoft Edge.
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
-<a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**
+<a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**   
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the first-run web page. On the first explicit user-launch of Microsoft Edge, a first-run web page hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
 
-p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Employees see the first-run web page. 
 -   1 – Employees don't see the first-run web page.
@@ -4522,7 +4523,7 @@ p style="margin-left: 20px">The following list shows the supported values:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**
+<a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**   
 Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
 
 <p style="margin-left: 20px">You must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. If you want your employees to use the Microsoft Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; otherwise, if you want your employees to use Bing as the default search engine, set the string EDGEBING. 
