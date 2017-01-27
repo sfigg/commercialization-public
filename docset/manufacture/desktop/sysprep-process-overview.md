@@ -15,23 +15,6 @@ The System Preparation (**Sysprep**) tool is used to change Windows® images fro
 
 If you transfer a Windows image to a different computer, you must run the **Sysprep** command together with the **/generalize** option, even if the other computer has the same hardware configuration. The **Sysprep /generalize** command removes unique information from your Windows installation so that you can reuse that image on a different computer. For more information, see [Sysprep (Generalize) a Windows installation](sysprep--generalize--a-windows-installation.md).
 
-In this topic:
-
--   [Sysprep Executable](#sysprepexecutable)
-
--   [Sysprep Process Overview](#sysprepprocess)
-
--   [Persisting the Hardware Configuration](#bkmk-new)
-
--   [Adding Device Drivers](#device)
-
--   [Booting to Audit Mode or OOBE](#bootingtoauditmodeorwindowswelcome)
-
--   [Detecting the State of a Windows Image](#detectingthestateofawindowsimage)
-
--   [Sysprep Log Files](#syspreplogfiles)
-
--   [Creating and Using Sysprep Providers](#creatingandusingsysprepproviders)
 
 ## <span id="SysprepExecutable"></span><span id="sysprepexecutable"></span><span id="SYSPREPEXECUTABLE"></span>Sysprep Executable
 
@@ -83,11 +66,11 @@ When Windows boots, the computer can start in one of two modes:
 
 -   Audit Mode
 
-    If you are running a computer in audit mode to configure the installation to boot to OOBE, either use the **Sysprep** GUI or run the **Sysprep /oobe** command. To prepare a computer for an end user, you must configure the computer to boot to OOBE when an end user starts the computer for the first time. In a default Windows installation, OOBE starts after installation is completed, but you can skip OOBE and boot directly to audit mode to customize images.
+    Audit mode enables you to add customizations to Windows images. Audit mode does not require that you apply settings in OOBE. By bypassing OOBE, you can access the desktop more quickly and perform your customizations. You can add more device drivers, install applications, and test the validity of the installation.
 
     You can configure Windows to boot directly to audit mode by using the **Microsoft-Windows-Deployment | Reseal | Mode** setting in an answer file. In audit mode, the computer processes settings in an unattended answer file in the [auditSystem](auditsystem.md) and [auditUser](audituser.md) configuration passes.
 
-    Audit mode enables you to add customizations to Windows images. Audit mode does not require that you apply settings in OOBE. By bypassing OOBE, you can access the desktop more quickly and perform your customizations. You can add more device drivers, install applications, and test the validity of the installation.
+    If you are running a computer in audit mode to configure the installation to boot to OOBE, either use the **Sysprep** GUI or run the **Sysprep /oobe** command. To prepare a computer for an end user, you must configure the computer to boot to OOBE when an end user starts the computer for the first time. In a default Windows installation, OOBE starts after installation is completed, but you can skip OOBE and boot directly to audit mode to customize images.
 
 For more information, see:
 
