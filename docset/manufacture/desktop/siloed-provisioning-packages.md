@@ -52,7 +52,7 @@ And then run the tools from that location:
 ```
 W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\SPP_base.spp /PackagePath:e:\repository\SPP_AddOn1.spp /PackagePath:e:\repository\SPP_AddOn2.spp
 ```
-You'll sse ScanState to capture siloed provisioning packages from a booted Windows installation, and DISM to apply SPPs to an applied Windows image from WinPE. 
+You'll use ScanState to capture siloed provisioning packages from a booted Windows installation, and DISM to apply SPPs to an applied Windows image from WinPE. 
 
 For the full walkthrough, see [Lab 10: Add desktop applications and settings with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
 
