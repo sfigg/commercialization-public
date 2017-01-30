@@ -378,6 +378,8 @@ In the BTO model, last minute customizations on the factory floor could include 
 ## Related topics
 
 [WinPE: Create USB bootable drive](winpe-create-usb-bootable-drive.md)
+
 [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
+
 [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
 
