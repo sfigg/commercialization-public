@@ -30,7 +30,7 @@ The data in the following table was derived from a sample run on a VM with Windo
 | **Overall application install time** |              | **45-65% faster**                                  |
 | **Overall E2E deployment time** |                   | **18-30% faster**                                  |
 
-## Get setup to work with siloed provisioning packages
+## Work with siloed provisioning packages
 To create and deploy siloed provisioning packages, you need to copy binaries from various folders in the ADK install location that enable DISM and ScanState to work with SPPs. To facilitate the copy process, a script (CopyDandI.cmd) is included in the Windows ADK when 'Deployment Tools' option is selected at install. Run the script to copy all necessary files to an output folder, for example D:\ADKTools:  
 
 ```
