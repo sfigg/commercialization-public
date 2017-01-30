@@ -5204,25 +5204,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a></td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
-</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
-</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
-</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
-</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
-</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
-</td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
-</td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
-</td>
-</tr>
-<tr>
 <td style="vertical-align:top"><a href="#textinput-excludejapaneseimeexceptjis0208">TextInput/ExcludeJapaneseIMEExceptJIS0208</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5966,7 +5947,6 @@ Footnote:
 -   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
 -   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
 -   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
--   [TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
 -   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
@@ -8831,18 +8811,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
-<p style="margin-left: 20px">Allows sending to Microsoft user text input data samples (anonymized) are collected for future language model improvements.
-
-> [!IMPORTANT]
-> Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
-
-
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 > [!NOTE]
