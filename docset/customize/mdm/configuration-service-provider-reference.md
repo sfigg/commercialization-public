@@ -815,7 +815,7 @@ The following table show the configuration service providers supported in Window
 
 The following list shows the configuration service providers supported in Windows Holographic editions.
 
-| Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic Enterprise edition |
+| Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic for Business edition |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
 | [Application CSP](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [AppLocker CSP](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |

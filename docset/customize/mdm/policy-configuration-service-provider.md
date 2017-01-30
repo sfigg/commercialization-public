@@ -73,7 +73,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
 -   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
--   [Policies supported by Windows Holographic Enterprise](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
+-   [Policies supported by Windows Holographic for Business](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
 -   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
 ## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
@@ -5857,7 +5857,7 @@ Footnote:
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic Enterprise
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
