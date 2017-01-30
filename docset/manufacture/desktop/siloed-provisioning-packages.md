@@ -189,6 +189,8 @@ ScanState.exe /drivers:-n:* /drivers:+c:{4d36e96f-e325-11ce-bfc1-08002be10318} /
 
 ## Apply siloed provisioning packages
 
+ This section covers how to use DISM to apply siloed provisioning packages. 
+ 
  DISM supports applying siloed provisioning packages to a Windows image through a new DISM provider, which is only available through the Windows ADK. You can get this version of DISM by using CopyDandI.cmd.
 
 ### Limitations
