@@ -54,7 +54,7 @@ Some examples depicted herein are provided for illustration only and are fictiti
 
 All recommendations and criteria within this document are approximate guidelines only, and not guarantees of speech recognition performance for all devices under real-world conditions. Speech recognition is a complex machine learning process, imperfect by nature. It is not guaranteed that Cortana and Speech Recognition will work well for your device, even if all premium recommendations are met.
 
-## Definitions
+### Definitions
 
 
 The following acronyms and definitions are used in this specification.
@@ -90,7 +90,7 @@ The following acronyms and definitions are used in this specification.
 </tr>
 <tr class="odd">
 <td><p><strong>dBFS (or dBov)</strong></p></td>
-<td><p>Decibel full scale = <img src="../images/speechplatformequation15.png" alt="whatever" /> where <img src="../images/spd-test-image007.png" /> <em>S<sub>ref</sub></em> = the RMS of a full scale digital sine wave.</p>
+<td><p>Decibel full scale = <img src="../images/speechplatformequation15.png" alt="whatever" /> where <em>S<sub>ref</sub></em> = the RMS of a full scale digital sine wave.</p>
 <p>The signal level of a digital signal relative to its overload or maximum level is given by dBov. This is also commonly referred to as dBFS (Full Scale).</p>
 <p>For example, a rectangular function with only the positive or negative maximum number has a level of 0 dBov; For a maximum scale digital sine signal the peak level is 0 dBov and RMS is -3.01 dBov. (ITU-T G.100.1).</p></td>
 </tr>
@@ -139,7 +139,7 @@ The following acronyms and definitions are used in this specification.
 <tr class="even">
 <td><p><strong>MRP</strong></p></td>
 <td><p>Mouth Reference Point</p>
-<p>Location 25mm in front of the lip plane of the artificial mouth, and location in which speech level is calibrated.</p></td>
+<p>Location 25mm in front of the lip plane of the artificial mouth, and location in which speech level is calibrated. See ITU-T P.51 or manufacturer specifications for more details.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SLM</strong></p></td>
@@ -152,71 +152,76 @@ The following acronyms and definitions are used in this specification.
 
 ## <a href="" id="section-1-purpose"></a>SECTION 1 | PURPOSE
 
+The Speech Platform powers all of the speech experiences in Windows 10 such as Cortana and Dictation.
 
-The Speech Platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
-
-This document provides testing setup recommendations for audio input devices intended for use with Microsoft's Speech Platform.
-
+This document provides testing setup recommendations for audio input devices intended for use with Microsoft’s Speech Platform. 
 Recommendations provided are limited to design parameters that directly influence:
 
-1.  Speech Recognition Accuracy and
-2.  Behavior of Speech Processing Algorithms.
+1. Speech Recognition Accuracy
+2. Behavior of Speech Processing Algorithms
 
 The recommendations in this document *are not part of a logo program, nor are required for device certification*. Instead, the contents of this document are intended to provide helpful guidelines and best practices for device design.
+
+
 
 ## <a href="" id="section-2-test-conditions"></a>SECTION 2 | TEST CONDITIONS
 
 
-The test conditions define the environment parameters and equipment capabilities recommended when measuring devices according to the Speech Platform Input Device Recommendations. Note that the test equipment and test environment defined in the [Skype Lync Unified HW v2](http://download.microsoft.com/download/1/D/0/1D0E0CEB-2B30-4303-B3B2-70E331491FB1/Skype_Lync_Unified_Specifications_V2.zip) Specification is sufficient for this testing.
+The test conditions define the environment parameters and equipment capabilities recommended when measuring devices according to the Speech Platform Input Device Recommendations.
 
-## Test Equipment
+### Test Equipment
 
 
-The following test equipment is needed in order to perform the test cases described by **Device.SpeechRecognition** and **Device.VoiceActivationOEM**:
+The following test equipment is required in order to perform the test cases described by **Device.SpeechRecognition** and **Device.VoiceActivationOEM**:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<tr>
 <th>Test Equipment</th>
-<th>Recommendation</th>
+<th>Requirement</th>
+<th>Recommended Solution</th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Mouth Simulator</p></td>
-<td><p>Compliant with ITU-T P.51, +Amplifier and EQ as needed</p></td>
+<tr>
+    <td>Measurement Microphone</td>
+    <td>Free Field; Class 1 (IEC 61672)</td>
+    <td>NTI M2230</td>
 </tr>
-<tr class="even">
-<td><p>Measurement Microphone / SLM</p></td>
-<td><p>Minimum Type 2 (ANSI S1.4) / Class 2 (IEC 61672)</p></td>
+<tr>
+    <td>Sound Level Meter (SLM)</td>
+    <td>IEC 61672-1</td>
+    <td>NTI XL2</td>
 </tr>
-<tr class="odd">
-<td><p>Background Noise (BGN) System</p></td>
-<td><p>Compliant with ETSI EG 202 396-1</p></td>
+<tr>
+    <td>Mouth Simulator + Amplifier</td>
+    <td rowspan="2">ITU-T Rec. P.51 <br /> +-0.5 dB, 160-8k Hz, 3<sup>rd</sup> Octave</td>
+    <td>B&amp;K 4227A/GRAS 44AB (built-in amps)</td>
 </tr>
-<tr class="even">
-<td><p>Multichannel USB Audio Interface</p></td>
-<td><p>Measurement-grade. See Appendix B for examples.</p></td>
+<tr>
+    <td><i>EQ for Mouth Simulator</i></td>
+    <td>31-Band Graphic EQ</td>
 </tr>
-</tbody>
+<tr>
+    <td>BGN Speakers + Amplifiers (x4)</td>
+    <td rowspan="2">+-3 dB, 160-8k Hz, 3<sup>rd</sup> Octave</td>
+    <td>Neumann KH120 A (active)</td>
+</tr>
+<tr>
+    <td><i>EQ for speakers (x4)</i></td>
+    <td>31-Band Graphic EQ</td>
+</tr>
+<tr>
+    <td>Multichannel Soundcard</td>
+    <td>5+ Channels Output</td>
+    <td>RME Fireface 802 or UFX</td>
+</tr>
 </table>
 
- 
+The requirements for test equipment connectivity and signal flow are illustrated below:
 
-A reference list of equipment sufficient for the recommendations can be found in Appendix B.
+![](../images/speechplatform-test-equipment-signal-flow.png)
 
-The general connections and signal flow for the test equipment is shown in the following figure.
+### Test Environment
 
-![](../images/spd-test-image008.png)
-
-## Test Environment
-
-
-For tests performed against `Device.SpeechRecognition` and `Device.VoiceActivationOEM`, an ETSI room as specified in [Skype-Lync Unified Custom HW Section 5.8](http://download.microsoft.com/download/1/D/0/1D0E0CEB-2B30-4303-B3B2-70E331491FB1/Skype_Lync_Unified_Specifications_V2.zip) (which is based on [ETSI EG 202 396-1 (Section 6)](http://www.etsi.org/deliver/etsi_eg/202300_202399/20239601/01.02.02_60/eg_20239601v010202p.pdf)) and as defined in the following table is recommended.
+For tests performed against **Device.SpeechRecognition** and **Device.VoiceActivationOEM**, a reverberant room that follows the guidelines below is required:
 
 <table>
 <colgroup>
@@ -240,445 +245,447 @@ For tests performed against `Device.SpeechRecognition` and `Device.VoiceActivati
 </tr>
 <tr class="odd">
 <td><p><strong>Reverberation Time</strong></p></td>
-<td><p>0.4s &lt; <strong>RT60</strong>&lt; 0.7s average in Octave Bands, [100-8000Hz]</p></td>
+<td><p>0.15s <= <strong>RT60<sub>avg</sub></strong><= 0.4s, Octave Bands 125-8000Hz <br />Within the limits defined by the graph and table below:</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-For tests performed against **Device.Audio.Acoustics**, an anechoic chamber as specified in [ITU-T P.341, Section 4](https://www.itu.int/rec/T-REC-P.341/en) is recommended.
-
-## <a href="" id="section-3-test-signals"></a>SECTION 3 | TEST SIGNALS
-
-
-The test signals are provided by Microsoft unless noted otherwise for test against this specification.
-
-## Test Signals and Levels
-
-
-The test signals and calibration levels required to perform **Device.SpeechRecognition** and **Device.VoiceActivationOEM** test cases are listed in the table below:
+![](../images/speechplatform-rt60-limits-vs-octave-band-frequency.png)
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Stimulus</th>
-<th>Generator</th>
-<th>Stimulus Level</th>
-<th>Filename</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Mouth Calibration</strong></p></td>
-<td><p>Mouth Sim.</p></td>
-<td><p>89 dB(A) @ MRP</p></td>
-<td><p><em>CleanTalk-Calibration5min-ShapedPinkNoise.wav</em></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Speech Input</strong></p></td>
-<td><p>Mouth Sim.</p></td>
-<td><p><strong>Near Field</strong>: 89 dB(A) @ MRP</p>
-<p><strong>Far Field</strong>: 99 dB(A) @ MRP, 4m</p>
-<p><strong>-or-</strong></p>
-<p>95 dB(A) @ MRP tested at 2m</p></td>
-<td><p><em>CleanTalkPlayback20min.wav</em></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>KWS Input</strong></p></td>
-<td><p>Mouth Sim.</p></td>
-<td><p><strong>Near Field</strong>: 89 dB(A) @ MRP</p>
-<p><strong>Far Field</strong>: 99 dB(A) @ MRP, 4m</p>
-<p><strong>-or-</strong></p>
-<p>95 dB(A) @ MRP tested at 2m</p></td>
-<td><p><em>KeywordSpotting_En_US-Female.wav</em></p>
-<p><em>KeywordSpotting_En_US-Male.wav</em></p>
-<p><em>KeywordSpotting_Ja_JP-Female.wav</em></p>
-<p><em>KeywordSpotting_Ja_JP-Male.wav</em></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Echo Playback</strong></p></td>
-<td><p>DUT Speakers</p></td>
-<td><p><strong>Near Field:</strong> 70 dB(A) @ LRP*</p>
-<p><strong>Far Field</strong>: 70 dB(A) @ 0.8m*</p>
-<p><strong>Head Mounted Device:</strong> 76 dB(A) @ HATS Drum Reference Point</p></td>
-<td><p><em>SpeechRecognitionMusic.wav</em></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Ambient Noise</strong></p></td>
-<td><p>BGN System</p></td>
-<td><p>57 dB(A) @ DUT</p></td>
-<td><p>Cafeteria, Pub from:</p>
-<p>[ETSI ES 202 396-1](http://aka.ms/es202-396-1)</p></td>
-</tr>
-</tbody>
+    <tr>
+        <th>Octave Band (Hz)</th>
+        <th>Lower Limit (ms)</th>
+        <th>Upper Limit (ms)</th>
+    </tr>
+    <tr>
+        <td>250</td>
+        <td rowspan="6">150</td>
+        <td>600</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>400</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td rowspan="4">350</td>
+    </tr>
+    <tr>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>4000</td>
+    </tr>
+    <tr>
+        <td>8000</td>
+    </tr>
 </table>
 
- 
+This room definition is based on the [ETSI ES 202 396-1 : Section 6](http://aka.ms/es202-396-1) specification, with slight modifications that include a reduced upper limit for reverberation time.  Reverberation time can be reduced through the installation of removable or fixed absorptive (i.e. acoustic foam) panels covering reflective surfaces.
 
-\* Devices that cannot meet 70 dB(A) @ LRP must be set to maximum volume and be able to reach 64 dB(A) minimum to be able to pass.
-
-The background noise files (Cafeteria, Pub) can be found at: <http://docbox.etsi.org/stq/Open/EG%20202%20396-1%20Background%20noise%20database/Binaural_Signals/>
-
-## <a href="" id="section-4-test-positions"></a>SECTION 4 | TEST POSITIONS
+For tests performed against **Device.Audio.Acoustics**, an anechoic chamber is recommended.
 
 
-**The DUT shall be placed relative to the MRP and LRP, during all tests, in what is deemed to be a typical ("normal") scenario/use case. However, the minimum distance for a typical tablet/laptop is to be 50cm.**
+### Test Room Setup Topology
 
-The IHV owns the scenarios for their device. The recommendations here are intended to provide the IHV with guidelines to validate their device against speech recognition functionality. *Each device only needs to be evaluated against one chosen test position and associated requirements (near field standard, near field premium or far field premium)*, though IHVs may find use in experimenting with various positions.
+The required test setup is shown below:
+
+**Top View:**
+
+![test room setup topology](../images/speechplatform-test-room-setup-topology.png)
+
+**DUT Position** is 30cm above the center of the table, while maintaining a 2m distance from each BGN speaker.
+
+The side view of BGN test setup and microphone calibration position (i.e. "DUT Position" is shown below):
+
+![side view of bgn test setup and microphone calibration position](../images/speechplatform-dut-position.png)
+
+Consult the manufacturer specifications to determine the acoustic center of BGN loudspeakers. 
+
+
+
+## <a href="" id="section-3-test-equipment-calibration"></a>SECTION 3 | TEST EQUIPMENT CALIBRATION
+
+This section describes the process to calibrate test equipment as configured per Section 2.
+
+### Calibration files
+
+Two 6-channel calibration files are provided in order to equalize and adjust playback levels for both the mouth simulator and the background noise speakers.  The channel mapping requirements for these two files is as follows:
+
+| .WAV File Output Channel | Mapping/Connection | Purpose                         |
+| ------------------------ | ------------------ | ------------------------------- |
+| 1                        | Mouth Simulator    | Speech/Talker Material Playback |
+| 2                        | &lt;none&gt;       | Intentionally Empty             |
+| 3                        | BGN 1              | BGN Playback, Speaker 1         |
+| 4                        | BGN 2              | BGN Playback, Speaker 2         |
+| 5                        | BGN 3              | BGN Playback, Speaker 3         |
+| 6                        | BGN 4              | BGN Playback, Speaker 4         |
+
+
+
+### Calibration Procedure
+
+The following steps describe how to calibrate the equipment for Speech Platform testing:
+
+<table>
+    <tr>
+        <th>STEP 1</th>
+        <th>VERIFY ROOM NOISE FLOOR</th>
+    </tr>
+    <tr>
+        <td>MEASURE</td>
+        <td>
+            <ol>
+                <li>Position the Measurement Mic (connected to SLM) @ DUT Position</li>
+                <li>On the SLM, run the LA<sub>eq</sub> for > 30s</li>
+                <li>Ensure that the room noise floor is:
+                    <ul><li><b>Target</b> < 28 dBSPL(A), <b>Max</b> 35 dBSPL(A)</li></ul></li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>STEP 2</th>
+        <th>MOUTH SIMULATOR</th>
+    </tr>
+    <tr>
+        <td>SETUP</td>
+        <td>
+            <ol>
+                <li>Position the Measurement Mic (connected to SLM) @ MRP</li>
+                <li><b>MUTE Output Channels 2 to 6</b> of the Multichannel Soundcard</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>EQUALIZATION</td>
+        <td>
+            <ol>
+                <li>Play back (in looped mode) the file <i>"EQCalibration.wav"</i> via the LabPC:</li>
+                <li>On the SLM, run LA<sub>eq</sub> for > 30s and adjust soundcard output to achieve ~ 89 dB(A)</li>
+                <li>On the SLM, run the 1/3rd Octave RTA Measurement</li>
+                <li>Adjust the EQ connected to the mouth simulator in order to achieve:
+                    <ul><li><b>± 0.5 dB, 160-8000Hz per 3rd Octave Band</b></li></ul></li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>LEVEL CALIBRATION</td>
+        <td>
+            <ol>
+                <li>Play back (in looped mode) the file <i>"LevelCalibration.wav"</i> via the LabPC:</li>
+                <li>On the SLM, run LA<sub>eq</sub> for > 30s and adjust playback level to achieve 89 ± 0.5 dB(A)</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>STEP 3</th>
+        <th>BACKGROUND NOISE SYSTEM</th>
+    </tr>
+    <tr>
+        <td>SETUP</td>
+        <td>
+            <ol>
+                <li>Position the Measurement Mic (connected to SLM) @ DUT Position (per Section 2)</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>EQUALIZATION</td>
+        <td>
+            <ol>
+                <li><b>MUTE all Output Channels except for BGN Speaker 1</b> (e.g. Channel 3)</li>
+                <li>Play back (in looped mode) the file <i>"EQCalibration.wav"</i> via the LabPC:</li>
+                <li>On the SLM, run LA<sub>eq</sub> for > 30s and adjust soundcard output to achieve ~ 57 dB(A)</li>
+                <li>On the SLM, run the 1/3<sup>rd</sup> Octave RTA Measurement</li>
+                <li>Adjust the EQ connected to the mouth simulator in order to achieve:
+                    <ul><li><b>± 3 dB, 160-8000Hz per 3rd Octave Band</b></li></ul></li>
+                <li>Repeat for each additional individual BGN Speaker channel by <b>unmuting the channel under test and muting all of the remaining channels</b></li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>LEVEL MATCHING</td>
+        <td>
+            <ol>
+                <li><b>MUTE all Output Channels except for BGN Speaker 1</b> (e.g. Channel 3)</li>
+                <li>Play back (in looped mode) the file <i>"LevelCalibration.wav"</i> via the LabPC:</li>
+                <li>On the SLM, run LA<sub>eq</sub> for > 30s and adjust soundcard output to achieve 51 ± 0.5 dB(A)</li>
+                <li>Repeat for each additional individual BGN Speaker channel by <b>unmuting the channel under test and muting all of the remaining channels</b></li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>LEVEL CALIBRATION</td>
+        <td>
+            <ol>
+                <li><b>MUTE Output Channels 1+2</b></li>
+                <li>Play back (in looped mode) the file <i>"LevelCalibration.wav"</i> via the LabPC:</li>
+                <li>On the SLM, run LA<sub>eq</sub> for > 30s and adjust output level of Multichannel Soundcard equally for Channels 3-6 to achieve 57 ± 0.5 dB(A)</li>
+            </ol>
+            <p><b>NOTE:</b> The Level Calibration should step should apply the same gain change to each channel.  The level matching of each channel (individually) shall be preserved.</p>
+        </td>
+    </tr>
+</table>
+
+
+## <a href="" id="section-4-test-signals-and-levels"></a>SECTION 4 | TEST SIGNALS AND LEVELS
+
+This section describes the stimulus signals used during tests against the Speech Platform Recommendations.
+
+### Test Signals
+
+The test signals required to validate a device against the Speech Platform are listed in the table below:
+
+**Device.SpeechRecognition** Test Cases:
+
+| Stimulus               | Generator         | Filename                    | Channel(s) |
+| ---------------------- | ----------------- | --------------------------- | ---------- |
+| Speech Accuracy Talker | Mouth Simulator   | SpeechTalkerAndAmbient.wav* | 1          |
+| Ambient Noise Playback | BGN System        | SpeechTalkerAndAmbient.wav* | 3-6        |
+| Echo Playback          | Device Under Test | Echo.wav                    | 1+2        |
+*Created using MH Acoustics Technology
+
+**Device.VoiceActivationOEM** Test Cases:
+
+| Stimulus                | Generator       | Filename                 | Channel(s) |
+| ----------------------- | --------------- | ------------------------ | ---------- |
+| Voice Activation Talker | Mouth Simulator | KWSTalkerAndAmbient.wav* | 1          |
+| Ambient Noise Playback  | BGN System      | KWSTalkerAndAmbient.wav* | 3-6        |
+| Echo Playback           | DUT Speakers    | Echo.wav                 | 1+2        |
+*Created using MH Acoustics Technology
+
+
+
+### Verify Mouth Simulator Level @ DUT Position
+
+Each test scenario in the speech platform specification has a defined talker level at MRP.  In order to ensure lab alignment with the specification and room requirements, an additional verification step will calibrate the level of the mouth simulator at the DUT Position.
+
+Adjust the talker level at the MRP, and then verify at the DUT position.  Adjust the mouth simulator level at the DUT position accordingly to match the results in the "Step 2" column in the table below:
+
+| **Category**         | **Step 1: Verify Talker Level @ MRP** | **Step 2: Verify (and Adjust) Talker Level @ DUT Position** |
+| -------------------- | ------------------------------------- | ----------------------------------------------------------- |
+| **Near Field, 0.5m** | 89 ± 0.5 dBSPL(A)                     | 68 ± 0.5 dBSPL(A)                                           |
+| **Near Field, 0.8m** | 89 ± 0.5 dBSPL(A)                     | 62 ± 0.5 dBSPL(A)                                           |
+| **Far Field, 2m**    | 95 ± 0.5 dBSPL(A)                     | 63 ± 0.5 dBSPL(A)                                           |
+| **HMD**              | 89 ± 0.5 dBSPL(A)                     | N/A                                                         |
+
+If the results in Step 2 are very different than the requirements in the table above, ensure that the mouth simulator has been appropriately equalized and calibrated by the equipment manufacturer, and ensure that the requirements for the test room in Section 2 are met.
+
+
+
+### Adjust Echo Playback Level @ Listener Reference Position
+
+Each device scenario in the speech platform specification has a defined level and listener reference position for calibrating the level of echo playback.
+
+Position the measurement microphone at the LRP, as shown in Section 5.
+
+Echo is calibrated by playing back the file EchoCalibration.wav on a device for 30s, and measured using LA<sub>eq</sub> (dBSPL(A)).
+
+| **Category**         | **Listener Reference Position (LRP)** | **Echo Level, dBSPL(A)\*** |
+| -------------------- | ------------------------------------- | -------------------------- |
+| **Near Field, 0.5m** | 0.5m                                  | 70                         |
+| **Near Field, 0.8m** | 0.8m                                  | 70                         |
+| **Far Field, 2m**    | 0.8m                                  | 70                         |
+| **HMD**              | HATS Right Ear DRP**                  | 76                         |
+\***NOTE:** devices that cannot meet 70 dB(A) @ LRP must be set to max. volume and be ≥ 64 dB(A) to pass.
+
+\*\***NOTE:** No correction filters shall be applied (e.g. DRP/ERP, Diffuse Field, Free Field, ID, etc.)
+
+
+
+## <a href="" id="section-5-test-positions"></a>SECTION 5 | TEST POSITIONS
+
+**The DUT shall be placed relative to the MRP and LRP, during all tests, in what is deemed to be a typical ("normal") scenario/use case.  However, the minimum distance for a typical tablet/laptop is to be 50cm.**
+
+The IHV owns the scenarios for their device. The recommendations here are intended to provide the IHV with guidelines to validate their device against speech recognition functionality. _Each device only needs to be evaluated against one chosen test position and associated requirements (near field standard, near field premium or far field premium)_, though IHVs may find use in experimenting with various positions.
 
 Scenario definition includes considerations like the following:
 
--   Distance of MRP to microphone (array)
--   Orientation of MRP to microphone (array)
--   Placement of the boom arm on headset devices
--   Coverage/pressure of the earpiece(s) on the ear simulators for headset devices
--   Location of loudspeaker(s) relative to the microphones and HATS
--   Device placement environment e.g., on a table, in free air, on a TV, on a HATS
+-	Distance of MRP to microphone (array)
+-	Orientation of MRP to microphone (array)
+-	Placement of the boom arm on headset devices
+-	Coverage/pressure of the earpiece(s) on the ear simulators for headset devices 
+-	Location of loudspeaker(s) relative to the microphones and HATS
+-	Device placement environment e.g. on a table, in free air, on a TV, on a HATS
 
-For additional guidance on typical device usage modality and test setups, reference Section 5 in the Skype / Lync Audio Specification <http://technet.microsoft.com/office/dn788953>.
+For additional guidance on typical device usage modality and test setups, reference Section 5 in the Skype / Lync Audio Specification [http://technet.microsoft.com/en-us/office/dn788953](http://technet.microsoft.com/en-us/office/dn788953)
 
-## <a href="" id="standard-near-field-0-5m-test-positions"></a>Standard Near Field (0.5m) Test Positions
+
+
+### Standard Near Field (0.5m) Test Positions
 
 
 Laptop or similar devices shall be positioned on a tabletop surface relative to MRP as shown below:
 
 ![](../images/spd-test-image009.png)
 
-For webcam devices tested as standard near field category, the following setup shall be used, with the constraint that the height of the monitor that the webcam rests upon is no taller than 50cm and the webcam is centered in its typical resting position on top of the screen (e.g., a 27" monitor is recommended).
+For webcam devices tested as standard near field category, the following setup shall be used, with the constraint that the height of the monitor that the webcam rests upon is no taller than 50cm and the webcam is centered in its typical resting position on top of the screen (e.g. a 27" monitor is recommended):
 
 ![](../images/spd-test-image010.png)
 
-In order to test echo scenarios, stereo speakers are required. However, they must not be separated any further than 76cm from inner edge to inner edge. For best results, low distortion, high bandwidth speakers (e.g., Neumann KH120) are recommended that are driven by a test PC with a low latency interface (e.g., Surface Pro 4 headset jack "line out" to self-powered speakers such as the Neumann KH120). The SDNR recommendations as described in Audio.Acoustics within the Speech Platform Recommendations may be used to assess suitability for measurement.
+In order to test echo scenarios, stereo speakers are required.  However, they must not be separated any further than 76cm from inner edge to inner edge.  For best results, low distortion, high bandwidth speakers (e.g. Neumann KH120) are recommended that are driven by a test PC with a low latency interface (e.g. Surface Pro 4 headset jack "line out" to self-powered speakers such as the Neumann KH120).  The SDNR recommendations as described in Audio.Acoustics within the Speech Platform Recommendations may be used to assess suitability for measurement.
 
 ![](../images/spd-test-image011.png)
 
-## <a href="" id="premium-near-field-0-8m-test-positions"></a>Premium Near Field (0.8m) Test Positions
 
+
+### Premium Near Field (0.8m) Test Positions
 
 When choosing to test laptops against the premium near-field specification, the test setup shall be as below, with the test distance of 80cm aligned with the hinge fulcrum of the laptop/detachable PC:
 
 ![](../images/spd-test-image012.png)
 
-All-in-One or Desktop PCs with integrated microphone arrays shall be tested at a distance of 80cm from MRP and LRP to the front of the display, on a table as shownin the following figure.
+All-in-One or Desktop PCs with integrated microphone arrays shall be tested at a distance of 80cm from MRP and LRP to the front of the display, on a table as shown below:
 
 ![](../images/spd-test-image013.png)
 
-For webcam devices tested as premium near field category, the following setup shall be used, with the constraint that the height of the monitor that the webcam rests upon is no taller than 50cm and the webcam is centered in its typical resting position on top of the screen (e.g., a 27" monitor is recommended).
+For webcam devices tested as premium near field category, the following setup shall be used, with the constraint that the height of the monitor that the webcam rests upon is no taller than 50cm and the webcam is centered in its typical resting position on top of the screen (e.g. a 27" monitor is recommended):
 
 ![](../images/spd-test-image014.png)
 
-In order to test echo scenarios, stereo speakers are required. However, they must not be separated any further than 76cm from inner edge to inner edge. For best results, low distortion, high bandwidth speakers (e.g., Neumann KH120) are recommended that are driven by a test PC with a low latency interface (e.g., Surface Pro 4 headset jack "line out" to self-powered speakers such as the Neumann KH120). The SDNR recommendations as described in Audio.Acoustics within the Speech Platform Recommendations may be used to assess suitability for measurement.
+In order to test echo scenarios, stereo speakers are required.  However, they must not be separated any further than 76cm from inner edge to inner edge.  For best results, low distortion, high bandwidth speakers (e.g. Neumann KH120) are recommended that are driven by a test PC with a low latency interface (e.g. Surface Pro 4 headset jack "line out" to self-powered speakers such as the Neumann KH120).  The SDNR recommendations as described in Audio.Acoustics within the Speech Platform Recommendations may be used to assess suitability for measurement.  
 
 ![](../images/spd-test-image015.png)
 
-## Head Mounted Devices
 
 
-An ITU-T P.58 compliant HATS is recommended for testing Head Mounted Devices (HMDs).
 
-Headsets and Head Mounted Devices will be placed on HATS and adjusted to resemble, as closely as possible, the positioning on a real human. For movable microphones (e.g., "booms"), the microphone should be placed as close as the design will reasonably allow to MRP.
+### Head Mounted Devices
+
+An ITU-T P.58 compliant HATS is recommended for testing Head Mounted Devices (HMDs).  
+
+Headsets and Head Mounted Devices will be placed on HATS and adjusted to resemble, as closely as possible, the positioning on a real human. For movable microphones (e.g. "booms"), the microphone should be placed as close as the design will reasonably allow to MRP.
 
 For headset devices, the earpiece should be coupled with the HATS ear in a typical wearing position with an effort to center the earpiece over the drum reference point and maintain a seal around the pinna.
 
 ![](../images/spd-test-image016.png)
 
-For Virtual/Augmented Reality devices, the device should be placed as per a normal wearing position. It is recommended that the tester provide a means of documenting or marking the wearing position on HATS as to ensure repeatability.
+For Virtual/Augmented Reality devices, the device should be placed as per a normal wearing position.  It is recommended that the tester provide a means of documenting or marking the wearing position on HATS as to ensure repeatability.
 
 ![](../images/spd-test-image017.png)
 
-## Premium Far Field (4m) Devices
 
 
-Far field (i.e., 4m) devices such as integrated mic arrays in a screen device, mic arrays which sit on top of a screen or surface shall be tested as shown below, with the test distance from MRP and LRP to the front plane of the screen or mic array at 4m.
+### Premium Far Field (4m) Devices
+
+
+Far field (i.e. 4m) devices such as integrated mic arrays in a screen device, mic arrays which sit on top of a screen or surface shall be tested as shown below, with the test distance from MRP and LRP to the front plane of the screen or mic array at 4m:
 
 ![](../images/spd-test-image018.png)
 
-The specification defines test cases for devices intended for use in far field (i.e., 4m) conditions. As many test environments may not be sufficiently large to test in 4m, a 2m test distance can be used with test signals/levels adjusted to simulate a 4m test distance as described. The test setup when using the 2m (simulated 4m) test setup is simply modified as shown in the following figure.
+The specification defines test cases for devices intended for use in far field (i.e. 4m) conditions.  As many test environments may not be sufficiently large to test in 4m, a 2m test distance can be used with test signals/levels adjusted to simulate a 4m test distance as described.  The test setup when using the 2m (simulated 4m) test setup is simply modified as below:
 
 ![](../images/spd-test-image019.png)
 
-## FA Test Setup Topology
 
 
-The recommended setup for conducting false accept (FA) testing is illustrated in the following diagram. The device is centered in the table as described per device categories in previous sections.
+### FA Test Setup Topology
 
-![](../images/spd-test-image020.png)![](../images/spd-test-image021.png)
+The recommended setup for conducting false accept (FA) testing is illustrated in the diagram below.  The device is centered in the table as described per device categories in previous sections:
 
-## Test Room Setup Topology
+![](../images/spd-test-image020.png)
 
-
-The recommended test setup for background noise and test table positions are shown in the following figures.
-
-**Top View:**
-
-![](../images/spd-test-image022.png)
-
-The side view of BGN test setup and microphone calibration position:
-
-![](../images/spd-test-image023.png)
-
-## <a href="" id="section-5-calibration-procedure"></a>SECTION 5 | CALIBRATION PROCEDURE
-
-
-The following section contains the procedure to calibration for testing a device against the `Device.SpeechRecognition` and `Device.VoiceActivationOEM` recommendations. The procedure for calibrating for `Device.Audio.Acoustics` recommendations is at the discretion of the tester, with the caveat that the test equipment and environment should be compliant with the recommendations in Section 2.
-
-## Equipment Calibration
-
-
-Complete the checklist of calibration tasks shown in the following table before proceeding with individual tests in the next section.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Calibration Item</th>
-<th>Procedure</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>✓ Measurement Microphone (or SLM)</strong></p></td>
-<td><p>Per manufacturer guidelines; evaluate against expected sensitivity</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>✓ Verify Noise Floor</strong></p></td>
-<td><p>Using Measurement Microphone or SLM:</p>
-<ol>
-<li><p>Capture at least 30s recording of noise floor</p></li>
-<li><p>Evaluate LA<sub>eq</sub>, as described in Section 2:</p>
-<ul>
-<li>Target &lt; 28 dB(A), Max &lt; 35 dB(A)</li>
-</ul></li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><p><strong>✓ Equalize Mouth Simulator</strong></p></td>
-<td><p>Different test setups may accomplish equalization in different ways (i.e., built-in routines, HW EQ units, pre-equalized mouth simulators).</p>
-<p>Equalization is recommended to be verified to be ± 0.5 dB per 3<sup>rd</sup> Octave Band, when measured @ MRP from 100-8000Hz.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>✓ Normalize Mouth Simulator Level</strong></p></td>
-<td><ol>
-<li>Place calibrated microphone or SLM @ MRP, using the correct angle of incidence as specified by the manufacturer</li>
-<li>Play <em>CleanTalkCalibration5min-ShapedPinkNoise.wav</em> via the equalized mouth simulator</li>
-<li>Measure the average level over 10-15s</li>
-<li>Adjust the output of the mouth to reach 89 +/- 0.5 dBSPL(A)</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><p><strong>✓ Background Noise Calibration</strong></p></td>
-<td><p>The procedure for set up and calibration of BGN in [ETSI ES 202 396-1](http://aka.ms/es202-396-1) Section 5.2 is recommended.</p>
-<ol>
-<li>As illustrated in Section 4, position the measurement microphone pointing upwards and centered 30 cm above any test tables or MRP height for HMD test cases.</li>
-<li>Ensure the height of the noise playback speakers is adjusted so that their acoustic center matches the height of the measurement microphone diaphragm.</li>
-<li>Capture</li>
-</ol>
-<p>Adjust the DUT volume control until LA<sub>eq</sub> = Level from Section 3 (defined by scenario) ± 0.5 dBA @ LRP, or the volume control has been maximized.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>✓ Echo Level Calibration</strong></p></td>
-<td><p>Echo must be calibrated for <code>Device.SpeechRecognition.EchoNoise</code>, and is measured at the Listener Reference Point (LRP). LRP position relative to the DUT is dependent on the test scenario chosen for the device type, as indicated in Section 5:</p>
-<ol>
-<li>Position the measurement microphone at LRP</li>
-<li>Play <em>SpeechRecognitionMusic.wav</em>, increasing averaging time on the measurement mic (or SLM) until the level is steady</li>
-<li>Adjust the DUT volume control until LA<sub>eq</sub> = Level from Section 3 (defined by scenario) ± 0.5 dBA @ LRP, or the volume control has been maximized.</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+![](../images/spd-test-image021.png)
 
  
 
 ## <a href="" id="section-6-measurement-procedure"></a>SECTION 6 | MEASUREMENT PROCEDURE
 
+The following section contains the procedure to for testing a device against the **Device.SpeechRecognition** and **Device.VoiceActivationOEM** recommendations.
 
-The following section contains the procedure to for testing a device against the **Device.SpeechRecognition** and **Device.VoiceActivationOEM** recommendations. The test procedure for evaluating a device against the **Device.Audio.Acoustics** recommendations is at the discretion of the tester, with the caveat that the test equipment and environment should be compliant with the recommendations in Section 2.
 
-## <a href="" id="selecting-a-test-script-for-device-speechrecognition"></a>Selecting a Test Script for Device.SpeechRecognition
 
+### Preparing for testing
 
 The **OEMverificationx86** application is a tool that indicates which test script the system is currently configured to use. The tool is used as follows:
 
-1.  Copy the Speech Platform Tools to the test PC
-2.  Run **OEMverificationx86.exe** at a command prompt
-3.  Under the output parameter "*Pipeline Indication:"*, one of two configurations will be indicated:
+1. Copy the files from the toolchain folder _"SpeechPlatform-OnLabPC"_ to the test room Lab PC.
+2. Copy the files from the toolchain folder _"SpeechPlatform-OnDevice"_ to the DUT PC.
+3. Install the score utility (see Appendix B) on an x64 Win8.x/Win10 machine (not the DUT PC).
+4. Ensure test equipment is set up as described in Section 2.
+5. Ensure test equipment is calibrated as described in Section 3.
+6. Ensure the test signal levels are set appropriately for the desired test scenario as described in Section 4.
+7. Position the device under test as described in Section 5.
+8. Ensure that the device under test is configured with the correct and intended geometry descriptor information, default processing pipeline, and default mic gain. See the Speech Platform Input Device Recommendations 
 
-    1.  "*OEM provided expected to be used*" --&gt; use **OEMPipelineRecord20min.cmd** script
-    2.  "*Microsoft expected to be used*" --&gt; use **MicrosoftPipelineRecord20min.cmd** script
 
-For evaluating results against the **Device.SpeechRecognition** recommendations, the 20-minute pipeline recording scripts should be used. Additionally, 5-minute and 3-minute scripts are provided for test setup verification or experiments to be conducted at the discretion of the tester, but are not intended for final evaluations.
 
-**OEMPipelineRecord** is intended to be used with devices that provide custom audio signal processing. **MicrosoftPipelineRecord** is intended to be used with devices that will utilize Microsoft's built-in audio signal processing.
+### Device.SpeechRecognition | Test Procedure
 
-## <a href="" id="device-speechrecognition-quiet-test-procedure"></a>Device.SpeechRecognition.Quiet | Test Procedure
+1. Mute the output channels for each scenario as described in the table below
+2. On the DUT PC, run **SpeechRecordings.cmd _foldername_**, where *_foldername_* is a user-specified unique session for each iteration of a scenario described in the table below.
+3. On the Lab PC, play back SpeechTalkerAndAmbient.wav within ~3s of starting the recording
+4. For ECHO SCENARIOS ONLY, play back Echo.wav on the DUT PC.
 
+**NOTE: Echo playback must not start until 1-2s after the alignment chirp plays back from the speech input file!**
 
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator has been equalized and calibrated per the recommendations in Section 5.
+| **Scenario**   | **Lab PC Output Channels MUTED** | **DUT Echo File Playback**             |
+| -------------- | -------------------------------- | -------------------------------------- |
+| **Quiet**      | 3-6                              | No                                     |
+| **Noise**      | None                             | No                                     |
+| **Echo**       | 3-6                              | Yes, 1-2s after Talker Alignment Chirp |
+| **Echo+Noise** | None                             | Yes, 1-2s after Talker Alignment Chirp |
 
-*Levels: Mouth Simulator 89 dBSPL(A) @ MRP*
+Note: The script **ScriptRecordings.cmd** is used to capture the default processed data from the device. For OEMs who wish to conduct experiments for offline processing on unprocessed data, the script **RawRecordings.cmd** is provided. Unprocessed data should not be scored and evaluate against this specification.
 
-1.  On the DUT PC, run **OEMPipelineRecord20min.cmd** or **MicrosoftPipelineRecord20min.cmd**, as determined from the test script selection above.
-2.  Initiate playback of the Speech Input File "*CleanTalkPlayback20min.wav*" via mouth simulator from the Playback PC, within 1-2s of starting test the script.
-3.  The script will generate processed audio waveforms that can be analyzed with the scoring utility tool.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
 
- 
 
-## <a href="" id="device-speechrecognition-mediumambientnoise-test-steps"></a>Device.SpeechRecognition.MediumAmbientNoise | Test Steps
+### Device.SpeechRecognition | Generating Test Results
 
+1. Create a folder where the scoring results output shall be saved
+2. From that folder, open a command prompt
+3. Type **score _parent foldername_**, where _parent foldername_ contains individual session sub-folders to be scored
+ 
 
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator and BGN system has been equalized and calibrated per the recommendations in Section 5.
 
-*Levels: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise Playback 57 dBSPL(A) @ DUT*
+### Preparing DUT for Device.VoiceActivationOEM
 
-1.  On the DUT PC, run **OEMPipelineRecord20min.cmd** or **MicrosoftPipelineRecord20min.cmd**, as determined from the test script selection above.
-2.  Initiate playback of the Speech Input File "*CleanTalkPlayback20min.wav"* via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the background noise file. **NOTE: Ensure that the start of the background noise file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate processed audio waveforms that can be analyzed with the scoring utility tool.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
+The following additional steps must be followed to prepare a device for Device.VoiceActivationOEM testing:
 
-## <a href="" id="device-speechrecognition-echomusic-quiet-test-steps"></a>Device.SpeechRecognition.EchoMusic.Quiet | Test Steps
+1. Set up the DUT PC with Cortana signed in to a test account
+2. Enable "Hey Cortana" in settings
+3. Ensure that the system language settings are set to EN-US English
 
 
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator has been equalized and calibrated per the recommendations in Section 5.
 
-Ensure that the volume control of the test device is set to output a level at LRP ± 0.5 dBSPL(A) the recommend level defined in Section 3 per scenario when playing back "*SpeechRecognitionMusic.wav*". The speech platform performance shall be evaluated against only one scenario, thus the LRP position will correspond to the scenario chosen and test setup guideline as recommended in Section 4.
+### Device.VoiceActivationOEM | Test Procedure
 
-**If a device is unable to meet the desired output level at LRP, the maximum level possible should be used and the resulting measured level recorded and noted.**
+1. Mute the output channels for each scenario as described in the table below
+2. On the DUT PC, under an Admin-level command prompt, run **KWSCapture-EnUS.cmd _foldername_**, where _foldername_ is a user-specified unique session for each iteration of a scenario described in the table below.
+3. On the Lab PC, play back **KWSTalkerAndAmbient.wav** within ~3s after the command prompt displays: 
+> `Capturing for 625 seconds...`
+4. For _ECHO SCENARIOS ONLY_, play back **Echo.wav** on the DUT PC.
 
-*Levels*: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise *OFF*, Echo Music per Section 3 @ LRP
+**NOTE: Echo playback must not start until 1-2s after the alignment chirp plays back from the speech input file!**
 
-1.  On the DUT PC, run **OEMPipelineRecord20min.cmd** or **MicrosoftPipelineRecord20min.cmd**, as determined from the test script selection above.
-2.  Initiate playback of the Speech Input File "*CleanTalkPlayback20min.wav"* via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the echo music "*SpeechRecognitionMusic.wav*". **NOTE: Ensure that the start of the echo file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate processed audio waveforms that can be analyzed with the scoring utility tool.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
+| **Scenario**   | **Lab PC Output Channels MUTED** | **DUT Echo File Playback**             |
+| -------------- | -------------------------------- | -------------------------------------- |
+| **Quiet**      | 3-6                              | No                                     |
+| **Noise**      | None                             | No                                     |
+| **Echo**       | 3-6                              | Yes, 1-2s after Talker Alignment Chirp |
+| **Echo+Noise** | None                             | Yes, 1-2s after Talker Alignment Chirp |
 
-## <a href="" id="device-speechrecognition-echomusic-mediumambientnoise-test-steps"></a>Device.SpeechRecognition.EchoMusic.MediumAmbientNoise | Test Steps
 
 
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator and BGN system has been equalized and calibrated per the recommendations in Section 5.
+### Device.VoiceActivationOEM | Generating Test Results
 
-Ensure that the volume control of the test device is set to output a level at LRP ± 0.5 dBSPL(A) the recommend level defined in Section 3 per scenario when playing back "*SpeechRecognitionMusic.wav*". The speech platform performance shall be evaluated against only one scenario, thus the LRP position will correspond to the scenario chosen and test setup guideline as recommended in Section 4.
+1. Create a folder where the scoring results output shall be saved
+2. From that folder, open a command prompt
+3. Type **score _parent foldername_**, where _parent foldername_ contains individual session sub-folders to be scored
 
-**If a device is unable to meet the desired output level at LRP, the maximum level possible should be used and the resulting measured level recorded and noted.**
 
-*Levels: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise 57 dBSPL(A) @ DUT, Echo Music per Section 3 @ LRP*
-
-1.  On the DUT PC, run **OEMPipelineRecord20min.cmd** or **MicrosoftPipelineRecord20min.cmd**, as determined from the test script selection above.
-2.  Initiate playback of the Speech Input File "*CleanTalkPlayback20min.wav"* via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the echo music "*SpeechRecognitionMusic.wav*" **AND** playback of the background noise file. **NOTE: Ensure that the start of the echo file and BGN file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate processed audio waveforms that can be analyzed with the scoring utility tool.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
-
-## <a href="" id="generating-device-speechrecognition-test-results"></a>Generating Device.SpeechRecognition Test Results
-
-
-The Speech Platform scoring utility must be installed to generate test results from the processed and recorded data. Please consult the readme.txt packaged with the scoring utility for execution instructions.
-
-## <a href="" id="configuring-kws-for-device-voiceactivationoem"></a>Configuring KWS for Device.VoiceActivationOEM
-
-
-The tests defined for **Device.VoiceActivationOEM** are conducted using the same test setup, levels, and positions as **Device.SpeechRecognition**, with the difference being that the input speech file and command script are different.
-
-**To configure the DUT PC**
-
-1.  Set up the DUT PC with Cortana signed in to a test account
-2.  Enable "Hey Cortana" in settings
-3.  Ensure that the system language settings match the intended language for test (EN-US for US English, Ja-JP for Japanese and installation of speech packs, etc.).
-4.  Copy the KWSDevice folder and content on to the DUT PC, e.g., C:\\KWSDevice
-
-Select the speech input files and corresponding command scripts from the following four options, depending on the specific scenario being recorded:
-
-1.  EN-US English Female Speaker:
-
-    -   KeywordSpotting\_En\_US-Female.wav
-    -   KeywordSpotterCapture\_EnUS\_Female.cmd
-
-2.  EN-US English Male Speaker:
-
-    -   KeywordSpotting\_En\_US-Male.wav
-    -   KeywordSpotter\_Capture\_EnUS\_Male.cmd
-
-3.  Ja-JP Japanese Female Speaker:
-
-    -   KeywordSpotting\_Ja\_JP-Female.wav
-    -   KeywordSpotterCapture\_JaJP\_Female.cmd
-
-4.  Ja-JP Japanese Male Speaker:
-
-    -   KeywordSpotting\_Ja\_JP-Male.wav
-    -   KeywordSpotterCapture\_Ja-JP\_Male.cmd
-
-Each Audio Sample is 4-5 minutes long, and each recording script is set up to record sufficient audio with a small amount of extra time for lead-in. Ensure that the correct script is used for the audio sample being played back.
-
-## <a href="" id="device-voiceactivationoem-quiet-test-procedure"></a>Device.VoiceActivationOEM.Quiet | Test Procedure
-
-
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator has been equalized and calibrated per the recommendations in Section 5.
-
-*Levels: Mouth Simulator 89 dBSPL(A) @ MRP*
-
-1.  On the DUT PC, run the scenario command script, as determined from the test script selection above.
-2.  Initiate playback of the corresponding Speech Input File via mouth simulator from the Playback PC, within 1-2s of starting test the script.
-3.  The script will generate voice recognition accuracy data.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
-
-## <a href="" id="device-voiceactivationoem-mediumambientnoise-test-steps"></a>Device.VoiceActivationOEM.MediumAmbientNoise | Test Steps
-
-
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator and BGN system has been equalized and calibrated per the recommendations in Section 5.
-
-*Levels: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise Playback 57 dBSPL(A) @ DUT*
-
-1.  On the DUT PC, run the scenario command script, as determined from the test script selection above.
-2.  Initiate playback of the corresponding Speech Input File via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the background noise file. **NOTE: Ensure that the start of the background noise file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate voice recognition accuracy data.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
-
-## <a href="" id="device-voiceactivationoem-echomusic-quiet-test-steps"></a>Device.VoiceActivationOEM.EchoMusic.Quiet | Test Steps
-
-
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator has been equalized and calibrated per the recommendations in Section 5.
-
-Ensure that the volume control of the test device is set to output a level at LRP ± 0.5 dBSPL(A) the recommend level defined in Section 3 per scenario when playing back "*SpeechRecognitionMusic.wav*". The speech platform performance shall be evaluated against only one scenario, thus the LRP position will correspond to the scenario chosen and test setup guideline as recommended in Section 4.
-
-**If a device is unable to meet the desired output level at LRP, the maximum level possible should be used and the resulting measured level recorded and noted.**
-
-*Levels*: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise *OFF*, Echo Music per Section 3 @ LRP
-
-1.  On the DUT PC, run the scenario command script, as determined from the test script selection above.
-2.  Initiate playback of the Speech Input File "*CleanTalkPlayback20min.wav"* via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the echo music "*SpeechRecognitionMusic.wav*". **NOTE: Ensure that the start of the echo file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate voice recognition accuracy data.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
-
-## <a href="" id="device-voiceactivationoem-echomusic-mediumambientnoise-test-steps"></a>Device.VoiceActivationOEM.EchoMusic.MediumAmbientNoise | Test Steps
-
-
-Ensure that the test device is in an environment recommended by Section 2, and has been set up according to the test position guidelines in Section 4. Ensure that the mouth simulator and BGN system has been equalized and calibrated per the recommendations in Section 5.
-
-Ensure that the volume control of the test device is set to output a level at LRP ± 0.5 dBSPL(A) the recommend level defined in Section 3 per scenario when playing back "*SpeechRecognitionMusic.wav*". The speech platform performance shall be evaluated against only one scenario, thus the LRP position will correspond to the scenario chosen and test setup guideline as recommended in Section 4.
-
-**If a device is unable to meet the desired output level at LRP, the maximum level possible should be used and the resulting measured level recorded and noted.**
-
-*Levels: Mouth simulator 89 dBSPL(A) @ MRP, Ambient Noise 57 dBSPL(A) @ DUT, Echo Music per Section 3 @ LRP*
-
-1.  On the DUT PC, run the scenario command script, as determined from the test script selection above.
-2.  Initiate playback of the corresponding Speech Input File via mouth simulator from the Playback PC (within 1-2s of starting test the script) **AND** playback of the echo music "*SpeechRecognitionMusic.wav*" **AND** playback of the background noise file. **NOTE: Ensure that the start of the echo file and BGN file is started after the alignment chirp that occurs in the first 2s of the speech input file!**
-3.  The script will generate voice recognition accuracy data.
-4.  Repeat the test for 0 degree (on-axis) and 50 degree rotations (off-axis) of the DUT.
 
 ## <a href="" id="appendix-a-references"></a>Appendix A | References
 
 
-## References
+### References
 
 
 <table>
@@ -710,72 +717,215 @@ Ensure that the volume control of the test device is set to output a level at LR
 
  
 
-## <a href="" id="appendix-b-reference-test-equipment"></a>Appendix B | Reference TEST EQUIPMENT
+## <a href="" id="appendix-b-toolchain"></a>Appendix B | TOOLCHAIN
 
+The following appendix provides detailed information for executable and script components provided in the Speech Platform toolchain.  
 
-The following appendix lists examples of test equipment that fulfils the recommendations. Two categories are provided:
-
--   Budget — examples of robust and cost-effective solutions
--   Premium — measurement grade solutions also suitable for anechoic measurements, and commonly used in product certification standards such as Skype-Lync Unified HW. Typically provided with calibration certificates.
-
-This list is subject to change at the discretion of Microsoft and is not intended to be comprehensive. Note that any test equipment should be calibrated according to manufacturer's guidelines.
-
-## Reference Equipment List
-
-
-Test Equipment
-Budget
-Premium
-Mouth Simulator
-
-NTI Talkbox
-
-B&K 4227A, 4128C (HATS)
-
-GRAS 44AB
-
-HEAD acoustics HMS II.3 or II.6 (HATS)
-
-Measurement Microphone / SLM
-
-**SLM:** NTI XL2 + M2230, Norsonic Nor130 series
-
-B&K 4189-4191, 4955
-
-GRAS 46AC/M, AE/F, AN/Z
-
-+Conditioning Amplifiers/Pre-amplifiers
-
-Background Noise (BGN) System
-
-4x Neumann KH120
-
-Multichannel USB Audio Interface
-
-RME Fireface 802, HDSP or equivalent
-
-HEAD acoustics MFE VI.1
-
-Webcam Speakers
-
-2x Neumann KH120
-
-Webcam Monitor
-
-27" Display
-
-Webcam PC
-
-Surface Pro 4 (Headset Jack interface)
-
- 
-
- 
-
- 
+All stimulus and calibration .wav files provided in the toolchain are described in Section 4 of this document.
 
 
 
 
+### System Requirements
+
+The device under test must be running Windows 10 with the Creators Edition Update or newer.
+
+To verify the version of Windows, press Windows Key + R, and execute "winver.exe".
+
+The OS build version must be 15004.XXXX or newer.
 
 
+
+### Determining Configuration: OEM or Microsoft Processing
+
+Starting with the Windows Creators Edition update, the Speech category stream is guaranteed to have audio processing (e.g. echo cancellation, noise suppression, adaptive gain control).
+
+Audio processing is provided by either:
+
+1. The new in-box Microsoft AEC APO
+2. OEM/IHV Technology
+
+If a provided audio driver:
+
+- Supports Speech mode, and
+- Enumerates Acoustic Echo Cancellation (AEC) and Noise Suppression (NS) as DSP effects, and
+- Has valid microphone geometry (if the capture stream has >1 channel)
+
+then OEM/IHV processing will be used, and the in-box Microsoft Adaptive Gain Control (AGC) APO will be inserted at the end of the OEM\IHV Processing.
+
+Otherwise, the in-box Microsoft AEC APO will be used for processing.
+
+To determine the current state of the device under test:
+
+1. Run **OEMVerification.exe** from the Speech Platform Toolchain on the DUT PC.
+2. If the MS pipeline is configured as default "MS Processing Expected to be used" will be returned
+3. If the OEM pipeline is configured as default "OEM Processing Expected to be used" will be returned
+
+
+
+### Toolchain Executables and Description
+
+<table>
+    <tr>
+        <th>File (Executable)</th><th>Description</th>
+    </tr>
+    <tr>
+        <td>ApplyDefaultMicGain.exe</td><td><p>Sets the device microphone gain to the default value (described in the REGKEY KHLM\Software\Microsoft\Speech_OneCore\AudioInput\MicWiz\DefaultDefaultMicGain) in preparation for microphone stream capture.</p><p>Executed by SpeechRecordings.cmd and RawRecordings.cmd scripts</p></td>
+    </tr>
+    <tr>
+        <td>AecApoRecorder.exe</td>
+        <td><p>Records an audio input stream from either RAW or SPEECH pins directly from WASAPI.  Can also record speaker loopback.</p><p>Executed by SpeechRecordings.cmd and RawRecordings.cmd scripts</p></td>
+    </tr>
+    <tr>
+        <td>KWSMetricsCapture.exe</td>
+        <td>
+            <p>Counts Keyword Spotting (KWS) "Accepts" and "Rejects" and outputs time stamps for each during a provided time interval.</p>
+            <p>Executed by KWSCapture-EnUS.cmd script</p>
+        </td>
+    </tr>
+    <tr>
+        <td>OEMVerification.exe	</td>
+        <td>
+            <p>Provides configuration parameters of the device under test such as the processing configuration, device parameters, DDIs for sensitivity, SNR and big buffer, microphone geometry, and microphone selected.</p>
+            <p><b>NOTE:</b> Run the OEMVerification.exe prior to conducting tests to ensure the device and driver is configured correctly and as expected.</p>
+        </td>
+    </tr>
+</table>
+
+
+### Toolchain Scripts and Description
+
+<table>
+    <tr>
+        <th>File (Component)</th><th>Description</th>
+    </tr>
+    <tr>
+        <td>KWSCapture-EnUS.cmd</td>
+        <td>
+            <ol>
+                <li>Requires the user to provide a folder name to store data (i.e. "KWSCapture-EnUS.cmd C:\TestData1", and creates it if it does not exist</li>
+                <li>Saves a KWS.txt file to be used by the score utility to determine region/language tested</li>
+                <li>Executes a count of Keyword "Accepts" and "Rejects" for 10 minutes</li>
+            </ol>
+            <p>The returned "metrics.txt" file will be used by the score utility to compute a Voice Activation score (%)</p>
+        </td>
+    </tr>
+    <tr>
+        <td>SpeechRecordings.cmd</td>
+        <td>
+            <ol>
+                <li>Requires the user to provide a folder name to store data (i.e. "SpeechRecordings.cmd C:\TestData1", and creates it if it does not exist
+                <li>Sets the device microphone gain to the default REGKEY value</li>
+                <li>Records a 10-min Speech (processed) microphone stream to WAV</li>
+                <li>Captures device configuration information</li>
+            </ol>
+            <p>The returned "Mic.wav" file will be used by the score utility to provide a Speech Accuracy score (%)</p>
+        </td>
+    </tr>
+    <tr>
+        <td>RawRecordings.cmd</td>
+        <td>
+            <ol>
+                <li>Requires the user to provide a folder name to store data (i.e. "RawRecordings.cmd C:\TestData1", and creates it if it does not exist</li>
+                <li>Sets the device microphone gain to the default REGKEY value</li>
+                <li>Records a 10-min RAW (unprocessed) microphone stream to WAV while simultaneously recording the speaker loopback stream for offline processing</li>
+                <li>Captures device configuration information</li>
+            </ol>
+            <p><b>NOTE:</b> the recordings for this script should not be used for speech scoring, and are only provided for OEMs who wish to conduct experiments for off-line processing</p>
+        </td>
+    </tr>
+    <tr>
+        <td>ApplyForceMSProcessing.cmd</td>
+        <td>
+            <p>This registry key switches from OEM/IHV processing to MS processing. Apply this registry key only if your device uses OEM/IHV processing by default.</p>
+            <ol>
+                <li>Before applying the registry key, run OEMVerification.exe</li>
+                <li>Verify output shows "OEM Processing expected to be used"</li>
+                <li>Apply the registry key (run the script) at an Admin cmd prompt</li>
+                <li>Uninstall the audio driver:
+                    <ol>
+                        <li>Open Device Manager -> Sound, Video and Game Controllers</li>
+                        <li>Find the audio device</li>
+                        <li>Right-click -> Uninstall <b>*Do NOT check the box "delete the driver software for this device"</b></li>
+                        <li>Your PC may restart</li>
+                    </ol></li>
+                <li>Re-install the audio driver for the change to take effect:
+                    <ol><li>In the top menu, select Action -> <b>Scan for Hardware Changes</b>. This will install the driver. This may occur automatically.</li></ol></li>
+                <li>Run OEMVerification.exe and verify output shows "MS Processing expected to be used"</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>DeleteForceMSProcessing.cmd</td>
+        <td>
+            <p>Removes the registry key applied to force MS processing, and revert to OEM/IHV processing by default.</p>
+            <ol>
+                <li>Before applying the registry key, run OEMVerification.exe</li>
+                <li>Verify output shows "MS Processing expected to be used"</li>
+                <li>Remove the registry key (run the script) at an Admin cmd prompt</li>
+                <li>Uninstall the audio driver:
+                    <ol>
+                        <li>Open Device Manager -> Sound, Video and Game Controllers</li>
+                        <li>Find the audio device</li>
+                        <li>Right-click -> Uninstall <b>*Do NOT check the box "delete the driver software for this device"</b></li>
+                        <li>Your PC may restart</li>
+                    </ol></li>
+                <li>Re-install the audio driver for the change to take effect:
+                    <ol><li>In the top menu, select Action -> <b>Scan for Hardware Changes</b>. This will install the driver. This may occur automatically.</li></ol></li>
+                <li>Run OEMVerification.exe and verify output shows "OEM Processing expected to be used"</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+
+### Hardware Developer Center
+
+For ease of uploading results to the Hardware Developer Center (https://sysdev.microsoft.com), it is recommended that the folder name provided to the recording script be descriptive of the run, e.g.:
+
+`SpeechRecordings.cmd 10Min-EchoCancellation`
+
+This will make the results clearer to your representative. 
+
+
+
+### Scoring Utility
+
+Installation details for the Score Utility are provided in the readme.txt with the installer.
+
+To score recorded sessions:
+
+1. Store the output folders of the previously provided recorded utility in a central folder *_FOO_*
+2. In a user mode CMD window, create a new directory *_Test Output Folder_*
+3. cd *_Test Output Folder_*
+4. score *_Full Path to FOO_*
+
+A run and score will be provided for each recorded output subfolder under <FOO> and will be in the folder output *_Test Output Folder_*.
+
+Note: it is strongly recommended to use a naming convention that reflects the scenario of each recording, e.g.:
+
+- PrototypeDevice-2m-Quiet-50degrees
+- HeadsetABC-HMD-NoiseLoud
+
+
+
+### Scoring Utility Examples
+
+**Example directory tree view FOO == Central Recording Folder**
+
+![example directory tree view](../images/speechplatform-example-directory-tree-view.png)
+
+**Example Score Command Line**
+
+`score "c:\Central Recording Folder"`
+
+**Example Output from Score Command**
+
+`c:\Test Output Folder>Score "c:\Loc\Central Recording Folder"`
+
+![example output from score command](../images/speechplatform-example-output-from-score-command.png)
+
+**Example Directory View of C:\<Test Output Folder>**
+
+![example directory view of output folder](../images/speechplatform-example-directory-view-output-folder.png)
