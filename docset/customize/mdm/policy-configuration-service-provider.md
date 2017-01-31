@@ -2493,7 +2493,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
@@ -2514,7 +2514,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
@@ -2535,7 +2535,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
@@ -2556,7 +2556,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
@@ -2577,7 +2577,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
@@ -2598,7 +2598,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
 </td>
-<td style="vertical-align:top"><p></p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
 </td>
