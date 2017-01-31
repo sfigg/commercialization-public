@@ -809,6 +809,9 @@ The following table show the configuration service providers supported in Window
 - 1 - Added in Windows 10, version 1607
 - 2 - Added in Windows 10, version 1703
 
+> [!Note]  
+> You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+
 
 ## <a href="" id="hololens"></a>CSPs supported in Windows Holographic
 
