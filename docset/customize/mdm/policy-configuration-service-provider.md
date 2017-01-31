@@ -6354,7 +6354,10 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 <td style="vertical-align:top"><a href="#windowsinkworkspace-allowwindowsinkworkspace">WindowsInkWorkspace/AllowWindowsInkWorkspace</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
