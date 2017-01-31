@@ -831,15 +831,22 @@ For **Standard** it is recommended to have a minimum of 2 microphones and for **
 
 For devices that will use the Microsoft speech enhancement pipeline, the following array geometries are recommended and known to work well. However, the Microsoft speech enhancement is capable of working with any array type specified in the microphone array descriptor.
 
-Linear 2-element, 45-170 mm
-Linear 4-element geometry, symmetrical
-![](../images/spd-recommend-013.png)
-
-![](../images/spd-recommend-014.png)
-
-**Linear 4-element geometry**
-
-![petra microphone bar configuration](../images/spd-recommend-015.jpg)
+<table>
+    <tr>
+        <th><b>Linear 2-element, 45-170 mm</b></th>
+        <th><b>Linear 4-element geometry, symmetrical</b></th>
+    </tr>
+    <tr>
+        <td><img src="../images/spd-recommend-013.png" /></td>
+        <td><img src="../images/spd-recommend-014.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center><b>Linear 4-element geometry</b></center></td>
+    </tr>
+    <tr>
+        <td colspan="2"><img alt="petra microphone bar configuration" src="../images/spd-recommend-015.jpg" /></td>
+    </tr>
+</table>
 
  
 
@@ -1599,7 +1606,7 @@ The KSAUDIO\_MICROPHONE\_COORDINATES structure would appear as follows:
 
 When running the test toolchain, one should then see the following output in OEMVerificationOutput.txt:
 
-![](../images/spd-recommend-048.png)
+![](../images/speechplatform-oemverificationoutput.png)
 
  
 
