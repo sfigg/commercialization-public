@@ -7348,29 +7348,6 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFProperties>
             </Node>
             <Node>
-              <NodeName>AllowLinguisticDataCollection</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Add />
-                  <Delete />
-                  <Get />
-                  <Replace />
-                </AccessType>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <ZeroOrOne />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
               <NodeName>ExcludeJapaneseIMEExceptJIS0208</NodeName>
               <DFProperties>
                 <AccessType>
@@ -14151,27 +14128,6 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             </Node>
             <Node>
               <NodeName>AllowLanguageFeaturesUninstall</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                </AccessType>
-                <DefaultValue>1</DefaultValue>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Permanent />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
-              <NodeName>AllowLinguisticDataCollection</NodeName>
               <DFProperties>
                 <AccessType>
                   <Get />
