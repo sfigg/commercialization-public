@@ -410,160 +410,129 @@ Devices should be tested with an echo level of 70 dBSPL(A) @ LRP for near field/
 
 Testing a specific device for good speech recognition. Test data should be applied against the requirements for the applicable test category (all angles). A device only needs to be tested at one distance, i.e., HMDs in typical wearing position, Standard near field devices @ 0.5m, Premium near field @ 0.8m, Premium far-field @ 4m (or simulated 2m with reduced talker level as described earlier). Consult the test setup recommendations for further details.
 
-Release
-People
-Scenario
-Standard
-Premium
-HMD
-Near-field (0.5m)
-HMD
-Near-field (0.8m)
-Far-field (4m)
-2017
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+        <th colspan="3">Premium</th>
+    </tr>
+    <tr>
+        <th>HMD</th>
+        <th>Near-field (0.5m)</th>
+        <th>HMD</th>
+        <th>Near-field (0.8m)</th>
+        <th>Far-field (4m)</th>
+    </tr>
+    <tr>
+        <td rowspan="5">2017</td>
+        <td rowspan="5">Male, Female, Children (5-12)</td>
+        <td>Quiet</td>
+        <td>95%</td>
+        <td>95%</td>
+        <td>95%</td>
+        <td>95%</td>
+        <td>95%</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+        <td>85%</td>
+        <td>85%</td>
+        <td>95%</td>
+        <td>90%</td>
+        <td>85%</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+        <td>85%</td>
+        <td>85%</td>
+        <td>95%</td>
+        <td>90%</td>
+        <td>85%</td>
+    </tr>
+    <tr>
+        <td>Echo+Noise (Medium)</td>
+        <td>85%</td>
+        <td>85%</td>
+        <td>95%</td>
+        <td>85%</td>
+        <td>85%</td>
+    </tr>
+    <tr>
+        <td>Noise (Loud)</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>85%</td>
+        <td>n/a</td>
+        <td>n/a</td>
+    </tr>
+</table>
 
-Male, Female, Children (5-12)
-
-Quiet
-
-95%
-
-95%
-
-95%
-
-95%
-
-95%
-
-Echo
-
-85%
-
-85%
-
-95%
-
-90%
-
-85%
-
-Noise (Medium)
-
-85%
-
-85%
-
-95%
-
-90%
-
-85%
-
-Echo+Noise (Medium)
-
-85%
-
-85%
-
-95%
-
-85%
-
-85%
-
-Noise (Loud)
-
-n/a
-
-n/a
-
-85%
-
-n/a
-
-n/a
-
- 
 
 ## <a href="" id="device-voiceactivationoem"></a>Device.VoiceActivationOEM
 
 
 Testing a specific device for good voice recognition accuracy (i.e., "Hey Cortana"). Test data should be applied against the requirements for the applicable test category (all angles). A device only needs to be tested at one distance/category. This test assumes that any OEM speech recognition technology meets the Device.SpeechRecognition requirements.
 
-Release
-People
-Scenario
-Standard
-Premium
-HMD
-Near-field (0.5m)
-HMD
-Near-field (0.8m)
-Far-field (4m)
-2017
-
-Male, Female, Children (5-12)
-
-Quiet
-
-90%
-
-90%
-
-90%
-
-90%
-
-90%
-
-Echo
-
-90%
-
-90%
-
-90%
-
-90%
-
-90%
-
-Noise (Medium)
-
-90%
-
-90%
-
-90%
-
-90%
-
-90%
-
-Echo+Noise (Medium)
-
-90%
-
-90%
-
-90%
-
-90%
-
-90%
-
-Noise (Loud)
-
-n/a
-
-n/a
-
-85%
-
-n/a
-
-n/a
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+        <th colspan="3">Premium</th>
+    </tr>
+    <tr>
+        <th>HMD</th>
+        <th>Near-field (0.5m)</th>
+        <th>HMD</th>
+        <th>Near-field (0.8m)</th>
+        <th>Far-field (4m)</th>
+    </tr>
+    <tr>
+        <td rowspan="5">2017</td>
+        <td rowspan="5">Male, Female, Children (5-12)</td>
+        <td>Quiet</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+    </tr>
+    <tr>
+        <td>Echo+Noise (Medium)</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+        <td>90%</td>
+    </tr>
+    <tr>
+        <td>Noise (Loud)</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>85%</td>
+        <td>n/a</td>
+        <td>n/a</td>
+    </tr>
+</table>
 
  
 
@@ -572,45 +541,47 @@ n/a
 
 Testing a platform for voice recognition correct accepts. This test is not required to be run by OEMs. The Correct Accept test is run for every supported locale. Premium devices are required to support modern standby. The score is required to pass for each independent test using Male, Female and Children.
 
-Release
-People
-Scenario
-Standard
-Premium
-HMD
-Near-field (0.5m)
-HMD
-Near-field (0.8m)
-Far-field (4m)
-2017
-
-Male, Female, Children (5-12)
-
-Quiet
-
-90%
-
-90%
-
-90%
-
-90%
-
-90%
-
-Echo
-
-Noise (Medium)
-
-Echo+Noise (Medium)
-
-Noise (Loud)
-
-n/a
-
-n/a
-
-n/a
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+        <th colspan="3">Premium</th>
+    </tr>
+    <tr>
+        <th>HMD</th>
+        <th>Near-field (0.5m)</th>
+        <th>HMD</th>
+        <th>Near-field (0.8m)</th>
+        <th>Far-field (4m)</th>
+    </tr>
+    <tr>
+        <td rowspan="5">2017</td>
+        <td rowspan="5">Male, Female, Children (5-12)</td>
+        <td>Quiet</td>
+        <td rowspan="5">90%</td>
+        <td rowspan="4">90%</td>
+        <td rowspan="5">90%</td>
+        <td rowspan="4">90%</td>
+        <td rowspan="4">90%</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+    </tr>
+    <tr>
+        <td>Echo+Noise (Medium)</td>
+    </tr>
+    <tr>
+        <td>Noise (Loud)</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+    </tr>
+</table>
 
  
 
@@ -860,15 +831,22 @@ For **Standard** it is recommended to have a minimum of 2 microphones and for **
 
 For devices that will use the Microsoft speech enhancement pipeline, the following array geometries are recommended and known to work well. However, the Microsoft speech enhancement is capable of working with any array type specified in the microphone array descriptor.
 
-Linear 2-element, 45-170 mm
-Linear 4-element geometry, symmetrical
-![](../images/spd-recommend-013.png)
-
-![](../images/spd-recommend-014.png)
-
-**Linear 4-element geometry**
-
-![petra microphone bar configuration](../images/spd-recommend-015.jpg)
+<table>
+    <tr>
+        <th><b>Linear 2-element, 45-170 mm</b></th>
+        <th><b>Linear 4-element geometry, symmetrical</b></th>
+    </tr>
+    <tr>
+        <td><img src="../images/spd-recommend-013.png" /></td>
+        <td><img src="../images/spd-recommend-014.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center><b>Linear 4-element geometry</b></center></td>
+    </tr>
+    <tr>
+        <td colspan="2"><img alt="petra microphone bar configuration" src="../images/spd-recommend-015.jpg" /></td>
+    </tr>
+</table>
 
  
 
@@ -987,68 +965,56 @@ With these considerations in place, Microsoft encourages meeting the below respo
 **Note**  
 The Premium and Standard masks apply to all device tiers under Device.Audio.Acoustics.Bandwidth e.g., a device can have Standard bandwidth (narrow-band) and a Premium magnitude response within that band.
 
- 
+<table>
+    <tr>
+        <th rowspan="2">Frequency (Hz)</th>
+        <th colspan="2">Premium</th>
+        <th colspan="2">Standard</th>
+    </tr>
+    <tr>
+        <th>Upper Limit (dB)</th>
+        <th>Lower Limit (dB)</th>
+        <th>Upper Limit (dB)</th>
+        <th>Lower Limit (dB)</th>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>3</td>
+        <td>-6</td>
+        <td>6</td>
+        <td>-9</td>
+    </tr>
+    <tr>
+        <td>300</td>
+        <td>3</td>
+        <td>-3</td>
+        <td>6</td>
+        <td>-6</td>
+    </tr>
+    <tr>
+        <td>5000</td>
+        <td>3</td>
+        <td>-3</td>
+        <td>6</td>
+        <td>-6</td>
+    </tr>
+    <tr>
+        <td>6300</td>
+        <td>3</td>
+        <td>-3</td>
+        <td>6</td>
+        <td>-6</td>
+    </tr>
+    <tr>
+        <td>7000</td>
+        <td>3</td>
+        <td>-3</td>
+        <td>6</td>
+        <td></td>
+    </tr>
+</table> 
 
  
-Premium
-Standard
-Frequency (Hz)
-Upper Limit (dB)
-Lower Limit (dB)
-Upper Limit (dB)
-Lower Limit (dB)
-200
-
-3
-
--6
-
-6
-
--9
-
-300
-
-3
-
--3
-
-6
-
--6
-
-5000
-
-3
-
--3
-
-6
-
--6
-
-6300
-
-3
-
--3
-
-6
-
--6
-
-7000
-
-3
-
--3
-
-6
-
- 
-
- 
-
 All microphones must fit within the mask concurrently. The mask is floating — absolute gain is not a factor.
 
 ## <a href="" id="device-audio-acoustics-micphaseresponsematching"></a>Device.Audio.Acoustics.MicPhaseResponseMatching
@@ -1125,63 +1091,57 @@ The mic distortion and noise limit is important to meet for a couple reasons
 
 The distortion is recommended to be measured using SDNR (pulsed noise signal-to-distortion-and-noise ratio), although THD targets are also given. More information about the SDNR test method can be found from IEEE 269-2010 Annex L.
 
- 
-Premium
-Standard
-Frequency
-THD
-SDNR
-THD
-SDNR
-250
 
-2.50%
+<table>
+    <tr>
+        <th rowspan="2">Frequency</th>
+        <th colspan="2">Premium</th>
+        <th colspan="2">Standard</th>
+    </tr>
+    <tr>
+        <th>THD</th>
+        <th>SDNR</th>
+        <th>THD</th>
+        <th>SDNR</th>
+    </tr>
+    <tr>
+        <td>250</td>
+        <td>2.50%</td>
+        <td>>=32</td>
+        <td>3.20%</td>
+        <td>>=30</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>2.50%</td>
+        <td>>=32</td>
+        <td>3.20%</td>
+        <td>>=30</td>
+    </tr>
+    <tr>
+        <td>4000</td>
+        <td>2.50%</td>
+        <td>>=32</td>
+        <td>3.20%</td>
+        <td>>=30</td>
+    </tr>
+    <tr>
+        <td>5000</td>
+        <td>4.00%</td>
+        <td>>=28</td>
+        <td>4.00%</td>
+        <td>>=28</td>
+    </tr>
+    <tr>
+        <td>6000</td>
+        <td>6.30%</td>
+        <td>>=24</td>
+        <td>6.30%</td>
+        <td>>=24</td>
+    </tr>
+</table> 
 
-&gt;= 32
 
-3.20%
-
-&gt;= 30
-
-1000
-
-2.50%
-
-&gt;= 32
-
-3.20%
-
-&gt;= 30
-
-4000
-
-2.50%
-
-&gt;= 32
-
-3.20%
-
-&gt;= 30
-
-5000
-
-4.00%
-
-&gt;= 28
-
-4.00%
-
-&gt;= 28
-
-6000
-
-6.30%
-
-&gt;= 24
-
-6.30%
-
-&gt;= 24
 
  
 
@@ -1207,203 +1167,140 @@ The loudspeaker distortion limit is important to meet for the following reason:
 
 The distortion is recommended to be measured using SDNR (pulsed noise signal-to-distortion-and-noise ratio), although THD targets are also given. More information about the SDNR test method can be found from IEEE 269-2010 Annex L.
 
- 
-Premium
-Standard
- 
-Level: -22dBFS
-Level: -16dBFS
-Level: -22dBFS
-Level: -16dBFS
-Frequency
-THD
-SDNR
-THD
-SDNR
-THD
-SDNR
-THD
-SDNR
-300
 
-6.3%
-
-&gt;= 24
-
-6.3%
-
-&gt;= 24
-
-NA
-
-NA
-
-NA
-
-NA
-
-500
-
-6.3%
-
-&gt;= 24
-
-6.3%
-
-&gt;= 24
-
-NA
-
-NA
-
-NA
-
-NA
-
-600
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-10%
-
-&gt;= 20
-
-10%
-
-&gt;= 20
-
-800
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-8%
-
-&gt;= 22
-
-8%
-
-&gt;= 22
-
-1000
-
-4%
-
-&gt;= 28
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-6.3%
-
-&gt;= 24
-
-1500
-
-4%
-
-&gt;= 28
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-3000
-
-4%
-
-&gt;= 28
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-4000
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-5000
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-6.3%
-
-&gt;= 24
-
-6000
-
-5%
-
-&gt;= 26
-
-5%
-
-&gt;= 26
-
-6.3%
-
-&gt;= 24
-
-6.3%
-
-&gt;= 24
-
+<table>
+    <tr>
+        <th rowspan="3">Frequency</th>
+        <th colspan="4">Premium</th>
+        <th colspan="4">Standard</th>
+    </tr>
+    <tr>
+        <th colspan="2">Level: -22dBFS</th>
+        <th colspan="2">Level: -16dBFS</th>
+        <th colspan="2">Level: -22dBFS</th>
+        <th colspan="2">Level: -16dBFS</th>
+    </tr>
+    <tr>
+        <th>THD</th>
+        <th>SDNR</th>
+        <th>THD</th>
+        <th>SDNR</th>
+        <th>THD</th>
+        <th>SDNR</th>
+        <th>THD</th>
+        <th>SDNR</th>
+    </tr>
+    <tr>
+        <td>300</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>600</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>10%</td>
+        <td>>=20</td>
+        <td>10%</td>
+        <td>>=20</td>
+    </tr>
+    <tr>
+        <td>800</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>8%</td>
+        <td>>=22</td>
+        <td>8%</td>
+        <td>>=22</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>4%</td>
+        <td>>=28</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+    <tr>
+        <td>1500</td>
+        <td>4%</td>
+        <td>>=28</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+    <tr>
+        <td>3000</td>
+        <td>4%</td>
+        <td>>=28</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+    <tr>
+        <td>4000</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+    <tr>
+        <td>5000</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+    <tr>
+        <td>6000</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>5%</td>
+        <td>>=26</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+        <td>6.3%</td>
+        <td>>=24</td>
+    </tr>
+</table> 
  
 
 **Note**  Only applies to devices with built-in loudspeakers.
@@ -1709,7 +1606,7 @@ The KSAUDIO\_MICROPHONE\_COORDINATES structure would appear as follows:
 
 When running the test toolchain, one should then see the following output in OEMVerificationOutput.txt:
 
-![](../images/spd-recommend-048.png)
+![](../images/speechplatform-oemverificationoutput.png)
 
  
 
@@ -1800,36 +1697,35 @@ This section shows the requirements present in previous versions of this documen
 
 Testing a specific device for good speech recognition. Test data should be applied against the requirements for the applicable test category. Consult the test setup recommendations for further details.
 
-Release
-People
-Scenario
-Standard
- 
- 
- 
-0 degrees
-50 degrees
-2016
-
-Male, Female
-
-Quiet
-
-90%
-
-n/a
-
-Noise (Medium)
-
-85%
-
-n/a
-
-Echo
-
-85%
-
-n/a
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+    </tr>
+    <tr>
+        <th>0 degrees</th>
+        <th>50 degrees</th>
+    </tr>
+    <tr>
+        <td rowspan="3">2016</td>
+        <td rowspan="3">Male, Female</td>
+        <td>Quiet</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+        <td>85%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+        <td>85%</td>
+        <td>n/a</td>
+    </tr>
+</table>
 
  
 
@@ -1838,36 +1734,35 @@ n/a
 
 Testing a specific device for good voice recognition accuracy (i.e., "Hey Cortana"). Test data should be applied against the requirements for the applicable test category. Consult the test setup recommendations for further details. This test assumes that any OEM speech recognition technology meets the Device.SpeechRecognition requirements.
 
-Release
-People
-Scenario
-Standard
- 
- 
- 
-0 degrees
-50 degrees
-2016
-
-Male, Female
-
-Quiet
-
-90%
-
-n/a
-
-Noise (Medium)
-
-90%
-
-n/a
-
-Echo
-
-90%
-
-n/a
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+    </tr>
+    <tr>
+        <th>0 degrees</th>
+        <th>50 degrees</th>
+    </tr>
+    <tr>
+        <td rowspan="3">2016</td>
+        <td rowspan="3">Male, Female</td>
+        <td>Quiet</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+</table>
 
  
 
@@ -1876,37 +1771,35 @@ n/a
 
 Testing a platform for voice recognition correct accepts. This test is not required to be run by OEMs. The Correct Accept test is run for every supported locale. The score is required to pass for Male and Female.
 
-Release
-People
-Scenario
-Standard
- 
- 
- 
-0 degrees
-50 degrees
-2016
-
-Male, Female
-
-Quiet
-
-90%
-
-n/a
-
-Noise (Medium)
-
-90%
-
-n/a
-
-Echo
-
-90%
-
-n/a
-
+<table>
+    <tr>
+        <th rowspan="2">Release</th>
+        <th rowspan="2">People</th>
+        <th rowspan="2">Scenario</th>
+        <th colspan="2">Standard</th>
+    </tr>
+    <tr>
+        <th>0 degrees</th>
+        <th>50 degrees</th>
+    </tr>
+    <tr>
+        <td rowspan="3">2016</td>
+        <td rowspan="3">Male, Female</td>
+        <td>Quiet</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Noise (Medium)</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+    <tr>
+        <td>Echo</td>
+        <td>90%</td>
+        <td>n/a</td>
+    </tr>
+</table>
  
 
 ## <a href="" id="-api-legacy-api-device-voiceactivation-fa-platform"></a>**LEGACY** Device.VoiceActivation.FA.Platform
