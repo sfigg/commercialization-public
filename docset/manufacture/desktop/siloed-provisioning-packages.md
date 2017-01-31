@@ -37,7 +37,7 @@ To create and deploy siloed provisioning packages, you'll need to copy binaries 
 <%Windows ADK install root%>\Deployment Tools\CopyDandI.cmd amd64 D:\ADKTools
 ```
 
-Before you use the tool, you'll need to copy the ADK tools again to a non-removable drive on the destination device. Copying the file to a non-removable location avoids an error associated with installing DISM from removable drives.
+Before you use DISM, you'll need to copy the ADK tools again to a non-removable drive on the destination device. Copying the file to a non-removable location avoids an error associated with installing DISM from removable drives.
 
 ```
 xcopy D:\ADKTools\ W:\ADKTools\ /s
@@ -48,7 +48,7 @@ You'll then have to install the tools:
 W:\ADKTools\amd64\WimMountAdkSetupAmd64.exe /Install /q
 ```
 
-And then run the tools from that location:
+And then run DISM from that location:
 ```
 W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\SPP_base.spp /PackagePath:e:\repository\SPP_AddOn1.spp /PackagePath:e:\repository\SPP_AddOn2.spp
 ```
