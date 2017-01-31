@@ -31,7 +31,7 @@ This topic covers new improvements for desktop, mobile, and IoT manufacturing.
 
 [Lab 9: Make changes from Windows (audit mode)](desktop/prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md#Office_2016): Added instructions for preinstalling Microsoft Office 2016.
 
-[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md): For Microsoft Office, adding Start menu pins is required. You must [add Start tiles and taskbar pins](desktop/add-start-tiles-sxs.md#AppendOfficeSuite). if you don't add it to the Start menu, Windows will remove the Office files during the OOBE boot phase.
 
 [Lab 12: Update the recovery image](desktop/update-the-recovery-image.md): Added recommendation: increase the scratch space in the winre.wim recovery image to speed recovery.   
 
@@ -81,7 +81,7 @@ The SSU:KB3199209 addresses two issues:
 
 **September 20, 2016**
 
--  To deploy individual Windows desktop apps, use [Siloed provisioning packages (SPPs)](desktop/siloed-provisioning-packages.md). To do this, you'll need to run a version of DISM from the Windows ADK, not the built-in version from Windows or Windows PE. The DISM installer program, WimMountADKSetup(x86/amd64).exe should be run from a non-removable drive. For a walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](desktop/add-desktop-apps-wth-spps-sxs.md). To get command-line help, use **C:\ADKTools\DISM /Apply-SiloedPackage /?**.
+-  To deploy individual Windows desktop apps, use [Siloed provisioning packages (SPPs)](desktop/siloed-provisioning-packages.md). To do this, you'll need to run a version of DISM from the Windows ADK, not the built-in version from Windows or Windows PE. The DISM installer program, WimMountADKSetup(x86/amd64).exe should be run from a non-removable drive. For a walkthrough, see [Lab 1f: Add Windows desktop applications with siloed provisioning packages](desktop/add-desktop-apps-with-spps-sxs.md). To get command-line help, use **C:\ADKTools\DISM /Apply-SiloedPackage /?**.
 
 **September 6, 2016**
 
