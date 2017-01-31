@@ -1,5 +1,5 @@
 ---
-title: Speech Platform Input Device Test Setup, version 2.0
+title: Speech Platform Input Device Test Setup, version 2.1
 description: Provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 7B5CB257-C27B-429D-82E9-1205DD4432FD
 ---
 
-# Speech Platform: Input Device Test Setup, version 2.0
+# Speech Platform: Input Device Test Setup, version 2.1
 
 
  
