@@ -58,7 +58,7 @@ For the full walkthrough, see [Lab 10: Add desktop applications and settings wit
 
 ## Create siloed provisioning packages
 
-This section covers how to use ScanState.exe to create siloed provisioning packages that contain applications, system settings, and drivers.
+This section covers how to use ScanState.exe from the Windows desktop to create siloed provisioning packages that contain applications, system settings, and drivers.
 
 **Recommendations:**
 - Use a clean Windows installation. This prevents any potentially unwanted settings from being included in the package.
@@ -189,7 +189,7 @@ ScanState.exe /drivers:-n:* /drivers:+c:{4d36e96f-e325-11ce-bfc1-08002be10318} /
 
 ## Apply siloed provisioning packages
 
- This section covers how to use DISM to apply siloed provisioning packages. 
+ This section covers how to use DISM from WinPE to apply siloed provisioning packages. 
  
  DISM supports applying siloed provisioning packages to a Windows image through a new DISM provider, which is only available through the Windows ADK. You can get this version of DISM by using CopyDandI.cmd.
 
@@ -207,7 +207,7 @@ The functionality for applying siloed provisioning packages using DISM is limite
 
 ### Use DISM to apply siloed provisioning packages
 
-The following example is run in WinPE and uses DISM that is created by CopyDandI.cmd to apply a base SPP, as well as two add-on SPPs:
+The following example uses DISM that is created by CopyDandI.cmd to apply a base SPP, as well as two add-on SPPs:
 
 ```syntax
 DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\repository\BaseSPP.spp /PackagePath:e:\repository\SPP_AddOn1.spp /PackagePath:e:\repository\SPP_AddOn2.spp
