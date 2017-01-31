@@ -910,7 +910,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
-<td style="vertical-align:top"><p>Added descriptions for possible values of **DeviceStatus/NetworkIdentifiers/MacAddress/Type**</p></td>
+<td style="vertical-align:top"><p>Added the following values for DeviceStatus/NetworkIdentifiers/MacAddress/Type setting:</p>
+<ul>
+<li>2 - WLAN (or other Wirless interface)</li>
+<li>1 - LAN (or other Wired interface)</li>
+<li>0 - Unknown</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
