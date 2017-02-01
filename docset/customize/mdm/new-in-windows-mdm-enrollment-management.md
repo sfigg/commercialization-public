@@ -554,7 +554,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideHibernate</li>
 <li>Start/HideLock</li>
 <li>Start/HidePowerButton</li>
-<li>Start/HideRecentJumpLists</li>
+<li>Start/HideRecentJumplists</li>
 <li>Start/HideRecentlyAddedApps</li>
 <li>Start/HideRestart</li>
 <li>Start/HideShutDown</li>
@@ -917,7 +917,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideHibernate</li>
 <li>Start/HideLock</li>
 <li>Start/HidePowerButton</li>
-<li>Start/HideRecentJumpLists</li>
+<li>Start/HideRecentJumplists</li>
 <li>Start/HideRecentlyAddedApps</li>
 <li>Start/HideRestart</li>
 <li>Start/HideShutDown</li>

@@ -5512,7 +5512,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#start-hiderecentjumplists">Start/HideRecentJumpLists</a></td>
+<td style="vertical-align:top"><a href="#start-hiderecentjumplists">Start/HideRecentJumplists</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
@@ -9536,11 +9536,11 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable policy.
 2.   Open the Start Menu, and verify "Restart" and "Update and restart" is not available.
 
-<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumpLists**  
+<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to customize the layout of the Start Menu by hiding recently opened items in the jump lists from appearing.
+<p style="margin-left: 20px">Allows IT Admins to customize the layout of the Start Menu by hiding recently opened items in the jumplists from appearing.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -9551,11 +9551,11 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 1.   Enable showing jump lists of recent items.
 2.   Pin Photos to the taskbar, and open some images in the photos app.
-3.   Right click the pinned photos app and verify that a jump list of recently opened items pops up.
+3.   Right click the pinned photos app and verify that a jumplist of recently opened items pops up.
 4.   Enable policy.
 5.   Restart explorer.exe
 6.   Check that Settings toggle is grayed out.
-7.   Right Click pinned photos app and verify that there is no jump list of recent items.
+7.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 > [!NOTE]
