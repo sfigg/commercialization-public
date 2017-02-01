@@ -536,6 +536,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -873,6 +883,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 </ul>
 <p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
 </td></tr>
