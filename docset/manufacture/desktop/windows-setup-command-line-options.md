@@ -79,10 +79,6 @@ The following command-line options are available for Windows Setup. Beginning w
 The following table lists Setup command-line options:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left"><strong>Option</strong></th>
