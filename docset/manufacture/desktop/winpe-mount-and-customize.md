@@ -12,23 +12,23 @@ Add drivers to Windows Preinstallation Environment (WinPE), such as graphics dri
 
 Common customizations:
 
--   [Add device drivers (.inf files)](winpe-add-drivers.md). You can customize device drivers, such as drivers that support network cards or storage devices.
--   [Add packages (.cab files, also known as WinPE optional components)](winpe-add-packages--optional-components-reference.md) Add languages, hotfixes, or support for features like PowerShell and the HTML Application Language (HTA).
--   [Add a language](winpe-add-packages--optional-components-reference.md). To run WinPE in multiple languages, add the packages (optional components) for those languages.
+-   [Device drivers (.inf files)](winpe-add-drivers.md). You can customize device drivers, such as drivers that support network cards or storage devices.
+-   [Packages (.cab files, also known as WinPE optional components)](winpe-add-packages--optional-components-reference.md) Add languages, hotfixes, or support for features like PowerShell and the HTML Application Language (HTA).
+-   [Languages](winpe-add-packages--optional-components-reference.md). To run WinPE in multiple languages, add the packages (optional components) for those languages.
 -   Add files and folders. These can be added directly to the WinPE image.
--   [Add a newer version of DISM](copy-dism-to-another-computer.md). When new versions of Windows require features from the latest version of DISM, you can add DISM directly into WinPE.
--   [Add a startup script](#addstartupscript). Examples include setting up a network connection, or adding a custom application, such as diagnostic software.
--   [Add an app](#addapp). Note, WinPE only supports legacy apps.
--   [Add temporary storage (scratch space)](#scratchspace). If your application requires temporary file storage, you can reserve extra memory space in RAM.
--   [Replace the background image](#addwallpaper)
--   [Set the power scheme to high performance](#highperformance)
--   [Add answer file settings](#addanswerfilesettings)
+-   [DISM: Use a newer version](copy-dism-to-another-computer.md). When new versions of Windows require features from the latest version of DISM, you can add DISM directly into WinPE.
+-   [Startup scripts](#addstartupscript). Examples include setting up a network connection, or adding a custom application, such as diagnostic software.
+-   [Apps](#addapp). Note, WinPE only supports legacy apps.
+-   [Temporary storage (scratch space)](#scratchspace). If your application requires temporary file storage, you can reserve extra memory space in RAM.
+-   [Background image](#addwallpaper)
+-   [Power scheme](#highperformance)
+-   [WinPE settings](#addanswerfilesettings)
 
-**Get the Windows Assessment and Deployment Kit with Windows PE tools**
+##<span id="Get_the_ADK"></span>Get the Windows Assessment and Deployment Kit with Windows PE tools
 
 -   Install the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the **Windows PE** feature.
 
-**Create a set of either 32-bit or 64-bit Windows PE files**
+##<span id="Create_WinPE_image"></span>Create a set of either 32-bit or 64-bit Windows PE files
 
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
@@ -46,7 +46,7 @@ Common customizations:
         copype x86 C:\WinPE_x86
         ```
 
-**Mount the Windows PE boot image**
+##<span id="Mount_the_image"></span>Mount the Windows PE boot image
 
 -   Mount the WinPE image.
 
@@ -57,7 +57,7 @@ Common customizations:
 ## <span id="Add_customizations"></span><span id="add_customizations"></span><span id="ADD_CUSTOMIZATIONS"></span>Add customizations
 
 
-**Add device drivers (.inf files)**
+### <span id="AddDrivers"></span>Add device drivers (.inf files)
 
 -   Add the device driver to the WinPE image.
 
@@ -69,7 +69,7 @@ Common customizations:
 
     To learn more about drivers, see [Add device drivers (.inf files)](winpe-add-drivers.md).
 
-**Add packages/languages/optional components/.cab files**
+###<span id="AddPackages"></span>Add packages/languages/optional components/.cab files
 
 -   Add the optional component into WinPE. To add optional components, you need to add both the optional component and its associated language packs.
 
@@ -81,14 +81,13 @@ Common customizations:
 
     To learn more about adding packages, see [WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
 
-**Add files and folders**
+###<span id="AddFilesAndFolders"></span>Add files and folders
 
 -   Copy files and folders into the C:\\WinPE\_amd64\\mount folder. These files will show up in the X:\\ folder in WinPE.
 
     Don't add too many files, as these will slow down WinPE and can fill up the available memory in the default RAMDisk environment.
 
-<span id="AddStartupScript"></span><span id="addstartupscript"></span><span id="ADDSTARTUPSCRIPT"></span>
-**Add a startup script**
+###<span id="AddStartupScript"></span><span id="addstartupscript"></span><span id="ADDSTARTUPSCRIPT"></span>Add a startup script
 
 -   Modify the Startnet.cmd script to include your customized commands. This file is located at `C:\WinPE_amd64\mount\Windows\System32\Startnet.cmd`.
 
@@ -96,8 +95,7 @@ Common customizations:
 
     For Plug and Play or networking support, make sure that you include a call to **wpeinit** in your customized Startnet.cmd script. For more info, see [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md).
 
-<span id="AddApp"></span><span id="addapp"></span><span id="ADDAPP"></span>
-**Add an app**
+###<span id="AddApp"></span><span id="addapp"></span><span id="ADDAPP"></span>Add an app
 
 1.  Create an app directory inside the mounted WinPE image.
 
@@ -121,8 +119,7 @@ Common customizations:
 
 4.  To automatically launch a shell or application that runs when WinPE starts, add the path location to the Winpeshl.ini file. For more info, see [Winpeshl.ini Reference: Launching an app when WinPE starts](winpeshlini-reference-launching-an-app-when-winpe-starts.md).
 
-<span id="ScratchSpace"></span><span id="scratchspace"></span><span id="SCRATCHSPACE"></span>
-**Add temporary storage (scratch space)**
+###<span id="ScratchSpace"></span><span id="scratchspace"></span><span id="SCRATCHSPACE"></span>Add temporary storage (scratch space)
 
 -   WinPE reserves memory on the X: drive to unpack the WinPE files, plus additional temporary file storage, known as scratch space, that can be used by your applications. By default, this is 512MB for PCs with more than 1GB of RAM, otherwise the default is 32MB. Valid values are 32, 64, 128, 256, or 512.
 
@@ -130,8 +127,7 @@ Common customizations:
     Dism /Set-ScratchSpace:256 /Image:"C:\WinPE_amd64\mount"
     ```
 
-<span id="AddWallpaper"></span><span id="addwallpaper"></span><span id="ADDWALLPAPER"></span>
-**Replace the background image**
+###<span id="AddWallpaper"></span><span id="addwallpaper"></span><span id="ADDWALLPAPER"></span>Replace the background image
 
 If you've got multiple versions of WinPE, you can set the background image so you can instantly tell which version of WinPE is running.
 
@@ -153,8 +149,7 @@ Change the security permissions of the WinPE background image file (`\windows\sy
 
 8.  Replace the `winpe.jpg` file with your own image file.
 
-<span id="HighPerformance"></span><span id="highperformance"></span><span id="HIGHPERFORMANCE"></span>
-**Set the power scheme to high performance**
+###<span id="HighPerformance"></span><span id="highperformance"></span><span id="HIGHPERFORMANCE"></span>Set the power scheme to high performance
 
 Note: Using the high performance power scheme can make the device run hotter than usual. 
 
@@ -165,12 +160,11 @@ Note: Using the high performance power scheme can make the device run hotter tha
     powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c 
     ```
 
-<span id="AddAnswerFileSettings"></span><span id="addanswerfilesettings"></span><span id="ADDANSWERFILESETTINGS"></span>
-**Add answer file settings**
+###<span id="AddAnswerFileSettings"></span><span id="addanswerfilesettings"></span><span id="ADDANSWERFILESETTINGS"></span>Add answer file settings
 
 -   Some WinPE settings can be managed by using an answer file, such as firewall, network, and display settings. Create an answer file, name it unattend.xml, and add it to the root of the WinPE media to process these settings. For more information, see [Wpeinit and Startnet.cmd: Using WinPE Startup Scripts](wpeinit-and-startnetcmd-using-winpe-startup-scripts.md).
 
-**Unmount the Windows PE image and create media**
+##<span id="Unmount"></span>Unmount the Windows PE image and create media
 
 1.  Unmount the WinPE image.
 

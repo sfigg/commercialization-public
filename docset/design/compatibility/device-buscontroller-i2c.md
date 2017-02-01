@@ -6,10 +6,8 @@ MSHAttr:
 author: beneluxboy
 ---
 
-<!--
 # Device.BusController.I2C
  - [Device.BusController.I2C](#device.buscontroller.i2c)
--->
 
 <a name="device.buscontroller.i2c"></a>
 ## Device.BusController.I2C

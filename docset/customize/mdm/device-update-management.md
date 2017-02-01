@@ -90,7 +90,7 @@ First some background:
 
 - If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it is common to all tenants.
 - A metadata sync service can then be implemented that periodically calls server-server sync to pull in metadata for the updates IT cares about.
-- The MDM component that uses OMA DM to control devices (described in the next section) should send the send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
+- The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client if those updates are not already known to the device.
 
 
 The following procedure describes a basic algorithm for a metadata sync service:
@@ -126,7 +126,7 @@ Updates are configured using a combination of the [Update CSP](update-csp.md), a
 
 ### Update policies
 
-The enterprise IT can configure auto-update polices via OMA DM using the [Policy CSP](policy-configuration-service-provider.md) (this functionality is not supported in Windows 10 Mobile and Windows 10 Home. Here's the CSP diagram for the Update node in Policy CSP.
+The enterprise IT can configure auto-update polices via OMA DM using the [Policy CSP](policy-configuration-service-provider.md) (this functionality is not supported in Windows 10 Mobile and Windows 10 Home). Here's the CSP diagram for the Update node in Policy CSP.
 
 The following diagram shows the Update policies in a tree format.
 
@@ -497,6 +497,20 @@ Example
             </Item>
         </Replace>
 ```
+
+<a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+<p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+
+<p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
+
+<p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
+
+<p style="margin-left: 20px">Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+
+> [!Note]  
+> If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
+> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
+> This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
 ### Update management
 

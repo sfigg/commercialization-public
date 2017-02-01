@@ -10,7 +10,7 @@ ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 # SecureAssessment CSP
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
 
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
@@ -43,12 +43,16 @@ Added in Windows 10, version 1703. Boolean value that indicates whether screen c
 Supported operations are Get and Replace.
 
 <a href="" id="PrintingCapability"></a>**PrintingCapability**  
-Added in Windows 10, version 1703. Boolean value that indicates whether printing is allowed by the app.  
+Added in Windows 10, version 1703. Boolean value that indicates whether printing is allowed by the app.
+
+Supported operations are Get and Replace.  
+
+<a href="" id="AllowTextSuggestions"></a>**AllowTextSuggestions**  
+Added in Windows 10, version 1703. Boolean value that indicates whether keyboard text suggestions are allowed by the app.  
 
 Supported operations are Get and Replace.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

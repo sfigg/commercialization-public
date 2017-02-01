@@ -12,6 +12,8 @@ ms.assetid: EF22DBB6-0578-4FD0-B8A6-19DC03288FAF
 
 This topic shows the OMA DM device description framework (DDF) for the Maps configuration service provider. This CSP was added in Windows 10, version 1511.
 
+You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
