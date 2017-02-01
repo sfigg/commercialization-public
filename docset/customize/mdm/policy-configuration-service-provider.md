@@ -8395,7 +8395,10 @@ Enables or disables Windows Tips / soft landing.
 -   1 - message sync is allowed. The user can change this setting.
 
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the MMS send/receive functionality on the device. To enable enterprises, disable MMS on the devices as part of the device auditing or management requirement.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the MMS send/receive functionality on the device. For enterprises, this policy can be used to disable MMS on devices as part of the auditing or management requirement.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -8403,7 +8406,10 @@ Enables or disables Windows Tips / soft landing.
 -   1 (Default) - Enabled.
 
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the RCS send/receive functionality on the device. To disable enterprises, disable RCS on the devices as part of the device auditing or management requirement.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the RCS send/receive functionality on the device. For enterprises, this policy can be used to disable RCS on devices as part of the auditing or management requirement.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
