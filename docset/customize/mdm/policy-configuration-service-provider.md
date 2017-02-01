@@ -4394,7 +4394,8 @@ Footnote:
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you to add up to 5 additional search engines for MDM-enrolled devices. 
  
-<p style="margin-left: 20px">If this policy is enabled, you can add up to 5 additional search engines for your employees. For each additional search engine you want to add, you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. Employees cannot remove these search engines, but they can set any one as the default. This setting does not affect the default search engine. 
+<p style="margin-left: 20px">If this policy is enabled, you can add up to 5 additional search engines for your employees. For each additional search engine you want to add, specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/).
+Employees cannot remove these search engines, but they can set any one as the default. This setting does not affect the default search engine. 
 
 <p style="margin-left: 20px">If this setting is not configured, the search engines used are the ones that are specified in the App settings. If this setting is disabled, the search engines you added will be deleted from your employee's machine.
  
@@ -4445,20 +4446,20 @@ Footnote:
 
 <p style="margin-left: 20px">The data type is a string.
 
-<p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the webpage users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 > [!NOTE]
 > This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-<p style="margin-left: 20px">Specifies your Start pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Start pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
+<p style="margin-left: 20px">Specifies your Start pages for MDM-enrolled devices. Turning this setting on lets you configure one or more corporate Start pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
 
 <p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
 
 <p style="margin-left: 20px">Starting in Windows 10, version 1703, if you don’t want to send traffic to Microsoft, you can use the "&lt;about:blank&gt;" value, which is honored for both domain- and non-domain-joined machines, when it’s the only configured URL. 
 
 > [!NOTE]
-> Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
+> Turning this setting off, or not configuring it, sets your default Start pages to the webpages specified in App settings.
 
 
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
@@ -4470,12 +4471,12 @@ Footnote:
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**   
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the first-run web page. On the first explicit user-launch of Microsoft Edge, a first-run web page hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, a First Run webpage hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – Employees see the first-run web page. 
--   1 – Employees don't see the first-run web page.
+-   0 (default) – Employees see the First Run webpage. 
+-   1 – Employees don't see the First Run webpage.
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
@@ -4526,7 +4527,7 @@ Footnote:
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**   
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
 
-<p style="margin-left: 20px">You must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL to the search engine. If you want your employees to use the Microsoft Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; otherwise, if you want your employees to use Bing as the default search engine, set the string EDGEBING. 
+<p style="margin-left: 20px">You must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/browser/search-provider-discovery/). If you want your employees to use the Microsoft Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; otherwise, if you want your employees to use Bing as the default search engine, set the string EDGEBING. 
  
 <p style="margin-left: 20px">If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees. If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market.   
  
@@ -5730,7 +5731,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. 
-The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a web page that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
+The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
