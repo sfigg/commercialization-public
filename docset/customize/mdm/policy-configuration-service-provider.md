@@ -5512,7 +5512,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
-<td style="vertical-align:top"><a href="#start-hiderecentjumpList">Start/HideRecentJumpList</a></td>
+<td style="vertical-align:top"><a href="#start-hiderecentjumplists">Start/HideRecentJumpLists</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
@@ -9536,7 +9536,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable policy.
 2.   Open the Start Menu, and verify "Restart" and "Update and restart" is not available.
 
-<a href="" id="start-hiderecentjumpList"></a>**Start/HideRecentJumpList**  
+<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumpLists**  
 > [!NOTE]
 > This policy requires reboot to take effect.
 
@@ -9555,7 +9555,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 4.   Enable policy.
 5.   Restart explorer.exe
 6.   Check that Settings toggle is grayed out.
-7.   Right Click pinned photos app and verify that there is no jumplist of recent items.
+7.   Right Click pinned photos app and verify that there is no jump list of recent items.
 
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 > [!NOTE]

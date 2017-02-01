@@ -550,12 +550,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
-<li>Start/HideFastUserSwitching</li>
 <li>Start/HideFrequentlyUsedApps</li>
 <li>Start/HideHibernate</li>
 <li>Start/HideLock</li>
 <li>Start/HidePowerButton</li>
-<li>Start/HideRecentJumpList</li>
+<li>Start/HideRecentJumpLists</li>
 <li>Start/HideRecentlyAddedApps</li>
 <li>Start/HideRestart</li>
 <li>Start/HideShutDown</li>
@@ -914,12 +913,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
-<li>Start/HideFastUserSwitching</li>
 <li>Start/HideFrequentlyUsedApps</li>
 <li>Start/HideHibernate</li>
 <li>Start/HideLock</li>
 <li>Start/HidePowerButton</li>
-<li>Start/HideRecentJumpList</li>
+<li>Start/HideRecentJumpLists</li>
 <li>Start/HideRecentlyAddedApps</li>
 <li>Start/HideRestart</li>
 <li>Start/HideShutDown</li>
