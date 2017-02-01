@@ -8869,9 +8869,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy and restart explorer.exe
-2a.  If set to '1': Verify that there is no way of opening the apps list from the Start Menu, and that the Settings toggle is grayed out.
-2b.  If set to '2': Verify that the apps list is collapsed, and that the Settings toggle is not grayed out.
-2c.  If set to '3': Verify that the apps list is collapsed, and that the Settings toggle is grayed out.
+2.   (A) If set to '1': Verify that there is no way of opening the apps list from the Start Menu, and that the Settings toggle is grayed out.
+2.   (B) If set to '2': Verify that the apps list is collapsed, and that the Settings toggle is not grayed out.
+2.   (C) If set to '3': Verify that the apps list is collapsed, and that the Settings toggle is grayed out.
 
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
