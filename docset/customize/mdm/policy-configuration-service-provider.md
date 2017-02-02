@@ -9558,8 +9558,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 4.   Toggle jump lists under Settings to clear jump lists.
 5.   Enable policy.
 6.   Restart explorer.exe
-7.   Repeat Step 2.
-8.   Check that Settings toggle is grayed out.
+7.   Check that Settings toggle is grayed out.
+8.   Repeat Step 2.
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
