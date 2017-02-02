@@ -18,7 +18,7 @@ OEMs must meet the following DG/CG requirements for each OS version:
 
 -   Windows 10, version 1607 - There are requirements in addition to the requirements for the previous versions.
 
--   2017 additional qualification requirements - Lists all the future additional qualification requirements starting with Windows 10. This list is not final and subject to change.
+-   Additional requirements for the next major version of Windows (scheduled for 2017): This list is not final and subject to change.
 
 
 
