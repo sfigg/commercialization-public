@@ -9454,9 +9454,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 -   1 - Enable policy and restart explorer.exe
--   2a - If set to '1': Verify that there is no way of opening the apps list from the Start Menu, and that the Settings toggle is grayed out.
--   2b - If set to '2': Verify that the apps list is collapsed, and that the Settings toggle is not grayed out.
--   2c - If set to '3': Verify that the apps list is collapsed, and that the Settings toggle is grayed out.
+-   2a - If set to '1': Verify that the apps list is collapsed, and that the Settings toggle is not grayed out.
+-   2b - If set to '2': Verify that the apps list is collapsed, and that the Settings toggle is grayed out.
+-   2c - If set to '3': Verify that there is no way of opening the apps list from the Start Menu, and that the Settings toggle is grayed out.
 
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
@@ -9501,10 +9501,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   0 (default) – False (do not hide).
 -   1 - True (hide).
 
-<p style="margin-left: 20px">To validate on Desktop, do the following:
+<p style="margin-left: 20px">To validate on Laptop, do the following:
 
 1.   Enable policy.
 2.   Open the Start Menu, click on the Power button, and verify "Hiberate" is not available.
+
+> [!NOTE]
+> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
 
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
@@ -9552,10 +9555,11 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable showing jump lists of recent items.
 2.   Pin Photos to the taskbar, and open some images in the photos app.
 3.   Right click the pinned photos app and verify that a jumplist of recently opened items pops up.
-4.   Enable policy.
-5.   Restart explorer.exe
-6.   Check that Settings toggle is grayed out.
-7.   Right Click pinned photos app and verify that there is no jumplist of recent items.
+4.   Toggle jump lists under Settings to clear jump lists.
+5.   Enable policy.
+6.   Restart explorer.exe
+7.   Check that Settings toggle is grayed out.
+8.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 > [!NOTE]
