@@ -196,7 +196,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 <p>Software: Windows edition</p>
 </td>
 <td>
-<p>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise</p>
+<p>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise, Windows 10 IoT Enterprise</p>
 <p>Note: Windows Server 2016 running as a Domain Controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p>
 </td>
 <td>
@@ -241,7 +241,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </table>
 
 
-## PC OEM requirements for Windows 10, version 1607 and Windows Server 2016
+## Additional PC OEM requirements for Windows 10, version 1607 and Windows Server 2016
 
 <table>
 <tr>
