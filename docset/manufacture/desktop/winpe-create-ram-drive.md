@@ -3,12 +3,12 @@ author: KPacquer
 Description: 'WinPE: Create WinPE RAM drive'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: 'WinPE: Create WinPE RAM drive'
-redirect_url: https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/create-usb-bootable-drive
+redirect_url: https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/winpe-create-usb-bootable-drive
 ---
 
 # WinPE: Create WinPE RAM drive
 
-Create a [Windows PE (WinPE) bootable USB flash drive or an external USB hard drive](create-usb-bootable-drive.md).
+Create a [Windows PE (WinPE) bootable USB flash drive or an external USB hard drive](winpe-create-usb-bootable-drive).
 
 The default installation runs from memory (RAM disk), so you can remove the drive while Windows PE is running.
 

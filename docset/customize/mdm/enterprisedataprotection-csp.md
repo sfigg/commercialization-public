@@ -252,7 +252,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 <a href="" id="settings-edpshowicons"></a>**Settings/EDPShowIcons**  
-<p style="margin-left: 20px">Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu.
+<p style="margin-left: 20px">Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

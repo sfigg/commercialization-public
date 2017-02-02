@@ -15,13 +15,13 @@ ms.sitesec: msdn
 
 `DesktopBackground` specifies the path to a graphic file that is used for the desktop background.
 
-The image will be cropped to fit the size of your display, while preserving the aspect ratio of the image. This corresponds to the option: **Picture Position: Fill** in the Desktop Background page in the Control Panel.
+The image will be cropped to fit the size of your display, while preserving the aspect ratio of the image. 
 
 Select an image which will look good when cropped to the common aspect ratios for your computer. In most cases, we recommend that you use a 1920x1200 image with the focal point of the image near the center.
 
-The graphic must be a .jpg or .bmp image.
+The graphic must be a .png, .jpg, or .bmp image.
 
-**Note**  NOTE: In Windows 10, if you use this (DesktopBackground/ThemeName) setting, you’ll also need to set (ThemeName/DesktopBackground).
+**Note**  In Windows 10, if you use this setting, you’ll also need to set ThemeName. If you set these two settings (ThemeName and DesktopBackground), Windows will create the theme for you. 
 
  
 

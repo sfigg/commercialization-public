@@ -71,19 +71,30 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
+<<<<<<< HEAD
 -   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
 -   [Policies supported by Windows Holographic Enterprise](#hololenspolicies) - Lists the policies that are supported in Windows 10 Holographic Enterprise.
+=======
+-   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
+-   [Policies supported by Windows Holographic for Business](#hololenspolicies) - Lists the policies that are supported in Windows Holographic for Business.
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 -   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
 ## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
+<<<<<<< HEAD
 > **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+=======
+> [!IMPORTANT]
+> To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 
 <table>
 <tr>
 <th>Area Name / Policy Name</th>
 <th>Supported in Home</th>
 <th>Supported in Pro</th>
+<th>Supported in Business</th>
 <th>Supported in Enterprise</th>
 <th>Supported in Education</th>
 <th>Supported in Mobile</th>
@@ -96,6 +107,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -113,15 +126,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#abovelock-allowcortanaabovelock">AboveLock/AllowCortanaAboveLock</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -132,6 +147,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -151,6 +168,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -168,6 +187,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -187,6 +208,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -204,6 +227,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -223,6 +248,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -240,6 +267,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -259,6 +288,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -276,6 +307,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -295,6 +328,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -312,6 +347,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -331,9 +368,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -348,6 +387,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -367,6 +408,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -384,6 +427,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -403,6 +448,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -421,6 +468,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -435,19 +484,26 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -456,6 +512,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -475,6 +533,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -493,6 +553,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -509,17 +571,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#bluetooth-allowprepairing">Bluetooth/AllowPrepairing</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -528,6 +597,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -547,6 +618,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -564,6 +637,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -583,6 +658,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -601,6 +678,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -617,6 +696,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -636,6 +717,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -652,11 +735,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#browser-allowextensions">Browser/AllowExtensions</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -671,6 +756,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -690,6 +777,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -707,6 +796,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -726,6 +817,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -743,6 +836,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -762,6 +857,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -779,6 +876,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -798,6 +897,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -815,6 +916,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -834,6 +937,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -851,6 +956,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -870,6 +977,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -887,6 +996,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -906,6 +1017,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -923,6 +1036,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -942,6 +1057,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -959,6 +1076,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -978,6 +1097,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -995,6 +1116,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -1014,6 +1137,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -1031,6 +1156,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1050,6 +1177,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1067,6 +1196,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1086,6 +1217,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1103,6 +1236,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1122,6 +1257,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1139,6 +1276,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1158,6 +1297,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1175,6 +1316,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1194,6 +1337,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1211,6 +1356,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1230,6 +1377,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1247,6 +1396,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1266,6 +1417,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1283,6 +1436,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1302,6 +1457,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1319,6 +1476,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1338,6 +1497,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1355,6 +1516,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1374,6 +1537,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1391,6 +1556,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1410,6 +1577,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1427,6 +1596,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1446,6 +1617,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1463,6 +1636,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1482,6 +1657,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1499,6 +1676,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1518,6 +1697,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1535,6 +1716,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1554,6 +1737,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1571,6 +1756,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1590,6 +1777,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1608,6 +1797,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1624,11 +1815,34 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-doabsolutemaxcachesize">DeliveryOptimization/DOAbsoluteMaxCacheSize</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1643,6 +1857,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1662,6 +1878,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1679,6 +1897,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1698,6 +1918,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1714,11 +1936,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-domaxdownloadbandwidth">DeliveryOptimization/DOMaxDownloadBandwidth</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1733,6 +1957,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1750,11 +1976,76 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-dominbackgroundqos">DeliveryOptimization/DOMinBackgroundQos</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#deliveryoptimization-domindisksizeallowedtopeer">DeliveryOptimization/DOMinDiskSizeAllowedToPeer</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#deliveryoptimization-dominfilesizetocache">DeliveryOptimization/DOMinFileSizeToCache</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#deliveryoptimization-dominramallowedtopeer">DeliveryOptimization/DOMinRAMAllowedToPeer</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1768,11 +2059,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-domodifycachedrive">DeliveryOptimization/DOModifyCacheDrive</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1786,11 +2079,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-domonthlyuploaddatacap">DeliveryOptimization/DOMonthlyUploadDataCap</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1804,11 +2099,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#deliveryoptimization-dopercentagemaxdownloadbandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1823,6 +2120,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -1842,6 +2141,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -1859,6 +2160,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1878,6 +2181,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1895,6 +2200,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -1914,6 +2221,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1932,6 +2241,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -1948,11 +2259,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#devicelock-enforcelockscreenandlogonimage">DeviceLock/EnforceLockScreenAndLogonImage</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -1968,13 +2281,15 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -1985,6 +2300,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2004,6 +2321,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2021,6 +2340,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2040,6 +2361,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -2057,6 +2380,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2070,10 +2395,138 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprinterdiscoveryendpoint">EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintoauthauthority">EnterpriseCloudPrint/CloudPrintOAuthAuthority</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintoauthclientid">EnterpriseCloudPrint/CloudPrintOAuthClientId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-cloudprintresourceid">EnterpriseCloudPrint/CloudPrintResourceId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-discoverymaxprinterlimit">EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#enterprisecloudprint-mopriadiscoveryresourceid">EnterpriseCloudPrint/MopriaDiscoveryResourceId</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#experience-allowcopypaste">Experience/AllowCopyPaste</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -2093,6 +2546,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2110,6 +2565,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2129,6 +2586,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2146,6 +2605,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -2165,6 +2626,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -2182,6 +2645,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2201,6 +2666,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -2217,11 +2684,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#experience-allowthirdpartysuggestionsinwindowsspotlight">Experience/AllowThirdPartySuggestionsInWindowsSpotlight</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2236,6 +2705,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -2255,6 +2726,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2273,9 +2746,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2290,6 +2765,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2309,9 +2786,11 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2323,17 +2802,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2343,11 +2824,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#licensing-allowwindowsentitlementreactivation">Licensing/AllowWindowsEntitlementReactivation</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2361,11 +2844,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#licensing-disallowkmsclientonlineavsvalidation">Licensing/DisallowKMSClientOnlineAVSValidation</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2379,11 +2864,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -2397,15 +2884,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#maps-enableofflinemapsautoupdate">Maps/EnableOfflineMapsAutoUpdate</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2415,15 +2904,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#maps-allowofflinemapsdownloadovermeteredconnection">Maps/AllowOfflineMapsDownloadOverMeteredConnection</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2435,13 +2926,57 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#messaging-allowmms">Messaging/AllowMMS</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#messaging-allowrcs">Messaging/AllowRCS</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2452,6 +2987,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2471,6 +3008,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2488,6 +3027,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2507,6 +3048,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2524,6 +3067,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2543,6 +3088,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2560,6 +3107,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -2579,6 +3128,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2595,15 +3146,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#notifications-disallownotificationmirroring">Notifications/DisallowNotificationMirroring</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2611,13 +3164,15 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-allowautoacceptpairingandprivacyconsentprompts">Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
 </td>
@@ -2633,6 +3188,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -2647,17 +3204,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2665,17 +3224,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessaccountinfo">Privacy/LetAppsAccessAccountInfo</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2683,17 +3244,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessaccountinfo-forceallowtheseapps">Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2701,17 +3264,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessaccountinfo-forcedenytheseapps">Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2719,17 +3284,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2737,17 +3304,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2755,17 +3324,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscalendar-forceallowtheseapps">Privacy/LetAppsAccessCalendar_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2773,17 +3344,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscalendar-forcedenytheseapps">Privacy/LetAppsAccessCalendar_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2791,17 +3364,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscalendar-userincontroloftheseapps">Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2809,17 +3384,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscallhistory">Privacy/LetAppsAccessCallHistory</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2827,17 +3404,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscallhistory-forceallowtheseapps">Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2845,17 +3424,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscallhistory-forcedenytheseapps">Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2863,17 +3444,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscallhistory-userincontroloftheseapps">Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2881,17 +3464,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscamera">Privacy/LetAppsAccessCamera</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2899,17 +3484,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscamera-forceallowtheseapps">Privacy/LetAppsAccessCamera_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2917,17 +3504,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscamera-forcedenytheseapps">Privacy/LetAppsAccessCamera_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2935,17 +3524,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscamera-userincontroloftheseapps">Privacy/LetAppsAccessCamera_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2953,17 +3544,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscontacts">Privacy/LetAppsAccessContacts</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2971,17 +3564,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscontacts-forceallowtheseapps">Privacy/LetAppsAccessContacts_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -2989,17 +3584,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscontacts-forcedenytheseapps">Privacy/LetAppsAccessContacts_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3007,17 +3604,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesscontacts-userincontroloftheseapps">Privacy/LetAppsAccessContacts_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3025,17 +3624,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessemail">Privacy/LetAppsAccessEmail</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3043,17 +3644,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessemail-forceallowtheseapps">Privacy/LetAppsAccessEmail_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3061,17 +3664,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessemail-forcedenytheseapps">Privacy/LetAppsAccessEmail_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3079,17 +3684,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessemail-userincontroloftheseapps">Privacy/LetAppsAccessEmail_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3097,17 +3704,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesslocation">Privacy/LetAppsAccessLocation</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3115,17 +3724,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesslocation-forceallowtheseapps">Privacy/LetAppsAccessLocation_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3133,17 +3744,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesslocation-forcedenytheseapps">Privacy/LetAppsAccessLocation_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3151,17 +3764,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesslocation-userincontroloftheseapps">Privacy/LetAppsAccessLocation_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3169,17 +3784,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmessaging">Privacy/LetAppsAccessMessaging</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3187,17 +3804,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmessaging-forceallowtheseapps">Privacy/LetAppsAccessMessaging_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3205,17 +3824,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmessaging-forcedenytheseapps">Privacy/LetAppsAccessMessaging_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3223,17 +3844,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmessaging-userincontroloftheseapps">Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3241,17 +3864,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmicrophone">Privacy/LetAppsAccessMicrophone</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3259,17 +3884,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmicrophone-forceallowtheseapps">Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3277,17 +3904,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmicrophone-forcedenytheseapps">Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3295,161 +3924,187 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmicrophone-userincontroloftheseapps">Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmotion">Privacy/LetAppsAccessMotion</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmotion-forceallowtheseapps">Privacy/LetAppsAccessMotion_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmotion-forcedenytheseapps">Privacy/LetAppsAccessMotion_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessmotion-userincontroloftheseapps">Privacy/LetAppsAccessMotion_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessnotifications">Privacy/LetAppsAccessNotifications</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessnotifications-forceallowtheseapps">Privacy/LetAppsAccessNotifications_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessnotifications-forcedenytheseapps">Privacy/LetAppsAccessNotifications_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessnotifications-userincontroloftheseapps">Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3457,36 +4112,39 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessphone">Privacy/LetAppsAccessPhone</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
-<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/></td>
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessphone-forceallowtheseapps">Privacy/LetAppsAccessPhone_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3494,17 +4152,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessphone-forcedenytheseapps">Privacy/LetAppsAccessPhone_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3512,17 +4172,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessphone-userincontroloftheseapps">Privacy/LetAppsAccessPhone_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3530,17 +4192,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessradios">Privacy/LetAppsAccessRadios</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3548,17 +4212,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessradios-forceallowtheseapps">Privacy/LetAppsAccessRadios_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3566,17 +4232,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessradios-forcedenytheseapps">Privacy/LetAppsAccessRadios_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3584,17 +4252,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccessradios-userincontroloftheseapps">Privacy/LetAppsAccessRadios_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3602,17 +4272,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices">Privacy/LetAppsAccessTrustedDevices</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3620,17 +4292,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices-forceallowtheseapps">Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3638,17 +4312,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices-forcedenytheseapps">Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3656,17 +4332,179 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forceallowtheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-forcedenytheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps">Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground">Privacy/LetAppsRunInBackground</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forceallowtheseapps">Privacy/LetAppsRunInBackground_ForceAllowTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-forcedenytheseapps">Privacy/LetAppsRunInBackground_ForceDenyTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><a href="#privacy-letappsruninbackground-userincontroloftheseapps">Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</a></td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3674,17 +4512,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices">Privacy/LetAppsSyncWithDevices</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3692,17 +4532,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices-forceallowtheseapps">Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3710,17 +4552,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices-forcedenytheseapps">Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3728,17 +4572,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices-userincontroloftheseapps">Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -3749,6 +4595,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3768,6 +4616,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -3785,6 +4635,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3804,6 +4656,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -3821,6 +4675,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3840,6 +4696,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -3857,6 +4715,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3876,6 +4736,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -3893,6 +4755,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -3912,6 +4776,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -3929,6 +4795,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3948,6 +4816,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -3965,6 +4835,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -3984,6 +4856,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
@@ -4000,11 +4874,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#security-allowautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -4019,6 +4895,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
@@ -4038,6 +4916,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4055,6 +4935,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4074,6 +4956,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4091,6 +4975,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4110,6 +4996,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4128,13 +5016,15 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -4145,6 +5035,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4164,6 +5056,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4181,6 +5075,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4200,6 +5096,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4217,6 +5115,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4236,6 +5136,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4254,6 +5156,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4268,17 +5172,19 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </tr>
 <tr>
 <td style="vertical-align:top"><a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a></td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Home</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -4289,6 +5195,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4308,6 +5216,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4325,6 +5235,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4344,6 +5256,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4360,6 +5274,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4379,6 +5295,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4396,6 +5314,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4415,6 +5335,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4432,6 +5354,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4451,6 +5375,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4468,6 +5394,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4487,6 +5415,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4504,6 +5434,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4523,6 +5455,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4540,6 +5474,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4559,6 +5495,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4576,6 +5514,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4595,6 +5535,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4608,6 +5550,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td style="vertical-align:top"><a href="#textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -4626,10 +5569,14 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 </tr>
 <tr>
+=======
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><a href="#textinput-excludejapaneseimeexceptjis0208">TextInput/ExcludeJapaneseIMEExceptJIS0208</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4649,6 +5596,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4667,6 +5616,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4683,15 +5634,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-activehoursend">Update/ActiveHoursEnd</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -4701,15 +5654,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-activehoursstart">Update/ActiveHoursStart</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
@@ -4720,6 +5675,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4737,11 +5694,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-allowmuupdateservice">Update/AllowMUUpdateService</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -4756,6 +5715,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4775,6 +5736,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4791,17 +5754,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4809,17 +5779,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-deferfeatureupdatesperiodindays">Update/DeferFeatureUpdatesPeriodInDays</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4827,17 +5804,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-deferqualityupdatesperiodindays">Update/DeferQualityUpdatesPeriodInDays</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4846,6 +5830,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4865,6 +5851,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4881,17 +5869,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4900,6 +5895,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4917,17 +5914,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-pausefeatureupdates">Update/PauseFeatureUpdates</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4935,17 +5939,24 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-pausequalityupdates">Update/PauseQualityUpdates</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Mobile Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
+<<<<<<< HEAD
 
+=======
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
+</td>
+>>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -4954,6 +5965,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -4973,6 +5986,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -4990,6 +6005,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -5009,6 +6026,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -5027,6 +6046,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -5043,11 +6064,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#update-updateserviceurlalternate">Update/UpdateServiceUrlAlternate</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -5063,6 +6086,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -5082,6 +6107,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
 </td>
+<td style="vertical-align:top"><p></p>
+</td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Education</p>
@@ -5098,11 +6125,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#wifi-allowmanualwificonfiguration">WiFi/AllowManualWiFiConfiguration</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
 </td>
@@ -5116,11 +6145,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#wifi-allowwifi">WiFi/AllowWiFi</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile</p>
 </td>
@@ -5135,6 +6166,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Pro</p>
+</td>
+<td style="vertical-align:top"><p></p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Enterprise</p>
 </td>
@@ -5152,10 +6185,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#windowsinkworkspace-allowwindowsinkworkspace">WindowsInkWorkspace/AllowWindowsInkWorkspace</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*</td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><p></p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -5169,11 +6205,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace">WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -5187,11 +6225,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#wirelessdisplay-allowprojectiontopc">WirelessDisplay/AllowProjectionToPC</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -5205,11 +6245,13 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 <td style="vertical-align:top"><a href="#wirelessdisplay-requirepinforpairing">WirelessDisplay/RequirePinForPairing</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Pro</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Pro</p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Enterprise</p>
+<td style="vertical-align:top"><p></p>
 </td>
-<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>\*<p>Education</p>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Education</p>
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p>
 </td>
@@ -5226,9 +6268,10 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 
 Footnote:
 
--   \* - Added in Windows 10, version 1607.
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
 
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic Enterprise
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5311,6 +6354,7 @@ Footnote:
 -   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
 -   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
 -   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
 -   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
 -   [DeliveryOptimization/DOGroupID](#deliveryoptimization-dogroupid)
 -   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
@@ -5318,6 +6362,9 @@ Footnote:
 -   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
 -   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
 -   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
 -   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
 -   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
 -   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
@@ -5333,7 +6380,6 @@ Footnote:
 -   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
 -   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
 -   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
--   [TextInput/AllowLinguisticDataCollection](#textinput-allowlinguisticdatacollection)
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
 -   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
@@ -5408,7 +6454,8 @@ Footnote:
 ## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 <p style="margin-left: 20px">Specifies whether to allow Action Center notifications above the device lock screen.
 
@@ -5447,7 +6494,8 @@ Footnote:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-> **Note**  This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
+> [!NOTE]
+> This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
 
 <a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
 <p style="margin-left: 20px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
@@ -5499,7 +6547,8 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 <p style="margin-left: 20px">Specifies whether DVR and broadcasting is allowed.
 
@@ -5531,13 +6580,14 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
  
 <p style="margin-left: 20px">An XML blob that specifies the application restrictions company want to put to the device. It could be an app allow list, app disallow list, allowed publisher IDs, and so on. For a list of Windows apps and product IDs, see [inbox apps](applocker-csp.md#inboxappsandcomponents). For more information about the XML, see the [ApplicationRestrictions XSD](applicationrestrictions-xsd.md).
 
-> **Note**  
->  When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
+> [!NOTE]
+> When you upgrade Windows Phone 8.1 devices to Windows 10 Mobile with a list of allowed apps, some Windows inbox apps get blocked causing unexpected behavior. To work around this issue, you must include the [inbox apps](applocker-csp.md#inboxappsandcomponents) that you need to your list of allowed apps.
 >
 > Here's additional guidance for the upgrade process:
 >
@@ -5565,7 +6615,7 @@ Footnote:
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 <p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
@@ -5602,12 +6652,13 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
@@ -5711,7 +6762,8 @@ Footnote:
 4.  Verify the setting **Save form entries** is greyed out.
 
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
 
 
 <p style="margin-left: 20px">Specifies whether the browser is allowed on the device.
@@ -5743,7 +6795,8 @@ Footnote:
 4.  Verify the setting **Cookies** is greyed out.
 
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turning this setting on, or not configuring it, lets employees use F12 Developer Tools. Turning this setting off stops employees from using F12 Developer Tools.
@@ -5852,7 +6905,8 @@ Footnote:
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 <p style="margin-left: 20px">Allows the user to specify an URL of an enterprise site list.
@@ -5863,7 +6917,8 @@ Footnote:
 -   Set to a URL location of the enterprise site list.
 
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies the URL that Microsoft Edge for Windows 10 Mobile. will use when it is opened the first time.
@@ -5873,14 +6928,16 @@ Footnote:
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the web page users will see the first time Microsoft Edge is run. For example, “contoso.com”.
 
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
-> **Note**  This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
 
  
 <p style="margin-left: 20px">Specifies your Start pages for MDM-enrolled devices. Users can change this setting. Turning this setting on lets you configure one or more corporate Start pages. If this setting is turned on, you must also include URLs to the pages, separating multiple pages by using the XML-escaped characters **&lt;** and **&gt;**. For example, "&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;"
 
 <p style="margin-left: 20px">Starting in Windows 10, version 1607, this policy will be enforced so that the Start pages specified by this policy cannot be changed by the users.
 
-> **Note**  Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
+> [!NOTE]
+> Turning this setting off, or not configuring it, sets your default Start pages to the web pages specified in App settings.
 
 
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
@@ -5910,7 +6967,8 @@ Footnote:
 -   1 – On.
 
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol. Turning this setting on hides an user’s localhost IP address while making phone calls using WebRTC. Turning this setting off, or not configuring it, shows an <p style="margin-left: 20px">user’s localhost IP address while making phone calls using WebRTC.
@@ -5921,7 +6979,8 @@ Footnote:
 -   1 – The localhost IP address is hidden.
 
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies whether to send intranet traffic over to Internet Explorer.
@@ -5934,7 +6993,8 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List.
@@ -5964,7 +7024,8 @@ Footnote:
 -   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
 -   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
-    > **Note**  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
+> [!NOTE]
+>  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
 
 -   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
@@ -6001,7 +7062,8 @@ Footnote:
 3.  On the Properties page, select **Data roaming options**.
 
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows near field communication (NFC) on the device.
@@ -6014,7 +7076,8 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging.
@@ -6070,38 +7133,43 @@ Footnote:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
-> **Important**  This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
+> [!IMPORTANT]
+> This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
  
 <p style="margin-left: 20px">Setting used by Windows 8.1 Selective Wipe.
 
-> **Note**  This policy is not recommended for use in Windows 10.
+> [!NOTE]
+> This policy is not recommended for use in Windows 10.
 
 
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows scanning of archives.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Allowed.
--   1 (default) – Not allowed.
+-   0 – Not allowed.
+-   1 (default) – Allowed.
 
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Allowed.
--   1 (default) – Not allowed.
+-   0 – Not allowed.
+-   1 (default) – Allowed.
 
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
@@ -6112,7 +7180,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows scanning of email.
@@ -6123,7 +7192,8 @@ Footnote:
 -   1 – Allowed.
 
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows a full scan of mapped network drives.
@@ -6134,7 +7204,8 @@ Footnote:
 -   1 – Allowed.
 
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows a full scan of removable drives.
@@ -6145,7 +7216,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows Windows Defender Intrusion Prevention functionality.
@@ -6156,7 +7228,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Allows or disallows Windows Defender IOAVP Protection functionality.
@@ -6167,7 +7240,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows Windows Defender On Access Protection functionality.
@@ -6178,7 +7252,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows Windows Defender Realtime Monitoring functionality.
@@ -6189,7 +7264,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Allows or disallows a scanning of network files.
@@ -6200,7 +7276,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows Windows Defender Script Scanning functionality.
@@ -6211,7 +7288,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
@@ -6222,7 +7300,8 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AVGCPULoadFactor**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Represents the average CPU load factor for the Windows Defender scan (in percent).
@@ -6232,7 +7311,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 50.
 
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Time period (in days) that quarantine items will be stored on the system.
@@ -6242,30 +7322,35 @@ Footnote:
 <p style="margin-left: 20px">The default value is 0, which keeps items in quarantine, and does not automatically remove them.
 
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">llows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
 
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
-> **Important**  The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
+> [!IMPORTANT]
+> The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
  
 <p style="margin-left: 20px">Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
@@ -6277,12 +7362,14 @@ Footnote:
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Controls which sets of files should be monitored.
 
-> **Note**  If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
+> [!NOTE]
+> If **AllowOnAccessProtection** is not allowed, then this configuration can be used to monitor specific files.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6292,7 +7379,8 @@ Footnote:
 -   2 – Monitor outgoing files.
 
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Selects whether to perform a quick scan or full scan.
@@ -6303,12 +7391,14 @@ Footnote:
 -   2 – Full scan
 
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Selects the time of day that the Windows Defender quick scan should run.
 
-> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> [!NOTE]
+> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
  
 <p style="margin-left: 20px">Valid values: 0–1380
@@ -6318,12 +7408,14 @@ Footnote:
 <p style="margin-left: 20px">The default value is 120
 
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Selects the day that the Windows Defender scan should run.
 
-> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> [!NOTE]
+> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6339,12 +7431,14 @@ Footnote:
 -   8 – No scheduled scan
 
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Selects the time of day that the Windows Defender scan should run.
 
-> **Note**  The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+> [!NOTE]
+> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
 
 <p style="margin-left: 20px">Valid values: 0–1380.
@@ -6354,7 +7448,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 120.
 
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
@@ -6366,7 +7461,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 8.
 
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
@@ -6379,7 +7475,8 @@ Footnote:
 -   3 – Send all samples automatically.
 
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
-> **Note**  This policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
  
 
 <p style="margin-left: 20px">Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
@@ -6403,15 +7500,26 @@ Footnote:
 -   10 – Block
 
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space.
 
 <p style="margin-left: 20px">The default value is 10.
 
+<a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+
+<p style="margin-left: 20px">The default value is 0 (FALSE).
+
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
@@ -6426,16 +7534,19 @@ Footnote:
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupID**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
 
-> **Note**  You must use a GUID as the group ID.
+> [!NOTE]
+> You must use a GUID as the group ID.
 
 
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
@@ -6443,7 +7554,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 259200 seconds (3 days).
 
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 <p style="margin-left: 20px">Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
@@ -6451,7 +7563,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 20.
 
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
  
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
@@ -6459,7 +7572,8 @@ Footnote:
 <p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 <p style="margin-left: 20px">Specifies the maximum upload bandwidth in KiloBytes/second that a device will use across all concurrent upload activity using Delivery Optimization.
@@ -6467,15 +7581,49 @@ Footnote:
 <p style="margin-left: 20px">The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set.
 
 <p style="margin-left: 20px">The default value is 500.
 
+<a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. Recommended values: 64 GB to 256 GB.
+
+> [!NOTE]
+> If the DOMofidyCacheDrive policy is set, the disk size check will apply to the new working directory specified by this policy.
+
+<p style="margin-left: 20px">The default value is 32 GB.
+
+
+<a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. Recommended values: 1 MB to 100,000 MB.
+
+<p style="margin-left: 20px">The default value is 100 MB.
+
+
+<a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means "not-limited" which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
+
+<p style="margin-left: 20px">The default value is 4 GB.
+
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
@@ -6483,7 +7631,8 @@ Footnote:
 <p style="margin-left: 20px">By default, %SystemDrive% is used to store the cache.
 
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
@@ -6493,7 +7642,8 @@ Footnote:
 <p style="margin-left: 20px">The default value is 20.
 
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
 
  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
@@ -6501,12 +7651,14 @@ Footnote:
 <p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
  
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6515,12 +7667,14 @@ Footnote:
 -   1 (default) – Allowed.
 
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Specifies whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6528,13 +7682,15 @@ Footnote:
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-> **Important**  If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
+> [!IMPORTANT]
+> If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
 
 
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 <p style="margin-left: 20px">Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6547,8 +7703,8 @@ Footnote:
 <a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
 <p style="margin-left: 20px">Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
-> **Note**  
-> This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
@@ -6559,8 +7715,8 @@ Footnote:
 -   1 – Numeric PIN or password required.
 -   2 (default) – Users can choose: Numeric PIN or password, or Alphanumeric PIN or password.
 
-> **Note**  
-> If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
+> [!NOTE]
+> If **AlphanumericDevicePasswordRequired** is set to 1 or 2, then MinDevicePasswordLength = 0 and MinDevicePasswordComplexCharacters = 1.
 >
 > If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
 
@@ -6568,8 +7724,8 @@ Footnote:
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 <p style="margin-left: 20px">Specifies whether device lock is enabled.
 
-> **Note**  
-> This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
  
@@ -6579,7 +7735,7 @@ Footnote:
 -   0 (default) – Enabled
 -   1 – Disabled
 
-> **Important**  
+> [!IMPORTANT]
 > The **DevicePasswordEnabled** setting must be set to 0 (device password is enabled) for the following policy settings to take effect:
 >
 > -   AllowSimpleDevicePassword
@@ -6590,7 +7746,7 @@ Footnote:
 > -   MinDevicePasswordComplexCharacters
 &nbsp;
 
-> **Important**  
+> [!IMPORTANT]
 > If **DevicePasswordEnabled** is set to 0 (device password is enabled), then the following policies are set:
 >
 > -   MinDevicePasswordLength is set to 4
@@ -6606,7 +7762,8 @@ Footnote:
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 <p style="margin-left: 20px">Specifies when the password expires (in days).
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6621,7 +7778,8 @@ Footnote:
 <a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
 <p style="margin-left: 20px">Specifies how many passwords can be stored in the history that can’t be used.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6638,7 +7796,8 @@ Footnote:
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
-> **Note**  This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Home.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Home.
 
 
 <p style="margin-left: 20px">Value type is a string, which is the full image filepath and filename.
@@ -6646,7 +7805,8 @@ Footnote:
 <a href="" id="devicelock-enforcelockscreenprovider"></a>**DeviceLock/EnforceLockScreenProvider**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
-> **Note**  This policy is only enforced in Windows 10 for mobile devices.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for mobile devices.
 
 
 <p style="margin-left: 20px">Value type is a string, which is the AppID.
@@ -6654,7 +7814,8 @@ Footnote:
 <a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">This policy has different behaviors on the mobile device and desktop.
@@ -6676,7 +7837,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
 <p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
-> **Note**  This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6689,8 +7851,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 <p style="margin-left: 20px">The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
 
-> **Note**  
-> This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
 
@@ -6763,8 +7925,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
 <p style="margin-left: 20px">Specifies the minimum number or characters required in the PIN or password.
 
-> **Note**  
-> This policy must be wrapped in an Atomic command.
+> [!NOTE]
+> This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows 10 for desktop editions.
 
@@ -6780,10 +7942,9 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
  
-
 <p style="margin-left: 20px">Allows an enterprise to set the duration in seconds for the screen timeout while on the lock screen of Windows 10 Mobile devices.
 
 <p style="margin-left: 20px">Minimum supported value is 10.
@@ -6792,9 +7953,53 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">The default value is 10.
 
-<a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+<p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//cloudprinterdiscovery.contoso.com".
+
+<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//azuretenant.contoso.com/adfs".
+
+<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a GUID. For example, "E1CF1107-FF90-4228-93BF-26052DD2C714".
+
+<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
+
+<p style="margin-left: 20px">The datatype is a string. 
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
+
+<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point.
+
+<p style="margin-left: 20px">The datatype is an integer. 
+
+<p style="margin-left: 20px">For Windows Mobile, the default value is 20.
+
+<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication.
+
+<p style="margin-left: 20px">The datatype is a string.
+
+<p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MopriaDiscoveryService/CloudPrint".
+
+<a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 <p style="margin-left: 20px">Specifies whether copy and paste is allowed.
 
@@ -6830,7 +8035,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 <p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
-> **Note**  The MDM server can always remotely delete the account.
+> [!NOTE]
+> The MDM server can always remotely delete the account.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -6841,7 +8047,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies whether screen capture is allowed.
@@ -6854,7 +8061,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies whether to display dialog prompt when no SIM card is detected.
@@ -6873,7 +8081,8 @@ The number of authentication failures allowed before the device will be wiped. A
 -   1 (default) – Sync settings allowed.
 
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows or disallows task switching on the device.
@@ -6884,7 +8093,8 @@ The number of authentication failures allowed before the device will be wiped. A
 -   1 (default) – Task switching allowed.
 
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
-> **Note**  This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+> [!NOTE]
+> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 
 <p style="margin-left: 20px">Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
@@ -6895,7 +8105,8 @@ The number of authentication failures allowed before the device will be wiped. A
 -   1 (default) – Third-party suggestions allowed.
 
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies whether voice recording is allowed for apps.
@@ -6908,12 +8119,13 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
-> **Important**  
+> [!IMPORTANT]
 > This node must be accessed using the following paths:
 >
 > -   **./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures** to set the policy.
@@ -6928,7 +8140,8 @@ The number of authentication failures allowed before the device will be wiped. A
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
-> **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> [!NOTE]
+> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
 <p style="margin-left: 20px">Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
@@ -6949,7 +8162,8 @@ Enables or disables Windows Tips / soft landing.
 -   1 (default) – Enabled.
 
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
-> **Note**  This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> [!NOTE]
+> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
 <p style="margin-left: 20px">Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
@@ -7028,6 +8242,28 @@ Enables or disables Windows Tips / soft landing.
 -   0 - message sync is not allowed and cannot be changed by the user.
 -   1 - message sync is allowed. The user can change this setting.
 
+<a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the MMS send/receive functionality on the device. For enterprises, this policy can be used to disable MMS on devices as part of the auditing or management requirement.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Disabled.
+-   1 (Default) - Enabled.
+
+<a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Enables or disables the RCS send/receive functionality on the device. For enterprises, this policy can be used to disable RCS on devices as part of the auditing or management requirement.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Disabled.
+-   1 (Default) - Enabled.
+
 <a href="" id="networkisolation-enterprisecloudresources"></a>**NetworkIsolation/EnterpriseCloudResources**  
 <p style="margin-left: 20px">Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the **EnterpriseInternalProxyServers** policy. This domain list is a pipe-separated list of cloud resources. Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address. For example, **&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|**.
 
@@ -7052,7 +8288,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="networkisolation-enterprisenetworkdomainnames"></a>**NetworkIsolation/EnterpriseNetworkDomainNames**  
 <p style="margin-left: 20px">This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
-> **Note**  The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
+> [!NOTE]
+> The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
  
 
 <p style="margin-left: 20px">Here are the steps to create canonical domain names:
@@ -7393,6 +8630,49 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices\_UserInControlOfTheseApps**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
+<a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Force allow, force deny or give user control of apps that can get diagnostic information about other running apps.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – User in control.
+-   1 – Force allow.
+-   2 - Force deny.
+
+<p style="margin-left: 20px">Most restricted value is 2.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_ForceAllowTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_ForceDenyTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo\_UserInControlOfTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can run in the background.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – User in control (default).
+-   1 – Force allow.
+-   2 - Force deny.
+
+<p style="margin-left: 20px">Most restricted value is 2.
+> [!WARNING]
+> Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
+
+<a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceAllowTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground\_ForceDenyTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+
+<a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground\_UserInControlOfTheseApps**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can sync with devices.
 
@@ -7498,7 +8778,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Enable.
 
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies what level of safe search (filtering adult content) is required.
@@ -7519,11 +8800,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
-> **Note**  This policy has been deprecated in Windows 10, version 1607
+> [!NOTE]
+> This policy has been deprecated in Windows 10, version 1607
 
 <br>
 
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
@@ -7534,7 +8817,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Specifies whether the user is allowed to manually install root and intermediate CA certificates.
@@ -7555,7 +8839,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="security-antitheftmode"></a>**Security/AntiTheftMode**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
 
  
 <p style="margin-left: 20px">Allows or disallow Anti Theft Mode on the device.
@@ -7566,7 +8851,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
 
 <a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607 to replace the deprecated policy **Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**.
@@ -7579,12 +8865,14 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – Encryption disabled.
 
 <a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
-> **Note**  This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
+> [!NOTE]
+> This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
 
 
 <p style="margin-left: 20px">Allows enterprise to turn on internal storage encryption.
 
-> **Important**  Bitlocker must be enabled on the device before using this policy.
+> [!IMPORTANT]
+> Bitlocker must be enabled on the device before using this policy.
 
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -7594,7 +8882,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-> **Important**  If encryption has been enabled, it cannot be turned off using this policy.
+> [!IMPORTANT]
+> If encryption has been enabled, it cannot be turned off using this policy.
 
 
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
@@ -7618,13 +8907,15 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2.0.
 -   Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
-> **Note**  We recommend that this policy is set to Required after MDM enrollment.
+> [!NOTE]
+> We recommend that this policy is set to Required after MDM enrollment.
  
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows the user to change Auto Play settings.
@@ -7634,7 +8925,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-> **Note**  Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> [!NOTE]
+> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
 
 <a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
@@ -7662,7 +8954,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows the user to change the language settings.
@@ -7673,7 +8966,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows the user to change power and sleep settings.
@@ -7684,7 +8978,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows the user to change the region settings.
@@ -7695,7 +8990,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows the user to change sign-in options.
@@ -7714,7 +9010,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Allows user to change workplace settings.
@@ -7741,7 +9038,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
-> **Note**  This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 
 <p style="margin-left: 20px">Forces the start screen size.
@@ -7755,7 +9053,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">If there is policy configuration conflict, the latest configuration request is applied to the device.
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
-> **Important**  This node is set on a per-user basis and must be accessed using the following paths:
+> [!IMPORTANT]
+> This node is set on a per-user basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
@@ -7765,7 +9064,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">This policy is described in [Start/StartLayout Examples](#startlayout-examples) later in this topic.
 
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
-> **Note**  This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
+> [!NOTE]
+> This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
 
 
 <p style="margin-left: 20px">This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
@@ -7789,7 +9089,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
-> **Note** This policy is not supported in Windows 10, version 1607.
+> [!NOTE]
+> This policy is not supported in Windows 10, version 1607.
 
 <p style="margin-left: 20px">This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
 
@@ -7887,14 +9188,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 </table>
 
 
-> **Important**  If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
+> [!IMPORTANT]
+> If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
 
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
-> **Note**  This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
 
 <p style="margin-left: 20px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
@@ -7911,7 +9211,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
 
 <a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input.
@@ -7924,7 +9225,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary.
@@ -7937,7 +9239,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the IT admin to disable the touch/handwriting keyboard on Windows.
@@ -7950,7 +9253,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the Japanese IME surrogate pair characters.
@@ -7963,7 +9267,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows Japanese Ideographic Variation Sequence (IVS) characters.
@@ -7976,7 +9281,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the Japanese non-publishing standard glyph.
@@ -7989,7 +9295,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the Japanese user dictionary.
@@ -8005,7 +9312,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">This policy has been deprecated.
 
 <a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the uninstall of language features, such as spell checkers, on a device.
@@ -8017,19 +9325,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
-<p style="margin-left: 20px">Allows sending to Microsoft user text input data samples (anonymized) are collected for future language model improvements.
-
-> **Important**  Text input entered using specific input scope fields such as email address, login name, passwords, and phone numbers are excluded from any sampling.
-
-
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
@@ -8040,7 +9338,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – All characters except JIS0208 are filtered.
 
 <a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
@@ -8051,7 +9350,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – All characters except JIS0208 and EUDC are filtered.
 
 <a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
-> **Note**  The policy is only enforced in Windows 10 for desktop.
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
 
 
 <p style="margin-left: 20px">Allows the users to restrict character code range of conversion by setting the character filter.
@@ -8062,7 +9362,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – All characters except ShiftJIS are filtered.
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
@@ -8072,7 +9373,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">The default is 17 (5 PM).
 
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from start time.
@@ -8082,7 +9384,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">The default value is 8 (8 AM).
 
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
@@ -8098,13 +9401,15 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
 
-    > **Important**  This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+> [!IMPORTANT]
+> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
  
 
 <p style="margin-left: 20px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
@@ -8115,7 +9420,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – Allowed. Accepts updates received through Microsoft Update.
 
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
@@ -8130,7 +9436,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
 
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store.
@@ -8144,11 +9451,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   0 – Update service is not allowed.
 -   1 (default) – Update service is allowed.
 
-> **Note**  This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
+> [!NOTE]
+> This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
@@ -8159,7 +9468,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   32 – User gets upgrades from Current Branch for Business (CBB).
 
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
@@ -8168,7 +9478,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Supported values are 0-180.
 
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
@@ -8176,8 +9487,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Supported values are 0-30.
 
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
-> **Note**  
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
@@ -8222,7 +9533,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <td style="vertical-align:top"><p>1 month</p></td>
 <td style="vertical-align:top"><p>1 week</p></td>
 <td style="vertical-align:top"><div class="alert">
-<strong>Note</strong>  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+<strong>Note</strong>
+If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
 <ul>
 <li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
@@ -8247,11 +9559,11 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
-> **Note**  
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
-
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+>
 > Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
+>
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
@@ -8264,7 +9576,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 > Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
@@ -8275,8 +9588,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – Exclude Windows Update drivers.
 
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
-> **Note**  
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
@@ -8293,7 +9606,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
 <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
@@ -8305,7 +9619,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
@@ -8316,8 +9631,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
-> **Note**  
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 >
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
@@ -8331,11 +9646,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 <br>
 
-> **Note**  If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
+> [!NOTE]
+> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
 
 <p style="margin-left: 20px">Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
@@ -8348,7 +9665,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the day of the update installation.
@@ -8369,7 +9687,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   7 – Saturday
 
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the time of the update installation.
@@ -8383,7 +9702,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">The default value is 3.
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
 <p style="margin-left: 20px">Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premise MDMs that need to update devices that cannot connect to the Internet.
@@ -8414,6 +9734,8 @@ Example
 ```
 
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 
 <p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
@@ -8457,7 +9779,8 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-> **Note**  Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+> [!NOTE]
+> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
 
 <a href="" id="wifi-allowwifi"></a>**WiFi/AllowWiFi**  
@@ -8633,7 +9956,8 @@ For **DesktopApplicationTile** elements, the **DesktopApplicationID** can be ret
 
 Creating a layout requires some special notes about secondary tiles. In general, the simplest way to correctly specify a **SecondaryTile** is to generate it using the **Export-StartLayout** PowerShell cmdlet as specified above.
 
-> **Note**  Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
+> [!NOTE]
+> Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
 
 
 ### Generic webpage shortcuts

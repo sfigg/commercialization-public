@@ -9,7 +9,7 @@ title: DISM Supported Platforms
 # DISM Supported Platforms
 
 
-The Windows 10 version of Deployment Image Servicing and Management (DISM) is available in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows Server 2016 Technical Preview, and Windows Preinstallation Environment (WinPE) for Windows 10.
+The Windows 10 version of Deployment Image Servicing and Management (DISM) is available in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows Server 2016, and Windows Preinstallation Environment (WinPE) for Windows 10.
 
 To service Windows 10 images, you’ll need the Windows 10 version of DISM, otherwise the image may become corrupted.
 
@@ -36,7 +36,7 @@ The host deployment environment is the operating system where DISM runs. The tar
 <tr class="header">
 <th align="left">Host deployment environment</th>
 <th align="left">Target Image:Windows 10 , Windows 10, or WinPE for Windows 10</th>
-<th align="left">Target Image: , Windows 8.1, Windows Server 2016 Technical Preview, Windows Server 2012 R2, or WinPE 5.0 (x86 or x64)</th>
+<th align="left">Target Image: , Windows 8.1, Windows Server 2016, Windows Server 2012 R2, or WinPE 5.0 (x86 or x64)</th>
 <th align="left">Target Image: Windows 8, Windows Server 2012, or WinPE 4.0 (x86 or x64)</th>
 <th align="left">Target Image: Windows 7, Windows Server 2008 R2, or WinPE 3.0 (x86 or x64)</th>
 </tr>
@@ -50,7 +50,7 @@ The host deployment environment is the operating system where DISM runs. The tar
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2016 Technical Preview (x86 or x64)</p></td>
+<td align="left"><p>Windows Server 2016 (x86 or x64)</p></td>
 <td align="left">Supported</td>
 <td align="left"><p>Supported</p></td>
 <td align="left"><p>Supported</p></td>

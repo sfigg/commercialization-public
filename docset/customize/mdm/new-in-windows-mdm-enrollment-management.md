@@ -334,6 +334,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ExcludeWUDriversInQualityUpdate</li>
 <li>Update/PauseFeatureUpdates</li>
 <li>Update/PauseQualityUpdates</li>
+<li>Update/UpdateServiceUrlAlternate (Added in the January service release of Windows 10, version 1607)</li>
 <li>WindowsInkWorkspace/AllowWindowsInkWorkspace</li>
 <li>WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</li>
 <li>WirelessDisplay/AllowProjectionToPC</li>
@@ -497,7 +498,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>PendingRebootUpdates/<em>Pending Reboot Update Guid</em>/RevisionNumber</li>
 </ul>
 </td>
-</tr><tr class="even">
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
 <td style="vertical-align:top"><p>To PurposeGroups setting, added the following values:</p>
 <ul>
@@ -506,27 +508,61 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
+<td style="vertical-align:top"><p>[CellularSettings CSP](cellularsettings-csp.md)</p><p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
 <td style="vertical-align:top"><p>For these CSPs, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
+<li>AllowTextSuggestions</li>
+<li>PrintingCapability</li>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></ul></td>
+</ul>
+</td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP. This CSP is only supported in Windows 10 Mobile and Mobile Enteprise editions.</p>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Added the following new policies: </p>
+<ul>
+<li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
+<li>DeliveryOptimization/DOMinFileSizeToCache</li>
+<li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+</ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting: DeviceHardwareData.</p>
+</td>
+</tr>
 <tr class="even">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
@@ -827,8 +863,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following settings</p>
 <ul>
+<li>AllowTextSuggestions</li>
+<li>PrintingCapability</li>
 <li>ScreenCaptureCapability</li>
-<li>PrintingCapability</li></td>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
+<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following setting: DeviceHardwareData</p></td>
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[Messaging CSP](messaging-csp.md)</td>
@@ -836,11 +879,53 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Updated in Windows 10, version 1703. Added the following new policy: Update/UpdateServiceUrlAlternate.</p>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
+<li>DeliveryOptimization/DOMinFileSizeToCache</li>
+<li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
+<li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
+<li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
+<li>EnterpriseCloudPrint/CloudPrintResourceId</li>
+<li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
+<li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+</ul>
+<p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
+<p>Removed TextInput/AllowLinguisticDataCollection from Policy CSP in Windows 10 version 1703.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">Added a download of Windows 10 version 1607 DDF files</td>
+<td style="vertical-align:top"><p>You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).</p>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following values for DeviceStatus/NetworkIdentifiers/MacAddress/Type setting:</p>
+<ul>
+<li>2 - WLAN (or other Wirless interface)</li>
+<li>1 - LAN (or other Wired interface)</li>
+<li>0 - Unknown</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
