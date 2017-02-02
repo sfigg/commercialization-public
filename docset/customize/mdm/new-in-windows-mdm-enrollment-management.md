@@ -540,6 +540,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
@@ -889,6 +891,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
