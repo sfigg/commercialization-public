@@ -105,7 +105,7 @@ The following table lists Setup command-line options:
 <p><strong>Clean</strong>: Performs an clean install of Windows.</p>
 <p><strong>DataOnly</strong>: Performs an upgrade of Windows, saving only data (and not apps.) If the data-only installation option is not available due to compatibility checks, Windows Setup will exit silently and log an exit code.</p>
 <p><strong>Upgrade</strong>: Performs an upgrade of Windows saving apps and data. If the upgrade installation option is not available, or the user needs to resolve an app compatibility issue, Windows Setup will exit silently and log an exit code.</p>
-<p><strong>Setup.exe exit codes:</strong> See table below</p>
+<p><strong>Setup.exe exit codes:</strong> [See table below](#setup_exe_exit_codes)</p>
 <strong>Clean</strong>
 <p><strong>/noautoexit</strong>: Not used in Windows 10. In Windows 8.1, if an error is found, Windows Setup does not exit, but instead stops and stays on the setup screen until the user addresses the issue. The installation from that point on is attended.</p>
 <p><strong>/performDU</strong>: Not used in Windows 10. In Windows 8.1, Windows Setup checks for Dynamic Updates for Windows Setup.</p>
