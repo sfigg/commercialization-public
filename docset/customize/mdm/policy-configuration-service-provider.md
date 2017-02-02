@@ -5302,6 +5302,27 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 </td>
 </tr>
 <tr>
+<td style="vertical-align:top"><a href="#settings-allowset24hourclock">Settings/AllowSet24HourClock</a></td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p>
+</td>
+<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p>
+</td>
+<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+</td>
+</tr>
+<tr>
 <td style="vertical-align:top"><a href="#settings-allowsigninoptions">Settings/AllowSignInOptions</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -9139,6 +9160,14 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 
 <p style="margin-left: 20px">Allows the user to change the region settings.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<a href="" id="settings-allowset24hourclock"></a>**Settings/AllowSet24HourClock**  
+<p style="margin-left: 20px">Allows IT Admins to set 24 hour clock as the default in Time & Language Settings.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
