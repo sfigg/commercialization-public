@@ -245,7 +245,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </table>
 
 
-## Additional PC OEM requirements for Windows 10, version 1607 and Windows Server 2016
+## Additional requirements for Windows 10, version 1607 and Windows Server 2016
 
 <table>
 <tr>
@@ -341,7 +341,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </table>
 
 
-## <a href="" id="2017-additional-qualification-requirements-for-device-guard-and-credential-guard--starting-with-the-next-major-release-of--windows-10-"></a>2017 Additional Qualification Requirements for Device Guard and Credential Guard (starting with the next major release of Windows 10)
+## <a href="" id="additional-qualification-requirements-for-the-next-major-release-of-windows-10"></a>Additional requirements for the next major release of Windows 10
 
 
 <table>
