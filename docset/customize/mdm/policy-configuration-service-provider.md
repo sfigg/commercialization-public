@@ -6045,12 +6045,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
 
-
 <p style="margin-left: 20px">Allows enterprise to turn on internal storage encryption.
-
-> [!IMPORTANT]
-> Bitlocker must be enabled on the device before using this policy.
-
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6060,7 +6055,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 1.
 
 > [!IMPORTANT]
-> If encryption has been enabled, it cannot be turned off using this policy.
+> If encryption has been enabled, it cannot be turned off by using this policy.
 
 
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
