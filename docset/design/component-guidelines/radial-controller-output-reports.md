@@ -17,7 +17,7 @@ If a Windows radial controller device supports haptic feedback, it can allow the
 The host uses the following usages in an output report (through the haptic feedback collection) to allow the host to issue haptic feedback events to the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow host-initiated haptic feedback to be supported.
 
 Member | Description | Page | ID | Mandatory/Optional
----| --- | --- | ---
+---| --- | --- | --- | ---
 Manual Trigger | Waveform to fire as explicit command from the host. | 0x0E | 0x21 | Mandatory
 Intensity | Output – Intensity of Manual Trigger waveform as a percentage | 0x0E | 0x23 | Optional
 Repeat Count | Output – Number of times to play Manual Trigger waveform after initial play | 0x0E | 0x24 | Optional
