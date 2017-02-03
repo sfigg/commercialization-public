@@ -8,7 +8,7 @@ keywords: ["radial dial", "radial controller", "dial"]
 
 # Windows radial controller implementation guide
 
-This section is a guide for implementing guide a radial controller compatible with Windows 10.
+This section is a guide for implementing a radial controller compatible with Windows 10.
 
 ## In this section
 

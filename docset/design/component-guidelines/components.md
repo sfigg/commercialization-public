@@ -61,7 +61,7 @@ Building a great Windows device starts with selecting the right components. This
 </tr>
 </tr>
 <tr class="even">
-<td><p>[Radial controller devices](radial-implimentation-guide.md)</p></td>
+<td><p>[Radial controller devices](radial-implementation-guide.md)</p></td>
 <td><p>This topic provides recommendations for radial controller devices in Windows 10.</p></td>
 </tr>
 <tr class="even">
