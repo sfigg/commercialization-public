@@ -4386,10 +4386,26 @@ Footnote:
 
 <p style="margin-left: 20px">To verify AllowSmartScreen is set to 0 (not allowed):
 
-1.  Open Microsoft EdgeorMicrosoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
+
+<a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
+<p style="margin-left: 20px">Specifies whether to clear browsing data on exiting Microsoft Edge.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – (default) Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.
+-   1 – Browsing data is cleared on exit.
+
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<p style="margin-left: 20px">To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
+
+1.  Open Microsoft Edge and browse to websites.
+2.  Close the Microsoft Edge window.
+3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
 
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you to add up to 5 additional search engines for MDM-enrolled devices. 
@@ -5838,7 +5854,7 @@ Enables or disables Windows Tips / soft landing.
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 - Disabled.
--   1 (Default) - Enabled.
+-   1 (default) - Enabled.
 
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 > [!NOTE]
@@ -5849,7 +5865,7 @@ Enables or disables Windows Tips / soft landing.
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 - Disabled.
--   1 (Default) - Enabled.
+-   1 (default) - Enabled.
 
 <a href="" id="networkisolation-enterprisecloudresources"></a>**NetworkIsolation/EnterpriseCloudResources**  
 <p style="margin-left: 20px">Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the **EnterpriseInternalProxyServers** policy. This domain list is a pipe-separated list of cloud resources. Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address. For example, **&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|**.
