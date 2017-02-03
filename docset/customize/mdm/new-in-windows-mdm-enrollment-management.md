@@ -516,8 +516,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>AllowTextSuggestions</li>
-<li>PrintingCapability</li>
-<li>ScreenCaptureCapability</li>
+<li>RequirePrinting</li>
+<li>AllowScreenMonitoring</li>
 </ul>
 </td>
 </tr>
