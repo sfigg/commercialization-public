@@ -12,7 +12,7 @@ This topic presents information about the radial controller devices that are com
 
 ## Physical design
 
-The physical radial controller device that the user interacts with may have a variety of industrial designs. However, all compatible Windows radial controller devices have a primary button, and a rotational affordance. The following image illustrates how these affordances
+The physical radial controller device that the user interacts with may have a variety of industrial designs. However, all compatible Windows radial controller devices have a primary button, and a rotational affordance. The following image illustrates how these affordances may be implemented. 
 
 ![an image showing the primary button and rotation affordance of a radial controller. ](../images/dial_affordance.png)
 
