@@ -6,7 +6,7 @@ ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
 ---
 
-## Radial controller protocol implementation
+# Radial controller protocol implementation
 
 Windows radial controller devices are expected to use the Human Interface Device (HID) protocol to communicate with the host.
 
