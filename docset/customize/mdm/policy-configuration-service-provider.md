@@ -1664,6 +1664,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#networkisolation-enterprisecloudresources">NetworkIsolation/EnterpriseCloudResources</a></td>
