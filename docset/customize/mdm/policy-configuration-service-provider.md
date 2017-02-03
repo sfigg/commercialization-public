@@ -82,12 +82,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 
 ## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
-<<<<<<< HEAD
-> **Important**  To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
-=======
 > [!IMPORTANT]
 > To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 
 <table>
 <tr>
@@ -458,7 +454,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -478,7 +473,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/><p>Mobile Enterprise</p>
 </td>
-
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -496,14 +490,10 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -581,14 +571,10 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5550,7 +5536,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 </tr>
 <tr>
-<<<<<<< HEAD
 <td style="vertical-align:top"><a href="#textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5569,8 +5554,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 </tr>
 <tr>
-=======
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><a href="#textinput-excludejapaneseimeexceptjis0208">TextInput/ExcludeJapaneseIMEExceptJIS0208</a></td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p>
 </td>
@@ -5766,12 +5749,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5791,12 +5770,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5816,12 +5791,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5881,12 +5852,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5926,12 +5893,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
@@ -5951,12 +5914,8 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 </td>
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>Mobile Enterprise</p>
 </td>
-<<<<<<< HEAD
-
-=======
 <td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>1<p>IoT Core</p>
 </td>
->>>>>>> 4a3158e55c86a6620752087d40ade57f2bb11b64
 <td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
 </td>
 </tr>
