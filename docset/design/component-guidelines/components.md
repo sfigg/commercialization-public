@@ -59,6 +59,11 @@ Building a great Windows device starts with selecting the right components. This
 <td><p>[Peripheral Component Interface Express](peripheral-component-interface-express.md)</p></td>
 <td><p>This topic provides recommendations for PCI Express (PCIe) in Windows 10.</p></td>
 </tr>
+</tr>
+<tr class="even">
+<td><p>[Radial controller devices](radial-implementation-guide.md)</p></td>
+<td><p>This topic provides recommendations for radial controller devices in Windows 10.</p></td>
+</tr>
 <tr class="even">
 <td><p>[Simple Peripheral Bus (SPB)](simple-peripheral-bus--spb-.md)</p></td>
 <td><p>This topic covers recommendations for Simple Peripheral Bus in Windows 10.</p></td>
@@ -87,9 +92,3 @@ Building a great Windows device starts with selecting the right components. This
  
 
  
-
-
-
-
-
-

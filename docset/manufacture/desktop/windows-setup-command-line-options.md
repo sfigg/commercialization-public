@@ -79,10 +79,6 @@ The following command-line options are available for Windows Setup. Beginning w
 The following table lists Setup command-line options:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left"><strong>Option</strong></th>
@@ -109,39 +105,7 @@ The following table lists Setup command-line options:
 <p><strong>Clean</strong>: Performs an clean install of Windows.</p>
 <p><strong>DataOnly</strong>: Performs an upgrade of Windows, saving only data (and not apps.) If the data-only installation option is not available due to compatibility checks, Windows Setup will exit silently and log an exit code.</p>
 <p><strong>Upgrade</strong>: Performs an upgrade of Windows saving apps and data. If the upgrade installation option is not available, or the user needs to resolve an app compatibility issue, Windows Setup will exit silently and log an exit code.</p>
-<p><strong>Setup.exe exit codes:</strong></p>
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Exit code name</th>
-<th align="left">Exit code</th>
-<th align="left">Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>CONX_SETUP_EXITCODE_CONTINUE_REBOOT</p></td>
-<td align="left"><p>0x3</p></td>
-<td align="left"><p>This upgrade was successful.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT</p></td>
-<td align="left"><p>0x5</p></td>
-<td align="left"><p>The compatibility check detected issues that require resolution before the upgrade can continue.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL</p></td>
-<td align="left"><p>0x7</p></td>
-<td align="left"><p>The installation option (upgrade or data only) was not available.</p></td>
-</tr>
-</tbody>
-</table>
-<p> </p>
+<p><strong>Setup.exe exit codes:</strong> [ See table below](#setup_exe_exit_codes)</p>
 <strong>Clean</strong>
 <p><strong>/noautoexit</strong>: Not used in Windows 10. In Windows 8.1, if an error is found, Windows Setup does not exit, but instead stops and stays on the setup screen until the user addresses the issue. The installation from that point on is attended.</p>
 <p><strong>/performDU</strong>: Not used in Windows 10. In Windows 8.1, Windows Setup checks for Dynamic Updates for Windows Setup.</p>
@@ -393,7 +357,39 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 </tbody>
 </table>
 
- 
+### <span id="setup_exe_exit_codes"></span>Setup.exe exit codes
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Exit code name</th>
+<th align="left">Exit code</th>
+<th align="left">Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>CONX_SETUP_EXITCODE_CONTINUE_REBOOT</p></td>
+<td align="left"><p>0x3</p></td>
+<td align="left"><p>This upgrade was successful.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>CONX_SETUP_EXITCODE_RESUME_AT_COMPAT_REPORT</p></td>
+<td align="left"><p>0x5</p></td>
+<td align="left"><p>The compatibility check detected issues that require resolution before the upgrade can continue.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>CONX_SETUP_EXITCODE_AUTO_INSTALL_FAIL</p></td>
+<td align="left"><p>0x7</p></td>
+<td align="left"><p>The installation option (upgrade or data only) was not available.</p></td>
+</tr>
+</tbody>
+</table>
 
 ## <span id="related_topics"></span>Related topics
 

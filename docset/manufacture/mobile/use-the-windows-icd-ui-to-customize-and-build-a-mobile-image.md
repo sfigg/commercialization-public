@@ -11,6 +11,8 @@ author: CelesteDG
 
 You can use the Windows Imaging and Configuration Designer (ICD) UI to create a new Windows 10 Mobile image and customize it by adding settings and some assets.
 
+**Note**: This method is not supported in Windows 10, version 1607.
+
 This imaging method requires a pre-installed OS kit so you must have all the necessary Microsoft OS packages and feature manifest files in your default install path. A configuration data file (BSP.config.xml), which contains information about the hardware component packages for your board support package (BSP), is also required. For the BSP.config.xml file, you can:
 
 -   Use the BSP.config.xml file you downloaded as part of the BSP kit, or,
