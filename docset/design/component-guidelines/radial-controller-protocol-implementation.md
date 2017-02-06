@@ -4,6 +4,7 @@ author: windows-driver-content
 description: This document provides guidelines for radial controller protocol implementation. Windows radial controller devices are expected to use the Human Interface Device (HID) protocol to communicate with the host.
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
+redirect_url: https://msdn.microsoft.com/windows/hardware/design
 ---
 
 # Radial controller protocol implementation
