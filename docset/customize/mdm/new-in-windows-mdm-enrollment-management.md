@@ -926,7 +926,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
-<li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
 <p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
 <p>Removed TextInput/AllowLinguisticDataCollection from Policy CSP in Windows 10 version 1703.</p>
