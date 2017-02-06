@@ -540,6 +540,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
@@ -847,6 +849,44 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### February 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+	<li>Start/HideAppList</li>
+	<li>Start/HideChangeAccountSettings</li>
+	<li>Start/HideFrequentlyUsedApps</li>
+	<li>Start/HideHibernate</li>
+	<li>Start/HideLock</li>
+	<li>Start/HidePowerButton</li>
+	<li>Start/HideRecentJumplists</li>
+	<li>Start/HideRecentlyAddedApps</li>
+	<li>Start/HideRestart</li>
+	<li>Start/HideShutDown</li>
+	<li>Start/HideSignOut</li>
+	<li>Start/HideSleep</li>
+	<li>Start/HideSwitchAccount</li>
+	<li>Start/HideUserTile</li>
+</ul>
+</td></tr>
+</tr>
+</tbody>
+</table>
+
 ### January 2017
 
 <table>
@@ -903,6 +943,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
 <li>Privacy/LetAppsGetDiagnosticInfo</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
@@ -911,20 +953,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
-<li>Start/HideAppList</li>
-<li>Start/HideChangeAccountSettings</li>
-<li>Start/HideFrequentlyUsedApps</li>
-<li>Start/HideHibernate</li>
-<li>Start/HideLock</li>
-<li>Start/HidePowerButton</li>
-<li>Start/HideRecentJumplists</li>
-<li>Start/HideRecentlyAddedApps</li>
-<li>Start/HideRestart</li>
-<li>Start/HideShutDown</li>
-<li>Start/HideSignOut</li>
-<li>Start/HideSleep</li>
-<li>Start/HideSwitchAccount</li>
-<li>Start/HideUserTile</li>
 </ul>
 <p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
 <p>Removed TextInput/AllowLinguisticDataCollection from Policy CSP in Windows 10 version 1703.</p>
