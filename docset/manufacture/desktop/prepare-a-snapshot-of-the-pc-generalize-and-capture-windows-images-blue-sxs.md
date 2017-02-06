@@ -143,7 +143,7 @@ This step is required when you're capturing images to apply to other PCs.
 
     The Sysprep tool reseals the device. This process can take several minutes. After the process completes, the device shuts down automatically.
 
-    **Warning**: If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). There's a known bug in Windows 10, version 1607 that makes the image unbootable if you do this. Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
+    **Warning**: If you're using [siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md), do not set the image to boot to audit mode again (sysprep /audit). There's a known bug in Windows 10, version 1607 that makes the image unbootable if you do this. Instead, set it to boot to OOBE, and if you need to boot to audit again, [add an answer file with the Mode:Audit setting](update-windows-settings-and-scripts-create-your-own-answer-file-sxs.md). This will be fixed in future versions.
 
 2.  Boot the device into Windows PE. To do this, you may need to press the key that opens the boot-device selection menu for the device (for example, the **Esc** key or **Volume Up** key).
 
@@ -228,4 +228,4 @@ Use the steps from [Lab 2: Deploy Windows using a script](deploy-windows-with-a-
 
 2.  See that the changes you made in audit mode are there.
 
-Next steps: [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md)
+Next steps: [Lab 10: Add desktop apps with siloed provisioning packages](add-desktop-apps-with-spps-sxs.md)

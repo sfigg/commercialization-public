@@ -530,12 +530,34 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
+<li>DeliveryOptimization/DOMinFileSizeToCache</li>
+<li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -821,6 +843,37 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### February 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### January 2017
 
 <table>
@@ -867,14 +920,29 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
+<li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
+<li>DeliveryOptimization/DOMinFileSizeToCache</li>
+<li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
 <li>EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthAuthority</li>
 <li>EnterpriseCloudPrint/CloudPrintOAuthClientId</li>
 <li>EnterpriseCloudPrint/CloudPrintResourceId</li>
 <li>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</li>
 <li>EnterpriseCloudPrint/MopriaDiscoveryResourceId</li>
+<li>Messaging/AllowMMS</li>
+<li>Messaging/AllowRCS</li>
+<li>Privacy/LetAppsGetDiagnosticInfo</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</li>
+<li>Privacy/LetAppsRunInBackground</li>
+<li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
+<li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
 </ul>
 <p>Added the following new policy for the January service release of Windows 10, version 1607: Update/UpdateServiceUrlAlternate</p>
+<p>Removed TextInput/AllowLinguisticDataCollection from Policy CSP in Windows 10 version 1703.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CleanPC CSP](cleanpc-csp.md)</td>
@@ -883,6 +951,20 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP for Windows 10, version 1703.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">Added a download of Windows 10 version 1607 DDF files</td>
+<td style="vertical-align:top"><p>You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).</p>
+</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following values for DeviceStatus/NetworkIdentifiers/MacAddress/Type setting:</p>
+<ul>
+<li>2 - WLAN (or other Wirless interface)</li>
+<li>1 - LAN (or other Wired interface)</li>
+<li>0 - Unknown</li>
+</ul></td>
 </tr>
 </tbody>
 </table>

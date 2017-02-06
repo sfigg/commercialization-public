@@ -105,13 +105,3 @@ Note: this will add roughly 4MB to the size of your DISM image, which may affect
 [WinPE: Mount and Customize](winpe-mount-and-customize.md)
 
 [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md)
-
- 
-
- 
-
-
-
-
-
-

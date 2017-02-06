@@ -12,6 +12,8 @@ ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
 
 This topic shows the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider.
 
+You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+
 -   [DiagnosticLog CSP version 1.2](#version-1-2)
 -   [DiagnosticLog CSP version 1.3](#version-1-3)
 
