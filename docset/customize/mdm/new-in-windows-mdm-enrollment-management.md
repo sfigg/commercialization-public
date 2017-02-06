@@ -516,8 +516,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>AllowTextSuggestions</li>
-<li>PrintingCapability</li>
-<li>ScreenCaptureCapability</li>
+<li>RequirePrinting</li>
+<li>AllowScreenMonitoringy</li>
 </ul>
 </td>
 </tr>
@@ -550,6 +550,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+</ul>
+<p>Removed the following policy:</p>
+<ul>
+<li>TextInput/AllowLinguisticDataCollection</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -835,7 +839,37 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
-### January 2017
+### February 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the following setting names:</p>
+<ul>
+<li>AllowScreenMonitoring - previously ScreenCaptureCapability</li>
+<li>RequirePrinting - previously PrintingCapability</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following statement to Settings/EDPShowIcons:</p><ul>
+<li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>### January 2017
 
 <table>
 <colgroup>
