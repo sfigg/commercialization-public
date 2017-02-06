@@ -18,7 +18,7 @@ OEMs must meet the following DG/CG requirements for each OS version:
 
 -   Windows 10, version 1607 - There are requirements in addition to the requirements for the previous versions.
 
--   2017 additional qualification requirements - Lists all the future additional qualification requirements starting with Windows 10. This list is not final and subject to change.
+-   Additional requirements for the next major version of Windows (scheduled for 2017): This list is not final and subject to change.
 
 
 
@@ -200,7 +200,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 <p>Software: Windows edition</p>
 </td>
 <td>
-<p>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise</p>
+<p>Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, Windows 10 Mobile Enterprise, Windows 10 IoT Enterprise</p>
 <br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>
 </td>
 <td>
@@ -245,7 +245,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </table>
 
 
-## PC OEM requirements for Windows 10, version 1607 and Windows Server 2016
+## Additional requirements for Windows 10, version 1607 and Windows Server 2016
 
 <table>
 <tr>
@@ -341,7 +341,7 @@ For more information, see Hardware Compatibility Specification for Systems for W
 </table>
 
 
-## <a href="" id="2017-additional-qualification-requirements-for-device-guard-and-credential-guard--starting-with-the-next-major-release-of--windows-10-"></a>2017 Additional Qualification Requirements for Device Guard and Credential Guard (starting with the next major release of Windows 10)
+## <a href="" id="additional-qualification-requirements-for-the-next-major-release-of-windows-10"></a>Additional requirements for the next major release of Windows 10
 
 
 <table>

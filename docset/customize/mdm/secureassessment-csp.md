@@ -37,12 +37,12 @@ The user name of the test taking account.
 
 The supported operations are Add, Delete, Get, and Replace.
 
-<a href="" id="ScreenCaptureCapability"></a>**ScreenCaptureCapability**  
+<a href="" id="allowscreenmonitoring"></a>**AllowScreenMonitoring**  
 Added in Windows 10, version 1703. Boolean value that indicates whether screen capture is allowed by the app.  
 
 Supported operations are Get and Replace.
 
-<a href="" id="PrintingCapability"></a>**PrintingCapability**  
+<a href="" id="requireprinting"></a>**RequirePrinting**  
 Added in Windows 10, version 1703. Boolean value that indicates whether printing is allowed by the app.
 
 Supported operations are Get and Replace.  
