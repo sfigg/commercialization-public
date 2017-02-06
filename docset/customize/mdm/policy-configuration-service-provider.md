@@ -6535,7 +6535,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
-2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" is not available.
+2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
 
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
