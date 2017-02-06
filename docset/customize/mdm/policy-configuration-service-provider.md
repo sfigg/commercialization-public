@@ -6397,7 +6397,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 - Enable policy and restart explorer.exe
 -   2a - If set to '1': Verify that the all apps list is collapsed, and that the Settings toggle is not grayed out.
 -   2b - If set to '2': Verify that the all apps list is collapsed, and that the Settings toggle is grayed out.
--   2c - If set to '3': Verify that there is no way of opening the all apps list from the Start Menu, and that the Settings toggle is grayed out.
+-   2c - If set to '3': Verify that there is no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
 
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
@@ -6431,7 +6431,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 3.   Enable policy.
 4.   Restart explorer.exe
 5.   Check that  "Show most used apps" Settings toggle is grayed out.
-6.   Check that most used apps do not appear in the Start Menu.
+6.   Check that most used apps do not appear in Start.
 
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
@@ -6445,7 +6445,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Laptop, do the following:
 
 1.   Enable policy.
-2.   Open the Start Menu, click on the Power button, and verify "Hibernate" is not available.
+2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
 
 > [!NOTE]
 > This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
@@ -6462,7 +6462,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
-2.   Open the Start Menu, click on the user tile, and verify "Lock" is not available.
+2.   Open Start, click on the user tile, and verify "Lock" is not available.
 
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 > [!NOTE]
@@ -6517,7 +6517,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable "Show recently added apps" in the Settings app.
-2.   Check if there are recently added apps in the Start Menu (if not, install some).
+2.   Check if there are recently added apps in Start (if not, install some).
 3.   Enable policy.
 4.   Restart explorer.exe
 5.   Check that "Show recently added apps" Settings toggle is grayed out.
