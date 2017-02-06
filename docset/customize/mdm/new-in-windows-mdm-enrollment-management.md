@@ -862,8 +862,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
-<td style="vertical-align:top"><p>Added the following statement to Settings/EDPShowIcons:</p><ul>
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following statement to [Settings/EDPShowIcons](enterprisedataprotection-csp.md#settings-edpshowicons):</p><ul>
 <li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li>
 </ul>
 </td>
