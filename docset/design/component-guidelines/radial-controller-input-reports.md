@@ -5,7 +5,7 @@ This topic details the HID input report that are used for radial controller hapt
 The host makes use of the following usages when extracting data from an input report:
 
 Member | Description | Page | ID | Mandatory/Optional
----|  
+---| --- | --- | --- | --- 
 Button | State of the button located on radial controller | 0x09 | 0x01 | Mandatory
 Dial | Relative rotation of the radial controller  | 0x01 | 0x37 | Mandatory
 X | X coordinate of contact position | 0x01 | 0x30 | Optional
