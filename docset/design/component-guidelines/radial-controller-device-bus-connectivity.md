@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This topic discusses bus connectivity methods for a Windows radial controller device.
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
-redirect_url: https://msdn.microsoft.com/windows/hardware/design
+redirect_url: https://msdn.microsoft.com/windows/hardware/commercialize/design
 ---
 
 # Device bus connectivity
