@@ -12,6 +12,8 @@ ms.assetid: 5864CBB8-2030-459E-BCF6-9ACB69206FEA
 
 This topic shows the OMA DM device description framework (DDF) for the **RemoteFind** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
+You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
+
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"

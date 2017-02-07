@@ -11,7 +11,7 @@ Add apps to your images to support different customer needs. Some have different
 
 -  **Windows universal platform apps (UWP apps)**: These can be added or re-installed using tools described in this topic.
 
--  **Windows desktop applications**: We'll show you how to add those in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md).
+-  **Windows desktop applications**: We'll show you how to add those in [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md).
 
 **Notes** 
 

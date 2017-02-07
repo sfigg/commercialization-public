@@ -45,7 +45,7 @@ To make the changes, you'll mount the image contents into a temporary folder, an
 For Windows desktop applications, you can add them in audit mode, or apply them separately after you've applied a Windows image.
 
 *  [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md) (includes Microsoft Office 2016)
-*  [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
+*  [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md) (includes Windows Store settings, Microsoft Office)
 *  [Lab 11: Add Start tiles and taskbar pins](add-start-tiles-sxs.md) (used for universal apps and desktop applications)
 
 **Final tasks**

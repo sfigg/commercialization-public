@@ -22,7 +22,7 @@ For many customizations, like adding .inf-style drivers, Windows updates or upgr
 
 ![image: copying image files and deployment scripts](images/dep-win8-sxs-createmodelspecificfiles.jpg)
 
-Note: To add drivers that include an installation package, see [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+Note: To add drivers that include an installation package, see [Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md)
 
 ## <span id="Mount_the_image"></span>Mount the image
 
