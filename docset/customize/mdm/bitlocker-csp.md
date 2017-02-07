@@ -21,7 +21,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 A Get operation on any of the settings, except for RequireStorageCardEncryption and RequireStorageCardEncryption, returns
 the setting configured by the admin.
 
-For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if TPM protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0.
+For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if TPM protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that the a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
 The following diagram shows the BitLocker configuration service provider in tree format.
 
