@@ -30,6 +30,7 @@
 ### [Continuum](design/device-experiences/continuum-phone.md)
 ### [Tablet mode](design/device-experiences/continuum.md)
 ### [Windows Hello](design/device-experiences/windows-hello.md)
+#### [Windows Hello and Companion Device Framework](design/device-experiences/windows-hello-companion-device-framework.md)
 #### [Windows Hello biometric requirements](design/device-experiences/biometric-requirements.md)
 #### [Windows Hello face authentication](design/device-experiences/windows-hello-face-authentication.md)
 #### [Windows Hello fingerprint authentication](esign/device-experiences/windows-hello-fingerprint-authentication.md)
