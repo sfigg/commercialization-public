@@ -6906,11 +6906,9 @@ Example
 ```
 
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
-<<<<<<< HEAD
-=======
+
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
->>>>>>> e7c9612bff9d318c0b834c841dd6ae0e24f34859
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 
 <p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
