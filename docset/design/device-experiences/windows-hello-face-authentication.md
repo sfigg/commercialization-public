@@ -119,9 +119,6 @@ Random errors results from using data that doesn’t match the population divers
 
 ## Related topics
 
-
-[Manage identity verification using Microsoft Passport](http://go.microsoft.com/fwlink/?LinkId=624460)
-
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
  
