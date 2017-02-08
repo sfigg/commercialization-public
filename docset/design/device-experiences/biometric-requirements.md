@@ -32,21 +32,18 @@ Learn about the hardware requirements for biometric equipment, such as IR camera
 Large Area sensors (a sensor matrix of 160 x160 Pixels or more at a dpi of 320 or greater):
 
 -   FAR &lt; 0.001%.
--   FRR without antispoofing or liveness detection &lt; 5%.
 -   Effective, real world FRR with antispoofing or liveness detection &lt;10%.
--   Antispoofing measures are a requirement.
+-   presentation attack defense measures are a requirement.
 
-Small Area sensors (a sensor matrix of less than 160x160 at a dpi of 500 or greater):
+Small Area sensors (a sensor matrix of less than 160x160 at a dpi of 320 or greater):
 
 -   FAR &lt; 0.002%.
--   FRR without antispoofing or liveness detection &lt; 5%.
 -   Effective, real world FRR with antispoofing or liveness detection &lt;10%.
--   Antispoofing measures are a requirement.
+-   Presentation attack defense measures are a requirement.
 
 Swipe sensors:
 
 -   FAR &lt; 0.002%.
--   FRR without antispoofing or liveness detection &lt; 5%.
 -   Effective, real world FRR with antispoofing or liveness detection &lt;10%.
 -   Antispoofing measures are a requirement.
 

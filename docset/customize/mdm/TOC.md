@@ -71,6 +71,8 @@
 #### [AppLocker XSD](applocker-xsd.md)
 ### [AssignedAccess CSP](assignedaccess-csp.md)
 #### [AssignedAccess DDF file](assignedaccess-ddf.md)
+### [BitLocker CSP](bitlocker-csp.md)
+#### [BitLocker DDF file](bitlocker-ddf-file.md)
 ### [BOOTSTRAP CSP](bootstrap-csp.md)
 ### [BrowserFavorite CSP](browserfavorite-csp.md)
 ### [CellularSettings CSP](cellularsettings-csp.md)

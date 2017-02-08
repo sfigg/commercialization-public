@@ -564,6 +564,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -867,22 +868,23 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
-	<li>Start/HideAppList</li>
-	<li>Start/HideChangeAccountSettings</li>
-	<li>Start/HideFrequentlyUsedApps</li>
-	<li>Start/HideHibernate</li>
-	<li>Start/HideLock</li>
-	<li>Start/HidePowerButton</li>
-	<li>Start/HideRecentJumplists</li>
-	<li>Start/HideRecentlyAddedApps</li>
-	<li>Start/HideRestart</li>
-	<li>Start/HideShutDown</li>
-	<li>Start/HideSignOut</li>
-	<li>Start/HideSleep</li>
-	<li>Start/HideSwitchAccount</li>
-	<li>Start/HideUserTile</li>
+<li>Start/HideAppList</li>
+<li>Start/HideChangeAccountSettings</li>
+<li>Start/HideFrequentlyUsedApps</li>
+<li>Start/HideHibernate</li>
+<li>Start/HideLock</li>
+<li>Start/HidePowerButton</li>
+<li>Start/HideRecentJumplists</li>
+<li>Start/HideRecentlyAddedApps</li>
+<li>Start/HideRestart</li>
+<li>Start/HideShutDown</li>
+<li>Start/HideSignOut</li>
+<li>Start/HideSleep</li>
+<li>Start/HideSwitchAccount</li>
+<li>Start/HideUserTile</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
-</td></tr>
+</td>
 </tr>
 </tbody>
 </table>
