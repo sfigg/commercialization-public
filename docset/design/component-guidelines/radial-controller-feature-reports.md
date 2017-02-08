@@ -31,7 +31,7 @@ Waveform Cutoff Time | Max time a Manual Trigger waveform can play before being 
 Waveform List usage represents a collection of the HID usages of supported waveforms, ordered using ordinals. The pre-defined haptics waveforms are defined in the HID specification. Windows supports implementing the following waveforms for a haptic feedback enabled device:
 
 Waveform | Description | Page | ID | Mandatory/Optional
----|
+---| --- | --- | --- | ---
 WAVEFORM_NONE| No-op. Should not impact the play state of ongoing waveforms. | 0x0E | 0x1001 | Mandatory
 WAVEFORM_STOP| Stops the playback of ongoing waveforms. | 0x0E | 0x1002 | Mandatory
 WAVEFORM_CLICK| Creates a short “click” feedback | 0x0E | 0x1003 | Mandatory
