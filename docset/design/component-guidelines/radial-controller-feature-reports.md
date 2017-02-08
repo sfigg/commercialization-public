@@ -16,7 +16,7 @@ If a Windows radial controller device supports haptic feedback, it can allow the
 The host uses the following usages (through the haptic feedback collection) to communicate the haptic feedback waveform support and allow the host to configure the haptic feedback on the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow automatic haptic feedback configuration to be supported.
 
 Member | Description | Page | ID | Mandatory/Optional
----|
+---| --- | --- | --- | ---
 Waveform List | Ordered list of haptic waveforms supported by the device | 0x0E | 0x10 | Mandatory
 Duration List | Ordered list of durations for waveforms in the Waveform List | 0x0E | 0x11 | Mandatory
 Auto Trigger | Waveform to fire automatically at device’s discretion | 0x0E | 0x20 | Mandatory
