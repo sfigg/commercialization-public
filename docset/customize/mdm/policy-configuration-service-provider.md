@@ -46,7 +46,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   Separate substring values by the Unicode &\#xF000; in the XML file.
 
-> **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
+> [!NOTE]
+> A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
@@ -69,13 +70,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 ## **Policy Tables**
 
-Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
+Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
 -   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
 -   [Policies supported by Windows Holographic for Business](#hololenspolicies) - Lists the policies that are supported in Windows Holographic for Business.
 -   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
-## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
+## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
 > [!IMPORTANT]
 > To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
@@ -3118,6 +3119,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-activehoursend">Update/ActiveHoursEnd</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -6562,6 +6574,14 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except ShiftJIS are filtered.
+
+<a href="" id="timelanguagesettings-allowset24hourclock"></a>**TimeLanguageSettings/AllowSet24HourClock**  
+<p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Locale default setting.
+-   1 (default) – Set 24 hour clock.
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 > [!NOTE]
