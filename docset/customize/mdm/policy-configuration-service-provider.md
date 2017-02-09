@@ -46,7 +46,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   Separate substring values by the Unicode &\#xF000; in the XML file.
 
-> **Note**  A query from a different caller could provide a different value as each caller could have different values for a named policy.
+> [!NOTE]
+> A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
 -   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
 -   Supported operations are Add, Get, Delete, and Replace.
@@ -69,13 +70,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 ## **Policy Tables**
 
-Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
+Some policies are only supported in either Windows 10 for desktop or Windows 10 Mobile. In addition, some policies also have a corresponding Group Policy. The following tables provide this information:
 
 -   [Table of Policies for Windows 10](#mainpolicytable) - Lists all policies for each SKU in Windows 10 . It also notes policies that can be set using Exchange Active Sync (EAS).
 -   [Policies supported by Windows Holographic for Business](#hololenspolicies) - Lists the policies that are supported in Windows Holographic for Business.
 -   [Policies supported by Microsoft Surface Hub](#surfacehubpolicies) - Lists the policies that are supported by Microsoft Surface Hub.
 
-## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
+## <a href="" id="mainpolicytable"></a>Table of Policies for Windows 10
 
 > [!IMPORTANT]
 > To navigate the table horizontally, click on the table and then use the left and right scroll keys on your keyboard or use the scroll bar at the bottom of the table.
@@ -391,6 +392,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#browser-allowaddressbardropdown">Browser/AllowAddressBarDropdown</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#browser-allowbrowser">Browser/AllowBrowser</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
@@ -479,6 +491,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#browser-allowsearchenginecustomization">Browser/AllowSearchEngineCustomization</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#browser-allowsearchsuggestionsinaddressbar">Browser/AllowSearchSuggestionsinAddressBar</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -500,6 +523,39 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#browser-clearbrowsingdataonexit">Browser/ClearBrowsingDataOnExit</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#browser-configureadditionalsearchengines">Browser/ConfigureAdditionalSearchEngines</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#browser-disablelockdownofstartpages">Browser/DisableLockdownOfStartPages</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>			
 	<tr>
 		<td style="vertical-align:top"><a href="#browser-enterprisemodesitelist">Browser/EnterpriseModeSiteList</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
@@ -545,6 +601,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#browser-preventfirstrunpage">Browser/PreventFirstRunPage</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#browser-preventsmartscreenpromptoverride">Browser/PreventSmartScreenPromptOverride</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -588,6 +655,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#browser-setdefaultsearchengine">Browser/SetDefaultSearchEngine</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>		
 	<tr>
 		<td style="vertical-align:top"><a href="#browser-showmessagewhenopeningsitesininternetexplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
@@ -1491,6 +1569,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>		
+	<tr>
 		<td style="vertical-align:top"><a href="#experience-allowtaskswitcher">Experience/AllowTaskSwitcher</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
@@ -1545,6 +1634,28 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#experience-allowwindowsspotlightonactioncenter">Experience/AllowWindowsSpotlightOnActionCenter</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#experience-allowwindowsspotlightwindowswelcomeexperience">Experience/AllowWindowsSpotlightWindowsWelcomeExperience</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>		
 	<tr>
 		<td style="vertical-align:top"><a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -2888,6 +2999,161 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#start-hideapplist">Start/HideAppList</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidechangeaccountsettings">Start/HideChangeAccountSettings</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidefrequentlyusedapps">Start/HideFrequentlyUsedApps</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidehibernate">Start/HideHibernate</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidelock">Start/HideLock</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p>
+		</td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidepowerbutton">Start/HidePowerButton</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hiderecentjumplists">Start/HideRecentJumplists</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hiderecentlyaddedapps">Start/HideRecentlyAddedApps</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hiderestart">Start/HideRestart</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hideshutdown">Start/HideShutDown</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidesignout">Start/HideSignOut</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hidesleep">Start/HideSleep</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hideswitchaccount">Start/HideSwitchAccount</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#start-hideusertile">Start/HideUserTile</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#start-startlayout">Start/StartLayout</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
@@ -3064,6 +3330,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#textinput-allowkeyboardtextsuggestions">TextInput/AllowKeyboardTextSuggestions </a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>			
+	<tr>
 		<td style="vertical-align:top"><a href="#textinput-allowlanguagefeaturesuninstall">TextInput/AllowLanguageFeaturesUninstall</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -3107,6 +3384,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#timelanguagesettings-allowset24hourclock">TimeLanguageSettings/AllowSet24HourClock</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-activehoursend">Update/ActiveHoursEnd</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -3436,8 +3724,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>
-	</tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 </table>
 
 
@@ -6102,12 +6389,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
 
-
 <p style="margin-left: 20px">Allows enterprise to turn on internal storage encryption.
-
-> [!IMPORTANT]
-> Bitlocker must be enabled on the device before using this policy.
-
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6117,7 +6399,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Most restricted value is 1.
 
 > [!IMPORTANT]
-> If encryption has been enabled, it cannot be turned off using this policy.
+> If encryption has been enabled, it cannot be turned off by using this policy.
 
 
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
@@ -6285,6 +6567,237 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   2 - Force a fullscreen size of Start.
 
 <p style="margin-left: 20px">If there is policy configuration conflict, the latest configuration request is applied to the device.
+
+<a href="" id="start-hideapplist"></a>**Start/HideAppList**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by collapsing or removing the all apps list.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – None.
+-   1 – Hide all apps list.
+-   2 - Hide all apps list, and Disable "Show app list in Start menu" in Settings app.
+-   3 - Hide all apps list, remove all apps button, and Disable "Show app list in Start menu" in Settings app.
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+-   1 - Enable policy and restart explorer.exe
+-   2a - If set to '1': Verify that the all apps list is collapsed, and that the Settings toggle is not grayed out.
+-   2b - If set to '2': Verify that the all apps list is collapsed, and that the Settings toggle is grayed out.
+-   2c - If set to '3': Verify that there is no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
+
+<a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
+
+<a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding most used apps.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable "Show most used apps" in the Settings app.
+2.   Use some apps to get them into the most used group in Start.
+3.   Enable policy.
+4.   Restart explorer.exe
+5.   Check that  "Show most used apps" Settings toggle is grayed out.
+6.   Check that most used apps do not appear in Start.
+
+<a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Laptop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Hibernate" is not available.
+
+> [!NOTE]
+> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
+
+<a href="" id="start-hidelock"></a>**Start/HideLock**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify "Lock" is not available.
+
+<a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding the Power button from appearing.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, and verify the power button is not available.
+
+<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
+2.   Pin Photos to the taskbar, and open some images in the photos app.
+3.   Right click the pinned photos app and verify that a jumplist of recently opened items pops up.
+4.   Toggle "Show recently opened items in Jump Lists on Start of the taskbar" in Settings to clear jump lists.
+5.   Enable policy.
+6.   Restart explorer.exe
+7.   Check that Settings toggle is grayed out.
+8.   Repeat Step 2.
+9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
+
+<a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding recently added apps.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable "Show recently added apps" in the Settings app.
+2.   Check if there are recently added apps in Start (if not, install some).
+3.   Enable policy.
+4.   Restart explorer.exe
+5.   Check that "Show recently added apps" Settings toggle is grayed out.
+6.   Check that recently added apps do not appear in Start.
+
+<a href="" id="start-hiderestart"></a>**Start/HideRestart**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
+
+<a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
+
+<a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify "Sign out" is not available.
+
+<a href="" id="start-hidesleep"></a>**Start/HideSleep**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
+
+<a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
+
+<a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
+> [!NOTE]
+> This policy requires reboot to take effect.
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding the user tile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Log off.
+3.   Log in, and verify that the user tile is gone from Start.
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 > [!IMPORTANT]
@@ -6542,6 +7055,25 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**  
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. 
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Disabled.
+-   1 (default) – Enabled.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<p style="margin-left: 20px">To validate that text prediction is disabled on Windows 10 for desktop, do the following:
+
+1.  Search for and launch the on-screen keyboard. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Use Text Prediction” setting is enabled from the options button.
+2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
+3.  Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
+
 <a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
 <p style="margin-left: 20px">This policy has been deprecated.
 
@@ -6594,6 +7126,14 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except ShiftJIS are filtered.
+
+<a href="" id="timelanguagesettings-allowset24hourclock"></a>**TimeLanguageSettings/AllowSet24HourClock**  
+<p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Locale default setting.
+-   1 (default) – Set 24 hour clock.
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 > [!NOTE]
@@ -6939,6 +7479,8 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
+> [!Important]  
+> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Enterprise.
 
 <p style="margin-left: 20px">Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premise MDMs that need to update devices that cannot connect to the Internet.
 
@@ -6968,6 +7510,7 @@ Example
 ```
 
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
+
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.

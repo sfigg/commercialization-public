@@ -517,7 +517,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>AllowTextSuggestions</li>
 <li>RequirePrinting</li>
-<li>AllowScreenMonitoring</li>
 </ul>
 </td>
 </tr>
@@ -550,7 +549,23 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
-</ul>
+<li>Start/HideAppList</li>
+<li>Start/HideChangeAccountSettings</li>
+<li>Start/HideFrequentlyUsedApps</li>
+<li>Start/HideHibernate</li>
+<li>Start/HideLock</li>
+<li>Start/HidePowerButton</li>
+<li>Start/HideRecentJumplists</li>
+<li>Start/HideRecentlyAddedApps</li>
+<li>Start/HideRestart</li>
+<li>Start/HideShutDown</li>
+<li>Start/HideSignOut</li>
+<li>Start/HideSleep</li>
+<li>Start/HideSwitchAccount</li>
+<li>Start/HideUserTile</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
+</ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -834,6 +849,58 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### February 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the following setting names:</p>
+<ul>
+<li>AllowScreenMonitoring - previously ScreenCaptureCapability</li>
+<li>RequirePrinting - previously PrintingCapability</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following statement to [Settings/EDPShowIcons](enterprisedataprotection-csp.md#settings-edpshowicons):</p><ul>
+<li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Start/HideAppList</li>
+<li>Start/HideChangeAccountSettings</li>
+<li>Start/HideFrequentlyUsedApps</li>
+<li>Start/HideHibernate</li>
+<li>Start/HideLock</li>
+<li>Start/HidePowerButton</li>
+<li>Start/HideRecentJumplists</li>
+<li>Start/HideRecentlyAddedApps</li>
+<li>Start/HideRestart</li>
+<li>Start/HideShutDown</li>
+<li>Start/HideSignOut</li>
+<li>Start/HideSleep</li>
+<li>Start/HideSwitchAccount</li>
+<li>Start/HideUserTile</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
+</ul>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### January 2017
 
