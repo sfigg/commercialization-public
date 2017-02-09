@@ -64,7 +64,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](p_unattend.enablestartmenu)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](Microsoft-Windows-Shell-Setup-enablestartmenu.md)</p></td>
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](p_unattend.appidorpath_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile7appidorpath) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](p_unattend.appidorpath_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile12appidorpath)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="odd">
@@ -161,7 +161,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Describes how partners can enable Messaging everywhere, which controls both messaging sync (backup and restore) and the cross-device messaging feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Dialer codes to launch diagnostic applications](p_phCustomization.dialer_codes_to_launch_diagnostic_applications)</p></td>
+<td><p>[Dialer codes to launch diagnostic applications](dialer-codes-to-launch-diagnostic-applications.md)</p></td>
 <td><p>Updated. Describes the new Windows 10, version 1607 functionality that you can configure to support different app types and behaviors.</p></td>
 </tr>
 </tbody>
