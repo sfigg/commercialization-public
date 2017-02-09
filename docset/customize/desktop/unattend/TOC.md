@@ -570,7 +570,7 @@
 ###### [InstallTo](microsoft-windows-setup-imageinstall-osimage-installto.md)
 ####### [DiskID](microsoft-windows-setup-imageinstall-osimage-installto-diskid.md)
 ####### [PartitionID](microsoft-windows-setup-imageinstall-osimage-installto-partitionid.md)
-###### [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installtoavailablepartition.md)
+###### [InstallToAvailablePartition](microsoft-windows-setup-imageinstall-osimage-installto-availablepartition.md)
 ###### [WillShowUI](microsoft-windows-setup-imageinstall-osimage-willshowui.md)
 #### [LogPath](microsoft-windows-setup-logpath.md)
 #### [PageFile](microsoft-windows-setup-pagefile.md)
@@ -915,7 +915,7 @@
 ###### [WideTile6](microsoft-windows-shell-setup-starttiles-widetiles-widetile6.md)
 ####### [AppId](microsoft-windows-shell-setup-starttiles-widetiles-widetile6-appid.md)
 ####### [FirstRunTask](microsoft-windows-shell-setup-starttiles-widetiles-widetile6-firstruntask.md)
-#### [StartPanelOff](microsoft-windows-shell-setup-startpaneloff.md)
+
 #### [TaskbarLinks](microsoft-windows-shell-setup-taskbarlinks.md)
 ##### [Link0](microsoft-windows-shell-setup-taskbarlinks-link0.md)
 ##### [Link1](microsoft-windows-shell-setup-taskbarlinks-link1.md)
