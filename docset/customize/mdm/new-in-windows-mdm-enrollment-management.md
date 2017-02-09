@@ -565,11 +565,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
-</ul>
-<p>Removed the following policy:</p>
-<ul>
-<li>TextInput/AllowLinguisticDataCollection</li>
-</ul>
+</ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -900,6 +897,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideUserTile</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>
 </tr>
 </tbody>
