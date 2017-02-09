@@ -3197,17 +3197,6 @@ Some policies are only supported in either Windows 10 for desktop or Windows 10 
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#update-autorestartnotificationstyle">Update/AutoRestartNotificationStyle</a></td>
-		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
-		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
-		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
-		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
-		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
-		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
-		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
-	<tr>
 		<td style="vertical-align:top"><a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
@@ -6629,6 +6618,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
+> [!NOTE]
+> The maximum difference from start time has been increased to 18 in Windows 10, version 1703.
+
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
 <p style="margin-left: 20px">The default is 17 (5 PM).
@@ -6649,7 +6641,10 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from start time.
+<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+
+> [!NOTE]
+> The maximum difference from end time has been increased to 18 in Windows 10, version 1703.
 
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -6737,18 +6732,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Supported values are 15, 30, 60, 120, and 240 (minutes).
 
 <p style="margin-left: 20px">The default value is 15 (minutes).
-
-<a href="" id="update-autorestartnotificationstyle"></a>**Update/AutoRestartNotificationStyle**  
-> [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
-
-
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the style used for auto-restart reminder notifications.
-
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   1 (default) – Full Screen.
--   2 – Partial Screen.
 
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 > [!NOTE]
@@ -6887,11 +6870,11 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline before a pending restart will automatically be executed outside of active hours.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed, within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
 
-<p style="margin-left: 20px">Supported values are 2-30 (days).
+<p style="margin-left: 20px">Supported values are 2-30 days.
 
-<p style="margin-left: 20px">The default value is 14 (days).
+<p style="margin-left: 20px">The default value is 0 days (not specified).
 
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 > [!NOTE]
@@ -6900,20 +6883,20 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
 
-<p style="margin-left: 20px">Supported values are 1-3 (days).
+<p style="margin-left: 20px">Supported values are 1-3 days.
 
-<p style="margin-left: 20px">The default value is 3 (days).
+<p style="margin-left: 20px">The default value is 3 days.
 
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the timing before transitioning from Auto-restart to Engaged restart.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-<p style="margin-left: 20px">Supported values are 2-30 (days).
+<p style="margin-left: 20px">Supported values are 2-30 days.
 
-<p style="margin-left: 20px">The default value is 7 (days).
+<p style="margin-left: 20px">The default value is 7 days.
 
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 > [!NOTE]
