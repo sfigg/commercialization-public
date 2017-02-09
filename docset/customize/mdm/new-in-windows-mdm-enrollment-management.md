@@ -529,6 +529,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
@@ -563,6 +564,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
@@ -880,6 +882,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -894,6 +897,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>

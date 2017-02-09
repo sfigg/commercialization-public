@@ -161,6 +161,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#accounts-domainnamesforemailsync">ApplicationDefaults/DefaultAssociationsConfiguration</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#applicationmanagement-allowalltrustedapps">ApplicationManagement/AllowAllTrustedApps</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -7007,7 +7018,12 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   false - No traffic to fs.microsoft.com and only locally-installed fonts are available.
 -   true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
 
-<p style="margin-left: 20px">If the policy is not configured, the component already falls back to checking a separate registry value. A manifest sets this registry value to false in server editions. On all other editions the value is not set and the default behavior is true.
+<p style="margin-left: 20px">This MDM setting corresponds to the EnableFontProviders Group Policy setting. If both the Group Policy and the MDM settings are configured, the group policy setting takes precedence. If neither is configured, the behavior depends on a DisableFontProviders registry value. In server editions, this registry value is set to 1 by default, so the default behavior is false (disabled). In all other editions, the registry value is not set by default, so the default behavior is true (enabled).
+
+<p style="margin-left: 20px">This setting is used by lower-level components for text display and fond handling and has not direct effect on web browsers, which may download web fonts used in web content.
+
+> [!Note]  
+> Reboot is required after setting the policy; alternatively you can stop and restart the FontCache service.
 
 <p style="margin-left: 20px">To verify if System/AllowFontProviders is set to true:  
 
