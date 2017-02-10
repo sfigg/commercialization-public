@@ -517,7 +517,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>AllowTextSuggestions</li>
 <li>RequirePrinting</li>
-<li>AllowScreenMonitoringy</li>
 </ul>
 </td>
 </tr>
@@ -530,6 +529,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
@@ -551,11 +551,24 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
-</ul>
-<p>Removed the following policy:</p>
-<ul>
-<li>TextInput/AllowLinguisticDataCollection</li>
-</ul>
+<li>Start/HideAppList</li>
+<li>Start/HideChangeAccountSettings</li>
+<li>Start/HideFrequentlyUsedApps</li>
+<li>Start/HideHibernate</li>
+<li>Start/HideLock</li>
+<li>Start/HidePowerButton</li>
+<li>Start/HideRecentJumplists</li>
+<li>Start/HideRecentlyAddedApps</li>
+<li>Start/HideRestart</li>
+<li>Start/HideShutDown</li>
+<li>Start/HideSignOut</li>
+<li>Start/HideSleep</li>
+<li>Start/HideSwitchAccount</li>
+<li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
+</ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -568,6 +581,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
@@ -872,12 +889,40 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
 <td style="vertical-align:top"><p>Added the following statement to [Settings/EDPShowIcons](enterprisedataprotection-csp.md#settings-edpshowicons):</p><ul>
-<li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li>
+<li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
+<li>Start/HideAppList</li>
+<li>Start/HideChangeAccountSettings</li>
+<li>Start/HideFrequentlyUsedApps</li>
+<li>Start/HideHibernate</li>
+<li>Start/HideLock</li>
+<li>Start/HidePowerButton</li>
+<li>Start/HideRecentJumplists</li>
+<li>Start/HideRecentlyAddedApps</li>
+<li>Start/HideRestart</li>
+<li>Start/HideShutDown</li>
+<li>Start/HideSignOut</li>
+<li>Start/HideSleep</li>
+<li>Start/HideSwitchAccount</li>
+<li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
+<li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
 </tbody>
-</table>### January 2017
+</table>
+
+### January 2017
 
 <table>
 <colgroup>

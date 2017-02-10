@@ -30,6 +30,7 @@
 ### [Continuum](design/device-experiences/continuum-phone.md)
 ### [Tablet mode](design/device-experiences/continuum.md)
 ### [Windows Hello](design/device-experiences/windows-hello.md)
+#### [Windows Hello and Companion Device Framework](design/device-experiences/windows-hello-companion-device-framework.md)
 #### [Windows Hello biometric requirements](design/device-experiences/biometric-requirements.md)
 #### [Windows Hello face authentication](design/device-experiences/windows-hello-face-authentication.md)
 #### [Windows Hello OEM and IHV app scenarios for Windows 10 Build 1511](design/device-experiences/windows-hello-oem-and-ihv-app-scenarios-for-windows-10-build-1511.md)

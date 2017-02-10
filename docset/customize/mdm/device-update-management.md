@@ -467,9 +467,11 @@ Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 The default value is 3.
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> [!Note]  
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise.  
 
- 
+> [!Important]  
+> Starting in Windows 10, version 1703 this policy is not supported Windows 10 Mobile Enteprise and IoT Enterprise.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premise MDMs that need to update devices that cannot connect to the Internet.
 
