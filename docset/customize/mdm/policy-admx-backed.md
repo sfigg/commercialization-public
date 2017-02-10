@@ -2008,7 +2008,7 @@ The Policy configuration service provider enables the enterprise to configure po
 
 
 <!-- ADMX-DESCRIPTIONS-START -->
-<a href="" id="activexcontrols-approvedinstallationsites "></a>**ActiveXControls/ApprovedInstallationSites**
+<a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**
 
 <p style="margin-left: 20px">This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL.</p>
 
