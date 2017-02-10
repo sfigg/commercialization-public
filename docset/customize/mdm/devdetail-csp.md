@@ -122,7 +122,7 @@ Supported operation is Get.
 <a href="" id="ext-microsoft-devicename"></a>**Ext/Microsoft/DeviceName**  
 Required. Contains the user-specified device name.
 
-Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation is not supported in the desktop. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name does not take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
+Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation is not supported in the desktop or IoT Core. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name does not take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
 
 Value type is string.
 
