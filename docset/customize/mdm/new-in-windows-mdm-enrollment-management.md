@@ -895,6 +895,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
+<li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
