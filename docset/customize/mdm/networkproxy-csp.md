@@ -11,6 +11,9 @@ MSHAttr:
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections.
 
+> [!Note]  
+> In Windows 10 Mobile, the NetworkProxy CSP only works in ethernet connections. Use the WiFi CSP to configure per-network proxy for Wi-Fi connections in mobile devices.
+
 How the settings work:  
 
 <ol>
