@@ -164,6 +164,7 @@ In **layoutmodification.xml**:
     <AppendOfficeSuite/>
     <AppendOfficeSuiteChoice Choice="Desktop2016" /> 
 </LayoutModificationTemplate>
+    ```
 
 2.  Save the LayoutModification.xml file.
 
