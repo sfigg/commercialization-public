@@ -516,8 +516,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following settings:</p>
 <ul>
 <li>AllowTextSuggestions</li>
-<li>PrintingCapability</li>
-<li>ScreenCaptureCapability</li>
+<li>RequirePrinting</li>
 </ul>
 </td>
 </tr>
@@ -530,6 +529,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
@@ -564,8 +564,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
-</ul>
+</ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -578,6 +580,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
@@ -865,9 +871,22 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
+<td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the following setting names:</p>
+<ul>
+<li>AllowScreenMonitoring - previously ScreenCaptureCapability</li>
+<li>RequirePrinting - previously PrintingCapability</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following statement to [Settings/EDPShowIcons](enterprisedataprotection-csp.md#settings-edpshowicons):</p><ul>
+<li>Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.</li></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
+<li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -882,9 +901,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 </ul>
+<p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
 </table>

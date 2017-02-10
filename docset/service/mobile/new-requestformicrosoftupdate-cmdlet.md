@@ -148,7 +148,9 @@ DESCRIPTION
 
 PARAMETERS
     -TypeOfProduct <String>
-        The product targeted for the update.The product must be one of WindowsPhoneBlue, WindowsPhoneThreshold, WindowsHolographicThreshold.
+        The product targeted for the update.The product must be one of WindowsPhoneThreshold, WindowsHolographicThreshold, or WindowsPhoneBlue.
+
+        **Note** For all Windows 10 submissions, use WindowsPhoneThreshold.
 
         Required?                    true
         Position?                    2
