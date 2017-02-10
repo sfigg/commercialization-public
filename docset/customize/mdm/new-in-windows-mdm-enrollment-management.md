@@ -582,6 +582,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[DeveloperSetup CSP](developersetup-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
 </tbody>
 </table> 
 
@@ -902,6 +906,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 </tbody>
 </table>
