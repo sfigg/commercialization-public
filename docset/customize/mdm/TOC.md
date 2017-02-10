@@ -146,6 +146,7 @@
 ### [PassportForWork CSP](passportforwork-csp.md)
 #### [PassportForWork DDF](passportforwork-ddf.md)
 ### [Policy CSP](policy-configuration-service-provider.md)
+### [Policy CSP: ADMX-backed policies](policy-admx-backed.md)
 #### [Policy DDF file](policy-ddf-file.md)
 #### [ApplicationRestrictions XSD](applicationrestrictions-xsd.md)
 ### [PolicyManager CSP](policymanager-csp.md)
