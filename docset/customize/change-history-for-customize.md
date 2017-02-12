@@ -195,7 +195,7 @@ The following tables record the changes that were made in the **Customize** sect
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[Emergency notifications](emergency-notifications.md)</p></td>
+<td><p>[Emergency notifications](\mobile\mcsf\emergency-notifications.md)</p></td>
 <td><p>Updated. Added new settings and information for customizing Taiwan Alerts.</p></td>
 </tr>
 </tbody>
