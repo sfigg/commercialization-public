@@ -567,6 +567,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideUserTile</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
@@ -916,6 +924,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideUserTile</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>

@@ -3440,6 +3440,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#update-activehoursmaxrange">Update/ActiveHoursMaxRange</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#update-activehoursstart">Update/ActiveHoursStart</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -3495,6 +3506,28 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -3549,6 +3582,39 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -3637,6 +3703,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#update-updateserviceurl">Update/UpdateServiceUrl</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
@@ -7360,16 +7437,33 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
+> [!NOTE]
+> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
+
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
 <p style="margin-left: 20px">The default is 17 (5 PM).
+
+<a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
+
+<p style="margin-left: 20px">Supported values are 8-18.
+
+<p style="margin-left: 20px">The default value is 18 (hours).
 
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from start time.
+<p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+
+> [!NOTE]
+> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
 
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -7446,6 +7540,29 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
+
+<a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 15, 30, 60, 120, and 240 (minutes).
+
+<p style="margin-left: 20px">The default value is 15 (minutes).
+
+<a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   1 (default) – Auto Dismissal.
+-   2 – User Dismissal.
 
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 > [!NOTE]
@@ -7567,6 +7684,39 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
+<a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
+
+<p style="margin-left: 20px">Supported values are 2-30 days.
+
+<p style="margin-left: 20px">The default value is 0 days (not specified).
+
+<a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 1-3 days.
+
+<p style="margin-left: 20px">The default value is 3 days.
+
+<a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
+
+<p style="margin-left: 20px">Supported values are 2-30 days.
+
+<p style="margin-left: 20px">The default value is 7 days.
+
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -7656,6 +7806,28 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 – Not configured. The device installs all applicable updates.
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
+<a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
+
+<p style="margin-left: 20px">Supported values are 15, 30, or 60 (minutes).
+
+<p style="margin-left: 20px">The default value is 15 (minutes).
+
+<a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
+
+<p style="margin-left: 20px">Supported values are 2, 4, 8, 12, or 24 (hours).
+
+<p style="margin-left: 20px">The default value is 4 (hours).
+
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -7692,6 +7864,18 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM.
 
 <p style="margin-left: 20px">The default value is 3.
+
+<a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Enabled
+-   1 – Disabled
 
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 > [!NOTE]
