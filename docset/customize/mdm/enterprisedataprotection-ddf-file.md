@@ -10,7 +10,13 @@ ms.assetid: C6427C52-76F9-4EE0-98F9-DE278529D459
 # EnterpriseDataProtection DDF file
 
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
+
 The following topic shows the OMA DM device description framework (DDF) for the EnterpriseDataProtection configuration service provider.
+
+> [!Important]  
+> Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.
 
 You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
 
@@ -108,29 +114,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
               </DFType>
             </DFProperties>
           </Node>
-          <Node>
-            <NodeName>AllowUserDecryption</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Add />
-                <Delete />
-                <Replace />
-              </AccessType>
-              <DFFormat>
-                <int />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Dynamic />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
+          
           <Node>
             <NodeName>RequireProtectionUnderLockConfig</NodeName>
             <DFProperties>

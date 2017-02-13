@@ -40,7 +40,7 @@ See the following sections for more information about what you can do to customi
 <td><p>Read about what topics have been created, updated, or deleted for Windows 10, build 1607.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for Windows desktop](customizations-for-windows-10-for-desktop-editions--home--pro--and-enterprise-.md)</p></td>
+<td><p>[Customizations for desktop devices](https://msdn.microsoft.com/library/windows/hardware/mt481437)</p></td>
 <td><p>Learn which framework best meets your needs if you're customizing Windows 10 for desktop editions.</p>
 <p>This section includes topics describing key tasks, as well as the reference for [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445) and [Unattend framework](customize-using-the-legacy-desktop-framework.md) settings.</p></td>
 </tr>
@@ -49,7 +49,7 @@ See the following sections for more information about what you can do to customi
 <td><p>Learn about the customizations available to you if you are providing a controlled and specialized experience on a Windows device running Windows 10 Enterprise.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Customizations for mobile devices](customizations-for-windows-10-mobile.md)</p></td>
+<td><p>[Customizations for mobile](https://msdn.microsoft.com/en-us/library/windows/hardware/mt481438)</p></td>
 <td><p>Learn about the capabilities that are available in Windows 10 Mobile.</p>
 <p>The additional topics in this section help with key tasks, as well as providing reference for the [mobile MCSF framework](p_phCustomization.Provisioning_and_customization).</p></td>
 </tr><tr class="even">
