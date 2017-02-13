@@ -161,7 +161,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Describes how partners can enable Messaging everywhere, which controls both messaging sync (backup and restore) and the cross-device messaging feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Dialer codes to launch diagnostic applications](dialer-codes-to-launch-diagnostic-applications.md)</p></td>
+<td><p>[Dialer codes to launch diagnostic applications](mobile/mcsf/dialer-codes-to-launch-diagnostic-applications.md)</p></td>
 <td><p>Updated. Describes the new Windows 10, version 1607 functionality that you can configure to support different app types and behaviors.</p></td>
 </tr>
 </tbody>
