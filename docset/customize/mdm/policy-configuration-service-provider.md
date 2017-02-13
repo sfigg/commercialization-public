@@ -4482,7 +4482,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
-<p style="margin-left: 20px">Specifies whether to clear browsing data on exiting Microsoft Edge.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to clear browsing data on exiting Microsoft Edge.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

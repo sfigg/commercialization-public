@@ -12,7 +12,7 @@ ms.assetid: D308885E-F393-419F-A333-528E5315CBDA
 
 This topic provides information about what's new in Windows customizations across all Windows 10 devices.
 
-For more information about Windows customizations, see [Customize](customize-portal.md).
+For more information about Windows customizations, see [Customize](index.md).
 
 ## What's new in customizations for in the next major update to Windows 10
 
