@@ -9,6 +9,9 @@ MSHAttr:
 # NetworkProxy CSP
 
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.  
+
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections.
 
 > [!Note]  
