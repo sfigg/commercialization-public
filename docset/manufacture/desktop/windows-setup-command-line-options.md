@@ -318,7 +318,7 @@ setup /netdebug:hostip=10.125.4.86,port=50000,key=dont.use.previous.keys,buspara
 <pre class="syntax" space="preserve"><code>Setup /telemetry disable</code></pre></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/TempDrive</strong><em>&lt;drive_letter&gt;</em></p></td>
+<td align="left"><p><strong>/TempDrive</strong><em> &lt;drive_letter&gt;</em></p></td>
 <td align="left"><p>Instructs Windows Setup to put temporary installation files on the specified partition. For an upgrade, the <strong>/tempdrive</strong> option affects only the placement of temporary files. The operating system is upgraded in the partition from which you run the Setup.exe file.</p><p>The /tempdrive parameter is available in Windows 10, version 1607, but it is not available in earlier versions of Windows 10.</p>
 <p><em>&lt;drive_letter&gt;</em> specifies the partition to copy installation files to during Windows Setup. For example:</p>
 <pre class="syntax" space="preserve"><code>Setup /tempdrive H</code></pre></td>
