@@ -34,7 +34,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Starting in Windows 10, version 1607, you can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Set dark mode](set-dark-mode.md)</p></td>
+<td><p>[Set dark mode](desktop/set-dark-mode.md)</p></td>
 <td><p>Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](Microsoft-Windows-Shell-Setup-enablestartmenu.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](desktop/unattend/Microsoft-Windows-RemoteAssistance-Exe-fenablechatcontrol.md)</p></td>
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
@@ -76,28 +76,28 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](p_unattend.squareordesktoptile7_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile7) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](p_unattend.squareordesktoptile12_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](p_unattend.firstruntask_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile7firstruntask) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](p_unattend.firstruntask_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile12firstruntask)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-firstruntask.md) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](p_unattend.squareordesktoptile7) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](p_unattend.squareordesktoptile12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12</p>
-<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](p_unattend.regionaloverrides_win8_microsoft_windows_shell_setupstarttilesregionaloverrides).</p></td>
+<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](p_unattend.appidorpath) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](p_unattend.appidorpath_12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](p_unattend.firstruntask_7) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](p_unattend.firstruntask_12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-firstruntask.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="odd">
@@ -195,7 +195,7 @@ The following tables record the changes that were made in the **Customize** sect
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[Emergency notifications](\mobile\mcsf\emergency-notifications.md)</p></td>
+<td><p>[Emergency notifications](mobile/mcsf/emergency-notifications.md)</p></td>
 <td><p>Updated. Added new settings and information for customizing Taiwan Alerts.</p></td>
 </tr>
 </tbody>
@@ -230,7 +230,7 @@ The following tables record the changes that were made in the **Customize** sect
 </tr>
 <tr class="odd">
 <td><p>Windows Provisioning: [AutoBrightness](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147021.aspx), [ABSRangeMilliLuxMapping](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147023.aspx), [ABSPercentIntensityMapping](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147022.aspx)</p>
-<p>MCSF: [Auto brightness](auto-brightness.md)</p></td>
+<p>MCSF: [Auto brightness](mobile/mcsf/auto-brightness.md)</p></td>
 <td><p>Updated the description of the Values section.</p></td>
 </tr>
 </tbody>
@@ -313,7 +313,7 @@ The following tables record the changes that were made in the **Customize** sect
 <tbody>
 <tr class="odd">
 <td><p>[AssignedAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/mt661613.aspx) settings</p></td>
-<td><p>New. Describes settings related to [assigned access](assigned-access.md), which you can use to set up single use devices.</p></td>
+<td><p>New. Describes settings related to [assigned access](enterprise/assigned-access.md), which you can use to set up single use devices.</p></td>
 </tr>
 <tr class="even">
 <td><p>[ConnectivityProfiles](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219705.aspx) settings</p></td>
