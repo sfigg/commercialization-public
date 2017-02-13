@@ -6761,7 +6761,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by collapsing or removing the all apps list.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by collapsing or removing the all apps list.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6779,7 +6779,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6795,7 +6795,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding most used apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6813,7 +6813,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6830,7 +6830,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6846,7 +6846,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding the Power button from appearing.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6862,7 +6862,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6885,7 +6885,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding recently added apps.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6903,7 +6903,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6917,7 +6917,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6931,7 +6931,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6945,7 +6945,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6959,7 +6959,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6975,7 +6975,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by hiding the user tile.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6990,7 +6990,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
-<p style="margin-left: 20px">Allows IT Admins to configure Start by disabling pinning and unpinning on the taskbar.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by disabling pinning and unpinning on the taskbar.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -7007,9 +7007,10 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 > [!IMPORTANT]
-> This node is set on a per-user and per-device basis and must be accessed using the following paths:
+> This node is set on a per-user basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
+> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now be set on a per-device basis using the following paths:
 > -   **./Device/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./Device/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
@@ -7827,12 +7828,18 @@ Example
 -   1 (default) -allow app suggestions.
 
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703.  This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
 
 <p style="margin-left: 20px">Value type is bool. The following list shows the supported values:
 
 -   0 (default) - Diabled (visible).
 -   1 - Enabled (hidden).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Restart the machine.
+3.   Verify that the Switch User interface is hidden when attempting to log on.
 
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
