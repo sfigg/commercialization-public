@@ -3165,6 +3165,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#start-nopinningtotaskbar">Start/NoPinningToTaskbar</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#start-startlayout">Start/StartLayout</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Pro</p></td>
@@ -3721,6 +3732,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><p></p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
@@ -6966,11 +6988,30 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 2.   Log off.
 3.   Log in, and verify that the user tile is gone from Start.
 
+<a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
+
+<p style="margin-left: 20px">Allows IT Admins to configure Start by disabling pinning and unpinning on the taskbar.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (pinning enabled).
+-   1 - True (pinning disabled).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy.
+2.   Right click on a program pinned to taskbar.
+3.   Verify that "Unpin from taskbar" menu does not show.
+4.   Open Start menu and right click on one of the app list icons.
+5.   Verify that More->Pin to taskbar menu does not show.
+
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 > [!IMPORTANT]
-> This node is set on a per-user basis and must be accessed using the following paths:
+> This node is set on a per-user and per-device basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
+> -   **./Device/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
+> -   **./Device/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
 
 <p style="margin-left: 20px">Allows you to override the default Start layout and prevents the user from changing it.
@@ -7784,6 +7825,14 @@ Example
 
 -   0 - app suggestions are not allowed.
 -   1 (default) -allow app suggestions.
+
+<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703.  This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+
+<p style="margin-left: 20px">Value type is bool. The following list shows the supported values:
+
+-   0 (default) - Diabled (visible).
+-   1 - Enabled (hidden).
 
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
