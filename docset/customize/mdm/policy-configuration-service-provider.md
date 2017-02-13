@@ -689,6 +689,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#camera-allowcamera">Camera/AllowCamera</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -4650,7 +4661,28 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
+<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.
+
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – Synchronization is off.
+-   1 – Synchronization is on.
+
+<p style="margin-left: 20px">To verify that favorites are in synchronized between Internet Explorer and Microsoft Edge:
+
+<ol>
+<li>Open Internet Explorer and add some favorites.
+<li>Open Microsoft Edge, then select Hub > Favorites.
+<li>Verify that the favorites added to Internet Explorer show up in the favorites list in Microsoft Edge.
+</ol>
+
 <a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**  
+
 <p style="margin-left: 20px">Disables or enables the camera.
 
 <p style="margin-left: 20px">The following list shows the supported values:
