@@ -7002,7 +7002,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable policy.
 2.   Right click on a program pinned to taskbar.
 3.   Verify that "Unpin from taskbar" menu does not show.
-4.   Open Start menu and right click on one of the app list icons.
+4.   Open Start and right click on one of the app list icons.
 5.   Verify that More->Pin to taskbar menu does not show.
 
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
@@ -7830,7 +7830,7 @@ Example
 -   1 (default) -allow app suggestions.
 
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch User interface in the Logon UI, Start, and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, Start, and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
 
 <p style="margin-left: 20px">Value type is bool. The following list shows the supported values:
 
