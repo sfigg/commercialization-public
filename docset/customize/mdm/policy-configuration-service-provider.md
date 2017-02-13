@@ -7010,8 +7010,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > This node is set on a per-user basis and must be accessed using the following paths:
 > -   **./User/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./User/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
-> 
-> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now be set on a per-device basis using the following paths:
+>
+>
+> Added in Windows 10 version 1703: In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis using the following paths:
 > -   **./Device/Vendor/MSFT/Policy/Config/Start/StartLayout** to configure the policy.
 > -   **./Device/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
