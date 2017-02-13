@@ -61,7 +61,7 @@ The following command-line options are available for Windows Setup. Beginning w
 
 \[**/Telemetry** {**Enable** | **Disable**}\]
 
-\[**/TempDrive***&lt;drive_letter&gt;*\]
+\[**/TempDrive** *&lt;drive_letter&gt;*\]
 
 \[**/unattend:***&lt;answer\_file&gt;*\]
 
