@@ -42,7 +42,7 @@ A string path to the resulting output zip file. If this parameter does not conta
 <span id="-TypeOfProduct"></span><span id="-typeofproduct"></span><span id="-TYPEOFPRODUCT"></span>*-TypeOfProduct*  
 An optional parameter that specifies the target product of the firmware submission. The product must be one of WindowsPhoneBlue, WindowsPhoneThreshold and WindowsIoTCoreThreshold. Default is WindowsPhoneBlue.
 
-**Note**  Product values may be added or removed periodically.
+**Note** For all Windows 10 submissions, use WindowsPhoneThreshold.
 
  
 
@@ -133,6 +133,8 @@ PARAMETERS
         An optional parameter that specifies the target product of the
         firmware submission. The product must be one of WindowsPhoneBlue and
         WindowsPhoneThreshold. Default is WindowsPhoneBlue.
+
+        **Note** For all Windows 10 submissions, use WindowsPhoneThreshold.
 
         Required?                    false
         Position?                    0
