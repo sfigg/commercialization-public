@@ -92,17 +92,17 @@ MAM on Windows support the following CSPs. All other CSPs will be blocked. Note 
 - [WiFi CSP](wifi-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM 
 
 
-Device lock policies and EAS
+## Device lock policies and EAS
 
 MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the [DeviceLock/MaxDevicePasswordFailedAttempts](policy-configuration-service-provider.md#devicelock-maxdevicepasswordfailedattempts) and [DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider.md#devicelock-maxinactivitytimedevicelock) policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
 
 We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
 
 <ol>
-<li>When EAS policies are sent to a device that already has MAM policies, Windows evaluates whether the existing MAM policies are compliant with the configured EAS policies and reports compliance to EAS:</li><ol>
+<li>When EAS policies are sent to a device that already has MAM policies, Windows evaluates whether the existing MAM policies are compliant with the configured EAS policies and reports compliance to EAS:</li><ul>
 <li>If the device is found to be compliant, EAS will report compliance to the server to allow mail to sync. MAM supports mandatory EAS policies only. Checking EAS compliance does not require device admin rights.</li>
 <li>If the device is found to be non-compliant, EAS will enforce its own policies to the device and the resultant set of policies will be a superset of both. Applying EAS policies to the device requires admin rights.</li>
-</ol>
+</ul>
 <li>If a device that already has EAS policies is enrolled to MAM, the device will have both sets of policies: MAM, EAS, and the resultant set of policies will be a superset of both.</li>
 </ol>
 
