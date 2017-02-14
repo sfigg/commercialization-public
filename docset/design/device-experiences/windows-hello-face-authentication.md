@@ -47,7 +47,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 ### How it works
 
-The Windows Hello face recognition engine consists of four distinct steps that allowWindows to understand who is in front of the sensor:
+The Windows Hello face recognition engine consists of four distinct steps that allow Windows to understand who is in front of the sensor:
 
 1.  **Find the face and discover landmarks**
 
