@@ -530,6 +530,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following new policies: </p>
 <ul>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
+<li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
@@ -566,6 +567,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideUserTile</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td></tr>
@@ -585,6 +594,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr class="even">
 <td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
 </tr>
 </tbody>
 </table> 
@@ -870,6 +883,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policy for Windows 10, version 1703:</p> 
+<ul>
+<li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+</ul>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the following setting names:</p>
@@ -887,6 +907,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1703:</p> 
 <ul>
 <li>ApplicationDefaults/DefaultAssociationsConfiguration</li>
+<li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -903,6 +924,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideUserTile</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartNotificationSchedule</li>
+<li>Update/AutoRestartNotificationStyle</li>
+<li>Update/AutoRestartRequiredNotificationDismissal</li>
+<li>Update/EngagedRestartDeadline</li>
+<li>Update/EngagedRestartSnoozeSchedule</li>
+<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/SetAutoRestartNotificationDisable</li>
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 </td>
@@ -910,6 +939,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[NetworkProxy CSP](networkproxy-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
 </tr>
 </tbody>
 </table>
