@@ -30,11 +30,11 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Customize the taskbar](p_customize_desktop.customize_the_taskbar)</p></td>
+<td><p>[Customize the taskbar](customize-the-taskbar.md)</p></td>
 <td><p>New. Starting in Windows 10, version 1607, you can pin up to three additional apps to the taskbar by adding a taskbar layout modification file, for example, TaskbarLayoutModification.xml. You can specify different taskbar configurations based on SKU, device locale, or region.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Set dark theme](p_customize_desktop.set_dark_theme)</p></td>
+<td><p>[Set dark mode](desktop/set-dark-mode.md)</p></td>
 <td><p>Windows 10, build 1607 exposes a new personalization setting for end users, allowing them to express preference whether to see applications which support the setting in a dark or light mode.</p></td>
 </tr>
 </tbody>
@@ -64,11 +64,11 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](Microsoft-Windows-Shell-Setup-enablestartmenu.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-EnableStartMenu](desktop/unattend/Microsoft-Windows-RemoteAssistance-Exe-fenablechatcontrol.md)</p></td>
 <td><p>New. Specifies whether the Start menu is enabled and users can click on it.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](p_icd_settings.shell_desktopoptimizations_gotodesktoponsignin)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-DesktopOptimization-GoToDesktopOnSignIn](https://msdn.microsoft.com/en-us/library/windows/hardware/dn965874.aspx)</p></td>
 <td><p>New. Specifies to go to the desktop instead of Start Screen when signing in or when all the apps on a screen are closed.</p></td>
 </tr>
 <tr class="even">
@@ -76,32 +76,32 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Shows Window Store apps on taskbar.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](p_unattend.squareordesktoptile7_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile7) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](p_unattend.squareordesktoptile12_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile7](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareOrDesktopTile12](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareTiles-SquareorDestopTile12-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](p_unattend.firstruntask_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile7firstruntask) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](p_unattend.firstruntask_win8_microsoft_windows_shell_setupstarttilessquaretilessquareordesktoptile12firstruntask)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile7-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-firstruntask.md) through [Microsoft-Windows-Shell-Setup-StartTiles-SquareTiles-SquareOrDesktopTile12-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](p_unattend.squareordesktoptile7) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](p_unattend.squareordesktoptile12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile7](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile7.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareOrDesktopTile12](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides-regionaloverride-squaretiles-squareordesktoptile12.md)</p></td>
 <td><p>Specifies which application appears as a square tile on the <strong>Start</strong> menu, in the given position 7-12</p>
-<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](p_unattend.regionaloverrides_win8_microsoft_windows_shell_setupstarttilesregionaloverrides).</p></td>
+<p>If the region of the current user account is among those in the Start Tile regional overrides, you can use this setting. For more information, see [RegionalOverrides](desktop/unattend/microsoft-windows-shell-setup-starttiles-regionaloverrides.md).</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](p_unattend.appidorpath) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](p_unattend.appidorpath_12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-appidorpath.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-AppIdOrPath](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-appidorpath.md)</p></td>
 <td><p>Specifies the <code>AppID</code> of the Windows Store apps, or the path to the desktop apps that appear as square tiles on the <strong>Start</strong> screen.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](p_unattend.firstruntask_7) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](p_unattend.firstruntask_12)</p></td>
+<td><p>[Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile7-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile7-firstruntask.md) thru [Microsoft-Windows-Shell-Setup-StartTiles-RegionalOverrides-RegionalOveride-SquareTiles-SquareTiles-SquareorDesktopTile12-FirstRunTask](desktop/unattend/microsoft-windows-shell-setup-starttiles-squaretiles-squareordesktoptile12-firstruntask.md)</p></td>
 <td><p>Specifies the background task that is active, or live, by default for a tile when a user signs in to Windows for the first time.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[LidNotificationsAreReliable](p_customize_converged.lidnotificationsarereliable)</p></td>
+<td><p>[LidNotificationsAreReliable](https://msdn.microsoft.com/en-us/library/windows/hardware/mt709029.aspx)</p></td>
 <td><p>Updated to clarify what gets suppressed when the setting is enabled.</p></td>
 </tr>
 <tr class="even">
@@ -161,7 +161,7 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Describes how partners can enable Messaging everywhere, which controls both messaging sync (backup and restore) and the cross-device messaging feature.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Dialer codes to launch diagnostic applications](dialer-codes-to-launch-diagnostic-applications.md)</p></td>
+<td><p>[Dialer codes to launch diagnostic applications](mobile/mcsf/dialer-codes-to-launch-diagnostic-applications.md)</p></td>
 <td><p>Updated. Describes the new Windows 10, version 1607 functionality that you can configure to support different app types and behaviors.</p></td>
 </tr>
 </tbody>
@@ -187,15 +187,15 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Adaptive hibernate](p_customize_converged.adaptive_hibernate)</p></td>
+<td><p>[Adaptive hibernate](https://msdn.microsoft.com/en-us/library/windows/hardware/mt732711.aspx)</p></td>
 <td><p>New. Describes how to configure the adaptive hibernate settings for Windows 10, version 1607. Also added individual settings topics for:</p>
 <ul>
-<li>[StandbyBudgetPercent](p_customize_converged.standbybudgetpercent)</li>
-<li>[StandbyReserveTime](p_customize_converged.standbyreservetime)</li>
+<li>[StandbyBudgetPercent](https://msdn.microsoft.com/en-us/library/windows/hardware/mt732876.aspx)</li>
+<li>[StandbyReserveTime](https://msdn.microsoft.com/en-us/library/windows/hardware/mt732878.aspx)</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>[Emergency notifications](p_phCustomization.emergency_notifications)</p></td>
+<td><p>[Emergency notifications](mobile/mcsf/emergency-notifications.md)</p></td>
 <td><p>Updated. Added new settings and information for customizing Taiwan Alerts.</p></td>
 </tr>
 </tbody>
@@ -221,7 +221,7 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[LidNotificationsAreReliable](p_customize_converged.lidnotificationsarereliable)</p></td>
+<td><p>[LidNotificationsAreReliable](https://msdn.microsoft.com/en-us/library/windows/hardware/mt709029(v=vs.85).aspx)</p></td>
 <td><p>New. Use to notify the OS whether the platform guarantees that lid notifications are sent whenever the lid is opened or closed.</p></td>
 </tr>
 <tr class="even">
@@ -229,8 +229,8 @@ The following tables record the changes that were made in the **Customize** sect
 <td><p>New. Specifies the action to take when the system lid is opened.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Windows Provisioning: [AutoBrightness](p_icd_settings.autobrightness), [ABSRangeMilliLuxMapping](p_icd_settings.autobrightness_absrangemilliluxmapping), [ABSPercentIntensityMapping](p_icd_settings.autobrightness_abspercentintensitymapping)</p>
-<p>MCSF: [Auto brightness](p_phCustomization.auto_brightness)</p></td>
+<td><p>Windows Provisioning: [AutoBrightness](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147021.aspx), [ABSRangeMilliLuxMapping](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147023.aspx), [ABSPercentIntensityMapping](https://msdn.microsoft.com/en-us/library/windows/hardware/mt147022.aspx)</p>
+<p>MCSF: [Auto brightness](mobile/mcsf/auto-brightness.md)</p></td>
 <td><p>Updated the description of the Values section.</p></td>
 </tr>
 </tbody>
@@ -256,7 +256,7 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Uninstall a provisioning package](p_customize_converged.uninstall_a_provisioning_package)</p></td>
+<td><p>[Uninstall a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt707942.aspx)</p></td>
 <td><p>New. Describes which settings are reverted when a provisioning package is uninstalled.</p></td>
 </tr>
 </tbody>
@@ -282,11 +282,11 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ProvisioningCommands](p_icd_settings.provisioningcommands)</p></td>
-<td><p>New. Describes the new settings used to run scripts and commands during provisioning. For an example using this setting, see [Install a Win32 app using a provisioning package](p_customize_converged.install_a_win32_app_using_a_provisioning_package).</p></td>
+<td><p>[ProvisioningCommands](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703637.aspx)</p></td>
+<td><p>New. Describes the new settings used to run scripts and commands during provisioning. For an example using this setting, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295.aspx).</p></td>
 </tr>
 <tr class="even">
-<td><p>[Install a Win32 app using a provisioning package](p_customize_converged.install_a_win32_app_using_a_provisioning_package)</p></td>
+<td><p>[Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295.aspx)</p></td>
 <td><p>New. This topic describes how to install Win32 applications using a provisioning package, either by adding to an image to be installed at OOBE, or to be installed on a running system for testing purposes.</p></td>
 </tr>
 </tbody>
@@ -312,12 +312,12 @@ The following tables record the changes that were made in the **Customize** sect
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AssignedAccess](p_icd_settings.assignedaccess) settings</p></td>
-<td><p>New. Describes settings related to [assigned access](p_enterprise_customizations.assigned_access), which you can use to set up single use devices.</p></td>
+<td><p>[AssignedAccess](https://msdn.microsoft.com/en-us/library/windows/hardware/mt661613.aspx) settings</p></td>
+<td><p>New. Describes settings related to [assigned access](enterprise/assigned-access.md), which you can use to set up single use devices.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ConnectivityProfiles](p_icd_settings.connectivityprofiles) settings</p></td>
-<td><p>New. Describes settings related to connectivity, including [Exchange](p_icd_settings.connectivityprofiles_exchange), [WiFiSense](p_icd_settings.connectivityprofiles_wifisense), and [VPN](p_icd_settings.connectivityprofiles_vpn).</p></td>
+<td><p>[ConnectivityProfiles](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219705.aspx) settings</p></td>
+<td><p>New. Describes settings related to connectivity, including [Exchange](https://msdn.microsoft.com/en-us/library/windows/hardware/mt764003.aspx), [WiFiSense](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219706.aspx), and [VPN](p_icd_settings.connectivityprofiles_vpn).</p></td>
 </tr>
 </tbody>
 </table>
