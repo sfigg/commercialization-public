@@ -206,7 +206,12 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 <li><p>.NET Framework COM Interoperability</p></li>
 <li><p>.NET Framework Cryptography Model</p></li>
 </ul>
-<p><strong>Dependencies</strong>: Install <strong>WinPE-WMI</strong> before you install <strong>WinPE-NetFX</strong>.</p></td>
+<p><strong>Dependencies</strong>: 
+<ul>
+<li><p>Install <strong>WinPE-WMI</strong> before you install <strong>WinPE-NetFX</strong>.</p>
+<li><p>Install <strong>WinPE-HTA</strong> to enable limited WPF support.</p>
+<ul>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><p>Network/WinPE-Dot3Svc</p></td>
