@@ -70,31 +70,31 @@ Here is an example provisioning XML for MAM enrollment.
 </wap-provisioningdoc> 
 ```
 
+Since the [Poll](dmclient-csp.md#provider-providerid-poll) node isn’t provided above, the device would default to once every 24 hours.
+
 ## Supported Configuration Service Providers (CSPs)
 
 MAM on Windows support the following CSPs. All other CSPs will be blocked. Note the list may change later based on customer feedback.
 
-<ol>
-<li>AppLocker CSP for configuration of WIP enterprise allowed apps</li>
-<li>ClientCertificateInstall CSP for installing  VPN and Wi-Fi certs</li>
-<li>DevDetail CSP</li>
-<li>DeviceStatus CSP required for Conditional Access support (starting with Windows 10, version 1703)</li>
-<li>DevInfo CSP</li>
-<li>DMAcc CSP</li>
-<li>DMClient CSP for polling schedules configuration and MDM discovery URL</li>
-<li>EnterpriseDataProtection CSP has WIP policies</li>
-<li>Health Attestation CSP required for Conditional Access support (starting with Windows 10, version 1703)</li>
-<li>PasswordForWork CSP for Windows Hello for Business PIN management</li>
-<li>Policy CSP specifically for NetworkIsolation and DeviceLock areas</li>
-<li>Reporting CSP for retrieving WIP logs</li>
-<li>RootCaTrustedCertificates CSP</li>
-<li>VPNv2 CSP should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM</li>
-<li>WiFi CSP should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM </li>
-</ol>
+- [AppLocker CSP](applocker-csp.md) for configuration of WIP enterprise allowed apps
+- [ClientCertificateInstall CSP](clientcertificateinstall-csp.md) for installing  VPN and Wi-Fi certs
+- [DeviceStatus CSP](devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703)
+- [DevInfo CSP](devinfo-csp.md)
+- [DMAcc CSP](dmacc-csp.md)
+- [DMClient CSP](dmclient-csp.md) for polling schedules configuration and MDM discovery URL
+- [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md) has WIP policies
+- [Health Attestation CSP](healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703)
+- [PasswordForWork CSP](passportforwork-csp.md) for Windows Hello for Business PIN management
+- [Policy CSP](policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas
+- [Reporting CSP](reporting-csp.md) for retrieving WIP logs
+- [RootCaTrustedCertificates CSP](rootcacertificates-csp.md)
+- [VPNv2 CSP](vpnv2-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM
+- [WiFi CSP](wifi-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM 
+
 
 Device lock policies and EAS
 
-MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the DeviceLock/MaxDevicePasswordFailedAttempts and DeviceLock/MaxInactivityTimeDeviceLock policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
+MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the [DeviceLock/MaxDevicePasswordFailedAttempts](policy-configuration-service-provider.md#devicelock-maxdevicepasswordfailedattempts) and [DeviceLock/MaxInactivityTimeDeviceLock](policy-configuration-service-provider.md#devicelock-maxinactivitytimedevicelock) policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
 
 We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
 
