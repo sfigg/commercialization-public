@@ -17,11 +17,11 @@ The Windows version of mobile application management (MAM) is a lightweight solu
 
 ## Integration with Azure Active Directory
 
-MAM on Windows is integrated with Azure Active Directory (Azure AD) identity service. The MAM service supports Azure AD integrated authentication for the user and the device during enrollment and the downloading of MAM policies. MAM integration with Azure AD is similar to [mobile device management (MDM) integration](azure-active-directory-integration-with-mdm.md).  
+MAM on Windows is integrated with Azure Active Directory (Azure AD) identity service. The MAM service supports Azure AD integrated authentication for the user and the device during enrollment and the downloading of MAM policies. MAM integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).  
 
 MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD integrated MDM services are provided in an organization, a users’ personal devices will be enrolled to MAM or MDM depending on the user’s actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device will be enrolled to MAM. If a user joins their device to Azure AD, it will be enrolled to MDM.  In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.  
 
-On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD integrated application, such as the next update of Microsoft Office 365 or Microsoft Office Mobile. Alternatively, users can add an Azure AD account from Settings>Accounts>Access work or school.  
+On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD integrated application, such as the next update of Microsoft Office 365 or Microsoft Office Mobile. Alternatively, users can add an Azure AD account from **Settings>Accounts>Access work or school**.  
 
 Regular non-admin users can enroll to MAM.  
 
@@ -49,11 +49,11 @@ MAM and MDM services in an organization could be provided by different vendors. 
 
 ## MAM enrollment 
 
-MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/en-us/library/mt221945.aspx). MAM enrollment supports Azure AD federated authentication as the only authentication method.  
+MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](https://msdn.microsoft.com/en-us/library/mt221945.aspx). MAM enrollment supports Azure AD [federated authentication](federated-authentication-device-enrollment.md) as the only authentication method.  
 
 Below are protocol changes for MAM enrollment:  
 - MDM discovery is not supported  
-- APPAUTH node in DMAcc CSP is optional
+- APPAUTH node in [DMAcc CSP](dmacc-csp.md) is optional
 - MAM enrollment variation of [MS-MDE2] protocol does not support the client authentication certificate, and therefore, does not support the [MS-XCEP] protocol. Servers must use an Azure AD token for client authentication during policy syncs. Policy sync sessions must be performed over one-way SSL using server certificate authentication. 
 
 Here is an example provisioning XML for MAM enrollment.  
@@ -70,3 +70,58 @@ Here is an example provisioning XML for MAM enrollment.
 </wap-provisioningdoc> 
 ```
 
+## Supported Configuration Service Providers (CSPs)
+
+MAM on Windows support the following CSPs. All other CSPs will be blocked. Note the list may change later based on customer feedback.
+
+<ol>
+<li>AppLocker CSP for configuration of WIP enterprise allowed apps</li>
+<li>ClientCertificateInstall CSP for installing  VPN and Wi-Fi certs</li>
+<li>DevDetail CSP</li>
+<li>DeviceStatus CSP required for Conditional Access support (starting with Windows 10, version 1703)</li>
+<li>DevInfo CSP</li>
+<li>DMAcc CSP</li>
+<li>DMClient CSP for polling schedules configuration and MDM discovery URL</li>
+<li>EnterpriseDataProtection CSP has WIP policies</li>
+<li>Health Attestation CSP required for Conditional Access support (starting with Windows 10, version 1703)</li>
+<li>PasswordForWork CSP for Windows Hello for Business PIN management</li>
+<li>Policy CSP specifically for NetworkIsolation and DeviceLock areas</li>
+<li>Reporting CSP for retrieving WIP logs</li>
+<li>RootCaTrustedCertificates CSP</li>
+<li>VPNv2 CSP should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM</li>
+<li>WiFi CSP should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM </li>
+</ol>
+
+Device lock policies and EAS
+
+MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. The MAM client respects the DeviceLock/MaxDevicePasswordFailedAttempts and DeviceLock/MaxInactivityTimeDeviceLock policies of the DeviceLock area of Policy CSP. The rest of DeviceLock area policies are ignored. The MAM client supports all policies of PassportForWork CSP.
+
+We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
+
+<ol>
+<li>When EAS policies are sent to a device that already has MAM policies, Windows evaluates whether the existing MAM policies are compliant with the configured EAS policies and reports compliance to EAS:</li><ol>
+<li>If the device is found to be compliant, EAS will report compliance to the server to allow mail to sync. MAM supports mandatory EAS policies only. Checking EAS compliance does not require device admin rights.</li>
+<li>If the device is found to be non-compliant, EAS will enforce its own policies to the device and the resultant set of policies will be a superset of both. Applying EAS policies to the device requires admin rights.</li>
+</ol>
+<li>If a device that already has EAS policies is enrolled to MAM, the device will have both sets of policies: MAM, EAS, and the resultant set of policies will be a superset of both.</li>
+</ol>
+
+## Policy sync
+
+MAM policy syncs are modeled after MDM. The MAM client uses an Azure AD token to authenticate to the service for policy syncs.
+
+## Change MAM enrollment to MDM
+
+Windows does not support applying both MAM and MDM policies to the same devices. If configured by the admin, a user can change his MAM enrollment to MDM.
+
+To configure MAM device for MDM enrollment, the admin needs to configure the MDM Discovery URL in the DMClient CSP. This URL will be used for MDM enrollment.
+
+In the process of changing MAM enrollment to MDM, MAM policies will be removed from the device after MDM policies have been successfully applied. Normally when WIP policies are removed from the device, the user’s access to WIP-protected documents is revoked (selective wipe) unless EDP CSP RevokeOnUnenroll is set to false. To prevent selective wipe on enrollment change from MAM to MDM, the admin needs to ensure that:
+
+<ol>
+<li>Both MAM and MDM policies for the organization support WIP</li>
+<li>EDP CSP Enterprise ID is the same for both MAM and MDM</li>
+<li>EDP CSP RevokeONUpgrade is set to FALSE</li>
+</ol>
+
+If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings>Accounts>Access work or school**. The user can click on this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account will not be affected.
