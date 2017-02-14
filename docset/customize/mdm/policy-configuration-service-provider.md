@@ -2999,6 +2999,28 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#settings-configuretaskbarcalendar">Settings/ConfigureTaskbarCalendar</a></td>
+		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#settings-pagevisibilitylist">Settings/PageVisibilityList</a></td>
+		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Pro</p></td>
@@ -6842,6 +6864,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
+<!--<p style="margin-left: 20px">Allows user to change account settings.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.-->
+
+<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
+<!--<p style="margin-left: 20px">Allows user to change account settings.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.-->
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
