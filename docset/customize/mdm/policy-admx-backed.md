@@ -21,2253 +21,1707 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <!-- ADMX-TABLE-START -->
 <table>
-    	<tr>
-		<th>MDM CSP Setting Path/Name</th>
-		<th>GP English Name</th>
-		<th>GP English Category Path</th>
-		<th>GP Name</th>
-		<th>GP ADMX File Name</th>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#activexcontrols-approvedinstallationsites ">ActiveXControls/ApprovedInstallationSites </a></td>
-		<td style="vertical-align:top">Approved Installation Sites for ActiveX Controls</td>
-		<td style="vertical-align:top">Windows Components/ActiveX Installer Service</td>
-		<td style="vertical-align:top">ApprovedActiveXInstallSites</td>
-		<td style="vertical-align:top">ActiveXInstallService.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#system-allowbuildpreview">System/AllowBuildPreview</a></td>
-		<td style="vertical-align:top">Toggle user control over Insider builds</td>
-		<td style="vertical-align:top">Windows Components/Data Collection and Preview Builds</td>
-		<td style="vertical-align:top">AllowBuildPreview</td>
-		<td style="vertical-align:top">AllowBuildPreview.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessaccountinfo">Privacy/LetAppsAccessAccountInfo</a></td>
-		<td style="vertical-align:top">Let Windows apps access account information</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessAccountInfo</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesscallhistory">Privacy/LetAppsAccessCallHistory</a></td>
-		<td style="vertical-align:top">Let Windows apps access call history</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessCallHistory</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesscontacts">Privacy/LetAppsAccessContacts</a></td>
-		<td style="vertical-align:top">Let Windows apps access contacts</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessContacts</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessemail">Privacy/LetAppsAccessEmail</a></td>
-		<td style="vertical-align:top">Let Windows apps access email</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessEmail</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesslocation">Privacy/LetAppsAccessLocation</a></td>
-		<td style="vertical-align:top">Let Windows apps access location</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessLocation</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessmessaging">Privacy/LetAppsAccessMessaging</a></td>
-		<td style="vertical-align:top">Let Windows apps access messaging</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessMessaging</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessmotion">Privacy/LetAppsAccessMotion</a></td>
-		<td style="vertical-align:top">Let Windows apps access motion</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessMotion</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessnotifications">Privacy/LetAppsAccessNotifications</a></td>
-		<td style="vertical-align:top">Let Windows apps access notifications</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessNotifications</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a></td>
-		<td style="vertical-align:top">Let Windows apps access the calendar</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessCalendar</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesscamera">Privacy/LetAppsAccessCamera</a></td>
-		<td style="vertical-align:top">Let Windows apps access the camera</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessCamera</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessmicrophone">Privacy/LetAppsAccessMicrophone</a></td>
-		<td style="vertical-align:top">Let Windows apps access the microphone</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessMicrophone</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccesstrusteddevices">Privacy/LetAppsAccessTrustedDevices</a></td>
-		<td style="vertical-align:top">Let Windows apps access trusted devices</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessTrustedDevices</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessradios">Privacy/LetAppsAccessRadios</a></td>
-		<td style="vertical-align:top">Let Windows apps control radios</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessRadios</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappsaccessphone">Privacy/LetAppsAccessPhone</a></td>
-		<td style="vertical-align:top">Let Windows apps make phone calls</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsAccessPhone</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-letappssyncwithdevices">Privacy/LetAppsSyncWithDevices</a></td>
-		<td style="vertical-align:top">Let Windows apps sync with devices</td>
-		<td style="vertical-align:top">Windows Components/App Privacy</td>
-		<td style="vertical-align:top">LetAppsSyncWithDevices</td>
-		<td style="vertical-align:top">AppPrivacy.admx</td>
-</tr>	<tr>
+	<tr>
+		<th>ActiveXControls/ApprovedInstallationSites </th>
+		<th>Approved Installation Sites for ActiveX Controls</th>
+		<th>Windows Components/ActiveX Installer Service</th>
+		<th>ApprovedActiveXInstallSites</th>
+		<th>ActiveXInstallService.admx</th>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowappvclient">AppVirtualization/AllowAppVClient</a></td>
 		<td style="vertical-align:top">Enable App-V Client</td>
 		<td style="vertical-align:top">System/App-V</td>
 		<td style="vertical-align:top">EnableAppV</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a></td>
 		<td style="vertical-align:top">Enable Migration Mode</td>
 		<td style="vertical-align:top">System/App-V/Client Coexistence</td>
 		<td style="vertical-align:top">Client_Coexistence_Enable_Migration_mode</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a></td>
 		<td style="vertical-align:top">Integration Root Global</td>
 		<td style="vertical-align:top">System/App-V/Integration</td>
 		<td style="vertical-align:top">Integration_Root_Global</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a></td>
 		<td style="vertical-align:top">Integration Root User</td>
 		<td style="vertical-align:top">System/App-V/Integration</td>
 		<td style="vertical-align:top">Integration_Root_User</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowroamingfileexclusions">AppVirtualization/AllowRoamingFileExclusions</a></td>
 		<td style="vertical-align:top">Roaming File Exclusions</td>
 		<td style="vertical-align:top">System/App-V/Integration</td>
 		<td style="vertical-align:top">Integration_Roaming_File_Exclusions</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowroamingregistryexclusions">AppVirtualization/AllowRoamingRegistryExclusions</a></td>
 		<td style="vertical-align:top">Roaming Registry Exclusions</td>
 		<td style="vertical-align:top">System/App-V/Integration</td>
 		<td style="vertical-align:top">Integration_Roaming_Registry_Exclusions</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a></td>
+		<td style="vertical-align:top">Enable automatic cleanup of unused appv packages</td>
+		<td style="vertical-align:top">System/App-V/Package Management</td>
+		<td style="vertical-align:top">PackageManagement_AutoCleanupEnable</td>
+		<td style="vertical-align:top">appv.admx</td>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a></td>
 		<td style="vertical-align:top">Enable Publishing Refresh UX</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Enable_Publishing_Refresh_UX</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver1">AppVirtualization/PublishingAllowServer1</a></td>
 		<td style="vertical-align:top">Publishing Server 1 Settings</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Publishing_Server1_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver2">AppVirtualization/PublishingAllowServer2</a></td>
 		<td style="vertical-align:top">Publishing Server 2 Settings</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Publishing_Server2_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver3">AppVirtualization/PublishingAllowServer3</a></td>
 		<td style="vertical-align:top">Publishing Server 3 Settings</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Publishing_Server3_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver4">AppVirtualization/PublishingAllowServer4</a></td>
 		<td style="vertical-align:top">Publishing Server 4 Settings</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Publishing_Server4_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-publishingallowserver5">AppVirtualization/PublishingAllowServer5</a></td>
 		<td style="vertical-align:top">Publishing Server 5 Settings</td>
 		<td style="vertical-align:top">System/App-V/Publishing</td>
 		<td style="vertical-align:top">Publishing_Server5_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a></td>
 		<td style="vertical-align:top">Reporting Server</td>
 		<td style="vertical-align:top">System/App-V/Reporting</td>
 		<td style="vertical-align:top">Reporting_Server_Policy</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a></td>
 		<td style="vertical-align:top">Enable Package Scripts</td>
 		<td style="vertical-align:top">System/App-V/Scripting</td>
 		<td style="vertical-align:top">Scripting_Enable_Package_Scripts</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a></td>
 		<td style="vertical-align:top">Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Allow_High_Cost_Launch</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowcertificatefilterforclient_ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a></td>
 		<td style="vertical-align:top">Certificate Filter For Client SSL</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Certificate_Filter_For_Client_SSL</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a></td>
 		<td style="vertical-align:top">Enable Support for BranchCache</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Support_Branch_Cache</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowlocationprovider">AppVirtualization/StreamingAllowLocationProvider</a></td>
 		<td style="vertical-align:top">Location Provider</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Location_Provider</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowpackageinstallationroot">AppVirtualization/StreamingAllowPackageInstallationRoot</a></td>
 		<td style="vertical-align:top">Package Installation Root</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Package_Installation_Root</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowpackagesourceroot">AppVirtualization/StreamingAllowPackageSourceRoot</a></td>
 		<td style="vertical-align:top">Package Source Root</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Package_Source_Root</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowreestablishmentinterval">AppVirtualization/StreamingAllowReestablishmentInterval</a></td>
 		<td style="vertical-align:top">Reestablishment Interval</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Reestablishment_Interval</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingallowreestablishmentretries">AppVirtualization/StreamingAllowReestablishmentRetries</a></td>
 		<td style="vertical-align:top">Reestablishment Retries</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Reestablishment_Retries</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingsharedcontentstoremode">AppVirtualization/StreamingSharedContentStoreMode</a></td>
 		<td style="vertical-align:top">Shared Content Store (SCS) mode</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Shared_Content_Store_Mode</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a></td>
 		<td style="vertical-align:top">Specify what to load in background (aka AutoLoad)</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Steaming_Autoload</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-streamingverifycertificaterevocationlist">AppVirtualization/StreamingVerifyCertificateRevocationList</a></td>
 		<td style="vertical-align:top">Verify certificate revocation list</td>
 		<td style="vertical-align:top">System/App-V/Streaming</td>
 		<td style="vertical-align:top">Streaming_Verify_Certificate_Revocation_List</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a></td>
 		<td style="vertical-align:top">Enable Dynamic Virtualization</td>
 		<td style="vertical-align:top">System/App-V/Virtualization</td>
 		<td style="vertical-align:top">Virtualization_JITVEnable</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#appvirtualization-virtualcomponentsallowlist">AppVirtualization/VirtualComponentsAllowList</a></td>
 		<td style="vertical-align:top">Virtual Component Process Allow List</td>
 		<td style="vertical-align:top">System/App-V/Virtualization</td>
 		<td style="vertical-align:top">Virtualization_JITVAllowList</td>
 		<td style="vertical-align:top">appv.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a></td>
-		<td style="vertical-align:top">Allow a Windows app to share application data between users</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">AllowSharedLocalAppData</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-allowalltrustedapps">ApplicationManagement/AllowAllTrustedApps</a></td>
-		<td style="vertical-align:top">Allow all trusted apps to install</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">AppxDeploymentAllowAllTrustedApps</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-allowdeveloperunlock">ApplicationManagement/AllowDeveloperUnlock</a></td>
-		<td style="vertical-align:top">Allows development of Windows Store apps and installing them from an integrated development environment (IDE)</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">AllowDevelopmentWithoutDevLicense</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-restrictapptosystemvolume">ApplicationManagement/RestrictAppToSystemVolume</a></td>
-		<td style="vertical-align:top">Disable installing Windows apps on non-system volumes</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">DisableDeploymentToNonSystemVolumes</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-restrictappdatatosystemvolume">ApplicationManagement/RestrictAppDataToSystemVolume</a></td>
-		<td style="vertical-align:top">Prevent users' app data from being stored on non-system volumes</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">RestrictAppDataToSystemVolume</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-allowalltrustedapps">ApplicationManagement/AllowAllTrustedApps</a></td>
-		<td style="vertical-align:top">Allow all trusted apps to install</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">AppxDeploymentAllowAllTrustedApps</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-allowdeveloperunlock">ApplicationManagement/AllowDeveloperUnlock</a></td>
-		<td style="vertical-align:top">Allows development of Windows Store apps and installing them from an integrated development environment (IDE)</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">AllowDevelopmentWithoutDevLicense</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-restrictapptosystemvolume">ApplicationManagement/RestrictAppToSystemVolume</a></td>
-		<td style="vertical-align:top">Disable installing Windows apps on non-system volumes</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">DisableDeploymentToNonSystemVolumes</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-restrictappdatatosystemvolume">ApplicationManagement/RestrictAppDataToSystemVolume</a></td>
-		<td style="vertical-align:top">Prevent users' app data from being stored on non-system volumes</td>
-		<td style="vertical-align:top">Windows Components/App Package Deployment</td>
-		<td style="vertical-align:top">RestrictAppDataToSystemVolume</td>
-		<td style="vertical-align:top">AppxPackageManager.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#licensing-disallowkmsclientonlineavsvalidation">Licensing/DisallowKMSClientOnlineAVSValidation</a></td>
-		<td style="vertical-align:top">Turn off KMS Client Online AVS Validation</td>
-		<td style="vertical-align:top">Windows Components/Software Protection Platform</td>
-		<td style="vertical-align:top">NoAcquireGT</td>
-		<td style="vertical-align:top">AVSValidationGP.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#attachmentmanager-donotpreservezoneinformation">AttachmentManager/DoNotPreserveZoneInformation</a></td>
 		<td style="vertical-align:top">Do not preserve zone information in file attachments</td>
 		<td style="vertical-align:top">Windows Components/Attachment Manager</td>
 		<td style="vertical-align:top">AM_MarkZoneOnSavedAtttachments</td>
 		<td style="vertical-align:top">AttachmentManager.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#attachmentmanager-hidezoneinfomechanism">AttachmentManager/HideZoneInfoMechanism</a></td>
 		<td style="vertical-align:top">Hide mechanisms to remove zone information</td>
 		<td style="vertical-align:top">Windows Components/Attachment Manager</td>
 		<td style="vertical-align:top">AM_RemoveZoneInfo</td>
 		<td style="vertical-align:top">AttachmentManager.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#attachmentmanager-notifyantivirusprograms">AttachmentManager/NotifyAntivirusPrograms</a></td>
 		<td style="vertical-align:top">Notify antivirus programs when opening attachments</td>
 		<td style="vertical-align:top">Windows Components/Attachment Manager</td>
 		<td style="vertical-align:top">AM_CallIOfficeAntiVirus</td>
 		<td style="vertical-align:top">AttachmentManager.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#autoplay-disallowautoplayfornonvolumedevices">Autoplay/DisallowAutoplayForNonVolumeDevices</a></td>
 		<td style="vertical-align:top">Disallow Autoplay for non-volume devices</td>
 		<td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
 		<td style="vertical-align:top">NoAutoplayfornonVolume</td>
 		<td style="vertical-align:top">AutoPlay.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#autoplay-setdefaultautorunbehavior">Autoplay/SetDefaultAutoRunBehavior</a></td>
 		<td style="vertical-align:top">Set the default behavior for AutoRun</td>
 		<td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
 		<td style="vertical-align:top">NoAutorun</td>
 		<td style="vertical-align:top">AutoPlay.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#autoplay-turnoffautoplay">Autoplay/TurnOffAutoPlay</a></td>
 		<td style="vertical-align:top">Turn off Autoplay</td>
 		<td style="vertical-align:top">Windows Components/AutoPlay Policies</td>
 		<td style="vertical-align:top">Autorun</td>
 		<td style="vertical-align:top">AutoPlay.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#biometrics-facialfeaturesuseenhancedantispoofing">Biometrics/FacialFeaturesUseEnhancedAntiSpoofing</a></td>
-		<td style="vertical-align:top">Configure enhanced anti-spoofing</td>
-		<td style="vertical-align:top">Windows Components/Biometrics/Facial Features</td>
-		<td style="vertical-align:top">Face_EnhancedAntiSpoofing</td>
-		<td style="vertical-align:top">Biometrics.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a></td>
-		<td style="vertical-align:top">SSL Cipher Suite Order</td>
-		<td style="vertical-align:top">Network/SSL Configuration Settings</td>
-		<td style="vertical-align:top">SSLCipherSuiteOrder</td>
-		<td style="vertical-align:top">CipherSuiteOrder.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a></td>
-		<td style="vertical-align:top">Configure Windows spotlight on lock screen</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">ConfigureWindowsSpotlight</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a></td>
-		<td style="vertical-align:top">Do not show Windows tips</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">DisableSoftLanding</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowthirdpartysuggestionsinwindowsspotlight">Experience/AllowThirdPartySuggestionsInWindowsSpotlight</a></td>
-		<td style="vertical-align:top">Do not suggest third-party content in Windows spotlight</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">DisableThirdPartySuggestions</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowwindowsspotlight">Experience/AllowWindowsSpotlight</a></td>
-		<td style="vertical-align:top">Turn off all Windows spotlight features</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">DisableWindowsSpotlightFeatures</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowwindowsconsumerfeatures">Experience/AllowWindowsConsumerFeatures</a></td>
-		<td style="vertical-align:top">Turn off Microsoft consumer experiences</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">DisableWindowsConsumerFeatures</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowwindowsconsumerfeatures">Experience/AllowWindowsConsumerFeatures</a></td>
-		<td style="vertical-align:top">Turn off Microsoft consumer experiences</td>
-		<td style="vertical-align:top">Windows Components/Cloud Content</td>
-		<td style="vertical-align:top">DisableWindowsConsumerFeatures</td>
-		<td style="vertical-align:top">CloudContent.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#devicelock-enforcelockscreenandlogonimage">DeviceLock/EnforceLockScreenAndLogonImage</a></td>
-		<td style="vertical-align:top">Force a specific default lock screen and logon image</td>
-		<td style="vertical-align:top">Control Panel/Personalization</td>
-		<td style="vertical-align:top">CPL_Personalization_ForceDefaultLockScreen</td>
-		<td style="vertical-align:top">ControlPanelDisplay.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a></td>
 		<td style="vertical-align:top">Prevent enabling lock screen slide show</td>
 		<td style="vertical-align:top">Control Panel/Personalization</td>
 		<td style="vertical-align:top">CPL_Personalization_NoLockScreenSlideshow</td>
 		<td style="vertical-align:top">ControlPanelDisplay.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a></td>
 		<td style="vertical-align:top">Turn off picture password sign-in</td>
 		<td style="vertical-align:top">System/Logon</td>
 		<td style="vertical-align:top">BlockDomainPicturePassword</td>
 		<td style="vertical-align:top">CredentialProviders.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#credentialproviders-allowpinlogon">CredentialProviders/AllowPINLogon</a></td>
 		<td style="vertical-align:top">Turn on convenience PIN sign-in</td>
 		<td style="vertical-align:top">System/Logon</td>
 		<td style="vertical-align:top">AllowDomainPINLogon</td>
 		<td style="vertical-align:top">CredentialProviders.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#windowslogon-hidefastuserswitching ">WindowsLogon/HideFastUserSwitching </a></td>
-		<td style="vertical-align:top">Hide entry points for Fast User Switching</td>
-		<td style="vertical-align:top">System/Logon</td>
-		<td style="vertical-align:top">HideFastUserSwitching</td>
-		<td style="vertical-align:top">Logon.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#credentialsui-disablepasswordreveal">CredentialsUI/DisablePasswordReveal</a></td>
 		<td style="vertical-align:top">Do not display the password reveal button</td>
 		<td style="vertical-align:top">Windows Components/Credential User Interface</td>
 		<td style="vertical-align:top">DisablePasswordReveal</td>
 		<td style="vertical-align:top">CredUI.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#credentialsui-enumerateadministrators">CredentialsUI/EnumerateAdministrators</a></td>
 		<td style="vertical-align:top">Enumerate administrator accounts on elevation</td>
 		<td style="vertical-align:top">Windows Components/Credential User Interface</td>
 		<td style="vertical-align:top">EnumerateAdministrators</td>
 		<td style="vertical-align:top">CredUI.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#desktop-preventuserredirectionofprofilefolders">Desktop/PreventUserRedirectionOfProfileFolders</a></td>
 		<td style="vertical-align:top">Prohibit User from manually redirecting Profile Folders</td>
 		<td style="vertical-align:top">Desktop</td>
 		<td style="vertical-align:top">DisablePersonalDirChange</td>
 		<td style="vertical-align:top">desktop.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a></td>
 		<td style="vertical-align:top">Prevent installation of devices that match any of these device IDs</td>
 		<td style="vertical-align:top">System/Device Installation/Device Installation Restrictions</td>
 		<td style="vertical-align:top">DeviceInstall_IDs_Deny</td>
 		<td style="vertical-align:top">DeviceInstallation.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#system-allowtelemetry">System/AllowTelemetry</a></td>
-		<td style="vertical-align:top">Allow Telemetry</td>
-		<td style="vertical-align:top">Windows Components/Data Collection and Preview Builds</td>
-		<td style="vertical-align:top">AllowTelemetry</td>
-		<td style="vertical-align:top">DataCollection.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#system-telemetryproxy ">System/TelemetryProxy </a></td>
-		<td style="vertical-align:top">Configure Connected User Experiences and Telemetry</td>
-		<td style="vertical-align:top">Windows Components/Data Collection and Preview Builds</td>
-		<td style="vertical-align:top">TelemetryProxy</td>
-		<td style="vertical-align:top">DataCollection.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#system-allowexperimentation">System/AllowExperimentation</a></td>
-		<td style="vertical-align:top">Disable pre-release features or settings</td>
-		<td style="vertical-align:top">Windows Components/Data Collection and Preview Builds</td>
-		<td style="vertical-align:top">EnableExperimentation</td>
-		<td style="vertical-align:top">DataCollection.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a></td>
 		<td style="vertical-align:top">Prevent installation of devices using drivers that match these device setup classes</td>
 		<td style="vertical-align:top">System/Device Installation/Device Installation Restrictions</td>
 		<td style="vertical-align:top">DeviceInstall_Classes_Deny</td>
 		<td style="vertical-align:top">DeviceInstallation.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a></td>
+		<td style="vertical-align:top">Boot-Start Driver Initialization Policy</td>
+		<td style="vertical-align:top">System/Early Launch Antimalware</td>
+		<td style="vertical-align:top">POL_DriverLoadPolicy_Name</td>
+		<td style="vertical-align:top">EarlyLaunchAM.admx</td>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a></td>
 		<td style="vertical-align:top">Do not allow Windows to activate Enhanced Storage devices</td>
 		<td style="vertical-align:top">System/Enhanced Storage Access</td>
 		<td style="vertical-align:top">TCGSecurityActivationDisabled</td>
 		<td style="vertical-align:top">EnhancedStorage.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a></td>
 		<td style="vertical-align:top">Disable Windows Error Reporting</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
 		<td style="vertical-align:top">WerDisable_2</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-displayerrornotification">ErrorReporting/DisplayErrorNotification</a></td>
 		<td style="vertical-align:top">Display Error Notification</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
 		<td style="vertical-align:top">PCH_ShowUI</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-donotsendadditionaldata">ErrorReporting/DoNotSendAdditionalData</a></td>
 		<td style="vertical-align:top">Do not send additional data</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
 		<td style="vertical-align:top">WerNoSecondLevelData_2</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-preventcriticalerrordisplay">ErrorReporting/PreventCriticalErrorDisplay</a></td>
 		<td style="vertical-align:top">Prevent display of the user interface for critical errors</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting</td>
 		<td style="vertical-align:top">WerDoNotShowUI</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a></td>
 		<td style="vertical-align:top">Customize consent settings</td>
 		<td style="vertical-align:top">Windows Components/Windows Error Reporting/Consent</td>
 		<td style="vertical-align:top">WerConsentCustomize_2</td>
 		<td style="vertical-align:top">ErrorReporting.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#eventlogservice-controleventlogbehavior">EventLogService/ControlEventLogBehavior</a></td>
 		<td style="vertical-align:top">Control Event Log behavior when the log file reaches its maximum size</td>
 		<td style="vertical-align:top">Windows Components/Event Log Service/Application</td>
 		<td style="vertical-align:top">Channel_Log_Retention_1</td>
 		<td style="vertical-align:top">EventLog.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizeapplicationlog">EventLogService/SpecifyMaximumFileSizeApplicationLog</a></td>
 		<td style="vertical-align:top">Specify the maximum log file size (KB)</td>
 		<td style="vertical-align:top">Windows Components/Event Log Service/Application</td>
 		<td style="vertical-align:top">Channel_LogMaxSize_1</td>
 		<td style="vertical-align:top">EventLog.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizesecuritylog">EventLogService/SpecifyMaximumFileSizeSecurityLog</a></td>
 		<td style="vertical-align:top">Specify the maximum log file size (KB)</td>
 		<td style="vertical-align:top">Windows Components/Event Log Service/Security</td>
 		<td style="vertical-align:top">Channel_LogMaxSize_2</td>
 		<td style="vertical-align:top">EventLog.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#eventlogservice-specifymaximumfilesizesystemlog">EventLogService/SpecifyMaximumFileSizeSystemLog</a></td>
 		<td style="vertical-align:top">Specify the maximum log file size (KB)</td>
 		<td style="vertical-align:top">Windows Components/Event Log Service/System</td>
 		<td style="vertical-align:top">Channel_LogMaxSize_4</td>
 		<td style="vertical-align:top">EventLog.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-addsearchprovider">InternetExplorer/AddSearchProvider</a></td>
 		<td style="vertical-align:top">Add a specific list of search providers to the user's list of search providers</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">AddSearchProvider</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a></td>
 		<td style="vertical-align:top">Disable changing home page settings</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">RestrictHomePage</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablesecondaryhomepagechange">InternetExplorer/DisableSecondaryHomePageChange</a></td>
 		<td style="vertical-align:top">Disable changing secondary home page settings</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">SecondaryHomePages</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-allowinputpersonalization">Privacy/AllowInputPersonalization</a></td>
-		<td style="vertical-align:top">Allow input personalization</td>
-		<td style="vertical-align:top">Control Panel/Regional and Language Options</td>
-		<td style="vertical-align:top">AllowInputPersonalization</td>
-		<td style="vertical-align:top">globalization.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a></td>
 		<td style="vertical-align:top">Disable Periodic Check for Internet Explorer software updates</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">NoUpdateCheck</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodefromtoolsmenu">InternetExplorer/AllowEnterpriseModeFromToolsMenu</a></td>
 		<td style="vertical-align:top">Let users turn on and use Enterprise Mode from the Tools menu</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">EnterpriseModeEnable</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a></td>
 		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">DisableSafetyFilterOverride</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a></td>
 		<td style="vertical-align:top">Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">DisableSafetyFilterOverrideForAppRepUnknown</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableproxychange">InternetExplorer/DisableProxyChange</a></td>
 		<td style="vertical-align:top">Prevent changing proxy settings</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">RestrictProxy</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#abovelock-allowtoasts">AboveLock/AllowToasts</a></td>
-		<td style="vertical-align:top">Turn off toast notifications on the lock screen</td>
-		<td style="vertical-align:top">Start Menu and Taskbar/Notifications</td>
-		<td style="vertical-align:top">NoLockScreenToastNotification</td>
-		<td style="vertical-align:top">wpn.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowdevelopertools">Browser/AllowDeveloperTools</a></td>
-		<td style="vertical-align:top">Allow Developer Tools</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowDeveloperTools</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowinprivate">Browser/AllowInPrivate</a></td>
-		<td style="vertical-align:top">Allow InPrivate browsing</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowInPrivate</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowautofill">Browser/AllowAutofill</a></td>
-		<td style="vertical-align:top">Configure Autofill</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowAutofill</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowcookies">Browser/AllowCookies</a></td>
-		<td style="vertical-align:top">Configure cookies</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">Cookies</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowdonottrack">Browser/AllowDoNotTrack</a></td>
-		<td style="vertical-align:top">Configure Do Not Track</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowDoNotTrack</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-homepages">Browser/Homepages</a></td>
-		<td style="vertical-align:top">Configure Home pages</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">HomePages</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowpasswordmanager">Browser/AllowPasswordManager</a></td>
-		<td style="vertical-align:top">Configure Password Manager</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowPasswordManager</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowpopups">Browser/AllowPopups</a></td>
-		<td style="vertical-align:top">Configure Pop-up Blocker</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowPopups</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowsearchsuggestionsinaddressbar">Browser/AllowSearchSuggestionsinAddressBar</a></td>
-		<td style="vertical-align:top">Configure search suggestions in Address bar</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowSearchSuggestionsinAddressBar</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowsmartscreen">Browser/AllowSmartScreen</a></td>
-		<td style="vertical-align:top">Configure SmartScreen Filter</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowSmartScreen</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-enterprisemodesitelist">Browser/EnterpriseModeSiteList</a></td>
-		<td style="vertical-align:top">Configure the Enterprise Mode Site List</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">EnterpriseModeSiteList</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-preventsmartscreenpromptoverrideforfiles">Browser/PreventSmartScreenPromptOverrideForFiles</a></td>
-		<td style="vertical-align:top">Prevent bypassing SmartScreen prompts for files</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">PreventSmartScreenPromptOverrideForFiles</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-preventsmartscreenpromptoverride">Browser/PreventSmartScreenPromptOverride</a></td>
-		<td style="vertical-align:top">Prevent bypassing SmartScreen prompts for sites</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">PreventSmartScreenPromptOverride</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-sendintranettraffictointernetexplorer">Browser/SendIntranetTraffictoInternetExplorer</a></td>
-		<td style="vertical-align:top">Send all intranet sites to Internet Explorer 11</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">SendIntranetTraffictoInternetExplorer</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-showmessagewhenopeningsitesininternetexplorer">Browser/ShowMessageWhenOpeningSitesInInternetExplorer</a></td>
-		<td style="vertical-align:top">Show message when opening sites in Internet Explorer</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">ShowMessageWhenOpeningSitesInInternetExplorer</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#browser-allowextensions">Browser/AllowExtensions</a></td>
-		<td style="vertical-align:top">Allow Extensions</td>
-		<td style="vertical-align:top">Windows Components/Microsoft Edge</td>
-		<td style="vertical-align:top">AllowExtensions</td>
-		<td style="vertical-align:top">MicrosoftEdge.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#networkisolation-enterpriseproxyservers">NetworkIsolation/EnterpriseProxyServers</a></td>
-		<td style="vertical-align:top">Internet proxy servers for apps</td>
-		<td style="vertical-align:top">Network/Network Isolation</td>
-		<td style="vertical-align:top">WF_NetIsolation_Domain_Proxies</td>
-		<td style="vertical-align:top">NetworkIsolation.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#networkisolation-enterpriseinternalproxyservers">NetworkIsolation/EnterpriseInternalProxyServers</a></td>
-		<td style="vertical-align:top">Intranet proxy servers for  apps</td>
-		<td style="vertical-align:top">Network/Network Isolation</td>
-		<td style="vertical-align:top">WF_NetIsolation_Intranet_Proxies</td>
-		<td style="vertical-align:top">NetworkIsolation.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#networkisolation-enterpriseiprange">NetworkIsolation/EnterpriseIPRange</a></td>
-		<td style="vertical-align:top">Private network ranges for  apps</td>
-		<td style="vertical-align:top">Network/Network Isolation</td>
-		<td style="vertical-align:top">WF_NetIsolation_PrivateSubnet</td>
-		<td style="vertical-align:top">NetworkIsolation.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#networkisolation-enterpriseproxyserversareauthoritative">NetworkIsolation/EnterpriseProxyServersAreAuthoritative</a></td>
-		<td style="vertical-align:top">Proxy definitions are authoritative</td>
-		<td style="vertical-align:top">Network/Network Isolation</td>
-		<td style="vertical-align:top">WF_NetIsolation_Authoritative_Proxies</td>
-		<td style="vertical-align:top">NetworkIsolation.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#networkisolation-enterpriseiprangesareauthoritative">NetworkIsolation/EnterpriseIPRangesAreAuthoritative</a></td>
-		<td style="vertical-align:top">Subnet definitions are authoritative</td>
-		<td style="vertical-align:top">Network/Network Isolation</td>
-		<td style="vertical-align:top">WF_NetIsolation_Authoritative_Subnet</td>
-		<td style="vertical-align:top">NetworkIsolation.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablesearchproviderchange">InternetExplorer/DisableSearchProviderChange</a></td>
 		<td style="vertical-align:top">Prevent changing the default search provider</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">NoSearchProvider</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablecustomerexperienceimprovementprogramparticipation">InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation</a></td>
 		<td style="vertical-align:top">Prevent participation in the Customer Experience Improvement Program</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">SQM_DisableCEIP</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disablefirstrunwizard">InternetExplorer/DisableFirstRunWizard</a></td>
 		<td style="vertical-align:top">Prevent running First Run wizard</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">NoFirstRunCustomise</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-searchproviderlist">InternetExplorer/SearchProviderList</a></td>
 		<td style="vertical-align:top">Restrict search providers to a specific list</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">SpecificSearchProvider</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstoaddsites">InternetExplorer/DoNotAllowUsersToAddSites</a></td>
 		<td style="vertical-align:top">Security Zones: Do not allow users to add/delete sites</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">Security_zones_map_edit</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-donotallowuserstochangepolicies">InternetExplorer/DoNotAllowUsersToChangePolicies</a></td>
 		<td style="vertical-align:top">Security Zones: Do not allow users to change policies</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">Security_options_edit</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowactivexfiltering">InternetExplorer/AllowActiveXFiltering</a></td>
 		<td style="vertical-align:top">Turn on ActiveX Filtering</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">TurnOnActiveXFiltering</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowsuggestedsites">InternetExplorer/AllowSuggestedSites</a></td>
 		<td style="vertical-align:top">Turn on Suggested Sites</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">EnableSuggestedSites</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowenterprisemodesitelist">InternetExplorer/AllowEnterpriseModeSiteList</a></td>
 		<td style="vertical-align:top">Use the Enterprise Mode IE website list</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer</td>
 		<td style="vertical-align:top">EnterpriseModeSiteList</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorerstandardsmode">InternetExplorer/AllowInternetExplorerStandardsMode</a></td>
 		<td style="vertical-align:top">Turn on Internet Explorer Standards Mode for local intranet</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
 		<td style="vertical-align:top">CompatView_IntranetSites</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist ">InternetExplorer/AllowInternetExplorer7PolicyList </a></td>
 		<td style="vertical-align:top">Use Policy List of Internet Explorer 7 sites</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
 		<td style="vertical-align:top">CompatView_UsePolicyList</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#system-allowstoragecard">System/AllowStorageCard</a></td>
-		<td style="vertical-align:top">All Removable Storage classes: Deny all access</td>
-		<td style="vertical-align:top">System/Removable Storage Access</td>
-		<td style="vertical-align:top">RemovableStorageClasses_DenyAll_Access_1</td>
-		<td style="vertical-align:top">RemovableStorage.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableencryptionsupport">InternetExplorer/DisableEncryptionSupport</a></td>
 		<td style="vertical-align:top">Turn off encryption support</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
 		<td style="vertical-align:top">Advanced_SetWinInetProtocols</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableflipaheadfeature">InternetExplorer/DisableFlipAheadFeature</a></td>
 		<td style="vertical-align:top">Turn off the flip ahead with page prediction feature</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
 		<td style="vertical-align:top">Advanced_DisableFlipAhead</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a></td>
-		<td style="vertical-align:top">Do not sync</td>
-		<td style="vertical-align:top">Windows Components/Sync your settings</td>
-		<td style="vertical-align:top">DisableSettingSync</td>
-		<td style="vertical-align:top">SettingSync.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#start-forcestartsize">Start/ForceStartSize</a></td>
-		<td style="vertical-align:top">Force Start to be either full screen size or menu size</td>
-		<td style="vertical-align:top">Start Menu and Taskbar</td>
-		<td style="vertical-align:top">ForceStartSize</td>
-		<td style="vertical-align:top">StartMenu.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#start-startlayout">Start/StartLayout</a></td>
-		<td style="vertical-align:top">Start Layout</td>
-		<td style="vertical-align:top">Start Menu and Taskbar</td>
-		<td style="vertical-align:top">LockedStartLayout</td>
-		<td style="vertical-align:top">StartMenu.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a></td>
 		<td style="vertical-align:top">Turn on Enhanced Protected Mode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Advanced Page</td>
 		<td style="vertical-align:top">Advanced_EnableEnhancedProtectedMode</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetzonetemplate">InternetExplorer/AllowInternetZoneTemplate</a></td>
 		<td style="vertical-align:top">Internet Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyInternetZoneTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a></td>
 		<td style="vertical-align:top">Intranet Sites: Include all local (intranet) sites not listed in other zones</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_IncludeUnspecifiedLocalSites</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-includeallnetworkpaths">InternetExplorer/IncludeAllNetworkPaths</a></td>
 		<td style="vertical-align:top">Intranet Sites: Include all network paths (UNCs)</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_UNCAsIntranet</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowintranetzonetemplate">InternetExplorer/AllowIntranetZoneTemplate</a></td>
 		<td style="vertical-align:top">Intranet Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyIntranetZoneTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowlocalmachinezonetemplate">InternetExplorer/AllowLocalMachineZoneTemplate</a></td>
 		<td style="vertical-align:top">Local Machine Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyLocalMachineZoneTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowlockeddowninternetzonetemplate">InternetExplorer/AllowLockedDownInternetZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Internet Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyInternetZoneLockdownTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#privacy-disableadvertisingid">Privacy/DisableAdvertisingID</a></td>
-		<td style="vertical-align:top">Turn off the advertising ID</td>
-		<td style="vertical-align:top">System/User Profiles</td>
-		<td style="vertical-align:top">DisableAdvertisingId</td>
-		<td style="vertical-align:top">UserProfiles.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownintranetzonetemplate">InternetExplorer/AllowLockedDownIntranetZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Intranet Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyIntranetZoneLockdownTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownlocalmachinezonetemplate">InternetExplorer/AllowLockedDownLocalMachineZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Local Machine Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyLocalMachineZoneLockdownTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowlockeddownrestrictedsiteszonetemplate">InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Restricted Sites Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyRestrictedSitesZoneLockdownTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowslockeddowntrustedsitezonetemplate">InternetExplorer/AllowsLockedDownTrustedSiteZoneTemplate</a></td>
 		<td style="vertical-align:top">Locked-Down Trusted Sites Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyTrustedSitesZoneLockdownTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowsrestrictedsiteszonetemplate">InternetExplorer/AllowsRestrictedSitesZoneTemplate</a></td>
 		<td style="vertical-align:top">Restricted Sites Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyRestrictedSitesZoneTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a></td>
 		<td style="vertical-align:top">Site to Zone Assignment List</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_Zonemaps</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowtrustedsiteszonetemplate">InternetExplorer/AllowTrustedSitesZoneTemplate</a></td>
 		<td style="vertical-align:top">Trusted Sites Zone Template</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page</td>
 		<td style="vertical-align:top">IZ_PolicyTrustedSitesZoneTemplate</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowaccesstodatasources">InternetExplorer/InternetZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#defender-allowcloudprotection">Defender/AllowCloudProtection</a></td>
-		<td style="vertical-align:top">Join Microsoft MAPS</td>
-		<td style="vertical-align:top">Windows Components/Windows Defender/MAPS</td>
-		<td style="vertical-align:top">SpynetReporting</td>
-		<td style="vertical-align:top">WindowsDefender.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#defender-submitsamplesconsent">Defender/SubmitSamplesConsent</a></td>
-		<td style="vertical-align:top">Send file samples when further analysis is required</td>
-		<td style="vertical-align:top">Windows Components/Windows Defender/MAPS</td>
-		<td style="vertical-align:top">SubmitSamplesConsent</td>
-		<td style="vertical-align:top">WindowsDefender.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#defender-allowrealtimemonitoring">Defender/AllowRealtimeMonitoring</a></td>
-		<td style="vertical-align:top">Turn on behavior monitoring</td>
-		<td style="vertical-align:top">Windows Components/Windows Defender/Real-time Protection</td>
-		<td style="vertical-align:top">RealtimeProtection_DisableBehaviorMonitoring</td>
-		<td style="vertical-align:top">WindowsDefender.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#defender-allowfullscanremovabledrivescanning">Defender/AllowFullScanRemovableDriveScanning</a></td>
-		<td style="vertical-align:top">Scan removable drives</td>
-		<td style="vertical-align:top">Windows Components/Windows Defender/Scan</td>
-		<td style="vertical-align:top">Scan_DisableRemovableDriveScanning</td>
-		<td style="vertical-align:top">WindowsDefender.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#defender-allowemailscanning">Defender/AllowEmailScanning</a></td>
-		<td style="vertical-align:top">Turn on e-mail scanning</td>
-		<td style="vertical-align:top">Windows Components/Windows Defender/Scan</td>
-		<td style="vertical-align:top">Scan_DisableEmailScanning</td>
-		<td style="vertical-align:top">WindowsDefender.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#windowsinkworkspace-allowwindowsinkworkspace">WindowsInkWorkspace/AllowWindowsInkWorkspace</a></td>
-		<td style="vertical-align:top">Allow Windows Ink Workspace</td>
-		<td style="vertical-align:top">Windows Components/Windows Ink Workspace</td>
-		<td style="vertical-align:top">AllowWindowsInkWorkspace</td>
-		<td style="vertical-align:top">WindowsInkWorkspace.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a></td>
-		<td style="vertical-align:top">Disable all apps from Windows Store </td>
-		<td style="vertical-align:top">Windows Components/Store</td>
-		<td style="vertical-align:top">DisableStoreApps</td>
-		<td style="vertical-align:top">WindowsStore.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowautoupdate">Update/Allowautoupdate</a></td>
-		<td style="vertical-align:top">Allow Automatic Updates immediate installation</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">ImmediateInstall_Title</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allownonmicrosoftsignedupdate">Update/AllowNonMicrosoftSignedUpdate</a></td>
-		<td style="vertical-align:top">Allow signed updates from an intranet Microsoft update service location </td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">TrustedPublisher_Title</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowautoupdate">Update/Allowautoupdate</a></td>
-		<td style="vertical-align:top">Configure Automatic Updates</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">AutoUpdateCfg</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowmuupdateservice">Update/AllowMUUpdateService</a></td>
-		<td style="vertical-align:top">Configure Automatic Updates</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">AutoUpdateCfg</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowautoupdate">Update/AllowAutoUpdate</a></td>
-		<td style="vertical-align:top">Configure Automatic Updates</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">AutoUpdateCfg</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-scheduledinstallday">Update/ScheduledInstallDay</a></td>
-		<td style="vertical-align:top">Configure Automatic Updates</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">AutoUpdateCfg</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-scheduledinstalltime">Update/ScheduledInstallTime</a></td>
-		<td style="vertical-align:top">Configure Automatic Updates</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">AutoUpdateCfg</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowupdateservice">Update/AllowUpdateService</a></td>
-		<td style="vertical-align:top">Do not connect to any Windows Update Internet locations</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">DoNotConnectToWindowsUpdateInternetLocations</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-allowautoupdate">Update/Allowautoupdate</a></td>
-		<td style="vertical-align:top">Remove access to use all Windows Update features</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">RemoveWindowsUpdate</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-updateserviceurl">Update/Updateserviceurl</a></td>
-		<td style="vertical-align:top">Specify intranet Microsoft update service location</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">CorpWuURL</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-updateserviceurl">Update/UpdateServiceUrl</a></td>
-		<td style="vertical-align:top">Specify intranet Microsoft update service location</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">CorpWuURL</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-activehoursend">Update/ActiveHoursEnd</a></td>
-		<td style="vertical-align:top">Turn off auto-restart for updates during active hours</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">ActiveHours</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#update-activehoursstart ">Update/ActiveHoursStart </a></td>
-		<td style="vertical-align:top">Turn off auto-restart for updates during active hours</td>
-		<td style="vertical-align:top">Windows Components/Windows Update</td>
-		<td style="vertical-align:top">ActiveHours</td>
-		<td style="vertical-align:top">WindowsUpdate.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#wifi-allowautoconnecttowifisensehotspots">WiFi/AllowAutoConnectToWiFiSenseHotspots</a></td>
-		<td style="vertical-align:top">Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services</td>
-		<td style="vertical-align:top">Network/WLAN Service/WLAN Settings</td>
-		<td style="vertical-align:top">WiFiSense</td>
-		<td style="vertical-align:top">wlansvc.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowfontdownloads">InternetExplorer/InternetZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowscriptlets">InternetExplorer/InternetZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneinitializeandscriptactivexcontrols">InternetExplorer/InternetZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowsmartscreenie">InternetExplorer/InternetZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-internetzoneallowlessprivilegedsites">InternetExplorer/InternetZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_1</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowfontdownloads">InternetExplorer/IntranetZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowscriptlets">InternetExplorer/IntranetZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallownetframeworkreliantcomponents">InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowsmartscreenie">InternetExplorer/IntranetZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowuserdatapersistence">InternetExplorer/IntranetZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-intranetzoneallowlessprivilegedsites">InternetExplorer/IntranetZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_3</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowfontdownloads">InternetExplorer/LocalMachineZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowscriptlets">InternetExplorer/LocalMachineZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezonenavigatewindowsandframes">InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowsmartscreenie">InternetExplorer/LocalMachineZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowuserdatapersistence">InternetExplorer/LocalMachineZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-localmachinezoneallowlessprivilegedsites">InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_9</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowaccesstodatasources">InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowfontdownloads">InternetExplorer/LockedDownInternetZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowscriptlets">InternetExplorer/LockedDownInternetZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowsmartscreenie">InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowuserdatapersistence">InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowninternetzoneallowlessprivilegedsites">InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_2</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowaccesstodatasources">InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowfontdownloads">InternetExplorer/LockedDownIntranetZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowscriptlets">InternetExplorer/LockedDownIntranetZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzonenavigatewindowsandframes">InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowsmartscreenie">InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowuserdatapersistence">InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownintranetzoneallowlessprivilegedsites">InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_4</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources">InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowfontdownloads">InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowscriptlets">InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes">InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie">InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence">InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites">InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_10</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets">InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_8</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources">InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowscriptlets">InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie">InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence">InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites">InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_6</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowaccesstodatasources">InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowscriptlets">InternetExplorer/RestrictedSitesZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowsmartscreenie">InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_7</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowaccesstodatasources">InternetExplorer/TrustedSitesZoneAllowAccessToDataSources</a></td>
 		<td style="vertical-align:top">Access data sources across domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyAccessDataSourcesAcrossDomains_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowfontdownloads">InternetExplorer/TrustedSitesZoneAllowFontDownloads</a></td>
 		<td style="vertical-align:top">Allow font downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyFontDownload_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowscriptlets">InternetExplorer/TrustedSitesZoneAllowScriptlets</a></td>
 		<td style="vertical-align:top">Allow scriptlets</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_AllowScriptlets_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls</a></td>
 		<td style="vertical-align:top">Automatic prompting for ActiveX controls</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarActiveXURLaction_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads</a></td>
 		<td style="vertical-align:top">Automatic prompting for file downloads</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNotificationBarDownloadURLaction_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a></td>
 		<td style="vertical-align:top">Initialize and script ActiveX controls not marked as safe</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyScriptActiveXNotMarkedSafe_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a></td>
 		<td style="vertical-align:top">Navigate windows and frames across different domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyNavigateSubframesAcrossDomains_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents</a></td>
 		<td style="vertical-align:top">Run .NET Framework-reliant components not signed with Authenticode</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUnsignedFrameworkComponentsURLaction_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowsmartscreenie">InternetExplorer/TrustedSitesZoneAllowSmartScreenIE</a></td>
 		<td style="vertical-align:top">Turn on SmartScreen Filter scan</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_Policy_Phishing_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowuserdatapersistence">InternetExplorer/TrustedSitesZoneAllowUserDataPersistence</a></td>
 		<td style="vertical-align:top">Userdata persistence</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyUserdataPersistence_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-trustedsiteszoneallowlessprivilegedsites">InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites</a></td>
 		<td style="vertical-align:top">Web sites in less privileged Web content zones can navigate into this zone</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone</td>
 		<td style="vertical-align:top">IZ_PolicyZoneElevationURLaction_5</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowonewordentry">InternetExplorer/AllowOneWordEntry</a></td>
 		<td style="vertical-align:top">Go to an intranet site for a one-word entry in the Address bar</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing</td>
 		<td style="vertical-align:top">UseIntranetSiteForOneWordEntry</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-allowaddonlist">InternetExplorer/AllowAddOnList</a></td>
 		<td style="vertical-align:top">Add-on List</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
 		<td style="vertical-align:top">AddonManagement_AddOnList</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a></td>
 		<td style="vertical-align:top">Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
 		<td style="vertical-align:top">DisableFlashInIE</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-donotblockoutdatedactivexcontrols">InternetExplorer/DoNotBlockOutdatedActiveXControls</a></td>
 		<td style="vertical-align:top">Turn off blocking of outdated ActiveX controls for Internet Explorer</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
 		<td style="vertical-align:top">VerMgmtDisable</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains">InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains</a></td>
 		<td style="vertical-align:top">Turn off blocking of outdated ActiveX controls for Internet Explorer on specific domains</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Security Features/Add-on Management</td>
 		<td style="vertical-align:top">VerMgmtDomainAllowlist</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#internetexplorer-disableenclosuredownloading">InternetExplorer/DisableEnclosureDownloading</a></td>
 		<td style="vertical-align:top">Prevent downloading of enclosures</td>
 		<td style="vertical-align:top">Windows Components/RSS Feeds</td>
 		<td style="vertical-align:top">Disable_Downloading_of_Enclosures</td>
 		<td style="vertical-align:top">inetres.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a></td>
 		<td style="vertical-align:top">Fail authentication requests when Kerberos armoring is not available</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">ClientRequireFast</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a></td>
 		<td style="vertical-align:top">Kerberos client support for claims, compound authentication and Kerberos armoring</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">EnableCbacAndArmor</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#kerberos-requirestrictkdcvalidation">Kerberos/RequireStrictKDCValidation</a></td>
 		<td style="vertical-align:top">Require strict KDC validation</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">ValidateKDC</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a></td>
 		<td style="vertical-align:top">Set maximum Kerberos SSPI context token buffer size</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">MaxTokenSize</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#kerberos-allowforestsearchfolder">Kerberos/AllowForestSearchFolder</a></td>
 		<td style="vertical-align:top">Use forest search order</td>
 		<td style="vertical-align:top">System/Kerberos</td>
 		<td style="vertical-align:top">ForestSearch</td>
 		<td style="vertical-align:top">Kerberos.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a></td>
 		<td style="vertical-align:top">Do not display network selection UI</td>
 		<td style="vertical-align:top">System/Logon</td>
 		<td style="vertical-align:top">DontDisplayNetworkSelectionUI</td>
 		<td style="vertical-align:top">Logon.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a></td>
 		<td style="vertical-align:top">Turn off app notifications on the lock screen</td>
 		<td style="vertical-align:top">System/Logon</td>
 		<td style="vertical-align:top">DisableLockScreenAppNotifications</td>
 		<td style="vertical-align:top">Logon.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a></td>
 		<td style="vertical-align:top">Hardened UNC Paths</td>
 		<td style="vertical-align:top">Network/Network Provider</td>
 		<td style="vertical-align:top">Pol_HardenedPaths</td>
 		<td style="vertical-align:top">NetworkProvider.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#power-allowstandbywhensleepingpluggedin">Power/AllowStandbyWhenSleepingPluggedIn</a></td>
 		<td style="vertical-align:top">Allow standby states (S1-S3) when sleeping (plugged in)</td>
 		<td style="vertical-align:top">System/Power Management/Sleep Settings</td>
 		<td style="vertical-align:top">AllowStandbyStatesAC_2</td>
 		<td style="vertical-align:top">Power.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#power-requirepasswordwhencomputerwakesonbattery">Power/RequirePasswordWhenComputerWakesOnBattery</a></td>
 		<td style="vertical-align:top">Require a password when a computer wakes (on battery)</td>
 		<td style="vertical-align:top">System/Power Management/Sleep Settings</td>
 		<td style="vertical-align:top">DCPromptForPasswordOnResume_2</td>
 		<td style="vertical-align:top">Power.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#power-requirepasswordwhencomputerwakespluggedin">Power/RequirePasswordWhenComputerWakesPluggedIn</a></td>
 		<td style="vertical-align:top">Require a password when a computer wakes (plugged in)</td>
 		<td style="vertical-align:top">System/Power Management/Sleep Settings</td>
 		<td style="vertical-align:top">ACPromptForPasswordOnResume_2</td>
 		<td style="vertical-align:top">Power.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a></td>
 		<td style="vertical-align:top">Point and Print Restrictions</td>
 		<td style="vertical-align:top">Control Panel/Printers</td>
 		<td style="vertical-align:top">PointAndPrint_Restrictions</td>
 		<td style="vertical-align:top">Printing.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a></td>
 		<td style="vertical-align:top">Point and Print Restrictions</td>
 		<td style="vertical-align:top">Printers</td>
 		<td style="vertical-align:top">PointAndPrint_Restrictions_Win7</td>
 		<td style="vertical-align:top">Printing.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#printers-publishprinters">Printers/PublishPrinters</a></td>
 		<td style="vertical-align:top">Allow printers to be published</td>
 		<td style="vertical-align:top">Printers</td>
 		<td style="vertical-align:top">PublishPrinters</td>
 		<td style="vertical-align:top">Printing2.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteassistance-unsolicitedremoteassitance">RemoteAssistance/UnsolicitedRemoteAssitance</a></td>
 		<td style="vertical-align:top">Configure Offer Remote Assistance</td>
 		<td style="vertical-align:top">System/Remote Assistance</td>
 		<td style="vertical-align:top">RA_Unsolicit</td>
 		<td style="vertical-align:top">RemoteAssistance.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteassistance-solicitedremoteassistance">RemoteAssistance/SolicitedRemoteAssistance</a></td>
 		<td style="vertical-align:top">Configure Solicited Remote Assistance</td>
 		<td style="vertical-align:top">System/Remote Assistance</td>
 		<td style="vertical-align:top">RA_Solicit</td>
 		<td style="vertical-align:top">RemoteAssistance.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteassistance-customizewarningmessages">RemoteAssistance/CustomizeWarningMessages</a></td>
 		<td style="vertical-align:top">Customize warning messages</td>
 		<td style="vertical-align:top">System/Remote Assistance</td>
 		<td style="vertical-align:top">RA_Options</td>
 		<td style="vertical-align:top">RemoteAssistance.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteassistance-sessionlogging">RemoteAssistance/SessionLogging</a></td>
 		<td style="vertical-align:top">Turn on session logging</td>
 		<td style="vertical-align:top">System/Remote Assistance</td>
 		<td style="vertical-align:top">RA_Logging</td>
 		<td style="vertical-align:top">RemoteAssistance.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteprocedurecall-rpcendpointmapperclientauthentication">RemoteProcedureCall/RPCEndpointMapperClientAuthentication</a></td>
 		<td style="vertical-align:top">Enable RPC Endpoint Mapper Client Authentication</td>
 		<td style="vertical-align:top">System/Remote Procedure Call</td>
 		<td style="vertical-align:top">RpcEnableAuthEpResolution</td>
 		<td style="vertical-align:top">RPC.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remoteprocedurecall-restrictunauthenticatedrpcclients">RemoteProcedureCall/RestrictUnauthenticatedRPCClients</a></td>
 		<td style="vertical-align:top">Restrict Unauthenticated RPC clients</td>
 		<td style="vertical-align:top">System/Remote Procedure Call</td>
 		<td style="vertical-align:top">RpcRestrictRemoteClients</td>
 		<td style="vertical-align:top">RPC.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#system-disablesystemrestore">System/DisableSystemRestore</a></td>
 		<td style="vertical-align:top">Turn off System Restore</td>
 		<td style="vertical-align:top">System/System Restore</td>
 		<td style="vertical-align:top">SR_DisableSR</td>
 		<td style="vertical-align:top">SystemRestore.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-donotallowpasswordsaving">RemoteDesktopServices/DoNotAllowPasswordSaving</a></td>
 		<td style="vertical-align:top">Do not allow passwords to be saved</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Connection Client</td>
 		<td style="vertical-align:top">TS_CLIENT_DISABLE_PASSWORD_SAVING_2</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-allowuserstoconnectremotely">RemoteDesktopServices/AllowUsersToConnectRemotely</a></td>
 		<td style="vertical-align:top">Allow users to connect remotely by using Remote Desktop Services</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections</td>
 		<td style="vertical-align:top">TS_DISABLE_CONNECTIONS</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-donotallowdriveredirection">RemoteDesktopServices/DoNotAllowDriveRedirection</a></td>
 		<td style="vertical-align:top">Do not allow drive redirection</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection</td>
 		<td style="vertical-align:top">TS_CLIENT_DRIVE_M</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-promptforpassworduponconnection">RemoteDesktopServices/PromptForPasswordUponConnection</a></td>
 		<td style="vertical-align:top">Always prompt for password upon connection</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
 		<td style="vertical-align:top">TS_PASSWORD</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-requiresecurerpccommunication">RemoteDesktopServices/RequireSecureRPCCommunication</a></td>
 		<td style="vertical-align:top">Require secure RPC communication</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
 		<td style="vertical-align:top">TS_RPC_ENCRYPTION</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#remotedesktopservices-clientconnectionencryptionlevel">RemoteDesktopServices/ClientConnectionEncryptionLevel</a></td>
 		<td style="vertical-align:top">Set client connection encryption level</td>
 		<td style="vertical-align:top">Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security</td>
 		<td style="vertical-align:top">TS_ENCRYPTION_POLICY</td>
 		<td style="vertical-align:top">TerminalServer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-bitencryptionmethodbydrivetype ">BitLocker/BitEncryptionMethodByDriveType </a></td>
 		<td style="vertical-align:top">Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption</td>
 		<td style="vertical-align:top">EncryptionMethodWithXts_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a></td>
 		<td style="vertical-align:top">Choose how BitLocker-protected fixed drives can be recovered</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
 		<td style="vertical-align:top">FDVRecoveryUsage_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a></td>
 		<td style="vertical-align:top">Deny write access to fixed drives not protected by BitLocker</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Fixed Data Drives</td>
 		<td style="vertical-align:top">FDVDenyWriteAccess_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a></td>
 		<td style="vertical-align:top">Choose how BitLocker-protected operating system drives can be recovered</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
 		<td style="vertical-align:top">OSRecoveryUsage_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a></td>
 		<td style="vertical-align:top">Require additional authentication at startup</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
 		<td style="vertical-align:top">ConfigureAdvancedStartup_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a></td>
 		<td style="vertical-align:top">Configure minimum PIN length for startup</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
 		<td style="vertical-align:top">MinimumPINLength_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a></td>
 		<td style="vertical-align:top">Configure pre-boot recovery message and URL</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Operating System Drives</td>
 		<td style="vertical-align:top">PrebootRecoveryInfo_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#bitlocker-removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a></td>
 		<td style="vertical-align:top">Deny write access to removable drives not protected by BitLocker</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption/Removable Data Drives</td>
 		<td style="vertical-align:top">RDVDenyWriteAccess_Name</td>
 		<td style="vertical-align:top">VolumeEncryption.admx</td>
-</tr>	<tr>
-		<td style="vertical-align:top"><a href="#smartscreen-allowwindowdefendersmartscreen">SmartScreen/AllowWindowDefenderSmartScreen</a></td>
-		<td style="vertical-align:top">Configure Windows Defender SmartScreen</td>
-		<td style="vertical-align:top">Windows Components/File Explorer</td>
-		<td style="vertical-align:top">EnableSmartScreen</td>
-		<td style="vertical-align:top">WindowsExplorer.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#datausage-setcost3g">DataUsage/SetCost3G</a></td>
 		<td style="vertical-align:top">Set 3G Cost</td>
 		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
 		<td style="vertical-align:top">SetCost3G</td>
 		<td style="vertical-align:top">wwansvc.admx</td>
-</tr>	<tr>
+	</tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#datausage-setcost4g">DataUsage/SetCost4G</a></td>
 		<td style="vertical-align:top">Set 4G Cost</td>
 		<td style="vertical-align:top">Network/WWAN Service/WWAN Media Cost</td>
 		<td style="vertical-align:top">SetCost4G</td>
 		<td style="vertical-align:top">wwansvc.admx</td>
-</tr></table>
+	</tr>
+</table>
 <!-- ADMX-TABLE-END -->
 
 ## <a href="" id="list-of--areaname---policyname-"></a>List of &lt;AreaName&gt;/&lt;PolicyName&gt;
 
 
 <!-- ADMX-DESCRIPTIONS-START -->
-<a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**
-
-<p style="margin-left: 20px">This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL.</p>
-
-<p style="margin-left: 20px">If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.</p>
-
-<p style="margin-left: 20px">Note: Wild card characters cannot be used when specifying the host URLs.</p>
-
-<a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**
-
-<p style="margin-left: 20px">This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.</p>
-
-<p style="margin-left: 20px">If you enable or do not configure this policy setting, users can download and install Windows preview software on their devices.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, the item "Get Insider builds" will be unavailable.</p>
-
-<p style="margin-left: 20px">Note: This policy setting applies only to devices running the Pro, Enterprise, Education or Server editions of Windows 10.</p>
-
-<a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access account information.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access call history.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access contacts.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access email.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access location.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can read or send messages (text or MMS).</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access motion data.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access notifications.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access the calendar.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access the camera.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access the microphone.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can access trusted devices.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps have access to control radios.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can make phone calls.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
-<a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**
-
-<p style="margin-left: 20px">This policy setting specifies whether Windows apps can sync with devices.</p>
-
-<p style="margin-left: 20px">You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.</p>
-
-<p style="margin-left: 20px">If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can sync with devices by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Allow" option, Windows apps are allowed to sync with devices and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you choose the "Force Deny" option, Windows apps are not allowed to sync with devices and employees in your organization cannot change it.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can sync with devices by using Settings &gt; Privacy on the device.</p>
-
-<p style="margin-left: 20px">If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.</p>
-
 <a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**
 
 <p style="margin-left: 20px">This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.</p>
@@ -2476,92 +1930,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.</p>
 
-<a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**
-
-<p style="margin-left: 20px">Manages a Windows app's ability to share data between users who have installed the app.</p>
-
-<p style="margin-left: 20px">If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the Windows.Storage API.</p>
-
-<p style="margin-left: 20px">If you disable this policy, a Windows app can't share app data with other instances of that app. If this policy was previously enabled, any previously shared app data will remain in the SharedLocal folder.</p>
-
-<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, you cannot install LOB or developer-signed Windows Store apps.</p>
-
-<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**
-
-<p style="margin-left: 20px">Allows or denies development of Windows Store applications and installing them directly from an IDE.</p>
-
-<p style="margin-left: 20px">If you enable this setting and enable the "Allow all trusted apps to install" Group Policy, you can develop Windows Store apps and install them directly from an IDE.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, you cannot develop Windows Store apps or install them directly from an IDE.</p>
-
-<a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**
-
-<p style="margin-left: 20px">This policy setting allows you to manage installing Windows apps on additional volumes such as secondary partitions, USB drives, or SD cards.</p>
-
-<p style="margin-left: 20px">If you enable this setting, you can't move or install Windows apps on volumes that are not the system volume.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, you can move or install Windows apps on other volumes.</p>
-
-<a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**
-
-<p style="margin-left: 20px">Prevent users' app data from moving to another location when an app is moved or installed on another location.</p>
-
-<p style="margin-left: 20px">If you enable this setting, all users' app data will stay on the system volume, regardless of where the app is installed.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.</p>
-
-<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, you cannot install LOB or developer-signed Windows Store apps.</p>
-
-<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**
-
-<p style="margin-left: 20px">Allows or denies development of Windows Store applications and installing them directly from an IDE.</p>
-
-<p style="margin-left: 20px">If you enable this setting and enable the "Allow all trusted apps to install" Group Policy, you can develop Windows Store apps and install them directly from an IDE.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, you cannot develop Windows Store apps or install them directly from an IDE.</p>
-
-<a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**
-
-<p style="margin-left: 20px">This policy setting allows you to manage installing Windows apps on additional volumes such as secondary partitions, USB drives, or SD cards.</p>
-
-<p style="margin-left: 20px">If you enable this setting, you can't move or install Windows apps on volumes that are not the system volume.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, you can move or install Windows apps on other volumes.</p>
-
-<a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**
-
-<p style="margin-left: 20px">Prevent users' app data from moving to another location when an app is moved or installed on another location.</p>
-
-<p style="margin-left: 20px">If you enable this setting, all users' app data will stay on the system volume, regardless of where the app is installed.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.</p>
-
-<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**
-
-<p style="margin-left: 20px">This policy setting lets you opt-out of sending KMS client activation data to Microsoft automatically. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.</p>
-
-<p style="margin-left: 20px">Policy Options:</p>
-
-<p style="margin-left: 20px">-   Not Configured (default -- data will be automatically sent to Microsoft)</p>
-
-<p style="margin-left: 20px">-   Disabled (data will be automatically sent to Microsoft)</p>
-
-<p style="margin-left: 20px">-   Enabled (data will not be sent to Microsoft)</p>
-
 <a href="" id="attachmentmanager-donotpreservezoneinformation"></a>**AttachmentManager/DoNotPreserveZoneInformation**
 
 <p style="margin-left: 20px">This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This requires NTFS in order to function correctly, and will fail without notice on FAT32. By not preserving the zone information, Windows cannot make proper risk assessments.</p>
@@ -2636,96 +2004,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.</p>
 
-<a href="" id="biometrics-facialfeaturesuseenhancedantispoofing"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing**
-
-<p style="margin-left: 20px">This policy setting determines whether enhanced anti-spoofing is configured for devices which support it.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, users will be able to choose whether or not to use enhanced anti-spoofing on supported devices.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Windows will require all users on the device to use anti-spoofing for facial features, on devices which support it.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, enhanced anti-spoofing is turned off for all users on the device and they will be unable to turn it on.</p>
-
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**
-
-<p style="margin-left: 20px">This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, SSL cipher suites are prioritized in the order specified.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, default cipher suite order is used.</p>
-
-<p style="margin-left: 20px">Link for all the cipherSuites: http://go.microsoft.com/fwlink/?LinkId=517265</p>
-
-<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**
-
-<p style="margin-left: 20px">This policy setting lets you configure Windows spotlight on the lock screen.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users will not be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.</p>
-
-<p style="margin-left: 20px">Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, the checkbox will have no effect.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, Windows spotlight will be turned off and users will no longer be able to select it as their lock screen. Users will see the default lock screen image and will be able to select another image, unless you have enabled the "Prevent changing lock screen image" policy.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen image" policy.</p>
-
-<p style="margin-left: 20px">Note: This policy is only available for Enterprise SKUs</p>
-
-<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**
-
-<p style="margin-left: 20px">This policy setting prevents Windows tips from being shown to users.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will no longer see Windows tips.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users may see contextual popups explaining how to use Windows. Microsoft uses diagnostic and usage data to determine which tips to show.</p>
-
-<p style="margin-left: 20px">Note: If you disable or do not configure this policy setting, but enable the "Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Allow Telemetry" policy setting with a level of "Basic" or below, users may see a limited set of tips.</p>
-
-<p style="margin-left: 20px">Also, this setting only applies to Enterprise and Education SKUs.</p>
-
-<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**
-
-<p style="margin-left: 20px">If you enable this policy, Windows spotlight on lock screen, Windows tips, Microsoft consumer features and other related features will no longer suggest apps and content from third-party software publishers. Users may still see suggestions and tips to make them more productive with Microsoft features and apps.</p>
-
-<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**
-
-<p style="margin-left: 20px">This policy setting lets you turn off all Windows Spotlight features at once.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Windows spotlight on lock screen, Windows tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.</p>
-
-<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**
-
-<p style="margin-left: 20px">This policy setting turns off experiences that help consumers make the most of their devices and Microsoft account.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will no longer see personalized recommendations from Microsoft and notifications about their Microsoft account.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users may see suggestions from Microsoft and notifications about their Microsoft account.</p>
-
-<p style="margin-left: 20px">Note: This setting only applies to Enterprise and Education SKUs.</p>
-
-<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**
-
-<p style="margin-left: 20px">This policy setting turns off experiences that help consumers make the most of their devices and Microsoft account.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, users will no longer see personalized recommendations from Microsoft and notifications about their Microsoft account.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users may see suggestions from Microsoft and notifications about their Microsoft account.</p>
-
-<p style="margin-left: 20px">Note: This setting only applies to Enterprise and Education SKUs.</p>
-
-<a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**
-
-<p style="margin-left: 20px">This setting allows you to force a specific default lock screen and logon image by entering the path (location) of the image file. The same image will be used for both the lock and logon screens.</p>
-
-<p style="margin-left: 20px">This setting lets you specify the default lock screen and logon image shown when no user is signed in, and also sets the specified image as the default for all users (it replaces the inbox default image).</p>
-
-<p style="margin-left: 20px">To use this setting, type the fully qualified path and name of the file that stores the default lock screen and logon image. You can type a local path, such as C:\windows\web\screen\lockscreen.jpg or a UNC path, such as \\Server\Share\Corp.jpg.</p>
-
-<p style="margin-left: 20px">This can be used in conjunction with the "Prevent changing lock screen and logon image" setting to always force the specified lock screen and logon image to be shown.</p>
-
-<p style="margin-left: 20px">Note: This setting only applies to Enterprise, Education, and Server SKUs.</p>
-
 <a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**
 
 <p style="margin-left: 20px">Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.</p>
@@ -2753,16 +2031,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable or don't configure this policy setting, a domain user can't set up and use a convenience PIN.</p>
 
 <p style="margin-left: 20px">Note that the user's domain password will be cached in the system vault when using this feature.</p>
-
-<a href="" id="windowslogon-hidefastuserswitching "></a>**WindowsLogon/HideFastUserSwitching **
-
-<p style="margin-left: 20px">This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied.</p>
-
-<p style="margin-left: 20px">The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.</p>
 
 <a href="" id="credentialsui-disablepasswordreveal"></a>**CredentialsUI/DisablePasswordReveal**
 
@@ -2799,28 +2067,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.</p>
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.</p>
-
-<a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**
-
-<p style="margin-left: 20px">This policy setting determines the amount of diagnostic and usage data reported to Microsoft. A value of 0 will send minimal data to Microsoft. This data includes Malicious Software Removal Tool (MSRT) &amp; Windows Defender data, if enabled, and telemetry client settings. Setting a value of 0 applies to enterprise, EDU, IoT and server devices only. Setting a value of 0 for other devices is equivalent to choosing a value of 1. A value of 1 sends only a basic amount of diagnostic and usage data. Note that setting values of 0 or 1 will degrade certain experiences on the device. A value of 2 sends enhanced diagnostic and usage data. A value of 3 sends the same data as a value of 2, plus additional diagnostics data, including the files and content that may have caused the problem. Windows 10 telemetry settings applies to the Windows operating system and some first party apps. This setting does not apply to third party apps running on Windows 10.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can configure the Telemetry level in Settings.</p>
-
-<a href="" id="system-telemetryproxy "></a>**System/TelemetryProxy **
-
-<p style="margin-left: 20px">With this policy setting, you can forward Connected User Experience and Telemetry requests to a proxy server.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organizations network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection.  If the named proxy fails, or if you disable or do not configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.</p>
-
-<p style="margin-left: 20px">The format for this setting is &lt;server&gt;:&lt;port&gt;</p>
-
-<a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**
-
-<p style="margin-left: 20px">This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior. A value of 1 permits Microsoft to configure device settings only. A value of 2 allows Microsoft to conduct full experimentations.</p>
-
-<p style="margin-left: 20px">If you disable this policy setting, all experimentations will be turned off.</p>
-
-<p style="margin-left: 20px">If you do not configure this policy setting, user can configure the Let Microsoft try features on this build option in Settings.</p>
 
 <a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**
 
@@ -2952,20 +2198,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: If the Disable Changing Home Page Settings policy is enabled, the user cannot add secondary home pages.</p>
 
-<a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**
-
-<p style="margin-left: 20px">This policy enables the automatic learning component of input personalization that includes speech, inking, and typing.</p>
-
-<p style="margin-left: 20px">Automatic learning enables the collection of speech and handwriting patterns, typing history, contacts, and recent calendar information.  It is required for the use of Cortana.  Some of this collected information may be stored on the user's OneDrive, in the case of inking and typing; some of the information will be uploaded to Microsoft to personalize speech.</p>
-
-<p style="margin-left: 20px">Automatic learning for speech may not be available for all languages, even when inking and typing is available.</p>
-
-<p style="margin-left: 20px">If this policy is enabled, automatic learning of speech, inking, and typing will be enabled and users cannot change its value via PC Settings.</p>
-
-<p style="margin-left: 20px">If this policy is disabled, automatic learning of speech, inking, and typing stops and users cannot change its value via PC Settings.</p>
-
-<p style="margin-left: 20px">If this policy is not configured, the user may configure the speech, inking, and typing personalisation setting via PC Settings.</p>
-
 <a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**
 
 <p style="margin-left: 20px">Prevents Internet Explorer from checking whether a new version of the browser is available.</p>
@@ -3007,236 +2239,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you enable this policy setting, the user will not be able to configure proxy settings.</p>
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can configure proxy settings.</p>
-
-<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**
-
-<p style="margin-left: 20px">This policy setting turns off toast notifications on the lock screen.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, applications will not be able to raise toast notifications on the lock screen.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.</p>
-
-<p style="margin-left: 20px">No reboots or service restarts are required for this policy setting to take effect.</p>
-
-<a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you enable or don't configure this setting, the F12 Developer Tools are available in Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you disable this setting, the F12 Developer Tools aren't available in Microsoft Edge.</p>
-
-<a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can browse using InPrivate website browsing.</p>
-
-<p style="margin-left: 20px">If you enable or don't configure this setting, employees can use InPrivate website browsing.</p>
-
-<p style="margin-left: 20px">If you disable this setting, employees can't use InPrivate website browsing.</p>
-
-<a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge. By default, employees can choose whether to use Autofill.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees can use Autofill to automatically fill in forms while using Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you disable this setting, employees can't use Autofill to automatically fill in forms while using Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether to use Autofill to automatically fill in forms while using Microsoft Edge.</p>
-
-<a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**
-
-<p style="margin-left: 20px">This setting lets you configure how to work with cookies.</p>
-
-<p style="margin-left: 20px">If you enable this setting, you must also decide whether to:</p>
-
-<p style="margin-left: 20px">Allow all cookies (default): Allows all cookies from all websites.</p>
-
-<p style="margin-left: 20px">Block all cookies: Blocks all cookies from all websites.</p>
-
-<p style="margin-left: 20px">Block only 3rd-party cookies: Blocks only cookies from 3rd-party websites.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, all cookies are allowed from all sites.</p>
-
-<a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can send Do Not Track requests to websites that ask for tracking info.  By default, Do Not Track requests aren't sent, but employees can choose to turn on and send requests.</p>
-
-<p style="margin-left: 20px">If you enable this setting, Do Not Tracker requests are always sent to websites asking for tracking info.</p>
-
-<p style="margin-left: 20px">If you disable this setting, Do Not Track requests are never sent to websites asking for tracking info.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether to send Do Not Track requests to websites asking for tracking info.</p>
-
-<a href="" id="browser-homepages"></a>**Browser/Homepages**
-
-<p style="margin-left: 20px">This policy setting lets you configure one or more Home pages. for domain-joined devices. Your employees won't be able to change this after you set it.</p>
-
-<p style="margin-left: 20px">If you enable this setting, you can configure one or more Home pages. If this setting is enabled, you must also include URLs to the pages, separating multiple pages by using angle brackets in this format:</p>
-
-<p style="margin-left: 20px">&lt;support.contoso.com&gt;&lt;support.microsoft.com&gt;</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, your default Home page is the webpage specified in App settings.</p>
-
-<a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can save their passwords locally, using Password Manager. By default, Password Manager is turned on.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees can use Password Manager to save their passwords locally.</p>
-
-<p style="margin-left: 20px">If you disable this setting, employees can't use Password Manager to save their passwords locally.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether to use Password Manager to save their passwords locally.</p>
-
-<a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on..</p>
-
-<p style="margin-left: 20px">If you enable this setting, Pop-up Blocker is turned on, stopping pop-up windows from appearing.</p>
-
-<p style="margin-left: 20px">If you disable this setting, Pop-up Blocker is turned off, letting pop-ups windows appear.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether to use Pop-up Blocker.</p>
-
-<a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether search suggestions appear in the Address bar of Microsoft Edge. By default, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees can see search suggestions in the Address bar of Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you disable this setting, employees can't see search suggestions in the Address bar of Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.</p>
-
-<a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**
-
-<p style="margin-left: 20px">This policy setting lets you configure whether to turn on SmartScreen Filter. SmartScreen Filter provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, SmartScreen Filter is turned on.</p>
-
-<p style="margin-left: 20px">If you enable this setting, SmartScreen Filter is turned on and employees can't turn it off.</p>
-
-<p style="margin-left: 20px">If you disable this setting, SmartScreen Filter is turned off and employees can't turn it on.</p>
-
-<p style="margin-left: 20px">If you don't configure this setting, employees can choose whether to use SmartScreen Filter.</p>
-
-<a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**
-
-<p style="margin-left: 20px">This policy setting lets you specify where to find the list of websites you want opened using Enterprise Mode IE, instead of Standard mode, because of compatibility issues. Users can't edit this list.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Internet Explorer downloads the website list from your location (HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\Main\EnterpriseMode), opening all listed websites using Enterprise Mode IE.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this policy setting, Internet Explorer opens all websites using Standards mode.</p>
-
-<a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can override the SmartScreen Filter warnings about downloading unverified files.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees can't ignore SmartScreen Filter warnings and they are blocked from downloading the unverified files.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, employees can ignore SmartScreen Filter warnings and continue the download process.</p>
-
-<a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees can override the SmartScreen Filter warnings about potentially malicious websites.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees can't ignore SmartScreen Filter warnings and they are blocked from continuing to the site.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, employees can ignore SmartScreen Filter warnings and continue to the site.</p>
-
-<a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you enable this setting, all intranet sites are automatically opened using Internet Explorer 11.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, all intranet sites are automatically opened using Microsoft Edge.</p>
-
-<a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**
-
-<p style="margin-left: 20px">This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</p>
-
-<p style="margin-left: 20px">If you enable this setting, employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</p>
-
-<p style="margin-left: 20px">If you disable or don't configure this setting, the default app behavior occurs and no additional page appears.</p>
-
-<a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**
-
-<p style="margin-left: 20px">This setting lets you decide whether employees can load extensions in Microsoft Edge.</p>
-
-<p style="margin-left: 20px">If you enable or don't configure this setting, employees can use Edge Extensions.</p>
-
-<p style="margin-left: 20px">If you disable this setting, employees can't use Edge Extensions.</p>
-
-<a href="" id="networkisolation-enterpriseproxyservers"></a>**NetworkIsolation/EnterpriseProxyServers**
-
-<p style="margin-left: 20px">This setting does not apply to desktop apps.</p>
-
-<p style="margin-left: 20px">A semicolon-separated list of Internet proxy server IP addresses. These addresses are categorized as Internet by Windows Network Isolation and are accessible to  apps that have the Internet Client or Internet Client/Server capabilities.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, apps on proxied networks can access the Internet without relying on the Private Network capability. However, in most situations Windows Network Isolation will be able to correctly discover proxies. By default, any proxies configured with this setting are merged with proxies that are auto-discovered. To make this policy configuration the sole list of allowed proxies, enable the "Proxy definitions are authoritative" setting.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, apps will use the Internet proxies auto-discovered by Windows Network Isolation.</p>
-
-<p style="margin-left: 20px">Example: [3efe:3022::1000];18.0.0.1;18.0.0.2</p>
-
-<p style="margin-left: 20px">For more information see: http://go.microsoft.com/fwlink/p/?LinkId=234043</p>
-
-<a href="" id="networkisolation-enterpriseinternalproxyservers"></a>**NetworkIsolation/EnterpriseInternalProxyServers**
-
-<p style="margin-left: 20px">This setting does not apply to desktop apps.</p>
-
-<p style="margin-left: 20px">A  semicolon-separated list of intranet proxy server IP addresses. These addresses are categorized as private by Windows Network Isolation and are accessible to  apps that have the Home/Work Networking capability.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, it allows an administrator to configure a set of proxies that provide access to intranet resources.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows Network Isolation attempts to discover proxies and configures them as Internet nodes.</p>
-
-<p style="margin-left: 20px">This setting should NOT be used to configure Internet proxies.</p>
-
-<p style="margin-left: 20px">Example: [3efe:3022::1000]; 18.0.0.1; 18.0.0.2</p>
-
-<p style="margin-left: 20px">For more information see: http://go.microsoft.com/fwlink/p/?LinkId=234043</p>
-
-<a href="" id="networkisolation-enterpriseiprange"></a>**NetworkIsolation/EnterpriseIPRange**
-
-<p style="margin-left: 20px">This setting does not apply to desktop apps.</p>
-
-<p style="margin-left: 20px">A comma-separated list of IP address ranges that are in your corporate network.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, it ensures that  apps with the Home/Work Networking capability have appropriate access to your corporate network. These addresses are only accessible to  apps if and only if the app has declared the Home/Work Networking capability.</p>
-
-<p style="margin-left: 20px">Windows Network Isolation attempts to automatically discover private network hosts. By default, the addresses configured with this policy setting are merged with the hosts that are declared as private through automatic discovery.</p>
-
-<p style="margin-left: 20px">To ensure that these addresses are the only addresses ever classified as private, enable the "Subnet definitions are authoritative" policy setting.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts.</p>
-
-<p style="margin-left: 20px">Example: 3efe:1092::/96,18.1.1.1/10</p>
-
-<p style="margin-left: 20px">For more information see: http://go.microsoft.com/fwlink/p/?LinkId=234043</p>
-
-<a href="" id="networkisolation-enterpriseproxyserversareauthoritative"></a>**NetworkIsolation/EnterpriseProxyServersAreAuthoritative**
-
-<p style="margin-left: 20px">This setting does not apply to desktop apps.</p>
-
-<p style="margin-left: 20px">Turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, it turns off Windows Network Isolation's automatic proxy discovery in the domain corporate environment. Only proxies configured with Group Policy are authoritative. This applies to both Internet and intranet proxies.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your proxy server addresses.</p>
-
-<p style="margin-left: 20px">For more information see: http://go.microsoft.com/fwlink/p/?LinkId=234043</p>
-
-<a href="" id="networkisolation-enterpriseiprangesareauthoritative"></a>**NetworkIsolation/EnterpriseIPRangesAreAuthoritative**
-
-<p style="margin-left: 20px">This setting does not apply to desktop apps.</p>
-
-<p style="margin-left: 20px">Turns off  Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, it turns off Windows Network Isolation's automatic discovery of private network hosts in the domain corporate environment. Only network hosts within the address ranges configured via Group Policy will be classified as private.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows Network Isolation attempts to automatically discover your private network hosts in the domain corporate environment.</p>
-
-<p style="margin-left: 20px">For more information see: http://go.microsoft.com/fwlink/p/?LinkId=234043</p>
 
 <a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**
 
@@ -3350,16 +2352,6 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, the user can add and remove sites from the list.</p>
 
-<a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**
-
-<p style="margin-left: 20px">Configure access to all removable storage classes.</p>
-
-<p style="margin-left: 20px">This policy setting takes precedence over any individual removable storage policy settings. To manage individual classes, use the policy settings available for each class.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, no access is allowed to any removable storage class.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.</p>
-
 <a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**
 
 <p style="margin-left: 20px">This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each others list of supported protocols and versions, and they select the most preferred match.</p>
@@ -3381,34 +2373,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable this policy setting, flip ahead with page prediction is turned on and the next webpage is loaded into the background.</p>
 
 <p style="margin-left: 20px">If you don't configure this setting, users can turn this behavior on or off, using the Settings charm.</p>
-
-<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**
-
-<p style="margin-left: 20px">Prevent syncing to and from this PC.  This turns off and disables the "sync your settings" switch on the "sync your settings" page in PC Settings.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, "sync your settings" will be turned off, and none of the "sync your setting" groups will be synced on this PC.</p>
-
-<p style="margin-left: 20px">Use the option "Allow users to turn syncing on" so that syncing it turned off by default but not disabled.</p>
-
-<p style="margin-left: 20px">If you do not set or disable this setting, "sync your settings" is on by default and configurable by the user.</p>
-
-<a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**
-
-<p style="margin-left: 20px">If you enable this policy and set it to Start menu or full screen Start, Start will be that size and users will be unable to change the size of Start in Settings.</p>
-
-<p style="margin-left: 20px">If you disable or dont configure this policy setting, Windows will automatically select the size based on hardware form factor and users will be able to change the size of Start in Settings.</p>
-
-<a href="" id="start-startlayout"></a>**Start/StartLayout**
-
-<p style="margin-left: 20px">Specifies the Start layout for users.</p>
-
-<p style="margin-left: 20px">This setting lets you specify the Start layout for users and prevents them from changing its configuration. The Start layout you specify must be stored in an XML file that was generated by the Export-StartLayout PowerShell cmdlet.</p>
-
-<p style="margin-left: 20px">To use this setting, you must first manually configure a device's Start layout to the desired look and feel. Once you are done, run the Export-StartLayout PowerShell cmdlet on that same device. The cmdlet will generate an XML file representing the layout you configured.</p>
-
-<p style="margin-left: 20px">Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file is not available when the user logs on, the layout won't be changed. Users cannot customize their Start screen while this setting is enabled.</p>
-
-<p style="margin-left: 20px">If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.</p>
 
 <a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**
 
@@ -3495,14 +2459,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.</p>
 
 <p style="margin-left: 20px">Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.</p>
-
-<a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingID**
-
-<p style="margin-left: 20px">This policy setting turns off the advertising ID, preventing apps from using the ID for experiences across apps.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, the advertising ID is turned off. Apps can't use the ID for experiences across apps.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.</p>
 
 <a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**
 
@@ -3611,370 +2567,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
 
 <p style="margin-left: 20px">If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.</p>
-
-<a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**
-
-<p style="margin-left: 20px">This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.</p>
-
-<p style="margin-left: 20px">You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new definitions and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft will not use this information to identify you or contact you.</p>
-
-<p style="margin-left: 20px">Possible options are:</p>
-
-<p style="margin-left: 20px">(0x0) Disabled (default)</p>
-
-<p style="margin-left: 20px">(0x1) Basic membership</p>
-
-<p style="margin-left: 20px">(0x2) Advanced membership</p>
-
-<p style="margin-left: 20px">Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.</p>
-
-<p style="margin-left: 20px">Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.</p>
-
-<p style="margin-left: 20px">If you enable this setting, you will join Microsoft MAPS with the membership specified.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, you will not join Microsoft MAPS.</p>
-
-<p style="margin-left: 20px">In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.</p>
-
-<a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**
-
-<p style="margin-left: 20px">This policy setting configures behaviour of samples submission when opt-in for MAPS telemetry is set.</p>
-
-<p style="margin-left: 20px">Possible options are:</p>
-
-<p style="margin-left: 20px">(0x0) Always prompt</p>
-
-<p style="margin-left: 20px">(0x1) Send safe samples automatically</p>
-
-<p style="margin-left: 20px">(0x2) Never send</p>
-
-<p style="margin-left: 20px">(0x3) Send all samples automatically</p>
-
-<a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**
-
-<p style="margin-left: 20px">This policy setting allows you to configure behavior monitoring.</p>
-
-<p style="margin-left: 20px">If you enable or do not configure this setting, behavior monitoring will be enabled.</p>
-
-<p style="margin-left: 20px">If you disable this setting, behavior monitoring will be disabled.</p>
-
-<a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether or not to scan for malicious software and unwanted software in the contents of removable drives, such as USB flash drives, when running a full scan.</p>
-
-<p style="margin-left: 20px">If you enable this setting, removable drives will be scanned during any type of scan.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.</p>
-
-<a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**
-
-<p style="margin-left: 20px">This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac).</p>
-
-<p style="margin-left: 20px">If you enable this setting, e-mail scanning will be enabled.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this setting, e-mail scanning will be disabled.</p>
-
-<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**
-
-<p style="margin-left: 20px">Allow Windows Ink Workspace</p>
-
-<a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**
-
-<p style="margin-left: 20px">Disableturns off the launch of all apps from the Windows Store that came pre-installed or were downloaded. Apps will not be updated. Your Store will also be disabled.Enableturns all of it back on. This setting applies only to Enterprise and Education editions of Windows.</p>
-
-<a href="" id="update-allowautoupdate"></a>**Update/Allowautoupdate**
-
-<p style="margin-left: 20px">Specifies whether Automatic Updates should automatically install certain updates that neither interrupt Windows services nor restart Windows.</p>
-
-<p style="margin-left: 20px">If the status is set to Enabled, Automatic Updates will immediately install these updates once they are downloaded and ready to install.</p>
-
-<p style="margin-left: 20px">If the status is set to Disabled, such updates will not be installed immediately.</p>
-
-<p style="margin-left: 20px">Note: If the "Configure Automatic Updates" policy is disabled, this policy has no effect.</p>
-
-<a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**
-
-<p style="margin-left: 20px">This policy setting allows you to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Automatic Updates accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, updates from an intranet Microsoft update service location must be signed by Microsoft.</p>
-
-<p style="margin-left: 20px">Note: Updates from a service other than an intranet Microsoft update service must always be signed by Microsoft and are not affected by this policy setting.</p>
-
-<p style="margin-left: 20px">Note: This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.</p>
-
-<a href="" id="update-allowautoupdate"></a>**Update/Allowautoupdate**
-
-<p style="margin-left: 20px">Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.</p>
-
-<p style="margin-left: 20px">Note: This policy does not apply to Windows RT.</p>
-
-<p style="margin-left: 20px">This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:</p>
-
-<p style="margin-left: 20px">2 = Notify before downloading and installing any updates.</p>
-
-<p style="margin-left: 20px">When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.</p>
-
-<p style="margin-left: 20px">3 = (Default setting) Download the updates automatically and notify when they are ready to be installed</p>
-
-<p style="margin-left: 20px">Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.</p>
-
-<p style="margin-left: 20px">4 = Automatically download updates and install them on the schedule specified below.</p>
-
-<p style="margin-left: 20px">Specify the schedule using the options in the Group Policy Setting. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)</p>
-
-<p style="margin-left: 20px">On Windows 8 and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use, and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.</p>
-
-<p style="margin-left: 20px">Automatic maintenance can be further configured by using Group Policy settings here: Computer Configuration-&gt;Administrative Templates-&gt;Windows Components-&gt;Maintenance Scheduler</p>
-
-<p style="margin-left: 20px">5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates.</p>
-
-<p style="margin-left: 20px">With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.</p>
-
-<p style="margin-left: 20px">If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.</p>
-
-<a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**
-
-<p style="margin-left: 20px">Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.</p>
-
-<p style="margin-left: 20px">Note: This policy does not apply to Windows RT.</p>
-
-<p style="margin-left: 20px">This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:</p>
-
-<p style="margin-left: 20px">2 = Notify before downloading and installing any updates.</p>
-
-<p style="margin-left: 20px">When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.</p>
-
-<p style="margin-left: 20px">3 = (Default setting) Download the updates automatically and notify when they are ready to be installed</p>
-
-<p style="margin-left: 20px">Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.</p>
-
-<p style="margin-left: 20px">4 = Automatically download updates and install them on the schedule specified below.</p>
-
-<p style="margin-left: 20px">Specify the schedule using the options in the Group Policy Setting. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)</p>
-
-<p style="margin-left: 20px">On Windows 8 and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use, and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.</p>
-
-<p style="margin-left: 20px">Automatic maintenance can be further configured by using Group Policy settings here: Computer Configuration-&gt;Administrative Templates-&gt;Windows Components-&gt;Maintenance Scheduler</p>
-
-<p style="margin-left: 20px">5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates.</p>
-
-<p style="margin-left: 20px">With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.</p>
-
-<p style="margin-left: 20px">If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.</p>
-
-<a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**
-
-<p style="margin-left: 20px">Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.</p>
-
-<p style="margin-left: 20px">Note: This policy does not apply to Windows RT.</p>
-
-<p style="margin-left: 20px">This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:</p>
-
-<p style="margin-left: 20px">2 = Notify before downloading and installing any updates.</p>
-
-<p style="margin-left: 20px">When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.</p>
-
-<p style="margin-left: 20px">3 = (Default setting) Download the updates automatically and notify when they are ready to be installed</p>
-
-<p style="margin-left: 20px">Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.</p>
-
-<p style="margin-left: 20px">4 = Automatically download updates and install them on the schedule specified below.</p>
-
-<p style="margin-left: 20px">Specify the schedule using the options in the Group Policy Setting. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)</p>
-
-<p style="margin-left: 20px">On Windows 8 and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use, and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.</p>
-
-<p style="margin-left: 20px">Automatic maintenance can be further configured by using Group Policy settings here: Computer Configuration-&gt;Administrative Templates-&gt;Windows Components-&gt;Maintenance Scheduler</p>
-
-<p style="margin-left: 20px">5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates.</p>
-
-<p style="margin-left: 20px">With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.</p>
-
-<p style="margin-left: 20px">If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.</p>
-
-<a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**
-
-<p style="margin-left: 20px">Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.</p>
-
-<p style="margin-left: 20px">Note: This policy does not apply to Windows RT.</p>
-
-<p style="margin-left: 20px">This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:</p>
-
-<p style="margin-left: 20px">2 = Notify before downloading and installing any updates.</p>
-
-<p style="margin-left: 20px">When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.</p>
-
-<p style="margin-left: 20px">3 = (Default setting) Download the updates automatically and notify when they are ready to be installed</p>
-
-<p style="margin-left: 20px">Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.</p>
-
-<p style="margin-left: 20px">4 = Automatically download updates and install them on the schedule specified below.</p>
-
-<p style="margin-left: 20px">Specify the schedule using the options in the Group Policy Setting. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)</p>
-
-<p style="margin-left: 20px">On Windows 8 and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use, and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.</p>
-
-<p style="margin-left: 20px">Automatic maintenance can be further configured by using Group Policy settings here: Computer Configuration-&gt;Administrative Templates-&gt;Windows Components-&gt;Maintenance Scheduler</p>
-
-<p style="margin-left: 20px">5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates.</p>
-
-<p style="margin-left: 20px">With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.</p>
-
-<p style="margin-left: 20px">If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.</p>
-
-<a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**
-
-<p style="margin-left: 20px">Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.</p>
-
-<p style="margin-left: 20px">Note: This policy does not apply to Windows RT.</p>
-
-<p style="margin-left: 20px">This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:</p>
-
-<p style="margin-left: 20px">2 = Notify before downloading and installing any updates.</p>
-
-<p style="margin-left: 20px">When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.</p>
-
-<p style="margin-left: 20px">3 = (Default setting) Download the updates automatically and notify when they are ready to be installed</p>
-
-<p style="margin-left: 20px">Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.</p>
-
-<p style="margin-left: 20px">4 = Automatically download updates and install them on the schedule specified below.</p>
-
-<p style="margin-left: 20px">Specify the schedule using the options in the Group Policy Setting. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)</p>
-
-<p style="margin-left: 20px">On Windows 8 and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use, and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.</p>
-
-<p style="margin-left: 20px">Automatic maintenance can be further configured by using Group Policy settings here: Computer Configuration-&gt;Administrative Templates-&gt;Windows Components-&gt;Maintenance Scheduler</p>
-
-<p style="margin-left: 20px">5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates.</p>
-
-<p style="margin-left: 20px">With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.</p>
-
-<p style="margin-left: 20px">If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.</p>
-
-<p style="margin-left: 20px">If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.</p>
-
-<a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**
-
-<p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Windows Store.</p>
-
-<p style="margin-left: 20px">Enabling this policy will disable that functionality, and may cause connection to public services such as the Windows Store to stop working.</p>
-
-<p style="margin-left: 20px">Note: This policy applies only when this PC is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.</p>
-
-<a href="" id="update-allowautoupdate"></a>**Update/Allowautoupdate**
-
-<p style="margin-left: 20px">This setting allows you to remove access to Windows Update.</p>
-
-<p style="margin-left: 20px">If you enable this setting, all Windows Update features are removed. This includes blocking access to the Windows Update Web site at http://windowsupdate.microsoft.com, from the Windows Update hyperlink on the Start menu, and also on the Tools menu in Internet Explorer. Windows automatic updating is also disabled; you will neither be notified about nor will you receive critical updates from Windows Update. This setting also prevents Device Manager from automatically installing driver updates from the Windows Update Web site.</p>
-
-<p style="margin-left: 20px">If enabled you can configure one of the following notification options:</p>
-
-<p style="margin-left: 20px">0 = Do not show any notifications</p>
-
-<p style="margin-left: 20px">This setting will remove all access to Windows Update features and no notifications will be shown.</p>
-
-<p style="margin-left: 20px">1 = Show restart required notifications</p>
-
-<p style="margin-left: 20px">This setting will show notifications about restarts that are required to complete an installation.</p>
-
-<p style="margin-left: 20px">On Windows 8 and Windows RT, if this policy is Enabled, then only notifications related to restarts and the inability to detect updates will be shown. The notification options are not supported. Notifications on the login screen will always show up.</p>
-
-<a href="" id="update-updateserviceurl"></a>**Update/Updateserviceurl**
-
-<p style="margin-left: 20px">Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.</p>
-
-<p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.</p>
-
-<p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of WSUS Server.</p>
-
-<p style="margin-left: 20px">If the status is set to Enabled, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don't have to go through a firewall to get updates, and it gives you the opportunity to test updates before deploying them.</p>
-
-<p style="margin-left: 20px">If the status is set to Disabled or Not Configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.</p>
-
-<p style="margin-left: 20px">The alternate download server Configures the Windows Update Agent to download files from an alternative download server instead of the WSUS Server.</p>
-
-<p style="margin-left: 20px">Note: If the "Configure Automatic Updates" policy is disabled, then this policy has no effect.</p>
-
-<p style="margin-left: 20px">Note: If the "Alternate Download Server" is not set, it will use the WSUS server by default to download updates.</p>
-
-<p style="margin-left: 20px">Note: This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.</p>
-
-<a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**
-
-<p style="margin-left: 20px">Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.</p>
-
-<p style="margin-left: 20px">This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.</p>
-
-<p style="margin-left: 20px">To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of WSUS Server.</p>
-
-<p style="margin-left: 20px">If the status is set to Enabled, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don't have to go through a firewall to get updates, and it gives you the opportunity to test updates before deploying them.</p>
-
-<p style="margin-left: 20px">If the status is set to Disabled or Not Configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.</p>
-
-<p style="margin-left: 20px">The alternate download server Configures the Windows Update Agent to download files from an alternative download server instead of the WSUS Server.</p>
-
-<p style="margin-left: 20px">Note: If the "Configure Automatic Updates" policy is disabled, then this policy has no effect.</p>
-
-<p style="margin-left: 20px">Note: If the "Alternate Download Server" is not set, it will use the WSUS server by default to download updates.</p>
-
-<p style="margin-left: 20px">Note: This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.</p>
-
-<a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
-
-<p style="margin-left: 20px">If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.</p>
-
-<p style="margin-left: 20px">Note that the PC must restart for certain updates to take effect.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.</p>
-
-<p style="margin-left: 20px">If any of the following two policies are enabled, this policy has no effect:</p>
-
-<p style="margin-left: 20px">1. No auto-restart with logged on users for scheduled automatic updates installations.</p>
-
-<p style="margin-left: 20px">2. Always automatically restart at scheduled time.</p>
-
-<p style="margin-left: 20px">Note that the max active hours length is 12 hours from the Active Hours Start Time.</p>
-
-<a href="" id="update-activehoursstart "></a>**Update/ActiveHoursStart **
-
-<p style="margin-left: 20px">If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.</p>
-
-<p style="margin-left: 20px">Note that the PC must restart for certain updates to take effect.</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.</p>
-
-<p style="margin-left: 20px">If any of the following two policies are enabled, this policy has no effect:</p>
-
-<p style="margin-left: 20px">1. No auto-restart with logged on users for scheduled automatic updates installations.</p>
-
-<p style="margin-left: 20px">2. Always automatically restart at scheduled time.</p>
-
-<p style="margin-left: 20px">Note that the max active hours length is 12 hours from the Active Hours Start Time.</p>
-
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**WiFi/AllowAutoConnectToWiFiSenseHotspots**
-
-<p style="margin-left: 20px">This policy setting determines whether users can enable the following WLAN settings: "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services".</p>
-
-<p style="margin-left: 20px">"Connect to suggested open hotspots" enables Windows to automatically connect users to open hotspots it knows about by crowdsourcing networks that other people using Windows have connected to.</p>
-
-<p style="margin-left: 20px">"Connect to networks shared by my contacts" enables Windows to automatically connect to networks that the user's contacts have shared with them, and enables users on this device to share networks with their contacts.</p>
-
-<p style="margin-left: 20px">"Enable paid services" enables Windows to temporarily connect to open hotspots to determine if paid services are available.</p>
-
-<p style="margin-left: 20px">If this policy setting is disabled, both "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services" will be turned off and users on this device will be prevented from enabling them.</p>
-
-<p style="margin-left: 20px">If this policy setting is not configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots"  or "Connect to networks shared by my contacts".</p>
 
 <a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**
 
@@ -5641,24 +4233,6 @@ The Policy configuration service provider enables the enterprise to configure po
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.</p>
 
 <p style="margin-left: 20px">Note: This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.</p>
-
-<a href="" id="smartscreen-allowwindowdefendersmartscreen"></a>**SmartScreen/AllowWindowDefenderSmartScreen**
-
-<p style="margin-left: 20px">This policy setting allows you to manage the behavior of Windows SmartScreen. Windows SmartScreen helps keep PCs safer by warning users before running unrecognized programs downloaded from the Internet. Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.</p>
-
-<p style="margin-left: 20px">If you enable this policy setting, Windows SmartScreen behavior may be controlled by setting one of the following options:</p>
-
-<p style="margin-left: 20px">Give user a warning before running downloaded unknown software</p>
-
-<p style="margin-left: 20px">Turn off SmartScreen</p>
-
-<p style="margin-left: 20px">If you disable or do not configure this policy setting, Windows SmartScreen behavior is managed by administrators on the PC by using Windows SmartScreen Settings in Security and Maintenance.</p>
-
-<p style="margin-left: 20px">Options:</p>
-
-<p style="margin-left: 20px">Give user a warning before running downloaded unknown software</p>
-
-<p style="margin-left: 20px">Turn off SmartScreen</p>
 
 <a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**
 
