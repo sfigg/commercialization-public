@@ -480,6 +480,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#browser-allowmicrosoftcompatibilitylist">Browser/AllowMicrosoftCompatibilityList</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#browser-allowpasswordmanager">Browser/AllowPasswordManager</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -613,6 +624,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#browser-preventfirstrunpage">Browser/PreventFirstRunPage</a></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>EAS</p></td></tr>
+	<tr>
+		<td style="vertical-align:top"><a href="#browser-preventlivetiledatacollection">Browser/PreventLiveTileDataCollection</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
@@ -4384,7 +4406,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0– Not allowed.
+-   0 – Not allowed.
 -   1 (default) – Allowed.
 
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
@@ -4392,8 +4414,21 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0– Not allowed.
+-   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the Microsoft compatibility list in Microsoft Edge. The Microsoft compatibility list is a Microsoft-provided list that enables sites with known compatibility issues to display properly. 
+By default, the Microsoft compatibility list is enabled and can be viewed by visiting about:compat. 
+
+<p style="margin-left: 20px">If you enable or don’t configure this setting, Microsoft Edge periodically downloads the latest version of the compatibility list from Microsoft, applying the updates during browser navigation. Visiting any site on the compatibility list prompts the employee to use Internet Explorer 11 (or enables/disables certain browser features on mobile), where the site is automatically rendered as though it’s in whatever version of Internet Explorer is necessary for it to display properly. If you disable this setting, the compatibility list isn’t used during browser navigation.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not enabled.
+-   1 (default) – Enabled.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
@@ -4572,6 +4607,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 -   0 (default) – Employees see the First Run webpage. 
 -   1 – Employees don't see the First Run webpage.
+
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
+-   1 (default) – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
