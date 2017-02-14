@@ -6990,7 +6990,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by disabling pinning and unpinning on the taskbar.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -7017,7 +7017,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 > -   **./Device/Vendor/MSFT/Policy/Result/Start/StartLayout** to query the current value of the policy.
 
 
-<p style="margin-left: 20px">Allows you to override the default Start layout and prevents the user from changing it.
+<p style="margin-left: 20px">Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used.
 
 <p style="margin-left: 20px">This policy is described in [Start/StartLayout Examples](#startlayout-examples) later in this topic.
 
@@ -7830,7 +7830,7 @@ Example
 -   1 (default) -allow app suggestions.
 
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch User interface in the Logon UI, Start, and the Task Manager. If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied. The locations that Switch User interface appear are in the Logon UI, Start, and the Task Manager. If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or do not configure this policy setting, the Switch account button is accessible to the user in the three locations.
 
 <p style="margin-left: 20px">Value type is bool. The following list shows the supported values:
 
@@ -7841,7 +7841,7 @@ Example
 
 1.   Enable policy.
 2.   Restart the machine.
-3.   Verify that the Switch User interface is hidden when attempting to log on.
+3.   Verify that the Switch account button is hidden.
 
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
