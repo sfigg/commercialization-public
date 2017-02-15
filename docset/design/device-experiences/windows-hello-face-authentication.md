@@ -29,7 +29,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 |                       |                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------|
-| average duration      | &gt; 2 seconds                                                                      |
+| average duration      | &lt; 2 seconds                                                                      |
 | expected frequency    | High                                                                                |
 | frequency description | Occurs every time a user wants to unlock their device or moves past the lock screen |
 
@@ -39,7 +39,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 |                       |                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------|
-| average duration      | &gt; 2 seconds                                                                                           |
+| average duration      | &lt; 2 seconds                                                                                           |
 | expected frequency    | Low                                                                                                      |
 | frequency description | Occurs when an application or web site would like to re-verify that the user is in front of their device |
 
@@ -47,7 +47,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 ### How it works
 
-The Windows Hello face recognition engine consists of four distinct steps that allowWindows to understand who is in front of the sensor:
+The Windows Hello face recognition engine consists of four distinct steps that allow Windows to understand who is in front of the sensor:
 
 1.  **Find the face and discover landmarks**
 
@@ -118,9 +118,6 @@ Bias errors may occur as a result of not using data that is representative of th
 Random errors results from using data that doesn’t match the population diversity that will actually be using the feature. For example, focusing on a small set of faces without glasses, beards, or unique facial features.
 
 ## Related topics
-
-
-[Manage identity verification using Microsoft Passport](http://go.microsoft.com/fwlink/?LinkId=624460)
 
 [Windows Biometric Framework API]( http://go.microsoft.com/fwlink/?LinkId=624455)
 
