@@ -9,6 +9,7 @@ ms.assetid: 06270067-1A4E-4D60-86E3-0FAAD87A76E7
 
 # Windows Hello infrared camera sample for Windows 10 Build 1511
 
+Note: this sample is deprecated and will be removed for Windows 10 version 1703 GA.
 
 This sample demonstrates a basic implementation of the [Windows.Devices.Perception.Provider](https://msdn.microsoft.com/library/windows/apps/windows.devices.perception.provider.aspx) interfaces to enable Windows Hello for a infrared video camera.
 
