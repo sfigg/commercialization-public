@@ -4725,8 +4725,8 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
--   1 (default) – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
+-   0 (default) – Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
+-   1 – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
