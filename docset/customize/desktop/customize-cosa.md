@@ -6,7 +6,7 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ---
 
-# Customize the Country and Operator Settings AssetCustomize the taskbar
+# Customize the Country and Operator Settings Asset
 
 
 In Windows 10, version 1703, we added the Country and Operator Settings Asset (COSA) database of mobile operator profiles. It is included in Windows 10 as a provisioning package. When a SIM is inserted in a COSA-enabled Windows-based device, the provisioning framework attempts to establish a cellular connection by searching for the matching profile and APN in COSA.  
