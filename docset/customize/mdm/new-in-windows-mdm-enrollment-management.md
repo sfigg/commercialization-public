@@ -610,6 +610,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 <tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
 </tr>
@@ -969,6 +973,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
 <tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
 <td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1703, AllowUserDecryption is no longer supported.</p></td>
 </tr>
