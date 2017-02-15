@@ -4442,7 +4442,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">To verify AllowAutofill is set to 0 (not allowed):
 
-1.  Open Microsoft Edge orMicrosoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Save form entries** is greyed out.
@@ -4475,7 +4475,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">To verify AllowCookies is set to 0 (not allowed):
 
-1.  Open Microsoft Edge orMicrosoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is greyed out.
@@ -4506,7 +4506,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">To verify AllowDoNotTrack is set to 0 (not allowed):
 
-1.  Open Microsoft Edge orMicrosoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Send Do Not Track requests** is greyed out.
@@ -4531,9 +4531,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the Microsoft compatibility list in Microsoft Edge. The Microsoft compatibility list is a Microsoft-provided list that enables sites with known compatibility issues to display properly. 
-By default, the Microsoft compatibility list is enabled and can be viewed by visiting about:compat. 
+By default, the Microsoft compatibility list is enabled and can be viewed by visiting "about:compat". 
 
-<p style="margin-left: 20px">If you enable or don’t configure this setting, Microsoft Edge periodically downloads the latest version of the compatibility list from Microsoft, applying the updates during browser navigation. Visiting any site on the compatibility list prompts the employee to use Internet Explorer 11 (or enables/disables certain browser features on mobile), where the site is automatically rendered as though it’s in whatever version of Internet Explorer is necessary for it to display properly. If you disable this setting, the compatibility list isn’t used during browser navigation.
+<p style="margin-left: 20px">If you enable or don’t configure this setting, Microsoft Edge periodically downloads the latest version of the compatibility list from Microsoft, applying the updates during browser navigation. Visiting any site on the compatibility list prompts the employee to use Internet Explorer 11 (or enables/disables certain browser features on mobile), where the site is automatically rendered as though it’s run in the version of Internet Explorer necessary for it to display properly. If you disable this setting, the compatibility list isn’t used during browser navigation.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -4554,7 +4554,7 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 
 <p style="margin-left: 20px">To verify AllowPasswordManager is set to 0 (not allowed):
 
-1.  Open Microsoft Edge orMicrosoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
