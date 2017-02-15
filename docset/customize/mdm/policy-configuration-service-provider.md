@@ -4131,7 +4131,7 @@ Footnote:
 <p style="margin-left: 20px">The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
 
 <a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
-<p style="margin-left: 20px">This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
  
 <p style="margin-left: 20px">If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
 

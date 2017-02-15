@@ -8,7 +8,7 @@ ms.assetid: 82D894F5-D715-4991-92B2-287A33C48ECD
 ---
 
 # Enable Windows Hello for a infrared camera for Windows 10 Build 1511
-
+Note: this sample is deprecated and will be removed for Windows 10 version 1703 GA.
 
 Windows Hello provides you the ability to enable facial or fingerprint recognition to log on to a Windows 10 system or device. This topic discusses how to enable Windows Hello for an infrared video camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices. Specifically, IHVs who are producing calibrated color, IR or depth sensors for use by the app-facing Perception APIs, and OEMs who are assembling and calibrating across sensors from various IHVs to produce a final device.
 

@@ -901,13 +901,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </tr>
 </thead>
 <tbody>
-<tr class="even">
-<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
-<td style="vertical-align:top"><p>Added the following new policy for Windows 10, version 1703:</p> 
-<ul>
-<li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
-</ul>
-</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[SecureAssessment CSP](secureassessment-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the following setting names:</p>
