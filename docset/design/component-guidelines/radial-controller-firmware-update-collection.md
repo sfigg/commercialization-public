@@ -6,7 +6,7 @@ ms.assetid:
 keywords: ["radial dial", "radial controller", "dial"]
 ---
 
-# Windows radial controller collection (optional)
+# Windows radial controller firmware update collection (optional)
 
 This topic discusses an optional HID top-level collection that can be used for radial controller firmware updates in Windows 10, version 1607 and later operating systems.
 
