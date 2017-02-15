@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'Input profiles (or input locales) describe the language of the input entered, and the keyboard on which it is being entered. When the first user logs into Windows and identifies their region, Windows sets the input profiles.'
 ms.assetid: 0bae00b5-dfcb-472e-a271-07ef62ad5fc5
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -1015,6 +1015,11 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 <tr class="odd">
 <td align="left"><p>Spanish - Honduras</p></td>
 <td align="left"><p>es-HN: Latin American (480a:0000080a)</p></td>
+<td align="left"><p></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Spanish - Latin American</p></td>
+<td align="left"><p>es-419: Latin American (580a:0000080a)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
