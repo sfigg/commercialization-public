@@ -4,7 +4,6 @@ author: windows-driver-content
 description: This topic presents information about the radial controller devices compatible with windows 10.
 ms.assetid:
 keywords: ["radial dial", "radial controller", "dial", "controller designs"]
-redirect_url: https://msdn.microsoft.com/windows/hardware/commercialize/design
 ---
 
 # Windows radial controller designs
