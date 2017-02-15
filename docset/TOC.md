@@ -359,6 +359,7 @@
 ## [Customizations for desktop](https://msdn.microsoft.com/library/windows/hardware/mt481437)
 ### [Customize the taskbar](customize/desktop/customize-the-taskbar.md)
 ### [Set dark theme](customize/desktop/set-dark-mode.md)
+### [Customize the Country and Operator Settings Asset](customize-cosa.md)
 
 ### [Windows System Image Manager Technical Reference](customize/desktop/wsim/windows-system-image-manager-technical-reference.md)
 #### [Windows System Image Manager Overview Topics](customize/desktop/wsim/windows-system-image-manager-overview-topics.md)
