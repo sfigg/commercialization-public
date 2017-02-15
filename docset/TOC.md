@@ -122,7 +122,6 @@
 ##### [Firmware update collection](design/component-guidelines/radial-controller-firmware-update-collection.md)
 ##### [Input reports](design/component-guidelines/radial-controller-input-reports.md)
 ##### [Output reports](design/component-guidelines/radial-controller-output-reports.md)
-##### [Required HID top-level collections](design/component-guidelines/radial-controller-required-hid-top-level-collections.md)
 ##### [Sample report descriptors](design/component-guidelines/radial-controller-sample-report-descriptors.md)
 
 ### [Thermal management in Windows](design/device-experiences/thermal-management-in-windows.md)
