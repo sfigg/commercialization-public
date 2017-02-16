@@ -105,9 +105,56 @@ The following example sets the inventory query for the package names and checks 
 </Replace>
 ```
 <a href="" id="appmanagement-removepackage"></a>**AppManagement/RemovePackage**  
-Added in the next major update of Windows 10. Used to remove packages.
+Added in Windows 10, version 1703. Used to remove packages.
 
-Supported operation is Get.
+Parameters:
+<ul>
+<li>Package
+<ul>
+  <li>Name: Specifies the PackageFullName of the particular package to remove.</li>
+  <li>RemoveForAllUsers</li>
+  <ul>
+     <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users.</li>
+     <li>1 – Package will be removed for all users.</li>
+  </ul></li>
+</ul> 
+<li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed. Not required for ./User/Vendor/MSFT.</li>
+</ul>
+
+Supported operation is Execute.
+
+The following example removes a package for the specified user:
+
+```XML
+<Exec>
+   <CmdID>10</CmdID>
+   <Item>
+      <Target>
+              <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/RemovePackage</LocURI>
+      </Target>
+      <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
+      <Data>
+          <Package Name= "{PackageFullName}"/>
+      </Data>
+   </Item>
+</Exec>
+```
+The following example removes a package for all users:
+
+````XML
+<Exec>
+   <CmdID>10</CmdID>
+   <Item>
+      <Target>
+         <LocURI>./Device/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/RemovePackage</LocURI>
+      </Target>
+      <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
+      <Data>
+          <Package Name="{PackageFullName}" RemoveForAllUsers=1 />
+      </Data>
+   </Item>
+</Exec>
+````
 
 <a href="" id="appmanagement-nonstore"></a>**AppManagement/nonStore**  
 Used to manage enterprise apps or developer apps that were not acquired from the Windows Store.
