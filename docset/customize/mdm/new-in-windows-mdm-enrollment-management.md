@@ -541,6 +541,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
 <li>DeliveryOptimization/DOAllowVPNPeerCaching</li>
+<li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>DeliveryOptimization/DOMinDiskSizeAllowedToPeer</li>
 <li>DeliveryOptimization/DOMinFileSizeToCache</li>
 <li>DeliveryOptimization/DOMinRAMAllowedToPeer</li>
@@ -928,6 +929,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/PreventLiveTileDataCollection</li>
 <li>Browser/SetDefaultSearchEngine</li>
 <li>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li>
+<li>DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload</li>
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
