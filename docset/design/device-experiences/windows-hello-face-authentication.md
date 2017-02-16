@@ -29,7 +29,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 |                       |                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------|
-| average duration      | &gt; 2 seconds                                                                      |
+| average duration      | &lt; 2 seconds                                                                      |
 | expected frequency    | High                                                                                |
 | frequency description | Occurs every time a user wants to unlock their device or moves past the lock screen |
 
@@ -39,7 +39,7 @@ The two primary scenarios for Windows Hello face authentication in Windows 10 a
 
 |                       |                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------|
-| average duration      | &gt; 2 seconds                                                                                           |
+| average duration      | &lt; 2 seconds                                                                                           |
 | expected frequency    | Low                                                                                                      |
 | frequency description | Occurs when an application or web site would like to re-verify that the user is in front of their device |
 
