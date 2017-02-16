@@ -12,7 +12,7 @@ ms.assetid: 13bb20b7-d7e6-41be-b372-334886a21153
 
 Partners can set the OEMConnectionId that is used when creating the user-configured connection for internet from the **SIM** settings screen.
 
-The value is a GUID in the string format “XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX”. It is used as the value for the OEMConnectionId field of the connection and it identifies the modem profile used for the LTE Attach. If this value is not set, the APN configuration entered by the user does not affect the LTE Attach used by the device.
+The value is a GUID in the string format “XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX”. It is used as the value for the OEMConnectionId field of the connection and it identifies the modem profile used for the LTE Attach. If this value is not set, the APN configuration entered by the user does not affect the LTE Attach GUID used by the device.
 
 <a href="" id="constraints---none"></a>**Constraints:** None  
 This customization supports: **per-IMSI** value, **per-device** value
