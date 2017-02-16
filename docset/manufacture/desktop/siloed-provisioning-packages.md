@@ -54,7 +54,7 @@ W:\ADKTools\amd64\DISM.exe /Apply-SiloedPackage /ImagePath:C:\ /PackagePath:e:\r
 ```
 You'll use ScanState to capture siloed provisioning packages from a booted Windows installation, and DISM to apply SPPs to an applied Windows image from WinPE. 
 
-For the full walkthrough, see [Lab 10: Add desktop applications and settings with siloed provisioning packages](add-desktop-apps-wth-spps-sxs.md).
+For the full walkthrough, see [Lab 10: Add desktop applications and settings with siloed provisioning packages](add-desktop-apps-with-spps-sxs.md).
 
 ## Create siloed provisioning packages
 
@@ -382,5 +382,5 @@ In the BTO model, last minute customizations on the factory floor could include 
 
 [Lab 9: Make changes from Windows (audit mode)](prepare-a-snapshot-of-the-pc-generalize-and-capture-windows-images-blue-sxs.md)
 
-[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-wth-spps-sxs.md)
+[Lab 10: Add desktop applications and settings with siloed provisioning packages (SPPs)](add-desktop-apps-with-spps-sxs.md)
 
