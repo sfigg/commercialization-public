@@ -3476,7 +3476,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-activehoursmaxrange">Update/ActiveHoursMaxRange</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3542,7 +3542,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3553,7 +3553,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3619,7 +3619,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3630,7 +3630,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3641,7 +3641,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3718,7 +3718,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-scheduleimminentrestartwarning">Update/ScheduleImminentRestartWarning</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
@@ -3751,7 +3751,7 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><a href="#update-schedulerestartwarning">Update/ScheduleRestartWarning</a></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Home</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Business</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Enterprise</p></td>
 		<td style="vertical-align:top"><img src="images/CheckMark.png" alt="check mark"/>2<p>Education</p></td>
 		<td style="vertical-align:top"><img src="images/CrossMark.png" alt="cross mark"/><p>Mobile</p></td>
