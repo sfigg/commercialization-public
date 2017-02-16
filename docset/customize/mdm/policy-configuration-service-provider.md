@@ -6866,7 +6866,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
-<!--<p style="margin-left: 20px">Allows user to change account settings.
+<!--<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified/Traditional Chinese lunar calendar. Turn on the Simplified/Traditional Chinese lunar calendar-This will display Chinese lunar dates below the default calendar for the locale.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -6874,7 +6874,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.-->
 
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
-<p style="margin-left: 20px">Allows IT Admins to either whitelist or blacklist specific pages in the System Settings app from being visible or accessible.  The mode will be specified by the policy string beginning with either the string "showonly:" (whitelist) or "hide:" (blacklist).  Pages are identified by a shortened version of their already published URIs. In example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.  The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively: "showonly:about;bluetooth". If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if page is already controlled by an individual setting policy, that policy value will win.
+<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to either whitelist or blacklist specific pages in the System Settings app from being visible or accessible.  The mode will be specified by the policy string beginning with either the string "showonly:" (whitelist) or "hide:" (blacklist).  Pages are identified by a shortened version of their already published URIs. In example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.  The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively: "showonly:about;bluetooth". If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if page is already controlled by an individual setting policy, that policy value will win.
 
 <p style="margin-left: 20px">The format of the PageVisibilityList value is as follows:
 
