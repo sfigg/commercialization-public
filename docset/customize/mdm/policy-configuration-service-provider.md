@@ -3000,26 +3000,26 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#settings-configuretaskbarcalendar">Settings/ConfigureTaskbarCalendar</a></td>
-		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#settings-pagevisibilitylist">Settings/PageVisibilityList</a></td>
-		<!--<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
-		<td style="vertical-align:top"><p></p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
-		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Pro</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Business</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">2<p>Mobile Enterprise</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
-		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td>--></tr>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
 		<td style="vertical-align:top"><a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png">1<p>Home</p></td>
@@ -6874,12 +6874,25 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.-->
 
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
-<!--<p style="margin-left: 20px">Allows user to change account settings.
+<p style="margin-left: 20px">Allows IT Admins to either whitelist or blacklist specific pages in the System Settings app from being visible or accessible.  The mode will be specified by the policy string beginning with either the string "showonly:" (whitelist) or "hide:" (blacklist).  Pages are identified by a shortened version of their already published URIs. In example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.  The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively: "showonly:about;bluetooth". If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if page is already controlled by an individual setting policy, that policy value will win.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">The format of the PageVisibilityList value is as follows:
 
--   0 – Not allowed.
--   1 (default) – Allowed.-->
+-   The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
+-   There are two variants: one that shows only the given pages (whitelist) and one which hides the given pages (blacklist).
+-   The first variant starts with the string "showonly:" (whitelist), and the second with the string "hide:" (blacklist).
+-	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
+-   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:wi-fi" would be just "wi-fi".
+
+<p style="margin-left: 20px">The default value for this setting is an empty string, which is interpreted as show everything.
+
+<p style="margin-left: 20px">Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settings:wi-fi and ms-settings:bluetooth). All other pages (and the categories they're in) will be hidden:
+
+<p style="margin-left: 20px">showonly:wi-fi;bluetooth
+
+<p style="margin-left: 20px">Example 2, specifies that the wifi page should not be shown:
+
+<p style="margin-left: 20px">hide:wifi
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
