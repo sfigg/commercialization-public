@@ -34,16 +34,16 @@ The following diagram shows the DynamicManagement configuration service provider
 <p style="margin-left: 20px">Supported operation is Get.</p>
 
 <a href="" id="contextid"></a>***ContextID***  
-<p style="margin-left: 20px">Node created by the server to define a context.  Maximum amount of characters allowed is 38..</p>
-<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
+<p style="margin-left: 20px">Node created by the server to define a context.  Maximum amount of characters allowed is 38.</p>
+<p style="margin-left: 20px">Supported operations are Add, Get, and Delete.</p>
 
 <a href="" id="signaldefinition"></a>**SignalDefinition**  
 <p style="margin-left: 20px">Signal Definition XML.</p>
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="settingspack"></a>**SettingsPack**  
 <p style="margin-left: 20px">Settings that get applied when the Context is active.</p>
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="settingspackresponse" id=""></a>**SettingsPackResponse**  
 <p style="margin-left: 20px">Response from applying a Settings Pack that contains information on each individual action..</p>
