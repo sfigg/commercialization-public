@@ -7840,8 +7840,7 @@ Example
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
-2.   Restart the machine.
-3.   Verify that the Switch account button is hidden.
+2.   Verify that the Switch account button in Start is hidden.
 
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
