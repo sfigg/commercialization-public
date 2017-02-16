@@ -112,7 +112,7 @@ Parameters:
 <li>Package
 <ul>
   <li>Name: Specifies the PackageFullName of the particular package to remove.</li>
-  <li>RemoveForAllUsers</li>
+  <li>RemoveForAllUsers: </li>
   <ul>
      <li>0 (default) – Package will be un-provisioned so that new users do not receive the package. The package will remain installed for current users.</li>
      <li>1 – Package will be removed for all users.</li>
@@ -120,7 +120,7 @@ Parameters:
 </ul> 
 <li>User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed. Not required for ./User/Vendor/MSFT.</li>
 </ul>
-
+   
 Supported operation is Execute.
 
 The following example removes a package for the specified user:
