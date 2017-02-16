@@ -564,10 +564,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
+<p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -901,10 +904,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
+<li>WindowsLogon/HideFastUserSwitching</li>
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
+<p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
 </td>
 </tr>
 <tr class="even">
