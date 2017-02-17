@@ -5448,7 +5448,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery.
 
-<p style="margin-left: 20px">The default value is 0.
+<p style="margin-left: 20px">The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
 
 <a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
 > [!NOTE]
