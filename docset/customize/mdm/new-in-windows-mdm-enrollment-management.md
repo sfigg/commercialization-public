@@ -578,6 +578,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
@@ -589,9 +590,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
+<li>WindowsLogon/HideFastUserSwitching</li>
 </ul><p>Removed TextInput/AllowLinguisticDataCollection</p>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
+<p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DevDetail CSP](devdetail-csp.md)</td>
@@ -947,6 +950,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Start/HideSleep</li>
 <li>Start/HideSwitchAccount</li>
 <li>Start/HideUserTile</li>
+<li>Start/NoPinningToTaskbar</li>
 <li>System/AllowFontProviders</li>
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
@@ -958,9 +962,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Update/EngagedRestartSnoozeSchedule</li>
 <li>Update/EngagedRestartTransistionSchedule</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
+<li>WindowsLogon/HideFastUserSwitching</li>
 </ul>
 <p>Starting in Windows 10, version 1703, Update/UpdateServiceUrl is not supported in Windows 10 Mobile Enteprise and IoT Enterprise</p>
 <p>Starting in Windows 10, version 1703, in Browser/HomePages you can use the "&lt;about:blank&gt;" value if you don’t want to send traffic to Microsoft.</p>
+<p>Starting in Windows 10, version 1703, Start/StartLayout can now be set on a per-device basis in addition to the pre-existing per-user basis.</p>
 </td>
 </tr>
 <tr class="even">
