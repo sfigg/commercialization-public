@@ -7391,7 +7391,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 1.   Enable policy
 2.   Restart machine
 3.   Verify that:
-  * Users cannot access OneDrive from the OneDrive app and file picker.
+  * Users cannot access OneDrive from the OneDrive app or file picker.
   * Windows Store apps cannot access OneDrive using the WinRT API.
   * OneDrive does not appear in the navigation pane in File Explorer.
   * OneDrive files are not kept in sync with the cloud.
