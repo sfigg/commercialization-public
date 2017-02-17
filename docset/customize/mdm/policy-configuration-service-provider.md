@@ -7373,7 +7373,8 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
-* Users cannot access OneDrive from the OneDrive app or file picker. Windows Store apps cannot access OneDrive using the WinRT API.
+* Users cannot access OneDrive from the OneDrive app or file picker.
+* Windows Store apps cannot access OneDrive using the WinRT API.
 * OneDrive does not appear in the navigation pane in File Explorer.
 * OneDrive files are not kept in sync with the cloud.
 * Users cannot automatically upload photos and videos from the camera roll folder. 
