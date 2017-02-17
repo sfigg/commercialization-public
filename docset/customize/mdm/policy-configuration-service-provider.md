@@ -6874,13 +6874,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.-->
 
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to either whitelist or blacklist specific pages in the System Settings app from being visible or accessible.  The mode will be specified by the policy string beginning with either the string "showonly:" (whitelist) or "hide:" (blacklist).  Pages are identified by a shortened version of their already published URIs. In example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.  The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively: "showonly:about;bluetooth". If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if page is already controlled by an individual setting policy, that policy value will win.
+<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.  The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively: "showonly:about;bluetooth". If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if a page is already hidden for another reason, then it will remain hidden even if it is in a "showonly:" list.
 
 <p style="margin-left: 20px">The format of the PageVisibilityList value is as follows:
 
 -   The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
--   There are two variants: one that shows only the given pages (whitelist) and one which hides the given pages (blacklist).
--   The first variant starts with the string "showonly:" (whitelist), and the second with the string "hide:" (blacklist).
+-   There are two variants: one that shows only the given pages and one which hides the given pages.
+-   The first variant starts with the string "showonly:" and the second with the string "hide:".
 -	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
 -   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:wi-fi" would be just "wi-fi".
 
@@ -6893,6 +6893,12 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">Example 2, specifies that the wifi page should not be shown:
 
 <p style="margin-left: 20px">hide:wifi
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Open Settings and verfiy that the About page is visible and accessible.
+2.   Configure the policy with the following string: "hide:wifi".
+3.   Open Settings again and verify that the About page is no longer accessible.
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
