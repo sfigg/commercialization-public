@@ -3308,6 +3308,17 @@ Some policies are only supported in either Windows 10 for desktop or Windows 1
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
 	<tr>
+		<td style="vertical-align:top"><a href="#system-disableonedrivefilesync">System/DisableOneDriveFileSync</a></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
+		<td style="vertical-align:top"><p></p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Education</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile</p></td>
+		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Mobile Enterprise</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>IoT Core</p></td>
+		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>EAS</p></td></tr>
+	<tr>
 		<td style="vertical-align:top"><a href="#system-telemetryproxy">System/TelemetryProxy</a></td>
 		<td style="vertical-align:top"><img alt="cross mark" src="images/CrossMark.png"><p>Home</p></td>
 		<td style="vertical-align:top"><img alt="check mark" src="images/CheckMark.png"><p>Pro</p></td>
@@ -7357,6 +7368,33 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed to reset to factory default settings.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
+
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
+
+1.  Users cannot access OneDrive from the OneDrive app or file picker. Windows Store apps cannot access OneDrive using the WinRT API.
+2.  OneDrive does not appear in the navigation pane in File Explorer.
+3.  OneDrive files are not kept in sync with the cloud.
+4.  Users cannot automatically upload photos and videos from the camera roll folder. 
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 (default) – False (sync enabled).
+-   1 – True (sync disabled).
+
+<p style="margin-left: 20px">To validate on Desktop, do the following:
+
+1.   Enable policy
+2.   Restart machine
+3.   Verify that:
+-   Users cannot access OneDrive from the OneDrive app and file picker.
+-   Windows Store apps cannot access OneDrive using the WinRT API.
+-   OneDrive does not appear in the navigation pane in File Explorer.
+-   OneDrive files are not kept in sync with the cloud.
+-   Users cannot automatically upload photos and videos from the camera roll folder.
 
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 <p style="margin-left: 20px">Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
