@@ -6905,7 +6905,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Open System Settings and verfiy that the About page is visible and accessible.
-2.   Configure the policy with the following string: "hide:wifi".
+2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
