@@ -24,7 +24,23 @@ The following diagram shows the DynamicManagement configuration service provider
 <a href="" id="notificationsenabled"></a>**NotificationsEnabled**  
 <p style="margin-left: 20px">Boolean value for sending notification to the user of a context change.</p>
 <p style="margin-left: 20px">Default values is False. Supported operations are Get and Replace.</p>
+<p style="margin-left: 20px">Example to turn on NotificationsEnabled:</p>
 
+``` syntax
+<Replace>
+      <CmdID>100</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/NotificationsEnabled</LocURI>
+        </Target>
+        <Meta>
+          <Type xmlns="syncml:metinf">text/plain</Type>
+          <Format xmlns="syncml:metinf">bool</Format>
+        </Meta>
+          <Data>true</Data>        
+      </Item>
+</Replace>
+```
 <a href="" id="activelist"></a>**ActiveList**  
 <p style="margin-left: 20px">A string containing the list of all active ContextIDs on the device.  Delimeter is unicode character 0xF000..</p>
 <p style="margin-left: 20px">Supported operation is Get.</p>  
@@ -60,3 +76,148 @@ The following diagram shows the DynamicManagement configuration service provider
 <a href="alertsenabled" id=""></a>**AlertsEnabled**  
 <p style="margin-left: 20px">A Boolean value for sending an alert to the server when a context fails.</p>
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
+
+## Examples
+
+Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 meters radius of the specified latitude/longitude
+
+``` syntax
+    <Replace>
+      <CmdID>200</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/Bldg109/SettingsPack</LocURI>
+        </Target>
+        <Meta>
+          <Type xmlns="syncml:metinf">text/plain</Type>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>&lt;SyncML&gt;
+  &lt;SyncBody&gt;&lt;Replace&gt;&lt;CmdID&gt;1001&lt;/CmdID&gt;&lt;Item&gt;&lt;Target&gt;&lt;LocURI&gt;./Vendor/MSFT/Policy/Config/Experience/AllowCortana&lt;/LocURI&gt;&lt;/Target&gt;&lt;Meta&gt;&lt;Format xmlns=&quot;syncml:metinf&quot;&gt;int&lt;/Format&gt;&lt;/Meta&gt;&lt;Data&gt;0&lt;/Data&gt;&lt;/Item&gt;&lt;/Replace&gt;&lt;Final/&gt;&lt;/SyncBody&gt;&lt;/SyncML&gt;</Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>201</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/Bldg109/SignalDefinition</LocURI>
+        </Target>
+        <Meta>
+          <Type xmlns="syncml:metinf">text/plain</Type>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>
+          &lt;rule schemaVersion=&quot;1.0&quot;&gt;
+          
+           &lt;and&gt;
+                    &lt;signal type="geoloc" latitude="47.6375" longitude="-122.1402" radiusInMeters="100"/&gt;        
+                    &lt;signal type=&quot;time&quot;&gt;
+                              &lt;daily startTime=&quot;09:00:00&quot; endTime=&quot;17:00:00&quot;/&gt;
+                    &lt;/signal&gt;           
+           &lt;/and&gt;
+          &lt;/rule&gt;
+        </Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>202</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/Bldg109/Altitude</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+        </Meta>
+        <Data>3</Data>
+      </Item>
+    </Replace>
+```
+
+Disable camera using network trigger with time trigger, from 9-5, when ip4 gateway is 192.168.0.1
+
+``` syntax
+<Replace>
+      <CmdID>300</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime/SettingsPack</LocURI>
+        </Target>
+        <Meta>
+          <Type xmlns="syncml:metinf">text/plain</Type>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>&lt;SyncML&gt;
+  &lt;SyncBody&gt;&lt;Replace&gt;&lt;CmdID&gt;1002&lt;/CmdID&gt;&lt;Item&gt;&lt;Target&gt;&lt;LocURI&gt;./Vendor/MSFT/Policy/Config/Camera/AllowCamera&lt;/LocURI&gt;&lt;/Target&gt;&lt;Meta&gt;&lt;Format xmlns=&quot;syncml:metinf&quot;&gt;int&lt;/Format&gt;&lt;/Meta&gt;&lt;Data&gt;0&lt;/Data&gt;&lt;/Item&gt;&lt;/Replace&gt; &lt;Final/&gt;&lt;/SyncBody&gt;&lt;/SyncML&gt;</Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>301</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/ NetworkWithTime /SignalDefinition</LocURI>
+        </Target>
+        <Meta>
+          <Type xmlns="syncml:metinf">text/plain</Type>
+          <Format xmlns="syncml:metinf">chr</Format>
+        </Meta>
+        <Data>
+          &lt;rule schemaVersion=&quot;1.0&quot;&gt;          
+           &lt;and&gt;
+             &lt;signal type="ipConfig"&gt; 
+                   &lt;ipv4Gateway&gt;192.168.0.1&lt;/ipv4Gateway&gt; 
+             &lt;/signal&gt; 
+                    &lt;signal type=&quot;time&quot;&gt;
+                              &lt;daily startTime=&quot;09:00:00&quot; endTime=&quot;17:00:00&quot;/&gt;
+                    &lt;/signal&gt;  
+           &lt;/and&gt;
+          &lt;/rule&gt;
+        </Data>
+      </Item>
+    </Replace>
+    <Replace>
+      <CmdID>302</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/ NetworkWithTime /Altitude</LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">int</Format>
+        </Meta>
+        <Data>10</Data>
+      </Item>
+    </Replace>
+```
+
+Delete a context
+
+``` syntax
+<Delete>
+      <CmdID>400</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime</LocURI>
+        </Target>
+      </Item>
+</Delete>
+```
+
+Get ContextStatus and SignalDefinition from a specific context
+
+``` syntax
+<Get>
+      <CmdID>400</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime/ContextStatus</LocURI>
+        </Target>
+      </Item>
+</Get>
+<Get>
+      <CmdID>401</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/DynamicManagement/Contexts/NetworkWithTime/SignalDefinition </LocURI>
+        </Target>
+      </Item>
+</Get>
+```
