@@ -1,4 +1,4 @@
-# Download and install the Windows ADK
+# Download and install the Windows ADK 
 
 Updated: August 22, 2016
 
