@@ -8,7 +8,7 @@ keywords: ["radial dial", "radial controller", "dial"]
 
 # Windows radial controller output reports
 
-**DESCTIPTION TBD**
+This topic details the HID output reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
 
 ## Haptic feedback collection (optional)
 

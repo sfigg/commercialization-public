@@ -8,7 +8,7 @@ keywords: ["radial dial", "radial controller", "dial"]
 
 # Windows radial controller feature reports
 
-**DESCTIPTION TBD**
+This topic details the HID feature reports that are used for radial controller haptic feedback support in Windows 10, version 1607 and later operating systems.
 
 ## Haptic feedback collection (optional)
 If a Windows radial controller device supports haptic feedback, it can allow the system and applications to take advantage of it by including a haptic feedback collection (Page **0x0E**, usage **0x01**) within the Windows radial controller TLC. For more information on how the HID specification supports haptic feedback, please consult the new [haptics page](http://www.usb.org/developers/hidpage/HUTRR63b_-_Haptics_Page_Redline.pdf) ratification to the HID specification.
@@ -16,7 +16,7 @@ If a Windows radial controller device supports haptic feedback, it can allow the
 The host uses the following usages (through the haptic feedback collection) to communicate the haptic feedback waveform support and allow the host to configure the haptic feedback on the Windows radial controller device. If a device chooses to expose a haptic feedback collection, some usages are mandatory to allow automatic haptic feedback configuration to be supported.
 
 Member | Description | Page | ID | Mandatory/Optional
----|
+---| --- | --- | --- | ---
 Waveform List | Ordered list of haptic waveforms supported by the device | 0x0E | 0x10 | Mandatory
 Duration List | Ordered list of durations for waveforms in the Waveform List | 0x0E | 0x11 | Mandatory
 Auto Trigger | Waveform to fire automatically at device’s discretion | 0x0E | 0x20 | Mandatory
@@ -31,7 +31,7 @@ Waveform Cutoff Time | Max time a Manual Trigger waveform can play before being 
 Waveform List usage represents a collection of the HID usages of supported waveforms, ordered using ordinals. The pre-defined haptics waveforms are defined in the HID specification. Windows supports implementing the following waveforms for a haptic feedback enabled device:
 
 Waveform | Description | Page | ID | Mandatory/Optional
----|
+---| --- | --- | --- | ---
 WAVEFORM_NONE| No-op. Should not impact the play state of ongoing waveforms. | 0x0E | 0x1001 | Mandatory
 WAVEFORM_STOP| Stops the playback of ongoing waveforms. | 0x0E | 0x1002 | Mandatory
 WAVEFORM_CLICK| Creates a short “click” feedback | 0x0E | 0x1003 | Mandatory
