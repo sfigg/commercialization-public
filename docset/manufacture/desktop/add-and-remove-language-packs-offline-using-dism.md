@@ -14,7 +14,7 @@ All installations of Windows contain at least one language pack and the language
 The Windows image must be a recently installed and captured image, or the default retail image. This ensures that the Windows image does not have any pending package actions. The Windows images can be in any language. For example, you can start with an English (en-US) image and add support for Japanese (ja-JP) and Korean (ko-KR). In addition, you can add LIPs to a Windows image that contains the supported parent language. For more information about the supported language packs and LIPs, see [Language Packs](language-packs-and-windows-deployment.md).
 
 
-For information about how to add a language pack to a Windows Preinstallation Environment (Windows PE) image, [see Add a Language Pack to a Windows PE Image.](winpe-add-packages--optional-components-reference.md)
+For information about how to add a language pack to a Windows Preinstallation Environment (Windows PE) image, [see WinPE: Add packages (Optional Components Reference)](winpe-add-packages--optional-components-reference.md).
 
 ## <span id="AddLangPacktoImage"></span><span id="addlangpacktoimage"></span><span id="ADDLANGPACKTOIMAGE"></span>Add a Language Pack to a Windows Image
 
