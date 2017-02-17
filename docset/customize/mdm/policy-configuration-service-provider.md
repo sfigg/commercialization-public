@@ -6866,12 +6866,14 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 -   1 (default) – Allowed.
 
 <a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
-<!--<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified/Traditional Chinese lunar calendar. Turn on the Simplified/Traditional Chinese lunar calendar-This will display Chinese lunar dates below the default calendar for the locale.
+<p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on the Simplified/Traditional Chinese lunar calendar will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.-->
+-   0 (default) – User will be allowed to configure the setting.
+-   1  – Don't show additional calendars.
+-   2  - Simplified Chinese (Lunar).
+-   3  - Traditional Chinese (Lunar).
 
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
 <p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.
