@@ -148,6 +148,8 @@
 #### [NetworkProxy DDF file](networkproxy-ddf.md)
 ### [NodeCache CSP](nodecache-csp.md)
 #### [NodeCache DDF file](nodecache-ddf-file.md)
+### [Office CSP](office-csp.md)
+#### [Office DDF](office-ddf.md)
 ### [PassportForWork CSP](passportforwork-csp.md)
 #### [PassportForWork DDF](passportforwork-ddf.md)
 ### [Policy CSP](policy-configuration-service-provider.md)
