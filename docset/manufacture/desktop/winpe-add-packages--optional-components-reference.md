@@ -1,5 +1,5 @@
 ---
-author: Justinha
+author: themar
 Description: 'WinPE: Add packages (Optional Components Reference)'
 ms.assetid: 67aa9c25-9fab-4970-8aa5-65f904969e8e
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -16,7 +16,10 @@ Add feature packages, also known as optional components, to Windows PE (WinPE).
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Adding optional components
 
 
-Optional components are included in the Windows Assessment and Deployment Kit (Windows ADK), in the C:\\Program Files\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Preinstallation Environment\\amd64\\WinPE\_OCs\\ folder.
+Optional components are included in the Windows Assessment and Deployment Kit (Windows ADK), in 32-bit and 64-bit architectures. When you add optional components to your WinPE image, make sure your optional components and WinPE image are the same architecture. You can find WinPE OCs in the following locations.
+
+**64-bit** - C:\\Program Files\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Preinstallation Environment\\amd64\\WinPE\_OCs\\.<p>
+**32-bit** - C:\\Program Files\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Preinstallation Environment\\x86\\WinPE\_OCs\\ folder.
 
 **Get the Windows Assessment and Deployment Kit with Windows PE tools**
 
