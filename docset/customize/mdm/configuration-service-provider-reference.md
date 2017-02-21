@@ -261,7 +261,6 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 <tr class="even">
 <td>[DeviceInstanceService CSP](deviceinstanceservice-csp.md)</td>
@@ -453,7 +452,7 @@ The following table show the configuration service providers supported in Window
 <tr class="odd">
 <td>[FileSystem CSP](filesystem-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
