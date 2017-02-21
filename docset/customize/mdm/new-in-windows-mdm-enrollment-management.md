@@ -564,6 +564,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Privacy/LetAppsRunInBackground_ForceAllowTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_ForceDenyTheseApps</li>
 <li>Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</li>
+<li>Settings/ConfigureTaskbarCalendar</li>
+<li>Settings/PageVisibilityList</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -936,6 +938,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Experience/AllowTailoredExperiencesWithDiagnosticData</li>
 <li>Experience/AllowWindowsSpotlightOnActionCenter</li>
 <li>Experience/AllowWindowsSpotlightWindowsWelcomeExperience</li>
+<li>Settings/ConfigureTaskbarCalendar</li>
+<li>Settings/PageVisibilityList</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
