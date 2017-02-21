@@ -452,7 +452,7 @@ The following table show the configuration service providers supported in Window
 <tr class="odd">
 <td>[FileSystem CSP](filesystem-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -585,7 +585,7 @@ The following table show the configuration service providers supported in Window
 <td>[Provisioning CSP](provisioning-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" />
 <p>(Provisioning only)</p></td>
-<td></td>
+<td><p></p></td>
 <td><img src="images/checkmark.png" alt="check mark" />
 <p>(Provisioning only)</p></td>
 <td><img src="images/checkmark.png" alt="check mark" />
