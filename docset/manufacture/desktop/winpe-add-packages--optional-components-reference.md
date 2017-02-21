@@ -20,7 +20,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 
 **Get the Windows Assessment and Deployment Kit with Windows PE tools**
 
--   Install the [Windows Assessment and Deployment Kit (Windows ADK) Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature.
+-   Install the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature.
 
 **Create a set of either 32-bit or 64-bit Windows PE files**
 
