@@ -1018,7 +1018,7 @@ For a list of language/culture names, see [Available Language Packs for Windows]
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Spanish - Latin American</p></td>
+<td align="left"><p>Spanish - Latin America</p></td>
 <td align="left"><p>es-419: Latin American (580a:0000080a)</p></td>
 <td align="left"><p></p></td>
 </tr>
