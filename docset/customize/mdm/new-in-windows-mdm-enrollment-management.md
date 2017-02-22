@@ -628,6 +628,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
+<td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
+</tr>
 </tbody>
 </table> 
 
@@ -994,6 +998,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP.</p></td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)</td>
+<td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>
