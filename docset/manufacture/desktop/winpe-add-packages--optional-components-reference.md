@@ -16,17 +16,17 @@ Add feature packages, also known as optional components, to Windows PE (WinPE).
 ## <span id="bkmk_1"></span><span id="BKMK_1"></span>Adding optional components
 
 
-Optional components are included in the Windows Assessment and Deployment Kit (Windows ADK), in 32- and 64-bit architectures. When you add optional components to your WinPE image, make sure your optional components are the same ADK build, and have the same architecure as your WinPE image. You can find WinPE OCs in the following locations.
+Optional components are included as part of the Windows Assessment and Deployment Kit (Windows ADK), in 32- and 64-bit architectures. When you add optional components to your WinPE image, make sure your optional components are the same ADK build, and have the same architecure as your WinPE image. You can find WinPE OCs in the following locations.
 
 **64-bit** C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Preinstallation Environment\\amd64\\WinPE\_OCs\\
 
 **32-bit** C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Windows Preinstallation Environment\\x86\\WinPE\_OCs\\
 
-**Get the Windows Assessment and Deployment Kit with Windows PE tools**
+### **Get the Windows Assessment and Deployment Kit with Windows PE tools including optional components**
 
 -   Install the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526803), including the Windows PE feature.
 
-**Create a set of either 32-bit or 64-bit Windows PE files**
+### **Create a set of either 32-bit or 64-bit Windows PE files**
 
 1.  Click **Start**, and type **deployment**. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**.
 
@@ -44,7 +44,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
         copype x86 C:\WinPE_x86
         ```
 
-**Mount the Windows PE boot image**
+### **Mount the Windows PE boot image**
 
 -   Mount the Windows PE image.
 
@@ -52,14 +52,14 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
-**Add optional components (packages or .cab files)**
+### **Add optional components (packages or .cab files)**
 
 1.  Add the optional component into Windows PE. To add optional components, you need to add both the optional component and its associated language packs.
 
     ``` syntax
-    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
+    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-HTA.cab"  
 
-    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
+    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab"
     ```
 
     **Important**  
@@ -75,7 +75,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 
     Review the resulting list of packages and verify that the list contains the optional component and its associated language pack.
 
-**Add more languages to images that include optional components**
+### **Add more languages to images that include optional components**
 
 1.  List the optional components in the Windows PE image:
 
@@ -86,9 +86,9 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 2.  Review the resulting list of packages, and add the corresponding language packs for each package in the image, including the base Windows PE language pack.
 
     ``` syntax
-    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
+    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\lp.cab"
 
-    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
+    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\fr-fr\WinPE-HTA_fr-fr.cab"
     ```
 
     where … WinPE\_OCs\\fr-fr\\lp.cab represents the base Windows PE language pack.
@@ -96,7 +96,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 3.  If you're adding language packs for Japan, Korea, or China, add the font packages for these languages. Here's an example for Japan:
 
     ``` syntax
-    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
+    Dism /Add-Package /Image:"C:\WinPE_amd64\mount" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Font Support-JA-JP.cab"
     ```
 
 4.  Verify that the language packs are part of the image:
@@ -115,7 +115,7 @@ Optional components are included in the Windows Assessment and Deployment Kit (W
 
     To switch languages while in Windows PE, use `wpeutil setmuilanguage`.
 
-**Unmount the Windows PE image and create media**
+### **Unmount the Windows PE image and create media**
 
 1.  Unmount the Windows PE image.
 
