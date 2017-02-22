@@ -12,7 +12,9 @@ MSHAttr:
 > [!WARNING]
 > Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-TBD. This CSP was added in Windows 10, version 1703.
+Windows 10 allows you to manage devices differently depending on location, network, or time.  In Windows 10, version 1703 the focus is on the most common areas of concern expressed by organizations. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.  
+
+This CSP was added in Windows 10, version 1703.
 
 The following diagram shows the DynamicManagement configuration service provider in tree format.
 
@@ -23,7 +25,7 @@ The following diagram shows the DynamicManagement configuration service provider
 
 <a href="" id="notificationsenabled"></a>**NotificationsEnabled**  
 <p style="margin-left: 20px">Boolean value for sending notification to the user of a context change.</p>
-<p style="margin-left: 20px">Default values is False. Supported operations are Get and Replace.</p>
+<p style="margin-left: 20px">Default value is False. Supported operations are Get and Replace.</p>
 <p style="margin-left: 20px">Example to turn on NotificationsEnabled:</p>
 
 ``` syntax
@@ -70,7 +72,7 @@ The following diagram shows the DynamicManagement configuration service provider
 <p style="margin-left: 20px">Value type is integer. Supported operation is Get.</p>
 
 <a href="altitude" id=""></a>**Altitude**  
-<p style="margin-left: 20px">A value that determines how to handle resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities..</p>
+<p style="margin-left: 20px">A value that determines how to handle conflict resolution of applying multiple contexts on the device. This is required and must be distinct of other priorities..</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="alertsenabled" id=""></a>**AlertsEnabled**  
