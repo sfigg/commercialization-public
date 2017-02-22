@@ -9,6 +9,8 @@ ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
 
 # PassportForWork DDF
 
+> [!WARNING]
+> Some information relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **PassportForWork** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -38,7 +40,7 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.2/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.3/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -131,6 +133,35 @@ If you disable this policy setting, the device does not provision Windows Hello 
 If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
 If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>EnablePinRecovery</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>If the user forgets their PIN, it can be changed to a new PIN using the Windows Hello for Business PIN recovery service. This cloud service encrypts a recovery secret which is stored locally on the client, but which can only be decrypted by the cloud service.
+
+If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
+
+If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -532,6 +563,89 @@ If you disable or do not configure this policy setting, the TPM is still preferr
               </DFProperties>
             </Node>
             <Node>
+                <NodeName>ExcludeSecurityDevices</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                    </AccessType>
+                    <Description>Root node for excluded security devices.</Description>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFTitle>ExcludeSecurityDevices</DFTitle>
+                    <DFType>
+                        <DDFName></DDFName>
+                    </DFType>
+                </DFProperties>
+                <Node>
+                    <NodeName>TPM12</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Delete />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DefaultValue>False</DefaultValue>
+                        <Description>Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
+
+If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
+
+If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.</Description>
+                        <DFFormat>
+                            <bool />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
+            </Node>    
+            <Node>
+              <NodeName>EnablePinRecovery</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>If the user forgets their PIN, it can be changed to a new PIN using the Windows Hello for Business PIN recovery service. This cloud service encrypts a recovery secret which is stored locally on the client, but which can only be decrypted by the cloud service.
+
+If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
+
+If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+                </Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
               <NodeName>UseCertificateForOnPremAuth</NodeName>
               <DFProperties>
                 <AccessType>
@@ -543,7 +657,7 @@ If you disable or do not configure this policy setting, the TPM is still preferr
                 <DefaultValue>False</DefaultValue>
                 <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources. 
 
-If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the enterprise Certificate Authority before provisioning a PIN.
+If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
 If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.</Description>
                 <DFFormat>
@@ -965,14 +1079,13 @@ NOTE: Disabling this policy prevents the use of biometric gestures on the device
                 <Replace />
               </AccessType>
               <DefaultValue>False</DefaultValue>
-              <Description>This policy setting determines whether enhanced anti-spoofing is configured for facial features, on devices which support it.
+              <Description>This setting determines whether enhanced anti-spoofing is required for Windows Hello face authentication.
 
-If you do not configure this policy setting, users will be able to choose whether or not to use enhanced anti-spoofing for facial features.
+If you enable or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
 
-If you enable this policy setting, Windows will require all users on the device to use enhanced anti-spoofing for facial features, on devices which support it.
+If you disable this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-If you disable this policy setting, enhanced anti-spoofing for facial features is turned off for all users on the device and they will be unable to turn it on.
-              </Description>
+Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -990,7 +1103,6 @@ If you disable this policy setting, enhanced anti-spoofing for facial features i
         </Node>
       </Node>
 </MgmtTree>
-
 ```
 
  
