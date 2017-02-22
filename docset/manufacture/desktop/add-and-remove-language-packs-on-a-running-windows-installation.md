@@ -28,18 +28,18 @@ You can also add language packs to Windows Preinstallation and Windows Recovery 
 2.  Type the following command to add a language pack (Greek, in this example) to the operating system. 
 
     ``` syntax
-    Dism /online /Add-Package /PackagePath:C:\test\LangPacks\Microsoft-Windows-Client-Language-Pack_x64_el-gr.cab
+    Dism /online /Add-Package /PackagePath:D:\x64\LangPacks\Microsoft-Windows-Client-Language-Pack_x64_el-gr.cab
     ```
 
 For more information about DISM international servicing commands, see [DISM Languages and International Servicing Command-Line Options](dism-languages-and-international-servicing-command-line-options.md)
 
 ## <span id="online"></span><span id="REMOVE"></span>Remove a language pack online
 
-Language Packs that aren't in a PC's language list are automatically removed by Windows after a period of time. If you remove an installed language through the Settings app, the language will be removed from your language list, but the actual language pack will not be immediately deleted. If you want to immediately remove a language pack, use lpksetup.exe. <br>**Note:** Lpksetup will uninstall a language pack, but won't remove the language from the language list.
+Non-user selected languages are automatically removed by Windows after a period of time. If you remove an installed language through the Settings app, the language will be removed from the listed languages, but the language pack will not be immediately deleted. If you want to immediately delete a language pack, use lpksetup.exe. <br>**Note:** Lpksetup will uninstall a language pack, but the language will still appear in the Settings app.
 
-### Remove a language from a user's language list
+### Remove a language with the Settings app
 
-If the language that you removed appears in the language list in the Settings app, you can remove the language from the list by going to **Settings** &gt; **Time & language** &gt; **Region & language**. Click on the language you'd like to remove, and then click on **remove**. Windows will automatically delete language pack files the next time it runs its automated cleanup tasks.
+  In the Settings app, you can remove a language by going to **Settings** &gt; **Time & language** &gt; **Region & language**. Click on the language you'd like to remove, and then click on **remove**. Windows will automatically delete language pack files the next time it runs its automated cleanup tasks.
 
 ### Remove a language pack with lpksetup.exe
 
