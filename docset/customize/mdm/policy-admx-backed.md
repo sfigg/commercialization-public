@@ -274,7 +274,7 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">AutoPlay.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#bitlocker-bitencryptionmethodbydrivetype ">BitLocker/BitEncryptionMethodByDriveType </a></td>
+		<td style="vertical-align:top"><a href="#bitlocker-bitencryptionmethodbydrivetype">BitLocker/BitEncryptionMethodByDriveType</a></td>
 		<td style="vertical-align:top">Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</td>
 		<td style="vertical-align:top">Windows Components/BitLocker Drive Encryption</td>
 		<td style="vertical-align:top">EncryptionMethodWithXts_Name</td>
@@ -512,7 +512,7 @@ The Policy configuration service provider enables the enterprise to configure po
 		<td style="vertical-align:top">inetres.admx</td>
 	</tr>
 	<tr>
-		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist ">InternetExplorer/AllowInternetExplorer7PolicyList </a></td>
+		<td style="vertical-align:top"><a href="#internetexplorer-allowinternetexplorer7policylist">InternetExplorer/AllowInternetExplorer7PolicyList</a></td>
 		<td style="vertical-align:top">Use Policy List of Internet Explorer 7 sites</td>
 		<td style="vertical-align:top">Windows Components/Internet Explorer/Compatibility View</td>
 		<td style="vertical-align:top">CompatView_UsePolicyList</td>
@@ -2021,7 +2021,7 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.</p>
 
-<a href="" id="bitlocker-bitencryptionmethodbydrivetype "></a>**BitLocker/BitEncryptionMethodByDriveType **
+<a href="" id="bitlocker-bitencryptionmethodbydrivetype"></a>**BitLocker/BitEncryptionMethodByDriveType**
 
 <p style="margin-left: 20px">This policy setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
 
@@ -2375,7 +2375,7 @@ The Policy configuration service provider enables the enterprise to configure po
 
 <p style="margin-left: 20px">If you disable or don't configure this policy setting, Internet Explorer opens all websites using Standards mode.</p>
 
-<a href="" id="internetexplorer-allowinternetexplorer7policylist "></a>**InternetExplorer/AllowInternetExplorer7PolicyList **
+<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**
 
 <p style="margin-left: 20px">This policy setting allows you to add specific sites that must be viewed in Internet Explorer 7 Compatibility View.</p>
 
