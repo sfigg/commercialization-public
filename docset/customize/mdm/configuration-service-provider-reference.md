@@ -350,6 +350,17 @@ The following table show the configuration service providers supported in Window
 <td><img src="images/checkmark.png" alt="check mark" /></td>
 
 </tr>
+<tr class="odd">
+<td>[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/crossmark.png" alt="cross mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+
+</tr>
 <tr class="even">
 <td>[EMAIL2 CSP](email2-csp.md)</td>
 <td><img src="images/checkmark.png" alt="check mark" /></td>
