@@ -35,7 +35,7 @@ For more information about DISM international servicing commands, see [DISM Lang
 
 ## <span id="online"></span><span id="REMOVE"></span>Remove a language pack online
 
-Non-user selected languages are automatically removed by Windows after a period of time. If you remove an installed language through the Settings app, the language will be removed from the listed languages, but the language pack will not be immediately deleted. If you want to immediately delete a language pack, use lpksetup.exe. <br>**Note:** Lpksetup will uninstall a language pack, but the language will still appear in the Settings app.
+Windows automatically removes non-user selected languages after a period of time. If you remove an installed language through the Settings app, the language will be removed from the listed languages, but the language pack will not be immediately deleted. If you want to immediately remove a language pack, use lpksetup.exe. <br>**Note:** Lpksetup will uninstall a language pack, but the language will still appear in the Settings app.
 
 ### Remove a language with the Settings app
 
