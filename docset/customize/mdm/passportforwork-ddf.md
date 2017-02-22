@@ -1103,7 +1103,6 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
         </Node>
       </Node>
 </MgmtTree>
-
 ```
 
  
