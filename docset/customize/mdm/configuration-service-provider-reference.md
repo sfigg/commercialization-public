@@ -354,11 +354,11 @@ The following table show the configuration service providers supported in Window
 <td>[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 <td><img src="images/crossmark.png" alt="cross mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
-<td><img src="images/checkmark.png" alt="check mark" /></td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
+<td><img src="images/checkmark.png" alt="check mark" />2</td>
 
 </tr>
 <tr class="even">
