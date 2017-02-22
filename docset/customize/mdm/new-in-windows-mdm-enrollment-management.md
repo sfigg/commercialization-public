@@ -633,8 +633,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>New mobile application management (MAM) support added in Windows 10, version 1703.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>New node and settings in PassportForWork CSP</p></td>
-<td style="vertical-align:top"><p>Added the following node and settings to [PassportForWork CSP](passportforwork-csp.md):</p>
+<td style="vertical-align:top"><p>[PassportForWork CSP](passportforwork-csp.md)</p></td>
+<td style="vertical-align:top"><p>Added the following node and settings:</p>
 <ul>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices (only for ./Device/Vendor/MSFT)</li>
 <li><em>TenantId</em>/Policies/ExcludeSecurityDevices/TPM12 (only for ./Device/Vendor/MSFT)</li>
